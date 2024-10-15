@@ -1031,7 +1031,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .lookBlank_dd4f85,
 :where(.visual-refresh) .lookLink_dd4f85 {
-  padding: 0;
   border: none;
 }
 :where(.visual-refresh) .disabledButtonWrapper_dd4f85 {
@@ -2144,6 +2143,29 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .enable-forced-colors .iconLayout_c18ec9:active .clear_c18ec9 {
   border-color: ButtonText;
   color: ButtonText;
+}
+:where(.visual-refresh) .container_c18ec9 {
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .container_c18ec9:focus-within {
+  border-color: var(--text-link);
+}
+:where(.visual-refresh) .medium_c18ec9 {
+  height: 40px;
+}
+:where(.visual-refresh) .medium_c18ec9 .inner_c18ec9 {
+  padding: 10px 12px;
+}
+:where(.visual-refresh) .medium_c18ec9 .input_c18ec9 {
+  height: auto;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+:where(.visual-refresh) .medium_c18ec9.iconLayout_c18ec9 {
+  width: 16px;
+  height: 16px;
 }
 .defaultColor_e42ec6 {
   color: var(--header-primary);
@@ -4127,61 +4149,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .theme-dark .inputPrefix_f8bc55 {
   opacity: 0.5;
 }
-:where(.visual-refresh) .input_f8bc55 {
-  font-size: 16px;
-  line-height: 20px;
-  border-radius: 8px;
-  color: var(--text-normal);
-  height: auto;
-  padding: 12px;
-  background-color: var(--input-background);
-  border: 1px solid var(--input-border);
-  transition-property: border-color, background;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-:where(.visual-refresh) .input_f8bc55::-moz-placeholder {
-  color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55::placeholder {
-  color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""]),
-:where(.visual-refresh) .input_f8bc55:not(:empty),
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55,
-:where(.visual-refresh) .input_f8bc55:focus {
-  background-color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""])::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55:not(:empty)::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55:focus::-moz-placeholder {
-  color: var(--header-muted);
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""])::placeholder,
-:where(.visual-refresh) .input_f8bc55:not(:empty)::placeholder,
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55::placeholder,
-:where(.visual-refresh) .input_f8bc55:focus::placeholder {
-  color: var(--header-muted);
-}
-:where(.visual-refresh) .input_f8bc55:hover {
-  border-color: var(--input-border);
-}
-:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus:hover,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55:hover {
-  border-color: var(--text-link);
-}
-:where(.visual-refresh) .input_f8bc55.error_f8bc55 {
-  border-color: var(--input-error-border);
-  color: var(--input-error-text);
-  background-color: var(--input-error-background);
-}
-:where(.visual-refresh) .input_f8bc55.disabled_f8bc55 {
-  border-color: var(--input-border);
-  cursor: not-allowed;
-}
 .enable-forced-colors .input_f8bc55 {
   border: 1px solid ButtonText;
 }
@@ -4192,6 +4159,43 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: Canvas;
   border-color: GrayText;
   opacity: 1;
+}
+:where(.visual-refresh) .input_f8bc55 {
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+  background-color: rgba(0, 0, 0, 8%);
+  height: 40px;
+}
+:where(.visual-refresh) .input_f8bc55:hover,
+:where(.visual-refresh) .input_f8bc55[readonly] {
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus:hover,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55:hover {
+  border-color: var(--text-link);
+}
+:where(.visual-refresh) .input_f8bc55.error_f8bc55 {
+  border-width: 2px;
+  border-color: var(--input-error-border);
+}
+:where(.visual-refresh) .input_f8bc55.disabled_f8bc55 {
+  border-color: var(--__temp-input-border);
+  cursor: not-allowed;
+  opacity: 1;
+}
+:where(.visual-refresh) .input_f8bc55::-moz-placeholder {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .input_f8bc55::placeholder {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .inputError_f8bc55 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .heading-sm\/normal_c46f6a {
   font-family: var(--font-display);
@@ -4848,72 +4852,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .error_c46f6a {
   color: var(--text-danger);
 }
-:where(.visual-refresh) .title_c46f6a,
-:where(.visual-refresh) .h1_c46f6a,
-:where(.visual-refresh) .h2_c46f6a,
-:where(.visual-refresh) .h3_c46f6a,
-:where(.visual-refresh) .h4_c46f6a,
-:where(.visual-refresh) .h5_c46f6a,
-:where(.visual-refresh) .legend_c46f6a,
-:where(.visual-refresh) .label_c46f6a {
-  text-transform: none;
-  font-family: var(--font-display);
+:where(.visual-refresh) .h5_c46f6a {
+  color: var(--header-primary);
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  color: var(--header-primary);
-}
-:where(.visual-refresh) .title_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h1_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h2_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h3_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h4_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h5_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .legend_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .label_c46f6a.fontScaling_c46f6a {
-  font-size: 1rem;
-}
-:where(.visual-refresh) .defaultMarginh1_c46f6a,
-:where(.visual-refresh) .defaultMarginh2_c46f6a {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-:where(.visual-refresh) .defaultMarginh3_c46f6a,
-:where(.visual-refresh) .defaultMarginh4_c46f6a,
-:where(.visual-refresh) .defaultMarginh5_c46f6a,
-:where(.visual-refresh) .defaultMarginlabel_c46f6a,
-:where(.visual-refresh) .defaultMarginlegend_c46f6a {
-  margin-top: 0;
+  font-weight: 500;
   margin-bottom: 8px;
-}
-:where(.visual-refresh) .floatingAbove_c46f6a {
-  display: block;
-  padding: 6px;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-  transform: scale(0.75) translatey(-50%);
-  transform-origin: top left;
-  background-color: var(--background-primary);
-}
-:where(.visual-refresh) .floatingOn_c46f6a {
-  display: block;
-  color: var(--input-placeholder-text);
-  padding: 6px;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-  transform: scale(1) translatey(7px);
-  transform-origin: top left;
-  pointer-events: none;
-}
-.full-motion:where(.visual-refresh) .floatingAbove_c46f6a {
-  transition: all 50ms ease-out;
-}
-.full-motion:where(.visual-refresh) .floatingOn_c46f6a {
-  transition: all 50ms ease-out;
+  text-transform: capitalize;
 }
 .enable-forced-colors .disabled_c46f6a {
   color: GrayText;
@@ -26979,7 +26924,7 @@ div.popoutCloseButton_d523a2:hover {
   color: var(--text-brand);
   fill: var(--text-brand);
 }
-.colorDefault_d90b3d.focused_d90b3d path {
+.colorDefault_d90b3d.focused_d90b3d:not(.checkboxContainer_d90b3d) path {
   fill: var(--white);
 }
 .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
@@ -27130,7 +27075,7 @@ div.popoutCloseButton_d523a2:hover {
   pointer-events: none;
 }
 :where(.visual-refresh) .menu_d90b3d {
-  background-color: #28282d;
+  background-color: var(--background-surface-higher);
   border-radius: 8px;
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-high);
@@ -27198,7 +27143,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 :where(.visual-refresh) .groupLabel_d90b3d {
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: var(--text-muted);
@@ -27398,6 +27343,10 @@ div.popoutCloseButton_d523a2:hover {
   line-height: 16px;
   color: var(--text-secondary);
 }
+:where(.visual-refresh) .slider_c7a159 .defaultValue_c7a159 .markValue_c7a159,
+:where(.visual-refresh) .mini_c7a159 .defaultValue_c7a159 .markValue_c7a159 {
+  color: var(--text-positive);
+}
 :where(.visual-refresh) .slider_c7a159 .markDash_c7a159,
 :where(.visual-refresh) .mini_c7a159 .markDash_c7a159 {
   border-radius: 12px;
@@ -27429,7 +27378,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 :where(.visual-refresh) .slider_c7a159 .barFill_c7a159,
 :where(.visual-refresh) .mini_c7a159 .barFill_c7a159 {
-  background-color: #5865f2;
+  background-color: var(--blurple-50);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sliderContainer_e13f88 {
@@ -27868,19 +27817,7 @@ div.popoutCloseButton_d523a2:hover {
 :where(.visual-refresh) .item_eb92a8[aria-checked="true"],
 :where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"],
 :where(.visual-refresh) .item_eb92a8 {
-  background: transparent;
-}
-:where(.visual-refresh) .radioBar_eb92a8:hover,
-:where(.visual-refresh) .item_eb92a8[aria-checked="true"]:hover,
-:where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"]:hover,
-:where(.visual-refresh) .item_eb92a8:hover {
-  background: transparent;
-}
-:where(.visual-refresh) .radioBar_eb92a8:active,
-:where(.visual-refresh) .item_eb92a8[aria-checked="true"]:active,
-:where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"]:active,
-:where(.visual-refresh) .item_eb92a8:active {
-  background: transparent;
+  border-radius: 8px;
 }
 :where(.visual-refresh) .radioIndicator_eb92a8 {
   box-sizing: border-box;
@@ -28312,6 +28249,80 @@ div.popoutCloseButton_d523a2:hover {
 }
 .enable-forced-colors .selectedIcon_f6639d {
   color: Highlight;
+}
+:where(.visual-refresh) .select_f6639d {
+  height: 40px;
+}
+:where(.visual-refresh) .wrapper_f6639d .select_f6639d.multi_f6639d {
+  padding-left: 6px;
+  padding-bottom: 6px;
+}
+:where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
+  background-color: #222226;
+}
+:where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .popout_f6639d.popoutPositionTop_f6639d,
+:where(.visual-refresh) .lookFilled_f6639d.popout_f6639d,
+:where(.visual-refresh)
+  .lookFilled_f6639d.popout_f6639d.popoutPositionTop_f6639d,
+:where(.visual-refresh) .popout_f6639d {
+  background-color: #28282d;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+:where(.visual-refresh) .placeholder_f6639d {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .popout_f6639d {
+  margin: 0;
+  background-color: #28282d;
+}
+:where(.visual-refresh) .popout_f6639d:not(.popoutPositionTop_f6639d) {
+  margin-top: 8px;
+}
+:where(.visual-refresh) .popout_f6639d.popoutPositionTop_f6639d {
+  margin-bottom: 8px;
+}
+:where(.visual-refresh) .option_f6639d {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-normal);
+}
+:where(.visual-refresh) .option_f6639d[aria-selected="true"] {
+  font-weight: 500;
+  color: var(--text-normal);
+  background-color: #28282d;
+}
+:where(.visual-refresh) .option_f6639d[aria-selected="true"]:hover {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .option_f6639d:hover {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .optionPillItem_f6639d {
+  margin-right: 6px;
+}
+:where(.visual-refresh) .optionPillItem_f6639d button {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .optionPillItem_f6639d button .optionPill_f6639d {
+  border-radius: 4px;
+  border: 1px solid var(--border-faint);
+}
+:where(.visual-refresh) .optionPillItem_f6639d,
+:where(.visual-refresh) .searchInput_f6639d.multi_f6639d {
+  margin-top: 6px;
+}
+:where(.visual-refresh) .optionPill_f6639d {
+  font-size: 14px;
+}
+:where(.visual-refresh) .optionPill_f6639d .deleteOptionIcon_f6639d {
+  width: 16px;
+  height: 16px;
 }
 .wrapper_cdbcb1 {
   position: relative;
@@ -37404,6 +37415,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
+  --background-base-low: var(--neutral-68);
+  --background-base-lower: var(--neutral-68);
+  --background-base-lowest: var(--neutral-68);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -37423,6 +37437,9 @@ html.disable-forced-colors * {
   --background-primary: var(--primary-600);
   --background-secondary: var(--primary-630);
   --background-secondary-alt: var(--primary-660);
+  --background-surface-high: var(--neutral-64);
+  --background-surface-higher: var(--neutral-60);
+  --background-surface-highest: var(--neutral-56);
   --background-tertiary: var(--primary-700);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -37793,6 +37810,21 @@ html.disable-forced-colors * {
       var(--primary-530) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--primary-800) 100%,
@@ -37898,6 +37930,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-660) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-60) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-56) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -39173,6 +39220,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--black-hsl) / 0.12);
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
+  --background-base-low: var(--neutral-92);
+  --background-base-lower: var(--neutral-84);
+  --background-base-lowest: var(--neutral-92);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -39192,6 +39242,9 @@ html.disable-forced-colors * {
   --background-primary: var(--white);
   --background-secondary: var(--primary-130);
   --background-secondary-alt: var(--primary-160);
+  --background-surface-high: var(--neutral-4);
+  --background-surface-higher: var(--neutral-1);
+  --background-surface-highest: var(--neutral-1);
   --background-tertiary: var(--primary-200);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -39564,6 +39617,21 @@ html.disable-forced-colors * {
       var(--primary-430) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-92) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-92) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--white) 100%,
@@ -39669,6 +39737,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-160) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-4) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -40947,6 +41030,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
+  --background-base-low: var(--neutral-1);
+  --background-base-lower: var(--neutral-1);
+  --background-base-lowest: var(--neutral-1);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -40966,6 +41052,9 @@ html.disable-forced-colors * {
   --background-primary: var(--black);
   --background-secondary: var(--plum-23);
   --background-secondary-alt: var(--plum-17);
+  --background-surface-high: var(--neutral-88);
+  --background-surface-higher: var(--neutral-84);
+  --background-surface-highest: var(--neutral-80);
   --background-tertiary: var(--plum-19);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -41336,6 +41425,21 @@ html.disable-forced-colors * {
       var(--plum-17) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--plum-23) 100%,
@@ -41440,6 +41544,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-17) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-88) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-80) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -42720,6 +42839,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
+  --background-base-low: var(--neutral-80);
+  --background-base-lower: var(--neutral-76);
+  --background-base-lowest: var(--neutral-84);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -42739,6 +42861,9 @@ html.disable-forced-colors * {
   --background-primary: var(--plum-20);
   --background-secondary: var(--plum-18);
   --background-secondary-alt: var(--plum-15);
+  --background-surface-high: var(--neutral-72);
+  --background-surface-higher: var(--neutral-68);
+  --background-surface-highest: var(--neutral-64);
   --background-tertiary: var(--plum-16);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -43109,6 +43234,21 @@ html.disable-forced-colors * {
       var(--plum-15) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-80) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--plum-18) 100%,
@@ -43213,6 +43353,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-72) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -48442,4 +48597,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.14892004a1c46f924406.css.map*/
+/*# sourceMappingURL=12633.ac289262912ff1327031.css.map*/
