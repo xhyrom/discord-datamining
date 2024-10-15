@@ -5,62 +5,81 @@
     come back.</span
   >
 </p>
-<p>
+<div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >What does this article cover?</span
-    ></strong
-  >
-</p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GBX2NF4CV5GMRQ18H9G8PNRK" target="_self"
-      ><span style="font-weight: 400"
-        >What is the difference between disabling and deleting your
-        account?</span
-      ></a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GBX2PHD21GENRDVVKHEJ26DC" target="_self"
-      ><span style="font-weight: 400">How do I disable my account?</span></a
-    >
-    <ul>
-      <li style="font-weight: 400" aria-level="1">
-        <a href="#h_01GBX2R643FPA8WMF4KATG25DE" target="_self"
-          ><span style="font-weight: 400">Desktop/Browser</span></a
-        >
-      </li>
-      <li style="font-weight: 400" aria-level="2">
-        <a href="#h_01GBX2RDQ808AMX4TDC91F750D" target="_self"
-          ><span style="font-weight: 400">iOS</span></a
-        >
-      </li>
-      <li style="font-weight: 400" aria-level="2">
-        <a href="#h_01GBX2RNHHTNCF8WKYMN9XG5WP" target="_self"
-          ><span style="font-weight: 400">Android </span></a
-        >
-      </li>
-    </ul>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GBX2RXE6EHX1KX41N41S3349" target="_self"
-      ><span style="font-weight: 400">How do I restore my account? </span></a
-    >
-    <ul>
-      <li style="font-weight: 400" aria-level="1">
-        <a href="#h_01GBX2T9P0ZWE8PE7MJ3BWVMXN" target="_self" rel="undefined"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li style="font-weight: 400" aria-level="1">
-        <a href="#h_01GBX2TQRKRR4BAN15P7PFHVH5" target="_self"
-          ><span style="font-weight: 400">Mobile</span></a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GBX2NF4CV5GMRQ18H9G8PNRK" target="_self"
+        >What is the difference between disabling and deleting your account?</a
+      >
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GBX2PHD21GENRDVVKHEJ26DC" target="_self"
+        >How do I disable my account?</a
+      >
+      <ul>
+        <li style="font-weight: 400" aria-level="1">
+          <a href="#h_01GBX2R643FPA8WMF4KATG25DE" target="_self"
+            >Desktop/Browser</a
+          >
+        </li>
+        <li style="font-weight: 400" aria-level="2">
+          <a href="#h_01GBX2RDQ808AMX4TDC91F750D" target="_self">iOS</a>
+        </li>
+        <li style="font-weight: 400" aria-level="2">
+          <a href="#h_01GBX2RNHHTNCF8WKYMN9XG5WP" target="_self">Android </a>
+        </li>
+      </ul>
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GBX2RXE6EHX1KX41N41S3349" target="_self"
+        >How do I restore my account? </a
+      >
+      <ul>
+        <li style="font-weight: 400" aria-level="1">
+          <a href="#h_01GBX2T9P0ZWE8PE7MJ3BWVMXN" target="_self" rel="undefined"
+            >Desktop/Browser</a
+          >
+        </li>
+        <li style="font-weight: 400" aria-level="1">
+          <a href="#h_01GBX2TQRKRR4BAN15P7PFHVH5" target="_self">Mobile</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="tip-box">
+  <strong>Note:</strong> If you have an active Discord subscription, disabling
+  your account will not cancel your subscription. You will continue to be
+  charged, unless you cancel your subscription. If you need assistance with
+  canceling your Discord subscription, please check out one of the following
+  Help Center articles:
+  <ul>
+    <li>
+      <a href="https://support.discord.com/hc/articles/19580873036695"
+        >How to Cancel your Nitro Subscription</a
+      >
+    </li>
+    <li>
+      <a href="https://support.discord.com/hc/articles/26729525788695"
+        >How to Cancel your Server Boost Subscription</a
+      >
+    </li>
+    <li>
+      <a href="https://support.discord.com/hc/articles/26729967472279"
+        >How to Cancel your Server Subscription</a
+      >
+    </li>
+    <li>
+      <a href="https://support.discord.com/hc/articles/26729692307351"
+        >How to Cancel your Premium App Subscription</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GBX2NF4CV5GMRQ18H9G8PNRK">
   <strong
     >What is the difference between disabling and deleting your account?</strong
@@ -92,16 +111,14 @@
     ><span style="font-weight: 400">!</span>
   </li>
 </ul>
-<h3 id="h_01HRQWX8QX73PFAS1D6SG4KBZC">
-  Note<span style="font-weight: 400">: </span
-  ><span style="font-weight: 400"
-    >Keep in mind that disabled accounts that are </span
-  >inactive for 2 years or more may be deleted<span style="font-weight: 400"
+<div class="tip-box">
+  <strong>Note:</strong> Keep in mind that disabled accounts that are inactive
+  for 2 years or more may be deleted<span style="font-weight: 400"
     >, so if you want to keep yours, you’ll need to reactivate your disabled
     account (but you can disable it again after this if you like). You can learn
     more about inactive account deletions here.</span
   >
-</h3>
+</div>
 <table>
   <tbody>
     <tr>
@@ -201,12 +218,10 @@
     prompts to complete the process.
   </span>
 </p>
-<h3 id="h_01HRQWX8QX8RMJFS5D825WHGTD">
-  <span style="font-weight: 400"
-    >Note: Before you are able to disable your account, you will have to
-    transfer ownership of all servers that you own.
-  </span>
-</h3>
+<div class="tip-box">
+  <strong>Note:</strong> Before you are able to disable your account, you will
+  have to transfer ownership of all servers that you own.
+</div>
 <h2 id="h_01GBX2RDQ808AMX4TDC91F750D"><strong>iOS:</strong></h2>
 <p>
   <span style="font-weight: 400"
