@@ -476,7 +476,7 @@
               if (e[r] !== t[r]) return e[r] > t[r] ? 1 : -1;
             return 0;
           }
-          function M(e) {
+          function P(e) {
             var t = e.abs();
             return (
               !t.isUnit() &&
@@ -485,7 +485,7 @@
                   (!!t.lesser(49) || void 0)))
             );
           }
-          function P(e, t) {
+          function M(e, t) {
             for (var r, a, _, o = e.prev(), i = o, E = 0; i.isEven(); )
               (i = i.divide(2)), E++;
             e: for (a = 0; a < t.length; a++) {
@@ -785,12 +785,12 @@
             (E.prototype.isDivisibleBy = i.prototype.isDivisibleBy =
               o.prototype.isDivisibleBy),
             (o.prototype.isPrime = function (e) {
-              var t = M(this);
+              var t = P(this);
               if (void 0 !== t) return t;
               var r = this.abs(),
                 a = r.bitLength();
               if (a <= 64)
-                return P(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+                return M(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
               for (
                 var _ = Math.log(2) * a.toJSNumber(),
                   o = Math.ceil(!0 === e ? 2 * Math.pow(_, 2) : _),
@@ -800,11 +800,11 @@
                 E++
               )
                 i.push(n(E + 2));
-              return P(r, i);
+              return M(r, i);
             }),
             (E.prototype.isPrime = i.prototype.isPrime = o.prototype.isPrime),
             (o.prototype.isProbablePrime = function (t, r) {
-              var a = M(this);
+              var a = P(this);
               if (e !== a) return a;
               for (
                 var _ = this.abs(), o = e === t ? 5 : t, i = [], E = 0;
@@ -812,7 +812,7 @@
                 E++
               )
                 i.push(n.randBetween(2, _.minus(2), r));
-              return P(_, i);
+              return M(_, i);
             }),
             (E.prototype.isProbablePrime = i.prototype.isProbablePrime =
               o.prototype.isProbablePrime),
@@ -2022,8 +2022,8 @@
         e.exports = function (e, t, r, o, R, T, C) {
           E(r, t, o);
           var g,
-            M,
             P,
+            M,
             U = function (e) {
               if (e === R && v) return v;
               if (!p && e && e in y) return y[e];
@@ -2064,12 +2064,12 @@
                   }))),
             R)
           ) {
-            if (((M = { values: U(S), keys: T ? v : U(L), entries: U(D) }), C))
-              for (P in M) (p || G || !(P in y)) && l(y, P, M[P]);
-            else n({ target: t, proto: !0, forced: p || G }, M);
+            if (((P = { values: U(S), keys: T ? v : U(L), entries: U(D) }), C))
+              for (M in P) (p || G || !(M in y)) && l(y, M, P[M]);
+            else n({ target: t, proto: !0, forced: p || G }, P);
           }
           return (
-            (!_ || C) && y[f] !== v && l(y, f, v, { name: R }), (A[t] = v), M
+            (!_ || C) && y[f] !== v && l(y, f, v, { name: R }), (A[t] = v), P
           );
         };
       },
@@ -3264,8 +3264,8 @@
               C = S && R.call(t, "__wrapped__");
             if (h || C) {
               var g = h ? e.value() : e,
-                M = C ? t.value() : t;
-              return N || (N = new n()), T(g, M, r, A, N);
+                P = C ? t.value() : t;
+              return N || (N = new n()), T(g, P, r, A, N);
             }
           }
           return !!D && (N || (N = new n()), o(e, t, r, A, T, N));
@@ -4457,16 +4457,16 @@
             return tH;
           },
           ABu: function () {
-            return eP;
+            return eM;
           },
           AEg: function () {
-            return eJ;
+            return eq;
           },
           ANM: function () {
             return a5;
           },
           AQB: function () {
-            return a9;
+            return a7;
           },
           AeJ: function () {
             return e4;
@@ -4505,7 +4505,7 @@
             return j;
           },
           CgE: function () {
-            return tP;
+            return tM;
           },
           CkL: function () {
             return eg;
@@ -4583,7 +4583,7 @@
             return oR;
           },
           IE4: function () {
-            return M;
+            return P;
           },
           IIU: function () {
             return ea;
@@ -4595,7 +4595,7 @@
             return _D;
           },
           I_8: function () {
-            return aq;
+            return aJ;
           },
           IlC: function () {
             return ts;
@@ -4649,7 +4649,7 @@
             return _U;
           },
           LPv: function () {
-            return eM;
+            return eP;
           },
           Lcj: function () {
             return ei;
@@ -4661,7 +4661,7 @@
             return eU;
           },
           ME: function () {
-            return aJ;
+            return aq;
           },
           MoX: function () {
             return tg;
@@ -4673,7 +4673,7 @@
             return aF.NY;
           },
           NYg: function () {
-            return e9;
+            return e7;
           },
           N_j: function () {
             return oE;
@@ -4691,10 +4691,10 @@
             return aj;
           },
           OBo: function () {
-            return _9;
+            return _7;
           },
           OGo: function () {
-            return J;
+            return q;
           },
           OMz: function () {
             return aF.OM;
@@ -4856,7 +4856,7 @@
             return aF.V6;
           },
           VD2: function () {
-            return e7;
+            return e9;
           },
           VKK: function () {
             return _s;
@@ -4874,7 +4874,7 @@
             return _d;
           },
           WND: function () {
-            return _7;
+            return _9;
           },
           WtW: function () {
             return en;
@@ -4964,10 +4964,10 @@
             return _6;
           },
           b4C: function () {
-            return tq;
+            return tJ;
           },
           b8q: function () {
-            return _J;
+            return _q;
           },
           bL: function () {
             return et;
@@ -5012,7 +5012,7 @@
             return eb;
           },
           eWB: function () {
-            return _M;
+            return _P;
           },
           ecB: function () {
             return e0;
@@ -5042,7 +5042,7 @@
             return ax.fM;
           },
           fo$: function () {
-            return _P;
+            return _M;
           },
           frH: function () {
             return aF.fr;
@@ -5072,7 +5072,7 @@
             return eK;
           },
           hVg: function () {
-            return eq;
+            return eJ;
           },
           hes: function () {
             return g;
@@ -5162,7 +5162,7 @@
             return _8;
           },
           oAB: function () {
-            return _q;
+            return _J;
           },
           oCV: function () {
             return _4;
@@ -5261,7 +5261,7 @@
             return _i;
           },
           tHP: function () {
-            return a7;
+            return a9;
           },
           tNA: function () {
             return aF.tN;
@@ -5315,7 +5315,7 @@
             return tw;
           },
           wZ8: function () {
-            return q;
+            return J;
           },
           xAR: function () {
             return op;
@@ -5348,7 +5348,7 @@
             return G;
           },
           ylB: function () {
-            return tJ;
+            return tq;
           },
           yqN: function () {
             return ot;
@@ -5399,8 +5399,8 @@
           h,
           C,
           g,
-          M,
           P,
+          M,
           U,
           m,
           G,
@@ -5420,8 +5420,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -5453,8 +5453,8 @@
           eh,
           eC,
           eg,
-          eM,
           eP,
+          eM,
           eU,
           em,
           eG,
@@ -5474,8 +5474,8 @@
           eX,
           ej,
           e$,
-          eJ,
           eq,
+          eJ,
           ez,
           eQ,
           eZ,
@@ -5487,8 +5487,8 @@
           e5,
           e4,
           e8,
-          e7,
           e9,
+          e7,
           te,
           tt,
           tr,
@@ -5517,8 +5517,8 @@
           th,
           tC,
           tg,
-          tM,
           tP,
+          tM,
           tU,
           tm,
           tG,
@@ -5538,8 +5538,8 @@
           tX,
           tj,
           t$,
-          tJ,
           tq,
+          tJ,
           tz,
           tQ,
           tZ,
@@ -5551,8 +5551,8 @@
           t5,
           t4,
           t8,
-          t7,
           t9,
+          t7,
           re,
           rt,
           rr,
@@ -5581,8 +5581,8 @@
           rh,
           rC,
           rg,
-          rM,
           rP,
+          rM,
           rU,
           rm,
           rG,
@@ -5602,8 +5602,8 @@
           rX,
           rj,
           r$,
-          rJ,
           rq,
+          rJ,
           rz,
           rQ,
           rZ,
@@ -5615,8 +5615,8 @@
           r5,
           r4,
           r8,
-          r7,
           r9,
+          r7,
           ne,
           nt,
           nr,
@@ -5645,8 +5645,8 @@
           nh,
           nC,
           ng,
-          nM,
           nP,
+          nM,
           nU,
           nm,
           nG,
@@ -5666,8 +5666,8 @@
           nX,
           nj,
           n$,
-          nJ,
           nq,
+          nJ,
           nz,
           nQ,
           nZ,
@@ -5679,8 +5679,8 @@
           n5,
           n4,
           n8,
-          n7,
           n9,
+          n7,
           ae,
           at,
           ar,
@@ -5709,8 +5709,8 @@
           ah,
           aC,
           ag,
-          aM,
           aP,
+          aM,
           aU,
           am = r(512722),
           aG = r.n(am),
@@ -5817,29 +5817,29 @@
           (t8.OPEN_APP_DIRECTORY = "OPEN_APP_DIRECTORY"),
           (t8.BROWSER_DEVTOOLS = "BROWSER_DEVTOOLS"),
           (t8.VIBE_WITH_WUMPUS = "VIBE_WITH_WUMPUS"),
-          ((t7 = c || (c = {})).UNASSIGNED = "UNASSIGNED"),
-          (t7.PUSH_TO_TALK = "PUSH_TO_TALK"),
-          (t7.PUSH_TO_TALK_PRIORITY = "PUSH_TO_TALK_PRIORITY"),
-          (t7.PUSH_TO_MUTE = "PUSH_TO_MUTE"),
-          (t7.TOGGLE_MUTE = "TOGGLE_MUTE"),
-          (t7.TOGGLE_DEAFEN = "TOGGLE_DEAFEN"),
-          (t7.TOGGLE_OVERLAY = "TOGGLE_OVERLAY"),
-          (t7.TOGGLE_VOICE_MODE = "TOGGLE_VOICE_MODE"),
-          (t7.TOGGLE_OVERLAY_INPUT_LOCK = "TOGGLE_OVERLAY_INPUT_LOCK"),
-          (t7.TOGGLE_STREAMER_MODE = "TOGGLE_STREAMER_MODE"),
-          (t7.TOGGLE_PRIORITY_SPEAKER = "TOGGLE_PRIORITY_SPEAKER"),
-          (t7.TOGGLE_GO_LIVE_STREAMING = "TOGGLE_GO_LIVE_STREAMING"),
-          (t7.NAVIGATE_BACK = "NAVIGATE_BACK"),
-          (t7.NAVIGATE_FORWARD = "NAVIGATE_FORWARD"),
-          (t7.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET =
+          ((t9 = c || (c = {})).UNASSIGNED = "UNASSIGNED"),
+          (t9.PUSH_TO_TALK = "PUSH_TO_TALK"),
+          (t9.PUSH_TO_TALK_PRIORITY = "PUSH_TO_TALK_PRIORITY"),
+          (t9.PUSH_TO_MUTE = "PUSH_TO_MUTE"),
+          (t9.TOGGLE_MUTE = "TOGGLE_MUTE"),
+          (t9.TOGGLE_DEAFEN = "TOGGLE_DEAFEN"),
+          (t9.TOGGLE_OVERLAY = "TOGGLE_OVERLAY"),
+          (t9.TOGGLE_VOICE_MODE = "TOGGLE_VOICE_MODE"),
+          (t9.TOGGLE_OVERLAY_INPUT_LOCK = "TOGGLE_OVERLAY_INPUT_LOCK"),
+          (t9.TOGGLE_STREAMER_MODE = "TOGGLE_STREAMER_MODE"),
+          (t9.TOGGLE_PRIORITY_SPEAKER = "TOGGLE_PRIORITY_SPEAKER"),
+          (t9.TOGGLE_GO_LIVE_STREAMING = "TOGGLE_GO_LIVE_STREAMING"),
+          (t9.NAVIGATE_BACK = "NAVIGATE_BACK"),
+          (t9.NAVIGATE_FORWARD = "NAVIGATE_FORWARD"),
+          (t9.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET =
             "OVERLAY_ACTIVATE_REGION_TEXT_WIDGET"),
-          (t7.SOUNDBOARD = "SOUNDBOARD"),
-          (t7.SOUNDBOARD_HOLD = "SOUNDBOARD_HOLD"),
-          (t7.SAVE_CLIP = "SAVE_CLIP"),
-          (t7.SWITCH_TO_VOICE_CHANNEL = "SWITCH_TO_VOICE_CHANNEL"),
-          (t7.DISCONNECT_FROM_VOICE_CHANNEL = "DISCONNECT_FROM_VOICE_CHANNEL"),
-          ((t9 = s || (s = {})).ALL_SERVERS = "ALL_SERVERS"),
-          (t9.THIS_SERVER = "THIS_SERVER"),
+          (t9.SOUNDBOARD = "SOUNDBOARD"),
+          (t9.SOUNDBOARD_HOLD = "SOUNDBOARD_HOLD"),
+          (t9.SAVE_CLIP = "SAVE_CLIP"),
+          (t9.SWITCH_TO_VOICE_CHANNEL = "SWITCH_TO_VOICE_CHANNEL"),
+          (t9.DISCONNECT_FROM_VOICE_CHANNEL = "DISCONNECT_FROM_VOICE_CHANNEL"),
+          ((t7 = s || (s = {})).ALL_SERVERS = "ALL_SERVERS"),
+          (t7.THIS_SERVER = "THIS_SERVER"),
           ((re = I || (I = {})).TRANSPORT = "TRANSPORT"),
           (re.OUTBOUND = "OUTBOUND"),
           (re.SCREENSHARE = "SCREENSHARE"),
@@ -6156,11 +6156,11 @@
           (rA.NO_ROUTE = "NO_ROUTE"),
           (rA.ICE_CHECKING = "ICE_CHECKING"),
           (rA.DTLS_CONNECTING = "DTLS_CONNECTING"),
-          ((rT = M || (M = {})).UNKNOWN = "unknown"),
+          ((rT = P || (P = {})).UNKNOWN = "unknown"),
           (rT.BAD = "bad"),
           (rT.AVERAGE = "average"),
           (rT.FINE = "fine"),
-          ((rN = P || (P = {})).CONNECTED = "connected"),
+          ((rN = M || (M = {})).CONNECTED = "connected"),
           (rN.CONNECTING = "connecting"),
           (rN.ERROR = "error"),
           ((rd = U || (U = {})).MANUAL_ENABLED = "MANUAL_ENABLED"),
@@ -6238,11 +6238,11 @@
           (rg.IN_GAME_TEXT = "IN_GAME_TEXT"),
           (rg.IN_GAME_ACTIVE = "IN_GAME_ACTIVE"),
           (rg.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"),
-          ((rM = W || (W = {})).LARGE = "large"),
-          (rM.SMALL = "small"),
-          ((rP = K || (K = {}))[(rP.ACTIVE = 0)] = "ACTIVE"),
-          (rP[(rP.TIMED_OUT = 1)] = "TIMED_OUT"),
-          (rP[(rP.DISMISSED = 2)] = "DISMISSED"),
+          ((rP = W || (W = {})).LARGE = "large"),
+          (rP.SMALL = "small"),
+          ((rM = K || (K = {}))[(rM.ACTIVE = 0)] = "ACTIVE"),
+          (rM[(rM.TIMED_OUT = 1)] = "TIMED_OUT"),
+          (rM[(rM.DISMISSED = 2)] = "DISMISSED"),
           ((rU = k || (k = {})).TOP_LEFT = "topLeft"),
           (rU.TOP_RIGHT = "topRight"),
           (rU.BOTTOM_LEFT = "bottomLeft"),
@@ -6266,14 +6266,14 @@
           ((rv = $ || ($ = {}))[(rv.DISABLED = 0)] = "DISABLED"),
           (rv[(rv.MEMBERS_WITHOUT_ROLES = 1)] = "MEMBERS_WITHOUT_ROLES"),
           (rv[(rv.ALL_MEMBERS = 2)] = "ALL_MEMBERS"),
-          ((rB = J || (J = {}))[(rB.NONE = 0)] = "NONE"),
+          ((rB = q || (q = {}))[(rB.NONE = 0)] = "NONE"),
           (rB[(rB.FRIEND = 1)] = "FRIEND"),
           (rB[(rB.BLOCKED = 2)] = "BLOCKED"),
           (rB[(rB.PENDING_INCOMING = 3)] = "PENDING_INCOMING"),
           (rB[(rB.PENDING_OUTGOING = 4)] = "PENDING_OUTGOING"),
           (rB[(rB.IMPLICIT = 5)] = "IMPLICIT"),
           (rB[(rB.SUGGESTION = 6)] = "SUGGESTION"),
-          ((rw = q || (q = {})).CONFIRM = "CONFIRM"),
+          ((rw = J || (J = {})).CONFIRM = "CONFIRM"),
           (rw.SUCCESS = "SUCCESS"),
           (rw.ERROR = "ERROR"),
           (rw.OPEN = "OPEN"),
@@ -6288,8 +6288,8 @@
           ((rW = Z || (Z = {}))[(rW.DEFAULT = 0)] = "DEFAULT"),
           (rW[(rW.HIGH_SCHOOL = 1)] = "HIGH_SCHOOL"),
           (rW[(rW.COLLEGE = 2)] = "COLLEGE");
-        let aJ = "@me",
-          aq = "@favorites",
+        let aq = "@me",
+          aJ = "@favorites",
           az = "@guilds-empty-nux",
           aQ = "",
           aZ = "null",
@@ -6302,7 +6302,7 @@
               let e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : aJ;
+                  : aq;
               return "/users/".concat(e, "/relationships");
             },
             USER_RELATIONSHIP: (e) => "/users/@me/relationships/".concat(e),
@@ -6506,7 +6506,7 @@
               let t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
-                  : aJ;
+                  : aq;
               return "/channels/".concat(e, "/thread-members/").concat(t);
             },
             THREAD_MEMBER_SETTINGS: (e) =>
@@ -7567,8 +7567,8 @@
             CHANNEL: (e, t, r) => {
               let n =
                 null == t
-                  ? "/channels/".concat(e || aJ)
-                  : "/channels/".concat(e || aJ, "/").concat(t);
+                  ? "/channels/".concat(e || aq)
+                  : "/channels/".concat(e || aq, "/").concat(t);
               return null == r ? n : "".concat(n, "/").concat(r);
             },
             CHANNEL_THREAD_VIEW: (e, t, r, n) => {
@@ -7596,8 +7596,8 @@
             GIFT_CODE_LOGIN: (e) => "/gifts/".concat(e, "/login"),
             WELCOME: (e, t) =>
               null != t
-                ? "/welcome/".concat(null != e ? e : aJ, "/").concat(t)
-                : "/welcome/".concat(null != e ? e : aJ),
+                ? "/welcome/".concat(null != e ? e : aq, "/").concat(t)
+                : "/welcome/".concat(null != e ? e : aq),
             VERIFY: "/verify",
             VERIFY_REQUEST: "/verify-request",
             RESET: "/reset",
@@ -7722,8 +7722,8 @@
           (rk[(rk.NO_MESSAGES = 2)] = "NO_MESSAGES"),
           (rk[(rk.NULL = 3)] = "NULL");
         let a8 = 100,
-          a7 = 200,
-          a9 = 50,
+          a9 = 200,
+          a7 = 50,
           _e = 50,
           _t = 25,
           _r = 200,
@@ -7790,8 +7790,8 @@
           _h = 1024,
           _C = 2e3,
           _g = 64e3,
-          _M = 96e3,
-          _P = "0000",
+          _P = 96e3,
+          _M = "0000",
           _U = "1",
           _m = 1e4,
           _G = 50,
@@ -7938,27 +7938,27 @@
           _X = 25,
           _j = /^FILTER_/,
           _$ = /^ANSWER_/;
-        ((rJ = eE || (eE = {})).GUILD = "GUILD"),
-          (rJ.FAVORITES = "FAVORITES"),
-          (rJ.CHANNEL = "CHANNEL"),
-          (rJ.GUILD_CHANNEL = "GUILD_CHANNEL"),
-          (rJ.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
-          (rJ.GIF = "GIF"),
-          (rJ.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
-          (rJ.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
-          (rJ.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
-          (rJ.STICKER = "STICKER"),
-          (rJ.STICKER_SHOP = "STICKER_SHOP"),
-          (rJ.INSTANT_INVITE = "INSTANT_INVITE"),
-          (rJ.EMOJI = "EMOJI"),
-          (rJ.EMOJI_REACTION = "EMOJI_REACTION"),
-          (rJ.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
-          (rJ.DMS = "DMS"),
-          (rJ.THREAD = "THREAD"),
-          (rJ.SOUNDBOARD = "SOUNDBOARD"),
-          ((rq = ec || (ec = {})).NEWEST = "newest"),
-          (rq.OLDEST = "oldest"),
-          (rq.MOST_RELEVANT = "most_relevant"),
+        ((rq = eE || (eE = {})).GUILD = "GUILD"),
+          (rq.FAVORITES = "FAVORITES"),
+          (rq.CHANNEL = "CHANNEL"),
+          (rq.GUILD_CHANNEL = "GUILD_CHANNEL"),
+          (rq.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
+          (rq.GIF = "GIF"),
+          (rq.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
+          (rq.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
+          (rq.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
+          (rq.STICKER = "STICKER"),
+          (rq.STICKER_SHOP = "STICKER_SHOP"),
+          (rq.INSTANT_INVITE = "INSTANT_INVITE"),
+          (rq.EMOJI = "EMOJI"),
+          (rq.EMOJI_REACTION = "EMOJI_REACTION"),
+          (rq.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
+          (rq.DMS = "DMS"),
+          (rq.THREAD = "THREAD"),
+          (rq.SOUNDBOARD = "SOUNDBOARD"),
+          ((rJ = ec || (ec = {})).NEWEST = "newest"),
+          (rJ.OLDEST = "oldest"),
+          (rJ.MOST_RELEVANT = "most_relevant"),
           ((rz = es || (es = {}))[(rz.UNKNOWN_ACCOUNT = 10001)] =
             "UNKNOWN_ACCOUNT"),
           (rz[(rz.UNKNOWN_APPLICATION = 10002)] = "UNKNOWN_APPLICATION"),
@@ -8403,7 +8403,7 @@
           (r1.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
-        let _J = "help_center_cta";
+        let _q = "help_center_cta";
         ((r2 = eA || (eA = {})).HERO = "Hero"),
           (r2.BODY = "Body"),
           (r2.NAVIGATION = "Navigation"),
@@ -8942,7 +8942,7 @@
           ((r5 = ed || (ed = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
-        let _q = Object.freeze({
+        let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9072,50 +9072,50 @@
           (r8.MOBILE_WEB_HANDOFF = "Mobile Web Handoff"),
           (r8.DEFAULT = "The default username password Login"),
           (r8.MFA = "MFA Login"),
-          ((r7 = ef || (ef = {})).INVITE_NOTICE = "Invite Notice"),
-          (r7.SETTINGS_INVITE = "Settings Invite"),
-          (r7.CONTEXT_MENU = "Context Menu"),
-          (r7.WELCOME_MESSAGE = "Welcome Message"),
-          (r7.GUILD_CHANNELS = "Guild Channels"),
-          (r7.GUILD_HEADER = "Guild Header"),
-          (r7.GUILD_EVENTS = "Guild Events"),
-          (r7.GUILD_CONTEXT_MENU = "Guild Context Menu"),
-          (r7.GUILD_CREATE = "Guild Create"),
-          (r7.STREAM_INVITE = "Stream Invite"),
-          (r7.GUILD_PROGRESS = "Guild Progress"),
-          (r7.CHANNEL_WELCOME = "Channel Welcome CTA"),
-          (r7.CHANNEL_CALL = "Channel Call"),
-          (r7.ACTIVITY_INVITE = "Activity Invite"),
-          (r7.INVITE_SYSTEM_MESSAGE = "Invite System Message"),
-          (r7.HUB_DIRECTORY = "Hub Directory Channel"),
-          (r7.HUB_SIDEBAR = "Hub Sidebar"),
-          (r7.STAGE_CHANNEL = "Stage Channel"),
-          (r7.GROUP_DM = "Group DM Invite Create"),
-          (r7.GUILD_HOME = "Guild Home"),
-          (r7.ACTIVITY_ENTRY_POINT_TILE = "Activity Entry Point Tile"),
-          (r7.ADD_FRIENDS_MODAL = "Add Friends Modal"),
-          (r7.ADD_FRIENDS_WIDGET = "Add Friends Widget"),
-          (r7.ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
-          (r7.PROFILE_CTA = "Profile CTA"),
-          ((r9 = eL || (eL = {})).GUILD_BANNER_NOTICE = "Guild Banner Notice"),
-          (r9.GUILD_MFA_WARNING = "Guild MFA Warning"),
-          (r9.GUILD_SUBSCRIPTION_NOTICE = "Guild Subscription Notice"),
-          (r9.QUICK_SWITCHER_NOTICE = "Quick Switcher Notice"),
-          (r9.INVITE_NOTICE = "Invite Notice"),
-          (r9.GRACE_PERIOD_NOTICE = "Grace Period Notice"),
-          (r9.ENABLE_PUBLIC_GUILD_UPSELL_NOTICE =
+          ((r9 = ef || (ef = {})).INVITE_NOTICE = "Invite Notice"),
+          (r9.SETTINGS_INVITE = "Settings Invite"),
+          (r9.CONTEXT_MENU = "Context Menu"),
+          (r9.WELCOME_MESSAGE = "Welcome Message"),
+          (r9.GUILD_CHANNELS = "Guild Channels"),
+          (r9.GUILD_HEADER = "Guild Header"),
+          (r9.GUILD_EVENTS = "Guild Events"),
+          (r9.GUILD_CONTEXT_MENU = "Guild Context Menu"),
+          (r9.GUILD_CREATE = "Guild Create"),
+          (r9.STREAM_INVITE = "Stream Invite"),
+          (r9.GUILD_PROGRESS = "Guild Progress"),
+          (r9.CHANNEL_WELCOME = "Channel Welcome CTA"),
+          (r9.CHANNEL_CALL = "Channel Call"),
+          (r9.ACTIVITY_INVITE = "Activity Invite"),
+          (r9.INVITE_SYSTEM_MESSAGE = "Invite System Message"),
+          (r9.HUB_DIRECTORY = "Hub Directory Channel"),
+          (r9.HUB_SIDEBAR = "Hub Sidebar"),
+          (r9.STAGE_CHANNEL = "Stage Channel"),
+          (r9.GROUP_DM = "Group DM Invite Create"),
+          (r9.GUILD_HOME = "Guild Home"),
+          (r9.ACTIVITY_ENTRY_POINT_TILE = "Activity Entry Point Tile"),
+          (r9.ADD_FRIENDS_MODAL = "Add Friends Modal"),
+          (r9.ADD_FRIENDS_WIDGET = "Add Friends Widget"),
+          (r9.ADD_FRIENDS_MODAL_SEARCH = "Add Friends Modal Search"),
+          (r9.PROFILE_CTA = "Profile CTA"),
+          ((r7 = eL || (eL = {})).GUILD_BANNER_NOTICE = "Guild Banner Notice"),
+          (r7.GUILD_MFA_WARNING = "Guild MFA Warning"),
+          (r7.GUILD_SUBSCRIPTION_NOTICE = "Guild Subscription Notice"),
+          (r7.QUICK_SWITCHER_NOTICE = "Quick Switcher Notice"),
+          (r7.INVITE_NOTICE = "Invite Notice"),
+          (r7.GRACE_PERIOD_NOTICE = "Grace Period Notice"),
+          (r7.ENABLE_PUBLIC_GUILD_UPSELL_NOTICE =
             "Enable Public Guild Upsell Notice"),
-          (r9.HUB_LINK_NOTICE = "Hub Link Notice"),
-          (r9.CHANNEL_OPT_IN = "Channel Opt-In Customize"),
-          (r9.ROLE_SUBSCRIPTION_MWEB_PURCHASE_NOTICE =
+          (r7.HUB_LINK_NOTICE = "Hub Link Notice"),
+          (r7.CHANNEL_OPT_IN = "Channel Opt-In Customize"),
+          (r7.ROLE_SUBSCRIPTION_MWEB_PURCHASE_NOTICE =
             "Role Subscription MWeb Purchase Notice"),
-          (r9.GUILD_ONBOARDING_UPSELL_NOTICE =
+          (r7.GUILD_ONBOARDING_UPSELL_NOTICE =
             "Guild Onboarding Upsell Notice"),
-          (r9.CLIPS_EDUCATION = "Clips Education Channel Notice"),
-          (r9.LINKED_ROLES_ADMIN_NUX = "Linked Roles Admin Nux Channel Notice"),
-          (r9.SUMMARIES_NOTICE = "Summaries Channel Notice"),
-          (r9.SUMMARIES_ENABLED_NOTICE = "Summaries Enabled Notice"),
-          (r9.CLAN_ADMIN_UPSELL = "Clan Admin Upsell"),
+          (r7.CLIPS_EDUCATION = "Clips Education Channel Notice"),
+          (r7.LINKED_ROLES_ADMIN_NUX = "Linked Roles Admin Nux Channel Notice"),
+          (r7.SUMMARIES_NOTICE = "Summaries Channel Notice"),
+          (r7.SUMMARIES_ENABLED_NOTICE = "Summaries Enabled Notice"),
+          (r7.CLAN_ADMIN_UPSELL = "Clan Admin Upsell"),
           ((ne = eS || (eS = {})).APPLICATION = "Application"),
           (ne.SERVER_INVITE = "Server Invite"),
           (ne.GDM_INVITE = "GDM Invite"),
@@ -9234,12 +9234,12 @@
             "SHOW_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION"),
           (na.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION =
             "HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION"),
-          ((n_ = eM || (eM = {})).TOGGLE_REACTION_POPOUT =
+          ((n_ = eP || (eP = {})).TOGGLE_REACTION_POPOUT =
             "TOGGLE_REACTION_POPOUT"),
           (n_.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (n_.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
         let _z = 50;
-        ((no = eP || (eP = {})).TWITCH = "twitch"),
+        ((no = eM || (eM = {})).TWITCH = "twitch"),
           (no.YOUTUBE = "youtube"),
           (no.SKYPE = "skype"),
           (no.STEAM = "steam"),
@@ -9353,7 +9353,7 @@
           (nA[(nA.TIER_3 = 3)] = "TIER_3");
         let _4 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
           _8 = 7,
-          _7 = 0;
+          _9 = 0;
         ((nT = eY || (eY = {}))[(nT.DEFAULT = 0)] = "DEFAULT"),
           (nT[(nT.GIFT = 1)] = "GIFT"),
           (nT[(nT.SALE = 2)] = "SALE"),
@@ -9362,7 +9362,7 @@
           (nT[(nT.MOBILE = 5)] = "MOBILE"),
           (nT[(nT.PREMIUM_TIER_0 = 6)] = "PREMIUM_TIER_0"),
           (nT[(nT.MOBILE_PREMIUM_TIER_2 = 7)] = "MOBILE_PREMIUM_TIER_2");
-        let _9 = Object.freeze({
+        let _7 = Object.freeze({
           fonts: [
             {
               src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -9788,6 +9788,9 @@
             "quest_share_link_deep_linked_into_desktop_client"),
           (nf.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT =
             "quest_share_link_deep_linked_into_mobile_client"),
+          (nf.QUEST_SURVEY_DISMISSED = "quest_survey_dismissed"),
+          (nf.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
+          (nf.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (nf.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (nf.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (nf.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -10247,6 +10250,7 @@
           (nf.MESSAGE_SWIPE_ACTION_SENT = "message_swipe_action_sent"),
           (nf.CHAT_CONTEXT_BAR_ACTION_CANCELED =
             "chat_context_bar_action_canceled"),
+          (nf.SHARE_SHEET_ACTION = "share_sheet_action"),
           (nf.SHARE_MESSAGE_SENT = "share_message_sent"),
           (nf.MESSAGE_POPOUT_MENU_OPENED_MOBILE =
             "message_popout_menu_opened_mobile"),
@@ -10924,23 +10928,23 @@
             },
           }),
           on = 864e5;
-        ((nC = eJ || (eJ = {})).NORMAL = "normal"),
+        ((nC = eq || (eq = {})).NORMAL = "normal"),
           (nC.MINIMUM = "minimum"),
           (nC.NO_CHAT = "no-chat"),
           (nC.FULL_SCREEN = "full-screen"),
-          ((ng = eq || (eq = {})).THEATRE = "theatre"),
+          ((ng = eJ || (eJ = {})).THEATRE = "theatre"),
           (ng.FULL_SCREEN = "full-screen"),
           (ng.PIP = "pip"),
           (ng.POPOUT = "popout"),
           (ng.PORTRAIT = "portrait"),
           (ng.LANDSCAPE = "landscape"),
           (ng.MINIMIZED = "minimized"),
-          ((nM = ez || (ez = {})).USER_SETTINGS = "USER_SETTINGS"),
-          (nM.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
-          (nM.GUILD_SETTINGS = "GUILD_SETTINGS"),
-          (nM.RTC_DEBUG = "RTC_DEBUG"),
-          (nM.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
-          (nM.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
+          ((nP = ez || (ez = {})).USER_SETTINGS = "USER_SETTINGS"),
+          (nP.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
+          (nP.GUILD_SETTINGS = "GUILD_SETTINGS"),
+          (nP.RTC_DEBUG = "RTC_DEBUG"),
+          (nP.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
+          (nP.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
         let oa = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
@@ -11020,10 +11024,10 @@
           GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: 201,
           GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: 202,
         });
-        ((nP = eQ || (eQ = {})).ALL = "ALL"),
-          (nP.CREATE = "CREATE"),
-          (nP.UPDATE = "UPDATE"),
-          (nP.DELETE = "DELETE"),
+        ((nM = eQ || (eQ = {})).ALL = "ALL"),
+          (nM.CREATE = "CREATE"),
+          (nM.UPDATE = "UPDATE"),
+          (nM.DELETE = "DELETE"),
           ((nU = eZ || (eZ = {})).USER = "1"),
           (nU.ROLE = "0"),
           ((nm = e0 || (e0 = {}))[(nm.ROLE = 1)] = "ROLE"),
@@ -11247,11 +11251,11 @@
           (nw[(nw.S = 83)] = "S"),
           (nw[(nw.U = 85)] = "U"),
           (nw[(nw.COMMA = 188)] = "COMMA"),
-          ((nH = e7 || (e7 = {})).TOP_LEFT = "top-left"),
+          ((nH = e9 || (e9 = {})).TOP_LEFT = "top-left"),
           (nH.TOP_RIGHT = "top-right"),
           (nH.BOTTOM_LEFT = "bottom-left"),
           (nH.BOTTOM_RIGHT = "bottom-right"),
-          ((nY = e9 || (e9 = {})).VIDEO = "VIDEO"),
+          ((nY = e7 || (e7 = {})).VIDEO = "VIDEO"),
           (nY.EMBED_IFRAME = "EMBED_IFRAME"),
           ((nW = te || (te = {})).GIF = "GIF"),
           (nW.STICKER = "STICKER");
@@ -11485,12 +11489,12 @@
           (n$[(n$.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (n$[(n$.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
         let oI = 30;
-        ((nJ = ts || (ts = {})).OVERLAY = "OVERLAY"),
-          (nJ.APP = "APP"),
-          (nJ.POPOUT = "POPOUT");
+        ((nq = ts || (ts = {})).OVERLAY = "OVERLAY"),
+          (nq.APP = "APP"),
+          (nq.POPOUT = "POPOUT");
         let ou = __OVERLAY__ ? "OVERLAY" : "APP";
-        ((nq = tI || (tI = {})).COMPLETE = "complete"),
-          (nq.TRANSITION = "transition"),
+        ((nJ = tI || (tI = {})).COMPLETE = "complete"),
+          (nJ.TRANSITION = "transition"),
           ((nz = tu || (tu = {})).QUEUED = "queued"),
           (nz.PLANNING = "planning"),
           (nz.ALLOCATING_DISK = "allocating_disk"),
@@ -11559,15 +11563,15 @@
             "APPLICATION_GUILD_SUBSCRIPTION"),
           (n8[(n8.APPLICATION_USER_SUBSCRIPTION = 256)] =
             "APPLICATION_USER_SUBSCRIPTION"),
-          ((n7 = tS || (tS = {}))[(n7.PREMIUM = 1)] = "PREMIUM"),
-          (n7[(n7.BOOST = 2)] = "BOOST"),
-          (n7[(n7.ACTIVITY_IAP = 3)] = "ACTIVITY_IAP"),
-          (n7[(n7.GUILD_ROLE = 4)] = "GUILD_ROLE"),
-          (n7[(n7.GUILD_PRODUCT = 5)] = "GUILD_PRODUCT"),
-          (n7[(n7.APPLICATION = 6)] = "APPLICATION"),
-          (n7[(n7.COLLECTIBLES = 7)] = "COLLECTIBLES"),
-          ((n9 = tD || (tD = {})).HOME = "1"),
-          (n9.BROWSE = "2"),
+          ((n9 = tS || (tS = {}))[(n9.PREMIUM = 1)] = "PREMIUM"),
+          (n9[(n9.BOOST = 2)] = "BOOST"),
+          (n9[(n9.ACTIVITY_IAP = 3)] = "ACTIVITY_IAP"),
+          (n9[(n9.GUILD_ROLE = 4)] = "GUILD_ROLE"),
+          (n9[(n9.GUILD_PRODUCT = 5)] = "GUILD_PRODUCT"),
+          (n9[(n9.APPLICATION = 6)] = "APPLICATION"),
+          (n9[(n9.COLLECTIBLES = 7)] = "COLLECTIBLES"),
+          ((n7 = tD || (tD = {})).HOME = "1"),
+          (n7.BROWSE = "2"),
           ((ae = th || (th = {})).WIN32 = "win32"),
           (ae.WIN64 = "win64"),
           (ae.MACOS = "macos"),
@@ -11810,7 +11814,7 @@
             down: 81,
             up: 82,
           });
-        ((an = tM || (tM = {}))[(an.Left = 0)] = "Left"),
+        ((an = tP || (tP = {}))[(an.Left = 0)] = "Left"),
           (an[(an.Right = 1)] = "Right"),
           (an[(an.Center = 2)] = "Center"),
           (an[(an.Back = 3)] = "Back"),
@@ -11930,7 +11934,7 @@
           "\\": 220,
           "'": 222,
         });
-        ((aa = tP || (tP = {}))[(aa.WINDOWS = 1)] = "WINDOWS"),
+        ((aa = tM || (tM = {}))[(aa.WINDOWS = 1)] = "WINDOWS"),
           (aa[(aa.MACOS = 2)] = "MACOS"),
           (aa[(aa.LINUX = 3)] = "LINUX"),
           (aa[(aa.BROWSER = 4)] = "BROWSER"),
@@ -12030,9 +12034,9 @@
           ((aS = t$ || (t$ = {})).CHANNEL_SETTINGS = "Channel Settings"),
           (aS.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
           (aS.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((aD = tJ || (tJ = {}))[(aD.INCOMING = 1)] = "INCOMING"),
+          ((aD = tq || (tq = {}))[(aD.INCOMING = 1)] = "INCOMING"),
           (aD[(aD.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
-          ((ah = tq || (tq = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
+          ((ah = tJ || (tJ = {}))[(ah.APPLICATION = 0)] = "APPLICATION"),
           (ah[(ah.OVERVIEW = 1)] = "OVERVIEW"),
           (ah[(ah.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
           (ah[(ah.TWITCH = 3)] = "TWITCH"),
@@ -12050,14 +12054,14 @@
         let oL = 100,
           oS =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
-        ((aM = tZ || (tZ = {}))[(aM.NULL = 0)] = "NULL"),
-          (aM[(aM.DISABLED = 1)] = "DISABLED"),
-          (aM[(aM.ENABLED = 2)] = "ENABLED");
+        ((aP = tZ || (tZ = {}))[(aP.NULL = 0)] = "NULL"),
+          (aP[(aP.DISABLED = 1)] = "DISABLED"),
+          (aP[(aP.ENABLED = 2)] = "ENABLED");
         let oD =
           "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
-        ((aP = t0 || (t0 = {}))[(aP.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
-          (aP[(aP.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
-          (aP[(aP.ALLOW_ANY_VIEWER_CLIPS = 4)] = "ALLOW_ANY_VIEWER_CLIPS"),
+        ((aM = t0 || (t0 = {}))[(aM.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
+          (aM[(aM.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
+          (aM[(aM.ALLOW_ANY_VIEWER_CLIPS = 4)] = "ALLOW_ANY_VIEWER_CLIPS"),
           ((aU = t1 || (t1 = {})).LOADING = "LOADING"),
           (aU.ERROR = "ERROR"),
           (aU.READY = "READY");
@@ -12113,8 +12117,8 @@
           h,
           C,
           g,
-          M,
           P,
+          M,
           U,
           m,
           G,
@@ -12134,8 +12138,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -12228,47 +12232,47 @@
           ((p || (p = {})).ADVANCED = "ADVANCED"),
           (($ = f || (f = {})).USER = "USER"),
           ($.ACTION = "ACTION"),
-          ((J = L || (L = {})).OVERVIEW = "OVERVIEW"),
-          (J.ADD_OVERRIDE = "ADD_OVERRIDE"),
-          (J.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((q = S || (S = {})).INVITE = "invite"),
-          (q.GUILD_TEMPLATE = "guild-template"),
-          (q.CHANNEL = "channel"),
-          (q.GIFT_CODE = "gift-code"),
-          (q.MESSAGE = "message"),
-          (q.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          (q.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          (q.PROMOTIONS = "promotions"),
-          (q.NONE = "none"),
-          (q.REMOTE_AUTH = "remote-auth"),
-          (q.USER_PROFILE = "user-profile"),
-          (q.BUILD_OVERRIDE = "build-override"),
-          (q.CONTACT_SYNC = "contact-sync"),
-          (q.ADD_FRIENDS = "add-friends"),
-          (q.COMPOSE_MESSAGE = "compose-message"),
-          (q.GUILD_EVENT_DETAILS = "guild-event-details"),
-          (q.FRIENDS = "friends"),
-          (q.EDIT_PROFILE = "edit-profile"),
-          (q.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          (q.VOICE_CHANNEL = "voice-channel"),
-          (q.GUILD_HOME = "guild-home"),
-          (q.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          (q.SESSION_MANAGEMENT = "session-management"),
-          (q.CONNECTIONS = "connections"),
-          (q.GUILD_SETTINGS = "guild-settings"),
-          (q.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          (q.ACTIVATE_DEVICE = "activate-device"),
-          (q.FAMILY_CENTER = "family-center"),
-          (q.SHARE = "share"),
-          (q.CREATE_VOICE_INVITE = "create_voice_invite"),
-          (q.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          (q.ACCOUNT_STANDING = "account-standing"),
-          (q.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          (q.SHOP = "shop"),
-          (q.AUTHORIZED_APPS = "authorized-apps"),
-          (q.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
-          (q.ICYMI = "icymi"),
-          (q.QUESTS = "quests");
+          ((q = L || (L = {})).OVERVIEW = "OVERVIEW"),
+          (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
+          (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
+          ((J = S || (S = {})).INVITE = "invite"),
+          (J.GUILD_TEMPLATE = "guild-template"),
+          (J.CHANNEL = "channel"),
+          (J.GIFT_CODE = "gift-code"),
+          (J.MESSAGE = "message"),
+          (J.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (J.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (J.PROMOTIONS = "promotions"),
+          (J.NONE = "none"),
+          (J.REMOTE_AUTH = "remote-auth"),
+          (J.USER_PROFILE = "user-profile"),
+          (J.BUILD_OVERRIDE = "build-override"),
+          (J.CONTACT_SYNC = "contact-sync"),
+          (J.ADD_FRIENDS = "add-friends"),
+          (J.COMPOSE_MESSAGE = "compose-message"),
+          (J.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (J.FRIENDS = "friends"),
+          (J.EDIT_PROFILE = "edit-profile"),
+          (J.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (J.VOICE_CHANNEL = "voice-channel"),
+          (J.GUILD_HOME = "guild-home"),
+          (J.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (J.SESSION_MANAGEMENT = "session-management"),
+          (J.CONNECTIONS = "connections"),
+          (J.GUILD_SETTINGS = "guild-settings"),
+          (J.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (J.ACTIVATE_DEVICE = "activate-device"),
+          (J.FAMILY_CENTER = "family-center"),
+          (J.SHARE = "share"),
+          (J.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (J.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (J.ACCOUNT_STANDING = "account-standing"),
+          (J.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (J.SHOP = "shop"),
+          (J.AUTHORIZED_APPS = "authorized-apps"),
+          (J.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
+          (J.ICYMI = "icymi"),
+          (J.QUESTS = "quests");
         let ei = "CacheStoreLazy",
           eE = "CacheStoreChannelsLazy",
           ec = "CacheStore";
@@ -12351,9 +12355,9 @@
             "#DF90AF",
           ],
         };
-        ((et = M || (M = {}))[(et.HIGH = 0.6)] = "HIGH"),
+        ((et = P || (P = {}))[(et.HIGH = 0.6)] = "HIGH"),
           (et[(et.LOW = 0.3)] = "LOW"),
-          ((er = P || (P = {}))[(er.IMAGE = 0)] = "IMAGE"),
+          ((er = M || (M = {}))[(er.IMAGE = 0)] = "IMAGE"),
           (er[(er.GIF = 1)] = "GIF"),
           (er[(er.VIDEO = 2)] = "VIDEO"),
           ((en = U || (U = {})).OVERVIEW = "overview"),
@@ -12471,7 +12475,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-54505b511d44f9cf9fcb7498ffdd509c75c48195",
+            release: "discord_web-1d7ad543418a1fdfd3a449543c1df933a8a59ce3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12540,8 +12544,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "335518"), "335518"));
-          o.YA("builtAt", String("1729025926365"));
+            o.YA("buildNumber", ((e = "335533"), "335533"));
+          o.YA("builtAt", String("1729027411310"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12600,7 +12604,7 @@
             return f;
           },
           vc: function () {
-            return M;
+            return P;
           },
           yP: function () {
             return c;
@@ -12672,7 +12676,7 @@
             UNREADS_ALL_MESSAGES: 1024,
             UNREADS_ONLY_MENTIONS: 512,
           },
-          M = {
+          P = {
             OPT_IN_CHANNELS_ON: 16384,
             OPT_IN_CHANNELS_OFF: 8192,
             UNREADS_ONLY_MENTIONS: 4096,
@@ -15475,6 +15479,31 @@
               HYPESQUAD_HOUSE_3: "#45ddc0",
               INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
               LOL: "#021f25",
+              OPACITY_1: "#97979F",
+              OPACITY_10: "#97979F",
+              OPACITY_11: "#97979F",
+              OPACITY_12: "#97979F",
+              OPACITY_13: "#97979F",
+              OPACITY_14: "#97979F",
+              OPACITY_15: "#97979F",
+              OPACITY_16: "#97979F",
+              OPACITY_17: "#97979F",
+              OPACITY_18: "#97979F",
+              OPACITY_19: "#97979F",
+              OPACITY_2: "#97979F",
+              OPACITY_20: "#97979F",
+              OPACITY_21: "#97979F",
+              OPACITY_22: "#97979F",
+              OPACITY_23: "#97979F",
+              OPACITY_24: "#97979F",
+              OPACITY_25: "#97979F",
+              OPACITY_3: "#97979F",
+              OPACITY_4: "#97979F",
+              OPACITY_5: "#97979F",
+              OPACITY_6: "#97979F",
+              OPACITY_7: "#97979F",
+              OPACITY_8: "#97979F",
+              OPACITY_9: "#97979F",
               ORANGE_100: "#fff8f5",
               ORANGE_130: "#fff4ed",
               ORANGE_160: "#feeadf",
@@ -17403,7 +17432,7 @@
             return g;
           },
           ET: function () {
-            return P;
+            return M;
           },
           Et: function () {
             return N;
@@ -17436,7 +17465,7 @@
             return ex;
           },
           Pl: function () {
-            return eM;
+            return eP;
           },
           Py: function () {
             return I;
@@ -17448,7 +17477,7 @@
             return ep;
           },
           RG: function () {
-            return M;
+            return P;
           },
           RK: function () {
             return ek;
@@ -17499,7 +17528,7 @@
             return m;
           },
           dG: function () {
-            return eP;
+            return eM;
           },
           fK: function () {
             return eF;
@@ -17576,8 +17605,8 @@
           h,
           C,
           g,
-          M,
           P,
+          M,
           U,
           m,
           G,
@@ -17597,8 +17626,8 @@
           X,
           j,
           $,
-          J,
           q,
+          J,
           z,
           Q,
           Z,
@@ -17768,7 +17797,7 @@
         ((x = T || (T = {}))[(x.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
           (x[(x.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
           (x[(x.CONNECT = 1048576)] = "CONNECT");
-        let eM = Object.freeze({
+        let eP = Object.freeze({
             CREATE_INSTANT_INVITE: ei.r0(0),
             KICK_MEMBERS: ei.r0(1),
             BAN_MEMBERS: ei.r0(2),
@@ -17821,22 +17850,22 @@
             MANAGE_EVENTS: ei.r0(33),
             CREATE_EVENTS: ei.r0(44),
           }),
-          eP = function () {
+          eM = function () {
             for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
               t[r] = arguments[r];
           },
           eU = () => null,
           em = () => Promise.resolve(),
           eG = [
-            eM.KICK_MEMBERS,
-            eM.BAN_MEMBERS,
-            eM.ADMINISTRATOR,
-            eM.MANAGE_CHANNELS,
-            eM.MANAGE_GUILD,
-            eM.MANAGE_ROLES,
-            eM.MANAGE_MESSAGES,
-            eM.MANAGE_THREADS,
-            eM.MODERATE_MEMBERS,
+            eP.KICK_MEMBERS,
+            eP.BAN_MEMBERS,
+            eP.ADMINISTRATOR,
+            eP.MANAGE_CHANNELS,
+            eP.MANAGE_GUILD,
+            eP.MANAGE_ROLES,
+            eP.MANAGE_MESSAGES,
+            eP.MANAGE_THREADS,
+            eP.MODERATE_MEMBERS,
           ],
           ey = ei.$e(...eG),
           eb = 1,
@@ -18008,15 +18037,15 @@
           ($[($.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
           ($[($.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((J = p || (p = {}))[(J.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
-          (J[(J.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
-          (J[(J.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
-          (J[(J.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
-          (J[(J.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
-          (J[(J.RATELIMITED = 4002)] = "RATELIMITED"),
-          (J[(J.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
-          (J[(J.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
-          (J[(J.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
+          ((q = p || (p = {}))[(q.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          (q[(q.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
+          (q[(q.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
+          (q[(q.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
+          (q[(q.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
+          (q[(q.RATELIMITED = 4002)] = "RATELIMITED"),
+          (q[(q.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
+          (q[(q.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
+          (q[(q.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
         let eH = "token",
           eY = "tokens",
           eW = "https://".concat("status.discord.com"),
@@ -18090,94 +18119,94 @@
             CHANNEL: (e, t) => "/channels/".concat(e, "/").concat(t),
             REPORT: "".concat(eI, "/report"),
           });
-        ((q = f || (f = {})).INDEX = "/"),
-          (q.INDEX_WORD = "/index"),
-          (q.INDEX_BUCKET = "/index/:bucketId"),
-          (q.CHANGELOGS = "/changelogs/:date"),
-          (q.COMMUNITY = "/community"),
-          (q.COMPANY = "/company"),
-          (q.COMPANY_INFORMATION = "/company-information"),
-          (q.CREATORS = "/creators"),
-          (q.DOWNLOADS = "/downloads"),
-          (q.DOWNLOAD = "/download"),
-          (q.GAMING = "/gaming"),
-          (q.PRIVACY = "/privacy"),
-          (q.TOS = "/tos"),
-          (q.TERMS = "/terms"),
-          (q.STORE_TERMS = "/store-terms"),
-          (q.ACKNOWLEDGEMENTS = "/acknowledgements"),
-          (q.LICENSES = "/licenses"),
-          (q.PARTNERS = "/partners"),
-          (q.HYPESQUAD = "/hypesquad"),
-          (q.HYPESQUAD_RIOT = "/hypesquad-riot"),
-          (q.BRANDING = "/branding"),
-          (q.ERROR_404 = "/404"),
-          (q.JOBS = "/jobs"),
-          (q.JOB = "/jobs/:jobId"),
-          (q.STREAMKIT = "/streamkit"),
-          (q.SECURITY = "/security"),
-          (q.NITRO = "/nitro"),
-          (q.DISCOVER = "/servers"),
-          (q.QUESTS = "/ads/quests"),
-          (q.GUIDELINES = "/guidelines"),
-          (q.RICH_PRESENCE = "/rich-presence"),
-          (q.VERIFICATION = "/verification"),
-          (q.OPEN_SOURCE = "/open-source"),
-          (q.WARFRAME = "/warframe"),
-          (q.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
-          (q.SAFETY_LANDING = "/safetycenter"),
-          (q.SAFETY_ARTICLE_ROOT = "/safety"),
-          (q.SAFETY_ARTICLE = "/safety/:article"),
-          (q.NEWSROOM = "/newsroom"),
-          (q.INSPIRATION = "/inspiration"),
-          (q.MOD_ACADEMY_LANDING = "/moderation"),
-          (q.MOD_ACADEMY_EXAM = "/moderation/exam"),
-          (q.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
-          (q.BLOG = "/blog"),
-          (q.APP_DIRECTORY = "/application-directory"),
-          (q.REFRESH_INDEX = "/new"),
-          (q.REFRESH_INDEX_WORD = "/new/index"),
-          (q.REFRESH_COMPANY = "/new/company"),
-          (q.REFRESH_DOWNLOAD = "/new/download"),
-          (q.REFRESH_PRIVACY = "/new/privacy"),
-          (q.REFRESH_TERMS = "/new/terms"),
-          (q.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
-          (q.REFRESH_LICENSES = "/new/licenses"),
-          (q.REFRESH_BRANDING = "/new/branding"),
-          (q.REFRESH_JOBS = "/new/jobs"),
-          (q.REFRESH_JOB = "/new/jobs/:jobId"),
-          (q.REFRESH_STREAMKIT = "/new/streamkit"),
-          (q.REFRESH_NITRO = "/new/nitro"),
-          (q.REFRESH_GUIDELINES = "/new/guidelines"),
-          (q.REFRESH_SAFETY_LANDING = "/new/safety"),
-          (q.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
-          (q.COLLEGE = "/college"),
-          (q.LEAGUE_CLUBS = "/league-communities"),
-          (q.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
-          (q.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
-          (q.LEGACY_DEV_NEWSLETTER = "/newsletter"),
-          (q.LEGAL_ARCHIVE = "/archive/"),
-          (q.TERMS_MAY_2020 = "/archive/terms/may-2020"),
-          (q.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
-          (q.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
-          (q.FALL_RELEASE_2023 = "/fallrelease"),
-          (q.MOBILE_REDESIGN_2023 = "/mobile"),
-          (q.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
-          (q.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
-          (q.WHY_DISCORD = "/why-discord"),
-          (q.XBOX_OFFER = "/discord-xbox-offer-2020"),
-          (q.COLLEGE_BRUINS = "/bruins"),
-          (q.COLLEGE_ANTEATERS = "/anteaters"),
-          (q.COLLEGE_GAUCHOS = "/gauchos"),
-          (q.COLLEGE_BEARS = "/bears"),
-          (q.COLLEGE_SLUGS = "/slugs"),
-          (q.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
+        ((J = f || (f = {})).INDEX = "/"),
+          (J.INDEX_WORD = "/index"),
+          (J.INDEX_BUCKET = "/index/:bucketId"),
+          (J.CHANGELOGS = "/changelogs/:date"),
+          (J.COMMUNITY = "/community"),
+          (J.COMPANY = "/company"),
+          (J.COMPANY_INFORMATION = "/company-information"),
+          (J.CREATORS = "/creators"),
+          (J.DOWNLOADS = "/downloads"),
+          (J.DOWNLOAD = "/download"),
+          (J.GAMING = "/gaming"),
+          (J.PRIVACY = "/privacy"),
+          (J.TOS = "/tos"),
+          (J.TERMS = "/terms"),
+          (J.STORE_TERMS = "/store-terms"),
+          (J.ACKNOWLEDGEMENTS = "/acknowledgements"),
+          (J.LICENSES = "/licenses"),
+          (J.PARTNERS = "/partners"),
+          (J.HYPESQUAD = "/hypesquad"),
+          (J.HYPESQUAD_RIOT = "/hypesquad-riot"),
+          (J.BRANDING = "/branding"),
+          (J.ERROR_404 = "/404"),
+          (J.JOBS = "/jobs"),
+          (J.JOB = "/jobs/:jobId"),
+          (J.STREAMKIT = "/streamkit"),
+          (J.SECURITY = "/security"),
+          (J.NITRO = "/nitro"),
+          (J.DISCOVER = "/servers"),
+          (J.QUESTS = "/ads/quests"),
+          (J.GUIDELINES = "/guidelines"),
+          (J.RICH_PRESENCE = "/rich-presence"),
+          (J.VERIFICATION = "/verification"),
+          (J.OPEN_SOURCE = "/open-source"),
+          (J.WARFRAME = "/warframe"),
+          (J.REMOTE_AUTH = "/ra/:remoteAuthFingerprint"),
+          (J.SAFETY_LANDING = "/safetycenter"),
+          (J.SAFETY_ARTICLE_ROOT = "/safety"),
+          (J.SAFETY_ARTICLE = "/safety/:article"),
+          (J.NEWSROOM = "/newsroom"),
+          (J.INSPIRATION = "/inspiration"),
+          (J.MOD_ACADEMY_LANDING = "/moderation"),
+          (J.MOD_ACADEMY_EXAM = "/moderation/exam"),
+          (J.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
+          (J.BLOG = "/blog"),
+          (J.APP_DIRECTORY = "/application-directory"),
+          (J.REFRESH_INDEX = "/new"),
+          (J.REFRESH_INDEX_WORD = "/new/index"),
+          (J.REFRESH_COMPANY = "/new/company"),
+          (J.REFRESH_DOWNLOAD = "/new/download"),
+          (J.REFRESH_PRIVACY = "/new/privacy"),
+          (J.REFRESH_TERMS = "/new/terms"),
+          (J.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements"),
+          (J.REFRESH_LICENSES = "/new/licenses"),
+          (J.REFRESH_BRANDING = "/new/branding"),
+          (J.REFRESH_JOBS = "/new/jobs"),
+          (J.REFRESH_JOB = "/new/jobs/:jobId"),
+          (J.REFRESH_STREAMKIT = "/new/streamkit"),
+          (J.REFRESH_NITRO = "/new/nitro"),
+          (J.REFRESH_GUIDELINES = "/new/guidelines"),
+          (J.REFRESH_SAFETY_LANDING = "/new/safety"),
+          (J.REFRESH_SAFETY_ARTICLE = "/new/safety/:article"),
+          (J.COLLEGE = "/college"),
+          (J.LEAGUE_CLUBS = "/league-communities"),
+          (J.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams"),
+          (J.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter"),
+          (J.LEGACY_DEV_NEWSLETTER = "/newsletter"),
+          (J.LEGAL_ARCHIVE = "/archive/"),
+          (J.TERMS_MAY_2020 = "/archive/terms/may-2020"),
+          (J.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020"),
+          (J.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020"),
+          (J.FALL_RELEASE_2023 = "/fallrelease"),
+          (J.MOBILE_REDESIGN_2023 = "/mobile"),
+          (J.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019"),
+          (J.REFRESH_WHY_DISCORD = "/why-discord-is-different"),
+          (J.WHY_DISCORD = "/why-discord"),
+          (J.XBOX_OFFER = "/discord-xbox-offer-2020"),
+          (J.COLLEGE_BRUINS = "/bruins"),
+          (J.COLLEGE_ANTEATERS = "/anteaters"),
+          (J.COLLEGE_GAUCHOS = "/gauchos"),
+          (J.COLLEGE_BEARS = "/bears"),
+          (J.COLLEGE_SLUGS = "/slugs"),
+          (J.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM =
             "/terms/back-to-school-2020/instagram"),
-          (q.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
+          (J.BACK_TO_SCHOOL_GIVEAWAY_TWITTER =
             "/terms/back-to-school-2020/twitter"),
-          (q.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
+          (J.SNOWSGIVING_GIVEAWAY_INSTAGRAM =
             "/terms/snowsgiving-2020/instagram"),
-          (q.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
+          (J.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter"),
           (0, eE.Ft)(eV),
           (0, eE.Ft)(f);
         let eF = Object.freeze({
@@ -18480,10 +18509,10 @@
           (et[(et.INDIE = 67)] = "INDIE"),
           (et[(et.ARCADE = 68)] = "ARCADE"),
           (et[(et.POINT_AND_CLICK = 69)] = "POINT_AND_CLICK"),
-          ((er = M || (M = {}))[(er.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
+          ((er = P || (P = {}))[(er.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
             "GUILD_ROLE_SUBSCRIPTIONS"),
           (er[(er.GUILD_PRODUCTS = 2)] = "GUILD_PRODUCTS"),
-          ((en = P || (P = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
+          ((en = M || (M = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
           (en.PERMISSION_DISMISSED = "PERMISSION_DISMISSED"),
           (en.NO_DEVICES_FOUND = "NO_DEVICES_FOUND"),
           ((ea = U || (U = {})).SWIPE = "SWIPE"),
@@ -18697,6 +18726,31 @@
           (a.HYPESQUAD_HOUSE_3 = "hypesquad-house-3"),
           (a.INPUT_PLACEHOLDER_TEXT_DARK = "input-placeholder-text-dark"),
           (a.LOL = "lol"),
+          (a.OPACITY_1 = "opacity-1"),
+          (a.OPACITY_10 = "opacity-10"),
+          (a.OPACITY_11 = "opacity-11"),
+          (a.OPACITY_12 = "opacity-12"),
+          (a.OPACITY_13 = "opacity-13"),
+          (a.OPACITY_14 = "opacity-14"),
+          (a.OPACITY_15 = "opacity-15"),
+          (a.OPACITY_16 = "opacity-16"),
+          (a.OPACITY_17 = "opacity-17"),
+          (a.OPACITY_18 = "opacity-18"),
+          (a.OPACITY_19 = "opacity-19"),
+          (a.OPACITY_2 = "opacity-2"),
+          (a.OPACITY_20 = "opacity-20"),
+          (a.OPACITY_21 = "opacity-21"),
+          (a.OPACITY_22 = "opacity-22"),
+          (a.OPACITY_23 = "opacity-23"),
+          (a.OPACITY_24 = "opacity-24"),
+          (a.OPACITY_25 = "opacity-25"),
+          (a.OPACITY_3 = "opacity-3"),
+          (a.OPACITY_4 = "opacity-4"),
+          (a.OPACITY_5 = "opacity-5"),
+          (a.OPACITY_6 = "opacity-6"),
+          (a.OPACITY_7 = "opacity-7"),
+          (a.OPACITY_8 = "opacity-8"),
+          (a.OPACITY_9 = "opacity-9"),
           (a.ORANGE_100 = "orange-100"),
           (a.ORANGE_130 = "orange-130"),
           (a.ORANGE_160 = "orange-160"),
@@ -19155,6 +19209,31 @@
           "hypesquad-house-3": { hex: "#45ddc0" },
           "input-placeholder-text-dark": { hex: "#87898c" },
           lol: { hex: "#021f25" },
+          "opacity-1": { hex: "#97979F" },
+          "opacity-10": { hex: "#97979F" },
+          "opacity-11": { hex: "#97979F" },
+          "opacity-12": { hex: "#97979F" },
+          "opacity-13": { hex: "#97979F" },
+          "opacity-14": { hex: "#97979F" },
+          "opacity-15": { hex: "#97979F" },
+          "opacity-16": { hex: "#97979F" },
+          "opacity-17": { hex: "#97979F" },
+          "opacity-18": { hex: "#97979F" },
+          "opacity-19": { hex: "#97979F" },
+          "opacity-2": { hex: "#97979F" },
+          "opacity-20": { hex: "#97979F" },
+          "opacity-21": { hex: "#97979F" },
+          "opacity-22": { hex: "#97979F" },
+          "opacity-23": { hex: "#97979F" },
+          "opacity-24": { hex: "#97979F" },
+          "opacity-25": { hex: "#97979F" },
+          "opacity-3": { hex: "#97979F" },
+          "opacity-4": { hex: "#97979F" },
+          "opacity-5": { hex: "#97979F" },
+          "opacity-6": { hex: "#97979F" },
+          "opacity-7": { hex: "#97979F" },
+          "opacity-8": { hex: "#97979F" },
+          "opacity-9": { hex: "#97979F" },
           "orange-100": { hex: "#fff8f5" },
           "orange-130": { hex: "#fff4ed" },
           "orange-160": { hex: "#feeadf" },
@@ -19606,6 +19685,31 @@
           HYPESQUAD_HOUSE_3: "#45ddc0",
           INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
           LOL: "#021f25",
+          OPACITY_1: "#97979F",
+          OPACITY_10: "#97979F",
+          OPACITY_11: "#97979F",
+          OPACITY_12: "#97979F",
+          OPACITY_13: "#97979F",
+          OPACITY_14: "#97979F",
+          OPACITY_15: "#97979F",
+          OPACITY_16: "#97979F",
+          OPACITY_17: "#97979F",
+          OPACITY_18: "#97979F",
+          OPACITY_19: "#97979F",
+          OPACITY_2: "#97979F",
+          OPACITY_20: "#97979F",
+          OPACITY_21: "#97979F",
+          OPACITY_22: "#97979F",
+          OPACITY_23: "#97979F",
+          OPACITY_24: "#97979F",
+          OPACITY_25: "#97979F",
+          OPACITY_3: "#97979F",
+          OPACITY_4: "#97979F",
+          OPACITY_5: "#97979F",
+          OPACITY_6: "#97979F",
+          OPACITY_7: "#97979F",
+          OPACITY_8: "#97979F",
+          OPACITY_9: "#97979F",
           ORANGE_100: "#fff8f5",
           ORANGE_130: "#fff4ed",
           ORANGE_160: "#feeadf",
@@ -22580,6 +22684,31 @@
           INPUT_PLACEHOLDER_TEXT_DARK:
             "hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%)",
           LOL: "hsl(190, calc(var(--saturation-factor, 1) * 89.7%), 7.6%)",
+          OPACITY_1: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_10: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_11: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_12: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_13: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_14: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_15: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_16: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_17: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_18: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_19: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_2: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_20: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_21: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_22: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_23: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_24: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_25: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_3: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_4: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_5: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_6: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_7: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_8: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
+          OPACITY_9: "hsl(240, calc(var(--saturation-factor, 1) * 4%), 60.8%)",
           ORANGE_100: "hsl(18, calc(var(--saturation-factor, 1) * 100%), 98%)",
           ORANGE_130:
             "hsl(23, calc(var(--saturation-factor, 1) * 100%), 96.5%)",
@@ -23962,13 +24091,13 @@
                   n + "(" + r.join(",") + ")"
                 );
               },
-              M = Math.round,
-              P = i.unpack,
+              P = Math.round,
+              M = i.unpack,
               U = Math.round,
               m = function () {
                 for (var e, t, r, n, a = [], _ = arguments.length; _--; )
                   a[_] = arguments[_];
-                var o = (a = P(a, "hsl"))[0],
+                var o = (a = M(a, "hsl"))[0],
                   i = a[1],
                   E = a[2];
                 if (0 === i) t = r = n = 255 * E;
@@ -24062,9 +24191,9 @@
                   n = C(e) || "rgb";
                 return "hsl" == n.substr(0, 3)
                   ? g(D(r), n)
-                  : ((r[0] = M(r[0])),
-                    (r[1] = M(r[1])),
-                    (r[2] = M(r[2])),
+                  : ((r[0] = P(r[0])),
+                    (r[1] = P(r[1])),
+                    (r[2] = P(r[2])),
                     ("rgba" === n || (r.length > 3 && r[3] < 1)) &&
                       ((r[3] = r.length > 3 ? r[3] : 1), (n = "rgba")),
                     n + "(" + r.slice(0, "rgb" === n ? 3 : 4).join(",") + ")");
@@ -24197,18 +24326,18 @@
                     return "hcg";
                 },
               });
-            var J = i.unpack,
-              q = i.last,
+            var q = i.unpack,
+              J = i.last,
               z = Math.round,
               Q = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = J(e, "rgba"),
+                var r = q(e, "rgba"),
                   n = r[0],
                   a = r[1],
                   _ = r[2],
                   o = r[3],
-                  i = q(e) || "auto";
+                  i = J(e) || "auto";
                 void 0 === o && (o = 1),
                   "auto" === i && (i = o < 1 ? "rgba" : "rgb"),
                   (n = z(n)),
@@ -24505,24 +24634,24 @@
                 t3: 0.008856452,
               },
               eg = i.unpack,
-              eM = Math.pow,
-              eP = function (e) {
+              eP = Math.pow,
+              eM = function (e) {
                 return (e /= 255) <= 0.04045
                   ? e / 12.92
-                  : eM((e + 0.055) / 1.055, 2.4);
+                  : eP((e + 0.055) / 1.055, 2.4);
               },
               eU = function (e) {
-                return e > eC.t3 ? eM(e, 1 / 3) : e / eC.t2 + eC.t0;
+                return e > eC.t3 ? eP(e, 1 / 3) : e / eC.t2 + eC.t0;
               },
               em = function (e, t, r) {
                 return (
-                  (e = eP(e)),
-                  (t = eP(t)),
+                  (e = eM(e)),
+                  (t = eM(t)),
                   [
                     eU(
                       (0.4124564 * e +
                         0.3575761 * t +
-                        0.1804375 * (r = eP(r))) /
+                        0.1804375 * (r = eM(r))) /
                         eC.Xn,
                     ),
                     eU((0.2126729 * e + 0.7151522 * t + 0.072175 * r) / eC.Yn),
@@ -24620,8 +24749,8 @@
               eX = i.unpack,
               ej = i.unpack,
               e$ = i.DEG2RAD,
-              eJ = Math.sin,
-              eq = Math.cos,
+              eq = Math.sin,
+              eJ = Math.cos,
               ez = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -24629,7 +24758,7 @@
                   n = r[0],
                   a = r[1],
                   _ = r[2];
-                return isNaN(_) && (_ = 0), [n, eq((_ *= e$)) * a, eJ(_) * a];
+                return isNaN(_) && (_ = 0), [n, eJ((_ *= e$)) * a, eq(_) * a];
               },
               eQ = i.unpack,
               eZ = function () {
@@ -24873,15 +25002,15 @@
               });
             var e4 = i.unpack,
               e8 = i.type,
-              e7 = i.type,
-              e9 = function () {
+              e9 = i.type,
+              e7 = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = e4(e, "rgb");
                 return (r[0] << 16) + (r[1] << 8) + r[2];
               };
             (u.prototype.num = function () {
-              return e9(this._rgb);
+              return e7(this._rgb);
             }),
               (l.num = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -24903,7 +25032,7 @@
                     e[t] = arguments[t];
                   if (
                     1 === e.length &&
-                    "number" === e7(e[0]) &&
+                    "number" === e9(e[0]) &&
                     e[0] >= 0 &&
                     e[0] <= 16777215
                   )
@@ -25183,7 +25312,7 @@
               throw Error("unknown channel " + n + " in mode " + r);
             };
             var tg = i.type,
-              tM = Math.pow;
+              tP = Math.pow;
             u.prototype.luminance = function (e) {
               if (void 0 !== e && "number" === tg(e)) {
                 if (0 === e) return new u([0, 0, 0, this._rgb[3]], "rgb");
@@ -25206,9 +25335,9 @@
                   ).rgb();
                 return new u(a.concat([this._rgb[3]]));
               }
-              return tP.apply(void 0, this._rgb.slice(0, 3));
+              return tM.apply(void 0, this._rgb.slice(0, 3));
             };
-            var tP = function (e, t, r) {
+            var tM = function (e, t, r) {
                 return (
                   (e = tU(e)),
                   (t = tU(t)),
@@ -25218,7 +25347,7 @@
               tU = function (e) {
                 return (e /= 255) <= 0.03928
                   ? e / 12.92
-                  : tM((e + 0.055) / 1.055, 2.4);
+                  : tP((e + 0.055) / 1.055, 2.4);
               },
               tm = {},
               tG = i.type,
@@ -25436,7 +25565,7 @@
               },
               tj = i.type,
               t$ = Math.pow,
-              tJ = function (e) {
+              tq = function (e) {
                 var t = "rgb",
                   r = l("#ccc"),
                   n = 0,
@@ -25678,7 +25807,7 @@
                   S
                 );
               },
-              tq = function (e) {
+              tJ = function (e) {
                 for (var t = [1, 1], r = 1; r < e; r++) {
                   for (var n = [1], a = 1; a <= t.length; a++)
                     n[a] = (t[a] || 0) + t[a - 1];
@@ -25748,7 +25877,7 @@
                   (c = e.map(function (e) {
                     return e.lab();
                   })),
-                    (s = tq((I = e.length - 1))),
+                    (s = tJ((I = e.length - 1))),
                     (a = function (e) {
                       var t = 1 - e;
                       return new u(
@@ -25845,8 +25974,8 @@
                 t5 = Math.sin,
                 t4 = Math.cos,
                 t8 = Math.floor,
-                t7 = Math.random,
-                t9 = Math.log,
+                t9 = Math.random,
+                t7 = Math.log,
                 re = Math.pow,
                 rt = Math.floor,
                 rr = Math.abs,
@@ -25901,8 +26030,8 @@
                       throw Error(
                         "Logarithmic scales are only possible for values > 0",
                       );
-                    var c = Math.LOG10E * t9(n),
-                      s = Math.LOG10E * t9(a);
+                    var c = Math.LOG10E * t7(n),
+                      s = Math.LOG10E * t7(a);
                     i.push(n);
                     for (var I = 1; I < r; I++)
                       i.push(re(10, c + (I / r) * (s - c)));
@@ -25933,12 +26062,12 @@
                       for (var D = 0; D < r; D++) O[D] = 0;
                       for (var h = 0; h < N; h++) {
                         for (
-                          var C = o[h], g = Number.MAX_VALUE, M = void 0, P = 0;
-                          P < r;
-                          P++
+                          var C = o[h], g = Number.MAX_VALUE, P = void 0, M = 0;
+                          M < r;
+                          M++
                         ) {
-                          var U = rr(L[P] - C);
-                          U < g && ((g = U), (M = P)), O[M]++, (d[h] = M);
+                          var U = rr(L[M] - C);
+                          U < g && ((g = U), (P = M)), O[P]++, (d[h] = P);
                         }
                       }
                       for (var m = Array(r), G = 0; G < r; G++) m[G] = null;
@@ -26467,7 +26596,7 @@
                 var t = tz(e);
                 return (
                   (t.scale = function () {
-                    return tJ(t);
+                    return tq(t);
                   }),
                   t
                 );
@@ -26533,10 +26662,10 @@
               (l.mix = l.interpolate = ty),
               (l.random = function () {
                 for (var e = "#", t = 0; t < 6; t++)
-                  e += "0123456789abcdef".charAt(t8(16 * t7()));
+                  e += "0123456789abcdef".charAt(t8(16 * t9()));
                 return new u(e, "hex");
               }),
-              (l.scale = tJ),
+              (l.scale = tq),
               (l.analyze = r_),
               (l.contrast = function (e, t) {
                 (e = new u(e)), (t = new u(t));
@@ -26577,21 +26706,21 @@
                   h = _(rI(A, p)),
                   C = D >= 0 ? D : D + 360,
                   g = h >= 0 ? h : h + 360,
-                  M = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
-                  P =
+                  P = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
+                  M =
                     1 -
-                    0.17 * rl(o(M - 30)) +
-                    0.24 * rl(o(2 * M)) +
-                    0.32 * rl(o(3 * M + 6)) -
-                    0.2 * rl(o(4 * M - 63)),
+                    0.17 * rl(o(P - 30)) +
+                    0.24 * rl(o(2 * P)) +
+                    0.32 * rl(o(3 * P + 6)) -
+                    0.2 * rl(o(4 * P - 63)),
                   U = g - C;
                 (U = 180 >= ru(U) ? U : g <= C ? U + 360 : U - 360),
                   (U = 2 * ri(f * L) * rR(o(U) / 2));
                 var m = L - f,
                   G = 1 + (0.015 * rE(T - 50, 2)) / ri(20 + rE(T - 50, 2)),
                   y = 1 + 0.045 * S,
-                  b = 1 + 0.015 * S * P,
-                  v = 30 * rA(-rE((M - 275) / 25, 2)),
+                  b = 1 + 0.015 * S * M,
+                  v = 30 * rA(-rE((P - 275) / 25, 2)),
                   B =
                     -(2 * ri(rE(S, 7) / (rE(S, 7) + rE(25, 7)))) * rR(2 * o(v));
                 return rs(
@@ -26633,10 +26762,10 @@
               }),
               (l.scales = {
                 cool: function () {
-                  return tJ([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
+                  return tq([l.hsl(180, 1, 0.9), l.hsl(250, 0.7, 0.4)]);
                 },
                 hot: function () {
-                  return tJ(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
+                  return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
               (l.colors = e6),
@@ -27036,7 +27165,7 @@
               return A.t;
             },
             browserProfilingIntegration: function () {
-              return P.x;
+              return M.x;
             },
             browserTracingIntegration: function () {
               return g.E8;
@@ -27198,7 +27327,7 @@
               return R.O;
             },
             makeBrowserOfflineTransport: function () {
-              return M.O1;
+              return P.O1;
             },
             makeFetchTransport: function () {
               return o.f;
@@ -27349,8 +27478,8 @@
           h = r(166800),
           C = r(799033),
           g = r(325124),
-          M = r(281894),
-          P = r(130260);
+          P = r(281894),
+          M = r(130260);
       },
       408720: function (e, t, r) {
         "use strict";
@@ -28391,13 +28520,13 @@
         "use strict";
         r.d(t, {
           $X: function () {
-            return P;
+            return M;
           },
           AJ: function () {
             return D;
           },
           Ei: function () {
-            return M;
+            return P;
           },
           GC: function () {
             return y;
@@ -28498,7 +28627,7 @@
         let h = new WeakMap(),
           C = !1,
           g = 3e4;
-        function M() {
+        function P() {
           let e = l.m9.Profiler;
           if ("function" != typeof e) {
             u.X &&
@@ -28521,7 +28650,7 @@
               (C = !0);
           }
         }
-        function P(e) {
+        function M(e) {
           var t;
           if (C)
             return (
@@ -28793,7 +28922,7 @@
         "use strict";
         r.d(t, {
           Eg: function () {
-            return M;
+            return P;
           },
           Jd: function () {
             return U;
@@ -28805,7 +28934,7 @@
             return g;
           },
           lA: function () {
-            return P;
+            return M;
           },
           nV: function () {
             return h;
@@ -28963,8 +29092,8 @@
                 "Not injecting report dialog. No injection point found in HTML",
               );
         }
-        function M() {}
-        function P(e) {
+        function P() {}
+        function M(e) {
           e();
         }
         function U(e) {
@@ -29188,8 +29317,8 @@
                 beforeStartSpan: L,
                 idleTimeout: C,
                 finalTimeout: g,
-                childSpanTimeout: M,
-                markBackgroundSpan: P,
+                childSpanTimeout: P,
+                markBackgroundSpan: M,
                 traceFetch: U,
                 traceXHR: m,
                 shouldCreateSpanForRequest: G,
@@ -29217,7 +29346,7 @@
               let i = (0, o.R)(a, {
                 idleTimeout: C,
                 finalTimeout: g,
-                childSpanTimeout: M,
+                childSpanTimeout: P,
                 disableAutoFinish: r,
                 beforeSpanEnd: (e) => {
                   B(), (0, n.f7)(e);
@@ -29310,7 +29439,7 @@
                             },
                           }));
                       })),
-                  P && (0, O.j)(),
+                  M && (0, O.j)(),
                   T &&
                     (function (e, t, r, n) {
                       let a;
@@ -29361,7 +29490,7 @@
                           },
                           { once: !1, capture: !0 },
                         );
-                    })(C, g, M, w),
+                    })(C, g, P, w),
                   t && (0, a.D)(),
                   (0, p.L7)(e, {
                     traceFetch: U,
@@ -29432,8 +29561,8 @@
               enableHTTPTimings: D,
               tracePropagationTargets: C,
             } = { traceFetch: S.traceFetch, traceXHR: S.traceXHR, ...t },
-            M = "function" == typeof T ? T : (e) => !0,
-            P = (e) =>
+            P = "function" == typeof T ? T : (e) => !0,
+            M = (e) =>
               (function (e, t) {
                 let r = p.m9.location && p.m9.location.href;
                 if (r) {
@@ -29476,7 +29605,7 @@
               }
             }),
             (0, R.Uf)((e) => {
-              let t = (0, _.m)(e, M, P, U);
+              let t = (0, _.m)(e, P, M, U);
               if (
                 (e.response &&
                   e.fetchData.__span &&
@@ -29556,7 +29685,7 @@
                       })(_, S, (0, i.z)() && f ? L : void 0),
                     L
                   );
-                })(e, M, P, U);
+                })(e, P, M, U);
                 D && t && h(t);
               });
         }
@@ -31171,7 +31300,7 @@ Reason: ${e}`))
             return s.eW;
           },
           id: function () {
-            return P.i;
+            return M.i;
           },
           ix: function () {
             return _.ix;
@@ -31198,7 +31327,7 @@ Reason: ${e}`))
             return R.q;
           },
           rE: function () {
-            return M.r;
+            return P.r;
           },
           rJ: function () {
             return s.rJ;
@@ -31271,8 +31400,8 @@ Reason: ${e}`))
           h = r(907765),
           C = r(898029),
           g = r(757502),
-          M = r(726318),
-          P = r(93198),
+          P = r(726318),
+          M = r(93198),
           U = r(925746),
           m = r(425930),
           G = r(820284),
@@ -33216,11 +33345,11 @@ Url: ${s(e)}`),
                 t
               );
             })(e);
-          function M() {
+          function P() {
             r && (clearTimeout(r), (r = void 0));
           }
-          function P(e) {
-            M(),
+          function M(e) {
+            P(),
               (r = setTimeout(() => {
                 !T && 0 === A.size && d && ((N = "idleTimeout"), g.end(e));
               }, p));
@@ -33293,7 +33422,7 @@ Url: ${s(e)}`),
                   if ((0, s.Dp)(g).includes(e)) {
                     var t;
                     (t = e.spanContext().spanId),
-                      M(),
+                      P(),
                       A.set(t, !0),
                       U((0, n.ph)() + L / 1e3);
                   }
@@ -33306,15 +33435,15 @@ Url: ${s(e)}`),
                 if (!T)
                   (t = e.spanContext().spanId),
                     A.has(t) && A.delete(t),
-                    0 === A.size && P((0, n.ph)() + p / 1e3);
+                    0 === A.size && M((0, n.ph)() + p / 1e3);
               }),
             ),
             O.push(
               D.on("idleSpanEnableAutoFinish", (e) => {
-                e === g && ((d = !0), P(), A.size && U());
+                e === g && ((d = !0), M(), A.size && U());
               }),
             ),
-            !t.disableAutoFinish && P(),
+            !t.disableAutoFinish && M(),
             setTimeout(() => {
               !T &&
                 (g.setStatus({ code: u.jt, message: "deadline_exceeded" }),
@@ -33789,7 +33918,7 @@ Url: ${s(e)}`),
             return S;
           },
           Iw: function () {
-            return M;
+            return P;
           },
           V0: function () {
             return D;
@@ -33836,7 +33965,7 @@ Url: ${s(e)}`),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
-                    : P({
+                    : M({
                         parentSpan: _,
                         spanArguments: n,
                         forceTransaction: a,
@@ -33870,7 +33999,7 @@ Url: ${s(e)}`),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
-                    : P({
+                    : M({
                         parentSpan: _,
                         spanArguments: n,
                         forceTransaction: a,
@@ -33910,7 +34039,7 @@ Url: ${s(e)}`),
               a = y(t);
             return e.onlyIfParent && !a
               ? new d.b()
-              : P({
+              : M({
                   parentSpan: a,
                   spanArguments: r,
                   forceTransaction: n,
@@ -33929,7 +34058,7 @@ Url: ${s(e)}`),
             ? r.withActiveSpan(e, t)
             : (0, i.$e)((r) => ((0, l.D)(r, e || void 0), t(r)));
         }
-        function M(e) {
+        function P(e) {
           return (0, i.$e)(
             (t) => (
               t.setPropagationContext((0, a.Q)()),
@@ -33941,7 +34070,7 @@ Url: ${s(e)}`),
             ),
           );
         }
-        function P({
+        function M({
           parentSpan: e,
           spanArguments: t,
           forceTransaction: r,
@@ -34760,10 +34889,10 @@ Url: ${s(e)}`),
             return g;
           },
           Gx: function () {
-            return M;
+            return P;
           },
           HN: function () {
-            return P;
+            return M;
           },
           HR: function () {
             return A;
@@ -34926,16 +35055,16 @@ Url: ${s(e)}`),
             Array.from(t)
           );
         }
-        function M(e) {
+        function P(e) {
           return e[D] || e;
         }
-        function P() {
+        function M() {
           let e = (0, i.c)(),
             t = (0, o.G)(e);
           return t.getActiveSpan ? t.getActiveSpan() : (0, u.Y)((0, E.nZ)());
         }
         function U(e, t, r, n, a, _) {
-          let o = P();
+          let o = M();
           o && (0, c.V)(o, e, t, r, n, a, _);
         }
       },
@@ -37867,25 +37996,25 @@ Error:`,
                   h = p.getUser(),
                   C = r.getIntegrationByName("Replay"),
                   g = C && C.getReplayId(),
-                  M = void 0 !== h ? h.email || h.id || h.ip_address : void 0;
+                  P = void 0 !== h ? h.email || h.id || h.ip_address : void 0;
                 try {
                   t = p.getScopeData().contexts.profile.profile_id;
                 } catch (e) {}
-                let P = (0, E.Rt)(I.target),
+                let M = (0, E.Rt)(I.target),
                   U = (0, c.Jr)({
                     release: N.release,
                     environment: N.environment,
                     transaction: D,
                     [_.JQ]: e.value,
                     [_.S3]: "auto.http.browser.inp",
-                    user: M || void 0,
+                    user: P || void 0,
                     profile_id: t || void 0,
                     replay_id: g || void 0,
                     "user_agent.original":
                       s.m.navigator && s.m.navigator.userAgent,
                   }),
                   m = (0, o.qp)({
-                    name: P,
+                    name: M,
                     op: `ui.interaction.${A}`,
                     attributes: U,
                     startTime: d,
@@ -37989,13 +38118,13 @@ Error:`,
           return m("cls", e, C, n, t);
         }
         function p(e, t = !1) {
-          return m("lcp", e, M, _, t);
+          return m("lcp", e, P, _, t);
         }
         function f(e) {
           return m("fid", e, g, a);
         }
         function L(e) {
-          return m("ttfb", e, P, o);
+          return m("ttfb", e, M, o);
         }
         function S(e) {
           return m("inp", e, U, i);
@@ -38049,7 +38178,7 @@ Error:`,
             h("fid", { metric: e }), (a = e);
           });
         }
-        function M() {
+        function P() {
           return (0, R.N)(
             (e) => {
               h("lcp", { metric: e }), (_ = e);
@@ -38057,7 +38186,7 @@ Error:`,
             { reportAllChanges: !0 },
           );
         }
-        function P() {
+        function M() {
           return (0, T.m)((e) => {
             h("ttfb", { metric: e }), (o = e);
           });
@@ -38739,8 +38868,8 @@ Error:`,
                 );
             });
           },
-          M = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function P(e, t) {
+          P = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
+        function M(e, t) {
           return {
             ...e,
             ...t,
@@ -38840,8 +38969,8 @@ Error:`,
             confirmButtonLabel: X = A,
             emailLabel: j = d,
             emailPlaceholder: $ = N,
-            formTitle: J = T,
-            isRequiredLabel: q = D,
+            formTitle: q = T,
+            isRequiredLabel: J = D,
             messageLabel: z = p,
             messagePlaceholder: Q = O,
             nameLabel: Z = L,
@@ -38876,7 +39005,7 @@ Error:`,
                 cancelButtonLabel: x,
                 submitButtonLabel: er,
                 confirmButtonLabel: X,
-                formTitle: J,
+                formTitle: q,
                 emailLabel: j,
                 emailPlaceholder: $,
                 messageLabel: z,
@@ -38884,7 +39013,7 @@ Error:`,
                 nameLabel: Z,
                 namePlaceholder: ee,
                 successMessageText: en,
-                isRequiredLabel: q,
+                isRequiredLabel: J,
                 addScreenshotButtonLabel: F,
                 removeScreenshotButtonLabel: et,
                 onFormClose: ei,
@@ -38977,7 +39106,7 @@ ${
                   ]);
                 if (!a)
                   throw (
-                    (M &&
+                    (P &&
                       i.kg.error(
                         "[Feedback] Missing feedback modal integration. Try using `feedbackSyncIntegration` in your `Sentry.init`.",
                       ),
@@ -38986,7 +39115,7 @@ ${
                 return (
                   n &&
                     !_ &&
-                    M &&
+                    P &&
                     i.kg.error(
                       "[Feedback] Missing feedback screenshot integration. Proceeding without screenshots.",
                     ),
@@ -38999,7 +39128,7 @@ ${
                 );
               },
               eN = (e, t = {}) => {
-                let r = P(eI, t),
+                let r = M(eI, t),
                   n =
                     "string" == typeof e
                       ? s.querySelector(e)
@@ -39008,7 +39137,7 @@ ${
                         : null;
                 if (!n)
                   throw (
-                    (M &&
+                    (P &&
                       i.kg.error(
                         "[Feedback] Unable to attach to target element",
                       ),
@@ -39040,7 +39169,7 @@ ${
                 return el.push(o), o;
               },
               ed = (e = {}) => {
-                let t = P(eI, e),
+                let t = M(eI, e),
                   r = eR(t),
                   n = (function ({
                     triggerLabel: e,
@@ -39199,10 +39328,10 @@ ${
               },
               attachTo: eN,
               createWidget(e = {}) {
-                let t = ed(P(eI, e));
+                let t = ed(M(eI, e));
                 return t.appendToDom(), t;
               },
-              createForm: async (e = {}) => eT(P(eI, e)),
+              createForm: async (e = {}) => eT(M(eI, e)),
               remove() {
                 eu &&
                   (eu.parentElement && eu.parentElement.remove(), (eu = null)),
@@ -39231,11 +39360,11 @@ ${
           for (var r in t) e[r] = t[r];
           return e;
         }
-        function J(e) {
+        function q(e) {
           var t = e.parentNode;
           t && t.removeChild(e);
         }
-        function q(e, t, r) {
+        function J(e, t, r) {
           var n,
             a,
             _,
@@ -39802,7 +39931,7 @@ ${
                       ),
                       null != _)
                     )
-                      for (c = _.length; c--; ) null != _[c] && J(_[c]);
+                      for (c = _.length; c--; ) null != _[c] && q(_[c]);
                     i ||
                       ((c = "value"),
                       void 0 === R ||
@@ -39858,7 +39987,7 @@ ${
           if ((n = e.__k))
             for (a = 0; a < n.length; a++)
               n[a] && eI(n[a], t, r || "function" != typeof e.type);
-          r || null == e.__e || J(e.__e), (e.__ = e.__e = e.__d = void 0);
+          r || null == e.__e || q(e.__e), (e.__ = e.__e = e.__d = void 0);
         }
         function eu(e, t, r) {
           return this.constructor(e, r);
@@ -39928,10 +40057,10 @@ ${
           var r = eR.__H || (eR.__H = { __: [], __h: [] });
           return e >= r.__.length && r.__.push({ __V: eO }), r.__[e];
         }
-        function eM(e) {
-          return (eN = 1), eP(eH, e);
+        function eP(e) {
+          return (eN = 1), eM(eH, e);
         }
-        function eP(e, t, r) {
+        function eM(e, t, r) {
           var n = eg(el++, 2);
           if (
             ((n.t = e),
@@ -40141,7 +40270,7 @@ ${
             },
             useErrorBoundary: function (e) {
               var t = eg(el++, 10),
-                r = eM();
+                r = eP();
               return (
                 (t.__ = e),
                 eR.componentDidCatch ||
@@ -40187,7 +40316,7 @@ ${
             },
             useLayoutEffect: eU,
             useMemo: em,
-            useReducer: eP,
+            useReducer: eM,
             useRef: function (e) {
               return (
                 (eN = 5),
@@ -40196,7 +40325,7 @@ ${
                 }, [])
               );
             },
-            useState: eM,
+            useState: eP,
           },
           eW =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
@@ -40221,7 +40350,7 @@ ${
             }),
             [],
           );
-          return q(
+          return J(
             "h2",
             {
               class: "dialog__header",
@@ -40230,7 +40359,7 @@ ${
             },
             e.formTitle,
             e.showBranding
-              ? q("a", {
+              ? J("a", {
                   class: "brand-link",
                   target: "_blank",
                   href: "https://sentry.io/welcome/",
@@ -40277,12 +40406,12 @@ ${
               submitButtonLabel: S,
               isRequiredLabel: D,
             } = e,
-            [h, C] = eM(null),
-            [g, P] = eM(!1),
+            [h, C] = eP(null),
+            [g, M] = eP(!1),
             U = s && s.input,
-            [m, G] = eM(null),
+            [m, G] = eP(null),
             y = eG((e) => {
-              G(e), P(!1);
+              G(e), M(!1);
             }, []),
             b = eG(
               (e) => {
@@ -40312,7 +40441,7 @@ ${
               },
               [A, N, d, O, f],
             );
-          return q(
+          return J(
             "form",
             {
               class: "form",
@@ -40346,7 +40475,7 @@ ${
                       ),
                         _(n);
                     } catch (e) {
-                      M && i.kg.error(e), C(e), o(e);
+                      P && i.kg.error(e), C(e), o(e);
                     }
                   } catch (e) {}
                 },
@@ -40356,13 +40485,13 @@ ${
               __source: { fileName: ek, lineNumber: 144 },
             },
             U && g
-              ? q(U, {
+              ? J(U, {
                   onError: y,
                   __self: this,
                   __source: { fileName: ek, lineNumber: 146 },
                 })
               : null,
-            q(
+            J(
               "div",
               {
                 class: "form__right",
@@ -40370,7 +40499,7 @@ ${
                 __self: this,
                 __source: { fileName: ek, lineNumber: 149 },
               },
-              q(
+              J(
                 "div",
                 {
                   class: "form__top",
@@ -40378,7 +40507,7 @@ ${
                   __source: { fileName: ek, lineNumber: 150 },
                 },
                 h
-                  ? q(
+                  ? J(
                       "div",
                       {
                         class: "form__error-container",
@@ -40389,7 +40518,7 @@ ${
                     )
                   : null,
                 c
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "name",
@@ -40397,14 +40526,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 154 },
                       },
-                      q(ex, {
+                      J(ex, {
                         label: f,
                         isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 155 },
                       }),
-                      q("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: r,
                         id: "name",
@@ -40416,7 +40545,7 @@ ${
                         __source: { fileName: ek, lineNumber: 156 },
                       }),
                     )
-                  : q("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: r,
                       name: "name",
@@ -40425,7 +40554,7 @@ ${
                       __source: { fileName: ek, lineNumber: 167 },
                     }),
                 E
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "email",
@@ -40433,14 +40562,14 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 171 },
                       },
-                      q(ex, {
+                      J(ex, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: ek, lineNumber: 172 },
                       }),
-                      q("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: t,
                         id: "email",
@@ -40452,7 +40581,7 @@ ${
                         __source: { fileName: ek, lineNumber: 173 },
                       }),
                     )
-                  : q("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: t,
                       name: "email",
@@ -40460,7 +40589,7 @@ ${
                       __self: this,
                       __source: { fileName: ek, lineNumber: 184 },
                     }),
-                q(
+                J(
                   "label",
                   {
                     for: "message",
@@ -40468,14 +40597,14 @@ ${
                     __self: this,
                     __source: { fileName: ek, lineNumber: 187 },
                   },
-                  q(ex, {
+                  J(ex, {
                     label: O,
                     isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: ek, lineNumber: 188 },
                   }),
-                  q("textarea", {
+                  J("textarea", {
                     autoFocus: !0,
                     class: "form__input form__input--textarea",
                     id: "message",
@@ -40488,7 +40617,7 @@ ${
                   }),
                 ),
                 U
-                  ? q(
+                  ? J(
                       "label",
                       {
                         for: "screenshot",
@@ -40496,13 +40625,13 @@ ${
                         __self: this,
                         __source: { fileName: ek, lineNumber: 201 },
                       },
-                      q(
+                      J(
                         "button",
                         {
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            G(null), P((e) => !e);
+                            G(null), M((e) => !e);
                           },
                           __self: this,
                           __source: { fileName: ek, lineNumber: 202 },
@@ -40510,7 +40639,7 @@ ${
                         g ? l : u,
                       ),
                       m
-                        ? q(
+                        ? J(
                             "div",
                             {
                               class: "form__error-container",
@@ -40523,14 +40652,14 @@ ${
                     )
                   : null,
               ),
-              q(
+              J(
                 "div",
                 {
                   class: "btn-group",
                   __self: this,
                   __source: { fileName: ek, lineNumber: 216 },
                 },
-                q(
+                J(
                   "button",
                   {
                     class: "btn btn--primary",
@@ -40540,7 +40669,7 @@ ${
                   },
                   S,
                 ),
-                q(
+                J(
                   "button",
                   {
                     class: "btn btn--default",
@@ -40556,7 +40685,7 @@ ${
           );
         }
         function ex({ label: e, isRequired: t, isRequiredLabel: r }) {
-          return q(
+          return J(
             "span",
             {
               class: "form__label__text",
@@ -40565,7 +40694,7 @@ ${
             },
             e,
             t &&
-              q(
+              J(
                 "span",
                 {
                   class: "form__label__text--required",
@@ -40622,7 +40751,7 @@ ${
               }),
               [],
             ),
-            [_, o] = eM(null),
+            [_, o] = eP(null),
             i = eG(() => {
               _ && (clearTimeout(_), o(null)), t();
             }, [_]),
@@ -40637,11 +40766,11 @@ ${
               },
               [t],
             );
-          return q(
+          return J(
             Q,
             { __self: this, __source: { fileName: eX, lineNumber: 48 } },
             _
-              ? q(
+              ? J(
                   "div",
                   {
                     class: "success__position",
@@ -40649,7 +40778,7 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 50 },
                   },
-                  q(
+                  J(
                     "div",
                     {
                       class: "success__content",
@@ -40657,7 +40786,7 @@ ${
                       __source: { fileName: eX, lineNumber: 51 },
                     },
                     n.successMessageText,
-                    q("span", {
+                    J("span", {
                       class: "success__icon",
                       dangerouslySetInnerHTML: a,
                       __self: this,
@@ -40665,7 +40794,7 @@ ${
                     }),
                   ),
                 )
-              : q(
+              : J(
                   "dialog",
                   {
                     class: "dialog",
@@ -40674,14 +40803,14 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 57 },
                   },
-                  q(
+                  J(
                     "div",
                     {
                       class: "dialog__position",
                       __self: this,
                       __source: { fileName: eX, lineNumber: 58 },
                     },
-                    q(
+                    J(
                       "div",
                       {
                         class: "dialog__content",
@@ -40691,12 +40820,12 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 59 },
                       },
-                      q(eK, {
+                      J(eK, {
                         options: n,
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      q(eF, {
+                      J(eF, {
                         ...r,
                         onSubmitSuccess: E,
                         __self: this,
@@ -40779,7 +40908,7 @@ ${
   transition: transform 0.2s ease-in-out;
 }
 `,
-          eJ = `
+          eq = `
 .dialog__header {
   display: flex;
   align-items: center;
@@ -40795,7 +40924,7 @@ ${
   outline: var(--outline);
 }
 `,
-          eq = `
+          eJ = `
 .form {
   display: flex;
   overflow: auto;
@@ -41002,8 +41131,8 @@ ${
 }
 
 ${e$}
-${eJ}
 ${eq}
+${eJ}
 ${ez}
 ${eQ}
 `),
@@ -41037,10 +41166,10 @@ ${eQ}
                 },
                 u =
                   t &&
-                  t.createInput({ h: q, hooks: eY, dialog: I, options: e }),
+                  t.createInput({ h: J, hooks: eY, dialog: I, options: e }),
                 l = (t) => {
                   var n, a, E, c, s, I, R;
-                  (n = q(ej, {
+                  (n = J(ej, {
                     options: e,
                     screenshotInput: u,
                     showName: e.showName || e.isNameRequired,
@@ -41075,7 +41204,7 @@ ${eQ}
                     (R = []),
                     eE(
                       a,
-                      (n = ((!c && E) || a).__k = q(Q, null, [n])),
+                      (n = ((!c && E) || a).__k = J(Q, null, [n])),
                       s || F,
                       F,
                       void 0 !== a.ownerSVGElement,
@@ -41856,7 +41985,7 @@ ${eQ}
           g = (e, t, r) => {
             var n, a;
             let _;
-            if (!e || !(P(e, t) || "object" == typeof e)) return;
+            if (!e || !(M(e, t) || "object" == typeof e)) return;
             let o = e.constructor.name;
             let i =
                 ((n = r),
@@ -41867,7 +41996,7 @@ ${eQ}
               E = i.indexOf(e);
             return -1 === E && ((E = i.length), i.push(e)), E;
           },
-          M = (e, t, r) =>
+          P = (e, t, r) =>
             e.map((e) =>
               (function e(t, r, n) {
                 if (t instanceof Array) return t.map((t) => e(t, r, n));
@@ -41906,14 +42035,14 @@ ${eQ}
                     rr_type: t.constructor.name,
                     args: [e(t.data, r, n), t.width, t.height],
                   };
-                else if (P(t, r) || "object" == typeof t) {
+                else if (M(t, r) || "object" == typeof t) {
                   let e = t.constructor.name;
                   return { rr_type: e, index: g(t, r, n) };
                 }
                 return t;
               })(e, t, r),
             ),
-          P = (e, t) =>
+          M = (e, t) =>
             !![
               "WebGLActiveInfo",
               "WebGLBuffer",
@@ -41985,7 +42114,7 @@ ${eQ}
                       (g(c, i, this),
                       "tagName" in this.canvas && !A(this.canvas, n, a, _, !0))
                     ) {
-                      let e = M(E, i, this),
+                      let e = P(E, i, this),
                         n = { type: t, property: o, args: e };
                       r(this.canvas, n);
                     }
@@ -42216,7 +42345,7 @@ ${eQ}
                           return (
                             !A(this.canvas, r, n, a, !0) &&
                               O(() => {
-                                let r = M(i, t, this);
+                                let r = P(i, t, this);
                                 e(this.canvas, {
                                   type: p["2D"],
                                   property: o,
@@ -42503,8 +42632,8 @@ ${eQ}
           h = r(988097),
           C = r(820754),
           g = r(899517),
-          M = r(202811),
-          P = r(370336),
+          P = r(202811),
+          M = r(370336),
           U = r(467510),
           m = r(101284),
           G = r(622916),
@@ -42550,11 +42679,11 @@ ${eQ}
           (c[(c.Text = 3)] = "Text"),
           (c[(c.CDATA = 4)] = "CDATA"),
           (c[(c.Comment = 5)] = "Comment");
-        function J(e) {
+        function q(e) {
           let t = $([e, "optionalAccess", (e) => e.host]);
           return $([t, "optionalAccess", (e) => e.shadowRoot]) === e;
         }
-        function q(e) {
+        function J(e) {
           return "[object ShadowRoot]" === Object.prototype.toString.call(e);
         }
         function z(e) {
@@ -42870,7 +42999,7 @@ ${eQ}
             }
           };
         }
-        function eM(e, t, r, n, a, _) {
+        function eP(e, t, r, n, a, _) {
           try {
             let o = e.nodeType === e.ELEMENT_NODE ? e : e.parentElement;
             if (null === o) return !1;
@@ -42902,7 +43031,7 @@ ${eQ}
           } catch (e) {}
           return !!_;
         }
-        function eP(e) {
+        function eM(e) {
           return null == e ? "" : e.toLowerCase();
         }
         function eU(e, t) {
@@ -42930,8 +43059,8 @@ ${eQ}
               recordCanvas: h = !1,
               onSerialize: C,
               onIframeLoad: g,
-              iframeLoadTimeout: M = 5e3,
-              onStylesheetLoad: P,
+              iframeLoadTimeout: P = 5e3,
+              onStylesheetLoad: M,
               stylesheetLoadTimeout: U = 5e3,
               keepIframeSrcFn: m = () => !1,
               newlyAddedElement: G = !1,
@@ -43026,13 +43155,13 @@ ${eQ}
                         let t = er(e.tagName);
                         return el.test(t) ? "div" : t;
                       })(e),
-                      M = {},
-                      P = e.attributes.length;
-                    for (let t = 0; t < P; t++) {
+                      P = {},
+                      M = e.attributes.length;
+                    for (let t = 0; t < M; t++) {
                       let r = e.attributes[t];
                       r.name &&
                         !eh(g, r.name, r.value) &&
-                        (M[r.name] = eD(o, g, er(r.name), r.value, e, u));
+                        (P[r.name] = eD(o, g, er(r.name), r.value, e, u));
                     }
                     if ("link" === g && s) {
                       let t = Array.from(o.styleSheets).find(
@@ -43041,9 +43170,9 @@ ${eQ}
                         r = null;
                       t && (r = z(t)),
                         r &&
-                          (delete M.rel,
-                          delete M.href,
-                          (M._cssText = eO(r, t.href)));
+                          (delete P.rel,
+                          delete P.href,
+                          (P._cssText = eO(r, t.href)));
                     }
                     if (
                       "style" === g &&
@@ -43051,7 +43180,7 @@ ${eQ}
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
                       let t = z(e.sheet);
-                      t && (M._cssText = eO(t, eS()));
+                      t && (P._cssText = eO(t, eS()));
                     }
                     if (
                       "input" === g ||
@@ -43063,7 +43192,7 @@ ${eQ}
                         r = eo(e, en(g), t),
                         n = e.checked;
                       if ("submit" !== t && "button" !== t && r) {
-                        let n = eM(
+                        let n = eP(
                           e,
                           L,
                           D,
@@ -43071,20 +43200,20 @@ ${eQ}
                           h,
                           ee({ type: t, tagName: en(g), maskInputOptions: I }),
                         );
-                        M.value = et({
+                        P.value = et({
                           isMasked: n,
                           element: e,
                           value: r,
                           maskInputFn: l,
                         });
                       }
-                      n && (M.checked = n);
+                      n && (P.checked = n);
                     }
                     if (
                       ("option" === g &&
                         (e.selected && !I.select
-                          ? (M.selected = !0)
-                          : delete M.selected),
+                          ? (P.selected = !0)
+                          : delete P.selected),
                       "canvas" === g && N)
                     ) {
                       if ("2d" === e.__context)
@@ -43109,14 +43238,14 @@ ${eQ}
                             }
                           return !0;
                         })(e) &&
-                          (M.rr_dataURL = e.toDataURL(R.type, R.quality));
+                          (P.rr_dataURL = e.toDataURL(R.type, R.quality));
                       else if (!("__context" in e)) {
                         let t = e.toDataURL(R.type, R.quality),
                           r = document.createElement("canvas");
                         (r.width = e.width),
                           (r.height = e.height),
                           t !== r.toDataURL(R.type, R.quality) &&
-                            (M.rr_dataURL = t);
+                            (P.rr_dataURL = t);
                       }
                     }
                     if ("img" === g && T) {
@@ -43130,14 +43259,14 @@ ${eQ}
                           (n.width = e.naturalWidth),
                             (n.height = e.naturalHeight),
                             a.drawImage(e, 0, 0),
-                            (M.rr_dataURL = n.toDataURL(R.type, R.quality));
+                            (P.rr_dataURL = n.toDataURL(R.type, R.quality));
                         } catch (t) {
                           console.warn(
                             `Cannot inline img src=${e.currentSrc}! Error: ${t}`,
                           );
                         }
                         t
-                          ? (M.crossOrigin = t)
+                          ? (P.crossOrigin = t)
                           : e.removeAttribute("crossorigin");
                       };
                       e.complete && 0 !== e.naturalWidth
@@ -43146,31 +43275,31 @@ ${eQ}
                     }
                     if (
                       (("audio" === g || "video" === g) &&
-                        ((M.rr_mediaState = e.paused ? "paused" : "played"),
-                        (M.rr_mediaCurrentTime = e.currentTime)),
+                        ((P.rr_mediaState = e.paused ? "paused" : "played"),
+                        (P.rr_mediaCurrentTime = e.currentTime)),
                       !O &&
-                        (e.scrollLeft && (M.rr_scrollLeft = e.scrollLeft),
-                        e.scrollTop && (M.rr_scrollTop = e.scrollTop)),
+                        (e.scrollLeft && (P.rr_scrollLeft = e.scrollLeft),
+                        e.scrollTop && (P.rr_scrollTop = e.scrollTop)),
                       C)
                     ) {
                       let { width: t, height: r } = e.getBoundingClientRect();
-                      M = {
-                        class: M.class,
+                      P = {
+                        class: P.class,
                         rr_width: `${t}px`,
                         rr_height: `${r}px`,
                       };
                     }
                     "iframe" === g &&
-                      !d(M.src) &&
-                      (!C && !e.contentDocument && (M.rr_src = M.src),
-                      delete M.src);
+                      !d(P.src) &&
+                      (!C && !e.contentDocument && (P.rr_src = P.src),
+                      delete P.src);
                     try {
                       customElements.get(g) && (_ = !0);
                     } catch (e) {}
                     return {
                       type: A.Element,
                       tagName: g,
-                      attributes: M,
+                      attributes: P,
                       childNodes: [],
                       isSVG:
                         !!("svg" === (r = e).tagName || r.ownerSVGElement) ||
@@ -43241,7 +43370,7 @@ ${eQ}
                       u = eO(u, eS());
                     }
                     R && (u = "SCRIPT_PLACEHOLDER");
-                    let N = eM(e, n, _, a, o, r);
+                    let N = eP(e, n, _, a, o, r);
                     return (
                       !l &&
                         !R &&
@@ -43258,7 +43387,7 @@ ${eQ}
                       "OPTION" === I &&
                         u &&
                         (u = et({
-                          isMasked: eM(
+                          isMasked: eP(
                             e,
                             n,
                             _,
@@ -43345,33 +43474,33 @@ ${eQ}
                       (("link" === e.tagName &&
                         "shortcut icon" === e.attributes.rel) ||
                         ("meta" === e.tagName &&
-                          (eP(e.attributes.name).match(
+                          (eM(e.attributes.name).match(
                             /^msapplication-tile(image|color)$/,
                           ) ||
-                            "application-name" === eP(e.attributes.name) ||
-                            "icon" === eP(e.attributes.rel) ||
-                            "apple-touch-icon" === eP(e.attributes.rel) ||
-                            "shortcut icon" === eP(e.attributes.rel))))
+                            "application-name" === eM(e.attributes.name) ||
+                            "icon" === eM(e.attributes.rel) ||
+                            "apple-touch-icon" === eM(e.attributes.rel) ||
+                            "shortcut icon" === eM(e.attributes.rel))))
                     )
                       return !0;
                     else if ("meta" === e.tagName) {
                       if (
                         t.headMetaDescKeywords &&
-                        eP(e.attributes.name).match(/^description|keywords$/)
+                        eM(e.attributes.name).match(/^description|keywords$/)
                       )
                         return !0;
                       if (
                         t.headMetaSocial &&
-                        (eP(e.attributes.property).match(/^(og|twitter|fb):/) ||
-                          eP(e.attributes.name).match(/^(og|twitter):/) ||
-                          "pinterest" === eP(e.attributes.name))
+                        (eM(e.attributes.property).match(/^(og|twitter|fb):/) ||
+                          eM(e.attributes.name).match(/^(og|twitter):/) ||
+                          "pinterest" === eM(e.attributes.name))
                       )
                         return !0;
                       else if (
                         t.headMetaRobots &&
-                        ("robots" === eP(e.attributes.name) ||
-                          "googlebot" === eP(e.attributes.name) ||
-                          "bingbot" === eP(e.attributes.name))
+                        ("robots" === eM(e.attributes.name) ||
+                          "googlebot" === eM(e.attributes.name) ||
+                          "bingbot" === eM(e.attributes.name))
                       )
                         return !0;
                       else if (
@@ -43381,25 +43510,25 @@ ${eQ}
                         return !0;
                       else if (
                         t.headMetaAuthorship &&
-                        ("author" === eP(e.attributes.name) ||
-                          "generator" === eP(e.attributes.name) ||
-                          "framework" === eP(e.attributes.name) ||
-                          "publisher" === eP(e.attributes.name) ||
-                          "progid" === eP(e.attributes.name) ||
-                          eP(e.attributes.property).match(/^article:/) ||
-                          eP(e.attributes.property).match(/^product:/))
+                        ("author" === eM(e.attributes.name) ||
+                          "generator" === eM(e.attributes.name) ||
+                          "framework" === eM(e.attributes.name) ||
+                          "publisher" === eM(e.attributes.name) ||
+                          "progid" === eM(e.attributes.name) ||
+                          eM(e.attributes.property).match(/^article:/) ||
+                          eM(e.attributes.property).match(/^product:/))
                       )
                         return !0;
                       else if (
                         t.headMetaVerification &&
-                        ("google-site-verification" === eP(e.attributes.name) ||
-                          "yandex-verification" === eP(e.attributes.name) ||
-                          "csrf-token" === eP(e.attributes.name) ||
-                          "p:domain_verify" === eP(e.attributes.name) ||
-                          "verify-v1" === eP(e.attributes.name) ||
-                          "verification" === eP(e.attributes.name) ||
+                        ("google-site-verification" === eM(e.attributes.name) ||
+                          "yandex-verification" === eM(e.attributes.name) ||
+                          "csrf-token" === eM(e.attributes.name) ||
+                          "p:domain_verify" === eM(e.attributes.name) ||
+                          "verify-v1" === eM(e.attributes.name) ||
+                          "verification" === eM(e.attributes.name) ||
                           "shopify-checkout-api-token" ===
-                            eP(e.attributes.name))
+                            eM(e.attributes.name))
                       )
                         return !0;
                     }
@@ -43419,7 +43548,7 @@ ${eQ}
           if (v.type === A.Element) {
             (B = B && !v.needBlock), delete v.needBlock;
             let t = e.shadowRoot;
-            t && q(t) && (v.isShadowHost = !0);
+            t && J(t) && (v.isShadowHost = !0);
           }
           if ((v.type === A.Document || v.type === A.Element) && B) {
             var w;
@@ -43451,8 +43580,8 @@ ${eQ}
               preserveWhiteSpace: y,
               onSerialize: C,
               onIframeLoad: g,
-              iframeLoadTimeout: M,
-              onStylesheetLoad: P,
+              iframeLoadTimeout: P,
+              onStylesheetLoad: M,
               stylesheetLoadTimeout: U,
               keepIframeSrcFn: m,
             };
@@ -43464,13 +43593,13 @@ ${eQ}
               for (let r of Array.from(e.shadowRoot.childNodes)) {
                 let n = eU(r, t);
                 n &&
-                  (q(e.shadowRoot) && (n.isShadow = !0), v.childNodes.push(n));
+                  (J(e.shadowRoot) && (n.isShadow = !0), v.childNodes.push(n));
               }
           }
           return (
             e.parentNode &&
-              J(e.parentNode) &&
               q(e.parentNode) &&
+              J(e.parentNode) &&
               (v.isShadow = !0),
             v.type === A.Element &&
               "iframe" === v.tagName &&
@@ -43526,15 +43655,15 @@ ${eQ}
                       preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
-                      iframeLoadTimeout: M,
-                      onStylesheetLoad: P,
+                      iframeLoadTimeout: P,
+                      onStylesheetLoad: M,
                       stylesheetLoadTimeout: U,
                       keepIframeSrcFn: m,
                     });
                     r && g(e, r);
                   }
                 },
-                M,
+                P,
               ),
             v.type === A.Element &&
               "link" === v.tagName &&
@@ -43561,7 +43690,7 @@ ${eQ}
               })(
                 e,
                 () => {
-                  if (P) {
+                  if (M) {
                     let t = eU(e, {
                       doc: _,
                       mirror: o,
@@ -43586,12 +43715,12 @@ ${eQ}
                       preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
-                      iframeLoadTimeout: M,
-                      onStylesheetLoad: P,
+                      iframeLoadTimeout: P,
+                      onStylesheetLoad: M,
                       stylesheetLoadTimeout: U,
                       keepIframeSrcFn: m,
                     });
-                    t && P(e, t);
+                    t && M(e, t);
                   }
                 },
                 U,
@@ -43848,7 +43977,7 @@ ${eQ}
             return this.id++;
           }
         }
-        function eJ(e) {
+        function eq(e) {
           let t = null;
           return (
             em([
@@ -43865,7 +43994,7 @@ ${eQ}
             t
           );
         }
-        function eq(e) {
+        function eJ(e) {
           let t = e.ownerDocument;
           return (
             !!t &&
@@ -43876,7 +44005,7 @@ ${eQ}
                 let r = (function (e) {
                   let t,
                     r = e;
-                  for (; (t = eJ(r)); ) r = t;
+                  for (; (t = eq(r)); ) r = t;
                   return r;
                 })(e);
                 return t.contains(r);
@@ -44051,9 +44180,9 @@ ${eQ}
                     return r;
                   },
                   a = (a) => {
-                    if (!a.parentNode || !eq(a)) return;
-                    let _ = J(a.parentNode)
-                        ? this.mirror.getId(eJ(a))
+                    if (!a.parentNode || !eJ(a)) return;
+                    let _ = q(a.parentNode)
+                        ? this.mirror.getId(eq(a))
                         : this.mirror.getId(a.parentNode),
                       o = n(a);
                     if (-1 === _ || -1 === o) return r.addNode(a);
@@ -44107,13 +44236,13 @@ ${eQ}
                   this.mirror.removeNodeFromMap(this.mapRemoves.shift());
                 for (let e of this.movedSet) {
                   if (
-                    !e9(this.removes, e, this.mirror) ||
+                    !e7(this.removes, e, this.mirror) ||
                     !!this.movedSet.has(e.parentNode)
                   )
                     a(e);
                 }
                 for (let e of this.addedSet)
-                  te(this.droppedSet, e) || e9(this.removes, e, this.mirror)
+                  te(this.droppedSet, e) || e7(this.removes, e, this.mirror)
                     ? te(this.movedSet, e)
                       ? a(e)
                       : this.droppedSet.add(e)
@@ -44216,7 +44345,7 @@ ${eQ}
                         t !== e.oldValue &&
                         this.texts.push({
                           value:
-                            eM(
+                            eP(
                               e.target,
                               this.maskTextClass,
                               this.maskTextSelector,
@@ -44246,7 +44375,7 @@ ${eQ}
                           type: r,
                         });
                         n = et({
-                          isMasked: eM(
+                          isMasked: eP(
                             e.target,
                             this.maskTextClass,
                             this.maskTextSelector,
@@ -44345,7 +44474,7 @@ ${eQ}
                         e.removedNodes.forEach((t) => {
                           var r;
                           let n = this.mirror.getId(t),
-                            a = J(e.target)
+                            a = q(e.target)
                               ? this.mirror.getId(e.target.host)
                               : this.mirror.getId(e.target);
                           if (
@@ -44361,10 +44490,10 @@ ${eQ}
                             ((r = t), -1 !== this.mirror.getId(r))
                           )
                             this.addedSet.has(t)
-                              ? (e7(this.addedSet, t), this.droppedSet.add(t))
+                              ? (e9(this.addedSet, t), this.droppedSet.add(t))
                               : (this.addedSet.has(e.target) && -1 === n) ||
                                 (function e(t, r) {
-                                  if (J(t)) return !1;
+                                  if (q(t)) return !1;
                                   let n = r.getId(t);
                                   return (
                                     !r.has(n) ||
@@ -44375,12 +44504,12 @@ ${eQ}
                                   );
                                 })(e.target, this.mirror) ||
                                 (this.movedSet.has(t) && this.movedMap[e4(n, a)]
-                                  ? e7(this.movedSet, t)
+                                  ? e9(this.movedSet, t)
                                   : this.removes.push({
                                       parentId: a,
                                       id: n,
                                       isShadow:
-                                        !!(J(e.target) && q(e.target)) ||
+                                        !!(q(e.target) && J(e.target)) ||
                                         void 0,
                                     })),
                               this.mapRemoves.push(t);
@@ -44467,10 +44596,10 @@ ${eQ}
             this.shadowDomManager.reset(), this.canvasManager.reset();
           }
         }
-        function e7(e, t) {
-          e.delete(t), t.childNodes.forEach((t) => e7(e, t));
+        function e9(e, t) {
+          e.delete(t), t.childNodes.forEach((t) => e9(e, t));
         }
-        function e9(e, t, r) {
+        function e7(e, t, r) {
           return (
             0 !== e.length &&
             (function e(t, r, n) {
@@ -44894,7 +45023,7 @@ ${eQ}
                   p = eo(d, T, O),
                   f = !1,
                   L = ee({ maskInputOptions: E, tagName: T, type: O }),
-                  S = eM(r, u, R, l, A, L);
+                  S = eP(r, u, R, l, A, L);
                 ("radio" === O || "checkbox" === O) && (f = r.checked),
                   (p = et({
                     isMasked: S,
@@ -45701,7 +45830,7 @@ ${eQ}
             this.reset(), this.patchAttachShadow(Element, document);
           }
           addShadowRoot(e, t) {
-            if (!q(e) || this.shadowDoms.has(e)) return;
+            if (!J(e) || this.shadowDoms.has(e)) return;
             this.shadowDoms.add(e),
               this.bypassOptions.canvasManager.addShadowRoot(e);
             let r = t_(
@@ -45757,7 +45886,7 @@ ${eQ}
                   let a = e.call(this, n);
                   return (
                     this.shadowRoot &&
-                      eq(this) &&
+                      eJ(this) &&
                       r.addShadowRoot(this.shadowRoot, t),
                     a
                   );
@@ -45907,8 +46036,8 @@ ${eQ}
             maskTextFn: h,
             maxCanvasSize: C = null,
             packFn: g,
-            sampling: M = {},
-            dataURLOptions: P = {},
+            sampling: P = {},
+            dataURLOptions: M = {},
             mousemoveWait: U,
             recordDOM: m = !0,
             recordCanvas: G = !1,
@@ -45936,7 +46065,7 @@ ${eQ}
               x = !0;
             }
           if (F && !r) throw Error("emit function is required");
-          void 0 !== U && void 0 === M.mousemove && (M.mousemove = U),
+          void 0 !== U && void 0 === P.mousemove && (P.mousemove = U),
             tD.reset();
           let X =
               !0 === p
@@ -45994,7 +46123,7 @@ ${eQ}
                 });
           })();
           let $ = 0,
-            J = (e) => {
+            q = (e) => {
               for (let t of H || [])
                 t.eventProcessor && (e = t.eventProcessor(e));
               return g && !x && (e = g(e)), e;
@@ -46019,11 +46148,11 @@ ${eQ}
                 tn.forEach((e) => e.unfreeze()),
               F)
             )
-              (0, d.x)([r, "optionalCall", (t) => t(J(e), _)]);
+              (0, d.x)([r, "optionalCall", (t) => t(q(e), _)]);
             else if (x) {
               let t = {
                 type: "rrweb",
-                event: J(e),
+                event: q(e),
                 origin: window.location.origin,
                 isCheckout: _,
               };
@@ -46039,7 +46168,7 @@ ${eQ}
               (r || _) && e_(!0);
             }
           };
-          let q = (e) => {
+          let J = (e) => {
               o({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Mutation, ...e },
@@ -46056,7 +46185,7 @@ ${eQ}
                 data: { source: e1.CanvasMutation, ...e },
               }),
             ee = new tL({
-              mutationCb: q,
+              mutationCb: J,
               adoptedStyleSheetCb: (e) =>
                 o({
                   type: e0.IncrementalSnapshot,
@@ -46069,7 +46198,7 @@ ${eQ}
                 ? new tN()
                 : new td({
                     mirror: tD,
-                    mutationCb: q,
+                    mutationCb: J,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
                     wrappedEmit: o,
@@ -46103,8 +46232,8 @@ ${eQ}
               blockSelector: c,
               unblockSelector: s,
               maxCanvasSize: C,
-              sampling: M.canvas,
-              dataURLOptions: P,
+              sampling: P.canvas,
+              dataURLOptions: M,
               errorHandler: K,
             }),
             ea =
@@ -46112,7 +46241,7 @@ ${eQ}
               __RRWEB_EXCLUDE_SHADOW_DOM__
                 ? new tO()
                 : new tp({
-                    mutationCb: q,
+                    mutationCb: J,
                     scrollCb: z,
                     bypassOptions: {
                       onMutation: k,
@@ -46126,13 +46255,13 @@ ${eQ}
                       unmaskTextSelector: N,
                       inlineStylesheet: O,
                       maskInputOptions: X,
-                      dataURLOptions: P,
+                      dataURLOptions: M,
                       maskAttributeFn: S,
                       maskTextFn: h,
                       maskInputFn: D,
                       recordCanvas: G,
                       inlineImages: w,
-                      sampling: M,
+                      sampling: P,
                       slimDOMOptions: j,
                       iframeManager: et,
                       stylesheetManager: ee,
@@ -46269,7 +46398,7 @@ ${eQ}
                 maskInputFn: D,
                 maskTextFn: h,
                 slimDOM: j,
-                dataURLOptions: P,
+                dataURLOptions: M,
                 recordCanvas: G,
                 inlineImages: w,
                 onSerialize: (e) => {
@@ -46307,7 +46436,7 @@ ${eQ}
                 tt(tu)(
                   {
                     onMutation: k,
-                    mutationCb: q,
+                    mutationCb: J,
                     mousemoveCb: (e, t) =>
                       o({
                         type: e0.IncrementalSnapshot,
@@ -46372,7 +46501,7 @@ ${eQ}
                     unmaskTextSelector: N,
                     maskInputOptions: X,
                     inlineStylesheet: O,
-                    sampling: M,
+                    sampling: P,
                     recordDOM: m,
                     recordCanvas: G,
                     inlineImages: w,
@@ -46386,7 +46515,7 @@ ${eQ}
                     blockSelector: c,
                     unblockSelector: s,
                     slimDOMOptions: j,
-                    dataURLOptions: P,
+                    dataURLOptions: M,
                     mirror: tD,
                     iframeManager: et,
                     stylesheetManager: ee,
@@ -46467,7 +46596,7 @@ ${eQ}
         function tg(e) {
           return e > 9999999999 ? e / 1e3 : e;
         }
-        function tM(e, t) {
+        function tP(e, t) {
           if ("sentry.transaction" !== t.category)
             ["ui.click", "ui.input"].includes(t.category)
               ? e.triggerUserActivity()
@@ -46477,18 +46606,18 @@ ${eQ}
                   e.throttledAddEvent({
                     type: e0.Custom,
                     timestamp: 1e3 * (t.timestamp || 0),
-                    data: { tag: "breadcrumb", payload: (0, M.Fv)(t, 10, 1e3) },
+                    data: { tag: "breadcrumb", payload: (0, P.Fv)(t, 10, 1e3) },
                   }),
                   "console" === t.category
                 ),
               );
         }
-        function tP(e) {
+        function tM(e) {
           return e.closest("button,a") || e;
         }
         function tU(e) {
           let t = tm(e);
-          return t && t instanceof Element ? tP(t) : t;
+          return t && t instanceof Element ? tM(t) : t;
         }
         function tm(e) {
           return (function (e) {
@@ -46498,7 +46627,7 @@ ${eQ}
             : e;
         }
         class tG {
-          constructor(e, t, r = tM) {
+          constructor(e, t, r = tP) {
             (this._lastMutation = 0),
               (this._lastScroll = 0),
               (this._clicks = []),
@@ -46518,7 +46647,7 @@ ${eQ}
               !E &&
                 ((E = []),
                 (function () {
-                  (0, P.hl)(F, "open", function (e) {
+                  (0, M.hl)(F, "open", function (e) {
                     return function (...t) {
                       if (E)
                         try {
@@ -46593,7 +46722,7 @@ ${eQ}
             this._lastScroll = tg(e);
           }
           registerClick(e) {
-            let t = tP(e);
+            let t = tM(e);
             this._handleMultiClick(t);
           }
           _handleMultiClick(e) {
@@ -46739,7 +46868,7 @@ ${eQ}
               !(function (e, t, r) {
                 e.handleClick(t, r);
               })(e.clickDetector, r, tU(t.event)),
-              tM(e, r);
+              tP(e, r);
           };
         function tH(e, t) {
           let r = th.mirror.getId(e),
@@ -46916,10 +47045,10 @@ ${eQ}
           };
         }
         let t$ = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function tJ(e, t) {
+        function tq(e, t) {
           if (!!t$) G.kg.info(e), t && tz(e);
         }
-        function tq(e, t) {
+        function tJ(e, t) {
           if (!!t$)
             G.kg.info(e),
               t &&
@@ -47001,7 +47130,7 @@ ${eQ}
                 this._ensureReadyPromise);
           }
           destroy() {
-            tJ("[Replay] Destroying compression worker"),
+            tq("[Replay] Destroying compression worker"),
               this._worker.terminate();
           }
           postMessage(e, t) {
@@ -47123,7 +47252,7 @@ ${eQ}
             try {
               await this._compression.ensureReady();
             } catch (e) {
-              tJ(
+              tq(
                 "[Replay] Failed to load the compression worker, falling back to simple buffer",
               );
               return;
@@ -47190,12 +47319,12 @@ ${eQ}
           });
           return r && t4(o), o;
         }
-        function t7(e, t, r = +new Date()) {
+        function t9(e, t, r = +new Date()) {
           return (
             null === e || void 0 === t || !!(t < 0) || (0 !== t && e + t <= r)
           );
         }
-        function t9(
+        function t7(
           e,
           {
             maxReplayDuration: t,
@@ -47203,11 +47332,11 @@ ${eQ}
             targetTime: n = Date.now(),
           },
         ) {
-          return t7(e.started, t, n) || t7(e.lastActivity, r, n);
+          return t9(e.started, t, n) || t9(e.lastActivity, r, n);
         }
         function re(e, { sessionIdleExpire: t, maxReplayDuration: r }) {
           return (
-            (!!t9(e, { sessionIdleExpire: t, maxReplayDuration: r }) &&
+            (!!t7(e, { sessionIdleExpire: t, maxReplayDuration: r }) &&
               ("buffer" !== e.sampled || 0 !== e.segmentId)) ||
             !1
           );
@@ -47229,19 +47358,19 @@ ${eQ}
                 let t = F.sessionStorage.getItem(x);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tq("[Replay] Loading existing session", e), t5(r);
+                return tJ("[Replay] Loading existing session", e), t5(r);
               } catch (e) {
                 return null;
               }
             })(e);
           return _
             ? re(_, { sessionIdleExpire: t, maxReplayDuration: r })
-              ? (tq(
+              ? (tJ(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
                 t8(a, { previousSessionId: _.id }))
               : _
-            : (tq("[Replay] Creating new session", e),
+            : (tJ("[Replay] Creating new session", e),
               t8(a, { previousSessionId: n }));
         }
         function rr(e, t, r) {
@@ -47287,7 +47416,7 @@ ${eQ}
               r >
               e.getContext().initialTimestamp + e.getOptions().maxReplayDuration
             ) ||
-              (tq(
+              (tJ(
                 `[Replay] Skipping event with timestamp ${r} because it is after maxReplayDuration`,
                 e.getOptions()._experiments.traceInternals,
               ),
@@ -47402,7 +47531,7 @@ ${eQ}
             start: r / 1e3,
             end: n / 1e3,
             name: a,
-            data: (0, P.Jr)({
+            data: (0, M.Jr)({
               method: _,
               statusCode: o,
               request: i,
@@ -47576,7 +47705,7 @@ ${eQ}
                       r(Error("Timeout while trying to read response body")),
                     500,
                   );
-                  rM(e)
+                  rP(e)
                     .then(
                       (e) => t(e),
                       (e) => r(e),
@@ -47616,10 +47745,10 @@ ${eQ}
                 : rd(r, t)
             : {};
         }
-        async function rM(e) {
+        async function rP(e) {
           return await e.text();
         }
-        async function rP(e, t, r) {
+        async function rM(e, t, r) {
           try {
             let n = (function (e, t, r) {
                 let n = Date.now(),
@@ -47834,7 +47963,7 @@ ${eQ}
           if (!L)
             return (
               T.recordDroppedEvent("event_processor", "replay", f),
-              tJ("An event processor returned `null`, will not send event."),
+              tq("An event processor returned `null`, will not send event."),
               (0, B.WD)({})
             );
           delete L.sdkProcessingMetadata;
@@ -48062,7 +48191,7 @@ ${eQ}
                 0 === this.session.segmentId
                   ? "buffer"
                   : "session"),
-                tq(
+                tJ(
                   `[Replay] Starting replay in ${this.recordingMode} mode`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48080,7 +48209,7 @@ ${eQ}
                 );
               return;
             }
-            tq(
+            tJ(
               "[Replay] Starting replay in session mode",
               this._options._experiments.traceInternals,
             ),
@@ -48107,7 +48236,7 @@ ${eQ}
                 );
               return;
             }
-            tq(
+            tJ(
               "[Replay] Starting replay in buffer mode",
               this._options._experiments.traceInternals,
             );
@@ -48234,7 +48363,7 @@ ${eQ}
                         ) {
                           let t = e.eventBuffer.getEarliestTimestamp();
                           t &&
-                            (tJ(
+                            (tq(
                               `[Replay] Updating session start time to earliest event in buffer to ${new Date(t)}`,
                               e.getOptions()._experiments.traceInternals,
                             ),
@@ -48274,7 +48403,7 @@ ${eQ}
               this._isEnabled = !1;
               try {
                 var r;
-                tJ(
+                tq(
                   `[Replay] Stopping Replay${t ? ` triggered by ${t}` : ""}`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48301,7 +48430,7 @@ ${eQ}
             if (!this._isPaused)
               (this._isPaused = !0),
                 this.stopRecording(),
-                tJ(
+                tq(
                   "[Replay] Pausing replay",
                   this._options._experiments.traceInternals,
                 );
@@ -48310,7 +48439,7 @@ ${eQ}
             if (!!this._isPaused && !!this._checkSession())
               (this._isPaused = !1),
                 this.startRecording(),
-                tJ(
+                tq(
                   "[Replay] Resuming replay",
                   this._options._experiments.traceInternals,
                 );
@@ -48318,7 +48447,7 @@ ${eQ}
           async sendBufferedReplayOrFlush({ continueRecording: e = !0 } = {}) {
             if ("session" === this.recordingMode) return this.flushImmediate();
             let t = Date.now();
-            tJ(
+            tq(
               "[Replay] Converting buffer to session",
               this._options._experiments.traceInternals,
             ),
@@ -48368,7 +48497,7 @@ ${eQ}
           checkAndHandleExpiredSession() {
             if (
               this._lastActivity &&
-              t7(this._lastActivity, this.timeouts.sessionIdlePause) &&
+              t9(this._lastActivity, this.timeouts.sessionIdlePause) &&
               this.session &&
               "session" === this.session.sampled
             ) {
@@ -48434,18 +48563,18 @@ ${eQ}
                               })();
                         })();
                       if (!t) return;
-                      tJ(
+                      tq(
                         `[Replay] Using compression worker${e ? ` from ${e}` : ""}`,
                       );
                       let r = new Worker(t);
                       return new t2(r);
                     } catch (e) {
-                      tJ("[Replay] Failed to create compression worker");
+                      tq("[Replay] Failed to create compression worker");
                     }
                   })(t);
                   if (e) return e;
                 }
-                return tJ("[Replay] Using simple buffer"), new tZ();
+                return tq("[Replay] Using simple buffer"), new tZ();
               })({
                 useCompression: this._options.useCompression,
                 workerUrl: this._options.workerUrl,
@@ -48555,7 +48684,7 @@ ${eQ}
                                                 : e;
                                             if ("object" == typeof e)
                                               try {
-                                                let t = (0, M.Fv)(e, 7);
+                                                let t = (0, P.Fv)(e, 7);
                                                 if (
                                                   JSON.stringify(t).length > 5e3
                                                 )
@@ -48586,7 +48715,7 @@ ${eQ}
                                       })(e)
                                     : tv(e);
                               })(t);
-                              r && tM(e, r);
+                              r && tP(e, r);
                             })(e, t),
                           );
                       })(e),
@@ -48649,7 +48778,7 @@ ${eQ}
                                           void 0 !== _ &&
                                             (e.data.response_body_size = _);
                                       })(t, r),
-                                      rP(t, r, e)),
+                                      rM(t, r, e)),
                                       (function (e) {
                                         return "fetch" === e.category;
                                       })(t) &&
@@ -48780,7 +48909,7 @@ ${eQ}
                                   r.match(
                                     /(does not match server-rendered HTML|Hydration failed because)/i,
                                   )) &&
-                                  tM(
+                                  tP(
                                     e,
                                     tv({
                                       category: "replay.hydrate-error",
@@ -48962,7 +49091,7 @@ ${eQ}
                     },
                   });
                 })(t);
-                if (!!r) tM(e, r);
+                if (!!r) tP(e, r);
               })(this, e);
             };
           }
@@ -48970,7 +49099,7 @@ ${eQ}
             if (
               !(
                 !this.session ||
-                t9(this.session, {
+                t7(this.session, {
                   maxReplayDuration: this._options.maxReplayDuration,
                   sessionIdleExpire: this.timeouts.sessionIdleExpire,
                 })
@@ -48981,7 +49110,7 @@ ${eQ}
           _doChangeToForegroundTasks(e) {
             if (!!this.session) {
               if (!this.checkAndHandleExpiredSession()) {
-                tJ(
+                tq(
                   "[Replay] Document has become active, but session has expired",
                 );
                 return;
@@ -49100,7 +49229,7 @@ ${eQ}
               let n = r < this._options.minReplayDuration,
                 a = r > this._options.maxReplayDuration + 5e3;
               if (n || a) {
-                tJ(
+                tq(
                   `[Replay] Session duration (${Math.floor(r / 1e3)}s) is too ${n ? "short" : "long"}, not sending replay.`,
                   this._options._experiments.traceInternals,
                 ),
@@ -49112,7 +49241,7 @@ ${eQ}
                 (_ &&
                   0 === this.session.segmentId &&
                   !_.hasCheckout &&
-                  tJ(
+                  tq(
                     "[Replay] Flushing initial segment without checkout.",
                     this._options._experiments.traceInternals,
                   ),
@@ -49200,10 +49329,10 @@ ${eQ}
             ignore: h = [],
             maskFn: C,
             beforeAddRecordingEvent: g,
-            beforeErrorSampling: M,
+            beforeErrorSampling: P,
           } = {}) {
             this.name = rV.id;
-            let P = (function ({
+            let M = (function ({
               mask: e,
               unmask: t,
               block: r,
@@ -49257,12 +49386,12 @@ ${eQ}
                   })({
                     maskAttributes: f,
                     maskAllText: E,
-                    privacyOptions: P,
+                    privacyOptions: M,
                     key: e,
                     value: t,
                     el: r,
                   }),
-                ...P,
+                ...M,
                 slimDOMOptions: "all",
                 inlineStylesheet: !0,
                 inlineImages: !1,
@@ -49294,7 +49423,7 @@ ${eQ}
                 networkRequestHeaders: rF(d),
                 networkResponseHeaders: rF(O),
                 beforeAddRecordingEvent: g,
-                beforeErrorSampling: M,
+                beforeErrorSampling: P,
                 _experiments: i,
               }),
               this._initialOptions.blockAllMedia &&
@@ -49354,7 +49483,7 @@ ${eQ}
                 n = {
                   sessionSampleRate: 0,
                   errorSampleRate: 0,
-                  ...(0, P.Jr)(e),
+                  ...(0, M.Jr)(e),
                 },
                 a = (0, C.o)(r.replaysSessionSampleRate),
                 _ = (0, C.o)(r.replaysOnErrorSampleRate);
@@ -49444,4 +49573,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.341152c708aa63c8a2e9.js.map
+//# sourceMappingURL=sentry.406ca64f592cdfe25a1d.js.map

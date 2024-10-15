@@ -36785,6 +36785,56 @@ html.disable-forced-colors * {
     calc(var(--saturation-factor, 1) * 2.1%) 53.9%;
   --lol: hsl(var(--lol-hsl) / 1);
   --lol-hsl: 190 calc(var(--saturation-factor, 1) * 89.7%) 7.6%;
+  --opacity-1: hsl(var(--opacity-1-hsl) / 0.01);
+  --opacity-1-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-10: hsl(var(--opacity-10-hsl) / 0.36);
+  --opacity-10-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-11: hsl(var(--opacity-11-hsl) / 0.4);
+  --opacity-11-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-12: hsl(var(--opacity-12-hsl) / 0.44);
+  --opacity-12-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-13: hsl(var(--opacity-13-hsl) / 0.48);
+  --opacity-13-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-14: hsl(var(--opacity-14-hsl) / 0.52);
+  --opacity-14-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-15: hsl(var(--opacity-15-hsl) / 0.56);
+  --opacity-15-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-16: hsl(var(--opacity-16-hsl) / 0.6);
+  --opacity-16-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-17: hsl(var(--opacity-17-hsl) / 0.64);
+  --opacity-17-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-18: hsl(var(--opacity-18-hsl) / 0.68);
+  --opacity-18-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-19: hsl(var(--opacity-19-hsl) / 0.72);
+  --opacity-19-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-2: hsl(var(--opacity-2-hsl) / 0.04);
+  --opacity-2-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-20: hsl(var(--opacity-20-hsl) / 0.76);
+  --opacity-20-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-21: hsl(var(--opacity-21-hsl) / 0.8);
+  --opacity-21-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-22: hsl(var(--opacity-22-hsl) / 0.84);
+  --opacity-22-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-23: hsl(var(--opacity-23-hsl) / 0.88);
+  --opacity-23-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-24: hsl(var(--opacity-24-hsl) / 0.92);
+  --opacity-24-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-25: hsl(var(--opacity-25-hsl) / 0.96);
+  --opacity-25-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-3: hsl(var(--opacity-3-hsl) / 0.08);
+  --opacity-3-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-4: hsl(var(--opacity-4-hsl) / 0.12);
+  --opacity-4-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-5: hsl(var(--opacity-5-hsl) / 0.16);
+  --opacity-5-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-6: hsl(var(--opacity-6-hsl) / 0.2);
+  --opacity-6-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-7: hsl(var(--opacity-7-hsl) / 0.24);
+  --opacity-7-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-8: hsl(var(--opacity-8-hsl) / 0.28);
+  --opacity-8-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-9: hsl(var(--opacity-9-hsl) / 0.32);
+  --opacity-9-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
   --orange-100: hsl(var(--orange-100-hsl) / 1);
   --orange-100-hsl: 18 calc(var(--saturation-factor, 1) * 100%) 98%;
   --orange-130: hsl(var(--orange-130-hsl) / 1);
@@ -48392,4 +48442,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.20f29e4d42039106323b.css.map*/
+/*# sourceMappingURL=12633.14892004a1c46f924406.css.map*/
