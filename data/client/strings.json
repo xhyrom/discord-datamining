@@ -18228,6 +18228,8 @@
   "CONTENT_INVENTORY_OPEN_CRUNCHYROLL_ITEM_A11Y_DESCRIPTION": "\"{title}, open crunchyroll\"",
   "CONTENT_INVENTORY_OPEN_SPOTIFY_ITEM_A11Y_DESCRIPTION": "\"{itemName}, open spotify\"",
   "CONTENT_INVENTORY_OPEN_ACTIVITY_A11Y_DESCRIPTION": "\"{title}, launch activity\"",
+  "CONTENT_INVENTORY_OVERLAY_INVITES_HELP": "'Message \"Want to play?\"'",
+  "CONTENT_INVENTORY_OVERLAY_INVITE_MESSAGE": "\"Want to play?\"",
   "GAME_PROFILE": "\"Game Profile\"",
   "GAME_PROFILE_SEE_ALL_ENTRIES": "\"See All\"",
   "GAME_PROFILE_UNFOLLOW_GAME": "\"Unfollow\"",
@@ -19201,5 +19203,7 @@
   "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_DAYS": "\"ends in {days, plural, =1 {{days} day} other {{days} days}}\"",
   "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_HOURS": "\"ends in {hours, plural, =1 {{hours} hour} other {{hours} hours}}\"",
   "FRACTIONAL_PREMIUM_DURATION_ENDS_IN_MINUTES": "\"ends in {minutes, plural, =1 {{minutes} minute} other {{minutes} minutes}}\"",
-  "APP_DIRECTORY_SEARCH_PLACEHOLDER_V2": "\"Search Apps\""
+  "APP_DIRECTORY_SEARCH_PLACEHOLDER_V2": "\"Search Apps\"",
+  "APP_DIRECTORY_ABOUT": "\"About\"",
+  "APP_DIRECTORY_STORE": "\"Store\""
 }
