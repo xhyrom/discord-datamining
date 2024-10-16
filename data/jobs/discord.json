@@ -46,16 +46,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -106,16 +106,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -166,16 +166,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -227,9 +227,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -279,9 +279,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -334,16 +334,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -396,16 +396,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -455,16 +455,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -514,16 +514,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -574,16 +574,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -633,16 +633,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -692,9 +692,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -744,16 +744,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -803,9 +803,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -855,16 +855,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -914,9 +914,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -967,9 +967,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -1023,9 +1023,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1076,16 +1076,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1136,16 +1136,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1198,16 +1198,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1257,16 +1257,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1316,9 +1316,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1368,9 +1368,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1421,16 +1421,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1482,9 +1482,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1535,9 +1535,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -1590,16 +1590,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1649,9 +1649,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1702,9 +1702,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -1755,9 +1755,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -1808,9 +1808,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -1861,16 +1861,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1921,16 +1921,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -1981,9 +1981,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -2034,16 +2034,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -2094,9 +2094,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -2147,9 +2147,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -2200,16 +2200,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -2260,9 +2260,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -2313,9 +2313,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -2365,9 +2365,9 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         }
       ]
     },
@@ -2420,16 +2420,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -2483,9 +2483,9 @@
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     },
@@ -2538,16 +2538,16 @@
         {
           "id": 4082816002,
           "name": "Remote (U.S.)",
-          "parent_id": null,
+          "location": null,
           "child_ids": [],
-          "location": null
+          "parent_id": null
         },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
-          "parent_id": null,
+          "location": "San Francisco, California, United States",
           "child_ids": [],
-          "location": "San Francisco, California, United States"
+          "parent_id": null
         }
       ]
     }

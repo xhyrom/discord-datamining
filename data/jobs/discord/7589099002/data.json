@@ -44,9 +44,9 @@
     {
       "id": 4082816002,
       "name": "Remote (U.S.)",
-      "parent_id": null,
+      "location": null,
       "child_ids": [],
-      "location": null
+      "parent_id": null
     }
   ]
 }
