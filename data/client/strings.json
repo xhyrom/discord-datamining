@@ -17579,7 +17579,7 @@
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_PRESENCE": "\"{userName} is in here\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_JOINED": "\"{userName} has joined\"",
   "VOICE_CHANNEL_BLOCKED_USER_AUDIBLE": "\"You can both hear each other\"",
-  "VOICE_CHANNEL_BLOCKED_USER_WILL_BEAUDIBLE": "\"You will be able to each other\"",
+  "VOICE_CHANNEL_BLOCKED_USER_WILL_BEAUDIBLE": "\"You will be able to hear each other\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_LEAVE": "\"Yes, I'll leave\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_LEAVE_V2": "\"Leave voice\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_STAY": "\"Stay here\"",
