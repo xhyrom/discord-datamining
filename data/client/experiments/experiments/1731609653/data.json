@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_rapidash_discovery_plus",
+    "label": "Rapidash Discovery Plus",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Discovery Plus Enabled"
+    ],
+    "hash": 1731609653,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "treatment"
+    ]
+  }
+}
