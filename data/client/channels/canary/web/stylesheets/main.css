@@ -5575,6 +5575,8 @@ div.modalHeader_c5e09c {
 .icon_a94328 {
   border-radius: 25%;
   flex-shrink: 0;
+  box-sizing: border-box;
+  border: 1px solid var(--border-subtle);
 }
 .placeholder_a94328 {
   background-color: var(--bg-mod-subtle);
@@ -48690,4 +48692,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.4eb3291f2ad06f8d9aaa.css.map*/
+/*# sourceMappingURL=12633.137298fe545bcc562ca3.css.map*/
