@@ -6,21 +6,17 @@
     </span></span
   >
 </p>
-<h3 id="h_01HKE28VNFMAWQDQ418ZRZGW0M">
-  <strong
-    ><span id="docs-internal-guid-7561a7ee-7fff-9ebf-95bb-183f00aac4f4"
-      >Note: If you haven’t verified your account yet, make sure to do so,
-      otherwise you risk losing access to your account. Check out this
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360033931551"
-        target="_blank"
-        rel="noopener noreferrer"
-        >link</a
-      >
-      for more information!</span
-    ></strong
+<div class="info-box">
+  Note: If you haven’t verified your account yet, make sure to do so, otherwise
+  you risk losing access to your account. Check out this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360033931551"
+    target="_blank"
+    rel="noopener noreferrer"
+    >link</a
   >
-</h3>
+  for more information!
+</div>
 <p id="docs-internal-guid-61c70365-7fff-158e-2b15-8040dab84a7f">
   <span class="wysiwyg-font-size-large"
     ><strong>What does this article cover?</strong></span
@@ -40,6 +36,24 @@
     >
   </li>
 </ul>
+<div class="book-box">
+  Discord has implemented Google's reCAPTCHA Enterprise product on its site for
+  security and authentication purposes and use of the service is subject to
+  Google's
+  <a
+    href="https://policies.google.com/privacy"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Privacy Policy</a
+  >
+  and
+  <a
+    href="https://policies.google.com/terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Terms of Use</a
+  >.
+</div>
 <h1 id="h_01GSTZJYY12DCBEATVC6J4H6TD">
   <span style="font-weight: 400">Logging into Your Account</span>
 </h1>
@@ -65,22 +79,20 @@
   <strong>your email address</strong> or 2)<strong> phone number </strong>that
   has been officially verified to your Discord account in the first text box. 
 </p>
-<h3 id="h_01HKE28VNFFV05WK40RG43KZBR">
-  <strong
-    >Note: You will need to verify your phone number to your Discord account
-    before using phone number login! Click here to learn how to verify your
-    phone number to your Discord account.</strong
-  >
-</h3>
+<div class="tip-box">
+  Note: You will need to verify your phone number to your Discord account before
+  using phone number login! Click here to learn how to verify your phone number
+  to your Discord account.
+</div>
 <p>In the second box, type the password associated with your account!</p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-4c960900-7fff-1eb3-22dc-57ab616ee6ce"
     ><img
-      src="https://lh4.googleusercontent.com/rgsLPx7I1QYngx6KRsb7tXdc_N1vHqttL_UzKNu1zGcdXaiwlGi-IjAZvksflSuxw9v7BAH03L4cPfSf-UTzL-dbqWeX7bk99-G1IeDkeUYpqsOT-BACMan3oAj-2OmplgwMCwFATvqcM-775P9KYzc"
+      src="https://support.discord.com/hc/article_attachments/27098861617687"
       width="552"
       height="287" /></span
   ><img
-    src="https://lh5.googleusercontent.com/HbPaeze1tQAq-0HavalWd3ALmhaRaBjlj7XnJIxMsYicKwQUB3Z-hDqIoF7mAhh2JjS0FRhn7nR7lEeZcSIcaz9Strjba_lK-9awoOQlqfz6FX3DWyhLzDEDUeC90rN0TCXFvrwd1sq-xSHLSl7P58w"
+    src="https://support.discord.com/hc/article_attachments/27098856315671"
     width="137"
     height="286"
   />
@@ -109,7 +121,7 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-6ec7583d-7fff-0c1d-a9ed-9d1a23492a43"
     ><img
-      src="https://lh5.googleusercontent.com/Feeb_PtfPn3HfJH0Q6U2IbKpWcQTG4ZTcuPrn6afZ1QwbRvgW38MFmqR0Dy9gMO_cocwqUcUTc2hFeeiPD69FOx6q2DaiFGtWFULqjCkZ8ORKjsetKmd0xRH8j3vyEDJgceHTrUvXqcuz99GUlevJ-I"
+      src="https://support.discord.com/hc/article_attachments/27098861621911"
       width="312"
       height="649"
   /></span>
@@ -121,14 +133,10 @@
     height="649"
   />
 </p>
-<h3 id="h_01HKE28VNF29MF0B6PTB8EQSEK" class="wysiwyg-text-align-left">
-  <strong
-    ><span id="docs-internal-guid-a2787951-7fff-cfa3-6a68-2fca13f74f74"
-      >Note: The app will ask for camera permissions on your mobile device in
-      order to scan the QR Code!</span
-    ></strong
-  >
-</h3>
+<div class="tip-box">
+  Note: The app will ask for camera permissions on your mobile device in order
+  to scan the QR Code!
+</div>
 <p id="docs-internal-guid-77926f60-7fff-1f37-e239-dcbde4161fdb">
   4. After the scanner is triggered, simply line up the box with the QR code on
   the desktop screen. and then you’ll be asked to verify your Discord login on
@@ -137,11 +145,11 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-98efd4f3-7fff-358f-d149-be0a490b4de4"
     ><img
-      src="https://lh5.googleusercontent.com/yWsa8qQK7ORlLsLFjunVm942BrQ_26oO7AoNPWz0qy3aFyARDbpkQCqHvNEapaRtv9HHMY9ol49iE0bdLwb4fyI9u8MfAaVjKLPx08HFUiAZGZLbY6j4YVsn9ifZo-8AFaUjZZE-G1BZRmE9D4JiEZk"
+      src="https://support.discord.com/hc/article_attachments/27098856321687"
       width="564"
       height="278" /></span
   ><img
-    src="https://lh5.googleusercontent.com/XMUCM9usdb_bXV91WgcR3nmtrUoSHXhofvef0Yq0yZiRQrkBtpZAbzPw4pKr1isjL6T56cObDJ9L_vgtqER2t5bqswyVO-X01UH8NhPGPh6UOkyMFxriXgniQHKDhMMZKwgT9aHlMcxsGbg4Q7xomlk"
+    src="https://support.discord.com/hc/article_attachments/27098861626135"
     width="134"
     height="278"
   />
@@ -155,10 +163,8 @@
     >here</a
   >.
 </p>
-<h3 id="h_01HKE28VNFQYPDG5BW01FFM85T">
-  <strong
-    >Note: Never approve a QR code login that you didn't generate yourself! If
-    you've been sent a QR code by someone else that opened the login
-    verification screen, hit cancel right away.</strong
-  >
-</h3>
+<div class="warn-box">
+  Note: Never approve a QR code login that you didn't generate yourself! If
+  you've been sent a QR code by someone else that opened the login verification
+  screen, hit cancel right away.
+</div>
