@@ -867,10 +867,10 @@
             M.push(2 * M[M.length - 1]);
           var G = M.length,
             m = M[G - 1];
-          function b(e) {
+          function y(e) {
             return 1e7 >= Math.abs(e);
           }
-          function y(e, t, r) {
+          function b(e, t, r) {
             t = F(t);
             for (
               var a = e.isNegative(),
@@ -903,7 +903,7 @@
           }
           (o.prototype.shiftLeft = function (e) {
             var t = F(e).toJSNumber();
-            if (!b(t)) throw Error(String(t) + " is too large for shifting.");
+            if (!y(t)) throw Error(String(t) + " is too large for shifting.");
             if (t < 0) return this.shiftRight(-t);
             var r = this;
             if (r.isZero()) return r;
@@ -915,7 +915,7 @@
             (o.prototype.shiftRight = function (e) {
               var t,
                 r = F(e).toJSNumber();
-              if (!b(r)) throw Error(String(r) + " is too large for shifting.");
+              if (!y(r)) throw Error(String(r) + " is too large for shifting.");
               if (r < 0) return this.shiftLeft(-r);
               for (var n = this; r >= G; ) {
                 if (n.isZero() || (n.isNegative() && n.isUnit())) return n;
@@ -931,19 +931,19 @@
             }),
             (i.prototype.not = E.prototype.not = o.prototype.not),
             (o.prototype.and = function (e) {
-              return y(this, e, function (e, t) {
+              return b(this, e, function (e, t) {
                 return e & t;
               });
             }),
             (i.prototype.and = E.prototype.and = o.prototype.and),
             (o.prototype.or = function (e) {
-              return y(this, e, function (e, t) {
+              return b(this, e, function (e, t) {
                 return e | t;
               });
             }),
             (i.prototype.or = E.prototype.or = o.prototype.or),
             (o.prototype.xor = function (e) {
-              return y(this, e, function (e, t) {
+              return b(this, e, function (e, t) {
                 return e ^ t;
               });
             }),
@@ -2026,7 +2026,7 @@
             P,
             M = function (e) {
               if (e === R && v) return v;
-              if (!f && e && e in b) return b[e];
+              if (!f && e && e in y) return y[e];
               switch (e) {
                 case p:
                 case h:
@@ -2041,10 +2041,10 @@
             },
             G = t + " Iterator",
             m = !1,
-            b = e.prototype,
-            y = b[O] || b["@@iterator"] || (R && b[R]),
-            v = (!f && y) || M(R),
-            w = ("Array" === t && b.entries) || y;
+            y = e.prototype,
+            b = y[O] || y["@@iterator"] || (R && y[R]),
+            v = (!f && b) || M(R),
+            w = ("Array" === t && y.entries) || b;
           if (
             (w &&
               (g = c(w.call(new e()))) !== Object.prototype &&
@@ -2054,22 +2054,22 @@
               _ && (N[G] = D)),
             T &&
               R === h &&
-              y &&
-              y.name !== h &&
+              b &&
+              b.name !== h &&
               (!_ && d
-                ? u(b, "name", h)
+                ? u(y, "name", h)
                 : ((m = !0),
                   (v = function () {
-                    return a(y, this);
+                    return a(b, this);
                   }))),
             R)
           ) {
             if (((U = { values: M(h), keys: A ? v : M(p), entries: M(S) }), C))
-              for (P in U) (f || m || !(P in b)) && I(b, P, U[P]);
+              for (P in U) (f || m || !(P in y)) && I(y, P, U[P]);
             else n({ target: t, proto: !0, forced: f || m }, U);
           }
           return (
-            (!_ || C) && b[O] !== v && I(b, O, v, { name: R }), (N[t] = v), U
+            (!_ || C) && y[O] !== v && I(y, O, v, { name: R }), (N[t] = v), U
           );
         };
       },
@@ -4463,13 +4463,13 @@
             return eq;
           },
           ANM: function () {
-            return a5;
+            return a4;
           },
           AQB: function () {
             return a9;
           },
           AeJ: function () {
-            return e4;
+            return e5;
           },
           Ai1: function () {
             return aV.Ai;
@@ -4607,7 +4607,7 @@
             return tX;
           },
           J0y: function () {
-            return y;
+            return b;
           },
           J6R: function () {
             return __;
@@ -4724,7 +4724,7 @@
             return _L;
           },
           PUi: function () {
-            return e5;
+            return e4;
           },
           Plq: function () {
             return aV.Pl;
@@ -4775,7 +4775,7 @@
             return aV.RK;
           },
           RcX: function () {
-            return _y;
+            return _b;
           },
           Rg9: function () {
             return o_;
@@ -4814,7 +4814,7 @@
             return _j;
           },
           TPd: function () {
-            return ay.T;
+            return ab.T;
           },
           TU7: function () {
             return _G;
@@ -4910,7 +4910,7 @@
             return k;
           },
           Z5c: function () {
-            return a4;
+            return a5;
           },
           Z8P: function () {
             return _e;
@@ -4979,7 +4979,7 @@
             return aF.cI;
           },
           d4z: function () {
-            return ay.d;
+            return ab.d;
           },
           dAT: function () {
             return eh;
@@ -5009,7 +5009,7 @@
             return tn;
           },
           eRX: function () {
-            return ey;
+            return eb;
           },
           eWB: function () {
             return _U;
@@ -5018,7 +5018,7 @@
             return e0;
           },
           eez: function () {
-            return _b;
+            return _y;
           },
           en1: function () {
             return _o;
@@ -5084,7 +5084,7 @@
             return tN;
           },
           iLy: function () {
-            return b;
+            return y;
           },
           ihW: function () {
             return aF.ih;
@@ -5165,7 +5165,7 @@
             return _J;
           },
           oCV: function () {
-            return _4;
+            return _5;
           },
           oNc: function () {
             return C;
@@ -5288,7 +5288,7 @@
             return eQ;
           },
           vTt: function () {
-            return _5;
+            return _4;
           },
           vbS: function () {
             return _Z;
@@ -5404,8 +5404,8 @@
           M,
           G,
           m,
-          b,
           y,
+          b,
           v,
           w,
           B,
@@ -5458,8 +5458,8 @@
           eM,
           eG,
           em,
-          eb,
           ey,
+          eb,
           ev,
           ew,
           eB,
@@ -5484,8 +5484,8 @@
           e2,
           e3,
           e6,
-          e5,
           e4,
+          e5,
           e8,
           e7,
           e9,
@@ -5522,8 +5522,8 @@
           tM,
           tG,
           tm,
-          tb,
           ty,
+          tb,
           tv,
           tw,
           tB,
@@ -5548,8 +5548,8 @@
           t2,
           t3,
           t6,
-          t5,
           t4,
+          t5,
           t8,
           t7,
           t9,
@@ -5586,8 +5586,8 @@
           rM,
           rG,
           rm,
-          rb,
           ry,
+          rb,
           rv,
           rw,
           rB,
@@ -5612,8 +5612,8 @@
           r2,
           r3,
           r6,
-          r5,
           r4,
+          r5,
           r8,
           r7,
           r9,
@@ -5650,8 +5650,8 @@
           nM,
           nG,
           nm,
-          nb,
           ny,
+          nb,
           nv,
           nw,
           nB,
@@ -5676,8 +5676,8 @@
           n2,
           n3,
           n6,
-          n5,
           n4,
+          n5,
           n8,
           n7,
           n9,
@@ -5714,9 +5714,9 @@
           aM,
           aG = r(512722),
           am = r.n(aG),
-          ab = r(674746);
+          ay = r(674746);
         r(722770);
-        var ay = r(106351),
+        var ab = r(106351),
           av = r(470167),
           aw = r(388123),
           aB = r(275726),
@@ -5749,13 +5749,13 @@
           (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
           (t6[(t6.COOLDOWN = 3)] = "COOLDOWN"),
           (t6[(t6.UNAPPLIED = 4)] = "UNAPPLIED"),
-          ((t5 = o || (o = {})).NONE = "NONE"),
-          (t5.REGISTERING = "REGISTERING"),
-          (t5.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
-          (t5.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
-          ((t4 = E || (E = {})).OPEN = "OPEN"),
-          (t4.SUBMITTING = "SUBMITTING"),
-          (t4.CLOSED = "CLOSED"),
+          ((t4 = o || (o = {})).NONE = "NONE"),
+          (t4.REGISTERING = "REGISTERING"),
+          (t4.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
+          (t4.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
+          ((t5 = E || (E = {})).OPEN = "OPEN"),
+          (t5.SUBMITTING = "SUBMITTING"),
+          (t5.CLOSED = "CLOSED"),
           ((t8 = i || (i = {})).SERVER_NEXT = "SERVER_NEXT"),
           (t8.SERVER_PREV = "SERVER_PREV"),
           (t8.CHANNEL_NEXT = "CHANNEL_NEXT"),
@@ -6193,7 +6193,7 @@
           aB.u.THREAD_STARTER_MESSAGE,
           aB.u.CONTEXT_MENU_COMMAND,
         ]);
-        ((rO = b || (b = {}))[(rO.CROSSPOSTED = 1)] = "CROSSPOSTED"),
+        ((rO = y || (y = {}))[(rO.CROSSPOSTED = 1)] = "CROSSPOSTED"),
           (rO[(rO.IS_CROSSPOST = 2)] = "IS_CROSSPOST"),
           (rO[(rO.SUPPRESS_EMBEDS = 4)] = "SUPPRESS_EMBEDS"),
           (rO[(rO.SOURCE_MESSAGE_DELETED = 8)] = "SOURCE_MESSAGE_DELETED"),
@@ -6212,7 +6212,7 @@
           (rO[(rO.IS_UIKIT_COMPONENTS = 32768)] = "IS_UIKIT_COMPONENTS"),
           (rO[(rO.SENT_BY_SOCIAL_LAYER_INTEGRATION = 65536)] =
             "SENT_BY_SOCIAL_LAYER_INTEGRATION"),
-          ((rp = y || (y = {}))[(rp.IS_CLIP = 1)] = "IS_CLIP"),
+          ((rp = b || (b = {}))[(rp.IS_CLIP = 1)] = "IS_CLIP"),
           (rp[(rp.IS_THUMBNAIL = 2)] = "IS_THUMBNAIL"),
           (rp[(rp.IS_REMIX = 4)] = "IS_REMIX"),
           (rp[(rp.IS_SPOILER = 8)] = "IS_SPOILER"),
@@ -6255,14 +6255,14 @@
           (rm.LOG_MESSAGES = "LOG_MESSAGES"),
           (rm.STORAGE_SYNC = "STORAGE_SYNC"),
           ((F || (F = {})).TEXT_WIDGET = "TEXT_WIDGET"),
-          ((rb = X || (X = {}))[(rb.NONE = 0)] = "NONE"),
-          (rb[(rb.LOW = 1)] = "LOW"),
-          (rb[(rb.MEDIUM = 2)] = "MEDIUM"),
-          (rb[(rb.HIGH = 3)] = "HIGH"),
-          (rb[(rb.VERY_HIGH = 4)] = "VERY_HIGH");
+          ((ry = X || (X = {}))[(ry.NONE = 0)] = "NONE"),
+          (ry[(ry.LOW = 1)] = "LOW"),
+          (ry[(ry.MEDIUM = 2)] = "MEDIUM"),
+          (ry[(ry.HIGH = 3)] = "HIGH"),
+          (ry[(ry.VERY_HIGH = 4)] = "VERY_HIGH");
         let a$ = Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
-        ((ry = j || (j = {}))[(ry.NONE = 0)] = "NONE"),
-          (ry[(ry.ELEVATED = 1)] = "ELEVATED"),
+        ((rb = j || (j = {}))[(rb.NONE = 0)] = "NONE"),
+          (rb[(rb.ELEVATED = 1)] = "ELEVATED"),
           ((rv = $ || ($ = {}))[(rv.DISABLED = 0)] = "DISABLED"),
           (rv[(rv.MEMBERS_WITHOUT_ROLES = 1)] = "MEMBERS_WITHOUT_ROLES"),
           (rv[(rv.ALL_MEMBERS = 2)] = "ALL_MEMBERS"),
@@ -7709,8 +7709,8 @@
             USER_SUMMARIES: "/users/@me/summaries",
             QUESTS: (e) => "/quests/".concat(e),
           }),
-          a5 = (0, aH.Ft)(a3),
-          a4 = (0, aH.Ft)(a6, [":", "?", "@"]);
+          a4 = (0, aH.Ft)(a3),
+          a5 = (0, aH.Ft)(a6, [":", "?", "@"]);
         ((rx = ee || (ee = {}))[(rx.INSTANCE = 1)] = "INSTANCE"),
           (rx[(rx.JOIN = 2)] = "JOIN"),
           (rx[(rx.SYNC = 16)] = "SYNC"),
@@ -7797,8 +7797,8 @@
           _M = "1",
           _G = 1e4,
           _m = 50,
-          _b = 150,
-          _y = 300,
+          _y = 150,
+          _b = 300,
           _v = 10,
           _w = 25,
           _B = 240,
@@ -8941,9 +8941,9 @@
           (r6.REACTION = "reaction"),
           (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
           (r6.REACTION_OVERFLOW = "reaction_overflow"),
-          ((r5 = ed || (ed = {})).PRIMARY = "primary"),
-          (r5.SECONDARY = "secondary"),
-          (r5.DISMISS = "dismiss");
+          ((r4 = ed || (ed = {})).PRIMARY = "primary"),
+          (r4.SECONDARY = "secondary"),
+          (r4.DISMISS = "dismiss");
         let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
@@ -9061,15 +9061,15 @@
           SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
           WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool",
         });
-        ((r4 = eL || (eL = {})).APPLICATION_STORE =
+        ((r5 = eL || (eL = {})).APPLICATION_STORE =
           "Application Store Verified Guild Invite - Lurker"),
-          (r4.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode"),
-          (r4.NOTICE_BAR = "Notice - Lurker Mode"),
-          (r4.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker"),
-          (r4.DIRECTORY_ENTRY = "Directory Channel Entry"),
-          (r4.DIRECTORY_EVENTS = "Directory Channel Events"),
-          (r4.POLL_ALERT = "Poll Alert"),
-          (r4.ICYMI = "ICYMI"),
+          (r5.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode"),
+          (r5.NOTICE_BAR = "Notice - Lurker Mode"),
+          (r5.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker"),
+          (r5.DIRECTORY_ENTRY = "Directory Channel Entry"),
+          (r5.DIRECTORY_EVENTS = "Directory Channel Events"),
+          (r5.POLL_ALERT = "Poll Alert"),
+          (r5.ICYMI = "ICYMI"),
           ((r8 = ef || (ef = {})).QR_CODE = "QR Code Login"),
           (r8.MOBILE_WEB_HANDOFF = "Mobile Web Handoff"),
           (r8.DEFAULT = "The default username password Login"),
@@ -9309,11 +9309,11 @@
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          _3 = (0, aW._i)(ab.Z.BRAND_500);
+          _3 = (0, aW._i)(ay.Z.BRAND_500);
         am()(null != _3, "Brand color could not be parsed"),
-          ((ns = eb || (eb = {})).ROLE = "ROLE"),
+          ((ns = ey || (ey = {})).ROLE = "ROLE"),
           (ns.MEMBER = "MEMBER"),
-          ((nl = ey || (ey = {})).VOICE_LEGACY_SUBSYSTEM =
+          ((nl = eb || (eb = {})).VOICE_LEGACY_SUBSYSTEM =
             "voice_legacy_subsystem"),
           (nl.DEBUG_LOGGING = "debug_logging"),
           (nl.POPOUT_WINDOWS = "popout_windows"),
@@ -9348,12 +9348,12 @@
           (nR.FILTER = "FILTER"),
           (nR.FILTER_ALL = "FILTER_ALL");
         let _6 = "YYYY-MM-DD",
-          _5 = "PrivateChannelRecipientsInvitePopout";
+          _4 = "PrivateChannelRecipientsInvitePopout";
         ((nN = eW || (eW = {}))[(nN.NONE = 0)] = "NONE"),
           (nN[(nN.TIER_1 = 1)] = "TIER_1"),
           (nN[(nN.TIER_2 = 2)] = "TIER_2"),
           (nN[(nN.TIER_3 = 3)] = "TIER_3");
-        let _4 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
+        let _5 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
           _8 = 7,
           _7 = 0;
         ((nA = eH || (eH = {}))[(nA.DEFAULT = 0)] = "DEFAULT"),
@@ -11067,161 +11067,161 @@
           (nm.GUILD_SOUNDBOARD = "GUILD_SOUNDBOARD"),
           (nm.HOME_SETTINGS = "HOME_SETTINGS"),
           (nm.VOICE_CHANNEL_STATUS = "VOICE_CHANNEL_STATUS"),
-          ((nb = e2 || (e2 = {})).NAME = "name"),
-          (nb.DESCRIPTION = "description"),
-          (nb.ICON_HASH = "icon_hash"),
-          (nb.SPLASH_HASH = "splash_hash"),
-          (nb.DISCOVERY_SPLASH_HASH = "discovery_splash_hash"),
-          (nb.BANNER_HASH = "banner_hash"),
-          (nb.IMAGE_HASH = "image_hash"),
-          (nb.OWNER_ID = "owner_id"),
-          (nb.REGION = "region"),
-          (nb.PREFERRED_LOCALE = "preferred_locale"),
-          (nb.AFK_CHANNEL_ID = "afk_channel_id"),
-          (nb.AFK_TIMEOUT = "afk_timeout"),
-          (nb.SYSTEM_CHANNEL_ID = "system_channel_id"),
-          (nb.RULES_CHANNEL_ID = "rules_channel_id"),
-          (nb.SAFETY_ALERTS_CHANNEL_ID = "safety_alerts_channel_id"),
-          (nb.PUBLIC_UPDATES_CHANNEL_ID = "public_updates_channel_id"),
-          (nb.MFA_LEVEL = "mfa_level"),
-          (nb.WIDGET_ENABLED = "widget_enabled"),
-          (nb.WIDGET_CHANNEL_ID = "widget_channel_id"),
-          (nb.VERIFICATION_LEVEL = "verification_level"),
-          (nb.EXPLICIT_CONTENT_FILTER = "explicit_content_filter"),
-          (nb.DEFAULT_MESSAGE_NOTIFICATIONS = "default_message_notifications"),
-          (nb.VANITY_URL_CODE = "vanity_url_code"),
-          (nb.PREMIUM_PROGRESS_BAR_ENABLED = "premium_progress_bar_enabled"),
-          (nb.SYSTEM_CHANNEL_FLAGS = "system_channel_flags"),
-          (nb.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS = "join_notifications"),
-          (nb.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS =
+          ((ny = e2 || (e2 = {})).NAME = "name"),
+          (ny.DESCRIPTION = "description"),
+          (ny.ICON_HASH = "icon_hash"),
+          (ny.SPLASH_HASH = "splash_hash"),
+          (ny.DISCOVERY_SPLASH_HASH = "discovery_splash_hash"),
+          (ny.BANNER_HASH = "banner_hash"),
+          (ny.IMAGE_HASH = "image_hash"),
+          (ny.OWNER_ID = "owner_id"),
+          (ny.REGION = "region"),
+          (ny.PREFERRED_LOCALE = "preferred_locale"),
+          (ny.AFK_CHANNEL_ID = "afk_channel_id"),
+          (ny.AFK_TIMEOUT = "afk_timeout"),
+          (ny.SYSTEM_CHANNEL_ID = "system_channel_id"),
+          (ny.RULES_CHANNEL_ID = "rules_channel_id"),
+          (ny.SAFETY_ALERTS_CHANNEL_ID = "safety_alerts_channel_id"),
+          (ny.PUBLIC_UPDATES_CHANNEL_ID = "public_updates_channel_id"),
+          (ny.MFA_LEVEL = "mfa_level"),
+          (ny.WIDGET_ENABLED = "widget_enabled"),
+          (ny.WIDGET_CHANNEL_ID = "widget_channel_id"),
+          (ny.VERIFICATION_LEVEL = "verification_level"),
+          (ny.EXPLICIT_CONTENT_FILTER = "explicit_content_filter"),
+          (ny.DEFAULT_MESSAGE_NOTIFICATIONS = "default_message_notifications"),
+          (ny.VANITY_URL_CODE = "vanity_url_code"),
+          (ny.PREMIUM_PROGRESS_BAR_ENABLED = "premium_progress_bar_enabled"),
+          (ny.SYSTEM_CHANNEL_FLAGS = "system_channel_flags"),
+          (ny.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS = "join_notifications"),
+          (ny.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS =
             "premium_subscriptions"),
-          (nb.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS =
+          (ny.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS =
             "reminder_notifications"),
-          (nb.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES =
+          (ny.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES =
             "join_notification_replies"),
-          (nb.POSITION = "position"),
-          (nb.TOPIC = "topic"),
-          (nb.TYPE = "type"),
-          (nb.BITRATE = "bitrate"),
-          (nb.RTC_REGION_OVERRIDE = "rtc_region"),
-          (nb.USER_LIMIT = "user_limit"),
-          (nb.PERMISSION_OVERWRITES = "permission_overwrites"),
-          (nb.ROLES_ADD = "$add"),
-          (nb.ROLES_REMOVE = "$remove"),
-          (nb.NICK = "nick"),
-          (nb.DEAF = "deaf"),
-          (nb.MUTE = "mute"),
-          (nb.PERMISSIONS = "permissions"),
-          (nb.COLOR = "color"),
-          (nb.HOIST = "hoist"),
-          (nb.MENTIONABLE = "mentionable"),
-          (nb.CODE = "code"),
-          (nb.CHANNEL_ID = "channel_id"),
-          (nb.INVITER_ID = "inviter_id"),
-          (nb.MAX_USES = "max_uses"),
-          (nb.USES = "uses"),
-          (nb.MAX_AGE = "max_age"),
-          (nb.TEMPORARY = "temporary"),
-          (nb.APPLICATION_ID = "application_id"),
-          (nb.AVATAR_HASH = "avatar_hash"),
-          (nb.ID = "id"),
-          (nb.PERMISSIONS_GRANTED = "allow"),
-          (nb.PERMISSIONS_DENIED = "deny"),
-          (nb.PERMISSIONS_RESET = "reset"),
-          (nb.REASON = "reason"),
-          (nb.PRUNE_DELETE_DAYS = "prune_delete_days"),
-          (nb.NSFW = "nsfw"),
-          (nb.RATE_LIMIT_PER_USER = "rate_limit_per_user"),
-          (nb.VIDEO_QUALITY_MODE = "video_quality_mode"),
-          (nb.DEFAULT_AUTO_ARCHIVE_DURATION = "default_auto_archive_duration"),
-          (nb.ARCHIVED = "archived"),
-          (nb.LOCKED = "locked"),
-          (nb.INVITABLE = "invitable"),
-          (nb.AUTO_ARCHIVE_DURATION = "auto_archive_duration"),
-          (nb.FLAGS = "flags"),
-          (nb.THEME_COLORS = "theme_colors"),
-          (nb.PERSONALITY = "personality"),
-          (nb.CLYDE_PROFILE_ID = "clyde_profile_id"),
-          (nb.AUTHOR_ID = "author_id"),
-          (nb.ENABLE_EMOTICONS = "enable_emoticons"),
-          (nb.EXPIRE_BEHAVIOR = "expire_behavior"),
-          (nb.EXPIRE_GRACE_PERIOD = "expire_grace_period"),
-          (nb.PRIVACY_LEVEL = "privacy_level"),
-          (nb.STATUS = "status"),
-          (nb.ENTITY_TYPE = "entity_type"),
-          (nb.TAGS = "tags"),
-          (nb.ASSET = "asset"),
-          (nb.FORMAT_TYPE = "format_type"),
-          (nb.AVAILABLE = "available"),
-          (nb.GUILD_ID = "guild_id"),
-          (nb.UNICODE_EMOJI = "unicode_emoji"),
-          (nb.LOCATION = "location"),
-          (nb.RECURRENCE_RULE = "recurrence_rule"),
-          (nb.COMMUNICATION_DISABLED_UNTIL = "communication_disabled_until"),
-          (nb.BYPASSES_VERIFICATION = "bypasses_verification"),
-          (nb.AUTO_MODERATION_TRIGGERED_RULE_NAME = "triggered_rule_name"),
-          (nb.AUTO_MODERATION_TRIGGER_TYPE = "trigger_type"),
-          (nb.AUTO_MODERATION_TRIGGER_METADATA = "trigger_metadata"),
-          (nb.AUTO_MODERATION_EVENT_TYPE = "event_type"),
-          (nb.AUTO_MODERATION_ACTIONS = "actions"),
-          (nb.AUTO_MODERATION_ENABLED = "enabled"),
-          (nb.AUTO_MODERATION_EXEMPT_ROLES = "exempt_roles"),
-          (nb.AUTO_MODERATION_EXEMPT_CHANNELS = "exempt_channels"),
-          (nb.AUTO_MODERATION_ADD_KEYWORDS = "$add_keyword_filter"),
-          (nb.AUTO_MODERATION_REMOVE_KEYWORDS = "$remove_keyword_filter"),
-          (nb.AUTO_MODERATION_ADD_REGEX_PATTERNS = "$add_regex_patterns"),
-          (nb.AUTO_MODERATION_REMOVE_REGEX_PATTERNS = "$remove_regex_patterns"),
-          (nb.AUTO_MODERATION_ADD_ALLOW_LIST = "$add_allow_list"),
-          (nb.AUTO_MODERATION_REMOVE_ALLOW_LIST = "$remove_allow_list"),
-          (nb.TITLE = "title"),
-          (nb.DISABLED = "disabled"),
-          (nb.REQUIRED = "required"),
-          (nb.OPTIONS = "options"),
-          (nb.PROMPTS = "prompts"),
-          (nb.ENABLED = "enabled"),
-          (nb.SINGLE_SELECT = "single_select"),
-          (nb.DEFAULT_CHANNEL_IDS = "default_channel_ids"),
-          (nb.ENABLE_DEFAULT_CHANNELS = "enable_default_channels"),
-          (nb.ENABLE_ONBOARDING_PROMPTS = "enable_onboarding_prompts"),
-          (nb.AVAILABLE_TAGS = "available_tags"),
-          (nb.AVAILABLE_TAG_ADD = "available_tag_add"),
-          (nb.AVAILABLE_TAG_EDIT = "available_tag_edit"),
-          (nb.AVAILABLE_TAG_DELETE = "available_tag_delete"),
-          (nb.SOUND_ID = "sound_id"),
-          (nb.VOLUME = "volume"),
-          (nb.EMOJI_NAME = "emoji_name"),
-          (nb.EMOJI_ID = "emoji_id"),
-          (nb.WELCOME_MESSAGE = "welcome_message"),
-          (nb.NEW_MEMBER_ACTIONS = "new_member_actions"),
-          (nb.RESOURCE_CHANNELS = "resource_channels"),
-          (nb.SCHEDULED_START_TIME = "scheduled_start_time"),
-          (nb.SCHEDULED_END_TIME = "scheduled_end_time"),
-          (nb.IS_CANCELED = "is_canceled"),
-          (nb.LINKED_LOBBY = "linked_lobby");
+          (ny.POSITION = "position"),
+          (ny.TOPIC = "topic"),
+          (ny.TYPE = "type"),
+          (ny.BITRATE = "bitrate"),
+          (ny.RTC_REGION_OVERRIDE = "rtc_region"),
+          (ny.USER_LIMIT = "user_limit"),
+          (ny.PERMISSION_OVERWRITES = "permission_overwrites"),
+          (ny.ROLES_ADD = "$add"),
+          (ny.ROLES_REMOVE = "$remove"),
+          (ny.NICK = "nick"),
+          (ny.DEAF = "deaf"),
+          (ny.MUTE = "mute"),
+          (ny.PERMISSIONS = "permissions"),
+          (ny.COLOR = "color"),
+          (ny.HOIST = "hoist"),
+          (ny.MENTIONABLE = "mentionable"),
+          (ny.CODE = "code"),
+          (ny.CHANNEL_ID = "channel_id"),
+          (ny.INVITER_ID = "inviter_id"),
+          (ny.MAX_USES = "max_uses"),
+          (ny.USES = "uses"),
+          (ny.MAX_AGE = "max_age"),
+          (ny.TEMPORARY = "temporary"),
+          (ny.APPLICATION_ID = "application_id"),
+          (ny.AVATAR_HASH = "avatar_hash"),
+          (ny.ID = "id"),
+          (ny.PERMISSIONS_GRANTED = "allow"),
+          (ny.PERMISSIONS_DENIED = "deny"),
+          (ny.PERMISSIONS_RESET = "reset"),
+          (ny.REASON = "reason"),
+          (ny.PRUNE_DELETE_DAYS = "prune_delete_days"),
+          (ny.NSFW = "nsfw"),
+          (ny.RATE_LIMIT_PER_USER = "rate_limit_per_user"),
+          (ny.VIDEO_QUALITY_MODE = "video_quality_mode"),
+          (ny.DEFAULT_AUTO_ARCHIVE_DURATION = "default_auto_archive_duration"),
+          (ny.ARCHIVED = "archived"),
+          (ny.LOCKED = "locked"),
+          (ny.INVITABLE = "invitable"),
+          (ny.AUTO_ARCHIVE_DURATION = "auto_archive_duration"),
+          (ny.FLAGS = "flags"),
+          (ny.THEME_COLORS = "theme_colors"),
+          (ny.PERSONALITY = "personality"),
+          (ny.CLYDE_PROFILE_ID = "clyde_profile_id"),
+          (ny.AUTHOR_ID = "author_id"),
+          (ny.ENABLE_EMOTICONS = "enable_emoticons"),
+          (ny.EXPIRE_BEHAVIOR = "expire_behavior"),
+          (ny.EXPIRE_GRACE_PERIOD = "expire_grace_period"),
+          (ny.PRIVACY_LEVEL = "privacy_level"),
+          (ny.STATUS = "status"),
+          (ny.ENTITY_TYPE = "entity_type"),
+          (ny.TAGS = "tags"),
+          (ny.ASSET = "asset"),
+          (ny.FORMAT_TYPE = "format_type"),
+          (ny.AVAILABLE = "available"),
+          (ny.GUILD_ID = "guild_id"),
+          (ny.UNICODE_EMOJI = "unicode_emoji"),
+          (ny.LOCATION = "location"),
+          (ny.RECURRENCE_RULE = "recurrence_rule"),
+          (ny.COMMUNICATION_DISABLED_UNTIL = "communication_disabled_until"),
+          (ny.BYPASSES_VERIFICATION = "bypasses_verification"),
+          (ny.AUTO_MODERATION_TRIGGERED_RULE_NAME = "triggered_rule_name"),
+          (ny.AUTO_MODERATION_TRIGGER_TYPE = "trigger_type"),
+          (ny.AUTO_MODERATION_TRIGGER_METADATA = "trigger_metadata"),
+          (ny.AUTO_MODERATION_EVENT_TYPE = "event_type"),
+          (ny.AUTO_MODERATION_ACTIONS = "actions"),
+          (ny.AUTO_MODERATION_ENABLED = "enabled"),
+          (ny.AUTO_MODERATION_EXEMPT_ROLES = "exempt_roles"),
+          (ny.AUTO_MODERATION_EXEMPT_CHANNELS = "exempt_channels"),
+          (ny.AUTO_MODERATION_ADD_KEYWORDS = "$add_keyword_filter"),
+          (ny.AUTO_MODERATION_REMOVE_KEYWORDS = "$remove_keyword_filter"),
+          (ny.AUTO_MODERATION_ADD_REGEX_PATTERNS = "$add_regex_patterns"),
+          (ny.AUTO_MODERATION_REMOVE_REGEX_PATTERNS = "$remove_regex_patterns"),
+          (ny.AUTO_MODERATION_ADD_ALLOW_LIST = "$add_allow_list"),
+          (ny.AUTO_MODERATION_REMOVE_ALLOW_LIST = "$remove_allow_list"),
+          (ny.TITLE = "title"),
+          (ny.DISABLED = "disabled"),
+          (ny.REQUIRED = "required"),
+          (ny.OPTIONS = "options"),
+          (ny.PROMPTS = "prompts"),
+          (ny.ENABLED = "enabled"),
+          (ny.SINGLE_SELECT = "single_select"),
+          (ny.DEFAULT_CHANNEL_IDS = "default_channel_ids"),
+          (ny.ENABLE_DEFAULT_CHANNELS = "enable_default_channels"),
+          (ny.ENABLE_ONBOARDING_PROMPTS = "enable_onboarding_prompts"),
+          (ny.AVAILABLE_TAGS = "available_tags"),
+          (ny.AVAILABLE_TAG_ADD = "available_tag_add"),
+          (ny.AVAILABLE_TAG_EDIT = "available_tag_edit"),
+          (ny.AVAILABLE_TAG_DELETE = "available_tag_delete"),
+          (ny.SOUND_ID = "sound_id"),
+          (ny.VOLUME = "volume"),
+          (ny.EMOJI_NAME = "emoji_name"),
+          (ny.EMOJI_ID = "emoji_id"),
+          (ny.WELCOME_MESSAGE = "welcome_message"),
+          (ny.NEW_MEMBER_ACTIONS = "new_member_actions"),
+          (ny.RESOURCE_CHANNELS = "resource_channels"),
+          (ny.SCHEDULED_START_TIME = "scheduled_start_time"),
+          (ny.SCHEDULED_END_TIME = "scheduled_end_time"),
+          (ny.IS_CANCELED = "is_canceled"),
+          (ny.LINKED_LOBBY = "linked_lobby");
         let o_ = 50;
-        ((ny = e3 || (e3 = {})).AGREEMENTS = "AGREEMENTS"),
-          (ny.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
-          (ny.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
-          (ny.REQUIRE_VERIFIED_PHONE = "REQUIRE_VERIFIED_PHONE"),
-          (ny.REQUIRE_REVERIFIED_EMAIL = "REQUIRE_REVERIFIED_EMAIL"),
-          (ny.REQUIRE_REVERIFIED_PHONE = "REQUIRE_REVERIFIED_PHONE"),
-          (ny.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE =
+        ((nb = e3 || (e3 = {})).AGREEMENTS = "AGREEMENTS"),
+          (nb.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
+          (nb.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
+          (nb.REQUIRE_VERIFIED_PHONE = "REQUIRE_VERIFIED_PHONE"),
+          (nb.REQUIRE_REVERIFIED_EMAIL = "REQUIRE_REVERIFIED_EMAIL"),
+          (nb.REQUIRE_REVERIFIED_PHONE = "REQUIRE_REVERIFIED_PHONE"),
+          (nb.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE =
             "REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE"),
-          (ny.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE =
+          (nb.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE =
             "REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE"),
-          (ny.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE =
+          (nb.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE =
             "REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
-          (ny.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE =
+          (nb.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE =
             "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
           ((e6 || (e6 = {})).UPDATE_PASSWORD = "update_password"),
-          ((nv = e5 || (e5 = {})).CAPTCHA = "captcha"),
+          ((nv = e4 || (e4 = {})).CAPTCHA = "captcha"),
           (nv.EMAIL_OR_PHONE = "email_or_phone"),
           (nv.PHONE = "phone"),
           (nv.EMAIL = "email"),
           (nv.REVERIFY_PHONE = "reverify_phone"),
           (nv.REVERIFY_EMAIL = "reverify_email");
         let oo = 512;
-        ((nw = e4 || (e4 = {}))[(nw.PRIMARY = 0)] = "PRIMARY"),
+        ((nw = e5 || (e5 = {}))[(nw.PRIMARY = 0)] = "PRIMARY"),
           (nw[(nw.SECONDARY = 2)] = "SECONDARY"),
           (nw[(nw.WHEEL = 4)] = "WHEEL"),
           (nw[(nw.BACK = 8)] = "BACK"),
@@ -11549,16 +11549,16 @@
           (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           ((n6 = tL || (tL = {})).ESRB = "1"),
           (n6.PEGI = "2"),
-          ((n5 = tf || (tf = {}))[(n5.DURABLE_PRIMARY = 1)] =
+          ((n4 = tf || (tf = {}))[(n4.DURABLE_PRIMARY = 1)] =
             "DURABLE_PRIMARY"),
-          (n5[(n5.DURABLE = 2)] = "DURABLE"),
-          (n5[(n5.CONSUMABLE = 3)] = "CONSUMABLE"),
-          (n5[(n5.BUNDLE = 4)] = "BUNDLE"),
-          (n5[(n5.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
-          (n5[(n5.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
-          ((n4 = tO || (tO = {}))[(n4.FULL = 1)] = "FULL"),
-          (n4[(n4.EARLY_ACCESS = 2)] = "EARLY_ACCESS"),
-          (n4[(n4.VIP_ACCESS = 3)] = "VIP_ACCESS"),
+          (n4[(n4.DURABLE = 2)] = "DURABLE"),
+          (n4[(n4.CONSUMABLE = 3)] = "CONSUMABLE"),
+          (n4[(n4.BUNDLE = 4)] = "BUNDLE"),
+          (n4[(n4.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
+          (n4[(n4.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
+          ((n5 = tO || (tO = {}))[(n5.FULL = 1)] = "FULL"),
+          (n5[(n5.EARLY_ACCESS = 2)] = "EARLY_ACCESS"),
+          (n5[(n5.VIP_ACCESS = 3)] = "VIP_ACCESS"),
           ((n8 = tp || (tp = {}))[(n8.PREMIUM_PURCHASE = 1)] =
             "PREMIUM_PURCHASE"),
           (n8[(n8.HAS_FREE_PREMIUM_CONTENT = 2)] = "HAS_FREE_PREMIUM_CONTENT"),
@@ -11963,10 +11963,10 @@
           (aE.RELEASE_DATE = "7"),
           (aE.EARLY_ACCESS = "8"),
           (aE.HAS_FREE_PREMIUM_CONTENT = "9"),
-          ((ai = tb || (tb = {})).INPUT = "INPUT"),
+          ((ai = ty || (ty = {})).INPUT = "INPUT"),
           (ai.OUTPUT = "OUTPUT"),
           (ai.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT"),
-          ((ac = ty || (ty = {})).INPUT = "INPUT"),
+          ((ac = tb || (tb = {})).INPUT = "INPUT"),
           (ac.OUTPUT = "OUTPUT"),
           (ac.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT"),
           ((as = tv || (tv = {})).APPLICATION_LIBRARY_BADGE =
@@ -12131,8 +12131,8 @@
           M,
           G,
           m,
-          b,
           y,
+          b,
           v,
           w,
           B,
@@ -12159,17 +12159,17 @@
           ea,
           e_,
           eo = r(376345);
-        ((b = n || (n = {})).CHANNELS = "CHANNELS"),
-          (b.MEMBERS = "MEMBERS"),
-          ((y = a || (a = {})).CHAT = "CHAT"),
-          (y.FRIENDS = "FRIENDS"),
-          (y.QUICKSWITCHER = "QUICKSWITCHER"),
-          (y.NOTIFICATIONS = "NOTIFICATIONS"),
-          (y.MENTIONS_AND_QUICKSWITCHER = "MENTIONS_AND_QUICKSWITCHER"),
-          (y.USER_SETTINGS = "USER_SETTINGS"),
-          (y.STAGE_DISCOVERY = "STAGE_DISCOVERY"),
-          (y.SERVER_DISCOVERY = "SERVER_DISCOVERY"),
-          (y.PENDING_INCOMING_FRIEND_REQUESTS =
+        ((y = n || (n = {})).CHANNELS = "CHANNELS"),
+          (y.MEMBERS = "MEMBERS"),
+          ((b = a || (a = {})).CHAT = "CHAT"),
+          (b.FRIENDS = "FRIENDS"),
+          (b.QUICKSWITCHER = "QUICKSWITCHER"),
+          (b.NOTIFICATIONS = "NOTIFICATIONS"),
+          (b.MENTIONS_AND_QUICKSWITCHER = "MENTIONS_AND_QUICKSWITCHER"),
+          (b.USER_SETTINGS = "USER_SETTINGS"),
+          (b.STAGE_DISCOVERY = "STAGE_DISCOVERY"),
+          (b.SERVER_DISCOVERY = "SERVER_DISCOVERY"),
+          (b.PENDING_INCOMING_FRIEND_REQUESTS =
             "PENDING_INCOMING_FRIEND_REQUESTS"),
           ((v = _ || (_ = {})).BACK_BUTTON = "Back Button"),
           (v.SWIPE = "Swipe"),
@@ -12484,7 +12484,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-cf7060046ad35950f4227292a5c3caf2b3f2eced",
+            release: "discord_web-f7d770516782b2c7652db907b51b0d89c8196aab",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12553,8 +12553,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "335926"), "335926"));
-          o.YA("builtAt", String("1729111437378"));
+            o.YA("buildNumber", ((e = "335946"), "335946"));
+          o.YA("builtAt", String("1729113066102"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15809,106 +15809,106 @@
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
               YOUTUBE: "#cb2120",
-              BLUE_NEW_1: "#d8e9fc",
-              BLUE_NEW_10: "#b0d2f9",
+              BLUE_NEW_1: "#d7e9fc",
+              BLUE_NEW_10: "#add2f9",
               BLUE_NEW_100: "#010409",
-              BLUE_NEW_11: "#abcff8",
-              BLUE_NEW_12: "#a7ccf8",
-              BLUE_NEW_13: "#a3caf7",
-              BLUE_NEW_14: "#9fc7f7",
-              BLUE_NEW_15: "#9bc5f6",
-              BLUE_NEW_16: "#97c2f6",
-              BLUE_NEW_17: "#93c0f6",
-              BLUE_NEW_18: "#8fbdf5",
-              BLUE_NEW_19: "#8bbbf5",
-              BLUE_NEW_2: "#d3e6fc",
-              BLUE_NEW_20: "#87b9f4",
-              BLUE_NEW_21: "#83b6f4",
-              BLUE_NEW_22: "#7fb4f3",
-              BLUE_NEW_23: "#7bb1f2",
-              BLUE_NEW_24: "#77aff2",
-              BLUE_NEW_25: "#74adf1",
-              BLUE_NEW_26: "#70aaf1",
-              BLUE_NEW_27: "#6ca8f0",
-              BLUE_NEW_28: "#68a6f0",
-              BLUE_NEW_29: "#65a3ef",
-              BLUE_NEW_3: "#cfe4fc",
-              BLUE_NEW_30: "#61a1ef",
-              BLUE_NEW_31: "#5d9fee",
-              BLUE_NEW_32: "#599cee",
-              BLUE_NEW_33: "#569aed",
-              BLUE_NEW_34: "#5298ec",
-              BLUE_NEW_35: "#4e95ec",
-              BLUE_NEW_36: "#4a93eb",
-              BLUE_NEW_37: "#4791eb",
-              BLUE_NEW_38: "#438fea",
-              BLUE_NEW_39: "#3f8cea",
-              BLUE_NEW_4: "#cae1fb",
-              BLUE_NEW_40: "#3b8ae9",
-              BLUE_NEW_41: "#3788e8",
-              BLUE_NEW_42: "#3386e8",
-              BLUE_NEW_43: "#2e83e7",
-              BLUE_NEW_44: "#2a81e7",
-              BLUE_NEW_45: "#257fe6",
-              BLUE_NEW_46: "#207de5",
-              BLUE_NEW_47: "#1a7be5",
-              BLUE_NEW_48: "#1378e4",
-              BLUE_NEW_49: "#0b76e4",
-              BLUE_NEW_5: "#c6defb",
+              BLUE_NEW_11: "#a8cff8",
+              BLUE_NEW_12: "#a4ccf8",
+              BLUE_NEW_13: "#a0caf8",
+              BLUE_NEW_14: "#9bc7f7",
+              BLUE_NEW_15: "#97c5f7",
+              BLUE_NEW_16: "#93c2f6",
+              BLUE_NEW_17: "#8fc0f6",
+              BLUE_NEW_18: "#8abdf5",
+              BLUE_NEW_19: "#86bbf5",
+              BLUE_NEW_2: "#d2e6fc",
+              BLUE_NEW_20: "#82b9f4",
+              BLUE_NEW_21: "#7eb6f4",
+              BLUE_NEW_22: "#7ab4f3",
+              BLUE_NEW_23: "#76b1f3",
+              BLUE_NEW_24: "#72aff2",
+              BLUE_NEW_25: "#6eadf2",
+              BLUE_NEW_26: "#6aaaf1",
+              BLUE_NEW_27: "#66a8f1",
+              BLUE_NEW_28: "#62a5f0",
+              BLUE_NEW_29: "#5ea3ef",
+              BLUE_NEW_3: "#cde4fc",
+              BLUE_NEW_30: "#5aa1ef",
+              BLUE_NEW_31: "#569eee",
+              BLUE_NEW_32: "#519cee",
+              BLUE_NEW_33: "#4d9aed",
+              BLUE_NEW_34: "#4997ed",
+              BLUE_NEW_35: "#4595ec",
+              BLUE_NEW_36: "#4193ec",
+              BLUE_NEW_37: "#3c91eb",
+              BLUE_NEW_38: "#388eea",
+              BLUE_NEW_39: "#338cea",
+              BLUE_NEW_4: "#c8e1fb",
+              BLUE_NEW_40: "#2e8ae9",
+              BLUE_NEW_41: "#2988e9",
+              BLUE_NEW_42: "#2385e8",
+              BLUE_NEW_43: "#1d83e7",
+              BLUE_NEW_44: "#1581e7",
+              BLUE_NEW_45: "#0b7fe6",
+              BLUE_NEW_46: "#007ce6",
+              BLUE_NEW_47: "#007ae5",
+              BLUE_NEW_48: "#0078e4",
+              BLUE_NEW_49: "#0076e4",
+              BLUE_NEW_5: "#c4defb",
               BLUE_NEW_50: "#0074e3",
-              BLUE_NEW_51: "#0471db",
-              BLUE_NEW_52: "#076dd3",
-              BLUE_NEW_53: "#096acb",
-              BLUE_NEW_54: "#0c66c4",
-              BLUE_NEW_55: "#0d63bc",
-              BLUE_NEW_56: "#0f60b5",
-              BLUE_NEW_57: "#105dae",
-              BLUE_NEW_58: "#105aa8",
-              BLUE_NEW_59: "#1157a1",
-              BLUE_NEW_6: "#c1dcfa",
-              BLUE_NEW_60: "#11549b",
-              BLUE_NEW_61: "#125195",
-              BLUE_NEW_62: "#124e8f",
-              BLUE_NEW_63: "#124b89",
-              BLUE_NEW_64: "#124883",
-              BLUE_NEW_65: "#12467e",
-              BLUE_NEW_66: "#124379",
-              BLUE_NEW_67: "#124073",
-              BLUE_NEW_68: "#113e6e",
-              BLUE_NEW_69: "#113b6a",
-              BLUE_NEW_7: "#bdd9fa",
-              BLUE_NEW_70: "#103965",
-              BLUE_NEW_71: "#103760",
-              BLUE_NEW_72: "#10345c",
-              BLUE_NEW_73: "#0f3258",
-              BLUE_NEW_74: "#0f3053",
-              BLUE_NEW_75: "#0e2d4f",
-              BLUE_NEW_76: "#0d2b4b",
-              BLUE_NEW_77: "#0d2948",
-              BLUE_NEW_78: "#0c2744",
-              BLUE_NEW_79: "#0c2540",
-              BLUE_NEW_8: "#b8d7fa",
-              BLUE_NEW_80: "#0b233d",
-              BLUE_NEW_81: "#0a2139",
-              BLUE_NEW_82: "#0a1f36",
-              BLUE_NEW_83: "#091d33",
-              BLUE_NEW_84: "#081b30",
-              BLUE_NEW_85: "#081a2d",
-              BLUE_NEW_86: "#07182a",
-              BLUE_NEW_87: "#071627",
-              BLUE_NEW_88: "#061424",
-              BLUE_NEW_89: "#061321",
-              BLUE_NEW_9: "#b4d4f9",
-              BLUE_NEW_90: "#05111f",
-              BLUE_NEW_91: "#050f1c",
-              BLUE_NEW_92: "#040e1a",
-              BLUE_NEW_93: "#040c17",
+              BLUE_NEW_51: "#0070db",
+              BLUE_NEW_52: "#006dd3",
+              BLUE_NEW_53: "#0069cb",
+              BLUE_NEW_54: "#0066c4",
+              BLUE_NEW_55: "#0063bc",
+              BLUE_NEW_56: "#0060b5",
+              BLUE_NEW_57: "#005dae",
+              BLUE_NEW_58: "#005aa8",
+              BLUE_NEW_59: "#0057a1",
+              BLUE_NEW_6: "#bfdcfb",
+              BLUE_NEW_60: "#00549b",
+              BLUE_NEW_61: "#005195",
+              BLUE_NEW_62: "#024e8f",
+              BLUE_NEW_63: "#044b89",
+              BLUE_NEW_64: "#054883",
+              BLUE_NEW_65: "#06467e",
+              BLUE_NEW_66: "#074379",
+              BLUE_NEW_67: "#084074",
+              BLUE_NEW_68: "#083e6f",
+              BLUE_NEW_69: "#093b6a",
+              BLUE_NEW_7: "#bad9fa",
+              BLUE_NEW_70: "#093965",
+              BLUE_NEW_71: "#093660",
+              BLUE_NEW_72: "#09345c",
+              BLUE_NEW_73: "#093258",
+              BLUE_NEW_74: "#093053",
+              BLUE_NEW_75: "#092d4f",
+              BLUE_NEW_76: "#092b4b",
+              BLUE_NEW_77: "#092948",
+              BLUE_NEW_78: "#082744",
+              BLUE_NEW_79: "#082540",
+              BLUE_NEW_8: "#b6d7fa",
+              BLUE_NEW_80: "#08233d",
+              BLUE_NEW_81: "#072139",
+              BLUE_NEW_82: "#071f36",
+              BLUE_NEW_83: "#071d33",
+              BLUE_NEW_84: "#061b30",
+              BLUE_NEW_85: "#06192d",
+              BLUE_NEW_86: "#06182a",
+              BLUE_NEW_87: "#051627",
+              BLUE_NEW_88: "#051424",
+              BLUE_NEW_89: "#041321",
+              BLUE_NEW_9: "#b1d4f9",
+              BLUE_NEW_90: "#04111f",
+              BLUE_NEW_91: "#040f1c",
+              BLUE_NEW_92: "#030e1a",
+              BLUE_NEW_93: "#030c17",
               BLUE_NEW_94: "#030b15",
-              BLUE_NEW_95: "#030913",
-              BLUE_NEW_96: "#030811",
+              BLUE_NEW_95: "#020913",
+              BLUE_NEW_96: "#020811",
               BLUE_NEW_97: "#02070f",
               BLUE_NEW_98: "#02060d",
-              BLUE_NEW_99: "#02050b",
+              BLUE_NEW_99: "#01050b",
               BLURPLE_1: "#dfe7ff",
               BLURPLE_10: "#becdfe",
               BLURPLE_100: "#030409",
@@ -16009,106 +16009,106 @@
               BLURPLE_97: "#040610",
               BLURPLE_98: "#04050e",
               BLURPLE_99: "#03050b",
-              GREEN_NEW_1: "#d8ebd8",
-              GREEN_NEW_10: "#b0d6b2",
-              GREEN_NEW_100: "#020502",
-              GREEN_NEW_11: "#acd4ae",
-              GREEN_NEW_12: "#a8d2ab",
-              GREEN_NEW_13: "#a3d0a7",
-              GREEN_NEW_14: "#9fcda3",
-              GREEN_NEW_15: "#9bcb9f",
-              GREEN_NEW_16: "#97c99c",
-              GREEN_NEW_17: "#93c798",
-              GREEN_NEW_18: "#8fc595",
-              GREEN_NEW_19: "#8bc291",
-              GREEN_NEW_2: "#d3e9d4",
-              GREEN_NEW_20: "#88c08e",
-              GREEN_NEW_21: "#84be8a",
-              GREEN_NEW_22: "#80bc87",
-              GREEN_NEW_23: "#7cba84",
-              GREEN_NEW_24: "#78b880",
-              GREEN_NEW_25: "#74b67d",
-              GREEN_NEW_26: "#71b47a",
-              GREEN_NEW_27: "#6db277",
-              GREEN_NEW_28: "#69af74",
-              GREEN_NEW_29: "#66ad71",
-              GREEN_NEW_3: "#cfe7d0",
-              GREEN_NEW_30: "#62ab6e",
-              GREEN_NEW_31: "#5ea96b",
-              GREEN_NEW_32: "#5ba768",
-              GREEN_NEW_33: "#57a565",
-              GREEN_NEW_34: "#53a462",
-              GREEN_NEW_35: "#4fa260",
-              GREEN_NEW_36: "#4ca05d",
-              GREEN_NEW_37: "#489e5a",
-              GREEN_NEW_38: "#449c58",
-              GREEN_NEW_39: "#409a55",
-              GREEN_NEW_4: "#cae4cb",
-              GREEN_NEW_40: "#3c9852",
-              GREEN_NEW_41: "#389650",
-              GREEN_NEW_42: "#34944d",
-              GREEN_NEW_43: "#30924b",
-              GREEN_NEW_44: "#2b9148",
-              GREEN_NEW_45: "#268f46",
-              GREEN_NEW_46: "#218d43",
-              GREEN_NEW_47: "#1b8b41",
-              GREEN_NEW_48: "#148a3f",
-              GREEN_NEW_49: "#0b883c",
-              GREEN_NEW_5: "#c6e2c7",
+              GREEN_NEW_1: "#d5ecd8",
+              GREEN_NEW_10: "#aad7b2",
+              GREEN_NEW_100: "#010502",
+              GREEN_NEW_11: "#a5d4ae",
+              GREEN_NEW_12: "#a1d2ab",
+              GREEN_NEW_13: "#9cd0a7",
+              GREEN_NEW_14: "#98cea3",
+              GREEN_NEW_15: "#93cc9f",
+              GREEN_NEW_16: "#8fc99c",
+              GREEN_NEW_17: "#8bc798",
+              GREEN_NEW_18: "#86c595",
+              GREEN_NEW_19: "#82c391",
+              GREEN_NEW_2: "#d0e9d4",
+              GREEN_NEW_20: "#7ec18e",
+              GREEN_NEW_21: "#79be8a",
+              GREEN_NEW_22: "#75bc87",
+              GREEN_NEW_23: "#71ba84",
+              GREEN_NEW_24: "#6cb880",
+              GREEN_NEW_25: "#68b67d",
+              GREEN_NEW_26: "#64b47a",
+              GREEN_NEW_27: "#60b277",
+              GREEN_NEW_28: "#5bb074",
+              GREEN_NEW_29: "#57ae71",
+              GREEN_NEW_3: "#cbe7d0",
+              GREEN_NEW_30: "#52ac6e",
+              GREEN_NEW_31: "#4eaa6b",
+              GREEN_NEW_32: "#49a868",
+              GREEN_NEW_33: "#45a665",
+              GREEN_NEW_34: "#40a463",
+              GREEN_NEW_35: "#3ba260",
+              GREEN_NEW_36: "#36a05d",
+              GREEN_NEW_37: "#309e5a",
+              GREEN_NEW_38: "#2a9c58",
+              GREEN_NEW_39: "#249a55",
+              GREEN_NEW_4: "#c6e5cb",
+              GREEN_NEW_40: "#1d9853",
+              GREEN_NEW_41: "#139750",
+              GREEN_NEW_42: "#05954e",
+              GREEN_NEW_43: "#00934b",
+              GREEN_NEW_44: "#009149",
+              GREEN_NEW_45: "#008f46",
+              GREEN_NEW_46: "#008d44",
+              GREEN_NEW_47: "#008c41",
+              GREEN_NEW_48: "#008a3f",
+              GREEN_NEW_49: "#00883d",
+              GREEN_NEW_5: "#c1e2c7",
               GREEN_NEW_50: "#00863a",
-              GREEN_NEW_51: "#048238",
-              GREEN_NEW_52: "#087d37",
-              GREEN_NEW_53: "#0b7935",
-              GREEN_NEW_54: "#0d7534",
-              GREEN_NEW_55: "#0f7132",
-              GREEN_NEW_56: "#106d31",
-              GREEN_NEW_57: "#116a2f",
-              GREEN_NEW_58: "#12662e",
-              GREEN_NEW_59: "#13622c",
-              GREEN_NEW_6: "#c1e0c3",
-              GREEN_NEW_60: "#135f2b",
-              GREEN_NEW_61: "#135b29",
-              GREEN_NEW_62: "#145828",
-              GREEN_NEW_63: "#145426",
-              GREEN_NEW_64: "#135125",
-              GREEN_NEW_65: "#134e24",
-              GREEN_NEW_66: "#134b22",
-              GREEN_NEW_67: "#134821",
-              GREEN_NEW_68: "#124520",
-              GREEN_NEW_69: "#12421e",
-              GREEN_NEW_7: "#bdddbe",
-              GREEN_NEW_70: "#123f1d",
-              GREEN_NEW_71: "#113d1c",
-              GREEN_NEW_72: "#113a1b",
-              GREEN_NEW_73: "#103719",
-              GREEN_NEW_74: "#103518",
-              GREEN_NEW_75: "#0f3217",
-              GREEN_NEW_76: "#0e3016",
-              GREEN_NEW_77: "#0e2d15",
-              GREEN_NEW_78: "#0d2b13",
-              GREEN_NEW_79: "#0c2912",
-              GREEN_NEW_8: "#b8dbba",
-              GREEN_NEW_80: "#0c2711",
-              GREEN_NEW_81: "#0b2410",
-              GREEN_NEW_82: "#0a220f",
-              GREEN_NEW_83: "#0a200e",
-              GREEN_NEW_84: "#091e0d",
-              GREEN_NEW_85: "#081c0c",
-              GREEN_NEW_86: "#081a0b",
-              GREEN_NEW_87: "#07180a",
-              GREEN_NEW_88: "#061609",
-              GREEN_NEW_89: "#061508",
-              GREEN_NEW_9: "#b4d9b6",
-              GREEN_NEW_90: "#051307",
-              GREEN_NEW_91: "#051106",
-              GREEN_NEW_92: "#041006",
-              GREEN_NEW_93: "#040e05",
-              GREEN_NEW_94: "#030c04",
-              GREEN_NEW_95: "#030b04",
-              GREEN_NEW_96: "#030903",
+              GREEN_NEW_51: "#008239",
+              GREEN_NEW_52: "#007e37",
+              GREEN_NEW_53: "#007a36",
+              GREEN_NEW_54: "#007534",
+              GREEN_NEW_55: "#007132",
+              GREEN_NEW_56: "#006e31",
+              GREEN_NEW_57: "#006a2f",
+              GREEN_NEW_58: "#00662e",
+              GREEN_NEW_59: "#00622c",
+              GREEN_NEW_6: "#bde0c3",
+              GREEN_NEW_60: "#005f2b",
+              GREEN_NEW_61: "#005b29",
+              GREEN_NEW_62: "#005828",
+              GREEN_NEW_63: "#005527",
+              GREEN_NEW_64: "#005125",
+              GREEN_NEW_65: "#004e24",
+              GREEN_NEW_66: "#004b22",
+              GREEN_NEW_67: "#004821",
+              GREEN_NEW_68: "#004520",
+              GREEN_NEW_69: "#00421e",
+              GREEN_NEW_7: "#b8debf",
+              GREEN_NEW_70: "#01401d",
+              GREEN_NEW_71: "#023d1c",
+              GREEN_NEW_72: "#033a1b",
+              GREEN_NEW_73: "#033719",
+              GREEN_NEW_74: "#043518",
+              GREEN_NEW_75: "#043217",
+              GREEN_NEW_76: "#053016",
+              GREEN_NEW_77: "#052e15",
+              GREEN_NEW_78: "#052b13",
+              GREEN_NEW_79: "#052912",
+              GREEN_NEW_8: "#b3dbba",
+              GREEN_NEW_80: "#052711",
+              GREEN_NEW_81: "#052410",
+              GREEN_NEW_82: "#05220f",
+              GREEN_NEW_83: "#05200e",
+              GREEN_NEW_84: "#041e0d",
+              GREEN_NEW_85: "#041c0c",
+              GREEN_NEW_86: "#041a0b",
+              GREEN_NEW_87: "#04180a",
+              GREEN_NEW_88: "#041709",
+              GREEN_NEW_89: "#031508",
+              GREEN_NEW_9: "#afd9b6",
+              GREEN_NEW_90: "#031307",
+              GREEN_NEW_91: "#031106",
+              GREEN_NEW_92: "#031006",
+              GREEN_NEW_93: "#020e05",
+              GREEN_NEW_94: "#020c04",
+              GREEN_NEW_95: "#020b04",
+              GREEN_NEW_96: "#020903",
               GREEN_NEW_97: "#020803",
-              GREEN_NEW_98: "#020702",
-              GREEN_NEW_99: "#020602",
+              GREEN_NEW_98: "#010702",
+              GREEN_NEW_99: "#010602",
               NEUTRAL_1: "#fff",
               NEUTRAL_10: "#d3d3d7",
               NEUTRAL_100: "#020203",
@@ -16209,106 +16209,106 @@
               NEUTRAL_97: "#040405",
               NEUTRAL_98: "#030304",
               NEUTRAL_99: "#030303",
-              ORANGE_NEW_1: "#fde0ce",
-              ORANGE_NEW_10: "#f6c09f",
-              ORANGE_NEW_100: "#080301",
-              ORANGE_NEW_11: "#f5bd9a",
-              ORANGE_NEW_12: "#f4ba95",
-              ORANGE_NEW_13: "#f3b691",
-              ORANGE_NEW_14: "#f1b38c",
-              ORANGE_NEW_15: "#f0b088",
-              ORANGE_NEW_16: "#efad83",
-              ORANGE_NEW_17: "#eea97f",
-              ORANGE_NEW_18: "#eda67b",
-              ORANGE_NEW_19: "#eba376",
-              ORANGE_NEW_2: "#fcddc8",
-              ORANGE_NEW_20: "#eaa072",
-              ORANGE_NEW_21: "#e99d6e",
-              ORANGE_NEW_22: "#e89a6a",
-              ORANGE_NEW_23: "#e69766",
-              ORANGE_NEW_24: "#e59463",
-              ORANGE_NEW_25: "#e4915f",
-              ORANGE_NEW_26: "#e28e5b",
-              ORANGE_NEW_27: "#e18b57",
-              ORANGE_NEW_28: "#df8854",
-              ORANGE_NEW_29: "#de8550",
-              ORANGE_NEW_3: "#fbd9c3",
-              ORANGE_NEW_30: "#dc834d",
-              ORANGE_NEW_31: "#db8049",
-              ORANGE_NEW_32: "#d97d46",
-              ORANGE_NEW_33: "#d87a42",
-              ORANGE_NEW_34: "#d6783f",
-              ORANGE_NEW_35: "#d5753b",
-              ORANGE_NEW_36: "#d37238",
-              ORANGE_NEW_37: "#d27035",
-              ORANGE_NEW_38: "#d06d31",
-              ORANGE_NEW_39: "#cf6a2e",
-              ORANGE_NEW_4: "#fbd5bd",
-              ORANGE_NEW_40: "#cd682a",
-              ORANGE_NEW_41: "#cb6527",
-              ORANGE_NEW_42: "#ca6323",
-              ORANGE_NEW_43: "#c86020",
-              ORANGE_NEW_44: "#c75e1c",
-              ORANGE_NEW_45: "#c55b18",
-              ORANGE_NEW_46: "#c35914",
-              ORANGE_NEW_47: "#c25610",
-              ORANGE_NEW_48: "#c0540b",
-              ORANGE_NEW_49: "#bf5105",
-              ORANGE_NEW_5: "#fad2b8",
+              ORANGE_NEW_1: "#fde1ca",
+              ORANGE_NEW_10: "#f5c197",
+              ORANGE_NEW_100: "#080300",
+              ORANGE_NEW_11: "#f4be92",
+              ORANGE_NEW_12: "#f3ba8d",
+              ORANGE_NEW_13: "#f2b788",
+              ORANGE_NEW_14: "#f1b484",
+              ORANGE_NEW_15: "#f0b07f",
+              ORANGE_NEW_16: "#efad7a",
+              ORANGE_NEW_17: "#eeaa76",
+              ORANGE_NEW_18: "#eca771",
+              ORANGE_NEW_19: "#eba46d",
+              ORANGE_NEW_2: "#fcddc4",
+              ORANGE_NEW_20: "#eaa068",
+              ORANGE_NEW_21: "#e99d64",
+              ORANGE_NEW_22: "#e79a60",
+              ORANGE_NEW_23: "#e6975b",
+              ORANGE_NEW_24: "#e59457",
+              ORANGE_NEW_25: "#e39153",
+              ORANGE_NEW_26: "#e28e4f",
+              ORANGE_NEW_27: "#e08b4b",
+              ORANGE_NEW_28: "#df8947",
+              ORANGE_NEW_29: "#dd8643",
+              ORANGE_NEW_3: "#fbd9be",
+              ORANGE_NEW_30: "#dc833f",
+              ORANGE_NEW_31: "#db803b",
+              ORANGE_NEW_32: "#d97d37",
+              ORANGE_NEW_33: "#d87b33",
+              ORANGE_NEW_34: "#d6782f",
+              ORANGE_NEW_35: "#d4752b",
+              ORANGE_NEW_36: "#d37227",
+              ORANGE_NEW_37: "#d17023",
+              ORANGE_NEW_38: "#d06d1f",
+              ORANGE_NEW_39: "#ce6a1a",
+              ORANGE_NEW_4: "#fbd6b8",
+              ORANGE_NEW_40: "#cd6815",
+              ORANGE_NEW_41: "#cb650f",
+              ORANGE_NEW_42: "#ca6308",
+              ORANGE_NEW_43: "#c86001",
+              ORANGE_NEW_44: "#c65e00",
+              ORANGE_NEW_45: "#c55b00",
+              ORANGE_NEW_46: "#c35900",
+              ORANGE_NEW_47: "#c15600",
+              ORANGE_NEW_48: "#c05400",
+              ORANGE_NEW_49: "#be5100",
+              ORANGE_NEW_5: "#fad2b2",
               ORANGE_NEW_50: "#bd4f00",
-              ORANGE_NEW_51: "#b74d01",
-              ORANGE_NEW_52: "#b14b03",
-              ORANGE_NEW_53: "#ab4804",
-              ORANGE_NEW_54: "#a54604",
-              ORANGE_NEW_55: "#9f4405",
-              ORANGE_NEW_56: "#9a4206",
-              ORANGE_NEW_57: "#944006",
-              ORANGE_NEW_58: "#8f3e07",
-              ORANGE_NEW_59: "#8a3c07",
-              ORANGE_NEW_6: "#f9ceb3",
-              ORANGE_NEW_60: "#853a07",
-              ORANGE_NEW_61: "#803808",
-              ORANGE_NEW_62: "#7b3608",
-              ORANGE_NEW_63: "#763408",
-              ORANGE_NEW_64: "#723208",
-              ORANGE_NEW_65: "#6d3108",
-              ORANGE_NEW_66: "#692f08",
-              ORANGE_NEW_67: "#652d08",
-              ORANGE_NEW_68: "#612b08",
-              ORANGE_NEW_69: "#5d2a07",
-              ORANGE_NEW_7: "#f8cbae",
-              ORANGE_NEW_70: "#592807",
-              ORANGE_NEW_71: "#552607",
-              ORANGE_NEW_72: "#512507",
-              ORANGE_NEW_73: "#4d2307",
-              ORANGE_NEW_74: "#4a2106",
-              ORANGE_NEW_75: "#462006",
-              ORANGE_NEW_76: "#431e06",
-              ORANGE_NEW_77: "#401d06",
-              ORANGE_NEW_78: "#3d1b05",
-              ORANGE_NEW_79: "#3a1a05",
-              ORANGE_NEW_8: "#f8c7a8",
-              ORANGE_NEW_80: "#361805",
-              ORANGE_NEW_81: "#341704",
-              ORANGE_NEW_82: "#311504",
-              ORANGE_NEW_83: "#2e1404",
-              ORANGE_NEW_84: "#2b1304",
-              ORANGE_NEW_85: "#281103",
-              ORANGE_NEW_86: "#261003",
-              ORANGE_NEW_87: "#230f03",
-              ORANGE_NEW_88: "#210e03",
-              ORANGE_NEW_89: "#1e0c03",
-              ORANGE_NEW_9: "#f7c4a4",
-              ORANGE_NEW_90: "#1c0b02",
-              ORANGE_NEW_91: "#1a0a02",
-              ORANGE_NEW_92: "#180902",
-              ORANGE_NEW_93: "#150802",
-              ORANGE_NEW_94: "#130702",
+              ORANGE_NEW_51: "#b64d00",
+              ORANGE_NEW_52: "#b04a00",
+              ORANGE_NEW_53: "#aa4800",
+              ORANGE_NEW_54: "#a44600",
+              ORANGE_NEW_55: "#9f4400",
+              ORANGE_NEW_56: "#994200",
+              ORANGE_NEW_57: "#944000",
+              ORANGE_NEW_58: "#8f3e00",
+              ORANGE_NEW_59: "#893c00",
+              ORANGE_NEW_6: "#f9cfad",
+              ORANGE_NEW_60: "#843a00",
+              ORANGE_NEW_61: "#7f3800",
+              ORANGE_NEW_62: "#7b3600",
+              ORANGE_NEW_63: "#763400",
+              ORANGE_NEW_64: "#713200",
+              ORANGE_NEW_65: "#6d3100",
+              ORANGE_NEW_66: "#692f00",
+              ORANGE_NEW_67: "#652d00",
+              ORANGE_NEW_68: "#602b00",
+              ORANGE_NEW_69: "#5c2a00",
+              ORANGE_NEW_7: "#f8cba7",
+              ORANGE_NEW_70: "#582800",
+              ORANGE_NEW_71: "#552600",
+              ORANGE_NEW_72: "#512500",
+              ORANGE_NEW_73: "#4d2300",
+              ORANGE_NEW_74: "#4a2100",
+              ORANGE_NEW_75: "#462000",
+              ORANGE_NEW_76: "#431e01",
+              ORANGE_NEW_77: "#401d01",
+              ORANGE_NEW_78: "#3d1b01",
+              ORANGE_NEW_79: "#391a01",
+              ORANGE_NEW_8: "#f7c8a2",
+              ORANGE_NEW_80: "#361801",
+              ORANGE_NEW_81: "#331701",
+              ORANGE_NEW_82: "#311601",
+              ORANGE_NEW_83: "#2e1401",
+              ORANGE_NEW_84: "#2b1301",
+              ORANGE_NEW_85: "#281101",
+              ORANGE_NEW_86: "#261001",
+              ORANGE_NEW_87: "#230f01",
+              ORANGE_NEW_88: "#210e01",
+              ORANGE_NEW_89: "#1e0c01",
+              ORANGE_NEW_9: "#f6c49d",
+              ORANGE_NEW_90: "#1c0b01",
+              ORANGE_NEW_91: "#1a0a01",
+              ORANGE_NEW_92: "#180901",
+              ORANGE_NEW_93: "#150801",
+              ORANGE_NEW_94: "#130701",
               ORANGE_NEW_95: "#110601",
               ORANGE_NEW_96: "#0f0501",
               ORANGE_NEW_97: "#0d0401",
               ORANGE_NEW_98: "#0b0401",
-              ORANGE_NEW_99: "#0a0301",
+              ORANGE_NEW_99: "#0a0300",
               RED_NEW_1: "#ffdad4",
               RED_NEW_10: "#ffb4aa",
               RED_NEW_100: "#0b0201",
@@ -16321,8 +16321,8 @@
               RED_NEW_17: "#ff988d",
               RED_NEW_18: "#ff9489",
               RED_NEW_19: "#ff9085",
-              RED_NEW_2: "#ffd5cf",
-              RED_NEW_20: "#ff8c82",
+              RED_NEW_2: "#ffd5ce",
+              RED_NEW_20: "#ff8c81",
               RED_NEW_21: "#ff887e",
               RED_NEW_22: "#ff857a",
               RED_NEW_23: "#ff8177",
@@ -16338,29 +16338,29 @@
               RED_NEW_32: "#fa605a",
               RED_NEW_33: "#f85d57",
               RED_NEW_34: "#f75954",
-              RED_NEW_35: "#f65651",
+              RED_NEW_35: "#f55651",
               RED_NEW_36: "#f4524e",
               RED_NEW_37: "#f34e4b",
-              RED_NEW_38: "#f14b49",
+              RED_NEW_38: "#f14b48",
               RED_NEW_39: "#f04746",
               RED_NEW_4: "#ffcdc5",
               RED_NEW_40: "#ee4343",
-              RED_NEW_41: "#ed3f40",
+              RED_NEW_41: "#ec4040",
               RED_NEW_42: "#eb3c3e",
               RED_NEW_43: "#e9383b",
-              RED_NEW_44: "#e83339",
+              RED_NEW_44: "#e83439",
               RED_NEW_45: "#e62f36",
-              RED_NEW_46: "#e52b34",
+              RED_NEW_46: "#e42b34",
               RED_NEW_47: "#e32631",
               RED_NEW_48: "#e1212f",
               RED_NEW_49: "#e01b2c",
               RED_NEW_5: "#ffc9c0",
               RED_NEW_50: "#de142a",
-              RED_NEW_51: "#d71629",
+              RED_NEW_51: "#d61629",
               RED_NEW_52: "#cf1728",
               RED_NEW_53: "#c81827",
               RED_NEW_54: "#c11926",
-              RED_NEW_55: "#bb1925",
+              RED_NEW_55: "#bb1a24",
               RED_NEW_56: "#b41a23",
               RED_NEW_57: "#ae1a22",
               RED_NEW_58: "#a81a21",
@@ -16371,19 +16371,19 @@
               RED_NEW_62: "#901a1d",
               RED_NEW_63: "#8b191c",
               RED_NEW_64: "#86191b",
-              RED_NEW_65: "#80181a",
+              RED_NEW_65: "#80191a",
               RED_NEW_66: "#7b1819",
               RED_NEW_67: "#761718",
               RED_NEW_68: "#721717",
               RED_NEW_69: "#6d1616",
               RED_NEW_7: "#ffc1b8",
-              RED_NEW_70: "#681515",
+              RED_NEW_70: "#681615",
               RED_NEW_71: "#641514",
               RED_NEW_72: "#601413",
               RED_NEW_73: "#5b1312",
               RED_NEW_74: "#571311",
               RED_NEW_75: "#531210",
-              RED_NEW_76: "#4f1110",
+              RED_NEW_76: "#4f110f",
               RED_NEW_77: "#4b100f",
               RED_NEW_78: "#48100e",
               RED_NEW_79: "#440f0d",
@@ -16396,7 +16396,7 @@
               RED_NEW_85: "#300a08",
               RED_NEW_86: "#2d0907",
               RED_NEW_87: "#2a0806",
-              RED_NEW_88: "#280706",
+              RED_NEW_88: "#270706",
               RED_NEW_89: "#250705",
               RED_NEW_9: "#ffb8af",
               RED_NEW_90: "#220605",
@@ -16409,206 +16409,206 @@
               RED_NEW_97: "#110302",
               RED_NEW_98: "#0f0202",
               RED_NEW_99: "#0d0202",
-              TEAL_NEW_1: "#d9eaeb",
-              TEAL_NEW_10: "#b1d3d6",
-              TEAL_NEW_100: "#020405",
-              TEAL_NEW_11: "#add1d4",
-              TEAL_NEW_12: "#a9ced2",
-              TEAL_NEW_13: "#a5ccd0",
-              TEAL_NEW_14: "#a1c9cd",
-              TEAL_NEW_15: "#9dc7cb",
-              TEAL_NEW_16: "#99c5c9",
-              TEAL_NEW_17: "#95c3c7",
-              TEAL_NEW_18: "#91c0c5",
-              TEAL_NEW_19: "#8dbec3",
-              TEAL_NEW_2: "#d4e7e9",
-              TEAL_NEW_20: "#89bcc1",
-              TEAL_NEW_21: "#85babf",
-              TEAL_NEW_22: "#82b7bd",
-              TEAL_NEW_23: "#7eb5bb",
-              TEAL_NEW_24: "#7ab3b9",
-              TEAL_NEW_25: "#76b1b7",
-              TEAL_NEW_26: "#73afb5",
-              TEAL_NEW_27: "#6fadb3",
-              TEAL_NEW_28: "#6babb1",
-              TEAL_NEW_29: "#67a9af",
-              TEAL_NEW_3: "#d0e4e6",
-              TEAL_NEW_30: "#64a6ad",
-              TEAL_NEW_31: "#60a4ab",
-              TEAL_NEW_32: "#5ca2a9",
-              TEAL_NEW_33: "#59a0a7",
-              TEAL_NEW_34: "#559ea6",
-              TEAL_NEW_35: "#519da4",
-              TEAL_NEW_36: "#4d9ba2",
-              TEAL_NEW_37: "#4999a0",
-              TEAL_NEW_38: "#46979e",
-              TEAL_NEW_39: "#42959d",
-              TEAL_NEW_4: "#cbe2e4",
-              TEAL_NEW_40: "#3e939b",
-              TEAL_NEW_41: "#3a9199",
-              TEAL_NEW_42: "#358f97",
-              TEAL_NEW_43: "#318d96",
-              TEAL_NEW_44: "#2c8c94",
-              TEAL_NEW_45: "#278a92",
-              TEAL_NEW_46: "#228891",
-              TEAL_NEW_47: "#1c868f",
-              TEAL_NEW_48: "#15848d",
-              TEAL_NEW_49: "#0c838c",
-              TEAL_NEW_5: "#c7dfe2",
+              TEAL_NEW_1: "#d2ebed",
+              TEAL_NEW_10: "#a3d5d9",
+              TEAL_NEW_100: "#010505",
+              TEAL_NEW_11: "#9ed3d7",
+              TEAL_NEW_12: "#99d0d5",
+              TEAL_NEW_13: "#94ced3",
+              TEAL_NEW_14: "#8fccd1",
+              TEAL_NEW_15: "#8acacf",
+              TEAL_NEW_16: "#85c7cd",
+              TEAL_NEW_17: "#80c5cb",
+              TEAL_NEW_18: "#7bc3c9",
+              TEAL_NEW_19: "#76c1c7",
+              TEAL_NEW_2: "#cde8ea",
+              TEAL_NEW_20: "#70bfc5",
+              TEAL_NEW_21: "#6bbcc3",
+              TEAL_NEW_22: "#66bac1",
+              TEAL_NEW_23: "#61b8bf",
+              TEAL_NEW_24: "#5bb6be",
+              TEAL_NEW_25: "#56b4bc",
+              TEAL_NEW_26: "#50b2ba",
+              TEAL_NEW_27: "#4ab0b8",
+              TEAL_NEW_28: "#44aeb6",
+              TEAL_NEW_29: "#3eacb4",
+              TEAL_NEW_3: "#c8e6e8",
+              TEAL_NEW_30: "#37aab3",
+              TEAL_NEW_31: "#2fa8b1",
+              TEAL_NEW_32: "#26a6af",
+              TEAL_NEW_33: "#1ca4ad",
+              TEAL_NEW_34: "#0ca2ab",
+              TEAL_NEW_35: "#00a0aa",
+              TEAL_NEW_36: "#009ea8",
+              TEAL_NEW_37: "#009ca6",
+              TEAL_NEW_38: "#009aa5",
+              TEAL_NEW_39: "#0098a3",
+              TEAL_NEW_4: "#c2e3e6",
+              TEAL_NEW_40: "#0096a1",
+              TEAL_NEW_41: "#00949f",
+              TEAL_NEW_42: "#00929d",
+              TEAL_NEW_43: "#00909a",
+              TEAL_NEW_44: "#008e98",
+              TEAL_NEW_45: "#008c96",
+              TEAL_NEW_46: "#008993",
+              TEAL_NEW_47: "#008791",
+              TEAL_NEW_48: "#00858f",
+              TEAL_NEW_49: "#00838c",
+              TEAL_NEW_5: "#bde1e4",
               TEAL_NEW_50: "#00818a",
-              TEAL_NEW_51: "#057d85",
-              TEAL_NEW_52: "#087981",
-              TEAL_NEW_53: "#0c757d",
-              TEAL_NEW_54: "#0e7178",
-              TEAL_NEW_55: "#106d74",
-              TEAL_NEW_56: "#116970",
-              TEAL_NEW_57: "#12666c",
-              TEAL_NEW_58: "#136268",
-              TEAL_NEW_59: "#145e65",
-              TEAL_NEW_6: "#c2dddf",
-              TEAL_NEW_60: "#145b61",
-              TEAL_NEW_61: "#14585d",
-              TEAL_NEW_62: "#15545a",
-              TEAL_NEW_63: "#155156",
-              TEAL_NEW_64: "#144e53",
-              TEAL_NEW_65: "#144b50",
-              TEAL_NEW_66: "#14484d",
-              TEAL_NEW_67: "#14454a",
-              TEAL_NEW_68: "#134246",
-              TEAL_NEW_69: "#134043",
-              TEAL_NEW_7: "#bedadd",
-              TEAL_NEW_70: "#133d41",
-              TEAL_NEW_71: "#123a3e",
-              TEAL_NEW_72: "#11383b",
-              TEAL_NEW_73: "#113538",
-              TEAL_NEW_74: "#103336",
-              TEAL_NEW_75: "#103033",
-              TEAL_NEW_76: "#0f2e31",
-              TEAL_NEW_77: "#0e2c2e",
-              TEAL_NEW_78: "#0e292c",
-              TEAL_NEW_79: "#0d2729",
-              TEAL_NEW_8: "#bad8db",
-              TEAL_NEW_80: "#0c2527",
-              TEAL_NEW_81: "#0c2325",
-              TEAL_NEW_82: "#0b2123",
-              TEAL_NEW_83: "#0a1f21",
-              TEAL_NEW_84: "#091d1f",
-              TEAL_NEW_85: "#091b1d",
-              TEAL_NEW_86: "#08191b",
-              TEAL_NEW_87: "#071719",
-              TEAL_NEW_88: "#071517",
-              TEAL_NEW_89: "#061415",
-              TEAL_NEW_9: "#b6d5d9",
-              TEAL_NEW_90: "#061213",
-              TEAL_NEW_91: "#051011",
-              TEAL_NEW_92: "#050f10",
-              TEAL_NEW_93: "#040d0e",
-              TEAL_NEW_94: "#040c0c",
-              TEAL_NEW_95: "#030a0b",
-              TEAL_NEW_96: "#030909",
-              TEAL_NEW_97: "#020708",
-              TEAL_NEW_98: "#020607",
-              TEAL_NEW_99: "#020506",
-              YELLOW_NEW_1: "#f1e4ce",
-              YELLOW_NEW_10: "#e2c8a0",
-              YELLOW_NEW_100: "#060301",
-              YELLOW_NEW_11: "#e0c59b",
-              YELLOW_NEW_12: "#dec296",
-              YELLOW_NEW_13: "#ddc092",
-              YELLOW_NEW_14: "#dbbd8d",
-              YELLOW_NEW_15: "#d9ba89",
-              YELLOW_NEW_16: "#d8b784",
-              YELLOW_NEW_17: "#d6b480",
-              YELLOW_NEW_18: "#d4b17c",
-              YELLOW_NEW_19: "#d2af78",
-              YELLOW_NEW_2: "#f0e1c9",
-              YELLOW_NEW_20: "#d1ac74",
-              YELLOW_NEW_21: "#cfa970",
-              YELLOW_NEW_22: "#cda66c",
-              YELLOW_NEW_23: "#cba468",
-              YELLOW_NEW_24: "#caa164",
-              YELLOW_NEW_25: "#c89f60",
-              YELLOW_NEW_26: "#c69c5c",
-              YELLOW_NEW_27: "#c49959",
-              YELLOW_NEW_28: "#c39755",
-              YELLOW_NEW_29: "#c19451",
-              YELLOW_NEW_3: "#eedec3",
-              YELLOW_NEW_30: "#bf924e",
-              YELLOW_NEW_31: "#be8f4a",
-              YELLOW_NEW_32: "#bc8d47",
-              YELLOW_NEW_33: "#ba8b43",
-              YELLOW_NEW_34: "#b98840",
-              YELLOW_NEW_35: "#b7863c",
-              YELLOW_NEW_36: "#b58339",
-              YELLOW_NEW_37: "#b38136",
-              YELLOW_NEW_38: "#b27f32",
-              YELLOW_NEW_39: "#b07d2f",
-              YELLOW_NEW_4: "#ecdbbe",
-              YELLOW_NEW_40: "#ae7a2b",
-              YELLOW_NEW_41: "#ad7828",
-              YELLOW_NEW_42: "#ab7624",
-              YELLOW_NEW_43: "#a97421",
-              YELLOW_NEW_44: "#a8721d",
-              YELLOW_NEW_45: "#a66f19",
-              YELLOW_NEW_46: "#a56d15",
-              YELLOW_NEW_47: "#a36b11",
-              YELLOW_NEW_48: "#a1690b",
-              YELLOW_NEW_49: "#a06705",
-              YELLOW_NEW_5: "#ebd8b9",
-              YELLOW_NEW_50: "#9e6500",
-              YELLOW_NEW_51: "#996201",
-              YELLOW_NEW_52: "#945f03",
-              YELLOW_NEW_53: "#8f5c04",
-              YELLOW_NEW_54: "#8a5905",
-              YELLOW_NEW_55: "#855606",
-              YELLOW_NEW_56: "#805306",
-              YELLOW_NEW_57: "#7c5007",
-              YELLOW_NEW_58: "#774e07",
-              YELLOW_NEW_59: "#734b08",
-              YELLOW_NEW_6: "#e9d5b4",
-              YELLOW_NEW_60: "#6f4808",
-              YELLOW_NEW_61: "#6b4608",
-              YELLOW_NEW_62: "#674308",
-              YELLOW_NEW_63: "#634109",
-              YELLOW_NEW_64: "#5f3f09",
-              YELLOW_NEW_65: "#5b3c08",
-              YELLOW_NEW_66: "#583a08",
-              YELLOW_NEW_67: "#543808",
-              YELLOW_NEW_68: "#513508",
-              YELLOW_NEW_69: "#4d3308",
-              YELLOW_NEW_7: "#e7d1ae",
-              YELLOW_NEW_70: "#4a3108",
-              YELLOW_NEW_71: "#472f08",
-              YELLOW_NEW_72: "#442d07",
-              YELLOW_NEW_73: "#412b07",
-              YELLOW_NEW_74: "#3e2907",
-              YELLOW_NEW_75: "#3b2707",
-              YELLOW_NEW_76: "#382506",
-              YELLOW_NEW_77: "#352306",
-              YELLOW_NEW_78: "#322106",
-              YELLOW_NEW_79: "#301f05",
-              YELLOW_NEW_8: "#e5cea9",
-              YELLOW_NEW_80: "#2d1e05",
-              YELLOW_NEW_81: "#2b1c05",
-              YELLOW_NEW_82: "#281a05",
-              YELLOW_NEW_83: "#261904",
-              YELLOW_NEW_84: "#231704",
-              YELLOW_NEW_85: "#211504",
-              YELLOW_NEW_86: "#1f1403",
-              YELLOW_NEW_87: "#1d1203",
-              YELLOW_NEW_88: "#1b1103",
-              YELLOW_NEW_89: "#190f03",
-              YELLOW_NEW_9: "#e4cba5",
-              YELLOW_NEW_90: "#170e02",
-              YELLOW_NEW_91: "#150d02",
-              YELLOW_NEW_92: "#130b02",
-              YELLOW_NEW_93: "#110a02",
-              YELLOW_NEW_94: "#0f0902",
-              YELLOW_NEW_95: "#0d0801",
-              YELLOW_NEW_96: "#0c0601",
-              YELLOW_NEW_97: "#0a0601",
-              YELLOW_NEW_98: "#080501",
-              YELLOW_NEW_99: "#070401",
+              TEAL_NEW_51: "#007d86",
+              TEAL_NEW_52: "#007982",
+              TEAL_NEW_53: "#00757e",
+              TEAL_NEW_54: "#00727a",
+              TEAL_NEW_55: "#006e76",
+              TEAL_NEW_56: "#006a72",
+              TEAL_NEW_57: "#00676f",
+              TEAL_NEW_58: "#00636b",
+              TEAL_NEW_59: "#006067",
+              TEAL_NEW_6: "#b8dee2",
+              TEAL_NEW_60: "#005d64",
+              TEAL_NEW_61: "#005961",
+              TEAL_NEW_62: "#00565d",
+              TEAL_NEW_63: "#00535a",
+              TEAL_NEW_64: "#005057",
+              TEAL_NEW_65: "#004d54",
+              TEAL_NEW_66: "#004a50",
+              TEAL_NEW_67: "#00474d",
+              TEAL_NEW_68: "#00444a",
+              TEAL_NEW_69: "#004147",
+              TEAL_NEW_7: "#b3dce0",
+              TEAL_NEW_70: "#003f44",
+              TEAL_NEW_71: "#003c41",
+              TEAL_NEW_72: "#00393e",
+              TEAL_NEW_73: "#00373b",
+              TEAL_NEW_74: "#003438",
+              TEAL_NEW_75: "#003235",
+              TEAL_NEW_76: "#002f33",
+              TEAL_NEW_77: "#002d30",
+              TEAL_NEW_78: "#002a2e",
+              TEAL_NEW_79: "#00282b",
+              TEAL_NEW_8: "#addade",
+              TEAL_NEW_80: "#002629",
+              TEAL_NEW_81: "#002427",
+              TEAL_NEW_82: "#002224",
+              TEAL_NEW_83: "#002022",
+              TEAL_NEW_84: "#001e20",
+              TEAL_NEW_85: "#001c1e",
+              TEAL_NEW_86: "#001a1c",
+              TEAL_NEW_87: "#00181a",
+              TEAL_NEW_88: "#001618",
+              TEAL_NEW_89: "#001416",
+              TEAL_NEW_9: "#a8d7db",
+              TEAL_NEW_90: "#011314",
+              TEAL_NEW_91: "#011112",
+              TEAL_NEW_92: "#010f11",
+              TEAL_NEW_93: "#010e0f",
+              TEAL_NEW_94: "#010c0d",
+              TEAL_NEW_95: "#010a0c",
+              TEAL_NEW_96: "#01090a",
+              TEAL_NEW_97: "#010808",
+              TEAL_NEW_98: "#010707",
+              TEAL_NEW_99: "#010506",
+              YELLOW_NEW_1: "#f2e5c5",
+              YELLOW_NEW_10: "#e4c98d",
+              YELLOW_NEW_100: "#060300",
+              YELLOW_NEW_11: "#e2c687",
+              YELLOW_NEW_12: "#e1c382",
+              YELLOW_NEW_13: "#dfc07c",
+              YELLOW_NEW_14: "#ddbd77",
+              YELLOW_NEW_15: "#dcba72",
+              YELLOW_NEW_16: "#dab76d",
+              YELLOW_NEW_17: "#d9b468",
+              YELLOW_NEW_18: "#d7b163",
+              YELLOW_NEW_19: "#d5af5e",
+              YELLOW_NEW_2: "#f1e2be",
+              YELLOW_NEW_20: "#d4ac59",
+              YELLOW_NEW_21: "#d2a954",
+              YELLOW_NEW_22: "#d0a64f",
+              YELLOW_NEW_23: "#cfa44a",
+              YELLOW_NEW_24: "#cda145",
+              YELLOW_NEW_25: "#cb9e40",
+              YELLOW_NEW_26: "#ca9c3b",
+              YELLOW_NEW_27: "#c89936",
+              YELLOW_NEW_28: "#c69631",
+              YELLOW_NEW_29: "#c5942c",
+              YELLOW_NEW_3: "#efdfb7",
+              YELLOW_NEW_30: "#c39126",
+              YELLOW_NEW_31: "#c18f21",
+              YELLOW_NEW_32: "#c08c1a",
+              YELLOW_NEW_33: "#be8a13",
+              YELLOW_NEW_34: "#bc8709",
+              YELLOW_NEW_35: "#bb8500",
+              YELLOW_NEW_36: "#b98200",
+              YELLOW_NEW_37: "#b88000",
+              YELLOW_NEW_38: "#b67d00",
+              YELLOW_NEW_39: "#b47b00",
+              YELLOW_NEW_4: "#eedbb1",
+              YELLOW_NEW_40: "#b37900",
+              YELLOW_NEW_41: "#b17600",
+              YELLOW_NEW_42: "#af7400",
+              YELLOW_NEW_43: "#ae7200",
+              YELLOW_NEW_44: "#ac6f00",
+              YELLOW_NEW_45: "#aa6d00",
+              YELLOW_NEW_46: "#a96b00",
+              YELLOW_NEW_47: "#a76900",
+              YELLOW_NEW_48: "#a56700",
+              YELLOW_NEW_49: "#a36500",
+              YELLOW_NEW_5: "#ecd8ab",
+              YELLOW_NEW_50: "#a16300",
+              YELLOW_NEW_51: "#9c6000",
+              YELLOW_NEW_52: "#975d00",
+              YELLOW_NEW_53: "#925a00",
+              YELLOW_NEW_54: "#8d5700",
+              YELLOW_NEW_55: "#885400",
+              YELLOW_NEW_56: "#845100",
+              YELLOW_NEW_57: "#7f4f00",
+              YELLOW_NEW_58: "#7b4c00",
+              YELLOW_NEW_59: "#764900",
+              YELLOW_NEW_6: "#ead5a5",
+              YELLOW_NEW_60: "#724700",
+              YELLOW_NEW_61: "#6e4400",
+              YELLOW_NEW_62: "#6a4200",
+              YELLOW_NEW_63: "#664000",
+              YELLOW_NEW_64: "#623d00",
+              YELLOW_NEW_65: "#5e3b00",
+              YELLOW_NEW_66: "#5a3900",
+              YELLOW_NEW_67: "#563700",
+              YELLOW_NEW_68: "#533400",
+              YELLOW_NEW_69: "#4f3200",
+              YELLOW_NEW_7: "#e9d29f",
+              YELLOW_NEW_70: "#4c3000",
+              YELLOW_NEW_71: "#492e00",
+              YELLOW_NEW_72: "#462c00",
+              YELLOW_NEW_73: "#422a00",
+              YELLOW_NEW_74: "#3f2800",
+              YELLOW_NEW_75: "#3c2600",
+              YELLOW_NEW_76: "#392400",
+              YELLOW_NEW_77: "#372300",
+              YELLOW_NEW_78: "#342100",
+              YELLOW_NEW_79: "#311f00",
+              YELLOW_NEW_8: "#e7cf99",
+              YELLOW_NEW_80: "#2e1d00",
+              YELLOW_NEW_81: "#2c1c00",
+              YELLOW_NEW_82: "#291a00",
+              YELLOW_NEW_83: "#271800",
+              YELLOW_NEW_84: "#241700",
+              YELLOW_NEW_85: "#221500",
+              YELLOW_NEW_86: "#201400",
+              YELLOW_NEW_87: "#1e1200",
+              YELLOW_NEW_88: "#1c1100",
+              YELLOW_NEW_89: "#190f00",
+              YELLOW_NEW_9: "#e6cc93",
+              YELLOW_NEW_90: "#170e00",
+              YELLOW_NEW_91: "#150c00",
+              YELLOW_NEW_92: "#130b00",
+              YELLOW_NEW_93: "#120a00",
+              YELLOW_NEW_94: "#100900",
+              YELLOW_NEW_95: "#0e0700",
+              YELLOW_NEW_96: "#0c0600",
+              YELLOW_NEW_97: "#0a0600",
+              YELLOW_NEW_98: "#090500",
+              YELLOW_NEW_99: "#070400",
             },
           };
       },
@@ -17540,7 +17540,7 @@
             return a;
           },
           TC: function () {
-            return eb;
+            return ey;
           },
           U6: function () {
             return I;
@@ -17564,7 +17564,7 @@
             return o;
           },
           X6: function () {
-            return ey;
+            return eb;
           },
           X7: function () {
             return eC;
@@ -17661,8 +17661,8 @@
           M,
           G,
           m,
-          b,
           y,
+          b,
           v,
           w,
           B,
@@ -17737,21 +17737,21 @@
           (m.DISPLAY_EXTRABOLD = "ggsans-ExtraBold, NotoSans-ExtraBold"),
           (m.CODE_NORMAL = "ggmono-Normal, SourceCodePro-Normal"),
           (m.CODE_BOLD = "ggmono-Bold, SourceCodePro-Bold"),
-          ((b = a || (a = {})).ONLINE = "online"),
-          (b.OFFLINE = "offline"),
-          (b.IDLE = "idle"),
-          (b.DND = "dnd"),
-          (b.INVISIBLE = "invisible"),
-          (b.STREAMING = "streaming"),
-          (b.UNKNOWN = "unknown"),
-          ((y = _ || (_ = {})).CHILLING = "chilling"),
-          (y.GAMING = "gaming"),
-          (y.FOCUSING = "focusing"),
-          (y.BRB = "brb"),
-          (y.EATING = "eating"),
-          (y.IN_TRANSIT = "in-transit"),
-          (y.WATCHING = "watching"),
-          (y.CUSTOM = "custom"),
+          ((y = a || (a = {})).ONLINE = "online"),
+          (y.OFFLINE = "offline"),
+          (y.IDLE = "idle"),
+          (y.DND = "dnd"),
+          (y.INVISIBLE = "invisible"),
+          (y.STREAMING = "streaming"),
+          (y.UNKNOWN = "unknown"),
+          ((b = _ || (_ = {})).CHILLING = "chilling"),
+          (b.GAMING = "gaming"),
+          (b.FOCUSING = "focusing"),
+          (b.BRB = "brb"),
+          (b.EATING = "eating"),
+          (b.IN_TRANSIT = "in-transit"),
+          (b.WATCHING = "watching"),
+          (b.CUSTOM = "custom"),
           ((v = o || (o = {})).DESKTOP = "desktop"),
           (v.WEB = "web"),
           (v.MOBILE = "mobile"),
@@ -17918,8 +17918,8 @@
             eU.MANAGE_THREADS,
             eU.MODERATE_MEMBERS,
           ],
-          eb = eE.$e(...em),
-          ey = 1,
+          ey = eE.$e(...em),
+          eb = 1,
           ev = 6463,
           ew = 10,
           eB = "RpcApplicationLogger";
@@ -20339,106 +20339,106 @@
           "yellow-860": { hex: "#1c1002" },
           "yellow-900": { hex: "#160e02" },
           youtube: { hex: "#cb2120" },
-          "blue-new-1": { hex: "#d8e9fc" },
-          "blue-new-10": { hex: "#b0d2f9" },
+          "blue-new-1": { hex: "#d7e9fc" },
+          "blue-new-10": { hex: "#add2f9" },
           "blue-new-100": { hex: "#010409" },
-          "blue-new-11": { hex: "#abcff8" },
-          "blue-new-12": { hex: "#a7ccf8" },
-          "blue-new-13": { hex: "#a3caf7" },
-          "blue-new-14": { hex: "#9fc7f7" },
-          "blue-new-15": { hex: "#9bc5f6" },
-          "blue-new-16": { hex: "#97c2f6" },
-          "blue-new-17": { hex: "#93c0f6" },
-          "blue-new-18": { hex: "#8fbdf5" },
-          "blue-new-19": { hex: "#8bbbf5" },
-          "blue-new-2": { hex: "#d3e6fc" },
-          "blue-new-20": { hex: "#87b9f4" },
-          "blue-new-21": { hex: "#83b6f4" },
-          "blue-new-22": { hex: "#7fb4f3" },
-          "blue-new-23": { hex: "#7bb1f2" },
-          "blue-new-24": { hex: "#77aff2" },
-          "blue-new-25": { hex: "#74adf1" },
-          "blue-new-26": { hex: "#70aaf1" },
-          "blue-new-27": { hex: "#6ca8f0" },
-          "blue-new-28": { hex: "#68a6f0" },
-          "blue-new-29": { hex: "#65a3ef" },
-          "blue-new-3": { hex: "#cfe4fc" },
-          "blue-new-30": { hex: "#61a1ef" },
-          "blue-new-31": { hex: "#5d9fee" },
-          "blue-new-32": { hex: "#599cee" },
-          "blue-new-33": { hex: "#569aed" },
-          "blue-new-34": { hex: "#5298ec" },
-          "blue-new-35": { hex: "#4e95ec" },
-          "blue-new-36": { hex: "#4a93eb" },
-          "blue-new-37": { hex: "#4791eb" },
-          "blue-new-38": { hex: "#438fea" },
-          "blue-new-39": { hex: "#3f8cea" },
-          "blue-new-4": { hex: "#cae1fb" },
-          "blue-new-40": { hex: "#3b8ae9" },
-          "blue-new-41": { hex: "#3788e8" },
-          "blue-new-42": { hex: "#3386e8" },
-          "blue-new-43": { hex: "#2e83e7" },
-          "blue-new-44": { hex: "#2a81e7" },
-          "blue-new-45": { hex: "#257fe6" },
-          "blue-new-46": { hex: "#207de5" },
-          "blue-new-47": { hex: "#1a7be5" },
-          "blue-new-48": { hex: "#1378e4" },
-          "blue-new-49": { hex: "#0b76e4" },
-          "blue-new-5": { hex: "#c6defb" },
+          "blue-new-11": { hex: "#a8cff8" },
+          "blue-new-12": { hex: "#a4ccf8" },
+          "blue-new-13": { hex: "#a0caf8" },
+          "blue-new-14": { hex: "#9bc7f7" },
+          "blue-new-15": { hex: "#97c5f7" },
+          "blue-new-16": { hex: "#93c2f6" },
+          "blue-new-17": { hex: "#8fc0f6" },
+          "blue-new-18": { hex: "#8abdf5" },
+          "blue-new-19": { hex: "#86bbf5" },
+          "blue-new-2": { hex: "#d2e6fc" },
+          "blue-new-20": { hex: "#82b9f4" },
+          "blue-new-21": { hex: "#7eb6f4" },
+          "blue-new-22": { hex: "#7ab4f3" },
+          "blue-new-23": { hex: "#76b1f3" },
+          "blue-new-24": { hex: "#72aff2" },
+          "blue-new-25": { hex: "#6eadf2" },
+          "blue-new-26": { hex: "#6aaaf1" },
+          "blue-new-27": { hex: "#66a8f1" },
+          "blue-new-28": { hex: "#62a5f0" },
+          "blue-new-29": { hex: "#5ea3ef" },
+          "blue-new-3": { hex: "#cde4fc" },
+          "blue-new-30": { hex: "#5aa1ef" },
+          "blue-new-31": { hex: "#569eee" },
+          "blue-new-32": { hex: "#519cee" },
+          "blue-new-33": { hex: "#4d9aed" },
+          "blue-new-34": { hex: "#4997ed" },
+          "blue-new-35": { hex: "#4595ec" },
+          "blue-new-36": { hex: "#4193ec" },
+          "blue-new-37": { hex: "#3c91eb" },
+          "blue-new-38": { hex: "#388eea" },
+          "blue-new-39": { hex: "#338cea" },
+          "blue-new-4": { hex: "#c8e1fb" },
+          "blue-new-40": { hex: "#2e8ae9" },
+          "blue-new-41": { hex: "#2988e9" },
+          "blue-new-42": { hex: "#2385e8" },
+          "blue-new-43": { hex: "#1d83e7" },
+          "blue-new-44": { hex: "#1581e7" },
+          "blue-new-45": { hex: "#0b7fe6" },
+          "blue-new-46": { hex: "#007ce6" },
+          "blue-new-47": { hex: "#007ae5" },
+          "blue-new-48": { hex: "#0078e4" },
+          "blue-new-49": { hex: "#0076e4" },
+          "blue-new-5": { hex: "#c4defb" },
           "blue-new-50": { hex: "#0074e3" },
-          "blue-new-51": { hex: "#0471db" },
-          "blue-new-52": { hex: "#076dd3" },
-          "blue-new-53": { hex: "#096acb" },
-          "blue-new-54": { hex: "#0c66c4" },
-          "blue-new-55": { hex: "#0d63bc" },
-          "blue-new-56": { hex: "#0f60b5" },
-          "blue-new-57": { hex: "#105dae" },
-          "blue-new-58": { hex: "#105aa8" },
-          "blue-new-59": { hex: "#1157a1" },
-          "blue-new-6": { hex: "#c1dcfa" },
-          "blue-new-60": { hex: "#11549b" },
-          "blue-new-61": { hex: "#125195" },
-          "blue-new-62": { hex: "#124e8f" },
-          "blue-new-63": { hex: "#124b89" },
-          "blue-new-64": { hex: "#124883" },
-          "blue-new-65": { hex: "#12467e" },
-          "blue-new-66": { hex: "#124379" },
-          "blue-new-67": { hex: "#124073" },
-          "blue-new-68": { hex: "#113e6e" },
-          "blue-new-69": { hex: "#113b6a" },
-          "blue-new-7": { hex: "#bdd9fa" },
-          "blue-new-70": { hex: "#103965" },
-          "blue-new-71": { hex: "#103760" },
-          "blue-new-72": { hex: "#10345c" },
-          "blue-new-73": { hex: "#0f3258" },
-          "blue-new-74": { hex: "#0f3053" },
-          "blue-new-75": { hex: "#0e2d4f" },
-          "blue-new-76": { hex: "#0d2b4b" },
-          "blue-new-77": { hex: "#0d2948" },
-          "blue-new-78": { hex: "#0c2744" },
-          "blue-new-79": { hex: "#0c2540" },
-          "blue-new-8": { hex: "#b8d7fa" },
-          "blue-new-80": { hex: "#0b233d" },
-          "blue-new-81": { hex: "#0a2139" },
-          "blue-new-82": { hex: "#0a1f36" },
-          "blue-new-83": { hex: "#091d33" },
-          "blue-new-84": { hex: "#081b30" },
-          "blue-new-85": { hex: "#081a2d" },
-          "blue-new-86": { hex: "#07182a" },
-          "blue-new-87": { hex: "#071627" },
-          "blue-new-88": { hex: "#061424" },
-          "blue-new-89": { hex: "#061321" },
-          "blue-new-9": { hex: "#b4d4f9" },
-          "blue-new-90": { hex: "#05111f" },
-          "blue-new-91": { hex: "#050f1c" },
-          "blue-new-92": { hex: "#040e1a" },
-          "blue-new-93": { hex: "#040c17" },
+          "blue-new-51": { hex: "#0070db" },
+          "blue-new-52": { hex: "#006dd3" },
+          "blue-new-53": { hex: "#0069cb" },
+          "blue-new-54": { hex: "#0066c4" },
+          "blue-new-55": { hex: "#0063bc" },
+          "blue-new-56": { hex: "#0060b5" },
+          "blue-new-57": { hex: "#005dae" },
+          "blue-new-58": { hex: "#005aa8" },
+          "blue-new-59": { hex: "#0057a1" },
+          "blue-new-6": { hex: "#bfdcfb" },
+          "blue-new-60": { hex: "#00549b" },
+          "blue-new-61": { hex: "#005195" },
+          "blue-new-62": { hex: "#024e8f" },
+          "blue-new-63": { hex: "#044b89" },
+          "blue-new-64": { hex: "#054883" },
+          "blue-new-65": { hex: "#06467e" },
+          "blue-new-66": { hex: "#074379" },
+          "blue-new-67": { hex: "#084074" },
+          "blue-new-68": { hex: "#083e6f" },
+          "blue-new-69": { hex: "#093b6a" },
+          "blue-new-7": { hex: "#bad9fa" },
+          "blue-new-70": { hex: "#093965" },
+          "blue-new-71": { hex: "#093660" },
+          "blue-new-72": { hex: "#09345c" },
+          "blue-new-73": { hex: "#093258" },
+          "blue-new-74": { hex: "#093053" },
+          "blue-new-75": { hex: "#092d4f" },
+          "blue-new-76": { hex: "#092b4b" },
+          "blue-new-77": { hex: "#092948" },
+          "blue-new-78": { hex: "#082744" },
+          "blue-new-79": { hex: "#082540" },
+          "blue-new-8": { hex: "#b6d7fa" },
+          "blue-new-80": { hex: "#08233d" },
+          "blue-new-81": { hex: "#072139" },
+          "blue-new-82": { hex: "#071f36" },
+          "blue-new-83": { hex: "#071d33" },
+          "blue-new-84": { hex: "#061b30" },
+          "blue-new-85": { hex: "#06192d" },
+          "blue-new-86": { hex: "#06182a" },
+          "blue-new-87": { hex: "#051627" },
+          "blue-new-88": { hex: "#051424" },
+          "blue-new-89": { hex: "#041321" },
+          "blue-new-9": { hex: "#b1d4f9" },
+          "blue-new-90": { hex: "#04111f" },
+          "blue-new-91": { hex: "#040f1c" },
+          "blue-new-92": { hex: "#030e1a" },
+          "blue-new-93": { hex: "#030c17" },
           "blue-new-94": { hex: "#030b15" },
-          "blue-new-95": { hex: "#030913" },
-          "blue-new-96": { hex: "#030811" },
+          "blue-new-95": { hex: "#020913" },
+          "blue-new-96": { hex: "#020811" },
           "blue-new-97": { hex: "#02070f" },
           "blue-new-98": { hex: "#02060d" },
-          "blue-new-99": { hex: "#02050b" },
+          "blue-new-99": { hex: "#01050b" },
           "blurple-1": { hex: "#dfe7ff" },
           "blurple-10": { hex: "#becdfe" },
           "blurple-100": { hex: "#030409" },
@@ -20539,106 +20539,106 @@
           "blurple-97": { hex: "#040610" },
           "blurple-98": { hex: "#04050e" },
           "blurple-99": { hex: "#03050b" },
-          "green-new-1": { hex: "#d8ebd8" },
-          "green-new-10": { hex: "#b0d6b2" },
-          "green-new-100": { hex: "#020502" },
-          "green-new-11": { hex: "#acd4ae" },
-          "green-new-12": { hex: "#a8d2ab" },
-          "green-new-13": { hex: "#a3d0a7" },
-          "green-new-14": { hex: "#9fcda3" },
-          "green-new-15": { hex: "#9bcb9f" },
-          "green-new-16": { hex: "#97c99c" },
-          "green-new-17": { hex: "#93c798" },
-          "green-new-18": { hex: "#8fc595" },
-          "green-new-19": { hex: "#8bc291" },
-          "green-new-2": { hex: "#d3e9d4" },
-          "green-new-20": { hex: "#88c08e" },
-          "green-new-21": { hex: "#84be8a" },
-          "green-new-22": { hex: "#80bc87" },
-          "green-new-23": { hex: "#7cba84" },
-          "green-new-24": { hex: "#78b880" },
-          "green-new-25": { hex: "#74b67d" },
-          "green-new-26": { hex: "#71b47a" },
-          "green-new-27": { hex: "#6db277" },
-          "green-new-28": { hex: "#69af74" },
-          "green-new-29": { hex: "#66ad71" },
-          "green-new-3": { hex: "#cfe7d0" },
-          "green-new-30": { hex: "#62ab6e" },
-          "green-new-31": { hex: "#5ea96b" },
-          "green-new-32": { hex: "#5ba768" },
-          "green-new-33": { hex: "#57a565" },
-          "green-new-34": { hex: "#53a462" },
-          "green-new-35": { hex: "#4fa260" },
-          "green-new-36": { hex: "#4ca05d" },
-          "green-new-37": { hex: "#489e5a" },
-          "green-new-38": { hex: "#449c58" },
-          "green-new-39": { hex: "#409a55" },
-          "green-new-4": { hex: "#cae4cb" },
-          "green-new-40": { hex: "#3c9852" },
-          "green-new-41": { hex: "#389650" },
-          "green-new-42": { hex: "#34944d" },
-          "green-new-43": { hex: "#30924b" },
-          "green-new-44": { hex: "#2b9148" },
-          "green-new-45": { hex: "#268f46" },
-          "green-new-46": { hex: "#218d43" },
-          "green-new-47": { hex: "#1b8b41" },
-          "green-new-48": { hex: "#148a3f" },
-          "green-new-49": { hex: "#0b883c" },
-          "green-new-5": { hex: "#c6e2c7" },
+          "green-new-1": { hex: "#d5ecd8" },
+          "green-new-10": { hex: "#aad7b2" },
+          "green-new-100": { hex: "#010502" },
+          "green-new-11": { hex: "#a5d4ae" },
+          "green-new-12": { hex: "#a1d2ab" },
+          "green-new-13": { hex: "#9cd0a7" },
+          "green-new-14": { hex: "#98cea3" },
+          "green-new-15": { hex: "#93cc9f" },
+          "green-new-16": { hex: "#8fc99c" },
+          "green-new-17": { hex: "#8bc798" },
+          "green-new-18": { hex: "#86c595" },
+          "green-new-19": { hex: "#82c391" },
+          "green-new-2": { hex: "#d0e9d4" },
+          "green-new-20": { hex: "#7ec18e" },
+          "green-new-21": { hex: "#79be8a" },
+          "green-new-22": { hex: "#75bc87" },
+          "green-new-23": { hex: "#71ba84" },
+          "green-new-24": { hex: "#6cb880" },
+          "green-new-25": { hex: "#68b67d" },
+          "green-new-26": { hex: "#64b47a" },
+          "green-new-27": { hex: "#60b277" },
+          "green-new-28": { hex: "#5bb074" },
+          "green-new-29": { hex: "#57ae71" },
+          "green-new-3": { hex: "#cbe7d0" },
+          "green-new-30": { hex: "#52ac6e" },
+          "green-new-31": { hex: "#4eaa6b" },
+          "green-new-32": { hex: "#49a868" },
+          "green-new-33": { hex: "#45a665" },
+          "green-new-34": { hex: "#40a463" },
+          "green-new-35": { hex: "#3ba260" },
+          "green-new-36": { hex: "#36a05d" },
+          "green-new-37": { hex: "#309e5a" },
+          "green-new-38": { hex: "#2a9c58" },
+          "green-new-39": { hex: "#249a55" },
+          "green-new-4": { hex: "#c6e5cb" },
+          "green-new-40": { hex: "#1d9853" },
+          "green-new-41": { hex: "#139750" },
+          "green-new-42": { hex: "#05954e" },
+          "green-new-43": { hex: "#00934b" },
+          "green-new-44": { hex: "#009149" },
+          "green-new-45": { hex: "#008f46" },
+          "green-new-46": { hex: "#008d44" },
+          "green-new-47": { hex: "#008c41" },
+          "green-new-48": { hex: "#008a3f" },
+          "green-new-49": { hex: "#00883d" },
+          "green-new-5": { hex: "#c1e2c7" },
           "green-new-50": { hex: "#00863a" },
-          "green-new-51": { hex: "#048238" },
-          "green-new-52": { hex: "#087d37" },
-          "green-new-53": { hex: "#0b7935" },
-          "green-new-54": { hex: "#0d7534" },
-          "green-new-55": { hex: "#0f7132" },
-          "green-new-56": { hex: "#106d31" },
-          "green-new-57": { hex: "#116a2f" },
-          "green-new-58": { hex: "#12662e" },
-          "green-new-59": { hex: "#13622c" },
-          "green-new-6": { hex: "#c1e0c3" },
-          "green-new-60": { hex: "#135f2b" },
-          "green-new-61": { hex: "#135b29" },
-          "green-new-62": { hex: "#145828" },
-          "green-new-63": { hex: "#145426" },
-          "green-new-64": { hex: "#135125" },
-          "green-new-65": { hex: "#134e24" },
-          "green-new-66": { hex: "#134b22" },
-          "green-new-67": { hex: "#134821" },
-          "green-new-68": { hex: "#124520" },
-          "green-new-69": { hex: "#12421e" },
-          "green-new-7": { hex: "#bdddbe" },
-          "green-new-70": { hex: "#123f1d" },
-          "green-new-71": { hex: "#113d1c" },
-          "green-new-72": { hex: "#113a1b" },
-          "green-new-73": { hex: "#103719" },
-          "green-new-74": { hex: "#103518" },
-          "green-new-75": { hex: "#0f3217" },
-          "green-new-76": { hex: "#0e3016" },
-          "green-new-77": { hex: "#0e2d15" },
-          "green-new-78": { hex: "#0d2b13" },
-          "green-new-79": { hex: "#0c2912" },
-          "green-new-8": { hex: "#b8dbba" },
-          "green-new-80": { hex: "#0c2711" },
-          "green-new-81": { hex: "#0b2410" },
-          "green-new-82": { hex: "#0a220f" },
-          "green-new-83": { hex: "#0a200e" },
-          "green-new-84": { hex: "#091e0d" },
-          "green-new-85": { hex: "#081c0c" },
-          "green-new-86": { hex: "#081a0b" },
-          "green-new-87": { hex: "#07180a" },
-          "green-new-88": { hex: "#061609" },
-          "green-new-89": { hex: "#061508" },
-          "green-new-9": { hex: "#b4d9b6" },
-          "green-new-90": { hex: "#051307" },
-          "green-new-91": { hex: "#051106" },
-          "green-new-92": { hex: "#041006" },
-          "green-new-93": { hex: "#040e05" },
-          "green-new-94": { hex: "#030c04" },
-          "green-new-95": { hex: "#030b04" },
-          "green-new-96": { hex: "#030903" },
+          "green-new-51": { hex: "#008239" },
+          "green-new-52": { hex: "#007e37" },
+          "green-new-53": { hex: "#007a36" },
+          "green-new-54": { hex: "#007534" },
+          "green-new-55": { hex: "#007132" },
+          "green-new-56": { hex: "#006e31" },
+          "green-new-57": { hex: "#006a2f" },
+          "green-new-58": { hex: "#00662e" },
+          "green-new-59": { hex: "#00622c" },
+          "green-new-6": { hex: "#bde0c3" },
+          "green-new-60": { hex: "#005f2b" },
+          "green-new-61": { hex: "#005b29" },
+          "green-new-62": { hex: "#005828" },
+          "green-new-63": { hex: "#005527" },
+          "green-new-64": { hex: "#005125" },
+          "green-new-65": { hex: "#004e24" },
+          "green-new-66": { hex: "#004b22" },
+          "green-new-67": { hex: "#004821" },
+          "green-new-68": { hex: "#004520" },
+          "green-new-69": { hex: "#00421e" },
+          "green-new-7": { hex: "#b8debf" },
+          "green-new-70": { hex: "#01401d" },
+          "green-new-71": { hex: "#023d1c" },
+          "green-new-72": { hex: "#033a1b" },
+          "green-new-73": { hex: "#033719" },
+          "green-new-74": { hex: "#043518" },
+          "green-new-75": { hex: "#043217" },
+          "green-new-76": { hex: "#053016" },
+          "green-new-77": { hex: "#052e15" },
+          "green-new-78": { hex: "#052b13" },
+          "green-new-79": { hex: "#052912" },
+          "green-new-8": { hex: "#b3dbba" },
+          "green-new-80": { hex: "#052711" },
+          "green-new-81": { hex: "#052410" },
+          "green-new-82": { hex: "#05220f" },
+          "green-new-83": { hex: "#05200e" },
+          "green-new-84": { hex: "#041e0d" },
+          "green-new-85": { hex: "#041c0c" },
+          "green-new-86": { hex: "#041a0b" },
+          "green-new-87": { hex: "#04180a" },
+          "green-new-88": { hex: "#041709" },
+          "green-new-89": { hex: "#031508" },
+          "green-new-9": { hex: "#afd9b6" },
+          "green-new-90": { hex: "#031307" },
+          "green-new-91": { hex: "#031106" },
+          "green-new-92": { hex: "#031006" },
+          "green-new-93": { hex: "#020e05" },
+          "green-new-94": { hex: "#020c04" },
+          "green-new-95": { hex: "#020b04" },
+          "green-new-96": { hex: "#020903" },
           "green-new-97": { hex: "#020803" },
-          "green-new-98": { hex: "#020702" },
-          "green-new-99": { hex: "#020602" },
+          "green-new-98": { hex: "#010702" },
+          "green-new-99": { hex: "#010602" },
           "neutral-1": { hex: "#fff" },
           "neutral-10": { hex: "#d3d3d7" },
           "neutral-100": { hex: "#020203" },
@@ -20739,106 +20739,106 @@
           "neutral-97": { hex: "#040405" },
           "neutral-98": { hex: "#030304" },
           "neutral-99": { hex: "#030303" },
-          "orange-new-1": { hex: "#fde0ce" },
-          "orange-new-10": { hex: "#f6c09f" },
-          "orange-new-100": { hex: "#080301" },
-          "orange-new-11": { hex: "#f5bd9a" },
-          "orange-new-12": { hex: "#f4ba95" },
-          "orange-new-13": { hex: "#f3b691" },
-          "orange-new-14": { hex: "#f1b38c" },
-          "orange-new-15": { hex: "#f0b088" },
-          "orange-new-16": { hex: "#efad83" },
-          "orange-new-17": { hex: "#eea97f" },
-          "orange-new-18": { hex: "#eda67b" },
-          "orange-new-19": { hex: "#eba376" },
-          "orange-new-2": { hex: "#fcddc8" },
-          "orange-new-20": { hex: "#eaa072" },
-          "orange-new-21": { hex: "#e99d6e" },
-          "orange-new-22": { hex: "#e89a6a" },
-          "orange-new-23": { hex: "#e69766" },
-          "orange-new-24": { hex: "#e59463" },
-          "orange-new-25": { hex: "#e4915f" },
-          "orange-new-26": { hex: "#e28e5b" },
-          "orange-new-27": { hex: "#e18b57" },
-          "orange-new-28": { hex: "#df8854" },
-          "orange-new-29": { hex: "#de8550" },
-          "orange-new-3": { hex: "#fbd9c3" },
-          "orange-new-30": { hex: "#dc834d" },
-          "orange-new-31": { hex: "#db8049" },
-          "orange-new-32": { hex: "#d97d46" },
-          "orange-new-33": { hex: "#d87a42" },
-          "orange-new-34": { hex: "#d6783f" },
-          "orange-new-35": { hex: "#d5753b" },
-          "orange-new-36": { hex: "#d37238" },
-          "orange-new-37": { hex: "#d27035" },
-          "orange-new-38": { hex: "#d06d31" },
-          "orange-new-39": { hex: "#cf6a2e" },
-          "orange-new-4": { hex: "#fbd5bd" },
-          "orange-new-40": { hex: "#cd682a" },
-          "orange-new-41": { hex: "#cb6527" },
-          "orange-new-42": { hex: "#ca6323" },
-          "orange-new-43": { hex: "#c86020" },
-          "orange-new-44": { hex: "#c75e1c" },
-          "orange-new-45": { hex: "#c55b18" },
-          "orange-new-46": { hex: "#c35914" },
-          "orange-new-47": { hex: "#c25610" },
-          "orange-new-48": { hex: "#c0540b" },
-          "orange-new-49": { hex: "#bf5105" },
-          "orange-new-5": { hex: "#fad2b8" },
+          "orange-new-1": { hex: "#fde1ca" },
+          "orange-new-10": { hex: "#f5c197" },
+          "orange-new-100": { hex: "#080300" },
+          "orange-new-11": { hex: "#f4be92" },
+          "orange-new-12": { hex: "#f3ba8d" },
+          "orange-new-13": { hex: "#f2b788" },
+          "orange-new-14": { hex: "#f1b484" },
+          "orange-new-15": { hex: "#f0b07f" },
+          "orange-new-16": { hex: "#efad7a" },
+          "orange-new-17": { hex: "#eeaa76" },
+          "orange-new-18": { hex: "#eca771" },
+          "orange-new-19": { hex: "#eba46d" },
+          "orange-new-2": { hex: "#fcddc4" },
+          "orange-new-20": { hex: "#eaa068" },
+          "orange-new-21": { hex: "#e99d64" },
+          "orange-new-22": { hex: "#e79a60" },
+          "orange-new-23": { hex: "#e6975b" },
+          "orange-new-24": { hex: "#e59457" },
+          "orange-new-25": { hex: "#e39153" },
+          "orange-new-26": { hex: "#e28e4f" },
+          "orange-new-27": { hex: "#e08b4b" },
+          "orange-new-28": { hex: "#df8947" },
+          "orange-new-29": { hex: "#dd8643" },
+          "orange-new-3": { hex: "#fbd9be" },
+          "orange-new-30": { hex: "#dc833f" },
+          "orange-new-31": { hex: "#db803b" },
+          "orange-new-32": { hex: "#d97d37" },
+          "orange-new-33": { hex: "#d87b33" },
+          "orange-new-34": { hex: "#d6782f" },
+          "orange-new-35": { hex: "#d4752b" },
+          "orange-new-36": { hex: "#d37227" },
+          "orange-new-37": { hex: "#d17023" },
+          "orange-new-38": { hex: "#d06d1f" },
+          "orange-new-39": { hex: "#ce6a1a" },
+          "orange-new-4": { hex: "#fbd6b8" },
+          "orange-new-40": { hex: "#cd6815" },
+          "orange-new-41": { hex: "#cb650f" },
+          "orange-new-42": { hex: "#ca6308" },
+          "orange-new-43": { hex: "#c86001" },
+          "orange-new-44": { hex: "#c65e00" },
+          "orange-new-45": { hex: "#c55b00" },
+          "orange-new-46": { hex: "#c35900" },
+          "orange-new-47": { hex: "#c15600" },
+          "orange-new-48": { hex: "#c05400" },
+          "orange-new-49": { hex: "#be5100" },
+          "orange-new-5": { hex: "#fad2b2" },
           "orange-new-50": { hex: "#bd4f00" },
-          "orange-new-51": { hex: "#b74d01" },
-          "orange-new-52": { hex: "#b14b03" },
-          "orange-new-53": { hex: "#ab4804" },
-          "orange-new-54": { hex: "#a54604" },
-          "orange-new-55": { hex: "#9f4405" },
-          "orange-new-56": { hex: "#9a4206" },
-          "orange-new-57": { hex: "#944006" },
-          "orange-new-58": { hex: "#8f3e07" },
-          "orange-new-59": { hex: "#8a3c07" },
-          "orange-new-6": { hex: "#f9ceb3" },
-          "orange-new-60": { hex: "#853a07" },
-          "orange-new-61": { hex: "#803808" },
-          "orange-new-62": { hex: "#7b3608" },
-          "orange-new-63": { hex: "#763408" },
-          "orange-new-64": { hex: "#723208" },
-          "orange-new-65": { hex: "#6d3108" },
-          "orange-new-66": { hex: "#692f08" },
-          "orange-new-67": { hex: "#652d08" },
-          "orange-new-68": { hex: "#612b08" },
-          "orange-new-69": { hex: "#5d2a07" },
-          "orange-new-7": { hex: "#f8cbae" },
-          "orange-new-70": { hex: "#592807" },
-          "orange-new-71": { hex: "#552607" },
-          "orange-new-72": { hex: "#512507" },
-          "orange-new-73": { hex: "#4d2307" },
-          "orange-new-74": { hex: "#4a2106" },
-          "orange-new-75": { hex: "#462006" },
-          "orange-new-76": { hex: "#431e06" },
-          "orange-new-77": { hex: "#401d06" },
-          "orange-new-78": { hex: "#3d1b05" },
-          "orange-new-79": { hex: "#3a1a05" },
-          "orange-new-8": { hex: "#f8c7a8" },
-          "orange-new-80": { hex: "#361805" },
-          "orange-new-81": { hex: "#341704" },
-          "orange-new-82": { hex: "#311504" },
-          "orange-new-83": { hex: "#2e1404" },
-          "orange-new-84": { hex: "#2b1304" },
-          "orange-new-85": { hex: "#281103" },
-          "orange-new-86": { hex: "#261003" },
-          "orange-new-87": { hex: "#230f03" },
-          "orange-new-88": { hex: "#210e03" },
-          "orange-new-89": { hex: "#1e0c03" },
-          "orange-new-9": { hex: "#f7c4a4" },
-          "orange-new-90": { hex: "#1c0b02" },
-          "orange-new-91": { hex: "#1a0a02" },
-          "orange-new-92": { hex: "#180902" },
-          "orange-new-93": { hex: "#150802" },
-          "orange-new-94": { hex: "#130702" },
+          "orange-new-51": { hex: "#b64d00" },
+          "orange-new-52": { hex: "#b04a00" },
+          "orange-new-53": { hex: "#aa4800" },
+          "orange-new-54": { hex: "#a44600" },
+          "orange-new-55": { hex: "#9f4400" },
+          "orange-new-56": { hex: "#994200" },
+          "orange-new-57": { hex: "#944000" },
+          "orange-new-58": { hex: "#8f3e00" },
+          "orange-new-59": { hex: "#893c00" },
+          "orange-new-6": { hex: "#f9cfad" },
+          "orange-new-60": { hex: "#843a00" },
+          "orange-new-61": { hex: "#7f3800" },
+          "orange-new-62": { hex: "#7b3600" },
+          "orange-new-63": { hex: "#763400" },
+          "orange-new-64": { hex: "#713200" },
+          "orange-new-65": { hex: "#6d3100" },
+          "orange-new-66": { hex: "#692f00" },
+          "orange-new-67": { hex: "#652d00" },
+          "orange-new-68": { hex: "#602b00" },
+          "orange-new-69": { hex: "#5c2a00" },
+          "orange-new-7": { hex: "#f8cba7" },
+          "orange-new-70": { hex: "#582800" },
+          "orange-new-71": { hex: "#552600" },
+          "orange-new-72": { hex: "#512500" },
+          "orange-new-73": { hex: "#4d2300" },
+          "orange-new-74": { hex: "#4a2100" },
+          "orange-new-75": { hex: "#462000" },
+          "orange-new-76": { hex: "#431e01" },
+          "orange-new-77": { hex: "#401d01" },
+          "orange-new-78": { hex: "#3d1b01" },
+          "orange-new-79": { hex: "#391a01" },
+          "orange-new-8": { hex: "#f7c8a2" },
+          "orange-new-80": { hex: "#361801" },
+          "orange-new-81": { hex: "#331701" },
+          "orange-new-82": { hex: "#311601" },
+          "orange-new-83": { hex: "#2e1401" },
+          "orange-new-84": { hex: "#2b1301" },
+          "orange-new-85": { hex: "#281101" },
+          "orange-new-86": { hex: "#261001" },
+          "orange-new-87": { hex: "#230f01" },
+          "orange-new-88": { hex: "#210e01" },
+          "orange-new-89": { hex: "#1e0c01" },
+          "orange-new-9": { hex: "#f6c49d" },
+          "orange-new-90": { hex: "#1c0b01" },
+          "orange-new-91": { hex: "#1a0a01" },
+          "orange-new-92": { hex: "#180901" },
+          "orange-new-93": { hex: "#150801" },
+          "orange-new-94": { hex: "#130701" },
           "orange-new-95": { hex: "#110601" },
           "orange-new-96": { hex: "#0f0501" },
           "orange-new-97": { hex: "#0d0401" },
           "orange-new-98": { hex: "#0b0401" },
-          "orange-new-99": { hex: "#0a0301" },
+          "orange-new-99": { hex: "#0a0300" },
           "red-new-1": { hex: "#ffdad4" },
           "red-new-10": { hex: "#ffb4aa" },
           "red-new-100": { hex: "#0b0201" },
@@ -20851,8 +20851,8 @@
           "red-new-17": { hex: "#ff988d" },
           "red-new-18": { hex: "#ff9489" },
           "red-new-19": { hex: "#ff9085" },
-          "red-new-2": { hex: "#ffd5cf" },
-          "red-new-20": { hex: "#ff8c82" },
+          "red-new-2": { hex: "#ffd5ce" },
+          "red-new-20": { hex: "#ff8c81" },
           "red-new-21": { hex: "#ff887e" },
           "red-new-22": { hex: "#ff857a" },
           "red-new-23": { hex: "#ff8177" },
@@ -20868,29 +20868,29 @@
           "red-new-32": { hex: "#fa605a" },
           "red-new-33": { hex: "#f85d57" },
           "red-new-34": { hex: "#f75954" },
-          "red-new-35": { hex: "#f65651" },
+          "red-new-35": { hex: "#f55651" },
           "red-new-36": { hex: "#f4524e" },
           "red-new-37": { hex: "#f34e4b" },
-          "red-new-38": { hex: "#f14b49" },
+          "red-new-38": { hex: "#f14b48" },
           "red-new-39": { hex: "#f04746" },
           "red-new-4": { hex: "#ffcdc5" },
           "red-new-40": { hex: "#ee4343" },
-          "red-new-41": { hex: "#ed3f40" },
+          "red-new-41": { hex: "#ec4040" },
           "red-new-42": { hex: "#eb3c3e" },
           "red-new-43": { hex: "#e9383b" },
-          "red-new-44": { hex: "#e83339" },
+          "red-new-44": { hex: "#e83439" },
           "red-new-45": { hex: "#e62f36" },
-          "red-new-46": { hex: "#e52b34" },
+          "red-new-46": { hex: "#e42b34" },
           "red-new-47": { hex: "#e32631" },
           "red-new-48": { hex: "#e1212f" },
           "red-new-49": { hex: "#e01b2c" },
           "red-new-5": { hex: "#ffc9c0" },
           "red-new-50": { hex: "#de142a" },
-          "red-new-51": { hex: "#d71629" },
+          "red-new-51": { hex: "#d61629" },
           "red-new-52": { hex: "#cf1728" },
           "red-new-53": { hex: "#c81827" },
           "red-new-54": { hex: "#c11926" },
-          "red-new-55": { hex: "#bb1925" },
+          "red-new-55": { hex: "#bb1a24" },
           "red-new-56": { hex: "#b41a23" },
           "red-new-57": { hex: "#ae1a22" },
           "red-new-58": { hex: "#a81a21" },
@@ -20901,19 +20901,19 @@
           "red-new-62": { hex: "#901a1d" },
           "red-new-63": { hex: "#8b191c" },
           "red-new-64": { hex: "#86191b" },
-          "red-new-65": { hex: "#80181a" },
+          "red-new-65": { hex: "#80191a" },
           "red-new-66": { hex: "#7b1819" },
           "red-new-67": { hex: "#761718" },
           "red-new-68": { hex: "#721717" },
           "red-new-69": { hex: "#6d1616" },
           "red-new-7": { hex: "#ffc1b8" },
-          "red-new-70": { hex: "#681515" },
+          "red-new-70": { hex: "#681615" },
           "red-new-71": { hex: "#641514" },
           "red-new-72": { hex: "#601413" },
           "red-new-73": { hex: "#5b1312" },
           "red-new-74": { hex: "#571311" },
           "red-new-75": { hex: "#531210" },
-          "red-new-76": { hex: "#4f1110" },
+          "red-new-76": { hex: "#4f110f" },
           "red-new-77": { hex: "#4b100f" },
           "red-new-78": { hex: "#48100e" },
           "red-new-79": { hex: "#440f0d" },
@@ -20926,7 +20926,7 @@
           "red-new-85": { hex: "#300a08" },
           "red-new-86": { hex: "#2d0907" },
           "red-new-87": { hex: "#2a0806" },
-          "red-new-88": { hex: "#280706" },
+          "red-new-88": { hex: "#270706" },
           "red-new-89": { hex: "#250705" },
           "red-new-9": { hex: "#ffb8af" },
           "red-new-90": { hex: "#220605" },
@@ -20939,206 +20939,206 @@
           "red-new-97": { hex: "#110302" },
           "red-new-98": { hex: "#0f0202" },
           "red-new-99": { hex: "#0d0202" },
-          "teal-new-1": { hex: "#d9eaeb" },
-          "teal-new-10": { hex: "#b1d3d6" },
-          "teal-new-100": { hex: "#020405" },
-          "teal-new-11": { hex: "#add1d4" },
-          "teal-new-12": { hex: "#a9ced2" },
-          "teal-new-13": { hex: "#a5ccd0" },
-          "teal-new-14": { hex: "#a1c9cd" },
-          "teal-new-15": { hex: "#9dc7cb" },
-          "teal-new-16": { hex: "#99c5c9" },
-          "teal-new-17": { hex: "#95c3c7" },
-          "teal-new-18": { hex: "#91c0c5" },
-          "teal-new-19": { hex: "#8dbec3" },
-          "teal-new-2": { hex: "#d4e7e9" },
-          "teal-new-20": { hex: "#89bcc1" },
-          "teal-new-21": { hex: "#85babf" },
-          "teal-new-22": { hex: "#82b7bd" },
-          "teal-new-23": { hex: "#7eb5bb" },
-          "teal-new-24": { hex: "#7ab3b9" },
-          "teal-new-25": { hex: "#76b1b7" },
-          "teal-new-26": { hex: "#73afb5" },
-          "teal-new-27": { hex: "#6fadb3" },
-          "teal-new-28": { hex: "#6babb1" },
-          "teal-new-29": { hex: "#67a9af" },
-          "teal-new-3": { hex: "#d0e4e6" },
-          "teal-new-30": { hex: "#64a6ad" },
-          "teal-new-31": { hex: "#60a4ab" },
-          "teal-new-32": { hex: "#5ca2a9" },
-          "teal-new-33": { hex: "#59a0a7" },
-          "teal-new-34": { hex: "#559ea6" },
-          "teal-new-35": { hex: "#519da4" },
-          "teal-new-36": { hex: "#4d9ba2" },
-          "teal-new-37": { hex: "#4999a0" },
-          "teal-new-38": { hex: "#46979e" },
-          "teal-new-39": { hex: "#42959d" },
-          "teal-new-4": { hex: "#cbe2e4" },
-          "teal-new-40": { hex: "#3e939b" },
-          "teal-new-41": { hex: "#3a9199" },
-          "teal-new-42": { hex: "#358f97" },
-          "teal-new-43": { hex: "#318d96" },
-          "teal-new-44": { hex: "#2c8c94" },
-          "teal-new-45": { hex: "#278a92" },
-          "teal-new-46": { hex: "#228891" },
-          "teal-new-47": { hex: "#1c868f" },
-          "teal-new-48": { hex: "#15848d" },
-          "teal-new-49": { hex: "#0c838c" },
-          "teal-new-5": { hex: "#c7dfe2" },
+          "teal-new-1": { hex: "#d2ebed" },
+          "teal-new-10": { hex: "#a3d5d9" },
+          "teal-new-100": { hex: "#010505" },
+          "teal-new-11": { hex: "#9ed3d7" },
+          "teal-new-12": { hex: "#99d0d5" },
+          "teal-new-13": { hex: "#94ced3" },
+          "teal-new-14": { hex: "#8fccd1" },
+          "teal-new-15": { hex: "#8acacf" },
+          "teal-new-16": { hex: "#85c7cd" },
+          "teal-new-17": { hex: "#80c5cb" },
+          "teal-new-18": { hex: "#7bc3c9" },
+          "teal-new-19": { hex: "#76c1c7" },
+          "teal-new-2": { hex: "#cde8ea" },
+          "teal-new-20": { hex: "#70bfc5" },
+          "teal-new-21": { hex: "#6bbcc3" },
+          "teal-new-22": { hex: "#66bac1" },
+          "teal-new-23": { hex: "#61b8bf" },
+          "teal-new-24": { hex: "#5bb6be" },
+          "teal-new-25": { hex: "#56b4bc" },
+          "teal-new-26": { hex: "#50b2ba" },
+          "teal-new-27": { hex: "#4ab0b8" },
+          "teal-new-28": { hex: "#44aeb6" },
+          "teal-new-29": { hex: "#3eacb4" },
+          "teal-new-3": { hex: "#c8e6e8" },
+          "teal-new-30": { hex: "#37aab3" },
+          "teal-new-31": { hex: "#2fa8b1" },
+          "teal-new-32": { hex: "#26a6af" },
+          "teal-new-33": { hex: "#1ca4ad" },
+          "teal-new-34": { hex: "#0ca2ab" },
+          "teal-new-35": { hex: "#00a0aa" },
+          "teal-new-36": { hex: "#009ea8" },
+          "teal-new-37": { hex: "#009ca6" },
+          "teal-new-38": { hex: "#009aa5" },
+          "teal-new-39": { hex: "#0098a3" },
+          "teal-new-4": { hex: "#c2e3e6" },
+          "teal-new-40": { hex: "#0096a1" },
+          "teal-new-41": { hex: "#00949f" },
+          "teal-new-42": { hex: "#00929d" },
+          "teal-new-43": { hex: "#00909a" },
+          "teal-new-44": { hex: "#008e98" },
+          "teal-new-45": { hex: "#008c96" },
+          "teal-new-46": { hex: "#008993" },
+          "teal-new-47": { hex: "#008791" },
+          "teal-new-48": { hex: "#00858f" },
+          "teal-new-49": { hex: "#00838c" },
+          "teal-new-5": { hex: "#bde1e4" },
           "teal-new-50": { hex: "#00818a" },
-          "teal-new-51": { hex: "#057d85" },
-          "teal-new-52": { hex: "#087981" },
-          "teal-new-53": { hex: "#0c757d" },
-          "teal-new-54": { hex: "#0e7178" },
-          "teal-new-55": { hex: "#106d74" },
-          "teal-new-56": { hex: "#116970" },
-          "teal-new-57": { hex: "#12666c" },
-          "teal-new-58": { hex: "#136268" },
-          "teal-new-59": { hex: "#145e65" },
-          "teal-new-6": { hex: "#c2dddf" },
-          "teal-new-60": { hex: "#145b61" },
-          "teal-new-61": { hex: "#14585d" },
-          "teal-new-62": { hex: "#15545a" },
-          "teal-new-63": { hex: "#155156" },
-          "teal-new-64": { hex: "#144e53" },
-          "teal-new-65": { hex: "#144b50" },
-          "teal-new-66": { hex: "#14484d" },
-          "teal-new-67": { hex: "#14454a" },
-          "teal-new-68": { hex: "#134246" },
-          "teal-new-69": { hex: "#134043" },
-          "teal-new-7": { hex: "#bedadd" },
-          "teal-new-70": { hex: "#133d41" },
-          "teal-new-71": { hex: "#123a3e" },
-          "teal-new-72": { hex: "#11383b" },
-          "teal-new-73": { hex: "#113538" },
-          "teal-new-74": { hex: "#103336" },
-          "teal-new-75": { hex: "#103033" },
-          "teal-new-76": { hex: "#0f2e31" },
-          "teal-new-77": { hex: "#0e2c2e" },
-          "teal-new-78": { hex: "#0e292c" },
-          "teal-new-79": { hex: "#0d2729" },
-          "teal-new-8": { hex: "#bad8db" },
-          "teal-new-80": { hex: "#0c2527" },
-          "teal-new-81": { hex: "#0c2325" },
-          "teal-new-82": { hex: "#0b2123" },
-          "teal-new-83": { hex: "#0a1f21" },
-          "teal-new-84": { hex: "#091d1f" },
-          "teal-new-85": { hex: "#091b1d" },
-          "teal-new-86": { hex: "#08191b" },
-          "teal-new-87": { hex: "#071719" },
-          "teal-new-88": { hex: "#071517" },
-          "teal-new-89": { hex: "#061415" },
-          "teal-new-9": { hex: "#b6d5d9" },
-          "teal-new-90": { hex: "#061213" },
-          "teal-new-91": { hex: "#051011" },
-          "teal-new-92": { hex: "#050f10" },
-          "teal-new-93": { hex: "#040d0e" },
-          "teal-new-94": { hex: "#040c0c" },
-          "teal-new-95": { hex: "#030a0b" },
-          "teal-new-96": { hex: "#030909" },
-          "teal-new-97": { hex: "#020708" },
-          "teal-new-98": { hex: "#020607" },
-          "teal-new-99": { hex: "#020506" },
-          "yellow-new-1": { hex: "#f1e4ce" },
-          "yellow-new-10": { hex: "#e2c8a0" },
-          "yellow-new-100": { hex: "#060301" },
-          "yellow-new-11": { hex: "#e0c59b" },
-          "yellow-new-12": { hex: "#dec296" },
-          "yellow-new-13": { hex: "#ddc092" },
-          "yellow-new-14": { hex: "#dbbd8d" },
-          "yellow-new-15": { hex: "#d9ba89" },
-          "yellow-new-16": { hex: "#d8b784" },
-          "yellow-new-17": { hex: "#d6b480" },
-          "yellow-new-18": { hex: "#d4b17c" },
-          "yellow-new-19": { hex: "#d2af78" },
-          "yellow-new-2": { hex: "#f0e1c9" },
-          "yellow-new-20": { hex: "#d1ac74" },
-          "yellow-new-21": { hex: "#cfa970" },
-          "yellow-new-22": { hex: "#cda66c" },
-          "yellow-new-23": { hex: "#cba468" },
-          "yellow-new-24": { hex: "#caa164" },
-          "yellow-new-25": { hex: "#c89f60" },
-          "yellow-new-26": { hex: "#c69c5c" },
-          "yellow-new-27": { hex: "#c49959" },
-          "yellow-new-28": { hex: "#c39755" },
-          "yellow-new-29": { hex: "#c19451" },
-          "yellow-new-3": { hex: "#eedec3" },
-          "yellow-new-30": { hex: "#bf924e" },
-          "yellow-new-31": { hex: "#be8f4a" },
-          "yellow-new-32": { hex: "#bc8d47" },
-          "yellow-new-33": { hex: "#ba8b43" },
-          "yellow-new-34": { hex: "#b98840" },
-          "yellow-new-35": { hex: "#b7863c" },
-          "yellow-new-36": { hex: "#b58339" },
-          "yellow-new-37": { hex: "#b38136" },
-          "yellow-new-38": { hex: "#b27f32" },
-          "yellow-new-39": { hex: "#b07d2f" },
-          "yellow-new-4": { hex: "#ecdbbe" },
-          "yellow-new-40": { hex: "#ae7a2b" },
-          "yellow-new-41": { hex: "#ad7828" },
-          "yellow-new-42": { hex: "#ab7624" },
-          "yellow-new-43": { hex: "#a97421" },
-          "yellow-new-44": { hex: "#a8721d" },
-          "yellow-new-45": { hex: "#a66f19" },
-          "yellow-new-46": { hex: "#a56d15" },
-          "yellow-new-47": { hex: "#a36b11" },
-          "yellow-new-48": { hex: "#a1690b" },
-          "yellow-new-49": { hex: "#a06705" },
-          "yellow-new-5": { hex: "#ebd8b9" },
-          "yellow-new-50": { hex: "#9e6500" },
-          "yellow-new-51": { hex: "#996201" },
-          "yellow-new-52": { hex: "#945f03" },
-          "yellow-new-53": { hex: "#8f5c04" },
-          "yellow-new-54": { hex: "#8a5905" },
-          "yellow-new-55": { hex: "#855606" },
-          "yellow-new-56": { hex: "#805306" },
-          "yellow-new-57": { hex: "#7c5007" },
-          "yellow-new-58": { hex: "#774e07" },
-          "yellow-new-59": { hex: "#734b08" },
-          "yellow-new-6": { hex: "#e9d5b4" },
-          "yellow-new-60": { hex: "#6f4808" },
-          "yellow-new-61": { hex: "#6b4608" },
-          "yellow-new-62": { hex: "#674308" },
-          "yellow-new-63": { hex: "#634109" },
-          "yellow-new-64": { hex: "#5f3f09" },
-          "yellow-new-65": { hex: "#5b3c08" },
-          "yellow-new-66": { hex: "#583a08" },
-          "yellow-new-67": { hex: "#543808" },
-          "yellow-new-68": { hex: "#513508" },
-          "yellow-new-69": { hex: "#4d3308" },
-          "yellow-new-7": { hex: "#e7d1ae" },
-          "yellow-new-70": { hex: "#4a3108" },
-          "yellow-new-71": { hex: "#472f08" },
-          "yellow-new-72": { hex: "#442d07" },
-          "yellow-new-73": { hex: "#412b07" },
-          "yellow-new-74": { hex: "#3e2907" },
-          "yellow-new-75": { hex: "#3b2707" },
-          "yellow-new-76": { hex: "#382506" },
-          "yellow-new-77": { hex: "#352306" },
-          "yellow-new-78": { hex: "#322106" },
-          "yellow-new-79": { hex: "#301f05" },
-          "yellow-new-8": { hex: "#e5cea9" },
-          "yellow-new-80": { hex: "#2d1e05" },
-          "yellow-new-81": { hex: "#2b1c05" },
-          "yellow-new-82": { hex: "#281a05" },
-          "yellow-new-83": { hex: "#261904" },
-          "yellow-new-84": { hex: "#231704" },
-          "yellow-new-85": { hex: "#211504" },
-          "yellow-new-86": { hex: "#1f1403" },
-          "yellow-new-87": { hex: "#1d1203" },
-          "yellow-new-88": { hex: "#1b1103" },
-          "yellow-new-89": { hex: "#190f03" },
-          "yellow-new-9": { hex: "#e4cba5" },
-          "yellow-new-90": { hex: "#170e02" },
-          "yellow-new-91": { hex: "#150d02" },
-          "yellow-new-92": { hex: "#130b02" },
-          "yellow-new-93": { hex: "#110a02" },
-          "yellow-new-94": { hex: "#0f0902" },
-          "yellow-new-95": { hex: "#0d0801" },
-          "yellow-new-96": { hex: "#0c0601" },
-          "yellow-new-97": { hex: "#0a0601" },
-          "yellow-new-98": { hex: "#080501" },
-          "yellow-new-99": { hex: "#070401" },
+          "teal-new-51": { hex: "#007d86" },
+          "teal-new-52": { hex: "#007982" },
+          "teal-new-53": { hex: "#00757e" },
+          "teal-new-54": { hex: "#00727a" },
+          "teal-new-55": { hex: "#006e76" },
+          "teal-new-56": { hex: "#006a72" },
+          "teal-new-57": { hex: "#00676f" },
+          "teal-new-58": { hex: "#00636b" },
+          "teal-new-59": { hex: "#006067" },
+          "teal-new-6": { hex: "#b8dee2" },
+          "teal-new-60": { hex: "#005d64" },
+          "teal-new-61": { hex: "#005961" },
+          "teal-new-62": { hex: "#00565d" },
+          "teal-new-63": { hex: "#00535a" },
+          "teal-new-64": { hex: "#005057" },
+          "teal-new-65": { hex: "#004d54" },
+          "teal-new-66": { hex: "#004a50" },
+          "teal-new-67": { hex: "#00474d" },
+          "teal-new-68": { hex: "#00444a" },
+          "teal-new-69": { hex: "#004147" },
+          "teal-new-7": { hex: "#b3dce0" },
+          "teal-new-70": { hex: "#003f44" },
+          "teal-new-71": { hex: "#003c41" },
+          "teal-new-72": { hex: "#00393e" },
+          "teal-new-73": { hex: "#00373b" },
+          "teal-new-74": { hex: "#003438" },
+          "teal-new-75": { hex: "#003235" },
+          "teal-new-76": { hex: "#002f33" },
+          "teal-new-77": { hex: "#002d30" },
+          "teal-new-78": { hex: "#002a2e" },
+          "teal-new-79": { hex: "#00282b" },
+          "teal-new-8": { hex: "#addade" },
+          "teal-new-80": { hex: "#002629" },
+          "teal-new-81": { hex: "#002427" },
+          "teal-new-82": { hex: "#002224" },
+          "teal-new-83": { hex: "#002022" },
+          "teal-new-84": { hex: "#001e20" },
+          "teal-new-85": { hex: "#001c1e" },
+          "teal-new-86": { hex: "#001a1c" },
+          "teal-new-87": { hex: "#00181a" },
+          "teal-new-88": { hex: "#001618" },
+          "teal-new-89": { hex: "#001416" },
+          "teal-new-9": { hex: "#a8d7db" },
+          "teal-new-90": { hex: "#011314" },
+          "teal-new-91": { hex: "#011112" },
+          "teal-new-92": { hex: "#010f11" },
+          "teal-new-93": { hex: "#010e0f" },
+          "teal-new-94": { hex: "#010c0d" },
+          "teal-new-95": { hex: "#010a0c" },
+          "teal-new-96": { hex: "#01090a" },
+          "teal-new-97": { hex: "#010808" },
+          "teal-new-98": { hex: "#010707" },
+          "teal-new-99": { hex: "#010506" },
+          "yellow-new-1": { hex: "#f2e5c5" },
+          "yellow-new-10": { hex: "#e4c98d" },
+          "yellow-new-100": { hex: "#060300" },
+          "yellow-new-11": { hex: "#e2c687" },
+          "yellow-new-12": { hex: "#e1c382" },
+          "yellow-new-13": { hex: "#dfc07c" },
+          "yellow-new-14": { hex: "#ddbd77" },
+          "yellow-new-15": { hex: "#dcba72" },
+          "yellow-new-16": { hex: "#dab76d" },
+          "yellow-new-17": { hex: "#d9b468" },
+          "yellow-new-18": { hex: "#d7b163" },
+          "yellow-new-19": { hex: "#d5af5e" },
+          "yellow-new-2": { hex: "#f1e2be" },
+          "yellow-new-20": { hex: "#d4ac59" },
+          "yellow-new-21": { hex: "#d2a954" },
+          "yellow-new-22": { hex: "#d0a64f" },
+          "yellow-new-23": { hex: "#cfa44a" },
+          "yellow-new-24": { hex: "#cda145" },
+          "yellow-new-25": { hex: "#cb9e40" },
+          "yellow-new-26": { hex: "#ca9c3b" },
+          "yellow-new-27": { hex: "#c89936" },
+          "yellow-new-28": { hex: "#c69631" },
+          "yellow-new-29": { hex: "#c5942c" },
+          "yellow-new-3": { hex: "#efdfb7" },
+          "yellow-new-30": { hex: "#c39126" },
+          "yellow-new-31": { hex: "#c18f21" },
+          "yellow-new-32": { hex: "#c08c1a" },
+          "yellow-new-33": { hex: "#be8a13" },
+          "yellow-new-34": { hex: "#bc8709" },
+          "yellow-new-35": { hex: "#bb8500" },
+          "yellow-new-36": { hex: "#b98200" },
+          "yellow-new-37": { hex: "#b88000" },
+          "yellow-new-38": { hex: "#b67d00" },
+          "yellow-new-39": { hex: "#b47b00" },
+          "yellow-new-4": { hex: "#eedbb1" },
+          "yellow-new-40": { hex: "#b37900" },
+          "yellow-new-41": { hex: "#b17600" },
+          "yellow-new-42": { hex: "#af7400" },
+          "yellow-new-43": { hex: "#ae7200" },
+          "yellow-new-44": { hex: "#ac6f00" },
+          "yellow-new-45": { hex: "#aa6d00" },
+          "yellow-new-46": { hex: "#a96b00" },
+          "yellow-new-47": { hex: "#a76900" },
+          "yellow-new-48": { hex: "#a56700" },
+          "yellow-new-49": { hex: "#a36500" },
+          "yellow-new-5": { hex: "#ecd8ab" },
+          "yellow-new-50": { hex: "#a16300" },
+          "yellow-new-51": { hex: "#9c6000" },
+          "yellow-new-52": { hex: "#975d00" },
+          "yellow-new-53": { hex: "#925a00" },
+          "yellow-new-54": { hex: "#8d5700" },
+          "yellow-new-55": { hex: "#885400" },
+          "yellow-new-56": { hex: "#845100" },
+          "yellow-new-57": { hex: "#7f4f00" },
+          "yellow-new-58": { hex: "#7b4c00" },
+          "yellow-new-59": { hex: "#764900" },
+          "yellow-new-6": { hex: "#ead5a5" },
+          "yellow-new-60": { hex: "#724700" },
+          "yellow-new-61": { hex: "#6e4400" },
+          "yellow-new-62": { hex: "#6a4200" },
+          "yellow-new-63": { hex: "#664000" },
+          "yellow-new-64": { hex: "#623d00" },
+          "yellow-new-65": { hex: "#5e3b00" },
+          "yellow-new-66": { hex: "#5a3900" },
+          "yellow-new-67": { hex: "#563700" },
+          "yellow-new-68": { hex: "#533400" },
+          "yellow-new-69": { hex: "#4f3200" },
+          "yellow-new-7": { hex: "#e9d29f" },
+          "yellow-new-70": { hex: "#4c3000" },
+          "yellow-new-71": { hex: "#492e00" },
+          "yellow-new-72": { hex: "#462c00" },
+          "yellow-new-73": { hex: "#422a00" },
+          "yellow-new-74": { hex: "#3f2800" },
+          "yellow-new-75": { hex: "#3c2600" },
+          "yellow-new-76": { hex: "#392400" },
+          "yellow-new-77": { hex: "#372300" },
+          "yellow-new-78": { hex: "#342100" },
+          "yellow-new-79": { hex: "#311f00" },
+          "yellow-new-8": { hex: "#e7cf99" },
+          "yellow-new-80": { hex: "#2e1d00" },
+          "yellow-new-81": { hex: "#2c1c00" },
+          "yellow-new-82": { hex: "#291a00" },
+          "yellow-new-83": { hex: "#271800" },
+          "yellow-new-84": { hex: "#241700" },
+          "yellow-new-85": { hex: "#221500" },
+          "yellow-new-86": { hex: "#201400" },
+          "yellow-new-87": { hex: "#1e1200" },
+          "yellow-new-88": { hex: "#1c1100" },
+          "yellow-new-89": { hex: "#190f00" },
+          "yellow-new-9": { hex: "#e6cc93" },
+          "yellow-new-90": { hex: "#170e00" },
+          "yellow-new-91": { hex: "#150c00" },
+          "yellow-new-92": { hex: "#130b00" },
+          "yellow-new-93": { hex: "#120a00" },
+          "yellow-new-94": { hex: "#100900" },
+          "yellow-new-95": { hex: "#0e0700" },
+          "yellow-new-96": { hex: "#0c0600" },
+          "yellow-new-97": { hex: "#0a0600" },
+          "yellow-new-98": { hex: "#090500" },
+          "yellow-new-99": { hex: "#070400" },
         };
       },
       674746: function (e, t) {
@@ -21620,106 +21620,106 @@
           YELLOW_860: "#1c1002",
           YELLOW_900: "#160e02",
           YOUTUBE: "#cb2120",
-          BLUE_NEW_1: "#d8e9fc",
-          BLUE_NEW_10: "#b0d2f9",
+          BLUE_NEW_1: "#d7e9fc",
+          BLUE_NEW_10: "#add2f9",
           BLUE_NEW_100: "#010409",
-          BLUE_NEW_11: "#abcff8",
-          BLUE_NEW_12: "#a7ccf8",
-          BLUE_NEW_13: "#a3caf7",
-          BLUE_NEW_14: "#9fc7f7",
-          BLUE_NEW_15: "#9bc5f6",
-          BLUE_NEW_16: "#97c2f6",
-          BLUE_NEW_17: "#93c0f6",
-          BLUE_NEW_18: "#8fbdf5",
-          BLUE_NEW_19: "#8bbbf5",
-          BLUE_NEW_2: "#d3e6fc",
-          BLUE_NEW_20: "#87b9f4",
-          BLUE_NEW_21: "#83b6f4",
-          BLUE_NEW_22: "#7fb4f3",
-          BLUE_NEW_23: "#7bb1f2",
-          BLUE_NEW_24: "#77aff2",
-          BLUE_NEW_25: "#74adf1",
-          BLUE_NEW_26: "#70aaf1",
-          BLUE_NEW_27: "#6ca8f0",
-          BLUE_NEW_28: "#68a6f0",
-          BLUE_NEW_29: "#65a3ef",
-          BLUE_NEW_3: "#cfe4fc",
-          BLUE_NEW_30: "#61a1ef",
-          BLUE_NEW_31: "#5d9fee",
-          BLUE_NEW_32: "#599cee",
-          BLUE_NEW_33: "#569aed",
-          BLUE_NEW_34: "#5298ec",
-          BLUE_NEW_35: "#4e95ec",
-          BLUE_NEW_36: "#4a93eb",
-          BLUE_NEW_37: "#4791eb",
-          BLUE_NEW_38: "#438fea",
-          BLUE_NEW_39: "#3f8cea",
-          BLUE_NEW_4: "#cae1fb",
-          BLUE_NEW_40: "#3b8ae9",
-          BLUE_NEW_41: "#3788e8",
-          BLUE_NEW_42: "#3386e8",
-          BLUE_NEW_43: "#2e83e7",
-          BLUE_NEW_44: "#2a81e7",
-          BLUE_NEW_45: "#257fe6",
-          BLUE_NEW_46: "#207de5",
-          BLUE_NEW_47: "#1a7be5",
-          BLUE_NEW_48: "#1378e4",
-          BLUE_NEW_49: "#0b76e4",
-          BLUE_NEW_5: "#c6defb",
+          BLUE_NEW_11: "#a8cff8",
+          BLUE_NEW_12: "#a4ccf8",
+          BLUE_NEW_13: "#a0caf8",
+          BLUE_NEW_14: "#9bc7f7",
+          BLUE_NEW_15: "#97c5f7",
+          BLUE_NEW_16: "#93c2f6",
+          BLUE_NEW_17: "#8fc0f6",
+          BLUE_NEW_18: "#8abdf5",
+          BLUE_NEW_19: "#86bbf5",
+          BLUE_NEW_2: "#d2e6fc",
+          BLUE_NEW_20: "#82b9f4",
+          BLUE_NEW_21: "#7eb6f4",
+          BLUE_NEW_22: "#7ab4f3",
+          BLUE_NEW_23: "#76b1f3",
+          BLUE_NEW_24: "#72aff2",
+          BLUE_NEW_25: "#6eadf2",
+          BLUE_NEW_26: "#6aaaf1",
+          BLUE_NEW_27: "#66a8f1",
+          BLUE_NEW_28: "#62a5f0",
+          BLUE_NEW_29: "#5ea3ef",
+          BLUE_NEW_3: "#cde4fc",
+          BLUE_NEW_30: "#5aa1ef",
+          BLUE_NEW_31: "#569eee",
+          BLUE_NEW_32: "#519cee",
+          BLUE_NEW_33: "#4d9aed",
+          BLUE_NEW_34: "#4997ed",
+          BLUE_NEW_35: "#4595ec",
+          BLUE_NEW_36: "#4193ec",
+          BLUE_NEW_37: "#3c91eb",
+          BLUE_NEW_38: "#388eea",
+          BLUE_NEW_39: "#338cea",
+          BLUE_NEW_4: "#c8e1fb",
+          BLUE_NEW_40: "#2e8ae9",
+          BLUE_NEW_41: "#2988e9",
+          BLUE_NEW_42: "#2385e8",
+          BLUE_NEW_43: "#1d83e7",
+          BLUE_NEW_44: "#1581e7",
+          BLUE_NEW_45: "#0b7fe6",
+          BLUE_NEW_46: "#007ce6",
+          BLUE_NEW_47: "#007ae5",
+          BLUE_NEW_48: "#0078e4",
+          BLUE_NEW_49: "#0076e4",
+          BLUE_NEW_5: "#c4defb",
           BLUE_NEW_50: "#0074e3",
-          BLUE_NEW_51: "#0471db",
-          BLUE_NEW_52: "#076dd3",
-          BLUE_NEW_53: "#096acb",
-          BLUE_NEW_54: "#0c66c4",
-          BLUE_NEW_55: "#0d63bc",
-          BLUE_NEW_56: "#0f60b5",
-          BLUE_NEW_57: "#105dae",
-          BLUE_NEW_58: "#105aa8",
-          BLUE_NEW_59: "#1157a1",
-          BLUE_NEW_6: "#c1dcfa",
-          BLUE_NEW_60: "#11549b",
-          BLUE_NEW_61: "#125195",
-          BLUE_NEW_62: "#124e8f",
-          BLUE_NEW_63: "#124b89",
-          BLUE_NEW_64: "#124883",
-          BLUE_NEW_65: "#12467e",
-          BLUE_NEW_66: "#124379",
-          BLUE_NEW_67: "#124073",
-          BLUE_NEW_68: "#113e6e",
-          BLUE_NEW_69: "#113b6a",
-          BLUE_NEW_7: "#bdd9fa",
-          BLUE_NEW_70: "#103965",
-          BLUE_NEW_71: "#103760",
-          BLUE_NEW_72: "#10345c",
-          BLUE_NEW_73: "#0f3258",
-          BLUE_NEW_74: "#0f3053",
-          BLUE_NEW_75: "#0e2d4f",
-          BLUE_NEW_76: "#0d2b4b",
-          BLUE_NEW_77: "#0d2948",
-          BLUE_NEW_78: "#0c2744",
-          BLUE_NEW_79: "#0c2540",
-          BLUE_NEW_8: "#b8d7fa",
-          BLUE_NEW_80: "#0b233d",
-          BLUE_NEW_81: "#0a2139",
-          BLUE_NEW_82: "#0a1f36",
-          BLUE_NEW_83: "#091d33",
-          BLUE_NEW_84: "#081b30",
-          BLUE_NEW_85: "#081a2d",
-          BLUE_NEW_86: "#07182a",
-          BLUE_NEW_87: "#071627",
-          BLUE_NEW_88: "#061424",
-          BLUE_NEW_89: "#061321",
-          BLUE_NEW_9: "#b4d4f9",
-          BLUE_NEW_90: "#05111f",
-          BLUE_NEW_91: "#050f1c",
-          BLUE_NEW_92: "#040e1a",
-          BLUE_NEW_93: "#040c17",
+          BLUE_NEW_51: "#0070db",
+          BLUE_NEW_52: "#006dd3",
+          BLUE_NEW_53: "#0069cb",
+          BLUE_NEW_54: "#0066c4",
+          BLUE_NEW_55: "#0063bc",
+          BLUE_NEW_56: "#0060b5",
+          BLUE_NEW_57: "#005dae",
+          BLUE_NEW_58: "#005aa8",
+          BLUE_NEW_59: "#0057a1",
+          BLUE_NEW_6: "#bfdcfb",
+          BLUE_NEW_60: "#00549b",
+          BLUE_NEW_61: "#005195",
+          BLUE_NEW_62: "#024e8f",
+          BLUE_NEW_63: "#044b89",
+          BLUE_NEW_64: "#054883",
+          BLUE_NEW_65: "#06467e",
+          BLUE_NEW_66: "#074379",
+          BLUE_NEW_67: "#084074",
+          BLUE_NEW_68: "#083e6f",
+          BLUE_NEW_69: "#093b6a",
+          BLUE_NEW_7: "#bad9fa",
+          BLUE_NEW_70: "#093965",
+          BLUE_NEW_71: "#093660",
+          BLUE_NEW_72: "#09345c",
+          BLUE_NEW_73: "#093258",
+          BLUE_NEW_74: "#093053",
+          BLUE_NEW_75: "#092d4f",
+          BLUE_NEW_76: "#092b4b",
+          BLUE_NEW_77: "#092948",
+          BLUE_NEW_78: "#082744",
+          BLUE_NEW_79: "#082540",
+          BLUE_NEW_8: "#b6d7fa",
+          BLUE_NEW_80: "#08233d",
+          BLUE_NEW_81: "#072139",
+          BLUE_NEW_82: "#071f36",
+          BLUE_NEW_83: "#071d33",
+          BLUE_NEW_84: "#061b30",
+          BLUE_NEW_85: "#06192d",
+          BLUE_NEW_86: "#06182a",
+          BLUE_NEW_87: "#051627",
+          BLUE_NEW_88: "#051424",
+          BLUE_NEW_89: "#041321",
+          BLUE_NEW_9: "#b1d4f9",
+          BLUE_NEW_90: "#04111f",
+          BLUE_NEW_91: "#040f1c",
+          BLUE_NEW_92: "#030e1a",
+          BLUE_NEW_93: "#030c17",
           BLUE_NEW_94: "#030b15",
-          BLUE_NEW_95: "#030913",
-          BLUE_NEW_96: "#030811",
+          BLUE_NEW_95: "#020913",
+          BLUE_NEW_96: "#020811",
           BLUE_NEW_97: "#02070f",
           BLUE_NEW_98: "#02060d",
-          BLUE_NEW_99: "#02050b",
+          BLUE_NEW_99: "#01050b",
           BLURPLE_1: "#dfe7ff",
           BLURPLE_10: "#becdfe",
           BLURPLE_100: "#030409",
@@ -21820,106 +21820,106 @@
           BLURPLE_97: "#040610",
           BLURPLE_98: "#04050e",
           BLURPLE_99: "#03050b",
-          GREEN_NEW_1: "#d8ebd8",
-          GREEN_NEW_10: "#b0d6b2",
-          GREEN_NEW_100: "#020502",
-          GREEN_NEW_11: "#acd4ae",
-          GREEN_NEW_12: "#a8d2ab",
-          GREEN_NEW_13: "#a3d0a7",
-          GREEN_NEW_14: "#9fcda3",
-          GREEN_NEW_15: "#9bcb9f",
-          GREEN_NEW_16: "#97c99c",
-          GREEN_NEW_17: "#93c798",
-          GREEN_NEW_18: "#8fc595",
-          GREEN_NEW_19: "#8bc291",
-          GREEN_NEW_2: "#d3e9d4",
-          GREEN_NEW_20: "#88c08e",
-          GREEN_NEW_21: "#84be8a",
-          GREEN_NEW_22: "#80bc87",
-          GREEN_NEW_23: "#7cba84",
-          GREEN_NEW_24: "#78b880",
-          GREEN_NEW_25: "#74b67d",
-          GREEN_NEW_26: "#71b47a",
-          GREEN_NEW_27: "#6db277",
-          GREEN_NEW_28: "#69af74",
-          GREEN_NEW_29: "#66ad71",
-          GREEN_NEW_3: "#cfe7d0",
-          GREEN_NEW_30: "#62ab6e",
-          GREEN_NEW_31: "#5ea96b",
-          GREEN_NEW_32: "#5ba768",
-          GREEN_NEW_33: "#57a565",
-          GREEN_NEW_34: "#53a462",
-          GREEN_NEW_35: "#4fa260",
-          GREEN_NEW_36: "#4ca05d",
-          GREEN_NEW_37: "#489e5a",
-          GREEN_NEW_38: "#449c58",
-          GREEN_NEW_39: "#409a55",
-          GREEN_NEW_4: "#cae4cb",
-          GREEN_NEW_40: "#3c9852",
-          GREEN_NEW_41: "#389650",
-          GREEN_NEW_42: "#34944d",
-          GREEN_NEW_43: "#30924b",
-          GREEN_NEW_44: "#2b9148",
-          GREEN_NEW_45: "#268f46",
-          GREEN_NEW_46: "#218d43",
-          GREEN_NEW_47: "#1b8b41",
-          GREEN_NEW_48: "#148a3f",
-          GREEN_NEW_49: "#0b883c",
-          GREEN_NEW_5: "#c6e2c7",
+          GREEN_NEW_1: "#d5ecd8",
+          GREEN_NEW_10: "#aad7b2",
+          GREEN_NEW_100: "#010502",
+          GREEN_NEW_11: "#a5d4ae",
+          GREEN_NEW_12: "#a1d2ab",
+          GREEN_NEW_13: "#9cd0a7",
+          GREEN_NEW_14: "#98cea3",
+          GREEN_NEW_15: "#93cc9f",
+          GREEN_NEW_16: "#8fc99c",
+          GREEN_NEW_17: "#8bc798",
+          GREEN_NEW_18: "#86c595",
+          GREEN_NEW_19: "#82c391",
+          GREEN_NEW_2: "#d0e9d4",
+          GREEN_NEW_20: "#7ec18e",
+          GREEN_NEW_21: "#79be8a",
+          GREEN_NEW_22: "#75bc87",
+          GREEN_NEW_23: "#71ba84",
+          GREEN_NEW_24: "#6cb880",
+          GREEN_NEW_25: "#68b67d",
+          GREEN_NEW_26: "#64b47a",
+          GREEN_NEW_27: "#60b277",
+          GREEN_NEW_28: "#5bb074",
+          GREEN_NEW_29: "#57ae71",
+          GREEN_NEW_3: "#cbe7d0",
+          GREEN_NEW_30: "#52ac6e",
+          GREEN_NEW_31: "#4eaa6b",
+          GREEN_NEW_32: "#49a868",
+          GREEN_NEW_33: "#45a665",
+          GREEN_NEW_34: "#40a463",
+          GREEN_NEW_35: "#3ba260",
+          GREEN_NEW_36: "#36a05d",
+          GREEN_NEW_37: "#309e5a",
+          GREEN_NEW_38: "#2a9c58",
+          GREEN_NEW_39: "#249a55",
+          GREEN_NEW_4: "#c6e5cb",
+          GREEN_NEW_40: "#1d9853",
+          GREEN_NEW_41: "#139750",
+          GREEN_NEW_42: "#05954e",
+          GREEN_NEW_43: "#00934b",
+          GREEN_NEW_44: "#009149",
+          GREEN_NEW_45: "#008f46",
+          GREEN_NEW_46: "#008d44",
+          GREEN_NEW_47: "#008c41",
+          GREEN_NEW_48: "#008a3f",
+          GREEN_NEW_49: "#00883d",
+          GREEN_NEW_5: "#c1e2c7",
           GREEN_NEW_50: "#00863a",
-          GREEN_NEW_51: "#048238",
-          GREEN_NEW_52: "#087d37",
-          GREEN_NEW_53: "#0b7935",
-          GREEN_NEW_54: "#0d7534",
-          GREEN_NEW_55: "#0f7132",
-          GREEN_NEW_56: "#106d31",
-          GREEN_NEW_57: "#116a2f",
-          GREEN_NEW_58: "#12662e",
-          GREEN_NEW_59: "#13622c",
-          GREEN_NEW_6: "#c1e0c3",
-          GREEN_NEW_60: "#135f2b",
-          GREEN_NEW_61: "#135b29",
-          GREEN_NEW_62: "#145828",
-          GREEN_NEW_63: "#145426",
-          GREEN_NEW_64: "#135125",
-          GREEN_NEW_65: "#134e24",
-          GREEN_NEW_66: "#134b22",
-          GREEN_NEW_67: "#134821",
-          GREEN_NEW_68: "#124520",
-          GREEN_NEW_69: "#12421e",
-          GREEN_NEW_7: "#bdddbe",
-          GREEN_NEW_70: "#123f1d",
-          GREEN_NEW_71: "#113d1c",
-          GREEN_NEW_72: "#113a1b",
-          GREEN_NEW_73: "#103719",
-          GREEN_NEW_74: "#103518",
-          GREEN_NEW_75: "#0f3217",
-          GREEN_NEW_76: "#0e3016",
-          GREEN_NEW_77: "#0e2d15",
-          GREEN_NEW_78: "#0d2b13",
-          GREEN_NEW_79: "#0c2912",
-          GREEN_NEW_8: "#b8dbba",
-          GREEN_NEW_80: "#0c2711",
-          GREEN_NEW_81: "#0b2410",
-          GREEN_NEW_82: "#0a220f",
-          GREEN_NEW_83: "#0a200e",
-          GREEN_NEW_84: "#091e0d",
-          GREEN_NEW_85: "#081c0c",
-          GREEN_NEW_86: "#081a0b",
-          GREEN_NEW_87: "#07180a",
-          GREEN_NEW_88: "#061609",
-          GREEN_NEW_89: "#061508",
-          GREEN_NEW_9: "#b4d9b6",
-          GREEN_NEW_90: "#051307",
-          GREEN_NEW_91: "#051106",
-          GREEN_NEW_92: "#041006",
-          GREEN_NEW_93: "#040e05",
-          GREEN_NEW_94: "#030c04",
-          GREEN_NEW_95: "#030b04",
-          GREEN_NEW_96: "#030903",
+          GREEN_NEW_51: "#008239",
+          GREEN_NEW_52: "#007e37",
+          GREEN_NEW_53: "#007a36",
+          GREEN_NEW_54: "#007534",
+          GREEN_NEW_55: "#007132",
+          GREEN_NEW_56: "#006e31",
+          GREEN_NEW_57: "#006a2f",
+          GREEN_NEW_58: "#00662e",
+          GREEN_NEW_59: "#00622c",
+          GREEN_NEW_6: "#bde0c3",
+          GREEN_NEW_60: "#005f2b",
+          GREEN_NEW_61: "#005b29",
+          GREEN_NEW_62: "#005828",
+          GREEN_NEW_63: "#005527",
+          GREEN_NEW_64: "#005125",
+          GREEN_NEW_65: "#004e24",
+          GREEN_NEW_66: "#004b22",
+          GREEN_NEW_67: "#004821",
+          GREEN_NEW_68: "#004520",
+          GREEN_NEW_69: "#00421e",
+          GREEN_NEW_7: "#b8debf",
+          GREEN_NEW_70: "#01401d",
+          GREEN_NEW_71: "#023d1c",
+          GREEN_NEW_72: "#033a1b",
+          GREEN_NEW_73: "#033719",
+          GREEN_NEW_74: "#043518",
+          GREEN_NEW_75: "#043217",
+          GREEN_NEW_76: "#053016",
+          GREEN_NEW_77: "#052e15",
+          GREEN_NEW_78: "#052b13",
+          GREEN_NEW_79: "#052912",
+          GREEN_NEW_8: "#b3dbba",
+          GREEN_NEW_80: "#052711",
+          GREEN_NEW_81: "#052410",
+          GREEN_NEW_82: "#05220f",
+          GREEN_NEW_83: "#05200e",
+          GREEN_NEW_84: "#041e0d",
+          GREEN_NEW_85: "#041c0c",
+          GREEN_NEW_86: "#041a0b",
+          GREEN_NEW_87: "#04180a",
+          GREEN_NEW_88: "#041709",
+          GREEN_NEW_89: "#031508",
+          GREEN_NEW_9: "#afd9b6",
+          GREEN_NEW_90: "#031307",
+          GREEN_NEW_91: "#031106",
+          GREEN_NEW_92: "#031006",
+          GREEN_NEW_93: "#020e05",
+          GREEN_NEW_94: "#020c04",
+          GREEN_NEW_95: "#020b04",
+          GREEN_NEW_96: "#020903",
           GREEN_NEW_97: "#020803",
-          GREEN_NEW_98: "#020702",
-          GREEN_NEW_99: "#020602",
+          GREEN_NEW_98: "#010702",
+          GREEN_NEW_99: "#010602",
           NEUTRAL_1: "#fff",
           NEUTRAL_10: "#d3d3d7",
           NEUTRAL_100: "#020203",
@@ -22020,106 +22020,106 @@
           NEUTRAL_97: "#040405",
           NEUTRAL_98: "#030304",
           NEUTRAL_99: "#030303",
-          ORANGE_NEW_1: "#fde0ce",
-          ORANGE_NEW_10: "#f6c09f",
-          ORANGE_NEW_100: "#080301",
-          ORANGE_NEW_11: "#f5bd9a",
-          ORANGE_NEW_12: "#f4ba95",
-          ORANGE_NEW_13: "#f3b691",
-          ORANGE_NEW_14: "#f1b38c",
-          ORANGE_NEW_15: "#f0b088",
-          ORANGE_NEW_16: "#efad83",
-          ORANGE_NEW_17: "#eea97f",
-          ORANGE_NEW_18: "#eda67b",
-          ORANGE_NEW_19: "#eba376",
-          ORANGE_NEW_2: "#fcddc8",
-          ORANGE_NEW_20: "#eaa072",
-          ORANGE_NEW_21: "#e99d6e",
-          ORANGE_NEW_22: "#e89a6a",
-          ORANGE_NEW_23: "#e69766",
-          ORANGE_NEW_24: "#e59463",
-          ORANGE_NEW_25: "#e4915f",
-          ORANGE_NEW_26: "#e28e5b",
-          ORANGE_NEW_27: "#e18b57",
-          ORANGE_NEW_28: "#df8854",
-          ORANGE_NEW_29: "#de8550",
-          ORANGE_NEW_3: "#fbd9c3",
-          ORANGE_NEW_30: "#dc834d",
-          ORANGE_NEW_31: "#db8049",
-          ORANGE_NEW_32: "#d97d46",
-          ORANGE_NEW_33: "#d87a42",
-          ORANGE_NEW_34: "#d6783f",
-          ORANGE_NEW_35: "#d5753b",
-          ORANGE_NEW_36: "#d37238",
-          ORANGE_NEW_37: "#d27035",
-          ORANGE_NEW_38: "#d06d31",
-          ORANGE_NEW_39: "#cf6a2e",
-          ORANGE_NEW_4: "#fbd5bd",
-          ORANGE_NEW_40: "#cd682a",
-          ORANGE_NEW_41: "#cb6527",
-          ORANGE_NEW_42: "#ca6323",
-          ORANGE_NEW_43: "#c86020",
-          ORANGE_NEW_44: "#c75e1c",
-          ORANGE_NEW_45: "#c55b18",
-          ORANGE_NEW_46: "#c35914",
-          ORANGE_NEW_47: "#c25610",
-          ORANGE_NEW_48: "#c0540b",
-          ORANGE_NEW_49: "#bf5105",
-          ORANGE_NEW_5: "#fad2b8",
+          ORANGE_NEW_1: "#fde1ca",
+          ORANGE_NEW_10: "#f5c197",
+          ORANGE_NEW_100: "#080300",
+          ORANGE_NEW_11: "#f4be92",
+          ORANGE_NEW_12: "#f3ba8d",
+          ORANGE_NEW_13: "#f2b788",
+          ORANGE_NEW_14: "#f1b484",
+          ORANGE_NEW_15: "#f0b07f",
+          ORANGE_NEW_16: "#efad7a",
+          ORANGE_NEW_17: "#eeaa76",
+          ORANGE_NEW_18: "#eca771",
+          ORANGE_NEW_19: "#eba46d",
+          ORANGE_NEW_2: "#fcddc4",
+          ORANGE_NEW_20: "#eaa068",
+          ORANGE_NEW_21: "#e99d64",
+          ORANGE_NEW_22: "#e79a60",
+          ORANGE_NEW_23: "#e6975b",
+          ORANGE_NEW_24: "#e59457",
+          ORANGE_NEW_25: "#e39153",
+          ORANGE_NEW_26: "#e28e4f",
+          ORANGE_NEW_27: "#e08b4b",
+          ORANGE_NEW_28: "#df8947",
+          ORANGE_NEW_29: "#dd8643",
+          ORANGE_NEW_3: "#fbd9be",
+          ORANGE_NEW_30: "#dc833f",
+          ORANGE_NEW_31: "#db803b",
+          ORANGE_NEW_32: "#d97d37",
+          ORANGE_NEW_33: "#d87b33",
+          ORANGE_NEW_34: "#d6782f",
+          ORANGE_NEW_35: "#d4752b",
+          ORANGE_NEW_36: "#d37227",
+          ORANGE_NEW_37: "#d17023",
+          ORANGE_NEW_38: "#d06d1f",
+          ORANGE_NEW_39: "#ce6a1a",
+          ORANGE_NEW_4: "#fbd6b8",
+          ORANGE_NEW_40: "#cd6815",
+          ORANGE_NEW_41: "#cb650f",
+          ORANGE_NEW_42: "#ca6308",
+          ORANGE_NEW_43: "#c86001",
+          ORANGE_NEW_44: "#c65e00",
+          ORANGE_NEW_45: "#c55b00",
+          ORANGE_NEW_46: "#c35900",
+          ORANGE_NEW_47: "#c15600",
+          ORANGE_NEW_48: "#c05400",
+          ORANGE_NEW_49: "#be5100",
+          ORANGE_NEW_5: "#fad2b2",
           ORANGE_NEW_50: "#bd4f00",
-          ORANGE_NEW_51: "#b74d01",
-          ORANGE_NEW_52: "#b14b03",
-          ORANGE_NEW_53: "#ab4804",
-          ORANGE_NEW_54: "#a54604",
-          ORANGE_NEW_55: "#9f4405",
-          ORANGE_NEW_56: "#9a4206",
-          ORANGE_NEW_57: "#944006",
-          ORANGE_NEW_58: "#8f3e07",
-          ORANGE_NEW_59: "#8a3c07",
-          ORANGE_NEW_6: "#f9ceb3",
-          ORANGE_NEW_60: "#853a07",
-          ORANGE_NEW_61: "#803808",
-          ORANGE_NEW_62: "#7b3608",
-          ORANGE_NEW_63: "#763408",
-          ORANGE_NEW_64: "#723208",
-          ORANGE_NEW_65: "#6d3108",
-          ORANGE_NEW_66: "#692f08",
-          ORANGE_NEW_67: "#652d08",
-          ORANGE_NEW_68: "#612b08",
-          ORANGE_NEW_69: "#5d2a07",
-          ORANGE_NEW_7: "#f8cbae",
-          ORANGE_NEW_70: "#592807",
-          ORANGE_NEW_71: "#552607",
-          ORANGE_NEW_72: "#512507",
-          ORANGE_NEW_73: "#4d2307",
-          ORANGE_NEW_74: "#4a2106",
-          ORANGE_NEW_75: "#462006",
-          ORANGE_NEW_76: "#431e06",
-          ORANGE_NEW_77: "#401d06",
-          ORANGE_NEW_78: "#3d1b05",
-          ORANGE_NEW_79: "#3a1a05",
-          ORANGE_NEW_8: "#f8c7a8",
-          ORANGE_NEW_80: "#361805",
-          ORANGE_NEW_81: "#341704",
-          ORANGE_NEW_82: "#311504",
-          ORANGE_NEW_83: "#2e1404",
-          ORANGE_NEW_84: "#2b1304",
-          ORANGE_NEW_85: "#281103",
-          ORANGE_NEW_86: "#261003",
-          ORANGE_NEW_87: "#230f03",
-          ORANGE_NEW_88: "#210e03",
-          ORANGE_NEW_89: "#1e0c03",
-          ORANGE_NEW_9: "#f7c4a4",
-          ORANGE_NEW_90: "#1c0b02",
-          ORANGE_NEW_91: "#1a0a02",
-          ORANGE_NEW_92: "#180902",
-          ORANGE_NEW_93: "#150802",
-          ORANGE_NEW_94: "#130702",
+          ORANGE_NEW_51: "#b64d00",
+          ORANGE_NEW_52: "#b04a00",
+          ORANGE_NEW_53: "#aa4800",
+          ORANGE_NEW_54: "#a44600",
+          ORANGE_NEW_55: "#9f4400",
+          ORANGE_NEW_56: "#994200",
+          ORANGE_NEW_57: "#944000",
+          ORANGE_NEW_58: "#8f3e00",
+          ORANGE_NEW_59: "#893c00",
+          ORANGE_NEW_6: "#f9cfad",
+          ORANGE_NEW_60: "#843a00",
+          ORANGE_NEW_61: "#7f3800",
+          ORANGE_NEW_62: "#7b3600",
+          ORANGE_NEW_63: "#763400",
+          ORANGE_NEW_64: "#713200",
+          ORANGE_NEW_65: "#6d3100",
+          ORANGE_NEW_66: "#692f00",
+          ORANGE_NEW_67: "#652d00",
+          ORANGE_NEW_68: "#602b00",
+          ORANGE_NEW_69: "#5c2a00",
+          ORANGE_NEW_7: "#f8cba7",
+          ORANGE_NEW_70: "#582800",
+          ORANGE_NEW_71: "#552600",
+          ORANGE_NEW_72: "#512500",
+          ORANGE_NEW_73: "#4d2300",
+          ORANGE_NEW_74: "#4a2100",
+          ORANGE_NEW_75: "#462000",
+          ORANGE_NEW_76: "#431e01",
+          ORANGE_NEW_77: "#401d01",
+          ORANGE_NEW_78: "#3d1b01",
+          ORANGE_NEW_79: "#391a01",
+          ORANGE_NEW_8: "#f7c8a2",
+          ORANGE_NEW_80: "#361801",
+          ORANGE_NEW_81: "#331701",
+          ORANGE_NEW_82: "#311601",
+          ORANGE_NEW_83: "#2e1401",
+          ORANGE_NEW_84: "#2b1301",
+          ORANGE_NEW_85: "#281101",
+          ORANGE_NEW_86: "#261001",
+          ORANGE_NEW_87: "#230f01",
+          ORANGE_NEW_88: "#210e01",
+          ORANGE_NEW_89: "#1e0c01",
+          ORANGE_NEW_9: "#f6c49d",
+          ORANGE_NEW_90: "#1c0b01",
+          ORANGE_NEW_91: "#1a0a01",
+          ORANGE_NEW_92: "#180901",
+          ORANGE_NEW_93: "#150801",
+          ORANGE_NEW_94: "#130701",
           ORANGE_NEW_95: "#110601",
           ORANGE_NEW_96: "#0f0501",
           ORANGE_NEW_97: "#0d0401",
           ORANGE_NEW_98: "#0b0401",
-          ORANGE_NEW_99: "#0a0301",
+          ORANGE_NEW_99: "#0a0300",
           RED_NEW_1: "#ffdad4",
           RED_NEW_10: "#ffb4aa",
           RED_NEW_100: "#0b0201",
@@ -22132,8 +22132,8 @@
           RED_NEW_17: "#ff988d",
           RED_NEW_18: "#ff9489",
           RED_NEW_19: "#ff9085",
-          RED_NEW_2: "#ffd5cf",
-          RED_NEW_20: "#ff8c82",
+          RED_NEW_2: "#ffd5ce",
+          RED_NEW_20: "#ff8c81",
           RED_NEW_21: "#ff887e",
           RED_NEW_22: "#ff857a",
           RED_NEW_23: "#ff8177",
@@ -22149,29 +22149,29 @@
           RED_NEW_32: "#fa605a",
           RED_NEW_33: "#f85d57",
           RED_NEW_34: "#f75954",
-          RED_NEW_35: "#f65651",
+          RED_NEW_35: "#f55651",
           RED_NEW_36: "#f4524e",
           RED_NEW_37: "#f34e4b",
-          RED_NEW_38: "#f14b49",
+          RED_NEW_38: "#f14b48",
           RED_NEW_39: "#f04746",
           RED_NEW_4: "#ffcdc5",
           RED_NEW_40: "#ee4343",
-          RED_NEW_41: "#ed3f40",
+          RED_NEW_41: "#ec4040",
           RED_NEW_42: "#eb3c3e",
           RED_NEW_43: "#e9383b",
-          RED_NEW_44: "#e83339",
+          RED_NEW_44: "#e83439",
           RED_NEW_45: "#e62f36",
-          RED_NEW_46: "#e52b34",
+          RED_NEW_46: "#e42b34",
           RED_NEW_47: "#e32631",
           RED_NEW_48: "#e1212f",
           RED_NEW_49: "#e01b2c",
           RED_NEW_5: "#ffc9c0",
           RED_NEW_50: "#de142a",
-          RED_NEW_51: "#d71629",
+          RED_NEW_51: "#d61629",
           RED_NEW_52: "#cf1728",
           RED_NEW_53: "#c81827",
           RED_NEW_54: "#c11926",
-          RED_NEW_55: "#bb1925",
+          RED_NEW_55: "#bb1a24",
           RED_NEW_56: "#b41a23",
           RED_NEW_57: "#ae1a22",
           RED_NEW_58: "#a81a21",
@@ -22182,19 +22182,19 @@
           RED_NEW_62: "#901a1d",
           RED_NEW_63: "#8b191c",
           RED_NEW_64: "#86191b",
-          RED_NEW_65: "#80181a",
+          RED_NEW_65: "#80191a",
           RED_NEW_66: "#7b1819",
           RED_NEW_67: "#761718",
           RED_NEW_68: "#721717",
           RED_NEW_69: "#6d1616",
           RED_NEW_7: "#ffc1b8",
-          RED_NEW_70: "#681515",
+          RED_NEW_70: "#681615",
           RED_NEW_71: "#641514",
           RED_NEW_72: "#601413",
           RED_NEW_73: "#5b1312",
           RED_NEW_74: "#571311",
           RED_NEW_75: "#531210",
-          RED_NEW_76: "#4f1110",
+          RED_NEW_76: "#4f110f",
           RED_NEW_77: "#4b100f",
           RED_NEW_78: "#48100e",
           RED_NEW_79: "#440f0d",
@@ -22207,7 +22207,7 @@
           RED_NEW_85: "#300a08",
           RED_NEW_86: "#2d0907",
           RED_NEW_87: "#2a0806",
-          RED_NEW_88: "#280706",
+          RED_NEW_88: "#270706",
           RED_NEW_89: "#250705",
           RED_NEW_9: "#ffb8af",
           RED_NEW_90: "#220605",
@@ -22220,206 +22220,206 @@
           RED_NEW_97: "#110302",
           RED_NEW_98: "#0f0202",
           RED_NEW_99: "#0d0202",
-          TEAL_NEW_1: "#d9eaeb",
-          TEAL_NEW_10: "#b1d3d6",
-          TEAL_NEW_100: "#020405",
-          TEAL_NEW_11: "#add1d4",
-          TEAL_NEW_12: "#a9ced2",
-          TEAL_NEW_13: "#a5ccd0",
-          TEAL_NEW_14: "#a1c9cd",
-          TEAL_NEW_15: "#9dc7cb",
-          TEAL_NEW_16: "#99c5c9",
-          TEAL_NEW_17: "#95c3c7",
-          TEAL_NEW_18: "#91c0c5",
-          TEAL_NEW_19: "#8dbec3",
-          TEAL_NEW_2: "#d4e7e9",
-          TEAL_NEW_20: "#89bcc1",
-          TEAL_NEW_21: "#85babf",
-          TEAL_NEW_22: "#82b7bd",
-          TEAL_NEW_23: "#7eb5bb",
-          TEAL_NEW_24: "#7ab3b9",
-          TEAL_NEW_25: "#76b1b7",
-          TEAL_NEW_26: "#73afb5",
-          TEAL_NEW_27: "#6fadb3",
-          TEAL_NEW_28: "#6babb1",
-          TEAL_NEW_29: "#67a9af",
-          TEAL_NEW_3: "#d0e4e6",
-          TEAL_NEW_30: "#64a6ad",
-          TEAL_NEW_31: "#60a4ab",
-          TEAL_NEW_32: "#5ca2a9",
-          TEAL_NEW_33: "#59a0a7",
-          TEAL_NEW_34: "#559ea6",
-          TEAL_NEW_35: "#519da4",
-          TEAL_NEW_36: "#4d9ba2",
-          TEAL_NEW_37: "#4999a0",
-          TEAL_NEW_38: "#46979e",
-          TEAL_NEW_39: "#42959d",
-          TEAL_NEW_4: "#cbe2e4",
-          TEAL_NEW_40: "#3e939b",
-          TEAL_NEW_41: "#3a9199",
-          TEAL_NEW_42: "#358f97",
-          TEAL_NEW_43: "#318d96",
-          TEAL_NEW_44: "#2c8c94",
-          TEAL_NEW_45: "#278a92",
-          TEAL_NEW_46: "#228891",
-          TEAL_NEW_47: "#1c868f",
-          TEAL_NEW_48: "#15848d",
-          TEAL_NEW_49: "#0c838c",
-          TEAL_NEW_5: "#c7dfe2",
+          TEAL_NEW_1: "#d2ebed",
+          TEAL_NEW_10: "#a3d5d9",
+          TEAL_NEW_100: "#010505",
+          TEAL_NEW_11: "#9ed3d7",
+          TEAL_NEW_12: "#99d0d5",
+          TEAL_NEW_13: "#94ced3",
+          TEAL_NEW_14: "#8fccd1",
+          TEAL_NEW_15: "#8acacf",
+          TEAL_NEW_16: "#85c7cd",
+          TEAL_NEW_17: "#80c5cb",
+          TEAL_NEW_18: "#7bc3c9",
+          TEAL_NEW_19: "#76c1c7",
+          TEAL_NEW_2: "#cde8ea",
+          TEAL_NEW_20: "#70bfc5",
+          TEAL_NEW_21: "#6bbcc3",
+          TEAL_NEW_22: "#66bac1",
+          TEAL_NEW_23: "#61b8bf",
+          TEAL_NEW_24: "#5bb6be",
+          TEAL_NEW_25: "#56b4bc",
+          TEAL_NEW_26: "#50b2ba",
+          TEAL_NEW_27: "#4ab0b8",
+          TEAL_NEW_28: "#44aeb6",
+          TEAL_NEW_29: "#3eacb4",
+          TEAL_NEW_3: "#c8e6e8",
+          TEAL_NEW_30: "#37aab3",
+          TEAL_NEW_31: "#2fa8b1",
+          TEAL_NEW_32: "#26a6af",
+          TEAL_NEW_33: "#1ca4ad",
+          TEAL_NEW_34: "#0ca2ab",
+          TEAL_NEW_35: "#00a0aa",
+          TEAL_NEW_36: "#009ea8",
+          TEAL_NEW_37: "#009ca6",
+          TEAL_NEW_38: "#009aa5",
+          TEAL_NEW_39: "#0098a3",
+          TEAL_NEW_4: "#c2e3e6",
+          TEAL_NEW_40: "#0096a1",
+          TEAL_NEW_41: "#00949f",
+          TEAL_NEW_42: "#00929d",
+          TEAL_NEW_43: "#00909a",
+          TEAL_NEW_44: "#008e98",
+          TEAL_NEW_45: "#008c96",
+          TEAL_NEW_46: "#008993",
+          TEAL_NEW_47: "#008791",
+          TEAL_NEW_48: "#00858f",
+          TEAL_NEW_49: "#00838c",
+          TEAL_NEW_5: "#bde1e4",
           TEAL_NEW_50: "#00818a",
-          TEAL_NEW_51: "#057d85",
-          TEAL_NEW_52: "#087981",
-          TEAL_NEW_53: "#0c757d",
-          TEAL_NEW_54: "#0e7178",
-          TEAL_NEW_55: "#106d74",
-          TEAL_NEW_56: "#116970",
-          TEAL_NEW_57: "#12666c",
-          TEAL_NEW_58: "#136268",
-          TEAL_NEW_59: "#145e65",
-          TEAL_NEW_6: "#c2dddf",
-          TEAL_NEW_60: "#145b61",
-          TEAL_NEW_61: "#14585d",
-          TEAL_NEW_62: "#15545a",
-          TEAL_NEW_63: "#155156",
-          TEAL_NEW_64: "#144e53",
-          TEAL_NEW_65: "#144b50",
-          TEAL_NEW_66: "#14484d",
-          TEAL_NEW_67: "#14454a",
-          TEAL_NEW_68: "#134246",
-          TEAL_NEW_69: "#134043",
-          TEAL_NEW_7: "#bedadd",
-          TEAL_NEW_70: "#133d41",
-          TEAL_NEW_71: "#123a3e",
-          TEAL_NEW_72: "#11383b",
-          TEAL_NEW_73: "#113538",
-          TEAL_NEW_74: "#103336",
-          TEAL_NEW_75: "#103033",
-          TEAL_NEW_76: "#0f2e31",
-          TEAL_NEW_77: "#0e2c2e",
-          TEAL_NEW_78: "#0e292c",
-          TEAL_NEW_79: "#0d2729",
-          TEAL_NEW_8: "#bad8db",
-          TEAL_NEW_80: "#0c2527",
-          TEAL_NEW_81: "#0c2325",
-          TEAL_NEW_82: "#0b2123",
-          TEAL_NEW_83: "#0a1f21",
-          TEAL_NEW_84: "#091d1f",
-          TEAL_NEW_85: "#091b1d",
-          TEAL_NEW_86: "#08191b",
-          TEAL_NEW_87: "#071719",
-          TEAL_NEW_88: "#071517",
-          TEAL_NEW_89: "#061415",
-          TEAL_NEW_9: "#b6d5d9",
-          TEAL_NEW_90: "#061213",
-          TEAL_NEW_91: "#051011",
-          TEAL_NEW_92: "#050f10",
-          TEAL_NEW_93: "#040d0e",
-          TEAL_NEW_94: "#040c0c",
-          TEAL_NEW_95: "#030a0b",
-          TEAL_NEW_96: "#030909",
-          TEAL_NEW_97: "#020708",
-          TEAL_NEW_98: "#020607",
-          TEAL_NEW_99: "#020506",
-          YELLOW_NEW_1: "#f1e4ce",
-          YELLOW_NEW_10: "#e2c8a0",
-          YELLOW_NEW_100: "#060301",
-          YELLOW_NEW_11: "#e0c59b",
-          YELLOW_NEW_12: "#dec296",
-          YELLOW_NEW_13: "#ddc092",
-          YELLOW_NEW_14: "#dbbd8d",
-          YELLOW_NEW_15: "#d9ba89",
-          YELLOW_NEW_16: "#d8b784",
-          YELLOW_NEW_17: "#d6b480",
-          YELLOW_NEW_18: "#d4b17c",
-          YELLOW_NEW_19: "#d2af78",
-          YELLOW_NEW_2: "#f0e1c9",
-          YELLOW_NEW_20: "#d1ac74",
-          YELLOW_NEW_21: "#cfa970",
-          YELLOW_NEW_22: "#cda66c",
-          YELLOW_NEW_23: "#cba468",
-          YELLOW_NEW_24: "#caa164",
-          YELLOW_NEW_25: "#c89f60",
-          YELLOW_NEW_26: "#c69c5c",
-          YELLOW_NEW_27: "#c49959",
-          YELLOW_NEW_28: "#c39755",
-          YELLOW_NEW_29: "#c19451",
-          YELLOW_NEW_3: "#eedec3",
-          YELLOW_NEW_30: "#bf924e",
-          YELLOW_NEW_31: "#be8f4a",
-          YELLOW_NEW_32: "#bc8d47",
-          YELLOW_NEW_33: "#ba8b43",
-          YELLOW_NEW_34: "#b98840",
-          YELLOW_NEW_35: "#b7863c",
-          YELLOW_NEW_36: "#b58339",
-          YELLOW_NEW_37: "#b38136",
-          YELLOW_NEW_38: "#b27f32",
-          YELLOW_NEW_39: "#b07d2f",
-          YELLOW_NEW_4: "#ecdbbe",
-          YELLOW_NEW_40: "#ae7a2b",
-          YELLOW_NEW_41: "#ad7828",
-          YELLOW_NEW_42: "#ab7624",
-          YELLOW_NEW_43: "#a97421",
-          YELLOW_NEW_44: "#a8721d",
-          YELLOW_NEW_45: "#a66f19",
-          YELLOW_NEW_46: "#a56d15",
-          YELLOW_NEW_47: "#a36b11",
-          YELLOW_NEW_48: "#a1690b",
-          YELLOW_NEW_49: "#a06705",
-          YELLOW_NEW_5: "#ebd8b9",
-          YELLOW_NEW_50: "#9e6500",
-          YELLOW_NEW_51: "#996201",
-          YELLOW_NEW_52: "#945f03",
-          YELLOW_NEW_53: "#8f5c04",
-          YELLOW_NEW_54: "#8a5905",
-          YELLOW_NEW_55: "#855606",
-          YELLOW_NEW_56: "#805306",
-          YELLOW_NEW_57: "#7c5007",
-          YELLOW_NEW_58: "#774e07",
-          YELLOW_NEW_59: "#734b08",
-          YELLOW_NEW_6: "#e9d5b4",
-          YELLOW_NEW_60: "#6f4808",
-          YELLOW_NEW_61: "#6b4608",
-          YELLOW_NEW_62: "#674308",
-          YELLOW_NEW_63: "#634109",
-          YELLOW_NEW_64: "#5f3f09",
-          YELLOW_NEW_65: "#5b3c08",
-          YELLOW_NEW_66: "#583a08",
-          YELLOW_NEW_67: "#543808",
-          YELLOW_NEW_68: "#513508",
-          YELLOW_NEW_69: "#4d3308",
-          YELLOW_NEW_7: "#e7d1ae",
-          YELLOW_NEW_70: "#4a3108",
-          YELLOW_NEW_71: "#472f08",
-          YELLOW_NEW_72: "#442d07",
-          YELLOW_NEW_73: "#412b07",
-          YELLOW_NEW_74: "#3e2907",
-          YELLOW_NEW_75: "#3b2707",
-          YELLOW_NEW_76: "#382506",
-          YELLOW_NEW_77: "#352306",
-          YELLOW_NEW_78: "#322106",
-          YELLOW_NEW_79: "#301f05",
-          YELLOW_NEW_8: "#e5cea9",
-          YELLOW_NEW_80: "#2d1e05",
-          YELLOW_NEW_81: "#2b1c05",
-          YELLOW_NEW_82: "#281a05",
-          YELLOW_NEW_83: "#261904",
-          YELLOW_NEW_84: "#231704",
-          YELLOW_NEW_85: "#211504",
-          YELLOW_NEW_86: "#1f1403",
-          YELLOW_NEW_87: "#1d1203",
-          YELLOW_NEW_88: "#1b1103",
-          YELLOW_NEW_89: "#190f03",
-          YELLOW_NEW_9: "#e4cba5",
-          YELLOW_NEW_90: "#170e02",
-          YELLOW_NEW_91: "#150d02",
-          YELLOW_NEW_92: "#130b02",
-          YELLOW_NEW_93: "#110a02",
-          YELLOW_NEW_94: "#0f0902",
-          YELLOW_NEW_95: "#0d0801",
-          YELLOW_NEW_96: "#0c0601",
-          YELLOW_NEW_97: "#0a0601",
-          YELLOW_NEW_98: "#080501",
-          YELLOW_NEW_99: "#070401",
+          TEAL_NEW_51: "#007d86",
+          TEAL_NEW_52: "#007982",
+          TEAL_NEW_53: "#00757e",
+          TEAL_NEW_54: "#00727a",
+          TEAL_NEW_55: "#006e76",
+          TEAL_NEW_56: "#006a72",
+          TEAL_NEW_57: "#00676f",
+          TEAL_NEW_58: "#00636b",
+          TEAL_NEW_59: "#006067",
+          TEAL_NEW_6: "#b8dee2",
+          TEAL_NEW_60: "#005d64",
+          TEAL_NEW_61: "#005961",
+          TEAL_NEW_62: "#00565d",
+          TEAL_NEW_63: "#00535a",
+          TEAL_NEW_64: "#005057",
+          TEAL_NEW_65: "#004d54",
+          TEAL_NEW_66: "#004a50",
+          TEAL_NEW_67: "#00474d",
+          TEAL_NEW_68: "#00444a",
+          TEAL_NEW_69: "#004147",
+          TEAL_NEW_7: "#b3dce0",
+          TEAL_NEW_70: "#003f44",
+          TEAL_NEW_71: "#003c41",
+          TEAL_NEW_72: "#00393e",
+          TEAL_NEW_73: "#00373b",
+          TEAL_NEW_74: "#003438",
+          TEAL_NEW_75: "#003235",
+          TEAL_NEW_76: "#002f33",
+          TEAL_NEW_77: "#002d30",
+          TEAL_NEW_78: "#002a2e",
+          TEAL_NEW_79: "#00282b",
+          TEAL_NEW_8: "#addade",
+          TEAL_NEW_80: "#002629",
+          TEAL_NEW_81: "#002427",
+          TEAL_NEW_82: "#002224",
+          TEAL_NEW_83: "#002022",
+          TEAL_NEW_84: "#001e20",
+          TEAL_NEW_85: "#001c1e",
+          TEAL_NEW_86: "#001a1c",
+          TEAL_NEW_87: "#00181a",
+          TEAL_NEW_88: "#001618",
+          TEAL_NEW_89: "#001416",
+          TEAL_NEW_9: "#a8d7db",
+          TEAL_NEW_90: "#011314",
+          TEAL_NEW_91: "#011112",
+          TEAL_NEW_92: "#010f11",
+          TEAL_NEW_93: "#010e0f",
+          TEAL_NEW_94: "#010c0d",
+          TEAL_NEW_95: "#010a0c",
+          TEAL_NEW_96: "#01090a",
+          TEAL_NEW_97: "#010808",
+          TEAL_NEW_98: "#010707",
+          TEAL_NEW_99: "#010506",
+          YELLOW_NEW_1: "#f2e5c5",
+          YELLOW_NEW_10: "#e4c98d",
+          YELLOW_NEW_100: "#060300",
+          YELLOW_NEW_11: "#e2c687",
+          YELLOW_NEW_12: "#e1c382",
+          YELLOW_NEW_13: "#dfc07c",
+          YELLOW_NEW_14: "#ddbd77",
+          YELLOW_NEW_15: "#dcba72",
+          YELLOW_NEW_16: "#dab76d",
+          YELLOW_NEW_17: "#d9b468",
+          YELLOW_NEW_18: "#d7b163",
+          YELLOW_NEW_19: "#d5af5e",
+          YELLOW_NEW_2: "#f1e2be",
+          YELLOW_NEW_20: "#d4ac59",
+          YELLOW_NEW_21: "#d2a954",
+          YELLOW_NEW_22: "#d0a64f",
+          YELLOW_NEW_23: "#cfa44a",
+          YELLOW_NEW_24: "#cda145",
+          YELLOW_NEW_25: "#cb9e40",
+          YELLOW_NEW_26: "#ca9c3b",
+          YELLOW_NEW_27: "#c89936",
+          YELLOW_NEW_28: "#c69631",
+          YELLOW_NEW_29: "#c5942c",
+          YELLOW_NEW_3: "#efdfb7",
+          YELLOW_NEW_30: "#c39126",
+          YELLOW_NEW_31: "#c18f21",
+          YELLOW_NEW_32: "#c08c1a",
+          YELLOW_NEW_33: "#be8a13",
+          YELLOW_NEW_34: "#bc8709",
+          YELLOW_NEW_35: "#bb8500",
+          YELLOW_NEW_36: "#b98200",
+          YELLOW_NEW_37: "#b88000",
+          YELLOW_NEW_38: "#b67d00",
+          YELLOW_NEW_39: "#b47b00",
+          YELLOW_NEW_4: "#eedbb1",
+          YELLOW_NEW_40: "#b37900",
+          YELLOW_NEW_41: "#b17600",
+          YELLOW_NEW_42: "#af7400",
+          YELLOW_NEW_43: "#ae7200",
+          YELLOW_NEW_44: "#ac6f00",
+          YELLOW_NEW_45: "#aa6d00",
+          YELLOW_NEW_46: "#a96b00",
+          YELLOW_NEW_47: "#a76900",
+          YELLOW_NEW_48: "#a56700",
+          YELLOW_NEW_49: "#a36500",
+          YELLOW_NEW_5: "#ecd8ab",
+          YELLOW_NEW_50: "#a16300",
+          YELLOW_NEW_51: "#9c6000",
+          YELLOW_NEW_52: "#975d00",
+          YELLOW_NEW_53: "#925a00",
+          YELLOW_NEW_54: "#8d5700",
+          YELLOW_NEW_55: "#885400",
+          YELLOW_NEW_56: "#845100",
+          YELLOW_NEW_57: "#7f4f00",
+          YELLOW_NEW_58: "#7b4c00",
+          YELLOW_NEW_59: "#764900",
+          YELLOW_NEW_6: "#ead5a5",
+          YELLOW_NEW_60: "#724700",
+          YELLOW_NEW_61: "#6e4400",
+          YELLOW_NEW_62: "#6a4200",
+          YELLOW_NEW_63: "#664000",
+          YELLOW_NEW_64: "#623d00",
+          YELLOW_NEW_65: "#5e3b00",
+          YELLOW_NEW_66: "#5a3900",
+          YELLOW_NEW_67: "#563700",
+          YELLOW_NEW_68: "#533400",
+          YELLOW_NEW_69: "#4f3200",
+          YELLOW_NEW_7: "#e9d29f",
+          YELLOW_NEW_70: "#4c3000",
+          YELLOW_NEW_71: "#492e00",
+          YELLOW_NEW_72: "#462c00",
+          YELLOW_NEW_73: "#422a00",
+          YELLOW_NEW_74: "#3f2800",
+          YELLOW_NEW_75: "#3c2600",
+          YELLOW_NEW_76: "#392400",
+          YELLOW_NEW_77: "#372300",
+          YELLOW_NEW_78: "#342100",
+          YELLOW_NEW_79: "#311f00",
+          YELLOW_NEW_8: "#e7cf99",
+          YELLOW_NEW_80: "#2e1d00",
+          YELLOW_NEW_81: "#2c1c00",
+          YELLOW_NEW_82: "#291a00",
+          YELLOW_NEW_83: "#271800",
+          YELLOW_NEW_84: "#241700",
+          YELLOW_NEW_85: "#221500",
+          YELLOW_NEW_86: "#201400",
+          YELLOW_NEW_87: "#1e1200",
+          YELLOW_NEW_88: "#1c1100",
+          YELLOW_NEW_89: "#190f00",
+          YELLOW_NEW_9: "#e6cc93",
+          YELLOW_NEW_90: "#170e00",
+          YELLOW_NEW_91: "#150c00",
+          YELLOW_NEW_92: "#130b00",
+          YELLOW_NEW_93: "#120a00",
+          YELLOW_NEW_94: "#100900",
+          YELLOW_NEW_95: "#0e0700",
+          YELLOW_NEW_96: "#0c0600",
+          YELLOW_NEW_97: "#0a0600",
+          YELLOW_NEW_98: "#090500",
+          YELLOW_NEW_99: "#070400",
         });
         t.Z = r;
       },
@@ -25603,204 +25603,203 @@
             "hsl(36, calc(var(--saturation-factor, 1) * 83.3%), 4.7%)",
           YOUTUBE: "hsl(0, calc(var(--saturation-factor, 1) * 72.8%), 46.1%)",
           BLUE_NEW_1:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.7%), 91.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86%), 91.6%)",
           BLUE_NEW_10:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.9%), 83.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86.4%), 82.7%)",
           BLUE_NEW_100: "hsl(218, calc(var(--saturation-factor, 1) * 80%), 2%)",
           BLUE_NEW_11:
-            "hsl(212, calc(var(--saturation-factor, 1) * 84.6%), 82.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.1%), 81.6%)",
           BLUE_NEW_12:
-            "hsl(213, calc(var(--saturation-factor, 1) * 85.3%), 81.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.7%), 80.8%)",
           BLUE_NEW_13:
-            "hsl(212, calc(var(--saturation-factor, 1) * 84%), 80.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86.3%), 80%)",
           BLUE_NEW_14:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.6%), 79.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.2%), 78.8%)",
           BLUE_NEW_15:
-            "hsl(212, calc(var(--saturation-factor, 1) * 83.5%), 78.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.7%), 78%)",
           BLUE_NEW_16:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.1%), 77.8%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.6%), 77.1%)",
           BLUE_NEW_17:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.6%), 77.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.1%), 76.3%)",
           BLUE_NEW_18:
-            "hsl(213, calc(var(--saturation-factor, 1) * 83.6%), 76.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 84.3%), 75.1%)",
           BLUE_NEW_19:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.1%), 75.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 84.7%), 74.3%)",
           BLUE_NEW_2:
-            "hsl(212, calc(var(--saturation-factor, 1) * 87.2%), 90.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 87.5%), 90.6%)",
           BLUE_NEW_20:
-            "hsl(212, calc(var(--saturation-factor, 1) * 83.2%), 74.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 83.8%), 73.3%)",
           BLUE_NEW_21:
-            "hsl(213, calc(var(--saturation-factor, 1) * 83.7%), 73.5%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.3%), 72.5%)",
           BLUE_NEW_22:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.9%), 72.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 83.4%), 71.6%)",
           BLUE_NEW_23:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.1%), 71.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 83.9%), 70.8%)",
           BLUE_NEW_24:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.6%), 70.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 83.1%), 69.8%)",
           BLUE_NEW_25:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.7%), 70%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 83.5%), 69%)",
           BLUE_NEW_26:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.2%), 69.2%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 82.8%), 68%)",
           BLUE_NEW_27:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.5%), 68.2%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 83.2%), 67.3%)",
           BLUE_NEW_28:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.9%), 67.5%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 82.6%), 66.3%)",
           BLUE_NEW_29:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.2%), 66.7%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.9%), 65.3%)",
           BLUE_NEW_3:
-            "hsl(212, calc(var(--saturation-factor, 1) * 88.2%), 90%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 88.7%), 89.6%)",
           BLUE_NEW_30:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.6%), 65.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 82.3%), 64.5%)",
           BLUE_NEW_31:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81%), 64.9%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 81.7%), 63.5%)",
           BLUE_NEW_32:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.4%), 64.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 82.2%), 62.5%)",
           BLUE_NEW_33:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.7%), 63.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.6%), 61.6%)",
           BLUE_NEW_34:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.2%), 62.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 82%), 60.8%)",
           BLUE_NEW_35:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.6%), 61.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.5%), 59.8%)",
           BLUE_NEW_36:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.1%), 60.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.8%), 59%)",
           BLUE_NEW_37:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.4%), 60%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.4%), 57.8%)",
           BLUE_NEW_38:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.9%), 59%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 80.9%), 56.9%)",
           BLUE_NEW_39:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.3%), 58.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 81.3%), 55.9%)",
           BLUE_NEW_4:
-            "hsl(212, calc(var(--saturation-factor, 1) * 86%), 88.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86.4%), 88.4%)",
           BLUE_NEW_40:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 57.3%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 81%), 54.7%)",
           BLUE_NEW_41:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.4%), 56.3%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 81.4%), 53.7%)",
           BLUE_NEW_42:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.7%), 55.5%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 81.1%), 52.4%)",
           BLUE_NEW_43:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.4%), 54.3%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 80.8%), 51%)",
           BLUE_NEW_44:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.7%), 53.5%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 83.3%), 49.4%)",
           BLUE_NEW_45:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.4%), 52.4%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 90.9%), 47.3%)",
           BLUE_NEW_46:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.1%), 51.2%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 45.1%)",
           BLUE_NEW_47:
-            "hsl(211, calc(var(--saturation-factor, 1) * 79.6%), 50%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 44.9%)",
           BLUE_NEW_48:
-            "hsl(211, calc(var(--saturation-factor, 1) * 84.6%), 48.4%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 44.7%)",
           BLUE_NEW_49:
-            "hsl(210, calc(var(--saturation-factor, 1) * 90.8%), 46.9%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 100%), 44.7%)",
           BLUE_NEW_5:
-            "hsl(213, calc(var(--saturation-factor, 1) * 86.9%), 88%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 87.3%), 87.6%)",
           BLUE_NEW_50:
             "hsl(209, calc(var(--saturation-factor, 1) * 100%), 44.5%)",
           BLUE_NEW_51:
-            "hsl(210, calc(var(--saturation-factor, 1) * 96.4%), 43.7%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 100%), 42.9%)",
           BLUE_NEW_52:
-            "hsl(210, calc(var(--saturation-factor, 1) * 93.6%), 42.7%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 100%), 41.4%)",
           BLUE_NEW_53:
-            "hsl(210, calc(var(--saturation-factor, 1) * 91.5%), 41.6%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 100%), 39.8%)",
           BLUE_NEW_54:
-            "hsl(211, calc(var(--saturation-factor, 1) * 88.5%), 40.8%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 100%), 38.4%)",
           BLUE_NEW_55:
-            "hsl(211, calc(var(--saturation-factor, 1) * 87.1%), 39.4%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 36.9%)",
           BLUE_NEW_56:
-            "hsl(211, calc(var(--saturation-factor, 1) * 84.7%), 38.4%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 35.5%)",
           BLUE_NEW_57:
-            "hsl(211, calc(var(--saturation-factor, 1) * 83.2%), 37.3%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 34.1%)",
           BLUE_NEW_58:
-            "hsl(211, calc(var(--saturation-factor, 1) * 82.6%), 36.1%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 32.9%)",
           BLUE_NEW_59:
-            "hsl(211, calc(var(--saturation-factor, 1) * 80.9%), 34.9%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 100%), 31.6%)",
           BLUE_NEW_6:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.1%), 86.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 88.2%), 86.7%)",
           BLUE_NEW_60:
-            "hsl(211, calc(var(--saturation-factor, 1) * 80.2%), 33.7%)",
+            "hsl(207, calc(var(--saturation-factor, 1) * 100%), 30.4%)",
           BLUE_NEW_61:
-            "hsl(211, calc(var(--saturation-factor, 1) * 78.4%), 32.7%)",
+            "hsl(207, calc(var(--saturation-factor, 1) * 100%), 29.2%)",
           BLUE_NEW_62:
-            "hsl(211, calc(var(--saturation-factor, 1) * 77.6%), 31.6%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 97.2%), 28.4%)",
           BLUE_NEW_63:
-            "hsl(211, calc(var(--saturation-factor, 1) * 76.8%), 30.4%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 94.3%), 27.6%)",
           BLUE_NEW_64:
-            "hsl(211, calc(var(--saturation-factor, 1) * 75.8%), 29.2%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 92.6%), 26.7%)",
           BLUE_NEW_65:
-            "hsl(211, calc(var(--saturation-factor, 1) * 75%), 28.2%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 90.9%), 25.9%)",
           BLUE_NEW_66:
-            "hsl(211, calc(var(--saturation-factor, 1) * 74.1%), 27.3%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 89.1%), 25.1%)",
           BLUE_NEW_67:
-            "hsl(212, calc(var(--saturation-factor, 1) * 72.9%), 26.1%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 87.1%), 24.3%)",
           BLUE_NEW_68:
-            "hsl(211, calc(var(--saturation-factor, 1) * 73.2%), 24.9%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 86.6%), 23.3%)",
           BLUE_NEW_69:
-            "hsl(212, calc(var(--saturation-factor, 1) * 72.4%), 24.1%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 84.3%), 22.5%)",
           BLUE_NEW_7:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.9%), 86.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86.5%), 85.5%)",
           BLUE_NEW_70:
-            "hsl(211, calc(var(--saturation-factor, 1) * 72.6%), 22.9%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 83.6%), 21.6%)",
           BLUE_NEW_71:
-            "hsl(211, calc(var(--saturation-factor, 1) * 71.4%), 22%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 82.9%), 20.6%)",
           BLUE_NEW_72:
-            "hsl(212, calc(var(--saturation-factor, 1) * 70.4%), 21.2%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 82.2%), 19.8%)",
           BLUE_NEW_73:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.9%), 20.2%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 81.4%), 19%)",
           BLUE_NEW_74:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.4%), 19.2%)",
+            "hsl(208, calc(var(--saturation-factor, 1) * 80.4%), 18%)",
           BLUE_NEW_75:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.9%), 18.2%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 79.5%), 17.3%)",
           BLUE_NEW_76:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.5%), 17.3%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 78.6%), 16.5%)",
           BLUE_NEW_77:
-            "hsl(212, calc(var(--saturation-factor, 1) * 69.4%), 16.7%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 77.8%), 15.9%)",
           BLUE_NEW_78:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70%), 15.7%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 78.9%), 14.9%)",
           BLUE_NEW_79:
-            "hsl(211, calc(var(--saturation-factor, 1) * 68.4%), 14.9%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 77.8%), 14.1%)",
           BLUE_NEW_8:
-            "hsl(212, calc(var(--saturation-factor, 1) * 86.8%), 85.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 87.2%), 84.7%)",
           BLUE_NEW_80:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.4%), 14.1%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 76.8%), 13.5%)",
           BLUE_NEW_81:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.1%), 13.1%)",
-          BLUE_NEW_82:
-            "hsl(211, calc(var(--saturation-factor, 1) * 68.8%), 12.5%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 78.1%), 12.5%)",
+          BLUE_NEW_82: "hsl(209, calc(var(--saturation-factor, 1) * 77%), 12%)",
           BLUE_NEW_83:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70%), 11.8%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 75.9%), 11.4%)",
           BLUE_NEW_84:
-            "hsl(212, calc(var(--saturation-factor, 1) * 71.4%), 11%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 77.8%), 10.6%)",
           BLUE_NEW_85:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.8%), 10.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 76.5%), 10%)",
           BLUE_NEW_86:
-            "hsl(211, calc(var(--saturation-factor, 1) * 71.4%), 9.6%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 75%), 9.4%)",
           BLUE_NEW_87:
-            "hsl(212, calc(var(--saturation-factor, 1) * 69.6%), 9%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 77.3%), 8.6%)",
           BLUE_NEW_88:
-            "hsl(212, calc(var(--saturation-factor, 1) * 71.4%), 8.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 75.6%), 8%)",
           BLUE_NEW_89:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.2%), 7.6%)",
+            "hsl(209, calc(var(--saturation-factor, 1) * 78.4%), 7.3%)",
           BLUE_NEW_9:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.2%), 84.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.7%), 83.5%)",
           BLUE_NEW_90:
-            "hsl(212, calc(var(--saturation-factor, 1) * 72.2%), 7.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 77.1%), 6.9%)",
           BLUE_NEW_91:
-            "hsl(214, calc(var(--saturation-factor, 1) * 69.7%), 6.5%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 75%), 6.3%)",
           BLUE_NEW_92:
-            "hsl(213, calc(var(--saturation-factor, 1) * 73.3%), 5.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 79.3%), 5.7%)",
           BLUE_NEW_93:
-            "hsl(215, calc(var(--saturation-factor, 1) * 70.4%), 5.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 76.9%), 5.1%)",
           BLUE_NEW_94:
             "hsl(213, calc(var(--saturation-factor, 1) * 75%), 4.7%)",
           BLUE_NEW_95:
-            "hsl(218, calc(var(--saturation-factor, 1) * 72.7%), 4.3%)",
+            "hsl(215, calc(var(--saturation-factor, 1) * 81%), 4.1%)",
           BLUE_NEW_96:
-            "hsl(219, calc(var(--saturation-factor, 1) * 70%), 3.9%)",
+            "hsl(216, calc(var(--saturation-factor, 1) * 78.9%), 3.7%)",
           BLUE_NEW_97:
             "hsl(217, calc(var(--saturation-factor, 1) * 76.5%), 3.3%)",
           BLUE_NEW_98:
             "hsl(218, calc(var(--saturation-factor, 1) * 73.3%), 2.9%)",
           BLUE_NEW_99:
-            "hsl(220, calc(var(--saturation-factor, 1) * 69.2%), 2.5%)",
+            "hsl(216, calc(var(--saturation-factor, 1) * 83.3%), 2.4%)",
           BLURPLE_1:
             "hsl(225, calc(var(--saturation-factor, 1) * 100%), 93.7%)",
           BLURPLE_10:
@@ -25996,204 +25995,204 @@
           BLURPLE_99:
             "hsl(225, calc(var(--saturation-factor, 1) * 57.1%), 2.7%)",
           GREEN_NEW_1:
-            "hsl(120, calc(var(--saturation-factor, 1) * 32.2%), 88.4%)",
+            "hsl(128, calc(var(--saturation-factor, 1) * 37.7%), 88%)",
           GREEN_NEW_10:
-            "hsl(123, calc(var(--saturation-factor, 1) * 31.7%), 76.5%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 36%), 75.5%)",
           GREEN_NEW_100:
-            "hsl(120, calc(var(--saturation-factor, 1) * 42.9%), 1.4%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 66.7%), 1.2%)",
           GREEN_NEW_11:
-            "hsl(123, calc(var(--saturation-factor, 1) * 31.7%), 75.3%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 35.3%), 73.9%)",
           GREEN_NEW_12:
-            "hsl(124, calc(var(--saturation-factor, 1) * 31.8%), 74.1%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 35.3%), 72.7%)",
           GREEN_NEW_13:
-            "hsl(125, calc(var(--saturation-factor, 1) * 32.4%), 72.7%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 35.6%), 71.4%)",
           GREEN_NEW_14:
-            "hsl(125, calc(var(--saturation-factor, 1) * 31.5%), 71.4%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 35.5%), 70.2%)",
           GREEN_NEW_15:
-            "hsl(125, calc(var(--saturation-factor, 1) * 31.6%), 70.2%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 35.8%), 68.8%)",
           GREEN_NEW_16:
-            "hsl(126, calc(var(--saturation-factor, 1) * 31.6%), 69%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 34.9%), 67.5%)",
           GREEN_NEW_17:
-            "hsl(126, calc(var(--saturation-factor, 1) * 31.7%), 67.8%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 34.9%), 66.3%)",
           GREEN_NEW_18:
-            "hsl(127, calc(var(--saturation-factor, 1) * 31.8%), 66.7%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 35.2%), 64.9%)",
           GREEN_NEW_19:
-            "hsl(127, calc(var(--saturation-factor, 1) * 31.1%), 65.3%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 35.1%), 63.7%)",
           GREEN_NEW_2:
-            "hsl(123, calc(var(--saturation-factor, 1) * 33.3%), 87.1%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 36.2%), 86.5%)",
           GREEN_NEW_20:
-            "hsl(126, calc(var(--saturation-factor, 1) * 30.8%), 64.3%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 35.1%), 62.5%)",
           GREEN_NEW_21:
-            "hsl(126, calc(var(--saturation-factor, 1) * 30.9%), 63.1%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 34.7%), 61%)",
           GREEN_NEW_22:
-            "hsl(127, calc(var(--saturation-factor, 1) * 30.9%), 62%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 34.6%), 59.8%)",
           GREEN_NEW_23:
-            "hsl(128, calc(var(--saturation-factor, 1) * 31%), 60.8%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 34.6%), 58.6%)",
           GREEN_NEW_24:
-            "hsl(128, calc(var(--saturation-factor, 1) * 31.1%), 59.6%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 34.9%), 57.3%)",
           GREEN_NEW_25:
-            "hsl(128, calc(var(--saturation-factor, 1) * 31.1%), 58.4%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 34.8%), 56.1%)",
           GREEN_NEW_26:
-            "hsl(128, calc(var(--saturation-factor, 1) * 30.9%), 57.5%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 34.8%), 54.9%)",
           GREEN_NEW_27:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.9%), 56.3%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 34.7%), 53.7%)",
           GREEN_NEW_28:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.4%), 54.9%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 35%), 52.4%)",
           GREEN_NEW_29:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.2%), 53.9%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 34.9%), 51.2%)",
           GREEN_NEW_3:
-            "hsl(122, calc(var(--saturation-factor, 1) * 33.3%), 85.9%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 36.8%), 85.1%)",
           GREEN_NEW_30:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.3%), 52.7%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 35.4%), 49.8%)",
           GREEN_NEW_31:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.4%), 51.6%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 37.1%), 48.6%)",
           GREEN_NEW_32:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.2%), 50.6%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 39.4%), 47.3%)",
           GREEN_NEW_33:
-            "hsl(131, calc(var(--saturation-factor, 1) * 31%), 49.4%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 41.3%), 46.1%)",
           GREEN_NEW_34:
-            "hsl(131, calc(var(--saturation-factor, 1) * 32.8%), 48.4%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 43.9%), 44.7%)",
           GREEN_NEW_35:
-            "hsl(132, calc(var(--saturation-factor, 1) * 34.4%), 47.3%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 46.6%), 43.3%)",
           GREEN_NEW_36:
-            "hsl(132, calc(var(--saturation-factor, 1) * 35.6%), 46.3%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 49.5%), 42%)",
           GREEN_NEW_37:
-            "hsl(133, calc(var(--saturation-factor, 1) * 37.4%), 45.1%)",
+            "hsl(143, calc(var(--saturation-factor, 1) * 53.4%), 40.4%)",
           GREEN_NEW_38:
-            "hsl(134, calc(var(--saturation-factor, 1) * 39.3%), 43.9%)",
+            "hsl(144, calc(var(--saturation-factor, 1) * 57.6%), 38.8%)",
           GREEN_NEW_39:
-            "hsl(134, calc(var(--saturation-factor, 1) * 41.3%), 42.7%)",
+            "hsl(145, calc(var(--saturation-factor, 1) * 62.1%), 37.3%)",
           GREEN_NEW_4:
-            "hsl(122, calc(var(--saturation-factor, 1) * 32.5%), 84.3%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 37.3%), 83.7%)",
           GREEN_NEW_40:
-            "hsl(134, calc(var(--saturation-factor, 1) * 43.4%), 41.6%)",
+            "hsl(146, calc(var(--saturation-factor, 1) * 68%), 35.5%)",
           GREEN_NEW_41:
-            "hsl(135, calc(var(--saturation-factor, 1) * 45.6%), 40.4%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 77.6%), 33.3%)",
           GREEN_NEW_42:
-            "hsl(136, calc(var(--saturation-factor, 1) * 48%), 39.2%)",
+            "hsl(150, calc(var(--saturation-factor, 1) * 93.5%), 30.2%)",
           GREEN_NEW_43:
-            "hsl(137, calc(var(--saturation-factor, 1) * 50.5%), 38%)",
+            "hsl(151, calc(var(--saturation-factor, 1) * 100%), 28.8%)",
           GREEN_NEW_44:
-            "hsl(137, calc(var(--saturation-factor, 1) * 54.3%), 36.9%)",
+            "hsl(150, calc(var(--saturation-factor, 1) * 100%), 28.4%)",
           GREEN_NEW_45:
-            "hsl(138, calc(var(--saturation-factor, 1) * 58%), 35.5%)",
+            "hsl(149, calc(var(--saturation-factor, 1) * 100%), 28%)",
           GREEN_NEW_46:
-            "hsl(139, calc(var(--saturation-factor, 1) * 62.1%), 34.1%)",
+            "hsl(149, calc(var(--saturation-factor, 1) * 100%), 27.6%)",
           GREEN_NEW_47:
-            "hsl(140, calc(var(--saturation-factor, 1) * 67.5%), 32.5%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 100%), 27.5%)",
           GREEN_NEW_48:
-            "hsl(142, calc(var(--saturation-factor, 1) * 74.7%), 31%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 27.1%)",
           GREEN_NEW_49:
-            "hsl(144, calc(var(--saturation-factor, 1) * 85%), 28.8%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 26.7%)",
           GREEN_NEW_5:
-            "hsl(122, calc(var(--saturation-factor, 1) * 32.6%), 83.1%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 36.3%), 82.2%)",
           GREEN_NEW_50:
             "hsl(146, calc(var(--saturation-factor, 1) * 100%), 26.3%)",
           GREEN_NEW_51:
-            "hsl(145, calc(var(--saturation-factor, 1) * 94%), 26.3%)",
+            "hsl(146, calc(var(--saturation-factor, 1) * 100%), 25.5%)",
           GREEN_NEW_52:
-            "hsl(144, calc(var(--saturation-factor, 1) * 88%), 26.1%)",
+            "hsl(146, calc(var(--saturation-factor, 1) * 100%), 24.7%)",
           GREEN_NEW_53:
-            "hsl(143, calc(var(--saturation-factor, 1) * 83.3%), 25.9%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 23.9%)",
           GREEN_NEW_54:
-            "hsl(143, calc(var(--saturation-factor, 1) * 80%), 25.5%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 22.9%)",
           GREEN_NEW_55:
-            "hsl(141, calc(var(--saturation-factor, 1) * 76.6%), 25.1%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 22.2%)",
           GREEN_NEW_56:
-            "hsl(141, calc(var(--saturation-factor, 1) * 74.4%), 24.5%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 21.6%)",
           GREEN_NEW_57:
-            "hsl(140, calc(var(--saturation-factor, 1) * 72.4%), 24.1%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 20.8%)",
           GREEN_NEW_58:
-            "hsl(140, calc(var(--saturation-factor, 1) * 70%), 23.5%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 20%)",
           GREEN_NEW_59:
-            "hsl(139, calc(var(--saturation-factor, 1) * 67.5%), 22.9%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 19.2%)",
           GREEN_NEW_6:
-            "hsl(124, calc(var(--saturation-factor, 1) * 33.3%), 81.8%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 36.1%), 81%)",
           GREEN_NEW_60:
-            "hsl(139, calc(var(--saturation-factor, 1) * 66.7%), 22.4%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 18.6%)",
           GREEN_NEW_61:
-            "hsl(138, calc(var(--saturation-factor, 1) * 65.5%), 21.6%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 17.8%)",
           GREEN_NEW_62:
-            "hsl(138, calc(var(--saturation-factor, 1) * 63%), 21.2%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 17.3%)",
           GREEN_NEW_63:
-            "hsl(137, calc(var(--saturation-factor, 1) * 61.5%), 20.4%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 100%), 16.7%)",
           GREEN_NEW_64:
-            "hsl(137, calc(var(--saturation-factor, 1) * 62%), 19.6%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 15.9%)",
           GREEN_NEW_65:
-            "hsl(137, calc(var(--saturation-factor, 1) * 60.8%), 19%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 100%), 15.3%)",
           GREEN_NEW_66:
-            "hsl(136, calc(var(--saturation-factor, 1) * 59.6%), 18.4%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 14.7%)",
           GREEN_NEW_67:
-            "hsl(136, calc(var(--saturation-factor, 1) * 58.2%), 17.8%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 100%), 14.1%)",
           GREEN_NEW_68:
-            "hsl(136, calc(var(--saturation-factor, 1) * 58.6%), 17.1%)",
+            "hsl(148, calc(var(--saturation-factor, 1) * 100%), 13.5%)",
           GREEN_NEW_69:
-            "hsl(135, calc(var(--saturation-factor, 1) * 57.1%), 16.5%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 100%), 12.9%)",
           GREEN_NEW_7:
-            "hsl(122, calc(var(--saturation-factor, 1) * 32%), 80.4%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 36.5%), 79.6%)",
           GREEN_NEW_70:
-            "hsl(135, calc(var(--saturation-factor, 1) * 55.6%), 15.9%)",
+            "hsl(147, calc(var(--saturation-factor, 1) * 96.9%), 12.7%)",
           GREEN_NEW_71:
-            "hsl(135, calc(var(--saturation-factor, 1) * 56.4%), 15.3%)",
+            "hsl(146, calc(var(--saturation-factor, 1) * 93.7%), 12.4%)",
           GREEN_NEW_72:
-            "hsl(135, calc(var(--saturation-factor, 1) * 54.7%), 14.7%)",
+            "hsl(146, calc(var(--saturation-factor, 1) * 90.2%), 12%)",
           GREEN_NEW_73:
-            "hsl(134, calc(var(--saturation-factor, 1) * 54.9%), 13.9%)",
+            "hsl(145, calc(var(--saturation-factor, 1) * 89.7%), 11.4%)",
           GREEN_NEW_74:
-            "hsl(133, calc(var(--saturation-factor, 1) * 53.6%), 13.5%)",
+            "hsl(144, calc(var(--saturation-factor, 1) * 86%), 11.2%)",
           GREEN_NEW_75:
-            "hsl(134, calc(var(--saturation-factor, 1) * 53.8%), 12.7%)",
+            "hsl(145, calc(var(--saturation-factor, 1) * 85.2%), 10.6%)",
           GREEN_NEW_76:
-            "hsl(134, calc(var(--saturation-factor, 1) * 54.8%), 12.2%)",
+            "hsl(144, calc(var(--saturation-factor, 1) * 81.1%), 10.4%)",
           GREEN_NEW_77:
-            "hsl(134, calc(var(--saturation-factor, 1) * 52.5%), 11.6%)",
+            "hsl(143, calc(var(--saturation-factor, 1) * 80.4%), 10%)",
           GREEN_NEW_78:
-            "hsl(132, calc(var(--saturation-factor, 1) * 53.6%), 11%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 79.2%), 9.4%)",
           GREEN_NEW_79:
-            "hsl(132, calc(var(--saturation-factor, 1) * 54.7%), 10.4%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 78.3%), 9%)",
           GREEN_NEW_8:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.7%), 79%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 35.7%), 78%)",
           GREEN_NEW_80:
-            "hsl(131, calc(var(--saturation-factor, 1) * 52.9%), 10%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 77.3%), 8.6%)",
           GREEN_NEW_81:
-            "hsl(132, calc(var(--saturation-factor, 1) * 53.2%), 9.2%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 75.6%), 8%)",
           GREEN_NEW_82:
-            "hsl(133, calc(var(--saturation-factor, 1) * 54.5%), 8.6%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 74.4%), 7.6%)",
           GREEN_NEW_83:
-            "hsl(131, calc(var(--saturation-factor, 1) * 52.4%), 8.2%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 73%), 7.3%)",
           GREEN_NEW_84:
-            "hsl(131, calc(var(--saturation-factor, 1) * 53.8%), 7.6%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 76.5%), 6.7%)",
           GREEN_NEW_85:
-            "hsl(132, calc(var(--saturation-factor, 1) * 55.6%), 7.1%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 75%), 6.3%)",
           GREEN_NEW_86:
-            "hsl(130, calc(var(--saturation-factor, 1) * 52.9%), 6.7%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 73.3%), 5.9%)",
           GREEN_NEW_87:
-            "hsl(131, calc(var(--saturation-factor, 1) * 54.8%), 6.1%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 71.4%), 5.5%)",
           GREEN_NEW_88:
-            "hsl(131, calc(var(--saturation-factor, 1) * 57.1%), 5.5%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 70.4%), 5.3%)",
           GREEN_NEW_89:
-            "hsl(128, calc(var(--saturation-factor, 1) * 55.6%), 5.3%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 75%), 4.7%)",
           GREEN_NEW_9:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.7%), 77.8%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 35.6%), 76.9%)",
           GREEN_NEW_90:
-            "hsl(129, calc(var(--saturation-factor, 1) * 58.3%), 4.7%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 72.7%), 4.3%)",
           GREEN_NEW_91:
-            "hsl(125, calc(var(--saturation-factor, 1) * 54.5%), 4.3%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 70%), 3.9%)",
           GREEN_NEW_92:
-            "hsl(130, calc(var(--saturation-factor, 1) * 60%), 3.9%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 68.4%), 3.7%)",
           GREEN_NEW_93:
-            "hsl(126, calc(var(--saturation-factor, 1) * 55.6%), 3.5%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 75%), 3.1%)",
           GREEN_NEW_94:
-            "hsl(127, calc(var(--saturation-factor, 1) * 60%), 2.9%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 71.4%), 2.7%)",
           GREEN_NEW_95:
-            "hsl(128, calc(var(--saturation-factor, 1) * 57.1%), 2.7%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 69.2%), 2.5%)",
           GREEN_NEW_96:
-            "hsl(120, calc(var(--saturation-factor, 1) * 50%), 2.4%)",
+            "hsl(129, calc(var(--saturation-factor, 1) * 63.6%), 2.2%)",
           GREEN_NEW_97: "hsl(130, calc(var(--saturation-factor, 1) * 60%), 2%)",
           GREEN_NEW_98:
-            "hsl(120, calc(var(--saturation-factor, 1) * 55.6%), 1.8%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 75%), 1.6%)",
           GREEN_NEW_99:
-            "hsl(120, calc(var(--saturation-factor, 1) * 50%), 1.6%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 71.4%), 1.4%)",
           NEUTRAL_1: "hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%)",
           NEUTRAL_10:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.8%), 83.5%)",
@@ -26370,195 +26369,195 @@
             "hsl(240, calc(var(--saturation-factor, 1) * 14.3%), 1.4%)",
           NEUTRAL_99: "hsl(0, calc(var(--saturation-factor, 1) * 0%), 1.2%)",
           ORANGE_NEW_1:
-            "hsl(23, calc(var(--saturation-factor, 1) * 92.2%), 90%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 92.7%), 89.2%)",
           ORANGE_NEW_10:
-            "hsl(23, calc(var(--saturation-factor, 1) * 82.9%), 79.4%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 82.5%), 77.6%)",
           ORANGE_NEW_100:
-            "hsl(17, calc(var(--saturation-factor, 1) * 77.8%), 1.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100%), 1.6%)",
           ORANGE_NEW_11:
-            "hsl(23, calc(var(--saturation-factor, 1) * 82%), 78.2%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 81.7%), 76.5%)",
           ORANGE_NEW_12:
-            "hsl(23, calc(var(--saturation-factor, 1) * 81.2%), 77.1%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 81%), 75.3%)",
           ORANGE_NEW_13:
-            "hsl(23, calc(var(--saturation-factor, 1) * 80.3%), 76.1%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 80.3%), 74.1%)",
           ORANGE_NEW_14:
-            "hsl(23, calc(var(--saturation-factor, 1) * 78.3%), 74.7%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 79.6%), 73.1%)",
           ORANGE_NEW_15:
-            "hsl(23, calc(var(--saturation-factor, 1) * 77.6%), 73.7%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 79%), 72%)",
           ORANGE_NEW_16:
-            "hsl(23, calc(var(--saturation-factor, 1) * 77.1%), 72.5%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 78.5%), 70.8%)",
           ORANGE_NEW_17:
-            "hsl(23, calc(var(--saturation-factor, 1) * 76.6%), 71.6%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 77.9%), 69.8%)",
           ORANGE_NEW_18:
-            "hsl(23, calc(var(--saturation-factor, 1) * 76%), 70.6%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 76.4%), 68.4%)",
           ORANGE_NEW_19:
-            "hsl(23, calc(var(--saturation-factor, 1) * 74.5%), 69.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 75.9%), 67.5%)",
           ORANGE_NEW_2:
-            "hsl(24, calc(var(--saturation-factor, 1) * 89.7%), 88.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 90.3%), 87.8%)",
           ORANGE_NEW_20:
-            "hsl(23, calc(var(--saturation-factor, 1) * 74.1%), 68.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 75.6%), 66.3%)",
           ORANGE_NEW_21:
-            "hsl(23, calc(var(--saturation-factor, 1) * 73.7%), 67.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 75.1%), 65.3%)",
           ORANGE_NEW_22:
-            "hsl(23, calc(var(--saturation-factor, 1) * 73.3%), 66.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 73.8%), 64.1%)",
           ORANGE_NEW_23:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.9%), 65.1%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 73.5%), 62.9%)",
           ORANGE_NEW_24:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.4%), 64.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 73.2%), 62%)",
           ORANGE_NEW_25:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.1%), 63.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 72%), 60.8%)",
           ORANGE_NEW_26:
-            "hsl(23, calc(var(--saturation-factor, 1) * 69.9%), 62.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 71.7%), 59.8%)",
           ORANGE_NEW_27:
-            "hsl(23, calc(var(--saturation-factor, 1) * 69.7%), 61.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 70.6%), 58.6%)",
           ORANGE_NEW_28:
-            "hsl(22, calc(var(--saturation-factor, 1) * 68.5%), 60.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 70.4%), 57.6%)",
           ORANGE_NEW_29:
-            "hsl(22, calc(var(--saturation-factor, 1) * 68.3%), 59.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 69.4%), 56.5%)",
           ORANGE_NEW_3:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.5%), 87.5%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 88.4%), 86.5%)",
           ORANGE_NEW_30:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67.1%), 58.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 69.2%), 55.5%)",
           ORANGE_NEW_31:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67%), 57.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 69%), 54.5%)",
           ORANGE_NEW_32:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.9%), 56.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 68.1%), 53.3%)",
           ORANGE_NEW_33:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.8%), 55.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 67.9%), 52.4%)",
           ORANGE_NEW_34:
-            "hsl(23, calc(var(--saturation-factor, 1) * 64.8%), 54.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 67.1%), 51.2%)",
           ORANGE_NEW_35:
-            "hsl(23, calc(var(--saturation-factor, 1) * 64.7%), 53.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 66.3%), 50%)",
           ORANGE_NEW_36:
-            "hsl(22, calc(var(--saturation-factor, 1) * 63.8%), 52.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 68.8%), 49%)",
           ORANGE_NEW_37:
-            "hsl(23, calc(var(--saturation-factor, 1) * 63.6%), 51.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 71.3%), 47.8%)",
           ORANGE_NEW_38:
-            "hsl(23, calc(var(--saturation-factor, 1) * 62.8%), 50.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 74.1%), 46.9%)",
           ORANGE_NEW_39:
-            "hsl(22, calc(var(--saturation-factor, 1) * 63.6%), 49.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 77.6%), 45.5%)",
           ORANGE_NEW_4:
-            "hsl(23, calc(var(--saturation-factor, 1) * 88.6%), 86.3%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 89.3%), 85.3%)",
           ORANGE_NEW_40:
-            "hsl(23, calc(var(--saturation-factor, 1) * 66%), 48.4%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 81.4%), 44.3%)",
           ORANGE_NEW_41:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67.8%), 47.5%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 86.2%), 42.7%)",
           ORANGE_NEW_42:
-            "hsl(23, calc(var(--saturation-factor, 1) * 70.5%), 46.5%)",
+            "hsl(28, calc(var(--saturation-factor, 1) * 92.4%), 41.2%)",
           ORANGE_NEW_43:
-            "hsl(23, calc(var(--saturation-factor, 1) * 72.4%), 45.5%)",
+            "hsl(29, calc(var(--saturation-factor, 1) * 99%), 39.4%)",
           ORANGE_NEW_44:
-            "hsl(23, calc(var(--saturation-factor, 1) * 75.3%), 44.5%)",
+            "hsl(28, calc(var(--saturation-factor, 1) * 100%), 38.8%)",
           ORANGE_NEW_45:
-            "hsl(23, calc(var(--saturation-factor, 1) * 78.3%), 43.3%)",
+            "hsl(28, calc(var(--saturation-factor, 1) * 100%), 38.6%)",
           ORANGE_NEW_46:
-            "hsl(24, calc(var(--saturation-factor, 1) * 81.4%), 42.2%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 38.2%)",
           ORANGE_NEW_47:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 41.2%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 37.8%)",
           ORANGE_NEW_48:
-            "hsl(24, calc(var(--saturation-factor, 1) * 89.2%), 39.8%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 37.6%)",
           ORANGE_NEW_49:
-            "hsl(25, calc(var(--saturation-factor, 1) * 94.9%), 38.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 37.3%)",
           ORANGE_NEW_5:
-            "hsl(24, calc(var(--saturation-factor, 1) * 86.8%), 85.1%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 87.8%), 83.9%)",
           ORANGE_NEW_50:
             "hsl(25, calc(var(--saturation-factor, 1) * 100%), 37.1%)",
           ORANGE_NEW_51:
-            "hsl(25, calc(var(--saturation-factor, 1) * 98.9%), 36.1%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 100%), 35.7%)",
           ORANGE_NEW_52:
-            "hsl(25, calc(var(--saturation-factor, 1) * 96.7%), 35.3%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 100%), 34.5%)",
           ORANGE_NEW_53:
-            "hsl(24, calc(var(--saturation-factor, 1) * 95.4%), 34.3%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 100%), 33.3%)",
           ORANGE_NEW_54:
-            "hsl(25, calc(var(--saturation-factor, 1) * 95.3%), 33.1%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 32.2%)",
           ORANGE_NEW_55:
-            "hsl(25, calc(var(--saturation-factor, 1) * 93.9%), 32.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 31.2%)",
           ORANGE_NEW_56:
-            "hsl(24, calc(var(--saturation-factor, 1) * 92.5%), 31.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 30%)",
           ORANGE_NEW_57:
-            "hsl(25, calc(var(--saturation-factor, 1) * 92.2%), 30.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 29%)",
           ORANGE_NEW_58:
-            "hsl(24, calc(var(--saturation-factor, 1) * 90.7%), 29.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 28%)",
           ORANGE_NEW_59:
-            "hsl(24, calc(var(--saturation-factor, 1) * 90.3%), 28.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 26.9%)",
           ORANGE_NEW_6:
-            "hsl(23, calc(var(--saturation-factor, 1) * 85.4%), 83.9%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 86.4%), 82.7%)",
           ORANGE_NEW_60:
-            "hsl(24, calc(var(--saturation-factor, 1) * 90%), 27.5%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 25.9%)",
           ORANGE_NEW_61:
-            "hsl(24, calc(var(--saturation-factor, 1) * 88.2%), 26.7%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 24.9%)",
           ORANGE_NEW_62:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.8%), 25.7%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 24.1%)",
           ORANGE_NEW_63:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.3%), 24.7%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 100%), 23.1%)",
           ORANGE_NEW_64:
-            "hsl(24, calc(var(--saturation-factor, 1) * 86.9%), 23.9%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 22.2%)",
           ORANGE_NEW_65:
-            "hsl(24, calc(var(--saturation-factor, 1) * 86.3%), 22.9%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 21.4%)",
           ORANGE_NEW_66:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.8%), 22.2%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 20.6%)",
           ORANGE_NEW_67:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.3%), 21.4%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 19.8%)",
           ORANGE_NEW_68:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 20.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 18.8%)",
           ORANGE_NEW_69:
-            "hsl(24, calc(var(--saturation-factor, 1) * 86%), 19.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 18%)",
           ORANGE_NEW_7:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.1%), 82.7%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 85.3%), 81.4%)",
           ORANGE_NEW_70:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.4%), 18.8%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 17.3%)",
           ORANGE_NEW_71:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 18%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 16.7%)",
           ORANGE_NEW_72:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.1%), 17.3%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 15.9%)",
           ORANGE_NEW_73:
-            "hsl(24, calc(var(--saturation-factor, 1) * 83.3%), 16.5%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 15.1%)",
           ORANGE_NEW_74:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85%), 15.7%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 14.5%)",
           ORANGE_NEW_75:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.2%), 14.9%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 100%), 13.7%)",
           ORANGE_NEW_76:
-            "hsl(24, calc(var(--saturation-factor, 1) * 83.6%), 14.3%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 97.1%), 13.3%)",
           ORANGE_NEW_77:
-            "hsl(24, calc(var(--saturation-factor, 1) * 82.9%), 13.7%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 96.9%), 12.7%)",
           ORANGE_NEW_78:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 12.9%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 96.8%), 12.2%)",
           ORANGE_NEW_79:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.1%), 12.4%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 96.6%), 11.4%)",
           ORANGE_NEW_8:
-            "hsl(23, calc(var(--saturation-factor, 1) * 85.1%), 81.6%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 84.2%), 80.2%)",
           ORANGE_NEW_80:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.1%), 11.6%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 96.4%), 10.8%)",
           ORANGE_NEW_81:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.7%), 11%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 96.2%), 10.2%)",
           ORANGE_NEW_82:
-            "hsl(23, calc(var(--saturation-factor, 1) * 84.9%), 10.4%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 96%), 9.8%)",
           ORANGE_NEW_83:
-            "hsl(23, calc(var(--saturation-factor, 1) * 84%), 9.8%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 95.7%), 9.2%)",
           ORANGE_NEW_84:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83%), 9.2%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 95.5%), 8.6%)",
           ORANGE_NEW_85:
-            "hsl(23, calc(var(--saturation-factor, 1) * 86%), 8.4%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 95.1%), 8%)",
           ORANGE_NEW_86:
-            "hsl(22, calc(var(--saturation-factor, 1) * 85.4%), 8%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 94.9%), 7.6%)",
           ORANGE_NEW_87:
-            "hsl(23, calc(var(--saturation-factor, 1) * 84.2%), 7.5%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 94.4%), 7.1%)",
           ORANGE_NEW_88:
-            "hsl(22, calc(var(--saturation-factor, 1) * 83.3%), 7.1%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 94.1%), 6.7%)",
           ORANGE_NEW_89:
-            "hsl(20, calc(var(--saturation-factor, 1) * 81.8%), 6.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 93.5%), 6.1%)",
           ORANGE_NEW_9:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.8%), 80.6%)",
+            "hsl(26, calc(var(--saturation-factor, 1) * 83.2%), 79%)",
           ORANGE_NEW_90:
-            "hsl(21, calc(var(--saturation-factor, 1) * 86.7%), 5.9%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 93.1%), 5.7%)",
           ORANGE_NEW_91:
-            "hsl(20, calc(var(--saturation-factor, 1) * 85.7%), 5.5%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 92.6%), 5.3%)",
           ORANGE_NEW_92:
-            "hsl(19, calc(var(--saturation-factor, 1) * 84.6%), 5.1%)",
+            "hsl(21, calc(var(--saturation-factor, 1) * 92%), 4.9%)",
           ORANGE_NEW_93:
-            "hsl(19, calc(var(--saturation-factor, 1) * 82.6%), 4.5%)",
+            "hsl(21, calc(var(--saturation-factor, 1) * 90.9%), 4.3%)",
           ORANGE_NEW_94:
-            "hsl(18, calc(var(--saturation-factor, 1) * 81%), 4.1%)",
+            "hsl(20, calc(var(--saturation-factor, 1) * 90%), 3.9%)",
           ORANGE_NEW_95:
             "hsl(19, calc(var(--saturation-factor, 1) * 88.9%), 3.5%)",
           ORANGE_NEW_96:
@@ -26568,7 +26567,7 @@
           ORANGE_NEW_98:
             "hsl(18, calc(var(--saturation-factor, 1) * 83.3%), 2.4%)",
           ORANGE_NEW_99:
-            "hsl(13, calc(var(--saturation-factor, 1) * 81.8%), 2.2%)",
+            "hsl(18, calc(var(--saturation-factor, 1) * 100%), 2%)",
           RED_NEW_1: "hsl(8, calc(var(--saturation-factor, 1) * 100%), 91.6%)",
           RED_NEW_10: "hsl(7, calc(var(--saturation-factor, 1) * 100%), 83.3%)",
           RED_NEW_100:
@@ -26582,8 +26581,8 @@
           RED_NEW_17: "hsl(6, calc(var(--saturation-factor, 1) * 100%), 77.6%)",
           RED_NEW_18: "hsl(6, calc(var(--saturation-factor, 1) * 100%), 76.9%)",
           RED_NEW_19: "hsl(5, calc(var(--saturation-factor, 1) * 100%), 76.1%)",
-          RED_NEW_2: "hsl(8, calc(var(--saturation-factor, 1) * 100%), 90.6%)",
-          RED_NEW_20: "hsl(5, calc(var(--saturation-factor, 1) * 100%), 75.5%)",
+          RED_NEW_2: "hsl(9, calc(var(--saturation-factor, 1) * 100%), 90.4%)",
+          RED_NEW_20: "hsl(5, calc(var(--saturation-factor, 1) * 100%), 75.3%)",
           RED_NEW_21: "hsl(5, calc(var(--saturation-factor, 1) * 100%), 74.7%)",
           RED_NEW_22: "hsl(5, calc(var(--saturation-factor, 1) * 100%), 73.9%)",
           RED_NEW_23: "hsl(4, calc(var(--saturation-factor, 1) * 100%), 73.3%)",
@@ -26605,29 +26604,29 @@
           RED_NEW_34:
             "hsl(2, calc(var(--saturation-factor, 1) * 91.1%), 64.9%)",
           RED_NEW_35:
-            "hsl(2, calc(var(--saturation-factor, 1) * 90.2%), 64.1%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 89.1%), 63.9%)",
           RED_NEW_36:
             "hsl(1, calc(var(--saturation-factor, 1) * 88.3%), 63.1%)",
           RED_NEW_37:
             "hsl(1, calc(var(--saturation-factor, 1) * 87.5%), 62.4%)",
           RED_NEW_38:
-            "hsl(1, calc(var(--saturation-factor, 1) * 85.7%), 61.6%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 85.8%), 61.4%)",
           RED_NEW_39: "hsl(0, calc(var(--saturation-factor, 1) * 85%), 60.8%)",
           RED_NEW_4: "hsl(8, calc(var(--saturation-factor, 1) * 100%), 88.6%)",
           RED_NEW_40:
             "hsl(0, calc(var(--saturation-factor, 1) * 83.4%), 59.8%)",
           RED_NEW_41:
-            "hsl(360, calc(var(--saturation-factor, 1) * 82.9%), 58.8%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 81.9%), 58.8%)",
           RED_NEW_42:
             "hsl(359, calc(var(--saturation-factor, 1) * 81.4%), 57.8%)",
           RED_NEW_43:
             "hsl(359, calc(var(--saturation-factor, 1) * 80.1%), 56.7%)",
           RED_NEW_44:
-            "hsl(358, calc(var(--saturation-factor, 1) * 79.7%), 55.5%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 79.6%), 55.7%)",
           RED_NEW_45:
             "hsl(358, calc(var(--saturation-factor, 1) * 78.5%), 54.3%)",
           RED_NEW_46:
-            "hsl(357, calc(var(--saturation-factor, 1) * 78.2%), 53.3%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 77.4%), 53.1%)",
           RED_NEW_47:
             "hsl(357, calc(var(--saturation-factor, 1) * 77.1%), 52%)",
           RED_NEW_48:
@@ -26638,7 +26637,7 @@
           RED_NEW_50:
             "hsl(353, calc(var(--saturation-factor, 1) * 83.5%), 47.5%)",
           RED_NEW_51:
-            "hsl(354, calc(var(--saturation-factor, 1) * 81.4%), 46.5%)",
+            "hsl(354, calc(var(--saturation-factor, 1) * 81.4%), 46.3%)",
           RED_NEW_52:
             "hsl(354, calc(var(--saturation-factor, 1) * 80%), 45.1%)",
           RED_NEW_53:
@@ -26646,7 +26645,7 @@
           RED_NEW_54:
             "hsl(355, calc(var(--saturation-factor, 1) * 77.1%), 42.7%)",
           RED_NEW_55:
-            "hsl(356, calc(var(--saturation-factor, 1) * 76.4%), 41.6%)",
+            "hsl(356, calc(var(--saturation-factor, 1) * 75.6%), 41.8%)",
           RED_NEW_56:
             "hsl(356, calc(var(--saturation-factor, 1) * 74.8%), 40.4%)",
           RED_NEW_57:
@@ -26667,7 +26666,7 @@
           RED_NEW_64:
             "hsl(359, calc(var(--saturation-factor, 1) * 68.6%), 31.2%)",
           RED_NEW_65:
-            "hsl(359, calc(var(--saturation-factor, 1) * 68.4%), 29.8%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 67.3%), 30%)",
           RED_NEW_66:
             "hsl(359, calc(var(--saturation-factor, 1) * 67.3%), 28.8%)",
           RED_NEW_67:
@@ -26678,7 +26677,7 @@
             "hsl(0, calc(var(--saturation-factor, 1) * 66.4%), 25.7%)",
           RED_NEW_7: "hsl(8, calc(var(--saturation-factor, 1) * 100%), 86.1%)",
           RED_NEW_70:
-            "hsl(0, calc(var(--saturation-factor, 1) * 66.4%), 24.5%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 66.4%), 24.5%)",
           RED_NEW_71:
             "hsl(1, calc(var(--saturation-factor, 1) * 66.7%), 23.5%)",
           RED_NEW_72: "hsl(1, calc(var(--saturation-factor, 1) * 67%), 22.5%)",
@@ -26688,7 +26687,7 @@
           RED_NEW_75:
             "hsl(2, calc(var(--saturation-factor, 1) * 67.7%), 19.4%)",
           RED_NEW_76:
-            "hsl(1, calc(var(--saturation-factor, 1) * 66.3%), 18.6%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 68.1%), 18.4%)",
           RED_NEW_77:
             "hsl(1, calc(var(--saturation-factor, 1) * 66.7%), 17.6%)",
           RED_NEW_78:
@@ -26709,7 +26708,7 @@
           RED_NEW_86:
             "hsl(3, calc(var(--saturation-factor, 1) * 73.1%), 10.2%)",
           RED_NEW_87: "hsl(3, calc(var(--saturation-factor, 1) * 75%), 9.4%)",
-          RED_NEW_88: "hsl(2, calc(var(--saturation-factor, 1) * 73.9%), 9%)",
+          RED_NEW_88: "hsl(2, calc(var(--saturation-factor, 1) * 73.3%), 8.8%)",
           RED_NEW_89: "hsl(4, calc(var(--saturation-factor, 1) * 76.2%), 8.2%)",
           RED_NEW_9: "hsl(7, calc(var(--saturation-factor, 1) * 100%), 84.3%)",
           RED_NEW_90: "hsl(2, calc(var(--saturation-factor, 1) * 74.4%), 7.6%)",
@@ -26723,403 +26722,403 @@
           RED_NEW_98: "hsl(0, calc(var(--saturation-factor, 1) * 76.5%), 3.3%)",
           RED_NEW_99: "hsl(0, calc(var(--saturation-factor, 1) * 73.3%), 2.9%)",
           TEAL_NEW_1:
-            "hsl(183, calc(var(--saturation-factor, 1) * 31%), 88.6%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 42.9%), 87.6%)",
           TEAL_NEW_10:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 76.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 41.5%), 74.5%)",
           TEAL_NEW_100:
-            "hsl(200, calc(var(--saturation-factor, 1) * 42.9%), 1.4%)",
+            "hsl(180, calc(var(--saturation-factor, 1) * 66.7%), 1.2%)",
           TEAL_NEW_11:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.2%), 75.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 41.6%), 73.1%)",
           TEAL_NEW_12:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 74.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.7%), 71.8%)",
           TEAL_NEW_13:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.4%), 73.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.7%), 70.4%)",
           TEAL_NEW_14:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 71.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.8%), 69%)",
           TEAL_NEW_15:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 70.6%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 41.8%), 67.6%)",
           TEAL_NEW_16:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 69.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.9%), 66.3%)",
           TEAL_NEW_17:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 68.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.9%), 64.9%)",
           TEAL_NEW_18:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31%), 67.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.9%), 63.5%)",
           TEAL_NEW_19:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31%), 65.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 42%), 62.2%)",
           TEAL_NEW_2:
-            "hsl(186, calc(var(--saturation-factor, 1) * 32.3%), 87.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 40.8%), 86.1%)",
           TEAL_NEW_20:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 64.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 42.3%), 60.6%)",
           TEAL_NEW_21:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.2%), 63.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 42.3%), 59.2%)",
           TEAL_NEW_22:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.9%), 62.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 42.3%), 57.8%)",
           TEAL_NEW_23:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31%), 61.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 42.3%), 56.5%)",
           TEAL_NEW_24:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31%), 60.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 43.2%), 55.1%)",
           TEAL_NEW_25:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.1%), 59%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 43.2%), 53.7%)",
           TEAL_NEW_26:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 58%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 43.4%), 52.2%)",
           TEAL_NEW_27:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 56.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 43.7%), 50.6%)",
           TEAL_NEW_28:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31%), 55.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 45.6%), 49%)",
           TEAL_NEW_29:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31%), 54.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 48.8%), 47.5%)",
           TEAL_NEW_3:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 85.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 41%), 84.7%)",
           TEAL_NEW_30:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.8%), 53.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 53%), 45.9%)",
           TEAL_NEW_31:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.9%), 52.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 58%), 43.9%)",
           TEAL_NEW_32:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 51.2%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 64.3%), 41.8%)",
           TEAL_NEW_33:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 50.2%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 72.1%), 39.4%)",
           TEAL_NEW_34:
-            "hsl(186, calc(var(--saturation-factor, 1) * 32.3%), 49.2%)",
+            "hsl(183, calc(var(--saturation-factor, 1) * 86.9%), 35.9%)",
           TEAL_NEW_35:
-            "hsl(185, calc(var(--saturation-factor, 1) * 33.9%), 48%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 33.3%)",
           TEAL_NEW_36:
-            "hsl(185, calc(var(--saturation-factor, 1) * 35.6%), 46.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 32.9%)",
           TEAL_NEW_37:
-            "hsl(185, calc(var(--saturation-factor, 1) * 37.3%), 45.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 32.5%)",
           TEAL_NEW_38:
-            "hsl(185, calc(var(--saturation-factor, 1) * 38.6%), 44.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 32.4%)",
           TEAL_NEW_39:
-            "hsl(185, calc(var(--saturation-factor, 1) * 40.8%), 43.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 32%)",
           TEAL_NEW_4:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.6%), 84.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.9%), 83.1%)",
           TEAL_NEW_40:
-            "hsl(185, calc(var(--saturation-factor, 1) * 42.9%), 42.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 31.6%)",
           TEAL_NEW_41:
-            "hsl(185, calc(var(--saturation-factor, 1) * 45%), 41.4%)",
-          TEAL_NEW_42: "hsl(185, calc(var(--saturation-factor, 1) * 48%), 40%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 31.2%)",
+          TEAL_NEW_42:
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 30.8%)",
           TEAL_NEW_43:
-            "hsl(185, calc(var(--saturation-factor, 1) * 50.8%), 39%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 30.2%)",
           TEAL_NEW_44:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.2%), 37.6%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 29.8%)",
           TEAL_NEW_45:
-            "hsl(184, calc(var(--saturation-factor, 1) * 57.8%), 36.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 29.4%)",
           TEAL_NEW_46:
-            "hsl(185, calc(var(--saturation-factor, 1) * 62%), 35.1%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 28.8%)",
           TEAL_NEW_47:
-            "hsl(185, calc(var(--saturation-factor, 1) * 67.3%), 33.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 28.4%)",
           TEAL_NEW_48:
-            "hsl(185, calc(var(--saturation-factor, 1) * 74.1%), 31.8%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 28%)",
           TEAL_NEW_49:
-            "hsl(184, calc(var(--saturation-factor, 1) * 84.2%), 29.8%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 27.5%)",
           TEAL_NEW_5:
-            "hsl(187, calc(var(--saturation-factor, 1) * 31.8%), 83.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.9%), 81.8%)",
           TEAL_NEW_50:
             "hsl(184, calc(var(--saturation-factor, 1) * 100%), 27.1%)",
           TEAL_NEW_51:
-            "hsl(184, calc(var(--saturation-factor, 1) * 92.8%), 27.1%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 26.3%)",
           TEAL_NEW_52:
-            "hsl(184, calc(var(--saturation-factor, 1) * 88.3%), 26.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 25.5%)",
           TEAL_NEW_53:
-            "hsl(184, calc(var(--saturation-factor, 1) * 82.5%), 26.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 24.7%)",
           TEAL_NEW_54:
-            "hsl(184, calc(var(--saturation-factor, 1) * 79.1%), 26.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 23.9%)",
           TEAL_NEW_55:
-            "hsl(184, calc(var(--saturation-factor, 1) * 75.8%), 25.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 23.1%)",
           TEAL_NEW_56:
-            "hsl(184, calc(var(--saturation-factor, 1) * 73.6%), 25.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 22.4%)",
           TEAL_NEW_57:
-            "hsl(184, calc(var(--saturation-factor, 1) * 71.4%), 24.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 21.8%)",
           TEAL_NEW_58:
-            "hsl(184, calc(var(--saturation-factor, 1) * 69.1%), 24.1%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 21%)",
           TEAL_NEW_59:
-            "hsl(185, calc(var(--saturation-factor, 1) * 66.9%), 23.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 20.2%)",
           TEAL_NEW_6:
-            "hsl(184, calc(var(--saturation-factor, 1) * 31.2%), 81.8%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 42%), 80.4%)",
           TEAL_NEW_60:
-            "hsl(185, calc(var(--saturation-factor, 1) * 65.8%), 22.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 19.6%)",
           TEAL_NEW_61:
-            "hsl(184, calc(var(--saturation-factor, 1) * 64.6%), 22.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 19%)",
           TEAL_NEW_62:
-            "hsl(185, calc(var(--saturation-factor, 1) * 62.2%), 21.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 18.2%)",
           TEAL_NEW_63:
-            "hsl(185, calc(var(--saturation-factor, 1) * 60.7%), 21%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 17.6%)",
           TEAL_NEW_64:
-            "hsl(185, calc(var(--saturation-factor, 1) * 61.2%), 20.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 17.1%)",
           TEAL_NEW_65:
-            "hsl(185, calc(var(--saturation-factor, 1) * 60%), 19.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 16.5%)",
           TEAL_NEW_66:
-            "hsl(185, calc(var(--saturation-factor, 1) * 58.8%), 19%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 15.7%)",
           TEAL_NEW_67:
-            "hsl(186, calc(var(--saturation-factor, 1) * 57.4%), 18.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 15.1%)",
           TEAL_NEW_68:
-            "hsl(185, calc(var(--saturation-factor, 1) * 57.3%), 17.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 14.5%)",
           TEAL_NEW_69:
-            "hsl(184, calc(var(--saturation-factor, 1) * 55.8%), 16.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 13.9%)",
           TEAL_NEW_7:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 80.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 42.1%), 79%)",
           TEAL_NEW_70:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.8%), 16.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 13.3%)",
           TEAL_NEW_71:
-            "hsl(185, calc(var(--saturation-factor, 1) * 55%), 15.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 12.7%)",
           TEAL_NEW_72:
-            "hsl(184, calc(var(--saturation-factor, 1) * 55.3%), 14.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 12.2%)",
           TEAL_NEW_73:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.4%), 14.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 11.6%)",
           TEAL_NEW_74:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.3%), 13.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 11%)",
           TEAL_NEW_75:
-            "hsl(185, calc(var(--saturation-factor, 1) * 52.2%), 13.1%)",
+            "hsl(183, calc(var(--saturation-factor, 1) * 100%), 10.4%)",
           TEAL_NEW_76:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.1%), 12.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 10%)",
           TEAL_NEW_77:
-            "hsl(184, calc(var(--saturation-factor, 1) * 53.3%), 11.8%)",
-          TEAL_NEW_78:
-            "hsl(186, calc(var(--saturation-factor, 1) * 51.7%), 11.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 9.4%)",
+          TEAL_NEW_78: "hsl(185, calc(var(--saturation-factor, 1) * 100%), 9%)",
           TEAL_NEW_79:
-            "hsl(184, calc(var(--saturation-factor, 1) * 51.9%), 10.6%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 8.4%)",
           TEAL_NEW_8:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.4%), 79.4%)",
-          TEAL_NEW_80:
-            "hsl(184, calc(var(--saturation-factor, 1) * 52.9%), 10%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 42.6%), 77.5%)",
+          TEAL_NEW_80: "hsl(184, calc(var(--saturation-factor, 1) * 100%), 8%)",
           TEAL_NEW_81:
-            "hsl(185, calc(var(--saturation-factor, 1) * 51%), 9.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 7.6%)",
           TEAL_NEW_82:
-            "hsl(185, calc(var(--saturation-factor, 1) * 52.2%), 9%)",
+            "hsl(183, calc(var(--saturation-factor, 1) * 100%), 7.1%)",
           TEAL_NEW_83:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.5%), 8.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 6.7%)",
           TEAL_NEW_84:
-            "hsl(185, calc(var(--saturation-factor, 1) * 55%), 7.8%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 6.3%)",
           TEAL_NEW_85:
-            "hsl(186, calc(var(--saturation-factor, 1) * 52.6%), 7.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 5.9%)",
           TEAL_NEW_86:
-            "hsl(186, calc(var(--saturation-factor, 1) * 54.3%), 6.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100%), 5.5%)",
           TEAL_NEW_87:
-            "hsl(187, calc(var(--saturation-factor, 1) * 56.3%), 6.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 5.1%)",
           TEAL_NEW_88:
-            "hsl(188, calc(var(--saturation-factor, 1) * 53.3%), 5.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 4.7%)",
           TEAL_NEW_89:
-            "hsl(184, calc(var(--saturation-factor, 1) * 55.6%), 5.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100%), 4.3%)",
           TEAL_NEW_9:
-            "hsl(187, calc(var(--saturation-factor, 1) * 31.5%), 78.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.5%), 75.9%)",
           TEAL_NEW_90:
-            "hsl(185, calc(var(--saturation-factor, 1) * 52%), 4.9%)",
+            "hsl(183, calc(var(--saturation-factor, 1) * 90.5%), 4.1%)",
           TEAL_NEW_91:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.5%), 4.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 89.5%), 3.7%)",
           TEAL_NEW_92:
-            "hsl(185, calc(var(--saturation-factor, 1) * 52.4%), 4.1%)",
+            "hsl(188, calc(var(--saturation-factor, 1) * 88.9%), 3.5%)",
           TEAL_NEW_93:
-            "hsl(186, calc(var(--saturation-factor, 1) * 55.6%), 3.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 87.5%), 3.1%)",
           TEAL_NEW_94:
-            "hsl(180, calc(var(--saturation-factor, 1) * 50%), 3.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 85.7%), 2.7%)",
           TEAL_NEW_95:
-            "hsl(188, calc(var(--saturation-factor, 1) * 57.1%), 2.7%)",
+            "hsl(191, calc(var(--saturation-factor, 1) * 84.6%), 2.5%)",
           TEAL_NEW_96:
-            "hsl(180, calc(var(--saturation-factor, 1) * 50%), 2.4%)",
-          TEAL_NEW_97: "hsl(190, calc(var(--saturation-factor, 1) * 60%), 2%)",
+            "hsl(187, calc(var(--saturation-factor, 1) * 81.8%), 2.2%)",
+          TEAL_NEW_97:
+            "hsl(180, calc(var(--saturation-factor, 1) * 77.8%), 1.8%)",
           TEAL_NEW_98:
-            "hsl(192, calc(var(--saturation-factor, 1) * 55.6%), 1.8%)",
+            "hsl(180, calc(var(--saturation-factor, 1) * 75%), 1.6%)",
           TEAL_NEW_99:
-            "hsl(195, calc(var(--saturation-factor, 1) * 50%), 1.6%)",
+            "hsl(192, calc(var(--saturation-factor, 1) * 71.4%), 1.4%)",
           YELLOW_NEW_1:
-            "hsl(38, calc(var(--saturation-factor, 1) * 55.6%), 87.6%)",
+            "hsl(43, calc(var(--saturation-factor, 1) * 63.4%), 86.1%)",
           YELLOW_NEW_10:
-            "hsl(36, calc(var(--saturation-factor, 1) * 53.2%), 75.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 61.7%), 72.4%)",
           YELLOW_NEW_100:
-            "hsl(24, calc(var(--saturation-factor, 1) * 71.4%), 1.4%)",
+            "hsl(30, calc(var(--saturation-factor, 1) * 100%), 1.2%)",
           YELLOW_NEW_11:
-            "hsl(37, calc(var(--saturation-factor, 1) * 52.7%), 74.3%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 61.1%), 70.8%)",
           YELLOW_NEW_12:
-            "hsl(37, calc(var(--saturation-factor, 1) * 52.2%), 72.9%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 61.3%), 69.6%)",
           YELLOW_NEW_13:
-            "hsl(37, calc(var(--saturation-factor, 1) * 52.4%), 72%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 60.7%), 68%)",
           YELLOW_NEW_14:
-            "hsl(37, calc(var(--saturation-factor, 1) * 52%), 70.6%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 60%), 66.7%)",
           YELLOW_NEW_15:
-            "hsl(37, calc(var(--saturation-factor, 1) * 51.3%), 69.4%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 60.2%), 65.5%)",
           YELLOW_NEW_16:
-            "hsl(36, calc(var(--saturation-factor, 1) * 51.9%), 68.2%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 59.6%), 64.1%)",
           YELLOW_NEW_17:
-            "hsl(36, calc(var(--saturation-factor, 1) * 51.2%), 67.1%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 59.8%), 62.9%)",
           YELLOW_NEW_18:
-            "hsl(36, calc(var(--saturation-factor, 1) * 50.6%), 65.9%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 59.2%), 61.6%)",
           YELLOW_NEW_19:
-            "hsl(37, calc(var(--saturation-factor, 1) * 50%), 64.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 58.6%), 60.2%)",
           YELLOW_NEW_2:
-            "hsl(37, calc(var(--saturation-factor, 1) * 56.5%), 86.5%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 64.6%), 84.5%)",
           YELLOW_NEW_20:
-            "hsl(36, calc(var(--saturation-factor, 1) * 50.3%), 63.7%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 58.9%), 59%)",
           YELLOW_NEW_21:
-            "hsl(36, calc(var(--saturation-factor, 1) * 49.7%), 62.5%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 58.3%), 57.6%)",
           YELLOW_NEW_22:
-            "hsl(36, calc(var(--saturation-factor, 1) * 49.2%), 61.4%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 57.8%), 56.3%)",
           YELLOW_NEW_23:
-            "hsl(36, calc(var(--saturation-factor, 1) * 48.8%), 60.2%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 58.1%), 55.1%)",
           YELLOW_NEW_24:
-            "hsl(36, calc(var(--saturation-factor, 1) * 49%), 59.2%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 57.6%), 53.7%)",
           YELLOW_NEW_25:
-            "hsl(36, calc(var(--saturation-factor, 1) * 48.6%), 58%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 57.2%), 52.4%)",
           YELLOW_NEW_26:
-            "hsl(36, calc(var(--saturation-factor, 1) * 48.2%), 56.9%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 57.4%), 51.2%)",
           YELLOW_NEW_27:
-            "hsl(36, calc(var(--saturation-factor, 1) * 47.6%), 55.9%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 57.5%), 49.8%)",
           YELLOW_NEW_28:
-            "hsl(36, calc(var(--saturation-factor, 1) * 47.8%), 54.9%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 60.3%), 48.4%)",
           YELLOW_NEW_29:
-            "hsl(36, calc(var(--saturation-factor, 1) * 47.5%), 53.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 63.5%), 47.3%)",
           YELLOW_NEW_3:
-            "hsl(38, calc(var(--saturation-factor, 1) * 55.8%), 84.9%)",
+            "hsl(43, calc(var(--saturation-factor, 1) * 63.6%), 82.7%)",
           YELLOW_NEW_30:
-            "hsl(36, calc(var(--saturation-factor, 1) * 46.9%), 52.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 67.4%), 45.7%)",
           YELLOW_NEW_31:
-            "hsl(36, calc(var(--saturation-factor, 1) * 47.2%), 51.8%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 70.8%), 44.3%)",
           YELLOW_NEW_32:
-            "hsl(36, calc(var(--saturation-factor, 1) * 46.6%), 50.8%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 76.1%), 42.7%)",
           YELLOW_NEW_33:
-            "hsl(36, calc(var(--saturation-factor, 1) * 47%), 49.6%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 81.8%), 41%)",
           YELLOW_NEW_34:
-            "hsl(36, calc(var(--saturation-factor, 1) * 48.6%), 48.8%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 90.9%), 38.6%)",
           YELLOW_NEW_35:
-            "hsl(36, calc(var(--saturation-factor, 1) * 50.6%), 47.6%)",
+            "hsl(43, calc(var(--saturation-factor, 1) * 100%), 36.7%)",
           YELLOW_NEW_36:
-            "hsl(36, calc(var(--saturation-factor, 1) * 52.1%), 46.7%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 100%), 36.3%)",
           YELLOW_NEW_37:
-            "hsl(36, calc(var(--saturation-factor, 1) * 53.6%), 45.7%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 100%), 36.1%)",
           YELLOW_NEW_38:
-            "hsl(36, calc(var(--saturation-factor, 1) * 56.1%), 44.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 100%), 35.7%)",
           YELLOW_NEW_39:
-            "hsl(36, calc(var(--saturation-factor, 1) * 57.8%), 43.7%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 100%), 35.3%)",
           YELLOW_NEW_4:
-            "hsl(38, calc(var(--saturation-factor, 1) * 54.8%), 83.5%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 64.2%), 81.4%)",
           YELLOW_NEW_40:
-            "hsl(36, calc(var(--saturation-factor, 1) * 60.4%), 42.5%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 100%), 35.1%)",
           YELLOW_NEW_41:
-            "hsl(36, calc(var(--saturation-factor, 1) * 62.4%), 41.8%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 100%), 34.7%)",
           YELLOW_NEW_42:
-            "hsl(36, calc(var(--saturation-factor, 1) * 65.2%), 40.6%)",
+            "hsl(40, calc(var(--saturation-factor, 1) * 100%), 34.3%)",
           YELLOW_NEW_43:
-            "hsl(37, calc(var(--saturation-factor, 1) * 67.3%), 39.6%)",
+            "hsl(39, calc(var(--saturation-factor, 1) * 100%), 34.1%)",
           YELLOW_NEW_44:
-            "hsl(37, calc(var(--saturation-factor, 1) * 70.6%), 38.6%)",
+            "hsl(39, calc(var(--saturation-factor, 1) * 100%), 33.7%)",
           YELLOW_NEW_45:
-            "hsl(37, calc(var(--saturation-factor, 1) * 73.8%), 37.5%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 33.3%)",
           YELLOW_NEW_46:
-            "hsl(37, calc(var(--saturation-factor, 1) * 77.4%), 36.5%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 33.1%)",
           YELLOW_NEW_47:
-            "hsl(37, calc(var(--saturation-factor, 1) * 81.1%), 35.3%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 32.7%)",
           YELLOW_NEW_48:
-            "hsl(38, calc(var(--saturation-factor, 1) * 87.2%), 33.7%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 32.4%)",
           YELLOW_NEW_49:
-            "hsl(38, calc(var(--saturation-factor, 1) * 93.9%), 32.4%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 32%)",
           YELLOW_NEW_5:
-            "hsl(37, calc(var(--saturation-factor, 1) * 55.6%), 82.4%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 63.1%), 79.8%)",
           YELLOW_NEW_50:
-            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 31%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 31.6%)",
           YELLOW_NEW_51:
-            "hsl(38, calc(var(--saturation-factor, 1) * 98.7%), 30.2%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 30.6%)",
           YELLOW_NEW_52:
-            "hsl(38, calc(var(--saturation-factor, 1) * 96%), 29.6%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 29.6%)",
           YELLOW_NEW_53:
-            "hsl(38, calc(var(--saturation-factor, 1) * 94.6%), 28.8%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 28.6%)",
           YELLOW_NEW_54:
-            "hsl(38, calc(var(--saturation-factor, 1) * 93%), 28%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 27.6%)",
           YELLOW_NEW_55:
-            "hsl(38, calc(var(--saturation-factor, 1) * 91.4%), 27.3%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 26.7%)",
           YELLOW_NEW_56:
-            "hsl(38, calc(var(--saturation-factor, 1) * 91%), 26.3%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 25.9%)",
           YELLOW_NEW_57:
-            "hsl(37, calc(var(--saturation-factor, 1) * 89.3%), 25.7%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 24.9%)",
           YELLOW_NEW_58:
-            "hsl(38, calc(var(--saturation-factor, 1) * 88.9%), 24.7%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 24.1%)",
           YELLOW_NEW_59:
-            "hsl(38, calc(var(--saturation-factor, 1) * 87%), 24.1%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 23.1%)",
           YELLOW_NEW_6:
-            "hsl(37, calc(var(--saturation-factor, 1) * 54.6%), 81%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 62.2%), 78.2%)",
           YELLOW_NEW_60:
-            "hsl(37, calc(var(--saturation-factor, 1) * 86.6%), 23.3%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 22.4%)",
           YELLOW_NEW_61:
-            "hsl(38, calc(var(--saturation-factor, 1) * 86.1%), 22.5%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 21.6%)",
           YELLOW_NEW_62:
-            "hsl(37, calc(var(--saturation-factor, 1) * 85.6%), 21.8%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 20.8%)",
           YELLOW_NEW_63:
-            "hsl(37, calc(var(--saturation-factor, 1) * 83.3%), 21.2%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 20%)",
           YELLOW_NEW_64:
-            "hsl(38, calc(var(--saturation-factor, 1) * 82.7%), 20.4%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 19.2%)",
           YELLOW_NEW_65:
-            "hsl(38, calc(var(--saturation-factor, 1) * 83.8%), 19.4%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 18.4%)",
           YELLOW_NEW_66:
-            "hsl(38, calc(var(--saturation-factor, 1) * 83.3%), 18.8%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 17.6%)",
           YELLOW_NEW_67:
-            "hsl(38, calc(var(--saturation-factor, 1) * 82.6%), 18%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 16.9%)",
           YELLOW_NEW_68:
-            "hsl(37, calc(var(--saturation-factor, 1) * 82%), 17.5%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 16.3%)",
           YELLOW_NEW_69:
-            "hsl(37, calc(var(--saturation-factor, 1) * 81.2%), 16.7%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 15.5%)",
           YELLOW_NEW_7:
-            "hsl(37, calc(var(--saturation-factor, 1) * 54.3%), 79.4%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 62.7%), 76.9%)",
           YELLOW_NEW_70:
-            "hsl(37, calc(var(--saturation-factor, 1) * 80.5%), 16.1%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 14.9%)",
           YELLOW_NEW_71:
-            "hsl(37, calc(var(--saturation-factor, 1) * 79.7%), 15.5%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 14.3%)",
           YELLOW_NEW_72:
-            "hsl(37, calc(var(--saturation-factor, 1) * 81.3%), 14.7%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 13.7%)",
           YELLOW_NEW_73:
-            "hsl(37, calc(var(--saturation-factor, 1) * 80.6%), 14.1%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 12.9%)",
           YELLOW_NEW_74:
-            "hsl(37, calc(var(--saturation-factor, 1) * 79.7%), 13.5%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 12.4%)",
           YELLOW_NEW_75:
-            "hsl(37, calc(var(--saturation-factor, 1) * 78.8%), 12.9%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 11.8%)",
           YELLOW_NEW_76:
-            "hsl(37, calc(var(--saturation-factor, 1) * 80.6%), 12.2%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 11.2%)",
           YELLOW_NEW_77:
-            "hsl(37, calc(var(--saturation-factor, 1) * 79.7%), 11.6%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 10.8%)",
           YELLOW_NEW_78:
-            "hsl(37, calc(var(--saturation-factor, 1) * 78.6%), 11%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 10.2%)",
           YELLOW_NEW_79:
-            "hsl(36, calc(var(--saturation-factor, 1) * 81.1%), 10.4%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 9.6%)",
           YELLOW_NEW_8:
-            "hsl(37, calc(var(--saturation-factor, 1) * 53.6%), 78%)",
+            "hsl(42, calc(var(--saturation-factor, 1) * 61.9%), 75.3%)",
           YELLOW_NEW_80:
-            "hsl(38, calc(var(--saturation-factor, 1) * 80%), 9.8%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 9%)",
           YELLOW_NEW_81:
-            "hsl(36, calc(var(--saturation-factor, 1) * 79.2%), 9.4%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 8.6%)",
           YELLOW_NEW_82:
-            "hsl(36, calc(var(--saturation-factor, 1) * 77.8%), 8.8%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 8%)",
           YELLOW_NEW_83:
-            "hsl(37, calc(var(--saturation-factor, 1) * 81%), 8.2%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 7.6%)",
           YELLOW_NEW_84:
-            "hsl(37, calc(var(--saturation-factor, 1) * 79.5%), 7.6%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 7.1%)",
           YELLOW_NEW_85:
-            "hsl(35, calc(var(--saturation-factor, 1) * 78.4%), 7.3%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 6.7%)",
           YELLOW_NEW_86:
-            "hsl(36, calc(var(--saturation-factor, 1) * 82.4%), 6.7%)",
+            "hsl(38, calc(var(--saturation-factor, 1) * 100%), 6.3%)",
           YELLOW_NEW_87:
-            "hsl(35, calc(var(--saturation-factor, 1) * 81.3%), 6.3%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 100%), 5.9%)",
           YELLOW_NEW_88:
-            "hsl(35, calc(var(--saturation-factor, 1) * 80%), 5.9%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 100%), 5.5%)",
           YELLOW_NEW_89:
-            "hsl(33, calc(var(--saturation-factor, 1) * 78.6%), 5.5%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 100%), 4.9%)",
           YELLOW_NEW_9:
-            "hsl(36, calc(var(--saturation-factor, 1) * 53.8%), 77.1%)",
+            "hsl(41, calc(var(--saturation-factor, 1) * 62.4%), 73.9%)",
           YELLOW_NEW_90:
-            "hsl(34, calc(var(--saturation-factor, 1) * 84%), 4.9%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 100%), 4.5%)",
           YELLOW_NEW_91:
-            "hsl(35, calc(var(--saturation-factor, 1) * 82.6%), 4.5%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 100%), 4.1%)",
           YELLOW_NEW_92:
-            "hsl(32, calc(var(--saturation-factor, 1) * 81%), 4.1%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 100%), 3.7%)",
           YELLOW_NEW_93:
-            "hsl(32, calc(var(--saturation-factor, 1) * 78.9%), 3.7%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 100%), 3.5%)",
           YELLOW_NEW_94:
-            "hsl(32, calc(var(--saturation-factor, 1) * 76.5%), 3.3%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 100%), 3.1%)",
           YELLOW_NEW_95:
-            "hsl(35, calc(var(--saturation-factor, 1) * 85.7%), 2.7%)",
+            "hsl(30, calc(var(--saturation-factor, 1) * 100%), 2.7%)",
           YELLOW_NEW_96:
-            "hsl(27, calc(var(--saturation-factor, 1) * 84.6%), 2.5%)",
+            "hsl(30, calc(var(--saturation-factor, 1) * 100%), 2.4%)",
           YELLOW_NEW_97:
-            "hsl(33, calc(var(--saturation-factor, 1) * 81.8%), 2.2%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 100%), 2%)",
           YELLOW_NEW_98:
-            "hsl(34, calc(var(--saturation-factor, 1) * 77.8%), 1.8%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 100%), 1.8%)",
           YELLOW_NEW_99:
-            "hsl(30, calc(var(--saturation-factor, 1) * 75%), 1.6%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 100%), 1.4%)",
         });
         t.Z = r;
       },
@@ -28136,9 +28135,9 @@
                 return a.length > 3 ? [t, r, n, a[3]] : [t, r, n, 1];
               },
               m = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
-              b =
-                /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
               y =
+                /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
+              b =
                 /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
               v =
                 /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
@@ -28157,11 +28156,11 @@
                     r[n] = +r[n];
                   return (r[3] = 1), r;
                 }
-                if ((t = e.match(b))) {
+                if ((t = e.match(y))) {
                   for (var a = t.slice(1, 5), _ = 0; _ < 4; _++) a[_] = +a[_];
                   return a;
                 }
-                if ((t = e.match(y))) {
+                if ((t = e.match(b))) {
                   for (var o = t.slice(1, 4), E = 0; E < 3; E++)
                     o[E] = W(2.55 * o[E]);
                   return (o[3] = 1), o;
@@ -28187,8 +28186,8 @@
             H.test = function (e) {
               return (
                 m.test(e) ||
-                b.test(e) ||
                 y.test(e) ||
+                b.test(e) ||
                 v.test(e) ||
                 w.test(e) ||
                 B.test(e)
@@ -28681,12 +28680,12 @@
                   E = 116 * _ - 16;
                 return [E < 0 ? 0 : E, 500 * (a - _), 200 * (_ - o)];
               },
-              eb = E.unpack,
-              ey = Math.pow,
+              ey = E.unpack,
+              eb = Math.pow,
               ev = function (e) {
                 return (
                   255 *
-                  (e <= 0.00304 ? 12.92 * e : 1.055 * ey(e, 1 / 2.4) - 0.055)
+                  (e <= 0.00304 ? 12.92 * e : 1.055 * eb(e, 1 / 2.4) - 0.055)
                 );
               },
               ew = function (e) {
@@ -28695,7 +28694,7 @@
               eB = function () {
                 for (var e, t, r, n, a, _ = [], o = arguments.length; o--; )
                   _[o] = arguments[o];
-                var E = (_ = eb(_, "lab"))[0],
+                var E = (_ = ey(_, "lab"))[0],
                   i = _[1],
                   c = _[2];
                 return (
@@ -28986,7 +28985,7 @@
                 yellow: "#ffff00",
                 yellowgreen: "#9acd32",
               },
-              e5 = E.type;
+              e4 = E.type;
             (u.prototype.name = function () {
               for (
                 var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e6);
@@ -29007,17 +29006,17 @@
                 test: function (e) {
                   for (var t = [], r = arguments.length - 1; r-- > 0; )
                     t[r] = arguments[r + 1];
-                  if (!t.length && "string" === e5(e) && e6[e.toLowerCase()])
+                  if (!t.length && "string" === e4(e) && e6[e.toLowerCase()])
                     return "named";
                 },
               });
-            var e4 = E.unpack,
+            var e5 = E.unpack,
               e8 = E.type,
               e7 = E.type,
               e9 = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = e4(e, "rgb");
+                var r = e5(e, "rgb");
                 return (r[0] << 16) + (r[1] << 8) + r[2];
               };
             (u.prototype.num = function () {
@@ -29362,7 +29361,7 @@
               },
               tG = {},
               tm = E.type,
-              tb = function (e, t, r) {
+              ty = function (e, t, r) {
                 void 0 === r && (r = 0.5);
                 for (var n = [], a = arguments.length - 3; a-- > 0; )
                   n[a] = arguments[a + 3];
@@ -29379,7 +29378,7 @@
               void 0 === t && (t = 0.5);
               for (var r = [], n = arguments.length - 2; n-- > 0; )
                 r[n] = arguments[n + 2];
-              return tb.apply(void 0, [this, e, t].concat(r));
+              return ty.apply(void 0, [this, e, t].concat(r));
             };
             u.prototype.premultiply = function (e) {
               void 0 === e && (e = !1);
@@ -29401,7 +29400,7 @@
               (u.prototype.desaturate = function (e) {
                 return void 0 === e && (e = 1), this.saturate(-e);
               });
-            var ty = E.type;
+            var tb = E.type;
             u.prototype.set = function (e, t, r) {
               void 0 === r && (r = !1);
               var n = e.split("."),
@@ -29411,7 +29410,7 @@
               if (!_) return o;
               var E = a.indexOf(_) - ("ok" === a.substr(0, 2) ? 2 : 0);
               if (E > -1) {
-                if ("string" == ty(t))
+                if ("string" == tb(t))
                   switch (t.charAt(0)) {
                     case "+":
                     case "-":
@@ -29426,7 +29425,7 @@
                     default:
                       o[E] = +t;
                   }
-                else if ("number" === ty(t)) o[E] = t;
+                else if ("number" === tb(t)) o[E] = t;
                 else throw Error("unsupported value for Color.set");
                 var i = new u(o, a);
                 return r ? ((this._rgb = i._rgb), this) : i;
@@ -29982,8 +29981,8 @@
                 t2 = E.clip_rgb,
                 t3 = E.TWOPI,
                 t6 = Math.pow,
-                t5 = Math.sin,
-                t4 = Math.cos,
+                t4 = Math.sin,
+                t5 = Math.cos,
                 t8 = Math.floor,
                 t7 = Math.random,
                 t9 = Math.log,
@@ -30082,9 +30081,9 @@
                         }
                       }
                       for (var G = Array(r), m = 0; m < r; m++) G[m] = null;
-                      for (var b = 0; b < T; b++)
-                        null === G[(A = d[b])] ? (G[A] = o[b]) : (G[A] += o[b]);
-                      for (var y = 0; y < r; y++) G[y] *= 1 / L[y];
+                      for (var y = 0; y < T; y++)
+                        null === G[(A = d[y])] ? (G[A] = o[y]) : (G[A] += o[y]);
+                      for (var b = 0; b < r; b++) G[b] *= 1 / L[b];
                       f = !1;
                       for (var v = 0; v < r; v++)
                         if (G[v] !== p[v]) {
@@ -30626,8 +30625,8 @@
                   var i = t3 * ((e + 120) / 360 + t * E),
                     c = t6(a[0] + _ * E, n),
                     s = ((0 !== o ? r[0] + E * o : r) * c * (1 - c)) / 2,
-                    l = t4(i),
-                    u = t5(i);
+                    l = t5(i),
+                    u = t4(i);
                   return I(
                     t2([
                       255 * (c + s * (-0.14861 * l + 1.78277 * u)),
@@ -30670,7 +30669,7 @@
                   E
                 );
               }),
-              (I.mix = I.interpolate = tb),
+              (I.mix = I.interpolate = ty),
               (I.random = function () {
                 for (var e = "#", t = 0; t < 6; t++)
                   e += "0123456789abcdef".charAt(t8(16 * t7()));
@@ -30729,8 +30728,8 @@
                   (M = 2 * rE(O * p) * rR(o(M) / 2));
                 var G = p - O,
                   m = 1 + (0.015 * ri(A - 50, 2)) / rE(20 + ri(A - 50, 2)),
-                  b = 1 + 0.045 * h,
-                  y = 1 + 0.015 * h * P,
+                  y = 1 + 0.045 * h,
+                  b = 1 + 0.015 * h * P,
                   v = 30 * rN(-ri((U - 275) / 25, 2)),
                   w =
                     -(2 * rE(ri(h, 7) / (ri(h, 7) + ri(25, 7)))) * rR(2 * o(v));
@@ -30740,9 +30739,9 @@
                     100,
                     rE(
                       ri((I - i) / (r * m), 2) +
-                        ri(G / (n * b), 2) +
-                        ri(M / (a * y), 2) +
-                        (G / (n * b)) * w * (M / (a * y)),
+                        ri(G / (n * y), 2) +
+                        ri(M / (a * b), 2) +
+                        (G / (n * y)) * w * (M / (a * b)),
                     ),
                   ),
                 );
@@ -32540,7 +32539,7 @@
             return U;
           },
           GC: function () {
-            return b;
+            return y;
           },
           WU: function () {
             return g;
@@ -32549,7 +32548,7 @@
             return h;
           },
           dz: function () {
-            return y;
+            return b;
           },
           nm: function () {
             return M;
@@ -32918,11 +32917,11 @@
         function m() {
           return G.size;
         }
-        function b(e) {
+        function y(e) {
           let t = G.get(e);
           return t && G.delete(e), t;
         }
-        function y(e, t) {
+        function b(e, t) {
           if ((G.set(e, t), G.size > 30)) {
             let e = G.keys().next().value;
             G.delete(e);
@@ -33333,8 +33332,8 @@
                 traceFetch: M,
                 traceXHR: G,
                 shouldCreateSpanForRequest: m,
-                enableHTTPTimings: b,
-                instrumentPageLoad: y,
+                enableHTTPTimings: y,
+                instrumentPageLoad: b,
                 instrumentNavigation: v,
               } = { ...O, ...e },
               w = (0, n.PR)();
@@ -33425,7 +33424,7 @@
                     });
                   }),
                   d.m9.location &&
-                    (y &&
+                    (b &&
                       h(e, {
                         name: d.m9.location.pathname,
                         startTime: R.Z1 ? R.Z1 / 1e3 : void 0,
@@ -33509,7 +33508,7 @@
                     tracePropagationTargets:
                       e.getOptions().tracePropagationTargets,
                     shouldCreateSpanForRequest: m,
-                    enableHTTPTimings: b,
+                    enableHTTPTimings: y,
                   });
               },
             };
@@ -35224,7 +35223,7 @@ Reason: ${e}`))
             return o.Iw;
           },
           Jn: function () {
-            return b.Jn;
+            return y.Jn;
           },
           KW: function () {
             return I.K;
@@ -35416,7 +35415,7 @@ Reason: ${e}`))
           M = r(925746),
           G = r(425930),
           m = r(820284),
-          b = r(824337);
+          y = r(824337);
       },
       151122: function (e, t, r) {
         "use strict";
@@ -37970,9 +37969,9 @@ Url: ${s(e)}`),
           let n = M(e),
             { forceTransaction: a, parentSpan: _ } = e;
           return (0, E.$e)(e.scope, () =>
-            y(_)(() => {
+            b(_)(() => {
               let r = (0, E.nZ)(),
-                _ = b(r),
+                _ = y(r),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
@@ -38004,9 +38003,9 @@ Url: ${s(e)}`),
           let n = M(e),
             { forceTransaction: a, parentSpan: _ } = e;
           return (0, E.$e)(e.scope, () =>
-            y(_)(() => {
+            b(_)(() => {
               let r = (0, E.nZ)(),
-                _ = b(r),
+                _ = y(r),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
@@ -38047,7 +38046,7 @@ Url: ${s(e)}`),
                 : (e) => e()
           )(() => {
             let t = (0, E.nZ)(),
-              a = b(t);
+              a = y(t);
             return e.onlyIfParent && !a
               ? new d.b()
               : P({
@@ -38162,7 +38161,7 @@ Url: ${s(e)}`),
             l
           );
         }
-        function b(e) {
+        function y(e) {
           let t = (0, I.Y)(e);
           if (!t) return;
           let r = (0, E.s3)();
@@ -38170,7 +38169,7 @@ Url: ${s(e)}`),
             ? (0, R.Gx)(t)
             : t;
         }
-        function y(e) {
+        function b(e) {
           return void 0 !== e ? (t) => g(e, t) : (e) => e();
         }
       },
@@ -42108,7 +42107,7 @@ Error:`,
             return S;
           },
           cN: function () {
-            return y;
+            return b;
           },
           to: function () {
             return O;
@@ -42156,7 +42155,7 @@ Error:`,
                   );
               })(e),
               (d[e] = !0)),
-            b(e, t)
+            y(e, t)
           );
         }
         function D(e, t) {
@@ -42213,13 +42212,13 @@ Error:`,
             m(e, t),
             !d[e] && ((_ = r()), (d[e] = !0)),
             n && t({ metric: n }),
-            b(e, t, a ? _ : void 0)
+            y(e, t, a ? _ : void 0)
           );
         }
         function m(e, t) {
           (T[e] = T[e] || []), T[e].push(t);
         }
-        function b(e, t, r) {
+        function y(e, t, r) {
           return () => {
             r && r();
             let n = T[e];
@@ -42228,7 +42227,7 @@ Error:`,
             -1 !== a && n.splice(a, 1);
           };
         }
-        function y(e) {
+        function b(e) {
           return "duration" in e;
         }
       },
@@ -42805,7 +42804,7 @@ Error:`,
         "use strict";
         r.d(t, {
           U0: function () {
-            return e5;
+            return e4;
           },
           fA: function () {
             return g;
@@ -42929,7 +42928,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(95%)",
           },
-          b = {
+          y = {
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
@@ -42941,7 +42940,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(150%)",
           };
-        function y(e) {
+        function b(e) {
           return `
   --foreground: ${e.foreground};
   --background: ${e.background};
@@ -43063,7 +43062,7 @@ Error:`,
 
   ${"system" !== e ? "color-scheme: only light;" : ""}
 
-  ${y("dark" === e ? { ...b, ...t } : { ...m, ...r })}
+  ${b("dark" === e ? { ...y, ...t } : { ...m, ...r })}
 }
 
 ${
@@ -43071,7 +43070,7 @@ ${
     ? `
 @media (prefers-color-scheme: dark) {
   :host {
-    ${y({ ...b, ...t })}
+    ${b({ ...y, ...t })}
   }
 }`
     : ""
@@ -44141,7 +44140,7 @@ ${
             }, t)
           );
         }
-        function eb() {
+        function ey() {
           for (var e; (e = ed.shift()); )
             if (e.__P && e.__H)
               try {
@@ -44187,13 +44186,13 @@ ${
                       var t,
                         r = function () {
                           clearTimeout(n),
-                            ey && cancelAnimationFrame(t),
+                            eb && cancelAnimationFrame(t),
                             setTimeout(e);
                         },
                         n = setTimeout(r, 100);
-                      ey && (t = requestAnimationFrame(r));
+                      eb && (t = requestAnimationFrame(r));
                     }
-                  )(eb)),
+                  )(ey)),
               t.__H.__.forEach(function (e) {
                 e.i && (e.__H = e.i),
                   e.__V !== eL && (e.__ = e.__V),
@@ -44235,7 +44234,7 @@ ${
               (r.__H = void 0),
               t && ef.__e(t, r.__v));
           });
-        var ey = "function" == typeof requestAnimationFrame;
+        var eb = "function" == typeof requestAnimationFrame;
         function ev(e) {
           var t = eR,
             r = e.__c;
@@ -44421,10 +44420,10 @@ ${
             [g, P] = eU(!1),
             M = s && s.input,
             [G, m] = eU(null),
-            b = em((e) => {
+            y = em((e) => {
               m(e), P(!1);
             }, []),
-            y = em(
+            b = em(
               (e) => {
                 let t = (function (e, t) {
                   let r = [];
@@ -44472,7 +44471,7 @@ ${
                         message: ek(t, "message"),
                         attachments: r ? [r] : void 0,
                       };
-                    if (!y(n)) return;
+                    if (!b(n)) return;
                     try {
                       await a(
                         {
@@ -44497,7 +44496,7 @@ ${
             },
             M && g
               ? J(M, {
-                  onError: b,
+                  onError: y,
                   __self: this,
                   __source: { fileName: eK, lineNumber: 146 },
                 })
@@ -45258,7 +45257,7 @@ ${eQ}
               E = (t - _) / 2;
             return { startX: o, startY: E, endX: a + o, endY: _ + E };
           },
-          e5 = () => ({
+          e4 = () => ({
             name: "FeedbackScreenshot",
             setupOnce() {},
             createInput: ({ h: e, hooks: t, dialog: r, options: n }) => {
@@ -45798,7 +45797,7 @@ ${eQ}
         let n;
         r.d(t, {
           m: function () {
-            return y;
+            return b;
           },
         });
         var a,
@@ -46554,7 +46553,7 @@ ${eQ}
               this.pendingCanvasMutations.delete(e);
           }
         }
-        let b = {
+        let y = {
             low: {
               sampling: { canvas: 1 },
               dataURLOptions: { type: "image/webp", quality: 0.25 },
@@ -46568,7 +46567,7 @@ ${eQ}
               dataURLOptions: { type: "image/webp", quality: 0.5 },
             },
           },
-          y = (0, i._I)((e = {}) => {
+          b = (0, i._I)((e = {}) => {
             let t;
             let [r, n] = e.maxCanvasSize || [],
               a = {
@@ -46604,7 +46603,7 @@ ${eQ}
                     });
                     return t(a), a;
                   },
-                  ...(b[e || "medium"] || b.medium),
+                  ...(y[e || "medium"] || y.medium),
                 };
               },
               async snapshot(e) {
@@ -46648,8 +46647,8 @@ ${eQ}
           M = r(467510),
           G = r(101284),
           m = r(622916),
-          b = r(394798),
-          y = r(886115),
+          y = r(394798),
+          b = r(886115),
           v = r(617726),
           w = r(928541),
           B = r(14588),
@@ -47076,8 +47075,8 @@ ${eQ}
               keepIframeSrcFn: G = () => !1,
               newlyAddedElement: m = !1,
             } = t,
-            { preserveWhiteSpace: b = !0 } = t,
-            y = (function (e, t) {
+            { preserveWhiteSpace: y = !0 } = t,
+            b = (function (e, t) {
               let {
                   doc: r,
                   mirror: _,
@@ -47461,7 +47460,7 @@ ${eQ}
               keepIframeSrcFn: G,
               newlyAddedElement: m,
             });
-          if (!y) return console.warn(e, "not serialized"), null;
+          if (!b) return console.warn(e, "not serialized"), null;
           r = o.hasNode(e)
             ? o.getId(e)
             : !(function (e, t) {
@@ -47545,14 +47544,14 @@ ${eQ}
                     }
                   }
                   return !1;
-                })(y, p) &&
-                (b ||
-                  y.type !== N.Text ||
-                  y.isStyle ||
-                  y.textContent.replace(/^\s+|\s+$/gm, "").length)
+                })(b, p) &&
+                (y ||
+                  b.type !== N.Text ||
+                  b.isStyle ||
+                  b.textContent.replace(/^\s+|\s+$/gm, "").length)
               ? eR()
               : -2;
-          let v = Object.assign(y, { id: r });
+          let v = Object.assign(b, { id: r });
           if ((o.add(e, v), -2 === r)) return null;
           C && C(e);
           let w = !A;
@@ -47566,7 +47565,7 @@ ${eQ}
             p.headWhitespace &&
               v.type === N.Element &&
               "head" === v.tagName &&
-              (b = !1);
+              (y = !1);
             let t = {
               doc: _,
               mirror: o,
@@ -47588,7 +47587,7 @@ ${eQ}
               dataURLOptions: h,
               inlineImages: S,
               recordCanvas: D,
-              preserveWhiteSpace: b,
+              preserveWhiteSpace: y,
               onSerialize: C,
               onIframeLoad: g,
               iframeLoadTimeout: U,
@@ -47663,7 +47662,7 @@ ${eQ}
                       dataURLOptions: h,
                       inlineImages: S,
                       recordCanvas: D,
-                      preserveWhiteSpace: b,
+                      preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
                       iframeLoadTimeout: U,
@@ -47723,7 +47722,7 @@ ${eQ}
                       dataURLOptions: h,
                       inlineImages: S,
                       recordCanvas: D,
-                      preserveWhiteSpace: b,
+                      preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
                       iframeLoadTimeout: U,
@@ -47764,18 +47763,18 @@ ${eQ}
             r.addEventListener(e, t, n), () => r.removeEventListener(e, t, n)
           );
         }
-        let eb =
+        let ey =
             "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.",
-          ey = {
+          eb = {
             map: {},
-            getId: () => (console.error(eb), -1),
-            getNode: () => (console.error(eb), null),
+            getId: () => (console.error(ey), -1),
+            getNode: () => (console.error(ey), null),
             removeNodeFromMap() {
-              console.error(eb);
+              console.error(ey);
             },
-            has: () => (console.error(eb), !1),
+            has: () => (console.error(ey), !1),
             reset() {
-              console.error(eb);
+              console.error(ey);
             },
           };
         function ev(e, t, r = {}) {
@@ -47806,9 +47805,9 @@ ${eQ}
         "undefined" != typeof window &&
           window.Proxy &&
           window.Reflect &&
-          (ey = new Proxy(ey, {
+          (eb = new Proxy(eb, {
             get: (e, t, r) => (
-              "map" === t && console.error(eb), Reflect.get(e, t, r)
+              "map" === t && console.error(ey), Reflect.get(e, t, r)
             ),
           }));
         function ew(e, t, r) {
@@ -48090,7 +48089,7 @@ ${eQ}
         function e6(e) {
           return "__ln" in e;
         }
-        class e5 {
+        class e4 {
           constructor() {
             (this.length = 0), (this.head = null), (this.tail = null);
           }
@@ -48161,7 +48160,7 @@ ${eQ}
                 this.length--;
           }
         }
-        let e4 = (e, t) => `${e}@${t}`;
+        let e5 = (e, t) => `${e}@${t}`;
         class e8 {
           constructor() {
             (this.frozen = !1),
@@ -48182,7 +48181,7 @@ ${eQ}
                 if (this.frozen || this.locked) return;
                 let e = [],
                   t = new Set(),
-                  r = new e5(),
+                  r = new e4(),
                   n = (e) => {
                     let t = e,
                       r = -2;
@@ -48514,7 +48513,7 @@ ${eQ}
                                       (!t.parentNode || e(t.parentNode, r)))
                                   );
                                 })(e.target, this.mirror) ||
-                                (this.movedSet.has(t) && this.movedMap[e4(n, a)]
+                                (this.movedSet.has(t) && this.movedMap[e5(n, a)]
                                   ? e7(this.movedSet, t)
                                   : this.removes.push({
                                       parentId: a,
@@ -48537,7 +48536,7 @@ ${eQ}
                       t && this.mirror.hasNode(t) && (r = this.mirror.getId(t)),
                         r &&
                           -1 !== r &&
-                          (this.movedMap[e4(this.mirror.getId(e), r)] = !0);
+                          (this.movedMap[e5(this.mirror.getId(e), r)] = !0);
                     } else this.addedSet.add(e), this.droppedSet.delete(e);
                     !eK(
                       e,
@@ -50052,8 +50051,8 @@ ${eQ}
             mousemoveWait: M,
             recordDOM: G = !0,
             recordCanvas: m = !1,
-            recordCrossOriginIframes: b = !1,
-            recordAfter: y = "DOMContentLoaded" === e.recordAfter
+            recordCrossOriginIframes: y = !1,
+            recordAfter: b = "DOMContentLoaded" === e.recordAfter
               ? e.recordAfter
               : "load",
             userTriggeredOnInput: v = !1,
@@ -50067,7 +50066,7 @@ ${eQ}
             getCanvasManager: k,
           } = e;
           _ = x;
-          let V = !b || window.parent === window,
+          let V = !y || window.parent === window,
             F = !1;
           if (!V)
             try {
@@ -50211,7 +50210,7 @@ ${eQ}
                     mirror: tS,
                     mutationCb: J,
                     stylesheetManager: ee,
-                    recordCrossOriginIframes: b,
+                    recordCrossOriginIframes: y,
                     wrappedEmit: o,
                   });
           for (let e of W || [])
@@ -50575,14 +50574,14 @@ ${eQ}
                 : (e.push(
                     em("DOMContentLoaded", () => {
                       o({ type: e0.DomContentLoaded, data: {} }),
-                        "DOMContentLoaded" === y && r();
+                        "DOMContentLoaded" === b && r();
                     }),
                   ),
                   e.push(
                     em(
                       "load",
                       () => {
-                        o({ type: e0.Load, data: {} }), "load" === y && r();
+                        o({ type: e0.Load, data: {} }), "load" === b && r();
                       },
                       window,
                     ),
@@ -50653,7 +50652,7 @@ ${eQ}
             var e;
             let t =
               ((e = () => {
-                this._lastMutation = ty();
+                this._lastMutation = tb();
               }),
               !i &&
                 ((i = []),
@@ -50689,7 +50688,7 @@ ${eQ}
               (function (e, t) {
                 return (
                   !!(
-                    !tb.includes(e.tagName) ||
+                    !ty.includes(e.tagName) ||
                     ("INPUT" === e.tagName &&
                       !["submit", "button"].includes(
                         e.getAttribute("type") || "",
@@ -50746,7 +50745,7 @@ ${eQ}
           }
           _checkClicks() {
             let e = [],
-              t = ty();
+              t = tb();
             for (let r of (this._clicks.forEach((r) => {
               !r.mutationAfter &&
                 this._lastMutation &&
@@ -50821,8 +50820,8 @@ ${eQ}
               ));
           }
         }
-        let tb = ["A", "BUTTON", "INPUT"];
-        function ty() {
+        let ty = ["A", "BUTTON", "INPUT"];
+        function tb() {
           return Date.now() / 1e3;
         }
         function tv(e) {
@@ -51297,9 +51296,9 @@ ${eQ}
         function t6(e) {
           return void 0 !== e && Math.random() < e;
         }
-        function t5(e) {
+        function t4(e) {
           let t = Date.now(),
-            r = e.id || (0, b.DM)(),
+            r = e.id || (0, y.DM)(),
             n = e.started || t,
             a = e.lastActivity || t,
             _ = e.segmentId || 0,
@@ -51313,7 +51312,7 @@ ${eQ}
             previousSessionId: e.previousSessionId,
           };
         }
-        function t4(e) {
+        function t5(e) {
           if (!!t3())
             try {
               V.sessionStorage.setItem(F, JSON.stringify(e));
@@ -51324,11 +51323,11 @@ ${eQ}
           { previousSessionId: n } = {},
         ) {
           var a, _;
-          let o = t5({
+          let o = t4({
             sampled: ((a = e), (_ = t), t6(a) ? "session" : !!_ && "buffer"),
             previousSessionId: n,
           });
-          return r && t4(o), o;
+          return r && t5(o), o;
         }
         function t7(e, t, r = +new Date()) {
           return (
@@ -51369,7 +51368,7 @@ ${eQ}
                 let t = V.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tJ("[Replay] Loading existing session", e), t5(r);
+                return tJ("[Replay] Loading existing session", e), t4(r);
               } catch (e) {
                 return null;
               }
@@ -51604,7 +51603,7 @@ ${eQ}
             let n = r.href;
             return !e.endsWith("/") && n.endsWith("/") ? n.slice(0, -1) : n;
           })(e);
-          return (0, y.U0)(r, t);
+          return (0, b.U0)(r, t);
         }
         async function rO(e, t, r) {
           try {
@@ -52009,17 +52008,17 @@ ${eQ}
             "number" == typeof s.statusCode &&
             (s.statusCode < 200 || s.statusCode >= 300)
           )
-            throw new rb(s.statusCode);
+            throw new ry(s.statusCode);
           let S = (0, B.WG)({}, s);
-          if ((0, B.Q)(S, "replay")) throw new ry(S);
+          if ((0, B.Q)(S, "replay")) throw new rb(S);
           return s;
         }
-        class rb extends Error {
+        class ry extends Error {
           constructor(e) {
             super(`Transport returned status code ${e}`);
           }
         }
-        class ry extends Error {
+        class rb extends Error {
           constructor(e) {
             super("Rate limit hit"), (this.rateLimits = e);
           }
@@ -52030,7 +52029,7 @@ ${eQ}
             try {
               return await rm(e), !0;
             } catch (r) {
-              if (r instanceof rb || r instanceof ry) throw r;
+              if (r instanceof ry || r instanceof rb) throw r;
               if (
                 ((0, p.v)("Replays", { _retryCount: t.count }),
                 t$ &&
@@ -52379,7 +52378,7 @@ ${eQ}
                               e.getOptions()._experiments.traceInternals,
                             ),
                             (e.session.started = t),
-                            e.getOptions().stickySession && t4(e.session));
+                            e.getOptions().stickySession && t5(e.session));
                         }
                         return "session" === e.recordingMode && e.flush(), !0;
                       });
@@ -53273,7 +53272,7 @@ ${eQ}
             };
           }
           _maybeSaveSession() {
-            this.session && this._options.stickySession && t4(this.session);
+            this.session && this._options.stickySession && t5(this.session);
           }
           __init6() {
             this._onMutationHandler = (e) => {
@@ -53584,4 +53583,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.86424ea7c0edc0b07dda.js.map
+//# sourceMappingURL=sentry.18473c860adc40e98cd1.js.map
