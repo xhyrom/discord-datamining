@@ -1031,7 +1031,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .lookBlank_dd4f85,
 :where(.visual-refresh) .lookLink_dd4f85 {
-  padding: 0;
   border: none;
 }
 :where(.visual-refresh) .disabledButtonWrapper_dd4f85 {
@@ -2144,6 +2143,29 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .enable-forced-colors .iconLayout_c18ec9:active .clear_c18ec9 {
   border-color: ButtonText;
   color: ButtonText;
+}
+:where(.visual-refresh) .container_c18ec9 {
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .container_c18ec9:focus-within {
+  border-color: var(--text-link);
+}
+:where(.visual-refresh) .medium_c18ec9 {
+  height: 40px;
+}
+:where(.visual-refresh) .medium_c18ec9 .inner_c18ec9 {
+  padding: 10px 12px;
+}
+:where(.visual-refresh) .medium_c18ec9 .input_c18ec9 {
+  height: auto;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+:where(.visual-refresh) .medium_c18ec9.iconLayout_c18ec9 {
+  width: 16px;
+  height: 16px;
 }
 .defaultColor_e42ec6 {
   color: var(--header-primary);
@@ -4127,61 +4149,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .theme-dark .inputPrefix_f8bc55 {
   opacity: 0.5;
 }
-:where(.visual-refresh) .input_f8bc55 {
-  font-size: 16px;
-  line-height: 20px;
-  border-radius: 8px;
-  color: var(--text-normal);
-  height: auto;
-  padding: 12px;
-  background-color: var(--input-background);
-  border: 1px solid var(--input-border);
-  transition-property: border-color, background;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-:where(.visual-refresh) .input_f8bc55::-moz-placeholder {
-  color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55::placeholder {
-  color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""]),
-:where(.visual-refresh) .input_f8bc55:not(:empty),
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55,
-:where(.visual-refresh) .input_f8bc55:focus {
-  background-color: transparent;
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""])::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55:not(:empty)::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55::-moz-placeholder,
-:where(.visual-refresh) .input_f8bc55:focus::-moz-placeholder {
-  color: var(--header-muted);
-}
-:where(.visual-refresh) .input_f8bc55[value]:not([value=""])::placeholder,
-:where(.visual-refresh) .input_f8bc55:not(:empty)::placeholder,
-:where(.visual-refresh) .input_f8bc55.focused_f8bc55::placeholder,
-:where(.visual-refresh) .input_f8bc55:focus::placeholder {
-  color: var(--header-muted);
-}
-:where(.visual-refresh) .input_f8bc55:hover {
-  border-color: var(--input-border);
-}
-:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus:hover,
-:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55:hover {
-  border-color: var(--text-link);
-}
-:where(.visual-refresh) .input_f8bc55.error_f8bc55 {
-  border-color: var(--input-error-border);
-  color: var(--input-error-text);
-  background-color: var(--input-error-background);
-}
-:where(.visual-refresh) .input_f8bc55.disabled_f8bc55 {
-  border-color: var(--input-border);
-  cursor: not-allowed;
-}
 .enable-forced-colors .input_f8bc55 {
   border: 1px solid ButtonText;
 }
@@ -4192,6 +4159,43 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: Canvas;
   border-color: GrayText;
   opacity: 1;
+}
+:where(.visual-refresh) .input_f8bc55 {
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+  background-color: rgba(0, 0, 0, 8%);
+  height: 40px;
+}
+:where(.visual-refresh) .input_f8bc55:hover,
+:where(.visual-refresh) .input_f8bc55[readonly] {
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]):focus:hover,
+:where(.visual-refresh) .input_f8bc55:not([readOnly]).focused_f8bc55:hover {
+  border-color: var(--text-link);
+}
+:where(.visual-refresh) .input_f8bc55.error_f8bc55 {
+  border-width: 2px;
+  border-color: var(--input-error-border);
+}
+:where(.visual-refresh) .input_f8bc55.disabled_f8bc55 {
+  border-color: var(--__temp-input-border);
+  cursor: not-allowed;
+  opacity: 1;
+}
+:where(.visual-refresh) .input_f8bc55::-moz-placeholder {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .input_f8bc55::placeholder {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .inputError_f8bc55 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .heading-sm\/normal_c46f6a {
   font-family: var(--font-display);
@@ -4848,72 +4852,13 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .error_c46f6a {
   color: var(--text-danger);
 }
-:where(.visual-refresh) .title_c46f6a,
-:where(.visual-refresh) .h1_c46f6a,
-:where(.visual-refresh) .h2_c46f6a,
-:where(.visual-refresh) .h3_c46f6a,
-:where(.visual-refresh) .h4_c46f6a,
-:where(.visual-refresh) .h5_c46f6a,
-:where(.visual-refresh) .legend_c46f6a,
-:where(.visual-refresh) .label_c46f6a {
-  text-transform: none;
-  font-family: var(--font-display);
+:where(.visual-refresh) .h5_c46f6a {
+  color: var(--header-primary);
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  color: var(--header-primary);
-}
-:where(.visual-refresh) .title_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h1_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h2_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h3_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h4_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .h5_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .legend_c46f6a.fontScaling_c46f6a,
-:where(.visual-refresh) .label_c46f6a.fontScaling_c46f6a {
-  font-size: 1rem;
-}
-:where(.visual-refresh) .defaultMarginh1_c46f6a,
-:where(.visual-refresh) .defaultMarginh2_c46f6a {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-:where(.visual-refresh) .defaultMarginh3_c46f6a,
-:where(.visual-refresh) .defaultMarginh4_c46f6a,
-:where(.visual-refresh) .defaultMarginh5_c46f6a,
-:where(.visual-refresh) .defaultMarginlabel_c46f6a,
-:where(.visual-refresh) .defaultMarginlegend_c46f6a {
-  margin-top: 0;
+  font-weight: 500;
   margin-bottom: 8px;
-}
-:where(.visual-refresh) .floatingAbove_c46f6a {
-  display: block;
-  padding: 6px;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-  transform: scale(0.75) translatey(-50%);
-  transform-origin: top left;
-  background-color: var(--background-primary);
-}
-:where(.visual-refresh) .floatingOn_c46f6a {
-  display: block;
-  color: var(--input-placeholder-text);
-  padding: 6px;
-  margin: 0;
-  position: absolute;
-  left: 10px;
-  top: 4px;
-  transform: scale(1) translatey(7px);
-  transform-origin: top left;
-  pointer-events: none;
-}
-.full-motion:where(.visual-refresh) .floatingAbove_c46f6a {
-  transition: all 50ms ease-out;
-}
-.full-motion:where(.visual-refresh) .floatingOn_c46f6a {
-  transition: all 50ms ease-out;
+  text-transform: capitalize;
 }
 .enable-forced-colors .disabled_c46f6a {
   color: GrayText;
@@ -6987,6 +6932,68 @@ div.modalHeader_c5e09c {
   border-color: Highlight;
   color: Highlight;
 }
+.container_e31053:hover > .text_e31053 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+.right_ea4310 {
+  transform: rotate(90deg);
+}
+.down_ea4310 {
+  transform: rotate(180deg);
+}
+.left_ea4310 {
+  transform: rotate(270deg);
+}
+.alignCenter_ad2a08 {
+  margin: 0 auto;
+}
+.alignLeft_ad2a08 {
+  margin: 0;
+}
+.horizontalPaginationItemContainer_ad2a08 {
+  display: flex;
+  flex: initial;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.verticalPaginationItemContainer_ad2a08 {
+  overflow-y: hidden;
+}
+.arrow_ad2a08 {
+  width: 26px;
+  height: 26px;
+  pointer-events: all;
+  box-sizing: border-box;
+}
+.arrowContainer_ad2a08 {
+  position: absolute;
+  top: 50%;
+  pointer-events: all;
+  transform: translatey(-50%);
+  color: var(--white-500);
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+.prevButtonContainer_ad2a08 {
+  left: 4px;
+}
+.nextButtonContainer_ad2a08 {
+  right: 4px;
+}
+@media (max-width: 600px) {
+  .prevButtonContainer_ad2a08 {
+    left: 5%;
+  }
+  .nextButtonContainer_ad2a08 {
+    right: 5%;
+  }
+}
 .full-motion .transition_f48d4e {
   transition: transform.2s ease;
 }
@@ -7745,17 +7752,44 @@ div.modalHeader_c5e09c {
 .enable-forced-colors .videoControls_f72aac {
   background-color: ButtonFace;
 }
-.wrapper_fb6520 {
-  position: relative;
-}
-.videoWrapper_fb6520 {
-  cursor: default;
-}
-.optionsContainer_fb6520 {
+.slide_f97a12 {
   position: absolute;
-  top: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
   width: 100%;
-  margin-top: 4px;
+  height: 100%;
+}
+.scaleDown_f97a12 {
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  cursor: zoom-out;
+}
+.contain_f97a12 {
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+.wrapper_a15d41 {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 110px;
+  right: 110px;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+.zoomedMediaFitWrapper_a15d41 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.optionsContainer_a15d41 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7763,7 +7797,32 @@ div.modalHeader_c5e09c {
   flex-wrap: wrap;
   gap: 4px;
 }
-.downloadLink_fb6520 {
+.slide_a15d41 {
+  position: absolute;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.nav_a15d41 {
+  z-index: 1;
+  opacity: 0.6;
+}
+.nav_a15d41:hover {
+  opacity: 1;
+}
+.nav_a15d41:active {
+  margin-top: 1px;
+}
+.navPrev_a15d41 {
+  margin-left: -100px;
+}
+.navNext_a15d41 {
+  margin-right: -100px;
+}
+.downloadLink_a15d41 {
   color: var(--white-500) !important;
   font-size: 14px;
   font-weight: 500;
@@ -7773,46 +7832,53 @@ div.modalHeader_c5e09c {
   transition: opacity.15s ease;
   opacity: 0.5;
 }
-.downloadLink_fb6520:hover {
+.downloadLink_a15d41:hover {
   opacity: 1;
 }
-.forward_fb6520 {
+.forward_a15d41 {
   cursor: pointer;
   opacity: 0.5;
   transition: opacity.15s ease;
 }
-.forward_fb6520:hover {
+.forward_a15d41:hover {
   opacity: 1;
 }
-.enable-forced-colors .downloadLink_fb6520,
-.enable-forced-colors .forward_fb6520 {
+.enable-forced-colors .downloadLink_a15d41,
+.enable-forced-colors .forward_a15d41 {
   opacity: 1;
 }
-.mobileCloseWrapper_fb6520 {
-  top: 16px;
-  position: fixed;
-  right: 16px;
-}
-.obscureContainer_fb6520 {
+.obscureContainer_a15d41 {
   height: 100%;
   position: relative;
 }
-.obscureWrapper_fb6520 {
+.obscureWrapper_a15d41 {
   display: flex;
   justify-content: center;
   height: 100%;
   overflow: hidden;
 }
-.obscureWrapper_fb6520.obscure_fb6520 {
+.obscureWrapper_a15d41.obscure_a15d41 {
   filter: blur(40px) brightness(0.55);
   pointer-events: none;
 }
-.controlsOffset_fb6520 {
+.controlsOffset_a15d41 {
   bottom: 36px;
 }
+.carouselModal_c9eb31 {
+  width: 100vw;
+  height: 100vh;
+}
+.mobileCloseWrapper_c9eb31 {
+  top: 16px;
+  position: fixed;
+  right: 16px;
+}
+.forcedTransparency_c9eb31,
 .modal_aee8c6 {
   background: transparent !important;
   box-shadow: none !important;
+}
+.modal_aee8c6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10576,7 +10642,7 @@ div.cardContainer_c22357 {
     transform: translate3d(-100%, 0, 0);
   }
   to {
-    transform: translate3d(150%, 0, 0);
+    transform: translate3d(210%, 0, 0);
   }
 }
 .shine_cc6d33 {
@@ -12639,19 +12705,16 @@ span.clanTag_a31c43 {
   box-sizing: border-box;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  flex: 1 1 auto;
+  color: var(--channels-default);
+}
+.text_a5ad5c {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
   font-family: var(--font-display);
   font-weight: 600;
-  flex: 1 1 auto;
-  color: var(--channels-default);
-}
-.visual-refresh .container_a5ad5c {
-  text-transform: inherit;
-  color: var(--text-low-contrast);
 }
 .avatar_ab08a5 {
   display: flex;
@@ -24098,6 +24161,11 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .no-webkit-scrollbar .scrollableContainer_d0696b {
   scrollbar-width: none;
 }
+.visual-refresh .scrollableContainer_d0696b {
+  box-sizing: border-box;
+  padding: 6px;
+  border: 1px solid var(--border-faint);
+}
 .themedBackground_d0696b {
   background: var(--bg-overlay-3, var(--channeltextarea-background));
 }
@@ -25612,7 +25680,7 @@ div.popoutCloseButton_d523a2:hover {
   width: 100%;
   position: absolute;
 }
-.popover_a64b81 {
+.popover_cf8aee {
   z-index: 1;
   position: absolute;
   height: auto;
@@ -25624,37 +25692,37 @@ div.popoutCloseButton_d523a2:hover {
   opacity: 0;
   pointer-events: none;
 }
-.popover_a64b81.visible_a64b81,
-.popover_a64b81:focus-within,
-.popover_a64b81:hover {
+.popover_cf8aee.visible_cf8aee,
+.popover_cf8aee:focus-within,
+.popover_cf8aee:hover {
   opacity: 1;
 }
-.reduce-motion .popover_a64b81 {
+.reduce-motion .popover_cf8aee {
   pointer-events: all;
 }
-.statusPopover_a64b81 {
+.statusPopover_cf8aee {
   right: min(8px, 50% - 29px);
 }
-.avatarPopover_a64b81 {
+.avatarPopover_cf8aee {
   left: 0;
   right: 0;
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
 }
-:not(.keyboard-mode).full-motion .popover_a64b81.visible_a64b81,
-:not(.keyboard-mode).full-motion .popover_a64b81:focus-within,
-:not(.keyboard-mode).full-motion .popover_a64b81:hover {
+:not(.keyboard-mode).full-motion .popover_cf8aee.visible_cf8aee,
+:not(.keyboard-mode).full-motion .popover_cf8aee:focus-within,
+:not(.keyboard-mode).full-motion .popover_cf8aee:hover {
   opacity: 0;
-  animation: hoverIn_a64b81.15s ease forwards;
+  animation: hoverIn_cf8aee.15s ease forwards;
 }
 :not(.keyboard-mode).full-motion
-  .popover_a64b81.visible_a64b81.expandable_a64b81,
-:not(.keyboard-mode).full-motion .popover_a64b81:focus-within.expandable_a64b81,
-:not(.keyboard-mode).full-motion .popover_a64b81:hover.expandable_a64b81 {
+  .popover_cf8aee.visible_cf8aee.expandable_cf8aee,
+:not(.keyboard-mode).full-motion .popover_cf8aee:focus-within.expandable_cf8aee,
+:not(.keyboard-mode).full-motion .popover_cf8aee:hover.expandable_cf8aee {
   animation-delay: 0.45s;
 }
-@keyframes hoverIn_a64b81 {
+@keyframes hoverIn_cf8aee {
   0% {
     top: -14px;
     opacity: 0;
@@ -25669,30 +25737,30 @@ div.popoutCloseButton_d523a2:hover {
     pointer-events: all;
   }
 }
-.button_a64b81 {
+.button_cf8aee {
   height: auto;
   min-width: 0;
   min-width: auto;
   padding: 4px;
 }
-.button_a64b81.left_a64b81 {
+.button_cf8aee.left_cf8aee {
   padding-left: 6px;
   border-radius: 100px 6px 6px 100px;
 }
-.button_a64b81.right_a64b81 {
+.button_cf8aee.right_cf8aee {
   padding-right: 6px;
   border-radius: 6px 100px 100px 6px;
 }
-.button_a64b81:hover {
+.button_cf8aee:hover {
   background: var(--background-modifier-hover);
 }
-.button_a64b81:hover .icon_a64b81 {
+.button_cf8aee:hover .icon_cf8aee {
   fill: var(--interactive-hover);
 }
-.button_a64b81:active {
+.button_cf8aee:active {
   background: var(--background-modifier-active);
 }
-.button_a64b81:active .icon_a64b81 {
+.button_cf8aee:active .icon_cf8aee {
   fill: var(--interactive-active);
 }
 .noBoxShadowMargin_a7ae01 {
@@ -25769,104 +25837,104 @@ div.popoutCloseButton_d523a2:hover {
   left: 27px;
   top: -25px;
 }
-.background_e6ac4a {
+.background_d22603 {
   --custom-status-bubble-background-color: var(--bg-surface-raised);
   --custom-status-bubble-background: var(
     --custom-status-bubble-background-color
   );
 }
-.custom-profile-theme .background_e6ac4a {
+.custom-profile-theme .background_d22603 {
   --custom-status-bubble-background-color: var(--bg-surface-overlay);
 }
-.theme-dark .background_e6ac4a {
+.theme-dark .background_d22603 {
   --custom-status-bubble-overlay-color: 255 255 255;
 }
-.theme-light .background_e6ac4a {
+.theme-light .background_d22603 {
   --custom-status-bubble-overlay-color: 0 0 0;
 }
-.background_e6ac4a.editable_e6ac4a:hover {
+.background_d22603.editable_d22603:hover {
   --custom-status-bubble-background: linear-gradient(
       rgb(var(--custom-status-bubble-overlay-color) / 0.05),
       rgb(var(--custom-status-bubble-overlay-color) / 0.05)
     ),
     var(--custom-status-bubble-background-color);
 }
-.theme-dark .statusBubbleOuter_e6ac4a,
-.theme-dark .statusBubbleOuter_e6ac4a:before,
-.theme-dark .statusBubbleOuter_e6ac4a:after {
+.theme-dark .statusBubbleOuter_d22603,
+.theme-dark .statusBubbleOuter_d22603:before,
+.theme-dark .statusBubbleOuter_d22603:after {
   border: 1px solid var(--border-faint);
 }
-.custom-profile-theme.theme-dark .statusBubbleOuter_e6ac4a,
-.custom-profile-theme.theme-dark .statusBubbleOuter_e6ac4a:before,
-.custom-profile-theme.theme-dark .statusBubbleOuter_e6ac4a:after {
+.custom-profile-theme.theme-dark .statusBubbleOuter_d22603,
+.custom-profile-theme.theme-dark .statusBubbleOuter_d22603:before,
+.custom-profile-theme.theme-dark .statusBubbleOuter_d22603:after {
   border: 1px solid var(--border-strong);
 }
-.addCustomStatusButtonBubble_e6ac4a {
+.addCustomStatusButtonBubble_d22603 {
   position: relative;
   z-index: 2;
   width: -moz-fit-content;
   width: fit-content;
 }
-.addCustomStatusButtonBubble_e6ac4a.biteSize_e6ac4a {
+.addCustomStatusButtonBubble_d22603.biteSize_d22603 {
   top: 4px;
   left: 106px;
 }
-.addCustomStatusButtonBubble_e6ac4a.fullSize_e6ac4a {
+.addCustomStatusButtonBubble_d22603.fullSize_d22603 {
   top: -12px;
   left: 144px;
   height: 2px;
 }
-.invisibleContainer_e6ac4a {
+.invisibleContainer_d22603 {
   pointer-events: none;
   visibility: hidden;
   position: relative;
 }
-.invisibleContainer_e6ac4a.biteSize_e6ac4a {
+.invisibleContainer_d22603.biteSize_d22603 {
   top: 4px;
   left: 106px;
 }
-.invisibleContainer_e6ac4a.fullSize_e6ac4a {
+.invisibleContainer_d22603.fullSize_d22603 {
   height: 0;
   top: -54px;
   left: 144px;
 }
-.invisibleContainer_e6ac4a.panel_e6ac4a {
+.invisibleContainer_d22603.panel_d22603 {
   top: 4px;
   left: 106px;
 }
-.visibleContainer_e6ac4a {
+.visibleContainer_d22603 {
   position: absolute;
   visibility: visible;
   z-index: 2;
 }
-.visibleContainer_e6ac4a.biteSize_e6ac4a {
+.visibleContainer_d22603.biteSize_d22603 {
   top: calc(6px + var(--custom-user-banner-height-bite-size));
   left: 106px;
 }
-.visibleContainer_e6ac4a.fullSize_e6ac4a {
+.visibleContainer_d22603.fullSize_d22603 {
   top: 4px;
   left: 160px;
 }
-.visibleContainer_e6ac4a.panel_e6ac4a {
+.visibleContainer_d22603.panel_d22603 {
   top: calc(6px + var(--custom-user-banner-banner-height-panel));
   left: 106px;
 }
-.visibleContainer_e6ac4a.hoisted_e6ac4a {
+.visibleContainer_d22603.hoisted_d22603 {
   z-index: 4;
 }
-.statusBubble_e6ac4a {
+.statusBubble_d22603 {
   position: relative;
   display: block;
   background: var(--custom-status-bubble-background);
   word-wrap: break-word;
 }
-.statusBubbleCopyStatusCursor_e6ac4a {
+.statusBubbleCopyStatusCursor_d22603 {
   cursor: text;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
 }
-.statusBubbleOuter_e6ac4a {
+.statusBubbleOuter_d22603 {
   position: relative;
   background: var(--custom-status-bubble-background);
   box-shadow: var(--shadow-low);
@@ -25874,7 +25942,7 @@ div.popoutCloseButton_d523a2:hover {
   min-width: 56px;
   max-width: 184px;
 }
-.statusBubbleOuter_e6ac4a:before {
+.statusBubbleOuter_d22603:before {
   content: "";
   position: absolute;
   top: -11px;
@@ -25887,7 +25955,7 @@ div.popoutCloseButton_d523a2:hover {
   width: 19px;
   height: 19px;
 }
-.statusBubbleOuter_e6ac4a:after {
+.statusBubbleOuter_d22603:after {
   content: "";
   position: absolute;
   top: -24px;
@@ -25900,25 +25968,25 @@ div.popoutCloseButton_d523a2:hover {
   width: 10px;
   height: 10px;
 }
-.statusBubbleOuterAddStatusCursor_e6ac4a {
+.statusBubbleOuterAddStatusCursor_d22603 {
   cursor: pointer;
 }
-.statusBubbleShape_e6ac4a {
+.statusBubbleShape_d22603 {
   border-radius: 16px;
 }
-.statusBubbleSingleLineWithTextShape_e6ac4a {
+.statusBubbleSingleLineWithTextShape_d22603 {
   border-radius: 12px;
 }
-.statusBubbleEmojiOnlyPadding_e6ac4a {
+.statusBubbleEmojiOnlyPadding_d22603 {
   padding: 8px 12px;
 }
-.statusBubbleWithTextPadding_e6ac4a {
+.statusBubbleWithTextPadding_d22603 {
   padding: 10px 12px;
 }
-.statusBubbleWithTextMinWidth_e6ac4a {
+.statusBubbleWithTextMinWidth_d22603 {
   min-width: 18px;
 }
-.content_e6ac4a {
+.content_d22603 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -25927,37 +25995,37 @@ div.popoutCloseButton_d523a2:hover {
   word-wrap: break-word;
   word-break: break-word;
 }
-.coachmarkAnchor_e6ac4a {
+.coachmarkAnchor_d22603 {
   position: absolute;
   pointer-events: none;
 }
-.clamp_e6ac4a {
+.clamp_d22603 {
   -webkit-line-clamp: 2;
 }
-.unclamp_e6ac4a {
+.unclamp_d22603 {
   -webkit-line-clamp: 9;
 }
-.placeholderWidth_e6ac4a {
+.placeholderWidth_d22603 {
   max-width: 160px;
 }
-.incorporeal_e6ac4a {
+.incorporeal_d22603 {
   position: absolute;
 }
-.statusBubbleOuter_e6ac4a:hover .addStatusPrompt_e6ac4a {
+.statusBubbleOuter_d22603:hover .addStatusPrompt_d22603 {
   color: var(--text-normal);
 }
-.statusBubbleOuter_e6ac4a:hover .addStatusIconColor_e6ac4a {
+.statusBubbleOuter_d22603:hover .addStatusIconColor_d22603 {
   fill: var(--text-normal);
 }
-.singleLineAlign_e6ac4a {
+.singleLineAlign_d22603 {
   text-align: center;
 }
-.addStatusPrompt_e6ac4a {
+.addStatusPrompt_d22603 {
   display: inline;
   color: var(--text-muted);
   vertical-align: middle;
 }
-.addStatusIcon_e6ac4a {
+.addStatusIcon_d22603 {
   display: inline;
   height: 18px;
   width: 18px;
@@ -25965,25 +26033,25 @@ div.popoutCloseButton_d523a2:hover {
   fill: var(--text-muted);
   vertical-align: middle;
 }
-.statusText_e6ac4a {
+.statusText_d22603 {
   display: inline;
   color: var(--text-normal);
   vertical-align: middle;
 }
-.statusEmojiInline_e6ac4a {
+.statusEmojiInline_d22603 {
   display: inline;
   height: 16px;
   width: 16px;
   margin-right: 4px;
   vertical-align: middle;
 }
-.statusEmojiOnly_e6ac4a {
+.statusEmojiOnly_d22603 {
   min-width: 32px;
   min-height: 32px;
   max-width: 32px;
   max-height: 32px;
 }
-.toastContainer_f3571f {
+.toastContainer_b4395f {
   position: absolute;
   left: 0;
   right: 0;
@@ -25994,15 +26062,15 @@ div.popoutCloseButton_d523a2:hover {
   box-shadow: var(--shadow-high);
   border-radius: 32px;
 }
-.toastPadding_f3571f {
+.toastPadding_b4395f {
   padding: 10px 16px;
 }
-.toastIcon_f3571f {
+.toastIcon_b4395f {
   width: 20px;
   height: 20px;
   margin-right: 8px;
 }
-.successToast_f3571f {
+.successToast_b4395f {
   gap: 40px;
   display: flex;
 }
@@ -26979,7 +27047,7 @@ div.popoutCloseButton_d523a2:hover {
   color: var(--text-brand);
   fill: var(--text-brand);
 }
-.colorDefault_d90b3d.focused_d90b3d path {
+.colorDefault_d90b3d.focused_d90b3d:not(.checkboxContainer_d90b3d) path {
   fill: var(--white);
 }
 .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
@@ -27130,7 +27198,7 @@ div.popoutCloseButton_d523a2:hover {
   pointer-events: none;
 }
 :where(.visual-refresh) .menu_d90b3d {
-  background-color: #28282d;
+  background-color: var(--background-surface-higher);
   border-radius: 8px;
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-high);
@@ -27198,7 +27266,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 :where(.visual-refresh) .groupLabel_d90b3d {
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: var(--text-muted);
@@ -27398,6 +27466,10 @@ div.popoutCloseButton_d523a2:hover {
   line-height: 16px;
   color: var(--text-secondary);
 }
+:where(.visual-refresh) .slider_c7a159 .defaultValue_c7a159 .markValue_c7a159,
+:where(.visual-refresh) .mini_c7a159 .defaultValue_c7a159 .markValue_c7a159 {
+  color: var(--text-positive);
+}
 :where(.visual-refresh) .slider_c7a159 .markDash_c7a159,
 :where(.visual-refresh) .mini_c7a159 .markDash_c7a159 {
   border-radius: 12px;
@@ -27429,7 +27501,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 :where(.visual-refresh) .slider_c7a159 .barFill_c7a159,
 :where(.visual-refresh) .mini_c7a159 .barFill_c7a159 {
-  background-color: #5865f2;
+  background-color: var(--blurple-50);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sliderContainer_e13f88 {
@@ -27868,19 +27940,7 @@ div.popoutCloseButton_d523a2:hover {
 :where(.visual-refresh) .item_eb92a8[aria-checked="true"],
 :where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"],
 :where(.visual-refresh) .item_eb92a8 {
-  background: transparent;
-}
-:where(.visual-refresh) .radioBar_eb92a8:hover,
-:where(.visual-refresh) .item_eb92a8[aria-checked="true"]:hover,
-:where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"]:hover,
-:where(.visual-refresh) .item_eb92a8:hover {
-  background: transparent;
-}
-:where(.visual-refresh) .radioBar_eb92a8:active,
-:where(.visual-refresh) .item_eb92a8[aria-checked="true"]:active,
-:where(.visual-refresh) .itemFilled_eb92a8[aria-checked="true"]:active,
-:where(.visual-refresh) .item_eb92a8:active {
-  background: transparent;
+  border-radius: 8px;
 }
 :where(.visual-refresh) .radioIndicator_eb92a8 {
   box-sizing: border-box;
@@ -28312,6 +28372,80 @@ div.popoutCloseButton_d523a2:hover {
 }
 .enable-forced-colors .selectedIcon_f6639d {
   color: Highlight;
+}
+:where(.visual-refresh) .select_f6639d {
+  height: 40px;
+}
+:where(.visual-refresh) .wrapper_f6639d .select_f6639d.multi_f6639d {
+  padding-left: 6px;
+  padding-bottom: 6px;
+}
+:where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
+  background-color: #222226;
+}
+:where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
+  border-radius: 8px;
+  border: 1px solid var(--__temp-input-border);
+}
+:where(.visual-refresh) .popout_f6639d.popoutPositionTop_f6639d,
+:where(.visual-refresh) .lookFilled_f6639d.popout_f6639d,
+:where(.visual-refresh)
+  .lookFilled_f6639d.popout_f6639d.popoutPositionTop_f6639d,
+:where(.visual-refresh) .popout_f6639d {
+  background-color: #28282d;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+:where(.visual-refresh) .placeholder_f6639d {
+  color: var(--text-secondary);
+}
+:where(.visual-refresh) .popout_f6639d {
+  margin: 0;
+  background-color: #28282d;
+}
+:where(.visual-refresh) .popout_f6639d:not(.popoutPositionTop_f6639d) {
+  margin-top: 8px;
+}
+:where(.visual-refresh) .popout_f6639d.popoutPositionTop_f6639d {
+  margin-bottom: 8px;
+}
+:where(.visual-refresh) .option_f6639d {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-normal);
+}
+:where(.visual-refresh) .option_f6639d[aria-selected="true"] {
+  font-weight: 500;
+  color: var(--text-normal);
+  background-color: #28282d;
+}
+:where(.visual-refresh) .option_f6639d[aria-selected="true"]:hover {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .option_f6639d:hover {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .optionPillItem_f6639d {
+  margin-right: 6px;
+}
+:where(.visual-refresh) .optionPillItem_f6639d button {
+  background-color: var(--bg-mod-subtle);
+}
+:where(.visual-refresh) .optionPillItem_f6639d button .optionPill_f6639d {
+  border-radius: 4px;
+  border: 1px solid var(--border-faint);
+}
+:where(.visual-refresh) .optionPillItem_f6639d,
+:where(.visual-refresh) .searchInput_f6639d.multi_f6639d {
+  margin-top: 6px;
+}
+:where(.visual-refresh) .optionPill_f6639d {
+  font-size: 14px;
+}
+:where(.visual-refresh) .optionPill_f6639d .deleteOptionIcon_f6639d {
+  width: 16px;
+  height: 16px;
 }
 .wrapper_cdbcb1 {
   position: relative;
@@ -30860,6 +30994,14 @@ div.popoutCloseButton_d523a2:hover {
   -webkit-app-region: drag;
   flex-shrink: 0;
 }
+.visual-refresh .titleBar_a934d8 {
+  pointer-events: none;
+  padding-bottom: 0;
+  padding-bottom: var(--custom-app-top-bar-height, 0);
+}
+.visual-refresh .titleBar_a934d8[data-has-layer="true"] {
+  padding-bottom: 0;
+}
 .withFrame_a934d8 {
   height: 18px;
   margin-top: 4px;
@@ -30875,7 +31017,6 @@ div.popoutCloseButton_d523a2:hover {
 .visual-refresh .typeMacOS_a934d8 {
   position: relative;
   width: 100%;
-  height: 40px;
   display: flex;
   align-items: center;
 }
@@ -30908,17 +31049,27 @@ div.popoutCloseButton_d523a2:hover {
   padding: 4px 9px 3px;
   color: var(--text-muted);
 }
+.visual-refresh.platform-win {
+  --custom-app-bar-right-offset: 120px;
+}
 .visual-refresh .typeWindows_a934d8 {
   width: 100%;
   height: 40px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .visual-refresh .winButton_a934d8 {
   width: 40px;
   height: 40px;
   top: 0;
+}
+.visual-refresh .winButtons_a934d8 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  padding-right: 4px;
 }
 .visual-refresh .wordmarkWindows_a934d8 {
   position: relative;
@@ -31008,11 +31159,6 @@ div.popoutCloseButton_d523a2:hover {
 .custom-theme-background .withBackgroundOverride_a934d8.typeWindows_a934d8 {
   margin-top: 0;
   padding-top: 4px;
-}
-.visual-refresh .children_a934d8 {
-  height: 40px;
-  display: flex;
-  justify-content: center;
 }
 .tile_dc5fc4 {
   position: relative;
@@ -36072,15 +36218,6 @@ div.popoutCloseButton_d523a2:hover {
 .statusText_c45b04 {
   padding-left: 0.5rem;
 }
-.right_ea4310 {
-  transform: rotate(90deg);
-}
-.down_ea4310 {
-  transform: rotate(180deg);
-}
-.left_ea4310 {
-  transform: rotate(270deg);
-}
 .draggableContainer_ca37d0 {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
 }
@@ -36233,6 +36370,9 @@ html.disable-forced-colors * {
   position: relative;
   z-index: auto;
   height: 100%;
+}
+.visual-refresh .app_bd26cc {
+  position: static;
 }
 .mobileApp_bd26cc {
   z-index: auto;
@@ -36770,6 +36910,56 @@ html.disable-forced-colors * {
     calc(var(--saturation-factor, 1) * 2.1%) 53.9%;
   --lol: hsl(var(--lol-hsl) / 1);
   --lol-hsl: 190 calc(var(--saturation-factor, 1) * 89.7%) 7.6%;
+  --opacity-1: hsl(var(--opacity-1-hsl) / 0.01);
+  --opacity-1-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-10: hsl(var(--opacity-10-hsl) / 0.36);
+  --opacity-10-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-11: hsl(var(--opacity-11-hsl) / 0.4);
+  --opacity-11-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-12: hsl(var(--opacity-12-hsl) / 0.44);
+  --opacity-12-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-13: hsl(var(--opacity-13-hsl) / 0.48);
+  --opacity-13-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-14: hsl(var(--opacity-14-hsl) / 0.52);
+  --opacity-14-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-15: hsl(var(--opacity-15-hsl) / 0.56);
+  --opacity-15-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-16: hsl(var(--opacity-16-hsl) / 0.6);
+  --opacity-16-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-17: hsl(var(--opacity-17-hsl) / 0.64);
+  --opacity-17-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-18: hsl(var(--opacity-18-hsl) / 0.68);
+  --opacity-18-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-19: hsl(var(--opacity-19-hsl) / 0.72);
+  --opacity-19-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-2: hsl(var(--opacity-2-hsl) / 0.04);
+  --opacity-2-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-20: hsl(var(--opacity-20-hsl) / 0.76);
+  --opacity-20-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-21: hsl(var(--opacity-21-hsl) / 0.8);
+  --opacity-21-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-22: hsl(var(--opacity-22-hsl) / 0.84);
+  --opacity-22-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-23: hsl(var(--opacity-23-hsl) / 0.88);
+  --opacity-23-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-24: hsl(var(--opacity-24-hsl) / 0.92);
+  --opacity-24-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-25: hsl(var(--opacity-25-hsl) / 0.96);
+  --opacity-25-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-3: hsl(var(--opacity-3-hsl) / 0.08);
+  --opacity-3-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-4: hsl(var(--opacity-4-hsl) / 0.12);
+  --opacity-4-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-5: hsl(var(--opacity-5-hsl) / 0.16);
+  --opacity-5-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-6: hsl(var(--opacity-6-hsl) / 0.2);
+  --opacity-6-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-7: hsl(var(--opacity-7-hsl) / 0.24);
+  --opacity-7-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-8: hsl(var(--opacity-8-hsl) / 0.28);
+  --opacity-8-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
+  --opacity-9: hsl(var(--opacity-9-hsl) / 0.32);
+  --opacity-9-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.8%;
   --orange-100: hsl(var(--orange-100-hsl) / 1);
   --orange-100-hsl: 18 calc(var(--saturation-factor, 1) * 100%) 98%;
   --orange-130: hsl(var(--orange-130-hsl) / 1);
@@ -37339,6 +37529,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
+  --background-base-low: var(--neutral-68);
+  --background-base-lower: var(--neutral-68);
+  --background-base-lowest: var(--neutral-68);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -37358,6 +37551,9 @@ html.disable-forced-colors * {
   --background-primary: var(--primary-600);
   --background-secondary: var(--primary-630);
   --background-secondary-alt: var(--primary-660);
+  --background-surface-high: var(--neutral-64);
+  --background-surface-higher: var(--neutral-60);
+  --background-surface-highest: var(--neutral-56);
   --background-tertiary: var(--primary-700);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -37728,6 +37924,21 @@ html.disable-forced-colors * {
       var(--primary-530) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--primary-800) 100%,
@@ -37833,6 +38044,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-660) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-60) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-56) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -39108,6 +39334,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--black-hsl) / 0.12);
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
+  --background-base-low: var(--neutral-92);
+  --background-base-lower: var(--neutral-84);
+  --background-base-lowest: var(--neutral-92);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -39127,6 +39356,9 @@ html.disable-forced-colors * {
   --background-primary: var(--white);
   --background-secondary: var(--primary-130);
   --background-secondary-alt: var(--primary-160);
+  --background-surface-high: var(--neutral-4);
+  --background-surface-higher: var(--neutral-1);
+  --background-surface-highest: var(--neutral-1);
   --background-tertiary: var(--primary-200);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -39499,6 +39731,21 @@ html.disable-forced-colors * {
       var(--primary-430) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-92) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-92) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--white) 100%,
@@ -39604,6 +39851,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-160) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-4) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -40882,6 +41144,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
+  --background-base-low: var(--neutral-1);
+  --background-base-lower: var(--neutral-1);
+  --background-base-lowest: var(--neutral-1);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -40901,6 +41166,9 @@ html.disable-forced-colors * {
   --background-primary: var(--black);
   --background-secondary: var(--plum-23);
   --background-secondary-alt: var(--plum-17);
+  --background-surface-high: var(--neutral-88);
+  --background-surface-higher: var(--neutral-84);
+  --background-surface-highest: var(--neutral-80);
   --background-tertiary: var(--plum-19);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -41271,6 +41539,21 @@ html.disable-forced-colors * {
       var(--plum-17) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--plum-23) 100%,
@@ -41375,6 +41658,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-17) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-88) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-80) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -42655,6 +42953,9 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
+  --background-base-low: var(--neutral-80);
+  --background-base-lower: var(--neutral-76);
+  --background-base-lowest: var(--neutral-84);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -42674,6 +42975,9 @@ html.disable-forced-colors * {
   --background-primary: var(--plum-20);
   --background-secondary: var(--plum-18);
   --background-secondary-alt: var(--plum-15);
+  --background-surface-high: var(--neutral-72);
+  --background-surface-higher: var(--neutral-68);
+  --background-surface-highest: var(--neutral-64);
   --background-tertiary: var(--plum-16);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -43044,6 +43348,21 @@ html.disable-forced-colors * {
       var(--plum-15) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-80) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --background-floating: color-mix(
       in oklab,
       var(--plum-18) 100%,
@@ -43148,6 +43467,21 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-72) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-68) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -46445,7 +46779,6 @@ html.disable-forced-colors * {
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
   --background-message-hover: var(--neutral-66);
-  --background-primary: var(--neutral-64);
   --background-secondary: var(--neutral-67);
   --background-tertiary: var(--neutral-72);
   --bg-base-secondary: var(--neutral-67);
@@ -46469,11 +46802,6 @@ html.disable-forced-colors * {
     --background-message-hover: color-mix(
       in oklab,
       var(--neutral-66) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-primary: color-mix(
-      in oklab,
-      var(--neutral-64) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-secondary: color-mix(
@@ -46563,7 +46891,6 @@ html.disable-forced-colors * {
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   --background-message-hover: var(--neutral-3);
-  --background-primary: var(--neutral-1);
   --background-secondary: var(--neutral-4);
   --background-tertiary: var(--neutral-5);
   --bg-base-secondary: var(--neutral-3);
@@ -46588,11 +46915,6 @@ html.disable-forced-colors * {
     --background-message-hover: color-mix(
       in oklab,
       var(--neutral-3) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-primary: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-secondary: color-mix(
@@ -46688,7 +47010,6 @@ html.disable-forced-colors * {
 .visual-refresh.theme-midnight,
 .visual-refresh .theme-midnight {
   --background-message-hover: var(--neutral-88);
-  --background-primary: var(--neutral-100);
   --background-secondary: var(--neutral-100);
   --background-tertiary: var(--neutral-100);
   --bg-base-secondary: var(--neutral-86);
@@ -46710,11 +47031,6 @@ html.disable-forced-colors * {
     --background-message-hover: color-mix(
       in oklab,
       var(--neutral-88) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-primary: color-mix(
-      in oklab,
-      var(--neutral-100) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-secondary: color-mix(
@@ -46792,7 +47108,6 @@ html.disable-forced-colors * {
 .visual-refresh.theme-darker,
 .visual-refresh .theme-darker {
   --background-message-hover: var(--neutral-81);
-  --background-primary: var(--neutral-76);
   --background-secondary: var(--neutral-76);
   --background-tertiary: var(--neutral-83);
   --bg-base-secondary: var(--neutral-83);
@@ -46814,11 +47129,6 @@ html.disable-forced-colors * {
     --background-message-hover: color-mix(
       in oklab,
       var(--neutral-81) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-primary: color-mix(
-      in oklab,
-      var(--neutral-76) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-secondary: color-mix(
@@ -48125,6 +48435,9 @@ code {
       var(--custom-standard-sidebar-view-sidebar-content-scrollbar-padding)
   );
 }
+.visual-refresh {
+  --custom-standard-sidebar-view-sidebar-total-width: 264px;
+}
 :root {
   --decoration-to-avatar-ratio: 1.2;
 }
@@ -48372,8 +48685,9 @@ img[alt] {
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
   --custom-channel-textarea-text-area-height: 40px;
+  --custom-app-top-bar-height: 40px;
 }
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.3ae024f1211a5090fa4a.css.map*/
+/*# sourceMappingURL=12633.4eb3291f2ad06f8d9aaa.css.map*/
