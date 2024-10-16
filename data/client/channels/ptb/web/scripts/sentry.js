@@ -9759,6 +9759,7 @@
           (nO.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED =
             "audio_local_soundboard_mute_toggled"),
           (nO.INPUT_MUTE_TOGGLED = "input_mute_toggled"),
+          (nO.SELF_DEAFEN_TOGGLED = "self_deafen_toggled"),
           (nO.CHANGE_LOG_OPENED = "change_log_opened"),
           (nO.CHANGE_LOG_CLOSED = "change_log_closed"),
           (nO.CHANGE_LOG_VIDEO_INTERACTED = "change_log_video_interacted"),
@@ -10721,6 +10722,7 @@
           (nO.DISCOVERY_GUILD_CARD_INTERACTION =
             "discovery_guild_card_interaction"),
           (nO.GUILD_APPLICATION_ABANDONED = "guild_application_abandoned"),
+          (nO.RAPIDASH_PROFILE_CTA_CLICKED = "rapidash_profile_cta_clicked"),
           (nO.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"),
           (nO.GPLAY_PURCHASE_FAILED = "gplay_purchase_failed"),
           (nO.LIVE_ACTIVITY_SETTINGS_UPDATED =
@@ -12484,7 +12486,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-79d8f7929b77c169991e8d7008c4f87fa54ecc54",
+            release: "discord_web-54b15fe5ceeb5934504bf12d3808d375e367ab55",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12553,8 +12555,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "336028"), "336028"));
-          o.YA("builtAt", String("1729119178814"));
+            o.YA("buildNumber", ((e = "336044"), "336044"));
+          o.YA("builtAt", String("1729119902566"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53583,4 +53585,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.53634c3f88dd9eb8bfc3.js.map
+//# sourceMappingURL=sentry.9b7dd65737bea8c53d9a.js.map
