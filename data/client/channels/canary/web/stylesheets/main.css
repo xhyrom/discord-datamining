@@ -12705,19 +12705,16 @@ span.clanTag_a31c43 {
   box-sizing: border-box;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
+  flex: 1 1 auto;
+  color: var(--channels-default);
+}
+.text_a5ad5c {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
   font-family: var(--font-display);
   font-weight: 600;
-  flex: 1 1 auto;
-  color: var(--channels-default);
-}
-.visual-refresh .container_a5ad5c {
-  text-transform: inherit;
-  color: var(--text-low-contrast);
 }
 .avatar_ab08a5 {
   display: flex;
@@ -48709,4 +48706,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f40e1372a2e7fe07cd29.css.map*/
+/*# sourceMappingURL=12633.3ab23c6a670cc162a1cc.css.map*/
