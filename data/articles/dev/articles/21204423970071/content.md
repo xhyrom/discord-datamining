@@ -10,7 +10,7 @@
 </p>
 <p>
   <a href="#h_01J8JEDHPFX3Y1VBA5KMRAF9F3"
-    >How do I disable the Activities functionality on my app?</a
+    >How do I enable or disable the Activities functionality on my app?</a
   >
 </p>
 <p><a href="#h_01J8JEDHPF30YB5HRS16TRMWS5">Additional Resources</a></p>
@@ -105,11 +105,11 @@
   > Activity!
 </p>
 <h1 id="h_01J8JEDHPFX3Y1VBA5KMRAF9F3">
-  How do I disable the Activities functionality on my app?
+  How do I enable or disable the Activities functionality on my app?
 </h1>
 <p>
-  To disable the Activity settings, navigate to your application's settings page
-  on the
+  To enable or disable the Activity settings, navigate to your application's
+  settings page on the
   <a
     href="https://discord.com/developers/applications"
     target="_blank"
@@ -122,20 +122,23 @@
   <strong>Settings</strong>.
 </p>
 <p>
-  At the bottom of the <strong>Activity Settings</strong> page, select
-  <strong>Remove</strong>.
+  At the top of the <strong>Activity Settings</strong> page, you can toggle the
+  <strong>Enable Activities </strong>switch on or off.
+  <img
+    src="https://support-dev.discord.com/hc/article_attachments/27112624763287"
+    alt="Screenshot 2024-10-16 at 10.39.10 AM.png"
+  />
 </p>
 <h2 id="h_01HR55DRFE0XQKWBFK0TD7BZ6W">
-  <!-- notionvc: 315386cc-729a-4988-a175-f4956909b09f --><img
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-      font-size: 15px;
-    "
-    src="https://support-dev.discord.com/hc/article_attachments/22196069249303"
-    alt="Screenshot 2024-03-19 at 2.46.24 PM.png"
-  />
+  <!-- notionvc: 315386cc-729a-4988-a175-f4956909b09f -->
 </h2>
+<h4 id="h_01JAB0Q7XJ6PSYFS9YKV15BAXZ" class="callout">
+  You will not be able to enable activities if your application is missing a
+  <a
+    href="https://discord.com/developers/docs/activities/development-guides#url-mapping"
+    >URL Mapping</a
+  >.
+</h4>
 <h1 id="h_01J8JEDHPF30YB5HRS16TRMWS5">Additional Resources</h1>
 <ul>
   <li>
