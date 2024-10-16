@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_nitro_tab_forced_render",
+    "label": "Nitro Tab Forced Re-render Investigation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable nitro tab forced re-render"
+    ],
+    "hash": 3681053868,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
