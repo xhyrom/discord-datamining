@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_golive_simulcast",
+    "label": "GoLive Simulcast",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Simulcast @ 1.5Mbps"
+    ],
+    "hash": 3942584255,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -6,8 +6,8 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Recent activity accordion in user profile panels enabled",
-      "Treatment 2: Recent activity accordion in user profile panels and status in private channels list enabled"
+      "Treatment 1: Recent activity in user profile panels enabled",
+      "Treatment 2: Recent activity in user profile panels and status in private channels list enabled"
     ],
     "hash": 2122002762,
     "buckets": [
