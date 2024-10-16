@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_retrigger_reaction_frecency_algorithms",
+    "label": "(Retrigger) Reaction Frecency Algorithms",
+    "description": [
+      "Not Eligible",
+      "Control Bucket"
+    ],
+    "hash": 3254726199,
+    "buckets": [
+      -1,
+      0
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

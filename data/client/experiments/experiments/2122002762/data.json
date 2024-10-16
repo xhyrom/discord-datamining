@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_recent_activity_in_dms",
+    "label": "Recent Activity in DMs",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recent activity accordion in user profile panels enabled",
+      "Treatment 2: Recent activity accordion in user profile panels and status in private channels list enabled"
+    ],
+    "hash": 2122002762,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
