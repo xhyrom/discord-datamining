@@ -953,6 +953,10 @@
       "OPTIONS"
     ]
   },
+  "CONSUMABLE_FETCH_PRICE": {
+    "url": "/store/consumable/pricing/:param",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
