@@ -10,7 +10,7 @@
 </p>
 <p>
   <a href="#h_01J8JEDHPFX3Y1VBA5KMRAF9F3"
-    >How do I enable or disable the Activities functionality on my app?</a
+    >How do I enable or disable the Activity functionality on my app?</a
   >
 </p>
 <p><a href="#h_01J8JEDHPF30YB5HRS16TRMWS5">Additional Resources</a></p>
@@ -105,7 +105,7 @@
   > Activity!
 </p>
 <h1 id="h_01J8JEDHPFX3Y1VBA5KMRAF9F3">
-  How do I enable or disable the Activities functionality on my app?
+  How do I enable or disable the Activity functionality on my app?
 </h1>
 <p>
   To enable or disable the Activity settings, navigate to your application's
