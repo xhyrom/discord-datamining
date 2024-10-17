@@ -17597,6 +17597,7 @@
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_STAY_V2": "\"No, I'll stay\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_DONT_JOIN": "\"No, don't join\"",
   "VOICE_CHANNEL_BLOCKED_USER_WARNING_JOIN_ANYWAY": "\"Yes, join anyway\"",
+  "VOICE_CHANNEL_BLOCKED_USER_PRESENT_MODAL_HEADING": "\"{n, plural, one {Someone you've blocked is} other {People you've blocked are}} here.\"",
   "BLOCKING_CONTEXT_DMS": "\"They won't be able to direct message you\"",
   "BLOCKING_CONTEXT_MESSAGES_HIDDEN": "\"Their messages will be hidden\"",
   "BLOCKING_CONTEXT_NOTIFICATIONS": "\"You won't see notifications from them\"",
