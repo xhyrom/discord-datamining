@@ -1,3 +1,8 @@
+<p>
+  <strong>Spark: Hero Tactics</strong> is a PvP battler game with CCG elements
+  that users can play as a Discord Activity. Check out this guide on how to
+  play!
+</p>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -124,6 +129,9 @@
     height="400"
   />
 </p>
+<h4 id="h_01JABW5BHJT512186X8R2P0A70" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Spark: Hero Tactics Gameplay</span>
+</h4>
 <h2 id="h_01JABJ5GZX9H696KJQFKSEDRWF">The Basics</h2>
 <p>
   Spend <strong>Spark</strong>, a magical resource, to cast
@@ -201,6 +209,9 @@
       height="407"
   /></span>
 </p>
+<h4 id="h_01JABW5RYSVZ30GVS1XW24C4X0" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Game Mode selection in Spark: Hero Tactics</span>
+</h4>
 <p>
   <span style="color: #2e3338"
     >Spark: Hero Tactics offers three distinct battle modes:</span
@@ -352,6 +363,12 @@
       height="247"
   /></span>
 </p>
+<h4 id="h_01JABW6574ZJC7H53BK3T83CBB" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Comparison of Minor Card Pack (left) and Spark Card Pack (right) in Spark:
+    Hero Tactics</span
+  >
+</h4>
 <div class="info-box">
   <span style="color: #2e3338"
     ><strong>NOTE</strong>: You won’t know the contents of a Card Pack until
@@ -378,6 +395,11 @@
       height="268"
   /></span>
 </p>
+<h4 id="h_01JABW6METNJX1W60MRYPCEP22" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Minor Card Pack: Drop Rates and Contents Overview</span
+  ><span style="color: #2e3338"> in Spark: Hero Tactics</span>
+</h4>
 <ul>
   <li>
     <strong>Spark Pack</strong>: This pack contains more rare cards than the
@@ -392,6 +414,12 @@
       height="262"
   /></span>
 </p>
+<h4 id="h_01JABW73DRNMCBDZG2XEH52FBQ" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Spark Card Pack: Drop Rates and Contents Overview in Spark: Hero
+    Tactics</span
+  >
+</h4>
 <div class="tip-box">
   <p class="wysiwyg-text-align-left">
     <span style="color: #2e3338"
@@ -409,6 +437,12 @@
         height="432"
     /></span>
   </p>
+  <h4 id="h_01JABW7VZY8NRBD7J404J5PXQH" class="wysiwyg-text-align-center">
+    <span style="color: #2e3338"
+      >Collections Menu: Organizing and Sorting Card Options in Spark: Hero
+      Tactics<br
+    /></span>
+  </h4>
   <p class="wysiwyg-text-align-left">
     <span style="color: #2e3338"
       > 2. Select a card. The Description will show, and the card’s border color
