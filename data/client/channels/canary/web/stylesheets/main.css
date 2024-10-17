@@ -10399,9 +10399,9 @@ div.modalHeader_c5e09c {
   margin: 12px;
   margin-top: 0;
   margin-bottom: 12px;
-}
-.buttonContainer_c22357 {
-  padding-bottom: 8px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
 }
 div.cardContainer_c22357 {
   border-radius: 0;
@@ -48575,4 +48575,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.4c22dc673cfd08065318.css.map*/
+/*# sourceMappingURL=12633.151c7ff1983835007d5c.css.map*/
