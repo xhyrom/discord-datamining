@@ -1,0 +1,9407 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["41315"],
+  {
+    863942: function (e, t, n) {
+      var s = n(22092);
+      (0, n(192291).exportTypedArrayStaticMethod)("from", n(12367), s);
+    },
+    70519: function (e) {
+      e.exports = "/assets/76a4af59aa173c519461.svg";
+    },
+    806848: function (e) {
+      e.exports = "/assets/6183fdc13d8046fd5bda.svg";
+    },
+    512266: function (e) {
+      e.exports = "/assets/a2d51a24d014f52f83a6.png";
+    },
+    105020: function (e) {
+      e.exports = "/assets/89ea0e62d0f8ffa67a17.svg";
+    },
+    211095: function (e) {
+      e.exports = "/assets/86755fd1deda5cb45518.svg";
+    },
+    640356: function (e) {
+      e.exports = "/assets/3880dc73d6be9d91ef36.svg";
+    },
+    515695: function (e) {
+      e.exports = "/assets/450a761db3bfe89ca9b9.png";
+    },
+    892235: function (e) {
+      e.exports = "/assets/48f03d965f1e82275006.svg";
+    },
+    375673: function (e) {
+      e.exports = "/assets/3cf7f333e815240d3294.svg";
+    },
+    73962: function (e) {
+      e.exports = "/assets/ed7318a94c14ce41d11d.svg";
+    },
+    689411: function (e) {
+      e.exports = "/assets/831c999494cb5e095eae.svg";
+    },
+    2984: function (e) {
+      e.exports = "/assets/0e5029fd9cd4812b6712.svg";
+    },
+    575703: function (e) {
+      e.exports = "/assets/b9995525a52dc58aecf5.svg";
+    },
+    822699: function (e, t, n) {
+      n.r(t), n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(593473),
+        a = n(990547),
+        l = n(873546),
+        o = n(442837),
+        c = n(570140),
+        u = n(893776),
+        d = n(533307),
+        h = n(447543),
+        _ = n(126399),
+        E = n(765717),
+        g = n(267394),
+        p = n(761305),
+        f = n(698177),
+        m = n(353926),
+        I = n(409059),
+        N = n(962220),
+        T = n(637776),
+        A = n(264229),
+        x = n(677760),
+        C = n(893607),
+        S = n(314897),
+        O = n(82142),
+        R = n(701190),
+        v = n(626135),
+        Z = n(81063),
+        b = n(449934),
+        D = n(768581),
+        L = n(625054),
+        M = n(645499),
+        P = n(320830),
+        j = n(721751),
+        y = n(718182),
+        G = n(223543),
+        B = n(73906),
+        U = n(299852),
+        k = n(39514),
+        F = n(236446),
+        w = n(9325),
+        H = n(344295),
+        V = n(781428),
+        z = n(209411),
+        K = n(649156),
+        W = n(423527),
+        Y = n(424044),
+        q = n(479495),
+        J = n(881317),
+        X = n(886806),
+        Q = n(981631),
+        $ = n(188785),
+        ee = n(245335);
+      n(179645);
+      o.ZP.initialize();
+      let et = (0, P.Z)(V.Z),
+        en = (0, P.Z)(z.Z),
+        es = (0, P.Z)(H.Z),
+        er = (0, P.Z)(F.Z),
+        ei = (0, P.Z)(k.Z),
+        ea = (0, P.Z)(x.Z),
+        el = (0, P.Z)(W.Z),
+        eo = (0, P.Z)(y.Z),
+        ec = (0, P.Z)(G.Z),
+        eu = (0, P.Z)(X.Z),
+        ed = (0, P.Z)(f.Z),
+        eh = (0, P.Z)(q.Z),
+        e_ = (0, P.Z)(U.Z),
+        eE = (0, P.Z)(p.Z),
+        eg = (0, P.Z)(T.Z),
+        ep = (0, P.Z)(B.Z),
+        ef = (0, P.Z)(K.Z),
+        em = (0, P.Z)(J.Z),
+        eI = (0, P.Z)(Y.Z);
+      class eN extends r.PureComponent {
+        static getDerivedStateFromProps(e, t) {
+          var n;
+          let { invite: s, location: r } = e,
+            { backgroundId: a } = t,
+            l =
+              null !== (n = (0, i.parse)(r.search).redirect_to) && void 0 !== n
+                ? n
+                : null;
+          (null == l || "" === l || !(0, M.B)(l) || l.startsWith(Q.Z5c.ME)) &&
+            (l = null);
+          let o = null;
+          if (null == s) o = (0, b.gK)(l);
+          else if ((null == s ? void 0 : s.state) === Q.r2o.RESOLVED) {
+            let { guild: e, target_application: t } = s;
+            null != t
+              ? null != a && (o = (0, Z.getAssetImage)(t.id, a, 1024))
+              : null != e &&
+                "string" == typeof e.splash &&
+                (o = D.ZP.getGuildSplashURL({ id: e.id, splash: e.splash }));
+          }
+          return { redirectTo: l, splash: o };
+        }
+        componentDidMount() {
+          let {
+            inviteKey: e,
+            hasLoadedExperiments: t,
+            isAuthenticated: n,
+          } = this.props;
+          null != e &&
+            (!t && n && u.Z.getExperiments(!0),
+            v.default.track(
+              Q.rMx.INVITE_OPENED,
+              {
+                invite_code: (0, A.jX)(e),
+                load_time: L.Z.getTimeSinceNavigationStart(),
+              },
+              { flush: !0 },
+            )),
+            (t || $.a) && this.resolveInvite(),
+            this.resolveGiftCode(),
+            this.resolveGuildTemplate(),
+            _.Z.initialize();
+        }
+        componentDidUpdate(e) {
+          var t, n;
+          !e.hasLoadedExperiments &&
+            this.props.hasLoadedExperiments &&
+            !$.a &&
+            this.resolveInvite(),
+            (null === (t = e.invite) || void 0 === t ? void 0 : t.state) !==
+              (null === (n = this.props.invite) || void 0 === n
+                ? void 0
+                : n.state) && this.maybeFetchApplicationSplash();
+        }
+        componentWillUnmount() {
+          _.Z.terminate();
+        }
+        maybeFetchApplicationSplash() {
+          let { invite: e } = this.props;
+          if ((null == e ? void 0 : e.state) === Q.r2o.RESOLVED) {
+            let { target_application: t } = e;
+            null != t &&
+              (0, Z.fetchAssetIds)(t.id, ["embedded_splash"]).then((e) => {
+                let [t] = e;
+                return this.setState({ backgroundId: t });
+              });
+          }
+        }
+        async resolveInvite() {
+          let { inviteKey: e } = this.props;
+          if (null == e) return;
+          let { invite: t } = await h.Z.resolveInvite(e, Q.Usc.INVITE);
+          null != t &&
+            ((0, g.A)(t),
+            null != t.type && ee.xf.has(t.type) && h.Z.openNativeAppModal(e));
+        }
+        resolveGuildTemplate() {
+          let { guildTemplateCode: e } = this.props;
+          if (null != e)
+            v.default.track(
+              Q.rMx.GUILD_TEMPLATE_OPENED,
+              {
+                guild_template_code: e,
+                load_time: L.Z.getTimeSinceNavigationStart(),
+              },
+              { flush: !0 },
+            ),
+              N.Z.resolveGuildTemplate(e),
+              N.Z.openNativeAppModal(e);
+        }
+        resolveGiftCode() {
+          let { giftCode: e } = this.props;
+          if (null != e)
+            d.Z.resolveGiftCode(e, !0, !0).then((t) => {
+              null != t &&
+                null == t.giftCode.promotion &&
+                c.Z.wait(() => d.Z.openNativeGiftCodeModal(e));
+            });
+        }
+        render() {
+          let { splash: e, redirectTo: t } = this.state,
+            { inviteKey: n } = this.props;
+          return (0, s.jsxs)(j.Z, {
+            splash: e,
+            children: [
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.LOGIN_HANDOFF,
+                render: (e) => (0, s.jsx)(en, { ...e, redirectTo: t }),
+              }),
+              (0, s.jsx)(E.Z, {
+                impressionName: a.ImpressionNames.USER_LOGIN,
+                path: Q.Z5c.LOGIN,
+                render: (e) => (0, s.jsx)(et, { ...e, redirectTo: t }),
+              }),
+              (0, s.jsx)(E.Z, {
+                impressionName: a.ImpressionNames.USER_REGISTRATION,
+                path: Q.Z5c.REGISTER,
+                render: (e) =>
+                  $.a
+                    ? (0, s.jsx)(es, { ...e, redirectTo: t, inviteKey: n })
+                    : (0, s.jsx)(el, { ...e, redirectTo: t }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.GIFT_CODE_LOGIN(":giftCode"),
+                render: (e) => (0, s.jsx)(ei, { login: !0, ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.GIFT_CODE(":giftCode"),
+                render: (e) => (0, s.jsx)(ei, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: [
+                  Q.Z5c.INVITE_LOGIN(":inviteCode"),
+                  Q.Z5c.INVITE(":inviteCode"),
+                ],
+                render: (e) => {
+                  let {
+                      match: {
+                        params: { inviteCode: t },
+                        path: n,
+                      },
+                      location: r,
+                      transitionTo: i,
+                    } = e,
+                    a = (0, A.mb)(t, r.search);
+                  return l.tq || l.Em
+                    ? (0, s.jsx)(ea, { inviteKey: a, transitionTo: i }, a)
+                    : (0, s.jsx)(es, {
+                        inviteKey: a,
+                        location: r,
+                        transitionTo: i,
+                        login: n === Q.Z5c.INVITE_LOGIN(":inviteCode"),
+                      });
+                },
+              }),
+              (0, s.jsx)(E.Z, {
+                path: [
+                  Q.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"),
+                  Q.Z5c.GUILD_TEMPLATE(":guildTemplateCode"),
+                ],
+                render: (e) => {
+                  let {
+                    match: {
+                      params: { guildTemplateCode: t },
+                      path: n,
+                    },
+                    location: r,
+                    transitionTo: i,
+                  } = e;
+                  return l.tq || l.Em
+                    ? (0, s.jsx)(w.Z, { code: t }, t)
+                    : (0, s.jsx)(er, {
+                        code: t,
+                        location: r,
+                        transitionTo: i,
+                        login:
+                          n ===
+                          Q.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"),
+                      });
+                },
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.VERIFY,
+                render: (e) => (0, s.jsx)(eu, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.VERIFY_HUB_EMAIL,
+                render: (e) => (0, s.jsx)(eg, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.VERIFY_REQUEST,
+                render: (e) => (0, s.jsx)(ed, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
+                render: (e) => (0, s.jsx)(e_, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+                render: (e) => (0, s.jsx)(eE, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.AUTHORIZE_IP,
+                render: (e) => (0, s.jsx)(eo, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.REJECT_IP,
+                render: (e) =>
+                  (0, s.jsx)(eh, { source: Q.Z5c.REJECT_IP, ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.REJECT_MFA,
+                render: (e) =>
+                  (0, s.jsx)(eh, { source: Q.Z5c.REJECT_MFA, ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.AUTHORIZE_PAYMENT,
+                render: (e) => (0, s.jsx)(ec, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.RESET,
+                render: (e) => (0, s.jsx)(eh, { source: Q.Z5c.RESET, ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
+                render: (e) => (0, s.jsx)(ef, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.CHANNEL(
+                  C.Hw.guildId(),
+                  C.Hw.channelId({ optional: !0 }),
+                  ":messageId?",
+                ),
+                render: (e) => (0, s.jsx)(ep, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.REPORT,
+                render: (e) => (0, s.jsx)(em, { ...e }),
+              }),
+              (0, s.jsx)(E.Z, {
+                path: Q.Z5c.REPORT_SECOND_LOOK,
+                render: (e) => (0, s.jsx)(eI, { ...e }),
+              }),
+            ],
+          });
+        }
+        constructor(...e) {
+          var t, n, s;
+          super(...e),
+            (t = this),
+            (s = { splash: null, redirectTo: null, backgroundId: null }),
+            (n = "state") in t
+              ? Object.defineProperty(t, n, {
+                  value: s,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0,
+                })
+              : (t[n] = s);
+        }
+      }
+      t.default = o.ZP.connectStores([S.default, R.Z, O.Z, m.Z, I.Z], (e) => {
+        var t, n, s;
+        let { match: r, location: i } = e,
+          a =
+            null == r
+              ? void 0
+              : null === (t = r.params) || void 0 === t
+                ? void 0
+                : t.inviteCode,
+          l = $.a ? $.Y : void 0,
+          o = null != a ? (0, A.mb)(a, i.search) : l,
+          c =
+            null == r
+              ? void 0
+              : null === (n = r.params) || void 0 === n
+                ? void 0
+                : n.giftCode,
+          u =
+            null == r
+              ? void 0
+              : null === (s = r.params) || void 0 === s
+                ? void 0
+                : s.guildTemplateCode;
+        return {
+          inviteKey: o,
+          isAuthenticated: S.default.isAuthenticated(),
+          giftCode: c,
+          guildTemplateCode: u,
+          gift: null != c ? O.Z.get(c) : null,
+          invite: null != o ? R.Z.getInvite(o) : null,
+          guildTemplate: null != u ? I.Z.getGuildTemplate(u) : null,
+          hasLoadedExperiments: m.Z.hasLoadedExperiments,
+        };
+      })(eN);
+    },
+    320830: function (e, t, n) {
+      n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(954955),
+        a = n.n(i),
+        l = n(748780),
+        o = n(873546),
+        c = n(477690),
+        u = n(481060),
+        d = n(624138),
+        h = n(954757);
+      function _(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      let E = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+        g = { START: 0, END: 1 },
+        p = { friction: 10, tension: 130 };
+      t.Z = function (e) {
+        return class extends r.Component {
+          componentDidMount() {
+            !o.tq &&
+              (window.addEventListener("resize", this.handleResizeDebounced),
+              this.handleResize());
+          }
+          componentWillUnmount() {
+            clearTimeout(this.timeout),
+              window.removeEventListener("resize", this.handleResizeDebounced);
+          }
+          componentWillAppear(e) {
+            this.state.shouldAnimate ? this.animateTo(g.END, e) : e();
+          }
+          componentWillEnter(e) {
+            this.state.shouldAnimate
+              ? (clearTimeout(this.timeout),
+                (this.timeout = setTimeout(() => this.animateTo(g.END, e), 40)))
+              : e();
+          }
+          componentWillLeave(e) {
+            this.state.shouldAnimate ? this.animateTo(g.START, e) : e();
+          }
+          animateTo(e, t) {
+            l.Z.spring(this.anim, { toValue: e, ...p }).start(t);
+          }
+          getAnimatedStyle(e) {
+            return this.state.shouldAnimate
+              ? {
+                  opacity: this.anim,
+                  transform: e
+                    ? void 0
+                    : [
+                        {
+                          scale: this.anim.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [1.05, 1],
+                          }),
+                        },
+                        {
+                          translateY: this.anim.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: ["-70px", "0px"],
+                          }),
+                        },
+                        { translateZ: 0 },
+                      ],
+                }
+              : null;
+          }
+          render() {
+            return (0, s.jsx)("div", {
+              className: h.wrapper,
+              children: (0, s.jsx)(u.AccessibilityPreferencesContext.Consumer, {
+                children: (t) => {
+                  let { reducedMotion: n } = t;
+                  return (0, s.jsx)(l.Z.div, {
+                    style: this.getAnimatedStyle(n.enabled),
+                    children: (0, s.jsx)(e, { ...this.props }),
+                  });
+                },
+              }),
+            });
+          }
+          constructor(...e) {
+            super(...e),
+              _(this, "timeout", void 0),
+              _(this, "anim", new l.Z.Value(g.START)),
+              _(this, "state", { shouldAnimate: !o.tq }),
+              _(this, "handleResize", () => {
+                let e = window.innerWidth > E;
+                !this.state.shouldAnimate && e && this.anim.setValue(g.END),
+                  this.setState({ shouldAnimate: e });
+              }),
+              _(this, "handleResizeDebounced", a()(this.handleResize, 60));
+          }
+        };
+      };
+    },
+    721751: function (e, t, n) {
+      let s;
+      n(47120);
+      var r = n(735250),
+        i = n(470079),
+        a = n(120356),
+        l = n.n(a),
+        o = n(873546),
+        c = n(442837),
+        u = n(481060),
+        d = n(980591),
+        h = n(605782),
+        _ = n(133853),
+        E = n(568154),
+        g = n(353926),
+        p = n(703656),
+        f = n(981631),
+        m = n(504877);
+      let I = n(575703),
+        N = n(2984),
+        T = [
+          f.Z5c.LOGIN,
+          f.Z5c.LOGIN_HANDOFF,
+          f.Z5c.REGISTER,
+          f.Z5c.INVITE(""),
+          f.Z5c.GIFT_CODE(""),
+          f.Z5c.GUILD_TEMPLATE_LOGIN(""),
+          f.Z5c.GUILD_TEMPLATE(""),
+          f.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
+          f.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+          f.Z5c.BILLING_PREMIUM_SUBSCRIBE,
+          f.Z5c.BILLING_PAYMENT_SOURCES_CREATE,
+          f.Z5c.BILLING_PAYMENTS,
+          f.Z5c.BILLING_PREMIUM_SWITCH_PLAN,
+          f.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE,
+          f.Z5c.VERIFY,
+          f.Z5c.VERIFY_HUB_EMAIL,
+          f.Z5c.REJECT_IP,
+          f.Z5c.REJECT_MFA,
+          f.Z5c.AUTHORIZE_IP,
+          f.Z5c.AUTHORIZE_PAYMENT,
+          f.Z5c.RESET,
+          f.Z5c.HANDOFF,
+          f.Z5c.REPORT,
+          f.Z5c.REPORT_SECOND_LOOK,
+        ];
+      function A(e) {
+        return T.some((t) => e.startsWith(t));
+      }
+      let x = (e) => ((s = e), e);
+      function C(e) {
+        let { children: t } = e;
+        switch (
+          (function () {
+            let [e, t] = i.useState(!1),
+              [n, r] = i.useState(true),
+              a = (function () {
+                return null;
+              })(),
+              l = (0, c.e7)([g.Z], () => g.Z.hasLoadedExperiments);
+            return ((0, d.Z)(() => {}, 300), void 0 !== s)
+              ? s
+              : !n && l
+                ? (!e && t(!0),
+                  x(
+                    (function (e) {
+                      return "default";
+                    })(a),
+                  ))
+                : n
+                  ? x("default")
+                  : "loading";
+          })()
+        ) {
+          case "default":
+            return (0, r.jsxs)(r.Fragment, {
+              children: [
+                (0, r.jsx)("img", { className: m.artwork, src: I, alt: "" }),
+                (0, r.jsx)("img", {
+                  className: m.logoWithText,
+                  src: N,
+                  alt: "",
+                }),
+                t,
+              ],
+            });
+          case "experimental":
+          case "loading":
+            return null;
+        }
+      }
+      class S extends i.Component {
+        componentDidMount() {
+          window.addEventListener("resize", this.handleResize);
+        }
+        componentWillUnmount() {
+          window.removeEventListener("resize", this.handleResize);
+        }
+        mobileTransitionTo(e, t) {
+          if (A(e)) (0, p.uL)(e, t);
+          else {
+            let n = null != t && null != t.search ? t.search : null;
+            window.location = null == n ? e : "".concat(e, "?").concat(n);
+          }
+        }
+        mobileReplaceWith(e) {
+          A(e) ? (0, p.dL)(e) : (window.location = e);
+        }
+        renderDefault() {
+          let { splash: e } = this.props,
+            t = (0, r.jsx)(h.Z, {
+              component: i.Fragment,
+              children: i.Children.map(this.props.children, (e) =>
+                i.cloneElement(e, { transitionTo: p.uL, replaceWith: p.dL }),
+              ),
+            });
+          return (0, r.jsx)("div", {
+            className: m.characterBackground,
+            children: (0, r.jsx)(u.HeadingLevel, {
+              forceLevel: 1,
+              children:
+                null != e
+                  ? (0, r.jsxs)(r.Fragment, {
+                      children: [
+                        (0, r.jsx)(_.Z, { show: !0, className: l()(m.logo) }),
+                        (0, r.jsx)(E.h, { splash: e, children: t }),
+                      ],
+                    })
+                  : (0, r.jsx)(C, { children: t }),
+            }),
+          });
+        }
+        renderMobile() {
+          return (0, r.jsx)(h.Z, {
+            component: i.Fragment,
+            children: i.Children.map(this.props.children, (e) =>
+              i.cloneElement(e, {
+                transitionTo: this.mobileTransitionTo,
+                replaceWith: this.mobileReplaceWith,
+              }),
+            ),
+          });
+        }
+        render() {
+          let { isMobileWidth: e } = this.state,
+            t = navigator.userAgent.includes("GameLauncher");
+          return e || o.tq || o.Em || t
+            ? this.renderMobile()
+            : this.renderDefault();
+        }
+        constructor(e) {
+          var t, n, s;
+          super(e),
+            (t = this),
+            (n = "handleResize"),
+            (s = () => {
+              this.setState({ isMobileWidth: window.innerWidth <= 485 });
+            }),
+            n in t
+              ? Object.defineProperty(t, n, {
+                  value: s,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0,
+                })
+              : (t[n] = s),
+            (this.state = { isMobileWidth: window.innerWidth <= 485 });
+        }
+      }
+      t.Z = S;
+    },
+    718182: function (e, t, n) {
+      var s,
+        r,
+        i,
+        a,
+        l = n(735250),
+        o = n(470079),
+        c = n(525654),
+        u = n.n(c),
+        d = n(442837),
+        h = n(893776),
+        _ = n(129293),
+        E = n(388905),
+        g = n(108427),
+        p = n(314897),
+        f = n(981631),
+        m = n(689938),
+        I = n(113207);
+      d.ZP.initialize();
+      class N extends (a = o.PureComponent) {
+        componentDidMount() {
+          let e = (0, _.Z)(this.props.location);
+          null != e && h.Z.authorizeIPAddress(e), (0, g.e)("authorize_ip");
+        }
+        renderLoginButton() {
+          if ("Android" === u().os.family || "iOS" === u().os.family)
+            return null;
+          let { transitionTo: e } = this.props;
+          return (0, l.jsx)(E.zx, {
+            onClick: () => e(f.Z5c.LOGIN),
+            children: m.Z.Messages._LOGIN,
+          });
+        }
+        renderFailed() {
+          return (0, l.jsxs)(E.ZP, {
+            children: [
+              (0, l.jsx)("img", {
+                alt: "",
+                src: n(211095),
+                className: I.marginBottom20,
+              }),
+              (0, l.jsx)(E.Dx, {
+                className: I.marginBottom8,
+                children: m.Z.Messages.AUTHORIZATION_EXPIRED,
+              }),
+              (0, l.jsx)(E.DK, {
+                className: I.marginBottom40,
+                children: m.Z.Messages._AUTH_EXPIRED_SUGGESTION,
+              }),
+              this.renderLoginButton(),
+            ],
+          });
+        }
+        renderSucceeded() {
+          return (0, l.jsxs)(E.ZP, {
+            children: [
+              (0, l.jsx)("img", {
+                alt: "",
+                src: n(640356),
+                className: I.marginBottom20,
+              }),
+              (0, l.jsx)(E.Dx, {
+                className: I.marginBottom8,
+                children: m.Z.Messages.IP_AUTHORIZATION_SUCCEEDED,
+              }),
+              (0, l.jsx)(E.DK, {
+                className: I.marginBottom40,
+                children: m.Z.Messages._AUTH_IP_AUTH_SUCCEEDED_SUGGESTION,
+              }),
+              this.renderLoginButton(),
+            ],
+          });
+        }
+        renderDefault() {
+          return (0, l.jsxs)(E.ZP, {
+            children: [
+              (0, l.jsx)(E.Hh, {}),
+              (0, l.jsx)(E.Dx, { children: m.Z.Messages.AUTHORIZING }),
+            ],
+          });
+        }
+        render() {
+          let { verifyFailed: e, verifySucceeded: t } = this.props;
+          return e
+            ? this.renderFailed()
+            : t
+              ? this.renderSucceeded()
+              : this.renderDefault();
+        }
+      }
+      (s = N),
+        (r = "defaultProps"),
+        (i = { transitionTo: (e) => n.g.location.assign(e) }),
+        r in s
+          ? Object.defineProperty(s, r, {
+              value: i,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0,
+            })
+          : (s[r] = i),
+        (t.Z = d.ZP.connectStores([p.default], () => ({
+          verifyFailed: p.default.didVerifyFail(),
+          verifySucceeded: p.default.didVerifySucceed(),
+        }))(N));
+    },
+    223543: function (e, t, n) {
+      var s = n(735250),
+        r = n(470079),
+        i = n(442837),
+        a = n(893776),
+        l = n(129293),
+        o = n(388905),
+        c = n(108427),
+        u = n(314897),
+        d = n(689938),
+        h = n(113207);
+      t.Z = (e) => {
+        let { location: t } = e,
+          { verifyFailed: _, verifySucceeded: E } = (0, i.cj)(
+            [u.default],
+            () => ({
+              verifyFailed: u.default.didVerifyFail(),
+              verifySucceeded: u.default.didVerifySucceed(),
+            }),
+          );
+        return (r.useEffect(() => {
+          let e = (0, l.Z)(t);
+          null != e && a.Z.authorizePayment(e), (0, c.e)("authorize_payment");
+        }, [t]),
+        _)
+          ? (0, s.jsxs)(o.ZP, {
+              children: [
+                (0, s.jsx)("img", {
+                  alt: "",
+                  src: n(375673),
+                  className: h.marginBottom20,
+                }),
+                (0, s.jsx)(o.Dx, {
+                  className: h.marginBottom8,
+                  children: d.Z.Messages.PAYMENT_AUTHORIZATION_EXPIRED,
+                }),
+                (0, s.jsx)(o.DK, {
+                  className: h.marginBottom40,
+                  children: d.Z.Messages.PAYMENT_AUTH_EXPIRED_SUGGESTION,
+                }),
+              ],
+            })
+          : E
+            ? (0, s.jsxs)(o.ZP, {
+                children: [
+                  (0, s.jsx)("img", {
+                    alt: "",
+                    src: n(73962),
+                    className: h.marginBottom20,
+                  }),
+                  (0, s.jsx)(o.Dx, {
+                    className: h.marginBottom8,
+                    children: d.Z.Messages.PAYMENT_AUTHORIZATION_SUCCEEDED,
+                  }),
+                  (0, s.jsx)(o.DK, {
+                    className: h.marginBottom40,
+                    children:
+                      d.Z.Messages.PAYMENT_AUTHORIZED_SUCCEEDED_SUGGESTION,
+                  }),
+                ],
+              })
+            : (0, s.jsxs)(o.ZP, {
+                children: [
+                  (0, s.jsx)(o.Hh, {}),
+                  (0, s.jsx)(o.Dx, {
+                    children: d.Z.Messages.PAYMENT_AUTHORIZING,
+                  }),
+                ],
+              });
+      };
+    },
+    73906: function (e, t, n) {
+      var s = n(735250);
+      n(470079);
+      var r = n(3570),
+        i = n(685311),
+        a = n(186901);
+      t.Z = function (e) {
+        let { match: t, location: n } = e,
+          l = async (e, t) => {
+            await (0, r.s)(a.jE.CHANNEL, {
+              guildId: e.params.guildId,
+              channelId: e.params.channelId,
+              messageId: e.params.messageId,
+              search: t.search,
+            });
+          };
+        return (0, s.jsx)(i.Z, { match: t, location: n, attemptDeepLink: l });
+      };
+    },
+    685311: function (e, t, n) {
+      n(47120);
+      var s,
+        r,
+        i = n(735250),
+        a = n(470079),
+        l = n(120356),
+        o = n.n(l),
+        c = n(536285),
+        u = n(857458),
+        d = n(388905),
+        h = n(703656),
+        _ = n(689938),
+        E = n(113207);
+      ((r = s || (s = {}))[(r.INITIAL = 0)] = "INITIAL"),
+        (r[(r.RPC_CONNECTED = 1)] = "RPC_CONNECTED"),
+        (r[(r.APP_OPENING = 2)] = "APP_OPENING"),
+        (r[(r.APP_OPENED = 3)] = "APP_OPENED");
+      t.Z = function (e) {
+        let { match: t, location: n, attemptDeepLink: s } = e,
+          [r, l] = a.useState(0);
+        a.useEffect(() => {
+          c.default.once("connected", () => {
+            l(1);
+          }),
+            c.default.once("disconnected", () => {
+              (0, h.uL)((0, u.M)());
+            }),
+            c.default.connect();
+        }, []),
+          a.useEffect(() => {
+            if (0 !== r) return;
+            let e = setTimeout(() => (0, h.uL)((0, u.M)()), 3e3);
+            return () => clearTimeout(e);
+          }, [r]);
+        let g = a.useCallback(
+          async (e, t) => {
+            try {
+              l(2), await s(e, t), l(3);
+            } catch (e) {
+              console.error("Error opening deeplink", e);
+            }
+          },
+          [s],
+        );
+        if ((0, h.DB)()) return null;
+        switch (r) {
+          case 1:
+            return (0, i.jsxs)(d.ZP, {
+              children: [
+                (0, i.jsx)(d.Dx, {
+                  className: E.marginBottom8,
+                  children: _.Z.Messages.DEEPLINK_BROWSER_TITLE,
+                }),
+                (0, i.jsx)(d.DK, {
+                  children: _.Z.Messages.DEEPLINK_BROWSER_PROMPT,
+                }),
+                (0, i.jsx)(d.zx, {
+                  className: E.marginTop40,
+                  onClick: () => g(t, n),
+                  children: _.Z.Messages.OPEN_IN_APP,
+                }),
+                (0, i.jsx)(d.zx, {
+                  className: o()(E.marginTop8, E.marginCenterHorz),
+                  color: d.zx.Colors.LINK,
+                  look: d.zx.Looks.LINK,
+                  onClick: () => (0, h.uL)((0, u.M)()),
+                  children: _.Z.Messages.CONTINUE_IN_BROWSER,
+                }),
+              ],
+            });
+          case 0:
+          case 2:
+            return (0, i.jsxs)(d.ZP, {
+              children: [
+                (0, i.jsx)(d.Dx, { children: _.Z.Messages.APP_OPENING }),
+                (0, i.jsx)(d.Hh, {}),
+              ],
+            });
+          case 3:
+            return (0, i.jsxs)(d.ZP, {
+              children: [
+                (0, i.jsx)(d.Dx, {
+                  className: E.marginBottom8,
+                  children: _.Z.Messages.APP_OPENED_TITLE,
+                }),
+                (0, i.jsx)(d.DK, {
+                  children: _.Z.Messages.DEEPLINK_BROWSER_APP_OPENED,
+                }),
+              ],
+            });
+        }
+      };
+    },
+    299852: function (e, t, n) {
+      n(47120);
+      var s,
+        r = n(735250),
+        i = n(470079),
+        a = n(593473),
+        l = n(442837),
+        o = n(544891),
+        c = n(481060),
+        u = n(129293),
+        d = n(388905),
+        h = n(108427),
+        _ = n(598077),
+        E = n(896797),
+        g = n(981631),
+        p = n(930441),
+        f = n(689938),
+        m = n(113207);
+      function I(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      l.ZP.initialize();
+      class N extends (s = i.PureComponent) {
+        componentDidMount() {
+          let e = (0, u.Z)(this.props.location),
+            t = (0, a.parse)(this.props.location.search);
+          o.tn
+            .post({
+              url: g.ANM.DISABLE_EMAIL_NOTIFICATIONS,
+              body: {
+                token: e,
+                pixel_uuid: t.hash,
+                category: t.category,
+                email_type: t.email_type,
+              },
+              oldFormErrors: !0,
+            })
+            .then(
+              (e) => {
+                let {
+                    body: { user: n },
+                  } = e,
+                  s = new _.Z(n);
+                this.setState({
+                  success: !0,
+                  busy: !1,
+                  user: s,
+                  category: t.category,
+                });
+              },
+              () => this.setState({ success: !1, busy: !1 }),
+            ),
+            (0, h.e)("disable_email_notifications");
+        }
+        renderBusy() {
+          return (0, r.jsx)(d.ZP, { children: (0, r.jsx)(d.Hh, {}) });
+        }
+        renderCategorySuccess(e, t) {
+          let { defaultRoute: n, transitionTo: s } = this.props,
+            i = f.Z.Messages.EMAIL_CATEGORY_UNSUBSCRIBE_EMAIL_BODY.format({
+              category: t,
+            });
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.Dx, {
+                className: m.marginBottom8,
+                children: f.Z.Messages.EMAIL_CATEGORY_UNSUBSCRIBE_HEADER,
+              }),
+              (0, r.jsx)(d.DK, { children: i }),
+              (0, r.jsx)(d.zx, {
+                className: m.marginTop20,
+                onClick: () => s(n),
+                children: f.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+              (0, r.jsx)(d.zx, {
+                className: m.marginTop8,
+                color: d.zx.Colors.LINK,
+                look: d.zx.Looks.LINK,
+                onClick: () => s(g.Z5c.SETTINGS("notifications", p.vG)),
+                children: f.Z.Messages.EMAIL_CATEGORY_MANAGE_SETTING_LABEL,
+              }),
+            ],
+          });
+        }
+        renderSuccess() {
+          let { defaultRoute: e, transitionTo: t } = this.props,
+            { user: n, category: s } = this.state;
+          if (null != s) {
+            let e = p.Od.find((e) => e.category === s);
+            if (null != e) return this.renderCategorySuccess(s, e.label());
+          }
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.qE, {
+                src: null == n ? void 0 : n.getAvatarURL(void 0, 100),
+                size: c.AvatarSizes.DEPRECATED_SIZE_100,
+                className: m.marginBottom20,
+              }),
+              (0, r.jsx)(d.Dx, {
+                className: m.marginBottom8,
+                children:
+                  f.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_SUCCESS_HEADER,
+              }),
+              (0, r.jsx)(d.DK, {
+                children:
+                  f.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_SUCCESS_BODY,
+              }),
+              (0, r.jsx)(d.zx, {
+                className: m.marginTop40,
+                onClick: () => t(e),
+                children: f.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+            ],
+          });
+        }
+        renderError() {
+          let { defaultRoute: e, transitionTo: t } = this.props;
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.Ee, { src: n(105020), className: m.marginBottom20 }),
+              (0, r.jsx)(d.Dx, {
+                className: m.marginBottom8,
+                children:
+                  f.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_FAILURE_HEADER,
+              }),
+              (0, r.jsx)(d.DK, {
+                children:
+                  f.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_FAILURE_BODY,
+              }),
+              (0, r.jsx)(d.zx, {
+                className: m.marginTop40,
+                onClick: () => t(e),
+                children: f.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+            ],
+          });
+        }
+        render() {
+          let { busy: e, success: t } = this.state;
+          return e
+            ? this.renderBusy()
+            : t
+              ? this.renderSuccess()
+              : this.renderError();
+        }
+        constructor(...e) {
+          super(...e),
+            I(this, "state", {
+              busy: !0,
+              success: !1,
+              user: null,
+              category: null,
+            });
+        }
+      }
+      I(N, "defaultProps", { transitionTo: (e) => n.g.location.assign(e) }),
+        (t.Z = l.ZP.connectStores([E.Z], () => ({
+          defaultRoute: E.Z.defaultRoute,
+        }))(N));
+    },
+    39514: function (e, t, n) {
+      n(47120), n(411104);
+      var s,
+        r,
+        i = n(735250),
+        a = n(470079),
+        l = n(120356),
+        o = n.n(l),
+        c = n(442837),
+        u = n(570140),
+        d = n(893776),
+        h = n(533307),
+        _ = n(978085),
+        E = n(232567),
+        g = n(388905),
+        p = n(362762),
+        f = n(108427),
+        m = n(314897),
+        I = n(896797),
+        N = n(82142),
+        T = n(283595),
+        A = n(55563),
+        x = n(669079),
+        C = n(63063),
+        S = n(51144),
+        O = n(481153),
+        R = n(781428),
+        v = n(423527),
+        Z = n(981631),
+        b = n(689938),
+        D = n(113207);
+      function L(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      c.ZP.initialize(),
+        ((r = s || (s = {})).REGISTER = "register"),
+        (r.LOGIN = "login");
+      class M extends a.PureComponent {
+        componentDidMount() {
+          let { authenticated: e, isResolved: t } = this.props;
+          e && this.handleAuthenticated(),
+            !t && this.resolveGiftCode(),
+            (0, f.e)("gift_code");
+        }
+        componentDidUpdate(e) {
+          let { authenticated: t, isResolved: n } = this.props;
+          !n &&
+            u.Z.wait(() => {
+              this.resolveGiftCode();
+            }),
+            t && !e.authenticated && this.handleAuthenticated(),
+            !t && e.authenticated && this.setState({ currentUser: null });
+        }
+        handleAuthenticated() {
+          let { currentUser: e } = this.state;
+          _.b8(), null == e && this.refreshUser();
+        }
+        get requiresVerification() {
+          let { currentUser: e } = this.state;
+          return null != e && !e.verified;
+        }
+        getCode() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : this.props;
+          return e.match.params.giftCode;
+        }
+        getMode() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : this.props;
+          return e.login ? "login" : "register";
+        }
+        getErrorMessage(e) {
+          let { libraryApplication: t, sku: n } = this.props,
+            { error: s } = this.state,
+            r = null != s ? s.code : null;
+          return r === Z.evJ.INVALID_GIFT_SELF_REDEMPTION
+            ? b.Z.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT
+            : r === Z.evJ.INVALID_GIFT_REDEMPTION_OWNED &&
+                (null == n ? void 0 : n.productLine) === Z.POd.COLLECTIBLES
+              ? b.Z.Messages.GIFT_ERROR_OWNED
+              : null != t || r === Z.evJ.INVALID_GIFT_REDEMPTION_OWNED
+                ? b.Z.Messages.GIFT_CODE_AUTH_HELP_TEXT_OWNED.format({
+                    libraryLink: Z.Z5c.APPLICATION_LIBRARY,
+                  })
+                : e.isClaimed || r === Z.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED
+                  ? b.Z.Messages.GIFT_CODE_AUTH_HELP_TEXT_CLAIMED
+                  : r === Z.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED
+                    ? b.Z.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT
+                    : void 0;
+        }
+        renderSpinner(e) {
+          return (0, i.jsxs)(g.ZP, {
+            children: [(0, i.jsx)(g.Dx, { children: e }), (0, i.jsx)(g.Hh, {})],
+          });
+        }
+        renderExpiredInvite() {
+          let { defaultRoute: e, transitionTo: t } = this.props;
+          return (0, i.jsxs)(g.ZP, {
+            children: [
+              (0, i.jsx)(g.Ee, { src: n(167969), className: D.marginBottom8 }),
+              (0, i.jsx)(g.Dx, {
+                className: o()(D.marginTop8, D.marginBottom8),
+                children: b.Z.Messages.GIFT_CODE_AUTH_INVALID_TITLE,
+              }),
+              (0, i.jsx)(g.DK, {
+                children: b.Z.Messages.GIFT_CODE_AUTH_INVALID_BODY,
+              }),
+              (0, i.jsx)(g.zx, {
+                className: o()(D.marginTop40, D.marginBottom8),
+                onClick: () => t(e),
+                children: b.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+              (0, i.jsx)(g.zx, {
+                onClick: () =>
+                  window.open(C.Z.getArticleURL(Z.BhN.GIFTING), "_blank"),
+                look: g.zx.Looks.LINK,
+                color: g.zx.Colors.LINK,
+                children: b.Z.Messages.GIFT_CODE_AUTH_INVALID_TIP,
+              }),
+            ],
+          });
+        }
+        renderAppOpened() {
+          return (0, i.jsxs)(g.ZP, {
+            children: [
+              (0, i.jsx)(g.Dx, {
+                className: D.marginBottom8,
+                children: b.Z.Messages.APP_OPENED_TITLE,
+              }),
+              (0, i.jsx)(g.DK, { children: b.Z.Messages.APP_OPENED_BODY }),
+              (0, i.jsx)(g.zx, {
+                className: D.marginTop40,
+                onClick: () => this.setState({ continueOnWeb: !0 }),
+                children: b.Z.Messages.GIFT_CODE_AUTH_CONTINUE_IN_BROWSER,
+              }),
+            ],
+          });
+        }
+        renderVerification(e) {
+          let { sentVerification: t } = this.state;
+          return (0, i.jsxs)(g.ZP, {
+            children: [
+              (0, i.jsx)(g.Ee, { src: n(892235), className: D.marginBottom8 }),
+              (0, i.jsx)(g.Dx, {
+                children: b.Z.Messages.GIFT_CODE_AUTH_VERIFICATION_TITLE.format(
+                  { username: e.username },
+                ),
+              }),
+              (0, i.jsx)(g.DK, {
+                className: D.marginTop20,
+                children:
+                  b.Z.Messages.GIFT_CODE_AUTH_HELP_TEXT_VERIFICATION_REQUIRED,
+              }),
+              (0, i.jsx)(g.zx, {
+                disabled: t,
+                className: D.marginTop40,
+                onClick: this.handleResendVerification,
+                children: t
+                  ? b.Z.Messages.GIFT_CODE_AUTH_VERIFICATION_SENT
+                  : b.Z.Messages.RESEND_VERIFICATION_EMAIL,
+              }),
+              (0, i.jsx)(g.zx, {
+                look: g.zx.Looks.LINK,
+                color: g.zx.Colors.LINK,
+                onClick: this.refreshUser,
+                className: D.marginTop8,
+                children: b.Z.Messages.GIFT_CODE_AUTH_CHECK_VERIFICATION_AGAIN,
+              }),
+            ],
+          });
+        }
+        renderAuthenticated(e, t) {
+          let n = this.getErrorMessage(e);
+          return (0, i.jsxs)(g.ZP, {
+            children: [
+              (0, i.jsx)(O.Z, { giftCode: e }),
+              (0, i.jsx)(g.zx, {
+                disabled: null != n,
+                className: D.marginTop40,
+                onClick: this.handleAccept,
+                children: b.Z.Messages.GIFT_CODE_AUTH_ACCEPT,
+              }),
+              null != n
+                ? (0, i.jsx)(g.DK, { className: D.marginTop20, children: n })
+                : (0, i.jsx)(g.i_, {
+                    className: D.marginTop20,
+                    children: b.Z.Messages.GIFT_CODE_AUTH_LOGGED_IN_AS.format({
+                      userTag: S.ZP.getUserTag(t),
+                      onLogoutClick: this.handleLogout,
+                    }),
+                  }),
+            ],
+          });
+        }
+        render() {
+          let {
+              nativeAppState: e,
+              sku: t,
+              authenticated: n,
+              giftCode: s,
+              isResolved: r,
+              isAccepting: a,
+              transitionTo: l,
+              location: o,
+            } = this.props,
+            { fetchingUser: c, continueOnWeb: u } = this.state;
+          if (e === Z.kEZ.OPEN && !u) return this.renderAppOpened();
+          if (e === Z.kEZ.OPENING)
+            return this.renderSpinner(b.Z.Messages.APP_OPENING);
+          if (a)
+            return this.renderSpinner(b.Z.Messages.GIFT_CODE_AUTH_ACCEPTING);
+          if (null == s)
+            return r
+              ? this.renderExpiredInvite()
+              : this.renderSpinner(b.Z.Messages.GIFT_CODE_AUTH_RESOLVING);
+          if (r) {
+            if (n) {
+              let e = this.state.currentUser;
+              return c || null == e
+                ? this.renderSpinner(b.Z.Messages.GIFT_CODE_AUTH_FETCHING_USER)
+                : this.requiresVerification && null != e
+                  ? this.renderVerification(e)
+                  : this.renderAuthenticated(s, e);
+            }
+            return "login" === this.getMode()
+              ? (0, i.jsx)(R.Z, {
+                  giftCodeSKU: t,
+                  giftCode: s,
+                  transitionTo: l,
+                  location: o,
+                })
+              : (0, i.jsx)(v.Z, {
+                  giftCodeSKU: t,
+                  giftCode: s,
+                  transitionTo: l,
+                  location: o,
+                });
+          }
+          return null;
+        }
+        constructor(...e) {
+          super(...e),
+            L(this, "state", {
+              error: null,
+              continueOnWeb: !1,
+              currentUser: null,
+              sentVerification: !1,
+              fetchingUser: !1,
+            }),
+            L(this, "refreshUser", () => {
+              this.setState({ fetchingUser: !0 }),
+                E.k({ withAnalyticsToken: !0 })
+                  .then((e) =>
+                    this.setState({ currentUser: e, fetchingUser: !1 }),
+                  )
+                  .catch(() => this.setState({ fetchingUser: !1 }));
+            }),
+            L(this, "handleLogout", () => {
+              let e = this.props.match.params.giftCode;
+              d.Z.logout(Z.Z5c.GIFT_CODE_LOGIN(e));
+            }),
+            L(this, "handleResendVerification", () => {
+              d.Z.verifyResend(), this.setState({ sentVerification: !0 });
+            }),
+            L(this, "handleAccept", async () => {
+              let { transitionTo: e, giftCode: t } = this.props;
+              if (null == t)
+                throw Error("Trying to accept gift before resolve");
+              let n = this.getCode();
+              try {
+                this.setState({ error: null }),
+                  await h.Z.redeemGiftCode({ code: n }),
+                  e(Z.Z5c.APP);
+              } catch (e) {
+                this.setState({ error: e });
+              }
+            }),
+            L(this, "resolveGiftCode", () => {
+              let { transitionTo: e } = this.props,
+                t = this.getCode();
+              h.Z.resolveGiftCode(t, !0, !0).then((n) => {
+                null != n &&
+                  null != n.giftCode.promotion &&
+                  e(Z.Z5c.BILLING_PROMOTION_REDEMPTION(t));
+              });
+            });
+        }
+      }
+      t.Z = c.ZP.connectStores([N.Z, T.Z, m.default, A.Z, I.Z, p.Z], (e) => {
+        let t = e.match.params.giftCode,
+          n = N.Z.get(t),
+          s = null != n ? A.Z.get(n.skuId) : null;
+        return {
+          giftCode: n,
+          sku: s,
+          libraryApplication:
+            null != s && (null == n ? void 0 : n.entitlementBranches) != null
+              ? x.z2(n.entitlementBranches, s, T.Z)
+              : null,
+          authenticated: m.default.isAuthenticated(),
+          defaultRoute: I.Z.defaultRoute,
+          isResolved: N.Z.getIsResolved(t),
+          isAccepting: N.Z.getIsAccepting(t),
+          libraryApplicationsFetched: T.Z.fetched,
+          nativeAppState: p.Z.getState(t),
+        };
+      })(M);
+    },
+    481153: function (e, t, n) {
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(442837),
+        o = n(481060),
+        c = n(812206),
+        u = n(388905),
+        d = n(925329),
+        h = n(479446),
+        _ = n(981632),
+        E = n(594174),
+        g = n(509545),
+        p = n(55563),
+        f = n(296848),
+        m = n(981631),
+        I = n(474936),
+        N = n(689938),
+        T = n(295242),
+        A = n(739017),
+        x = n(113207);
+      t.Z = l.ZP.connectStores([p.Z, c.Z, g.Z, E.default], (e) => {
+        let { giftCode: t } = e,
+          n = p.Z.get(t.skuId),
+          { subscriptionPlanId: s } = t;
+        return {
+          sku: n,
+          subscriptionPlan: null != s ? (0, f.oE)(s) : null,
+          application: c.Z.getApplication(n.applicationId),
+          gifter: E.default.getUser(t.userId),
+        };
+      })((e) => {
+        let {
+            error: t,
+            giftCode: n,
+            gifter: i,
+            sku: l,
+            application: c,
+            subscriptionPlan: E,
+          } = e,
+          g =
+            null == i
+              ? N.Z.Messages.GIFT_CODE_AUTH_GIFTED
+              : N.Z.Messages.GIFT_CODE_AUTH_GIFTED_BY.format({
+                  username: i.username,
+                }),
+          p = l.name;
+        return (
+          null != E &&
+            (p = (
+              E.interval === I.rV.MONTH
+                ? N.Z.Messages.GIFT_CODE_AUTH_GIFTED_SUBSCRIPTION_MONTHLY
+                : N.Z.Messages.GIFT_CODE_AUTH_GIFTED_SUBSCRIPTION_YEARLY
+            ).format({ skuName: l.name, intervalCount: E.intervalCount })),
+          (0, s.jsxs)(r.Fragment, {
+            children: [
+              null != n.giftStyle
+                ? (0, s.jsx)(_.Z, {
+                    defaultAnimationState: h.SR.LOOP,
+                    giftStyle: n.giftStyle,
+                    className: T.seasonalIcon,
+                  })
+                : (0, s.jsx)(u.qE, {
+                    src: null != i ? i.getAvatarURL(void 0, 100) : null,
+                    size: o.AvatarSizes.DEPRECATED_SIZE_100,
+                    className: x.marginBottom20,
+                  }),
+              null != t
+                ? (0, s.jsxs)(r.Fragment, {
+                    children: [
+                      (0, s.jsx)(u.DK, {
+                        children: N.Z.Messages.INVITE_MODAL_ERROR_TITLE,
+                      }),
+                      (0, s.jsx)(u.Dx, { children: t }),
+                    ],
+                  })
+                : (0, s.jsxs)(r.Fragment, {
+                    children: [
+                      (0, s.jsx)(u.DK, { children: g }),
+                      (0, s.jsxs)(u.Dx, {
+                        className: a()(x.marginTop8, A.flexCenter),
+                        children: [
+                          l.productLine !== m.POd.COLLECTIBLES &&
+                            (0, s.jsx)(d.Z, {
+                              size: d.Z.Sizes.MEDIUM,
+                              className: T.applicationIcon,
+                              game: c,
+                              skuId: l.id,
+                            }),
+                          p,
+                        ],
+                      }),
+                    ],
+                  }),
+            ],
+          })
+        );
+      });
+    },
+    236446: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return j;
+        },
+      }),
+        n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(512722),
+        o = n.n(l),
+        c = n(442837),
+        u = n(388905),
+        d = n(362762),
+        h = n(409059),
+        _ = n(659900),
+        E = n(962220),
+        g = n(473855),
+        p = n(306453),
+        f = n(929809),
+        m = n(108427),
+        I = n(390885),
+        N = n(314897),
+        T = n(896797),
+        A = n(954824),
+        x = n(781428),
+        C = n(163671),
+        S = n(423527),
+        O = n(981631),
+        R = n(58346),
+        v = n(701476),
+        Z = n(630724),
+        b = n(436620),
+        D = n(689938),
+        L = n(60561),
+        M = n(113207);
+      c.ZP.initialize();
+      class P extends r.PureComponent {
+        componentDidMount() {
+          (0, m.e)("guildTemplate"),
+            !b.KO &&
+              A.Z.launch(
+                "discord://" + O.Z5c.GUILD_TEMPLATE(this.props.code),
+                () => void 0,
+              );
+        }
+        componentDidUpdate(e) {
+          this.props.code !== e.code &&
+            E.Z.resolveGuildTemplate(this.props.code);
+        }
+        renderButton(e, t) {
+          return b.KO
+            ? (0, s.jsx)(u.zx, {
+                className: M.marginTop40,
+                onClick: t,
+                children: e,
+              })
+            : (0, s.jsx)(u.v6, { className: M.marginTop40 });
+        }
+        renderSpinner(e) {
+          return (0, s.jsxs)(u.ZP, {
+            children: [(0, s.jsx)(u.Dx, { children: e }), (0, s.jsx)(u.Hh, {})],
+          });
+        }
+        renderInvalidGuildTemplate() {
+          return (0, s.jsxs)(u.ZP, {
+            children: [
+              (0, s.jsx)(u.Ee, { src: n(167969), className: M.marginBottom8 }),
+              (0, s.jsx)(u.Dx, {
+                className: a()(M.marginTop8, M.marginBottom8),
+                children: D.Z.Messages.GUILD_TEMPLATE_INVALID_TITLE,
+              }),
+              (0, s.jsx)(u.DK, {
+                children: D.Z.Messages.GUILD_TEMPLATE_INVALID_SUBTITLE,
+              }),
+              this.renderButton(
+                D.Z.Messages.CONTINUE_TO_WEBAPP,
+                this.handleContinue,
+              ),
+            ],
+          });
+        }
+        renderAppOpened() {
+          return (0, s.jsxs)(u.ZP, {
+            children: [
+              (0, s.jsx)(u.Dx, {
+                className: M.marginBottom8,
+                children: D.Z.Messages.APP_OPENED_TITLE,
+              }),
+              (0, s.jsx)(u.DK, { children: D.Z.Messages.APP_OPENED_BODY }),
+              this.renderButton(
+                D.Z.Messages.CONTINUE_TO_WEBAPP,
+                this.handleContinue,
+              ),
+            ],
+          });
+        }
+        renderAuthenticatedOrDownload() {
+          let { guildTemplate: e } = this.props;
+          return (o()(null != e, "guild template must not be null"),
+          e.state === R.Rj.RESOLVING)
+            ? (0, s.jsx)(u.ZP, {
+                className: L.authBox,
+                children: (0, s.jsx)(p.Z, { guildTemplate: e }),
+              })
+            : (0, s.jsx)(y, { guildTemplate: e });
+        }
+        renderContinue() {
+          return (0, s.jsxs)(u.ZP, {
+            children: [
+              (0, s.jsx)(u.Dx, { children: D.Z.Messages.APP_NOT_OPENED }),
+              this.renderButton(
+                D.Z.Messages.CONTINUE_TO_WEBAPP,
+                this.handleContinue,
+              ),
+            ],
+          });
+        }
+        render() {
+          let {
+            guildTemplate: e,
+            nativeAppState: t,
+            authenticated: n,
+            transitionTo: r,
+            location: i,
+          } = this.props;
+          if (null == e) return this.renderSpinner(D.Z.Messages.LOADING);
+          if (t === O.kEZ.OPEN) return this.renderAppOpened();
+          if (t === O.kEZ.OPENING)
+            return this.renderSpinner(D.Z.Messages.APP_OPENING);
+          switch (e.state) {
+            case R.Rj.RESOLVING:
+              return this.renderSpinner(D.Z.Messages.APP_OPENING);
+            case R.Rj.RESOLVED:
+              if (n || !b.KO) return this.renderAuthenticatedOrDownload();
+              if (this.props.login)
+                return (0, s.jsx)(x.Z, {
+                  guildTemplate: e,
+                  transitionTo: r,
+                  location: i,
+                });
+              else
+                return (0, s.jsx)(S.Z, {
+                  guildTemplate: e,
+                  transitionTo: r,
+                  location: i,
+                  onRegister: () => {
+                    (0, f.c)(v.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE),
+                      I.Z.flowStart(
+                        Z.MK.ORGANIC_GUILD_TEMPLATES,
+                        Z.EW.NUF_STARTED,
+                      );
+                  },
+                });
+            case R.Rj.EXPIRED:
+              return this.renderInvalidGuildTemplate();
+            default:
+              return null;
+          }
+        }
+        constructor(...e) {
+          var t, n, s;
+          super(...e),
+            (t = this),
+            (n = "handleContinue"),
+            (s = () => {
+              let { defaultRoute: e, transitionTo: t } = this.props;
+              t(e);
+            }),
+            n in t
+              ? Object.defineProperty(t, n, {
+                  value: s,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0,
+                })
+              : (t[n] = s);
+        }
+      }
+      function j(e) {
+        let t = {
+          guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
+          nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
+          authenticated: (0, c.e7)([N.default], () =>
+            N.default.isAuthenticated(),
+          ),
+          defaultRoute: (0, c.e7)([T.Z], () => T.Z.defaultRoute),
+        };
+        return (0, s.jsx)(P, { ...e, ...t });
+      }
+      function y(e) {
+        let { guildTemplate: t } = e,
+          { form: n, handleSubmit: r } = (0, _.Z)(t, !1);
+        I.Z.flowStep(Z.MK.ORGANIC_GUILD_TEMPLATES, Z.X2.GUILD_CREATE);
+        let i = (0, s.jsxs)(s.Fragment, {
+          children: [
+            (0, s.jsx)(u.Dx, {
+              className: L.header,
+              children: D.Z.Messages.GUILD_TEMPLATE_SETUP_DISCORD,
+            }),
+            n,
+            (0, s.jsx)(u.zx, {
+              className: L.createButton,
+              onClick: r,
+              children: D.Z.Messages.GUILD_TEMPLATE_CREATE_DISCORD,
+            }),
+          ],
+        });
+        return (0, s.jsx)(C.Z, {
+          className: L.authBox,
+          children: () => [
+            (0, s.jsx)(g.Z, { guildTemplate: t }, "template"),
+            (0, s.jsx)(
+              "div",
+              { className: L.formContainer, children: i },
+              "contents",
+            ),
+          ],
+        });
+      }
+    },
+    9325: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return N;
+        },
+      });
+      var s = n(735250),
+        r = n(470079),
+        i = n(442837),
+        a = n(481060),
+        l = n(388905),
+        o = n(409059),
+        c = n(962220),
+        u = n(306453),
+        d = n(108427),
+        h = n(314897),
+        _ = n(626135),
+        E = n(587444),
+        g = n(981631),
+        p = n(58346),
+        f = n(689938),
+        m = n(113207);
+      function I(e, t, n) {
+        e.preventDefault(),
+          _.default.track(g.rMx.GUILD_TEMPLATE_APP_OPENED, {
+            guild_template_code: t,
+            guild_template_name: n.name,
+            guild_template_description: n.description,
+            guild_template_guild_id: n.sourceGuildId,
+          });
+        let s = h.default.getFingerprint(),
+          r = null != s ? s : h.default.getId();
+        c.Z.openMobileApp(n.state === p.Rj.RESOLVED ? t : void 0, r);
+      }
+      function N(e) {
+        let { code: t } = e,
+          n = (0, i.e7)([o.Z], () => o.Z.getGuildTemplate(t));
+        return (r.useEffect(() => {
+          (0, d.e)("guild_template_mobile");
+        }, []),
+        null == n || n.state === p.Rj.RESOLVING)
+          ? (0, s.jsx)(l.ZP, { children: (0, s.jsx)(a.Spinner, {}) })
+          : n.state === p.Rj.RESOLVED
+            ? (0, s.jsxs)(l.ZP, {
+                children: [
+                  (0, s.jsx)(u.Z, { guildTemplate: n, tall: !0 }),
+                  (0, s.jsx)(l.zx, {
+                    onClick: (e) => I(e, t, n),
+                    className: m.marginTop20,
+                    children: f.Z.Messages.GUILD_TEMPLATE_OPEN,
+                  }),
+                ],
+              })
+            : (0, s.jsx)(E.Z, {
+                text: f.Z.Messages.GUILD_TEMPLATE_MOBILE_INVALID_ERROR,
+                buttonCta: f.Z.Messages.GUILD_TEMPLATE_MOBILE_INVALID_CTA,
+                onClick: (e) => I(e, t, n),
+              });
+      }
+      i.ZP.initialize();
+    },
+    587444: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return p;
+        },
+        u: function () {
+          return g;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(120356),
+        i = n.n(r),
+        a = n(692547),
+        l = n(481060),
+        o = n(388905),
+        c = n(600164),
+        u = n(981631),
+        d = n(689938),
+        h = n(684190),
+        _ = n(739017),
+        E = n(113207);
+      function g(e) {
+        let { text: t, buttonCta: r, onClick: u } = e;
+        return (0, s.jsxs)(s.Fragment, {
+          children: [
+            (0, s.jsx)(o.Ee, { src: n(689411) }),
+            (0, s.jsx)(o.Dx, {
+              className: i()(E.marginTop20, E.marginBottom8, _.flexCenter),
+              children: d.Z.Messages.DISCORD_DESC_SHORT,
+            }),
+            (0, s.jsx)(o.DK, {
+              className: E.marginBottom40,
+              children: d.Z.Messages.DISCORD_DESC_LONG,
+            }),
+            (0, s.jsxs)(l.Card, {
+              className: h.card,
+              type: l.Card.Types.CUSTOM,
+              children: [
+                (0, s.jsx)("img", {
+                  alt: "",
+                  className: h.cardAccentLeft,
+                  src: n(70519),
+                }),
+                (0, s.jsx)("img", {
+                  alt: "",
+                  className: h.cardAccentRight,
+                  src: n(806848),
+                }),
+                (0, s.jsxs)(c.Z, {
+                  className: h.cardContents,
+                  direction: c.Z.Direction.VERTICAL,
+                  align: c.Z.Align.STRETCH,
+                  grow: 0,
+                  children: [
+                    (0, s.jsx)(l.Text, {
+                      tag: "strong",
+                      className: h.buttonTitle,
+                      variant: "text-md/normal",
+                      style: { color: a.Z.unsafe_rawColors.PRIMARY_300.css },
+                      children: t,
+                    }),
+                    (0, s.jsx)(o.zx, {
+                      className: h.button,
+                      onClick: u,
+                      children: r,
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        });
+      }
+      function p(e) {
+        let { text: t, buttonCta: n, theme: r = u.BRd.DARK, onClick: i } = e;
+        return (0, s.jsx)(o.ZP, {
+          theme: r,
+          children: (0, s.jsx)(g, { text: t, buttonCta: n, onClick: i }),
+        });
+      }
+    },
+    344295: function (e, t, n) {
+      n(789020), n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(533800),
+        o = n(756647),
+        c = n(442837),
+        u = n(298444),
+        d = n(447543),
+        h = n(881052),
+        _ = n(899370),
+        E = n(267394),
+        g = n(388905),
+        p = n(639946),
+        f = n(792766),
+        m = n(362762),
+        I = n(978684),
+        N = n(264229),
+        T = n(929809),
+        A = n(703656),
+        x = n(108427),
+        C = n(314897),
+        S = n(896797),
+        O = n(701190),
+        R = n(626135),
+        v = n(630388),
+        Z = n(63063),
+        b = n(782605),
+        D = n(954824),
+        L = n(588705),
+        M = n(781428),
+        P = n(423527),
+        j = n(981631),
+        y = n(188785),
+        G = n(701476),
+        B = n(436620),
+        U = n(689938),
+        k = n(113207);
+      function F(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      c.ZP.initialize();
+      let w = "Accept Invite Page",
+        H = { REGISTER: "register", LOGIN: "login" };
+      async function V(e) {
+        let { invite: t } = await d.Z.resolveInvite(e, w);
+        if (null != t) (0, E.A)(t);
+      }
+      class z extends r.PureComponent {
+        componentDidMount() {
+          let { isUnderage: e, login: t, inviteKey: n } = this.props;
+          if (
+            (R.default.track(
+              j.rMx.INVITE_VIEWED,
+              { invite_code: n },
+              { flush: !0 },
+            ),
+            (0, x.e)("invite"),
+            !B.KO)
+          ) {
+            let e = this.getInviteKey();
+            D.Z.launch("discord://" + j.Z5c.INVITE(e), () => void 0);
+          }
+          if (!t && e) {
+            let e = this.getInviteKey(),
+              { baseCode: t } = (0, N.fU)(e);
+            (0, A.dL)(j.Z5c.INVITE_LOGIN(t));
+          }
+        }
+        componentDidUpdate(e) {
+          let {
+              invite: t,
+              nativeAppState: n,
+              authenticated: s,
+              transitionTo: r,
+            } = this.props,
+            i = this.getInviteKey();
+          if (i !== this.getInviteKey(e)) V(i);
+          else if (t.state === j.r2o.APP_NOT_OPENED) this.handleContinue();
+          else if (this.getMode() === H.LOGIN && s !== e.authenticated && s) {
+            let e = C.default.getFingerprint();
+            if (null != e) {
+              let t = (0, o.s)(e);
+              this.track(j.rMx.INVITE_LOGIN_SUCCESSFUL, !0, {
+                prev_user_id: t,
+              });
+            }
+            d.Z.acceptInvite({
+              inviteKey: i,
+              context: this.getAcceptInviteContext(w),
+              skipOnboarding: !0,
+              callback: this.handleContinue,
+            });
+          }
+          if (
+            (n !== e.nativeAppState &&
+              n === j.kEZ.OPEN &&
+              this.track(j.rMx.INVITE_APP_INVOKED, !1),
+            this.getMode() === H.REGISTER && s && !e.authenticated)
+          ) {
+            let { channel: e } = t;
+            null != e &&
+              ((0, T.c)(G.M5.INVITE_UNCLAIMED),
+              null != t.guild
+                ? r(j.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+                : d.Z.transitionToInvite(t, r));
+          }
+        }
+        getInviteKey() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : this.props;
+          return e.inviteKey;
+        }
+        getMode() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : this.props;
+          return y.a ? H.REGISTER : e.login ? H.LOGIN : H.REGISTER;
+        }
+        track(e, t) {
+          let n =
+              arguments.length > 2 && void 0 !== arguments[2]
+                ? arguments[2]
+                : null,
+            { invite: s } = this.props,
+            r = this.getInviteKey(),
+            i = (0, N.jX)(r),
+            a = t
+              ? {
+                  guild_id: null != s.guild ? s.guild.id : null,
+                  channel_id: null != s.channel ? s.channel.id : null,
+                  inviter_id: null != s.inviter ? s.inviter.id : null,
+                  invite_code: i,
+                }
+              : { invite_code: i };
+          R.default.track(e, { ...a, ...n });
+        }
+        renderSpinner(e) {
+          return (0, s.jsxs)(g.ZP, {
+            children: [(0, s.jsx)(g.Dx, { children: e }), (0, s.jsx)(g.Hh, {})],
+          });
+        }
+        renderInvalidInvite() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+          return (0, s.jsxs)(g.ZP, {
+            children: [
+              (0, s.jsx)(g.Ee, { src: n(167969), className: k.marginBottom8 }),
+              (0, s.jsx)(g.Dx, {
+                className: a()(k.marginTop8, k.marginBottom8),
+                children: U.Z.Messages.AUTH_INVALID_INVITE_TITLE,
+              }),
+              (0, s.jsx)(g.DK, {
+                children: e
+                  ? U.Z.Messages.AUTH_BANNED_INVITE_BODY
+                  : U.Z.Messages.AUTH_INVALID_INVITE_BODY,
+              }),
+              this.renderButton(U.Z.Messages.CONTINUE_TO_WEBAPP),
+              (0, s.jsx)(g.zx, {
+                onClick: () =>
+                  window.open(
+                    Z.Z.getArticleURL(j.BhN.INVALID_INVITES),
+                    "_blank",
+                  ),
+                look: g.zx.Looks.LINK,
+                color: g.zx.Colors.LINK,
+                className: k.marginTop8,
+                children: U.Z.Messages.AUTH_INVALID_INVITE_TIP,
+              }),
+            ],
+          });
+        }
+        renderErrorInvite() {
+          var e, t;
+          return (0, s.jsxs)(g.ZP, {
+            children: [
+              (0, s.jsx)(L.Z, {
+                invite: this.props.invite,
+                error:
+                  null === (e = this.state.error) || void 0 === e
+                    ? void 0
+                    : e.message,
+              }),
+              (null === (t = this.state.error) || void 0 === t
+                ? void 0
+                : t.code) === j.evJ.INVALID_CANNOT_FRIEND_SELF
+                ? this.renderButton(U.Z.Messages.CONTINUE_TO_WEBAPP)
+                : this.renderButton(
+                    U.Z.Messages.INSTANT_INVITE_ACCEPT,
+                    this.handleAccept,
+                  ),
+            ],
+          });
+        }
+        renderExpiredInvite() {
+          return this.renderInvalidInvite(!1);
+        }
+        renderBannedInvite() {
+          return this.renderInvalidInvite(!0);
+        }
+        renderAppOpened(e) {
+          let t = null != e ? e : this.handleContinue;
+          return (0, s.jsxs)(g.ZP, {
+            children: [
+              (0, s.jsx)(g.Dx, {
+                className: k.marginBottom8,
+                children: U.Z.Messages.APP_OPENED_TITLE,
+              }),
+              (0, s.jsx)(g.DK, { children: U.Z.Messages.APP_OPENED_BODY }),
+              this.renderButton(U.Z.Messages.CONTINUE_TO_WEBAPP, () => t()),
+            ],
+          });
+        }
+        renderAuthenticatedHeader() {
+          let { invite: e } = this.props;
+          return null != e.stage_instance && null != e.guild
+            ? (0, s.jsx)(f.Z, {
+                stageInstance: e.stage_instance,
+                guild: e.guild,
+              })
+            : null != e.guild_scheduled_event
+              ? (0, s.jsx)(p.r, {
+                  channel: e.channel,
+                  guildScheduledEvent: e.guild_scheduled_event,
+                })
+              : (0, s.jsx)(L.Z, { invite: e });
+        }
+        renderAuthenicatedFooter() {
+          let { invite: e } = this.props;
+          return (null != e.stage_instance ||
+            null != e.guild_scheduled_event) &&
+            null != e.guild
+            ? (0, s.jsx)(g.ZP, {
+                className: k.marginTop20,
+                children: (0, s.jsx)(f.y, {
+                  guild: e.guild,
+                  onlineCount: e.approximate_presence_count,
+                }),
+              })
+            : null;
+        }
+        renderAuthenticatedOrDownload() {
+          let { invite: e } = this.props,
+            t =
+              null != e.stage_instance
+                ? U.Z.Messages.INSTANT_INVITE_ACCEPT_STAGE
+                : U.Z.Messages.INSTANT_INVITE_ACCEPT;
+          return (0, s.jsxs)("div", {
+            children: [
+              (0, s.jsxs)(g.ZP, {
+                children: [
+                  this.renderAuthenticatedHeader(),
+                  this.renderButton(t, this.handleAccept),
+                ],
+              }),
+              this.renderAuthenicatedFooter(),
+            ],
+          });
+        }
+        renderContinue() {
+          return (0, s.jsxs)(g.ZP, {
+            children: [
+              (0, s.jsx)(g.Dx, { children: U.Z.Messages.APP_NOT_OPENED }),
+              this.renderButton(U.Z.Messages.CONTINUE_TO_WEBAPP),
+            ],
+          });
+        }
+        render() {
+          let {
+            invite: e,
+            nativeAppState: t,
+            authenticated: n,
+            transitionTo: r,
+            location: i,
+          } = this.props;
+          if (t === j.kEZ.OPEN) return this.renderAppOpened();
+          switch (e.state) {
+            case j.r2o.APP_OPENED:
+              return this.renderAppOpened();
+            case j.r2o.APP_NOT_OPENED:
+              return this.renderContinue();
+            case j.r2o.RESOLVING:
+              return y.a
+                ? this.renderSpinner(U.Z.Messages.DEFAULT_INPUT_PLACEHOLDER)
+                : this.renderSpinner(U.Z.Messages.APP_OPENING);
+            case j.r2o.APP_OPENING:
+              return this.renderSpinner(U.Z.Messages.APP_OPENING);
+            case j.r2o.RESOLVED:
+              var a;
+              if (
+                n &&
+                (0, v.yE)(
+                  null !== (a = e.flags) && void 0 !== a ? a : 0,
+                  l.$.IS_GUEST_INVITE,
+                )
+              )
+                return (
+                  d.Z.openApp(e.code),
+                  u.x.set(I.J, e.code),
+                  this.renderAppOpened(() => r(j.Z5c.APP))
+                );
+              if (n || !B.KO) return this.renderAuthenticatedOrDownload();
+              else if (this.getMode() === H.LOGIN)
+                return (0, s.jsx)(M.Z, {
+                  invite: e,
+                  transitionTo: r,
+                  location: i,
+                });
+              else
+                return (0, s.jsx)(P.Z, {
+                  invite: e,
+                  onLoginStart: () => this.track(j.rMx.INVITE_LOGIN, !0),
+                  location: i,
+                  transitionTo: r,
+                });
+            case j.r2o.ACCEPTING:
+              return this.renderSpinner(U.Z.Messages.INSTANT_INVITE_ACCEPTING);
+            case j.r2o.EXPIRED:
+              return this.renderExpiredInvite();
+            case j.r2o.BANNED:
+              return this.renderBannedInvite();
+            case j.r2o.ERROR:
+              return this.renderErrorInvite();
+            case j.r2o.ACCEPTED:
+            default:
+              return null;
+          }
+        }
+        constructor(...e) {
+          var t;
+          super(...e),
+            (t = this),
+            F(this, "state", { error: null }),
+            F(this, "getAcceptInviteContext", (e) =>
+              d.Z.getInviteContext(e, this.props.invite),
+            ),
+            F(this, "handleContinue", (e) => {
+              let { invite: t, transitionTo: n } = this.props;
+              if (
+                null != t.channel ||
+                (null == e ? void 0 : e.channel) != null
+              ) {
+                var s;
+                (null === (s = t.guild) || void 0 === s ? void 0 : s.id) != null
+                  ? n(j.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+                  : d.Z.transitionToInvite(null != e ? e : t, n);
+              }
+            }),
+            F(this, "handleAccept", () => {
+              this.setState({ error: null });
+              let e = this.getInviteKey();
+              d.Z.acceptInvite({
+                inviteKey: e,
+                context: this.getAcceptInviteContext(w),
+                skipOnboarding: !0,
+                callback: (t) => {
+                  (0, E.A)(t),
+                    null != t.channel && d.Z.openApp(e, t.channel.id);
+                },
+              }).catch((e) => {
+                if (e instanceof h.yZ || e instanceof h.Hx) {
+                  let t = (0, b.O)(e.code);
+                  this.setState({ error: { code: e.code, message: t } });
+                } else
+                  this.setState({
+                    error: {
+                      code: e.code,
+                      message: U.Z.Messages.INVITE_MODAL_ERROR_DEFAULT,
+                    },
+                  });
+              });
+            }),
+            F(this, "handleDefaultTransition", () => {
+              let { defaultRoute: e, transitionTo: t } = this.props;
+              t(e);
+            }),
+            F(this, "renderButton", function (e) {
+              let n =
+                  arguments.length > 1 && void 0 !== arguments[1]
+                    ? arguments[1]
+                    : t.handleDefaultTransition,
+                { invite: r } = t.props,
+                i = null != r.stage_instance || null != r.guild_scheduled_event;
+              return B.KO
+                ? (0, s.jsx)(g.zx, {
+                    className: i ? k.marginTop20 : k.marginTop40,
+                    onClick: n,
+                    color: i ? g.zx.Colors.GREEN : g.zx.Colors.BRAND,
+                    children: e,
+                  })
+                : (0, s.jsx)(g.v6, { className: k.marginTop40 });
+            });
+        }
+      }
+      t.Z = c.ZP.connectStores([O.Z, S.Z, C.default, m.Z, _.Z], (e) => {
+        var t;
+        let { inviteKey: n } = e;
+        return {
+          invite: null !== (t = O.Z.getInvite(n)) && void 0 !== t ? t : {},
+          nativeAppState: m.Z.getState(n),
+          authenticated: C.default.isAuthenticated(),
+          defaultRoute: S.Z.defaultRoute,
+          isUnderage: _.Z.isUnderageAnonymous(),
+        };
+      })(z);
+    },
+    781428: function (e, t, n) {
+      n.d(t, {
+        q: function () {
+          return Y;
+        },
+      });
+      var s,
+        r = n(735250),
+        i = n(470079),
+        a = n(615231),
+        l = n(120356),
+        o = n.n(l),
+        c = n(593473),
+        u = n(873546),
+        d = n(442837),
+        h = n(481060),
+        _ = n(570140),
+        E = n(893776),
+        g = n(899742),
+        p = n(579806),
+        f = n(743142),
+        m = n(388905),
+        I = n(379760),
+        N = n(600164),
+        T = n(100159),
+        A = n(473855),
+        x = n(124860),
+        C = n(86779),
+        S = n(726745),
+        O = n(913583),
+        R = n(144114),
+        v = n(541692),
+        Z = n(952802),
+        b = n(108427),
+        D = n(365007),
+        L = n(314897),
+        M = n(117240),
+        P = n(896797),
+        j = n(626135),
+        y = n(585483),
+        G = n(358085),
+        B = n(481153),
+        U = n(588705),
+        k = n(494526),
+        F = n(163671),
+        w = n(981631),
+        H = n(58346),
+        V = n(689938),
+        z = n(970314),
+        K = n(113207);
+      function W(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      function Y() {
+        return (0, r.jsx)(m.ZP, { children: (0, r.jsx)(h.Spinner, {}) });
+      }
+      class q extends (s = i.PureComponent) {
+        static getDerivedStateFromProps(e) {
+          let { handoffAvailable: t, authenticated: n } = e;
+          return t || n ? null : { checkingHandoff: !1 };
+        }
+        componentDidMount() {
+          let {
+            handoffAvailable: e,
+            authenticated: t,
+            giftCodeSKU: n,
+            invite: s,
+            location: r,
+          } = this.props;
+          e && !t ? (0, g.is)() : t && this.loginOrSSO(t, r, !0),
+            j.default.track(
+              w.rMx.LOGIN_VIEWED,
+              {
+                location:
+                  null != s ? "Invite Login Page" : "Non-Invite Login Page",
+                login_source: this.loginSource,
+                authenticated: t,
+                ...(null != n ? (0, T.Z)(n, !1, !1) : {}),
+              },
+              { flush: !0 },
+            ),
+            null == p.Z &&
+              null != window.PublicKeyCredential &&
+              null != PublicKeyCredential.isConditionalMediationAvailable &&
+              PublicKeyCredential.isConditionalMediationAvailable().then(
+                (e) => {
+                  e &&
+                    (0, D.us)()
+                      .then((e) => {
+                        let { challenge: t, ticket: n } = e,
+                          s = (0, a.wz)(JSON.parse(t));
+                        return (
+                          (s.signal =
+                            this.state.conditionalMediationAbortController.signal),
+                          (0, a.U2)(s)
+                            .then(
+                              (e) => (
+                                _.Z.dispatch({ type: "PASSWORDLESS_START" }),
+                                E.Z.loginWebAuthn({
+                                  ticket: n,
+                                  credential: JSON.stringify(e),
+                                  source: this.loginSource,
+                                  giftCodeSKUId: this.giftCodeSKUId,
+                                })
+                              ),
+                            )
+                            .catch((e) => {
+                              if ("AbortError" !== e.name) throw e;
+                            })
+                        );
+                      })
+                      .catch(() => {});
+                },
+              ),
+            E.Z.getLocationMetadata(),
+            (0, b.e)("login");
+        }
+        componentDidUpdate(e) {
+          let { authenticated: t, location: n } = this.props,
+            { checkingHandoff: s } = this.state;
+          if (
+            (t &&
+              !e.authenticated &&
+              !s &&
+              (this.state.conditionalMediationAbortController.abort(),
+              this.loginOrSSO(t, n)),
+            e.errors !== this.props.errors)
+          ) {
+            var r, i, a;
+            this.hasError("password")
+              ? null === (r = this.passwordRef) || void 0 === r || r.focus()
+              : this.hasError("email") || this.hasError("login")
+                ? null === (i = this.loginRef) || void 0 === i || i.focus()
+                : this.hasError("code") &&
+                  (null === (a = this.codeRef) || void 0 === a || a.focus());
+          }
+        }
+        get loginSource() {
+          let {
+            giftCode: e,
+            guildTemplate: t,
+            invite: n,
+            loginSource: s,
+            redirectTo: r,
+          } = this.props;
+          if (null != s) return s;
+          if (null != e) return "gift";
+          if (null != t) return "guild_template";
+          else if (null != n) {
+            if (null != n.guild) return "guild_invite";
+            if (null != n.channel) return "dm_invite";
+            else if (null != n.inviter) return "friend_invite";
+          }
+          return null != r ? (0, f.L)(r) : null;
+        }
+        get giftCodeSKUId() {
+          let { giftCode: e } = this.props;
+          return null != e ? e.skuId : null;
+        }
+        get canShowChooseAccount() {
+          return this.props.hasLoggedInAccounts;
+        }
+        loginOrSSO(e, t) {
+          let n =
+            arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+          if (!!e && null != t)
+            this.setState({ redirecting: !0 }),
+              n
+                ? E.Z.verifySSOToken().then(() => this.transitionSSO(t))
+                : this.transitionSSO(t);
+        }
+        transitionSSO(e) {
+          let { transitionTo: t, redirectTo: n, replaceWith: s } = this.props,
+            r = null != e ? (0, c.parse)(e.search) : {};
+          if ((delete r.redirect_to, null != n)) null != s ? s(n) : t(n);
+          else if (null == r.service) t(w.Z5c.APP);
+          else {
+            let e =
+                window.location.protocol +
+                window.GLOBAL_ENV.API_ENDPOINT +
+                w.ANM.SSO,
+              t = { ...r, token: L.default.getToken() };
+            window.location = "".concat(e, "?").concat((0, c.stringify)(t));
+          }
+        }
+        hasError(e) {
+          return null != this.props.errors[e];
+        }
+        renderHandOffAvailable() {
+          let { authBoxClassName: e } = this.props;
+          return (0, r.jsxs)(m.ZP, {
+            className: e,
+            children: [
+              (0, r.jsx)(m.Hh, {}),
+              (0, r.jsx)(m.Dx, {
+                className: K.marginBottom8,
+                children: V.Z.Messages.BROWSER_HANDOFF_DETECTING_TITLE,
+              }),
+              (0, r.jsx)(m.DK, {
+                children:
+                  V.Z.Messages.AUTH_BROWSER_HANDOFF_DETECTING_DESCRIPTION,
+              }),
+            ],
+          });
+        }
+        renderHandOffContinue() {
+          let { user: e, transitionTo: t, authBoxClassName: n } = this.props;
+          return null == e
+            ? null
+            : (0, r.jsxs)(m.ZP, {
+                className: n,
+                children: [
+                  (0, r.jsx)(m.qE, {
+                    src: e.getAvatarURL(void 0, 100),
+                    size: h.AvatarSizes.DEPRECATED_SIZE_100,
+                    className: K.marginBottom20,
+                  }),
+                  (0, r.jsx)(m.Dx, {
+                    className: K.marginBottom8,
+                    children: V.Z.Messages.BROWSER_HANDOFF_SUCCESS_TITLE.format(
+                      { name: e.toString() },
+                    ),
+                  }),
+                  (0, r.jsx)(m.DK, {
+                    className: K.marginBottom40,
+                    children: V.Z.Messages._BROWSER_HANDOFF_SUCCESS_BODY,
+                  }),
+                  (0, r.jsxs)(m.gO, {
+                    children: [
+                      (0, r.jsx)(m.zx, {
+                        onClick: () => t(w.Z5c.APP),
+                        className: K.marginBottom8,
+                        children:
+                          V.Z.Messages.BROWSER_HANDOFF_SUCCESS_ACTION.format({
+                            name: e.toString(),
+                          }),
+                      }),
+                      (0, r.jsx)(m.zx, {
+                        look: m.zx.Looks.LINK,
+                        color: m.zx.Colors.LINK,
+                        onClick: this.handleReset,
+                        children: V.Z.Messages.BROWSER_HANDOFF_SUCCESS_CANCEL,
+                      }),
+                    ],
+                  }),
+                ],
+              });
+        }
+        renderDisabledAccount() {
+          let { authBoxClassName: e } = this.props,
+            t = this.props.loginStatus === w.u34.ACCOUNT_DISABLED,
+            n = t
+              ? V.Z.Messages.ACCOUNT_DISABLED_TITLE
+              : V.Z.Messages.ACCOUNT_SCHEDULED_FOR_DELETION_TITLE,
+            s = t
+              ? V.Z.Messages.ACCOUNT_DISABLED_DESCRIPTION
+              : V.Z.Messages.ACCOUNT_SCHEDULED_FOR_DELETION_DESCRIPTION;
+          return (0, r.jsx)(m.ZP, {
+            tag: "form",
+            onSubmit: this.handleReset,
+            className: e,
+            children: (0, r.jsxs)(h.HeadingLevel, {
+              component: (0, r.jsx)(m.Dx, {
+                className: K.marginBottom8,
+                children: n,
+              }),
+              children: [
+                (0, r.jsx)(m.DK, { className: K.marginBottom20, children: s }),
+                (0, r.jsxs)(m.gO, {
+                  children: [
+                    (0, r.jsx)(m.zx, {
+                      color: m.zx.Colors.BRAND,
+                      type: "submit",
+                      children: V.Z.Messages._RETURN_TO_LOGIN,
+                    }),
+                    (0, r.jsx)("div", {
+                      className: o()(K.marginTop8, z.needAccount),
+                      children:
+                        V.Z.Messages.ACCOUNT_SCHEDULED_FOR_DELETION_CANCEL.format(
+                          { onClick: this.handleCancelAccountDeletion },
+                        ),
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          });
+        }
+        renderResolving() {
+          let { authBoxClassName: e, country: t } = this.props;
+          return (0, r.jsxs)(m.ZP, {
+            className: e,
+            children: [
+              (0, r.jsx)(U.R, {}),
+              (0, r.jsxs)(m.gO, {
+                className: K.marginTop20,
+                children: [
+                  (0, r.jsx)(Z.Z, {
+                    className: K.marginBottom20,
+                    alpha2: t.alpha2,
+                    countryCode: t.code.split(" ")[0],
+                    label: V.Z.Messages.FORM_LABEL_EMAIL_OR_PHONE_NUMBER,
+                    onChange: (e, t) =>
+                      this.setState({ login: e, loginPrefix: t }),
+                    setRef: this.setLoginRef,
+                    autoCapitalize: "none",
+                    autoComplete: "off",
+                    autoCorrect: "off",
+                    spellCheck: "false",
+                    value: this.state.login,
+                    autoFocus: !0,
+                    required: !0,
+                  }),
+                  (0, r.jsx)(m.II, {
+                    className: K.marginBottom20,
+                    label: V.Z.Messages.FORM_LABEL_PASSWORD,
+                    onChange: (e) => this.setState({ password: e }),
+                    type: "password",
+                    setRef: this.setPasswordRef,
+                    autoComplete: "off",
+                    spellCheck: "false",
+                    value: this.state.password,
+                    required: !0,
+                  }),
+                  (0, r.jsx)(m.zx, {
+                    className: K.marginBottom8,
+                    type: "submit",
+                    disabled: !0,
+                    children: V.Z.Messages._LOGIN,
+                  }),
+                  (0, r.jsx)(m.zx, {
+                    disabled: !0,
+                    look: m.zx.Looks.LINK,
+                    color: m.zx.Colors.LINK,
+                    children: V.Z.Messages.FORGOT_PASSWORD,
+                  }),
+                  (0, r.jsx)(m.zx, {
+                    disabled: !0,
+                    className: K.marginTop4,
+                    look: m.zx.Looks.LINK,
+                    color: m.zx.Colors.LINK,
+                    children: V.Z.Messages.NEED_ACCOUNT,
+                  }),
+                ],
+              }),
+            ],
+          });
+        }
+        renderDefaultForm(e) {
+          var t;
+          let n;
+          let {
+              invite: s,
+              giftCode: i,
+              loginStatus: a,
+              country: l,
+              showMobileWebHandoff: c,
+              disableAutofocusOnDefaultForm: u,
+            } = this.props,
+            d = !this.hasError("email") && this.hasError("password"),
+            _ = (null == s ? void 0 : s.stage_instance) != null;
+          return (
+            (n =
+              null == s || _
+                ? null != i
+                  ? (0, r.jsx)(B.Z, { giftCode: i })
+                  : (0, r.jsxs)("div", {
+                      className: z.header,
+                      children: [
+                        (0, r.jsx)(
+                          m.Dx,
+                          {
+                            className: K.marginBottom8,
+                            children: V.Z.Messages.LOGIN_TITLE,
+                          },
+                          "title",
+                        ),
+                        !1 === (0, G.isAndroidWeb)()
+                          ? (0, r.jsx)(
+                              m.DK,
+                              { children: V.Z.Messages.AUTH_LOGIN_BODY },
+                              "subtitle",
+                            )
+                          : null,
+                      ],
+                    })
+                : (0, r.jsx)(U.Z, { invite: s })),
+            (0, r.jsxs)(
+              N.Z,
+              {
+                direction: N.Z.Direction.HORIZONTAL,
+                align: N.Z.Align.CENTER,
+                children: [
+                  (0, r.jsxs)("div", {
+                    className: z.mainLoginContainer,
+                    children: [
+                      this.canShowChooseAccount &&
+                        this.state.dismissedChooseAccount &&
+                        (0, r.jsx)(m.zx, {
+                          onClick: () => {
+                            this.setState((e) => ({
+                              ...e,
+                              dismissedChooseAccount: !1,
+                            }));
+                          },
+                          look: m.zx.Looks.LINK,
+                          color: m.zx.Colors.PRIMARY,
+                          className: z.goBackButton,
+                          children: (0, r.jsxs)("div", {
+                            className: z.content,
+                            children: [
+                              (0, r.jsx)(h.ChevronSmallLeftIcon, {
+                                size: "xs",
+                                color: "currentColor",
+                                className: z.caret,
+                              }),
+                              (0, r.jsx)(h.Text, {
+                                variant: "text-md/normal",
+                                children: V.Z.Messages.AGE_GATE_GO_BACK,
+                              }),
+                            ],
+                          }),
+                        }),
+                      n,
+                      (0, r.jsx)(h.HeadingLevel, {
+                        children: (0, r.jsxs)(m.gO, {
+                          className: K.marginTop20,
+                          children: [
+                            (0, r.jsx)(Z.Z, {
+                              alpha2: l.alpha2,
+                              countryCode: l.code.split(" ")[0],
+                              className: K.marginBottom20,
+                              label:
+                                V.Z.Messages.FORM_LABEL_EMAIL_OR_PHONE_NUMBER,
+                              error:
+                                null !== (t = this.renderError("login")) &&
+                                void 0 !== t
+                                  ? t
+                                  : this.renderError("email"),
+                              onChange: (e, t) =>
+                                this.setState({ login: e, loginPrefix: t }),
+                              setRef: this.setLoginRef,
+                              autoCapitalize: "none",
+                              autoComplete: "webauthn",
+                              autoCorrect: "off",
+                              spellCheck: "false",
+                              value: this.state.login,
+                              autoFocus: !d && !c && !u,
+                              required: !0,
+                            }),
+                            (0, r.jsx)(m.II, {
+                              label: V.Z.Messages.FORM_LABEL_PASSWORD,
+                              error: this.renderError("password"),
+                              onChange: (e) => this.setState({ password: e }),
+                              name: "password",
+                              type: "password",
+                              setRef: this.setPasswordRef,
+                              autoComplete: "off",
+                              spellCheck: "false",
+                              autoFocus: d && !c && !u,
+                              value: this.state.password,
+                              required: !0,
+                            }),
+                            (0, r.jsx)(m.zx, {
+                              onClick: this.handleForgotPassword,
+                              look: m.zx.Looks.LINK,
+                              color: m.zx.Colors.LINK,
+                              className: o()(K.marginBottom20, K.marginTop4),
+                              children: V.Z.Messages.FORGOT_PASSWORD,
+                            }),
+                            (0, r.jsx)(m.zx, {
+                              type: "submit",
+                              submitting: a === w.u34.LOGGING_IN,
+                              color: _ ? m.zx.Colors.GREEN : m.zx.Colors.BRAND,
+                              className: K.marginBottom8,
+                              children: _
+                                ? V.Z.Messages._LOGIN_STAGE
+                                : V.Z.Messages._LOGIN,
+                            }),
+                            (0, r.jsxs)("div", {
+                              className: K.marginTop4,
+                              children: [
+                                (0, r.jsx)("span", {
+                                  className: z.needAccount,
+                                  children: V.Z.Messages.NEED_ACCOUNT,
+                                }),
+                                (0, r.jsx)(m.zx, {
+                                  onClick: this.handleGotoRegister,
+                                  look: m.zx.Looks.LINK,
+                                  color: m.zx.Colors.LINK,
+                                  className: z.smallRegisterLink,
+                                  children: V.Z.Messages.REGISTER,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      }),
+                    ],
+                  }),
+                  (0, r.jsx)(h.HeadingLevel, {
+                    children: e
+                      ? (0, r.jsx)(k.Z, {
+                          authTokenCallback: this.handleAuthToken,
+                          conditionalMediationAbortController:
+                            this.state.conditionalMediationAbortController,
+                        })
+                      : null,
+                  }),
+                ],
+              },
+              "form-wrapper",
+            )
+          );
+        }
+        renderDefault() {
+          let { authBoxClassName: e, showMobileWebHandoff: t } = this.props;
+          return (0, r.jsxs)("div", {
+            className: z.__invalid_pageContainer,
+            children: [
+              (0, r.jsx)(m.ZP, {
+                onSubmit: this.handleLogin,
+                tag: "form",
+                className: e,
+                expanded: !0,
+                children: this.renderDefaultForm(!0),
+              }),
+              t && (0, r.jsx)(C.Z, {}),
+            ],
+          });
+        }
+        renderGuildTemplate(e) {
+          return (0, r.jsx)(F.Z, {
+            onSubmit: this.handleLogin,
+            tag: "form",
+            className: o()(this.props.authBoxClassName, z.horizontalAuthBox),
+            children: () => [
+              (0, r.jsx)(A.Z, { guildTemplate: e }, "template"),
+              this.renderDefaultForm(!1),
+            ],
+          });
+        }
+        renderMFA() {
+          let e = {
+            ticket: this.props.mfaTicket,
+            methods: this.props.mfaMethods,
+          };
+          return (0, r.jsx)(m.ZP, {
+            style: { padding: 0 },
+            children: (0, r.jsx)(x.Cd, {
+              mfaFinish: this.handleTokenSubmitMFA,
+              mfaChallenge: e,
+              onEarlyClose: () => {
+                _.Z.dispatch({ type: "LOGIN_RESET" });
+              },
+              width: 480,
+            }),
+          });
+        }
+        renderIPAuthorization() {
+          let { authBoxClassName: e } = this.props,
+            { phoneVerifyError: t } = this.state;
+          return (0, r.jsx)(m.ZP, {
+            tag: "form",
+            className: e,
+            children: (0, r.jsx)(I.Z, {
+              title: V.Z.Messages.PHONE_IP_AUTHORIZATION_TITLE,
+              subtitle:
+                V.Z.Messages.PHONE_IP_AUTHORIZATION_SUBTITLE_RESEND.format({
+                  onResendClick: this.handleResendCode,
+                }),
+              error: t,
+              onSubmit: this.handleIPAuthorize,
+              onCancel: E.Z.loginReset,
+            }),
+          });
+        }
+        renderPasswordRecovery() {
+          let { authBoxClassName: e } = this.props,
+            { phoneVerifyError: t } = this.state;
+          return (0, r.jsx)(m.ZP, {
+            tag: "form",
+            className: e,
+            children: (0, r.jsx)(I.Z, {
+              title: V.Z.Messages.PASSWORD_RECOVERY_VERIFY_PHONE_TITLE,
+              subtitle:
+                V.Z.Messages.PASSWORD_RECOVERY_VERIFY_PHONE_SUBTITLE_RESEND.format(
+                  { onResendClick: this.handleResendCode },
+                ),
+              error: t,
+              onSubmit: this.handlePasswordReset,
+              onCancel: E.Z.loginReset,
+            }),
+          });
+        }
+        renderChooseAccount() {
+          return (0, r.jsx)(O.Z, {
+            onDismiss: () => {
+              this.setState((e) => ({ ...e, dismissedChooseAccount: !0 }));
+            },
+          });
+        }
+        render() {
+          let {
+              authenticated: e,
+              invite: t,
+              guildTemplate: n,
+              loginStatus: s,
+              handoffAvailable: i,
+            } = this.props,
+            { checkingHandoff: a, redirecting: l } = this.state;
+          if (l || a) return (0, r.jsx)(Y, {});
+          if (i) return this.renderHandOffAvailable();
+          if (e && a) return this.renderHandOffContinue();
+          switch (s) {
+            case w.u34.LOGGING_IN_MFA_SMS:
+            case w.u34.MFA_SMS_STEP:
+            case w.u34.LOGGING_IN_MFA:
+            case w.u34.MFA_STEP:
+              return this.renderMFA();
+            case w.u34.ACCOUNT_SCHEDULED_FOR_DELETION:
+            case w.u34.ACCOUNT_DISABLED:
+              return this.renderDisabledAccount();
+            case w.u34.PHONE_IP_AUTHORIZATION:
+              return this.renderIPAuthorization();
+            case w.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION:
+              return this.renderPasswordRecovery();
+            case w.u34.LOGGING_IN:
+            case w.u34.NONE:
+            default:
+              if (null != t && t.state === w.r2o.RESOLVING)
+                return this.renderResolving();
+              if (null != n) {
+                if (n.state === H.Rj.RESOLVING) return this.renderResolving();
+                return this.renderGuildTemplate(n);
+              }
+              if (
+                this.canShowChooseAccount &&
+                !this.state.dismissedChooseAccount
+              )
+                return this.renderChooseAccount();
+              return this.renderDefault();
+          }
+        }
+        constructor(e) {
+          var t, n;
+          super(e),
+            W(this, "loginRef", void 0),
+            W(this, "passwordRef", void 0),
+            W(this, "codeRef", void 0),
+            W(this, "handleAuthToken", async (e) => {
+              await E.Z.loginToken(e, !1),
+                j.default.track(w.rMx.LOGIN_SUCCESSFUL, {
+                  source: w.uRl.QR_CODE,
+                  login_source: this.loginSource,
+                  gift_code_sku_id: this.giftCodeSKUId,
+                  is_new_user: !1,
+                });
+            }),
+            W(this, "setLoginRef", (e) => {
+              this.loginRef = e;
+            }),
+            W(this, "setPasswordRef", (e) => {
+              this.passwordRef = e;
+            }),
+            W(this, "setCodeRef", (e) => {
+              this.codeRef = e;
+            }),
+            W(this, "getFullLogin", () => {
+              let { loginPrefix: e, login: t } = this.state;
+              return e + t;
+            }),
+            W(this, "renderError", (e) => {
+              let { errors: t } = this.props;
+              if (this.hasError(e)) {
+                let n = t[e];
+                return Array.isArray(n) ? n[0] : n;
+              }
+              return null;
+            }),
+            W(this, "handleLogin", (e) => {
+              let { password: t, undelete: n } = this.state;
+              null != e && e.preventDefault(),
+                E.Z.login({
+                  login: this.getFullLogin(),
+                  password: t,
+                  undelete: n,
+                  source: this.loginSource,
+                  giftCodeSKUId: this.giftCodeSKUId,
+                  invite: this.props.invite,
+                }),
+                y.S.dispatch(w.CkL.WAVE_EMPHASIZE);
+            }),
+            W(this, "handleIPAuthorize", async (e) => {
+              let { password: t, undelete: n } = this.state,
+                s = this.getFullLogin();
+              try {
+                let { token: r } = await R.Z.verifyPhone(s, e, !1);
+                await E.Z.authorizeIPAddress(r),
+                  E.Z.login({
+                    login: s,
+                    password: t,
+                    undelete: n,
+                    source: this.loginSource,
+                    giftCodeSKUId: this.giftCodeSKUId,
+                  }),
+                  y.S.dispatch(w.CkL.WAVE_EMPHASIZE);
+              } catch (e) {
+                null != e.body &&
+                  null != e.body.message &&
+                  this.setState({ phoneVerifyError: e.body.message });
+              }
+            }),
+            W(this, "handlePasswordReset", async (e) => {
+              let { transitionTo: t } = this.props;
+              this.setState({ phoneVerifyError: null });
+              try {
+                let { token: n } = await R.Z.verifyPhone(
+                  this.getFullLogin(),
+                  e,
+                  !1,
+                );
+                t(w.Z5c.RESET, {
+                  search: (0, c.stringify)({ token: n, from_login: "true" }),
+                });
+              } catch (e) {
+                null != e.body &&
+                  null != e.body.message &&
+                  this.setState({ phoneVerifyError: e.body.message });
+              }
+            }),
+            W(this, "handleTokenSubmitMFA", (e) => {
+              let { mfaType: t, data: n, ticket: s } = e;
+              return (
+                y.S.dispatch(w.CkL.WAVE_EMPHASIZE),
+                E.Z.loginMFAv2({
+                  code: n,
+                  ticket: s,
+                  mfaType: t,
+                  source: this.loginSource,
+                  giftCodeSKUId: this.giftCodeSKUId,
+                })
+              );
+            }),
+            W(this, "handleForgotPassword", async (e) => {
+              null != e && e.preventDefault(),
+                null != this.loginRef && this.loginRef.focus();
+              let t = this.getFullLogin();
+              try {
+                y.S.dispatch(w.CkL.WAVE_EMPHASIZE),
+                  await E.Z.forgotPassword(t),
+                  (0, h.openModal)((e) =>
+                    (0, r.jsx)(h.ConfirmModal, {
+                      header:
+                        V.Z.Messages.EMAIL_VERIFICATION_INSTRUCTIONS_HEADER,
+                      confirmText: V.Z.Messages.OKAY,
+                      confirmButtonColor: m.zx.Colors.BRAND,
+                      className: u.tq ? z.mobile : "",
+                      ...e,
+                      children: (0, r.jsx)(h.Text, {
+                        variant: "text-md/normal",
+                        children:
+                          V.Z.Messages.EMAIL_VERIFICATION_INSTRUCTIONS_BODY.format(
+                            { email: t },
+                          ),
+                      }),
+                    }),
+                  );
+              } catch {}
+            }),
+            W(this, "handleResendCode", () => {
+              R.Z.resendCode(this.getFullLogin());
+            }),
+            W(this, "handleReset", (e) => {
+              null != e && e.preventDefault(),
+                E.Z.loginReset(),
+                this.setState({
+                  password: "",
+                  loginPrefix: "",
+                  login: "",
+                  code: "",
+                  smsCode: "",
+                  undelete: !1,
+                  checkingHandoff: !1,
+                  redirecting: !1,
+                });
+            }),
+            W(this, "handleCancelAccountDeletion", () => {
+              this.setState({ undelete: !0 }, this.handleLogin);
+            }),
+            W(this, "handleGotoRegister", () => {
+              let e;
+              let { login: t } = this.state,
+                {
+                  invite: n,
+                  giftCode: s,
+                  guildTemplate: r,
+                  location: i,
+                  transitionTo: a,
+                  redirectTo: l,
+                } = this.props,
+                o = null != i ? (0, c.parse)(i.search) : {};
+              "" !== t && (o.email = t),
+                null != n
+                  ? ((o.mode = "register"), (e = w.Z5c.INVITE(n.code)))
+                  : null != s
+                    ? ((o.mode = "register"), (e = w.Z5c.GIFT_CODE(s.code)))
+                    : null != r
+                      ? (e = w.Z5c.GUILD_TEMPLATE(r.code))
+                      : null != l
+                        ? ((e = w.Z5c.REGISTER), (o.redirect_to = l))
+                        : (e = w.Z5c.REGISTER),
+                E.Z.loginReset(),
+                a(e, { search: (0, c.stringify)(o) }),
+                y.S.dispatch(w.CkL.WAVE_EMPHASIZE);
+            });
+          let s = null != e.location ? (0, c.parse)(e.location.search) : {};
+          this.state = {
+            redirecting: e.authenticated,
+            checkingHandoff: e.handoffAvailable,
+            loginPrefix: "",
+            login:
+              null !==
+                (n = null !== (t = s.email) && void 0 !== t ? t : s.login) &&
+              void 0 !== n
+                ? n
+                : "",
+            password: "",
+            code: "",
+            smsCode: "",
+            undelete: !1,
+            phoneVerifyError: null,
+            dismissedChooseAccount: !1,
+            conditionalMediationAbortController: new AbortController(),
+          };
+        }
+      }
+      W(q, "defaultProps", { transitionTo: (e) => n.g.location.assign(e) });
+      t.Z = function (e) {
+        let t = (0, d.cj)([M.Z, P.Z, L.default, S.Z, v.Z], () => ({
+          authenticated: L.default.isAuthenticated(),
+          handoffAvailable: M.Z.isHandoffAvailable(),
+          user: M.Z.user,
+          loginStatus: L.default.getLoginStatus(),
+          mfaTicket: L.default.getMFATicket(),
+          mfaSMS: L.default.getMFASMS(),
+          mfaMethods: L.default.getMFAMethods(),
+          maskedPhone: L.default.getMaskedPhone(),
+          errors: L.default.getErrors(),
+          defaultRoute: P.Z.defaultRoute,
+          country: v.Z.getCountryCode(),
+          hasLoggedInAccounts: S.Z.getHasLoggedInAccounts(),
+        }));
+        return (0, r.jsx)(q, { ...e, ...t });
+      };
+    },
+    209411: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return f;
+        },
+      }),
+        n(47120),
+        n(773603);
+      var s = n(735250),
+        r = n(470079),
+        i = n(593473),
+        a = n(266067),
+        l = n(442837),
+        o = n(893776),
+        c = n(899742),
+        u = n(743142),
+        d = n(893607),
+        h = n(703656),
+        _ = n(314897),
+        E = n(781428),
+        g = n(981631),
+        p = n(176505);
+      function f(e) {
+        let t = r.useCallback(
+            (t) => {
+              if (
+                (function (e) {
+                  var t;
+                  let n = (0, a.LX)(e, {
+                    path: g.Z5c.CHANNEL(d.Hw.guildId(), d.Hw.channelId()),
+                  });
+                  return (
+                    (null == n
+                      ? void 0
+                      : null === (t = n.params) || void 0 === t
+                        ? void 0
+                        : t.channelId) === p.oC.ROLE_SUBSCRIPTIONS || !1
+                  );
+                })(t)
+              )
+                h.dL(t);
+              else {
+                var n;
+                (null !== (n = e.transitionTo) && void 0 !== n ? n : h.uL)(t);
+              }
+            },
+            [e.transitionTo],
+          ),
+          { isAuthenticated: n, loginStatus: f } = (0, l.cj)(
+            [_.default],
+            () => ({
+              isAuthenticated: _.default.isAuthenticated(),
+              loginStatus: _.default.getLoginStatus(),
+            }),
+          ),
+          { location: m, redirectTo: I } = e,
+          [N, T] = r.useState(n);
+        function A(e) {
+          let { handoffKey: t, handoffToken: n, handoffSource: s } = e;
+          (0, c.Yz)({ handoffKey: t, handoffToken: n, handoffSource: s }),
+            T(!1);
+        }
+        return (r.useEffect(() => {
+          if (null != m) {
+            let { handoff_key: e, handoff_token: t } = (0, i.parse)(m.search);
+            if (null != e && null != t) {
+              let n = null != I ? (0, u.L)(I) : void 0;
+              N
+                ? o.Z.logout(null).finally(() => {
+                    A({ handoffKey: e, handoffToken: t, handoffSource: n });
+                  })
+                : A({ handoffKey: e, handoffToken: t, handoffSource: n });
+            }
+          }
+        }, []),
+        N || f === g.u34.LOGGING_IN)
+          ? (0, s.jsx)(E.q, {})
+          : (0, s.jsx)(E.Z, { ...e, transitionTo: t });
+      }
+    },
+    494526: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return y;
+        },
+      }),
+        n(411104),
+        n(47120);
+      var s,
+        r,
+        i,
+        a,
+        l = n(735250),
+        o = n(470079),
+        c = n(615231),
+        u = n(261470),
+        d = n(399606),
+        h = n(544891),
+        _ = n(481060),
+        E = n(893776),
+        g = n(99690),
+        p = n(937154),
+        f = n(388905),
+        m = n(198993),
+        I = n(710845),
+        N = n(314897),
+        T = n(585483),
+        A = n(358085),
+        x = n(172517),
+        C = n(51144),
+        S = n(998502),
+        O = n(981631),
+        R = n(231338),
+        v = n(689938),
+        Z = n(506303),
+        b = n(113207);
+      ((i = s || (s = {}))[(i.INITIALIZING = 0)] = "INITIALIZING"),
+        (i[(i.PENDING_REMOTE_INIT = 1)] = "PENDING_REMOTE_INIT"),
+        (i[(i.PENDING_FINISH = 2)] = "PENDING_FINISH"),
+        (i[(i.PENDING_TICKET = 3)] = "PENDING_TICKET"),
+        (i[(i.PENDING_LOGIN = 4)] = "PENDING_LOGIN"),
+        (i[(i.FINISH = 5)] = "FINISH"),
+        ((a = r || (r = {}))[(a.QR_CODE = 0)] = "QR_CODE"),
+        (a[(a.CONFIRM = 1)] = "CONFIRM");
+      let D = n(515695),
+        L = new I.Z("LoginQRSocket");
+      function M(e) {
+        let { text: t = "" } = e,
+          [n, s] = o.useState(!1);
+        return (
+          o.useEffect(() => {
+            let e = new Image();
+            (e.src = D), (e.onload = () => s(!0)), (e.onerror = () => s(!0));
+          }, [D]),
+          o.useEffect(() => {
+            n &&
+              _.AccessibilityAnnouncer.announce(
+                v.Z.Messages.LOGIN_WITH_QR_LOADING_FINISHED_LABEL,
+              );
+          }, [n]),
+          (0, l.jsx)("div", {
+            className: Z.qrCodeContainer,
+            children:
+              "" !== t && n
+                ? (0, l.jsxs)(l.Fragment, {
+                    children: [
+                      (0, l.jsx)(m.ZP, {
+                        className: Z.qrCode,
+                        size: 160,
+                        text: t,
+                      }),
+                      (0, l.jsx)("div", {
+                        className: Z.qrCodeOverlay,
+                        children: (0, l.jsx)("img", { src: D, alt: "" }),
+                      }),
+                    ],
+                  })
+                : (0, l.jsx)("div", {
+                    className: Z.qrCodeOverlay,
+                    "aria-label": v.Z.Messages.LOGIN_WITH_QR_LOADING_LABEL,
+                    "aria-busy": !0,
+                    children: (0, l.jsx)(_.Spinner, {
+                      className: Z.qrCode,
+                      type: _.Spinner.Type.WANDERING_CUBES,
+                      "aria-hidden": !0,
+                    }),
+                  }),
+          })
+        );
+      }
+      let P = (e) => {
+        let { className: t, children: n } = e;
+        return (0, l.jsx)(_.Text, {
+          variant: "text-md/normal",
+          color: "text-danger",
+          className: t,
+          children: n,
+        });
+      };
+      function j(e) {
+        let {
+          state: t,
+          cancel: n,
+          errorMessage: s,
+          conditionalMediationAbortController: r,
+          isPasswordlessActive: i,
+        } = e;
+        switch (t.step) {
+          case 0:
+          case 1:
+            return (0, l.jsxs)(l.Fragment, {
+              children: [
+                (0, l.jsx)(M, {
+                  text:
+                    1 === t.step
+                      ? "https://discord.com/ra/".concat(t.fingerprint)
+                      : "",
+                }),
+                (0, l.jsx)(f.Dx, {
+                  className: b.marginBottom8,
+                  children: v.Z.Messages.LOGIN_WITH_QR,
+                }),
+                null != s
+                  ? (0, l.jsx)(P, { children: s })
+                  : (0, l.jsx)(f.DK, {
+                      children: v.Z.Messages.LOGIN_WITH_QR_DESCRIPTION.format(),
+                    }),
+                (0, l.jsx)(_.Button, {
+                  size: _.ButtonSizes.LARGE,
+                  look: _.ButtonLooks.LINK,
+                  color: _.ButtonColors.LINK,
+                  disabled: i,
+                  onClick: () =>
+                    (function (e) {
+                      let t =
+                        A.isPlatformEmbedded &&
+                        S.ZP.supportsFeature(O.eRX.WEBAUTHN)
+                          ? S.ZP.webAuthnAuthenticate
+                          : (e) => {
+                              let t = (0, c.wz)(JSON.parse(e));
+                              return (0, c.U2)(t).then((e) =>
+                                JSON.stringify(e),
+                              );
+                            };
+                      E.Z.authenticatePasswordless({
+                        authenticateFunc: t,
+                        conditionalMediationAbortController: e,
+                      }).catch(() => {});
+                    })(r),
+                  children: v.Z.Messages.SIGN_IN_WITH_PASSKEY,
+                }),
+              ],
+            });
+          case 3:
+          case 2: {
+            let { user: e } = t;
+            return (0, l.jsxs)(l.Fragment, {
+              children: [
+                (0, l.jsx)(g.Z, {
+                  className: Z.qrAvatar,
+                  user: e,
+                  size: _.AvatarSizes.SIZE_120,
+                  isMobile: !0,
+                  status: R.Sk.ONLINE,
+                }),
+                (0, l.jsx)(f.Dx, {
+                  className: b.marginBottom8,
+                  children: v.Z.Messages.CONFIRM_QR_CHECK_YOUR_PHONE,
+                }),
+                (0, l.jsx)(f.DK, {
+                  children: v.Z.Messages.LOGIN_AS.format({
+                    username: "".concat(C.ZP.getUserTag(e)),
+                  }),
+                }),
+                (0, l.jsx)(_.Button, {
+                  look: _.Button.Looks.BLANK,
+                  color: _.Button.Colors.LINK,
+                  size: _.Button.Sizes.MIN,
+                  onClick: n,
+                  className: Z.startOverButton,
+                  children: v.Z.Messages.QR_CODE_LOGIN_START_OVER,
+                }),
+              ],
+            });
+          }
+          case 4:
+          case 5:
+            return (0, l.jsx)(_.Spinner, {
+              type: _.Spinner.Type.WANDERING_CUBES,
+            });
+        }
+      }
+      function y(e) {
+        let { authTokenCallback: t, conditionalMediationAbortController: n } =
+            e,
+          s = (0, d.e7)([N.default], () => N.default.getIsPasswordlessActive()),
+          {
+            state: r,
+            rsaKeyPair: i,
+            cancel: a,
+            handleFailure: c,
+          } = (function (e) {
+            let [t, n] = o.useState(0),
+              [s, r] = o.useState(!1),
+              [i, a] = o.useState({ step: 0 }),
+              [l, c] = o.useState(null),
+              d = (0, p.Z)(),
+              h = o.useMemo(() => new u.Z(1500, 3e4), []),
+              _ = o.useRef();
+            _.current = o.useCallback(() => {
+              a({ step: 0 }),
+                d
+                  ? n((e) => e + 1)
+                  : (L.info(
+                      "document is not visible, will defer reconnection when document becomes visible.",
+                    ),
+                    r(!0));
+            }, [d]);
+            let E = o.useCallback(() => {
+                (function (e) {
+                  let { current: t } = e;
+                  if (void 0 === t)
+                    throw Error("tried to unwrap an undefined value.");
+                  return t;
+                })(_)();
+              }, [_]),
+              g = o.useCallback(() => {
+                L.error(
+                  "Could not complete QR code login, trying to restart with a new QR code.",
+                ),
+                  a({ step: 0 }),
+                  !h.pending && h.fail(E);
+              }, [E, h]);
+            return (
+              o.useEffect(() => {
+                d &&
+                  s &&
+                  0 === i.step &&
+                  (L.info("reconnecting, now that document is visible"),
+                  r(!1),
+                  n((e) => e + 1));
+              }, [i, d, s, r]),
+              o.useEffect(() => {
+                let t = Date.now(),
+                  n = () => "".concat(Date.now() - t, "ms"),
+                  s = "wss:".concat(
+                    window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT,
+                    "/?v=2",
+                  ),
+                  r = new WebSocket(s);
+                L.info("[0ms] connecting to ".concat(s));
+                let i = (e) => L.info("[".concat(n(), "] ").concat(e)),
+                  l = null,
+                  o = null,
+                  u = null,
+                  d = null,
+                  _ = !0;
+                function p() {
+                  if (null != l) return l;
+                  throw Error("No key pair set");
+                }
+                let f = () => {
+                  _
+                    ? ((_ = !1), r.send(JSON.stringify({ op: "heartbeat" })))
+                    : (i("heartbeat timeout, reconnecting."), r.close(), g());
+                };
+                return (
+                  (r.onmessage = async (t) => {
+                    let { data: n } = t,
+                      s = JSON.parse(n);
+                    switch (s.op) {
+                      case "nonce_proof": {
+                        let e = s.encrypted_nonce,
+                          t = await (0, x.qd)(p(), e);
+                        i("computed nonce proof"),
+                          r.send(
+                            JSON.stringify({ op: "nonce_proof", nonce: t }),
+                          );
+                        return;
+                      }
+                      case "pending_remote_init": {
+                        h.succeed(), T.S.dispatch(O.CkL.WAVE_EMPHASIZE);
+                        let e = await (0, x.Pk)(p());
+                        if (e !== s.fingerprint)
+                          throw Error(
+                            "bad fingerprint "
+                              .concat(e, " !== ")
+                              .concat(s.fingerprint),
+                          );
+                        i("handshake complete awaiting remote auth."),
+                          a({ step: 1, fingerprint: e });
+                        return;
+                      }
+                      case "pending_login": {
+                        let e = s.ticket;
+                        null == e && g(), a({ step: 4, ticket: e });
+                        return;
+                      }
+                      case "pending_ticket": {
+                        T.S.dispatch(O.CkL.WAVE_EMPHASIZE),
+                          i(
+                            "remote auth handshake started, awaiting ticket/cancel.",
+                          );
+                        let e = s.encrypted_user_payload;
+                        a({ step: 3, user: await (0, x.Rq)(p(), e) });
+                        return;
+                      }
+                      case "pending_finish": {
+                        T.S.dispatch(O.CkL.WAVE_EMPHASIZE),
+                          i(
+                            "remote auth handshake started, awaiting finish/cancel.",
+                          );
+                        let e = s.encrypted_user_payload;
+                        a({ step: 2, user: await (0, x.Rq)(p(), e) });
+                        return;
+                      }
+                      case "finish": {
+                        T.S.dispatch(O.CkL.WAVE_EMPHASIZE),
+                          i("remote auth handshake finished.");
+                        let t = s.encrypted_token;
+                        a({ step: 5 }), e(await (0, x.FW)(p(), t));
+                        return;
+                      }
+                      case "cancel":
+                        i("remote auth handshake cancelled."), E();
+                        return;
+                      case "hello": {
+                        i(
+                          "got hello, auth timeout=".concat(s.timeout_ms, "ms"),
+                        );
+                        let e = s.heartbeat_interval;
+                        d = setTimeout(
+                          () => {
+                            (d = null), f(), (u = setInterval(f, e));
+                          },
+                          Math.floor(e * Math.random()),
+                        );
+                        return;
+                      }
+                      case "heartbeat_ack":
+                        _ = !0;
+                    }
+                  }),
+                  (r.onopen = async () => {
+                    (l = await (0, x.W_)()), (o = await (0, x.dK)(l));
+                    let e = await (0, x.Pk)(l);
+                    i("connected, handshaking with fingerprint: ".concat(e)),
+                      r.send(
+                        JSON.stringify({ op: "init", encoded_public_key: o }),
+                      ),
+                      c(l);
+                  }),
+                  (r.onclose = (e) => {
+                    i(
+                      "disconnected, code: "
+                        .concat(e.code, " ")
+                        .concat(e.reason),
+                    ),
+                      g();
+                  }),
+                  (r.onerror = (e) => {
+                    i("disconnected, error: ".concat(JSON.stringify(e))), g();
+                  }),
+                  () => {
+                    i("cleaning up"),
+                      (r.onopen = () => null),
+                      (r.onmessage = () => null),
+                      (r.onclose = () => null),
+                      (r.onerror = () => null),
+                      r.close(1e3),
+                      h.cancel(),
+                      null != d && clearTimeout(d),
+                      null != u && clearInterval(u);
+                  }
+                );
+              }, [E, e, t, h, g]),
+              { state: i, rsaKeyPair: l, cancel: E, handleFailure: g }
+            );
+          })(t),
+          E = (function (e) {
+            switch (e) {
+              case 0:
+              case 1:
+                return 0;
+              case 3:
+              case 2:
+              case 4:
+              case 5:
+                return 1;
+            }
+          })(r.step);
+        return (
+          o.useEffect(() => {
+            4 === r.step &&
+              null != r.ticket &&
+              h.tn
+                .post({
+                  url: O.ANM.REMOTE_AUTH_LOGIN,
+                  body: { ticket: r.ticket },
+                  oldFormErrors: !0,
+                })
+                .then(async (e) => {
+                  if (null != i)
+                    try {
+                      let n = await (0, x.FW)(i, e.body.encrypted_token);
+                      t(n);
+                    } catch (e) {
+                      c();
+                    }
+                  else c();
+                })
+                .catch(() => {
+                  c();
+                });
+          }, [r, t, i, c]),
+          (0, l.jsxs)(l.Fragment, {
+            children: [
+              (0, l.jsx)("div", { className: Z.verticalSeparator }),
+              (0, l.jsx)(_.Sequencer, {
+                fillParent: !0,
+                className: Z.qrLogin,
+                step: E,
+                steps: [0, 1],
+                children: (0, l.jsx)("div", {
+                  className: Z.qrLoginInner,
+                  children: (0, l.jsx)(j, {
+                    state: r,
+                    cancel: a,
+                    conditionalMediationAbortController: n,
+                    isPasswordlessActive: s,
+                  }),
+                }),
+              }),
+            ],
+          })
+        );
+      }
+    },
+    163671: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return o;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(120356),
+        i = n.n(r),
+        a = n(388905),
+        l = n(929650);
+      function o(e) {
+        let { children: t, className: n, ...r } = e,
+          o = t();
+        return (0, s.jsx)(a.ZP, {
+          ...r,
+          className: i()(n, l.container),
+          contentClassName: l.content,
+          children: o.map((e, t) =>
+            (0, s.jsx)(
+              "div",
+              {
+                className: l.column,
+                style: { flexBasis: "".concat(100 / o.length, "%") },
+                children: e,
+              },
+              t,
+            ),
+          ),
+        });
+      }
+    },
+    649156: function (e, t, n) {
+      var s = n(735250);
+      n(470079);
+      var r = n(3570),
+        i = n(685311),
+        a = n(186901);
+      t.Z = function (e) {
+        let { match: t, location: n } = e,
+          l = async (e, t) => {
+            await (0, r.s)(a.jE.PICK_GUILD_SETTINGS, {
+              section: e.params.section,
+              subsection: e.params.subsection,
+              search: t.search,
+            });
+          };
+        return (0, s.jsx)(i.Z, { match: t, location: n, attemptDeepLink: l });
+      };
+    },
+    423527: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return eo;
+        },
+      }),
+        n(757143),
+        n(47120),
+        n(627341);
+      var s,
+        r = n(735250),
+        i = n(470079),
+        a = n(120356),
+        l = n.n(a),
+        o = n(593473),
+        c = n(278074),
+        u = n(990547),
+        d = n(442837),
+        h = n(846519),
+        _ = n(481060),
+        E = n(893776),
+        g = n(899370),
+        p = n(224841),
+        f = n(13430),
+        m = n(213609),
+        I = n(882037),
+        N = n(201207),
+        T = n(481230),
+        A = n(388905),
+        x = n(853268),
+        C = n(639946),
+        S = n(616952),
+        O = n(792766),
+        R = n(692483),
+        v = n(100159),
+        Z = n(473855),
+        b = n(726745),
+        D = n(929809),
+        L = n(541692),
+        M = n(986197),
+        P = n(135200),
+        j = n(219496),
+        y = n(794099),
+        G = n(807369),
+        B = n(180529),
+        U = n(108427),
+        k = n(314897),
+        F = n(480294),
+        w = n(896797),
+        H = n(626135),
+        V = n(585483),
+        z = n(70956),
+        K = n(624138),
+        W = n(481153),
+        Y = n(588705),
+        q = n(163671),
+        J = n(981631),
+        X = n(355142),
+        Q = n(188785),
+        $ = n(701476),
+        ee = n(801461),
+        et = n(689938),
+        en = n(100906),
+        es = n(113207);
+      function er(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      d.ZP.initialize();
+      let ei = /\.$/,
+        ea = (e) =>
+          Array.isArray(e)
+            ? e
+                .map((e) => e.replace(ei, ""))
+                .join(". ")
+                .trim()
+            : e;
+      class el extends (s = i.PureComponent) {
+        get registrationSource() {
+          let { giftCode: e, guildTemplate: t, invite: n } = this.props;
+          if (null != e) return "gift";
+          if (null != t) return "guild_template";
+          if (null != n) {
+            if (null != n.guild) return "guild_invite";
+            if (null != n.channel) return "dm_invite";
+            else if (null != n.inviter) return "friend_invite";
+          }
+          return null;
+        }
+        hasConsent() {
+          let { consentRequired: e } = this.props,
+            { consent: t } = this.state;
+          return null != e && t;
+        }
+        componentDidMount() {
+          this.redirectIfAuthenticated(),
+            N.Z.trackExposure({ location: "0ba758_1" });
+          let { giftCodeSKU: e, invite: t } = this.props;
+          H.default.track(
+            J.rMx.REGISTER_VIEWED,
+            {
+              location:
+                null != t ? "Invite Register Page" : "Non-Invite Register Page",
+              registration_source: this.registrationSource,
+              ...(null != e ? (0, v.Z)(e, !1, !1) : {}),
+            },
+            { flush: !0 },
+          ),
+            null == this.props.consentRequired && E.Z.getLocationMetadata(),
+            (0, U.e)("register");
+        }
+        componentWillUnmount() {
+          this._retryTimer.stop();
+        }
+        static getDerivedStateFromProps(e, t) {
+          let { consentRequired: n } = e,
+            { consentRequiredProp: s } = t;
+          return null == s && null != n
+            ? { consent: !n, consentRequiredProp: n }
+            : { consentRequiredProp: n };
+        }
+        componentDidUpdate(e, t) {
+          let {
+              apiErrors: n,
+              authenticated: s,
+              isUnderage: r,
+              invite: i,
+              onChangeStep: a,
+            } = this.props,
+            { parsedDateOfBirth: l } = this.state;
+          (e.apiErrors !== n || t.parsedDateOfBirth !== l) &&
+            (this.hasError("email") || this.hasError("phone")
+              ? null != this.emailRef && this.emailRef.focus()
+              : this.hasError("username")
+                ? null != this.usernameRef && this.usernameRef.focus()
+                : this.hasError("global_name")
+                  ? null != this.globalNameRef && this.globalNameRef.focus()
+                  : this.hasError("password")
+                    ? null != this.passwordRef && this.passwordRef.focus()
+                    : null == this.state.parsedDateOfBirth
+                      ? null != this.dateOfBirthRef.current &&
+                        this.dateOfBirthRef.current.focus()
+                      : this.hasError("retry_after") &&
+                        "number" == typeof this.props.apiErrors.retry_after &&
+                        (this.setState({ isRateLimited: !0 }),
+                        this._retryTimer.start(
+                          this.props.apiErrors.retry_after * z.Z.Millis.SECOND,
+                          () => {
+                            this.setState({ isRateLimited: !1 });
+                          },
+                        ))),
+            s &&
+              !e.authenticated &&
+              ((0, D.c)($.M5.ORGANIC_REGISTERED),
+              this.redirectIfAuthenticated());
+          let o = X.EW.FULL;
+          r || this.hasError("date_of_birth")
+            ? (o = X.EW.AGE_GATE)
+            : null != i &&
+              (null != i.guild || null != i.channel) &&
+              (o = X.EW.INVITE),
+            a(o);
+        }
+        redirectIfAuthenticated() {
+          let { authenticated: e, transitionTo: t, redirectTo: n } = this.props;
+          if (!!e) t(null != n ? n : w.Z.defaultRoute);
+        }
+        async handleRegister() {
+          let {
+              email: e,
+              username: t,
+              globalName: n,
+              password: s,
+              consent: r,
+              parsedDateOfBirth: i,
+            } = this.state,
+            {
+              invite: a,
+              guildTemplate: l,
+              giftCode: o,
+              onRegister: c,
+              usernameSuggestion: u,
+              isMobileWebInviteRegistration: d,
+            } = this.props,
+            h = null != a ? a.code : null,
+            _ = null != o ? o.skuId : null,
+            E = I.MD.getState(),
+            g = (0, K.Ew)(u) ? null : t === u,
+            p = Q.a ? await (0, R.K)(t) : t,
+            f = Q.a ? await (0, R.K)(n) : n;
+          V.S.dispatch(J.CkL.WAVE_EMPHASIZE);
+          try {
+            d || null == a
+              ? await (0, T.R$)({
+                  email: e,
+                  username: p,
+                  globalName: f,
+                  consent: r,
+                  password: s,
+                  invite: h,
+                  usedUsernameSuggestion: g,
+                  guildTemplateCode: null == l ? void 0 : l.code,
+                  giftCodeSKUId: _,
+                  birthday: i,
+                  promoEmailConsent: E.required ? E : null,
+                })
+              : await (0, T.ZP)({
+                  consent: r,
+                  invite: h,
+                  giftCodeSKUId: _,
+                  usedUsernameSuggestion: g,
+                  globalName: f,
+                }),
+              null == c || c();
+          } catch (e) {}
+        }
+        hasError(e) {
+          return null != this.props.apiErrors[e];
+        }
+        renderConsentComponents() {
+          let { consent: e } = this.state,
+            {
+              consentRequired: t,
+              registrationCopyExperimentConfig: {
+                enableNewCopy: n,
+                hasProminentCopy: s,
+              },
+            } = this.props,
+            i = null,
+            a = null;
+          return (
+            t
+              ? (a = (0, r.jsx)(x.Z, {
+                  value: e,
+                  onChange: (e) => this.setState({ consent: e }),
+                  subText: et.Z.Messages.TERMS_PRIVACY_OPT_IN.format({
+                    termsURL: J.EYA.TERMS,
+                    privacyURL: J.EYA.PRIVACY,
+                  }),
+                }))
+              : (i = (0, r.jsx)(A.i_, {
+                  isProminent: !!s,
+                  className: es.marginTop8,
+                  children: n
+                    ? et.Z.Messages.TERMS_PRIVACY_ON_REGISTER.format({
+                        buttonText: et.Z.Messages.CONTINUE,
+                        termsURL: J.EYA.TERMS,
+                        privacyURL: J.EYA.PRIVACY,
+                      })
+                    : et.Z.Messages.TERMS_PRIVACY.format({
+                        termsURL: J.EYA.TERMS,
+                        privacyURL: J.EYA.PRIVACY,
+                      }),
+                })),
+            { subText: i, consentText: a }
+          );
+        }
+        renderInviteResolving() {
+          let { authBoxClassName: e } = this.props,
+            t = (e) => {
+              this.setState({ globalName: e });
+            },
+            n = this.state.globalName;
+          return (0, r.jsxs)(A.ZP, {
+            className: e,
+            children: [
+              (0, r.jsx)(Y.R, {}),
+              (0, r.jsxs)(A.gO, {
+                className: es.marginTop40,
+                children: [
+                  (0, r.jsx)(_.FormTitle, {
+                    children: et.Z.Messages.FORM_LABEL_USERNAME,
+                  }),
+                  (0, r.jsx)(_.Tooltip, {
+                    text: et.Z.Messages.AUTH_USERNAME_TOOLTIP,
+                    position: "right",
+                    color: _.Tooltip.Colors.BRAND,
+                    children: (e) => {
+                      let { onMouseEnter: s, onMouseLeave: i } = e;
+                      return (0, r.jsx)(A.II, {
+                        autoFocus: !0,
+                        className: es.marginBottom8,
+                        name: "username",
+                        value: n,
+                        placeholder: et.Z.Messages.FORM_PLACEHOLDER_USERNAME,
+                        onChange: t,
+                        onMouseEnter: s,
+                        onMouseLeave: i,
+                      });
+                    },
+                  }),
+                  (0, r.jsx)(A.zx, {
+                    className: es.marginTop20,
+                    disabled: !0,
+                    children: et.Z.Messages.CONTINUE,
+                  }),
+                  (0, r.jsx)(A.i_, {
+                    disabled: !0,
+                    className: es.marginTop8,
+                    children: et.Z.Messages.TERMS_PRIVACY.format({
+                      termsURL: J.EYA.TERMS,
+                      privacyURL: J.EYA.PRIVACY,
+                    }),
+                  }),
+                  Q.a
+                    ? null
+                    : (0, r.jsx)(A.zx, {
+                        look: A.zx.Looks.LINK,
+                        color: A.zx.Colors.LINK,
+                        disabled: !0,
+                        className: es.marginTop20,
+                        children: et.Z.Messages.ALREADY_HAVE_ACCOUNT,
+                      }),
+                ],
+              }),
+            ],
+          });
+        }
+        renderInviteHeader() {
+          let { invite: e } = this.props;
+          return (null == e ? void 0 : e.stage_instance) != null &&
+            null != e.guild
+            ? (0, r.jsx)(O.Z, {
+                stageInstance: e.stage_instance,
+                guild: e.guild,
+              })
+            : (null == e ? void 0 : e.guild_scheduled_event) != null
+              ? (0, r.jsx)(C.r, {
+                  channel: e.channel,
+                  guildScheduledEvent: e.guild_scheduled_event,
+                })
+              : (0, r.jsx)(Y.Z, { invite: e });
+        }
+        renderInviteButton() {
+          let { invite: e, registering: t, consentRequired: n } = this.props,
+            { consent: s } = this.state,
+            i = A.zx.Colors.BRAND,
+            a = et.Z.Messages.CONTINUE;
+          return (
+            (null == e ? void 0 : e.stage_instance) != null &&
+              ((i = A.zx.Colors.GREEN),
+              (a = et.Z.Messages.INSTANT_INVITE_ACCEPT_STAGE)),
+            (0, r.jsx)(_.Tooltip, {
+              text: !s && n ? et.Z.Messages.TERMS_PRIVACY_OPT_IN_TOOLTIP : null,
+              children: (e) =>
+                (0, r.jsx)("div", {
+                  className: es.marginTop20,
+                  ...e,
+                  children: (0, r.jsx)(A.zx, {
+                    type: "submit",
+                    submitting: t,
+                    disabled: !this.hasConsent(),
+                    color: i,
+                    children: a,
+                  }),
+                }),
+            })
+          );
+        }
+        renderInvite() {
+          let {
+              invite: e,
+              authBoxClassName: t,
+              apiErrors: { username: n, global_name: s },
+            } = this.props,
+            { subText: i, consentText: a } = this.renderConsentComponents(),
+            l =
+              (null == e ? void 0 : e.stage_instance) != null ||
+              (null == e ? void 0 : e.guild_scheduled_event) != null,
+            o = (e) => {
+              this.setState({ globalName: e });
+            },
+            c = this.state.globalName;
+          return (0, r.jsxs)("div", {
+            children: [
+              (0, r.jsxs)(A.ZP, {
+                onSubmit: this.handleSubmit,
+                tag: "form",
+                className: t,
+                children: [
+                  this.renderInviteHeader(),
+                  l ? (0, r.jsx)("div", { className: en.divider }) : null,
+                  (0, r.jsxs)(A.gO, {
+                    className: l ? void 0 : es.marginTop40,
+                    children: [
+                      (0, r.jsx)(_.FormTitle, {
+                        error: ea(null != s ? s : n),
+                        children: et.Z.Messages.DISPLAY_NAME,
+                      }),
+                      (0, r.jsx)(_.Tooltip, {
+                        text: et.Z.Messages.AUTH_USERNAME_TOOLTIP,
+                        position: "right",
+                        color: _.Tooltip.Colors.BRAND,
+                        children: (e) => {
+                          let { onMouseEnter: t, onMouseLeave: i } = e;
+                          return (0, r.jsx)(A.II, {
+                            autoFocus: !0,
+                            className: es.marginBottom8,
+                            name: "global_name",
+                            value: c,
+                            placeholder:
+                              et.Z.Messages.FORM_PLACEHOLDER_USERNAME,
+                            onChange: o,
+                            error: null != n || null != s ? "" : null,
+                            onMouseEnter: t,
+                            onMouseLeave: i,
+                          });
+                        },
+                      }),
+                      (0, r.jsx)(_.Text, {
+                        variant: "text-sm/normal",
+                        color: "header-secondary",
+                        children: et.Z.Messages.UU_REGISTER_DISPLAY_NAME_HINT_2,
+                      }),
+                      this.renderInviteButton(),
+                      i,
+                      a,
+                      Q.a
+                        ? null
+                        : (0, r.jsx)(A.zx, {
+                            look: A.zx.Looks.LINK,
+                            color: A.zx.Colors.LINK,
+                            onClick: this.handleGotoLogin,
+                            className: es.marginTop20,
+                            children: et.Z.Messages.ALREADY_HAVE_ACCOUNT,
+                          }),
+                    ],
+                  }),
+                ],
+              }),
+              null != e && l
+                ? (0, r.jsx)(A.ZP, {
+                    className: es.marginTop20,
+                    children: (0, r.jsx)(O.y, {
+                      guild: e.guild,
+                      onlineCount: e.approximate_presence_count,
+                    }),
+                  })
+                : null,
+            ],
+          });
+        }
+        renderErrorMessage() {
+          let {
+            apiErrors: { message: e },
+          } = this.props;
+          return "string" != typeof e
+            ? null
+            : (0, r.jsx)(A.i_, {
+                className: l()(es.marginTop20, en.errorMessage),
+                children: e,
+              });
+        }
+        renderFull(e, t) {
+          let {
+              email: n,
+              username: s,
+              globalName: a,
+              password: o,
+              consent: c,
+              parsedDateOfBirth: u,
+              globalNameFocused: d,
+              emailClientError: h,
+              usernameClientError: E,
+              passwordClientError: g,
+              dateOfBirthClientError: p,
+            } = this.state,
+            {
+              registering: m,
+              consentRequired: I,
+              isMobileWebInviteRegistration: N,
+              uniqueUsernameRegistrationConfig: { suggestions: T },
+              authBoxClassName: x,
+              apiErrors: {
+                email: C,
+                username: O,
+                global_name: R,
+                password: v,
+                date_of_birth: Z,
+              } = {},
+              hasLoggedInAccounts: b,
+              registrationCopyExperimentConfig: { hasCopyAboveButton: D },
+            } = this.props,
+            { subText: L, consentText: j } = this.renderConsentComponents(),
+            y = this.renderErrorMessage(),
+            G = (0, r.jsx)(_.Tooltip, {
+              text: !c && I ? et.Z.Messages.TERMS_PRIVACY_OPT_IN_TOOLTIP : null,
+              children: (e) =>
+                (0, r.jsx)("div", {
+                  className: es.marginTop20,
+                  ...e,
+                  children: (0, r.jsx)(A.zx, {
+                    type: "submit",
+                    submitting: m,
+                    disabled: !this.hasConsent() || this.state.isRateLimited,
+                    children: et.Z.Messages.CONTINUE,
+                  }),
+                }),
+            }),
+            U = async () => {
+              this.setState({ usernameFocused: !0 }),
+                T &&
+                  a.length > 0 &&
+                  !P.Z.wasRegistrationSuggestionFetched(a) &&
+                  (await M.Z.fetchSuggestionsRegistration(a));
+            },
+            k =
+              null != e
+                ? (0, r.jsx)(i.Fragment, { children: e() }, "custom-header")
+                : (0, r.jsx)(
+                    A.Dx,
+                    { children: et.Z.Messages.REGISTER_TITLE },
+                    "title",
+                  ),
+            F = (0, r.jsxs)(A.gO, {
+              className: es.marginTop20,
+              children: [
+                (0, r.jsx)(A.II, {
+                  autoFocus: !0,
+                  className: es.marginBottom20,
+                  label: et.Z.Messages.FORM_LABEL_EMAIL,
+                  name: "email",
+                  value: n,
+                  onChange: (e) =>
+                    this.setState({
+                      email: e,
+                      emailClientError:
+                        0 === e.length ? et.Z.Messages.REQUIRED : null,
+                    }),
+                  error: null != h ? h : ea(C),
+                  type: "email",
+                  setRef: (e) => {
+                    this.emailRef = e;
+                  },
+                  required: !0,
+                }),
+                (0, r.jsx)(A.II, {
+                  label: et.Z.Messages.DISPLAY_NAME,
+                  className: es.marginBottom20,
+                  name: "global_name",
+                  value: a,
+                  onChange: (e) => this.setState({ globalName: e }),
+                  error: ea(R),
+                  maxLength: ee.hy,
+                  setRef: (e) => {
+                    this.globalNameRef = e;
+                  },
+                  onFocus: () => this.setState({ globalNameFocused: !0 }),
+                  onBlur: () => this.setState({ globalNameFocused: !1 }),
+                }),
+                (0, r.jsx)(B.Z, {
+                  show: d,
+                  top: -12,
+                  bottom: 20,
+                  children: (0, r.jsx)(_.Text, {
+                    variant: "text-sm/normal",
+                    color: "text-normal",
+                    children: et.Z.Messages.UU_REGISTER_DISPLAY_NAME_HINT_2,
+                  }),
+                }),
+                (0, r.jsxs)("div", {
+                  onBlur: () => this.setState({ usernameFocused: !1 }),
+                  onFocus: U,
+                  tabIndex: -1,
+                  children: [
+                    (0, r.jsx)(A.II, {
+                      label: et.Z.Messages.FORM_LABEL_USERNAME,
+                      className: es.marginBottom20,
+                      name: "username",
+                      value: s,
+                      onChange: (e) => {
+                        this.setState({
+                          username: e.toLocaleLowerCase(),
+                          usernameClientError:
+                            0 === e.length ? et.Z.Messages.REQUIRED : null,
+                        });
+                      },
+                      error: null != E ? E : ea(O),
+                      setRef: (e) => {
+                        this.usernameRef = e;
+                      },
+                      required: !0,
+                    }),
+                    this.renderUsernameValidation(),
+                  ],
+                }),
+                (0, r.jsx)(A.II, {
+                  label: et.Z.Messages.FORM_LABEL_PASSWORD,
+                  name: "password",
+                  value: o,
+                  onChange: (e) =>
+                    this.setState({
+                      password: e,
+                      passwordClientError:
+                        0 === e.length ? et.Z.Messages.REQUIRED : null,
+                    }),
+                  error: null != g ? g : ea(v),
+                  type: "password",
+                  setRef: (e) => {
+                    this.passwordRef = e;
+                  },
+                  required: !0,
+                }),
+                (0, r.jsx)(f.Z, {
+                  label: et.Z.Messages.AGE_GATE_YOUR_BIRTHDAY,
+                  wrapperClassName: es.marginTop20,
+                  name: "date_of_birth",
+                  onChange: this.handleBirthdayChange,
+                  ref: this.dateOfBirthRef,
+                  error: null != p ? p : ea(Z),
+                  value: u,
+                  required: !0,
+                }),
+                D && L,
+                (0, r.jsx)(S.Z, {}),
+                G,
+                y,
+                j,
+                !D && L,
+                Q.a
+                  ? null
+                  : (0, r.jsx)(A.zx, {
+                      look: N ? A.zx.Looks.FILLED : A.zx.Looks.LINK,
+                      color: N ? A.zx.Colors.PRIMARY : A.zx.Colors.LINK,
+                      onClick: this.handleGotoLogin,
+                      className: es.marginTop20,
+                      children: et.Z.Messages.ALREADY_HAVE_ACCOUNT,
+                    }),
+              ],
+            });
+          return t
+            ? (0, r.jsx)(q.Z, {
+                onSubmit: this.handleSubmit,
+                tag: "form",
+                className: l()(x, en.horizontalAuthBox),
+                children: () => [
+                  k,
+                  (0, r.jsxs)(
+                    "div",
+                    {
+                      className: en.flex,
+                      children: [
+                        (0, r.jsx)(A.Dx, {
+                          className: en.createAccountTemplateHeader,
+                          children: et.Z.Messages.REGISTER_TITLE,
+                        }),
+                        F,
+                      ],
+                    },
+                    "register-title",
+                  ),
+                ],
+              })
+            : (0, r.jsxs)(A.ZP, {
+                onSubmit: this.handleSubmit,
+                tag: "form",
+                className: x,
+                children: [
+                  b && !N
+                    ? (0, r.jsx)(A.zx, {
+                        onClick: this.handleGotoLogin,
+                        look: A.zx.Looks.LINK,
+                        color: A.zx.Colors.PRIMARY,
+                        className: en.goBackButton,
+                        children: (0, r.jsxs)("div", {
+                          className: en.content,
+                          children: [
+                            (0, r.jsx)(_.ChevronSmallLeftIcon, {
+                              size: "xs",
+                              color: "currentColor",
+                              className: en.caret,
+                            }),
+                            (0, r.jsx)(_.Text, {
+                              variant: "text-md/normal",
+                              children: et.Z.Messages.AGE_GATE_GO_BACK,
+                            }),
+                          ],
+                        }),
+                      })
+                    : null,
+                  k,
+                  F,
+                ],
+              });
+        }
+        render() {
+          let { isUnderage: e, isMobileWebInviteRegistration: t } = this.props;
+          if (e || this.hasError("date_of_birth")) return (0, r.jsx)(p.Z, {});
+          let { invite: n, giftCode: s, guildTemplate: i } = this.props,
+            a =
+              null != n &&
+              null == n.guild &&
+              null == n.channel &&
+              null != n.inviter;
+          return null == n || a || t
+            ? null != i
+              ? this.renderFull(() => (0, r.jsx)(Z.Z, { guildTemplate: i }), !0)
+              : null != s
+                ? this.renderFull(() => (0, r.jsx)(W.Z, { giftCode: s }))
+                : null != n && a && n.state === J.r2o.RESOLVED && !t
+                  ? this.renderFull(() =>
+                      (0, r.jsx)(Y.Z, { invite: n, isRegister: !0 }),
+                    )
+                  : this.renderFull()
+            : n.state === J.r2o.RESOLVING
+              ? this.renderInviteResolving()
+              : this.renderInvite();
+        }
+        constructor(e) {
+          var t;
+          super(e),
+            er(this, "emailRef", void 0),
+            er(this, "usernameRef", void 0),
+            er(this, "globalNameRef", void 0),
+            er(this, "passwordRef", void 0),
+            er(this, "dateOfBirthRef", i.createRef()),
+            er(this, "_retryTimer", new h.V7()),
+            er(this, "handleGotoLogin", (e) => {
+              let t;
+              let { email: n } = this.state,
+                {
+                  giftCode: s,
+                  guildTemplate: r,
+                  invite: i,
+                  location: a,
+                  onLoginStart: l,
+                  redirectTo: c,
+                  transitionTo: u,
+                  isMobileWebInviteRegistration: d,
+                } = this.props;
+              if (d) {
+                null == l || l(e);
+                return;
+              }
+              let h = null != a ? (0, o.parse)(a.search) : {};
+              null != i
+                ? (t = J.Z5c.INVITE_LOGIN(i.code))
+                : null != s
+                  ? (t = J.Z5c.GIFT_CODE_LOGIN(s.code))
+                  : null != r
+                    ? (t = J.Z5c.GUILD_TEMPLATE_LOGIN(r.code))
+                    : null != c
+                      ? ((t = J.Z5c.LOGIN), (h.redirect_to = c))
+                      : ((t = J.Z5c.LOGIN), "" !== n && (h = { email: n })),
+                E.Z.loginReset(),
+                u(t, { search: (0, o.stringify)(h) }),
+                null == l || l(e),
+                V.S.dispatch(J.CkL.WAVE_EMPHASIZE);
+            }),
+            er(this, "handleSubmit", (e) => {
+              null == e || e.preventDefault();
+              let {
+                  email: t,
+                  username: n,
+                  password: s,
+                  parsedDateOfBirth: r,
+                } = this.state,
+                { invite: i, consentRequired: a } = this.props;
+              if (null !== a) {
+                if (null == i) {
+                  let e = !1;
+                  if (
+                    (0 === t.length &&
+                      (this.setState({
+                        emailClientError: et.Z.Messages.REQUIRED,
+                      }),
+                      (e = !0)),
+                    0 === n.length &&
+                      (this.setState({
+                        usernameClientError: et.Z.Messages.REQUIRED,
+                      }),
+                      (e = !0)),
+                    0 === s.length &&
+                      (this.setState({
+                        passwordClientError: et.Z.Messages.REQUIRED,
+                      }),
+                      (e = !0)),
+                    null == r &&
+                      (this.setState({
+                        dateOfBirthClientError: et.Z.Messages.REQUIRED,
+                      }),
+                      (e = !0)),
+                    e)
+                  )
+                    return;
+                }
+                this.handleRegister();
+              }
+            }),
+            er(this, "handleBirthdayChange", (e) => {
+              this.setState({ parsedDateOfBirth: e }),
+                null != e && this.setState({ dateOfBirthClientError: null });
+            }),
+            er(this, "renderUsernameValidation", () => {
+              let {
+                  username: e,
+                  globalName: t,
+                  usernameFocused: n,
+                } = this.state,
+                {
+                  usernameSuggestion: s,
+                  uniqueUsernameRegistrationConfig: { livecheckEnabled: i },
+                } = this.props;
+              return (0, r.jsx)(ec, {
+                username: e,
+                suggestion: s,
+                livecheckEnabled: i,
+                globalName: t,
+                isUsernameFocused: n,
+                onClickSuggestion: () => {
+                  null != this.usernameRef && this.usernameRef.focus(),
+                    null != s && s.length > 0 && this.setState({ username: s });
+                },
+              });
+            });
+          let n = null != e.location ? (0, o.parse)(e.location.search) : {};
+          this.state = {
+            email: null !== (t = n.email) && void 0 !== t ? t : "",
+            username: "",
+            globalName: "",
+            password: "",
+            parsedDateOfBirth: null,
+            emailClientError: null,
+            usernameClientError: null,
+            passwordClientError: null,
+            dateOfBirthClientError: null,
+            consent: !e.consentRequired,
+            consentRequiredProp: e.consentRequired,
+            isRateLimited: !1,
+            globalNameFocused: !1,
+            usernameFocused: !1,
+          };
+        }
+      }
+      function eo(e) {
+        let t = (0, d.cj)([F.Z, k.default, g.Z, L.Z, b.Z], () => ({
+            consentRequired: F.Z.getAuthenticationConsentRequired(),
+            registering: k.default.getRegisterStatus() === J.$ib.REGISTERING,
+            apiErrors: k.default.getErrors(),
+            authenticated: k.default.isAuthenticated(),
+            isUnderage: g.Z.isUnderageAnonymous(),
+            country: L.Z.getCountryCode(),
+            hasLoggedInAccounts: b.Z.getHasLoggedInAccounts(),
+          })),
+          n = (0, y.F4)(),
+          s = (0, d.e7)([P.Z], () => P.Z.registrationUsernameSuggestion()),
+          [a, l] = i.useState(X.EW.FULL);
+        return (
+          (0, m.Z)(
+            {
+              type: u.ImpressionTypes.VIEW,
+              name: u.ImpressionNames.USER_REGISTRATION,
+              properties: {
+                impression_group: u.ImpressionGroups.USER_REGISTRATION_FLOW,
+                step: a,
+              },
+            },
+            {},
+            [a],
+          ),
+          (0, r.jsx)(el, {
+            onChangeStep: (e) => l(e),
+            registrationCopyExperimentConfig: N.Z.getCurrentConfig(
+              { location: "0ba758_2" },
+              { autoTrackExposure: !1 },
+            ),
+            uniqueUsernameRegistrationConfig: n,
+            usernameSuggestion: s,
+            ...e,
+            ...t,
+          })
+        );
+      }
+      function ec(e) {
+        let t,
+          {
+            username: n,
+            suggestion: s,
+            globalName: i,
+            livecheckEnabled: a,
+            isUsernameFocused: l,
+            onClickSuggestion: o,
+          } = e,
+          u = (0, G.a)(n, a, !0),
+          d = a && n.length > 0;
+        return (
+          (t = d
+            ? (0, c.EQ)(u)
+                .with({ type: j.K.ERROR, message: c.P.select() }, (e) =>
+                  (0, r.jsx)(_.Text, {
+                    className: en.messageNegative,
+                    variant: "text-sm/normal",
+                    children: e,
+                  }),
+                )
+                .with({ type: j.K.AVAILABLE, message: c.P.select() }, (e) =>
+                  (0, r.jsx)(_.Text, {
+                    className: en.messagePositive,
+                    variant: "text-sm/normal",
+                    children: e,
+                  }),
+                )
+                .otherwise(() =>
+                  (0, r.jsx)(_.Text, {
+                    variant: "text-sm/normal",
+                    color: "text-normal",
+                    children: et.Z.Messages.POMELO_EXISTING_FLOW_ERROR_INVALID,
+                  }),
+                )
+            : null != s && s.length > 0 && i.length > 0
+              ? (0, r.jsx)(_.Text, {
+                  variant: "text-sm/normal",
+                  color: "text-normal",
+                  children: et.Z.Messages.UU_REGISTER_SUGGESTION.format({
+                    suggestion: s,
+                    nameOnClick: o,
+                  }),
+                })
+              : (0, r.jsx)(_.Text, {
+                  variant: "text-sm/normal",
+                  color: "text-normal",
+                  children: et.Z.Messages.POMELO_EXISTING_FLOW_ERROR_INVALID,
+                })),
+          (0, r.jsx)(B.Z, {
+            show: (d && (null == u ? void 0 : u.type) === j.K.ERROR) || l,
+            top: -12,
+            bottom: 20,
+            children: t,
+          })
+        );
+      }
+      er(el, "defaultProps", {
+        giftCodeResolved: !1,
+        transitionTo: (e) => n.g.location.assign(e),
+      });
+    },
+    424044: function (e, t, n) {
+      n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(442837),
+        a = n(481060),
+        l = n(893776),
+        o = n(232567),
+        c = n(129293),
+        u = n(388905),
+        d = n(353926),
+        h = n(185625),
+        _ = n(551549),
+        E = n(108427),
+        g = n(314897),
+        p = n(981631),
+        f = n(689938),
+        m = n(113207);
+      i.ZP.initialize();
+      t.Z = (e) => {
+        let { location: t } = e,
+          n = (0, i.e7)([g.default], () => g.default.isAuthenticated()),
+          I = (0, i.e7)([d.Z], () => d.Z.hasLoadedExperiments),
+          N = (0, _.oK)("RSL - Landing Page"),
+          [T, A] = r.useState(!1),
+          [x, C] = r.useState(f.Z.Messages.AUTHORIZING),
+          [S, O] = r.useState(!0),
+          R = (e) => {
+            switch (e) {
+              case p.evJ.INVALID_FORM_BODY:
+              case p.evJ.DSA_RSL_REPORT_NOT_FOUND:
+                C(f.Z.Messages.REPORT_SECOND_LOOK_NOT_FOUND_ERROR);
+                break;
+              case p.evJ.DSA_RSL_ALREADY_REQUESTED:
+                C(f.Z.Messages.REPORT_SECOND_LOOK_ALREADY_REQUESTED_ERROR);
+                break;
+              case p.evJ.DSA_RSL_LIMITED_TIME:
+                C(f.Z.Messages.REPORT_SECOND_LOOK_LIMITED_TIME_ERROR);
+                break;
+              case p.evJ.DSA_RSL_REPORT_INELIGIBLE:
+                C(f.Z.Messages.REPORT_SECOND_LOOK_INELIGIBLE_ERROR);
+                break;
+              default:
+                C(f.Z.Messages.REPORT_SECOND_LOOK_UNKNOWN_ERROR);
+            }
+          };
+        return (
+          r.useEffect(() => {
+            n
+              ? (O(!0),
+                o
+                  .k({ withAnalyticsToken: !0 })
+                  .then(() => O(!1))
+                  .catch(() => O(!1)))
+              : O(!1);
+          }, [n]),
+          r.useEffect(() => {
+            !I && !N && l.Z.getExperiments();
+          }, [I, N]),
+          r.useEffect(() => {
+            let e = async (e) => {
+              var t, n;
+              try {
+                let n = null != e ? await (0, h.hs)(e) : void 0;
+                null != n
+                  ? C(f.Z.Messages.REPORT_SECOND_LOOK_SUCCESS_TITLE)
+                  : R(null === (t = n.body) || void 0 === t ? void 0 : t.code);
+              } catch (e) {
+                R(null === (n = e.body) || void 0 === n ? void 0 : n.code);
+              } finally {
+                A(!1);
+              }
+            };
+            A(!0), e((0, c.Z)(t)), (0, E.e)("report_second_look");
+          }, [t]),
+          N &&
+            !S &&
+            (0, s.jsxs)(u.ZP, {
+              children: [
+                (0, s.jsx)(u.Dx, { className: m.marginBottom8, children: x }),
+                T && (0, s.jsx)(a.Spinner, {}),
+              ],
+            })
+        );
+      };
+    },
+    881317: function (e, t, n) {
+      n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(990547),
+        a = n(442837),
+        l = n(481060),
+        o = n(893776),
+        c = n(232567),
+        u = n(388905),
+        d = n(353926),
+        h = n(82554),
+        _ = n(726521),
+        E = n(185625),
+        g = n(314897),
+        p = n(63063),
+        f = n(981631),
+        m = n(689938),
+        I = n(987742),
+        N = n(113207);
+      a.ZP.initialize();
+      let T = (e) => {
+        let { title: t, menuType: r } = e,
+          a = () => {
+            (0, l.openModalLazy)(async () => {
+              let { default: e } = await n.e("93288").then(n.bind(n, 396410));
+              return (t) =>
+                (0, s.jsx)(e, {
+                  ...t,
+                  onSuccess: o,
+                  headerText: m.Z.Messages.ENTER_EMAIL,
+                  confirmButtonText: m.Z.Messages.NEXT,
+                  confirmButtonColor: l.Button.Colors.BRAND,
+                  impressionName: i.ImpressionNames.URF_ENTER_EMAIL,
+                });
+            });
+          },
+          o = (e) => {
+            let t = async () => {
+                await (0, E.yL)(r, e);
+              },
+              a = async (t) => await (0, E.RV)(r, e, t),
+              o = (e) => {
+                let t = null == e ? void 0 : e.token;
+                r === h.BM.MESSAGE
+                  ? (0, _.eE)(t)
+                  : r === h.BM.USER && (0, _.JM)(t);
+              };
+            t(),
+              (0, l.openModalLazy)(async () => {
+                let { default: e } = await n.e("94566").then(n.bind(n, 965072));
+                return (n) =>
+                  (0, s.jsx)(e, {
+                    ...n,
+                    onFormSubmit: a,
+                    onResend: t,
+                    onSuccess: o,
+                    headerText:
+                      m.Z.Messages
+                        .MEMBER_VERIFICATION_EMAIL_VERIFICATION_EMAIL_SENT,
+                    confirmButtonText: m.Z.Messages.VERIFY,
+                    confirmButtonColor: l.Button.Colors.BRAND,
+                    impressionName: i.ImpressionNames.URF_CONFIRM_EMAIL_CODE,
+                  });
+              });
+          };
+        return (0, s.jsx)("div", {
+          className: I.buttonColumn,
+          children: (0, s.jsx)(l.Button, {
+            className: N.__invalid_reportButton,
+            fullWidth: !0,
+            color: l.Button.Colors.BRAND,
+            onClick: () => a(),
+            children: t,
+          }),
+        });
+      };
+      t.Z = () => {
+        let [e, t] = r.useState(!0),
+          [n, i] = r.useState(!1),
+          _ = (0, a.e7)([g.default], () => g.default.isAuthenticated()),
+          A = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments),
+          x = () => {
+            (0, E.qJ)()
+              .then(() => {
+                t(!1), i(!0);
+              })
+              .catch(() => {
+                t(!1), i(!1);
+              });
+          };
+        return (
+          r.useEffect(() => {
+            _
+              ? (t(!0),
+                c
+                  .k({ withAnalyticsToken: !0 })
+                  .then(() => x())
+                  .catch(() => t(!1)))
+              : x();
+          }, [_]),
+          r.useEffect(() => {
+            (async () => {
+              !A && (await o.Z.getLocationMetadata(), o.Z.getExperiments());
+            })();
+          }, [A]),
+          e || !A
+            ? (0, s.jsx)(u.ZP, { children: (0, s.jsx)(l.Spinner, {}) })
+            : n &&
+              (0, s.jsxs)(u.ZP, {
+                children: [
+                  (0, s.jsx)(u.Dx, {
+                    className: N.marginBottom8,
+                    children: m.Z.Messages.URF_LANDING_PAGE_TITLE,
+                  }),
+                  (0, s.jsx)(u.DK, {
+                    className: N.marginBottom8,
+                    children: m.Z.Messages.URF_LANDING_PAGE_SUBTITLE.format({
+                      supportURL: p.Z.getArticleURL(
+                        f.BhN.COPYRIGHT_AND_IP_POLICY,
+                      ),
+                    }),
+                  }),
+                  (0, s.jsxs)("div", {
+                    className: I.container,
+                    children: [
+                      (0, s.jsx)(T, {
+                        title:
+                          m.Z.Messages.URF_LANDING_PAGE_REPORT_MESSAGE_BUTTON,
+                        menuType: h.BM.MESSAGE,
+                      }),
+                      (0, s.jsx)(T, {
+                        title:
+                          m.Z.Messages
+                            .URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON,
+                        menuType: h.BM.USER,
+                      }),
+                    ],
+                  }),
+                ],
+              })
+        );
+      };
+    },
+    886806: function (e, t, n) {
+      n(47120);
+      var s,
+        r = n(735250),
+        i = n(470079),
+        a = n(120356),
+        l = n.n(a),
+        o = n(442837),
+        c = n(893776),
+        u = n(129293),
+        d = n(388905),
+        h = n(17894),
+        _ = n(108427),
+        E = n(314897),
+        g = n(626135),
+        p = n(981631),
+        f = n(689938),
+        m = n(237810),
+        I = n(113207);
+      function N(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      o.ZP.initialize();
+      class T extends (s = i.PureComponent) {
+        componentDidMount() {
+          this.handleVerify(), (0, _.e)("verify_email");
+        }
+        renderVerifyFailed() {
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.Ee, {
+                src: n(375673),
+                className: l()(m.image, I.marginBottom20),
+              }),
+              (0, r.jsx)(d.Dx, {
+                className: I.marginBottom8,
+                children: f.Z.Messages.VERFICATION_EXPIRED,
+              }),
+              (0, r.jsx)(d.DK, {
+                className: I.marginBottom40,
+                children: f.Z.Messages._AUTH_VERFICATION_EXPIRED_SUGGESTION,
+              }),
+              (0, r.jsx)(d.zx, {
+                onClick: this.handleLogin,
+                children: f.Z.Messages._LOGIN,
+              }),
+            ],
+          });
+        }
+        renderVerifySucceeded() {
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.Ee, {
+                src: n(73962),
+                className: l()(m.image, I.marginBottom20),
+              }),
+              (0, r.jsx)(d.Dx, {
+                className: I.marginBottom40,
+                children: f.Z.Messages.VERIFICATION_VERIFIED,
+              }),
+              (0, r.jsx)(d.zx, {
+                onClick: this.handleOpenApp,
+                children: f.Z.Messages.VERIFICATION_OPEN_DISCORD,
+              }),
+            ],
+          });
+        }
+        renderVerifying() {
+          return (0, r.jsxs)(d.ZP, {
+            children: [
+              (0, r.jsx)(d.Ee, {
+                src: n(892235),
+                className: l()(m.image, I.marginBottom20),
+              }),
+              (0, r.jsx)(d.Dx, {
+                className: I.marginBottom8,
+                children: f.Z.Messages.VERIFICATION_VERIFYING,
+              }),
+              (0, r.jsx)(d.DK, {
+                className: I.marginBottom40,
+                children: f.Z.Messages.ACTION_MAY_TAKE_A_MOMENT,
+              }),
+              (0, r.jsx)(d.zx, { submitting: !0, color: d.zx.Colors.PRIMARY }),
+            ],
+          });
+        }
+        render() {
+          let { verifyFailed: e, verifySucceeded: t } = this.props;
+          return e
+            ? this.renderVerifyFailed()
+            : t
+              ? this.renderVerifySucceeded()
+              : this.renderVerifying();
+        }
+        constructor(...e) {
+          super(...e),
+            N(this, "handleVerify", () => {
+              let e = (0, u.Z)(this.props.location);
+              null != e && c.Z.verify(e);
+            }),
+            N(this, "handleLogin", () => {
+              let { transitionTo: e } = this.props;
+              e(p.Z5c.LOGIN);
+            }),
+            N(this, "handleOpenApp", () => {
+              let { verifyingUserId: e } = this.props;
+              g.default.track(p.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+                verifying_user_id: e,
+              }),
+                (0, h.Z)("verify_email");
+            });
+        }
+      }
+      N(T, "defaultProps", { transitionTo: (e) => n.g.location.assign(e) }),
+        (t.Z = o.ZP.connectStores([E.default], () => ({
+          verifyFailed: E.default.didVerifyFail(),
+          verifyErrors: E.default.getVerifyErrors(),
+          verifySucceeded: E.default.didVerifySucceed(),
+          fingerprint: E.default.getFingerprint(),
+          verifyingUserId: E.default.getVerifyingUserId(),
+        }))(T));
+    },
+    937154: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return i;
+        },
+      }),
+        n(47120);
+      var s = n(470079);
+      function r() {
+        return (
+          "undefined" == typeof document ||
+          "visible" === document.visibilityState
+        );
+      }
+      function i() {
+        let [e, t] = (0, s.useState)(r());
+        return (
+          (0, s.useEffect)(() => {
+            function e() {
+              t(r());
+            }
+            return (
+              window.addEventListener("visibilitychange", e),
+              () => {
+                window.removeEventListener("visibilitychange", e);
+              }
+            );
+          }, [t]),
+          e
+        );
+      }
+    },
+    126399: function (e, t, n) {
+      n(47120);
+      var s = n(544891),
+        r = n(570140),
+        i = n(893776),
+        a = n(899742),
+        l = n(743142),
+        o = n(117240),
+        c = n(626135),
+        u = n(317770),
+        d = n(981631);
+      function h(e, t) {
+        c.default.track(d.rMx.BROWSER_HANDOFF_SUCCEEDED, {
+          authenticated: e,
+          handoff_source: t,
+        });
+      }
+      class _ extends u.Z {
+        _initialize() {
+          r.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd),
+            r.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff);
+        }
+        _terminate() {
+          r.Z.unsubscribe("BROWSER_HANDOFF_END", this.handleEnd),
+            r.Z.unsubscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff);
+        }
+        handleHandoff(e) {
+          let {
+            handoffKey: t,
+            handoffToken: n,
+            fingerprint: r,
+            handoffSource: o,
+          } = e;
+          null != n
+            ? s.tn
+                .post({
+                  url: d.ANM.HANDOFF_EXCHANGE,
+                  body: { key: t, handoff_token: n },
+                })
+                .then(
+                  (e) => {
+                    let { body: t } = e;
+                    (0, a.Vb)(t.user), i.Z.loginToken(t.token, !1), h(!0, o);
+                  },
+                  (e) => {
+                    if (
+                      (null != r && h(!1, o),
+                      i.Z.setFingerprint(r),
+                      (0, a.lx)(),
+                      o === l.F.ROLE_SUBSCRIPTION)
+                    ) {
+                      var t;
+                      c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+                        reason:
+                          null !== (t = e.message) && void 0 !== t ? t : e.text,
+                        handoff_source: o,
+                      });
+                    }
+                  },
+                )
+            : null != r
+              ? (i.Z.setFingerprint(r), h(!1, o), (0, a.lx)())
+              : (i.Z.setFingerprint(r), (0, a.by)());
+        }
+        constructor(...e) {
+          var t, n, s;
+          super(...e),
+            (t = this),
+            (n = "handleEnd"),
+            (s = (e) => {
+              let { handoffToken: t, fingerprint: n } = e,
+                s = o.Z.key;
+              null != s && o.Z.isHandoffAvailable()
+                ? this.handleHandoff({
+                    handoffKey: s,
+                    handoffToken: t,
+                    fingerprint: n,
+                    handoffSource: void 0,
+                  })
+                : (i.Z.setFingerprint(null), (0, a.by)());
+            }),
+            n in t
+              ? Object.defineProperty(t, n, {
+                  value: s,
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0,
+                })
+              : (t[n] = s);
+        }
+      }
+      t.Z = new _();
+    },
+    605782: function (e, t, n) {
+      var s = n(735250),
+        r = n(470079),
+        i = n(266067),
+        a = n(215569);
+      class l extends r.Component {
+        render() {
+          let {
+              children: e,
+              location: t,
+              history: n,
+              staticContext: l,
+              match: o,
+              ...c
+            } = this.props,
+            u = null,
+            d = null;
+          return (
+            r.Children.forEach(e, (e) => {
+              if (null == u && r.isValidElement(e)) {
+                let { component: s, render: a, ...o } = e.props,
+                  c = o.path || o.from;
+                if (
+                  null !=
+                  (u =
+                    null != c ? (0, i.LX)(t.pathname, { ...o, path: c }) : null)
+                )
+                  (o = {
+                    ...o,
+                    key: c,
+                    location: t,
+                    match: u,
+                    history: n,
+                    staticContext: l,
+                  }),
+                    null != s
+                      ? (d = r.createElement(s, o))
+                      : null != a && (d = a(o));
+              }
+            }),
+            (0, s.jsx)(a.W, { ...c, children: d })
+          );
+        }
+      }
+      t.Z = (0, i.EN)(l);
+    },
+    771308: function (e, t, n) {
+      n.d(t, {
+        Av: function () {
+          return c;
+        },
+        hp: function () {
+          return d;
+        },
+        wE: function () {
+          return u;
+        },
+      });
+      var s = n(544891),
+        r = n(570140),
+        i = n(959776),
+        a = n(626135),
+        l = n(723359),
+        o = n(981631);
+      function c(e, t) {
+        return (
+          (0, i.Z)(e, t),
+          a.default.track(o.rMx.AGE_GATE_ACTION, {
+            source: t,
+            action: l.Al.AGE_GATE_SUBMITTED,
+          }),
+          s.tn
+            .patch({
+              url: o.ANM.ME,
+              oldFormErrors: !0,
+              body: { date_of_birth: e.format("YYYY-MM-DD") },
+            })
+            .then((e) => {
+              let n = e.body;
+              r.Z.dispatch({ type: "CURRENT_USER_UPDATE", user: n }),
+                a.default.track(o.rMx.AGE_GATE_ACTION, {
+                  source: t,
+                  action: l.Al.AGE_GATE_SUCCESS,
+                });
+            })
+        );
+      }
+      function u(e) {
+        r.Z.dispatch({ type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION" }),
+          a.default.track(o.rMx.AGE_GATE_ACTION, {
+            source: e,
+            action: l.Al.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION,
+          });
+      }
+      function d(e) {
+        r.Z.dispatch({ type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER" }),
+          a.default.track(o.rMx.AGE_GATE_ACTION, {
+            source: e,
+            action: l.Al.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER,
+          });
+      }
+    },
+    899370: function (e, t, n) {
+      var s,
+        r,
+        i,
+        a,
+        l = n(973361),
+        o = n(442837),
+        c = n(570140),
+        u = n(358085),
+        d = n(723359);
+      let h = null,
+        _ = "underage";
+      class E extends (a = o.ZP.Store) {
+        isUnderageAnonymous() {
+          if (u.isPlatformEmbedded) {
+            if (null != h && h + d.k0 > Date.now()) return !0;
+          } else return null != l.parse(document.cookie)[_];
+          return !1;
+        }
+      }
+      (i = "AgeGateStore"),
+        (r = "displayName") in (s = E)
+          ? Object.defineProperty(s, r, {
+              value: i,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0,
+            })
+          : (s[r] = i),
+        (t.Z = new E(c.Z, {
+          AGE_GATE_PREVENT_UNDERAGE_REGISTRATION: function () {
+            h = Date.now();
+            document.cookie = "".concat(_, "=1;path=/");
+          },
+          LOGIN_SUCCESS: function () {
+            h = null;
+            document.cookie = "".concat(_, "=1;path=/;max-age=0");
+          },
+        }));
+    },
+    224841: function (e, t, n) {
+      var s = n(735250);
+      n(470079);
+      var r = n(481060),
+        i = n(388905),
+        a = n(703656),
+        l = n(63063),
+        o = n(981631),
+        c = n(689938),
+        u = n(634645);
+      let d = () => (0, a.uL)(o.Z5c.LOGIN);
+      t.Z = (e) => {
+        let { authBoxClassName: t, underageMessage: a } = e;
+        return (0, s.jsxs)(i.ZP, {
+          className: t,
+          children: [
+            (0, s.jsx)("img", { alt: "", src: n(231443), className: u.img }),
+            (0, s.jsx)(i.Dx, {
+              className: u.title,
+              children: c.Z.Messages.AGE_GATE_UNDERAGE_HEADER,
+            }),
+            (0, s.jsx)(i.DK, {
+              className: u.subtitle,
+              children: c.Z.Messages.AGE_GATE_UNDERAGE_BODY.format({
+                underageMessage:
+                  null != a
+                    ? a
+                    : c.Z.Messages.AGE_GATE_UNDERAGE_BODY_DEFAULT_REG_MESSAGE,
+                helpURL: l.Z.getArticleURL(o.BhN.AGE_GATE),
+              }),
+            }),
+            (0, s.jsx)(r.Button, {
+              fullWidth: !0,
+              onClick: d,
+              children: c.Z.Messages.AGE_GATE_UNDERAGE_BACK_TO_LOGIN,
+            }),
+          ],
+        });
+      };
+    },
+    13430: function (e, t, n) {
+      n(47120), n(653041);
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(913527),
+        o = n.n(l),
+        c = n(481060),
+        u = n(285888),
+        d = n(689938),
+        h = n(535701);
+      let _ = o()().localeData().months(),
+        E = Array.from(Array(31).keys()).map((e) => ({
+          value: e + 1,
+          label: "".concat(e + 1),
+        })),
+        g = Array.from(Array(12).keys()).map((e) => ({
+          value: e + 1,
+          label: _[e],
+        })),
+        p = /[a-zA-Z0-9]/;
+      function f(e) {
+        let { options: t, selectOption: n, children: i } = e,
+          [a, l] = r.useState("");
+        r.useEffect(() => {
+          if ("" !== a) {
+            let e = setTimeout(() => l(""), 1e3);
+            return () => clearTimeout(e);
+          }
+        }, [a, l]);
+        let o = r.useCallback(
+          (e) => {
+            if (p.test(e.key)) {
+              let s = "".concat(a).concat(e.key.toLowerCase()),
+                r = t.find((e) => e.label.toLowerCase().startsWith(s));
+              null != r && n(r.value), l(s);
+            }
+          },
+          [n, l, a, t],
+        );
+        return (0, s.jsx)("div", { onKeyDown: o, children: i });
+      }
+      function m() {
+        let e = o()().localeData().longDateFormat("L"),
+          t = e.indexOf("D"),
+          n = e.indexOf("M"),
+          s = e.indexOf("Y");
+        return (
+          (-1 === t || -1 === n || -1 === s) && ((t = 0), (n = 1), (s = 2)),
+          [
+            { index: t, type: "day" },
+            { index: n, type: "month" },
+            { index: s, type: "year" },
+          ].sort((e, t) => (e.index < t.index ? -1 : 1))
+        );
+      }
+      let I = r.forwardRef(function (e, t) {
+        let {
+            value: n,
+            wrapperClassName: i,
+            onChange: l,
+            onPopulated: _,
+            error: p,
+            autoFocus: I,
+            required: N,
+          } = e,
+          {
+            day: T,
+            setDay: A,
+            month: x,
+            setMonth: C,
+            year: S,
+            setYear: O,
+          } = (function (e) {
+            let t = null,
+              n = null,
+              s = null;
+            null != e && ((t = e.date()), (n = e.month() + 1), (s = e.year()));
+            let [i, a] = r.useState(t),
+              [l, o] = r.useState(n),
+              [c, u] = r.useState(s);
+            return {
+              day: i,
+              setDay: a,
+              month: l,
+              setMonth: o,
+              year: c,
+              setYear: u,
+            };
+          })(n),
+          R = r.useMemo(
+            () =>
+              null != T && null != x && null != S
+                ? o()("".concat(T, "/").concat(x, "/").concat(S), "DD/MM/YYYY")
+                : null,
+            [T, x, S],
+          );
+        r.useEffect(() => {
+          l((null == R ? void 0 : R.isValid()) ? R : null);
+        }, [R, l]);
+        let v = p;
+        null != R &&
+          !R.isValid() &&
+          (v = d.Z.Messages.AGE_GATE_INVALID_BIRTHDAY);
+        let Z = (function () {
+            let e = new Date().getFullYear(),
+              t = r.useRef(
+                Array.from(Array(150).keys()).map((t) => ({
+                  value: e - t - 3,
+                  label: "".concat(e - t - 3),
+                })),
+              );
+            return (
+              r.useEffect(() => {
+                t.current = Array.from(Array(150).keys()).map((t) => ({
+                  value: e - t - 3,
+                  label: "".concat(e - t - 3),
+                }));
+              }, [e]),
+              t.current
+            );
+          })(),
+          [b, D] = r.useState(I ? 0 : -1),
+          L = r.useRef(null),
+          M = r.useRef(null),
+          P = r.useRef(null),
+          j = r.useMemo(m, []),
+          y = r.useCallback(() => {
+            var e, t, n, s;
+            switch (null === (e = j[b]) || void 0 === e ? void 0 : e.type) {
+              case "day":
+                null === (t = L.current) || void 0 === t || t.focus();
+                break;
+              case "month":
+                null === (n = M.current) || void 0 === n || n.focus();
+                break;
+              case "year":
+                null === (s = P.current) || void 0 === s || s.focus();
+            }
+          }, [b, L, M, P, j]);
+        r.useEffect(() => {
+          setTimeout(y, 500);
+        }, []),
+          r.useEffect(() => {
+            if (b >= j.length) {
+              null == _ || _();
+              return;
+            }
+            y();
+          }, [b, y]);
+        let G = [];
+        for (let e = 0; e < 3; e++) {
+          let { type: t } = j[e];
+          switch (t) {
+            case "day":
+              G.push({
+                key: "day",
+                input: (0, s.jsx)(f, {
+                  options: E,
+                  selectOption: A,
+                  children: (0, s.jsx)(u.Z, {
+                    ref: L,
+                    className: h.__invalid_inputDay,
+                    "aria-label": d.Z.Messages.AGE_GATE_DOB_DAY,
+                    menuPlacement: u.Z.MenuPlacements.TOP,
+                    placeholder: (0, s.jsx)("span", {
+                      "aria-hidden": !0,
+                      children: d.Z.Messages.AGE_GATE_DOB_DAY,
+                    }),
+                    options: E,
+                    value: T,
+                    onChange: (t) => {
+                      let { value: n } = t;
+                      A(n), D(e + 1);
+                    },
+                    maxMenuHeight: 215,
+                  }),
+                }),
+              });
+              break;
+            case "month":
+              G.push({
+                key: "month",
+                input: (0, s.jsx)(f, {
+                  options: g,
+                  selectOption: C,
+                  children: (0, s.jsx)(u.Z, {
+                    ref: M,
+                    className: h.__invalid_inputMonth,
+                    "aria-label": d.Z.Messages.AGE_GATE_DOB_MONTH,
+                    menuPlacement: u.Z.MenuPlacements.TOP,
+                    placeholder: (0, s.jsx)("span", {
+                      "aria-hidden": !0,
+                      children: d.Z.Messages.AGE_GATE_DOB_MONTH,
+                    }),
+                    options: g,
+                    value: x,
+                    onChange: (t) => {
+                      let { value: n } = t;
+                      C(n), D(e + 1);
+                    },
+                    maxMenuHeight: 215,
+                  }),
+                }),
+              });
+              break;
+            case "year":
+              G.push({
+                key: "year",
+                input: (0, s.jsx)(f, {
+                  options: Z,
+                  selectOption: O,
+                  children: (0, s.jsx)(u.Z, {
+                    ref: P,
+                    className: h.__invalid_inputYear,
+                    "aria-label": d.Z.Messages.AGE_GATE_DOB_YEAR,
+                    menuPlacement: u.Z.MenuPlacements.TOP,
+                    placeholder: (0, s.jsx)("span", {
+                      "aria-hidden": !0,
+                      children: d.Z.Messages.AGE_GATE_DOB_YEAR,
+                    }),
+                    options: Z,
+                    value: S,
+                    onChange: (t) => {
+                      let { value: n } = t;
+                      O(n), D(e + 1);
+                    },
+                    maxMenuHeight: 215,
+                  }),
+                }),
+              });
+          }
+        }
+        return (0, s.jsxs)("fieldset", {
+          className: a()(h.container, i),
+          children: [
+            (0, s.jsx)(c.FormTitle, {
+              tag: "legend",
+              required: N,
+              error: v,
+              children: d.Z.Messages.AGE_GATE_DATE_OF_BIRTH,
+            }),
+            (0, s.jsx)("div", {
+              className: h.inputs,
+              children: G.map((e, t) => {
+                let { key: n, input: r } = e;
+                return (0, s.jsx)(
+                  "div",
+                  { tabIndex: t + 1, className: h[n], children: r },
+                  n,
+                );
+              }),
+            }),
+          ],
+        });
+      });
+      t.Z = I;
+    },
+    267394: function (e, t, n) {
+      n.d(t, {
+        A: function () {
+          return r;
+        },
+      });
+      var s = n(570140);
+      function r(e) {
+        s.Z.dispatch({ type: "AUTH_INVITE_UPDATE", invite: e });
+      }
+    },
+    743142: function (e, t, n) {
+      n.d(t, {
+        F: function () {
+          return r;
+        },
+        L: function () {
+          return o;
+        },
+      });
+      var s,
+        r,
+        i = n(754688),
+        a = n(981631),
+        l = n(176505);
+      function o(e) {
+        let t = decodeURIComponent(e),
+          n = (0, i.Qj)(t);
+        return null != n && n.channelId === l.oC.ROLE_SUBSCRIPTIONS
+          ? "role_subscription"
+          : t === a.Z5c.SETTINGS(a.oAB.SUBSCRIPTIONS, "role-subscriptions")
+            ? "role_subscription_setting"
+            : void 0;
+      }
+      ((s = r || (r = {})).ROLE_SUBSCRIPTION = "role_subscription"),
+        (s.ROLE_SUBSCRIPTION_SETTING = "role_subscription_setting");
+    },
+    355142: function (e, t, n) {
+      var s, r, i, a, l, o;
+      n.d(t, {
+        EW: function () {
+          return r;
+        },
+      }),
+        ((a = s || (s = {})).VIEWED = "viewed"),
+        (a.SUBMITTED = "submitted"),
+        (a.RESEND_CODE = "resend_code"),
+        (a.INPUT_ERROR = "input_error"),
+        (a.RESPONSE_ERROR = "response_error"),
+        (a.SUCCESS = "success"),
+        ((l = r || (r = {})).IDENTITY = "identity"),
+        (l.DISPLAY_NAME = "display_name"),
+        (l.ACCOUNT_INFORMATION = "account_information"),
+        (l.FULL = "full"),
+        (l.AGE_GATE = "age_gate"),
+        (l.INVITE = "invite"),
+        (l.SMS_VERIFY = "sms_verify"),
+        ((o = i || (i = {})).ACCOUNT_IDENTITY = "Account Identity"),
+        (o.ACCOUNT_DISPLAY_NAME = "Account Display Name"),
+        (o.ACCOUNT_INFORMATION = "Account Information"),
+        (o.AGE_GATE = "Age Gate"),
+        (o.AGE_GATE_UNDERAGE = "Age Gate Underage"),
+        (o.PHONE_VERIFICATION = "Phone Verification"),
+        (o.REGISTER = "Register");
+    },
+    201207: function (e, t, n) {
+      var s = n(818083);
+      t.Z = (0, s.B)({
+        kind: "user",
+        id: "2022-04_registration_copy_updates",
+        label: "Registration Copy Updates",
+        defaultConfig: {
+          enableNewCopy: !1,
+          hasCopyAboveButton: !1,
+          hasProminentCopy: !1,
+        },
+        treatments: [
+          {
+            id: 1,
+            label: "Continue / Copy Above Button / High Prominence Copy",
+            config: {
+              enableNewCopy: !0,
+              hasCopyAboveButton: !0,
+              hasProminentCopy: !0,
+            },
+          },
+          {
+            id: 2,
+            label: "Continue / Copy Below Button / High Prominence Copy",
+            config: {
+              enableNewCopy: !0,
+              hasCopyAboveButton: !1,
+              hasProminentCopy: !0,
+            },
+          },
+          {
+            id: 3,
+            label: "Continue / Copy Above Button / Normal Prominence Copy",
+            config: {
+              enableNewCopy: !0,
+              hasCopyAboveButton: !0,
+              hasProminentCopy: !1,
+            },
+          },
+        ],
+      });
+    },
+    959776: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return l;
+        },
+      });
+      var s = n(913527),
+        r = n.n(s),
+        i = n(626135),
+        a = n(981631);
+      function l(e, t) {
+        i.default.track(a.rMx.AGE_GATE_SUBMITTED, {
+          dob: 18 > r()().diff(e, "years") ? e.format("YYYY-MM-DD") : null,
+          dob_day: e.date(),
+          dob_month: e.month() + 1,
+          dob_year: e.year(),
+          source: { section: t },
+        });
+      }
+    },
+    481230: function (e, t, n) {
+      n.d(t, {
+        R$: function () {
+          return p;
+        },
+        ZP: function () {
+          return g;
+        },
+      });
+      var s = n(913527),
+        r = n.n(s),
+        i = n(990547),
+        a = n(570140),
+        l = n(479531),
+        o = n(771308),
+        c = n(314897),
+        u = n(626135),
+        d = n(573261),
+        h = n(959776),
+        _ = n(981631),
+        E = n(723359);
+      function g(e) {
+        let { invite: t = null, giftCodeSKUId: n = null, ...s } = e;
+        return p({ ...s, invite: t, giftCodeSKUId: n });
+      }
+      function p(e) {
+        let {
+          email: t,
+          phoneToken: n,
+          username: s,
+          globalName: g,
+          consent: p,
+          password: f,
+          guildTemplateCode: m,
+          birthday: I,
+          invite: N = null,
+          giftCodeSKUId: T = null,
+          multiStep: A = !1,
+          promoEmailConsent: x = null,
+          usedUsernameSuggestion: C = null,
+        } = e;
+        return (
+          a.Z.dispatch({ type: "REGISTER", birthday: A ? I : null }),
+          null != I &&
+            ((0, h.Z)(I, _.jXE.REGISTER),
+            u.default.track(_.rMx.AGE_GATE_ACTION, {
+              source: E.L0.REGISTER,
+              action: E.Al.AGE_GATE_SUBMITTED,
+            }),
+            !(function (e) {
+              let t;
+              let n = r()().diff(e, "years");
+              !(n < 13) &&
+                ((t =
+                  n >= 13 && n <= 17
+                    ? "13-17"
+                    : n >= 18 && n <= 22
+                      ? "18-22"
+                      : "23+"),
+                u.default.track(_.rMx.USER_AGE_SUBMITTED, { age_bucket: t }));
+            })(I)),
+          d.Z.post({
+            url: _.ANM.REGISTER,
+            body: {
+              fingerprint: c.default.getFingerprint(),
+              email: t,
+              username: s,
+              global_name: g,
+              password: f,
+              invite: N,
+              consent: p,
+              phone_token: n,
+              date_of_birth: null == I ? void 0 : I.format("YYYY-MM-DD"),
+              gift_code_sku_id: T,
+              guild_template_code: m,
+              promotional_email_opt_in: null == x ? void 0 : x.checked,
+            },
+            trackedActionData: {
+              event: i.NetworkActionNames.USER_REGISTER,
+              properties: {
+                invite_code: N,
+                used_username_suggestion: C,
+                promotional_email_opt_in: null == x ? void 0 : x.checked,
+                promotional_email_pre_checked:
+                  null == x ? void 0 : x.preChecked,
+                was_unique_username: !0,
+              },
+            },
+          }).then(
+            (e) => {
+              a.Z.dispatch({ type: "REGISTER_SUCCESS", token: e.body.token }),
+                u.default.track(_.rMx.AGE_GATE_ACTION, {
+                  source: E.L0.REGISTER,
+                  action: E.Al.AGE_GATE_SUCCESS,
+                });
+            },
+            (e) => {
+              let t = new l.Z(e);
+              throw (
+                (a.Z.dispatch({ type: "REGISTER_FAILURE", error: t }),
+                null != t.getFieldErrors("date_of_birth") &&
+                  o.wE(E.L0.REGISTER),
+                u.default.track(_.rMx.REGISTER_SUBMIT_ERRORED, {
+                  is_unique_username_registration: !0,
+                  email_error_reason: t.getFirstFieldErrorMessage("email"),
+                  phone_error_reason: t.getFirstFieldErrorMessage("phone"),
+                  password_error_reason:
+                    t.getFirstFieldErrorMessage("password"),
+                  username_error_reason:
+                    t.getFirstFieldErrorMessage("username"),
+                  global_name_error_reason:
+                    t.getFirstFieldErrorMessage("global_name"),
+                  date_of_birth_error_reason:
+                    t.getFirstFieldErrorMessage("date_of_birth"),
+                }),
+                e)
+              );
+            },
+          )
+        );
+      }
+    },
+    853268: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return d;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(120356),
+        i = n.n(r),
+        a = n(481060),
+        l = n(600164),
+        o = n(388905),
+        c = n(691134),
+        u = n(113207);
+      function d(e) {
+        let {
+          value: t,
+          onChange: n,
+          subText: r,
+          muted: d,
+          marginTopStyle: h,
+        } = e;
+        return (0, s.jsx)(l.Z, {
+          className: null != h ? h : u.marginTop20,
+          align: l.Z.Align.CENTER,
+          children: (0, s.jsx)(a.Checkbox, {
+            value: t,
+            type: a.Checkbox.Types.INVERTED,
+            onChange: (e, t) => n(t),
+            className: c.checkbox,
+            children: (0, s.jsx)(o.i_, {
+              className: i()({ [c.subText]: !d }),
+              children: r,
+            }),
+          }),
+        });
+      }
+    },
+    761305: function (e, t, n) {
+      n(47120);
+      var s,
+        r = n(735250),
+        i = n(470079),
+        a = n(593473),
+        l = n(442837),
+        o = n(544891),
+        c = n(108427),
+        u = n(601964),
+        d = n(896797),
+        h = n(129293),
+        _ = n(388905),
+        E = n(981631),
+        g = n(689938),
+        p = n(113207);
+      function f(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      l.ZP.initialize();
+      class m extends (s = i.PureComponent) {
+        componentDidMount() {
+          let e = (0, h.Z)(this.props.location),
+            t = (0, a.parse)(this.props.location.search);
+          o.tn
+            .post({
+              url: E.ANM.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+              body: { token: e, pixel_uuid: t.hash, guild_id: t.guild_id },
+              oldFormErrors: !0,
+            })
+            .then(
+              (e) => {
+                let {
+                    body: { guild: t },
+                  } = e,
+                  n = new u.ZP(t);
+                this.setState({ success: !0, busy: !1, guild: n });
+              },
+              () => this.setState({ success: !1, busy: !1 }),
+            ),
+            (0, c.e)("disable_server_highlight_notifications");
+        }
+        renderBusy() {
+          return (0, r.jsx)(_.ZP, { children: (0, r.jsx)(_.Hh, {}) });
+        }
+        renderSuccess() {
+          let { defaultRoute: e, transitionTo: t } = this.props,
+            { guild: n } = this.state;
+          return (0, r.jsxs)(_.ZP, {
+            children: [
+              (0, r.jsx)(_.Dx, {
+                className: p.marginBottom8,
+                children: g.Z.Messages.SERVER_HIGHLIGHT_UNSUBSCRIBE_HEADER,
+              }),
+              (0, r.jsx)(_.DK, {
+                children: g.Z.Messages.SERVER_HIGHLIGHT_UNSUBSCRIBE_BODY.format(
+                  { guildName: n.name },
+                ),
+              }),
+              (0, r.jsx)(_.zx, {
+                className: p.marginTop40,
+                onClick: () => t(e),
+                children: g.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+              (0, r.jsx)(_.zx, {
+                className: p.marginTop8,
+                color: _.zx.Colors.LINK,
+                look: _.zx.Looks.LINK,
+                onClick: () => {
+                  t(E.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(n.id));
+                },
+                children: g.Z.Messages.SERVER_HIGHLIGHT_MANAGE_SETTINGS,
+              }),
+            ],
+          });
+        }
+        renderError() {
+          let { defaultRoute: e, transitionTo: t } = this.props;
+          return (0, r.jsxs)(_.ZP, {
+            children: [
+              (0, r.jsx)(_.Ee, { src: n(105020), className: p.marginBottom20 }),
+              (0, r.jsx)(_.Dx, {
+                className: p.marginBottom8,
+                children:
+                  g.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_FAILURE_HEADER,
+              }),
+              (0, r.jsx)(_.DK, {
+                children:
+                  g.Z.Messages.AUTH_DISABLE_EMAIL_NOTIFICATIONS_FAILURE_BODY,
+              }),
+              (0, r.jsx)(_.zx, {
+                className: p.marginTop40,
+                onClick: () => t(e),
+                children: g.Z.Messages.CONTINUE_TO_WEBAPP,
+              }),
+            ],
+          });
+        }
+        render() {
+          let { busy: e, success: t } = this.state;
+          return e
+            ? this.renderBusy()
+            : t
+              ? this.renderSuccess()
+              : this.renderError();
+        }
+        constructor(...e) {
+          super(...e), f(this, "state", { busy: !0, success: !1, guild: null });
+        }
+      }
+      f(m, "defaultProps", { transitionTo: (e) => n.g.location.assign(e) }),
+        (t.Z = l.ZP.connectStores([d.Z], () => ({
+          defaultRoute: d.Z.defaultRoute,
+        }))(m));
+    },
+    639946: function (e, t, n) {
+      n.d(t, {
+        r: function () {
+          return c;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(481060),
+        i = n(471445),
+        a = n(742593),
+        l = n(577491);
+      function o(e) {
+        let { channel: t } = e,
+          n = (0, i.Th)(t.type);
+        return (0, s.jsxs)("div", {
+          className: l.channelInfoContainer,
+          children: [
+            null != n
+              ? (0, s.jsx)(n, {
+                  color: "currentColor",
+                  size: "custom",
+                  width: 20,
+                  height: 20,
+                })
+              : null,
+            (0, s.jsx)(r.Text, {
+              className: l.channelInfoText,
+              color: "none",
+              variant: "text-sm/semibold",
+              children: t.name,
+            }),
+          ],
+        });
+      }
+      function c(e) {
+        let { channel: t, guildScheduledEvent: n } = e;
+        return (0, s.jsxs)("div", {
+          className: l.container,
+          children: [
+            (0, s.jsx)(a.HZ, {
+              className: l.statusContainer,
+              guildId: n.guild_id,
+              guildEvent: n,
+              eventPreview: n,
+            }),
+            (0, s.jsx)(a.Rf, {
+              name: n.name,
+              description: n.description,
+              guildId: n.guild_id,
+            }),
+            null != t && n.channel_id === t.id
+              ? (0, s.jsx)(o, { channel: t })
+              : null,
+          ],
+        });
+      }
+    },
+    698177: function (e, t, n) {
+      n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(442837),
+        o = n(481060),
+        c = n(144114),
+        u = n(742458),
+        d = n(541692),
+        h = n(952802),
+        _ = n(388905),
+        E = n(815660),
+        g = n(689938),
+        p = n(739017),
+        f = n(113207);
+      t.Z = () => {
+        let [e, t] = r.useState(""),
+          [i, m] = r.useState(""),
+          [I, N] = r.useState(!1),
+          [T, A] = r.useState(!1),
+          [x, C] = r.useState(null),
+          [S, O] = r.useState(null),
+          R = (0, l.e7)([d.Z], () => d.Z.getCountryCode()),
+          v = R.code.split(" ")[0],
+          Z = async () => {
+            try {
+              await c.Z.resendCode(e);
+            } catch (e) {
+              O(e.body.message);
+            }
+          },
+          b = async () => {
+            N(!0);
+            try {
+              let { token: t } = await c.Z.verifyPhone(v + e, i);
+              C(null), O(null), A(!0), c.Z.validatePhoneForSupport(t);
+            } catch (e) {
+              e.body.message
+                ? (C(null), O(e.body.message))
+                : (C(e.body.phone), O(e.body.code));
+            } finally {
+              N(!1);
+            }
+          },
+          D = (0, s.jsxs)(_.ZP, {
+            children: [
+              (0, s.jsx)(_.Ee, { src: n(292824) }),
+              (0, s.jsxs)(_.Dx, {
+                className: a()(
+                  f.marginTop20,
+                  p.flex,
+                  p.justifyCenter,
+                  p.alignCenter,
+                ),
+                children: [
+                  g.Z.Messages.MEMBER_VERIFICATION_PHONE_VERIFIED,
+                  (0, s.jsx)(o.CircleCheckIcon, {
+                    size: "md",
+                    color: "currentColor",
+                    className: f.marginLeft8,
+                  }),
+                ],
+              }),
+            ],
+          });
+        return T
+          ? D
+          : (0, s.jsxs)(_.ZP, {
+              children: [
+                (0, s.jsx)(_.Dx, { children: g.Z.Messages.ENTER_CODE }),
+                (0, s.jsx)(_.DK, {
+                  className: f.marginTop8,
+                  children: g.Z.Messages.VERIFY_PHONE_FOR_SUPPORT,
+                }),
+                (0, s.jsxs)(_.gO, {
+                  className: f.marginTop20,
+                  children: [
+                    (0, s.jsx)(h.Z, {
+                      label: g.Z.Messages.FORM_LABEL_PHONE_NUMBER,
+                      alpha2: R.alpha2,
+                      countryCode: v,
+                      value: e,
+                      autoComplete: "off",
+                      spellCheck: "false",
+                      onChange: t,
+                      forceMode: u.Nz.PHONE,
+                      error: x,
+                    }),
+                    (0, s.jsx)(_.II, {
+                      className: f.marginTop20,
+                      label: g.Z.Messages.CONFIRMATION_CODE,
+                      value: i,
+                      onChange: m,
+                      maxLength: E.z,
+                      error: S,
+                    }),
+                    (0, s.jsx)(_.zx, {
+                      size: _.zx.Sizes.SMALL,
+                      look: _.zx.Looks.LINK,
+                      onClick: Z,
+                      children: g.Z.Messages.RESEND_CODE,
+                    }),
+                    (0, s.jsx)(_.zx, {
+                      className: f.marginTop20,
+                      onClick: b,
+                      submitting: I,
+                      children: g.Z.Messages.DONE,
+                    }),
+                  ],
+                }),
+              ],
+            });
+      };
+    },
+    616952: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return o;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(882037),
+        i = n(853268),
+        a = n(689938),
+        l = n(113207);
+      function o() {
+        let { required: e, checked: t } = (0, r.MD)();
+        return e
+          ? (0, s.jsx)(i.Z, {
+              value: t,
+              subText: a.Z.Messages.PROMOTIONAL_EMAIL_OPT_IN_CONSENT,
+              onChange: r.ZJ,
+              marginTopStyle: l.marginTop8,
+              muted: !0,
+            })
+          : null;
+      }
+    },
+    362762: function (e, t, n) {
+      var s,
+        r,
+        i,
+        a,
+        l = n(442837),
+        o = n(570140),
+        c = n(981631);
+      let u = {};
+      class d extends (a = l.ZP.Store) {
+        getState(e) {
+          return u[e];
+        }
+      }
+      (i = "CodedLinkNativeAppStateStore"),
+        (r = "displayName") in (s = d)
+          ? Object.defineProperty(s, r, {
+              value: i,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0,
+            })
+          : (s[r] = i),
+        (t.Z = new d(o.Z, {
+          NATIVE_APP_MODAL_OPENING: function (e) {
+            let { code: t } = e;
+            u[t] = c.kEZ.OPENING;
+          },
+          NATIVE_APP_MODAL_OPENED: function (e) {
+            let { code: t } = e;
+            u[t] = c.kEZ.OPEN;
+          },
+          NATIVE_APP_MODAL_OPEN_FAILED: function (e) {
+            let { code: t } = e;
+            u[t] = c.kEZ.OPEN_FAIL;
+          },
+        }));
+    },
+    692483: function (e, t, n) {
+      n.d(t, {
+        K: function () {
+          return r;
+        },
+      });
+      var s = n(998502);
+      async function r(e) {
+        try {
+          return (await s.ZP.getSetting("USERNAME_PREFIX", "")) + e;
+        } catch (e) {}
+        return e;
+      }
+    },
+    198993: function (e, t, n) {
+      n.d(t, {
+        c2: function () {
+          return g;
+        },
+        cK: function () {
+          return r;
+        },
+      });
+      var s,
+        r,
+        i,
+        a,
+        l = n(735250),
+        o = n(470079),
+        c = n(789877),
+        u = n(458221);
+      function d(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      ((s = r || (r = {})).SIZE_40 = "SIZE_40"), (s.SIZE_60 = "SIZE_60");
+      let h = Object.freeze({ SIZE_40: "size-40", SIZE_60: "size-60" }),
+        _ = n(515695);
+      class E extends (i = o.PureComponent) {
+        render() {
+          let { className: e, text: t, ...n } = this.props;
+          return (0, l.jsx)("div", {
+            style: {
+              padding: 8,
+              borderRadius: 4,
+              width: n.size,
+              height: n.size,
+              backgroundColor: n.bgColor,
+            },
+            className: e,
+            children: (0, l.jsx)(c.default, { value: t, level: "M", ...n }),
+          });
+        }
+      }
+      d(E, "defaultProps", {
+        size: 128,
+        bgColor: "#ffffff",
+        fgColor: "#000000",
+      });
+      class g extends (a = o.PureComponent) {
+        render() {
+          let { overlaySize: e } = this.props,
+            t = h[null != e ? e : "SIZE_40"];
+          return (0, l.jsxs)("div", {
+            className: u.qrCodeContainer,
+            children: [
+              (0, l.jsx)(E, { ...this.props }),
+              (0, l.jsx)("div", {
+                className: u.qrCodeOverlay,
+                children: (0, l.jsx)("img", {
+                  className: u[t],
+                  src: _,
+                  alt: "",
+                }),
+              }),
+            ],
+          });
+        }
+      }
+      d(g, "defaultProps", {
+        size: 144,
+        bgColor: "#ffffff",
+        fgColor: "#000000",
+      }),
+        (t.ZP = E);
+    },
+    285888: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return f;
+        },
+        v: function () {
+          return p;
+        },
+      }),
+        n(47120);
+      var s,
+        r,
+        i,
+        a = n(735250),
+        l = n(470079),
+        o = n(120356),
+        c = n.n(o),
+        u = n(536640),
+        d = n(481060),
+        h = n(981631),
+        _ = n(689938),
+        E = n(404934);
+      function g(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      ((i = s || (s = {})).TOP = "top"), (i.BOTTOM = "bottom");
+      let p = {
+        container: (e, t) => {
+          let { isDisabled: n } = t;
+          return {
+            ...e,
+            cursor: n ? "not-allowed" : void 0,
+            pointerEvents: void 0,
+            fontSize: 16,
+            fontWeight: 500,
+            width: "100%",
+          };
+        },
+        control: (e, t) => {
+          let { isDisabled: n, menuIsOpen: s } = t;
+          return {
+            ...e,
+            backgroundColor: "var(--input-background)",
+            borderColor: "var(--input-background)",
+            opacity: n ? 0.6 : 1,
+            boxShadow: void 0,
+            borderRadius: s ? "4px 4px 0 0" : "4px",
+            minHeight: 40,
+            transition: "border 0.15s ease",
+            cursor: n ? "not-allowed" : void 0,
+            pointerEvents: n ? "none" : void 0,
+            "&:hover": { borderColor: "var(--input-background)" },
+          };
+        },
+        singleValue: (e, t) => {
+          let { isDisabled: n } = t;
+          return {
+            ...e,
+            color: "var(--interactive-normal)",
+            opacity: n ? 0.5 : 1,
+          };
+        },
+        input: (e) => ({ ...e, color: "var(--interactive-normal)" }),
+        menu: (e) => ({
+          ...e,
+          backgroundColor: "var(--background-secondary)",
+          border: "1px solid var(--background-tertiary)",
+          borderRadius: "0 0 4px 4px",
+          color: "var(--interactive-normal)",
+          marginTop: -1,
+          marginBottom: -1,
+        }),
+        clearIndicator: (e, t) => {
+          let { isDisabled: n } = t;
+          return {
+            ...e,
+            color: "var(--interactive-normal)",
+            cursor: n ? void 0 : "pointer",
+            opacity: 0.3,
+            padding: "8px 0",
+            transform: "scale(0.8)",
+            ":hover": { color: "var(--text-danger)", opacity: 1 },
+          };
+        },
+        indicatorsContainer: (e) => ({ ...e, alignItems: "flex-start" }),
+        dropdownIndicator: (e, t) => {
+          let { isDisabled: n } = t;
+          return {
+            ...e,
+            color: "var(--interactive-normal)",
+            cursor: n ? void 0 : "pointer",
+            opacity: n ? 0.3 : 1,
+            padding: "8px 8px 8px 0",
+            ":hover": {
+              color: "var(--interactive-hover)",
+              opacity: n ? 0.3 : 1,
+            },
+          };
+        },
+        menuList: (e) => ({
+          ...e,
+          padding: 0,
+          "&::-webkit-scrollbar": { width: 8, padding: "0px 2px" },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "var(--scrollbar-thin-thumb)",
+            border: "2px solid transparent",
+            backgroundClip: "padding-box",
+            borderRadius: 4,
+          },
+          "&::-webkit-scrollbar-track-piece": {
+            backgroundColor: "transparent",
+            borderColor: "transparent",
+          },
+        }),
+        option: (e, t) => {
+          let { isSelected: n, isFocused: s } = t;
+          return {
+            ...e,
+            ...(n
+              ? {
+                  backgroundColor: "var(--background-modifier-selected)",
+                  color: "var(--interactive-active)",
+                }
+              : s
+                ? {
+                    backgroundColor: "var(--background-modifier-hover)",
+                    color: "var(--interactive-hover)",
+                  }
+                : {
+                    backgroundColor: "transparent",
+                    color: "var(--interactive-normal)",
+                  }),
+            cursor: "pointer",
+            display: "flex",
+            padding: 12,
+            alignItems: "center",
+            minHeight: 40,
+            "&:active": {
+              backgroundColor: "var(--background-modifier-selected)",
+              color: "var(--interactive-active)",
+            },
+          };
+        },
+        placeholder: (e) => ({ ...e, color: "var(--text-muted)" }),
+      };
+      class f extends (r = l.Component) {
+        focus() {
+          var e;
+          null === (e = this._selectRef.current) || void 0 === e || e.focus();
+        }
+        render() {
+          let e;
+          let {
+              className: t,
+              selectClassName: n,
+              error: s,
+              valueRenderer: r,
+              optionRenderer: i,
+              multiValueRenderer: l,
+              options: o,
+              value: h,
+              autofocus: g,
+              disabled: f,
+              clearable: m,
+              searchable: I,
+              styleOverrides: N,
+              isMulti: T,
+              placeholder: A,
+              filterOption: x,
+              closeMenuOnSelect: C = !0,
+              ...S
+            } = this.props,
+            O = { ...S };
+          null != g && (O.autoFocus = g),
+            null != f && (O.isDisabled = f),
+            null != m && (O.isClearable = m),
+            null != I && (O.isSearchable = I);
+          let R = { IndicatorSeparator: () => null };
+          null != i &&
+            (R.Option = (e) =>
+              (0, a.jsx)(u.wx.Option, { ...e, children: i(e.data) })),
+            null != r &&
+              (R.SingleValue = (e) =>
+                (0, a.jsx)(u.wx.SingleValue, { ...e, children: r(e.data) })),
+            null != l && (R.MultiValue = (e) => l(e.data));
+          if (T && Array.isArray(h)) {
+            let t = {};
+            o.forEach((e) => {
+              t[String(e.value)] = e;
+            }),
+              (e = h.map((e) => t[String(e)]));
+          } else e = null != h ? o.find((e) => e.value === h) : null;
+          return (0, a.jsx)(d.FocusRing, {
+            focused: this.state.isFocused && !this.state.isOpen,
+            ringTarget: this._containerRef,
+            children: (0, a.jsxs)("div", {
+              className: c()(E.select, t, { [E.error]: null != s }),
+              ref: this._containerRef,
+              children: [
+                (0, a.jsx)(u.ZP, {
+                  ...O,
+                  className: n,
+                  ref: this._selectRef,
+                  isMulti: T,
+                  components: R,
+                  options: o,
+                  styles: null != N ? N : p,
+                  onFocus: this.handleFocus,
+                  onBlur: this.handleBlur,
+                  onMenuOpen: this.handleMenuOpen,
+                  onMenuClose: this.handleMenuClose,
+                  closeMenuOnSelect: C,
+                  value: e,
+                  onKeyDown: this.handleKeyDown,
+                  placeholder: null != A ? A : _.Z.Messages.SELECT,
+                  noOptionsMessage: () => _.Z.Messages.NO_RESULTS_FOUND,
+                  filterOption: x,
+                }),
+                null != s
+                  ? (0, a.jsx)("div", {
+                      className: E.errorMessage,
+                      children: s,
+                    })
+                  : null,
+              ],
+            }),
+          });
+        }
+        constructor(...e) {
+          super(...e),
+            g(this, "_selectRef", l.createRef()),
+            g(this, "_containerRef", l.createRef()),
+            g(this, "state", { isFocused: !1, isOpen: !1 }),
+            g(this, "handleFocus", (e) => {
+              var t, n;
+              this.setState({ isFocused: !0 }),
+                null === (t = (n = this.props).onFocus) ||
+                  void 0 === t ||
+                  t.call(n, e);
+            }),
+            g(this, "handleBlur", (e) => {
+              var t, n;
+              this.setState({ isFocused: !1 }),
+                null === (t = (n = this.props).onBlur) ||
+                  void 0 === t ||
+                  t.call(n, e);
+            }),
+            g(this, "handleKeyDown", (e) => {
+              e.which === h.yXg.ESCAPE &&
+                this.state.isOpen &&
+                e.stopPropagation();
+            }),
+            g(this, "handleMenuOpen", () => {
+              this.setState({ isOpen: !0 });
+            }),
+            g(this, "handleMenuClose", () => {
+              this.setState({ isOpen: !1 });
+            });
+        }
+      }
+      g(f, "MenuPlacements", s);
+    },
+    390072: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return d;
+        },
+      });
+      var s = n(735250),
+        r = n(470079),
+        i = n(481060),
+        a = n(725436),
+        l = n(11868),
+        o = n(217804),
+        c = n(765305),
+        u = n(448144);
+      function d(e) {
+        let { guildScheduledEvent: t, channel: n, onClose: d } = e,
+          h = t.entity_type === c.WX.EXTERNAL,
+          _ = r.useCallback((e) => (0, l.Qt)(t, d)(e), [t, d]),
+          E = (0, o.u)(t, n);
+        if (null == E) return null;
+        let { IconComponent: g, locationName: p } = E,
+          f = (0, s.jsxs)(s.Fragment, {
+            children: [
+              null != g &&
+                (0, s.jsx)(g, {
+                  size: "custom",
+                  color: "currentColor",
+                  width: 20,
+                  height: 20,
+                  className: u.channelIcon,
+                }),
+              (0, s.jsx)(i.Text, {
+                color: "header-secondary",
+                variant: "text-sm/normal",
+                className: u.locationText,
+                children: (0, a.m)(p, !0),
+              }),
+            ],
+          });
+        return (0, s.jsx)("div", {
+          className: u.row,
+          children:
+            null != _
+              ? (0, s.jsx)(i.Clickable, {
+                  className: h ? u.externalLocation : u.channelLocation,
+                  onClick: _,
+                  children: f,
+                })
+              : f,
+        });
+      }
+    },
+    844800: function (e, t, n) {
+      var s,
+        r,
+        i,
+        a,
+        l = n(442837),
+        o = n(570140);
+      let c = !1,
+        u = null,
+        d = null;
+      class h extends (a = l.ZP.Store) {
+        getState() {
+          return { verifySuccess: c, verifyErrors: u, redirectGuildId: d };
+        }
+      }
+      (i = "HubEmailVerificationStore"),
+        (r = "displayName") in (s = h)
+          ? Object.defineProperty(s, r, {
+              value: i,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0,
+            })
+          : (s[r] = i),
+        (t.Z = new h(o.Z, {
+          HUB_VERIFY_EMAIL_SUCCESS: function (e) {
+            let { guildId: t } = e;
+            (c = !0), (u = null), (d = t);
+          },
+          HUB_VERIFY_EMAIL_FAILURE: function (e) {
+            let { errors: t } = e;
+            (c = !1), (u = t);
+          },
+        }));
+    },
+    580497: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return p;
+        },
+      });
+      var s = n(512722),
+        r = n.n(s),
+        i = n(525654),
+        a = n.n(i),
+        l = n(39612),
+        o = n(271579),
+        c = n(756647),
+        u = n(703656),
+        d = n(314897),
+        h = n(896797),
+        _ = n(626135),
+        E = n(954824),
+        g = n(981631);
+      function p(e) {
+        let t = (function (e) {
+            var t;
+            let n = null === (t = a().os) || void 0 === t ? void 0 : t.family;
+            if ("Android" === n || "iOS" === n) {
+              let t = d.default.getFingerprint(),
+                n = (0, o.WS)();
+              return (
+                r()(null != e, "generateAppPath: guildId cannot be null"),
+                (0, o.ZP)((0, l.z0)(e), {
+                  utmSource: "verify_hub_email",
+                  fingerprint: t,
+                  attemptId: n,
+                })
+              );
+            }
+            return "discord://";
+          })(e),
+          n = (0, o.zS)(t);
+        null != n &&
+          _.default.track(g.rMx.DEEP_LINK_CLICKED, {
+            fingerprint: (0, c.K)(n.fingerprint),
+            attempt_id: n.attemptId,
+            source: n.utmSource,
+          }),
+          E.Z.launch(t, (e) => {
+            !e && (0, u.dL)(h.Z.fallbackRoute);
+          });
+      }
+    },
+    637776: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return p;
+        },
+      }),
+        n(47120);
+      var s = n(735250),
+        r = n(470079),
+        i = n(442837),
+        a = n(231239),
+        l = n(129293),
+        o = n(388905),
+        c = n(703656),
+        u = n(108427),
+        d = n(844800),
+        h = n(580497),
+        _ = n(981631),
+        E = n(689938),
+        g = n(71188);
+      function p(e) {
+        let { location: t } = e,
+          [p, f] = r.useState(!1),
+          {
+            verifySuccess: m,
+            verifyErrors: I,
+            redirectGuildId: N,
+          } = (0, i.e7)([d.Z], () => d.Z.getState());
+        r.useEffect(() => {
+          let e = (0, l.Z)(t);
+          a.Z.verify(e), (0, u.e)("verify_hub_email");
+        }, [t]);
+        let T = () => {
+          (0, h.Z)(N), f(!0);
+        };
+        return p
+          ? (0, s.jsxs)(o.ZP, {
+              children: [
+                (0, s.jsx)(o.Dx, {
+                  className: g.title,
+                  children: E.Z.Messages.APP_OPENED_TITLE,
+                }),
+                (0, s.jsx)(o.DK, {
+                  className: g.subtitle,
+                  children: E.Z.Messages.APP_OPENED_BODY,
+                }),
+                (0, s.jsx)(o.zx, {
+                  className: g.spacedButton,
+                  onClick: () => (0, c.uL)(_.Z5c.CHANNEL(N)),
+                  children: E.Z.Messages.CONTINUE_TO_WEBAPP,
+                }),
+              ],
+            })
+          : m
+            ? (0, s.jsxs)(o.ZP, {
+                children: [
+                  (0, s.jsx)(o.Ee, { className: g.image, src: n(73962) }),
+                  (0, s.jsx)(o.Dx, {
+                    className: g.title,
+                    children: E.Z.Messages.VERIFICATION_VERIFIED,
+                  }),
+                  (0, s.jsx)(o.zx, {
+                    onClick: T,
+                    children: E.Z.Messages.VERIFICATION_OPEN_DISCORD,
+                  }),
+                ],
+              })
+            : null != I
+              ? (0, s.jsxs)(o.ZP, {
+                  children: [
+                    (0, s.jsx)(o.Ee, { className: g.image, src: n(375673) }),
+                    (0, s.jsx)(o.Dx, {
+                      className: g.title,
+                      children: E.Z.Messages.VERFICATION_EXPIRED,
+                    }),
+                    (0, s.jsx)(o.DK, {
+                      className: g.subtitle,
+                      children:
+                        E.Z.Messages._AUTH_VERFICATION_EXPIRED_SUGGESTION,
+                    }),
+                    (0, s.jsx)(o.zx, {
+                      onClick: T,
+                      children: E.Z.Messages.VERIFICATION_OPEN_DISCORD,
+                    }),
+                  ],
+                })
+              : (0, s.jsxs)(o.ZP, {
+                  children: [
+                    (0, s.jsx)(o.Ee, { className: g.image, src: n(892235) }),
+                    (0, s.jsx)(o.Dx, {
+                      className: g.title,
+                      children: E.Z.Messages.VERIFICATION_VERIFYING,
+                    }),
+                    (0, s.jsx)(o.DK, {
+                      className: g.subtitle,
+                      children: E.Z.Messages.ACTION_MAY_TAKE_A_MOMENT,
+                    }),
+                    (0, s.jsx)(o.zx, {
+                      submitting: !0,
+                      color: o.zx.Colors.PRIMARY,
+                    }),
+                  ],
+                });
+      }
+      i.ZP.initialize();
+    },
+    551549: function (e, t, n) {
+      n.d(t, {
+        oK: function () {
+          return r;
+        },
+      });
+      let s = (0, n(818083).B)({
+        kind: "user",
+        id: "2023-09_iar_dsa_webform",
+        label: "Safety Experience Unauthenticated Report Form",
+        defaultConfig: { enabled: !1 },
+        treatments: [
+          { id: 1, label: "EU user", config: { enabled: !0 } },
+          { id: 2, label: "DSA E2E testing user", config: { enabled: !0 } },
+        ],
+      });
+      function r(e) {
+        return s.useExperiment({ location: e }, { autoTrackExposure: !0 })
+          .enabled;
+      }
+    },
+    230224: function (e, t, n) {
+      n.d(t, {
+        GB: function () {
+          return v;
+        },
+        JI: function () {
+          return O;
+        },
+        UM: function () {
+          return D;
+        },
+        V6: function () {
+          return Z;
+        },
+        WT: function () {
+          return A;
+        },
+        X7: function () {
+          return x;
+        },
+        jq: function () {
+          return b;
+        },
+        mx: function () {
+          return I;
+        },
+      }),
+        n(411104);
+      var s = n(735250),
+        r = n(470079),
+        i = n(120356),
+        a = n.n(i),
+        l = n(481060),
+        o = n(388905),
+        c = n(112831),
+        u = n(925329),
+        d = n(372769),
+        h = n(768581),
+        _ = n(51144),
+        E = n(245335),
+        g = n(981631),
+        p = n(888592),
+        f = n(689938),
+        m = n(788170);
+      let I = 100,
+        N = (e) => {
+          var t, n;
+          let s = {
+            onlineCount:
+              null !== (t = e.approximate_presence_count) && void 0 !== t
+                ? t
+                : 0,
+            memberCount:
+              null !== (n = e.approximate_member_count) && void 0 !== n ? n : 0,
+          };
+          return 0 === s.memberCount && 0 === s.memberCount ? null : s;
+        },
+        T = (e) => e.target_type === E.Iq.STREAM && null != e.target_user,
+        A = (e) => {
+          var t;
+          return (
+            (null === (t = e.channel) || void 0 === t ? void 0 : t.type) ===
+            g.d4z.GROUP_DM
+          );
+        },
+        x = (e) => null == e.channel && null == e.guild && null != e.inviter,
+        C = (e) => {
+          var t;
+          let n = N(e);
+          return (
+            (null !== (t = null == n ? void 0 : n.memberCount) && void 0 !== t
+              ? t
+              : 0) > I
+          );
+        },
+        S = (e) => e.state === g.r2o.ACCEPTED,
+        O = (e) => {
+          let { guild_scheduled_event: t } = e;
+          return null != t || !1;
+        },
+        R = (e) => !O(e) && (!!x(e) || (null != e.inviter && !S(e) && !C(e))),
+        v = (e) => {
+          let { guild: t, user: n, application: r } = e;
+          if (null != r)
+            return (0, s.jsx)(u.Z, {
+              className: m.appIcon,
+              game: r,
+              size: m.appIconSize,
+            });
+          if (null != n)
+            return (0, s.jsx)(o.qE, {
+              src: n.getAvatarURL(void 0, 100),
+              size: l.AvatarSizes.DEPRECATED_SIZE_100,
+              className: m.avatar,
+            });
+          if (null != t)
+            return (0, s.jsx)(o.Vj, {
+              guild: t,
+              size: o.Vj.Sizes.LARGER,
+              className: m.guildIcon,
+              animate: !0,
+            });
+          else return null;
+        };
+      function Z(e) {
+        var t;
+        let { invite: n, textClassName: r, className: i } = e,
+          l = N(n);
+        return null == l ||
+          R(n) ||
+          (null == n
+            ? void 0
+            : null === (t = n.guild) || void 0 === t
+              ? void 0
+              : t.id) === p.fQ
+          ? null
+          : (0, s.jsx)(o.EJ, {
+              className: a()(m.activityCount, i),
+              online: l.onlineCount,
+              total: l.memberCount,
+              textClassName: r,
+              flat: !0,
+            });
+      }
+      function b(e) {
+        let { invite: t, showBigUserIcon: n } = e,
+          i = r.useMemo(
+            () =>
+              n
+                ? null
+                : T(t) && null != t.target_user
+                  ? h.ZP.getUserAvatarURL(t.target_user)
+                  : R(t) && null != t.inviter
+                    ? h.ZP.getUserAvatarURL(t.inviter)
+                    : null,
+            [t, n],
+          ),
+          a = f.Z.Messages.INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_JOIN;
+        if (A(t)) {
+          var c, u;
+          a =
+            (null === (c = t.channel) || void 0 === c ? void 0 : c.name) !=
+              null &&
+            (null === (u = t.inviter) || void 0 === u ? void 0 : u.username) !=
+              null
+              ? f.Z.Messages.INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_JOIN_GROUP_DM_BY_USER.format(
+                  { username: t.inviter.username },
+                )
+              : f.Z.Messages
+                  .INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_JOIN_GROUP_DM;
+        } else
+          T(t) && null != t.target_user
+            ? (a = f.Z.Messages.AUTH_MESSAGE_INVITED_TO_STREAM.format({
+                username: t.target_user.username,
+              }))
+            : S(t)
+              ? (a = f.Z.Messages.INSTANT_INVITE_YOU_ARE_ALREADY_A_MEMBER_OF)
+              : R(t) &&
+                null != t.inviter &&
+                (a =
+                  f.Z.Messages.INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_JOIN_BY_USER.format(
+                    { username: _.ZP.getFormattedName(t.inviter) },
+                  ));
+        return (0, s.jsxs)("div", {
+          className: m.inviteJoinContainer,
+          children: [
+            null != i &&
+              (0, s.jsx)("div", {
+                className: m.inviterIconWrapper,
+                children: (0, s.jsx)(o.qE, {
+                  src: i,
+                  size: l.AvatarSizes.SIZE_24,
+                }),
+              }),
+            (0, s.jsx)(o.DK, {
+              className: m.__invalid_inviteJoinSubTitle,
+              children: a,
+            }),
+          ],
+        });
+      }
+      function D(e) {
+        let t,
+          n,
+          r,
+          {
+            user: i,
+            guild: a,
+            channel: u,
+            application: h,
+            showBigUserIcon: E,
+          } = e;
+        if (null != a)
+          E &&
+            null == h &&
+            (t = (0, s.jsx)(o.Vj, { guild: a, size: o.Vj.Sizes.SMALL })),
+            (n = a.name),
+            null != h &&
+              ((n = h.name),
+              (r = (0, s.jsxs)("div", {
+                className: m.inviteJoinContainer,
+                children: [
+                  (0, s.jsx)(o.DK, {
+                    className: m.appIn,
+                    children: f.Z.Messages.EMBEDDED_ACTIVITIES_INVITE_IN,
+                  }),
+                  (0, s.jsxs)("div", {
+                    className: m.guildContainer,
+                    children: [
+                      (0, s.jsx)(o.Vj, { guild: a, size: o.Vj.Sizes.SMALL }),
+                      (0, s.jsx)(c.Z, {
+                        className: m.appGuildName,
+                        color: c.Z.Colors.CUSTOM,
+                        tag: "span",
+                        size: c.Z.Sizes.SIZE_24,
+                        children: a.name,
+                      }),
+                    ],
+                  }),
+                ],
+              })));
+        else if (null != u) {
+          if (null == i) throw Error("no inviter in group DM invite");
+          let e = _.ZP.getFormattedName(i);
+          null != u.name && "" !== u.name
+            ? ((n = u.name),
+              null != u.icon &&
+                (t = (0, s.jsx)(o.MC, {
+                  channel: u,
+                  size: l.AvatarSizes.SIZE_32,
+                })))
+            : (n = e);
+        } else if (null != i) {
+          let e = _.ZP.getFormattedName(i);
+          (n = f.Z.Messages.INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_CHAT.format(
+            { username: e },
+          )),
+            (r = (0, s.jsx)(o.DK, {
+              className: m.directInviteSubTitle,
+              children:
+                f.Z.Messages.INSTANT_INVITE_DIRECT_FRIEND_DESCRIPTION.format({
+                  username: e,
+                }),
+            }));
+        }
+        return (0, s.jsxs)(s.Fragment, {
+          children: [
+            (0, s.jsxs)(o.Dx, {
+              className: m.title,
+              children: [
+                null != a
+                  ? (0, s.jsx)(d.Z, {
+                      guild: a,
+                      className: m.guildBadge,
+                      tooltipPosition: "left",
+                    })
+                  : null,
+                t,
+                n,
+              ],
+            }),
+            r,
+          ],
+        });
+      }
+    },
+    617730: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return g;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(481060),
+        i = n(973616),
+        a = n(131704),
+        l = n(601964),
+        o = n(598077),
+        c = n(230224),
+        u = n(258356),
+        d = n(981631),
+        h = n(689938),
+        _ = n(39578);
+      let E = (e) => {
+        let { state: t } = e;
+        switch (t) {
+          case d.r2o.ACCEPTING:
+          case d.r2o.APP_OPENING:
+            return !0;
+          default:
+            return !1;
+        }
+      };
+      function g(e) {
+        let { invite: t, onAcceptInvite: n, disableUser: g = !1 } = e;
+        if (null == t) return null;
+        let p = null != t.guild ? new l.ZP(t.guild) : null,
+          f = null != t.channel ? (0, a.jD)(t.channel) : null,
+          m =
+            null != t.target_application ? new i.Z(t.target_application) : null,
+          I = g || null == t.inviter ? null : new o.Z(t.inviter),
+          N =
+            !(
+              (null != t.approximate_member_count &&
+                t.approximate_member_count > c.mx) ||
+              (null != p && p.hasFeature(d.oNc.COMMUNITY))
+            ) &&
+            null != I &&
+            (0, c.WT)(t),
+          T = E(t),
+          A = { invite: t, user: I, guild: p, channel: f, application: m };
+        return (0, c.JI)(t)
+          ? (0, s.jsx)(u.Z, {
+              invite: t,
+              channel: f,
+              isSubmitting: T,
+              onAcceptInvite: n,
+            })
+          : (0, s.jsxs)("div", {
+              className: _.container,
+              children: [
+                (0, s.jsx)(c.GB, {
+                  application: m,
+                  guild: p,
+                  user: N || (0, c.X7)(t) ? I : null,
+                }),
+                (0, c.X7)(t)
+                  ? null
+                  : (0, s.jsx)(c.jq, { ...A, showBigUserIcon: N }),
+                (0, s.jsx)(c.UM, { ...A, showBigUserIcon: N }),
+                (0, s.jsx)(c.V6, { ...A }),
+                (0, s.jsx)(r.Button, {
+                  onClick: n,
+                  submitting: T,
+                  className: _.acceptButton,
+                  children: h.Z.Messages.INSTANT_INVITE_ACCEPT,
+                }),
+              ],
+            });
+      }
+    },
+    677760: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return P;
+        },
+      }),
+        n(47120);
+      var s,
+        r,
+        i = n(735250),
+        a = n(470079),
+        l = n(212433),
+        o = n(442837),
+        c = n(481060),
+        u = n(447543),
+        d = n(587444),
+        h = n(393238),
+        _ = n(388905),
+        E = n(108427),
+        g = n(314897),
+        p = n(701190),
+        f = n(626135),
+        m = n(768581),
+        I = n(823379),
+        N = n(264229),
+        T = n(230224),
+        A = n(617730),
+        x = n(258356),
+        C = n(981631),
+        S = n(689938),
+        O = n(712833);
+      function R() {
+        return (0, i.jsx)("div", {
+          className: O.centerFlex,
+          children: (0, i.jsx)(c.Spinner, {}),
+        });
+      }
+      ((r = s || (s = {}))[(r.LOADING = 0)] = "LOADING"),
+        (r[(r.DETAILS = 1)] = "DETAILS"),
+        (r[(r.ERROR = 2)] = "ERROR");
+      let v = (e) => {
+        let t =
+          (null == e ? void 0 : e.state) == null &&
+          (null == e ? void 0 : e.channel) == null;
+        if (null == e || null == e.state || t) return 0;
+        let n = e.state;
+        switch (n) {
+          case C.r2o.RESOLVED:
+          case C.r2o.ACCEPTED:
+          case C.r2o.APP_NOT_OPENED:
+          case C.r2o.APP_OPENED:
+          case C.r2o.ACCEPTING:
+          case C.r2o.APP_OPENING:
+            return 1;
+          case C.r2o.EXPIRED:
+          case C.r2o.BANNED:
+          case C.r2o.ERROR:
+            return 2;
+          case C.r2o.RESOLVING:
+            return 0;
+          default:
+            (0, I.vE)(n);
+        }
+      };
+      function Z(e) {
+        let { invite: t, onAcceptInvite: n } = e;
+        if ((null == t ? void 0 : t.state) === C.r2o.BANNED)
+          return (0, i.jsx)(d.u, {
+            text: S.Z.Messages.AUTH_BANNED_INVITE_BODY,
+            buttonCta: S.Z.Messages.INVITE_INVALID_CTA,
+            onClick: n,
+          });
+        return (0, i.jsx)(d.u, {
+          text: S.Z.Messages.INVITE_INVALID_ERROR,
+          buttonCta: S.Z.Messages.INVITE_INVALID_CTA,
+          onClick: n,
+        });
+      }
+      function b(e) {
+        let {
+            children: t,
+            cardChildren: n,
+            startAnimHeightPx: s,
+            innerStyle: r,
+            ...o
+          } = e,
+          { invite: u } = o,
+          [d, _] = a.useState(v(u)),
+          { ref: E, height: g } = (0, h.Z)(),
+          p = (0, c.useSpring)({
+            height:
+              null != g && 0 !== g ? "".concat(g, "px") : "".concat(s, "px"),
+            config: l.config.stiff,
+          });
+        return (
+          a.useEffect(() => {
+            let e = v(u);
+            e !== d && _(e);
+          }, [u, d]),
+          (0, i.jsxs)(l.animated.div, {
+            className: O.inviteCard,
+            style: p,
+            children: [
+              (0, i.jsx)(l.animated.div, {
+                className: O.inviteChildContainer,
+                style: p,
+                children: (0, i.jsx)("section", {
+                  ref: E,
+                  className: null == r ? void 0 : r(d),
+                  children: t(d),
+                }),
+              }),
+              n,
+            ],
+          })
+        );
+      }
+      function D(e) {
+        let { invite: t } = e;
+        if (null == t || !(0, T.JI)(t)) return null;
+        let n = (e) => {
+          if (null == t) return null;
+          if (1 === e) return (0, i.jsx)(x.X, { invite: t });
+          return null;
+        };
+        return (0, i.jsx)(b, {
+          startAnimHeightPx: 0,
+          innerStyle: () => O.guildInfoInner,
+          ...e,
+          children: (e) => n(e),
+        });
+      }
+      function L(e) {
+        let { invite: t } = e,
+          n = (n) => {
+            if (null == t) return (0, i.jsx)(R, {});
+            switch (n) {
+              case 1:
+                return (0, i.jsx)(A.Z, { ...e, invite: t });
+              case 2:
+                return (0, i.jsx)(Z, { ...e, invite: t });
+              default:
+                return (0, i.jsx)(R, {});
+            }
+          },
+          s = {
+            1: O.inviteCardInner,
+            2: O.inviteCardInnerError,
+            0: O.inviteCardInnerLoading,
+          };
+        return (0, i.jsx)(b, {
+          startAnimHeightPx: 200,
+          innerStyle: (e) => s[e],
+          ...e,
+          children: (e) => n(e),
+        });
+      }
+      function M(e) {
+        let { invite: t, onAcceptInvite: n } = e,
+          { guild: s } = null != t ? t : {},
+          r = {};
+        if ((null == s ? void 0 : s.splash) != null) {
+          let e = m.ZP.getGuildSplashURL({ id: s.id, splash: s.splash });
+          null != e &&
+            ((r.backgroundImage = "url(".concat(e, ")")),
+            (r.backgroundSize = "cover"));
+        }
+        return (0, i.jsxs)(_.ZP, {
+          theme: C.BRd.DARK,
+          className: O.splashBackground,
+          style: r,
+          contentClassName: O.centerAuthBoxContent,
+          children: [
+            (0, i.jsx)(L, { ...e, onAcceptInvite: n }),
+            (0, i.jsx)(D, { ...e }),
+          ],
+        });
+      }
+      function P(e) {
+        let { inviteKey: t, transitionTo: n } = e,
+          s = (0, o.e7)([p.Z], () => p.Z.getInvite(t));
+        return (
+          a.useEffect(() => {
+            (0, E.e)("invite_mobile");
+          }, []),
+          a.useEffect(() => {
+            null != s &&
+              s.state === C.r2o.RESOLVED &&
+              f.default.track(
+                C.rMx.INVITE_VIEWED,
+                {
+                  invite_code: t,
+                  friends_count: null == s ? void 0 : s.friends_count,
+                },
+                { flush: !0 },
+              );
+          }, [s, t]),
+          (0, i.jsx)(M, {
+            invite: s,
+            onAcceptInvite: (e) => {
+              !(function (e, t, n) {
+                var s, r, i;
+                null == e || e.preventDefault(),
+                  f.default.track(C.rMx.INVITE_APP_OPENED, {
+                    invite_code: (0, N.jX)(t),
+                    guild_id:
+                      null == n
+                        ? void 0
+                        : null === (s = n.guild) || void 0 === s
+                          ? void 0
+                          : s.id,
+                    channel_id:
+                      null == n
+                        ? void 0
+                        : null === (r = n.channel) || void 0 === r
+                          ? void 0
+                          : r.id,
+                    inviter_id:
+                      null == n
+                        ? void 0
+                        : null === (i = n.inviter) || void 0 === i
+                          ? void 0
+                          : i.id,
+                  });
+                let a =
+                    null != n &&
+                    n.state !== C.r2o.EXPIRED &&
+                    n.state !== C.r2o.BANNED
+                      ? t
+                      : void 0,
+                  l = g.default.getFingerprint(),
+                  o = null != l ? l : g.default.getId(),
+                  c =
+                    null != n && (null == n ? void 0 : n.type) != null
+                      ? Number(null == n ? void 0 : n.type)
+                      : void 0;
+                u.Z.openApp(a, void 0, o, void 0, c);
+              })(e, t, s);
+            },
+            transitionTo: n,
+          })
+        );
+      }
+    },
+    258356: function (e, t, n) {
+      n.d(t, {
+        X: function () {
+          return E;
+        },
+        Z: function () {
+          return g;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(481060),
+        i = n(565138),
+        a = n(372769),
+        l = n(742593),
+        o = n(390072),
+        c = n(601964),
+        u = n(230224),
+        d = n(689938),
+        h = n(262854);
+      function _(e) {
+        var t;
+        let {
+          guildScheduledEvent: n,
+          channel: i,
+          onAcceptInvite: a,
+          isSubmitting: c,
+        } = e;
+        return (0, s.jsxs)("div", {
+          className: h.guildEventCard,
+          children: [
+            (0, s.jsx)(l.ZP, {
+              name: n.name,
+              description:
+                null !== (t = n.description) && void 0 !== t ? t : void 0,
+              headerVariant: "heading-md/medium",
+              descriptionClassName: h.__invalid_channelDescription,
+              guildId: n.guild_id,
+              guildEvent: n,
+              eventPreview: n,
+            }),
+            null != i &&
+              (0, s.jsx)("div", {
+                className: h.channelInfo,
+                children: (0, s.jsx)(o.Z, {
+                  guildScheduledEvent: n,
+                  channel: i,
+                }),
+              }),
+            (0, s.jsx)(r.Button, {
+              className: h.acceptButton,
+              color: r.Button.Colors.GREEN,
+              onClick: a,
+              submitting: c,
+              children: d.Z.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON,
+            }),
+          ],
+        });
+      }
+      function E(e) {
+        var t;
+        let { invite: n } = e,
+          l = null != n.guild ? new c.ZP(n.guild) : null;
+        if (null == l) return null;
+        let o = null !== (t = l.description) && void 0 !== t ? t : "";
+        return (0, s.jsxs)("div", {
+          className: h.guildInfoCard,
+          children: [
+            (0, s.jsx)(r.Heading, {
+              className: h.presentedBy,
+              variant: "text-sm/medium",
+              children: d.Z.Messages.STAGE_INVITE_GUILD_HEADER,
+            }),
+            (0, s.jsxs)("div", {
+              className: h.guildContainer,
+              children: [
+                (0, s.jsx)(i.Z, {
+                  guild: l,
+                  active: !0,
+                  size: i.Z.Sizes.MEDIUM,
+                }),
+                (0, s.jsxs)("div", {
+                  className: h.guildDetailsContanier,
+                  children: [
+                    (0, s.jsxs)(r.Text, {
+                      className: h.guildName,
+                      color: "header-primary",
+                      variant: "text-sm/medium",
+                      tag: "span",
+                      children: [
+                        l.name,
+                        (0, s.jsx)(a.Z, {
+                          guild: l,
+                          className: h.guildBadge,
+                          tooltipPosition: "left",
+                        }),
+                      ],
+                    }),
+                    (0, s.jsx)(u.V6, {
+                      invite: n,
+                      textClassName: h.guildInfoMemberCountText,
+                      className: h.guildInfoMemberCount,
+                    }),
+                  ],
+                }),
+              ],
+            }),
+            o.length > 0 &&
+              (0, s.jsx)("details", {
+                className: h.guildDescriptionContainer,
+                children: (0, s.jsx)(r.Text, {
+                  color: "header-secondary",
+                  variant: "text-sm/normal",
+                  children: o,
+                }),
+              }),
+          ],
+        });
+      }
+      function g(e) {
+        let { invite: t, channel: n, isSubmitting: r, onAcceptInvite: i } = e,
+          { guild_scheduled_event: a } = t;
+        return null != a
+          ? (0, s.jsx)(_, {
+              guildScheduledEvent: a,
+              channel: n,
+              isSubmitting: r,
+              onAcceptInvite: i,
+            })
+          : null;
+      }
+    },
+    970648: function (e, t, n) {
+      n(411104);
+      var s = n(772848),
+        r = n(544891),
+        i = n(981631);
+      async function a(e) {
+        let {
+          body: { handoff_token: t },
+        } = await r.tn.post({
+          url: i.ANM.HANDOFF,
+          body: { key: e },
+          oldFormErrors: !0,
+          retries: 1,
+        });
+        if (null != t) return t;
+        throw Error("Missing handoff token!");
+      }
+      t.Z = {
+        generateNonce: function () {
+          return (0, s.Z)();
+        },
+        createHandoffToken: a,
+      };
+    },
+    86779: function (e, t, n) {
+      n(47120), n(315314), n(610138), n(216116), n(78328), n(815648), n(773603);
+      var s,
+        r,
+        i = n(735250),
+        a = n(470079),
+        l = n(593473),
+        o = n(756647),
+        c = n(442837),
+        u = n(544891),
+        d = n(433517),
+        h = n(481060),
+        _ = n(570140),
+        E = n(893776),
+        g = n(314897),
+        p = n(626135),
+        f = n(70956),
+        m = n(970648),
+        I = n(981631),
+        N = n(689938),
+        T = n(715859);
+      let A = "mweb_handoff_nonce",
+        x = "mweb_handoff_nonce_expiration",
+        C = 1 * f.Z.Millis.MINUTE;
+      ((r = s || (s = {})).NONCE_MISSING = "nonce_missing"),
+        (r.NONCE_EXPIRED = "nonce_expired"),
+        (r.NULL_HANDOFF_TOKEN = "deep_link_failed"),
+        (r.HANDOFF_EXCHANGE = "handoff_exchange");
+      let S = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
+        O = new Set(["deep_link_failed"]),
+        R = () => {
+          d.K.remove(A), d.K.remove(x);
+        };
+      t.Z = () => {
+        let e = (0, c.e7)([g.default], () => g.default.getFingerprint()),
+          { fingerprint: t, handoff_token: n } = (0, l.parse)(
+            window.location.search,
+          ),
+          s = Array.isArray(t) ? (t.length > 1 ? t[0] : null) : t,
+          r = null != s ? s : null !== e ? e : void 0;
+        a.useEffect(() => {
+          null !== s &&
+            e !== s &&
+            _.Z.dispatch({ type: "FINGERPRINT", fingerprint: s });
+        }, [s, e]);
+        let [f, v] = a.useState(null),
+          Z = a.useCallback(
+            (e) => {
+              v(e),
+                p.default.track(
+                  I.rMx.MOBILE_WEB_HANDOFF_FAILURE,
+                  { reason: e, fingerprint: (0, o.K)(r) },
+                  { fingerprint: r },
+                );
+            },
+            [v, r],
+          ),
+          b = d.K.get(A);
+        if (
+          ("null" === n && null === f && Z("deep_link_failed"),
+          null != n &&
+            "null" !== n &&
+            null == b &&
+            null === f &&
+            Z("nonce_missing"),
+          a.useEffect(() => {
+            if (null != b) {
+              let e = d.K.get(x);
+              (null == e || Date.now() >= e) && (Z("nonce_expired"), R());
+            }
+          }, [b, Z]),
+          a.useEffect(() => {
+            null != n &&
+              "null" !== n &&
+              null != b &&
+              null == f &&
+              u.tn
+                .post({
+                  url: I.ANM.HANDOFF_EXCHANGE,
+                  body: { key: b, handoff_token: n },
+                })
+                .then((e) => E.Z.loginToken(e.body.token, !1))
+                .then(() => {
+                  p.default.track(I.rMx.LOGIN_SUCCESSFUL, {
+                    source: I.uRl.MOBILE_WEB_HANDOFF,
+                    is_new_user: !1,
+                    fingerprint: (0, o.K)(r),
+                  });
+                  let e = new URL(window.location.href),
+                    t = new URLSearchParams(e.search);
+                  t.delete("handoff_token"),
+                    t.delete("fingerprint"),
+                    (e.search = t.toString()),
+                    window.history.pushState(null, "", e);
+                })
+                .catch(() => {
+                  Z("handoff_exchange");
+                })
+                .finally(() => {
+                  R();
+                });
+          }, [n, b, f, r, Z]),
+          null == r)
+        )
+          return null;
+        let D = (() => {
+          if (null == f)
+            return (0, i.jsxs)(i.Fragment, {
+              children: [
+                N.Z.Messages.MOBILE_WEB_HANDOFF_EXPLANATION_TEXT_LINE_1,
+                (0, i.jsx)("br", {}),
+                N.Z.Messages.MOBILE_WEB_HANDOFF_EXPLANATION_TEXT_LINE_2,
+              ],
+            });
+          if (O.has(f))
+            return N.Z.Messages.MOBILE_WEB_HANDOFF_ERROR_NO_TRY_AGAIN;
+          if (S.has(f)) return N.Z.Messages.MOBILE_WEB_HANDOFF_ERROR_TRY_AGAIN;
+        })();
+        return null != f && O.has(f)
+          ? (0, i.jsx)("div", {
+              className: T.errorContainer,
+              children: (0, i.jsx)(h.Text, {
+                color: "interactive-normal",
+                variant: "text-sm/semibold",
+                children: D,
+              }),
+            })
+          : (0, i.jsxs)("div", {
+              className: T.container,
+              children: [
+                (0, i.jsx)(h.Text, {
+                  variant: "text-sm/semibold",
+                  children: D,
+                }),
+                (0, i.jsx)(h.Button, {
+                  color: h.Button.Colors.BRAND_INVERTED,
+                  onClick: () => {
+                    let e = m.Z.generateNonce();
+                    d.K.set(A, e), d.K.set(x, Date.now() + C);
+                    let t = new URL(I.x0X),
+                      n = new URLSearchParams(window.location.search);
+                    n.delete("fingerprint"), n.delete("handoff_token");
+                    let s = new URLSearchParams();
+                    s.set(
+                      "redirect",
+                      encodeURIComponent(
+                        window.location.pathname + n.toString(),
+                      ),
+                    ),
+                      s.set("key", e),
+                      s.set("fingerprint", r),
+                      (t.search = s.toString()),
+                      p.default.track(
+                        I.rMx.DEEP_LINK_CLICKED,
+                        {
+                          fingerprint: (0, o.K)(r),
+                          source: "mobile_web_handoff",
+                          destination: I.x0X,
+                        },
+                        { fingerprint: r, flush: !0 },
+                      ),
+                      (window.location.href = t.toString());
+                  },
+                  children: (0, i.jsx)(h.Text, {
+                    className: T.buttonText,
+                    variant: "text-sm/semibold",
+                    children: N.Z.Messages.MOBILE_WEB_HANDOFF_BUTTON_TEXT,
+                  }),
+                }),
+              ],
+            });
+      };
+    },
+    913583: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return d;
+        },
+      });
+      var s = n(735250);
+      n(470079);
+      var r = n(990547),
+        i = n(481060),
+        a = n(213609),
+        l = n(388905),
+        o = n(760213),
+        c = n(689938),
+        u = n(117286);
+      function d(e) {
+        let { onDismiss: t } = e;
+        return (
+          (0, a.Z)({
+            type: r.ImpressionTypes.MODAL,
+            name: r.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING,
+          }),
+          (0, s.jsxs)(l.ZP, {
+            className: u.chooseAccountAuthBox,
+            children: [
+              (0, s.jsx)(l.Dx, {
+                children: c.Z.Messages.SWITCH_ACCOUNTS_CHOOSE_ACCOUNT,
+              }),
+              (0, s.jsx)(i.Text, {
+                className: u.chooseAccountHelpText,
+                variant: "text-md/normal",
+                color: "header-secondary",
+                children: c.Z.Messages.SWITCH_ACCOUNTS_CHOOSE_ACCOUNT_HELPER,
+              }),
+              (0, s.jsx)(o.Z, {
+                actionText: c.Z.Messages.SWITCH_ACCOUNTS_ACTION_LOG_IN,
+                onAction: (e) => {
+                  e === o.W.LOGIN_REQUIRED && t();
+                },
+              }),
+              (0, s.jsx)("div", {
+                className: u.actions,
+                children: (0, s.jsx)(i.Button, {
+                  className: u.__invalid_chooseAccountButton,
+                  look: i.Button.Looks.LINK,
+                  color: i.Button.Colors.PRIMARY,
+                  onClick: t,
+                  size: i.Button.Sizes.MEDIUM,
+                  children: (0, s.jsx)(i.Text, {
+                    variant: "text-sm/normal",
+                    children:
+                      c.Z.Messages.SWITCH_ACCOUNTS_ADD_AN_ACCOUNT_BUTTON,
+                  }),
+                }),
+              }),
+            ],
+          })
+        );
+      }
+    },
+    479446: function (e, t, n) {
+      n.d(t, {
+        Ou: function () {
+          return _;
+        },
+        SR: function () {
+          return s;
+        },
+        YD: function () {
+          return h;
+        },
+      }),
+        n(411104);
+      var s,
+        r,
+        i = n(512722),
+        a = n.n(i),
+        l = n(493683),
+        o = n(904245),
+        c = n(957730),
+        u = n(592125),
+        d = n(669079);
+      ((r = s || (s = {})).ACTION = "action"),
+        (r.LOOP = "loop"),
+        (r.IDLE = "idle");
+      let h = async (e, t) => {
+          if (null == t) throw Error("giftCode must be defined");
+          if (null == e) throw Error("Recipient must be defined");
+          let n = await l.Z.openPrivateChannel(e.id).then((e) => {
+              let t = u.Z.getChannel(e);
+              if ((a()(null != t, "PrivateChannel is null"), null == t))
+                throw Error("Channel must be defined");
+              return t;
+            }),
+            s = (0, d.Nz)(t);
+          return o.Z.sendMessage(n.id, c.ZP.parse(n, s), void 0, {
+            isGiftLinkSentOnBehalfOfUser: !0,
+          });
+        },
+        _ = (e) => {};
+    },
+    981632: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return u;
+        },
+      }),
+        n(47120),
+        n(411104);
+      var s = n(735250),
+        r = n(470079),
+        i = n(442837),
+        a = n(481060),
+        l = n(607070),
+        o = n(409302),
+        c = n(474936);
+      function u(e) {
+        let {
+            giftStyle: t,
+            className: n,
+            shouldAnimate: u = !0,
+            defaultAnimationState: d,
+            idleAnimationState: h,
+          } = e,
+          _ = (0, i.e7)([l.Z], () => l.Z.useReducedMotion),
+          [E, g] = r.useState(d),
+          p = r.useRef((0, o._)(t, E)),
+          [f, m] = r.useState(null == h),
+          [I, N] = r.useState(!1),
+          [T, A] = r.useState(-1),
+          x = () => {
+            (p.current = (0, o._)(t, E)), A((e) => e + 1);
+          },
+          C = () => {
+            m(!1), N(!0), A(-1), g(d);
+          };
+        r.useEffect(() => {
+          null == h && g(d);
+        }, [h, d]),
+          r.useEffect(() => {
+            if (null != h && T >= 0) {
+              C();
+              return;
+            }
+            x();
+          }, [t, h]),
+          r.useEffect(() => {
+            (!I || null == h) && x();
+          }, [E]),
+          r.useEffect(() => {
+            I && (m(null == h), N(!1), x());
+          }, [I]);
+        if (!c.Cj.hasOwnProperty(t))
+          throw Error("Unexpected giftStyle ".concat(t));
+        return (0, s.jsx)(a.LottieAnimation, {
+          importData: p.current,
+          shouldAnimate: !_ && u,
+          className: n,
+          versionKey: T,
+          onComplete:
+            null != h
+              ? () => {
+                  null != h && (g(h), m(!0));
+                }
+              : void 0,
+          loop: f,
+        });
+      }
+    },
+    409302: function (e, t, n) {
+      n.d(t, {
+        _: function () {
+          return i;
+        },
+      });
+      var s = n(479446),
+        r = n(474936);
+      let i = (e, t) => {
+        let i;
+        switch (e) {
+          case r.Cj.SNOWGLOBE:
+            i = () =>
+              n
+                .e("20268")
+                .then(n.t.bind(n, 22952, 19))
+                .then((e) => {
+                  let { default: t } = e;
+                  return t;
+                });
+            break;
+          case r.Cj.BOX:
+            i = () =>
+              n
+                .e("37372")
+                .then(n.t.bind(n, 459274, 19))
+                .then((e) => {
+                  let { default: t } = e;
+                  return t;
+                });
+            break;
+          case r.Cj.CUP:
+            i = () =>
+              n
+                .e("37066")
+                .then(n.t.bind(n, 990632, 19))
+                .then((e) => {
+                  let { default: t } = e;
+                  return t;
+                });
+            break;
+          case r.Cj.STANDARD_BOX:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("60592")
+                    .then(n.t.bind(n, 433166, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("81358")
+                    .then(n.t.bind(n, 145894, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("46468")
+                    .then(n.t.bind(n, 70303, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.CAKE:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("5996")
+                    .then(n.t.bind(n, 889601, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("71378")
+                    .then(n.t.bind(n, 445637, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("69806")
+                    .then(n.t.bind(n, 549883, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.CHEST:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("38506")
+                    .then(n.t.bind(n, 449445, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("31085")
+                    .then(n.t.bind(n, 837312, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("40331")
+                    .then(n.t.bind(n, 669711, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.COFFEE:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("23847")
+                    .then(n.t.bind(n, 98860, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("93554")
+                    .then(n.t.bind(n, 732573, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("71244")
+                    .then(n.t.bind(n, 398161, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.SEASONAL_STANDARD_BOX:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("20196")
+                    .then(n.t.bind(n, 862977, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("58903")
+                    .then(n.t.bind(n, 883984, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("62065")
+                    .then(n.t.bind(n, 402483, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.SEASONAL_CAKE:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("22101")
+                    .then(n.t.bind(n, 953256, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("63007")
+                    .then(n.t.bind(n, 320152, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("68822")
+                    .then(n.t.bind(n, 721670, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.SEASONAL_CHEST:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("97674")
+                    .then(n.t.bind(n, 897198, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("37357")
+                    .then(n.t.bind(n, 967705, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("72637")
+                    .then(n.t.bind(n, 209128, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.SEASONAL_COFFEE:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("83646")
+                    .then(n.t.bind(n, 804732, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("92695")
+                    .then(n.t.bind(n, 702411, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("12112")
+                    .then(n.t.bind(n, 335878, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          case r.Cj.NITROWEEN_STANDARD:
+            switch (t) {
+              case s.SR.IDLE:
+                i = () =>
+                  n
+                    .e("63401")
+                    .then(n.t.bind(n, 972224, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              case s.SR.LOOP:
+                i = () =>
+                  n
+                    .e("63401")
+                    .then(n.t.bind(n, 972224, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+                break;
+              default:
+                i = () =>
+                  n
+                    .e("61365")
+                    .then(n.t.bind(n, 279858, 19))
+                    .then((e) => {
+                      let { default: t } = e;
+                      return t;
+                    });
+            }
+            break;
+          default:
+            i = () => Promise.resolve("Error: Invalid giftStyle");
+        }
+        return i;
+      };
+    },
+    896797: function (e, t, n) {
+      var s,
+        r = n(442837),
+        i = n(433517),
+        a = n(570140),
+        l = n(981631);
+      function o(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      let c = { lastViewedPath: null, lastViewedNonVoicePath: null },
+        u = c,
+        d = "LAST_VIEWED_PATH";
+      class h extends (s = r.ZP.PersistedStore) {
+        initialize() {
+          let e =
+            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c;
+          u = null != e ? e : c;
+        }
+        get defaultRoute() {
+          return l.Z5c.ME;
+        }
+        get lastNonVoiceRoute() {
+          var e;
+          return null !== (e = u.lastViewedNonVoicePath) && void 0 !== e
+            ? e
+            : l.Z5c.ME;
+        }
+        get fallbackRoute() {
+          return l.Z5c.ME;
+        }
+        getState() {
+          return u;
+        }
+      }
+      o(h, "displayName", "DefaultRouteStore"),
+        o(h, "persistKey", "DefaultRouteStore"),
+        o(h, "migrations", [
+          () => {
+            let e = i.K.get(d, null);
+            return i.K.remove(d), { lastViewedPath: e };
+          },
+        ]),
+        (t.Z = new h(a.Z, {
+          SAVE_LAST_ROUTE: function (e) {
+            let { path: t } = e;
+            return (u.lastViewedPath = t), !0;
+          },
+          SAVE_LAST_NON_VOICE_ROUTE: function (e) {
+            let { path: t } = e;
+            return (u.lastViewedNonVoicePath = t), !0;
+          },
+        }));
+    },
+    625054: function (e, t, n) {
+      var s = n(525654),
+        r = n.n(s),
+        i = n(643191);
+      t.Z = {
+        dump(e) {
+          let t;
+          null != performance.memory &&
+            (t = {
+              jsHeapSizeLimit: performance.memory.jsHeapSizeLimit,
+              totalJSHeapSize: performance.memory.totalJSHeapSize,
+              usedJSHeapSize: performance.memory.usedJSHeapSize,
+            }),
+            e({
+              browser: { name: r().name, version: r().version },
+              os: { name: r().os.family, version: r().os.version },
+              memory: t,
+            });
+        },
+        getTimeSinceNavigationStart: () => Date.now() - i.mb,
+      };
+    },
+    782605: function (e, t, n) {
+      n.d(t, {
+        O: function () {
+          return c;
+        },
+        l: function () {
+          return o;
+        },
+      });
+      var s = n(594174),
+        r = n(63063),
+        i = n(74538),
+        a = n(981631),
+        l = n(689938);
+      function o(e) {
+        switch (e) {
+          case a.evJ.TOO_MANY_USER_GUILDS:
+            let t = s.default.getCurrentUser(),
+              n =
+                i.ZP.canUseIncreasedGuildCap(t) ||
+                (null == t ? void 0 : t.isStaff())
+                  ? a.tHP
+                  : a.DZw;
+            return {
+              title: l.Z.Messages.TOO_MANY_USER_GUILDS_TITLE_2.format({
+                quantity: n,
+              }),
+              description: l.Z.Messages.TOO_MANY_USER_GUILDS_DESCRIPTION,
+            };
+          case a.evJ.GUILD_AT_CAPACITY:
+            return {
+              title: l.Z.Messages.SERVER_IS_CURRENTLY_FULL,
+              description: l.Z.Messages.PLEASE_TRY_AGAIN_LATER,
+            };
+          case a.evJ.GUILD_JOIN_INVITE_LIMITED_ACCESS:
+            return {
+              title: l.Z.Messages.GUILD_LIMITED_ACCESS_INFO_MODAL_HEADING,
+              description: l.Z.Messages.PLEASE_TRY_AGAIN_LATER,
+            };
+          default:
+            return null;
+        }
+      }
+      function c(e) {
+        switch (e) {
+          case a.evJ.TOO_MANY_USER_GUILDS:
+            return l.Z.Messages.TOO_MANY_USER_GUILDS_DESCRIPTION;
+          case a.evJ.GUILD_AT_CAPACITY:
+            return l.Z.Messages.MAX_GUILD_MEMBERS_REACHED_ERROR;
+          case a.evJ.INVALID_COUNTRY_CODE:
+            return l.Z.Messages.INVALID_COUNTRY_CODE;
+          case a.evJ.INVALID_CANNOT_FRIEND_SELF:
+            return l.Z.Messages.INVALID_CANNOT_FRIEND_SELF;
+          case a.evJ.INVITES_DISABLED:
+            return l.Z.Messages.INVITES_DISABLED_MODAL_DESCRIPTION.format({
+              articleLink: r.Z.getArticleURL(a.BhN.INVITE_DISABLED),
+            });
+          default:
+            return l.Z.Messages.INVITE_MODAL_ERROR_DEFAULT;
+        }
+      }
+    },
+    172517: function (e, t, n) {
+      n.d(t, {
+        FW: function () {
+          return _;
+        },
+        Pk: function () {
+          return o;
+        },
+        Rq: function () {
+          return g;
+        },
+        W_: function () {
+          return a;
+        },
+        dK: function () {
+          return l;
+        },
+        qd: function () {
+          return E;
+        },
+      }),
+        n(518263),
+        n(970173),
+        n(520712),
+        n(268111),
+        n(941497),
+        n(32026),
+        n(480839),
+        n(744285),
+        n(492257),
+        n(873817),
+        n(642549),
+        n(47120),
+        n(757143),
+        n(863942),
+        n(411104);
+      var s = n(512722),
+        r = n.n(s),
+        i = n(598077);
+      function a() {
+        return window.crypto.subtle.generateKey(
+          {
+            name: "RSA-OAEP",
+            modulusLength: 2048,
+            publicExponent: new Uint8Array([1, 0, 1]),
+            hash: "SHA-256",
+          },
+          !0,
+          ["decrypt"],
+        );
+      }
+      async function l(e) {
+        return (
+          r()(null != e.publicKey, "public key cannot be null"),
+          btoa(
+            String.fromCharCode(
+              ...new Uint8Array(
+                await window.crypto.subtle.exportKey("spki", e.publicKey),
+              ),
+            ),
+          )
+        );
+      }
+      async function o(e) {
+        return (
+          r()(null != e.publicKey, "public key cannot be null"),
+          d(await window.crypto.subtle.exportKey("spki", e.publicKey))
+        );
+      }
+      function c(e) {
+        return btoa(String.fromCharCode(...new Uint8Array(e)))
+          .replace(/\//g, "_")
+          .replace(/\+/g, "-")
+          .replace(/={1,2}$/, "");
+      }
+      function u(e) {
+        return Uint8Array.from(atob(e), (e) => e.charCodeAt(0));
+      }
+      async function d(e) {
+        return c(await window.crypto.subtle.digest({ name: "SHA-256" }, e));
+      }
+      function h(e, t) {
+        return (
+          r()(null != e.privateKey, "private key cannot be null"),
+          window.crypto.subtle.decrypt(
+            { name: "RSA-OAEP", hash: "SHA-256" },
+            e.privateKey,
+            t,
+          )
+        );
+      }
+      async function _(e, t) {
+        let n = new TextDecoder(),
+          s = await h(e, u(t));
+        return n.decode(s);
+      }
+      async function E(e, t) {
+        return c(await h(e, u(t)));
+      }
+      async function g(e, t) {
+        t = await _(e, t);
+        let n = t.match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
+        if (null == n) throw Error("Invalid encoded user record.");
+        let [, s, r, a, l] = n;
+        return new i.Z({
+          id: s,
+          discriminator: r,
+          avatar: "0" === a ? null : a,
+          username: l,
+        });
+      }
+    },
+    296848: function (e, t, n) {
+      n.d(t, {
+        AT: function () {
+          return f;
+        },
+        GY: function () {
+          return g;
+        },
+        R4: function () {
+          return E;
+        },
+        oE: function () {
+          return p;
+        },
+        yb: function () {
+          return _;
+        },
+      }),
+        n(47120),
+        n(653041),
+        n(470079);
+      var s = n(512722),
+        r = n.n(s),
+        i = n(913527),
+        a = n.n(i),
+        l = n(99945);
+      n(442837);
+      var o = n(821849),
+        c = n(509545),
+        u = n(74538),
+        d = n(981631),
+        h = n(474936);
+      function _(e) {
+        return e.items
+          .map((e) => {
+            let t = c.Z.get(e.planId);
+            return r()(null != t, "Unable to fetch plan"), t;
+          })
+          .map((e) => e.skuId);
+      }
+      function E(e, t, n) {
+        let s = e.getCurrentSubscriptionPlanIdForGroup(n);
+        return (
+          (e.type === d.NYc.PREMIUM && null == s) ||
+          (r()(null != s, "Current subscription has no plan in group"),
+          r()(
+            !(
+              s === h.Xh.PREMIUM_YEAR_TIER_1 && t === h.Xh.PREMIUM_MONTH_TIER_2
+            ),
+            "Unexpected plan switch",
+          ),
+          n.indexOf(s) < n.indexOf(t))
+        );
+      }
+      function g(e, t, n) {
+        return !E(e, t, n);
+      }
+      function p(e, t) {
+        let n = c.Z.get(e);
+        if (null == n) {
+          let n = h.GP[e];
+          r()(null != n, "Missing hardcoded subscriptionPlan: ".concat(e));
+          let s = (0, u.Wz)(n.skuId);
+          !c.Z.isFetchingForSKU(s) && (0, o.GZ)(s, t);
+        }
+        return n;
+      }
+      function f(e) {
+        let t = Object.keys(l.T).filter((e) => isNaN(Number(e)));
+        if (e.status !== d.O0b.PAUSED)
+          return { durations: t, currentDaysPaused: 0 };
+        if (null == e.pauseEndsAt)
+          return { durations: [], currentDaysPaused: 0 };
+        {
+          let n = a()(e.currentPeriodStart),
+            s = Math.round(a()(e.pauseEndsAt).diff(n, "days", !0)),
+            r = [];
+          for (let e of t) l.T[e] > s && r.push(e);
+          return { durations: r, currentDaysPaused: s };
+        }
+      }
+    },
+    99945: function (e, t, n) {
+      var s, r;
+      n.d(t, {
+        T: function () {
+          return s;
+        },
+      }),
+        ((r = s || (s = {}))[(r.ONE_MONTH = 30)] = "ONE_MONTH"),
+        (r[(r.TWO_MONTHS = 60)] = "TWO_MONTHS"),
+        (r[(r.THREE_MONTHS = 90)] = "THREE_MONTHS");
+    },
+    954757: function (e, t, n) {
+      e.exports = { wrapper: "wrapper_ed5275" };
+    },
+    504877: function (e, t, n) {
+      e.exports = {
+        characterBackground: "characterBackground_bdd070",
+        artwork: "artwork_bdd070",
+        logoWithText: "logoWithText_bdd070",
+        logo: "logo_bdd070",
+      };
+    },
+    295242: function (e, t, n) {
+      e.exports = {
+        applicationIcon: "applicationIcon_db6d88",
+        seasonalIcon: "seasonalIcon_db6d88",
+      };
+    },
+    60561: function (e, t, n) {
+      e.exports = {
+        authBox: "authBox_c394c0",
+        createButton: "createButton_c394c0",
+        header: "header_c394c0",
+        formContainer: "formContainer_c394c0",
+      };
+    },
+    684190: function (e, t, n) {
+      e.exports = {
+        button: "button_c85cdc elevated_c85cdc",
+        buttonTitle: "buttonTitle_c85cdc",
+        card: "card_c85cdc elevated_c85cdc",
+        cardContents: "cardContents_c85cdc",
+        cardAccentLeft: "cardAccentLeft_c85cdc",
+        cardAccentRight: "cardAccentRight_c85cdc",
+      };
+    },
+    658797: function (e, t, n) {
+      e.exports = {
+        container: "container_f9c402",
+        guildBadge: "guildBadge_f9c402",
+        appIcon: "appIcon_f9c402",
+        appIconSize: "appIconSize_f9c402",
+        avatar: "avatar_f9c402",
+        guildIcon: "guildIcon_f9c402",
+        compactAvatar: "compactAvatar_f9c402",
+        inviteResolvingGuildName: "inviteResolvingGuildName_f9c402",
+        title: "title_f9c402",
+        directInviteSubTitle: "directInviteSubTitle_f9c402",
+        activityCount: "activityCount_f9c402",
+        guildContainer: "guildContainer_f9c402",
+        appIn: "appIn_f9c402",
+        appGuildName: "appGuildName_f9c402",
+        icon: "icon_f9c402",
+      };
+    },
+    970314: function (e, t, n) {
+      e.exports = {
+        header: "header_d58f04",
+        horizontalAuthBox: "horizontalAuthBox_d58f04",
+        needAccount: "needAccount_d58f04",
+        smallRegisterLink: "smallRegisterLink_d58f04",
+        mainLoginContainer: "mainLoginContainer_d58f04",
+        mobile: "mobile_d58f04",
+        goBackButton: "goBackButton_d58f04",
+        content: "content_d58f04",
+        caret: "caret_d58f04",
+      };
+    },
+    506303: function (e, t, n) {
+      e.exports = {
+        qrLogin: "qrLogin_c6cd4b",
+        qrLoginInner: "qrLoginInner_c6cd4b",
+        qrCode: "qrCode_c6cd4b",
+        qrCodeContainer: "qrCodeContainer_c6cd4b",
+        qrCodeOverlay: "qrCodeOverlay_c6cd4b",
+        qrAvatar: "qrAvatar_c6cd4b",
+        startOverButton: "startOverButton_c6cd4b",
+        verticalSeparator: "verticalSeparator_c6cd4b",
+      };
+    },
+    929650: function (e, t, n) {
+      e.exports = {
+        column: "column_ef5bab",
+        container: "container_ef5bab",
+        content: "content_ef5bab",
+      };
+    },
+    100906: function (e, t, n) {
+      e.exports = {
+        errorMessage: "errorMessage_ee1c42",
+        createAccountTemplateHeader: "createAccountTemplateHeader_ee1c42",
+        horizontalAuthBox: "horizontalAuthBox_ee1c42",
+        flex: "flex_ee1c42",
+        divider: "divider_ee1c42",
+        goBackButton: "goBackButton_ee1c42",
+        content: "content_ee1c42",
+        caret: "caret_ee1c42",
+        messageNegative: "messageNegative_ee1c42",
+        messagePositive: "messagePositive_ee1c42",
+      };
+    },
+    987742: function (e, t, n) {
+      e.exports = {
+        container: "container_aaa004",
+        buttonColumn: "buttonColumn_aaa004",
+      };
+    },
+    237810: function (e, t, n) {
+      e.exports = { image: "image_bcfea3" };
+    },
+    510186: function (e, t, n) {
+      e.exports = {
+        iconContainer: "iconContainer_a2aef9",
+        filledIcon: "filledIcon_a2aef9",
+      };
+    },
+    634645: function (e, t, n) {
+      e.exports = {
+        title: "title_da258e",
+        subtitle: "subtitle_da258e",
+        img: "img_da258e",
+      };
+    },
+    535701: function (e, t, n) {
+      n.r(
+        (e.exports = {
+          container: "container_a57e6a",
+          title: "title_a57e6a",
+          inputs: "inputs_a57e6a",
+          day: "day_a57e6a",
+          month: "month_a57e6a",
+          year: "year_a57e6a",
+          errors: "errors_a57e6a",
+        }),
+      );
+    },
+    111543: function (e, t, n) {
+      e.exports = { image: "image_d42055", loaded: "loaded_d42055" };
+    },
+    878145: function (e, t, n) {
+      e.exports = {
+        discordLogo: "discordLogo_b83a05",
+        authBox: "authBox_b83a05",
+        authBoxExpanded: "authBoxExpanded_b83a05 authBox_b83a05",
+        centeringWrapper: "centeringWrapper_b83a05",
+        title: "title_b83a05",
+        subText: "subText_b83a05",
+        pill: "pill_b83a05",
+        pillOnline: "pillOnline_b83a05",
+        pillMessage: "pillMessage_b83a05",
+        pillIconTotal: "pillIconTotal_b83a05 pillIcon_b83a05",
+        pillIconOnline: "pillIconOnline_b83a05 pillIcon_b83a05",
+        pillFlat: "pillFlat_b83a05",
+        joiningAs: "joiningAs_b83a05",
+        joiningAsAvatar: "joiningAsAvatar_b83a05",
+        joiningAsUsername: "joiningAsUsername_b83a05",
+        spinnerVideo: "spinnerVideo_b83a05",
+        image: "image_b83a05",
+        block: "block_b83a05",
+        button: "button_b83a05",
+        linkButton: "linkButton_b83a05",
+        inviteIcon: "inviteIcon_b83a05",
+        inviteLargeIcon: "inviteLargeIcon_b83a05 inviteIcon_b83a05",
+        downloadButtonSubtext: "downloadButtonSubtext_b83a05",
+        inputError: "inputError_b83a05",
+        description: "description_b83a05",
+      };
+    },
+    559737: function (e, t, n) {
+      e.exports = { logo: "logo_c59dbe" };
+    },
+    691134: function (e, t, n) {
+      e.exports = { checkbox: "checkbox_bc87ef", subText: "subText_bc87ef" };
+    },
+    577491: function (e, t, n) {
+      e.exports = {
+        container: "container_d69c1e",
+        statusContainer: "statusContainer_d69c1e",
+        channelInfoContainer: "channelInfoContainer_d69c1e",
+        channelInfoText: "channelInfoText_d69c1e",
+      };
+    },
+    985772: function (e, t, n) {
+      e.exports = {
+        error: "error_c39a71",
+        subTitle: "subTitle_c39a71",
+        button: "button_c39a71",
+        codeInput: "codeInput_c39a71",
+      };
+    },
+    325929: function (e, t, n) {
+      e.exports = {
+        flex: "flex_e690b8",
+        header: "header_e690b8",
+        embed: "embed_e690b8",
+        listeners: "listeners_e690b8",
+        live: "live_e690b8",
+        speakers: "speakers_e690b8",
+        members: "members_e690b8",
+        speaker: "speaker_e690b8",
+        joinButton: "joinButton_e690b8",
+        background: "background_e690b8",
+        icon: "icon_e690b8",
+        guild: "guild_e690b8",
+        guildInfo: "guildInfo_e690b8",
+        dot: "dot_e690b8",
+        alignStart: "alignStart_e690b8",
+        avatar: "avatar_e690b8",
+        username: "username_e690b8",
+      };
+    },
+    710317: function (e, t, n) {
+      e.exports = {
+        canvas: "canvas_f26d08",
+        fallbackImage: "fallbackImage_f26d08",
+        visible: "visible_f26d08",
+        embedded: "embedded_f26d08",
+      };
+    },
+    201680: function (e, t, n) {
+      e.exports = {
+        wrapper: "wrapper_bb3b80 " + n("112864").scrollbarGhost,
+        rightSplit: "rightSplit_bb3b80",
+        embedded: "embedded_bb3b80",
+        leftSplit: "leftSplit_bb3b80",
+        nonEmbeddedLeftSplit: "nonEmbeddedLeftSplit_bb3b80",
+        mobileWave: "mobileWave_bb3b80",
+        logo: "logo_bb3b80",
+      };
+    },
+    458221: function (e, t, n) {
+      n.r(
+        (e.exports = {
+          qrCodeOverlay: "qrCodeOverlay_bcfb9d",
+          "size-40": "size-40_bcfb9d",
+          "size-60": "size-60_bcfb9d",
+          qrCodeContainer: "qrCodeContainer_bcfb9d",
+        }),
+      );
+    },
+    680924: function (e, t, n) {
+      e.exports = { spacer: "spacer_b0944f", input: "input_b0944f" };
+    },
+    404934: function (e, t, n) {
+      e.exports = {
+        select: "select_fbe7b1",
+        error: "error_fbe7b1",
+        errorMessage: "errorMessage_fbe7b1",
+      };
+    },
+    737602: function (e, t, n) {
+      e.exports = {
+        descriptionText: "descriptionText_f4ba67",
+        truncate: "truncate_f4ba67",
+      };
+    },
+    731006: function (e, t, n) {
+      e.exports = { container: "container_f87f77" };
+    },
+    247912: function (e, t, n) {
+      e.exports = {
+        container: "container_a4ec62",
+        eventName: "eventName_a4ec62",
+        description: "description_a4ec62",
+        descriptionWithThumbnail: "descriptionWithThumbnail_a4ec62",
+        spacer: "spacer_a4ec62",
+        rsvpCount: "rsvpCount_a4ec62",
+        rsvpIcon: "rsvpIcon_a4ec62",
+        creator: "creator_a4ec62",
+        eventInfoStatusContainer: "eventInfoStatusContainer_a4ec62",
+        statusContainer: "statusContainer_a4ec62",
+        withThumbnail: "withThumbnail_a4ec62",
+        thumbnailContainer: "thumbnailContainer_a4ec62",
+        thumbnail: "thumbnail_a4ec62",
+      };
+    },
+    205569: function (e, t, n) {
+      e.exports = {
+        eventStatusContainer: "eventStatusContainer_d6a475",
+        isRecurring: "isRecurring_d6a475",
+        eventStatusLabel: "eventStatusLabel_d6a475",
+        liveEventEndTime: "liveEventEndTime_d6a475",
+        newBadge: "newBadge_d6a475",
+        newBadgeText: "newBadgeText_d6a475",
+      };
+    },
+    639955: function (e, t, n) {
+      e.exports = {
+        inviteDetailsContainer: "inviteDetailsContainer_a75489",
+        clickable: "clickable_a75489",
+        guildChannelInfoContainer: "guildChannelInfoContainer_a75489",
+        verticalContainer: "verticalContainer_a75489",
+        footerContainer: "footerContainer_a75489",
+        button: "button_a75489",
+        innerButton: "innerButton_a75489",
+        buttonIcon: "buttonIcon_a75489",
+        eventDescription: "eventDescription_a75489",
+        channelDescription: "channelDescription_a75489",
+        guildBadge: "guildBadge_a75489",
+        guildName: "guildName_a75489",
+        guildNameClickable: "guildNameClickable_a75489",
+        guildNameLinkable: "guildNameLinkable_a75489 guildName_a75489",
+        channelIcon: "channelIcon_a75489",
+        channelInfoContainer: "channelInfoContainer_a75489",
+        channelLocationLink: "channelLocationLink_a75489",
+        banner: "banner_a75489",
+      };
+    },
+    448144: function (e, t, n) {
+      e.exports = {
+        header: "header_ecbdaf",
+        title: "title_ecbdaf",
+        description: "description_ecbdaf",
+        guildBadge: "guildBadge_ecbdaf",
+        row: "row_ecbdaf",
+        guildIcon: "guildIcon_ecbdaf",
+        body: "body_ecbdaf",
+        icon: "icon_ecbdaf",
+        channelIcon: "channelIcon_ecbdaf",
+        clickable: "clickable_ecbdaf",
+        linkText: "linkText_ecbdaf",
+        channelLocation: "channelLocation_ecbdaf",
+        locationText: "locationText_ecbdaf",
+        externalLocation: "externalLocation_ecbdaf",
+        interestedCount: "interestedCount_ecbdaf",
+        creator: "creator_ecbdaf",
+        divider: "divider_ecbdaf",
+      };
+    },
+    196238: function (e, t, n) {
+      e.exports = { responseOptions: "responseOptions_ff8b0a" };
+    },
+    34964: function (e, t, n) {
+      e.exports = {
+        icon: "icon_b52547",
+        guidelines: "guidelines_b52547",
+        divider: "divider_b52547",
+        previewSection: "previewSection_b52547",
+        channelsWrapper: "channelsWrapper_b52547",
+        rolesWrapper: "rolesWrapper_b52547",
+        protip: "protip_b52547",
+        protipText: "protipText_b52547",
+        channel: "channel_b52547",
+        category: "category_b52547",
+        channelIcon: "channelIcon_b52547",
+        channelText: "channelText_b52547",
+        role: "role_b52547",
+        roleCircle: "roleCircle_b52547",
+        roleName: "roleName_b52547",
+      };
+    },
+    251320: function (e, t, n) {
+      e.exports = {
+        image: "image_be5c11",
+        header: "header_be5c11",
+        usagePill: "usagePill_be5c11",
+      };
+    },
+    712457: function (e, t, n) {
+      e.exports = {
+        container: "container_de67e1",
+        title: "title_de67e1",
+        subtitle: "subtitle_de67e1",
+        userText: "userText_de67e1",
+        usagePill: "usagePill_de67e1",
+        verifiedNameContainer: "verifiedNameContainer_de67e1",
+        verifiedIcon: "verifiedIcon_de67e1",
+        verifiedCheckContainer: "verifiedCheckContainer_de67e1",
+        verifiedCheck: "verifiedCheck_de67e1",
+      };
+    },
+    71188: function (e, t, n) {
+      e.exports = {
+        image: "image_a4d9bd",
+        title: "title_a4d9bd",
+        subtitle: "subtitle_a4d9bd",
+        spacedButton: "spacedButton_a4d9bd",
+      };
+    },
+    788170: function (e, t, n) {
+      e.exports = {
+        guildBadge: "guildBadge_e73528",
+        appIcon: "appIcon_e73528",
+        appIconSize: "appIconSize_e73528",
+        avatar: "avatar_e73528",
+        guildIcon: "guildIcon_e73528",
+        title: "title_e73528",
+        activityCount: "activityCount_e73528",
+        directInviteSubTitle: "directInviteSubTitle_e73528",
+        guildContainer: "guildContainer_e73528",
+        appIn: "appIn_e73528",
+        appGuildName: "appGuildName_e73528",
+        inviteJoinContainer: "inviteJoinContainer_e73528",
+        inviterIconWrapper: "inviterIconWrapper_e73528",
+      };
+    },
+    39578: function (e, t, n) {
+      e.exports = {
+        container: "container_e05cb6",
+        acceptButton: "acceptButton_e05cb6",
+      };
+    },
+    712833: function (e, t, n) {
+      e.exports = {
+        splashBackground: "splashBackground_f421fb",
+        centerFlex: "centerFlex_f421fb",
+        centerAuthBoxContent: "centerAuthBoxContent_f421fb centerFlex_f421fb",
+        inviteCard: "inviteCard_f421fb",
+        inviteChildContainer: "inviteChildContainer_f421fb",
+        inviteCardInner: "inviteCardInner_f421fb",
+        guildInfoInner: "guildInfoInner_f421fb",
+        inviteCardInnerError: "inviteCardInnerError_f421fb",
+        inviteCardInnerLoading: "inviteCardInnerLoading_f421fb",
+      };
+    },
+    262854: function (e, t, n) {
+      e.exports = {
+        guildInfoCard: "guildInfoCard_b6dbd3",
+        presentedBy: "presentedBy_b6dbd3",
+        guildContainer: "guildContainer_b6dbd3",
+        guildDetailsContanier: "guildDetailsContanier_b6dbd3",
+        guildName: "guildName_b6dbd3",
+        guildBadge: "guildBadge_b6dbd3",
+        guildInfoMemberCount: "guildInfoMemberCount_b6dbd3",
+        guildInfoMemberCountText: "guildInfoMemberCountText_b6dbd3",
+        guildDescriptionContainer: "guildDescriptionContainer_b6dbd3",
+        guildEventCard: "guildEventCard_b6dbd3",
+        channelInfo: "channelInfo_b6dbd3",
+        acceptButton: "acceptButton_b6dbd3",
+      };
+    },
+    850393: function (e, t, n) {
+      n.r(
+        (e.exports = {
+          wrapper: "wrapper_a71a1c",
+          header: "header_a71a1c",
+          content: "content_a71a1c",
+          guildIcon: "guildIcon_a71a1c",
+          applicationIcon: "applicationIcon_a71a1c",
+          guildIconJoined: "guildIconJoined_a71a1c guildIcon_a71a1c",
+          guildIconImage: "guildIconImage_a71a1c guildIcon_a71a1c",
+          guildIconImageJoined:
+            "guildIconImageJoined_a71a1c guildIconImage_a71a1c guildIcon_a71a1c",
+          inviteDestination: "inviteDestination_a71a1c",
+          inviteDestinationJoined:
+            "inviteDestinationJoined_a71a1c inviteDestination_a71a1c",
+          channel: "channel_a71a1c",
+          channelName: "channelName_a71a1c",
+          channelIcon: "channelIcon_a71a1c",
+          status: "status_a71a1c",
+          statusWrapper: "statusWrapper_a71a1c",
+          statusOnline: "statusOnline_a71a1c status_a71a1c",
+          statusOffline: "statusOffline_a71a1c status_a71a1c",
+          count: "count_a71a1c",
+          guildNameWrapper: "guildNameWrapper_a71a1c",
+          guildName: "guildName_a71a1c",
+          guildBadge: "guildBadge_a71a1c",
+          guildInfo: "guildInfo_a71a1c",
+          guildDetail: "guildDetail_a71a1c",
+          statusCounts: "statusCounts_a71a1c",
+          inviteSplash: "inviteSplash_a71a1c",
+          inviteSplashImage: "inviteSplashImage_a71a1c",
+          inviteSplashBadge: "inviteSplashBadge_a71a1c",
+          inviteSplashImageLoaded: "inviteSplashImageLoaded_a71a1c",
+          button: "button_a71a1c",
+          buttonSize: "buttonSize_a71a1c",
+          guildIconExpired: "guildIconExpired_a71a1c guildIcon_a71a1c",
+          inviteDestinationExpired: "inviteDestinationExpired_a71a1c",
+          buttonForNonMember: "buttonForNonMember_a71a1c",
+          "invite-button-resolving": "invite-button-resolving_a71a1c",
+          resolvingWrapper: "resolvingWrapper_a71a1c",
+          resolving: "resolving_a71a1c",
+          resolvingBackground: "resolvingBackground_a71a1c",
+          resolvingFakeButton: "resolvingFakeButton_a71a1c",
+        }),
+      );
+    },
+    58259: function (e, t, n) {
+      e.exports = {
+        header: "header_c03fd3",
+        subtitle: "subtitle_c03fd3",
+        closeButton: "closeButton_c03fd3",
+        content: "content_c03fd3",
+        smsInputContainer: "smsInputContainer_c03fd3",
+        smsInput: "smsInput_c03fd3",
+        error: "error_c03fd3",
+        footer: "footer_c03fd3",
+        listItemContainer: "listItemContainer_c03fd3",
+        listItemText: "listItemText_c03fd3",
+        listItemArrow: "listItemArrow_c03fd3",
+      };
+    },
+    715859: function (e, t, n) {
+      e.exports = {
+        container: "container_b252f6",
+        errorContainer: "errorContainer_b252f6 container_b252f6",
+        buttonText: "buttonText_b252f6",
+      };
+    },
+    117286: function (e, t, n) {
+      e.exports = {
+        chooseAccountAuthBox: "chooseAccountAuthBox_b4df52",
+        chooseAccountHelpText: "chooseAccountHelpText_b4df52",
+        actions: "actions_b4df52",
+      };
+    },
+    516603: function (e, t, n) {
+      e.exports = {
+        list: "list_f20a46",
+        accountCard: "accountCard_f20a46",
+        separator: "separator_f20a46",
+        userDetails: "userDetails_f20a46",
+        usernameSection: "usernameSection_f20a46",
+        hasActionMaxWidth: "hasActionMaxWidth_f20a46",
+        username: "username_f20a46",
+        userActions: "userActions_f20a46",
+        userActionMenu: "userActionMenu_f20a46",
+        overflowMenuIcon: "overflowMenuIcon_f20a46",
+        textOverflow: "textOverflow_f20a46",
+        hintText: "hintText_f20a46",
+      };
+    },
+    760617: function (e, t, n) {
+      e.exports = {
+        outerContainer: "outerContainer_a0cb3d",
+        container: "container_a0cb3d",
+        innerContainer: "innerContainer_a0cb3d",
+        countryCode: "countryCode_a0cb3d",
+        separator: "separator_a0cb3d",
+        popout: "popout_a0cb3d",
+        hidden: "hidden_a0cb3d",
+      };
+    },
+    553258: function (e, t, n) {
+      e.exports = {
+        phoneFieldPopout: "phoneFieldPopout_ff761b",
+        phoneFieldScroller: "phoneFieldScroller_ff761b",
+        countryItem: "countryItem_ff761b",
+        countryName: "countryName_ff761b",
+        countryCode: "countryCode_ff761b",
+      };
+    },
+    279006: function (e, t, n) {
+      e.exports = {
+        input: "input_cc6ddd",
+        inputWrapper: "inputWrapper_cc6ddd",
+        inputField: "inputField_cc6ddd",
+      };
+    },
+    615231: function (e, t, n) {
+      function s(e) {
+        let t = "==".slice(0, (4 - (e.length % 4)) % 4),
+          n = atob(e.replace(/-/g, "+").replace(/_/g, "/") + t),
+          s = new ArrayBuffer(n.length),
+          r = new Uint8Array(s);
+        for (let e = 0; e < n.length; e++) r[e] = n.charCodeAt(e);
+        return s;
+      }
+      function r(e) {
+        let t = new Uint8Array(e),
+          n = "";
+        for (let e of t) n += String.fromCharCode(e);
+        return btoa(n)
+          .replace(/\+/g, "-")
+          .replace(/\//g, "_")
+          .replace(/=/g, "");
+      }
+      n.d(t, {
+        U2: function () {
+          return f;
+        },
+        wz: function () {
+          return p;
+        },
+      });
+      var i = "copy",
+        a = "convert";
+      function l(e, t, n) {
+        if (t === i) return n;
+        if (t === a) return e(n);
+        if (t instanceof Array) return n.map((n) => l(e, t[0], n));
+        if (t instanceof Object) {
+          let s = {};
+          for (let [r, i] of Object.entries(t)) {
+            if (i.derive) {
+              let e = i.derive(n);
+              void 0 !== e && (n[r] = e);
+            }
+            if (!(r in n)) {
+              if (i.required) throw Error(`Missing key: ${r}`);
+              continue;
+            }
+            if (null == n[r]) {
+              s[r] = null;
+              continue;
+            }
+            s[r] = l(e, i.schema, n[r]);
+          }
+          return s;
+        }
+      }
+      function o(e, t) {
+        return { required: !0, schema: e, derive: t };
+      }
+      function c(e) {
+        return { required: !0, schema: e };
+      }
+      function u(e) {
+        return { required: !1, schema: e };
+      }
+      var d = { type: c(i), id: c(a), transports: u(i) },
+        h = { appid: u(i), appidExclude: u(i), credProps: u(i) },
+        _ = { appid: u(i), appidExclude: u(i), credProps: u(i) };
+      c({
+        rp: c(i),
+        user: c({ id: c(a), name: c(i), displayName: c(i) }),
+        challenge: c(a),
+        pubKeyCredParams: c(i),
+        timeout: u(i),
+        excludeCredentials: u([d]),
+        authenticatorSelection: u(i),
+        attestation: u(i),
+        extensions: u(h),
+      }),
+        u(i),
+        c(i),
+        c(i),
+        c(a),
+        u(i),
+        c({
+          clientDataJSON: c(a),
+          attestationObject: c(a),
+          transports: o(i, (e) => {
+            var t;
+            return (null == (t = e.getTransports) ? void 0 : t.call(e)) || [];
+          }),
+        }),
+        o(_, (e) => e.getClientExtensionResults());
+      var E = {
+          mediation: u(i),
+          publicKey: c({
+            challenge: c(a),
+            timeout: u(i),
+            rpId: u(i),
+            allowCredentials: u([d]),
+            userVerification: u(i),
+            extensions: u(h),
+          }),
+          signal: u(i),
+        },
+        g = {
+          type: c(i),
+          id: c(i),
+          rawId: c(a),
+          authenticatorAttachment: u(i),
+          response: c({
+            clientDataJSON: c(a),
+            authenticatorData: c(a),
+            signature: c(a),
+            userHandle: c(a),
+          }),
+          clientExtensionResults: o(_, (e) => e.getClientExtensionResults()),
+        };
+      function p(e) {
+        return l(s, E, e);
+      }
+      async function f(e) {
+        let t = await navigator.credentials.get(e);
+        return (t.toJSON = () => l(r, g, t)), t;
+      }
+    },
+  },
+]);
+//# sourceMappingURL=c1aad43e5179fd109258.js.map
