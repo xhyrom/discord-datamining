@@ -7528,6 +7528,8 @@
               "/guilds/".concat(e, "/leaderboards/").concat(t),
             UPDATE_MY_LOL_LEADERBOARD: () =>
               "/users/@me/update-league-of-legends-leaderboard",
+            GUILD_LEADERBOARD_SETTINGS: (e, t) =>
+              "/guilds/".concat(e, "/leaderboards/").concat(t, "/settings"),
           }),
           a6 = Object.freeze({
             INDEX: "/",
@@ -11453,6 +11455,7 @@
           (nx.END_TO_END_ENCRYPTION = "25968222946071"),
           (nx.SCREEN_SHARING_MACOS = "26459694693783"),
           (nx.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
+          (nx.GUILD_LEADERBOARD = "26575242994583"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nK = tn || (tn = {}))[(nK.HIDDEN = 1)] = "HIDDEN"),
@@ -12487,7 +12490,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-79d55f57af62a7e9b7cc087fdb0c89624b342d6e",
+            release: "discord_web-c0ddb1b4494895142d6a6db96e10252a7239b8f9",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12556,8 +12559,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "336359"), "336359"));
-          o.YA("builtAt", String("1729197925716"));
+            o.YA("buildNumber", ((e = "336367"), "336367"));
+          o.YA("builtAt", String("1729198871200"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53586,4 +53589,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.50d914cb53e1ef2c28d2.js.map
+//# sourceMappingURL=sentry.ac0e44d6cd40cd866f79.js.map
