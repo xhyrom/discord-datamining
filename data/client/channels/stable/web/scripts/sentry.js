@@ -6547,6 +6547,7 @@
             COLLECTIBLES_MARKETING: "/users/@me/collectibles-marketing",
             CONSUMABLE_FETCH_PRICE: (e) =>
               "/store/consumable/pricing/".concat(e),
+            CONSUME_HD_STREAMING_POTION: "/users/@me/consumable/hd-streaming",
             GUILD_MEMBER_BANNER: function (e, t, r) {
               let n =
                 arguments.length > 3 && void 0 !== arguments[3]
@@ -7527,6 +7528,8 @@
               "/guilds/".concat(e, "/leaderboards/").concat(t),
             UPDATE_MY_LOL_LEADERBOARD: () =>
               "/users/@me/update-league-of-legends-leaderboard",
+            GUILD_LEADERBOARD_SETTINGS: (e, t) =>
+              "/guilds/".concat(e, "/leaderboards/").concat(t, "/settings"),
           }),
           a6 = Object.freeze({
             INDEX: "/",
@@ -11452,6 +11455,7 @@
           (nx.END_TO_END_ENCRYPTION = "25968222946071"),
           (nx.SCREEN_SHARING_MACOS = "26459694693783"),
           (nx.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
+          (nx.GUILD_LEADERBOARD = "26575242994583"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nK = tn || (tn = {}))[(nK.HIDDEN = 1)] = "HIDDEN"),
@@ -12486,7 +12490,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bfbbb81584403eef451b424ab32f5f477534b0a4",
+            release: "discord_web-1be9907e584b5a8b31e639ab59642784f98a96c6",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12555,8 +12559,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "336185"), "336185"));
-          o.YA("builtAt", String("1729182966868"));
+            o.YA("buildNumber", ((e = "336402"), "336402"));
+          o.YA("builtAt", String("1729201859150"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53585,4 +53589,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.5221d5a4d9f2be9c6a8b.js.map
+//# sourceMappingURL=sentry.921cf507b3efe10edac1.js.map
