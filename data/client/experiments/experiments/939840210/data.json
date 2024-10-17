@@ -7,14 +7,16 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable In App Notifications for Reactions (First Reaction)",
-      "Treatment 2: Enable In App Notifications for Reactions (All Reactions)"
+      "Treatment 2: Enable In App Notifications for Reactions (All Reactions)",
+      "Treatment 3: Enable In App Notifications for Reactions (All Reactions)"
     ],
     "hash": 939840210,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
