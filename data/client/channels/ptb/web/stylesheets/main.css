@@ -15678,6 +15678,8 @@ span.clanTag_a31c43 {
   height: calc(4px + 1rem);
   width: calc(4px + 1rem);
   cursor: pointer;
+  text-indent: 0;
+  text-indent: 0;
 }
 .badge_ba89c1 {
   display: inline-block;
@@ -48585,4 +48587,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5badad2b115303d60c09.css.map*/
+/*# sourceMappingURL=12633.ee77dea158c4095d00df.css.map*/
