@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_user_profile_panel_recent_activity_status",
+    "label": "User Profile Panel Recent Activity Status",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recent activity in user profile panels and status in private channels list enabled"
+    ],
+    "hash": 2843610715,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

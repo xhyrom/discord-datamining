@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_user_profile_panel_recent_activity",
+    "label": "User Profile Panel Recent Activity",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recent activity in user profile panels enabled"
+    ],
+    "hash": 686077637,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
