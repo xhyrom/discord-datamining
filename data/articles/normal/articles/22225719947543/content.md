@@ -23,27 +23,20 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
-      <li><a href="#h_01J9PEC7HGPYRNC51ADBAJVQ3H">Diablo IV</a></li>
+      <li><a href="#h_01J9YEMCK0K5QJRVVWGSTW2707"> MARVEL SNAP</a></li>
       <li><a href="#h_01J9PECN4VFW2PPPVM9R3MP6QF">Destiny 2: Revenant</a></li>
-      <li><a href="#h_01J8QGKSGR918324MCDFPYTY92">THRONE AND LIBERTY</a></li>
     </ul>
   </li>
   <li>
     <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</a>
     <ul>
+      <li><a href="#h_01J9PEC7HGPYRNC51ADBAJVQ3H">Diablo IV</a> </li>
+      <li><a href="#h_01J8QGKSGR918324MCDFPYTY92">THRONE AND LIBERTY</a></li>
       <li>
         <a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a
         ><a href="#h_01J834W9W4XK6ACDM184VA93XR"> </a>
       </li>
       <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
-      <li>
-        <a
-          href="#h_01J6G4D7V76YHX2F60YETE63JJ"
-          target="_blank"
-          rel="noopener noreferrer"
-          >The First Descendant 
-        </a>
-      </li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -83,20 +76,20 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
-<h2 id="h_01J9PEC7HGPYRNC51ADBAJVQ3H">
+<h2 id="h_01J9YEMCK0K5QJRVVWGSTW2707">
   <a
-    href="https://support.discord.com/hc/articles/26847740874647"
+    href="https://support.discord.com/hc/articles/26925918517911"
     target="_blank"
     rel="noopener noreferrer"
-    >Diablo IV - Diablo IV: Vessel of Hatred Quest</a
+    >MARVEL SNAP - MARVEL SNAP Quest</a
   >
 </h2>
 <p>
-  The <strong>Diablo IV: Vessel of Hatred Quest</strong> can be accepted on
-  Discord from <strong>October 8, 2024 </strong>until<strong>
-    October 15, 2024 (11:59PM UTC)</strong
-  >. Reward gift codes expire <strong>December 31, 2025 (6:59 AM UTC)</strong>.
-  Quest requirements must be completed during this period to receive the reward.
+  The <strong>MARVEL SNAP Quest</strong> can be accepted on Discord from
+  <strong>October 17, 2024</strong> until
+  <strong>October 23, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
+  <strong>October 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
+  completed during this period to receive the reward.
 </p>
 <h2 id="h_01J9PECN4VFW2PPPVM9R3MP6QF">
   <a
@@ -113,13 +106,28 @@
   >. Reward gift codes expire <strong>December 31, 2024 (UTC -8)</strong>. Quest
   requirements must be completed during this period to receive the reward.
 </p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
+<h2 id="h_01J9PEC7HGPYRNC51ADBAJVQ3H">
+  <a
+    href="https://support.discord.com/hc/articles/26847740874647"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Diablo IV - Diablo IV: Vessel of Hatred Quest</a
+  >
+</h2>
+<p>
+  The <strong>Diablo IV: Vessel of Hatred Quest</strong> can be accepted on
+  Discord from <strong>October 8, 2024 </strong>until<strong>
+    October 15, 2024 (11:59PM UTC)</strong
+  >. Reward gift codes expire <strong>December 31, 2025 (6:59 AM UTC)</strong>.
+  Quest requirements must be completed during this period to receive the reward.
+</p>
 <h2 id="h_01J8QGKSGR918324MCDFPYTY92">
   <a
     href="https://support.discord.com/hc/articles/26467935593751-THRONE-AND-LIBERTY-Quest"
     target="_blank"
     rel="noopener noreferrer"
-  >
-    THRONE AND LIBERTY - Ornate Coin Chest Quest</a
+    >THRONE AND LIBERTY - Ornate Coin Chest Quest</a
   >
 </h2>
 <p>
@@ -134,9 +142,8 @@
   <strong>Wolf Morph Quest </strong>by <strong>September 30, 2024</strong>, you
   can still claim <strong>Wolf Morph avatar decoration</strong> until
   <strong>October 30, 2024</strong>. To receive these rewards, all quest
-  requirements must be completed within the specified timeframe.
+  requirements must be completed within the specified timeframe. 
 </p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests </h1>
 <h2 id="h_01J8JZMSEBSHRFKVF3XKMQ6213">
   <a
     href="https://support.discord.com/hc/articles/26445668248983"
@@ -166,24 +173,6 @@
   <strong>September 23, 2024 (11:59PM UTC)</strong>. The avatar decoration needs
   to be redeemed by <strong>October 23, 2024</strong>. Quest requirements must
   be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J6G4D7V76YHX2F60YETE63JJ">
-  <a
-    href="https://support.discord.com/hc/articles/25946905644695"
-    target="_blank"
-    rel="noopener noreferrer"
-    >The First Descendant - Season 1 Invasion Quest</a
-  >
-</h2>
-<p>
-  The <strong>Season 1 Invasion Quest</strong> can be accepted on Discord from
-  <strong>September 6, 2024</strong> until
-  <strong>September 12, 2024 (11:59PM UTC)</strong>. Users must redeem the
-  <strong>Hailey avatar decoration</strong> by
-  <strong>October 5, 2024</strong> and the
-  <strong>Bunny avatar decoration</strong> by <strong>October 12, 2024</strong>.
-  To receive these rewards, all quest requirements must be completed within the
-  specified timeframe.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
 <p>

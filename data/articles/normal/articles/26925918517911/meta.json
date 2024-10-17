@@ -1,0 +1,39 @@
+{
+  "id": 26925918517911,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/26925918517911.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/26925918517911-MARVEL-SNAP-Quest",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 22849279767831,
+  "created_at": "2024-10-08T17:36:42Z",
+  "name": "MARVEL SNAP Quest",
+  "title": "MARVEL SNAP Quest",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-10-16T23:39:12Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [
+    "01J3JYCR3Z73XX09WS43GTCMQQ",
+    "01J3NCWMGR03XN71256WH95176",
+    "01J6AH9EHR65KJ9EGJJZVHNNG2",
+    "01J5C5D8TJ6MTK2BNW40MXV92D"
+  ],
+  "label_names": [
+    "answer-bot",
+    "quest",
+    "discord",
+    "reward",
+    "rewards",
+    "in-game",
+    "code",
+    "snap",
+    "marvel",
+    "pc"
+  ]
+}
