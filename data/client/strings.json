@@ -578,6 +578,7 @@
   "APP_LAUNCHER_OPEN_APP": "\"Open App\"",
   "APP_LAUNCHER_OPEN_DM": "\"Open in DM\"",
   "APP_LAUNCHER_TRY_IN_DM": "\"Try in DM\"",
+  "APP_LAUNCHER_LAUNCH_IN_DM": "\"Launch in DM\"",
   "APP_IMAGE_REC_MENU_ARIA_LABEL": "\"Image Command Actions\"",
   "APP_IMAGE_REC_MENU_HEADER": "\"Edit Image with Apps\"",
   "APP_IMAGE_REC_MENU_SEND_LABEL": "\"Send\"",
