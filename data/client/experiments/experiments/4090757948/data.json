@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_voice_icon_states",
+    "label": "Voice/Video icon states",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Microphone push to disable.",
+      "Treatment 2: Microphone push to disable w/ red."
+    ],
+    "hash": 4090757948,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
