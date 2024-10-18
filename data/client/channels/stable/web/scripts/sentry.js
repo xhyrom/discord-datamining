@@ -5242,6 +5242,9 @@
           rxP: function () {
             return aV.rx;
           },
+          s9s: function () {
+            return tG;
+          },
           sFg: function () {
             return X;
           },
@@ -6182,6 +6185,7 @@
           (rL.REPORT_SECOND_LOOK = "Report Second Look"),
           (rL.AUTHORIZE_PAYMENT = "Authorize Payment"),
           (rL.RESET = "Reset"),
+          (rL.ACCOUNT_REVERT = "Account Revert"),
           (rL.HANDOFF = "Handoff"),
           (rL.UNKNOWN = "Unknown"),
           (rL.LANDING = "Landing"),
@@ -7524,6 +7528,7 @@
             VOICE_PUBLIC_KEYS: () => "/voice/public-keys",
             VOICE_MATCH_PUBLIC_KEY: (e) =>
               "/voice/".concat(e, "/match-public-key"),
+            ACCOUNT_REVERT: "/auth/revert",
             GUILD_LEADERBOARD: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t),
             UPDATE_MY_LOL_LEADERBOARD: () =>
@@ -7711,6 +7716,7 @@
               "/channels/".concat(e, "/summaries/").concat(t),
             USER_SUMMARIES: "/users/@me/summaries",
             QUESTS: (e) => "/quests/".concat(e),
+            ACCOUNT_REVERT: (e) => "/wasntme/".concat(e),
           }),
           a4 = (0, aH.Ft)(a3),
           a5 = (0, aH.Ft)(a6, [":", "?", "@"]);
@@ -9384,7 +9390,11 @@
           (nT[(nT.BILLING_RETRY = 7)] = "BILLING_RETRY"),
           (nT[(nT.PAUSED = 8)] = "PAUSED"),
           (nT[(nT.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
-        let oe = { ALL_PAUSE: new Set([9, 8]), ALL_PAUSEABLE: new Set([1, 8]) };
+        let oe = {
+          ALL_PAUSE: new Set([9, 8]),
+          ALL_PAUSEABLE: new Set([1, 8]),
+          INACTIVE: new Set([0, 4, 6, 7]),
+        };
         ((nd = ex || (ex = {}))[(nd.OPEN = 1)] = "OPEN"),
           (nd[(nd.PAID = 2)] = "PAID"),
           (nd[(nd.VOID = 3)] = "VOID"),
@@ -11456,6 +11466,7 @@
           (nx.SCREEN_SHARING_MACOS = "26459694693783"),
           (nx.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
           (nx.GUILD_LEADERBOARD = "26575242994583"),
+          (nx.FRACTIONAL_PREMIUM_ABOUT = "26362805097623"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nK = tn || (tn = {}))[(nK.HIDDEN = 1)] = "HIDDEN"),
@@ -12490,7 +12501,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1be9907e584b5a8b31e639ab59642784f98a96c6",
+            release: "discord_web-a621c6951b0f980b12654d0e6559788748323683",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12559,8 +12570,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "336402"), "336402"));
-          o.YA("builtAt", String("1729201859150"));
+            o.YA("buildNumber", ((e = "336872"), "336872"));
+          o.YA("builtAt", String("1729286180727"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -27155,6 +27166,7 @@
           (a[(a.GUILD_FORUM = 15)] = "GUILD_FORUM"),
           (a[(a.GUILD_MEDIA = 16)] = "GUILD_MEDIA"),
           (a[(a.LOBBY = 17)] = "LOBBY"),
+          (a[(a.DM_SDK = 18)] = "DM_SDK"),
           (a[(a.UNKNOWN = 1e4)] = "UNKNOWN");
         let _ = {
           CALLABLE: new Set([1, 3]),
@@ -53589,4 +53601,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.921cf507b3efe10edac1.js.map
+//# sourceMappingURL=sentry.d0aa3b391661429d4f66.js.map
