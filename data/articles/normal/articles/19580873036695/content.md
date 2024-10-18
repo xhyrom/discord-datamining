@@ -20,6 +20,16 @@
     >Premium App</a
   >.
 </div>
+<div class="book-box">
+  <strong>Note:</strong> If you want to request a refund for your subscription
+  instead, please check out the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJMMBM60AYHA22N600NDT5"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Refund Policy Help Center article</a
+  >.
+</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -48,16 +58,6 @@
     </li>
   </ul>
 </div>
-<div class="book-box">
-  <strong>Note:</strong> If you want to request a refund for your subscription
-  instead, please check out the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy#h_01J5BJMMBM60AYHA22N600NDT5"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Refund Policy Help Center article</a
-  >.
-</div>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >You can cancel your Nitro or Nitro Basic subscription at any time. Once
@@ -70,8 +70,7 @@
   type where the purchase was originally made.<br /><br /><span
     class="wysiwyg-underline"
     >For example:</span
-  >
-  <br />If you purchased Nitro through the desktop or browser app, you must
+  ><br />If you purchased Nitro through the desktop or browser app, you must
   cancel it through the desktop app or browser.<br /><br />If you purchased
   through a mobile device, you can only cancel through a mobile device. If you
   don’t have access to your device to cancel yourself, please check

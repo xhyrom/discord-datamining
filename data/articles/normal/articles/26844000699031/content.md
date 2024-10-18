@@ -414,7 +414,7 @@
   promotion URL link in the new page and send it to a friend.
   <strong
     >We recommend sending the link in a private direct message. Make sure your
-    friend redeems the code by [end redemption date here (time end)].</strong
+    friend redeems the code by November 30, 2024 (12PM PT).</strong
   >
 </p>
 <h1 id="h_01JA8Q445NHSXF5E14HBKRS9WF">Frequently Asked Questions</h1>
