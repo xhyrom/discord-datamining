@@ -22,6 +22,7 @@
     "events_url": "https://api.github.com/users/discord/events{/privacy}",
     "received_events_url": "https://api.github.com/users/discord/received_events",
     "type": "Organization",
+    "user_view_type": "public",
     "site_admin": false
   },
   "description": "🚀 The Discord Embedded App SDK lets you build rich, multiplayer experiences as Activities inside Discord.",
@@ -29,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/embedded-app-sdk",
   "created_at": "2023-11-28T22:23:03Z",
   "homepage": "https://discord.com/developers/docs/activities/overview",
-  "size": 22275,
+  "size": 21782,
   "language": "TypeScript",
   "has_issues": true,
   "has_projects": false,

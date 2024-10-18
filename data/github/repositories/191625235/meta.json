@@ -22,6 +22,7 @@
     "events_url": "https://api.github.com/users/discord/events{/privacy}",
     "received_events_url": "https://api.github.com/users/discord/received_events",
     "type": "Organization",
+    "user_view_type": "public",
     "site_admin": false
   },
   "description": "JSqlParser parses an SQL statement and translate it into a hierarchy of Java classes. The generated hierarchy can be navigated using the Visitor Pattern",

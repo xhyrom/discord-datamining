@@ -22,6 +22,7 @@
     "events_url": "https://api.github.com/users/discord/events{/privacy}",
     "received_events_url": "https://api.github.com/users/discord/received_events",
     "type": "Organization",
+    "user_view_type": "public",
     "site_admin": false
   },
   "description": "Simple compressor, limiter, gate et.c by chunkware.com, originally posted on musicdsp.org, but lost until recently. This is the version of the source that ben-benvesco-com published.",

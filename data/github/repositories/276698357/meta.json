@@ -22,6 +22,7 @@
     "events_url": "https://api.github.com/users/discord/events{/privacy}",
     "received_events_url": "https://api.github.com/users/discord/received_events",
     "type": "Organization",
+    "user_view_type": "public",
     "site_admin": false
   },
   "description": "🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.",

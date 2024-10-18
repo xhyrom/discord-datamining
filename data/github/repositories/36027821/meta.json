@@ -22,6 +22,7 @@
     "events_url": "https://api.github.com/users/discord/events{/privacy}",
     "received_events_url": "https://api.github.com/users/discord/received_events",
     "type": "Organization",
+    "user_view_type": "public",
     "site_admin": false
   },
   "description": "A framework for building native apps with React.",
@@ -29,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/react-native",
   "created_at": "2015-05-21T17:40:16Z",
   "homepage": "http://facebook.github.io/react-native/",
-  "size": 425230,
+  "size": 425232,
   "language": "C++",
   "has_issues": false,
   "has_projects": true,
