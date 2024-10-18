@@ -6185,6 +6185,7 @@
           (rL.REPORT_SECOND_LOOK = "Report Second Look"),
           (rL.AUTHORIZE_PAYMENT = "Authorize Payment"),
           (rL.RESET = "Reset"),
+          (rL.ACCOUNT_REVERT = "Account Revert"),
           (rL.HANDOFF = "Handoff"),
           (rL.UNKNOWN = "Unknown"),
           (rL.LANDING = "Landing"),
@@ -7527,6 +7528,7 @@
             VOICE_PUBLIC_KEYS: () => "/voice/public-keys",
             VOICE_MATCH_PUBLIC_KEY: (e) =>
               "/voice/".concat(e, "/match-public-key"),
+            ACCOUNT_REVERT: "/auth/revert",
             GUILD_LEADERBOARD: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t),
             UPDATE_MY_LOL_LEADERBOARD: () =>
@@ -7714,6 +7716,7 @@
               "/channels/".concat(e, "/summaries/").concat(t),
             USER_SUMMARIES: "/users/@me/summaries",
             QUESTS: (e) => "/quests/".concat(e),
+            ACCOUNT_REVERT: (e) => "/wasntme/".concat(e),
           }),
           a4 = (0, aH.Ft)(a3),
           a5 = (0, aH.Ft)(a6, [":", "?", "@"]);
@@ -12494,7 +12497,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ed46e8e3e9f4dfceea94146c01e6d76c5e7ae478",
+            release: "discord_web-51f8056a28c81f7a3e1eb8160988e784e84de2ea",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12563,8 +12566,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "336711"), "336711"));
-          o.YA("builtAt", String("1729273889444"));
+            o.YA("buildNumber", ((e = "336724"), "336724"));
+          o.YA("builtAt", String("1729274889584"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53593,4 +53596,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.b270d161ead36dbabe7c.js.map
+//# sourceMappingURL=sentry.55c6a9b5af433a107b8c.js.map
