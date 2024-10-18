@@ -5123,6 +5123,9 @@
   },
   "GUILD_LEADERBOARD_SETTINGS": {
     "url": "/guilds/:param/leaderboards/:param/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   }
 }
