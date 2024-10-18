@@ -5106,6 +5106,10 @@
       "POST"
     ]
   },
+  "ACCOUNT_REVERT": {
+    "url": "/auth/revert",
+    "allowed_methods": null
+  },
   "GUILD_LEADERBOARD": {
     "url": "/guilds/:param/leaderboards/:param",
     "allowed_methods": [
