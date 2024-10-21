@@ -19285,6 +19285,8 @@
   "FRACTIONAL_PREMIUM_TIME_REMAINING": "\"Total Time Remaining\"",
   "FRACTIONAL_PREMIUM_ACTIVE": "\"Active\"",
   "FRACTIONAL_CREDITS_ACTIVATED": "\"Nitro credits activated\"",
+  "FRACTIONAL_PREMIUM_SETTINGS_HERO_SUBHEADER": "'You have Nitro through **Nitro credits**.\\n\\n[Learn more.]({helpCenterLink} \"Learn more about Nitro credits\")'",
+  "FRACTIONAL_PREMIUM_CREDITS_ACTIVATED": "\"Nitro Credits Activated\"",
   "APP_DIRECTORY_SEARCH_PLACEHOLDER_V2": "\"Search Apps\"",
   "APP_DIRECTORY_ABOUT": "\"About\"",
   "APP_DIRECTORY_STORE": "\"Store\""
