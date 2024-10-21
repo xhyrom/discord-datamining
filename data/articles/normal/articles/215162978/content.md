@@ -78,7 +78,7 @@
 <h1 id="h_01GWJBQS2906DHWGYMDQC6J8GW">
   How to Integrate YouTube for Content Creators
 </h1>
-<h3>
+<h3 id="h_01JAR2VX7T9143SG27PG2HR83R">
   This is only available for YouTube Partners. If your YouTube channel does not
   currently have memberships turned on, you will not be able to integrate your
   YouTube channel into your Discord server.
@@ -117,10 +117,13 @@
   your Discord server! 
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/13406258619287"
-    alt="youtube_integration_viewer.jpg"
-  />
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/27224562847383"
+        width="624"
+        height="403" /></span
+  ></strong>
 </p>
 <h2 id="h_01GYJDT3FDP2T1YEQ37TY71VAT">Modifying Your YouTube Integration</h2>
 <p>
@@ -158,7 +161,7 @@
   the colors of the role. Since this role is automatically managed by the
   YouTube integration, you can't manually assign or delete members from it.
 </p>
-<h3>
+<h3 id="h_01JAR2VX7TVQ2W7HSHBY7X2G3V">
   If you have Rule Screening set up for your server for new users, they can
   by-pass this requirement and join a server if they become a member through
   your YouTube channel.
@@ -217,7 +220,7 @@
   >
 </p>
 <p>A: Desktop app, mobile, and browser.</p>
-<h3>
+<h3 id="h_01JAR2VX7T3K369TQW3GPFJRB6">
   If you have additional questions or have trouble integrating your YouTube
   channel, please reach out to our support team:
   <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
