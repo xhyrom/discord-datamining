@@ -10859,6 +10859,7 @@
             "app_dms_quick_launcher_impression"),
           (nO.APP_DMS_QUICK_LAUNCHER_CLICKED =
             "app_dms_quick_launcher_clicked"),
+          (nO.MY_ACCOUNT_PAGE_TAB_NAVIGATE = "my_account_page_tab_navigate"),
           ((np = eF || (eF = {})).CANARY = "canary"),
           (np.PTB = "ptb"),
           (np.STABLE = "stable"),
@@ -12503,7 +12504,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9d6d3e356e97660f3aa01c7567ca8e2234e8b34b",
+            release: "discord_web-1ff886ffe6189b14e1789335e270a8e21483c542",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12572,8 +12573,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "337328"), "337328"));
-          o.YA("builtAt", String("1729548126349"));
+            o.YA("buildNumber", ((e = "337347"), "337347"));
+          o.YA("builtAt", String("1729549192334"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -27330,7 +27331,8 @@
           (a[(a.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION = 53)] =
             "GUILD_JOIN_REQUEST_REJECT_NOTIFICATION"),
           (a[(a.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION = 54)] =
-            "GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION");
+            "GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION"),
+          (a[(a.HD_STREAMING_UPGRADED = 55)] = "HD_STREAMING_UPGRADED");
         let _ = {
           UNDELETABLE: new Set([1, 2, 3, 4, 5, 21]),
           GUILD_DISCOVERY_STATUS: new Set([14, 15, 16, 17]),
@@ -53603,4 +53605,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d5c92b7cffb00d38665f.js.map
+//# sourceMappingURL=sentry.2c8000f83eed4d390fd5.js.map
