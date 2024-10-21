@@ -1,6 +1,6 @@
 # Job Listing
 
-## Director, Legal & Incident Response Operations
+## Director, Law Enforcement Response
 
 **Location:** Remote (U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7678598002](https://discord.com/jobs/7678598002)
 
-**Updated At:** Fri, 18 Oct 2024 18:24:42 GMT
+**Updated At:** Mon, 21 Oct 2024 21:06:22 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for an experienced manager to lead Discord’s Legal &amp;amp; Incident Response team (which we call “Legal Ops”).
@@ -35,7 +35,6 @@ Curiosity and ability to jump into less familiar areas, and learn while doing
 Commitment to diversity, inclusion, and belonging
 Familiarity with/interest in the technical side of tech
 Familiarity with ticketing systems, such as Zendesk, JIRA, etc.
-BA/BS or equivalent work experience
 
 Bonus Points
 
