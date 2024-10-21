@@ -8677,6 +8677,7 @@ div.modalHeader_c5e09c {
   border-radius: 0 0 8px 8px;
   background-color: var(--brand-500);
   box-shadow: var(--elevation-low);
+  z-index: 3;
 }
 .newMessagesBar_cf58b5:active {
   padding-top: 1px;
@@ -48576,4 +48577,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.70197d44b2fe85a45f66.css.map*/
+/*# sourceMappingURL=12633.d897e4dd39db8fe70a1f.css.map*/
