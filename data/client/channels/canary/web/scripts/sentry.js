@@ -12298,7 +12298,8 @@
           (J.AUTHORIZED_APPS = "authorized-apps"),
           (J.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
           (J.ICYMI = "icymi"),
-          (J.QUESTS = "quests");
+          (J.QUESTS = "quests"),
+          (J.GIFT = "gift");
         let eE = "CacheStoreLazy",
           ei = "CacheStoreChannelsLazy",
           ec = "CacheStore";
@@ -12501,7 +12502,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-acb0023930a749be152845d93fed2cc2eaedc5a5",
+            release: "discord_web-ddf473d0de63b5389d676df9a6df8e2f01805375",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12570,8 +12571,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "337290"), "337290"));
-          o.YA("builtAt", String("1729545177952"));
+            o.YA("buildNumber", ((e = "337311"), "337311"));
+          o.YA("builtAt", String("1729546578618"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53601,4 +53602,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.13fc3df31a83976b4546.js.map
+//# sourceMappingURL=sentry.11d1da17aac3f4e84e46.js.map
