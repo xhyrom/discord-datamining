@@ -18574,6 +18574,8 @@
   "DEVELOPER_SETTINGS_CLEAR_CACHES": "\"Clear Caches\"",
   "DEVELOPER_SETTINGS_WRITE_CACHES": "\"Write Caches\"",
   "DEVELOPER_SETTINGS_ENABLE_ANIMATION": "\"Enable animations in chat\"",
+  "HALLOWEEN_COACHMARK_HEADER": "\"Halloween haunts your Discord!\"",
+  "HALLOWEEN_COACHMARK_BODY": "\"Beware... your $[notification sounds](settingsHook) have a chilling twist. Head to your settings if you dare to switch back.\"",
   "ACCOUNT_REVERT_SLIDE_TITLE": "\"Account Recovery\"",
   "ACCOUNT_REVERT_EXPLAINER_INTRO_TEXT": "\"Lost access to your account? We got you! You can use this page to completely recover your account. When we're done, we will:\"",
   "ACCOUNT_REVERT_EXPLAINER_ITEM_CHANGE_EMAIL": "\"Change the account's email address to the previous email address\"",
