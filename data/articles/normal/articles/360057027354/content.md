@@ -81,8 +81,14 @@
 </p>
 <div class="tip-box">
   Note: You will need to verify your phone number to your Discord account before
-  using phone number login! Click here to learn how to verify your phone number
-  to your Discord account.
+  using phone number login! Click
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started#h_01H4RR2WQMJPNM20TG8NWDDWSS"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >
+  to learn how to verify your phone number to your Discord account.
 </div>
 <p>In the second box, type the password associated with your account!</p>
 <p class="wysiwyg-text-align-center">
