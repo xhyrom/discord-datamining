@@ -47,9 +47,9 @@
   Starting Checkers in the Park in Discord
 </h2>
 <p>
-  There are many different ways you can launch Poker Night in the Discord app
-  for you and your friends! Whether in a server’s voice channel, in a direct
-  message (<strong>DM</strong>), or a group message, you can check out
+  There are many different ways you can launch Checkers In The Park in the
+  Discord app for you and your friends! Whether in a server’s voice channel, in
+  a direct message (<strong>DM</strong>), or a group message, you can check out
   <a
     href="https://support-apps.discord.com/hc/en-us/articles/26593412574359"
     target="_blank"
