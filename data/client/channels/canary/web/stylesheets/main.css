@@ -17220,7 +17220,9 @@ h3.improved_f017d0:after {
   position: relative;
   border: none;
 }
-.card_ae1fa2.disabled_ae1fa2 {
+.card_ae1fa2.hoisted_ae1fa2 {
+  background: var(--profile-body-background-color) !important;
+  z-index: 4;
   pointer-events: none;
 }
 .header_ae1fa2 {
@@ -25593,14 +25595,12 @@ div.popoutCloseButton_d523a2:hover {
   border-radius: var(--radius-xs);
 }
 .body_b8cc6d {
-  z-index: 1;
   padding: 4px 16px 8px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .footer_b8cc6d {
-  z-index: 1;
   padding: 0 16px 12px;
   display: flex;
   flex-direction: column;
@@ -48622,4 +48622,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5c4c43ef079d0bfe4779.css.map*/
+/*# sourceMappingURL=12633.b2dd3768d1053a36919e.css.map*/
