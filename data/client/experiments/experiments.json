@@ -12676,7 +12676,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "recentActivityStatusEnabled"
       ]
     }
   },
