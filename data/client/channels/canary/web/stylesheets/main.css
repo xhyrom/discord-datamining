@@ -14640,6 +14640,7 @@ span.clanTag_a31c43 {
   opacity: 0;
   display: inline-block;
   font-style: normal;
+  z-index: -1;
 }
 .messageEditorCompact_f9f2ca {
   margin-left: var(--custom-message-margin-compact-indent);
@@ -48629,4 +48630,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9c25fd200e4328aeb326.css.map*/
+/*# sourceMappingURL=12633.0f7249d60bb748488909.css.map*/
