@@ -1,6 +1,6 @@
 # Job Listing
 
-## Head of Growth Marketing
+## Head of Lifecycle Marketing
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7638675002](https://discord.com/jobs/7638675002)
 
-**Updated At:** Fri, 18 Oct 2024 18:24:42 GMT
+**Updated At:** Tue, 22 Oct 2024 23:00:49 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.&amp;nbsp;
-We are looking for a Head of Growth Marketing to drive the next phase of Discord’s growth across players, publishers, and developers. In this role, you will build, develop, and execute comprehensive growth and lifecycle marketing strategies, working cross-functionally with Product, Data Science, Engineering, and Marketing teams. This role is integral to helping identify the right strategies to impact acquisition, engagement, and retention efforts and execute and bring them to life.
+We are looking for a Head of Lifecycle Marketing to drive the next phase of Discord’s growth across players, publishers, and developers. In this role, you will build, develop, and execute comprehensive growth and lifecycle marketing strategies, working cross-functionally with Product, Data Science, Engineering, and Marketing teams. This role is integral to helping identify the right strategies to impact acquisition, engagement, and retention efforts and execute and bring them to life.
 You will thrive in this role if you’re highly data-driven, excel at identifying unique growth opportunities, and are passionate about bridging the gap between customer insights and quantitative analysis. This is a hands-on, player-coach role where you will build and lead, eventually growing a team of growth marketers over time. This role reports to our Head of Marketing.&amp;nbsp;
 What You'll Be Doing
 
