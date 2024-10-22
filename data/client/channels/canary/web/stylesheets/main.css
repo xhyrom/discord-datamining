@@ -17242,6 +17242,12 @@ h3.improved_f017d0:after {
   display: inline-flex;
   align-self: flex-end;
 }
+.headerContextMenu_ae1fa2.absolute_ae1fa2
+  ~ .body_ae1fa2
+  > .content_ae1fa2
+  > .details_ae1fa2 {
+  margin-right: 24px;
+}
 .platformIcon_ae1fa2 {
   -webkit-mask-size: cover;
   mask-size: cover;
@@ -48622,4 +48628,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.b2dd3768d1053a36919e.css.map*/
+/*# sourceMappingURL=12633.0d824649e5f1911340b6.css.map*/
