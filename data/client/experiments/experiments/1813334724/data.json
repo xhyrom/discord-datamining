@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-08_blocking_voice_states",
-    "label": "Blocking Voice States (Blocker)",
+    "id": "2024-09_blocking_voice_states_blockee",
+    "label": "Blocking Voice States (Blockee)",
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enabled"
     ],
-    "hash": 3896794487,
+    "hash": 1813334724,
     "buckets": [
       -1,
       0,
