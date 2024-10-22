@@ -5179,6 +5179,7 @@
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_CANCEL": "\"I've changed my mind\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_MODAL_SUCCESS": "\"Our privacy farmers have begun harvesting your data. This can take up to 30 days, but we'll email you when it’s done.\"",
   "DATA_PRIVACY_CONTROLS_REQUEST_DATA_NOTE": "\"[Learn more]({helpdeskArticle}) about how getting a copy of your personal data works.\"",
+  "DATA_PRIVACY_CONTROLS_REQUEST_DATA_NOTE_V2": "\"[Learn more]({helpdeskArticle}) about how getting a copy of your personal data works\"",
   "DATA_PRIVACY_UPDATE_CONSENTS_FAILED": "\"We couldn't update your data usage preferences right now. Please try again later\"",
   "HARVEST_BACKEND_USERS": "\"Account\"",
   "HARVEST_BACKEND_MESSAGES": "\"Messages\"",
