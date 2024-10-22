@@ -87,7 +87,7 @@
 <p>
   The <strong>MARVEL SNAP Quest</strong> can be accepted on Discord from
   <strong>October 17, 2024</strong> until
-  <strong>October 23, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
+  <strong>October 24, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
   <strong>October 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
