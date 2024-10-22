@@ -4438,9 +4438,6 @@
           $Ab: function () {
             return f;
           },
-          $Dd: function () {
-            return aV.$D;
-          },
           $R1: function () {
             return aV.$R;
           },
@@ -6037,7 +6034,6 @@
           (rl.UU_MIGRATION = "UU_MIGRATION"),
           (rl.QUESTS_PROGRESS_INTERRUPTION = "QUESTS_PROGRESS_INTERRUPTION"),
           (rl.CHECKOUT_RECOVERY_NAGBAR = "CHECKOUT_RECOVERY_NAGBAR"),
-          (rl.CASH_APP_PAY_AWARENESS_NAGBAR = "CASH_APP_PAY_AWARENESS_NAGBAR"),
           ((ru = S || (S = {})).RESOLVING = "RESOLVING"),
           (ru.RESOLVED = "RESOLVED"),
           (ru.EXPIRED = "EXPIRED"),
@@ -8317,9 +8313,6 @@
           (rQ.CLAN_ADOPT_IDENTITY_MODAL = "clan adopt identity modal"),
           (rQ.CLAN_SETUP_MODAL = "clan setup modal"),
           (rQ.CHECKOUT_RECOVERY_NAGBAR = "Checkout Recovery Nagbar"),
-          (rQ.CASH_APP_PAY_AWARENESS_NAGBAR = "Cash App Pay Awareness Nagbar"),
-          (rQ.CASH_APP_PAY_AWARENESS_NON_NITRO_FLOW_UPSELL =
-            "Cash App Pay Awareness Non Nitro Flow Upsell"),
           (rQ.E2EE_USER_VERIFY_MODAL = "E2EE User Verify Modal"),
           (rQ.REPEAT_GIFT_PURCHASE_BUTTON = "Repeat Gift Purchase Button"),
           (rQ.PROFILE_MODAL_TABS = "Profile Modal Tabs"),
@@ -12508,7 +12501,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0c549f7502d56d17b090ee8502e8f1424184bdcf",
+            release: "discord_web-85cadff8b570ebc4e3033bbff96d9939d32170f0",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12577,8 +12570,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "337816"), "337816"));
-          o.YA("builtAt", String("1729629888622"));
+            o.YA("buildNumber", ((e = "337823"), "337823"));
+          o.YA("builtAt", String("1729630583958"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -17473,9 +17466,6 @@
       231338: function (e, t, r) {
         "use strict";
         r.d(t, {
-          $D: function () {
-            return E;
-          },
           $R: function () {
             return eI;
           },
@@ -53609,4 +53599,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.53f5f20ba9b8c199695b.js.map
+//# sourceMappingURL=sentry.be3310751ffa5491ddbd.js.map
