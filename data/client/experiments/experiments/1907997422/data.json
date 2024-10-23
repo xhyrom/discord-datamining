@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_updated_fetch_subscription_plans_for_sku_error",
+    "label": "Updated Fetch Subscription Plans For SKU Error",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable updated error throwing"
+    ],
+    "hash": 1907997422,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
