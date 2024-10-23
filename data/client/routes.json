@@ -1347,6 +1347,10 @@
       "OPTIONS"
     ]
   },
+  "GRAVITY_ITEMS_DEHYDRATED_LEGACY": {
+    "url": "/users/@me/gravity-icymi-legacy",
+    "allowed_methods": null
+  },
   "GRAVITY_RECOMMENDED_GUILDS": {
     "url": "/gravity-recommended-guilds",
     "allowed_methods": [
