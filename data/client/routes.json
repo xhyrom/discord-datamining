@@ -4929,6 +4929,10 @@
       "POST"
     ]
   },
+  "QUESTS_VIDEO_PROGRESS": {
+    "url": "/quests/:param/video-progress",
+    "allowed_methods": null
+  },
   "QUESTS_REWARD_CODE": {
     "url": "/quests/:param/reward-code",
     "allowed_methods": [
