@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_improved_media_viewer",
+    "label": "Improved Desktop Media Viewer",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Improved Desktop Media Viewer"
+    ],
+    "hash": 1621420501,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
