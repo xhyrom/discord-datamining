@@ -1308,7 +1308,10 @@
           complaint. We are subject to the investigatory and enforcement powers
           of the U.S. Federal Trade Commission. In certain circumstances, we may
           be liable for the transfer of personal data from the EU, Switzerland,
-          or the UK to a third party outside those countries.
+          or the UK to a third party outside those countries. If there is any
+          conflict between the terms in our privacy policy and the EU-U.S. DPF
+          Principles and/or the Swiss-U.S. DPF Principles, the Principles shall
+          govern.
         </p>
         <p>
           For more information about the Data Privacy Framework principles and
