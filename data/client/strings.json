@@ -19251,6 +19251,7 @@
   "QUESTS_VIDEO_QUEST_PAUSE_MESSAGE": "\"We paused the video while you were away. Resume to continue progress.\"",
   "QUESTS_VIDEO_INSTRUCTIONS_TO_WIN_REWARD": "\"Watch the {videoTitle} to win {rewardNameWithArticle}!\"",
   "QUESTS_VIDEO_INSTRUCTIONS_TO_WIN_REWARD_GENERIC": "\"Watch the video to win {rewardNameWithArticle}!\"",
+  "QUESTS_VIDEO_QUESTBAR_SUBTITLE": "\"Watch to earn rewards!\"",
   "GUILD_FRIENDS": "\"Friends in Server\"",
   "GUILD_FRIENDS_MODAL_HEADER": "\"{numFriends, plural, =0 {0 Friends} one {1 Friend} other {{numFriends} Friends}} in !!{guildName}!!\"",
   "GUILD_FRIENDS_MODAL_HEADER_LOADING": "\"{numFriends, plural, =0 {Friends} one {1+ Friend} other {{numFriends}+ Friends}} in !!{guildName}!!\"",
