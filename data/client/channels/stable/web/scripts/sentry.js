@@ -6116,6 +6116,7 @@
           (rR.ACTIVITY_FEED_DISABLED_BY_USER =
             "ACTIVITY_FEED_DISABLED_BY_USER"),
           (rR.SUMMARIES_ENABLED_GA = "SUMMARIES_ENABLED_GA"),
+          (rR.LEADERBOARD_ENABLED = "LEADERBOARD_ENABLED"),
           (rR.SUMMARIES_ENABLED_BY_USER = "SUMMARIES_ENABLED_BY_USER"),
           (rR.SUMMARIES_OPT_OUT_EXPERIENCE = "SUMMARIES_OPT_OUT_EXPERIENCE"),
           (rR.CHANNEL_ICON_EMOJIS_GENERATED = "CHANNEL_ICON_EMOJIS_GENERATED"),
@@ -7477,6 +7478,8 @@
               "/quests/".concat(e, "/console/start"),
             QUEST_ON_CONSOLE_STOP: (e) => "/quests/".concat(e, "/console/stop"),
             QUESTS_HEARTBEAT: (e) => "/quests/".concat(e, "/heartbeat"),
+            QUESTS_VIDEO_PROGRESS: (e) =>
+              "/quests/".concat(e, "/video-progress"),
             QUESTS_REWARD_CODE: (e) => "/quests/".concat(e, "/reward-code"),
             QUESTS_CLAIM_REWARD: (e) => "/quests/".concat(e, "/claim-reward"),
             QUESTS_DISMISS_CONTENT: (e, t) =>
@@ -9539,6 +9542,7 @@
           (nO.VOICE_CHANNEL_TOPIC_VIEWED = "voice_channel_topic_viewed"),
           (nO.VOICE_QUALITY_PERIODIC_STATS = "voice_quality_periodic_stats"),
           (nO.AUDIO_DEVICE_MODULE_ERROR = "audio_device_module_error"),
+          (nO.SDP_ERROR = "sdp_error"),
           (nO.CHANNEL_SIDEBAR_VIEWED = "channel_sidebar_viewed"),
           (nO.MEMBER_LIST_VIEWED = "member_list_viewed"),
           (nO.MEMBER_LIST_TOGGLED = "member_list_toggled"),
@@ -10680,6 +10684,7 @@
           (nO.COLLECTIBLES_SHOP_SCROLLED = "collectibles_shop_scrolled"),
           (nO.COLLECTIBLES_EXPIRY_MODAL_CLOSED =
             "collectibles_expiry_modal_closed"),
+          (nO.COLLECTIBLES_TILE_IMPRESSION = "collectibles_tile_impression"),
           (nO.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (nO.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -12501,7 +12506,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6b2d3864ec3b79ca1f22a643084dfbcc15a20c5e",
+            release: "discord_web-b95dd36393c0c76379346afaca4f60a87ca0759e",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12570,8 +12575,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "337836"), "337836"));
-          o.YA("builtAt", String("1729631711678"));
+            o.YA("buildNumber", ((e = "338171"), "338171"));
+          o.YA("builtAt", String("1729704258944"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53599,4 +53604,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.67eb96cd8d2346fd18a9.js.map
+//# sourceMappingURL=sentry.5e0c38016914de437406.js.map
