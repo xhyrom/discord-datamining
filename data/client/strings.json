@@ -15001,6 +15001,8 @@
   "MEDIA_VIEWER_ALT_TEXT_CTA": "\"ALT\"",
   "MEDIA_VIEWER_ALT_TEXT_PARTIAL_TITLE": "\"ALT Text\"",
   "MEDIA_VIEWER_ALT_TEXT_FULL_TITLE": "\"Image Description (Alt Text)\"",
+  "MEDIA_VIEWER_CTA_ZOOM_IN": "\"Zoom In\"",
+  "MEDIA_VIEWER_CTA_ZOOM_OUT": "\"Zoom Out\"",
   "REMIXING_TITLE": "\"Remix\"",
   "REMIXING_TAG": "\"REMIX\"",
   "REMIXING_PERKS_CARD_TITLE": "\"Remix on Mobile\"",
