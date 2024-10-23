@@ -18470,6 +18470,7 @@
   "GLOBAL_DISCOVERY_SERVERS_HUB_TITLE": "\"Join the Student Hub for your school\"",
   "GLOBAL_DISCOVERY_SERVERS_HUB_DESCRIPTION": "\"Meet classmates from your school, discover communities, and share your servers.\"",
   "GLOBAL_DISCOVERY_SERVERS_LANGUAGE_FILTER": "\"Select preferred language\"",
+  "GLOBAL_DISCOVERY_SERVERS_GENERIC_ERROR": "\"Something went wrong!\"",
   "GLOBAL_DISCOVERY_SERVERS_SEARCH_RESULTS_HEADER": "'Search results for \"{query}\"'",
   "GLOBAL_DISCOVERY_MORE_MENU_A11Y": "\"More Global Discovery tabs\"",
   "GLOBAL_DISCOVERY_FIND_THE_PERFECT_SERVER": "\"Find the perfect server\"",
