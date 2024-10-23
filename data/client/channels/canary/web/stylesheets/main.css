@@ -27384,6 +27384,10 @@ div.popoutCloseButton_d523a2:hover {
 .animating_c6473a {
   transition: transform.2s ease-out;
 }
+.xxsmall_c6473a {
+  height: 2px;
+  border-radius: 2px;
+}
 .xsmall_c6473a {
   height: 4px;
   border-radius: 3px;
@@ -48453,4 +48457,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.0fc1d0e9997179f89c14.css.map*/
+/*# sourceMappingURL=12633.6838dd3a50e8eba117c0.css.map*/
