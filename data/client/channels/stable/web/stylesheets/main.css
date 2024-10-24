@@ -12523,9 +12523,6 @@ span.clanTag_a31c43 {
     --custom-user-profile-themed-container-user-profile-themed-padding
   );
 }
-.userProfileOuterThemed_c69a7b.userCardOuter_c69a7b {
-  padding: 2px;
-}
 .userProfileOuterUnthemed_c69a7b {
   background-color: var(--profile-gradient-primary-color);
 }
@@ -12556,11 +12553,6 @@ span.clanTag_a31c43 {
 .userPanelInner_c69a7b:before {
   height: 100%;
   width: 100%;
-}
-.userCardInner_c69a7b {
-  flex-grow: 0;
-  border-radius: var(--radius-sm);
-  background: var(--background-primary);
 }
 .userPanelInnerThemed_c69a7b {
   --profile-gradient-start: color-mix(
@@ -17044,11 +17036,13 @@ h3.improved_f017d0:after {
 .header_ae1fa2 {
   display: flex;
   justify-content: space-between;
+  gap: 4px;
 }
 .headerText_ae1fa2 {
   display: flex;
   gap: 4px;
   align-items: center;
+  overflow: hidden;
 }
 .headerContextMenu_ae1fa2:empty {
   display: none;
@@ -47083,6 +47077,28 @@ html.disable-forced-colors * {
   --spacing-96: 96px;
 }
 :root {
+  --size-0: 0px;
+  --size-4: 4px;
+  --size-8: 8px;
+  --size-12: 12px;
+  --size-16: 16px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-48: 48px;
+  --size-64: 64px;
+  --size-80: 80px;
+  --size-96: 96px;
+  --size-128: 128px;
+  --size-160: 160px;
+  --size-192: 192px;
+  --size-xxs: var(--size-4);
+  --size-xs: var(--size-8);
+  --size-sm: var(--size-12);
+  --size-md: var(--size-16);
+  --size-lg: var(--size-20);
+  --size-xl: var(--size-24);
+  --size-xxl: var(--size-32);
   --space-0: 0px;
   --space-4: 4px;
   --space-8: 8px;
@@ -48457,4 +48473,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.6838dd3a50e8eba117c0.css.map*/
+/*# sourceMappingURL=12633.9f50b98ee435ff957f3c.css.map*/
