@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7617634002](https://discord.com/jobs/7617634002)
 
-**Updated At:** Fri, 18 Oct 2024 18:24:42 GMT
+**Updated At:** Thu, 24 Oct 2024 17:47:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a passionate and experienced senior financial analyst to join our growing Finance team. The Corporate Finance team is responsible for various functions - including planning, forecasting, reporting, capital markets activities, financial systems, and partnership with our Total Rewards team on compensation planning and forecasting. Reporting to our Head of Corporate Finance, you will play a key role on our Corporate Finance team while partnering across the finance team, the accounting team, and the company. This role will be responsible for some of our key company-facing processes, including -&amp;nbsp; partnership with our Total Rewards team, ownership of our financial planning tool, and ownership of internal reporting processes. In this role, you will gain invaluable experience that offers autonomy, interactions with business partners, and the opportunity to impact a rapidly growing business.
@@ -22,8 +22,7 @@ Drive our internal reporting processes, including coordination across finance an
 
 What You Should Have
 
-3+ years of related experience (e.g., FP&amp;amp;A, Accounting backgrounds, management consulting)
-Systems and EPM management experience
+3+ years of related experience (e.g., Investment banking, FP&amp;amp;A, management consulting)
 Excellent communication and stakeholder management skills, working exceptionally well cross-functionally and with multiple constituents
 Strong analytical skills and ability to use data to drive decision-making
 Ability to deal with ambiguity and competing objectives in a fast-paced environment
