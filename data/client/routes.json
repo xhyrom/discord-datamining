@@ -970,6 +970,10 @@
       "POST"
     ]
   },
+  "FETCH_HD_STREAMING_ENTITLEMENT": {
+    "url": "/users/@me/consumable/hd-streaming",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
