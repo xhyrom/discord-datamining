@@ -1,327 +1,291 @@
-<p>
-  Looking to utilize forum channels in your server? You can learn more about
-  forum channels below!
-</p>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JAZAWCX3QQ6QXV4G1ZG3E968">What are Forum Channels?</a>
+    </li>
+    <li>
+      <a href="#h_01JAZAWCX3ESF8G12EZFC6TJ0M"
+        >How Do I Create a Forum Channel?</a
+      >
+      <ul>
+        <li><a href="#h_01JAZAWCX3HE7809F1BPGQRCNR">Permissions</a></li>
+        <li><a href="#h_01JAZAWCX3R1MWKK06GBKMPZ8Q">Post Guidelines</a></li>
+        <li>
+          <a href="#h_01JAZAWCX38Y6B8XEHXWN2757W">Tags</a>
+          <ul>
+            <li>I Forgot to add Tags in my Post!</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#h_01JAZAWCX3KBADCSM64110H4GN">Hide After Inactivity</a>
+        </li>
+        <li>
+          <a href="#h_01JAZAWCX3AC3REVRZ31ANVBJ6">Setting a Default Layout</a>
+          <ul>
+            <li>List View</li>
+            <li>Gallery View</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JAZAWCX3RDRFPT5R8C1W4J7S">How to Search for a Forum Post</a>
+    </li>
+    <li>
+      <a href="#h_01JAZAWCX3XW21QTAKAKYX8QC4">Filtering Posts with Tags</a>
+    </li>
+    <li>
+      <a href="#h_01JAZAWCX4DXYK26BKT49DXMAQ">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JAZAWCX3QQ6QXV4G1ZG3E968">What are Forum Channels?</h1>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/8871669698967"
-    alt="forum-channels-mobile-demo.png"
-    width="608"
-    height="397"
+    src="https://support.discord.com/hc/article_attachments/27298721815063"
+    width="624"
+    height="445"
   />
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What does this article cover?</strong></span
-  >
+  Forum Channels provide a space for organized discussions. With forums, you can
+  discuss specific topics and not worry about talking over each other. Since
+  discussions are contained in posts, it’s easier to jump in on an existing one
+  (or start a new one) without worrying about your message getting buried!
 </p>
-<ul>
-  <li>
-    <a href="#h_01G69FJQWTWN88HFEHK7Z6X79N" target="_self"
-      >What are Forum Channels?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01G69FKE0ZAX9C65DCGMJGQKFE" target="_self"
-      >How do I create a Forum Channel?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01G69FM0XC0EC3P3VPC78D949E" target="_self">Getting Started</a>
-    <ul>
-      <li>
-        <a href="#h_01G69FMWRMR2K0PAXJM7XNGGW8" target="_self">Permissions</a>
-      </li>
-      <li>
-        <a href="#h_01G69FN6ATWREBCZARMNDSD5BD" target="_self">Guidelines</a>
-      </li>
-      <li>
-        <a href="#h_01GCYC9M00A4SWTAHPK3VW4G78" target="_self"
-          >How to Search for a Forum Post</a
-        >
-      </li>
-      <li>
-        <a href="#h_01GCYC9WF5871Q5QSXM6VVTFHV" target="_self"
-          >Filtering Posts with Tags</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01G69FNCKR6XCZKDJKQXC8CYQV" target="_self"
-      >Additional Frequently Asked Questions</a
-    >
-  </li>
-</ul>
-<h1 id="h_01G69FJQWTWN88HFEHK7Z6X79N">What are Forum Channels?</h1>
-<p>
-  <span
-    class="discussion-id-f3716217-c974-4257-ba1f-236017cdcc42 discussion-level-1 discussion-id-f3716217-c974-4257-ba1f-236017cdcc42 notion-enable-hover"
-    data-token-index="1"
-    data-reactroot=""
-    >Forum Channels provide a space for organized discussions. With forums, you
-    can discuss specific topics and not worry about talking over each other.
-    Since discussions are contained in posts, it’s easier to jump in on an
-    existing one (or start a new one) without worrying about your message
-    getting buried!</span
-  >
-</p>
-<h1 id="h_01G69FKE0ZAX9C65DCGMJGQKFE">How do I create a Forum Channel?</h1>
-<h3 id="h_01HBW51AFGVN3CKY9A09K7EEMK">
-  <span
-    id="docs-internal-guid-5ffacde6-7fff-80f7-0c78-a06e4ec07444"
-    style="color: #434343"
-    >In order to create and have forum channels on your server, you must enable
-    Community on your server. You can learn how to enable Community </span
-  ><a
+<h1 id="h_01JAZAWCX3ESF8G12EZFC6TJ0M">How Do I Create a Forum Channel?</h1>
+<div class="tip-box">
+  <strong>Note:</strong> In order to create and have forum channels on your
+  server, you must enable Community on your server. You can learn how to enable
+  Community in the
+  <a
     href="https://support.discord.com/hc/en-us/articles/360047132851"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  ><span style="color: #434343">.</span>
-</h3>
+    >Enabling Your Community Server</a
+  >
+  Help Center article.
+</div>
 <p>
   1. In the channel list, hover over the channel category where you want your
-  <em><strong>Forum Channel</strong></em
-  > to live and hit the <strong>"+"</strong> icon to <strong
-    >Create a Channel</strong
-  >.
+  <strong>Forum Channel</strong> and then press the plus sign (<img
+    src="https://support.discord.com/hc/article_attachments/27298721817367"
+    width="21"
+    height="21"
+  />) to create a channel.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/6289486804759"
-    alt="3.png"
+    src="https://support.discord.com/hc/article_attachments/27298694280087"
+    width="395"
+    height="391"
   />
 </p>
 <p>
   2. Select <strong>Forum</strong> as the channel type, and enter a channel
   name.
 </p>
-<h3 id="h_01HBW50N3Z45QH5A28BQB8DYV9">
-  <span style="font-weight: 400"
-    >Tip: Give your forum channel a clear, specific title that provides guidance
-    on the purpose of the channel.</span
-  >
-</h3>
-<p>3. Then click <strong>Create Channel </strong>when you're done!</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/8871670593303"
-    alt="forum-create-channel-window-2.png"
-    width="348"
-    height="555"
+    src="https://support.discord.com/hc/article_attachments/27298694280855"
+    width="430"
+    height="678"
   />
 </p>
-<h1 id="h_01G69FM0XC0EC3P3VPC78D949E">Getting Started</h1>
-<p class="wysiwyg-text-align-left">
-  <span style="font-weight: 400"
-    >Once you have created a brand new Forum channel, you will be directed to
-    the Get Started section that walks you through additional steps to set
-    up.</span
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/6289594198807"
-    alt="Getting_started.png"
-    width="794"
-    height="425"
-  />
-</p>
-<h2 id="h_01G69FMWRMR2K0PAXJM7XNGGW8">Permissions</h2>
-<p class="wysiwyg-text-align-left">
+<p>3. Then press <strong>Create Channel </strong>when you're done!</p>
+<h2 id="h_01JAZAWCX3HE7809F1BPGQRCNR">Permissions</h2>
+<p>
   First up is channel permissions. These permissions determine which members
   have access to Forum channels.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/6289611533719"
-    alt="permissions_1.png"
-    width="794"
-    height="425"
+    src="https://support.discord.com/hc/article_attachments/27298694282135"
+    width="624"
+    height="436"
   />
 </p>
 <p>
-  Press
-  <strong
-    ><span class="notion-enable-hover" data-token-index="1" data-reactroot=""
-      >Set recommended permissions</span
-    ></strong
-  >. From here, you can limit access to the Forum Channel to specific roles. Or
-  y<span
-    class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover"
-    data-token-index="3"
-    data-reactroot=""
-    >ou can also enable </span
-  ><strong
-    ><span
-      class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover"
-      data-token-index="4"
-      data-reactroot=""
-      >@everyone</span
-    ></strong
-  ><span
-    class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover"
-    data-token-index="5"
-    data-reactroot=""
-  >
-    to allow all users to gain access.</span
-  >
+  Press <strong>Set recommended permissions</strong>. From here, you can limit
+  access to the Forum Channel to specific roles. Or you can also enable
+  <strong>@everyone</strong> to allow all users to gain access.
 </p>
-<h3 id="h_01HBW50N3Z7J22FVPGH6Y1ZKRC">
-  <span
-    class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover"
-    data-token-index="5"
-    data-reactroot=""
-    ><span class="notion-enable-hover" data-token-index="0" data-reactroot=""
-      >Tip</span
-    >: Allowing everyone to post in a forum channel helps increase overall
-    engagement and usage of the channel!</span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> Allowing everyone to post in a forum channel helps
+  increase overall engagement and usage of the channel!
+</div>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/6289608632215"
-    alt="permissions_2.png"
-  />
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27298694282903"
+      width="437"
+      height="251"
+  /></strong>
 </p>
-<h2 id="h_01G69FN6ATWREBCZARMNDSD5BD">Guidelines</h2>
+<h2 id="h_01JAZAWCX3R1MWKK06GBKMPZ8Q">Post Guidelines</h2>
 <p>Next, you can create guidelines for your Forum Channel.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/6289626204311"
-    alt="guidelines.png"
-    width="805"
-    height="431"
+    src="https://support.discord.com/hc/article_attachments/27298721822999"
+    width="624"
+    height="436"
   />
 </p>
 <p>
-  <span
-    class="discussion-id-eef8c686-bb65-4a39-b53e-142ed9f6e070 discussion-level-1 discussion-id-eef8c686-bb65-4a39-b53e-142ed9f6e070 notion-enable-hover"
-    data-token-index="1"
-    data-reactroot=""
-    ><span style="font-weight: 400"
-      >Pressing Create guidelines will take you to the Guidelines settings page.
-      From here, you can change the channel name, add guidelines, and designate
-      Tags to help your members.</span
-    ></span
-  >
+  Pressing <strong>Create post guidelines</strong> will take you to the
+  Guidelines settings page. From here, you can change the channel name, add
+  guidelines, and designate tags to help your members.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/8871826583191"
-    alt="forum-channel-overview-page-markdown-guidelines.png"
+    src="https://support.discord.com/hc/article_attachments/27298721823767"
+    width="624"
+    height="571"
   />
 </p>
-<h3 id="h_01HBW50N3ZKXVD8TKJFJCRTZQQ" class="wysiwyg-text-align-center">
-  Note: Tags can help label specific posts<img
-    src="https://support.discord.com/hc/article_attachments/6289733890327"
-    alt="tags.png"
-  />
-</h3>
-<p>With your guidelines all set up, you can make your first post!</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/6501589581207"
-    alt="first_post.png"
-  />
-</p>
+<h2 id="h_01JAZAWCX38Y6B8XEHXWN2757W">Tags</h2>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>I forgot to tag my posts when creating my post!</strong></span
-  >
+  Tags can help label specific posts and can also be a requirement before a
+  member of your server makes a post.
 </p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27298721824663"
+      width="460"
+      height="174"
+  /></span>
+</p>
+<p><strong>I Forgot to add Tags in my Post!</strong></p>
 <p>
   If you forgot to add tags to your post, you can add them by right-clicking on
-  your post and navigating to Edit Tags, and selecting your desired tags.
+  your post and navigating to <strong>Edit Tags</strong>. Here you can select
+  all tags that are applicable.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/6289830999063"
-    alt="edit_tags.png"
-    width="851"
-    height="489"
+    src="https://support.discord.com/hc/article_attachments/27298721825047"
+    width="624"
+    height="603"
   />
 </p>
-<h2 id="h_01GCYC9M00A4SWTAHPK3VW4G78">
-  <span style="font-weight: 400">Setting a Default Layout</span>
-</h2>
+<h2 id="h_01JAZAWCX3KBADCSM64110H4GN">Hide After Inactivity</h2>
+<div class="tip-box">
+  <strong>Note:</strong> Unless a forum post is locked, the post can be reopened
+  at any time. Even if it’s closed.
+</div>
 <p>
-  <span style="font-weight: 400"
-    >You can choose between List View and Gallery View as the default layout for
-    your forum channel. Gallery View tends to work better for media-focused
-    forum channels, whereas List View works better for text-based
-    discussions.</span
-  >
+  Once a post has been inactive for a certain period of time, it’ll
+  automatically be moved to the <strong>Older Posts</strong> section. You can
+  choose one of the following:
 </p>
-<p>
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/10579800668311"
-      alt="forum-channel-grid-gallery-layout-option-dropdown-menu.png"
-  /></span>
+<ul>
+  <li>1 hour</li>
+  <li>24 hours</li>
+  <li>3 days (this setting is selected by default)</li>
+  <li>1 week</li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298721826071"
+    width="624"
+    height="123"
+  />
 </p>
-<h2 id="h_01HBW50N3Z9X6WR8ZXAKE0GMZ5">
-  <span style="font-weight: 400">How to Search for a Forum Post</span>
-</h2>
-<p>
-  <span style="font-weight: 400"
-    >Looking for a specific discussion in a forum channel? You can search for
-    the post using the forum channel’s dedicated search bar!</span
-  >
+<p>Now you can make your first post in the forum channel!</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298721827095"
+    width="624"
+    height="241"
+  />
 </p>
+<h2 id="h_01JAZAWCX3AC3REVRZ31ANVBJ6">Setting a Default Layout</h2>
 <p>
-  <span style="font-weight: 400"
-    >First, go to your server’s channel list and find the forum channel with the
-    post that you want to search for.</span
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >Then, in the search bar at the top of the page, input the key word or phase
-    of the post title you’re looking for. The search bar will show results that
-    match with your searched word.</span
-  >
+  You can choose between <strong>List View</strong> and
+  <strong>Gallery View</strong> as the default layout for your forum channel.
+  What you choose will be dependent on what your forum channel is all about.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8871692790039"
-      alt="forum-channel-search-bar.png"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298721828119"
+    width="624"
+    height="159"
+  />
 </p>
-<h2 id="h_01GCYC9WF5871Q5QSXM6VVTFHV">
-  <span style="font-weight: 400">Filtering Posts with Tags</span>
-</h2>
+<p><strong>List View</strong></p>
 <p>
-  <span style="font-weight: 400"
-    >In a forum channel’s posts, specific tags can be associated with certain
-    posts to help organize your forum channel and the numerous different posts
-    under one discussion topic.</span
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >You can filter posts in a forum channel by selecting tags. Forum channel
-    posts can have numerous tags, so you can filter posts further by selecting
-    multiple tags.</span
-  >
+  This option works better for text-based discussions and allows users to easily
+  jump in.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/8871670219159"
-      alt="tags-organize-forum-channels.png"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298694295959"
+    width="624"
+    height="279"
+  />
 </p>
-<h1 id="h_01G69FNCKR6XCZKDJKQXC8CYQV">Additional Frequently Asked Questions</h1>
+<p><strong>Gallery View</strong></p>
+<p>
+  This tends to work better for media-focused forum channels and allows members
+  of your servers to see exactly what media is in the post.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298694297239"
+    width="624"
+    height="456"
+  />
+</p>
+<h1 id="h_01JAZAWCX3RDRFPT5R8C1W4J7S">How to Search for a Forum Post</h1>
+<p>
+  Looking for a specific discussion in a forum channel? You can search for the
+  post using the forum channel’s dedicated search bar!
+</p>
+<p>
+  1. Go to your server’s channel list and find the forum channel with the post
+  that you want to search for.
+</p>
+<p>
+  2. In the search bar at the top of the page, input the key word or phase of
+  the post title you’re looking for. The search bar will show results that match
+  with your searched word.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298721836695"
+    width="624"
+    height="429"
+  />
+</p>
+<h1 id="h_01JAZAWCX3XW21QTAKAKYX8QC4">Filtering Posts with Tags</h1>
+<p>
+  In a forum channel’s posts, specific tags can be associated with certain posts
+  to help organize your forum channel and the numerous different posts under one
+  discussion topic.
+</p>
+<p>
+  You can filter posts in a forum channel by selecting tags. You can also tap on
+  <strong>All</strong> and select tags through there. Forum channel posts can
+  have numerous tags, so you can filter posts further by selecting multiple
+  tags.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27298721837591"
+    width="624"
+    height="237"
+  />
+</p>
+<h1 id="h_01JAZAWCX4DXYK26BKT49DXMAQ">
+  <strong>Frequently Asked Questions</strong>
+</h1>
 <p><strong>Q: Who has access to Forum Channels right now?</strong></p>
-<p>
-  <span style="font-weight: 400"
-    >A: Forum Channels are currently available to 100% of Community
-    servers.</span
-  >
-</p>
+<p>A: Forum Channels are currently available to 100% of Community servers.</p>
 <p>
   <strong
     >Q: When will Forum Channels be available for non-Community servers?</strong
@@ -330,12 +294,12 @@
 <p>
   A: Forum Channels are currently only available to Community-enabled servers.
   If you’re ready to convert your server into a Community server, please check
-  out this<a
-    href="https://support.discord.com/hc/en-us/articles/360047132851"
+  out this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
     target="_blank"
     rel="noopener noreferrer"
-  >
-    Help Center article</a
+    >Help Center article</a
   >
   for a detailed guide on how to make the switch.
 </p>
@@ -343,26 +307,17 @@
   <strong>Q: What’s the difference between Forums and Text channels?</strong>
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: While Text channels are great for in-the-moment discussions, Forum
-    channels provide a place for more drawn-out discussion around specific
-    topics. Discussions are tied to individual posts so they are more organized
-    and easier for members of your community to get up to speed and join a
-    conversation.</span
-  >
+  A: While Text channels are great for in-the-moment discussions, Forum channels
+  provide a place for more drawn-out discussion around specific topics.
+  Discussions are tied to individual posts so they are more organized and easier
+  for members of your community to get up to speed and join a conversation.
 </p>
 <p><strong>Q: What’s the difference between Forums and Threads?</strong></p>
 <p>
-  <span style="font-weight: 400"
-    >A: The main difference is that Forums are a type of </span
-  ><em><span style="font-weight: 400">channel</span></em
-  ><span style="font-weight: 400">, while threads are a type of </span
-  ><em><span style="font-weight: 400">message</span></em
-  ><span style="font-weight: 400"
-    >. While they are similar in that they both create dedicated spaces for
-    organized discussions, Forum Channels are more persistent, while threads are
-    more temporary.</span
-  >
+  A: The main difference is that Forums are a type of <em>channel</em>, while
+  threads are a type of <em>message</em>. While they are similar in that they
+  both create dedicated spaces for organized discussions, Forum Channels are
+  more persistent, while threads are more temporary.
 </p>
 <p>
   <strong
@@ -370,92 +325,65 @@
   >
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: To ensure moderation of forum channels is easy and manageable, we’ve
-    implemented 3 types of moderation support:</span
-  >
+  A: To ensure moderation of forum channels is easy and manageable, we’ve
+  implemented 3 types of moderation support:
 </p>
 <ol>
-  <li style="font-weight: 400" aria-level="1">
+  <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/4421269296535"
+      href="https://support.discord.com/hc/en-us/articles/4421269296535-AutoMod-FAQ"
       target="_blank"
       rel="noopener noreferrer"
       >AutoMod</a
-    ><span style="font-weight: 400"
-      >: Forum Channels are supported by AutoMod, our built-in moderation tool
-      that helps detect and remove problematic content automatically.</span
-    >
+    >: Forum Channels are supported by AutoMod, our built-in moderation tool
+    that helps detect and remove problematic content automatically.
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Slow Mode: If the volume of posts and message activity is concerning,
-      mods can place limits.</span
-    >
+  <li>
+    Slow Mode: If the volume of posts and message activity is concerning, mods
+    can place limits.
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">API: We’ve updated our</span
-    ><a
+  <li>
+    API: We’ve updated our<a
       href="https://discord.com/developers/docs/topics/threads#forums"
       target="_blank"
       rel="noopener noreferrer"
     >
       API Documentation</a
-    ><span style="font-weight: 400"
-      >, so developers can integrate support for forums into their
-      products.</span
-    >
+    >, so developers can integrate support for forums into their products.
   </li>
 </ol>
 <p>
   <strong>Q: Is there a way to close or lock a post in a forum channel?</strong>
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: If a conversation has reached its end or you need to close it for any
-    reason, you can right click the post and click Close Post. This will cause
-    the post to no longer appear in the new posts section of the list and also
-    lock the post so that only moderators can re-open it.</span
-  >
+  A: If a conversation has reached its end or you need to close it for any
+  reason, you can right click the post and click Close Post. This will cause the
+  post to no longer appear in the new posts section of the list and also lock
+  the post so that only moderators can re-open it.
 </p>
 <p><strong>Q: What’s the best way to test forums with my community?</strong></p>
 <p>
-  <span style="font-weight: 400"
-    >A: While all communities are different, we recommend rolling out forums to
-    your community gradually. This way, your community won’t experience big,
-    jarring changes, and they’ll have time to get used to it. One example of a
-    roll-out could look like this:</span
-  >
+  A: While all communities are different, we recommend rolling out forums to
+  your community gradually. This way, your community won’t experience big,
+  jarring changes, and they’ll have time to get used to it. One example of a
+  roll-out could look like this:
 </p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Create a private forum for you and your moderators to test and discuss
-      plans</span
-    >
+  <li>
+    Create a private forum for you and your moderators to test and discuss plans
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Identify existing text channels where forums might be a good fit and
-      replace them</span
-    >
+  <li>
+    Identify existing text channels where forums might be a good fit and replace
+    them
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Create new forum channels with the proper guidelines and tags</span
-    >
+  <li>Create new forum channels with the proper guidelines and tags</li>
+  <li>
+    Make an announcement to inform your community about the changes and
+    encourage them to provide feedback
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Make an announcement to inform your community about the changes and
-      encourage them to provide feedback</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >If your community’s feedback is largely positive, identify larger “core”
-      text channels that could benefit from the organization forums bring</span
-    >
+  <li>
+    If your community’s feedback is largely positive, identify larger “core”
+    text channels that could benefit from the organization forums bring
   </li>
 </ul>
 <p>
@@ -465,24 +393,17 @@
   >
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: Forum channels currently only support having one pinned post. Pinned
-    posts aren’t on a timer, so they will remain pinned until it’s unpinned or
-    another post is pinned (replacing the original pinned post).</span
-  >
+  A: Forum channels currently only support having one pinned post. Pinned posts
+  aren’t on a timer, so they will remain pinned until it’s unpinned or another
+  post is pinned (replacing the original pinned post).
 </p>
 <p><strong>Q: How do you add or replace a thumbnail to a post?</strong></p>
 <p>
-  <span style="font-weight: 400"
-    >A: If you forgot to add a thumbnail to your original post, you can do so by
-    being the first to reply to your original post with a photo. When you do
-    this, the option to add the media to the original post will appear. If you
-    select </span
-  ><strong>Add to Post</strong
-  ><span style="font-weight: 400"
-    >, it will append your media to the original post and act as the
-    thumbnail.</span
-  >
+  A: If you forgot to add a thumbnail to your original post, you can do so by
+  being the first to reply to your original post with a photo. When you do this,
+  the option to add the media to the original post will appear. If you select
+  <strong>Add to Post</strong>, it will append your media to the original post
+  and act as the thumbnail.
 </p>
 <p>
   <strong
@@ -491,17 +412,15 @@
   >
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: Yes, you can ping people in a forum channel. They'll be able to continue
-    receiving notifications if they're following that specific forum post! That
-    is not the case for the forum channel as a whole. They won't be pinged for
-    every new thread. Mentions in forum posts work in the same way as threads,
-    which you can read more about in the
-    <a
-      href="https://support.discord.com/hc/articles/4403205878423#h_01F99ZCPB03MNQYYMHDFWQWR1E"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Threads FAQ</a
-    >.</span
-  >
+  A: Yes, you can ping people in a forum channel. They'll be able to continue
+  receiving notifications if they're following that specific forum post! That is
+  not the case for the forum channel as a whole. They won't be pinged for every
+  new thread. Mentions in forum posts work in the same way as threads, which you
+  can read more about in the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ#h_01F99ZCPB03MNQYYMHDFWQWR1E"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Threads FAQ</a
+  >.
 </p>
