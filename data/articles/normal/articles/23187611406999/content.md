@@ -344,6 +344,13 @@
   that Guild. If it’s been rejected, you’ll receive a notification stating so.
 </p>
 <h1 id="h_01HXW2MCD0JH2V6WEV5V4WCHBC">Frequently Asked Questions</h1>
+<p><strong>Q: How can I create a Guild?</strong></p>
+<p>
+  A: Our team is currently experimenting with Guilds, a feature available to a
+  limited number of servers. Please note that this is a restricted access
+  feature, and our support team cannot manually add servers to this experiment
+  upon request.
+</p>
 <p><strong>Q: How can I stop being a Guild?</strong></p>
 <p>
   A: Tap on the drop-down for your Guild and then tap on
