@@ -32,6 +32,7 @@ import deepEqual from "fast-deep-equal";
 export class WumpusCentralSender implements Sender {
   async send(diff: ArrayDiff<Experiment>, result: PushResult): Promise<void> {
     const embeds = [];
+    const rolloutEmbeds = [];
 
     for (const exp of diff.added) {
       embeds.push(
@@ -72,7 +73,7 @@ export class WumpusCentralSender implements Sender {
           exp.old?.rollout?.overrides ?? {},
         )
       )
-        embeds.push(
+        rolloutEmbeds.push(
           this.buildOverridesEmbed(
             exp.new,
             exp.old.rollout?.overrides ?? {},
@@ -84,15 +85,24 @@ export class WumpusCentralSender implements Sender {
         );
     }
 
-    const embedsPerTen = chunk(embeds, 10);
-
-    for (const embeds of embedsPerTen) {
+    for (const items of chunk(embeds, 10)) {
       await postToDiscord(
         getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS"),
         result?.update?.hash.to,
         {
           content: "<@&1106558964491096136>",
-          embeds,
+          embeds: items,
+        },
+      );
+    }
+
+    for (const items of chunk(rolloutEmbeds, 10)) {
+      await postToDiscord(
+        getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENT_ROLLOUTS"),
+        result?.update?.hash.to,
+        {
+          content: "<@&1106558964491096136>",
+          embeds: items,
         },
       );
     }
