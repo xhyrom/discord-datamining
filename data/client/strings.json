@@ -19347,6 +19347,7 @@
   "FRACTIONAL_CREDITS_SUBSCRIPTION_RESUME_INFO": "\"Your billing cycle will resume on **{resumeDate, date, medium}**\"",
   "FRACTIONAL_PREMIUM_SETTINGS_HERO_SUBHEADER": "'You have Nitro through **Nitro credits**.\\n\\n[Learn more.]({helpCenterLink} \"Learn more about Nitro credits\")'",
   "FRACTIONAL_PREMIUM_CREDITS_ACTIVATED": "\"Nitro Credits Activated\"",
+  "FRACTIONAL_PREMIUM_BOOSTING_UNAVAILABLE": "\"Boosting is unavailable while Nitro credits are active\"",
   "APP_DIRECTORY_SEARCH_PLACEHOLDER_V2": "\"Search Apps\"",
   "APP_DIRECTORY_ABOUT": "\"About\"",
   "APP_DIRECTORY_STORE": "\"Store\"",
