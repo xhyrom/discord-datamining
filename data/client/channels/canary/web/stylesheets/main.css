@@ -47083,6 +47083,28 @@ html.disable-forced-colors * {
   --spacing-96: 96px;
 }
 :root {
+  --size-0: 0px;
+  --size-4: 4px;
+  --size-8: 8px;
+  --size-12: 12px;
+  --size-16: 16px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-48: 48px;
+  --size-64: 64px;
+  --size-80: 80px;
+  --size-96: 96px;
+  --size-128: 128px;
+  --size-160: 160px;
+  --size-192: 192px;
+  --size-xxs: var(--size-4);
+  --size-xs: var(--size-8);
+  --size-sm: var(--size-12);
+  --size-md: var(--size-16);
+  --size-lg: var(--size-20);
+  --size-xl: var(--size-24);
+  --size-xxl: var(--size-32);
   --space-0: 0px;
   --space-4: 4px;
   --space-8: 8px;
@@ -48457,4 +48479,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.6838dd3a50e8eba117c0.css.map*/
+/*# sourceMappingURL=12633.bfa93fdd57fbda268ca5.css.map*/
