@@ -17052,7 +17052,11 @@ h3.improved_f017d0:after {
   border: none;
 }
 .card_ae1fa2.hoisted_ae1fa2 {
-  background: var(--profile-body-background-color) !important;
+  background: linear-gradient(
+      rgb(var(--bg-overlay-color) / 0.4),
+      rgb(var(--bg-overlay-color) / 0.4)
+    ),
+    linear-gradient(var(--profile-gradient-end), var(--profile-gradient-end)) !important;
   z-index: 4;
   pointer-events: none;
 }
@@ -48557,4 +48561,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.30215181f788bef82984.css.map*/
+/*# sourceMappingURL=12633.1b405d7891f77eda7527.css.map*/
