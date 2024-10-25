@@ -4718,13 +4718,6 @@
     "url": "/badge-icons/:param.png",
     "allowed_methods": null
   },
-  "PRIVATE_CHANNEL_INTEGRATION_CONSENT": {
-    "url": "/channels/:param/integrations/consent",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
   "FINISH_MFA_CHECK": {
     "url": "/mfa/finish",
     "allowed_methods": [
