@@ -88,7 +88,7 @@
   The <strong>Winter Survival Quest</strong> can be accepted on Discord from
   <strong>October 25, 2024</strong> until
   <strong>October 31, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
-  <strong>December 31, 2024 (0:00 UTC)</strong>. Quest requirements must be
+  <strong>December 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
 <h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>

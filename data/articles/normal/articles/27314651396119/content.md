@@ -57,7 +57,7 @@
 </p>
 <p>
   Quest requirements must be completed during this period to receive the reward.
-  Reward gift codes expire <strong>December 31, 2024 (0:00 UTC). </strong>
+  Reward gift codes expire <strong>December 31, 2024 (3:59PM UTC). </strong>
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p>
