@@ -5564,7 +5564,7 @@ div.modalHeader_c5e09c {
   margin-left: 8px;
 }
 .icon_a94328 {
-  border-radius: 25%;
+  border-radius: var(--radius-md);
   flex-shrink: 0;
   box-sizing: border-box;
   border: 1px solid var(--border-subtle);
@@ -48560,4 +48560,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1515d26ec4e4f922ae0f.css.map*/
+/*# sourceMappingURL=12633.91591d7f228fc7ea0e72.css.map*/

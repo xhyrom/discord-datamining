@@ -7431,8 +7431,6 @@
             APPLICATIONS_SHELF: "/applications/shelf",
             DISCORDIFY_ME: "/users/@me/avatars/discordify",
             BADGE_ICON: (e) => "/badge-icons/".concat(e, ".png"),
-            PRIVATE_CHANNEL_INTEGRATION_CONSENT: (e) =>
-              "/channels/".concat(e, "/integrations/consent"),
             FINISH_MFA_CHECK: "/mfa/finish",
             CREATE_USER_OFFER: (e, t) =>
               "/user-offers/create/".concat(t, "/").concat(e),
@@ -8789,8 +8787,6 @@
           (r2.CHANNEL_SEARCH = "Channel Search"),
           (r2.NEW_MESSAGE_COMPOSER = "New Message Composer"),
           (r2.FAMILY_CENTER = "Family Center"),
-          (r2.ADD_PRIVATE_CHANNEL_INTEGRATION_MODAL =
-            "Add Private Channel Integration Modal"),
           (r2.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet"),
           (r2.COMMUNITY_ALERTS = "Community Alerts Settings"),
           (r2.HIGHLIGHT_NOTIFICATIONS = "Highlight notification settings"),
@@ -10430,6 +10426,7 @@
           (nO.IAR_FEEDBACK_SUBMITTED = "iar_feedback_submitted"),
           (nO.IAR_SETTINGS_UPSELLS_ACTION = "iar_settings_upsells_action"),
           (nO.DM_MUTE_FEEDBACK_SUBMITTED = "dm_mute_feedback_submitted"),
+          (nO.BLOCK_USER_FEEDBACK_SUBMITTED = "block_user_feedback_submitted"),
           (nO.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCEEDED =
             "emoji_upload_file_size_limit_exceeded"),
           (nO.EMOJI_UPLOAD_STARTED = "emoji_upload_started"),
@@ -12518,7 +12515,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bc06c932bd16d42e93c924ff34cfe04977342d68",
+            release: "discord_web-7aaac57acb1b431e4c868c57b11b7f3fe4fda427",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12587,8 +12584,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "339220"), "339220"));
-          o.YA("builtAt", String("1729882146740"));
+            o.YA("buildNumber", ((e = "339227"), "339227"));
+          o.YA("builtAt", String("1729883038809"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53616,4 +53613,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.e75ea8dcc066e775f00b.js.map
+//# sourceMappingURL=sentry.ecd1b80e039e09b36b20.js.map
