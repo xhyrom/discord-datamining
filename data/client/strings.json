@@ -11966,7 +11966,7 @@
   "PENDING_FRIENDS_LIST_HEADER": "\"Pending Friends\"",
   "PEOPLE_YOU_MAY_KNOW_LIST_HEADER": "\"People You May Know\"",
   "FORM_LABEL_REGION_OVERRIDE": "\"Region Override\"",
-  "FORM_HELP_REGION_OVERRIDE": "\"Anyone in this channel will connect to the region you set, regardless of where they live. Regions affect voice and video quality. Leave it on Automatic and Discord will figure out what works best.\"",
+  "FORM_HELP_REGION_OVERRIDE": "\"Anyone in this channel will attempt to connect to the region you set, regardless of where they live. Regions affect voice and video quality. Leave it on Automatic and Discord will figure out what works best.\"",
   "AUTOMATIC_REGION": "\"Automatic\"",
   "STAGE_VOICE_CHANNEL": "\"Stage Channel\"",
   "LISTENING_COUNT": "\"{count, plural, =0 {0 in audience} other {{count} in audience}}\"",
