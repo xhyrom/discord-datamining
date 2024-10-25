@@ -18371,7 +18371,7 @@
   "GAME_PROFILE_FEEDBACK_VISIT_IGDB": "\"Visit IGDB\"",
   "GAME_PROFILE_FEEDBACK_PLACEHOLDER_OTHER": "\"Describe issues with this game profile\"",
   "GAME_PROFILE_FEEDBACK_PLACEHOLDER_INCORRECT": "\"Search for correct game\"",
-  "LEADERBOARD_POPOUT_TITLE": "\"$[!!{leaderboardName}!!](leaderboardNameHook) standings\"",
+  "LEADERBOARD_POPOUT_TITLE": "\"$[!!{leaderboardName}!!](leaderboardNameHook) \\xb7 {timeLeft}\"",
   "LEADERBOARD_TABLE_HEADER_PLAYER": "\"Player\"",
   "MEMBER_LIST_CONTENT_FEED_LEADERBOARD_MENU_REFRESH_MY_DATA": "\"Refresh my game data\"",
   "LEADERBOARD_INTERVAL_END_DAYS_LEFT": "\"{count, number}d Left\"",
