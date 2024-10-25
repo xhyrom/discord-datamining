@@ -23,20 +23,20 @@
   <li>
     <a href="#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
     <ul>
-      <li><a href="#h_01J9YEMCK0K5QJRVVWGSTW2707"> MARVEL SNAP</a></li>
-      <li><a href="#h_01J9PECN4VFW2PPPVM9R3MP6QF">Destiny 2: Revenant</a></li>
+      <li><a href="#h_01JB0C2391GAWSSD6WYSX5KPF5">Once Human </a></li>
     </ul>
   </li>
   <li>
     <a href="#h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</a>
     <ul>
+      <li><a href="#01JB0C3D9MDRK8J3GE4DH5XCZX"> MARVEL SNAP</a></li>
+      <li><a href="#01JB0C3D9MC19G69SK1Y3H7BE7">Destiny 2: Revenant </a></li>
       <li><a href="#h_01J9PEC7HGPYRNC51ADBAJVQ3H">Diablo IV</a> </li>
       <li><a href="#h_01J8QGKSGR918324MCDFPYTY92">THRONE AND LIBERTY</a></li>
       <li>
         <a href="#h_01J8JZMSEBSHRFKVF3XKMQ6213">Street Fighter 6 </a
         ><a href="#h_01J834W9W4XK6ACDM184VA93XR"> </a>
       </li>
-      <li><a href="#h_01J7YCN0PYT9VD8PFX7FDQT6YD">FINAL FANTASY XVI</a></li>
     </ul>
   </li>
   <li><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </a></li>
@@ -76,7 +76,23 @@
   </li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</h1>
-<h2 id="h_01J9YEMCK0K5QJRVVWGSTW2707">
+<h2 id="h_01JB0C2391GAWSSD6WYSX5KPF5">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/27314651396119"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Once Human - Winter Survival Quest</a
+  >
+</h2>
+<p>
+  The <strong>Winter Survival Quest</strong> can be accepted on Discord from
+  <strong>October 25, 2024</strong> until
+  <strong>October 31, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
+  <strong>December 31, 2024 (0:00 UTC)</strong>. Quest requirements must be
+  completed during this period to receive the reward.
+</p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
+<h2 id="01JB0C3D9MDRK8J3GE4DH5XCZX">
   <a
     href="https://support.discord.com/hc/articles/26925918517911"
     target="_blank"
@@ -91,7 +107,7 @@
   <strong>October 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
-<h2 id="h_01J9PECN4VFW2PPPVM9R3MP6QF">
+<h2 id="01JB0C3D9MC19G69SK1Y3H7BE7">
   <a
     href="https://support.discord.com/hc/articles/26789789123223"
     target="_blank"
@@ -106,7 +122,6 @@
   >. Reward gift codes expire <strong>December 31, 2024 (UTC -8)</strong>. Quest
   requirements must be completed during this period to receive the reward.
 </p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
 <h2 id="h_01J9PEC7HGPYRNC51ADBAJVQ3H">
   <a
     href="https://support.discord.com/hc/articles/26847740874647"
@@ -157,21 +172,6 @@
   <strong>September 25, 2024</strong> until
   <strong>September 29, 2024 (11:59PM UTC).</strong> The avatar decoration needs
   to be redeemed by <strong>October 29, 2024</strong>. Quest requirements must
-  be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J7YCN0PYT9VD8PFX7FDQT6YD">
-  <a
-    href="https://support.discord.com/hc/articles/26403986682647"
-    target="_blank"
-    rel="noopener noreferrer"
-    >FINAL FANTASY XVI - FFXVI Quest</a
-  >
-</h2>
-<p>
-   The FFXVI Quest can be accepted on Discord from
-  <strong>September 17, 202</strong>4 until
-  <strong>September 23, 2024 (11:59PM UTC)</strong>. The avatar decoration needs
-  to be redeemed by <strong>October 23, 2024</strong>. Quest requirements must
   be completed during this period to receive the reward.
 </p>
 <h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
