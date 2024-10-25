@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_weighted_sample_activity_shelf",
+    "label": "Weighted Sample Activity Shelf",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Perform weighted sampling of top N activities in shelf and disable frecency sorting in shelf"
+    ],
+    "hash": 2793808763,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
