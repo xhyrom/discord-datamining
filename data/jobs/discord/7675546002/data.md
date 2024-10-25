@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7675546002](https://discord.com/jobs/7675546002)
 
-**Updated At:** Tue, 22 Oct 2024 16:36:37 GMT
+**Updated At:** Fri, 25 Oct 2024 05:08:04 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As the Group Product Manager on Machine Learning, you'll drive the vision, strategy, and roadmap for Discord's Machine Learning Platform and its Applications — particularly in areas such as Personalization, Notifications, Advertising, and Safety.
