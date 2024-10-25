@@ -8232,6 +8232,12 @@
             "DSA_RSL_REPORT_INELIGIBLE"),
           (rz[(rz.DSA_APPEAL_REQUEST_DEFLECTION = 522001)] =
             "DSA_APPEAL_REQUEST_DEFLECTION"),
+          (rz[(rz.ACCOUNT_REVERT_INVALID_TOKEN = 62e4)] =
+            "ACCOUNT_REVERT_INVALID_TOKEN"),
+          (rz[(rz.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN = 620001)] =
+            "ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN"),
+          (rz[(rz.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND = 620002)] =
+            "ACCOUNT_REVERT_ACCOUNT_NOT_FOUND"),
           ((rQ = el || (el = {})).GUILD_CREATE_INVITE_SUGGESTION =
             "Guild Create Invite Suggestion"),
           (rQ.ADD_FRIENDS_TO_DM = "Add Friends to DM"),
@@ -9245,6 +9251,8 @@
             "SHOW_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION"),
           (na.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION =
             "HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION"),
+          (na.BOTTOM_CHANNEL_SCREEN_DRAG_START =
+            "BOTTOM_CHANNEL_SCREEN_DRAG_START"),
           ((n_ = eU || (eU = {})).TOGGLE_REACTION_POPOUT =
             "TOGGLE_REACTION_POPOUT"),
           (n_.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
@@ -12510,7 +12518,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9e52169933df72984b58354b872c1ae3fd43a1e9",
+            release: "discord_web-36872679de2a9e11cc7bc69924d1a64fdb46f66f",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12579,8 +12587,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "339087"), "339087"));
-          o.YA("builtAt", String("1729869879736"));
+            o.YA("buildNumber", ((e = "339221"), "339221"));
+          o.YA("builtAt", String("1729882429936"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -53608,4 +53616,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.75da00f9f86483c6726d.js.map
+//# sourceMappingURL=sentry.05d17ce4b4160ad7a17b.js.map
