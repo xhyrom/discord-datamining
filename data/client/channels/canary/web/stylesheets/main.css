@@ -15207,53 +15207,32 @@ span.clanTag_a31c43 {
   color: var(--content-inventory-overlay-text-secondary);
   flex: 1;
 }
-.timestamp_c5d1c1 {
-  font-family: var(--font-code);
-}
-.timestamp_c5d1c1.bold_c5d1c1 {
-  font-weight: 700;
-}
-.inlineTimestamp_c5d1c1 {
-  display: inline;
-}
-.badgeContainer_d60c6d {
+.heroContainer_e12502 {
+  height: 112px;
+  position: relative;
   display: flex;
-  gap: 4px;
   align-items: center;
-  overflow: hidden;
-  flex-shrink: 0;
+  border-radius: var(--radius-md);
 }
-.badgeContainer_d60c6d svg {
-  flex-shrink: 0;
-}
-.badgeContainer_d60c6d div {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.badgeLabel_d60c6d {
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-:where(.badgesContainer_d60c6d) {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-:where(.badgesContainer_d60c6d):empty {
-  display: none;
-}
-.badgesContainerCard_d60c6d > :nth-child(n + 3) {
-  display: none;
-}
-.badgesContainerCard_d60c6d > :nth-child(2) {
-  flex-shrink: 1;
-}
-.badgesContainerPopout_d60c6d,
-.badgesContainerGameProfile_d60c6d {
-  flex-wrap: wrap;
-  row-gap: 4px;
+.heroSplash_e12502 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    #000 0,
+    #000 40px,
+    rgba(0, 0, 0, 0) 176px
+  );
+  mask-image: linear-gradient(
+    270deg,
+    #000 0,
+    #000 40px,
+    rgba(0, 0, 0, 0) 176px
+  );
 }
 .container_d270e1 {
   border-radius: 8px;
@@ -15263,6 +15242,7 @@ span.clanTag_a31c43 {
 .userContainer_d270e1 {
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 .userName_d270e1 {
   color: var(--content-inventory-overlay-text-primary);
@@ -15274,9 +15254,84 @@ span.clanTag_a31c43 {
 .userSubtitle_d270e1 {
   color: var(--content-inventory-overlay-text-secondary);
 }
+.rankContainer_e6eff2 {
+  background-color: var(--bg-surface-overlay);
+  border: 1.5px solid transparent;
+  margin: 0 -2px;
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  border-radius: 4px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  --custom-gold-gradient: linear-gradient(
+    196.5deg,
+    #cc7c00 10.95%,
+    #ffaf14 51.65%,
+    #cc7c00 86.47%
+  );
+  --custom-silver-gradient: linear-gradient(
+    180deg,
+    #919191 0%,
+    #c4c4c4 47%,
+    #919191 100%
+  );
+  --custom-bronze-gradient: linear-gradient(
+    180deg,
+    #fe9360 30%,
+    #f36556 49.76%,
+    #ffa765 66.67%
+  );
+  --custom-default-gradient: linear-gradient(#bca166, #bca166);
+}
+.goldBorder_e6eff2 {
+  background-image: linear-gradient(
+      var(--bg-surface-overlay),
+      var(--bg-surface-overlay)
+    ),
+    var(--custom-gold-gradient);
+}
+.silverBorder_e6eff2 {
+  background-image: linear-gradient(
+      var(--bg-surface-overlay),
+      var(--bg-surface-overlay)
+    ),
+    var(--custom-silver-gradient);
+}
+.bronzeBorder_e6eff2 {
+  background-image: linear-gradient(
+      var(--bg-surface-overlay),
+      var(--bg-surface-overlay)
+    ),
+    var(--custom-bronze-gradient);
+}
+.defaultBorder_e6eff2 {
+  background-image: linear-gradient(
+      var(--bg-surface-overlay),
+      var(--bg-surface-overlay)
+    ),
+    var(--custom-default-gradient);
+}
+.rank_e6eff2 {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.goldText_e6eff2 {
+  background-image: var(--custom-gold-gradient);
+}
+.silverText_e6eff2 {
+  background-image: var(--custom-silver-gradient);
+}
+.bronzeText_e6eff2 {
+  background-image: var(--custom-bronze-gradient);
+}
+.defaultText_e6eff2 {
+  background-image: var(--custom-default-gradient);
+}
 .container_cf8a7d {
   border-radius: 8px;
-  background-color: #091f0f;
 }
 .rows_cf8a7d {
   display: flex;
@@ -15296,8 +15351,8 @@ span.clanTag_a31c43 {
   color: var(--content-inventory-overlay-text-secondary);
 }
 .headerRank_cf8a7d {
-  width: 8px;
-  text-align: right;
+  width: 16px;
+  text-align: center;
 }
 .headerPlayer_cf8a7d {
   flex: 1;
@@ -15323,9 +15378,9 @@ span.clanTag_a31c43 {
   background-color: var(--header-primary);
 }
 .userRank_cf8a7d {
+  width: 16px;
+  text-align: center;
   color: var(--text-muted);
-  width: 8px;
-  text-align: right;
 }
 .userPlayer_cf8a7d {
   flex: 1;
@@ -15356,40 +15411,12 @@ span.clanTag_a31c43 {
   margin-left: 4px;
   height: 16px;
 }
-.emptyContainer_cf8a7d {
-  height: 112px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(180deg, #1f1a36 0%, #4e334a 100%);
-  border-radius: var(--radius-md);
-}
 .emptyTitleContainer_cf8a7d {
   margin-left: 16px;
   max-width: 148px;
 }
 .emptyTitle_cf8a7d {
   color: var(--content-inventory-overlay-text-primary);
-}
-.emptySplash_cf8a7d {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top-right-radius: var(--radius-md);
-  border-bottom-right-radius: var(--radius-md);
-  -webkit-mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
-  );
-  mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
-  );
 }
 .emptyCrownIcon_cf8a7d {
   position: relative;
@@ -17200,6 +17227,54 @@ h3.improved_f017d0:after {
   display: flex;
   cursor: pointer;
   margin-right: 4px;
+}
+.timestamp_c5d1c1 {
+  font-family: var(--font-code);
+}
+.timestamp_c5d1c1.bold_c5d1c1 {
+  font-weight: 700;
+}
+.inlineTimestamp_c5d1c1 {
+  display: inline;
+}
+.badgeContainer_d60c6d {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.badgeContainer_d60c6d svg {
+  flex-shrink: 0;
+}
+.badgeContainer_d60c6d div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.badgeLabel_d60c6d {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:where(.badgesContainer_d60c6d) {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+:where(.badgesContainer_d60c6d):empty {
+  display: none;
+}
+.badgesContainerCard_d60c6d > :nth-child(n + 3) {
+  display: none;
+}
+.badgesContainerCard_d60c6d > :nth-child(2) {
+  flex-shrink: 1;
+}
+.badgesContainerPopout_d60c6d,
+.badgesContainerGameProfile_d60c6d {
+  flex-wrap: wrap;
+  row-gap: 4px;
 }
 .nameTag_cd0810 {
   display: flex;
@@ -48560,4 +48635,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.91591d7f228fc7ea0e72.css.map*/
+/*# sourceMappingURL=12633.3861d904d3b497c783cc.css.map*/
