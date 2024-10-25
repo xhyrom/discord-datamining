@@ -19301,6 +19301,7 @@
   "ICYMI_ACTIVE_CONVO": "\"Active Conversation\"",
   "ICYMI_RECENT_CONVO": "\"Recent Conversation\"",
   "ICYMI_LOADING_COMMENTS": "\"Loading comments...\"",
+  "ICYMI_REPLIED_TO": "\"Replied to:\"",
   "ICYMI_EVERYONE_WAS_MENTIONED": "\"Everyone was mentioned.\"",
   "ICYMI_CHANNEL_SETTINGS": "\"Channel Preferences\"",
   "ICYMI_CHANNEL_SETTINGS_DESCRIPTION": "\"How much content would you like to see from !!{channelName}!!?\"",
