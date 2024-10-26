@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-10_rapidash_discovery_sign_up",
+    "label": "Rapidash Discovery Early Sign Up",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable"
+    ],
+    "hash": 2681995341,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1282,6 +1282,42 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "hash": 1412337990,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "799349358776549378",
+          "763838479293349899"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2022-08_back_to_school",
       "label": "Back to School Event",
@@ -5179,42 +5215,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "hash": 1412337990,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "799349358776549378",
-          "763838479293349899"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2024-01_inappropriate_conversation_warning_staff_bypass",
       "label": "Inappropriate Conversation Warning Staff Bypass",
@@ -6242,6 +6242,43 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-04_gdm_presence",
+      "label": "Group DM Presence",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Status Indicator Only",
+        "Treatment 2: Typing Indicator Only",
+        "Treatment 3: Status Indicator + Typing Indicator",
+        "Treatment 4: Facepile Only",
+        "Treatment 5: Facepile + Status Indicator",
+        "Treatment 6: Facepile + Typing Indicator",
+        "Treatment 7: Facepile + Typing Indicator + Status Indicator"
+      ],
+      "hash": 2244369299,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "isFacepileEnabled",
+        "isStatusIndicatorEnabled",
+        "isTypingIndicatorEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-04_genshin_admin_signup",
       "label": "Genshin Admin Signup",
       "description": [
@@ -6282,103 +6319,6 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-05_desktop_user_settings_search",
-      "label": "Desktop User Settings Search",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable User Settings Search on Desktop",
-        "Treatment 2: Enable User Settings Search on Desktop with Search Count"
-      ],
-      "hash": 1800298008,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1990672009,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "908114392263049277"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-04_gdm_presence",
-      "label": "Group DM Presence",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Status Indicator Only",
-        "Treatment 2: Typing Indicator Only",
-        "Treatment 3: Status Indicator + Typing Indicator",
-        "Treatment 4: Facepile Only",
-        "Treatment 5: Facepile + Status Indicator",
-        "Treatment 6: Facepile + Typing Indicator",
-        "Treatment 7: Facepile + Typing Indicator + Status Indicator"
-      ],
-      "hash": 2244369299,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "isFacepileEnabled",
-        "isStatusIndicatorEnabled",
-        "isTypingIndicatorEnabled"
       ]
     }
   },
@@ -6704,6 +6644,31 @@
         -1,
         0,
         1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-05_desktop_user_settings_search",
+      "label": "Desktop User Settings Search",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable User Settings Search on Desktop",
+        "Treatment 2: Enable User Settings Search on Desktop with Search Count"
+      ],
+      "hash": 1800298008,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -7042,37 +7007,6 @@
       "config_keys": [
         "enabled"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3510816342,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
     }
   },
   {
@@ -9074,6 +9008,37 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 3510816342,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 3674963204,
       "holdout": {
         "name": null,
@@ -10990,6 +10955,41 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "hash": 1990672009,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "908114392263049277"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2024-10_user_profile_panel_recent_activity_status",
       "label": "User Profile Panel Recent Activity Status",
@@ -12198,6 +12198,29 @@
       "config_keys": [
         "enabled",
         "treatment"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2024-10_rapidash_discovery_sign_up",
+      "label": "Rapidash Discovery Early Sign Up",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable"
+      ],
+      "hash": 2681995341,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
       ]
     }
   },
