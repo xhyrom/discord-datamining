@@ -15610,6 +15610,8 @@
   "TRIAL_FOR_ALL_ANNOUNCEMENT_MODAL_HEADER_OPT_2": "\"The Power of Nitro is Yours\"",
   "TRIAL_FOR_ALL_BANNER_SUBHEADER": "\"We smashed that Nitro button so you can enjoy 2 weeks on us.\"",
   "TRIAL_FOR_ALL_BANNER_SUBHEADER_OPT_2": "\"All the perks of Nitro, on us for a limited time.\"",
+  "TRIAL_FOR_ALL_OFFER_TOOLTIP_NO_COUNTDOWN": "\"All the perks of Nitro, on us for a limited time\"",
+  "TRIAL_FOR_ALL_OFFER_BADGE_TOOLTIP_NO_COUNTDOWN": "\"Limited-time offer available\"",
   "EMOJI_CATEGORY_TOP_GUILD_EMOJI": "\"Top Emoji in !!{guildName}!!\"",
   "TOP_GUILD_EMOJI_BADGE": "\"Popular\"",
   "NEWLY_ADDED_GUILD_EMOJI_BADGE": "\"Newly Added\"",
