@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7468938002](https://discord.com/jobs/7468938002)
 
-**Updated At:** Fri, 25 Oct 2024 05:08:04 GMT
+**Updated At:** Mon, 28 Oct 2024 21:27:04 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.Discord is looking for a Senior Staff Engineer to join our Platform Ecosystem team to help lead the next era of Discord’s development platform. You will oversee the technical roadmap for Apps and Activities, working across APIs, SDKs, and Developer tools. You will work with teams across the organization including Engineering, Product, Data Science, Design, Infrastructure, and Customer Success to ensure that the technical strategy meets our goals.
-Come help us build the app platform that inspires the next generation of developers at Discord.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.Discord is looking for a Senior Staff Engineer to join our Platform Ecosystem team to help lead the next era of Discord’s development platform. You will oversee the technical roadmap for Apps and Activities, working across APIs, SDKs, and Developer tools. You will work with teams across the organization including our Game Studios, Engineering, Product, Data Science, Design, Infrastructure, and Customer Success to ensure that the technical strategy meets our goals.
+Come help us build the game platform that inspires the next generation of developers at Discord.
 &amp;nbsp;
 What You'll Be Doing
 
@@ -37,6 +37,15 @@ A strong sense of development ergonomics, and take pride in understanding your e
 Comfort working with ambiguity and get excited about working collaboratively to better define complex problems, figure out solutions, and then execute on them.
 The ability how to strike a balance between speed and quality of features to create durable technology. You thrive on building scalable systems that are robust, failure-resistant, and easy to maintain.
 A practice of keeping up with industry trends and assessing new technologies that can help us better solve problems.
+
+Bonus Points
+
+Experience building or maintaining developer-facing products, SDKs, libraries or services
+Practical experience building games, or tools to support game developers
+Experience with at least one popular gaming platform like Unity, Unreal Engine, Godot
+Strong open-source leadership or contributions
+Experience making hard tradeoffs between important goals to get the right things built quickly
+
 
 #LI-RemoteThe US base salary range for this full-time position is $263,000 to $289,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
