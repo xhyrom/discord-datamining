@@ -2,7 +2,7 @@
 
 ## Director of Engineering
 
-**Location:** San Francisco, CA (Hybrid)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7675596002 <br/>
 **Internal Job Id:** 6019624002 <br/>
