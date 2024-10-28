@@ -47,12 +47,12 @@
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [
-      "01J7CJHC83ZZVJW6EFM1D4EAM3",
-      "01J5RY0BJBGZDK5THNS4XST4GD",
-      "01J86RGKZEAN595754121BHVQQ",
       "01J3NCWMGR03XN71256WH95176",
       "01J3NCXR6VZF8KT7TTVTZQFDX6",
-      "01J6YVJF00HERTW4P1D3D1AAPP"
+      "01J5RY0BJBGZDK5THNS4XST4GD",
+      "01J6YVJF00HERTW4P1D3D1AAPP",
+      "01J7CJHC83ZZVJW6EFM1D4EAM3",
+      "01J86RGKZEAN595754121BHVQQ"
     ],
     "label_names": [
       "answer-bot",
@@ -850,8 +850,8 @@
     "user_segment_id": null,
     "permission_group_id": 6449276657303,
     "content_tag_ids": [
-      "01J7CJH3ZN65D8P08TTCM7C0W3",
-      "01H3FWMK9ZJ8X5TEHZ2GS03WC7"
+      "01H3FWMK9ZJ8X5TEHZ2GS03WC7",
+      "01J7CJH3ZN65D8P08TTCM7C0W3"
     ],
     "label_names": [
       "answer-bot",
