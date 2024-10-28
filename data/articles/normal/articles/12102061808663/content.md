@@ -1,3 +1,37 @@
+<div class="exp-box">
+  <strong>NOTE</strong>: <strong>Reaction notifications</strong> are currently
+  an experimental feature limited to a select number of desktop and mobile
+  users.<br />You will receive a notification for any reaction to messages
+  you've posted. To customize or disable your reaction notifications, go to
+  <strong>Settings &gt; Notifications</strong>. There, you can choose your
+  preferred option for <strong>Reaction Notifications</strong>.
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/27382191243671"
+      alt="image5.jpg"
+      width="217"
+      height="449"
+    />
+      <img
+      src="https://support.discord.com/hc/article_attachments/27382191248279"
+      alt="image6.gif"
+      width="216"
+      height="449"
+    />
+  </p>
+  <h4 id="h_01JB9W13BWTE81S41DYYEDRH1V" class="wysiwyg-text-align-center">
+    Mobile Experience: Reaction Notifications and Customization Options
+  </h4>
+  <p class="wysiwyg-text-align-left">
+    Find more information about notification settings
+    <a
+      href="https://support.discord.com/hc/articles/215253258-Notifications-Settings-101"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >.
+  </p>
+</div>
 <p>
   Sometimes an emoji is worth a thousand words. Instead of typing out your
   response to the age-old <em>coffee vs. tea</em> debate, you can
@@ -10,60 +44,92 @@
     alt="updated-reaction-example.png"
   />
 </p>
-<p id="docs-internal-guid-fa1578d1-7fff-8361-64aa-453088f33578">
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article cover:</strong></span
-  >
-</p>
-<ul>
-  <li><a href="#h_01HDM7H8DH95NH8M0XSAFA9MW6">What are Reactions?</a></li>
-  <li>
-    <a href="#h_01HDM7H8DHX50X4ACVEM9482H9">What are Super Reactions?</a>
-    <ul>
-      <li>
-        <a href="#h_01HDM7H8DH3Q5PT4W9MST5H4J8"
-          >How many reactions does my Nitro/Nitro Basic/Nitro Classic
-          subscription allow?</a
-        >
-      </li>
-      <li>
-        <a href="#h_01HDM7H8DH2NXEXDME9VS8N87X"
-          >How do I disable Super Reactions animations?</a
-        >
-      </li>
-      <li>
-        <a href="#h_01HDM7H8DHVMS7CAW4DVTD9N67"
-          >Removing Super Reactions as Server Admins and Moderators</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01HDM7H8DH2N1HH26W7CPNXJW0"
-      >Can I see who reacted with what emojis to a message?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01HDM7H8DHFCMGADYRHT7GD5TA"
-      >Can I remove Reaction/Super Reactions?</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01HDM7H8DH95NH8M0XSAFA9MW6"
+        ><strong>What are Reactions?</strong></a
+      >
+      <ul>
+        <li>
+          <a href="#h_01HDM7H8DHMJ8J1WMXWQ8DQ7X1"
+            ><strong>How to add Reactions</strong></a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01HDM7H8DHX50X4ACVEM9482H9"
+        ><strong>What are Super Reactions?</strong></a
+      >
+      <ul>
+        <li>
+          <a href="#h_01HDM7H8DHMJ8J1WMXWQ8DQ7X1"
+            ><strong>How to add Super Reactions</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01HDM7H8DH3Q5PT4W9MST5H4J8"
+            ><strong
+              >How many reactions does my Nitro/Nitro Basic/Nitro Classic
+              subscription allow?</strong
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#h_01HDM7H8DH2NXEXDME9VS8N87X"
+            ><strong>How do I disable Super Reactions animations?</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01HDM7H8DHVMS7CAW4DVTD9N67"
+            ><strong
+              >Removing Super Reactions as Server Admins and Moderators</strong
+            ></a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01HDM7H8DH2N1HH26W7CPNXJW0"
+        ><strong
+          >Can I see who reacted with what emojis to a message?</strong
+        ></a
+      >
+    </li>
+    <li>
+      <a href="#h_01HDM7H8DHFCMGADYRHT7GD5TA"
+        ><strong>Can I remove Reaction/Super Reactions?</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01JB9WHVA87TY9P7KN9326YEPG"
+        ><strong>Frequently Asked Questions</strong></a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HDM7H8DH95NH8M0XSAFA9MW6">What are Reactions?</h1>
 <p>
   <strong>Reactions </strong>on Discord allow you express your reaction to a
-  message with an emoji. 
+  message with an emoji.
 </p>
-<h3 id="h_01HDM7H8DHW9VVGEC07VRSY8D5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you want to learn more about emojis on Discord, check out this </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360041139231"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
+<div class="book-box">
+  <p id="h_01HDM7H8DHW9VVGEC07VRSY8D5">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      >If you want to learn more about emojis on Discord, check out this </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/360041139231"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  </p>
+</div>
 <h2 id="h_01HDM7H8DHMJ8J1WMXWQ8DQ7X1">How to add Reactions</h2>
 <p>
   Just press the little <strong>Add Reaction plus smiley-face icon</strong> next
@@ -119,19 +185,21 @@
   />
 </p>
 <h1 id="h_01HDM7H8DHX50X4ACVEM9482H9">What are Super Reactions?</h1>
-<h3 id="h_01HDM7H8DHTYCCQQR91C8ZM574">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Unlimited Super Reactions are available on both desktop and mobile. Super
-    Reactions are a </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/115000435108"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    locked feature. </span
-  >
-</h3>
+<div class="info-box">
+  <p id="h_01HDM7H8DHTYCCQQR91C8ZM574">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      >Unlimited Super Reactions are available on both desktop and mobile. Super
+      Reactions are a </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/115000435108"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Nitro</a
+    ><span style="color: #434343" data-darkreader-inline-color="">
+      locked feature. </span
+    >
+  </p>
+</div>
 <p class="wysiwyg-text-align-center">
   <iframe
     src="//www.youtube-nocookie.com/embed/IIRLMV9SZds"
@@ -167,12 +235,14 @@
 <h2 id="h_01HDM7H8DH3Q5PT4W9MST5H4J8">
   How many reactions does my Nitro/Nitro Basic/Nitro Classic subscription allow?
 </h2>
-<h3 id="h_01HDM7H8DHXXSMJV9QDRFWV3YS">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >All Nitro, Nitro Basic, and Nitro Classic users have an unlimited amount of
-    Super Reactions.</span
-  >
-</h3>
+<div class="info-box">
+  <p id="h_01HDM7H8DHXXSMJV9QDRFWV3YS">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      >All Nitro, Nitro Basic, and Nitro Classic users have an unlimited amount
+      of Super Reactions.</span
+    >
+  </p>
+</div>
 <p>
   Everyone can see Super Reactions! To use Super Reactions, you must be a
   <a
@@ -210,24 +280,26 @@
   Super Reactions from a message, you can do so on the
   <strong>desktop or browser app</strong>.
 </p>
-<h3 id="h_01HDM7H8DHKGTATGZHBF9QGP12">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >In order to remove Reactions and Super Reactions as a server admin or
-    moderator, you must have the </span
-  ><strong
+<div class="info-box">
+  <p id="h_01HDM7H8DHKGTATGZHBF9QGP12">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      >In order to remove Reactions and Super Reactions as a server admin or
+      moderator, you must have the </span
+    ><strong
+      ><span style="color: #434343" data-darkreader-inline-color=""
+        >Manage Messages
+      </span></strong
     ><span style="color: #434343" data-darkreader-inline-color=""
-      >Manage Messages
-    </span></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >permission.</span
-  >
-</h3>
-<h3 id="h_01HDM7H8DH9RE5H691ZTAKBQ6Y">
+      >permission.</span
+    >
+  </p>
+</div>
+<p id="h_01HDM7H8DH9RE5H691ZTAKBQ6Y">
   <span style="color: #434343" data-darkreader-inline-color=""
     >At this time, you cannot remove Super Reactions as an admin/mod on the
     mobile app.</span
   >
-</h3>
+</p>
 <p>1. Go to the message with the Super Reaction you would like to remove.</p>
 <p>
   2. You can right-click on the message or press the ellipses icon from the
@@ -324,4 +396,118 @@
     height="386"
   />
 </p>
-<p> </p>
+<h1 id="h_01JB9WHVA87TY9P7KN9326YEPG">Frequently Asked Questions</h1>
+<p>
+  <strong>Q: Can I use Super Reactions without a Nitro subscription?</strong>
+</p>
+<p>
+  A: No, Super Reactions are a Nitro-exclusive feature. You need a Nitro, Nitro
+  Basic, or Nitro Classic subscription to use Super Reactions.
+</p>
+<p>
+  <strong
+    >Q: How many Super Reactions can I use with my Nitro subscription?  </strong
+  >
+</p>
+<p>
+  A: All Nitro, Nitro Basic, and Nitro Classic subscribers have unlimited Super
+  Reactions.
+</p>
+<p><strong>Q: Can non-Nitro users see Super Reactions?</strong></p>
+<p>
+  A: Yes, everyone can see Super Reactions, but only Nitro subscribers can use
+  them.
+</p>
+<p><strong>Q: How do I turn off Super Reaction animations?</strong></p>
+<p>
+  A: You can disable Super Reaction animations by turning off the
+  <strong>Play Animated Emoji</strong> setting in
+  <strong>User Settings &gt; Accessibility</strong>.    
+</p>
+<p>
+  <strong
+    >Q: Can I remove someone else's Super Reaction from a message in my
+    server?  </strong
+  >
+</p>
+<p>
+  A: Server admins and moderators with the
+  <strong>Manage Messages</strong> permission can remove Super Reactions from
+  messages on desktop or browser apps, but not on mobile.    
+</p>
+<p><strong>Q: How do I view who reacted to a message?</strong></p>
+<p>
+  A: Right-click on a message or click the ellipsis icon, then select
+  <strong>View Reactions</strong> to see who reacted and with which emojis.
+</p>
+<p><strong>Q: Can I remove my own Reaction or Super Reaction?</strong></p>
+<p>
+  A: Yes, you can remove your own Reaction by selecting the emoji you used to
+  react, or by using the <strong>View Reactions</strong> menu and pressing the
+  <strong>X</strong> next to your username.
+</p>
+<p><strong>Q: What are reaction notifications?</strong></p>
+<p>
+  A: Reaction notifications are alerts you receive when someone reacts to your
+  messages with emojis.
+</p>
+<p><strong>Q: How can I control reaction notifications?</strong></p>
+<p>
+  A: You can manage reaction notifications in <strong>Settings</strong>
+  <strong>&gt;</strong> <strong>Notifications</strong>
+  <strong>&gt; Reaction Notifications</strong>. You have three options:
+</p>
+<ul>
+  <li>
+     <strong>All Messages</strong>: Receive notifications for all reactions
+  </li>
+  <li>
+    <strong>Only Direct Messages</strong>: Only receive notifications for
+    reactions in direct messages
+  </li>
+  <li><strong>Never</strong>: Don't receive any reaction notifications</li>
+</ul>
+<p>
+  <strong>Q: Do reaction notifications respect my channel settings?</strong>
+</p>
+<p>
+  A: Yes, reaction notifications follow your channel notification settings. If
+  you have muted a channel or server, you won't receive reaction notifications
+  for messages in those spaces.
+</p>
+<p>
+  <strong
+    >Q: Why don't I receive a reaction notification for every message?</strong
+  >
+</p>
+<p>A: There's a general rate limit for push notifications.</p>
+<p><strong>Q: Where will I see reaction notifications?</strong></p>
+<p>A: If enabled, reaction notifications can appear as:</p>
+<ul>
+  <li>Mobile push notifications</li>
+  <li>Mobile in-app notifications</li>
+  <li>Desktop notifications</li>
+</ul>
+<p>
+  <strong
+    >Q: What if I'm still receiving too many reaction notifications?</strong
+  >
+</p>
+<p>A: If you're still overwhelmed by reaction notifications, you can:</p>
+<ul>
+  <li>
+    Adjust your Reaction Notifications setting to
+    <strong>Only Direct Messages</strong> or "<strong>Never</strong>. 
+  </li>
+  <li>
+    Mute specific channels or servers where you don't want to receive
+    notifications
+  </li>
+  <li>
+    Contact
+    <a href="http://dis.gd/support" target="_blank" rel="noopener noreferrer"
+      >our support team</a
+    >
+    for further assistance
+  </li>
+</ul>

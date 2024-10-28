@@ -1,3 +1,18 @@
+<div class="exp-box">
+  <p class="wysiwyg-text-align-left">
+    <span style="font-weight: 400"
+      ><strong>NOTE</strong>: Reaction notifications are currently an
+      experimental feature limited to a select number of desktop and mobile
+      users. Learn more about reaction notifications
+      <a
+        href="https://support.discord.com/hc/articles/12102061808663"
+        target="_blank"
+        rel="noopener noreferrer"
+        >here</a
+      >.<br
+    /></span>
+  </p>
+</div>
 <p class="wysiwyg-text-align-left">
   <span style="font-weight: 400"
     >Do you want to be notified of the latest messages in your servers? Or are
@@ -6,38 +21,49 @@
   ><strong>Notification Settings</strong
   ><span style="font-weight: 400"> within a server! </span>
 </p>
-<p><strong>What this article covers:</strong></p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GBNZQEQAR6CB1AYJ89P10XZT" target="_self"
-      ><span style="font-weight: 400"
-        >Where is my Notification Settings on a server?</span
-      ></a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_3d6f7848-f80f-49d5-aaab-5dba23d2c3f8" target="_self"
-      ><span style="font-weight: 400">Server-Wide Mute</span></a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_02a56972-cd54-4811-8f94-85c556a44e2d" target="_self"
-      ><span style="font-weight: 400">Server Notification Settings</span></a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_570c11eb-b007-4e7c-8ae8-77515ea40c6a" target="_self"
-      ><span style="font-weight: 400">Channel Notification Settings</span></a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GBNZRGVFG37B8SE6KG3DYM6Q" target="_self"
-      ><span style="font-weight: 400"
-        >Highlight Notifications Settings
-      </span></a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="font-weight: 400" aria-level="1">
+      <strong
+        ><a href="#h_01GBNZQEQAR6CB1AYJ89P10XZT" target="_self"
+          >Where is my Notification Settings on a server?</a
+        ></strong
+      >
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <strong
+        ><a href="#h_3d6f7848-f80f-49d5-aaab-5dba23d2c3f8" target="_self"
+          >Server-Wide Mute</a
+        ></strong
+      >
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <strong
+        ><a href="#h_02a56972-cd54-4811-8f94-85c556a44e2d" target="_self"
+          >Server Notification Settings</a
+        ></strong
+      >
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <strong
+        ><a href="#h_570c11eb-b007-4e7c-8ae8-77515ea40c6a" target="_self"
+          >Channel Notification Settings</a
+        ></strong
+      >
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <strong
+        ><a href="#h_01GBNZRGVFG37B8SE6KG3DYM6Q" target="_self"
+          >Highlight Notifications Settings
+        </a></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GBNZQEQAR6CB1AYJ89P10XZT">
   <span style="font-weight: 400"
     >Where is my Notification Settings on a server?</span
@@ -246,9 +272,10 @@
 <p>
   Highlights bring you the best content from the servers you care about. If you
   are opted in to receive Highlights for a server, Discord will notify you via
-  email of the best messages, events, announcements, and more from that server.
-  <br />The Highlights setting is an additional suppression toggle you can turn
-  on or off in each server. It is located in your server notification settings.
+  email of the best messages, events, announcements, and more from that
+  server.<br />The Highlights setting is an additional suppression toggle you
+  can turn on or off in each server. It is located in your server notification
+  settings.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
