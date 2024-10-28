@@ -155,14 +155,14 @@
       <td style="width: 343.75px">
         <img
           class="shadow"
-          src="https://support.discord.com/hc/article_attachments/204624478"
+          src="https://support.discord.com/hc/en-us/article_attachments/204624478/NewNotifMen__1_.png"
           alt=""
         />
       </td>
       <td style="width: 347.5px">
         <img
           class="shadow"
-          src="https://support.discord.com/hc/article_attachments/204624388"
+          src="https://support.discord.com/hc/en-us/article_attachments/204624388/PerChanMention.png"
           alt=""
         />
       </td>
@@ -171,14 +171,14 @@
       <td style="width: 343.75px">
         <img
           class="shadow"
-          src="https://support.discord.com/hc/article_attachments/204624398"
+          src="https://support.discord.com/hc/en-us/article_attachments/204624398/NewNotifNoth.png"
           alt=""
         />
       </td>
       <td style="width: 347.5px">
         <img
           class="shadow"
-          src="https://support.discord.com/hc/article_attachments/204640857"
+          src="https://support.discord.com/hc/en-us/article_attachments/204640857/PerChanNoth.png"
           alt=""
         />
       </td>
