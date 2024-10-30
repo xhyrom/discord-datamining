@@ -6,21 +6,26 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Gift Collectibles in DM, with existing Nitro flow",
-      "Treatment 2: Gift Collectibles in DM, select Nitro SKU from category"
+      "Treatment 1: Gift Collectibles in DM, with existing Nitro flow, showing popular items",
+      "Treatment 2: Gift Collectibles in DM, with existing Nitro flow, showing recent items",
+      "Treatment 3: Gift Collectibles in DM, select Nitro SKU from category, showing popular items",
+      "Treatment 4: Gift Collectibles in DM, select Nitro SKU from category, showing recent items"
     ],
     "hash": 1469485145,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3,
+      4
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
       "enabled",
-      "showBothNitroSkusInCategorySelect"
+      "showBothNitroSkusInCategorySelect",
+      "giftRecommendationAlgorithm"
     ]
   }
 }

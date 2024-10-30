@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_tile_resolution_gating",
+    "label": "Tile Resolution Gating",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Tile size based wants enabled only for 1:1 videos"
+    ],
+    "hash": 3172358820,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabledSingle"
+    ]
+  }
+}
