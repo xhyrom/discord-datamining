@@ -2,7 +2,7 @@
 
 ## Senior Developer Advocate, Web Games
 
-**Location:** San Francisco, CA and Remote (U.S.)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7687712002 <br/>
 **Internal Job Id:** 6025041002 <br/>
