@@ -2,7 +2,7 @@
 
 ## Software Engineer - Activity Feed
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7673381002 <br/>
 **Internal Job Id:** 6018609002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7673381002](https://discord.com/jobs/7673381002)
 
-**Updated At:** Mon, 28 Oct 2024 23:23:04 GMT
+**Updated At:** Wed, 30 Oct 2024 00:29:26 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a Software Engineer to help us build the next generation of social gaming features on Discord. You will help expand existing capabilities and build new products that make Discord the best place to discover and talk about games with your friends. You’ll work cross-functionally with Product, Data Science, Design and Machine Learning to create a best-in-class Activity Feed experience. You will be reporting to the Senior Engineering Manager of Activity Feed.

@@ -2,7 +2,7 @@
 
 ## Software Engineer, Experimentation Platform
 
-**Location:** San Francisco, CA or US Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7593341002 <br/>
 **Internal Job Id:** 5984295002 <br/>

@@ -2,7 +2,7 @@
 
 ## Product Marketing Manager, Consumer
 
-**Location:** SF, California or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7650109002 <br/>
 **Internal Job Id:** 6009309002 <br/>
