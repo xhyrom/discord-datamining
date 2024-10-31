@@ -18159,7 +18159,7 @@
   "QUESTS_VIDEO_INSTRUCTIONS_TO_WIN_REWARD_GENERIC": "\"Watch the video to win {rewardNameWithArticle}!\"",
   "QUESTS_VIDEO_QUESTBAR_SUBTITLE": "\"Watch to earn rewards!\"",
   "QUESTS_VIDEO_END_PANEL_LEARN_TITLE": "\"Learn more\"",
-  "QUESTS_VIDEO_END_PANEL_LEARN_SUBTITLE": "\"Find out more about the video!\"",
+  "QUESTS_VIDEO_END_PANEL_LEARN_SUBTITLE": "\"Click here to check it out!\"",
   "QUESTS_VIDEO_END_PANEL_REWARD_TITLE": "\"More Rewards\"",
   "QUESTS_VIDEO_END_PANEL_REWARD_SUBTITLE": "\"Explore more rewards to earn!\"",
   "QUESTS_VIDEO_CONTROL_BTN_TOOLTIP_REWIND": "\"Rewind 10 seconds\"",
