@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_hypesquad_removal",
+    "label": "HypeSquad Removal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: HypeSquad Removed"
+    ],
+    "hash": 3719452344,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "hypeSquadRemoved"
+    ]
+  }
+}
