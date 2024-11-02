@@ -1,4 +1,6 @@
 {
+  "anchor": "anchor_af404b",
+  "anchorUnderlineOnHover": "anchorUnderlineOnHover_af404b",
   "spinner": "spinner_c5a065",
   "inner": "inner_f867f9",
   "wanderingCubes": "wanderingCubes_b6db20",
@@ -43,8 +45,6 @@
   "submitting": "submitting_dd4f85",
   "disabledButtonWrapper": "disabledButtonWrapper_bdf0de",
   "disabledButtonOverlay": "disabledButtonOverlay_dd4f85",
-  "anchor": "anchor_af404b",
-  "anchorUnderlineOnHover": "anchorUnderlineOnHover_af404b",
   "dots": "dots_ce0450",
   "themed": "themed_fc4f04",
   "svg": "svg_a26d7b",
