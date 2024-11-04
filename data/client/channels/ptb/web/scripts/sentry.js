@@ -7546,6 +7546,7 @@
               "/users/@me/update-league-of-legends-leaderboard",
             GUILD_LEADERBOARD_SETTINGS: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t, "/settings"),
+            USER_REDEEM_VIRTUAL_CURRENCY: "/users/@me/virtual-currency/redeem",
             IGNORE_USER: (e) => "/users/".concat(e, "/ignore"),
           }),
           a5 = Object.freeze({
@@ -11603,6 +11604,8 @@
           (n3[(n3.FREE_STAFF_PURCHASE = 9)] = "FREE_STAFF_PURCHASE"),
           (n3[(n3.QUEST_REWARD = 10)] = "QUEST_REWARD"),
           (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
+          (n3[(n3.VIRTUAL_CURRENCY_REDEMPTION = 12)] =
+            "VIRTUAL_CURRENCY_REDEMPTION"),
           ((n5 = tf || (tf = {})).ESRB = "1"),
           (n5.PEGI = "2"),
           ((n6 = tL || (tL = {}))[(n6.DURABLE_PRIMARY = 1)] =
@@ -12542,7 +12545,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-5ef17844bd16f502d15674fb848e0f46cc417405",
+            release: "discord_web-70d00f482a7015b81f772443db301aad76c5a498",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12611,8 +12614,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "341567"), "341567"));
-          o.YA("builtAt", String("1730762215285"));
+            o.YA("buildNumber", ((e = "341579"), "341579"));
+          o.YA("builtAt", String("1730763048652"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53069,4 +53072,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.55b6f9d875112f85cbc3.js.map
+//# sourceMappingURL=sentry.cb0e6074c3f4fd4cbd74.js.map
