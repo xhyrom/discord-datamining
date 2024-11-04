@@ -116,7 +116,13 @@
   for 2 years or more may be deleted<span style="font-weight: 400"
     >, so if you want to keep yours, you’ll need to reactivate your disabled
     account (but you can disable it again after this if you like). You can learn
-    more about inactive account deletions here.</span
+    more about inactive account deletions
+    <a
+      href="https://support.discord.com/hc/en-us/articles/5106714856215-Inactive-Account-Deletion"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >.</span
   >
 </div>
 <table>
