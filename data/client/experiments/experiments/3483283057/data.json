@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_overlay_v3",
+    "label": "Overlay V3 Shared Context OOP",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use Overlay V3"
+    ],
+    "hash": 3483283057,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "useOverlayV3"
+    ]
+  }
+}
