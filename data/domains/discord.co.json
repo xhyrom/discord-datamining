@@ -49,8 +49,8 @@
     "staging-streamkit",
     "jupyterhub-data-modeling-stg",
     "remote-auth-gateway",
-    "staging-gateway-us-east1-d",
     "staging-images-1",
+    "staging-gateway-us-east1-d",
     "europe1000",
     "datahub-prd"
   ]
