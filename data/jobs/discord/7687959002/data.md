@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7687959002](https://discord.com/jobs/7687959002)
 
-**Updated At:** Thu, 31 Oct 2024 21:07:37 GMT
+**Updated At:** Mon, 04 Nov 2024 19:15:55 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We recently made it easier than ever for developers to build and distribute the next great game on Discord. We’re looking for a Senior Developer Advocate to help support, educate, and inspire our growing game developer community. You will build meaningful relationships with our community by engaging with their questions and ideas, by speaking at events and workshops, and by communicating their feedback to the rest of the team. 
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We recently made it easier than ever for developers to build and distribute the next great game on Discord. We’re looking for a Staff Developer Advocate to help support, educate, and inspire our growing game developer community. You will build meaningful relationships with our community by engaging with their questions and ideas, by speaking at events and workshops, and by communicating their feedback to the rest of the team. 
 What You'll Be Doing
 
 Be the voice that drives us to constantly improve the experience for game developers on Discord's developer platform
@@ -42,7 +42,7 @@ Previous experience in a Developer Advocacy role
 Experience with Discord’s APIs
 Proficiency in Mandarin or Korean to facilitate collaboration with Discord partners in these regions.
 
-
+&amp;nbsp;
 #LI-RemoteThe US base salary range for this full-time position is $223,000 to $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
