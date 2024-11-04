@@ -4591,29 +4591,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-11_seasonal_gifting",
-      "label": "Seasonal Gifting 2023",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3338888279,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-11_seasonal_gifting_marketing_2023",
       "label": "Seasonal Gifting Marketing 2023",
       "description": [
@@ -12380,6 +12357,29 @@
         "Treatment 1: Enabled"
       ],
       "hash": 1993855251,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_seasonal_gifting",
+      "label": "Seasonal Gifting 2024",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 797131451,
       "buckets": [
         -1,
         0,
