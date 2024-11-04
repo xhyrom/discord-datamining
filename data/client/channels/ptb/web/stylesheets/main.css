@@ -5300,6 +5300,393 @@ div.modalHeader_c5e09c {
   height: var(--custom-emoji-size-jumbo-emoji);
   min-height: var(--custom-emoji-size-jumbo-emoji);
 }
+.flowerStarContainer_c91f7d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.flowerStar_c91f7d {
+  width: 100%;
+  height: 100%;
+}
+.childContainer_c91f7d {
+  position: absolute;
+  top: -0.05px;
+  left: 0.05px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.redesignIconChildContainer_c91f7d > svg {
+  width: 10px;
+  height: 10px;
+}
+.background_d082f7 {
+  width: 16px;
+  height: 16px;
+}
+.hubContainer_d082f7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.verified_d082f7 {
+  color: var(--green-360);
+}
+.staff_d082f7 {
+  color: var(--primary-500);
+}
+.staff_d082f7 .icon_d082f7 {
+  width: 60%;
+  height: 60%;
+}
+.partnered_d082f7 {
+  color: var(--brand-500);
+}
+.hub_d082f7 > .icon_d082f7 > circle {
+  fill: var(--background-accent);
+}
+.verifiedHub_d082f7 > .icon_d082f7 > circle {
+  fill: var(--green-360);
+}
+.icon_d082f7 {
+  width: 100%;
+  height: 100%;
+  color: var(--white-500);
+}
+.icon_a64689 {
+  position: relative;
+  background-clip: padding-box;
+  background-color: none;
+  background-position: center center;
+  background-size: 100%100%;
+}
+.icon_a64689 .guildIconBadge_a64689 {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 14px;
+  height: 14px;
+}
+.iconInactive_a64689 {
+  border-radius: 50%;
+}
+.iconActiveMini_a64689 {
+  border-radius: 6px;
+}
+.iconActiveSmaller_a64689 {
+  border-radius: 7px;
+}
+.iconActiveSmall_a64689 {
+  border-radius: 9px;
+}
+.iconActiveMedium_a64689 {
+  border-radius: 12px;
+}
+.iconActiveLarge_a64689 {
+  border-radius: 15px;
+}
+.iconActiveLarger_a64689 {
+  border-radius: 16px;
+}
+.iconActiveXLarge_a64689 {
+  border-radius: 30px;
+}
+.iconSizeSmol_a64689 {
+  width: 16px;
+  height: 16px;
+}
+.iconSizeMini_a64689 {
+  width: 20px;
+  height: 20px;
+}
+.iconSizeSmaller_a64689 {
+  width: 24px;
+  height: 24px;
+}
+.iconSizeSmall_a64689 {
+  width: 30px;
+  height: 30px;
+}
+.iconSizeMedium_a64689 {
+  width: 40px;
+  height: 40px;
+}
+.iconSizeLarge_a64689 {
+  width: 50px;
+  height: 50px;
+}
+.iconSizeLarger_a64689 {
+  width: 64px;
+  height: 64px;
+}
+.iconSizeXLarge_a64689 {
+  width: 100px;
+  height: 100px;
+}
+.acronym_a64689 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.noIcon_a64689 {
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  text-align: center;
+}
+.noIcon_a64689.iconSizeSmol_a64689 {
+  line-height: 16px;
+}
+.noIcon_a64689.iconSizeMini_a64689 {
+  line-height: 20px;
+}
+.noIcon_a64689.iconSizeSmaller_a64689 {
+  line-height: 24px;
+}
+.noIcon_a64689.iconSizeSmall_a64689 {
+  line-height: 30px;
+}
+.noIcon_a64689.iconSizeMedium_a64689 {
+  line-height: 40px;
+}
+.noIcon_a64689.iconSizeLarge_a64689 {
+  line-height: 50px;
+}
+.noIcon_a64689.iconSizeLarger_a64689 {
+  line-height: 64px;
+}
+.noIcon_a64689.iconSizeXLarge_a64689 {
+  line-height: 100px;
+}
+.noAcronym_a64689 {
+  background-color: var(--background-modifier-accent);
+}
+.discordLogo_b83a05 {
+  height: 36px;
+  width: 112px;
+  background: url(/assets/23a7a3fd6624342117bf.svg) no-repeat;
+  display: none;
+  flex-shrink: 0;
+  margin-bottom: 16px;
+}
+.authBox_b83a05 {
+  width: 480px;
+  padding: var(--custom-auth-box-auth-box-padding);
+  font-size: 18px;
+  box-shadow: var(--legacy-elevation-high);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: var(--text-muted);
+}
+.authBox_b83a05 a {
+  color: var(--text-link);
+}
+.authBox_b83a05 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+.authBoxExpanded_b83a05 {
+  width: 784px;
+}
+.centeringWrapper_b83a05 {
+  width: 100%;
+  text-align: center;
+}
+.avatar_b83a05 {
+  margin-bottom: 24px;
+}
+@media (max-width: 485px) {
+  .authBox_b83a05 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left bottom, #3d4046, #1e1e23);
+    border-radius: 0;
+    overflow: scroll;
+  }
+  .authBox_b83a05 .discordLogo_b83a05 {
+    display: block;
+  }
+  @media (max-width: 830px) {
+    .authBox_b83a05.authBoxExpanded_b83a05 {
+      max-width: none;
+    }
+  }
+  .authBox_b83a05 .centeringWrapper_b83a05 {
+    position: relative;
+    min-height: 540px;
+  }
+}
+@media (max-width: 830px) {
+  .authBoxExpanded_b83a05 {
+    max-width: 480px;
+  }
+}
+.is-mobile .authBox_b83a05 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to left bottom, #3d4046, #1e1e23);
+  border-radius: 0;
+  overflow: scroll;
+}
+.is-mobile .authBox_b83a05 .discordLogo_b83a05 {
+  display: block;
+  top: 16px;
+}
+@media (max-width: 830px) {
+  .is-mobile .authBox_b83a05.authBoxExpanded_b83a05 {
+    max-width: none;
+  }
+}
+.is-mobile .authBox_b83a05 .centeringWrapper_b83a05 {
+  position: relative;
+  min-height: 540px;
+}
+.authBox_b83a05[data-theme="light"] {
+  background: var(--primary-100);
+}
+.authBox_b83a05[data-theme="light"] .discordLogo_b83a05 {
+  background: url(/assets/17a91e9b4e7eb3921ed5.svg) no-repeat;
+  width: 130px;
+}
+.authBox_b83a05[data-theme="dark"] {
+  background: var(--background-mobile-primary);
+}
+.authBox_b83a05[data-theme="dark"] .discordLogo_b83a05 {
+  background: url(/assets/23a7a3fd6624342117bf.svg) no-repeat;
+  width: 130px;
+}
+.title_b83a05 {
+  font-weight: 600;
+}
+.subText_b83a05 {
+  color: var(--text-muted);
+}
+.subText_b83a05 strong {
+  color: hsl(var(--primary-300-hsl) / 0.9);
+  font-weight: 600;
+}
+.pill_b83a05 {
+  display: flex;
+  align-items: center;
+}
+.pillOnline_b83a05 {
+  margin-right: 16px;
+}
+.pillMessage_b83a05 {
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--header-secondary);
+}
+@media (min-height: 640px) {
+  .pillMessage_b83a05 {
+    font-size: 16px;
+  }
+}
+.pillIcon_b83a05 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.pillIconTotal_b83a05 {
+  background-color: var(--header-secondary);
+}
+.pillIconOnline_b83a05 {
+  background-color: var(--info-positive-foreground);
+}
+.pillFlat_b83a05 {
+  background: transparent;
+}
+.pillFlat_b83a05 .pillIconTotal_b83a05 {
+  background-color: var(--text-muted);
+}
+.joiningAs_b83a05 {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joiningAsAvatar_b83a05 {
+  margin-left: 14px;
+}
+.joiningAsUsername_b83a05 {
+  margin-left: 5px;
+}
+.spinnerVideo_b83a05 {
+  width: 200px;
+  height: 200px;
+}
+.image_b83a05 {
+  width: 100%;
+  max-width: 186px;
+  height: auto;
+  max-height: 120px;
+  pointer-events: none;
+}
+.block_b83a05 {
+  width: 100%;
+  text-align: left;
+}
+.button_b83a05 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.linkButton_b83a05 {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+.inviteIcon_b83a05 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.inviteLargeIcon_b83a05 {
+  margin-right: 0;
+}
+.inviteSmallIcon_b83a05 {
+  margin-right: 8px;
+  margin-top: 0;
+  flex-shrink: 0;
+}
+.downloadButtonSubtext_b83a05 {
+  margin-top: 8px;
+  text-align: center;
+}
+.inputError_b83a05,
+.inputError_b83a05:focus,
+.inputError_b83a05:hover {
+  border-color: var(--status-danger);
+}
+.description_b83a05 {
+  margin-top: 8px;
+  font-size: 12px;
+}
 .applicationDetails_d6f023 {
   display: flex;
   flex-direction: column;
@@ -6427,172 +6814,6 @@ div.modalHeader_c5e09c {
 }
 .channelWithIcon_bf515c .iconMentionText_bf515c {
   gap: 0 !important;
-}
-.flowerStarContainer_c91f7d {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.flowerStar_c91f7d {
-  width: 100%;
-  height: 100%;
-}
-.childContainer_c91f7d {
-  position: absolute;
-  top: -0.05px;
-  left: 0.05px;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
-.redesignIconChildContainer_c91f7d > svg {
-  width: 10px;
-  height: 10px;
-}
-.background_d082f7 {
-  width: 16px;
-  height: 16px;
-}
-.hubContainer_d082f7 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.verified_d082f7 {
-  color: var(--green-360);
-}
-.staff_d082f7 {
-  color: var(--primary-500);
-}
-.staff_d082f7 .icon_d082f7 {
-  width: 60%;
-  height: 60%;
-}
-.partnered_d082f7 {
-  color: var(--brand-500);
-}
-.hub_d082f7 > .icon_d082f7 > circle {
-  fill: var(--background-accent);
-}
-.verifiedHub_d082f7 > .icon_d082f7 > circle {
-  fill: var(--green-360);
-}
-.icon_d082f7 {
-  width: 100%;
-  height: 100%;
-  color: var(--white-500);
-}
-.icon_a64689 {
-  position: relative;
-  background-clip: padding-box;
-  background-color: none;
-  background-position: center center;
-  background-size: 100%100%;
-}
-.icon_a64689 .guildIconBadge_a64689 {
-  position: absolute;
-  right: -2px;
-  bottom: -2px;
-  width: 14px;
-  height: 14px;
-}
-.iconInactive_a64689 {
-  border-radius: 50%;
-}
-.iconActiveMini_a64689 {
-  border-radius: 6px;
-}
-.iconActiveSmaller_a64689 {
-  border-radius: 7px;
-}
-.iconActiveSmall_a64689 {
-  border-radius: 9px;
-}
-.iconActiveMedium_a64689 {
-  border-radius: 12px;
-}
-.iconActiveLarge_a64689 {
-  border-radius: 15px;
-}
-.iconActiveLarger_a64689 {
-  border-radius: 16px;
-}
-.iconActiveXLarge_a64689 {
-  border-radius: 30px;
-}
-.iconSizeSmol_a64689 {
-  width: 16px;
-  height: 16px;
-}
-.iconSizeMini_a64689 {
-  width: 20px;
-  height: 20px;
-}
-.iconSizeSmaller_a64689 {
-  width: 24px;
-  height: 24px;
-}
-.iconSizeSmall_a64689 {
-  width: 30px;
-  height: 30px;
-}
-.iconSizeMedium_a64689 {
-  width: 40px;
-  height: 40px;
-}
-.iconSizeLarge_a64689 {
-  width: 50px;
-  height: 50px;
-}
-.iconSizeLarger_a64689 {
-  width: 64px;
-  height: 64px;
-}
-.iconSizeXLarge_a64689 {
-  width: 100px;
-  height: 100px;
-}
-.acronym_a64689 {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-}
-.noIcon_a64689 {
-  background-color: var(--background-secondary);
-  color: var(--text-normal);
-  text-align: center;
-}
-.noIcon_a64689.iconSizeSmol_a64689 {
-  line-height: 16px;
-}
-.noIcon_a64689.iconSizeMini_a64689 {
-  line-height: 20px;
-}
-.noIcon_a64689.iconSizeSmaller_a64689 {
-  line-height: 24px;
-}
-.noIcon_a64689.iconSizeSmall_a64689 {
-  line-height: 30px;
-}
-.noIcon_a64689.iconSizeMedium_a64689 {
-  line-height: 40px;
-}
-.noIcon_a64689.iconSizeLarge_a64689 {
-  line-height: 50px;
-}
-.noIcon_a64689.iconSizeLarger_a64689 {
-  line-height: 64px;
-}
-.noIcon_a64689.iconSizeXLarge_a64689 {
-  line-height: 100px;
-}
-.noAcronym_a64689 {
-  background-color: var(--background-modifier-accent);
 }
 .icon_be2720 {
   display: inline-block;
@@ -26303,6 +26524,17 @@ div.popoutCloseButton_d523a2:hover {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+.deepLinkContainer_c5a065 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+  background: var(--background-primary);
+  border-radius: 12px;
+  width: 480px;
 }
 .errorCodeMessage_c78a6e {
   margin-top: 16px;
@@ -51233,4 +51465,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f0a68a76f7f846b9f377.css.map*/
+/*# sourceMappingURL=12633.1975083d2101431715b8.css.map*/
