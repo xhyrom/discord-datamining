@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 66,
+  "subdomain_count": 67,
   "subdomains": [
     "support",
     "blog",
@@ -16,8 +16,8 @@
     "merch",
     "zendesk1",
     "click",
-    "newsletter",
     "snowsgiving-tale-2022-ko",
+    "newsletter",
     "androiddiag",
     "o16.ptr7471",
     "snowsgiving-tale-2022-ru",
@@ -45,6 +45,7 @@
     "o14.ptr6344",
     "o22.ptr2763",
     "email.e",
+    "clicks.m",
     "static",
     "snowsgiving-tale-2022-es-es",
     "static-edge",
