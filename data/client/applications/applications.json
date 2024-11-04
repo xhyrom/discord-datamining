@@ -1,1051 +1,5 @@
 [
   {
-    "id": "349134787773988865",
-    "name": "Divinity Original Sin 2",
-    "icon": "6c018443f2c3067bf660d8b55ff9eb20",
-    "description": "Divinity: Original Sin 2 is a CRPG developed by Larian Studios. Setting: The world needs a new Divinity. Choose your origin. Gather your party. Master deep, tactical combat. Up to four players with drop-in/drop-out co-op. Only one becomes a God.",
-    "summary": "",
-    "type": 1,
-    "is_monetized": false,
-    "is_verified": false,
-    "cover_image": "0fa583149b3927add1aad7cb2337b953",
-    "splash": "f79ab1b78f2fe375f7566f6b6e200ca2",
-    "third_party_skus": [
-      {
-        "id": "435150",
-        "sku": "435150",
-        "distributor": "steam"
-      }
-    ],
-    "hook": true,
-    "aliases": [
-      "Divinity - Original Sin 2",
-      "Divinity Original Sin 2",
-      "Divinity: Original Sin 2"
-    ],
-    "executables": [
-      {
-        "os": "win32",
-        "name": "divinity original sin 2/bin/eocapp.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "bin/supporttool.exe",
-        "is_launcher": false
-      }
-    ],
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "450d45712bad368a553c702402720ae46ce640e35717fc9c6ec18753f0dd73f1",
-    "flags": 0
-  },
-  {
-    "id": "207646673902501888",
-    "name": "StreamKit Overlay",
-    "icon": "a3de4d7ba7be0e917fe9f96a95985c84",
-    "description": "Discord's StreamKit Overlay for OBS & XSplit",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "rpc_origins": [
-      "http://localhost:3000",
-      "https://staging-streamkit.discord.co",
-      "https://streamkit.discord.com",
-      "https://streamkit.discordapp.com"
-    ],
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "bcf526d1e8d491267d585e114ddbd6ce577224ff3da8653cadcbf5511768415d",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "1096190356233670716",
-    "name": "Collectibles Shop",
-    "icon": null,
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "936929561302675456",
-    "name": "Midjourney Bot",
-    "icon": "f6ce562a6b4979c4b1cbc5b436d3be76",
-    "description": "Generate an image based on a text prompt in under 60 seconds using the </imagine:938956540159881230> command!\n\nhttps://docs.midjourney.com/docs/terms-of-service",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "bot": {
-      "id": "936929561302675456",
-      "username": "Midjourney Bot",
-      "global_name": null,
-      "avatar": "f6ce562a6b4979c4b1cbc5b436d3be76",
-      "avatar_decoration_data": null,
-      "discriminator": "9282",
-      "public_flags": 589824,
-      "clan": null,
-      "bot": true,
-      "banner": null,
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "662267976984297473",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://docs.midjourney.com/docs/terms-of-service",
-    "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "applications.commands",
-        "bot"
-      ],
-      "permissions": "2147601472"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands",
-            "bot"
-          ],
-          "permissions": "2147601472"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "9fdcc360b9cf44b7f03d985a97ea196198abe1ec779d8c0761fe46dc0ddb15e2",
-    "flags": 1151336448,
-    "tags": [
-      "AI",
-      "fun",
-      "image generation",
-      "imagination",
-      "midjourney"
-    ]
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "622174530214821906",
-    "name": "Xbox",
-    "icon": "381268423d28fee4d0b036b23df82641",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
-    "flags": 0
-  },
-  {
-    "id": "984193235868065795",
-    "name": "PlayStation™Network (sp-int)",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
-    "flags": 0,
-    "tags": [
-      "Account Linking",
-      "sp-int"
-    ]
-  },
-  {
-    "id": "1008890872156405890",
-    "name": "PlayStation™Network",
-    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
-    "description": "",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "hook": true,
-    "storefront_available": false,
-    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
-    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
-    "flags": 0
-  },
-  {
-    "id": "234395307759108106",
-    "name": "Groovy",
-    "icon": "0e7adc5d634d957b7725021c067bfd87",
-    "description": "Groovy has ended its service. Learn more here: https://groovy.bot",
-    "summary": "",
-    "type": 1,
-    "is_monetized": false,
-    "is_verified": true,
-    "bot": {
-      "id": "234395307759108106",
-      "username": "Groovy",
-      "global_name": null,
-      "avatar": "0e7adc5d634d957b7725021c067bfd87",
-      "avatar_decoration_data": null,
-      "discriminator": "7254",
-      "public_flags": 589824,
-      "clan": null,
-      "bot": true,
-      "banner": null,
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "267719227815886850",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "install_params": {
-      "scopes": [
-        "bot",
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "f0d4787ab4c56f94aa4a6215afc34868bbafcabe74e22213fefa8b52e35ec4d6",
-    "flags": 10502144,
-    "tags": [
-      "music"
-    ]
-  },
-  {
-    "id": "512412940897484800",
-    "name": "Smile Bot",
-    "icon": "354d906af0c326210da63e53892fcd91",
-    "description": "A Community Success bot made by the folks at SMILERS!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": false,
-    "bot": {
-      "id": "512412940897484800",
-      "username": "SmileBot",
-      "global_name": null,
-      "avatar": "354d906af0c326210da63e53892fcd91",
-      "avatar_decoration_data": null,
-      "discriminator": "6469",
-      "public_flags": 0,
-      "clan": null,
-      "bot": true,
-      "banner": null,
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "integration_types_config": {
-      "0": {}
-    },
-    "verify_key": "d73a51e59c36e39ef46c1315953b07f7927d65baeccc17a3df7260a76950cd9c",
-    "flags": 0
-  },
-  {
     "id": "1096190356233670716",
     "name": "Collectibles Shop",
     "icon": null,
@@ -3175,8 +2129,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2048"
     },
@@ -3184,8 +2138,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2048"
         }
@@ -4717,13 +3671,13 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
@@ -4786,8 +3740,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -4797,22 +3751,22 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
@@ -4852,12 +3806,12 @@
       },
       {
         "os": "win32",
-        "name": "minecraft.windows.exe",
+        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "name": "minecraft.windows.exe",
         "is_launcher": false
       }
     ],
@@ -4946,13 +3900,13 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       }
     ],
@@ -4995,16 +3949,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "installers/social-club-setup.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_dumpserver",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "grand theft auto v/ragepluginhook.exe",
         "is_launcher": false
       },
@@ -5020,12 +3964,22 @@
       },
       {
         "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
+        "name": "installers/social-club-setup.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "lspdfr/lspdfr configurator.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_dumpserver",
         "is_launcher": false
       }
     ],
@@ -5048,13 +4002,13 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": null,
-        "sku": null,
+        "id": "Pro",
+        "sku": "Pro",
         "distributor": "battlenet"
       },
       {
-        "id": "Pro",
-        "sku": "Pro",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       }
     ],
@@ -5197,22 +4151,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "call of duty hq/cod.exe",
+        "name": "_retail_/cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_retail_/cod.exe",
+        "name": "sp23/sp23-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "call of duty hq/cod.exe",
         "is_launcher": false
       }
     ],
@@ -5279,14 +4233,14 @@
     "is_verified": false,
     "third_party_skus": [
       {
-        "id": "1172470",
-        "sku": "1172470",
-        "distributor": "steam"
-      },
-      {
         "id": "",
         "sku": "",
         "distributor": "origin"
+      },
+      {
+        "id": "1172470",
+        "sku": "1172470",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -5387,14 +4341,14 @@
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
       {
-        "id": "635",
-        "sku": "635",
-        "distributor": "uplay"
-      },
-      {
         "id": "359550",
         "sku": "359550",
         "distributor": "steam"
+      },
+      {
+        "id": "635",
+        "sku": "635",
+        "distributor": "uplay"
       }
     ],
     "overlay": true,
@@ -5408,12 +4362,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "name": "rainbowsixgame.exe",
         "is_launcher": false
       },
       {
@@ -5424,11 +4383,6 @@
       {
         "os": "win32",
         "name": "rainbowsix_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "rainbowsixgame.exe",
         "is_launcher": false
       }
     ],
@@ -5795,12 +4749,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -5888,7 +4842,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_beta_/wow.exe",
+        "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -5908,17 +4872,7 @@
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_beta_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -6048,7 +5002,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deadbydaylight-win64-shipping.exe",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": false
       },
       {
@@ -6058,7 +5012,7 @@
       },
       {
         "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
+        "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -6129,12 +5083,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "7daystodie_eac.exe",
+        "name": "7daystodie.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "7daystodie.exe",
+        "name": "7daystodie_eac.exe",
         "is_launcher": false
       }
     ],
@@ -6203,13 +5157,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -6423,6 +5377,11 @@
     "guild_id": "251072485095636994",
     "executables": [
       {
+        "os": "darwin",
+        "name": "terraria.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "terraria.exe",
         "is_launcher": false
@@ -6435,11 +5394,6 @@
       {
         "os": "win32",
         "name": "terraria/terraria.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "terraria.app",
         "is_launcher": false
       }
     ],
@@ -6462,14 +5416,14 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "com.ninjakiwi.bloonstd6",
-        "sku": "com.ninjakiwi.bloonstd6",
-        "distributor": "google_play"
-      },
-      {
         "id": "960090",
         "sku": "960090",
         "distributor": "steam"
+      },
+      {
+        "id": "com.ninjakiwi.bloonstd6",
+        "sku": "com.ninjakiwi.bloonstd6",
+        "distributor": "google_play"
       }
     ],
     "hook": true,
@@ -6479,17 +5433,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "cleaner/cleaner-btd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "bloonstd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bloonstd6/bloonstd6.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
@@ -6826,6 +5780,11 @@
     "guild_id": "118778495085182976",
     "executables": [
       {
+        "os": "win32",
+        "name": "brawlhalla.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "brawlhalla.app",
         "is_launcher": false
@@ -6833,11 +5792,6 @@
       {
         "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "brawlhalla.exe",
         "is_launcher": false
       }
     ],
@@ -6899,12 +5853,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "beamng.drive.x64.exe",
+        "name": "beamng.drive.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "beamng.drive.exe",
+        "name": "beamng.drive.x64.exe",
         "is_launcher": false
       }
     ],
@@ -7080,12 +6034,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -7119,22 +6073,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "pathofexile_x64steam.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "pathofexilesteam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "pathofexile_x64.exe",
+        "name": "pathofexile_x64steam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "pathofexile_x64.exe",
         "is_launcher": false
       }
     ],
@@ -7167,7 +6121,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/start_protected_game.exe",
+        "name": "vrchat/vrchat.exe",
         "is_launcher": false
       },
       {
@@ -7177,7 +6131,7 @@
       },
       {
         "os": "win32",
-        "name": "vrchat/vrchat.exe",
+        "name": "vrchat/start_protected_game.exe",
         "is_launcher": false
       }
     ],
@@ -7435,22 +6389,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "launchutils/busybox64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tmodloader/tmodloader.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       }
     ],
@@ -7485,13 +6439,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -7525,13 +6479,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "ffxiv.exe",
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "final fantasy xiv.app",
+        "os": "win32",
+        "name": "ffxiv.exe",
         "is_launcher": false
       }
     ],
@@ -7565,17 +6519,12 @@
     "executables": [
       {
         "os": "win32",
+        "name": "editor/kseditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "assettocorsa/jsgme.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "server/acservermanager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       },
       {
@@ -7585,7 +6534,7 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa.exe",
+        "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       },
       {
@@ -7595,7 +6544,12 @@
       },
       {
         "os": "win32",
-        "name": "editor/kseditor.exe",
+        "name": "server/acservermanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa.exe",
         "is_launcher": false
       }
     ],
@@ -8007,12 +6961,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "hearts of iron iv/hoi4.exe",
+        "name": "hoi4.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hoi4.exe",
+        "name": "hearts of iron iv/hoi4.exe",
         "is_launcher": false
       }
     ],
@@ -8099,7 +7053,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz_x64.exe",
+        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
@@ -8109,7 +7063,7 @@
       },
       {
         "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
+        "name": "dayz_x64.exe",
         "is_launcher": false
       }
     ],
@@ -8223,12 +7177,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win_x64/huntgame.exe",
+        "name": "hunt showdown/hunt.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hunt showdown/hunt.exe",
+        "name": "win_x64/huntgame.exe",
         "is_launcher": false
       }
     ],
@@ -8594,12 +7548,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       }
     ],
@@ -8667,12 +7621,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "risk of rain 2.exe",
+        "name": "risk of rain 2/risk of rain 2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
+        "name": "risk of rain 2.exe",
         "is_launcher": false
       }
     ],
@@ -9233,12 +8187,6 @@
     "guild_id": "302094807046684672",
     "executables": [
       {
-        "os": "win32",
-        "name": ">javaw.exe",
-        "arguments": "net.minecraft.client.main.Main",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
@@ -9246,12 +8194,18 @@
       },
       {
         "os": "win32",
-        "name": "minecraft.windows.exe",
+        "name": ">javaw.exe",
+        "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "minecraft.windows.exe",
         "is_launcher": false
       }
     ],
@@ -9294,12 +8248,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "installers/social-club-setup.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_dumpserver",
+        "name": "subprocess/fivem_gtaprocess.exe",
         "is_launcher": false
       },
       {
@@ -9309,22 +8258,27 @@
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "gta5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
+        "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_dumpserver",
         "is_launcher": false
       }
     ],
@@ -9360,13 +8314,13 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "darwin",
-        "name": "dota_osx.app",
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "dota2.exe",
+        "os": "darwin",
+        "name": "dota_osx.app",
         "is_launcher": false
       }
     ],
@@ -9403,12 +8357,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       }
     ],
@@ -9443,12 +8397,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "aoe2de/aoe2de_s.exe",
+        "name": "age of empires ii definitive edition/aoe2de_s.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "age of empires ii definitive edition/aoe2de_s.exe",
+        "name": "aoe2de/aoe2de_s.exe",
         "is_launcher": false
       },
       {
@@ -9572,12 +8526,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apex/r5apex.exe",
+        "name": "apex legends/r5apex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apex legends/r5apex.exe",
+        "name": "apex/r5apex.exe",
         "is_launcher": false
       }
     ],
@@ -9659,7 +8613,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "ts4.exe",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_x64.exe",
         "is_launcher": false
       },
       {
@@ -9669,12 +8628,7 @@
       },
       {
         "os": "win32",
-        "name": "ts4_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4_dx9_x64.exe",
+        "name": "ts4.exe",
         "is_launcher": false
       }
     ],
@@ -9703,6 +8657,11 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "roblox.app",
         "is_launcher": false
@@ -9710,11 +8669,6 @@
       {
         "os": "win32",
         "name": "roblox.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       }
     ],
@@ -9763,12 +8717,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -9890,8 +8844,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -9941,8 +8895,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147483648"
     },
@@ -10035,8 +8989,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -10182,12 +9136,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -10196,8 +9150,8 @@
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -10207,7 +9161,7 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -10371,8 +9325,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -10382,22 +9336,22 @@
       },
       {
         "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -10423,6 +9377,1052 @@
       "0": {}
     },
     "verify_key": "e8bdc7615658d007cc4dc8c1600a1324e015397dd831cb6244330b77ced29d3a",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "1096190356233670716",
+    "name": "Collectibles Shop",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c2ca3383622af70436dd1285b537ea6be5daa2a7b68d982e96ce59334a3cdf36",
+    "flags": 0
+  },
+  {
+    "id": "936929561302675456",
+    "name": "Midjourney Bot",
+    "icon": "f6ce562a6b4979c4b1cbc5b436d3be76",
+    "description": "Generate an image based on a text prompt in under 60 seconds using the </imagine:938956540159881230> command!\n\nhttps://docs.midjourney.com/docs/terms-of-service",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "bot": {
+      "id": "936929561302675456",
+      "username": "Midjourney Bot",
+      "global_name": null,
+      "avatar": "f6ce562a6b4979c4b1cbc5b436d3be76",
+      "avatar_decoration_data": null,
+      "discriminator": "9282",
+      "public_flags": 589824,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "662267976984297473",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://docs.midjourney.com/docs/terms-of-service",
+    "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands",
+        "bot"
+      ],
+      "permissions": "2147601472"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands",
+            "bot"
+          ],
+          "permissions": "2147601472"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "9fdcc360b9cf44b7f03d985a97ea196198abe1ec779d8c0761fe46dc0ddb15e2",
+    "flags": 1151336448,
+    "tags": [
+      "AI",
+      "fun",
+      "image generation",
+      "imagination",
+      "midjourney"
+    ]
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "622174530214821906",
+    "name": "Xbox",
+    "icon": "381268423d28fee4d0b036b23df82641",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+    "privacy_policy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca92474087e3915628f89d5ee7aa82ec43eeeb1c6115c3bd4cb3355067e138cb",
+    "flags": 0
+  },
+  {
+    "id": "984193235868065795",
+    "name": "PlayStation™Network (sp-int)",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "This is the application for PlayStation Network's Account Linking feature on sp-int environment",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c9ab2ffb292abe9077999ac572b2ae9e6d2b603db6ac7f303fb36ba28ace2df",
+    "flags": 0,
+    "tags": [
+      "Account Linking",
+      "sp-int"
+    ]
+  },
+  {
+    "id": "1008890872156405890",
+    "name": "PlayStation™Network",
+    "icon": "0ac47d8adaff09d336dd40e258c6ce2e",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "storefront_available": false,
+    "terms_of_service_url": "https://www.playstation.com/legal/psn-terms-of-service/",
+    "privacy_policy_url": "https://www.playstation.com/legal/privacy-policy/",
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "349134787773988865",
+    "name": "Divinity Original Sin 2",
+    "icon": "6c018443f2c3067bf660d8b55ff9eb20",
+    "description": "Divinity: Original Sin 2 is a CRPG developed by Larian Studios. Setting: The world needs a new Divinity. Choose your origin. Gather your party. Master deep, tactical combat. Up to four players with drop-in/drop-out co-op. Only one becomes a God.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "cover_image": "0fa583149b3927add1aad7cb2337b953",
+    "splash": "f79ab1b78f2fe375f7566f6b6e200ca2",
+    "third_party_skus": [
+      {
+        "id": "435150",
+        "sku": "435150",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Divinity - Original Sin 2",
+      "Divinity Original Sin 2",
+      "Divinity: Original Sin 2"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "divinity original sin 2/bin/eocapp.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bin/supporttool.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "450d45712bad368a553c702402720ae46ce640e35717fc9c6ec18753f0dd73f1",
+    "flags": 0
+  },
+  {
+    "id": "207646673902501888",
+    "name": "StreamKit Overlay",
+    "icon": "a3de4d7ba7be0e917fe9f96a95985c84",
+    "description": "Discord's StreamKit Overlay for OBS & XSplit",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "hook": true,
+    "rpc_origins": [
+      "http://localhost:3000",
+      "https://staging-streamkit.discord.co",
+      "https://streamkit.discord.com",
+      "https://streamkit.discordapp.com"
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "bcf526d1e8d491267d585e114ddbd6ce577224ff3da8653cadcbf5511768415d",
+    "flags": 0
+  },
+  {
+    "id": "234395307759108106",
+    "name": "Groovy",
+    "icon": "0e7adc5d634d957b7725021c067bfd87",
+    "description": "Groovy has ended its service. Learn more here: https://groovy.bot",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": true,
+    "bot": {
+      "id": "234395307759108106",
+      "username": "Groovy",
+      "global_name": null,
+      "avatar": "0e7adc5d634d957b7725021c067bfd87",
+      "avatar_decoration_data": null,
+      "discriminator": "7254",
+      "public_flags": 589824,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "267719227815886850",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "install_params": {
+      "scopes": [
+        "bot",
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f0d4787ab4c56f94aa4a6215afc34868bbafcabe74e22213fefa8b52e35ec4d6",
+    "flags": 10502144,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "id": "512412940897484800",
+    "name": "Smile Bot",
+    "icon": "354d906af0c326210da63e53892fcd91",
+    "description": "A Community Success bot made by the folks at SMILERS!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "bot": {
+      "id": "512412940897484800",
+      "username": "SmileBot",
+      "global_name": null,
+      "avatar": "354d906af0c326210da63e53892fcd91",
+      "avatar_decoration_data": null,
+      "discriminator": "6469",
+      "public_flags": 0,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d73a51e59c36e39ef46c1315953b07f7927d65baeccc17a3df7260a76950cd9c",
     "flags": 0
   },
   {
@@ -10457,8 +10457,8 @@
     "privacy_policy_url": "https://soundcloud.com/pages/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "141770902784"
     },
