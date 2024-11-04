@@ -5157,5 +5157,9 @@
       "OPTIONS",
       "PUT"
     ]
+  },
+  "IGNORE_USER": {
+    "url": "/users/:param/ignore",
+    "allowed_methods": null
   }
 }
