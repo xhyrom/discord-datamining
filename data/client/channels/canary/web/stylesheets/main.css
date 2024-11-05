@@ -29032,14 +29032,14 @@ div.popoutCloseButton_d523a2:hover {
   position: absolute;
   height: 9px;
   width: 50%;
-  background: hsl(NaN calc(1 * 0%) 100%);
+  background: #fff;
   opacity: 1;
   transform: rotate(0);
   transition: 0.25s ease-in-out;
 }
 @supports (color: rgba(0, 0, 0, 0)) and (top: var(--f)) {
   .btnHamburger_a3ca40 span {
-    background: hsl(NaN calc(var(--saturation-factor, 1) * 0%) 100%);
+    background: hsl(0 calc(0% * var(--saturation-factor, 1)) 100%);
   }
 }
 .btnHamburger_a3ca40 span:nth-child(2n) {
@@ -29063,19 +29063,19 @@ div.popoutCloseButton_d523a2:hover {
   top: 36px;
 }
 .theme-dark .btnHamburger_a3ca40 span {
-  background: hsl(NaN calc(1 * 0%) 100%);
+  background: #fff;
 }
 @supports (color: rgba(0, 0, 0, 0)) and (top: var(--f)) {
   .theme-dark .btnHamburger_a3ca40 span {
-    background: hsl(NaN calc(var(--saturation-factor, 1) * 0%) 100%);
+    background: hsl(0 calc(0% * var(--saturation-factor, 1)) 100%);
   }
 }
 .theme-light .btnHamburger_a3ca40 span {
-  background: hsl(NaN calc(1 * 0%) 0%);
+  background: #000;
 }
 @supports (color: rgba(0, 0, 0, 0)) and (top: var(--f)) {
   .theme-light .btnHamburger_a3ca40 span {
-    background: hsl(NaN calc(var(--saturation-factor, 1) * 0%) 0%);
+    background: hsl(0 calc(0% * var(--saturation-factor, 1)) 0%);
   }
 }
 .btnHamburgerOpen_a3ca40 span:first-child,
@@ -51452,4 +51452,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.0c08d5a52d826cc7473f.css.map*/
+/*# sourceMappingURL=12633.fb09d12c9caa8215eb30.css.map*/
