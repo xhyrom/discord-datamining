@@ -5160,7 +5160,10 @@
   },
   "USER_REDEEM_VIRTUAL_CURRENCY": {
     "url": "/users/@me/virtual-currency/redeem",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "IGNORE_USER": {
     "url": "/users/:param/ignore",
