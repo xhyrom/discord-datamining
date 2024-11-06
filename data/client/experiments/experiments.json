@@ -12090,13 +12090,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Profile Activity React / Reply"
+        "Treatment 1: Enable Profile Activity React / Reply",
+        "Treatment 2: Enable All Profile Content React / Reply"
       ],
       "hash": 3699976510,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
