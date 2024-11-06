@@ -5166,7 +5166,7 @@
     ]
   },
   "IGNORE_USER": {
-    "url": "/users/:param/ignore",
+    "url": "/users/@me/relationships/:param/ignore",
     "allowed_methods": null
   }
 }
