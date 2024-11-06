@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_checkout_optimization_browser_autofill_global",
+    "label": "Checkout Optimization Browser Autofill Global",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled with delay"
+    ],
+    "hash": 402972005,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
