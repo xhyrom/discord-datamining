@@ -13125,6 +13125,8 @@ span.clanTag_a31c43 {
 :where(.outer_c69a7b).panel_c69a7b {
   width: 340px;
   height: 100%;
+  overflow: visible;
+  overflow: initial;
 }
 :where(.outer_c69a7b).custom-profile-theme {
   background: linear-gradient(
@@ -51233,4 +51235,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.130a3b6b4ba06f01e0c3.css.map*/
+/*# sourceMappingURL=12633.b666b798081ca8d37b69.css.map*/
