@@ -2387,66 +2387,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7673381002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": false
-        }
-      ],
-      "internal_job_id": 6018609002,
-      "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7673381002,
-      "updated_at": "2024-10-29T20:29:26-04:00",
-      "requisition_id": "R-100680",
-      "title": "Software Engineer - Activity Feed",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;We’re looking for a Software Engineer to help us build the next generation of social gaming features on Discord. You will help expand existing capabilities and build new products that make Discord the best place to discover and talk about games with your friends. You’ll work cross-functionally with Product, Data Science, Design and Machine Learning to create a best-in-class Activity Feed experience. You will be reporting to the Senior Engineering Manager of Activity Feed.&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;This position is US based only.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Work with engineers on your team to build new features and expand existing capabilities on our recent activity infrastructure and feed surfaces across Web, Android, and iOS.&lt;/li&gt;\n&lt;li&gt;Own projects end to end — you’ll be responsible for working with Product to refine requirements, creating a technical spec, implementing changes, and seeing the project through to launch.&lt;/li&gt;\n&lt;li&gt;Work closely with product teams across Discord to support content integrations and expand our platform’s footprint.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Work closely with Design to deliver visually refined and exceptional user experiences across all of our client platforms.&lt;/li&gt;\n&lt;li&gt;Contribute to a fast-paced product engineering team by rapidly prototyping new features and developing principled learnings through experimentation.&lt;/li&gt;\n&lt;li&gt;Improve the observability and tooling for our system, and take a measured approach to improving and evolving our product.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;3+ years of software engineering experience.&lt;/strong&gt; We primarily work in the web (React, TypeScript), Android (React Native, Kotlin), iOS (React Native, Objective-C, Swift), and backend (Python and some Elixir).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A growth mindset.&lt;/strong&gt; You view challenges and mistakes as learning opportunities while building upon your successes. You push yourself and those around you to continuously improve.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Product sense.&lt;/strong&gt; You maintain a high degree of empathy for your internal and external users, and seek feedback from them about your work.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A love for experimentation.&lt;/strong&gt; You get excited when numbers move by 1%.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $159,000 to $175,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074054002,
-          "name": "Product Engineering",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7593341002",
       "data_compliance": [
         {
@@ -2806,6 +2746,6 @@
     }
   ],
   "meta": {
-    "total": 48
+    "total": 47
   }
 }
