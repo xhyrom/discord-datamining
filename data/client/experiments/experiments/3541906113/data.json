@@ -4,21 +4,13 @@
     "id": "2024-03_content_inventory_memberlist_and_ranker",
     "label": "Enables the memberlist content feed",
     "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Recency",
-      "Treatment 2: Heuristic",
-      "Treatment 3: Noteworthy",
-      "Treatment 4: Another Heuristic treatment for comparison ranking"
+      "Treatment -1: Not in experiment",
+      "Treatment 0: Holdout"
     ],
     "hash": 3541906113,
     "buckets": [
       -1,
-      0,
-      1,
-      2,
-      3,
-      4
+      0
     ],
     "holdout": {},
     "aa_mode": false,

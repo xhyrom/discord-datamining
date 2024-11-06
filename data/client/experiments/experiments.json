@@ -1080,6 +1080,42 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "hash": 1412337990,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "799349358776549378",
+          "763838479293349899"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2022-08_back_to_school",
       "label": "Back to School Event",
@@ -3085,41 +3121,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "hash": 1990672009,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "908114392263049277"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-06_unique_username_registration",
       "label": "Unique Username Registration",
@@ -4989,42 +4990,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "hash": 1412337990,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "799349358776549378",
-          "763838479293349899"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2024-01_inappropriate_conversation_warning_staff_bypass",
       "label": "Inappropriate Conversation Warning Staff Bypass",
@@ -5548,21 +5513,13 @@
       "id": "2024-03_content_inventory_memberlist_and_ranker",
       "label": "Enables the memberlist content feed",
       "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Recency",
-        "Treatment 2: Heuristic",
-        "Treatment 3: Noteworthy",
-        "Treatment 4: Another Heuristic treatment for comparison ranking"
+        "Treatment -1: Not in experiment",
+        "Treatment 0: Holdout"
       ],
       "hash": 3541906113,
       "buckets": [
         -1,
-        0,
-        1,
-        2,
-        3,
-        4
+        0
       ],
       "holdout": {},
       "aa_mode": false,
@@ -6852,143 +6809,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "hash": 3674963204,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 100
-                },
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 200,
-                  "end": 300
-                },
-                {
-                  "start": 300,
-                  "end": 400
-                },
-                {
-                  "start": 400,
-                  "end": 600
-                },
-                {
-                  "start": 600,
-                  "end": 800
-                },
-                {
-                  "start": 800,
-                  "end": 1200
-                },
-                {
-                  "start": 1200,
-                  "end": 1600
-                },
-                {
-                  "start": 1600,
-                  "end": 4000
-                },
-                {
-                  "start": 4000,
-                  "end": 6500
-                },
-                {
-                  "start": 6500,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "DISCOVERABLE"
-              ]
-            }
-          ]
-        }
-      ],
-      "revision": 2,
-      "overrides": {
-        "1": [
-          "951951155175489606",
-          "937840859544682529",
-          "953754308971733103",
-          "522477306787397642",
-          "803241158054510612",
-          "647509637821628422",
-          "712111817333407824",
-          "710659351576182915",
-          "302094807046684672",
-          "958150409208365146",
-          "290843998296342529",
-          "595999872222756885",
-          "417739215355510784",
-          "378662079361449994",
-          "877239953174691910",
-          "1009955672546345021",
-          "1011361906616979496",
-          "994727054190854314"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3832113202,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 4,
-      "overrides": {
-        "0": [
-          "814669604840013874"
-        ],
-        "2": [
-          "1064959560890204271"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2024-06_ctp_app_open_everyone",
       "label": "CTP app open - A/A test - Everyone",
@@ -7633,6 +7453,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-07_contextual_image_recs_user",
+      "label": "Contextual Image Recommendations",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the Contextual Image Recommendations with options"
+      ],
+      "hash": 2916972233,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "imageRecsEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-07_ctp_open_nitro_everyone",
       "label": "CTP open nitro - A/A test - Everyone",
       "description": [
@@ -8172,29 +8015,6 @@
       "aa_mode": false,
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_contextual_image_recs_user",
-      "label": "Contextual Image Recommendations",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the Contextual Image Recommendations with options"
-      ],
-      "hash": 2916972233,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "imageRecsEnabled"
       ]
     }
   },
@@ -10977,6 +10797,32 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-10_system_date_formatter",
+      "label": "Use system APIs for date formatting",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable system formatter",
+        "Treatment 2: Enable pref for 24-hour time format"
+      ],
+      "hash": 2327380316,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableSystemFormatter",
+        "enable24HourPref"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-10_tile_resolution_gating",
       "label": "Tile Resolution Gating",
       "description": [
@@ -12024,6 +11870,41 @@
       "overrides": {
         "1": [
           "763838479293349899"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 1990672009,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "908114392263049277"
         ]
       },
       "overrides_formatted": []
@@ -13534,6 +13415,105 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 3674963204,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 100
+                },
+                {
+                  "start": 100,
+                  "end": 200
+                },
+                {
+                  "start": 200,
+                  "end": 300
+                },
+                {
+                  "start": 300,
+                  "end": 400
+                },
+                {
+                  "start": 400,
+                  "end": 600
+                },
+                {
+                  "start": 600,
+                  "end": 800
+                },
+                {
+                  "start": 800,
+                  "end": 1200
+                },
+                {
+                  "start": 1200,
+                  "end": 1600
+                },
+                {
+                  "start": 1600,
+                  "end": 4000
+                },
+                {
+                  "start": 4000,
+                  "end": 6500
+                },
+                {
+                  "start": 6500,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "DISCOVERABLE"
+              ]
+            }
+          ]
+        }
+      ],
+      "revision": 2,
+      "overrides": {
+        "1": [
+          "951951155175489606",
+          "937840859544682529",
+          "953754308971733103",
+          "522477306787397642",
+          "803241158054510612",
+          "647509637821628422",
+          "712111817333407824",
+          "710659351576182915",
+          "302094807046684672",
+          "958150409208365146",
+          "290843998296342529",
+          "595999872222756885",
+          "417739215355510784",
+          "378662079361449994",
+          "877239953174691910",
+          "1009955672546345021",
+          "1011361906616979496",
+          "994727054190854314"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 3683063649,
       "holdout": {
         "name": null,
@@ -13669,6 +13649,44 @@
       ],
       "revision": 0,
       "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3832113202,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 4,
+      "overrides": {
+        "0": [
+          "814669604840013874"
+        ],
+        "2": [
+          "1064959560890204271"
+        ]
+      },
       "overrides_formatted": []
     }
   },

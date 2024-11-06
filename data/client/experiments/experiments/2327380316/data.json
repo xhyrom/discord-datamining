@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_system_date_formatter",
+    "label": "Use system APIs for date formatting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable system formatter",
+      "Treatment 2: Enable pref for 24-hour time format"
+    ],
+    "hash": 2327380316,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enableSystemFormatter",
+      "enable24HourPref"
+    ]
+  }
+}
