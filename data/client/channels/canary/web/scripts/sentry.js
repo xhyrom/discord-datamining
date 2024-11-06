@@ -4460,7 +4460,7 @@
             return eq;
           },
           ANM: function () {
-            return a5;
+            return a6;
           },
           AQB: function () {
             return a9;
@@ -4721,7 +4721,7 @@
             return _f;
           },
           PUi: function () {
-            return e5;
+            return e6;
           },
           Plq: function () {
             return ak.Pl;
@@ -4961,7 +4961,7 @@
             return tR;
           },
           b2L: function () {
-            return _6;
+            return _5;
           },
           b4C: function () {
             return tJ;
@@ -5291,7 +5291,7 @@
             return eQ;
           },
           vTt: function () {
-            return _5;
+            return _6;
           },
           vbS: function () {
             return _Z;
@@ -5486,8 +5486,8 @@
           e1,
           e2,
           e3,
-          e6,
           e5,
+          e6,
           e4,
           e8,
           e7,
@@ -5550,8 +5550,8 @@
           t1,
           t2,
           t3,
-          t6,
           t5,
+          t6,
           t4,
           t8,
           t7,
@@ -5614,8 +5614,8 @@
           r1,
           r2,
           r3,
-          r6,
           r5,
+          r6,
           r4,
           r8,
           r7,
@@ -5678,8 +5678,8 @@
           n1,
           n2,
           n3,
-          n6,
           n5,
+          n6,
           n4,
           n8,
           n7,
@@ -5747,15 +5747,15 @@
           (t2.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
           ((t3 = a || (a = {})).PASSWORD = "password"),
           (t3.LOGIN_CODE = "login_code"),
-          ((t6 = _ || (_ = {}))[(t6.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
-          (t6[(t6.ELIGIBLE = 1)] = "ELIGIBLE"),
-          (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
-          (t6[(t6.COOLDOWN = 3)] = "COOLDOWN"),
-          (t6[(t6.UNAPPLIED = 4)] = "UNAPPLIED"),
-          ((t5 = o || (o = {})).NONE = "NONE"),
-          (t5.REGISTERING = "REGISTERING"),
-          (t5.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
-          (t5.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
+          ((t5 = _ || (_ = {}))[(t5.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
+          (t5[(t5.ELIGIBLE = 1)] = "ELIGIBLE"),
+          (t5[(t5.QUALIFIED = 2)] = "QUALIFIED"),
+          (t5[(t5.COOLDOWN = 3)] = "COOLDOWN"),
+          (t5[(t5.UNAPPLIED = 4)] = "UNAPPLIED"),
+          ((t6 = o || (o = {})).NONE = "NONE"),
+          (t6.REGISTERING = "REGISTERING"),
+          (t6.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
+          (t6.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
           ((t4 = i || (i = {})).OPEN = "OPEN"),
           (t4.SUBMITTING = "SUBMITTING"),
           (t4.CLOSED = "CLOSED"),
@@ -7549,7 +7549,7 @@
             USER_REDEEM_VIRTUAL_CURRENCY: "/users/@me/virtual-currency/redeem",
             IGNORE_USER: (e) => "/users/".concat(e, "/ignore"),
           }),
-          a6 = Object.freeze({
+          a5 = Object.freeze({
             INDEX: "/",
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (e) =>
@@ -7731,8 +7731,8 @@
             QUESTS: (e) => "/quests/".concat(e),
             ACCOUNT_REVERT: (e) => "/wasntme/".concat(e),
           }),
-          a5 = (0, aH.Ft)(a3),
-          a4 = (0, aH.Ft)(a6, [":", "?", "@"]);
+          a6 = (0, aH.Ft)(a3),
+          a4 = (0, aH.Ft)(a5, [":", "?", "@"]);
         ((rx = ee || (ee = {}))[(rx.INSTANCE = 1)] = "INSTANCE"),
           (rx[(rx.JOIN = 2)] = "JOIN"),
           (rx[(rx.SYNC = 16)] = "SYNC"),
@@ -8953,24 +8953,24 @@
           (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
           (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
           (r3.APP_COMMAND = "APP_COMMAND"),
-          ((r6 = eT || (eT = {})).GIFT = "gift"),
-          (r6.BUY = "buy"),
-          (r6.BOX_ART = "box_art"),
-          (r6.PERK = "perk"),
-          (r6.NONE = "none"),
-          (r6.TIER_1 = "tier_1"),
-          (r6.TIER_2 = "tier_2"),
-          (r6.TIER_3 = "tier_3"),
-          (r6.TRIAL = "trial"),
-          (r6.FPS = "fps"),
-          (r6.RESOLUTION = "resolution"),
-          (r6.ACTIVITY = "activity"),
-          (r6.REACTION = "reaction"),
-          (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
-          (r6.REACTION_OVERFLOW = "reaction_overflow"),
-          ((r5 = ed || (ed = {})).PRIMARY = "primary"),
-          (r5.SECONDARY = "secondary"),
-          (r5.DISMISS = "dismiss");
+          ((r5 = eT || (eT = {})).GIFT = "gift"),
+          (r5.BUY = "buy"),
+          (r5.BOX_ART = "box_art"),
+          (r5.PERK = "perk"),
+          (r5.NONE = "none"),
+          (r5.TIER_1 = "tier_1"),
+          (r5.TIER_2 = "tier_2"),
+          (r5.TIER_3 = "tier_3"),
+          (r5.TRIAL = "trial"),
+          (r5.FPS = "fps"),
+          (r5.RESOLUTION = "resolution"),
+          (r5.ACTIVITY = "activity"),
+          (r5.REACTION = "reaction"),
+          (r5.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
+          (r5.REACTION_OVERFLOW = "reaction_overflow"),
+          ((r6 = ed || (ed = {})).PRIMARY = "primary"),
+          (r6.SECONDARY = "secondary"),
+          (r6.DISMISS = "dismiss");
         let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
@@ -9378,8 +9378,8 @@
           ((nR = eB || (eB = {})).EMPTY = "EMPTY"),
           (nR.FILTER = "FILTER"),
           (nR.FILTER_ALL = "FILTER_ALL");
-        let _6 = "YYYY-MM-DD",
-          _5 = "PrivateChannelRecipientsInvitePopout";
+        let _5 = "YYYY-MM-DD",
+          _6 = "PrivateChannelRecipientsInvitePopout";
         ((nA = eW || (eW = {}))[(nA.NONE = 0)] = "NONE"),
           (nA[(nA.TIER_1 = 1)] = "TIER_1"),
           (nA[(nA.TIER_2 = 2)] = "TIER_2"),
@@ -11277,8 +11277,8 @@
             "REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
           (nb.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE =
             "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
-          ((e6 || (e6 = {})).UPDATE_PASSWORD = "update_password"),
-          ((nv = e5 || (e5 = {})).CAPTCHA = "captcha"),
+          ((e5 || (e5 = {})).UPDATE_PASSWORD = "update_password"),
+          ((nv = e6 || (e6 = {})).CAPTCHA = "captcha"),
           (nv.EMAIL_OR_PHONE = "email_or_phone"),
           (nv.PHONE = "phone"),
           (nv.EMAIL = "email"),
@@ -11616,15 +11616,15 @@
           (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           (n3[(n3.VIRTUAL_CURRENCY_REDEMPTION = 12)] =
             "VIRTUAL_CURRENCY_REDEMPTION"),
-          ((n6 = tf || (tf = {})).ESRB = "1"),
-          (n6.PEGI = "2"),
-          ((n5 = tL || (tL = {}))[(n5.DURABLE_PRIMARY = 1)] =
+          ((n5 = tf || (tf = {})).ESRB = "1"),
+          (n5.PEGI = "2"),
+          ((n6 = tL || (tL = {}))[(n6.DURABLE_PRIMARY = 1)] =
             "DURABLE_PRIMARY"),
-          (n5[(n5.DURABLE = 2)] = "DURABLE"),
-          (n5[(n5.CONSUMABLE = 3)] = "CONSUMABLE"),
-          (n5[(n5.BUNDLE = 4)] = "BUNDLE"),
-          (n5[(n5.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
-          (n5[(n5.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
+          (n6[(n6.DURABLE = 2)] = "DURABLE"),
+          (n6[(n6.CONSUMABLE = 3)] = "CONSUMABLE"),
+          (n6[(n6.BUNDLE = 4)] = "BUNDLE"),
+          (n6[(n6.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
+          (n6[(n6.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
           ((n4 = tO || (tO = {}))[(n4.FULL = 1)] = "FULL"),
           (n4[(n4.EARLY_ACCESS = 2)] = "EARLY_ACCESS"),
           (n4[(n4.VIP_ACCESS = 3)] = "VIP_ACCESS"),
@@ -12555,7 +12555,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bfeefdf9f692096fc536d69cc7e8b8a38f9bd9e3",
+            release: "discord_web-99b0cac024b4b6c1d0789ccb2c77ada9ada57da2",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12624,8 +12624,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "342226"), "342226"));
-          o.YA("builtAt", String("1730919479060"));
+            o.YA("buildNumber", ((e = "342240"), "342240"));
+          o.YA("builtAt", String("1730920748540"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -28282,7 +28282,7 @@
                   },
                 });
               });
-            var e6 = {
+            var e5 = {
                 aliceblue: "#f0f8ff",
                 antiquewhite: "#faebd7",
                 aqua: "#00ffff",
@@ -28439,20 +28439,20 @@
                 yellow: "#ffff00",
                 yellowgreen: "#9acd32",
               },
-              e5 = i.type;
+              e6 = i.type;
             (u.prototype.name = function () {
               for (
-                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e6);
+                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e5);
                 t < r.length;
                 t += 1
               ) {
                 var n = r[t];
-                if (e6[n] === e) return n.toLowerCase();
+                if (e5[n] === e) return n.toLowerCase();
               }
               return e;
             }),
               (E.format.named = function (e) {
-                if (e6[(e = e.toLowerCase())]) return et(e6[e]);
+                if (e5[(e = e.toLowerCase())]) return et(e5[e]);
                 throw Error("unknown color name: " + e);
               }),
               E.autodetect.push({
@@ -28460,7 +28460,7 @@
                 test: function (e) {
                   for (var t = [], r = arguments.length - 1; r-- > 0; )
                     t[r] = arguments[r + 1];
-                  if (!t.length && "string" === e5(e) && e6[e.toLowerCase()])
+                  if (!t.length && "string" === e6(e) && e5[e.toLowerCase()])
                     return "named";
                 },
               });
@@ -29434,8 +29434,8 @@
               var t1 = i.type,
                 t2 = i.clip_rgb,
                 t3 = i.TWOPI,
-                t6 = Math.pow,
-                t5 = Math.sin,
+                t5 = Math.pow,
+                t6 = Math.sin,
                 t4 = Math.cos,
                 t8 = Math.floor,
                 t7 = Math.random,
@@ -30077,10 +30077,10 @@
                 "array" === t1(a) ? (_ = a[1] - a[0]) : ((_ = 0), (a = [a, a]));
                 var i = function (i) {
                   var E = t3 * ((e + 120) / 360 + t * i),
-                    c = t6(a[0] + _ * i, n),
+                    c = t5(a[0] + _ * i, n),
                     s = ((0 !== o ? r[0] + i * o : r) * c * (1 - c)) / 2,
                     l = t4(E),
-                    u = t5(E);
+                    u = t6(E);
                   return I(
                     t2([
                       255 * (c + s * (-0.14861 * l + 1.78277 * u)),
@@ -30232,7 +30232,7 @@
                   return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
-              (I.colors = e6),
+              (I.colors = e5),
               (I.brewer = rT),
               I
             );
@@ -42258,7 +42258,7 @@ Error:`,
         "use strict";
         r.d(t, {
           U0: function () {
-            return e5;
+            return e6;
           },
           fA: function () {
             return g;
@@ -44700,7 +44700,7 @@ ${eQ}
             width: Math.abs(e.startX - e.endX),
             height: Math.abs(e.startY - e.endY),
           }),
-          e6 = (e) => {
+          e5 = (e) => {
             let t = e.clientHeight,
               r = e.clientWidth,
               n = e.width / e.height,
@@ -44711,7 +44711,7 @@ ${eQ}
               i = (t - _) / 2;
             return { startX: o, startY: i, endX: a + o, endY: _ + i };
           },
-          e5 = () => ({
+          e6 = () => ({
             name: "FeedbackScreenshot",
             setupOnce() {},
             createInput: ({ h: e, hooks: t, dialog: r, options: n }) => {
@@ -44888,7 +44888,7 @@ ${eQ}
                       [d, f] = t.useState(!1);
                     function L() {
                       let e = I.current,
-                        t = e3(e6(r));
+                        t = e3(e5(r));
                       if (e) {
                         (e.width = t.width * e2),
                           (e.height = t.height * e2),
@@ -44928,7 +44928,7 @@ ${eQ}
                         if (!e) return;
                         let t = e.getContext("2d");
                         if (!t) return;
-                        let n = e3(e6(r)),
+                        let n = e3(e5(r)),
                           a = e3(R);
                         t.clearRect(0, 0, n.width, n.height),
                           (t.fillStyle = "rgba(0, 0, 0, 0.5)"),
@@ -45186,7 +45186,7 @@ ${eQ}
                                     e.preventDefault(),
                                       !(function () {
                                         let e = s.createElement("canvas"),
-                                          t = e3(e6(r)),
+                                          t = e3(e5(r)),
                                           n = e3(R);
                                         (e.width = n.width * e2),
                                           (e.height = n.height * e2);
@@ -47540,10 +47540,10 @@ ${eQ}
           (I[(I.Pen = 1)] = "Pen"),
           (I[(I.Touch = 2)] = "Touch"),
           I);
-        function e6(e) {
+        function e5(e) {
           return "__ln" in e;
         }
-        class e5 {
+        class e6 {
           constructor() {
             (this.length = 0), (this.head = null), (this.tail = null);
           }
@@ -47635,7 +47635,7 @@ ${eQ}
                 if (this.frozen || this.locked) return;
                 let e = [],
                   t = new Set(),
-                  r = new e5(),
+                  r = new e6(),
                   n = (e) => {
                     let t = e,
                       r = -2;
@@ -50747,10 +50747,10 @@ ${eQ}
             return !1;
           }
         }
-        function t6(e) {
+        function t5(e) {
           return void 0 !== e && Math.random() < e;
         }
-        function t5(e) {
+        function t6(e) {
           let t = Date.now(),
             r = e.id || (0, y.DM)(),
             n = e.started || t,
@@ -50777,8 +50777,8 @@ ${eQ}
           { previousSessionId: n } = {},
         ) {
           var a, _;
-          let o = t5({
-            sampled: ((a = e), (_ = t), t6(a) ? "session" : !!_ && "buffer"),
+          let o = t6({
+            sampled: ((a = e), (_ = t), t5(a) ? "session" : !!_ && "buffer"),
             previousSessionId: n,
           });
           return r && t4(o), o;
@@ -50822,7 +50822,7 @@ ${eQ}
                 let t = k.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tJ("[Replay] Loading existing session", e), t5(r);
+                return tJ("[Replay] Loading existing session", e), t6(r);
               } catch (e) {
                 return null;
               }
@@ -52343,7 +52343,7 @@ ${eQ}
                               E.message !== X &&
                               E.exception &&
                               !E.type &&
-                              t6(i.getOptions().errorSampleRate)) ||
+                              t5(i.getOptions().errorSampleRate)) ||
                               "session" === r.recordingMode) &&
                               (e.tags = {
                                 ...e.tags,
@@ -53037,4 +53037,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.313c37475ccadf5b8db4.js.map
+//# sourceMappingURL=sentry.53d87cb8dab69652d419.js.map
