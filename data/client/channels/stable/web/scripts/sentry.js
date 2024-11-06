@@ -4460,7 +4460,7 @@
             return eq;
           },
           ANM: function () {
-            return a6;
+            return a5;
           },
           AQB: function () {
             return a9;
@@ -4721,7 +4721,7 @@
             return _f;
           },
           PUi: function () {
-            return e6;
+            return e5;
           },
           Plq: function () {
             return ak.Pl;
@@ -4961,7 +4961,7 @@
             return tR;
           },
           b2L: function () {
-            return _5;
+            return _6;
           },
           b4C: function () {
             return tJ;
@@ -5291,7 +5291,7 @@
             return eQ;
           },
           vTt: function () {
-            return _6;
+            return _5;
           },
           vbS: function () {
             return _Z;
@@ -5486,8 +5486,8 @@
           e1,
           e2,
           e3,
-          e5,
           e6,
+          e5,
           e4,
           e8,
           e7,
@@ -5550,8 +5550,8 @@
           t1,
           t2,
           t3,
-          t5,
           t6,
+          t5,
           t4,
           t8,
           t7,
@@ -5614,8 +5614,8 @@
           r1,
           r2,
           r3,
-          r5,
           r6,
+          r5,
           r4,
           r8,
           r7,
@@ -5678,8 +5678,8 @@
           n1,
           n2,
           n3,
-          n5,
           n6,
+          n5,
           n4,
           n8,
           n7,
@@ -5747,15 +5747,15 @@
           (t2.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
           ((t3 = a || (a = {})).PASSWORD = "password"),
           (t3.LOGIN_CODE = "login_code"),
-          ((t5 = _ || (_ = {}))[(t5.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
-          (t5[(t5.ELIGIBLE = 1)] = "ELIGIBLE"),
-          (t5[(t5.QUALIFIED = 2)] = "QUALIFIED"),
-          (t5[(t5.COOLDOWN = 3)] = "COOLDOWN"),
-          (t5[(t5.UNAPPLIED = 4)] = "UNAPPLIED"),
-          ((t6 = o || (o = {})).NONE = "NONE"),
-          (t6.REGISTERING = "REGISTERING"),
-          (t6.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
-          (t6.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
+          ((t6 = _ || (_ = {}))[(t6.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
+          (t6[(t6.ELIGIBLE = 1)] = "ELIGIBLE"),
+          (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
+          (t6[(t6.COOLDOWN = 3)] = "COOLDOWN"),
+          (t6[(t6.UNAPPLIED = 4)] = "UNAPPLIED"),
+          ((t5 = o || (o = {})).NONE = "NONE"),
+          (t5.REGISTERING = "REGISTERING"),
+          (t5.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
+          (t5.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
           ((t4 = i || (i = {})).OPEN = "OPEN"),
           (t4.SUBMITTING = "SUBMITTING"),
           (t4.CLOSED = "CLOSED"),
@@ -7547,9 +7547,10 @@
             GUILD_LEADERBOARD_SETTINGS: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t, "/settings"),
             USER_REDEEM_VIRTUAL_CURRENCY: "/users/@me/virtual-currency/redeem",
-            IGNORE_USER: (e) => "/users/".concat(e, "/ignore"),
+            IGNORE_USER: (e) =>
+              "/users/@me/relationships/".concat(e, "/ignore"),
           }),
-          a5 = Object.freeze({
+          a6 = Object.freeze({
             INDEX: "/",
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (e) =>
@@ -7731,8 +7732,8 @@
             QUESTS: (e) => "/quests/".concat(e),
             ACCOUNT_REVERT: (e) => "/wasntme/".concat(e),
           }),
-          a6 = (0, aH.Ft)(a3),
-          a4 = (0, aH.Ft)(a5, [":", "?", "@"]);
+          a5 = (0, aH.Ft)(a3),
+          a4 = (0, aH.Ft)(a6, [":", "?", "@"]);
         ((rx = ee || (ee = {}))[(rx.INSTANCE = 1)] = "INSTANCE"),
           (rx[(rx.JOIN = 2)] = "JOIN"),
           (rx[(rx.SYNC = 16)] = "SYNC"),
@@ -8953,24 +8954,24 @@
           (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
           (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
           (r3.APP_COMMAND = "APP_COMMAND"),
-          ((r5 = eT || (eT = {})).GIFT = "gift"),
-          (r5.BUY = "buy"),
-          (r5.BOX_ART = "box_art"),
-          (r5.PERK = "perk"),
-          (r5.NONE = "none"),
-          (r5.TIER_1 = "tier_1"),
-          (r5.TIER_2 = "tier_2"),
-          (r5.TIER_3 = "tier_3"),
-          (r5.TRIAL = "trial"),
-          (r5.FPS = "fps"),
-          (r5.RESOLUTION = "resolution"),
-          (r5.ACTIVITY = "activity"),
-          (r5.REACTION = "reaction"),
-          (r5.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
-          (r5.REACTION_OVERFLOW = "reaction_overflow"),
-          ((r6 = ed || (ed = {})).PRIMARY = "primary"),
-          (r6.SECONDARY = "secondary"),
-          (r6.DISMISS = "dismiss");
+          ((r6 = eT || (eT = {})).GIFT = "gift"),
+          (r6.BUY = "buy"),
+          (r6.BOX_ART = "box_art"),
+          (r6.PERK = "perk"),
+          (r6.NONE = "none"),
+          (r6.TIER_1 = "tier_1"),
+          (r6.TIER_2 = "tier_2"),
+          (r6.TIER_3 = "tier_3"),
+          (r6.TRIAL = "trial"),
+          (r6.FPS = "fps"),
+          (r6.RESOLUTION = "resolution"),
+          (r6.ACTIVITY = "activity"),
+          (r6.REACTION = "reaction"),
+          (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
+          (r6.REACTION_OVERFLOW = "reaction_overflow"),
+          ((r5 = ed || (ed = {})).PRIMARY = "primary"),
+          (r5.SECONDARY = "secondary"),
+          (r5.DISMISS = "dismiss");
         let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
@@ -9378,8 +9379,8 @@
           ((nR = eB || (eB = {})).EMPTY = "EMPTY"),
           (nR.FILTER = "FILTER"),
           (nR.FILTER_ALL = "FILTER_ALL");
-        let _5 = "YYYY-MM-DD",
-          _6 = "PrivateChannelRecipientsInvitePopout";
+        let _6 = "YYYY-MM-DD",
+          _5 = "PrivateChannelRecipientsInvitePopout";
         ((nA = eW || (eW = {}))[(nA.NONE = 0)] = "NONE"),
           (nA[(nA.TIER_1 = 1)] = "TIER_1"),
           (nA[(nA.TIER_2 = 2)] = "TIER_2"),
@@ -11277,8 +11278,8 @@
             "REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
           (nb.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE =
             "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
-          ((e5 || (e5 = {})).UPDATE_PASSWORD = "update_password"),
-          ((nv = e6 || (e6 = {})).CAPTCHA = "captcha"),
+          ((e6 || (e6 = {})).UPDATE_PASSWORD = "update_password"),
+          ((nv = e5 || (e5 = {})).CAPTCHA = "captcha"),
           (nv.EMAIL_OR_PHONE = "email_or_phone"),
           (nv.PHONE = "phone"),
           (nv.EMAIL = "email"),
@@ -11616,15 +11617,15 @@
           (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           (n3[(n3.VIRTUAL_CURRENCY_REDEMPTION = 12)] =
             "VIRTUAL_CURRENCY_REDEMPTION"),
-          ((n5 = tf || (tf = {})).ESRB = "1"),
-          (n5.PEGI = "2"),
-          ((n6 = tL || (tL = {}))[(n6.DURABLE_PRIMARY = 1)] =
+          ((n6 = tf || (tf = {})).ESRB = "1"),
+          (n6.PEGI = "2"),
+          ((n5 = tL || (tL = {}))[(n5.DURABLE_PRIMARY = 1)] =
             "DURABLE_PRIMARY"),
-          (n6[(n6.DURABLE = 2)] = "DURABLE"),
-          (n6[(n6.CONSUMABLE = 3)] = "CONSUMABLE"),
-          (n6[(n6.BUNDLE = 4)] = "BUNDLE"),
-          (n6[(n6.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
-          (n6[(n6.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
+          (n5[(n5.DURABLE = 2)] = "DURABLE"),
+          (n5[(n5.CONSUMABLE = 3)] = "CONSUMABLE"),
+          (n5[(n5.BUNDLE = 4)] = "BUNDLE"),
+          (n5[(n5.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
+          (n5[(n5.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
           ((n4 = tO || (tO = {}))[(n4.FULL = 1)] = "FULL"),
           (n4[(n4.EARLY_ACCESS = 2)] = "EARLY_ACCESS"),
           (n4[(n4.VIP_ACCESS = 3)] = "VIP_ACCESS"),
@@ -12555,7 +12556,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-47f50da9a25d2cb9b45a1cd48412410fec640b2f",
+            release: "discord_web-bd62b7cf7b8e2c6097716a4349bd2b0bd3e71684",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12624,8 +12625,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "342245"), "342245"));
-          o.YA("builtAt", String("1730921162310"));
+            o.YA("buildNumber", ((e = "342408"), "342408"));
+          o.YA("builtAt", String("1730934629011"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -15432,7 +15433,7 @@
               BG_GRADIENT_COTTON_CANDY_1: "#f4abb8",
               BG_GRADIENT_COTTON_CANDY_2: "#b1c2fc",
               BG_GRADIENT_CRIMSON_MOON_1: "#950909",
-              BG_GRADIENT_CRIMSON_MOON_2: "#000",
+              BG_GRADIENT_CRIMSON_MOON_2: "#000000",
               BG_GRADIENT_DESERT_KHAKI_1: "#e7dbd0",
               BG_GRADIENT_DESERT_KHAKI_2: "#dfd0b2",
               BG_GRADIENT_DESERT_KHAKI_3: "#e0d6a3",
@@ -15479,33 +15480,33 @@
               BG_GRADIENT_UNDER_THE_SEA_1: "#647962",
               BG_GRADIENT_UNDER_THE_SEA_2: "#588575",
               BG_GRADIENT_UNDER_THE_SEA_3: "#6a8482",
-              BLACK: "#000",
+              BLACK: "#000000",
               BLACK_100: "#f2f2f2",
               BLACK_130: "#e8e8e8",
               BLACK_160: "#dadada",
-              BLACK_200: "#ccc",
+              BLACK_200: "#cccccc",
               BLACK_230: "#bdbdbd",
               BLACK_260: "#acacac",
-              BLACK_300: "#999",
+              BLACK_300: "#999999",
               BLACK_330: "#7a7a7a",
-              BLACK_345: "#666",
+              BLACK_345: "#666666",
               BLACK_360: "#5c5c5c",
-              BLACK_400: "#333",
+              BLACK_400: "#333333",
               BLACK_430: "#252525",
               BLACK_460: "#141414",
-              BLACK_500: "#000",
-              BLACK_530: "#000",
-              BLACK_560: "#000",
-              BLACK_600: "#000",
-              BLACK_630: "#000",
-              BLACK_660: "#000",
-              BLACK_700: "#000",
-              BLACK_730: "#000",
-              BLACK_760: "#000",
-              BLACK_800: "#000",
-              BLACK_830: "#000",
-              BLACK_860: "#000",
-              BLACK_900: "#000",
+              BLACK_500: "#000000",
+              BLACK_530: "#000000",
+              BLACK_560: "#000000",
+              BLACK_600: "#000000",
+              BLACK_630: "#000000",
+              BLACK_660: "#000000",
+              BLACK_700: "#000000",
+              BLACK_730: "#000000",
+              BLACK_760: "#000000",
+              BLACK_800: "#000000",
+              BLACK_830: "#000000",
+              BLACK_860: "#000000",
+              BLACK_900: "#000000",
               BLUE_100: "#f6fafe",
               BLUE_130: "#f0f7fe",
               BLUE_160: "#e2f0fd",
@@ -15609,8 +15610,8 @@
               HYPESQUAD_HOUSE_3: "#45ddc0",
               INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
               LOL: "#021f25",
-              NEUTRAL_1: "#fff",
-              NEUTRAL_100: "#000",
+              NEUTRAL_1: "#ffffff",
+              NEUTRAL_100: "#000000",
               NEUTRAL_22: "#aeaeb4",
               NEUTRAL_24: "#a7a7ad",
               NEUTRAL_26: "#9f9fa6",
@@ -15865,30 +15866,30 @@
               TEAL_830: "#02191d",
               TEAL_860: "#021619",
               TEAL_900: "#011215",
-              TRANSPARENT: "#0000",
+              TRANSPARENT: "#00000000",
               TWITCH: "#593695",
               TWITTER: "#1da1f2",
-              WHITE: "#fff",
-              WHITE_100: "#fff",
-              WHITE_130: "#fff",
-              WHITE_160: "#fff",
-              WHITE_200: "#fff",
-              WHITE_230: "#fff",
-              WHITE_260: "#fff",
-              WHITE_300: "#fff",
-              WHITE_330: "#fff",
-              WHITE_345: "#fff",
-              WHITE_360: "#fff",
-              WHITE_400: "#fff",
-              WHITE_430: "#fff",
-              WHITE_460: "#fff",
-              WHITE_500: "#fff",
+              WHITE: "#ffffff",
+              WHITE_100: "#ffffff",
+              WHITE_130: "#ffffff",
+              WHITE_160: "#ffffff",
+              WHITE_200: "#ffffff",
+              WHITE_230: "#ffffff",
+              WHITE_260: "#ffffff",
+              WHITE_300: "#ffffff",
+              WHITE_330: "#ffffff",
+              WHITE_345: "#ffffff",
+              WHITE_360: "#ffffff",
+              WHITE_400: "#ffffff",
+              WHITE_430: "#ffffff",
+              WHITE_460: "#ffffff",
+              WHITE_500: "#ffffff",
               WHITE_530: "#e8e8e8",
               WHITE_560: "#cfcfcf",
               WHITE_600: "#adadad",
               WHITE_630: "#969696",
               WHITE_660: "#838383",
-              WHITE_700: "#666",
+              WHITE_700: "#666666",
               WHITE_730: "#5f5f5f",
               WHITE_760: "#585858",
               WHITE_800: "#4d4d4d",
@@ -16062,11 +16063,11 @@
                   filter: "drop-shadow(0 0 1px hsl(none 0% 100% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#fff",
+                    shadowColor: "#ffffff",
                     shadowOpacity: 0.08,
                     shadowRadius: 1,
                     elevation: 0,
-                    shadowColorAndroid: "#fff",
+                    shadowColorAndroid: "#ffffff",
                   },
                 },
                 [n.LIGHT]: {
@@ -16074,11 +16075,11 @@
                   filter: "drop-shadow(0 0 1px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 1,
                     elevation: 0,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.MIDNIGHT]: {
@@ -16086,11 +16087,11 @@
                   filter: "drop-shadow(0 0 1px hsl(none 0% 100% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#fff",
+                    shadowColor: "#ffffff",
                     shadowOpacity: 0.08,
                     shadowRadius: 1,
                     elevation: 0,
-                    shadowColorAndroid: "#fff",
+                    shadowColorAndroid: "#ffffff",
                   },
                 },
                 [n.DARKER]: {
@@ -16098,11 +16099,11 @@
                   filter: "drop-shadow(0 0 1px hsl(none 0% 100% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#fff",
+                    shadowColor: "#ffffff",
                     shadowOpacity: 0.08,
                     shadowRadius: 1,
                     elevation: 0,
-                    shadowColorAndroid: "#fff",
+                    shadowColorAndroid: "#ffffff",
                   },
                 },
               },
@@ -16112,11 +16113,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16124,11 +16125,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.MIDNIGHT]: {
@@ -16136,11 +16137,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16148,11 +16149,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16162,11 +16163,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16174,7 +16175,7 @@
                   filter: "drop-shadow(0 12px 36px hsl(none 0% 0% / 0.12))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.12,
                     shadowRadius: 36,
                     elevation: 20,
@@ -16186,11 +16187,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16198,11 +16199,11 @@
                   filter: "drop-shadow(0 12px 24px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 24,
                     elevation: 20,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16213,11 +16214,11 @@
                   filter: "drop-shadow(0 1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 2,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16226,7 +16227,7 @@
                   filter: "drop-shadow(0 1.5px 0 hsl(none 0% 0% / 0.12))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.12,
                     shadowRadius: 0,
                     elevation: 2,
@@ -16239,11 +16240,11 @@
                   filter: "drop-shadow(0 1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 2,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16252,11 +16253,11 @@
                   filter: "drop-shadow(0 1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 2,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16266,11 +16267,11 @@
                   filter: "drop-shadow(0 1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16278,7 +16279,7 @@
                   filter: "drop-shadow(0 1px 4px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 4,
                     elevation: 3,
@@ -16290,11 +16291,11 @@
                   filter: "drop-shadow(0 1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16302,11 +16303,11 @@
                   filter: "drop-shadow(0 1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16316,11 +16317,11 @@
                   filter: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16328,7 +16329,7 @@
                   filter: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 4,
                     elevation: 1,
@@ -16340,11 +16341,11 @@
                   filter: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16352,11 +16353,11 @@
                   filter: "drop-shadow(0 0 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16366,11 +16367,11 @@
                   filter: "drop-shadow(0 4px 10px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 10,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16378,7 +16379,7 @@
                   filter: "drop-shadow(0 4px 8px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 8,
                     elevation: 3,
@@ -16390,11 +16391,11 @@
                   filter: "drop-shadow(0 4px 10px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 10,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16402,11 +16403,11 @@
                   filter: "drop-shadow(0 4px 10px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 10,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16416,11 +16417,11 @@
                   filter: "drop-shadow(0 4px 8px hsl(none 0% 0% / 0.16))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.16,
                     shadowRadius: 8,
                     elevation: 5,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16428,7 +16429,7 @@
                   filter: "drop-shadow(0 4px 8px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 8,
                     elevation: 5,
@@ -16440,11 +16441,11 @@
                   filter: "drop-shadow(0 4px 8px hsl(none 0% 0% / 0.16))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.16,
                     shadowRadius: 8,
                     elevation: 5,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16452,11 +16453,11 @@
                   filter: "drop-shadow(0 4px 8px hsl(none 0% 0% / 0.16))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 4 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.16,
                     shadowRadius: 8,
                     elevation: 5,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16466,11 +16467,11 @@
                   filter: "drop-shadow(0 0 10px hsl(none 0% 0% / 0.22))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.22,
                     shadowRadius: 10,
                     elevation: 0,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16478,11 +16479,11 @@
                   filter: "drop-shadow(0 0 9px hsl(none 0% 0% / 0.13))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.13,
                     shadowRadius: 9,
                     elevation: 0,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.MIDNIGHT]: {
@@ -16490,11 +16491,11 @@
                   filter: "drop-shadow(0 0 10px hsl(none 0% 0% / 0.22))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.22,
                     shadowRadius: 10,
                     elevation: 0,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16502,11 +16503,11 @@
                   filter: "drop-shadow(0 0 10px hsl(none 0% 0% / 0.22))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: 0 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.22,
                     shadowRadius: 10,
                     elevation: 0,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16516,11 +16517,11 @@
                   filter: "drop-shadow(0 -12px 32px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 32,
                     elevation: 18,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16528,7 +16529,7 @@
                   filter: "drop-shadow(0 -12px 36px hsl(none 0% 0% / 0.12))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.12,
                     shadowRadius: 36,
                     elevation: 18,
@@ -16540,11 +16541,11 @@
                   filter: "drop-shadow(0 -12px 32px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 32,
                     elevation: 18,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16552,11 +16553,11 @@
                   filter: "drop-shadow(0 -12px 32px hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -12 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 32,
                     elevation: 18,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16567,11 +16568,11 @@
                   filter: "drop-shadow(0 -1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16580,7 +16581,7 @@
                   filter: "drop-shadow(0 -1.5px 0 hsl(none 0% 0% / 0.12))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.12,
                     shadowRadius: 0,
                     elevation: 1,
@@ -16593,11 +16594,11 @@
                   filter: "drop-shadow(0 -1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16606,11 +16607,11 @@
                   filter: "drop-shadow(0 -1.5px 0 hsl(none 0% 0% / 0.24))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1.5 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.24,
                     shadowRadius: 0,
                     elevation: 1,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -16620,11 +16621,11 @@
                   filter: "drop-shadow(0 -1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.LIGHT]: {
@@ -16632,7 +16633,7 @@
                   filter: "drop-shadow(0 -1px 4px hsl(none 0% 0% / 0.08))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.08,
                     shadowRadius: 4,
                     elevation: 3,
@@ -16644,11 +16645,11 @@
                   filter: "drop-shadow(0 -1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
                 [n.DARKER]: {
@@ -16656,11 +16657,11 @@
                   filter: "drop-shadow(0 -1px 4px hsl(none 0% 0% / 0.14))",
                   nativeStyles: {
                     shadowOffset: { width: 0, height: -1 },
-                    shadowColor: "#000",
+                    shadowColor: "#000000",
                     shadowOpacity: 0.14,
                     shadowRadius: 4,
                     elevation: 3,
-                    shadowColorAndroid: "#000",
+                    shadowColorAndroid: "#000000",
                   },
                 },
               },
@@ -19206,7 +19207,7 @@
           "bg-gradient-cotton-candy-1": { hex: "#f4abb8" },
           "bg-gradient-cotton-candy-2": { hex: "#b1c2fc" },
           "bg-gradient-crimson-moon-1": { hex: "#950909" },
-          "bg-gradient-crimson-moon-2": { hex: "#000" },
+          "bg-gradient-crimson-moon-2": { hex: "#000000" },
           "bg-gradient-desert-khaki-1": { hex: "#e7dbd0" },
           "bg-gradient-desert-khaki-2": { hex: "#dfd0b2" },
           "bg-gradient-desert-khaki-3": { hex: "#e0d6a3" },
@@ -19253,33 +19254,33 @@
           "bg-gradient-under-the-sea-1": { hex: "#647962" },
           "bg-gradient-under-the-sea-2": { hex: "#588575" },
           "bg-gradient-under-the-sea-3": { hex: "#6a8482" },
-          black: { hex: "#000" },
+          black: { hex: "#000000" },
           "black-100": { hex: "#f2f2f2" },
           "black-130": { hex: "#e8e8e8" },
           "black-160": { hex: "#dadada" },
-          "black-200": { hex: "#ccc" },
+          "black-200": { hex: "#cccccc" },
           "black-230": { hex: "#bdbdbd" },
           "black-260": { hex: "#acacac" },
-          "black-300": { hex: "#999" },
+          "black-300": { hex: "#999999" },
           "black-330": { hex: "#7a7a7a" },
-          "black-345": { hex: "#666" },
+          "black-345": { hex: "#666666" },
           "black-360": { hex: "#5c5c5c" },
-          "black-400": { hex: "#333" },
+          "black-400": { hex: "#333333" },
           "black-430": { hex: "#252525" },
           "black-460": { hex: "#141414" },
-          "black-500": { hex: "#000" },
-          "black-530": { hex: "#000" },
-          "black-560": { hex: "#000" },
-          "black-600": { hex: "#000" },
-          "black-630": { hex: "#000" },
-          "black-660": { hex: "#000" },
-          "black-700": { hex: "#000" },
-          "black-730": { hex: "#000" },
-          "black-760": { hex: "#000" },
-          "black-800": { hex: "#000" },
-          "black-830": { hex: "#000" },
-          "black-860": { hex: "#000" },
-          "black-900": { hex: "#000" },
+          "black-500": { hex: "#000000" },
+          "black-530": { hex: "#000000" },
+          "black-560": { hex: "#000000" },
+          "black-600": { hex: "#000000" },
+          "black-630": { hex: "#000000" },
+          "black-660": { hex: "#000000" },
+          "black-700": { hex: "#000000" },
+          "black-730": { hex: "#000000" },
+          "black-760": { hex: "#000000" },
+          "black-800": { hex: "#000000" },
+          "black-830": { hex: "#000000" },
+          "black-860": { hex: "#000000" },
+          "black-900": { hex: "#000000" },
           "blue-100": { hex: "#f6fafe" },
           "blue-130": { hex: "#f0f7fe" },
           "blue-160": { hex: "#e2f0fd" },
@@ -19306,9 +19307,9 @@
           "blue-830": { hex: "#001630" },
           "blue-860": { hex: "#00132b" },
           "blue-900": { hex: "#001024" },
-          "blue-new-1": { hex: "#fff" },
+          "blue-new-1": { hex: "#ffffff" },
           "blue-new-10": { hex: "#d3e6fc" },
-          "blue-new-100": { hex: "#000" },
+          "blue-new-100": { hex: "#000000" },
           "blue-new-11": { hex: "#cee3fc" },
           "blue-new-12": { hex: "#c9e0fb" },
           "blue-new-13": { hex: "#c4defb" },
@@ -19406,9 +19407,9 @@
           "blue-new-97": { hex: "#030b16" },
           "blue-new-98": { hex: "#020810" },
           "blue-new-99": { hex: "#010408" },
-          "blurple-1": { hex: "#fff" },
+          "blurple-1": { hex: "#ffffff" },
           "blurple-10": { hex: "#dae3ff" },
-          "blurple-100": { hex: "#000" },
+          "blurple-100": { hex: "#000000" },
           "blurple-11": { hex: "#d6e0ff" },
           "blurple-12": { hex: "#d2ddff" },
           "blurple-13": { hex: "#cedaff" },
@@ -19565,9 +19566,9 @@
           "green-830": { hex: "#031b0a" },
           "green-860": { hex: "#041708" },
           "green-900": { hex: "#051307" },
-          "green-new-1": { hex: "#fff" },
+          "green-new-1": { hex: "#ffffff" },
           "green-new-10": { hex: "#d4e9d4" },
-          "green-new-100": { hex: "#000" },
+          "green-new-100": { hex: "#000000" },
           "green-new-11": { hex: "#cfe7d0" },
           "green-new-12": { hex: "#cae4cb" },
           "green-new-13": { hex: "#c5e2c7" },
@@ -19643,7 +19644,7 @@
           "green-new-77": { hex: "#113e1c" },
           "green-new-78": { hex: "#113b1b" },
           "green-new-79": { hex: "#10391a" },
-          "green-new-8": { hex: "#ded" },
+          "green-new-8": { hex: "#ddeedd" },
           "green-new-80": { hex: "#103619" },
           "green-new-81": { hex: "#0f3418" },
           "green-new-82": { hex: "#0f3217" },
@@ -19675,9 +19676,9 @@
           "hypesquad-house-3": { hex: "#45ddc0" },
           "input-placeholder-text-dark": { hex: "#87898c" },
           lol: { hex: "#021f25" },
-          "neutral-1": { hex: "#fff" },
+          "neutral-1": { hex: "#ffffff" },
           "neutral-10": { hex: "#dcdcde" },
-          "neutral-100": { hex: "#000" },
+          "neutral-100": { hex: "#000000" },
           "neutral-11": { hex: "#d8d8db" },
           "neutral-12": { hex: "#d4d4d7" },
           "neutral-13": { hex: "#d0d0d4" },
@@ -19826,9 +19827,9 @@
           "orange-830": { hex: "#261005" },
           "orange-860": { hex: "#200e05" },
           "orange-900": { hex: "#190d04" },
-          "orange-new-1": { hex: "#fff" },
+          "orange-new-1": { hex: "#ffffff" },
           "orange-new-10": { hex: "#fcddc8" },
-          "orange-new-100": { hex: "#000" },
+          "orange-new-100": { hex: "#000000" },
           "orange-new-11": { hex: "#fbd9c3" },
           "orange-new-12": { hex: "#fbd5bd" },
           "orange-new-13": { hex: "#fad1b7" },
@@ -20042,9 +20043,9 @@
           "red-830": { hex: "#2e090a" },
           "red-860": { hex: "#280808" },
           "red-900": { hex: "#220606" },
-          "red-new-1": { hex: "#fff" },
+          "red-new-1": { hex: "#ffffff" },
           "red-new-10": { hex: "#ffd7d3" },
-          "red-new-100": { hex: "#000" },
+          "red-new-100": { hex: "#000000" },
           "red-new-11": { hex: "#ffd3cf" },
           "red-new-12": { hex: "#ffcfca" },
           "red-new-13": { hex: "#ffcac6" },
@@ -20196,9 +20197,9 @@
           "teal-830": { hex: "#02191d" },
           "teal-860": { hex: "#021619" },
           "teal-900": { hex: "#011215" },
-          "teal-new-1": { hex: "#fff" },
+          "teal-new-1": { hex: "#ffffff" },
           "teal-new-10": { hex: "#d5e7e9" },
-          "teal-new-100": { hex: "#000" },
+          "teal-new-100": { hex: "#000000" },
           "teal-new-11": { hex: "#d0e5e7" },
           "teal-new-12": { hex: "#cbe2e4" },
           "teal-new-13": { hex: "#c7dfe2" },
@@ -20296,30 +20297,30 @@
           "teal-new-97": { hex: "#040c0d" },
           "teal-new-98": { hex: "#030809" },
           "teal-new-99": { hex: "#020404" },
-          transparent: { hex: "#0000" },
+          transparent: { hex: "#00000000" },
           twitch: { hex: "#593695" },
           twitter: { hex: "#1da1f2" },
-          white: { hex: "#fff" },
-          "white-100": { hex: "#fff" },
-          "white-130": { hex: "#fff" },
-          "white-160": { hex: "#fff" },
-          "white-200": { hex: "#fff" },
-          "white-230": { hex: "#fff" },
-          "white-260": { hex: "#fff" },
-          "white-300": { hex: "#fff" },
-          "white-330": { hex: "#fff" },
-          "white-345": { hex: "#fff" },
-          "white-360": { hex: "#fff" },
-          "white-400": { hex: "#fff" },
-          "white-430": { hex: "#fff" },
-          "white-460": { hex: "#fff" },
-          "white-500": { hex: "#fff" },
+          white: { hex: "#ffffff" },
+          "white-100": { hex: "#ffffff" },
+          "white-130": { hex: "#ffffff" },
+          "white-160": { hex: "#ffffff" },
+          "white-200": { hex: "#ffffff" },
+          "white-230": { hex: "#ffffff" },
+          "white-260": { hex: "#ffffff" },
+          "white-300": { hex: "#ffffff" },
+          "white-330": { hex: "#ffffff" },
+          "white-345": { hex: "#ffffff" },
+          "white-360": { hex: "#ffffff" },
+          "white-400": { hex: "#ffffff" },
+          "white-430": { hex: "#ffffff" },
+          "white-460": { hex: "#ffffff" },
+          "white-500": { hex: "#ffffff" },
           "white-530": { hex: "#e8e8e8" },
           "white-560": { hex: "#cfcfcf" },
           "white-600": { hex: "#adadad" },
           "white-630": { hex: "#969696" },
           "white-660": { hex: "#838383" },
-          "white-700": { hex: "#666" },
+          "white-700": { hex: "#666666" },
           "white-730": { hex: "#5f5f5f" },
           "white-760": { hex: "#585858" },
           "white-800": { hex: "#4d4d4d" },
@@ -20353,9 +20354,9 @@
           "yellow-830": { hex: "#221302" },
           "yellow-860": { hex: "#1c1002" },
           "yellow-900": { hex: "#160e02" },
-          "yellow-new-1": { hex: "#fff" },
+          "yellow-new-1": { hex: "#ffffff" },
           "yellow-new-10": { hex: "#f1e1c9" },
-          "yellow-new-100": { hex: "#000" },
+          "yellow-new-100": { hex: "#000000" },
           "yellow-new-11": { hex: "#efddc3" },
           "yellow-new-12": { hex: "#eedabe" },
           "yellow-new-13": { hex: "#ecd7b8" },
@@ -20479,7 +20480,7 @@
           BG_GRADIENT_COTTON_CANDY_1: "#f4abb8",
           BG_GRADIENT_COTTON_CANDY_2: "#b1c2fc",
           BG_GRADIENT_CRIMSON_MOON_1: "#950909",
-          BG_GRADIENT_CRIMSON_MOON_2: "#000",
+          BG_GRADIENT_CRIMSON_MOON_2: "#000000",
           BG_GRADIENT_DESERT_KHAKI_1: "#e7dbd0",
           BG_GRADIENT_DESERT_KHAKI_2: "#dfd0b2",
           BG_GRADIENT_DESERT_KHAKI_3: "#e0d6a3",
@@ -20526,33 +20527,33 @@
           BG_GRADIENT_UNDER_THE_SEA_1: "#647962",
           BG_GRADIENT_UNDER_THE_SEA_2: "#588575",
           BG_GRADIENT_UNDER_THE_SEA_3: "#6a8482",
-          BLACK: "#000",
+          BLACK: "#000000",
           BLACK_100: "#f2f2f2",
           BLACK_130: "#e8e8e8",
           BLACK_160: "#dadada",
-          BLACK_200: "#ccc",
+          BLACK_200: "#cccccc",
           BLACK_230: "#bdbdbd",
           BLACK_260: "#acacac",
-          BLACK_300: "#999",
+          BLACK_300: "#999999",
           BLACK_330: "#7a7a7a",
-          BLACK_345: "#666",
+          BLACK_345: "#666666",
           BLACK_360: "#5c5c5c",
-          BLACK_400: "#333",
+          BLACK_400: "#333333",
           BLACK_430: "#252525",
           BLACK_460: "#141414",
-          BLACK_500: "#000",
-          BLACK_530: "#000",
-          BLACK_560: "#000",
-          BLACK_600: "#000",
-          BLACK_630: "#000",
-          BLACK_660: "#000",
-          BLACK_700: "#000",
-          BLACK_730: "#000",
-          BLACK_760: "#000",
-          BLACK_800: "#000",
-          BLACK_830: "#000",
-          BLACK_860: "#000",
-          BLACK_900: "#000",
+          BLACK_500: "#000000",
+          BLACK_530: "#000000",
+          BLACK_560: "#000000",
+          BLACK_600: "#000000",
+          BLACK_630: "#000000",
+          BLACK_660: "#000000",
+          BLACK_700: "#000000",
+          BLACK_730: "#000000",
+          BLACK_760: "#000000",
+          BLACK_800: "#000000",
+          BLACK_830: "#000000",
+          BLACK_860: "#000000",
+          BLACK_900: "#000000",
           BLUE_100: "#f6fafe",
           BLUE_130: "#f0f7fe",
           BLUE_160: "#e2f0fd",
@@ -20580,9 +20581,9 @@
           BLUE_830: "#001630",
           BLUE_860: "#00132b",
           BLUE_900: "#001024",
-          BLUE_NEW_1: "#fff",
+          BLUE_NEW_1: "#ffffff",
           BLUE_NEW_10: "#d3e6fc",
-          BLUE_NEW_100: "#000",
+          BLUE_NEW_100: "#000000",
           BLUE_NEW_11: "#cee3fc",
           BLUE_NEW_12: "#c9e0fb",
           BLUE_NEW_13: "#c4defb",
@@ -20680,9 +20681,9 @@
           BLUE_NEW_97: "#030b16",
           BLUE_NEW_98: "#020810",
           BLUE_NEW_99: "#010408",
-          BLURPLE_1: "#fff",
+          BLURPLE_1: "#ffffff",
           BLURPLE_10: "#dae3ff",
-          BLURPLE_100: "#000",
+          BLURPLE_100: "#000000",
           BLURPLE_11: "#d6e0ff",
           BLURPLE_12: "#d2ddff",
           BLURPLE_13: "#cedaff",
@@ -20841,9 +20842,9 @@
           GREEN_830: "#031b0a",
           GREEN_860: "#041708",
           GREEN_900: "#051307",
-          GREEN_NEW_1: "#fff",
+          GREEN_NEW_1: "#ffffff",
           GREEN_NEW_10: "#d4e9d4",
-          GREEN_NEW_100: "#000",
+          GREEN_NEW_100: "#000000",
           GREEN_NEW_11: "#cfe7d0",
           GREEN_NEW_12: "#cae4cb",
           GREEN_NEW_13: "#c5e2c7",
@@ -20919,7 +20920,7 @@
           GREEN_NEW_77: "#113e1c",
           GREEN_NEW_78: "#113b1b",
           GREEN_NEW_79: "#10391a",
-          GREEN_NEW_8: "#ded",
+          GREEN_NEW_8: "#ddeedd",
           GREEN_NEW_80: "#103619",
           GREEN_NEW_81: "#0f3418",
           GREEN_NEW_82: "#0f3217",
@@ -20951,9 +20952,9 @@
           HYPESQUAD_HOUSE_3: "#45ddc0",
           INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
           LOL: "#021f25",
-          NEUTRAL_1: "#fff",
+          NEUTRAL_1: "#ffffff",
           NEUTRAL_10: "#dcdcde",
-          NEUTRAL_100: "#000",
+          NEUTRAL_100: "#000000",
           NEUTRAL_11: "#d8d8db",
           NEUTRAL_12: "#d4d4d7",
           NEUTRAL_13: "#d0d0d4",
@@ -21103,9 +21104,9 @@
           ORANGE_830: "#261005",
           ORANGE_860: "#200e05",
           ORANGE_900: "#190d04",
-          ORANGE_NEW_1: "#fff",
+          ORANGE_NEW_1: "#ffffff",
           ORANGE_NEW_10: "#fcddc8",
-          ORANGE_NEW_100: "#000",
+          ORANGE_NEW_100: "#000000",
           ORANGE_NEW_11: "#fbd9c3",
           ORANGE_NEW_12: "#fbd5bd",
           ORANGE_NEW_13: "#fad1b7",
@@ -21321,9 +21322,9 @@
           RED_830: "#2e090a",
           RED_860: "#280808",
           RED_900: "#220606",
-          RED_NEW_1: "#fff",
+          RED_NEW_1: "#ffffff",
           RED_NEW_10: "#ffd7d3",
-          RED_NEW_100: "#000",
+          RED_NEW_100: "#000000",
           RED_NEW_11: "#ffd3cf",
           RED_NEW_12: "#ffcfca",
           RED_NEW_13: "#ffcac6",
@@ -21476,9 +21477,9 @@
           TEAL_830: "#02191d",
           TEAL_860: "#021619",
           TEAL_900: "#011215",
-          TEAL_NEW_1: "#fff",
+          TEAL_NEW_1: "#ffffff",
           TEAL_NEW_10: "#d5e7e9",
-          TEAL_NEW_100: "#000",
+          TEAL_NEW_100: "#000000",
           TEAL_NEW_11: "#d0e5e7",
           TEAL_NEW_12: "#cbe2e4",
           TEAL_NEW_13: "#c7dfe2",
@@ -21579,27 +21580,27 @@
           TRANSPARENT: "transparent",
           TWITCH: "#593695",
           TWITTER: "#1da1f2",
-          WHITE: "#fff",
-          WHITE_100: "#fff",
-          WHITE_130: "#fff",
-          WHITE_160: "#fff",
-          WHITE_200: "#fff",
-          WHITE_230: "#fff",
-          WHITE_260: "#fff",
-          WHITE_300: "#fff",
-          WHITE_330: "#fff",
-          WHITE_345: "#fff",
-          WHITE_360: "#fff",
-          WHITE_400: "#fff",
-          WHITE_430: "#fff",
-          WHITE_460: "#fff",
-          WHITE_500: "#fff",
+          WHITE: "#ffffff",
+          WHITE_100: "#ffffff",
+          WHITE_130: "#ffffff",
+          WHITE_160: "#ffffff",
+          WHITE_200: "#ffffff",
+          WHITE_230: "#ffffff",
+          WHITE_260: "#ffffff",
+          WHITE_300: "#ffffff",
+          WHITE_330: "#ffffff",
+          WHITE_345: "#ffffff",
+          WHITE_360: "#ffffff",
+          WHITE_400: "#ffffff",
+          WHITE_430: "#ffffff",
+          WHITE_460: "#ffffff",
+          WHITE_500: "#ffffff",
           WHITE_530: "#e8e8e8",
           WHITE_560: "#cfcfcf",
           WHITE_600: "#adadad",
           WHITE_630: "#969696",
           WHITE_660: "#838383",
-          WHITE_700: "#666",
+          WHITE_700: "#666666",
           WHITE_730: "#5f5f5f",
           WHITE_760: "#585858",
           WHITE_800: "#4d4d4d",
@@ -21634,9 +21635,9 @@
           YELLOW_830: "#221302",
           YELLOW_860: "#1c1002",
           YELLOW_900: "#160e02",
-          YELLOW_NEW_1: "#fff",
+          YELLOW_NEW_1: "#ffffff",
           YELLOW_NEW_10: "#f1e1c9",
-          YELLOW_NEW_100: "#000",
+          YELLOW_NEW_100: "#000000",
           YELLOW_NEW_11: "#efddc3",
           YELLOW_NEW_12: "#eedabe",
           YELLOW_NEW_13: "#ecd7b8",
@@ -28282,7 +28283,7 @@
                   },
                 });
               });
-            var e5 = {
+            var e6 = {
                 aliceblue: "#f0f8ff",
                 antiquewhite: "#faebd7",
                 aqua: "#00ffff",
@@ -28439,20 +28440,20 @@
                 yellow: "#ffff00",
                 yellowgreen: "#9acd32",
               },
-              e6 = i.type;
+              e5 = i.type;
             (u.prototype.name = function () {
               for (
-                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e5);
+                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e6);
                 t < r.length;
                 t += 1
               ) {
                 var n = r[t];
-                if (e5[n] === e) return n.toLowerCase();
+                if (e6[n] === e) return n.toLowerCase();
               }
               return e;
             }),
               (E.format.named = function (e) {
-                if (e5[(e = e.toLowerCase())]) return et(e5[e]);
+                if (e6[(e = e.toLowerCase())]) return et(e6[e]);
                 throw Error("unknown color name: " + e);
               }),
               E.autodetect.push({
@@ -28460,7 +28461,7 @@
                 test: function (e) {
                   for (var t = [], r = arguments.length - 1; r-- > 0; )
                     t[r] = arguments[r + 1];
-                  if (!t.length && "string" === e6(e) && e5[e.toLowerCase()])
+                  if (!t.length && "string" === e5(e) && e6[e.toLowerCase()])
                     return "named";
                 },
               });
@@ -29434,8 +29435,8 @@
               var t1 = i.type,
                 t2 = i.clip_rgb,
                 t3 = i.TWOPI,
-                t5 = Math.pow,
-                t6 = Math.sin,
+                t6 = Math.pow,
+                t5 = Math.sin,
                 t4 = Math.cos,
                 t8 = Math.floor,
                 t7 = Math.random,
@@ -30077,10 +30078,10 @@
                 "array" === t1(a) ? (_ = a[1] - a[0]) : ((_ = 0), (a = [a, a]));
                 var i = function (i) {
                   var E = t3 * ((e + 120) / 360 + t * i),
-                    c = t5(a[0] + _ * i, n),
+                    c = t6(a[0] + _ * i, n),
                     s = ((0 !== o ? r[0] + i * o : r) * c * (1 - c)) / 2,
                     l = t4(E),
-                    u = t6(E);
+                    u = t5(E);
                   return I(
                     t2([
                       255 * (c + s * (-0.14861 * l + 1.78277 * u)),
@@ -30232,7 +30233,7 @@
                   return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
-              (I.colors = e5),
+              (I.colors = e6),
               (I.brewer = rT),
               I
             );
@@ -42258,7 +42259,7 @@ Error:`,
         "use strict";
         r.d(t, {
           U0: function () {
-            return e6;
+            return e5;
           },
           fA: function () {
             return g;
@@ -44700,7 +44701,7 @@ ${eQ}
             width: Math.abs(e.startX - e.endX),
             height: Math.abs(e.startY - e.endY),
           }),
-          e5 = (e) => {
+          e6 = (e) => {
             let t = e.clientHeight,
               r = e.clientWidth,
               n = e.width / e.height,
@@ -44711,7 +44712,7 @@ ${eQ}
               i = (t - _) / 2;
             return { startX: o, startY: i, endX: a + o, endY: _ + i };
           },
-          e6 = () => ({
+          e5 = () => ({
             name: "FeedbackScreenshot",
             setupOnce() {},
             createInput: ({ h: e, hooks: t, dialog: r, options: n }) => {
@@ -44888,7 +44889,7 @@ ${eQ}
                       [d, f] = t.useState(!1);
                     function L() {
                       let e = I.current,
-                        t = e3(e5(r));
+                        t = e3(e6(r));
                       if (e) {
                         (e.width = t.width * e2),
                           (e.height = t.height * e2),
@@ -44928,7 +44929,7 @@ ${eQ}
                         if (!e) return;
                         let t = e.getContext("2d");
                         if (!t) return;
-                        let n = e3(e5(r)),
+                        let n = e3(e6(r)),
                           a = e3(R);
                         t.clearRect(0, 0, n.width, n.height),
                           (t.fillStyle = "rgba(0, 0, 0, 0.5)"),
@@ -45186,7 +45187,7 @@ ${eQ}
                                     e.preventDefault(),
                                       !(function () {
                                         let e = s.createElement("canvas"),
-                                          t = e3(e5(r)),
+                                          t = e3(e6(r)),
                                           n = e3(R);
                                         (e.width = n.width * e2),
                                           (e.height = n.height * e2);
@@ -47540,10 +47541,10 @@ ${eQ}
           (I[(I.Pen = 1)] = "Pen"),
           (I[(I.Touch = 2)] = "Touch"),
           I);
-        function e5(e) {
+        function e6(e) {
           return "__ln" in e;
         }
-        class e6 {
+        class e5 {
           constructor() {
             (this.length = 0), (this.head = null), (this.tail = null);
           }
@@ -47635,7 +47636,7 @@ ${eQ}
                 if (this.frozen || this.locked) return;
                 let e = [],
                   t = new Set(),
-                  r = new e6(),
+                  r = new e5(),
                   n = (e) => {
                     let t = e,
                       r = -2;
@@ -50747,10 +50748,10 @@ ${eQ}
             return !1;
           }
         }
-        function t5(e) {
+        function t6(e) {
           return void 0 !== e && Math.random() < e;
         }
-        function t6(e) {
+        function t5(e) {
           let t = Date.now(),
             r = e.id || (0, y.DM)(),
             n = e.started || t,
@@ -50777,8 +50778,8 @@ ${eQ}
           { previousSessionId: n } = {},
         ) {
           var a, _;
-          let o = t6({
-            sampled: ((a = e), (_ = t), t5(a) ? "session" : !!_ && "buffer"),
+          let o = t5({
+            sampled: ((a = e), (_ = t), t6(a) ? "session" : !!_ && "buffer"),
             previousSessionId: n,
           });
           return r && t4(o), o;
@@ -50822,7 +50823,7 @@ ${eQ}
                 let t = k.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tJ("[Replay] Loading existing session", e), t6(r);
+                return tJ("[Replay] Loading existing session", e), t5(r);
               } catch (e) {
                 return null;
               }
@@ -52343,7 +52344,7 @@ ${eQ}
                               E.message !== X &&
                               E.exception &&
                               !E.type &&
-                              t5(i.getOptions().errorSampleRate)) ||
+                              t6(i.getOptions().errorSampleRate)) ||
                               "session" === r.recordingMode) &&
                               (e.tags = {
                                 ...e.tags,
@@ -53037,4 +53038,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.3d7346fa04b8edbc5a29.js.map
+//# sourceMappingURL=sentry.643a16ec0095f1558d43.js.map
