@@ -811,6 +811,7 @@ id,hash,label
 2024-10_icymi_random,807262478,random sort on ICYMI
 2024-10_icymi_sorting_fe,3306368080,FE experiment for sorting on ICYMI
 2024-10_improved_media_viewer,1621420501,Improved Desktop Media Viewer
+2024-10_merge_notifications_tab,2998143296,Merge notifications tab
 2024-10_message_attachment_send_failure,3652546672,Message Attachment Send Failure Experiment
 2024-10_mobile_video_disable,1715296116,Backgrounding Mobile App Disables Incoming Video
 2024-10_nitro_shop_entry_points,842501197,User Profile Nitro Shop Entry Points
