@@ -12556,7 +12556,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bd62b7cf7b8e2c6097716a4349bd2b0bd3e71684",
+            release: "discord_web-bb1615e102f9f4721a3ef7f1ff4ae148ad137493",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12625,8 +12625,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "342408"), "342408"));
-          o.YA("builtAt", String("1730934629011"));
+            o.YA("buildNumber", ((e = "342806"), "342806"));
+          o.YA("builtAt", String("1731014505987"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12797,6 +12797,7 @@
           null != window.GLOBAL_ENV.CDN_HOST ||
           null != window.GLOBAL_ENV.ASSET_ENDPOINT ||
           null != window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT ||
+          null != window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINT ||
           null != window.GLOBAL_ENV.WIDGET_ENDPOINT ||
           null != window.GLOBAL_ENV.INVITE_HOST ||
           null != window.GLOBAL_ENV.GUILD_TEMPLATE_HOST ||
@@ -13149,6 +13150,13 @@
                   opacity: 0.7,
                 },
               },
+            },
+            BG_BACKDROP_IMMERSIVE: {
+              category: "background",
+              [n.DARK]: { raw: "BLACK", opacity: 0.85 },
+              [n.LIGHT]: { raw: "BLACK", opacity: 0.8 },
+              [n.MIDNIGHT]: { raw: "PLUM_19", opacity: 0.9 },
+              [n.DARKER]: { raw: "BLACK", opacity: 0.85 },
             },
             BG_BACKDROP_NO_OPACITY: {
               category: "background",
@@ -21792,6 +21800,7 @@
           (n.BADGE_BRAND_BG = "badge-brand-bg"),
           (n.BADGE_BRAND_TEXT = "badge-brand-text"),
           (n.BG_BACKDROP = "bg-backdrop"),
+          (n.BG_BACKDROP_IMMERSIVE = "bg-backdrop-immersive"),
           (n.BG_BACKDROP_NO_OPACITY = "bg-backdrop-no-opacity"),
           (n.BG_BASE_PRIMARY = "bg-base-primary"),
           (n.BG_BASE_SECONDARY = "bg-base-secondary"),
@@ -22438,6 +22447,12 @@
               _.I.BRAND_560,
             ],
             "bg-backdrop": [_.I.BLACK, _.I.BLACK, _.I.PLUM_19, _.I.BLACK],
+            "bg-backdrop-immersive": [
+              _.I.BLACK,
+              _.I.BLACK,
+              _.I.PLUM_19,
+              _.I.BLACK,
+            ],
             "bg-backdrop-no-opacity": [
               _.I.BLACK,
               _.I.BLACK,
@@ -53038,4 +53053,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.643a16ec0095f1558d43.js.map
+//# sourceMappingURL=sentry.30ca1d12d368543c54b7.js.map
