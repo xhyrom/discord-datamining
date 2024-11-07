@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_nitro_tenure_rewards_collectible",
+    "label": "Nitro Tenure Reward Collectible",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables nitro tenure reward collectible for the user"
+    ],
+    "hash": 369847441,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
