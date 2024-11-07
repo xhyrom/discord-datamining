@@ -16189,6 +16189,45 @@ span.clanTag_a31c43 {
   filter: saturate(1);
   filter: saturate(var(--saturation-factor, 1));
 }
+.largeCountdownPill_aa13b8 {
+  display: flex;
+  justify-content: center;
+}
+.largeCountdownPillText_aa13b8 {
+  font-weight: 800;
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--custom-premium-colors-banner-yellow);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.unavailableCounterContainer_e57ea2 {
+  display: flex;
+  justify-content: center;
+}
+.unavailableCounterPill_e57ea2 {
+  display: inline-flex;
+  border: 1px solid var(--white);
+  padding: 0 20px;
+  border-radius: 57px;
+  justify-content: center;
+  align-items: center;
+}
+.unavailableCounterPillText_e57ea2 {
+  margin: 20px 0;
+  line-height: 8px;
+}
+.countDownText_e57ea2 {
+  padding: 5px 12px;
+  margin-left: 8px;
+}
+.tooltip_e57ea2 {
+  text-align: center;
+  width: 215px;
+  max-width: 215px;
+}
 .guildStatus_cbe7a3 {
   margin-bottom: 50px;
   text-align: center;
@@ -16307,6 +16346,9 @@ span.clanTag_a31c43 {
   height: 16px;
   margin-right: 8px;
   width: 16px;
+}
+.FPContainer_cbe7a3 {
+  margin-bottom: 23px;
 }
 .wrapper_e55051 {
   background-color: var(--background-secondary-alt);
@@ -50687,6 +50729,7 @@ code {
     var(--premium-tier-2-purple),
     var(--premium-tier-2-pink)
   );
+  --custom-premium-colors-banner-yellow: rgb(255, 234, 160);
 }
 :root {
   --custom-pending-row-max-width: 1040px;
@@ -51337,4 +51380,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.d39f37dcc127eb5c14c1.css.map*/
+/*# sourceMappingURL=12633.887b38811e4bb5d91399.css.map*/
