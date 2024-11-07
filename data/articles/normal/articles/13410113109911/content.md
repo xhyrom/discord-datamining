@@ -59,28 +59,6 @@
     height="407"
   />
 </p>
-<div class="mega-box">
-  <p class="wysiwyg-text-align-left">
-    It’s all treats, no tricks this Halloween season! Purchase a Nitro gift in
-    October and you’ll be treated with the
-    <strong>Minions avatar decoration</strong> for your profile. This Minions
-    avatar decoration is yours to keep - Halloween is a year-long celebration as
-    far as we're concerned. This offer is rolling out to eligible users
-    throughout October. Check for an orange promotion banner before purchasing.
-  </p>
-  <p class="wysiwyg-text-align-left">
-    This offer ends on <strong>November 4th, 2024</strong> and is only
-    applicable to Nitro gifts. This offer does not apply to Nitro Basic gifts.
-    <br />Curious about Nitro gifting? Check out our
-    <a
-      href="https://support.discord.com/hc/articles/360020877112"
-      target="_blank"
-      rel="noopener noreferrer"
-      >article</a
-    >
-    for more information.
-  </p>
-</div>
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an avatar decoration?
 </h1>

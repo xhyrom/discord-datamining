@@ -12,52 +12,6 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
-<h3 id="h_01J8K54C5NP7DW8KXYJE1FP9EP">
-  It’s all treats, no tricks this Halloween season! Purchase a Nitro gift in
-  October and you’ll be treated with the
-  <strong>Minions avatar decoration</strong> for your profile. This Minions
-  avatar decoration is yours to keep - Halloween is a year-long celebration as
-  far as we're concerned. This offer is rolling out to eligible users throughout
-  October. Check for an orange promotion banner before purchasing. This offer
-  ends on <strong>November 4th, 2024</strong> and is only applicable to Nitro
-  gifts.<br />Press <strong>Collect Your Reward</strong> after sending a gift to
-  collect your avatar decoration!
-</h3>
-<h3 id="h_01J8K5B3VZV81CDAK53TCRHZ1S" class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/26604516372759"
-    width="193"
-    height="411"
-  />
-    <img
-    src="https://support.discord.com/hc/article_attachments/26604548167575"
-    width="383"
-    height="412"
-  />
-</h3>
-<h3 id="h_01J8NAAG676S60B60ANXH46F04" class="wysiwyg-text-align-left">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Curious about </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >avatar decorations</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >? Check out our </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    for more information.<br /></span
-  ><strong>Note</strong>: The Minions avatar decoration will be revoked if you
-  refund your Nitro gift. This offer does not apply to Nitro Basic gifts<span
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    >. </span
-  >
-</h3>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
@@ -258,7 +212,7 @@
   >
 </h3>
 <h1 id="h_01GCCGDZ431KZC8Q55QH64853Z">
-  <span style="font-weight: 400">Managing Your Nitro Gift</span>
+  <strong>Managing Your Nitro Gift</strong>
 </h1>
 <p>
   <span style="font-weight: 400"
