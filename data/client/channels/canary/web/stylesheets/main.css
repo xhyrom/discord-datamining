@@ -9228,13 +9228,6 @@ div.modalHeader_c5e09c {
   display: flex;
   flex-flow: column nowrap;
   flex: auto;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.imageContentSafari_cf58b5 {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: auto;
 }
 .imageContainer_cf58b5 {
   display: flex;
@@ -51389,4 +51382,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.79eca8116a2275d7a72c.css.map*/
+/*# sourceMappingURL=12633.faa48740bd08327a9d6b.css.map*/
