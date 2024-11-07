@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_application_reporting_flow",
+    "label": "Apps In-App Reporting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable application IAR reporting flow"
+    ],
+    "hash": 1859137100,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
