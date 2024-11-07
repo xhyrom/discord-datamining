@@ -12556,7 +12556,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3d97fb3322d9d8ebb6ca0fa5385c404dd3de3437",
+            release: "discord_web-4ea91d1a70c85af9021ac70bac97b05be47faf83",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12625,8 +12625,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "342706"), "342706"));
-          o.YA("builtAt", String("1731007231243"));
+            o.YA("buildNumber", ((e = "342715"), "342715"));
+          o.YA("builtAt", String("1731008186048"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12797,6 +12797,7 @@
           null != window.GLOBAL_ENV.CDN_HOST ||
           null != window.GLOBAL_ENV.ASSET_ENDPOINT ||
           null != window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT ||
+          null != window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINT ||
           null != window.GLOBAL_ENV.WIDGET_ENDPOINT ||
           null != window.GLOBAL_ENV.INVITE_HOST ||
           null != window.GLOBAL_ENV.GUILD_TEMPLATE_HOST ||
@@ -53052,4 +53053,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.22d8501840fd084c035b.js.map
+//# sourceMappingURL=sentry.8f151b8f3fd454b14f3f.js.map
