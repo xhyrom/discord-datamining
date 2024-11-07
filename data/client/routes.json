@@ -5167,6 +5167,10 @@
   },
   "IGNORE_USER": {
     "url": "/users/@me/relationships/:param/ignore",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   }
 }
