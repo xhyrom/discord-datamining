@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7716471002](https://discord.com/jobs/7716471002)
 
-**Updated At:** Wed, 06 Nov 2024 19:42:56 GMT
+**Updated At:** Fri, 08 Nov 2024 22:46:40 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Design Systems team is a cross-functional team that ensures design quality across all facets of UI, content, and graphics. As a part of the team, you will be responsible for the creation and maintenance of the Mana Design System, that all product designers, engineers, and product managers use to design &amp;amp; develop at Discord. Using your full range of interaction, visual, and prototyping skills, you will own creating a coherent and ownable look &amp;amp; feel for our desktop &amp;amp; mobile experiences.
 As a qualified candidate, you have a record of leading systems projects to successful outcomes for users and the business. You are a strong cross-functional partner having worked closely with engineers, a great communicator, and above all, you approach problems holistically as a unified system. You are able to precisely articulate design rationale and present to diverse stakeholders from all across the company. You have fostered partnerships and supported broader product teams in applying a system around individual product constraints.
 Join us in creating a design system that not only elevates our brand but also empowers designers to do their best work every day.
-
+&amp;nbsp;
 What You'll Be Doing
 
 Shape the Future of Our Design Foundation - Build and expand on the foundational elements—tokens, components, and patterns—that set our design system apart. Craft a unified, cohesive set of UX and visual guidelines that bring harmony across our product experience.
@@ -28,7 +28,7 @@ Be the Spark that Inspires - Bring fresh ideas to the table and inspire the enti
 
 What you should have
 
-4+ years of experience working in UX field
+5+ years of experience working in UX field
 2+ years of experience working on a design systems team (creation, maintenance, documentation &amp;amp; support)
 Excellence in visual design / brand craft, including motion
 Experience designing on multiple platforms (Web, iOS, Android, etc)
