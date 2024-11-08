@@ -2713,21 +2713,6 @@
       "PATCH"
     ]
   },
-  "USER_ACHIEVEMENTS": {
-    "url": "/users/@me/applications/:param/achievements",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "USER_ACHIEVEMENTS_FOR_USER": {
-    "url": "/users/:param/applications/:param/achievements/:param",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
-  },
   "HANDOFF": {
     "url": "/auth/handoff",
     "allowed_methods": [
