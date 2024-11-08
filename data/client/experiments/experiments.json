@@ -10079,31 +10079,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-10_nitro_shop_entry_points",
-      "label": "User Profile Nitro Shop Entry Points",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Permanent Entry Points",
-        "Treatment 2: Enable Dimissible Upsells"
-      ],
-      "hash": 842501197,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-10_nitro_tab_forced_render",
       "label": "Nitro Tab Forced Re-render Investigation",
       "description": [
@@ -12131,6 +12106,31 @@
         -1,
         0,
         1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-10_nitro_shop_entry_points",
+      "label": "User Profile Nitro Shop Entry Points",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Permanent Entry Points",
+        "Treatment 2: Enable Dimissible Upsells"
+      ],
+      "hash": 842501197,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
