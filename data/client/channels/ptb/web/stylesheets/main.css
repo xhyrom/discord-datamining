@@ -25779,7 +25779,8 @@ div.popoutCloseButton_d523a2:hover {
   top: calc(0.5 * (-56px + var(--custom-user-profile-banner-height)));
   z-index: 5;
 }
-.activity_b8cc6d {
+.activity_b8cc6d,
+.upsell_b8cc6d div {
   border-radius: var(--radius-xs);
 }
 .popoutMenu_d7a7e9 {
@@ -26135,6 +26136,156 @@ div.popoutCloseButton_d523a2:hover {
 }
 .icon_c39d85 {
   flex-shrink: 0;
+}
+.upsellContainer_b8bbd6 {
+  border-radius: var(--radius-sm);
+}
+.upsellContent_b8bbd6 {
+  position: relative;
+  border-radius: inherit;
+  background-color: var(--profile-body-background-color);
+  animation: upsellExpand_b8bbd6 2s ease-out forwards;
+}
+@keyframes upsellExpand_b8bbd6 {
+  0% {
+    max-height: 0;
+    overflow: hidden;
+  }
+  to {
+    max-height: 100vh;
+    overflow: visible;
+  }
+}
+.upsellContent_b8bbd6:before,
+.upsellContent_b8bbd6:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.upsellContent_b8bbd6:before {
+  border-color: var(--guild-boosting-purple);
+}
+.upsellCloseIconWrapper_b8bbd6 {
+  display: flex;
+  justify-content: center;
+}
+.upsellDefaultContent_b8bbd6 {
+  padding: 12px;
+}
+.upsellHeader_b8bbd6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.upsellButtons_b8bbd6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.upsellButtonWrapper_b8bbd6 {
+  flex: 1;
+}
+.upsellButton_b8bbd6 {
+  width: 100%;
+}
+.upsellButton_b8bbd6:disabled {
+  opacity: 0.5;
+}
+.upsellRowContent_b8bbd6 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 11px 12px 16px;
+  border-radius: inherit;
+}
+.upsellRowContent_b8bbd6:before,
+.upsellRowContent_b8bbd6:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.upsellRowContent_b8bbd6:before {
+  border-color: var(--guild-boosting-purple);
+}
+.upsellContent_b8bbd6:after,
+.upsellRowContent_b8bbd6:after {
+  border-color: var(--guild-boosting-blue);
+  -webkit-mask: linear-gradient(0deg, #000, rgba(0, 0, 0, 0));
+  mask: linear-gradient(0deg, #000, rgba(0, 0, 0, 0));
+}
+.upsellRowRight_b8bbd6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.viewPremiumPerksButtonInner_b8bbd6 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.premiumIcon_b8bbd6 {
+  margin-right: 4px;
+  height: 20px;
+}
+.upsellCloseIcon_b8bbd6 {
+  color: var(--interactive-normal);
+  cursor: pointer;
+}
+.upsellCloseIcon_b8bbd6:hover {
+  color: var(--interactive-hover);
+}
+.upsellCloseIcon_b8bbd6:active {
+  color: var(--interactive-active);
+}
+.theme-light.custom-profile-theme .upsellButton_b8bbd6 {
+  background-color: hsl(var(--white-hsl) / 0.72);
+  color: var(--interactive-active);
+}
+.theme-light.custom-profile-theme .upsellButton_b8bbd6:hover {
+  background-color: hsl(var(--white-hsl) / 0.52);
+}
+.theme-light.custom-profile-theme .upsellButton_b8bbd6:active {
+  background-color: hsl(var(--white-hsl) / 0.57);
+}
+.theme-light.custom-profile-theme .upsellButton_b8bbd6:disabled {
+  opacity: 0.5;
+}
+.theme-light.custom-profile-theme .upsellContent_b8bbd6 {
+  background-color: rgb(var(--bg-overlay-color) / 0.4);
+}
+.theme-light.custom-profile-theme .viewPremiumPerksButtonShine_b8bbd6 {
+  color: hsl(var(--black-500-hsl) / 4%);
+}
+.theme-dark.custom-profile-theme .upsellButton_b8bbd6 {
+  background-color: hsl(var(--white-hsl) / 0.24);
+}
+.theme-dark.custom-profile-theme .upsellButton_b8bbd6:hover {
+  background-color: hsl(var(--white-hsl) / 0.34);
+}
+.theme-dark.custom-profile-theme .upsellButton_b8bbd6:active {
+  background-color: hsl(var(--white-hsl) / 0.39);
+}
+.theme-dark.custom-profile-theme .upsellContent_b8bbd6 {
+  background-color: rgb(var(--bg-overlay-color) / 0.4);
 }
 .container_ecc1b2 {
   display: flex;
@@ -51382,4 +51533,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.faa48740bd08327a9d6b.css.map*/
+/*# sourceMappingURL=12633.916e6b5eb5b5cac4c823.css.map*/
