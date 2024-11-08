@@ -476,7 +476,7 @@
               if (e[r] !== t[r]) return e[r] > t[r] ? 1 : -1;
             return 0;
           }
-          function U(e) {
+          function P(e) {
             var t = e.abs();
             return (
               !t.isUnit() &&
@@ -485,7 +485,7 @@
                   (!!t.lesser(49) || void 0)))
             );
           }
-          function P(e, t) {
+          function U(e, t) {
             for (var r, a, _, o = e.prev(), i = o, E = 0; i.isEven(); )
               (i = i.divide(2)), E++;
             e: for (a = 0; a < t.length; a++) {
@@ -785,12 +785,12 @@
             (E.prototype.isDivisibleBy = i.prototype.isDivisibleBy =
               o.prototype.isDivisibleBy),
             (o.prototype.isPrime = function (e) {
-              var t = U(this);
+              var t = P(this);
               if (void 0 !== t) return t;
               var r = this.abs(),
                 a = r.bitLength();
               if (a <= 64)
-                return P(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+                return U(r, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
               for (
                 var _ = Math.log(2) * a.toJSNumber(),
                   o = Math.ceil(!0 === e ? 2 * Math.pow(_, 2) : _),
@@ -800,11 +800,11 @@
                 E++
               )
                 i.push(n(E + 2));
-              return P(r, i);
+              return U(r, i);
             }),
             (E.prototype.isPrime = i.prototype.isPrime = o.prototype.isPrime),
             (o.prototype.isProbablePrime = function (t, r) {
-              var a = U(this);
+              var a = P(this);
               if (e !== a) return a;
               for (
                 var _ = this.abs(), o = e === t ? 5 : t, i = [], E = 0;
@@ -812,7 +812,7 @@
                 E++
               )
                 i.push(n.randBetween(2, _.minus(2), r));
-              return P(_, i);
+              return U(_, i);
             }),
             (E.prototype.isProbablePrime = i.prototype.isProbablePrime =
               o.prototype.isProbablePrime),
@@ -2022,8 +2022,8 @@
         e.exports = function (e, t, r, o, R, N, C) {
           E(r, t, o);
           var g,
-            U,
             P,
+            U,
             M = function (e) {
               if (e === R && v) return v;
               if (!L && e && e in y) return y[e];
@@ -2064,12 +2064,12 @@
                   }))),
             R)
           ) {
-            if (((U = { values: M(h), keys: N ? v : M(p), entries: M(S) }), C))
-              for (P in U) (L || m || !(P in y)) && I(y, P, U[P]);
-            else n({ target: t, proto: !0, forced: L || m }, U);
+            if (((P = { values: M(h), keys: N ? v : M(p), entries: M(S) }), C))
+              for (U in P) (L || m || !(U in y)) && I(y, U, P[U]);
+            else n({ target: t, proto: !0, forced: L || m }, P);
           }
           return (
-            (!_ || C) && y[O] !== v && I(y, O, v, { name: R }), (A[t] = v), U
+            (!_ || C) && y[O] !== v && I(y, O, v, { name: R }), (A[t] = v), P
           );
         };
       },
@@ -3264,8 +3264,8 @@
               C = h && R.call(t, "__wrapped__");
             if (D || C) {
               var g = D ? e.value() : e,
-                U = C ? t.value() : t;
-              return T || (T = new n()), N(g, U, r, A, T);
+                P = C ? t.value() : t;
+              return T || (T = new n()), N(g, P, r, A, T);
             }
           }
           return !!S && (T || (T = new n()), o(e, t, r, A, N, T));
@@ -4454,7 +4454,7 @@
             return tW;
           },
           ABu: function () {
-            return eP;
+            return eU;
           },
           AEg: function () {
             return eq;
@@ -4502,7 +4502,7 @@
             return j;
           },
           CgE: function () {
-            return tP;
+            return tU;
           },
           CkL: function () {
             return eg;
@@ -4580,7 +4580,7 @@
             return oR;
           },
           IE4: function () {
-            return U;
+            return P;
           },
           IIU: function () {
             return ea;
@@ -4646,7 +4646,7 @@
             return _M;
           },
           LPv: function () {
-            return eU;
+            return eP;
           },
           Lcj: function () {
             return ei;
@@ -4742,7 +4742,7 @@
             return ec;
           },
           QKv: function () {
-            return P;
+            return U;
           },
           QL: function () {
             return ak.QL;
@@ -5012,7 +5012,7 @@
             return eb;
           },
           eWB: function () {
-            return _U;
+            return _P;
           },
           ecB: function () {
             return e0;
@@ -5042,7 +5042,7 @@
             return aF.fM;
           },
           fo$: function () {
-            return _P;
+            return _U;
           },
           frH: function () {
             return ak.fr;
@@ -5402,8 +5402,8 @@
           D,
           C,
           g,
-          U,
           P,
+          U,
           M,
           G,
           m,
@@ -5456,8 +5456,8 @@
           eD,
           eC,
           eg,
-          eU,
           eP,
+          eU,
           eM,
           eG,
           em,
@@ -5520,8 +5520,8 @@
           tD,
           tC,
           tg,
-          tU,
           tP,
+          tU,
           tM,
           tG,
           tm,
@@ -5584,8 +5584,8 @@
           rD,
           rC,
           rg,
-          rU,
           rP,
+          rU,
           rM,
           rG,
           rm,
@@ -5648,8 +5648,8 @@
           nD,
           nC,
           ng,
-          nU,
           nP,
+          nU,
           nM,
           nG,
           nm,
@@ -5712,8 +5712,8 @@
           aD,
           aC,
           ag,
-          aU,
           aP,
+          aU,
           aM,
           aG = r(512722),
           am = r.n(aG),
@@ -6160,11 +6160,11 @@
           (rA.NO_ROUTE = "NO_ROUTE"),
           (rA.ICE_CHECKING = "ICE_CHECKING"),
           (rA.DTLS_CONNECTING = "DTLS_CONNECTING"),
-          ((rN = U || (U = {})).UNKNOWN = "unknown"),
+          ((rN = P || (P = {})).UNKNOWN = "unknown"),
           (rN.BAD = "bad"),
           (rN.AVERAGE = "average"),
           (rN.FINE = "fine"),
-          ((rT = P || (P = {})).CONNECTED = "connected"),
+          ((rT = U || (U = {})).CONNECTED = "connected"),
           (rT.CONNECTING = "connecting"),
           (rT.ERROR = "error"),
           ((rd = M || (M = {})).MANUAL_ENABLED = "MANUAL_ENABLED"),
@@ -6249,12 +6249,12 @@
           (rg.IN_GAME_TEXT = "IN_GAME_TEXT"),
           (rg.IN_GAME_ACTIVE = "IN_GAME_ACTIVE"),
           (rg.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"),
-          ((rU = Y || (Y = {})).LARGE = "large"),
-          (rU.SMALL = "small"),
-          ((rP = x || (x = {}))[(rP.ACTIVE = 0)] = "ACTIVE"),
-          (rP[(rP.TIMED_OUT = 1)] = "TIMED_OUT"),
-          (rP[(rP.DISMISSED = 2)] = "DISMISSED"),
-          (rP[(rP.FOCUSED = 3)] = "FOCUSED"),
+          ((rP = Y || (Y = {})).LARGE = "large"),
+          (rP.SMALL = "small"),
+          ((rU = x || (x = {}))[(rU.ACTIVE = 0)] = "ACTIVE"),
+          (rU[(rU.TIMED_OUT = 1)] = "TIMED_OUT"),
+          (rU[(rU.DISMISSED = 2)] = "DISMISSED"),
+          (rU[(rU.FOCUSED = 3)] = "FOCUSED"),
           ((rM = K || (K = {})).TOP_LEFT = "topLeft"),
           (rM.TOP_RIGHT = "topRight"),
           (rM.BOTTOM_LEFT = "bottomLeft"),
@@ -6924,13 +6924,6 @@
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
             USER_AGREEMENTS: "/users/@me/agreements",
-            USER_ACHIEVEMENTS: (e) =>
-              "/users/@me/applications/".concat(e, "/achievements"),
-            USER_ACHIEVEMENTS_FOR_USER: (e, t, r) =>
-              "/users/"
-                .concat(e, "/applications/")
-                .concat(t, "/achievements/")
-                .concat(r),
             HANDOFF: "/auth/handoff",
             HANDOFF_EXCHANGE: "/auth/handoff/exchange",
             LIBRARY: "/users/@me/library",
@@ -7816,8 +7809,8 @@
           _D = 1024,
           _C = 2e3,
           _g = 64e3,
-          _U = 96e3,
-          _P = "0000",
+          _P = 96e3,
+          _U = "0000",
           _M = "1",
           _G = 1e4,
           _m = 50,
@@ -9271,12 +9264,12 @@
           (na.BOTTOM_CHANNEL_SCREEN_DRAG_START =
             "BOTTOM_CHANNEL_SCREEN_DRAG_START"),
           (na.OVERLAY_V3_SHOW_WIDGETS = "OVERLAY_V3_SHOW_WIDGETS"),
-          ((n_ = eU || (eU = {})).TOGGLE_REACTION_POPOUT =
+          ((n_ = eP || (eP = {})).TOGGLE_REACTION_POPOUT =
             "TOGGLE_REACTION_POPOUT"),
           (n_.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (n_.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
         let _z = 50;
-        ((no = eP || (eP = {})).TWITCH = "twitch"),
+        ((no = eU || (eU = {})).TWITCH = "twitch"),
           (no.YOUTUBE = "youtube"),
           (no.SKYPE = "skype"),
           (no.STEAM = "steam"),
@@ -11018,12 +11011,12 @@
           (ng.PORTRAIT = "portrait"),
           (ng.LANDSCAPE = "landscape"),
           (ng.MINIMIZED = "minimized"),
-          ((nU = ez || (ez = {})).USER_SETTINGS = "USER_SETTINGS"),
-          (nU.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
-          (nU.GUILD_SETTINGS = "GUILD_SETTINGS"),
-          (nU.RTC_DEBUG = "RTC_DEBUG"),
-          (nU.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
-          (nU.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
+          ((nP = ez || (ez = {})).USER_SETTINGS = "USER_SETTINGS"),
+          (nP.CHANNEL_SETTINGS = "CHANNEL_SETTINGS"),
+          (nP.GUILD_SETTINGS = "GUILD_SETTINGS"),
+          (nP.RTC_DEBUG = "RTC_DEBUG"),
+          (nP.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
+          (nP.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
         let oa = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
@@ -11103,10 +11096,10 @@
           GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: 201,
           GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: 202,
         });
-        ((nP = eQ || (eQ = {})).ALL = "ALL"),
-          (nP.CREATE = "CREATE"),
-          (nP.UPDATE = "UPDATE"),
-          (nP.DELETE = "DELETE"),
+        ((nU = eQ || (eQ = {})).ALL = "ALL"),
+          (nU.CREATE = "CREATE"),
+          (nU.UPDATE = "UPDATE"),
+          (nU.DELETE = "DELETE"),
           ((nM = eZ || (eZ = {})).USER = "1"),
           (nM.ROLE = "0"),
           ((nG = e0 || (e0 = {}))[(nG.ROLE = 1)] = "ROLE"),
@@ -11898,7 +11891,7 @@
             down: 81,
             up: 82,
           });
-        ((an = tU || (tU = {}))[(an.Left = 0)] = "Left"),
+        ((an = tP || (tP = {}))[(an.Left = 0)] = "Left"),
           (an[(an.Right = 1)] = "Right"),
           (an[(an.Center = 2)] = "Center"),
           (an[(an.Back = 3)] = "Back"),
@@ -12018,7 +12011,7 @@
           "\\": 220,
           "'": 222,
         });
-        ((aa = tP || (tP = {}))[(aa.WINDOWS = 1)] = "WINDOWS"),
+        ((aa = tU || (tU = {}))[(aa.WINDOWS = 1)] = "WINDOWS"),
           (aa[(aa.MACOS = 2)] = "MACOS"),
           (aa[(aa.LINUX = 3)] = "LINUX"),
           (aa[(aa.BROWSER = 4)] = "BROWSER"),
@@ -12138,14 +12131,14 @@
         let op = 100,
           oh =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
-        ((aU = tZ || (tZ = {}))[(aU.NULL = 0)] = "NULL"),
-          (aU[(aU.DISABLED = 1)] = "DISABLED"),
-          (aU[(aU.ENABLED = 2)] = "ENABLED");
+        ((aP = tZ || (tZ = {}))[(aP.NULL = 0)] = "NULL"),
+          (aP[(aP.DISABLED = 1)] = "DISABLED"),
+          (aP[(aP.ENABLED = 2)] = "ENABLED");
         let oS =
           "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
-        ((aP = t0 || (t0 = {}))[(aP.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
-          (aP[(aP.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
-          (aP[(aP.ALLOW_ANY_VIEWER_CLIPS = 4)] = "ALLOW_ANY_VIEWER_CLIPS"),
+        ((aU = t0 || (t0 = {}))[(aU.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
+          (aU[(aU.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
+          (aU[(aU.ALLOW_ANY_VIEWER_CLIPS = 4)] = "ALLOW_ANY_VIEWER_CLIPS"),
           ((aM = t1 || (t1 = {})).LOADING = "LOADING"),
           (aM.ERROR = "ERROR"),
           (aM.READY = "READY");
@@ -12201,8 +12194,8 @@
           D,
           C,
           g,
-          U,
           P,
+          U,
           M,
           G,
           m,
@@ -12441,9 +12434,9 @@
             "#DF90AF",
           ],
         };
-        ((et = U || (U = {}))[(et.HIGH = 0.6)] = "HIGH"),
+        ((et = P || (P = {}))[(et.HIGH = 0.6)] = "HIGH"),
           (et[(et.LOW = 0.3)] = "LOW"),
-          ((er = P || (P = {}))[(er.IMAGE = 0)] = "IMAGE"),
+          ((er = U || (U = {}))[(er.IMAGE = 0)] = "IMAGE"),
           (er[(er.GIF = 1)] = "GIF"),
           (er[(er.VIDEO = 2)] = "VIDEO"),
           ((en = M || (M = {})).OVERVIEW = "overview"),
@@ -12561,7 +12554,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6d8a0fe9b53361187fa4f5da647206e34a01c806",
+            release: "discord_web-858b03ee6c77ab930bc84f39184cff3bd64787f4",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12630,8 +12623,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "343074"), "343074"));
-          o.YA("builtAt", String("1731088329727"));
+            o.YA("buildNumber", ((e = "343099"), "343099"));
+          o.YA("builtAt", String("1731090480668"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12690,7 +12683,7 @@
             return O;
           },
           vc: function () {
-            return U;
+            return P;
           },
           yP: function () {
             return c;
@@ -12762,7 +12755,7 @@
             UNREADS_ALL_MESSAGES: 1024,
             UNREADS_ONLY_MENTIONS: 512,
           },
-          U = {
+          P = {
             OPT_IN_CHANNELS_ON: 16384,
             OPT_IN_CHANNELS_OFF: 8192,
             UNREADS_ONLY_MENTIONS: 4096,
@@ -16819,7 +16812,7 @@
             return g;
           },
           ET: function () {
-            return P;
+            return U;
           },
           Et: function () {
             return T;
@@ -16852,7 +16845,7 @@
             return eF;
           },
           Pl: function () {
-            return eU;
+            return eP;
           },
           Py: function () {
             return l;
@@ -16864,7 +16857,7 @@
             return eL;
           },
           RG: function () {
-            return U;
+            return P;
           },
           RK: function () {
             return eK;
@@ -16915,7 +16908,7 @@
             return G;
           },
           dG: function () {
-            return eP;
+            return eU;
           },
           fK: function () {
             return ek;
@@ -16992,8 +16985,8 @@
           D,
           C,
           g,
-          U,
           P,
+          U,
           M,
           G,
           m,
@@ -17184,7 +17177,7 @@
         ((F = N || (N = {}))[(F.VIEW_CHANNEL = 1024)] = "VIEW_CHANNEL"),
           (F[(F.READ_MESSAGE_HISTORY = 65536)] = "READ_MESSAGE_HISTORY"),
           (F[(F.CONNECT = 1048576)] = "CONNECT");
-        let eU = Object.freeze({
+        let eP = Object.freeze({
             CREATE_INSTANT_INVITE: ei.r0(0),
             KICK_MEMBERS: ei.r0(1),
             BAN_MEMBERS: ei.r0(2),
@@ -17237,22 +17230,22 @@
             MANAGE_EVENTS: ei.r0(33),
             CREATE_EVENTS: ei.r0(44),
           }),
-          eP = function () {
+          eU = function () {
             for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
               t[r] = arguments[r];
           },
           eM = () => null,
           eG = () => Promise.resolve(),
           em = [
-            eU.KICK_MEMBERS,
-            eU.BAN_MEMBERS,
-            eU.ADMINISTRATOR,
-            eU.MANAGE_CHANNELS,
-            eU.MANAGE_GUILD,
-            eU.MANAGE_ROLES,
-            eU.MANAGE_MESSAGES,
-            eU.MANAGE_THREADS,
-            eU.MODERATE_MEMBERS,
+            eP.KICK_MEMBERS,
+            eP.BAN_MEMBERS,
+            eP.ADMINISTRATOR,
+            eP.MANAGE_CHANNELS,
+            eP.MANAGE_GUILD,
+            eP.MANAGE_ROLES,
+            eP.MANAGE_MESSAGES,
+            eP.MANAGE_THREADS,
+            eP.MODERATE_MEMBERS,
           ],
           ey = ei.$e(...em),
           eb = 1,
@@ -17320,8 +17313,6 @@
           (X.NETWORKING_SYSTEM_METRICS = "NETWORKING_SYSTEM_METRICS"),
           (X.NETWORKING_PEER_METRICS = "NETWORKING_PEER_METRICS"),
           (X.NETWORKING_CREATE_TOKEN = "NETWORKING_CREATE_TOKEN"),
-          (X.SET_USER_ACHIEVEMENT = "SET_USER_ACHIEVEMENT"),
-          (X.GET_USER_ACHIEVEMENTS = "GET_USER_ACHIEVEMENTS"),
           (X.USER_SETTINGS_GET_LOCALE = "USER_SETTINGS_GET_LOCALE"),
           (X.SEND_GENERIC_EVENT = "SEND_GENERIC_EVENT"),
           (X.SEND_ANALYTICS_EVENT = "SEND_ANALYTICS_EVENT"),
@@ -17375,7 +17366,6 @@
           (j.OVERLAY_UPDATE = "OVERLAY_UPDATE"),
           (j.ENTITLEMENT_CREATE = "ENTITLEMENT_CREATE"),
           (j.ENTITLEMENT_DELETE = "ENTITLEMENT_DELETE"),
-          (j.USER_ACHIEVEMENT_UPDATE = "USER_ACHIEVEMENT_UPDATE"),
           (j.VOICE_CHANNEL_EFFECT_SEND = "VOICE_CHANNEL_EFFECT_SEND"),
           (j.VOICE_CHANNEL_EFFECT_RECENT_EMOJI =
             "VOICE_CHANNEL_EFFECT_RECENT_EMOJI"),
@@ -17896,10 +17886,10 @@
           (et[(et.INDIE = 67)] = "INDIE"),
           (et[(et.ARCADE = 68)] = "ARCADE"),
           (et[(et.POINT_AND_CLICK = 69)] = "POINT_AND_CLICK"),
-          ((er = U || (U = {}))[(er.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
+          ((er = P || (P = {}))[(er.GUILD_ROLE_SUBSCRIPTIONS = 1)] =
             "GUILD_ROLE_SUBSCRIPTIONS"),
           (er[(er.GUILD_PRODUCTS = 2)] = "GUILD_PRODUCTS"),
-          ((en = P || (P = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
+          ((en = U || (U = {})).PERMISSION_DENIED = "PERMISSION_DENIED"),
           (en.PERMISSION_DISMISSED = "PERMISSION_DISMISSED"),
           (en.NO_DEVICES_FOUND = "NO_DEVICES_FOUND"),
           ((ea = M || (M = {})).SWIPE = "SWIPE"),
@@ -27590,13 +27580,13 @@
                   n + "(" + r.join(",") + ")"
                 );
               },
-              U = Math.round,
-              P = i.unpack,
+              P = Math.round,
+              U = i.unpack,
               M = Math.round,
               G = function () {
                 for (var e, t, r, n, a = [], _ = arguments.length; _--; )
                   a[_] = arguments[_];
-                var o = (a = P(a, "hsl"))[0],
+                var o = (a = U(a, "hsl"))[0],
                   i = a[1],
                   E = a[2];
                 if (0 === i) t = r = n = 255 * E;
@@ -27690,9 +27680,9 @@
                   n = C(e) || "rgb";
                 return "hsl" == n.substr(0, 3)
                   ? g(S(r), n)
-                  : ((r[0] = U(r[0])),
-                    (r[1] = U(r[1])),
-                    (r[2] = U(r[2])),
+                  : ((r[0] = P(r[0])),
+                    (r[1] = P(r[1])),
+                    (r[2] = P(r[2])),
                     ("rgba" === n || (r.length > 3 && r[3] < 1)) &&
                       ((r[3] = r.length > 3 ? r[3] : 1), (n = "rgba")),
                     n + "(" + r.slice(0, "rgb" === n ? 3 : 4).join(",") + ")");
@@ -28133,24 +28123,24 @@
                 t3: 0.008856452,
               },
               eg = i.unpack,
-              eU = Math.pow,
-              eP = function (e) {
+              eP = Math.pow,
+              eU = function (e) {
                 return (e /= 255) <= 0.04045
                   ? e / 12.92
-                  : eU((e + 0.055) / 1.055, 2.4);
+                  : eP((e + 0.055) / 1.055, 2.4);
               },
               eM = function (e) {
-                return e > eC.t3 ? eU(e, 1 / 3) : e / eC.t2 + eC.t0;
+                return e > eC.t3 ? eP(e, 1 / 3) : e / eC.t2 + eC.t0;
               },
               eG = function (e, t, r) {
                 return (
-                  (e = eP(e)),
-                  (t = eP(t)),
+                  (e = eU(e)),
+                  (t = eU(t)),
                   [
                     eM(
                       (0.4124564 * e +
                         0.3575761 * t +
-                        0.1804375 * (r = eP(r))) /
+                        0.1804375 * (r = eU(r))) /
                         eC.Xn,
                     ),
                     eM((0.2126729 * e + 0.7151522 * t + 0.072175 * r) / eC.Yn),
@@ -28811,7 +28801,7 @@
               throw Error("unknown channel " + n + " in mode " + r);
             };
             var tg = i.type,
-              tU = Math.pow;
+              tP = Math.pow;
             u.prototype.luminance = function (e) {
               if (void 0 !== e && "number" === tg(e)) {
                 if (0 === e) return new u([0, 0, 0, this._rgb[3]], "rgb");
@@ -28834,9 +28824,9 @@
                   ).rgb();
                 return new u(a.concat([this._rgb[3]]));
               }
-              return tP.apply(void 0, this._rgb.slice(0, 3));
+              return tU.apply(void 0, this._rgb.slice(0, 3));
             };
-            var tP = function (e, t, r) {
+            var tU = function (e, t, r) {
                 return (
                   (e = tM(e)),
                   (t = tM(t)),
@@ -28846,7 +28836,7 @@
               tM = function (e) {
                 return (e /= 255) <= 0.03928
                   ? e / 12.92
-                  : tU((e + 0.055) / 1.055, 2.4);
+                  : tP((e + 0.055) / 1.055, 2.4);
               },
               tG = {},
               tm = i.type,
@@ -29561,12 +29551,12 @@
                       for (var S = 0; S < r; S++) f[S] = 0;
                       for (var D = 0; D < T; D++) {
                         for (
-                          var C = o[D], g = Number.MAX_VALUE, U = void 0, P = 0;
-                          P < r;
-                          P++
+                          var C = o[D], g = Number.MAX_VALUE, P = void 0, U = 0;
+                          U < r;
+                          U++
                         ) {
-                          var M = rr(p[P] - C);
-                          M < g && ((g = M), (U = P)), f[U]++, (d[D] = U);
+                          var M = rr(p[U] - C);
+                          M < g && ((g = M), (P = U)), f[P]++, (d[D] = P);
                         }
                       }
                       for (var G = Array(r), m = 0; m < r; m++) G[m] = null;
@@ -30205,21 +30195,21 @@
                   D = _(rl(A, L)),
                   C = S >= 0 ? S : S + 360,
                   g = D >= 0 ? D : D + 360,
-                  U = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
-                  P =
+                  P = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
+                  U =
                     1 -
-                    0.17 * rI(o(U - 30)) +
-                    0.24 * rI(o(2 * U)) +
-                    0.32 * rI(o(3 * U + 6)) -
-                    0.2 * rI(o(4 * U - 63)),
+                    0.17 * rI(o(P - 30)) +
+                    0.24 * rI(o(2 * P)) +
+                    0.32 * rI(o(3 * P + 6)) -
+                    0.2 * rI(o(4 * P - 63)),
                   M = g - C;
                 (M = 180 >= ru(M) ? M : g <= C ? M + 360 : M - 360),
                   (M = 2 * ri(O * p) * rR(o(M) / 2));
                 var G = p - O,
                   m = 1 + (0.015 * rE(N - 50, 2)) / ri(20 + rE(N - 50, 2)),
                   y = 1 + 0.045 * h,
-                  b = 1 + 0.015 * h * P,
-                  v = 30 * rA(-rE((U - 275) / 25, 2)),
+                  b = 1 + 0.015 * h * U,
+                  v = 30 * rA(-rE((P - 275) / 25, 2)),
                   w =
                     -(2 * ri(rE(h, 7) / (rE(h, 7) + rE(25, 7)))) * rR(2 * o(v));
                 return rs(
@@ -30664,7 +30654,7 @@
               return A.t;
             },
             browserProfilingIntegration: function () {
-              return P.x;
+              return U.x;
             },
             browserTracingIntegration: function () {
               return g.E8;
@@ -30826,7 +30816,7 @@
               return R.O;
             },
             makeBrowserOfflineTransport: function () {
-              return U.O1;
+              return P.O1;
             },
             makeFetchTransport: function () {
               return o.f;
@@ -30977,8 +30967,8 @@
           D = r(166800),
           C = r(799033),
           g = r(325124),
-          U = r(281894),
-          P = r(130260);
+          P = r(281894),
+          U = r(130260);
       },
       408720: function (e, t, r) {
         "use strict";
@@ -32019,13 +32009,13 @@
         "use strict";
         r.d(t, {
           $X: function () {
-            return P;
+            return U;
           },
           AJ: function () {
             return S;
           },
           Ei: function () {
-            return U;
+            return P;
           },
           GC: function () {
             return y;
@@ -32126,7 +32116,7 @@
         let D = new WeakMap(),
           C = !1,
           g = 3e4;
-        function U() {
+        function P() {
           let e = I.m9.Profiler;
           if ("function" != typeof e) {
             u.X &&
@@ -32149,7 +32139,7 @@
               (C = !0);
           }
         }
-        function P(e) {
+        function U(e) {
           var t;
           if (C)
             return (
@@ -32421,7 +32411,7 @@
         "use strict";
         r.d(t, {
           Eg: function () {
-            return U;
+            return P;
           },
           Jd: function () {
             return M;
@@ -32433,7 +32423,7 @@
             return g;
           },
           lA: function () {
-            return P;
+            return U;
           },
           nV: function () {
             return D;
@@ -32591,8 +32581,8 @@
                 "Not injecting report dialog. No injection point found in HTML",
               );
         }
-        function U() {}
-        function P(e) {
+        function P() {}
+        function U(e) {
           e();
         }
         function M(e) {
@@ -32816,8 +32806,8 @@
                 beforeStartSpan: p,
                 idleTimeout: C,
                 finalTimeout: g,
-                childSpanTimeout: U,
-                markBackgroundSpan: P,
+                childSpanTimeout: P,
+                markBackgroundSpan: U,
                 traceFetch: M,
                 traceXHR: G,
                 shouldCreateSpanForRequest: m,
@@ -32845,7 +32835,7 @@
               let i = (0, o.R)(a, {
                 idleTimeout: C,
                 finalTimeout: g,
-                childSpanTimeout: U,
+                childSpanTimeout: P,
                 disableAutoFinish: r,
                 beforeSpanEnd: (e) => {
                   w(), (0, n.f7)(e);
@@ -32938,7 +32928,7 @@
                             },
                           }));
                       })),
-                  P && (0, f.j)(),
+                  U && (0, f.j)(),
                   N &&
                     (function (e, t, r, n) {
                       let a;
@@ -32989,7 +32979,7 @@
                           },
                           { once: !1, capture: !0 },
                         );
-                    })(C, g, U, B),
+                    })(C, g, P, B),
                   t && (0, a.D)(),
                   (0, L.L7)(e, {
                     traceFetch: M,
@@ -33060,8 +33050,8 @@
               enableHTTPTimings: S,
               tracePropagationTargets: C,
             } = { traceFetch: h.traceFetch, traceXHR: h.traceXHR, ...t },
-            U = "function" == typeof N ? N : (e) => !0,
-            P = (e) =>
+            P = "function" == typeof N ? N : (e) => !0,
+            U = (e) =>
               (function (e, t) {
                 let r = L.m9.location && L.m9.location.href;
                 if (r) {
@@ -33104,7 +33094,7 @@
               }
             }),
             (0, R.Uf)((e) => {
-              let t = (0, _.m)(e, U, P, M);
+              let t = (0, _.m)(e, P, U, M);
               if (
                 (e.response &&
                   e.fetchData.__span &&
@@ -33184,7 +33174,7 @@
                       })(_, h, (0, i.z)() && O ? p : void 0),
                     p
                   );
-                })(e, U, P, M);
+                })(e, P, U, M);
                 S && t && D(t);
               });
         }
@@ -34799,7 +34789,7 @@ Reason: ${e}`))
             return s.eW;
           },
           id: function () {
-            return P.i;
+            return U.i;
           },
           ix: function () {
             return _.ix;
@@ -34826,7 +34816,7 @@ Reason: ${e}`))
             return R.q;
           },
           rE: function () {
-            return U.r;
+            return P.r;
           },
           rJ: function () {
             return s.rJ;
@@ -34899,8 +34889,8 @@ Reason: ${e}`))
           D = r(907765),
           C = r(898029),
           g = r(757502),
-          U = r(726318),
-          P = r(93198),
+          P = r(726318),
+          U = r(93198),
           M = r(925746),
           G = r(425930),
           m = r(820284),
@@ -36844,11 +36834,11 @@ Url: ${s(e)}`),
                 t
               );
             })(e);
-          function U() {
+          function P() {
             r && (clearTimeout(r), (r = void 0));
           }
-          function P(e) {
-            U(),
+          function U(e) {
+            P(),
               (r = setTimeout(() => {
                 !N && 0 === A.size && d && ((T = "idleTimeout"), g.end(e));
               }, L));
@@ -36921,7 +36911,7 @@ Url: ${s(e)}`),
                   if ((0, s.Dp)(g).includes(e)) {
                     var t;
                     (t = e.spanContext().spanId),
-                      U(),
+                      P(),
                       A.set(t, !0),
                       M((0, n.ph)() + p / 1e3);
                   }
@@ -36934,15 +36924,15 @@ Url: ${s(e)}`),
                 if (!N)
                   (t = e.spanContext().spanId),
                     A.has(t) && A.delete(t),
-                    0 === A.size && P((0, n.ph)() + L / 1e3);
+                    0 === A.size && U((0, n.ph)() + L / 1e3);
               }),
             ),
             f.push(
               S.on("idleSpanEnableAutoFinish", (e) => {
-                e === g && ((d = !0), P(), A.size && M());
+                e === g && ((d = !0), U(), A.size && M());
               }),
             ),
-            !t.disableAutoFinish && P(),
+            !t.disableAutoFinish && U(),
             setTimeout(() => {
               !N &&
                 (g.setStatus({ code: u.jt, message: "deadline_exceeded" }),
@@ -37417,7 +37407,7 @@ Url: ${s(e)}`),
             return h;
           },
           Iw: function () {
-            return U;
+            return P;
           },
           V0: function () {
             return S;
@@ -37464,7 +37454,7 @@ Url: ${s(e)}`),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
-                    : P({
+                    : U({
                         parentSpan: _,
                         spanArguments: n,
                         forceTransaction: a,
@@ -37498,7 +37488,7 @@ Url: ${s(e)}`),
                 o =
                   e.onlyIfParent && !_
                     ? new d.b()
-                    : P({
+                    : U({
                         parentSpan: _,
                         spanArguments: n,
                         forceTransaction: a,
@@ -37538,7 +37528,7 @@ Url: ${s(e)}`),
               a = y(t);
             return e.onlyIfParent && !a
               ? new d.b()
-              : P({
+              : U({
                   parentSpan: a,
                   spanArguments: r,
                   forceTransaction: n,
@@ -37557,7 +37547,7 @@ Url: ${s(e)}`),
             ? r.withActiveSpan(e, t)
             : (0, i.$e)((r) => ((0, I.D)(r, e || void 0), t(r)));
         }
-        function U(e) {
+        function P(e) {
           return (0, i.$e)(
             (t) => (
               t.setPropagationContext((0, a.Q)()),
@@ -37569,7 +37559,7 @@ Url: ${s(e)}`),
             ),
           );
         }
-        function P({
+        function U({
           parentSpan: e,
           spanArguments: t,
           forceTransaction: r,
@@ -38388,10 +38378,10 @@ Url: ${s(e)}`),
             return g;
           },
           Gx: function () {
-            return U;
+            return P;
           },
           HN: function () {
-            return P;
+            return U;
           },
           HR: function () {
             return A;
@@ -38554,16 +38544,16 @@ Url: ${s(e)}`),
             Array.from(t)
           );
         }
-        function U(e) {
+        function P(e) {
           return e[S] || e;
         }
-        function P() {
+        function U() {
           let e = (0, i.c)(),
             t = (0, o.G)(e);
           return t.getActiveSpan ? t.getActiveSpan() : (0, u.Y)((0, E.nZ)());
         }
         function M(e, t, r, n, a, _) {
-          let o = P();
+          let o = U();
           o && (0, c.V)(o, e, t, r, n, a, _);
         }
       },
@@ -41495,25 +41485,25 @@ Error:`,
                   D = L.getUser(),
                   C = r.getIntegrationByName("Replay"),
                   g = C && C.getReplayId(),
-                  U = void 0 !== D ? D.email || D.id || D.ip_address : void 0;
+                  P = void 0 !== D ? D.email || D.id || D.ip_address : void 0;
                 try {
                   t = L.getScopeData().contexts.profile.profile_id;
                 } catch (e) {}
-                let P = (0, E.Rt)(l.target),
+                let U = (0, E.Rt)(l.target),
                   M = (0, c.Jr)({
                     release: T.release,
                     environment: T.environment,
                     transaction: S,
                     [_.JQ]: e.value,
                     [_.S3]: "auto.http.browser.inp",
-                    user: U || void 0,
+                    user: P || void 0,
                     profile_id: t || void 0,
                     replay_id: g || void 0,
                     "user_agent.original":
                       s.m.navigator && s.m.navigator.userAgent,
                   }),
                   G = (0, o.qp)({
-                    name: P,
+                    name: U,
                     op: `ui.interaction.${A}`,
                     attributes: M,
                     startTime: d,
@@ -41617,13 +41607,13 @@ Error:`,
           return G("cls", e, C, n, t);
         }
         function L(e, t = !1) {
-          return G("lcp", e, U, _, t);
+          return G("lcp", e, P, _, t);
         }
         function O(e) {
           return G("fid", e, g, a);
         }
         function p(e) {
-          return G("ttfb", e, P, o);
+          return G("ttfb", e, U, o);
         }
         function h(e) {
           return G("inp", e, M, i);
@@ -41677,7 +41667,7 @@ Error:`,
             D("fid", { metric: e }), (a = e);
           });
         }
-        function U() {
+        function P() {
           return (0, R.N)(
             (e) => {
               D("lcp", { metric: e }), (_ = e);
@@ -41685,7 +41675,7 @@ Error:`,
             { reportAllChanges: !0 },
           );
         }
-        function P() {
+        function U() {
           return (0, N.m)((e) => {
             D("ttfb", { metric: e }), (o = e);
           });
@@ -42367,8 +42357,8 @@ Error:`,
                 );
             });
           },
-          U = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function P(e, t) {
+          P = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
+        function U(e, t) {
           return {
             ...e,
             ...t,
@@ -42605,7 +42595,7 @@ ${
                   ]);
                 if (!a)
                   throw (
-                    (U &&
+                    (P &&
                       i.kg.error(
                         "[Feedback] Missing feedback modal integration. Try using `feedbackSyncIntegration` in your `Sentry.init`.",
                       ),
@@ -42614,7 +42604,7 @@ ${
                 return (
                   n &&
                     !_ &&
-                    U &&
+                    P &&
                     i.kg.error(
                       "[Feedback] Missing feedback screenshot integration. Proceeding without screenshots.",
                     ),
@@ -42627,7 +42617,7 @@ ${
                 );
               },
               eT = (e, t = {}) => {
-                let r = P(el, t),
+                let r = U(el, t),
                   n =
                     "string" == typeof e
                       ? s.querySelector(e)
@@ -42636,7 +42626,7 @@ ${
                         : null;
                 if (!n)
                   throw (
-                    (U &&
+                    (P &&
                       i.kg.error(
                         "[Feedback] Unable to attach to target element",
                       ),
@@ -42668,7 +42658,7 @@ ${
                 return eI.push(o), o;
               },
               ed = (e = {}) => {
-                let t = P(el, e),
+                let t = U(el, e),
                   r = eR(t),
                   n = (function ({
                     triggerLabel: e,
@@ -42827,10 +42817,10 @@ ${
               },
               attachTo: eT,
               createWidget(e = {}) {
-                let t = ed(P(el, e));
+                let t = ed(U(el, e));
                 return t.appendToDom(), t;
               },
-              createForm: async (e = {}) => eN(P(el, e)),
+              createForm: async (e = {}) => eN(U(el, e)),
               remove() {
                 eu &&
                   (eu.parentElement && eu.parentElement.remove(), (eu = null)),
@@ -43556,10 +43546,10 @@ ${
           var r = eR.__H || (eR.__H = { __: [], __h: [] });
           return e >= r.__.length && r.__.push({ __V: ef }), r.__[e];
         }
-        function eU(e) {
-          return (eT = 1), eP(eW, e);
+        function eP(e) {
+          return (eT = 1), eU(eW, e);
         }
-        function eP(e, t, r) {
+        function eU(e, t, r) {
           var n = eg(eI++, 2);
           if (
             ((n.t = e),
@@ -43769,7 +43759,7 @@ ${
             },
             useErrorBoundary: function (e) {
               var t = eg(eI++, 10),
-                r = eU();
+                r = eP();
               return (
                 (t.__ = e),
                 eR.componentDidCatch ||
@@ -43815,7 +43805,7 @@ ${
             },
             useLayoutEffect: eM,
             useMemo: eG,
-            useReducer: eP,
+            useReducer: eU,
             useRef: function (e) {
               return (
                 (eT = 5),
@@ -43824,7 +43814,7 @@ ${
                 }, [])
               );
             },
-            useState: eU,
+            useState: eP,
           },
           eY =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
@@ -43905,12 +43895,12 @@ ${
               submitButtonLabel: h,
               isRequiredLabel: S,
             } = e,
-            [D, C] = eU(null),
-            [g, P] = eU(!1),
+            [D, C] = eP(null),
+            [g, U] = eP(!1),
             M = s && s.input,
-            [G, m] = eU(null),
+            [G, m] = eP(null),
             y = em((e) => {
-              m(e), P(!1);
+              m(e), U(!1);
             }, []),
             b = em(
               (e) => {
@@ -43974,7 +43964,7 @@ ${
                       ),
                         _(n);
                     } catch (e) {
-                      U && i.kg.error(e), C(e), o(e);
+                      P && i.kg.error(e), C(e), o(e);
                     }
                   } catch (e) {}
                 },
@@ -44130,7 +44120,7 @@ ${
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            m(null), P((e) => !e);
+                            m(null), U((e) => !e);
                           },
                           __self: this,
                           __source: { fileName: eK, lineNumber: 202 },
@@ -44250,7 +44240,7 @@ ${
               }),
               [],
             ),
-            [_, o] = eU(null),
+            [_, o] = eP(null),
             i = em(() => {
               _ && (clearTimeout(_), o(null)), t();
             }, [_]),
@@ -45484,7 +45474,7 @@ ${eQ}
           g = (e, t, r) => {
             var n, a;
             let _;
-            if (!e || !(P(e, t) || "object" == typeof e)) return;
+            if (!e || !(U(e, t) || "object" == typeof e)) return;
             let o = e.constructor.name;
             let i =
                 ((n = r),
@@ -45495,7 +45485,7 @@ ${eQ}
               E = i.indexOf(e);
             return -1 === E && ((E = i.length), i.push(e)), E;
           },
-          U = (e, t, r) =>
+          P = (e, t, r) =>
             e.map((e) =>
               (function e(t, r, n) {
                 if (t instanceof Array) return t.map((t) => e(t, r, n));
@@ -45534,14 +45524,14 @@ ${eQ}
                     rr_type: t.constructor.name,
                     args: [e(t.data, r, n), t.width, t.height],
                   };
-                else if (P(t, r) || "object" == typeof t) {
+                else if (U(t, r) || "object" == typeof t) {
                   let e = t.constructor.name;
                   return { rr_type: e, index: g(t, r, n) };
                 }
                 return t;
               })(e, t, r),
             ),
-          P = (e, t) =>
+          U = (e, t) =>
             !![
               "WebGLActiveInfo",
               "WebGLBuffer",
@@ -45613,7 +45603,7 @@ ${eQ}
                       (g(c, i, this),
                       "tagName" in this.canvas && !A(this.canvas, n, a, _, !0))
                     ) {
-                      let e = U(E, i, this),
+                      let e = P(E, i, this),
                         n = { type: t, property: o, args: e };
                       r(this.canvas, n);
                     }
@@ -45844,7 +45834,7 @@ ${eQ}
                           return (
                             !A(this.canvas, r, n, a, !0) &&
                               f(() => {
-                                let r = U(i, t, this);
+                                let r = P(i, t, this);
                                 e(this.canvas, {
                                   type: L["2D"],
                                   property: o,
@@ -46131,8 +46121,8 @@ ${eQ}
           D = r(988097),
           C = r(820754),
           g = r(899517),
-          U = r(202811),
-          P = r(370336),
+          P = r(202811),
+          U = r(370336),
           M = r(467510),
           G = r(101284),
           m = r(622916),
@@ -46498,7 +46488,7 @@ ${eQ}
             }
           };
         }
-        function eU(e, t, r, n, a, _) {
+        function eP(e, t, r, n, a, _) {
           try {
             let o = e.nodeType === e.ELEMENT_NODE ? e : e.parentElement;
             if (null === o) return !1;
@@ -46530,7 +46520,7 @@ ${eQ}
           } catch (e) {}
           return !!_;
         }
-        function eP(e) {
+        function eU(e) {
           return null == e ? "" : e.toLowerCase();
         }
         function eM(e, t) {
@@ -46558,8 +46548,8 @@ ${eQ}
               recordCanvas: D = !1,
               onSerialize: C,
               onIframeLoad: g,
-              iframeLoadTimeout: U = 5e3,
-              onStylesheetLoad: P,
+              iframeLoadTimeout: P = 5e3,
+              onStylesheetLoad: U,
               stylesheetLoadTimeout: M = 5e3,
               keepIframeSrcFn: G = () => !1,
               newlyAddedElement: m = !1,
@@ -46654,13 +46644,13 @@ ${eQ}
                         let t = er(e.tagName);
                         return eI.test(t) ? "div" : t;
                       })(e),
-                      U = {},
-                      P = e.attributes.length;
-                    for (let t = 0; t < P; t++) {
+                      P = {},
+                      U = e.attributes.length;
+                    for (let t = 0; t < U; t++) {
                       let r = e.attributes[t];
                       r.name &&
                         !eD(g, r.name, r.value) &&
-                        (U[r.name] = eS(o, g, er(r.name), r.value, e, u));
+                        (P[r.name] = eS(o, g, er(r.name), r.value, e, u));
                     }
                     if ("link" === g && s) {
                       let t = Array.from(o.styleSheets).find(
@@ -46669,9 +46659,9 @@ ${eQ}
                         r = null;
                       t && (r = z(t)),
                         r &&
-                          (delete U.rel,
-                          delete U.href,
-                          (U._cssText = ef(r, t.href)));
+                          (delete P.rel,
+                          delete P.href,
+                          (P._cssText = ef(r, t.href)));
                     }
                     if (
                       "style" === g &&
@@ -46679,7 +46669,7 @@ ${eQ}
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
                       let t = z(e.sheet);
-                      t && (U._cssText = ef(t, eh()));
+                      t && (P._cssText = ef(t, eh()));
                     }
                     if (
                       "input" === g ||
@@ -46691,7 +46681,7 @@ ${eQ}
                         r = eo(e, en(g), t),
                         n = e.checked;
                       if ("submit" !== t && "button" !== t && r) {
-                        let n = eU(
+                        let n = eP(
                           e,
                           p,
                           S,
@@ -46699,20 +46689,20 @@ ${eQ}
                           D,
                           ee({ type: t, tagName: en(g), maskInputOptions: l }),
                         );
-                        U.value = et({
+                        P.value = et({
                           isMasked: n,
                           element: e,
                           value: r,
                           maskInputFn: I,
                         });
                       }
-                      n && (U.checked = n);
+                      n && (P.checked = n);
                     }
                     if (
                       ("option" === g &&
                         (e.selected && !l.select
-                          ? (U.selected = !0)
-                          : delete U.selected),
+                          ? (P.selected = !0)
+                          : delete P.selected),
                       "canvas" === g && T)
                     ) {
                       if ("2d" === e.__context)
@@ -46737,14 +46727,14 @@ ${eQ}
                             }
                           return !0;
                         })(e) &&
-                          (U.rr_dataURL = e.toDataURL(R.type, R.quality));
+                          (P.rr_dataURL = e.toDataURL(R.type, R.quality));
                       else if (!("__context" in e)) {
                         let t = e.toDataURL(R.type, R.quality),
                           r = document.createElement("canvas");
                         (r.width = e.width),
                           (r.height = e.height),
                           t !== r.toDataURL(R.type, R.quality) &&
-                            (U.rr_dataURL = t);
+                            (P.rr_dataURL = t);
                       }
                     }
                     if ("img" === g && N) {
@@ -46758,14 +46748,14 @@ ${eQ}
                           (n.width = e.naturalWidth),
                             (n.height = e.naturalHeight),
                             a.drawImage(e, 0, 0),
-                            (U.rr_dataURL = n.toDataURL(R.type, R.quality));
+                            (P.rr_dataURL = n.toDataURL(R.type, R.quality));
                         } catch (t) {
                           console.warn(
                             `Cannot inline img src=${e.currentSrc}! Error: ${t}`,
                           );
                         }
                         t
-                          ? (U.crossOrigin = t)
+                          ? (P.crossOrigin = t)
                           : e.removeAttribute("crossorigin");
                       };
                       e.complete && 0 !== e.naturalWidth
@@ -46774,31 +46764,31 @@ ${eQ}
                     }
                     if (
                       (("audio" === g || "video" === g) &&
-                        ((U.rr_mediaState = e.paused ? "paused" : "played"),
-                        (U.rr_mediaCurrentTime = e.currentTime)),
+                        ((P.rr_mediaState = e.paused ? "paused" : "played"),
+                        (P.rr_mediaCurrentTime = e.currentTime)),
                       !f &&
-                        (e.scrollLeft && (U.rr_scrollLeft = e.scrollLeft),
-                        e.scrollTop && (U.rr_scrollTop = e.scrollTop)),
+                        (e.scrollLeft && (P.rr_scrollLeft = e.scrollLeft),
+                        e.scrollTop && (P.rr_scrollTop = e.scrollTop)),
                       C)
                     ) {
                       let { width: t, height: r } = e.getBoundingClientRect();
-                      U = {
-                        class: U.class,
+                      P = {
+                        class: P.class,
                         rr_width: `${t}px`,
                         rr_height: `${r}px`,
                       };
                     }
                     "iframe" === g &&
-                      !d(U.src) &&
-                      (!C && !e.contentDocument && (U.rr_src = U.src),
-                      delete U.src);
+                      !d(P.src) &&
+                      (!C && !e.contentDocument && (P.rr_src = P.src),
+                      delete P.src);
                     try {
                       customElements.get(g) && (_ = !0);
                     } catch (e) {}
                     return {
                       type: A.Element,
                       tagName: g,
-                      attributes: U,
+                      attributes: P,
                       childNodes: [],
                       isSVG:
                         !!("svg" === (r = e).tagName || r.ownerSVGElement) ||
@@ -46869,7 +46859,7 @@ ${eQ}
                       u = ef(u, eh());
                     }
                     R && (u = "SCRIPT_PLACEHOLDER");
-                    let T = eU(e, n, _, a, o, r);
+                    let T = eP(e, n, _, a, o, r);
                     return (
                       !I &&
                         !R &&
@@ -46886,7 +46876,7 @@ ${eQ}
                       "OPTION" === l &&
                         u &&
                         (u = et({
-                          isMasked: eU(
+                          isMasked: eP(
                             e,
                             n,
                             _,
@@ -46973,33 +46963,33 @@ ${eQ}
                       (("link" === e.tagName &&
                         "shortcut icon" === e.attributes.rel) ||
                         ("meta" === e.tagName &&
-                          (eP(e.attributes.name).match(
+                          (eU(e.attributes.name).match(
                             /^msapplication-tile(image|color)$/,
                           ) ||
-                            "application-name" === eP(e.attributes.name) ||
-                            "icon" === eP(e.attributes.rel) ||
-                            "apple-touch-icon" === eP(e.attributes.rel) ||
-                            "shortcut icon" === eP(e.attributes.rel))))
+                            "application-name" === eU(e.attributes.name) ||
+                            "icon" === eU(e.attributes.rel) ||
+                            "apple-touch-icon" === eU(e.attributes.rel) ||
+                            "shortcut icon" === eU(e.attributes.rel))))
                     )
                       return !0;
                     else if ("meta" === e.tagName) {
                       if (
                         t.headMetaDescKeywords &&
-                        eP(e.attributes.name).match(/^description|keywords$/)
+                        eU(e.attributes.name).match(/^description|keywords$/)
                       )
                         return !0;
                       if (
                         t.headMetaSocial &&
-                        (eP(e.attributes.property).match(/^(og|twitter|fb):/) ||
-                          eP(e.attributes.name).match(/^(og|twitter):/) ||
-                          "pinterest" === eP(e.attributes.name))
+                        (eU(e.attributes.property).match(/^(og|twitter|fb):/) ||
+                          eU(e.attributes.name).match(/^(og|twitter):/) ||
+                          "pinterest" === eU(e.attributes.name))
                       )
                         return !0;
                       else if (
                         t.headMetaRobots &&
-                        ("robots" === eP(e.attributes.name) ||
-                          "googlebot" === eP(e.attributes.name) ||
-                          "bingbot" === eP(e.attributes.name))
+                        ("robots" === eU(e.attributes.name) ||
+                          "googlebot" === eU(e.attributes.name) ||
+                          "bingbot" === eU(e.attributes.name))
                       )
                         return !0;
                       else if (
@@ -47009,25 +46999,25 @@ ${eQ}
                         return !0;
                       else if (
                         t.headMetaAuthorship &&
-                        ("author" === eP(e.attributes.name) ||
-                          "generator" === eP(e.attributes.name) ||
-                          "framework" === eP(e.attributes.name) ||
-                          "publisher" === eP(e.attributes.name) ||
-                          "progid" === eP(e.attributes.name) ||
-                          eP(e.attributes.property).match(/^article:/) ||
-                          eP(e.attributes.property).match(/^product:/))
+                        ("author" === eU(e.attributes.name) ||
+                          "generator" === eU(e.attributes.name) ||
+                          "framework" === eU(e.attributes.name) ||
+                          "publisher" === eU(e.attributes.name) ||
+                          "progid" === eU(e.attributes.name) ||
+                          eU(e.attributes.property).match(/^article:/) ||
+                          eU(e.attributes.property).match(/^product:/))
                       )
                         return !0;
                       else if (
                         t.headMetaVerification &&
-                        ("google-site-verification" === eP(e.attributes.name) ||
-                          "yandex-verification" === eP(e.attributes.name) ||
-                          "csrf-token" === eP(e.attributes.name) ||
-                          "p:domain_verify" === eP(e.attributes.name) ||
-                          "verify-v1" === eP(e.attributes.name) ||
-                          "verification" === eP(e.attributes.name) ||
+                        ("google-site-verification" === eU(e.attributes.name) ||
+                          "yandex-verification" === eU(e.attributes.name) ||
+                          "csrf-token" === eU(e.attributes.name) ||
+                          "p:domain_verify" === eU(e.attributes.name) ||
+                          "verify-v1" === eU(e.attributes.name) ||
+                          "verification" === eU(e.attributes.name) ||
                           "shopify-checkout-api-token" ===
-                            eP(e.attributes.name))
+                            eU(e.attributes.name))
                       )
                         return !0;
                     }
@@ -47079,8 +47069,8 @@ ${eQ}
               preserveWhiteSpace: y,
               onSerialize: C,
               onIframeLoad: g,
-              iframeLoadTimeout: U,
-              onStylesheetLoad: P,
+              iframeLoadTimeout: P,
+              onStylesheetLoad: U,
               stylesheetLoadTimeout: M,
               keepIframeSrcFn: G,
             };
@@ -47154,15 +47144,15 @@ ${eQ}
                       preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
-                      iframeLoadTimeout: U,
-                      onStylesheetLoad: P,
+                      iframeLoadTimeout: P,
+                      onStylesheetLoad: U,
                       stylesheetLoadTimeout: M,
                       keepIframeSrcFn: G,
                     });
                     r && g(e, r);
                   }
                 },
-                U,
+                P,
               ),
             v.type === A.Element &&
               "link" === v.tagName &&
@@ -47189,7 +47179,7 @@ ${eQ}
               })(
                 e,
                 () => {
-                  if (P) {
+                  if (U) {
                     let t = eM(e, {
                       doc: _,
                       mirror: o,
@@ -47214,12 +47204,12 @@ ${eQ}
                       preserveWhiteSpace: y,
                       onSerialize: C,
                       onIframeLoad: g,
-                      iframeLoadTimeout: U,
-                      onStylesheetLoad: P,
+                      iframeLoadTimeout: P,
+                      onStylesheetLoad: U,
                       stylesheetLoadTimeout: M,
                       keepIframeSrcFn: G,
                     });
-                    t && P(e, t);
+                    t && U(e, t);
                   }
                 },
                 M,
@@ -47844,7 +47834,7 @@ ${eQ}
                         t !== e.oldValue &&
                         this.texts.push({
                           value:
-                            eU(
+                            eP(
                               e.target,
                               this.maskTextClass,
                               this.maskTextSelector,
@@ -47874,7 +47864,7 @@ ${eQ}
                           type: r,
                         });
                         n = et({
-                          isMasked: eU(
+                          isMasked: eP(
                             e.target,
                             this.maskTextClass,
                             this.maskTextSelector,
@@ -48522,7 +48512,7 @@ ${eQ}
                   L = eo(d, N, f),
                   O = !1,
                   p = ee({ maskInputOptions: E, tagName: N, type: f }),
-                  h = eU(r, u, R, I, A, p);
+                  h = eP(r, u, R, I, A, p);
                 ("radio" === f || "checkbox" === f) && (O = r.checked),
                   (L = et({
                     isMasked: h,
@@ -49535,8 +49525,8 @@ ${eQ}
             maskTextFn: D,
             maxCanvasSize: C = null,
             packFn: g,
-            sampling: U = {},
-            dataURLOptions: P = {},
+            sampling: P = {},
+            dataURLOptions: U = {},
             mousemoveWait: M,
             recordDOM: G = !0,
             recordCanvas: m = !1,
@@ -49564,7 +49554,7 @@ ${eQ}
               F = !0;
             }
           if (k && !r) throw Error("emit function is required");
-          void 0 !== M && void 0 === U.mousemove && (U.mousemove = M),
+          void 0 !== M && void 0 === P.mousemove && (P.mousemove = M),
             tS.reset();
           let X =
               !0 === L
@@ -49731,8 +49721,8 @@ ${eQ}
               blockSelector: c,
               unblockSelector: s,
               maxCanvasSize: C,
-              sampling: U.canvas,
-              dataURLOptions: P,
+              sampling: P.canvas,
+              dataURLOptions: U,
               errorHandler: x,
             }),
             ea =
@@ -49754,13 +49744,13 @@ ${eQ}
                       unmaskTextSelector: T,
                       inlineStylesheet: f,
                       maskInputOptions: X,
-                      dataURLOptions: P,
+                      dataURLOptions: U,
                       maskAttributeFn: h,
                       maskTextFn: D,
                       maskInputFn: S,
                       recordCanvas: m,
                       inlineImages: B,
-                      sampling: U,
+                      sampling: P,
                       slimDOMOptions: j,
                       iframeManager: et,
                       stylesheetManager: ee,
@@ -49897,7 +49887,7 @@ ${eQ}
                 maskInputFn: S,
                 maskTextFn: D,
                 slimDOM: j,
-                dataURLOptions: P,
+                dataURLOptions: U,
                 recordCanvas: m,
                 inlineImages: B,
                 onSerialize: (e) => {
@@ -50000,7 +49990,7 @@ ${eQ}
                     unmaskTextSelector: T,
                     maskInputOptions: X,
                     inlineStylesheet: f,
-                    sampling: U,
+                    sampling: P,
                     recordDOM: G,
                     recordCanvas: m,
                     inlineImages: B,
@@ -50014,7 +50004,7 @@ ${eQ}
                     blockSelector: c,
                     unblockSelector: s,
                     slimDOMOptions: j,
-                    dataURLOptions: P,
+                    dataURLOptions: U,
                     mirror: tS,
                     iframeManager: et,
                     stylesheetManager: ee,
@@ -50095,7 +50085,7 @@ ${eQ}
         function tg(e) {
           return e > 9999999999 ? e / 1e3 : e;
         }
-        function tU(e, t) {
+        function tP(e, t) {
           if ("sentry.transaction" !== t.category)
             ["ui.click", "ui.input"].includes(t.category)
               ? e.triggerUserActivity()
@@ -50105,18 +50095,18 @@ ${eQ}
                   e.throttledAddEvent({
                     type: e0.Custom,
                     timestamp: 1e3 * (t.timestamp || 0),
-                    data: { tag: "breadcrumb", payload: (0, U.Fv)(t, 10, 1e3) },
+                    data: { tag: "breadcrumb", payload: (0, P.Fv)(t, 10, 1e3) },
                   }),
                   "console" === t.category
                 ),
               );
         }
-        function tP(e) {
+        function tU(e) {
           return e.closest("button,a") || e;
         }
         function tM(e) {
           let t = tG(e);
-          return t && t instanceof Element ? tP(t) : t;
+          return t && t instanceof Element ? tU(t) : t;
         }
         function tG(e) {
           return (function (e) {
@@ -50126,7 +50116,7 @@ ${eQ}
             : e;
         }
         class tm {
-          constructor(e, t, r = tU) {
+          constructor(e, t, r = tP) {
             (this._lastMutation = 0),
               (this._lastScroll = 0),
               (this._clicks = []),
@@ -50146,7 +50136,7 @@ ${eQ}
               !E &&
                 ((E = []),
                 (function () {
-                  (0, P.hl)(k, "open", function (e) {
+                  (0, U.hl)(k, "open", function (e) {
                     return function (...t) {
                       if (E)
                         try {
@@ -50221,7 +50211,7 @@ ${eQ}
             this._lastScroll = tg(e);
           }
           registerClick(e) {
-            let t = tP(e);
+            let t = tU(e);
             this._handleMultiClick(t);
           }
           _handleMultiClick(e) {
@@ -50367,7 +50357,7 @@ ${eQ}
               !(function (e, t, r) {
                 e.handleClick(t, r);
               })(e.clickDetector, r, tM(t.event)),
-              tU(e, r);
+              tP(e, r);
           };
         function tW(e, t) {
           let r = tD.mirror.getId(e),
@@ -51030,7 +51020,7 @@ ${eQ}
             start: r / 1e3,
             end: n / 1e3,
             name: a,
-            data: (0, P.Jr)({
+            data: (0, U.Jr)({
               method: _,
               statusCode: o,
               request: i,
@@ -51204,7 +51194,7 @@ ${eQ}
                       r(Error("Timeout while trying to read response body")),
                     500,
                   );
-                  rU(e)
+                  rP(e)
                     .then(
                       (e) => t(e),
                       (e) => r(e),
@@ -51244,10 +51234,10 @@ ${eQ}
                 : rd(r, t)
             : {};
         }
-        async function rU(e) {
+        async function rP(e) {
           return await e.text();
         }
-        async function rP(e, t, r) {
+        async function rU(e, t, r) {
           try {
             let n = (function (e, t, r) {
                 let n = Date.now(),
@@ -52183,7 +52173,7 @@ ${eQ}
                                                 : e;
                                             if ("object" == typeof e)
                                               try {
-                                                let t = (0, U.Fv)(e, 7);
+                                                let t = (0, P.Fv)(e, 7);
                                                 if (
                                                   JSON.stringify(t).length > 5e3
                                                 )
@@ -52214,7 +52204,7 @@ ${eQ}
                                       })(e)
                                     : tv(e);
                               })(t);
-                              r && tU(e, r);
+                              r && tP(e, r);
                             })(e, t),
                           );
                       })(e),
@@ -52277,7 +52267,7 @@ ${eQ}
                                           void 0 !== _ &&
                                             (e.data.response_body_size = _);
                                       })(t, r),
-                                      rP(t, r, e)),
+                                      rU(t, r, e)),
                                       (function (e) {
                                         return "fetch" === e.category;
                                       })(t) &&
@@ -52408,7 +52398,7 @@ ${eQ}
                                   r.match(
                                     /(does not match server-rendered HTML|Hydration failed because)/i,
                                   )) &&
-                                  tU(
+                                  tP(
                                     e,
                                     tv({
                                       category: "replay.hydrate-error",
@@ -52590,7 +52580,7 @@ ${eQ}
                     },
                   });
                 })(t);
-                if (!!r) tU(e, r);
+                if (!!r) tP(e, r);
               })(this, e);
             };
           }
@@ -52828,10 +52818,10 @@ ${eQ}
             ignore: D = [],
             maskFn: C,
             beforeAddRecordingEvent: g,
-            beforeErrorSampling: U,
+            beforeErrorSampling: P,
           } = {}) {
             this.name = rV.id;
-            let P = (function ({
+            let U = (function ({
               mask: e,
               unmask: t,
               block: r,
@@ -52885,12 +52875,12 @@ ${eQ}
                   })({
                     maskAttributes: O,
                     maskAllText: E,
-                    privacyOptions: P,
+                    privacyOptions: U,
                     key: e,
                     value: t,
                     el: r,
                   }),
-                ...P,
+                ...U,
                 slimDOMOptions: "all",
                 inlineStylesheet: !0,
                 inlineImages: !1,
@@ -52922,7 +52912,7 @@ ${eQ}
                 networkRequestHeaders: rk(d),
                 networkResponseHeaders: rk(f),
                 beforeAddRecordingEvent: g,
-                beforeErrorSampling: U,
+                beforeErrorSampling: P,
                 _experiments: i,
               }),
               this._initialOptions.blockAllMedia &&
@@ -52982,7 +52972,7 @@ ${eQ}
                 n = {
                   sessionSampleRate: 0,
                   errorSampleRate: 0,
-                  ...(0, P.Jr)(e),
+                  ...(0, U.Jr)(e),
                 },
                 a = (0, C.o)(r.replaysSessionSampleRate),
                 _ = (0, C.o)(r.replaysOnErrorSampleRate);
@@ -53072,4 +53062,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.aec2f60cebda9b44e1fe.js.map
+//# sourceMappingURL=sentry.88a4602ef4289e064851.js.map
