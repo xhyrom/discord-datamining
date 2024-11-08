@@ -1713,16 +1713,16 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .labelReversed_f6cde8 {
   padding-right: 8px;
 }
-.theme-light .checkbox_f6cde8 {
+html:not(.visual-refresh).theme-light .checkbox_f6cde8 {
   border-color: var(--primary-300);
 }
-.theme-light.checked_f6cde8 {
+html:not(.visual-refresh).theme-light.checked_f6cde8 {
   background: var(--white-500);
 }
-.theme-dark .checkbox_f6cde8 {
+html:not(.visual-refresh).theme-dark .checkbox_f6cde8 {
   border-color: var(--primary-400);
 }
-.theme-dark.checked_f6cde8 {
+html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   border-color: var(--white-500);
   background-color: var(--white-500);
 }
@@ -1753,10 +1753,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 :where(.visual-refresh) .checkbox_f6cde8.checkboxDisabled_f6cde8 {
   opacity: 0.6;
 }
-:where(.visual-refresh).theme-dark .checkbox_f6cde8 {
+:where(.visual-refresh) .checkbox_f6cde8 {
   border-color: var(--__temp-input-border);
 }
-:where(.visual-refresh).theme-dark .checkbox_f6cde8.checked_f6cde8 {
+:where(.visual-refresh) .checkbox_f6cde8.checked_f6cde8 {
   background-color: var(--redesign-input-control-selected);
 }
 .collapseable_a3cc4a {
@@ -4179,7 +4179,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .input_f8bc55.error_f8bc55 {
   border-width: 2px;
-  border-color: var(--input-error-border);
+  border-color: var(--text-danger);
+  color: var(--text-danger);
 }
 :where(.visual-refresh) .input_f8bc55.disabled_f8bc55 {
   border-color: var(--__temp-input-border);
@@ -26984,9 +26985,9 @@ div.popoutCloseButton_d523a2:hover {
   border-color: GrayText;
 }
 :where(.visual-refresh) .container_cebd1c {
-  height: 32px;
+  height: 28px;
   border-radius: 16px;
-  width: 48px;
+  width: 44px;
   box-sizing: border-box;
   border: 1px solid transparent;
 }
@@ -26994,8 +26995,7 @@ div.popoutCloseButton_d523a2:hover {
   border-color: var(--__temp-input-border);
 }
 :where(.visual-refresh) .slider_cebd1c {
-  height: 24px;
-  margin: 3px;
+  height: 20px;
 }
 .container_ed1d57 {
   display: flex;
@@ -27423,9 +27423,13 @@ div.popoutCloseButton_d523a2:hover {
   border-radius: 4px;
 }
 :where(.visual-refresh)
+  .colorDefault_d90b3d.focused_d90b3d:not(.checkboxContainer_d90b3d)
+  path {
+  fill: var(--interactive-active);
+}
+:where(.visual-refresh)
   .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
   background-color: var(--bg-mod-subtle);
-  color: var(--white);
 }
 :where(.visual-refresh) .colorDanger_d90b3d {
   color: var(--text-danger);
@@ -27440,7 +27444,9 @@ div.popoutCloseButton_d523a2:hover {
 :where(.visual-refresh) .colorDanger_d90b3d.focused_d90b3d .check_d90b3d {
   color: var(--text-danger);
 }
-:where(.visual-refresh) .colorDanger_d90b3d.focused_d90b3d path {
+:where(.visual-refresh)
+  .colorDanger_d90b3d.focused_d90b3d:not(.checkboxContainer_d90b3d)
+  path {
   fill: var(--text-danger);
 }
 :where(.visual-refresh)
@@ -27665,9 +27671,9 @@ div.popoutCloseButton_d523a2:hover {
   height: var(--grabber-size);
   margin-left: calc(-0.5 * var(--grabber-size));
   margin-top: calc(-0.5 * var(--grabber-size) + 0.5 * var(--bar-offset));
-  border: 1px solid transparent;
   box-shadow: var(--shadow-low);
   box-sizing: border-box;
+  border: 1px solid var(--border-normal);
 }
 :where(.visual-refresh) .slider_c7a159 .hasMarks_c7a159 .grabber_c7a159,
 :where(.visual-refresh) .mini_c7a159 .hasMarks_c7a159 .grabber_c7a159 {
@@ -28564,26 +28570,27 @@ div.popoutCloseButton_d523a2:hover {
 .enable-forced-colors .selectedIcon_f6639d {
   color: Highlight;
 }
-:where(.visual-refresh) .select_f6639d {
-  height: 40px;
+:where(.visual-refresh) .select_f6639d,
+:where(.visual-refresh) .iconsContainer_f6639d {
+  height: 46px;
 }
 :where(.visual-refresh) .wrapper_f6639d .select_f6639d.multi_f6639d {
   padding-left: 6px;
   padding-bottom: 6px;
 }
 :where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
-  background-color: #222226;
+  background-color: rgba(0, 0, 0, 8%);
 }
 :where(.visual-refresh) .lookFilled_f6639d.select_f6639d {
   border-radius: 8px;
-  border: 1px solid var(--__temp-input-border);
+  border: 1px solid var(--border-strong);
 }
 :where(.visual-refresh) .popout_f6639d.popoutPositionTop_f6639d,
 :where(.visual-refresh) .lookFilled_f6639d.popout_f6639d,
 :where(.visual-refresh)
   .lookFilled_f6639d.popout_f6639d.popoutPositionTop_f6639d,
 :where(.visual-refresh) .popout_f6639d {
-  background-color: #28282d;
+  background-color: var(--background-surface-higher);
   border-radius: 8px;
   border: 1px solid var(--border-subtle);
 }
@@ -28592,7 +28599,8 @@ div.popoutCloseButton_d523a2:hover {
 }
 :where(.visual-refresh) .popout_f6639d {
   margin: 0;
-  background-color: #28282d;
+  background-color: var(--background-surface-higher);
+  border-color: var(--border-subtle);
 }
 :where(.visual-refresh) .popout_f6639d:not(.popoutPositionTop_f6639d) {
   margin-top: 8px;
@@ -28609,7 +28617,6 @@ div.popoutCloseButton_d523a2:hover {
 :where(.visual-refresh) .option_f6639d[aria-selected="true"] {
   font-weight: 500;
   color: var(--text-normal);
-  background-color: #28282d;
 }
 :where(.visual-refresh) .option_f6639d[aria-selected="true"]:hover {
   background-color: var(--bg-mod-subtle);
@@ -28621,7 +28628,7 @@ div.popoutCloseButton_d523a2:hover {
   margin-right: 6px;
 }
 :where(.visual-refresh) .optionPillItem_f6639d button {
-  background-color: var(--bg-mod-subtle);
+  background-color: var(--background-surface-higher);
 }
 :where(.visual-refresh) .optionPillItem_f6639d button .optionPill_f6639d {
   border-radius: 4px;
@@ -28637,6 +28644,12 @@ div.popoutCloseButton_d523a2:hover {
 :where(.visual-refresh) .optionPill_f6639d .deleteOptionIcon_f6639d {
   width: 16px;
   height: 16px;
+}
+:where(.visual-refresh) .multiSelectCheckbox_f6639d {
+  border-radius: 6px;
+}
+:where(.visual-refresh) .multiSelectCheckbox_f6639d.unchecked_f6639d {
+  border: 1px solid var(--border-strong);
 }
 .wrapper_cdbcb1 {
   position: relative;
@@ -39591,6 +39604,7 @@ html.disable-forced-colors * {
   --blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--primary-730-hsl) / 0.96);
   --border-faint: hsl(var(--white-hsl) / 0.03);
+  --border-normal: hsl(var(--opacity-6-hsl) / 0.2);
   --border-strong: hsl(var(--white-hsl) / 0.16);
   --border-subtle: hsl(var(--white-hsl) / 0.08);
   --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl) / 0.6);
@@ -40166,6 +40180,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--white-hsl) / 0.03) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.03)
+        var(--theme-base-color-amount, 0%)
+    );
+    --border-normal: color-mix(
+      in oklab,
+      hsl(var(--opacity-6-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--theme-base-color-amount, 0%)
     );
     --border-strong: color-mix(
@@ -41403,6 +41423,7 @@ html.disable-forced-colors * {
   --blur-fallback: hsl(var(--primary-530-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--primary-560-hsl) / 0.96);
   --border-faint: hsl(var(--black-hsl) / 0.04);
+  --border-normal: hsl(var(--opacity-8-hsl) / 0.28);
   --border-strong: hsl(var(--black-hsl) / 0.16);
   --border-subtle: hsl(var(--black-hsl) / 0.08);
   --bug-reporter-modal-submitting-background: hsl(var(--white-hsl) / 0.6);
@@ -41980,6 +42001,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--black-hsl) / 0.04) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.04)
+        var(--theme-base-color-amount, 0%)
+    );
+    --border-normal: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.28) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.28)
         var(--theme-base-color-amount, 0%)
     );
     --border-strong: color-mix(
@@ -43220,6 +43247,7 @@ html.disable-forced-colors * {
   --blur-fallback: hsl(var(--plum-19-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--plum-20-hsl) / 0.96);
   --border-faint: hsl(var(--plum-11-hsl) / 0.08);
+  --border-normal: hsl(var(--opacity-6-hsl) / 0.2);
   --border-strong: hsl(var(--plum-11-hsl) / 0.24);
   --border-subtle: hsl(var(--plum-11-hsl) / 0.14);
   --bug-reporter-modal-submitting-background: hsl(var(--plum-23-hsl) / 0.6);
@@ -43794,6 +43822,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--plum-11-hsl) / 0.08) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
+    --border-normal: color-mix(
+      in oklab,
+      hsl(var(--opacity-6-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--theme-base-color-amount, 0%)
     );
     --border-strong: color-mix(
@@ -45036,6 +45070,7 @@ html.disable-forced-colors * {
   --blur-fallback: hsl(var(--plum-17-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--plum-18-hsl) / 0.96);
   --border-faint: hsl(var(--plum-11-hsl) / 0.06);
+  --border-normal: hsl(var(--opacity-6-hsl) / 0.2);
   --border-strong: hsl(var(--plum-11-hsl) / 0.22);
   --border-subtle: hsl(var(--plum-11-hsl) / 0.12);
   --bug-reporter-modal-submitting-background: hsl(var(--plum-23-hsl) / 0.6);
@@ -45610,6 +45645,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--plum-11-hsl) / 0.06) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06)
+        var(--theme-base-color-amount, 0%)
+    );
+    --border-normal: color-mix(
+      in oklab,
+      hsl(var(--opacity-6-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--theme-base-color-amount, 0%)
     );
     --border-strong: color-mix(
@@ -49613,6 +49654,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--primary-600);
   --bg-base-secondary: var(--neutral-73);
   --bg-base-tertiary: var(--neutral-75);
+  --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
   --channel-icon: var(--neutral-30);
   --channels-default: var(--neutral-30);
   --header-secondary: var(--neutral-27);
@@ -49658,6 +49700,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-75) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --border-strong: color-mix(
+      in oklab,
+      hsl(var(--opacity-14-hsl) / 0.52) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.52)
+        var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
       in oklab,
@@ -49732,6 +49780,7 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-4);
   --bg-base-tertiary: var(--neutral-5);
   --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
+  --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
   --channel-icon: var(--neutral-41);
   --channels-default: var(--neutral-41);
   --header-secondary: var(--neutral-41);
@@ -49782,6 +49831,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--primary-400-hsl) / 0.24) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
+        var(--theme-base-color-amount, 0%)
+    );
+    --border-strong: color-mix(
+      in oklab,
+      hsl(var(--opacity-14-hsl) / 0.52) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.52)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
@@ -49856,6 +49911,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-100);
   --bg-base-secondary: var(--neutral-93);
   --bg-base-tertiary: var(--neutral-90);
+  --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
   --channel-icon: var(--neutral-35);
   --channels-default: var(--neutral-35);
   --header-secondary: var(--neutral-35);
@@ -49899,6 +49955,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-90) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --border-strong: color-mix(
+      in oklab,
+      hsl(var(--opacity-14-hsl) / 0.52) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.52)
+        var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
       in oklab,
@@ -49960,6 +50022,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--plum-20);
   --bg-base-secondary: var(--neutral-91);
   --bg-base-tertiary: var(--neutral-94);
+  --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
   --channel-icon: var(--neutral-36);
   --channels-default: var(--neutral-36);
   --header-secondary: var(--neutral-33);
@@ -50003,6 +50066,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-94) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --border-strong: color-mix(
+      in oklab,
+      hsl(var(--opacity-14-hsl) / 0.52) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.52)
+        var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
       in oklab,
@@ -51533,4 +51602,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.916e6b5eb5b5cac4c823.css.map*/
+/*# sourceMappingURL=12633.ffb3a067435db2866fdd.css.map*/
