@@ -12560,7 +12560,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-67c6ce6f7a3eaf0783991cb2a948437751152be4",
+            release: "discord_web-ec8b500750f62d25442ba39c5062f71ff2e27bf6",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12629,8 +12629,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "343033"), "343033"));
-          o.YA("builtAt", String("1731079975365"));
+            o.YA("buildNumber", ((e = "343044"), "343044"));
+          o.YA("builtAt", String("1731082999672"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -13302,6 +13302,13 @@
               [n.LIGHT]: { raw: "BLACK", opacity: 0.04 },
               [n.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.08 },
               [n.DARKER]: { raw: "PLUM_11", opacity: 0.06 },
+            },
+            BORDER_NORMAL: {
+              category: "border",
+              [n.DARK]: { raw: "OPACITY_6", opacity: 0.2 },
+              [n.LIGHT]: { raw: "OPACITY_8", opacity: 0.28 },
+              [n.MIDNIGHT]: { raw: "OPACITY_6", opacity: 0.2 },
+              [n.DARKER]: { raw: "OPACITY_6", opacity: 0.2 },
             },
             BORDER_STRONG: {
               category: "border",
@@ -21820,6 +21827,7 @@
           (n.BLUR_FALLBACK = "blur-fallback"),
           (n.BLUR_FALLBACK_PRESSED = "blur-fallback-pressed"),
           (n.BORDER_FAINT = "border-faint"),
+          (n.BORDER_NORMAL = "border-normal"),
           (n.BORDER_STRONG = "border-strong"),
           (n.BORDER_SUBTLE = "border-subtle"),
           (n.BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND =
@@ -22537,6 +22545,12 @@
               _.I.PLUM_18,
             ],
             "border-faint": [_.I.WHITE, _.I.BLACK, _.I.PLUM_11, _.I.PLUM_11],
+            "border-normal": [
+              _.I.OPACITY_6,
+              _.I.OPACITY_8,
+              _.I.OPACITY_6,
+              _.I.OPACITY_6,
+            ],
             "border-strong": [_.I.WHITE, _.I.BLACK, _.I.PLUM_11, _.I.PLUM_11],
             "border-subtle": [_.I.WHITE, _.I.BLACK, _.I.PLUM_11, _.I.PLUM_11],
             "bug-reporter-modal-submitting-background": [
@@ -53057,4 +53071,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.0d840f76ddab9ae70d6d.js.map
+//# sourceMappingURL=sentry.8c2a0d37f71c7c9c3fcc.js.map
