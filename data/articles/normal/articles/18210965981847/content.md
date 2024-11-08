@@ -30,47 +30,18 @@
   >
 </p>
 <ul>
+  <li><a href="#h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</a></li>
+  <li><a href="#h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</a></li>
+  <li><a href="#h_01HPJBJPEYPM7318PH5XWN1PEY">Suspensions (aka Bans)</a></li>
+  <li><a href="#h_01HPJBYFH5KX4Z657CF7N12FZ0">Server Violations</a></li>
+  <li><a href="#h_01HD4SVGAFZKN50P6BHNPPFFR0">Warnings</a></li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAFKAQKYVGEBHS14HSQ"
-      >Violations</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAF2KT4AG7NH8BJBFKV"
-      >Account Standing</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HPJBJPEYPM7318PH5XWN1PEY"
-      >Suspensions (aka Bans)</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HPJBYFH5KX4Z657CF7N12FZ0"
-      >Server Violations</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAFZKN50P6BHNPPFFR0"
-      >Warnings</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#docs-internal-guid-67e7f335-7fff-ea44-0bad-0eb97db61ffb"
+    <a href="#docs-internal-guid-67e7f335-7fff-ea44-0bad-0eb97db61ffb"
       >Requesting a Review</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAF50M8WFGS4W75W34E"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HD4SVGAF50M8WFGS4W75W34E">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</h1>
@@ -212,10 +183,7 @@
   This view will be available for the duration of the suspension. Users will
   also be able to submit feedback and request a review of a violation if they
   believe we made a mistake. (See below for more information on
-  <a
-    href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SXRQB3DVNPA6BKY6JZ677"
-    >submitting feedback</a
-  >).
+  <a href="#h_01HD4SXRQB3DVNPA6BKY6JZ677">submitting feedback</a>).
 </p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-b121dd41-7fff-f176-5927-44370e7fe7ce"
