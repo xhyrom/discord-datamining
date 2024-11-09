@@ -829,6 +829,7 @@ id,hash,label
 2024-10_recent_activity_in_dms,2122002762,Recent Activity in DMs
 2024-10_retrigger_reaction_frecency_algorithms,3254726199,(Retrigger) Reaction Frecency Algorithms
 2024-10_shop_skus_in_gift_flow,1469485145,Gift Collectibles in DM
+2024-10_shop_variants,2849820511,Shop Variants Experiment
 2024-10_stealth_remediation,3936986189,A new user remediation tool
 2024-10_system_date_formatter,2327380316,Use system APIs for date formatting
 2024-10_tile_resolution_gating,3172358820,Tile Resolution Gating

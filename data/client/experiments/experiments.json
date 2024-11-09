@@ -12305,6 +12305,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-10_shop_variants",
+      "label": "Shop Variants Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Return Variants as Group"
+      ],
+      "hash": 2849820511,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-10_stealth_remediation",
       "label": "A new user remediation tool",
       "description": [
@@ -13624,29 +13647,6 @@
         "Treatment 1: Enable the new defaults for message requests"
       ],
       "hash": 3587259312,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-2024-10_shop_variants",
-      "label": "Shop Variants Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Return Variants as Group"
-      ],
-      "hash": 1035618977,
       "buckets": [
         -1,
         0,

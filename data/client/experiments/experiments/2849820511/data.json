@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-2024-10_shop_variants",
+    "id": "2024-10_shop_variants",
     "label": "Shop Variants Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Return Variants as Group"
     ],
-    "hash": 1035618977,
+    "hash": 2849820511,
     "buckets": [
       -1,
       0,
