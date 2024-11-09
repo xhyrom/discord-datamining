@@ -11843,15 +11843,13 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Merge notifications tab - keep as button on the top right of ICYMI tab",
-        "Treatment 2: Merge notifications tab - keep as segmented section in ICYMI tab"
+        "Treatment 1: Merge notifications tab - keep as button on the top right of ICYMI tab"
       ],
       "hash": 2998143296,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "holdout": {},
       "aa_mode": false,
