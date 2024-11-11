@@ -15805,7 +15805,7 @@ span.clanTag_a31c43 {
 }
 :where(.badgesContainer_d60c6d) {
   display: flex;
-  gap: 8px;
+  gap: 0 8px;
   align-items: center;
 }
 :where(.badgesContainer_d60c6d):empty {
@@ -51647,4 +51647,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.24508f39b8b0248430b0.css.map*/
+/*# sourceMappingURL=12633.305d85f9398e25bc9af3.css.map*/
