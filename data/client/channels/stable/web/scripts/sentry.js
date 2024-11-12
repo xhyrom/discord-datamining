@@ -8946,6 +8946,7 @@
           (r3.NOTIFICATION_SETTING_UNREAD_NOTICE =
             "NOTIFICATION_SETTING_UNREAD_NOTICE"),
           (r3.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
+          (r3.GIFT_CATEGORY_OPTION = "Gift Category Option"),
           (r3.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
           (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
           (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
@@ -8965,6 +8966,9 @@
           (r6.REACTION = "reaction"),
           (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
           (r6.REACTION_OVERFLOW = "reaction_overflow"),
+          (r6.NITRO_STANDARD = "nitro_standard"),
+          (r6.NITRO_BASIC = "nitro_basic"),
+          (r6.NITRO_SKU_SELECTION = "nitro_sku_selection"),
           ((r5 = ed || (ed = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
@@ -9751,6 +9755,10 @@
           (nO.PAYMENT_FLOW_FAILED = "payment_flow_failed"),
           (nO.PAYMENT_FLOW_CANCELED = "payment_flow_canceled"),
           (nO.PAYMENT_FLOW_LOADED = "payment_flow_loaded"),
+          (nO.GIFT_CATEGORY_SELECT_MODAL_OPENED =
+            "gift_category_select_modal_opened"),
+          (nO.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED =
+            "collectibles_gifting_shop_item_clicked"),
           (nO.PAYMENT_SOURCE_CREATION_FAILED =
             "payment_source_creation_failed"),
           (nO.PREMIUM_UPGRADE_STARTED = "premium_upgrade_started"),
@@ -10906,6 +10914,7 @@
           (nO.MY_ACCOUNT_PAGE_TAB_NAVIGATE = "my_account_page_tab_navigate"),
           (nO.USER_VOICE_ACTIVITY_VIEWED = "user_voice_activity_viewed"),
           (nO.PARTY_VOICE_ACTIVITY_VIEWED = "party_voice_activity_viewed"),
+          (nO.BLOCK_USER_CONFIRMED = "block_user_confirmed"),
           ((np = eF || (eF = {})).CANARY = "canary"),
           (np.PTB = "ptb"),
           (np.STABLE = "stable"),
@@ -12554,7 +12563,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-129221bbf1ca99772a28a561a7180a602c4a7150",
+            release: "discord_web-6ecb35bd7fa70a2e8ab0a52033edb6cceeb5c82f",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12623,8 +12632,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "343474"), "343474"));
-          o.YA("builtAt", String("1731432621020"));
+            o.YA("buildNumber", ((e = "343618"), "343618"));
+          o.YA("builtAt", String("1731447092211"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53062,4 +53071,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.78a3b192437ca7804772.js.map
+//# sourceMappingURL=sentry.b7b6c9532f671b604bcc.js.map
