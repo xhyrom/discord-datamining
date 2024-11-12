@@ -15851,6 +15851,9 @@ span.clanTag_a31c43 {
 .container_cf8a7d {
   border-radius: 8px;
 }
+.table_cf8a7d {
+  margin-top: 8px;
+}
 .rows_cf8a7d {
   display: flex;
   flex-direction: column;
@@ -51305,4 +51308,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.67ad23a1fd038a2c95c8.css.map*/
+/*# sourceMappingURL=12633.5a7aaea54137b4755421.css.map*/
