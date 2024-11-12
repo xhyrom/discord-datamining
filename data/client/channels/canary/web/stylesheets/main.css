@@ -51231,7 +51231,8 @@ code {
       fixed 0 0 / cover,
     var(--custom-theme-background) fixed 0 0 / cover;
 }
-[data-disable-adaptive-theme="true"] {
+[data-disable-adaptive-theme="true"],
+.disable-adaptive-theme {
   --theme-base-color-amount: 0% !important;
   --theme-text-color-amount: 0% !important;
 }
@@ -51308,4 +51309,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5a7aaea54137b4755421.css.map*/
+/*# sourceMappingURL=12633.723f09d002e434c8d3a7.css.map*/
