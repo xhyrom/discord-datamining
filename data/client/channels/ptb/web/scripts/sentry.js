@@ -8946,6 +8946,7 @@
           (r3.NOTIFICATION_SETTING_UNREAD_NOTICE =
             "NOTIFICATION_SETTING_UNREAD_NOTICE"),
           (r3.FORWARD_BREADCRUMB = "FORWARD_BREADCRUMB"),
+          (r3.GIFT_CATEGORY_OPTION = "Gift Category Option"),
           (r3.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL"),
           (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
           (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
@@ -8965,6 +8966,9 @@
           (r6.REACTION = "reaction"),
           (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
           (r6.REACTION_OVERFLOW = "reaction_overflow"),
+          (r6.NITRO_STANDARD = "nitro_standard"),
+          (r6.NITRO_BASIC = "nitro_basic"),
+          (r6.NITRO_SKU_SELECTION = "nitro_sku_selection"),
           ((r5 = ed || (ed = {})).PRIMARY = "primary"),
           (r5.SECONDARY = "secondary"),
           (r5.DISMISS = "dismiss");
@@ -9751,6 +9755,10 @@
           (nO.PAYMENT_FLOW_FAILED = "payment_flow_failed"),
           (nO.PAYMENT_FLOW_CANCELED = "payment_flow_canceled"),
           (nO.PAYMENT_FLOW_LOADED = "payment_flow_loaded"),
+          (nO.GIFT_CATEGORY_SELECT_MODAL_OPENED =
+            "gift_category_select_modal_opened"),
+          (nO.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED =
+            "collectibles_gifting_shop_item_clicked"),
           (nO.PAYMENT_SOURCE_CREATION_FAILED =
             "payment_source_creation_failed"),
           (nO.PREMIUM_UPGRADE_STARTED = "premium_upgrade_started"),
@@ -12554,7 +12562,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-85ef32ed4b01cb17b325c4f52c896a943ae62289",
+            release: "discord_web-87257f526c06390a82222ae114487f5419d37ce5",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12623,8 +12631,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "343517"), "343517"));
-          o.YA("builtAt", String("1731436520604"));
+            o.YA("buildNumber", ((e = "343528"), "343528"));
+          o.YA("builtAt", String("1731437291565"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53062,4 +53070,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.a1803b182f4a886cbd55.js.map
+//# sourceMappingURL=sentry.1d53e33b81efa84de527.js.map
