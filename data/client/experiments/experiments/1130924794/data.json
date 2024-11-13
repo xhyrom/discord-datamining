@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_unreads_new_users",
-    "label": "Unreads Experiment (grey-dot mode) (new users)",
+    "id": "2024-11_unreads_new_users2",
+    "label": "Unreads Experiment (grey-dot mode) (new users) 2",
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Auto open migration"
     ],
-    "hash": 1135801489,
+    "hash": 1130924794,
     "buckets": [
       -1,
       0,
