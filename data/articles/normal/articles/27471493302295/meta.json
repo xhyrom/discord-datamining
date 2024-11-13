@@ -1,0 +1,31 @@
+{
+  "id": 27471493302295,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/27471493302295.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/27471493302295-Nitro-2-Week-Trial-Offer",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 22113084771863,
+  "created_at": "2024-10-31T19:00:01Z",
+  "name": "Nitro 2-Week Trial Offer",
+  "title": "Nitro 2-Week Trial Offer",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-11-13T17:38:56Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "nitro",
+    "free",
+    "trial",
+    "perks",
+    "offer",
+    "2-week"
+  ]
+}
