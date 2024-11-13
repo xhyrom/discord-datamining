@@ -15730,30 +15730,34 @@ span.clanTag_a31c43 {
     var(--custom-default-gradient);
 }
 .rank_e6eff2 {
-  margin: 0.5px;
   padding: 0 1px;
   height: 14px;
   border-radius: 50px;
+  color: #a5f5d8;
+  line-height: 1.2;
+}
+.rankWithBorder_e6eff2 {
+  margin: 0.5px;
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  color: #a5f5d8;
   border: 0.5px solid transparent;
-  line-height: 1.2;
+  left: 0.5px;
+}
+.rankNoBorder_e6eff2 {
+  margin: 1px;
+  background-image: var(--custom-dark-background);
 }
 .goldText_e6eff2 {
   color: #ffebc1;
   background-image: var(--custom-dark-background), var(--custom-gold-gradient);
-  left: 0.5px;
 }
 .silverText_e6eff2 {
   color: #ccc;
   background-image: var(--custom-dark-background), var(--custom-silver-gradient);
-  left: 0.5px;
 }
 .bronzeText_e6eff2 {
   color: #f4bb8e;
   background-image: var(--custom-dark-background), var(--custom-bronze-gradient);
-  left: 0.5px;
 }
 .container_f62934 {
   position: relative;
@@ -15843,6 +15847,7 @@ span.clanTag_a31c43 {
 .container_ba1926 {
   border-radius: 8px;
   padding: 8px;
+  padding-left: 12px;
   display: flex;
   gap: 12px;
   width: 400px;
@@ -51327,4 +51332,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.dad08508d968d5679f50.css.map*/
+/*# sourceMappingURL=12633.698db3b789d839ed1a46.css.map*/
