@@ -7775,6 +7775,24 @@ div.modalHeader_c5e09c {
   width: inherit;
   height: inherit;
 }
+.glow_ef18ee {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200%;
+  width: 200%;
+  opacity: 1;
+  z-index: 1;
+}
+.glowVideo_ef18ee {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
 .mediaBarInteraction_d12f5a,
 .mediaBarInteractionDragging_d12f5a {
   position: relative;
@@ -51231,7 +51249,8 @@ code {
       fixed 0 0 / cover,
     var(--custom-theme-background) fixed 0 0 / cover;
 }
-[data-disable-adaptive-theme="true"] {
+[data-disable-adaptive-theme="true"],
+.disable-adaptive-theme {
   --theme-base-color-amount: 0% !important;
   --theme-text-color-amount: 0% !important;
 }
@@ -51308,4 +51327,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5a7aaea54137b4755421.css.map*/
+/*# sourceMappingURL=12633.dad08508d968d5679f50.css.map*/
