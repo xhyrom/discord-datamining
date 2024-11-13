@@ -4648,9 +4648,6 @@
           LPv: function () {
             return eP;
           },
-          Lcj: function () {
-            return ei;
-          },
           Lg6: function () {
             return od;
           },
@@ -11465,8 +11462,7 @@
           (nx.RNA_CHANGELOG = "8537198296727"),
           (nx.CONNECTION_DETAILS = "8063233404823"),
           (nx.CONNECTION_DETAILS_ADMIN = "10388356626711"),
-          (nx.APP_DIRECTORY_HEADER_LEARN_MORE =
-            "26592957841303-How-to-Discover-and-Add-Apps"),
+          (nx.APPS_LEARN_MORE = "26592957841303-How-to-Discover-and-Add-Apps"),
           (nx.BOT_DATA_ACCESS = "7933951485975"),
           (nx.HIGHLIGHTS_NOTIFICATIONS = "5304469213079"),
           (nx.CRUNCHYROLL_CONNECTION = "9929188048023"),
@@ -11521,7 +11517,6 @@
           (nx.USER_PROFILE_RECENT_GAMES = "22489665250327"),
           (nx.REFERRAL_PROGRAM = "22567595858327"),
           (nx.PREMIUM_APRIL_2024_MARKETING_MOMENT = "22484323261463"),
-          (nx.CLANS_FAQ = "23187611406999"),
           (nx.SUMMER_BOGO_2024 = "24485661785495"),
           (nx.CHANNEL_LINKED_LOBBIES = "24485661785495"),
           (nx.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
@@ -11530,6 +11525,7 @@
           (nx.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
           (nx.GUILD_LEADERBOARD = "26575242994583"),
           (nx.FRACTIONAL_PREMIUM_ABOUT = "26362805097623"),
+          (nx.HD_STREAMING_POTION = "27343254089623"),
           ((tr || (tr = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
           ((nK = tn || (tn = {}))[(nK.HIDDEN = 1)] = "HIDDEN"),
@@ -12568,7 +12564,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-22f6982b13a55d5d0854aefceb39e15dd27a0d85",
+            release: "discord_web-040b0a91d182a319bb8cc25334c22a7850e43631",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12637,8 +12633,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "343844"), "343844"));
-          o.YA("builtAt", String("1731460275517"));
+            o.YA("buildNumber", ((e = "344085"), "344085"));
+          o.YA("builtAt", String("1731531925477"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53076,4 +53072,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.1a500cb2ea6b17a5b6d9.js.map
+//# sourceMappingURL=sentry.158de0dce6e0e54cee1c.js.map
