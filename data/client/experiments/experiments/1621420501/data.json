@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Improved Desktop Media Viewer"
+      "Treatment 1: Enable Improved Desktop Media Viewer",
+      "Treatment 2: Enable Improved Desktop Media Viewer with affordances"
     ],
     "hash": 1621420501,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,

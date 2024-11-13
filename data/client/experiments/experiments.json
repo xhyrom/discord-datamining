@@ -11229,6 +11229,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-09_hd_streaming_potion",
+      "label": "Consumable HD Streaming Experiment",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Treatment"
+      ],
+      "hash": 963601694,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-09_improved_reaction_button",
       "label": "Improved Reaction Button",
       "description": [
@@ -11653,29 +11676,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-10_consumables_hd_streaming",
-      "label": "Consumable HD Streaming Experiment",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Treatment"
-      ],
-      "hash": 3491032581,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-10_golive_simulcast",
       "label": "GoLive Simulcast",
       "description": [
@@ -11750,13 +11750,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Improved Desktop Media Viewer"
+        "Treatment 1: Enable Improved Desktop Media Viewer",
+        "Treatment 2: Enable Improved Desktop Media Viewer with affordances"
       ],
       "hash": 1621420501,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
