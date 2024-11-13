@@ -110,11 +110,20 @@
 </h4>
 <h1 id="h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</h1>
 <p class="wysiwyg-text-align-center">
-  <span style="background-color: #d9d9d9" data-darkreader-inline-bgcolor=""
+  <span style="background-color: #d9d9d9"
     ><img
-      src="https://support.discord.com/hc/article_attachments/18514409330967"
-      alt="warningsystem-accountstanding-redacted_desktop.png"
+      src="https://support.discord.com/hc/article_attachments/27644619032983"
+      width="600"
+      height="475"
   /></span>
+</p>
+<h4 id="h_01JC4K465HJXBQ1EYQEVWVJZPH" class="wysiwyg-text-align-center">
+  Reviewing Account Standing in User Settings
+</h4>
+<p>
+  Users will be able to see their account’s standing with Discord by heading
+  into your <strong>User Settings &gt; My Account &gt; Standing</strong>. For
+  most users, they will see that they’re all good, and not much else.
 </p>
 <p>
   Users will be able to see their account’s standing with Discord in their

@@ -1,21 +1,26 @@
-<p><strong>What this article covers:</strong></p>
-<ul>
-  <li>
-    <a href="#h_01H4RH0TQ9QG1NWKD08MVCTS4K" target="_self"
-      >Why is a server labeled as Age-Restricted?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H4RH13HQJNMSFPDA9KGDVJB5" target="_self"
-      >I can’t view or join Age-Restricted servers. What should I do?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H4RH1GSQF4689C1VVX9CGHGV" target="_self"
-      >How do I update my age information?</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01H4RH0TQ9QG1NWKD08MVCTS4K" target="_self"
+        >Why is a server labeled as Age-Restricted?</a
+      >
+    </li>
+    <li>
+      <a href="#h_01H4RH13HQJNMSFPDA9KGDVJB5" target="_self"
+        >I can’t view or join Age-Restricted servers. What should I do?</a
+      >
+    </li>
+    <li>
+      <a href="#h_01H4RH1GSQF4689C1VVX9CGHGV" target="_self"
+        >How do I update my age information?</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01H4RH0TQ9QG1NWKD08MVCTS4K">
   <strong>Why is a Server Labeled As Age-Restricted?</strong>
 </h1>
@@ -71,34 +76,38 @@
   >
 </p>
 <p>
-  1.
-  <span
-    id="docs-internal-guid-4fc6651a-7fff-4c6d-6405-c19b8ebe6b2a"
-    style="color: #2e3338"
-    >Sign in to Discord on desktop and navigate to your
-    <strong>User Settings</strong>.
-  </span>
+  <span style="color: #2e3338"
+    >1. Sign in to Discord on desktop and navigate to your </span
+  ><strong><span style="color: #2e3338">User Settings</span></strong
+  ><span style="color: #2e3338"> by selecting the </span
+  ><strong><span style="color: #2e3338">cogwheel</span></strong
+  ><span style="color: #2e3338"> icon [</span
+  ><span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27644505348375"
+      width="20"
+      height="20" /></span
+  ><span style="color: #2e3338">]  in the bottom left corner of the app.</span>
 </p>
-<ul>
-  <li>
-    <span
-      id="docs-internal-guid-4fc6651a-7fff-4c6d-6405-c19b8ebe6b2a"
-      style="color: #2e3338"
-      >You can find your User Settings by selecting the
-      <strong>cogwheel</strong> [<img
-        src="https://support.discord.com/hc/article_attachments/20361142823319"
-        width="20"
-        height="20" />]  icon in the bottom left corner of the app.<br
-    /></span>
-  </li>
-</ul>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27644534559639"
+      width="315"
+      height="71"
+  /></span>
+</p>
+<h4 id="h_01JC4JVSH2EPCQ6N3AF0NVVDAS" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Cogwheel Icon: Access User Settings</span>
+</h4>
 <p>
-  2. In the User Settings menu,
-  <span
+  <span style="color: #2e3338">2. In User Settings, select </span
+  ><strong><span style="color: #2e3338">Content &amp; Social</span></strong
+  ><span style="color: #2e3338">.</span
+  ><span
     id="docs-internal-guid-442403a2-7fff-8fa3-c3be-2e5842316ef8"
     style="color: #2e3338"
-    >select <strong>Privacy &amp; Safety</strong>.<br
-  /></span>
+  ></span>
 </p>
 <p>
   3.
@@ -110,6 +119,19 @@
     already a member of from your iOS device.<br
   /></span>
 </p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/27644534563223"
+      width="624"
+      height="407"
+  /></span>
+</p>
+<h4 id="h_01JC4JXM2F4J52H1AH8CSENHNX" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Allowing Access to Age-restricted Servers on iOS Permission</span
+  >
+</h4>
 <p>
   Additionally, a subset of age-restricted servers that are specifically focused
   on explicit pornographic content will be blocked entirely on iOS. 
@@ -121,7 +143,7 @@
   </li>
 </ul>
 <div class="info-box">
-  <strong>Note</strong>: Only age-restricted server owners and moderators will
+  <strong>NOTE</strong>: Only age-restricted server owners and moderators will
   be allowed to view and manage this specific subset of age-restricted servers
   on iOS.
 </div>
