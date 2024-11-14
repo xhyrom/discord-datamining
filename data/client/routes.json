@@ -4209,6 +4209,10 @@
     "url": "/soundboard-sounds/:param",
     "allowed_methods": null
   },
+  "SOUNDBOARD_SOUND_GUILD_DATA": {
+    "url": "/soundboard-sounds/:param/guild/:param",
+    "allowed_methods": null
+  },
   "SOUNDBOARD_DEFAULT_SOUNDS": {
     "url": "/soundboard-default-sounds",
     "allowed_methods": [
