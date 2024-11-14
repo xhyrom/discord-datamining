@@ -16100,6 +16100,11 @@ span.clanTag_a31c43 {
 .copySpinner_cf8a7d circle {
   stroke: var(--interactive-normal);
 }
+.tooltip_cf8a7d {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .popout_b245a4 {
   background-color: var(--bg-surface-overlay);
   border-radius: 8px;
@@ -50795,4 +50800,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.bcfe478fc4bf241f7d28.css.map*/
+/*# sourceMappingURL=12633.3b78f0498e0a6ded8f9c.css.map*/
