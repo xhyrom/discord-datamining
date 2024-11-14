@@ -140,7 +140,7 @@
               return new E(this.value + F(e).value);
             }),
             (E.prototype.plus = E.prototype.add);
-          function L(e, t, r) {
+          function f(e, t, r) {
             var n,
               a,
               _ = e.length,
@@ -154,7 +154,7 @@
               ? (r && (E = -E), new i(E))
               : new o(E, r);
           }
-          function f(e, t) {
+          function L(e, t) {
             var r,
               n,
               a,
@@ -195,7 +195,7 @@
             if (this.sign !== _.sign) return this.add(_.negate());
             var E = this.value,
               c = _.value;
-            if (_.isSmall) return L(E, Math.abs(c), this.sign);
+            if (_.isSmall) return f(E, Math.abs(c), this.sign);
             return (
               (t = E),
               (r = c),
@@ -212,7 +212,7 @@
                 r = this.value;
               if (r < 0 !== t.sign) return this.add(t.negate());
               var n = t.value;
-              return t.isSmall ? new i(r - n) : L(n, Math.abs(r), r >= 0);
+              return t.isSmall ? new i(r - n) : f(n, Math.abs(r), r >= 0);
             }),
             (i.prototype.minus = i.prototype.subtract),
             (E.prototype.subtract = function (e) {
@@ -240,7 +240,7 @@
               return new E(this.value >= 0 ? this.value : -this.value);
             });
           function h(e, t, r) {
-            return e < 1e7 ? new o(O(t, e), r) : new o(f(t, s(e)), r);
+            return e < 1e7 ? new o(O(t, e), r) : new o(L(t, s(e)), r);
           }
           function S(e) {
             var t,
@@ -278,7 +278,7 @@
               ? new o(
                   (function e(t, r) {
                     var n = Math.max(t.length, r.length);
-                    if (n <= 30) return f(t, r);
+                    if (n <= 30) return L(t, r);
                     n = Math.ceil(n / 2);
                     var a = t.slice(n),
                       _ = t.slice(0, n),
@@ -292,7 +292,7 @@
                   })(i, E),
                   c,
                 )
-              : new o(f(i, E), c);
+              : new o(L(i, E), c);
           }),
             (o.prototype.times = o.prototype.multiply),
             (i.prototype._multiplyBySmall = function (e) {
@@ -360,16 +360,16 @@
               var T = Math.abs(N);
               if (T < 1e7) {
                 r = l((n = D(A, T))[0]);
-                var L = n[1];
-                return (e.sign && (L = -L), "number" == typeof r)
-                  ? (e.sign !== c.sign && (r = -r), [new i(r), new i(L)])
-                  : [new o(r, e.sign !== c.sign), new i(L)];
+                var f = n[1];
+                return (e.sign && (f = -f), "number" == typeof r)
+                  ? (e.sign !== c.sign && (r = -r), [new i(r), new i(f)])
+                  : [new o(r, e.sign !== c.sign), new i(f)];
               }
               N = s(T);
             }
-            var f = g(A, N);
-            if (-1 === f) return [_[0], e];
-            if (0 === f) return [_[e.sign === c.sign ? 1 : -1], _[0]];
+            var L = g(A, N);
+            if (-1 === L) return [_[0], e];
+            if (0 === L) return [_[e.sign === c.sign ? 1 : -1], _[0]];
             r = (n =
               A.length + N.length <= 200
                 ? (function (e, t) {
@@ -843,7 +843,7 @@
             (E.prototype.modInv = i.prototype.modInv = o.prototype.modInv),
             (o.prototype.next = function () {
               var e = this.value;
-              return this.sign ? L(e, 1, this.sign) : new o(T(e, 1), this.sign);
+              return this.sign ? f(e, 1, this.sign) : new o(T(e, 1), this.sign);
             }),
             (i.prototype.next = function () {
               var e = this.value;
@@ -854,7 +854,7 @@
             }),
             (o.prototype.prev = function () {
               var e = this.value;
-              return this.sign ? new o(T(e, 1), !0) : L(e, 1, this.sign);
+              return this.sign ? new o(T(e, 1), !0) : f(e, 1, this.sign);
             }),
             (i.prototype.prev = function () {
               var e = this.value;
@@ -2010,8 +2010,8 @@
           N = r(84297),
           T = o.PROPER,
           d = o.CONFIGURABLE,
-          L = N.IteratorPrototype,
-          f = N.BUGGY_SAFARI_ITERATORS,
+          f = N.IteratorPrototype,
+          L = N.BUGGY_SAFARI_ITERATORS,
           O = R("iterator"),
           p = "keys",
           h = "values",
@@ -2026,7 +2026,7 @@
             U,
             M = function (e) {
               if (e === R && v) return v;
-              if (!f && e && e in y) return y[e];
+              if (!L && e && e in y) return y[e];
               switch (e) {
                 case p:
                 case h:
@@ -2043,13 +2043,13 @@
             m = !1,
             y = e.prototype,
             b = y[O] || y["@@iterator"] || (R && y[R]),
-            v = (!f && b) || M(R),
+            v = (!L && b) || M(R),
             w = ("Array" === t && y.entries) || b;
           if (
             (w &&
               (g = c(w.call(new e()))) !== Object.prototype &&
               g.next &&
-              (!_ && c(g) !== L && (s ? s(g, L) : !i(g[O]) && I(g, O, D)),
+              (!_ && c(g) !== f && (s ? s(g, f) : !i(g[O]) && I(g, O, D)),
               l(g, G, !0, !0),
               _ && (A[G] = D)),
             T &&
@@ -2065,8 +2065,8 @@
             R)
           ) {
             if (((P = { values: M(h), keys: N ? v : M(p), entries: M(S) }), C))
-              for (U in P) (f || m || !(U in y)) && I(y, U, P[U]);
-            else n({ target: t, proto: !0, forced: f || m }, P);
+              for (U in P) (L || m || !(U in y)) && I(y, U, P[U]);
+            else n({ target: t, proto: !0, forced: L || m }, P);
           }
           return (
             (!_ || C) && y[O] !== v && I(y, O, v, { name: R }), (A[t] = v), P
@@ -2138,8 +2138,8 @@
             !a(function () {
               return 8 !== R(function () {}, "length", { value: 8 }).length;
             }),
-          L = String(String).split("String"),
-          f = (e.exports = function (e, t, r) {
+          f = String(String).split("String"),
+          L = (e.exports = function (e, t, r) {
             "Symbol(" === A(I(t), 0, 7) &&
               (t = "[" + N(I(t), /^Symbol\(([^)]*)\)/, "$1") + "]"),
               r && r.getter && (t = "get " + t),
@@ -2161,11 +2161,11 @@
             var n = l(e);
             return (
               !o(n, "source") &&
-                (n.source = T(L, "string" == typeof t ? t : "")),
+                (n.source = T(f, "string" == typeof t ? t : "")),
               e
             );
           });
-        Function.prototype.toString = f(function () {
+        Function.prototype.toString = L(function () {
           return (_(this) && u(this).source) || c(this);
         }, "toString");
       },
@@ -2727,9 +2727,9 @@
         e.exports = function (e, t, r, N) {
           var T = "stackTraceLimit",
             d = N ? 2 : 1,
-            L = e.split("."),
-            f = L[L.length - 1],
-            O = n.apply(null, L);
+            f = e.split("."),
+            L = f[f.length - 1],
+            O = n.apply(null, f);
           if (O) {
             var p = O.prototype;
             if ((!A && a(p, "cause") && delete p.cause, !r)) return O;
@@ -2747,7 +2747,7 @@
               });
             if (
               ((S.prototype = p),
-              "Error" !== f
+              "Error" !== L
                 ? i
                   ? i(S, h)
                   : E(S, h, { name: !0 })
@@ -2756,7 +2756,7 @@
               !A)
             )
               try {
-                p.name !== f && _(p, "name", f), (p.constructor = S);
+                p.name !== L && _(p, "name", L), (p.constructor = S);
               } catch (e) {}
             return S;
           }
@@ -3243,13 +3243,13 @@
           R = Object.prototype.hasOwnProperty;
         e.exports = function (e, t, r, A, N, T) {
           var d = E(e),
-            L = E(t),
-            f = d ? u : i(e),
-            O = L ? u : i(t);
-          (f = f == l ? I : f), (O = O == l ? I : O);
-          var p = f == I,
+            f = E(t),
+            L = d ? u : i(e),
+            O = f ? u : i(t);
+          (L = L == l ? I : L), (O = O == l ? I : O);
+          var p = L == I,
             h = O == I,
-            S = f == O;
+            S = L == O;
           if (S && c(e)) {
             if (!c(t)) return !1;
             (d = !0), (p = !1);
@@ -3257,7 +3257,7 @@
           if (S && !p)
             return (
               T || (T = new n()),
-              d || s(e) ? a(e, t, r, A, N, T) : _(e, t, f, r, A, N, T)
+              d || s(e) ? a(e, t, r, A, N, T) : _(e, t, L, r, A, N, T)
             );
           if (!(1 & r)) {
             var D = p && R.call(e, "__wrapped__"),
@@ -3518,9 +3518,9 @@
           for (E.set(e, t), E.set(t, e); ++R < s; ) {
             var T = e[R],
               d = t[R];
-            if (o) var L = c ? o(d, T, R, t, e, E) : o(T, d, R, e, t, E);
-            if (void 0 !== L) {
-              if (L) continue;
+            if (o) var f = c ? o(d, T, R, t, e, E) : o(T, d, R, e, t, E);
+            if (void 0 !== f) {
+              if (f) continue;
               A = !1;
               break;
             }
@@ -3605,22 +3605,22 @@
           for (var N = E; ++l < s; ) {
             var T = e[(u = c[l])],
               d = t[u];
-            if (_) var L = E ? _(d, T, u, t, e, i) : _(T, d, u, e, t, i);
-            if (!(void 0 === L ? T === d || o(T, d, r, _, i) : L)) {
+            if (_) var f = E ? _(d, T, u, t, e, i) : _(T, d, u, e, t, i);
+            if (!(void 0 === f ? T === d || o(T, d, r, _, i) : f)) {
               A = !1;
               break;
             }
             N || (N = "constructor" == u);
           }
           if (A && !N) {
-            var f = e.constructor,
+            var L = e.constructor,
               O = t.constructor;
-            f != O &&
+            L != O &&
               "constructor" in e &&
               "constructor" in t &&
               !(
-                "function" == typeof f &&
-                f instanceof f &&
+                "function" == typeof L &&
+                L instanceof L &&
                 "function" == typeof O &&
                 O instanceof O
               ) &&
@@ -3718,14 +3718,14 @@
           N = c(a),
           T = c(_),
           d = c(o),
-          L = c(i),
-          f = E;
-        ((n && f(new n(new ArrayBuffer(1))) != R) ||
-          (a && f(new a()) != s) ||
-          (_ && f(_.resolve()) != l) ||
-          (o && f(new o()) != u) ||
-          (i && f(new i()) != I)) &&
-          (f = function (e) {
+          f = c(i),
+          L = E;
+        ((n && L(new n(new ArrayBuffer(1))) != R) ||
+          (a && L(new a()) != s) ||
+          (_ && L(_.resolve()) != l) ||
+          (o && L(new o()) != u) ||
+          (i && L(new i()) != I)) &&
+          (L = function (e) {
             var t = E(e),
               r = "[object Object]" == t ? e.constructor : void 0,
               n = r ? c(r) : "";
@@ -3739,12 +3739,12 @@
                   return l;
                 case d:
                   return u;
-                case L:
+                case f:
                   return I;
               }
             return t;
           }),
-          (e.exports = f);
+          (e.exports = L);
       },
       538027: function (e) {
         e.exports = function (e, t) {
@@ -4430,22 +4430,22 @@
         "use strict";
         r.d(t, {
           $7l: function () {
-            return aX.$7;
+            return aF.$7;
           },
           $92: function () {
-            return _p;
+            return _O;
           },
           $Ab: function () {
-            return f;
+            return L;
           },
           $R1: function () {
-            return aF.$R;
+            return ak.$R;
           },
           $VG: function () {
-            return aF.$V;
+            return ak.$V;
           },
           $Y6: function () {
-            return _H;
+            return _W;
           },
           $ib: function () {
             return o;
@@ -4460,31 +4460,31 @@
             return eq;
           },
           ANM: function () {
-            return a4;
+            return a5;
           },
           AQB: function () {
-            return _e;
+            return a9;
           },
           AeJ: function () {
             return e4;
           },
           Ai1: function () {
-            return aF.Ai;
+            return ak.Ai;
           },
           AzA: function () {
             return tm;
           },
           B1h: function () {
-            return aF.B1;
+            return ak.B1;
           },
           B9o: function () {
-            return _y;
+            return _m;
           },
           BFP: function () {
-            return _Z;
+            return _Q;
           },
           BRd: function () {
-            return aF.BR;
+            return ak.BR;
           },
           BVn: function () {
             return t0;
@@ -4511,46 +4511,46 @@
             return R;
           },
           Cyb: function () {
-            return aF.Cy;
+            return ak.Cy;
           },
           DJE: function () {
             return tl;
           },
           DJj: function () {
-            return _r;
+            return _t;
           },
           DZw: function () {
-            return a7;
+            return a8;
           },
           E07: function () {
-            return _F;
+            return _k;
           },
           EKQ: function () {
-            return aF.EK;
+            return ak.EK;
           },
           ETv: function () {
-            return aF.ET;
+            return ak.ET;
           },
           EYA: function () {
-            return _k;
+            return _V;
           },
           EkH: function () {
             return E;
           },
           Etm: function () {
-            return aF.Et;
+            return ak.Et;
           },
           Eu4: function () {
             return eW;
           },
           FD8: function () {
-            return __;
+            return _a;
           },
           FsG: function () {
-            return aX.Fs;
+            return aF.Fs;
           },
           GNZ: function () {
-            return oi;
+            return oo;
           },
           GQo: function () {
             return to;
@@ -4559,25 +4559,25 @@
             return Q;
           },
           GZQ: function () {
-            return aF.GZ;
+            return ak.GZ;
           },
           H0J: function () {
-            return aF.H0;
+            return ak.H0;
           },
           HGf: function () {
-            return ol;
+            return os;
           },
           HN8: function () {
-            return _c;
+            return _E;
           },
           HeQ: function () {
-            return aF.He;
+            return ak.He;
           },
           Hqc: function () {
-            return oa;
+            return on;
           },
           HsE: function () {
-            return oA;
+            return oR;
           },
           IE4: function () {
             return P;
@@ -4589,16 +4589,16 @@
             return tF;
           },
           IXf: function () {
-            return _D;
+            return _S;
           },
           I_8: function () {
-            return az;
+            return aJ;
           },
           IlC: function () {
             return ts;
           },
           Ilk: function () {
-            return aF.Il;
+            return ak.Il;
           },
           IyS: function () {
             return tX;
@@ -4607,28 +4607,28 @@
             return b;
           },
           J6R: function () {
-            return _o;
+            return __;
           },
           JjL: function () {
-            return aF.Jj;
+            return ak.Jj;
           },
           JkL: function () {
-            return _x;
+            return _Y;
           },
           Jn9: function () {
-            return oS;
+            return oh;
           },
           JuI: function () {
-            return _A;
+            return _R;
           },
           JwP: function () {
-            return ot;
+            return oe;
           },
           K3D: function () {
             return tV;
           },
           KA4: function () {
-            return _q;
+            return _$;
           },
           KFR: function () {
             return e1;
@@ -4640,37 +4640,37 @@
             return I;
           },
           L4X: function () {
-            return _s;
+            return _c;
           },
           LAt: function () {
-            return _G;
+            return _M;
           },
           LPv: function () {
             return eP;
           },
           Lg6: function () {
-            return oL;
+            return od;
           },
           M7m: function () {
             return eM;
           },
           ME: function () {
-            return aJ;
+            return aq;
           },
           MoX: function () {
             return tg;
           },
           NYc: function () {
-            return aF.NY;
+            return ak.NY;
           },
           NYc: function () {
-            return aF.NY;
+            return ak.NY;
           },
           NYg: function () {
             return e9;
           },
           N_j: function () {
-            return oc;
+            return oE;
           },
           NgX: function () {
             return s;
@@ -4679,22 +4679,22 @@
             return eY;
           },
           O42: function () {
-            return aX.O4;
+            return aF.O4;
           },
           OBS: function () {
-            return a$;
+            return aj;
           },
           OBo: function () {
-            return oe;
+            return _9;
           },
           OGo: function () {
             return q;
           },
           OMz: function () {
-            return aF.OM;
+            return ak.OM;
           },
           OSm: function () {
-            return _N;
+            return _A;
           },
           OYC: function () {
             return B;
@@ -4706,10 +4706,10 @@
             return W;
           },
           PEY: function () {
-            return _h;
+            return _p;
           },
           PNu: function () {
-            return _n;
+            return _r;
           },
           POd: function () {
             return th;
@@ -4718,19 +4718,19 @@
             return _f;
           },
           PUi: function () {
-            return e6;
+            return e5;
           },
           Plq: function () {
-            return aF.Pl;
+            return ak.Pl;
           },
           PrB: function () {
             return O;
           },
           PrS: function () {
-            return _W;
+            return _B;
           },
           PyE: function () {
-            return aF.Py;
+            return ak.Py;
           },
           QCD: function () {
             return t_;
@@ -4742,7 +4742,7 @@
             return U;
           },
           QL: function () {
-            return aF.QL;
+            return ak.QL;
           },
           QR$: function () {
             return tD;
@@ -4751,7 +4751,7 @@
             return i;
           },
           Qa3: function () {
-            return aF.Q;
+            return ak.Q;
           },
           Qqv: function () {
             return eT;
@@ -4760,25 +4760,25 @@
             return eF;
           },
           R7I: function () {
-            return _Y;
+            return _H;
           },
           REU: function () {
-            return oN;
+            return oA;
           },
           RG5: function () {
-            return aF.RG;
+            return ak.RG;
           },
           RK: function () {
-            return aF.RK;
+            return ak.RK;
           },
           RcX: function () {
-            return _v;
+            return _b;
           },
           Rg9: function () {
-            return oo;
+            return o_;
           },
           S7T: function () {
-            return aF.S7;
+            return ak.S7;
           },
           S9g: function () {
             return ez;
@@ -4787,7 +4787,7 @@
             return tE;
           },
           SRg: function () {
-            return on;
+            return or;
           },
           Sap: function () {
             return eB;
@@ -4796,25 +4796,25 @@
             return el;
           },
           Sc2: function () {
-            return a2;
+            return a1;
           },
           Skl: function () {
-            return aF.Sk;
+            return ak.Sk;
           },
           T23: function () {
-            return oD;
+            return oS;
           },
           TC2: function () {
-            return aF.TC;
+            return ak.TC;
           },
           TNx: function () {
-            return _$;
+            return _j;
           },
           TPd: function () {
             return ab.T;
           },
           TU7: function () {
-            return _m;
+            return _G;
           },
           TaA: function () {
             return tT;
@@ -4823,10 +4823,10 @@
             return ta;
           },
           U66: function () {
-            return aF.U6;
+            return ak.U6;
           },
           U9i: function () {
-            return aF.U9;
+            return ak.U9;
           },
           ULH: function () {
             return N;
@@ -4835,7 +4835,7 @@
             return tQ;
           },
           Uk1: function () {
-            return aF.Uk;
+            return ak.Uk;
           },
           UkZ: function () {
             return tj;
@@ -4850,67 +4850,67 @@
             return aB.V;
           },
           V6Z: function () {
-            return aF.V6;
+            return ak.V6;
           },
           VD2: function () {
             return e7;
           },
           VKK: function () {
-            return _l;
+            return _s;
           },
           V_K: function () {
             return eC;
           },
           VqG: function () {
-            return aF.Vq;
+            return ak.Vq;
           },
           Vzj: function () {
-            return aF.Vz;
+            return ak.Vz;
           },
           WKe: function () {
-            return _L;
+            return _d;
           },
           WND: function () {
-            return _9;
+            return _7;
           },
           WtW: function () {
             return en;
           },
           X5t: function () {
-            return aF.X5;
+            return ak.X5;
           },
           X6Q: function () {
-            return aF.X6;
+            return ak.X6;
           },
           X7u: function () {
-            return aF.X7;
+            return ak.X7;
           },
           XAJ: function () {
-            return a3;
+            return a2;
           },
           XKF: function () {
-            return os;
+            return oc;
           },
           XmY: function () {
-            return _O;
+            return _L;
           },
           Xyh: function () {
-            return _S;
+            return _h;
           },
           YKx: function () {
             return eG;
           },
           YeM: function () {
-            return aq;
+            return a$;
           },
           Ypu: function () {
             return V;
           },
           Z5c: function () {
-            return a8;
+            return a4;
           },
           Z8P: function () {
-            return _t;
+            return _e;
           },
           Z9p: function () {
             return eK;
@@ -4925,13 +4925,13 @@
             return A;
           },
           Zuq: function () {
-            return aF.Zu;
+            return ak.Zu;
           },
           _1z: function () {
             return x;
           },
           _8R: function () {
-            return op;
+            return oO;
           },
           _s_: function () {
             return l;
@@ -4943,13 +4943,13 @@
             return eS;
           },
           aIL: function () {
-            return a1;
+            return a0;
           },
           aO5: function () {
-            return aF.aO;
+            return ak.aO;
           },
           aZC: function () {
-            return _Q;
+            return _z;
           },
           aib: function () {
             return eE;
@@ -4964,7 +4964,7 @@
             return tJ;
           },
           b8q: function () {
-            return _J;
+            return _q;
           },
           bL: function () {
             return et;
@@ -4973,7 +4973,7 @@
             return e3;
           },
           cII: function () {
-            return aX.cI;
+            return aF.cI;
           },
           d4z: function () {
             return ab.d;
@@ -4985,22 +4985,22 @@
             return ev;
           },
           dG4: function () {
-            return aF.dG;
+            return ak.dG;
           },
           dGM: function () {
-            return _C;
+            return _D;
           },
           dGm: function () {
-            return aF.yA;
+            return ak.yA;
           },
           dN1: function () {
-            return _T;
+            return _N;
           },
           e3s: function () {
-            return oI;
+            return ou;
           },
           eBq: function () {
-            return ou;
+            return ol;
           },
           eHb: function () {
             return tn;
@@ -5009,22 +5009,22 @@
             return eb;
           },
           eWB: function () {
-            return _U;
+            return _P;
           },
           ecB: function () {
             return e0;
           },
           eez: function () {
-            return _b;
+            return _y;
           },
           en1: function () {
-            return _i;
+            return _o;
           },
           epS: function () {
-            return tf;
+            return tL;
           },
           epw: function () {
-            return _P;
+            return _g;
           },
           evJ: function () {
             return es;
@@ -5033,19 +5033,19 @@
             return tu;
           },
           fK7: function () {
-            return aF.fK;
+            return ak.fK;
           },
           fMv: function () {
-            return aX.fM;
+            return aF.fM;
           },
           fo$: function () {
-            return _M;
+            return _U;
           },
           frH: function () {
-            return aF.fr;
+            return ak.fr;
           },
           fzT: function () {
-            return _1;
+            return _0;
           },
           g2L: function () {
             return _;
@@ -5054,7 +5054,7 @@
             return tZ;
           },
           gg$: function () {
-            return aF.gg;
+            return ak.gg;
           },
           gkr: function () {
             return tC;
@@ -5075,7 +5075,7 @@
             return g;
           },
           iC$: function () {
-            return oT;
+            return oN;
           },
           iEv: function () {
             return tA;
@@ -5084,7 +5084,7 @@
             return y;
           },
           ihW: function () {
-            return aX.ih;
+            return aF.ih;
           },
           ipw: function () {
             return Y;
@@ -5093,10 +5093,10 @@
             return eI;
           },
           j3N: function () {
-            return _a;
+            return _n;
           },
           j8d: function () {
-            return aF.j8;
+            return ak.j8;
           },
           jXE: function () {
             return eA;
@@ -5105,7 +5105,7 @@
             return tx;
           },
           jsM: function () {
-            return oR;
+            return oI;
           },
           jwA: function () {
             return eZ;
@@ -5120,10 +5120,10 @@
             return c;
           },
           kod: function () {
-            return a0;
+            return aZ;
           },
           l$U: function () {
-            return _I;
+            return _u;
           },
           l4R: function () {
             return tp;
@@ -5132,58 +5132,58 @@
             return tY;
           },
           lTL: function () {
-            return aF.lT;
+            return ak.lT;
           },
           ldS: function () {
-            return aF.ld;
+            return ak.ld;
           },
           lds: function () {
-            return aZ;
+            return aQ;
           },
           lxg: function () {
             return $;
           },
           mBz: function () {
-            return _d;
+            return _T;
           },
           mFx: function () {
             return z;
           },
           nkL: function () {
-            return oE;
+            return oi;
           },
           nnr: function () {
             return a;
           },
           o3l: function () {
-            return _7;
+            return _8;
           },
           oAB: function () {
-            return _z;
+            return _J;
           },
           oCV: function () {
-            return _8;
+            return _4;
           },
           oNc: function () {
             return C;
           },
           o_z: function () {
-            return aQ;
+            return az;
           },
           p3w: function () {
-            return _B;
+            return _w;
           },
           p6O: function () {
-            return _2;
+            return _1;
           },
           pAY: function () {
-            return _w;
+            return _v;
           },
           pJs: function () {
             return T;
           },
           pKx: function () {
-            return aF.pK;
+            return ak.pK;
           },
           pM4: function () {
             return p;
@@ -5192,13 +5192,13 @@
             return u;
           },
           pTL: function () {
-            return oh;
+            return op;
           },
           pjP: function () {
             return ti;
           },
           pmI: function () {
-            return _3;
+            return _2;
           },
           q5t: function () {
             return eu;
@@ -5216,10 +5216,10 @@
             return td;
           },
           qhL: function () {
-            return _g;
+            return _C;
           },
           qrD: function () {
-            return L;
+            return f;
           },
           r2o: function () {
             return S;
@@ -5228,16 +5228,16 @@
             return ek;
           },
           rnv: function () {
-            return _X;
+            return _F;
           },
           rsA: function () {
-            return o_;
+            return oa;
           },
           rtL: function () {
             return ew;
           },
           rxP: function () {
-            return aF.rx;
+            return ak.rx;
           },
           s9s: function () {
             return tG;
@@ -5249,7 +5249,7 @@
             return tN;
           },
           scU: function () {
-            return _K;
+            return _x;
           },
           si2: function () {
             return tK;
@@ -5258,19 +5258,19 @@
             return eO;
           },
           tG9: function () {
-            return _E;
+            return _i;
           },
           tHP: function () {
-            return a9;
+            return a7;
           },
           tNA: function () {
-            return aF.tN;
+            return ak.tN;
           },
           tPV: function () {
-            return _R;
+            return _I;
           },
           tPk: function () {
-            return aF.tP;
+            return ak.tP;
           },
           tuJ: function () {
             return eH;
@@ -5288,25 +5288,25 @@
             return eQ;
           },
           vTt: function () {
-            return _4;
+            return _5;
           },
           vbS: function () {
-            return _0;
+            return _Z;
           },
           vpv: function () {
-            return _j;
+            return _X;
           },
           vtS: function () {
-            return eL;
+            return ef;
           },
           vuo: function () {
-            return _u;
+            return _l;
           },
           vxO: function () {
             return tI;
           },
           w2V: function () {
-            return od;
+            return oT;
           },
           wC$: function () {
             return w;
@@ -5318,7 +5318,7 @@
             return J;
           },
           xAR: function () {
-            return oO;
+            return oL;
           },
           xPJ: function () {
             return v;
@@ -5330,19 +5330,19 @@
             return ee;
           },
           xmn: function () {
-            return aj;
+            return aX;
           },
           xr4: function () {
-            return aF.xr;
+            return ak.xr;
           },
           yXg: function () {
             return e8;
           },
           yXt: function () {
-            return aF.yX;
+            return ak.yX;
           },
           yYS: function () {
-            return aF.yY;
+            return ak.yY;
           },
           yb: function () {
             return m;
@@ -5351,16 +5351,16 @@
             return tq;
           },
           yqN: function () {
-            return or;
+            return ot;
           },
           ys_: function () {
             return er;
           },
           z7k: function () {
-            return _V;
+            return _K;
           },
           zMe: function () {
-            return aF.zM;
+            return ak.zM;
           },
           zUn: function () {
             return e2;
@@ -5390,8 +5390,8 @@
           N,
           T,
           d,
-          L,
           f,
+          L,
           O,
           p,
           h,
@@ -5444,8 +5444,8 @@
           eN,
           eT,
           ed,
-          eL,
           ef,
+          eL,
           eO,
           ep,
           eh,
@@ -5483,8 +5483,8 @@
           e1,
           e2,
           e3,
-          e5,
           e6,
+          e5,
           e4,
           e8,
           e7,
@@ -5508,8 +5508,8 @@
           tN,
           tT,
           td,
-          tL,
           tf,
+          tL,
           tO,
           tp,
           th,
@@ -5547,8 +5547,8 @@
           t1,
           t2,
           t3,
-          t5,
           t6,
+          t5,
           t4,
           t8,
           t7,
@@ -5572,8 +5572,8 @@
           rN,
           rT,
           rd,
-          rL,
           rf,
+          rL,
           rO,
           rp,
           rh,
@@ -5611,8 +5611,8 @@
           r1,
           r2,
           r3,
-          r5,
           r6,
+          r5,
           r4,
           r8,
           r7,
@@ -5636,8 +5636,8 @@
           nN,
           nT,
           nd,
-          nL,
           nf,
+          nL,
           nO,
           np,
           nh,
@@ -5675,8 +5675,8 @@
           n1,
           n2,
           n3,
-          n5,
           n6,
+          n5,
           n4,
           n8,
           n7,
@@ -5700,8 +5700,8 @@
           aN,
           aT,
           ad,
-          aL,
           af,
+          aL,
           aO,
           ap,
           ah,
@@ -5725,10 +5725,9 @@
           aY = r(70956),
           ax = r(272242),
           aK = r(188785),
-          aV = r(979007),
-          ak = r(526761),
-          aF = r(231338),
-          aX = r(334431);
+          aV = r(526761),
+          ak = r(231338),
+          aF = r(334431);
         ((t2 = n || (n = {})).NONE = "NONE"),
           (t2.LOGGING_IN = "LOGGING_IN"),
           (t2.ACCOUNT_SCHEDULED_FOR_DELETION =
@@ -5745,15 +5744,15 @@
           (t2.PHONE_IP_AUTHORIZATION = "PHONE_IP_AUTHORIZATION"),
           ((t3 = a || (a = {})).PASSWORD = "password"),
           (t3.LOGIN_CODE = "login_code"),
-          ((t5 = _ || (_ = {}))[(t5.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
-          (t5[(t5.ELIGIBLE = 1)] = "ELIGIBLE"),
-          (t5[(t5.QUALIFIED = 2)] = "QUALIFIED"),
-          (t5[(t5.COOLDOWN = 3)] = "COOLDOWN"),
-          (t5[(t5.UNAPPLIED = 4)] = "UNAPPLIED"),
-          ((t6 = o || (o = {})).NONE = "NONE"),
-          (t6.REGISTERING = "REGISTERING"),
-          (t6.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
-          (t6.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
+          ((t6 = _ || (_ = {}))[(t6.NOT_ELIGIBLE = 0)] = "NOT_ELIGIBLE"),
+          (t6[(t6.ELIGIBLE = 1)] = "ELIGIBLE"),
+          (t6[(t6.QUALIFIED = 2)] = "QUALIFIED"),
+          (t6[(t6.COOLDOWN = 3)] = "COOLDOWN"),
+          (t6[(t6.UNAPPLIED = 4)] = "UNAPPLIED"),
+          ((t5 = o || (o = {})).NONE = "NONE"),
+          (t5.REGISTERING = "REGISTERING"),
+          (t5.REGISTER_AGE_GATE = "REGISTER_AGE_GATE"),
+          (t5.REGISTER_WITH_ERROR = "REGISTER_WITH_ERROR"),
           ((t4 = i || (i = {})).OPEN = "OPEN"),
           (t4.SUBMITTING = "SUBMITTING"),
           (t4.CLOSED = "CLOSED"),
@@ -5958,9 +5957,9 @@
           (r_.SUGGESTIONS = "SUGGESTIONS"),
           ((ro = d || (d = {})).SEARCH = "SEARCH"),
           (ro.CHANNEL = "CHANNEL"),
-          ((ri = L || (L = {})).NEVER = "NEVER"),
+          ((ri = f || (f = {})).NEVER = "NEVER"),
           (ri.ALL = "ALL"),
-          ((rE = f || (f = {})).NEVER = "NEVER"),
+          ((rE = L || (L = {})).NEVER = "NEVER"),
           (rE.ENABLED = "ENABLED"),
           (rE.BLOCKED = "BLOCKED"),
           ((rc = O || (O = {})).NEVER = "NEVER"),
@@ -6139,7 +6138,7 @@
             "MEMBER_VERIFICATION_MANUAL_APPROVAL"),
           (rR.CLAN_DISCOVERY_DISABLED = "CLAN_DISCOVERY_DISABLED"),
           (rR.FORWARDING_DISABLED = "FORWARDING_DISABLED");
-        let aj = Object.freeze({
+        let aX = Object.freeze({
           SUPPRESS_JOIN_NOTIFICATIONS: 1,
           SUPPRESS_PREMIUM_SUBSCRIPTIONS: 2,
           SUPPRESS_GUILD_REMINDER_NOTIFICATIONS: 4,
@@ -6170,28 +6169,28 @@
           (rd.AUTO_ENABLED = "AUTO_ENABLED"),
           (rd.DISABLED = "DISABLED"),
           (rd.NONE = "NONE"),
-          ((rL = G || (G = {})).LOGIN = "Login"),
-          (rL.REGISTER = "Register"),
-          (rL.INVITE = "Accept Invite Page"),
-          (rL.VERIFY = "Verify Email"),
-          (rL.DISABLE_EMAIL_NOTIFICATIONS = "Disable Email Notifications"),
-          (rL.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS =
+          ((rf = G || (G = {})).LOGIN = "Login"),
+          (rf.REGISTER = "Register"),
+          (rf.INVITE = "Accept Invite Page"),
+          (rf.VERIFY = "Verify Email"),
+          (rf.DISABLE_EMAIL_NOTIFICATIONS = "Disable Email Notifications"),
+          (rf.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS =
             "Disable Server Highlight Notifications"),
-          (rL.AUTHORIZE_IP = "Authorize Ip"),
-          (rL.REJECT_IP = "Reject Ip"),
-          (rL.REJECT_MFA = "Reject MFA"),
-          (rL.REPORT = "Report Illegal Content"),
-          (rL.REPORT_SECOND_LOOK = "Report Second Look"),
-          (rL.AUTHORIZE_PAYMENT = "Authorize Payment"),
-          (rL.RESET = "Reset"),
-          (rL.ACCOUNT_REVERT = "Account Revert"),
-          (rL.HANDOFF = "Handoff"),
-          (rL.UNKNOWN = "Unknown"),
-          (rL.LANDING = "Landing"),
-          ((rf = m || (m = {})).SENT = "SENT"),
-          (rf.SENDING = "SENDING"),
-          (rf.SEND_FAILED = "SEND_FAILED");
-        let a$ = new Set([
+          (rf.AUTHORIZE_IP = "Authorize Ip"),
+          (rf.REJECT_IP = "Reject Ip"),
+          (rf.REJECT_MFA = "Reject MFA"),
+          (rf.REPORT = "Report Illegal Content"),
+          (rf.REPORT_SECOND_LOOK = "Report Second Look"),
+          (rf.AUTHORIZE_PAYMENT = "Authorize Payment"),
+          (rf.RESET = "Reset"),
+          (rf.ACCOUNT_REVERT = "Account Revert"),
+          (rf.HANDOFF = "Handoff"),
+          (rf.UNKNOWN = "Unknown"),
+          (rf.LANDING = "Landing"),
+          ((rL = m || (m = {})).SENT = "SENT"),
+          (rL.SENDING = "SENDING"),
+          (rL.SEND_FAILED = "SEND_FAILED");
+        let aj = new Set([
           aB.u.REPLY,
           aB.u.THREAD_STARTER_MESSAGE,
           aB.u.CONTEXT_MENU_COMMAND,
@@ -6270,7 +6269,7 @@
           (ry[(ry.MEDIUM = 2)] = "MEDIUM"),
           (ry[(ry.HIGH = 3)] = "HIGH"),
           (ry[(ry.VERY_HIGH = 4)] = "VERY_HIGH");
-        let aq = Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
+        let a$ = Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
         ((rb = j || (j = {}))[(rb.NONE = 0)] = "NONE"),
           (rb[(rb.ELEVATED = 1)] = "ELEVATED"),
           ((rv = $ || ($ = {}))[(rv.DISABLED = 0)] = "DISABLED"),
@@ -6298,21 +6297,21 @@
           ((rY = Z || (Z = {}))[(rY.DEFAULT = 0)] = "DEFAULT"),
           (rY[(rY.HIGH_SCHOOL = 1)] = "HIGH_SCHOOL"),
           (rY[(rY.COLLEGE = 2)] = "COLLEGE");
-        let aJ = "@me",
-          az = "@favorites",
-          aQ = "@guilds-empty-nux",
-          aZ = "",
-          a0 = "null",
-          a1 = "0",
-          a2 = "null",
-          a3 = "1096190356233670716",
-          a5 = Object.freeze({
+        let aq = "@me",
+          aJ = "@favorites",
+          az = "@guilds-empty-nux",
+          aQ = "",
+          aZ = "null",
+          a0 = "0",
+          a1 = "null",
+          a2 = "1096190356233670716",
+          a3 = Object.freeze({
             USER: (e) => "/users/".concat(e),
             USER_RELATIONSHIPS: function () {
               let e =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : aJ;
+                  : aq;
               return "/users/".concat(e, "/relationships");
             },
             USER_RELATIONSHIP: (e) => "/users/@me/relationships/".concat(e),
@@ -6516,7 +6515,7 @@
               let t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
-                  : aJ;
+                  : aq;
               return "/channels/".concat(e, "/thread-members/").concat(t);
             },
             THREAD_MEMBER_SETTINGS: (e) =>
@@ -7583,8 +7582,8 @@
             CHANNEL: (e, t, r) => {
               let n =
                 null == t
-                  ? "/channels/".concat(e || aJ)
-                  : "/channels/".concat(e || aJ, "/").concat(t);
+                  ? "/channels/".concat(e || aq)
+                  : "/channels/".concat(e || aq, "/").concat(t);
               return null == r ? n : "".concat(n, "/").concat(r);
             },
             CHANNEL_THREAD_VIEW: (e, t, r, n) => {
@@ -7612,8 +7611,8 @@
             GIFT_CODE_LOGIN: (e) => "/gifts/".concat(e, "/login"),
             WELCOME: (e, t) =>
               null != t
-                ? "/welcome/".concat(null != e ? e : aJ, "/").concat(t)
-                : "/welcome/".concat(null != e ? e : aJ),
+                ? "/welcome/".concat(null != e ? e : aq, "/").concat(t)
+                : "/welcome/".concat(null != e ? e : aq),
             VERIFY: "/verify",
             VERIFY_REQUEST: "/verify-request",
             RESET: "/reset",
@@ -7663,13 +7662,6 @@
               "/discovery/applications/categories/".concat(e),
             GLOBAL_DISCOVERY_APPS_PROFILE: (e) =>
               "/discovery/applications/".concat(e),
-            GLOBAL_DISCOVERY_APPS_PROFILE_SECTION: (e, t) =>
-              "/discovery/applications/".concat(e, "/").concat(t),
-            GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU: (e, t) =>
-              "/discovery/applications/"
-                .concat(e, "/")
-                .concat(aV.Wc.STORE, "/")
-                .concat(t),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
             DISCOVERY_GUILD_GAME_RESULTS: (e) => "/discovery/game/".concat(e),
             GUILD_MEMBER_VERIFICATION: (e, t) =>
@@ -7736,8 +7728,8 @@
             QUESTS: (e) => "/quests/".concat(e),
             ACCOUNT_REVERT: (e) => "/wasntme/".concat(e),
           }),
-          a4 = (0, aH.Ft)(a5),
-          a8 = (0, aH.Ft)(a6, [":", "?", "@"]);
+          a5 = (0, aH.Ft)(a3),
+          a4 = (0, aH.Ft)(a6, [":", "?", "@"]);
         ((rx = ee || (ee = {}))[(rx.INSTANCE = 1)] = "INSTANCE"),
           (rx[(rx.JOIN = 2)] = "JOIN"),
           (rx[(rx.SYNC = 16)] = "SYNC"),
@@ -7750,25 +7742,25 @@
           (rK[(rK.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
           (rK[(rK.NO_MESSAGES = 2)] = "NO_MESSAGES"),
           (rK[(rK.NULL = 3)] = "NULL");
-        let a7 = 100,
-          a9 = 200,
+        let a8 = 100,
+          a7 = 200,
+          a9 = 50,
           _e = 50,
-          _t = 50,
-          _r = 25,
-          _n = 200,
-          _a = 100,
-          __ = 250,
-          _o = 2e3,
-          _i = 4e3,
-          _E = 50,
-          _c = 100,
-          _s = 1e3,
-          _l = 100,
-          _u = 256,
-          _I = 32,
-          _R = 190,
-          _A = 32,
-          _N = 6e5;
+          _t = 25,
+          _r = 200,
+          _n = 100,
+          _a = 250,
+          __ = 2e3,
+          _o = 4e3,
+          _i = 50,
+          _E = 100,
+          _c = 1e3,
+          _s = 100,
+          _l = 256,
+          _u = 32,
+          _I = 190,
+          _R = 32,
+          _A = 6e5;
         aY.Z.Seconds.HOUR,
           aY.Z.Seconds.MINUTE,
           aY.Z.Seconds.MINUTE,
@@ -7778,14 +7770,14 @@
           aY.Z.Seconds.MINUTE,
           aY.Z.Seconds.HOUR,
           aY.Z.Seconds.HOUR;
-        let _T = 10,
-          _d = 26214400,
-          _L = 10485760,
+        let _N = 10,
+          _T = 26214400,
+          _d = 10485760,
           _f = 524288e3,
-          _O = (e) => "||".concat(e, "||"),
-          _p = /^\|\|([\s\S]+?)\|\|/,
-          _h = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
-          _S = /^\d{17,19}$/;
+          _L = (e) => "||".concat(e, "||"),
+          _O = /^\|\|([\s\S]+?)\|\|/,
+          _p = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+          _h = /^\d{17,19}$/;
         ((rV = er || (er = {})).MESSAGE = "MESSAGE"),
           (rV.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED"),
           (rV.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER"),
@@ -7815,26 +7807,26 @@
           (r$.GAMES_YOU_PLAY = "gamesYouPlay"),
           (r$.SEARCH = "search"),
           (r$.MISC = "misc");
-        let _D = 128,
-          _C = 1024,
-          _g = 2e3,
-          _P = 64e3,
-          _U = 96e3,
-          _M = "0000",
-          _G = "1",
-          _m = 1e4,
-          _y = 50,
-          _b = 150,
-          _v = 300,
-          _w = 10,
-          _B = 25,
-          _W = 240,
-          _H = 480,
-          _Y = 650,
-          _x = "DEVICE_TOKEN",
-          _K = "DEVICE_VOIP_TOKEN",
-          _V = "first_run_date_key",
-          _k = Object.freeze({
+        let _S = 128,
+          _D = 1024,
+          _C = 2e3,
+          _g = 64e3,
+          _P = 96e3,
+          _U = "0000",
+          _M = "1",
+          _G = 1e4,
+          _m = 50,
+          _y = 150,
+          _b = 300,
+          _v = 10,
+          _w = 25,
+          _B = 240,
+          _W = 480,
+          _H = 650,
+          _Y = "DEVICE_TOKEN",
+          _x = "DEVICE_VOIP_TOKEN",
+          _K = "first_run_date_key",
+          _V = Object.freeze({
             API_DOCS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/developers/docs/intro",
@@ -7955,7 +7947,7 @@
               "/safetycenter",
             ),
           }),
-          _F = Object.freeze({
+          _k = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -7963,10 +7955,10 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          _X = 10,
-          _j = 25,
-          _$ = /^FILTER_/,
-          _q = /^ANSWER_/;
+          _F = 10,
+          _X = 25,
+          _j = /^FILTER_/,
+          _$ = /^ANSWER_/;
         ((rq = eE || (eE = {})).GUILD = "GUILD"),
           (rq.FAVORITES = "FAVORITES"),
           (rq.CHANNEL = "CHANNEL"),
@@ -8438,7 +8430,7 @@
           (r1.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r1.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r1.NITRO_HOME = "Nitro Home");
-        let _J = "help_center_cta";
+        let _q = "help_center_cta";
         ((r2 = eA || (eA = {})).HERO = "Hero"),
           (r2.BODY = "Body"),
           (r2.NAVIGATION = "Navigation"),
@@ -8961,28 +8953,28 @@
           (r3.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"),
           (r3.CUSTOM_STATUS_MANAGER = "CUSTOM_STATUS_MANAGER"),
           (r3.APP_COMMAND = "APP_COMMAND"),
-          ((r5 = eT || (eT = {})).GIFT = "gift"),
-          (r5.BUY = "buy"),
-          (r5.BOX_ART = "box_art"),
-          (r5.PERK = "perk"),
-          (r5.NONE = "none"),
-          (r5.TIER_1 = "tier_1"),
-          (r5.TIER_2 = "tier_2"),
-          (r5.TIER_3 = "tier_3"),
-          (r5.TRIAL = "trial"),
-          (r5.FPS = "fps"),
-          (r5.RESOLUTION = "resolution"),
-          (r5.ACTIVITY = "activity"),
-          (r5.REACTION = "reaction"),
-          (r5.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
-          (r5.REACTION_OVERFLOW = "reaction_overflow"),
-          (r5.NITRO_STANDARD = "nitro_standard"),
-          (r5.NITRO_BASIC = "nitro_basic"),
-          (r5.NITRO_SKU_SELECTION = "nitro_sku_selection"),
-          ((r6 = ed || (ed = {})).PRIMARY = "primary"),
-          (r6.SECONDARY = "secondary"),
-          (r6.DISMISS = "dismiss");
-        let _z = Object.freeze({
+          ((r6 = eT || (eT = {})).GIFT = "gift"),
+          (r6.BUY = "buy"),
+          (r6.BOX_ART = "box_art"),
+          (r6.PERK = "perk"),
+          (r6.NONE = "none"),
+          (r6.TIER_1 = "tier_1"),
+          (r6.TIER_2 = "tier_2"),
+          (r6.TIER_3 = "tier_3"),
+          (r6.TRIAL = "trial"),
+          (r6.FPS = "fps"),
+          (r6.RESOLUTION = "resolution"),
+          (r6.ACTIVITY = "activity"),
+          (r6.REACTION = "reaction"),
+          (r6.CANT_ADD_OR_REMOVE = "cant_add_or_remove"),
+          (r6.REACTION_OVERFLOW = "reaction_overflow"),
+          (r6.NITRO_STANDARD = "nitro_standard"),
+          (r6.NITRO_BASIC = "nitro_basic"),
+          (r6.NITRO_SKU_SELECTION = "nitro_sku_selection"),
+          ((r5 = ed || (ed = {})).PRIMARY = "primary"),
+          (r5.SECONDARY = "secondary"),
+          (r5.DISMISS = "dismiss");
+        let _J = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9035,7 +9027,7 @@
           GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
           GUILD_BOOSTING: "Nitro Server Boost",
           WEBAUTHN_VIEW: "View Security Keys",
-          [ak.cP]: "Guild Role Subscription",
+          [aV.cP]: "Guild Role Subscription",
           BILLING: "Billing",
           EXPERIMENTS: "Experiments",
           DEVELOPER_OPTIONS: "Developer Options",
@@ -9100,7 +9092,7 @@
           SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
           WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool",
         });
-        ((r4 = eL || (eL = {})).APPLICATION_STORE =
+        ((r4 = ef || (ef = {})).APPLICATION_STORE =
           "Application Store Verified Guild Invite - Lurker"),
           (r4.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode"),
           (r4.NOTICE_BAR = "Notice - Lurker Mode"),
@@ -9109,7 +9101,7 @@
           (r4.DIRECTORY_EVENTS = "Directory Channel Events"),
           (r4.POLL_ALERT = "Poll Alert"),
           (r4.ICYMI = "ICYMI"),
-          ((r8 = ef || (ef = {})).QR_CODE = "QR Code Login"),
+          ((r8 = eL || (eL = {})).QR_CODE = "QR Code Login"),
           (r8.MOBILE_WEB_HANDOFF = "Mobile Web Handoff"),
           (r8.DEFAULT = "The default username password Login"),
           (r8.MFA = "MFA Login"),
@@ -9282,7 +9274,7 @@
             "TOGGLE_REACTION_POPOUT"),
           (n_.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (n_.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
-        let _Q = 50;
+        let _z = 50;
         ((no = eU || (eU = {})).TWITCH = "twitch"),
           (no.YOUTUBE = "youtube"),
           (no.SKYPE = "skype"),
@@ -9329,15 +9321,15 @@
             GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
             AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
           });
-        let _Z = new Set(["facebook", "contacts"]),
-          _0 = new Set([
+        let _Q = new Set(["facebook", "contacts"]),
+          _Z = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          _1 = Object.freeze({
+          _0 = Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
               .concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -9345,14 +9337,14 @@
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
-          _2 = 10070709,
-          _3 = [
+          _1 = 10070709,
+          _2 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          _5 = (0, aW._i)(ay.Z.BRAND_500);
-        am()(null != _5, "Brand color could not be parsed"),
+          _3 = (0, aW._i)(ay.Z.BRAND_500);
+        am()(null != _3, "Brand color could not be parsed"),
           ((ns = ey || (ey = {})).ROLE = "ROLE"),
           (ns.MEMBER = "MEMBER"),
           ((nl = eb || (eb = {})).VOICE_LEGACY_SUBSYSTEM =
@@ -9390,14 +9382,14 @@
           (nR.FILTER = "FILTER"),
           (nR.FILTER_ALL = "FILTER_ALL");
         let _6 = "YYYY-MM-DD",
-          _4 = "PrivateChannelRecipientsInvitePopout";
+          _5 = "PrivateChannelRecipientsInvitePopout";
         ((nA = eW || (eW = {}))[(nA.NONE = 0)] = "NONE"),
           (nA[(nA.TIER_1 = 1)] = "TIER_1"),
           (nA[(nA.TIER_2 = 2)] = "TIER_2"),
           (nA[(nA.TIER_3 = 3)] = "TIER_3");
-        let _8 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
-          _7 = 7,
-          _9 = 0;
+        let _4 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
+          _8 = 7,
+          _7 = 0;
         ((nN = eH || (eH = {}))[(nN.DEFAULT = 0)] = "DEFAULT"),
           (nN[(nN.GIFT = 1)] = "GIFT"),
           (nN[(nN.SALE = 2)] = "SALE"),
@@ -9406,7 +9398,7 @@
           (nN[(nN.MOBILE = 5)] = "MOBILE"),
           (nN[(nN.PREMIUM_TIER_0 = 6)] = "PREMIUM_TIER_0"),
           (nN[(nN.MOBILE_PREMIUM_TIER_2 = 7)] = "MOBILE_PREMIUM_TIER_2");
-        let oe = Object.freeze({
+        let _9 = Object.freeze({
           fonts: [
             {
               src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -9423,7 +9415,7 @@
           (nT[(nT.BILLING_RETRY = 7)] = "BILLING_RETRY"),
           (nT[(nT.PAUSED = 8)] = "PAUSED"),
           (nT[(nT.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
-        let ot = {
+        let oe = {
           ALL_PAUSE: new Set([9, 8]),
           ALL_PAUSEABLE: new Set([1, 8]),
           INACTIVE: new Set([0, 4, 6, 7]),
@@ -9432,18 +9424,18 @@
           (nd[(nd.PAID = 2)] = "PAID"),
           (nd[(nd.VOID = 3)] = "VOID"),
           (nd[(nd.UNCOLLECTIBLE = 4)] = "UNCOLLECTIBLE"),
-          ((nL = eK || (eK = {})).USER = "USER"),
-          (nL.GLOBAL = "GLOBAL"),
-          (nL.ROLE = "ROLE"),
-          (nL.CHANNEL = "CHANNEL"),
-          (nL.EMOJI = "EMOJI"),
-          (nL.EMOJI_PREMIUM_UPSELL = "EMOJI_PREMIUM_UPSELL"),
-          (nL.SLASH = "SLASH"),
-          (nL.CHOICE = "CHOICE"),
-          (nL.STICKER = "STICKER"),
-          (nL.CHOICE_LOADING = "CHOICE_LOADING"),
-          (nL.LABEL = "LABEL");
-        let or = Object.freeze({
+          ((nf = eK || (eK = {})).USER = "USER"),
+          (nf.GLOBAL = "GLOBAL"),
+          (nf.ROLE = "ROLE"),
+          (nf.CHANNEL = "CHANNEL"),
+          (nf.EMOJI = "EMOJI"),
+          (nf.EMOJI_PREMIUM_UPSELL = "EMOJI_PREMIUM_UPSELL"),
+          (nf.SLASH = "SLASH"),
+          (nf.CHOICE = "CHOICE"),
+          (nf.STICKER = "STICKER"),
+          (nf.CHOICE_LOADING = "CHOICE_LOADING"),
+          (nf.LABEL = "LABEL");
+        let ot = Object.freeze({
           FONT_SIZE_DEFAULT: 16,
           FONT_SIZE_MIN: 12,
           FONT_SIZE_MAX: 24,
@@ -9457,22 +9449,22 @@
           ZOOM_MAX: 200,
           ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
         });
-        ((nf = eV || (eV = {})).GIF = "GIF"),
-          (nf.GIF_SEARCH = "GIF search"),
-          (nf.EMOJI = "emoji"),
-          (nf.EMOJI_SEARCH = "emoji search"),
-          (nf.CAMERA = "camera"),
-          (nf.NATIVE_MEDIA_PICKER = "native media picker"),
-          (nf.NITRO_GIFTING = "nitro gifting"),
-          (nf.SLASH_COMMAND = "slash command"),
-          (nf.START_THREAD = "start thread"),
-          (nf.ATTACH_FILE = "attach file"),
-          (nf.MEDIA_PICKER = "media picker"),
-          (nf.STICKER = "sticker"),
-          (nf.STICKER_SEARCH = "sticker search"),
-          (nf.ADD_BUTTON = "add button"),
-          (nf.APPS_BUTTON = "apps button"),
-          (nf.APPS = "apps"),
+        ((nL = eV || (eV = {})).GIF = "GIF"),
+          (nL.GIF_SEARCH = "GIF search"),
+          (nL.EMOJI = "emoji"),
+          (nL.EMOJI_SEARCH = "emoji search"),
+          (nL.CAMERA = "camera"),
+          (nL.NATIVE_MEDIA_PICKER = "native media picker"),
+          (nL.NITRO_GIFTING = "nitro gifting"),
+          (nL.SLASH_COMMAND = "slash command"),
+          (nL.START_THREAD = "start thread"),
+          (nL.ATTACH_FILE = "attach file"),
+          (nL.MEDIA_PICKER = "media picker"),
+          (nL.STICKER = "sticker"),
+          (nL.STICKER_SEARCH = "sticker search"),
+          (nL.ADD_BUTTON = "add button"),
+          (nL.APPS_BUTTON = "apps button"),
+          (nL.APPS = "apps"),
           ((nO = ek || (ek = {})).APP_OPENED = "app_opened"),
           (nO.APP_CRASHED = "app_crashed"),
           (nO.APP_BACKGROUND = "app_background"),
@@ -9858,7 +9850,6 @@
           (nO.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (nO.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (nO.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
-          (nO.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
           (nO.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (nO.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (nO.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -10322,7 +10313,6 @@
             "chat_context_bar_action_canceled"),
           (nO.SHARE_SHEET_ACTION = "share_sheet_action"),
           (nO.SHARE_MESSAGE_SENT = "share_message_sent"),
-          (nO.EXTERNAL_SHARE_OPENED = "external_share_opened"),
           (nO.MESSAGE_POPOUT_MENU_OPENED_MOBILE =
             "message_popout_menu_opened_mobile"),
           (nO.MESSAGE_POPOUT_MENU_OPENED_DESKTOP =
@@ -11006,7 +10996,7 @@
           (nD.SUMMARIES = "SUMMARIES"),
           (nD.SUMMARIES_ENABLED = "SUMMARIES_ENABLED"),
           (nD.CLAN_ADMIN_UPSELL = "CLAN_ADMIN_UPSELL");
-        let on = Object.freeze({
+        let or = Object.freeze({
             STORAGE_MANIFEST: (e, t) =>
               "".concat(e, "/storage/").concat(t, "/MANIFEST"),
             INSTALL_DIR: (e) => "".concat(e, "/content"),
@@ -11020,7 +11010,7 @@
               linux: "linux",
             },
           }),
-          oa = 864e5;
+          on = 864e5;
         ((nC = eq || (eq = {})).NORMAL = "normal"),
           (nC.MINIMUM = "minimum"),
           (nC.NO_CHAT = "no-chat"),
@@ -11038,7 +11028,7 @@
           (nP.RTC_DEBUG = "RTC_DEBUG"),
           (nP.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
           (nP.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
-        let o_ = Object.freeze({
+        let oa = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
           CHANNEL_CREATE: 10,
@@ -11282,7 +11272,7 @@
           (ny.SCHEDULED_END_TIME = "scheduled_end_time"),
           (ny.IS_CANCELED = "is_canceled"),
           (ny.LINKED_LOBBY = "linked_lobby");
-        let oo = 50;
+        let o_ = 50;
         ((nb = e3 || (e3 = {})).AGREEMENTS = "AGREEMENTS"),
           (nb.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (nb.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
@@ -11297,14 +11287,14 @@
             "REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
           (nb.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE =
             "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE"),
-          ((e5 || (e5 = {})).UPDATE_PASSWORD = "update_password"),
-          ((nv = e6 || (e6 = {})).CAPTCHA = "captcha"),
+          ((e6 || (e6 = {})).UPDATE_PASSWORD = "update_password"),
+          ((nv = e5 || (e5 = {})).CAPTCHA = "captcha"),
           (nv.EMAIL_OR_PHONE = "email_or_phone"),
           (nv.PHONE = "phone"),
           (nv.EMAIL = "email"),
           (nv.REVERIFY_PHONE = "reverify_phone"),
           (nv.REVERIFY_EMAIL = "reverify_email");
-        let oi = 512;
+        let oo = 512;
         ((nw = e4 || (e4 = {}))[(nw.PRIMARY = 0)] = "PRIMARY"),
           (nw[(nw.SECONDARY = 2)] = "SECONDARY"),
           (nw[(nw.WHEEL = 4)] = "WHEEL"),
@@ -11352,7 +11342,7 @@
           (nH.EMBED_IFRAME = "EMBED_IFRAME"),
           ((nY = te || (te = {})).GIF = "GIF"),
           (nY.STICKER = "STICKER");
-        let oE = Object.freeze({
+        let oi = Object.freeze({
           GIF: { type: "GIF", command: "gif", title: "Gif", commandId: "-16" },
           TENOR: {
             type: "GIF",
@@ -11572,22 +11562,22 @@
             twitch: "Twitch",
             epic: "Epic",
           });
-        let oc = 6016,
-          os = 3384;
+        let oE = 6016,
+          oc = 3384;
         ((nX = ti || (ti = {})).USAGE_STATISTICS = "usage_statistics"),
           (nX.PERSONALIZATION = "personalization"),
           ((nj = tE || (tE = {}))[(nj.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
           (nj[(nj.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
           (nj[(nj.NO_RELATION = 8)] = "NO_RELATION");
-        let ol = 14;
+        let os = 14;
         ((n$ = tc || (tc = {}))[(n$.NONE = 0)] = "NONE"),
           (n$[(n$.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (n$[(n$.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
-        let ou = 30;
+        let ol = 30;
         ((nq = ts || (ts = {})).OVERLAY = "OVERLAY"),
           (nq.APP = "APP"),
           (nq.POPOUT = "POPOUT");
-        let oI = __OVERLAY__ ? "OVERLAY" : "APP";
+        let ou = __OVERLAY__ ? "OVERLAY" : "APP";
         ((nJ = tl || (tl = {})).COMPLETE = "complete"),
           (nJ.TRANSITION = "transition"),
           ((nz = tu || (tu = {})).QUEUED = "queued"),
@@ -11635,15 +11625,15 @@
           (n3[(n3.FRACTIONAL_REDEMPTION = 11)] = "FRACTIONAL_REDEMPTION"),
           (n3[(n3.VIRTUAL_CURRENCY_REDEMPTION = 12)] =
             "VIRTUAL_CURRENCY_REDEMPTION"),
-          ((n5 = tL || (tL = {})).ESRB = "1"),
-          (n5.PEGI = "2"),
-          ((n6 = tf || (tf = {}))[(n6.DURABLE_PRIMARY = 1)] =
+          ((n6 = tf || (tf = {})).ESRB = "1"),
+          (n6.PEGI = "2"),
+          ((n5 = tL || (tL = {}))[(n5.DURABLE_PRIMARY = 1)] =
             "DURABLE_PRIMARY"),
-          (n6[(n6.DURABLE = 2)] = "DURABLE"),
-          (n6[(n6.CONSUMABLE = 3)] = "CONSUMABLE"),
-          (n6[(n6.BUNDLE = 4)] = "BUNDLE"),
-          (n6[(n6.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
-          (n6[(n6.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
+          (n5[(n5.DURABLE = 2)] = "DURABLE"),
+          (n5[(n5.CONSUMABLE = 3)] = "CONSUMABLE"),
+          (n5[(n5.BUNDLE = 4)] = "BUNDLE"),
+          (n5[(n5.SUBSCRIPTION = 5)] = "SUBSCRIPTION"),
+          (n5[(n5.SUBSCRIPTION_GROUP = 6)] = "SUBSCRIPTION_GROUP"),
           ((n4 = tO || (tO = {}))[(n4.FULL = 1)] = "FULL"),
           (n4[(n4.EARLY_ACCESS = 2)] = "EARLY_ACCESS"),
           (n4[(n4.VIP_ACCESS = 3)] = "VIP_ACCESS"),
@@ -11676,12 +11666,12 @@
           ((at = tC || (tC = {})).HOUSE_1 = "HOUSE_1"),
           (at.HOUSE_2 = "HOUSE_2"),
           (at.HOUSE_3 = "HOUSE_3");
-        let oR = "RANDOM_HYPESQUAD_HOUSE";
+        let oI = "RANDOM_HYPESQUAD_HOUSE";
         ((ar = tg || (tg = {}))[(ar.KEYBOARD_KEY = 0)] = "KEYBOARD_KEY"),
           (ar[(ar.MOUSE_BUTTON = 1)] = "MOUSE_BUTTON"),
           (ar[(ar.KEYBOARD_MODIFIER_KEY = 2)] = "KEYBOARD_MODIFIER_KEY"),
           (ar[(ar.GAMEPAD_BUTTON = 3)] = "GAMEPAD_BUTTON");
-        let oA = Object.freeze({
+        let oR = Object.freeze({
             esc: 9,
             f1: 67,
             f2: 68,
@@ -11800,7 +11790,7 @@
             "track back": 173,
             "track skip": 171,
           }),
-          oN = Object.freeze({
+          oA = Object.freeze({
             a: 4,
             s: 22,
             d: 7,
@@ -11916,7 +11906,7 @@
           (an[(an.Center = 2)] = "Center"),
           (an[(an.Back = 3)] = "Back"),
           (an[(an.Forward = 4)] = "Forward");
-        let oT = Object.freeze({
+        let oN = Object.freeze({
           a: 65,
           s: 83,
           d: 68,
@@ -12073,28 +12063,27 @@
           (au.TRENDING_CATEGORY = "Category"),
           (au.SEARCH = "Search"),
           (au.SEARCH_SUGGESTION = "Search Suggestion");
-        let od = new Set([
-          aF.pK.USD,
-          aF.pK.CAD,
-          aF.pK.EUR,
-          aF.pK.AUD,
-          aF.pK.GBP,
-          aF.pK.PHP,
-          aF.pK.MYR,
-          aF.pK.VND,
-          aF.pK.KRW,
-          aF.pK.IDR,
+        let oT = new Set([
+          ak.pK.USD,
+          ak.pK.CAD,
+          ak.pK.EUR,
+          ak.pK.AUD,
+          ak.pK.GBP,
+          ak.pK.PHP,
+          ak.pK.MYR,
+          ak.pK.VND,
+          ak.pK.KRW,
+          ak.pK.IDR,
         ]);
         ((aI = tW || (tW = {})).ALWAYS = "ALWAYS"),
           (aI.ON_CLICK = "ON_CLICK"),
           (aI.IF_MODERATOR = "IF_MODERATOR");
-        let oL = [];
+        let od = [];
         ((aR = tH || (tH = {})).CHANNEL_CALL_POPOUT =
           "DISCORD_CHANNEL_CALL_POPOUT"),
           (aR.SOUNDBOARD = "DISCORD_SOUNDBOARD"),
           (aR.RTC_DEBUG_POPOUT = "DISCORD_RTC_DEBUG_POPOUT"),
           (aR.CHANNEL_POPOUT = "DISCORD_CHANNEL_POPOUT"),
-          (aR.ACTIVITY_POPOUT = "DISCORD_ACTIVITY_POPOUT"),
           ((aA = tY || (tY = {})).LOADED = "loaded"),
           (aA.UNLOADED = "unloaded"),
           ((aN = tx || (tx = {})).CONNECTING = "CONNECTING"),
@@ -12109,16 +12098,16 @@
           (aT.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"),
           ((ad = tV || (tV = {})).SOUND = "SOUND"),
           (ad.VIDEO = "VIDEO"),
-          ((aL = tk || (tk = {})).PLAYING = "playing"),
-          (aL.PAUSED = "paused"),
-          ((af = tF || (tF = {})).NONE = "none"),
-          (af.WIFI = "wifi"),
-          (af.CELLULAR = "cellular"),
-          (af.UNKNOWN = "unknown"),
-          (af.ETHERNET = "ethernet"),
-          (af.BLUETOOTH = "bluetooth"),
-          (af.WIMAX = "wimax"),
-          (af.OTHER = "other"),
+          ((af = tk || (tk = {})).PLAYING = "playing"),
+          (af.PAUSED = "paused"),
+          ((aL = tF || (tF = {})).NONE = "none"),
+          (aL.WIFI = "wifi"),
+          (aL.CELLULAR = "cellular"),
+          (aL.UNKNOWN = "unknown"),
+          (aL.ETHERNET = "ethernet"),
+          (aL.BLUETOOTH = "bluetooth"),
+          (aL.WIMAX = "wimax"),
+          (aL.OTHER = "other"),
           ((aO = tX || (tX = {})).UNKNOWN = "unknown"),
           (aO.SLOW_TWO_G = "slow-2g"),
           (aO.TWO_G = "2g"),
@@ -12142,20 +12131,20 @@
           (aD[(aD.WEBHOOKS = 5)] = "WEBHOOKS"),
           (aD[(aD.CHANNELS_SYNCING = 6)] = "CHANNELS_SYNCING");
         let of = 2500,
-          oO = 0,
-          op = 2592e6;
+          oL = 0,
+          oO = 2592e6;
         ((aC = tz || (tz = {})).USERS = "users"),
           (aC.ROLES = "roles"),
           (aC.EVERYONE = "everyone"),
           ((ag = tQ || (tQ = {}))[(ag.AUTO = 1)] = "AUTO"),
           (ag[(ag.FULL = 2)] = "FULL");
-        let oh = 100,
-          oS =
+        let op = 100,
+          oh =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
         ((aP = tZ || (tZ = {}))[(aP.NULL = 0)] = "NULL"),
           (aP[(aP.DISABLED = 1)] = "DISABLED"),
           (aP[(aP.ENABLED = 2)] = "ENABLED");
-        let oD =
+        let oS =
           "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
         ((aU = t0 || (t0 = {}))[(aU.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
           (aU[(aU.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
@@ -12206,8 +12195,8 @@
           N,
           T,
           d,
-          L,
           f,
+          L,
           O,
           p,
           h,
@@ -12326,8 +12315,8 @@
           (j.NO_RESULTS = "NO_RESULTS"),
           (j.ADD_PHONE = "ADD_PHONE"),
           (j.VERIFY_PHONE = "VERIFY_PHONE"),
-          ((L || (L = {})).LANDING = "LANDING"),
-          ((f || (f = {})).ADVANCED = "ADVANCED"),
+          ((f || (f = {})).LANDING = "LANDING"),
+          ((L || (L = {})).ADVANCED = "ADVANCED"),
           (($ = O || (O = {})).USER = "USER"),
           ($.ACTION = "ACTION"),
           ((q = p || (p = {})).OVERVIEW = "OVERVIEW"),
@@ -12575,7 +12564,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3eb29bda8cf154966966701227a32187700b6612",
+            release: "discord_web-040b0a91d182a319bb8cc25334c22a7850e43631",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12644,27 +12633,16 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "344339"), "344339"));
-          o.YA("builtAt", String("1731554741395"));
+            o.YA("buildNumber", ((e = "344085"), "344085"));
+          o.YA("builtAt", String("1731531925477"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
         }
       },
-      979007: function (e, t, r) {
-        "use strict";
-        var n, a;
-        r.d(t, {
-          Wc: function () {
-            return n;
-          },
-        }),
-          ((a = n || (n = {})).ABOUT = "about"),
-          (a.STORE = "store");
-      },
       526761: function (e, t, r) {
         "use strict";
-        var n, a, _, o, i, E, c, s, l, u, I, R, A, N, T, d, L;
+        var n, a, _, o, i, E, c, s, l, u, I, R, A, N, T, d, f;
         r.d(t, {
           Ax: function () {
             return l;
@@ -12700,7 +12678,7 @@
             return g;
           },
           oX: function () {
-            return f;
+            return L;
           },
           rP: function () {
             return o;
@@ -12721,7 +12699,7 @@
             return c;
           },
         });
-        let f = 250,
+        let L = 250,
           O = 762880,
           p = "ROLE_SUBSCRIPTIONS",
           h = "APPLICATION_SUBSCRIPTION_SUBSECTION",
@@ -12793,7 +12771,7 @@
             UNREADS_ONLY_MENTIONS: 4096,
             UNREADS_ALL_MESSAGES: 2048,
           };
-        ((L = u || (u = {})).USER = "user"), (L.STREAM = "stream");
+        ((f = u || (u = {})).USER = "user"), (f.STREAM = "stream");
       },
       70956: function (e, t) {
         "use strict";
@@ -15578,10 +15556,10 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_34: "#5499ed",
-              BLUE_NEW_43: "#2d83e7",
-              BLUE_NEW_45: "#237ee6",
-              BLUE_NEW_56: "#0c66c3",
+              BLUE_NEW_37: "#5398ed",
+              BLUE_NEW_44: "#2e83e7",
+              BLUE_NEW_45: "#2880e6",
+              BLUE_NEW_55: "#0a68c8",
               BRAND_100: "#f7f7fe",
               BRAND_130: "#f0f1fe",
               BRAND_160: "#e7e9fd",
@@ -15641,9 +15619,9 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_32: "#5eaa6b",
-              GREEN_NEW_40: "#3e9953",
-              GREEN_NEW_42: "#35954e",
+              GREEN_NEW_35: "#60aa6c",
+              GREEN_NEW_42: "#3c9852",
+              GREEN_NEW_43: "#37964f",
               GREEN_NEW_56: "#0d7534",
               GUILD_BOOSTING_BLUE: "#3e70dd",
               GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
@@ -15968,9 +15946,9 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
-              YELLOW_NEW_34: "#bd8943",
-              YELLOW_NEW_42: "#ae7425",
-              YELLOW_NEW_44: "#ab6f1d",
+              YELLOW_NEW_37: "#bd8842",
+              YELLOW_NEW_44: "#ad7222",
+              YELLOW_NEW_45: "#aa6f1c",
               YELLOW_NEW_52: "#9a5f02",
               YOUTUBE: "#cb2120",
             },
@@ -15994,7 +15972,7 @@
           { Shadows: N } = c.V,
           { Spacing: T } = s.V,
           d = Symbol("semanticColor"),
-          L = {
+          f = {
             themes: I,
             colors: o()(R, (e, t) => ({ [d]: t })),
             unsafe_rawColors: A,
@@ -16072,7 +16050,7 @@
               adjustColorContrast: (e, t, r, n) => (0, u.pq)(e, r, n, t),
             },
           };
-        t.ZP = L;
+        t.ZP = f;
       },
       949180: function (e, t, r) {
         "use strict";
@@ -16817,10 +16795,10 @@
             return eI;
           },
           $V: function () {
-            return f;
+            return L;
           },
           Ai: function () {
-            return eL;
+            return ef;
           },
           Al: function () {
             return eo.A;
@@ -16886,7 +16864,7 @@
             return C;
           },
           QL: function () {
-            return ef;
+            return eL;
           },
           RG: function () {
             return P;
@@ -16958,7 +16936,7 @@
             return eD;
           },
           lT: function () {
-            return L;
+            return f;
           },
           ld: function () {
             return eS;
@@ -17008,8 +16986,8 @@
           N,
           T,
           d,
-          L,
           f,
+          L,
           O,
           p,
           h,
@@ -17134,7 +17112,7 @@
             5: "Adyen",
             6: "Apple Partner",
           }),
-          eL = Object.freeze({
+          ef = Object.freeze({
             BRAINTREE: {
               KEY: window.GLOBAL_ENV.BRAINTREE_KEY,
               PAYMENT_GATEWAY: "braintree",
@@ -17168,7 +17146,7 @@
           (W[(W.CASH_APP = 17)] = "CASH_APP"),
           (W[(W.APPLE = 18)] = "APPLE"),
           (W[(W.PAYMENT_REQUEST = 99)] = "PAYMENT_REQUEST");
-        let ef = new Map([
+        let eL = new Map([
             [7, "paysafecard"],
             [8, "gcash"],
             [9, "grabpay_MY"],
@@ -17407,7 +17385,7 @@
           (j.VIDEO_STATE_UPDATE = "VIDEO_STATE_UPDATE"),
           (j.READY = "READY"),
           (j.ERROR = "ERROR"),
-          (($ = L || (L = {}))[($.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
+          (($ = f || (f = {}))[($.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
           ($[($.SERVICE_UNAVAILABLE = 1001)] = "SERVICE_UNAVAILABLE"),
           ($[($.TRANSACTION_ABORTED = 1002)] = "TRANSACTION_ABORTED"),
           ($[($.INVALID_PAYLOAD = 4e3)] = "INVALID_PAYLOAD"),
@@ -17446,7 +17424,7 @@
           ($[($.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
           ($[($.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((q = f || (f = {}))[(q.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          ((q = L || (L = {}))[(q.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
           (q[(q.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
           (q[(q.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
           (q[(q.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
@@ -19349,206 +19327,206 @@
           "blue-830": { hex: "#001630" },
           "blue-860": { hex: "#00132b" },
           "blue-900": { hex: "#001024" },
-          "blue-new-1": { hex: "#d3e6fc" },
-          "blue-new-10": { hex: "#b0d1f9" },
-          "blue-new-100": { hex: "#010204" },
-          "blue-new-11": { hex: "#accff8" },
-          "blue-new-12": { hex: "#a8cdf8" },
-          "blue-new-13": { hex: "#a4caf8" },
-          "blue-new-14": { hex: "#a0c8f7" },
-          "blue-new-15": { hex: "#9cc6f7" },
-          "blue-new-16": { hex: "#99c4f6" },
-          "blue-new-17": { hex: "#95c1f6" },
-          "blue-new-18": { hex: "#91bff5" },
-          "blue-new-19": { hex: "#8dbdf5" },
-          "blue-new-2": { hex: "#cfe4fc" },
-          "blue-new-20": { hex: "#89baf4" },
-          "blue-new-21": { hex: "#86b8f4" },
-          "blue-new-22": { hex: "#82b5f3" },
-          "blue-new-23": { hex: "#7eb3f3" },
-          "blue-new-24": { hex: "#7ab1f2" },
-          "blue-new-25": { hex: "#76aef2" },
-          "blue-new-26": { hex: "#73acf1" },
-          "blue-new-27": { hex: "#6faaf1" },
-          "blue-new-28": { hex: "#6ba7f0" },
-          "blue-new-29": { hex: "#67a5f0" },
-          "blue-new-3": { hex: "#cbe1fb" },
-          "blue-new-30": { hex: "#63a3ef" },
-          "blue-new-31": { hex: "#60a0ef" },
-          "blue-new-32": { hex: "#5c9eee" },
-          "blue-new-33": { hex: "#589bed" },
-          "blue-new-34": { hex: "#5499ed" },
-          "blue-new-35": { hex: "#5097ec" },
-          "blue-new-36": { hex: "#4c94ec" },
-          "blue-new-37": { hex: "#4892eb" },
-          "blue-new-38": { hex: "#448fea" },
-          "blue-new-39": { hex: "#408dea" },
-          "blue-new-4": { hex: "#c7dffb" },
-          "blue-new-40": { hex: "#3b8ae9" },
-          "blue-new-41": { hex: "#3788e8" },
-          "blue-new-42": { hex: "#3285e8" },
-          "blue-new-43": { hex: "#2d83e7" },
-          "blue-new-44": { hex: "#2881e6" },
-          "blue-new-45": { hex: "#237ee6" },
-          "blue-new-46": { hex: "#1d7ce5" },
-          "blue-new-47": { hex: "#1579e4" },
-          "blue-new-48": { hex: "#0c77e4" },
+          "blue-new-1": { hex: "#ffffff" },
+          "blue-new-10": { hex: "#d3e6fc" },
+          "blue-new-100": { hex: "#000000" },
+          "blue-new-11": { hex: "#cee3fc" },
+          "blue-new-12": { hex: "#c9e0fb" },
+          "blue-new-13": { hex: "#c4defb" },
+          "blue-new-14": { hex: "#bfdbfa" },
+          "blue-new-15": { hex: "#bad8fa" },
+          "blue-new-16": { hex: "#b6d5f9" },
+          "blue-new-17": { hex: "#b1d2f9" },
+          "blue-new-18": { hex: "#accff8" },
+          "blue-new-19": { hex: "#a7cdf8" },
+          "blue-new-2": { hex: "#fafcff" },
+          "blue-new-20": { hex: "#a3caf7" },
+          "blue-new-21": { hex: "#9ec7f7" },
+          "blue-new-22": { hex: "#99c4f6" },
+          "blue-new-23": { hex: "#95c1f6" },
+          "blue-new-24": { hex: "#90bef5" },
+          "blue-new-25": { hex: "#8bbbf5" },
+          "blue-new-26": { hex: "#87b8f4" },
+          "blue-new-27": { hex: "#82b6f3" },
+          "blue-new-28": { hex: "#7db3f3" },
+          "blue-new-29": { hex: "#79b0f2" },
+          "blue-new-3": { hex: "#f5f9fe" },
+          "blue-new-30": { hex: "#74adf1" },
+          "blue-new-31": { hex: "#6faaf1" },
+          "blue-new-32": { hex: "#6ba7f0" },
+          "blue-new-33": { hex: "#66a4ef" },
+          "blue-new-34": { hex: "#61a1ef" },
+          "blue-new-35": { hex: "#5d9eee" },
+          "blue-new-36": { hex: "#589bed" },
+          "blue-new-37": { hex: "#5398ed" },
+          "blue-new-38": { hex: "#4e95ec" },
+          "blue-new-39": { hex: "#4992eb" },
+          "blue-new-4": { hex: "#f0f7fe" },
+          "blue-new-40": { hex: "#448fea" },
+          "blue-new-41": { hex: "#3f8cea" },
+          "blue-new-42": { hex: "#3a89e9" },
+          "blue-new-43": { hex: "#3486e8" },
+          "blue-new-44": { hex: "#2e83e7" },
+          "blue-new-45": { hex: "#2880e6" },
+          "blue-new-46": { hex: "#217de6" },
+          "blue-new-47": { hex: "#197ae5" },
+          "blue-new-48": { hex: "#0f77e4" },
           "blue-new-49": { hex: "#0074e3" },
-          "blue-new-5": { hex: "#c3ddfb" },
+          "blue-new-5": { hex: "#ebf4fe" },
           "blue-new-50": { hex: "#0074e3" },
           "blue-new-51": { hex: "#0272de" },
           "blue-new-52": { hex: "#056fd8" },
           "blue-new-53": { hex: "#076dd3" },
-          "blue-new-54": { hex: "#096bce" },
-          "blue-new-55": { hex: "#0a69c8" },
+          "blue-new-54": { hex: "#096bcd" },
+          "blue-new-55": { hex: "#0a68c8" },
           "blue-new-56": { hex: "#0c66c3" },
           "blue-new-57": { hex: "#0d64be" },
           "blue-new-58": { hex: "#0e62b9" },
-          "blue-new-59": { hex: "#0f5fb4" },
-          "blue-new-6": { hex: "#bfdbfa" },
-          "blue-new-60": { hex: "#105daf" },
-          "blue-new-61": { hex: "#105baa" },
-          "blue-new-62": { hex: "#1159a5" },
+          "blue-new-59": { hex: "#0f5fb3" },
+          "blue-new-6": { hex: "#e6f1fd" },
+          "blue-new-60": { hex: "#105dae" },
+          "blue-new-61": { hex: "#105ba9" },
+          "blue-new-62": { hex: "#1158a5" },
           "blue-new-63": { hex: "#1156a0" },
-          "blue-new-64": { hex: "#11549c" },
-          "blue-new-65": { hex: "#125297" },
-          "blue-new-66": { hex: "#125092" },
-          "blue-new-67": { hex: "#124e8e" },
-          "blue-new-68": { hex: "#124b89" },
-          "blue-new-69": { hex: "#124985" },
-          "blue-new-7": { hex: "#bbd8fa" },
-          "blue-new-70": { hex: "#124780" },
-          "blue-new-71": { hex: "#12457c" },
-          "blue-new-72": { hex: "#124377" },
-          "blue-new-73": { hex: "#114073" },
-          "blue-new-74": { hex: "#113e6f" },
-          "blue-new-75": { hex: "#113c6b" },
-          "blue-new-76": { hex: "#113a67" },
-          "blue-new-77": { hex: "#103863" },
-          "blue-new-78": { hex: "#10365f" },
-          "blue-new-79": { hex: "#0f335b" },
-          "blue-new-8": { hex: "#b7d6fa" },
-          "blue-new-80": { hex: "#0f3157" },
-          "blue-new-81": { hex: "#0f2f53" },
-          "blue-new-82": { hex: "#0e2d4f" },
-          "blue-new-83": { hex: "#0d2b4b" },
-          "blue-new-84": { hex: "#0d2948" },
-          "blue-new-85": { hex: "#0c2744" },
-          "blue-new-86": { hex: "#0c2540" },
-          "blue-new-87": { hex: "#0b233d" },
-          "blue-new-88": { hex: "#0a2139" },
-          "blue-new-89": { hex: "#0a1f36" },
-          "blue-new-9": { hex: "#b3d4f9" },
-          "blue-new-90": { hex: "#091d33" },
-          "blue-new-91": { hex: "#081b2f" },
-          "blue-new-92": { hex: "#08192c" },
-          "blue-new-93": { hex: "#071729" },
-          "blue-new-94": { hex: "#061525" },
-          "blue-new-95": { hex: "#061321" },
-          "blue-new-96": { hex: "#05101d" },
-          "blue-new-97": { hex: "#040d19" },
-          "blue-new-98": { hex: "#030a13" },
-          "blue-new-99": { hex: "#02060c" },
-          "blurple-1": { hex: "#dae4ff" },
-          "blurple-10": { hex: "#bdcdfe" },
-          "blurple-100": { hex: "#010204" },
-          "blurple-11": { hex: "#bacafe" },
-          "blurple-12": { hex: "#b7c8fe" },
-          "blurple-13": { hex: "#b4c5fe" },
-          "blurple-14": { hex: "#b1c3fd" },
-          "blurple-15": { hex: "#aec0fd" },
-          "blurple-16": { hex: "#abbefd" },
-          "blurple-17": { hex: "#a8bbfd" },
-          "blurple-18": { hex: "#a5b9fd" },
-          "blurple-19": { hex: "#a2b6fc" },
-          "blurple-2": { hex: "#d7e1ff" },
-          "blurple-20": { hex: "#9fb3fc" },
-          "blurple-21": { hex: "#9db1fc" },
-          "blurple-22": { hex: "#9aaefc" },
-          "blurple-23": { hex: "#97acfb" },
-          "blurple-24": { hex: "#94a9fb" },
-          "blurple-25": { hex: "#91a7fb" },
-          "blurple-26": { hex: "#8fa4fb" },
-          "blurple-27": { hex: "#8ca1fa" },
-          "blurple-28": { hex: "#899ffa" },
-          "blurple-29": { hex: "#869cfa" },
-          "blurple-3": { hex: "#d4dfff" },
-          "blurple-30": { hex: "#8499f9" },
-          "blurple-31": { hex: "#8197f9" },
-          "blurple-32": { hex: "#7f94f9" },
-          "blurple-33": { hex: "#7c91f8" },
-          "blurple-34": { hex: "#7a8ff8" },
-          "blurple-35": { hex: "#778cf8" },
-          "blurple-36": { hex: "#7589f7" },
-          "blurple-37": { hex: "#7287f7" },
-          "blurple-38": { hex: "#7084f7" },
-          "blurple-39": { hex: "#6d81f6" },
-          "blurple-4": { hex: "#d0dcff" },
-          "blurple-40": { hex: "#6b7ff6" },
-          "blurple-41": { hex: "#697cf5" },
-          "blurple-42": { hex: "#6779f5" },
-          "blurple-43": { hex: "#6476f5" },
-          "blurple-44": { hex: "#6273f4" },
-          "blurple-45": { hex: "#6071f4" },
-          "blurple-46": { hex: "#5e6ef3" },
-          "blurple-47": { hex: "#5c6bf3" },
-          "blurple-48": { hex: "#5a68f2" },
+          "blue-new-64": { hex: "#11549b" },
+          "blue-new-65": { hex: "#125296" },
+          "blue-new-66": { hex: "#124f91" },
+          "blue-new-67": { hex: "#124d8d" },
+          "blue-new-68": { hex: "#124b88" },
+          "blue-new-69": { hex: "#124984" },
+          "blue-new-7": { hex: "#e1eefd" },
+          "blue-new-70": { hex: "#12467f" },
+          "blue-new-71": { hex: "#12447b" },
+          "blue-new-72": { hex: "#124276" },
+          "blue-new-73": { hex: "#114072" },
+          "blue-new-74": { hex: "#113e6e" },
+          "blue-new-75": { hex: "#113b6a" },
+          "blue-new-76": { hex: "#113965" },
+          "blue-new-77": { hex: "#103761" },
+          "blue-new-78": { hex: "#10355d" },
+          "blue-new-79": { hex: "#0f3359" },
+          "blue-new-8": { hex: "#dcecfd" },
+          "blue-new-80": { hex: "#0f3155" },
+          "blue-new-81": { hex: "#0e2f52" },
+          "blue-new-82": { hex: "#0e2d4e" },
+          "blue-new-83": { hex: "#0d2a4a" },
+          "blue-new-84": { hex: "#0d2846" },
+          "blue-new-85": { hex: "#0c2643" },
+          "blue-new-86": { hex: "#0b243f" },
+          "blue-new-87": { hex: "#0b223b" },
+          "blue-new-88": { hex: "#0a2038" },
+          "blue-new-89": { hex: "#091e34" },
+          "blue-new-9": { hex: "#d7e9fc" },
+          "blue-new-90": { hex: "#091c31" },
+          "blue-new-91": { hex: "#081a2e" },
+          "blue-new-92": { hex: "#07182b" },
+          "blue-new-93": { hex: "#071627" },
+          "blue-new-94": { hex: "#061423" },
+          "blue-new-95": { hex: "#05111f" },
+          "blue-new-96": { hex: "#040f1b" },
+          "blue-new-97": { hex: "#030b16" },
+          "blue-new-98": { hex: "#020810" },
+          "blue-new-99": { hex: "#010408" },
+          "blurple-1": { hex: "#ffffff" },
+          "blurple-10": { hex: "#dae3ff" },
+          "blurple-100": { hex: "#000000" },
+          "blurple-11": { hex: "#d6e0ff" },
+          "blurple-12": { hex: "#d2ddff" },
+          "blurple-13": { hex: "#cedaff" },
+          "blurple-14": { hex: "#cad7fe" },
+          "blurple-15": { hex: "#c6d4fe" },
+          "blurple-16": { hex: "#c2d1fe" },
+          "blurple-17": { hex: "#becefe" },
+          "blurple-18": { hex: "#bbcbfe" },
+          "blurple-19": { hex: "#b7c7fe" },
+          "blurple-2": { hex: "#fbfcff" },
+          "blurple-20": { hex: "#b3c4fd" },
+          "blurple-21": { hex: "#afc1fd" },
+          "blurple-22": { hex: "#acbefd" },
+          "blurple-23": { hex: "#a8bbfd" },
+          "blurple-24": { hex: "#a4b8fc" },
+          "blurple-25": { hex: "#a1b5fc" },
+          "blurple-26": { hex: "#9db1fc" },
+          "blurple-27": { hex: "#9aaefc" },
+          "blurple-28": { hex: "#96abfb" },
+          "blurple-29": { hex: "#93a8fb" },
+          "blurple-3": { hex: "#f7f9ff" },
+          "blurple-30": { hex: "#8fa5fb" },
+          "blurple-31": { hex: "#8ca2fa" },
+          "blurple-32": { hex: "#899efa" },
+          "blurple-33": { hex: "#859bfa" },
+          "blurple-34": { hex: "#8298f9" },
+          "blurple-35": { hex: "#7f95f9" },
+          "blurple-36": { hex: "#7c91f8" },
+          "blurple-37": { hex: "#798ef8" },
+          "blurple-38": { hex: "#768bf7" },
+          "blurple-39": { hex: "#7387f7" },
+          "blurple-4": { hex: "#f2f6ff" },
+          "blurple-40": { hex: "#7084f7" },
+          "blurple-41": { hex: "#6d81f6" },
+          "blurple-42": { hex: "#6a7df6" },
+          "blurple-43": { hex: "#677af5" },
+          "blurple-44": { hex: "#6577f5" },
+          "blurple-45": { hex: "#6273f4" },
+          "blurple-46": { hex: "#5f70f4" },
+          "blurple-47": { hex: "#5d6cf3" },
+          "blurple-48": { hex: "#5a69f3" },
           "blurple-49": { hex: "#5865f2" },
-          "blurple-5": { hex: "#cddaff" },
+          "blurple-5": { hex: "#eef3ff" },
           "blurple-50": { hex: "#5865f2" },
           "blurple-51": { hex: "#5663ec" },
           "blurple-52": { hex: "#5461e6" },
-          "blurple-53": { hex: "#5260e0" },
-          "blurple-54": { hex: "#505edb" },
+          "blurple-53": { hex: "#525fe0" },
+          "blurple-54": { hex: "#505eda" },
           "blurple-55": { hex: "#4e5cd5" },
-          "blurple-56": { hex: "#4d5acf" },
-          "blurple-57": { hex: "#4b58ca" },
+          "blurple-56": { hex: "#4c5acf" },
+          "blurple-57": { hex: "#4b58c9" },
           "blurple-58": { hex: "#4956c4" },
-          "blurple-59": { hex: "#4754bf" },
-          "blurple-6": { hex: "#cad7fe" },
-          "blurple-60": { hex: "#4553ba" },
-          "blurple-61": { hex: "#4351b4" },
-          "blurple-62": { hex: "#424faf" },
-          "blurple-63": { hex: "#404daa" },
-          "blurple-64": { hex: "#3e4ba5" },
-          "blurple-65": { hex: "#3c49a0" },
-          "blurple-66": { hex: "#3b479b" },
-          "blurple-67": { hex: "#394596" },
-          "blurple-68": { hex: "#374391" },
-          "blurple-69": { hex: "#35428c" },
-          "blurple-7": { hex: "#c7d5fe" },
-          "blurple-70": { hex: "#344087" },
-          "blurple-71": { hex: "#323e83" },
-          "blurple-72": { hex: "#303c7e" },
-          "blurple-73": { hex: "#2f3a79" },
-          "blurple-74": { hex: "#2d3875" },
-          "blurple-75": { hex: "#2b3671" },
-          "blurple-76": { hex: "#2a346c" },
-          "blurple-77": { hex: "#283268" },
-          "blurple-78": { hex: "#273064" },
-          "blurple-79": { hex: "#252f5f" },
-          "blurple-8": { hex: "#c4d2fe" },
-          "blurple-80": { hex: "#232d5b" },
-          "blurple-81": { hex: "#222b57" },
-          "blurple-82": { hex: "#202953" },
-          "blurple-83": { hex: "#1f274f" },
-          "blurple-84": { hex: "#1d254b" },
-          "blurple-85": { hex: "#1b2347" },
-          "blurple-86": { hex: "#1a2244" },
-          "blurple-87": { hex: "#182040" },
-          "blurple-88": { hex: "#171e3c" },
-          "blurple-89": { hex: "#151c39" },
-          "blurple-9": { hex: "#c1d0fe" },
-          "blurple-90": { hex: "#141a35" },
-          "blurple-91": { hex: "#121932" },
-          "blurple-92": { hex: "#11172e" },
-          "blurple-93": { hex: "#0f152b" },
-          "blurple-94": { hex: "#0e1327" },
-          "blurple-95": { hex: "#0c1123" },
-          "blurple-96": { hex: "#0a0e1f" },
-          "blurple-97": { hex: "#080c1a" },
-          "blurple-98": { hex: "#060914" },
-          "blurple-99": { hex: "#04050d" },
+          "blurple-59": { hex: "#4754be" },
+          "blurple-6": { hex: "#eaf0ff" },
+          "blurple-60": { hex: "#4552b9" },
+          "blurple-61": { hex: "#4350b4" },
+          "blurple-62": { hex: "#414fae" },
+          "blurple-63": { hex: "#404da9" },
+          "blurple-64": { hex: "#3e4ba4" },
+          "blurple-65": { hex: "#3c499f" },
+          "blurple-66": { hex: "#3a479a" },
+          "blurple-67": { hex: "#394595" },
+          "blurple-68": { hex: "#374390" },
+          "blurple-69": { hex: "#35418b" },
+          "blurple-7": { hex: "#e6edff" },
+          "blurple-70": { hex: "#333f86" },
+          "blurple-71": { hex: "#323d82" },
+          "blurple-72": { hex: "#303b7d" },
+          "blurple-73": { hex: "#2e3978" },
+          "blurple-74": { hex: "#2d3874" },
+          "blurple-75": { hex: "#2b366f" },
+          "blurple-76": { hex: "#29346b" },
+          "blurple-77": { hex: "#283267" },
+          "blurple-78": { hex: "#263062" },
+          "blurple-79": { hex: "#242e5e" },
+          "blurple-8": { hex: "#e2eaff" },
+          "blurple-80": { hex: "#232c5a" },
+          "blurple-81": { hex: "#212a56" },
+          "blurple-82": { hex: "#202852" },
+          "blurple-83": { hex: "#1e274e" },
+          "blurple-84": { hex: "#1c254a" },
+          "blurple-85": { hex: "#1b2346" },
+          "blurple-86": { hex: "#192142" },
+          "blurple-87": { hex: "#181f3e" },
+          "blurple-88": { hex: "#161d3b" },
+          "blurple-89": { hex: "#151b37" },
+          "blurple-9": { hex: "#dee6ff" },
+          "blurple-90": { hex: "#131a34" },
+          "blurple-91": { hex: "#121830" },
+          "blurple-92": { hex: "#10162d" },
+          "blurple-93": { hex: "#0f1429" },
+          "blurple-94": { hex: "#0d1225" },
+          "blurple-95": { hex: "#0b1021" },
+          "blurple-96": { hex: "#090d1c" },
+          "blurple-97": { hex: "#070a17" },
+          "blurple-98": { hex: "#050711" },
+          "blurple-99": { hex: "#020309" },
           "brand-100": { hex: "#f7f7fe" },
           "brand-130": { hex: "#f0f1fe" },
           "brand-160": { hex: "#e7e9fd" },
@@ -19608,106 +19586,106 @@
           "green-830": { hex: "#031b0a" },
           "green-860": { hex: "#041708" },
           "green-900": { hex: "#051307" },
-          "green-new-1": { hex: "#d3e9d3" },
-          "green-new-10": { hex: "#b1d7b3" },
-          "green-new-100": { hex: "#010201" },
-          "green-new-11": { hex: "#add5af" },
-          "green-new-12": { hex: "#a9d3ac" },
-          "green-new-13": { hex: "#a5d1a8" },
-          "green-new-14": { hex: "#a2cfa5" },
-          "green-new-15": { hex: "#9ecda2" },
-          "green-new-16": { hex: "#9acb9e" },
-          "green-new-17": { hex: "#96c89b" },
-          "green-new-18": { hex: "#93c698" },
-          "green-new-19": { hex: "#8fc494" },
-          "green-new-2": { hex: "#cfe7d0" },
-          "green-new-20": { hex: "#8bc291" },
-          "green-new-21": { hex: "#88c08e" },
-          "green-new-22": { hex: "#84be8a" },
-          "green-new-23": { hex: "#80bc87" },
-          "green-new-24": { hex: "#7dba84" },
-          "green-new-25": { hex: "#79b881" },
-          "green-new-26": { hex: "#75b67e" },
-          "green-new-27": { hex: "#71b47b" },
-          "green-new-28": { hex: "#6eb277" },
-          "green-new-29": { hex: "#6ab074" },
-          "green-new-3": { hex: "#cbe5cc" },
-          "green-new-30": { hex: "#66ae71" },
-          "green-new-31": { hex: "#62ac6e" },
-          "green-new-32": { hex: "#5eaa6b" },
-          "green-new-33": { hex: "#5ba768" },
-          "green-new-34": { hex: "#57a565" },
-          "green-new-35": { hex: "#53a362" },
-          "green-new-36": { hex: "#4fa15f" },
-          "green-new-37": { hex: "#4b9f5c" },
-          "green-new-38": { hex: "#469d59" },
-          "green-new-39": { hex: "#429b56" },
-          "green-new-4": { hex: "#c7e3c8" },
-          "green-new-40": { hex: "#3e9953" },
-          "green-new-41": { hex: "#399751" },
-          "green-new-42": { hex: "#35954e" },
-          "green-new-43": { hex: "#30934b" },
-          "green-new-44": { hex: "#2b9048" },
-          "green-new-45": { hex: "#258e45" },
-          "green-new-46": { hex: "#1f8c42" },
-          "green-new-47": { hex: "#178a40" },
-          "green-new-48": { hex: "#0d883d" },
+          "green-new-1": { hex: "#ffffff" },
+          "green-new-10": { hex: "#d4e9d4" },
+          "green-new-100": { hex: "#000000" },
+          "green-new-11": { hex: "#cfe7d0" },
+          "green-new-12": { hex: "#cae4cb" },
+          "green-new-13": { hex: "#c5e2c7" },
+          "green-new-14": { hex: "#c1dfc2" },
+          "green-new-15": { hex: "#bcddbe" },
+          "green-new-16": { hex: "#b7dab9" },
+          "green-new-17": { hex: "#b3d8b5" },
+          "green-new-18": { hex: "#aed5b1" },
+          "green-new-19": { hex: "#a9d3ac" },
+          "green-new-2": { hex: "#fafdfa" },
+          "green-new-20": { hex: "#a5d0a8" },
+          "green-new-21": { hex: "#a0cea4" },
+          "green-new-22": { hex: "#9ccba0" },
+          "green-new-23": { hex: "#97c99b" },
+          "green-new-24": { hex: "#92c697" },
+          "green-new-25": { hex: "#8ec493" },
+          "green-new-26": { hex: "#89c18f" },
+          "green-new-27": { hex: "#85bf8b" },
+          "green-new-28": { hex: "#80bc87" },
+          "green-new-29": { hex: "#7cba83" },
+          "green-new-3": { hex: "#f5faf5" },
+          "green-new-30": { hex: "#77b77f" },
+          "green-new-31": { hex: "#72b47b" },
+          "green-new-32": { hex: "#6eb277" },
+          "green-new-33": { hex: "#69af74" },
+          "green-new-34": { hex: "#64ad70" },
+          "green-new-35": { hex: "#60aa6c" },
+          "green-new-36": { hex: "#5ba868" },
+          "green-new-37": { hex: "#56a565" },
+          "green-new-38": { hex: "#51a261" },
+          "green-new-39": { hex: "#4ca05d" },
+          "green-new-4": { hex: "#f0f8f0" },
+          "green-new-40": { hex: "#479d5a" },
+          "green-new-41": { hex: "#429b56" },
+          "green-new-42": { hex: "#3c9852" },
+          "green-new-43": { hex: "#37964f" },
+          "green-new-44": { hex: "#31934b" },
+          "green-new-45": { hex: "#2a9048" },
+          "green-new-46": { hex: "#238e44" },
+          "green-new-47": { hex: "#1b8b41" },
+          "green-new-48": { hex: "#10893d" },
           "green-new-49": { hex: "#00863a" },
-          "green-new-5": { hex: "#c3e1c5" },
+          "green-new-5": { hex: "#ecf5ec" },
           "green-new-50": { hex: "#00863a" },
           "green-new-51": { hex: "#038339" },
           "green-new-52": { hex: "#058038" },
-          "green-new-53": { hex: "#087e37" },
+          "green-new-53": { hex: "#087d37" },
           "green-new-54": { hex: "#0a7b36" },
           "green-new-55": { hex: "#0c7835" },
           "green-new-56": { hex: "#0d7534" },
-          "green-new-57": { hex: "#0e7233" },
-          "green-new-58": { hex: "#107032" },
-          "green-new-59": { hex: "#106d30" },
-          "green-new-6": { hex: "#c0dfc1" },
+          "green-new-57": { hex: "#0f7233" },
+          "green-new-58": { hex: "#106f31" },
+          "green-new-59": { hex: "#116d30" },
+          "green-new-6": { hex: "#e7f3e7" },
           "green-new-60": { hex: "#116a2f" },
-          "green-new-61": { hex: "#12682e" },
+          "green-new-61": { hex: "#12672e" },
           "green-new-62": { hex: "#12652d" },
           "green-new-63": { hex: "#13622c" },
-          "green-new-64": { hex: "#13602b" },
+          "green-new-64": { hex: "#135f2b" },
           "green-new-65": { hex: "#135d2a" },
           "green-new-66": { hex: "#135a29" },
-          "green-new-67": { hex: "#145828" },
-          "green-new-68": { hex: "#145527" },
-          "green-new-69": { hex: "#145326" },
-          "green-new-7": { hex: "#bcddbe" },
-          "green-new-70": { hex: "#135024" },
+          "green-new-67": { hex: "#145728" },
+          "green-new-68": { hex: "#145526" },
+          "green-new-69": { hex: "#135225" },
+          "green-new-7": { hex: "#e2f1e2" },
+          "green-new-70": { hex: "#134f24" },
           "green-new-71": { hex: "#134d23" },
-          "green-new-72": { hex: "#134b22" },
+          "green-new-72": { hex: "#134a22" },
           "green-new-73": { hex: "#134821" },
-          "green-new-74": { hex: "#134620" },
+          "green-new-74": { hex: "#124520" },
           "green-new-75": { hex: "#12431f" },
-          "green-new-76": { hex: "#12411e" },
-          "green-new-77": { hex: "#113e1d" },
-          "green-new-78": { hex: "#113c1c" },
-          "green-new-79": { hex: "#113a1a" },
-          "green-new-8": { hex: "#b8dbba" },
-          "green-new-80": { hex: "#103719" },
-          "green-new-81": { hex: "#103518" },
+          "green-new-76": { hex: "#12401d" },
+          "green-new-77": { hex: "#113e1c" },
+          "green-new-78": { hex: "#113b1b" },
+          "green-new-79": { hex: "#10391a" },
+          "green-new-8": { hex: "#ddeedd" },
+          "green-new-80": { hex: "#103619" },
+          "green-new-81": { hex: "#0f3418" },
           "green-new-82": { hex: "#0f3217" },
-          "green-new-83": { hex: "#0e3016" },
-          "green-new-84": { hex: "#0e2e15" },
-          "green-new-85": { hex: "#0d2c14" },
-          "green-new-86": { hex: "#0c2912" },
-          "green-new-87": { hex: "#0c2711" },
-          "green-new-88": { hex: "#0b2510" },
-          "green-new-89": { hex: "#0a230f" },
-          "green-new-9": { hex: "#b4d9b6" },
-          "green-new-90": { hex: "#0a200e" },
-          "green-new-91": { hex: "#091e0d" },
-          "green-new-92": { hex: "#081c0c" },
-          "green-new-93": { hex: "#071a0a" },
-          "green-new-94": { hex: "#071709" },
-          "green-new-95": { hex: "#061508" },
-          "green-new-96": { hex: "#051207" },
-          "green-new-97": { hex: "#040f05" },
-          "green-new-98": { hex: "#030b04" },
-          "green-new-99": { hex: "#020702" },
+          "green-new-83": { hex: "#0e2f15" },
+          "green-new-84": { hex: "#0e2d14" },
+          "green-new-85": { hex: "#0d2b13" },
+          "green-new-86": { hex: "#0c2812" },
+          "green-new-87": { hex: "#0c2611" },
+          "green-new-88": { hex: "#0b2410" },
+          "green-new-89": { hex: "#0a220f" },
+          "green-new-9": { hex: "#d8ecd9" },
+          "green-new-90": { hex: "#091f0d" },
+          "green-new-91": { hex: "#091d0c" },
+          "green-new-92": { hex: "#081b0b" },
+          "green-new-93": { hex: "#07190a" },
+          "green-new-94": { hex: "#061609" },
+          "green-new-95": { hex: "#051407" },
+          "green-new-96": { hex: "#051106" },
+          "green-new-97": { hex: "#040d05" },
+          "green-new-98": { hex: "#030903" },
+          "green-new-99": { hex: "#010402" },
           "guild-boosting-blue": { hex: "#3e70dd" },
           "guild-boosting-blue-for-gradients": { hex: "#3442d9" },
           "guild-boosting-pink": { hex: "#ff73fa" },
@@ -19869,106 +19847,106 @@
           "orange-830": { hex: "#261005" },
           "orange-860": { hex: "#200e05" },
           "orange-900": { hex: "#190d04" },
-          "orange-new-1": { hex: "#fcdcc7" },
-          "orange-new-10": { hex: "#f6c19f" },
-          "orange-new-100": { hex: "#040100" },
-          "orange-new-11": { hex: "#f5be9b" },
-          "orange-new-12": { hex: "#f4bb97" },
-          "orange-new-13": { hex: "#f3b893" },
-          "orange-new-14": { hex: "#f2b58e" },
-          "orange-new-15": { hex: "#f1b28a" },
-          "orange-new-16": { hex: "#f0af86" },
-          "orange-new-17": { hex: "#efac82" },
-          "orange-new-18": { hex: "#eea97e" },
-          "orange-new-19": { hex: "#eda67a" },
-          "orange-new-2": { hex: "#fcd9c3" },
-          "orange-new-20": { hex: "#eba376" },
-          "orange-new-21": { hex: "#eaa072" },
-          "orange-new-22": { hex: "#e99d6f" },
-          "orange-new-23": { hex: "#e89a6b" },
-          "orange-new-24": { hex: "#e69767" },
-          "orange-new-25": { hex: "#e59463" },
-          "orange-new-26": { hex: "#e4915f" },
-          "orange-new-27": { hex: "#e28e5c" },
-          "orange-new-28": { hex: "#e18c58" },
-          "orange-new-29": { hex: "#df8954" },
-          "orange-new-3": { hex: "#fbd6be" },
-          "orange-new-30": { hex: "#de8651" },
-          "orange-new-31": { hex: "#dc834d" },
-          "orange-new-32": { hex: "#db8049" },
-          "orange-new-33": { hex: "#d97d46" },
-          "orange-new-34": { hex: "#d87a42" },
-          "orange-new-35": { hex: "#d6773e" },
-          "orange-new-36": { hex: "#d5743b" },
-          "orange-new-37": { hex: "#d37137" },
-          "orange-new-38": { hex: "#d16f33" },
-          "orange-new-39": { hex: "#cf6c30" },
-          "orange-new-4": { hex: "#fad3ba" },
-          "orange-new-40": { hex: "#ce692c" },
-          "orange-new-41": { hex: "#cc6628" },
-          "orange-new-42": { hex: "#ca6324" },
-          "orange-new-43": { hex: "#c86020" },
-          "orange-new-44": { hex: "#c75d1c" },
-          "orange-new-45": { hex: "#c55b17" },
-          "orange-new-46": { hex: "#c35813" },
-          "orange-new-47": { hex: "#c1550d" },
-          "orange-new-48": { hex: "#bf5206" },
+          "orange-new-1": { hex: "#ffffff" },
+          "orange-new-10": { hex: "#fcddc8" },
+          "orange-new-100": { hex: "#000000" },
+          "orange-new-11": { hex: "#fbd9c3" },
+          "orange-new-12": { hex: "#fbd5bd" },
+          "orange-new-13": { hex: "#fad1b7" },
+          "orange-new-14": { hex: "#f9ceb2" },
+          "orange-new-15": { hex: "#f8caac" },
+          "orange-new-16": { hex: "#f7c6a7" },
+          "orange-new-17": { hex: "#f6c3a2" },
+          "orange-new-18": { hex: "#f5bf9c" },
+          "orange-new-19": { hex: "#f4bb97" },
+          "orange-new-2": { hex: "#fffbf9" },
+          "orange-new-20": { hex: "#f3b792" },
+          "orange-new-21": { hex: "#f2b48d" },
+          "orange-new-22": { hex: "#f0b088" },
+          "orange-new-23": { hex: "#efac83" },
+          "orange-new-24": { hex: "#eea97e" },
+          "orange-new-25": { hex: "#eca579" },
+          "orange-new-26": { hex: "#eba174" },
+          "orange-new-27": { hex: "#e99e6f" },
+          "orange-new-28": { hex: "#e89a6b" },
+          "orange-new-29": { hex: "#e69666" },
+          "orange-new-3": { hex: "#fff7f2" },
+          "orange-new-30": { hex: "#e49361" },
+          "orange-new-31": { hex: "#e38f5d" },
+          "orange-new-32": { hex: "#e18c58" },
+          "orange-new-33": { hex: "#df8853" },
+          "orange-new-34": { hex: "#dd844f" },
+          "orange-new-35": { hex: "#db814a" },
+          "orange-new-36": { hex: "#d97d46" },
+          "orange-new-37": { hex: "#d87a41" },
+          "orange-new-38": { hex: "#d6763d" },
+          "orange-new-39": { hex: "#d37338" },
+          "orange-new-4": { hex: "#fff4ec" },
+          "orange-new-40": { hex: "#d16f34" },
+          "orange-new-41": { hex: "#cf6b2f" },
+          "orange-new-42": { hex: "#cd682b" },
+          "orange-new-43": { hex: "#cb6426" },
+          "orange-new-44": { hex: "#c96121" },
+          "orange-new-45": { hex: "#c65d1c" },
+          "orange-new-46": { hex: "#c45a16" },
+          "orange-new-47": { hex: "#c25610" },
+          "orange-new-48": { hex: "#bf5308" },
           "orange-new-49": { hex: "#bd4f00" },
-          "orange-new-5": { hex: "#fad0b5" },
+          "orange-new-5": { hex: "#fef0e6" },
           "orange-new-50": { hex: "#bd4f00" },
           "orange-new-51": { hex: "#b94e01" },
           "orange-new-52": { hex: "#b54c02" },
-          "orange-new-53": { hex: "#b14b02" },
+          "orange-new-53": { hex: "#b14b03" },
           "orange-new-54": { hex: "#ad4903" },
           "orange-new-55": { hex: "#a94804" },
           "orange-new-56": { hex: "#a54604" },
           "orange-new-57": { hex: "#a14505" },
-          "orange-new-58": { hex: "#9d4305" },
+          "orange-new-58": { hex: "#9d4306" },
           "orange-new-59": { hex: "#994206" },
-          "orange-new-6": { hex: "#f9cdb1" },
+          "orange-new-6": { hex: "#feece0" },
           "orange-new-60": { hex: "#954006" },
           "orange-new-61": { hex: "#913f07" },
-          "orange-new-62": { hex: "#8e3e07" },
-          "orange-new-63": { hex: "#8a3c07" },
-          "orange-new-64": { hex: "#863b07" },
+          "orange-new-62": { hex: "#8d3d07" },
+          "orange-new-63": { hex: "#893c07" },
+          "orange-new-64": { hex: "#853a07" },
           "orange-new-65": { hex: "#823908" },
-          "orange-new-66": { hex: "#7e3808" },
-          "orange-new-67": { hex: "#7b3608" },
-          "orange-new-68": { hex: "#773508" },
+          "orange-new-66": { hex: "#7e3708" },
+          "orange-new-67": { hex: "#7a3608" },
+          "orange-new-68": { hex: "#763408" },
           "orange-new-69": { hex: "#733308" },
-          "orange-new-7": { hex: "#f8caac" },
-          "orange-new-70": { hex: "#703208" },
+          "orange-new-7": { hex: "#fee8da" },
+          "orange-new-70": { hex: "#6f3108" },
           "orange-new-71": { hex: "#6c3008" },
-          "orange-new-72": { hex: "#692f08" },
-          "orange-new-73": { hex: "#652d08" },
-          "orange-new-74": { hex: "#622c08" },
-          "orange-new-75": { hex: "#5e2a08" },
-          "orange-new-76": { hex: "#5b2907" },
-          "orange-new-77": { hex: "#572707" },
-          "orange-new-78": { hex: "#542607" },
-          "orange-new-79": { hex: "#512407" },
-          "orange-new-8": { hex: "#f7c7a8" },
-          "orange-new-80": { hex: "#4d2307" },
-          "orange-new-81": { hex: "#4a2106" },
-          "orange-new-82": { hex: "#472006" },
-          "orange-new-83": { hex: "#441e06" },
-          "orange-new-84": { hex: "#411d06" },
-          "orange-new-85": { hex: "#3d1c05" },
-          "orange-new-86": { hex: "#3a1a05" },
-          "orange-new-87": { hex: "#371905" },
-          "orange-new-88": { hex: "#341705" },
-          "orange-new-89": { hex: "#311604" },
-          "orange-new-9": { hex: "#f7c4a4" },
-          "orange-new-90": { hex: "#2e1404" },
-          "orange-new-91": { hex: "#2b1304" },
-          "orange-new-92": { hex: "#281103" },
-          "orange-new-93": { hex: "#251003" },
-          "orange-new-94": { hex: "#220e03" },
-          "orange-new-95": { hex: "#1f0c03" },
-          "orange-new-96": { hex: "#1b0a02" },
-          "orange-new-97": { hex: "#170802" },
-          "orange-new-98": { hex: "#120601" },
-          "orange-new-99": { hex: "#0b0401" },
+          "orange-new-72": { hex: "#682e08" },
+          "orange-new-73": { hex: "#642d08" },
+          "orange-new-74": { hex: "#612b08" },
+          "orange-new-75": { hex: "#5d2a07" },
+          "orange-new-76": { hex: "#5a2807" },
+          "orange-new-77": { hex: "#562707" },
+          "orange-new-78": { hex: "#532507" },
+          "orange-new-79": { hex: "#502407" },
+          "orange-new-8": { hex: "#fde4d4" },
+          "orange-new-80": { hex: "#4c2207" },
+          "orange-new-81": { hex: "#492106" },
+          "orange-new-82": { hex: "#461f06" },
+          "orange-new-83": { hex: "#431e06" },
+          "orange-new-84": { hex: "#3f1c06" },
+          "orange-new-85": { hex: "#3c1b05" },
+          "orange-new-86": { hex: "#391a05" },
+          "orange-new-87": { hex: "#361805" },
+          "orange-new-88": { hex: "#331704" },
+          "orange-new-89": { hex: "#301504" },
+          "orange-new-9": { hex: "#fde1ce" },
+          "orange-new-90": { hex: "#2d1404" },
+          "orange-new-91": { hex: "#2a1204" },
+          "orange-new-92": { hex: "#271103" },
+          "orange-new-93": { hex: "#240f03" },
+          "orange-new-94": { hex: "#210d03" },
+          "orange-new-95": { hex: "#1d0c02" },
+          "orange-new-96": { hex: "#190902" },
+          "orange-new-97": { hex: "#140702" },
+          "orange-new-98": { hex: "#0f0501" },
+          "orange-new-99": { hex: "#070301" },
           partner: { hex: "#4087ed" },
           paypal: { hex: "#13216b" },
           playstation: { hex: "#032f87" },
@@ -20085,106 +20063,106 @@
           "red-830": { hex: "#2e090a" },
           "red-860": { hex: "#280808" },
           "red-900": { hex: "#220606" },
-          "red-new-1": { hex: "#ffd6d2" },
-          "red-new-10": { hex: "#ffb7b1" },
-          "red-new-100": { hex: "#040101" },
-          "red-new-11": { hex: "#ffb3ae" },
-          "red-new-12": { hex: "#ffb0aa" },
-          "red-new-13": { hex: "#ffada7" },
-          "red-new-14": { hex: "#ffa9a3" },
-          "red-new-15": { hex: "#ffa6a0" },
-          "red-new-16": { hex: "#ffa29c" },
-          "red-new-17": { hex: "#ff9f99" },
-          "red-new-18": { hex: "#ff9b96" },
-          "red-new-19": { hex: "#ff9892" },
-          "red-new-2": { hex: "#ffd2ce" },
-          "red-new-20": { hex: "#ff958f" },
-          "red-new-21": { hex: "#fe918c" },
-          "red-new-22": { hex: "#fd8e88" },
-          "red-new-23": { hex: "#fc8b85" },
-          "red-new-24": { hex: "#fb8782" },
-          "red-new-25": { hex: "#f9847f" },
-          "red-new-26": { hex: "#f8807c" },
-          "red-new-27": { hex: "#f77d78" },
-          "red-new-28": { hex: "#f67a75" },
-          "red-new-29": { hex: "#f47672" },
-          "red-new-3": { hex: "#ffcfca" },
-          "red-new-30": { hex: "#f3736f" },
-          "red-new-31": { hex: "#f26f6c" },
-          "red-new-32": { hex: "#f06c69" },
-          "red-new-33": { hex: "#ef6966" },
-          "red-new-34": { hex: "#ed6563" },
-          "red-new-35": { hex: "#ec6260" },
-          "red-new-36": { hex: "#ea5e5d" },
-          "red-new-37": { hex: "#e85b5a" },
-          "red-new-38": { hex: "#e75757" },
-          "red-new-39": { hex: "#e55455" },
-          "red-new-4": { hex: "#ffccc7" },
-          "red-new-40": { hex: "#e35052" },
-          "red-new-41": { hex: "#e24c4f" },
-          "red-new-42": { hex: "#e0494c" },
-          "red-new-43": { hex: "#de4549" },
-          "red-new-44": { hex: "#dc4147" },
-          "red-new-45": { hex: "#da3e44" },
-          "red-new-46": { hex: "#d83a41" },
-          "red-new-47": { hex: "#d6363e" },
-          "red-new-48": { hex: "#d4313c" },
+          "red-new-1": { hex: "#ffffff" },
+          "red-new-10": { hex: "#ffd7d3" },
+          "red-new-100": { hex: "#000000" },
+          "red-new-11": { hex: "#ffd3cf" },
+          "red-new-12": { hex: "#ffcfca" },
+          "red-new-13": { hex: "#ffcac6" },
+          "red-new-14": { hex: "#ffc6c1" },
+          "red-new-15": { hex: "#ffc2bd" },
+          "red-new-16": { hex: "#ffbeb8" },
+          "red-new-17": { hex: "#ffb9b4" },
+          "red-new-18": { hex: "#ffb5af" },
+          "red-new-19": { hex: "#ffb1ab" },
+          "red-new-2": { hex: "#fffbfa" },
+          "red-new-20": { hex: "#ffada7" },
+          "red-new-21": { hex: "#ffa8a2" },
+          "red-new-22": { hex: "#ffa49e" },
+          "red-new-23": { hex: "#ffa09a" },
+          "red-new-24": { hex: "#ff9c96" },
+          "red-new-25": { hex: "#ff9792" },
+          "red-new-26": { hex: "#fe938e" },
+          "red-new-27": { hex: "#fd8f89" },
+          "red-new-28": { hex: "#fc8b85" },
+          "red-new-29": { hex: "#fa8781" },
+          "red-new-3": { hex: "#fff6f5" },
+          "red-new-30": { hex: "#f9827d" },
+          "red-new-31": { hex: "#f77e7a" },
+          "red-new-32": { hex: "#f67a76" },
+          "red-new-33": { hex: "#f47672" },
+          "red-new-34": { hex: "#f3716e" },
+          "red-new-35": { hex: "#f16d6a" },
+          "red-new-36": { hex: "#ef6967" },
+          "red-new-37": { hex: "#ed6563" },
+          "red-new-38": { hex: "#eb605f" },
+          "red-new-39": { hex: "#e95c5c" },
+          "red-new-4": { hex: "#fff2f0" },
+          "red-new-40": { hex: "#e75858" },
+          "red-new-41": { hex: "#e55354" },
+          "red-new-42": { hex: "#e34f51" },
+          "red-new-43": { hex: "#e14a4d" },
+          "red-new-44": { hex: "#de464a" },
+          "red-new-45": { hex: "#dc4146" },
+          "red-new-46": { hex: "#d93c43" },
+          "red-new-47": { hex: "#d73840" },
+          "red-new-48": { hex: "#d5323c" },
           "red-new-49": { hex: "#d22d39" },
-          "red-new-5": { hex: "#ffc8c3" },
+          "red-new-5": { hex: "#ffedeb" },
           "red-new-50": { hex: "#d22d39" },
           "red-new-51": { hex: "#cd2d38" },
           "red-new-52": { hex: "#c92c37" },
-          "red-new-53": { hex: "#c52c36" },
+          "red-new-53": { hex: "#c42c36" },
           "red-new-54": { hex: "#c02b35" },
-          "red-new-55": { hex: "#bc2b34" },
+          "red-new-55": { hex: "#bb2b34" },
           "red-new-56": { hex: "#b72a33" },
-          "red-new-57": { hex: "#b32a32" },
-          "red-new-58": { hex: "#af2930" },
+          "red-new-57": { hex: "#b32a31" },
+          "red-new-58": { hex: "#ae2930" },
           "red-new-59": { hex: "#aa292f" },
-          "red-new-6": { hex: "#ffc5bf" },
+          "red-new-6": { hex: "#ffe9e6" },
           "red-new-60": { hex: "#a6282e" },
-          "red-new-61": { hex: "#a2282d" },
-          "red-new-62": { hex: "#9e272c" },
+          "red-new-61": { hex: "#a1272d" },
+          "red-new-62": { hex: "#9d272c" },
           "red-new-63": { hex: "#99262b" },
-          "red-new-64": { hex: "#95262a" },
-          "red-new-65": { hex: "#912529" },
-          "red-new-66": { hex: "#8d2428" },
-          "red-new-67": { hex: "#892327" },
-          "red-new-68": { hex: "#852326" },
-          "red-new-69": { hex: "#812224" },
-          "red-new-7": { hex: "#ffc1bc" },
-          "red-new-70": { hex: "#7d2123" },
-          "red-new-71": { hex: "#792022" },
-          "red-new-72": { hex: "#751f21" },
-          "red-new-73": { hex: "#711e20" },
-          "red-new-74": { hex: "#6d1e1f" },
-          "red-new-75": { hex: "#691d1e" },
-          "red-new-76": { hex: "#661c1d" },
-          "red-new-77": { hex: "#621b1c" },
-          "red-new-78": { hex: "#5e1a1b" },
-          "red-new-79": { hex: "#5a1919" },
-          "red-new-8": { hex: "#ffbeb8" },
-          "red-new-80": { hex: "#571818" },
-          "red-new-81": { hex: "#531717" },
-          "red-new-82": { hex: "#501616" },
-          "red-new-83": { hex: "#4c1515" },
-          "red-new-84": { hex: "#481414" },
-          "red-new-85": { hex: "#451313" },
-          "red-new-86": { hex: "#421212" },
-          "red-new-87": { hex: "#3e1111" },
-          "red-new-88": { hex: "#3b1010" },
-          "red-new-89": { hex: "#380f0e" },
-          "red-new-9": { hex: "#ffbab5" },
-          "red-new-90": { hex: "#340e0d" },
-          "red-new-91": { hex: "#310d0c" },
-          "red-new-92": { hex: "#2e0c0b" },
-          "red-new-93": { hex: "#2b0b0a" },
-          "red-new-94": { hex: "#270a09" },
-          "red-new-95": { hex: "#230808" },
-          "red-new-96": { hex: "#1f0706" },
-          "red-new-97": { hex: "#1a0605" },
-          "red-new-98": { hex: "#150404" },
-          "red-new-99": { hex: "#0e0302" },
+          "red-new-64": { hex: "#95252a" },
+          "red-new-65": { hex: "#902529" },
+          "red-new-66": { hex: "#8c2428" },
+          "red-new-67": { hex: "#882326" },
+          "red-new-68": { hex: "#842225" },
+          "red-new-69": { hex: "#802224" },
+          "red-new-7": { hex: "#ffe5e2" },
+          "red-new-70": { hex: "#7c2123" },
+          "red-new-71": { hex: "#782022" },
+          "red-new-72": { hex: "#741f21" },
+          "red-new-73": { hex: "#701e20" },
+          "red-new-74": { hex: "#6c1d1f" },
+          "red-new-75": { hex: "#681c1e" },
+          "red-new-76": { hex: "#651c1d" },
+          "red-new-77": { hex: "#611b1b" },
+          "red-new-78": { hex: "#5d1a1a" },
+          "red-new-79": { hex: "#591919" },
+          "red-new-8": { hex: "#ffe0dd" },
+          "red-new-80": { hex: "#561818" },
+          "red-new-81": { hex: "#521717" },
+          "red-new-82": { hex: "#4e1616" },
+          "red-new-83": { hex: "#4b1515" },
+          "red-new-84": { hex: "#471414" },
+          "red-new-85": { hex: "#441312" },
+          "red-new-86": { hex: "#401211" },
+          "red-new-87": { hex: "#3d1110" },
+          "red-new-88": { hex: "#3a100f" },
+          "red-new-89": { hex: "#360f0e" },
+          "red-new-9": { hex: "#ffdcd8" },
+          "red-new-90": { hex: "#330e0d" },
+          "red-new-91": { hex: "#300d0c" },
+          "red-new-92": { hex: "#2d0b0b" },
+          "red-new-93": { hex: "#290a09" },
+          "red-new-94": { hex: "#250908" },
+          "red-new-95": { hex: "#210807" },
+          "red-new-96": { hex: "#1d0606" },
+          "red-new-97": { hex: "#180504" },
+          "red-new-98": { hex: "#120303" },
+          "red-new-99": { hex: "#090202" },
           reddit: { hex: "#ff4500" },
           "riot-games": { hex: "#ea0029" },
           "role-blue": { hex: "#206694" },
@@ -20239,52 +20217,52 @@
           "teal-830": { hex: "#02191d" },
           "teal-860": { hex: "#021619" },
           "teal-900": { hex: "#011215" },
-          "teal-new-1": { hex: "#d4e7e8" },
-          "teal-new-10": { hex: "#b2d3d7" },
-          "teal-new-100": { hex: "#010202" },
-          "teal-new-11": { hex: "#aed1d5" },
-          "teal-new-12": { hex: "#abcfd3" },
-          "teal-new-13": { hex: "#a7cdd1" },
-          "teal-new-14": { hex: "#a3cbcf" },
-          "teal-new-15": { hex: "#a0c9cd" },
-          "teal-new-16": { hex: "#9cc7cb" },
-          "teal-new-17": { hex: "#98c4c9" },
-          "teal-new-18": { hex: "#95c2c7" },
-          "teal-new-19": { hex: "#91c0c5" },
-          "teal-new-2": { hex: "#d0e4e6" },
-          "teal-new-20": { hex: "#8dbec3" },
-          "teal-new-21": { hex: "#8abcc1" },
-          "teal-new-22": { hex: "#86babf" },
-          "teal-new-23": { hex: "#82b8bd" },
-          "teal-new-24": { hex: "#7fb6bb" },
-          "teal-new-25": { hex: "#7bb3b9" },
-          "teal-new-26": { hex: "#77b1b7" },
-          "teal-new-27": { hex: "#73afb5" },
-          "teal-new-28": { hex: "#70adb3" },
-          "teal-new-29": { hex: "#6cabb1" },
-          "teal-new-3": { hex: "#cce2e4" },
-          "teal-new-30": { hex: "#68a9af" },
-          "teal-new-31": { hex: "#64a7ad" },
-          "teal-new-32": { hex: "#60a5ab" },
-          "teal-new-33": { hex: "#5ca3a9" },
-          "teal-new-34": { hex: "#59a0a7" },
-          "teal-new-35": { hex: "#559ea5" },
-          "teal-new-36": { hex: "#519ca3" },
-          "teal-new-37": { hex: "#4c9aa2" },
-          "teal-new-38": { hex: "#4898a0" },
-          "teal-new-39": { hex: "#44969e" },
-          "teal-new-4": { hex: "#c8e0e3" },
-          "teal-new-40": { hex: "#40949c" },
-          "teal-new-41": { hex: "#3b929a" },
-          "teal-new-42": { hex: "#369098" },
-          "teal-new-43": { hex: "#318e96" },
-          "teal-new-44": { hex: "#2c8b94" },
-          "teal-new-45": { hex: "#268992" },
-          "teal-new-46": { hex: "#208790" },
-          "teal-new-47": { hex: "#18858e" },
-          "teal-new-48": { hex: "#0e838c" },
+          "teal-new-1": { hex: "#ffffff" },
+          "teal-new-10": { hex: "#d5e7e9" },
+          "teal-new-100": { hex: "#000000" },
+          "teal-new-11": { hex: "#d0e5e7" },
+          "teal-new-12": { hex: "#cbe2e4" },
+          "teal-new-13": { hex: "#c7dfe2" },
+          "teal-new-14": { hex: "#c2dddf" },
+          "teal-new-15": { hex: "#bedadd" },
+          "teal-new-16": { hex: "#b9d7da" },
+          "teal-new-17": { hex: "#b4d5d8" },
+          "teal-new-18": { hex: "#b0d2d5" },
+          "teal-new-19": { hex: "#abcfd3" },
+          "teal-new-2": { hex: "#fafcfd" },
+          "teal-new-20": { hex: "#a7cdd1" },
+          "teal-new-21": { hex: "#a2cace" },
+          "teal-new-22": { hex: "#9ec8cc" },
+          "teal-new-23": { hex: "#99c5c9" },
+          "teal-new-24": { hex: "#94c2c7" },
+          "teal-new-25": { hex: "#90c0c4" },
+          "teal-new-26": { hex: "#8bbdc2" },
+          "teal-new-27": { hex: "#87babf" },
+          "teal-new-28": { hex: "#82b8bd" },
+          "teal-new-29": { hex: "#7eb5bb" },
+          "teal-new-3": { hex: "#f6fafa" },
+          "teal-new-30": { hex: "#79b2b8" },
+          "teal-new-31": { hex: "#74b0b6" },
+          "teal-new-32": { hex: "#70adb3" },
+          "teal-new-33": { hex: "#6babb1" },
+          "teal-new-34": { hex: "#66a8ae" },
+          "teal-new-35": { hex: "#62a5ac" },
+          "teal-new-36": { hex: "#5da3aa" },
+          "teal-new-37": { hex: "#58a0a7" },
+          "teal-new-38": { hex: "#539ea5" },
+          "teal-new-39": { hex: "#4e9ba2" },
+          "teal-new-4": { hex: "#f1f7f8" },
+          "teal-new-40": { hex: "#4998a0" },
+          "teal-new-41": { hex: "#44969d" },
+          "teal-new-42": { hex: "#3e939b" },
+          "teal-new-43": { hex: "#389199" },
+          "teal-new-44": { hex: "#328e96" },
+          "teal-new-45": { hex: "#2c8b94" },
+          "teal-new-46": { hex: "#248991" },
+          "teal-new-47": { hex: "#1c868f" },
+          "teal-new-48": { hex: "#11848c" },
           "teal-new-49": { hex: "#00818a" },
-          "teal-new-5": { hex: "#c5dee1" },
+          "teal-new-5": { hex: "#ecf4f5" },
           "teal-new-50": { hex: "#00818a" },
           "teal-new-51": { hex: "#037e87" },
           "teal-new-52": { hex: "#067c84" },
@@ -20292,53 +20270,53 @@
           "teal-new-54": { hex: "#0b767e" },
           "teal-new-55": { hex: "#0d737b" },
           "teal-new-56": { hex: "#0e7178" },
-          "teal-new-57": { hex: "#0f6e76" },
-          "teal-new-58": { hex: "#106c73" },
+          "teal-new-57": { hex: "#0f6e75" },
+          "teal-new-58": { hex: "#116b73" },
           "teal-new-59": { hex: "#116970" },
-          "teal-new-6": { hex: "#c1dcdf" },
+          "teal-new-6": { hex: "#e7f2f3" },
           "teal-new-60": { hex: "#12666d" },
-          "teal-new-61": { hex: "#13646a" },
+          "teal-new-61": { hex: "#13636a" },
           "teal-new-62": { hex: "#136167" },
-          "teal-new-63": { hex: "#145f65" },
+          "teal-new-63": { hex: "#145e64" },
           "teal-new-64": { hex: "#145c62" },
           "teal-new-65": { hex: "#14595f" },
           "teal-new-66": { hex: "#14575c" },
-          "teal-new-67": { hex: "#15545a" },
-          "teal-new-68": { hex: "#155257" },
-          "teal-new-69": { hex: "#154f54" },
-          "teal-new-7": { hex: "#bddadd" },
-          "teal-new-70": { hex: "#144d52" },
+          "teal-new-67": { hex: "#155459" },
+          "teal-new-68": { hex: "#155157" },
+          "teal-new-69": { hex: "#144f54" },
+          "teal-new-7": { hex: "#e3eff0" },
+          "teal-new-70": { hex: "#144c51" },
           "teal-new-71": { hex: "#144a4f" },
-          "teal-new-72": { hex: "#14484d" },
-          "teal-new-73": { hex: "#14464a" },
-          "teal-new-74": { hex: "#144347" },
-          "teal-new-75": { hex: "#134145" },
+          "teal-new-72": { hex: "#14474c" },
+          "teal-new-73": { hex: "#144549" },
+          "teal-new-74": { hex: "#134347" },
+          "teal-new-75": { hex: "#134044" },
           "teal-new-76": { hex: "#133e42" },
-          "teal-new-77": { hex: "#123c40" },
-          "teal-new-78": { hex: "#123a3d" },
-          "teal-new-79": { hex: "#11373b" },
-          "teal-new-8": { hex: "#b9d8db" },
-          "teal-new-80": { hex: "#113538" },
-          "teal-new-81": { hex: "#103336" },
+          "teal-new-77": { hex: "#123b3f" },
+          "teal-new-78": { hex: "#12393d" },
+          "teal-new-79": { hex: "#11373a" },
+          "teal-new-8": { hex: "#deecee" },
+          "teal-new-80": { hex: "#113438" },
+          "teal-new-81": { hex: "#103235" },
           "teal-new-82": { hex: "#103033" },
-          "teal-new-83": { hex: "#0f2e31" },
-          "teal-new-84": { hex: "#0f2c2f" },
-          "teal-new-85": { hex: "#0e2a2c" },
-          "teal-new-86": { hex: "#0d282a" },
-          "teal-new-87": { hex: "#0c2528" },
-          "teal-new-88": { hex: "#0c2325" },
-          "teal-new-89": { hex: "#0b2123" },
-          "teal-new-9": { hex: "#b6d5d9" },
-          "teal-new-90": { hex: "#0a1f21" },
-          "teal-new-91": { hex: "#091d1f" },
-          "teal-new-92": { hex: "#091b1c" },
-          "teal-new-93": { hex: "#08191a" },
-          "teal-new-94": { hex: "#071618" },
-          "teal-new-95": { hex: "#061415" },
-          "teal-new-96": { hex: "#051112" },
-          "teal-new-97": { hex: "#040e0f" },
-          "teal-new-98": { hex: "#030a0b" },
-          "teal-new-99": { hex: "#020607" },
+          "teal-new-83": { hex: "#0f2d30" },
+          "teal-new-84": { hex: "#0e2b2e" },
+          "teal-new-85": { hex: "#0e292b" },
+          "teal-new-86": { hex: "#0d2729" },
+          "teal-new-87": { hex: "#0c2527" },
+          "teal-new-88": { hex: "#0b2224" },
+          "teal-new-89": { hex: "#0b2022" },
+          "teal-new-9": { hex: "#d9eaeb" },
+          "teal-new-90": { hex: "#0a1e20" },
+          "teal-new-91": { hex: "#091c1e" },
+          "teal-new-92": { hex: "#081a1c" },
+          "teal-new-93": { hex: "#081819" },
+          "teal-new-94": { hex: "#071517" },
+          "teal-new-95": { hex: "#061314" },
+          "teal-new-96": { hex: "#051011" },
+          "teal-new-97": { hex: "#040c0d" },
+          "teal-new-98": { hex: "#030809" },
+          "teal-new-99": { hex: "#020404" },
           transparent: { hex: "#00000000" },
           twitch: { hex: "#593695" },
           twitter: { hex: "#1da1f2" },
@@ -20396,106 +20374,106 @@
           "yellow-830": { hex: "#221302" },
           "yellow-860": { hex: "#1c1002" },
           "yellow-900": { hex: "#160e02" },
-          "yellow-new-1": { hex: "#f1e0c8" },
-          "yellow-new-10": { hex: "#e4c8a0" },
-          "yellow-new-100": { hex: "#030200" },
-          "yellow-new-11": { hex: "#e3c59c" },
-          "yellow-new-12": { hex: "#e1c398" },
-          "yellow-new-13": { hex: "#e0c093" },
-          "yellow-new-14": { hex: "#debd8f" },
-          "yellow-new-15": { hex: "#dcbb8b" },
-          "yellow-new-16": { hex: "#dbb887" },
-          "yellow-new-17": { hex: "#d9b583" },
-          "yellow-new-18": { hex: "#d8b37f" },
-          "yellow-new-19": { hex: "#d6b07b" },
-          "yellow-new-2": { hex: "#efddc3" },
-          "yellow-new-20": { hex: "#d5ad77" },
-          "yellow-new-21": { hex: "#d3ab73" },
-          "yellow-new-22": { hex: "#d1a86f" },
-          "yellow-new-23": { hex: "#d0a56c" },
-          "yellow-new-24": { hex: "#cea368" },
-          "yellow-new-25": { hex: "#cca064" },
-          "yellow-new-26": { hex: "#cb9d60" },
-          "yellow-new-27": { hex: "#c99b5d" },
-          "yellow-new-28": { hex: "#c79859" },
-          "yellow-new-29": { hex: "#c69655" },
-          "yellow-new-3": { hex: "#eedbbf" },
-          "yellow-new-30": { hex: "#c49351" },
-          "yellow-new-31": { hex: "#c2904e" },
-          "yellow-new-32": { hex: "#c08e4a" },
-          "yellow-new-33": { hex: "#bf8b46" },
-          "yellow-new-34": { hex: "#bd8943" },
-          "yellow-new-35": { hex: "#bb863f" },
-          "yellow-new-36": { hex: "#b9843c" },
-          "yellow-new-37": { hex: "#b88138" },
-          "yellow-new-38": { hex: "#b67f34" },
-          "yellow-new-39": { hex: "#b47c30" },
-          "yellow-new-4": { hex: "#edd8ba" },
-          "yellow-new-40": { hex: "#b2792d" },
-          "yellow-new-41": { hex: "#b07729" },
-          "yellow-new-42": { hex: "#ae7425" },
-          "yellow-new-43": { hex: "#ac7221" },
-          "yellow-new-44": { hex: "#ab6f1d" },
-          "yellow-new-45": { hex: "#a96d18" },
-          "yellow-new-46": { hex: "#a76a13" },
-          "yellow-new-47": { hex: "#a5680d" },
-          "yellow-new-48": { hex: "#a36507" },
+          "yellow-new-1": { hex: "#ffffff" },
+          "yellow-new-10": { hex: "#f1e1c9" },
+          "yellow-new-100": { hex: "#000000" },
+          "yellow-new-11": { hex: "#efddc3" },
+          "yellow-new-12": { hex: "#eedabe" },
+          "yellow-new-13": { hex: "#ecd7b8" },
+          "yellow-new-14": { hex: "#ead3b2" },
+          "yellow-new-15": { hex: "#e8d0ad" },
+          "yellow-new-16": { hex: "#e7cda8" },
+          "yellow-new-17": { hex: "#e5c9a2" },
+          "yellow-new-18": { hex: "#e3c69d" },
+          "yellow-new-19": { hex: "#e1c398" },
+          "yellow-new-2": { hex: "#fefcf9" },
+          "yellow-new-20": { hex: "#dfbf93" },
+          "yellow-new-21": { hex: "#ddbc8e" },
+          "yellow-new-22": { hex: "#dbb989" },
+          "yellow-new-23": { hex: "#dab584" },
+          "yellow-new-24": { hex: "#d8b27f" },
+          "yellow-new-25": { hex: "#d6af7a" },
+          "yellow-new-26": { hex: "#d4ac75" },
+          "yellow-new-27": { hex: "#d2a870" },
+          "yellow-new-28": { hex: "#d0a56b" },
+          "yellow-new-29": { hex: "#cea267" },
+          "yellow-new-3": { hex: "#fcf8f2" },
+          "yellow-new-30": { hex: "#cc9f62" },
+          "yellow-new-31": { hex: "#c99b5d" },
+          "yellow-new-32": { hex: "#c79859" },
+          "yellow-new-33": { hex: "#c59554" },
+          "yellow-new-34": { hex: "#c39250" },
+          "yellow-new-35": { hex: "#c18f4b" },
+          "yellow-new-36": { hex: "#bf8b47" },
+          "yellow-new-37": { hex: "#bd8842" },
+          "yellow-new-38": { hex: "#ba853e" },
+          "yellow-new-39": { hex: "#b88239" },
+          "yellow-new-4": { hex: "#fbf5ec" },
+          "yellow-new-40": { hex: "#b67f35" },
+          "yellow-new-41": { hex: "#b47c30" },
+          "yellow-new-42": { hex: "#b1792b" },
+          "yellow-new-43": { hex: "#af7527" },
+          "yellow-new-44": { hex: "#ad7222" },
+          "yellow-new-45": { hex: "#aa6f1c" },
+          "yellow-new-46": { hex: "#a86c17" },
+          "yellow-new-47": { hex: "#a66910" },
+          "yellow-new-48": { hex: "#a36608" },
           "yellow-new-49": { hex: "#a16300" },
-          "yellow-new-5": { hex: "#ebd5b6" },
+          "yellow-new-5": { hex: "#f9f1e6" },
           "yellow-new-50": { hex: "#a16300" },
-          "yellow-new-51": { hex: "#9e6101" },
+          "yellow-new-51": { hex: "#9d6101" },
           "yellow-new-52": { hex: "#9a5f02" },
           "yellow-new-53": { hex: "#975d03" },
           "yellow-new-54": { hex: "#935b03" },
           "yellow-new-55": { hex: "#905904" },
           "yellow-new-56": { hex: "#8c5705" },
           "yellow-new-57": { hex: "#895505" },
-          "yellow-new-58": { hex: "#865306" },
+          "yellow-new-58": { hex: "#855306" },
           "yellow-new-59": { hex: "#825106" },
-          "yellow-new-6": { hex: "#ead3b1" },
+          "yellow-new-6": { hex: "#f7eee0" },
           "yellow-new-60": { hex: "#7f4f07" },
-          "yellow-new-61": { hex: "#7c4e07" },
-          "yellow-new-62": { hex: "#794c07" },
-          "yellow-new-63": { hex: "#754a08" },
-          "yellow-new-64": { hex: "#724808" },
-          "yellow-new-65": { hex: "#6f4608" },
-          "yellow-new-66": { hex: "#6c4408" },
-          "yellow-new-67": { hex: "#694208" },
+          "yellow-new-61": { hex: "#7b4d07" },
+          "yellow-new-62": { hex: "#784b07" },
+          "yellow-new-63": { hex: "#754908" },
+          "yellow-new-64": { hex: "#724708" },
+          "yellow-new-65": { hex: "#6e4608" },
+          "yellow-new-66": { hex: "#6b4408" },
+          "yellow-new-67": { hex: "#684208" },
           "yellow-new-68": { hex: "#654008" },
           "yellow-new-69": { hex: "#623e08" },
-          "yellow-new-7": { hex: "#e8d0ad" },
+          "yellow-new-7": { hex: "#f6ebda" },
           "yellow-new-70": { hex: "#5f3c08" },
-          "yellow-new-71": { hex: "#5c3b08" },
-          "yellow-new-72": { hex: "#593908" },
-          "yellow-new-73": { hex: "#563708" },
-          "yellow-new-74": { hex: "#533508" },
-          "yellow-new-75": { hex: "#503308" },
+          "yellow-new-71": { hex: "#5c3a08" },
+          "yellow-new-72": { hex: "#593808" },
+          "yellow-new-73": { hex: "#553608" },
+          "yellow-new-74": { hex: "#523408" },
+          "yellow-new-75": { hex: "#4f3308" },
           "yellow-new-76": { hex: "#4d3108" },
           "yellow-new-77": { hex: "#4a2f08" },
-          "yellow-new-78": { hex: "#472e07" },
-          "yellow-new-79": { hex: "#452c07" },
-          "yellow-new-8": { hex: "#e7cda9" },
-          "yellow-new-80": { hex: "#422a07" },
-          "yellow-new-81": { hex: "#3f2807" },
-          "yellow-new-82": { hex: "#3c2606" },
-          "yellow-new-83": { hex: "#392506" },
-          "yellow-new-84": { hex: "#372306" },
-          "yellow-new-85": { hex: "#342106" },
-          "yellow-new-86": { hex: "#311f05" },
-          "yellow-new-87": { hex: "#2f1e05" },
-          "yellow-new-88": { hex: "#2c1c05" },
-          "yellow-new-89": { hex: "#291a05" },
-          "yellow-new-9": { hex: "#e5cba4" },
-          "yellow-new-90": { hex: "#271804" },
-          "yellow-new-91": { hex: "#241704" },
-          "yellow-new-92": { hex: "#221504" },
-          "yellow-new-93": { hex: "#1f1303" },
-          "yellow-new-94": { hex: "#1d1103" },
-          "yellow-new-95": { hex: "#1a0f03" },
-          "yellow-new-96": { hex: "#160d02" },
-          "yellow-new-97": { hex: "#120a02" },
-          "yellow-new-98": { hex: "#0e0802" },
-          "yellow-new-99": { hex: "#090501" },
+          "yellow-new-78": { hex: "#472d07" },
+          "yellow-new-79": { hex: "#442b07" },
+          "yellow-new-8": { hex: "#f4e7d4" },
+          "yellow-new-80": { hex: "#412907" },
+          "yellow-new-81": { hex: "#3e2807" },
+          "yellow-new-82": { hex: "#3b2606" },
+          "yellow-new-83": { hex: "#382406" },
+          "yellow-new-84": { hex: "#362206" },
+          "yellow-new-85": { hex: "#332006" },
+          "yellow-new-86": { hex: "#301f05" },
+          "yellow-new-87": { hex: "#2e1d05" },
+          "yellow-new-88": { hex: "#2b1b05" },
+          "yellow-new-89": { hex: "#281904" },
+          "yellow-new-9": { hex: "#f3e4cf" },
+          "yellow-new-90": { hex: "#261804" },
+          "yellow-new-91": { hex: "#231604" },
+          "yellow-new-92": { hex: "#211404" },
+          "yellow-new-93": { hex: "#1e1203" },
+          "yellow-new-94": { hex: "#1b1103" },
+          "yellow-new-95": { hex: "#180e03" },
+          "yellow-new-96": { hex: "#150c02" },
+          "yellow-new-97": { hex: "#100902" },
+          "yellow-new-98": { hex: "#0c0601" },
+          "yellow-new-99": { hex: "#060301" },
           youtube: { hex: "#cb2120" },
         };
       },
@@ -20623,206 +20601,206 @@
           BLUE_830: "#001630",
           BLUE_860: "#00132b",
           BLUE_900: "#001024",
-          BLUE_NEW_1: "#d3e6fc",
-          BLUE_NEW_10: "#b0d1f9",
-          BLUE_NEW_100: "#010204",
-          BLUE_NEW_11: "#accff8",
-          BLUE_NEW_12: "#a8cdf8",
-          BLUE_NEW_13: "#a4caf8",
-          BLUE_NEW_14: "#a0c8f7",
-          BLUE_NEW_15: "#9cc6f7",
-          BLUE_NEW_16: "#99c4f6",
-          BLUE_NEW_17: "#95c1f6",
-          BLUE_NEW_18: "#91bff5",
-          BLUE_NEW_19: "#8dbdf5",
-          BLUE_NEW_2: "#cfe4fc",
-          BLUE_NEW_20: "#89baf4",
-          BLUE_NEW_21: "#86b8f4",
-          BLUE_NEW_22: "#82b5f3",
-          BLUE_NEW_23: "#7eb3f3",
-          BLUE_NEW_24: "#7ab1f2",
-          BLUE_NEW_25: "#76aef2",
-          BLUE_NEW_26: "#73acf1",
-          BLUE_NEW_27: "#6faaf1",
-          BLUE_NEW_28: "#6ba7f0",
-          BLUE_NEW_29: "#67a5f0",
-          BLUE_NEW_3: "#cbe1fb",
-          BLUE_NEW_30: "#63a3ef",
-          BLUE_NEW_31: "#60a0ef",
-          BLUE_NEW_32: "#5c9eee",
-          BLUE_NEW_33: "#589bed",
-          BLUE_NEW_34: "#5499ed",
-          BLUE_NEW_35: "#5097ec",
-          BLUE_NEW_36: "#4c94ec",
-          BLUE_NEW_37: "#4892eb",
-          BLUE_NEW_38: "#448fea",
-          BLUE_NEW_39: "#408dea",
-          BLUE_NEW_4: "#c7dffb",
-          BLUE_NEW_40: "#3b8ae9",
-          BLUE_NEW_41: "#3788e8",
-          BLUE_NEW_42: "#3285e8",
-          BLUE_NEW_43: "#2d83e7",
-          BLUE_NEW_44: "#2881e6",
-          BLUE_NEW_45: "#237ee6",
-          BLUE_NEW_46: "#1d7ce5",
-          BLUE_NEW_47: "#1579e4",
-          BLUE_NEW_48: "#0c77e4",
+          BLUE_NEW_1: "#ffffff",
+          BLUE_NEW_10: "#d3e6fc",
+          BLUE_NEW_100: "#000000",
+          BLUE_NEW_11: "#cee3fc",
+          BLUE_NEW_12: "#c9e0fb",
+          BLUE_NEW_13: "#c4defb",
+          BLUE_NEW_14: "#bfdbfa",
+          BLUE_NEW_15: "#bad8fa",
+          BLUE_NEW_16: "#b6d5f9",
+          BLUE_NEW_17: "#b1d2f9",
+          BLUE_NEW_18: "#accff8",
+          BLUE_NEW_19: "#a7cdf8",
+          BLUE_NEW_2: "#fafcff",
+          BLUE_NEW_20: "#a3caf7",
+          BLUE_NEW_21: "#9ec7f7",
+          BLUE_NEW_22: "#99c4f6",
+          BLUE_NEW_23: "#95c1f6",
+          BLUE_NEW_24: "#90bef5",
+          BLUE_NEW_25: "#8bbbf5",
+          BLUE_NEW_26: "#87b8f4",
+          BLUE_NEW_27: "#82b6f3",
+          BLUE_NEW_28: "#7db3f3",
+          BLUE_NEW_29: "#79b0f2",
+          BLUE_NEW_3: "#f5f9fe",
+          BLUE_NEW_30: "#74adf1",
+          BLUE_NEW_31: "#6faaf1",
+          BLUE_NEW_32: "#6ba7f0",
+          BLUE_NEW_33: "#66a4ef",
+          BLUE_NEW_34: "#61a1ef",
+          BLUE_NEW_35: "#5d9eee",
+          BLUE_NEW_36: "#589bed",
+          BLUE_NEW_37: "#5398ed",
+          BLUE_NEW_38: "#4e95ec",
+          BLUE_NEW_39: "#4992eb",
+          BLUE_NEW_4: "#f0f7fe",
+          BLUE_NEW_40: "#448fea",
+          BLUE_NEW_41: "#3f8cea",
+          BLUE_NEW_42: "#3a89e9",
+          BLUE_NEW_43: "#3486e8",
+          BLUE_NEW_44: "#2e83e7",
+          BLUE_NEW_45: "#2880e6",
+          BLUE_NEW_46: "#217de6",
+          BLUE_NEW_47: "#197ae5",
+          BLUE_NEW_48: "#0f77e4",
           BLUE_NEW_49: "#0074e3",
-          BLUE_NEW_5: "#c3ddfb",
+          BLUE_NEW_5: "#ebf4fe",
           BLUE_NEW_50: "#0074e3",
           BLUE_NEW_51: "#0272de",
           BLUE_NEW_52: "#056fd8",
           BLUE_NEW_53: "#076dd3",
-          BLUE_NEW_54: "#096bce",
-          BLUE_NEW_55: "#0a69c8",
+          BLUE_NEW_54: "#096bcd",
+          BLUE_NEW_55: "#0a68c8",
           BLUE_NEW_56: "#0c66c3",
           BLUE_NEW_57: "#0d64be",
           BLUE_NEW_58: "#0e62b9",
-          BLUE_NEW_59: "#0f5fb4",
-          BLUE_NEW_6: "#bfdbfa",
-          BLUE_NEW_60: "#105daf",
-          BLUE_NEW_61: "#105baa",
-          BLUE_NEW_62: "#1159a5",
+          BLUE_NEW_59: "#0f5fb3",
+          BLUE_NEW_6: "#e6f1fd",
+          BLUE_NEW_60: "#105dae",
+          BLUE_NEW_61: "#105ba9",
+          BLUE_NEW_62: "#1158a5",
           BLUE_NEW_63: "#1156a0",
-          BLUE_NEW_64: "#11549c",
-          BLUE_NEW_65: "#125297",
-          BLUE_NEW_66: "#125092",
-          BLUE_NEW_67: "#124e8e",
-          BLUE_NEW_68: "#124b89",
-          BLUE_NEW_69: "#124985",
-          BLUE_NEW_7: "#bbd8fa",
-          BLUE_NEW_70: "#124780",
-          BLUE_NEW_71: "#12457c",
-          BLUE_NEW_72: "#124377",
-          BLUE_NEW_73: "#114073",
-          BLUE_NEW_74: "#113e6f",
-          BLUE_NEW_75: "#113c6b",
-          BLUE_NEW_76: "#113a67",
-          BLUE_NEW_77: "#103863",
-          BLUE_NEW_78: "#10365f",
-          BLUE_NEW_79: "#0f335b",
-          BLUE_NEW_8: "#b7d6fa",
-          BLUE_NEW_80: "#0f3157",
-          BLUE_NEW_81: "#0f2f53",
-          BLUE_NEW_82: "#0e2d4f",
-          BLUE_NEW_83: "#0d2b4b",
-          BLUE_NEW_84: "#0d2948",
-          BLUE_NEW_85: "#0c2744",
-          BLUE_NEW_86: "#0c2540",
-          BLUE_NEW_87: "#0b233d",
-          BLUE_NEW_88: "#0a2139",
-          BLUE_NEW_89: "#0a1f36",
-          BLUE_NEW_9: "#b3d4f9",
-          BLUE_NEW_90: "#091d33",
-          BLUE_NEW_91: "#081b2f",
-          BLUE_NEW_92: "#08192c",
-          BLUE_NEW_93: "#071729",
-          BLUE_NEW_94: "#061525",
-          BLUE_NEW_95: "#061321",
-          BLUE_NEW_96: "#05101d",
-          BLUE_NEW_97: "#040d19",
-          BLUE_NEW_98: "#030a13",
-          BLUE_NEW_99: "#02060c",
-          BLURPLE_1: "#dae4ff",
-          BLURPLE_10: "#bdcdfe",
-          BLURPLE_100: "#010204",
-          BLURPLE_11: "#bacafe",
-          BLURPLE_12: "#b7c8fe",
-          BLURPLE_13: "#b4c5fe",
-          BLURPLE_14: "#b1c3fd",
-          BLURPLE_15: "#aec0fd",
-          BLURPLE_16: "#abbefd",
-          BLURPLE_17: "#a8bbfd",
-          BLURPLE_18: "#a5b9fd",
-          BLURPLE_19: "#a2b6fc",
-          BLURPLE_2: "#d7e1ff",
-          BLURPLE_20: "#9fb3fc",
-          BLURPLE_21: "#9db1fc",
-          BLURPLE_22: "#9aaefc",
-          BLURPLE_23: "#97acfb",
-          BLURPLE_24: "#94a9fb",
-          BLURPLE_25: "#91a7fb",
-          BLURPLE_26: "#8fa4fb",
-          BLURPLE_27: "#8ca1fa",
-          BLURPLE_28: "#899ffa",
-          BLURPLE_29: "#869cfa",
-          BLURPLE_3: "#d4dfff",
-          BLURPLE_30: "#8499f9",
-          BLURPLE_31: "#8197f9",
-          BLURPLE_32: "#7f94f9",
-          BLURPLE_33: "#7c91f8",
-          BLURPLE_34: "#7a8ff8",
-          BLURPLE_35: "#778cf8",
-          BLURPLE_36: "#7589f7",
-          BLURPLE_37: "#7287f7",
-          BLURPLE_38: "#7084f7",
-          BLURPLE_39: "#6d81f6",
-          BLURPLE_4: "#d0dcff",
-          BLURPLE_40: "#6b7ff6",
-          BLURPLE_41: "#697cf5",
-          BLURPLE_42: "#6779f5",
-          BLURPLE_43: "#6476f5",
-          BLURPLE_44: "#6273f4",
-          BLURPLE_45: "#6071f4",
-          BLURPLE_46: "#5e6ef3",
-          BLURPLE_47: "#5c6bf3",
-          BLURPLE_48: "#5a68f2",
+          BLUE_NEW_64: "#11549b",
+          BLUE_NEW_65: "#125296",
+          BLUE_NEW_66: "#124f91",
+          BLUE_NEW_67: "#124d8d",
+          BLUE_NEW_68: "#124b88",
+          BLUE_NEW_69: "#124984",
+          BLUE_NEW_7: "#e1eefd",
+          BLUE_NEW_70: "#12467f",
+          BLUE_NEW_71: "#12447b",
+          BLUE_NEW_72: "#124276",
+          BLUE_NEW_73: "#114072",
+          BLUE_NEW_74: "#113e6e",
+          BLUE_NEW_75: "#113b6a",
+          BLUE_NEW_76: "#113965",
+          BLUE_NEW_77: "#103761",
+          BLUE_NEW_78: "#10355d",
+          BLUE_NEW_79: "#0f3359",
+          BLUE_NEW_8: "#dcecfd",
+          BLUE_NEW_80: "#0f3155",
+          BLUE_NEW_81: "#0e2f52",
+          BLUE_NEW_82: "#0e2d4e",
+          BLUE_NEW_83: "#0d2a4a",
+          BLUE_NEW_84: "#0d2846",
+          BLUE_NEW_85: "#0c2643",
+          BLUE_NEW_86: "#0b243f",
+          BLUE_NEW_87: "#0b223b",
+          BLUE_NEW_88: "#0a2038",
+          BLUE_NEW_89: "#091e34",
+          BLUE_NEW_9: "#d7e9fc",
+          BLUE_NEW_90: "#091c31",
+          BLUE_NEW_91: "#081a2e",
+          BLUE_NEW_92: "#07182b",
+          BLUE_NEW_93: "#071627",
+          BLUE_NEW_94: "#061423",
+          BLUE_NEW_95: "#05111f",
+          BLUE_NEW_96: "#040f1b",
+          BLUE_NEW_97: "#030b16",
+          BLUE_NEW_98: "#020810",
+          BLUE_NEW_99: "#010408",
+          BLURPLE_1: "#ffffff",
+          BLURPLE_10: "#dae3ff",
+          BLURPLE_100: "#000000",
+          BLURPLE_11: "#d6e0ff",
+          BLURPLE_12: "#d2ddff",
+          BLURPLE_13: "#cedaff",
+          BLURPLE_14: "#cad7fe",
+          BLURPLE_15: "#c6d4fe",
+          BLURPLE_16: "#c2d1fe",
+          BLURPLE_17: "#becefe",
+          BLURPLE_18: "#bbcbfe",
+          BLURPLE_19: "#b7c7fe",
+          BLURPLE_2: "#fbfcff",
+          BLURPLE_20: "#b3c4fd",
+          BLURPLE_21: "#afc1fd",
+          BLURPLE_22: "#acbefd",
+          BLURPLE_23: "#a8bbfd",
+          BLURPLE_24: "#a4b8fc",
+          BLURPLE_25: "#a1b5fc",
+          BLURPLE_26: "#9db1fc",
+          BLURPLE_27: "#9aaefc",
+          BLURPLE_28: "#96abfb",
+          BLURPLE_29: "#93a8fb",
+          BLURPLE_3: "#f7f9ff",
+          BLURPLE_30: "#8fa5fb",
+          BLURPLE_31: "#8ca2fa",
+          BLURPLE_32: "#899efa",
+          BLURPLE_33: "#859bfa",
+          BLURPLE_34: "#8298f9",
+          BLURPLE_35: "#7f95f9",
+          BLURPLE_36: "#7c91f8",
+          BLURPLE_37: "#798ef8",
+          BLURPLE_38: "#768bf7",
+          BLURPLE_39: "#7387f7",
+          BLURPLE_4: "#f2f6ff",
+          BLURPLE_40: "#7084f7",
+          BLURPLE_41: "#6d81f6",
+          BLURPLE_42: "#6a7df6",
+          BLURPLE_43: "#677af5",
+          BLURPLE_44: "#6577f5",
+          BLURPLE_45: "#6273f4",
+          BLURPLE_46: "#5f70f4",
+          BLURPLE_47: "#5d6cf3",
+          BLURPLE_48: "#5a69f3",
           BLURPLE_49: "#5865f2",
-          BLURPLE_5: "#cddaff",
+          BLURPLE_5: "#eef3ff",
           BLURPLE_50: "#5865f2",
           BLURPLE_51: "#5663ec",
           BLURPLE_52: "#5461e6",
-          BLURPLE_53: "#5260e0",
-          BLURPLE_54: "#505edb",
+          BLURPLE_53: "#525fe0",
+          BLURPLE_54: "#505eda",
           BLURPLE_55: "#4e5cd5",
-          BLURPLE_56: "#4d5acf",
-          BLURPLE_57: "#4b58ca",
+          BLURPLE_56: "#4c5acf",
+          BLURPLE_57: "#4b58c9",
           BLURPLE_58: "#4956c4",
-          BLURPLE_59: "#4754bf",
-          BLURPLE_6: "#cad7fe",
-          BLURPLE_60: "#4553ba",
-          BLURPLE_61: "#4351b4",
-          BLURPLE_62: "#424faf",
-          BLURPLE_63: "#404daa",
-          BLURPLE_64: "#3e4ba5",
-          BLURPLE_65: "#3c49a0",
-          BLURPLE_66: "#3b479b",
-          BLURPLE_67: "#394596",
-          BLURPLE_68: "#374391",
-          BLURPLE_69: "#35428c",
-          BLURPLE_7: "#c7d5fe",
-          BLURPLE_70: "#344087",
-          BLURPLE_71: "#323e83",
-          BLURPLE_72: "#303c7e",
-          BLURPLE_73: "#2f3a79",
-          BLURPLE_74: "#2d3875",
-          BLURPLE_75: "#2b3671",
-          BLURPLE_76: "#2a346c",
-          BLURPLE_77: "#283268",
-          BLURPLE_78: "#273064",
-          BLURPLE_79: "#252f5f",
-          BLURPLE_8: "#c4d2fe",
-          BLURPLE_80: "#232d5b",
-          BLURPLE_81: "#222b57",
-          BLURPLE_82: "#202953",
-          BLURPLE_83: "#1f274f",
-          BLURPLE_84: "#1d254b",
-          BLURPLE_85: "#1b2347",
-          BLURPLE_86: "#1a2244",
-          BLURPLE_87: "#182040",
-          BLURPLE_88: "#171e3c",
-          BLURPLE_89: "#151c39",
-          BLURPLE_9: "#c1d0fe",
-          BLURPLE_90: "#141a35",
-          BLURPLE_91: "#121932",
-          BLURPLE_92: "#11172e",
-          BLURPLE_93: "#0f152b",
-          BLURPLE_94: "#0e1327",
-          BLURPLE_95: "#0c1123",
-          BLURPLE_96: "#0a0e1f",
-          BLURPLE_97: "#080c1a",
-          BLURPLE_98: "#060914",
-          BLURPLE_99: "#04050d",
+          BLURPLE_59: "#4754be",
+          BLURPLE_6: "#eaf0ff",
+          BLURPLE_60: "#4552b9",
+          BLURPLE_61: "#4350b4",
+          BLURPLE_62: "#414fae",
+          BLURPLE_63: "#404da9",
+          BLURPLE_64: "#3e4ba4",
+          BLURPLE_65: "#3c499f",
+          BLURPLE_66: "#3a479a",
+          BLURPLE_67: "#394595",
+          BLURPLE_68: "#374390",
+          BLURPLE_69: "#35418b",
+          BLURPLE_7: "#e6edff",
+          BLURPLE_70: "#333f86",
+          BLURPLE_71: "#323d82",
+          BLURPLE_72: "#303b7d",
+          BLURPLE_73: "#2e3978",
+          BLURPLE_74: "#2d3874",
+          BLURPLE_75: "#2b366f",
+          BLURPLE_76: "#29346b",
+          BLURPLE_77: "#283267",
+          BLURPLE_78: "#263062",
+          BLURPLE_79: "#242e5e",
+          BLURPLE_8: "#e2eaff",
+          BLURPLE_80: "#232c5a",
+          BLURPLE_81: "#212a56",
+          BLURPLE_82: "#202852",
+          BLURPLE_83: "#1e274e",
+          BLURPLE_84: "#1c254a",
+          BLURPLE_85: "#1b2346",
+          BLURPLE_86: "#192142",
+          BLURPLE_87: "#181f3e",
+          BLURPLE_88: "#161d3b",
+          BLURPLE_89: "#151b37",
+          BLURPLE_9: "#dee6ff",
+          BLURPLE_90: "#131a34",
+          BLURPLE_91: "#121830",
+          BLURPLE_92: "#10162d",
+          BLURPLE_93: "#0f1429",
+          BLURPLE_94: "#0d1225",
+          BLURPLE_95: "#0b1021",
+          BLURPLE_96: "#090d1c",
+          BLURPLE_97: "#070a17",
+          BLURPLE_98: "#050711",
+          BLURPLE_99: "#020309",
           BRAND_100: "#f7f7fe",
           BRAND_130: "#f0f1fe",
           BRAND_160: "#e7e9fd",
@@ -20884,106 +20862,106 @@
           GREEN_830: "#031b0a",
           GREEN_860: "#041708",
           GREEN_900: "#051307",
-          GREEN_NEW_1: "#d3e9d3",
-          GREEN_NEW_10: "#b1d7b3",
-          GREEN_NEW_100: "#010201",
-          GREEN_NEW_11: "#add5af",
-          GREEN_NEW_12: "#a9d3ac",
-          GREEN_NEW_13: "#a5d1a8",
-          GREEN_NEW_14: "#a2cfa5",
-          GREEN_NEW_15: "#9ecda2",
-          GREEN_NEW_16: "#9acb9e",
-          GREEN_NEW_17: "#96c89b",
-          GREEN_NEW_18: "#93c698",
-          GREEN_NEW_19: "#8fc494",
-          GREEN_NEW_2: "#cfe7d0",
-          GREEN_NEW_20: "#8bc291",
-          GREEN_NEW_21: "#88c08e",
-          GREEN_NEW_22: "#84be8a",
-          GREEN_NEW_23: "#80bc87",
-          GREEN_NEW_24: "#7dba84",
-          GREEN_NEW_25: "#79b881",
-          GREEN_NEW_26: "#75b67e",
-          GREEN_NEW_27: "#71b47b",
-          GREEN_NEW_28: "#6eb277",
-          GREEN_NEW_29: "#6ab074",
-          GREEN_NEW_3: "#cbe5cc",
-          GREEN_NEW_30: "#66ae71",
-          GREEN_NEW_31: "#62ac6e",
-          GREEN_NEW_32: "#5eaa6b",
-          GREEN_NEW_33: "#5ba768",
-          GREEN_NEW_34: "#57a565",
-          GREEN_NEW_35: "#53a362",
-          GREEN_NEW_36: "#4fa15f",
-          GREEN_NEW_37: "#4b9f5c",
-          GREEN_NEW_38: "#469d59",
-          GREEN_NEW_39: "#429b56",
-          GREEN_NEW_4: "#c7e3c8",
-          GREEN_NEW_40: "#3e9953",
-          GREEN_NEW_41: "#399751",
-          GREEN_NEW_42: "#35954e",
-          GREEN_NEW_43: "#30934b",
-          GREEN_NEW_44: "#2b9048",
-          GREEN_NEW_45: "#258e45",
-          GREEN_NEW_46: "#1f8c42",
-          GREEN_NEW_47: "#178a40",
-          GREEN_NEW_48: "#0d883d",
+          GREEN_NEW_1: "#ffffff",
+          GREEN_NEW_10: "#d4e9d4",
+          GREEN_NEW_100: "#000000",
+          GREEN_NEW_11: "#cfe7d0",
+          GREEN_NEW_12: "#cae4cb",
+          GREEN_NEW_13: "#c5e2c7",
+          GREEN_NEW_14: "#c1dfc2",
+          GREEN_NEW_15: "#bcddbe",
+          GREEN_NEW_16: "#b7dab9",
+          GREEN_NEW_17: "#b3d8b5",
+          GREEN_NEW_18: "#aed5b1",
+          GREEN_NEW_19: "#a9d3ac",
+          GREEN_NEW_2: "#fafdfa",
+          GREEN_NEW_20: "#a5d0a8",
+          GREEN_NEW_21: "#a0cea4",
+          GREEN_NEW_22: "#9ccba0",
+          GREEN_NEW_23: "#97c99b",
+          GREEN_NEW_24: "#92c697",
+          GREEN_NEW_25: "#8ec493",
+          GREEN_NEW_26: "#89c18f",
+          GREEN_NEW_27: "#85bf8b",
+          GREEN_NEW_28: "#80bc87",
+          GREEN_NEW_29: "#7cba83",
+          GREEN_NEW_3: "#f5faf5",
+          GREEN_NEW_30: "#77b77f",
+          GREEN_NEW_31: "#72b47b",
+          GREEN_NEW_32: "#6eb277",
+          GREEN_NEW_33: "#69af74",
+          GREEN_NEW_34: "#64ad70",
+          GREEN_NEW_35: "#60aa6c",
+          GREEN_NEW_36: "#5ba868",
+          GREEN_NEW_37: "#56a565",
+          GREEN_NEW_38: "#51a261",
+          GREEN_NEW_39: "#4ca05d",
+          GREEN_NEW_4: "#f0f8f0",
+          GREEN_NEW_40: "#479d5a",
+          GREEN_NEW_41: "#429b56",
+          GREEN_NEW_42: "#3c9852",
+          GREEN_NEW_43: "#37964f",
+          GREEN_NEW_44: "#31934b",
+          GREEN_NEW_45: "#2a9048",
+          GREEN_NEW_46: "#238e44",
+          GREEN_NEW_47: "#1b8b41",
+          GREEN_NEW_48: "#10893d",
           GREEN_NEW_49: "#00863a",
-          GREEN_NEW_5: "#c3e1c5",
+          GREEN_NEW_5: "#ecf5ec",
           GREEN_NEW_50: "#00863a",
           GREEN_NEW_51: "#038339",
           GREEN_NEW_52: "#058038",
-          GREEN_NEW_53: "#087e37",
+          GREEN_NEW_53: "#087d37",
           GREEN_NEW_54: "#0a7b36",
           GREEN_NEW_55: "#0c7835",
           GREEN_NEW_56: "#0d7534",
-          GREEN_NEW_57: "#0e7233",
-          GREEN_NEW_58: "#107032",
-          GREEN_NEW_59: "#106d30",
-          GREEN_NEW_6: "#c0dfc1",
+          GREEN_NEW_57: "#0f7233",
+          GREEN_NEW_58: "#106f31",
+          GREEN_NEW_59: "#116d30",
+          GREEN_NEW_6: "#e7f3e7",
           GREEN_NEW_60: "#116a2f",
-          GREEN_NEW_61: "#12682e",
+          GREEN_NEW_61: "#12672e",
           GREEN_NEW_62: "#12652d",
           GREEN_NEW_63: "#13622c",
-          GREEN_NEW_64: "#13602b",
+          GREEN_NEW_64: "#135f2b",
           GREEN_NEW_65: "#135d2a",
           GREEN_NEW_66: "#135a29",
-          GREEN_NEW_67: "#145828",
-          GREEN_NEW_68: "#145527",
-          GREEN_NEW_69: "#145326",
-          GREEN_NEW_7: "#bcddbe",
-          GREEN_NEW_70: "#135024",
+          GREEN_NEW_67: "#145728",
+          GREEN_NEW_68: "#145526",
+          GREEN_NEW_69: "#135225",
+          GREEN_NEW_7: "#e2f1e2",
+          GREEN_NEW_70: "#134f24",
           GREEN_NEW_71: "#134d23",
-          GREEN_NEW_72: "#134b22",
+          GREEN_NEW_72: "#134a22",
           GREEN_NEW_73: "#134821",
-          GREEN_NEW_74: "#134620",
+          GREEN_NEW_74: "#124520",
           GREEN_NEW_75: "#12431f",
-          GREEN_NEW_76: "#12411e",
-          GREEN_NEW_77: "#113e1d",
-          GREEN_NEW_78: "#113c1c",
-          GREEN_NEW_79: "#113a1a",
-          GREEN_NEW_8: "#b8dbba",
-          GREEN_NEW_80: "#103719",
-          GREEN_NEW_81: "#103518",
+          GREEN_NEW_76: "#12401d",
+          GREEN_NEW_77: "#113e1c",
+          GREEN_NEW_78: "#113b1b",
+          GREEN_NEW_79: "#10391a",
+          GREEN_NEW_8: "#ddeedd",
+          GREEN_NEW_80: "#103619",
+          GREEN_NEW_81: "#0f3418",
           GREEN_NEW_82: "#0f3217",
-          GREEN_NEW_83: "#0e3016",
-          GREEN_NEW_84: "#0e2e15",
-          GREEN_NEW_85: "#0d2c14",
-          GREEN_NEW_86: "#0c2912",
-          GREEN_NEW_87: "#0c2711",
-          GREEN_NEW_88: "#0b2510",
-          GREEN_NEW_89: "#0a230f",
-          GREEN_NEW_9: "#b4d9b6",
-          GREEN_NEW_90: "#0a200e",
-          GREEN_NEW_91: "#091e0d",
-          GREEN_NEW_92: "#081c0c",
-          GREEN_NEW_93: "#071a0a",
-          GREEN_NEW_94: "#071709",
-          GREEN_NEW_95: "#061508",
-          GREEN_NEW_96: "#051207",
-          GREEN_NEW_97: "#040f05",
-          GREEN_NEW_98: "#030b04",
-          GREEN_NEW_99: "#020702",
+          GREEN_NEW_83: "#0e2f15",
+          GREEN_NEW_84: "#0e2d14",
+          GREEN_NEW_85: "#0d2b13",
+          GREEN_NEW_86: "#0c2812",
+          GREEN_NEW_87: "#0c2611",
+          GREEN_NEW_88: "#0b2410",
+          GREEN_NEW_89: "#0a220f",
+          GREEN_NEW_9: "#d8ecd9",
+          GREEN_NEW_90: "#091f0d",
+          GREEN_NEW_91: "#091d0c",
+          GREEN_NEW_92: "#081b0b",
+          GREEN_NEW_93: "#07190a",
+          GREEN_NEW_94: "#061609",
+          GREEN_NEW_95: "#051407",
+          GREEN_NEW_96: "#051106",
+          GREEN_NEW_97: "#040d05",
+          GREEN_NEW_98: "#030903",
+          GREEN_NEW_99: "#010402",
           GUILD_BOOSTING_BLUE: "#3e70dd",
           GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
           GUILD_BOOSTING_PINK: "#ff73fa",
@@ -21146,106 +21124,106 @@
           ORANGE_830: "#261005",
           ORANGE_860: "#200e05",
           ORANGE_900: "#190d04",
-          ORANGE_NEW_1: "#fcdcc7",
-          ORANGE_NEW_10: "#f6c19f",
-          ORANGE_NEW_100: "#040100",
-          ORANGE_NEW_11: "#f5be9b",
-          ORANGE_NEW_12: "#f4bb97",
-          ORANGE_NEW_13: "#f3b893",
-          ORANGE_NEW_14: "#f2b58e",
-          ORANGE_NEW_15: "#f1b28a",
-          ORANGE_NEW_16: "#f0af86",
-          ORANGE_NEW_17: "#efac82",
-          ORANGE_NEW_18: "#eea97e",
-          ORANGE_NEW_19: "#eda67a",
-          ORANGE_NEW_2: "#fcd9c3",
-          ORANGE_NEW_20: "#eba376",
-          ORANGE_NEW_21: "#eaa072",
-          ORANGE_NEW_22: "#e99d6f",
-          ORANGE_NEW_23: "#e89a6b",
-          ORANGE_NEW_24: "#e69767",
-          ORANGE_NEW_25: "#e59463",
-          ORANGE_NEW_26: "#e4915f",
-          ORANGE_NEW_27: "#e28e5c",
-          ORANGE_NEW_28: "#e18c58",
-          ORANGE_NEW_29: "#df8954",
-          ORANGE_NEW_3: "#fbd6be",
-          ORANGE_NEW_30: "#de8651",
-          ORANGE_NEW_31: "#dc834d",
-          ORANGE_NEW_32: "#db8049",
-          ORANGE_NEW_33: "#d97d46",
-          ORANGE_NEW_34: "#d87a42",
-          ORANGE_NEW_35: "#d6773e",
-          ORANGE_NEW_36: "#d5743b",
-          ORANGE_NEW_37: "#d37137",
-          ORANGE_NEW_38: "#d16f33",
-          ORANGE_NEW_39: "#cf6c30",
-          ORANGE_NEW_4: "#fad3ba",
-          ORANGE_NEW_40: "#ce692c",
-          ORANGE_NEW_41: "#cc6628",
-          ORANGE_NEW_42: "#ca6324",
-          ORANGE_NEW_43: "#c86020",
-          ORANGE_NEW_44: "#c75d1c",
-          ORANGE_NEW_45: "#c55b17",
-          ORANGE_NEW_46: "#c35813",
-          ORANGE_NEW_47: "#c1550d",
-          ORANGE_NEW_48: "#bf5206",
+          ORANGE_NEW_1: "#ffffff",
+          ORANGE_NEW_10: "#fcddc8",
+          ORANGE_NEW_100: "#000000",
+          ORANGE_NEW_11: "#fbd9c3",
+          ORANGE_NEW_12: "#fbd5bd",
+          ORANGE_NEW_13: "#fad1b7",
+          ORANGE_NEW_14: "#f9ceb2",
+          ORANGE_NEW_15: "#f8caac",
+          ORANGE_NEW_16: "#f7c6a7",
+          ORANGE_NEW_17: "#f6c3a2",
+          ORANGE_NEW_18: "#f5bf9c",
+          ORANGE_NEW_19: "#f4bb97",
+          ORANGE_NEW_2: "#fffbf9",
+          ORANGE_NEW_20: "#f3b792",
+          ORANGE_NEW_21: "#f2b48d",
+          ORANGE_NEW_22: "#f0b088",
+          ORANGE_NEW_23: "#efac83",
+          ORANGE_NEW_24: "#eea97e",
+          ORANGE_NEW_25: "#eca579",
+          ORANGE_NEW_26: "#eba174",
+          ORANGE_NEW_27: "#e99e6f",
+          ORANGE_NEW_28: "#e89a6b",
+          ORANGE_NEW_29: "#e69666",
+          ORANGE_NEW_3: "#fff7f2",
+          ORANGE_NEW_30: "#e49361",
+          ORANGE_NEW_31: "#e38f5d",
+          ORANGE_NEW_32: "#e18c58",
+          ORANGE_NEW_33: "#df8853",
+          ORANGE_NEW_34: "#dd844f",
+          ORANGE_NEW_35: "#db814a",
+          ORANGE_NEW_36: "#d97d46",
+          ORANGE_NEW_37: "#d87a41",
+          ORANGE_NEW_38: "#d6763d",
+          ORANGE_NEW_39: "#d37338",
+          ORANGE_NEW_4: "#fff4ec",
+          ORANGE_NEW_40: "#d16f34",
+          ORANGE_NEW_41: "#cf6b2f",
+          ORANGE_NEW_42: "#cd682b",
+          ORANGE_NEW_43: "#cb6426",
+          ORANGE_NEW_44: "#c96121",
+          ORANGE_NEW_45: "#c65d1c",
+          ORANGE_NEW_46: "#c45a16",
+          ORANGE_NEW_47: "#c25610",
+          ORANGE_NEW_48: "#bf5308",
           ORANGE_NEW_49: "#bd4f00",
-          ORANGE_NEW_5: "#fad0b5",
+          ORANGE_NEW_5: "#fef0e6",
           ORANGE_NEW_50: "#bd4f00",
           ORANGE_NEW_51: "#b94e01",
           ORANGE_NEW_52: "#b54c02",
-          ORANGE_NEW_53: "#b14b02",
+          ORANGE_NEW_53: "#b14b03",
           ORANGE_NEW_54: "#ad4903",
           ORANGE_NEW_55: "#a94804",
           ORANGE_NEW_56: "#a54604",
           ORANGE_NEW_57: "#a14505",
-          ORANGE_NEW_58: "#9d4305",
+          ORANGE_NEW_58: "#9d4306",
           ORANGE_NEW_59: "#994206",
-          ORANGE_NEW_6: "#f9cdb1",
+          ORANGE_NEW_6: "#feece0",
           ORANGE_NEW_60: "#954006",
           ORANGE_NEW_61: "#913f07",
-          ORANGE_NEW_62: "#8e3e07",
-          ORANGE_NEW_63: "#8a3c07",
-          ORANGE_NEW_64: "#863b07",
+          ORANGE_NEW_62: "#8d3d07",
+          ORANGE_NEW_63: "#893c07",
+          ORANGE_NEW_64: "#853a07",
           ORANGE_NEW_65: "#823908",
-          ORANGE_NEW_66: "#7e3808",
-          ORANGE_NEW_67: "#7b3608",
-          ORANGE_NEW_68: "#773508",
+          ORANGE_NEW_66: "#7e3708",
+          ORANGE_NEW_67: "#7a3608",
+          ORANGE_NEW_68: "#763408",
           ORANGE_NEW_69: "#733308",
-          ORANGE_NEW_7: "#f8caac",
-          ORANGE_NEW_70: "#703208",
+          ORANGE_NEW_7: "#fee8da",
+          ORANGE_NEW_70: "#6f3108",
           ORANGE_NEW_71: "#6c3008",
-          ORANGE_NEW_72: "#692f08",
-          ORANGE_NEW_73: "#652d08",
-          ORANGE_NEW_74: "#622c08",
-          ORANGE_NEW_75: "#5e2a08",
-          ORANGE_NEW_76: "#5b2907",
-          ORANGE_NEW_77: "#572707",
-          ORANGE_NEW_78: "#542607",
-          ORANGE_NEW_79: "#512407",
-          ORANGE_NEW_8: "#f7c7a8",
-          ORANGE_NEW_80: "#4d2307",
-          ORANGE_NEW_81: "#4a2106",
-          ORANGE_NEW_82: "#472006",
-          ORANGE_NEW_83: "#441e06",
-          ORANGE_NEW_84: "#411d06",
-          ORANGE_NEW_85: "#3d1c05",
-          ORANGE_NEW_86: "#3a1a05",
-          ORANGE_NEW_87: "#371905",
-          ORANGE_NEW_88: "#341705",
-          ORANGE_NEW_89: "#311604",
-          ORANGE_NEW_9: "#f7c4a4",
-          ORANGE_NEW_90: "#2e1404",
-          ORANGE_NEW_91: "#2b1304",
-          ORANGE_NEW_92: "#281103",
-          ORANGE_NEW_93: "#251003",
-          ORANGE_NEW_94: "#220e03",
-          ORANGE_NEW_95: "#1f0c03",
-          ORANGE_NEW_96: "#1b0a02",
-          ORANGE_NEW_97: "#170802",
-          ORANGE_NEW_98: "#120601",
-          ORANGE_NEW_99: "#0b0401",
+          ORANGE_NEW_72: "#682e08",
+          ORANGE_NEW_73: "#642d08",
+          ORANGE_NEW_74: "#612b08",
+          ORANGE_NEW_75: "#5d2a07",
+          ORANGE_NEW_76: "#5a2807",
+          ORANGE_NEW_77: "#562707",
+          ORANGE_NEW_78: "#532507",
+          ORANGE_NEW_79: "#502407",
+          ORANGE_NEW_8: "#fde4d4",
+          ORANGE_NEW_80: "#4c2207",
+          ORANGE_NEW_81: "#492106",
+          ORANGE_NEW_82: "#461f06",
+          ORANGE_NEW_83: "#431e06",
+          ORANGE_NEW_84: "#3f1c06",
+          ORANGE_NEW_85: "#3c1b05",
+          ORANGE_NEW_86: "#391a05",
+          ORANGE_NEW_87: "#361805",
+          ORANGE_NEW_88: "#331704",
+          ORANGE_NEW_89: "#301504",
+          ORANGE_NEW_9: "#fde1ce",
+          ORANGE_NEW_90: "#2d1404",
+          ORANGE_NEW_91: "#2a1204",
+          ORANGE_NEW_92: "#271103",
+          ORANGE_NEW_93: "#240f03",
+          ORANGE_NEW_94: "#210d03",
+          ORANGE_NEW_95: "#1d0c02",
+          ORANGE_NEW_96: "#190902",
+          ORANGE_NEW_97: "#140702",
+          ORANGE_NEW_98: "#0f0501",
+          ORANGE_NEW_99: "#070301",
           PARTNER: "#4087ed",
           PAYPAL: "#13216b",
           PLAYSTATION: "#032f87",
@@ -21364,106 +21342,106 @@
           RED_830: "#2e090a",
           RED_860: "#280808",
           RED_900: "#220606",
-          RED_NEW_1: "#ffd6d2",
-          RED_NEW_10: "#ffb7b1",
-          RED_NEW_100: "#040101",
-          RED_NEW_11: "#ffb3ae",
-          RED_NEW_12: "#ffb0aa",
-          RED_NEW_13: "#ffada7",
-          RED_NEW_14: "#ffa9a3",
-          RED_NEW_15: "#ffa6a0",
-          RED_NEW_16: "#ffa29c",
-          RED_NEW_17: "#ff9f99",
-          RED_NEW_18: "#ff9b96",
-          RED_NEW_19: "#ff9892",
-          RED_NEW_2: "#ffd2ce",
-          RED_NEW_20: "#ff958f",
-          RED_NEW_21: "#fe918c",
-          RED_NEW_22: "#fd8e88",
-          RED_NEW_23: "#fc8b85",
-          RED_NEW_24: "#fb8782",
-          RED_NEW_25: "#f9847f",
-          RED_NEW_26: "#f8807c",
-          RED_NEW_27: "#f77d78",
-          RED_NEW_28: "#f67a75",
-          RED_NEW_29: "#f47672",
-          RED_NEW_3: "#ffcfca",
-          RED_NEW_30: "#f3736f",
-          RED_NEW_31: "#f26f6c",
-          RED_NEW_32: "#f06c69",
-          RED_NEW_33: "#ef6966",
-          RED_NEW_34: "#ed6563",
-          RED_NEW_35: "#ec6260",
-          RED_NEW_36: "#ea5e5d",
-          RED_NEW_37: "#e85b5a",
-          RED_NEW_38: "#e75757",
-          RED_NEW_39: "#e55455",
-          RED_NEW_4: "#ffccc7",
-          RED_NEW_40: "#e35052",
-          RED_NEW_41: "#e24c4f",
-          RED_NEW_42: "#e0494c",
-          RED_NEW_43: "#de4549",
-          RED_NEW_44: "#dc4147",
-          RED_NEW_45: "#da3e44",
-          RED_NEW_46: "#d83a41",
-          RED_NEW_47: "#d6363e",
-          RED_NEW_48: "#d4313c",
+          RED_NEW_1: "#ffffff",
+          RED_NEW_10: "#ffd7d3",
+          RED_NEW_100: "#000000",
+          RED_NEW_11: "#ffd3cf",
+          RED_NEW_12: "#ffcfca",
+          RED_NEW_13: "#ffcac6",
+          RED_NEW_14: "#ffc6c1",
+          RED_NEW_15: "#ffc2bd",
+          RED_NEW_16: "#ffbeb8",
+          RED_NEW_17: "#ffb9b4",
+          RED_NEW_18: "#ffb5af",
+          RED_NEW_19: "#ffb1ab",
+          RED_NEW_2: "#fffbfa",
+          RED_NEW_20: "#ffada7",
+          RED_NEW_21: "#ffa8a2",
+          RED_NEW_22: "#ffa49e",
+          RED_NEW_23: "#ffa09a",
+          RED_NEW_24: "#ff9c96",
+          RED_NEW_25: "#ff9792",
+          RED_NEW_26: "#fe938e",
+          RED_NEW_27: "#fd8f89",
+          RED_NEW_28: "#fc8b85",
+          RED_NEW_29: "#fa8781",
+          RED_NEW_3: "#fff6f5",
+          RED_NEW_30: "#f9827d",
+          RED_NEW_31: "#f77e7a",
+          RED_NEW_32: "#f67a76",
+          RED_NEW_33: "#f47672",
+          RED_NEW_34: "#f3716e",
+          RED_NEW_35: "#f16d6a",
+          RED_NEW_36: "#ef6967",
+          RED_NEW_37: "#ed6563",
+          RED_NEW_38: "#eb605f",
+          RED_NEW_39: "#e95c5c",
+          RED_NEW_4: "#fff2f0",
+          RED_NEW_40: "#e75858",
+          RED_NEW_41: "#e55354",
+          RED_NEW_42: "#e34f51",
+          RED_NEW_43: "#e14a4d",
+          RED_NEW_44: "#de464a",
+          RED_NEW_45: "#dc4146",
+          RED_NEW_46: "#d93c43",
+          RED_NEW_47: "#d73840",
+          RED_NEW_48: "#d5323c",
           RED_NEW_49: "#d22d39",
-          RED_NEW_5: "#ffc8c3",
+          RED_NEW_5: "#ffedeb",
           RED_NEW_50: "#d22d39",
           RED_NEW_51: "#cd2d38",
           RED_NEW_52: "#c92c37",
-          RED_NEW_53: "#c52c36",
+          RED_NEW_53: "#c42c36",
           RED_NEW_54: "#c02b35",
-          RED_NEW_55: "#bc2b34",
+          RED_NEW_55: "#bb2b34",
           RED_NEW_56: "#b72a33",
-          RED_NEW_57: "#b32a32",
-          RED_NEW_58: "#af2930",
+          RED_NEW_57: "#b32a31",
+          RED_NEW_58: "#ae2930",
           RED_NEW_59: "#aa292f",
-          RED_NEW_6: "#ffc5bf",
+          RED_NEW_6: "#ffe9e6",
           RED_NEW_60: "#a6282e",
-          RED_NEW_61: "#a2282d",
-          RED_NEW_62: "#9e272c",
+          RED_NEW_61: "#a1272d",
+          RED_NEW_62: "#9d272c",
           RED_NEW_63: "#99262b",
-          RED_NEW_64: "#95262a",
-          RED_NEW_65: "#912529",
-          RED_NEW_66: "#8d2428",
-          RED_NEW_67: "#892327",
-          RED_NEW_68: "#852326",
-          RED_NEW_69: "#812224",
-          RED_NEW_7: "#ffc1bc",
-          RED_NEW_70: "#7d2123",
-          RED_NEW_71: "#792022",
-          RED_NEW_72: "#751f21",
-          RED_NEW_73: "#711e20",
-          RED_NEW_74: "#6d1e1f",
-          RED_NEW_75: "#691d1e",
-          RED_NEW_76: "#661c1d",
-          RED_NEW_77: "#621b1c",
-          RED_NEW_78: "#5e1a1b",
-          RED_NEW_79: "#5a1919",
-          RED_NEW_8: "#ffbeb8",
-          RED_NEW_80: "#571818",
-          RED_NEW_81: "#531717",
-          RED_NEW_82: "#501616",
-          RED_NEW_83: "#4c1515",
-          RED_NEW_84: "#481414",
-          RED_NEW_85: "#451313",
-          RED_NEW_86: "#421212",
-          RED_NEW_87: "#3e1111",
-          RED_NEW_88: "#3b1010",
-          RED_NEW_89: "#380f0e",
-          RED_NEW_9: "#ffbab5",
-          RED_NEW_90: "#340e0d",
-          RED_NEW_91: "#310d0c",
-          RED_NEW_92: "#2e0c0b",
-          RED_NEW_93: "#2b0b0a",
-          RED_NEW_94: "#270a09",
-          RED_NEW_95: "#230808",
-          RED_NEW_96: "#1f0706",
-          RED_NEW_97: "#1a0605",
-          RED_NEW_98: "#150404",
-          RED_NEW_99: "#0e0302",
+          RED_NEW_64: "#95252a",
+          RED_NEW_65: "#902529",
+          RED_NEW_66: "#8c2428",
+          RED_NEW_67: "#882326",
+          RED_NEW_68: "#842225",
+          RED_NEW_69: "#802224",
+          RED_NEW_7: "#ffe5e2",
+          RED_NEW_70: "#7c2123",
+          RED_NEW_71: "#782022",
+          RED_NEW_72: "#741f21",
+          RED_NEW_73: "#701e20",
+          RED_NEW_74: "#6c1d1f",
+          RED_NEW_75: "#681c1e",
+          RED_NEW_76: "#651c1d",
+          RED_NEW_77: "#611b1b",
+          RED_NEW_78: "#5d1a1a",
+          RED_NEW_79: "#591919",
+          RED_NEW_8: "#ffe0dd",
+          RED_NEW_80: "#561818",
+          RED_NEW_81: "#521717",
+          RED_NEW_82: "#4e1616",
+          RED_NEW_83: "#4b1515",
+          RED_NEW_84: "#471414",
+          RED_NEW_85: "#441312",
+          RED_NEW_86: "#401211",
+          RED_NEW_87: "#3d1110",
+          RED_NEW_88: "#3a100f",
+          RED_NEW_89: "#360f0e",
+          RED_NEW_9: "#ffdcd8",
+          RED_NEW_90: "#330e0d",
+          RED_NEW_91: "#300d0c",
+          RED_NEW_92: "#2d0b0b",
+          RED_NEW_93: "#290a09",
+          RED_NEW_94: "#250908",
+          RED_NEW_95: "#210807",
+          RED_NEW_96: "#1d0606",
+          RED_NEW_97: "#180504",
+          RED_NEW_98: "#120303",
+          RED_NEW_99: "#090202",
           REDDIT: "#ff4500",
           RIOT_GAMES: "#ea0029",
           ROLE_BLUE: "#206694",
@@ -21519,52 +21497,52 @@
           TEAL_830: "#02191d",
           TEAL_860: "#021619",
           TEAL_900: "#011215",
-          TEAL_NEW_1: "#d4e7e8",
-          TEAL_NEW_10: "#b2d3d7",
-          TEAL_NEW_100: "#010202",
-          TEAL_NEW_11: "#aed1d5",
-          TEAL_NEW_12: "#abcfd3",
-          TEAL_NEW_13: "#a7cdd1",
-          TEAL_NEW_14: "#a3cbcf",
-          TEAL_NEW_15: "#a0c9cd",
-          TEAL_NEW_16: "#9cc7cb",
-          TEAL_NEW_17: "#98c4c9",
-          TEAL_NEW_18: "#95c2c7",
-          TEAL_NEW_19: "#91c0c5",
-          TEAL_NEW_2: "#d0e4e6",
-          TEAL_NEW_20: "#8dbec3",
-          TEAL_NEW_21: "#8abcc1",
-          TEAL_NEW_22: "#86babf",
-          TEAL_NEW_23: "#82b8bd",
-          TEAL_NEW_24: "#7fb6bb",
-          TEAL_NEW_25: "#7bb3b9",
-          TEAL_NEW_26: "#77b1b7",
-          TEAL_NEW_27: "#73afb5",
-          TEAL_NEW_28: "#70adb3",
-          TEAL_NEW_29: "#6cabb1",
-          TEAL_NEW_3: "#cce2e4",
-          TEAL_NEW_30: "#68a9af",
-          TEAL_NEW_31: "#64a7ad",
-          TEAL_NEW_32: "#60a5ab",
-          TEAL_NEW_33: "#5ca3a9",
-          TEAL_NEW_34: "#59a0a7",
-          TEAL_NEW_35: "#559ea5",
-          TEAL_NEW_36: "#519ca3",
-          TEAL_NEW_37: "#4c9aa2",
-          TEAL_NEW_38: "#4898a0",
-          TEAL_NEW_39: "#44969e",
-          TEAL_NEW_4: "#c8e0e3",
-          TEAL_NEW_40: "#40949c",
-          TEAL_NEW_41: "#3b929a",
-          TEAL_NEW_42: "#369098",
-          TEAL_NEW_43: "#318e96",
-          TEAL_NEW_44: "#2c8b94",
-          TEAL_NEW_45: "#268992",
-          TEAL_NEW_46: "#208790",
-          TEAL_NEW_47: "#18858e",
-          TEAL_NEW_48: "#0e838c",
+          TEAL_NEW_1: "#ffffff",
+          TEAL_NEW_10: "#d5e7e9",
+          TEAL_NEW_100: "#000000",
+          TEAL_NEW_11: "#d0e5e7",
+          TEAL_NEW_12: "#cbe2e4",
+          TEAL_NEW_13: "#c7dfe2",
+          TEAL_NEW_14: "#c2dddf",
+          TEAL_NEW_15: "#bedadd",
+          TEAL_NEW_16: "#b9d7da",
+          TEAL_NEW_17: "#b4d5d8",
+          TEAL_NEW_18: "#b0d2d5",
+          TEAL_NEW_19: "#abcfd3",
+          TEAL_NEW_2: "#fafcfd",
+          TEAL_NEW_20: "#a7cdd1",
+          TEAL_NEW_21: "#a2cace",
+          TEAL_NEW_22: "#9ec8cc",
+          TEAL_NEW_23: "#99c5c9",
+          TEAL_NEW_24: "#94c2c7",
+          TEAL_NEW_25: "#90c0c4",
+          TEAL_NEW_26: "#8bbdc2",
+          TEAL_NEW_27: "#87babf",
+          TEAL_NEW_28: "#82b8bd",
+          TEAL_NEW_29: "#7eb5bb",
+          TEAL_NEW_3: "#f6fafa",
+          TEAL_NEW_30: "#79b2b8",
+          TEAL_NEW_31: "#74b0b6",
+          TEAL_NEW_32: "#70adb3",
+          TEAL_NEW_33: "#6babb1",
+          TEAL_NEW_34: "#66a8ae",
+          TEAL_NEW_35: "#62a5ac",
+          TEAL_NEW_36: "#5da3aa",
+          TEAL_NEW_37: "#58a0a7",
+          TEAL_NEW_38: "#539ea5",
+          TEAL_NEW_39: "#4e9ba2",
+          TEAL_NEW_4: "#f1f7f8",
+          TEAL_NEW_40: "#4998a0",
+          TEAL_NEW_41: "#44969d",
+          TEAL_NEW_42: "#3e939b",
+          TEAL_NEW_43: "#389199",
+          TEAL_NEW_44: "#328e96",
+          TEAL_NEW_45: "#2c8b94",
+          TEAL_NEW_46: "#248991",
+          TEAL_NEW_47: "#1c868f",
+          TEAL_NEW_48: "#11848c",
           TEAL_NEW_49: "#00818a",
-          TEAL_NEW_5: "#c5dee1",
+          TEAL_NEW_5: "#ecf4f5",
           TEAL_NEW_50: "#00818a",
           TEAL_NEW_51: "#037e87",
           TEAL_NEW_52: "#067c84",
@@ -21572,53 +21550,53 @@
           TEAL_NEW_54: "#0b767e",
           TEAL_NEW_55: "#0d737b",
           TEAL_NEW_56: "#0e7178",
-          TEAL_NEW_57: "#0f6e76",
-          TEAL_NEW_58: "#106c73",
+          TEAL_NEW_57: "#0f6e75",
+          TEAL_NEW_58: "#116b73",
           TEAL_NEW_59: "#116970",
-          TEAL_NEW_6: "#c1dcdf",
+          TEAL_NEW_6: "#e7f2f3",
           TEAL_NEW_60: "#12666d",
-          TEAL_NEW_61: "#13646a",
+          TEAL_NEW_61: "#13636a",
           TEAL_NEW_62: "#136167",
-          TEAL_NEW_63: "#145f65",
+          TEAL_NEW_63: "#145e64",
           TEAL_NEW_64: "#145c62",
           TEAL_NEW_65: "#14595f",
           TEAL_NEW_66: "#14575c",
-          TEAL_NEW_67: "#15545a",
-          TEAL_NEW_68: "#155257",
-          TEAL_NEW_69: "#154f54",
-          TEAL_NEW_7: "#bddadd",
-          TEAL_NEW_70: "#144d52",
+          TEAL_NEW_67: "#155459",
+          TEAL_NEW_68: "#155157",
+          TEAL_NEW_69: "#144f54",
+          TEAL_NEW_7: "#e3eff0",
+          TEAL_NEW_70: "#144c51",
           TEAL_NEW_71: "#144a4f",
-          TEAL_NEW_72: "#14484d",
-          TEAL_NEW_73: "#14464a",
-          TEAL_NEW_74: "#144347",
-          TEAL_NEW_75: "#134145",
+          TEAL_NEW_72: "#14474c",
+          TEAL_NEW_73: "#144549",
+          TEAL_NEW_74: "#134347",
+          TEAL_NEW_75: "#134044",
           TEAL_NEW_76: "#133e42",
-          TEAL_NEW_77: "#123c40",
-          TEAL_NEW_78: "#123a3d",
-          TEAL_NEW_79: "#11373b",
-          TEAL_NEW_8: "#b9d8db",
-          TEAL_NEW_80: "#113538",
-          TEAL_NEW_81: "#103336",
+          TEAL_NEW_77: "#123b3f",
+          TEAL_NEW_78: "#12393d",
+          TEAL_NEW_79: "#11373a",
+          TEAL_NEW_8: "#deecee",
+          TEAL_NEW_80: "#113438",
+          TEAL_NEW_81: "#103235",
           TEAL_NEW_82: "#103033",
-          TEAL_NEW_83: "#0f2e31",
-          TEAL_NEW_84: "#0f2c2f",
-          TEAL_NEW_85: "#0e2a2c",
-          TEAL_NEW_86: "#0d282a",
-          TEAL_NEW_87: "#0c2528",
-          TEAL_NEW_88: "#0c2325",
-          TEAL_NEW_89: "#0b2123",
-          TEAL_NEW_9: "#b6d5d9",
-          TEAL_NEW_90: "#0a1f21",
-          TEAL_NEW_91: "#091d1f",
-          TEAL_NEW_92: "#091b1c",
-          TEAL_NEW_93: "#08191a",
-          TEAL_NEW_94: "#071618",
-          TEAL_NEW_95: "#061415",
-          TEAL_NEW_96: "#051112",
-          TEAL_NEW_97: "#040e0f",
-          TEAL_NEW_98: "#030a0b",
-          TEAL_NEW_99: "#020607",
+          TEAL_NEW_83: "#0f2d30",
+          TEAL_NEW_84: "#0e2b2e",
+          TEAL_NEW_85: "#0e292b",
+          TEAL_NEW_86: "#0d2729",
+          TEAL_NEW_87: "#0c2527",
+          TEAL_NEW_88: "#0b2224",
+          TEAL_NEW_89: "#0b2022",
+          TEAL_NEW_9: "#d9eaeb",
+          TEAL_NEW_90: "#0a1e20",
+          TEAL_NEW_91: "#091c1e",
+          TEAL_NEW_92: "#081a1c",
+          TEAL_NEW_93: "#081819",
+          TEAL_NEW_94: "#071517",
+          TEAL_NEW_95: "#061314",
+          TEAL_NEW_96: "#051011",
+          TEAL_NEW_97: "#040c0d",
+          TEAL_NEW_98: "#030809",
+          TEAL_NEW_99: "#020404",
           TRANSPARENT: "transparent",
           TWITCH: "#593695",
           TWITTER: "#1da1f2",
@@ -21677,106 +21655,106 @@
           YELLOW_830: "#221302",
           YELLOW_860: "#1c1002",
           YELLOW_900: "#160e02",
-          YELLOW_NEW_1: "#f1e0c8",
-          YELLOW_NEW_10: "#e4c8a0",
-          YELLOW_NEW_100: "#030200",
-          YELLOW_NEW_11: "#e3c59c",
-          YELLOW_NEW_12: "#e1c398",
-          YELLOW_NEW_13: "#e0c093",
-          YELLOW_NEW_14: "#debd8f",
-          YELLOW_NEW_15: "#dcbb8b",
-          YELLOW_NEW_16: "#dbb887",
-          YELLOW_NEW_17: "#d9b583",
-          YELLOW_NEW_18: "#d8b37f",
-          YELLOW_NEW_19: "#d6b07b",
-          YELLOW_NEW_2: "#efddc3",
-          YELLOW_NEW_20: "#d5ad77",
-          YELLOW_NEW_21: "#d3ab73",
-          YELLOW_NEW_22: "#d1a86f",
-          YELLOW_NEW_23: "#d0a56c",
-          YELLOW_NEW_24: "#cea368",
-          YELLOW_NEW_25: "#cca064",
-          YELLOW_NEW_26: "#cb9d60",
-          YELLOW_NEW_27: "#c99b5d",
-          YELLOW_NEW_28: "#c79859",
-          YELLOW_NEW_29: "#c69655",
-          YELLOW_NEW_3: "#eedbbf",
-          YELLOW_NEW_30: "#c49351",
-          YELLOW_NEW_31: "#c2904e",
-          YELLOW_NEW_32: "#c08e4a",
-          YELLOW_NEW_33: "#bf8b46",
-          YELLOW_NEW_34: "#bd8943",
-          YELLOW_NEW_35: "#bb863f",
-          YELLOW_NEW_36: "#b9843c",
-          YELLOW_NEW_37: "#b88138",
-          YELLOW_NEW_38: "#b67f34",
-          YELLOW_NEW_39: "#b47c30",
-          YELLOW_NEW_4: "#edd8ba",
-          YELLOW_NEW_40: "#b2792d",
-          YELLOW_NEW_41: "#b07729",
-          YELLOW_NEW_42: "#ae7425",
-          YELLOW_NEW_43: "#ac7221",
-          YELLOW_NEW_44: "#ab6f1d",
-          YELLOW_NEW_45: "#a96d18",
-          YELLOW_NEW_46: "#a76a13",
-          YELLOW_NEW_47: "#a5680d",
-          YELLOW_NEW_48: "#a36507",
+          YELLOW_NEW_1: "#ffffff",
+          YELLOW_NEW_10: "#f1e1c9",
+          YELLOW_NEW_100: "#000000",
+          YELLOW_NEW_11: "#efddc3",
+          YELLOW_NEW_12: "#eedabe",
+          YELLOW_NEW_13: "#ecd7b8",
+          YELLOW_NEW_14: "#ead3b2",
+          YELLOW_NEW_15: "#e8d0ad",
+          YELLOW_NEW_16: "#e7cda8",
+          YELLOW_NEW_17: "#e5c9a2",
+          YELLOW_NEW_18: "#e3c69d",
+          YELLOW_NEW_19: "#e1c398",
+          YELLOW_NEW_2: "#fefcf9",
+          YELLOW_NEW_20: "#dfbf93",
+          YELLOW_NEW_21: "#ddbc8e",
+          YELLOW_NEW_22: "#dbb989",
+          YELLOW_NEW_23: "#dab584",
+          YELLOW_NEW_24: "#d8b27f",
+          YELLOW_NEW_25: "#d6af7a",
+          YELLOW_NEW_26: "#d4ac75",
+          YELLOW_NEW_27: "#d2a870",
+          YELLOW_NEW_28: "#d0a56b",
+          YELLOW_NEW_29: "#cea267",
+          YELLOW_NEW_3: "#fcf8f2",
+          YELLOW_NEW_30: "#cc9f62",
+          YELLOW_NEW_31: "#c99b5d",
+          YELLOW_NEW_32: "#c79859",
+          YELLOW_NEW_33: "#c59554",
+          YELLOW_NEW_34: "#c39250",
+          YELLOW_NEW_35: "#c18f4b",
+          YELLOW_NEW_36: "#bf8b47",
+          YELLOW_NEW_37: "#bd8842",
+          YELLOW_NEW_38: "#ba853e",
+          YELLOW_NEW_39: "#b88239",
+          YELLOW_NEW_4: "#fbf5ec",
+          YELLOW_NEW_40: "#b67f35",
+          YELLOW_NEW_41: "#b47c30",
+          YELLOW_NEW_42: "#b1792b",
+          YELLOW_NEW_43: "#af7527",
+          YELLOW_NEW_44: "#ad7222",
+          YELLOW_NEW_45: "#aa6f1c",
+          YELLOW_NEW_46: "#a86c17",
+          YELLOW_NEW_47: "#a66910",
+          YELLOW_NEW_48: "#a36608",
           YELLOW_NEW_49: "#a16300",
-          YELLOW_NEW_5: "#ebd5b6",
+          YELLOW_NEW_5: "#f9f1e6",
           YELLOW_NEW_50: "#a16300",
-          YELLOW_NEW_51: "#9e6101",
+          YELLOW_NEW_51: "#9d6101",
           YELLOW_NEW_52: "#9a5f02",
           YELLOW_NEW_53: "#975d03",
           YELLOW_NEW_54: "#935b03",
           YELLOW_NEW_55: "#905904",
           YELLOW_NEW_56: "#8c5705",
           YELLOW_NEW_57: "#895505",
-          YELLOW_NEW_58: "#865306",
+          YELLOW_NEW_58: "#855306",
           YELLOW_NEW_59: "#825106",
-          YELLOW_NEW_6: "#ead3b1",
+          YELLOW_NEW_6: "#f7eee0",
           YELLOW_NEW_60: "#7f4f07",
-          YELLOW_NEW_61: "#7c4e07",
-          YELLOW_NEW_62: "#794c07",
-          YELLOW_NEW_63: "#754a08",
-          YELLOW_NEW_64: "#724808",
-          YELLOW_NEW_65: "#6f4608",
-          YELLOW_NEW_66: "#6c4408",
-          YELLOW_NEW_67: "#694208",
+          YELLOW_NEW_61: "#7b4d07",
+          YELLOW_NEW_62: "#784b07",
+          YELLOW_NEW_63: "#754908",
+          YELLOW_NEW_64: "#724708",
+          YELLOW_NEW_65: "#6e4608",
+          YELLOW_NEW_66: "#6b4408",
+          YELLOW_NEW_67: "#684208",
           YELLOW_NEW_68: "#654008",
           YELLOW_NEW_69: "#623e08",
-          YELLOW_NEW_7: "#e8d0ad",
+          YELLOW_NEW_7: "#f6ebda",
           YELLOW_NEW_70: "#5f3c08",
-          YELLOW_NEW_71: "#5c3b08",
-          YELLOW_NEW_72: "#593908",
-          YELLOW_NEW_73: "#563708",
-          YELLOW_NEW_74: "#533508",
-          YELLOW_NEW_75: "#503308",
+          YELLOW_NEW_71: "#5c3a08",
+          YELLOW_NEW_72: "#593808",
+          YELLOW_NEW_73: "#553608",
+          YELLOW_NEW_74: "#523408",
+          YELLOW_NEW_75: "#4f3308",
           YELLOW_NEW_76: "#4d3108",
           YELLOW_NEW_77: "#4a2f08",
-          YELLOW_NEW_78: "#472e07",
-          YELLOW_NEW_79: "#452c07",
-          YELLOW_NEW_8: "#e7cda9",
-          YELLOW_NEW_80: "#422a07",
-          YELLOW_NEW_81: "#3f2807",
-          YELLOW_NEW_82: "#3c2606",
-          YELLOW_NEW_83: "#392506",
-          YELLOW_NEW_84: "#372306",
-          YELLOW_NEW_85: "#342106",
-          YELLOW_NEW_86: "#311f05",
-          YELLOW_NEW_87: "#2f1e05",
-          YELLOW_NEW_88: "#2c1c05",
-          YELLOW_NEW_89: "#291a05",
-          YELLOW_NEW_9: "#e5cba4",
-          YELLOW_NEW_90: "#271804",
-          YELLOW_NEW_91: "#241704",
-          YELLOW_NEW_92: "#221504",
-          YELLOW_NEW_93: "#1f1303",
-          YELLOW_NEW_94: "#1d1103",
-          YELLOW_NEW_95: "#1a0f03",
-          YELLOW_NEW_96: "#160d02",
-          YELLOW_NEW_97: "#120a02",
-          YELLOW_NEW_98: "#0e0802",
-          YELLOW_NEW_99: "#090501",
+          YELLOW_NEW_78: "#472d07",
+          YELLOW_NEW_79: "#442b07",
+          YELLOW_NEW_8: "#f4e7d4",
+          YELLOW_NEW_80: "#412907",
+          YELLOW_NEW_81: "#3e2807",
+          YELLOW_NEW_82: "#3b2606",
+          YELLOW_NEW_83: "#382406",
+          YELLOW_NEW_84: "#362206",
+          YELLOW_NEW_85: "#332006",
+          YELLOW_NEW_86: "#301f05",
+          YELLOW_NEW_87: "#2e1d05",
+          YELLOW_NEW_88: "#2b1b05",
+          YELLOW_NEW_89: "#281904",
+          YELLOW_NEW_9: "#f3e4cf",
+          YELLOW_NEW_90: "#261804",
+          YELLOW_NEW_91: "#231604",
+          YELLOW_NEW_92: "#211404",
+          YELLOW_NEW_93: "#1e1203",
+          YELLOW_NEW_94: "#1b1103",
+          YELLOW_NEW_95: "#180e03",
+          YELLOW_NEW_96: "#150c02",
+          YELLOW_NEW_97: "#100902",
+          YELLOW_NEW_98: "#0c0601",
+          YELLOW_NEW_99: "#060301",
           YOUTUBE: "#cb2120",
         });
         t.Z = r;
@@ -24445,97 +24423,97 @@
           BLUE_900:
             "hsl(213, calc(var(--saturation-factor, 1) * 100.0%), 7.1%)",
           BLUE_NEW_1:
-            "hsl(212, calc(var(--saturation-factor, 1) * 87.2%), 90.8%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           BLUE_NEW_10:
-            "hsl(213, calc(var(--saturation-factor, 1) * 85.9%), 83.3%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 87.2%), 90.8%)",
           BLUE_NEW_100:
-            "hsl(220, calc(var(--saturation-factor, 1) * 60.0%), 1.0%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           BLUE_NEW_11:
-            "hsl(212, calc(var(--saturation-factor, 1) * 84.4%), 82.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 88.5%), 89.8%)",
           BLUE_NEW_12:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.1%), 81.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 86.2%), 88.6%)",
           BLUE_NEW_13:
-            "hsl(213, calc(var(--saturation-factor, 1) * 85.7%), 80.8%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 87.3%), 87.6%)",
           BLUE_NEW_14:
-            "hsl(212, calc(var(--saturation-factor, 1) * 84.5%), 79.8%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 85.5%), 86.5%)",
           BLUE_NEW_15:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.0%), 79.0%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 86.5%), 85.5%)",
           BLUE_NEW_16:
-            "hsl(212, calc(var(--saturation-factor, 1) * 83.8%), 78.2%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.8%), 84.5%)",
           BLUE_NEW_17:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.3%), 77.5%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 85.7%), 83.5%)",
           BLUE_NEW_18:
-            "hsl(212, calc(var(--saturation-factor, 1) * 83.3%), 76.5%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.4%), 82.4%)",
           BLUE_NEW_19:
-            "hsl(212, calc(var(--saturation-factor, 1) * 83.9%), 75.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 85.3%), 81.4%)",
           BLUE_NEW_2:
-            "hsl(212, calc(var(--saturation-factor, 1) * 88.2%), 90.0%)",
+            "hsl(216, calc(var(--saturation-factor, 1) * 100.0%), 99.0%)",
           BLUE_NEW_20:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.9%), 74.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.0%), 80.4%)",
           BLUE_NEW_21:
-            "hsl(213, calc(var(--saturation-factor, 1) * 83.3%), 74.1%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 84.8%), 79.4%)",
           BLUE_NEW_22:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.5%), 73.1%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 83.8%), 78.2%)",
           BLUE_NEW_23:
-            "hsl(213, calc(var(--saturation-factor, 1) * 83.0%), 72.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 84.3%), 77.5%)",
           BLUE_NEW_24:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.2%), 71.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 83.5%), 76.3%)",
           BLUE_NEW_25:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.7%), 70.6%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 84.1%), 75.3%)",
           BLUE_NEW_26:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.8%), 69.8%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 83.2%), 74.3%)",
           BLUE_NEW_27:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.3%), 69.0%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 82.5%), 73.1%)",
           BLUE_NEW_28:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.6%), 68.0%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 83.1%), 72.2%)",
           BLUE_NEW_29:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.0%), 67.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 82.3%), 71.2%)",
           BLUE_NEW_3:
-            "hsl(213, calc(var(--saturation-factor, 1) * 85.7%), 89.0%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.8%), 97.8%)",
           BLUE_NEW_30:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.4%), 66.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.7%), 70.0%)",
           BLUE_NEW_31:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.7%), 65.7%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 82.3%), 69.0%)",
           BLUE_NEW_32:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.1%), 64.7%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.6%), 68.0%)",
           BLUE_NEW_33:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.5%), 63.7%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.1%), 66.9%)",
           BLUE_NEW_34:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.0%), 62.9%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.6%), 65.9%)",
           BLUE_NEW_35:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.4%), 62.0%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.0%), 64.9%)",
           BLUE_NEW_36:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.8%), 61.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.5%), 63.7%)",
           BLUE_NEW_37:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.3%), 60.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.1%), 62.7%)",
           BLUE_NEW_38:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 59.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.6%), 61.6%)",
           BLUE_NEW_39:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.2%), 58.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.2%), 60.4%)",
           BLUE_NEW_4:
-            "hsl(212, calc(var(--saturation-factor, 1) * 86.7%), 88.2%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 87.5%), 96.9%)",
           BLUE_NEW_40:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 57.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 59.2%)",
           BLUE_NEW_41:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.4%), 56.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.3%), 58.2%)",
           BLUE_NEW_42:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 55.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 79.9%), 57.1%)",
           BLUE_NEW_43:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.5%), 54.1%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 79.6%), 55.7%)",
           BLUE_NEW_44:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.2%), 52.9%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 79.4%), 54.3%)",
           BLUE_NEW_45:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.6%), 52.0%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 79.2%), 52.9%)",
           BLUE_NEW_46:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.4%), 50.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 79.8%), 51.6%)",
           BLUE_NEW_47:
-            "hsl(211, calc(var(--saturation-factor, 1) * 83.1%), 48.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 80.3%), 49.8%)",
           BLUE_NEW_48:
-            "hsl(210, calc(var(--saturation-factor, 1) * 90.0%), 47.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 87.7%), 47.6%)",
           BLUE_NEW_49:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 44.5%)",
           BLUE_NEW_5:
-            "hsl(212, calc(var(--saturation-factor, 1) * 87.5%), 87.5%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 90.5%), 95.9%)",
           BLUE_NEW_50:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 44.5%)",
           BLUE_NEW_51:
@@ -24545,7 +24523,7 @@
           BLUE_NEW_53:
             "hsl(210, calc(var(--saturation-factor, 1) * 93.6%), 42.7%)",
           BLUE_NEW_54:
-            "hsl(210, calc(var(--saturation-factor, 1) * 91.6%), 42.2%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 91.6%), 42.0%)",
           BLUE_NEW_55:
             "hsl(210, calc(var(--saturation-factor, 1) * 90.5%), 41.2%)",
           BLUE_NEW_56:
@@ -24555,187 +24533,185 @@
           BLUE_NEW_58:
             "hsl(211, calc(var(--saturation-factor, 1) * 85.9%), 39.0%)",
           BLUE_NEW_59:
-            "hsl(211, calc(var(--saturation-factor, 1) * 84.6%), 38.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 84.5%), 38.0%)",
           BLUE_NEW_6:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.5%), 86.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 85.2%), 94.7%)",
           BLUE_NEW_60:
-            "hsl(211, calc(var(--saturation-factor, 1) * 83.2%), 37.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 83.2%), 37.3%)",
           BLUE_NEW_61:
-            "hsl(211, calc(var(--saturation-factor, 1) * 82.8%), 36.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 82.7%), 36.3%)",
           BLUE_NEW_62:
             "hsl(211, calc(var(--saturation-factor, 1) * 81.3%), 35.7%)",
           BLUE_NEW_63:
             "hsl(211, calc(var(--saturation-factor, 1) * 80.8%), 34.7%)",
           BLUE_NEW_64:
-            "hsl(211, calc(var(--saturation-factor, 1) * 80.3%), 33.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 80.2%), 33.7%)",
           BLUE_NEW_65:
-            "hsl(211, calc(var(--saturation-factor, 1) * 78.7%), 33.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 78.6%), 32.9%)",
           BLUE_NEW_66:
-            "hsl(211, calc(var(--saturation-factor, 1) * 78.0%), 32.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 77.9%), 32.0%)",
           BLUE_NEW_67:
-            "hsl(211, calc(var(--saturation-factor, 1) * 77.5%), 31.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 77.4%), 31.2%)",
           BLUE_NEW_68:
-            "hsl(211, calc(var(--saturation-factor, 1) * 76.8%), 30.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 76.6%), 30.2%)",
           BLUE_NEW_69:
-            "hsl(211, calc(var(--saturation-factor, 1) * 76.2%), 29.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 76.0%), 29.4%)",
           BLUE_NEW_7:
-            "hsl(212, calc(var(--saturation-factor, 1) * 86.3%), 85.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 87.5%), 93.7%)",
           BLUE_NEW_70:
-            "hsl(211, calc(var(--saturation-factor, 1) * 75.3%), 28.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 75.2%), 28.4%)",
           BLUE_NEW_71:
-            "hsl(211, calc(var(--saturation-factor, 1) * 74.6%), 27.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 74.5%), 27.6%)",
           BLUE_NEW_72:
-            "hsl(211, calc(var(--saturation-factor, 1) * 73.7%), 26.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 73.5%), 26.7%)",
           BLUE_NEW_73:
-            "hsl(211, calc(var(--saturation-factor, 1) * 74.2%), 25.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 74.0%), 25.7%)",
           BLUE_NEW_74:
-            "hsl(211, calc(var(--saturation-factor, 1) * 73.4%), 25.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 73.2%), 24.9%)",
           BLUE_NEW_75:
-            "hsl(211, calc(var(--saturation-factor, 1) * 72.6%), 24.3%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 72.4%), 24.1%)",
           BLUE_NEW_76:
-            "hsl(211, calc(var(--saturation-factor, 1) * 71.7%), 23.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 71.2%), 23.1%)",
           BLUE_NEW_77:
-            "hsl(211, calc(var(--saturation-factor, 1) * 72.2%), 22.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 71.7%), 22.2%)",
           BLUE_NEW_78:
-            "hsl(211, calc(var(--saturation-factor, 1) * 71.2%), 21.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.6%), 21.4%)",
           BLUE_NEW_79:
-            "hsl(212, calc(var(--saturation-factor, 1) * 71.7%), 20.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 71.2%), 20.4%)",
           BLUE_NEW_8:
-            "hsl(212, calc(var(--saturation-factor, 1) * 87.0%), 84.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 89.2%), 92.7%)",
           BLUE_NEW_80:
-            "hsl(212, calc(var(--saturation-factor, 1) * 70.6%), 20.0%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.0%), 19.6%)",
           BLUE_NEW_81:
-            "hsl(212, calc(var(--saturation-factor, 1) * 69.4%), 19.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.8%), 18.8%)",
           BLUE_NEW_82:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.9%), 18.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 69.6%), 18.0%)",
           BLUE_NEW_83:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.5%), 17.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.1%), 17.1%)",
           BLUE_NEW_84:
-            "hsl(212, calc(var(--saturation-factor, 1) * 69.4%), 16.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 68.7%), 16.3%)",
           BLUE_NEW_85:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.0%), 15.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 69.6%), 15.5%)",
           BLUE_NEW_86:
-            "hsl(211, calc(var(--saturation-factor, 1) * 68.4%), 14.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.3%), 14.5%)",
           BLUE_NEW_87:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.4%), 14.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 68.6%), 13.7%)",
           BLUE_NEW_88:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.1%), 13.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 69.7%), 12.9%)",
           BLUE_NEW_89:
-            "hsl(211, calc(var(--saturation-factor, 1) * 68.8%), 12.5%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.5%), 12.0%)",
           BLUE_NEW_9:
-            "hsl(212, calc(var(--saturation-factor, 1) * 85.4%), 83.9%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 86.0%), 91.6%)",
           BLUE_NEW_90:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.0%), 11.8%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 69.0%), 11.4%)",
           BLUE_NEW_91:
-            "hsl(211, calc(var(--saturation-factor, 1) * 70.9%), 10.8%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 70.4%), 10.6%)",
           BLUE_NEW_92:
-            "hsl(212, calc(var(--saturation-factor, 1) * 69.2%), 10.2%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 72.0%), 9.8%)",
           BLUE_NEW_93:
-            "hsl(212, calc(var(--saturation-factor, 1) * 70.8%), 9.4%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 69.6%), 9.0%)",
           BLUE_NEW_94:
-            "hsl(211, calc(var(--saturation-factor, 1) * 72.1%), 8.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 70.7%), 8.0%)",
           BLUE_NEW_95:
-            "hsl(211, calc(var(--saturation-factor, 1) * 69.2%), 7.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 72.2%), 7.1%)",
           BLUE_NEW_96:
-            "hsl(213, calc(var(--saturation-factor, 1) * 70.6%), 6.7%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 74.2%), 6.1%)",
           BLUE_NEW_97:
-            "hsl(214, calc(var(--saturation-factor, 1) * 72.4%), 5.7%)",
+            "hsl(215, calc(var(--saturation-factor, 1) * 76.0%), 4.9%)",
           BLUE_NEW_98:
-            "hsl(214, calc(var(--saturation-factor, 1) * 72.7%), 4.3%)",
+            "hsl(214, calc(var(--saturation-factor, 1) * 77.8%), 3.5%)",
           BLUE_NEW_99:
-            "hsl(216, calc(var(--saturation-factor, 1) * 71.4%), 2.7%)",
-          BLURPLE_1:
-            "hsl(224, calc(var(--saturation-factor, 1) * 100.0%), 92.7%)",
+            "hsl(214, calc(var(--saturation-factor, 1) * 77.8%), 1.8%)",
+          BLURPLE_1: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           BLURPLE_10:
-            "hsl(225, calc(var(--saturation-factor, 1) * 97.0%), 86.9%)",
-          BLURPLE_100:
-            "hsl(220, calc(var(--saturation-factor, 1) * 60.0%), 1.0%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 92.7%)",
+          BLURPLE_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           BLURPLE_11:
-            "hsl(226, calc(var(--saturation-factor, 1) * 97.1%), 86.3%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 92.0%)",
           BLURPLE_12:
-            "hsl(226, calc(var(--saturation-factor, 1) * 97.3%), 85.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 91.2%)",
           BLURPLE_13:
-            "hsl(226, calc(var(--saturation-factor, 1) * 97.4%), 85.1%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 90.4%)",
           BLURPLE_14:
-            "hsl(226, calc(var(--saturation-factor, 1) * 95.0%), 84.3%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 96.3%), 89.4%)",
           BLURPLE_15:
-            "hsl(226, calc(var(--saturation-factor, 1) * 95.2%), 83.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 96.6%), 88.6%)",
           BLURPLE_16:
-            "hsl(226, calc(var(--saturation-factor, 1) * 95.3%), 83.1%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 96.8%), 87.8%)",
           BLURPLE_17:
-            "hsl(227, calc(var(--saturation-factor, 1) * 95.5%), 82.5%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 97.0%), 87.1%)",
           BLURPLE_18:
-            "hsl(226, calc(var(--saturation-factor, 1) * 95.7%), 82.0%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 97.1%), 86.5%)",
           BLURPLE_19:
-            "hsl(227, calc(var(--saturation-factor, 1) * 93.8%), 81.2%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 97.3%), 85.7%)",
           BLURPLE_2:
-            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 92.2%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 99.2%)",
           BLURPLE_20:
-            "hsl(227, calc(var(--saturation-factor, 1) * 93.9%), 80.6%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 94.9%), 84.7%)",
           BLURPLE_21:
-            "hsl(227, calc(var(--saturation-factor, 1) * 94.1%), 80.2%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 95.1%), 83.9%)",
           BLURPLE_22:
-            "hsl(228, calc(var(--saturation-factor, 1) * 94.2%), 79.6%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 95.3%), 83.3%)",
           BLURPLE_23:
-            "hsl(227, calc(var(--saturation-factor, 1) * 92.6%), 78.8%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 95.5%), 82.5%)",
           BLURPLE_24:
-            "hsl(228, calc(var(--saturation-factor, 1) * 92.8%), 78.2%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 93.6%), 81.6%)",
           BLURPLE_25:
-            "hsl(228, calc(var(--saturation-factor, 1) * 93.0%), 77.6%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 93.8%), 81.0%)",
           BLURPLE_26:
-            "hsl(228, calc(var(--saturation-factor, 1) * 93.1%), 77.3%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 94.1%), 80.2%)",
           BLURPLE_27:
-            "hsl(229, calc(var(--saturation-factor, 1) * 91.7%), 76.5%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 94.2%), 79.6%)",
           BLURPLE_28:
-            "hsl(228, calc(var(--saturation-factor, 1) * 91.9%), 75.9%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 92.7%), 78.6%)",
           BLURPLE_29:
-            "hsl(229, calc(var(--saturation-factor, 1) * 92.1%), 75.3%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 92.9%), 78.0%)",
           BLURPLE_3:
-            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 91.6%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 98.4%)",
           BLURPLE_30:
-            "hsl(229, calc(var(--saturation-factor, 1) * 90.7%), 74.7%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 93.1%), 77.3%)",
           BLURPLE_31:
-            "hsl(229, calc(var(--saturation-factor, 1) * 90.9%), 74.1%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 91.7%), 76.5%)",
           BLURPLE_32:
-            "hsl(230, calc(var(--saturation-factor, 1) * 91.0%), 73.7%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 91.9%), 75.9%)",
           BLURPLE_33:
-            "hsl(230, calc(var(--saturation-factor, 1) * 89.9%), 72.9%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 92.1%), 75.1%)",
           BLURPLE_34:
-            "hsl(230, calc(var(--saturation-factor, 1) * 90.0%), 72.5%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 90.8%), 74.3%)",
           BLURPLE_35:
-            "hsl(230, calc(var(--saturation-factor, 1) * 90.2%), 72.0%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 91.0%), 73.7%)",
           BLURPLE_36:
-            "hsl(231, calc(var(--saturation-factor, 1) * 89.0%), 71.4%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 89.9%), 72.9%)",
           BLURPLE_37:
-            "hsl(231, calc(var(--saturation-factor, 1) * 89.3%), 70.8%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 90.1%), 72.4%)",
           BLURPLE_38:
-            "hsl(231, calc(var(--saturation-factor, 1) * 89.4%), 70.4%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 89.0%), 71.6%)",
           BLURPLE_39:
-            "hsl(231, calc(var(--saturation-factor, 1) * 88.4%), 69.6%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 89.2%), 71.0%)",
           BLURPLE_4:
-            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 90.8%)",
+            "hsl(222, calc(var(--saturation-factor, 1) * 100.0%), 97.5%)",
           BLURPLE_40:
-            "hsl(231, calc(var(--saturation-factor, 1) * 88.5%), 69.2%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 89.4%), 70.4%)",
           BLURPLE_41:
-            "hsl(232, calc(var(--saturation-factor, 1) * 87.5%), 68.6%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 88.4%), 69.6%)",
           BLURPLE_42:
-            "hsl(232, calc(var(--saturation-factor, 1) * 87.7%), 68.2%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 88.6%), 69.0%)",
           BLURPLE_43:
-            "hsl(233, calc(var(--saturation-factor, 1) * 87.9%), 67.6%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 87.7%), 68.2%)",
           BLURPLE_44:
-            "hsl(233, calc(var(--saturation-factor, 1) * 86.9%), 67.1%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 87.8%), 67.8%)",
           BLURPLE_45:
-            "hsl(233, calc(var(--saturation-factor, 1) * 87.1%), 66.7%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 86.9%), 67.1%)",
           BLURPLE_46:
-            "hsl(234, calc(var(--saturation-factor, 1) * 86.1%), 66.1%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 87.1%), 66.5%)",
           BLURPLE_47:
-            "hsl(234, calc(var(--saturation-factor, 1) * 86.3%), 65.7%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 86.2%), 65.9%)",
           BLURPLE_48:
-            "hsl(234, calc(var(--saturation-factor, 1) * 85.4%), 65.1%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 86.4%), 65.3%)",
           BLURPLE_49:
             "hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)",
           BLURPLE_5:
-            "hsl(224, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
+            "hsl(222, calc(var(--saturation-factor, 1) * 100.0%), 96.7%)",
           BLURPLE_50:
             "hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)",
           BLURPLE_51:
@@ -24743,107 +24719,107 @@
           BLURPLE_52:
             "hsl(235, calc(var(--saturation-factor, 1) * 74.5%), 61.6%)",
           BLURPLE_53:
-            "hsl(234, calc(var(--saturation-factor, 1) * 69.6%), 60.0%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 69.6%), 60.0%)",
           BLURPLE_54:
-            "hsl(234, calc(var(--saturation-factor, 1) * 65.9%), 58.6%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 65.1%), 58.4%)",
           BLURPLE_55:
             "hsl(234, calc(var(--saturation-factor, 1) * 61.6%), 57.1%)",
           BLURPLE_56:
-            "hsl(234, calc(var(--saturation-factor, 1) * 57.5%), 55.7%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 57.7%), 55.5%)",
           BLURPLE_57:
-            "hsl(234, calc(var(--saturation-factor, 1) * 54.5%), 54.3%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 53.8%), 54.1%)",
           BLURPLE_58:
             "hsl(234, calc(var(--saturation-factor, 1) * 51.0%), 52.7%)",
           BLURPLE_59:
-            "hsl(234, calc(var(--saturation-factor, 1) * 48.4%), 51.4%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 47.8%), 51.2%)",
           BLURPLE_6:
-            "hsl(225, calc(var(--saturation-factor, 1) * 96.3%), 89.4%)",
+            "hsl(223, calc(var(--saturation-factor, 1) * 100.0%), 95.9%)",
           BLURPLE_60:
-            "hsl(233, calc(var(--saturation-factor, 1) * 45.9%), 50.0%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 45.7%), 49.8%)",
           BLURPLE_61:
             "hsl(233, calc(var(--saturation-factor, 1) * 45.7%), 48.4%)",
           BLURPLE_62:
-            "hsl(233, calc(var(--saturation-factor, 1) * 45.2%), 47.3%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 45.6%), 46.9%)",
           BLURPLE_63:
-            "hsl(233, calc(var(--saturation-factor, 1) * 45.3%), 45.9%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 45.1%), 45.7%)",
           BLURPLE_64:
-            "hsl(232, calc(var(--saturation-factor, 1) * 45.4%), 44.5%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 45.1%), 44.3%)",
           BLURPLE_65:
-            "hsl(232, calc(var(--saturation-factor, 1) * 45.5%), 43.1%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 45.2%), 42.9%)",
           BLURPLE_66:
-            "hsl(233, calc(var(--saturation-factor, 1) * 44.9%), 42.0%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 45.3%), 41.6%)",
           BLURPLE_67:
-            "hsl(232, calc(var(--saturation-factor, 1) * 44.9%), 40.6%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 44.7%), 40.4%)",
           BLURPLE_68:
-            "hsl(232, calc(var(--saturation-factor, 1) * 45.0%), 39.2%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 44.7%), 39.0%)",
           BLURPLE_69:
-            "hsl(231, calc(var(--saturation-factor, 1) * 45.1%), 37.8%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 44.8%), 37.6%)",
           BLURPLE_7:
-            "hsl(225, calc(var(--saturation-factor, 1) * 96.5%), 88.8%)",
+            "hsl(223, calc(var(--saturation-factor, 1) * 100.0%), 95.1%)",
           BLURPLE_70:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.4%), 36.7%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 44.9%), 36.3%)",
           BLURPLE_71:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.8%), 35.5%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 44.4%), 35.3%)",
           BLURPLE_72:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.8%), 34.1%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 44.5%), 33.9%)",
           BLURPLE_73:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.0%), 32.9%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 44.6%), 32.5%)",
           BLURPLE_74:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.4%), 31.8%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 44.1%), 31.6%)",
           BLURPLE_75:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.9%), 30.6%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.2%), 30.2%)",
           BLURPLE_76:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.0%), 29.4%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.6%), 29.0%)",
           BLURPLE_77:
-            "hsl(231, calc(var(--saturation-factor, 1) * 44.4%), 28.2%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.1%), 28.0%)",
           BLURPLE_78:
-            "hsl(231, calc(var(--saturation-factor, 1) * 43.9%), 27.3%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.1%), 26.7%)",
           BLURPLE_79:
-            "hsl(230, calc(var(--saturation-factor, 1) * 43.9%), 25.9%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.6%), 25.5%)",
           BLURPLE_8:
-            "hsl(226, calc(var(--saturation-factor, 1) * 96.7%), 88.2%)",
+            "hsl(223, calc(var(--saturation-factor, 1) * 100.0%), 94.3%)",
           BLURPLE_80:
-            "hsl(229, calc(var(--saturation-factor, 1) * 44.4%), 24.7%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.0%), 24.5%)",
           BLURPLE_81:
-            "hsl(230, calc(var(--saturation-factor, 1) * 43.8%), 23.7%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 44.5%), 23.3%)",
           BLURPLE_82:
-            "hsl(229, calc(var(--saturation-factor, 1) * 44.3%), 22.5%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 43.9%), 22.4%)",
           BLURPLE_83:
-            "hsl(230, calc(var(--saturation-factor, 1) * 43.6%), 21.6%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 44.4%), 21.2%)",
           BLURPLE_84:
-            "hsl(230, calc(var(--saturation-factor, 1) * 44.2%), 20.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 45.1%), 20.0%)",
           BLURPLE_85:
-            "hsl(229, calc(var(--saturation-factor, 1) * 44.9%), 19.2%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 44.3%), 19.0%)",
           BLURPLE_86:
-            "hsl(229, calc(var(--saturation-factor, 1) * 44.7%), 18.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 45.1%), 17.8%)",
           BLURPLE_87:
-            "hsl(228, calc(var(--saturation-factor, 1) * 45.5%), 17.3%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 44.2%), 16.9%)",
           BLURPLE_88:
-            "hsl(229, calc(var(--saturation-factor, 1) * 44.6%), 16.3%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 45.7%), 15.9%)",
           BLURPLE_89:
-            "hsl(228, calc(var(--saturation-factor, 1) * 46.2%), 15.3%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 44.7%), 14.9%)",
           BLURPLE_9:
-            "hsl(225, calc(var(--saturation-factor, 1) * 96.8%), 87.6%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 93.5%)",
           BLURPLE_90:
-            "hsl(229, calc(var(--saturation-factor, 1) * 45.2%), 14.3%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 46.5%), 13.9%)",
           BLURPLE_91:
-            "hsl(227, calc(var(--saturation-factor, 1) * 47.1%), 13.3%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 45.5%), 12.9%)",
           BLURPLE_92:
-            "hsl(228, calc(var(--saturation-factor, 1) * 46.0%), 12.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 47.5%), 12.0%)",
           BLURPLE_93:
-            "hsl(227, calc(var(--saturation-factor, 1) * 48.3%), 11.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 46.4%), 11.0%)",
           BLURPLE_94:
-            "hsl(228, calc(var(--saturation-factor, 1) * 47.2%), 10.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 48.0%), 9.8%)",
           BLURPLE_95:
-            "hsl(227, calc(var(--saturation-factor, 1) * 48.9%), 9.2%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 50.0%), 8.6%)",
           BLURPLE_96:
-            "hsl(229, calc(var(--saturation-factor, 1) * 51.2%), 8.0%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 51.4%), 7.3%)",
           BLURPLE_97:
-            "hsl(227, calc(var(--saturation-factor, 1) * 52.9%), 6.7%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 53.3%), 5.9%)",
           BLURPLE_98:
-            "hsl(227, calc(var(--saturation-factor, 1) * 53.8%), 5.1%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 54.5%), 4.3%)",
           BLURPLE_99:
-            "hsl(233, calc(var(--saturation-factor, 1) * 52.9%), 3.3%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 63.6%), 2.2%)",
           BRAND_100:
             "hsl(240, calc(var(--saturation-factor, 1) * 77.8%), 98.2%)",
           BRAND_130:
@@ -24961,97 +24937,97 @@
           GREEN_900:
             "hsl(129, calc(var(--saturation-factor, 1) * 58.3%), 4.7%)",
           GREEN_NEW_1:
-            "hsl(120, calc(var(--saturation-factor, 1) * 33.3%), 87.1%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           GREEN_NEW_10:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.2%), 76.9%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 32.3%), 87.3%)",
           GREEN_NEW_100:
-            "hsl(120, calc(var(--saturation-factor, 1) * 33.3%), 0.6%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           GREEN_NEW_11:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.3%), 75.7%)",
-          GREEN_NEW_12:
-            "hsl(124, calc(var(--saturation-factor, 1) * 32.3%), 74.5%)",
-          GREEN_NEW_13:
-            "hsl(124, calc(var(--saturation-factor, 1) * 32.4%), 73.3%)",
-          GREEN_NEW_14:
-            "hsl(124, calc(var(--saturation-factor, 1) * 31.9%), 72.4%)",
-          GREEN_NEW_15:
-            "hsl(125, calc(var(--saturation-factor, 1) * 32.0%), 71.2%)",
-          GREEN_NEW_16:
-            "hsl(125, calc(var(--saturation-factor, 1) * 32.0%), 70.0%)",
-          GREEN_NEW_17:
-            "hsl(126, calc(var(--saturation-factor, 1) * 31.2%), 68.6%)",
-          GREEN_NEW_18:
-            "hsl(126, calc(var(--saturation-factor, 1) * 30.9%), 67.6%)",
-          GREEN_NEW_19:
-            "hsl(126, calc(var(--saturation-factor, 1) * 31.0%), 66.5%)",
-          GREEN_NEW_2:
             "hsl(122, calc(var(--saturation-factor, 1) * 33.3%), 85.9%)",
+          GREEN_NEW_12:
+            "hsl(122, calc(var(--saturation-factor, 1) * 32.5%), 84.3%)",
+          GREEN_NEW_13:
+            "hsl(124, calc(var(--saturation-factor, 1) * 33.3%), 82.9%)",
+          GREEN_NEW_14:
+            "hsl(122, calc(var(--saturation-factor, 1) * 31.9%), 81.6%)",
+          GREEN_NEW_15:
+            "hsl(124, calc(var(--saturation-factor, 1) * 32.7%), 80.2%)",
+          GREEN_NEW_16:
+            "hsl(123, calc(var(--saturation-factor, 1) * 32.1%), 78.6%)",
+          GREEN_NEW_17:
+            "hsl(123, calc(var(--saturation-factor, 1) * 32.2%), 77.5%)",
+          GREEN_NEW_18:
+            "hsl(125, calc(var(--saturation-factor, 1) * 31.7%), 75.9%)",
+          GREEN_NEW_19:
+            "hsl(124, calc(var(--saturation-factor, 1) * 32.3%), 74.5%)",
+          GREEN_NEW_2:
+            "hsl(120, calc(var(--saturation-factor, 1) * 42.9%), 98.6%)",
           GREEN_NEW_20:
-            "hsl(127, calc(var(--saturation-factor, 1) * 31.1%), 65.3%)",
+            "hsl(124, calc(var(--saturation-factor, 1) * 31.4%), 73.1%)",
           GREEN_NEW_21:
-            "hsl(126, calc(var(--saturation-factor, 1) * 30.8%), 64.3%)",
+            "hsl(125, calc(var(--saturation-factor, 1) * 31.9%), 71.8%)",
           GREEN_NEW_22:
-            "hsl(126, calc(var(--saturation-factor, 1) * 30.9%), 63.1%)",
+            "hsl(125, calc(var(--saturation-factor, 1) * 31.1%), 70.4%)",
           GREEN_NEW_23:
-            "hsl(127, calc(var(--saturation-factor, 1) * 30.9%), 62.0%)",
+            "hsl(125, calc(var(--saturation-factor, 1) * 31.6%), 69.0%)",
           GREEN_NEW_24:
-            "hsl(127, calc(var(--saturation-factor, 1) * 30.7%), 61.0%)",
+            "hsl(126, calc(var(--saturation-factor, 1) * 31.3%), 67.5%)",
           GREEN_NEW_25:
-            "hsl(128, calc(var(--saturation-factor, 1) * 30.7%), 59.8%)",
+            "hsl(126, calc(var(--saturation-factor, 1) * 31.4%), 66.3%)",
           GREEN_NEW_26:
-            "hsl(128, calc(var(--saturation-factor, 1) * 30.8%), 58.6%)",
+            "hsl(126, calc(var(--saturation-factor, 1) * 31.1%), 64.7%)",
           GREEN_NEW_27:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.9%), 57.5%)",
+            "hsl(126, calc(var(--saturation-factor, 1) * 31.2%), 63.5%)",
           GREEN_NEW_28:
-            "hsl(128, calc(var(--saturation-factor, 1) * 30.6%), 56.5%)",
+            "hsl(127, calc(var(--saturation-factor, 1) * 30.9%), 62.0%)",
           GREEN_NEW_29:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.7%), 55.3%)",
+            "hsl(127, calc(var(--saturation-factor, 1) * 31.0%), 60.8%)",
           GREEN_NEW_3:
-            "hsl(122, calc(var(--saturation-factor, 1) * 33.3%), 84.7%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 33.3%), 97.1%)",
           GREEN_NEW_30:
-            "hsl(129, calc(var(--saturation-factor, 1) * 30.8%), 54.1%)",
+            "hsl(128, calc(var(--saturation-factor, 1) * 30.8%), 59.2%)",
           GREEN_NEW_31:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.8%), 52.9%)",
+            "hsl(128, calc(var(--saturation-factor, 1) * 30.6%), 57.6%)",
           GREEN_NEW_32:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.9%), 51.8%)",
+            "hsl(128, calc(var(--saturation-factor, 1) * 30.6%), 56.5%)",
           GREEN_NEW_33:
-            "hsl(130, calc(var(--saturation-factor, 1) * 30.2%), 50.6%)",
+            "hsl(129, calc(var(--saturation-factor, 1) * 30.4%), 54.9%)",
           GREEN_NEW_34:
-            "hsl(131, calc(var(--saturation-factor, 1) * 31.0%), 49.4%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 30.8%), 53.5%)",
           GREEN_NEW_35:
-            "hsl(131, calc(var(--saturation-factor, 1) * 32.5%), 48.2%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 30.3%), 52.2%)",
           GREEN_NEW_36:
-            "hsl(132, calc(var(--saturation-factor, 1) * 34.2%), 47.1%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 30.7%), 50.8%)",
           GREEN_NEW_37:
-            "hsl(132, calc(var(--saturation-factor, 1) * 35.9%), 45.9%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 31.5%), 49.2%)",
           GREEN_NEW_38:
-            "hsl(133, calc(var(--saturation-factor, 1) * 38.3%), 44.5%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 33.3%), 47.6%)",
           GREEN_NEW_39:
-            "hsl(133, calc(var(--saturation-factor, 1) * 40.3%), 43.3%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 35.6%), 46.3%)",
           GREEN_NEW_4:
-            "hsl(122, calc(var(--saturation-factor, 1) * 33.3%), 83.5%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 36.4%), 95.7%)",
           GREEN_NEW_40:
-            "hsl(134, calc(var(--saturation-factor, 1) * 42.3%), 42.2%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 37.7%), 44.7%)",
           GREEN_NEW_41:
-            "hsl(135, calc(var(--saturation-factor, 1) * 45.2%), 40.8%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 40.3%), 43.3%)",
           GREEN_NEW_42:
-            "hsl(136, calc(var(--saturation-factor, 1) * 47.5%), 39.6%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 43.4%), 41.6%)",
           GREEN_NEW_43:
-            "hsl(136, calc(var(--saturation-factor, 1) * 50.8%), 38.2%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 46.3%), 40.2%)",
           GREEN_NEW_44:
-            "hsl(137, calc(var(--saturation-factor, 1) * 54.0%), 36.7%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 50.0%), 38.4%)",
           GREEN_NEW_45:
-            "hsl(138, calc(var(--saturation-factor, 1) * 58.7%), 35.1%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 54.8%), 36.5%)",
           GREEN_NEW_46:
-            "hsl(139, calc(var(--saturation-factor, 1) * 63.7%), 33.5%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 60.5%), 34.7%)",
           GREEN_NEW_47:
-            "hsl(141, calc(var(--saturation-factor, 1) * 71.4%), 31.6%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 67.5%), 32.5%)",
           GREEN_NEW_48:
-            "hsl(143, calc(var(--saturation-factor, 1) * 82.6%), 29.2%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 79.1%), 30.0%)",
           GREEN_NEW_49:
             "hsl(146, calc(var(--saturation-factor, 1) * 100.0%), 26.3%)",
           GREEN_NEW_5:
-            "hsl(124, calc(var(--saturation-factor, 1) * 33.3%), 82.4%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 31.0%), 94.3%)",
           GREEN_NEW_50:
             "hsl(146, calc(var(--saturation-factor, 1) * 100.0%), 26.3%)",
           GREEN_NEW_51:
@@ -25059,7 +25035,7 @@
           GREEN_NEW_52:
             "hsl(145, calc(var(--saturation-factor, 1) * 92.5%), 26.1%)",
           GREEN_NEW_53:
-            "hsl(144, calc(var(--saturation-factor, 1) * 88.1%), 26.3%)",
+            "hsl(144, calc(var(--saturation-factor, 1) * 88.0%), 26.1%)",
           GREEN_NEW_54:
             "hsl(143, calc(var(--saturation-factor, 1) * 85.0%), 26.1%)",
           GREEN_NEW_55:
@@ -25067,99 +25043,99 @@
           GREEN_NEW_56:
             "hsl(143, calc(var(--saturation-factor, 1) * 80.0%), 25.5%)",
           GREEN_NEW_57:
-            "hsl(142, calc(var(--saturation-factor, 1) * 78.1%), 25.1%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 76.7%), 25.3%)",
           GREEN_NEW_58:
-            "hsl(141, calc(var(--saturation-factor, 1) * 75.0%), 25.1%)",
+            "hsl(141, calc(var(--saturation-factor, 1) * 74.8%), 24.9%)",
           GREEN_NEW_59:
-            "hsl(141, calc(var(--saturation-factor, 1) * 74.4%), 24.5%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 73.0%), 24.7%)",
           GREEN_NEW_6:
-            "hsl(122, calc(var(--saturation-factor, 1) * 32.6%), 81.4%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 33.3%), 92.9%)",
           GREEN_NEW_60:
             "hsl(140, calc(var(--saturation-factor, 1) * 72.4%), 24.1%)",
           GREEN_NEW_61:
-            "hsl(140, calc(var(--saturation-factor, 1) * 70.5%), 23.9%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 70.2%), 23.7%)",
           GREEN_NEW_62:
             "hsl(140, calc(var(--saturation-factor, 1) * 69.7%), 23.3%)",
           GREEN_NEW_63:
             "hsl(139, calc(var(--saturation-factor, 1) * 67.5%), 22.9%)",
           GREEN_NEW_64:
-            "hsl(139, calc(var(--saturation-factor, 1) * 67.0%), 22.5%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 66.7%), 22.4%)",
           GREEN_NEW_65:
             "hsl(139, calc(var(--saturation-factor, 1) * 66.1%), 22.0%)",
           GREEN_NEW_66:
             "hsl(139, calc(var(--saturation-factor, 1) * 65.1%), 21.4%)",
           GREEN_NEW_67:
-            "hsl(138, calc(var(--saturation-factor, 1) * 63.0%), 21.2%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 62.6%), 21.0%)",
           GREEN_NEW_68:
-            "hsl(138, calc(var(--saturation-factor, 1) * 61.9%), 20.6%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 61.9%), 20.6%)",
           GREEN_NEW_69:
-            "hsl(137, calc(var(--saturation-factor, 1) * 61.2%), 20.2%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 62.4%), 19.8%)",
           GREEN_NEW_7:
-            "hsl(124, calc(var(--saturation-factor, 1) * 32.7%), 80.2%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 34.9%), 91.6%)",
           GREEN_NEW_70:
-            "hsl(137, calc(var(--saturation-factor, 1) * 61.6%), 19.4%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 61.2%), 19.2%)",
           GREEN_NEW_71:
             "hsl(137, calc(var(--saturation-factor, 1) * 60.4%), 18.8%)",
           GREEN_NEW_72:
-            "hsl(136, calc(var(--saturation-factor, 1) * 59.6%), 18.4%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 59.1%), 18.2%)",
           GREEN_NEW_73:
             "hsl(136, calc(var(--saturation-factor, 1) * 58.2%), 17.8%)",
           GREEN_NEW_74:
-            "hsl(135, calc(var(--saturation-factor, 1) * 57.3%), 17.5%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 58.6%), 17.1%)",
           GREEN_NEW_75:
             "hsl(136, calc(var(--saturation-factor, 1) * 57.6%), 16.7%)",
           GREEN_NEW_76:
-            "hsl(135, calc(var(--saturation-factor, 1) * 56.6%), 16.3%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 56.1%), 16.1%)",
           GREEN_NEW_77:
-            "hsl(136, calc(var(--saturation-factor, 1) * 57.0%), 15.5%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 57.0%), 15.5%)",
           GREEN_NEW_78:
-            "hsl(135, calc(var(--saturation-factor, 1) * 55.8%), 15.1%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 55.3%), 14.9%)",
           GREEN_NEW_79:
-            "hsl(133, calc(var(--saturation-factor, 1) * 54.7%), 14.7%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 56.2%), 14.3%)",
           GREEN_NEW_8:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.7%), 79.0%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 33.3%), 90.0%)",
           GREEN_NEW_80:
-            "hsl(134, calc(var(--saturation-factor, 1) * 54.9%), 13.9%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 54.3%), 13.7%)",
           GREEN_NEW_81:
-            "hsl(133, calc(var(--saturation-factor, 1) * 53.6%), 13.5%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 55.2%), 13.1%)",
           GREEN_NEW_82:
             "hsl(134, calc(var(--saturation-factor, 1) * 53.8%), 12.7%)",
           GREEN_NEW_83:
-            "hsl(134, calc(var(--saturation-factor, 1) * 54.8%), 12.2%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 54.1%), 12.0%)",
           GREEN_NEW_84:
-            "hsl(133, calc(var(--saturation-factor, 1) * 53.3%), 11.8%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 52.5%), 11.6%)",
           GREEN_NEW_85:
-            "hsl(134, calc(var(--saturation-factor, 1) * 54.4%), 11.2%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 53.6%), 11.0%)",
           GREEN_NEW_86:
-            "hsl(132, calc(var(--saturation-factor, 1) * 54.7%), 10.4%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 53.8%), 10.2%)",
           GREEN_NEW_87:
-            "hsl(131, calc(var(--saturation-factor, 1) * 52.9%), 10.0%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 52.0%), 9.8%)",
           GREEN_NEW_88:
-            "hsl(132, calc(var(--saturation-factor, 1) * 54.2%), 9.4%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 53.2%), 9.2%)",
           GREEN_NEW_89:
-            "hsl(132, calc(var(--saturation-factor, 1) * 55.6%), 8.8%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 54.5%), 8.6%)",
           GREEN_NEW_9:
-            "hsl(123, calc(var(--saturation-factor, 1) * 32.7%), 77.8%)",
+            "hsl(123, calc(var(--saturation-factor, 1) * 34.5%), 88.6%)",
           GREEN_NEW_90:
-            "hsl(131, calc(var(--saturation-factor, 1) * 52.4%), 8.2%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 55.0%), 7.8%)",
           GREEN_NEW_91:
-            "hsl(131, calc(var(--saturation-factor, 1) * 53.8%), 7.6%)",
+            "hsl(129, calc(var(--saturation-factor, 1) * 52.6%), 7.5%)",
           GREEN_NEW_92:
-            "hsl(132, calc(var(--saturation-factor, 1) * 55.6%), 7.1%)",
+            "hsl(129, calc(var(--saturation-factor, 1) * 54.3%), 6.9%)",
           GREEN_NEW_93:
-            "hsl(129, calc(var(--saturation-factor, 1) * 57.6%), 6.5%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 56.3%), 6.3%)",
           GREEN_NEW_94:
-            "hsl(128, calc(var(--saturation-factor, 1) * 53.3%), 5.9%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 57.1%), 5.5%)",
           GREEN_NEW_95:
-            "hsl(128, calc(var(--saturation-factor, 1) * 55.6%), 5.3%)",
+            "hsl(128, calc(var(--saturation-factor, 1) * 60.0%), 4.9%)",
           GREEN_NEW_96:
-            "hsl(129, calc(var(--saturation-factor, 1) * 56.5%), 4.5%)",
+            "hsl(125, calc(var(--saturation-factor, 1) * 54.5%), 4.3%)",
           GREEN_NEW_97:
-            "hsl(125, calc(var(--saturation-factor, 1) * 57.9%), 3.7%)",
+            "hsl(127, calc(var(--saturation-factor, 1) * 52.9%), 3.3%)",
           GREEN_NEW_98:
-            "hsl(128, calc(var(--saturation-factor, 1) * 57.1%), 2.7%)",
+            "hsl(120, calc(var(--saturation-factor, 1) * 50.0%), 2.4%)",
           GREEN_NEW_99:
-            "hsl(120, calc(var(--saturation-factor, 1) * 55.6%), 1.8%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 60.0%), 1.0%)",
           GUILD_BOOSTING_BLUE:
             "hsl(221, calc(var(--saturation-factor, 1) * 70.0%), 55.5%)",
           GUILD_BOOSTING_BLUE_FOR_GRADIENTS:
@@ -25480,97 +25456,97 @@
           ORANGE_900:
             "hsl(26, calc(var(--saturation-factor, 1) * 72.4%), 5.7%)",
           ORANGE_NEW_1:
-            "hsl(24, calc(var(--saturation-factor, 1) * 89.8%), 88.4%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           ORANGE_NEW_10:
-            "hsl(23, calc(var(--saturation-factor, 1) * 82.9%), 79.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 89.7%), 88.6%)",
           ORANGE_NEW_100:
-            "hsl(15, calc(var(--saturation-factor, 1) * 100.0%), 0.8%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           ORANGE_NEW_11:
-            "hsl(23, calc(var(--saturation-factor, 1) * 81.8%), 78.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 87.5%), 87.5%)",
           ORANGE_NEW_12:
-            "hsl(23, calc(var(--saturation-factor, 1) * 80.9%), 77.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 88.6%), 86.3%)",
           ORANGE_NEW_13:
-            "hsl(23, calc(var(--saturation-factor, 1) * 80.0%), 76.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 87.0%), 84.9%)",
           ORANGE_NEW_14:
-            "hsl(23, calc(var(--saturation-factor, 1) * 79.4%), 75.3%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 85.5%), 83.7%)",
           ORANGE_NEW_15:
-            "hsl(23, calc(var(--saturation-factor, 1) * 78.6%), 74.3%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.4%), 82.4%)",
           ORANGE_NEW_16:
-            "hsl(23, calc(var(--saturation-factor, 1) * 77.9%), 73.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 83.3%), 81.2%)",
           ORANGE_NEW_17:
-            "hsl(23, calc(var(--saturation-factor, 1) * 77.3%), 72.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 82.4%), 80.0%)",
           ORANGE_NEW_18:
-            "hsl(23, calc(var(--saturation-factor, 1) * 76.7%), 71.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 81.7%), 78.6%)",
           ORANGE_NEW_19:
-            "hsl(23, calc(var(--saturation-factor, 1) * 76.2%), 70.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 80.9%), 77.5%)",
           ORANGE_NEW_2:
-            "hsl(23, calc(var(--saturation-factor, 1) * 90.5%), 87.6%)",
+            "hsl(20, calc(var(--saturation-factor, 1) * 100.0%), 98.8%)",
           ORANGE_NEW_20:
-            "hsl(23, calc(var(--saturation-factor, 1) * 74.5%), 69.2%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 80.2%), 76.3%)",
           ORANGE_NEW_21:
-            "hsl(23, calc(var(--saturation-factor, 1) * 74.1%), 68.2%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 79.5%), 75.1%)",
           ORANGE_NEW_22:
-            "hsl(23, calc(var(--saturation-factor, 1) * 73.5%), 67.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 77.6%), 73.7%)",
           ORANGE_NEW_23:
-            "hsl(23, calc(var(--saturation-factor, 1) * 73.1%), 66.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 77.1%), 72.5%)",
           ORANGE_NEW_24:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.8%), 65.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 76.7%), 71.4%)",
           ORANGE_NEW_25:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.4%), 64.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 75.2%), 70.0%)",
           ORANGE_NEW_26:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.1%), 63.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 74.8%), 68.8%)",
           ORANGE_NEW_27:
-            "hsl(22, calc(var(--saturation-factor, 1) * 69.8%), 62.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 73.5%), 67.5%)",
           ORANGE_NEW_28:
-            "hsl(23, calc(var(--saturation-factor, 1) * 69.5%), 61.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 73.1%), 66.5%)",
           ORANGE_NEW_29:
-            "hsl(23, calc(var(--saturation-factor, 1) * 68.5%), 60.2%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 71.9%), 65.1%)",
           ORANGE_NEW_3:
-            "hsl(24, calc(var(--saturation-factor, 1) * 88.4%), 86.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 97.5%)",
           ORANGE_NEW_30:
-            "hsl(23, calc(var(--saturation-factor, 1) * 68.1%), 59.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 70.8%), 63.7%)",
           ORANGE_NEW_31:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67.1%), 58.2%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 70.5%), 62.7%)",
           ORANGE_NEW_32:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67.0%), 57.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 69.5%), 61.4%)",
           ORANGE_NEW_33:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.9%), 56.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 68.6%), 60.0%)",
           ORANGE_NEW_34:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.8%), 55.3%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 67.6%), 58.8%)",
           ORANGE_NEW_35:
-            "hsl(23, calc(var(--saturation-factor, 1) * 65.0%), 54.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 66.8%), 57.5%)",
           ORANGE_NEW_36:
-            "hsl(22, calc(var(--saturation-factor, 1) * 64.7%), 53.3%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 65.9%), 56.3%)",
           ORANGE_NEW_37:
-            "hsl(22, calc(var(--saturation-factor, 1) * 63.9%), 52.2%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 65.9%), 55.1%)",
           ORANGE_NEW_38:
-            "hsl(23, calc(var(--saturation-factor, 1) * 63.2%), 51.0%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 65.1%), 53.9%)",
           ORANGE_NEW_39:
-            "hsl(23, calc(var(--saturation-factor, 1) * 62.4%), 50.0%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 63.8%), 52.4%)",
           ORANGE_NEW_4:
-            "hsl(23, calc(var(--saturation-factor, 1) * 86.5%), 85.5%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 100.0%), 96.3%)",
           ORANGE_NEW_40:
-            "hsl(23, calc(var(--saturation-factor, 1) * 64.8%), 49.0%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 63.1%), 51.2%)",
           ORANGE_NEW_41:
-            "hsl(23, calc(var(--saturation-factor, 1) * 67.2%), 47.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 63.0%), 49.8%)",
           ORANGE_NEW_42:
-            "hsl(23, calc(var(--saturation-factor, 1) * 69.7%), 46.7%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 65.3%), 48.6%)",
           ORANGE_NEW_43:
-            "hsl(23, calc(var(--saturation-factor, 1) * 72.4%), 45.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 68.5%), 47.3%)",
           ORANGE_NEW_44:
-            "hsl(23, calc(var(--saturation-factor, 1) * 75.3%), 44.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 71.8%), 45.9%)",
           ORANGE_NEW_45:
-            "hsl(23, calc(var(--saturation-factor, 1) * 79.1%), 43.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 75.2%), 44.3%)",
           ORANGE_NEW_46:
-            "hsl(24, calc(var(--saturation-factor, 1) * 82.2%), 42.0%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 79.8%), 42.7%)",
           ORANGE_NEW_47:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.4%), 40.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 41.2%)",
           ORANGE_NEW_48:
-            "hsl(25, calc(var(--saturation-factor, 1) * 93.9%), 38.6%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 92.0%), 39.0%)",
           ORANGE_NEW_49:
             "hsl(25, calc(var(--saturation-factor, 1) * 100.0%), 37.1%)",
           ORANGE_NEW_5:
-            "hsl(23, calc(var(--saturation-factor, 1) * 87.3%), 84.5%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 92.3%), 94.9%)",
           ORANGE_NEW_50:
             "hsl(25, calc(var(--saturation-factor, 1) * 100.0%), 37.1%)",
           ORANGE_NEW_51:
@@ -25578,7 +25554,7 @@
           ORANGE_NEW_52:
             "hsl(25, calc(var(--saturation-factor, 1) * 97.8%), 35.9%)",
           ORANGE_NEW_53:
-            "hsl(25, calc(var(--saturation-factor, 1) * 97.8%), 35.1%)",
+            "hsl(25, calc(var(--saturation-factor, 1) * 96.7%), 35.3%)",
           ORANGE_NEW_54:
             "hsl(25, calc(var(--saturation-factor, 1) * 96.6%), 34.5%)",
           ORANGE_NEW_55:
@@ -25588,97 +25564,97 @@
           ORANGE_NEW_57:
             "hsl(25, calc(var(--saturation-factor, 1) * 94.0%), 32.5%)",
           ORANGE_NEW_58:
-            "hsl(24, calc(var(--saturation-factor, 1) * 93.8%), 31.8%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 92.6%), 32.0%)",
           ORANGE_NEW_59:
             "hsl(24, calc(var(--saturation-factor, 1) * 92.5%), 31.2%)",
           ORANGE_NEW_6:
-            "hsl(23, calc(var(--saturation-factor, 1) * 85.7%), 83.5%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 93.8%), 93.7%)",
           ORANGE_NEW_60:
             "hsl(24, calc(var(--saturation-factor, 1) * 92.3%), 30.4%)",
           ORANGE_NEW_61:
             "hsl(24, calc(var(--saturation-factor, 1) * 90.8%), 29.8%)",
           ORANGE_NEW_62:
-            "hsl(24, calc(var(--saturation-factor, 1) * 90.6%), 29.2%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 90.5%), 29.0%)",
           ORANGE_NEW_63:
-            "hsl(24, calc(var(--saturation-factor, 1) * 90.3%), 28.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 90.3%), 28.2%)",
           ORANGE_NEW_64:
-            "hsl(25, calc(var(--saturation-factor, 1) * 90.1%), 27.6%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 90.0%), 27.5%)",
           ORANGE_NEW_65:
             "hsl(24, calc(var(--saturation-factor, 1) * 88.4%), 27.1%)",
           ORANGE_NEW_66:
             "hsl(24, calc(var(--saturation-factor, 1) * 88.1%), 26.3%)",
           ORANGE_NEW_67:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.8%), 25.7%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 87.7%), 25.5%)",
           ORANGE_NEW_68:
-            "hsl(24, calc(var(--saturation-factor, 1) * 87.4%), 24.9%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 87.3%), 24.7%)",
           ORANGE_NEW_69:
             "hsl(24, calc(var(--saturation-factor, 1) * 87.0%), 24.1%)",
           ORANGE_NEW_7:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.4%), 82.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 94.7%), 92.5%)",
           ORANGE_NEW_70:
-            "hsl(24, calc(var(--saturation-factor, 1) * 86.7%), 23.5%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 86.6%), 23.3%)",
           ORANGE_NEW_71:
             "hsl(24, calc(var(--saturation-factor, 1) * 86.2%), 22.7%)",
           ORANGE_NEW_72:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.8%), 22.2%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 85.7%), 22.0%)",
           ORANGE_NEW_73:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.3%), 21.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 85.2%), 21.2%)",
           ORANGE_NEW_74:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.9%), 20.8%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 20.6%)",
           ORANGE_NEW_75:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.3%), 20.0%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 86.0%), 19.6%)",
           ORANGE_NEW_76:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.7%), 19.2%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 85.6%), 19.0%)",
           ORANGE_NEW_77:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.1%), 18.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.9%), 18.2%)",
           ORANGE_NEW_78:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.6%), 17.8%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.4%), 17.6%)",
           ORANGE_NEW_79:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.1%), 17.3%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 83.9%), 17.1%)",
           ORANGE_NEW_8:
-            "hsl(24, calc(var(--saturation-factor, 1) * 83.2%), 81.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 91.1%), 91.2%)",
           ORANGE_NEW_80:
-            "hsl(24, calc(var(--saturation-factor, 1) * 83.3%), 16.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 83.1%), 16.3%)",
           ORANGE_NEW_81:
-            "hsl(24, calc(var(--saturation-factor, 1) * 85.0%), 15.7%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.8%), 15.5%)",
           ORANGE_NEW_82:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.4%), 15.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 84.2%), 14.9%)",
           ORANGE_NEW_83:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.8%), 14.5%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 83.6%), 14.3%)",
           ORANGE_NEW_84:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.1%), 13.9%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 82.6%), 13.5%)",
           ORANGE_NEW_85:
-            "hsl(25, calc(var(--saturation-factor, 1) * 84.8%), 12.9%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 84.6%), 12.7%)",
           ORANGE_NEW_86:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.1%), 12.4%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 83.9%), 12.2%)",
           ORANGE_NEW_87:
-            "hsl(24, calc(var(--saturation-factor, 1) * 83.3%), 11.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 83.1%), 11.6%)",
           ORANGE_NEW_88:
-            "hsl(23, calc(var(--saturation-factor, 1) * 82.5%), 11.2%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 85.5%), 10.8%)",
           ORANGE_NEW_89:
-            "hsl(24, calc(var(--saturation-factor, 1) * 84.9%), 10.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 84.6%), 10.2%)",
           ORANGE_NEW_9:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.8%), 80.6%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 92.2%), 90.0%)",
           ORANGE_NEW_90:
-            "hsl(23, calc(var(--saturation-factor, 1) * 84.0%), 9.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 83.7%), 9.6%)",
           ORANGE_NEW_91:
-            "hsl(23, calc(var(--saturation-factor, 1) * 83.0%), 9.2%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 82.6%), 9.0%)",
           ORANGE_NEW_92:
-            "hsl(23, calc(var(--saturation-factor, 1) * 86.0%), 8.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 85.7%), 8.2%)",
           ORANGE_NEW_93:
-            "hsl(23, calc(var(--saturation-factor, 1) * 85.0%), 7.8%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 84.6%), 7.6%)",
           ORANGE_NEW_94:
-            "hsl(21, calc(var(--saturation-factor, 1) * 83.8%), 7.3%)",
+            "hsl(20, calc(var(--saturation-factor, 1) * 83.3%), 7.1%)",
           ORANGE_NEW_95:
-            "hsl(19, calc(var(--saturation-factor, 1) * 82.4%), 6.7%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 87.1%), 6.1%)",
           ORANGE_NEW_96:
-            "hsl(19, calc(var(--saturation-factor, 1) * 86.2%), 5.7%)",
+            "hsl(18, calc(var(--saturation-factor, 1) * 85.2%), 5.3%)",
           ORANGE_NEW_97:
-            "hsl(17, calc(var(--saturation-factor, 1) * 84.0%), 4.9%)",
+            "hsl(17, calc(var(--saturation-factor, 1) * 81.8%), 4.3%)",
           ORANGE_NEW_98:
-            "hsl(18, calc(var(--saturation-factor, 1) * 89.5%), 3.7%)",
+            "hsl(17, calc(var(--saturation-factor, 1) * 87.5%), 3.1%)",
           ORANGE_NEW_99:
-            "hsl(18, calc(var(--saturation-factor, 1) * 83.3%), 2.4%)",
+            "hsl(20, calc(var(--saturation-factor, 1) * 75.0%), 1.6%)",
           PARTNER: "hsl(215, calc(var(--saturation-factor, 1) * 82.8%), 59.0%)",
           PAYPAL: "hsl(230, calc(var(--saturation-factor, 1) * 69.8%), 24.7%)",
           PLAYSTATION:
@@ -25857,98 +25833,96 @@
           RED_830: "hsl(358, calc(var(--saturation-factor, 1) * 67.3%), 10.8%)",
           RED_860: "hsl(0, calc(var(--saturation-factor, 1) * 66.7%), 9.4%)",
           RED_900: "hsl(0, calc(var(--saturation-factor, 1) * 70.0%), 7.8%)",
-          RED_NEW_1:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 91.2%)",
+          RED_NEW_1: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           RED_NEW_10:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 84.7%)",
-          RED_NEW_100:
-            "hsl(0, calc(var(--saturation-factor, 1) * 60.0%), 1.0%)",
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 91.4%)",
+          RED_NEW_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           RED_NEW_11:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 84.1%)",
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
           RED_NEW_12:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 83.3%)",
-          RED_NEW_13:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
-          RED_NEW_14:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 82.0%)",
-          RED_NEW_15:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 81.4%)",
-          RED_NEW_16:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 80.6%)",
-          RED_NEW_17:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 80.0%)",
-          RED_NEW_18:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 79.4%)",
-          RED_NEW_19:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 78.6%)",
-          RED_NEW_2:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 90.4%)",
-          RED_NEW_20:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 78.0%)",
-          RED_NEW_21:
-            "hsl(3, calc(var(--saturation-factor, 1) * 98.3%), 77.3%)",
-          RED_NEW_22:
-            "hsl(3, calc(var(--saturation-factor, 1) * 96.7%), 76.3%)",
-          RED_NEW_23:
-            "hsl(3, calc(var(--saturation-factor, 1) * 95.2%), 75.5%)",
-          RED_NEW_24:
-            "hsl(2, calc(var(--saturation-factor, 1) * 93.8%), 74.7%)",
-          RED_NEW_25:
-            "hsl(2, calc(var(--saturation-factor, 1) * 91.0%), 73.7%)",
-          RED_NEW_26:
-            "hsl(2, calc(var(--saturation-factor, 1) * 89.9%), 72.9%)",
-          RED_NEW_27:
-            "hsl(2, calc(var(--saturation-factor, 1) * 88.8%), 72.0%)",
-          RED_NEW_28:
-            "hsl(2, calc(var(--saturation-factor, 1) * 87.8%), 71.2%)",
-          RED_NEW_29:
-            "hsl(2, calc(var(--saturation-factor, 1) * 85.5%), 70.2%)",
-          RED_NEW_3:
             "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
+          RED_NEW_13:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 88.8%)",
+          RED_NEW_14:
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 87.8%)",
+          RED_NEW_15:
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 87.1%)",
+          RED_NEW_16:
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 86.1%)",
+          RED_NEW_17:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
+          RED_NEW_18:
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 84.3%)",
+          RED_NEW_19:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 83.5%)",
+          RED_NEW_2:
+            "hsl(12, calc(var(--saturation-factor, 1) * 100.0%), 99.0%)",
+          RED_NEW_20:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
+          RED_NEW_21:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 81.8%)",
+          RED_NEW_22:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 81.0%)",
+          RED_NEW_23:
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 80.2%)",
+          RED_NEW_24:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 79.4%)",
+          RED_NEW_25:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 78.6%)",
+          RED_NEW_26:
+            "hsl(3, calc(var(--saturation-factor, 1) * 98.2%), 77.6%)",
+          RED_NEW_27:
+            "hsl(3, calc(var(--saturation-factor, 1) * 96.7%), 76.5%)",
+          RED_NEW_28:
+            "hsl(3, calc(var(--saturation-factor, 1) * 95.2%), 75.5%)",
+          RED_NEW_29:
+            "hsl(3, calc(var(--saturation-factor, 1) * 92.4%), 74.3%)",
+          RED_NEW_3:
+            "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 98.0%)",
           RED_NEW_30:
-            "hsl(2, calc(var(--saturation-factor, 1) * 84.6%), 69.4%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 91.2%), 73.3%)",
           RED_NEW_31:
-            "hsl(1, calc(var(--saturation-factor, 1) * 83.7%), 68.6%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 88.7%), 72.4%)",
           RED_NEW_32:
-            "hsl(1, calc(var(--saturation-factor, 1) * 81.8%), 67.6%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 87.7%), 71.4%)",
           RED_NEW_33:
-            "hsl(1, calc(var(--saturation-factor, 1) * 81.1%), 66.9%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 85.5%), 70.2%)",
           RED_NEW_34:
-            "hsl(1, calc(var(--saturation-factor, 1) * 79.3%), 65.9%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 84.7%), 69.2%)",
           RED_NEW_35:
-            "hsl(1, calc(var(--saturation-factor, 1) * 78.7%), 65.1%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 82.8%), 68.0%)",
           RED_NEW_36:
-            "hsl(0, calc(var(--saturation-factor, 1) * 77.0%), 64.1%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 81.0%), 67.1%)",
           RED_NEW_37:
-            "hsl(0, calc(var(--saturation-factor, 1) * 75.5%), 63.1%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 79.3%), 65.9%)",
           RED_NEW_38:
-            "hsl(0, calc(var(--saturation-factor, 1) * 75.0%), 62.4%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 77.8%), 64.7%)",
           RED_NEW_39:
-            "hsl(360, calc(var(--saturation-factor, 1) * 73.6%), 61.4%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 76.2%), 63.7%)",
           RED_NEW_4:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 89.0%)",
+            "hsl(8, calc(var(--saturation-factor, 1) * 100.0%), 97.1%)",
           RED_NEW_40:
-            "hsl(359, calc(var(--saturation-factor, 1) * 72.4%), 60.2%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 74.9%), 62.5%)",
           RED_NEW_41:
-            "hsl(359, calc(var(--saturation-factor, 1) * 72.1%), 59.2%)",
+            "hsl(360, calc(var(--saturation-factor, 1) * 73.7%), 61.2%)",
           RED_NEW_42:
-            "hsl(359, calc(var(--saturation-factor, 1) * 70.9%), 58.2%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 72.5%), 60.0%)",
           RED_NEW_43:
-            "hsl(358, calc(var(--saturation-factor, 1) * 69.9%), 57.1%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 71.6%), 58.6%)",
           RED_NEW_44:
-            "hsl(358, calc(var(--saturation-factor, 1) * 68.9%), 55.9%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 69.7%), 57.3%)",
           RED_NEW_45:
-            "hsl(358, calc(var(--saturation-factor, 1) * 67.8%), 54.9%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 68.9%), 55.9%)",
           RED_NEW_46:
-            "hsl(357, calc(var(--saturation-factor, 1) * 66.9%), 53.7%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 67.4%), 54.3%)",
           RED_NEW_47:
-            "hsl(357, calc(var(--saturation-factor, 1) * 66.1%), 52.5%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 66.5%), 53.1%)",
           RED_NEW_48:
-            "hsl(356, calc(var(--saturation-factor, 1) * 65.5%), 51.2%)",
+            "hsl(356, calc(var(--saturation-factor, 1) * 66.0%), 51.6%)",
           RED_NEW_49:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.7%), 50.0%)",
           RED_NEW_5:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 88.2%)",
+            "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 96.1%)",
           RED_NEW_50:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.7%), 50.0%)",
           RED_NEW_51:
@@ -25956,101 +25930,100 @@
           RED_NEW_52:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.1%), 48.0%)",
           RED_NEW_53:
-            "hsl(356, calc(var(--saturation-factor, 1) * 63.5%), 47.3%)",
+            "hsl(356, calc(var(--saturation-factor, 1) * 63.3%), 47.1%)",
           RED_NEW_54:
             "hsl(356, calc(var(--saturation-factor, 1) * 63.4%), 46.1%)",
           RED_NEW_55:
-            "hsl(356, calc(var(--saturation-factor, 1) * 62.8%), 45.3%)",
+            "hsl(356, calc(var(--saturation-factor, 1) * 62.6%), 45.1%)",
           RED_NEW_56:
             "hsl(356, calc(var(--saturation-factor, 1) * 62.7%), 44.1%)",
           RED_NEW_57:
-            "hsl(356, calc(var(--saturation-factor, 1) * 62.0%), 43.3%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 62.0%), 43.3%)",
           RED_NEW_58:
-            "hsl(357, calc(var(--saturation-factor, 1) * 62.0%), 42.4%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 61.9%), 42.2%)",
           RED_NEW_59:
             "hsl(357, calc(var(--saturation-factor, 1) * 61.1%), 41.4%)",
           RED_NEW_6:
-            "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 87.5%)",
+            "hsl(7, calc(var(--saturation-factor, 1) * 100.0%), 95.1%)",
           RED_NEW_60:
             "hsl(357, calc(var(--saturation-factor, 1) * 61.2%), 40.4%)",
           RED_NEW_61:
-            "hsl(358, calc(var(--saturation-factor, 1) * 60.4%), 39.6%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 61.0%), 39.2%)",
           RED_NEW_62:
-            "hsl(357, calc(var(--saturation-factor, 1) * 60.4%), 38.6%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 60.2%), 38.4%)",
           RED_NEW_63:
             "hsl(357, calc(var(--saturation-factor, 1) * 60.2%), 37.5%)",
           RED_NEW_64:
-            "hsl(358, calc(var(--saturation-factor, 1) * 59.4%), 36.7%)",
+            "hsl(357, calc(var(--saturation-factor, 1) * 60.2%), 36.5%)",
           RED_NEW_65:
-            "hsl(358, calc(var(--saturation-factor, 1) * 59.3%), 35.7%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 59.1%), 35.5%)",
           RED_NEW_66:
-            "hsl(358, calc(var(--saturation-factor, 1) * 59.3%), 34.7%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 59.1%), 34.5%)",
           RED_NEW_67:
-            "hsl(358, calc(var(--saturation-factor, 1) * 59.3%), 33.7%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 59.1%), 33.5%)",
           RED_NEW_68:
-            "hsl(358, calc(var(--saturation-factor, 1) * 58.3%), 32.9%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 59.0%), 32.5%)",
           RED_NEW_69:
-            "hsl(359, calc(var(--saturation-factor, 1) * 58.3%), 32.0%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 58.0%), 31.8%)",
           RED_NEW_7:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 86.9%)",
+            "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 94.3%)",
           RED_NEW_70:
-            "hsl(359, calc(var(--saturation-factor, 1) * 58.2%), 31.0%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 58.0%), 30.8%)",
           RED_NEW_71:
-            "hsl(359, calc(var(--saturation-factor, 1) * 58.2%), 30.0%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 57.9%), 29.8%)",
           RED_NEW_72:
-            "hsl(359, calc(var(--saturation-factor, 1) * 58.1%), 29.0%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 57.8%), 28.8%)",
           RED_NEW_73:
-            "hsl(359, calc(var(--saturation-factor, 1) * 58.0%), 28.0%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 57.7%), 27.8%)",
           RED_NEW_74:
-            "hsl(359, calc(var(--saturation-factor, 1) * 56.8%), 27.3%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 57.7%), 26.9%)",
           RED_NEW_75:
-            "hsl(359, calc(var(--saturation-factor, 1) * 56.7%), 26.3%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 57.6%), 25.9%)",
           RED_NEW_76:
-            "hsl(359, calc(var(--saturation-factor, 1) * 56.9%), 25.5%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 56.6%), 25.3%)",
           RED_NEW_77:
-            "hsl(359, calc(var(--saturation-factor, 1) * 56.8%), 24.5%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.5%), 24.3%)",
           RED_NEW_78:
-            "hsl(359, calc(var(--saturation-factor, 1) * 56.7%), 23.5%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.3%), 23.3%)",
           RED_NEW_79:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.5%), 22.5%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.1%), 22.4%)",
           RED_NEW_8:
-            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 86.1%)",
+            "hsl(5, calc(var(--saturation-factor, 1) * 100.0%), 93.3%)",
           RED_NEW_80:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.8%), 21.8%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.4%), 21.6%)",
           RED_NEW_81:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.6%), 20.8%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.2%), 20.6%)",
           RED_NEW_82:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.9%), 20.0%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.0%), 19.6%)",
           RED_NEW_83:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.7%), 19.0%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.3%), 18.8%)",
           RED_NEW_84:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.5%), 18.0%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 56.0%), 17.8%)",
           RED_NEW_85:
-            "hsl(0, calc(var(--saturation-factor, 1) * 56.8%), 17.3%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 58.1%), 16.9%)",
           RED_NEW_86:
-            "hsl(0, calc(var(--saturation-factor, 1) * 57.1%), 16.5%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 58.0%), 15.9%)",
           RED_NEW_87:
-            "hsl(0, calc(var(--saturation-factor, 1) * 57.0%), 15.5%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 58.4%), 15.1%)",
           RED_NEW_88:
-            "hsl(0, calc(var(--saturation-factor, 1) * 57.3%), 14.7%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 58.9%), 14.3%)",
           RED_NEW_89:
-            "hsl(1, calc(var(--saturation-factor, 1) * 60.0%), 13.7%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 58.8%), 13.3%)",
           RED_NEW_9:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 85.5%)",
+            "hsl(6, calc(var(--saturation-factor, 1) * 100.0%), 92.4%)",
           RED_NEW_90:
-            "hsl(2, calc(var(--saturation-factor, 1) * 60.0%), 12.7%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 59.4%), 12.5%)",
           RED_NEW_91:
-            "hsl(2, calc(var(--saturation-factor, 1) * 60.7%), 12.0%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 60.0%), 11.8%)",
           RED_NEW_92:
-            "hsl(2, calc(var(--saturation-factor, 1) * 61.4%), 11.2%)",
-          RED_NEW_93:
-            "hsl(2, calc(var(--saturation-factor, 1) * 62.3%), 10.4%)",
-          RED_NEW_94: "hsl(2, calc(var(--saturation-factor, 1) * 62.5%), 9.4%)",
-          RED_NEW_95: "hsl(0, calc(var(--saturation-factor, 1) * 62.8%), 8.4%)",
-          RED_NEW_96: "hsl(2, calc(var(--saturation-factor, 1) * 67.6%), 7.3%)",
-          RED_NEW_97: "hsl(3, calc(var(--saturation-factor, 1) * 67.7%), 6.1%)",
-          RED_NEW_98: "hsl(0, calc(var(--saturation-factor, 1) * 68.0%), 4.9%)",
-          RED_NEW_99: "hsl(5, calc(var(--saturation-factor, 1) * 75.0%), 3.1%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 60.7%), 11.0%)",
+          RED_NEW_93: "hsl(2, calc(var(--saturation-factor, 1) * 64.0%), 9.8%)",
+          RED_NEW_94: "hsl(2, calc(var(--saturation-factor, 1) * 64.4%), 8.8%)",
+          RED_NEW_95: "hsl(2, calc(var(--saturation-factor, 1) * 65.0%), 7.8%)",
+          RED_NEW_96: "hsl(0, calc(var(--saturation-factor, 1) * 65.7%), 6.9%)",
+          RED_NEW_97: "hsl(3, calc(var(--saturation-factor, 1) * 71.4%), 5.5%)",
+          RED_NEW_98: "hsl(0, calc(var(--saturation-factor, 1) * 71.4%), 4.1%)",
+          RED_NEW_99: "hsl(0, calc(var(--saturation-factor, 1) * 63.6%), 2.2%)",
           REDDIT: "hsl(16, calc(var(--saturation-factor, 1) * 100.0%), 50.0%)",
           RIOT_GAMES:
             "hsl(349, calc(var(--saturation-factor, 1) * 100.0%), 45.9%)",
@@ -26149,97 +26122,97 @@
           TEAL_860: "hsl(188, calc(var(--saturation-factor, 1) * 85.2%), 5.3%)",
           TEAL_900: "hsl(189, calc(var(--saturation-factor, 1) * 90.9%), 4.3%)",
           TEAL_NEW_1:
-            "hsl(183, calc(var(--saturation-factor, 1) * 30.3%), 87.1%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           TEAL_NEW_10:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.6%), 77.1%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.2%), 87.5%)",
           TEAL_NEW_100:
-            "hsl(180, calc(var(--saturation-factor, 1) * 33.3%), 0.6%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           TEAL_NEW_11:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.7%), 75.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 32.4%), 86.1%)",
           TEAL_NEW_12:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.2%), 74.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.6%), 84.5%)",
           TEAL_NEW_13:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 73.7%)",
+            "hsl(187, calc(var(--saturation-factor, 1) * 31.8%), 83.3%)",
           TEAL_NEW_14:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.4%), 72.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 31.2%), 81.8%)",
           TEAL_NEW_15:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.0%), 71.6%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 80.6%)",
           TEAL_NEW_16:
-            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 70.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 79.0%)",
           TEAL_NEW_17:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.2%), 69.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.6%), 77.6%)",
           TEAL_NEW_18:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.9%), 68.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 76.3%)",
           TEAL_NEW_19:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.0%), 67.1%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.2%), 74.9%)",
           TEAL_NEW_2:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 85.9%)",
+            "hsl(200, calc(var(--saturation-factor, 1) * 42.9%), 98.6%)",
           TEAL_NEW_20:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.0%), 65.9%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 73.7%)",
           TEAL_NEW_21:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 64.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.0%), 72.2%)",
           TEAL_NEW_22:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 63.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 71.0%)",
           TEAL_NEW_23:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 62.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 69.4%)",
           TEAL_NEW_24:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 61.6%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.3%), 68.0%)",
           TEAL_NEW_25:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.7%), 60.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 66.7%)",
           TEAL_NEW_26:
-            "hsl(186, calc(var(--saturation-factor, 1) * 30.8%), 59.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 65.3%)",
           TEAL_NEW_27:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 58.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.4%), 63.9%)",
           TEAL_NEW_28:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 57.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 62.5%)",
           TEAL_NEW_29:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 55.9%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 31.0%), 61.4%)",
           TEAL_NEW_3:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 84.7%)",
+            "hsl(180, calc(var(--saturation-factor, 1) * 28.6%), 97.3%)",
           TEAL_NEW_30:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 54.7%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 30.7%), 59.8%)",
           TEAL_NEW_31:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 53.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.1%), 58.4%)",
           TEAL_NEW_32:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 52.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.6%), 57.1%)",
           TEAL_NEW_33:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.9%), 51.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.0%), 55.7%)",
           TEAL_NEW_34:
-            "hsl(185, calc(var(--saturation-factor, 1) * 30.7%), 50.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.8%), 54.1%)",
           TEAL_NEW_35:
-            "hsl(185, calc(var(--saturation-factor, 1) * 32.0%), 49.0%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 30.8%), 52.9%)",
           TEAL_NEW_36:
-            "hsl(185, calc(var(--saturation-factor, 1) * 33.6%), 47.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.2%), 51.6%)",
           TEAL_NEW_37:
-            "hsl(186, calc(var(--saturation-factor, 1) * 36.1%), 46.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 31.0%), 50.0%)",
           TEAL_NEW_38:
-            "hsl(185, calc(var(--saturation-factor, 1) * 37.9%), 45.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 33.1%), 48.6%)",
           TEAL_NEW_39:
-            "hsl(185, calc(var(--saturation-factor, 1) * 39.8%), 44.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 35.0%), 47.1%)",
           TEAL_NEW_4:
-            "hsl(187, calc(var(--saturation-factor, 1) * 32.5%), 83.7%)",
+            "hsl(189, calc(var(--saturation-factor, 1) * 33.3%), 95.9%)",
           TEAL_NEW_40:
-            "hsl(185, calc(var(--saturation-factor, 1) * 41.8%), 43.1%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 37.3%), 45.7%)",
           TEAL_NEW_41:
-            "hsl(185, calc(var(--saturation-factor, 1) * 44.6%), 41.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 39.6%), 44.1%)",
           TEAL_NEW_42:
-            "hsl(185, calc(var(--saturation-factor, 1) * 47.6%), 40.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 42.9%), 42.5%)",
           TEAL_NEW_43:
-            "hsl(185, calc(var(--saturation-factor, 1) * 50.8%), 39.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 46.4%), 41.0%)",
           TEAL_NEW_44:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.2%), 37.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 50.0%), 39.2%)",
           TEAL_NEW_45:
-            "hsl(185, calc(var(--saturation-factor, 1) * 58.7%), 36.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 54.2%), 37.6%)",
           TEAL_NEW_46:
-            "hsl(185, calc(var(--saturation-factor, 1) * 63.6%), 34.5%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 60.2%), 35.5%)",
           TEAL_NEW_47:
-            "hsl(185, calc(var(--saturation-factor, 1) * 71.1%), 32.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 67.3%), 33.5%)",
           TEAL_NEW_48:
-            "hsl(184, calc(var(--saturation-factor, 1) * 81.8%), 30.2%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 78.3%), 30.8%)",
           TEAL_NEW_49:
             "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 27.1%)",
           TEAL_NEW_5:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.8%), 82.7%)",
+            "hsl(187, calc(var(--saturation-factor, 1) * 31.0%), 94.3%)",
           TEAL_NEW_50:
             "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 27.1%)",
           TEAL_NEW_51:
@@ -26255,21 +26228,21 @@
           TEAL_NEW_56:
             "hsl(184, calc(var(--saturation-factor, 1) * 79.1%), 26.3%)",
           TEAL_NEW_57:
-            "hsl(185, calc(var(--saturation-factor, 1) * 77.4%), 26.1%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 77.3%), 25.9%)",
           TEAL_NEW_58:
-            "hsl(184, calc(var(--saturation-factor, 1) * 75.6%), 25.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 74.2%), 25.9%)",
           TEAL_NEW_59:
             "hsl(184, calc(var(--saturation-factor, 1) * 73.6%), 25.3%)",
           TEAL_NEW_6:
-            "hsl(186, calc(var(--saturation-factor, 1) * 31.9%), 81.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 33.3%), 92.9%)",
           TEAL_NEW_60:
             "hsl(185, calc(var(--saturation-factor, 1) * 71.7%), 24.9%)",
           TEAL_NEW_61:
-            "hsl(184, calc(var(--saturation-factor, 1) * 69.6%), 24.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 69.6%), 24.5%)",
           TEAL_NEW_62:
             "hsl(184, calc(var(--saturation-factor, 1) * 68.9%), 23.9%)",
           TEAL_NEW_63:
-            "hsl(184, calc(var(--saturation-factor, 1) * 66.9%), 23.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 66.7%), 23.5%)",
           TEAL_NEW_64:
             "hsl(185, calc(var(--saturation-factor, 1) * 66.1%), 23.1%)",
           TEAL_NEW_65:
@@ -26277,77 +26250,77 @@
           TEAL_NEW_66:
             "hsl(184, calc(var(--saturation-factor, 1) * 64.3%), 22.0%)",
           TEAL_NEW_67:
-            "hsl(185, calc(var(--saturation-factor, 1) * 62.2%), 21.8%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 61.8%), 21.6%)",
           TEAL_NEW_68:
             "hsl(185, calc(var(--saturation-factor, 1) * 61.1%), 21.2%)",
           TEAL_NEW_69:
-            "hsl(185, calc(var(--saturation-factor, 1) * 60.0%), 20.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 61.5%), 20.4%)",
           TEAL_NEW_7:
-            "hsl(186, calc(var(--saturation-factor, 1) * 32.0%), 80.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 30.2%), 91.6%)",
           TEAL_NEW_70:
-            "hsl(185, calc(var(--saturation-factor, 1) * 60.8%), 20.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 60.4%), 19.8%)",
           TEAL_NEW_71:
             "hsl(185, calc(var(--saturation-factor, 1) * 59.6%), 19.4%)",
           TEAL_NEW_72:
-            "hsl(185, calc(var(--saturation-factor, 1) * 58.8%), 19.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 58.3%), 18.8%)",
           TEAL_NEW_73:
-            "hsl(184, calc(var(--saturation-factor, 1) * 57.4%), 18.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 57.0%), 18.2%)",
           TEAL_NEW_74:
-            "hsl(185, calc(var(--saturation-factor, 1) * 56.0%), 17.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 57.8%), 17.6%)",
           TEAL_NEW_75:
-            "hsl(185, calc(var(--saturation-factor, 1) * 56.8%), 17.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 56.3%), 17.1%)",
           TEAL_NEW_76:
             "hsl(185, calc(var(--saturation-factor, 1) * 55.3%), 16.7%)",
           TEAL_NEW_77:
-            "hsl(185, calc(var(--saturation-factor, 1) * 56.1%), 16.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 55.6%), 15.9%)",
           TEAL_NEW_78:
-            "hsl(184, calc(var(--saturation-factor, 1) * 54.4%), 15.5%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 54.4%), 15.5%)",
           TEAL_NEW_79:
-            "hsl(186, calc(var(--saturation-factor, 1) * 55.3%), 14.9%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 54.7%), 14.7%)",
           TEAL_NEW_8:
-            "hsl(185, calc(var(--saturation-factor, 1) * 32.1%), 79.2%)",
+            "hsl(187, calc(var(--saturation-factor, 1) * 32.0%), 90.2%)",
           TEAL_NEW_80:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.4%), 14.3%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 53.4%), 14.3%)",
           TEAL_NEW_81:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.3%), 13.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 53.6%), 13.5%)",
           TEAL_NEW_82:
             "hsl(185, calc(var(--saturation-factor, 1) * 52.2%), 13.1%)",
           TEAL_NEW_83:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.1%), 12.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 52.4%), 12.4%)",
           TEAL_NEW_84:
-            "hsl(186, calc(var(--saturation-factor, 1) * 51.6%), 12.2%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 53.3%), 11.8%)",
           TEAL_NEW_85:
-            "hsl(184, calc(var(--saturation-factor, 1) * 51.7%), 11.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 50.9%), 11.2%)",
           TEAL_NEW_86:
-            "hsl(184, calc(var(--saturation-factor, 1) * 52.7%), 10.8%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 51.9%), 10.6%)",
           TEAL_NEW_87:
-            "hsl(186, calc(var(--saturation-factor, 1) * 53.8%), 10.2%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 52.9%), 10.0%)",
           TEAL_NEW_88:
-            "hsl(185, calc(var(--saturation-factor, 1) * 51.0%), 9.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 53.2%), 9.2%)",
           TEAL_NEW_89:
-            "hsl(185, calc(var(--saturation-factor, 1) * 52.2%), 9.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 51.1%), 8.8%)",
           TEAL_NEW_9:
-            "hsl(187, calc(var(--saturation-factor, 1) * 31.5%), 78.2%)",
+            "hsl(183, calc(var(--saturation-factor, 1) * 31.0%), 88.6%)",
           TEAL_NEW_90:
-            "hsl(185, calc(var(--saturation-factor, 1) * 53.5%), 8.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 52.4%), 8.2%)",
           TEAL_NEW_91:
-            "hsl(185, calc(var(--saturation-factor, 1) * 55.0%), 7.8%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 53.8%), 7.6%)",
           TEAL_NEW_92:
-            "hsl(183, calc(var(--saturation-factor, 1) * 51.4%), 7.3%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 55.6%), 7.1%)",
           TEAL_NEW_93:
-            "hsl(183, calc(var(--saturation-factor, 1) * 52.9%), 6.7%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 51.5%), 6.5%)",
           TEAL_NEW_94:
-            "hsl(187, calc(var(--saturation-factor, 1) * 54.8%), 6.1%)",
+            "hsl(188, calc(var(--saturation-factor, 1) * 53.3%), 5.9%)",
           TEAL_NEW_95:
-            "hsl(184, calc(var(--saturation-factor, 1) * 55.6%), 5.3%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 53.8%), 5.1%)",
           TEAL_NEW_96:
-            "hsl(185, calc(var(--saturation-factor, 1) * 56.5%), 4.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 54.5%), 4.3%)",
           TEAL_NEW_97:
-            "hsl(185, calc(var(--saturation-factor, 1) * 57.9%), 3.7%)",
+            "hsl(187, calc(var(--saturation-factor, 1) * 52.9%), 3.3%)",
           TEAL_NEW_98:
-            "hsl(188, calc(var(--saturation-factor, 1) * 57.1%), 2.7%)",
+            "hsl(190, calc(var(--saturation-factor, 1) * 50.0%), 2.4%)",
           TEAL_NEW_99:
-            "hsl(192, calc(var(--saturation-factor, 1) * 55.6%), 1.8%)",
+            "hsl(180, calc(var(--saturation-factor, 1) * 33.3%), 1.2%)",
           TRANSPARENT: "transparent",
           TWITCH: "hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)",
           TWITTER: "hsl(203, calc(var(--saturation-factor, 1) * 89.1%), 53.1%)",
@@ -26433,101 +26406,101 @@
           YELLOW_900:
             "hsl(36, calc(var(--saturation-factor, 1) * 83.3%), 4.7%)",
           YELLOW_NEW_1:
-            "hsl(35, calc(var(--saturation-factor, 1) * 59.4%), 86.5%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           YELLOW_NEW_10:
-            "hsl(35, calc(var(--saturation-factor, 1) * 55.7%), 76.1%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 58.8%), 86.7%)",
           YELLOW_NEW_100:
-            "hsl(40, calc(var(--saturation-factor, 1) * 100.0%), 0.6%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           YELLOW_NEW_11:
-            "hsl(35, calc(var(--saturation-factor, 1) * 55.9%), 75.1%)",
-          YELLOW_NEW_12:
-            "hsl(35, calc(var(--saturation-factor, 1) * 54.9%), 73.9%)",
-          YELLOW_NEW_13:
-            "hsl(35, calc(var(--saturation-factor, 1) * 55.4%), 72.7%)",
-          YELLOW_NEW_14:
-            "hsl(35, calc(var(--saturation-factor, 1) * 54.5%), 71.6%)",
-          YELLOW_NEW_15:
-            "hsl(36, calc(var(--saturation-factor, 1) * 53.6%), 70.4%)",
-          YELLOW_NEW_16:
-            "hsl(35, calc(var(--saturation-factor, 1) * 53.8%), 69.4%)",
-          YELLOW_NEW_17:
-            "hsl(35, calc(var(--saturation-factor, 1) * 53.1%), 68.2%)",
-          YELLOW_NEW_18:
-            "hsl(35, calc(var(--saturation-factor, 1) * 53.3%), 67.3%)",
-          YELLOW_NEW_19:
-            "hsl(35, calc(var(--saturation-factor, 1) * 52.6%), 66.1%)",
-          YELLOW_NEW_2:
             "hsl(35, calc(var(--saturation-factor, 1) * 57.9%), 85.1%)",
+          YELLOW_NEW_12:
+            "hsl(35, calc(var(--saturation-factor, 1) * 58.5%), 83.9%)",
+          YELLOW_NEW_13:
+            "hsl(36, calc(var(--saturation-factor, 1) * 57.8%), 82.4%)",
+          YELLOW_NEW_14:
+            "hsl(35, calc(var(--saturation-factor, 1) * 57.1%), 80.8%)",
+          YELLOW_NEW_15:
+            "hsl(36, calc(var(--saturation-factor, 1) * 56.2%), 79.4%)",
+          YELLOW_NEW_16:
+            "hsl(35, calc(var(--saturation-factor, 1) * 56.8%), 78.2%)",
+          YELLOW_NEW_17:
+            "hsl(35, calc(var(--saturation-factor, 1) * 56.3%), 76.7%)",
+          YELLOW_NEW_18:
+            "hsl(35, calc(var(--saturation-factor, 1) * 55.6%), 75.3%)",
+          YELLOW_NEW_19:
+            "hsl(35, calc(var(--saturation-factor, 1) * 54.9%), 73.9%)",
+          YELLOW_NEW_2:
+            "hsl(36, calc(var(--saturation-factor, 1) * 71.4%), 98.6%)",
           YELLOW_NEW_20:
-            "hsl(34, calc(var(--saturation-factor, 1) * 52.8%), 65.1%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 54.3%), 72.5%)",
           YELLOW_NEW_21:
-            "hsl(35, calc(var(--saturation-factor, 1) * 52.2%), 63.9%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 53.7%), 71.2%)",
           YELLOW_NEW_22:
-            "hsl(35, calc(var(--saturation-factor, 1) * 51.6%), 62.7%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 53.2%), 69.8%)",
           YELLOW_NEW_23:
-            "hsl(34, calc(var(--saturation-factor, 1) * 51.5%), 62.0%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 53.7%), 68.6%)",
           YELLOW_NEW_24:
-            "hsl(35, calc(var(--saturation-factor, 1) * 51.0%), 60.8%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 53.3%), 67.3%)",
           YELLOW_NEW_25:
-            "hsl(35, calc(var(--saturation-factor, 1) * 50.5%), 59.6%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 52.9%), 65.9%)",
           YELLOW_NEW_26:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.7%), 58.6%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 52.5%), 64.5%)",
           YELLOW_NEW_27:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.0%), 57.6%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 52.1%), 63.1%)",
           YELLOW_NEW_28:
-            "hsl(34, calc(var(--saturation-factor, 1) * 49.5%), 56.5%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 51.8%), 61.8%)",
           YELLOW_NEW_29:
-            "hsl(35, calc(var(--saturation-factor, 1) * 49.8%), 55.5%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 51.2%), 60.6%)",
           YELLOW_NEW_3:
-            "hsl(36, calc(var(--saturation-factor, 1) * 58.0%), 84.1%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 62.5%), 96.9%)",
           YELLOW_NEW_30:
-            "hsl(34, calc(var(--saturation-factor, 1) * 49.4%), 54.3%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 51.0%), 59.2%)",
           YELLOW_NEW_31:
-            "hsl(34, calc(var(--saturation-factor, 1) * 48.7%), 53.3%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 50.0%), 57.6%)",
           YELLOW_NEW_32:
-            "hsl(35, calc(var(--saturation-factor, 1) * 48.4%), 52.2%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 49.5%), 56.5%)",
           YELLOW_NEW_33:
-            "hsl(34, calc(var(--saturation-factor, 1) * 48.6%), 51.2%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 49.3%), 55.1%)",
           YELLOW_NEW_34:
-            "hsl(34, calc(var(--saturation-factor, 1) * 48.0%), 50.2%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 48.9%), 53.9%)",
           YELLOW_NEW_35:
-            "hsl(34, calc(var(--saturation-factor, 1) * 49.6%), 49.0%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 48.8%), 52.5%)",
           YELLOW_NEW_36:
-            "hsl(35, calc(var(--saturation-factor, 1) * 51.0%), 48.0%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 48.4%), 51.4%)",
           YELLOW_NEW_37:
-            "hsl(34, calc(var(--saturation-factor, 1) * 53.3%), 47.1%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 48.2%), 50.0%)",
           YELLOW_NEW_38:
-            "hsl(35, calc(var(--saturation-factor, 1) * 55.6%), 45.9%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 50.0%), 48.6%)",
           YELLOW_NEW_39:
-            "hsl(35, calc(var(--saturation-factor, 1) * 57.9%), 44.7%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 52.7%), 47.3%)",
           YELLOW_NEW_4:
-            "hsl(35, calc(var(--saturation-factor, 1) * 58.6%), 82.9%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 65.2%), 95.5%)",
           YELLOW_NEW_40:
-            "hsl(34, calc(var(--saturation-factor, 1) * 59.6%), 43.7%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 54.9%), 46.1%)",
           YELLOW_NEW_41:
-            "hsl(35, calc(var(--saturation-factor, 1) * 62.2%), 42.5%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 57.9%), 44.7%)",
           YELLOW_NEW_42:
-            "hsl(35, calc(var(--saturation-factor, 1) * 64.9%), 41.4%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 60.9%), 43.1%)",
           YELLOW_NEW_43:
-            "hsl(35, calc(var(--saturation-factor, 1) * 67.8%), 40.2%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 63.6%), 42.0%)",
           YELLOW_NEW_44:
-            "hsl(35, calc(var(--saturation-factor, 1) * 71.0%), 39.2%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 67.1%), 40.6%)",
           YELLOW_NEW_45:
-            "hsl(35, calc(var(--saturation-factor, 1) * 75.1%), 37.8%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 71.7%), 38.8%)",
           YELLOW_NEW_46:
-            "hsl(35, calc(var(--saturation-factor, 1) * 79.6%), 36.5%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 75.9%), 37.5%)",
           YELLOW_NEW_47:
-            "hsl(36, calc(var(--saturation-factor, 1) * 85.4%), 34.9%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 82.4%), 35.7%)",
           YELLOW_NEW_48:
-            "hsl(36, calc(var(--saturation-factor, 1) * 91.8%), 33.3%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 90.6%), 33.5%)",
           YELLOW_NEW_49:
             "hsl(37, calc(var(--saturation-factor, 1) * 100.0%), 31.6%)",
           YELLOW_NEW_5:
-            "hsl(35, calc(var(--saturation-factor, 1) * 57.0%), 81.8%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 61.3%), 93.9%)",
           YELLOW_NEW_50:
             "hsl(37, calc(var(--saturation-factor, 1) * 100.0%), 31.6%)",
           YELLOW_NEW_51:
-            "hsl(37, calc(var(--saturation-factor, 1) * 98.7%), 31.2%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 98.7%), 31.0%)",
           YELLOW_NEW_52:
             "hsl(37, calc(var(--saturation-factor, 1) * 97.4%), 30.6%)",
           YELLOW_NEW_53:
@@ -26541,33 +26514,33 @@
           YELLOW_NEW_57:
             "hsl(36, calc(var(--saturation-factor, 1) * 93.0%), 27.8%)",
           YELLOW_NEW_58:
-            "hsl(36, calc(var(--saturation-factor, 1) * 91.4%), 27.5%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 91.4%), 27.3%)",
           YELLOW_NEW_59:
             "hsl(36, calc(var(--saturation-factor, 1) * 91.2%), 26.7%)",
           YELLOW_NEW_6:
-            "hsl(36, calc(var(--saturation-factor, 1) * 57.6%), 80.6%)",
+            "hsl(37, calc(var(--saturation-factor, 1) * 59.0%), 92.4%)",
           YELLOW_NEW_60:
             "hsl(36, calc(var(--saturation-factor, 1) * 89.6%), 26.3%)",
           YELLOW_NEW_61:
-            "hsl(36, calc(var(--saturation-factor, 1) * 89.3%), 25.7%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 89.2%), 25.5%)",
           YELLOW_NEW_62:
-            "hsl(36, calc(var(--saturation-factor, 1) * 89.1%), 25.1%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 89.0%), 24.9%)",
           YELLOW_NEW_63:
             "hsl(36, calc(var(--saturation-factor, 1) * 87.2%), 24.5%)",
           YELLOW_NEW_64:
             "hsl(36, calc(var(--saturation-factor, 1) * 86.9%), 23.9%)",
           YELLOW_NEW_65:
-            "hsl(36, calc(var(--saturation-factor, 1) * 86.6%), 23.3%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 86.4%), 23.1%)",
           YELLOW_NEW_66:
-            "hsl(36, calc(var(--saturation-factor, 1) * 86.2%), 22.7%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 86.1%), 22.5%)",
           YELLOW_NEW_67:
-            "hsl(36, calc(var(--saturation-factor, 1) * 85.8%), 22.2%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 85.7%), 22.0%)",
           YELLOW_NEW_68:
             "hsl(36, calc(var(--saturation-factor, 1) * 85.3%), 21.4%)",
           YELLOW_NEW_69:
             "hsl(36, calc(var(--saturation-factor, 1) * 84.9%), 20.8%)",
           YELLOW_NEW_7:
-            "hsl(36, calc(var(--saturation-factor, 1) * 56.2%), 79.4%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 60.9%), 91.0%)",
           YELLOW_NEW_70:
             "hsl(36, calc(var(--saturation-factor, 1) * 84.5%), 20.2%)",
           YELLOW_NEW_71:
@@ -26575,63 +26548,63 @@
           YELLOW_NEW_72:
             "hsl(36, calc(var(--saturation-factor, 1) * 83.5%), 19.0%)",
           YELLOW_NEW_73:
-            "hsl(36, calc(var(--saturation-factor, 1) * 83.0%), 18.4%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 82.8%), 18.2%)",
           YELLOW_NEW_74:
-            "hsl(36, calc(var(--saturation-factor, 1) * 82.4%), 17.8%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 82.2%), 17.6%)",
           YELLOW_NEW_75:
-            "hsl(36, calc(var(--saturation-factor, 1) * 81.8%), 17.3%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 81.6%), 17.1%)",
           YELLOW_NEW_76:
             "hsl(36, calc(var(--saturation-factor, 1) * 81.2%), 16.7%)",
           YELLOW_NEW_77:
             "hsl(35, calc(var(--saturation-factor, 1) * 80.5%), 16.1%)",
           YELLOW_NEW_78:
-            "hsl(37, calc(var(--saturation-factor, 1) * 82.1%), 15.3%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 82.1%), 15.3%)",
           YELLOW_NEW_79:
-            "hsl(36, calc(var(--saturation-factor, 1) * 81.6%), 14.9%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 81.3%), 14.7%)",
           YELLOW_NEW_8:
-            "hsl(35, calc(var(--saturation-factor, 1) * 56.4%), 78.4%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 59.3%), 89.4%)",
           YELLOW_NEW_80:
-            "hsl(36, calc(var(--saturation-factor, 1) * 80.8%), 14.3%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 80.6%), 14.1%)",
           YELLOW_NEW_81:
-            "hsl(35, calc(var(--saturation-factor, 1) * 80.0%), 13.7%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 79.7%), 13.5%)",
           YELLOW_NEW_82:
-            "hsl(36, calc(var(--saturation-factor, 1) * 81.8%), 12.9%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 81.5%), 12.7%)",
           YELLOW_NEW_83:
-            "hsl(36, calc(var(--saturation-factor, 1) * 81.0%), 12.4%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 80.6%), 12.2%)",
           YELLOW_NEW_84:
-            "hsl(36, calc(var(--saturation-factor, 1) * 80.3%), 12.0%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 80.0%), 11.8%)",
           YELLOW_NEW_85:
-            "hsl(35, calc(var(--saturation-factor, 1) * 79.3%), 11.4%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 78.9%), 11.2%)",
           YELLOW_NEW_86:
-            "hsl(35, calc(var(--saturation-factor, 1) * 81.5%), 10.6%)",
+            "hsl(36, calc(var(--saturation-factor, 1) * 81.1%), 10.4%)",
           YELLOW_NEW_87:
-            "hsl(36, calc(var(--saturation-factor, 1) * 80.8%), 10.2%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 80.4%), 10.0%)",
           YELLOW_NEW_88:
-            "hsl(35, calc(var(--saturation-factor, 1) * 79.6%), 9.6%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 79.2%), 9.4%)",
           YELLOW_NEW_89:
-            "hsl(35, calc(var(--saturation-factor, 1) * 78.3%), 9.0%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 81.8%), 8.6%)",
           YELLOW_NEW_9:
-            "hsl(36, calc(var(--saturation-factor, 1) * 55.6%), 77.1%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 60.0%), 88.2%)",
           YELLOW_NEW_90:
-            "hsl(34, calc(var(--saturation-factor, 1) * 81.4%), 8.4%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 81.0%), 8.2%)",
           YELLOW_NEW_91:
-            "hsl(36, calc(var(--saturation-factor, 1) * 80.0%), 7.8%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 79.5%), 7.6%)",
           YELLOW_NEW_92:
-            "hsl(34, calc(var(--saturation-factor, 1) * 78.9%), 7.5%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 78.4%), 7.3%)",
           YELLOW_NEW_93:
-            "hsl(34, calc(var(--saturation-factor, 1) * 82.4%), 6.7%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 81.8%), 6.5%)",
           YELLOW_NEW_94:
-            "hsl(32, calc(var(--saturation-factor, 1) * 81.3%), 6.3%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 80.0%), 5.9%)",
           YELLOW_NEW_95:
-            "hsl(31, calc(var(--saturation-factor, 1) * 79.3%), 5.7%)",
+            "hsl(31, calc(var(--saturation-factor, 1) * 77.8%), 5.3%)",
           YELLOW_NEW_96:
-            "hsl(33, calc(var(--saturation-factor, 1) * 83.3%), 4.7%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 82.6%), 4.5%)",
           YELLOW_NEW_97:
-            "hsl(30, calc(var(--saturation-factor, 1) * 80.0%), 3.9%)",
+            "hsl(30, calc(var(--saturation-factor, 1) * 77.8%), 3.5%)",
           YELLOW_NEW_98:
-            "hsl(30, calc(var(--saturation-factor, 1) * 75.0%), 3.1%)",
+            "hsl(27, calc(var(--saturation-factor, 1) * 84.6%), 2.5%)",
           YELLOW_NEW_99:
-            "hsl(30, calc(var(--saturation-factor, 1) * 80.0%), 2.0%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 71.4%), 1.4%)",
           YOUTUBE: "hsl(0, calc(var(--saturation-factor, 1) * 72.8%), 46.1%)",
         });
         t.Z = r;
@@ -26843,14 +26816,13 @@
           NON_PARSED: new Set([4, 12, 18]),
           AUTOMOD_INCIDENT_ACTIONS: new Set([36, 37, 38, 39]),
           SELF_MENTIONABLE_SYSTEM: new Set([46]),
-          SCHEDULABLE: new Set([0, 19]),
         };
       },
       149765: function (e, t, r) {
         "use strict";
         r.d(t, {
           $e: function () {
-            return L;
+            return f;
           },
           Bw: function () {
             return s;
@@ -26868,7 +26840,7 @@
             return T;
           },
           e$: function () {
-            return f;
+            return L;
           },
           fS: function () {
             return d;
@@ -27115,14 +27087,14 @@
             : function (e, t) {
                 return null == e || null == t ? e == t : e.equals(t);
               };
-        function L() {
+        function f() {
           for (var e = arguments.length, t = Array(e), r = 0; r < e; r++)
             t[r] = arguments[r];
           let n = t[0];
           for (let e = 1; e < t.length; e++) n = A(n, t[e]);
           return n;
         }
-        function f(e, t) {
+        function L(e, t) {
           return d(R(e, t), t);
         }
         function O(e, t) {
@@ -27525,7 +27497,7 @@
               N = i.unpack,
               T = i.unpack,
               d = i.type,
-              L = function () {
+              f = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = R(e, "rgb"),
@@ -27537,7 +27509,7 @@
                 return [(1 - n - o) * i, (1 - a - o) * i, (1 - _ - o) * i, o];
               };
             (u.prototype.cmyk = function () {
-              return L(this._rgb);
+              return f(this._rgb);
             }),
               (I.cmyk = function () {
                 for (var e = [], t = arguments.length; t--; )
@@ -27573,7 +27545,7 @@
                     return "cmyk";
                 },
               });
-            var f = i.unpack,
+            var L = i.unpack,
               O = i.last,
               p = function (e) {
                 return Math.round(100 * e) / 100;
@@ -27606,7 +27578,7 @@
               g = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = f(e, "hsla"),
+                var r = L(e, "hsla"),
                   n = O(e) || "lsa";
                 return (
                   (r[0] = p(r[0] || 0)),
@@ -27820,26 +27792,26 @@
                     N = l - A,
                     T = I * (1 - u),
                     d = T + R * (1 - N),
-                    L = T + R * N,
-                    f = T + R;
+                    f = T + R * N,
+                    L = T + R;
                   switch (A) {
                     case 0:
-                      (o = (e = [f, L, T])[0]), (i = e[1]), (E = e[2]);
+                      (o = (e = [L, f, T])[0]), (i = e[1]), (E = e[2]);
                       break;
                     case 1:
-                      (o = (t = [d, f, T])[0]), (i = t[1]), (E = t[2]);
+                      (o = (t = [d, L, T])[0]), (i = t[1]), (E = t[2]);
                       break;
                     case 2:
-                      (o = (r = [T, f, L])[0]), (i = r[1]), (E = r[2]);
+                      (o = (r = [T, L, f])[0]), (i = r[1]), (E = r[2]);
                       break;
                     case 3:
-                      (o = (n = [T, d, f])[0]), (i = n[1]), (E = n[2]);
+                      (o = (n = [T, d, L])[0]), (i = n[1]), (E = n[2]);
                       break;
                     case 4:
-                      (o = (a = [L, T, f])[0]), (i = a[1]), (E = a[2]);
+                      (o = (a = [f, T, L])[0]), (i = a[1]), (E = a[2]);
                       break;
                     case 5:
-                      (o = (_ = [f, T, d])[0]), (i = _[1]), (E = _[2]);
+                      (o = (_ = [L, T, d])[0]), (i = _[1]), (E = _[2]);
                   }
                 }
                 return [o, i, E, c.length > 3 ? c[3] : 1];
@@ -28061,8 +28033,8 @@
                 },
               });
             var ed = i.unpack,
-              eL = Math.min,
-              ef = Math.max,
+              ef = Math.min,
+              eL = Math.max,
               eO = i.unpack,
               ep = Math.floor,
               eh = i.unpack,
@@ -28073,8 +28045,8 @@
                 var _ = (n = ed(n, "rgb"))[0],
                   o = n[1],
                   i = n[2],
-                  E = eL(_, o, i),
-                  c = ef(_, o, i),
+                  E = ef(_, o, i),
+                  c = eL(_, o, i),
                   s = c - E;
                 return (
                   (r = c / 255),
@@ -28345,7 +28317,7 @@
                   },
                 });
               });
-            var e5 = {
+            var e6 = {
                 aliceblue: "#f0f8ff",
                 antiquewhite: "#faebd7",
                 aqua: "#00ffff",
@@ -28502,20 +28474,20 @@
                 yellow: "#ffff00",
                 yellowgreen: "#9acd32",
               },
-              e6 = i.type;
+              e5 = i.type;
             (u.prototype.name = function () {
               for (
-                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e5);
+                var e = Q(this._rgb, "rgb"), t = 0, r = Object.keys(e6);
                 t < r.length;
                 t += 1
               ) {
                 var n = r[t];
-                if (e5[n] === e) return n.toLowerCase();
+                if (e6[n] === e) return n.toLowerCase();
               }
               return e;
             }),
               (E.format.named = function (e) {
-                if (e5[(e = e.toLowerCase())]) return et(e5[e]);
+                if (e6[(e = e.toLowerCase())]) return et(e6[e]);
                 throw Error("unknown color name: " + e);
               }),
               E.autodetect.push({
@@ -28523,7 +28495,7 @@
                 test: function (e) {
                   for (var t = [], r = arguments.length - 1; r-- > 0; )
                     t[r] = arguments[r + 1];
-                  if (!t.length && "string" === e6(e) && e5[e.toLowerCase()])
+                  if (!t.length && "string" === e5(e) && e6[e.toLowerCase()])
                     return "named";
                 },
               });
@@ -28742,8 +28714,8 @@
                 ? (tN(e) || 1) * (1.055 * tA(t, 1 / 2.4) - 0.055)
                 : 12.92 * e;
             }
-            var tL = i.unpack,
-              tf = i.type;
+            var tf = i.unpack,
+              tL = i.type;
             (u.prototype.oklab = function () {
               return tu(this._rgb);
             }),
@@ -28761,7 +28733,7 @@
                 test: function () {
                   for (var e = [], t = arguments.length; t--; )
                     e[t] = arguments[t];
-                  if ("array" === tf((e = tL(e, "oklab"))) && 3 === e.length)
+                  if ("array" === tL((e = tf(e, "oklab"))) && 3 === e.length)
                     return "oklab";
                 },
               });
@@ -29133,10 +29105,10 @@
                     }
                     return 0;
                   },
-                  L = function (e) {
+                  f = function (e) {
                     return e;
                   },
-                  f = function (e) {
+                  L = function (e) {
                     return e;
                   },
                   O = function (e, n) {
@@ -29147,7 +29119,7 @@
                       var a, c;
                       c = d(e) / (i.length - 2);
                     } else c = l !== s ? (e - s) / (l - s) : 1;
-                    (c = f(c)), !n && (c = L(c)), 1 !== N && (c = t$(c, N));
+                    (c = L(c)), !n && (c = f(c)), 1 !== N && (c = t$(c, N));
                     var u = Math.floor(
                       1e4 *
                         (c = Math.min(
@@ -29217,7 +29189,7 @@
                         !u.every(function (e, t) {
                           return c[t] === e;
                         }) &&
-                          (f = function (e) {
+                          (L = function (e) {
                             if (e <= 0 || e >= 1) return e;
                             for (var t = 0; e >= u[t + 1]; ) t++;
                             var r = (e - u[t]) / (u[t + 1] - u[t]);
@@ -29244,7 +29216,7 @@
                       null == e && (e = !0),
                       (u = e),
                       p(),
-                      (L = u
+                      (f = u
                         ? function (e) {
                             for (
                               var t = O(0, !0).lab()[0],
@@ -29497,8 +29469,8 @@
               var t1 = i.type,
                 t2 = i.clip_rgb,
                 t3 = i.TWOPI,
-                t5 = Math.pow,
-                t6 = Math.sin,
+                t6 = Math.pow,
+                t5 = Math.sin,
                 t4 = Math.cos,
                 t8 = Math.floor,
                 t7 = Math.random,
@@ -29579,14 +29551,14 @@
                     var N,
                       T = o.length,
                       d = Array(T),
-                      L = Array(r),
-                      f = !0,
+                      f = Array(r),
+                      L = !0,
                       O = 0,
                       p = null;
                     (p = []).push(n);
                     for (var h = 1; h < r; h++) p.push(n + (h / r) * (a - n));
-                    for (p.push(a); f; ) {
-                      for (var S = 0; S < r; S++) L[S] = 0;
+                    for (p.push(a); L; ) {
+                      for (var S = 0; S < r; S++) f[S] = 0;
                       for (var D = 0; D < T; D++) {
                         for (
                           var C = o[D], g = Number.MAX_VALUE, P = void 0, U = 0;
@@ -29594,20 +29566,20 @@
                           U++
                         ) {
                           var M = rr(p[U] - C);
-                          M < g && ((g = M), (P = U)), L[P]++, (d[D] = P);
+                          M < g && ((g = M), (P = U)), f[P]++, (d[D] = P);
                         }
                       }
                       for (var G = Array(r), m = 0; m < r; m++) G[m] = null;
                       for (var y = 0; y < T; y++)
                         null === G[(N = d[y])] ? (G[N] = o[y]) : (G[N] += o[y]);
-                      for (var b = 0; b < r; b++) G[b] *= 1 / L[b];
-                      f = !1;
+                      for (var b = 0; b < r; b++) G[b] *= 1 / f[b];
+                      L = !1;
                       for (var v = 0; v < r; v++)
                         if (G[v] !== p[v]) {
-                          f = !0;
+                          L = !0;
                           break;
                         }
-                      (p = G), ++O > 200 && (f = !1);
+                      (p = G), ++O > 200 && (L = !1);
                     }
                     for (var w = {}, B = 0; B < r; B++) w[B] = [];
                     for (var W = 0; W < T; W++) w[(N = d[W])].push(o[W]);
@@ -30055,12 +30027,12 @@
                   ],
                 },
                 rd = 0,
-                rL = Object.keys(rT);
-              rd < rL.length;
+                rf = Object.keys(rT);
+              rd < rf.length;
               rd += 1
             ) {
-              var rf = rL[rd];
-              rT[rf.toLowerCase()] = rT[rf];
+              var rL = rf[rd];
+              rT[rL.toLowerCase()] = rT[rL];
             }
             return (
               (I.average = function (e, t, r) {
@@ -30140,10 +30112,10 @@
                 "array" === t1(a) ? (_ = a[1] - a[0]) : ((_ = 0), (a = [a, a]));
                 var i = function (i) {
                   var E = t3 * ((e + 120) / 360 + t * i),
-                    c = t5(a[0] + _ * i, n),
+                    c = t6(a[0] + _ * i, n),
                     s = ((0 !== o ? r[0] + i * o : r) * c * (1 - c)) / 2,
                     l = t4(E),
-                    u = t6(E);
+                    u = t5(E);
                   return I(
                     t2([
                       255 * (c + s * (-0.14861 * l + 1.78277 * u)),
@@ -30224,13 +30196,13 @@
                   N = (E + I) / 2,
                   T = (ri(rE(c, 2) + rE(s, 2)) + ri(rE(R, 2) + rE(A, 2))) / 2,
                   d = 0.5 * (1 - ri(rE(T, 7) / (rE(T, 7) + rE(25, 7)))),
-                  L = c * (1 + d),
-                  f = R * (1 + d),
-                  O = ri(rE(L, 2) + rE(s, 2)),
-                  p = ri(rE(f, 2) + rE(A, 2)),
+                  f = c * (1 + d),
+                  L = R * (1 + d),
+                  O = ri(rE(f, 2) + rE(s, 2)),
+                  p = ri(rE(L, 2) + rE(A, 2)),
                   h = (O + p) / 2,
-                  S = _(rl(s, L)),
-                  D = _(rl(A, f)),
+                  S = _(rl(s, f)),
+                  D = _(rl(A, L)),
                   C = S >= 0 ? S : S + 360,
                   g = D >= 0 ? D : D + 360,
                   P = ru(C - g) > 180 ? (C + g + 360) / 2 : (C + g) / 2,
@@ -30295,7 +30267,7 @@
                   return tq(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
                 },
               }),
-              (I.colors = e5),
+              (I.colors = e6),
               (I.brewer = rT),
               I
             );
@@ -30725,7 +30697,7 @@
               return n.xv;
             },
             contextLinesIntegration: function () {
-              return L.S;
+              return f.S;
             },
             continueTrace: function () {
               return n.yn;
@@ -30812,7 +30784,7 @@
               return n.aF;
             },
             getReplay: function () {
-              return f.T;
+              return L.T;
             },
             getRootSpan: function () {
               return n.Gx;
@@ -30887,7 +30859,7 @@
               return O.m;
             },
             replayIntegration: function () {
-              return f.G;
+              return L.G;
             },
             reportingObserverIntegration: function () {
               return T.y;
@@ -30996,8 +30968,8 @@
           N = r(27269),
           T = r(17411),
           d = r(453574),
-          L = r(386797),
-          f = r(616456),
+          f = r(386797),
+          L = r(616456),
           O = r(778600),
           p = r(780850),
           h = r(226483),
@@ -31012,7 +30984,7 @@
         "use strict";
         r.d(t, {
           f: function () {
-            return L;
+            return f;
           },
         });
         var n = r(469359),
@@ -31031,7 +31003,7 @@
           N = r(873567),
           T = r(454463),
           d = r(163162);
-        let L = (0, o._I)((e = {}) => {
+        let f = (0, o._I)((e = {}) => {
           let t = {
             console: !0,
             dom: !0,
@@ -31624,7 +31596,7 @@
                               ? e
                               : new Request(e, t);
                           })(t, n);
-                          L() &&
+                          f() &&
                             (([e, o] = A("Cookie", E)),
                             ([a, i] = A("Set-Cookie", r)));
                           let c = d({
@@ -31653,7 +31625,7 @@
                         !(function (e, t, r, n) {
                           if (T(e, t.status, t.responseURL)) {
                             let e, a, o;
-                            if (L()) {
+                            if (f()) {
                               try {
                                 let e =
                                   t.getResponseHeader("Set-Cookie") ||
@@ -31775,7 +31747,7 @@
             };
           return (0, u.EG)(r, { type: "http.client", handled: !1 }), r;
         }
-        function L() {
+        function f() {
           let e = (0, o.s3)();
           return !!e && !!e.getOptions().sendDefaultPii;
         }
@@ -32093,8 +32065,8 @@
           N = "",
           T = "",
           d = (I.m9.navigator && I.m9.navigator.userAgent) || "",
-          L = "",
-          f =
+          f = "",
+          L =
             (I.m9.navigator && I.m9.navigator.language) ||
             (I.m9.navigator &&
               I.m9.navigator.languages &&
@@ -32117,7 +32089,7 @@
               if (
                 ((A = e.platform || ""),
                 (T = e.architecture || ""),
-                (L = e.model || ""),
+                (f = e.model || ""),
                 (N = e.platformVersion || ""),
                 e.fullVersionList && e.fullVersionList.length > 0)
               ) {
@@ -32372,8 +32344,8 @@
                   },
                   os: { name: A, version: N, build_number: d },
                   device: {
-                    locale: f,
-                    model: L,
+                    locale: L,
+                    model: f,
                     manufacturer: d,
                     architecture: T,
                     is_emulator: !1,
@@ -32483,8 +32455,8 @@
           N = r(454463),
           T = r(163162),
           d = r(408720),
-          L = r(515737),
-          f = r(804410),
+          f = r(515737),
+          L = r(804410),
           O = r(376457),
           p = r(42367),
           h = r(297117),
@@ -32493,9 +32465,9 @@
           return [
             (0, n.S)(),
             (0, a.C)(),
-            (0, L.t)(),
+            (0, f.t)(),
             (0, d.f)(),
-            (0, f.k)(),
+            (0, L.k)(),
             (0, p.O)(),
             (0, _.R)(),
             (0, O.s)(),
@@ -32638,7 +32610,7 @@
             return l;
           },
           Dt: function () {
-            return L;
+            return f;
           },
           HH: function () {
             return T;
@@ -32682,7 +32654,7 @@
                   let e = i.exec(r[2]);
                   e && ((r[2] = e[1]), (r[3] = e[2]), (r[4] = e[3]));
                 }
-                let [e, t] = f(r[1] || n.Fi, r[2]);
+                let [e, t] = L(r[1] || n.Fi, r[2]);
                 return a(t, e, r[3] ? +r[3] : void 0, r[4] ? +r[4] : void 0);
               }
             },
@@ -32706,7 +32678,7 @@
                 let e = t[3],
                   r = t[1] || n.Fi;
                 return (
-                  ([r, e] = f(r, e)),
+                  ([r, e] = L(r, e)),
                   a(e, r, t[4] ? +t[4] : void 0, t[5] ? +t[5] : void 0)
                 );
               }
@@ -32741,8 +32713,8 @@
             },
           ],
           d = [E, l],
-          L = (0, n.pE)(...d),
-          f = (e, t) => {
+          f = (0, n.pE)(...d),
+          L = (e, t) => {
             let r = -1 !== e.indexOf("safari-extension"),
               a = -1 !== e.indexOf("safari-web-extension");
             return r || a
@@ -32821,8 +32793,8 @@
           N = r(467510),
           T = r(454463),
           d = r(163162),
-          L = r(119128),
-          f = r(799033);
+          f = r(119128),
+          L = r(799033);
         let O = {
             ...o.A,
             instrumentNavigation: !0,
@@ -32832,7 +32804,7 @@
             enableLongAnimationFrame: !1,
             enableInp: !0,
             _experiments: {},
-            ...f.k3,
+            ...L.k3,
           },
           p = (e = {}) => {
             (0, i.a)();
@@ -32966,7 +32938,7 @@
                             },
                           }));
                       })),
-                  U && (0, L.j)(),
+                  U && (0, f.j)(),
                   N &&
                     (function (e, t, r, n) {
                       let a;
@@ -33019,7 +32991,7 @@
                         );
                     })(C, g, P, B),
                   t && (0, a.D)(),
-                  (0, f.L7)(e, {
+                  (0, L.L7)(e, {
                     traceFetch: M,
                     traceXHR: G,
                     tracePropagationTargets:
@@ -33075,8 +33047,8 @@
           N = r(101284),
           T = r(886115),
           d = r(370541),
-          L = r(285883),
-          f = r(163162);
+          f = r(285883),
+          L = r(163162);
         let O = new WeakMap(),
           p = new Map(),
           h = { traceFetch: !0, traceXHR: !0, enableHTTPTimings: !0 };
@@ -33091,7 +33063,7 @@
             P = "function" == typeof N ? N : (e) => !0,
             U = (e) =>
               (function (e, t) {
-                let r = f.m9.location && f.m9.location.href;
+                let r = L.m9.location && L.m9.location.href;
                 if (r) {
                   let n, a;
                   try {
@@ -33162,7 +33134,7 @@
                     return;
                   }
                   let T = g(R.url),
-                    f = T ? (0, A.en)(T).host : void 0,
+                    L = T ? (0, A.en)(T).host : void 0,
                     O = !!(0, o.HN)(),
                     p =
                       N && O
@@ -33173,7 +33145,7 @@
                               "http.method": R.method,
                               "http.url": T,
                               url: R.url,
-                              "server.address": f,
+                              "server.address": L,
                               [s.S3]: "auto.http.browser",
                               [s.$J]: "http.client",
                             },
@@ -33202,12 +33174,12 @@
                         (function (e, t, r) {
                           try {
                             e.setRequestHeader("sentry-trace", t),
-                              r && e.setRequestHeader(L.bU, r);
+                              r && e.setRequestHeader(f.bU, r);
                           } catch (e) {}
                         })(
                           e,
                           s,
-                          (0, L.IQ)(c || (r ? (0, I.jC)(r) : (0, I._l)(a, t))),
+                          (0, f.IQ)(c || (r ? (0, I.jC)(r) : (0, I._l)(a, t))),
                         );
                       })(_, h, (0, i.z)() && O ? p : void 0),
                     p
@@ -33287,7 +33259,7 @@
         }
         function g(e) {
           try {
-            return new URL(e, f.m9.location.origin).href;
+            return new URL(e, L.m9.location.origin).href;
           } catch (e) {
             return;
           }
@@ -33677,8 +33649,8 @@
           N = r(151122),
           T = r(112797),
           d = r(305625),
-          L = r(820754),
-          f = r(822578);
+          f = r(820754),
+          L = r(822578);
         let O = "Not capturing exception because it's already been captured.";
         class p {
           constructor(e) {
@@ -33895,7 +33867,7 @@
               !t.integrations && _.length > 0 && (t.integrations = _),
               this.emit("preprocessEvent", e, t),
               !e.type && n.setLastEventId(e.event_id || t.event_id),
-              (0, f.R)(a, e, t, r, this, n).then((e) => {
+              (0, L.R)(a, e, t, r, this, n).then((e) => {
                 if (null === e) return e;
                 let t = {
                   ...n.getPropagationContext(),
@@ -33937,7 +33909,7 @@
               E = h(e),
               c = e.type || "error",
               l = `before send for type \`${c}\``,
-              u = void 0 === a ? void 0 : (0, L.o)(a);
+              u = void 0 === a ? void 0 : (0, f.o)(a);
             if (E && "number" == typeof u && Math.random() > u)
               return (
                 this.recordDroppedEvent("sample_rate", "error", e),
@@ -34362,7 +34334,7 @@ Reason: ${e}`))
             return u;
           },
           eW: function () {
-            return L;
+            return f;
           },
           mG: function () {
             return N;
@@ -34386,7 +34358,7 @@ Reason: ${e}`))
             return S;
           },
           yl: function () {
-            return f;
+            return L;
           },
         });
         var n = r(622916),
@@ -34425,10 +34397,10 @@ Reason: ${e}`))
         function d(e) {
           (0, o.aF)().setUser(e);
         }
-        function L() {
+        function f() {
           return (0, o.aF)().lastEventId();
         }
-        async function f(e) {
+        async function L(e) {
           let t = (0, o.s3)();
           return t
             ? t.flush(e)
@@ -34579,8 +34551,8 @@ Reason: ${e}`))
             return;
           }
           let d = (0, i.nZ)(),
-            L = (0, i.s3)(),
-            { method: f, url: O } = e.fetchData,
+            f = (0, i.s3)(),
+            { method: L, url: O } = e.fetchData,
             p = (function (e) {
               try {
                 return new URL(e).href;
@@ -34593,11 +34565,11 @@ Reason: ${e}`))
             D =
               T && S
                 ? (0, I.qp)({
-                    name: `${f} ${O}`,
+                    name: `${L} ${O}`,
                     attributes: {
                       url: O,
                       type: "fetch",
-                      "http.method": f,
+                      "http.method": L,
                       "http.url": p,
                       "server.address": h,
                       [E.S3]: N,
@@ -34608,7 +34580,7 @@ Reason: ${e}`))
           if (
             ((e.fetchData.__span = D.spanContext().spanId),
             (A[D.spanContext().spanId] = D),
-            r(e.fetchData.url) && L)
+            r(e.fetchData.url) && f)
           ) {
             let t = e.args[0];
             e.args[1] = e.args[1] || {};
@@ -34651,7 +34623,7 @@ Reason: ${e}`))
                   }
                 );
               }
-            })(t, L, d, r, (0, c.z)() && S ? D : void 0);
+            })(t, f, d, r, (0, c.z)() && S ? D : void 0);
           }
           return D;
         }
@@ -34713,7 +34685,7 @@ Reason: ${e}`))
             return l.$e;
           },
           CP: function () {
-            return f.C;
+            return L.C;
           },
           Dp: function () {
             return d.Dp;
@@ -34842,7 +34814,7 @@ Reason: ${e}`))
             return l.nZ;
           },
           n_: function () {
-            return L.n;
+            return f.n;
           },
           oi: function () {
             return E.o;
@@ -34918,8 +34890,8 @@ Reason: ${e}`))
           N = r(151122),
           T = r(971304),
           d = r(696486),
-          L = r(572299),
-          f = r(502990),
+          f = r(572299),
+          L = r(502990),
           O = r(636361),
           p = r(546453),
           h = r(116430),
@@ -35989,12 +35961,12 @@ Url: ${s(e)}`),
             I = l && (0, E.XU)(l).description,
             { unit: R, tags: A, timestamp: N } = _,
             { release: T, environment: d } = c.getOptions(),
-            L = {};
-          T && (L.release = T),
-            d && (L.environment = d),
-            I && (L.transaction = I),
+            f = {};
+          T && (f.release = T),
+            d && (f.environment = d),
+            I && (f.transaction = I),
             i.X && a.kg.log(`Adding value of ${n} to ${t} metric ${r}`),
-            u(c, e).add(t, r, n, R, { ...L, ...A }, N);
+            u(c, e).add(t, r, n, R, { ...f, ...A }, N);
         }
         function R(e, t, r, n) {
           I(e, l.g_, t, N(r), n);
@@ -36853,9 +36825,9 @@ Url: ${s(e)}`),
             N = !1,
             T = "externalFinish",
             d = !t.disableAutoFinish,
-            L = [],
+            f = [],
             {
-              idleTimeout: f = R.idleTimeout,
+              idleTimeout: L = R.idleTimeout,
               finalTimeout: O = R.finalTimeout,
               childSpanTimeout: p = R.childSpanTimeout,
               beforeSpanEnd: h,
@@ -36879,7 +36851,7 @@ Url: ${s(e)}`),
             P(),
               (r = setTimeout(() => {
                 !N && 0 === A.size && d && ((T = "idleTimeout"), g.end(e));
-              }, f));
+              }, L));
           }
           function M(e) {
             r = setTimeout(() => {
@@ -36905,7 +36877,7 @@ Url: ${s(e)}`),
             },
           });
           function G(e) {
-            (N = !0), A.clear(), L.forEach((e) => e()), (0, c.D)(D, C);
+            (N = !0), A.clear(), f.forEach((e) => e()), (0, c.D)(D, C);
             let t = (0, s.XU)(g),
               { start_timestamp: r } = t;
             if (!r) return;
@@ -36924,7 +36896,7 @@ Url: ${s(e)}`),
                   ));
               let { timestamp: r = 0, start_timestamp: n = 0 } = (0, s.XU)(t),
                 i = n <= e,
-                E = r - n <= (O + f) / 1e3;
+                E = r - n <= (O + L) / 1e3;
               if (o.X) {
                 let e = JSON.stringify(t, void 0, 2);
                 i
@@ -36943,7 +36915,7 @@ Url: ${s(e)}`),
               _ > 0 && g.setAttribute("sentry.idle_span_discarded_spans", _);
           }
           return (
-            L.push(
+            f.push(
               S.on("spanStart", (e) => {
                 if (!N && e !== g && !(0, s.XU)(e).timestamp) {
                   if ((0, s.Dp)(g).includes(e)) {
@@ -36956,16 +36928,16 @@ Url: ${s(e)}`),
                 }
               }),
             ),
-            L.push(
+            f.push(
               S.on("spanEnd", (e) => {
                 var t;
                 if (!N)
                   (t = e.spanContext().spanId),
                     A.has(t) && A.delete(t),
-                    0 === A.size && U((0, n.ph)() + f / 1e3);
+                    0 === A.size && U((0, n.ph)() + L / 1e3);
               }),
             ),
-            L.push(
+            f.push(
               S.on("idleSpanEnableAutoFinish", (e) => {
                 e === g && ((d = !0), U(), A.size && M());
               }),
@@ -37303,7 +37275,7 @@ Url: ${s(e)}`),
             t && ((0, N.I1)(this).scope || (0, i.nZ)()).captureEvent(t);
           }
           _convertSpanToTransaction() {
-            if (!L((0, u.XU)(this))) return;
+            if (!f((0, u.XU)(this))) return;
             !this._name &&
               (E.X &&
                 o.kg.warn(
@@ -37329,7 +37301,7 @@ Url: ${s(e)}`),
                     })(e),
                 )
                 .map((e) => (0, u.XU)(e))
-                .filter(L),
+                .filter(f),
               a = this._attributes[l.Zj],
               c = {
                 contexts: { trace: (0, u.HR)(this) },
@@ -37370,7 +37342,7 @@ Url: ${s(e)}`),
             (e && "number" == typeof e) || e instanceof Date || Array.isArray(e)
           );
         }
-        function L(e) {
+        function f(e) {
           return (
             !!e.start_timestamp && !!e.timestamp && !!e.span_id && !!e.trace_id
           );
@@ -37476,8 +37448,8 @@ Url: ${s(e)}`),
           N = r(966497),
           T = r(787659),
           d = r(789112),
-          L = r(275689),
-          f = r(793373),
+          f = r(275689),
+          L = r(793373),
           O = r(881243);
         let p = "__SENTRY_SUPPRESS_TRACING__";
         function h(e, t) {
@@ -37506,7 +37478,7 @@ Url: ${s(e)}`),
                     let { status: e } = (0, R.XU)(o);
                     o.isRecording() &&
                       (!e || "ok" === e) &&
-                      o.setStatus({ code: f.jt, message: "internal_error" });
+                      o.setStatus({ code: L.jt, message: "internal_error" });
                   },
                   () => o.end(),
                 )
@@ -37543,7 +37515,7 @@ Url: ${s(e)}`),
                     let { status: e } = (0, R.XU)(o);
                     o.isRecording() &&
                       (!e || "ok" === e) &&
-                      o.setStatus({ code: f.jt, message: "internal_error" });
+                      o.setStatus({ code: L.jt, message: "internal_error" });
                   },
                 )
               );
@@ -37611,7 +37583,7 @@ Url: ${s(e)}`),
               let { spanId: n, traceId: a } = e.spanContext(),
                 _ = !t.getScopeData().sdkProcessingMetadata[p] && (0, R.Tt)(e),
                 o = _
-                  ? new L.s({ ...r, parentSpanId: n, traceId: a, sampled: _ })
+                  ? new f.s({ ...r, parentSpanId: n, traceId: a, sampled: _ })
                   : new d.b({ traceId: a });
               (0, R.j5)(e, o);
               let E = (0, i.s3)();
@@ -37667,7 +37639,7 @@ Url: ${s(e)}`),
                   attributes: o,
                   transactionContext: { name: _, parentSampled: r },
                 }),
-            l = new L.s({
+            l = new f.s({
               ...e,
               attributes: { [s.Zj]: "custom", ...e.attributes },
               sampled: E,
@@ -38203,12 +38175,12 @@ Url: ${s(e)}`),
           u = r(396234);
         function I(e, t, r, I, A, N) {
           let { normalizeDepth: T = 3, normalizeMaxBreadth: d = 1e3 } = e,
-            L = {
+            f = {
               ...t,
               event_id: t.event_id || r.event_id || (0, n.DM)(),
               timestamp: t.timestamp || (0, a.yW)(),
             },
-            f = r.integrations || e.integrations.map((e) => e.name);
+            L = r.integrations || e.integrations.map((e) => e.name);
           (function (e, t) {
             let {
               environment: r,
@@ -38225,12 +38197,12 @@ Url: ${s(e)}`),
             i && i.value && (i.value = (0, _.$G)(i.value, o));
             let c = e.request;
             c && c.url && (c.url = (0, _.$G)(c.url, o));
-          })(L, e),
+          })(f, e),
             (function (e, t) {
               t.length > 0 &&
                 ((e.sdk = e.sdk || {}),
                 (e.sdk.integrations = [...(e.sdk.integrations || []), ...t]));
-            })(L, f),
+            })(f, L),
             A && A.emit("applyFrameMetadata", t),
             void 0 === t.type &&
               (function (e, t) {
@@ -38259,13 +38231,13 @@ Url: ${s(e)}`),
                     });
                   });
                 } catch (e) {}
-              })(L, e.stackParser);
+              })(f, e.stackParser);
           let O = (function (e, t) {
             if (!t) return e;
             let r = e ? e.clone() : new l.s();
             return r.update(t), r;
           })(I, r.captureContext);
-          r.mechanism && (0, n.EG)(L, r.mechanism);
+          r.mechanism && (0, n.EG)(f, r.mechanism);
           let p = A ? A.getEventProcessors() : [],
             h = (0, c.lW)().getScopeData();
           if (N) {
@@ -38277,9 +38249,9 @@ Url: ${s(e)}`),
             (0, u.yo)(h, e);
           }
           let S = [...(r.attachments || []), ...h.attachments];
-          S.length && (r.attachments = S), (0, u.gi)(L, h);
+          S.length && (r.attachments = S), (0, u.gi)(f, h);
           let D = [...p, ...h.eventProcessors];
-          return (0, s.R)(D, L, r).then((e) =>
+          return (0, s.R)(D, f, r).then((e) =>
             (e &&
               (function (e) {
                 let t = {};
@@ -38431,7 +38403,7 @@ Url: ${s(e)}`),
             return O;
           },
           XU: function () {
-            return f;
+            return L;
           },
           _4: function () {
             return p;
@@ -38469,7 +38441,7 @@ Url: ${s(e)}`),
           R = 1;
         function A(e) {
           let { spanId: t, traceId: r } = e.spanContext(),
-            { data: a, op: _, parent_span_id: o, status: i, origin: E } = f(e);
+            { data: a, op: _, parent_span_id: o, status: i, origin: E } = L(e);
           return (0, n.Jr)({
             parent_span_id: o,
             span_id: t,
@@ -38482,7 +38454,7 @@ Url: ${s(e)}`),
         }
         function N(e) {
           let { spanId: t, traceId: r } = e.spanContext(),
-            { parent_span_id: a } = f(e);
+            { parent_span_id: a } = L(e);
           return (0, n.Jr)({ parent_span_id: a, span_id: t, trace_id: r });
         }
         function T(e) {
@@ -38492,17 +38464,17 @@ Url: ${s(e)}`),
         }
         function d(e) {
           return "number" == typeof e
-            ? L(e)
+            ? f(e)
             : Array.isArray(e)
               ? e[0] + e[1] / 1e9
               : e instanceof Date
-                ? L(e.getTime())
+                ? f(e.getTime())
                 : (0, _.ph)();
         }
-        function L(e) {
+        function f(e) {
           return e > 9999999999 ? e / 1e3 : e;
         }
-        function f(e) {
+        function L(e) {
           if (
             (function (e) {
               return "function" == typeof e.getSpanJSON;
@@ -39026,7 +38998,7 @@ Url: ${s(e)}`),
             return E;
           },
           Cd: function () {
-            return L;
+            return f;
           },
           HY: function () {
             return d;
@@ -39187,7 +39159,7 @@ ${JSON.stringify(t)}
           let { name: t, version: r } = e.sdk;
           return { name: t, version: r };
         }
-        function L(e, t, r, a) {
+        function f(e, t, r, a) {
           let o =
             e.sdkProcessingMetadata &&
             e.sdkProcessingMetadata.dynamicSamplingContext;
@@ -39540,7 +39512,7 @@ Error:`,
             return l;
           },
           y1: function () {
-            return L;
+            return f;
           },
         });
         let n = Object.prototype.toString;
@@ -39614,7 +39586,7 @@ Error:`,
             return !1;
           }
         }
-        function L(e) {
+        function f(e) {
           return !!(
             "object" == typeof e &&
             null !== e &&
@@ -41144,8 +41116,8 @@ Error:`,
           N = r(108185),
           T = r(896247),
           d = r(416987);
-        let L = 0,
-          f = {};
+        let f = 0,
+          L = {};
         function O() {
           let e = (0, N.QV)();
           if (e && c.Z1) {
@@ -41157,8 +41129,8 @@ Error:`,
                   let r = (0, N.XL)(c.Z1),
                     n = (0, N.XL)(t.startTime);
                   I.X && l.kg.log("[Measurements] Adding FID"),
-                    (f.fid = { value: e.value, unit: "millisecond" }),
-                    (f["mark.fid"] = { value: r + n, unit: "second" });
+                    (L.fid = { value: e.value, unit: "millisecond" }),
+                    (L["mark.fid"] = { value: r + n, unit: "second" });
                 });
               })(),
               r = (function () {
@@ -41166,7 +41138,7 @@ Error:`,
                   let t = e.entries[e.entries.length - 1];
                   if (!!t)
                     I.X && l.kg.log("[Measurements] Adding CLS"),
-                      (f.cls = { value: e.value, unit: "" }),
+                      (L.cls = { value: e.value, unit: "" }),
                       (a = t);
                 }, !0);
               })(),
@@ -41175,7 +41147,7 @@ Error:`,
                   let t = e.entries[e.entries.length - 1];
                   if (!!t)
                     I.X && l.kg.log("[Measurements] Adding LCP"),
-                      (f.lcp = { value: e.value, unit: "millisecond" }),
+                      (L.lcp = { value: e.value, unit: "millisecond" }),
                       (n = t);
                 }, !0);
               })(),
@@ -41183,7 +41155,7 @@ Error:`,
                 return (0, A._4)(({ metric: e }) => {
                   if (!!e.entries[e.entries.length - 1])
                     I.X && l.kg.log("[Measurements] Adding TTFB"),
-                      (f.ttfb = { value: e.value, unit: "millisecond" });
+                      (L.ttfb = { value: e.value, unit: "millisecond" });
                 });
               })();
             return () => {
@@ -41272,7 +41244,7 @@ Error:`,
             o = t.getEntries(),
             { op: A, start_timestamp: O } = (0, _.XU)(e);
           if (
-            (o.slice(L).forEach((t) => {
+            (o.slice(f).forEach((t) => {
               let n = (0, N.XL)(t.startTime),
                 a = (0, N.XL)(Math.max(0, t.duration));
               if ("navigation" !== A || !O || !(r + n < O))
@@ -41332,11 +41304,11 @@ Error:`,
                     "first-paint" === t.name &&
                       o &&
                       (I.X && l.kg.log("[Measurements] Adding FP"),
-                      (f.fp = { value: t.startTime, unit: "millisecond" })),
+                      (L.fp = { value: t.startTime, unit: "millisecond" })),
                       "first-contentful-paint" === t.name &&
                         o &&
                         (I.X && l.kg.log("[Measurements] Adding FCP"),
-                        (f.fcp = { value: t.startTime, unit: "millisecond" }));
+                        (L.fcp = { value: t.startTime, unit: "millisecond" }));
                     break;
                   }
                   case "resource":
@@ -41381,7 +41353,7 @@ Error:`,
                     })(e, t, t.name, n, a, r);
                 }
             }),
-            (L = Math.max(o.length - 1, 0)),
+            (f = Math.max(o.length - 1, 0)),
             (function (e) {
               let t = R.m.navigator;
               if (!t) return;
@@ -41391,7 +41363,7 @@ Error:`,
                   e.setAttribute("effectiveConnectionType", r.effectiveType),
                 r.type && e.setAttribute("connectionType", r.type),
                 (0, N.nl)(r.rtt) &&
-                  (f["connection.rtt"] = {
+                  (L["connection.rtt"] = {
                     value: r.rtt,
                     unit: "millisecond",
                   })),
@@ -41415,9 +41387,9 @@ Error:`,
                   value: r - n,
                   unit: "millisecond",
                 }));
-            })(f),
+            })(L),
               ["fcp", "fp", "lcp"].forEach((e) => {
-                let t = f[e];
+                let t = L[e];
                 if (!t || !O || r >= O) return;
                 let n = t.value,
                   a = Math.abs((r + (0, N.XL)(n) - O) * 1e3),
@@ -41428,17 +41400,17 @@ Error:`,
                   ),
                   (t.value = a);
               });
-            let t = f["mark.fid"];
+            let t = L["mark.fid"];
             t &&
-              f.fid &&
-              ((0, N.Y)(e, t.value, t.value + (0, N.XL)(f.fid.value), {
+              L.fid &&
+              ((0, N.Y)(e, t.value, t.value + (0, N.XL)(L.fid.value), {
                 name: "first input delay",
                 op: "ui.action",
                 attributes: { [i.S3]: "auto.ui.browser.metrics" },
               }),
-              delete f["mark.fid"]),
-              !("fcp" in f) && delete f.cls,
-              Object.entries(f).forEach(([e, t]) => {
+              delete L["mark.fid"]),
+              !("fcp" in L) && delete L.cls,
+              Object.entries(L).forEach(([e, t]) => {
                 (0, E.o)(e, t.value, t.unit);
               }),
               (function (e) {
@@ -41458,7 +41430,7 @@ Error:`,
                     ));
               })(e);
           }
-          (n = void 0), (a = void 0), (f = {});
+          (n = void 0), (a = void 0), (L = {});
         }
         function C(e, t, r, n, a, _) {
           let o = _ ? t[_] : t[`${r}End`],
@@ -41512,20 +41484,20 @@ Error:`,
                   A = N[l.name],
                   T = r.getOptions(),
                   d = (0, u.XL)(i.Z1 + l.startTime),
-                  L = (0, u.XL)(e.value),
-                  f = (0, n.nZ)(),
+                  f = (0, u.XL)(e.value),
+                  L = (0, n.nZ)(),
                   O = (0, a.HN)(),
                   p = O ? (0, a.Gx)(O) : void 0,
                   h = (null != I ? R.get(I) : void 0) || p,
                   S = h
                     ? (0, a.XU)(h).description
-                    : f.getScopeData().transactionName,
-                  D = f.getUser(),
+                    : L.getScopeData().transactionName,
+                  D = L.getUser(),
                   C = r.getIntegrationByName("Replay"),
                   g = C && C.getReplayId(),
                   P = void 0 !== D ? D.email || D.id || D.ip_address : void 0;
                 try {
-                  t = f.getScopeData().contexts.profile.profile_id;
+                  t = L.getScopeData().contexts.profile.profile_id;
                 } catch (e) {}
                 let U = (0, E.Rt)(l.target),
                   M = (0, c.Jr)({
@@ -41548,7 +41520,7 @@ Error:`,
                     experimental: { standalone: !0 },
                   });
                 G.addEvent("inp", { [_.E1]: "millisecond", [_.Wb]: e.value }),
-                  G.end(d + L);
+                  G.end(d + f);
               });
             })();
             return () => {
@@ -41609,10 +41581,10 @@ Error:`,
         let n, a, _, o, i;
         r.d(t, {
           $A: function () {
-            return f;
+            return L;
           },
           PR: function () {
-            return L;
+            return f;
           },
           YF: function () {
             return h;
@@ -41641,10 +41613,10 @@ Error:`,
           N = r(288570);
         let T = {},
           d = {};
-        function L(e, t = !1) {
+        function f(e, t = !1) {
           return G("cls", e, C, n, t);
         }
-        function f(e, t = !1) {
+        function L(e, t = !1) {
           return G("lcp", e, P, _, t);
         }
         function O(e) {
@@ -42321,7 +42293,7 @@ Error:`,
         "use strict";
         r.d(t, {
           U0: function () {
-            return e6;
+            return e5;
           },
           fA: function () {
             return g;
@@ -42352,8 +42324,8 @@ Error:`,
           N = "Report a Bug",
           T = "your.email@example.org",
           d = "Email",
-          L = "What's the bug? What did you expect?",
-          f = "Description",
+          f = "What's the bug? What did you expect?",
+          L = "Description",
           O = "Your Name",
           p = "Name",
           h = "Thank you for your report!",
@@ -42498,8 +42470,8 @@ Error:`,
             emailPlaceholder: $ = T,
             formTitle: q = N,
             isRequiredLabel: J = S,
-            messageLabel: z = f,
-            messagePlaceholder: Q = L,
+            messageLabel: z = L,
+            messagePlaceholder: Q = f,
             nameLabel: Z = p,
             namePlaceholder: ee = O,
             removeScreenshotButtonLabel: et = C,
@@ -43223,8 +43195,8 @@ ${
             N,
             T,
             d,
-            L,
             f,
+            L,
             O,
             p,
             h,
@@ -43238,18 +43210,18 @@ ${
               if (
                 ((T = t.props),
                 (d = (s = D.contextType) && n[s.__c]),
-                (L = s ? (d ? d.props.value : s.__) : n),
+                (f = s ? (d ? d.props.value : s.__) : n),
                 r.__c
                   ? (N = (l = t.__c = r.__c).__ = l.__E)
                   : ("prototype" in D && D.prototype.render
-                      ? (t.__c = l = new D(T, L))
-                      : ((t.__c = l = new Z(T, L)),
+                      ? (t.__c = l = new D(T, f))
+                      : ((t.__c = l = new Z(T, f)),
                         (l.constructor = D),
                         (l.render = eu)),
                     d && d.sub(l),
                     (l.props = T),
                     l.state || (l.state = {}),
-                    (l.context = L),
+                    (l.context = f),
                     (l.__n = n),
                     (u = l.__d = !0),
                     (l.__h = []),
@@ -43273,10 +43245,10 @@ ${
                   (null == D.getDerivedStateFromProps &&
                     T !== I &&
                     null != l.componentWillReceiveProps &&
-                    l.componentWillReceiveProps(T, L),
+                    l.componentWillReceiveProps(T, f),
                   !l.__e &&
                     ((null != l.shouldComponentUpdate &&
-                      !1 === l.shouldComponentUpdate(T, l.__s, L)) ||
+                      !1 === l.shouldComponentUpdate(T, l.__s, f)) ||
                       t.__v === r.__v))
                 ) {
                   for (
@@ -43287,23 +43259,23 @@ ${
                       t.__k.forEach(function (e) {
                         e && (e.__ = t);
                       }),
-                      f = 0;
-                    f < l._sb.length;
-                    f++
+                      L = 0;
+                    L < l._sb.length;
+                    L++
                   )
-                    l.__h.push(l._sb[f]);
+                    l.__h.push(l._sb[L]);
                   (l._sb = []), l.__h.length && o.push(l);
                   break t;
                 }
                 null != l.componentWillUpdate &&
-                  l.componentWillUpdate(T, l.__s, L),
+                  l.componentWillUpdate(T, l.__s, f),
                   null != l.componentDidUpdate &&
                     l.__h.push(function () {
                       l.componentDidUpdate(I, R, A);
                     });
               }
               if (
-                ((l.context = L),
+                ((l.context = f),
                 (l.props = T),
                 (l.__P = e),
                 (l.__e = !1),
@@ -43571,18 +43543,18 @@ ${
           eN,
           eT = 0,
           ed = [],
-          eL = [],
-          ef = W,
-          eO = ef.__b,
-          ep = ef.__r,
-          eh = ef.diffed,
-          eS = ef.__c,
-          eD = ef.unmount,
-          eC = ef.__;
+          ef = [],
+          eL = W,
+          eO = eL.__b,
+          ep = eL.__r,
+          eh = eL.diffed,
+          eS = eL.__c,
+          eD = eL.unmount,
+          eC = eL.__;
         function eg(e, t) {
-          ef.__h && ef.__h(eR, e, eT || t), (eT = 0);
+          eL.__h && eL.__h(eR, e, eT || t), (eT = 0);
           var r = eR.__H || (eR.__H = { __: [], __h: [] });
-          return e >= r.__.length && r.__.push({ __V: eL }), r.__[e];
+          return e >= r.__.length && r.__.push({ __V: ef }), r.__[e];
         }
         function eP(e) {
           return (eT = 1), eU(eW, e);
@@ -43641,7 +43613,7 @@ ${
         }
         function eM(e, t) {
           var r = eg(eI++, 4);
-          !ef.__s && eB(r.__H, t) && ((r.__ = e), (r.i = t), eR.__h.push(r));
+          !eL.__s && eB(r.__H, t) && ((r.__ = e), (r.i = t), eR.__h.push(r));
         }
         function eG(e, t) {
           var r = eg(eI++, 7);
@@ -43663,16 +43635,16 @@ ${
               try {
                 e.__H.__h.forEach(ev), e.__H.__h.forEach(ew), (e.__H.__h = []);
               } catch (t) {
-                (e.__H.__h = []), ef.__e(t, e.__v);
+                (e.__H.__h = []), eL.__e(t, e.__v);
               }
         }
-        (ef.__b = function (e) {
+        (eL.__b = function (e) {
           (eR = null), eO && eO(e);
         }),
-          (ef.__ = function (e, t) {
+          (eL.__ = function (e, t) {
             t.__k && t.__k.__m && (e.__m = t.__k.__m), eC && eC(e, t);
           }),
-          (ef.__r = function (e) {
+          (eL.__r = function (e) {
             ep && ep(e), (eI = 0);
             var t = (eR = e.__c).__H;
             t &&
@@ -43681,7 +43653,7 @@ ${
                   (eR.__h = []),
                   t.__.forEach(function (e) {
                     e.__N && (e.__ = e.__N),
-                      (e.__V = eL),
+                      (e.__V = ef),
                       (e.__N = e.i = void 0);
                   }))
                 : (t.__h.forEach(ev),
@@ -43690,15 +43662,15 @@ ${
                   (eI = 0))),
               (eA = eR);
           }),
-          (ef.diffed = function (e) {
+          (eL.diffed = function (e) {
             eh && eh(e);
             var t = e.__c;
             t &&
               t.__H &&
               (t.__H.__h.length &&
-                ((1 !== ed.push(t) && eN === ef.requestAnimationFrame) ||
+                ((1 !== ed.push(t) && eN === eL.requestAnimationFrame) ||
                   (
-                    (eN = ef.requestAnimationFrame) ||
+                    (eN = eL.requestAnimationFrame) ||
                     function (e) {
                       var t,
                         r = function () {
@@ -43712,13 +43684,13 @@ ${
                   )(ey)),
               t.__H.__.forEach(function (e) {
                 e.i && (e.__H = e.i),
-                  e.__V !== eL && (e.__ = e.__V),
+                  e.__V !== ef && (e.__ = e.__V),
                   (e.i = void 0),
-                  (e.__V = eL);
+                  (e.__V = ef);
               })),
               (eA = eR = null);
           }),
-          (ef.__c = function (e, t) {
+          (eL.__c = function (e, t) {
             t.some(function (e) {
               try {
                 e.__h.forEach(ev),
@@ -43730,12 +43702,12 @@ ${
                   e.__h && (e.__h = []);
                 }),
                   (t = []),
-                  ef.__e(r, e.__v);
+                  eL.__e(r, e.__v);
               }
             }),
               eS && eS(e, t);
           }),
-          (ef.unmount = function (e) {
+          (eL.unmount = function (e) {
             eD && eD(e);
             var t,
               r = e.__c;
@@ -43749,7 +43721,7 @@ ${
                 }
               }),
               (r.__H = void 0),
-              t && ef.__e(t, r.__v));
+              t && eL.__e(t, r.__v));
           });
         var eb = "function" == typeof requestAnimationFrame;
         function ev(e) {
@@ -43787,11 +43759,11 @@ ${
               );
             },
             useDebugValue: function (e, t) {
-              ef.useDebugValue && ef.useDebugValue(t ? t(e) : e);
+              eL.useDebugValue && eL.useDebugValue(t ? t(e) : e);
             },
             useEffect: function (e, t) {
               var r = eg(eI++, 3);
-              !ef.__s &&
+              !eL.__s &&
                 eB(r.__H, t) &&
                 ((r.__ = e), (r.i = t), eR.__H.__h.push(r));
             },
@@ -43926,8 +43898,8 @@ ${
               emailPlaceholder: N,
               isEmailRequired: T,
               isNameRequired: d,
-              messageLabel: L,
-              messagePlaceholder: f,
+              messageLabel: f,
+              messagePlaceholder: L,
               nameLabel: O,
               namePlaceholder: p,
               submitButtonLabel: h,
@@ -43954,7 +43926,7 @@ ${
                   emailLabel: A,
                   isEmailRequired: T,
                   isNameRequired: d,
-                  messageLabel: L,
+                  messageLabel: f,
                   nameLabel: O,
                 });
                 return (
@@ -43966,7 +43938,7 @@ ${
                   0 === t.length
                 );
               },
-              [A, T, d, L, O],
+              [A, T, d, f, O],
             );
           return J(
             "form",
@@ -44125,7 +44097,7 @@ ${
                     __source: { fileName: eK, lineNumber: 187 },
                   },
                   J(eF, {
-                    label: L,
+                    label: f,
                     isRequiredLabel: S,
                     isRequired: !0,
                     __self: this,
@@ -44136,7 +44108,7 @@ ${
                     class: "form__input form__input--textarea",
                     id: "message",
                     name: "message",
-                    placeholder: f,
+                    placeholder: L,
                     required: !0,
                     rows: 5,
                     __self: this,
@@ -44763,7 +44735,7 @@ ${eQ}
             width: Math.abs(e.startX - e.endX),
             height: Math.abs(e.startY - e.endY),
           }),
-          e5 = (e) => {
+          e6 = (e) => {
             let t = e.clientHeight,
               r = e.clientWidth,
               n = e.width / e.height,
@@ -44774,7 +44746,7 @@ ${eQ}
               i = (t - _) / 2;
             return { startX: o, startY: i, endX: a + o, endY: _ + i };
           },
-          e6 = () => ({
+          e5 = () => ({
             name: "FeedbackScreenshot",
             setupOnce() {},
             createInput: ({ h: e, hooks: t, dialog: r, options: n }) => {
@@ -44948,10 +44920,10 @@ ${eQ}
                         endY: 0,
                       }),
                       [N, T] = t.useState(!1),
-                      [d, L] = t.useState(!1);
-                    function f() {
+                      [d, f] = t.useState(!1);
+                    function L() {
                       let e = I.current,
-                        t = e3(e5(r));
+                        t = e3(e6(r));
                       if (e) {
                         (e.width = t.width * e2),
                           (e.height = t.height * e2),
@@ -44972,26 +44944,26 @@ ${eQ}
                         });
                     }
                     function O(e, t) {
-                      T(!1), L(!0);
+                      T(!1), f(!0);
                       let r = p(t),
                         n = () => {
                           s.removeEventListener("mousemove", r),
                             s.removeEventListener("mouseup", n),
                             T(!0),
-                            L(!1);
+                            f(!1);
                         };
                       s.addEventListener("mouseup", n),
                         s.addEventListener("mousemove", r);
                     }
                     t.useEffect(() => {
-                      c.addEventListener("resize", f, !1);
+                      c.addEventListener("resize", L, !1);
                     }, []),
                       t.useEffect(() => {
                         let e = I.current;
                         if (!e) return;
                         let t = e.getContext("2d");
                         if (!t) return;
-                        let n = e3(e5(r)),
+                        let n = e3(e6(r)),
                           a = e3(R);
                         t.clearRect(0, 0, n.width, n.height),
                           (t.fillStyle = "rgba(0, 0, 0, 0.5)"),
@@ -45087,7 +45059,7 @@ ${eQ}
                         onAfterScreenshot: t.useCallback(() => {
                           n.el.style.display = "block";
                           let e = l.current;
-                          e && e.appendChild(r), f();
+                          e && e.appendChild(r), L();
                         }, []),
                         onError: t.useCallback((e) => {
                           (n.el.style.display = "block"), o(e);
@@ -45249,7 +45221,7 @@ ${eQ}
                                     e.preventDefault(),
                                       !(function () {
                                         let e = s.createElement("canvas"),
-                                          t = e3(e5(r)),
+                                          t = e3(e6(r)),
                                           n = e3(R);
                                         (e.width = n.width * e2),
                                           (e.height = n.height * e2);
@@ -45275,7 +45247,7 @@ ${eQ}
                                           (r.style.width = `${n.width}px`),
                                           (r.style.height = `${n.height}px`),
                                           _.drawImage(e, 0, 0),
-                                          f());
+                                          L());
                                       })(),
                                       T(!1);
                                   },
@@ -45384,7 +45356,7 @@ ${eQ}
                 ? r
                 : {
                     set(e) {
-                      L(() => {
+                      f(() => {
                         r.set.call(this, e);
                       }, 0),
                         _ && _.set && _.set.call(this, e);
@@ -45462,11 +45434,11 @@ ${eQ}
         function d(...e) {
           return T("requestAnimationFrame")(...e);
         }
-        function L(...e) {
+        function f(...e) {
           return T("setTimeout")(...e);
         }
-        var f =
-          (((_ = f || {})[(_["2D"] = 0)] = "2D"),
+        var L =
+          (((_ = L || {})[(_["2D"] = 0)] = "2D"),
           (_[(_.WebGL = 1)] = "WebGL"),
           (_[(_.WebGL2 = 2)] = "WebGL2"),
           _);
@@ -45817,7 +45789,7 @@ ${eQ}
                 let { base64: n, type: a, width: _, height: o } = t;
                 this.mutationCb({
                   id: r,
-                  type: f["2D"],
+                  type: L["2D"],
                   commands: [
                     { property: "clearRect", args: [0, 0, _, o] },
                     {
@@ -45871,10 +45843,10 @@ ${eQ}
                         return function (...i) {
                           return (
                             !A(this.canvas, r, n, a, !0) &&
-                              L(() => {
+                              f(() => {
                                 let r = P(i, t, this);
                                 e(this.canvas, {
-                                  type: f["2D"],
+                                  type: L["2D"],
                                   property: o,
                                   args: r,
                                 });
@@ -45889,7 +45861,7 @@ ${eQ}
                     let r = I(t.CanvasRenderingContext2D.prototype, o, {
                       set(t) {
                         e(this.canvas, {
-                          type: f["2D"],
+                          type: L["2D"],
                           property: o,
                           args: [t],
                           setter: !0,
@@ -45908,7 +45880,7 @@ ${eQ}
                   o.push(
                     ...G(
                       t.WebGLRenderingContext.prototype,
-                      f.WebGL,
+                      L.WebGL,
                       e,
                       r,
                       n,
@@ -45921,7 +45893,7 @@ ${eQ}
                     o.push(
                       ...G(
                         t.WebGL2RenderingContext.prototype,
-                        f.WebGL2,
+                        L.WebGL2,
                         e,
                         r,
                         n,
@@ -46150,8 +46122,8 @@ ${eQ}
           N,
           T = r(505676),
           d = r(507690),
-          L = r(572299),
-          f = r(263449),
+          f = r(572299),
+          L = r(263449),
           O = r(946471),
           p = r(233517),
           h = r(822578),
@@ -46411,7 +46383,7 @@ ${eQ}
           eN = /^(?:[a-z+]+:)?\/\//i,
           eT = /^www\..*/i,
           ed = /^(data:)([^,]*),(.*)/i;
-        function eL(e, t) {
+        function ef(e, t) {
           return (e || "").replace(eA, (e, r, n, a, _, o) => {
             let i = n || _ || o,
               E = r || a || "";
@@ -46431,7 +46403,7 @@ ${eQ}
             return `url(${E}${s.join("/")}${E})`;
           });
         }
-        let ef = /^[^ \t\n\r\u000c]+/,
+        let eL = /^[^ \t\n\r\u000c]+/,
           eO = /^[, \t\n\r\u000c]+/;
         function ep(e, t) {
           if (!t || "" === t.trim()) return t;
@@ -46460,7 +46432,7 @@ ${eQ}
               }
               let a = [];
               for (; n(eO), !(r >= t.length); ) {
-                let _ = n(ef);
+                let _ = n(eL);
                 if ("," === _.slice(-1))
                   (_ = ep(e, _.substring(0, _.length - 1))), a.push(_);
                 else {
@@ -46487,7 +46459,7 @@ ${eQ}
               }
               return a.join(", ");
             })(e, n);
-          else if ("style" === r) return eL(n, eh());
+          else if ("style" === r) return ef(n, eh());
           else if ("object" === t && "data" === r) return ep(e, n);
           return "function" == typeof _ ? _(r, n, a) : n;
         }
@@ -46577,8 +46549,8 @@ ${eQ}
               skipChild: N = !1,
               inlineStylesheet: T = !0,
               maskInputOptions: d = {},
-              maskAttributeFn: L,
-              maskTextFn: f,
+              maskAttributeFn: f,
+              maskTextFn: L,
               maskInputFn: O,
               slimDOMOptions: p,
               dataURLOptions: h = {},
@@ -46609,8 +46581,8 @@ ${eQ}
                   inlineStylesheet: N,
                   maskInputOptions: T = {},
                   maskTextFn: d,
-                  maskInputFn: L,
-                  dataURLOptions: f = {},
+                  maskInputFn: f,
+                  dataURLOptions: L = {},
                   inlineImages: O,
                   recordCanvas: p,
                   keepIframeSrcFn: h,
@@ -46655,8 +46627,8 @@ ${eQ}
                         inlineImages: N,
                         recordCanvas: T,
                         keepIframeSrcFn: d,
-                        newlyAddedElement: L = !1,
-                        rootId: f,
+                        newlyAddedElement: f = !1,
+                        rootId: L,
                         maskAllText: O,
                         maskTextClass: p,
                         unmaskTextClass: h,
@@ -46699,7 +46671,7 @@ ${eQ}
                         r &&
                           (delete P.rel,
                           delete P.href,
-                          (P._cssText = eL(r, t.href)));
+                          (P._cssText = ef(r, t.href)));
                     }
                     if (
                       "style" === g &&
@@ -46707,7 +46679,7 @@ ${eQ}
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
                       let t = z(e.sheet);
-                      t && (P._cssText = eL(t, eh()));
+                      t && (P._cssText = ef(t, eh()));
                     }
                     if (
                       "input" === g ||
@@ -46804,7 +46776,7 @@ ${eQ}
                       (("audio" === g || "video" === g) &&
                         ((P.rr_mediaState = e.paused ? "paused" : "played"),
                         (P.rr_mediaCurrentTime = e.currentTime)),
-                      !L &&
+                      !f &&
                         (e.scrollLeft && (P.rr_scrollLeft = e.scrollLeft),
                         e.scrollTop && (P.rr_scrollTop = e.scrollTop)),
                       C)
@@ -46832,7 +46804,7 @@ ${eQ}
                         !!("svg" === (r = e).tagName || r.ownerSVGElement) ||
                         void 0,
                       needBlock: C,
-                      rootId: f,
+                      rootId: L,
                       isCustom: _,
                     };
                   })(e, {
@@ -46843,8 +46815,8 @@ ${eQ}
                     inlineStylesheet: N,
                     maskAttributeFn: s,
                     maskInputOptions: T,
-                    maskInputFn: L,
-                    dataURLOptions: f,
+                    maskInputFn: f,
+                    dataURLOptions: L,
                     inlineImages: O,
                     recordCanvas: p,
                     keepIframeSrcFn: h,
@@ -46894,7 +46866,7 @@ ${eQ}
                           e,
                         );
                       }
-                      u = eL(u, eh());
+                      u = ef(u, eh());
                     }
                     R && (u = "SCRIPT_PLACEHOLDER");
                     let T = eP(e, n, _, a, o, r);
@@ -46941,7 +46913,7 @@ ${eQ}
                     unmaskTextSelector: R,
                     maskTextFn: d,
                     maskInputOptions: T,
-                    maskInputFn: L,
+                    maskInputFn: f,
                     rootId: D,
                   });
                 case e.CDATA_SECTION_NODE:
@@ -46968,8 +46940,8 @@ ${eQ}
               unmaskTextSelector: R,
               inlineStylesheet: T,
               maskInputOptions: d,
-              maskAttributeFn: L,
-              maskTextFn: f,
+              maskAttributeFn: f,
+              maskTextFn: L,
               maskInputFn: O,
               dataURLOptions: h,
               inlineImages: S,
@@ -47097,8 +47069,8 @@ ${eQ}
               skipChild: N,
               inlineStylesheet: T,
               maskInputOptions: d,
-              maskAttributeFn: L,
-              maskTextFn: f,
+              maskAttributeFn: f,
+              maskTextFn: L,
               maskInputFn: O,
               slimDOMOptions: p,
               dataURLOptions: h,
@@ -47172,8 +47144,8 @@ ${eQ}
                       skipChild: !1,
                       inlineStylesheet: T,
                       maskInputOptions: d,
-                      maskAttributeFn: L,
-                      maskTextFn: f,
+                      maskAttributeFn: f,
+                      maskTextFn: L,
                       maskInputFn: O,
                       slimDOMOptions: p,
                       dataURLOptions: h,
@@ -47232,8 +47204,8 @@ ${eQ}
                       skipChild: !1,
                       inlineStylesheet: T,
                       maskInputOptions: d,
-                      maskAttributeFn: L,
-                      maskTextFn: f,
+                      maskAttributeFn: f,
+                      maskTextFn: L,
                       maskInputFn: O,
                       slimDOMOptions: p,
                       dataURLOptions: h,
@@ -47603,10 +47575,10 @@ ${eQ}
           (I[(I.Pen = 1)] = "Pen"),
           (I[(I.Touch = 2)] = "Touch"),
           I);
-        function e5(e) {
+        function e6(e) {
           return "__ln" in e;
         }
-        class e6 {
+        class e5 {
           constructor() {
             (this.length = 0), (this.head = null), (this.tail = null);
           }
@@ -47698,7 +47670,7 @@ ${eQ}
                 if (this.frozen || this.locked) return;
                 let e = [],
                   t = new Set(),
-                  r = new e6(),
+                  r = new e5(),
                   n = (e) => {
                     let t = e,
                       r = -2;
@@ -48546,26 +48518,26 @@ ${eQ}
                   return;
                 let d = r;
                 if (d.classList.contains(o) || (i && d.matches(i))) return;
-                let L = e_(r),
-                  f = eo(d, N, L),
+                let f = e_(r),
+                  L = eo(d, N, f),
                   O = !1,
-                  p = ee({ maskInputOptions: E, tagName: N, type: L }),
+                  p = ee({ maskInputOptions: E, tagName: N, type: f }),
                   h = eP(r, u, R, I, A, p);
-                ("radio" === L || "checkbox" === L) && (O = r.checked),
-                  (f = et({
+                ("radio" === f || "checkbox" === f) && (O = r.checked),
+                  (L = et({
                     isMasked: h,
                     element: r,
-                    value: f,
+                    value: L,
                     maskInputFn: c,
                   })),
                   T(
                     r,
                     l
-                      ? { text: f, isChecked: O, userTriggered: s }
-                      : { text: f, isChecked: O },
+                      ? { text: L, isChecked: O, userTriggered: s }
+                      : { text: L, isChecked: O },
                   );
                 let S = r.name;
-                "radio" === L &&
+                "radio" === f &&
                   S &&
                   O &&
                   t
@@ -48575,7 +48547,7 @@ ${eQ}
                         let t = et({
                           isMasked: h,
                           element: e,
-                          value: eo(e, N, L),
+                          value: eo(e, N, f),
                           maskInputFn: c,
                         });
                         T(
@@ -48598,26 +48570,26 @@ ${eQ}
               let d = (
                   "last" === s.input ? ["change"] : ["input", "change"]
                 ).map((e) => em(e, tt(N), t)),
-                L = t.defaultView;
-              if (!L)
+                f = t.defaultView;
+              if (!f)
                 return () => {
                   d.forEach((e) => e());
                 };
-              let f = L.Object.getOwnPropertyDescriptor(
-                  L.HTMLInputElement.prototype,
+              let L = f.Object.getOwnPropertyDescriptor(
+                  f.HTMLInputElement.prototype,
                   "value",
                 ),
                 O = [
-                  [L.HTMLInputElement.prototype, "value"],
-                  [L.HTMLInputElement.prototype, "checked"],
-                  [L.HTMLSelectElement.prototype, "value"],
-                  [L.HTMLTextAreaElement.prototype, "value"],
-                  [L.HTMLSelectElement.prototype, "selectedIndex"],
-                  [L.HTMLOptionElement.prototype, "selected"],
+                  [f.HTMLInputElement.prototype, "value"],
+                  [f.HTMLInputElement.prototype, "checked"],
+                  [f.HTMLSelectElement.prototype, "value"],
+                  [f.HTMLTextAreaElement.prototype, "value"],
+                  [f.HTMLSelectElement.prototype, "selectedIndex"],
+                  [f.HTMLOptionElement.prototype, "selected"],
                 ];
               return (
-                f &&
-                  f.set &&
+                L &&
+                  L.set &&
                   d.push(
                     ...O.map((e) =>
                       (function e(t, r, n, a, _ = window) {
@@ -48648,7 +48620,7 @@ ${eQ}
                           },
                         },
                         !1,
-                        L,
+                        f,
                       ),
                     ),
                   ),
@@ -49337,13 +49309,13 @@ ${eQ}
                 });
           }
         }
-        class tL {
+        class tf {
           init() {}
           addShadowRoot() {}
           observeAttachShadow() {}
           reset() {}
         }
-        class tf {
+        class tL {
           constructor(e) {
             (this.shadowDoms = new WeakSet()),
               (this.restoreHandlers = []),
@@ -49554,8 +49526,8 @@ ${eQ}
             unmaskTextClass: A = null,
             maskTextSelector: N = null,
             unmaskTextSelector: T = null,
-            inlineStylesheet: L = !0,
-            maskAllInputs: f,
+            inlineStylesheet: f = !0,
+            maskAllInputs: L,
             maskInputOptions: O,
             slimDOMOptions: p,
             maskAttributeFn: h,
@@ -49595,7 +49567,7 @@ ${eQ}
           void 0 !== M && void 0 === P.mousemove && (P.mousemove = M),
             tS.reset();
           let X =
-              !0 === f
+              !0 === L
                 ? {
                     color: !0,
                     date: !0,
@@ -49766,8 +49738,8 @@ ${eQ}
             ea =
               "boolean" == typeof __RRWEB_EXCLUDE_SHADOW_DOM__ &&
               __RRWEB_EXCLUDE_SHADOW_DOM__
-                ? new tL()
-                : new tf({
+                ? new tf()
+                : new tL({
                     mutationCb: J,
                     scrollCb: z,
                     bypassOptions: {
@@ -49780,7 +49752,7 @@ ${eQ}
                       unmaskTextClass: A,
                       maskTextSelector: N,
                       unmaskTextSelector: T,
-                      inlineStylesheet: L,
+                      inlineStylesheet: f,
                       maskInputOptions: X,
                       dataURLOptions: U,
                       maskAttributeFn: h,
@@ -49833,8 +49805,8 @@ ${eQ}
                   maskTextFn: N,
                   maskInputFn: T,
                   slimDOM: d = !1,
-                  dataURLOptions: L,
-                  preserveWhiteSpace: f,
+                  dataURLOptions: f,
+                  preserveWhiteSpace: L,
                   onSerialize: O,
                   onIframeLoad: p,
                   iframeLoadTimeout: h,
@@ -49897,10 +49869,10 @@ ${eQ}
                       : !1 === d
                         ? {}
                         : d,
-                  dataURLOptions: L,
+                  dataURLOptions: f,
                   inlineImages: u,
                   recordCanvas: I,
-                  preserveWhiteSpace: f,
+                  preserveWhiteSpace: L,
                   onSerialize: O,
                   onIframeLoad: p,
                   iframeLoadTimeout: h,
@@ -49919,7 +49891,7 @@ ${eQ}
                 unmaskTextClass: A,
                 maskTextSelector: N,
                 unmaskTextSelector: T,
-                inlineStylesheet: L,
+                inlineStylesheet: f,
                 maskAllInputs: X,
                 maskAttributeFn: h,
                 maskInputFn: S,
@@ -50027,7 +49999,7 @@ ${eQ}
                     maskTextSelector: N,
                     unmaskTextSelector: T,
                     maskInputOptions: X,
-                    inlineStylesheet: L,
+                    inlineStylesheet: f,
                     sampling: P,
                     recordDOM: G,
                     recordCanvas: m,
@@ -50584,7 +50556,7 @@ ${eQ}
                 }, 0);
         }
         function tz(e) {
-          (0, L.n)(
+          (0, f.n)(
             {
               category: "console",
               data: { logger: "replay" },
@@ -50810,10 +50782,10 @@ ${eQ}
             return !1;
           }
         }
-        function t5(e) {
+        function t6(e) {
           return void 0 !== e && Math.random() < e;
         }
-        function t6(e) {
+        function t5(e) {
           let t = Date.now(),
             r = e.id || (0, y.DM)(),
             n = e.started || t,
@@ -50840,8 +50812,8 @@ ${eQ}
           { previousSessionId: n } = {},
         ) {
           var a, _;
-          let o = t6({
-            sampled: ((a = e), (_ = t), t5(a) ? "session" : !!_ && "buffer"),
+          let o = t5({
+            sampled: ((a = e), (_ = t), t6(a) ? "session" : !!_ && "buffer"),
             previousSessionId: n,
           });
           return r && t4(o), o;
@@ -50885,7 +50857,7 @@ ${eQ}
                 let t = k.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tJ("[Replay] Loading existing session", e), t6(r);
+                return tJ("[Replay] Loading existing session", e), t5(r);
               } catch (e) {
                 return null;
               }
@@ -50930,7 +50902,7 @@ ${eQ}
           } catch (n) {
             let t = n && n instanceof tQ ? "addEventSizeExceeded" : "addEvent";
             e.handleException(n), await e.stop({ reason: t });
-            let r = (0, f.s3)();
+            let r = (0, L.s3)();
             r && r.recordDroppedEvent("internal_sdk_error", "replay");
           }
         }
@@ -50989,7 +50961,7 @@ ${eQ}
             (n = t.name),
             !(
               (!t$ || !r.getOptions()._experiments.traceInternals) &&
-              (0, O.W)(n, (0, f.s3)())
+              (0, O.W)(n, (0, L.s3)())
             ))
           )
             e.addUpdate(() => (rc(e, [t]), !0));
@@ -51002,7 +50974,7 @@ ${eQ}
             if (e instanceof URLSearchParams)
               return t.encode(e.toString()).length;
             if (e instanceof FormData) {
-              let r = rL(e);
+              let r = rf(e);
               return t.encode(r).length;
             }
             if (e instanceof Blob) return e.size;
@@ -51018,7 +50990,7 @@ ${eQ}
           try {
             if ("string" == typeof e) return [e];
             if (e instanceof URLSearchParams) return [e.toString()];
-            if (e instanceof FormData) return [rL(e)];
+            if (e instanceof FormData) return [rf(e)];
             if (!e) return [void 0];
           } catch (t) {
             return (
@@ -51104,10 +51076,10 @@ ${eQ}
             return t.includes(_) && e[n] && (r[_] = a), r;
           }, {});
         }
-        function rL(e) {
+        function rf(e) {
           return new URLSearchParams(e).toString();
         }
-        function rf(e, t) {
+        function rL(e, t) {
           let r = (function (e, t = k.document.baseURI) {
             if (
               e.startsWith("http://") ||
@@ -51142,8 +51114,8 @@ ${eQ}
               response_body_size: s,
             } = e.data,
             l =
-              rf(o, r.networkDetailAllowUrls) &&
-              !rf(o, r.networkDetailDenyUrls),
+              rL(o, r.networkDetailAllowUrls) &&
+              !rL(o, r.networkDetailDenyUrls),
             u = l
               ? (function (
                   { networkCaptureBodies: e, networkRequestHeaders: t },
@@ -51295,8 +51267,8 @@ ${eQ}
                 if (!E) return null;
                 if (
                   !i ||
-                  !rf(E, r.networkDetailAllowUrls) ||
-                  rf(E, r.networkDetailDenyUrls)
+                  !rL(E, r.networkDetailAllowUrls) ||
+                  rL(E, r.networkDetailDenyUrls)
                 ) {
                   let e = rN(l);
                   return {
@@ -51324,7 +51296,7 @@ ${eQ}
                     r.networkResponseHeaders,
                   ),
                   [N, T] = r.networkCaptureBodies ? rI(o) : [void 0],
-                  [d, L] = r.networkCaptureBodies
+                  [d, f] = r.networkCaptureBodies
                     ? (function (e) {
                         let t = [];
                         try {
@@ -51373,7 +51345,7 @@ ${eQ}
                         );
                       })(i)
                     : [void 0],
-                  f = rT(R, l, N),
+                  L = rT(R, l, N),
                   O = rT(A, u, d);
                 return {
                   startTimestamp: a,
@@ -51381,8 +51353,8 @@ ${eQ}
                   url: E,
                   method: c,
                   statusCode: s,
-                  request: T ? rR(f, T) : f,
-                  response: L ? rR(O, L) : O,
+                  request: T ? rR(L, T) : L,
+                  response: f ? rR(O, f) : O,
                 };
               })(e, t, r),
               a = rA("resource.xhr", n);
@@ -51433,7 +51405,7 @@ ${eQ}
                 : Object.keys(e._integrations),
           };
           e.emit("preprocessEvent", n, a);
-          let _ = await (0, h.R)(e.getOptions(), n, a, t, e, (0, f.aF)());
+          let _ = await (0, h.R)(e.getOptions(), n, a, t, e, (0, L.aF)());
           if (!_) return null;
           _.platform = _.platform || "javascript";
           let o = e.getSdkMetadata(),
@@ -51470,11 +51442,11 @@ ${eQ}
               return r;
             })({ recordingData: e, headers: { segment_id: r } }),
             { urls: u, errorIds: I, traceIds: R, initialTimestamp: A } = n,
-            N = (0, f.s3)(),
-            T = (0, f.nZ)(),
+            N = (0, L.s3)(),
+            T = (0, L.nZ)(),
             d = N && N.getTransport(),
-            L = N && N.getDsn();
-          if (!N || !d || !L || !_.sampled) return (0, w.WD)({});
+            f = N && N.getDsn();
+          if (!N || !d || !f || !_.sampled) return (0, w.WD)({});
           let O = {
               type: "replay_event",
               replay_start_timestamp: A / 1e3,
@@ -51497,7 +51469,7 @@ ${eQ}
           let h =
             ((o = p),
             (i = l),
-            (E = L),
+            (E = f),
             (c = N.getOptions().tunnel),
             (0, v.Jd)((0, v.Cd)(o, (0, v.HY)(o), c, E), [
               [{ type: "replay_event" }, o],
@@ -52157,7 +52129,7 @@ ${eQ}
                 !this._hasInitializedCoreListeners &&
                   (!(function (e) {
                     var t, r, n, a;
-                    let _ = (0, f.s3)();
+                    let _ = (0, L.s3)();
                     (0, K.O)(tB(e)),
                       (0, V.a)(
                         ((t = e),
@@ -52181,7 +52153,7 @@ ${eQ}
                         }),
                       ),
                       !(function (e) {
-                        let t = (0, f.s3)();
+                        let t = (0, L.s3)();
                         if (!!t)
                           t.on("beforeAddBreadcrumb", (t) =>
                             (function (e, t) {
@@ -52247,7 +52219,7 @@ ${eQ}
                           );
                       })(e),
                       !(function (e) {
-                        let t = (0, f.s3)();
+                        let t = (0, L.s3)();
                         try {
                           let {
                               networkDetailAllowUrls: r,
@@ -52406,7 +52378,7 @@ ${eQ}
                               E.message !== X &&
                               E.exception &&
                               !E.type &&
-                              t5(i.getOptions().errorSampleRate)) ||
+                              t6(i.getOptions().errorSampleRate)) ||
                               "session" === r.recordingMode) &&
                               (e.tags = {
                                 ...e.tags,
@@ -52735,7 +52707,7 @@ ${eQ}
                 });
               } catch (t) {
                 this.handleException(t), this.stop({ reason: "sendReplay" });
-                let e = (0, f.s3)();
+                let e = (0, L.s3)();
                 e && e.recordDroppedEvent("send_error", "replay");
               }
           }
@@ -52847,8 +52819,8 @@ ${eQ}
             networkDetailDenyUrls: N = [],
             networkCaptureBodies: T = !0,
             networkRequestHeaders: d = [],
-            networkResponseHeaders: L = [],
-            mask: f = [],
+            networkResponseHeaders: f = [],
+            mask: L = [],
             maskAttributes: O = ["title", "placeholder"],
             unmask: p = [],
             block: h = [],
@@ -52882,7 +52854,7 @@ ${eQ}
                   'input[type="file"]',
                 ]),
               };
-            })({ mask: f, unmask: p, block: h, unblock: S, ignore: D });
+            })({ mask: L, unmask: p, block: h, unblock: S, ignore: D });
             if (
               ((this._recordingOptions = {
                 maskAllInputs: c,
@@ -52948,7 +52920,7 @@ ${eQ}
                 networkDetailDenyUrls: N,
                 networkCaptureBodies: T,
                 networkRequestHeaders: rk(d),
-                networkResponseHeaders: rk(L),
+                networkResponseHeaders: rk(f),
                 beforeAddRecordingEvent: g,
                 beforeErrorSampling: P,
                 _experiments: i,
@@ -53045,7 +53017,7 @@ ${eQ}
           return [...rY, ...e.map((e) => e.toLowerCase())];
         }
         function rF() {
-          let e = (0, f.s3)();
+          let e = (0, L.s3)();
           return e && e.getIntegrationByName("Replay");
         }
       },
@@ -53100,4 +53072,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.ca5e7f29db3207d0a5b2.js.map
+//# sourceMappingURL=sentry.158de0dce6e0e54cee1c.js.map
