@@ -2,7 +2,7 @@
   <strong
     ><span class="wysiwyg-font-size-x-large"
       ><img
-        src="https://support.discord.com/hc/article_attachments/27770671961239"
+        src="https://support.discord.com/hc/article_attachments/27810407417367"
         alt="Dis_NITRO_Banners-04_Email Header Desktop 2X.png"
         width="812"
         height="406" /></span
@@ -200,7 +200,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27751684956055"
+    src="https://support.discord.com/hc/article_attachments/27810407426071"
     width="682"
     height="480"
   />
@@ -221,13 +221,13 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27472114267287"
+    src="https://support.discord.com/hc/article_attachments/27810416215319"
     width="225"
     height="486"
   />
    
   <img
-    src="https://support.discord.com/hc/article_attachments/27472121349783"
+    src="https://support.discord.com/hc/article_attachments/27810407434775"
     width="224"
     height="487"
   />
@@ -248,13 +248,13 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27472121353623"
+    src="https://support.discord.com/hc/article_attachments/27810407441175"
     width="269"
     height="582"
   />
 </p>
 <h4 id="h_01JCGK9A5ZMS8FMF4F3NYY6QD9" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Nitro 2-Week Trial Offer on Desktop</span>
+  <span style="color: #666666">Nitro 2-Week Trial Offer on Mobile</span>
 </h4>
 <p>5. Once you've successfully signed up, your trial will begin. </p>
 <h1 id="h_01JBHZ94DY89MQG9D2FDSA74Y5">Frequently Asked Questions</h1>
