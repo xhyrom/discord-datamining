@@ -15694,7 +15694,7 @@ span.clanTag_a31c43 {
 }
 .container_bc01cf {
   border-radius: 8px;
-  padding-left: 16px;
+  padding: 0 16px;
   height: 32px;
   box-sizing: border-box;
   display: flex;
@@ -15704,18 +15704,6 @@ span.clanTag_a31c43 {
 .title_bc01cf {
   color: var(--content-inventory-overlay-text-secondary);
   flex: 1;
-}
-.username_bc01cf {
-  margin-right: 4px;
-}
-.heroArt_bc01cf {
-  height: 32px;
-  width: 32px;
-  border-radius: 0 8px 8px 0;
-  background-position: right;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  margin-left: 16px;
 }
 .heroContainer_e12502 {
   height: 112px;
@@ -50785,4 +50773,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9bbeda45cb029fe521df.css.map*/
+/*# sourceMappingURL=12633.249b0269ba936b019630.css.map*/
