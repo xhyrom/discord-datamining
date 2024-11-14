@@ -6872,528 +6872,6 @@ div.modalHeader_c5e09c {
   padding-left: 4px;
   top: 2px;
 }
-.soundButtonWrapper_f40049 {
-  list-style: none;
-  position: relative;
-}
-.soundButton_f40049 {
-  box-sizing: border-box;
-  position: relative;
-  background: var(--background-secondary);
-  border-radius: var(--radius-sm);
-  height: 40px;
-  width: 148px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  border: 1px solid transparent;
-  overflow: hidden;
-  text-align: center;
-}
-.soundButtonRefresh_f40049 {
-  box-sizing: border-box;
-  position: relative;
-  background: var(--card-primary-bg);
-  border-radius: var(--radius-md);
-  height: 72px;
-  width: 102px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid var(--border-subtle);
-  overflow: hidden;
-  box-shadow:
-    0 1px 0 0 rgba(0, 0, 0, 0.2),
-    0 1px 4px 0 rgba(0, 0, 0, 0.2);
-}
-.soundButtonRefresh_f40049:hover,
-.soundButtonRefresh_f40049.focused_f40049,
-.soundButtonRefresh_f40049:active:not(:focus-within) {
-  border-color: var(--border-strong);
-}
-.soundButtonRefresh_f40049:hover .soundInfoRefresh_f40049,
-.soundButtonRefresh_f40049.focused_f40049 .soundInfoRefresh_f40049,
-.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
-  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.12);
-}
-.soundButtonRefresh_f40049:hover .buttonOverlayActionsRefresh_f40049,
-.soundButtonRefresh_f40049.focused_f40049 .buttonOverlayActionsRefresh_f40049,
-.soundButtonRefresh_f40049:active:not(:focus-within)
-  .buttonOverlayActionsRefresh_f40049 {
-  margin-top: 0;
-}
-.soundButtonRefresh_f40049:active:not(:focus-within) {
-  background: var(--card-primary-pressed-bg);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-}
-.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
-  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
-}
-.soundButtonRefresh_f40049:active:not(:focus-within) .soundNameRefresh_f40049 {
-  color: var(--header-muted);
-}
-.soundButtonRefresh_f40049:active:not(:focus-within)
-  .secondaryButtonRefresh_f40049 {
-  opacity: 0;
-  pointer-events: none;
-}
-.animated_f40049 {
-  transition:
-    height.1s ease,
-    margin-top.1s ease,
-    outline.3s ease;
-}
-.animated_f40049:active:not(:focus-within) {
-  height: 68px;
-  margin-top: 4px;
-  outline-width: 1px;
-}
-.theme-light .soundButtonRefresh_f40049 {
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 8%);
-}
-.addButton_f40049 {
-  margin: 3px;
-  display: flex;
-  align-items: center;
-}
-.plusSign_f40049 {
-  color: var(--text-muted);
-  height: 18px;
-  width: 18px;
-}
-.addButton_f40049 > * {
-  margin-right: 4px;
-}
-.soundButton_f40049.focused_f40049.hoverActiveBackground_f40049,
-.soundButton_f40049:focus-within.hoverActiveBackground_f40049,
-.soundButton_f40049:hover.hoverActiveBackground_f40049,
-.soundButtonRefresh_f40049.focused_f40049.hoverActiveBackground_f40049,
-.soundButtonRefresh_f40049:focus-within.hoverActiveBackground_f40049,
-.soundButtonRefresh_f40049:hover.hoverActiveBackground_f40049 {
-  background: var(--background-tertiary);
-}
-.soundButton_f40049.focused_f40049 .buttonOverlay_f40049,
-.soundButton_f40049:focus-within .buttonOverlay_f40049,
-.soundButton_f40049:hover .buttonOverlay_f40049,
-.soundButtonRefresh_f40049.focused_f40049 .buttonOverlay_f40049,
-.soundButtonRefresh_f40049:focus-within .buttonOverlay_f40049,
-.soundButtonRefresh_f40049:hover .buttonOverlay_f40049 {
-  opacity: 1;
-  visibility: visible;
-}
-.soundButton_f40049.focused_f40049 .addButtonOverlay_f40049,
-.soundButton_f40049:focus-within .addButtonOverlay_f40049,
-.soundButton_f40049:hover .addButtonOverlay_f40049,
-.soundButtonRefresh_f40049.focused_f40049 .addButtonOverlay_f40049,
-.soundButtonRefresh_f40049:focus-within .addButtonOverlay_f40049,
-.soundButtonRefresh_f40049:hover .addButtonOverlay_f40049 {
-  opacity: 1;
-  visibility: visible;
-}
-.soundInfo_f40049 {
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  gap: 8px;
-  overflow: hidden;
-}
-.soundInfoRefresh_f40049 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  padding: 0 8px;
-  flex-direction: column;
-  gap: 4px;
-  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
-  border-radius: 8px;
-  height: 60px;
-  transition:
-    gap.1s ease,
-    padding-bottom.1s ease;
-}
-.soundName_f40049 {
-  color: var(--header-primary);
-  flex-grow: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: break-word;
-}
-.soundName_f40049.hasEmoji_f40049 {
-  text-align: left;
-}
-.soundNameRefresh_f40049 {
-  color: var(--header-primary);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: break-word;
-}
-.soundNameRefresh_f40049.hasEmoji_f40049 {
-  -webkit-line-clamp: 1;
-  word-break: break-all;
-}
-.emoji_f40049 {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-}
-.emojiCircle_f40049 {
-  background: var(--bg-mod-subtle);
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition:
-    width.1s ease,
-    height.1s ease;
-}
-.emojiCircle_f40049 .emoji_f40049 {
-  width: 18px;
-  height: 18px;
-  transition:
-    width.3s ease,
-    height.3s ease;
-}
-.soundButtonInteractive_f40049 {
-  cursor: pointer;
-}
-.soundButtonInteractive_f40049.playing_f40049 {
-  border-color: var(--status-positive-background);
-}
-.soundButtonInteractiveRefresh_f40049 {
-  cursor: pointer;
-}
-.soundButtonInteractiveRefresh_f40049.previewing_f40049 {
-  outline: 2px solid var(--button-outline-brand-border);
-}
-.soundButtonInteractiveRefresh_f40049.playing_f40049 {
-  outline: 2px solid var(--button-outline-positive-border);
-}
-.soundButtonInteractiveRefresh_f40049.playing_f40049
-  .soundInfoRefresh_f40049.hasEmoji_f40049,
-.soundButtonInteractiveRefresh_f40049.previewing_f40049
-  .soundInfoRefresh_f40049.hasEmoji_f40049 {
-  padding-bottom: 4px;
-  gap: 0;
-}
-.soundButtonInteractiveRefresh_f40049.playing_f40049 .emojiCircle_f40049,
-.soundButtonInteractiveRefresh_f40049.previewing_f40049 .emojiCircle_f40049 {
-  width: 40px;
-  height: 40px;
-}
-.soundButtonInteractiveRefresh_f40049.playing_f40049
-  .emojiCircle_f40049
-  .emoji_f40049,
-.soundButtonInteractiveRefresh_f40049.previewing_f40049
-  .emojiCircle_f40049
-  .emoji_f40049 {
-  width: 24px;
-  height: 24px;
-}
-.buttonDisabledSecondaryActionsEnabled_f40049 {
-  cursor: default;
-}
-.buttonDisabled_f40049 {
-  pointer-events: none;
-}
-.premiumDisabled_f40049 {
-  opacity: 0.5;
-}
-.premiumDisabledRefresh_f40049 {
-  --custom-gradient-border: linear-gradient(
-      90deg,
-      var(--premium-tier-2-purple-for-gradients) 0%,
-      var(--premium-tier-2-purple-for-gradients-2) 50.24%,
-      var(--premium-tier-2-pink-for-gradients) 100%
-    )
-    border-box;
-}
-.premiumDisabledRefresh_f40049:hover,
-.premiumDisabledRefresh_f40049.focused_f40049 {
-  background:
-    linear-gradient(var(--card-primary-bg), var(--card-primary-bg)) padding-box,
-    var(--custom-gradient-border);
-}
-.premiumDisabledRefresh_f40049:hover .emojiCircle_f40049,
-.premiumDisabledRefresh_f40049.focused_f40049 .emojiCircle_f40049 {
-  background: linear-gradient(
-    90deg,
-    hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.2) 0%,
-    hsl(var(--premium-tier-2-purple-for-gradients-2-hsl) / 0.2) 50.24%,
-    hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.2) 100%
-  );
-}
-.premiumDisabledRefresh_f40049:hover .emoji_f40049,
-.premiumDisabledRefresh_f40049.focused_f40049 .emoji_f40049 {
-  opacity: 0.1;
-}
-.premiumDisabledRefresh_f40049:hover
-  .soundNameRefresh_f40049:not(.hasEmoji_f40049),
-.premiumDisabledRefresh_f40049.focused_f40049
-  .soundNameRefresh_f40049:not(.hasEmoji_f40049) {
-  opacity: 0.5;
-}
-.premiumDisabledRefresh_f40049:active:not(:focus-within) {
-  background:
-    linear-gradient(
-        var(--card-primary-pressed-bg),
-        var(--card-primary-pressed-bg)
-      )
-      padding-box,
-    var(--custom-gradient-border);
-}
-.absoluteFill_f40049 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.buttonOverlay_f40049,
-.addButtonOverlay_f40049 {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity.2s ease;
-}
-.buttonOverlayBackground_f40049 {
-  background: var(--background-secondary);
-  opacity: 0.8;
-}
-.buttonOverlayActions_f40049 {
-  padding: 0 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.buttonOverlayActionsRefresh_f40049 {
-  margin-top: -2px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  transition: margin-top.2s ease;
-}
-.secondaryButton_f40049 {
-  color: var(--interactive-normal);
-  display: flex;
-}
-.secondaryButton_f40049:focus,
-.secondaryButton_f40049:hover {
-  color: var(--interactive-hover);
-  cursor: pointer;
-}
-.secondaryButtonRefresh_f40049 {
-  color: var(--interactive-muted);
-  display: flex;
-  padding: 8px 4px 4px;
-  transition: opacity.2s ease;
-}
-.secondaryButtonRefresh_f40049:first-child {
-  padding-left: 8px;
-}
-.secondaryButtonRefresh_f40049:last-child {
-  padding-right: 8px;
-}
-.secondaryButtonRefresh_f40049:focus,
-.secondaryButtonRefresh_f40049:hover {
-  color: var(--interactive-hover);
-  cursor: pointer;
-}
-.secondaryIcon_f40049 {
-  width: 16px;
-  height: 16px;
-}
-.favoriteIconFavorite_f40049 {
-  color: var(--text-warning);
-}
-.primaryIcon_f40049 {
-  width: 20px;
-  height: 20px;
-  color: var(--interactive-active);
-  flex: 1;
-  pointer-events: none;
-}
-.primaryIconRefresh_f40049 {
-  width: 20px;
-  height: 20px;
-  color: var(--interactive-active);
-  align-self: center;
-}
-.primaryIconRefresh_f40049.hasEmoji_f40049:not(.primaryIconTopLevel_f40049) {
-  padding-bottom: 21px;
-}
-.lockIcon_f40049 {
-  pointer-events: none;
-}
-.primaryIconTopLevel_f40049 {
-  position: absolute;
-  z-index: 9999;
-}
-.unavailableTooltip_f40049 {
-  position: absolute;
-  top: 0;
-  height: 40px;
-  width: 150px;
-}
-.unavailableTooltipRefresh_f40049 {
-  position: absolute;
-  top: 0;
-  height: 72px;
-  width: 102px;
-}
-.icon_dd5a70 {
-  width: 16px;
-  height: 16px;
-}
-.sliderContainer_dd5a70 {
-  min-width: 188px;
-  display: flex;
-  padding: var(--spacing-12);
-  flex-direction: column;
-  background-color: var(--background-floating);
-  border-radius: var(--radius-sm);
-}
-.slider_dd5a70 {
-  margin-bottom: calc(-1 * var(--spacing-8));
-}
-.infoContainer_dd5a70 {
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  max-width: 300px;
-}
-.infoNitroContainer_dd5a70 {
-  position: relative;
-  background-color: var(--background-floating);
-}
-.infoNitroBackground_dd5a70 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-  z-index: 1;
-  opacity: 0.64;
-}
-.infoNitroTextContainer_dd5a70 {
-  position: relative;
-  z-index: 2;
-  padding: var(--spacing-8);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.infoNitroIcon_dd5a70 {
-  margin-right: var(--spacing-4);
-}
-.infoNitroText_dd5a70 {
-  flex: 1;
-  margin-right: var(--spacing-16);
-}
-.infoNitroBadge_dd5a70 {
-  margin-left: 0 auto;
-}
-.infoSoundContainer_dd5a70 {
-  padding: var(--spacing-12);
-  background-color: var(--background-floating);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-4);
-}
-.infoSoundInnerContainer_dd5a70 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.infoSoundIcon_dd5a70 {
-  margin-right: var(--spacing-4);
-}
-.infoExpandedSoundContainer_dd5a70 {
-  padding: var(--spacing-16);
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-16);
-  background-color: var(--background-secondary);
-  align-items: center;
-}
-.infoExpandedGuildContainer_dd5a70 {
-  padding: var(--spacing-16);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-8);
-  background-color: var(--background-secondary-alt);
-  align-items: center;
-}
-.infoExpandedGuildTitle_dd5a70 {
-  align-self: flex-start;
-}
-.infoExpandedGuildInfoContainer_dd5a70 {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-8);
-  align-items: center;
-  align-self: stretch;
-}
-.jumboContainer_f38a29 {
-  margin: 2px;
-  display: inline-flex;
-}
-.jumboButton_f38a29 {
-  display: inline-flex;
-}
-.inlineButton_f38a29 {
-  border: 1px solid var(--border-strong);
-  background: var(--card-primary-bg);
-  box-shadow:
-    0 -4px 0 0 rgba(0, 0, 0, 0.12) inset,
-    0 2px 0 0 rgba(0, 0, 0, 0.2);
-}
-.inlineButton_f38a29:hover {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.inlineButton_f38a29:active {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: var(--card-primary-pressed-bg);
-}
-.inlineButton_f38a29.playing_f38a29 {
-  border: 1px solid var(--button-outline-positive-border);
-}
-.inlineContainer_f38a29 {
-  line-height: 1.5em;
-  box-sizing: border-box;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  padding: 0 var(--spacing-4);
-  margin: 0 var(--spacing-4);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-.soundmojiEmoji_f38a29 {
-  width: 1em !important;
-  line-height: 1.5em;
-  margin-bottom: 1.5px;
-}
-.unknownSound_f38a29 {
-  height: 1em;
-  width: 1em;
-  position: relative;
-  top: 2px;
-}
-.tooltipContainer_f38a29 {
-  padding: 0;
-}
 .overflow_a82120 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -9093,12 +8571,27 @@ div.modalHeader_c5e09c {
   height: 16px;
   margin-left: 8px;
 }
-.jumpToPresentBar_cf58b5 {
-  bottom: 0;
+.barWithAppLauncherButton_cf58b5 {
   right: calc(
     16px + var(--custom-channel-textarea-text-area-height) +
       var(--custom-channel-textarea-app-launcher-button-gap)
   );
+}
+.barWithAppsDMsUI_cf58b5 {
+  right: calc(
+    16px + var(--custom-app-dm-chat-input-primary-button-width) +
+      var(--custom-channel-textarea-app-launcher-button-gap)
+  );
+}
+.barWithAppLauncherButton_cf58b5.barWithAppsDMsUI_cf58b5 {
+  right: calc(
+    16px + var(--custom-channel-textarea-text-area-height) +
+      var(--custom-app-dm-chat-input-primary-button-width) + 2 *
+      var(--custom-channel-textarea-app-launcher-button-gap)
+  );
+}
+.jumpToPresentBar_cf58b5 {
+  bottom: 0;
   border-radius: 8px 8px 0 0;
   background-color: var(--background-accent);
   opacity: 0.95;
@@ -9964,6 +9457,528 @@ div.modalHeader_c5e09c {
   position: absolute;
   top: -4px;
   right: -8px;
+}
+.soundButtonWrapper_f40049 {
+  list-style: none;
+  position: relative;
+}
+.soundButton_f40049 {
+  box-sizing: border-box;
+  position: relative;
+  background: var(--background-secondary);
+  border-radius: var(--radius-sm);
+  height: 40px;
+  width: 148px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 1px solid transparent;
+  overflow: hidden;
+  text-align: center;
+}
+.soundButtonRefresh_f40049 {
+  box-sizing: border-box;
+  position: relative;
+  background: var(--card-primary-bg);
+  border-radius: var(--radius-md);
+  height: 72px;
+  width: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 0 rgba(0, 0, 0, 0.2),
+    0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.soundButtonRefresh_f40049:hover,
+.soundButtonRefresh_f40049.focused_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within) {
+  border-color: var(--border-strong);
+}
+.soundButtonRefresh_f40049:hover .soundInfoRefresh_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .soundInfoRefresh_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.12);
+}
+.soundButtonRefresh_f40049:hover .buttonOverlayActionsRefresh_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .buttonOverlayActionsRefresh_f40049,
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .buttonOverlayActionsRefresh_f40049 {
+  margin-top: 0;
+}
+.soundButtonRefresh_f40049:active:not(:focus-within) {
+  background: var(--card-primary-pressed-bg);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
+}
+.soundButtonRefresh_f40049:active:not(:focus-within) .soundNameRefresh_f40049 {
+  color: var(--header-muted);
+}
+.soundButtonRefresh_f40049:active:not(:focus-within)
+  .secondaryButtonRefresh_f40049 {
+  opacity: 0;
+  pointer-events: none;
+}
+.animated_f40049 {
+  transition:
+    height.1s ease,
+    margin-top.1s ease,
+    outline.3s ease;
+}
+.animated_f40049:active:not(:focus-within) {
+  height: 68px;
+  margin-top: 4px;
+  outline-width: 1px;
+}
+.theme-light .soundButtonRefresh_f40049 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 8%);
+}
+.addButton_f40049 {
+  margin: 3px;
+  display: flex;
+  align-items: center;
+}
+.plusSign_f40049 {
+  color: var(--text-muted);
+  height: 18px;
+  width: 18px;
+}
+.addButton_f40049 > * {
+  margin-right: 4px;
+}
+.soundButton_f40049.focused_f40049.hoverActiveBackground_f40049,
+.soundButton_f40049:focus-within.hoverActiveBackground_f40049,
+.soundButton_f40049:hover.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049.focused_f40049.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049:focus-within.hoverActiveBackground_f40049,
+.soundButtonRefresh_f40049:hover.hoverActiveBackground_f40049 {
+  background: var(--background-tertiary);
+}
+.soundButton_f40049.focused_f40049 .buttonOverlay_f40049,
+.soundButton_f40049:focus-within .buttonOverlay_f40049,
+.soundButton_f40049:hover .buttonOverlay_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .buttonOverlay_f40049,
+.soundButtonRefresh_f40049:focus-within .buttonOverlay_f40049,
+.soundButtonRefresh_f40049:hover .buttonOverlay_f40049 {
+  opacity: 1;
+  visibility: visible;
+}
+.soundButton_f40049.focused_f40049 .addButtonOverlay_f40049,
+.soundButton_f40049:focus-within .addButtonOverlay_f40049,
+.soundButton_f40049:hover .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049.focused_f40049 .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049:focus-within .addButtonOverlay_f40049,
+.soundButtonRefresh_f40049:hover .addButtonOverlay_f40049 {
+  opacity: 1;
+  visibility: visible;
+}
+.soundInfo_f40049 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 8px;
+  overflow: hidden;
+}
+.soundInfoRefresh_f40049 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 0 8px;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
+  border-radius: 8px;
+  height: 60px;
+  transition:
+    gap.1s ease,
+    padding-bottom.1s ease;
+}
+.soundName_f40049 {
+  color: var(--header-primary);
+  flex-grow: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+.soundName_f40049.hasEmoji_f40049 {
+  text-align: left;
+}
+.soundNameRefresh_f40049 {
+  color: var(--header-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+.soundNameRefresh_f40049.hasEmoji_f40049 {
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.emoji_f40049 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.emojiCircle_f40049 {
+  background: var(--bg-mod-subtle);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    width.1s ease,
+    height.1s ease;
+}
+.emojiCircle_f40049 .emoji_f40049 {
+  width: 18px;
+  height: 18px;
+  transition:
+    width.3s ease,
+    height.3s ease;
+}
+.soundButtonInteractive_f40049 {
+  cursor: pointer;
+}
+.soundButtonInteractive_f40049.playing_f40049 {
+  border-color: var(--status-positive-background);
+}
+.soundButtonInteractiveRefresh_f40049 {
+  cursor: pointer;
+}
+.soundButtonInteractiveRefresh_f40049.previewing_f40049 {
+  outline: 2px solid var(--button-outline-brand-border);
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049 {
+  outline: 2px solid var(--button-outline-positive-border);
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049
+  .soundInfoRefresh_f40049.hasEmoji_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049
+  .soundInfoRefresh_f40049.hasEmoji_f40049 {
+  padding-bottom: 4px;
+  gap: 0;
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049 .emojiCircle_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049 .emojiCircle_f40049 {
+  width: 40px;
+  height: 40px;
+}
+.soundButtonInteractiveRefresh_f40049.playing_f40049
+  .emojiCircle_f40049
+  .emoji_f40049,
+.soundButtonInteractiveRefresh_f40049.previewing_f40049
+  .emojiCircle_f40049
+  .emoji_f40049 {
+  width: 24px;
+  height: 24px;
+}
+.buttonDisabledSecondaryActionsEnabled_f40049 {
+  cursor: default;
+}
+.buttonDisabled_f40049 {
+  pointer-events: none;
+}
+.premiumDisabled_f40049 {
+  opacity: 0.5;
+}
+.premiumDisabledRefresh_f40049 {
+  --custom-gradient-border: linear-gradient(
+      90deg,
+      var(--premium-tier-2-purple-for-gradients) 0%,
+      var(--premium-tier-2-purple-for-gradients-2) 50.24%,
+      var(--premium-tier-2-pink-for-gradients) 100%
+    )
+    border-box;
+}
+.premiumDisabledRefresh_f40049:hover,
+.premiumDisabledRefresh_f40049.focused_f40049 {
+  background:
+    linear-gradient(var(--card-primary-bg), var(--card-primary-bg)) padding-box,
+    var(--custom-gradient-border);
+}
+.premiumDisabledRefresh_f40049:hover .emojiCircle_f40049,
+.premiumDisabledRefresh_f40049.focused_f40049 .emojiCircle_f40049 {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--premium-tier-2-purple-for-gradients-hsl) / 0.2) 0%,
+    hsl(var(--premium-tier-2-purple-for-gradients-2-hsl) / 0.2) 50.24%,
+    hsl(var(--premium-tier-2-pink-for-gradients-hsl) / 0.2) 100%
+  );
+}
+.premiumDisabledRefresh_f40049:hover .emoji_f40049,
+.premiumDisabledRefresh_f40049.focused_f40049 .emoji_f40049 {
+  opacity: 0.1;
+}
+.premiumDisabledRefresh_f40049:hover
+  .soundNameRefresh_f40049:not(.hasEmoji_f40049),
+.premiumDisabledRefresh_f40049.focused_f40049
+  .soundNameRefresh_f40049:not(.hasEmoji_f40049) {
+  opacity: 0.5;
+}
+.premiumDisabledRefresh_f40049:active:not(:focus-within) {
+  background:
+    linear-gradient(
+        var(--card-primary-pressed-bg),
+        var(--card-primary-pressed-bg)
+      )
+      padding-box,
+    var(--custom-gradient-border);
+}
+.absoluteFill_f40049 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.buttonOverlay_f40049,
+.addButtonOverlay_f40049 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity.2s ease;
+}
+.buttonOverlayBackground_f40049 {
+  background: var(--background-secondary);
+  opacity: 0.8;
+}
+.buttonOverlayActions_f40049 {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonOverlayActionsRefresh_f40049 {
+  margin-top: -2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: margin-top.2s ease;
+}
+.secondaryButton_f40049 {
+  color: var(--interactive-normal);
+  display: flex;
+}
+.secondaryButton_f40049:focus,
+.secondaryButton_f40049:hover {
+  color: var(--interactive-hover);
+  cursor: pointer;
+}
+.secondaryButtonRefresh_f40049 {
+  color: var(--interactive-muted);
+  display: flex;
+  padding: 8px 4px 4px;
+  transition: opacity.2s ease;
+}
+.secondaryButtonRefresh_f40049:first-child {
+  padding-left: 8px;
+}
+.secondaryButtonRefresh_f40049:last-child {
+  padding-right: 8px;
+}
+.secondaryButtonRefresh_f40049:focus,
+.secondaryButtonRefresh_f40049:hover {
+  color: var(--interactive-hover);
+  cursor: pointer;
+}
+.secondaryIcon_f40049 {
+  width: 16px;
+  height: 16px;
+}
+.favoriteIconFavorite_f40049 {
+  color: var(--text-warning);
+}
+.primaryIcon_f40049 {
+  width: 20px;
+  height: 20px;
+  color: var(--interactive-active);
+  flex: 1;
+  pointer-events: none;
+}
+.primaryIconRefresh_f40049 {
+  width: 20px;
+  height: 20px;
+  color: var(--interactive-active);
+  align-self: center;
+}
+.primaryIconRefresh_f40049.hasEmoji_f40049:not(.primaryIconTopLevel_f40049) {
+  padding-bottom: 21px;
+}
+.lockIcon_f40049 {
+  pointer-events: none;
+}
+.primaryIconTopLevel_f40049 {
+  position: absolute;
+  z-index: 9999;
+}
+.unavailableTooltip_f40049 {
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 150px;
+}
+.unavailableTooltipRefresh_f40049 {
+  position: absolute;
+  top: 0;
+  height: 72px;
+  width: 102px;
+}
+.icon_dd5a70 {
+  width: 16px;
+  height: 16px;
+}
+.sliderContainer_dd5a70 {
+  min-width: 188px;
+  display: flex;
+  padding: var(--spacing-12);
+  flex-direction: column;
+  background-color: var(--background-floating);
+  border-radius: var(--radius-sm);
+}
+.slider_dd5a70 {
+  margin-bottom: calc(-1 * var(--spacing-8));
+}
+.infoContainer_dd5a70 {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  max-width: 300px;
+}
+.infoNitroContainer_dd5a70 {
+  position: relative;
+  background-color: var(--background-floating);
+}
+.infoNitroBackground_dd5a70 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+  z-index: 1;
+  opacity: 0.64;
+}
+.infoNitroTextContainer_dd5a70 {
+  position: relative;
+  z-index: 2;
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infoNitroIcon_dd5a70 {
+  margin-right: var(--spacing-4);
+}
+.infoNitroText_dd5a70 {
+  flex: 1;
+  margin-right: var(--spacing-16);
+}
+.infoNitroBadge_dd5a70 {
+  margin-left: 0 auto;
+}
+.infoSoundContainer_dd5a70 {
+  padding: var(--spacing-12);
+  background-color: var(--background-floating);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+.infoSoundInnerContainer_dd5a70 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infoSoundIcon_dd5a70 {
+  margin-right: var(--spacing-4);
+}
+.infoExpandedSoundContainer_dd5a70 {
+  padding: var(--spacing-16);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-16);
+  background-color: var(--background-secondary);
+  align-items: center;
+}
+.infoExpandedGuildContainer_dd5a70 {
+  padding: var(--spacing-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  background-color: var(--background-secondary-alt);
+  align-items: start;
+}
+.infoExpandedGuildTitle_dd5a70 {
+  align-self: flex-start;
+}
+.infoExpandedGuildInfoContainer_dd5a70 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-8);
+  align-items: center;
+  align-self: stretch;
+}
+.jumboContainer_f38a29 {
+  margin: 2px;
+  display: inline-flex;
+}
+.jumboButton_f38a29 {
+  display: inline-flex;
+}
+.inlineButton_f38a29 {
+  border: 1px solid var(--border-strong);
+  background: var(--card-primary-bg);
+  box-shadow:
+    0 -4px 0 0 rgba(0, 0, 0, 0.12) inset,
+    0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.inlineButton_f38a29:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.inlineButton_f38a29:active {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--card-primary-pressed-bg);
+}
+.inlineButton_f38a29.playing_f38a29 {
+  border: 1px solid var(--button-outline-positive-border);
+}
+.inlineContainer_f38a29 {
+  line-height: 1.5em;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--spacing-4);
+  margin: 0 var(--spacing-4);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.soundmojiEmoji_f38a29 {
+  width: 1em !important;
+  line-height: 1.5em;
+  margin-bottom: 1.5px;
+}
+.unknownSound_f38a29 {
+  height: 1em;
+  width: 1em;
+  position: relative;
+  top: 2px;
+}
+.tooltipContainer_f38a29 {
+  padding: 0;
 }
 .emojiContainer_bae8cb {
   display: inline-block;
@@ -15694,7 +15709,7 @@ span.clanTag_a31c43 {
 }
 .container_bc01cf {
   border-radius: 8px;
-  padding-left: 16px;
+  padding: 0 16px;
   height: 32px;
   box-sizing: border-box;
   display: flex;
@@ -15704,18 +15719,6 @@ span.clanTag_a31c43 {
 .title_bc01cf {
   color: var(--content-inventory-overlay-text-secondary);
   flex: 1;
-}
-.username_bc01cf {
-  margin-right: 4px;
-}
-.heroArt_bc01cf {
-  height: 32px;
-  width: 32px;
-  border-radius: 0 8px 8px 0;
-  background-position: right;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  margin-left: 16px;
 }
 .heroContainer_e12502 {
   height: 112px;
@@ -15740,22 +15743,27 @@ span.clanTag_a31c43 {
 }
 .heroSplash_e12502 {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   right: 0;
   border-top-right-radius: var(--radius-sm);
   border-bottom-right-radius: var(--radius-sm);
   -webkit-mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
+    90deg,
+    transparent 0%,
+    transparent 100px,
+    white 240px,
+    white 100%
   );
   mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
+    90deg,
+    transparent 0%,
+    transparent 100px,
+    white 240px,
+    white 100%
   );
 }
 .rankContainer_e6eff2 {
@@ -15878,6 +15886,7 @@ span.clanTag_a31c43 {
   display: flex;
   align-items: center;
   margin-left: 16px;
+  position: relative;
 }
 .userName_d270e1 {
   color: var(--content-inventory-overlay-text-primary);
@@ -16008,7 +16017,7 @@ span.clanTag_a31c43 {
   width: 16px;
 }
 .userRow_cf8a7d:hover {
-  background: var(--bg-overlay-5, var(--background-modifier-hover));
+  background: var(--background-modifier-hover);
 }
 .userRow_cf8a7d:hover .copyLinkContainer_cf8a7d {
   display: inline;
@@ -16063,6 +16072,7 @@ span.clanTag_a31c43 {
 .emptyTitleContainer_cf8a7d {
   margin-left: 16px;
   max-width: 148px;
+  position: relative;
 }
 .emptyTitle_cf8a7d {
   color: var(--content-inventory-overlay-text-primary);
@@ -39387,9 +39397,6 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
-  --background-base-low: var(--neutral-68);
-  --background-base-lower: var(--neutral-68);
-  --background-base-lowest: var(--neutral-68);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -39401,7 +39408,6 @@ html.disable-forced-colors * {
   --background-mobile-primary: var(--primary-600);
   --background-mobile-secondary: var(--primary-630);
   --background-modifier-accent: hsl(var(--primary-500-hsl) / 0.48);
-  --background-modifier-accent-2: hsl(var(--primary-500-hsl) / 0.48);
   --background-modifier-active: hsl(var(--primary-500-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--primary-500-hsl) / 0.3);
   --background-modifier-selected: hsl(var(--primary-500-hsl) / 0.6);
@@ -39518,14 +39524,10 @@ html.disable-forced-colors * {
   --custom-status-bubble-bg: var(--primary-800);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-quickswitcher-input-background: var(--primary-400);
-  --deprecated-quickswitcher-input-placeholder: hsl(var(--white-hsl) / 0.3);
-  --deprecated-store-bg: var(--primary-600);
   --deprecated-text-input-bg: var(--primary-700);
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --deprecated-text-input-prefix: var(--primary-200);
   --display-banner-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
   --divider-strong: hsl(var(--white-hsl) / 0.16);
   --divider-subtle: hsl(var(--white-hsl) / 0.08);
@@ -39538,15 +39540,11 @@ html.disable-forced-colors * {
     var(--primary-660-hsl) / 0.8
   );
   --forum-post-tag-background: hsl(var(--primary-660-hsl) / 0.9);
-  --guild-icon-inactive-bg: var(--primary-630);
-  --guild-icon-inactive-nested-bg: var(--primary-600);
   --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
-  --halo-positive: hsl(var(--green-360-hsl) / 0.24);
   --header-muted: var(--primary-360);
   --header-primary: var(--primary-130);
   --header-secondary: var(--primary-330);
   --home-background: var(--primary-645);
-  --home-card-resting-border: hsl(var(--transparent-hsl) / 0);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-130);
   --icon-secondary: var(--primary-330);
@@ -39596,7 +39594,6 @@ html.disable-forced-colors * {
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
   --premium-nitro-pink-text: var(--premium-nitro-pink-light);
-  --profile-gradient-card-background: hsl(var(--black-hsl) / 0.7);
   --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-overlay: hsl(var(--black-hsl) / 0.6);
@@ -39609,11 +39606,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --redesign-activity-card-background: var(--primary-560);
-  --redesign-activity-card-background-pressed: var(--primary-630);
   --redesign-activity-card-badge-icon: var(--primary-360);
-  --redesign-activity-card-border: hsl(var(--white-hsl) / 0.02);
-  --redesign-activity-card-overflow-background: var(--primary-630);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -39629,7 +39622,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-pressed-background: var(--primary-230);
   --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-positive-pressed-background: var(--green-460);
@@ -39675,19 +39667,12 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: var(--primary-560);
   --redesign-button-tertiary-pressed-text: var(--primary-330);
   --redesign-button-tertiary-text: var(--primary-230);
-  --redesign-channel-category-name-text: var(--primary-330);
-  --redesign-channel-message-preview-text: var(--primary-360);
   --redesign-channel-name-muted-text: var(--primary-360);
   --redesign-channel-name-text: var(--primary-130);
   --redesign-chat-input-background: var(--primary-700);
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--primary-645);
   --redesign-input-control-selected: var(--brand-500);
-  --redesign-only-background-active: var(--primary-530);
-  --redesign-only-background-default: var(--primary-600);
-  --redesign-only-background-overlay: var(--primary-645);
-  --redesign-only-background-raised: var(--primary-630);
-  --redesign-only-background-sunken: var(--primary-660);
   --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
   --scrollbar-auto-scrollbar-color-track: var(--primary-630);
   --scrollbar-auto-thumb: var(--primary-730);
@@ -39732,7 +39717,6 @@ html.disable-forced-colors * {
   --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-  --you-bar-bg: var(--primary-800);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .theme-dark {
@@ -39782,21 +39766,6 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-530) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-68) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-68) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-68) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -39857,12 +39826,6 @@ html.disable-forced-colors * {
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-modifier-accent: color-mix(
-      in oklab,
-      hsl(var(--primary-500-hsl) / 0.48) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-modifier-accent-2: color-mix(
       in oklab,
       hsl(var(--primary-500-hsl) / 0.48) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
@@ -40215,22 +40178,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
-    --deprecated-quickswitcher-input-background: color-mix(
-      in oklab,
-      var(--primary-400) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-quickswitcher-input-placeholder: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-store-bg: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --deprecated-text-input-bg: color-mix(
       in oklab,
       var(--primary-700) 100%,
@@ -40250,11 +40197,6 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: color-mix(
       in oklab,
       var(--primary-900) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-prefix: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --display-banner-overflow-background: color-mix(
@@ -40312,26 +40254,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
         var(--theme-base-color-amount, 0%)
     );
-    --guild-icon-inactive-bg: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --guild-icon-inactive-nested-bg: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --guild-notifications-bottom-sheet-pill-background: color-mix(
       in oklab,
       var(--primary-700) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --halo-positive: color-mix(
-      in oklab,
-      hsl(var(--green-360-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -40352,12 +40278,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-645) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --home-card-resting-border: color-mix(
-      in oklab,
-      hsl(var(--transparent-hsl) / 0) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--theme-base-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -40621,12 +40541,6 @@ html.disable-forced-colors * {
       var(--premium-nitro-pink-light) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --profile-gradient-card-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.7) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--theme-base-color-amount, 0%)
-    );
     --profile-gradient-message-input-border: color-mix(
       in oklab,
       hsl(var(--primary-500-hsl) / 0.48) 100%,
@@ -40675,31 +40589,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--theme-base-color-amount, 0%)
     );
-    --redesign-activity-card-background: color-mix(
-      in oklab,
-      var(--primary-560) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-background-pressed: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --redesign-activity-card-badge-icon: color-mix(
       in oklab,
       var(--primary-360) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-activity-card-border: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.02) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.02)
-        var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-overflow-background: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-active-background: color-mix(
       in oklab,
@@ -40766,11 +40659,6 @@ html.disable-forced-colors * {
     --redesign-button-overlay-background: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-overlay-text: color-mix(
@@ -40968,16 +40856,6 @@ html.disable-forced-colors * {
       var(--primary-230) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --redesign-channel-category-name-text: color-mix(
-      in oklab,
-      var(--primary-330) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-channel-message-preview-text: color-mix(
-      in oklab,
-      var(--primary-360) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --redesign-channel-name-muted-text: color-mix(
       in oklab,
       var(--primary-360) 100%,
@@ -41007,31 +40885,6 @@ html.disable-forced-colors * {
     --redesign-input-control-selected: color-mix(
       in oklab,
       var(--brand-500) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-active: color-mix(
-      in oklab,
-      var(--primary-530) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-default: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-overlay: color-mix(
-      in oklab,
-      var(--primary-645) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-raised: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-sunken: color-mix(
-      in oklab,
-      var(--primary-660) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
@@ -41189,11 +41042,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
         var(--theme-base-color-amount, 0%)
     );
-    --you-bar-bg: color-mix(
-      in oklab,
-      var(--primary-800) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
   }
 }
 .theme-light {
@@ -41206,9 +41054,6 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--black-hsl) / 0.12);
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
-  --background-base-low: var(--neutral-92);
-  --background-base-lower: var(--neutral-84);
-  --background-base-lowest: var(--neutral-92);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -41220,7 +41065,6 @@ html.disable-forced-colors * {
   --background-mobile-primary: var(--primary-100);
   --background-mobile-secondary: var(--white);
   --background-modifier-accent: hsl(var(--primary-400-hsl) / 0.24);
-  --background-modifier-accent-2: hsl(var(--primary-400-hsl) / 0.16);
   --background-modifier-active: hsl(var(--primary-400-hsl) / 0.2);
   --background-modifier-hover: hsl(var(--primary-400-hsl) / 0.16);
   --background-modifier-selected: hsl(var(--primary-400-hsl) / 0.24);
@@ -41337,16 +41181,10 @@ html.disable-forced-colors * {
   --custom-status-bubble-bg: var(--white);
   --deprecated-card-bg: var(--primary-100);
   --deprecated-card-editable-bg: hsl(var(--primary-100-hsl) / 0.6);
-  --deprecated-quickswitcher-input-background: var(--white);
-  --deprecated-quickswitcher-input-placeholder: hsl(
-    var(--primary-500-hsl) / 0.3
-  );
-  --deprecated-store-bg: var(--primary-100);
   --deprecated-text-input-bg: var(--primary-200);
   --deprecated-text-input-border: hsl(var(--primary-500-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-200);
   --deprecated-text-input-border-hover: var(--primary-300);
-  --deprecated-text-input-prefix: var(--primary-300);
   --display-banner-overflow-background: hsl(var(--white-hsl) / 0.5);
   --divider-strong: hsl(var(--black-hsl) / 0.16);
   --divider-subtle: hsl(var(--black-hsl) / 0.08);
@@ -41359,15 +41197,11 @@ html.disable-forced-colors * {
     var(--primary-160-hsl) / 0.8
   );
   --forum-post-tag-background: hsl(var(--primary-160-hsl) / 0.9);
-  --guild-icon-inactive-bg: var(--primary-130);
-  --guild-icon-inactive-nested-bg: var(--white);
   --guild-notifications-bottom-sheet-pill-background: var(--white);
-  --halo-positive: hsl(var(--green-360-hsl) / 0.24);
   --header-muted: var(--primary-460);
   --header-primary: var(--primary-860);
   --header-secondary: var(--primary-500);
   --home-background: var(--primary-100);
-  --home-card-resting-border: hsl(var(--primary-400-hsl) / 0.24);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-860);
   --icon-secondary: var(--primary-500);
@@ -41417,7 +41251,6 @@ html.disable-forced-colors * {
   --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
   --premium-nitro-pink-text: var(--premium-nitro-pink-dark);
-  --profile-gradient-card-background: hsl(var(--white-hsl) / 0.7);
   --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
   --profile-gradient-note-background: hsl(var(--white-hsl) / 0.3);
   --profile-gradient-overlay: hsl(var(--white-hsl) / 0.6);
@@ -41430,11 +41263,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--white-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
-  --redesign-activity-card-background: var(--white);
-  --redesign-activity-card-background-pressed: var(--primary-160);
   --redesign-activity-card-badge-icon: var(--primary-400);
-  --redesign-activity-card-border: hsl(var(--primary-400-hsl) / 0.24);
-  --redesign-activity-card-overflow-background: var(--primary-230);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -41450,7 +41279,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-pressed-background: var(--primary-230);
   --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-positive-pressed-background: var(--green-460);
@@ -41496,19 +41324,12 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--black-hsl) / 0.16);
   --redesign-button-tertiary-pressed-text: var(--primary-500);
   --redesign-button-tertiary-text: var(--primary-600);
-  --redesign-channel-category-name-text: var(--primary-500);
-  --redesign-channel-message-preview-text: var(--primary-460);
   --redesign-channel-name-muted-text: var(--primary-460);
   --redesign-channel-name-text: var(--primary-860);
   --redesign-chat-input-background: hsl(var(--black-hsl) / 0.08);
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--white);
   --redesign-input-control-selected: var(--brand-500);
-  --redesign-only-background-active: var(--primary-430);
-  --redesign-only-background-default: var(--white);
-  --redesign-only-background-overlay: var(--primary-160);
-  --redesign-only-background-raised: var(--primary-130);
-  --redesign-only-background-sunken: var(--primary-200);
   --scrollbar-auto-scrollbar-color-thumb: var(--primary-230);
   --scrollbar-auto-scrollbar-color-track: var(--primary-130);
   --scrollbar-auto-thumb: var(--primary-300);
@@ -41553,7 +41374,6 @@ html.disable-forced-colors * {
   --user-profile-header-overflow-background: hsl(var(--white-hsl) / 0.5);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-  --you-bar-bg: var(--white);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .theme-light {
@@ -41603,21 +41423,6 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-430) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-92) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-84) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-92) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -41681,12 +41486,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--primary-400-hsl) / 0.24) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-modifier-accent-2: color-mix(
-      in oklab,
-      hsl(var(--primary-400-hsl) / 0.16) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-active: color-mix(
@@ -42035,22 +41834,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.6)
         var(--theme-base-color-amount, 0%)
     );
-    --deprecated-quickswitcher-input-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-quickswitcher-input-placeholder: color-mix(
-      in oklab,
-      hsl(var(--primary-500-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-store-bg: color-mix(
-      in oklab,
-      var(--primary-100) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --deprecated-text-input-bg: color-mix(
       in oklab,
       var(--primary-200) 100%,
@@ -42068,11 +41851,6 @@ html.disable-forced-colors * {
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --deprecated-text-input-border-hover: color-mix(
-      in oklab,
-      var(--primary-300) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-prefix: color-mix(
       in oklab,
       var(--primary-300) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
@@ -42132,26 +41910,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
         var(--theme-base-color-amount, 0%)
     );
-    --guild-icon-inactive-bg: color-mix(
-      in oklab,
-      var(--primary-130) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --guild-icon-inactive-nested-bg: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --guild-notifications-bottom-sheet-pill-background: color-mix(
       in oklab,
       var(--white) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --halo-positive: color-mix(
-      in oklab,
-      hsl(var(--green-360-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -42172,12 +41934,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-100) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --home-card-resting-border: color-mix(
-      in oklab,
-      hsl(var(--primary-400-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -42442,12 +42198,6 @@ html.disable-forced-colors * {
       var(--premium-nitro-pink-dark) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --profile-gradient-card-background: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.7) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--theme-base-color-amount, 0%)
-    );
     --profile-gradient-message-input-border: color-mix(
       in oklab,
       hsl(var(--primary-430-hsl) / 0.24) 100%,
@@ -42496,31 +42246,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--theme-base-color-amount, 0%)
     );
-    --redesign-activity-card-background: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-background-pressed: color-mix(
-      in oklab,
-      var(--primary-160) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --redesign-activity-card-badge-icon: color-mix(
       in oklab,
       var(--primary-400) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-activity-card-border: color-mix(
-      in oklab,
-      hsl(var(--primary-400-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-overflow-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-active-background: color-mix(
       in oklab,
@@ -42587,11 +42316,6 @@ html.disable-forced-colors * {
     --redesign-button-overlay-background: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-overlay-text: color-mix(
@@ -42790,16 +42514,6 @@ html.disable-forced-colors * {
       var(--primary-600) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --redesign-channel-category-name-text: color-mix(
-      in oklab,
-      var(--primary-500) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-channel-message-preview-text: color-mix(
-      in oklab,
-      var(--primary-460) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --redesign-channel-name-muted-text: color-mix(
       in oklab,
       var(--primary-460) 100%,
@@ -42830,31 +42544,6 @@ html.disable-forced-colors * {
     --redesign-input-control-selected: color-mix(
       in oklab,
       var(--brand-500) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-active: color-mix(
-      in oklab,
-      var(--primary-430) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-default: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-overlay: color-mix(
-      in oklab,
-      var(--primary-160) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-raised: color-mix(
-      in oklab,
-      var(--primary-130) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-sunken: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
@@ -43013,11 +42702,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
         var(--theme-base-color-amount, 0%)
     );
-    --you-bar-bg: color-mix(
-      in oklab,
-      var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
   }
 }
 .theme-midnight {
@@ -43030,9 +42714,6 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
-  --background-base-low: var(--neutral-1);
-  --background-base-lower: var(--neutral-1);
-  --background-base-lowest: var(--neutral-1);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -43044,7 +42725,6 @@ html.disable-forced-colors * {
   --background-mobile-primary: var(--black);
   --background-mobile-secondary: var(--black);
   --background-modifier-accent: hsl(var(--plum-23-alpha-hsl) / 0.1);
-  --background-modifier-accent-2: hsl(var(--plum-11-hsl) / 0.32);
   --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
   --background-modifier-selected: hsl(var(--plum-13-hsl) / 0.6);
@@ -43161,14 +42841,10 @@ html.disable-forced-colors * {
   --custom-status-bubble-bg: var(--plum-19);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-quickswitcher-input-background: var(--primary-400);
-  --deprecated-quickswitcher-input-placeholder: hsl(var(--white-hsl) / 0.3);
-  --deprecated-store-bg: var(--primary-600);
   --deprecated-text-input-bg: var(--primary-700);
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --deprecated-text-input-prefix: var(--primary-200);
   --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
   --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
@@ -43181,15 +42857,11 @@ html.disable-forced-colors * {
     var(--plum-19-hsl) / 0.8
   );
   --forum-post-tag-background: hsl(var(--plum-19-hsl) / 0.9);
-  --guild-icon-inactive-bg: var(--black);
-  --guild-icon-inactive-nested-bg: var(--black);
   --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
-  --halo-positive: hsl(var(--green-360-hsl) / 0.24);
   --header-muted: var(--plum-10);
   --header-primary: var(--plum-2);
   --header-secondary: var(--plum-8);
   --home-background: var(--plum-18);
-  --home-card-resting-border: hsl(var(--transparent-hsl) / 0);
   --icon-muted: var(--plum-12);
   --icon-primary: var(--plum-5);
   --icon-secondary: var(--plum-9);
@@ -43239,7 +42911,6 @@ html.disable-forced-colors * {
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
   --premium-nitro-pink-text: var(--premium-nitro-pink-light);
-  --profile-gradient-card-background: hsl(var(--black-hsl) / 0.7);
   --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-overlay: hsl(var(--black-hsl) / 0.6);
@@ -43252,11 +42923,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --redesign-activity-card-background: var(--primary-560);
-  --redesign-activity-card-background-pressed: var(--primary-630);
   --redesign-activity-card-badge-icon: var(--plum-11);
-  --redesign-activity-card-border: hsl(var(--plum-11-hsl) / 0.12);
-  --redesign-activity-card-overflow-background: var(--plum-17);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -43272,7 +42939,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-pressed-background: var(--primary-230);
   --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-positive-pressed-background: var(--green-460);
@@ -43318,19 +42984,12 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
   --redesign-button-tertiary-pressed-text: var(--plum-6);
   --redesign-button-tertiary-text: var(--plum-4);
-  --redesign-channel-category-name-text: var(--plum-8);
-  --redesign-channel-message-preview-text: var(--plum-10);
   --redesign-channel-name-muted-text: var(--plum-10);
   --redesign-channel-name-text: var(--plum-2);
   --redesign-chat-input-background: hsl(var(--plum-23-alpha-hsl) / 0.1);
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--plum-17);
   --redesign-input-control-selected: var(--brand-500);
-  --redesign-only-background-active: var(--primary-530);
-  --redesign-only-background-default: var(--primary-600);
-  --redesign-only-background-overlay: var(--primary-645);
-  --redesign-only-background-raised: var(--primary-630);
-  --redesign-only-background-sunken: var(--primary-660);
   --scrollbar-auto-scrollbar-color-thumb: var(--plum-20);
   --scrollbar-auto-scrollbar-color-track: var(--plum-17);
   --scrollbar-auto-thumb: var(--plum-16);
@@ -43375,7 +43034,6 @@ html.disable-forced-colors * {
   --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-  --you-bar-bg: var(--plum-19);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .theme-midnight {
@@ -43425,21 +43083,6 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-17) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -43502,12 +43145,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-modifier-accent-2: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.32) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.32)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-active: color-mix(
@@ -43857,22 +43494,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
-    --deprecated-quickswitcher-input-background: color-mix(
-      in oklab,
-      var(--primary-400) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-quickswitcher-input-placeholder: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-store-bg: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --deprecated-text-input-bg: color-mix(
       in oklab,
       var(--primary-700) 100%,
@@ -43892,11 +43513,6 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: color-mix(
       in oklab,
       var(--primary-900) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-prefix: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --display-banner-overflow-background: color-mix(
@@ -43954,26 +43570,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
         var(--theme-base-color-amount, 0%)
     );
-    --guild-icon-inactive-bg: color-mix(
-      in oklab,
-      var(--black) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --guild-icon-inactive-nested-bg: color-mix(
-      in oklab,
-      var(--black) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --guild-notifications-bottom-sheet-pill-background: color-mix(
       in oklab,
       var(--primary-700) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --halo-positive: color-mix(
-      in oklab,
-      hsl(var(--green-360-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -43994,12 +43594,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --home-card-resting-border: color-mix(
-      in oklab,
-      hsl(var(--transparent-hsl) / 0) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--theme-base-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -44264,12 +43858,6 @@ html.disable-forced-colors * {
       var(--premium-nitro-pink-light) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --profile-gradient-card-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.7) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--theme-base-color-amount, 0%)
-    );
     --profile-gradient-message-input-border: color-mix(
       in oklab,
       hsl(var(--primary-500-hsl) / 0.48) 100%,
@@ -44318,31 +43906,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--theme-base-color-amount, 0%)
     );
-    --redesign-activity-card-background: color-mix(
-      in oklab,
-      var(--primary-560) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-background-pressed: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --redesign-activity-card-badge-icon: color-mix(
       in oklab,
       var(--plum-11) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-activity-card-border: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.12) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
-        var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-overflow-background: color-mix(
-      in oklab,
-      var(--plum-17) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-active-background: color-mix(
       in oklab,
@@ -44409,11 +43976,6 @@ html.disable-forced-colors * {
     --redesign-button-overlay-background: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-overlay-text: color-mix(
@@ -44613,16 +44175,6 @@ html.disable-forced-colors * {
       var(--plum-4) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --redesign-channel-category-name-text: color-mix(
-      in oklab,
-      var(--plum-8) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-channel-message-preview-text: color-mix(
-      in oklab,
-      var(--plum-10) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --redesign-channel-name-muted-text: color-mix(
       in oklab,
       var(--plum-10) 100%,
@@ -44653,31 +44205,6 @@ html.disable-forced-colors * {
     --redesign-input-control-selected: color-mix(
       in oklab,
       var(--brand-500) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-active: color-mix(
-      in oklab,
-      var(--primary-530) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-default: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-overlay: color-mix(
-      in oklab,
-      var(--primary-645) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-raised: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-sunken: color-mix(
-      in oklab,
-      var(--primary-660) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
@@ -44836,11 +44363,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
         var(--theme-base-color-amount, 0%)
     );
-    --you-bar-bg: color-mix(
-      in oklab,
-      var(--plum-19) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
   }
 }
 .theme-darker {
@@ -44853,9 +44375,6 @@ html.disable-forced-colors * {
   --android-ripple: hsl(var(--white-hsl) / 0.07);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
-  --background-base-low: var(--neutral-80);
-  --background-base-lower: var(--neutral-76);
-  --background-base-lowest: var(--neutral-84);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -44867,7 +44386,6 @@ html.disable-forced-colors * {
   --background-mobile-primary: var(--plum-20);
   --background-mobile-secondary: var(--plum-20);
   --background-modifier-accent: hsl(var(--plum-11-hsl) / 0.12);
-  --background-modifier-accent-2: hsl(var(--plum-11-hsl) / 0.24);
   --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
   --background-modifier-selected: hsl(var(--plum-13-hsl) / 0.6);
@@ -44984,14 +44502,10 @@ html.disable-forced-colors * {
   --custom-status-bubble-bg: var(--plum-17);
   --deprecated-card-bg: hsl(var(--primary-700-hsl) / 0.6);
   --deprecated-card-editable-bg: hsl(var(--primary-700-hsl) / 0.3);
-  --deprecated-quickswitcher-input-background: var(--primary-400);
-  --deprecated-quickswitcher-input-placeholder: hsl(var(--white-hsl) / 0.3);
-  --deprecated-store-bg: var(--primary-600);
   --deprecated-text-input-bg: var(--primary-700);
   --deprecated-text-input-border: hsl(var(--black-hsl) / 0.3);
   --deprecated-text-input-border-disabled: var(--primary-700);
   --deprecated-text-input-border-hover: var(--primary-900);
-  --deprecated-text-input-prefix: var(--primary-200);
   --display-banner-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
   --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
@@ -45004,15 +44518,11 @@ html.disable-forced-colors * {
     var(--plum-19-hsl) / 0.8
   );
   --forum-post-tag-background: hsl(var(--plum-19-hsl) / 0.9);
-  --guild-icon-inactive-bg: var(--plum-20);
-  --guild-icon-inactive-nested-bg: var(--plum-20);
   --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
-  --halo-positive: hsl(var(--green-360-hsl) / 0.24);
   --header-muted: var(--plum-10);
   --header-primary: var(--plum-3);
   --header-secondary: var(--plum-9);
   --home-background: var(--plum-18);
-  --home-card-resting-border: hsl(var(--transparent-hsl) / 0);
   --icon-muted: var(--plum-11);
   --icon-primary: var(--plum-4);
   --icon-secondary: var(--plum-9);
@@ -45062,7 +44572,6 @@ html.disable-forced-colors * {
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
   --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
   --premium-nitro-pink-text: var(--premium-nitro-pink-light);
-  --profile-gradient-card-background: hsl(var(--black-hsl) / 0.7);
   --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-overlay: hsl(var(--black-hsl) / 0.6);
@@ -45075,11 +44584,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --redesign-activity-card-background: var(--primary-560);
-  --redesign-activity-card-background-pressed: var(--primary-630);
   --redesign-activity-card-badge-icon: var(--plum-10);
-  --redesign-activity-card-border: hsl(var(--plum-11-hsl) / 0.06);
-  --redesign-activity-card-overflow-background: var(--plum-17);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -45095,7 +44600,6 @@ html.disable-forced-colors * {
   );
   --redesign-button-overlay-alpha-text: var(--white);
   --redesign-button-overlay-background: var(--white);
-  --redesign-button-overlay-pressed-background: var(--primary-230);
   --redesign-button-overlay-text: var(--primary-860);
   --redesign-button-positive-background: var(--green-430);
   --redesign-button-positive-pressed-background: var(--green-460);
@@ -45141,19 +44645,12 @@ html.disable-forced-colors * {
   --redesign-button-tertiary-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
   --redesign-button-tertiary-pressed-text: var(--plum-5);
   --redesign-button-tertiary-text: var(--plum-6);
-  --redesign-channel-category-name-text: var(--plum-9);
-  --redesign-channel-message-preview-text: var(--plum-10);
   --redesign-channel-name-muted-text: var(--plum-10);
   --redesign-channel-name-text: var(--plum-3);
   --redesign-chat-input-background: hsl(var(--plum-11-hsl) / 0.12);
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--plum-16);
   --redesign-input-control-selected: var(--brand-500);
-  --redesign-only-background-active: var(--primary-530);
-  --redesign-only-background-default: var(--primary-600);
-  --redesign-only-background-overlay: var(--primary-645);
-  --redesign-only-background-raised: var(--primary-630);
-  --redesign-only-background-sunken: var(--primary-660);
   --scrollbar-auto-scrollbar-color-thumb: var(--plum-21);
   --scrollbar-auto-scrollbar-color-track: var(--plum-17);
   --scrollbar-auto-thumb: var(--plum-21);
@@ -45198,7 +44695,6 @@ html.disable-forced-colors * {
   --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-  --you-bar-bg: var(--plum-17);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .theme-darker {
@@ -45248,21 +44744,6 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-15) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-80) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-76) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-84) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -45325,12 +44806,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--plum-11-hsl) / 0.12) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-modifier-accent-2: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-active: color-mix(
@@ -45680,22 +45155,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
-    --deprecated-quickswitcher-input-background: color-mix(
-      in oklab,
-      var(--primary-400) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-quickswitcher-input-placeholder: color-mix(
-      in oklab,
-      hsl(var(--white-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-store-bg: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --deprecated-text-input-bg: color-mix(
       in oklab,
       var(--primary-700) 100%,
@@ -45715,11 +45174,6 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: color-mix(
       in oklab,
       var(--primary-900) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --deprecated-text-input-prefix: color-mix(
-      in oklab,
-      var(--primary-200) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --display-banner-overflow-background: color-mix(
@@ -45777,26 +45231,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
         var(--theme-base-color-amount, 0%)
     );
-    --guild-icon-inactive-bg: color-mix(
-      in oklab,
-      var(--plum-20) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --guild-icon-inactive-nested-bg: color-mix(
-      in oklab,
-      var(--plum-20) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --guild-notifications-bottom-sheet-pill-background: color-mix(
       in oklab,
       var(--primary-700) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --halo-positive: color-mix(
-      in oklab,
-      hsl(var(--green-360-hsl) / 0.24) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-        var(--theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -45817,12 +45255,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --home-card-resting-border: color-mix(
-      in oklab,
-      hsl(var(--transparent-hsl) / 0) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
-        var(--theme-base-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -46087,12 +45519,6 @@ html.disable-forced-colors * {
       var(--premium-nitro-pink-light) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --profile-gradient-card-background: color-mix(
-      in oklab,
-      hsl(var(--black-hsl) / 0.7) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
-        var(--theme-base-color-amount, 0%)
-    );
     --profile-gradient-message-input-border: color-mix(
       in oklab,
       hsl(var(--primary-500-hsl) / 0.48) 100%,
@@ -46141,31 +45567,10 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--theme-base-color-amount, 0%)
     );
-    --redesign-activity-card-background: color-mix(
-      in oklab,
-      var(--primary-560) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-background-pressed: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
     --redesign-activity-card-badge-icon: color-mix(
       in oklab,
       var(--plum-10) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-activity-card-border: color-mix(
-      in oklab,
-      hsl(var(--plum-11-hsl) / 0.06) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06)
-        var(--theme-base-color-amount, 0%)
-    );
-    --redesign-activity-card-overflow-background: color-mix(
-      in oklab,
-      var(--plum-17) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-active-background: color-mix(
       in oklab,
@@ -46232,11 +45637,6 @@ html.disable-forced-colors * {
     --redesign-button-overlay-background: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-button-overlay-pressed-background: color-mix(
-      in oklab,
-      var(--primary-230) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-overlay-text: color-mix(
@@ -46436,16 +45836,6 @@ html.disable-forced-colors * {
       var(--plum-6) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
-    --redesign-channel-category-name-text: color-mix(
-      in oklab,
-      var(--plum-9) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
-    --redesign-channel-message-preview-text: color-mix(
-      in oklab,
-      var(--plum-10) 100%,
-      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
-    );
     --redesign-channel-name-muted-text: color-mix(
       in oklab,
       var(--plum-10) 100%,
@@ -46476,31 +45866,6 @@ html.disable-forced-colors * {
     --redesign-input-control-selected: color-mix(
       in oklab,
       var(--brand-500) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-active: color-mix(
-      in oklab,
-      var(--primary-530) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-default: color-mix(
-      in oklab,
-      var(--primary-600) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-overlay: color-mix(
-      in oklab,
-      var(--primary-645) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-raised: color-mix(
-      in oklab,
-      var(--primary-630) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --redesign-only-background-sunken: color-mix(
-      in oklab,
-      var(--primary-660) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
@@ -46658,11 +46023,6 @@ html.disable-forced-colors * {
       hsl(var(--primary-700-hsl) / 0.48) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
         var(--theme-base-color-amount, 0%)
-    );
-    --you-bar-bg: color-mix(
-      in oklab,
-      var(--plum-17) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
   }
 }
@@ -51435,4 +50795,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.00bd7171c404dd92af23.css.map*/
+/*# sourceMappingURL=12633.bcfe478fc4bf241f7d28.css.map*/
