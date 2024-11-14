@@ -682,6 +682,8 @@
   "barBase": "barBase_cf58b5",
   "barButtonBase": "barButtonBase_cf58b5",
   "barButtonIcon": "barButtonIcon_cf58b5",
+  "barWithAppLauncherButton": "barWithAppLauncherButton_cf58b5",
+  "barWithAppsDMsUI": "barWithAppsDMsUI_cf58b5",
   "jumpToPresentBar": "jumpToPresentBar_cf58b5",
   "messagesErrorBar": "messagesErrorBar_cf58b5",
   "newMessagesBar": "newMessagesBar_cf58b5",
