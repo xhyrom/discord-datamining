@@ -15728,22 +15728,27 @@ span.clanTag_a31c43 {
 }
 .heroSplash_e12502 {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   right: 0;
   border-top-right-radius: var(--radius-sm);
   border-bottom-right-radius: var(--radius-sm);
   -webkit-mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
+    90deg,
+    transparent 0%,
+    transparent 100px,
+    white 240px,
+    white 100%
   );
   mask-image: linear-gradient(
-    270deg,
-    #000 0,
-    #000 40px,
-    rgba(0, 0, 0, 0) 176px
+    90deg,
+    transparent 0%,
+    transparent 100px,
+    white 240px,
+    white 100%
   );
 }
 .rankContainer_e6eff2 {
@@ -15866,6 +15871,7 @@ span.clanTag_a31c43 {
   display: flex;
   align-items: center;
   margin-left: 16px;
+  position: relative;
 }
 .userName_d270e1 {
   color: var(--content-inventory-overlay-text-primary);
@@ -16051,6 +16057,7 @@ span.clanTag_a31c43 {
 .emptyTitleContainer_cf8a7d {
   margin-left: 16px;
   max-width: 148px;
+  position: relative;
 }
 .emptyTitle_cf8a7d {
   color: var(--content-inventory-overlay-text-primary);
@@ -50773,4 +50780,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.249b0269ba936b019630.css.map*/
+/*# sourceMappingURL=12633.95b837252c0663fd0a9f.css.map*/
