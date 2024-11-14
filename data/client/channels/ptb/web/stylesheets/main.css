@@ -16002,7 +16002,7 @@ span.clanTag_a31c43 {
   width: 16px;
 }
 .userRow_cf8a7d:hover {
-  background: var(--bg-overlay-5, var(--background-modifier-hover));
+  background: var(--background-modifier-hover);
 }
 .userRow_cf8a7d:hover .copyLinkContainer_cf8a7d {
   display: inline;
@@ -50780,4 +50780,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.95b837252c0663fd0a9f.css.map*/
+/*# sourceMappingURL=12633.4c6faab49fbb37b4cea7.css.map*/
