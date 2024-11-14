@@ -6364,29 +6364,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-05_content_inventory_games_rich_presence",
-      "label": "Content Inventory: Rich Presence for Games",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 878040044,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-05_desktop_user_settings_search",
       "label": "Desktop User Settings Search",
       "description": [
@@ -9897,20 +9874,23 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Enable special UI for DMs with Apps",
-        "Treatment 2: Enable special UI for DMs with Apps including quick launch"
+        "Treatment 2: Enable special UI for DMs with Apps including quick launch",
+        "Treatment 3: Enable App DMs UI including quick launch and activity popout window in app DM"
       ],
       "hash": 898010800,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
         "enabled",
-        "quickLaunchEnabled"
+        "quickLaunchEnabled",
+        "activityPopoutWindowInAppDMEnabled"
       ]
     }
   },
@@ -12458,6 +12438,29 @@
         "Treatment 1: Perform weighted sampling of top N activities in shelf and disable frecency sorting in shelf"
       ],
       "hash": 2793808763,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_activity_popout_window",
+      "label": "Activity Popout Window Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable activity popout window"
+      ],
+      "hash": 4090186469,
       "buckets": [
         -1,
         0,

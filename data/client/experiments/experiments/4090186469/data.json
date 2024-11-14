@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_content_inventory_games_rich_presence",
-    "label": "Content Inventory: Rich Presence for Games",
+    "id": "2024-11_activity_popout_window",
+    "label": "Activity Popout Window Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Enable activity popout window"
     ],
-    "hash": 878040044,
+    "hash": 4090186469,
     "buckets": [
       -1,
       0,
