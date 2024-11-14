@@ -3,9 +3,9 @@
   possible. Below, you’ll see the minimum operating systems requirements, along
   with what we recommend for the best experience.
 </p>
-<div class="info-box">
-  Devices with older operating systems can run Discord, but may encounter
-  issues. Our support for these devices is limited.
+<div class="warn-box">
+  <strong>Note</strong>: Devices with older operating systems can run Discord,
+  but may encounter issues. Our support for these devices is limited.
 </div>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -27,43 +27,29 @@
 <h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f">
   <strong>Desktop</strong>
 </h1>
-<div>
-  <table style="width: 100%; height: 88px">
-    <colgroup>
-      <col />
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr style="height: 22px">
-        <td style="height: 22px; width: 24.7143%"><strong>OS</strong></td>
-        <td style="height: 22px; width: 75.1429%"><strong>Minimum</strong></td>
-      </tr>
-      <tr style="height: 22px">
-        <td style="height: 22px; width: 24.7143%">Windows</td>
-        <td style="height: 22px; width: 75.1429%">Windows 10+</td>
-      </tr>
-      <tr style="height: 22px">
-        <td style="height: 22px; width: 24.7143%">Mac</td>
-        <td style="height: 22px; width: 75.1429%">
-          <p>
-            <span id="docs-internal-guid-72018f9d-7fff-b7ea-ae64-0c3b5d2caca6"
-              >MacOS 10.15+ (Catalina)+</span
-            >
-          </p>
-        </td>
-      </tr>
-      <tr style="height: 22px">
-        <td style="height: 22px; width: 24.7143%">Linux</td>
-        <td style="height: 22px; width: 75.1429%">
-          <span id="docs-internal-guid-cda60023-7fff-d4da-6d95-ad21b5ae44e0"
-            >Ubuntu 20.04+ and Debian 11+</span
-          >
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table style="border-collapse: collapse; width: 88.5708%; height: 88px">
+  <tbody>
+    <tr style="height: 22px">
+      <td style="width: 21.8571%; height: 22px"><strong>OS</strong></td>
+      <td style="width: 66.7143%; height: 22px"><strong>Minimum</strong></td>
+    </tr>
+    <tr style="height: 22px">
+      <td style="width: 21.8571%; height: 22px">Windows</td>
+      <td style="width: 66.7143%; height: 22px">Windows 10+</td>
+    </tr>
+    <tr style="height: 22px">
+      <td style="width: 21.8571%; height: 22px">Mac</td>
+      <td style="width: 66.7143%; height: 22px">MacOS 10.15+ (Catalina)+</td>
+    </tr>
+    <tr style="height: 22px">
+      <td style="width: 21.8571%; height: 22px">Linux</td>
+      <td style="width: 66.7143%; height: 22px">
+        Ubuntu 20.04+ and Debian 11+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div> </div>
 <p>
   <span class="wysiwyg-underline"
     ><strong
@@ -100,19 +86,6 @@
     >
   </li>
 </ul>
-<div class="info-box">
-  <strong>For Linux:</strong> <br />Because of the variations in both software
-  and hardware for computers running Linux, technical support for this operating
-  system is limited.<br />Our Linux client is based on Chromium, and so the
-  requirements for this version of the app are based on Chrome’s requirements,
-  found in this link
-  <a
-    href="https://support.google.com/chrome/a/answer/7100626?hl=en"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here.</a
-  >
-</div>
 <h1 id="h_01H30Q0N5QCNK259ATR3BR4A41"><strong>Mobile</strong></h1>
 <div>
   <table style="width: 100%">
@@ -173,52 +146,71 @@
   </li>
 </ul>
 <div class="warn-box">
-  Discord has discontinued support for<strong> Android 6</strong> with the
-  release of version 202. If you are running a device with Android 6, you will
-  no longer receive updates with the latest features and bug fixes. Versions
-  released before 202 may stop working after an unspecified amount of time.
+  <strong>Note</strong>: Discord has discontinued support for<strong>
+    Android 6</strong
+  >
+  with the release of version 202.<br />If you are running a device with Android
+  6, you will no longer receive updates with the latest features and bug fixes.
+  Versions released before 202 may stop working after an unspecified amount of
+  time.
 </div>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <div id="docs-internal-guid-c7cde2e9-7fff-56f9-a1d2-a694c6bfeec7">
-  <table style="width: 100%">
+  <table style="width: 98.5714%; height: 149px">
     <colgroup>
       <col />
       <col />
     </colgroup>
     <tbody>
-      <tr>
-        <td style="width: 27.8571%"><strong>Browser</strong></td>
-        <td style="width: 72%"><strong>Minimum</strong></td>
+      <tr style="height: 22px">
+        <td style="width: 27.8571%; height: 22px"><strong>Browser</strong></td>
+        <td style="width: 65.6031%; height: 22px"><strong>Minimum</strong></td>
       </tr>
-      <tr>
-        <td style="width: 27.8571%">Google Chrome</td>
-        <td style="width: 72%">
-          <p>N/A </p>
-        </td>
+      <tr style="height: 22px">
+        <td style="width: 27.8571%; height: 22px">Google Chrome</td>
+        <td style="width: 65.6031%; height: 22px">N/A </td>
       </tr>
-      <tr>
-        <td style="width: 27.8571%">Mozilla Firefox</td>
-        <td style="width: 72%">Firefox 80+</td>
+      <tr style="height: 22px">
+        <td style="width: 27.8571%; height: 22px">Mozilla Firefox</td>
+        <td style="width: 65.6031%; height: 22px">Firefox 80+</td>
       </tr>
-      <tr>
-        <td style="width: 27.8571%">Opera</td>
-        <td style="width: 72%">N/A</td>
+      <tr style="height: 22px">
+        <td style="width: 27.8571%; height: 22px">Opera</td>
+        <td style="width: 65.6031%; height: 22px">N/A</td>
       </tr>
-      <tr>
-        <td style="width: 27.8571%">Microsoft Edge</td>
-        <td style="width: 72%">
+      <tr style="height: 44px">
+        <td style="width: 27.8571%; height: 44px">Microsoft Edge</td>
+        <td style="width: 65.6031%; height: 44px">
           Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS)
         </td>
       </tr>
-      <tr>
-        <td style="width: 27.8571%">Safari</td>
-        <td style="width: 72%">
+      <tr style="height: 22px">
+        <td style="width: 27.8571%; height: 22px">Safari</td>
+        <td style="width: 65.6031%; height: 22px">
           Safari 11+ (available on macOS 10.13 High Sierra and up)
         </td>
       </tr>
     </tbody>
   </table>
 </div>
+<p>
+  <span class="wysiwyg-underline"
+    ><strong
+      ><span class="wysiwyg-font-size-x-large">Additional Notes:</span></strong
+    ></span
+  >
+</p>
+<ul>
+  <li>
+    You can learn more about Chrome system requirements in
+    <a
+      href="https://support.google.com/chrome/a/answer/7100626?hl=en"
+      target="_blank"
+      rel="noopener noreferrer"
+      >this link here</a
+    >. 
+  </li>
+</ul>
 <div class="info-box">
   <strong>Note</strong>: Older browsers may lack functionality with newer
   features, and voice chat for Firefox is only supported by versions 80 and up!
@@ -237,9 +229,13 @@
 <ul>
   <li>Jailbroken or Rooted devices are <strong>not supported</strong>.</li>
   <li>
-    Beta operating systems are <strong>not supported</strong>. While Discord may
-    install and run on a beta version of an operating system, some features of
-    the app may not function correctly.
+    Beta operating systems are <strong>not supported</strong>.
+    <ul>
+      <li>
+        While Discord may install and run on a beta version of an operating
+        system, some features of the app may not function correctly.
+      </li>
+    </ul>
   </li>
   <li>
     Running Discord in a mobile browser is <strong>not supported</strong>.
