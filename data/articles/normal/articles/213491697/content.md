@@ -3,21 +3,10 @@
   possible. Below, you’ll see the minimum operating systems requirements, along
   with what we recommend for the best experience.
 </p>
-<h3 id="01H7XMWB5GVZM2R88W55JTC37M">
-  <span
-    id="docs-internal-guid-f06e34d2-7fff-8101-c027-e78a10813d97"
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    >Devices with older operating systems can run Discord, but may encounter
-    issues. Our support for these devices is limited. For information on devices
-    not supported by Discord, you can check out our </span
-  ><a
-    href="https://support.discord.com/hc/articles/1500005933882"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Unsupported Bug Reports Help Center article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">. </span>
-</h3>
+<div class="info-box">
+  Devices with older operating systems can run Discord, but may encounter
+  issues. Our support for these devices is limited.
+</div>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers: </strong></span
@@ -33,6 +22,7 @@
   </li>
   <li><a href="#h_01H30Q0N5QCNK259ATR3BR4A41" target="_self">Mobile</a></li>
   <li><a href="#h_01H30Q0T863H0VTGBN9BY653ZD" target="_self">Browser</a></li>
+  <li><a href="#h_01JCP4A30YP25B3WPNVWWZJ95A">What is Not Supported? </a></li>
 </ul>
 <h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f">
   <strong>Desktop</strong>
@@ -67,14 +57,20 @@
         <td style="height: 22px; width: 24.7143%">Linux</td>
         <td style="height: 22px; width: 75.1429%">
           <span id="docs-internal-guid-cda60023-7fff-d4da-6d95-ad21b5ae44e0"
-            >Ubuntu 20.04+, Debian 10+, openSUSE 16.2+ and Fedora Linux
-            32+</span
+            >Ubuntu 20.04+ and Debian 11+</span
           >
         </td>
       </tr>
     </tbody>
   </table>
 </div>
+<p>
+  <span class="wysiwyg-underline"
+    ><strong
+      ><span class="wysiwyg-font-size-x-large">Additional Notes:</span></strong
+    ></span
+  >
+</p>
 <p id="docs-internal-guid-c88138a4-7fff-f501-ccc5-5455d96e92cc">
   Check out these articles to learn more about support on Windows and macOS:  
 </p>
@@ -104,25 +100,19 @@
     >
   </li>
 </ul>
-<h3 id="01H7XMWB5HBM563XSP4EFVRNE1">
-  <strong
-    ><em
-      ><span style="color: #434343" data-darkreader-inline-color=""
-        >For Linux</span
-      ></em
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: Because of the variations in both software and hardware for computers
-    running Linux, technical support for this operating system is limited. Our
-    Linux client is based on Chromium, and so the requirements for this version
-    of the app are based on Chrome’s requirements, found </span
-  ><a
+<div class="info-box">
+  <strong>For Linux:</strong> <br />Because of the variations in both software
+  and hardware for computers running Linux, technical support for this operating
+  system is limited.<br />Our Linux client is based on Chromium, and so the
+  requirements for this version of the app are based on Chrome’s requirements,
+  found in this link
+  <a
     href="https://support.google.com/chrome/a/answer/7100626?hl=en"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
+    >here.</a
+  >
+</div>
 <h1 id="h_01H30Q0N5QCNK259ATR3BR4A41"><strong>Mobile</strong></h1>
 <div>
   <table style="width: 100%">
@@ -150,45 +140,44 @@
     </tbody>
   </table>
 </div>
+<p> </p>
 <p>
-  You can find iPhones and iPads supported by iOS 14+
-  <a
-    href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
+  <span class="wysiwyg-underline"
+    ><strong
+      ><span class="wysiwyg-font-size-x-large">Additional Notes:</span></strong
+    ></span
   >
-  and
-  <a
-    href="https://support.apple.com/en-au/guide/ipad/ipad213a25b2/14.0/ipados/14.0"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
 </p>
-<h3 id="01H7XMWB5HZK7MCB3CDX46Q69Y">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For Android: Discord only supports devices that ship with Google Play
-    Services by default. This means some devices, including Amazon Kindles, are
-    not supported.</span
-  >
-</h3>
-<p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
-<p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">
-  Beta operating systems are <strong>not supported</strong>. While Discord may
-  install and run on a beta version of an operating system,
-  <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff"
-    >some features of the app may not function correctly</span
-  >.
-</p>
-<h3 id="docs-internal-guid-f7ea8e91-7fff-df8a-3071-ef5c394e05a0">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Discord has discontinued support for Android 6 with the release of version
-    202. If you are running a device with Android 6, you will no longer receive
-    updates with the latest features and bug fixes. Versions released before 202
-    may stop working after an unspecified amount of time.</span
-  >
-</h3>
+<ul>
+  <li>
+    <strong>For iOS: </strong>You can find iPhones and iPads supported by iOS
+    14+
+    <a
+      href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >
+    and
+    <a
+      href="https://support.apple.com/en-au/guide/ipad/ipad213a25b2/14.0/ipados/14.0"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >.
+  </li>
+  <li>
+    <strong>For Android:</strong> Discord only supports devices that ship with
+    Google Play Services by default. This means some devices, including Amazon
+    Kindles, are not supported.
+  </li>
+</ul>
+<div class="warn-box">
+  Discord has discontinued support for<strong> Android 6</strong> with the
+  release of version 202. If you are running a device with Android 6, you will
+  no longer receive updates with the latest features and bug fixes. Versions
+  released before 202 may stop working after an unspecified amount of time.
+</div>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <div id="docs-internal-guid-c7cde2e9-7fff-56f9-a1d2-a694c6bfeec7">
   <table style="width: 100%">
@@ -203,7 +192,9 @@
       </tr>
       <tr>
         <td style="width: 27.8571%">Google Chrome</td>
-        <td style="width: 72%">N/A</td>
+        <td style="width: 72%">
+          <p>N/A </p>
+        </td>
       </tr>
       <tr>
         <td style="width: 27.8571%">Mozilla Firefox</td>
@@ -228,13 +219,29 @@
     </tbody>
   </table>
 </div>
-<h3 id="01H7XMWB5H11V9R0437YRZBTTS">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: Older browsers may lack functionality with newer features, and voice
-    chat for Firefox is only supported by versions 80 and up!</span
-  >
-</h3>
-<p>Running Discord in a mobile browser is <strong>not supported</strong>.</p>
-<div id="gtx-trans" style="position: absolute; left: 166px; top: 445.391px">
-  <div class="gtx-trans-icon"> </div>
+<div class="info-box">
+  <strong>Note</strong>: Older browsers may lack functionality with newer
+  features, and voice chat for Firefox is only supported by versions 80 and up!
 </div>
+<h1 id="id"><strong>What is Not Supported?</strong></h1>
+<div class="book-box">
+  For more information on devices that are not supported by Discord, you can
+  check out our
+  <a
+    href="https://support.discord.com/hc/articles/1500005933882"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Unsupported Bug Reports Help Center article</a
+  >
+</div>
+<ul>
+  <li>Jailbroken or Rooted devices are <strong>not supported</strong>.</li>
+  <li>
+    Beta operating systems are <strong>not supported</strong>. While Discord may
+    install and run on a beta version of an operating system, some features of
+    the app may not function correctly.
+  </li>
+  <li>
+    Running Discord in a mobile browser is <strong>not supported</strong>.
+  </li>
+</ul>
