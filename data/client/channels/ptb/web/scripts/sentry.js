@@ -12590,7 +12590,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4dde16e1718b4db6f8088a14e88e56832bc3e106",
+            release: "discord_web-fc01895af6c0bd7946ffb560e55d5313db468c26",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12659,8 +12659,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "344999"), "344999"));
-          o.YA("builtAt", String("1731702779827"));
+            o.YA("buildNumber", ((e = "345005"), "345005"));
+          o.YA("builtAt", String("1731703635748"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -14298,6 +14298,13 @@
               [n.MIDNIGHT]: { raw: "PLUM_6", opacity: 1 },
               [n.DARKER]: { raw: "PLUM_6", opacity: 1 },
             },
+            LEADERBOARD_LEAGUE_BRAND_TEXT: {
+              category: "text",
+              [n.DARK]: { raw: "LOL_TEXT_LIGHT", opacity: 1 },
+              [n.LIGHT]: { raw: "LOL_TEXT_DARK", opacity: 1 },
+              [n.MIDNIGHT]: { raw: "LOL_TEXT_LIGHT", opacity: 1 },
+              [n.DARKER]: { raw: "LOL_TEXT_LIGHT", opacity: 1 },
+            },
             LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT: {
               category: "generic",
               [n.DARK]: { raw: "PRIMARY_660", opacity: 0.5 },
@@ -15476,6 +15483,8 @@
               HYPESQUAD_HOUSE_3: "#45ddc0",
               INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
               LOL: "#021f25",
+              LOL_TEXT_DARK: "#94620f",
+              LOL_TEXT_LIGHT: "#cbaa62",
               NEUTRAL_1: "#ffffff",
               NEUTRAL_100: "#000000",
               NEUTRAL_22: "#aeaeb4",
@@ -18254,6 +18263,8 @@
           (a.HYPESQUAD_HOUSE_3 = "hypesquad-house-3"),
           (a.INPUT_PLACEHOLDER_TEXT_DARK = "input-placeholder-text-dark"),
           (a.LOL = "lol"),
+          (a.LOL_TEXT_DARK = "lol-text-dark"),
+          (a.LOL_TEXT_LIGHT = "lol-text-light"),
           (a.NEUTRAL_1 = "neutral-1"),
           (a.NEUTRAL_10 = "neutral-10"),
           (a.NEUTRAL_100 = "neutral-100"),
@@ -19537,6 +19548,8 @@
           "hypesquad-house-3": { hex: "#45ddc0" },
           "input-placeholder-text-dark": { hex: "#87898c" },
           lol: { hex: "#021f25" },
+          "lol-text-dark": { hex: "#94620f" },
+          "lol-text-light": { hex: "#cbaa62" },
           "neutral-1": { hex: "#ffffff" },
           "neutral-10": { hex: "#dcdcde" },
           "neutral-100": { hex: "#000000" },
@@ -20813,6 +20826,8 @@
           HYPESQUAD_HOUSE_3: "#45ddc0",
           INPUT_PLACEHOLDER_TEXT_DARK: "#87898c",
           LOL: "#021f25",
+          LOL_TEXT_DARK: "#94620f",
+          LOL_TEXT_LIGHT: "#cbaa62",
           NEUTRAL_1: "#ffffff",
           NEUTRAL_10: "#dcdcde",
           NEUTRAL_100: "#000000",
@@ -21855,6 +21870,7 @@
           (n.INTERACTIVE_HOVER = "interactive-hover"),
           (n.INTERACTIVE_MUTED = "interactive-muted"),
           (n.INTERACTIVE_NORMAL = "interactive-normal"),
+          (n.LEADERBOARD_LEAGUE_BRAND_TEXT = "leaderboard-league-brand-text"),
           (n.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT =
             "legacy-android-blur-overlay-default"),
           (n.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN =
@@ -23081,6 +23097,12 @@
               _.I.PRIMARY_500,
               _.I.PLUM_6,
               _.I.PLUM_6,
+            ],
+            "leaderboard-league-brand-text": [
+              _.I.LOL_TEXT_LIGHT,
+              _.I.LOL_TEXT_DARK,
+              _.I.LOL_TEXT_LIGHT,
+              _.I.LOL_TEXT_LIGHT,
             ],
             "legacy-android-blur-overlay-default": [
               _.I.PRIMARY_660,
@@ -24802,6 +24824,10 @@
           INPUT_PLACEHOLDER_TEXT_DARK:
             "hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%)",
           LOL: "hsl(190, calc(var(--saturation-factor, 1) * 89.7%), 7.6%)",
+          LOL_TEXT_DARK:
+            "hsl(37, calc(var(--saturation-factor, 1) * 81.6%), 32.0%)",
+          LOL_TEXT_LIGHT:
+            "hsl(41, calc(var(--saturation-factor, 1) * 50.2%), 59.0%)",
           NEUTRAL_1: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           NEUTRAL_10:
             "hsl(240, calc(var(--saturation-factor, 1) * 2.9%), 86.7%)",
@@ -52723,4 +52749,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.594b78eab831a259fbad.js.map
+//# sourceMappingURL=sentry.df13b55a88c457f2adcb.js.map
