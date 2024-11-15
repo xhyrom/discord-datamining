@@ -37718,6 +37718,12 @@ html.disable-forced-colors * {
     calc(var(--saturation-factor, 1) * 2.128%) 53.922%;
   --lol: hsl(var(--lol-hsl) / 1);
   --lol-hsl: 190.286 calc(var(--saturation-factor, 1) * 89.744%) 7.647%;
+  --lol-text-dark: hsl(var(--lol-text-dark-hsl) / 1);
+  --lol-text-dark-hsl: 37.444 calc(var(--saturation-factor, 1) * 81.595%)
+    31.961%;
+  --lol-text-light: hsl(var(--lol-text-light-hsl) / 1);
+  --lol-text-light-hsl: 41.143 calc(var(--saturation-factor, 1) * 50.239%)
+    59.02%;
   --neutral-1: hsl(var(--neutral-1-hsl) / 1);
   --neutral-1-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
   --neutral-10: hsl(var(--neutral-10-hsl) / 1);
@@ -39634,6 +39640,7 @@ html.disable-forced-colors * {
   --interactive-hover: var(--primary-230);
   --interactive-muted: var(--primary-500);
   --interactive-normal: var(--primary-330);
+  --leaderboard-league-brand-text: var(--lol-text-light);
   --legacy-android-blur-overlay-default: hsl(var(--primary-660-hsl) / 0.5);
   --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-hsl) / 0.025);
   --legacy-blur-fallback-default: hsl(var(--primary-660-hsl) / 0.975);
@@ -40489,6 +40496,11 @@ html.disable-forced-colors * {
       var(--primary-330) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --leaderboard-league-brand-text: color-mix(
+      in oklab,
+      var(--lol-text-light) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --legacy-android-blur-overlay-default: color-mix(
       in oklab,
       hsl(var(--primary-660-hsl) / 0.5) 100%,
@@ -41291,6 +41303,7 @@ html.disable-forced-colors * {
   --interactive-hover: var(--primary-600);
   --interactive-muted: var(--primary-300);
   --interactive-normal: var(--primary-500);
+  --leaderboard-league-brand-text: var(--lol-text-dark);
   --legacy-android-blur-overlay-default: hsl(var(--primary-130-hsl) / 0.1);
   --legacy-android-blur-overlay-ultra-thin: hsl(var(--white-hsl) / 0.25);
   --legacy-blur-fallback-default: hsl(var(--primary-230-hsl) / 0.975);
@@ -42146,6 +42159,11 @@ html.disable-forced-colors * {
       var(--primary-500) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --leaderboard-league-brand-text: color-mix(
+      in oklab,
+      var(--lol-text-dark) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --legacy-android-blur-overlay-default: color-mix(
       in oklab,
       hsl(var(--primary-130-hsl) / 0.1) 100%,
@@ -42951,6 +42969,7 @@ html.disable-forced-colors * {
   --interactive-hover: var(--plum-4);
   --interactive-muted: var(--plum-13);
   --interactive-normal: var(--plum-6);
+  --leaderboard-league-brand-text: var(--lol-text-light);
   --legacy-android-blur-overlay-default: hsl(var(--primary-660-hsl) / 0.5);
   --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-hsl) / 0.025);
   --legacy-blur-fallback-default: hsl(var(--primary-660-hsl) / 0.975);
@@ -43806,6 +43825,11 @@ html.disable-forced-colors * {
       var(--plum-6) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --leaderboard-league-brand-text: color-mix(
+      in oklab,
+      var(--lol-text-light) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --legacy-android-blur-overlay-default: color-mix(
       in oklab,
       hsl(var(--primary-660-hsl) / 0.5) 100%,
@@ -44612,6 +44636,7 @@ html.disable-forced-colors * {
   --interactive-hover: var(--plum-4);
   --interactive-muted: var(--plum-13);
   --interactive-normal: var(--plum-6);
+  --leaderboard-league-brand-text: var(--lol-text-light);
   --legacy-android-blur-overlay-default: hsl(var(--primary-660-hsl) / 0.5);
   --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-hsl) / 0.025);
   --legacy-blur-fallback-default: hsl(var(--primary-660-hsl) / 0.975);
@@ -45465,6 +45490,11 @@ html.disable-forced-colors * {
     --interactive-normal: color-mix(
       in oklab,
       var(--plum-6) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --leaderboard-league-brand-text: color-mix(
+      in oklab,
+      var(--lol-text-light) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --legacy-android-blur-overlay-default: color-mix(
@@ -50856,4 +50886,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.d5454a644c0c1ae0cbc3.css.map*/
+/*# sourceMappingURL=12633.3b2a4d51afd71aab07a0.css.map*/
