@@ -10430,23 +10430,6 @@ div.modalHeader_c5e09c {
 .selected_c18810:active {
   border-color: var(--brand-500);
 }
-@keyframes placeholderPulse_d82d0d {
-  0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 0.2;
-  }
-}
-.placeholderSkeleton_d82d0d {
-  border-radius: 8px;
-  background: var(--bg-mod-faint);
-  opacity: 0.2;
-  animation: placeholderPulse_d82d0d 3s ease-in-out infinite;
-}
 .gameImageContainer_fda254 {
   position: relative;
   width: 24px;
@@ -50806,4 +50789,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.a5689dcc204843b351a9.css.map*/
+/*# sourceMappingURL=12633.46815a9cc84b891787df.css.map*/
