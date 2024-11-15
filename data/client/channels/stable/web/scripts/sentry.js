@@ -6428,12 +6428,6 @@
               "/guilds/".concat(e, "/discovery-checklist"),
             GUILD_DISCOVERY_REQUIREMENTS: (e) =>
               "/guilds/".concat(e, "/discovery-requirements"),
-            DISCOVERY_ALL_GAMES: "/discovery/games/all",
-            DISCOVERY_RECOMMENDATIONS: "/discovery/recommendations",
-            DISCOVERY_GUILD_PROFILES: "/discovery/guilds",
-            GUILD_DISCOVERY_SAVED_GUILDS: "/users/@me/saved-guilds",
-            GUILD_DISCOVERY_SAVED_GUILDS_BULK: "/users/@me/saved-guilds-bulk",
-            GUILD_RECOMMENDATIONS: () => "/guild-recommendations",
             GUILD_EMOJIS: (e) => "/guilds/".concat(e, "/emojis"),
             GUILD_EMOJI: (e, t) => "/guilds/".concat(e, "/emojis/").concat(t),
             GUILD_AUDIT_LOG: (e) => "/guilds/".concat(e, "/audit-logs"),
@@ -12590,7 +12584,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-aaf3ed96b353fb1bb09290b3e0001df2e179de54",
+            release: "discord_web-4973e66324d3413fe276fa6c45ecf045af0314f3",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12659,8 +12653,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "345081"), "345081"));
-          o.YA("builtAt", String("1731708394975"));
+            o.YA("buildNumber", ((e = "345150"), "345150"));
+          o.YA("builtAt", String("1731713824707"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -52749,4 +52743,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.6d74ef7c1746ccc16adc.js.map
+//# sourceMappingURL=sentry.66f8234fa45d553c0bf1.js.map
