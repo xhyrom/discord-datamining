@@ -12093,6 +12093,9 @@ div.cardContainer_c22357 {
 .freeTrialPill_c87d73.freeTrialPillTier2GradientFill_c87d73 {
   background: var(--custom-premium-colors-premium-gradient-tier-2);
 }
+.freeTrialPill_c87d73.greyBackgroundPill_c87d73 {
+  background: var(--primary-500);
+}
 .freeTrialPill_c87d73.freeTrialPillTier2OldGradientFill_c87d73 {
   background: var(--custom-premium-colors-premium-gradient-tier-2-old);
 }
@@ -50789,4 +50792,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.46815a9cc84b891787df.css.map*/
+/*# sourceMappingURL=12633.8ef7fd4f73ecd4c3e44f.css.map*/
