@@ -13945,6 +13945,82 @@ span.clanTag_a31c43 {
 .actionButton_f5dff0 {
   margin-left: auto;
 }
+.popoutWrapper_ccc074 {
+  position: relative;
+  left: -30px;
+  width: 200px;
+  display: flex;
+  max-height: 40vh;
+}
+.scroller_ccc074 {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: var(--background-floating);
+}
+.avatars_ccc074 {
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  position: relative;
+}
+.avatar_ccc074 {
+  margin-left: -2px;
+  -webkit-mask: url(/assets/e8de2050ff99e00963e3.svg);
+  mask: url(/assets/e8de2050ff99e00963e3.svg);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  mask-type: alpha;
+}
+.avatar_ccc074:first-child {
+  margin-left: 0;
+}
+.avatar_ccc074:last-child {
+  -webkit-mask: none;
+  mask: none;
+}
+.overflow_ccc074 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  width: auto;
+  height: 24px;
+  border-radius: 16px;
+  background-color: var(--background-tertiary);
+}
+.container_bf3873 {
+  margin-bottom: 24px;
+}
+.appContainer_bf3873 {
+  padding: 16px;
+  border: 1px solid var(--background-modifier-accent);
+  border-radius: 8px;
+}
+.header_bf3873 {
+  margin-bottom: 8px;
+  color: var(--header-secondary);
+}
+.appInfo_bf3873 {
+  display: flex;
+  align-items: center;
+}
+.appIconMask_bf3873 {
+  margin-right: 16px;
+  min-width: 32px;
+  min-height: 32px;
+}
+.appIcon_bf3873 {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.textContainer_bf3873 {
+  display: flex;
+  flex-direction: column;
+}
+.guildStack_bf3873 {
+  margin-top: 4px;
+}
 .container_d74c59 {
   margin-bottom: 24px;
 }
@@ -17968,49 +18044,6 @@ h3.improved_f017d0:after {
   font-weight: 600;
 }
 .memberListItem_d22f5a:not(.popoutDisabled_d22f5a):hover {
-  background-color: var(--background-tertiary);
-}
-.popoutWrapper_ccc074 {
-  position: relative;
-  left: -30px;
-  width: 200px;
-  display: flex;
-  max-height: 40vh;
-}
-.scroller_ccc074 {
-  border-radius: 4px;
-  padding: 8px 16px;
-  background-color: var(--background-floating);
-}
-.avatars_ccc074 {
-  display: flex;
-  flex-grow: 0;
-  align-items: center;
-  position: relative;
-}
-.avatar_ccc074 {
-  margin-left: -2px;
-  -webkit-mask: url(/assets/e8de2050ff99e00963e3.svg);
-  mask: url(/assets/e8de2050ff99e00963e3.svg);
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  mask-type: alpha;
-}
-.avatar_ccc074:first-child {
-  margin-left: 0;
-}
-.avatar_ccc074:last-child {
-  -webkit-mask: none;
-  mask: none;
-}
-.overflow_ccc074 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 8px;
-  width: auto;
-  height: 24px;
-  border-radius: 16px;
   background-color: var(--background-tertiary);
 }
 .upsellTooltipWrapper_dafa63 {
@@ -50792,4 +50825,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8ef7fd4f73ecd4c3e44f.css.map*/
+/*# sourceMappingURL=12633.b712aacf58fbb80beee6.css.map*/
