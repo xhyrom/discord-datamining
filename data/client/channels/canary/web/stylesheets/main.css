@@ -15747,7 +15747,7 @@ span.clanTag_a31c43 {
 }
 .container_bc01cf {
   border-radius: 8px;
-  padding: 0 16px;
+  padding-left: 16px;
   height: 32px;
   box-sizing: border-box;
   display: flex;
@@ -15757,6 +15757,37 @@ span.clanTag_a31c43 {
 .title_bc01cf {
   color: var(--content-inventory-overlay-text-secondary);
   flex: 1;
+}
+.textContainer_bc01cf {
+  display: flex;
+  align-items: baseline;
+}
+.username_bc01cf {
+  margin-right: 4px;
+}
+.statsText_bc01cf {
+  margin-right: 16px;
+}
+.heroArtContainer_bc01cf {
+  height: 32px;
+  width: 32px;
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+}
+.heroArt_bc01cf {
+  --custom-crop-width: 2px;
+  width: calc(100% + 4px);
+  width: calc(100% + 2 * var(--custom-crop-width));
+  height: calc(100% + 4px);
+  height: calc(100% + 2 * var(--custom-crop-width));
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: -2px -2px;
+  object-position: -2px -2px;
+  -o-object-position: calc(-1 * var(--custom-crop-width))
+    calc(-1 * var(--custom-crop-width));
+  object-position: calc(-1 * var(--custom-crop-width))
+    calc(-1 * var(--custom-crop-width));
 }
 .heroContainer_e12502 {
   height: 112px;
@@ -50825,4 +50856,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.b712aacf58fbb80beee6.css.map*/
+/*# sourceMappingURL=12633.d5454a644c0c1ae0cbc3.css.map*/
