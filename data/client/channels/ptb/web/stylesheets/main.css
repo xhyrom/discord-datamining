@@ -10363,6 +10363,81 @@ div.modalHeader_c5e09c {
   mask-repeat: no-repeat;
   margin-right: -6px;
 }
+.gameImageContainer_d987e8 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1.5px solid transparent;
+}
+.highlighted_d987e8 {
+  background-color: var(--border-strong);
+  border-radius: 5px;
+}
+.extraGameCount_d987e8 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--bg-backdrop);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.gameActivityLevel_d987e8 {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: var(--background-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameActivityLevelInner_d987e8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+.gameImage_d987e8 {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.tooltipText_d987e8 {
+  text-align: center;
+}
+.tooltipGameImageContainer_d987e8 {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+.tooltipGameImage_d987e8 {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.tooltipGameName_d987e8 {
+  flex: 1;
+}
+.tooltipGames_d987e8 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tooltipGame_d987e8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
 .guildIconImage_a2e41e {
   width: 100%;
   height: 100%;
@@ -10430,82 +10505,7 @@ div.modalHeader_c5e09c {
 .selected_c18810:active {
   border-color: var(--brand-500);
 }
-.gameImageContainer_fda254 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1.5px solid transparent;
-}
-.highlighted_fda254 {
-  background-color: var(--border-strong);
-  border-radius: 5px;
-}
-.extraGameCount_fda254 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: var(--bg-backdrop);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-}
-.gameActivityLevel_fda254 {
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  border-radius: 50%;
-  background-color: var(--background-tertiary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gameActivityLevelInner_fda254 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-.gameImage_fda254 {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-}
-.tooltipText_fda254 {
-  text-align: center;
-}
-.tooltipGameImageContainer_fda254 {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 16px;
-}
-.tooltipGameImage_fda254 {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-}
-.tooltipGameName_fda254 {
-  flex: 1;
-}
-.tooltipGames_fda254 {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.tooltipGame_fda254 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-.clickableCard_e0fe28 {
+.clickableCard_c9a4c0 {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: var(--shadow-low);
@@ -10514,26 +10514,26 @@ div.modalHeader_c5e09c {
   width: 100%;
   height: 400px;
 }
-.clickableCard_e0fe28:hover .card_e0fe28 {
+.clickableCard_c9a4c0:hover .card_c9a4c0 {
   box-shadow: var(--shadow-high);
   transform: translatey(-2px);
 }
-.clickableCard_e0fe28:active .card_e0fe28 {
+.clickableCard_c9a4c0:active .card_c9a4c0 {
   box-shadow: var(--shadow-low);
   transform: translatey(-2px) scale(0.99);
 }
-.clickableCard_e0fe28:active .card_e0fe28:has(.favoriteButton_e0fe28:hover) {
+.clickableCard_c9a4c0:active .card_c9a4c0:has(.favoriteButton_c9a4c0:hover) {
   box-shadow: var(--shadow-high);
   transform: translatey(-2px);
 }
-.applyToJoinButton_e0fe28 {
+.applyToJoinButton_c9a4c0 {
   padding: 12px;
   padding-top: 0;
 }
-.applyToJoinContainer_e0fe28 {
+.applyToJoinContainer_c9a4c0 {
   height: 427px !important;
 }
-.card_e0fe28 {
+.card_c9a4c0 {
   min-width: 240px;
   max-width: 500px;
   width: 100%;
@@ -10545,14 +10545,14 @@ div.modalHeader_c5e09c {
   flex-direction: column;
   box-sizing: border-box;
 }
-.full-motion .card_e0fe28 {
+.full-motion .card_c9a4c0 {
   transition: transform.2s, box-shadow.1s;
 }
-.skeletonCard_e0fe28 {
+.skeletonCard_c9a4c0 {
   height: 100%;
   background-color: var(--bg-base-tertiary);
 }
-.favoriteButton_e0fe28 {
+.favoriteButton_c9a4c0 {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -10567,44 +10567,44 @@ div.modalHeader_c5e09c {
     opacity.2s ease-in-out,
     background-color 64ms ease-in-out;
 }
-.shownFavoriteButton_e0fe28 {
+.shownFavoriteButton_c9a4c0 {
   opacity: 1;
 }
-.favoriteButton_e0fe28:hover,
-.favoriteButton_e0fe28:active {
+.favoriteButton_c9a4c0:hover,
+.favoriteButton_c9a4c0:active {
   background-color: var(--bg-surface-raised);
 }
-.cardStaticHeight_e0fe28 {
+.cardStaticHeight_c9a4c0 {
   height: 400px;
 }
-.header_e0fe28 {
+.header_c9a4c0 {
   position: relative;
 }
-.clanIconMask_e0fe28 {
+.clanIconMask_c9a4c0 {
   position: absolute;
   width: 70px;
   height: 70px;
   top: -51px;
 }
-.clanIconInner_e0fe28 {
+.clanIconInner_c9a4c0 {
   background-color: var(--bg-surface-overlay);
   padding: 3px;
 }
-.skeletonIconInner_e0fe28 {
+.skeletonIconInner_c9a4c0 {
   background-color: var(--bg-base-tertiary);
   padding: 3px;
   overflow: hidden;
   border-radius: 12px;
 }
-.skeletonIcon_e0fe28 {
+.skeletonIcon_c9a4c0 {
   border-radius: 16px;
 }
-.clanBadge_e0fe28 {
+.clanBadge_c9a4c0 {
   position: absolute;
   right: 12px;
   top: 12px;
 }
-.cardBrandingHeader_e0fe28 {
+.cardBrandingHeader_c9a4c0 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10612,15 +10612,15 @@ div.modalHeader_c5e09c {
   height: 100px;
   width: 100%;
 }
-.clanBannerPreview_e0fe28 {
+.clanBannerPreview_c9a4c0 {
   height: 98px;
   margin-top: -2px;
 }
-.cardBrandingFooter_e0fe28 {
+.cardBrandingFooter_c9a4c0 {
   height: 8px;
   width: 100%;
 }
-.headerBadge_e0fe28 {
+.headerBadge_c9a4c0 {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -10631,33 +10631,33 @@ div.modalHeader_c5e09c {
   padding: 4px 8px;
   border-radius: 12px;
 }
-.cardContent_e0fe28 {
+.cardContent_c9a4c0 {
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
 }
-.cardContentTitleSection_e0fe28 {
+.cardContentTitleSection_c9a4c0 {
   flex: 0 0 auto;
 }
-.cardContentDescriptionSection_e0fe28 {
+.cardContentDescriptionSection_c9a4c0 {
   flex: 1 1 auto;
 }
-.cardContentDescriptionCollapsed_e0fe28 {
+.cardContentDescriptionCollapsed_c9a4c0 {
   max-height: 64px;
 }
-.cardNameAndTagWrapper_e0fe28 {
+.cardNameAndTagWrapper_c9a4c0 {
   position: relative;
   width: 100%;
   margin-bottom: 8px;
 }
-.clanTagChipletWrapper_e0fe28 {
+.clanTagChipletWrapper_c9a4c0 {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-.clanTagChiplet_e0fe28 {
+.clanTagChiplet_c9a4c0 {
   display: flex;
   gap: 4px;
   justify-content: center;
@@ -10667,13 +10667,13 @@ div.modalHeader_c5e09c {
   padding: 2px 6px;
   transition: border-color.2s ease-in-out;
 }
-.clanTagChiplet_e0fe28:hover {
+.clanTagChiplet_c9a4c0:hover {
   border-color: var(--border-strong);
 }
-.playstyle_e0fe28 {
+.playstyle_c9a4c0 {
   color: var(--role-orange);
 }
-.traitsContainer_e0fe28 {
+.traitsContainer_c9a4c0 {
   height: 52px;
   flex: 0 0 auto;
   display: flex;
@@ -10682,14 +10682,14 @@ div.modalHeader_c5e09c {
   gap: 4px;
   padding: 8px 0 0;
 }
-.thinTrait_e0fe28 {
+.thinTrait_c9a4c0 {
   padding: 4px 8px;
   gap: 4px;
   max-width: 200px;
   height: 24px;
   box-sizing: border-box;
 }
-.cardFooter_e0fe28 {
+.cardFooter_c9a4c0 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10697,39 +10697,39 @@ div.modalHeader_c5e09c {
   border-top: 1px solid var(--border-subtle);
   min-height: 24px;
 }
-.cardFooterInfo_e0fe28 {
+.cardFooterInfo_c9a4c0 {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.cardFooterMembers_e0fe28 {
+.cardFooterMembers_c9a4c0 {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.cardFooterMembersIcon_e0fe28 {
+.cardFooterMembersIcon_c9a4c0 {
   width: 12px;
   height: 12px;
   color: var(--text-secondary);
 }
-.cardFooterGames_e0fe28 {
+.cardFooterGames_c9a4c0 {
   display: flex;
   gap: 2px;
 }
-.overflowTooltip_e0fe28 {
+.overflowTooltip_c9a4c0 {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
 }
-.clanInfoRow_e0fe28 {
+.clanInfoRow_c9a4c0 {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.clanInfoItem_e0fe28 {
+.clanInfoItem_c9a4c0 {
   flex: 0 0 auto;
 }
-.wildCardText_e0fe28 {
+.wildCardText_c9a4c0 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -10737,33 +10737,33 @@ div.modalHeader_c5e09c {
   font-size: 12px;
   font-weight: 600;
 }
-.nameText_e0fe28 {
+.nameText_c9a4c0 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
-.bannerImage_e0fe28 {
+.bannerImage_c9a4c0 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.selectedTrait_e0fe28 {
+.selectedTrait_c9a4c0 {
   border-color: var(--border-strong);
   background: var(--bg-surface-raised);
 }
-.selectedTrait_e0fe28:hover,
-.selectedTrait_e0fe28:active {
+.selectedTrait_c9a4c0:hover,
+.selectedTrait_c9a4c0:active {
   border-color: var(--border-strong);
 }
-.full-motion .animateButtonIn_e0fe28 {
-  animation: pulseIn_e0fe28.3s;
+.full-motion .animateButtonIn_c9a4c0 {
+  animation: pulseIn_c9a4c0.3s;
 }
-.full-motion .animateButtonOut_e0fe28 {
-  animation: pulseOut_e0fe28.2s;
+.full-motion .animateButtonOut_c9a4c0 {
+  animation: pulseOut_c9a4c0.2s;
 }
-@keyframes pulseIn_e0fe28 {
+@keyframes pulseIn_c9a4c0 {
   0% {
     transform: scale(1);
   }
@@ -10774,7 +10774,7 @@ div.modalHeader_c5e09c {
     transform: scale(1);
   }
 }
-@keyframes pulseOut_e0fe28 {
+@keyframes pulseOut_c9a4c0 {
   0% {
     transform: scale(1);
   }
@@ -50916,4 +50916,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8167a6c77d4e9cabf398.css.map*/
+/*# sourceMappingURL=12633.fd6fd05a175f4fc8123a.css.map*/
