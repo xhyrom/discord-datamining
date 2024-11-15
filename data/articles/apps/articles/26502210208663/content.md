@@ -2,33 +2,29 @@
 <ul>
   <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD28DAP9D6QJXHC1KMF"
+      href="https://support-apps.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD28DAP9D6QJXHC1KMF"
       >What is Lofi?</a
     >
   </li>
   <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2Q8D5BHMTCS3C2ZV1"
+      href="https://support-apps.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2Q8D5BHMTCS3C2ZV1"
       >How to Start Lofi</a
     >
   </li>
   <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2BX7FGF86Z0HJH16S"
+      href="https://support-apps.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2BX7FGF86Z0HJH16S"
       >How to Customize Lofi</a
     >
   </li>
   <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2XCCQVMZSCPS2N18E"
+      href="https://support-apps.discord.com/hc/en-us/articles/26327745164311#h_01J7KGNMD2XCCQVMZSCPS2N18E"
       >Frequently Asked Questions</a
     >
   </li>
 </ul>
-<div class="tip-box">
-  <strong>Note:</strong> This activity is currently only available to a limited
-  number of users.
-</div>
 <h1 id="h_01J7KGNMD28DAP9D6QJXHC1KMF">What is Lofi?</h1>
 <p>
   Lofi is an Activity developed by Discord. Vibe with your friends with lofi
