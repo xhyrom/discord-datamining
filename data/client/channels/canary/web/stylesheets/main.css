@@ -16085,6 +16085,13 @@ span.clanTag_a31c43 {
   height: 16px;
   width: 16px;
 }
+.userRow_cf8a7d .copyLinkContainer_cf8a7d[aria-busy="false"] {
+  cursor: pointer;
+}
+.userRow_cf8a7d .copyLinkContainer_cf8a7d > .copyLink_cf8a7d,
+.userRow_cf8a7d .copyLinkContainer_cf8a7d .copySpinner_cf8a7d {
+  pointer-events: none;
+}
 .userRow_cf8a7d:hover {
   background: var(--background-modifier-hover);
 }
@@ -16155,7 +16162,6 @@ span.clanTag_a31c43 {
   width: 16px;
 }
 .copyLink_cf8a7d {
-  cursor: pointer;
   color: red;
 }
 .badgesContainer_cf8a7d {
@@ -50910,4 +50916,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ec8a91fa377836ecf82b.css.map*/
+/*# sourceMappingURL=12633.8167a6c77d4e9cabf398.css.map*/
