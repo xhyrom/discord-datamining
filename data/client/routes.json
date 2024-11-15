@@ -1687,6 +1687,10 @@
       "POST"
     ]
   },
+  "AGE_ASSURANCE_TEST": {
+    "url": "/age-verification/test",
+    "allowed_methods": null
+  },
   "EXPERIMENTS": {
     "url": "/experiments",
     "allowed_methods": [
@@ -4127,13 +4131,6 @@
   },
   "DISABLE_CLAN": {
     "url": "/clan/:param/disable",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "JOIN_WUMPUS_FEEDBACK_SQUAD": {
-    "url": "/guilds/:param/join-wfs-server",
     "allowed_methods": [
       "OPTIONS",
       "POST"
