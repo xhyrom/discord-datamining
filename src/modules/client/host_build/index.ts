@@ -182,7 +182,7 @@ export class HostBuild implements Module {
     const manifest = await fetch(
       `https://canary.discord.com/api/updates/distributions/app/manifests/latest?platform=win&channel=${
         this.#channel.displayType
-      }&arch=x86`,
+      }&arch=x64`,
     );
     if (!manifest.ok) return null;
 
