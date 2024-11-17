@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.892",
+    "module_version": 1,
+    "package_sha256": "47fbc9c5b706deaf7916a01b3f409c9ff6e09720ba950491d71006fdc7a7ed5b",
+    "url": "https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.892/discord_desktop_overlay/1/full.distro"
+  },
+  "deltas": []
+}
