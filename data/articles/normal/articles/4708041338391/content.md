@@ -5,35 +5,14 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/4708041338391#h_01HSEBQ49D4SG1R2H73GPEEDDY"
-      >Recurring Members</a
-    >
+    <a href="#h_01HSEBQ49D4SG1R2H73GPEEDDY">Recurring Memberships</a>
     <ul>
+      <li><a href="#h_01HSEBQ49DN5HKPAXMTWZG4YRE">Nitro</a></li>
+      <li><a href="#h_01HSEBQ49D83Q2D94KF89HAGJS">Boosting</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4708041338391#h_01HSEBQ49DN5HKPAXMTWZG4YRE"
-          >Nitro</a
-        >
+        <a href="#h_01HSEBQ49D5M7DG1PJ5MCJQFDZ">Gifting and Gift Redemptions</a>
       </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4708041338391#h_01HSEBQ49D83Q2D94KF89HAGJS"
-          >Boosting</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4708041338391#h_01HSEBQ49D5M7DG1PJ5MCJQFDZ"
-          >Gifting and Gift Redemptions</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4708041338391#h_01HSEBQ49DSKQFGFQZ524MPR8X"
-          >Refunds</a
-        >
-      </li>
+      <li><a href="#h_01HSEBQ49DSKQFGFQZ524MPR8X">Refunds</a></li>
     </ul>
   </li>
 </ul>
@@ -48,8 +27,8 @@
     class="discussion-level-1 discussion-id-067625b3-b689-4d57-88bb-8c23cacaacda notion-enable-hover"
     data-token-index="0"
     data-reactroot=""
-    >Recurring Members
-  </span>
+    >Recurring Memberships</span
+  >
 </h1>
 <p id="docs-internal-guid-3c78421c-7fff-1d69-13e8-e8acf809c6eb">
   If you are located in Russia or use a Russian payment method, your membership
