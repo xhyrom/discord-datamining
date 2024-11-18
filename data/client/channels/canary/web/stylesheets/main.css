@@ -9769,6 +9769,9 @@ div.modalHeader_c5e09c {
   align-items: flex-start;
   transition: margin-top.2s ease;
 }
+.buttonOverlayActionsRefresh_f40049:focus-within {
+  margin-top: 0;
+}
 .secondaryButton_f40049 {
   color: var(--interactive-normal);
   display: flex;
@@ -50915,4 +50918,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8554626d01330958499d.css.map*/
+/*# sourceMappingURL=12633.71c5cfffc15a8730a780.css.map*/
