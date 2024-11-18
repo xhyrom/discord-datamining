@@ -55,7 +55,7 @@
   >.
 </div>
 <h1 id="h_01GSTZJYY12DCBEATVC6J4H6TD">
-  <span style="font-weight: 400">Logging into Your Account</span>
+  <strong>Logging into Your Account</strong>
 </h1>
 <p id="docs-internal-guid-267d046f-7fff-8021-b942-49aabd4f4b12">
   If you’re on a browser, start by heading to<a
