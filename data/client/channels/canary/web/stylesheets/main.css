@@ -39490,9 +39490,6 @@ html.disable-forced-colors * {
   --background-primary: var(--primary-600);
   --background-secondary: var(--primary-630);
   --background-secondary-alt: var(--primary-660);
-  --background-surface-high: var(--neutral-64);
-  --background-surface-higher: var(--neutral-60);
-  --background-surface-highest: var(--neutral-56);
   --background-tertiary: var(--primary-700);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -39943,21 +39940,6 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-660) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-high: color-mix(
-      in oklab,
-      var(--neutral-64) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-higher: color-mix(
-      in oklab,
-      var(--neutral-60) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-highest: color-mix(
-      in oklab,
-      var(--neutral-56) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -41153,9 +41135,6 @@ html.disable-forced-colors * {
   --background-primary: var(--white);
   --background-secondary: var(--primary-130);
   --background-secondary-alt: var(--primary-160);
-  --background-surface-high: var(--neutral-4);
-  --background-surface-higher: var(--neutral-1);
-  --background-surface-highest: var(--neutral-1);
   --background-tertiary: var(--primary-200);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -41606,21 +41585,6 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--primary-160) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-high: color-mix(
-      in oklab,
-      var(--neutral-4) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-higher: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-highest: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -42819,9 +42783,6 @@ html.disable-forced-colors * {
   --background-primary: var(--black);
   --background-secondary: var(--plum-23);
   --background-secondary-alt: var(--plum-17);
-  --background-surface-high: var(--neutral-88);
-  --background-surface-higher: var(--neutral-84);
-  --background-surface-highest: var(--neutral-80);
   --background-tertiary: var(--plum-19);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -43271,21 +43232,6 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-17) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-high: color-mix(
-      in oklab,
-      var(--neutral-88) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-higher: color-mix(
-      in oklab,
-      var(--neutral-84) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-highest: color-mix(
-      in oklab,
-      var(--neutral-80) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -44486,9 +44432,6 @@ html.disable-forced-colors * {
   --background-primary: var(--plum-20);
   --background-secondary: var(--plum-18);
   --background-secondary-alt: var(--plum-15);
-  --background-surface-high: var(--neutral-72);
-  --background-surface-higher: var(--neutral-68);
-  --background-surface-highest: var(--neutral-64);
   --background-tertiary: var(--plum-16);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
@@ -44938,21 +44881,6 @@ html.disable-forced-colors * {
     --background-secondary-alt: color-mix(
       in oklab,
       var(--plum-15) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-high: color-mix(
-      in oklab,
-      var(--neutral-72) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-higher: color-mix(
-      in oklab,
-      var(--neutral-68) 100%,
-      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
-    );
-    --background-surface-highest: color-mix(
-      in oklab,
-      var(--neutral-64) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
@@ -48949,16 +48877,35 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-30);
   --channels-default: var(--neutral-30);
   --header-secondary: var(--neutral-27);
+  --icon-primary: var(--neutral-10);
+  --icon-secondary: var(--neutral-22);
   --input-background: hsl(var(--white-hsl) / 0.04);
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
+  --text-brand: var(--blurple-28);
   --text-link: var(--blue-new-34);
   --text-muted: var(--neutral-24);
   --text-normal: var(--neutral-7);
   --text-positive: var(--green-new-32);
   --text-primary: var(--neutral-7);
-  --text-secondary: var(--neutral-27);
+  --text-secondary: var(--neutral-22);
   --text-warning: var(--yellow-new-34);
-  --text-feedback-positive: var(--green-new-32);
+  --background-base-low: var(--neutral-81);
+  --background-base-lower: var(--neutral-79);
+  --background-base-lowest: var(--neutral-77);
+  --background-feedback-critical: var(--red-new-94);
+  --background-feedback-info: var(--blue-new-100);
+  --background-feedback-positive: var(--green-new-100);
+  --background-feedback-warning: var(--yellow-new-100);
+  --background-surface-high: var(--neutral-64);
+  --background-surface-higher: var(--neutral-65);
+  --background-surface-highest: var(--neutral-66);
+  --icon-default: var(--neutral-7);
+  --icon-tertiary: var(--neutral-24);
+  --text-feedback-critical: var(--red-new-22);
+  --text-feedback-info: var(--blue-new-24);
+  --text-feedback-positive: var(--green-new-23);
+  --text-feedback-warning: var(--yellow-new-22);
+  --text-tertiary: var(--neutral-24);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .visual-refresh.theme-dark,
@@ -49014,6 +48961,16 @@ html.disable-forced-colors * {
       var(--neutral-27) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --icon-primary: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-secondary: color-mix(
+      in oklab,
+      var(--neutral-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --input-background: color-mix(
       in oklab,
       hsl(var(--white-hsl) / 0.04) 100%,
@@ -49025,6 +48982,11 @@ html.disable-forced-colors * {
       hsl(var(--white-hsl) / 0.04) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.04)
         var(--theme-base-color-amount, 0%)
+    );
+    --text-brand: color-mix(
+      in oklab,
+      var(--blurple-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-link: color-mix(
       in oklab,
@@ -49053,7 +49015,7 @@ html.disable-forced-colors * {
     );
     --text-secondary: color-mix(
       in oklab,
-      var(--neutral-27) 100%,
+      var(--neutral-22) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-warning: color-mix(
@@ -49061,9 +49023,89 @@ html.disable-forced-colors * {
       var(--yellow-new-34) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-81) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-79) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-77) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-positive: color-mix(
+      in oklab,
+      var(--green-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-66) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --icon-default: color-mix(
+      in oklab,
+      var(--neutral-7) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-tertiary: color-mix(
+      in oklab,
+      var(--neutral-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-32) 100%,
+      var(--green-new-23) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-tertiary: color-mix(
+      in oklab,
+      var(--neutral-24) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
   }
@@ -49081,16 +49123,35 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-41);
   --channels-default: var(--neutral-41);
   --header-secondary: var(--neutral-41);
+  --icon-primary: var(--neutral-81);
+  --icon-secondary: var(--neutral-60);
   --input-background: hsl(var(--black-hsl) / 0.04);
   --input-focused-border: hsl(var(--black-hsl) / 0.04);
+  --text-brand: var(--blurple-69);
   --text-link: var(--blue-new-56);
   --text-muted: var(--neutral-55);
   --text-normal: var(--neutral-89);
   --text-positive: var(--green-new-56);
   --text-primary: var(--neutral-89);
-  --text-secondary: var(--neutral-41);
+  --text-secondary: var(--neutral-60);
   --text-warning: var(--yellow-new-52);
-  --text-feedback-positive: var(--green-new-56);
+  --background-base-low: var(--neutral-7);
+  --background-base-lower: var(--neutral-6);
+  --background-base-lowest: var(--neutral-5);
+  --background-feedback-critical: var(--red-new-9);
+  --background-feedback-info: var(--blue-new-9);
+  --background-feedback-positive: var(--green-new-9);
+  --background-feedback-warning: var(--yellow-new-9);
+  --background-surface-high: var(--neutral-4);
+  --background-surface-higher: var(--neutral-5);
+  --background-surface-highest: var(--neutral-6);
+  --icon-default: var(--neutral-89);
+  --icon-tertiary: var(--neutral-55);
+  --text-feedback-critical: var(--red-new-71);
+  --text-feedback-info: var(--blue-new-72);
+  --text-feedback-positive: var(--green-new-72);
+  --text-feedback-warning: var(--yellow-new-71);
+  --text-tertiary: var(--neutral-55);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .visual-refresh.theme-light,
@@ -49152,6 +49213,16 @@ html.disable-forced-colors * {
       var(--neutral-41) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --icon-primary: color-mix(
+      in oklab,
+      var(--neutral-81) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-secondary: color-mix(
+      in oklab,
+      var(--neutral-60) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --input-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.04) 100%,
@@ -49163,6 +49234,11 @@ html.disable-forced-colors * {
       hsl(var(--black-hsl) / 0.04) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.04)
         var(--theme-base-color-amount, 0%)
+    );
+    --text-brand: color-mix(
+      in oklab,
+      var(--blurple-69) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-link: color-mix(
       in oklab,
@@ -49191,7 +49267,7 @@ html.disable-forced-colors * {
     );
     --text-secondary: color-mix(
       in oklab,
-      var(--neutral-41) 100%,
+      var(--neutral-60) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-warning: color-mix(
@@ -49199,9 +49275,89 @@ html.disable-forced-colors * {
       var(--yellow-new-52) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-7) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-6) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-9) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-9) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-positive: color-mix(
+      in oklab,
+      var(--green-new-9) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-9) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-4) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-6) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --icon-default: color-mix(
+      in oklab,
+      var(--neutral-89) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-tertiary: color-mix(
+      in oklab,
+      var(--neutral-55) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-71) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-72) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-56) 100%,
+      var(--green-new-72) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-71) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-tertiary: color-mix(
+      in oklab,
+      var(--neutral-55) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
   }
@@ -49218,14 +49374,33 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-35);
   --channels-default: var(--neutral-35);
   --header-secondary: var(--neutral-35);
+  --icon-primary: var(--neutral-12);
+  --icon-secondary: var(--neutral-23);
+  --text-brand: var(--blurple-29);
   --text-link: var(--blue-new-43);
   --text-muted: var(--neutral-26);
   --text-normal: var(--neutral-8);
   --text-positive: var(--green-new-40);
   --text-primary: var(--neutral-8);
-  --text-secondary: var(--neutral-35);
+  --text-secondary: var(--neutral-23);
   --text-warning: var(--yellow-new-42);
-  --text-feedback-positive: var(--green-new-40);
+  --background-base-low: var(--neutral-96);
+  --background-base-lower: var(--neutral-98);
+  --background-base-lowest: var(--neutral-100);
+  --background-feedback-critical: var(--red-new-94);
+  --background-feedback-info: var(--blue-new-100);
+  --background-feedback-positive: var(--green-new-100);
+  --background-feedback-warning: var(--yellow-new-100);
+  --background-surface-high: var(--neutral-88);
+  --background-surface-higher: var(--neutral-86);
+  --background-surface-highest: var(--neutral-84);
+  --icon-default: var(--neutral-8);
+  --icon-tertiary: var(--neutral-26);
+  --text-feedback-critical: var(--red-new-24);
+  --text-feedback-info: var(--blue-new-26);
+  --text-feedback-positive: var(--green-new-25);
+  --text-feedback-warning: var(--yellow-new-24);
+  --text-tertiary: var(--neutral-26);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .visual-refresh.theme-midnight,
@@ -49281,6 +49456,21 @@ html.disable-forced-colors * {
       var(--neutral-35) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --icon-primary: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-secondary: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-brand: color-mix(
+      in oklab,
+      var(--blurple-29) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-new-43) 100%,
@@ -49308,7 +49498,7 @@ html.disable-forced-colors * {
     );
     --text-secondary: color-mix(
       in oklab,
-      var(--neutral-35) 100%,
+      var(--neutral-23) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-warning: color-mix(
@@ -49316,9 +49506,89 @@ html.disable-forced-colors * {
       var(--yellow-new-42) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-96) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-98) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-positive: color-mix(
+      in oklab,
+      var(--green-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-88) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-86) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-84) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --icon-default: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-tertiary: color-mix(
+      in oklab,
+      var(--neutral-26) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-26) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-40) 100%,
+      var(--green-new-25) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-tertiary: color-mix(
+      in oklab,
+      var(--neutral-26) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
   }
@@ -49335,14 +49605,33 @@ html.disable-forced-colors * {
   --channel-icon: var(--neutral-36);
   --channels-default: var(--neutral-36);
   --header-secondary: var(--neutral-33);
+  --icon-primary: var(--neutral-7);
+  --icon-secondary: var(--neutral-20);
+  --text-brand: var(--blurple-24);
   --text-link: var(--blue-new-45);
   --text-muted: var(--neutral-22);
   --text-normal: var(--neutral-4);
   --text-positive: var(--green-new-42);
   --text-primary: var(--neutral-4);
-  --text-secondary: var(--neutral-33);
+  --text-secondary: var(--neutral-20);
   --text-warning: var(--yellow-new-44);
-  --text-feedback-positive: var(--green-new-42);
+  --background-base-low: var(--neutral-89);
+  --background-base-lower: var(--neutral-87);
+  --background-base-lowest: var(--neutral-85);
+  --background-feedback-critical: var(--red-new-94);
+  --background-feedback-info: var(--blue-new-100);
+  --background-feedback-positive: var(--green-new-100);
+  --background-feedback-warning: var(--yellow-new-100);
+  --background-surface-high: var(--neutral-72);
+  --background-surface-higher: var(--neutral-74);
+  --background-surface-highest: var(--neutral-76);
+  --icon-default: var(--neutral-4);
+  --icon-tertiary: var(--neutral-22);
+  --text-feedback-critical: var(--red-new-18);
+  --text-feedback-info: var(--blue-new-20);
+  --text-feedback-positive: var(--green-new-19);
+  --text-feedback-warning: var(--yellow-new-19);
+  --text-tertiary: var(--neutral-22);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
   .visual-refresh.theme-darker,
@@ -49398,6 +49687,21 @@ html.disable-forced-colors * {
       var(--neutral-33) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --icon-primary: color-mix(
+      in oklab,
+      var(--neutral-7) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-secondary: color-mix(
+      in oklab,
+      var(--neutral-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-brand: color-mix(
+      in oklab,
+      var(--blurple-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-new-45) 100%,
@@ -49425,7 +49729,7 @@ html.disable-forced-colors * {
     );
     --text-secondary: color-mix(
       in oklab,
-      var(--neutral-33) 100%,
+      var(--neutral-20) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-warning: color-mix(
@@ -49433,9 +49737,89 @@ html.disable-forced-colors * {
       var(--yellow-new-44) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-89) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-87) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-85) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-positive: color-mix(
+      in oklab,
+      var(--green-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-100) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-high: color-mix(
+      in oklab,
+      var(--neutral-72) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-higher: color-mix(
+      in oklab,
+      var(--neutral-74) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-surface-highest: color-mix(
+      in oklab,
+      var(--neutral-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --icon-default: color-mix(
+      in oklab,
+      var(--neutral-4) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --icon-tertiary: color-mix(
+      in oklab,
+      var(--neutral-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-critical: color-mix(
+      in oklab,
+      var(--red-new-18) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-info: color-mix(
+      in oklab,
+      var(--blue-new-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-42) 100%,
+      var(--green-new-19) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-feedback-warning: color-mix(
+      in oklab,
+      var(--yellow-new-19) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-tertiary: color-mix(
+      in oklab,
+      var(--neutral-22) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
   }
@@ -50918,4 +51302,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.71c5cfffc15a8730a780.css.map*/
+/*# sourceMappingURL=12633.c2aa69de80c6c7c3128b.css.map*/
