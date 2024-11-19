@@ -287,38 +287,38 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   );
 }
 .lookFilled_dd4f85.colorBrand_dd4f85 {
-  color: var(--white-500);
-  background-color: var(--brand-500);
+  color: var(--button-filled-brand-text);
+  background-color: var(--button-filled-brand-background);
 }
 .lookFilled_dd4f85.colorBrand_dd4f85:hover {
-  background-color: var(--brand-560);
+  background-color: var(--button-filled-brand-background-hover);
 }
 .lookFilled_dd4f85.colorBrand_dd4f85:active {
-  background-color: var(--brand-600);
+  background-color: var(--button-filled-brand-background-active);
 }
 .lookFilled_dd4f85.colorBrand_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--button-filled-brand-text);
 }
 .lookFilled_dd4f85.colorBrand_dd4f85:disabled,
 .lookFilled_dd4f85.colorBrand_dd4f85[aria-disabled="true"] {
-  background-color: var(--brand-500);
+  background-color: var(--button-filled-brand-background);
 }
 .lookFilled_dd4f85.colorBrandInverted_dd4f85 {
-  color: var(--brand-500);
-  background-color: var(--white-500);
+  color: var(--button-filled-brand-inverted-text);
+  background-color: var(--button-filled-brand-inverted-background);
 }
 .lookFilled_dd4f85.colorBrandInverted_dd4f85:hover {
-  background-color: var(--brand-100);
+  background-color: var(--button-filled-brand-inverted-background-hover);
 }
 .lookFilled_dd4f85.colorBrandInverted_dd4f85:active {
-  background-color: var(--brand-200);
+  background-color: var(--button-filled-brand-inverted-background-active);
+}
+.lookFilled_dd4f85.colorBrandInverted_dd4f85 .spinnerItem_dd4f85 {
+  background-color: var(--button-filled-brand-inverted-text);
 }
 .lookFilled_dd4f85.colorBrandInverted_dd4f85:disabled,
 .lookFilled_dd4f85.colorBrandInverted_dd4f85[aria-disabled="true"] {
-  background-color: var(--white-500);
-}
-.lookFilled_dd4f85.colorBrandInverted_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--brand-500);
+  background-color: var(--button-filled-brand-inverted-background);
 }
 .lookOutlined_dd4f85.colorBrand_dd4f85 {
   color: var(--button-outline-brand-text);
@@ -374,10 +374,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: transparent;
 }
 .lookOutlined_dd4f85.colorPrimary_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookFilled_dd4f85.colorLink_dd4f85 {
-  color: var(--white-500);
+  color: var(--white);
   background-color: var(--text-link);
 }
 .lookFilled_dd4f85.colorLink_dd4f85:hover {
@@ -387,7 +387,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: null;
 }
 .lookFilled_dd4f85.colorLink_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookFilled_dd4f85.colorLink_dd4f85:disabled,
 .lookFilled_dd4f85.colorLink_dd4f85[aria-disabled="true"] {
@@ -421,8 +421,8 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--text-link);
 }
 .lookFilled_dd4f85.colorWhite_dd4f85 {
-  color: var(--primary-500);
-  background-color: var(--white-500);
+  color: var(--button-filled-white-text);
+  background-color: var(--button-filled-white-background);
 }
 .lookFilled_dd4f85.colorWhite_dd4f85:hover {
   background-color: null;
@@ -431,41 +431,41 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: null;
 }
 .lookFilled_dd4f85.colorWhite_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--primary-500);
+  background-color: var(--button-filled-white-text);
 }
 .lookFilled_dd4f85.colorWhite_dd4f85:disabled,
 .lookFilled_dd4f85.colorWhite_dd4f85[aria-disabled="true"] {
-  background-color: var(--white-500);
+  background-color: var(--button-filled-white-background);
 }
 .lookOutlined_dd4f85.colorWhite_dd4f85 {
-  color: var(--white-500);
-  border-color: var(--white-500);
+  color: var(--white);
+  border-color: var(--white);
 }
 .lookOutlined_dd4f85.colorWhite_dd4f85:active {
-  background-color: hsl(var(--white-500-hsl) / 0.1);
+  background-color: hsl(var(--white-hsl) / 0.1);
 }
 .lookOutlined_dd4f85.colorWhite_dd4f85:disabled,
 .lookOutlined_dd4f85.colorWhite_dd4f85[aria-disabled="true"] {
   background-color: transparent;
 }
 .lookOutlined_dd4f85.colorWhite_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookLink_dd4f85.colorWhite_dd4f85 {
-  color: var(--white-500);
+  color: var(--white);
 }
 .lookLink_dd4f85.colorWhite_dd4f85:hover .contents_dd4f85 {
-  --button--underline-color: var(--white-500);
+  --button--underline-color: var(--white);
 }
 .lookLink_dd4f85.colorWhite_dd4f85:disabled .contents_dd4f85,
 .lookLink_dd4f85.colorWhite_dd4f85[aria-disabled="true"] .contents_dd4f85 {
   background-image: none;
 }
 .lookLink_dd4f85.colorWhite_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookFilled_dd4f85.colorRed_dd4f85 {
-  color: var(--white-500);
+  color: var(--white);
   background-color: var(--button-danger-background);
 }
 .lookFilled_dd4f85.colorRed_dd4f85:hover {
@@ -475,13 +475,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--button-danger-background-active);
 }
 .lookFilled_dd4f85.colorRed_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookFilled_dd4f85.colorRed_dd4f85:disabled,
 .lookFilled_dd4f85.colorRed_dd4f85[aria-disabled="true"] {
   background-color: var(--button-danger-background-disabled);
 }
 .lookOutlined_dd4f85.colorRed_dd4f85 {
+  background-color: var(--button-outline-danger-background);
   color: var(--button-outline-danger-text);
   border-color: var(--button-outline-danger-border);
 }
@@ -516,7 +517,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--text-danger);
 }
 .lookFilled_dd4f85.colorGreen_dd4f85 {
-  color: var(--white-500);
+  color: var(--white);
   background-color: var(--button-positive-background);
 }
 .lookFilled_dd4f85.colorGreen_dd4f85:hover {
@@ -526,7 +527,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--button-positive-background-active);
 }
 .lookFilled_dd4f85.colorGreen_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
+  background-color: var(--white);
 }
 .lookFilled_dd4f85.colorGreen_dd4f85:disabled,
 .lookFilled_dd4f85.colorGreen_dd4f85[aria-disabled="true"] {
@@ -567,7 +568,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--green-360);
 }
 .lookFilled_dd4f85.colorPrimary_dd4f85 {
-  color: var(--white-500);
+  color: var(--button-secondary-text);
   background-color: var(--button-secondary-background);
 }
 .lookFilled_dd4f85.colorPrimary_dd4f85:hover {
@@ -583,27 +584,28 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .lookFilled_dd4f85.colorPrimary_dd4f85[aria-disabled="true"] {
   background-color: var(--button-secondary-background-disabled);
 }
+.lookFilled_dd4f85.colorTransparent_dd4f85 {
+  color: var(--button-transparent-text);
+  background-color: var(--button-transparent-background);
+}
+.lookFilled_dd4f85.colorTransparent_dd4f85:hover {
+  background-color: var(--button-transparent-background-hover);
+}
+.lookFilled_dd4f85.colorTransparent_dd4f85:active {
+  background-color: var(--button-transparent-background-active);
+}
+.lookFilled_dd4f85.colorTransparent_dd4f85 .spinnerItem_dd4f85 {
+  background-color: var(--button-transparent-text);
+}
+.lookFilled_dd4f85.colorTransparent_dd4f85:disabled,
+.lookFilled_dd4f85.colorTransparent_dd4f85[aria-disabled="true"] {
+  background-color: var(--button-transparent-background);
+}
 .theme-dark .lookLink_dd4f85.colorPrimary_dd4f85:hover .contents_dd4f85 {
-  --button--underline-color: var(--white-500);
+  --button--underline-color: var(--white);
 }
 .theme-dark .lookLink_dd4f85.colorPrimary_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--white-500);
-}
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85 {
-  background-color: hsl(var(--white-500-hsl) / 0.1);
-}
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85:hover {
-  background-color: hsl(var(--white-500-hsl) / 5%);
-}
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85:active {
-  background-color: hsl(var(--white-500-hsl) / 1%);
-}
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--primary-100);
-}
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85:disabled,
-.theme-dark .lookFilled_dd4f85.colorTransparent_dd4f85[aria-disabled="true"] {
-  background-color: hsl(var(--white-500-hsl) / 0.1);
+  background-color: var(--white);
 }
 .theme-dark .lookOutlined_dd4f85.colorTransparent_dd4f85 {
   border-color: var(--primary-200);
@@ -625,22 +627,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .theme-light .lookLink_dd4f85.colorPrimary_dd4f85 .spinnerItem_dd4f85 {
   background-color: var(--primary-400);
-}
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85 {
-  background-color: hsl(var(--primary-400-hsl) / 1%);
-}
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85:hover {
-  background-color: hsl(var(--primary-400-hsl) / 0.2);
-}
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85:active {
-  background-color: hsl(var(--primary-400-hsl) / 0.25);
-}
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85 .spinnerItem_dd4f85 {
-  background-color: var(--primary-400);
-}
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85:disabled,
-.theme-light .lookFilled_dd4f85.colorTransparent_dd4f85[aria-disabled="true"] {
-  background-color: hsl(var(--primary-400-hsl) / 1%);
 }
 .theme-light .lookOutlined_dd4f85.colorTransparent_dd4f85 {
   border-color: var(--primary-400);
@@ -1017,9 +1003,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   .contents_dd4f85 {
   background-image: none;
 }
-.lookFilled_dd4f85.colorTransparent_dd4f85 {
-  color: var(--header-primary);
-}
 .lookOutlined_dd4f85.colorTransparent_dd4f85 {
   color: var(--text-normal);
 }
@@ -1032,16 +1015,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 .lookLink_dd4f85.sizeMin_dd4f85 .contents_dd4f85 {
   display: inline;
-}
-@property --custom-gradient-color-top {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: transparent;
-}
-@property --custom-gradient-color-bottom {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: transparent;
 }
 :where(.visual-refresh) .button_dd4f85 {
   border-radius: 8px;
@@ -1066,6 +1039,32 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .disabledButtonWrapper_dd4f85 {
   padding: 0;
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorBrand_dd4f85 {
+  border: 1px solid var(--button-filled-brand-border);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorRed_dd4f85 {
+  border: 1px solid var(--button-danger-border);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorGreen_dd4f85 {
+  border: 1px solid var(--button-positive-border);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorPrimary_dd4f85 {
+  border-color: var(--border-faint);
+}
+:where(.visual-refresh)
+  .lookFilled_dd4f85.colorPrimary_dd4f85
+  .spinnerItem_dd4f85 {
+  background-color: var(--button-secondary-text);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorTransparent_dd4f85 {
+  border-color: var(--border-faint);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorWhite_dd4f85:hover {
+  background-color: var(--button-filled-white-background-hover);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorWhite_dd4f85:active {
+  background-color: var(--button-filled-white-background-active);
 }
 .dots_ce0450 {
   transform: translatez(0);
@@ -17870,10 +17869,12 @@ h3.improved_f017d0:after {
   display: flex;
   height: -moz-max-content;
   height: max-content;
-  aspect-ratio: 1/1;
   align-items: center;
 }
-.imagePosition_fa854f.aspectRatioCrunchyroll_fa854f {
+.aspectRatio_fa854f {
+  aspect-ratio: 1/1;
+}
+.aspectRatio_fa854f.crunchyroll_fa854f {
   aspect-ratio: 2/3;
 }
 .imageContainer_fa854f {
@@ -39548,6 +39549,20 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-background: var(--brand-500);
+  --button-filled-brand-background-active: var(--brand-600);
+  --button-filled-brand-background-hover: var(--brand-560);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-inverted-background: var(--white);
+  --button-filled-brand-inverted-background-active: var(--brand-200);
+  --button-filled-brand-inverted-background-hover: var(--brand-100);
+  --button-filled-brand-inverted-text: var(--brand-500);
+  --button-filled-brand-text: var(--white);
+  --button-filled-white-background: var(--white-500);
+  --button-filled-white-background-active: var(--white-500);
+  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
   --button-outline-brand-background-hover: var(--brand-500);
@@ -39588,10 +39603,16 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-500);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0);
   --button-secondary-background: var(--primary-500);
   --button-secondary-background-active: var(--primary-400);
   --button-secondary-background-disabled: var(--primary-500);
   --button-secondary-background-hover: var(--primary-430);
+  --button-secondary-text: var(--white-500);
+  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-transparent-text: var(--primary-130);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
   --card-primary-bg: var(--primary-600);
@@ -41193,6 +41214,20 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-background: var(--brand-500);
+  --button-filled-brand-background-active: var(--brand-600);
+  --button-filled-brand-background-hover: var(--brand-560);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-inverted-background: var(--white);
+  --button-filled-brand-inverted-background-active: var(--brand-200);
+  --button-filled-brand-inverted-background-hover: var(--brand-100);
+  --button-filled-brand-inverted-text: var(--brand-500);
+  --button-filled-brand-text: var(--white);
+  --button-filled-white-background: var(--white-500);
+  --button-filled-white-background-active: var(--white-500);
+  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
   --button-outline-brand-background-hover: var(--brand-500);
@@ -41233,10 +41268,16 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-530);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0);
   --button-secondary-background: var(--primary-430);
   --button-secondary-background-active: var(--primary-530);
   --button-secondary-background-disabled: var(--primary-430);
   --button-secondary-background-hover: var(--primary-500);
+  --button-secondary-text: var(--white-500);
+  --button-transparent-background: hsl(var(--primary-400-hsl) / 0.01);
+  --button-transparent-background-active: hsl(var(--primary-400-hsl) / 0.25);
+  --button-transparent-background-hover: hsl(var(--primary-400-hsl) / 0.2);
+  --button-transparent-text: var(--primary-860);
   --card-gradient-bg: hsl(var(--white-hsl) / 0.7);
   --card-gradient-pressed-bg: hsl(var(--white-hsl) / 0.5);
   --card-primary-bg: var(--white);
@@ -42841,6 +42882,20 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-background: var(--brand-500);
+  --button-filled-brand-background-active: var(--brand-600);
+  --button-filled-brand-background-hover: var(--brand-560);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-inverted-background: var(--white);
+  --button-filled-brand-inverted-background-active: var(--brand-200);
+  --button-filled-brand-inverted-background-hover: var(--brand-100);
+  --button-filled-brand-inverted-text: var(--brand-500);
+  --button-filled-brand-text: var(--white);
+  --button-filled-white-background: var(--white-500);
+  --button-filled-white-background-active: var(--white-500);
+  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
   --button-outline-brand-background-hover: var(--brand-500);
@@ -42881,10 +42936,16 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-530);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0);
   --button-secondary-background: var(--plum-13);
   --button-secondary-background-active: var(--plum-10);
   --button-secondary-background-disabled: var(--plum-13);
   --button-secondary-background-hover: var(--plum-11);
+  --button-secondary-text: var(--white-500);
+  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-transparent-text: var(--plum-2);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
   --card-primary-bg: var(--plum-23);
@@ -44490,6 +44551,20 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-background: var(--brand-500);
+  --button-filled-brand-background-active: var(--brand-600);
+  --button-filled-brand-background-hover: var(--brand-560);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-inverted-background: var(--white);
+  --button-filled-brand-inverted-background-active: var(--brand-200);
+  --button-filled-brand-inverted-background-hover: var(--brand-100);
+  --button-filled-brand-inverted-text: var(--brand-500);
+  --button-filled-brand-text: var(--white);
+  --button-filled-white-background: var(--white-500);
+  --button-filled-white-background-active: var(--white-500);
+  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
   --button-outline-brand-background-hover: var(--brand-500);
@@ -44530,10 +44605,16 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-500);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0);
   --button-secondary-background: var(--plum-13);
   --button-secondary-background-active: var(--plum-10);
   --button-secondary-background-disabled: var(--plum-13);
   --button-secondary-background-hover: var(--plum-11);
+  --button-secondary-text: var(--white-500);
+  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-transparent-text: var(--plum-3);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
   --card-primary-bg: var(--plum-18);
@@ -48906,6 +48987,41 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-70);
   --bg-base-tertiary: var(--neutral-72);
   --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
+  --button-danger-background: var(--red-new-50);
+  --button-danger-background-active: var(--red-new-61);
+  --button-danger-background-disabled: var(--red-new-50);
+  --button-danger-background-hover: var(--red-new-57);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-inverted-background-active: var(--neutral-17);
+  --button-filled-brand-inverted-background-hover: var(--neutral-9);
+  --button-filled-brand-inverted-text: var(--black);
+  --button-filled-white-background-active: var(--neutral-17);
+  --button-filled-white-background-hover: var(--neutral-9);
+  --button-filled-white-text: var(--black);
+  --button-outline-danger-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-outline-danger-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-outline-danger-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-outline-danger-border: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-active: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-hover: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-text: var(--red-345);
+  --button-outline-danger-text-active: var(--red-345);
+  --button-outline-danger-text-hover: var(--red-345);
+  --button-positive-background: var(--green-new-50);
+  --button-positive-background-active: var(--green-new-57);
+  --button-positive-background-disabled: var(--green-new-50);
+  --button-positive-background-hover: var(--green-new-53);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-secondary-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-secondary-background-disabled: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-secondary-text: var(--neutral-6);
+  --button-transparent-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-transparent-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-transparent-text: var(--neutral-6);
   --channel-icon: var(--neutral-28);
   --channels-default: var(--neutral-28);
   --header-muted: var(--neutral-23);
@@ -49236,6 +49352,41 @@ html.disable-forced-colors * {
   --bg-base-tertiary: var(--neutral-3);
   --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
   --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
+  --button-danger-background: var(--red-new-50);
+  --button-danger-background-active: var(--red-new-61);
+  --button-danger-background-disabled: var(--red-new-50);
+  --button-danger-background-hover: var(--red-new-57);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-inverted-background-active: var(--neutral-17);
+  --button-filled-brand-inverted-background-hover: var(--neutral-9);
+  --button-filled-brand-inverted-text: var(--black);
+  --button-filled-white-background-active: var(--neutral-17);
+  --button-filled-white-background-hover: var(--neutral-9);
+  --button-filled-white-text: var(--black);
+  --button-outline-danger-background: hsl(var(--opacity-5-hsl) / 0.16);
+  --button-outline-danger-background-active: hsl(var(--primary-400-hsl) / 0.08);
+  --button-outline-danger-background-hover: hsl(var(--opacity-8-hsl) / 0.28);
+  --button-outline-danger-border: hsl(var(--opacity-5-hsl) / 0.16);
+  --button-outline-danger-border-active: hsl(var(--opacity-3-hsl) / 0.08);
+  --button-outline-danger-border-hover: hsl(var(--opacity-3-hsl) / 0.08);
+  --button-outline-danger-text: var(--red-500);
+  --button-outline-danger-text-active: var(--red-500);
+  --button-outline-danger-text-hover: var(--red-500);
+  --button-positive-background: var(--green-new-50);
+  --button-positive-background-active: var(--green-new-57);
+  --button-positive-background-disabled: var(--green-new-50);
+  --button-positive-background-hover: var(--green-new-53);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-secondary-background: hsl(var(--opacity-5-hsl) / 0.16);
+  --button-secondary-background-active: hsl(var(--primary-400-hsl) / 0.08);
+  --button-secondary-background-disabled: hsl(var(--opacity-5-hsl) / 0.16);
+  --button-secondary-background-hover: hsl(var(--opacity-8-hsl) / 0.28);
+  --button-secondary-text: var(--neutral-95);
+  --button-transparent-background: hsl(var(--opacity-5-hsl) / 0.16);
+  --button-transparent-background-active: hsl(var(--primary-400-hsl) / 0.08);
+  --button-transparent-background-hover: hsl(var(--opacity-8-hsl) / 0.28);
+  --button-transparent-text: var(--neutral-95);
   --channel-icon: var(--neutral-39);
   --channels-default: var(--neutral-39);
   --header-muted: var(--neutral-53);
@@ -49571,6 +49722,41 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-88);
   --bg-base-tertiary: var(--neutral-84);
   --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
+  --button-danger-background: var(--red-new-50);
+  --button-danger-background-active: var(--red-new-61);
+  --button-danger-background-disabled: var(--red-new-50);
+  --button-danger-background-hover: var(--red-new-57);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-inverted-background-active: var(--neutral-17);
+  --button-filled-brand-inverted-background-hover: var(--neutral-9);
+  --button-filled-brand-inverted-text: var(--black);
+  --button-filled-white-background-active: var(--neutral-17);
+  --button-filled-white-background-hover: var(--neutral-9);
+  --button-filled-white-text: var(--black);
+  --button-outline-danger-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-outline-danger-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-outline-danger-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-outline-danger-border: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-active: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-hover: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-text: var(--red-345);
+  --button-outline-danger-text-active: var(--red-345);
+  --button-outline-danger-text-hover: var(--red-345);
+  --button-positive-background: var(--green-new-50);
+  --button-positive-background-active: var(--green-new-57);
+  --button-positive-background-disabled: var(--green-new-50);
+  --button-positive-background-hover: var(--green-new-53);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-secondary-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-secondary-background-disabled: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-secondary-text: var(--neutral-6);
+  --button-transparent-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-transparent-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-transparent-text: var(--neutral-6);
   --channel-icon: var(--neutral-33);
   --channels-default: var(--neutral-33);
   --header-muted: var(--neutral-20);
@@ -49886,6 +50072,41 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-83);
   --bg-base-tertiary: var(--neutral-86);
   --border-strong: hsl(var(--opacity-14-hsl) / 0.52);
+  --button-danger-background: var(--red-new-50);
+  --button-danger-background-active: var(--red-new-61);
+  --button-danger-background-disabled: var(--red-new-50);
+  --button-danger-background-hover: var(--red-new-57);
+  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-filled-brand-inverted-background-active: var(--neutral-17);
+  --button-filled-brand-inverted-background-hover: var(--neutral-9);
+  --button-filled-brand-inverted-text: var(--black);
+  --button-filled-white-background-active: var(--neutral-17);
+  --button-filled-white-background-hover: var(--neutral-9);
+  --button-filled-white-text: var(--black);
+  --button-outline-danger-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-outline-danger-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-outline-danger-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-outline-danger-border: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-active: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-border-hover: hsl(var(--opacity-2-hsl) / 0.04);
+  --button-outline-danger-text: var(--red-345);
+  --button-outline-danger-text-active: var(--red-345);
+  --button-outline-danger-text-hover: var(--red-345);
+  --button-positive-background: var(--green-new-50);
+  --button-positive-background-active: var(--green-new-57);
+  --button-positive-background-disabled: var(--green-new-50);
+  --button-positive-background-hover: var(--green-new-53);
+  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-secondary-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-secondary-background-disabled: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-secondary-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-secondary-text: var(--neutral-6);
+  --button-transparent-background: hsl(var(--opacity-4-hsl) / 0.12);
+  --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
+  --button-transparent-background-hover: hsl(var(--opacity-6-hsl) / 0.2);
+  --button-transparent-text: var(--neutral-6);
   --channel-icon: var(--neutral-34);
   --channels-default: var(--neutral-34);
   --header-muted: var(--neutral-21);
@@ -51668,4 +51889,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.437d59f4b6fe2c862000.css.map*/
+/*# sourceMappingURL=12633.53e3de0c44e77b53be60.css.map*/
