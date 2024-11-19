@@ -1638,7 +1638,10 @@
   },
   "AGE_ASSURANCE_TEST": {
     "url": "/age-verification/test",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPERIMENTS": {
     "url": "/experiments",
