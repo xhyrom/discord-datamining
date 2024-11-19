@@ -25,7 +25,7 @@
     </li>
     <li>
       <strong
-        ><a href="#h_01JCKYAE7TK68BDQ7JCHRVYH6B"
+        ><a href="#h_01JD2P6FT5JVDFS4126SQAH6JF"
           >Redemption Instructions</a
         ></strong
       >
@@ -125,28 +125,27 @@
     ><strong>NOTE</strong>: To play the video, you must use the Discord desktop
     app or browser client. The video will pause if you switch away from the
     Discord window. Don't worry if you can't finish the trailer in one
-    sitting—your Quest progress is saved, so you can return to it later.<br
-  /></span>
-</div>
-<h1 id="h_01JCKYAE7TK68BDQ7JCHRVYH6B" class="wysiwyg-text-align-left">
-  <span style="color: #666666">Redemption Instructions<br /></span>
-</h1>
-<p class="wysiwyg-text-align-left">
-  <span style="color: #666666"
-    >Once you have finished watching the
-    <strong>Dune: Prophecy</strong> trailer, you'll be eligible to earn the
-    <strong>Wallach IX Spaceport avatar decoration</strong>. You can participate
-    in this Quest until <strong>November 25, 2024 (11:59 PM UTC)</strong> and
-    claim your reward by <strong>December 25, 2024</strong>.<br />You can use
-    the following methods to claim your avatar decoration:<br /><span
-      class="wysiwyg-font-size-large"
-      ><strong>Through the Quest Bar or Video Player</strong></span
-    ><br />To claim your
-    <strong>Wallach IX Spaceport avatar decoration</strong>, simply press the
-    <strong>Claim Reward</strong> button in either the
-    <strong>Quest bar</strong> or the
-    <strong>pop-up video player</strong>.</span
+    sitting—your Quest progress is saved, so you can return to it later.</span
   >
+</div>
+<h1 id="h_01JD2P6FT5JVDFS4126SQAH6JF">Redemption Instructions</h1>
+<p>
+  Once you have finished watching the <strong>Dune: Prophecy </strong>trailer,
+  you'll be eligible to earn the <strong>Wallach IX Spaceport</strong>
+  <strong>avatar decoration</strong>. You can participate in this Quest until
+  <strong>November 25, 2024 (11:59 PM UTC)</strong> and claim your reward by
+  <strong>December 25, 2024</strong>.
+</p>
+<p>You can use the following methods to claim your avatar decoration:</p>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>Through the Quest Bar or Video Player</strong></span
+  >
+</p>
+<p>
+  To claim your <strong>Wallach IX Spaceport avatar decoration</strong>, simply
+  press the<strong> Claim Reward</strong> button in either the
+  <strong>Quest bar</strong> or<strong> the pop-up video player</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
