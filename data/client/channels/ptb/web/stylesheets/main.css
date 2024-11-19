@@ -18269,6 +18269,14 @@ h3.improved_f017d0:after {
   border-radius: 6px 100px 100px 6px;
   margin-right: 0;
 }
+.popover_cf8aee div:empty {
+  display: none;
+}
+.popover_cf8aee div:not(:empty):has(+ div:empty) .button_cf8aee {
+  padding-right: 6px;
+  border-radius: 6px 100px 100px 6px;
+  margin-right: 0;
+}
 .activityPopover_cf8aee {
   right: 8px;
 }
@@ -51889,4 +51897,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.53e3de0c44e77b53be60.css.map*/
+/*# sourceMappingURL=12633.458fc8baf615d676b743.css.map*/
