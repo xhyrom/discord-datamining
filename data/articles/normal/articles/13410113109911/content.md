@@ -54,7 +54,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853140759"
+    src="https://support.discord.com/hc/article_attachments/27897516515223"
     width="452"
     height="407"
   />
@@ -73,21 +73,21 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853144727"
+    src="https://support.discord.com/hc/article_attachments/27897471730455"
     width="624"
     height="437"
   />
 </p>
 <p>
   2. Then, press the <strong>Shop</strong> tab [<img
-    src="https://support.discord.com/hc/article_attachments/25504853147671"
+    src="https://support.discord.com/hc/article_attachments/27897471731351"
     width="24"
     height="24"
   />] to the right of the server list to enter the Shop!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853150103"
+    src="https://support.discord.com/hc/article_attachments/27897471732119"
     width="311"
     height="366"
   />
@@ -98,7 +98,7 @@
 <p>
   1. To access your <strong>User Settings, </strong>select the
   <strong>cogwheel </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/25504853153687"
+    src="https://support.discord.com/hc/article_attachments/27897516518039"
     width="24"
     height="24"
   />] in the lower-left corner of the app, then navigate to the
@@ -106,7 +106,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853158423"
+    src="https://support.discord.com/hc/article_attachments/27897516518935"
     width="448"
     height="439"
   />
@@ -116,7 +116,7 @@
   <strong>Check it out</strong>. You can also select
   <strong>Change Decoration</strong> and select the <strong>Shop</strong> icon
   [<img
-    src="https://support.discord.com/hc/article_attachments/25504863520663"
+    src="https://support.discord.com/hc/article_attachments/27897471734551"
     width="24"
     height="24"
   />].
@@ -124,11 +124,11 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-a784a5bb-7fff-cfc5-e242-19a24d09484b"
     ><img
-      src="https://support.discord.com/hc/article_attachments/25504863527575"
+      src="https://support.discord.com/hc/article_attachments/27897516520855"
       width="459"
       height="308" />
     <img
-      src="https://support.discord.com/hc/article_attachments/25504853171863"
+      src="https://support.discord.com/hc/article_attachments/27897471737495"
       width="456"
       height="417"
   /></span>
@@ -141,7 +141,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504863539607"
+    src="https://support.discord.com/hc/article_attachments/27897516524311"
     width="600"
     height="435"
   />
@@ -158,14 +158,14 @@
 </p>
 <p class="wysiwyg-text-align-left">
   2. Then, tap the <strong>Shop</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/25504863541655"
+    src="https://support.discord.com/hc/article_attachments/27897471739415"
     width="24"
     height="24"
   />] icon in the upper-right corner.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853179543"
+    src="https://support.discord.com/hc/article_attachments/27897471740695"
     width="284"
     height="589"
   />
@@ -213,13 +213,13 @@
   1. On the desktop app or web app, head into your
   <strong>User Settings </strong>by selecting the
   <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/13409843259799"
+    src="https://support.discord.com/hc/article_attachments/27897516526359"
     alt="Cog.png"
   />]. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853182999"
+    src="https://support.discord.com/hc/article_attachments/27897471742103"
     width="278"
     height="60"
   />
@@ -230,7 +230,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504863549463"
+    src="https://support.discord.com/hc/article_attachments/27897516527127"
     width="624"
     height="377"
   />
@@ -245,12 +245,12 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504863555991"
+    src="https://support.discord.com/hc/article_attachments/27897471743383"
     width="454"
     height="260"
   />
   <img
-    src="https://support.discord.com/hc/article_attachments/25504853193495"
+    src="https://support.discord.com/hc/article_attachments/27897471744663"
     width="451"
     height="414"
   />
@@ -261,7 +261,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/13409714730135"
+    src="https://support.discord.com/hc/article_attachments/27897471745047"
   />
 </p>
 <div class="tip-box">
@@ -283,7 +283,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/24862776002711"
+      src="https://support.discord.com/hc/article_attachments/27897516530839"
       width="284"
       height="590"
   /></span>
@@ -298,7 +298,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/24862776004247"
+      src="https://support.discord.com/hc/article_attachments/27897516531607"
       width="277"
       height="576"
   /></span>
@@ -314,7 +314,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25504863562391"
+    src="https://support.discord.com/hc/article_attachments/27897471748759"
     width="288"
     height="597"
   />
@@ -406,9 +406,15 @@
   Now avatar decorations are designed to be yours to keep and use anytime when
   you buy them. We’ve also been working hard to make avatar decorations better
   than before, with even more charming and fun designs, higher quality
-  animations and effects, and more styles to choose from.<br />As a friendly
-  reminder, if you’re a Nitro member, you can collect the
+  animations and effects, and more styles to choose from.
+</p>
+<p>
+  As a friendly reminder, if you’re a Nitro member, you can collect the
   <strong>3 bonus DISXCORE</strong> avatar decorations from the Shop!
+  <span id="docs-internal-guid-cf0c1c6d-7fff-84a5-524b-6aa86c345232"
+    >Discord users with Nitro trial subscriptions do not have access to DISXCORE
+    profile effects.</span
+  >
 </p>
 <p><strong>Q: Can I refund an avatar decoration I’ve purchased?</strong></p>
 <p>

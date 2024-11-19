@@ -378,6 +378,10 @@
   Nitro members, but require an active Nitro subscription to use. If you decide
   to cancel your Nitro subscription, the effects will remain in your collection
   but you won’t be able to use them.
+  <span id="docs-internal-guid-cf0c1c6d-7fff-84a5-524b-6aa86c345232"
+    >Discord users with Nitro trial subscriptions do not have access to DISXCORE
+    profile effects.</span
+  >
 </p>
 <p id="docs-internal-guid-b47eaca1-7fff-16d3-e1a5-daf0c4c8bbba">
   <strong
