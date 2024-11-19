@@ -80,7 +80,7 @@
   <li>
     1st and 3rd party
     <a
-      href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord"
+      href="https://support-apps.discord.com/hc/sections/26498424335895"
       target="_blank"
       rel="noopener noreferrer"
       >Activities on Discord</a
