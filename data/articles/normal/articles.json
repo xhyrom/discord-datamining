@@ -1,5 +1,34 @@
 [
   {
+    "id": 27893392334359,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/27893392334359.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/27893392334359-In-game-Features-Powered-by-Discord-FAQ",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 360007770552,
+    "created_at": "2024-11-18T21:48:12Z",
+    "name": "In-game Features Powered by Discord FAQ",
+    "title": "In-game Features Powered by Discord FAQ",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2024-11-19T15:17:53Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "game",
+      "connections",
+      "gaming",
+      "in-game features"
+    ],
+    "body": "<p>Discord is partnering with a limited number of game developers to enhance various social and communication features within their games. For players of these games, it means some aspects of their in-game experience (such as in-game voice or friends lists) will be powered by Discord.</p>\n<p><strong>Q: Does that mean I need a Discord account to play the game?</strong></p>\n<p>A: Players will not be required to connect a Discord account to play the game.</p>\n<p><strong>Q: Can I talk to my friends on Discord while playing this game?</strong></p>\n<p>A: In some games, players are able to chat with friends across Discord while they’re in-game, even if they’re not playing the same game.</p>\n<p><strong>Q: Will this integration affect my game performance?</strong></p>\n<p>A: The integrations are designed to avoid impacting game performance.</p>\n<p><strong>Q: Does this mean Discord can access all the messages I send in the game?</strong></p>\n<p>A: Discord is only able to access messages that the game developers provide access to, in accordance with the privacy policies of both Discord and the game.</p>\n<p><strong>Q: What can the game developer do with my data?</strong></p>\n<p>A: Refer to the <a href=\"https://support.discord.com/hc/en-us/articles/4469943799319\" target=\"_blank\" rel=\"noopener noreferrer\">privacy policies</a> of Discord and of the game developer. Game developers are allowed to use messages to support their safety and content moderation efforts and as needed to power the communications experience between Discord and their game.</p>\n<div class=\"tip-box\">\n<strong>Note:</strong> If you’re running into an issue connecting your Discord account to your game, please reach out to the developer of that game for further assistance. Discord Support is not able to assist.</div>"
+  },
+  {
     "id": 27615657704983,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/27615657704983.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/27615657704983-Leaderboards-FAQ",
