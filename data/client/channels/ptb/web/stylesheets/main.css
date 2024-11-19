@@ -9855,6 +9855,11 @@ div.modalHeader_c5e09c {
 .slider_dd5a70 {
   margin-bottom: calc(-1 * var(--spacing-8));
 }
+.betaBadge_dd5a70 {
+  position: absolute;
+  top: -8px;
+  left: var(--spacing-8);
+}
 .infoContainer_dd5a70 {
   border-radius: var(--radius-sm);
   overflow: hidden;
@@ -51638,4 +51643,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c8b5500f5d85bc3c0db5.css.map*/
+/*# sourceMappingURL=12633.9869b9f7c1854f4445c8.css.map*/
