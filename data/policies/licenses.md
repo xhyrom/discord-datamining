@@ -167,6 +167,7 @@
                 <div class="love-1UBoEg">
                   <img
                     class="loveImage-Fgwe_L"
+                    src="/assets/2e80cad2a55df365bdae5eb0263d13a7.gif"
                     alt="Love Open Source Software"
                   />
                 </div>
