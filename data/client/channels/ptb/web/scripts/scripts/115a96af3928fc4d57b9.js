@@ -1,0 +1,13 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["26754"],
+  {
+    897190: function (e, s, i) {
+      i.r(s),
+        (s.default = JSON.parse(
+          '{"Q+eyqq":[[6,"count",{"one":[[7]," thing"],"other":[[1,"count"]," things"]},0,"cardinal"]],"JJ0wpK":"This page uses the new intl system for displaying messages","rdfRys":["We have a ",[8,"$code",["const static codeSpan = 2;"]]," here."],"uczI4u":["This link uses a ",[8,"$link",["variable link"],[[1,"linkTarget"]]]," provided at runtime."],"HMvECw":["All of this is managed locally and has ",[8,"$b",["not yet"]]," replaced the global i18n system."],"rmps8/":["This string has a ",[8,"$link",["static link"],["https://discord.com"]],", with the url defined in the string."],"XOdbAw":["Use hooks like ",[8,"usernameHook",[[1,"username"]]]," for special content."]}',
+        ));
+    },
+  },
+]);
+//# sourceMappingURL=115a96af3928fc4d57b9.js.map
