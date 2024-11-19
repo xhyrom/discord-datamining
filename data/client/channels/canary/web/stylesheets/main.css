@@ -13171,6 +13171,9 @@ span.clanTag_a31c43 {
   font-family: var(--font-display);
   font-weight: 600;
 }
+.container_ab08a5 {
+  position: relative;
+}
 .avatar_ab08a5 {
   display: flex;
   align-items: center;
@@ -13183,6 +13186,18 @@ span.clanTag_a31c43 {
   padding: var(--spacing-16);
   border-radius: 50%;
   background-color: var(--background-modifier-accent);
+}
+.avatarIconContainer_ab08a5 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -8px;
+  right: -8px;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-round);
+  background-color: var(--bg-surface-raised);
+  overflow: hidden;
 }
 :root {
   --custom-user-profile-banner-height: 0;
@@ -13449,6 +13464,13 @@ span.clanTag_a31c43 {
   margin-top: var(--spacing-8);
   margin-bottom: var(--spacing-8);
 }
+.headerContainer_b6f000 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8);
+}
 .centeredButton_b6f000 {
   margin-top: var(--spacing-16);
   width: 100%;
@@ -13466,6 +13488,9 @@ span.clanTag_a31c43 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.bodySpacing_b6f000 {
+  gap: var(--spacing-16);
 }
 .avatar_f94206 {
   border-radius: var(--radius-round);
@@ -13917,7 +13942,7 @@ span.clanTag_a31c43 {
 .row_e33a4d {
   align-items: center;
   display: flex;
-  border-bottom: 1px solid var(--channeltextarea-background);
+  border-bottom: 1px solid var(--border-subtle);
   margin: 0 var(--spacing-16);
   padding: var(--spacing-16) 0 var(--spacing-16);
 }
@@ -51643,4 +51668,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9869b9f7c1854f4445c8.css.map*/
+/*# sourceMappingURL=12633.437d59f4b6fe2c862000.css.map*/
