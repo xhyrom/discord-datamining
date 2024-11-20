@@ -27,7 +27,53 @@
   Discord. Apps can even have both commands and Activities, giving you multiple
   ways to engage.
 </p>
-<h1 id="h_01J8JG3PHMQMKWFS18E0G5213G">Where You Can Use Apps on Discord:</h1>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>What this article covers:</strong></span
+  >
+</p>
+<ul>
+  <li>
+    <a href="#h_01J8JG3PHMQMKWFS18E0G5213G"
+      >Where You Can Use Apps on Discord</a
+    >
+    <ul>
+      <li>
+        <a href="#h_01J8JFFXHTHT2XP9C1NYPSZR0T"
+          >Launching Apps From the Chat Bar</a
+        >
+      </li>
+      <li><a href="#h_01J8JFFXHTEY480XZ6QBFVC2TV">Typing "/"</a></li>
+      <li>
+        <a href="#h_01J8JFFXHTM9K9E1WEDJQVNRPB"
+          >Launching Apps in Voice Calls</a
+        >
+      </li>
+      <li>
+        <a href="#h_01J8JFFXHT9E4SAYQADYS83AD9">User and Message Commands</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat</a></li>
+  <li>
+    <a href="#h_01J8JFFXHVNB9G8JMTQ0ES9AV7"
+      >Joining and Inviting Others to Join Activities</a
+    >
+  </li>
+  <li>
+    <a href="#h_01J8JFFXHV9KMVZ9WDEM0V2PX9">Ending and Changing Activities</a>
+  </li>
+  <li>
+    <a href="#h_01J8JFFXHVEJC2J08PAM34TYQQ"
+      >My mobile device gets really warm while playing Activities. How do I fix
+      it?</a
+    >
+  </li>
+  <li>
+    <a href="#h_01J8JFFXHV1QF8HRCTBH40H5C8">Frequently Asked Questions</a>
+  </li>
+</ul>
+<h1 id="h_01J8JG3PHMQMKWFS18E0G5213G">Where You Can Use Apps on Discord</h1>
 <p>
   Apps on Discord can be added to servers by server admins or installed by users
   to their own accounts. 
@@ -246,7 +292,7 @@
   ><strong><span style="color: #434343">App Directory</span></strong
   ><span style="color: #434343"> page for the app. </span>
 </h3>
-<h2 id="h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat </h2>
+<h1 id="h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat </h1>
 <h3 id="h_01J8JFFXHTWJ2RFQS8ZBJZEC63">
   <span style="color: #434343"
     >Note: The ability to edit images in Discord chat using apps is slowly
@@ -303,9 +349,9 @@
   easy-to-use apps, you can creatively modify images and make your chats even
   more engaging! 
 </p>
-<h2 id="h_01J8JFFXHVNB9G8JMTQ0ES9AV7">
+<h1 id="h_01J8JFFXHVNB9G8JMTQ0ES9AV7">
   Joining and Inviting Others to Join Activities
-</h2>
+</h1>
 <p>
   Of course! There are a few ways you can invite others to join your Activity.
 </p>
@@ -373,7 +419,7 @@
     height="434"
   />
 </p>
-<h2 id="h_01J8JFFXHV9KMVZ9WDEM0V2PX9">Ending and Changing Activities</h2>
+<h1 id="h_01J8JFFXHV9KMVZ9WDEM0V2PX9">Ending and Changing Activities</h1>
 <p>
   To leave an Activity, select the <strong>Activity exit icon</strong> in the
   Voice Channel controls. Leaving the Voice Channel will also do the trick!
@@ -414,9 +460,9 @@
 </p>
 <p class="wysiwyg-text-align-center">Mobile Client</p>
 <p> </p>
-<h2 id="h_01J8JFFXHVEJC2J08PAM34TYQQ">
+<h1 id="h_01J8JFFXHVEJC2J08PAM34TYQQ">
   My mobile device gets really warm while playing Activities. How do I fix it?
-</h2>
+</h1>
 <p>
   If your mobile device becomes warm to the touch while you’re playing an
   Activity, we recommend that you try the following:
@@ -466,7 +512,6 @@
     >here</a
   >.
 </p>
-<p> </p>
 <h1 id="h_01J8JFFXHV1QF8HRCTBH40H5C8">Frequently Asked Questions</h1>
 <p>
   <strong
