@@ -16013,6 +16013,7 @@ span.clanTag_a31c43 {
   align-items: center;
   overflow: hidden;
   flex-shrink: 0;
+  max-width: 100%;
 }
 .badgeContainer_d60c6d svg {
   flex-shrink: 0;
@@ -17955,6 +17956,13 @@ h3.improved_f017d0:after {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.toolbarContainer_ae1fa2 {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+  border: none;
 }
 .content_ae1fa2 {
   flex: 1 1 auto;
@@ -51898,4 +51906,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.97a8b65ea017cf87be2b.css.map*/
+/*# sourceMappingURL=12633.5d90d252453eac03274a.css.map*/
