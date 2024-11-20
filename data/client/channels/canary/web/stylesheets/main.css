@@ -13944,6 +13944,7 @@ span.clanTag_a31c43 {
   border-bottom: 1px solid var(--border-subtle);
   margin: 0 var(--spacing-16);
   padding: var(--spacing-16) 0 var(--spacing-16);
+  gap: var(--spacing-16);
 }
 .row_e33a4d:last-child {
   border-bottom: none;
@@ -13951,7 +13952,6 @@ span.clanTag_a31c43 {
 .iconContainer_e33a4d {
   display: flex;
   justify-content: center;
-  margin-right: var(--spacing-16);
   height: var(--spacing-24);
   width: var(--spacing-24);
 }
@@ -13963,15 +13963,58 @@ span.clanTag_a31c43 {
 .textContainer_e33a4d {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 .button_e33a4d {
   min-width: 75px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 .infoGroup_d34773 {
   border-radius: var(--radius-sm);
   background-color: var(--background-secondary);
   width: 100%;
+}
+.container_b01a4f {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+.confirmationHeader_b01a4f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  text-align: center;
+}
+.otherOptions_b01a4f {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+.row_b01a4f {
+  border-radius: var(--radius-sm);
+  background-color: var(--background-secondary);
+  width: 100%;
+}
+.featureGuide_b01a4f {
+  text-align: center;
+}
+.iconContainer_b01a4f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.icon_b01a4f {
+  position: absolute;
+  padding: var(--spacing-4);
+  bottom: -6px;
+  right: -6px;
+  background-color: var(--bg-surface-raised);
+  border-radius: var(--radius-round);
 }
 .actionButton_f5dff0 {
   margin-left: auto;
@@ -51906,4 +51949,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5d90d252453eac03274a.css.map*/
+/*# sourceMappingURL=12633.c8345e67007f1cdb4ce3.css.map*/
