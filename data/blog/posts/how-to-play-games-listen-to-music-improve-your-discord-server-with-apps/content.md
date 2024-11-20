@@ -420,7 +420,7 @@
         your friends.&nbsp;
       </p>
       <figure
-        style="max-width: 1600px"
+        style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -459,7 +459,7 @@
         </div>
       </div>
       <figure
-        style="max-width: 1600px"
+        style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -479,7 +479,7 @@
       </p>
       <p>
         If you need additional support when trying out apps, check out our “<a
-          href="https://support.discord.com/hc/en-us/articles/21334461140375-Using-Apps-on-Discord"
+          href="https://support-apps.discord.com/hc/en-us/articles/26593412574359-How-to-Use-Apps"
           >Using Apps on Discord</a
         >” support article.&nbsp;
       </p>
