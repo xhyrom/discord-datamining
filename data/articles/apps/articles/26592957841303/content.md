@@ -18,6 +18,19 @@
     >how to moderate apps in a server here</a
   >.
 </p>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong>What this article covers:</strong></span
+  >
+</p>
+<ul>
+  <li><a href="#h_01J8JE2VM7QEKH9XKNR696P56C">From the App Launcher</a></li>
+  <li><a href="#h_01J8JE4CAB9GQFZPPZSECSZ2SQ">From the App Directory</a></li>
+  <li><a href="#h_01J8JEF20YF2GMMZNFFSZ0XJJQ">From Chat</a></li>
+  <li>
+    <a href="#h_01J8JEHRA2B37588XSPGJ7PNX6">Frequently Asked Questions</a>
+  </li>
+</ul>
 <h1 id="h_01J8JE2VM7QEKH9XKNR696P56C">From the App Launcher</h1>
 <p>
   Discord's <strong>App Launcher</strong> lets you discover and add new apps
