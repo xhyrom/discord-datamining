@@ -7,58 +7,49 @@
   <li style="list-style-type: none">
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360017693772#h_01J1FZH9BCJZ73NWBB9RTMESMG"
+        <a href="#h_01J1FZH9BCJZ73NWBB9RTMESMG"
           >Where to Manage all of Your Active Subscriptions </a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-357dd012-7fff-bfb5-ae53-6e5b0c67d911"
+        <a href="#docs-internal-guid-357dd012-7fff-bfb5-ae53-6e5b0c67d911"
           >Billing Information and History</a
         >
         <ul>
           <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
+            <a href="#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
               >How do I add or edit payment methods?</a
             >
           </li>
           <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d"
+            <a href="#docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d"
               >How do I change my payment methods for my subscription?</a
             >
           </li>
           <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-844f9ea2-7fff-aedb-be4f-69bc6ebccc05"
+            <a href="#docs-internal-guid-844f9ea2-7fff-aedb-be4f-69bc6ebccc05"
               >How do I remove a payment method?</a
             >
           </li>
           <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-adf597e3-7fff-fceb-b15e-efe678740081"
+            <a href="#docs-internal-guid-adf597e3-7fff-fceb-b15e-efe678740081"
               >Where can I download my tax invoice or purchase receipt?</a
             >
           </li>
         </ul>
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360017693772#h_01GFV42K7SR7DPP1TCTTF0FKN3"
+        <a href="#h_01GFV42K7SR7DPP1TCTTF0FKN3"
           >What payment methods are accepted?</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360017693772#h_01GFV43NYQ6KM5V7MFYCFYZ7HP"
+        <a href="#h_01GFV43NYQ6KM5V7MFYCFYZ7HP"
           >What Discord Purchases Will Look Like on Your Statement</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-5f0782a4-7fff-8843-f22f-66f97347c229"
+        <a href="#docs-internal-guid-5f0782a4-7fff-8843-f22f-66f97347c229"
           >Frequently Asked Questions</a
         >
       </li>
@@ -341,9 +332,6 @@
     <span style="font-weight: 400">KakaoPay (South Korea)</span>
   </li>
   <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Sofort (Europe)</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
     <span style="font-weight: 400">iDEAL (Netherlands)</span
     ><span style="font-weight: 400"><br /></span>
   </li>
@@ -488,13 +476,11 @@
   making new purchases on Discord. However, your subscription payment method is
   what’s used to pay for your recurring Nitro and Boost subscriptions. <br />You
   can set the same payment method for both by following the steps to update your
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
+  <a href="#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
     >default payment method</a
   >
   and
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360017693772#docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d"
+  <a href="#docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d"
     >updating your subscription payment method</a
   >.   
 </p>

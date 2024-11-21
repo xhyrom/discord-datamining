@@ -11,7 +11,7 @@
 <p> </p>
 <p>
   Welcome! Thank you for your interest in Discord’s APIs, software development
-  kits (“DDSDKs”), and other developer products and services and associated
+  kits (“SDKs”), and other developer products and services and associated
   software (including those described in or available via our<a
     href="https://discord.com/developers/docs/intro"
   >
