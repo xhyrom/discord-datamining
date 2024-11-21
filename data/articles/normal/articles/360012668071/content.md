@@ -165,8 +165,8 @@
 <p>
   We are unable to provide refunds or exchanges for purchases of downloadable
   content (DLC), profile cosmetics like avatar decorations and profile effects,
-  and in-app purchases (IAP) within any Activity, including any gift purchases
-  of these items.
+  in-app purchases (IAP) within Discord, including potions, as well as any gift
+  purchases of these items made within an Activity. 
 </p>
 <p id="docs-internal-guid-fc4b1132-7fff-cfeb-94a4-bb2caf917fc3">
   For profile cosmetic purchases made in the Shop on an iOS device/through the
