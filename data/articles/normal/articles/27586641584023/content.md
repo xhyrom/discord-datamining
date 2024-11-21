@@ -378,7 +378,7 @@
     src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqhKQn6DkehOorYE1JU014I5Molu8yLMUPKZUSG9KqUDJTn7XxGtxltaBaUJtUIO1j1CgXTvDZ67MJ1HPV-h1rvJn25iUh1R2cOvX3hTo13-ghuSxbhMxweCwe67ULX2lB-GeyycKXtYCY9TLz3aFPQ1M?key=rj4xbPLGhlW4DZX3OAxAvGSd"
     width="24"
     height="24"
-  />] in the lower right corner. 
+  />] in the lower left corner. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
