@@ -147,8 +147,8 @@
       </h4>
       <ul role="list">
         <li>
-          <strong>CTRL/CMD + Shift + Opt + V</strong>: Jump back to your call,
-          wherever you are in-app.&nbsp;&nbsp;
+          <strong>CTRL/CMD + Shift + Alt/Opt + V</strong>: Jump back to your
+          call, wherever you are in-app.&nbsp;&nbsp;
         </li>
         <li>
           <strong>CTRL/CMD + Shift + B</strong>: Open the Soundboard&nbsp;
