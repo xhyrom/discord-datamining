@@ -7792,6 +7792,7 @@
           _C = /^\d{17,19}$/;
         ((rF = en || (en = {})).MESSAGE = "MESSAGE"),
           (rF.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED"),
+          (rF.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED"),
           (rF.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER"),
           (rF.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE"),
           (rF.DIVIDER = "DIVIDER"),
@@ -10768,6 +10769,8 @@
           (nh.COLLECTIBLES_EXPIRY_MODAL_CLOSED =
             "collectibles_expiry_modal_closed"),
           (nh.COLLECTIBLES_TILE_IMPRESSION = "collectibles_tile_impression"),
+          (nh.CONSUMABLE_HD_STREAMING_ENTRYPOINT =
+            "consumable_hd_streaming_entrypoint"),
           (nh.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (nh.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -12606,7 +12609,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c9931ec4e493325e38cec7f1534ff04427e8e56f",
+            release: "discord_web-b49ca180242470f8e35359d007b12bf22c31566c",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12675,8 +12678,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "346585"), "346585"));
-          o.YA("builtAt", String("1732146702223"));
+            o.YA("buildNumber", ((e = "346638"), "346638"));
+          o.YA("builtAt", String("1732151274307"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53041,4 +53044,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.34fb64a35b1d003be010.js.map
+//# sourceMappingURL=sentry.2b9a9d6f93b9857901e6.js.map
