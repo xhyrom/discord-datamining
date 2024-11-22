@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_hotwheels_activity_feed_ml_model",
+    "label": "Hotwheels Activity Feed ML Model",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 3: Control (Noteworthy)",
+      "Treatment 5: ML model (lowest threshold, most % positives)",
+      "Treatment 6: ML model (medium threshold, match % positives to heuristic)",
+      "Treatment 7: ML model (highest threshold, highest f1 score but fewer positives)",
+      "Treatment 8: Randomized"
+    ],
+    "hash": 2145331079,
+    "buckets": [
+      -1,
+      0,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": []
+  }
+}
