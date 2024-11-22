@@ -13,12 +13,7 @@
     </li>
     <li>
       <a href="#h_01JBJM95C563GD7V1Q0DR6XX2V"
-        >Why and When should I use an HD Splash Potion?</a
-      >
-    </li>
-    <li>
-      <a href="#h_01JBJME5HDWCE93PZRD9E2WATB"
-        >How do I purchase an HD Splash Potion?</a
+        >Why and when should I use an HD Splash Potion?</a
       >
     </li>
     <li>
@@ -76,7 +71,7 @@
   impacted by the device conditions of participants in the channel.
 </div>
 <h1 id="h_01JBJM95C563GD7V1Q0DR6XX2V">
-  Why and When should I use the HD Splash Potion?
+  Why and when should I use the HD Splash Potion?
 </h1>
 <p>
   The HD Splash Potion is perfect for any moment where you and your friends want
@@ -95,26 +90,6 @@
   <li>Community events like music, art, and talent shows</li>
   <li>Study sessions and presentations</li>
 </ul>
-<h1 id="h_01JBJME5HDWCE93PZRD9E2WATB">
-  How do I purchase an HD Splash Potion?
-</h1>
-<p>
-  1. To purchase an HD Splash Potion, navigate to the voice channel where you
-  want to apply it.
-</p>
-<p>
-  2. Select the Share Your Screen button and press the
-  <strong>HD Streaming Potion option</strong>.
-</p>
-<p>
-  3. In the HD Streaming Potion menu, press <strong>Buy</strong> to confirm your
-  purchase.
-</p>
-<div class="info-box">
-  <strong>NOTE:</strong> If you don't have a payment method on file, you'll be
-  prompted to enter your payment information to complete the purchase.
-</div>
-<div class="ysiwyg-text-align-center">[image/GIF]</div>
 <h1 id="h_01JBJMKQSPV181CQ2C8M6NBRTR" class="wysiwyg-text-align-left">
   How do I activate and use my HD Splash Potion?
 </h1>
