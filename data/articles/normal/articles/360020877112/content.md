@@ -12,7 +12,6 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
-<h3 id="h_01JDAHX8ZV2GM9GG6SPVN2ZKAA">Gift Nitro this holiday season</h3>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
