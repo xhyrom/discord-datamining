@@ -50652,6 +50652,22 @@ html.disable-forced-colors * {
   --size-lg: var(--size-20);
   --size-xl: var(--size-24);
   --size-xxl: var(--size-32);
+  --breakpoint-480: 480px;
+  --breakpoint-640: 640px;
+  --breakpoint-768: 768px;
+  --breakpoint-1024: 1024px;
+  --breakpoint-1280: 1280px;
+  --breakpoint-1536: 1536px;
+  --breakpoint-1800: 1800px;
+  --breakpoint-2500: 2500px;
+  --breakpoint-xxs: 480px;
+  --breakpoint-xs: 640px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1536px;
+  --breakpoint-xxl: 1800px;
+  --breakpoint-max: 2500px;
   --space-0: 0px;
   --space-4: 4px;
   --space-8: 8px;
@@ -51995,4 +52011,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.40aa7b4767fde8e30695.css.map*/
+/*# sourceMappingURL=12633.d9b3af94b38de1a76afb.css.map*/
