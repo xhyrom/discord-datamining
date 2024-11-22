@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_clans_valorant_pilot",
-    "label": "Clans Valorant Pilot",
+    "id": "2024-11_marketing_page_v2_experiment",
+    "label": "Marketing Page V2 Experiment",
     "description": [
       "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show clan discovery (Valorant)"
+      "Treatment 0: User see current marketing page",
+      "Treatment 1: users see new marketing page"
     ],
-    "hash": 3272697562,
+    "hash": 2385116850,
     "buckets": [
       -1,
       0,

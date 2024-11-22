@@ -814,6 +814,7 @@ id,hash,label
 2024-10_improved_media_viewer,1621420501,Improved Desktop Media Viewer
 2024-10_merge_notifications_tab,2998143296,Merge notifications tab
 2024-10_message_attachment_send_failure,3652546672,Message Attachment Send Failure Experiment
+2024-10_mobile_display_animated_webp_embeds,4109271000,Mobile Display Animated WebP Embeds Experiment
 2024-10_mobile_video_disable,1715296116,Backgrounding Mobile App Disables Incoming Video
 2024-10_nitro_shop_entry_points,842501197,User Profile Nitro Shop Entry Points
 2024-10_nitro_tab_forced_render,3681053868,Nitro Tab Forced Re-render Investigation
@@ -843,7 +844,10 @@ id,hash,label
 2024-11_activity_popout_window,4090186469,Activity Popout Window Experiment
 2024-11_application_reporting_flow,1859137100,Apps In-App Reporting
 2024-11_checkout_optimization_browser_autofill_global,402972005,Checkout Optimization Browser Autofill Global
+2024-11_connection_flow_refactor_v2,4044657019,Connection Flow Refactor
+2024-11_disable_quest_decision_fallback,3740788845,Disable Quest Decision Fallback
 2024-11_hypesquad_removal,3719452344,HypeSquad Removal
+2024-11_marketing_page_v2_experiment,2385116850,Marketing Page V2 Experiment
 2024-11_nitro_tenure_rewards_collectible,369847441,Nitro Tenure Reward Collectible
 2024-11_premium_q4_moment_marketing,1993855251,Premium Q4 Moment Marketing
 2024-11_seasonal_gifting,797131451,Seasonal Gifting 2024

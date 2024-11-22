@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-05_clans_valorant_prepilot",
-    "label": "Clans Valorant Prepilot",
+    "id": "2024-11_connection_flow_refactor_v2",
+    "label": "Connection Flow Refactor",
     "description": [
       "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable creation of clan guilds - Valorant"
+      "Treatment 0: Disabled",
+      "Treatment 1: Enabled"
     ],
-    "hash": 1397046415,
+    "hash": 4044657019,
     "buckets": [
       -1,
       0,

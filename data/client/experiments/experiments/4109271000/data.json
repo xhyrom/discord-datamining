@@ -1,15 +1,15 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-10_blocking_context",
-    "label": "Blocking Context",
+    "id": "2024-10_mobile_display_animated_webp_embeds",
+    "label": "Mobile Display Animated WebP Embeds Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show blocking context in block confirmation modal",
-      "Treatment 2: Show condensed blocking context"
+      "Treatment 1: Control treatment",
+      "Treatment 2: Animated WebP enabled"
     ],
-    "hash": 1289160534,
+    "hash": 4109271000,
     "buckets": [
       -1,
       0,

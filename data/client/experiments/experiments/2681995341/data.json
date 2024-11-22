@@ -1,64 +1,30 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2024-10_rapidash_discovery_sign_up",
-    "label": "Rapidash Discovery Early Sign Up",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable"
-    ],
     "hash": 2681995341,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false,
-    "config_keys": [
-      "enabled"
-    ]
+    "aa_mode": false
   },
   "rollout": {
     "populations": [
       {
         "buckets": {
-          "1": {
-            "rollout": [
-              {
-                "start": 100,
-                "end": 200
-              },
-              {
-                "start": 1600,
-                "end": 3000
-              }
-            ]
-          },
           "none": {
             "rollout": [
               {
-                "start": 3000,
+                "start": 0,
                 "end": 10000
               }
             ]
           }
         },
-        "filters": [
-          {
-            "type": "guild_has_feature",
-            "features": [
-              "RAPIDASH_TEST"
-            ]
-          }
-        ]
+        "filters": []
       }
     ],
-    "revision": 0,
+    "revision": 1,
     "overrides": {},
     "overrides_formatted": [
       {
