@@ -11171,6 +11171,21 @@ div.cardContainer_c22357 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.nitroRewardTileAssetContainer_cc6d33 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    45deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+}
+.nitroRewardTileAsset_cc6d33 {
+  height: 80%;
+  width: 80%;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
 .nitroUpsellContainer_f03ca8 {
   display: flex;
   flex-direction: row;
@@ -52011,4 +52026,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.d9b3af94b38de1a76afb.css.map*/
+/*# sourceMappingURL=12633.1333be142257b9b99fac.css.map*/
