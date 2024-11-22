@@ -4736,6 +4736,10 @@
       "POST"
     ]
   },
+  "SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION": {
+    "url": "/safety-hub/suspended/request-verification",
+    "allowed_methods": null
+  },
   "INITIATE_CHANNEL_PROMPTS": {
     "url": "/initiate-prompts",
     "allowed_methods": [
