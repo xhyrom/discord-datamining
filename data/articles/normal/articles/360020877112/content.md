@@ -12,6 +12,7 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
+<h3 id="h_01JDAHX8ZV2GM9GG6SPVN2ZKAA">Gift Nitro this holiday season</h3>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
@@ -65,7 +66,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19402148730135"
+    src="https://support.discord.com/hc/article_attachments/28000206419095"
     alt="image5.gif"
     width="619"
     height="497"
@@ -107,7 +108,7 @@
 </h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19402139045271"
+    src="https://support.discord.com/hc/article_attachments/28000238661143"
     alt="image4.png"
     width="645"
     height="459"
@@ -146,7 +147,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/19402139049751"
+      src="https://support.discord.com/hc/article_attachments/28000238663831"
       alt="image1.png"
       width="609"
       height="300"
@@ -240,7 +241,7 @@
 </h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/8741537774487"
+    src="https://support.discord.com/hc/article_attachments/28000238666903"
     alt="nitro_gifting_unclaimed_inventory.JPG"
   />
 </p>
@@ -266,7 +267,7 @@
 </p>
 <p id="docs-internal-guid-596f9b09-7fff-e30b-e2a4-44f837e0bcbb">
   2. Select the <strong>gifting </strong>[<img
-    src="https://support.discord.com/hc/article_attachments/23984443834135"
+    src="https://support.discord.com/hc/article_attachments/28000206429335"
     width="24"
     height="24"
   />]<strong> icon </strong>located to the left of the text bar. 
@@ -274,7 +275,7 @@
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-c333195c-7fff-07db-7c8e-05ea5aea3bd0"
     ><img
-      src="https://support.discord.com/hc/article_attachments/23984443842455"
+      src="https://support.discord.com/hc/article_attachments/28000206433943"
       width="236"
       height="512"
   /></span>
@@ -287,7 +288,7 @@
   <span id="docs-internal-guid-3810a2ac-7fff-a139-dbd3-5757e1bece67"
     ><span id="docs-internal-guid-b2cd606e-7fff-2f01-c1ae-56d70130486d"
       ><img
-        src="https://support.discord.com/hc/article_attachments/23984443848215"
+        src="https://support.discord.com/hc/article_attachments/28000238680471"
         width="233"
         height="611" /></span
   ></span>
