@@ -80,38 +80,32 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-b7b1f97d-7fff-0b40-85d6-8cc7e551c972"
+    <a href="#docs-internal-guid-b7b1f97d-7fff-0b40-85d6-8cc7e551c972"
       >What is Discord Nitro?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-600d0144-7fff-1a92-4266-b4aa34d9a41f"
+    <a href="#docs-internal-guid-600d0144-7fff-1a92-4266-b4aa34d9a41f"
       >How do I claim the Nitro Promo from my Epic Games Store account?  </a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK89AVWECCVXYN70RWCWK11"
+    <a href="#h_01HXK89AVWECCVXYN70RWCWK11"
       >How do I redeem the Nitro Trial on my Discord Account? </a
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8AEVB7MFACJM5050A3Y0N"
+        <a href="#h_01HXK8AEVB7MFACJM5050A3Y0N"
           >Eligibility for Redeeming the Nitro Trial</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-afad558d-7fff-1591-42ea-dbbae25875f2"
+        <a href="#docs-internal-guid-afad558d-7fff-1591-42ea-dbbae25875f2"
           >Step by Step Redeem Instructions</a
         >
         <ul>
           <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-58fe5f45-7fff-c68f-9d6d-df19e8118239"
+            <a href="#docs-internal-guid-58fe5f45-7fff-c68f-9d6d-df19e8118239"
               >What if I am an Active Nitro Basic, Nitro Classic, or Server
               Boosting Member? </a
             >
@@ -121,32 +115,23 @@
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23343315546903#docs-internal-guid-e79850ba-7fff-4e66-ef9d-aa1e34918ef7"
+    <a href="#docs-internal-guid-e79850ba-7fff-4e66-ef9d-aa1e34918ef7"
       >Frequently Asked Questions</a
     >
     <ul>
+      <li><a href="#h_01HXK8MQ6KRZS1211XNZFVJB6R">Promotion Details</a></li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8MQ6KRZS1211XNZFVJB6R"
-          >Promotion Details</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8MQ6KZ1D4JP6ZVHXMNTK3"
+        <a href="#h_01HXK8MQ6KZ1D4JP6ZVHXMNTK3"
           >Eligibility for the Promotion</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8P5FYQRNMMBHH15Y3CAM0"
+        <a href="#h_01HXK8P5FYQRNMMBHH15Y3CAM0"
           >Payment Info and Subscription Questions</a
         >
       </li>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23343315546903#h_01HXK8Y7F9NSPP5ZXHXD9R32D4"
+        <a href="#h_01HXK8Y7F9NSPP5ZXHXD9R32D4"
           >Potential Errors and Other Issues</a
         >
       </li>
