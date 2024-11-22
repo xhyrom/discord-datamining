@@ -24709,7 +24709,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-sm\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 400;
 }
@@ -24718,7 +24718,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-sm\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 500;
 }
@@ -24727,7 +24727,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-sm\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 600;
 }
@@ -24736,7 +24736,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-sm\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 700;
 }
@@ -24745,7 +24745,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-sm\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 800;
 }
@@ -24754,7 +24754,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-md\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -24763,7 +24763,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-md\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 500;
 }
@@ -24772,7 +24772,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-md\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
 }
@@ -24781,7 +24781,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-md\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -24790,7 +24790,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-md\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 800;
 }
@@ -24799,7 +24799,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-lg\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -24808,7 +24808,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-lg\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -24817,7 +24817,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-lg\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -24826,7 +24826,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-lg\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -24835,7 +24835,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-lg\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 800;
 }
@@ -24844,7 +24844,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xl\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -24853,7 +24853,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xl\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 500;
 }
@@ -24862,7 +24862,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xl\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 600;
 }
@@ -24871,7 +24871,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xl\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -24880,7 +24880,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xl\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 800;
 }
@@ -24889,7 +24889,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xxl\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -24898,7 +24898,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xxl\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 500;
 }
@@ -24907,7 +24907,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xxl\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 600;
 }
@@ -24916,7 +24916,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xxl\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -24925,7 +24925,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-xxl\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.25;
   font-weight: 800;
 }
@@ -24934,7 +24934,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .eyebrow_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
   text-transform: uppercase;
@@ -24945,7 +24945,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-deprecated-12\/normal_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 400;
 }
@@ -24954,7 +24954,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-deprecated-12\/medium_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 500;
 }
@@ -24963,7 +24963,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-deprecated-12\/semibold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 600;
 }
@@ -24972,7 +24972,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-deprecated-12\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
 }
@@ -24981,7 +24981,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .heading-deprecated-12\/extrabold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 800;
 }
@@ -24990,7 +24990,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/heading-18\/bold_ec1c2d {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
 }
@@ -24999,7 +24999,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xxs\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -25008,7 +25008,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xxs\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -25017,7 +25017,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xxs\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -25026,7 +25026,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xxs\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -25035,7 +25035,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xs\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 400;
 }
@@ -25044,7 +25044,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xs\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 500;
 }
@@ -25053,7 +25053,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xs\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 600;
 }
@@ -25062,7 +25062,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-xs\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
 }
@@ -25071,7 +25071,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-sm\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 400;
 }
@@ -25080,7 +25080,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-sm\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 500;
 }
@@ -25089,7 +25089,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-sm\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 600;
 }
@@ -25098,7 +25098,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-sm\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.2857142857142858;
   font-weight: 700;
 }
@@ -25107,7 +25107,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-md\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -25116,7 +25116,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-md\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 500;
 }
@@ -25125,7 +25125,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-md\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
 }
@@ -25134,7 +25134,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-md\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -25143,7 +25143,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-lg\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -25152,7 +25152,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-lg\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -25161,7 +25161,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-lg\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 600;
 }
@@ -25170,7 +25170,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .text-lg\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -25179,7 +25179,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/message-preview\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.3333333333333333;
   font-weight: 400;
 }
@@ -25188,7 +25188,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/message-preview\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.3333333333333333;
   font-weight: 500;
 }
@@ -25197,7 +25197,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/message-preview\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.3333333333333333;
   font-weight: 600;
 }
@@ -25206,7 +25206,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/message-preview\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
 }
@@ -25215,7 +25215,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/channel-title\/normal_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.375;
   font-weight: 400;
 }
@@ -25224,7 +25224,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/channel-title\/medium_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.375;
   font-weight: 500;
 }
@@ -25233,7 +25233,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/channel-title\/semibold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.375;
   font-weight: 600;
 }
@@ -25242,7 +25242,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .redesign\/channel-title\/bold_ec1c2d {
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.375;
   font-weight: 700;
 }
@@ -25251,7 +25251,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .display-sm_ec1c2d {
   font-family: var(--font-headline);
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1;
   font-weight: 800;
 }
@@ -25260,7 +25260,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .display-md_ec1c2d {
   font-family: var(--font-headline);
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 1.0588235294117647;
   font-weight: 800;
 }
@@ -25269,7 +25269,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .display-lg_ec1c2d {
   font-family: var(--font-headline);
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 0.9545454545454546;
   font-weight: 800;
 }
@@ -25278,7 +25278,7 @@ div.popoutCloseButton_d523a2:hover {
 }
 .code_ec1c2d {
   font-family: var(--font-code);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.3333333333333333;
   font-weight: 700;
 }
@@ -25304,8 +25304,8 @@ div.popoutCloseButton_d523a2:hover {
   color: var(--interactive-normal);
 }
 .liveLarge_ec1c2d {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 .heading_a08002 {
   display: flex;
@@ -52026,4 +52026,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1333be142257b9b99fac.css.map*/
+/*# sourceMappingURL=12633.c6fa5b8be56fd1e291b6.css.map*/
