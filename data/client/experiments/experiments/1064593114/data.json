@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_expression_suggestions_disabled",
+    "label": "Expression Suggestions Disabled Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Disable sticker expression suggestions"
+    ],
+    "hash": 1064593114,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "disabled"
+    ]
+  }
+}
