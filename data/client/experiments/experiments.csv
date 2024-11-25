@@ -848,6 +848,7 @@ id,hash,label
 2024-11_connection_flow_refactor_v2,4044657019,Connection Flow Refactor
 2024-11_disable_quest_decision_fallback,3740788845,Disable Quest Decision Fallback
 2024-11_expression_suggestions_disabled,1064593114,Expression Suggestions Disabled Experiment
+2024-11_global_discovery_algolia_search,3999173412,Global Discovery Servers Search
 2024-11_hotwheels_activity_feed_ml_model,2145331079,Hotwheels Activity Feed ML Model
 2024-11_hypesquad_removal,3719452344,HypeSquad Removal
 2024-11_marketing_page_v2_experiment,2385116850,Marketing Page V2 Experiment
