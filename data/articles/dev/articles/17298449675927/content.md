@@ -170,8 +170,8 @@
 <h3 id="h_01HW8RFERKSQQ114R2ZESVTZJ7">Publish</h3>
 <p>
   This action sets a SKU state to Available. When publishing a SKU you will have
-  2 options. A`vailable via Store &amp; API` will be the choice if you are
-  setting up a Store. `Available via API only` will be better suited for
+  2 options. "Available via Store &amp; API" will be the choice if you are
+  setting up a Store. "Available via API only" will be better suited for
   Activities. 
 </p>
 <h3 id="h_01HW8RFERKJC212C3JY3MZXDN2">Unpublish</h3>
