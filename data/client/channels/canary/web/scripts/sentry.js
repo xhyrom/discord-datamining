@@ -6684,15 +6684,17 @@
               "/connections/".concat(e, "/callback/session-handoff"),
             CONNECTIONS_CALLBACK: (e) => "/connections/".concat(e, "/callback"),
             CONNECTION: (e, t) =>
-              "/users/@me/connections/".concat(e, "/").concat(t),
+              "/users/@me/connections/".concat(e, "/").concat(escape(t)),
             CONNECTION_REFRESH: (e, t) =>
-              "/users/@me/connections/".concat(e, "/").concat(t, "/refresh"),
+              "/users/@me/connections/"
+                .concat(e, "/")
+                .concat(escape(t), "/refresh"),
             CONNECTION_SYNC_CONTACTS:
               "/users/@me/connections/contacts/@me/external-friend-list-entries",
             CONNECTION_ACCESS_TOKEN: (e, t) =>
               "/users/@me/connections/"
                 .concat(e, "/")
-                .concat(t, "/access-token"),
+                .concat(escape(t), "/access-token"),
             CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK: (e) =>
               "/connections/".concat(e, "/link-dispatch-auth-callback"),
             XBOX_HANDOFF: "/consoles/xbox-handoff",
@@ -12612,7 +12614,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-952a4eaad510b940e0ad294dce7abfae083f1331",
+            release: "discord_web-b9a94a4e25bfb8f2d2b60d28bea7cea50f7cafa2",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12681,8 +12683,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "348023"), "348023"));
-          o.YA("builtAt", String("1732566990986"));
+            o.YA("buildNumber", ((e = "348029"), "348029"));
+          o.YA("builtAt", String("1732567267115"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -53122,4 +53124,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4af6b3997729db5c4dd7.js.map
+//# sourceMappingURL=sentry.82ceb1c18df70b734105.js.map
