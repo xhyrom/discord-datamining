@@ -12,16 +12,16 @@
   Please note that if you fail to secure your account and it is compromised,
   Discord may be unable to assist in its recovery.
 </p>
-<div class="form-box">
-  If you believe your account has been compromised, submit a report to the
-  Discord Trust &amp; Safety team through
-  <strong
-    ><a
-      href="https://dis.gd/hackedaccount"
-      target="_blank"
-      rel="noopener noreferrer"
-      >our support form linked here</a
-    ></strong
+<div class="info-box">
+  If you suspect your account has been compromised, check your email first! You
+  can temporarily change your email on your account through a link in the
+  “Discord Email Address changed” email. If you still need support, submit a
+  report to the Discord team through
+  <a
+    href="https://dis.gd/hackedaccount"
+    target="_blank"
+    rel="noopener noreferrer"
+    >our support form linked here</a
   >.
 </div>
 <h2 id="h_01J098298YV08T122AV2ECPHDR">How to Keep Your Discord Account Safe</h2>

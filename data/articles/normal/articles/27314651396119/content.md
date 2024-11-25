@@ -40,7 +40,7 @@
 </div>
 <h1 id="h_01JB085M3RXY92E53XR88C3XMD">Promotion Terms</h1>
 <p>
-  <strong>Quest Game: Once Human </strong><br /><strong
+  <strong>Quest Game: Once Human</strong><br /><strong
     >Quest Name: Winter Survival Quest</strong
   >
 </p>
@@ -105,7 +105,7 @@
   />
 </p>
 <h4 id="h_01JB085M3RC2CENGJ6SG88QN67" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Streaming to a Friend in a Discord Voice Channel</span
   >
 </h4>
@@ -136,7 +136,10 @@
   to our
   <a
     href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ#h_01HVPBZR5FKKSQ3R1JXB9E4DM3"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >Discord Quests FAQ</span
     ></a
   >.
