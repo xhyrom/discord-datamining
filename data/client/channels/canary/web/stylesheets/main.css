@@ -16591,16 +16591,20 @@ span.clanTag_a31c43 {
 .largeCountdownPill_aa13b8 {
   display: flex;
   justify-content: center;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
 }
 .largeCountdownPillText_aa13b8 {
   font-weight: 800;
   display: inline-block;
-  padding: 8px 16px;
   color: var(--custom-premium-colors-banner-yellow);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.7px;
+}
+.largePillIcon_aa13b8 {
+  padding-left: 6px;
 }
 .unavailableCounterContainer_e57ea2 {
   display: flex;
@@ -16620,7 +16624,6 @@ span.clanTag_a31c43 {
   color: white;
 }
 .countDownText_e57ea2 {
-  padding: 5px 12px;
   margin-left: 8px;
 }
 .tooltip_e57ea2 {
@@ -52120,4 +52123,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8cfa220f5900e2827f21.css.map*/
+/*# sourceMappingURL=12633.62ec7ed4443ea4fc6c45.css.map*/
