@@ -15887,6 +15887,36 @@ span.clanTag_a31c43 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
+.divider_ad3550 {
+  margin: 8px 0;
+}
+.updateMessage_ad3550 {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin: 12px 0;
+}
+.infoMessageIcon_ad3550 {
+  width: 16px;
+  height: 16px;
+}
+.joinLeaderboardButton_ad3550 {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.joinLeaderboardButtonInner_ad3550 {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.riotIcon_ad3550 {
+  width: 16px;
+  height: 16px;
+}
 .menuIcon_cdae90 {
   cursor: pointer;
   color: var(--interactive-normal);
@@ -52123,4 +52153,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.62ec7ed4443ea4fc6c45.css.map*/
+/*# sourceMappingURL=12633.965319fe44176ac55b47.css.map*/
