@@ -14087,6 +14087,11 @@ span.clanTag_a31c43 {
   background-color: var(--bg-surface-raised);
   border-radius: var(--radius-round);
 }
+.label_eb3c91 {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
 .actionButton_f5dff0 {
   margin-left: auto;
 }
@@ -52026,4 +52031,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1333be142257b9b99fac.css.map*/
+/*# sourceMappingURL=12633.4dbefa226009c9abc51a.css.map*/
