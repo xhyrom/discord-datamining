@@ -26183,17 +26183,6 @@ div.popoutCloseButton_d523a2:hover {
   position: relative;
   border-radius: inherit;
   background-color: var(--profile-body-background-color);
-  animation: upsellExpand_b8bbd6 2s ease-out forwards;
-}
-@keyframes upsellExpand_b8bbd6 {
-  0% {
-    max-height: 0;
-    overflow: hidden;
-  }
-  to {
-    max-height: 100vh;
-    overflow: visible;
-  }
 }
 .upsellContent_b8bbd6:before,
 .upsellContent_b8bbd6:after {
@@ -52131,4 +52120,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.0d90b64ec60f936ccfa2.css.map*/
+/*# sourceMappingURL=12633.8cfa220f5900e2827f21.css.map*/
