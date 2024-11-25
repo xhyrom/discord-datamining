@@ -15992,9 +15992,11 @@ span.clanTag_a31c43 {
 }
 .heroSplash_e12502 {
   height: 100%;
-  width: 100%;
+  width: 220px;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
   position: absolute;
   top: 0;
   right: 0;
@@ -16003,17 +16005,10 @@ span.clanTag_a31c43 {
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    transparent 100px,
-    white 240px,
+    white 180px,
     white 100%
   );
-  mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    transparent 100px,
-    white 240px,
-    white 100%
-  );
+  mask-image: linear-gradient(90deg, transparent 0%, white 180px, white 100%);
 }
 .rankContainer_e6eff2 {
   background-color: var(--bg-surface-overlay);
@@ -52153,4 +52148,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.965319fe44176ac55b47.css.map*/
+/*# sourceMappingURL=12633.415d6ac64fe0fa1e4d42.css.map*/
