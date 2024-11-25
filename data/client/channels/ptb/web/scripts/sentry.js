@@ -12611,7 +12611,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7afb8baa864154659686265d59ebaef99ea5b42b",
+            release: "discord_web-581582ceb38dc23fe4d7d07def1fb449d200ea71",
             beforeSend: function (e, t) {
               var r, n;
               return !(
@@ -12680,8 +12680,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "347890"), "347890"));
-          o.YA("builtAt", String("1732553262782"));
+            o.YA("buildNumber", ((e = "347908"), "347908"));
+          o.YA("builtAt", String("1732555340446"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -17314,6 +17314,7 @@
           (X.ACCEPT_ACTIVITY_INVITE = "ACCEPT_ACTIVITY_INVITE"),
           (X.OPEN_INVITE_DIALOG = "OPEN_INVITE_DIALOG"),
           (X.OPEN_SHARE_MOMENT_DIALOG = "OPEN_SHARE_MOMENT_DIALOG"),
+          (X.SHARE_INTERACTION = "SHARE_INTERACTION"),
           (X.INITIATE_IMAGE_UPLOAD = "INITIATE_IMAGE_UPLOAD"),
           (X.INVITE_BROWSER = "INVITE_BROWSER"),
           (X.DEEP_LINK = "DEEP_LINK"),
@@ -53051,4 +53052,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.4c4efc24cb540139c859.js.map
+//# sourceMappingURL=sentry.7e8586929b481b728fa9.js.map
