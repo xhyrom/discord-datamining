@@ -99,8 +99,8 @@
       >
       <ul>
         <li>
-          <strong
-            ><a href="#h_01JCM101862BTF5DES69P8Y06E">Dune: Prophecy </a></strong
+          <a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"
+            ><strong>Batman: Arkham Shadow </strong></a
           >
         </li>
       </ul>
@@ -112,6 +112,11 @@
         ></strong
       >
       <ul>
+        <li>
+          <strong
+            ><a href="#01JDJ7KTDT2CYVDY8CSPZ5MGQ3">Dune: Prophecy </a></strong
+          >
+        </li>
         <li>
           <strong
             ><a href="#h_01JB0C2391GAWSSD6WYSX5KPF5">Once Human</a></strong
@@ -552,7 +557,22 @@
   ><span style="color: #666666">   </span>
 </h4>
 <h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
-<h2 id="h_01JCM101862BTF5DES69P8Y06E">
+<h2 id="h_01JDJ4KZEKE5N4VRTSH2W9BH4X">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/27950035791383-Batman-Arkham-Shadow-Quest"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Batman: Arkham Shadow - Batman: Arkham Shadow Quest</a
+  >
+</h2>
+<p>
+  The <strong>Batman: Arkham Shadow Quest</strong> can be accepted on Discord
+  desktop app or browser client from <strong>November 25, 2024</strong> until
+  <strong>December 8, 2024 (11:59PM UTC)</strong>. Quest requirements must be
+  completed during this period to receive the reward.
+</p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
+<h2 id="01JDJ7KTDT2CYVDY8CSPZ5MGQ3">
   <a
     href="https://support.discord.com/hc/en-us/articles/27606051100183-Dune-Prophecy-Quest"
     target="_blank"
@@ -566,7 +586,6 @@
   <strong>November 25, 2024 (11:59PM UTC)</strong>. Quest requirements must be
   completed during this period to receive the reward.
 </p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
 <h2 id="h_01JB0C2391GAWSSD6WYSX5KPF5">
   <a
     href="https://support.discord.com/hc/en-us/articles/27314651396119"
