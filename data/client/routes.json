@@ -3137,6 +3137,10 @@
       "OPTIONS"
     ]
   },
+  "GUILD_DISCOVERY_SEARCH": {
+    "url": "/discoverable-guilds/search",
+    "allowed_methods": null
+  },
   "GUILD_DISCOVERY_CATEGORIES": {
     "url": "/discovery/categories",
     "allowed_methods": [
