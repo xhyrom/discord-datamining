@@ -2496,7 +2496,7 @@
     "allowed_methods": null
   },
   "BILLING_STANDALONE_CHECKOUT_PAGE": {
-    "url": "/billing/premium/subscribe?plan_id=:param&gift=:param&load_id=:param",
+    "url": "/billing/premium/subscribe?plan_id=:param&gift=:param&load_id=:param&payment_method_type=:param",
     "allowed_methods": null
   },
   "BILLING_STANDALONE_CHECKOUT_LOGIN_HANDOFF": {
