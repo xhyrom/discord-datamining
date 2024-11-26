@@ -23991,6 +23991,81 @@ div.popoutCloseButton_d523a2:hover {
 .theme-dark .giftIconButtonActive_efde15 {
   background-color: var(--background-accent);
 }
+.container_fcfd9f {
+  background-color: var(--brand-500);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+.body_fcfd9f {
+  padding-top: 54px;
+  max-width: 248px;
+}
+.pointer_fcfd9f {
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-width: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-top-color: var(--brand-500);
+}
+.button_fcfd9f {
+  margin: 16px;
+  width: 100%;
+}
+.popoutTarget_fcfd9f {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 20px;
+}
+.text_fcfd9f {
+  color: #fff;
+  padding-top: 4px;
+}
+.image_fcfd9f {
+  position: absolute;
+  width: 200px;
+  bottom: 148px;
+}
+.dmButtonContainer_fcfd9f {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 16px;
+  gap: 4px;
+}
+.dmButton_fcfd9f {
+  flex: 1;
+}
+.icon_cfe645 {
+  width: 32px;
+  height: auto;
+  position: absolute;
+  left: -4px;
+  bottom: -2px;
+}
+.container_fdeb78 {
+  display: flex;
+}
+.giftIconContainer_fdeb78 {
+  pointer-events: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .generalHeading_a2f60b {
   color: var(--primary-130);
   padding: 16px 12px 0 16px;
@@ -24122,68 +24197,6 @@ div.popoutCloseButton_d523a2:hover {
 }
 .closeButton_a2f60b:hover {
   background-color: rgba(255, 255, 255, 4%);
-}
-.container_fcfd9f {
-  background-color: var(--brand-500);
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  border-radius: 8px;
-  padding: 0 16px;
-}
-.body_fcfd9f {
-  padding-top: 54px;
-  max-width: 248px;
-}
-.pointer_fcfd9f {
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-width: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-top-color: var(--brand-500);
-}
-.button_fcfd9f {
-  margin: 16px;
-  width: 100%;
-}
-.popoutTarget_fcfd9f {
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 20px;
-}
-.text_fcfd9f {
-  color: #fff;
-  padding-top: 4px;
-}
-.image_fcfd9f {
-  position: absolute;
-  width: 200px;
-  bottom: 148px;
-}
-.dmButtonContainer_fcfd9f {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 16px;
-  gap: 4px;
-}
-.dmButton_fcfd9f {
-  flex: 1;
-}
-.container_dfb455 {
-  display: flex;
-}
-.noPointerEvents_dfb455 {
-  pointer-events: none;
 }
 .disabled_a06035 {
   cursor: not-allowed;
@@ -53943,4 +53956,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.44bde6e1c7243943889f.css.map*/
+/*# sourceMappingURL=12633.11ce244894f99031853a.css.map*/
