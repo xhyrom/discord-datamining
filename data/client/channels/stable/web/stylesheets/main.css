@@ -26386,6 +26386,12 @@ div.popoutCloseButton_d523a2:hover {
   background-color: var(--profile-gradient-button-color);
   opacity: 0.5;
 }
+.container_effd71 {
+  padding: var(--spacing-12);
+  gap: var(--spacing-8);
+  display: flex;
+  flex-direction: row;
+}
 .baseAvatar_e3a0ec {
   display: inline-block;
   vertical-align: top;
@@ -53975,4 +53981,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f1b54fe587210120712d.css.map*/
+/*# sourceMappingURL=12633.b49f754d31a0622f79f3.css.map*/
