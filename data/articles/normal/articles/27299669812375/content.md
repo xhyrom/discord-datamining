@@ -21,7 +21,7 @@
     </li>
   </ul>
 </div>
-<div class="tip-box">
+<div class="warn-box">
   <strong>Note:</strong> Please note that account recovery links will become
   invalid after a 48 hour time period. Do not share this link to others.
 </div>
@@ -35,7 +35,7 @@
   within 48 hours, as an extra method to keep you in control of your account.
 </p>
 <h1 id="h_01JAZCN933TDNVG8TR52XT2QRH">How to Undo an Email Address Change</h1>
-<div class="tip-box">
+<div class="info-box">
   <strong> Note:</strong> The URL will always start with
   <a href="https://discord.com/wasntme/">https://discord.com/wasntme/</a> -
   anything else is fake and not from Discord!
@@ -69,7 +69,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/27299677279383"
+      src="https://support.discord.com/hc/article_attachments/28088027759767"
       width="466.6693566769644"
       height="611"
   /></span>
@@ -125,12 +125,12 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27299677282711"
+    src="https://support.discord.com/hc/article_attachments/28088027764631"
     width="388.00000000000006"
     height="297.0061776312175"
   />
 </p>
-<div class="tip-box">
+<div class="warn-box">
   <strong>Note:</strong> If your account recovery link has expired, the Discord
   support team is not able to send you a new one.
 </div>
@@ -164,7 +164,7 @@
     out from all devices.
   </li>
 </ul>
-<div class="tip-box">
+<div class="book-box">
   <strong>Note:</strong> If you’d like to learn more information about
   compromised or hacked accounts and how to report abusive behavior on Discord,
   please review our
