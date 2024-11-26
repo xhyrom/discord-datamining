@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-11_checkout_optimization_desktop_client_google_pay",
+    "label": "Checkout Optimization Browser Autofill Google Pay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled with delay"
+    ],
+    "hash": 3040416010,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "delay"
+    ]
+  }
+}

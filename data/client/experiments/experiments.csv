@@ -845,6 +845,7 @@ id,hash,label
 2024-11_activity_popout_window,4090186469,Activity Popout Window Experiment
 2024-11_application_reporting_flow,1859137100,Apps In-App Reporting
 2024-11_checkout_optimization_browser_autofill_global,402972005,Checkout Optimization Browser Autofill Global
+2024-11_checkout_optimization_desktop_client_google_pay,3040416010,Checkout Optimization Browser Autofill Google Pay
 2024-11_connection_flow_refactor_v2,4044657019,Connection Flow Refactor
 2024-11_disable_quest_decision_fallback,3740788845,Disable Quest Decision Fallback
 2024-11_expression_suggestions_disabled,1064593114,Expression Suggestions Disabled Experiment
