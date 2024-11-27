@@ -54058,10 +54058,11 @@ img[alt] {
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
   --custom-channel-textarea-text-area-height: 40px;
+  --custom-rtc-account-height: 64px;
   --custom-app-top-bar-height: 32px;
   --custom-channel-header-height: 56px;
 }
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ad6da9fffbf2b6530d3b.css.map*/
+/*# sourceMappingURL=12633.300a86c9b6bd7734c41a.css.map*/
