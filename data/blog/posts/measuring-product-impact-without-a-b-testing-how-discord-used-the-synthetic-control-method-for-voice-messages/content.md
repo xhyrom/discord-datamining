@@ -333,7 +333,7 @@
         </li>
         <li>
           Predictor metrics for our target metric, serving as model parameters.
-          These predictors should:some text
+          These predictors should:
           <ol role="list">
             <li>Have data available over a sufficiently long time horizon.</li>
             <li>
