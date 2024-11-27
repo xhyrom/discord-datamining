@@ -8637,9 +8637,6 @@
           (r6.SETTINGS_BLOCKED_USERS_V2 = "Blocked Users V2"),
           (r6.SETTINGS_IGNORED_USERS = "Ignored Users"),
           (r6.SETTINGS_INVENTORY = "Library Inventory"),
-          (r6.SETTINGS_DEBUG_LOGS = "Debug Logs"),
-          (r6.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
-          (r6.SETTINGS_STARTUP_TIMINGS = "Startup Timings"),
           (r6.TEXT_COMPONENT = "Text Component"),
           (r6.DESIGN_SYSTEM = "Design System"),
           (r6.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
@@ -9019,7 +9016,6 @@
           BUILD_OVERRIDE: "Build Override",
           CHECK_NATIVE_UPDATE: "Check For Native Update",
           INSTALL_NATIVE_UPDATE: "Install Native Build",
-          CHANGELOG_OVERRIDE: "Changelog Override",
           ACCOUNT: "My Account",
           GAMES: "Games",
           ACCOUNT_CHANGE_USERNAME: "Change Username",
@@ -9068,9 +9064,6 @@
           TOWNHALL: "Townhall",
           DESKTOP_APP: "Desktop Only",
           INVENTORY: "Library Inventory",
-          DEBUG_LOGS: "Debug Logs",
-          PUSH_NOTIFICATION_LOGS: "Push Notification Logs",
-          STARTUP_TIMINGS: "Startup Timings",
           TEXT_COMPONENT: "Text Component",
           DESIGN_SYSTEM: "Design System",
           DESIGN_SYSTEM_TEXT: "Design System (Text)",
@@ -10227,6 +10220,7 @@
           (ah.POPULAR_APPLICATION_COMMAND_CLICKED =
             "popular_application_command_clicked"),
           (ah.APP_MANAGE_CTA_CLICKED = "app_manage_cta_clicked"),
+          (ah.REPORT_APPLICATION_CLICKED = "report_application_clicked"),
           (ah.CAPTCHA_SERVED = "captcha_served"),
           (ah.CAPTCHA_EVENT = "captcha_event"),
           (ah.CHANNEL_PERMISSIONS_PAGE_VIEWED =
@@ -12621,7 +12615,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2fe9b527a6d0d0a0260c26008694f560f44fb065",
+            release: "discord_web-2c4745721727310941a1075f703e86173819be86",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12690,8 +12684,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "348790"), "348790"));
-          o.YA("builtAt", String("1732677245599"));
+            o.YA("buildNumber", ((e = "348890"), "348890"));
+          o.YA("builtAt", String("1732728240337"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54473,4 +54467,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.5b5c576d6bc80f3ed08d.js.map
+//# sourceMappingURL=sentry.bda20f83800feaa3c01f.js.map
