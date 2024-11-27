@@ -6,13 +6,17 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: enables the new icymi tab"
+      "Treatment 1: enables the new icymi tab",
+      "Treatment 2: new icymi tab with some new features",
+      "Treatment 3: new icymi tab with more new features"
     ],
     "hash": 4207551078,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
