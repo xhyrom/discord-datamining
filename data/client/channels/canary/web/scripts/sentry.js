@@ -8637,7 +8637,6 @@
           (r6.SETTINGS_BLOCKED_USERS_V2 = "Blocked Users V2"),
           (r6.SETTINGS_IGNORED_USERS = "Ignored Users"),
           (r6.SETTINGS_INVENTORY = "Library Inventory"),
-          (r6.SETTINGS_PUSH_NOTIFICATION_LOGS = "Push Notification Logs"),
           (r6.TEXT_COMPONENT = "Text Component"),
           (r6.DESIGN_SYSTEM = "Design System"),
           (r6.DESIGN_SYSTEM_TEXT = "Design System (Text)"),
@@ -9065,7 +9064,6 @@
           TOWNHALL: "Townhall",
           DESKTOP_APP: "Desktop Only",
           INVENTORY: "Library Inventory",
-          PUSH_NOTIFICATION_LOGS: "Push Notification Logs",
           TEXT_COMPONENT: "Text Component",
           DESIGN_SYSTEM: "Design System",
           DESIGN_SYSTEM_TEXT: "Design System (Text)",
@@ -12617,7 +12615,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-998e512eb9dd5649b9d0b3bb1d9b5a520f91593b",
+            release: "discord_web-a9fec9b2ca5330372de677412d24b700ae0c9887",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12686,8 +12684,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "348857"), "348857"));
-          o.YA("builtAt", String("1732721206314"));
+            o.YA("buildNumber", ((e = "348861"), "348861"));
+          o.YA("builtAt", String("1732722472703"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54469,4 +54467,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.5c9a4ac835da38675f72.js.map
+//# sourceMappingURL=sentry.558c891d640c42da59cd.js.map
