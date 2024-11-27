@@ -8409,6 +8409,7 @@
           (r3.CHANNEL_CALL = "Channel Call"),
           (r3.CHANNEL_AUTOCOMPLETE_EMOJI_UPSELL_MODAL =
             "Channel Autocomplete Upsell Modal"),
+          (r3.REFERRAL_MESSAGE_EMBED = "Referral Message Embed"),
           (r3.GUILD_LIST = "Guild List"),
           (r3.NATIVE_INVITE_MODAL = "Native Invite Modal"),
           (r3.INVITE_EMBED = "Invite Embed"),
@@ -8833,6 +8834,7 @@
             "Collectibles Shop Details Modal"),
           (r6.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"),
           (r6.COLLECTIBLES_SHOP = "Shop"),
+          (r6.REFERRAL_MESSAGE_EMBED = "Message Embed"),
           (r6.SHOP_PRODUCT_DETAILS = "Shop Product Details"),
           (r6.COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS =
             "Collectibles Shop View All Category Items"),
@@ -12619,7 +12621,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-89d43b3c3bbf72e12b3d018b46e660d3492d1a8c",
+            release: "discord_web-2fe9b527a6d0d0a0260c26008694f560f44fb065",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12688,8 +12690,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "348782"), "348782"));
-          o.YA("builtAt", String("1732675350691"));
+            o.YA("buildNumber", ((e = "348790"), "348790"));
+          o.YA("builtAt", String("1732677245599"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54471,4 +54473,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.bbc04a4ff61d2ec1e8d4.js.map
+//# sourceMappingURL=sentry.5b5c576d6bc80f3ed08d.js.map
