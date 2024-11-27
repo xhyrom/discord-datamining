@@ -36,12 +36,6 @@
     <ul>
       <li>
         <a
-          href="https://support.discord.com/hc/en-us/articles/23187611406999#h_01HXW2MCD06PZ1G5EF9885R535"
-          >Discovery</a
-        >
-      </li>
-      <li>
-        <a
           href="https://support.discord.com/hc/en-us/articles/23187611406999#h_01HXW2MCD0E8MPCX184CSNCNM4"
           >Invite Link</a
         >
@@ -90,11 +84,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478789909015"
+    src="https://support.discord.com/hc/article_attachments/28106502759447"
     width="180"
     height="237"
   /><img
-    src="https://support.discord.com/hc/article_attachments/23478789922583"
+    src="https://support.discord.com/hc/article_attachments/28106502763287"
     width="306"
     height="237"
   />
@@ -105,7 +99,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478777476631"
+    src="https://support.discord.com/hc/article_attachments/28106502765335"
     width="624"
     height="536"
   />
@@ -121,7 +115,7 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536776850967"
+    src="https://support.discord.com/hc/article_attachments/28106466873751"
     width="610"
     height="524"
   />
@@ -136,7 +130,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478777485207"
+    src="https://support.discord.com/hc/article_attachments/28106502767767"
     width="624"
     height="536"
   />
@@ -149,21 +143,19 @@
 <p>Select at least 3 <strong>Traits</strong> for your Guild.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536770882967"
+    src="https://support.discord.com/hc/article_attachments/28106502769687"
     width="620"
     height="532"
   />
 </p>
-<p>
-  5. You can write the <strong>discovery description</strong> for your Guild.
-</p>
+<p>5. You can write the d<strong>escription</strong> for your Guild.</p>
 <p>
   Focus on why someone should join and what your Guild offers. You can also
   describe your Guild in 3 words here too. Be creative!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536770889495"
+    src="https://support.discord.com/hc/article_attachments/28106502770967"
     width="597"
     height="512"
   />
@@ -180,7 +172,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536770898071"
+    src="https://support.discord.com/hc/article_attachments/28106502771991"
     width="594"
     height="510"
   />
@@ -204,7 +196,7 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536776893719"
+    src="https://support.discord.com/hc/article_attachments/28106502773143"
     width="550"
     height="472"
   />
@@ -218,7 +210,7 @@
 <p>You must have at least one question set up to proceed.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23536776910615"
+    src="https://support.discord.com/hc/article_attachments/28106466886039"
     width="537"
     height="461"
   />
@@ -241,7 +233,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478777558039"
+    src="https://support.discord.com/hc/article_attachments/28106466891287"
     alt="guilds_settings.gif"
   />
 </p>
@@ -258,7 +250,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478777579415"
+    src="https://support.discord.com/hc/article_attachments/28106466892951"
     width="624"
     height="456"
   />
@@ -276,7 +268,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478777589911"
+    src="https://support.discord.com/hc/article_attachments/28106466895895"
     width="624"
     height="456"
   />
@@ -290,19 +282,8 @@
   This feature is currently an experiment and only available to a select number
   of users.
 </div>
-<p>
-  There are 3 ways to join a Guild: Discovery tab, invite links, and guild tags.
-</p>
-<h2 id="h_01HXW2MCD06PZ1G5EF9885R535">Discovery</h2>
-<p>
-  If you tap on the <strong>Discovery</strong> tab in your Discord app, you can
-  see a list of available Guilds that you can apply to join. You can also set
-  different preferences depending on what you are looking for in a Guild.
-</p>
-<p>
-  Once you find one you’d like to join, tap on the Guild and then fill out an
-  application. You can join as many Guilds as you’d like!
-</p>
+<div class="tip-box">Guilds are no longer searchable in the Discover tab.</div>
+<p>There are 2 ways to join a Guild: Invite links and guild tags.</p>
 <h2 id="h_01HXW2MCD0E8MPCX184CSNCNM4">Invite Link</h2>
 <p>
   Just like a server, an invite link can be created for a Guild to invite other
@@ -329,7 +310,7 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/23478790049431"
+    src="https://support.discord.com/hc/article_attachments/28106502781591"
     width="275"
     height="66"
   />
