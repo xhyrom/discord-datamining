@@ -8679,7 +8679,6 @@
           (r6.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER =
             "Custom Status Emoji Picker"),
           (r6.SETTINGS_DESKTOP_APP = "Desktop Only"),
-          (r6.SETTINGS_BUILD_OVERRIDE = "Build Override"),
           (r6.SETTINGS_CHECK_NATIVE_UPDATE = "Check For Native Update"),
           (r6.SETTINGS_INSTALL_NATIVE_UPDATE = "Install Native Build"),
           (r6.SETTINGS_CHANGELOG_OVERRIDE = "Changelog Override"),
@@ -9014,7 +9013,6 @@
           IGNORED_USERS: "Ignored Users",
           CUSTOM_STATUS: "Custom Status",
           CUSTOM_STATUS_EMOJI_PICKER: "Custom Status Emoji Picker",
-          BUILD_OVERRIDE: "Build Override",
           CHECK_NATIVE_UPDATE: "Check For Native Update",
           INSTALL_NATIVE_UPDATE: "Install Native Build",
           ACCOUNT: "My Account",
@@ -12616,7 +12614,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6b04987f43195af6544ff780660a360603e14780",
+            release: "discord_web-56f93215c5891a00fc0ca8302b3dceb74a23346f",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12685,8 +12683,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "349108"), "349108"));
-          o.YA("builtAt", String("1732784966019"));
+            o.YA("buildNumber", ((e = "349118"), "349118"));
+          o.YA("builtAt", String("1732797738089"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54476,4 +54474,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.1a6d8f724067e64fc178.js.map
+//# sourceMappingURL=sentry.9e987367e0adcdb4efbb.js.map
