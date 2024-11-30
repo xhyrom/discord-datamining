@@ -288,18 +288,9 @@
 </p>
 <p>
   <strong
-    >Q: I'm having trouble redeeming this code to my Microsoft account. How do I
-    contact Microsoft support?</strong
-  >
+    >Q: I'm having trouble redeeming this code to my Microsoft account.
+  </strong>
 </p>
-<p>
-  A: If you are having issues redeeming this code on your Microsoft account, you
-  can reach out to Microsoft support at:
-  <a href="https://support.xbox.com/contact-us"
-    >https://support.xbox.com/contact-us</a
-  >.
-</p>
-<p><strong>Q: My PC Game Pass reward code still didn’t work!</strong></p>
 <p>
   A: The PC Game Pass reward code is only available to new PC Game Pass members.
   Additionally, the reward codes are not “stackable” to previously redeemed
@@ -318,5 +309,12 @@
 <p>
   Be sure to include the full details of the error, and screenshots to the Xbox
   Support team!
+</p>
+<p><strong>Q: I’m having trouble with my Microsoft account!</strong></p>
+<p>
+  A: Please contact the Xbox support team at:
+  <a href="https://support.Xbox.com/contact-us"
+    >https://support.xbox.com/contact-us</a
+  > 
 </p>
 <p> </p>
