@@ -1,7 +1,7 @@
 <div class="warn-box">
-  <strong>Notice as of November 30:</strong> This quest has been temporarily
-  paused while our team is investigating an error. We apologize for the
-  inconvenience and are working on a fix as soon as possible.
+  <strong>Notice as of December 2: </strong> We have fixed the error in app.
+  Please make sure to fully refresh/restart your Discord app if you previously
+  experienced an issue in your Quest Home.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -229,11 +229,6 @@
   by <strong>December 31, 2024 (7:59 PM UTC)</strong>. 
 </div>
 <h1 id="h_01JDQ7CKST7C3DNCYB0MNZW1A1">Frequently Asked Questions</h1>
-<div class="warn-box">
-  <strong>Notice as of November 30:</strong> This quest has been temporarily
-  paused while our team is investigating an error. We apologize for the
-  inconvenience and are working on a fix as soon as possible.
-</div>
 <p>
   <strong
     >Q: Is there a limit on how many Quests I can redeem on my Discord
