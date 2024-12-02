@@ -18755,7 +18755,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   box-shadow: var(--shadow-low);
   margin: 0 -1px;
-  padding: var(--custom-gif-picker-gutter-size);
+  padding: 12px;
   z-index: 100;
   position: relative;
   grid-column: 1/3;
@@ -23165,7 +23165,7 @@ div.popoutCloseButton_d523a2:hover {
 .theme-dark .giftIconButtonActive_efde15 {
   background-color: var(--background-accent);
 }
-.container_fcfd9f {
+.container_efc1ac {
   background-color: var(--brand-500);
   display: flex;
   align-items: center;
@@ -23176,11 +23176,11 @@ div.popoutCloseButton_d523a2:hover {
   border-radius: 8px;
   padding: 0 16px;
 }
-.body_fcfd9f {
+.body_efc1ac {
   padding-top: 54px;
   max-width: 248px;
 }
-.pointer_fcfd9f {
+.pointer_efc1ac {
   width: 0;
   height: 0;
   border: 0 solid transparent;
@@ -23192,34 +23192,56 @@ div.popoutCloseButton_d523a2:hover {
   margin-left: -10px;
   border-top-color: var(--brand-500);
 }
-.button_fcfd9f {
+.button_efc1ac {
   margin: 16px;
   width: 100%;
 }
-.popoutTarget_fcfd9f {
+.popoutTarget_efc1ac {
   width: 0;
   height: 0;
   position: absolute;
   left: 20px;
 }
-.text_fcfd9f {
+.text_efc1ac {
   color: #fff;
   padding-top: 4px;
 }
-.image_fcfd9f {
+.coachmark_efc1ac {
   position: absolute;
   width: 200px;
-  bottom: 148px;
 }
-.dmButtonContainer_fcfd9f {
+.staticImage_efc1ac {
+  top: -200px;
+}
+.animation_efc1ac {
+  top: -208px;
+}
+.dmButtonContainer_efc1ac {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 16px;
   gap: 4px;
 }
-.dmButton_fcfd9f {
+.dmButton_efc1ac {
   flex: 1;
+}
+.closeButton_efc1ac {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.closeIcon_efc1ac {
+  color: var(--white-500);
+  padding: 5px;
 }
 .icon_cfe645 {
   width: 32px;
@@ -54331,4 +54353,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.7ec1906e8f9575ece6c0.css.map*/
+/*# sourceMappingURL=12633.ac24b650c216838a4d89.css.map*/
