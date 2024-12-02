@@ -20195,6 +20195,15 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border: none;
   border-bottom: 1px solid var(--background-modifier-accent);
 }
+.visual-refresh .list_efd8e6 {
+  background: none;
+}
+.visual-refresh .wrapper_efd8e6 {
+  background-color: var(--background-base-lowest);
+}
+.visual-refresh .builtInSeparator_efd8e6 {
+  border-color: var(--border-subtle);
+}
 .outerWrapper_fe2299 {
   border-radius: 5px;
   box-shadow: var(--shadow-border), var(--shadow-high);
@@ -50581,6 +50590,7 @@ html.disable-forced-colors * {
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
   --activity-card-background: var(--neutral-67);
+  --autocomplete-bg: var(--neutral-67);
   --background-floating: var(--neutral-67);
   --background-mentioned: hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
   --background-mentioned-hover: hsl(
@@ -50721,6 +50731,11 @@ html.disable-forced-colors * {
   .visual-refresh.theme-dark,
   .visual-refresh .theme-dark {
     --activity-card-background: color-mix(
+      in oklab,
+      var(--neutral-67) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --autocomplete-bg: color-mix(
       in oklab,
       var(--neutral-67) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
@@ -51139,6 +51154,7 @@ html.disable-forced-colors * {
 .visual-refresh.theme-light,
 .visual-refresh .theme-light {
   --activity-card-background: var(--neutral-1);
+  --autocomplete-bg: var(--neutral-1);
   --background-floating: var(--neutral-1);
   --background-mentioned: hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
   --background-mentioned-hover: hsl(
@@ -51283,6 +51299,11 @@ html.disable-forced-colors * {
   .visual-refresh.theme-light,
   .visual-refresh .theme-light {
     --activity-card-background: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --autocomplete-bg: color-mix(
       in oklab,
       var(--neutral-1) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
@@ -51701,6 +51722,7 @@ html.disable-forced-colors * {
 .visual-refresh.theme-midnight,
 .visual-refresh .theme-midnight {
   --activity-card-background: var(--neutral-91);
+  --autocomplete-bg: var(--neutral-91);
   --background-floating: var(--neutral-91);
   --background-mentioned: hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
   --background-mentioned-hover: hsl(
@@ -51838,6 +51860,11 @@ html.disable-forced-colors * {
   .visual-refresh.theme-midnight,
   .visual-refresh .theme-midnight {
     --activity-card-background: color-mix(
+      in oklab,
+      var(--neutral-91) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --autocomplete-bg: color-mix(
       in oklab,
       var(--neutral-91) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
@@ -52250,6 +52277,7 @@ html.disable-forced-colors * {
 .visual-refresh.theme-darker,
 .visual-refresh .theme-darker {
   --activity-card-background: var(--neutral-79);
+  --autocomplete-bg: var(--neutral-79);
   --background-floating: var(--neutral-79);
   --background-mentioned: hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
   --background-mentioned-hover: hsl(
@@ -52389,6 +52417,11 @@ html.disable-forced-colors * {
   .visual-refresh.theme-darker,
   .visual-refresh .theme-darker {
     --activity-card-background: color-mix(
+      in oklab,
+      var(--neutral-79) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --autocomplete-bg: color-mix(
       in oklab,
       var(--neutral-79) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
@@ -54282,6 +54315,7 @@ img[alt] {
 }
 :root {
   --custom-channel-header-height: 48px;
+  --custom-member-list-width: 240px;
 }
 .visual-refresh {
   --custom-guild-list-width: 72px;
@@ -54297,4 +54331,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.84ca7be06d4ede0b5e85.css.map*/
+/*# sourceMappingURL=12633.7ec1906e8f9575ece6c0.css.map*/
