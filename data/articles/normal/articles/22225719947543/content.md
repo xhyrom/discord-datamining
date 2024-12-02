@@ -99,6 +99,19 @@
       >
       <ul>
         <li>
+          <a href="#h_01JE49VFBMRKKY23WHF49SDRC5"
+            ><strong>World of Warcraft </strong></a
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JDQ9C6KVNPHKJVSP5VHCVGEV">PC Game Pass</a></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF">Fortnite </a></strong>
+        </li>
+        <li>
           <a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"
             ><strong>Batman: Arkham Shadow </strong></a
           >
@@ -557,6 +570,51 @@
   ><span style="color: #666666">   </span>
 </h4>
 <h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
+<h2 id="h_01JE49VFBMRKKY23WHF49SDRC5">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28114748484119"
+    target="_blank"
+    rel="noopener noreferrer"
+    >World of Warcraft - World of Warcraft x Mountain Dew Quest </a
+  >
+</h2>
+<p>
+  The <strong>World of Warcraft x Mountain Dew Quest </strong>can be accepted on
+  Discord from <strong>December 2, 2024</strong> until
+  <strong>December 9, 2024 (11:59PM UTC)</strong>.  Reward gift codes expire
+  <strong>January 31, 2025</strong>. Quest requirements must be completed during
+  this period to receive the reward.
+</p>
+<h2 id="h_01JDQ9C6KVNPHKJVSP5VHCVGEV">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28110465185047"
+    target="_blank"
+    rel="noopener noreferrer"
+    >PC Game Pass - PC Player Quest</a
+  >
+</h2>
+<p>
+  The <strong>PC Player Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>November 29, 2024</strong> until
+  <strong>December 12, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>December 31, 2024 (7:59 PM UTC)</strong>.
+</p>
+<h2 id="h_01JDQ9CDY9YG7BT3X2GE7E5WQF">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quests"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Fortnite - Fortnite Quest</a
+  >
+</h2>
+<p>
+  The <strong>Fortnite Quest</strong> can be accepted on Discord from
+  <strong>November 29, 2024</strong> until
+  <strong>December 5, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 5, 2025</strong>.
+</p>
 <h2 id="h_01JDJ4KZEKE5N4VRTSH2W9BH4X">
   <a
     href="https://support.discord.com/hc/en-us/articles/27950035791383-Batman-Arkham-Shadow-Quest"
