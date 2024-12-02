@@ -25,7 +25,7 @@
           >
         </li>
         <li>
-          <span style="color: #2e3338"
+          <span style="color: #2e3338" data-darkreader-inline-color=""
             ><a href="#h_01JC4GMEHTEJKFXAQ39HE3S2KD"
               >On Mobile: Using Members List</a
             >
@@ -44,21 +44,26 @@
 </h1>
 <h2 id="h_01JC4CH97GYGWHSCNRVB2YZKE9">On Desktop/Browser</h2>
 <p>
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     >1. To take control of your privacy settings on desktop or browser, select
     the </span
-  ><strong><span style="color: #2e3338">cogwheel</span></strong
-  ><span style="color: #2e3338"> [</span
-  ><span style="color: #2e3338"
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >cogwheel</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> [</span
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643914879383"
       alt="Cog.png"
       width="20"
       height="20" /></span
-  ><span style="color: #2e3338">] in the bottom left corner. </span>
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >] in the bottom left corner. </span
+  >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643919557015"
       width="424"
@@ -66,21 +71,32 @@
   /></span>
 </p>
 <h4 id="h_01JC4CJER539Z1P5650PQ1QBQ5" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Cogwheel Icon: Access User Settings</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Cogwheel Icon: Access User Settings</span
+  >
 </h4>
 <p>
-  <span style="color: #2e3338">2. Then select </span
-  ><strong><span style="color: #2e3338">Content &amp; Social</span></strong
-  ><span style="color: #2e3338">.</span>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >2. Then select </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Content &amp; Social</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
 </p>
 <p>
-  <span style="color: #2e3338">3. In the </span
-  ><strong><span style="color: #2e3338">Social permissions</span></strong
-  ><span style="color: #2e3338"> section: </span>
+  <span style="color: #2e3338" data-darkreader-inline-color="">3. In the </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Social permissions</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    section: </span
+  >
 </p>
 <ul>
   <li>
-    <span style="color: #2e3338"
+    <span style="color: #2e3338" data-darkreader-inline-color=""
       >By default, anyone in a shared server can send you a direct message (DM).
       If you prefer to limit who can contact you, you can adjust these settings.
     </span>
@@ -93,6 +109,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
+      data-darkreader-inline-color=""
       >Direct messages</strong
     ><span
       style="
@@ -100,6 +117,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
+      data-darkreader-inline-color=""
     >
       setting. You'll then be asked if you want to apply this change to all your
       existing servers.</span
@@ -113,7 +131,8 @@
       font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
         Helvetica, Arial, sans-serif;
     "
-    ><span style="color: #2e3338"
+    data-darkreader-inline-color=""
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/27643919557911"
         width="624"
@@ -121,7 +140,7 @@
   ></span>
 </p>
 <h4 id="h_01JC4CKZ8X6EJWC4D4E1PHGZG2" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Managing Direct Messages: Controlling Who Can Contact You</span
   >
 </h4>
@@ -132,13 +151,21 @@
       use the Social permissions drop-down menu to select and modify settings
       for each server. You can also fine-tune your DM settings by adjusting
       Privacy settings in individual servers. For more information, see the
-      detailed guide.</span
+      <a
+        href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests#h_01GSGQBPQ3JW1659RJ3S87FF43"
+        target="_blank"
+        rel="noopener noreferrer"
+        >detailed guide</a
+      >.</span
     >
   </p>
   <p class="wysiwyg-text-align-center">
     <span style="color: #2e3338" data-darkreader-inline-color=""
       ><span style="color: #2e3338" data-darkreader-inline-color=""
-        ><span style="color: #434343; background-color: #d9f1e6"
+        ><span
+          style="color: #434343; background-color: #d9f1e6"
+          data-darkreader-inline-color=""
+          data-darkreader-inline-bgcolor=""
           ><img
             src="https://support.discord.com/hc/article_attachments/27643919558423"
             width="600"
@@ -154,27 +181,44 @@
 </div>
 <h2 id="h_01JC4CWT6QJ3G6V61W5PBH5JR1">On Mobile</h2>
 <p>
-  <span style="color: #2e3338">1. On mobile, select your </span
-  ><strong><span style="color: #2e3338">profile</span></strong>
-  <strong><span style="color: #2e3338">icon</span></strong
-  ><span style="color: #2e3338"> in the bottom right corner.</span>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >1. On mobile, select your </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >profile</span
+    ></strong
+  >
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >icon</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    in the bottom right corner.</span
+  >
 </p>
 <p>
-  <span style="color: #2e3338">2. Then, tap the </span
-  ><strong><span style="color: #2e3338">cogwheel</span></strong
-  ><span style="color: #2e3338"> [</span
-  ><span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >2. Then, tap the </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >cogwheel</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> [</span
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643919559575"
       width="24"
       height="24" /></span
-  ><span style="color: #2e3338"
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     >] in the upper right corner to head into your </span
-  ><strong><span style="color: #2e3338">Settings</span></strong
-  ><span style="color: #2e3338">.</span>
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Settings</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643914891159"
       width="261"
@@ -185,27 +229,39 @@
   /></span>
 </p>
 <h4 id="h_01JC4CXZECZPHHE5SSQAE2ADFC" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Navigation Icons: Profile icon (left) and Cogwheel icon (right)</span
   >
 </h4>
 <p>
-  <span style="color: #2e3338">3. In Settings, select</span
-  ><strong><span style="color: #2e3338"> Content &amp; Social</span></strong
-  ><span style="color: #2e3338"> and scroll to </span
-  ><strong><span style="color: #2e3338">Server Settings </span></strong
-  ><span style="color: #2e3338">where you can toggle the </span
-  ><strong><span style="color: #2e3338">Direct messages </span></strong
-  ><span style="color: #2e3338">option. </span>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >3. In Settings, select</span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color="">
+      Content &amp; Social</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    and scroll to </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Server Settings
+    </span></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >where you can toggle the </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Direct messages
+    </span></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">option. </span>
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643919567895"
       width="266"
       height="552" /></span
-  ><span style="color: #2e3338">   </span
-  ><span style="color: #2e3338"
+  ><span style="color: #2e3338" data-darkreader-inline-color="">   </span
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643914894871"
       width="265"
@@ -213,13 +269,13 @@
   /></span>
 </p>
 <h4 id="h_01JC4CYGA0PDNEB2V3ED8V6JPR" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Settings: Content &amp; Social (Left) and Direct Messages Setting
     (Right)</span
   >
 </h4>
 <p>
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     >4. To adjust direct messages for individual servers, use the
     <strong>Server Settings</strong> drop-down menu. This allows you to select
     and modify settings for each server separately.</span
@@ -227,7 +283,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #5765f2" data-darkreader-inline-color=""
-    ><span style="color: #2e3338"
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/27643919570967"
         width="265"
@@ -235,7 +291,7 @@
   ></span>
 </p>
 <h4 id="h_01JC4GA6PJ7P663XZ6Z89J639F" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Customizing Direct Messages for Individual Servers on Mobile</span
   >
 </h4>
@@ -268,7 +324,7 @@
   /></strong>
 </p>
 <h4 id="h_01JC4GCD0QF184HHKM326CAVJJ" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Blocking a User via the Members List on Desktop or Browser</span
   >
 </h4>
@@ -305,7 +361,7 @@
     ></span
   >
   <p class="wysiwyg-text-align-center">
-    <span style="color: #434343"
+    <span style="color: #434343" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/27643914901399"
         width="280"
@@ -317,7 +373,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
-      ><span style="color: #434343"
+      ><span style="color: #434343" data-darkreader-inline-color=""
         > 
         <img
           src="https://support.discord.com/hc/article_attachments/27643914902679"
@@ -326,7 +382,7 @@
     ></strong>
   </p>
   <h4 id="h_01JC4HH9KF7B06KECXWTP22T1S" class="wysiwyg-text-align-center">
-    <span style="color: #434343"
+    <span style="color: #434343" data-darkreader-inline-color=""
       >Blocking a User within the Friends List (Left) and Within DMs
       (Right)</span
     >
@@ -353,22 +409,24 @@
   /></strong>
 </p>
 <h4 id="h_01JC4GMVX6SHV29AMTP5N3X685" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Blocking a User via the Members List on Mobile</span
   >
 </h4>
 <div class="tip-box">
   <p class="wysiwyg-text-align-left">
-    <span style="color: #434343"
+    <span style="color: #434343" data-darkreader-inline-color=""
       ><strong>NOTE</strong>: On mobile, you can also block a user by opening
       their profile in the <strong>Friends List</strong> or within
       <strong>DMs</strong>. Then, tap the <strong>ellipsis</strong> [</span
-    ><span style="color: #434343"
+    ><span style="color: #434343" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/27643914906647"
         width="30"
         height="24" /></span
-    ><span style="color: #434343">] and select <strong>Block</strong>.</span>
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >] and select <strong>Block</strong>.</span
+    >
   </p>
 </div>
 <h1 id="h_01J99ZRP6R0G06KCV71DRP1HQW">
@@ -380,27 +438,31 @@
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Last stop on the tour of Discord's privacy &amp; safety settings is
     adjusting friend request privileges. </span
-  ><span style="color: #2e3338"
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     >To find this menu on desktop or browser, open your </span
-  ><strong><span style="color: #2e3338">User Settings</span></strong
-  ><span style="color: #2e3338">, then navigate to </span
   ><strong
-    ><span style="color: #2e3338"
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >User Settings</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >, then navigate to </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Content &amp; Social &gt; Friend Requests</span
     ></strong
-  ><span style="color: #2e3338"
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
     >. Here, you can choose which options to enable or disable.</span
   >
 </p>
 <div class="tip-box">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     >On mobile, head into your
     <strong>Settings &gt; Content Social &gt; Friends Requests</strong> to edit
     your Friends Request permissions. <br
   /></span>
 </div>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/27643914908055"
       width="624"
@@ -408,13 +470,22 @@
   /></span>
 </p>
 <h4 id="h_01JC4GX215XBTDYJ5CPVGPJ3WS" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Configuring Friend Request Permissions</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Configuring Friend Request Permissions</span
+  >
 </h4>
 <p>Here you can set who's allowed to send you a friend request.</p>
 <p>
-  <strong><span style="color: #2e3338">Everyone</span></strong
-  ><span class="wysiwyg-underline" style="color: #2e3338">:</span
-  ><span style="color: #2e3338">
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Everyone</span
+    ></strong
+  ><span
+    class="wysiwyg-underline"
+    style="color: #2e3338"
+    data-darkreader-inline-color=""
+    >:</span
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
     Selecting Everyone means that anyone who knows your Discord username or is
     in a mutual server with you can send you a request. Having this selected
     will automatically include both Friends of Friends and Server Members
@@ -422,9 +493,16 @@
   >
 </p>
 <p>
-  <strong><span style="color: #2e3338">Friends of Friends</span></strong
-  ><span class="wysiwyg-underline" style="color: #2e3338">:</span
-  ><span style="color: #2e3338">
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Friends of Friends</span
+    ></strong
+  ><span
+    class="wysiwyg-underline"
+    style="color: #2e3338"
+    data-darkreader-inline-color=""
+    >:</span
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
     Selecting Friends of Friends means that for anyone to add you, they must
     have at least one mutual friend with you. You can see if you share mutual
     friends with another user in their user profile by pressing the Mutual
@@ -432,16 +510,23 @@
   >
 </p>
 <p>
-  <strong><span style="color: #2e3338">Server Members</span></strong
-  ><span class="wysiwyg-underline" style="color: #2e3338">:</span
-  ><span style="color: #2e3338">
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Server Members</span
+    ></strong
+  ><span
+    class="wysiwyg-underline"
+    style="color: #2e3338"
+    data-darkreader-inline-color=""
+    >:</span
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
     Selecting Server Members means users who share a server with you can send
     you a friend request. De-selecting this means that you can only be added by
     someone with mutual friends as you.</span
   >
 </p>
 <div class="tip-box">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><strong>NOTE</strong>: Friends of Friends and Server Members can be both
     selected or deselected, letting you customize your settings and manage who
     can send you friend requests. If you don’t want ANY users to send you friend
