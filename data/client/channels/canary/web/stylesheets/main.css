@@ -13745,8 +13745,8 @@ span.clanTag_a31c43 {
 .icon_b01a4f {
   position: absolute;
   padding: var(--spacing-4);
-  bottom: -6px;
-  right: -6px;
+  bottom: -8px;
+  right: -8px;
   background-color: var(--bg-surface-raised);
   border-radius: var(--radius-round);
 }
@@ -54118,4 +54118,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.b76d5e5a6dfb415ef2f7.css.map*/
+/*# sourceMappingURL=12633.d804a2b830b6f14a66a0.css.map*/
