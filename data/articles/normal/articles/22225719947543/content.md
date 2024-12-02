@@ -422,9 +422,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784589693335"
-    width="624"
-    height="509"
+    src="https://support.discord.com/hc/article_attachments/28215792701207"
+    alt="Screenshot 2024-12-02 at 10.45.57 AM.png"
+    width="720"
+    height="461"
   />
 </p>
 <h4 id="h_01JCM0GRCTY62JPB4NH43RBEZP" class="wysiwyg-text-align-center">
@@ -458,8 +459,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/27784589699479"
-    width="617"
-    height="391"
+    width="681"
+    height="433"
   />
 </p>
 <h4 id="h_01JCM0PT2N6SA8NKRBR96CWFM7" class="wysiwyg-text-align-center">
@@ -471,9 +472,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784589700503"
-    width="624"
-    height="501"
+    src="https://support.discord.com/hc/article_attachments/28215736714007"
+    alt="Screenshot 2024-12-02 at 10.43.44 AM copy.png"
+    width="701"
+    height="448"
   />
 </p>
 <h4 id="h_01JCM0RBCNZTTV70WVAGP7V3YB" class="wysiwyg-text-align-center">
@@ -487,12 +489,12 @@
   Discord's desktop app or browser app client. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27784562597655"
-      width="600"
-      height="394"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/28215456254487"
+    alt="ScreenRecording2024-12-02at10.32.13AM-ezgif.com-video-to-gif-converter.gif"
+    width="716"
+    height="458"
+  />
 </p>
 <h4 id="h_01JCM0TECHSRP5GEH1JH7WKQMB" class="wysiwyg-text-align-center">
   <span style="color: #666666">How to Start a Video Quest in Quest Bar</span>
@@ -553,16 +555,12 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27784562599703"
-      width="585"
-      height="421"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/28215456257175"
+    alt="Screenshot 2024-12-02 at 10.32.52 AM.png"
+    width="721"
+    height="522"
+  />
 </p>
 <h4 id="h_01JCM0Z8XE3WYFTE6RB3FXY8D8" class="wysiwyg-text-align-center">
   <span style="color: #666666"
@@ -626,8 +624,9 @@
 <p>
   The <strong>Batman: Arkham Shadow Quest</strong> can be accepted on Discord
   desktop app or browser client from <strong>November 25, 2024</strong> until
-  <strong>December 8, 2024 (11:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward.
+  <strong>December 8, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 8, 2024</strong>. 
 </p>
 <h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
 <h2 id="01JDJ7KTDT2CYVDY8CSPZ5MGQ3">
@@ -641,8 +640,9 @@
 <p id="h_01HVPBZR5E0CYD1A3MZ59RH71S">
   The <strong>Dune: Prophecy Quest</strong> can be accepted on Discord desktop
   app or browser client from <strong>November 14, 2024 </strong>until
-  <strong>November 25, 2024 (11:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward.
+  <strong>November 25, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>December 25, 2024</strong>. 
 </p>
 <h2 id="h_01JB0C2391GAWSSD6WYSX5KPF5">
   <a
