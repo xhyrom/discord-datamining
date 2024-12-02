@@ -833,6 +833,7 @@ id,hash,label
 2024-10_retrigger_reaction_frecency_algorithms,3254726199,(Retrigger) Reaction Frecency Algorithms
 2024-10_shop_skus_in_gift_flow,1469485145,Gift Collectibles in DM
 2024-10_shop_variants,2849820511,Shop Variants Experiment
+2024-10_simplified_custom_status_bubble,2329002064,Simplified Custom Status Bubble
 2024-10_stealth_remediation,3936986189,A new user remediation tool
 2024-10_system_date_formatter,2327380316,Use system APIs for date formatting
 2024-10_tile_resolution_gating,3172358820,Tile Resolution Gating
@@ -862,5 +863,6 @@ id,hash,label
 2024-11_teen_defaults__message_requests,3587259312,New defaults for message requests
 2024-11_third_party_access_settings_redesign,2932220947,Third Party Access User Settings Redesign
 2024-11_unreads_new_users2,1130924794,Unreads Experiment (grey-dot mode) (new users) 2
+2024-11_user_profile_recent_activity,2038753337,User Profile Recent Activity
 2024-12_premium_wow_moment,2616729737,Premium Wow Moment
 2024-2024-10_shop_variants,1035618977,Shop Variants Experiment
