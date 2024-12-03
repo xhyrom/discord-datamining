@@ -13814,6 +13814,16 @@ span.clanTag_a31c43 {
   margin-left: auto;
   flex-shrink: 0;
 }
+.number_e33a4d {
+  border-radius: var(--radius-round);
+  background-color: var(--bg-mod-subtle);
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .infoGroup_d34773 {
   border-radius: var(--radius-sm);
   background-color: var(--background-secondary);
@@ -54433,4 +54443,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.3c11849dcf40a8637894.css.map*/
+/*# sourceMappingURL=12633.0a6d5d532a9a06f461d3.css.map*/
