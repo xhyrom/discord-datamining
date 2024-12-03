@@ -24181,11 +24181,11 @@ div.popoutCloseButton_d523a2:hover {
 .container_c8ce83.biteSize_c8ce83 {
   margin-top: -10px;
   margin-left: 109px;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 .custom-profile-theme .container_c8ce83.biteSize_c8ce83 {
   margin-left: 105px;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 .container_c8ce83.fullSize_c8ce83 {
   margin-top: -10px;
@@ -24201,7 +24201,9 @@ div.popoutCloseButton_d523a2:hover {
   z-index: 4;
 }
 .outer_c8ce83 {
-  position: relative;
+  box-sizing: border-box;
+  min-width: 42px;
+  overflow: hidden;
   background: var(--custom-status-bubble-background);
   box-shadow: var(--shadow-low);
   border: 1px solid var(--border-faint);
@@ -24210,7 +24212,7 @@ div.popoutCloseButton_d523a2:hover {
 .outer_c8ce83:before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 10px;
   box-sizing: border-box;
   box-shadow: inherit;
@@ -24241,15 +24243,13 @@ div.popoutCloseButton_d523a2:hover {
 }
 .inner_c8ce83 {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
   background: var(--custom-status-bubble-background);
-  border-radius: inherit;
+  margin: 0 auto;
   padding: 8px 12px;
-  min-width: 16px;
-  overflow: hidden;
   font-size: 12px;
-  word-wrap: break-word;
   word-break: break-word;
   cursor: text;
   -webkit-user-select: text;
@@ -54331,4 +54331,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.fec94b783b541e4f60ae.css.map*/
+/*# sourceMappingURL=12633.895655befea8937122cd.css.map*/
