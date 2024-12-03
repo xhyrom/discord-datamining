@@ -10821,13 +10821,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Automatic is Rust ADM"
+        "Treatment 1: Automatic is Rust ADM (previous cohort)",
+        "Treatment 2: Automatic is Rust ADM (new stats slice)"
       ],
       "hash": 4226263373,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -11595,31 +11597,6 @@
       "aa_mode": false,
       "config_keys": [
         "enabledSingle"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-10_voice_icon_states",
-      "label": "Voice/Video icon states",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Microphone push to disable.",
-        "Treatment 2: Microphone push to disable w/ red."
-      ],
-      "hash": 4090757948,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -12831,6 +12808,33 @@
         -1,
         0,
         1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_voice_icon_states",
+      "label": "Voice/Video icon states",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Microphone button moved to left",
+        "Treatment 2: Grouped buttons with control colors",
+        "Treatment 3: Grouped buttons with only red mic"
+      ],
+      "hash": 516807114,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
       ],
       "holdout": {},
       "aa_mode": false,

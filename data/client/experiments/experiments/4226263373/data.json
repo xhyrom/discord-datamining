@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Automatic is Rust ADM"
+      "Treatment 1: Automatic is Rust ADM (previous cohort)",
+      "Treatment 2: Automatic is Rust ADM (new stats slice)"
     ],
     "hash": 4226263373,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
