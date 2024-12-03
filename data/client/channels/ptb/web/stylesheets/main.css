@@ -11067,6 +11067,20 @@ div.cardContainer_c22357 {
   -moz-user-select: none;
   user-select: none;
 }
+.icon_ad923e {
+  flex: 0 0 auto;
+  margin-left: 2px;
+}
+.emoji_ad923e {
+  flex: 0 0 auto;
+}
+.textRuler_ad923e {
+  position: absolute;
+  visibility: hidden;
+}
+.questsIcon_ad923e {
+  margin-left: 4px;
+}
 .container_d808b0 {
   box-sizing: border-box;
   display: block;
@@ -13260,20 +13274,6 @@ div.cardContainer_c22357 {
   animation-duration: 2s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
-}
-.icon_ad923e {
-  flex: 0 0 auto;
-  margin-left: 2px;
-}
-.emoji_ad923e {
-  flex: 0 0 auto;
-}
-.textRuler_ad923e {
-  position: absolute;
-  visibility: hidden;
-}
-.questsIcon_ad923e {
-  margin-left: 4px;
 }
 .member_a31c43 {
   position: relative;
@@ -54433,4 +54433,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.19c87a4c28696bceb802.css.map*/
+/*# sourceMappingURL=12633.3c11849dcf40a8637894.css.map*/
