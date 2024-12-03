@@ -23165,7 +23165,7 @@ div.popoutCloseButton_d523a2:hover {
 .theme-dark .giftIconButtonActive_efde15 {
   background-color: var(--background-accent);
 }
-.container_efc1ac {
+.container_fcfd9f {
   background-color: var(--brand-500);
   display: flex;
   align-items: center;
@@ -23176,11 +23176,11 @@ div.popoutCloseButton_d523a2:hover {
   border-radius: 8px;
   padding: 0 16px;
 }
-.body_efc1ac {
+.body_fcfd9f {
   padding-top: 54px;
   max-width: 248px;
 }
-.pointer_efc1ac {
+.pointer_fcfd9f {
   width: 0;
   height: 0;
   border: 0 solid transparent;
@@ -23192,56 +23192,34 @@ div.popoutCloseButton_d523a2:hover {
   margin-left: -10px;
   border-top-color: var(--brand-500);
 }
-.button_efc1ac {
+.button_fcfd9f {
   margin: 16px;
   width: 100%;
 }
-.popoutTarget_efc1ac {
+.popoutTarget_fcfd9f {
   width: 0;
   height: 0;
   position: absolute;
   left: 20px;
 }
-.text_efc1ac {
+.text_fcfd9f {
   color: #fff;
   padding-top: 4px;
 }
-.coachmark_efc1ac {
+.image_fcfd9f {
   position: absolute;
   width: 200px;
+  bottom: 148px;
 }
-.staticImage_efc1ac {
-  top: -200px;
-}
-.animation_efc1ac {
-  top: -208px;
-}
-.dmButtonContainer_efc1ac {
+.dmButtonContainer_fcfd9f {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 16px;
   gap: 4px;
 }
-.dmButton_efc1ac {
+.dmButton_fcfd9f {
   flex: 1;
-}
-.closeButton_efc1ac {
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: var(--radius-round);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.closeIcon_efc1ac {
-  color: var(--white-500);
-  padding: 5px;
 }
 .icon_cfe645 {
   width: 32px;
@@ -54353,4 +54331,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ac24b650c216838a4d89.css.map*/
+/*# sourceMappingURL=12633.fec94b783b541e4f60ae.css.map*/
