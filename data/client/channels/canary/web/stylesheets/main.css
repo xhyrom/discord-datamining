@@ -24350,7 +24350,7 @@ div.popoutCloseButton_d523a2:hover {
   background: var(--custom-status-bubble-background);
   margin: 0 auto;
   padding: 8px 12px;
-  font-size: 12px;
+  font-size: medium;
   word-break: break-word;
   cursor: text;
   -webkit-user-select: text;
@@ -54433,4 +54433,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.e9da98841b43ca5805f8.css.map*/
+/*# sourceMappingURL=12633.19c87a4c28696bceb802.css.map*/
