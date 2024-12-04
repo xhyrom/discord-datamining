@@ -1431,6 +1431,10 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   pointer-events: none;
   contain: paint;
 }
+.visual-refresh .wrapper_c5f96a {
+  width: 44px;
+  height: 44px;
+}
 .wrapper_c5f96a {
   box-sizing: border-box;
   position: relative;
@@ -1448,8 +1452,6 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   position: absolute;
   top: 0;
   left: 0;
-  width: 48px;
-  height: 48px;
 }
 .noContain_c5f96a {
   contain: style;
@@ -30368,10 +30370,18 @@ div.popoutCloseButton_d523a2:hover {
 .filterLabel_d83b4d {
   color: var(--header-primary);
 }
+:root {
+  --custom-icon-size: 48px;
+}
+.visual-refresh {
+  --custom-icon-size: 44px;
+}
 .wrapper_f90abb {
   display: flex;
   width: 48px;
+  width: var(--custom-icon-size);
   height: 48px;
+  height: var(--custom-icon-size);
   align-items: center;
   justify-content: center;
   transition:
@@ -30380,7 +30390,9 @@ div.popoutCloseButton_d523a2:hover {
 }
 .childWrapper_f90abb {
   width: 48px;
+  width: var(--custom-icon-size);
   height: 48px;
+  height: var(--custom-icon-size);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30410,7 +30422,9 @@ div.popoutCloseButton_d523a2:hover {
 .icon_f90abb {
   display: block;
   width: 48px;
+  width: var(--custom-icon-size);
   height: 48px;
+  height: var(--custom-icon-size);
   -o-object-fit: cover;
   object-fit: cover;
   pointer-events: none;
@@ -54335,6 +54349,10 @@ code {
   --custom-folder-item-guild-icon-size: 48px;
   --custom-folder-item-guild-icon-margin: 8px;
 }
+.visual-refresh {
+  --custom-list-items-list-item-width: 76px;
+  --custom-folder-item-guild-icon-size: 52px;
+}
 :root {
   --custom-category-channel-space-before-category: 16px;
 }
@@ -54908,7 +54926,8 @@ img[alt] {
   --custom-member-list-width: 240px;
 }
 .visual-refresh {
-  --custom-guild-list-width: 72px;
+  --custom-list-items-list-item-width: 76px;
+  --custom-guild-list-width: 76px;
   --custom-guild-sidebar-width: 268px;
   --custom-app-sidebar-target-width: calc(
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
@@ -54921,4 +54940,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.dbdebe1f75b19b14148d.css.map*/
+/*# sourceMappingURL=12633.21fba8dcf441ca478305.css.map*/
