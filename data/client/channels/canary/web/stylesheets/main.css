@@ -7342,7 +7342,7 @@ div.modalHeader_c5e09c {
 }
 .colorable_ef18ee.experimentDark_ef18ee.active_ef18ee,
 .colorable_ef18ee.experimentDark_ef18ee:hover {
-  background: var(--primary-630);
+  background: rgba(255, 255, 255, 0.1);
 }
 .centerButton_ef18ee {
   border-radius: 50%;
@@ -7433,6 +7433,7 @@ div.modalHeader_c5e09c {
   display: flex;
   direction: row;
   align-items: center;
+  gap: 1px;
 }
 .contextMenuNubExperiment_ef18ee {
   padding: 10px 2px;
@@ -55061,4 +55062,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f806171832aa5f39be35.css.map*/
+/*# sourceMappingURL=12633.bdc910d12e3c4a0f0a54.css.map*/
