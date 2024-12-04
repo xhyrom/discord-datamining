@@ -90,10 +90,6 @@
         </div>
         <div class="div-block-absol">
           <a
-            href="https://discord.com/app"
-            class="menu-button-login login-button-js"
-            >Login</a
-          ><a
             href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&amp;platform=win&amp;arch=x86"
             class="button-blue-menu download-button w-inline-block"
             ><img
