@@ -6410,7 +6410,7 @@ div.modalHeader_c5e09c {
   line-height: 1.5rem;
 }
 .visual-refresh .markup_f8f345 code {
-  background: var(--opacity-blurple-4);
+  background: var(--background-code);
   border: 1px solid var(--border-normal);
 }
 @media all and (-webkit-max-device-pixel-ratio: 1) {
@@ -10462,6 +10462,90 @@ div.modalHeader_c5e09c {
 .theme-light .hljs-deletion {
   color: #b31d28;
   background-color: #ffeef0;
+}
+.visual-refresh .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  border-radius: 4px;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  color: var(--text-normal);
+  background: var(--background-secondary);
+}
+.visual-refresh .hljs-doctag,
+.visual-refresh .hljs-keyword,
+.visual-refresh .hljs-meta .hljs-keyword,
+.visual-refresh .hljs-template-tag,
+.visual-refresh .hljs-template-variable,
+.visual-refresh .hljs-type,
+.visual-refresh .hljs-variable.language_ {
+  color: var(--text-code-keyword);
+}
+.visual-refresh .hljs-title,
+.visual-refresh .hljs-title.class_,
+.visual-refresh .hljs-title.class_.inherited__,
+.visual-refresh .hljs-title.function_ {
+  color: var(--text-code-title);
+}
+.visual-refresh .hljs-attr,
+.visual-refresh .hljs-attribute,
+.visual-refresh .hljs-literal,
+.visual-refresh .hljs-meta,
+.visual-refresh .hljs-number,
+.visual-refresh .hljs-operator,
+.visual-refresh .hljs-variable,
+.visual-refresh .hljs-selector-attr,
+.visual-refresh .hljs-selector-class,
+.visual-refresh .hljs-selector-id {
+  color: var(--text-code-variable);
+}
+.visual-refresh .hljs-regexp,
+.visual-refresh .hljs-string,
+.visual-refresh .hljs-meta .hljs-string {
+  color: var(--text-code-string);
+}
+.visual-refresh .hljs-built_in,
+.visual-refresh .hljs-symbol {
+  color: var(--text-code-builtin);
+}
+.visual-refresh .hljs-comment,
+.visual-refresh .hljs-code,
+.visual-refresh .hljs-formula {
+  color: var(--text-code-comment);
+}
+.visual-refresh .hljs-name,
+.visual-refresh .hljs-quote,
+.visual-refresh .hljs-selector-tag,
+.visual-refresh .hljs-selector-pseudo {
+  color: var(--text-code-tag);
+}
+.visual-refresh .hljs-subst {
+  color: var(--text-code-default);
+}
+.visual-refresh .hljs-section {
+  color: var(--text-code-section);
+  font-weight: 700;
+}
+.visual-refresh .hljs-bullet {
+  color: var(--text-code-bullet);
+}
+.visual-refresh .hljs-emphasis {
+  color: var(--text-code-default);
+  font-style: italic;
+}
+.visual-refresh .hljs-strong {
+  color: var(--text-code-default);
+  font-weight: 700;
+}
+.visual-refresh .hljs-addition {
+  color: var(--text-code-addition);
+  background-color: var(--background-code-addition);
+}
+.visual-refresh .hljs-deletion {
+  color: var(--text-code-deletion);
+  background-color: var(--background-code-deletion);
 }
 @keyframes placeholderPulse_dac468 {
   0% {
@@ -50822,6 +50906,13 @@ html.disable-forced-colors * {
   --background-base-low: var(--neutral-70);
   --background-base-lower: var(--neutral-73);
   --background-base-lowest: var(--neutral-76);
+  --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
+  --background-code-addition: hsl(
+    var(--opacity-green-12-hsl) / 0.12156862745098039
+  );
+  --background-code-deletion: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --background-feedback-critical: var(--red-new-94);
   --background-feedback-info: var(--blue-new-93);
   --background-feedback-positive: var(--green-new-93);
@@ -50835,6 +50926,18 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --icon-default: var(--neutral-2);
   --icon-tertiary: var(--neutral-23);
+  --text-code-addition: var(--green-new-9);
+  --text-code-builtin: var(--orange-new-23);
+  --text-code-bullet: var(--yellow-new-24);
+  --text-code-comment: var(--neutral-28);
+  --text-code-default: var(--blue-new-20);
+  --text-code-deletion: var(--red-new-5);
+  --text-code-keyword: var(--red-new-22);
+  --text-code-section: var(--blue-new-20);
+  --text-code-string: var(--teal-new-20);
+  --text-code-tag: var(--green-new-26);
+  --text-code-title: var(--blurple-14);
+  --text-code-variable: var(--blue-new-25);
   --text-default: var(--neutral-8);
   --text-feedback-critical: var(--red-new-24);
   --text-feedback-info: var(--blue-new-27);
@@ -51165,6 +51268,24 @@ html.disable-forced-colors * {
       var(--neutral-76) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-code: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-addition: color-mix(
+      in oklab,
+      hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-deletion: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
     --background-feedback-critical: color-mix(
       in oklab,
       var(--red-new-94) 100%,
@@ -51232,6 +51353,66 @@ html.disable-forced-colors * {
     --icon-tertiary: color-mix(
       in oklab,
       var(--neutral-23) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-addition: color-mix(
+      in oklab,
+      var(--green-new-9) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-builtin: color-mix(
+      in oklab,
+      var(--orange-new-23) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-bullet: color-mix(
+      in oklab,
+      var(--yellow-new-24) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-comment: color-mix(
+      in oklab,
+      var(--neutral-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-default: color-mix(
+      in oklab,
+      var(--blue-new-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-deletion: color-mix(
+      in oklab,
+      var(--red-new-5) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-keyword: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--blue-new-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--teal-new-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--green-new-26) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-title: color-mix(
+      in oklab,
+      var(--blurple-14) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-variable: color-mix(
+      in oklab,
+      var(--blue-new-25) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-default: color-mix(
@@ -51390,6 +51571,13 @@ html.disable-forced-colors * {
   --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
   --background-base-lowest: var(--neutral-4);
+  --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
+  --background-code-addition: hsl(
+    var(--opacity-green-12-hsl) / 0.12156862745098039
+  );
+  --background-code-deletion: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --background-feedback-critical: var(--red-new-9);
   --background-feedback-info: var(--blue-new-9);
   --background-feedback-positive: var(--green-new-9);
@@ -51403,6 +51591,18 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --icon-default: var(--neutral-59);
   --icon-tertiary: var(--neutral-38);
+  --text-code-addition: var(--green-new-74);
+  --text-code-builtin: var(--orange-new-59);
+  --text-code-bullet: var(--yellow-new-58);
+  --text-code-comment: var(--neutral-40);
+  --text-code-default: var(--blue-new-64);
+  --text-code-deletion: var(--red-new-73);
+  --text-code-keyword: var(--red-new-58);
+  --text-code-section: var(--blue-new-64);
+  --text-code-string: var(--teal-new-64);
+  --text-code-tag: var(--green-new-60);
+  --text-code-title: var(--blurple-68);
+  --text-code-variable: var(--blue-new-60);
   --text-default: var(--neutral-49);
   --text-feedback-critical: var(--red-new-46);
   --text-feedback-info: var(--blue-new-49);
@@ -51733,6 +51933,24 @@ html.disable-forced-colors * {
       var(--neutral-4) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-code: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-addition: color-mix(
+      in oklab,
+      hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-deletion: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
     --background-feedback-critical: color-mix(
       in oklab,
       var(--red-new-9) 100%,
@@ -51800,6 +52018,66 @@ html.disable-forced-colors * {
     --icon-tertiary: color-mix(
       in oklab,
       var(--neutral-38) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-addition: color-mix(
+      in oklab,
+      var(--green-new-74) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-builtin: color-mix(
+      in oklab,
+      var(--orange-new-59) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-bullet: color-mix(
+      in oklab,
+      var(--yellow-new-58) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-comment: color-mix(
+      in oklab,
+      var(--neutral-40) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-default: color-mix(
+      in oklab,
+      var(--blue-new-64) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-deletion: color-mix(
+      in oklab,
+      var(--red-new-73) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-keyword: color-mix(
+      in oklab,
+      var(--red-new-58) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--blue-new-64) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--teal-new-64) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--green-new-60) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-title: color-mix(
+      in oklab,
+      var(--blurple-68) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-variable: color-mix(
+      in oklab,
+      var(--blue-new-60) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-default: color-mix(
@@ -51951,6 +52229,13 @@ html.disable-forced-colors * {
   --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
   --background-base-lowest: var(--neutral-100);
+  --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
+  --background-code-addition: hsl(
+    var(--opacity-green-12-hsl) / 0.12156862745098039
+  );
+  --background-code-deletion: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --background-feedback-critical: var(--red-new-94);
   --background-feedback-info: var(--blue-new-93);
   --background-feedback-positive: var(--green-new-93);
@@ -51964,6 +52249,18 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --icon-default: var(--neutral-14);
   --icon-tertiary: var(--neutral-33);
+  --text-code-addition: var(--green-new-23);
+  --text-code-builtin: var(--orange-new-36);
+  --text-code-bullet: var(--yellow-new-37);
+  --text-code-comment: var(--neutral-36);
+  --text-code-default: var(--blue-new-33);
+  --text-code-deletion: var(--red-new-20);
+  --text-code-keyword: var(--red-new-36);
+  --text-code-section: var(--blue-new-33);
+  --text-code-string: var(--teal-new-33);
+  --text-code-tag: var(--green-new-38);
+  --text-code-title: var(--blurple-28);
+  --text-code-variable: var(--blue-new-38);
   --text-default: var(--neutral-20);
   --text-feedback-critical: var(--red-new-39);
   --text-feedback-info: var(--blue-new-42);
@@ -52288,6 +52585,24 @@ html.disable-forced-colors * {
       var(--neutral-100) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-code: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-addition: color-mix(
+      in oklab,
+      hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-deletion: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
     --background-feedback-critical: color-mix(
       in oklab,
       var(--red-new-94) 100%,
@@ -52355,6 +52670,66 @@ html.disable-forced-colors * {
     --icon-tertiary: color-mix(
       in oklab,
       var(--neutral-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-addition: color-mix(
+      in oklab,
+      var(--green-new-23) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-builtin: color-mix(
+      in oklab,
+      var(--orange-new-36) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-bullet: color-mix(
+      in oklab,
+      var(--yellow-new-37) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-comment: color-mix(
+      in oklab,
+      var(--neutral-36) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-default: color-mix(
+      in oklab,
+      var(--blue-new-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-deletion: color-mix(
+      in oklab,
+      var(--red-new-20) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-keyword: color-mix(
+      in oklab,
+      var(--red-new-36) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--blue-new-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--teal-new-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--green-new-38) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-title: color-mix(
+      in oklab,
+      var(--blurple-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-variable: color-mix(
+      in oklab,
+      var(--blue-new-38) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-default: color-mix(
@@ -52508,6 +52883,13 @@ html.disable-forced-colors * {
   --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
   --background-base-lowest: var(--neutral-92);
+  --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
+  --background-code-addition: hsl(
+    var(--opacity-green-12-hsl) / 0.12156862745098039
+  );
+  --background-code-deletion: hsl(
+    var(--opacity-red-12-hsl) / 0.12156862745098039
+  );
   --background-feedback-critical: var(--red-new-94);
   --background-feedback-info: var(--blue-new-93);
   --background-feedback-positive: var(--green-new-93);
@@ -52521,6 +52903,18 @@ html.disable-forced-colors * {
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --icon-default: var(--neutral-10);
   --icon-tertiary: var(--neutral-29);
+  --text-code-addition: var(--green-new-17);
+  --text-code-builtin: var(--orange-new-31);
+  --text-code-bullet: var(--yellow-new-32);
+  --text-code-comment: var(--neutral-33);
+  --text-code-default: var(--blue-new-28);
+  --text-code-deletion: var(--red-new-14);
+  --text-code-keyword: var(--red-new-30);
+  --text-code-section: var(--blue-new-28);
+  --text-code-string: var(--teal-new-28);
+  --text-code-tag: var(--green-new-33);
+  --text-code-title: var(--blurple-22);
+  --text-code-variable: var(--blue-new-33);
   --text-default: var(--neutral-16);
   --text-feedback-critical: var(--red-new-33);
   --text-feedback-info: var(--blue-new-36);
@@ -52845,6 +53239,24 @@ html.disable-forced-colors * {
       var(--neutral-92) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --background-code: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-addition: color-mix(
+      in oklab,
+      hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-code-deletion: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
     --background-feedback-critical: color-mix(
       in oklab,
       var(--red-new-94) 100%,
@@ -52912,6 +53324,66 @@ html.disable-forced-colors * {
     --icon-tertiary: color-mix(
       in oklab,
       var(--neutral-29) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-addition: color-mix(
+      in oklab,
+      var(--green-new-17) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-builtin: color-mix(
+      in oklab,
+      var(--orange-new-31) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-bullet: color-mix(
+      in oklab,
+      var(--yellow-new-32) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-comment: color-mix(
+      in oklab,
+      var(--neutral-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-default: color-mix(
+      in oklab,
+      var(--blue-new-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-deletion: color-mix(
+      in oklab,
+      var(--red-new-14) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-keyword: color-mix(
+      in oklab,
+      var(--red-new-30) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-section: color-mix(
+      in oklab,
+      var(--blue-new-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-string: color-mix(
+      in oklab,
+      var(--teal-new-28) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-tag: color-mix(
+      in oklab,
+      var(--green-new-33) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-title: color-mix(
+      in oklab,
+      var(--blurple-22) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --text-code-variable: color-mix(
+      in oklab,
+      var(--blue-new-33) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-default: color-mix(
@@ -54446,4 +54918,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f699cc4664fc9487ced4.css.map*/
+/*# sourceMappingURL=12633.ed31e01f0c63db41f5f6.css.map*/
