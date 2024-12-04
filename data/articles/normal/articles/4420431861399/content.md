@@ -4,7 +4,7 @@
     alt="unnamed.png"
   />
 </p>
-<h3>
+<h3 id="h_01JE7GXND81DMVZDH8EBQQVB7T">
   <span style="font-weight: 400"
     >This blog post is available in multiple languages. For non-English, head to
     our Help Center and select your preferred language at the top-right.</span
@@ -15,7 +15,7 @@
   ><a
     href="https://www.sie.com/en/blog/announcing-playstations-new-partnership-with-discord/"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >our friends at PlayStation announced a new Partnership with Discord</a
   ><span style="font-weight: 400"
     >, working together to deliver new ways to integrate your PlayStation
@@ -51,7 +51,7 @@
   >
 </p>
 <p> </p>
-<h3>
+<h3 id="h_01JE7GXND97D991QY1P5T45GBW">
   <em
     ><span style="font-weight: 400"
       >Don’t see the option quite yet? PlayStation Network account connection is
@@ -61,7 +61,7 @@
     ></em
   >
 </h3>
-<h1>
+<h1 id="h_01JE7GXND9R5AXFZSEB2FJ69J8">
   <span style="font-weight: 400"
     >How to Connect your PlayStation Network Account to Discord</span
   >
@@ -145,7 +145,7 @@
   ><a
     href="https://www.playstation.com/en-us/support/account/privacy-settings-psn/"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >How to change privacy settings on PlayStation Network</a
   ><span style="font-weight: 400"
     >” in case you may have adjusted them before. </span
@@ -157,7 +157,7 @@
   ><a
     href="https://support.discord.com/hc/en-us/articles/4419534960919"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >our Help Center article</a
   ><span style="font-weight: 400">.</span>
 </p>
@@ -184,7 +184,6 @@
     app.
   </span>
 </p>
-<h1><span style="font-weight: 400"> </span></h1>
 <p>
   <span style="font-weight: 400"
     >We’re excited to continue our partnership with PlayStation and explore how
@@ -205,6 +204,17 @@
   ><a href="https://discord.com/download"
     ><span style="font-weight: 400">here</span></a
   ><span style="font-weight: 400">.</span>
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><iframe
+      src="//www.youtube-nocookie.com/embed/N0xjuslVsbY"
+      width="560"
+      height="315"
+      frameborder="0"
+      allowfullscreen=""
+    ></iframe
+  ></span>
 </p>
 <p>
   <span class="wysiwyg-font-size-medium"
