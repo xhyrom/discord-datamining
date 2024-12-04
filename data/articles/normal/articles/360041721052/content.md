@@ -104,6 +104,12 @@
     >
   </li>
 </ul>
+<div class="exp-box">
+  <strong>NOTE</strong>: We are experimenting with a new desktop and mobile
+  video call interface with a select group of users. During this period, button
+  layouts may differ from those described in this article. Discord Support is
+  unable to add or remove users from this experiment.
+</div>
 <h1 id="h_01EZTK1DQY3T580G3231HJHTNW">What are Video Calls?</h1>
 <p>
   Video calls are an easy way to stay connected - all from within your DMs
@@ -123,7 +129,7 @@
   <li>video chat and screen share at the same time, or</li>
   <li>do neither and just chat on voice and watch others’ videos!</li>
 </ol>
-<h3>
+<h3 id="h_01JE9TQKBWEQ77XQZ0XJFZ799R">
   This article will cover Video Calls in
   <strong><em>DMs and voice channels on the desktop client.</em></strong> For
   more information on how to share your screen please check out our
@@ -182,7 +188,7 @@
     alt="image3.png"
   />
 </p>
-<h3>
+<h3 id="h_01JE9TQKBWEVPES8BPC0PN3DGJ">
   <span style="font-weight: 400"
     ><strong>Note:</strong> For browser app users, you may need to enable camera
     access in your browser in order to use the device successfully. Select</span
@@ -378,7 +384,7 @@
     height="152"
   />
 </p>
-<h2 class="wysiwyg-text-align-left">
+<h2 id="h_01JE9TQKBWHT2Y2VRJ49G2EV76" class="wysiwyg-text-align-left">
   Instructions for joining a Server Video Chat
 </h2>
 <p>
@@ -647,7 +653,7 @@
           Helvetica, Arial, sans-serif;
       "
       >Press the <img
-        src="https://support.discord.com/hc/article_attachments/17840336919831"
+        src="https://support.discord.com/hc/article_attachments/17840336882583"
         alt="Group_1.png"
         width="16"
         height="14"
@@ -682,13 +688,13 @@
     alt="go_live_example.gif"
   />
 </p>
-<h3 class="wysiwyg-text-align-left">
+<h3 id="h_01JE9TQKBX2SAH3N416VPRBSX5" class="wysiwyg-text-align-left">
   <span style="font-weight: 400"
     >Note: <br />- Multiple people can stream their screen and Go Live at the
     same time on the video call.
   </span>
 </h3>
-<h1 class="wysiwyg-text-align-left">
+<h1 id="h_01JE9TQKBX9QVKM92ME9VNN481" class="wysiwyg-text-align-left">
   <span style="font-weight: 400">Server Video Safety Best Practices</span>
 </h1>
 <p>
@@ -784,7 +790,7 @@
       ><a
         href="https://support.discord.com/hc/en-us/articles/217916488"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         >Blocking &amp; Privacy Settings
       </a></span
     >
@@ -794,7 +800,7 @@
       ><a
         href="https://support.discord.com/hc/en-us/articles/216679607"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         >What are Verification Levels?</a
       ></span
     >
@@ -822,7 +828,7 @@
 <p>
   If you have any follow-up questions or are running into any issues, send a
   ticket to our support team at
-  <a href="https://dis.gd/contact" target="_blank" rel="noopener"
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
     >https://dis.gd/contact</a
   >
   with all the following information so we can help investigate what's going on!
