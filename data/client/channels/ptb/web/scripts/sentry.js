@@ -1097,7 +1097,7 @@
               _.push(E.toJSNumber()), { value: _.reverse(), isNegative: n }
             );
           }
-          function V(e, t, a) {
+          function k(e, t, a) {
             var n = K(e, t);
             return (
               (n.isNegative ? "-" : "") +
@@ -1111,7 +1111,7 @@
                 .join("")
             );
           }
-          function k(e) {
+          function V(e) {
             if (c(+e)) {
               var t = +e;
               if (t === R(t)) return n ? new i(BigInt(t)) : new E(t);
@@ -1159,7 +1159,7 @@
               return K(this, e);
             }),
             (o.prototype.toString = function (t, r) {
-              if ((e === t && (t = 10), 10 !== t)) return V(this, t, r);
+              if ((e === t && (t = 10), 10 !== t)) return k(this, t, r);
               for (
                 var a, n = this.value, _ = n.length, o = String(n[--_]);
                 --_ >= 0;
@@ -1170,7 +1170,7 @@
             }),
             (E.prototype.toString = function (t, r) {
               return (e === t && (t = 10), 10 != t)
-                ? V(this, t, r)
+                ? k(this, t, r)
                 : String(this.value);
             }),
             (i.prototype.toString = E.prototype.toString),
@@ -1200,10 +1200,10 @@
                     if (e !== R(e)) throw Error(e + " is not an integer.");
                     return new E(e);
                   }
-                  return k(e.toString());
+                  return V(e.toString());
                 })(e)
               : "string" == typeof e
-                ? k(e)
+                ? V(e)
                 : "bigint" == typeof e
                   ? new i(e)
                   : e;
@@ -4616,7 +4616,7 @@
             return nj.Jj;
           },
           JkL: function () {
-            return _V;
+            return _k;
           },
           Jn9: function () {
             return oC;
@@ -4628,7 +4628,7 @@
             return oa;
           },
           K3D: function () {
-            return tk;
+            return tV;
           },
           KA4: function () {
             return _J;
@@ -4907,7 +4907,7 @@
             return nJ;
           },
           Ypu: function () {
-            return k;
+            return V;
           },
           Z5c: function () {
             return n9;
@@ -4916,7 +4916,7 @@
             return _a;
           },
           Z9p: function () {
-            return eV;
+            return ek;
           },
           ZUi: function () {
             return M;
@@ -4940,7 +4940,7 @@
             return l;
           },
           _vf: function () {
-            return V;
+            return k;
           },
           a5g: function () {
             return eS;
@@ -5255,10 +5255,10 @@
             return tN;
           },
           scU: function () {
-            return _k;
+            return _V;
           },
           si2: function () {
-            return tV;
+            return tk;
           },
           t4x: function () {
             return ep;
@@ -5420,8 +5420,8 @@
           H,
           x,
           K,
-          V,
           k,
+          V,
           F,
           X,
           j,
@@ -5474,8 +5474,8 @@
           eH,
           ex,
           eK,
-          eV,
           ek,
+          eV,
           eF,
           eX,
           ej,
@@ -5538,8 +5538,8 @@
           tH,
           tx,
           tK,
-          tV,
           tk,
+          tV,
           tF,
           tX,
           tj,
@@ -5602,8 +5602,8 @@
           rH,
           rx,
           rK,
-          rV,
           rk,
+          rV,
           rF,
           rX,
           rj,
@@ -5666,8 +5666,8 @@
           aH,
           ax,
           aK,
-          aV,
           ak,
+          aV,
           aF,
           aX,
           aj,
@@ -5731,8 +5731,8 @@
           nH = r(866442),
           nx = r(860911),
           nK = r(70956),
-          nV = r(272242),
-          nk = r(188785),
+          nk = r(272242),
+          nV = r(188785),
           nF = r(979007),
           nX = r(526761),
           nj = r(231338),
@@ -6265,12 +6265,12 @@
           (rG[(rG.TIMED_OUT = 1)] = "TIMED_OUT"),
           (rG[(rG.DISMISSED = 2)] = "DISMISSED"),
           (rG[(rG.FOCUSED = 3)] = "FOCUSED"),
-          ((rm = V || (V = {})).TOP_LEFT = "topLeft"),
+          ((rm = k || (k = {})).TOP_LEFT = "topLeft"),
           (rm.TOP_RIGHT = "topRight"),
           (rm.BOTTOM_LEFT = "bottomLeft"),
           (rm.BOTTOM_RIGHT = "bottomRight"),
           (rm.DISABLED = "disabled"),
-          ((ry = k || (k = {})).ENABLED = "ENABLED"),
+          ((ry = V || (V = {})).ENABLED = "ENABLED"),
           (ry.DISABLED = "DISABLED"),
           ((rb = F || (F = {})).CONNECT = "CONNECT"),
           (rb.DISPATCH = "DISPATCH"),
@@ -7614,7 +7614,7 @@
             LOGIN: "/login",
             LOGIN_HANDOFF: "/login/handoff",
             REGISTER: "/register",
-            DEFAULT_LOGGED_OUT: nk.a ? "/register" : "/login",
+            DEFAULT_LOGGED_OUT: nV.a ? "/register" : "/login",
             INVITE: (e) => "/invite/".concat(e),
             INVITE_LOGIN: (e) => "/invite/".concat(e, "/login"),
             INVITE_REGISTER: (e) => "/invite/".concat(e, "/register"),
@@ -7728,7 +7728,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (e, t) =>
               "/application-directory/"
                 .concat(e, "/")
-                .concat(nV.ApplicationDirectoryProfileSections.STORE, "/")
+                .concat(nk.ApplicationDirectoryProfileSections.STORE, "/")
                 .concat(t),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -7750,18 +7750,18 @@
           }),
           n7 = (0, nx.Ft)(n5),
           n9 = (0, nx.Ft)(n8, [":", "?", "@"]);
-        ((rV = et || (et = {}))[(rV.INSTANCE = 1)] = "INSTANCE"),
-          (rV[(rV.JOIN = 2)] = "JOIN"),
-          (rV[(rV.SYNC = 16)] = "SYNC"),
-          (rV[(rV.PLAY = 32)] = "PLAY"),
-          (rV[(rV.PARTY_PRIVACY_FRIENDS = 64)] = "PARTY_PRIVACY_FRIENDS"),
-          (rV[(rV.PARTY_PRIVACY_VOICE_CHANNEL = 128)] =
+        ((rk = et || (et = {}))[(rk.INSTANCE = 1)] = "INSTANCE"),
+          (rk[(rk.JOIN = 2)] = "JOIN"),
+          (rk[(rk.SYNC = 16)] = "SYNC"),
+          (rk[(rk.PLAY = 32)] = "PLAY"),
+          (rk[(rk.PARTY_PRIVACY_FRIENDS = 64)] = "PARTY_PRIVACY_FRIENDS"),
+          (rk[(rk.PARTY_PRIVACY_VOICE_CHANNEL = 128)] =
             "PARTY_PRIVACY_VOICE_CHANNEL"),
-          (rV[(rV.EMBEDDED = 256)] = "EMBEDDED"),
-          ((rk = er || (er = {}))[(rk.ALL_MESSAGES = 0)] = "ALL_MESSAGES"),
-          (rk[(rk.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
-          (rk[(rk.NO_MESSAGES = 2)] = "NO_MESSAGES"),
-          (rk[(rk.NULL = 3)] = "NULL");
+          (rk[(rk.EMBEDDED = 256)] = "EMBEDDED"),
+          ((rV = er || (er = {}))[(rV.ALL_MESSAGES = 0)] = "ALL_MESSAGES"),
+          (rV[(rV.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
+          (rV[(rV.NO_MESSAGES = 2)] = "NO_MESSAGES"),
+          (rV[(rV.NULL = 3)] = "NULL");
         let _e = 100,
           _t = 200,
           _r = 50,
@@ -7844,8 +7844,8 @@
           _H = 240,
           _x = 480,
           _K = 650,
-          _V = "DEVICE_TOKEN",
-          _k = "DEVICE_VOIP_TOKEN",
+          _k = "DEVICE_TOKEN",
+          _V = "DEVICE_VOIP_TOKEN",
           _F = "first_run_date_key",
           _X = Object.freeze({
             API_DOCS: "".concat(
@@ -9449,7 +9449,7 @@
           (aO[(aO.PAID = 2)] = "PAID"),
           (aO[(aO.VOID = 3)] = "VOID"),
           (aO[(aO.UNCOLLECTIBLE = 4)] = "UNCOLLECTIBLE"),
-          ((aL = eV || (eV = {})).USER = "USER"),
+          ((aL = ek || (ek = {})).USER = "USER"),
           (aL.GLOBAL = "GLOBAL"),
           (aL.ROLE = "ROLE"),
           (aL.CHANNEL = "CHANNEL"),
@@ -9474,7 +9474,7 @@
           ZOOM_MAX: 200,
           ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
         });
-        ((ap = ek || (ek = {})).GIF = "GIF"),
+        ((ap = eV || (eV = {})).GIF = "GIF"),
           (ap.GIF_SEARCH = "GIF search"),
           (ap.EMOJI = "emoji"),
           (ap.EMOJI_SEARCH = "emoji search"),
@@ -9753,6 +9753,14 @@
           (ah.FRIEND_FINDER_INITIAL_LOADED = "friend_finder_initial_loaded"),
           (ah.USERNAME_SEARCH_TAPPED = "username_search_tapped"),
           (ah.NOW_PLAYING_CARD_HOVERED = "now_playing_card_hovered"),
+          (ah.CONNECTIONS_XBOX_RELINK_COACHMARK_VIEWED =
+            "connections_xbox_relink_coachmark_viewed"),
+          (ah.CONNECTIONS_XBOX_RELINK_COACHMARK_CLICKED =
+            "connections_xbox_relink_coachmark_clicked"),
+          (ah.CONNECTIONS_NEW_CONSOLE_COACHMARK_VIEWED =
+            "connections_new_console_coachmark_viewed"),
+          (ah.CONNECTIONS_NEW_CONSOLE_COACHMARK_CLICKED =
+            "connections_new_console_coachmark_clicked"),
           (ah.MESSAGE_REQUESTS_INITIALIZED = "message_requests_initialized"),
           (ah.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED =
             "guild_default_message_request_updated"),
@@ -11400,189 +11408,189 @@
             commandId: "-9",
           },
         });
-        ((aV = tr || (tr = {})).ENABLE_MIC_FIREFOX = "204392448"),
-          (aV.PUSH_TO_TALK_ADMINISTRATOR_MODE = "205082178"),
-          (aV.ENABLE_MIC_CHROME = "205093487"),
-          (aV.PERMISSIONS_TUTORIAL = "206029707"),
-          (aV.TWITCH_INTEGRATION = "212112068"),
-          (aV.YOUTUBE_INTEGRATION = "215162978"),
-          (aV.VOICE_CONNECTION_ERRORS = "115001310031"),
-          (aV.NO_INPUT_DETECTED = "214925018"),
-          (aV.OVERLAY_INTRODUCTION = "217659737"),
-          (aV.PERMISSIONS_LOCKOUT = "218449248"),
-          (aV.SETTING_UP_TWO_FACTOR = "219576828"),
-          (aV.WEBHOOKS_INTRODUCTION = "228383668"),
-          (aV.QUICK_SWITCHER_TUTORIAL = "115000070311"),
-          (aV.SEARCH_INDEXING = "115000414847"),
-          (aV.USING_SEARCH = "115000468588"),
-          (aV.RICH_PRESENCE_INTRODUCTION = "115001557452"),
-          (aV.CORRUPT_INSTALLATION = "115004307527"),
-          (aV.SPOTIFY_AUTO_PAUSED = "115002872212"),
-          (aV.SPOTIFY_CONNECTION = "360000167212"),
-          (aV.SPELLCHECK = "360000877191"),
-          (aV.INVALID_INVITES = "360001556852"),
-          (aV.GDPR_ACCOUNT_DELETE = "212500837"),
-          (aV.GDPR_ACCOUNT_DISABLE = "360004066391"),
-          (aV.GDPR_REQUEST_DATA = "360004027692"),
-          (aV.GDPR_PACKAGE_CONTENTS = "360004957991"),
-          (aV.DATA_PRIVACY_CONTROLS = "360004109911"),
-          (aV.ACCESSIBILITY_TRACKING = "360035966492"),
-          (aV.NEARBY_FRIENDS = "360014894392"),
-          (aV.APPLICATION_STORE_OVERVIEW = "360012656092"),
-          (aV.APPLICATION_STORE_EARLY_ACCESS = "360027392172"),
-          (aV.GIFTING = "360020776291"),
-          (aV.GUILD_VANITY_URL = "115001542132"),
-          (aV.GUILD_SUBSCRIPTIONS = "360028038352"),
-          (aV.GUILD_BANNER_SPLASH = "360028716472"),
-          (aV.GUILD_INVITE_SPLASH = "4415841146391"),
-          (aV.GUILD_COMMUNITY_FEATURE = "360047132851"),
-          (aV.BUILD_OVERRIDE_EMBED = "360030114991"),
-          (aV.SUPPORTED_BROWSERS = "213491697"),
-          (aV.ANNOUNCEMENT_CHANNELS = "360032008192"),
-          (aV.GUILD_ANALYTICS = "360032807371"),
-          (aV.BILLING = "360017693772"),
-          (aV.PAYMENT_AUTHORIZATION_CHARGE = "4402712000663"),
-          (aV.FUNIMATION_PROMOTION = "360036587771"),
-          (aV.PUBLIC_GUILD_GUILDLINES = "360035969312"),
-          (aV.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES = "14078261239831"),
-          (aV.SYSTEM_DMS = "360036118732"),
-          (aV.MISSING_ENTITLEMENT = "360016422832"),
-          (aV.AGE_GATE = "360040724612"),
-          (aV.STREAM_FAILED = "360040816151"),
-          (aV.REDUCED_MOTION = "360040613412"),
-          (aV.NOISE_SUPPRESSION = "360040843952"),
-          (aV.NSFW_AGE_GATING =
+        ((ak = tr || (tr = {})).ENABLE_MIC_FIREFOX = "204392448"),
+          (ak.PUSH_TO_TALK_ADMINISTRATOR_MODE = "205082178"),
+          (ak.ENABLE_MIC_CHROME = "205093487"),
+          (ak.PERMISSIONS_TUTORIAL = "206029707"),
+          (ak.TWITCH_INTEGRATION = "212112068"),
+          (ak.YOUTUBE_INTEGRATION = "215162978"),
+          (ak.VOICE_CONNECTION_ERRORS = "115001310031"),
+          (ak.NO_INPUT_DETECTED = "214925018"),
+          (ak.OVERLAY_INTRODUCTION = "217659737"),
+          (ak.PERMISSIONS_LOCKOUT = "218449248"),
+          (ak.SETTING_UP_TWO_FACTOR = "219576828"),
+          (ak.WEBHOOKS_INTRODUCTION = "228383668"),
+          (ak.QUICK_SWITCHER_TUTORIAL = "115000070311"),
+          (ak.SEARCH_INDEXING = "115000414847"),
+          (ak.USING_SEARCH = "115000468588"),
+          (ak.RICH_PRESENCE_INTRODUCTION = "115001557452"),
+          (ak.CORRUPT_INSTALLATION = "115004307527"),
+          (ak.SPOTIFY_AUTO_PAUSED = "115002872212"),
+          (ak.SPOTIFY_CONNECTION = "360000167212"),
+          (ak.SPELLCHECK = "360000877191"),
+          (ak.INVALID_INVITES = "360001556852"),
+          (ak.GDPR_ACCOUNT_DELETE = "212500837"),
+          (ak.GDPR_ACCOUNT_DISABLE = "360004066391"),
+          (ak.GDPR_REQUEST_DATA = "360004027692"),
+          (ak.GDPR_PACKAGE_CONTENTS = "360004957991"),
+          (ak.DATA_PRIVACY_CONTROLS = "360004109911"),
+          (ak.ACCESSIBILITY_TRACKING = "360035966492"),
+          (ak.NEARBY_FRIENDS = "360014894392"),
+          (ak.APPLICATION_STORE_OVERVIEW = "360012656092"),
+          (ak.APPLICATION_STORE_EARLY_ACCESS = "360027392172"),
+          (ak.GIFTING = "360020776291"),
+          (ak.GUILD_VANITY_URL = "115001542132"),
+          (ak.GUILD_SUBSCRIPTIONS = "360028038352"),
+          (ak.GUILD_BANNER_SPLASH = "360028716472"),
+          (ak.GUILD_INVITE_SPLASH = "4415841146391"),
+          (ak.GUILD_COMMUNITY_FEATURE = "360047132851"),
+          (ak.BUILD_OVERRIDE_EMBED = "360030114991"),
+          (ak.SUPPORTED_BROWSERS = "213491697"),
+          (ak.ANNOUNCEMENT_CHANNELS = "360032008192"),
+          (ak.GUILD_ANALYTICS = "360032807371"),
+          (ak.BILLING = "360017693772"),
+          (ak.PAYMENT_AUTHORIZATION_CHARGE = "4402712000663"),
+          (ak.FUNIMATION_PROMOTION = "360036587771"),
+          (ak.PUBLIC_GUILD_GUILDLINES = "360035969312"),
+          (ak.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES = "14078261239831"),
+          (ak.SYSTEM_DMS = "360036118732"),
+          (ak.MISSING_ENTITLEMENT = "360016422832"),
+          (ak.AGE_GATE = "360040724612"),
+          (ak.STREAM_FAILED = "360040816151"),
+          (ak.REDUCED_MOTION = "360040613412"),
+          (ak.NOISE_SUPPRESSION = "360040843952"),
+          (ak.NSFW_AGE_GATING =
             "115000084051#h_5206f3f2-0ee4-4380-b50a-25319e45bc7c"),
-          (aV.NSFW_GUILD_GUIDELINES = "1500005292701"),
-          (aV.PREMIUM_TRIAL = "360042410272"),
-          (aV.PREMIUM_TRIAL_FOR_ALL = "27471493302295"),
-          (aV.VOICE_VIDEO_TROUBLESHOOTING = "360045138471"),
-          (aV.GUILD_GETTING_STARTED = "360045138571"),
-          (aV.CHANNEL_FOLLOWING = "360028384531"),
-          (aV.WEBHOOKS = "228383668"),
-          (aV.INTEGRATIONS = "360045093012"),
-          (aV.PARTNER_CODE_OF_CONDUCT = "360024871991"),
-          (aV.MAX_MEMBERS = "360052841734"),
-          (aV.STICKERS = "360056891113"),
-          (aV.BLACK_FRIDAY_2020_PROMOTION = "360057438734"),
-          (aV.KEYBOARD_NAVIGATION = "1500000056121"),
-          (aV.DM_COULD_NOT_BE_DELIVERED = "360060145013"),
-          (aV.EPHEMERAL_MESSAGES = "1500000580222"),
-          (aV.OSX_SOUNDSHARE = "1500006741102"),
-          (aV.STAGE_CHANNEL_GUIDELINES = "1500010879761"),
-          (aV.STAGE_DISCOVERY = "1500011599542"),
-          (aV.STICKERS_UPLOAD = "4403089981975"),
-          (aV.STREAM_QUALITY_SETTINGS =
+          (ak.NSFW_GUILD_GUIDELINES = "1500005292701"),
+          (ak.PREMIUM_TRIAL = "360042410272"),
+          (ak.PREMIUM_TRIAL_FOR_ALL = "27471493302295"),
+          (ak.VOICE_VIDEO_TROUBLESHOOTING = "360045138471"),
+          (ak.GUILD_GETTING_STARTED = "360045138571"),
+          (ak.CHANNEL_FOLLOWING = "360028384531"),
+          (ak.WEBHOOKS = "228383668"),
+          (ak.INTEGRATIONS = "360045093012"),
+          (ak.PARTNER_CODE_OF_CONDUCT = "360024871991"),
+          (ak.MAX_MEMBERS = "360052841734"),
+          (ak.STICKERS = "360056891113"),
+          (ak.BLACK_FRIDAY_2020_PROMOTION = "360057438734"),
+          (ak.KEYBOARD_NAVIGATION = "1500000056121"),
+          (ak.DM_COULD_NOT_BE_DELIVERED = "360060145013"),
+          (ak.EPHEMERAL_MESSAGES = "1500000580222"),
+          (ak.OSX_SOUNDSHARE = "1500006741102"),
+          (ak.STAGE_CHANNEL_GUIDELINES = "1500010879761"),
+          (ak.STAGE_DISCOVERY = "1500011599542"),
+          (ak.STICKERS_UPLOAD = "4403089981975"),
+          (ak.STREAM_QUALITY_SETTINGS =
             "360040816151#h_01F02D2RBXRNRC20WS3ZHMMCTE"),
-          (aV.PREMIUM_DETAILS = "115000435108"),
-          (aV.PREMIUM_DETAILS_CANCEL_SUB =
+          (ak.PREMIUM_DETAILS = "115000435108"),
+          (ak.PREMIUM_DETAILS_CANCEL_SUB =
             "115000435108#h_01GFV3PNMEJEF92W0XX69MEE2W"),
-          (aV.LOCALIZED_PRICING = "4407269525911"),
-          (aV.SERVER_DISCOVERY = "360023968311"),
-          (aV.SERVER_DISCOVERY_GUIDELINES = "4409308485271"),
-          (aV.DISABLE_GUILD_COMMUNICATION = "4413305239191"),
-          (aV.GUILD_AUTOMOD_BLOCKED_MESSAGE = "4421269296535"),
-          (aV.GUILD_AUTOMOD_REGEX = "10069840290711"),
-          (aV.GUILD_RAID = "4421269296535"),
-          (aV.INVITE_DISABLED = "8458903738647"),
-          (aV.BLOCKED_PAYMENTS = "4708041338391"),
-          (aV.ROLE_SUBSCRIPTION_TRIAL = "5278912413335"),
-          (aV.HIGHLIGHTS = "5304469213079"),
-          (aV.FORCED_COLORS = "1500010454681"),
-          (aV.ROLE_STYLES = "1500010454681"),
-          (aV.CREATOR_TERMS = "5330075836311"),
-          (aV.CREATOR_FAQ = "5371495812631"),
-          (aV.CREATOR_POLICY = "10575066024983"),
-          (aV.POGGERMODE = "5706956956695"),
-          (aV.GUILD_HOME = "6156116949911"),
-          (aV.SERVER_WEB_PAGES = "4673515000983"),
-          (aV.TEXT_IN_VOICE = "4412085582359"),
-          (aV.QUARANTINE = "6461420677527"),
-          (aV.FORUMS = "6208479917079"),
-          (aV.GUILD_PROFILES = "4409388345495"),
-          (aV.XBOX_CONNECTION = "360003953831"),
-          (aV.PS_CONNECTION = "4419534960919"),
-          (aV.QUEST_HOW_TO_XBOX = "360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57"),
-          (aV.QUEST_HOW_TO_PLAYSTATION =
+          (ak.LOCALIZED_PRICING = "4407269525911"),
+          (ak.SERVER_DISCOVERY = "360023968311"),
+          (ak.SERVER_DISCOVERY_GUIDELINES = "4409308485271"),
+          (ak.DISABLE_GUILD_COMMUNICATION = "4413305239191"),
+          (ak.GUILD_AUTOMOD_BLOCKED_MESSAGE = "4421269296535"),
+          (ak.GUILD_AUTOMOD_REGEX = "10069840290711"),
+          (ak.GUILD_RAID = "4421269296535"),
+          (ak.INVITE_DISABLED = "8458903738647"),
+          (ak.BLOCKED_PAYMENTS = "4708041338391"),
+          (ak.ROLE_SUBSCRIPTION_TRIAL = "5278912413335"),
+          (ak.HIGHLIGHTS = "5304469213079"),
+          (ak.FORCED_COLORS = "1500010454681"),
+          (ak.ROLE_STYLES = "1500010454681"),
+          (ak.CREATOR_TERMS = "5330075836311"),
+          (ak.CREATOR_FAQ = "5371495812631"),
+          (ak.CREATOR_POLICY = "10575066024983"),
+          (ak.POGGERMODE = "5706956956695"),
+          (ak.GUILD_HOME = "6156116949911"),
+          (ak.SERVER_WEB_PAGES = "4673515000983"),
+          (ak.TEXT_IN_VOICE = "4412085582359"),
+          (ak.QUARANTINE = "6461420677527"),
+          (ak.FORUMS = "6208479917079"),
+          (ak.GUILD_PROFILES = "4409388345495"),
+          (ak.XBOX_CONNECTION = "360003953831"),
+          (ak.PS_CONNECTION = "4419534960919"),
+          (ak.QUEST_HOW_TO_XBOX = "360003953831#h_01J1TYJ22SN8Q4YND06JAGPA57"),
+          (ak.QUEST_HOW_TO_PLAYSTATION =
             "4419534960919#h_01J1TXNAT4RFSX9R7HQ30MHFCC"),
-          (aV.VERIFICATION_FAQ = "6181726888215"),
-          (aV.ACTIVITY_STATUS_SETTINGS = "7931156448919"),
-          (aV.MESSAGE_REQUESTS = "7924992471191"),
-          (aV.RNA_CHANGELOG = "8537198296727"),
-          (aV.CONNECTION_DETAILS = "8063233404823"),
-          (aV.CONNECTION_DETAILS_ADMIN = "10388356626711"),
-          (aV.APPS_LEARN_MORE = "26592957841303-How-to-Discover-and-Add-Apps"),
-          (aV.BOT_DATA_ACCESS = "7933951485975"),
-          (aV.HIGHLIGHTS_NOTIFICATIONS = "5304469213079"),
-          (aV.CRUNCHYROLL_CONNECTION = "9929188048023"),
-          (aV.ACTIVE_NITRO_BOGO_PROMOTION = "10167328543127"),
-          (aV.APPLICATION_COMMAND_PERMISSION_V3_WHAT_CHANGED =
+          (ak.VERIFICATION_FAQ = "6181726888215"),
+          (ak.ACTIVITY_STATUS_SETTINGS = "7931156448919"),
+          (ak.MESSAGE_REQUESTS = "7924992471191"),
+          (ak.RNA_CHANGELOG = "8537198296727"),
+          (ak.CONNECTION_DETAILS = "8063233404823"),
+          (ak.CONNECTION_DETAILS_ADMIN = "10388356626711"),
+          (ak.APPS_LEARN_MORE = "26592957841303-How-to-Discover-and-Add-Apps"),
+          (ak.BOT_DATA_ACCESS = "7933951485975"),
+          (ak.HIGHLIGHTS_NOTIFICATIONS = "5304469213079"),
+          (ak.CRUNCHYROLL_CONNECTION = "9929188048023"),
+          (ak.ACTIVE_NITRO_BOGO_PROMOTION = "10167328543127"),
+          (ak.APPLICATION_COMMAND_PERMISSION_V3_WHAT_CHANGED =
             "10952896421783"),
-          (aV.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT = "10952702911639"),
-          (aV.SUPER_REACTIONS = "12102061808663"),
-          (aV.SOUNDBOARD = "12612888127767"),
-          (aV.NEW_LAYOUT = "12654190110999"),
-          (aV.GUILD_BOOSTING_FAQ = "360028038352"),
-          (aV.CLYDE_AI = "13066317497239"),
-          (aV.NITRO = "115000435108"),
-          (aV.ACTIVITIES = "4422142836759"),
-          (aV.VOICE_MESSAGES = "13091096725527"),
-          (aV.SAFE_DIRECT_MESSAGING = "115000068672"),
-          (aV.PAID_TERMS = "4410339366295"),
-          (aV.CONVERSATION_SUMMARIES = "12926016807575"),
-          (aV.SHARE_NITRO_FAQ = "13771635451415"),
-          (aV.POMELO_FAQ = "12620128861463"),
-          (aV.CONTACT_SYNC = "360061878534"),
-          (aV.PRIVATE_CHANNEL_INTEGRATIONS = "15104189280151"),
-          (aV.MEDIA_CHANNEL = "14346342766743"),
-          (aV.REMIXING = "15145601963031"),
-          (aV.SUMMER_2023_BOGO = "15089153846551"),
-          (aV.MEMBER_SAFETY_DASHBOARD = "15946797617431"),
-          (aV.CLIPS = "16861982215703"),
-          (aV.REMIXING_TEXT_SUPPORT =
+          (ak.APPLICATION_COMMAND_PERMISSIONS_LOCKOUT = "10952702911639"),
+          (ak.SUPER_REACTIONS = "12102061808663"),
+          (ak.SOUNDBOARD = "12612888127767"),
+          (ak.NEW_LAYOUT = "12654190110999"),
+          (ak.GUILD_BOOSTING_FAQ = "360028038352"),
+          (ak.CLYDE_AI = "13066317497239"),
+          (ak.NITRO = "115000435108"),
+          (ak.ACTIVITIES = "4422142836759"),
+          (ak.VOICE_MESSAGES = "13091096725527"),
+          (ak.SAFE_DIRECT_MESSAGING = "115000068672"),
+          (ak.PAID_TERMS = "4410339366295"),
+          (ak.CONVERSATION_SUMMARIES = "12926016807575"),
+          (ak.SHARE_NITRO_FAQ = "13771635451415"),
+          (ak.POMELO_FAQ = "12620128861463"),
+          (ak.CONTACT_SYNC = "360061878534"),
+          (ak.PRIVATE_CHANNEL_INTEGRATIONS = "15104189280151"),
+          (ak.MEDIA_CHANNEL = "14346342766743"),
+          (ak.REMIXING = "15145601963031"),
+          (ak.SUMMER_2023_BOGO = "15089153846551"),
+          (ak.MEMBER_SAFETY_DASHBOARD = "15946797617431"),
+          (ak.CLIPS = "16861982215703"),
+          (ak.REMIXING_TEXT_SUPPORT =
             "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5"),
-          (aV.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551"),
-          (aV.SERVER_PRODUCTS =
+          (ak.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551"),
+          (ak.SERVER_PRODUCTS =
             "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1"),
-          (aV.WIN32_DEPRECATE = "17997797368471"),
-          (aV.PROFILE_BADGES = "360035962891"),
-          (aV.EXPLICIT_MEDIA_REDACTION = "18210995019671"),
-          (aV.SAFETY_ALERTS = "18210977897239"),
-          (aV.KEYWORD_FILTERS = "24269903094167"),
-          (aV.COPYRIGHT_AND_IP_POLICY = "4410339349655"),
-          (aV.NVIDIA_DRIVER_ISSUES = "18621944634391"),
-          (aV.ROLE_SUBSCRIPTION_CANCEL =
+          (ak.WIN32_DEPRECATE = "17997797368471"),
+          (ak.PROFILE_BADGES = "360035962891"),
+          (ak.EXPLICIT_MEDIA_REDACTION = "18210995019671"),
+          (ak.SAFETY_ALERTS = "18210977897239"),
+          (ak.KEYWORD_FILTERS = "24269903094167"),
+          (ak.COPYRIGHT_AND_IP_POLICY = "4410339349655"),
+          (ak.NVIDIA_DRIVER_ISSUES = "18621944634391"),
+          (ak.ROLE_SUBSCRIPTION_CANCEL =
             "19580873036695#h_01HGXEYG130EZKGQQ03A3ZHFEY"),
-          (aV.WIN7_8_DEPRECATE = "20470973046295"),
-          (aV.MACOS_17_18_DEPRECATE = "20900540446231"),
-          (aV.QUESTS_LEARN_MORE = "22225719947543"),
-          (aV.DATA_USED_TO_IMPROVE_DISCORD = "21864805694999"),
-          (aV.DATA_USED_FOR_RECOMMENDED = "21865322754327"),
-          (aV.USING_APPS_FAQ = "21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH"),
-          (aV.LAUNCHING_APPS_WITH_SHAPES_BUTTON = "21334461140375"),
-          (aV.MEMBER_LIST_ACTIVITY_FEED = "22045487931799"),
-          (aV.POLLS_FAQ = "22163184112407"),
-          (aV.QUESTS_PRIVACY_CONTROLS = "22225542459415"),
-          (aV.USER_PROFILE_RECENT_GAMES = "22489665250327"),
-          (aV.REFERRAL_PROGRAM = "22567595858327"),
-          (aV.PREMIUM_APRIL_2024_MARKETING_MOMENT = "22484323261463"),
-          (aV.SUMMER_BOGO_2024 = "24485661785495"),
-          (aV.CHANNEL_LINKED_LOBBIES = "24485661785495"),
-          (aV.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
-          (aV.END_TO_END_ENCRYPTION = "25968222946071"),
-          (aV.SCREEN_SHARING_MACOS = "26459694693783"),
-          (aV.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
-          (aV.GUILD_LEADERBOARD = "27615657704983"),
-          (aV.FRACTIONAL_PREMIUM_ABOUT = "26362805097623"),
-          (aV.HD_STREAMING_POTION = "27343254089623"),
-          (aV.STEALTH_REMEDIATION_FEATURE_GUIDE = "28084948873623"),
+          (ak.WIN7_8_DEPRECATE = "20470973046295"),
+          (ak.MACOS_17_18_DEPRECATE = "20900540446231"),
+          (ak.QUESTS_LEARN_MORE = "22225719947543"),
+          (ak.DATA_USED_TO_IMPROVE_DISCORD = "21864805694999"),
+          (ak.DATA_USED_FOR_RECOMMENDED = "21865322754327"),
+          (ak.USING_APPS_FAQ = "21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH"),
+          (ak.LAUNCHING_APPS_WITH_SHAPES_BUTTON = "21334461140375"),
+          (ak.MEMBER_LIST_ACTIVITY_FEED = "22045487931799"),
+          (ak.POLLS_FAQ = "22163184112407"),
+          (ak.QUESTS_PRIVACY_CONTROLS = "22225542459415"),
+          (ak.USER_PROFILE_RECENT_GAMES = "22489665250327"),
+          (ak.REFERRAL_PROGRAM = "22567595858327"),
+          (ak.PREMIUM_APRIL_2024_MARKETING_MOMENT = "22484323261463"),
+          (ak.SUMMER_BOGO_2024 = "24485661785495"),
+          (ak.CHANNEL_LINKED_LOBBIES = "24485661785495"),
+          (ak.NITRO_FAQ = "115000435108#h_01GFV3PWAGD4EGTD91ERBZ5R4S"),
+          (ak.END_TO_END_ENCRYPTION = "25968222946071"),
+          (ak.SCREEN_SHARING_MACOS = "26459694693783"),
+          (ak.SOCIAL_LAYER_CONNECTIONS = "26575242994583"),
+          (ak.GUILD_LEADERBOARD = "27615657704983"),
+          (ak.FRACTIONAL_PREMIUM_ABOUT = "26362805097623"),
+          (ak.HD_STREAMING_POTION = "27343254089623"),
+          (ak.STEALTH_REMEDIATION_FEATURE_GUIDE = "28084948873623"),
           ((ta || (ta = {})).INVALID_BILLING_ADDRESS =
             "#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"),
-          ((ak = tn || (tn = {}))[(ak.HIDDEN = 1)] = "HIDDEN"),
-          (ak[(ak.PRIVATE = 2)] = "PRIVATE"),
-          (ak[(ak.OVERLAY_DISABLED = 4)] = "OVERLAY_DISABLED"),
-          (ak[(ak.ENTITLED = 8)] = "ENTITLED"),
-          (ak[(ak.PREMIUM = 16)] = "PREMIUM"),
+          ((aV = tn || (tn = {}))[(aV.HIDDEN = 1)] = "HIDDEN"),
+          (aV[(aV.PRIVATE = 2)] = "PRIVATE"),
+          (aV[(aV.OVERLAY_DISABLED = 4)] = "OVERLAY_DISABLED"),
+          (aV[(aV.ENTITLED = 8)] = "ENTITLED"),
+          (aV[(aV.PREMIUM = 16)] = "PREMIUM"),
           ((aF = t_ || (t_ = {})).DONE = "DONE"),
           (aF.PLANNING = "PLANNING"),
           (aF.PREPARING = "PREPARING"),
@@ -12144,11 +12152,11 @@
           (nd.ENDED = "ENDED"),
           (nd.PAUSED = "PAUSED"),
           (nd.FAILED = "FAILED"),
-          ((nf = tV || (tV = {})).USER_REQUESTED = "user_requested"),
+          ((nf = tk || (tk = {})).USER_REQUESTED = "user_requested"),
           (nf.STREAM_FULL = "stream_full"),
           (nf.UNAUTHORIZED = "unauthorized"),
           (nf.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"),
-          ((nO = tk || (tk = {})).SOUND = "SOUND"),
+          ((nO = tV || (tV = {})).SOUND = "SOUND"),
           (nO.VIDEO = "VIDEO"),
           ((nL = tF || (tF = {})).PLAYING = "playing"),
           (nL.PAUSED = "paused"),
@@ -12271,8 +12279,8 @@
           H,
           x,
           K,
-          V,
           k,
+          V,
           F,
           X,
           j,
@@ -12340,11 +12348,11 @@
           (x[(x.VOICE = 2)] = "VOICE"),
           ((K = I || (I = {})).LANDING = "LANDING"),
           (K.NAME = "NAME"),
-          ((V = u || (u = {}))[(V.SAFARI = 0)] = "SAFARI"),
-          (V[(V.IN_APP = 1)] = "IN_APP"),
-          (V[(V.CHROME = 2)] = "CHROME"),
-          ((k = R || (R = {})).SOLVED = "solved"),
-          (k.EXPIRED = "expired"),
+          ((k = u || (u = {}))[(k.SAFARI = 0)] = "SAFARI"),
+          (k[(k.IN_APP = 1)] = "IN_APP"),
+          (k[(k.CHROME = 2)] = "CHROME"),
+          ((V = R || (R = {})).SOLVED = "solved"),
+          (V.EXPIRED = "expired"),
           ((A || (A = {})).MENTIONS = "mentions"),
           ((F = T || (T = {})).OVERVIEW = "OVERVIEW"),
           (F.RESEND_EMAIL = "RESEND_EMAIL"),
@@ -12617,7 +12625,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7dd889fe0d4417687e38311b113abdb6eb8daa7c",
+            release: "discord_web-e9d699965caf274c1b56787d9d5a2cf601a7feb2",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12686,8 +12694,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "350377"), "350377"));
-          o.YA("builtAt", String("1733348915115"));
+            o.YA("buildNumber", ((e = "350381"), "350381"));
+          o.YA("builtAt", String("1733349232119"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -17189,7 +17197,7 @@
             return U;
           },
           RK: function () {
-            return ek;
+            return eV;
           },
           S7: function () {
             return N;
@@ -17282,7 +17290,7 @@
             return eK;
           },
           yX: function () {
-            return eV;
+            return ek;
           },
           yY: function () {
             return eb;
@@ -17332,8 +17340,8 @@
           H,
           x,
           K,
-          V,
           k,
+          V,
           F,
           X,
           j,
@@ -17498,12 +17506,12 @@
           (K[(K.REVERSED = 3)] = "REVERSED"),
           (K[(K.REFUNDED = 4)] = "REFUNDED"),
           (K[(K.CANCELED = 5)] = "CANCELED"),
-          ((V = u || (u = {}))[(V.PREMIUM = 1)] = "PREMIUM"),
-          (V[(V.GUILD = 2)] = "GUILD"),
-          (V[(V.APPLICATION = 3)] = "APPLICATION"),
-          ((k = R || (R = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
-          (k.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
-          (k.VENMO_CANCELED = "VENMO_CANCELED"),
+          ((k = u || (u = {}))[(k.PREMIUM = 1)] = "PREMIUM"),
+          (k[(k.GUILD = 2)] = "GUILD"),
+          (k[(k.APPLICATION = 3)] = "APPLICATION"),
+          ((V = R || (R = {})).PAYPAL_POPUP_CLOSED = "PAYPAL_POPUP_CLOSED"),
+          (V.VENMO_APP_CANCELED = "VENMO_APP_CANCELED"),
+          (V.VENMO_CANCELED = "VENMO_CANCELED"),
           Object.freeze({ CONSTANT: 1, APPLE_STICKER: 2 }),
           ((F = A || (A = {}))[(F.DISCOVERY = 0)] = "DISCOVERY"),
           (F[(F.CHECKOUT = 1)] = "CHECKOUT"),
@@ -17763,7 +17771,7 @@
         let eH = "token",
           ex = "tokens",
           eK = "https://".concat("status.discord.com"),
-          eV = {
+          ek = {
             PRESSKIT: "https://app.box.com/s/5puqm5ijahrrdao7yldi7fr3zah5i1am",
             REBRAND_PRESSKIT:
               "https://www.dropbox.com/scl/fo/2vittfakjukwa3zl4gnxh/AOS0AZlx-zA4TjDyv-M-dgk?rlkey=kn0v1lcqfq1lurj3lk3x1ujhf&dl=0",
@@ -17797,7 +17805,7 @@
             TWITTER_SUPPORT: "https://twitter.com/discord_support",
             QUESTS: "/quests",
           },
-          ek = Object.freeze({
+          eV = Object.freeze({
             TWITTER: Object.freeze({
               default: "https://twitter.com/discord",
               ja: "https://twitter.com/discord_jp",
@@ -29158,15 +29166,15 @@
                 var e = this._rgb;
                 return [e[0] / 255, e[1] / 255, e[2] / 255, e[3]];
               });
-            var V = E.unpack,
-              k = E.unpack,
+            var k = E.unpack,
+              V = E.unpack,
               F = Math.floor,
               X = E.unpack,
               j = E.type,
               $ = function () {
                 for (var e, t = [], r = arguments.length; r--; )
                   t[r] = arguments[r];
-                var a = V(t, "rgb"),
+                var a = k(t, "rgb"),
                   n = a[0],
                   _ = a[1],
                   o = a[2],
@@ -29201,7 +29209,7 @@
 
                 )
                   c[s] = arguments[s];
-                var l = (c = k(c, "hcg"))[0],
+                var l = (c = V(c, "hcg"))[0],
                   I = c[1],
                   u = c[2];
                 u *= 255;
@@ -29655,8 +29663,8 @@
             var eH = E.unpack,
               ex = E.RAD2DEG,
               eK = Math.sqrt,
-              eV = Math.atan2,
-              ek = Math.round,
+              ek = Math.atan2,
+              eV = Math.round,
               eF = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -29665,8 +29673,8 @@
                   n = r[1],
                   _ = r[2],
                   o = eK(n * n + _ * _),
-                  E = (eV(_, n) * ex + 360) % 360;
-                return 0 === ek(1e4 * o) && (E = Number.NaN), [a, o, E];
+                  E = (ek(_, n) * ex + 360) % 360;
+                return 0 === eV(1e4 * o) && (E = Number.NaN), [a, o, E];
               },
               eX = E.unpack,
               ej = E.unpack,
@@ -30460,8 +30468,8 @@
               tH = Math.pow,
               tx = Math.sqrt,
               tK = Math.PI,
-              tV = Math.cos,
-              tk = Math.sin,
+              tk = Math.cos,
+              tV = Math.sin,
               tF = Math.atan2,
               tX = function (e, t) {
                 for (
@@ -31491,7 +31499,7 @@
                     "h" === t.charAt(s) && !isNaN(o[s]))
                   ) {
                     var l = (o[s] / 180) * tK;
-                    (i += tV(l) * r[0]), (c += tk(l) * r[0]);
+                    (i += tk(l) * r[0]), (c += tV(l) * r[0]);
                   }
                 var u = _.alpha() * r[0];
                 e.forEach(function (e, a) {
@@ -31501,7 +31509,7 @@
                     if (!isNaN(n[_])) {
                       if (((E[_] += r[a + 1]), "h" === t.charAt(_))) {
                         var s = (n[_] / 180) * tK;
-                        (i += tV(s) * r[a + 1]), (c += tk(s) * r[a + 1]);
+                        (i += tk(s) * r[a + 1]), (c += tV(s) * r[a + 1]);
                       } else o[_] += n[_] * r[a + 1];
                     }
                 });
@@ -43885,8 +43893,8 @@ Error:`,
             tags: H,
             colorScheme: x = "system",
             themeLight: K = {},
-            themeDark: V = {},
-            addScreenshotButtonLabel: k = S,
+            themeDark: k = {},
+            addScreenshotButtonLabel: V = S,
             cancelButtonLabel: F = u,
             confirmButtonLabel: X = A,
             emailLabel: j = d,
@@ -43920,7 +43928,7 @@ Error:`,
                 useSentryUser: Y,
                 tags: H,
                 colorScheme: x,
-                themeDark: V,
+                themeDark: k,
                 themeLight: K,
                 triggerLabel: en,
                 triggerAriaLabel: e_,
@@ -43936,7 +43944,7 @@ Error:`,
                 namePlaceholder: ee,
                 successMessageText: ea,
                 isRequiredLabel: z,
-                addScreenshotButtonLabel: k,
+                addScreenshotButtonLabel: V,
                 removeScreenshotButtonLabel: et,
                 onFormClose: eE,
                 onFormOpen: eo,
@@ -44272,8 +44280,8 @@ ${
           H,
           x,
           K,
-          V,
-          k = {},
+          k,
+          V = {},
           F = [],
           X =
             /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,
@@ -44344,7 +44352,7 @@ ${
             r,
             a = [],
             n = [];
-          for (H.sort(V); (e = H.shift()); )
+          for (H.sort(k); (e = H.shift()); )
             e.__d &&
               ((r = H.length),
               (t =
@@ -44394,7 +44402,7 @@ ${
                 ? (ec(a, t, n),
                   (n.length = a.length = 0),
                   (t = void 0),
-                  H.sort(V))
+                  H.sort(k))
                 : t && W.__c && W.__c(t, F));
           t && ec(a, t, n), (er.__r = 0);
         }
@@ -44512,7 +44520,7 @@ ${
             null != (u = r.__k[l]) &&
               "boolean" != typeof u &&
               "function" != typeof u &&
-              ((I = -1 === u.__i ? k : T[u.__i] || k),
+              ((I = -1 === u.__i ? V : T[u.__i] || V),
               (u.__i = l),
               ei(e, u, I, n, _, o, E, i, c, s),
               (R = u.__e),
@@ -44804,7 +44812,7 @@ ${
                   else {
                     if (
                       ((_ = _ && B.call(e.childNodes)),
-                      (T = r.props || k),
+                      (T = r.props || V),
                       !E && null != _)
                     )
                       for (T = {}, c = 0; c < e.attributes.length; c++)
@@ -44956,7 +44964,7 @@ ${
             "function" == typeof Promise
               ? Promise.prototype.then.bind(Promise.resolve())
               : setTimeout),
-          (V = function (e, t) {
+          (k = function (e, t) {
             return e.__v.__b - t.__v.__b;
           }),
           (er.__r = 0);
@@ -45296,11 +45304,11 @@ ${
         }
         let eK =
           "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/Form.tsx";
-        function eV(e, t) {
+        function ek(e, t) {
           let r = e.get(t);
           return "string" == typeof r ? r.trim() : "";
         }
-        function ek({
+        function eV({
           options: e,
           defaultEmail: t,
           defaultName: r,
@@ -45378,9 +45386,9 @@ ${
                     let t = new FormData(e.target),
                       r = await (s && P ? s.value() : void 0),
                       a = {
-                        name: eV(t, "name"),
-                        email: eV(t, "email"),
-                        message: eV(t, "message"),
+                        name: ek(t, "name"),
+                        email: ek(t, "email"),
+                        message: ek(t, "message"),
                         attachments: r ? [r] : void 0,
                       };
                     if (!b(a)) return;
@@ -45747,7 +45755,7 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      z(ek, {
+                      z(eV, {
                         ...r,
                         onSubmitSuccess: i,
                         __self: this,
@@ -46127,8 +46135,8 @@ ${eQ}
                     ei(
                       n,
                       (a = ((!c && i) || n).__k = z(Q, null, [a])),
-                      s || k,
-                      k,
+                      s || V,
+                      V,
                       void 0 !== n.ownerSVGElement,
                       !c && i
                         ? [i]
@@ -47569,8 +47577,8 @@ ${eQ}
           H = r(501684),
           x = r(157079),
           K = r(469359),
-          V = r(393523);
-        let k = P.n,
+          k = r(393523);
+        let V = P.n,
           F = "sentryReplaySession",
           X = "Unable to send Replay";
         function j(e, t) {
@@ -48845,10 +48853,10 @@ ${eQ}
         }
         !/[1-9][0-9]{12}/.test(Date.now().toString()) &&
           (eB = () => new Date().getTime());
-        function eV(e, t) {
+        function ek(e, t) {
           return -2 === t.getId(e);
         }
-        function ek(e) {
+        function eV(e) {
           return !!e.changedTouches;
         }
         function eF(e, t) {
@@ -49253,7 +49261,7 @@ ${eQ}
                     this.mutationCb(o);
               }),
               (this.processMutation = (e) => {
-                if (!eV(e.target, this.mirror))
+                if (!ek(e.target, this.mirror))
                   switch (e.type) {
                     case "characterData": {
                       let t = e.target.textContent;
@@ -49407,7 +49415,7 @@ ${eQ}
                                 this.blockSelector,
                                 this.unblockSelector,
                                 !1,
-                              ) || eV(t, this.mirror)
+                              ) || ek(t, this.mirror)
                             ) &&
                             ((r = t), -1 !== this.mirror.getId(r))
                           )
@@ -49442,7 +49450,7 @@ ${eQ}
                 if (!this.processedNodeManager.inOtherBuffer(e, this)) {
                   if (!(this.addedSet.has(e) || this.movedSet.has(e))) {
                     if (this.mirror.hasNode(e)) {
-                      if (eV(e, this.mirror)) return;
+                      if (ek(e, this.mirror)) return;
                       this.movedSet.add(e);
                       let r = null;
                       t && this.mirror.hasNode(t) && (r = this.mirror.getId(t)),
@@ -49774,7 +49782,7 @@ ${eQ}
                   ev(
                     tt((e) => {
                       let t = tn(e),
-                        { clientX: r, clientY: _ } = ek(e)
+                        { clientX: r, clientY: _ } = eV(e)
                           ? e.changedTouches[0]
                           : e;
                       !n && (n = eB()),
@@ -49843,14 +49851,14 @@ ${eQ}
                         ? (s = "TouchStart")
                         : e2[t] === e2.MouseUp && (s = "TouchEnd")
                       : e3.Pen;
-                  } else ek(o) && (i = e3.Touch);
+                  } else eV(o) && (i = e3.Touch);
                   null !== i
                     ? ((c = i),
                       ((s.startsWith("Touch") && i === e3.Touch) ||
                         (s.startsWith("Mouse") && i === e3.Mouse)) &&
                         (i = null))
                     : e2[t] === e2.Click && ((i = c), (c = null));
-                  let l = ek(o) ? o.changedTouches[0] : o;
+                  let l = eV(o) ? o.changedTouches[0] : o;
                   if (!l) return;
                   let I = r.getId(E),
                     { clientX: u, clientY: R } = l;
@@ -50975,18 +50983,18 @@ ${eQ}
             ignoreCSSAttributes: H = new Set([]),
             errorHandler: x,
             onMutation: K,
-            getCanvasManager: V,
+            getCanvasManager: k,
           } = e;
           _ = x;
-          let k = !y || window.parent === window,
+          let V = !y || window.parent === window,
             F = !1;
-          if (!k)
+          if (!V)
             try {
               window.parent.document && (F = !1);
             } catch (e) {
               F = !0;
             }
-          if (k && !r) throw Error("emit function is required");
+          if (V && !r) throw Error("emit function is required");
           void 0 !== M && void 0 === g.mousemove && (g.mousemove = M),
             tD.reset();
           let X =
@@ -51068,7 +51076,7 @@ ${eQ}
                   e.data.source === e1.Mutation
                 ) &&
                 ta.forEach((e) => e.unfreeze()),
-              k)
+              V)
             )
               (0, d.x)([r, "optionalCall", (t) => t(q(e), _)]);
             else if (F) {
@@ -51141,7 +51149,7 @@ ${eQ}
                   console.warn("Unable to initialize CanvasManager"), new tL()
                 );
               }
-            })(V, {
+            })(k, {
               mirror: tD,
               win: window,
               mutationCb: (e) =>
@@ -51569,13 +51577,13 @@ ${eQ}
               !i &&
                 ((i = []),
                 (function () {
-                  (0, U.hl)(k, "open", function (e) {
+                  (0, U.hl)(V, "open", function (e) {
                     return function (...t) {
                       if (i)
                         try {
                           i.forEach((e) => e());
                         } catch (e) {}
-                      return e.apply(k, t);
+                      return e.apply(V, t);
                     };
                   });
                 })()),
@@ -51697,7 +51705,7 @@ ${eQ}
                   category: "ui.slowClickDetected",
                   data: {
                     ..._.data,
-                    url: k.location.href,
+                    url: V.location.href,
                     route: t.getCurrentRoute(),
                     timeAfterClickMs: r,
                     endReason: a,
@@ -51715,7 +51723,7 @@ ${eQ}
                 category: "ui.multiClick",
                 data: {
                   ..._.data,
-                  url: k.location.href,
+                  url: V.location.href,
                   route: t.getCurrentRoute(),
                   clickCount: n,
                   metric: !0,
@@ -51917,9 +51925,9 @@ ${eQ}
           return t ? t(e) : null;
         }
         function tK(e) {
-          return ((G.Z1 || k.performance.timeOrigin) + e) / 1e3;
+          return ((G.Z1 || V.performance.timeOrigin) + e) / 1e3;
         }
-        function tV(e) {
+        function tk(e) {
           let t = e.entries[e.entries.length - 1];
           return tj(
             e,
@@ -51927,7 +51935,7 @@ ${eQ}
             t && t.element ? [t.element] : void 0,
           );
         }
-        function tk(e) {
+        function tV(e) {
           let t = e.entries[e.entries.length - 1],
             r = [];
           if (t && t.sources) for (let e of t.sources) e.node && r.push(e.node);
@@ -52200,7 +52208,7 @@ ${eQ}
         }
         function t3() {
           try {
-            return "sessionStorage" in k && !!k.sessionStorage;
+            return "sessionStorage" in V && !!V.sessionStorage;
           } catch (e) {
             return !1;
           }
@@ -52227,7 +52235,7 @@ ${eQ}
         function t5(e) {
           if (!!t3())
             try {
-              k.sessionStorage.setItem(F, JSON.stringify(e));
+              V.sessionStorage.setItem(F, JSON.stringify(e));
             } catch (e) {}
         }
         function t8(
@@ -52277,7 +52285,7 @@ ${eQ}
             (function (e) {
               if (!t3()) return null;
               try {
-                let t = k.sessionStorage.getItem(F);
+                let t = V.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
                 return tz("[Replay] Loading existing session", e), t4(r);
@@ -52503,11 +52511,11 @@ ${eQ}
           return new URLSearchParams(e).toString();
         }
         function rO(e, t) {
-          let r = (function (e, t = k.document.baseURI) {
+          let r = (function (e, t = V.document.baseURI) {
             if (
               e.startsWith("http://") ||
               e.startsWith("https://") ||
-              e.startsWith(k.location.origin)
+              e.startsWith(V.location.origin)
             )
               return e;
             let r = new URL(e, t);
@@ -52810,7 +52818,7 @@ ${eQ}
                       },
                     },
                   };
-                })(k.performance.memory),
+                })(V.performance.memory),
               ]),
             );
           } catch (e) {
@@ -53339,7 +53347,7 @@ ${eQ}
                   (function () {
                     if (!!t3())
                       try {
-                        k.sessionStorage.removeItem(F);
+                        V.sessionStorage.removeItem(F);
                       } catch (e) {}
                   })(),
                   (r.session = void 0);
@@ -53429,8 +53437,8 @@ ${eQ}
             return !!this._checkSession() || !1;
           }
           setInitialState() {
-            let e = `${k.location.pathname}${k.location.hash}${k.location.search}`,
-              t = `${k.location.origin}${e}`;
+            let e = `${V.location.pathname}${V.location.hash}${V.location.search}`,
+              t = `${V.location.origin}${e}`;
             (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
               this._clearContext(),
@@ -53541,20 +53549,20 @@ ${eQ}
           }
           _addListeners() {
             try {
-              k.document.addEventListener(
+              V.document.addEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                k.addEventListener("blur", this._handleWindowBlur),
-                k.addEventListener("focus", this._handleWindowFocus),
-                k.addEventListener("keydown", this._handleKeyboardEvent),
+                V.addEventListener("blur", this._handleWindowBlur),
+                V.addEventListener("focus", this._handleWindowFocus),
+                V.addEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.addListeners(),
                 !this._hasInitializedCoreListeners &&
                   (!(function (e) {
                     var t, r, a, n;
                     let _ = (0, O.s3)();
                     (0, K.O)(tB(e)),
-                      (0, V.a)(
+                      (0, k.a)(
                         ((t = e),
                         (e) => {
                           if (!t.isEnabled()) return;
@@ -53923,8 +53931,8 @@ ${eQ}
                   a.push((0, H._j)(e, r));
                 }),
                 a.push(
-                  (0, H.$A)(tH(tV, e)),
-                  (0, H.PR)(tH(tk, e)),
+                  (0, H.$A)(tH(tk, e)),
+                  (0, H.PR)(tH(tV, e)),
                   (0, H.to)(tH(tF, e)),
                   (0, H.YF)(tH(tX, e)),
                 ),
@@ -53936,13 +53944,13 @@ ${eQ}
           }
           _removeListeners() {
             try {
-              k.document.removeEventListener(
+              V.document.removeEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                k.removeEventListener("blur", this._handleWindowBlur),
-                k.removeEventListener("focus", this._handleWindowFocus),
-                k.removeEventListener("keydown", this._handleKeyboardEvent),
+                V.removeEventListener("blur", this._handleWindowBlur),
+                V.removeEventListener("focus", this._handleWindowFocus),
+                V.removeEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.removeListeners(),
                 this._performanceCleanupCallback &&
                   this._performanceCleanupCallback();
@@ -53952,7 +53960,7 @@ ${eQ}
           }
           __init() {
             this._handleVisibilityChange = () => {
-              "visible" === k.document.visibilityState
+              "visible" === V.document.visibilityState
                 ? this._doChangeToForegroundTasks()
                 : this._doChangeToBackgroundTasks();
             };
@@ -54217,8 +54225,8 @@ ${eQ}
             'img,image,svg,video,object,picture,embed,map,audio,link[rel="icon"],link[rel="apple-touch-icon"]',
           rH = ["content-length", "content-type", "accept"],
           rx = !1,
-          rK = (e) => new rV(e);
-        class rV {
+          rK = (e) => new rk(e);
+        class rk {
           static __initStatic() {
             this.id = "Replay";
           }
@@ -54253,7 +54261,7 @@ ${eQ}
             beforeAddRecordingEvent: P,
             beforeErrorSampling: g,
           } = {}) {
-            this.name = rV.id;
+            this.name = rk.id;
             let U = (function ({
               mask: e,
               unmask: t,
@@ -54342,8 +54350,8 @@ ${eQ}
                 networkDetailAllowUrls: A,
                 networkDetailDenyUrls: T,
                 networkCaptureBodies: N,
-                networkRequestHeaders: rk(d),
-                networkResponseHeaders: rk(f),
+                networkRequestHeaders: rV(d),
+                networkResponseHeaders: rV(f),
                 beforeAddRecordingEvent: P,
                 beforeErrorSampling: g,
                 _experiments: E,
@@ -54435,8 +54443,8 @@ ${eQ}
             } catch (e) {}
           }
         }
-        rV.__initStatic();
-        function rk(e) {
+        rk.__initStatic();
+        function rV(e) {
           return [...rH, ...e.map((e) => e.toLowerCase())];
         }
         function rF() {
@@ -54495,4 +54503,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.07f2c158fbd5e5a10d15.js.map
+//# sourceMappingURL=sentry.674b943a6e3ca65d8dbc.js.map
