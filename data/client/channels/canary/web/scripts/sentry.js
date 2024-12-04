@@ -7681,7 +7681,7 @@
             GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU: (e, t) =>
               "/discovery/applications/"
                 .concat(e, "/")
-                .concat(nF.Wc.STORE, "/")
+                .concat(nF.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(t),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
             GUILD_MEMBER_VERIFICATION: (e, t) =>
@@ -12617,7 +12617,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-fe47fa9bc075319707e10d222704feeeeb3704ac",
+            release: "discord_web-9f194746497a1e42c88fddd3dc717a57f049d22c",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12686,8 +12686,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "350191"), "350191"));
-          o.YA("builtAt", String("1733331010074"));
+            o.YA("buildNumber", ((e = "350198"), "350198"));
+          o.YA("builtAt", String("1733331507661"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -12696,13 +12696,29 @@
       979007: function (e, t, r) {
         "use strict";
         var a, n;
-        r.d(t, {
-          Wc: function () {
-            return a;
-          },
-        }),
-          ((n = a || (a = {})).ABOUT = "about"),
-          (n.STORE = "store");
+        r.r(t),
+          r.d(t, {
+            EMPTY_QUERY: function () {
+              return o;
+            },
+            GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID: function () {
+              return _;
+            },
+            GlobalDiscoveryAppsSections: function () {
+              return a;
+            },
+            MAX_PAGES: function () {
+              return E;
+            },
+            PAGE_SIZE: function () {
+              return i;
+            },
+          });
+        let _ = "featured",
+          o = "",
+          E = 100,
+          i = 48;
+        ((n = a || (a = {})).ABOUT = "about"), (n.STORE = "store");
       },
       526761: function (e, t, r) {
         "use strict";
@@ -54479,4 +54495,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.b12df353385b89602d16.js.map
+//# sourceMappingURL=sentry.6dfe283a9dca6f3f91d0.js.map
