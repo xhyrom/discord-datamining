@@ -22080,6 +22080,12 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .enable-forced-colors .navButtonActive_af5dbb {
   border-color: Highlight;
 }
+.soundmojiLabelContainer_af5dbb {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-4);
+  align-items: center;
+}
 .container_ccd3df {
   bottom: 100%;
   margin-bottom: 12px;
@@ -55753,4 +55759,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9dbcdf5460a9efddf5cd.css.map*/
+/*# sourceMappingURL=12633.99f6db259de2ba10f952.css.map*/
