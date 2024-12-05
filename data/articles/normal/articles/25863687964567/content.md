@@ -1,5 +1,5 @@
 <p>
-  Starting from <strong>December 4, 2024 (10:00AM PST)</strong> to
+  Starting from <strong>December 5, 2024 (11:00AM PST)</strong> to
   <strong>December 25, 2024 (11:59PM PST)</strong>, WEBTOON members can claim 1
   month of Discord Nitro. Learn below about how you can claim<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
@@ -426,7 +426,7 @@
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
   <strong>A:</strong> WEBTOON users can claim Discord Nitro promo between
-  <strong>December 4, 2024 (10:00AM PST)</strong> to
+  <strong>December 5, 2024 (11:00AM PST)</strong> to
   <strong>December 25, 2024 (11:59PM PST).</strong>
 </p>
 <p>
