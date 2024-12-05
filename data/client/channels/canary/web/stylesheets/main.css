@@ -23693,6 +23693,123 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   margin-left: 8px;
   margin-right: 8px;
 }
+.upsellTooltipWrapper_dafa63 {
+  box-sizing: border-box;
+  max-width: 280px;
+  padding: 16px;
+  background-color: var(--brand-500);
+  border-radius: 8px;
+  box-shadow: var(--elevation-medium);
+}
+.upsellTooltipWrapper_dafa63:after {
+  content: " ";
+  position: absolute;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+}
+.upsellTooltipWrapper_dafa63.caretTopCenter_dafa63:after {
+  left: 50%;
+  bottom: 100%;
+  border-bottom-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretTopRight_dafa63:after {
+  left: calc(100% - 16px);
+  bottom: 100%;
+  border-bottom-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretTopLeft_dafa63:after {
+  left: 16px;
+  bottom: 100%;
+  border-bottom-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretBottomCenter_dafa63:after {
+  left: 50%;
+  top: 100%;
+  border-top-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretBottomLeft_dafa63:after {
+  left: 16px;
+  top: 100%;
+  border-top-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretBottomRight_dafa63:after {
+  right: 16px;
+  top: 100%;
+  border-top-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretLeftCenter_dafa63:after {
+  right: 100%;
+  top: calc(50% - 8px);
+  border-right-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretLeftTop_dafa63:after {
+  right: 100%;
+  top: 8px;
+  border-right-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretRightCenter_dafa63:after {
+  right: -16px;
+  top: calc(50% - 8px);
+  border-left-color: var(--brand-500);
+}
+.upsellTooltipWrapper_dafa63.caretRightTop_dafa63:after {
+  right: -16px;
+  top: 8px;
+  border-left-color: var(--brand-500);
+}
+.upsellTooltipHeader_dafa63,
+.upsellTooltipText_dafa63 {
+  color: var(--white-500);
+  text-align: center;
+}
+.upsellTooltipHeader_dafa63 {
+  font-family: var(--font-display);
+  margin-bottom: 4px;
+}
+.upsellButtonsContainer_dafa63 {
+  display: flex;
+  justify-content: center;
+  margin: 16px auto 0;
+}
+.upsellButtonsAdjacent_dafa63 :nth-child(2) {
+  margin-left: 8px;
+}
+.upsellButtonsStacked_dafa63 {
+  width: 100%;
+  flex-direction: column-reverse;
+}
+.upsellButtonsStacked_dafa63 :nth-child(2) {
+  margin-bottom: 8px;
+}
+.fullWidthImage_dafa63 {
+  height: auto;
+  width: 100%;
+  margin: 0 auto 16px;
+  display: block;
+}
+.content_dafa63 {
+  --text-link: white;
+  --link-decoration: underline;
+  text-align: center;
+}
+.asset_c198fb {
+  width: 150px;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.headerContainer_c198fb {
+  position: relative;
+  padding-bottom: var(--spacing-12);
+}
+.close_c198fb {
+  justify-self: end;
+  padding: 0;
+}
 .emojiButton_d91a75 {
   max-height: 50px;
   cursor: pointer;
@@ -24846,102 +24963,6 @@ div.popoutCloseButton_d523a2:hover {
 }
 .container_b84fc9.customProfileTheme_b84fc9.biteSize_b84fc9.avatar_b84fc9 {
   margin-left: -28px;
-}
-.upsellTooltipWrapper_dafa63 {
-  box-sizing: border-box;
-  max-width: 280px;
-  padding: 16px;
-  background-color: var(--brand-500);
-  border-radius: 8px;
-  box-shadow: var(--elevation-medium);
-}
-.upsellTooltipWrapper_dafa63:after {
-  content: " ";
-  position: absolute;
-  margin-left: -8px;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent;
-}
-.upsellTooltipWrapper_dafa63.caretTopCenter_dafa63:after {
-  left: 50%;
-  bottom: 100%;
-  border-bottom-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretTopRight_dafa63:after {
-  left: calc(100% - 16px);
-  bottom: 100%;
-  border-bottom-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretTopLeft_dafa63:after {
-  left: 16px;
-  bottom: 100%;
-  border-bottom-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretBottomCenter_dafa63:after {
-  left: 50%;
-  top: 100%;
-  border-top-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretBottomLeft_dafa63:after {
-  left: 16px;
-  top: 100%;
-  border-top-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretLeftCenter_dafa63:after {
-  right: 100%;
-  top: calc(50% - 8px);
-  border-right-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretLeftTop_dafa63:after {
-  right: 100%;
-  top: 8px;
-  border-right-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretRightCenter_dafa63:after {
-  right: -16px;
-  top: calc(50% - 8px);
-  border-left-color: var(--brand-500);
-}
-.upsellTooltipWrapper_dafa63.caretRightTop_dafa63:after {
-  right: -16px;
-  top: 8px;
-  border-left-color: var(--brand-500);
-}
-.upsellTooltipHeader_dafa63,
-.upsellTooltipText_dafa63 {
-  color: var(--white-500);
-  text-align: center;
-}
-.upsellTooltipHeader_dafa63 {
-  font-family: var(--font-display);
-  margin-bottom: 4px;
-}
-.upsellButtonsContainer_dafa63 {
-  display: flex;
-  justify-content: center;
-  margin: 16px auto 0;
-}
-.upsellButtonsAdjacent_dafa63 :nth-child(2) {
-  margin-left: 8px;
-}
-.upsellButtonsStacked_dafa63 {
-  width: 100%;
-  flex-direction: column-reverse;
-}
-.upsellButtonsStacked_dafa63 :nth-child(2) {
-  margin-bottom: 8px;
-}
-.fullWidthImage_dafa63 {
-  height: auto;
-  width: 100%;
-  margin: 0 auto 16px;
-  display: block;
-}
-.content_dafa63 {
-  --text-link: white;
-  --link-decoration: underline;
-  text-align: center;
 }
 .activityCoachmark_a3e4b5 {
   width: 210px;
@@ -41720,11 +41741,17 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-blue-for-gradient: var(
     --premium-tier-0-blue-for-gradients-2
   );
+  --redesign-button-premium-primary-pink-for-gradient: var(
+    --premium-tier-2-pink-for-gradients
+  );
   --redesign-button-premium-primary-pressed-background: hsl(
     var(--black-hsl) / 0.1
   );
   --redesign-button-premium-primary-purple-for-gradient: var(
-    --premium-tier-0-purple-for-gradients
+    --premium-tier-2-purple-for-gradients
+  );
+  --redesign-button-premium-primary-purple-for-gradient-2: var(
+    --premium-tier-2-purple-for-gradients-2
   );
   --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--brand-360);
@@ -42770,6 +42797,11 @@ html.disable-forced-colors * {
       var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --redesign-button-premium-primary-pink-for-gradient: color-mix(
+      in oklab,
+      var(--premium-tier-2-pink-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --redesign-button-premium-primary-pressed-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.1) 100%,
@@ -42778,7 +42810,12 @@ html.disable-forced-colors * {
     );
     --redesign-button-premium-primary-purple-for-gradient: color-mix(
       in oklab,
-      var(--premium-tier-0-purple-for-gradients) 100%,
+      var(--premium-tier-2-purple-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --redesign-button-premium-primary-purple-for-gradient-2: color-mix(
+      in oklab,
+      var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-primary-alt-background: color-mix(
@@ -43403,11 +43440,17 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-blue-for-gradient: var(
     --premium-tier-0-blue-for-gradients-2
   );
+  --redesign-button-premium-primary-pink-for-gradient: var(
+    --premium-tier-2-pink-for-gradients
+  );
   --redesign-button-premium-primary-pressed-background: hsl(
     var(--black-hsl) / 0.1
   );
   --redesign-button-premium-primary-purple-for-gradient: var(
-    --premium-tier-0-purple-for-gradients
+    --premium-tier-2-purple-for-gradients
+  );
+  --redesign-button-premium-primary-purple-for-gradient-2: var(
+    --premium-tier-2-purple-for-gradients-2
   );
   --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--brand-500);
@@ -44453,6 +44496,11 @@ html.disable-forced-colors * {
       var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --redesign-button-premium-primary-pink-for-gradient: color-mix(
+      in oklab,
+      var(--premium-tier-2-pink-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --redesign-button-premium-primary-pressed-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.1) 100%,
@@ -44461,7 +44509,12 @@ html.disable-forced-colors * {
     );
     --redesign-button-premium-primary-purple-for-gradient: color-mix(
       in oklab,
-      var(--premium-tier-0-purple-for-gradients) 100%,
+      var(--premium-tier-2-purple-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --redesign-button-premium-primary-purple-for-gradient-2: color-mix(
+      in oklab,
+      var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-primary-alt-background: color-mix(
@@ -45089,11 +45142,17 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-blue-for-gradient: var(
     --premium-tier-0-blue-for-gradients-2
   );
+  --redesign-button-premium-primary-pink-for-gradient: var(
+    --premium-tier-2-pink-for-gradients
+  );
   --redesign-button-premium-primary-pressed-background: hsl(
     var(--black-hsl) / 0.1
   );
   --redesign-button-premium-primary-purple-for-gradient: var(
-    --premium-tier-0-purple-for-gradients
+    --premium-tier-2-purple-for-gradients
+  );
+  --redesign-button-premium-primary-purple-for-gradient-2: var(
+    --premium-tier-2-purple-for-gradients-2
   );
   --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--brand-400);
@@ -46139,6 +46198,11 @@ html.disable-forced-colors * {
       var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --redesign-button-premium-primary-pink-for-gradient: color-mix(
+      in oklab,
+      var(--premium-tier-2-pink-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --redesign-button-premium-primary-pressed-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.1) 100%,
@@ -46147,7 +46211,12 @@ html.disable-forced-colors * {
     );
     --redesign-button-premium-primary-purple-for-gradient: color-mix(
       in oklab,
-      var(--premium-tier-0-purple-for-gradients) 100%,
+      var(--premium-tier-2-purple-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --redesign-button-premium-primary-purple-for-gradient-2: color-mix(
+      in oklab,
+      var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-primary-alt-background: color-mix(
@@ -46776,11 +46845,17 @@ html.disable-forced-colors * {
   --redesign-button-premium-primary-blue-for-gradient: var(
     --premium-tier-0-blue-for-gradients-2
   );
+  --redesign-button-premium-primary-pink-for-gradient: var(
+    --premium-tier-2-pink-for-gradients
+  );
   --redesign-button-premium-primary-pressed-background: hsl(
     var(--black-hsl) / 0.1
   );
   --redesign-button-premium-primary-purple-for-gradient: var(
-    --premium-tier-0-purple-for-gradients
+    --premium-tier-2-purple-for-gradients
+  );
+  --redesign-button-premium-primary-purple-for-gradient-2: var(
+    --premium-tier-2-purple-for-gradients-2
   );
   --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
   --redesign-button-primary-alt-border: var(--brand-360);
@@ -47826,6 +47901,11 @@ html.disable-forced-colors * {
       var(--premium-tier-0-blue-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --redesign-button-premium-primary-pink-for-gradient: color-mix(
+      in oklab,
+      var(--premium-tier-2-pink-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --redesign-button-premium-primary-pressed-background: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.1) 100%,
@@ -47834,7 +47914,12 @@ html.disable-forced-colors * {
     );
     --redesign-button-premium-primary-purple-for-gradient: color-mix(
       in oklab,
-      var(--premium-tier-0-purple-for-gradients) 100%,
+      var(--premium-tier-2-purple-for-gradients) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --redesign-button-premium-primary-purple-for-gradient-2: color-mix(
+      in oklab,
+      var(--premium-tier-2-purple-for-gradients-2) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --redesign-button-primary-alt-background: color-mix(
@@ -55780,4 +55865,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.7be9d27311a6f25642b7.css.map*/
+/*# sourceMappingURL=12633.f6bf34dcd3c96cdc7681.css.map*/
