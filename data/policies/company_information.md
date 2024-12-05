@@ -460,13 +460,7 @@
           <a href="#" class="link-grey-16px end hiden">Author Credits</a>
         </div>
       </nav>
-      <div class="nav_button-wrap is_new-nenu-btn">
-        <a
-          href="https://discord.com/app"
-          class="menu-button-login login-button-js"
-          >Login</a
-        >
-      </div>
+      <div class="nav_button-wrap is_new-nenu-btn"></div>
       <div class="nav_button-wrap">
         <a
           href="https://discord.com/app"
