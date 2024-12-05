@@ -7463,6 +7463,8 @@
             SAFETY_HUB_SUSPENDED: "/safety-hub/suspended/@me",
             SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION:
               "/safety-hub/suspended/request-verification",
+            SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION:
+              "/safety-hub/suspended/check-verification",
             INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
             FORCE_SEND_PROMPT: (e) => "/".concat(e, "/force-send-prompt"),
             EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE:
@@ -12626,7 +12628,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7626f6d43cee774ff88a3d63437074bb1e5fdcbf",
+            release: "discord_web-27cdb6416b1f0cdeb19f76b90f1dc0a31148fedd",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12695,8 +12697,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "350900"), "350900"));
-          o.YA("builtAt", String("1733433497318"));
+            o.YA("buildNumber", ((e = "350905"), "350905"));
+          o.YA("builtAt", String("1733434020235"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -14826,6 +14828,25 @@
                 opacity: 1,
               },
             },
+            REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT: {
+              category: "generic",
+              [a.DARK]: {
+                raw: "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                opacity: 1,
+              },
+              [a.LIGHT]: {
+                raw: "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                opacity: 1,
+              },
+              [a.MIDNIGHT]: {
+                raw: "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                opacity: 1,
+              },
+              [a.DARKER]: {
+                raw: "PREMIUM_TIER_2_PINK_FOR_GRADIENTS",
+                opacity: 1,
+              },
+            },
             REDESIGN_BUTTON_PREMIUM_PRIMARY_PRESSED_BACKGROUND: {
               category: "generic",
               [a.DARK]: { raw: "BLACK", opacity: 0.1 },
@@ -14836,19 +14857,38 @@
             REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT: {
               category: "generic",
               [a.DARK]: {
-                raw: "PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS",
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
                 opacity: 1,
               },
               [a.LIGHT]: {
-                raw: "PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS",
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
                 opacity: 1,
               },
               [a.MIDNIGHT]: {
-                raw: "PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS",
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
                 opacity: 1,
               },
               [a.DARKER]: {
-                raw: "PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS",
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS",
+                opacity: 1,
+              },
+            },
+            REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2: {
+              category: "generic",
+              [a.DARK]: {
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                opacity: 1,
+              },
+              [a.LIGHT]: {
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                opacity: 1,
+              },
+              [a.MIDNIGHT]: {
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
+                opacity: 1,
+              },
+              [a.DARKER]: {
+                raw: "PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2",
                 opacity: 1,
               },
             },
@@ -23131,10 +23171,14 @@
           (a.REDESIGN_BUTTON_POSITIVE_TEXT = "redesign-button-positive-text"),
           (a.REDESIGN_BUTTON_PREMIUM_PRIMARY_BLUE_FOR_GRADIENT =
             "redesign-button-premium-primary-blue-for-gradient"),
+          (a.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT =
+            "redesign-button-premium-primary-pink-for-gradient"),
           (a.REDESIGN_BUTTON_PREMIUM_PRIMARY_PRESSED_BACKGROUND =
             "redesign-button-premium-primary-pressed-background"),
           (a.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT =
             "redesign-button-premium-primary-purple-for-gradient"),
+          (a.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2 =
+            "redesign-button-premium-primary-purple-for-gradient-2"),
           (a.REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND =
             "redesign-button-primary-alt-background"),
           (a.REDESIGN_BUTTON_PRIMARY_ALT_BORDER =
@@ -24672,6 +24716,12 @@
               _.I.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2,
               _.I.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS_2,
             ],
+            "redesign-button-premium-primary-pink-for-gradient": [
+              _.I.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+            ],
             "redesign-button-premium-primary-pressed-background": [
               _.I.BLACK,
               _.I.BLACK,
@@ -24679,10 +24729,16 @@
               _.I.BLACK,
             ],
             "redesign-button-premium-primary-purple-for-gradient": [
-              _.I.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
-              _.I.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
-              _.I.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
-              _.I.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+            ],
+            "redesign-button-premium-primary-purple-for-gradient-2": [
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
+              _.I.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
             ],
             "redesign-button-primary-alt-background": [
               _.I.BRAND_500,
@@ -54504,4 +54560,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.fc6c1287b50cc8ad42b5.js.map
+//# sourceMappingURL=sentry.63c7cc0528f832f16ac5.js.map
