@@ -37919,6 +37919,9 @@ html.disable-forced-colors * {
 .visual-refresh .app_bd26cc {
   position: static;
 }
+.visual-refresh .notAppAsidePanel_bd26cc:has(~ .DevTools) .app_bd26cc {
+  position: relative;
+}
 .mobileApp_bd26cc {
   z-index: auto;
   overflow: auto;
@@ -55759,4 +55762,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.99f6db259de2ba10f952.css.map*/
+/*# sourceMappingURL=12633.240c27ca50ae68fc74d3.css.map*/
