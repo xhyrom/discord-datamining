@@ -11539,13 +11539,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Tile size based wants enabled only for 1:1 videos"
+        "Treatment 1: Tile size based wants enabled only for 1:1 videos (rollout)",
+        "Treatment 2: Tile size based wants enabled only for 1:1 videos (new stats slice to compare against control)"
       ],
       "hash": 3172358820,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -12682,13 +12684,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: User Profile Recent Activity Enabled"
+        "Treatment 1: User Profile Recent Activity Enabled",
+        "Treatment 9999: User Profile Recent Activity Load Test Enabled"
       ],
       "hash": 2038753337,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        9999
       ],
       "holdout": {},
       "aa_mode": false,
