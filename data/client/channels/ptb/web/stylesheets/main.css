@@ -25886,13 +25886,27 @@ div.popoutCloseButton_d523a2:hover {
   column-gap: 8px;
   row-gap: 0;
 }
-.clickable_ae1fa2 {
+.clickableContainer_ae1fa2 {
+  cursor: pointer;
+  display: contents;
+}
+.clickableContainer_ae1fa2:hover > .card_ae1fa2 {
+  background: var(--bg-mod-subtle);
+}
+.custom-profile-theme .clickableContainer_ae1fa2:hover > .card_ae1fa2 {
+  background: linear-gradient(
+      rgb(var(--bg-overlay-color-inverse) / 5%),
+      rgb(var(--bg-overlay-color-inverse) / 5%)
+    ),
+    var(--profile-gradient-end);
+}
+.clickableText_ae1fa2 {
   cursor: pointer;
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
 }
-.clickable_ae1fa2:hover {
+.clickableText_ae1fa2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-color: var(--text-normal);
@@ -25919,7 +25933,7 @@ div.popoutCloseButton_d523a2:hover {
   align-items: center;
   gap: 2px;
 }
-.voiceChannelText_ae1fa2 .clickable_ae1fa2 {
+.voiceChannelText_ae1fa2 .clickableText_ae1fa2 {
   overflow: hidden;
 }
 .voiceChannelText_ae1fa2 .voiceIcon_ae1fa2 {
@@ -55762,4 +55776,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.240c27ca50ae68fc74d3.css.map*/
+/*# sourceMappingURL=12633.1c182f82255c6ee8c8ac.css.map*/

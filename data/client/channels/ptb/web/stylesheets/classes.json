@@ -2231,6 +2231,8 @@
   "platformIcon": "platformIcon_be03aa",
   "toolbarContainer": "toolbarContainer_ae1fa2",
   "badges": "badges_ae1fa2",
+  "clickableContainer": "clickableContainer_ae1fa2",
+  "clickableText": "clickableText_ae1fa2",
   "gameState": "gameState_ae1fa2",
   "voiceChannel": "voiceChannel_ae1fa2",
   "voiceChannelText": "voiceChannelText_ae1fa2",
