@@ -12822,6 +12822,10 @@ div.cardContainer_c22357 {
   );
   height: 50px;
 }
+.v2Container_ced1ae {
+  justify-content: left;
+  background: none;
+}
 .iconContainer_ced1ae {
   display: flex;
 }
@@ -55776,4 +55780,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1c182f82255c6ee8c8ac.css.map*/
+/*# sourceMappingURL=12633.7be9d27311a6f25642b7.css.map*/
