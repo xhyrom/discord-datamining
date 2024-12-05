@@ -197,6 +197,13 @@
 <h1 id="h_01JE9276XWDJDGPZE6WY9SW3QG">
   How do I claim the Nitro Promo from my WEBTOON account?
 </h1>
+<div class="tip-box">
+  <strong>Note:</strong> It may take up to a few hours to receive the email. If
+  you haven’t received it within 72 hours, please contact WEBTOON’s
+  <a href="https://webtoon.zendesk.com/hc/en-us">support team</a> or to their
+  support email:
+  <a href="mailto:webtoonsupport@webtoon.com">webtoonsupport@webtoon.com</a>
+</div>
 <p>
   After finding Wumpus twice in the first 10 episodes of
   <strong>School Bus Graveyard</strong>, press on Wumpus the second time to get

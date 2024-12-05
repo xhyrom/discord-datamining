@@ -300,8 +300,8 @@
 </h1>
 <p>
   Once you have claimed the code in the <strong>Gift Inventory</strong>, you'll
-  now need to officially redeem this code on your WEBTOON account (or share this
-  code with a friend).
+  now need to officially redeem this code on your WEBTOON account (or share the
+  link with a friend).
 </p>
 <h2 id="h_01JE914FWMAY9R1W4B6TW48A21">
   Eligibility for Redeeming the WEBTOON Trial
@@ -329,9 +329,11 @@
   able to share this code with a friend to use instead.
 </p>
 <p>
-  To share the code, you can copy the 12-character code from the
+  To share the code, you can copy the provided link from your
   <strong>Gift Inventory</strong> (in your <strong>User Settings</strong> in the
-  Discord app) and then share this code to a friend in a Direct Message.
+  Discord app) which you should receive after tapping on
+  <strong>Redeem</strong>. Then you can share the link to a friend in a Direct
+  Message.
 </p>
 <h1 id="h_01JE914FWMC6XB83V0VESPJRRV">Frequently Asked Questions</h1>
 <p>
