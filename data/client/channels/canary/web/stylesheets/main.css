@@ -12085,29 +12085,35 @@ div.cardContainer_c22357 {
   backdrop-filter: blur(2px);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  min-height: 36px;
+  min-height: 24px;
 }
 .promotionalGiftMessageText_d84998 {
   color: black;
 }
 .promotionalAvatarMaxRewards_d84998 {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 32%;
+  bottom: 20px;
+  right: 6px;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.promotionalAvatar_d84998 {
+.promotionalAvatarTwoRewards_d84998 {
   position: absolute;
-  bottom: 18px;
+  bottom: 32px;
+  right: 18px;
+}
+.promotionalAvatarSingleReward_d84998 {
+  position: absolute;
+  bottom: 14px;
   right: 24px;
 }
 .promotionalTextSection_d84998 {
   display: flex;
   flex-direction: column;
   width: 68%;
+  justify-content: center;
 }
 .rotatingAvatars_d84998 {
   width: 100%;
@@ -12565,13 +12571,8 @@ div.cardContainer_c22357 {
   margin-bottom: 18px;
 }
 .withPromotionalGradientBanner_c87d73 {
-  background-image: url(https://cdn.discordapp.com/assets/content/9d08c9788226acee6a98b75ae74946561591d8c5098d14ea951e7026fcf16764.png),
-    linear-gradient(
-      100.98deg,
-      rgba(133, 71, 198, 0.64) 25.21%,
-      rgba(184, 69, 193, 0.64) 62.43%,
-      rgba(171, 93, 138, 0.64) 95.57%
-    );
+  background-image: url(https://cdn.discordapp.com/assets/content/019091462290c70e602e75fb95228db4d47f309722bbe96f6eb4887f12c51936.png),
+    linear-gradient(100.98deg, #8547c6 25.21%, #b845c1 62.43%, #ab5d8a 95.57%);
   background-size: 90%, cover;
   background-position:
     top right,
@@ -55866,4 +55867,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ab7b7bba9a33067629d6.css.map*/
+/*# sourceMappingURL=12633.12a4f2b47072733a29ad.css.map*/
