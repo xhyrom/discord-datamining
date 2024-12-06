@@ -31508,6 +31508,9 @@ img.thumbnail_c64476 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
+.visual-refresh .notice_be03aa {
+  min-height: 40px;
+}
 .enable-forced-colors .notice_be03aa {
   border-bottom: 2px solid CanvasText;
 }
@@ -55865,4 +55868,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f6bf34dcd3c96cdc7681.css.map*/
+/*# sourceMappingURL=12633.53f01a10f96571df31bb.css.map*/
