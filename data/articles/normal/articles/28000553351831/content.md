@@ -40,8 +40,8 @@
   Claim through Discord <strong>Gift Inventory</strong> from
   <strong>December 5, 2024 (11:00AM PST)</strong> to
   <strong>December 25, 2024 (11:59PM PST)</strong>, and redeem in your WEBTOON
-  account by <strong>January 24, 2025 (11:59PM PST</strong>.<strong
-    ><br /></strong
+  account by <strong>December 31, 2025</strong
+  ><strong> (11:59PM PST)</strong>.<strong><br /></strong
   ><strong>Subscription:</strong>
 </p>
 <p>
@@ -384,13 +384,13 @@
 <p>
   <strong>A: </strong>Once a code is claimed in the
   <strong>Gift Inventory</strong> in Discord, all WEBTOON codes must be redeemed
-  by <strong>January 24, 2025 (11:59PM PST)</strong>.
+  by <strong>December 31, 2025 (11:59PM PST)</strong>.
 </p>
 <p>
   If a code has not been redeemed to the WEBTOON account by
-  <strong>January 24, 2025 (11:59PM PST)</strong>, it will expire and you will
-  no longer be able to claim <strong>1</strong> month of WEBTOON Monthly Coin
-  Premium
+  <strong>December 31, 2025</strong><strong> (11:59PM PST)</strong>, it will
+  expire and you will no longer be able to claim <strong>1</strong> month of
+  WEBTOON Monthly Coin Premium
 </p>
 <h2 id="h_01JE914FWM0Y0ZK8JAVFH22BQP">Eligibility for the Promotion</h2>
 <p>
