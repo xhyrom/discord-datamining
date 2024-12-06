@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2024-12-02T18:47:29Z",
+  "edited_at": "2024-12-06T01:16:51Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [
@@ -34,9 +34,12 @@
   ],
   "label_names": [
     "answer-bot",
+    "gift",
     "faq",
+    "quest",
     "quests",
     "fortnite",
+    "bundle",
     "discord",
     "rewards",
     "in-game",
@@ -44,11 +47,25 @@
     "THE FINALS",
     "genshin impact",
     "honkai: star rail",
+    "minecraft",
     "console",
     "gaming",
     "sims 4",
     "zzz",
     "the sims 4",
-    "zenless zone zero"
+    "zenless zone zero",
+    "redemption",
+    "code",
+    "in-app",
+    "diablo",
+    "iv",
+    "dune",
+    "prophecy",
+    "batman",
+    "shadow",
+    "once",
+    "destiny",
+    "arkham",
+    "human"
   ]
 }
