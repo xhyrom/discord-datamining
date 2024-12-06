@@ -4753,7 +4753,10 @@
   },
   "SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION": {
     "url": "/safety-hub/suspended/check-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "INITIATE_CHANNEL_PROMPTS": {
     "url": "/initiate-prompts",
