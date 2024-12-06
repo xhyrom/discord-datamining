@@ -99,6 +99,19 @@
       >
       <ul>
         <li>
+          <a href="#h_01JECRHSBEADFQ90T1D55Q29J2"
+            ><strong>Minecraft </strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JECRHSBERMYXCKYR3V7KJPK4"><strong>Fortnite </strong></a>
+        </li>
+        <li>
+          <a href="#h_01JECRHSBEVVDH97E1YX44KSN4"
+            ><strong>The First Descendant </strong></a
+          >
+        </li>
+        <li>
           <a href="#h_01JE49VFBMRKKY23WHF49SDRC5"
             ><strong>World of Warcraft </strong></a
           >
@@ -125,6 +138,10 @@
         ></strong
       >
       <ul>
+        <li>
+          <a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF"><strong>Fortnite</strong></a
+          > 
+        </li>
         <li>
           <strong
             ><a href="#01JDJ7KTDT2CYVDY8CSPZ5MGQ3">Dune: Prophecy </a></strong
@@ -568,6 +585,51 @@
   ><span style="color: #666666">   </span>
 </h4>
 <h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
+<h2 id="h_01JECRHSBEADFQ90T1D55Q29J2">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28316964742551"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Minecraft - Minecraft Holiday Quest</a
+  >
+</h2>
+<p>
+  The <strong>Minecraft Holiday Quest</strong> can be accepted on Discord from
+  <strong>December 6, 2024</strong> to
+  <strong>December 20, 2024 (11:59PM UTC)</strong>.  Reward gift codes expire on
+  <strong>January 20, 2025</strong>. Quest requirements must be completed during
+  this period to receive the reward.
+</p>
+<h2 id="h_01JECRHSBERMYXCKYR3V7KJPK4">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28317208037911/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Fortnite -  Fortnite OG Quest</a
+  >
+</h2>
+<p>
+  The <strong>Fortnite Quest</strong> can be accepted on Discord from
+  <strong>December 6, 2024 </strong>until
+  <strong>December 11, 2024 (11:59PM UTC)</strong>.  Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 11, 2025</strong>.
+</p>
+<h2 id="h_01JECRHSBEVVDH97E1YX44KSN4">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28249742461335"
+    target="_blank"
+    rel="noopener noreferrer"
+    >The First Descendant - The First Descendant Quest</a
+  >
+</h2>
+<p>
+  <strong>The First Descendant Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>December 6, 2024 </strong>until
+  <strong>December 13, 2024 (6:00PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>December 31, 2024 (23:59 PT)</strong>.
+</p>
 <h2 id="h_01JE49VFBMRKKY23WHF49SDRC5">
   <a
     href="https://support.discord.com/hc/en-us/articles/28114748484119"
@@ -598,21 +660,6 @@
   requirements during this period and claim your reward by
   <strong>December 31, 2024 (7:59 PM UTC)</strong>.
 </p>
-<h2 id="h_01JDQ9CDY9YG7BT3X2GE7E5WQF">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quests"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Fortnite - Fortnite Quest</a
-  >
-</h2>
-<p>
-  The <strong>Fortnite Quest</strong> can be accepted on Discord from
-  <strong>November 29, 2024</strong> until
-  <strong>December 5, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 5, 2025</strong>.
-</p>
 <h2 id="h_01JDJ4KZEKE5N4VRTSH2W9BH4X">
   <a
     href="https://support.discord.com/hc/en-us/articles/27950035791383-Batman-Arkham-Shadow-Quest"
@@ -629,6 +676,21 @@
   <strong>January 8, 2024</strong>. 
 </p>
 <h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
+<h2 id="h_01JDQ9CDY9YG7BT3X2GE7E5WQF">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quests"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Fortnite - Fortnite Quest</a
+  >
+</h2>
+<p>
+  The <strong>Fortnite Quest</strong> can be accepted on Discord from
+  <strong>November 29, 2024</strong> until
+  <strong>December 5, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 5, 2025</strong>.
+</p>
 <h2 id="01JDJ7KTDT2CYVDY8CSPZ5MGQ3">
   <a
     href="https://support.discord.com/hc/en-us/articles/27606051100183-Dune-Prophecy-Quest"
