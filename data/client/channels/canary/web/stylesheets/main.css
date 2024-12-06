@@ -23803,8 +23803,15 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   padding-bottom: var(--spacing-12);
 }
 .close_c198fb {
-  justify-self: end;
-  padding: 0;
+  margin-left: auto;
+}
+.closeIcon_c198fb {
+  border-radius: var(--radius-round);
+  padding: var(--spacing-4);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.closeIcon_c198fb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .emojiButton_d91a75 {
   max-height: 50px;
@@ -30924,10 +30931,11 @@ img.thumbnail_c64476 {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  border: 1px solid;
+  border: 1px solid var(--input-background);
   cursor: pointer;
   border-radius: 3px;
   height: 40px;
+  transition: border-color.2s ease-in-out;
 }
 .copyInputError_d7e343 {
   border-color: var(--status-danger);
@@ -30973,11 +30981,9 @@ img.thumbnail_c64476 {
   transition: color.15s ease;
   cursor: text;
 }
-.inputError_d7e343 {
-  color: var(--status-danger);
-}
+.inputError_d7e343,
 .inputSuccess_d7e343 {
-  color: var(--text-positive);
+  color: var(--text-normal);
 }
 .hiddenMessage_d7e343 {
   z-index: 0;
@@ -30993,31 +30999,34 @@ img.thumbnail_c64476 {
 .copyInput_d7e343 {
   background-color: var(--input-background);
 }
-.theme-light .copyInputDefault_d7e343 {
-  border-color: hsl(var(--primary-500-hsl) / 0.3);
-}
-.theme-light .inputDefault_d7e343::-moz-placeholder,
-.theme-light .hiddenMessage_d7e343::-moz-placeholder {
-  color: hsl(var(--primary-500-hsl) / 0.3);
-}
-.theme-light .inputDefault_d7e343::placeholder,
-.theme-light .hiddenMessage_d7e343::placeholder {
-  color: hsl(var(--primary-500-hsl) / 0.3);
-}
-.theme-dark .copyInputDefault_d7e343 {
-  border-color: hsl(var(--black-500-hsl) / 0.3);
-}
-.theme-dark .inputDefault_d7e343::-moz-placeholder,
-.theme-dark .hiddenMessage_d7e343::-moz-placeholder {
-  color: hsl(var(--primary-100-hsl) / 0.3);
-}
-.theme-dark .inputDefault_d7e343::placeholder,
-.theme-dark .hiddenMessage_d7e343::placeholder {
-  color: hsl(var(--primary-100-hsl) / 0.3);
-}
 .inputDefault_d7e343,
 .hiddenMessage_d7e343 {
-  color: var(--header-primary);
+  color: var(--text-normal);
+}
+.inputDefault_d7e343::-moz-placeholder,
+.hiddenMessage_d7e343::-moz-placeholder {
+  color: var(--input-placeholder-text);
+}
+.inputDefault_d7e343::placeholder,
+.hiddenMessage_d7e343::placeholder {
+  color: var(--input-placeholder-text);
+}
+.visual-refresh .copyInput_d7e343 {
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+}
+.visual-refresh .button_d7e343 {
+  border-radius: var(--radius-xs);
+}
+.visual-refresh .copyInputSuccess_d7e343 {
+  border-color: var(--text-feedback-positive);
+  color: var(--text-feedback-positive);
+  background-color: var(--background-feedback-positive);
+}
+.visual-refresh .copyInputError_d7e343 {
+  border-color: var(--text-feedback-critical);
+  color: var(--text-feedback-critical);
+  background-color: var(--background-feedback-critical);
 }
 .wrapper_a3747e {
   width: 100%;
@@ -55867,4 +55876,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.12a4f2b47072733a29ad.css.map*/
+/*# sourceMappingURL=12633.72aba085217881878929.css.map*/
