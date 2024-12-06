@@ -90,6 +90,10 @@
         </div>
         <div class="div-block-absol">
           <a
+            href="https://discord.com/app"
+            class="menu-button-login login-button-js is_open-menu"
+            >Login</a
+          ><a
             href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&amp;platform=win&amp;arch=x86"
             class="button-blue-menu download-button w-inline-block"
             ><img
@@ -460,7 +464,13 @@
           <a href="#" class="link-grey-16px end hiden">Author Credits</a>
         </div>
       </nav>
-      <div class="nav_button-wrap is_new-nenu-btn"></div>
+      <div class="nav_button-wrap is_new-nenu-btn">
+        <a
+          href="https://discord.com/app"
+          class="menu-button-login login-button-js"
+          >Login</a
+        >
+      </div>
       <div class="nav_button-wrap">
         <a
           href="https://discord.com/app"
