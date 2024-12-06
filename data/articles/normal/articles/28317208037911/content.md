@@ -122,8 +122,9 @@
 </div>
 <p>
   In order to successfully complete the <strong>Fortnite</strong>
-  <strong>Quest</strong>, players who meet the eligibility criteria must play
-  <strong>Fortnite </strong>for a minimum duration of 15 minutes.
+  <strong>OG</strong> <strong>Quest</strong>, players who meet the eligibility
+  criteria must play <strong>Fortnite </strong>for a minimum duration of 15
+  minutes.
 </p>
 <h1 id="h_01JECPQWZ1QVS516DCYVJY1QYK">Redemption Instructions</h1>
 <p>
