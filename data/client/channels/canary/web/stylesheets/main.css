@@ -10361,6 +10361,11 @@ div.modalHeader_c5e09c {
 .buttonLoader_ce1c1d {
   background-color: var(--background-primary);
 }
+.icon_c4defd {
+  vertical-align: middle;
+  margin-bottom: 0.2rem;
+  margin-right: var(--spacing-4);
+}
 .hljs {
   display: block;
   overflow-x: auto;
@@ -55876,4 +55881,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.72aba085217881878929.css.map*/
+/*# sourceMappingURL=12633.811e93325ebb21fda133.css.map*/
