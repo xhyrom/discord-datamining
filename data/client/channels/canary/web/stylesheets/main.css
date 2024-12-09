@@ -8281,6 +8281,9 @@ div.modalHeader_c5e09c {
   justify-content: flex-start;
   contain: layout size;
 }
+:where(.visual-refresh) .wrapper_c4cd66 {
+  height: 100%;
+}
 .item_c4cd66 {
   position: absolute;
   display: block;
@@ -55875,4 +55878,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c22d9a2b44cad235c443.css.map*/
+/*# sourceMappingURL=12633.24879dc5078c63daaf6a.css.map*/
