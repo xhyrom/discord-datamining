@@ -13937,7 +13937,7 @@ span.clanTag_a31c43 {
 .row_e33a4d {
   align-items: center;
   display: flex;
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--background-modifier-accent);
   margin: 0 var(--spacing-16);
   padding: var(--spacing-16) 0 var(--spacing-16);
   gap: var(--spacing-16);
@@ -55881,4 +55881,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.811e93325ebb21fda133.css.map*/
+/*# sourceMappingURL=12633.b1ca336b5730c978326d.css.map*/
