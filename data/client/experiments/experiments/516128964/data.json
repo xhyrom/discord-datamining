@@ -1,12 +1,27 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-11_member_verification_rollout",
+    "label": "Member verification rollout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
     "hash": 516128964,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
