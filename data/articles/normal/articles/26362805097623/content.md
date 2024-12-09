@@ -327,8 +327,8 @@
   </li>
   <li>
     <strong>Multiple stored gift credits with an active subscription:</strong>
-    Nitro Credits activate after the current billing period. Then, the  next
-    gift credit will be used to continue the subscription.
+    Nitro Credits activate after the current billing period. Then, the next gift
+    credit will be used to continue the subscription.
   </li>
   <li>
     <strong>Stored gift credits, no active subscription:</strong> Nitro Credits
