@@ -1,0 +1,665 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["11794"],
+  {
+    902294: function (t) {
+      t.exports = "/assets/82e4627b29fa4e594d1d.svg";
+    },
+    34674: function (t, e, n) {
+      n.d(e, {
+        $_: function () {
+          return A;
+        },
+        KQ: function () {
+          return E;
+        },
+        MU: function () {
+          return d;
+        },
+        RF: function () {
+          return O;
+        },
+        m0: function () {
+          return L;
+        },
+        rf: function () {
+          return T;
+        },
+        tu: function () {
+          return h;
+        },
+      }),
+        n(610138),
+        n(216116),
+        n(78328),
+        n(815648),
+        n(47120),
+        n(315314);
+      var r = n(860911),
+        i = n(477690),
+        o = n(481060),
+        l = n(911969),
+        c = n(134432),
+        a = n(703656),
+        u = n(768581),
+        s = n(981631),
+        p = n(388032);
+      let d = 0,
+        { API_ENDPOINT: I, CDN_HOST: S } = window.GLOBAL_ENV;
+      function L(t) {
+        return t.id === d;
+      }
+      function E() {
+        return { id: d, name: p.intl.string(p.t.E407b2) };
+      }
+      function h(t) {
+        switch (t.id) {
+          case 0:
+            return o.GlobeEarthIcon;
+          case 4:
+            return o.TvIcon;
+          case 5:
+            return o.AnalyticsIcon;
+          case 6:
+            return o.GameControllerIcon;
+          case 8:
+            break;
+          case 9:
+            return o.FriendsIcon;
+          case 10:
+            return o.WrenchIcon;
+        }
+        return o.AsteriskIcon;
+      }
+      function A(t) {
+        let { itemId: e, hash: n } = t,
+          r = new URLSearchParams({
+            size: (0, c.oO)(
+              parseFloat(i.Z.APPLICATION_DIRECTORY_CONTENT_MAX_WIDTH) *
+                (0, c.x_)(),
+            ).toString(),
+          }).toString(),
+          o = u.$k ? "webp" : "png";
+        return null != S
+          ? ""
+              .concat(location.protocol, "//")
+              .concat(S, "/app-assets/application-directory/collection-items/")
+              .concat(e, "/")
+              .concat(n, ".")
+              .concat(o, "?")
+              .concat(r)
+          : ""
+              .concat(location.protocol)
+              .concat(I)
+              .concat(
+                s.ANM.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(e, n, o),
+                "?",
+              )
+              .concat(r);
+      }
+      function T() {
+        let t =
+            arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+          e = new URL(location.href);
+        for (let n in t) {
+          let r = t[n];
+          e.searchParams.set(n, r);
+        }
+        let n = e.pathname + e.search,
+          i = (0, r.Ui)(n, !1);
+        (0, a.uL)(i);
+      }
+      let f = (t) => {
+        if (null == t) return null;
+        let e = t.match(
+          /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#&?]*).*/,
+        );
+        return null != e ? e[1] : null;
+      };
+      function O(t) {
+        switch (t.type) {
+          case l.ee.MEDIA_PROXY:
+            var e;
+            let n = null !== (e = t.proxy_url) && void 0 !== e ? e : t.url;
+            return { type: s.s9s.IMG, width: 0, height: 0, src: n };
+          case l.ee.YOUTUBE:
+            let r = f(t.url);
+            if (null != r)
+              return { type: s.s9s.YOUTUBE_VIDEO, youtubeVideoId: r };
+        }
+        return console.warn("Unsupported carousel item", t), null;
+      }
+    },
+    924489: function (t, e, n) {
+      n.d(e, {
+        Z: function () {
+          return f;
+        },
+        x: function () {
+          return r;
+        },
+      }),
+        n(653041);
+      var r,
+        i,
+        o = n(200651),
+        l = n(192379),
+        c = n(120356),
+        a = n.n(c),
+        u = n(442837),
+        s = n(477690),
+        p = n(481060),
+        d = n(686546),
+        I = n(706454),
+        S = n(768581),
+        L = n(624138),
+        E = n(388032),
+        h = n(484759);
+      ((i = r || (r = {}))[
+        (i.SMALL = (0, L.Mg)(s.Z.GUILD_COUNT_SMALL_ICON_SIZE))
+      ] = "SMALL"),
+        (i[(i.LARGE = (0, L.Mg)(s.Z.GUILD_COUNT_LARGE_ICON_SIZE))] = "LARGE");
+      let A = { [r.SMALL]: h.moreGuildsSmall, [r.LARGE]: h.moreGuildsLarge },
+        T = { [r.SMALL]: h.iconSmall, [r.LARGE]: h.iconLarge };
+      function f(t) {
+        var e, n, i;
+        let {
+            application: c,
+            mutualGuilds: s,
+            mutualGuildShownMax: L = 4,
+            className: f,
+            textVariant: O = "text-sm/normal",
+            compact: _,
+            guildIconSize: R = r.LARGE,
+            guildsClassName: g,
+          } = t,
+          P = (0, u.e7)([I.default], () => I.default.locale),
+          m = new Intl.ListFormat(P),
+          v =
+            null !==
+              (n =
+                null === (e = c.directory_entry) || void 0 === e
+                  ? void 0
+                  : e.guild_count) && void 0 !== n
+              ? n
+              : 0,
+          y =
+            null !== (i = null == s ? void 0 : s.length) && void 0 !== i
+              ? i
+              : 0,
+          C = Math.max(0, v - y),
+          { shownMutualGuilds: D, hiddenMutualGuilds: G } = l.useMemo(() => {
+            let t = [],
+              e = [];
+            return (
+              null == s ||
+                s.forEach((n) => {
+                  t.length < L && null != n.icon ? t.push(n) : e.push(n);
+                }),
+              t.length === L &&
+                e.length > 0 &&
+                (e.push(t[L - 1]), (t = t.slice(0, L - 1))),
+              { shownMutualGuilds: t, hiddenMutualGuilds: e }
+            );
+          }, [s, L]),
+          N = G.length,
+          w = (function (t, e, n, r, i) {
+            if (0 === e && 0 === t) return null;
+            if (e > 0 && 0 === n)
+              return E.intl.formatToPlainString(E.t.pnzE1t, {
+                mutualGuildCount: e,
+              });
+            let o = e > 0 ? E.t.YR8PSE : E.t.GQjq6e,
+              l = new Intl.NumberFormat(r, {
+                notation: i ? "compact" : "standard",
+                compactDisplay: "short",
+              });
+            return E.intl.formatToPlainString(o, {
+              guildCount: l.format(t),
+              mutualGuildCount: e,
+              nonMutualGuildCount: l.format(n),
+            });
+          })(v, y, C, P, _);
+        return 0 === D.length && null == w
+          ? null
+          : (0, o.jsxs)("div", {
+              className: a()(f, h.wrapper),
+              children: [
+                (0, o.jsx)("div", {
+                  className: a()(h.icons, g),
+                  children:
+                    D.length > 0
+                      ? (0, o.jsxs)(o.Fragment, {
+                          children: [
+                            D.map((t, e) => {
+                              let n = e === D.length - 1 && 0 === N,
+                                r = S.ZP.getGuildIconURL({
+                                  id: t.id,
+                                  icon: t.icon,
+                                  size: R,
+                                  canAnimate: !1,
+                                }),
+                                i = (0, o.jsx)(p.Tooltip, {
+                                  text: t.name,
+                                  position: "top",
+                                  children: (t) =>
+                                    (0, o.jsx)("img", {
+                                      ...t,
+                                      className: a()(h.icon, T[R]),
+                                      src: r,
+                                      alt: "",
+                                    }),
+                                });
+                              return n
+                                ? (0, o.jsx)(l.Fragment, { children: i }, t.id)
+                                : (0, o.jsx)(
+                                    d.ZP,
+                                    {
+                                      className: h.iconMask,
+                                      height: R,
+                                      width: R,
+                                      mask: d.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
+                                      children: i,
+                                    },
+                                    t.id,
+                                  );
+                            }),
+                            N > 0
+                              ? (0, o.jsx)(p.Tooltip, {
+                                  text: E.intl.formatToPlainString(E.t.m6oRrK, {
+                                    appNames: m.format(G.map((t) => t.name)),
+                                  }),
+                                  position: "top",
+                                  children: (t) =>
+                                    (0, o.jsxs)("div", {
+                                      ...t,
+                                      className: a()(h.moreGuilds, A[R]),
+                                      children: ["+", N],
+                                    }),
+                                })
+                              : null,
+                          ],
+                        })
+                      : (0, o.jsx)(p.ServerIcon, {
+                          size: "custom",
+                          color: "currentColor",
+                          width: R,
+                          height: R,
+                          className: h.defaultIcon,
+                        }),
+                }),
+                null != w
+                  ? (0, o.jsx)(p.Text, {
+                      variant: O,
+                      color: "header-secondary",
+                      children: w,
+                    })
+                  : null,
+              ],
+            });
+      }
+    },
+    125909: function (t, e, n) {
+      n.d(e, {
+        Z: function () {
+          return a;
+        },
+      });
+      var r = n(200651);
+      n(192379);
+      var i = n(120356),
+        o = n.n(i),
+        l = n(481060),
+        c = n(496008);
+      function a(t) {
+        let { loading: e, children: n } = t;
+        return (0, r.jsxs)("div", {
+          className: c.container,
+          children: [
+            e
+              ? (0, r.jsx)("div", {
+                  className: c.spinnerContainer,
+                  children: (0, r.jsx)(l.Spinner, {
+                    className: c.spinner,
+                    type: l.Spinner.Type.SPINNING_CIRCLE,
+                  }),
+                })
+              : null,
+            (0, r.jsx)("div", {
+              className: o()({ [c.loading]: e }),
+              children: n,
+            }),
+          ],
+        });
+      }
+    },
+    147890: function (t, e, n) {
+      n.r(e),
+        n.d(e, {
+          goHome: function () {
+            return S;
+          },
+          goSearch: function () {
+            return A;
+          },
+          goToAppDirectory: function () {
+            return I;
+          },
+          goToApplication: function () {
+            return L;
+          },
+          goToApplicationSection: function () {
+            return E;
+          },
+          goToApplicationStoreSku: function () {
+            return h;
+          },
+          goToCategory: function () {
+            return T;
+          },
+          replaceAppDirectoryURLWith: function () {
+            return f;
+          },
+        }),
+        n(610138),
+        n(216116),
+        n(78328),
+        n(815648),
+        n(47120);
+      var r = n(749681),
+        i = n(352057),
+        o = n(703656),
+        l = n(626135),
+        c = n(34674),
+        a = n(132871),
+        u = n(272242),
+        s = n(981631),
+        p = n(49898),
+        d = n(979007);
+      let I = (t) => {
+          let {
+            view: e = a.ApplicationDirectoryViews.HOME,
+            guildId: n,
+            applicationId: o,
+            applicationSection: c,
+            entrypoint: I,
+            skuId: T,
+          } = t;
+          if ((0, i.K0)({ location: I.name })) {
+            let t =
+              null == o
+                ? void 0
+                : c === u.ApplicationDirectoryProfileSections.STORE
+                  ? d.GlobalDiscoveryAppsSections.STORE
+                  : d.GlobalDiscoveryAppsSections.ABOUT;
+            (0, r.transitionToGlobalDiscovery)({
+              tab: p.GlobalDiscoveryTab.APPS,
+              applicationId: o,
+              section: t,
+              skuId: t === d.GlobalDiscoveryAppsSections.STORE ? T : void 0,
+            });
+            return;
+          }
+          let f = { ...I, pathname: window.location.pathname };
+          switch (
+            (l.default.track(s.rMx.APP_DIRECTORY_OPENED, {
+              source: null == f ? void 0 : f.name,
+            }),
+            (0, a.resetApplicationDirectoryHistory)(),
+            (0, a.setEntrypoint)(f),
+            null != n && (0, a.setGuildId)(n),
+            e === a.ApplicationDirectoryViews.APPLICATION &&
+              null == o &&
+              (e = a.ApplicationDirectoryViews.HOME),
+            e)
+          ) {
+            case a.ApplicationDirectoryViews.HOME:
+              S();
+              break;
+            case a.ApplicationDirectoryViews.SEARCH:
+              A();
+              break;
+            case a.ApplicationDirectoryViews.APPLICATION:
+              if (null != o) {
+                if (null != c) {
+                  if (
+                    c === u.ApplicationDirectoryProfileSections.STORE &&
+                    null != T
+                  ) {
+                    h({ applicationId: o, skuId: T });
+                    break;
+                  }
+                  E({ applicationId: o, section: c });
+                  break;
+                }
+                L({ applicationId: o });
+              }
+          }
+        },
+        S = () => {
+          let t = { previousView: (0, a.getCurrentView)() };
+          (0, o.uL)(s.Z5c.APPLICATION_DIRECTORY, { state: t });
+        },
+        L = (t) => {
+          let { applicationId: e } = t,
+            n = { previousView: (0, a.getCurrentView)() };
+          (0, o.uL)(s.Z5c.APPLICATION_DIRECTORY_PROFILE(e), { state: n });
+        },
+        E = (t) => {
+          let { applicationId: e, section: n } = t,
+            r = { previousView: (0, a.getCurrentView)() };
+          (0, o.uL)(s.Z5c.APPLICATION_DIRECTORY_PROFILE_SECTION(e, n), {
+            state: r,
+          });
+        },
+        h = (t) => {
+          let { applicationId: e, skuId: n } = t,
+            r = { previousView: (0, a.getCurrentView)() };
+          (0, o.uL)(s.Z5c.APPLICATION_DIRECTORY_PROFILE_STORE_SKU(e, n), {
+            state: r,
+          });
+        },
+        A = function () {
+          let {
+              query: t,
+              categoryId: e,
+              page: n,
+            } = arguments.length > 0 && void 0 !== arguments[0]
+              ? arguments[0]
+              : {},
+            r = new URLSearchParams(),
+            i = { previousView: (0, a.getCurrentView)() };
+          null != t && r.set("q", t),
+            null != e && r.set("category_id", e.toString()),
+            null != n && r.set("page", n.toString()),
+            (0, o.uL)(s.Z5c.APPLICATION_DIRECTORY_SEARCH, {
+              search: r.toString(),
+              state: i,
+            });
+        },
+        T = (t) => {
+          let { categoryId: e } = t;
+          A({ categoryId: null != e ? e : c.MU });
+        },
+        f = (t) => {
+          let {
+            location: { state: e },
+          } = (0, o.s1)();
+          (0, o.dL)(t, e);
+        };
+    },
+    749681: function (t, e, n) {
+      n.r(e),
+        n.d(e, {
+          transitionToGlobalDiscovery: function () {
+            return p;
+          },
+        }),
+        n(610138),
+        n(216116),
+        n(78328),
+        n(815648),
+        n(47120),
+        n(411104);
+      var r = n(859921),
+        i = n(341907),
+        o = n(703656),
+        l = n(836768),
+        c = n(49898),
+        a = n(981631),
+        u = n(979007),
+        s = n(128449);
+      function p(t) {
+        let e = t.tab;
+        switch ((l.Z.setState({ selectedTab: e }), e)) {
+          case c.GlobalDiscoveryTab.SERVERS:
+            var n, p;
+            let d = t.selectedServersTab;
+            return (
+              null != d
+                ? r.Z.setState({
+                    selectedTab: d,
+                    entrypoint:
+                      null !== (n = t.entrypoint) && void 0 !== n
+                        ? n
+                        : s.Qq.UNKNOWN,
+                  })
+                : r.Z.setState({
+                    entrypoint:
+                      null !== (p = t.entrypoint) && void 0 !== p
+                        ? p
+                        : s.Qq.UNKNOWN,
+                  }),
+              (0, o.uL)(a.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra)
+            );
+          case c.GlobalDiscoveryTab.APPS:
+            if (null != t.applicationId) {
+              if (t.section === u.GlobalDiscoveryAppsSections.STORE) {
+                if (null != t.skuId)
+                  return (0, o.uL)(
+                    a.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(
+                      t.applicationId,
+                      t.skuId,
+                    ),
+                  );
+                return (0, o.uL)(
+                  a.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(
+                    t.applicationId,
+                    u.GlobalDiscoveryAppsSections.STORE,
+                  ),
+                );
+              }
+              return (0, o.uL)(
+                a.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId),
+              );
+            }
+            if (null != t.query) {
+              let e = new URLSearchParams();
+              return (
+                "" !== t.query && e.set("q", t.query),
+                null != t.categoryId &&
+                  e.set("category_id", t.categoryId.toString()),
+                null != t.page && e.set("page", t.page.toString()),
+                (0, o.uL)(a.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, {
+                  search: e.toString(),
+                })
+              );
+            } else if (null != t.categoryId)
+              return (0, o.uL)(
+                a.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t.categoryId.toString()),
+              );
+            else return (0, o.uL)(a.Z5c.GLOBAL_DISCOVERY_APPS);
+          case c.GlobalDiscoveryTab.QUESTS:
+            return (0, i.navigateToQuestHome)(
+              t.location,
+              t.questContent,
+              t.questId,
+            );
+          default:
+            throw Error(
+              "[transitionToGlobalDiscovery] Unhandled tab type: ".concat(e),
+            );
+        }
+      }
+    },
+    859921: function (t, e, n) {
+      var r = n(972959);
+      let i = Object.freeze({
+          selectedTab: null,
+          isSearchVisible: !1,
+          entrypoint: null,
+          searchBarState: n(49898).GlobalDiscoverySearchBarState.DEFAULT,
+        }),
+        o = (0, r.H)(() => i);
+      e.Z = o;
+    },
+    671533: function (t, e, n) {
+      n(411104);
+      var r,
+        i,
+        o = n(200651);
+      n(192379);
+      var l = n(120356),
+        c = n.n(l),
+        a = n(325767),
+        u = n(485270);
+      ((i = r || (r = {})).LEFT = "LEFT"),
+        (i.RIGHT = "RIGHT"),
+        (i.UP = "UP"),
+        (i.DOWN = "DOWN"),
+        (i.UP_LEFT = "UP_LEFT"),
+        (i.DOWN_RIGHT = "DOWN_RIGHT");
+      let s = (t) => {
+        let {
+          width: e = 24,
+          height: n = 24,
+          color: r = "currentColor",
+          direction: i,
+          foreground: l,
+          className: s,
+          title: p,
+          ...d
+        } = t;
+        return (0, o.jsxs)("svg", {
+          ...(0, a.Z)(d),
+          width: e,
+          height: n,
+          className: c()(
+            s,
+            (function (t) {
+              switch (t) {
+                case "LEFT":
+                  return u.left;
+                case "RIGHT":
+                  return u.right;
+                case "UP":
+                  return null;
+                case "DOWN":
+                  return u.down;
+                case "UP_LEFT":
+                  return u.upLeft;
+                case "DOWN_RIGHT":
+                  return u.downRight;
+                default:
+                  throw Error("Invalid Direction ".concat(t));
+              }
+            })(i),
+          ),
+          viewBox: "0 0 24 24",
+          children: [
+            null != p ? (0, o.jsx)("title", { children: p }) : null,
+            (0, o.jsx)("polygon", {
+              className: l,
+              fill: r,
+              fillRule: "nonzero",
+              points:
+                "13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8",
+            }),
+          ],
+        });
+      };
+      (s.Directions = r), (e.Z = s);
+    },
+  },
+]);
+//# sourceMappingURL=3c63f412acf72a86fbed.js.map
