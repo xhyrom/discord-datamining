@@ -61,7 +61,7 @@
   <strong>Availability Period: </strong>The
   <strong>World of Warcraft x Mountain Dew Quest</strong> can be accepted on
   Discord from <strong>December 2, 2024 </strong>until
-  <strong>December 9, 2024 (11:59PM UTC)</strong>. 
+  <strong>December 10, 2024 (11:59PM UTC)</strong>. 
 </p>
 <p>
   Quest requirements must be completed during this period to receive the reward.
