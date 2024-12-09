@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
-      "Treatment 1: Refresh Enabled"
+      "Treatment 1: Refresh Enabled",
+      "Treatment 2: Refresh with Collapsible Sidebar"
     ],
     "hash": 1585279012,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "enableCollapsibleSidebar"
     ]
   }
 }
