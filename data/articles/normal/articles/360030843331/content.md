@@ -31,11 +31,21 @@
 <h1 id="h_01GCHW555YT4Y6Z2P1W3668133">
   <span style="font-weight: 400">How to enable Server Discovery</span>
 </h1>
-<h3>
-  <span style="font-weight: 400"
-    >Users that have roles with "<strong
-      >Manage Server" permission enabled </strong
-    >will have the ability to enable and disable Server Discovery!</span
+<h3 id="h_01JERG4SKE0N8RPGWAX3F90MAH">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Users that have roles with </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Manage Server</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""> or </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Administrator</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    permission enabled will have the ability to enable and disable Server
+    Discovery!</span
   >
 </h3>
 <p>
@@ -87,7 +97,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8769549220759/Screen_Shot_2022-07-13_at_11.07.09_AM.png"
+      src="https://support.discord.com/hc/article_attachments/8769549220759"
       alt="Screen_Shot_2022-07-13_at_11.07.09_AM.png"
   /></span>
 </p>
@@ -102,7 +112,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8769588308375/serverdiscovery1.gif"
+      src="https://support.discord.com/hc/article_attachments/8769588308375"
       alt="serverdiscovery1.gif"
       width="645"
       height="357"
@@ -118,7 +128,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8769591901079/Screen_Shot_2022-07-13_at_9.44.01_AM.png"
+      src="https://support.discord.com/hc/article_attachments/8769591901079"
       alt="Screen_Shot_2022-07-13_at_9.44.01_AM.png"
   /></span>
 </p>
@@ -153,7 +163,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8769688842519/Serverdiscovery_disablecommunity.png"
+      src="https://support.discord.com/hc/article_attachments/8769688842519"
       alt="Serverdiscovery_disablecommunity.png"
   /></span>
 </p>
@@ -170,7 +180,7 @@
   <a
     href="https://support.discord.com/hc/en-us/articles/4409308485271"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >Discovery Guidelines</a
   >
 </p>
@@ -178,7 +188,7 @@
   <a
     href="https://support.discord.com/hc/en-us/articles/360023968311"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >Server Discovery</a
   >
 </p>
@@ -186,7 +196,7 @@
   <a
     href="https://support.discord.com/hc/en-us/articles/360047132851"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >Enabling Community</a
   >
 </p>
