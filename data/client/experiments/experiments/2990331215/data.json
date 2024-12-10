@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-12_app_dm_report_button",
+    "label": "App DMs Report Button Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables the report button in App DMs on desktop and mobile"
+    ],
+    "hash": 2990331215,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabledDesktop",
+      "enabledMobile"
+    ]
+  }
+}
