@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.895",
+    "module_version": 1,
+    "package_sha256": "942d671a3be8eac50803a3a981cea9e56bdc73000f5751adb1f3147610bf0f56",
+    "url": "https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.895/discord_voice_filters/1/full.distro"
+  },
+  "deltas": []
+}
