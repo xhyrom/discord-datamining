@@ -8672,6 +8672,7 @@
             "Design Systems (Form Primitives)"),
           (r6.SETTINGS_ADVANCED = "Advanced"),
           (r6.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE = "Payment Flow Modals"),
+          (r6.SETTINGS_PAYMENT_COMPONENTS = "Payment Components"),
           (r6.SETTINGS_SESSIONS = "Sessions"),
           (r6.SETTINGS_FAMILY_CENTER = "Family Center"),
           (r6.SETTINGS_CONTEXT_MENU = "Settings Context Menu"),
@@ -9099,6 +9100,7 @@
           HOTSPOT_OPTIONS: "Hotspot Options",
           DISMISSIBLE_CONTENT_OPTIONS: "Dismissible Content Options",
           PAYMENT_FLOW_MODAL_TEST_PAGE: "Payment Flow Modals",
+          PAYMENT_COMPONENTS_PAGE: "Payment Components",
           POGGERMODE: "Powermode Settings",
           SESSIONS: "Sessions",
           FAMILY_CENTER: "Family Center",
@@ -12639,7 +12641,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b6175e2bac84a6aaf85ef010df21720e17aab17f",
+            release: "discord_web-a0d777230391713617a23008a695e21b707be488",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12708,8 +12710,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "351835"), "351835"));
-          o.YA("builtAt", String("1733787763445"));
+            o.YA("buildNumber", ((e = "351915"), "351915"));
+          o.YA("builtAt", String("1733796161484"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15767,11 +15769,11 @@
               NEUTRAL_1: "#ffffff",
               NEUTRAL_10: "#dcdcde",
               NEUTRAL_100: "#000000",
+              NEUTRAL_13: "#d0d0d4",
               NEUTRAL_14: "#ccccd0",
               NEUTRAL_16: "#c5c5c9",
               NEUTRAL_17: "#c1c1c6",
               NEUTRAL_2: "#fbfbfb",
-              NEUTRAL_20: "#b5b6bb",
               NEUTRAL_22: "#aeaeb4",
               NEUTRAL_23: "#aaaab1",
               NEUTRAL_27: "#9c9ca3",
@@ -15787,7 +15789,8 @@
               NEUTRAL_44: "#60606a",
               NEUTRAL_45: "#5d5d67",
               NEUTRAL_46: "#5a5a64",
-              NEUTRAL_49: "#50505a",
+              NEUTRAL_5: "#efeff0",
+              NEUTRAL_55: "#484851",
               NEUTRAL_59: "#42424a",
               NEUTRAL_6: "#ebebed",
               NEUTRAL_67: "#36363c",
@@ -15799,7 +15802,6 @@
               NEUTRAL_76: "#28282d",
               NEUTRAL_77: "#27272c",
               NEUTRAL_79: "#242429",
-              NEUTRAL_8: "#e3e3e6",
               NEUTRAL_82: "#202024",
               NEUTRAL_86: "#1a1a1e",
               NEUTRAL_89: "#161619",
@@ -54571,4 +54573,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.72a04b3db41166945780.js.map
+//# sourceMappingURL=sentry.1d11686b1e664202e7b9.js.map
