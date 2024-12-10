@@ -12649,6 +12649,14 @@ div.cardContainer_c22357 {
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
 }
+.tier2SideGradient_c87d73 {
+  position: absolute;
+  width: 100vw;
+  height: 1e3px;
+  background: radial-gradient(80%70%at 100%50%, #2d01dc 0%, transparent 100%),
+    radial-gradient(80%70%at 100%50%, #b182ff 0%, transparent 100%);
+  opacity: 0.4;
+}
 .heading_aac415 {
   margin-bottom: 8px;
 }
@@ -56246,4 +56254,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.e18ddf91b3f573f0d4d7.css.map*/
+/*# sourceMappingURL=12633.fb199d1720695ee9d0b7.css.map*/
