@@ -5411,6 +5411,9 @@ div.modalHeader_c5e09c {
   width: 60%;
   height: 60%;
 }
+.visual-refresh .staff_d082f7 {
+  color: var(--icon-tertiary);
+}
 .partnered_d082f7 {
   color: var(--brand-500);
 }
@@ -56228,4 +56231,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.782eb5688b0f160919d5.css.map*/
+/*# sourceMappingURL=12633.a2bb1a7a1440d7d068cb.css.map*/
