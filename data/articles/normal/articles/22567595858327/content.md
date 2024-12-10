@@ -52,6 +52,13 @@
     </ul>
   </li>
   <li>
+    <a href="#h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</a>
+    <ul>
+      <li><a href="#h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</a></li>
+      <li><a href="#h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</a></li>
+    </ul>
+  </li>
+  <li>
     <a href="#h_01HVRY7E8T0ADKKTYZWQXHSE7D">Frequently Asked Questions</a>
   </li>
 </ul>
@@ -127,6 +134,11 @@
       height="402"
   /></span>
 </p>
+<h4 id="h_01JD8N0VEYWYDK6J0PHGMJQ2TQ" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Direct Messages Button and Nitro Tab on Desktop</span
+  >
+</h4>
 <p>
   2. After navigating to the Nitro homepage, you’ll see the
   <strong>Share Nitro </strong>banner. Pressing the
@@ -141,6 +153,11 @@
       height="536"
   /></span>
 </p>
+<h4 id="h_01JD8N17WTXXT8FYAJ9DAKQJ1W" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Select Friends Button in Share Nitro Banner</span
+  >
+</h4>
 <p>
   3. While here, you can choose the friends to whom you wish to send a Nitro
   Trial. When you’re ready, select <strong>Share Trial</strong> to confirm. 
@@ -152,6 +169,9 @@
     height="428"
   />
 </p>
+<h4 id="h_01JD8N1M68C9N3QTE6G617YW3H" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Select Friends Window Selection </span>
+</h4>
 <p>
   Once completed, a confirmation should appear. You will also be able to view
   the shared trial in the direct message (DM) that was sent to your friend.
@@ -163,6 +183,9 @@
     height="443"
   />
 </p>
+<h4 id="h_01JD8N1Z6D5G40Z5HF0VZKQ77W" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Shared Trial Confirmation</span>
+</h4>
 <div class="info-box">
   Note: As an eligible Nitro member, you get 3 Nitro trials to start, with more
   coming in the future. A trial will expire if not redeemed by the recipient in
@@ -193,12 +216,14 @@
     height="147"
   />
 </p>
-<p>
-  <strong
-    >IMPORTANT: This is NOT a link, file, image attachment, program, nor a QR
-    code</strong
-  >! 
-</p>
+<h4 id="h_01JD8N5YZD4E784VAQ5MJHTRZ7" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Nitro 2-week Trial in DM </span>
+</h4>
+<div class="warn-box">
+  <strong>IMPORTANT: </strong>This is NOT a link, file, image attachment,
+  program, nor a QR code! Redeeming the trial is completed entirely within the
+  Discord app.
+</div>
 <p>2. Select <strong>Start Trial.</strong></p>
 <p>3. Select a plan to start once your 2-week trial is over. </p>
 <p>
@@ -207,6 +232,18 @@
   trial, we’ll send you an email to let you know before your trial renews as a
   paid subscription. 
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981950807191"
+    width="366"
+    height="425"
+  />
+</p>
+<h4 id="h_01JD8N7ZN0AK5336PP3TSD0Y72" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of Selecting a Payment Method for 2-week Trial</span
+  >
+</h4>
 <p>
   5. Start having fun with your 2 weeks of
   <a
@@ -229,11 +266,97 @@
     >Help Center article</a
   >. 
 </div>
+<h1 id="h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</h1>
+<div class="exp-box">
+  We are currently running an experiment to a limited number of users. We are
+  hoping to expand access to this feature to more users in the future.
+</div>
+<p>
+  Some Nitro members will be able to send and receive trials on their iOS and
+  Android devices. <br />Please note that on iOS devices, if your account has
+  never had a subscription on Discord through the App Store in the past, you
+  will need to redeem your trial on desktop instead.
+</p>
+<h2 id="h_01JD8NBH1SP6K15RZ3R0ZPWX1E">Sending Trials</h2>
+<p>
+  1. Open <strong>Settings</strong> on your mobile device by selecting your
+  profile icon in the bottom right corner and tapping the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/27981950818583"
+    width="24"
+    height="24"
+  />] in the upper right corner. 
+</p>
+<p>2.  Once in Settings, navigate to <strong>Manage Nitro</strong>.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981921037463"
+    width="254"
+    height="548"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981921037719"
+    width="253"
+    height="548"
+  />
+</p>
+<h4 id="h_01JD8NCDEG314CBS5HJMNP2N5Z" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Profile Icon (Left) and Manage Nitro Tab (Right) in User Settings on
+    Mobile</span
+  >
+</h4>
+<p>
+  3. Tap the <strong>Select Friends</strong> button in the
+  <strong>Share Nitro </strong>tile. 
+</p>
+<p>4. From here, you can select up to 3 friends to share your trials with.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981921038743"
+    width="242"
+    height="525"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981921039383"
+    width="242"
+    height="524"
+  />
+</p>
+<h4 id="h_01JD8ND92ZNY6MBXVSFCYHNC6F" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Select Friends Button (Left) and Select Friends Menu (Right)</span
+  >
+</h4>
+<h2 id="h_01JD8NDRK1XPGAJ1GBAF9KKZTR">Receiving a Trial</h2>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27981950827927"
+    alt="Screenshot 2024-11-21 at 4.48.25 PM.png"
+    width="239"
+    height="511"
+  />
+</p>
+<h4 id="h_01JD8NE8991GCAT63WSDB2Q9T0" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of 2-week Trial in DMs on Mobile</span>
+</h4>
+<p>
+  Once you have verified that your trial is authentic through the same steps as
+  above, tap the <strong>Start Trial </strong>button. 
+</p>
+<p>
+  Then, select the plan you would like to try. This plan will begin once your
+  2-week trial ends.
+</p>
 <h1 id="h_01HVRY7E8T0ADKKTYZWQXHSE7D">FREQUENTLY ASKED QUESTIONS</h1>
 <p><strong>Q: As a Nitro member, who can I share Nitro trials with?</strong></p>
 <p>
-  A: You can share Nitro trials with anyone as long as they are eligible to
-  redeem a trial. 
+  A: As a Nitro member, you can share Nitro trials with any eligible friend. If
+  a friend appears in the <strong>Select Friends </strong>list in the Share
+  Nitro experience, they are eligible to receive and redeem a Nitro trial from
+  you.
 </p>
 <p>
   <strong
@@ -251,9 +374,9 @@
 </p>
 <p><strong>Q: What happens after I share all 3 of my trials? </strong></p>
 <p>
-  A: As a Nitro member, you’ll get more trials to share in the future. Keep an
-  eye on the Share Nitro banner in
-  <strong>Direct Messages &gt; Nitro </strong>for when you get a refresh! 
+  A: We hope to provide more sharing opportunities in the future. Keep an eye on
+  the Share Nitro banner in <strong>Direct Messages &gt; Nitro </strong>for when
+  you get a refresh! 
 </p>
 <p><strong>Q: As a Nitro member, do my trials expire?</strong></p>
 <p>
