@@ -2309,6 +2309,14 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .cardPrimary_a298b8.outline_a298b8 {
   border-color: var(--background-tertiary);
 }
+.visual-refresh .card_a298b8 {
+  border-radius: var(--radius-sm);
+}
+.visual-refresh .cardPrimary_a298b8,
+.visual-refresh .cardPrimary_a298b8.editable_a298b8 {
+  background: var(--card-primary-bg);
+  border: 1px solid var(--border-subtle);
+}
 .checkboxWrapper_f6cde8 {
   display: flex;
   position: relative;
@@ -30245,7 +30253,7 @@ img.thumbnail_c64476 {
 }
 .visual-refresh .themed_a0.item_a0,
 .visual-refresh .brand_a0.item_a0 {
-  color: var(--text-default);
+  color: var(--text-secondary);
 }
 .visual-refresh .themed_a0.item_a0:hover,
 .visual-refresh .brand_a0.item_a0:hover {
@@ -30421,12 +30429,14 @@ img.thumbnail_c64476 {
   border-bottom: none !important;
 }
 :where(.visual-refresh) .top_a0 .item_a0 {
+  --selected-tab-item-color: var(--interactive-active);
   padding-bottom: 16px;
   margin-bottom: -1px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
   position: relative;
+  --tab-item-color: var(--text-primary);
 }
 :where(.visual-refresh) .top_a0 .item_a0:hover:after,
 :where(.visual-refresh) .top_a0 .item_a0.selected_a0:after {
@@ -30437,16 +30447,16 @@ img.thumbnail_c64476 {
   height: 2px;
   left: 0;
   margin-top: -2px;
-  background: var(--tab-item-color);
+  background: var(--selected-tab-item-color);
   z-index: 1;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 :where(.visual-refresh) .top_a0 .item_a0.selected_a0 {
-  color: var(--tab-item-color);
+  color: var(--selected-tab-item-color);
 }
 :where(.visual-refresh) .top_a0 .item_a0.brand_a0 {
-  --tab-item-color: var(--text-brand);
+  --selected-tab-item-color: var(--text-brand);
 }
 :where(.visual-refresh) .top_a0 .item_a0 + .item_a0 {
   margin-left: 24px;
@@ -32691,6 +32701,10 @@ img.thumbnail_c64476 {
 }
 .visual-refresh .header_f9a4c9 {
   padding-bottom: 0;
+  overflow: hidden;
+}
+.visual-refresh .separator_f9a4c9 {
+  box-shadow: none;
 }
 .visual-refresh .content_f9a4c9 {
   padding: var(--spacing-24);
@@ -56182,4 +56196,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.acebac8c78c1b951a29b.css.map*/
+/*# sourceMappingURL=12633.6e415f63704981e518f0.css.map*/
