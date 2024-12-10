@@ -22704,6 +22704,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   user-select: none;
   pointer-events: none;
 }
+.visual-refresh .placeholder_a552a6 {
+  line-height: 1.5rem;
+}
 .enable-forced-colors .placeholder_a552a6 {
   color: GrayText;
 }
@@ -22717,9 +22720,14 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   right: 10px;
 }
 .visual-refresh .slateTextArea_e52116 {
+  --custom-vertical-padding: calc(
+    var(--custom-channel-textarea-text-area-height) / 4
+  );
   box-sizing: border-box;
-  padding-top: var(--space-20);
-  padding-bottom: var(--space-16);
+  padding-top: calc(0.25 * var(--custom-channel-textarea-text-area-height));
+  padding-top: var(--custom-vertical-padding);
+  padding-bottom: calc(0.25 * var(--custom-channel-textarea-text-area-height));
+  padding-bottom: var(--custom-vertical-padding);
 }
 .enable-forced-colors .placeholder_e52116 {
   color: GrayText;
@@ -23056,7 +23064,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-8) var(--space-16);
+  padding: var(--space-4) var(--space-16);
   border-top: 1px solid var(--border-faint);
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
@@ -23065,11 +23073,14 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   position: relative;
 }
+.visual-refresh .accessoryBarRight_bdf0de {
+  margin-right: calc(-1 * var(--space-4));
+}
 .visual-refresh .rightAccessories_bdf0de {
   display: flex;
   align-items: center;
   max-height: var(--custom-channel-textarea-text-area-height);
-  margin-right: var(--space-20);
+  margin-right: var(--space-16);
 }
 .enable-forced-colors .scrollableContainer_bdf0de {
   border: 1px solid CanvasText;
@@ -24550,6 +24561,10 @@ div.popoutCloseButton_d523a2:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.visual-refresh .giftIconContainer_fdeb78 {
+  width: 20px;
+  height: 20px;
 }
 .generalHeading_a2f60b {
   color: var(--primary-130);
@@ -56220,7 +56235,7 @@ img[alt] {
   --custom-app-sidebar-target-width: calc(
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
-  --custom-channel-textarea-text-area-height: 58px;
+  --custom-channel-textarea-text-area-height: 48px;
   --custom-rtc-account-height: 64px;
   --custom-app-top-bar-height: 32px;
   --custom-channel-header-height: 56px;
@@ -56231,4 +56246,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.a2bb1a7a1440d7d068cb.css.map*/
+/*# sourceMappingURL=12633.e18ddf91b3f573f0d4d7.css.map*/
