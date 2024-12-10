@@ -12331,6 +12331,18 @@ div.cardContainer_c22357 {
 .tier2_c87d73 {
   background-image: var(--custom-premium-colors-premium-gradient-tier-2);
 }
+.tier0V2Background_c87d73 {
+  background: linear-gradient(180deg, #000 0%, #031a3b 100%);
+}
+.tier2V2Background_c87d73 {
+  background: linear-gradient(180deg, #000 0%, #36266d 100%);
+}
+.theme-light .tier0V2Background_c87d73 {
+  background: linear-gradient(180deg, #f7f7fe 22.95%, #b6ddfc 153.33%);
+}
+.theme-light .tier2V2Background_c87d73 {
+  background: linear-gradient(180deg, #f7f7fe 0%, #b6b9fc 153.33%);
+}
 .tier2_c87d73.withTier2Rim_c87d73:before {
   content: "";
   position: absolute;
@@ -12342,23 +12354,17 @@ div.cardContainer_c22357 {
   margin: -1px;
   border-radius: var(--radius-lg);
 }
+.v2TextLightMode_c87d73 {
+  pointer-events: inherit;
+}
 .tier0Title_c87d73 {
   width: 106px;
   height: 40px;
 }
-.taglineXPTier0Title_c87d73 {
+.tier0V2Title_c87d73 {
   width: 132px;
   height: 16px;
-}
-.taglineXPSubHeaderStoreHome_c87d73 {
-  max-width: 352px;
-  width: 100%;
-  font-size: 34px;
-  margin-bottom: 6px;
-}
-.taglineXPSubHeaderSettings_c87d73 {
-  font-size: 26px;
-  margin-bottom: 6px;
+  color: var(--white);
 }
 .tierCardHeaderDisplay_c87d73 {
   display: flex;
@@ -12369,9 +12375,10 @@ div.cardContainer_c22357 {
   height: 24px;
   display: block;
 }
-.taglineXPTier2Title_c87d73 {
+.tier2V2Title_c87d73 {
   width: 64px;
   height: 16px;
+  color: var(--white);
 }
 .title_c87d73 {
   margin-bottom: 8px;
@@ -12384,6 +12391,31 @@ div.cardContainer_c22357 {
 }
 .item_c87d73:last-child {
   margin-bottom: 0;
+}
+.tier2V2Subheader_c87d73 {
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.itemV2_c87d73 {
+  color: var(--white);
+}
+.v2TierCardSectionHeader_c87d73 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.theme-light .v2TextLightMode_c87d73 {
+  color: var(--black);
+}
+.v2starBackground_c87d73 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 20px;
+  right: 50px;
+  overflow: hidden;
 }
 .itemWithWumpus_c87d73:first-of-type {
   max-width: 100%;
@@ -56196,4 +56228,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.6e415f63704981e518f0.css.map*/
+/*# sourceMappingURL=12633.782eb5688b0f160919d5.css.map*/
