@@ -6802,6 +6802,52 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-07_bogo_countdown",
+      "label": "BOGO Countdown Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Disable BOGO countdown"
+      ],
+      "hash": 3062760589,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-07_contextual_image_recs_user",
+      "label": "Contextual Image Recommendations",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the Contextual Image Recommendations with options"
+      ],
+      "hash": 2916972233,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "imageRecsEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-07_ctp_open_nitro_everyone",
       "label": "CTP open nitro - A/A test - Everyone",
       "description": [
@@ -7198,6 +7244,56 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-07_friend_request_spam_inbox",
+      "label": "Friend request spam inbox",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Separate spam friend requests into separate inbox and suppress notifications"
+      ],
+      "hash": 2045608872,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-07_gdm_blocked_user_warning",
+      "label": "GDM Blocked User Warning",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show blocked user warning in GDMs as a modal",
+        "Treatment 2: Show blocked user warning in GDMs as a banner"
+      ],
+      "hash": 206457552,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "showAsModal",
+        "showAsBanner"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-08_new_gateway_dispatcher",
       "label": "New Gateway Dispatcher",
       "description": [
@@ -7297,6 +7393,56 @@
       "revision": 0,
       "overrides": {},
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-07_icymi",
+      "label": "In-case-you-missed-it tab",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enables the new icymi tab",
+        "Treatment 2: new icymi tab with some new features",
+        "Treatment 3: new icymi tab with more new features"
+      ],
+      "hash": 4207551078,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-07_icymi_negative_items",
+      "label": "icymi negative content (debugging only)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: allow negative items only"
+      ],
+      "hash": 501017028,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
@@ -7463,52 +7609,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-07_bogo_countdown",
-      "label": "BOGO Countdown Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Disable BOGO countdown"
-      ],
-      "hash": 3062760589,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_contextual_image_recs_user",
-      "label": "Contextual Image Recommendations",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the Contextual Image Recommendations with options"
-      ],
-      "hash": 2916972233,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "imageRecsEnabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-07_ctp_payment_flow_started_vanilla",
       "label": "CTP payment flow started - A/A test - Vanilla",
       "description": [
@@ -7532,91 +7632,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-07_friend_request_spam_inbox",
-      "label": "Friend request spam inbox",
+      "id": "2024-07_persistent_reaction_button",
+      "label": "Persistent Reaction Button (Desktop)",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Separate spam friend requests into separate inbox and suppress notifications"
+        "Treatment 1: Show the reaction button next to message reactions on Desktop"
       ],
-      "hash": 2045608872,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_gdm_blocked_user_warning",
-      "label": "GDM Blocked User Warning",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show blocked user warning in GDMs as a modal",
-        "Treatment 2: Show blocked user warning in GDMs as a banner"
-      ],
-      "hash": 206457552,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "showAsModal",
-        "showAsBanner"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_icymi",
-      "label": "In-case-you-missed-it tab",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enables the new icymi tab",
-        "Treatment 2: new icymi tab with some new features",
-        "Treatment 3: new icymi tab with more new features"
-      ],
-      "hash": 4207551078,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_icymi_negative_items",
-      "label": "icymi negative content (debugging only)",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: allow negative items only"
-      ],
-      "hash": 501017028,
+      "hash": 1940896451,
       "buckets": [
         -1,
         0,
@@ -7918,29 +7941,6 @@
         "Treatment 1: Enable the App Launcher changes for Open Platform"
       ],
       "hash": 4205780956,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-07_persistent_reaction_button",
-      "label": "Persistent Reaction Button (Desktop)",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show the reaction button next to message reactions on Desktop"
-      ],
-      "hash": 1940896451,
       "buckets": [
         -1,
         0,
@@ -11002,29 +11002,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-10_mobile_referral_trial_recipient",
-      "label": "Referral Recipient Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Referral Recipient Experiment on Mobile"
-      ],
-      "hash": 3982775303,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-10_mobile_video_disable",
       "label": "Backgrounding Mobile App Disables Incoming Video",
       "description": [
@@ -12844,6 +12821,29 @@
         "Treatment 1: Recent Activity Tab Enabled"
       ],
       "hash": 2340201155,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_user_profile_react_reply_awareness",
+      "label": "User Profile React Reply Awareness",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Fade In & Out Enabled"
+      ],
+      "hash": 4253623018,
       "buckets": [
         -1,
         0,
