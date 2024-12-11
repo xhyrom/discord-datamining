@@ -31646,6 +31646,9 @@ img.thumbnail_c64476 {
   line-height: 30px;
   padding: 10px 20px;
 }
+.visual-refresh .notice_be03aa {
+  grid-area: notice;
+}
 .platform-osx .notice_be03aa {
   -webkit-app-region: drag;
 }
@@ -31829,9 +31832,6 @@ img.thumbnail_c64476 {
   border: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-}
-.visual-refresh .notice_be03aa {
-  min-height: 40px;
 }
 .enable-forced-colors .notice_be03aa {
   border-bottom: 2px solid CanvasText;
@@ -56297,4 +56297,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ab9720db14c78ff9fa56.css.map*/
+/*# sourceMappingURL=12633.047eaa8bc064f4958a7a.css.map*/
