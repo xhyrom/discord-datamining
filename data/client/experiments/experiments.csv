@@ -816,6 +816,7 @@ id,hash,label
 2024-10_merge_notifications_tab,2998143296,Merge notifications tab
 2024-10_message_attachment_send_failure,3652546672,Message Attachment Send Failure Experiment
 2024-10_mobile_display_animated_webp_embeds,4109271000,Mobile Display Animated WebP Embeds Experiment
+2024-10_mobile_referral_trial_recipient,3982775303,Referral Recipient Experiment
 2024-10_mobile_video_disable,1715296116,Backgrounding Mobile App Disables Incoming Video
 2024-10_nitro_shop_entry_points,842501197,User Profile Nitro Shop Entry Points
 2024-10_nitro_tab_forced_render,3681053868,Nitro Tab Forced Re-render Investigation
