@@ -10190,6 +10190,9 @@ div.modalHeader_c5e09c {
 .jumboContainer_f38a29 {
   margin: 2px;
   display: inline-flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .jumboButton_f38a29 {
   display: inline-flex;
@@ -10221,6 +10224,9 @@ div.modalHeader_c5e09c {
   margin: 0 var(--spacing-4);
   border-radius: var(--radius-sm);
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .soundmojiEmoji_f38a29 {
   width: 1em !important;
@@ -56254,4 +56260,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8be13e151bd3eb7960f2.css.map*/
+/*# sourceMappingURL=12633.ca512bf57f85b1695036.css.map*/
