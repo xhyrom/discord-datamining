@@ -9769,6 +9769,8 @@
             "connections_new_console_coachmark_clicked"),
           (ah.CONNECTIONS_EMPTY_STATE_CARD_CLICKED =
             "connections_empty_state_card_clicked"),
+          (ah.CONNECTIONS_XBOX_RELINK_CLICKED =
+            "connections_xbox_relink_clicked"),
           (ah.MESSAGE_REQUESTS_INITIALIZED = "message_requests_initialized"),
           (ah.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED =
             "guild_default_message_request_updated"),
@@ -10551,7 +10553,8 @@
             "app_directory_support_server_joined"),
           (ah.APP_DIRECTORY_APPLICATION_EXTERNAL_LINK_CLICKED =
             "app_directory_application_external_link_clicked"),
-          (ah.APP_SHARE_BUTTON_CLICKED = "app_share_button_clicked"),
+          (ah.APP_DIRECTORY_APPLICATION_LINK_COPIED =
+            "app_directory_application_link_copied"),
           (ah.APP_DIRECTORY_RECOMMENDATION_CLICKED =
             "app_directory_recommendation_clicked"),
           (ah.APP_DIRECTORY_SEARCH_RESULT_CLICKED =
@@ -12567,10 +12570,13 @@
       97145: function (e, t, r) {
         "use strict";
         r.d(t, {
-          R: function () {
+          R7: function () {
             return n;
           },
-          f: function () {
+          eQ: function () {
+            return o;
+          },
+          fe: function () {
             return _;
           },
         });
@@ -12604,26 +12610,7 @@
             );
           };
         }
-      },
-      25779: function (e, t, r) {
-        "use strict";
-        r.d(t, {
-          e: function () {
-            return s;
-          },
-          j: function () {
-            return I;
-          },
-        }),
-          r(47120);
-        var a = r(509068),
-          n = r(804410),
-          _ = r(408720),
-          o = r(233517),
-          E = r(931327),
-          i = r(97145);
-        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"];
-        function s() {
+        function o() {
           let e = window;
           return (
             null != e.jQuery ||
@@ -12633,15 +12620,31 @@
             null != e.rambox
           );
         }
-        let l = (0, i.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function I() {
+      },
+      25779: function (e, t, r) {
+        "use strict";
+        r.d(t, {
+          j: function () {
+            return l;
+          },
+        }),
+          r(47120);
+        var a = r(509068),
+          n = r(804410),
+          _ = r(408720),
+          o = r(233517),
+          E = r(931327),
+          i = r(97145);
+        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          s = (0, i.fe)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function l() {
           var e;
           a.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-741eaa4b4990db94ecf1703f6ef13c8c4ceb513d",
+            release: "discord_web-7da274153367cf80b9e91f513e40e2802c9e1055",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12659,12 +12662,12 @@
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 )
               ) &&
-                !s() &&
+                !(0, i.eQ)() &&
                 !(
                   "Aborted" === (a = e).message ||
                   "cancel captcha" === a.message
                 ) &&
-                l()
+                s()
                 ? e
                 : null;
             },
@@ -12710,8 +12713,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "352173"), "352173"));
-          o.YA("builtAt", String("1733863785550"));
+            o.YA("buildNumber", ((e = "352549"), "352549"));
+          o.YA("builtAt", String("1733943926279"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -12738,7 +12741,7 @@
               return i;
             },
           });
-        let _ = "featured",
+        let _ = 0,
           o = "",
           E = 100,
           i = 48;
@@ -54575,4 +54578,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d49f96ce9388b1370982.js.map
+//# sourceMappingURL=sentry.f7c86fe93259a9cb97ad.js.map
