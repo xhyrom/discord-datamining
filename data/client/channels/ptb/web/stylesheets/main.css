@@ -18074,7 +18074,7 @@ h3.improved_f017d0:after {
 :not(.keyboard-mode).full-motion .popover_cf8aee:focus-within,
 :not(.keyboard-mode).full-motion .popover_cf8aee:hover {
   opacity: 0;
-  animation: hoverIn_cf8aee.15s ease forwards;
+  animation: fadeIn_cf8aee.15s ease forwards;
 }
 :not(.keyboard-mode).full-motion
   .popover_cf8aee.visible_cf8aee.expandable_cf8aee,
@@ -18082,7 +18082,19 @@ h3.improved_f017d0:after {
 :not(.keyboard-mode).full-motion .popover_cf8aee:hover.expandable_cf8aee {
   animation-delay: 0.45s;
 }
-@keyframes hoverIn_cf8aee {
+:not(.keyboard-mode).full-motion .popover_cf8aee.fadeInAndOut_cf8aee {
+  opacity: 0;
+  animation:
+    fadeIn_cf8aee.15s ease-in forwards,
+    fadeOut_cf8aee.15s 2s ease-out forwards;
+}
+.reduce-motion .popover_cf8aee.fadeInAndOut_cf8aee {
+  opacity: 0;
+  animation:
+    fadeIn_cf8aee 0s ease-in forwards,
+    fadeOut_cf8aee 0s 2s ease-out forwards;
+}
+@keyframes fadeIn_cf8aee {
   0% {
     top: -14px;
     opacity: 0;
@@ -18095,6 +18107,21 @@ h3.improved_f017d0:after {
     top: -16px;
     opacity: 1;
     pointer-events: all;
+  }
+}
+@keyframes fadeOut_cf8aee {
+  0% {
+    top: -16px;
+    opacity: 1;
+    pointer-events: all;
+  }
+  1% {
+    pointer-events: none;
+  }
+  to {
+    top: -14px;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 .button_cf8aee {
@@ -56260,4 +56287,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ca512bf57f85b1695036.css.map*/
+/*# sourceMappingURL=12633.9f3b88cd7a8b292c5cba.css.map*/
