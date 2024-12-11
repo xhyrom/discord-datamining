@@ -26193,9 +26193,6 @@ div.popoutCloseButton_d523a2:hover {
   cursor: pointer;
   display: contents;
 }
-.custom-profile-theme .clickableContainer_ae1fa2 > .card_ae1fa2 {
-  box-shadow: 0 4px 16px 0 hsl(var(--black-500-hsl) / 8%);
-}
 .clickableContainer_ae1fa2:hover > .card_ae1fa2 {
   background: var(--bg-mod-subtle);
 }
@@ -56268,4 +56265,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.fc70bd8d38827e696aeb.css.map*/
+/*# sourceMappingURL=12633.f688895b90368f681752.css.map*/
