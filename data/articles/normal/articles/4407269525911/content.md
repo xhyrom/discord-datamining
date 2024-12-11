@@ -87,7 +87,7 @@
   >
 </h3>
 <h1 id="h_01GFV5T14GW6CXF9VYAJRM04X9">Localized Prices</h1>
-<h3>
+<h3 id="h_01JESJEMBQ0QAK3202DP54ESP9">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Discord periodically adjusts prices to ensure alignment with local markets. </span
   ><span style="color: #434343"
@@ -336,15 +336,16 @@
   <strong
     >you will keep your current pricing as long as you don't make any further
     subscription changes</strong
-  >. Such changes include changing the frequency at which you are billed (yearly
-  or monthly) or the tier of your subscription (for example, going from Nitro to
-  Nitro Classic).
+  >. Such changes include but are not limited to: changing billing frequency,
+  changing plan tier, changing payment methods, adding or removing boosts,
+  requesting a refund, or any other changes to your subscription features,
+  price, or billing period.
 </p>
 <p>
-  If you’d like to cancel your subscription, you can do so by going to User
-  Settings &gt; Subscriptions. However, keep in mind that canceling your
-  subscription will also result in a loss of grandfathered prices once your
-  subscription ends.
+  If you’d like to cancel your subscription, you can do so by going to
+  <strong>User Settings</strong> &gt; <strong>Subscriptions</strong>. However,
+  keep in mind that canceling your subscription will also result in a loss of
+  grandfathered prices once your subscription ends.
 </p>
 <p id="docs-internal-guid-38183b86-7fff-6a02-d75c-6146c3ef19c4">
   <span class="wysiwyg-font-size-large"
@@ -363,6 +364,25 @@
   If you would like to cancel your Discord subscription, you can go to your
   <strong>User Settings</strong> &gt; <strong>Subscription</strong> to cancel
   your current subscription(s).
+</p>
+<p>
+  <span class="wysiwyg-font-size-large"
+    ><strong
+      >Q: I lost my grandfathered pricing on my subscription, how can I get it
+      back?</strong
+    ></span
+  >
+</p>
+<p>
+  A: Unfortunately, once grandfathered pricing is lost, Discord Support cannot
+  restore it to your subscription. This typically happens when you make changes
+  to your subscription.
+</p>
+<p>
+  Changes that affect grandfathered pricing include: changing your billing
+  frequency, switching plan tiers, updating payment methods, modifying boosts,
+  requesting refunds, or making any adjustments to your subscription's features,
+  price, or billing period.
 </p>
 <p id="docs-internal-guid-592992ef-7fff-43d1-21d0-432540a7e607">
   <span class="wysiwyg-font-size-large"
