@@ -18,7 +18,11 @@
     target="_blank"
     rel="noopener noreferrer"
     >Store pages</a
-  >, deep-linking for Premium App SKUs, and the
+  >,
+  <a
+    href="https://discord.com/developers/docs/monetization/managing-skus#linking-to-a-specific-sku"
+    >deep-linking for Premium App SKUs</a
+  >, and the
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/23810592251031"
     target="_blank"
