@@ -26214,7 +26214,7 @@ div.popoutCloseButton_d523a2:hover {
   background-color: var(--black-500);
   border-radius: var(--radius-xs);
   opacity: 0;
-  cursor: pointer;
+  pointer-events: none;
 }
 .full-motion .clickableImage_ae1fa2:after {
   transition: opacity var(--custom-button-transition-duration) ease;
@@ -56265,4 +56265,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.6d73a9e4e2c440f4aa8d.css.map*/
+/*# sourceMappingURL=12633.f379fcb87bc0aec8bbdb.css.map*/
