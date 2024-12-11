@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-12_user_profile_modal_recent_activity",
+    "label": "User Profile Modal Recent Activity",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recent Activity Tab Enabled"
+    ],
+    "hash": 2340201155,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
