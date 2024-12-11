@@ -16417,6 +16417,10 @@ span.clanTag_a31c43 {
   color: var(--content-inventory-overlay-text-primary);
   display: inline;
 }
+.gameIcon_b245a4 {
+  width: 24px;
+  height: 24px;
+}
 .leaderboardTitle_b245a4 {
   color: var(--content-inventory-overlay-text-secondary);
   flex: 1;
@@ -21585,6 +21589,12 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .settingsClickArea_ca5acd:hover,
 .settingsClickArea_ca5acd:focus {
   color: var(--interactive-hover);
+}
+.settingsSoundmojiClickArea_ca5acd {
+  padding: 0;
+}
+.settingsSoundmojiClickArea_ca5acd:last-child {
+  padding-right: 0;
 }
 .settingsIcon_ca5acd {
   width: 24px;
@@ -56287,4 +56297,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9f3b88cd7a8b292c5cba.css.map*/
+/*# sourceMappingURL=12633.ab9720db14c78ff9fa56.css.map*/
