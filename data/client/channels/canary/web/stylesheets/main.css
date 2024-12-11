@@ -53435,9 +53435,9 @@ html.disable-forced-colors * {
   );
   --background-message-hover: var(--neutral-94);
   --background-modifier-accent: hsl(var(--opacity-20-hsl) / 0.2);
-  --background-modifier-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --background-modifier-hover: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-modifier-selected: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
+    var(--opacity-24-hsl) / 0.23921568627450981
   );
   --background-primary: var(--neutral-95);
   --background-secondary: var(--neutral-97);
@@ -53445,9 +53445,9 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-95);
   --bg-base-secondary: var(--neutral-97);
   --bg-base-tertiary: var(--neutral-100);
-  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --bg-mod-faint: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --bg-mod-strong: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --bg-mod-subtle: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --border-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-strong: hsl(var(--opacity-48-hsl) / 0.47843137254901963);
   --border-subtle: hsl(var(--opacity-20-hsl) / 0.2);
@@ -53553,9 +53553,9 @@ html.disable-forced-colors * {
   --background-feedback-info: var(--blue-new-93);
   --background-feedback-positive: var(--green-new-93);
   --background-feedback-warning: var(--yellow-new-93);
-  --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --background-mod-normal: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+  --background-mod-strong: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --background-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-surface-high: var(--neutral-91);
   --background-surface-higher: var(--neutral-87);
   --background-surface-highest: var(--neutral-83);
@@ -53628,14 +53628,14 @@ html.disable-forced-colors * {
     );
     --background-modifier-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-selected: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--theme-base-color-amount, 0%)
     );
     --background-primary: color-mix(
@@ -53670,20 +53670,20 @@ html.disable-forced-colors * {
     );
     --bg-mod-faint: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-strong: color-mix(
       in oklab,
-      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+      hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -53949,20 +53949,20 @@ html.disable-forced-colors * {
     );
     --background-mod-normal: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-mod-strong: color-mix(
-      in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--theme-base-color-amount, 0%)
     );
+    --background-mod-strong: color-mix(
+      in oklab,
+      hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
     --background-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
         var(--theme-base-color-amount, 0%)
     );
     --background-surface-high: color-mix(
@@ -56297,4 +56297,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ebe2f7c5c1b01f4f5205.css.map*/
+/*# sourceMappingURL=12633.f5631a2b47f05f91e06f.css.map*/
