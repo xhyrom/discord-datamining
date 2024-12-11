@@ -54,7 +54,7 @@
   <strong>Availability Period: </strong>The <strong>PC Player Quest</strong> can
   be accepted on Discord desktop app or browser client from
   <strong>November 29, 2024 </strong>until
-  <strong>December 12, 2024 (11:59PM UTC)</strong>. 
+  <strong>December 11, 2024 (8:00AM PT)</strong>. 
 </p>
 <p>
   Quest requirements must be completed during this period to receive the reward.
@@ -139,7 +139,7 @@
   Once you have finished watching the <strong>PC Game Pass: We Got You </strong
   >video, you'll be eligible to earn the
   <strong>14-day PC Game Pass trial</strong>. You can participate in this Quest
-  until <strong>December 12, 2024 (11:59PM UTC)</strong>.
+  until <strong>December 11, 2024 (8:00AM PT)</strong>.
 </p>
 <p>
   You can claim your reward code through the Quest bar, video player, or Quest

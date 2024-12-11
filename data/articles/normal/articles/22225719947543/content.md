@@ -99,35 +99,27 @@
       >
       <ul>
         <li>
+          <a href="#h_01JEVAKE5QRZNGDD04Y1JH8W2J"
+            ><strong>Delta Force</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JEVAKSXZ809J9QQNGQG4VSB1"
+            ><strong>The Game Awards </strong></a
+          >
+        </li>
+        <li>
           <a href="#h_01JECRHSBEADFQ90T1D55Q29J2"
             ><strong>Minecraft </strong></a
           >
         </li>
-        <li>
-          <a href="#h_01JECRHSBERMYXCKYR3V7KJPK4"><strong>Fortnite </strong></a>
-        </li>
+        <li><a href="#h_01JECRHSBERMYXCKYR3V7KJPK4">Fortnite </a></li>
         <li>
           <a href="#h_01JECRHSBEVVDH97E1YX44KSN4"
             ><strong>The First Descendant </strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JE49VFBMRKKY23WHF49SDRC5"
-            ><strong>World of Warcraft </strong></a
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01JDQ9C6KVNPHKJVSP5VHCVGEV">PC Game Pass</a></strong
-          >
-        </li>
-        <li>
-          <strong><a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF">Fortnite </a></strong>
-        </li>
-        <li>
-          <a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"
-            ><strong>Batman: Arkham Shadow </strong></a
-          >
+          ><a href="#h_01JE49VFBMRKKY23WHF49SDRC5"><strong> </strong></a
+          ><strong><a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF"> </a></strong
+          ><a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"><strong> </strong></a>
         </li>
       </ul>
     </li>
@@ -138,6 +130,21 @@
         ></strong
       >
       <ul>
+        <li>
+          <a href="#h_01JDQ9C6KVNPHKJVSP5VHCVGEV"
+            ><strong>PC Game Pass</strong> </a
+          >
+        </li>
+        <li>
+          <a href="#h_01JE49VFBMRKKY23WHF49SDRC5"
+            ><strong>World of Warcraft</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"
+            ><strong>Batman: Arkham Shadow</strong> </a
+          >
+        </li>
         <li>
           <a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF"><strong>Fortnite</strong></a
           > 
@@ -585,6 +592,36 @@
   ><span style="color: #666666">   </span>
 </h4>
 <h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
+<h2 id="h_01JEVAKE5QRZNGDD04Y1JH8W2J">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28429651446551"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Delta Force - Delta Force Quest</a
+  >
+</h2>
+<p>
+  The<strong> Delta Force Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>December 11, 2024 </strong>until
+  <strong>December 17, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 17, 2025</strong>.
+</p>
+<h2 id="h_01JEVAKSXZ809J9QQNGQG4VSB1">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28423831177623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >The Game Awards - The Game Awards Quest</a
+  >
+</h2>
+<p>
+  <strong>The Game Awards Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>December 11, 2024 </strong>until
+  <strong>December 14, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 14, 2025</strong>.
+</p>
 <h2 id="h_01JECRHSBEADFQ90T1D55Q29J2">
   <a
     href="https://support.discord.com/hc/en-us/articles/28316964742551"
@@ -609,11 +646,14 @@
   >
 </h2>
 <p>
-  The <strong>Fortnite Quest</strong> can be accepted on Discord from
-  <strong>December 6, 2024 </strong>until
-  <strong>December 11, 2024 (11:59PM UTC)</strong>.  Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 11, 2025</strong>.
+  The <strong>Fortnite OG Quest</strong> can be accepted on Discord from
+  <strong>December 11, 2024 </strong>to
+  <strong>December 15, 2024 (11:59PM UTC)</strong>. Users must redeem the
+  <strong>Shield Potion avatar decoration</strong> by 
+  <strong>January 15, 2025 </strong>and the
+  <strong>Bush Camper avatar decoration</strong> by
+  <strong>January 11, 2025</strong>. To receive these rewards, all quest
+  requirements must be completed within the specified timeframe.
 </p>
 <h2 id="h_01JECRHSBEVVDH97E1YX44KSN4">
   <a
@@ -630,6 +670,22 @@
   requirements during this period and claim your reward by
   <strong>December 31, 2024 (23:59 PT)</strong>.
 </p>
+<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
+<h2 id="h_01JDQ9C6KVNPHKJVSP5VHCVGEV">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28110465185047"
+    target="_blank"
+    rel="noopener noreferrer"
+    >PC Game Pass - PC Player Quest</a
+  >
+</h2>
+<p>
+  The <strong>PC Player Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>November 29, 2024</strong> until
+  <strong>December 11, 2024 (8:00AM PT)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>December 31, 2024 (7:59 PM UTC)</strong>.
+</p>
 <h2 id="h_01JE49VFBMRKKY23WHF49SDRC5">
   <a
     href="https://support.discord.com/hc/en-us/articles/28114748484119"
@@ -644,21 +700,6 @@
   <strong>December 10, 2024 (11:59PM UTC)</strong>.  Reward gift codes expire
   <strong>January 31, 2025</strong>. Quest requirements must be completed during
   this period to receive the reward.
-</p>
-<h2 id="h_01JDQ9C6KVNPHKJVSP5VHCVGEV">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28110465185047"
-    target="_blank"
-    rel="noopener noreferrer"
-    >PC Game Pass - PC Player Quest</a
-  >
-</h2>
-<p>
-  The <strong>PC Player Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>November 29, 2024</strong> until
-  <strong>December 12, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>December 31, 2024 (7:59 PM UTC)</strong>.
 </p>
 <h2 id="h_01JDJ4KZEKE5N4VRTSH2W9BH4X">
   <a
@@ -675,7 +716,6 @@
   requirements during this period and claim your reward by
   <strong>January 8, 2024</strong>. 
 </p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
 <h2 id="h_01JDQ9CDY9YG7BT3X2GE7E5WQF">
   <a
     href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quests"

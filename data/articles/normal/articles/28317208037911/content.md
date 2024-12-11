@@ -1,8 +1,8 @@
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28317988424983"
-    width="864"
-    height="242"
+    src="https://support.discord.com/hc/article_attachments/28425522726679"
+    width="781"
+    height="219"
   />
 </p>
 <div class="toc-box">
@@ -12,23 +12,29 @@
   /></strong>
   <ul>
     <li>
-      <a href="#h_01JECPQWZ14HXK7TPPANQV3MW1"
-        ><strong>Promotion Terms</strong></a
+      <strong
+        ><a href="#h_01JECPQWZ14HXK7TPPANQV3MW1">Promotion Terms</a></strong
       >
     </li>
     <li>
-      <a href="#h_01JECPQWZ13PJH52SPQ1S77EZJ"
-        ><strong>How to Complete the Quest</strong></a
+      <strong
+        ><a href="#h_01JECPQWZ13PJH52SPQ1S77EZJ"
+          >How to Complete the Quest</a
+        ></strong
       >
     </li>
     <li>
-      <a href="#h_01JECPQWZ1QVS516DCYVJY1QYK"
-        ><strong>Redemption Instructions</strong></a
+      <strong
+        ><a href="#h_01JECPQWZ1QVS516DCYVJY1QYK"
+          >Redemption Instructions</a
+        ></strong
       >
     </li>
     <li>
-      <a href="#h_01JECPQWZ18R0PRZETMDCZFMTS"
-        ><strong>Frequently Asked Questions</strong></a
+      <strong
+        ><a href="#h_01JECPQWZ18R0PRZETMDCZFMTS"
+          >Frequently Asked Questions</a
+        ></strong
       >
     </li>
   </ul>
@@ -43,7 +49,7 @@
   <strong>Offer Details: </strong>Play 15 minutes of
   <strong>Fortnite</strong> on PC, PlayStation 4, PlayStation 5, Xbox Series X,
   and Xbox Series S to receive the
-  <strong>Bush Camper avatar decoration</strong>. You can learn more about
+  <strong>Shield Potion avatar decoration</strong>. You can learn more about
   avatar decorations
   <a
     href="https://support.discord.com/hc/articles/13410113109911"
@@ -69,18 +75,17 @@
 </p>
 <p>
   <strong>Availability Period: </strong>The <strong>Fortnite Quest</strong> can
-  be accepted on Discord from <strong>December 6, 2024 </strong>until
-  <strong>December 11, 2024 (11:59PM UTC)</strong>. 
+  be accepted on Discord from <strong>December 11, 2024 </strong>until
+  <strong>December 15, 2024 (11:59PM UTC)</strong>. 
 </p>
 <p>
-  Quest requirements must be completed during this period to receive the
-  reward. 
+  Quest requirements must be completed during this period to receive the reward.
 </p>
 <p>
-  <strong>NOTE</strong>: The Bush Camper avatar decoration is a limited-time
+  <strong>NOTE</strong>: The Shield Potion avatar decoration is a limited-time
   avatar decoration and will only be yours as an avatar decoration until
-  <strong>February 11, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.    
+  <strong>February 15, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.   
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p>
@@ -129,11 +134,10 @@
 <h1 id="h_01JECPQWZ1QVS516DCYVJY1QYK">Redemption Instructions</h1>
 <p>
   Once you have completed the Quest by playing 15 minutes of
-  <strong>Fortnite</strong>, you will receive a reward code in
-  <strong>Quest Home </strong>(<strong>Discovery &gt; Quests</strong>). You can
-  participate in this Quest until
-  <strong>December 11, 2024 (11:59 PM UTC)</strong> and claim your reward by
-  <strong>January 11, 2025</strong>.
+  <strong>Fortnite</strong>, you'll be eligible to earn the
+  <strong>Shield Potion avatar decoration</strong>. You can participate in this
+  Quest until <strong>December 15, 2024 (11:59 PM UTC)</strong> and claim your
+  reward by <strong>January 15, 2025</strong>.
 </p>
 <p>You can use the following methods to claim your avatar decoration:</p>
 <p>
@@ -142,15 +146,14 @@
   >
 </p>
 <p>
-  To claim your <strong>Bush Camper avatar decoration</strong>, simply press
-  the<strong> Claim Reward</strong> button in either the
-  <strong>Quest bar</strong>.  
+  To claim your <strong>Shield Potion avatar decoration</strong>, simply press
+  the<strong> Claim Reward</strong> button in the <strong>Quest bar</strong>.  
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28318013577239"
-    width="624"
-    height="464"
+    src="https://support.discord.com/hc/article_attachments/28425510615703"
+    width="655"
+    height="486"
   />
 </p>
 <h4 id="h_01JECPQWZ10JPTRY17K57H82JG" class="wysiwyg-text-align-center">
@@ -187,9 +190,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28318013580311"
+    src="https://support.discord.com/hc/article_attachments/28425510619159"
     width="624"
-    height="341"
+    height="342"
   />
 </p>
 <h4 id="h_01JECPQWZ1BZD6BS0RB4432MBC" class="wysiwyg-text-align-center">
@@ -205,15 +208,14 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28318013581463"
-    width="260"
-    height="543"
+    src="https://support.discord.com/hc/article_attachments/28425510623255"
+    width="272"
+    height="567"
   />
-   
-  <img
-    src="https://support.discord.com/hc/article_attachments/28318013584663"
-    width="260"
-    height="543"
+    <img
+    src="https://support.discord.com/hc/article_attachments/28425522739607"
+    width="273"
+    height="566"
   />
 </p>
 <h4 id="h_01JECPQWZ119RVFC31J199ZZZ4" class="wysiwyg-text-align-center">
@@ -307,3 +309,23 @@
   notifications about the quest, the period to complete and claim the reward for
   the Quest is over.
 </p>
+<p><strong>Q: Can I still claim the Bush Camper avatar decoration?</strong></p>
+<p>
+  A: If you have completed the previous <strong>Fortnite OG Quest</strong> for
+  the <strong>Bush Camper avatar decoration</strong> by
+  <strong>December 11, 2024</strong>, you have until
+  <strong>January 11, 2025</strong> to claim this offer. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28425510629015"
+    width="499"
+    height="273"
+  />
+</p>
+<h4 id="h_01JES03PADKZCH9NSDBFVGEJNE" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Bush Camper Avatar Decoration - Enjoy until February 11, 2025 (11:59
+    UTC)!  </span
+  >
+</h4>

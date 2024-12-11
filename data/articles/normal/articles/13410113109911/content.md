@@ -1,40 +1,60 @@
-<p id="docs-internal-guid-5caf3839-7fff-ea94-fb64-7b1f9802cc64">
+<div class="toc-box">
   <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      ><span class="wysiwyg-font-size-large">What this article covers:</span
-      ><br /></span
-  ></strong>
-</p>
-<ul>
-  <li>
-    <a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self"
-      >What are avatar decorations?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01J4SC8K91558197MD0K9V444M"
-      >How can I collect an avatar decoration?</a
-    ><br />
-    <ul>
-      <li><a href="#h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</a></li>
-      <li><a href="#h_01J4SBJWG1NX44NS285X62330B">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
-      >How to apply an avatar decoration to my profile</a
-    ><a href="https://support.discord.com/hc/en-us/articles/13410113109911"
-      ><br
-    /></a>
-    <ul>
-      <li><a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop/Browser</a></li>
-      <li><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</a>
-  </li>
-</ul>
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self"
+          >What are avatar decorations?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01J4SC8K91558197MD0K9V444M"
+          >How can I collect an avatar decoration?</a
+        ></strong
+      ><br />
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</a></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01J4SBJWG1NX44NS285X62330B">Mobile</a></strong>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
+          >How to apply an avatar decoration to my profile</a
+        ><a href="https://support.discord.com/hc/en-us/articles/13410113109911"
+          ><br /></a
+      ></strong>
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop/Browser</a></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN">Mobile</a></strong>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GWJJX4GZDK1QJAXZBB7N4RNG"
+          >Frequently Asked Questions</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
 <p id="docs-internal-guid-7e1ad2f6-7fff-9866-e11f-e7ad74a22924">
   <span
@@ -62,6 +82,24 @@
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an avatar decoration?
 </h1>
+<div class="mega-box">
+  Gift Nitro this holiday season and earn up to 3 exclusive, festive avatar
+  decorations! With each Nitro gift purchase, you’ll get to choose 1 of 3 unique
+  avatar decorations as a free reward. Want to collect all 3 avatar decorations?
+  Simply make three separate Nitro gift purchases.<br /><br />Once you receive
+  the avatar decoration, it is yours to use. This offer is rolling out to
+  eligible users throughout December. Check for a green promotion banner before
+  purchasing.<br /><br />This offer ends on
+  <strong>January 6th, 2024</strong> and applies only to Nitro gifts, not Nitro
+  Basic gifts.<br />Curious about Nitro gifting? Check out our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360020877112#h_01JDAHX8ZV2GM9GG6SPVN2ZKAA"
+    target="_blank"
+    rel="noopener noreferrer"
+    >article</a
+  >
+  for more information.
+</div>
 <h2 id="h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</h2>
 <p>Avatar decorations can be found and purchased in the Shop. </p>
 <p id="docs-internal-guid-0079e285-7fff-f5d0-c3ec-04a1a55c7011">

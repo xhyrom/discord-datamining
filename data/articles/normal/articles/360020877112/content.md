@@ -12,6 +12,37 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
+<h3 id="h_01JDAHX8ZV2GM9GG6SPVN2ZKAA">
+  Gift Nitro this holiday season and earn up to 3 exclusive, festive
+  <a
+    href="https://support.discord.com/hc/en-us/articles/13410113109911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decorations</a
+  >! You can buy this promotion via the Discord mobile app on iOS and Android,
+  or through the desktop app and web version. Note that this offer is not
+  currently available through mobile web browsers.<br /><br />With every Nitro
+  gift purchase, you can select 1 of 3 exclusive avatar decorations as a free
+  reward. You will be able to collect all 3 avatar decorations by sending 3
+  separate Nitro gift purchases.<br /><br />Once you receive the avatar
+  decoration, it is yours to use.This offer is rolling out to eligible users
+  throughout December. Check for a green promotion banner before purchasing.
+</h3>
+<h3 id="h_01JE79SB5ZH5VYWQY9J006MK4R" class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28255041310359"
+    width="624"
+    height="249"
+  />
+</h3>
+<h3 id="h_01JE79SB60AW8D8WXXNP4X1ERV">
+  After sending a gift, choose from three options to claim your avatar
+  decoration!<br />This offer ends on <strong>January 6th, 2024</strong> and
+  applies only to Nitro gifts, not Nitro Basic gifts.<br /><br /><strong
+    >NOTE</strong
+  >: The holiday avatar decorations will be revoked if you refund your Nitro
+  gifts.
+</h3>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
