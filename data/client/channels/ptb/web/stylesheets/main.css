@@ -8866,6 +8866,9 @@ div.modalHeader_c5e09c {
   padding-top: 1px;
   box-shadow: 0 0 0 hsl(var(--black-500-hsl) / 0);
 }
+:where(.visual-refresh) .newMessagesBar_cf58b5 {
+  color: var(--white);
+}
 .newMessagesPillContainer_cf58b5 {
   position: absolute;
   top: 16px;
@@ -56265,4 +56268,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f379fcb87bc0aec8bbdb.css.map*/
+/*# sourceMappingURL=12633.fc70bd8d38827e696aeb.css.map*/
