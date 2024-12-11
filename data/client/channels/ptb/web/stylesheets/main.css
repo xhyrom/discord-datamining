@@ -2231,6 +2231,17 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   background-color: var(--background-floating);
   color: var(--interactive-active);
 }
+.visual-refresh .primary_e258f5,
+.visual-refresh .secondary_e258f5,
+.visual-refresh .tertiary_e258f5 {
+  background-color: var(--button-secondary-background);
+  color: var(--button-secondary-text);
+}
+.visual-refresh .primary_e258f5:hover,
+.visual-refresh .secondary_e258f5:hover,
+.visual-refresh .tertiary_e258f5:hover {
+  background-color: var(--button-secondary-background-hover);
+}
 .size24_e258f5 {
   padding: 4px;
   width: 24px;
@@ -8839,6 +8850,9 @@ div.modalHeader_c5e09c {
 }
 .visual-refresh .messagesErrorBar_cf58b5 .spinnerItem_cf58b5 {
   background-color: var(--text-feedback-critical);
+}
+.visual-refresh .jumpToPresentBar_cf58b5 {
+  color: var(--text-default);
 }
 .newMessagesBar_cf58b5 {
   height: 32px;
@@ -15624,6 +15638,10 @@ span.clanTag_a31c43 {
   font-weight: 600;
   border-radius: 8px;
 }
+.visual-refresh .content_c2654d {
+  background: none;
+  padding-left: var(--space-4);
+}
 .isUnread_c2654d .content_c2654d {
   color: var(--divider-color);
 }
@@ -20805,10 +20823,10 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .noAutocompleteResults_ee43bc {
   height: 200px;
 }
-.stickersHeaderWithEmojiResults_f81d65 {
+.secondarySection_f81d65 {
   padding-top: 0;
 }
-.emojiStickersDivider_f81d65 {
+.divider_f81d65 {
   padding-bottom: 0 !important;
 }
 .spinner_f75fa8 {
@@ -56254,4 +56272,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.fb199d1720695ee9d0b7.css.map*/
+/*# sourceMappingURL=12633.3f5f5d6f9206cac4f8d8.css.map*/
