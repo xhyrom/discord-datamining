@@ -7,14 +7,14 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: User Profile Recent Activity Enabled",
-      "Treatment 9999: User Profile Recent Activity Load Test Enabled"
+      "Treatment 2: User Profile Recent Activity and React/Reply Enabled"
     ],
     "hash": 2038753337,
     "buckets": [
       -1,
       0,
       1,
-      9999
+      2
     ],
     "holdout": {},
     "aa_mode": false,
