@@ -107,8 +107,8 @@
       </tr>
       <tr>
         <td>iOS</td>
-        <td>iOS 14+</td>
-        <td>iOS 15+</td>
+        <td>iOS 15.1+</td>
+        <td>iOS 15.1+</td>
       </tr>
     </tbody>
   </table>
@@ -124,7 +124,7 @@
 <ul>
   <li>
     <strong>For iOS: </strong>You can find iPhones and iPads supported by iOS
-    14+
+    15.1+
     <a
       href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/14.0/ios/14.0"
       target="_blank"
