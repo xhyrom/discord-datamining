@@ -14610,7 +14610,7 @@ span.clanTag_a31c43 {
   margin-bottom: calc(
     -4px + var(--custom-message-spacing-vertical-container-cozy)
   );
-  border-color: var(--interactive-muted);
+  border-color: var(--spine-default);
   border-width: 2px 0 0 2px;
   border-width: var(--spine-width) 0 0 var(--spine-width);
   border-style: solid;
@@ -15164,8 +15164,8 @@ span.clanTag_a31c43 {
   position: relative;
 }
 .cozy_f9f2ca.hasThread_f9f2ca:after {
-  border-left: 2px solid var(--interactive-muted);
-  border-bottom: 2px solid var(--interactive-muted);
+  border-left: 2px solid var(--spine-default);
+  border-bottom: 2px solid var(--spine-default);
   border-bottom-left-radius: 8px;
   bottom: 29px;
   content: "";
@@ -22904,6 +22904,16 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .visual-refresh .inlineContainer_bdf0de {
   display: grid;
   grid-template-columns: 1fr auto;
+  box-shadow: none;
+}
+.visual-refresh .inlineContainer_bdf0de .accessoryBar_bdf0de {
+  border-top: none;
+}
+.visual-refresh .flushContainer_bdf0de {
+  border: none;
+}
+.visual-refresh .flushContainer_bdf0de .accessoryBar_bdf0de {
+  border-top: none;
 }
 .inner_bdf0de {
   display: flex;
@@ -25296,13 +25306,6 @@ div.popoutCloseButton_d523a2:hover {
   align-items: center;
   padding: 12px 8px;
 }
-.avatarCoachmark_a3e4b5 {
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 8px 12px;
-}
 .profileCoachmark_a3e4b5 {
   width: 210px;
   display: flex;
@@ -25310,23 +25313,11 @@ div.popoutCloseButton_d523a2:hover {
   align-items: center;
   padding: 54px 8px 12px;
 }
-.statusCoachmark_a3e4b5 {
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 8px 12px;
-}
 .tooltipHeader_a3e4b5 {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-}
-.avatarImage_a3e4b5 {
-  position: absolute;
-  left: 27px;
-  top: -38px;
 }
 .profileImage_a3e4b5 {
   position: absolute;
@@ -28060,10 +28051,12 @@ img.thumbnail_c64476 {
   background: var(--background-primary);
 }
 .spinner_c5a065 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 240px;
   height: 240px;
-  align-self: center;
-  justify-self: center;
 }
 .action_c5a065 {
   display: flex;
@@ -42151,6 +42144,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: var(--primary-630);
   --scrollbar-thin-thumb: var(--primary-730);
   --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
+  --spine-default: var(--primary-500);
   --spoiler-hidden-background: var(--primary-700);
   --spoiler-revealed-background: var(--primary-660);
   --stage-card-pill-bg: var(--primary-630);
@@ -43400,6 +43394,11 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
         var(--theme-base-color-amount, 0%)
     );
+    --spine-default: color-mix(
+      in oklab,
+      var(--primary-500) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --spoiler-hidden-background: color-mix(
       in oklab,
       var(--primary-700) 100%,
@@ -43850,6 +43849,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: var(--primary-160);
   --scrollbar-thin-thumb: hsl(var(--primary-500-hsl) / 0.3);
   --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
+  --spine-default: var(--primary-300);
   --spoiler-hidden-background: var(--primary-200);
   --spoiler-revealed-background: var(--primary-160);
   --stage-card-pill-bg: var(--white);
@@ -45102,6 +45102,11 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
         var(--theme-base-color-amount, 0%)
     );
+    --spine-default: color-mix(
+      in oklab,
+      var(--primary-300) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --spoiler-hidden-background: color-mix(
       in oklab,
       var(--primary-200) 100%,
@@ -45552,6 +45557,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: var(--plum-25);
   --scrollbar-thin-thumb: var(--plum-20);
   --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
+  --spine-default: var(--plum-13);
   --spoiler-hidden-background: var(--plum-14);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --stage-card-pill-bg: var(--plum-25);
@@ -46804,6 +46810,11 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
         var(--theme-base-color-amount, 0%)
     );
+    --spine-default: color-mix(
+      in oklab,
+      var(--plum-13) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
     --spoiler-hidden-background: color-mix(
       in oklab,
       var(--plum-14) 100%,
@@ -47255,6 +47266,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: var(--plum-19);
   --scrollbar-thin-thumb: var(--plum-21);
   --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
+  --spine-default: var(--plum-13);
   --spoiler-hidden-background: var(--plum-14);
   --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
   --stage-card-pill-bg: var(--plum-19);
@@ -48506,6 +48518,11 @@ html.disable-forced-colors * {
       hsl(var(--black-hsl) / 0) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0)
         var(--theme-base-color-amount, 0%)
+    );
+    --spine-default: color-mix(
+      in oklab,
+      var(--plum-13) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
@@ -52179,6 +52196,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-37);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-39);
+  --spine-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --text-brand: var(--blurple-25);
   --text-link: var(--blue-new-26);
   --text-muted: var(--neutral-22);
@@ -52500,6 +52518,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-39) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --spine-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -52865,6 +52889,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-30);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-32);
+  --spine-default: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --text-brand: var(--blurple-49);
   --text-link: var(--blue-new-49);
   --text-muted: var(--neutral-38);
@@ -53188,6 +53213,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-32) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --spine-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -53546,6 +53577,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-45);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-46);
+  --spine-default: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --text-brand: var(--blurple-41);
   --text-link: var(--blue-new-42);
   --text-muted: var(--neutral-33);
@@ -53863,6 +53895,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-46) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --spine-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -54223,6 +54261,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-42);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-44);
+  --spine-default: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --text-brand: var(--blurple-35);
   --text-link: var(--blue-new-36);
   --text-muted: var(--neutral-29);
@@ -54538,6 +54577,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-44) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --spine-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -56313,4 +56358,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9e669d637fb12ed84294.css.map*/
+/*# sourceMappingURL=12633.2adcce02b9e913c7b275.css.map*/

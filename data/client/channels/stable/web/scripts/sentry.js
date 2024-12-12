@@ -6330,7 +6330,7 @@
             USER_RELATIONSHIP: (e) => "/users/@me/relationships/".concat(e),
             USER_BULK_RELATIONSHIPS: "/users/@me/relationships/bulk",
             USER_PROFILE: (e) => "/users/".concat(e, "/profile"),
-            GUILD_PROFILE: (e, t) =>
+            USER_GUILD_PROFILE: (e, t) =>
               "/guilds/".concat(e, "/profile/").concat(t),
             USER_CHANNELS: "/users/@me/channels",
             DM_CHANNEL: (e) => "/users/@me/dms/".concat(e),
@@ -7283,6 +7283,7 @@
                 .concat(r, "/download"),
             GUILD_CONVERT_TO_CLAN: (e) => "/clan/".concat(e),
             GUILD_CLAN_DISCOVERY_INFO: (e) => "/discovery/".concat(e, "/clan"),
+            GUILD_PROFILE: (e) => "/guilds/".concat(e, "/profile"),
             USER_SET_CLAN_IDENTITY: "/users/@me/clan",
             CLAN_SETTINGS: (e) => "/clan/".concat(e, "/settings"),
             DISABLE_CLAN: (e) => "/clan/".concat(e, "/disable"),
@@ -9998,6 +9999,7 @@
           (ah.GIF_UNFAVORITED = "gif_unfavorited"),
           (ah.GUILD_DISCOVERY_VIEWED = "guild_discovery_viewed"),
           (ah.GUILD_DISCOVERY_SEARCH_FAILED = "guild_discovery_search_failed"),
+          (ah.GUILD_DISCOVERY_SEARCH_START = "guild_discovery_search_start"),
           (ah.GUILD_DISCOVERY_GET_FEATURED_GUILDS_FAILED =
             "guild_discovery_get_featured_guilds_failed"),
           (ah.GUILD_DISCOVERY_GUILD_SELECTED =
@@ -12651,7 +12653,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4d27c4bcb595f7361c7beba84ef4900fe0149c66",
+            release: "discord_web-ed85a82384d876f4278500c22e3c9c2034178196",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12720,8 +12722,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "353120"), "353120"));
-          o.YA("builtAt", String("1734036340642"));
+            o.YA("buildNumber", ((e = "353277"), "353277"));
+          o.YA("builtAt", String("1734045957198"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15253,6 +15255,13 @@
               [a.LIGHT]: { raw: "BLACK", opacity: 0 },
               [a.MIDNIGHT]: { raw: "BLACK", opacity: 0 },
               [a.DARKER]: { raw: "BLACK", opacity: 0 },
+            },
+            SPINE_DEFAULT: {
+              category: "generic",
+              [a.DARK]: { raw: "PRIMARY_500", opacity: 1 },
+              [a.LIGHT]: { raw: "PRIMARY_300", opacity: 1 },
+              [a.MIDNIGHT]: { raw: "PLUM_13", opacity: 1 },
+              [a.DARKER]: { raw: "PLUM_13", opacity: 1 },
             },
             SPOILER_HIDDEN_BACKGROUND: {
               category: "generic",
@@ -23286,6 +23295,7 @@
           (a.SCROLLBAR_AUTO_TRACK = "scrollbar-auto-track"),
           (a.SCROLLBAR_THIN_THUMB = "scrollbar-thin-thumb"),
           (a.SCROLLBAR_THIN_TRACK = "scrollbar-thin-track"),
+          (a.SPINE_DEFAULT = "spine-default"),
           (a.SPOILER_HIDDEN_BACKGROUND = "spoiler-hidden-background"),
           (a.SPOILER_REVEALED_BACKGROUND = "spoiler-revealed-background"),
           (a.STAGE_CARD_PILL_BG = "stage-card-pill-bg"),
@@ -25036,6 +25046,12 @@
               _.I.BLACK,
               _.I.BLACK,
               _.I.BLACK,
+            ],
+            "spine-default": [
+              _.I.PRIMARY_500,
+              _.I.PRIMARY_300,
+              _.I.PLUM_13,
+              _.I.PLUM_13,
             ],
             "spoiler-hidden-background": [
               _.I.PRIMARY_700,
@@ -54587,4 +54603,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.d535dcc1d0cd3b42a4a7.js.map
+//# sourceMappingURL=sentry.aeb182fc9a9a6d3d0ef1.js.map
