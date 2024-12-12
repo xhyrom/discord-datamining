@@ -42,7 +42,7 @@
       "OPTIONS"
     ]
   },
-  "GUILD_PROFILE": {
+  "USER_GUILD_PROFILE": {
     "url": "/guilds/:param/profile/:param",
     "allowed_methods": null
   },
@@ -4072,6 +4072,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "GUILD_PROFILE": {
+    "url": "/guilds/:param/profile",
+    "allowed_methods": null
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
