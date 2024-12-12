@@ -13325,6 +13325,8 @@ div.cardContainer_c22357 {
   display: grid;
   grid-template: "layer" 1fr/1fr;
   background-color: var(--modal-footer-background);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .headerBackground_b3552d {
   grid-area: layer;
@@ -56311,4 +56313,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.cd3d5c03e10ff6c86c39.css.map*/
+/*# sourceMappingURL=12633.9e669d637fb12ed84294.css.map*/
