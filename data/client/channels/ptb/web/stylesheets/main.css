@@ -27895,6 +27895,7 @@ img.thumbnail_c64476 {
   gap: var(--spacing-8);
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .baseAvatar_e3a0ec {
   display: inline-block;
@@ -56313,4 +56314,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c57e3224fd12cfd83b7e.css.map*/
+/*# sourceMappingURL=12633.34afa66e0d14b7891c14.css.map*/
