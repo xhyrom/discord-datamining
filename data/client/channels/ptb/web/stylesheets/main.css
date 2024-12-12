@@ -9703,6 +9703,21 @@ div.modalHeader_c5e09c {
   top: -4px;
   right: -8px;
 }
+.effect_efd76b {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1001;
+  bottom: 0;
+  width: var(--custom-voice-channel-effect-voice-channel-effect-animation-size);
+}
+.effects_b5b75b {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
 .soundButtonWrapper_f40049 {
   list-style: none;
   position: relative;
@@ -12679,6 +12694,7 @@ div.cardContainer_c22357 {
   background: radial-gradient(80%70%at 100%50%, #2d01dc 0%, transparent 100%),
     radial-gradient(80%70%at 100%50%, #b182ff 0%, transparent 100%);
   opacity: 0.4;
+  pointer-events: none;
 }
 .heading_aac415 {
   margin-bottom: 8px;
@@ -56297,4 +56313,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f5631a2b47f05f91e06f.css.map*/
+/*# sourceMappingURL=12633.c57e3224fd12cfd83b7e.css.map*/
