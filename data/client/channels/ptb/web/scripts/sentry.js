@@ -12651,7 +12651,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2d2af7f287d0dc03fcb2c747b91cece19f40524b",
+            release: "discord_web-031b95c6330dcac4f6af1f4c413b88ac0befe3cc",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12720,8 +12720,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "352957"), "352957"));
-          o.YA("builtAt", String("1734024329659"));
+            o.YA("buildNumber", ((e = "352993"), "352993"));
+          o.YA("builtAt", String("1734027459364"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15683,14 +15683,15 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_27: "#78aef3",
+              BLUE_NEW_26: "#7cb0f3",
               BLUE_NEW_36: "#5297ed",
               BLUE_NEW_42: "#3687e8",
               BLUE_NEW_49: "#0074e3",
               BLUE_NEW_9: "#c4dbfc",
               BLUE_NEW_93: "#071627",
-              BLURPLE_11: "#c4cffe",
+              BLURPLE_10: "#c8d2fe",
               BLURPLE_19: "#aabafd",
+              BLURPLE_25: "#97aafb",
               BLURPLE_26: "#94a7fb",
               BLURPLE_35: "#7a8ef8",
               BLURPLE_41: "#6a7df6",
@@ -15779,13 +15780,12 @@
               NEUTRAL_1: "#ffffff",
               NEUTRAL_10: "#dcdcde",
               NEUTRAL_100: "#000000",
-              NEUTRAL_13: "#d0d0d4",
+              NEUTRAL_11: "#d8d8db",
               NEUTRAL_14: "#ccccd0",
-              NEUTRAL_16: "#c5c5c9",
+              NEUTRAL_15: "#c8c8cd",
               NEUTRAL_17: "#c1c1c6",
               NEUTRAL_2: "#fbfbfb",
               NEUTRAL_22: "#aeaeb4",
-              NEUTRAL_23: "#aaaab1",
               NEUTRAL_27: "#9c9ca3",
               NEUTRAL_29: "#94949c",
               NEUTRAL_3: "#f7f7f8",
@@ -15793,6 +15793,7 @@
               NEUTRAL_31: "#8d8d95",
               NEUTRAL_32: "#8a8a92",
               NEUTRAL_33: "#86868e",
+              NEUTRAL_37: "#787881",
               NEUTRAL_38: "#75757e",
               NEUTRAL_39: "#71717a",
               NEUTRAL_4: "#f3f3f4",
@@ -15802,14 +15803,15 @@
               NEUTRAL_45: "#5d5d67",
               NEUTRAL_46: "#5a5a64",
               NEUTRAL_5: "#efeff0",
-              NEUTRAL_55: "#484851",
               NEUTRAL_59: "#42424a",
               NEUTRAL_6: "#ebebed",
+              NEUTRAL_66: "#37373e",
               NEUTRAL_67: "#36363c",
+              NEUTRAL_69: "#333339",
               NEUTRAL_7: "#e7e7e9",
-              NEUTRAL_70: "#313137",
               NEUTRAL_71: "#303035",
-              NEUTRAL_73: "#2d2d32",
+              NEUTRAL_72: "#2e2e34",
+              NEUTRAL_74: "#2b2b31",
               NEUTRAL_75: "#2a2a2f",
               NEUTRAL_76: "#28282d",
               NEUTRAL_79: "#242429",
@@ -16221,7 +16223,7 @@
               RED_NEW_50: "#d22d39",
               RED_NEW_57: "#b32a31",
               RED_NEW_61: "#a1272d",
-              RED_NEW_72: "#741f21",
+              RED_NEW_71: "#782022",
               RED_NEW_74: "#6c1d1f",
               RED_NEW_81: "#521717",
               RED_NEW_88: "#3a100f",
@@ -54585,4 +54587,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.dfdc4a48130bdbc418d3.js.map
+//# sourceMappingURL=sentry.411d4d039c9e1f822c9e.js.map
