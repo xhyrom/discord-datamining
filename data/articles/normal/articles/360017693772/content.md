@@ -98,15 +98,34 @@
   </li>
   <li>Any gift subscription credits you’ve received.</li>
 </ul>
-<h3 id="docs-internal-guid-81447882-7fff-565e-5bcb-18a09345ac0d">
-  <span style="color: #434343"
-    >For more information on how to cancel your subscriptions, please see </span
+<h3 id="h_01JEVWZA92SJTQY3YJAZQTBC5B">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >For more information on how to cancel a subscription, please check out one
+    of these relevant articles depending on your subscription type: </span
   ><a
-    href="https://support.discord.com/hc/en-us/articles/19580873036695-How-to-Cancel-your-Nitro-Server-Boosting-or-other-Discord-Subscriptions"
+    href="https://support.discord.com/hc/en-us/articles/19580873036695"
     target="_blank"
     rel="noopener noreferrer"
-    >our Help Center article.</a
-  >
+    >Nitro subscription</a
+  ><span style="color: #434343" data-darkreader-inline-color="">, </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/26729525788695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Server Boosting</a
+  ><span style="color: #434343" data-darkreader-inline-color="">, </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/26729967472279"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Server subscription</a
+  ><span style="color: #434343" data-darkreader-inline-color="">, or </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/26729692307351"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Premium App</a
+  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="docs-internal-guid-357dd012-7fff-bfb5-ae53-6e5b0c67d911">
   <strong>Billing Information and History</strong>
@@ -194,7 +213,7 @@
 <p>2. Find the <strong>Pay for it With</strong> section.</p>
 <p>3. Select a payment method.</p>
 <h3 id="h_01J1FW6MK76848SSRQH0HK2ZP5">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><strong>Note:</strong> Updating your subscription payment method does not
     automatically change which payment method is set as your default payment
     method. If you’d like to set one card as both your default and subscription
@@ -203,7 +222,7 @@
   >
 </h3>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><strong
       ><span id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
         ><img
@@ -249,8 +268,11 @@
   ></strong>
 </p>
 <h3 id="docs-internal-guid-e95b8cf5-7fff-c220-4973-dab4e76e1700">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Note</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: If you have an active subscription, we require you to have at least one
     saved payment method. If you’d like to cancel your subscription and remove
     your cards on file, be sure to cancel your subscription first.</span
@@ -286,9 +308,13 @@
   id="docs-internal-guid-b5360d60-7fff-6234-f2a9-8ec53be34ba4"
   class="wysiwyg-text-align-center"
 >
-  <span style="color: #666666">You may see either the </span
-  ><strong><span style="color: #666666">“</span></strong
-  ><span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >You may see either the </span
+  ><strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >“</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color=""
     >Download extended purchase receipt" or "Download tax invoice” within this
     section. </span
   >
@@ -349,8 +375,11 @@
   </li>
 </ul>
 <h3 id="docs-internal-guid-21c27682-7fff-cdda-995b-b6ffaa26baf7">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Note</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: When selecting your payment method, please note we are unable to provide
     refunds for purchases made with Paysafecards.</span
   >
@@ -394,8 +423,11 @@
   /></span>
 </p>
 <h3 id="docs-internal-guid-25cbb1e0-7fff-89c0-923f-5b6e311a057e">
-  <strong><span style="color: #434343">Note</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Note</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: All purchases made within Discord will be labeled DISCORD*ItemName within
     credit/debit card statements depending on how your bank renders this and
     PAYPAL* DISCORD if completed through PayPal. If you would like a refund for
@@ -405,7 +437,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343">.</span>
+  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="docs-internal-guid-5f0782a4-7fff-8843-f22f-66f97347c229">
   <strong>Frequently Asked Questions</strong>

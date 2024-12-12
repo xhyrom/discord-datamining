@@ -1,5 +1,5 @@
 <p>
-  If your team owns a verified app or activity, you will be ready to get started
+  If your team owns a verified app or activity you will be ready to get started
   with the onboarding process for
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/17709085688727"
@@ -63,6 +63,8 @@
       </li>
     </ul>
   </li>
+</ul>
+<ul>
   <li>
     Agreement to the
     <a
@@ -84,15 +86,15 @@
   </li>
 </ul>
 <p>
-  As you complete these inputs, your checklist in the Eligibility Requirements
-  reflects what has been done and what has not yet been added. Once all the
-  requirements are fulfilled, your app will be ready to begin monetizing!
+  Completed items in the Eligibility Requirements checklist will be reflected in
+  real time. Once all the requirements are fulfilled, your app will be ready to
+  begin monetizing!<!-- notionvc: 0bead11e-87c2-42c7-bbdb-f03ede3c7923 -->
 </p>
-<h3 id="h_01HAW8RXS6Q8GQ5RJE4FM9DG6T">Adding SKUs</h3>
+<h3 id="h_01HAW8RXS6Q8GQ5RJE4FM9DG6T">Creating SKUs</h3>
 <p>
   Finally, once you have completed onboarding successfully, you are ready to
   start adding premium features. You can do this by adding SKUs (stock-keeping
-  units) to your app. SKUs are products that users can purchase within your app.
+  units) to your app. SKUs are products that users can purchase within your app.<!-- notionvc: 85f67692-7b67-49f8-9a29-6c5f7c834c08 -->
 </p>
 <p>
   <img

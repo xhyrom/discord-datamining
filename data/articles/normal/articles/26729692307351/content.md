@@ -23,6 +23,11 @@
       >
     </li>
     <li>
+      <a href="#h_01JEVX46WAK369PEP2ANBKNPBJ"
+        >How to Upgrade or Downgrade your Premium App Subscription</a
+      >
+    </li>
+    <li>
       <a href="#h_01J920H4RC7Q808T04ZGEXWWP3"
         >How Do I Re-Subscribe After Canceling My Subscription?</a
       >
@@ -110,6 +115,13 @@
       height="191"
   /></span>
 </p>
+<h4 id="h_01JEVX77T2BAX94KTPN6KWJHFQ" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Manage Button in Premium Membership Banner</span
+    ></span
+  >
+</h4>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >4. Here you will see all of your current Premium Membership
@@ -131,6 +143,89 @@
     >5. Follow the prompts to fully cancel your Premium Membership.</span
   >
 </p>
+<h1 id="h_01JEVX46WAK369PEP2ANBKNPBJ">
+  How to Upgrade or Downgrade your Premium App Subscription
+</h1>
+<div class="tip-box">
+  <strong>Note:</strong> If you’re upgrading your subscription you will have to
+  pay a prorated price for the difference. If you’re downgrading your
+  subscription, it will not change nor will you be charged the new upgraded
+  price point until your subscription renews.
+</div>
+<p>
+  1. Tap on the <strong>cogwheel </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/28461460702743"
+    width="20"
+    height="20"
+  />] next to your Discord username to access your User Settings.
+</p>
+<p>2. Then head to the <strong>Subscriptions </strong>tab.</p>
+<p>
+  3. Next, tap on <strong>Manage Subscriptions </strong>next to your App
+  Subscription banner.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28461460704151"
+    width="624"
+    height="768"
+  />
+</p>
+<h4 id="h_01JEVX46WA40YMHZ6ZEWDCDDEX" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Subscriptions Tab and Manage Subscriptions Button </span
+  >
+</h4>
+<p>
+  4. Select which Premium App subscription you want to make a change for by
+  pressing on <strong>Switch Plan</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28461460705303"
+    width="624"
+    height="441"
+  />
+</p>
+<h4 id="h_01JEVX46WAS583Z1QCHA2N83GJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Switch Plan Button</span
+  >
+</h4>
+<p>
+  5.  You can upgrade or downgrade to another subscription plan by tapping on
+  <strong>Switch to Plan</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28461460706839"
+    width="523"
+    height="860"
+  />
+</p>
+<h4 id="h_01JEVX46WA0Q7T6263HE7ZPP0R" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Switching a Plan</span
+  >
+</h4>
+<p>
+  6. After selecting the plan you want to switch to, you’ll then go through the
+  payment flow. After confirming your payment details, you’ll have a final
+  pop-up that will confirm the subscription change. Press on
+  <strong>Confirm</strong> to confirm these changes.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/28461482995607"
+    width="843.3592233009708"
+    height="1106.484818287682"
+  />
+</p>
+<h4 id="h_01JEVX46WAYNMMCT5P7AJWW4ER" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Confirm Button in Subscription Upgraded Window</span
+  >
+</h4>
 <h1 id="h_01J920H4RC7Q808T04ZGEXWWP3">
   How Do I Re-Subscribe After Canceling My Subscription?
 </h1>
