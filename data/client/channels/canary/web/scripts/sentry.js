@@ -4457,7 +4457,7 @@
             return eM;
           },
           AEg: function () {
-            return ez;
+            return eJ;
           },
           ANM: function () {
             return n7;
@@ -4631,7 +4631,7 @@
             return tV;
           },
           KA4: function () {
-            return _J;
+            return _z;
           },
           KFR: function () {
             return e2;
@@ -4685,13 +4685,13 @@
             return n$.O4;
           },
           OBS: function () {
-            return nz;
+            return nJ;
           },
           OBo: function () {
             return or;
           },
           OGo: function () {
-            return z;
+            return J;
           },
           OMz: function () {
             return nj.OM;
@@ -4811,7 +4811,7 @@
             return nj.TC;
           },
           TNx: function () {
-            return _z;
+            return _J;
           },
           TPd: function () {
             return nw.T;
@@ -4904,7 +4904,7 @@
             return em;
           },
           YeM: function () {
-            return nJ;
+            return nz;
           },
           Ypu: function () {
             return V;
@@ -4964,7 +4964,7 @@
             return _8;
           },
           b4C: function () {
-            return tJ;
+            return tz;
           },
           b8q: function () {
             return _Q;
@@ -5072,7 +5072,7 @@
             return eK;
           },
           hVg: function () {
-            return eJ;
+            return ez;
           },
           hes: function () {
             return P;
@@ -5321,7 +5321,7 @@
             return tW;
           },
           wZ8: function () {
-            return J;
+            return z;
           },
           xAR: function () {
             return oh;
@@ -5354,7 +5354,7 @@
             return m;
           },
           ylB: function () {
-            return tz;
+            return tJ;
           },
           yqN: function () {
             return on;
@@ -5427,8 +5427,8 @@
           j,
           $,
           q,
-          z,
           J,
+          z,
           Q,
           Z,
           ee,
@@ -5481,8 +5481,8 @@
           ej,
           e$,
           eq,
-          ez,
           eJ,
+          ez,
           eQ,
           eZ,
           e0,
@@ -5545,8 +5545,8 @@
           tj,
           t$,
           tq,
-          tz,
           tJ,
+          tz,
           tQ,
           tZ,
           t0,
@@ -5609,8 +5609,8 @@
           rj,
           r$,
           rq,
-          rz,
           rJ,
+          rz,
           rQ,
           rZ,
           r0,
@@ -5673,8 +5673,8 @@
           aj,
           a$,
           aq,
-          az,
           aJ,
+          az,
           aQ,
           aZ,
           a0,
@@ -6201,7 +6201,7 @@
           ((rL = m || (m = {})).SENT = "SENT"),
           (rL.SENDING = "SENDING"),
           (rL.SEND_FAILED = "SEND_FAILED");
-        let nz = new Set([
+        let nJ = new Set([
           nY.u.REPLY,
           nY.u.THREAD_STARTER_MESSAGE,
           nY.u.CONTEXT_MENU_COMMAND,
@@ -6282,20 +6282,20 @@
           (rv[(rv.MEDIUM = 2)] = "MEDIUM"),
           (rv[(rv.HIGH = 3)] = "HIGH"),
           (rv[(rv.VERY_HIGH = 4)] = "VERY_HIGH");
-        let nJ = Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
+        let nz = Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
         ((rw = $ || ($ = {}))[(rw.NONE = 0)] = "NONE"),
           (rw[(rw.ELEVATED = 1)] = "ELEVATED"),
           ((rB = q || (q = {}))[(rB.DISABLED = 0)] = "DISABLED"),
           (rB[(rB.MEMBERS_WITHOUT_ROLES = 1)] = "MEMBERS_WITHOUT_ROLES"),
           (rB[(rB.ALL_MEMBERS = 2)] = "ALL_MEMBERS"),
-          ((rW = z || (z = {}))[(rW.NONE = 0)] = "NONE"),
+          ((rW = J || (J = {}))[(rW.NONE = 0)] = "NONE"),
           (rW[(rW.FRIEND = 1)] = "FRIEND"),
           (rW[(rW.BLOCKED = 2)] = "BLOCKED"),
           (rW[(rW.PENDING_INCOMING = 3)] = "PENDING_INCOMING"),
           (rW[(rW.PENDING_OUTGOING = 4)] = "PENDING_OUTGOING"),
           (rW[(rW.IMPLICIT = 5)] = "IMPLICIT"),
           (rW[(rW.SUGGESTION = 6)] = "SUGGESTION"),
-          ((rY = J || (J = {})).CONFIRM = "CONFIRM"),
+          ((rY = z || (z = {})).CONFIRM = "CONFIRM"),
           (rY.SUCCESS = "SUCCESS"),
           (rY.ERROR = "ERROR"),
           (rY.OPEN = "OPEN"),
@@ -7826,10 +7826,10 @@
           ((rq = eE || (eE = {})).LOADING = "LOADING"),
           (rq.COMPLETE = "COMPLETE"),
           (rq.FAILED = "FAILED"),
-          ((rz = ei || (ei = {})).FEATURED = "featured"),
-          (rz.GAMES_YOU_PLAY = "gamesYouPlay"),
-          (rz.SEARCH = "search"),
-          (rz.MISC = "misc");
+          ((rJ = ei || (ei = {})).FEATURED = "featured"),
+          (rJ.GAMES_YOU_PLAY = "gamesYouPlay"),
+          (rJ.SEARCH = "search"),
+          (rJ.MISC = "misc");
         let _P = 128,
           _g = 1024,
           _U = 2e3,
@@ -7980,26 +7980,26 @@
           }),
           _$ = 10,
           _q = 25,
-          _z = /^FILTER_/,
-          _J = /^ANSWER_/;
-        ((rJ = ec || (ec = {})).GUILD = "GUILD"),
-          (rJ.FAVORITES = "FAVORITES"),
-          (rJ.CHANNEL = "CHANNEL"),
-          (rJ.GUILD_CHANNEL = "GUILD_CHANNEL"),
-          (rJ.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
-          (rJ.GIF = "GIF"),
-          (rJ.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
-          (rJ.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
-          (rJ.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
-          (rJ.STICKER = "STICKER"),
-          (rJ.STICKER_SHOP = "STICKER_SHOP"),
-          (rJ.INSTANT_INVITE = "INSTANT_INVITE"),
-          (rJ.EMOJI = "EMOJI"),
-          (rJ.EMOJI_REACTION = "EMOJI_REACTION"),
-          (rJ.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
-          (rJ.DMS = "DMS"),
-          (rJ.THREAD = "THREAD"),
-          (rJ.SOUNDBOARD = "SOUNDBOARD"),
+          _J = /^FILTER_/,
+          _z = /^ANSWER_/;
+        ((rz = ec || (ec = {})).GUILD = "GUILD"),
+          (rz.FAVORITES = "FAVORITES"),
+          (rz.CHANNEL = "CHANNEL"),
+          (rz.GUILD_CHANNEL = "GUILD_CHANNEL"),
+          (rz.CHAT_SIDEBAR = "CHAT_SIDEBAR"),
+          (rz.GIF = "GIF"),
+          (rz.GUILD_DISCOVERY = "GUILD_DISCOVERY"),
+          (rz.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG"),
+          (rz.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC"),
+          (rz.STICKER = "STICKER"),
+          (rz.STICKER_SHOP = "STICKER_SHOP"),
+          (rz.INSTANT_INVITE = "INSTANT_INVITE"),
+          (rz.EMOJI = "EMOJI"),
+          (rz.EMOJI_REACTION = "EMOJI_REACTION"),
+          (rz.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION"),
+          (rz.DMS = "DMS"),
+          (rz.THREAD = "THREAD"),
+          (rz.SOUNDBOARD = "SOUNDBOARD"),
           ((rQ = es || (es = {})).NEWEST = "newest"),
           (rQ.OLDEST = "oldest"),
           (rQ.MOST_RELEVANT = "most_relevant"),
@@ -10989,6 +10989,10 @@
           (ah.MY_ACCOUNT_PAGE_TAB_NAVIGATE = "my_account_page_tab_navigate"),
           (ah.USER_VOICE_ACTIVITY_VIEWED = "user_voice_activity_viewed"),
           (ah.PARTY_VOICE_ACTIVITY_VIEWED = "party_voice_activity_viewed"),
+          (ah.SOUNDMOJI_PLAY = "soundmoji_play"),
+          (ah.SOUNDMOJI_SELECT = "soundmoji_select"),
+          (ah.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED =
+            "soundmoji_in_autocomplete_toggled"),
           (ah.BLOCK_USER_CONFIRMED = "block_user_confirmed"),
           (ah.IGNORE_USER_CONFIRMED = "ignore_user_confirmed"),
           (ah.USER_REMEDIATION_ACTION = "user_remediation_action"),
@@ -11086,11 +11090,11 @@
             },
           }),
           oo = 864e5;
-        ((ag = ez || (ez = {})).NORMAL = "normal"),
+        ((ag = eJ || (eJ = {})).NORMAL = "normal"),
           (ag.MINIMUM = "minimum"),
           (ag.NO_CHAT = "no-chat"),
           (ag.FULL_SCREEN = "full-screen"),
-          ((aU = eJ || (eJ = {})).THEATRE = "theatre"),
+          ((aU = ez || (ez = {})).THEATRE = "theatre"),
           (aU.FULL_SCREEN = "full-screen"),
           (aU.PIP = "pip"),
           (aU.POPOUT = "popout"),
@@ -11646,13 +11650,13 @@
           (aq[(aq.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
           (aq[(aq.NO_RELATION = 8)] = "NO_RELATION");
         let ou = 14;
-        ((az = ts || (ts = {}))[(az.NONE = 0)] = "NONE"),
-          (az[(az.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
-          (az[(az.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
+        ((aJ = ts || (ts = {}))[(aJ.NONE = 0)] = "NONE"),
+          (aJ[(aJ.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
+          (aJ[(aJ.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
         let oR = 30;
-        ((aJ = tl || (tl = {})).OVERLAY = "OVERLAY"),
-          (aJ.APP = "APP"),
-          (aJ.POPOUT = "POPOUT");
+        ((az = tl || (tl = {})).OVERLAY = "OVERLAY"),
+          (az.APP = "APP"),
+          (az.POPOUT = "POPOUT");
         let oA = __OVERLAY__ ? "OVERLAY" : "APP";
         ((aQ = tI || (tI = {})).COMPLETE = "complete"),
           (aQ.TRANSITION = "transition"),
@@ -12199,9 +12203,9 @@
           ((nS = tq || (tq = {})).CHANNEL_SETTINGS = "Channel Settings"),
           (nS.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings"),
           (nS.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"),
-          ((nC = tz || (tz = {}))[(nC.INCOMING = 1)] = "INCOMING"),
+          ((nC = tJ || (tJ = {}))[(nC.INCOMING = 1)] = "INCOMING"),
           (nC[(nC.CHANNEL_FOLLOWER = 2)] = "CHANNEL_FOLLOWER"),
-          ((nP = tJ || (tJ = {}))[(nP.APPLICATION = 0)] = "APPLICATION"),
+          ((nP = tz || (tz = {}))[(nP.APPLICATION = 0)] = "APPLICATION"),
           (nP[(nP.OVERVIEW = 1)] = "OVERVIEW"),
           (nP[(nP.CHANNEL_FOLLOWING = 2)] = "CHANNEL_FOLLOWING"),
           (nP[(nP.TWITCH = 3)] = "TWITCH"),
@@ -12304,8 +12308,8 @@
           j,
           $,
           q,
-          z,
           J,
+          z,
           Q,
           Z,
           ee,
@@ -12400,67 +12404,67 @@
           ((q = p || (p = {})).OVERVIEW = "OVERVIEW"),
           (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
           (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((z = h || (h = {})).INVITE = "invite"),
-          (z.GUILD_TEMPLATE = "guild-template"),
-          (z.CHANNEL = "channel"),
-          (z.GIFT_CODE = "gift-code"),
-          (z.MESSAGE = "message"),
-          (z.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          (z.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          (z.PROMOTIONS = "promotions"),
-          (z.FEATURE_PROMO_URL = "promo-url"),
-          (z.NONE = "none"),
-          (z.REMOTE_AUTH = "remote-auth"),
-          (z.USER_PROFILE = "user-profile"),
-          (z.BUILD_OVERRIDE = "build-override"),
-          (z.CONTACT_SYNC = "contact-sync"),
-          (z.ADD_FRIENDS = "add-friends"),
-          (z.COMPOSE_MESSAGE = "compose-message"),
-          (z.GUILD_EVENT_DETAILS = "guild-event-details"),
-          (z.FRIENDS = "friends"),
-          (z.EDIT_PROFILE = "edit-profile"),
-          (z.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          (z.USER_CONNECTIONS_CALLBACK = "user-connections-callback"),
-          (z.VOICE_CHANNEL = "voice-channel"),
-          (z.GUILD_HOME = "guild-home"),
-          (z.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          (z.SESSION_MANAGEMENT = "session-management"),
-          (z.CONNECTIONS = "connections"),
-          (z.GUILD_SETTINGS = "guild-settings"),
-          (z.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          (z.ACTIVATE_DEVICE = "activate-device"),
-          (z.FAMILY_CENTER = "family-center"),
-          (z.SHARE = "share"),
-          (z.CREATE_VOICE_INVITE = "create_voice_invite"),
-          (z.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          (z.ACCOUNT_STANDING = "account-standing"),
-          (z.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          (z.SHOP = "shop"),
-          (z.AUTHORIZED_APPS = "authorized-apps"),
-          (z.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
-          (z.ICYMI = "icymi"),
-          (z.QUESTS = "quests"),
-          (z.GIFT = "gift"),
-          (z.NITRO_HOME = "store");
+          ((J = h || (h = {})).INVITE = "invite"),
+          (J.GUILD_TEMPLATE = "guild-template"),
+          (J.CHANNEL = "channel"),
+          (J.GIFT_CODE = "gift-code"),
+          (J.MESSAGE = "message"),
+          (J.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (J.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (J.PROMOTIONS = "promotions"),
+          (J.FEATURE_PROMO_URL = "promo-url"),
+          (J.NONE = "none"),
+          (J.REMOTE_AUTH = "remote-auth"),
+          (J.USER_PROFILE = "user-profile"),
+          (J.BUILD_OVERRIDE = "build-override"),
+          (J.CONTACT_SYNC = "contact-sync"),
+          (J.ADD_FRIENDS = "add-friends"),
+          (J.COMPOSE_MESSAGE = "compose-message"),
+          (J.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (J.FRIENDS = "friends"),
+          (J.EDIT_PROFILE = "edit-profile"),
+          (J.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (J.USER_CONNECTIONS_CALLBACK = "user-connections-callback"),
+          (J.VOICE_CHANNEL = "voice-channel"),
+          (J.GUILD_HOME = "guild-home"),
+          (J.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (J.SESSION_MANAGEMENT = "session-management"),
+          (J.CONNECTIONS = "connections"),
+          (J.GUILD_SETTINGS = "guild-settings"),
+          (J.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (J.ACTIVATE_DEVICE = "activate-device"),
+          (J.FAMILY_CENTER = "family-center"),
+          (J.SHARE = "share"),
+          (J.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (J.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (J.ACCOUNT_STANDING = "account-standing"),
+          (J.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (J.SHOP = "shop"),
+          (J.AUTHORIZED_APPS = "authorized-apps"),
+          (J.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
+          (J.ICYMI = "icymi"),
+          (J.QUESTS = "quests"),
+          (J.GIFT = "gift"),
+          (J.NITRO_HOME = "store");
         let eE = "CacheStoreLazy",
           ei = "CacheStoreChannelsLazy",
           ec = "CacheStore";
-        ((J = D || (D = {})).UPLOAD = "upload"),
-          (J.GLOBAL_EMOJI = "global-emoji"),
-          (J.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
-          (J.BADGE = "badge"),
-          (J.ANIMATED_EMOJI = "animated-emoji"),
-          (J.ANIMATED_AVATAR = "animated-avatar"),
-          (J.CUSTOM_PROFILES = "custom-profiles"),
-          (J.GLOBAL_STICKER = "global-sticker"),
-          (J.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
-          (J.LONGER_MESSAGE = "longer-message"),
-          (J.GUILD_CAP = "guild-cap"),
-          (J.ACTIVITIES = "activities"),
-          (J.APP_ICONS = "app-icons"),
-          (J.SOUNDBOARD = "soundboard"),
-          (J.CLIENT_THEMES = "client-themes"),
-          (J.FOR_LATER = "for-later"),
+        ((z = D || (D = {})).UPLOAD = "upload"),
+          (z.GLOBAL_EMOJI = "global-emoji"),
+          (z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
+          (z.BADGE = "badge"),
+          (z.ANIMATED_EMOJI = "animated-emoji"),
+          (z.ANIMATED_AVATAR = "animated-avatar"),
+          (z.CUSTOM_PROFILES = "custom-profiles"),
+          (z.GLOBAL_STICKER = "global-sticker"),
+          (z.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
+          (z.LONGER_MESSAGE = "longer-message"),
+          (z.GUILD_CAP = "guild-cap"),
+          (z.ACTIVITIES = "activities"),
+          (z.APP_ICONS = "app-icons"),
+          (z.SOUNDBOARD = "soundboard"),
+          (z.CLIENT_THEMES = "client-themes"),
+          (z.FOR_LATER = "for-later"),
           ((Q = S || (S = {})).UNKNOWN = "ESKERRORDOMAIN0"),
           (Q.CLIENT_INVALID = "ESKERRORDOMAIN1"),
           (Q.PAYMENT_CANCELED = "ESKERRORDOMAIN2"),
@@ -12644,7 +12648,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d466094107831729cce25f30fe67492b00abf194",
+            release: "discord_web-206638b2af0cb5320fb6d5fdd47ebf22456429b4",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12713,8 +12717,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "352738"), "352738"));
-          o.YA("builtAt", String("1733960666394"));
+            o.YA("buildNumber", ((e = "352745"), "352745"));
+          o.YA("builtAt", String("1733961049364"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -17406,8 +17410,8 @@
           j,
           $,
           q,
-          z,
           J,
+          z,
           Q,
           Z,
           ee,
@@ -17779,54 +17783,54 @@
           (q.VIDEO_STATE_UPDATE = "VIDEO_STATE_UPDATE"),
           (q.READY = "READY"),
           (q.ERROR = "ERROR"),
-          ((z = O || (O = {}))[(z.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
-          (z[(z.SERVICE_UNAVAILABLE = 1001)] = "SERVICE_UNAVAILABLE"),
-          (z[(z.TRANSACTION_ABORTED = 1002)] = "TRANSACTION_ABORTED"),
-          (z[(z.INVALID_PAYLOAD = 4e3)] = "INVALID_PAYLOAD"),
-          (z[(z.INVALID_COMMAND = 4002)] = "INVALID_COMMAND"),
-          (z[(z.INVALID_GUILD = 4003)] = "INVALID_GUILD"),
-          (z[(z.INVALID_EVENT = 4004)] = "INVALID_EVENT"),
-          (z[(z.INVALID_CHANNEL = 4005)] = "INVALID_CHANNEL"),
-          (z[(z.INVALID_PERMISSIONS = 4006)] = "INVALID_PERMISSIONS"),
-          (z[(z.INVALID_CLIENTID = 4007)] = "INVALID_CLIENTID"),
-          (z[(z.INVALID_ORIGIN = 4008)] = "INVALID_ORIGIN"),
-          (z[(z.INVALID_TOKEN = 4009)] = "INVALID_TOKEN"),
-          (z[(z.INVALID_USER = 4010)] = "INVALID_USER"),
-          (z[(z.INVALID_INVITE = 4011)] = "INVALID_INVITE"),
-          (z[(z.INVALID_ACTIVITY_JOIN_REQUEST = 4012)] =
+          ((J = O || (O = {}))[(J.UNKNOWN_ERROR = 1e3)] = "UNKNOWN_ERROR"),
+          (J[(J.SERVICE_UNAVAILABLE = 1001)] = "SERVICE_UNAVAILABLE"),
+          (J[(J.TRANSACTION_ABORTED = 1002)] = "TRANSACTION_ABORTED"),
+          (J[(J.INVALID_PAYLOAD = 4e3)] = "INVALID_PAYLOAD"),
+          (J[(J.INVALID_COMMAND = 4002)] = "INVALID_COMMAND"),
+          (J[(J.INVALID_GUILD = 4003)] = "INVALID_GUILD"),
+          (J[(J.INVALID_EVENT = 4004)] = "INVALID_EVENT"),
+          (J[(J.INVALID_CHANNEL = 4005)] = "INVALID_CHANNEL"),
+          (J[(J.INVALID_PERMISSIONS = 4006)] = "INVALID_PERMISSIONS"),
+          (J[(J.INVALID_CLIENTID = 4007)] = "INVALID_CLIENTID"),
+          (J[(J.INVALID_ORIGIN = 4008)] = "INVALID_ORIGIN"),
+          (J[(J.INVALID_TOKEN = 4009)] = "INVALID_TOKEN"),
+          (J[(J.INVALID_USER = 4010)] = "INVALID_USER"),
+          (J[(J.INVALID_INVITE = 4011)] = "INVALID_INVITE"),
+          (J[(J.INVALID_ACTIVITY_JOIN_REQUEST = 4012)] =
             "INVALID_ACTIVITY_JOIN_REQUEST"),
-          (z[(z.INVALID_ENTITLEMENT = 4015)] = "INVALID_ENTITLEMENT"),
-          (z[(z.INVALID_GIFT_CODE = 4016)] = "INVALID_GIFT_CODE"),
-          (z[(z.INVALID_GUILD_TEMPLATE = 4017)] = "INVALID_GUILD_TEMPLATE"),
-          (z[(z.INVALID_SOUND = 4018)] = "INVALID_SOUND"),
-          (z[(z.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
-          (z[(z.INVALID_CONNECTION_CALLBACK_STATE = 4020)] =
+          (J[(J.INVALID_ENTITLEMENT = 4015)] = "INVALID_ENTITLEMENT"),
+          (J[(J.INVALID_GIFT_CODE = 4016)] = "INVALID_GIFT_CODE"),
+          (J[(J.INVALID_GUILD_TEMPLATE = 4017)] = "INVALID_GUILD_TEMPLATE"),
+          (J[(J.INVALID_SOUND = 4018)] = "INVALID_SOUND"),
+          (J[(J.INVALID_PROVIDER = 4019)] = "INVALID_PROVIDER"),
+          (J[(J.INVALID_CONNECTION_CALLBACK_STATE = 4020)] =
             "INVALID_CONNECTION_CALLBACK_STATE"),
-          (z[(z.BAD_REQUEST_FOR_PROVIDER = 4021)] = "BAD_REQUEST_FOR_PROVIDER"),
-          (z[(z.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
-          (z[(z.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
-          (z[(z.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
-          (z[(z.SELECT_VOICE_FORCE_REQUIRED = 5003)] =
+          (J[(J.BAD_REQUEST_FOR_PROVIDER = 4021)] = "BAD_REQUEST_FOR_PROVIDER"),
+          (J[(J.OAUTH2_ERROR = 5e3)] = "OAUTH2_ERROR"),
+          (J[(J.SELECT_CHANNEL_TIMED_OUT = 5001)] = "SELECT_CHANNEL_TIMED_OUT"),
+          (J[(J.GET_GUILD_TIMED_OUT = 5002)] = "GET_GUILD_TIMED_OUT"),
+          (J[(J.SELECT_VOICE_FORCE_REQUIRED = 5003)] =
             "SELECT_VOICE_FORCE_REQUIRED"),
-          (z[(z.INVALID_ACTIVITY_SECRET = 5005)] = "INVALID_ACTIVITY_SECRET"),
-          (z[(z.NO_ELIGIBLE_ACTIVITY = 5006)] = "NO_ELIGIBLE_ACTIVITY"),
-          (z[(z.PURCHASE_CANCELED = 5008)] = "PURCHASE_CANCELED"),
-          (z[(z.PURCHASE_ERROR = 5009)] = "PURCHASE_ERROR"),
-          (z[(z.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010)] =
+          (J[(J.INVALID_ACTIVITY_SECRET = 5005)] = "INVALID_ACTIVITY_SECRET"),
+          (J[(J.NO_ELIGIBLE_ACTIVITY = 5006)] = "NO_ELIGIBLE_ACTIVITY"),
+          (J[(J.PURCHASE_CANCELED = 5008)] = "PURCHASE_CANCELED"),
+          (J[(J.PURCHASE_ERROR = 5009)] = "PURCHASE_ERROR"),
+          (J[(J.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010)] =
             "UNAUTHORIZED_FOR_ACHIEVEMENT"),
-          (z[(z.RATE_LIMITED = 5011)] = "RATE_LIMITED"),
-          (z[(z.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
+          (J[(J.RATE_LIMITED = 5011)] = "RATE_LIMITED"),
+          (J[(J.UNAUTHORIZED_FOR_APPLICATION = 5012)] =
             "UNAUTHORIZED_FOR_APPLICATION"),
-          (z[(z.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
-          ((J = L || (L = {}))[(J.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
-          (J[(J.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
-          (J[(J.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
-          (J[(J.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
-          (J[(J.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
-          (J[(J.RATELIMITED = 4002)] = "RATELIMITED"),
-          (J[(J.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
-          (J[(J.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
-          (J[(J.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
+          (J[(J.NO_CONNECTION_FOUND = 5013)] = "NO_CONNECTION_FOUND"),
+          ((z = L || (L = {}))[(z.CLOSE_NORMAL = 1e3)] = "CLOSE_NORMAL"),
+          (z[(z.CLOSE_UNSUPPORTED = 1003)] = "CLOSE_UNSUPPORTED"),
+          (z[(z.CLOSE_ABNORMAL = 1006)] = "CLOSE_ABNORMAL"),
+          (z[(z.INVALID_CLIENTID = 4e3)] = "INVALID_CLIENTID"),
+          (z[(z.INVALID_ORIGIN = 4001)] = "INVALID_ORIGIN"),
+          (z[(z.RATELIMITED = 4002)] = "RATELIMITED"),
+          (z[(z.TOKEN_REVOKED = 4003)] = "TOKEN_REVOKED"),
+          (z[(z.INVALID_VERSION = 4004)] = "INVALID_VERSION"),
+          (z[(z.INVALID_ENCODING = 4005)] = "INVALID_ENCODING");
         let eH = "token",
           ex = "tokens",
           eK = "https://".concat("status.discord.com"),
@@ -29332,8 +29336,8 @@
                 },
               });
             var q = E.unpack,
-              z = E.last,
-              J = Math.round,
+              J = E.last,
+              z = Math.round,
               Q = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
@@ -29342,15 +29346,15 @@
                   n = r[1],
                   _ = r[2],
                   o = r[3],
-                  E = z(e) || "auto";
+                  E = J(e) || "auto";
                 void 0 === o && (o = 1),
                   "auto" === E && (E = o < 1 ? "rgba" : "rgb"),
-                  (a = J(a)),
-                  (n = J(n));
+                  (a = z(a)),
+                  (n = z(n));
                 var i =
-                  "000000" + ((a << 16) | (n << 8) | (_ = J(_))).toString(16);
+                  "000000" + ((a << 16) | (n << 8) | (_ = z(_))).toString(16);
                 i = i.substr(i.length - 6);
-                var c = "0" + J(255 * o).toString(16);
+                var c = "0" + z(255 * o).toString(16);
                 switch (((c = c.substr(c.length - 2)), E.toLowerCase())) {
                   case "rgba":
                     return "#" + i + c;
@@ -29755,21 +29759,21 @@
               ej = E.unpack,
               e$ = E.DEG2RAD,
               eq = Math.sin,
-              ez = Math.cos,
-              eJ = function () {
+              eJ = Math.cos,
+              ez = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
                 var r = ej(e, "lch"),
                   a = r[0],
                   n = r[1],
                   _ = r[2];
-                return isNaN(_) && (_ = 0), [a, ez((_ *= e$)) * n, eq(_) * n];
+                return isNaN(_) && (_ = 0), [a, eJ((_ *= e$)) * n, eq(_) * n];
               },
               eQ = E.unpack,
               eZ = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = eJ((e = eQ(e, "lch"))[0], e[1], e[2]),
+                var r = ez((e = eQ(e, "lch"))[0], e[1], e[2]),
                   a = eB(r[0], r[1], r[2]);
                 return [a[0], a[1], a[2], e.length > 3 ? e[3] : 1];
               },
@@ -30268,7 +30272,7 @@
               (i.format.oklch = function () {
                 for (var e = [], t = arguments.length; t--; )
                   e[t] = arguments[t];
-                var r = eJ((e = tp(e, "lch"))[0], e[1], e[2]),
+                var r = ez((e = tp(e, "lch"))[0], e[1], e[2]),
                   a = tN(r[0], r[1], r[2]);
                 return [a[0], a[1], a[2], e.length > 3 ? e[3] : 1];
               }),
@@ -30812,7 +30816,7 @@
                   h
                 );
               },
-              tz = function (e) {
+              tJ = function (e) {
                 for (var t = [1, 1], r = 1; r < e; r++) {
                   for (var a = [1], n = 1; n <= t.length; n++)
                     a[n] = (t[n] || 0) + t[n - 1];
@@ -30820,7 +30824,7 @@
                 }
                 return t;
               },
-              tJ = function (e) {
+              tz = function (e) {
                 var t, r, a, n, _, o, E, i, c, s, l;
                 if (
                   2 ===
@@ -30882,7 +30886,7 @@
                   (c = e.map(function (e) {
                     return e.lab();
                   })),
-                    (s = tz((l = e.length - 1))),
+                    (s = tJ((l = e.length - 1))),
                     (n = function (e) {
                       var t = 1 - e;
                       return new I(
@@ -31598,7 +31602,7 @@
                 return (u /= a), new I(o, t).alpha(u > 0.99999 ? 1 : u, !0);
               }),
               (u.bezier = function (e) {
-                var t = tJ(e);
+                var t = tz(e);
                 return (
                   (t.scale = function () {
                     return tq(t);
@@ -43975,8 +43979,8 @@ Error:`,
             emailLabel: j = d,
             emailPlaceholder: $ = N,
             formTitle: q = T,
-            isRequiredLabel: z = D,
-            messageLabel: J = O,
+            isRequiredLabel: J = D,
+            messageLabel: z = O,
             messagePlaceholder: Q = f,
             nameLabel: Z = p,
             namePlaceholder: ee = L,
@@ -44013,12 +44017,12 @@ Error:`,
                 formTitle: q,
                 emailLabel: j,
                 emailPlaceholder: $,
-                messageLabel: J,
+                messageLabel: z,
                 messagePlaceholder: Q,
                 nameLabel: Z,
                 namePlaceholder: ee,
                 successMessageText: ea,
-                isRequiredLabel: z,
+                isRequiredLabel: J,
                 addScreenshotButtonLabel: V,
                 removeScreenshotButtonLabel: et,
                 onFormClose: eE,
@@ -44369,7 +44373,7 @@ ${
           var t = e.parentNode;
           t && t.removeChild(e);
         }
-        function z(e, t, r) {
+        function J(e, t, r) {
           var a,
             n,
             _,
@@ -44383,9 +44387,9 @@ ${
           )
             for (_ in e.defaultProps)
               void 0 === o[_] && (o[_] = e.defaultProps[_]);
-          return J(e, o, a, n, null);
+          return z(e, o, a, n, null);
         }
-        function J(e, t, r, a, n) {
+        function z(e, t, r, a, n) {
           var _ = {
             type: e,
             props: t,
@@ -44512,11 +44516,11 @@ ${
                           "number" == typeof n ||
                           "bigint" == typeof n ||
                           n.constructor == String
-                        ? J(null, n, null, null, n)
+                        ? z(null, n, null, null, n)
                         : j(n)
-                          ? J(Q, { children: n }, null, null, null)
+                          ? z(Q, { children: n }, null, null, null)
                           : void 0 === n.constructor && n.__b > 0
-                            ? J(
+                            ? z(
                                 n.type,
                                 n.props,
                                 n.key,
@@ -45355,7 +45359,7 @@ ${
             }),
             [],
           );
-          return z(
+          return J(
             "h2",
             {
               class: "dialog__header",
@@ -45364,7 +45368,7 @@ ${
             },
             e.formTitle,
             e.showBranding
-              ? z("a", {
+              ? J("a", {
                   class: "brand-link",
                   target: "_blank",
                   href: "https://sentry.io/welcome/",
@@ -45446,7 +45450,7 @@ ${
               },
               [A, N, d, f, L],
             );
-          return z(
+          return J(
             "form",
             {
               class: "form",
@@ -45490,13 +45494,13 @@ ${
               __source: { fileName: eK, lineNumber: 144 },
             },
             M && P
-              ? z(M, {
+              ? J(M, {
                   onError: y,
                   __self: this,
                   __source: { fileName: eK, lineNumber: 146 },
                 })
               : null,
-            z(
+            J(
               "div",
               {
                 class: "form__right",
@@ -45504,7 +45508,7 @@ ${
                 __self: this,
                 __source: { fileName: eK, lineNumber: 149 },
               },
-              z(
+              J(
                 "div",
                 {
                   class: "form__top",
@@ -45512,7 +45516,7 @@ ${
                   __source: { fileName: eK, lineNumber: 150 },
                 },
                 S
-                  ? z(
+                  ? J(
                       "div",
                       {
                         class: "form__error-container",
@@ -45523,7 +45527,7 @@ ${
                     )
                   : null,
                 c
-                  ? z(
+                  ? J(
                       "label",
                       {
                         for: "name",
@@ -45531,14 +45535,14 @@ ${
                         __self: this,
                         __source: { fileName: eK, lineNumber: 154 },
                       },
-                      z(eF, {
+                      J(eF, {
                         label: L,
                         isRequiredLabel: D,
                         isRequired: d,
                         __self: this,
                         __source: { fileName: eK, lineNumber: 155 },
                       }),
-                      z("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: r,
                         id: "name",
@@ -45550,7 +45554,7 @@ ${
                         __source: { fileName: eK, lineNumber: 156 },
                       }),
                     )
-                  : z("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: r,
                       name: "name",
@@ -45559,7 +45563,7 @@ ${
                       __source: { fileName: eK, lineNumber: 167 },
                     }),
                 i
-                  ? z(
+                  ? J(
                       "label",
                       {
                         for: "email",
@@ -45567,14 +45571,14 @@ ${
                         __self: this,
                         __source: { fileName: eK, lineNumber: 171 },
                       },
-                      z(eF, {
+                      J(eF, {
                         label: A,
                         isRequiredLabel: D,
                         isRequired: N,
                         __self: this,
                         __source: { fileName: eK, lineNumber: 172 },
                       }),
-                      z("input", {
+                      J("input", {
                         class: "form__input",
                         defaultValue: t,
                         id: "email",
@@ -45586,7 +45590,7 @@ ${
                         __source: { fileName: eK, lineNumber: 173 },
                       }),
                     )
-                  : z("input", {
+                  : J("input", {
                       "aria-hidden": !0,
                       value: t,
                       name: "email",
@@ -45594,7 +45598,7 @@ ${
                       __self: this,
                       __source: { fileName: eK, lineNumber: 184 },
                     }),
-                z(
+                J(
                   "label",
                   {
                     for: "message",
@@ -45602,14 +45606,14 @@ ${
                     __self: this,
                     __source: { fileName: eK, lineNumber: 187 },
                   },
-                  z(eF, {
+                  J(eF, {
                     label: f,
                     isRequiredLabel: D,
                     isRequired: !0,
                     __self: this,
                     __source: { fileName: eK, lineNumber: 188 },
                   }),
-                  z("textarea", {
+                  J("textarea", {
                     autoFocus: !0,
                     class: "form__input form__input--textarea",
                     id: "message",
@@ -45622,7 +45626,7 @@ ${
                   }),
                 ),
                 M
-                  ? z(
+                  ? J(
                       "label",
                       {
                         for: "screenshot",
@@ -45630,7 +45634,7 @@ ${
                         __self: this,
                         __source: { fileName: eK, lineNumber: 201 },
                       },
-                      z(
+                      J(
                         "button",
                         {
                           class: "btn btn--default",
@@ -45644,7 +45648,7 @@ ${
                         P ? u : I,
                       ),
                       G
-                        ? z(
+                        ? J(
                             "div",
                             {
                               class: "form__error-container",
@@ -45657,14 +45661,14 @@ ${
                     )
                   : null,
               ),
-              z(
+              J(
                 "div",
                 {
                   class: "btn-group",
                   __self: this,
                   __source: { fileName: eK, lineNumber: 216 },
                 },
-                z(
+                J(
                   "button",
                   {
                     class: "btn btn--primary",
@@ -45674,7 +45678,7 @@ ${
                   },
                   h,
                 ),
-                z(
+                J(
                   "button",
                   {
                     class: "btn btn--default",
@@ -45690,7 +45694,7 @@ ${
           );
         }
         function eF({ label: e, isRequired: t, isRequiredLabel: r }) {
-          return z(
+          return J(
             "span",
             {
               class: "form__label__text",
@@ -45699,7 +45703,7 @@ ${
             },
             e,
             t &&
-              z(
+              J(
                 "span",
                 {
                   class: "form__label__text--required",
@@ -45771,11 +45775,11 @@ ${
               },
               [t],
             );
-          return z(
+          return J(
             Q,
             { __self: this, __source: { fileName: eX, lineNumber: 48 } },
             _
-              ? z(
+              ? J(
                   "div",
                   {
                     class: "success__position",
@@ -45783,7 +45787,7 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 50 },
                   },
-                  z(
+                  J(
                     "div",
                     {
                       class: "success__content",
@@ -45791,7 +45795,7 @@ ${
                       __source: { fileName: eX, lineNumber: 51 },
                     },
                     a.successMessageText,
-                    z("span", {
+                    J("span", {
                       class: "success__icon",
                       dangerouslySetInnerHTML: n,
                       __self: this,
@@ -45799,7 +45803,7 @@ ${
                     }),
                   ),
                 )
-              : z(
+              : J(
                   "dialog",
                   {
                     class: "dialog",
@@ -45808,14 +45812,14 @@ ${
                     __self: this,
                     __source: { fileName: eX, lineNumber: 57 },
                   },
-                  z(
+                  J(
                     "div",
                     {
                       class: "dialog__position",
                       __self: this,
                       __source: { fileName: eX, lineNumber: 58 },
                     },
-                    z(
+                    J(
                       "div",
                       {
                         class: "dialog__content",
@@ -45825,12 +45829,12 @@ ${
                         __self: this,
                         __source: { fileName: eX, lineNumber: 59 },
                       },
-                      z(ex, {
+                      J(ex, {
                         options: a,
                         __self: this,
                         __source: { fileName: eX, lineNumber: 66 },
                       }),
-                      z(eV, {
+                      J(eV, {
                         ...r,
                         onSubmitSuccess: i,
                         __self: this,
@@ -45929,7 +45933,7 @@ ${
   outline: var(--outline);
 }
 `,
-          ez = `
+          eJ = `
 .form {
   display: flex;
   overflow: auto;
@@ -46016,7 +46020,7 @@ ${
   fill: var(--error-color);
 }
 `,
-          eJ = `
+          ez = `
 .btn-group {
   display: grid;
   gap: 8px;
@@ -46137,8 +46141,8 @@ ${
 
 ${e$}
 ${eq}
-${ez}
 ${eJ}
+${ez}
 ${eQ}
 `),
                     e
@@ -46171,10 +46175,10 @@ ${eQ}
                 },
                 I =
                   t &&
-                  t.createInput({ h: z, hooks: eY, dialog: l, options: e }),
+                  t.createInput({ h: J, hooks: eY, dialog: l, options: e }),
                 u = (t) => {
                   var a, n, i, c, s, l, R;
-                  (a = z(ej, {
+                  (a = J(ej, {
                     options: e,
                     screenshotInput: I,
                     showName: e.showName || e.isNameRequired,
@@ -46209,7 +46213,7 @@ ${eQ}
                     (R = []),
                     ei(
                       n,
-                      (a = ((!c && i) || n).__k = z(Q, null, [a])),
+                      (a = ((!c && i) || n).__k = J(Q, null, [a])),
                       s || V,
                       V,
                       void 0 !== n.ownerSVGElement,
@@ -47688,10 +47692,10 @@ ${eQ}
           let t = $([e, "optionalAccess", (e) => e.host]);
           return $([t, "optionalAccess", (e) => e.shadowRoot]) === e;
         }
-        function z(e) {
+        function J(e) {
           return "[object ShadowRoot]" === Object.prototype.toString.call(e);
         }
-        function J(e) {
+        function z(e) {
           try {
             var t;
             let r = e.rules || e.cssRules;
@@ -47719,7 +47723,7 @@ ${eQ}
           )
             try {
               t =
-                J(e.styleSheet) ||
+                z(e.styleSheet) ||
                 (function (e) {
                   let { cssText: t } = e;
                   if (t.split('"').length < 3) return t;
@@ -48173,7 +48177,7 @@ ${eQ}
                           (t) => t.href === e.href,
                         ),
                         r = null;
-                      t && (r = J(t)),
+                      t && (r = z(t)),
                         r &&
                           (delete g.rel,
                           delete g.href,
@@ -48184,7 +48188,7 @@ ${eQ}
                       e.sheet &&
                       !(e.innerText || e.textContent || "").trim().length
                     ) {
-                      let t = J(e.sheet);
+                      let t = z(e.sheet);
                       t && (g._cssText = ef(t, eh()));
                     }
                     if (
@@ -48365,7 +48369,7 @@ ${eQ}
                             "optionalAccess",
                             (e) => e.cssRules,
                           ]) &&
-                            (I = J(e.parentNode.sheet)));
+                            (I = z(e.parentNode.sheet)));
                       } catch (t) {
                         console.warn(
                           `Cannot get CSS styles from text's parentNode. Error: ${t}`,
@@ -48553,7 +48557,7 @@ ${eQ}
           if (v.type === A.Element) {
             (w = w && !v.needBlock), delete v.needBlock;
             let t = e.shadowRoot;
-            t && z(t) && (v.isShadowHost = !0);
+            t && J(t) && (v.isShadowHost = !0);
           }
           if ((v.type === A.Document || v.type === A.Element) && w) {
             var B;
@@ -48598,13 +48602,13 @@ ${eQ}
               for (let r of Array.from(e.shadowRoot.childNodes)) {
                 let a = eM(r, t);
                 a &&
-                  (z(e.shadowRoot) && (a.isShadow = !0), v.childNodes.push(a));
+                  (J(e.shadowRoot) && (a.isShadow = !0), v.childNodes.push(a));
               }
           }
           return (
             e.parentNode &&
               q(e.parentNode) &&
-              z(e.parentNode) &&
+              J(e.parentNode) &&
               (v.isShadow = !0),
             v.type === A.Element &&
               "iframe" === v.tagName &&
@@ -48999,7 +49003,7 @@ ${eQ}
             t
           );
         }
-        function ez(e) {
+        function eJ(e) {
           let t = e.ownerDocument;
           return (
             !!t &&
@@ -49017,9 +49021,9 @@ ${eQ}
               })(e))
           );
         }
-        let eJ = {};
+        let ez = {};
         function eQ(e) {
-          let t = eJ[e];
+          let t = ez[e];
           if (t) return t;
           let r = window.document,
             a = window[e];
@@ -49030,7 +49034,7 @@ ${eQ}
               let n = t.contentWindow;
               n && n[e] && (a = n[e]), r.head.removeChild(t);
             } catch (e) {}
-          return (eJ[e] = a.bind(window));
+          return (ez[e] = a.bind(window));
         }
         function eZ(...e) {
           return eQ("setTimeout")(...e);
@@ -49185,7 +49189,7 @@ ${eQ}
                     return r;
                   },
                   n = (n) => {
-                    if (!n.parentNode || !ez(n)) return;
+                    if (!n.parentNode || !eJ(n)) return;
                     let _ = q(n.parentNode)
                         ? this.mirror.getId(eq(n))
                         : this.mirror.getId(n.parentNode),
@@ -49514,7 +49518,7 @@ ${eQ}
                                       parentId: n,
                                       id: a,
                                       isShadow:
-                                        !!(q(e.target) && z(e.target)) ||
+                                        !!(q(e.target) && J(e.target)) ||
                                         void 0,
                                     })),
                               this.mapRemoves.push(t);
@@ -50835,7 +50839,7 @@ ${eQ}
             this.reset(), this.patchAttachShadow(Element, document);
           }
           addShadowRoot(e, t) {
-            if (!z(e) || this.shadowDoms.has(e)) return;
+            if (!J(e) || this.shadowDoms.has(e)) return;
             this.shadowDoms.add(e),
               this.bypassOptions.canvasManager.addShadowRoot(e);
             let r = t_(
@@ -50891,7 +50895,7 @@ ${eQ}
                   let n = e.call(this, a);
                   return (
                     this.shadowRoot &&
-                      ez(this) &&
+                      eJ(this) &&
                       r.addShadowRoot(this.shadowRoot, t),
                     n
                   );
@@ -51173,13 +51177,13 @@ ${eQ}
               (r || _) && e_(!0);
             }
           };
-          let z = (e) => {
+          let J = (e) => {
               o({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Mutation, ...e },
               });
             },
-            J = (e) =>
+            z = (e) =>
               o({
                 type: e0.IncrementalSnapshot,
                 data: { source: e1.Scroll, ...e },
@@ -51190,7 +51194,7 @@ ${eQ}
                 data: { source: e1.CanvasMutation, ...e },
               }),
             ee = new tp({
-              mutationCb: z,
+              mutationCb: J,
               adoptedStyleSheetCb: (e) =>
                 o({
                   type: e0.IncrementalSnapshot,
@@ -51203,7 +51207,7 @@ ${eQ}
                 ? new tN()
                 : new td({
                     mirror: tD,
-                    mutationCb: z,
+                    mutationCb: J,
                     stylesheetManager: ee,
                     recordCrossOriginIframes: y,
                     wrappedEmit: o,
@@ -51246,8 +51250,8 @@ ${eQ}
               __RRWEB_EXCLUDE_SHADOW_DOM__
                 ? new tf()
                 : new tO({
-                    mutationCb: z,
-                    scrollCb: J,
+                    mutationCb: J,
+                    scrollCb: z,
                     bypassOptions: {
                       onMutation: K,
                       blockClass: i,
@@ -51441,7 +51445,7 @@ ${eQ}
                 tt(tI)(
                   {
                     onMutation: K,
-                    mutationCb: z,
+                    mutationCb: J,
                     mousemoveCb: (e, t) =>
                       o({
                         type: e0.IncrementalSnapshot,
@@ -51452,7 +51456,7 @@ ${eQ}
                         type: e0.IncrementalSnapshot,
                         data: { source: e1.MouseInteraction, ...e },
                       }),
-                    scrollCb: J,
+                    scrollCb: z,
                     viewportResizeCb: (e) =>
                       o({
                         type: e0.IncrementalSnapshot,
@@ -52051,17 +52055,17 @@ ${eQ}
         }
         let t$ = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
         function tq(e, t) {
-          if (!!t$) m.kg.info(e), t && tJ(e);
+          if (!!t$) m.kg.info(e), t && tz(e);
         }
-        function tz(e, t) {
+        function tJ(e, t) {
           if (!!t$)
             m.kg.info(e),
               t &&
                 (0, Y.iK)(() => {
-                  tJ(e);
+                  tz(e);
                 }, 0);
         }
-        function tJ(e) {
+        function tz(e) {
           (0, f.n)(
             {
               category: "console",
@@ -52363,19 +52367,19 @@ ${eQ}
                 let t = V.sessionStorage.getItem(F);
                 if (!t) return null;
                 let r = JSON.parse(t);
-                return tz("[Replay] Loading existing session", e), t4(r);
+                return tJ("[Replay] Loading existing session", e), t4(r);
               } catch (e) {
                 return null;
               }
             })(e);
           return _
             ? re(_, { sessionIdleExpire: t, maxReplayDuration: r })
-              ? (tz(
+              ? (tJ(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
                 t8(n, { previousSessionId: _.id }))
               : _
-            : (tz("[Replay] Creating new session", e),
+            : (tJ("[Replay] Creating new session", e),
               t8(n, { previousSessionId: a }));
         }
         function rr(e, t, r) {
@@ -52421,7 +52425,7 @@ ${eQ}
               r >
               e.getContext().initialTimestamp + e.getOptions().maxReplayDuration
             ) ||
-              (tz(
+              (tJ(
                 `[Replay] Skipping event with timestamp ${r} because it is after maxReplayDuration`,
                 e.getOptions()._experiments.traceInternals,
               ),
@@ -53196,7 +53200,7 @@ ${eQ}
                 0 === this.session.segmentId
                   ? "buffer"
                   : "session"),
-                tz(
+                tJ(
                   `[Replay] Starting replay in ${this.recordingMode} mode`,
                   this._options._experiments.traceInternals,
                 ),
@@ -53214,7 +53218,7 @@ ${eQ}
                 );
               return;
             }
-            tz(
+            tJ(
               "[Replay] Starting replay in session mode",
               this._options._experiments.traceInternals,
             ),
@@ -53241,7 +53245,7 @@ ${eQ}
                 );
               return;
             }
-            tz(
+            tJ(
               "[Replay] Starting replay in buffer mode",
               this._options._experiments.traceInternals,
             );
@@ -54578,4 +54582,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.9d8fe5e2fec0f01f640c.js.map
+//# sourceMappingURL=sentry.c2b1102ab80d51a5748b.js.map
