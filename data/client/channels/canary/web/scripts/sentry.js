@@ -12653,7 +12653,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6855dc485924d57a0c2c41e4c149d720c7e98aaf",
+            release: "discord_web-7c94bc09a44e734ea14cc90fab125aa88b5282ed",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12722,8 +12722,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "353235"), "353235"));
-          o.YA("builtAt", String("1734043583788"));
+            o.YA("buildNumber", ((e = "353252"), "353252"));
+          o.YA("builtAt", String("1734044730628"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15255,6 +15255,13 @@
               [a.LIGHT]: { raw: "BLACK", opacity: 0 },
               [a.MIDNIGHT]: { raw: "BLACK", opacity: 0 },
               [a.DARKER]: { raw: "BLACK", opacity: 0 },
+            },
+            SPINE_DEFAULT: {
+              category: "generic",
+              [a.DARK]: { raw: "PRIMARY_500", opacity: 1 },
+              [a.LIGHT]: { raw: "PRIMARY_300", opacity: 1 },
+              [a.MIDNIGHT]: { raw: "PLUM_13", opacity: 1 },
+              [a.DARKER]: { raw: "PLUM_13", opacity: 1 },
             },
             SPOILER_HIDDEN_BACKGROUND: {
               category: "generic",
@@ -23288,6 +23295,7 @@
           (a.SCROLLBAR_AUTO_TRACK = "scrollbar-auto-track"),
           (a.SCROLLBAR_THIN_THUMB = "scrollbar-thin-thumb"),
           (a.SCROLLBAR_THIN_TRACK = "scrollbar-thin-track"),
+          (a.SPINE_DEFAULT = "spine-default"),
           (a.SPOILER_HIDDEN_BACKGROUND = "spoiler-hidden-background"),
           (a.SPOILER_REVEALED_BACKGROUND = "spoiler-revealed-background"),
           (a.STAGE_CARD_PILL_BG = "stage-card-pill-bg"),
@@ -25038,6 +25046,12 @@
               _.I.BLACK,
               _.I.BLACK,
               _.I.BLACK,
+            ],
+            "spine-default": [
+              _.I.PRIMARY_500,
+              _.I.PRIMARY_300,
+              _.I.PLUM_13,
+              _.I.PLUM_13,
             ],
             "spoiler-hidden-background": [
               _.I.PRIMARY_700,
@@ -54589,4 +54603,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.41f2aee1ae579ec65deb.js.map
+//# sourceMappingURL=sentry.0c048b14d4bfb05c5f74.js.map
