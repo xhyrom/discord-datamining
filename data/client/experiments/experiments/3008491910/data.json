@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-12_new_guild_profile",
+    "label": "Enables new guild profile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: On"
+    ],
+    "hash": 3008491910,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
