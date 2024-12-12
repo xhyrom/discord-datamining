@@ -25296,13 +25296,6 @@ div.popoutCloseButton_d523a2:hover {
   align-items: center;
   padding: 12px 8px;
 }
-.avatarCoachmark_a3e4b5 {
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 8px 12px;
-}
 .profileCoachmark_a3e4b5 {
   width: 210px;
   display: flex;
@@ -25310,23 +25303,11 @@ div.popoutCloseButton_d523a2:hover {
   align-items: center;
   padding: 54px 8px 12px;
 }
-.statusCoachmark_a3e4b5 {
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 8px 12px;
-}
 .tooltipHeader_a3e4b5 {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-}
-.avatarImage_a3e4b5 {
-  position: absolute;
-  left: 27px;
-  top: -38px;
 }
 .profileImage_a3e4b5 {
   position: absolute;
@@ -56313,4 +56294,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9e669d637fb12ed84294.css.map*/
+/*# sourceMappingURL=12633.3fbc1d33f56565d6a21b.css.map*/
