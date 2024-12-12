@@ -28051,10 +28051,12 @@ img.thumbnail_c64476 {
   background: var(--background-primary);
 }
 .spinner_c5a065 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 240px;
   height: 240px;
-  align-self: center;
-  justify-self: center;
 }
 .action_c5a065 {
   display: flex;
@@ -56356,4 +56358,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.b72998232e1bc100607c.css.map*/
+/*# sourceMappingURL=12633.2adcce02b9e913c7b275.css.map*/
