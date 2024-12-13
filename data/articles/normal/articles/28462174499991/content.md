@@ -35,14 +35,14 @@
 </div>
 <h1 id="h_01JEW0HJE52M1YDS4P8AM2CF2Q">Promotion Terms</h1>
 <p>
-  <strong>Quest Video: COD: Black Ops 6 S1 </strong><br /><strong
+  <strong>Quest Video: COD: Black Ops 6 launch trailer</strong><br /><strong
     >Quest Name: COD: Black Ops 6 Quest</strong
   >
 </p>
 <p>
   <strong>Offer Details: </strong>Watch the
-  <strong>COD: Black Ops 6 S1 </strong>video in Discord and receive a
-  <strong>15 Minute Double XP Token</strong>!  
+  <strong>COD: Black Ops 6 launch trailer </strong>video in Discord and receive
+  a <strong>15 Minute Double XP Token</strong>!  
 </p>
 <p>
   <strong>Availability Period: </strong>The<strong>
@@ -70,8 +70,8 @@
 <h1 id="h_01JEW0HJE59QNAA57VE5DT5MH8">How to Complete the Quest</h1>
 <div class="info-box">
   To fulfill the Quest requirement, the
-  <strong>COD: Black Ops 6 S1</strong> video must be watched through the Discord
-  desktop app or browser client. 
+  <strong>COD: Black Ops 6 launch trailer</strong> video must be watched through
+  the Discord desktop app or browser client. 
 </div>
 <p>
   In order to successfully complete the
@@ -93,7 +93,7 @@
   />
 </p>
 <h4 id="h_01JEW0HJE5Q6WFPRPQVN6NV5WA" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >COD: Black Ops 6 Quest Bar and in Quest Home</span
   >
 </h4>
@@ -109,7 +109,7 @@
   />
 </p>
 <h4 id="h_01JEW0HJE51V5XR8PH22F7E20W" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >How to Start the COD: Black Ops 6 Quest via Quest Bar</span
   >
 </h4>
@@ -121,7 +121,8 @@
 </div>
 <h1 id="h_01JEW0HJE52MSQAJN51WHTWPQP">Redemption Instructions</h1>
 <p>
-  1. After you’ve finished watching the<strong> COD: Black Ops 6 S1 </strong
+  1. After you’ve finished watching the<strong>
+    COD: Black Ops 6 launch trailer </strong
   >video, select <strong>Claim Reward</strong> within the
   <strong>Quest bar, </strong>pop-up video player, or in
   <strong>Quest Home</strong> to receive a reward code. 
@@ -146,7 +147,7 @@
   />
 </p>
 <h4 id="h_01JEW0HJE58MN11VMMR49XN2Q3" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >“Claim Reward” Button: Quest Bar (Left) vs. Pop-up Video Player
     (Right)</span
   >
@@ -164,7 +165,7 @@
 <p>3. Enter your code to obtain your<strong> Double XP Token</strong>.</p>
 <p class="wysiwyg-text-align-center">
   <strong
-    ><span style="background-color: #e0f2ff"
+    ><span style="background-color: #e0f2ff" data-darkreader-inline-bgcolor=""
       ><img
         src="https://support.discord.com/hc/article_attachments/28463008350103"
         width="624"
@@ -172,7 +173,7 @@
   ></strong>
 </p>
 <h4 id="h_01JEW0HJE5A41HCQY00BF6E237" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >15 Minute Double XP Token Reward Claim Window</span
   >
 </h4>
