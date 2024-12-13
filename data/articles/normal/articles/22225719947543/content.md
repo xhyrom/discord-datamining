@@ -99,6 +99,16 @@
       >
       <ul>
         <li>
+          <a href="#h_01JEYDY61889HQBJQQ1WWR5YK6"
+            ><strong>Sonic the Hedgehog 3</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JEYDY618PQ3XAS68MKKNDND6"
+            ><strong>Call of Duty: Black Ops 6 </strong></a
+          >
+        </li>
+        <li>
           <a href="#h_01JEVAKE5QRZNGDD04Y1JH8W2J"
             ><strong>Delta Force</strong></a
           >
@@ -113,7 +123,9 @@
             ><strong>Minecraft </strong></a
           >
         </li>
-        <li><a href="#h_01JECRHSBERMYXCKYR3V7KJPK4">Fortnite </a></li>
+        <li>
+          <strong><a href="#h_01JECRHSBERMYXCKYR3V7KJPK4">Fortnite </a></strong>
+        </li>
         <li>
           <a href="#h_01JECRHSBEVVDH97E1YX44KSN4"
             ><strong>The First Descendant </strong></a
@@ -592,6 +604,36 @@
   ><span style="color: #666666">   </span>
 </h4>
 <h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
+<h2 id="h_01JEYDY61889HQBJQQ1WWR5YK6">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28462182108951"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Sonic the Hedgehog 3 - Sonic 3 Quest</a
+  >
+</h2>
+<p>
+  The <strong>Sonic 3 Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>December 13, 2024</strong> until
+  <strong>December 21, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 21, 2024</strong>.
+</p>
+<h2 id="h_01JEYDY618PQ3XAS68MKKNDND6">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28462174499991"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Call of Duty: Black Ops 6 - COD: Black Ops 6 Quest</a
+  >
+</h2>
+<p>
+  The<strong> COD: Black Ops 6 Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>December 13, 2024 </strong>until
+  <strong>December 23, 2024 (11:59PM UTC)</strong>. Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 21, 2024</strong>.
+</p>
 <h2 id="h_01JEVAKE5QRZNGDD04Y1JH8W2J">
   <a
     href="https://support.discord.com/hc/en-us/articles/28429651446551"
