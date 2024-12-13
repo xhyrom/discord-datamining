@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-12_icymi_status_with_media",
+    "label": "Shows media with custom status in ICYMI",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables showing media with custom status in ICYMI"
+    ],
+    "hash": 4006754440,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -7,14 +7,20 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enables ICYMI - (heuristic) sorting will be controlled by backend exp",
-      "Treatment 2: Enables ICYMI - (ml) sorting will be controlled by backend exp"
+      "Treatment 2: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 3: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 4: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 5: Enables ICYMI - (ml) sorting will be controlled by backend exp"
     ],
     "hash": 3306368080,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3,
+      4,
+      5
     ],
     "holdout": {},
     "aa_mode": false,
