@@ -6650,6 +6650,8 @@
             TUTORIAL_INDICATOR: (e) => "/tutorial/indicators/".concat(e),
             USERS: "/users",
             ME: "/users/@me",
+            GRAVITY_ATTACHMENTS: "/users/@me/gravity-attachments",
+            GRAVITY_ATTACHMENTS_UPLOAD: "/users/@me/gravity-attachments-upload",
             GRAVITY_ITEMS_DEHYDRATED: "/users/@me/gravity-icymi",
             GRAVITY_ITEMS_DEHYDRATED_LEGACY: "/users/@me/gravity-icymi-legacy",
             GRAVITY_RECOMMENDED_GUILDS: "/gravity-recommended-guilds",
@@ -9300,6 +9302,7 @@
             "BOTTOM_CHANNEL_SCREEN_DRAG_START"),
           (ao.OVERLAY_V3_SHOW_WIDGETS = "OVERLAY_V3_SHOW_WIDGETS"),
           (ao.SHOW_CHANNEL_DETAILS = "SHOW_CHANNEL_DETAILS"),
+          (ao.HIDE_CHANNEL_DETAILS = "HIDE_CHANNEL_DETAILS"),
           (ao.MEDIA_KEYBOARD_GIFT_SELECTED = "MEDIA_KEYBOARD_GIFT_SELECTED"),
           ((aE = eU || (eU = {})).TOGGLE_REACTION_POPOUT =
             "TOGGLE_REACTION_POPOUT"),
@@ -12582,13 +12585,10 @@
       97145: function (e, t, r) {
         "use strict";
         r.d(t, {
-          R7: function () {
+          R: function () {
             return n;
           },
-          eQ: function () {
-            return o;
-          },
-          fe: function () {
+          f: function () {
             return _;
           },
         });
@@ -12622,22 +12622,12 @@
             );
           };
         }
-        function o() {
-          let e = window;
-          return (
-            null != e.jQuery ||
-            null != e.$ ||
-            null != e.BetterDiscord ||
-            null != e.BdApi ||
-            null != e.rambox
-          );
-        }
       },
       25779: function (e, t, r) {
         "use strict";
         r.d(t, {
           j: function () {
-            return l;
+            return I;
           },
         }),
           r(47120);
@@ -12646,17 +12636,18 @@
           _ = r(408720),
           o = r(233517),
           E = r(931327),
-          i = r(97145);
-        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          s = (0, i.fe)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function l() {
+          i = r(903772),
+          c = r(97145);
+        let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          l = (0, c.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function I() {
           var e;
           a.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bfb265d101cce92c9809bbf58a19944219e5c6c2",
+            release: "discord_web-f108b1a0e85cc860a3de2dc8ab763b181ca2fce6",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12669,17 +12660,17 @@
                         1 === e.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                c.some(
+                s.some(
                   (e) =>
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 )
               ) &&
-                !(0, i.eQ)() &&
+                !(0, i.e)() &&
                 !(
                   "Aborted" === (a = e).message ||
                   "cancel captcha" === a.message
                 ) &&
-                s()
+                l()
                 ? e
                 : null;
             },
@@ -12725,8 +12716,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "353538"), "353538"));
-          o.YA("builtAt", String("1734118693449"));
+            o.YA("buildNumber", ((e = "353702"), "353702"));
+          o.YA("builtAt", String("1734131808385"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -28654,6 +28645,24 @@
             : function (e, t) {
                 return i.asUintN(e, t);
               };
+      },
+      903772: function (e, t, r) {
+        "use strict";
+        function a() {
+          let e = window;
+          return (
+            null != e.jQuery ||
+            null != e.$ ||
+            null != e.BetterDiscord ||
+            null != e.BdApi ||
+            null != e.rambox
+          );
+        }
+        r.d(t, {
+          e: function () {
+            return a;
+          },
+        });
       },
       866442: function (e, t, r) {
         "use strict";
@@ -54606,4 +54615,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.de2ce0aeff52bd902221.js.map
+//# sourceMappingURL=sentry.1daf492ac149e5790678.js.map
