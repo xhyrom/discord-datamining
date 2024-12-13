@@ -19177,8 +19177,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: none;
   padding: var(--custom-gif-picker-gutter-size);
+  padding-top: var(--spacing-16);
 }
-.emojiPickerHasTabWrapper_c6ee36 .visual-refresh .header_c6ee36 {
+.visual-refresh .emojiPickerHasTabWrapper_c6ee36 .header_c6ee36 {
   padding: var(--custom-gif-picker-gutter-size);
 }
 .searchBar_c6ee36 {
@@ -56366,4 +56367,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.e6108a41ecdfa62bc720.css.map*/
+/*# sourceMappingURL=12633.c4e428a710b405ced548.css.map*/
