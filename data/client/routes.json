@@ -4075,7 +4075,11 @@
   },
   "GUILD_PROFILE": {
     "url": "/guilds/:param/profile",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
