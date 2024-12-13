@@ -12582,13 +12582,10 @@
       97145: function (e, t, r) {
         "use strict";
         r.d(t, {
-          R7: function () {
+          R: function () {
             return n;
           },
-          eQ: function () {
-            return o;
-          },
-          fe: function () {
+          f: function () {
             return _;
           },
         });
@@ -12622,22 +12619,12 @@
             );
           };
         }
-        function o() {
-          let e = window;
-          return (
-            null != e.jQuery ||
-            null != e.$ ||
-            null != e.BetterDiscord ||
-            null != e.BdApi ||
-            null != e.rambox
-          );
-        }
       },
       25779: function (e, t, r) {
         "use strict";
         r.d(t, {
           j: function () {
-            return l;
+            return I;
           },
         }),
           r(47120);
@@ -12646,17 +12633,18 @@
           _ = r(408720),
           o = r(233517),
           E = r(931327),
-          i = r(97145);
-        let c = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          s = (0, i.fe)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function l() {
+          i = r(903772),
+          c = r(97145);
+        let s = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          l = (0, c.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function I() {
           var e;
           a.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-747c384680da2e7fe92c36c6e92552e68fa1bca8",
+            release: "discord_web-d7d3f6d508a58ac361487d96e2763cd2ec348a2c",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12669,17 +12657,17 @@
                         1 === e.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                c.some(
+                s.some(
                   (e) =>
                     window.navigator.appVersion.toLowerCase().indexOf(e) >= 0,
                 )
               ) &&
-                !(0, i.eQ)() &&
+                !(0, i.e)() &&
                 !(
                   "Aborted" === (a = e).message ||
                   "cancel captcha" === a.message
                 ) &&
-                s()
+                l()
                 ? e
                 : null;
             },
@@ -12725,8 +12713,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "353582"), "353582"));
-          o.YA("builtAt", String("1734122067529"));
+            o.YA("buildNumber", ((e = "353597"), "353597"));
+          o.YA("builtAt", String("1734123674796"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -28654,6 +28642,24 @@
             : function (e, t) {
                 return i.asUintN(e, t);
               };
+      },
+      903772: function (e, t, r) {
+        "use strict";
+        function a() {
+          let e = window;
+          return (
+            null != e.jQuery ||
+            null != e.$ ||
+            null != e.BetterDiscord ||
+            null != e.BdApi ||
+            null != e.rambox
+          );
+        }
+        r.d(t, {
+          e: function () {
+            return a;
+          },
+        });
       },
       866442: function (e, t, r) {
         "use strict";
@@ -54606,4 +54612,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.8a1051475ff1bf648f9f.js.map
+//# sourceMappingURL=sentry.3ffdfa624f7a77545412.js.map
