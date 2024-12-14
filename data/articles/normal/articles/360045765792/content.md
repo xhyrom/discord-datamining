@@ -7,8 +7,8 @@
 <p>
   Make sure the charge comes from Discord. All purchases made within Discord
   will be labeled <strong>DISCORD*ItemName</strong> within credit/debit card
-  statements depending on how your bank renders this and PAYPAL DISCORD if
-  completed through PayPal.
+  statements depending on how your bank renders this and
+  <strong>PAYPAL DISCORD</strong> if completed through PayPal.
 </p>
 <p><strong>Please double check these common issues first:</strong></p>
 <ul>
