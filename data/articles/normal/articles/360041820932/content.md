@@ -12,7 +12,9 @@
     the instructions below.</span
   >
 </p>
-<h1>What Do We Need To Unlock The Account? </h1>
+<h1 id="h_01JF1WFKSP77CTZHTVRRDWQT52">
+  What Do We Need To Unlock The Account? 
+</h1>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color="">1.  </span
   ><span style="color: #2e3338" data-darkreader-inline-color=""
@@ -48,38 +50,19 @@
   ><a href="https://dis.gd/request" target="_blank" rel="noopener noreferrer"
     >https://dis.gd/request</a
   ><span style="color: #2e3338" data-darkreader-inline-color="">
-    and select "Appeals, age update, or other questions" under the </span
-  ><em
+    and select <strong>Appeals, age update, or other questions</strong> under
+    the </span
+  ><strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Report Type</span
-    ></em
+    ></strong
   ><span style="color: #2e3338" data-darkreader-inline-color=""> option.</span>
 </p>
-<h3>
+<h3 id="h_01JF1WFKSPKXP4CMPYNVDZG252">
   <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >Note:
-    </span></strong
-  ><strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >All of the required information needs to be visible and readable in ONE
-      photo.</span
-    ></strong
-  >
-</h3>
-<h3>
-  <strong
-    ><span style="color: #104c32" data-darkreader-inline-color=""
-      >You must send the photo with the email address associated with your
-      Discord account.</span
-    ></strong
-  >
-</h3>
-<h3>
-  <span class="wysiwyg-color-orange"
-    ><strong
-      >The information you provide will only be used to verify your age and will
-      not be used for any other purpose.
-    </strong></span
-  >
+    >Note: All of the required information needs to be visible and readable in
+    ONE photo.<br />You must send the photo with the email address associated
+    with your Discord account.<br />The information you provide will only be
+    used to verify your age and will not be used for any other purpose.
+  </strong>
 </h3>
