@@ -9715,6 +9715,8 @@ div.modalHeader_c5e09c {
   right: 0;
   top: 0;
   pointer-events: none;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
 .soundButtonWrapper_f40049 {
   list-style: none;
@@ -9753,6 +9755,12 @@ div.modalHeader_c5e09c {
     0 1px 0 0 rgba(0, 0, 0, 0.2),
     0 1px 4px 0 rgba(0, 0, 0, 0.2);
 }
+.full-motion .soundButtonRefresh_f40049 {
+  transition:
+    box-shadow.1s ease-in-out,
+    transform.2s ease,
+    outline.2s ease-in-out;
+}
 .soundButtonRefresh_f40049:hover,
 .soundButtonRefresh_f40049.focused_f40049,
 .soundButtonRefresh_f40049:active:not(:focus-within) {
@@ -9770,11 +9778,10 @@ div.modalHeader_c5e09c {
   margin-top: 0;
 }
 .soundButtonRefresh_f40049:active:not(:focus-within) {
-  background: var(--card-primary-pressed-bg);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 .soundButtonRefresh_f40049:active:not(:focus-within) .soundInfoRefresh_f40049 {
-  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
+  box-shadow: none;
 }
 .soundButtonRefresh_f40049:active:not(:focus-within) .soundNameRefresh_f40049 {
   color: var(--header-muted);
@@ -9784,15 +9791,9 @@ div.modalHeader_c5e09c {
   opacity: 0;
   pointer-events: none;
 }
-.animated_f40049 {
-  transition:
-    height.1s ease,
-    margin-top.1s ease,
-    outline.3s ease;
-}
 .animated_f40049:active:not(:focus-within) {
-  height: 68px;
-  margin-top: 4px;
+  box-shadow: none;
+  transform: translatey(2px);
   outline-width: 1px;
 }
 .theme-light .soundButtonRefresh_f40049 {
@@ -9856,11 +9857,12 @@ div.modalHeader_c5e09c {
   flex-direction: column;
   gap: 4px;
   box-shadow: 0 6px 0 0 rgba(0, 0, 0, 8%);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   height: 60px;
   transition:
     gap.1s ease,
-    padding-bottom.1s ease;
+    padding-bottom.1s ease,
+    box-shadow.1s ease-in-out;
 }
 .soundName_f40049 {
   color: var(--header-primary);
@@ -10121,8 +10123,10 @@ div.modalHeader_c5e09c {
 }
 .infoContainer_dd5a70 {
   border-radius: var(--radius-sm);
-  overflow: hidden;
   max-width: 300px;
+}
+.infoTooltip_dd5a70 {
+  overflow: hidden;
 }
 .infoNitroContainer_dd5a70 {
   position: relative;
@@ -10211,11 +10215,17 @@ div.modalHeader_c5e09c {
   display: inline-flex;
 }
 .inlineButton_f38a29 {
+  display: inline-block;
   border: 1px solid var(--border-strong);
   background: var(--card-primary-bg);
   box-shadow:
     0 -4px 0 0 rgba(0, 0, 0, 0.12) inset,
     0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+.full-motion .inlineButton_f38a29 {
+  transition:
+    box-shadow.1s ease-in-out,
+    transform.2s ease;
 }
 .inlineButton_f38a29:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -10223,6 +10233,8 @@ div.modalHeader_c5e09c {
 .inlineButton_f38a29:active {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: var(--card-primary-pressed-bg);
+  box-shadow: none;
+  transform: translatey(2px);
 }
 .inlineButton_f38a29.playing_f38a29 {
   border: 1px solid var(--button-outline-positive-border);
@@ -10234,7 +10246,7 @@ div.modalHeader_c5e09c {
   align-items: center;
   text-align: center;
   padding: 0 var(--spacing-4);
-  margin: 0 var(--spacing-4);
+  margin: 2px var(--spacing-4);
   border-radius: var(--radius-sm);
   cursor: pointer;
   -webkit-user-select: none;
@@ -21635,6 +21647,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .picker_cd703d.inExpressionPicker_cd703d {
   width: auto;
+  height: 100%;
   box-shadow: none;
 }
 .visual-refresh .picker_cd703d,
@@ -56393,4 +56406,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f59085318a11b9481c38.css.map*/
+/*# sourceMappingURL=12633.ae30c7f648fe67701828.css.map*/
