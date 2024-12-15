@@ -1299,7 +1299,12 @@
   },
   "GRAVITY_ATTACHMENTS": {
     "url": "/users/@me/gravity-attachments",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GRAVITY_ATTACHMENTS_UPLOAD": {
     "url": "/users/@me/gravity-attachments-upload",
