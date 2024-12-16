@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Simulcast @ 1.5Mbps"
+      "Treatment 1: Simulcast",
+      "Treatment 2: Simulcast, no pacer for LQ"
     ],
     "hash": 3942584255,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
