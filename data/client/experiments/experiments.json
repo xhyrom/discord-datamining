@@ -11442,13 +11442,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable application IAR reporting flow"
+        "Treatment 1: Enable application IAR reporting flow (US)",
+        "Treatment 2: Enable application IAR reporting flow (EU)"
       ],
       "hash": 1859137100,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -12381,6 +12383,7 @@
               "type": "guild_ids",
               "ids": [
                 "1272940899164491827",
+                "1315822504874479617",
                 "1316868723830689863",
                 "728392551937212487",
                 "840296607785287763"

@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable application IAR reporting flow"
+      "Treatment 1: Enable application IAR reporting flow (US)",
+      "Treatment 2: Enable application IAR reporting flow (EU)"
     ],
     "hash": 1859137100,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
