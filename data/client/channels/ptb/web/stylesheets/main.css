@@ -2420,6 +2420,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .label_f6cde8 {
   flex: 1 1 auto;
   min-width: 0;
+  color: var(--text-normal);
 }
 .labelClickable_f6cde8 {
   cursor: pointer;
@@ -56427,4 +56428,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.463bf5519d78fcca2613.css.map*/
+/*# sourceMappingURL=12633.692c7765df3b0c2c74ed.css.map*/
