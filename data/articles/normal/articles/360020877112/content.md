@@ -50,21 +50,21 @@
 </p>
 <ul id="docs-internal-guid-7bbb681d-7fff-8723-4e33-e28b06ce2a01">
   <li>
-    <a href="#docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58"
+    <a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
       >How to Purchase a Nitro Gift in Discord</a
     >
   </li>
   <li>
-    <a href="#docs-internal-guid-4ffa21a8-7fff-c75d-f5e3-78d6b88a232d"
+    <a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
       >Discord Nitro Digital Gift Cards on Amazon.com</a
     >
   </li>
-  <li><a href="#h_01GCCGDZ431KZC8Q55QH64853Z">Managing your Nitro gift</a></li>
+  <li><a href="#h_01JF85KZAD305B0145QSMC1B86">Managing Your Nitro Gift</a></li>
   <li>
-    <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR">Purchasing a gift on mobile</a>
+    <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR">Purchasing a Gift on Mobile</a>
   </li>
 </ul>
-<h1 id="docs-internal-guid-95151cf2-7fff-f4bb-06a8-0a3efdeb7f58">
+<h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
 <p>
@@ -156,7 +156,7 @@
   tap on your avatar to head into
   <strong>User Settings &gt; Nitro Gifting</strong>. 
 </h3>
-<h1 id="docs-internal-guid-4ffa21a8-7fff-c75d-f5e3-78d6b88a232d">
+<h1 id="h_01JF85HYSDTS1VC2ZHTE1ZVW6Y">
   Discord Nitro Digital Gift Cards on Amazon.com
 </h1>
 <h3 id="docs-internal-guid-596da1d7-7fff-fc50-2e3a-c7244d405627">
@@ -242,8 +242,10 @@
     further assistance.</span
   >
 </h3>
-<h1 id="h_01GCCGDZ431KZC8Q55QH64853Z">
-  <strong>Managing Your Nitro Gift</strong>
+<h1 id="h_01JF85KZAD305B0145QSMC1B86">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Managing Your Nitro Gift</span
+  >
 </h1>
 <p>
   <span style="font-weight: 400"
