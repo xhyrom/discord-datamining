@@ -22958,7 +22958,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   cursor: not-allowed;
 }
 .sansAttachButton_bdf0de {
-  padding-left: 16px;
+  padding-left: calc(-1px + var(--space-16));
 }
 .sansAttachButtonCreateThread_bdf0de {
   padding-left: 10px;
@@ -23187,6 +23187,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   padding: var(--space-4) var(--space-16);
   border-top: 1px solid var(--border-faint);
+  margin-left: -1px;
+  margin-right: 1px;
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
 .visual-refresh .accessoryBarRight_bdf0de {
@@ -56425,4 +56427,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.92485cd0b165de0345dc.css.map*/
+/*# sourceMappingURL=12633.463bf5519d78fcca2613.css.map*/
