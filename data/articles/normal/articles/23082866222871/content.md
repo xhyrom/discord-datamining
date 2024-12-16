@@ -1,239 +1,334 @@
-<p id="docs-internal-guid-10a229bc-7fff-1e58-d889-6670c764478c">
-  <strong>What this article covers: </strong>
-</p>
-<ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3TNC38Y3HBCEQHF8P6"
-      >What does it mean when my membership shows as past due?</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3T7FGTGYNQCXNW7P9W"
-          >What happens to my membership when it’s past due?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3T0CMQPEPC85FCBW2J"
-      >Why did my payment fail? </a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3TM4ERW2DMP4SFEFS0"
-      >Why does my payment show as a pending charge?</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/23082866222871#h_01HX06JJ3THP9DD6JG7AVJTD9Z"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
-<h1 id="h_01HX06JJ3TNC38Y3HBCEQHF8P6">
-  What does it mean when my membership shows as past due?
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JF7ZT4T5WXEFX1C39T5RDSVW"
+        >What Does it mean when my Subscription shows as Past Due?</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01JF7ZTV5EVSY7CWCBPTQ6N1KV"
+            >What happens to my subscription when it’s Past Due?</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JF7ZQ86FKWSHHYM5Y758JXFK">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JF7ZT4T5WXEFX1C39T5RDSVW">
+  What Does It Mean When My Subscription Shows As Past Due?
 </h1>
 <p>
-  When taking a look in your <strong>Subscriptions</strong> tab, you may notice
-  that your <strong>Billing Information </strong>shows as
-  <strong>past due</strong>. 
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >When taking a look in your </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Subscriptions</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    tab, you may notice that your </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Billing Information</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> shows as </span
+  ><span
+    class="wysiwyg-underline"
+    style="color: #2e3338"
+    data-darkreader-inline-color=""
+    >past due</span
+  ><span style="color: #2e3338" data-darkreader-inline-color="">. </span>
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/23247418892567"
-    width="515"
-    height="435"
-  /> <img
-    src="https://support.discord.com/hc/article_attachments/23342368618391"
-    alt="mobile.png"
-    width="201"
-    height="435"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/28561086293271"
+      width="463"
+      height="391"
+  /></span>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/28561073499799"
+      alt="mobile.png"
+      width="201"
+      height="435"
+  /></span>
 </p>
+<h4 id="h_01JF7ZQ86FTYWPWAA53AHX2V66" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Examples of a Past Due Subscription on desktop (left) and mobile
+    (right)</span
+  >
+</h4>
 <p>
-  When a membership is past due, it means that your membership renewal payment
-  failed. This happens when a payment fails to go through on the renewal date. 
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >When a subscription is past due, it means that your subscription renewal
+    payment failed. This happens when a payment fails to process on the renewal
+    date. </span
+  >
 </p>
-<h2 id="h_01HX06JJ3T7FGTGYNQCXNW7P9W">
-  What happens to my membership when it’s past due?
+<h2 id="h_01JF7ZTV5EVSY7CWCBPTQ6N1KV">
+  <strong
+    ><span style="color: #ad8201" data-darkreader-inline-color=""
+      >What Happens To My Subscription When It’s Past Due?</span
+    ></strong
+  >
 </h2>
 <p>
-  If your
-  <a
+  <span style="color: #2e3338" data-darkreader-inline-color="">If your </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
     target="_blank"
     rel="noopener noreferrer"
     >Nitro, Nitro Basic, Nitro Classic</a
-  >, or
-  <a
+  ><span style="color: #2e3338" data-darkreader-inline-color="">, or </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ"
     target="_blank"
     rel="noopener noreferrer"
     >Server Boost</a
+  ><span style="color: #2e3338" data-darkreader-inline-color="">
+    subscription is past due, you will have 28 to 30 days to pay for your
+    subscription depending on where you signed up:</span
   >
-  membership is past due, you will have <strong>28 to 30 days</strong> to pay
-  for your membership depending on where you signed up:
 </p>
 <ul>
-  <li><strong>Desktop</strong>: 30 days from the renewal date </li>
-  <li><strong>Google Play Store</strong>: 30 days from the renewal date</li>
-  <li><strong>iOS App Store</strong>: 28 days from the renewal date</li>
+  <li>
+    <span style="color: #2e3338" data-darkreader-inline-color=""
+      >Desktop: 30 days from the renewal date </span
+    >
+  </li>
+  <li>
+    <span style="color: #2e3338" data-darkreader-inline-color=""
+      >Google Play Store: 30 days from the renewal date</span
+    >
+  </li>
+  <li>
+    <span style="color: #2e3338" data-darkreader-inline-color=""
+      >iOS App Store: 28 days from the renewal date</span
+    >
+  </li>
 </ul>
 <p>
-  While your membership is in the past due state, you will retain access to your
-  perks for the duration of time listed above. 
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >While your subscription is in the past due state, you will retain access to
+    your perks for the duration of time listed above. </span
+  >
 </p>
 <p>
-  If a successful payment for the membership is not made before the window ends,
-  the membership will automatically end and you’ll lose access to your
-  membership perks and related streaks.
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >If a successful payment for the subscription is not made before the window
+    ends, the subscription will automatically end and you’ll lose access to your
+    subscription perks and related streaks.</span
+  >
 </p>
 <p>
-  After you successfully make the past due payment , keep in mind that your next
-  renewal charge may occur soon after depending on your renewal date. You can
-  find your renewal date under <strong>Payment </strong>information in the
-  <strong>Subscriptions Tab.</strong>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >After you successfully make the past due payment, keep in mind that your
+    next renewal charge may occur soon after depending on your renewal date. You
+    can find your renewal date under </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Payment information</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> in the </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Subscriptions</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> Tab.</span>
 </p>
-<h1 id="h_01HX06JJ3T0CMQPEPC85FCBW2J">Why did my payment fail?</h1>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/23247451171991"
-    width="624"
-    height="249"
-  />
-</p>
-<p>
-  There are several reasons that can cause a payment to fail. In order to figure
-  out what’s going on, we recommend following the steps below:
-</p>
-<ol>
-  <li>
-    Ensure that the billing address associated with the card being charged is
-    current and matches the information filed with your bank. You can learn how
-    to manage your billing information
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360017693772-Payments-and-Billing-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.
-  </li>
-  <li>Ensure your card details are entered correctly.</li>
-  <li>Ensure the card hasn’t expired.</li>
-  <li>
-    Depending on the card, ensure there are sufficient funds in the account or
-    that the credit limit hasn’t been exceeded.
-  </li>
-  <li>
-    It’s possible a pre-set spending limit on the card was reached. Double-check
-    if a spending limit has been set.
-  </li>
-</ol>
-<h3 id="h_01HX071TNQWPE8ZCM2J01HQ9DG">
-  If issues persist after following the steps, Discord's Support team cannot
-  provide further assistance. We recommend contacting your bank or card provider
-  for additional help.
-</h3>
-<h1 id="h_01HX06JJ3TM4ERW2DMP4SFEFS0">
-  Why does my payment show as a pending charge?
+<h1 id="h_01JF7ZQ86FKWSHHYM5Y758JXFK">
+  <span style="color: #5765f2" data-darkreader-inline-color=""
+    >Frequently Asked Questions</span
+  >
 </h1>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/23247418908823"
-    width="452"
-    height="516"
-  />
-</p>
-<p>
-  If you see a <strong>pending charge</strong> on Discord, this indicates that
-  the charge was unsuccessful because it requires further verification from your
-  bank or card provider. You’ll need to reach out to your payment provider for
-  steps on how to correct this pending charge. 
-</p>
-<p>
-  If the pending charge isn't resolved, it will automatically cancel within
-  <strong>3 days</strong>. The status of the charge will then change to
-  <strong>failed</strong> in your <strong>User Settings &gt; Billing</strong>.
-  If a pending charge still appears on your bank statement, it should be removed
-  within <strong>5-10 business days</strong>.
-</p>
-<h1 id="h_01HX06JJ3THP9DD6JG7AVJTD9Z">Frequently Asked Questions</h1>
 <p>
   <strong
-    >Q: I just paid for my past due membership? Why was I charged
-    twice? </strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: I just paid for my past due subscription? Why was I charged
+      twice? </span
+    ></strong
   >
 </p>
 <p>
-  A: After you have paid for your past due membership, your next membership
-  renewal may be charged immediately depending on the renewal date of your
-  membership. You can find the date your membership renews under
-  <strong>User Settings &gt; Subscriptions &gt; Payment</strong>. 
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: After you have paid for your past due subscription, your next
+    subscription renewal may be charged immediately depending on the renewal
+    date of your subscription. You can find the date your subscription renews
+    under </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >User Settings</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> &gt; </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Subscriptions
+    </span></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">&gt; </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Payment</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color="">. </span>
 </p>
 <p>
   <strong
-    >Q: Can I cancel or change my membership plan while it has a past due
-    payment? </strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: Can I cancel or change my subscription</span
+    ></strong
+  >
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >plan while it has a past due payment? </span
+    ></strong
   >
 </p>
 <p>
-  A: You can cancel your membership while it’s in a past due state by visiting
-  <strong>User Settings &gt; Subscriptions &gt; Cancel</strong>. However, you
-  won’t be able to change the plan you’re on until you pay for the past due
-  payment on your current plan. Learn more about managing your subscription
-  <a
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: You can cancel your subscription while it’s in a past due state by
+    visiting </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >User Settings</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> &gt; </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Subscriptions</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""> &gt; </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Cancel</span
+    ></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >. However, you won’t be able to change the plan you’re on until you pay for
+    the past due payment on your current plan. Learn more about managing your
+    subscription </span
+  ><a
     href="https://support.discord.com/hc/en-us/articles/19580873036695"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >. 
+  ><span style="color: #2e3338" data-darkreader-inline-color="">. </span>
 </p>
 <p>
   <strong
-    >Q: Can I redeem my Nitro gift credits while my membership is past due? </strong
-  ><br />A: Yes, you can redeem Nitro gift credits even if your membership is
-  past due. If you have a Nitro gift credit before your payment fails, the
-  credit will be applied immediately to your membership’s upcoming billing
-  cycle.<br />Also, if your account is already past due and you receive a gift
-  credit, the credit will be applied during the next renewal attempt, and your
-  membership will become active again.
-</p>
-<h3 id="h_01J1XDM7GJP4F7WB3XZ0G5FHMF">
-  <strong>Please note</strong>: Using a gift credit does not change the billing
-  date for your membership. If your account has been past due for some time
-  (e.g., 10 days), part of the gift credit will be used to cover that period.
-</h3>
-<p>
-  <strong
-    >Q: If my payment is not made on time, what happens to my perks?</strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: Can I redeem my Nitro gift credits while my subscription is past
+      due?</span
+    ></strong
   >
 </p>
 <p>
-  A: Depending on which platform you purchased the membership, you’ll have
-  access to your membership perks for 28-30 days after your payment fails. If
-  you do not make the payment before this window ends, your membership will
-  automatically end.
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: Yes, you can redeem Nitro gift credits even if your subscription is past
+    due. If you have a Nitro gift credit before your payment fails, the credit
+    will be applied immediately to your subscription’s upcoming billing
+    cycle.</span
+  ><span style="color: #2e3338" data-darkreader-inline-color=""><br /></span
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >Also, if your account is already past due and you receive a gift credit,
+    the credit will be applied during the next renewal attempt, and your
+    subscription will become active again.</span
+  >
 </p>
+<div class="tip-box">
+  <strong>Note:</strong> Using a gift credit does not change the billing date
+  for your
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >subscription</span
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    >. If your account has been past due for some time (e.g., 10 days), part of
+    the gift credit will be used to cover that period.</span
+  >
+</div>
 <p>
   <strong
-    >Q: Does my billing date change if I resolve my payment issues after my
-    membership is past due?</strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: If my payment is not made on time, what happens to my perks?</span
+    ></strong
   >
 </p>
 <p>
-  A: No, making a payment on a membership that’s past due does not change your
-  renewal date.
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: Depending on which platform you purchased the subscription, you’ll have
+    access to your subscription perks for 28-30 days after your payment fails.
+    If you do not make the payment before this window ends, your subscription
+    will automatically end, and you will lose any perks associated with your
+    subscription.</span
+  >
 </p>
-<p><strong>Q: Why do I see multiple charges on my bank account?</strong></p>
 <p>
-  A: The only time you should see multiple pending charges are when your
-  payments have not been successfully processed. When renewing a subscription
-  and your renewal payment does not successfully go through, we will attempt the
-  purchase again to ensure that your subscription goes uninterrupted. Once a
-  payment successfully goes through, all other pending payments are canceled.
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: Does my billing date change if I resolve my payment issues after my
+      subscription</span
+    ></strong
+  >
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >is past due?</span
+    ></strong
+  >
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: No. Making a payment on a subscription that’s past due does not change
+    your renewal date.</span
+  >
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: Why do I see multiple charges on my bank account?</span
+    ></strong
+  >
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: The only time you should see multiple pending charges are when your
+    payments have not been successfully processed. When renewing a subscription
+    and your renewal payment does not successfully go through, we will attempt
+    the purchase again to ensure that your subscription goes uninterrupted. Once
+    a payment successfully goes through, all other pending payments are
+    canceled.</span
+  >
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: My subscription is managed by iOS or Android and my subscription went
+      past due, what do I do?</span
+    ></strong
+  >
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A:  The Google Play Store allows subscriptions to be past due for a total
+    of 30 days, while Apple (iOS) has 28 days to be past due. You will need to
+    complete your payment through where your subscription is managed.</span
+  >
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Q: What happens to my streaks when my subscription is past due?</span
+    ></strong
+  >
+</p>
+<p>
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >A: Your streak will not be affected, as long as you make a payment during
+    the grace period. However, if the payment is not made within the grace
+    period then the streak will reset and can not be restored.</span
+  >
 </p>
