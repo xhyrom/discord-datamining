@@ -2420,6 +2420,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 .label_f6cde8 {
   flex: 1 1 auto;
   min-width: 0;
+  color: var(--text-normal);
 }
 .labelClickable_f6cde8 {
   cursor: pointer;
@@ -7366,6 +7367,17 @@ div.modalHeader_c5e09c {
 .colorable_ef18ee.experimentDark_ef18ee:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+.colorable_ef18ee.experimentActiveLight_ef18ee {
+  background: var(--white-500);
+}
+.colorable_ef18ee.experimentActiveLight_ef18ee,
+.colorable_ef18ee.experimentActiveLight_ef18ee .centerIcon_ef18ee {
+  color: var(--primary-860);
+}
+.colorable_ef18ee.experimentActiveLight_ef18ee.active_ef18ee,
+.colorable_ef18ee.experimentActiveLight_ef18ee:hover {
+  background: var(--primary-230);
+}
 .centerButton_ef18ee {
   border-radius: 50%;
   padding: 16px;
@@ -7377,8 +7389,8 @@ div.modalHeader_c5e09c {
   transition: color.15s ease-in-out;
 }
 .experimentButton_ef18ee {
-  border-radius: 4px;
-  padding: 6px;
+  border-radius: 8px;
+  padding: 10px;
   transition:
     background.15s ease-in-out,
     color.15s ease-in-out;
@@ -7391,7 +7403,7 @@ div.modalHeader_c5e09c {
 }
 .fullRegionDropdownButton_ef18ee {
   display: flex;
-  padding: 8px;
+  padding: 4px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
@@ -7407,7 +7419,7 @@ div.modalHeader_c5e09c {
   background-color: var(--green-360);
 }
 .fullRegionIcon_ef18ee {
-  padding: 8px 16px;
+  padding: 4px 12px;
 }
 .buttonPremiumGlow_ef18ee {
   filter: drop-shadow(0 0 12px#a944b0) drop-shadow(0 0 12px#a944b0);
@@ -7458,8 +7470,14 @@ div.modalHeader_c5e09c {
   gap: 1px;
 }
 .contextMenuNubExperiment_ef18ee {
+  cursor: pointer;
   padding: 10px 2px;
-  border-radius: 4px;
+  border-radius: 8px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition:
     background.15s ease-in-out,
     color.15s ease-in-out;
@@ -20218,6 +20236,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .visual-refresh .base_d7ebeb {
   position: static;
+  overflow: auto;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -22940,7 +22959,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   cursor: not-allowed;
 }
 .sansAttachButton_bdf0de {
-  padding-left: 16px;
+  padding-left: calc(-1px + var(--space-16));
 }
 .sansAttachButtonCreateThread_bdf0de {
   padding-left: 10px;
@@ -23169,10 +23188,13 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   padding: var(--space-4) var(--space-16);
   border-top: 1px solid var(--border-faint);
+  margin-left: -1px;
+  margin-right: 1px;
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
 .visual-refresh .accessoryBarRight_bdf0de {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
   position: relative;
 }
@@ -56406,4 +56428,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ae30c7f648fe67701828.css.map*/
+/*# sourceMappingURL=12633.692c7765df3b0c2c74ed.css.map*/
