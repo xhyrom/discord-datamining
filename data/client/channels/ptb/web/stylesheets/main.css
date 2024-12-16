@@ -20218,6 +20218,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .visual-refresh .base_d7ebeb {
   position: static;
+  overflow: auto;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -23172,7 +23173,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
 .visual-refresh .accessoryBarRight_bdf0de {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
   position: relative;
 }
@@ -56406,4 +56408,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ae30c7f648fe67701828.css.map*/
+/*# sourceMappingURL=12633.c0bda376a34d9ea01121.css.map*/
