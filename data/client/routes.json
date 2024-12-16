@@ -1308,7 +1308,10 @@
   },
   "GRAVITY_ATTACHMENTS_UPLOAD": {
     "url": "/users/@me/gravity-attachments-upload",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GRAVITY_ITEMS_DEHYDRATED": {
     "url": "/users/@me/gravity-icymi",
