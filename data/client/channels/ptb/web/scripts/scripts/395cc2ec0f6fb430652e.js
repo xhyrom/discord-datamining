@@ -1,0 +1,600 @@
+"use strict";
+(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
+  ["51269"],
+  {
+    701972: function (e) {
+      e.exports = "/assets/71792026f672985a033d.svg";
+    },
+    818658: function (e) {
+      e.exports = "/assets/4dae9f6eefe1407c3cec.svg";
+    },
+    546826: function (e) {
+      e.exports = "/assets/ce7ed73a6aeb1b990d58.svg";
+    },
+    726721: function (e, n, t) {
+      let i = (0, t(818083).B)({
+        kind: "user",
+        id: "2024-11_application_reporting_flow",
+        label: "Apps In-App Reporting",
+        defaultConfig: { enabled: !1 },
+        treatments: [
+          {
+            id: 1,
+            label: "Enable application IAR reporting flow",
+            config: { enabled: !0 },
+          },
+        ],
+      });
+      n.Z = i;
+    },
+    436267: function (e, n, t) {
+      t.d(n, {
+        O: function () {
+          return r;
+        },
+        Z: function () {
+          return l;
+        },
+      });
+      var i = t(159277);
+      function l(e) {
+        return (
+          i.t.XBOX_APPLICATION_ID === e ||
+          i.M.PLAYSTATION_APPLICATION_IDS.has(e)
+        );
+      }
+      function r(e) {
+        return l(e);
+      }
+    },
+    149418: function (e, n, t) {
+      t.d(n, {
+        Z: function () {
+          return r;
+        },
+      }),
+        t(789020);
+      var i = t(630388),
+        l = t(981631);
+      function r(e) {
+        return (
+          null != e.flags && (0, i.yE)(e.flags, l.udG.SOCIAL_LAYER_INTEGRATION)
+        );
+      }
+    },
+    494620: function (e, n, t) {
+      t.d(n, {
+        Z: function () {
+          return m;
+        },
+        z: function () {
+          return l;
+        },
+      });
+      var i,
+        l,
+        r = t(200651);
+      t(192379);
+      var s = t(120356),
+        a = t.n(s),
+        o = t(481060),
+        c = t(312403);
+      ((i = l || (l = {})).INFO = "info"), (i.WARNING = "warning");
+      let u = { info: c.info, warning: c.warning },
+        d = { info: o.CircleInformationIcon, warning: o.CircleWarningIcon };
+      function m(e) {
+        let { children: n, className: t, look: i = "info" } = e,
+          l = d[i];
+        return (0, r.jsxs)("div", {
+          className: a()(c.root, t, u[i]),
+          children: [
+            (0, r.jsx)(l, { className: c.icon, color: "currentColor" }),
+            (0, r.jsx)(o.Text, {
+              className: c.text,
+              variant: "text-sm/medium",
+              color: "text-normal",
+              children: n,
+            }),
+          ],
+        });
+      }
+    },
+    795594: function (e, n, t) {
+      t.d(n, {
+        J: function () {
+          return q;
+        },
+      }),
+        t(653041),
+        t(47120);
+      var i = t(200651),
+        l = t(192379),
+        r = t(120356),
+        s = t.n(r),
+        a = t(658722),
+        o = t.n(a),
+        c = t(15729),
+        u = t(243814),
+        d = t(442837),
+        m = t(921072),
+        x = t(1561),
+        p = t(481060),
+        h = t(384275),
+        f = t(230711),
+        I = t(497321),
+        N = t(468026),
+        g = t(317381),
+        j = t(513202),
+        _ = t(979200),
+        T = t(600164),
+        A = t(726721),
+        C = t(726521),
+        v = t(713938),
+        S = t(973616),
+        L = t(881998),
+        P = t(592125),
+        E = t(944486),
+        k = t(246946),
+        Z = t(768581),
+        y = t(585483),
+        O = t(49012),
+        w = t(709054),
+        R = t(706454),
+        b = t(210887),
+        B = t(436267),
+        D = t(149418),
+        F = t(494620),
+        M = t(981631),
+        G = t(388032),
+        z = t(728513),
+        U = t(232186);
+      let H = d.ZP.connectStores([b.Z], () => ({ theme: b.Z.theme }))(
+        p.EmptyState,
+      );
+      function W(e) {
+        let { application: n } = e;
+        return (0, i.jsxs)("div", {
+          className: z.twoWayWarning,
+          children: [
+            (0, i.jsx)(p.CircleInformationIcon, {
+              size: "md",
+              color: "currentColor",
+              className: z.twoWayWarningIcon,
+            }),
+            (0, i.jsx)(p.Text, {
+              color: "text-normal",
+              variant: "text-sm/medium",
+              children: G.intl.format(G.t.jUhnwc, {
+                applicationName: n.name,
+                onConnectionPress: () =>
+                  f.Z.setSection(M.jXE.SETTINGS_CONNECTIONS),
+              }),
+            }),
+          ],
+        });
+      }
+      let Y = (e) => {
+          let { disclosure: n } = e;
+          return l.useMemo(() => {
+            switch (n) {
+              case m.u$.IP_LOCATION:
+                return (0, i.jsx)(p.GlobeEarthIcon, {
+                  size: "md",
+                  color: "currentColor",
+                  className: z.disclosureIcon,
+                });
+              case m.u$.DISPLAYS_ADVERTISEMENTS:
+                return (0, i.jsx)(p.EmbedIcon, { className: z.disclosureIcon });
+              default:
+                return (0, i.jsx)(p.CircleInformationIcon, {
+                  className: z.disclosureIcon,
+                });
+            }
+          }, [n]);
+        },
+        X = (e) => {
+          let {
+              scopes: n,
+              application: t,
+              selectedChannelId: r,
+              selectedGuildId: a,
+              onDelete: o,
+              disclosures: c,
+              locale: d,
+              id: m,
+            } = e,
+            h = l.useMemo(() => S.ZP.createFromServer(t), [t]),
+            f = A.Z.useExperiment(
+              { location: "Authorized Applications" },
+              { autoTrackExposure: !0 },
+            ).enabled,
+            I = () => {
+              let e = G.intl.formatToPlainString(G.t.QWGvxM, {
+                applicationName: t.name,
+              });
+              return (
+                (0, D.Z)(t) &&
+                  (e = (0, i.jsxs)(i.Fragment, {
+                    children: [
+                      e,
+                      (0, i.jsx)(F.Z, {
+                        look: F.z.WARNING,
+                        className: z.infoBox,
+                        children: G.intl.string(G.t.LY35Z2),
+                      }),
+                    ],
+                  })),
+                (0, B.Z)(t.id) &&
+                  (e = (0, i.jsxs)(i.Fragment, {
+                    children: [
+                      e,
+                      (0, i.jsx)(F.Z, {
+                        className: z.infoBox,
+                        children: G.intl.format(G.t.KRnERk, {
+                          applicationName: t.name,
+                        }),
+                      }),
+                    ],
+                  })),
+                (0, p.openModal)((n) =>
+                  (0, i.jsx)(N.default, {
+                    title: G.intl.string(G.t.DT39Aw),
+                    body: e,
+                    confirmText: G.intl.string(G.t.xUqheH),
+                    cancelText: G.intl.string(G.t["ETE/oK"]),
+                    onConfirm: o,
+                    ...n,
+                  }),
+                )
+              );
+            },
+            g = () => {
+              (0, C.uu)({
+                application: h,
+                entrypoint: "authorized_apps_settings",
+                contextualGuildId: a,
+                contextualChannelId: r,
+              });
+            },
+            j = () => {
+              null != t.terms_of_service_url &&
+                (0, O.q)({ href: t.terms_of_service_url, shouldConfirm: !0 });
+            },
+            L = () => {
+              null != t.privacy_policy_url &&
+                (0, O.q)({ href: t.privacy_policy_url, shouldConfirm: !0 });
+            },
+            P = (0, B.O)(t.id);
+          return (0, i.jsx)(p.Card, {
+            className: s()(z.authedApp, U.marginBottom8),
+            outline: !0,
+            children: (0, i.jsxs)(p.HeadingLevel, {
+              component: (() => {
+                let e = Z.ZP.getApplicationIconURL({ id: t.id, icon: t.icon }),
+                  n =
+                    null != e
+                      ? (0, i.jsx)(T.Z.Child, {
+                          className: z.appAvatar,
+                          grow: 0,
+                          children: (0, i.jsx)("img", { src: e, alt: "" }),
+                        })
+                      : null,
+                  l = new Date(
+                    w.default.extractTimestamp(m),
+                  ).toLocaleDateString(d);
+                return (0, i.jsxs)("div", {
+                  className: s()(z.header, U.marginBottom20),
+                  children: [
+                    n,
+                    (0, i.jsxs)("div", {
+                      className: z.headerTextContainer,
+                      children: [
+                        (0, i.jsx)(p.Heading, {
+                          variant: "text-sm/semibold",
+                          className: z.headerText,
+                          children: t.name,
+                        }),
+                        (0, i.jsx)(p.Text, {
+                          variant: "text-xs/normal",
+                          color: "text-normal",
+                          children: G.intl.format(G.t.yOApCA, { date: l }),
+                        }),
+                      ],
+                    }),
+                    f
+                      ? (0, i.jsx)(p.Button, {
+                          color: p.ButtonColors.TRANSPARENT,
+                          look: p.ButtonLooks.LINK,
+                          size: p.ButtonSizes.SMALL,
+                          className: z.reportButton,
+                          onClick: g,
+                          children: G.intl.string(G.t["+78Pfn"]),
+                        })
+                      : null,
+                    (0, i.jsx)(p.Button, {
+                      color: p.ButtonColors.RED,
+                      look: p.ButtonLooks.OUTLINED,
+                      size: p.ButtonSizes.SMALL,
+                      onClick: I,
+                      children: G.intl.string(G.t.xUqheH),
+                    }),
+                  ],
+                });
+              })(),
+              children: [
+                (() => {
+                  if (null != t.description && "" !== t.description)
+                    return (0, i.jsx)(p.FormItem, {
+                      faded: !0,
+                      title: G.intl.string(G.t.GfRGra),
+                      children: (0, i.jsx)(p.FormText, {
+                        children: t.description,
+                      }),
+                    });
+                })(),
+                (() => {
+                  if (
+                    null != t.terms_of_service_url ||
+                    null != t.privacy_policy_url
+                  )
+                    return (0, i.jsxs)("div", {
+                      className: z.tosPrivacy,
+                      children: [
+                        null != t.terms_of_service_url
+                          ? (0, i.jsxs)(x.P, {
+                              tag: "a",
+                              onClick: j,
+                              className: z.tos,
+                              children: [
+                                (0, i.jsx)(p.FormText, {
+                                  className: z.link,
+                                  children: G.intl.string(G.t["lx+GeX"]),
+                                }),
+                                (0, i.jsx)(p.LinkExternalSmallIcon, {
+                                  className: z.externalLinkIcon,
+                                  color: "var(--text-link)",
+                                }),
+                              ],
+                            })
+                          : null,
+                        null != t.privacy_policy_url
+                          ? (0, i.jsxs)("div", {
+                              className: z.privacy,
+                              children: [
+                                null != t.terms_of_service_url
+                                  ? (0, i.jsx)("div", { className: z.divider })
+                                  : null,
+                                (0, i.jsxs)(x.P, {
+                                  tag: "a",
+                                  onClick: L,
+                                  className: z.privacy,
+                                  children: [
+                                    (0, i.jsx)(p.FormText, {
+                                      className: z.link,
+                                      children: G.intl.string(G.t.okSwq6),
+                                    }),
+                                    (0, i.jsx)(p.LinkExternalSmallIcon, {
+                                      className: z.externalLinkIcon,
+                                      color: "var(--text-link)",
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            })
+                          : null,
+                      ],
+                    });
+                })(),
+                (() => {
+                  let e = [];
+                  for (let t of n)
+                    e.push(...(0, v.CI)(t, n)),
+                      t === u.x.APPLICATIONS_COMMANDS &&
+                        e.push(G.intl.string(G.t.Ls2XRk));
+                  if (e.length > 0 || (null != c && c.length > 0))
+                    return (0, i.jsx)(p.FormItem, {
+                      faded: !0,
+                      title: G.intl.string(G.t.xrmhRU),
+                      className: U.marginTop20,
+                      children: (0, i.jsxs)("ul", {
+                        children: [
+                          e.map((e, n) =>
+                            (0, i.jsxs)(
+                              "li",
+                              {
+                                className: s()(z.permission, U.marginTop8),
+                                children: [
+                                  (0, i.jsx)("i", {
+                                    className: z.permissionCheckmark,
+                                  }),
+                                  (0, i.jsx)(p.FormText, { children: e }),
+                                ],
+                              },
+                              n,
+                            ),
+                          ),
+                          null == c
+                            ? void 0
+                            : c.map((n, t) => {
+                                let l = (0, _.PM)(n);
+                                return null != l
+                                  ? (0, i.jsxs)(
+                                      "li",
+                                      {
+                                        className: s()(
+                                          z.permission,
+                                          U.marginTop8,
+                                        ),
+                                        children: [
+                                          (0, i.jsx)(Y, { disclosure: n }),
+                                          (0, i.jsx)(p.FormText, {
+                                            children: l,
+                                          }),
+                                        ],
+                                      },
+                                      t + e.length,
+                                    )
+                                  : null;
+                              }),
+                        ],
+                      }),
+                    });
+                })(),
+                P && (0, i.jsx)(W, { application: t }),
+              ],
+            }),
+          });
+        },
+        q = (0, c.U)(() => ({ searchQuery: "" }));
+      n.Z = () => {
+        let e = (0, d.e7)([k.Z], () => k.Z.hidePersonalInformation),
+          n = (0, d.e7)([L.Z], () => L.Z.getApps()),
+          r = (0, d.e7)([R.default], () => R.default.locale),
+          s = (0, d.e7)([g.ZP], () => g.ZP.getSelfEmbeddedActivities()),
+          a = (0, d.e7)([P.Z, E.Z], () => P.Z.getChannel(E.Z.getChannelId())),
+          c = null == a ? void 0 : a.getGuildId();
+        l.useEffect(() => {
+          h.Z.fetch();
+        }, []),
+          l.useEffect(
+            () => () => {
+              q.setState({ searchQuery: "" });
+            },
+            [],
+          );
+        let u = (e) => {
+            let { id: n, application: t } = e;
+            h.Z.delete(n),
+              y.S.safeDispatch(
+                M.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION,
+                { applicationId: t.id },
+              );
+            let i = s.get(t.id);
+            null != i &&
+              j.Z.leaveActivity({
+                location: i.location,
+                applicationId: t.id,
+                showFeedback: !1,
+              });
+          },
+          m = q((e) => e.searchQuery),
+          x = (e) => q.setState({ searchQuery: e }),
+          f = (e) => {
+            x(e);
+          },
+          N = () => {
+            x("");
+          },
+          _ = () =>
+            (0, i.jsx)("div", {
+              className: z.searchContainer,
+              children: (0, i.jsx)(p.SearchBar, {
+                size: p.SearchBar.Sizes.MEDIUM,
+                query: m,
+                onChange: f,
+                onClear: N,
+                placeholder: G.intl.string(G.t["5prvKS"]),
+                "aria-label": G.intl.string(G.t["5prvKS"]),
+              }),
+            }),
+          T = (e, n) =>
+            (0, i.jsxs)(H, {
+              className: z.__invalid_marginTop20,
+              children: [
+                (0, i.jsx)(p.EmptyStateImage, {
+                  darkSrc: t(701972),
+                  lightSrc: t(818658),
+                  width: 380,
+                  height: 282,
+                }),
+                (0, i.jsx)(p.EmptyStateText, { note: e, children: n }),
+              ],
+            }),
+          A = l.useMemo(() => {
+            let e = m.trim().toLowerCase();
+            return "" === e || null == n
+              ? n
+              : n.length < 100
+                ? n.filter((n) => o()(e, n.application.name.toLowerCase()))
+                : n.filter((n) => n.application.name.toLowerCase().includes(e));
+          }, [n, m]);
+        return e
+          ? (0, i.jsx)(I.Z, {})
+          : (0, i.jsx)(p.FormSection, {
+              tag: p.FormTitleTags.H1,
+              title: G.intl.string(G.t["f6kk+v"]),
+              children: (0, i.jsx)(p.HeadingLevel, {
+                component: (0, i.jsx)(p.FormNotice, {
+                  className: U.marginBottom40,
+                  type: p.CardTypes.PRIMARY,
+                  title: G.intl.string(G.t.HU3RFx),
+                  body: G.intl.string(G.t.Nu5Yi4),
+                }),
+                children:
+                  null == n || null == A
+                    ? (0, i.jsx)(p.Spinner, {
+                        className: U.marginTop20,
+                        type: p.Spinner.Type.SPINNING_CIRCLE,
+                      })
+                    : 0 === n.length
+                      ? T(
+                          G.intl.string(G.t.CpPv5u),
+                          G.intl.string(G.t["E+SM6e"]),
+                        )
+                      : 0 === A.length
+                        ? (0, i.jsxs)(i.Fragment, {
+                            children: [_(), T(null, G.intl.string(G.t.EVWFNj))],
+                          })
+                        : (0, i.jsxs)(i.Fragment, {
+                            children: [
+                              _(),
+                              A.sort((e, n) => Number(n.id) - Number(e.id)).map(
+                                (e) =>
+                                  (0, i.jsx)(
+                                    X,
+                                    {
+                                      locale: r,
+                                      onDelete: () => u(e),
+                                      selectedChannelId:
+                                        null == a ? void 0 : a.id,
+                                      selectedGuildId: null != c ? c : void 0,
+                                      ...e,
+                                    },
+                                    e.id,
+                                  ),
+                              ),
+                            ],
+                          }),
+              }),
+            });
+      };
+    },
+    159277: function (e, n, t) {
+      var i, l;
+      t.d(n, {
+        M: function () {
+          return r;
+        },
+        t: function () {
+          return i;
+        },
+      }),
+        t(47120),
+        ((l = i || (i = {})).XBOX_APPLICATION_ID = "622174530214821906"),
+        (l.PLAYSTATION_APPLICATION_ID = "1008890872156405890"),
+        (l.PLAYSTATION_STAGING_APPLICATION_ID = "984193235868065795");
+      let r = {
+        PLAYSTATION_APPLICATION_IDS: new Set([
+          "984193235868065795",
+          "1008890872156405890",
+        ]),
+        ALL: new Set([
+          "622174530214821906",
+          "984193235868065795",
+          "1008890872156405890",
+        ]),
+      };
+    },
+  },
+]);
+//# sourceMappingURL=395cc2ec0f6fb430652e.js.map
