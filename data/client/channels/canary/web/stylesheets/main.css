@@ -18470,6 +18470,10 @@ h3.improved_f017d0:after {
   height: 20px;
   margin-right: 8px;
 }
+.visual-refresh .icon_d03bba {
+  margin-left: -2px;
+  margin-right: calc(-2px + var(--space-8));
+}
 .size56_d03bba .avatarContainer_d03bba {
   width: 56px;
   height: 56px;
@@ -30975,6 +30979,7 @@ img.thumbnail_c64476 {
 .visual-refresh .container_fc4f04 {
   --__header-bar-background: var(--background-base-lower);
   border-bottom: 1px solid var(--border-subtle);
+  padding-left: 20px;
 }
 .upperContainer_fc4f04 {
   display: flex;
@@ -56553,4 +56558,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c4e96418429191d00cf3.css.map*/
+/*# sourceMappingURL=12633.7fc0aabc7f80f358560d.css.map*/
