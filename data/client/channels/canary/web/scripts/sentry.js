@@ -12652,7 +12652,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-dd039753aaaf760b23a99141c84ae14b9db95fa9",
+            release: "discord_web-5b00213588bc7d51129b269a3f0425bdb54f4816",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12721,8 +12721,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "354455"), "354455"));
-          o.YA("builtAt", String("1734461038882"));
+            o.YA("buildNumber", ((e = "354462"), "354462"));
+          o.YA("builtAt", String("1734461358523"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15818,18 +15818,15 @@
               NEUTRAL_7: "#e7e7e9",
               NEUTRAL_71: "#303035",
               NEUTRAL_72: "#2e2e34",
-              NEUTRAL_74: "#2b2b31",
               NEUTRAL_75: "#2a2a2f",
               NEUTRAL_76: "#28282d",
               NEUTRAL_79: "#242429",
               NEUTRAL_82: "#202024",
               NEUTRAL_86: "#1a1a1e",
-              NEUTRAL_89: "#161619",
               NEUTRAL_9: "#dfdfe2",
               NEUTRAL_90: "#151518",
               NEUTRAL_91: "#131416",
               NEUTRAL_92: "#121214",
-              NEUTRAL_94: "#0e0e10",
               NEUTRAL_95: "#0c0c0e",
               NEUTRAL_97: "#070709",
               NEUTRAL_98: "#050506",
@@ -54619,4 +54616,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.e51b1c54a1e08a45423f.js.map
+//# sourceMappingURL=sentry.588d9bbbd5d89d999100.js.map
