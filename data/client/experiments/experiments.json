@@ -11078,29 +11078,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-10_october_holiday",
-      "label": "October Holiday",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3418461453,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-10_overlay_v3",
       "label": "Overlay V3 Shared Context OOP",
       "description": [
@@ -12228,35 +12205,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-11_hotwheels_activity_feed_ml_model",
-      "label": "Hotwheels Activity Feed ML Model",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 3: Control (Noteworthy)",
-        "Treatment 5: ML model (lowest threshold, most % positives)",
-        "Treatment 6: ML model (medium threshold, match % positives to heuristic)",
-        "Treatment 7: ML model (highest threshold, highest f1 score but fewer positives)",
-        "Treatment 8: Randomized"
-      ],
-      "hash": 2145331079,
-      "buckets": [
-        -1,
-        0,
-        3,
-        5,
-        6,
-        7,
-        8
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-11_hypesquad_removal",
       "label": "HypeSquad Removal",
       "description": [
@@ -12677,6 +12625,31 @@
         "canSeeConfetti",
         "canSeeEducation",
         "canSeeUpsells"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_hotwheels_activity_feed_inventory_thresholds",
+      "label": "Hotwheels Activity Feed (Inventory Options)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 11: Relaxed impression capping. (16 hours -> 3 days)",
+        "Treatment 12: All previous treatments combined."
+      ],
+      "hash": 54732725,
+      "buckets": [
+        -1,
+        0,
+        11,
+        12
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "impressionAge"
       ]
     }
   },
@@ -13619,6 +13592,29 @@
         1,
         2,
         3
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_winter_holiday",
+      "label": "Winter Holiday",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 944123231,
+      "buckets": [
+        -1,
+        0,
+        1
       ],
       "holdout": {},
       "aa_mode": false,
