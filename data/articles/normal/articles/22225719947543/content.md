@@ -25,265 +25,111 @@
   /></strong>
   <ul>
     <li>
-      <strong
-        ><a href="#h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ"
-          >What are Discord Quests?</a
-        ></strong
+      <a href="#h_01JFAW7EGYW1KQB4PEWKJ9MJ0G"
+        ><strong>What are Discord Quests?</strong></a
       >
     </li>
     <li>
-      <strong
-        ><a href="#h_01JCKZHX53J3D5A3RGXZGXRFYV"
-          >Completing Game Quests</a
-        ></strong
+      <a href="#h_01JFAWB392Z58VMP5PDW63222E"
+        ><strong>Accepting a Quest</strong></a
       >
       <ul>
         <li>
-          <strong
-            ><a href="#h_01JCKZMVQJ5H43DJP72APDX7TP"
-              >Accepting a Game Quest</a
-            ></strong
+          <a href="#h_01JFAWBFT2RJ7XG9VYJY378KE4"
+            ><strong>Through the Quest Bar on Desktop</strong></a
           >
         </li>
         <li>
-          <strong
-            ><a href="#h_01JCM04DTM6QH87QA00P7MJ089"
-              >Game Quest Requirements</a
-            ></strong
+          <a href="#h_01JFAWCX89PT7F7ZCQP1KPBCQT"
+            ><strong>Through the Quest Home on Desktop</strong></a
           >
         </li>
         <li>
-          <strong
-            ><a href="#h_01JCM0891G5K7DGK0GVCQ02EXS"
-              >Claiming Your Game Quest Rewards</a
-            ></strong
+          <a href="#h_01JFAWS0WY563CGM42C0BDVW9Z"><strong>On Mobile</strong></a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JFAWWB4EYXG032A127X2KGKA"
+        ><strong>Completing the Quest Requirements</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01JCM0891G5K7DGK0GVCQ02EXS"
+        ><strong>Claiming Your Quest Rewards</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
+        ><strong>Controlling the Quest Promotions You See</strong></a
+      >
+      <ul>
+        <li>
+          <a href="#h_01HVPBZR5FP77BF55STCFXMRS9"
+            ><strong>Hide an In-app Promotion of an Individual Quest</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01HVPBZR5FZ4PEXTW08Q4RYP41"
+            ><strong>Opting-out of Quests Promotions</strong></a
           >
         </li>
       </ul>
     </li>
     <li>
-      <strong
-        ><a href="#h_01JCM0EQA50SHS0HWN8KZ1JZD4"
-          >Completing Video Quests</a
-        ></strong
-      >
-      <ul>
-        <li>
-          <strong
-            ><a href="#h_01JCM0F4QJDRVBHRMA1CC040VP"
-              >Accepting a Video Quest</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01JCM0SFDJNXAMJ2WZ37MM362G"
-              >Video Quest Requirements</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01JCM0XZJSKYGHPPXQ4N8DRFKY"
-              >Claiming Your Video Quest Rewards</a
-            ></strong
-          >
-        </li>
-      </ul>
-    </li>
-    <li>
-      <strong
-        ><a href="#h_01JCM1074P8MBKSA8H10DK4FV2"
-          >Active Discord Quests</a
-        ></strong
-      >
-      <ul>
-        <li>
-          <a href="#h_01JEYDY61889HQBJQQ1WWR5YK6"
-            ><strong>Sonic the Hedgehog 3</strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JEYDY618PQ3XAS68MKKNDND6"
-            ><strong>Call of Duty: Black Ops 6 </strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JEVAKE5QRZNGDD04Y1JH8W2J"
-            ><strong>Delta Force</strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JEVAKSXZ809J9QQNGQG4VSB1"
-            ><strong>The Game Awards </strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JECRHSBEADFQ90T1D55Q29J2"
-            ><strong>Minecraft </strong></a
-          >
-        </li>
-        <li>
-          <strong><a href="#h_01JECRHSBERMYXCKYR3V7KJPK4">Fortnite </a></strong>
-        </li>
-        <li>
-          <a href="#h_01JECRHSBEVVDH97E1YX44KSN4"
-            ><strong>The First Descendant </strong></a
-          ><a href="#h_01JE49VFBMRKKY23WHF49SDRC5"><strong> </strong></a
-          ><strong><a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF"> </a></strong
-          ><a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"><strong> </strong></a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <strong
-        ><a href="#h_01J7YCKA16CPF3M25P648DA24R"
-          >Recently Finished Quests</a
-        ></strong
-      >
-      <ul>
-        <li>
-          <a href="#h_01JDQ9C6KVNPHKJVSP5VHCVGEV"
-            ><strong>PC Game Pass</strong> </a
-          >
-        </li>
-        <li>
-          <a href="#h_01JE49VFBMRKKY23WHF49SDRC5"
-            ><strong>World of Warcraft</strong></a
-          >
-        </li>
-        <li>
-          <a href="#h_01JDJ4KZEKE5N4VRTSH2W9BH4X"
-            ><strong>Batman: Arkham Shadow</strong> </a
-          >
-        </li>
-        <li>
-          <a href="#h_01JDQ9CDY9YG7BT3X2GE7E5WQF"><strong>Fortnite</strong></a
-          > 
-        </li>
-        <li>
-          <strong
-            ><a href="#01JDJ7KTDT2CYVDY8CSPZ5MGQ3">Dune: Prophecy </a></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01JB0C2391GAWSSD6WYSX5KPF5">Once Human</a></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#01JB0C3D9MC19G69SK1Y3H7BE7"
-              >Destiny 2: Revenant </a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01J9PEC7HGPYRNC51ADBAJVQ3H">Diablo IV</a> </strong
-          >
-        </li>
-      </ul>
-    </li>
-    <li>
-      <strong
-        ><a href="#h_01HVPBZR5F0EKW79KK7RGEK1HG"
-          >Controlling the Quest Promotions You See</a
-        ></strong
-      >
-      <ul>
-        <li>
-          <strong
-            ><a href="#h_01HVPBZR5FP77BF55STCFXMRS9"
-              >Hide an In-app Promotion of an Individual Quest </a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01HVPBZR5FZ4PEXTW08Q4RYP41"
-              >Opting-out of Quests Promotions</a
-            ></strong
-          >
-        </li>
-      </ul>
-    </li>
-    <li>
-      <strong
-        ><a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
-          >Frequently Asked Questions</a
-        ></strong
+      <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
+        ><strong>Frequently Asked Questions</strong></a
       >
     </li>
   </ul>
 </div>
-<h1 id="h_01HVPBZR5F8Y7T0F1KJ0RAY9FZ">What are Discord Quests? </h1>
+<h1 id="h_01JFAW7EGYW1KQB4PEWKJ9MJ0G">What are Discord Quests? </h1>
 <p>
-  <strong
-    ><span style="color: #333333; background-color: #ffffff"
-      >Quests</span
-    ></strong
-  ><span style="color: #333333; background-color: #ffffff">
-    are a way for players to discover games and new content while earning
-    rewards for playing, streaming, or watching videos on Discord.</span
-  >
+  <strong>Quests</strong> are a way for players to discover games and new
+  content while earning rewards for playing, streaming, or watching videos on
+  Discord.
 </p>
 <p>
-  <span style="color: #333333; background-color: #ffffff"
-    >Discord offers two types of Quests:</span
-  >
+  Each Quest has a specific timeframe for acceptance and completion. Rewards are
+  subject to specific terms. You can find the promotion terms for each Quest on
+  the Quest Home page or after accepting the Quest.
 </p>
-<ul>
-  <li>
-    <strong
-      ><span style="color: #333333; background-color: #ffffff"
-        >Game Quest:</span
-      ></strong
-    ><span style="color: #333333; background-color: #ffffff">
-      Play or stream a game to unlock a reward.</span
-    >
-  </li>
-  <li>
-    <span style="color: #333333; background-color: #ffffff"
-      ><strong>Video Quest:</strong> Watch a video to unlock a reward.</span
-    >
-  </li>
-</ul>
-<h1 id="h_01JCKZHX53J3D5A3RGXZGXRFYV">Completing a Discord Game Quest</h1>
-<div class="info-box">
-  Within each Quest’s
-  <a href="#h_01JCM1074P8MBKSA8H10DK4FV2">Promotion Terms</a>, you will find the
-  steps on how to complete the Quest.
+<div class="book-box">
+  For more information on additional Quest terms, visit this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/27839350349079"
+    target="_blank"
+    rel="noopener noreferrer"
+    >article here</a
+  >.
 </div>
-<h2 id="h_01JCKZMVQJ5H43DJP72APDX7TP">Accepting a Game Quest </h2>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Through the Quest Bar on Desktop </strong></span
-  >
-</p>
-<p>
-  You may see an alert in your Discord app about a Discord Game Quest. Hover
-  over the <strong>Quest</strong> <strong>bar</strong> and select it to expand
-  and learn more about the Game Quest. If you want to participate, you can press
-  <strong>Accept Quest</strong>. 
+<h1 id="h_01JFAWB392Z58VMP5PDW63222E">Accepting a Quest </h1>
+<h2 id="h_01JFAWBFT2RJ7XG9VYJY378KE4">
+  <strong>Through the Quest Bar on Desktop </strong>
+</h2>
+<p class="wysiwyg-text-align-left">
+  You may see an alert in your Discord app about a Discord Quest. Hover over the
+  <strong>Quest bar</strong> and select it to expand and learn more about the
+  Quest. To participate, press <strong>Accept Quest</strong> for a Game Quest or
+  <strong>Start Video Quest</strong> for a Video Quest.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784562574359"
-    width="624"
-    height="377"
+    src="https://support.discord.com/hc/article_attachments/28598110464023"
+    width="600"
+    height="486"
   />
 </p>
-<h4 id="h_01JCKZV0XFN7FF0X7PVGGRK356" class="wysiwyg-text-align-center">
+<h4 id="h_01JFAWCFMDPV0EXAS4T5KFP263" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >“Accept Quest” Button in Quest Bar for Game Quests</span
+    >“Start Video Quest” Button in Quest Bar for Video Quests</span
   >
 </h4>
-<p>
+<h2 id="h_01JFAWCX89PT7F7ZCQP1KPBCQT">
   <span class="wysiwyg-font-size-large"
     ><strong>Through Quest Home on Desktop</strong></span
   >
-</p>
+</h2>
 <p>
   You can also select the Discover icon [<img
     src="https://support.discord.com/hc/article_attachments/27784562575383"
@@ -293,13 +139,15 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784562575767"
-    width="617"
-    height="391"
+    src="https://support.discord.com/hc/article_attachments/28598110469015"
+    width="600"
+    height="486"
   />
 </p>
-<h4 id="h_01JCKZW7SXMDSG0A06S1M8C05Z" class="wysiwyg-text-align-center">
-  <span style="color: #666666">How to Navigate to Discover Page</span>
+<h4 id="h_01JFAWDGBTG4XX266EGTXN8HTA" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >How to Navigate to Discover Page on Desktop</span
+  >
 </h4>
 <p>
   This will direct you to the <strong>Discover </strong>page where you can
@@ -314,36 +162,36 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784562576919"
+    src="https://support.discord.com/hc/article_attachments/28598110477591"
     width="624"
-    height="396"
+    height="171"
   />
 </p>
-<h4 id="h_01JCKZXHA74WH9N1723TE3M92K" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Quest Home in Discover</span>
+<h4 id="h_01JFAWE1SEFTW1F5E8P4CQ25QS" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Quest Home in Discover List</span>
 </h4>
 <p>
-  In <strong>Quests</strong>, you can view recent and current Discord Quests.
-  While here, press <strong>Accept Quest </strong>for active Quests to begin.
+  In <strong>Quests</strong>, you can browse recent and current Discord Quests.
+  From here, select <strong>Accept Quest</strong> for a Game Quest or
+  <strong>Start Video Quest</strong> for a Video Quest to begin participating in
+  any active Quest.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27784562578327"
+    src="https://support.discord.com/hc/article_attachments/28598110479767"
     width="624"
-    height="396"
+    height="505"
   />
 </p>
-<h4 id="h_01JCKZZ1QJ41TB8Q51C5NBYWA7" class="wysiwyg-text-align-center">
-  <span style="color: #666666">“Accept Quest” Button in Quest Home</span>
+<h4 id="h_01JFAWRK81VEPVQ9PPH4FHP6YA" class="wysiwyg-text-align-center">
+  <span style="color: #666666">“Start Video Quest” Button in Quest Home</span>
 </h4>
-<p>
+<h2 id="h_01JFAWS0WY563CGM42C0BDVW9Z">
   <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
-</p>
+</h2>
 <div class="info-box">
-  <span class="wysiwyg-font-size-large"
-    ><strong>NOTE</strong>: On mobile, accepting, tracking, and viewing Quests
-    is currently in beta and limited to specific Quests. <strong><br /></strong
-  ></span>
+  <strong>NOTE</strong>: On mobile, accepting, tracking, and viewing Quests is
+  currently in beta and limited to specific Quests.
 </div>
 <p>
   On mobile, tap the <strong>Quest</strong> <strong>bar</strong> to navigate to
@@ -376,462 +224,144 @@
     >) to accept the Quest.<br
   /></span>
 </div>
-<h2 id="h_01JCM04DTM6QH87QA00P7MJ089">Game Quest Requirements </h2>
-<p>Each Game Quest will have its own requirements:</p>
-<ul>
-  <li>
-    <strong>Playtime Requirement</strong> - To fulfill a Quest, players must
-    engage with the game for a specified duration (e.g., 15 minutes). Ensure you
-    are logged into the Discord desktop app while playing to accurately track
-    your progress.
-  </li>
-  <li>
-    <strong>Streaming Requirement</strong> - To complete a Quest, players need
-    to stream the game to at least one friend in a voice channel using the
-    Discord desktop app for a minimum duration (e.g., 15 minutes). For more
-    details on how to use Go Live and screen sharing, please refer to the
-    <a
-      href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Go Live and Screen Share support article</a
-    >.
-  </li>
-</ul>
-<h2 id="h_01JCM0891G5K7DGK0GVCQ02EXS">Claim Your Game Quest Reward </h2>
-<p>
-  Once you have completed the Game Quest, you can claim the reward by pressing
-  the <strong>Claim Reward</strong> button within any Discord Quest in-app
-  notification.
-</p>
+<h1 id="h_01JFAWWB4EYXG032A127X2KGKA">Completing the Quest Requirements</h1>
+<p>Discord offers three types of Quests:</p>
+<div>
+  <table style="width: 100%">
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><strong>Quest Requirement</strong></td>
+        <td><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td>Playing a Game</td>
+        <td>
+          Engage with the game for a specified duration (e.g., 15 minutes).
+          Ensure you're logged into the Discord desktop app while playing to
+          track progress accurately.
+        </td>
+      </tr>
+      <tr>
+        <td>Streaming a Game</td>
+        <td>
+          Stream the game to at least one friend in a Discord voice channel
+          using the desktop app for a minimum duration (e.g., 15 minutes). For
+          detailed instructions on Go Live and screen sharing, refer to the<a
+            href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
+          >
+            <span class="wysiwyg-underline" style="color: #1155cc"
+              >support article</span
+            ></a
+          >.
+        </td>
+      </tr>
+      <tr>
+        <td>Watching a Video</td>
+        <td>
+          Watch the required video or trailer in Discord's desktop app or
+          browser client. The video pauses if you switch windows, but don't
+          worry - your progress is saved and you can resume watching later.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div class="info-box">
-  Users who have completed quests after <strong>April 24, 2024</strong> will
-  automatically obtain the Discord Quests Badge, which will be added to their
-  profiles. For more information about profile badges, visit our
+  To review a Quest's requirements and completion instructions, hover over the
+  <strong>Quest bar</strong> to expand it, or navigate to
+  <strong>Quest Home</strong> (<strong>Discover &gt; Quests</strong>) to explore
+  available Quests
   <a
-    href="https://support.discord.com/hc/articles/360035962891"
+    href="https://discord.com/quests/1"
     target="_blank"
     rel="noopener noreferrer"
-    >Profile Badges 101 Help Center article</a
-  >.
+    >here</a
+  >!
+</div>
+<h1 id="h_01JCM0891G5K7DGK0GVCQ02EXS">Claiming Your Quest Rewards </h1>
+<p>Once you have completed a Quest, you can claim the reward on Discord:</p>
+<div>
+  <table style="width: 100%">
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><strong>Reward Claiming Method</strong></td>
+        <td><strong>Steps</strong></td>
+      </tr>
+      <tr>
+        <td>Quest Bar on Desktop</td>
+        <td>
+          <p>1. Hover over the <strong>Quest bar</strong>.</p>
+          <p>2. Press the <strong>Claim Reward</strong> button.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Quest Home on Desktop</td>
+        <td>
+          <p>1. Navigate to <strong>Discover</strong>.</p>
+          <p>2. Select <strong>Quests</strong>. </p>
+          <p>3. Find your completed Quest.</p>
+          <p>4. Press the <strong>Claim Reward</strong> button.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Quest Home on Mobile</td>
+        <td>
+          <p>
+            1. Tap on the <strong>Quest bar</strong> to navigate to
+            <strong>Quest</strong> <strong>Home</strong> (<strong
+              >Settings &gt; Quest</strong
+            >). 
+          </p>
+          <p>2. Find you completed Quest.</p>
+          <p>3. Tap <strong>Claim</strong> <strong>Reward</strong>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Quest Bar on Mobile [Beta]</td>
+        <td>
+          <p>
+            1. Tap on the <strong>Mobile</strong> <strong>Quest</strong>
+            <strong>bar</strong>.
+          </p>
+          <p>
+            2. Press the <strong>Claim</strong> <strong>Reward</strong> button.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27784562589079"
-      width="382"
-      height="370"
-  /></span>
-</p>
-<h4 id="h_01JCM0BNYANNGBNPTKW2EBP5P0" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Claim Reward Button in Quest Bar</span>
-</h4>
-<p>
-  The easiest way to claim your reward is by heading over to
-  <strong>Quest Home</strong> (<strong>Discover &gt; Quests</strong>). 
-</p>
-<p>
-  If you’re claiming an <strong>in-game item reward,</strong> you’ll be given a
-  Discord Quest redemption code that you’ll need to redeem on the partnered game
-  redemption website. You can find a link by heading over to our
-  <a href="#h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests section</a> and
-  referring to the steps mentioned specifically for that Quest! You’ll also
-  receive an email with redemption instructions once you’ve completed the Quest.
-</p>
-<p>
-  If you’re ready to claim a <strong>Discord reward</strong>, such as an avatar
-  decoration, you can claim your reward by selecting the
-  <strong>Claim Reward </strong>button.
-</p>
-<h1 id="h_01JCM0EQA50SHS0HWN8KZ1JZD4">Completing a Video Quest</h1>
-<h2 id="h_01JCM0F4QJDRVBHRMA1CC040VP">Accepting a Video Quest </h2>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Through the Quest Bar on Desktop </strong></span
-  >
-</p>
-<p>
-  You may see an alert in your Discord app about a Discord Video Quest. Hover
-  over the <strong>Quest</strong> <strong>Bar</strong> to expand it and learn
-  more about the Video Quest. If you want to participate, you can press
-  <strong>Start Video Quest</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28215792701207"
-    alt="Screenshot 2024-12-02 at 10.45.57 AM.png"
-    width="720"
-    height="461"
+    src="https://support.discord.com/hc/article_attachments/28598110485399"
+    width="601"
+    height="487"
   />
 </p>
-<h4 id="h_01JCM0GRCTY62JPB4NH43RBEZP" class="wysiwyg-text-align-center">
+<h4 id="h_01JFAWZRNPFNKWEYE0JV8N96PE" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >“Start Video Quest” Button in Quest Bar for Video Quests </span
+    >Example of Claiming a Quest Reward on Desktop</span
   >
 </h4>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Through Quest Home on Desktop</strong></span
-  >
+  For <strong>rewards redeemable in partnered games</strong>, you'll receive a
+  Discord Quest redemption code. You can find the partnered game's redemption
+  website in the Quest's information. Redeem your code there. After completing
+  the Quest and selecting <strong>Claim Reward</strong>, you'll also receive an
+  email with detailed redemption instructions.
 </p>
 <p>
-  <span style="color: #666666"
-    ><span class="wysiwyg-color-black70"
-      >Select the Discover icon [<img
-        src="https://support.discord.com/hc/article_attachments/27784589694999"
-        width="26"
-        height="24"
-      />] at the bottom of the server list on the left side of the app. This
-      will direct you to the <strong>Discover </strong>page where you can
-      explore available Discord Quests, by selecting the
-      <strong>Quest </strong>tab within the <strong>Discover </strong>list. You
-      can learn more about Discover</span
-    >
-    <a href="https://support.discord.com/hc/articles/25323248535319"
-      ><span class="wysiwyg-underline" style="color: #1155cc">here</span></a
-    >.</span
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/27784589699479"
-    width="681"
-    height="433"
-  />
-</p>
-<h4 id="h_01JCM0PT2N6SA8NKRBR96CWFM7" class="wysiwyg-text-align-center">
-  <span style="color: #666666">How to Navigate to Discover Page</span>
-</h4>
-<p>
-  In <strong>Quests</strong>, press <strong>Start Video Quest </strong>for an
-  active Video Quests to begin.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/28215736714007"
-    alt="Screenshot 2024-12-02 at 10.43.44 AM copy.png"
-    width="701"
-    height="448"
-  />
-</p>
-<h4 id="h_01JCM0RBCNZTTV70WVAGP7V3YB" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    >“Start Video Quest” Button in Quest Home   </span
-  >
-</h4>
-<h2 id="h_01JCM0SFDJNXAMJ2WZ37MM362G">Video Quest Requirements </h2>
-<p>
-  To complete a Video Quest, players must watch a video through completion in
-  Discord's desktop app or browser app client. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/28215456254487"
-    alt="ScreenRecording2024-12-02at10.32.13AM-ezgif.com-video-to-gif-converter.gif"
-    width="716"
-    height="458"
-  />
-</p>
-<h4 id="h_01JCM0TECHSRP5GEH1JH7WKQMB" class="wysiwyg-text-align-center">
-  <span style="color: #666666">How to Start a Video Quest in Quest Bar</span>
-</h4>
-<div class="info-box">
-  <span style="color: #666666"
-    >To play the video, you must use the Discord desktop app or browser client.
-    The video will pause if you switch away from the Discord window. Don't worry
-    if you can't finish the video in one sitting—your Quest progress is saved,
-    so you can return to it later.<br
-  /></span>
-</div>
-<h2 id="h_01JCM0XZJSKYGHPPXQ4N8DRFKY">Claiming Your Video Quest Reward </h2>
-<p>
-  Once you have completed the Video Quest, you can claim the reward in the
-  similar ways to Game Quests:
-</p>
-<ul>
-  <li>
-    Press the "<strong>Claim Reward</strong>" button within the pop-up video
-    player or any Discord Quest in-app notification.
-  </li>
-  <li>
-    Go to <strong>Quest Home</strong> (<strong>Discover &gt; Quests</strong>).
-  </li>
-  <li>
-    For <strong>in-game item rewards</strong>, you'll receive a Discord Quest
-    redemption code to use on the partnered game's redemption website.
-  </li>
-  <li>
-    For
-    <strong
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >Discord rewards</strong
-    ><span
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-    >
-      like avatar decorations, simply select the "</span
-    ><strong
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >Claim Reward</strong
-    ><span
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >" button.</span
-    >
-  </li>
-</ul>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/28215456257175"
-    alt="Screenshot 2024-12-02 at 10.32.52 AM.png"
-    width="721"
-    height="522"
-  />
-</p>
-<h4 id="h_01JCM0Z8XE3WYFTE6RB3FXY8D8" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    >“Claim Reward” Button in Pop-up Video Player </span
-  ><span style="color: #666666">   </span>
-</h4>
-<h1 id="h_01JCM1074P8MBKSA8H10DK4FV2">Active Discord Quests</h1>
-<h2 id="h_01JEYDY61889HQBJQQ1WWR5YK6">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28462182108951"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Sonic the Hedgehog 3 - Sonic 3 Quest</a
-  >
-</h2>
-<p>
-  The <strong>Sonic 3 Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>December 13, 2024</strong> until
-  <strong>December 21, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 21, 2024</strong>.
-</p>
-<h2 id="h_01JEYDY618PQ3XAS68MKKNDND6">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28462174499991"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Call of Duty: Black Ops 6 - COD: Black Ops 6 Quest</a
-  >
-</h2>
-<p>
-  The<strong> COD: Black Ops 6 Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>December 13, 2024 </strong>until
-  <strong>December 23, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 21, 2024</strong>.
-</p>
-<h2 id="h_01JEVAKE5QRZNGDD04Y1JH8W2J">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28429651446551"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Delta Force - Delta Force Quest</a
-  >
-</h2>
-<p>
-  The<strong> Delta Force Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>December 11, 2024 </strong>until
-  <strong>December 17, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 17, 2025</strong>.
-</p>
-<h2 id="h_01JEVAKSXZ809J9QQNGQG4VSB1">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28423831177623"
-    target="_blank"
-    rel="noopener noreferrer"
-    >The Game Awards - The Game Awards Quest</a
-  >
-</h2>
-<p>
-  <strong>The Game Awards Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>December 11, 2024 </strong>until
-  <strong>December 14, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 14, 2025</strong>.
-</p>
-<h2 id="h_01JECRHSBEADFQ90T1D55Q29J2">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28316964742551"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Minecraft - Minecraft Holiday Quest</a
-  >
-</h2>
-<p>
-  The <strong>Minecraft Holiday Quest</strong> can be accepted on Discord from
-  <strong>December 6, 2024</strong> to
-  <strong>December 20, 2024 (11:59PM UTC)</strong>.  Reward gift codes expire on
-  <strong>January 20, 2025</strong>. Quest requirements must be completed during
-  this period to receive the reward.
-</p>
-<h2 id="h_01JECRHSBERMYXCKYR3V7KJPK4">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28317208037911/"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Fortnite -  Fortnite OG Quest</a
-  >
-</h2>
-<p>
-  The <strong>Fortnite OG Quest</strong> can be accepted on Discord from
-  <strong>December 11, 2024 </strong>to
-  <strong>December 15, 2024 (11:59PM UTC)</strong>. Users must redeem the
-  <strong>Shield Potion avatar decoration</strong> by 
-  <strong>January 15, 2025 </strong>and the
-  <strong>Bush Camper avatar decoration</strong> by
-  <strong>January 11, 2025</strong>. To receive these rewards, all quest
-  requirements must be completed within the specified timeframe.
-</p>
-<h2 id="h_01JECRHSBEVVDH97E1YX44KSN4">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28249742461335"
-    target="_blank"
-    rel="noopener noreferrer"
-    >The First Descendant - The First Descendant Quest</a
-  >
-</h2>
-<p>
-  <strong>The First Descendant Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>December 6, 2024 </strong>until
-  <strong>December 13, 2024 (6:00PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>December 31, 2024 (23:59 PT)</strong>.
-</p>
-<h1 id="h_01J7YCKA16CPF3M25P648DA24R">Recently Finished Quests</h1>
-<h2 id="h_01JDQ9C6KVNPHKJVSP5VHCVGEV">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28110465185047"
-    target="_blank"
-    rel="noopener noreferrer"
-    >PC Game Pass - PC Player Quest</a
-  >
-</h2>
-<p>
-  The <strong>PC Player Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>November 29, 2024</strong> until
-  <strong>December 11, 2024 (8:00AM PT)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>December 31, 2024 (7:59 PM UTC)</strong>.
-</p>
-<h2 id="h_01JE49VFBMRKKY23WHF49SDRC5">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28114748484119"
-    target="_blank"
-    rel="noopener noreferrer"
-    >World of Warcraft - World of Warcraft x Mountain Dew Quest </a
-  >
-</h2>
-<p>
-  The <strong>World of Warcraft x Mountain Dew Quest </strong>can be accepted on
-  Discord from <strong>December 2, 2024</strong> until
-  <strong>December 10, 2024 (11:59PM UTC)</strong>.  Reward gift codes expire
-  <strong>January 31, 2025</strong>. Quest requirements must be completed during
-  this period to receive the reward.
-</p>
-<h2 id="h_01JDJ4KZEKE5N4VRTSH2W9BH4X">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/27950035791383-Batman-Arkham-Shadow-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Batman: Arkham Shadow - Batman: Arkham Shadow Quest</a
-  >
-</h2>
-<p>
-  The <strong>Batman: Arkham Shadow Quest</strong> can be accepted on Discord
-  desktop app or browser client from <strong>November 25, 2024</strong> until
-  <strong>December 8, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 8, 2024</strong>. 
-</p>
-<h2 id="h_01JDQ9CDY9YG7BT3X2GE7E5WQF">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quests"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Fortnite - Fortnite Quest</a
-  >
-</h2>
-<p>
-  The <strong>Fortnite Quest</strong> can be accepted on Discord from
-  <strong>November 29, 2024</strong> until
-  <strong>December 5, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 5, 2025</strong>.
-</p>
-<h2 id="01JDJ7KTDT2CYVDY8CSPZ5MGQ3">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/27606051100183-Dune-Prophecy-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Dune: Prophecy - Dune: Prophecy Quest </a
-  >
-</h2>
-<p id="h_01HVPBZR5E0CYD1A3MZ59RH71S">
-  The <strong>Dune: Prophecy Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>November 14, 2024 </strong>until
-  <strong>November 25, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>December 25, 2024</strong>. 
-</p>
-<h2 id="h_01JB0C2391GAWSSD6WYSX5KPF5">
-  <a
-    href="https://support.discord.com/hc/en-us/articles/27314651396119"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Once Human - Winter Survival Quest</a
-  >
-</h2>
-<p>
-  The <strong>Winter Survival Quest</strong> can be accepted on Discord from
-  <strong>October 25, 2024</strong> until
-  <strong>October 31, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
-  <strong>December 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward.
-</p>
-<h2 id="01JB0C3D9MC19G69SK1Y3H7BE7">
-  <a
-    href="https://support.discord.com/hc/articles/26789789123223"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Destiny 2: Revenant - Destiny 2: Revenant Quest</a
-  >
-</h2>
-<p>
-  The <strong>Destiny 2: Revenant Quest</strong> can be accepted on Discord from
-  <strong>October 8, 2024 </strong>until<strong>
-    October 22, 2024 (11:59PM UTC)</strong
-  >. Reward gift codes expire <strong>December 31, 2024 (UTC -8)</strong>. Quest
-  requirements must be completed during this period to receive the reward.
-</p>
-<h2 id="h_01J9PEC7HGPYRNC51ADBAJVQ3H">
-  <a
-    href="https://support.discord.com/hc/articles/26847740874647"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Diablo IV - Diablo IV: Vessel of Hatred Quest</a
-  >
-</h2>
-<p>
-  The <strong>Diablo IV: Vessel of Hatred Quest</strong> can be accepted on
-  Discord from <strong>October 8, 2024 </strong>until<strong>
-    October 15, 2024 (11:59PM UTC)</strong
-  >. Reward gift codes expire <strong>December 31, 2025 (6:59 AM UTC)</strong>.
-  Quest requirements must be completed during this period to receive the reward.
+  For <strong>Discord-specific rewards</strong> (such as avatar decorations),
+  the reward will be automatically added to your Discord account once you claim
+  it.
 </p>
 <h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">
   Controlling the Quest Promotions You See
@@ -870,9 +400,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25630294711063"
-    width="454"
-    height="323"
+    src="https://support.discord.com/hc/article_attachments/28598110488087"
+    width="368"
+    height="360"
   />
 </p>
 <h4 id="h_01JCM1315BNHAJNH019W5MH50C" class="wysiwyg-text-align-center">
@@ -985,7 +515,10 @@
 <p>
   <strong>Q: Why am I unable to see Quests on the Discord mobile app?</strong>
 </p>
-<p>A: This feature is only available on the desktop and browser app.</p>
+<p>
+  A: On the mobile app, accepting, tracking, and viewing Quests is currently in
+  beta and limited to specific Quests.
+</p>
 <p>
   <strong
     >Q: I have concerns or questions regarding privacy and Quests. </strong
@@ -1049,3 +582,12 @@
     >Profile Badges 101 Help Center article</a
   >. 
 </p>
+<div class="book-box">
+  For more information on additional Quest terms, visit
+  <a
+    href="https://support.discord.com/hc/en-us/articles/27839350349079"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this article here</a
+  >.
+</div>
