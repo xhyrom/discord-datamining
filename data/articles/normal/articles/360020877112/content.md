@@ -12,7 +12,7 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
-<h3>
+<h3 id="h_01JFB8GYPVPAWMN2F0HJE8JS5C">
   Gift Nitro this holiday season and earn up to 3 exclusive, festive
   <a
     href="https://support.discord.com/hc/en-us/articles/13410113109911"
@@ -40,12 +40,9 @@
   />
 </h3>
 <h3 id="h_01JE79SB60AW8D8WXXNP4X1ERV">
-  After sending a gift, choose from three options to claim your avatar
-  decoration!<br />This offer ends on <strong>January 6th, 2025</strong> and
-  applies only to Nitro gifts, not Nitro Basic gifts.<br /><br /><strong
-    >NOTE</strong
-  >: The holiday avatar decorations will be revoked if you refund your Nitro
-  gifts.
+  This offer ends on <strong>January 6th, 2025</strong> and applies only to
+  Nitro gifts, not Nitro Basic gifts.<br /><br /><strong>NOTE</strong>: The
+  holiday avatar decorations will be revoked if you refund your Nitro gifts.
 </h3>
 <p>
   <span class="wysiwyg-font-size-large"
