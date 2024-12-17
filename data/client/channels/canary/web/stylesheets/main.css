@@ -55284,6 +55284,66 @@ html.disable-forced-colors * {
   src: url(/assets/654d24e4330ec77788b1.woff2) format("woff2");
 }
 @font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/de0ea9e656d376ead50b.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: italic;
+  font-weight: 300;
+  src: url(/assets/f2ca4dfa3d5eb7a78f0d.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/b182a77b250085023348.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/assets/a837a7d3441974e852ca.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/0b388475ed207eedf34c.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: italic;
+  font-weight: 500;
+  src: url(/assets/7ae55ec85248a0a345cc.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/e7eab90bca29dff800af.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/assets/62bd153059b53d8a0f01.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: normal;
+  font-weight: 800;
+  src: url(/assets/a4bf2abc52700c871ac1.woff2) format("woff2");
+}
+@font-face {
+  font-family: "ABC Ginto Normal";
+  font-style: italic;
+  font-weight: 800;
+  src: url(/assets/1870f9e7f4db57ba6f51.woff2) format("woff2");
+}
+@font-face {
   font-family: "gg sans";
   font-style: normal;
   font-weight: 400;
@@ -55454,6 +55514,8 @@ html.disable-forced-colors * {
     Helvetica, Arial, sans-serif;
   --font-clan-signature: Corinthia, "gg sans", cursive, "Noto Sans",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "ABC Ginto Nord", "gg sans", serif, "Noto Sans",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 :root:lang(el),
 :root:lang(ru),
@@ -55472,6 +55534,8 @@ html.disable-forced-colors * {
     Helvetica, Arial, sans-serif;
   --font-clan-signature: Corinthia, "gg sans", cursive, "Noto Sans",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "gg sans", serif, "Noto Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 :root:lang(ko) {
   --font-primary: "gg sans", "Apple SD Gothic Neo", NanumBarunGothic,
@@ -55493,6 +55557,10 @@ html.disable-forced-colors * {
   --font-clan-signature: Corinthia, "gg sans", cursive, "Apple SD Gothic Neo",
     NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움,
     "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "ABC Ginto Nord", "gg sans", serif,
+    "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim,
+    굴림, Dotum, 돋움, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 :root:lang(ja) {
   --font-primary: "gg sans", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
@@ -55512,6 +55580,9 @@ html.disable-forced-colors * {
     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka,
     "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-clan-signature: Corinthia, "gg sans", cursive, "Hiragino Sans",
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka,
+    "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "ABC Ginto Nord", "gg sans", serif, "Hiragino Sans",
     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka,
     "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -55535,6 +55606,9 @@ html.disable-forced-colors * {
   --font-clan-signature: Corinthia, "gg sans", cursive, "Microsoft YaHei New",
     微软雅黑, "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, "Noto Sans",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "ABC Ginto Nord", "gg sans", serif,
+    "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei",
+    宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 :root:lang(zh-TW) {
   --font-primary: "gg sans", "Microsoft JhengHei", 微軟正黑體,
@@ -55556,6 +55630,10 @@ html.disable-forced-colors * {
   --font-clan-signature: Corinthia, "gg sans", cursive, "Microsoft JhengHei",
     微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体,
     SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing: "ABC Ginto Nord", "gg sans", serif,
+    "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei",
+    微軟雅黑, 宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 :root {
   --chat-resize-handle-width: 8px;
@@ -56574,4 +56652,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.39cd459d2e4e8ce12329.css.map*/
+/*# sourceMappingURL=12633.9171342b3252b7b05026.css.map*/
