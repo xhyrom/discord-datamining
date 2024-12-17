@@ -3169,14 +3169,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_DISCOVERY_VALID_TERM": {
-    "url": "/discovery/valid-term",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "GUILD_DISCOVERY_SLUG": {
     "url": "/discovery/:param",
     "allowed_methods": [
