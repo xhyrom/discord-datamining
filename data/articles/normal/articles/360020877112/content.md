@@ -25,7 +25,7 @@
   gift purchase, you can select 1 of 3 exclusive avatar decorations as a free
   reward. You will be able to collect all 3 avatar decorations by sending 3
   separate Nitro gift purchases.<br /><br />Once you receive the avatar
-  decoration, it is yours to use.This offer is rolling out to eligible users
+  decoration, it is yours to use. This offer is rolling out to eligible users
   throughout December. Check for a green promotion banner before purchasing.
 </h3>
 <h3 id="h_01JE79SB5ZH5VYWQY9J006MK4R" class="wysiwyg-text-align-center">
@@ -37,7 +37,7 @@
 </h3>
 <h3 id="h_01JE79SB60AW8D8WXXNP4X1ERV">
   After sending a gift, choose from three options to claim your avatar
-  decoration!<br />This offer ends on <strong>January 6th, 2024</strong> and
+  decoration!<br />This offer ends on <strong>January 6th, 2025</strong> and
   applies only to Nitro gifts, not Nitro Basic gifts.<br /><br /><strong
     >NOTE</strong
   >: The holiday avatar decorations will be revoked if you refund your Nitro
