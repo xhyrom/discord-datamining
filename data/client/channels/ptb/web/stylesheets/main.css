@@ -16249,6 +16249,10 @@ span.clanTag_a31c43 {
 .userSubtitle_d270e1 {
   color: var(--content-inventory-overlay-text-secondary);
 }
+.winnerImage_d270e1 {
+  height: 14px;
+  width: 14px;
+}
 .timestamp_c5d1c1 {
   font-family: var(--font-code);
 }
@@ -16324,6 +16328,10 @@ span.clanTag_a31c43 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+.winnerImage_ba1926 {
+  height: 16px;
+  width: 16px;
 }
 .container_cf8a7d {
   border-radius: 8px;
@@ -16404,6 +16412,10 @@ span.clanTag_a31c43 {
   display: flex;
   align-items: center;
 }
+.userWinnerImage_cf8a7d {
+  height: 14px;
+  width: 14px;
+}
 .joinLeaderboardCTAContainer_cf8a7d {
   display: flex;
   justify-content: center;
@@ -16412,11 +16424,9 @@ span.clanTag_a31c43 {
   margin-top: 12px;
   margin-bottom: 6px;
 }
-.joinLeaderboardCTA_cf8a7d {
-  color: var(--content-inventory-overlay-text-secondary);
-}
-.leagueIcon_cf8a7d path {
-  fill: var(--content-inventory-overlay-text-secondary);
+.joinLeaderboardCTAWinnerImage_cf8a7d {
+  width: 14px;
+  height: 14px;
 }
 .rankChangeBadge_cf8a7d {
   display: flex;
@@ -16436,10 +16446,12 @@ span.clanTag_a31c43 {
 .emptyTitle_cf8a7d {
   color: var(--content-inventory-overlay-text-primary);
 }
-.emptyCrownIcon_cf8a7d {
+.emptyWinnerImage_cf8a7d {
   position: relative;
   top: 2px;
   left: 2px;
+  width: 16px;
+  height: 16px;
 }
 .copySpinner_cf8a7d {
   width: 16px;
@@ -16509,7 +16521,7 @@ span.clanTag_a31c43 {
   border-top: 1px solid var(--border-subtle);
   cursor: pointer;
 }
-.badge_e8c4b6 {
+.badge_cf8912 {
   display: inline-block;
   margin-left: 0.25rem;
   vertical-align: top;
@@ -16520,6 +16532,10 @@ span.clanTag_a31c43 {
   cursor: pointer;
   text-indent: 0;
   text-indent: 0;
+}
+.image_cf8912 {
+  height: 20px;
+  width: 20px;
 }
 .badge_ba89c1 {
   display: inline-block;
@@ -56558,4 +56574,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.7fc0aabc7f80f358560d.css.map*/
+/*# sourceMappingURL=12633.39cd459d2e4e8ce12329.css.map*/
