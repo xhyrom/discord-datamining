@@ -2,7 +2,7 @@
 
 ## Senior People Partner
 
-**Location:** Remote (U.S.)
+**Location:** San Francisco, CA
 
 **Id:** 7766427002 <br/>
 **Internal Job Id:** 6057520002 <br/>
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7766427002](https://discord.com/jobs/7766427002)
 
-**Updated At:** Thu, 12 Dec 2024 21:13:02 GMT
+**Updated At:** Tue, 17 Dec 2024 00:34:19 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Working at Discord is like working with an exciting and motivated family. Our growing People team contributes in creating an outstanding employee experience for the Discord family. We do that through designing and promoting thoughtful People programs. To help us accelerate our efforts, we're looking for a Senior People Partner to join our People team. Reporting to our Senior Manager, People Partners, you will work to promote and champion our People programs and provide an excellent employee experience to the Discord family.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Working at Discord is like working with an exciting and motivated team. Our growing People team contributes in creating an outstanding employee experience for the Discord team. We do that through designing and promoting thoughtful People programs. To help us accelerate our efforts, we're looking for a Senior People Partner to join our People team. Reporting to our Senior Manager, People Partners, you will work to promote and champion our People programs and provide an excellent employee experience to the Discord team.
 What You'll Be Doing
 
 Partner with all levels of management as a trusted consultant, providing expertise and creative solutions for organizational design, performance management, engagement, inclusion and diversity, and talent development
@@ -34,6 +34,11 @@ You are analytical with a proven track record of using data to drive decisions a
 You are excellent at coaching, conflict resolution, and building strong relationships across all organizational levels
 You are able to balance strategic thinking with hands-on execution in fast-paced environments
 You are proactive in identifying opportunities and developing innovative solutions while maintaining scalability
+You have supported technology groups at internet and gaming companies in your career, particularly in data science, machine learning, and infrastructure.
+
+Bonus Points
+
+Located in Pacific time zone and preferably based in the Bay Area, with ability to travel to the San Francisco office as needed&amp;nbsp;
 
 #LI-RemoteThe US base salary range for this full-time position is $167,000 to $184,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
@@ -48,6 +53,5 @@ education_optional
 - Talent Development
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
