@@ -5986,6 +5986,7 @@
           (rI.VOICE_DISABLED = "VOICE_DISABLED"),
           (rI.SCHEDULED_MAINTENANCE = "SCHEDULED_MAINTENANCE"),
           (rI.NO_INPUT_DETECTED = "NO_INPUT_DETECTED"),
+          (rI.NO_INPUT_DEVICES_DETECTED = "NO_INPUT_DEVICES_DETECTED"),
           (rI.H264_DISABLED = "H264_DISABLED"),
           (rI.STREAMER_MODE = "STREAMER_MODE"),
           (rI.SURVEY = "SURVEY"),
@@ -7037,7 +7038,6 @@
             GUILD_DISCOVERY: "/discoverable-guilds",
             GUILD_DISCOVERY_SEARCH: "/discoverable-guilds/search",
             GUILD_DISCOVERY_CATEGORIES: "/discovery/categories",
-            GUILD_DISCOVERY_VALID_TERM: "/discovery/valid-term",
             GUILD_DISCOVERY_SLUG: (e) => "/discovery/".concat(e),
             GUILD_DISCOVERY_METADATA: (e) =>
               "/guilds/".concat(e, "/discovery-metadata"),
@@ -8348,6 +8348,7 @@
             "Connections User Settings Empty State"),
           (r0.DEEP_LINK = "Deep Link"),
           (r0.RELINK_UPSELL = "Relink Upsell"),
+          (r0.NITRO_BASIC_UPSELL = "Nitro Basic Upsell"),
           (r0.INBOUND_PARTNER_PROMOTION_REDEMPTION_MODAL =
             "Inbound Partner Promotion Redemption Modal"),
           (r0.NOTIFICATION_CENTER = "Notification Center"),
@@ -10978,6 +10979,8 @@
             "user_account_email_change_warning_continue"),
           (ah.HD_STREAMING_POPOUT_DISMISSED = "hd_streaming_popout_dismissed"),
           (ah.EMOJI_PICKER_BUTTON_HOVERED = "emoji_picker_button_hovered"),
+          (ah.NITRO_BASIC_UPSELL_PERK_HOVERED =
+            "nitro_basic_upsell_perk_hovered"),
           (ah.POST_ACTION_UPSELL_SHOWN = "post_action_upsell_shown"),
           (ah.POST_ACTION_UPSELL_DISMISSED = "post_action_upsell_dismissed"),
           (ah.POST_ACTION_UPSELL_PRIMARY_ACTION_CLICKED =
@@ -12649,7 +12652,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e0813bf373129fafc3f03891c6f02c0d9e1dd64a",
+            release: "discord_web-79661ad765736f6556ac92c15873e4ad205a7c82",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12718,8 +12721,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "354183"), "354183"));
-          o.YA("builtAt", String("1734389037564"));
+            o.YA("buildNumber", ((e = "354603"), "354603"));
+          o.YA("builtAt", String("1734472976667"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -12936,7 +12939,6 @@
           null != window.GLOBAL_ENV.ADYEN_KEY ||
           null != window.GLOBAL_ENV.PROJECT_ENV ||
           null != window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT ||
-          null != window.GLOBAL_ENV.ALGOLIA_KEY ||
           null != window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT ||
           null != window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST ||
           null != window.GLOBAL_ENV.PUBLIC_PATH;
@@ -15816,18 +15818,15 @@
               NEUTRAL_7: "#e7e7e9",
               NEUTRAL_71: "#303035",
               NEUTRAL_72: "#2e2e34",
-              NEUTRAL_74: "#2b2b31",
               NEUTRAL_75: "#2a2a2f",
               NEUTRAL_76: "#28282d",
               NEUTRAL_79: "#242429",
               NEUTRAL_82: "#202024",
               NEUTRAL_86: "#1a1a1e",
-              NEUTRAL_89: "#161619",
               NEUTRAL_9: "#dfdfe2",
               NEUTRAL_90: "#151518",
               NEUTRAL_91: "#131416",
               NEUTRAL_92: "#121214",
-              NEUTRAL_94: "#0e0e10",
               NEUTRAL_95: "#0c0c0e",
               NEUTRAL_97: "#070709",
               NEUTRAL_98: "#050506",
@@ -54617,4 +54616,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.a9ac46d18a147fae9f59.js.map
+//# sourceMappingURL=sentry.18d1f1c55e96c1b7b18f.js.map
