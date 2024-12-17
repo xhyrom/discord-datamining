@@ -15701,6 +15701,7 @@ span.clanTag_a31c43 {
 }
 .visual-refresh .content_c2654d {
   padding-left: var(--space-4);
+  background: var(--bg-overlay-chat, var(--background-base-lower));
 }
 .isUnread_c2654d .content_c2654d {
   color: var(--divider-color);
@@ -56472,4 +56473,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.d50193dd2ee6edfa7fec.css.map*/
+/*# sourceMappingURL=12633.c56374d50f3536b47cfd.css.map*/
