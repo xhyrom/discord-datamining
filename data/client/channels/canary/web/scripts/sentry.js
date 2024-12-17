@@ -12652,7 +12652,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2397009b46976eeb7aeec3ab9799c649aab062f1",
+            release: "discord_web-dd039753aaaf760b23a99141c84ae14b9db95fa9",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12721,8 +12721,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "354435"), "354435"));
-          o.YA("builtAt", String("1734457563166"));
+            o.YA("buildNumber", ((e = "354455"), "354455"));
+          o.YA("builtAt", String("1734461038882"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -12939,7 +12939,6 @@
           null != window.GLOBAL_ENV.ADYEN_KEY ||
           null != window.GLOBAL_ENV.PROJECT_ENV ||
           null != window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT ||
-          null != window.GLOBAL_ENV.ALGOLIA_KEY ||
           null != window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT ||
           null != window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST ||
           null != window.GLOBAL_ENV.PUBLIC_PATH;
@@ -54620,4 +54619,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.459537e4c5383b62f851.js.map
+//# sourceMappingURL=sentry.e51b1c54a1e08a45423f.js.map
