@@ -4445,7 +4445,7 @@
             return nj.$V;
           },
           $Y6: function () {
-            return _x;
+            return _K;
           },
           $ib: function () {
             return o;
@@ -4478,10 +4478,10 @@
             return nj.B1;
           },
           B9o: function () {
-            return _v;
+            return _w;
           },
           BFP: function () {
-            return _1;
+            return _3;
           },
           BRd: function () {
             return nj.BR;
@@ -4523,7 +4523,7 @@
             return _e;
           },
           E07: function () {
-            return _j;
+            return _$;
           },
           EKQ: function () {
             return nj.EK;
@@ -4532,7 +4532,7 @@
             return nj.ET;
           },
           EYA: function () {
-            return _X;
+            return _j;
           },
           EkH: function () {
             return i;
@@ -4553,7 +4553,10 @@
             return n$.Fs;
           },
           GNZ: function () {
-            return oc;
+            return oI;
+          },
+          GOo: function () {
+            return eo;
           },
           GQo: function () {
             return tE;
@@ -4568,7 +4571,7 @@
             return nj.H0;
           },
           HGf: function () {
-            return ou;
+            return oT;
           },
           HN8: function () {
             return _l;
@@ -4577,10 +4580,10 @@
             return nj.He;
           },
           Hqc: function () {
-            return oo;
+            return oc;
           },
           HsE: function () {
-            return oN;
+            return oO;
           },
           IE4: function () {
             return g;
@@ -4616,22 +4619,22 @@
             return nj.Jj;
           },
           JkL: function () {
-            return _k;
+            return _V;
           },
           Jn9: function () {
-            return oC;
+            return oM;
           },
           JuI: function () {
             return _N;
           },
           JwP: function () {
-            return oa;
+            return oo;
           },
           K3D: function () {
             return tV;
           },
           KA4: function () {
-            return _z;
+            return _Q;
           },
           KFR: function () {
             return e2;
@@ -4652,7 +4655,7 @@
             return eU;
           },
           Lg6: function () {
-            return oL;
+            return oD;
           },
           M7m: function () {
             return eG;
@@ -4673,13 +4676,16 @@
             return te;
           },
           N_j: function () {
-            return ol;
+            return oR;
           },
           NgX: function () {
             return s;
           },
           O0b: function () {
             return ex;
+          },
+          O0n: function () {
+            return X;
           },
           O42: function () {
             return n$.O4;
@@ -4688,7 +4694,7 @@
             return nJ;
           },
           OBo: function () {
-            return or;
+            return o_;
           },
           OGo: function () {
             return J;
@@ -4730,7 +4736,7 @@
             return L;
           },
           PrS: function () {
-            return _H;
+            return _x;
           },
           PyE: function () {
             return nj.Py;
@@ -4763,10 +4769,10 @@
             return eX;
           },
           R7I: function () {
-            return _K;
+            return _k;
           },
           REU: function () {
-            return od;
+            return oL;
           },
           RG5: function () {
             return nj.RG;
@@ -4775,10 +4781,10 @@
             return nj.RK;
           },
           RcX: function () {
-            return _B;
+            return _W;
           },
           Rg9: function () {
-            return oi;
+            return ol;
           },
           S7T: function () {
             return nj.S7;
@@ -4790,7 +4796,7 @@
             return tc;
           },
           SRg: function () {
-            return o_;
+            return oi;
           },
           Sap: function () {
             return eW;
@@ -4805,19 +4811,19 @@
             return nj.Sk;
           },
           T23: function () {
-            return oP;
+            return oG;
           },
           TC2: function () {
             return nj.TC;
           },
           TNx: function () {
-            return _J;
+            return _z;
           },
           TPd: function () {
             return nw.T;
           },
           TU7: function () {
-            return _b;
+            return _v;
           },
           TaA: function () {
             return td;
@@ -4874,10 +4880,13 @@
             return _L;
           },
           WND: function () {
-            return ot;
+            return on;
           },
           WtW: function () {
             return en;
+          },
+          Wyy: function () {
+            return _9;
           },
           X5t: function () {
             return nj.X5;
@@ -4892,7 +4901,7 @@
             return n4;
           },
           XKF: function () {
-            return oI;
+            return oA;
           },
           XmY: function () {
             return _h;
@@ -4934,7 +4943,7 @@
             return K;
           },
           _8R: function () {
-            return oD;
+            return og;
           },
           _s_: function () {
             return l;
@@ -4952,7 +4961,7 @@
             return nj.aO;
           },
           aZC: function () {
-            return _0;
+            return _2;
           },
           aib: function () {
             return ec;
@@ -4961,13 +4970,13 @@
             return tA;
           },
           b2L: function () {
-            return _8;
+            return oe;
           },
           b4C: function () {
             return tz;
           },
           b8q: function () {
-            return _Q;
+            return _0;
           },
           bL: function () {
             return er;
@@ -4999,11 +5008,14 @@
           dN1: function () {
             return _f;
           },
+          dYL: function () {
+            return _Z;
+          },
           e3s: function () {
-            return oA;
+            return od;
           },
           eBq: function () {
-            return oR;
+            return oN;
           },
           eHb: function () {
             return tn;
@@ -5018,7 +5030,7 @@
             return e1;
           },
           eez: function () {
-            return _w;
+            return _B;
           },
           en1: function () {
             return _c;
@@ -5048,7 +5060,7 @@
             return nj.fr;
           },
           fzT: function () {
-            return _3;
+            return _4;
           },
           g2L: function () {
             return _;
@@ -5081,7 +5093,7 @@
             return nj.i$;
           },
           iC$: function () {
-            return of;
+            return op;
           },
           iEv: function () {
             return tT;
@@ -5111,7 +5123,7 @@
             return tK;
           },
           jsM: function () {
-            return oT;
+            return of;
           },
           jwA: function () {
             return e0;
@@ -5156,19 +5168,19 @@
             return Q;
           },
           nkL: function () {
-            return os;
+            return ou;
           },
           nnr: function () {
             return n;
           },
           o3l: function () {
-            return oe;
+            return oa;
           },
           oAB: function () {
-            return _Z;
+            return _1;
           },
           oCV: function () {
-            return _9;
+            return or;
           },
           oNc: function () {
             return C;
@@ -5177,13 +5189,13 @@
             return n0;
           },
           p3w: function () {
-            return _Y;
+            return _H;
           },
           p6O: function () {
-            return _6;
+            return _5;
           },
           pAY: function () {
-            return _W;
+            return _Y;
           },
           pJs: function () {
             return N;
@@ -5198,13 +5210,13 @@
             return I;
           },
           pTL: function () {
-            return oS;
+            return oU;
           },
           pjP: function () {
             return ti;
           },
           pmI: function () {
-            return _4;
+            return _8;
           },
           q5t: function () {
             return eu;
@@ -5216,7 +5228,7 @@
             return eN;
           },
           qWG: function () {
-            return op;
+            return oC;
           },
           qc2: function () {
             return tf;
@@ -5234,10 +5246,10 @@
             return eF;
           },
           rnv: function () {
-            return _$;
+            return _q;
           },
           rsA: function () {
-            return oE;
+            return os;
           },
           rtL: function () {
             return eB;
@@ -5255,7 +5267,7 @@
             return tN;
           },
           scU: function () {
-            return _V;
+            return _F;
           },
           si2: function () {
             return tk;
@@ -5278,6 +5290,9 @@
           tPk: function () {
             return nj.tP;
           },
+          t_t: function () {
+            return H;
+          },
           tuJ: function () {
             return eH;
           },
@@ -5294,13 +5309,13 @@
             return eZ;
           },
           vTt: function () {
-            return _7;
+            return ot;
           },
           vbS: function () {
-            return _2;
+            return _6;
           },
           vpv: function () {
-            return _q;
+            return _J;
           },
           vtS: function () {
             return eO;
@@ -5312,7 +5327,7 @@
             return tR;
           },
           w2V: function () {
-            return oO;
+            return oh;
           },
           wC$: function () {
             return B;
@@ -5323,8 +5338,17 @@
           wZ8: function () {
             return z;
           },
+          wli: function () {
+            return oS;
+          },
+          x8Z: function () {
+            return tw;
+          },
           xAR: function () {
-            return oh;
+            return oP;
+          },
+          xGv: function () {
+            return _b;
           },
           xPJ: function () {
             return w;
@@ -5357,13 +5381,13 @@
             return tJ;
           },
           yqN: function () {
-            return on;
+            return oE;
           },
           ys_: function () {
             return ea;
           },
           z7k: function () {
-            return _F;
+            return _X;
           },
           zMe: function () {
             return nj.zM;
@@ -7843,18 +7867,19 @@
           _m = "0000",
           _y = "1",
           _b = 1e4,
-          _v = 50,
-          _w = 150,
-          _B = 300,
-          _W = 10,
-          _Y = 25,
-          _H = 240,
-          _x = 480,
-          _K = 650,
-          _k = "DEVICE_TOKEN",
-          _V = "DEVICE_VOIP_TOKEN",
-          _F = "first_run_date_key",
-          _X = Object.freeze({
+          _v = 1e4,
+          _w = 50,
+          _B = 150,
+          _W = 300,
+          _Y = 10,
+          _H = 25,
+          _x = 240,
+          _K = 480,
+          _k = 650,
+          _V = "DEVICE_TOKEN",
+          _F = "DEVICE_VOIP_TOKEN",
+          _X = "first_run_date_key",
+          _j = Object.freeze({
             API_DOCS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/developers/docs/intro",
@@ -7975,7 +8000,7 @@
               "/safetycenter",
             ),
           }),
-          _j = Object.freeze({
+          _$ = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -7983,10 +8008,11 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          _$ = 10,
-          _q = 25,
-          _J = /^FILTER_/,
-          _z = /^ANSWER_/;
+          _q = 10,
+          _J = 25,
+          _z = /^FILTER_/,
+          _Q = /^ANSWER_/,
+          _Z = 32;
         ((rz = ec || (ec = {})).GUILD = "GUILD"),
           (rz.FAVORITES = "FAVORITES"),
           (rz.CHANNEL = "CHANNEL"),
@@ -8464,7 +8490,7 @@
           (r3.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r3.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r3.NITRO_HOME = "Nitro Home");
-        let _Q = "help_center_cta";
+        let _0 = "help_center_cta";
         ((r6 = eT || (eT = {})).HERO = "Hero"),
           (r6.BODY = "Body"),
           (r6.NAVIGATION = "Navigation"),
@@ -9011,7 +9037,7 @@
           ((r8 = ef || (ef = {})).PRIMARY = "primary"),
           (r8.SECONDARY = "secondary"),
           (r8.DISMISS = "dismiss");
-        let _Z = Object.freeze({
+        let _1 = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9310,7 +9336,7 @@
             "TOGGLE_REACTION_POPOUT"),
           (aE.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (aE.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
-        let _0 = 50;
+        let _2 = 50;
         ((ai = eM || (eM = {})).TWITCH = "twitch"),
           (ai.YOUTUBE = "youtube"),
           (ai.SKYPE = "skype"),
@@ -9359,15 +9385,15 @@
             GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
             AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
           });
-        let _1 = new Set(["facebook", "contacts"]),
-          _2 = new Set([
+        let _3 = new Set(["facebook", "contacts"]),
+          _6 = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          _3 = Object.freeze({
+          _4 = Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
               .concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -9375,15 +9401,16 @@
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
-          _6 = 10070709,
-          _4 = [
+          _5 = 10070709,
+          _8 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          _5 = (0, nH._i)(nv.Z.BRAND_500);
-        nb()(null != _5, "Brand color could not be parsed"),
-          ((aI = eb || (eb = {})).ROLE = "ROLE"),
+          _7 = (0, nH._i)(nv.Z.BRAND_500);
+        nb()(null != _7, "Brand color could not be parsed");
+        let _9 = _7;
+        ((aI = eb || (eb = {})).ROLE = "ROLE"),
           (aI.MEMBER = "MEMBER"),
           ((au = ev || (ev = {})).VOICE_LEGACY_SUBSYSTEM =
             "voice_legacy_subsystem"),
@@ -9419,15 +9446,15 @@
           ((aT = eW || (eW = {})).EMPTY = "EMPTY"),
           (aT.FILTER = "FILTER"),
           (aT.FILTER_ALL = "FILTER_ALL");
-        let _8 = "YYYY-MM-DD",
-          _7 = "PrivateChannelRecipientsInvitePopout";
+        let oe = "YYYY-MM-DD",
+          ot = "PrivateChannelRecipientsInvitePopout";
         ((aN = eY || (eY = {}))[(aN.NONE = 0)] = "NONE"),
           (aN[(aN.TIER_1 = 1)] = "TIER_1"),
           (aN[(aN.TIER_2 = 2)] = "TIER_2"),
           (aN[(aN.TIER_3 = 3)] = "TIER_3");
-        let _9 = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
-          oe = 7,
-          ot = 0;
+        let or = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
+          oa = 7,
+          on = 0;
         ((ad = eH || (eH = {}))[(ad.DEFAULT = 0)] = "DEFAULT"),
           (ad[(ad.GIFT = 1)] = "GIFT"),
           (ad[(ad.SALE = 2)] = "SALE"),
@@ -9436,7 +9463,7 @@
           (ad[(ad.MOBILE = 5)] = "MOBILE"),
           (ad[(ad.PREMIUM_TIER_0 = 6)] = "PREMIUM_TIER_0"),
           (ad[(ad.MOBILE_PREMIUM_TIER_2 = 7)] = "MOBILE_PREMIUM_TIER_2");
-        let or = Object.freeze({
+        let o_ = Object.freeze({
           fonts: [
             {
               src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -9453,7 +9480,7 @@
           (af[(af.BILLING_RETRY = 7)] = "BILLING_RETRY"),
           (af[(af.PAUSED = 8)] = "PAUSED"),
           (af[(af.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
-        let oa = {
+        let oo = {
           ALL_PAUSE: new Set([9, 8]),
           ALL_PAUSEABLE: new Set([1, 8]),
           INACTIVE: new Set([0, 4, 6, 7]),
@@ -9473,7 +9500,7 @@
           (aL.STICKER = "STICKER"),
           (aL.CHOICE_LOADING = "CHOICE_LOADING"),
           (aL.LABEL = "LABEL");
-        let on = Object.freeze({
+        let oE = Object.freeze({
           FONT_SIZE_DEFAULT: 16,
           FONT_SIZE_MIN: 12,
           FONT_SIZE_MAX: 24,
@@ -11094,7 +11121,7 @@
           (aP.SUMMARIES = "SUMMARIES"),
           (aP.SUMMARIES_ENABLED = "SUMMARIES_ENABLED"),
           (aP.CLAN_ADMIN_UPSELL = "CLAN_ADMIN_UPSELL");
-        let o_ = Object.freeze({
+        let oi = Object.freeze({
             STORAGE_MANIFEST: (e, t) =>
               "".concat(e, "/storage/").concat(t, "/MANIFEST"),
             INSTALL_DIR: (e) => "".concat(e, "/content"),
@@ -11108,7 +11135,7 @@
               linux: "linux",
             },
           }),
-          oo = 864e5;
+          oc = 864e5;
         ((ag = eJ || (eJ = {})).NORMAL = "normal"),
           (ag.MINIMUM = "minimum"),
           (ag.NO_CHAT = "no-chat"),
@@ -11126,7 +11153,7 @@
           (aM.RTC_DEBUG = "RTC_DEBUG"),
           (aM.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
           (aM.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
-        let oE = Object.freeze({
+        let os = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
           CHANNEL_CREATE: 10,
@@ -11370,7 +11397,7 @@
           (av.SCHEDULED_END_TIME = "scheduled_end_time"),
           (av.IS_CANCELED = "is_canceled"),
           (av.LINKED_LOBBY = "linked_lobby");
-        let oi = 50;
+        let ol = 50;
         ((aw = e6 || (e6 = {})).AGREEMENTS = "AGREEMENTS"),
           (aw.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (aw.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
@@ -11392,7 +11419,7 @@
           (aB.EMAIL = "email"),
           (aB.REVERIFY_PHONE = "reverify_phone"),
           (aB.REVERIFY_EMAIL = "reverify_email");
-        let oc = 512;
+        let oI = 512;
         ((aW = e8 || (e8 = {}))[(aW.PRIMARY = 0)] = "PRIMARY"),
           (aW[(aW.SECONDARY = 2)] = "SECONDARY"),
           (aW[(aW.WHEEL = 4)] = "WHEEL"),
@@ -11440,7 +11467,7 @@
           (ax.EMBED_IFRAME = "EMBED_IFRAME"),
           ((aK = tt || (tt = {})).GIF = "GIF"),
           (aK.STICKER = "STICKER");
-        let os = Object.freeze({
+        let ou = Object.freeze({
           GIF: { type: "GIF", command: "gif", title: "Gif", commandId: "-16" },
           TENOR: {
             type: "GIF",
@@ -11661,22 +11688,22 @@
             twitch: "Twitch",
             epic: "Epic",
           });
-        let ol = 6016,
-          oI = 3384;
+        let oR = 6016,
+          oA = 3384;
         ((a$ = ti || (ti = {})).USAGE_STATISTICS = "usage_statistics"),
           (a$.PERSONALIZATION = "personalization"),
           ((aq = tc || (tc = {}))[(aq.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
           (aq[(aq.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
           (aq[(aq.NO_RELATION = 8)] = "NO_RELATION");
-        let ou = 14;
+        let oT = 14;
         ((aJ = ts || (ts = {}))[(aJ.NONE = 0)] = "NONE"),
           (aJ[(aJ.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (aJ[(aJ.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
-        let oR = 30;
+        let oN = 30;
         ((az = tl || (tl = {})).OVERLAY = "OVERLAY"),
           (az.APP = "APP"),
           (az.POPOUT = "POPOUT");
-        let oA = __OVERLAY__ ? "OVERLAY" : "APP";
+        let od = __OVERLAY__ ? "OVERLAY" : "APP";
         ((aQ = tI || (tI = {})).COMPLETE = "complete"),
           (aQ.TRANSITION = "transition"),
           ((aZ = tu || (tu = {})).QUEUED = "queued"),
@@ -11765,12 +11792,12 @@
           ((na = tP || (tP = {})).HOUSE_1 = "HOUSE_1"),
           (na.HOUSE_2 = "HOUSE_2"),
           (na.HOUSE_3 = "HOUSE_3");
-        let oT = "RANDOM_HYPESQUAD_HOUSE";
+        let of = "RANDOM_HYPESQUAD_HOUSE";
         ((nn = tg || (tg = {}))[(nn.KEYBOARD_KEY = 0)] = "KEYBOARD_KEY"),
           (nn[(nn.MOUSE_BUTTON = 1)] = "MOUSE_BUTTON"),
           (nn[(nn.KEYBOARD_MODIFIER_KEY = 2)] = "KEYBOARD_MODIFIER_KEY"),
           (nn[(nn.GAMEPAD_BUTTON = 3)] = "GAMEPAD_BUTTON");
-        let oN = Object.freeze({
+        let oO = Object.freeze({
             esc: 9,
             f1: 67,
             f2: 68,
@@ -11889,7 +11916,7 @@
             "track back": 173,
             "track skip": 171,
           }),
-          od = Object.freeze({
+          oL = Object.freeze({
             a: 4,
             s: 22,
             d: 7,
@@ -12005,7 +12032,7 @@
           (n_[(n_.Center = 2)] = "Center"),
           (n_[(n_.Back = 3)] = "Back"),
           (n_[(n_.Forward = 4)] = "Forward");
-        let of = Object.freeze({
+        let op = Object.freeze({
           a: 65,
           s: 83,
           d: 68,
@@ -12162,7 +12189,7 @@
           (nR.TRENDING_CATEGORY = "Category"),
           (nR.SEARCH = "Search"),
           (nR.SEARCH_SUGGESTION = "Search Suggestion");
-        let oO = new Set([
+        let oh = new Set([
           nj.pK.USD,
           nj.pK.CAD,
           nj.pK.EUR,
@@ -12177,7 +12204,7 @@
         ((nA = tY || (tY = {})).ALWAYS = "ALWAYS"),
           (nA.ON_CLICK = "ON_CLICK"),
           (nA.IF_MODERATOR = "IF_MODERATOR");
-        let oL = [];
+        let oD = [];
         ((nT = tH || (tH = {})).CHANNEL_CALL_POPOUT =
           "DISCORD_CHANNEL_CALL_POPOUT"),
           (nT.SOUNDBOARD = "DISCORD_SOUNDBOARD"),
@@ -12214,8 +12241,9 @@
           (nh.TWO_G = "2g"),
           (nh.THREE_G = "3g"),
           (nh.FOUR_G = "4g"),
-          (nh.FIVE_G = "5g"),
-          ((nD = t$ || (t$ = {})).INITIAL = "initial"),
+          (nh.FIVE_G = "5g");
+        let oS = "discodoEasterEgg";
+        ((nD = t$ || (t$ = {})).INITIAL = "initial"),
           (nD.ENTER = "enter"),
           (nD.UPDATE = "update"),
           (nD.LEAVE = "leave"),
@@ -12231,21 +12259,21 @@
           (nP[(nP.YOUTUBE = 4)] = "YOUTUBE"),
           (nP[(nP.WEBHOOKS = 5)] = "WEBHOOKS"),
           (nP[(nP.CHANNELS_SYNCING = 6)] = "CHANNELS_SYNCING");
-        let op = 2500,
-          oh = 0,
-          oD = 2592e6;
+        let oC = 2500,
+          oP = 0,
+          og = 2592e6;
         ((ng = tQ || (tQ = {})).USERS = "users"),
           (ng.ROLES = "roles"),
           (ng.EVERYONE = "everyone"),
           ((nU = tZ || (tZ = {}))[(nU.AUTO = 1)] = "AUTO"),
           (nU[(nU.FULL = 2)] = "FULL");
-        let oS = 100,
-          oC =
+        let oU = 100,
+          oM =
             /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
         ((nM = t0 || (t0 = {}))[(nM.NULL = 0)] = "NULL"),
           (nM[(nM.DISABLED = 1)] = "DISABLED"),
           (nM[(nM.ENABLED = 2)] = "ENABLED");
-        let oP =
+        let oG =
           "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
         ((nG = t1 || (t1 = {}))[(nG.CLIPS_ENABLED = 1)] = "CLIPS_ENABLED"),
           (nG[(nG.ALLOW_VOICE_RECORDING = 2)] = "ALLOW_VOICE_RECORDING"),
@@ -12655,7 +12683,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c3081490548a2cb61ca64ba9a28f912d882efa1e",
+            release: "discord_web-a04e190a74049d865538577899f7c7ebd8f53b99",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12724,8 +12752,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "354885"), "354885"));
-          o.YA("builtAt", String("1734547565930"));
+            o.YA("buildNumber", ((e = "354889"), "354889"));
+          o.YA("builtAt", String("1734547881105"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54619,4 +54647,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.37ff9b2ae597e9460ee0.js.map
+//# sourceMappingURL=sentry.094b3e90d26fb3408f04.js.map
