@@ -24367,6 +24367,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   --link-decoration: underline;
   text-align: center;
 }
+.container_c198fb:after {
+  right: 8px !important;
+}
 .asset_c198fb {
   width: 150px;
   position: absolute;
@@ -56652,4 +56655,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9171342b3252b7b05026.css.map*/
+/*# sourceMappingURL=12633.c00f492581ff00b17ee5.css.map*/
