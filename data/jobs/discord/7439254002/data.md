@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Realtime Infrastructure
 
-**Location:** San Francisco, CA or Remote
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7439254002 <br/>
 **Internal Job Id:** 5913015002 <br/>
