@@ -24,6 +24,11 @@
   this Nitro promotion.
 </p>
 <p>
+  Users who have had a Discord Nitro membership at any point on their accounts
+  and have had a Nitro Classic or Nitro Basic membership in the past 12 months
+  are ineligible to redeem this promotion.
+</p>
+<p>
   If a user has had a Nitro Basic, Nitro Classic, or Server Boosting membership
   active on their account and they’ve never had a Nitro membership, redeeming
   this promotion will override that membership.
@@ -373,8 +378,9 @@
   What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Member? 
 </h2>
 <p>
-  Just to clarify - if you have had a Discord Nitro membership  in the past 12
-  months, you are ineligible to redeem this promotion.
+  Just to clarify - if you have had a Discord Nitro membership at any point on
+  your account and have had a Nitro Classic or Nitro Basic membership in the
+  past 12 months, you are ineligible to redeem this promotion.
 </p>
 <p>
   So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting
@@ -460,8 +466,9 @@
   their Discord accounts are eligible to redeem this Nitro promotion.
 </p>
 <p>
-  Additionally, users who previously had a Discord Nitro membership in the past
-  12 months are ineligible.
+  Additionally, users who previously had a Discord Nitro membership and have had
+  a Nitro Classic or Nitro Basic membership in the past 12 months are
+  ineligible.
 </p>
 <p>
   This promotion is only available in certain regions. If you receive an
@@ -481,8 +488,9 @@
   >
 </p>
 <p>
-  <strong>A: </strong>If you previously had a Discord Nitro membership within
-  the last 12 months,  you are ineligible to redeem this promotion.
+  <strong>A: </strong>If you previously had a Discord Nitro membership at any
+  point on your accounts and have had a Nitro Classic or Nitro Basic membership
+  in the past 12 months, you are ineligible to redeem this promotion.
 </p>
 <p>
   If you have had a Nitro Basic, Nitro Classic, or Server Boosting membership
