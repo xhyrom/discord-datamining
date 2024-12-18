@@ -18,6 +18,68 @@
     >Additional Terms
   </span>
 </h1>
+<p>
+  <strong
+    ><span style="color: #2e3338; background-color: #ffffff"
+      >Quest Game: Roblox</span
+    ></strong
+  >
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338; background-color: #ffffff"
+      >Quest Name:
+    </span></strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/28624569156759-Roblox-Quest"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Roblox Play Quest</a
+  >
+</p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of <strong>Roblox</strong> on
+  PC to receive a <strong>Bobo the Picnic Bear </strong>reward code. 
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338; background-color: #ffffff"
+      >Who is Eligible:
+    </span></strong
+  ><span style="background-color: #ffffff">Available to players on PC</span>
+  <span style="background-color: #ffffff">where both </span
+  ><strong><span style="background-color: #ffffff">Discord </span></strong
+  ><span style="background-color: #ffffff">and</span
+  ><strong><span style="background-color: #ffffff"> Roblox </span></strong
+  ><span style="background-color: #ffffff">are available</span>.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions. </span
+  >
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338; background-color: #ffffff"
+      >Availability Period:</span
+    ></strong
+  >
+  The <strong>Roblox Play Quest</strong> can be accepted on Discord from
+  <strong>December 18, 2024 </strong>until
+  <strong>December 24, 2024 (11:59PM UTC)</strong>. 
+</p>
+<p>
+  <span style="color: #2e3338; background-color: #ffffff"
+    >Complete the quest requirements during this period and claim your reward by </span
+  ><strong>January 24, 2025</strong>.
+</p>
+<p>
+  <strong
+    ><span style="color: #2e3338; background-color: #ffffff">Other Terms:</span
+    ><span style="color: #2e3338; background-color: #ffffff">
+      Limit of one reward redemption per account.</span
+    ></strong
+  >
+</p>
+<p> </p>
 <p><strong>Quest Game:</strong> <strong>Delta Force</strong></p>
 <p>
   <strong>Quest Name:</strong>
