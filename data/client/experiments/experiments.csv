@@ -751,6 +751,7 @@ id,hash,label
 2024-08_message_attachment_send_failure,408176620,Message Attachment Send Failure Experiment
 2024-08_message_forwarding_icon,1378883154,Message forwarding icon change
 2024-08_mobile_message_visibility_percentage_calculation,559768860,Mobile Message Visibility Percentage Calculation
+2024-08_mobile_perguild_collectibles_edit,2799195304,Mobile Per-guild Collectibles Edit
 2024-08_new_gateway_dispatcher,191973690,New Gateway Dispatcher
 2024-08_nitro_tenure_rewards_backfill,3782439999,Nitro Tenure Reward Backfill
 2024-08_open_platform_app_launcher_holdout,154757202,Open Platform App Launcher Holdout

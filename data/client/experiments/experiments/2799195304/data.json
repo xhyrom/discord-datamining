@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-10_nitro_tab_forced_render",
-    "label": "Nitro Tab Forced Re-render Investigation",
+    "id": "2024-08_mobile_perguild_collectibles_edit",
+    "label": "Mobile Per-guild Collectibles Edit",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable nitro tab forced re-render"
+      "Treatment 1: Enable Mobile Per-guild Collectibles Edit"
     ],
-    "hash": 3681053868,
+    "hash": 2799195304,
     "buckets": [
       -1,
       0,
