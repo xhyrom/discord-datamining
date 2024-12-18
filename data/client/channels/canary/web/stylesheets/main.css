@@ -22903,15 +22903,16 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .no-webkit-scrollbar .scrollableContainer_bdf0de {
   scrollbar-width: none;
 }
-:where(.visual-refresh) .scrollableContainer_bdf0de {
+:where(.visual-refresh) .channelTextArea_bdf0de {
   box-sizing: border-box;
   border: 1px solid var(--border-faint);
   border-radius: var(--radius-sm);
   transition: border-color.2s ease;
   box-shadow: var(--shadow-low);
+  background: var(--bg-overlay-3, var(--channeltextarea-background));
   overflow-y: auto;
 }
-:where(.visual-refresh) .scrollableContainer_bdf0de:focus-within {
+:where(.visual-refresh) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
 }
 :where(.visual-refresh) .button_bdf0de {
@@ -22923,7 +22924,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   background: var(--bg-overlay-3, var(--channeltextarea-background));
 }
 .visual-refresh .themedBackground_bdf0de {
-  background: var(--bg-overlay-3, var(--chat-background-default));
+  background: none;
 }
 .sticker_bdf0de {
   display: block;
@@ -23243,7 +23244,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   display: flex;
   align-items: center;
   max-height: var(--custom-channel-textarea-text-area-height);
-  margin-right: var(--space-16);
+  margin-right: var(--space-4);
 }
 .enable-forced-colors .scrollableContainer_bdf0de {
   border: 1px solid CanvasText;
@@ -25235,6 +25236,20 @@ div.popoutCloseButton_d523a2:hover {
 .premiumFlair_b82429:not(:last-child) {
   margin-right: 4px;
 }
+.visual-refresh .characterCount_b82429 {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  border-right: 1px solid var(--border-subtle);
+  padding-right: var(--space-16);
+  margin-right: var(--space-8);
+}
+.visual-refresh .premiumFlair_b82429 {
+  color: var(--icon-secondary);
+}
+.visual-refresh .premiumFlair_b82429:not(:last-child) {
+  margin-right: var(--space-8);
+}
 .flairContainer_b82429 {
   display: flex;
   align-items: center;
@@ -25242,12 +25257,6 @@ div.popoutCloseButton_d523a2:hover {
 }
 .upsell_b82429 {
   margin-top: 8px;
-}
-.theme-dark .error_b82429 {
-  color: var(--red-360);
-}
-.theme-light .error_b82429 {
-  color: var(--status-danger);
 }
 .container_f45dac {
   margin: 8px;
@@ -56655,4 +56664,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c00f492581ff00b17ee5.css.map*/
+/*# sourceMappingURL=12633.870335ec6abd8d14fa45.css.map*/
