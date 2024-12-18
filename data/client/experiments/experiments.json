@@ -3497,29 +3497,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_overlay3_out_of_process_enablement",
-      "label": "Overlay3 - Out of Process Enablement",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2544068076,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_remix_ga",
       "label": "Remix General Available",
       "description": [
@@ -11225,7 +11202,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "useOverlayV3"
+        "enabled"
       ]
     }
   },
@@ -12631,6 +12608,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-12_icymi_status_with_media",
+      "label": "Shows media with custom status in ICYMI",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables showing media with custom status in ICYMI"
+      ],
+      "hash": 4006754440,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-12_new_guild_profile",
       "label": "Enables new guild profile",
       "description": [
@@ -12639,6 +12639,29 @@
         "Treatment 1: On"
       ],
       "hash": 3008491910,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_overlay_v3_tech",
+      "label": "Overlay V3 Shared Tech Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Use Overlay V3 Tech"
+      ],
+      "hash": 558925743,
       "buckets": [
         -1,
         0,
@@ -13244,29 +13267,6 @@
             }
           ]
         }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_icymi_status_with_media",
-      "label": "Shows media with custom status in ICYMI",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables showing media with custom status in ICYMI"
-      ],
-      "hash": 4006754440,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },

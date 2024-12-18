@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-08_overlay3_out_of_process_enablement",
-    "label": "Overlay3 - Out of Process Enablement",
+    "id": "2024-12_overlay_v3_tech",
+    "label": "Overlay V3 Shared Tech Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Use Overlay V3 Tech"
     ],
-    "hash": 2544068076,
+    "hash": 558925743,
     "buckets": [
       -1,
       0,
