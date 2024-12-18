@@ -22921,7 +22921,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   transition: border-color.2s ease;
   box-shadow: var(--shadow-low);
   background: var(--bg-overlay-3, var(--channeltextarea-background));
-  overflow-y: auto;
 }
 :where(.visual-refresh) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
@@ -23191,9 +23190,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .visual-refresh .stackedBars_bdf0de {
   background: var(--background-surface-higher);
-  border: 1px solid var(--border-subtle);
-  border-bottom: none;
-  box-shadow: var(--shadow-medium);
 }
 .visual-refresh .stackedBars_bdf0de > :not(:last-child) {
   border-bottom: 1px solid var(--border-subtle);
@@ -56691,4 +56687,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c2bfdea483e6dd2b01fa.css.map*/
+/*# sourceMappingURL=12633.580dbd7fc82a099599fa.css.map*/
