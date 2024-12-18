@@ -1019,7 +1019,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 :where(.visual-refresh) .button_dd4f85 {
   border-radius: 8px;
   transition-duration: 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--opacity-white-8);
 }
 :where(.visual-refresh).theme-dark .lookLink_dd4f85.colorPrimary_dd4f85,
 :where(.visual-refresh).theme-dark .lookLink_dd4f85.colorLink_dd4f85 {
@@ -1059,6 +1059,9 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .lookFilled_dd4f85.colorTransparent_dd4f85 {
   border-color: var(--border-faint);
+}
+:where(.visual-refresh) .lookFilled_dd4f85.colorWhite_dd4f85 {
+  border-color: var(--opacity-8);
 }
 :where(.visual-refresh) .lookFilled_dd4f85.colorWhite_dd4f85:hover {
   background-color: var(--button-filled-white-background-hover);
@@ -52257,8 +52260,10 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-new-61);
   --button-danger-background-disabled: var(--red-new-50);
   --button-danger-background-hover: var(--red-new-57);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-danger-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --button-filled-brand-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-filled-brand-inverted-background-active: var(--neutral-17);
   --button-filled-brand-inverted-background-hover: var(--neutral-9);
   --button-filled-brand-inverted-text: var(--black);
@@ -52286,7 +52291,9 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-new-57);
   --button-positive-background-disabled: var(--green-new-50);
   --button-positive-background-hover: var(--green-new-53);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-positive-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-secondary-background: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -52970,8 +52977,10 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-new-61);
   --button-danger-background-disabled: var(--red-new-50);
   --button-danger-background-hover: var(--red-new-57);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-danger-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --button-filled-brand-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-filled-brand-inverted-background-active: var(--neutral-17);
   --button-filled-brand-inverted-background-hover: var(--neutral-9);
   --button-filled-brand-inverted-text: var(--black);
@@ -53001,7 +53010,9 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-new-57);
   --button-positive-background-disabled: var(--green-new-50);
   --button-positive-background-hover: var(--green-new-53);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-positive-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-secondary-background: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
   );
@@ -53691,8 +53702,10 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-new-61);
   --button-danger-background-disabled: var(--red-new-50);
   --button-danger-background-hover: var(--red-new-57);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-danger-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --button-filled-brand-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-filled-brand-inverted-background-active: var(--neutral-17);
   --button-filled-brand-inverted-background-hover: var(--neutral-9);
   --button-filled-brand-inverted-text: var(--black);
@@ -53720,7 +53733,9 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-new-57);
   --button-positive-background-disabled: var(--green-new-50);
   --button-positive-background-hover: var(--green-new-53);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-positive-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-secondary-background: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -54403,8 +54418,10 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-new-61);
   --button-danger-background-disabled: var(--red-new-50);
   --button-danger-background-hover: var(--red-new-57);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0.1);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-danger-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --button-filled-brand-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-filled-brand-inverted-background-active: var(--neutral-17);
   --button-filled-brand-inverted-background-hover: var(--neutral-9);
   --button-filled-brand-inverted-text: var(--black);
@@ -54432,7 +54449,9 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-new-57);
   --button-positive-background-disabled: var(--green-new-50);
   --button-positive-background-hover: var(--green-new-53);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0.1);
+  --button-positive-border: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --button-secondary-background: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -56672,4 +56691,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5261a7df2441ac732019.css.map*/
+/*# sourceMappingURL=12633.c2bfdea483e6dd2b01fa.css.map*/
