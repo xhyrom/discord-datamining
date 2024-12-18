@@ -902,6 +902,10 @@
       "OPTIONS"
     ]
   },
+  "COLLECTIBLES_SHOP_HOME": {
+    "url": "/collectibles-shop-home",
+    "allowed_methods": null
+  },
   "CONSUMABLE_FETCH_PRICE": {
     "url": "/store/consumable/pricing/:param",
     "allowed_methods": [
