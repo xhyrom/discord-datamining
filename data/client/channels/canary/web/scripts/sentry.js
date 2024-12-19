@@ -12683,7 +12683,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-cfa24a71483323a7662098b7b9ec9aab50e5b10c",
+            release: "discord_web-fdd32d59ee42bc8fad34b070b104c2fbdb6af5ba",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12752,8 +12752,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "355046"), "355046"));
-          o.YA("builtAt", String("1734567593833"));
+            o.YA("buildNumber", ((e = "355066"), "355066"));
+          o.YA("builtAt", String("1734570723383"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15721,13 +15721,14 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_1: "#e7eeff",
+              BLUE_NEW_21: "#91bdf6",
               BLUE_NEW_26: "#7cb0f3",
+              BLUE_NEW_31: "#67a3f0",
               BLUE_NEW_36: "#5297ed",
+              BLUE_NEW_37: "#4e94ec",
               BLUE_NEW_42: "#3687e8",
               BLUE_NEW_49: "#0074e3",
-              BLUE_NEW_7: "#cde0fd",
-              BLUE_NEW_87: "#0b223b",
+              BLUE_NEW_57: "#0d64be",
               BLURPLE_10: "#c8d2fe",
               BLURPLE_19: "#aabafd",
               BLURPLE_25: "#97aafb",
@@ -15795,12 +15796,13 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_1: "#d2ffda",
+              GREEN_NEW_22: "#82ca8e",
+              GREEN_NEW_31: "#60b370",
+              GREEN_NEW_37: "#48a45e",
               GREEN_NEW_50: "#00863a",
               GREEN_NEW_53: "#087d37",
+              GREEN_NEW_56: "#0d7534",
               GREEN_NEW_57: "#0f7233",
-              GREEN_NEW_87: "#0c2611",
-              GREEN_NEW_9: "#b3ebbc",
               GUILD_BOOSTING_BLUE: "#3e70dd",
               GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
               GUILD_BOOSTING_PINK: "#ff73fa",
@@ -16251,12 +16253,13 @@
               RED_830: "#2e090a",
               RED_860: "#280808",
               RED_900: "#220606",
-              RED_NEW_1: "#ffdfdf",
-              RED_NEW_5: "#ffd1cf",
+              RED_NEW_20: "#fd9a96",
+              RED_NEW_29: "#f47a77",
+              RED_NEW_35: "#ec6563",
               RED_NEW_50: "#d22d39",
+              RED_NEW_55: "#bb2b34",
               RED_NEW_57: "#b32a31",
               RED_NEW_61: "#a1272d",
-              RED_NEW_88: "#3a100f",
               REDDIT: "#ff4500",
               RIOT_GAMES: "#ea0029",
               ROLE_BLUE: "#206694",
@@ -16368,9 +16371,10 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
-              YELLOW_NEW_1: "#ffe8d7",
-              YELLOW_NEW_6: "#f6dabe",
-              YELLOW_NEW_87: "#2e1d05",
+              YELLOW_NEW_20: "#ddb27f",
+              YELLOW_NEW_29: "#cb995a",
+              YELLOW_NEW_35: "#bf8843",
+              YELLOW_NEW_56: "#8c5705",
               YOUTUBE: "#cb2120",
             },
           };
@@ -54638,4 +54642,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.800ab1c1b96e6345b47e.js.map
+//# sourceMappingURL=sentry.aa4aecd2d82095154645.js.map
