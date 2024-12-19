@@ -78,7 +78,7 @@
       </p>
       <p>
         <em
-          >When it’s time to share all those photos you took,&nbsp;<br />we
+          >When it’s time to share all those photos you took,&nbsp;<br />We
           better preserve colors as you remember they look. [9]<br />Since
           iPhones regained up to four gigs of space,<br />You can download ’em
           all — memories can’t be replaced. [10]</em
@@ -91,12 +91,12 @@
         >
       </p>
       <p>
-        <em>P.S.&nbsp;<br />If you </em
+        <em>P.S.<br />If you </em
         ><a href="http://dis.gd/NitroGiftingCL"><em>gift someone Nitro</em></a
         ><em>
-          for this festive occasion,<br />you’ll also get your own Avatar
-          Decoration!
-        </em>
+          for this festive occasion,<br />you'll also get your own Avatar
+          Decoration!&nbsp;</em
+        >
       </p>
     </div>
   </div>
