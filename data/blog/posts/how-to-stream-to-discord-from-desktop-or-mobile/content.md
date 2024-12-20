@@ -318,7 +318,7 @@
         WHILE streaming your console game.&nbsp;
       </p>
       <figure
-        style="max-width: 1600px"
+        style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -340,7 +340,7 @@
         before.&nbsp;
       </p>
       <figure
-        style="max-width: 1600px"
+        style="max-width: 1600pxpx"
         class="w-richtext-align-fullwidth w-richtext-figure-type-image"
       >
         <div>
@@ -351,15 +351,6 @@
           />
         </div>
       </figure>
-      <p>
-        If you primarily play console games and didn’t see any info about it
-        above, don’t fret! <strong>You can also </strong
-        ><a
-          href="https://discord.com/blog/xbox-stream-to-discord-announcement#heading-2"
-          ><strong>stream to Discord from your Xbox</strong></a
-        >, helping you recreate that feeling of playing with your friends on the
-        couch from anywhere in the world.
-      </p>
       <p>
         This article is meant to help you or a friend start streaming to Discord
         as best as you can — if you think something else would be good to
