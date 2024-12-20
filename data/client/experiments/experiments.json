@@ -11907,7 +11907,7 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-12_voice_icon_states",
+      "id": "2024-12_voice_call_buttons",
       "label": "Voice/Video icon states",
       "description": [
         "Not Eligible",
@@ -11916,7 +11916,7 @@
         "Treatment 2: Grouped buttons with control colors",
         "Treatment 3: Grouped buttons with only red mic"
       ],
-      "hash": 516807114,
+      "hash": 2815273603,
       "buckets": [
         -1,
         0,
@@ -11927,7 +11927,8 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "mode",
+        "groupedButtons"
       ]
     }
   },
