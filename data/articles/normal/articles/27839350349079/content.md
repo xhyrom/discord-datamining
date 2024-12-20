@@ -15,9 +15,68 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">
   <span style="color: #2e3338; background-color: #ffffff"
-    >Additional Terms
-  </span>
+    >Additional Terms</span
+  >
 </h1>
+<p><strong>Quest Game: Rec Room</strong></p>
+<p>
+  <strong>Quest Name: </strong
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/28667280045079"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Rec Room Winter Quest</a
+  >
+</p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Rec Room</strong> on PC, PlayStation 4, PlayStation 5, Xbox Series X,
+  and Xbox Series S to receive the<strong>
+    Rec Room Lightning avatar decoration</strong
+  >. You can learn more about avatar decorations
+  <a
+    href="https://support.discord.com/hc/articles/13410113109911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >. 
+</p>
+<p>
+  <strong>Who is Eligible</strong>:
+  <span style="background-color: #ffffff">Available to players on </span
+  ><strong><span style="background-color: #ffffff">PC</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">PlayStation 4</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">PlayStation 5</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">Xbox Series X</span></strong
+  ><span style="background-color: #ffffff">, and </span
+  ><strong><span style="background-color: #ffffff">Xbox Series S</span></strong>
+  <span style="background-color: #ffffff">where both </span
+  ><strong><span style="background-color: #ffffff">Discord </span></strong
+  ><span style="background-color: #ffffff">and</span
+  ><strong><span style="background-color: #ffffff"> Rec Room </span></strong
+  ><span style="background-color: #ffffff">are available</span>.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions. </span
+  >
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Rec Room Winter Quest</strong> can be accepted on Discord from
+  <strong>December 23, 2024 </strong>until
+  <strong>December 29, 2024 (11:59PM UTC)</strong>. 
+</p>
+<p>
+  <span style="color: #2e3338; background-color: #ffffff"
+    >Complete the quest requirements during this period and claim your reward by </span
+  ><strong>January 29, 2025</strong>.
+</p>
+<p>
+  <strong>Other Terms:</strong> Limit of one reward redemption per account. 
+</p>
+<p> </p>
 <p>
   <strong
     ><span style="color: #2e3338; background-color: #ffffff"
