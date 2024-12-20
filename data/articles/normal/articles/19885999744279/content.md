@@ -15,32 +15,36 @@
   be aware of the ways in which eSafety can help them respond to the challenges
   they may encounter online. You can find out more information about eSafety on
   their
-  <a href="https://www.esafety.gov.au/about-us"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >website</span
-    ></a
+  <a
+    href="https://www.esafety.gov.au/about-us"
+    target="_blank"
+    rel="noopener noreferrer"
+    >website</a
   >, including how to make a
-  <a href="https://www.esafety.gov.au/report"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >complaint</span
-    ></a
+  <a
+    href="https://www.esafety.gov.au/report"
+    target="_blank"
+    rel="noopener noreferrer"
+    >complaint</a
   >.
 </p>
 <p>
+  In addition to these resources, Discord provides tools to help all users stay
+  safe on the platform, like our
+  <a href="https://discord.com/safety" target="_blank" rel="noopener noreferrer"
+    >Safety Center</a
+  >. If you are an Australian user seeking specific assistance with a suspected
+  financial scam, you can report this to Discord by following the instructions
+  in our Deceptive Practices Policy Explainer, and report the issue to your
+  financial institution or local law enforcement.
+</p>
+<p>
   eSafety’s website also includes a comprehensive list of
-  <a href="https://www.esafety.gov.au/about-us/counselling-support-services"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >counselling and support services</span
-    ></a
+  <a
+    href="https://www.esafety.gov.au/about-us/counselling-support-services"
+    target="_blank"
+    rel="noopener noreferrer"
+    >counselling and support services</a
   >
   tailored for Australians.
 </p>
