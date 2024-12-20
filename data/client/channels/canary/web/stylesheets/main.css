@@ -32893,12 +32893,21 @@ img.thumbnail_c64476 {
   min-height: 400px;
 }
 .visual-refresh .root_f9a4c9 {
-  background-color: var(--background-surface-high);
   border-radius: var(--radius-md);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-normal);
 }
 .visual-refresh .small_f9a4c9 {
   min-height: 220px;
+  width: 442px;
+  max-height: min(900px, 70vh);
+}
+.visual-refresh .medium_f9a4c9 {
+  width: 602px;
+  max-height: min(900px, 70vh);
+}
+.visual-refresh .large_f9a4c9 {
+  max-width: 962px;
+  max-height: min(900px, 70vh);
 }
 @media (max-width: 485px) {
   .root_f9a4c9 {
@@ -32953,29 +32962,6 @@ img.thumbnail_c64476 {
 .theme-light .footerSeparator_f9a4c9 {
   box-shadow: inset 0 1px 0 hsl(var(--primary-100-hsl) / 0.6);
 }
-.visual-refresh .header_f9a4c9,
-.visual-refresh .footer_f9a4c9 {
-  padding-left: var(--spacing-24);
-  padding-right: var(--spacing-24);
-}
-.visual-refresh .header_f9a4c9 {
-  padding-bottom: 0;
-  overflow: hidden;
-}
-.visual-refresh .separator_f9a4c9 {
-  box-shadow: none;
-}
-.visual-refresh .content_f9a4c9 {
-  padding: var(--space-8) var(--space-24) 0 var(--space-24);
-}
-.visual-refresh .footer_f9a4c9 {
-  padding-top: var(--space-16);
-  background-color: var(--background-surface-high);
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-}
-.visual-refresh .footerSeparator_f9a4c9 {
-  box-shadow: none;
-}
 .content_f9a4c9 {
   position: relative;
   z-index: 0;
@@ -32997,6 +32983,10 @@ img.thumbnail_c64476 {
 .close_f9a4c9:hover {
   opacity: 1;
   color: var(--interactive-hover);
+}
+.visual-refresh .close_f9a4c9 {
+  height: 24px;
+  color: var(--icon-primary);
 }
 .closeWithCircleBackground_f9a4c9 {
   width: 24px;
@@ -33036,6 +33026,26 @@ img.thumbnail_c64476 {
   height: 100%;
   justify-content: center;
   width: 100%;
+}
+.visual-refresh .separator_f9a4c9,
+.visual-refresh .footerSeparator_f9a4c9 {
+  box-shadow: none;
+}
+:where(.visual-refresh) .header_f9a4c9,
+:where(.visual-refresh) .footer_f9a4c9 {
+  padding-left: var(--spacing-24);
+  padding-right: var(--spacing-24);
+}
+:where(.visual-refresh) .header_f9a4c9 {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+:where(.visual-refresh) .content_f9a4c9 {
+  padding: var(--space-8) var(--space-24) 0 var(--space-24);
+}
+:where(.visual-refresh) .footer_f9a4c9 {
+  padding-top: var(--space-16);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
 .enable-forced-colors .root_f9a4c9 {
   border: 2px solid CanvasText;
@@ -52358,6 +52368,8 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-10);
+  --modal-background: var(--neutral-66);
+  --modal-footer-background: var(--neutral-66);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-38);
   --scrollbar-auto-scrollbar-color-track: var(--neutral-75);
   --scrollbar-auto-thumb: var(--neutral-37);
@@ -52700,6 +52712,16 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-10) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --modal-background: color-mix(
+      in oklab,
+      var(--neutral-66) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --modal-footer-background: color-mix(
+      in oklab,
+      var(--neutral-66) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
@@ -53174,6 +53196,8 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-71);
+  --modal-background: var(--neutral-1);
+  --modal-footer-background: var(--neutral-1);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-31);
   --scrollbar-auto-scrollbar-color-track: var(--neutral-3);
   --scrollbar-auto-thumb: var(--neutral-30);
@@ -53520,6 +53544,16 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-71) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --modal-background: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --modal-footer-background: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
@@ -53983,6 +54017,8 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-26);
+  --modal-background: var(--neutral-91);
+  --modal-footer-background: var(--neutral-91);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-45);
   --scrollbar-auto-scrollbar-color-track: var(--neutral-98);
   --scrollbar-auto-thumb: var(--neutral-45);
@@ -54321,6 +54357,16 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-26) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --modal-background: color-mix(
+      in oklab,
+      var(--neutral-91) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --modal-footer-background: color-mix(
+      in oklab,
+      var(--neutral-91) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
@@ -54788,6 +54834,8 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-19);
+  --modal-background: var(--neutral-79);
+  --modal-footer-background: var(--neutral-79);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-43);
   --scrollbar-auto-scrollbar-color-track: var(--neutral-90);
   --scrollbar-auto-thumb: var(--neutral-42);
@@ -55124,6 +55172,16 @@ html.disable-forced-colors * {
       in oklab,
       var(--blurple-19) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --modal-background: color-mix(
+      in oklab,
+      var(--neutral-79) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --modal-footer-background: color-mix(
+      in oklab,
+      var(--neutral-79) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
@@ -57074,4 +57132,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.bc7da065af0977392ffb.css.map*/
+/*# sourceMappingURL=12633.f04780f27ac69b67d2cc.css.map*/
