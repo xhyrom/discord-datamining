@@ -23006,6 +23006,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-top: none;
 }
 .visual-refresh .flushContainer_bdf0de {
+  background-color: transparent;
+  background-color: initial;
   border: none;
 }
 .visual-refresh .flushContainer_bdf0de .accessoryBar_bdf0de {
@@ -57171,4 +57173,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.752fc3fe2980ae7f473d.css.map*/
+/*# sourceMappingURL=12633.414d748e583e21d87747.css.map*/
