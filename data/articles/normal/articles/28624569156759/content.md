@@ -45,9 +45,8 @@
 </p>
 <p>
   <strong>Who is Eligible</strong>: Available to players on PC where both
-  <strong>Discord </strong>&lt;span"&gt;and<strong> Roblox </strong>are
-  available. Discord’s premium services are restricted in some regions. 
-  &lt;/span"&gt;
+  <strong>Discord </strong>and<strong> Roblox </strong>are available. Discord’s
+  premium services are restricted in some regions. 
 </p>
 <p>
   <strong>Availability Period: </strong>The
