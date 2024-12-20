@@ -22928,7 +22928,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-radius: var(--radius-sm);
   transition: border-color.2s ease;
   box-shadow: var(--shadow-low);
-  background: var(--bg-overlay-3, var(--chat-background-default));
+  background: var(--bg-overlay-floating, var(--chat-background-default));
 }
 :where(.visual-refresh) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
@@ -22937,6 +22937,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
+}
+.visual-refresh.custom-theme-background .channelTextArea_bdf0de {
+  border-color: var(--app-border-frame);
 }
 .themedBackground_bdf0de {
   background: var(--bg-overlay-3, var(--channeltextarea-background));
@@ -34411,6 +34414,10 @@ img.thumbnail_c64476 {
   display: flex;
   flex-direction: column;
 }
+.visual-refresh .editor_bcfa1e {
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+}
 .editorHeader_bcfa1e {
   padding: 0 var(--custom-client-themes-editor-editor-padding);
   width: var(--custom-client-themes-editor-content-width);
@@ -38144,6 +38151,10 @@ img.thumbnail_c64476 {
   display: flex;
   flex-direction: column;
 }
+.visual-refresh .themeEditor_c9dda6 {
+  padding-left: var(--space-12);
+  padding-right: var(--space-12);
+}
 .editorHeader_c9dda6 {
   padding: 0 var(--custom-client-themes-editor-editor-padding);
   width: var(--custom-client-themes-editor-content-width);
@@ -38458,7 +38469,9 @@ html.disable-forced-colors * {
 .visual-refresh .app_bd26cc {
   position: static;
 }
-.visual-refresh .notAppAsidePanel_bd26cc:has(~ .DevTools) .app_bd26cc {
+.visual-refresh
+  .notAppAsidePanel_bd26cc:has(~ [data-app-right-panel="true"])
+  .app_bd26cc {
   position: relative;
 }
 .mobileApp_bd26cc {
@@ -56883,6 +56896,16 @@ code {
   --bg-overlay-opacity-home: 0.85;
   --bg-overlay-opacity-home-card: 0.8;
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-4);
+  --bg-overlay-opacity-floating: 0.65;
+}
+.theme-dark.custom-theme-background.visual-refresh {
+  --bg-overlay-opacity-1: 0.9;
+  --bg-overlay-opacity-2: 0.85;
+  --bg-overlay-opacity-3: 0.8;
+  --bg-overlay-opacity-4: 0.75;
+  --bg-overlay-opacity-5: 0.7;
+  --bg-overlay-opacity-6: 0.65;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-6);
 }
 .theme-dark.custom-theme-background,
 .custom-theme-background .theme-dark {
@@ -56909,6 +56932,18 @@ code {
   --bg-overlay-opacity-home: 0.7;
   --bg-overlay-opacity-home-card: 0.9;
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
+  --bg-overlay-opacity-floating: 0.95;
+}
+.theme-light.custom-theme-background.visual-refresh {
+  --bg-overlay-color: 255 255 255;
+  --bg-overlay-opacity-chat: 0.85;
+  --bg-overlay-opacity-1: 0.85;
+  --bg-overlay-opacity-2: 0.8;
+  --bg-overlay-opacity-3: 0.75;
+  --bg-overlay-opacity-4: 0.7;
+  --bg-overlay-opacity-5: 0.65;
+  --bg-overlay-opacity-6: 0.6;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-6);
 }
 .theme-light.custom-theme-background,
 .custom-theme-background .theme-light {
@@ -57028,24 +57063,28 @@ code {
       )
       fixed 0 0 / cover,
     var(--custom-theme-background) fixed 0 0 / cover;
+  --bg-overlay-floating: linear-gradient(
+        rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-floating)),
+        rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-floating))
+      )
+      fixed 0 0 / cover,
+    var(--custom-theme-background) fixed 0 0 / cover;
 }
 [data-disable-adaptive-theme="true"],
 .disable-adaptive-theme {
   --theme-base-color-amount: 0% !important;
   --theme-text-color-amount: 0% !important;
 }
-.visual-refresh.custom-theme-background.theme-dark {
-  --app-border-frame: color-mix(
+.visual-refresh.custom-theme-background {
+  --custom-app-border-frame-base: color-mix(
     in oklab,
-    var(--custom-theme-secondary-color) 100%,
-    black 80%
+    var(--custom-theme-primary-color) 50%,
+    var(--custom-theme-secondary-color) 50%
   );
-}
-.visual-refresh.custom-theme-background.theme-light {
   --app-border-frame: color-mix(
     in oklab,
-    var(--custom-theme-secondary-color) 100%,
-    white 80%
+    var(--custom-app-border-frame-base) 24%,
+    var(--border-subtle) 100%
   );
 }
 body,
@@ -57132,4 +57171,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f04780f27ac69b67d2cc.css.map*/
+/*# sourceMappingURL=12633.752fc3fe2980ae7f473d.css.map*/
