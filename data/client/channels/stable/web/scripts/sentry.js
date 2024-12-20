@@ -5912,6 +5912,7 @@
           (ra.AUDIT_LOG_FILTER = "AUDIT_LOG_FILTER"),
           (ra.MODERATION = "MODERATION"),
           (ra.DELETE = "DELETE"),
+          (ra.ACCESS = "ACCESS"),
           (ra.DISCOVERY = "DISCOVERY"),
           (ra.DISCOVERY_LANDING_PAGE = "DISCOVERY_LANDING_PAGE"),
           (ra.GUILD_PREMIUM = "GUILD_PREMIUM"),
@@ -10461,6 +10462,8 @@
             "media_viewer_share_button_tapped"),
           (aS.MEDIA_VIEWER_DOWNLOAD_BUTTON_TAPPED =
             "media_viewer_download_button_tapped"),
+          (aS.MEDIA_VIEWER_AFFORDANCE_CLICKED =
+            "media_viewer_affordance_clicked"),
           (aS.FILE_SIZE_LIMIT_EXCEEDED = "file_size_limit_exceeded"),
           (aS.MOBILE_FILE_PICKER_ERROR = "mobile_file_picker_error"),
           (aS.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED =
@@ -12691,7 +12694,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-698f9d3892d3e671aa559cd94c7e89a09f0d4814",
+            release: "discord_web-8dc6074b3f0ff91d565275736ac1cd9d47a227ca",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12760,8 +12763,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "355426"), "355426"));
-          o.YA("builtAt", String("1734658430903"));
+            o.YA("buildNumber", ((e = "355624"), "355624"));
+          o.YA("builtAt", String("1734725469465"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15729,7 +15732,7 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_21: "#91bdf6",
+              BLUE_NEW_23: "#89b8f5",
               BLUE_NEW_26: "#7cb0f3",
               BLUE_NEW_31: "#67a3f0",
               BLUE_NEW_36: "#5297ed",
@@ -15804,12 +15807,11 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_22: "#82ca8e",
-              GREEN_NEW_31: "#60b370",
-              GREEN_NEW_37: "#48a45e",
+              GREEN_NEW_26: "#73c081",
+              GREEN_NEW_34: "#54ac67",
+              GREEN_NEW_39: "#409f57",
               GREEN_NEW_50: "#00863a",
               GREEN_NEW_53: "#087d37",
-              GREEN_NEW_56: "#0d7534",
               GREEN_NEW_57: "#0f7233",
               GUILD_BOOSTING_BLUE: "#3e70dd",
               GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
@@ -16261,7 +16263,7 @@
               RED_830: "#2e090a",
               RED_860: "#280808",
               RED_900: "#220606",
-              RED_NEW_20: "#fd9a96",
+              RED_NEW_21: "#fc9792",
               RED_NEW_29: "#f47a77",
               RED_NEW_35: "#ec6563",
               RED_NEW_50: "#d22d39",
@@ -16379,10 +16381,10 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
-              YELLOW_NEW_20: "#ddb27f",
-              YELLOW_NEW_29: "#cb995a",
-              YELLOW_NEW_35: "#bf8843",
-              YELLOW_NEW_56: "#8c5705",
+              YELLOW_NEW_30: "#c99656",
+              YELLOW_NEW_38: "#b98037",
+              YELLOW_NEW_43: "#ae7322",
+              YELLOW_NEW_55: "#905904",
               YOUTUBE: "#cb2120",
             },
           };
@@ -54650,4 +54652,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.63ddf3684e9502344f88.js.map
+//# sourceMappingURL=sentry.cfce268cb6a23096fe6e.js.map
