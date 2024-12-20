@@ -10867,7 +10867,7 @@ div.modalHeader_c5e09c {
   object-fit: cover;
 }
 .guildIconImage_a2e41e.acronym_a2e41e {
-  background-color: var(--background-secondary);
+  background-color: var(--bg-base-tertiary);
 }
 .acronym_a2e41e {
   font-size: 14px;
@@ -22920,7 +22920,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   border-radius: var(--radius-sm);
   transition: border-color.2s ease;
   box-shadow: var(--shadow-low);
-  background: var(--bg-overlay-3, var(--channeltextarea-background));
+  background: var(--bg-overlay-3, var(--chat-background-default));
 }
 :where(.visual-refresh) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
@@ -23009,6 +23009,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .sansAttachButton_bdf0de {
   padding-left: calc(-1px + var(--space-16));
+}
+.inlineContainer_bdf0de .sansAttachButton_bdf0de {
+  padding-left: 0;
 }
 .sansAttachButtonCreateThread_bdf0de {
   padding-left: 10px;
@@ -23252,6 +23255,8 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   align-items: center;
   max-height: var(--custom-channel-textarea-text-area-height);
   margin-right: var(--space-4);
+  position: sticky;
+  top: 0;
 }
 .enable-forced-colors .scrollableContainer_bdf0de {
   border: 1px solid CanvasText;
@@ -27666,6 +27671,9 @@ img.thumbnail_c64476 {
 .inner_c59af2 {
   background: var(--input-background);
   border-radius: 3px;
+}
+.visual-refresh .inner_c59af2 {
+  border-radius: var(--radius-sm);
 }
 .custom-profile-theme .inner_c59af2 {
   background: rgb(var(--bg-overlay-color-inverse) / 0.1);
@@ -56778,4 +56786,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.0bf66a11dfe41f062cbf.css.map*/
+/*# sourceMappingURL=12633.49beb6f83f47ae6c9427.css.map*/
