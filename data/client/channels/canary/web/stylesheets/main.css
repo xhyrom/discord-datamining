@@ -56908,8 +56908,8 @@ code {
   --bg-overlay-opacity-3: 0.8;
   --bg-overlay-opacity-4: 0.75;
   --bg-overlay-opacity-5: 0.7;
-  --bg-overlay-opacity-6: 0.65;
-  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-6);
+  --bg-overlay-opacity-6: 0.15;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
 }
 .theme-dark.custom-theme-background,
 .custom-theme-background .theme-dark {
@@ -56946,8 +56946,8 @@ code {
   --bg-overlay-opacity-3: 0.75;
   --bg-overlay-opacity-4: 0.7;
   --bg-overlay-opacity-5: 0.65;
-  --bg-overlay-opacity-6: 0.6;
-  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-6);
+  --bg-overlay-opacity-6: 0.15;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
 }
 .theme-light.custom-theme-background,
 .custom-theme-background .theme-light {
@@ -57175,4 +57175,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.2507a19564a44de1c151.css.map*/
+/*# sourceMappingURL=12633.a7baea9636026687c7b2.css.map*/
