@@ -904,7 +904,11 @@
   },
   "COLLECTIBLES_SHOP_HOME": {
     "url": "/collectibles-shop-home",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONSUMABLE_FETCH_PRICE": {
     "url": "/store/consumable/pricing/:param",
