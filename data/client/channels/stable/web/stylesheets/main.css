@@ -13451,6 +13451,9 @@ div.cardContainer_c22357 {
 .sponsorLogo_b3552d {
   width: 144px;
 }
+.loadingIndicatorWrapper_b3552d {
+  padding: 24px 0;
+}
 .headerImage_cf4d85 {
   position: absolute;
   top: -68px;
@@ -57193,4 +57196,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.71ee71b490be1170c114.css.map*/
+/*# sourceMappingURL=12633.3027defda7dd6c28a9ba.css.map*/
