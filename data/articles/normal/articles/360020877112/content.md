@@ -349,7 +349,7 @@
   >
   applies, if you are on iOS please reach out directly to Apple to request a
   refund. If you are on Android, please reach out to our
-  <a href="http://dis.gd/billing." target="_blank" rel="noopener noreferrer"
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
     >billing team</a
   >
   within 5 days of the initial purchase date to request a refund.
