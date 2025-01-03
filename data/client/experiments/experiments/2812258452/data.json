@@ -1,0 +1,35 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_perceptual_volume_function",
+    "label": "Perceptual volume function adjustment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use gamma 2.8",
+      "Treatment 2: Use gamma ~1.7 (50% = -10dB, 25% = -20dB)",
+      "Treatment 3: Use gamma 2.6",
+      "Treatment 4: Use gamma 3.0",
+      "Treatment 5: Use gamma 2.0",
+      "Treatment 6: Use gamma 4.0"
+    ],
+    "hash": 2812258452,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "gamma",
+      "attenuationRange",
+      "boostRange"
+    ]
+  }
+}
