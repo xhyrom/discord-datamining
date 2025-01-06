@@ -90,7 +90,7 @@
   the avatar decoration, it is yours to use. This offer is rolling out to
   eligible users throughout December. Check for a green promotion banner before
   purchasing.<br /><br />This offer ends on
-  <strong>January 6th, 2024</strong> and applies only to Nitro gifts, not Nitro
+  <strong>January 6th, 2025</strong> and applies only to Nitro gifts, not Nitro
   Basic gifts.<br />Curious about Nitro gifting? Check out our
   <a
     href="https://support.discord.com/hc/en-us/articles/360020877112#h_01JDAHX8ZV2GM9GG6SPVN2ZKAA"
