@@ -18,6 +18,34 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Off The Grid </strong></p>
+<p><strong>Quest Name: Off The Grid Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Off The Grid </strong>to receive an<strong>
+    Impact Junkie Set.</strong
+  >
+</p>
+<p>
+  <strong>Who is Eligible: </strong>Available to players on<strong>
+    PC, PlayStation 5, Xbox Series X, </strong
+  >and<strong> Xbox Series S </strong>where both
+  <strong>Discord </strong>and<strong> Off The Grid </strong>are available.
+  Discord’s premium services are restricted in some regions.<strong> </strong>
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Off The Grid Quest</strong> can be accepted on Discord from
+  <strong>January 6, 2025 </strong>until<strong>
+    January 12, 2025 (11:59PM UTC). </strong
+  >
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>March 6, 2025 (23:59 UTC).</strong>
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Game: Rec Room</strong></p>
 <p>
   <strong>Quest Name: </strong
