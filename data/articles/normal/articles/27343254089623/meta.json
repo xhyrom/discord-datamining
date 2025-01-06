@@ -20,20 +20,20 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "streaming",
-    "voice",
-    "channel",
-    "video",
-    "answer-bot",
-    "server",
-    "nitro",
-    "faq",
-    "perks",
     "discord",
     "potions",
+    "perks",
+    "nitro",
+    "splash",
     "potion",
-    "quality",
+    "faq",
+    "video",
+    "channel",
     "hd",
-    "splash"
+    "streaming",
+    "quality",
+    "server",
+    "voice",
+    "answer-bot"
   ]
 }

@@ -30,14 +30,14 @@
     "01J6YVJF00HERTW4P1D3D1AAPP"
   ],
   "label_names": [
-    "promotion",
-    "nitro",
-    "promo",
-    "chess",
-    "trial",
     "discord",
-    "chess.com",
+    "promotion",
     "offer",
-    "players"
+    "chess.com",
+    "chess",
+    "nitro",
+    "players",
+    "promo",
+    "trial"
   ]
 }

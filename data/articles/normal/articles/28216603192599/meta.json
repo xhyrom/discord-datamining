@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "Discord",
-    "Nitro",
-    "answer-bot",
-    "credit",
-    "activities",
-    "quests",
     "activity",
-    "rewards",
     "Quest",
+    "Credits",
     "in-app",
-    "Credits"
+    "answer-bot",
+    "activities",
+    "rewards",
+    "Nitro",
+    "Discord",
+    "credit",
+    "quests"
   ]
 }

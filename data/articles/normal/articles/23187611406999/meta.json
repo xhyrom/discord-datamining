@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "guilds",
     "guild",
     "join guilds",
-    "create guilds"
+    "create guilds",
+    "guilds",
+    "answer-bot"
   ]
 }

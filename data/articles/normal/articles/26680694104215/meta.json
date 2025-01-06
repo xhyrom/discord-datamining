@@ -21,8 +21,8 @@
   "content_tag_ids": [],
   "label_names": [
     "phone",
+    "phone errors",
     "invalid phone number",
-    "phone registration",
-    "phone errors"
+    "phone registration"
   ]
 }

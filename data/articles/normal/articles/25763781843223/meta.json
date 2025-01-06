@@ -32,17 +32,17 @@
     "01J6X2EFQY6F1XP7EBP4PHXET5"
   ],
   "label_names": [
-    "answer-bot",
-    "subscription",
-    "promotion",
-    "nitro",
-    "promo",
     "chess",
-    "trial",
-    "membership",
-    "members",
-    "discord",
+    "chess.com",
     "diamond",
-    "chess.com"
+    "nitro",
+    "trial",
+    "answer-bot",
+    "discord",
+    "members",
+    "promotion",
+    "promo",
+    "membership",
+    "subscription"
   ]
 }

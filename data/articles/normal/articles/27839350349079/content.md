@@ -46,6 +46,35 @@
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
+<p><strong>Quest Game: Wuthering Waves</strong></p>
+<p><strong>Quest Name: V2.0 WUWA Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of <strong>Wuthering</strong>
+  <strong>Waves</strong> to receive a
+  <strong>V1.2 WUWA Quest Pack</strong> including: 
+</p>
+<p><strong>Shell Credit 20,000</strong></p>
+<p><strong>Advanced Resonance Potion 3</strong></p>
+<p><strong>Advanced Energy Core 3</strong></p>
+<p><strong>Astrite 30</strong></p>
+<p>
+  <strong>Who is Eligible: </strong>Available to players on
+  <strong>PC and PlayStation 5 </strong>where both<strong> Discord </strong
+  >and<strong> Wuthering Waves </strong>are available. Discord’s premium
+  services are restricted in some regions. 
+</p>
+<p>
+  <strong>Availability Period: </strong>The <strong>V2.0 WUWA Quest</strong> can
+  be accepted on Discord from <strong>January 6, 2025 </strong>until<strong>
+    January 12, 2025 (11:59PM UTC). </strong
+  >
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward
+  by<strong> March 3, 2025 (08:00PM PST).</strong>
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Game: Rec Room</strong></p>
 <p>
   <strong>Quest Name: </strong
@@ -100,6 +129,12 @@
   <span style="color: #2e3338; background-color: #ffffff"
     >Complete the quest requirements during this period and claim your reward by </span
   ><strong>January 29, 2025</strong>.
+</p>
+<p>
+  The Rec Room Lightning avatar decoration is a limited-time avatar decoration
+  and will only be yours as an avatar decoration until
+  <strong>March 1, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
 </p>
 <p>
   <strong>Other Terms:</strong> Limit of one reward redemption per account. 
@@ -222,6 +257,12 @@
   Complete the quest requirements during this period and claim your reward by
   <strong>January 21, 2025</strong>.
 </p>
+<p>
+  The Shadow avatar decoration is a limited-time avatar decoration and will only
+  be yours as an avatar decoration until
+  <strong>February 21, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration
+</p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
 <p><strong>Quest Video: Call of Duty: Black Ops 6</strong></p>
@@ -312,6 +353,12 @@
   Complete the quest requirements during this period and claim your reward by
   <strong>January 14, 2025</strong>.
 </p>
+<p>
+  The TGA Controller avatar decoration is a limited-time avatar decoration and
+  will only be yours as an avatar decoration until
+  <strong>February 14, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
@@ -386,6 +433,12 @@
   <strong>Bush Camper avatar decoration</strong> by
   <strong>January 11, 2025</strong>. To receive these rewards, all quest
   requirements must be completed within the specified timeframe.
+</p>
+<p>
+  The Shield Potion avatar decoration is a limited-time avatar decoration and
+  will only be yours as an avatar decoration until
+  <strong>February 15, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
 </p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>

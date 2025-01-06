@@ -20,17 +20,17 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "game",
-    "answer-bot",
-    "game pass",
-    "trial",
-    "quest",
     "pc",
-    "pass",
+    "player",
+    "quest",
     "we",
     "got",
     "you",
-    "player",
+    "game pass",
+    "trial",
+    "answer-bot",
+    "game",
+    "pass",
     "14"
   ]
 }

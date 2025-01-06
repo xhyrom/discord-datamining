@@ -20,18 +20,18 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "quest",
     "quests",
+    "force",
+    "garena",
+    "delta",
     "discord",
+    "quest",
+    "pioneer",
+    "answer-bot",
     "rewards",
     "in-game",
     "in-app",
-    "delta",
-    "force",
-    "pioneer",
-    "blue",
     "p90",
-    "garena"
+    "blue"
   ]
 }
