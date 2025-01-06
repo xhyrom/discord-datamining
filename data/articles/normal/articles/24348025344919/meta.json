@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "nitro",
-    "trial",
-    "promotion",
-    "1 month",
-    "duolingo",
     "answer-bot",
-    "discord",
+    "promotion",
+    "nitro",
     "promo",
+    "free",
+    "trial",
+    "1 month",
+    "discord",
     "learners",
-    "free"
+    "duolingo"
   ]
 }

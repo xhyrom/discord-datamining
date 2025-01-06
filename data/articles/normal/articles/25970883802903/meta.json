@@ -30,13 +30,13 @@
     "01J6CXT329Y1X41QYTEN18FXMQ"
   ],
   "label_names": [
-    "youtube",
-    "premium",
-    "discord",
-    "nitro",
-    "FAQ",
     "answer-bot",
+    "promotion",
+    "nitro",
     "promo",
-    "promotion"
+    "youtube",
+    "FAQ",
+    "premium",
+    "discord"
   ]
 }

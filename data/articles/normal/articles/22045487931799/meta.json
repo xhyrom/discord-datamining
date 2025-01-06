@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "recent activity",
-    "members",
-    "activity status",
     "friends",
-    "server",
     "answer-bot",
+    "server",
     "rich presence",
-    "activity cards",
+    "activity status",
+    "members",
+    "activity",
+    "recent activity",
     "members list",
-    "cards",
-    "activity"
+    "activity cards",
+    "cards"
   ]
 }

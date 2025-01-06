@@ -20,15 +20,15 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "decorate",
-    "answer-bot",
-    "customize",
-    "Nitro",
     "profile",
     "customization",
-    "collectible",
-    "effects",
+    "Nitro",
+    "answer-bot",
+    "customize",
+    "decorate",
     "shop",
+    "effects",
+    "collectible",
     "server profiles"
   ]
 }

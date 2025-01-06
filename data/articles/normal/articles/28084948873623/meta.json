@@ -20,17 +20,17 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "safety",
-    "profile",
-    "user",
-    "users",
-    "block",
-    "mute",
-    "account",
     "ignore",
-    "discord",
     "ignoring",
-    "feature"
+    "block",
+    "profile",
+    "account",
+    "mute",
+    "safety",
+    "answer-bot",
+    "feature",
+    "user",
+    "discord",
+    "users"
   ]
 }

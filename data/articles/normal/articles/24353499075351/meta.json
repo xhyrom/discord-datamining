@@ -20,14 +20,14 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "super duolingo",
+    "answer-bot",
+    "promotion",
     "nitro",
-    "discord",
-    "duolingo",
     "promo",
     "trial",
-    "promotion",
     "members",
-    "answer-bot"
+    "discord",
+    "super duolingo",
+    "duolingo"
   ]
 }

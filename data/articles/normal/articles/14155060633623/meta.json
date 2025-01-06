@@ -20,20 +20,20 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "center",
     "account",
-    "family center",
-    "guardians",
-    "setup",
-    "account connecting",
-    "family",
-    "linked account",
-    "parents",
     "safety",
-    "account linking",
+    "setup",
+    "answer-bot",
+    "connect",
     "child",
     "teens",
-    "connect",
-    "answer-bot"
+    "family center",
+    "account linking",
+    "family",
+    "center",
+    "account connecting",
+    "parents",
+    "guardians",
+    "linked account"
   ]
 }

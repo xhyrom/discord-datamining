@@ -21,8 +21,8 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "macos screenshare",
     "screen share",
-    "go live"
+    "go live",
+    "macos screenshare"
   ]
 }

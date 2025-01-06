@@ -21,12 +21,12 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "in-game",
-    "rewards",
-    "data",
-    "privacy",
-    "policy",
     "games",
-    "quests"
+    "data",
+    "policy",
+    "quests",
+    "privacy",
+    "rewards",
+    "in-game"
   ]
 }

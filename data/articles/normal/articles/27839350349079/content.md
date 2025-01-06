@@ -76,15 +76,7 @@
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
 <p><strong>Quest Game: Rec Room</strong></p>
-<p>
-  <strong>Quest Name: </strong
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/28667280045079"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Rec Room Winter Quest</a
-  >
-</p>
+<p><strong>Quest Name: </strong>Rec Room Winter Quest</p>
 <p>
   <strong>Offer Details: </strong>Play 15 minutes of
   <strong>Rec Room</strong> on PC, PlayStation 4, PlayStation 5, Xbox Series X,
@@ -152,12 +144,7 @@
     ><span style="color: #2e3338; background-color: #ffffff"
       >Quest Name:
     </span></strong
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/28624569156759-Roblox-Quest"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Roblox Play Quest</a
-  >
+  >Roblox Play Quest
 </p>
 <p>
   <strong>Offer Details: </strong>Play 15 minutes of <strong>Roblox</strong> on
@@ -203,15 +190,7 @@
 </p>
 <p> </p>
 <p><strong>Quest Game:</strong> <strong>Delta Force</strong></p>
-<p>
-  <strong>Quest Name:</strong>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/28595523834519/"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><strong>Gareena Pioneer Quest</strong></a
-  >
-</p>
+<p><strong>Quest Name:</strong> <strong>Gareena Pioneer Quest</strong></p>
 <p>
   <strong>Offer Details:</strong> Play 15 minutes of
   <strong>Delta Force</strong> on PC to receive a
@@ -236,10 +215,8 @@
 <p>
   <strong
     >Quest Name:
-    <a href="https://support.discord.com/hc/en-us/articles/28462182108951"
-      ><span class="wysiwyg-underline" style="color: #1155cc"
-        >Sonic 3 Quest</span
-      ></a
+    <span class="wysiwyg-color-black" style="color: #1155cc"
+      >Sonic 3 Quest</span
     ></strong
   >
 </p>
@@ -266,17 +243,7 @@
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
 <p><strong>Quest Video: Call of Duty: Black Ops 6</strong></p>
-<p>
-  <strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28462174499991"
-      target="_blank"
-      rel="noopener noreferrer"
-      >COD: Black Ops 6 Quest</a
-    ></strong
-  >
-</p>
+<p><strong>Quest Name: COD: Black Ops 6 Quest</strong></p>
 <p>
   <strong>Offer Details: </strong>Watch the
   <strong>COD: Black Ops 6 launch trailer</strong> in
@@ -299,13 +266,7 @@
 <p> </p>
 <p>
   <strong>Quest Game: Delta Force</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28429651446551-Delta-Force-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Delta Force Quest</a
-    ></strong
+    >Quest Name: Delta Force Quest</strong
   >
 </p>
 <p>
@@ -331,11 +292,7 @@
 <p> </p>
 <p>
   <strong>Quest Video: The Game Awards 2024 Trailer</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28423831177623-The-Game-Awards-Quest"
-      >The Game Awards Quest</a
-    ></strong
+    >Quest Name: The Game Awards Quest</strong
   >
 </p>
 <p>
@@ -363,13 +320,7 @@
 <p> </p>
 <p>
   <strong>Quest Game: Minecraft</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28316964742551"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Minecraft Holiday Quest</a
-    ></strong
+    >Quest Name: Minecraft Holiday Quest</strong
   >
 </p>
 <p>
@@ -394,13 +345,7 @@
 <p> </p>
 <p>
   <strong>Quest Game: Fortnite</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28317208037911/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Fortnite OG Quest</a
-    ></strong
+    >Quest Name: Fortnite OG Quest</strong
   >
 </p>
 <p>
@@ -444,13 +389,7 @@
 <p> </p>
 <p>
   <strong>Quest Video: Season 2: Void Chaser Main Trailer</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28249742461335"
-      target="_blank"
-      rel="noopener noreferrer"
-      >The First Descendant Quest</a
-    ></strong
+    >Quest Name: The First Descendant Quest</strong
   >
 </p>
 <p>
@@ -473,13 +412,7 @@
 <p> </p>
 <p>
   <strong>Quest Video: PC Game Pass: We Got You</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28110465185047-PC-Game-Pass-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >PC Player Quest</a
-    ></strong
+    >Quest Name: PC Player Quest</strong
   >
 </p>
 <p>
@@ -497,17 +430,17 @@
   Complete the quest requirements during this period and claim your reward by
   <strong>December 31, 2024 (7:59 PM UTC)</strong>.
 </p>
+<p>A valid payment method is required.</p>
+<p>
+  For details about the Microsoft Services Agreement, Game Pass terms, and
+  system requirements, visit: xbox.com/subscriptionterms. The reward codes are
+  not “stackable” to previously redeemed trials.
+</p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
   <strong>Quest Game: World of Warcraft</strong><br /><strong
-    >Quest Name:<a
-      href="https://support.discord.com/hc/en-us/articles/28114748484119"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      World of Warcraft x Mountain Dew Quest</a
-    ></strong
+    >Quest Name: World of Warcraft x Mountain Dew Quest</strong
   >
 </p>
 <p>
@@ -532,13 +465,7 @@
 <p> </p>
 <p>
   <strong>Quest Video: Batman: Arkham Shadow</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/27950035791383-Batman-Arkham-Shadow-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Batman: Arkham Shadow Quest</a
-    ></strong
+    >Quest Name: Batman: Arkham Shadow Quest</strong
   >
 </p>
 <p>
@@ -561,17 +488,17 @@
   requirements during this period and claim your reward by
   <strong>January 8, 2025</strong>.
 </p>
+<p>
+  The Batarang avatar decoration is a limited-time avatar decoration and will
+  only be yours as an avatar decoration until
+  <strong>February 8, 2024 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
   <strong>Quest Game: Fortnite</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/28086868991383-Fortnite-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Fortnite Quest</a
-    ></strong
+    >Quest Name: Fortnite Quest</strong
   >
 </p>
 <p>
@@ -597,17 +524,17 @@
   requirements during this period and claim your reward by
   <strong>January 5, 2025</strong>.
 </p>
+<p>
+  The Rift Butterfly Avatar Decoration is a limited-time avatar decoration and
+  will only be yours as an avatar decoration until.
+  <strong>February 5, 2025 (11:59PM UTC)</strong>.After this date, you will no
+  longer have access to this avatar decoration.
+</p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
   <strong>Quest Video: Dune: Prophecy </strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/27606051100183-Dune-Prophecy-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Dune: Prophecy Quest</a
-    ></strong
+    >Quest Name: Dune: Prophecy Quest</strong
   >
 </p>
 <p>
@@ -628,19 +555,19 @@
   or browser client from <strong>November 14, 2024 </strong>until
   <strong>November 25, 2024 (11:59PM UTC)</strong>. Complete the quest
   requirements during this period and claim your reward by
-  <strong>December 25, 2024</strong>. 
+  <strong>December 25, 2024</strong>.
+</p>
+<p>
+  The Wallach IX Spaceport avatar decoration is a limited-time avatar decoration
+  and will only be yours as an avatar decoration until<strong>
+    January 25, 2025 (11:59PM UTC</strong
+  >). After this date, you will no longer have access to this avatar decoration.
 </p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
   <strong>Quest Game: Once Human</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/27314651396119-Once-Human-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Winter Survival Quest</a
-    ></strong
+    >Quest Name: Winter Survival Quest</strong
   >
 </p>
 <p>
@@ -660,13 +587,7 @@
 <p> </p>
 <p>
   <strong>Quest Game: Destiny 2: Revenant</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/26789789123223-Destiny-2-Revenant-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Destiny 2: Revenant Quest</a
-    ></strong
+    >Quest Name: Destiny 2: Revenant Quest</strong
   >
 </p>
 <p>
@@ -696,13 +617,7 @@
 <p> </p>
 <p>
   <strong>Quest Game: Diablo IV</strong><br /><strong
-    >Quest Name:
-    <a
-      href="https://support.discord.com/hc/en-us/articles/26847740874647-Diablo-IV-Quest"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Diablo IV: Vessel of Hatred</a
-    ></strong
+    >Quest Name: Diablo IV: Vessel of Hatred</strong
   >
 </p>
 <p>
