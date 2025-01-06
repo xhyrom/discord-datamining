@@ -69,8 +69,7 @@
   type where the purchase was originally made.<br /><br /><span
     class="wysiwyg-underline"
     >For example:</span
-  >
-  <br />If you purchased a Server Subscription through the desktop or browser
+  ><br />If you purchased a Server Subscription through the desktop or browser
   app, you must cancel it through the desktop app or browser.<br /><br />If you
   purchased through a mobile device, you can only cancel through a mobile
   device. If you don’t have access to your device to cancel yourself, please
@@ -317,3 +316,13 @@
     ></a
   ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
 </p>
+<div class="book-box">
+  <strong>Note: </strong>If you want to cancel your subscription, but you are
+  unsure of which subscription type you have, please check out the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28482878482583"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Cancel Your Discord Subscription Help Center article</a
+  >.
+</div>

@@ -112,6 +112,15 @@
       ></span
     >
   </li>
+  <li><a href="#h_01JGYS9DTYZ3F6VYY6FVXMHHQX">How to Start a Voice Call</a></li>
+  <li>
+    <a href="#h_01JGYS9DTYYAVQEGYQYW5VXMFY">How to Answer a Voice Call</a>
+  </li>
+  <li>
+    <a href="#h_01JGYS9DTYATJF55JPH6W5B9RC"
+      >How to Use Speaker Phone while in a Voice Call</a
+    >
+  </li>
   <li>
     <a
       href="#docs-internal-guid-f4cec749-7fff-1016-fb81-afc19458f1e8"
@@ -317,7 +326,7 @@
   /></span>
 </p>
 <h3 id="docs-internal-guid-4db60812-7fff-3320-754a-2d42da51d844">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Along with customizing your avatar, Nitro members can also add an animated
     avatar. If you’d like to learn more about animated avatars, you can check
     out this </span
@@ -326,7 +335,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >article</a
-  ><span style="color: #434343">. </span> 
+  ><span style="color: #434343" data-darkreader-inline-color="">. </span> 
 </h3>
 <h2 id="h_01GVRC16EQM788F18KHMZZGC09">Changing Your Account Details</h2>
 <p>
@@ -612,6 +621,141 @@
     height="473"
   />
 </p>
+<h1 id="h_01JGYS9DTYZ3F6VYY6FVXMHHQX">How to Start a Voice Call</h1>
+<p>
+  1. In order to call a friend and start a voice call with them, you first want
+  to tap the <strong>Chat Bubble</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019002567063"
+    width="25"
+    height="23"
+  />] in the top left corner of the Discord mobile app.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019007939991"
+    width="373"
+    height="809"
+  />
+</p>
+<p>
+  2. Tap on your friend’s avatar icon at the top of the Direct Message list or
+  in the DM you share with them. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019007946007"
+    width="332"
+    height="721"
+  />
+</p>
+<p>
+  3. Tap on <strong>Phone Call icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019007950999"
+    width="27"
+    height="24"
+  />] at the top-right of the DM to start a Voice Call.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002593687"
+    width="624"
+    height="99"
+  />
+</p>
+<p>
+  4. To end the call, tap on the <strong>End Call icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019007958935"
+    width="27"
+    height="24"
+  />] in the bottom-right corner when in the Voice Call screen.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002604311"
+    width="369"
+    height="800"
+  />
+</p>
+<h1 id="h_01JGYS9DTYYAVQEGYQYW5VXMFY">How to Answer a Voice Call</h1>
+<p>
+  1. If a friend is calling you and you want to answer, you can tap on the check
+  mark or on the <strong>Phone Call icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019007950999"
+    width="27"
+    height="24"
+  />].
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002606615"
+    width="594"
+    height="130"
+  />
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002609815"
+    width="594"
+    height="107"
+  />
+</p>
+<p>
+  2. To end the call, tap on the <strong>End Call icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019007958935"
+    width="27"
+    height="24"
+  />] in the bottom-right corner when in the Voice Call screen.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019007980311"
+    width="392"
+    height="849"
+  />
+</p>
+<h1 id="h_01JGYS9DTYATJF55JPH6W5B9RC">
+  How to use Speaker Phone while in a Voice Call
+</h1>
+<p>There are 2 ways to enable speaker phone while in a voice call: </p>
+<p><strong>Option 1</strong></p>
+<p>
+  1. Tap on the <strong>speaker icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29019002618007"
+    width="20"
+    height="20"
+  />] in the top-right corner while in a call to enable speaker mode.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002623767"
+    width="337"
+    height="731"
+  />
+</p>
+<p><strong>Option 2</strong></p>
+<p>
+  1. While in a call, swipe up from the bottom screen to display all available
+  call audio options. Tap on <strong>Change Audio Output.</strong>
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019002627479"
+    width="415"
+    height="900"
+  />
+</p>
+<p>2. Tap on <strong>Speaker</strong> to enable speaker phone.</p>
+<h1 class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29019007996823"
+    width="284"
+    height="616"
+  /><img
+    src="https://support.discord.com/hc/article_attachments/29019002637079"
+    width="266"
+    height="615"
+  />
+</h1>
 <h1 id="docs-internal-guid-f4cec749-7fff-1016-fb81-afc19458f1e8">
   Expressing Yourself
 </h1>
@@ -755,7 +899,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >Nitro</a
-  ><span style="color: #434343">
+  ><span style="color: #434343" data-darkreader-inline-color="">
     members can also add Super Reactions to add a little more hype, emotion, and
     intensity to your reaction! You can learn more about Super Reactions </span
   ><a
@@ -763,7 +907,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343">. </span>
+  ><span style="color: #434343" data-darkreader-inline-color="">. </span>
 </h3>
 <h1 id="h_01HEP8F32QGWR3B67R1FC1AD4F"><strong>And you've made it! </strong></h1>
 <p>

@@ -305,3 +305,13 @@
     >Refund Policy</a
   ><span style="color: #2e3338" data-darkreader-inline-color="">.</span>
 </p>
+<div class="book-box">
+  <strong>Note: </strong>If you want to cancel your subscription, but you are
+  unsure of which subscription type you have, please check out the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28482878482583"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Cancel Your Discord Subscription Help Center article</a
+  >.
+</div>
