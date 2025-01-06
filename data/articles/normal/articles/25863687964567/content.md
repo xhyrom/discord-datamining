@@ -448,7 +448,7 @@
 <p>
   If a code has not been redeemed to the Discord account by
   <strong>January 24, 2025 (11:59PM PST)</strong>, it will expire and you will
-  no longer be able to have 3 of Discord Nitro.
+  no longer be able to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01JE9276XXJJ3C8DP3RPBR2BSA">Eligibility for the Promotion</h2>
 <p>
