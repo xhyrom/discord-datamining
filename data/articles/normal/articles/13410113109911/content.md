@@ -82,24 +82,6 @@
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an avatar decoration?
 </h1>
-<div class="mega-box">
-  Gift Nitro this holiday season and earn up to 3 exclusive, festive avatar
-  decorations! With each Nitro gift purchase, you’ll get to choose 1 of 3 unique
-  avatar decorations as a free reward. Want to collect all 3 avatar decorations?
-  Simply make three separate Nitro gift purchases.<br /><br />Once you receive
-  the avatar decoration, it is yours to use. This offer is rolling out to
-  eligible users throughout December. Check for a green promotion banner before
-  purchasing.<br /><br />This offer ends on
-  <strong>January 6th, 2025</strong> and applies only to Nitro gifts, not Nitro
-  Basic gifts.<br />Curious about Nitro gifting? Check out our
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360020877112#h_01JDAHX8ZV2GM9GG6SPVN2ZKAA"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article</a
-  >
-  for more information.
-</div>
 <h2 id="h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</h2>
 <p>Avatar decorations can be found and purchased in the Shop. </p>
 <p id="docs-internal-guid-0079e285-7fff-f5d0-c3ec-04a1a55c7011">
@@ -209,14 +191,8 @@
   />
 </p>
 <p class="wysiwyg-text-align-left">
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    >3. This will direct you to the Shop where you can preview and buy avatar
-    decorations.</span
-  >
+  3. This will direct you to the Shop where you can preview and buy avatar
+  decorations.
 </p>
 <p class="wysiwyg-text-align-center">
   <span
@@ -238,13 +214,7 @@
   /></span>
 </p>
 <h1 id="h_01J4SCH0SP77EJ2328CYGRS05Y">
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    >How to apply an avatar decoration to my profile</span
-  >
+  How to apply an avatar decoration to my profile
 </h1>
 <h2 id="h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop/Browser</h2>
 <p>
