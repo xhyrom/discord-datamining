@@ -10503,7 +10503,6 @@ div.modalHeader_c5e09c {
   padding: 0.5em;
   border-radius: 4px;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
   text-size-adjust: none;
   color: var(--text-normal);
   background: var(--background-secondary);
@@ -10660,7 +10659,6 @@ div.modalHeader_c5e09c {
   padding: 0.5em;
   border-radius: 4px;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
   text-size-adjust: none;
   color: var(--text-normal);
 }
@@ -22707,7 +22705,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   font-family: var(--font-code);
   font-size: 85%;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
   text-size-adjust: none;
 }
 .codeLine_cdb578 .hljs-comment,
@@ -57196,4 +57193,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f5ebf03268017509cab7.css.map*/
+/*# sourceMappingURL=12633.e034c5a6256887fee042.css.map*/
