@@ -16570,6 +16570,26 @@ span.clanTag_a31c43 {
   height: 20px;
   width: 20px;
 }
+.potionBadge_ff6471 {
+  overflow: hidden;
+  -o-object-fit: contain;
+  object-fit: contain;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+  height: calc(2px + 1rem);
+  color: var(--white);
+  background: var(--button-filled-brand-background);
+  border-radius: 8px;
+  text-indent: 0;
+  display: flex;
+  padding-left: 6px;
+  padding-right: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  text-transform: uppercase;
+}
 .badge_ba89c1 {
   display: inline-block;
   overflow: hidden;
@@ -57203,4 +57223,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.11f804196b75d3251ad9.css.map*/
+/*# sourceMappingURL=12633.c3eef3f0e7df18fb3da4.css.map*/
