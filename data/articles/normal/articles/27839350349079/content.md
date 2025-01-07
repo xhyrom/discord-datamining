@@ -53,10 +53,12 @@
   <strong>Waves</strong> to receive a
   <strong>V1.2 WUWA Quest Pack</strong> including: 
 </p>
-<p><strong>Shell Credit 20,000</strong></p>
-<p><strong>Advanced Resonance Potion 3</strong></p>
-<p><strong>Advanced Energy Core 3</strong></p>
-<p><strong>Astrite 30</strong></p>
+<ul>
+  <li><strong>Shell Credit x20,000</strong></li>
+  <li><strong>Advanced Resonance Potion x3</strong></li>
+  <li><strong>Advanced Energy Core x3</strong></li>
+  <li><strong>Astrite x30</strong></li>
+</ul>
 <p>
   <strong>Who is Eligible: </strong>Available to players on
   <strong>PC and PlayStation 5 </strong>where both<strong> Discord </strong
