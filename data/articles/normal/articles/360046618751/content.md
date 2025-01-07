@@ -745,7 +745,7 @@
   />
 </p>
 <p>2. Tap on <strong>Speaker</strong> to enable speaker phone.</p>
-<h1 class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/29019007996823"
     width="284"
@@ -755,7 +755,7 @@
     width="266"
     height="615"
   />
-</h1>
+</p>
 <h1 id="docs-internal-guid-f4cec749-7fff-1016-fb81-afc19458f1e8">
   Expressing Yourself
 </h1>

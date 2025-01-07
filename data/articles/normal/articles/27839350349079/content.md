@@ -18,6 +18,56 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: VALORANT</strong></p>
+<p><strong>Quest Name: GO GET EM WINGS Quest </strong></p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>VALORANT </strong>to receive a<strong>
+    WINGMAN’S GOT IT avatar decoration</strong
+  >. You can learn more about avatar decorations
+  <a
+    href="https://support.discord.com/hc/articles/13410113109911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >. 
+</p>
+<p>
+  <strong>Who is Eligible</strong>:
+  <span style="background-color: #ffffff">Available to players on </span
+  ><strong><span style="background-color: #ffffff">PC</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">PlayStation 4</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">PlayStation 5</span></strong
+  ><span style="background-color: #ffffff">, </span
+  ><strong><span style="background-color: #ffffff">Xbox Series X</span></strong
+  ><span style="background-color: #ffffff">, and </span
+  ><strong><span style="background-color: #ffffff">Xbox Series S</span></strong>
+  <span style="background-color: #ffffff">where both </span
+  ><strong><span style="background-color: #ffffff">Discord </span></strong
+  ><span style="background-color: #ffffff">and</span
+  ><strong><span style="background-color: #ffffff"> VALORANT </span></strong
+  ><span style="background-color: #ffffff">are available</span>.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions. </span
+  >
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>GO GET EM WINGS Quest</strong> can be accepted on Discord from
+  <strong>January 7, 2025 </strong>until
+  <strong>January 13, 2025 (11:59PM UTC)</strong>. 
+</p>
+<p>
+  <span style="color: #2e3338; background-color: #ffffff"
+    >Complete the quest requirements during this period and claim your reward by </span
+  ><strong>February 13, 2025</strong>.
+</p>
+<p>
+  <strong>Other Terms:</strong> Limit of one reward redemption per account. 
+</p>
+<p> </p>
 <p><strong>Quest Game: Off The Grid </strong></p>
 <p><strong>Quest Name: Off The Grid Quest</strong></p>
 <p>
