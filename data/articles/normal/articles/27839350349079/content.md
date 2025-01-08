@@ -18,6 +18,45 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game:</strong> <strong>Genshin Impact</strong></p>
+<p><strong>Quest Name:</strong> <strong>V5.3 Quest</strong> </p>
+<p>
+  <strong>Offer Details:</strong> Stream 15 minutes of
+  <strong>Genshin Impact</strong> to receive a
+  <strong>V5.3 Quest Bundle</strong> including:
+</p>
+<ul>
+  <li><strong>Primogems ×30</strong></li>
+  <li><strong>Mora ×20,000</strong></li>
+  <li><strong>Sanctifying Unction ×4</strong></li>
+  <li><strong>Mystic Enhancement Ore ×5</strong></li>
+  <li><strong>Hero's Wit ×3</strong></li>
+</ul>
+<div class="info-box">
+  Bundles are available in limited quantities on a first-come, first-served
+  basis.
+</div>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on PC where both
+  Discord and Genshin Impact are available. Discord’s premium services are
+  restricted in some regions. 
+</p>
+<p>
+  <strong>Availability Period:</strong> The <strong>V5.3 Quest</strong> can be
+  accepted on Discord from <strong>January 8, 2025</strong> until
+  <strong>January 15, 2025 (11:59PM UTC)</strong>. 
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>February 8, 2025</strong> (<strong>00:00 UTC+8)</strong>.
+</p>
+<p>
+  <span style="color: #2e3338; background-color: #ffffff"
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
 <p><strong>Quest Game: VALORANT</strong></p>
 <p><strong>Quest Name: GO GET EM WINGS Quest </strong></p>
 <p>
@@ -440,29 +479,6 @@
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
-  <strong>Quest Video: Season 2: Void Chaser Main Trailer</strong><br /><strong
-    >Quest Name: The First Descendant Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Watch the
-  <strong>Season 2: Void Chaser Main Trailer</strong> in Discord and unlock a
-  <strong>Discord Collection Bundle</strong>!
-</p>
-<p>
-  <strong>Availability Period:</strong>
-  <strong>The First Descendant Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>December 6, 2024 </strong>until<strong>
-    December 13, 2024 (6:00PM UTC)</strong
-  >.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>December 31, 2024 (23:59 PT)</strong>.
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
   <strong>Quest Video: PC Game Pass: We Got You</strong><br /><strong
     >Quest Name: PC Player Quest</strong
   >
@@ -485,8 +501,13 @@
 <p>A valid payment method is required.</p>
 <p>
   For details about the Microsoft Services Agreement, Game Pass terms, and
-  system requirements, visit: xbox.com/subscriptionterms. The reward codes are
-  not “stackable” to previously redeemed trials.
+  system requirements, visit:<a
+    href="%20xbox.com/subscriptionterms"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    xbox.com/subscriptionterms</a
+  >. The reward codes are not “stackable” to previously redeemed trials.
 </p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
@@ -617,77 +638,6 @@
 </p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
-<p>
-  <strong>Quest Game: Once Human</strong><br /><strong
-    >Quest Name: Winter Survival Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Stream 15 minutes of
-  <strong>Once Human</strong> and receive a
-  <strong>Winter Survival Pack</strong>!
-</p>
-<p>
-  <strong>Availability Period: </strong>The
-  <strong>Winter Survival Quest</strong> can be accepted on Discord from
-  <strong>October 25, 2024</strong> until
-  <strong>October 31, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
-  <strong>December 31, 2024 (3:59PM UTC)</strong>. Quest requirements must be
-  completed during this period to receive the reward. 
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Destiny 2: Revenant</strong><br /><strong
-    >Quest Name: Destiny 2: Revenant Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Destiny 2: Revenant</strong> on <strong>PC</strong>,
-  <strong>PlayStation</strong> <strong>4</strong>, <strong>PlayStation</strong>
-  <strong>5</strong>, <strong>Xbox</strong> <strong>Series</strong>
-  <strong>X</strong>, and <strong>Xbox</strong> <strong>Series</strong>
-  <strong>S</strong> to receive the <strong>Celestial Ties Shader</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on PC, PlayStation 4,
-  PlayStation 5, Xbox Series X, and Xbox Series S where both
-  <strong>Discord</strong> and <strong>Destiny</strong>
-  <strong>2: Revenant</strong> are available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
-  <strong>Destiny 2: Revenant Quest</strong> can be accepted on Discord from
-  <strong>October 8, 2024 </strong>until
-  <strong>October 22, 2024 (11:59PM UTC)</strong>. Reward gift codes expire
-  <strong>December 31, 2024 (UTC -8)</strong>. Quest requirements must be
-  completed during this period to receive the reward. 
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Diablo IV</strong><br /><strong
-    >Quest Name: Diablo IV: Vessel of Hatred</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Stream 15 minutes of
-  <strong>Diablo IV</strong> and receive
-  <strong>Sea of Voices Weapon Bundle</strong> packed with valuable items!
-</p>
-<p>
-  <strong>Availability Period: </strong>The<strong>
-    Diablo IV: Vessel of Hatred Quest </strong
-  >can be accepted on Discord from<strong> October 8, 2024 </strong
-  >until<strong> October 15, 2024 (11:59PM UTC). </strong>Reward gift codes
-  expire <strong>December 31, 2025 (6:59 AM UTC). </strong>Quest requirements
-  must be completed during this period to receive the reward.<strong
-    ><br
-  /></strong>
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p>
   <strong
     ><span style="color: #2e3338; background-color: #ffffff"
