@@ -656,6 +656,69 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7801494002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6075360002,
+      "location": {
+        "name": "San Francisco, CA or Remote (U.S.)"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7801494002,
+      "updated_at": "2025-01-08T12:36:53-05:00",
+      "requisition_id": "R-100745",
+      "title": "Senior Security Engineer, Enterprise Security ",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for an experienced Senior Enterprise Security Engineer reporting to the Engineering Manager of Enterprise Security. In this role, you will implement and maintain Discord&#39;s enterprise environment, with a laser focus on security and privacy. Are you passionate about balancing security with seamless operations? We&#39;d love to meet you! We&#39;re looking for someone who not only brings amazing technical skills, but also truly cares about protecting data and security. If you love solving tricky security puzzles, get energized by learning new things, and want to help make Discord even better - come join our security team on this exciting journey!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and implement security measures to protect company data from unauthorized access, disclosure, and misuse.&lt;/li&gt;\n&lt;li&gt;Partner with the Detection &amp;amp; Response team to maintain full visibility of enterprise access, networks, and devices.&lt;/li&gt;\n&lt;li&gt;Deploy and manage security tools across Discord&#39;s corporate infrastructure.&lt;/li&gt;\n&lt;li&gt;Create security standards that balance robust protection with seamless workflows.&lt;/li&gt;\n&lt;li&gt;Develop and lead security awareness training for employees.&lt;/li&gt;\n&lt;li&gt;Shape and enforce Discord&#39;s IT and security policies.&lt;/li&gt;\n&lt;li&gt;Build secure, sustainable environments using modern principles like &quot;secure by design&quot; and “zero-trust” network architecture, without relying on traditional VPN setups&lt;/li&gt;\n&lt;li&gt;Foster a security-conscious culture by guiding employees on data protection best practices.&lt;/li&gt;\n&lt;li&gt;Partner cross-functionally with IT, Engineering, Workplace, and other teams to achieve security objectives&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience working in an Enterprise Security capacity a senior individual contributor or Lead&lt;/li&gt;\n&lt;li&gt;3+ years of experience programming in at least one general purpose programming language (e.g. Python, Go, Rust)&lt;/li&gt;\n&lt;li&gt;Experience in securing, monitoring, and managing Identity and Access Management systems (we use Okta, Kolide, Teleport and Cloudflare Access)&lt;/li&gt;\n&lt;li&gt;Deep understanding of data security in enterprise environments&lt;/li&gt;\n&lt;li&gt;Experience working in “zero-trust” network architecture style environments&lt;/li&gt;\n&lt;li&gt;Experience in deploying and managing Mobile Device Management, Endpoint Detection and Response, and device trust tooling&lt;/li&gt;\n&lt;li&gt;Knowledge and practical application of IT Security best practices&lt;/li&gt;\n&lt;li&gt;A great sense of empathy&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working with SIEMs (we use Panther)&lt;/li&gt;\n&lt;li&gt;Hands on experience with Google Cloud&lt;/li&gt;\n&lt;li&gt;Hands on experience with Cloudflare&lt;/li&gt;\n&lt;li&gt;Hands-on experience managing a primarily macOS and ChromeOS environment with a smaller Windows footprint&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $183,000 to $201,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074059002,
+          "name": "Core Tech Engineering",
+          "child_ids": [
+            4074060002
+          ],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7703966002",
       "data_compliance": [
         {
@@ -1666,6 +1729,6 @@
     }
   ],
   "meta": {
-    "total": 28
+    "total": 29
   }
 }
