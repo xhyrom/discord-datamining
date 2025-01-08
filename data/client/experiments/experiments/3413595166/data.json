@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-12_app_embeds_redesign",
+    "label": "App Embeds Redesign",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable"
+    ],
+    "hash": 3413595166,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
