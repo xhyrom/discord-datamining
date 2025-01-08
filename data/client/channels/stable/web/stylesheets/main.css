@@ -7379,6 +7379,18 @@ div.modalHeader_c5e09c {
 .colorable_ef18ee.green_ef18ee:hover {
   background: var(--green-360);
 }
+.colorable_ef18ee.premiumGradient_ef18ee {
+  background: linear-gradient(
+    to right,
+    var(--premium-tier-2-purple-for-gradients),
+    var(--premium-tier-2-purple-for-gradients-2),
+    var(--premium-tier-2-pink-for-gradients)
+  );
+}
+.colorable_ef18ee.premiumGradient_ef18ee,
+.colorable_ef18ee.premiumGradient_ef18ee .centerIcon_ef18ee {
+  color: var(--white-500);
+}
 .colorable_ef18ee.yellow_ef18ee {
   background: var(--yellow-400);
 }
@@ -57223,4 +57235,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.c3eef3f0e7df18fb3da4.css.map*/
+/*# sourceMappingURL=12633.e7056ff6deb7cd73ee98.css.map*/
