@@ -16456,6 +16456,7 @@ span.clanTag_a31c43 {
   flex: 1;
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 .userWinnerImage_cf8a7d {
   height: 14px;
@@ -57235,4 +57236,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.e7056ff6deb7cd73ee98.css.map*/
+/*# sourceMappingURL=12633.c636f69fc50785e65eff.css.map*/
