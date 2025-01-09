@@ -6710,6 +6710,8 @@ div.modalHeader_c5e09c {
   position: relative;
   filter: blur(0);
   background-color: var(--__current--spoiler-background-color);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .spoilerContainer_aa9639.embedContainer_aa9639 {
   border-radius: var(--radius-xs);
@@ -57395,4 +57397,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.9056b6422db95a9c0fbf.css.map*/
+/*# sourceMappingURL=12633.8ac96a4fce167baf7fdb.css.map*/
