@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Enabled w/o emoji section",
+      "Treatment 2: Enabled w/ emoji section"
     ],
     "hash": 1328765334,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "showSoundmojiInEmojiPicker"
     ]
   }
 }
