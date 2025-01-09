@@ -12704,7 +12704,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-756c8af05851afa594b0bf1789523ac7a2b52332",
+            release: "discord_web-4ebfdc5aafa73a536d5043226bf81844f780787a",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12773,8 +12773,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "357834"), "357834"));
-          o.YA("builtAt", String("1736456687900"));
+            o.YA("buildNumber", ((e = "357839"), "357839"));
+          o.YA("builtAt", String("1736457035683"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -17746,6 +17746,7 @@
           ($.OPEN_SHARE_MOMENT_DIALOG = "OPEN_SHARE_MOMENT_DIALOG"),
           ($.SHARE_INTERACTION = "SHARE_INTERACTION"),
           ($.INITIATE_IMAGE_UPLOAD = "INITIATE_IMAGE_UPLOAD"),
+          ($.SHARE_LINK = "SHARE_LINK"),
           ($.INVITE_BROWSER = "INVITE_BROWSER"),
           ($.DEEP_LINK = "DEEP_LINK"),
           ($.CONNECTIONS_CALLBACK = "CONNECTIONS_CALLBACK"),
@@ -54662,4 +54663,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.62a4f6dc6395b1910b54.js.map
+//# sourceMappingURL=sentry.11717358612bd2b5b42f.js.map
