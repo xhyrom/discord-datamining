@@ -1,0 +1,53 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7805147002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": false
+    }
+  ],
+  "internal_job_id": 5982560002,
+  "location": {
+    "name": "San Francisco, CA or Remote (U.S.)"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Data Science & Machine Learning",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 7805147002,
+  "updated_at": "2025-01-09T10:32:08-05:00",
+  "requisition_id": "R-100634",
+  "title": "Staff Software Engineer, Machine Learning Platform",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;This position is US based only.&lt;/p&gt;\n&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;The Machine Learning Platform (MLP) at Discord is responsible for the end-to-end model lifecycle across all ML applications. We sit at the intersection of machine learning engineers (MLEs), core infrastructure, and ML consumers to provide tools, capabilities, and services that make machine learning easy, safe, and widely accessible. In this role, you will work on everything from feature stores, real-time data processing, LLM tooling, and model serving at scale. You will lead projects and work directly with ML practitioners as well as other staff+ engineers to shape the landscape of Discords backend data systems. You will report to the Senior Engineering Manager of the ML Platform team.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and build the platform ML engineers and data scientists use to understand and delight Discord&#39;s users and keep them safe&lt;/li&gt;\n&lt;li&gt;Evaluate and integrate new machine learning frameworks and tools to ensure that Discord keeps up with the fast moving world of ML, including LLMs and generative AI&lt;/li&gt;\n&lt;li&gt;Collaborate with model builders to ensure we have a smooth path from idea to production&lt;/li&gt;\n&lt;li&gt;Set best practices in machine learning at Discord&lt;/li&gt;\n&lt;li&gt;Create foundational datasets and models&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of experience working as a software engineer in data or backend with exposure to large datasets or distributed systems&lt;/li&gt;\n&lt;li&gt;4+ years working on platforms or infrastructure&lt;/li&gt;\n&lt;li&gt;2+ years working on machine learning platforms&lt;/li&gt;\n&lt;li&gt;Know-how with orchestration systems (such as Airflow, Dagster, or Argo).&lt;/li&gt;\n&lt;li&gt;You&#39;ve put machine learning models into production&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with real-time data processing (Spark, Flink, Dataflow, Kafka, Pulsar, etc.)&lt;/li&gt;\n&lt;li&gt;Experience debugging and maintaining live production systems on Kubernetes&lt;/li&gt;\n&lt;li&gt;Experience building ML models using modern frameworks&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $246,000 to $270,400 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
