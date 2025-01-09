@@ -1247,6 +1247,69 @@
       ]
     },
     {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7704535002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "education": "education_optional",
+      "internal_job_id": 6031833002,
+      "location": {
+        "name": "San Francisco, CA & Remote (U.S.)"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7704535002,
+      "updated_at": "2025-01-09T15:21:42-05:00",
+      "requisition_id": "R-100705",
+      "title": "Senior Software Engineer - Realtime Infrastructure",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Realtime Infrastructure team is responsible for building and maintaining some of Discord’s highest scale and most critical services. Those systems are at the core of our text chat infrastructure and facilitate the dispatching of every update to our users sessions. This role will have a significant impact on Discord’s overall reliability and performance. It will also help our product teams build new features on top of our infrastructure. This team is small but critical, and its work has a direct impact on Discord&#39;s success and ability to scale. This role reports to the Senior Engineering Manager of Realtime Infrastructure.&lt;/p&gt;\n&lt;p&gt;Examples of technical challenges that this team has encountered in the past include supporting the dispatch of more than 30 million messages per second, or building the infrastructure that allows Discord Servers to grow their communities to more than 20 million users, such as Midjourney.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;You will&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build and operate large-scale, reliable and performant distributed systems.&lt;/li&gt;\n&lt;li&gt;Collaborate with product teams to create new features.&lt;/li&gt;\n&lt;li&gt;Ensure Discord “&lt;em&gt;just works”&lt;/em&gt;.&lt;/li&gt;\n&lt;li&gt;Write code but also manage our infrastructure.&lt;/li&gt;\n&lt;li&gt;Work with a talented team of engineers who have built one of the largest communication platforms in the world.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;You have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience writing and designing backend systems.&lt;/li&gt;\n&lt;li&gt;Experience solving complex distributed system problems.&lt;/li&gt;\n&lt;li&gt;Experience operating and maintaining critical tier 0 services.&lt;/li&gt;\n&lt;li&gt;Knowledge of monitoring and alerting best practices.&lt;/li&gt;\n&lt;li&gt;Familiar with open source software, and not afraid to dig into the source code of a library to find the answer you’re looking for.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Led complex projects in a team of junior and senior engineers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with Elixir.&lt;/li&gt;\n&lt;li&gt;Experience working with systems deployed in a cloud environment (GCP, AWS, etc.)&lt;/li&gt;\n&lt;li&gt;Knowledge of devops tools like Salt,Terraform or k8s.&lt;/li&gt;\n&lt;li&gt;You have built or contributed to open source projects.&lt;/li&gt;\n&lt;li&gt;You are a Discord power user and have built bots or apps interacting with our platform.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Things that may interest you&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Our tech stack is Elixir, Python and Rust.&lt;/li&gt;\n&lt;li&gt;Our systems are deployed in Google Cloud.&lt;/li&gt;\n&lt;li&gt;Our team uses a lot of open source technologies, and contributes back too: &lt;br&gt;- &lt;a href=&quot;https://github.com/discord/semaphore&quot;&gt;sempahore&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://github.com/discord/instruments&quot;&gt;instruments&lt;/a&gt;&lt;br&gt;-&amp;nbsp;&lt;a href=&quot;https://github.com/discord/sorted_set_nif&quot;&gt;sorted_set_nif&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://github.com/discord/dispenser&quot;&gt;dispenser&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://github.com/discord/erlpack&quot;&gt;erlpack&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;Being one of Discord’s oldest teams, we’ve written quite a few blog posts through the years:&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent&quot;&gt;How Discord reduced websocket traffic by 40%&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/maxjourney-pushing-discords-limits-with-a-million-plus-online-users-in-a-single-server&quot;&gt;Maxjourney: Pushing Discord’s Limits with a Million+ Online Users in a Single Server&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/why-and-how-discord-uses-patch-to-test-elixir&quot;&gt;Why and How Discord Uses Patch to Test Elixir&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/using-rust-to-scale-elixir-for-11-million-concurrent-users&quot;&gt;Using Rust to Scale Elixir for 11 Million Concurrent Users&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users&quot;&gt;How Discord Scaled Elixir to 5,000,000 Concurrent Users&lt;/a&gt;&lt;br&gt;- &lt;a href=&quot;https://discord.com/blog/how-discord-handles-push-request-bursts-of-over-a-million-per-minute-with-elixirs-genstage&quot;&gt;How Discord handles push request bursts of over a million per minute with Elixir’s GenStage&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $183,000 to $201,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4074059002,
+          "name": "Core Tech Engineering",
+          "child_ids": [
+            4074060002
+          ],
+          "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4082816002,
+          "name": "Remote (U.S.)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7513898002",
       "data_compliance": [
         {
@@ -1789,6 +1852,6 @@
     }
   ],
   "meta": {
-    "total": 30
+    "total": 31
   }
 }
