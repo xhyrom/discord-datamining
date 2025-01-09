@@ -503,14 +503,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_ANALYTICS_MEMBER_INSIGHTS": {
-    "url": "/guilds/:param/analytics/member-insights",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW": {
     "url": "/guilds/:param/analytics/growth-activation/overview",
     "allowed_methods": [
