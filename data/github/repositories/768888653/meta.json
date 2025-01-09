@@ -25,12 +25,12 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "description": null,
+  "description": "This project contains a basic example of a game integration for Discord written in JavaScript, built for the Developing a User-Installable App tutorial.",
   "fork": false,
   "url": "https://api.github.com/repos/discord/user-install-example",
   "created_at": "2024-03-07T23:16:18Z",
-  "homepage": null,
-  "size": 114,
+  "homepage": "http://discord.com/developers/docs/tutorials/developing-a-user-installable-app",
+  "size": 116,
   "language": "JavaScript",
   "has_issues": true,
   "has_projects": false,
@@ -44,7 +44,9 @@
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
-  "topics": [],
+  "topics": [
+    "samples"
+  ],
   "visibility": "public",
   "default_branch": "main",
   "permissions": {

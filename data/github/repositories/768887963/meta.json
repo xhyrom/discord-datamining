@@ -44,7 +44,9 @@
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
-  "topics": [],
+  "topics": [
+    "samples"
+  ],
   "visibility": "public",
   "default_branch": "main",
   "permissions": {

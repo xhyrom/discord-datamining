@@ -25,7 +25,7 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "description": null,
+  "description": "This project contains code for a Discord bot that will edit friends' profile pictures in fun and sometimes unexpected ways.",
   "fork": false,
   "url": "https://api.github.com/repos/discord/avatar-remix-bot",
   "created_at": "2023-03-02T17:24:28Z",
@@ -51,7 +51,8 @@
   "is_template": false,
   "web_commit_signoff_required": false,
   "topics": [
-    "bot"
+    "bot",
+    "samples"
   ],
   "visibility": "public",
   "default_branch": "main",
