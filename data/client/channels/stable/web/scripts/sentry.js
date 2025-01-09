@@ -6480,8 +6480,6 @@
               "/guilds/".concat(e, "/analytics/overview"),
             GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW: (e) =>
               "/guilds/".concat(e, "/analytics/engagement/overview"),
-            GUILD_ANALYTICS_MEMBER_INSIGHTS: (e) =>
-              "/guilds/".concat(e, "/analytics/member-insights"),
             GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW: (e) =>
               "/guilds/".concat(e, "/analytics/growth-activation/overview"),
             GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION: (e) =>
@@ -11054,6 +11052,10 @@
           (aS.SOUNDMOJI_SELECT = "soundmoji_select"),
           (aS.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED =
             "soundmoji_in_autocomplete_toggled"),
+          (aS.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK =
+            "soundmoji_emoji_picker_view_all_click"),
+          (aS.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED =
+            "soundmoji_emoji_picker_section_toggled"),
           (aS.BLOCK_USER_CONFIRMED = "block_user_confirmed"),
           (aS.IGNORE_USER_CONFIRMED = "ignore_user_confirmed"),
           (aS.USER_REMEDIATION_ACTION = "user_remediation_action"),
@@ -12697,7 +12699,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0f2616110dc4aba5f716d254e4831bc4a17ff2ea",
+            release: "discord_web-c18c1a733fe6f56aa43b53aaf80c1d42f346d46f",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12766,8 +12768,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "357280"), "357280"));
-          o.YA("builtAt", String("1736358783310"));
+            o.YA("buildNumber", ((e = "357651"), "357651"));
+          o.YA("builtAt", String("1736441716549"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54655,4 +54657,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.741a34319e702c4bac43.js.map
+//# sourceMappingURL=sentry.163ec710a3473bf24f07.js.map
