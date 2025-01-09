@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_valentines_gifting_2025",
+    "label": "Valentines Gifting 2025",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Valentines Gifting Promotion"
+    ],
+    "hash": 3086590474,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
