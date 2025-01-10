@@ -928,6 +928,14 @@
       "POST"
     ]
   },
+  "CONSUME_MESSAGE_CONFETTI_POTION": {
+    "url": "/users/@me/consumable/confetti",
+    "allowed_methods": null
+  },
+  "FETCH_MESSAGE_CONFETTI_ENTITLEMENT": {
+    "url": "/users/@me/consumable/confetti",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
