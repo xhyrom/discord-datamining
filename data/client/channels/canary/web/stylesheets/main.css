@@ -20066,7 +20066,7 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   top: 0;
 }
 .inactiveNitroHeader_a3bc57 {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .activeNitroHeader_a3bc57 {
   background-color: var(--background-secondary);
@@ -57409,4 +57409,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.e6abbb4e3e99f37d7b20.css.map*/
+/*# sourceMappingURL=12633.42841e72a367dd7f4c10.css.map*/
