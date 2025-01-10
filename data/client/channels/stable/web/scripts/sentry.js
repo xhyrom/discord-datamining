@@ -6603,6 +6603,9 @@
             CONSUME_HD_STREAMING_POTION: "/users/@me/consumable/hd-streaming",
             FETCH_HD_STREAMING_ENTITLEMENT:
               "/users/@me/consumable/hd-streaming",
+            CONSUME_MESSAGE_CONFETTI_POTION: "/users/@me/consumable/confetti",
+            FETCH_MESSAGE_CONFETTI_ENTITLEMENT:
+              "/users/@me/consumable/confetti",
             GUILD_MEMBER_BANNER: function (e, t, r) {
               let a =
                 arguments.length > 3 && void 0 !== arguments[3]
@@ -12704,7 +12707,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2fd7ab88119813fb34802c03aa5d24e9f328acd9",
+            release: "discord_web-433f07ad8d4fa0a09bb0b84c85a795830ba89704",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12773,8 +12776,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "357831"), "357831"));
-          o.YA("builtAt", String("1736456459223"));
+            o.YA("buildNumber", ((e = "358011"), "358011"));
+          o.YA("builtAt", String("1736497518784"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -17746,6 +17749,7 @@
           ($.OPEN_SHARE_MOMENT_DIALOG = "OPEN_SHARE_MOMENT_DIALOG"),
           ($.SHARE_INTERACTION = "SHARE_INTERACTION"),
           ($.INITIATE_IMAGE_UPLOAD = "INITIATE_IMAGE_UPLOAD"),
+          ($.SHARE_LINK = "SHARE_LINK"),
           ($.INVITE_BROWSER = "INVITE_BROWSER"),
           ($.DEEP_LINK = "DEEP_LINK"),
           ($.CONNECTIONS_CALLBACK = "CONNECTIONS_CALLBACK"),
@@ -54662,4 +54666,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.81ee5a3ed82a2b70be69.js.map
+//# sourceMappingURL=sentry.06d44c857138cf37dfaa.js.map
