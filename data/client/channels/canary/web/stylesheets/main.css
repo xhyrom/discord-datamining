@@ -1101,6 +1101,18 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   pointer-events: none;
   z-index: 1002;
 }
+.clickTrapContainer_cd0de5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.clickTrapContainer_cd0de5.trapClicks_cd0de5 {
+  pointer-events: auto;
+}
 .layer_cd0de5 {
   position: absolute;
   pointer-events: auto;
@@ -57397,4 +57409,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.32a0335066541e891b7d.css.map*/
+/*# sourceMappingURL=12633.e6abbb4e3e99f37d7b20.css.map*/
