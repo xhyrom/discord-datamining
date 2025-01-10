@@ -188,33 +188,3 @@
             alt="image9.png" /></span></span></span
   ></strong>
 </p>
-<p>
-  The safety alerts in chat are also enabled by default for all self-reported
-  teens. These can be opted out of by navigating<span
-    style="color: #434343"
-    data-darkreader-inline-color=""
-  >
-    to </span
-  ><strong
-    ><span
-      style="color: #434343; --darkreader-inline-color: #beb8b0"
-      data-darkreader-inline-color=""
-      >User Settings</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""> ⚙️ &gt; </span
-  ><strong
-    ><span
-      style="color: #434343; --darkreader-inline-color: #beb8b0"
-      data-darkreader-inline-color=""
-      >Privacy &amp; Safety</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >, then toggling off the "</span
-  ><strong
-    ><span
-      style="color: #434343; --darkreader-inline-color: #beb8b0"
-      data-darkreader-inline-color=""
-      >Show alerts in direct messages</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">". </span>
-</p>
