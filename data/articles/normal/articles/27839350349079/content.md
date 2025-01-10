@@ -18,6 +18,35 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Marvel Rivals</strong></p>
+<p><strong>Quest Name: Marvel Rivals Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Marvel Rivals</strong> to receive a limited-time
+  <strong>Jeff The Land Shark</strong> Avatar Decoration
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on desktop and console
+  where both Discord and Marvel Rivals are available. Discord’s premium services
+  are restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period:</strong> The Marvel Rivals Quest can be accepted
+  on Discord from <strong>January 10, 2025</strong> until
+  <strong>January 16, 2025 (4:59PM PST)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  February 17, 2025.
+</p>
+<p>
+  The <strong>Jeff The Land Shark</strong> avatar decoration is a limited-time
+  avatar decoration and will only be yours as an avatar decoration until
+  <strong>March 10, 2025 (4:59PM PST)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Game:</strong> <strong>Genshin Impact</strong></p>
 <p><strong>Quest Name:</strong> <strong>V5.3 Quest</strong> </p>
 <p>
