@@ -23,16 +23,18 @@
 <p>
   <strong>Offer Details:</strong> Play 15 minutes of
   <strong>Marvel Rivals</strong> to receive a limited-time
-  <strong>Jeff The Land Shark</strong> Avatar Decoration
+  <strong>Jeff The Land Shark</strong> <strong>avatar</strong>
+  <strong>decoration</strong>.
 </p>
 <p>
   <strong>Who is Eligible:</strong> Available to players on desktop and console
-  where both Discord and Marvel Rivals are available. Discord’s premium services
-  are restricted in some regions.
+  where both <strong>Discord</strong> and <strong>Marvel Rivals</strong> are
+  available. Discord’s premium services are restricted in some regions.
 </p>
 <p>
-  <strong>Availability Period:</strong> The Marvel Rivals Quest can be accepted
-  on Discord from <strong>January 10, 2025</strong> until
+  <strong>Availability Period:</strong> The
+  <strong>Marvel Rivals Quest</strong> can be accepted on Discord from
+  <strong>January 10, 2025</strong> until
   <strong>January 16, 2025 (4:59PM PST)</strong>.
 </p>
 <p>
@@ -40,10 +42,10 @@
   February 17, 2025.
 </p>
 <p>
-  The <strong>Jeff The Land Shark</strong> avatar decoration is a limited-time
-  avatar decoration and will only be yours as an avatar decoration until
-  <strong>March 10, 2025 (4:59PM PST)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
+  The <strong>Jeff The Land Shark</strong> <strong>avatar decoration</strong> is
+  a limited-time avatar decoration and will only be yours as an avatar
+  decoration until <strong>March 10, 2025 (4:59PM PST)</strong>. After this
+  date, you will no longer have access to this avatar decoration.
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
