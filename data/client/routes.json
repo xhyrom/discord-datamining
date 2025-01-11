@@ -5159,7 +5159,12 @@
   },
   "SCHEDULED_MESSAGES": {
     "url": "/users/@me/scheduled-messages",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SCHEDULED_MESSAGE": {
     "url": "/users/@me/scheduled-messages/:param",
