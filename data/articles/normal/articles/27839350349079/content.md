@@ -39,12 +39,12 @@
 </p>
 <p>
   Complete the quest requirements during this period and claim your reward by
-  February 17, 2025.
+  <strong>February 16, 2025</strong>.
 </p>
 <p>
   The <strong>Jeff The Land Shark</strong> <strong>avatar decoration</strong> is
   a limited-time avatar decoration and will only be yours as an avatar
-  decoration until <strong>March 10, 2025 (4:59PM PST)</strong>. After this
+  decoration until <strong>March 16, 2025 (4:59PM PST)</strong>. After this
   date, you will no longer have access to this avatar decoration.
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
