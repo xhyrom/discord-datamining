@@ -5156,5 +5156,13 @@
       "OPTIONS",
       "PUT"
     ]
+  },
+  "SCHEDULED_MESSAGES": {
+    "url": "/users/@me/scheduled-messages",
+    "allowed_methods": null
+  },
+  "SCHEDULED_MESSAGE": {
+    "url": "/users/@me/scheduled-messages/:param",
+    "allowed_methods": null
   }
 }
