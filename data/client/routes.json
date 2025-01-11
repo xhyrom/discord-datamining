@@ -5163,6 +5163,9 @@
   },
   "SCHEDULED_MESSAGE": {
     "url": "/users/@me/scheduled-messages/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   }
 }
