@@ -1,20 +1,18 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-08_tiered_tenure_badges",
-    "label": "Tiered Tenure Badging",
+    "id": "2024-11_scheduled_messages",
+    "label": "Scheduled Messages",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Tiered Tenure Badges v1",
-      "Treatment 2: Enable Tiered Tenure Badges v2"
+      "Treatment 1: Enables sending and displaying scheduled messages"
     ],
-    "hash": 882504092,
+    "hash": 3665569004,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "holdout": {},
     "aa_mode": false,
