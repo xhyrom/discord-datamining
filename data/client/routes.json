@@ -930,7 +930,12 @@
   },
   "CONSUME_MESSAGE_CONFETTI_POTION": {
     "url": "/users/@me/consumable/confetti",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FETCH_MESSAGE_CONFETTI_ENTITLEMENT": {
     "url": "/users/@me/consumable/confetti",
