@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7729336002](https://discord.com/jobs/7729336002)
 
-**Updated At:** Sat, 11 Jan 2025 01:21:51 GMT
+**Updated At:** Mon, 13 Jan 2025 19:03:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.In this role, you will be responsible for leading teams responsible for the underlying building blocks of our core experience — the client itself. With a charter that spans from the tooling to the native code to the foundational React software, across all of the platforms we target, the teams here are shipping meaningful, business impacting code every day. In 2025, you will focus heavily on our mobile experience, driving top line growth and helping create international opportunities for the business in 2026 and beyond.
