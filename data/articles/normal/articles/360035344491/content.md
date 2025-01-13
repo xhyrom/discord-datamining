@@ -10,15 +10,15 @@
   >.
 </div>
 <p id="docs-internal-guid-6074669e-7fff-d94b-ffa0-4fe796f828f0">
-  Starting from <strong>September 9, 2024 (10AM PST)</strong> to
-  <strong>September 15, 2024 (11:59PM PST)</strong>,<a
+  Starting from <strong>January 13, 2025 (10:00AM PST)</strong> to
+  <strong>February 10, 2025 (11:59PM PST)</strong>,<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
     rel="noopener noreferrer"
   >
     Discord Nitro</a
   >
-  members can redeem <strong>1 month</strong> <strong>of</strong>
+  members can redeem <strong>1 month</strong> <strong>of</strong>
   <strong>Xbox Game Pass for PC</strong>. Read more below about the promotion
   below.
 </p>
@@ -55,10 +55,9 @@
 <p><strong>Requirements:</strong></p>
 <p>
   Claim through Discord Gift Inventory from
-  <strong>September 9, 2024 (10AM PST)</strong> to
-  <strong>September 15, 2024</strong> <strong>(11:59PM PST)</strong>, and redeem
-  in your Microsoft account by
-  <strong>September 16, 2024 (11:59PM PST)</strong>.
+  <strong>January 13, 2025 (10:00AM PST)</strong> to
+  <strong>February 10, 2025 (11:59PM PST)</strong>, and redeem in your Microsoft
+  account by <strong>March 10, 2025 (11:59PM PST)</strong>.
 </p>
 <p><strong>Subscription:</strong></p>
 <p>
@@ -240,8 +239,18 @@
 <p>
   As long as you're a<strong> Discord Nitro </strong>member, you'll be able to
   claim the <strong>Xbox Game Pass for PC</strong> code in the Gift Inventory
-  from <strong>September 9, 2024 (10AM PST)</strong> to
-  <strong>September 15, 2024 (11:59PM PST)</strong>!
+  from <strong>January 13, 2025 (10:00AM PST)</strong> to
+  <strong>February 10, 2025</strong> <strong>(11:59PM PST)</strong>! You will
+  also receive an extra code to gift to a friend. They can redeem it on
+  <a href="https://www.xbox.com/en-US/redeem"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Xbox's redemption site</span
+    ></a
+  >
+  and get access to 1 month of PC Game Pass!
 </p>
 <h2 id="h_01HE3W5FZ391BV7KTQV7AAZS9D">
   <strong>Eligibility for the Claiming this Promotion in Discord</strong>
@@ -254,17 +263,17 @@
 <ul>
   <li>
     If you are an active <strong>Discord Nitro member, </strong>the code must be
-    claimed in the Gift Inventory by 
-    <strong>September 15, 2024 (11:59PM PST)</strong>.
+    claimed in the Gift Inventory by
+    <strong>February 10, 2025 (11:59PM PST)</strong>.
     <ul>
       <li>
         Otherwise, the code will not be available to claim after
-        <strong>September 15, 2024 (11:59PM PST)</strong>.
+        <strong>February 10, 2025 (11:59PM PST).</strong>
       </li>
     </ul>
   </li>
 </ul>
-<p id="docs-internal-guid-1542ec94-7fff-2400-4d6c-8fd69cfd0273">
+<p>
   Unfortunately, if you are a
   <strong
     >Nitro trial member, Nitro Basic, Nitro Classic, or Server Boosting</strong
@@ -327,7 +336,7 @@
 <p>
   If you want to redeem your code later, you can press the
   <strong>Maybe Later</strong> button, and then redeem the code before
-  <strong>September 16, 2024 (11:59PM PST)</strong>.
+  <strong>March 10, 2025 (11:59PM PST)</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -475,11 +484,11 @@
 </p>
 <p>
   <strong>A:</strong> This promotion runs from
-  <strong>September 9, 2024 (10:00am PST)</strong> to
-  <strong>September 15, 2024 (11:59pm PST)</strong>.
+  <strong>January 13, 2025 (10:00am PST)</strong> to
+  <strong>February 10, 2025 (11:59pm PST)</strong>.
 </p>
 <p>
-  After <strong>September 15, 2024 (11:59pm PST)</strong>, Nitro members will no
+  After <strong>February 10, 2025 (11:59pm PST)</strong>, Nitro members will no
   longer be able to claim a trial code.
 </p>
 <p>
@@ -491,12 +500,12 @@
 <p>
   <strong>A:</strong> Once a code is claimed in the Gift Inventory in Discord,
   all Xbox Game Pass for PC codes must be redeemed by
-  <strong>September 16, 2024</strong>.
+  <strong>March 10, 2025</strong>.
 </p>
 <p>
   If a code has not been redeemed by
-  <strong>September 16, 2024 (11:59PM PST)</strong>, it will expire and will no
-  longer be able to claim 1 month of Xbox Game Pass for PC.
+  <strong>March 10, 2025 (11:59PM PST)</strong>, it will expire and will no
+  longer be able to claim three months of Xbox Game Pass for PC.
 </p>
 <h2 id="h_01HE3W5FZ43GBV90J18HG7C4CP">
   <strong>Eligibility for Promotion</strong>
@@ -533,13 +542,10 @@
     rel="noopener noreferrer"
   >
     xbox.com/subscriptionterms</a
-  >. Available in certain regions only. Claim by <strong
-    >September 15, 2024</strong
-  >
-  <strong>(11:59PM PST)</strong>. Redeem by<strong>
-    September 16, 2024 (11:59PM PST)</strong
-  >. You can find more information regarding the eligibility requirements
-  <a href="#h_01HE3W5FZ4HQMX9D8C692H2FP4">here</a>. 
+  >. Available in certain regions only. Claim by
+  <strong>February 10, 2025</strong> <strong>(11:59PM PST)</strong>. Redeem
+  by<strong> March 10, 2025 (11:59PM PST)</strong>. You can find more
+  information regarding the eligibility requirements here.
 </p>
 <h2 id="h_01HE3W5FZ48JVB4EX9KTJE4AWJ">
   <strong>Claiming and Redemption Process</strong>
@@ -733,13 +739,14 @@
   A valid payment method is required. Unless you cancel, you will be charged the
   then-current regular membership rate when the promotional period ends. Limit:
   1 per person/account. Subject to the Microsoft Services Agreement, Game Pass
-  terms and system requirements at:<a
-    href="http://xbox.com/subscriptionterms"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    xbox.com/subscriptionterms</a
+  terms and system requirements at:<a href="http://xbox.com/subscriptionterms">
+    <span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >xbox.com/subscriptionterms</span
+    ></a
   >. Available in certain regions only. Claim by
-  <strong>September 15, 2024 (11:59PM PST)</strong>. Redeem by
-  <strong>September 16, 2024 (11:59PM PST)</strong>.
+  <strong>February 10, 2025 (11:59PM PST)</strong>. Redeem by
+  <strong>March 10, 2025 (11:59PM PST)</strong>.
 </p>
