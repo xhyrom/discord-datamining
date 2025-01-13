@@ -1,22 +1,16 @@
 {
   "full": {
-    "host_version": "1.0.9177",
+    "host_version": "1.0.9178",
     "module_version": 1,
-    "package_sha256": "93746dd65b274e2e919a16c1938490d70a492d77562a9834cfc17be4752e9630",
-    "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9177/discord_cloudsync/1/full.distro"
+    "package_sha256": "a3291a1f351041ad440104e68c78724bee66ab59787635a8b30c5ffa1e8c4dbe",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9178/discord_cloudsync/1/full.distro"
   },
   "deltas": [
     {
-      "host_version": "1.0.9176",
+      "host_version": "1.0.9177",
       "module_version": 1,
-      "package_sha256": "a86b3a99541d4fa2d8cda1e8ba5dfa979d59f127b2aca64931296e0bf07744b9",
-      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9177/discord_cloudsync/1/from/1.0.9176/1"
-    },
-    {
-      "host_version": "1.0.9175",
-      "module_version": 1,
-      "package_sha256": "4c308ada8664bb41466e58c2477324a9677b66e0117c0887b2924bcad016bf7c",
-      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9177/discord_cloudsync/1/from/1.0.9175/1"
+      "package_sha256": "91c0eb12a3e84ba39885e9f5967164e6706d241847c634a7f2f3918d4e6b817c",
+      "url": "https://stable.dl2.discordapp.net/distro/app/stable/win/x64/1.0.9178/discord_cloudsync/1/from/1.0.9177/1"
     }
   ]
 }
