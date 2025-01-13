@@ -33050,7 +33050,7 @@ img.thumbnail_c64476 {
 .footer_f9a4c9 {
   position: relative;
   flex: 0 0 auto;
-  padding: 16px;
+  padding: var(--modal-vertical-padding) var(--modal-horizontal-padding);
   z-index: 1;
   overflow-x: hidden;
 }
@@ -33081,8 +33081,8 @@ img.thumbnail_c64476 {
   position: relative;
   z-index: 0;
   border-radius: 5px 5px 0 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: var(--modal-horizontal-padding);
+  padding-right: var(--modal-horizontal-padding);
   overflow-x: hidden;
 }
 .close_f9a4c9 {
@@ -33146,17 +33146,12 @@ img.thumbnail_c64476 {
 .visual-refresh .footerSeparator_f9a4c9 {
   box-shadow: none;
 }
-:where(.visual-refresh) .header_f9a4c9,
-:where(.visual-refresh) .footer_f9a4c9 {
-  padding-left: var(--spacing-24);
-  padding-right: var(--spacing-24);
-}
 :where(.visual-refresh) .header_f9a4c9 {
   padding-bottom: 0;
   overflow: hidden;
 }
 :where(.visual-refresh) .content_f9a4c9 {
-  padding: var(--space-8) var(--space-24) 0 var(--space-24);
+  padding-top: var(--space-8);
 }
 :where(.visual-refresh) .footer_f9a4c9 {
   padding-top: var(--space-16);
@@ -56365,6 +56360,13 @@ html.disable-forced-colors * {
 :root {
   --chat-resize-handle-width: 8px;
 }
+:root {
+  --modal-horizontal-padding: var(--space-16);
+  --modal-vertical-padding: var(--space-16);
+}
+.visual-refresh {
+  --modal-horizontal-padding: var(--spacing-24);
+}
 html,
 body,
 div,
@@ -57409,4 +57411,4 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-channel-textarea-text-area-height: 44px;
 }
-/*# sourceMappingURL=12633.42841e72a367dd7f4c10.css.map*/
+/*# sourceMappingURL=12633.94048db83c4914d53593.css.map*/
