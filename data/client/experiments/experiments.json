@@ -11367,6 +11367,52 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-10_weighted_sample_activity_shelf",
+      "label": "Weighted Sample Activity Shelf",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Perform weighted sampling of top N activities in shelf and disable frecency sorting in shelf"
+      ],
+      "hash": 2793808763,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_activities_contextless",
+      "label": "Contextless Activities Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable contextless activities"
+      ],
+      "hash": 1212742421,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-11_application_reporting_flow",
       "label": "Apps In-App Reporting",
       "description": [
@@ -11763,29 +11809,6 @@
             }
           ]
         }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-10_weighted_sample_activity_shelf",
-      "label": "Weighted Sample Activity Shelf",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Perform weighted sampling of top N activities in shelf and disable frecency sorting in shelf"
-      ],
-      "hash": 2793808763,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -13119,29 +13142,6 @@
         "Treatment 1: Recent Activity Tab Enabled"
       ],
       "hash": 2340201155,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_user_profile_react_reply_awareness",
-      "label": "User Profile React Reply Awareness",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Fade In & Out Enabled"
-      ],
-      "hash": 4253623018,
       "buckets": [
         -1,
         0,

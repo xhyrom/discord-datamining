@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-12_user_profile_react_reply_awareness",
-    "label": "User Profile React Reply Awareness",
+    "id": "2024-11_activities_contextless",
+    "label": "Contextless Activities Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Fade In & Out Enabled"
+      "Treatment 1: Enable contextless activities"
     ],
-    "hash": 4253623018,
+    "hash": 1212742421,
     "buckets": [
       -1,
       0,
