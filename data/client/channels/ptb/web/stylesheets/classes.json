@@ -51,6 +51,8 @@
   "mask": "mask_ccd3df",
   "status": "status_c45b04",
   "layerContainer": "layerContainer_cd0de5",
+  "clickTrapContainer": "clickTrapContainer_cd0de5",
+  "trapClicks": "trapClicks_cd0de5",
   "layer": "layer_c9e2da",
   "emptyError": "emptyError_cd0de5",
   "layerHidden": "layerHidden_cd0de5",
