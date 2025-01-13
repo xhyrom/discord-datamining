@@ -9821,7 +9821,7 @@ div.modalHeader_c5e09c {
   background: var(--card-primary-bg);
   border-radius: var(--radius-md);
   height: 72px;
-  width: 102px;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57047,4 +57047,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.92f92c9b711d7faa2c3c.css.map*/
+/*# sourceMappingURL=12633.6ea029779f48c64cd6d9.css.map*/
