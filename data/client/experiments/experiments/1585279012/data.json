@@ -6,15 +6,21 @@
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
-      "Treatment 1: Refresh Enabled",
-      "Treatment 2: Refresh with Collapsible Sidebar"
+      "Treatment 1: Refresh with New Chat Input",
+      "Treatment 2: Refresh with New Chat Input, Collapsible Sidebar",
+      "Treatment 3: Refresh with Legacy Chat Input",
+      "Treatment 4: Refresh with Legacy Chat Input, Collapsible Sidebar",
+      "Treatment 5: External Testers"
     ],
     "hash": 1585279012,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3,
+      4,
+      5
     ],
     "holdout": {},
     "aa_mode": false,
