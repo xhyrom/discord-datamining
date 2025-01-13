@@ -4899,7 +4899,11 @@
   },
   "QUEST": {
     "url": "/quests/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "QUESTS_ENROLL": {
     "url": "/quests/:param/enroll",
