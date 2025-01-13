@@ -4897,6 +4897,10 @@
       "OPTIONS"
     ]
   },
+  "QUEST": {
+    "url": "/quests/:param",
+    "allowed_methods": null
+  },
   "QUESTS_ENROLL": {
     "url": "/quests/:param/enroll",
     "allowed_methods": [
