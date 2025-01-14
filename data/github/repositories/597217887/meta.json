@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/rules_ios",
   "created_at": "2023-02-03T22:24:12Z",
   "homepage": null,
-  "size": 58416,
+  "size": 58447,
   "language": "Starlark",
   "has_issues": false,
   "has_projects": true,
