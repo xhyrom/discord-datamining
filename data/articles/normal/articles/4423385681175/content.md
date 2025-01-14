@@ -167,6 +167,6 @@
   email!
 </p>
 <p> </p>
-<h3>
+<h3 id="h_01JHK7CSVY0W8AB0HHATGS3P45">
   Note: Our team will not be able to manually change the email of an account.
 </h3>
