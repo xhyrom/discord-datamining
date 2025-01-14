@@ -23399,7 +23399,6 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   max-height: var(--custom-channel-textarea-text-area-height);
   position: sticky;
   top: 0;
-  margin-right: var(--space-sm);
 }
 .enable-forced-colors .scrollableContainer_bdf0de {
   border: 1px solid CanvasText;
@@ -57047,4 +57046,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.6ea029779f48c64cd6d9.css.map*/
+/*# sourceMappingURL=12633.1865e722b1db1ecb1066.css.map*/
