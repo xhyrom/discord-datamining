@@ -5211,6 +5211,12 @@ div.modalHeader_c5e09c {
   opacity: 0.2;
   pointer-events: none;
 }
+.visual-refresh .modalHeader_c5e09c {
+  padding-bottom: 12px;
+}
+.visual-refresh .modalContent_c5e09c {
+  padding-bottom: 24px;
+}
 .scrollerBase_c49869 {
   position: relative;
   box-sizing: border-box;
@@ -57069,4 +57075,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.c9ffaafbe359880cd5b6.css.map*/
+/*# sourceMappingURL=12633.41bbce602220938e7785.css.map*/
