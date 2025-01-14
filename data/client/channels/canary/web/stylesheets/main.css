@@ -56055,9 +56055,9 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
-  --chat-resize-handle-width: 8px;
   --modal-horizontal-padding: 12px;
   --modal-vertical-padding: 16px;
+  --chat-resize-handle-width: 8px;
 }
 .visual-refresh {
   --modal-horizontal-padding: 24px;
@@ -57110,4 +57110,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.3be95f7fe18b040383bb.css.map*/
+/*# sourceMappingURL=12633.1a7871761b06f4887e49.css.map*/
