@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_advanced_server_join",
+    "label": "Advanced Server Join Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Advanced Server Join"
+    ],
+    "hash": 1739883879,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
