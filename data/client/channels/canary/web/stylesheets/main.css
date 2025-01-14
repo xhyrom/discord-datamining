@@ -56002,13 +56002,11 @@ html.disable-forced-colors * {
 }
 :root {
   --chat-resize-handle-width: 8px;
-}
-:root {
-  --modal-horizontal-padding: var(--space-16);
-  --modal-vertical-padding: var(--space-16);
+  --modal-horizontal-padding: 12px;
+  --modal-vertical-padding: 16px;
 }
 .visual-refresh {
-  --modal-horizontal-padding: var(--spacing-24);
+  --modal-horizontal-padding: 24px;
 }
 html,
 body,
@@ -57058,4 +57056,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8551b646e2bc5db0a27a.css.map*/
+/*# sourceMappingURL=12633.59490eab9b605e717ec1.css.map*/
