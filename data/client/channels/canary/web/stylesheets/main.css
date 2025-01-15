@@ -42117,6 +42117,8 @@ html.disable-forced-colors * {
   --menu-item-danger-hover-bg: var(--red-430);
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
+  --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --message-reacted-text: var(--brand-200);
   --modal-background: var(--primary-600);
   --modal-footer-background: var(--primary-630);
   --navigator-header-tint: var(--white);
@@ -43026,6 +43028,17 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--brand-500-hsl) / 0.15) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--brand-200) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--primary-600) 100%,
@@ -43822,6 +43835,8 @@ html.disable-forced-colors * {
   --menu-item-danger-hover-bg: var(--red-430);
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
+  --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --message-reacted-text: var(--brand-560);
   --modal-background: var(--white);
   --modal-footer-background: var(--primary-130);
   --navigator-header-tint: var(--primary-500);
@@ -44731,6 +44746,17 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--brand-500-hsl) / 0.15) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--brand-560) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--white) 100%,
@@ -45530,6 +45556,8 @@ html.disable-forced-colors * {
   --menu-item-danger-hover-bg: var(--red-430);
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
+  --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --message-reacted-text: var(--brand-200);
   --modal-background: var(--plum-16);
   --modal-footer-background: var(--plum-17);
   --navigator-header-tint: var(--white);
@@ -46439,6 +46467,17 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--brand-500-hsl) / 0.15) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--brand-200) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
     --modal-background: color-mix(
       in oklab,
       var(--plum-16) 100%,
@@ -47239,6 +47278,8 @@ html.disable-forced-colors * {
   --menu-item-danger-hover-bg: var(--red-430);
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
+  --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --message-reacted-text: var(--brand-200);
   --modal-background: var(--plum-16);
   --modal-footer-background: var(--plum-17);
   --navigator-header-tint: var(--white);
@@ -48147,6 +48188,17 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-500) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--brand-500-hsl) / 0.15) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--brand-200) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
@@ -52288,6 +52340,10 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-10);
+  --message-reacted-background: hsl(
+    var(--opacity-blurple-24-hsl) / 0.23921568627450981
+  );
+  --message-reacted-text: var(--blurple-5);
   --modal-background: var(--neutral-66);
   --modal-footer-background: var(--neutral-66);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-38);
@@ -52631,6 +52687,17 @@ html.disable-forced-colors * {
     --mention-foreground: color-mix(
       in oklab,
       var(--blurple-10) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--blurple-5) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
@@ -53116,6 +53183,10 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-71);
+  --message-reacted-background: hsl(
+    var(--opacity-blurple-24-hsl) / 0.23921568627450981
+  );
+  --message-reacted-text: var(--blurple-75);
   --modal-background: var(--neutral-1);
   --modal-footer-background: var(--neutral-1);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-31);
@@ -53463,6 +53534,17 @@ html.disable-forced-colors * {
     --mention-foreground: color-mix(
       in oklab,
       var(--blurple-71) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--blurple-75) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
@@ -53937,6 +54019,10 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-26);
+  --message-reacted-background: hsl(
+    var(--opacity-blurple-24-hsl) / 0.23921568627450981
+  );
+  --message-reacted-text: var(--blurple-21);
   --modal-background: var(--neutral-91);
   --modal-footer-background: var(--neutral-91);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-45);
@@ -54276,6 +54362,17 @@ html.disable-forced-colors * {
     --mention-foreground: color-mix(
       in oklab,
       var(--blurple-26) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--blurple-21) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
@@ -54754,6 +54851,10 @@ html.disable-forced-colors * {
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
   --mention-foreground: var(--blurple-19);
+  --message-reacted-background: hsl(
+    var(--opacity-blurple-24-hsl) / 0.23921568627450981
+  );
+  --message-reacted-text: var(--blurple-14);
   --modal-background: var(--neutral-79);
   --modal-footer-background: var(--neutral-79);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-43);
@@ -55091,6 +55192,17 @@ html.disable-forced-colors * {
     --mention-foreground: color-mix(
       in oklab,
       var(--blurple-19) 100%,
+      var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+    );
+    --message-reacted-background: color-mix(
+      in oklab,
+      hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --message-reacted-text: color-mix(
+      in oklab,
+      var(--blurple-14) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
@@ -56055,9 +56167,9 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
+  --chat-resize-handle-width: 8px;
   --modal-horizontal-padding: 12px;
   --modal-vertical-padding: 16px;
-  --chat-resize-handle-width: 8px;
 }
 .visual-refresh {
   --modal-horizontal-padding: 24px;
@@ -57110,4 +57222,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1a7871761b06f4887e49.css.map*/
+/*# sourceMappingURL=12633.baaae528611a311d772a.css.map*/

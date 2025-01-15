@@ -12716,7 +12716,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-59e964f6a016f6cb544f1664293fc105b8c16a42",
+            release: "discord_web-bb1906d6dc0f367c3c3051badc8f7e1d47711904",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12785,8 +12785,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "359201"), "359201"));
-          o.YA("builtAt", String("1736901614187"));
+            o.YA("buildNumber", ((e = "359221"), "359221"));
+          o.YA("builtAt", String("1736905267537"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -14647,6 +14647,20 @@
               [a.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
               [a.DARKER]: { raw: "BRAND_500", opacity: 1 },
             },
+            MESSAGE_REACTED_BACKGROUND: {
+              category: "generic",
+              [a.DARK]: { raw: "BRAND_500", opacity: 0.15 },
+              [a.LIGHT]: { raw: "BRAND_500", opacity: 0.15 },
+              [a.MIDNIGHT]: { raw: "BRAND_500", opacity: 0.15 },
+              [a.DARKER]: { raw: "BRAND_500", opacity: 0.15 },
+            },
+            MESSAGE_REACTED_TEXT: {
+              category: "text",
+              [a.DARK]: { raw: "BRAND_200", opacity: 1 },
+              [a.LIGHT]: { raw: "BRAND_560", opacity: 1 },
+              [a.MIDNIGHT]: { raw: "BRAND_200", opacity: 1 },
+              [a.DARKER]: { raw: "BRAND_200", opacity: 1 },
+            },
             MODAL_BACKGROUND: {
               category: "generic",
               [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
@@ -15763,13 +15777,17 @@
               BLUE_NEW_49: "#0074e3",
               BLUE_NEW_57: "#0d64be",
               BLURPLE_10: "#c8d2fe",
+              BLURPLE_14: "#bac7fe",
               BLURPLE_19: "#aabafd",
+              BLURPLE_21: "#a3b5fc",
               BLURPLE_25: "#97aafb",
               BLURPLE_26: "#94a7fb",
               BLURPLE_35: "#7a8ef8",
               BLURPLE_41: "#6a7df6",
               BLURPLE_49: "#5865f2",
+              BLURPLE_5: "#d9dfff",
               BLURPLE_71: "#323d82",
+              BLURPLE_75: "#2b366f",
               BRAND_100: "#f7f7fe",
               BRAND_130: "#f0f1fe",
               BRAND_160: "#e7e9fd",
@@ -23204,6 +23222,8 @@
           (a.MENU_ITEM_DANGER_HOVER_BG = "menu-item-danger-hover-bg"),
           (a.MENU_ITEM_DEFAULT_ACTIVE_BG = "menu-item-default-active-bg"),
           (a.MENU_ITEM_DEFAULT_HOVER_BG = "menu-item-default-hover-bg"),
+          (a.MESSAGE_REACTED_BACKGROUND = "message-reacted-background"),
+          (a.MESSAGE_REACTED_TEXT = "message-reacted-text"),
           (a.MODAL_BACKGROUND = "modal-background"),
           (a.MODAL_FOOTER_BACKGROUND = "modal-footer-background"),
           (a.NAVIGATOR_HEADER_TINT = "navigator-header-tint"),
@@ -24595,6 +24615,18 @@
               _.I.BRAND_500,
               _.I.BRAND_500,
               _.I.BRAND_500,
+            ],
+            "message-reacted-background": [
+              _.I.BRAND_500,
+              _.I.BRAND_500,
+              _.I.BRAND_500,
+              _.I.BRAND_500,
+            ],
+            "message-reacted-text": [
+              _.I.BRAND_200,
+              _.I.BRAND_560,
+              _.I.BRAND_200,
+              _.I.BRAND_200,
             ],
             "modal-background": [
               _.I.PRIMARY_600,
@@ -54675,4 +54707,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.1ec854a31cb0c18b33c9.js.map
+//# sourceMappingURL=sentry.6e5cc82a499bec900f72.js.map
