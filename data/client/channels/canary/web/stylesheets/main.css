@@ -14380,7 +14380,6 @@ span.clanTag_a31c43 {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
-  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .childButton_f45bfc:hover {
@@ -14499,7 +14498,6 @@ span.clanTag_a31c43 {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
-  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .linkButton_ccf237:hover {
@@ -14598,7 +14596,7 @@ span.clanTag_a31c43 {
   margin-right: 8px;
 }
 .headerContainer_e9d805 {
-  padding: 0 16px;
+  padding: 0 24px;
   text-align: center;
 }
 .headerContainer_e9d805 > :not(:last-child) {
@@ -57222,4 +57220,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.baaae528611a311d772a.css.map*/
+/*# sourceMappingURL=12633.9363c66af77fa34eb6cc.css.map*/
