@@ -23306,6 +23306,26 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   transition: transform.15s;
   transform: rotate(12deg) scale(1.05);
 }
+.full-motion .messageConfettiButton_bdf0de:hover {
+  animation: wiggle_bdf0de.75s ease-in-out;
+}
+@keyframes wiggle_bdf0de {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .fontSize12Padding_bdf0de {
   padding-bottom: 14px;
   padding-top: 14px;
@@ -24861,11 +24881,11 @@ div.popoutCloseButton_d523a2:hover {
   text-align: center;
   position: relative;
   border-radius: 8px;
-  padding: 0 16px;
+  padding: 16px;
+  max-width: 280px;
 }
 .body_efc1ac {
-  padding-top: 54px;
-  max-width: 248px;
+  margin-top: 8px;
 }
 .pointer_efc1ac {
   width: 0;
@@ -24894,14 +24914,8 @@ div.popoutCloseButton_d523a2:hover {
   padding-top: 4px;
 }
 .coachmark_efc1ac {
-  position: absolute;
-  width: 200px;
-}
-.staticImage_efc1ac {
-  top: -200px;
-}
-.animation_efc1ac {
-  top: -185px;
+  width: 170px;
+  margin-top: -78px;
 }
 .dmButtonContainer_efc1ac {
   display: flex;
@@ -57277,4 +57291,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.92610ae2951bfa084e0b.css.map*/
+/*# sourceMappingURL=12633.17309b8a23f0a6d80286.css.map*/
