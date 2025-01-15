@@ -12716,7 +12716,8 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1df521d0528969d4e5000076c487db9ba7e2905c",
+            release:
+              "2025-01-15-discord_web-32d6128e0b7eb783300f8a8036c22aa5c384cd03",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12785,8 +12786,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "359265"), "359265"));
-          o.YA("builtAt", String("1736929221358"));
+            o.YA("buildNumber", ((e = "359395"), "359395"));
+          o.YA("builtAt", String("1736967365019"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54707,4 +54708,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.8162df86b1474a2e9ab2.js.map
+//# sourceMappingURL=sentry.b0e9b7cce180a38e7d5b.js.map
