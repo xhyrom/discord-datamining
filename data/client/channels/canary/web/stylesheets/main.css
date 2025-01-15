@@ -23350,6 +23350,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .stackedBars_bdf0de > :not(:last-child) {
   border-bottom: 1px solid var(--background-secondary-alt);
 }
+.bar_bdf0de {
+  border-radius: inherit;
+}
 .visual-refresh-chat-input .stackedBars_bdf0de {
   background: var(--background-surface-higher);
 }
@@ -24351,6 +24354,60 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .completed_d29eee {
   color: var(--status-positive);
+}
+.bar_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: var(--space-16);
+  justify-content: space-between;
+  border-radius: inherit;
+  gap: var(--space-16);
+  background: linear-gradient(
+    90deg,
+    rgba(229, 81, 235, 0.2) 0%,
+    rgba(78, 58, 214, 0.2) 100%
+  );
+}
+.beginning_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-8);
+}
+.end_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.emojiButtonContainer_c7ddf6 {
+  padding: 0 2px;
+}
+.emojiButton_c7ddf6 {
+  height: auto;
+  color: var(--interactive-normal);
+}
+.emojiButton_c7ddf6.selected_c7ddf6,
+.emojiButton_c7ddf6:hover,
+.keyboard-mode .emojiButton_c7ddf6:focus {
+  color: var(--interactive-hover);
+}
+.emojiButton_c7ddf6.active_c7ddf6 {
+  color: var(--interactive-active);
+}
+.emojiButtonInner_c7ddf6 {
+  display: flex;
+}
+.visual-refresh .bar_c7ddf6 {
+  padding-left: var(--space-20);
+}
+.visual-refresh .emojiButtonContainer_c7ddf6 {
+  padding: 0;
+}
+.visual-refresh .emojiButton_c7ddf6.selected_c7ddf6,
+.visual-refresh .emojiButton_c7ddf6:hover,
+.visual-refresh .emojiButton_c7ddf6:active {
+  color: var(--icon-primary);
 }
 .clipContainer_b11c5e {
   overflow: hidden;
@@ -57220,4 +57277,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9363c66af77fa34eb6cc.css.map*/
+/*# sourceMappingURL=12633.92610ae2951bfa084e0b.css.map*/
