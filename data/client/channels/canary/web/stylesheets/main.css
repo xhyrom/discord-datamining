@@ -19278,6 +19278,13 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .enable-forced-colors .diversityEmojiItem_cce80d:hover {
   border-color: ButtonText;
 }
+.visual-refresh .diversitySelectorOptions_cce80d {
+  top: 19px;
+  right: 11px;
+}
+.visual-refresh .diversitySelectorOptionsHasTabWrapper_cce80d {
+  top: 3px;
+}
 .wrapper_c6ee36 {
   position: relative;
   border-radius: var(--custom-emoji-picker-border-radius);
@@ -57291,4 +57298,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.17309b8a23f0a6d80286.css.map*/
+/*# sourceMappingURL=12633.b9d7e01b25289d5cf47c.css.map*/
