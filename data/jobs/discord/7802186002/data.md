@@ -10,14 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7802186002](https://discord.com/jobs/7802186002)
 
-**Updated At:** Tue, 14 Jan 2025 19:07:35 GMT
+**Updated At:** Wed, 15 Jan 2025 19:21:45 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
 We’re looking for a technical, hands-on, and mission-focused Staff Engineer to help scale our technology and revenue driving products. You will help oversee the technical roadmap across our Consumer Revenue org. You will work with teams across the organization such as Engineering, Product, Data Science, Design and Marketing to ensure that the technical strategy maps to the revenue goals of the team. Come help us scale our platform and products to directly promote the vision of multi-billion dollars in revenue at Discord.
 What You'll Be Doing
 
-Collaborate with leadership and senior engineers on the team to build the technical roadmap for the Consumer Revenue team encompassing Nitro, Shop, and Server revenue streams.
 Focus on accelerating growth of existing revenue streams while laying the foundation for the development of new revenue streams and monetization opportunities.
 Collaborate with staff engineers and partners across the organization to ensure technical agreement to other systems, products and vision.
 Use your technical expertise to constantly improve and ensure your team achieves extraordinary results at the high technical level we set.
