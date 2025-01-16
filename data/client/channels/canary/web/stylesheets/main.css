@@ -21680,6 +21680,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .visual-refresh .expressionPickerCategoryList_ceda83 {
   top: 53px;
 }
+.visual-refresh .categoryList_ceda83 {
+  top: 65px;
+}
 .category_ceda83 {
   cursor: pointer;
   margin-bottom: 8px;
@@ -57289,4 +57292,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.815549b44d0b276af833.css.map*/
+/*# sourceMappingURL=12633.f79f95f0d1e1a443154d.css.map*/
