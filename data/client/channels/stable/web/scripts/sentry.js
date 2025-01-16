@@ -7596,8 +7596,10 @@
               "/users/@me/update-league-of-legends-leaderboard",
             GUILD_LEADERBOARD_SETTINGS: (e, t) =>
               "/guilds/".concat(e, "/leaderboards/").concat(t, "/settings"),
-            USER_REDEEM_VIRTUAL_CURRENCY: (e) =>
+            VIRTUAL_CURRENCY_SKU_REDEEM: (e) =>
               "/virtual-currency/skus/".concat(e, "/redeem"),
+            VIRTUAL_CURRENCY_USER_BALANCE:
+              "/users/@me/virtual-currency/balance",
             IGNORE_USER: (e) =>
               "/users/@me/relationships/".concat(e, "/ignore"),
             SCHEDULED_MESSAGES: "/users/@me/scheduled-messages",
@@ -9766,6 +9768,8 @@
             "app_profile_open_app_button_clicked"),
           (aS.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED =
             "app_detail_page_entry_point_command_button_clicked"),
+          (aS.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED =
+            "embedded_application_invite_embed_viewed"),
           (aS.NITRO_TAB_VISITED = "nitro_tab_visited"),
           (aS.BROWSER_HANDOFF_SUCCEEDED = "browser_handoff_succeeded"),
           (aS.SHOW_TUTORIAL = "show_tutorial"),
@@ -12717,7 +12721,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-01-15-discord_web-1b4149de0bf59c90a15cc40ef1039397221d5411",
+              "2025-01-16-d3fc2dbc56dcc63fedd198a18ac8527cba6a6fc7-discord_web",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12786,8 +12790,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "359443"), "359443"));
-          o.YA("builtAt", String("1736972544924"));
+            o.YA("buildNumber", ((e = "359691"), "359691"));
+          o.YA("builtAt", String("1737016373439"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -12822,34 +12826,37 @@
       },
       526761: function (e, t, r) {
         "use strict";
-        var a, n, _, o, E, i, c, s, l, I, u, R, A, T, N, d, f, O;
+        var a, n, _, o, E, i, c, s, l, I, u, R, A, T, N, d, f, O, L;
         r.d(t, {
           Ax: function () {
             return I;
           },
           FY: function () {
-            return c;
+            return i;
           },
           GA: function () {
-            return S;
+            return C;
           },
           JC: function () {
-            return P;
+            return g;
           },
           KQ: function () {
-            return C;
+            return P;
           },
           NB: function () {
             return a;
           },
           XZ: function () {
-            return D;
+            return S;
           },
           Y_: function () {
             return _;
           },
           cP: function () {
-            return h;
+            return D;
+          },
+          f4: function () {
+            return s;
           },
           fy: function () {
             return l;
@@ -12858,35 +12865,32 @@
             return n;
           },
           ic: function () {
-            return g;
+            return U;
           },
           oX: function () {
-            return L;
+            return p;
           },
           rP: function () {
             return o;
-          },
-          to: function () {
-            return i;
           },
           u0: function () {
             return u;
           },
           vY: function () {
-            return p;
+            return h;
           },
           vc: function () {
-            return U;
+            return M;
           },
           yP: function () {
-            return s;
+            return c;
           },
         });
-        let L = 250,
-          p = 762880,
-          h = "ROLE_SUBSCRIPTIONS",
-          D = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-          S = "SOUNDBOARD_SUBSECTION";
+        let p = 250,
+          h = 762880,
+          D = "ROLE_SUBSCRIPTIONS",
+          S = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+          C = "SOUNDBOARD_SUBSECTION";
         ((R = a || (a = {})).USER_PROFILE = "user_profile"),
           (R.GUILD = "guild"),
           (R.TRY_IT_OUT = "try_it_out"),
@@ -12897,22 +12901,18 @@
             "sync_profile_theme_with_user_theme"),
           (A.LEGACY_CHAT_INPUT = "legacy_chat_input"),
           ((E || (E = {})).HARDWARE_ACCELERATION = "hardware_acceleration"),
-          ((T = i || (i = {})).DM_SAFETY_ALERTS = "dm_safety_alerts"),
-          (T.DM_SAFETY_ALERTS_V2 = "dm_safety_alerts_v2"),
-          (T.MESSAGE_REQUESTS = "message_requests"),
+          ((T = i || (i = {})).DM_SAFETY_ALERTS_V2 = "dm_safety_alerts_v2"),
           (T.MESSAGE_REQUESTS_V2 = "message_requests_v2"),
-          (T.EXPLICIT_MEDIA_REDACTION = "explicit_media_redaction"),
           (T.EXPLICIT_MEDIA_REDACTION_V2 = "explicit_media_redaction_v2"),
-          ((c || (c = {})).RESTRICTED_ACCOUNTS = "restricted_accounts");
-        let C = {
+          (T.RESTRICTED_ACCOUNTS = "restricted_accounts");
+        let P = {
           ProfileCustomizationScrollPositions: _,
           AccessibilityScrollPositions: o,
           VoiceAndVideoScrollPositions: E,
           AppearanceScrollPositions: n,
-          PrivacyAndSafetyScrollPositions: i,
-          ContentAndSocialScrollPositions: c,
+          ContentAndSocialScrollPositions: i,
         };
-        function P() {
+        function g() {
           return {
             protoToSave: void 0,
             timeout: void 0,
@@ -12925,24 +12925,27 @@
             offlineEditDataVersion: void 0,
           };
         }
-        ((N = s || (s = {}))[(N.PRELOADED_USER_SETTINGS = 1)] =
+        ((N = c || (c = {}))[(N.PRELOADED_USER_SETTINGS = 1)] =
           "PRELOADED_USER_SETTINGS"),
           (N[(N.FRECENCY_AND_FAVORITES_SETTINGS = 2)] =
             "FRECENCY_AND_FAVORITES_SETTINGS"),
           (N[(N.TEST_SETTINGS = 3)] = "TEST_SETTINGS"),
-          ((d = l || (l = {}))[(d.INFREQUENT_USER_ACTION = 0)] =
+          ((d = s || (s = {})).USER_SETTINGS_PRIVACY_SAFETY =
+            "user_settings_privacy_safety"),
+          (d.SERVER_PRIVACY_MODAL = "server_privacy_modal"),
+          ((f = l || (l = {}))[(f.INFREQUENT_USER_ACTION = 0)] =
             "INFREQUENT_USER_ACTION"),
-          (d[(d.FREQUENT_USER_ACTION = 10)] = "FREQUENT_USER_ACTION"),
-          (d[(d.SLOW_USER_ACTION = 20)] = "SLOW_USER_ACTION"),
-          (d[(d.AUTOMATED = 30)] = "AUTOMATED"),
-          (d[(d.DAILY = 86400)] = "DAILY"),
-          ((f = I || (I = {}))[(f.CONFIRM_START = 0)] = "CONFIRM_START"),
-          (f[(f.CONFIRM_CODE = 1)] = "CONFIRM_CODE"),
-          (f[(f.CHANGE_EMAIL_REASONS = 2)] = "CHANGE_EMAIL_REASONS"),
-          (f[(f.CHANGE_EMAIL_WARNING = 3)] = "CHANGE_EMAIL_WARNING"),
-          (f[(f.EMAIL_AND_PASSWORD = 4)] = "EMAIL_AND_PASSWORD"),
-          (f[(f.COMPLETE = 5)] = "COMPLETE");
-        let g = {
+          (f[(f.FREQUENT_USER_ACTION = 10)] = "FREQUENT_USER_ACTION"),
+          (f[(f.SLOW_USER_ACTION = 20)] = "SLOW_USER_ACTION"),
+          (f[(f.AUTOMATED = 30)] = "AUTOMATED"),
+          (f[(f.DAILY = 86400)] = "DAILY"),
+          ((O = I || (I = {}))[(O.CONFIRM_START = 0)] = "CONFIRM_START"),
+          (O[(O.CONFIRM_CODE = 1)] = "CONFIRM_CODE"),
+          (O[(O.CHANGE_EMAIL_REASONS = 2)] = "CHANGE_EMAIL_REASONS"),
+          (O[(O.CHANGE_EMAIL_WARNING = 3)] = "CHANGE_EMAIL_WARNING"),
+          (O[(O.EMAIL_AND_PASSWORD = 4)] = "EMAIL_AND_PASSWORD"),
+          (O[(O.COMPLETE = 5)] = "COMPLETE");
+        let U = {
             NEW_FORUM_THREADS_ON: 16384,
             NEW_FORUM_THREADS_OFF: 8192,
             OPT_IN_ENABLED: 4096,
@@ -12950,13 +12953,13 @@
             UNREADS_ALL_MESSAGES: 1024,
             UNREADS_ONLY_MENTIONS: 512,
           },
-          U = {
+          M = {
             OPT_IN_CHANNELS_ON: 16384,
             OPT_IN_CHANNELS_OFF: 8192,
             UNREADS_ONLY_MENTIONS: 4096,
             UNREADS_ALL_MESSAGES: 2048,
           };
-        ((O = u || (u = {})).USER = "user"), (O.STREAM = "stream");
+        ((L = u || (u = {})).USER = "user"), (L.STREAM = "stream");
       },
       70956: function (e, t) {
         "use strict";
@@ -54708,4 +54711,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.c21144356faffd3f70df.js.map
+//# sourceMappingURL=sentry.9a80454c02c9b49d8d48.js.map
