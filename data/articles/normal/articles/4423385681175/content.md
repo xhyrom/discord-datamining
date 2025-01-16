@@ -9,11 +9,9 @@
   </ul>
 </div>
 <div class="tip-box">
-  <strong>Note: </strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Discord Support Team is not able to change the email address on an
-    account.</span
-  >
+  <strong>Note: </strong>The Discord Support Team cannot change the email
+  address associated with your account. To update your email, you'll need access
+  to the inbox of your current email address.
 </div>
 <h1 id="h_01JHK77EZKJ3ZE36CZ556FWGVT">Desktop/Browser</h1>
 <p>
