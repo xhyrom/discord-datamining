@@ -18,6 +18,30 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Once Human</strong></p>
+<p><strong>Quest Name: Once Human Crazy Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Stream 15 minutes of
+  <strong>Once Human</strong> to a friend on <strong>Discord </strong>to receive
+  a <strong>Gun Skin:</strong> <strong>Tiger Roar</strong>.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on desktop where both
+  <strong>Discord</strong> and <strong>Once Human</strong> are available.
+  Discord’s premium services are restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period:</strong> The
+  <strong>Once Human Crazy Quest</strong> can be accepted on Discord from
+  <strong>January 16, 2025</strong> until
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>April 10, 2025 (0:00 UTC)</strong>.
+</p>
+<p><strong>Other Terms: </strong>Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Game: Marvel Rivals</strong></p>
 <p><strong>Quest Name: Marvel Rivals Quest</strong></p>
 <p>
@@ -311,28 +335,6 @@
   >
 </p>
 <p> </p>
-<p><strong>Quest Game:</strong> <strong>Delta Force</strong></p>
-<p><strong>Quest Name:</strong> <strong>Gareena Pioneer Quest</strong></p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Delta Force</strong> on PC to receive a
-  <strong>P90 - Pioneer Blue</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on PC where both
-  <strong>Discord</strong> and <strong>Delta Force</strong> are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: The Gareena Pioneer Quest</strong> can be
-  accepted on Discord from
-  <strong>December 17, 2024 until December 23, 2024 (11:59PM UTC).</strong>
-</p>
-<p>
-  Quest requirements must be completed during this period to receive the reward.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
 <p><strong>Quest Video:</strong> <strong>Sonic the Hedgehog 3</strong></p>
 <p>
   <strong
@@ -385,32 +387,6 @@
   <strong>January 21, 2025</strong>.
 </p>
 <p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Delta Force</strong><br /><strong
-    >Quest Name: Delta Force Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Delta Force</strong> on PC to receive a
-  <strong>P90 - Pioneer Blue</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on PC where both
-  <strong>Discord</strong> and <strong>Delta Force</strong> are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: The Gareena Pioneer Quest</strong> can be
-  accepted on Discord from <strong>December 11, 2024 </strong>until
-  <strong>December 14, 2024 (11:59PM UTC)</strong><strong>.</strong>
-</p>
-<p>
-   Complete the quest requirements during this period and claim your reward by
-  <strong>January 14, 2025</strong>.
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
   <strong>Quest Video: The Game Awards 2024 Trailer</strong><br /><strong
@@ -510,39 +486,6 @@
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
 <p>
-  <strong>Quest Video: PC Game Pass: We Got You</strong><br /><strong
-    >Quest Name: PC Player Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Watch the
-  <strong>PC Game Pass: We Got You video</strong> in Discord to get a
-  <strong>14-day PC Game Pass trial</strong>!
-</p>
-<p>
-  <strong>Availability Period:</strong> The <strong>PC Player Quest</strong> can
-  be accepted on Discord desktop app or browser client from
-  <strong>November 29, 2024</strong> until
-  <strong>December 11, 2024 (8:00AM PT)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>December 31, 2024 (7:59 PM UTC)</strong>.
-</p>
-<p>A valid payment method is required.</p>
-<p>
-  For details about the Microsoft Services Agreement, Game Pass terms, and
-  system requirements, visit:<a
-    href="%20xbox.com/subscriptionterms"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    xbox.com/subscriptionterms</a
-  >. The reward codes are not “stackable” to previously redeemed trials.
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
   <strong>Quest Game: World of Warcraft</strong><br /><strong
     >Quest Name: World of Warcraft x Mountain Dew Quest</strong
   >
@@ -564,39 +507,6 @@
     December 10, 2024 (11:59PM UTC). </strong
   >Reward gift codes expire <strong>January 31, 2025</strong>. Quest
   requirements must be completed during this period to receive the reward.
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Batman: Arkham Shadow</strong><br /><strong
-    >Quest Name: Batman: Arkham Shadow Quest</strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Watch the
-  <strong>Batman: Arkham Shadow Accolades trailer</strong> in Discord and unlock
-  a <strong>Batarang avatar decoration</strong>! You can learn more about avatar
-  decorations
-  <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
-</p>
-<p>
-  <strong>Availability Period:</strong> The
-  <strong>Batman: Arkham Shadow Quest</strong> can be accepted on Discord
-  desktop app or browser client from <strong>November 25, 2024 </strong>until
-  <strong>December 8, 2024 (11:59PM UTC)</strong>. Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 8, 2025</strong>.
-</p>
-<p>
-  The Batarang avatar decoration is a limited-time avatar decoration and will
-  only be yours as an avatar decoration until
-  <strong>February 8, 2024 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
 </p>
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p> </p>
