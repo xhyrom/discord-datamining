@@ -5164,7 +5164,10 @@
   },
   "VIRTUAL_CURRENCY_SKU_REDEEM": {
     "url": "/virtual-currency/skus/:param/redeem",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VIRTUAL_CURRENCY_USER_BALANCE": {
     "url": "/users/@me/virtual-currency/balance",
