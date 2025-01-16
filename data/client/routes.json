@@ -5162,12 +5162,13 @@
       "PUT"
     ]
   },
-  "USER_REDEEM_VIRTUAL_CURRENCY": {
+  "VIRTUAL_CURRENCY_SKU_REDEEM": {
     "url": "/virtual-currency/skus/:param/redeem",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
+  },
+  "VIRTUAL_CURRENCY_USER_BALANCE": {
+    "url": "/users/@me/virtual-currency/balance",
+    "allowed_methods": null
   },
   "IGNORE_USER": {
     "url": "/users/@me/relationships/:param/ignore",
