@@ -7061,6 +7061,10 @@ div.modalHeader_c5e09c {
   color: var(--white-500);
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 }
+.visual-refresh .tier1Gradient_af971d,
+.visual-refresh .tier2Gradient_af971d {
+  background-clip: padding-box;
+}
 .imageWrapper_d4597d {
   display: block;
   position: relative;
@@ -13381,6 +13385,9 @@ div.cardContainer_c22357 {
 .modalFooterShopButton_d9c03f {
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 }
+.visual-refresh .modalFooterShopButton_d9c03f {
+  background-clip: padding-box;
+}
 .headerImage_da4ae3 {
   width: 180px;
   margin-bottom: 24px;
@@ -19619,6 +19626,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
   border-radius: 3px;
   flex-shrink: 0;
+}
+.visual-refresh .upsellButton_ad7baa {
+  background-clip: padding-box;
 }
 .upsellContainer_ad7baa {
   display: flex;
@@ -57290,7 +57300,7 @@ img[alt] {
   --custom-channel-textarea-text-area-height: 48px;
 }
 .density-compact.visual-refresh {
-  --custom-channel-header-height: 48px;
+  --custom-channel-header-height: 56px;
 }
 .density-cozy.visual-refresh-chat-input {
   --custom-channel-textarea-text-area-height: 44px;
@@ -57298,4 +57308,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.b9d7e01b25289d5cf47c.css.map*/
+/*# sourceMappingURL=12633.ad7728e17177218c7713.css.map*/
