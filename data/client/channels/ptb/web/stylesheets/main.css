@@ -14380,7 +14380,6 @@ span.clanTag_a31c43 {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
-  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .childButton_f45bfc:hover {
@@ -14499,7 +14498,6 @@ span.clanTag_a31c43 {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
-  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .linkButton_ccf237:hover {
@@ -14598,7 +14596,7 @@ span.clanTag_a31c43 {
   margin-right: 8px;
 }
 .headerContainer_e9d805 {
-  padding: 0 16px;
+  padding: 0 24px;
   text-align: center;
 }
 .headerContainer_e9d805 > :not(:last-child) {
@@ -19280,6 +19278,13 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .enable-forced-colors .diversityEmojiItem_cce80d:hover {
   border-color: ButtonText;
 }
+.visual-refresh .diversitySelectorOptions_cce80d {
+  top: 19px;
+  right: 11px;
+}
+.visual-refresh .diversitySelectorOptionsHasTabWrapper_cce80d {
+  top: 3px;
+}
 .wrapper_c6ee36 {
   position: relative;
   border-radius: var(--custom-emoji-picker-border-radius);
@@ -23308,6 +23313,26 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
   transition: transform.15s;
   transform: rotate(12deg) scale(1.05);
 }
+.full-motion .messageConfettiButton_bdf0de:hover {
+  animation: wiggle_bdf0de.75s ease-in-out;
+}
+@keyframes wiggle_bdf0de {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .fontSize12Padding_bdf0de {
   padding-bottom: 14px;
   padding-top: 14px;
@@ -23351,6 +23376,9 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 }
 .stackedBars_bdf0de > :not(:last-child) {
   border-bottom: 1px solid var(--background-secondary-alt);
+}
+.bar_bdf0de {
+  border-radius: inherit;
 }
 .visual-refresh-chat-input .stackedBars_bdf0de {
   background: var(--background-surface-higher);
@@ -24354,6 +24382,60 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .completed_d29eee {
   color: var(--status-positive);
 }
+.bar_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: var(--space-16);
+  justify-content: space-between;
+  border-radius: inherit;
+  gap: var(--space-16);
+  background: linear-gradient(
+    90deg,
+    rgba(229, 81, 235, 0.2) 0%,
+    rgba(78, 58, 214, 0.2) 100%
+  );
+}
+.beginning_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-8);
+}
+.end_c7ddf6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.emojiButtonContainer_c7ddf6 {
+  padding: 0 2px;
+}
+.emojiButton_c7ddf6 {
+  height: auto;
+  color: var(--interactive-normal);
+}
+.emojiButton_c7ddf6.selected_c7ddf6,
+.emojiButton_c7ddf6:hover,
+.keyboard-mode .emojiButton_c7ddf6:focus {
+  color: var(--interactive-hover);
+}
+.emojiButton_c7ddf6.active_c7ddf6 {
+  color: var(--interactive-active);
+}
+.emojiButtonInner_c7ddf6 {
+  display: flex;
+}
+.visual-refresh .bar_c7ddf6 {
+  padding-left: var(--space-20);
+}
+.visual-refresh .emojiButtonContainer_c7ddf6 {
+  padding: 0;
+}
+.visual-refresh .emojiButton_c7ddf6.selected_c7ddf6,
+.visual-refresh .emojiButton_c7ddf6:hover,
+.visual-refresh .emojiButton_c7ddf6:active {
+  color: var(--icon-primary);
+}
 .clipContainer_b11c5e {
   overflow: hidden;
   padding-top: 3px;
@@ -24806,11 +24888,11 @@ div.popoutCloseButton_d523a2:hover {
   text-align: center;
   position: relative;
   border-radius: 8px;
-  padding: 0 16px;
+  padding: 16px;
+  max-width: 280px;
 }
 .body_efc1ac {
-  padding-top: 54px;
-  max-width: 248px;
+  margin-top: 8px;
 }
 .pointer_efc1ac {
   width: 0;
@@ -24839,14 +24921,8 @@ div.popoutCloseButton_d523a2:hover {
   padding-top: 4px;
 }
 .coachmark_efc1ac {
-  position: absolute;
-  width: 200px;
-}
-.staticImage_efc1ac {
-  top: -200px;
-}
-.animation_efc1ac {
-  top: -185px;
+  width: 170px;
+  margin-top: -78px;
 }
 .dmButtonContainer_efc1ac {
   display: flex;
@@ -57222,4 +57298,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.baaae528611a311d772a.css.map*/
+/*# sourceMappingURL=12633.b9d7e01b25289d5cf47c.css.map*/
