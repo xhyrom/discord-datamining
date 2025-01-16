@@ -12234,9 +12234,6 @@ div.cardContainer_c22357 {
 .tag_e78ba3.inheritTextColor_e78ba3 {
   color: inherit;
 }
-.image_b029da {
-  max-width: 100%;
-}
 .firstPromotionalAvatar_b029da {
   z-index: 1;
 }
@@ -12251,47 +12248,21 @@ div.cardContainer_c22357 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  -moz-column-gap: 12px;
-  column-gap: 12px;
-  margin: 24px -24px -24px;
   padding: 12px 24px;
-  background: linear-gradient(90deg, #e6e5bb 0%, #1d744b 100%);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  background: linear-gradient(78.98deg, #ff9090, #f30ed8);
   min-height: 24px;
 }
 .promotionalGiftMessageText_d84998 {
   color: black;
 }
-.promotionalAvatarMaxRewards_d84998 {
-  position: absolute;
-  bottom: 20px;
-  right: 6px;
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.promotionalAvatarTwoRewards_d84998 {
-  position: absolute;
-  bottom: 32px;
-  right: 18px;
-}
-.promotionalAvatarSingleReward_d84998 {
-  position: absolute;
-  bottom: 14px;
-  right: 24px;
-}
 .promotionalTextSection_d84998 {
   display: flex;
   flex-direction: column;
-  width: 68%;
   justify-content: center;
+  margin-right: 12px;
 }
-.rotatingAvatars_d84998 {
-  width: 100%;
+.avatar_d84998 {
+  margin-top: -52px;
 }
 .pricePerInterval_af8f09 {
   margin-bottom: 18px;
@@ -12409,18 +12380,19 @@ div.cardContainer_c22357 {
 }
 .card_c87d73 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 16px;
+  overflow: hidden;
   position: relative;
   color: var(--white-500);
-  padding: 24px;
+  width: 50%;
 }
 .card_c87d73.withCardHover_c87d73:hover {
   box-shadow: var(--legacy-elevation-high);
 }
-.card_c87d73 {
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
+.cardContent_c87d73 {
+  padding: 24px;
 }
 .subscriptionPlanInfo_c87d73 {
   display: flex;
@@ -12778,17 +12750,17 @@ div.cardContainer_c22357 {
   margin-bottom: 18px;
 }
 .withPromotionalGradientBanner_c87d73 {
-  background-image: url(https://cdn.discordapp.com/assets/content/019091462290c70e602e75fb95228db4d47f309722bbe96f6eb4887f12c51936.png),
-    linear-gradient(100.98deg, #8547c6 25.21%, #b845c1 62.43%, #ab5d8a 95.57%);
-  background-size: 90%, cover;
-  background-position:
-    top right,
-    center;
-  background-repeat: no-repeat;
+  background: linear-gradient(100.98deg, #8547c6, #b845c1, #ab5d8a);
   box-sizing: border-box;
-  transform: scale(1);
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
+}
+.promotionalBackgroundImage_c87d73 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(50%);
+  transform-origin: top right;
 }
 .tier2SideGradient_c87d73 {
   position: absolute;
@@ -57308,4 +57280,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ad7728e17177218c7713.css.map*/
+/*# sourceMappingURL=12633.13eeb96caf5fbad782c1.css.map*/
