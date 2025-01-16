@@ -5168,7 +5168,11 @@
   },
   "VIRTUAL_CURRENCY_USER_BALANCE": {
     "url": "/users/@me/virtual-currency/balance",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "IGNORE_USER": {
     "url": "/users/@me/relationships/:param/ignore",
