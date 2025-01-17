@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/rules_k8s",
   "created_at": "2018-11-13T23:38:16Z",
   "homepage": "",
-  "size": 720,
+  "size": 721,
   "language": "Starlark",
   "has_issues": false,
   "has_projects": true,
