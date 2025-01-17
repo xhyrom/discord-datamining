@@ -34,14 +34,15 @@
   <strong>Availability Period: </strong>The<strong>
     DELTA FORCE STARFALL Quest</strong
   >
-  can be accepted on Discord from<strong> January 17, 2025</strong> until
-  <strong>January 23,</strong> <strong>2025 (11:59PM UTC)</strong>.
+  can be accepted on Discord from<strong> January 17, 2025</strong>
+  <strong>(6:00PM PT) </strong>until <strong>January 23,</strong>
+  <strong>2025 (11:59PM UTC)</strong>.
 </p>
 <p>
   Complete the quest requirements during this period and claim your reward by
   <strong>April 30, 2025</strong> <strong>(11:59PM UTC)</strong>. 
 </p>
-<p>Other Terms: Limit of one reward redemption per account.</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p> </p>
 <p><strong>Quest Video: Fuchsia Agent </strong></p>
 <p><strong>Quest Name: Strinova Fuchsia Quest</strong></p>
