@@ -40,16 +40,9 @@
 </div>
 <h1 id="h_01JFGGXGKXZA8K86CKGT3C8E6S">What are Soundmoji?</h1>
 <div class="exp-box">
-  Soundmoji are an experimental
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >
-  feature available to a limited number of users. Users can send them from
-  desktop or browser, but mobile devices only display the Soundmoji without
-  audio playback.
+  Soundmoji are an experimental feature available to a limited number of users.
+  Users can send them from desktop or browser, but mobile devices only display
+  the Soundmoji without audio playback.
 </div>
 <p>
   Imagine an emoji, but with sound—a <strong>Soundmoji</strong>! These playful
