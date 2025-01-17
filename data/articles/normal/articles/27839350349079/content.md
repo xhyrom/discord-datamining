@@ -18,6 +18,90 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Delta Force</strong></p>
+<p><strong>Quest Name: DELTA FORCE STARFALL Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Delta Force </strong>to receive a
+  <strong>SCAR-H Skin &amp; Premium Armament Pack</strong>.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on PC where both
+  <strong>Discord</strong> and <strong>Delta Force</strong> are available.
+  Discord’s premium services are restricted in some regions. 
+</p>
+<p>
+  <strong>Availability Period: </strong>The<strong>
+    DELTA FORCE STARFALL Quest</strong
+  >
+  can be accepted on Discord from<strong> January 17, 2025</strong> until
+  <strong>January 23,</strong> <strong>2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>April 30, 2025</strong> <strong>(11:59PM UTC)</strong>. 
+</p>
+<p>Other Terms: Limit of one reward redemption per account.</p>
+<p> </p>
+<p><strong>Quest Video: Fuchsia Agent </strong></p>
+<p><strong>Quest Name: Strinova Fuchsia Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Watch the
+  <strong>Fuchsia Agent video </strong>in Discord and unlock a<strong>
+    Fuchsia Agent avatar decoration.</strong
+  >
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Strinova Fuchsia Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>January 17, 2025</strong> until
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>February 23, 2025.  </strong>
+</p>
+<p>
+  The <strong>Fuchsia Agent avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>March 23, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
+<p><strong>Quest Game: Strinova</strong></p>
+<p><strong>Quest Name: Strinova Fuchsia Play Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Strinova </strong>to receive a <strong>Fuchsia Free Agent</strong>.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on desktop where
+  <strong>Discord</strong> and <strong>Strinova </strong>are available.
+  Discord’s premium services are restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Strinova Fuchsia Quest </strong>can be accepted on Discord from
+  <strong>January 17, 2025</strong> until
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>February 24, 2025 (0:00 UTC)</strong>.
+</p>
+<p>
+  <span style="color: #2e3338; background-color: #ffffff"
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
 <p><strong>Quest Game: Once Human</strong></p>
 <p><strong>Quest Name: Once Human Crazy Quest</strong></p>
 <p>
