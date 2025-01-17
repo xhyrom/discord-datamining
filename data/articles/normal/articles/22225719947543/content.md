@@ -50,9 +50,7 @@
       </ul>
     </li>
     <li>
-      <a href="#h_01JFAWWB4EYXG032A127X2KGKA"
-        ><strong>Completing the Quest Requirements</strong></a
-      >
+      <a href="#h_01JHTXTYSDN5VK49DME9MSS03Z"><strong>Quest Types</strong></a>
     </li>
     <li>
       <a href="#h_01JCM0891G5K7DGK0GVCQ02EXS"
@@ -110,7 +108,7 @@
 <p class="wysiwyg-text-align-left">
   You may see an alert in your Discord app about a Discord Quest. Hover over the
   <strong>Quest bar</strong> and select it to expand and learn more about the
-  Quest. To participate, press <strong>Accept Quest</strong> for a Game Quest or
+  Quest. To participate, press <strong>Accept Quest</strong> for a Play Quest or
   <strong>Start Video Quest</strong> for a Video Quest.
 </p>
 <p class="wysiwyg-text-align-center">
@@ -172,7 +170,7 @@
 </h4>
 <p>
   In <strong>Quests</strong>, you can browse recent and current Discord Quests.
-  From here, select <strong>Accept Quest</strong> for a Game Quest or
+  From here, select <strong>Accept Quest</strong> for a Play Quest or
   <strong>Start Video Quest</strong> for a Video Quest to begin participating in
   any active Quest.
 </p>
@@ -224,8 +222,8 @@
     >) to accept the Quest.<br
   /></span>
 </div>
-<h1 id="h_01JFAWWB4EYXG032A127X2KGKA">Completing the Quest Requirements</h1>
-<p>Discord offers three types of Quests:</p>
+<h1 id="h_01JHTXTYSDN5VK49DME9MSS03Z">Quest Types</h1>
+<p>Discord offers two types of Quests:</p>
 <div>
   <table style="width: 100%">
     <colgroup>
@@ -234,33 +232,38 @@
     </colgroup>
     <tbody>
       <tr>
-        <td><strong>Quest Requirement</strong></td>
+        <td>
+          <p><strong>Quest Types</strong></p>
+        </td>
         <td><strong>Description</strong></td>
       </tr>
       <tr>
-        <td>Playing a Game</td>
         <td>
-          Engage with the game for a specified duration (e.g., 15 minutes).
-          Ensure you're logged into the Discord desktop app while playing to
-          track progress accurately.
+          <p>Play Quests</p>
         </td>
-      </tr>
-      <tr>
-        <td>Streaming a Game</td>
         <td>
-          Stream the game to at least one friend in a Discord voice channel
-          using the desktop app for a minimum duration (e.g., 15 minutes). For
-          detailed instructions on Go Live and screen sharing, refer to the<a
+          <p>Play Quests have two possible completion requirements:</p>
+          <p>
+            1. <strong>Playing a Game:</strong> Play the game for a specified
+            time (e.g., 15 minutes). You must be logged into the Discord desktop
+            app to track your progress.
+          </p>
+          2. <strong>Streaming a Game:</strong> Use the desktop app to stream
+          the game to at least one friend in a Discord voice channel for a set
+          duration (e.g., 15 minutes). For detailed instructions on Go Live and
+          screen sharing, refer to the
+          <a
             href="https://support.discord.com/hc/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
-          >
-            <span class="wysiwyg-underline" style="color: #1155cc"
-              >support article</span
-            ></a
+            target="_blank"
+            rel="noopener noreferrer"
+            >support article</a
           >.
         </td>
       </tr>
       <tr>
-        <td>Watching a Video</td>
+        <td>
+          <p>Video Quests</p>
+        </td>
         <td>
           Watch the required video or trailer in Discord's desktop app or
           browser client. The video pauses if you switch windows, but don't
