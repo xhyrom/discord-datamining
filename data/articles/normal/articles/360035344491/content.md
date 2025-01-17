@@ -505,7 +505,7 @@
 <p>
   If a code has not been redeemed by
   <strong>March 10, 2025 (11:59PM PST)</strong>, it will expire and will no
-  longer be able to claim three months of Xbox Game Pass for PC.
+  longer be able to claim one month of Xbox Game Pass for PC.
 </p>
 <h2 id="h_01HE3W5FZ43GBV90J18HG7C4CP">
   <strong>Eligibility for Promotion</strong>
@@ -545,7 +545,8 @@
   >. Available in certain regions only. Claim by
   <strong>February 10, 2025</strong> <strong>(11:59PM PST)</strong>. Redeem
   by<strong> March 10, 2025 (11:59PM PST)</strong>. You can find more
-  information regarding the eligibility requirements here.
+  information regarding the eligibility requirements
+  <a href="#h_01HE3W5FZ391BV7KTQV7AAZS9D">here</a>.
 </p>
 <h2 id="h_01HE3W5FZ48JVB4EX9KTJE4AWJ">
   <strong>Claiming and Redemption Process</strong>
