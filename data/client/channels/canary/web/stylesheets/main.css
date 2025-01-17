@@ -14165,8 +14165,25 @@ span.clanTag_a31c43 {
   justify-content: center;
   align-items: center;
 }
+.tableRowGroup_e33a4d {
+  flex-shrink: 0;
+  display: "flex";
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+.tableRowGroup_e33a4d .content_e33a4d {
+  overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  background-color: var(--background-secondary);
+}
 .visual-refresh .row_e33a4d {
   border-color: var(--border-faint);
+}
+.visual-refresh .content_e33a4d {
+  border: 1px solid var(--border-faint);
 }
 .infoGroup_d34773 {
   border-radius: var(--radius-sm);
@@ -57285,4 +57302,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.5e6a5950157e089b0d7b.css.map*/
+/*# sourceMappingURL=12633.2d8e771e83933177f4c4.css.map*/
