@@ -4433,7 +4433,7 @@
             return nJ.$7;
           },
           $92: function () {
-            return _C;
+            return _S;
           },
           $Ab: function () {
             return O;
@@ -4445,7 +4445,7 @@
             return nq.$V;
           },
           $Y6: function () {
-            return _V;
+            return _k;
           },
           $ib: function () {
             return o;
@@ -4481,10 +4481,10 @@
             return nq.B1;
           },
           B9o: function () {
-            return _W;
+            return _B;
           },
           BFP: function () {
-            return _4;
+            return _6;
           },
           BRd: function () {
             return nq.BR;
@@ -4526,7 +4526,7 @@
             return _r;
           },
           E07: function () {
-            return _J;
+            return _q;
           },
           EKQ: function () {
             return nq.EK;
@@ -4535,7 +4535,7 @@
             return nq.ET;
           },
           EYA: function () {
-            return _q;
+            return _$;
           },
           EkH: function () {
             return i;
@@ -4556,7 +4556,7 @@
             return nJ.Fs;
           },
           GNZ: function () {
-            return oR;
+            return ou;
           },
           GOo: function () {
             return eo;
@@ -4574,7 +4574,7 @@
             return nq.H0;
           },
           HGf: function () {
-            return od;
+            return oN;
           },
           HN8: function () {
             return _u;
@@ -4583,7 +4583,7 @@
             return nq.He;
           },
           Hqc: function () {
-            return ol;
+            return os;
           },
           HsE: function () {
             return op;
@@ -4598,7 +4598,7 @@
             return tj;
           },
           IXf: function () {
-            return _U;
+            return _g;
           },
           I_8: function () {
             return n1;
@@ -4622,7 +4622,7 @@
             return nq.Jj;
           },
           JkL: function () {
-            return _X;
+            return _F;
           },
           Jn9: function () {
             return om;
@@ -4631,13 +4631,13 @@
             return _f;
           },
           JwP: function () {
-            return oi;
+            return oE;
           },
           K3D: function () {
             return tF;
           },
           KA4: function () {
-            return _0;
+            return _Z;
           },
           KFR: function () {
             return e3;
@@ -4652,7 +4652,7 @@
             return _R;
           },
           LAt: function () {
-            return _v;
+            return _b;
           },
           LPv: function () {
             return eU;
@@ -4679,7 +4679,7 @@
             return tt;
           },
           N_j: function () {
-            return oT;
+            return oA;
           },
           NgX: function () {
             return s;
@@ -4693,11 +4693,14 @@
           O42: function () {
             return nJ.O4;
           },
+          O8q: function () {
+            return od;
+          },
           OBS: function () {
             return nQ;
           },
           OBo: function () {
-            return oE;
+            return oo;
           },
           OGo: function () {
             return J;
@@ -4718,7 +4721,7 @@
             return Y;
           },
           PEY: function () {
-            return _P;
+            return _C;
           },
           PNu: function () {
             return _E;
@@ -4727,7 +4730,7 @@
             return tS;
           },
           PRK: function () {
-            return _D;
+            return _h;
           },
           PUi: function () {
             return e8;
@@ -4739,7 +4742,7 @@
             return L;
           },
           PrS: function () {
-            return _k;
+            return _K;
           },
           PyE: function () {
             return nq.Py;
@@ -4772,7 +4775,7 @@
             return ej;
           },
           R7I: function () {
-            return _F;
+            return _V;
           },
           REU: function () {
             return oh;
@@ -4784,10 +4787,10 @@
             return nq.RK;
           },
           RcX: function () {
-            return _H;
+            return _Y;
           },
           Rg9: function () {
-            return ou;
+            return oI;
           },
           S7T: function () {
             return nq.S7;
@@ -4799,7 +4802,7 @@
             return ts;
           },
           SRg: function () {
-            return os;
+            return oc;
           },
           Sap: function () {
             return eW;
@@ -4820,13 +4823,13 @@
             return nq.TC;
           },
           TNx: function () {
-            return _Z;
+            return _Q;
           },
           TPd: function () {
             return nW.T;
           },
           TU7: function () {
-            return _B;
+            return _w;
           },
           TaA: function () {
             return tf;
@@ -4879,17 +4882,14 @@
           Vzj: function () {
             return nq.Vz;
           },
-          WKe: function () {
-            return _h;
-          },
           WND: function () {
-            return oo;
+            return o_;
           },
           WtW: function () {
             return en;
           },
           Wyy: function () {
-            return ot;
+            return oe;
           },
           X5t: function () {
             return nq.X5;
@@ -4904,13 +4904,13 @@
             return n8;
           },
           XKF: function () {
-            return oN;
+            return oT;
           },
           XmY: function () {
-            return _S;
+            return _D;
           },
           Xyh: function () {
-            return _g;
+            return _P;
           },
           YKx: function () {
             return em;
@@ -4964,7 +4964,7 @@
             return nq.aO;
           },
           aZC: function () {
-            return _6;
+            return _3;
           },
           aib: function () {
             return ec;
@@ -4973,13 +4973,13 @@
             return tT;
           },
           b2L: function () {
-            return or;
+            return ot;
           },
           b4C: function () {
             return tQ;
           },
           b8q: function () {
-            return _2;
+            return _1;
           },
           bL: function () {
             return er;
@@ -5000,7 +5000,7 @@
             return nq.dG;
           },
           dGM: function () {
-            return _M;
+            return _U;
           },
           dGm: function () {
             return nq.yA;
@@ -5009,7 +5009,7 @@
             return _L;
           },
           dYL: function () {
-            return _1;
+            return _0;
           },
           e3s: function () {
             return oO;
@@ -5024,13 +5024,13 @@
             return ev;
           },
           eWB: function () {
-            return _y;
+            return _m;
           },
           ecB: function () {
             return e2;
           },
           eez: function () {
-            return _Y;
+            return _W;
           },
           en1: function () {
             return _l;
@@ -5039,7 +5039,7 @@
             return tp;
           },
           epw: function () {
-            return _m;
+            return _G;
           },
           evJ: function () {
             return el;
@@ -5054,13 +5054,13 @@
             return nJ.fM;
           },
           fo$: function () {
-            return _b;
+            return _y;
           },
           frH: function () {
             return nq.fr;
           },
           fzT: function () {
-            return _8;
+            return _5;
           },
           g2L: function () {
             return _;
@@ -5168,19 +5168,19 @@
             return Q;
           },
           nkL: function () {
-            return oA;
+            return oR;
           },
           nnr: function () {
             return n;
           },
           o3l: function () {
-            return o_;
+            return on;
           },
           oAB: function () {
-            return _3;
+            return _2;
           },
           oCV: function () {
-            return on;
+            return oa;
           },
           oNc: function () {
             return C;
@@ -5189,13 +5189,13 @@
             return n2;
           },
           p3w: function () {
-            return _K;
+            return _x;
           },
           p6O: function () {
-            return _7;
+            return _8;
           },
           pAY: function () {
-            return _x;
+            return _H;
           },
           pJs: function () {
             return N;
@@ -5216,7 +5216,7 @@
             return tc;
           },
           pmI: function () {
-            return _9;
+            return _7;
           },
           q5t: function () {
             return eu;
@@ -5234,7 +5234,7 @@
             return tO;
           },
           qhL: function () {
-            return _G;
+            return _M;
           },
           qrD: function () {
             return f;
@@ -5246,10 +5246,10 @@
             return eX;
           },
           rnv: function () {
-            return _z;
+            return _J;
           },
           rsA: function () {
-            return oI;
+            return ol;
           },
           rtL: function () {
             return eB;
@@ -5267,7 +5267,7 @@
             return td;
           },
           scU: function () {
-            return _j;
+            return _X;
           },
           si2: function () {
             return tV;
@@ -5309,13 +5309,13 @@
             return e0;
           },
           vTt: function () {
-            return oa;
+            return or;
           },
           vbS: function () {
-            return _5;
+            return _4;
           },
           vpv: function () {
-            return _Q;
+            return _z;
           },
           vtS: function () {
             return eO;
@@ -5348,7 +5348,7 @@
             return oU;
           },
           xGv: function () {
-            return _w;
+            return _v;
           },
           xPJ: function () {
             return w;
@@ -5381,13 +5381,13 @@
             return tz;
           },
           yqN: function () {
-            return oc;
+            return oi;
           },
           ys_: function () {
             return ea;
           },
           z7k: function () {
-            return _$;
+            return _j;
           },
           zMe: function () {
             return nq.zM;
@@ -7843,13 +7843,12 @@
           nV.Z.Seconds.HOUR,
           nV.Z.Seconds.HOUR;
         let _L = 10,
-          _p = 26214400,
-          _h = 10485760,
-          _D = 524288e3,
-          _S = (e) => "||".concat(e, "||"),
-          _C = /^\|\|([\s\S]+?)\|\|/,
-          _P = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
-          _g = /^\d{17,19}$/;
+          _p = 10485760,
+          _h = 524288e3,
+          _D = (e) => "||".concat(e, "||"),
+          _S = /^\|\|([\s\S]+?)\|\|/,
+          _C = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+          _P = /^\d{17,19}$/;
         ((rX = ea || (ea = {})).MESSAGE = "MESSAGE"),
           (rX.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED"),
           (rX.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED"),
@@ -7880,27 +7879,27 @@
           (rz.GAMES_YOU_PLAY = "gamesYouPlay"),
           (rz.SEARCH = "search"),
           (rz.MISC = "misc");
-        let _U = 128,
-          _M = 1024,
-          _G = 2e3,
-          _m = 64e3,
-          _y = 96e3,
-          _b = "0000",
-          _v = "1",
+        let _g = 128,
+          _U = 1024,
+          _M = 2e3,
+          _G = 64e3,
+          _m = 96e3,
+          _y = "0000",
+          _b = "1",
+          _v = 1e4,
           _w = 1e4,
-          _B = 1e4,
-          _W = 50,
-          _Y = 150,
-          _H = 300,
-          _x = 10,
-          _K = 25,
-          _k = 240,
-          _V = 480,
-          _F = 650,
-          _X = "DEVICE_TOKEN",
-          _j = "DEVICE_VOIP_TOKEN",
-          _$ = "first_run_date_key",
-          _q = Object.freeze({
+          _B = 50,
+          _W = 150,
+          _Y = 300,
+          _H = 10,
+          _x = 25,
+          _K = 240,
+          _k = 480,
+          _V = 650,
+          _F = "DEVICE_TOKEN",
+          _X = "DEVICE_VOIP_TOKEN",
+          _j = "first_run_date_key",
+          _$ = Object.freeze({
             API_DOCS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/developers/docs/intro",
@@ -8021,7 +8020,7 @@
               "/safetycenter",
             ),
           }),
-          _J = Object.freeze({
+          _q = Object.freeze({
             DEVELOPER_PORTAL: "/developers",
             DEVELOPER_PORTAL_GUILD_ANALYTICS: (e) =>
               "/developers/servers/".concat(e),
@@ -8029,11 +8028,11 @@
             DEVELOPER_PORTAL_EDIT_PAYOUTS: (e) =>
               "/developers/teams/".concat(e, "/payout-settings"),
           }),
-          _z = 10,
-          _Q = 25,
-          _Z = /^FILTER_/,
-          _0 = /^ANSWER_/,
-          _1 = 32;
+          _J = 10,
+          _z = 25,
+          _Q = /^FILTER_/,
+          _Z = /^ANSWER_/,
+          _0 = 32;
         ((rQ = ec || (ec = {})).GUILD = "GUILD"),
           (rQ.FAVORITES = "FAVORITES"),
           (rQ.CHANNEL = "CHANNEL"),
@@ -8512,8 +8511,9 @@
           (r6.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "Premium Tutorial Coachmark"),
           (r6.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r6.COLLECTIBLES_SHOP = "Collectibles Shop"),
-          (r6.NITRO_HOME = "Nitro Home");
-        let _2 = "help_center_cta";
+          (r6.NITRO_HOME = "Nitro Home"),
+          (r6.TIERED_TENURE_BADGES_MODAL = "Tiered Tenure Badges Modal");
+        let _1 = "help_center_cta";
         ((r4 = eT || (eT = {})).HERO = "Hero"),
           (r4.BODY = "Body"),
           (r4.NAVIGATION = "Navigation"),
@@ -9062,7 +9062,7 @@
           ((r7 = ef || (ef = {})).PRIMARY = "primary"),
           (r7.SECONDARY = "secondary"),
           (r7.DISMISS = "dismiss");
-        let _3 = Object.freeze({
+        let _2 = Object.freeze({
           TEXT_PLAYGROUND: "Text Playground",
           DESIGN_SYSTEMS: "Design System",
           INTL_TESTING: "Intl Testing",
@@ -9362,7 +9362,7 @@
             "TOGGLE_REACTION_POPOUT"),
           (ai.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"),
           (ai.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND");
-        let _6 = 50;
+        let _3 = 50;
         ((ac = eM || (eM = {})).TWITCH = "twitch"),
           (ac.YOUTUBE = "youtube"),
           (ac.SKYPE = "skype"),
@@ -9411,15 +9411,15 @@
             GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
             AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
           });
-        let _4 = new Set(["facebook", "contacts"]),
-          _5 = new Set([
+        let _6 = new Set(["facebook", "contacts"]),
+          _4 = new Set([
             "spotify",
             "xbox",
             "playstation",
             "playstation-stg",
             "crunchyroll",
           ]),
-          _8 = Object.freeze({
+          _5 = Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
               .concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -9427,15 +9427,15 @@
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
-          _7 = 10070709,
-          _9 = [
+          _8 = 10070709,
+          _7 = [
             1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570,
             15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530,
             11342935, 12745742, 11027200, 10038562, 9936031, 5533306,
           ],
-          oe = (0, nK._i)(nB.Z.BRAND_500);
-        nw()(null != oe, "Brand color could not be parsed");
-        let ot = oe;
+          _9 = (0, nK._i)(nB.Z.BRAND_500);
+        nw()(null != _9, "Brand color could not be parsed");
+        let oe = _9;
         ((au = eb || (eb = {})).ROLE = "ROLE"),
           (au.MEMBER = "MEMBER"),
           ((aR = ev || (ev = {})).VOICE_LEGACY_SUBSYSTEM =
@@ -9472,15 +9472,15 @@
           ((aN = eW || (eW = {})).EMPTY = "EMPTY"),
           (aN.FILTER = "FILTER"),
           (aN.FILTER_ALL = "FILTER_ALL");
-        let or = "YYYY-MM-DD",
-          oa = "PrivateChannelRecipientsInvitePopout";
+        let ot = "YYYY-MM-DD",
+          or = "PrivateChannelRecipientsInvitePopout";
         ((ad = eY || (eY = {}))[(ad.NONE = 0)] = "NONE"),
           (ad[(ad.TIER_1 = 1)] = "TIER_1"),
           (ad[(ad.TIER_2 = 2)] = "TIER_2"),
           (ad[(ad.TIER_3 = 3)] = "TIER_3");
-        let on = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
-          o_ = 7,
-          oo = 0;
+        let oa = Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
+          on = 7,
+          o_ = 0;
         ((af = eH || (eH = {}))[(af.DEFAULT = 0)] = "DEFAULT"),
           (af[(af.GIFT = 1)] = "GIFT"),
           (af[(af.SALE = 2)] = "SALE"),
@@ -9489,7 +9489,7 @@
           (af[(af.MOBILE = 5)] = "MOBILE"),
           (af[(af.PREMIUM_TIER_0 = 6)] = "PREMIUM_TIER_0"),
           (af[(af.MOBILE_PREMIUM_TIER_2 = 7)] = "MOBILE_PREMIUM_TIER_2");
-        let oE = Object.freeze({
+        let oo = Object.freeze({
           fonts: [
             {
               src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
@@ -9506,7 +9506,7 @@
           (aO[(aO.BILLING_RETRY = 7)] = "BILLING_RETRY"),
           (aO[(aO.PAUSED = 8)] = "PAUSED"),
           (aO[(aO.PAUSE_PENDING = 9)] = "PAUSE_PENDING");
-        let oi = {
+        let oE = {
           ALL_PAUSE: new Set([9, 8]),
           ALL_PAUSEABLE: new Set([1, 8]),
           INACTIVE: new Set([0, 4, 6, 7]),
@@ -9526,7 +9526,7 @@
           (ap.STICKER = "STICKER"),
           (ap.CHOICE_LOADING = "CHOICE_LOADING"),
           (ap.LABEL = "LABEL");
-        let oc = Object.freeze({
+        let oi = Object.freeze({
           FONT_SIZE_DEFAULT: 16,
           FONT_SIZE_MIN: 12,
           FONT_SIZE_MAX: 24,
@@ -10448,6 +10448,7 @@
             "message_popout_menu_opened_desktop"),
           (aS.VOICE_CODEC_DETECTED = "voice_codec_detected"),
           (aS.VOICE_SETTINGS_CHANGED = "voice_settings_changed"),
+          (aS.SYSTEM_CAMERA_SETTINGS_OPENED = "system_camera_settings_opened"),
           (aS.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed"),
           (aS.CLIP_SAVED = "clip_saved"),
           (aS.CLIP_SAVE_FAILURE = "clip_save_failure"),
@@ -11160,7 +11161,7 @@
           (aU.SUMMARIES = "SUMMARIES"),
           (aU.SUMMARIES_ENABLED = "SUMMARIES_ENABLED"),
           (aU.CLAN_ADMIN_UPSELL = "CLAN_ADMIN_UPSELL");
-        let os = Object.freeze({
+        let oc = Object.freeze({
             STORAGE_MANIFEST: (e, t) =>
               "".concat(e, "/storage/").concat(t, "/MANIFEST"),
             INSTALL_DIR: (e) => "".concat(e, "/content"),
@@ -11174,7 +11175,7 @@
               linux: "linux",
             },
           }),
-          ol = 864e5;
+          os = 864e5;
         ((aM = ez || (ez = {})).NORMAL = "normal"),
           (aM.MINIMUM = "minimum"),
           (aM.NO_CHAT = "no-chat"),
@@ -11192,7 +11193,7 @@
           (am.RTC_DEBUG = "RTC_DEBUG"),
           (am.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS"),
           (am.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP");
-        let oI = Object.freeze({
+        let ol = Object.freeze({
           ALL: null,
           GUILD_UPDATE: 1,
           CHANNEL_CREATE: 10,
@@ -11436,7 +11437,7 @@
           (aB.SCHEDULED_END_TIME = "scheduled_end_time"),
           (aB.IS_CANCELED = "is_canceled"),
           (aB.LINKED_LOBBY = "linked_lobby");
-        let ou = 50;
+        let oI = 50;
         ((aW = e4 || (e4 = {})).AGREEMENTS = "AGREEMENTS"),
           (aW.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA"),
           (aW.REQUIRE_VERIFIED_EMAIL = "REQUIRE_VERIFIED_EMAIL"),
@@ -11458,7 +11459,7 @@
           (aY.EMAIL = "email"),
           (aY.REVERIFY_PHONE = "reverify_phone"),
           (aY.REVERIFY_EMAIL = "reverify_email");
-        let oR = 512;
+        let ou = 512;
         ((aH = e7 || (e7 = {}))[(aH.PRIMARY = 0)] = "PRIMARY"),
           (aH[(aH.SECONDARY = 2)] = "SECONDARY"),
           (aH[(aH.WHEEL = 4)] = "WHEEL"),
@@ -11506,7 +11507,7 @@
           (ak.EMBED_IFRAME = "EMBED_IFRAME"),
           ((aV = tr || (tr = {})).GIF = "GIF"),
           (aV.STICKER = "STICKER");
-        let oA = Object.freeze({
+        let oR = Object.freeze({
           GIF: { type: "GIF", command: "gif", title: "Gif", commandId: "-16" },
           TENOR: {
             type: "GIF",
@@ -11728,14 +11729,15 @@
             twitch: "Twitch",
             epic: "Epic",
           });
-        let oT = 6016,
-          oN = 3384;
+        let oA = 6016,
+          oT = 3384;
         ((aJ = tc || (tc = {})).USAGE_STATISTICS = "usage_statistics"),
           (aJ.PERSONALIZATION = "personalization"),
           ((az = ts || (ts = {}))[(az.MUTUAL_FRIENDS = 2)] = "MUTUAL_FRIENDS"),
           (az[(az.MUTUAL_GUILDS = 4)] = "MUTUAL_GUILDS"),
           (az[(az.NO_RELATION = 8)] = "NO_RELATION");
-        let od = 14;
+        let oN = 14,
+          od = 6;
         ((aQ = tl || (tl = {}))[(aQ.NONE = 0)] = "NONE"),
           (aQ[(aQ.FIND_BY_PHONE = 2)] = "FIND_BY_PHONE"),
           (aQ[(aQ.FIND_BY_EMAIL = 4)] = "FIND_BY_EMAIL");
@@ -12326,22 +12328,22 @@
         "use strict";
         r.d(t, {
           $7: function () {
-            return o;
+            return n;
           },
           Fs: function () {
-            return ec;
+            return F;
           },
           O4: function () {
-            return ei;
+            return V;
           },
           Rj: function () {
-            return es;
+            return X;
           },
           fM: function () {
-            return P;
+            return d;
           },
           ih: function () {
-            return eE;
+            return k;
           },
         }),
           r(47120);
@@ -12384,225 +12386,175 @@
           Y,
           H,
           x,
-          K,
-          k,
-          V,
-          F,
-          X,
-          j,
-          $,
-          q,
-          J,
-          z,
-          Q,
-          Z,
-          ee,
-          et,
-          er,
-          ea,
-          en,
-          e_,
-          eo = r(376345);
-        ((y = a || (a = {})).CHANNELS = "CHANNELS"),
-          (y.MEMBERS = "MEMBERS"),
-          ((b = n || (n = {})).CHAT = "CHAT"),
-          (b.FRIENDS = "FRIENDS"),
-          (b.QUICKSWITCHER = "QUICKSWITCHER"),
-          (b.NOTIFICATIONS = "NOTIFICATIONS"),
-          (b.MENTIONS_AND_QUICKSWITCHER = "MENTIONS_AND_QUICKSWITCHER"),
-          (b.USER_SETTINGS = "USER_SETTINGS"),
-          (b.STAGE_DISCOVERY = "STAGE_DISCOVERY"),
-          (b.SERVER_DISCOVERY = "SERVER_DISCOVERY"),
-          (b.PENDING_INCOMING_FRIEND_REQUESTS =
-            "PENDING_INCOMING_FRIEND_REQUESTS"),
-          ((v = _ || (_ = {})).BACK_BUTTON = "Back Button"),
-          (v.SWIPE = "Swipe"),
-          (v.MUTUAL_GUILD_ITEM = "Mutual Guild Item"),
-          (v.MEMBER_LIST_ICON = "Member List Icon"),
-          (v.CHANNEL_DRAWER_ICON = "Channel Drawer Icon"),
-          (v.CHANNEL_TITLE = "Channel Title"),
-          (v.PREMIUM_GUILD_SUBSCRIPTION_GUILD_LIST_UPSELL =
+          K = r(376345);
+        ((h = a || (a = {})).BACK_BUTTON = "Back Button"),
+          (h.SWIPE = "Swipe"),
+          (h.MUTUAL_GUILD_ITEM = "Mutual Guild Item"),
+          (h.MEMBER_LIST_ICON = "Member List Icon"),
+          (h.CHANNEL_DRAWER_ICON = "Channel Drawer Icon"),
+          (h.CHANNEL_TITLE = "Channel Title"),
+          (h.PREMIUM_GUILD_SUBSCRIPTION_GUILD_LIST_UPSELL =
             "Premium Guild Subscription Guild List Upsell"),
-          ((w = o || (o = {})).INACTIVE = "inactive"),
-          (w.BACKGROUND = "background"),
-          (w.ACTIVE = "active"),
-          ((B = E || (E = {})).WELCOME = "WELCOME"),
-          (B.LOGIN = "LOGIN"),
-          (B.REGISTER = "REGISTER"),
-          (B.REGISTER_IDENTITY = "REGISTER_IDENTITY"),
-          (B.REGISTER_DISPLAY_NAME = "REGISTER_DISPLAY_NAME"),
-          (B.REGISTER_ACCOUNT_INFORMATION = "REGISTER_ACCOUNT_INFORMATION"),
-          (B.VERIFY_PHONE = "VERIFY_PHONE"),
-          (B.MFA = "MFA"),
-          (B.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED =
+          ((D = n || (n = {})).INACTIVE = "inactive"),
+          (D.BACKGROUND = "background"),
+          (D.ACTIVE = "active"),
+          ((S = _ || (_ = {})).WELCOME = "WELCOME"),
+          (S.LOGIN = "LOGIN"),
+          (S.REGISTER = "REGISTER"),
+          (S.REGISTER_IDENTITY = "REGISTER_IDENTITY"),
+          (S.REGISTER_DISPLAY_NAME = "REGISTER_DISPLAY_NAME"),
+          (S.REGISTER_ACCOUNT_INFORMATION = "REGISTER_ACCOUNT_INFORMATION"),
+          (S.VERIFY_PHONE = "VERIFY_PHONE"),
+          (S.MFA = "MFA"),
+          (S.ACCOUNT_DISABLED_OR_DELETION_SCHEDULED =
             "ACCOUNT_DISABLED_OR_DELETION_SCHEDULED"),
-          (B.AGE_GATE_UNDERAGE = "AGE_GATE_UNDERAGE"),
-          (B.AGE_GATE = "AGE_GATE"),
-          (B.COUNTRY_SELECT = "COUNTRY_SELECT"),
-          (B.EXTERNAL_LINK = "EXTERNAL_LINK"),
-          ((W = i || (i = {})).DEFAULT = "default"),
-          (W.DARK = "dark"),
-          (W.LIGHT = "light"),
-          ((Y = c || (c = {})).CAMERA = "camera"),
-          (Y.PHOTO = "photo"),
-          ((H = s || (s = {}))[(H.BLURRED_NO_QUERY = 0)] = "BLURRED_NO_QUERY"),
-          (H[(H.BLURRED_WITH_QUERY = 1)] = "BLURRED_WITH_QUERY"),
-          (H[(H.FOCUSED_NO_QUERY = 2)] = "FOCUSED_NO_QUERY"),
-          (H[(H.FOCUSED_WITH_QUERY = 3)] = "FOCUSED_WITH_QUERY"),
-          ((x = l || (l = {}))[(x.GENERAL = 0)] = "GENERAL"),
-          (x[(x.TEXT = 1)] = "TEXT"),
-          (x[(x.VOICE = 2)] = "VOICE"),
-          ((K = I || (I = {})).LANDING = "LANDING"),
-          (K.NAME = "NAME"),
-          ((k = u || (u = {}))[(k.SAFARI = 0)] = "SAFARI"),
-          (k[(k.IN_APP = 1)] = "IN_APP"),
-          (k[(k.CHROME = 2)] = "CHROME"),
-          ((V = R || (R = {})).SOLVED = "solved"),
-          (V.EXPIRED = "expired"),
-          ((A || (A = {})).MENTIONS = "mentions"),
-          ((F = T || (T = {})).OVERVIEW = "OVERVIEW"),
-          (F.RESEND_EMAIL = "RESEND_EMAIL"),
-          (F.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
-          (F.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
-          (F.ENTER_EMAIL = "ENTER_EMAIL"),
-          (F.ADD_PHONE = "ADD_PHONE"),
-          (F.VERIFY_PHONE = "VERIFY_PHONE"),
-          (F.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
-          (F.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
-          (F.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
-          (F.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
-          (F.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
-          ((X = N || (N = {})).VOICE = "VOICE"),
-          (X.VIDEO = "VIDEO"),
-          (X.STREAM = "STREAM"),
-          ((j = d || (d = {})).LANDING = "LANDING"),
-          (j.SYNCING = "SYNCING"),
-          (j.RESULTS = "RESULTS"),
-          (j.NO_RESULTS = "NO_RESULTS"),
-          (j.ADD_PHONE = "ADD_PHONE"),
-          (j.VERIFY_PHONE = "VERIFY_PHONE"),
-          ((f || (f = {})).LANDING = "LANDING"),
-          ((O || (O = {})).ADVANCED = "ADVANCED"),
-          (($ = L || (L = {})).USER = "USER"),
-          ($.ACTION = "ACTION"),
-          ((q = p || (p = {})).OVERVIEW = "OVERVIEW"),
-          (q.ADD_OVERRIDE = "ADD_OVERRIDE"),
-          (q.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
-          ((J = h || (h = {})).INVITE = "invite"),
-          (J.GUILD_TEMPLATE = "guild-template"),
-          (J.CHANNEL = "channel"),
-          (J.GIFT_CODE = "gift-code"),
-          (J.MESSAGE = "message"),
-          (J.OAUTH2_AUTHORIZE = "oauth2-authorize"),
-          (J.APP_DIRECTORY_PROFILE = "app-directory-profile"),
-          (J.PROMOTIONS = "promotions"),
-          (J.FEATURE_PROMO_URL = "promo-url"),
-          (J.NONE = "none"),
-          (J.REMOTE_AUTH = "remote-auth"),
-          (J.USER_PROFILE = "user-profile"),
-          (J.BUILD_OVERRIDE = "build-override"),
-          (J.CONTACT_SYNC = "contact-sync"),
-          (J.ADD_FRIENDS = "add-friends"),
-          (J.COMPOSE_MESSAGE = "compose-message"),
-          (J.GUILD_EVENT_DETAILS = "guild-event-details"),
-          (J.FRIENDS = "friends"),
-          (J.EDIT_PROFILE = "edit-profile"),
-          (J.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
-          (J.USER_CONNECTIONS_CALLBACK = "user-connections-callback"),
-          (J.VOICE_CHANNEL = "voice-channel"),
-          (J.GUILD_HOME = "guild-home"),
-          (J.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
-          (J.SESSION_MANAGEMENT = "session-management"),
-          (J.CONNECTIONS = "connections"),
-          (J.GUILD_SETTINGS = "guild-settings"),
-          (J.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
-          (J.ACTIVATE_DEVICE = "activate-device"),
-          (J.FAMILY_CENTER = "family-center"),
-          (J.SHARE = "share"),
-          (J.CREATE_VOICE_INVITE = "create_voice_invite"),
-          (J.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
-          (J.ACCOUNT_STANDING = "account-standing"),
-          (J.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
-          (J.SHOP = "shop"),
-          (J.AUTHORIZED_APPS = "authorized-apps"),
-          (J.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
-          (J.ICYMI = "icymi"),
-          (J.QUESTS = "quests"),
-          (J.GIFT = "gift"),
-          (J.NITRO_HOME = "store");
-        let eE = "CacheStoreLazy",
-          ei = "CacheStoreChannelsLazy",
-          ec = "CacheStore";
-        ((z = D || (D = {})).UPLOAD = "upload"),
-          (z.GLOBAL_EMOJI = "global-emoji"),
-          (z.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
-          (z.BADGE = "badge"),
-          (z.ANIMATED_EMOJI = "animated-emoji"),
-          (z.ANIMATED_AVATAR = "animated-avatar"),
-          (z.CUSTOM_PROFILES = "custom-profiles"),
-          (z.GLOBAL_STICKER = "global-sticker"),
-          (z.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
-          (z.LONGER_MESSAGE = "longer-message"),
-          (z.GUILD_CAP = "guild-cap"),
-          (z.ACTIVITIES = "activities"),
-          (z.APP_ICONS = "app-icons"),
-          (z.SOUNDBOARD = "soundboard"),
-          (z.CLIENT_THEMES = "client-themes"),
-          (z.FOR_LATER = "for-later"),
-          ((Q = S || (S = {})).UNKNOWN = "ESKERRORDOMAIN0"),
-          (Q.CLIENT_INVALID = "ESKERRORDOMAIN1"),
-          (Q.PAYMENT_CANCELED = "ESKERRORDOMAIN2"),
-          (Q.PAYMENT_INVALID = "ESKERRORDOMAIN3"),
-          (Q.PAYMENT_NOT_ALLOWED = "ESKERRORDOMAIN4"),
-          (Q.STORE_PRODUCT_NOT_AVAILABLE = "ESKERRORDOMAIN5"),
-          (Q.CLOUD_SERVICE_PERMISSION_DENIED = "ESKERRORDOMAIN6"),
-          (Q.CLOUD_SERVICE_NETWORK_CONNECTION_FAILED = "ESKERRORDOMAIN7"),
-          (Q.CLOUD_SERVICE_REVOKED = "ESKERRORDOMAIN8"),
-          (Q.PRIVACY_ACKNOWLEDGEMENT_REQUIRED = "ESKERRORDOMAIN9"),
-          (Q.UNAUTHORIZED_REQUEST_DATA = "ESKERRORDOMAIN10"),
-          (Q.INVALID_OFFER_IDENTIFIER = "ESKERRORDOMAIN11"),
-          (Q.INVALID_SIGNATURE = "ESKERRORDOMAIN12"),
-          (Q.MISSING_OFFER_PARAMS = "ESKERRORDOMAIN13"),
-          (Q.INVALID_OFFER_PRICE = "ESKERRORDOMAIN14"),
-          (Q.OVERLAY_CANCELLED = "ESKERRORDOMAIN15"),
-          (Q.OVERLAY_INVALID_CONFIGURATION = "ESKERRORDOMAIN16"),
-          (Q.OVERLAY_TIMEOUT = "ESKERRORDOMAIN17"),
-          (Q.INELIGIBLE_FOR_OFFER = "ESKERRORDOMAIN18"),
-          (Q.UNSUPPORTED_PLATFORM = "ESKERRORDOMAIN19"),
-          ((Z = C || (C = {})).LOGOUT_TIMESTAMP_KEY = "logout_timestamp_key"),
-          (Z.ACKNOWLEDGED_TOOLTIPS_KEY = "acknowledged_tooltips_key"),
-          (Z.KRISP_ONBOARD = "krisp_onboard"),
-          (Z.SCREENSHARE_ONBOARD = "screenshare_onboard"),
-          ((ee = P || (P = {})).NONE = "none"),
-          (ee.SLIDE_UP = "slide-up"),
-          (ee.SLIDE_IN = "slide-in"),
-          (ee.SLIDE_OUT = "slide-out"),
-          (ee.SLIDE_IN_OUT = "slide-in-out"),
-          (ee.SLIDE_IN_OUT_REVERSE = "slide-in-out-reverse"),
-          (ee.FADE = "fade"),
+          (S.AGE_GATE_UNDERAGE = "AGE_GATE_UNDERAGE"),
+          (S.AGE_GATE = "AGE_GATE"),
+          (S.COUNTRY_SELECT = "COUNTRY_SELECT"),
+          (S.EXTERNAL_LINK = "EXTERNAL_LINK"),
+          ((C = o || (o = {})).DEFAULT = "default"),
+          (C.DARK = "dark"),
+          (C.LIGHT = "light"),
+          ((P = E || (E = {})).LANDING = "LANDING"),
+          (P.NAME = "NAME"),
+          ((g = i || (i = {}))[(g.SAFARI = 0)] = "SAFARI"),
+          (g[(g.IN_APP = 1)] = "IN_APP"),
+          (g[(g.CHROME = 2)] = "CHROME"),
+          ((U = c || (c = {})).SOLVED = "solved"),
+          (U.EXPIRED = "expired"),
+          ((M = s || (s = {})).OVERVIEW = "OVERVIEW"),
+          (M.RESEND_EMAIL = "RESEND_EMAIL"),
+          (M.CONFIRM_EMAIL_CHANGE_START = "CONFIRM_EMAIL_CHANGE_START"),
+          (M.CONFIRM_EMAIL_CHANGE_CODE = "CONFIRM_EMAIL_CHANGE_CODE"),
+          (M.ENTER_EMAIL = "ENTER_EMAIL"),
+          (M.ADD_PHONE = "ADD_PHONE"),
+          (M.VERIFY_PHONE = "VERIFY_PHONE"),
+          (M.VERIFY_PASSWORD = "VERIFY_PASSWORD"),
+          (M.PHONE_THEN_EMAIL_INTERSTITIAL = "PHONE_THEN_EMAIL_INTERSTITIAL"),
+          (M.CHANGE_EMAIL_COMPLETE = "CHANGE_EMAIL_COMPLETE"),
+          (M.CHANGE_EMAIL_COLLECT_REASONS = "CHANGE_EMAIL_COLLECT_REASONS"),
+          (M.CHANGE_EMAIL_WARNING = "CHANGE_EMAIL_WARNING"),
+          ((l || (l = {})).ADVANCED = "ADVANCED"),
+          ((G = I || (I = {})).USER = "USER"),
+          (G.ACTION = "ACTION"),
+          ((m = u || (u = {})).OVERVIEW = "OVERVIEW"),
+          (m.ADD_OVERRIDE = "ADD_OVERRIDE"),
+          (m.CHANNEL_OVERRIDE = "CHANNEL_OVERRIDE"),
+          ((y = R || (R = {})).INVITE = "invite"),
+          (y.GUILD_TEMPLATE = "guild-template"),
+          (y.CHANNEL = "channel"),
+          (y.GIFT_CODE = "gift-code"),
+          (y.MESSAGE = "message"),
+          (y.OAUTH2_AUTHORIZE = "oauth2-authorize"),
+          (y.APP_DIRECTORY_PROFILE = "app-directory-profile"),
+          (y.PROMOTIONS = "promotions"),
+          (y.FEATURE_PROMO_URL = "promo-url"),
+          (y.NONE = "none"),
+          (y.REMOTE_AUTH = "remote-auth"),
+          (y.USER_PROFILE = "user-profile"),
+          (y.BUILD_OVERRIDE = "build-override"),
+          (y.CONTACT_SYNC = "contact-sync"),
+          (y.ADD_FRIENDS = "add-friends"),
+          (y.COMPOSE_MESSAGE = "compose-message"),
+          (y.GUILD_EVENT_DETAILS = "guild-event-details"),
+          (y.FRIENDS = "friends"),
+          (y.EDIT_PROFILE = "edit-profile"),
+          (y.MOBILE_WEB_HANDOFF = "mobile-web-handoff"),
+          (y.USER_CONNECTIONS_CALLBACK = "user-connections-callback"),
+          (y.VOICE_CHANNEL = "voice-channel"),
+          (y.GUILD_HOME = "guild-home"),
+          (y.USER_CONNECTIONS_LINK_CALLBACK = "user-connections-link-callback"),
+          (y.SESSION_MANAGEMENT = "session-management"),
+          (y.CONNECTIONS = "connections"),
+          (y.GUILD_SETTINGS = "guild-settings"),
+          (y.GUILD_SETTINGS_PICKER = "guild-settings-picker"),
+          (y.ACTIVATE_DEVICE = "activate-device"),
+          (y.FAMILY_CENTER = "family-center"),
+          (y.SHARE = "share"),
+          (y.CREATE_VOICE_INVITE = "create_voice_invite"),
+          (y.SEND_VOICE_HANGOUT_WAVE = "send_voice_hangout_wave"),
+          (y.ACCOUNT_STANDING = "account-standing"),
+          (y.MOBILE_NATIVE_UPDATE = "mobile-native-update"),
+          (y.SHOP = "shop"),
+          (y.AUTHORIZED_APPS = "authorized-apps"),
+          (y.DAVE_PROTOCOL_VERIFICATION = "dave-protocol-verification"),
+          (y.ICYMI = "icymi"),
+          (y.QUESTS = "quests"),
+          (y.GIFT = "gift"),
+          (y.NITRO_HOME = "store");
+        let k = "CacheStoreLazy",
+          V = "CacheStoreChannelsLazy",
+          F = "CacheStore";
+        ((b = A || (A = {})).UPLOAD = "upload"),
+          (b.GLOBAL_EMOJI = "global-emoji"),
+          (b.EMOJI_AUTOCOMPLETE = "emoji-autocomplete"),
+          (b.BADGE = "badge"),
+          (b.ANIMATED_EMOJI = "animated-emoji"),
+          (b.ANIMATED_AVATAR = "animated-avatar"),
+          (b.CUSTOM_PROFILES = "custom-profiles"),
+          (b.GLOBAL_STICKER = "global-sticker"),
+          (b.PREMIUM_GUILD_PROFILE = "premium-guild-profile"),
+          (b.LONGER_MESSAGE = "longer-message"),
+          (b.GUILD_CAP = "guild-cap"),
+          (b.ACTIVITIES = "activities"),
+          (b.APP_ICONS = "app-icons"),
+          (b.SOUNDBOARD = "soundboard"),
+          (b.CLIENT_THEMES = "client-themes"),
+          (b.FOR_LATER = "for-later"),
+          ((v = T || (T = {})).UNKNOWN = "ESKERRORDOMAIN0"),
+          (v.CLIENT_INVALID = "ESKERRORDOMAIN1"),
+          (v.PAYMENT_CANCELED = "ESKERRORDOMAIN2"),
+          (v.PAYMENT_INVALID = "ESKERRORDOMAIN3"),
+          (v.PAYMENT_NOT_ALLOWED = "ESKERRORDOMAIN4"),
+          (v.STORE_PRODUCT_NOT_AVAILABLE = "ESKERRORDOMAIN5"),
+          (v.CLOUD_SERVICE_PERMISSION_DENIED = "ESKERRORDOMAIN6"),
+          (v.CLOUD_SERVICE_NETWORK_CONNECTION_FAILED = "ESKERRORDOMAIN7"),
+          (v.CLOUD_SERVICE_REVOKED = "ESKERRORDOMAIN8"),
+          (v.PRIVACY_ACKNOWLEDGEMENT_REQUIRED = "ESKERRORDOMAIN9"),
+          (v.UNAUTHORIZED_REQUEST_DATA = "ESKERRORDOMAIN10"),
+          (v.INVALID_OFFER_IDENTIFIER = "ESKERRORDOMAIN11"),
+          (v.INVALID_SIGNATURE = "ESKERRORDOMAIN12"),
+          (v.MISSING_OFFER_PARAMS = "ESKERRORDOMAIN13"),
+          (v.INVALID_OFFER_PRICE = "ESKERRORDOMAIN14"),
+          (v.OVERLAY_CANCELLED = "ESKERRORDOMAIN15"),
+          (v.OVERLAY_INVALID_CONFIGURATION = "ESKERRORDOMAIN16"),
+          (v.OVERLAY_TIMEOUT = "ESKERRORDOMAIN17"),
+          (v.INELIGIBLE_FOR_OFFER = "ESKERRORDOMAIN18"),
+          (v.UNSUPPORTED_PLATFORM = "ESKERRORDOMAIN19"),
+          ((w = N || (N = {})).LOGOUT_TIMESTAMP_KEY = "logout_timestamp_key"),
+          (w.ACKNOWLEDGED_TOOLTIPS_KEY = "acknowledged_tooltips_key"),
+          (w.KRISP_ONBOARD = "krisp_onboard"),
+          (w.SCREENSHARE_ONBOARD = "screenshare_onboard"),
+          ((B = d || (d = {})).NONE = "none"),
+          (B.SLIDE_UP = "slide-up"),
+          (B.SLIDE_IN = "slide-in"),
+          (B.SLIDE_OUT = "slide-out"),
+          (B.SLIDE_IN_OUT = "slide-in-out"),
+          (B.SLIDE_IN_OUT_REVERSE = "slide-in-out-reverse"),
+          (B.FADE = "fade"),
           Object.freeze({ START: { x: 0, y: 0 }, END: { x: 1, y: 0 } }),
           Object.freeze({ START: { x: 0, y: 0 }, END: { x: 0, y: 1 } });
-        let es = {
+        let X = {
           PREMIUM_TIER_0: [
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_0_BLUE_FOR_GRADIENTS,
           ],
           PREMIUM_TIER_1: [
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_1_DARK_BLUE_FOR_GRADIENTS,
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_1_BLUE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_1_DARK_BLUE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_1_BLUE_FOR_GRADIENTS,
           ],
           PREMIUM_TIER_2: [
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
           ],
           PREMIUM_TIER_2_TRI_COLOR: [
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
-            eo.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2,
+            K.ZP.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS,
           ],
           PREMIUM_GUILD: [
-            eo.ZP.unsafe_rawColors.GUILD_BOOSTING_BLUE_FOR_GRADIENTS,
-            eo.ZP.unsafe_rawColors.GUILD_BOOSTING_PURPLE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.GUILD_BOOSTING_BLUE_FOR_GRADIENTS,
+            K.ZP.unsafe_rawColors.GUILD_BOOSTING_PURPLE_FOR_GRADIENTS,
           ],
           PREMIUM_TIER_0_PERK_CARD: [
             "#3736BB",
@@ -12612,24 +12564,22 @@
             "#DF90AF",
           ],
         };
-        ((et = g || (g = {}))[(et.HIGH = 0.6)] = "HIGH"),
-          (et[(et.LOW = 0.3)] = "LOW"),
-          ((er = U || (U = {}))[(er.IMAGE = 0)] = "IMAGE"),
-          (er[(er.GIF = 1)] = "GIF"),
-          (er[(er.VIDEO = 2)] = "VIDEO"),
-          ((ea = M || (M = {})).OVERVIEW = "overview"),
-          (ea.GIF_RESULTS = "gif_results"),
-          ((en = G || (G = {})).GUILD_TOOLTIP = "guild_tooltip"),
-          (en.GIF_PICKER_TOOLTIP = "gif_picker_tooltip"),
-          (en.GIF_PICKER_TOOLTIP_SPARKLE = "gif_picker_tooltip_sparkle"),
-          (en.STICKER_PICKER_SHOP_VIEW_ALL = "sticker_picker_shop_view_all"),
-          (en.SCREENSHARE_ONBOARD_SPARKLES = "screenshare_onboard_sparkles"),
-          (en.SCREENSHARE_SWIPE_UP_CONTROLS = "screenshare_swipe_up_controls"),
-          (en.STAGE_DISCOVERY_TOOLTIP = "stage_discovery_tooltip"),
-          (en.HUB_DISCOVERY_TOOLTIP = "hub_discovery_tooltip"),
-          ((e_ = m || (m = {}))[(e_.ROW = 0)] = "ROW"),
-          (e_[(e_.HEADER = 1)] = "HEADER"),
-          (e_[(e_.FOOTER = 2)] = "FOOTER");
+        ((W = f || (f = {}))[(W.HIGH = 0.6)] = "HIGH"),
+          (W[(W.LOW = 0.3)] = "LOW"),
+          ((Y = O || (O = {}))[(Y.IMAGE = 0)] = "IMAGE"),
+          (Y[(Y.GIF = 1)] = "GIF"),
+          (Y[(Y.VIDEO = 2)] = "VIDEO"),
+          ((H = L || (L = {})).GUILD_TOOLTIP = "guild_tooltip"),
+          (H.GIF_PICKER_TOOLTIP = "gif_picker_tooltip"),
+          (H.GIF_PICKER_TOOLTIP_SPARKLE = "gif_picker_tooltip_sparkle"),
+          (H.STICKER_PICKER_SHOP_VIEW_ALL = "sticker_picker_shop_view_all"),
+          (H.SCREENSHARE_ONBOARD_SPARKLES = "screenshare_onboard_sparkles"),
+          (H.SCREENSHARE_SWIPE_UP_CONTROLS = "screenshare_swipe_up_controls"),
+          (H.STAGE_DISCOVERY_TOOLTIP = "stage_discovery_tooltip"),
+          (H.HUB_DISCOVERY_TOOLTIP = "hub_discovery_tooltip"),
+          ((x = p || (p = {}))[(x.ROW = 0)] = "ROW"),
+          (x[(x.HEADER = 1)] = "HEADER"),
+          (x[(x.FOOTER = 2)] = "FOOTER");
       },
       272242: function (e, t, r) {
         "use strict";
@@ -12721,7 +12671,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-01-16-d3fc2dbc56dcc63fedd198a18ac8527cba6a6fc7-discord_web",
+              "2025-01-17-38aca73fac288c8043e272f4fbc86786a67286cd-discord_web",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12790,8 +12740,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "359691"), "359691"));
-          o.YA("builtAt", String("1737016373439"));
+            o.YA("buildNumber", ((e = "360320"), "360320"));
+          o.YA("builtAt", String("1737138779877"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54711,4 +54661,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.9a80454c02c9b49d8d48.js.map
+//# sourceMappingURL=sentry.f52f14ab9bfb0e7f5504.js.map
