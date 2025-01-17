@@ -26012,6 +26012,22 @@ div.popoutCloseButton_d523a2:hover {
   bottom: -16px;
   right: -15px;
 }
+.tieredTenureBadgeTooltip_b64375 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px 4px;
+}
+.tieredTenureBadgeTooltipDescription_b64375 {
+  margin-top: var(--spacing-4);
+}
+.tieredTenureBadgeTooltipWordmarkContainer_b64375 {
+  margin-top: 8px;
+}
+.tieredTenureBadgeTooltipWordmark_b64375 {
+  color: var(--text-muted);
+}
 :where(.contentImage_dc67b6) {
   border-radius: var(--radius-xs);
   -o-object-fit: contain;
@@ -57286,4 +57302,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ac1b36a412dabb75c59c.css.map*/
+/*# sourceMappingURL=12633.da1de034b366a0cc151e.css.map*/
