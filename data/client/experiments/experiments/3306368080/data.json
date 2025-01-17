@@ -10,7 +10,10 @@
       "Treatment 2: Enables ICYMI - (ml) sorting will be controlled by backend exp",
       "Treatment 3: Enables ICYMI - (ml) sorting will be controlled by backend exp",
       "Treatment 4: Enables ICYMI - (ml) sorting will be controlled by backend exp",
-      "Treatment 5: Enables ICYMI - (ml) sorting will be controlled by backend exp"
+      "Treatment 5: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 6: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 7: Enables ICYMI - (ml) sorting will be controlled by backend exp",
+      "Treatment 8: Enables ICYMI - (ml) sorting will be controlled by backend exp"
     ],
     "hash": 3306368080,
     "buckets": [
@@ -20,7 +23,10 @@
       2,
       3,
       4,
-      5
+      5,
+      6,
+      7,
+      8
     ],
     "holdout": {},
     "aa_mode": false,

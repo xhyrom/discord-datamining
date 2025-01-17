@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_friend_tiers_ui",
+    "label": "Slayer Friend Tiers UI",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable game friend features in app"
+    ],
+    "hash": 3048471262,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
