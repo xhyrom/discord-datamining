@@ -6656,8 +6656,6 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   position: relative;
   filter: blur(0);
   background-color: var(--__current--spoiler-background-color);
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .spoilerContainer_aa9639.embedContainer_aa9639 {
   border-radius: var(--radius-xs);
@@ -57302,4 +57300,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ddfb0062363d278623b8.css.map*/
+/*# sourceMappingURL=12633.dd5c40b1c5c07a1fa787.css.map*/
