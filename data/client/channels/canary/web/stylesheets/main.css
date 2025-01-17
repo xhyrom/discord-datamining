@@ -1018,7 +1018,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 :where(.visual-refresh) .button_dd4f85 {
   border-radius: 8px;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   border: 1px solid var(--opacity-white-8);
 }
 :where(.visual-refresh).theme-dark .lookLink_dd4f85.colorPrimary_dd4f85,
@@ -1446,15 +1446,11 @@ html.decorate-links .lowSaturationUnderline_c7819f {
   pointer-events: none;
   contain: paint;
 }
-.visual-refresh .wrapper_c5f96a {
-  width: 44px;
-  height: 44px;
-}
 .wrapper_c5f96a {
   box-sizing: border-box;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: var(--guildbar-avatar-size);
+  height: var(--guildbar-avatar-size);
   cursor: pointer;
 }
 .wrapperSimple_c5f96a {
@@ -18892,7 +18888,7 @@ h3.improved_f017d0:after {
   margin: 0 0 8px;
   display: flex;
   justify-content: center;
-  width: var(--custom-list-items-list-item-width);
+  width: var(--custom-guild-list-width);
 }
 .listItemWrapper_bba834:active {
   transform: translatey(1px) translatez(0);
@@ -31543,18 +31539,10 @@ img.thumbnail_c64476 {
 .filterLabel_d83b4d {
   color: var(--header-primary);
 }
-:root {
-  --custom-icon-size: 48px;
-}
-.visual-refresh {
-  --custom-icon-size: 44px;
-}
 .wrapper_f90abb {
   display: flex;
-  width: 48px;
-  width: var(--custom-icon-size);
-  height: 48px;
-  height: var(--custom-icon-size);
+  width: var(--guildbar-avatar-size);
+  height: var(--guildbar-avatar-size);
   align-items: center;
   justify-content: center;
   transition:
@@ -31562,10 +31550,8 @@ img.thumbnail_c64476 {
     color.1s ease-out;
 }
 .childWrapper_f90abb {
-  width: 48px;
-  width: var(--custom-icon-size);
-  height: 48px;
-  height: var(--custom-icon-size);
+  width: var(--guildbar-avatar-size);
+  height: var(--guildbar-avatar-size);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31594,10 +31580,8 @@ img.thumbnail_c64476 {
 }
 .icon_f90abb {
   display: block;
-  width: 48px;
-  width: var(--custom-icon-size);
-  height: 48px;
-  height: var(--custom-icon-size);
+  width: var(--guildbar-avatar-size);
+  height: var(--guildbar-avatar-size);
   -o-object-fit: cover;
   object-fit: cover;
   pointer-events: none;
@@ -56247,11 +56231,14 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
+  --guildbar-avatar-size: 48px;
+  --guildbar-folder-size: 48px;
   --chat-resize-handle-width: 8px;
   --modal-horizontal-padding: 12px;
   --modal-vertical-padding: 16px;
 }
 .visual-refresh {
+  --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
 }
 html,
@@ -56654,14 +56641,8 @@ code {
 :root {
   --custom-guild-tooltip-icon-size: 20px;
   --custom-guild-tooltip-icon-size-v-2: 16px;
-  --custom-list-items-list-item-width: 72px;
   --custom-folder-item-animation-duration: 150ms;
-  --custom-folder-item-guild-icon-size: 48px;
   --custom-folder-item-guild-icon-margin: 8px;
-}
-.visual-refresh {
-  --custom-list-items-list-item-width: 76px;
-  --custom-folder-item-guild-icon-size: 52px;
 }
 :root {
   --custom-category-channel-space-before-category: 16px;
@@ -57275,15 +57256,18 @@ img[alt] {
   --custom-channel-header-height: 48px;
   --custom-member-list-width: 240px;
   --custom-chat-input-icon-button-size: 24px;
+  --custom-guild-list-width: 72px;
 }
 .visual-refresh {
-  --custom-list-items-list-item-width: 76px;
-  --custom-guild-list-width: 76px;
+  --custom-guild-list-padding: var(--space-16);
+  --custom-guild-list-width: calc(
+    var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+  );
   --custom-guild-sidebar-width: 268px;
   --custom-app-sidebar-target-width: calc(
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
-  --custom-rtc-account-height: 64px;
+  --custom-rtc-account-height: 44px;
   --custom-app-top-bar-height: 32px;
   --custom-channel-header-height: 56px;
   --custom-member-list-width: 269px;
@@ -57302,4 +57286,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.2d8e771e83933177f4c4.css.map*/
+/*# sourceMappingURL=12633.ac1b36a412dabb75c59c.css.map*/
