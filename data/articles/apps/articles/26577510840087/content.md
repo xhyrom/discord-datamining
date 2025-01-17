@@ -33,10 +33,10 @@
   the chat, like moderate the chat, edit an image, provide user support, or
   manage tasks. Others offer
   <a
-    href="https://support-apps.discord.com/hc/articles/26501778762647"
+    href="https://support-apps.discord.com/hc/sections/26498424335895"
     target="_blank"
     rel="noopener noreferrer"
-    ><strong>Activities</strong></a
+    >Activities</a
   >, which are interactive experiences—such as games, quizzes, or collaborative
   tools like whiteboards—that open in a window within Discord and can be used in
   real-time with friends in text chats or voice calls. While they are accessible
@@ -46,7 +46,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support-apps.discord.com/hc/article_attachments/26593090568983"
+    src="https://support-apps.discord.com/hc/article_attachments/29314563315991"
     alt="what-are-apps.gif"
   />
 </p>
