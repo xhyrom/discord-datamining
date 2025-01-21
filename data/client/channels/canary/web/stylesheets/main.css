@@ -7356,8 +7356,8 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 .colorable_ef18ee.experimentDark_ef18ee .centerIcon_ef18ee {
   color: var(--white-500);
 }
-.colorable_ef18ee.experimentDark_ef18ee.active_ef18ee,
-.colorable_ef18ee.experimentDark_ef18ee:hover {
+.colorable_ef18ee.experimentDark_ef18ee.active_ef18ee:not(.disabled_ef18ee),
+.colorable_ef18ee.experimentDark_ef18ee:hover:not(.disabled_ef18ee) {
   background: rgba(255, 255, 255, 0.1);
 }
 .colorable_ef18ee.experimentActiveLight_ef18ee {
@@ -7367,8 +7367,10 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 .colorable_ef18ee.experimentActiveLight_ef18ee .centerIcon_ef18ee {
   color: var(--primary-860);
 }
-.colorable_ef18ee.experimentActiveLight_ef18ee.active_ef18ee,
-.colorable_ef18ee.experimentActiveLight_ef18ee:hover {
+.colorable_ef18ee.experimentActiveLight_ef18ee.active_ef18ee:not(
+    .disabled_ef18ee
+  ),
+.colorable_ef18ee.experimentActiveLight_ef18ee:hover:not(.disabled_ef18ee) {
   background: var(--primary-230);
 }
 .centerButton_ef18ee {
@@ -7462,6 +7464,15 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   align-items: center;
   gap: 1px;
 }
+.caretButtonContainer_ef18ee.disabled_ef18ee {
+  color: var(--interactive-muted) !important;
+  background-color: transparent !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
+.caretButtonContainer_ef18ee.disabled_ef18ee:hover {
+  background-color: transparent !important;
+}
 .contextMenuNubExperiment_ef18ee {
   cursor: pointer;
   padding: 10px 2px;
@@ -7474,6 +7485,9 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   transition:
     background.15s ease-in-out,
     color.15s ease-in-out;
+}
+.contextMenuNubExperiment_ef18ee.disabled_ef18ee {
+  cursor: not-allowed;
 }
 .contextMenuCaret_ef18ee {
   width: 16px;
@@ -7489,6 +7503,10 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   height: 16px;
   cursor: pointer;
   transition: none;
+}
+.contextMenuCaretExperiment_ef18ee.disabled_ef18ee {
+  color: var(--interactive-normal) !important;
+  cursor: not-allowed;
 }
 .contextMenuCaretExperiment_ef18ee.open_ef18ee {
   transform: rotatex(180deg);
@@ -57300,4 +57318,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.dd5c40b1c5c07a1fa787.css.map*/
+/*# sourceMappingURL=12633.a03f4328ae8af6865a8d.css.map*/
