@@ -1,11 +1,10 @@
 <p>
-  As of <strong>March 15, 2024</strong>, Discord will no longer be supported on
-  macOS 10.13 and macOS 10.14.
+  As of <strong>January 21</strong><strong>, 2025</strong>, Discord will no
+  longer be supported on macOS 10.15.
 </p>
 <p>
   To continue receiving updates and support for your Discord client, you must
-  upgrade to at least macOS 10.15. Check out our OS/system requirements for
-  Discord
+  upgrade to at least macOS 11. Check out our OS/system requirements for Discord
   <a
     href="https://support.discord.com/hc/en-us/articles/213491697"
     target="_blank"
@@ -28,10 +27,10 @@
   </li>
   <li>
     <a
-      href="https://support.apple.com/kb/DL2039?locale=en_US"
+      href="https://support.apple.com/en-us/111980"
       target="_blank"
       rel="noopener noreferrer"
-      >Upgrade to macOS 10.15 Catalina</a
+      >macOS Big Sur - Technical Specifications</a
     >
   </li>
 </ul>
@@ -39,7 +38,7 @@
 <p>
   <strong
     >Q. Will the Discord client I currently have installed continue to work
-    after March 15, 2024?</strong
+    after January 21, 2025?</strong
   >
 </p>
 <p>

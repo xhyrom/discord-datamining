@@ -39,7 +39,7 @@
     </tr>
     <tr style="height: 22px">
       <td style="width: 21.8571%; height: 22px">Mac</td>
-      <td style="width: 66.7143%; height: 22px">MacOS 10.15+ (Catalina)+</td>
+      <td style="width: 66.7143%; height: 22px">MacOS 11 (Big Sur)</td>
     </tr>
     <tr style="height: 22px">
       <td style="width: 21.8571%; height: 22px">Linux</td>
@@ -71,10 +71,10 @@
   </li>
   <li>
     <a
-      href="https://support.discord.com/hc/en-us/articles/20900540446231"
+      href="https://support.discord.com/hc/articles/20900540446231"
       target="_blank"
       rel="noopener noreferrer"
-      >[Known Issue] Support for macOS 10.13 and 10.14</a
+      >[Known Issue] Support for macOS 10.15</a
     >
   </li>
   <li>
