@@ -9820,7 +9820,6 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 .soundButtonRefresh_f40049:active:not(:focus-within)
   .secondaryButtonRefresh_f40049 {
   opacity: 0;
-  pointer-events: none;
 }
 .animated_f40049:active:not(:focus-within) {
   box-shadow: none;
@@ -60539,4 +60538,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f50378fa4590657594fa.css.map*/
+/*# sourceMappingURL=12633.614910fdcb94c3b9e3a9.css.map*/
