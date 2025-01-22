@@ -6065,8 +6065,6 @@
           (rl.VOICE_CONNECTED_LAST_SESSION = "VOICE_CONNECTED_LAST_SESSION"),
           (rl.HABITUAL_DND = "HABITUAL_DND"),
           (rl.WIN7_8_DEPRECATED_MESSAGE = "WIN7_8_DEPRECATED_MESSAGE"),
-          (rl.MACOS_17_18_DEPRECATED_MESSAGE =
-            "MACOS_17_18_DEPRECATED_MESSAGE"),
           (rl.UU_MIGRATION = "UU_MIGRATION"),
           (rl.QUESTS_PROGRESS_INTERRUPTION = "QUESTS_PROGRESS_INTERRUPTION"),
           (rl.CHECKOUT_RECOVERY_NAGBAR = "CHECKOUT_RECOVERY_NAGBAR"),
@@ -8507,7 +8505,9 @@
           (r2.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"),
           (r2.COLLECTIBLES_SHOP = "Collectibles Shop"),
           (r2.NITRO_HOME = "Nitro Home"),
-          (r2.TIERED_TENURE_BADGES_MODAL = "Tiered Tenure Badges Modal");
+          (r2.TIERED_TENURE_BADGES_MODAL = "Tiered Tenure Badges Modal"),
+          (r2.TIERED_TENURE_BADGES_ACTION_SHEET =
+            "Tiered Tenure Badges Action Sheet");
         let _Z = "help_center_cta";
         ((r3 = eA || (eA = {})).HERO = "Hero"),
           (r3.BODY = "Body"),
@@ -10444,6 +10444,8 @@
           (ah.VOICE_CODEC_DETECTED = "voice_codec_detected"),
           (ah.VOICE_SETTINGS_CHANGED = "voice_settings_changed"),
           (ah.SYSTEM_CAMERA_SETTINGS_OPENED = "system_camera_settings_opened"),
+          (ah.VOICE_AND_VIDEO_SETTINGS_UPDATED =
+            "voice_and_video_settings_updated"),
           (ah.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed"),
           (ah.CLIP_SAVED = "clip_saved"),
           (ah.CLIP_SAVE_FAILURE = "clip_save_failure"),
@@ -11664,7 +11666,6 @@
           (ak.ROLE_SUBSCRIPTION_CANCEL =
             "19580873036695#h_01HGXEYG130EZKGQQ03A3ZHFEY"),
           (ak.WIN7_8_DEPRECATE = "20470973046295"),
-          (ak.MACOS_17_18_DEPRECATE = "20900540446231"),
           (ak.QUESTS_LEARN_MORE = "22225719947543"),
           (ak.DATA_USED_TO_IMPROVE_DISCORD = "21864805694999"),
           (ak.DATA_USED_FOR_RECOMMENDED = "21865322754327"),
@@ -12666,7 +12667,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-daca552621596042337bc3f687bc184eaf747dcb",
+            release: "discord_web-711e6f55491efb19ab5784a5e7fd140de0883dc8",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12735,8 +12736,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "360964"), "360964"));
-          o.YA("builtAt", String("1737502109434"));
+            o.YA("buildNumber", ((e = "361056"), "361056"));
+          o.YA("builtAt", String("1737508210691"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54656,4 +54657,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.18ef35ac1fa7da62a5af.js.map
+//# sourceMappingURL=sentry.b23fa4845380249d4ed9.js.map
