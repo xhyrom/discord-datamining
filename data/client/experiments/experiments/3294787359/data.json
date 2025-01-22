@@ -1,14 +1,14 @@
 {
   "data": {
-    "kind": "user",
-    "id": "2024-08_iar_privacy_and_safety_settings_upsells",
-    "label": "IAR Privacy & Safety Settings Upsells",
+    "kind": "guild",
+    "id": "2024-12_guild_voice_channel_ringing",
+    "label": "Guild Voice Ringing",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Allow users to ring each other in Guild Voice Channels"
     ],
-    "hash": 2629592978,
+    "hash": 3294787359,
     "buckets": [
       -1,
       0,

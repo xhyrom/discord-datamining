@@ -7382,29 +7382,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-08_iar_privacy_and_safety_settings_upsells",
-      "label": "IAR Privacy & Safety Settings Upsells",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2629592978,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-08_keyword_filter_upsells",
       "label": "Language Filter Upsells",
       "description": [
@@ -12994,6 +12971,29 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2024-12_guild_voice_channel_ringing",
+      "label": "Guild Voice Ringing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow users to ring each other in Guild Voice Channels"
+      ],
+      "hash": 3294787359,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2024-12_hotwheels_activity_feed_inventory_thresholds",
       "label": "Hotwheels Activity Feed (Inventory Options)",
@@ -13505,18 +13505,21 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Valentines Gifting Promotion"
+        "Treatment 1: Show Valentines Coachmark and Gifting Flow",
+        "Treatment 2: Show Valentines Gifting Flow only. No Coachmark."
       ],
       "hash": 3086590474,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled"
+        "enableGiftingFlow",
+        "enableCoachmark"
       ]
     }
   },
