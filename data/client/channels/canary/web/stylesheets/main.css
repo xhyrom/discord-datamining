@@ -6208,9 +6208,12 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   background-color: #fdf6e3;
 }
 @use postcss-pxtorem;
+.density-compact.visual-refresh {
+  --chat-markup-line-height: 22px;
+}
 .markup_f8f345 {
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: var(--chat-markup-line-height);
   white-space: break-spaces;
   word-wrap: break-word;
   -webkit-user-select: text;
@@ -6403,15 +6406,9 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 .markup_f8f345 h6:first-child {
   margin-top: 4px;
 }
-.visual-refresh .markup_f8f345 {
-  line-height: 1.5rem;
-}
 .visual-refresh .markup_f8f345 code {
   background: var(--background-code);
   border: 1px solid var(--border-normal);
-}
-.visual-refresh.density-compact .markup_f8f345 {
-  line-height: 1.375rem;
 }
 @media all and (-webkit-max-device-pixel-ratio: 1) {
   .theme-light .markup_f8f345 {
@@ -20425,13 +20422,19 @@ input[type="checkbox"]:focus-visible + .label_d1ac9b {
 .typing_d7ebeb {
   overflow: visible;
 }
-.visual-refresh-chat-input .base_d7ebeb {
-  position: static;
-  overflow: auto;
+.visual-refresh .base_d7ebeb {
+  left: var(--space-8);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   color: var(--text-secondary);
+}
+.visual-refresh .base_d7ebeb .ellipsis_d7ebeb {
+  margin-left: 0;
+}
+.visual-refresh-chat-input .base_d7ebeb {
+  position: static;
+  overflow: auto;
 }
 .isComboing_d7ebeb {
   justify-content: space-between;
@@ -29934,19 +29937,20 @@ html:not(.visual-refresh) .root_b93e3f {
   left: 0;
   right: 10px;
 }
+.visual-refresh .slateTextArea_e52116 {
+  padding: calc(
+      0.5 * (-1.375rem + var(--custom-channel-textarea-text-area-height))
+    )
+    0 calc(0.5 * (-1.375rem + var(--custom-channel-textarea-text-area-height)));
+  margin-left: 10px;
+}
 .visual-refresh-chat-input .slateTextArea_e52116 {
   --custom-vertical-padding: calc(
     var(--custom-channel-textarea-text-area-height) / 4 - 1px
   );
   box-sizing: border-box;
-  padding-top: calc(
-    -1px + 0.25 * var(--custom-channel-textarea-text-area-height)
-  );
-  padding-top: var(--custom-vertical-padding);
-  padding-bottom: calc(
-    -1px + 0.25 * var(--custom-channel-textarea-text-area-height)
-  );
-  padding-bottom: var(--custom-vertical-padding);
+  margin-left: 0;
+  height: 100%;
 }
 .enable-forced-colors .placeholder_e52116 {
   color: GrayText;
@@ -29980,13 +29984,6 @@ html:not(.visual-refresh) .root_b93e3f {
 .no-webkit-scrollbar .scrollableContainer_bdf0de {
   scrollbar-width: none;
 }
-:where(.visual-refresh) .channelTextArea_bdf0de {
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-sm);
-}
-:where(.visual-refresh) .themedBackground_bdf0de {
-  background: var(--bg-overlay-floating, var(--chat-background-default));
-}
 .visual-refresh.custom-theme-background .channelTextArea_bdf0de {
   border-color: var(--app-border-frame);
 }
@@ -29999,11 +29996,6 @@ html:not(.visual-refresh) .root_b93e3f {
 }
 :where(.visual-refresh-chat-input) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
-}
-:where(.visual-refresh-chat-input) .button_bdf0de {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
 }
 .visual-refresh-chat-input .themedBackground_bdf0de {
   background: none;
@@ -30117,6 +30109,9 @@ html:not(.visual-refresh) .root_b93e3f {
 .attachButton_bdf0de {
   margin-left: -16px;
 }
+.visual-refresh .attachButton_bdf0de {
+  margin-left: -14px;
+}
 .visual-refresh-chat-input .attachButton_bdf0de {
   margin-left: 0;
 }
@@ -30210,6 +30205,13 @@ html:not(.visual-refresh) .root_b93e3f {
 .has-webkit-scrollbar .buttons_bdf0de {
   margin-right: -6px;
 }
+.has-webkit-scrollbar.visual-refresh .buttons_bdf0de {
+  margin-right: 0;
+}
+.visual-refresh .buttons_bdf0de {
+  align-items: center;
+  gap: var(--space-8);
+}
 .visual-refresh-chat-input .buttons_bdf0de {
   height: auto;
 }
@@ -30224,6 +30226,21 @@ html:not(.visual-refresh) .root_b93e3f {
   padding: 4px;
   margin-left: 4px;
   margin-right: 4px;
+}
+:where(.visual-refresh) .channelTextArea_bdf0de {
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-sm);
+}
+:where(.visual-refresh) .themedBackground_bdf0de {
+  background: var(--bg-overlay-floating, var(--chat-background-default));
+}
+:where(.visual-refresh) .button_bdf0de {
+  box-sizing: border-box;
+  min-width: var(--space-32);
+  min-height: var(--space-32);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 .stickerIcon_bdf0de {
   width: 20px !important;
@@ -30352,10 +30369,10 @@ html:not(.visual-refresh) .root_b93e3f {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-4) var(--space-sm);
-  border-top: 1px solid var(--border-faint);
-  margin-left: -1px;
-  margin-right: 1px;
+  padding: var(--space-8);
+  border-top: 1px solid var(--background-mod-subtle);
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
 }
 .visual-refresh-chat-input .accessoryBarLeft_bdf0de,
 .visual-refresh-chat-input .accessoryBarRight_bdf0de {
@@ -30363,6 +30380,7 @@ html:not(.visual-refresh) .root_b93e3f {
   grid-auto-flow: column;
   align-items: center;
   position: relative;
+  min-height: var(--space-32);
 }
 .visual-refresh-chat-input .accessoryBarRight_bdf0de {
   margin-right: calc(-1 * var(--space-4));
@@ -30505,16 +30523,21 @@ html:not(.visual-refresh) .root_b93e3f {
 .disabled_a06035 {
   cursor: not-allowed;
 }
-.separator_a06035 {
+.container_a06035 {
   display: flex;
-  margin-left: 8px;
+  align-items: center;
 }
-.separator_a06035:before {
-  content: " ";
-  border-left: 1px solid var(--background-modifier-accent);
+.separator_a06035 {
+  width: 1px;
   height: 65%;
-  margin-top: auto;
-  margin-bottom: auto;
+  background-color: var(--background-modifier-accent);
+  align-self: center;
+  margin-left: var(--space-8);
+}
+.visual-refresh .separator_a06035 {
+  height: var(--chat-markup-line-height);
+  background-color: var(--border-faint);
+  margin-left: 0;
 }
 .buttonContainer_a06035 {
   display: flex;
@@ -30566,12 +30589,25 @@ html:not(.visual-refresh) .root_b93e3f {
   transition: none 0s ease 0s;
   transition: initial;
 }
-.visual-refresh .separator_a06035:before {
-  display: none;
-}
 .visual-refresh .innerButton_a06035 {
   margin-right: 0;
-  margin-left: var(--space-4);
+  margin-left: 0;
+  min-width: var(--space-32);
+  min-height: var(--space-32);
+  box-sizing: border-box;
+}
+.visual-refresh .container_a06035 {
+  margin-left: 0;
+}
+.visual-refresh .container_a06035:before {
+  display: none;
+}
+.visual-refresh-chat-input .container_a06035 {
+  display: flex;
+  margin-left: 8px;
+}
+.visual-refresh-chat-input .separator_a06035 {
+  margin-left: var(--space-8);
 }
 .stickerPreviews_ef287f {
   padding: 10px 0 10px 16px;
@@ -59483,13 +59519,17 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
+  --chat-resize-handle-width: 8px;
+  --chat-input-icon-size: 24px;
+  --chat-markup-line-height: 22px;
   --guildbar-avatar-size: 48px;
   --guildbar-folder-size: 48px;
-  --chat-resize-handle-width: 8px;
   --modal-horizontal-padding: 12px;
   --modal-vertical-padding: 16px;
 }
 .visual-refresh {
+  --chat-input-icon-size: 20px;
+  --chat-markup-line-height: 24px;
   --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
 }
@@ -60507,7 +60547,6 @@ img[alt] {
 :root {
   --custom-channel-header-height: 48px;
   --custom-member-list-width: 240px;
-  --custom-chat-input-icon-button-size: 24px;
   --custom-guild-list-width: 72px;
 }
 .visual-refresh {
@@ -60522,10 +60561,10 @@ img[alt] {
   --custom-rtc-account-height: 44px;
   --custom-app-top-bar-height: 32px;
   --custom-channel-header-height: 56px;
-  --custom-member-list-width: 269px;
+  --custom-member-list-width: 265px;
+  --custom-channel-textarea-text-area-height: 54px;
 }
 .visual-refresh-chat-input {
-  --custom-chat-input-icon-button-size: 20px;
   --custom-emoji-sprite-size: 20px;
   --custom-channel-textarea-text-area-height: 48px;
 }
@@ -60538,4 +60577,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.614910fdcb94c3b9e3a9.css.map*/
+/*# sourceMappingURL=12633.2b1f8c6ed486df2ab965.css.map*/
