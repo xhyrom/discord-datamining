@@ -1,7 +1,7 @@
 {
   "data": {
     "kind": "user",
-    "id": "2025-01_friend_requests_alerts",
+    "id": "2025-01_friend_requests_alerts_new_users",
     "label": "Friend Request Setting Defaults",
     "description": [
       "Not Eligible",
@@ -9,7 +9,7 @@
       "Treatment 1: warning",
       "Treatment 2: defaults"
     ],
-    "hash": 1248999811,
+    "hash": 348548012,
     "buckets": [
       -1,
       0,
