@@ -34,6 +34,14 @@
       "PUT"
     ]
   },
+  "USER_GAME_RELATIONSHIP": {
+    "url": "/users/@me/game-relationships/:param/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
   "USER_PROFILE": {
     "url": "/users/:param/profile",
     "allowed_methods": [
