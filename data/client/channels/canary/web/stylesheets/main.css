@@ -9453,6 +9453,7 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   color: var(--white-500);
   background-color: var(--brand-500);
   box-shadow: var(--elevation-low);
+  justify-content: space-between;
 }
 .newTopicsBarContainer_cf58b5:active {
   box-shadow: 0 0 0 hsl(var(--black-500-hsl) / 0);
@@ -9460,9 +9461,6 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 @media (max-width: 914px) {
   .newTopicsBarCompact_cf58b5 {
     display: none;
-  }
-  .newTopicsBarInitial_cf58b5 .newTopicsBarCenter_cf58b5 {
-    left: 33%;
   }
   .newTopicsBarText_cf58b5 .topicsPillDropdownCaret_cf58b5 {
     padding-left: 0;
@@ -9500,7 +9498,12 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   margin-right: 4px;
 }
 .newTopicsBarInitial_cf58b5 {
-  position: static;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .newTopicsBarTextUnselected_cf58b5 {
   display: flex;
@@ -60850,4 +60853,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.4228de40c90e72ffb6c2.css.map*/
+/*# sourceMappingURL=12633.33ad71c83cede6bbf8de.css.map*/
