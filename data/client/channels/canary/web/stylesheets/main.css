@@ -9535,7 +9535,7 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
     0 2px 0 rgba(4, 4, 5, 5%);
 }
 .visual-refresh .topicsPillContainer_cf58b5 {
-  background: var(--background-surface-high);
+  background: var(--bg-overlay-2, var(--background-surface-high));
   box-shadow: var(--shadow-low);
   border-top: 0;
 }
@@ -30132,6 +30132,7 @@ html:not(.visual-refresh) .root_b93e3f {
 }
 .visual-refresh.custom-theme-background .channelTextArea_bdf0de {
   border-color: var(--app-border-frame);
+  background: var(--bg-overlay-floating, var(--input-background));
 }
 :where(.visual-refresh-chat-input) .channelTextArea_bdf0de {
   box-sizing: border-box;
@@ -30195,6 +30196,9 @@ html:not(.visual-refresh) .root_b93e3f {
 .hasStackedBar_bdf0de {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.visual-refresh .channelTextAreaDisabled_bdf0de .scrollableContainer_bdf0de {
+  opacity: 1;
 }
 .visual-refresh .inlineContainer_bdf0de {
   box-shadow: none;
@@ -30471,10 +30475,10 @@ html:not(.visual-refresh) .root_b93e3f {
 .bar_bdf0de {
   border-radius: inherit;
 }
-.visual-refresh-chat-input .stackedBars_bdf0de {
+.visual-refresh .stackedBars_bdf0de {
   background: var(--background-surface-higher);
 }
-.visual-refresh-chat-input .stackedBars_bdf0de > :not(:last-child) {
+.visual-refresh .stackedBars_bdf0de:not(:last-child) {
   border-bottom: 1px solid var(--border-subtle);
 }
 .sparkles_bdf0de {
@@ -31568,6 +31572,9 @@ html:not(.visual-refresh) .root_b93e3f {
 .theme-light.custom-theme-background .threadSuggestionBar_b11c5e {
   background: var(--bg-overlay-2, var(--background-secondary));
 }
+.visual-refresh .clipContainer_b11c5e {
+  margin-top: 0;
+}
 .visual-refresh .replyBar_b11c5e,
 .visual-refresh .threadSuggestionBar_b11c5e {
   background-color: transparent;
@@ -31575,7 +31582,10 @@ html:not(.visual-refresh) .root_b93e3f {
   border-bottom: none;
 }
 .visual-refresh .text_b11c5e {
-  margin-left: var(--space-20);
+  margin-left: var(--space-16);
+}
+.visual-refresh .actions_b11c5e {
+  margin-right: var(--space-4);
 }
 .replyBar_b11c5e {
   display: grid;
@@ -60726,4 +60736,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.bb507a8dda5b7e855128.css.map*/
+/*# sourceMappingURL=12633.3bf5410c4fcf2ec58bc1.css.map*/

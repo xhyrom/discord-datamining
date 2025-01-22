@@ -7775,7 +7775,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (e, t) =>
               "/application-directory/"
                 .concat(e, "/")
-                .concat(nk.ApplicationDirectoryProfileSections.STORE, "/")
+                .concat(nk.c.STORE, "/")
                 .concat(t),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -9798,6 +9798,8 @@
           (ah.OVERLAY_GAME_INVITE_SENT = "overlay_game_invite_sent"),
           (ah.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN =
             "overlay_game_invite_notification_shown"),
+          (ah.OVERLAY_GAME_INVITE_SETTINGS_UPDATED =
+            "overlay_game_invite_settings_updated"),
           (ah.SPOTIFY_AUTO_PAUSED = "spotify_auto_paused"),
           (ah.SPOTIFY_BUTTON_CLICKED = "spotify_button_clicked"),
           (ah.SPOTIFY_LISTEN_ALONG_STARTED = "spotify_listen_along_started"),
@@ -12587,12 +12589,11 @@
       272242: function (e, t, r) {
         "use strict";
         var a, n;
-        r.r(t),
-          r.d(t, {
-            ApplicationDirectoryProfileSections: function () {
-              return a;
-            },
-          }),
+        r.d(t, {
+          c: function () {
+            return a;
+          },
+        }),
           ((n = a || (a = {})).GENERAL = "general"),
           (n.IMAGES = "images"),
           (n.PREMIUM_DEPRECATED = "premium"),
@@ -12673,7 +12674,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c28393837c27bd5d38b6fd4b41fa4a6700c6a049",
+            release: "discord_web-03b9e782755faff05f3ae740f3fabc5d088c41ed",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12742,8 +12743,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "361408"), "361408"));
-          o.YA("builtAt", String("1737575001615"));
+            o.YA("buildNumber", ((e = "361441"), "361441"));
+          o.YA("builtAt", String("1737576317094"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54663,4 +54664,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.27085ae1c47acf7704f5.js.map
+//# sourceMappingURL=sentry.56ab03bb341876254e58.js.map
