@@ -54,7 +54,7 @@
   If you don't have a role with the "Administrator" permission in the server,
   you won't be able to view this option!
 </p>
-<h3>
+<h3 id="h_01JJ7JW2C8QMGBMVJ0KX5NV89S">
   Note: Giving the "Administrator" permission to a user grants them all of the
   permissions in the permissions list! Assign this permission with caution. 
 </h3>
@@ -77,14 +77,14 @@
     >
   </li>
 </ul>
-<h3>
+<h3 id="h_01JJ7JW2C8WRR9TFTQSQ7428VF">
   Note: Because voice restrictions are tied to the user, View as Role doesn't
   reflect voice restrictions like suppression or priority speaker.
 </h3>
 <h1 id="h_01EJT8TVX8P4K7SWMXVS2Z5901">How to View as Role in Your Server</h1>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360090863834/view_as_role_flow_new.gif"
+    src="https://support.discord.com/hc/article_attachments/360090863834"
     alt="view_as_role_flow_new.gif"
   />
 </p>
@@ -104,7 +104,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092825833/Screen_Shot_2020-09-21_at_8.03.43_PM_copy.png"
+    src="https://support.discord.com/hc/article_attachments/360092825833"
     alt="Screen_Shot_2020-09-21_at_8.03.43_PM_copy.png"
     width="603"
     height="338"
@@ -117,7 +117,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360090684254/Screen_Shot_2020-09-21_at_11.10.30_PM.png"
+    src="https://support.discord.com/hc/article_attachments/360090684254"
     alt="Screen_Shot_2020-09-21_at_11.10.30_PM.png"
     width="602"
     height="348"
@@ -135,7 +135,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360090864694/select_roles_drop_down_menu.png"
+    src="https://support.discord.com/hc/article_attachments/360090864694"
     alt="select_roles_drop_down_menu.png"
   />
 </p>
@@ -151,7 +151,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092990553/view_as_multiple_roles_flow_new.gif"
+    src="https://support.discord.com/hc/article_attachments/360092990553"
     alt="view_as_multiple_roles_flow_new.gif"
   />
 </p>
@@ -169,7 +169,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092991233/disable_button_view_as_role.png"
+    src="https://support.discord.com/hc/article_attachments/360092991233"
     alt="disable_button_view_as_role.png"
   />
 </p>

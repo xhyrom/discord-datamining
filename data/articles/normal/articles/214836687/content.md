@@ -9,11 +9,11 @@
 </ol>
 <p>
   <img
-    src="https://support.discord.com/hc/article_attachments/206138678"
+    src="https://support.discord.com/hc/en-us/article_attachments/206138678/discord_colors-3.jpg"
     alt=""
   />
 </p>
-<h1>Part One: Role Colors</h1>
+<h1 id="h_01JJ7GZVCVK3Y2138WH9TVR8DD">Part One: Role Colors</h1>
 <p>
   Something that may not be immediately noticeable, but super helpful, is how
   roles behave in the role tab. To put it simply:
@@ -100,7 +100,7 @@
     role.</em
   >
 </p>
-<h1>Part Two: Role Hierarchies</h1>
+<h1 id="h_01JJ7GZVCV3HPTQVBM4K2GV10H">Part Two: Role Hierarchies</h1>
 <p>
   In addition to looking pretty, roles offer a very structured way to delegate
   permissions to users and establish anything from a multi-tiered public server
@@ -193,7 +193,7 @@
     that would remove it from yourself. </strong
   >
 </p>
-<h3>
+<h3 id="h_01JJ7GZVCVN5D8TTVFV8GYTCB2">
   Important note on adding roles: the <strong>@everyone</strong> role now serves
   as the basic template for all added roles. Want anyone in your server to add
   channels as they want? Assigning "Manage Channels" to @everyone will
@@ -242,7 +242,7 @@
     ></strong
   >  
 </p>
-<h1>Part Three: Channel Permissions</h1>
+<h1 id="h_01JJ7GZVCVE1WQ8WBB5Z99H8M2">Part Three: Channel Permissions</h1>
 <p>
   <img
     src="https://support.discord.com/hc/article_attachments/115001756931"
