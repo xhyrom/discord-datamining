@@ -34409,6 +34409,9 @@ img.thumbnail_c64476 {
   background-color: var(--profile-gradient-button-color);
   opacity: 0.5;
 }
+.gameIcon_ecc1b2 {
+  vertical-align: bottom;
+}
 .container_effd71 {
   padding: var(--spacing-16);
   gap: var(--spacing-8);
@@ -60577,4 +60580,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.2b1f8c6ed486df2ab965.css.map*/
+/*# sourceMappingURL=12633.1fb99cb64893bcdd53b5.css.map*/
