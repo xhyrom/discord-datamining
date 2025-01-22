@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_hotwheels_overlay_invites_v2",
+    "label": "Overlay Invites Notification",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled with threshold"
+    ],
+    "hash": 1665351603,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "affinityThreshold"
+    ]
+  }
+}
