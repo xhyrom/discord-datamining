@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Use Shop Home API"
+      "Treatment 1: Use Shop Home API",
+      "Treatment 2: Use Shop Home API, include popular picks"
     ],
     "hash": 3436207934,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,

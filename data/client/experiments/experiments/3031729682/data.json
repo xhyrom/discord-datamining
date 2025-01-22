@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2022-06_auth_sessions_user_settings",
-    "label": "Auth Sessions User Settings",
+    "id": "2025-01_message_request_new_location",
+    "label": "Moves message requests ingress point closer to Friends",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show settings"
+      "Treatment 1: Enable the new location"
     ],
-    "hash": 1095779154,
+    "hash": 3031729682,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "showSettings"
+      "enabled"
     ]
   }
 }
