@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_voice_and_video_settings_refresh",
+    "label": "Voice and Video Settings Refresh",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show refreshed settings"
+    ],
+    "hash": 3267876834,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
