@@ -14066,6 +14066,7 @@ span.clanTag_a31c43 {
 :where(.button_f9d37d).icon_f9d37d {
   width: var(--custom-button-button-sm-height);
   height: var(--custom-button-button-sm-height);
+  padding: 0;
 }
 :where(.button_f9d37d).hover_f9d37d,
 :where(.button_f9d37d).banner_f9d37d {
@@ -60898,4 +60899,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.8ed33c0b837e82ff46e5.css.map*/
+/*# sourceMappingURL=12633.282ded252f941753f63d.css.map*/
