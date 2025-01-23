@@ -18,6 +18,32 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Strinova</strong></p>
+<p><strong>Quest Name: Strinova Eika Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Strinova </strong>to receive a <strong>Eika Free Agent</strong>.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on desktop where
+  <strong>Discord</strong> and <strong>Strinova </strong>are available.
+  Discord’s premium services are restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Strinova Eika Quest </strong>can be accepted on Discord from
+  <strong>January 23, 2025</strong> until
+  <strong>January 30, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>February 24, 2025 (0:00 UTC)</strong>.
+</p>
+<p>
+  <strong>Other Terms:</strong> Limit of one reward redemption per
+  account.<strong> </strong>
+</p>
+<p> </p>
 <p><strong>Quest Game: Delta Force</strong></p>
 <p><strong>Quest Name: DELTA FORCE STARFALL Quest</strong></p>
 <p>
