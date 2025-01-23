@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_inappropriate_conversations_new_defaults",
+    "label": "Inappropriate Conversation Warning Default On",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Inappropriate Conversation Warnings On"
+    ],
+    "hash": 2278984228,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
