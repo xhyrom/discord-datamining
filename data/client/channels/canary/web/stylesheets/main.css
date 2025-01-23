@@ -30217,6 +30217,7 @@ html:not(.visual-refresh) .root_b93e3f {
   border-radius: var(--radius-sm);
   transition: border-color.2s ease;
   box-shadow: var(--shadow-low);
+  background: var(--bg-overlay-floating, var(--chat-background-default));
 }
 :where(.visual-refresh-chat-input) .channelTextArea_bdf0de:focus-within {
   border-color: var(--border-subtle);
@@ -60887,4 +60888,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.150067675241b7727cb4.css.map*/
+/*# sourceMappingURL=12633.ceb9dc08c716cc76cfd5.css.map*/
