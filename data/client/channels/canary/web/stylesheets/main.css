@@ -19177,6 +19177,9 @@ h3.improved_f017d0:after {
 .listItemTooltip_bba834 {
   color: var(--text-normal);
 }
+.visual-refresh .listItemTooltipContent_bba834 {
+  padding: 8px;
+}
 .guildIcon_bfabc4 {
   align-items: center;
   background-color: var(--background-primary);
@@ -60899,4 +60902,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.282ded252f941753f63d.css.map*/
+/*# sourceMappingURL=12633.ef9e2bc31d4cba50717c.css.map*/
