@@ -16029,7 +16029,8 @@ html:not(.visual-refresh) .container_b01a4f {
 .automodMessage_d5deea:before,
 .replying_d5deea:before,
 .highlighted_d5deea:before,
-.potioned_d5deea:before {
+.potioned_d5deea:before,
+.potioned_d5deea:after {
   content: "";
   position: absolute;
   display: block;
@@ -16050,12 +16051,43 @@ html:not(.visual-refresh) .container_b01a4f {
 .automodMessage_d5deea:before {
   background: var(--text-danger);
 }
-.potioned_d5deea:before {
+.potioned_d5deea:before,
+.potioned_d5deea:after {
   background: linear-gradient(
     to right,
     var(--premium-tier-2-purple-for-gradients),
     var(--premium-tier-2-pink-for-gradients)
   );
+  transition: width.2s ease-out;
+  width: 2px;
+  z-index: 1;
+}
+.potioned_d5deea:after {
+  width: 2px;
+  opacity: 0.1;
+  background: linear-gradient(
+    to right,
+    var(--premium-tier-2-purple-for-gradients) 0%,
+    var(--premium-tier-2-pink-for-gradients) 85%,
+    transparent 100%
+  );
+  transition:
+    width.2s ease-in,
+    opacity.2s ease-in;
+}
+.full-motion .message_d5deea.potioned_d5deea:hover:after {
+  width: 105%;
+  opacity: 0.2;
+  transition:
+    width 1.1s ease-in,
+    opacity 1.1s ease-in;
+}
+.full-motion.confetti-mode .message_d5deea.potioned_d5deea:after {
+  width: 105%;
+  opacity: 0.15;
+  transition:
+    width.2s ease-in,
+    opacity.2s ease-in;
 }
 .mentioned_d5deea:before {
   background: var(--info-warning-foreground);
@@ -60902,4 +60934,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ef9e2bc31d4cba50717c.css.map*/
+/*# sourceMappingURL=12633.1e6c1cf333831e745745.css.map*/
