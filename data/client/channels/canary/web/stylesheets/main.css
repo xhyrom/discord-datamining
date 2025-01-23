@@ -37889,6 +37889,13 @@ img.thumbnail_c64476 {
   right: 2px;
   bottom: 2px;
 }
+.visual-refresh .iconBadgeBottom_fc4f04 {
+  --custom-icon-offset: calc((var(--chat-input-icon-size) - 8px) / 2);
+  right: calc(0.5 * (-8px + var(--chat-input-icon-size)));
+  right: var(--custom-icon-offset);
+  bottom: calc(0.5 * (-8px + var(--chat-input-icon-size)));
+  bottom: var(--custom-icon-offset);
+}
 .divider_fc4f04 {
   width: 1px;
   height: 24px;
@@ -60891,4 +60898,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.9e50ab37defdfc826c16.css.map*/
+/*# sourceMappingURL=12633.8ed33c0b837e82ff46e5.css.map*/
