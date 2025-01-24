@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_tiered_tenure_badges_mobile",
+    "label": "Tiered Tenure Badging Mobile Experience",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 2: Enable Tiered Tenure Badges v2 on mobile"
+    ],
+    "hash": 698529632,
+    "buckets": [
+      -1,
+      0,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
