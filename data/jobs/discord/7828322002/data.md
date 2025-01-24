@@ -2,7 +2,7 @@
 
 ## Senior Copywriter
 
-**Location:** San Francisco, CA or Remote (U.S.)
+**Location:** San Francisco, CA
 
 **Id:** 7828322002 <br/>
 **Internal Job Id:** 6086880002 <br/>
