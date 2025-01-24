@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_checkout_optimization_apple_pay",
+    "label": "Checkout Optimization Apple Pay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 2234215604,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled",
+      "delay"
+    ]
+  }
+}
