@@ -14550,9 +14550,14 @@ html:not(.visual-refresh) .container_b01a4f {
 }
 .container_bf3873 {
   margin-bottom: 24px;
+  margin-top: 0;
+}
+.visual-refresh .container_bf3873 {
+  margin-bottom: 16px;
+  margin-top: 8px;
 }
 .appContainer_bf3873 {
-  padding: 16px;
+  padding: 12px;
   border: 1px solid var(--background-modifier-accent);
   border-radius: 8px;
 }
@@ -14562,7 +14567,6 @@ html:not(.visual-refresh) .container_b01a4f {
 }
 .appInfo_bf3873 {
   display: flex;
-  align-items: center;
 }
 .appIconMask_bf3873 {
   margin-right: 16px;
@@ -14629,6 +14633,7 @@ html:not(.visual-refresh) .container_b01a4f {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
+  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .childButton_f45bfc:hover {
@@ -14747,6 +14752,7 @@ html:not(.visual-refresh) .container_b01a4f {
   margin-bottom: 8px;
   padding: 0;
   border-radius: 4px;
+  background-color: var(--background-secondary);
   min-height: 64px;
 }
 .linkButton_ccf237:hover {
@@ -14845,7 +14851,7 @@ html:not(.visual-refresh) .container_b01a4f {
   margin-right: 8px;
 }
 .headerContainer_e9d805 {
-  padding: 0 24px;
+  padding: 0;
   text-align: center;
 }
 .headerContainer_e9d805 > :not(:last-child) {
@@ -18395,7 +18401,7 @@ h3.improved_f017d0:after {
 }
 .container_e89716 {
   min-height: 240px;
-  max-height: 660px;
+  max-height: 70vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -28913,7 +28919,7 @@ html:not(.visual-refresh) .root_b93e3f {
   border-radius: var(--radius-sm);
   background-color: transparent;
 }
-.modalContent_a0e502 {
+.modalRoot_a0e502 .modalContent_a0e502 {
   display: flex;
   padding: 0;
   border-radius: inherit;
@@ -29032,19 +29038,8 @@ html:not(.visual-refresh) .root_b93e3f {
   justify-content: center;
   align-items: center;
 }
-.seaonalButtonGradient_a0e502 {
-  background: linear-gradient(90deg, #8a45c1 0%, #136897 100%);
-  background: var(
-    --buttons-anime,
-    linear-gradient(90deg, #8a45c1 0%, #136897 100%)
-  );
-}
-.seasonalBanner_a0e502 {
-  background: url(https://cdn.discordapp.com/assets/content/79d030b342ce845ffe4d9148ebe7fe0fc6fa8a2cd6708801d8227bc8cfffbf63.png),
-    linear-gradient(180deg, #4b79b0 0%, #0f0e3a 100%);
-  background: url(https://cdn.discordapp.com/assets/content/79d030b342ce845ffe4d9148ebe7fe0fc6fa8a2cd6708801d8227bc8cfffbf63.png),
-    var(--cards-animeblue, linear-gradient(180deg, #4b79b0 0%, #0f0e3a 100%));
-  background-size: cover;
+.promotionalBanner_a0e502 {
+  background: linear-gradient(78.98deg, #ff9090, #f30ed8);
   height: 230px;
   width: 100%;
 }
@@ -61073,4 +61068,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.af72451c39881284a87b.css.map*/
+/*# sourceMappingURL=12633.d77707cb42505d370e93.css.map*/
