@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_updated_activity_privacy_controls",
+    "label": "Enables the rtc popout and updated settings page",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: RTC Popout",
+      "Treatment 2: Updated Settings Page",
+      "Treatment 3: Both Popout and Settings Page"
+    ],
+    "hash": 3683707426,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
