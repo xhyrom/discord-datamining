@@ -32925,9 +32925,13 @@ div.popoutCloseButton_d523a2:hover {
 .staticDivider_de3e42 {
   border-left: 1px solid var(--background-modifier-accent);
 }
-.inner_b84fc9 {
+html:not(.visual-refresh-chat-input) .inputInner_b84fc9 {
   background: var(--input-background);
   border-radius: 3px;
+}
+.visual-refresh-chat-input .input_b84fc9,
+.visual-refresh.custom-theme-background .input_b84fc9 {
+  background: var(--input-background);
 }
 .editor_b84fc9 {
   --channel-text-area-placeholder: var(--text-muted);
@@ -61003,4 +61007,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.f0c3f508e53f9b56296d.css.map*/
+/*# sourceMappingURL=12633.41eef2e44e1e0ab89a03.css.map*/
