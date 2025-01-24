@@ -11905,12 +11905,17 @@ div.modalHeader_c5e09c {
   flex-direction: row-reverse;
 }
 .promotionalGiftMessage_d84998 {
+  position: relative;
   display: flex;
+  width: 100%;
+  top: 24px;
+  right: 24px;
   flex-direction: row;
   justify-content: space-between;
   padding: 12px 24px;
   background: linear-gradient(78.98deg, #ff9090, #f30ed8);
   min-height: 24px;
+  border-radius: 0 0 16px 16px;
 }
 .promotionalGiftMessageText_d84998 {
   color: black;
@@ -12043,16 +12048,13 @@ div.modalHeader_c5e09c {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 16px;
-  overflow: hidden;
+  padding: 24px;
   position: relative;
   color: var(--white-500);
   width: 50%;
 }
 .card_c87d73.withCardHover_c87d73:hover {
   box-shadow: var(--legacy-elevation-high);
-}
-.cardPadding_c87d73 {
-  padding: 24px;
 }
 .subscriptionPlanInfo_c87d73 {
   display: flex;
@@ -61068,4 +61070,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.d77707cb42505d370e93.css.map*/
+/*# sourceMappingURL=12633.dca6d8fe7f5ef6c45f94.css.map*/
