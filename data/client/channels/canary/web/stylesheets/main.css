@@ -11653,7 +11653,7 @@ div.modalHeader_c5e09c {
 .modalContent_c5e09c {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   padding: 0 16px 24px;
 }
 .completedModalContent_c5e09c {
@@ -11670,6 +11670,8 @@ div.modalHeader_c5e09c {
   padding: 12px;
   background-color: var(--background-secondary);
   border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-faint);
   cursor: pointer;
 }
 .full-motion .choiceContainer_c5e09c {
@@ -31582,7 +31584,6 @@ html:not(.visual-refresh-chat-input) .inner_c59af2 {
 }
 .visual-refresh .bar_f60904 {
   align-items: center;
-  padding-left: 20px;
 }
 .name_f60904 {
   font-size: 16px;
@@ -61002,4 +61003,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.605e14dbb018bc3ef54a.css.map*/
+/*# sourceMappingURL=12633.f0c3f508e53f9b56296d.css.map*/
