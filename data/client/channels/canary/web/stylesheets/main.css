@@ -30387,6 +30387,9 @@ html:not(.visual-refresh-chat-input) .inner_c59af2 {
   background: initial;
   border: none;
 }
+.visual-refresh .flushContainer_bdf0de .inner_bdf0de {
+  padding-left: 0;
+}
 .visual-refresh .flushContainer_bdf0de .accessoryBar_bdf0de {
   border-top: none;
   align-items: flex-start;
@@ -32821,7 +32824,7 @@ div.popoutCloseButton_d523a2:hover {
 .premiumFlair_b82429:not(:last-child) {
   margin-right: 4px;
 }
-.visual-refresh .characterCount_b82429 {
+.visual-refresh-chat-input .characterCount_b82429 {
   position: relative;
   bottom: auto;
   right: auto;
@@ -32829,10 +32832,10 @@ div.popoutCloseButton_d523a2:hover {
   padding-right: var(--space-16);
   margin-right: var(--space-8);
 }
-.visual-refresh .premiumFlair_b82429 {
+.visual-refresh-chat-input .premiumFlair_b82429 {
   color: var(--icon-secondary);
 }
-.visual-refresh .premiumFlair_b82429:not(:last-child) {
+.visual-refresh-chat-input .premiumFlair_b82429:not(:last-child) {
   margin-right: var(--space-8);
 }
 .flairContainer_b82429 {
@@ -56159,6 +56162,7 @@ html.disable-forced-colors * {
   --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
   --button-transparent-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --button-transparent-text: var(--neutral-6);
+  --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --channel-icon: var(--neutral-15);
   --channels-default: var(--neutral-22);
   --header-muted: var(--neutral-22);
@@ -56406,6 +56410,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --card-secondary-bg: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
@@ -56998,6 +57008,7 @@ html.disable-forced-colors * {
     var(--opacity-28-hsl) / 0.2784313725490196
   );
   --button-transparent-text: var(--neutral-95);
+  --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --channel-icon: var(--neutral-44);
   --channels-default: var(--neutral-38);
   --header-muted: var(--neutral-38);
@@ -57253,6 +57264,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --card-secondary-bg: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
@@ -57841,6 +57858,7 @@ html.disable-forced-colors * {
   --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
   --button-transparent-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --button-transparent-text: var(--neutral-6);
+  --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --channel-icon: var(--neutral-27);
   --channels-default: var(--neutral-33);
   --header-muted: var(--neutral-33);
@@ -58089,6 +58107,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --card-secondary-bg: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
@@ -58673,6 +58697,7 @@ html.disable-forced-colors * {
   --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
   --button-transparent-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --button-transparent-text: var(--neutral-6);
+  --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --channel-icon: var(--neutral-22);
   --channels-default: var(--neutral-29);
   --header-muted: var(--neutral-29);
@@ -58919,6 +58944,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --card-secondary-bg: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
@@ -60016,19 +60047,19 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
+  --guildbar-avatar-size: 48px;
+  --guildbar-folder-size: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
   --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
   --chat-markup-line-height: 22px;
-  --guildbar-avatar-size: 48px;
-  --guildbar-folder-size: 48px;
 }
 .visual-refresh {
+  --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
   --chat-input-icon-size: 20px;
   --chat-markup-line-height: 24px;
-  --guildbar-avatar-size: 40px;
 }
 html,
 body,
@@ -61074,4 +61105,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.43af8a2b8228fc95e40c.css.map*/
+/*# sourceMappingURL=12633.72f1cc0cf1500b5e7fe3.css.map*/
