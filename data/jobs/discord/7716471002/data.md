@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7716471002](https://discord.com/jobs/7716471002)
 
-**Updated At:** Thu, 23 Jan 2025 17:56:59 GMT
+**Updated At:** Fri, 24 Jan 2025 23:51:52 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Design Systems team is a cross-functional team that ensures design quality across all facets of UI, content, and graphics. As a part of the team, you will be responsible for the creation and maintenance of the design system that all product designers, engineers, and product managers use to design &amp;amp; develop at Discord. Using your full range of interaction, visual, and prototyping skills, you will own creating a coherent and ownable look &amp;amp; feel for our desktop and mobile experiences.
