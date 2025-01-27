@@ -13,9 +13,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/29396630378007"
-    width="834"
-    height="333"
+    src="https://support.discord.com/hc/article_attachments/29545221831703"
+    alt="YTP_Discord-Banner_Global-Q1_Logo-Only.png"
+    width="970"
+    height="549"
   />
 </p>
 <p>
@@ -96,7 +97,7 @@
       <ul>
         <li>
           <a href="#h_01JJ51R7CSTRHD1XH2GCRVEYXQ"
-            >Eligibility for Redeeming the YouTube product</a
+            >Eligibility for Redeeming the YouTube Premium</a
           >
         </li>
       </ul>
@@ -285,7 +286,7 @@
   <strong>2) Click on the Claim button for the YouTube Premium Gift</strong>
 </p>
 <p>
-  Once you press <strong>Claim </strong>on the YouTube Product Gift in the
+  Once you press <strong>Claim </strong>on the YouTube Premium Gift in the
   <strong>Gift Inventory</strong> and you'll then see a new pop-up with your 12
   character code for this promotion.
 </p>
@@ -302,7 +303,7 @@
   />
 </p>
 <h1 id="h_01JJ51R7CSVPBXVDBXTZWG43MA">
-  How do I redeem the YouTube Product Trial on my YouTube Account?
+  How do I redeem the YouTube Premium Trial on my YouTube Account?
 </h1>
 <p>
   Once you have claimed the code in the <strong>Gift Inventory</strong>, you'll
@@ -314,7 +315,7 @@
 </h2>
 <p>
   To redeem the 3 months YouTube Premium trial code, this offer is only for
-  eligible YouTube Premium subscribers. Learn more
+  eligible potential YouTube Premium subscribers. Learn more
   <a
     href="https://support.google.com/youtube/answer/10324204?hl=en&amp;co=GENIE.Platform%3DAndroid#zippy=%2Ctrial-eligibility-details"
     target="_blank"
@@ -387,13 +388,13 @@
 </p>
 <p>
   <strong
-    >Q: How long does my YouTube Product code last for in my Gift
+    >Q: How long does my YouTube Premium code last for in my Gift
     Inventory?</strong
   >
 </p>
 <p>
   <strong>A: </strong>Once a code is claimed in the
-  <strong>Gift Inventory</strong> in Discord, all YouTube Product codes must be
+  <strong>Gift Inventory</strong> in Discord, all YouTube Premium codes must be
   redeemed by <strong>May 15, 2025 (11:59PM PT)</strong>.
 </p>
 <p>
@@ -418,7 +419,7 @@
 </p>
 <p>
   <strong
-    >Q: Who can redeem this YouTube Product trial to their YouTube
+    >Q: Who can redeem this YouTube Premium trial to their YouTube
     account?</strong
   >
 </p>
@@ -469,7 +470,7 @@
   continue to enjoy YouTube Premium.
 </p>
 <p>
-  However, you can cancel the YouTube product subscription at any time before
+  However, you can cancel the YouTube Premium subscription at any time before
   the end of the 3 months.
 </p>
 <p>
@@ -483,7 +484,7 @@
 <h2 id="h_01JJ51R7CTREYTJVAEB2RDM8XF">Potential Errors and Other Issues</h2>
 <p>
   <strong
-    >Q: What if I don't see the YouTube product code in my Discord Gift
+    >Q: What if I don't see the YouTube Premium code in my Discord Gift
     Inventory? </strong
   >
 </p>
