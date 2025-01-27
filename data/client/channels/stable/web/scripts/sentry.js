@@ -7805,6 +7805,7 @@
           (rK[(rK.PARTY_PRIVACY_VOICE_CHANNEL = 128)] =
             "PARTY_PRIVACY_VOICE_CHANNEL"),
           (rK[(rK.EMBEDDED = 256)] = "EMBEDDED"),
+          (rK[(rK.CONTEXTLESS = 512)] = "CONTEXTLESS"),
           ((rk = et || (et = {}))[(rk.ALL_MESSAGES = 0)] = "ALL_MESSAGES"),
           (rk[(rk.ONLY_MENTIONS = 1)] = "ONLY_MENTIONS"),
           (rk[(rk.NO_MESSAGES = 2)] = "NO_MESSAGES"),
@@ -10658,6 +10659,7 @@
             "app_directory_profile_embed_sent"),
           (ah.APP_DIRECTORY_PAGE_SCROLLED = "app_directory_page_scrolled"),
           (ah.APP_DIRECTORY_INSTALL_CLICKED = "app_directory_install_clicked"),
+          (ah.APP_DIRECTORY_LAUNCH_CLICKED = "app_directory_launch_clicked"),
           (ah.POPULAR_CHANNEL_CLICKED = "popular_channel_clicked"),
           (ah.URL_CLICKED = "url_clicked"),
           (ah.LINK_CLICKED = "link_clicked"),
@@ -11596,7 +11598,7 @@
           (ak.BLACK_FRIDAY_2020_PROMOTION = "360057438734"),
           (ak.KEYBOARD_NAVIGATION = "1500000056121"),
           (ak.DM_COULD_NOT_BE_DELIVERED = "360060145013"),
-          (ak.EPHEMERAL_MESSAGES = "1500000580222"),
+          (ak.EPHEMERAL_MESSAGES = "26501839512855"),
           (ak.OSX_SOUNDSHARE = "1500006741102"),
           (ak.STAGE_CHANNEL_GUIDELINES = "1500010879761"),
           (ak.STAGE_DISCOVERY = "1500011599542"),
@@ -12684,7 +12686,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-01-24-b7273c5116dd655a793b24a00a0e8fec9fd84a66-discord_web",
+              "2025-01-27-da521d735d6bc438f886e7a7115ec7ced2a073dc-discord_web",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12753,8 +12755,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "362392"), "362392"));
-          o.YA("builtAt", String("1737758505000"));
+            o.YA("buildNumber", ((e = "362568"), "362568"));
+          o.YA("builtAt", String("1737966352051"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -54674,4 +54676,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.96b9fbbb2add46657dfc.js.map
+//# sourceMappingURL=sentry.90e576a9f01e57a14761.js.map
