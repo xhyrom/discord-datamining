@@ -5999,13 +5999,16 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   width: 4px;
   height: 4px;
   margin: 0 2px;
-  background-color: var(--header-primary);
+  background-color: var(--channel-icon);
   opacity: 0.1;
   border-radius: 50%;
 }
 .botTag_ac2a99 {
   margin-top: 4px !important;
   margin-left: 8px;
+}
+.avatar_ac2a99 {
+  border: 1px solid var(--border-subtle);
 }
 .icon_a94328 {
   border-radius: var(--radius-md);
@@ -61105,4 +61108,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.7e6cb124eb15a1677f57.css.map*/
+/*# sourceMappingURL=12633.d63db39cd04c7c39210a.css.map*/
