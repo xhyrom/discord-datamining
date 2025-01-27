@@ -230,7 +230,7 @@
     gift link &amp; generate a new one. </span
   >
 </p>
-<h3 id="h_01HGBW8TQPB2WCDH6A4EGR5M66">
+<h3 id="h_01JJMMK46M34R1P0RFQ3D3PETZ">
   Please note, only unclaimed gifts will be listed here, any claimed gifts will
   no longer display in your inventory. If you are looking for your
   <a
