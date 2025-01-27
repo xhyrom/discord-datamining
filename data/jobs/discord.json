@@ -533,67 +533,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7716471002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": false
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6037417002,
-      "location": {
-        "name": "Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7716471002,
-      "updated_at": "2025-01-24T18:51:52-05:00",
-      "requisition_id": "R-100715",
-      "title": "Product Designer, Design Systems",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Design Systems team is a cross-functional team that ensures design quality across all facets of UI, content, and graphics. As a part of the team, you will be responsible for the creation and maintenance of the design system that all product designers, engineers, and product managers use to design &amp;amp; develop at Discord. Using your full range of interaction, visual, and prototyping skills, you will own creating a coherent and ownable look &amp;amp; feel for our desktop and mobile experiences.&lt;/p&gt;\n&lt;p&gt;As a qualified candidate, you have experience contributing to systems projects that deliver value to users and the business. You collaborate effectively with cross-functional partners, including engineers, and communicate ideas clearly. You approach problems with a systems mindset, considering how solutions fit into a cohesive whole. You can articulate design decisions and rationale to a variety of stakeholders and work closely with product teams to adapt and apply systems to meet specific product needs.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Contributing to and maintaining components, patterns, and templates&lt;/li&gt;\n&lt;li&gt;Collaborating with product designers &amp;amp; engineers to ensure successful contributions&lt;/li&gt;\n&lt;li&gt;Supporting the adoption of system elements by sharing your work and presenting it cross-functionally\n&lt;ul&gt;\n&lt;li&gt;Assist in migrating and deprecating legacy elements&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Developing clear, accessible documentation and tutorials to support and educate users of the system\n&lt;ul&gt;\n&lt;li&gt;Provide support and guidance in customer support channels&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Creating detailed mocks and prototypes to communicate your ideas effectively, leveraging user feedback and data to guide decisions&lt;/li&gt;\n&lt;li&gt;Contributing fresh ideas and supporting the team in evolving the system towards next-generation experiences&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Minimum of 2 years experience designing and shipping a web/app product for a variety of devices and platforms.&lt;/li&gt;\n&lt;li&gt;Experience working on design systems (creation, documentation &amp;amp; support)&lt;/li&gt;\n&lt;li&gt;Highly proficient using Figma, using styles, variables and components&lt;/li&gt;\n&lt;li&gt;Proficiency with technical UX writing&lt;/li&gt;\n&lt;li&gt;Experience with inclusive design / WCAG&lt;/li&gt;\n&lt;li&gt;Ownership mindset with a bias towards action, helping to drive projects and decisions forward.&lt;/li&gt;\n&lt;li&gt;High craft bar and attention to detail in user experience, visual design, interaction design, and prototyping.&lt;/li&gt;\n&lt;li&gt;Ability communicate complex problems and experiences simply, and to know when a user journey, wireframe, deck, prototype, or design specification will be most effective in doing so.&lt;/li&gt;\n&lt;li&gt;Experience designing for mature products — against visions, and through incremental improvements.&lt;/li&gt;\n&lt;li&gt;Ability to work with a low-ego, highly collaborative, cross-functional team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with version control and Github&lt;/li&gt;\n&lt;li&gt;Technical writing experience, familiarity with markdown&lt;/li&gt;\n&lt;li&gt;Experience creating Figma Tooling&lt;/li&gt;\n&lt;li&gt;Casual or committed gamer&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $147,000 to $161,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;&lt;em&gt;Check out our&amp;nbsp;&lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#inclusion&quot;&gt;&lt;em&gt;inclusion, diversity and purpose efforts&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, company &lt;/em&gt;&lt;a href=&quot;https://discord.com/blog/the-seven-principles-of-working-at-discord&quot;&gt;&lt;em&gt;principles&lt;/em&gt;&lt;/a&gt;&lt;em&gt;, or learn more about the &lt;/em&gt;&lt;a href=&quot;https://discord.com/careers#life-discord&quot;&gt;&lt;em&gt;Life @ Discord&lt;/em&gt;&lt;/a&gt;&lt;em&gt; experience!&lt;/em&gt;&lt;/h4&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074055002,
-          "name": "Product Design",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7828322002",
       "data_compliance": [
         {
@@ -2469,6 +2408,6 @@
     }
   ],
   "meta": {
-    "total": 41
+    "total": 40
   }
 }
