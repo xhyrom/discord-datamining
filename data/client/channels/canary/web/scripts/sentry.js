@@ -12685,7 +12685,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c9dd30fdcc5b39af1f9fe551702ffccfc14f177e",
+            release: "discord_web-ca2f1f21591dd4b10623dd04d0e7af9f9623a654",
             beforeSend: function (e, t) {
               var r, a;
               return !(
@@ -12754,8 +12754,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", ((e = "362632"), "362632"));
-          o.YA("builtAt", String("1737999862030"));
+            o.YA("buildNumber", ((e = "362663"), "362663"));
+          o.YA("builtAt", String("1738001728305"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -15736,14 +15736,17 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_23: "#89b8f5",
+              BLUE_NEW_1: "#e7eeff",
+              BLUE_NEW_16: "#a6c9f9",
               BLUE_NEW_26: "#7cb0f3",
               BLUE_NEW_31: "#67a3f0",
               BLUE_NEW_36: "#5297ed",
-              BLUE_NEW_37: "#4e94ec",
               BLUE_NEW_42: "#3687e8",
               BLUE_NEW_49: "#0074e3",
-              BLUE_NEW_57: "#0d64be",
+              BLUE_NEW_66: "#124f91",
+              BLUE_NEW_77: "#103761",
+              BLUE_NEW_86: "#0b243f",
+              BLUE_NEW_94: "#061423",
               BLURPLE_10: "#c8d2fe",
               BLURPLE_14: "#bac7fe",
               BLURPLE_19: "#aabafd",
@@ -15815,12 +15818,17 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_26: "#73c081",
-              GREEN_NEW_34: "#54ac67",
-              GREEN_NEW_39: "#409f57",
+              GREEN_NEW_1: "#d2ffda",
+              GREEN_NEW_17: "#95d79f",
+              GREEN_NEW_27: "#6fbd7d",
+              GREEN_NEW_32: "#5cb16d",
               GREEN_NEW_50: "#00863a",
               GREEN_NEW_53: "#087d37",
               GREEN_NEW_57: "#0f7233",
+              GREEN_NEW_64: "#135f2b",
+              GREEN_NEW_76: "#12401d",
+              GREEN_NEW_86: "#0c2812",
+              GREEN_NEW_94: "#061609",
               GUILD_BOOSTING_BLUE: "#3e70dd",
               GUILD_BOOSTING_BLUE_FOR_GRADIENTS: "#3442d9",
               GUILD_BOOSTING_PINK: "#ff73fa",
@@ -16271,13 +16279,17 @@
               RED_830: "#2e090a",
               RED_860: "#280808",
               RED_900: "#220606",
-              RED_NEW_21: "#fc9792",
+              RED_NEW_1: "#ffdfdf",
+              RED_NEW_12: "#ffb7b3",
+              RED_NEW_23: "#fa908b",
               RED_NEW_29: "#f47a77",
-              RED_NEW_35: "#ec6563",
               RED_NEW_50: "#d22d39",
-              RED_NEW_55: "#bb2b34",
               RED_NEW_57: "#b32a31",
               RED_NEW_61: "#a1272d",
+              RED_NEW_66: "#8c2428",
+              RED_NEW_75: "#681c1e",
+              RED_NEW_85: "#441312",
+              RED_NEW_94: "#250908",
               REDDIT: "#ff4500",
               RIOT_GAMES: "#ea0029",
               ROLE_BLUE: "#206694",
@@ -16389,10 +16401,14 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
+              YELLOW_NEW_1: "#ffe8d7",
+              YELLOW_NEW_15: "#e6c094",
+              YELLOW_NEW_24: "#d5a76e",
               YELLOW_NEW_30: "#c99656",
-              YELLOW_NEW_38: "#b98037",
-              YELLOW_NEW_43: "#ae7322",
-              YELLOW_NEW_55: "#905904",
+              YELLOW_NEW_65: "#6e4608",
+              YELLOW_NEW_76: "#4d3108",
+              YELLOW_NEW_85: "#332006",
+              YELLOW_NEW_94: "#1b1103",
               YOUTUBE: "#cb2120",
             },
           };
@@ -54675,4 +54691,4 @@ ${eQ}
     window.DiscordSentry = (0, e.j)();
   })();
 })();
-//# sourceMappingURL=sentry.161663660442a843d667.js.map
+//# sourceMappingURL=sentry.3d4c913a863d5d49bdd1.js.map
