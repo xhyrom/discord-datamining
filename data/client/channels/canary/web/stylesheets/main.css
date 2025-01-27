@@ -6230,7 +6230,7 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 }
 @use postcss-pxtorem;
 .density-compact.visual-refresh {
-  --chat-markup-line-height: 22px;
+  --chat-markup-line-height: 1.375rem;
 }
 .markup_f8f345 {
   font-size: 1rem;
@@ -60047,19 +60047,19 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
+  --chat-resize-handle-width: 8px;
+  --chat-input-icon-size: 24px;
+  --chat-markup-line-height: 1.375rem;
   --guildbar-avatar-size: 48px;
   --guildbar-folder-size: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
-  --chat-resize-handle-width: 8px;
-  --chat-input-icon-size: 24px;
-  --chat-markup-line-height: 22px;
 }
 .visual-refresh {
+  --chat-input-icon-size: 20px;
+  --chat-markup-line-height: 1.5;
   --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
-  --chat-input-icon-size: 20px;
-  --chat-markup-line-height: 24px;
 }
 html,
 body,
@@ -61105,4 +61105,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.72f1cc0cf1500b5e7fe3.css.map*/
+/*# sourceMappingURL=12633.7e6cb124eb15a1677f57.css.map*/
