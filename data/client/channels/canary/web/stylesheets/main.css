@@ -14864,7 +14864,7 @@ html:not(.visual-refresh) .container_b01a4f {
 }
 .headerContainer_e9d805 {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 .headerContainer_e9d805 > :not(:last-child) {
   margin-bottom: 8px;
@@ -29210,6 +29210,22 @@ html:not(.visual-refresh) .root_b93e3f {
 .clickable_eebaf6:hover {
   opacity: 1;
 }
+.tooltipContainer_d95c69 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px 4px;
+}
+.tooltipDescription_d95c69 {
+  margin-top: var(--spacing-4);
+}
+.tooltipWordmarkContainer_d95c69 {
+  margin-top: 8px;
+}
+.tooltipWordmark_d95c69 {
+  color: var(--text-muted);
+}
 .container_b64375 {
   display: flex;
   flex-wrap: wrap;
@@ -29294,22 +29310,6 @@ html:not(.visual-refresh) .root_b93e3f {
 .bottomRightStar_b64375 {
   bottom: -16px;
   right: -15px;
-}
-.tieredTenureBadgeTooltip_b64375 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 8px 4px;
-}
-.tieredTenureBadgeTooltipDescription_b64375 {
-  margin-top: var(--spacing-4);
-}
-.tieredTenureBadgeTooltipWordmarkContainer_b64375 {
-  margin-top: 8px;
-}
-.tieredTenureBadgeTooltipWordmark_b64375 {
-  color: var(--text-muted);
 }
 .nameTag_cd0810 {
   display: flex;
@@ -34630,6 +34630,18 @@ img.thumbnail_c64476 {
 }
 .clipIcon_f42767 {
   color: var(--header-primary);
+}
+.header_d240b6 {
+  margin-bottom: 4px;
+}
+.list_d240b6 {
+  display: flex;
+  gap: 2px;
+}
+.row_d240b6 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .layoutContainer_c39d85 {
   display: flex;
@@ -61045,4 +61057,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.7cb1d7cf900c69f21806.css.map*/
+/*# sourceMappingURL=12633.1a50a6097a1ac48838ae.css.map*/
