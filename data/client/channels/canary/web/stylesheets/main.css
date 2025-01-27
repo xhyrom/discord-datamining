@@ -23515,6 +23515,7 @@ body .headerAnimation_a27f2f {
   border-radius: 4px 4px 0 0;
 }
 .closeButton_fff54c {
+  margin: var(--modal-vertical-padding) var(--modal-horizontal-padding);
   margin-left: auto;
 }
 .visual-refresh .container_fff54c {
@@ -61057,4 +61058,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.1a50a6097a1ac48838ae.css.map*/
+/*# sourceMappingURL=12633.de9d69ecb6c1b595331c.css.map*/
