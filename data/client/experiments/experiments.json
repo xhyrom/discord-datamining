@@ -4649,6 +4649,60 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "hash": 1325121101,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_count": 1,
+              "max_count": 200
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "1042148168726487101"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2023-03_store_latest_message_data",
       "label": "Store latest message data",
@@ -5033,60 +5087,6 @@
       "config_keys": [
         "enabled"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1325121101,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 1,
-              "max_count": 200
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "1042148168726487101"
-        ]
-      },
-      "overrides_formatted": []
     }
   },
   {
@@ -10570,10 +10570,18 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 1000,
+                  "end": 2000
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
-                  "start": 0,
+                  "start": 2000,
                   "end": 10000
                 }
               ]
@@ -10582,7 +10590,7 @@
           "filters": []
         }
       ],
-      "revision": 0,
+      "revision": 1,
       "overrides": {},
       "overrides_formatted": [
         {
@@ -12633,33 +12641,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-01_updated_activity_privacy_controls",
-      "label": "Enables the rtc popout and updated settings page",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: RTC Popout",
-        "Treatment 2: Updated Settings Page",
-        "Treatment 3: Both Popout and Settings Page"
-      ],
-      "hash": 3683707426,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-01_voice_and_video_settings_refresh",
       "label": "Voice and Video Settings Refresh",
       "description": [
@@ -13327,6 +13308,33 @@
       "revision": 2,
       "overrides": {},
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_updated_activity_privacy_controls",
+      "label": "Enables the rtc popout and updated settings page",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: RTC Popout",
+        "Treatment 2: Updated Settings Page",
+        "Treatment 3: Both Popout and Settings Page"
+      ],
+      "hash": 3683707426,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
