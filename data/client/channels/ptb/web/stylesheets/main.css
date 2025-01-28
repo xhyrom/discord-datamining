@@ -2547,6 +2547,16 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 .collapseable_a3cc4a:not(:last-child) {
   margin-bottom: 16px;
 }
+.visual-refresh .collapseable_a3cc4a {
+  background-color: var(--background-base-low);
+  border-radius: var(--radius-sm);
+}
+.visual-refresh .collapseable_a3cc4a:active {
+  background-color: var(--background-mod-subtle);
+}
+.visual-refresh .collapseable_a3cc4a:before {
+  display: none;
+}
 .header_a3cc4a {
   position: relative;
   cursor: pointer;
@@ -5999,13 +6009,16 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   width: 4px;
   height: 4px;
   margin: 0 2px;
-  background-color: var(--header-primary);
+  background-color: var(--channel-icon);
   opacity: 0.1;
   border-radius: 50%;
 }
 .botTag_ac2a99 {
   margin-top: 4px !important;
   margin-left: 8px;
+}
+.avatar_ac2a99 {
+  border: 1px solid var(--border-subtle);
 }
 .icon_a94328 {
   border-radius: var(--radius-md);
@@ -6230,7 +6243,7 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 }
 @use postcss-pxtorem;
 .density-compact.visual-refresh {
-  --chat-markup-line-height: 22px;
+  --chat-markup-line-height: 1.375rem;
 }
 .markup_f8f345 {
   font-size: 1rem;
@@ -9021,7 +9034,7 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   padding: var(--space-4) var(--space-12);
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0 auto var(--space-8) auto;
   width: -moz-max-content;
   width: max-content;
   min-width: 284px;
@@ -9062,6 +9075,9 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
 }
 .visual-refresh .jumpToPresentBar_cf58b5 {
   color: var(--text-default);
+}
+.visual-refresh-chat-input .bottomBar_cf58b5 {
+  margin: 0 auto;
 }
 .newMessagesBar_cf58b5 {
   height: 32px;
@@ -13365,6 +13381,10 @@ div.modalHeader_c5e09c {
   justify-content: space-between;
   align-items: center;
 }
+.visual-refresh .footer_f82cc7 {
+  background-color: transparent;
+  background-color: initial;
+}
 .cancelAllButton_f82cc7 {
   margin: 0 auto 0 0;
 }
@@ -14556,7 +14576,6 @@ html:not(.visual-refresh) .container_b01a4f {
 }
 .visual-refresh .container_bf3873 {
   margin-bottom: 16px;
-  margin-top: 8px;
 }
 .appContainer_bf3873 {
   padding: 12px;
@@ -14854,7 +14873,7 @@ html:not(.visual-refresh) .container_b01a4f {
 }
 .headerContainer_e9d805 {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 .headerContainer_e9d805 > :not(:last-child) {
   margin-bottom: 8px;
@@ -18423,6 +18442,9 @@ h3.improved_f017d0:after {
 }
 .body_e89716 {
   padding: 8px 24px 16px;
+}
+.visual-refresh .body_e89716 {
+  padding-top: 16px;
 }
 .slideContainer_fc3a81 {
   display: flex;
@@ -23505,6 +23527,7 @@ body .headerAnimation_a27f2f {
   border-radius: 4px 4px 0 0;
 }
 .closeButton_fff54c {
+  margin: var(--modal-vertical-padding) var(--modal-horizontal-padding);
   margin-left: auto;
 }
 .visual-refresh .container_fff54c {
@@ -29200,6 +29223,22 @@ html:not(.visual-refresh) .root_b93e3f {
 .clickable_eebaf6:hover {
   opacity: 1;
 }
+.tooltipContainer_d95c69 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px 4px;
+}
+.tooltipDescription_d95c69 {
+  margin-top: var(--spacing-4);
+}
+.tooltipWordmarkContainer_d95c69 {
+  margin-top: 8px;
+}
+.tooltipWordmark_d95c69 {
+  color: var(--text-muted);
+}
 .container_b64375 {
   display: flex;
   flex-wrap: wrap;
@@ -29284,22 +29323,6 @@ html:not(.visual-refresh) .root_b93e3f {
 .bottomRightStar_b64375 {
   bottom: -16px;
   right: -15px;
-}
-.tieredTenureBadgeTooltip_b64375 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 8px 4px;
-}
-.tieredTenureBadgeTooltipDescription_b64375 {
-  margin-top: var(--spacing-4);
-}
-.tieredTenureBadgeTooltipWordmarkContainer_b64375 {
-  margin-top: 8px;
-}
-.tieredTenureBadgeTooltipWordmark_b64375 {
-  color: var(--text-muted);
 }
 .nameTag_cd0810 {
   display: flex;
@@ -31702,8 +31725,21 @@ html:not(.visual-refresh-chat-input) .inner_c59af2 {
 .beginning_c7ddf6 {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   align-items: center;
   gap: var(--space-8);
+  cursor: pointer;
+  color: var(--interactive-normal);
+  transition: color.15s linear;
+}
+.beginning_c7ddf6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: var(--interactive-hover);
+}
+.beginning_c7ddf6.selected_c7ddf6,
+.beginning_c7ddf6:focus {
+  color: var(--interactive-active);
 }
 .end_c7ddf6 {
   display: flex;
@@ -31715,18 +31751,6 @@ html:not(.visual-refresh-chat-input) .inner_c59af2 {
 }
 .emojiButton_c7ddf6 {
   height: auto;
-  color: var(--interactive-normal);
-}
-.emojiButton_c7ddf6.selected_c7ddf6,
-.emojiButton_c7ddf6:hover,
-.keyboard-mode .emojiButton_c7ddf6:focus {
-  color: var(--interactive-hover);
-}
-.emojiButton_c7ddf6.active_c7ddf6 {
-  color: var(--interactive-active);
-}
-.emojiButtonInner_c7ddf6 {
-  display: flex;
 }
 .visual-refresh .bar_c7ddf6 {
   padding-left: var(--space-20);
@@ -31735,7 +31759,6 @@ html:not(.visual-refresh-chat-input) .inner_c59af2 {
   padding: 0;
 }
 .visual-refresh .emojiButton_c7ddf6.selected_c7ddf6,
-.visual-refresh .emojiButton_c7ddf6:hover,
 .visual-refresh .emojiButton_c7ddf6:active {
   color: var(--icon-primary);
 }
@@ -34621,6 +34644,18 @@ img.thumbnail_c64476 {
 .clipIcon_f42767 {
   color: var(--header-primary);
 }
+.header_d240b6 {
+  margin-bottom: 4px;
+}
+.list_d240b6 {
+  display: flex;
+  gap: 2px;
+}
+.row_d240b6 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .layoutContainer_c39d85 {
   display: flex;
   align-items: center;
@@ -36678,6 +36713,11 @@ img.thumbnail_c64476 {
   height: 24px;
   border-radius: 50%;
   background: transparent;
+}
+:where(.visual-refresh) .visual-refresh .radioIndicatorGroup_eb92a8 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
 }
 :where(.visual-refresh) .refreshIcon_eb92a8 {
   fill: white;
@@ -56086,9 +56126,7 @@ html.disable-forced-colors * {
   --background-message-highlight-hover: hsl(
     var(--opacity-blurple-12-hsl) / 0.12156862745098039
   );
-  --background-message-hover: hsl(
-    var(--opacity-black-12-hsl) / 0.12156862745098039
-  );
+  --background-message-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-modifier-accent: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -56103,6 +56141,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-69);
   --bg-base-secondary: var(--neutral-72);
   --bg-base-tertiary: var(--neutral-76);
+  --bg-brand: var(--blurple-50);
   --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
@@ -56171,16 +56210,14 @@ html.disable-forced-colors * {
   --icon-muted: var(--neutral-22);
   --icon-primary: var(--neutral-2);
   --icon-secondary: var(--neutral-15);
-  --info-danger-background: hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
-  --info-danger-text: var(--red-new-21);
-  --info-help-background: hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
-  --info-help-text: var(--blue-new-23);
-  --info-positive-background: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --info-positive-text: var(--green-new-26);
-  --info-warning-background: hsl(var(--opacity-yellow-20-hsl) / 0.2);
-  --info-warning-text: var(--yellow-new-30);
+  --info-danger-background: var(--red-new-75);
+  --info-danger-text: var(--red-new-12);
+  --info-help-background: var(--blue-new-77);
+  --info-help-text: var(--blue-new-16);
+  --info-positive-background: var(--green-new-76);
+  --info-positive-text: var(--green-new-17);
+  --info-warning-background: var(--yellow-new-76);
+  --info-warning-text: var(--yellow-new-15);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
@@ -56207,10 +56244,10 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-26);
   --text-muted: var(--neutral-22);
   --text-normal: var(--neutral-11);
-  --text-positive: var(--green-new-26);
+  --text-positive: var(--green-new-17);
   --text-primary: var(--neutral-1);
   --text-secondary: var(--neutral-15);
-  --text-warning: var(--yellow-new-30);
+  --text-warning: var(--yellow-new-15);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-69);
   --background-base-lower: var(--neutral-72);
@@ -56222,16 +56259,11 @@ html.disable-forced-colors * {
   --background-code-deletion: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --background-feedback-critical: hsl(
-    var(--opacity-red-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-info: hsl(
-    var(--opacity-blue-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-positive: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --background-feedback-warning: hsl(var(--opacity-yellow-20-hsl) / 0.2);
+  --background-feedback-critical: var(--red-new-75);
+  --background-feedback-info: var(--blue-new-77);
+  --background-feedback-positive: var(--green-new-76);
+  --background-feedback-warning: var(--yellow-new-76);
+  --background-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -56241,9 +56273,9 @@ html.disable-forced-colors * {
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --chat-background-default: var(--neutral-69);
-  --checkbox-background-checked: var(--brand-500);
+  --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-  --checkbox-border-checked: var(--brand-500);
+  --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-34);
   --icon-default: var(--neutral-2);
   --icon-tertiary: var(--neutral-22);
@@ -56268,10 +56300,10 @@ html.disable-forced-colors * {
   --text-code-title: var(--blurple-12);
   --text-code-variable: var(--blue-new-23);
   --text-default: var(--neutral-11);
-  --text-feedback-critical: var(--red-new-21);
-  --text-feedback-info: var(--blue-new-23);
-  --text-feedback-positive: var(--green-new-26);
-  --text-feedback-warning: var(--yellow-new-30);
+  --text-feedback-critical: var(--red-new-12);
+  --text-feedback-info: var(--blue-new-16);
+  --text-feedback-positive: var(--green-new-17);
+  --text-feedback-warning: var(--yellow-new-15);
   --text-tertiary: var(--neutral-22);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
@@ -56318,8 +56350,8 @@ html.disable-forced-colors * {
     );
     --background-message-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-accent: color-mix(
@@ -56460,46 +56492,42 @@ html.disable-forced-colors * {
     );
     --info-danger-background: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-75) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-21) 100%,
+      var(--red-new-12) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-77) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-help-text: color-mix(
       in oklab,
-      var(--blue-new-23) 100%,
+      var(--blue-new-16) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-positive-background: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-17) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--theme-base-color-amount, 0%)
+      var(--yellow-new-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-warning-text: color-mix(
       in oklab,
-      var(--yellow-new-30) 100%,
+      var(--yellow-new-15) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --input-background: color-mix(
@@ -56621,7 +56649,7 @@ html.disable-forced-colors * {
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-17) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -56636,7 +56664,7 @@ html.disable-forced-colors * {
     );
     --text-warning: color-mix(
       in oklab,
-      var(--yellow-new-30) 100%,
+      var(--yellow-new-15) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --app-border-frame: color-mix(
@@ -56680,26 +56708,28 @@ html.disable-forced-colors * {
     );
     --background-feedback-critical: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-75) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-info: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-77) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-positive: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-warning: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+      var(--yellow-new-76) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-mod-faint: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-mod-normal: color-mix(
@@ -56754,7 +56784,7 @@ html.disable-forced-colors * {
     );
     --checkbox-background-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-default: color-mix(
@@ -56765,7 +56795,7 @@ html.disable-forced-colors * {
     );
     --checkbox-border-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -56890,22 +56920,22 @@ html.disable-forced-colors * {
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-21) 100%,
+      var(--red-new-12) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
       in oklab,
-      var(--blue-new-23) 100%,
+      var(--blue-new-16) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-17) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
       in oklab,
-      var(--yellow-new-30) 100%,
+      var(--yellow-new-15) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-tertiary: color-mix(
@@ -56930,7 +56960,7 @@ html.disable-forced-colors * {
   --background-message-highlight-hover: hsl(
     var(--opacity-blurple-20-hsl) / 0.2
   );
-  --background-message-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --background-message-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-modifier-accent: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-modifier-active: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-modifier-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -56943,6 +56973,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-2);
   --bg-base-secondary: var(--neutral-2);
   --bg-base-tertiary: var(--neutral-4);
+  --bg-brand: var(--blurple-50);
   --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
@@ -57017,20 +57048,14 @@ html.disable-forced-colors * {
   --icon-muted: var(--neutral-38);
   --icon-primary: var(--neutral-59);
   --icon-secondary: var(--neutral-44);
-  --info-danger-background: hsl(
-    var(--opacity-red-12-hsl) / 0.12156862745098039
-  );
-  --info-danger-text: var(--red-new-55);
-  --info-help-background: hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-  --info-help-text: var(--blue-new-57);
-  --info-positive-background: hsl(
-    var(--opacity-green-4-hsl) / 0.0392156862745098
-  );
-  --info-positive-text: var(--green-new-53);
-  --info-warning-background: hsl(
-    var(--opacity-yellow-12-hsl) / 0.12156862745098039
-  );
-  --info-warning-text: var(--yellow-new-55);
+  --info-danger-background: var(--red-new-1);
+  --info-danger-text: var(--red-new-66);
+  --info-help-background: var(--blue-new-1);
+  --info-help-text: var(--blue-new-66);
+  --info-positive-background: var(--green-new-1);
+  --info-positive-text: var(--green-new-64);
+  --info-warning-background: var(--yellow-new-1);
+  --info-warning-text: var(--yellow-new-65);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --input-focused-border: hsl(var(--black-hsl) / 0.04);
@@ -57057,10 +57082,10 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-49);
   --text-muted: var(--neutral-38);
   --text-normal: var(--neutral-67);
-  --text-positive: var(--green-new-53);
+  --text-positive: var(--green-new-64);
   --text-primary: var(--neutral-71);
   --text-secondary: var(--neutral-44);
-  --text-warning: var(--yellow-new-55);
+  --text-warning: var(--yellow-new-65);
   --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
@@ -57072,18 +57097,11 @@ html.disable-forced-colors * {
   --background-code-deletion: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --background-feedback-critical: hsl(
-    var(--opacity-red-12-hsl) / 0.12156862745098039
-  );
-  --background-feedback-info: hsl(
-    var(--opacity-blue-12-hsl) / 0.12156862745098039
-  );
-  --background-feedback-positive: hsl(
-    var(--opacity-green-4-hsl) / 0.0392156862745098
-  );
-  --background-feedback-warning: hsl(
-    var(--opacity-yellow-12-hsl) / 0.12156862745098039
-  );
+  --background-feedback-critical: var(--red-new-1);
+  --background-feedback-info: var(--blue-new-1);
+  --background-feedback-positive: var(--green-new-1);
+  --background-feedback-warning: var(--yellow-new-1);
+  --background-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -57095,9 +57113,9 @@ html.disable-forced-colors * {
   );
   --border-normal: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --chat-background-default: var(--neutral-1);
-  --checkbox-background-checked: var(--brand-500);
+  --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-  --checkbox-border-checked: var(--brand-500);
+  --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-29);
   --icon-default: var(--neutral-59);
   --icon-tertiary: var(--neutral-38);
@@ -57122,10 +57140,10 @@ html.disable-forced-colors * {
   --text-code-title: var(--blurple-69);
   --text-code-variable: var(--blue-new-61);
   --text-default: var(--neutral-67);
-  --text-feedback-critical: var(--red-new-55);
-  --text-feedback-info: var(--blue-new-57);
-  --text-feedback-positive: var(--green-new-53);
-  --text-feedback-warning: var(--yellow-new-55);
+  --text-feedback-critical: var(--red-new-66);
+  --text-feedback-info: var(--blue-new-66);
+  --text-feedback-positive: var(--green-new-64);
+  --text-feedback-warning: var(--yellow-new-65);
   --text-tertiary: var(--neutral-38);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
@@ -57172,8 +57190,8 @@ html.disable-forced-colors * {
     );
     --background-message-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-accent: color-mix(
@@ -57314,46 +57332,42 @@ html.disable-forced-colors * {
     );
     --info-danger-background: color-mix(
       in oklab,
-      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-55) 100%,
+      var(--red-new-66) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-help-text: color-mix(
       in oklab,
-      var(--blue-new-57) 100%,
+      var(--blue-new-66) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-positive-background: color-mix(
       in oklab,
-      hsl(var(--opacity-green-4-hsl) / 0.0392156862745098) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-53) 100%,
+      var(--green-new-64) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
+      var(--yellow-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-warning-text: color-mix(
       in oklab,
-      var(--yellow-new-55) 100%,
+      var(--yellow-new-65) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --input-background: color-mix(
@@ -57475,7 +57489,7 @@ html.disable-forced-colors * {
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-53) 100%,
+      var(--green-new-64) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -57490,7 +57504,7 @@ html.disable-forced-colors * {
     );
     --text-warning: color-mix(
       in oklab,
-      var(--yellow-new-55) 100%,
+      var(--yellow-new-65) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --app-border-frame: color-mix(
@@ -57534,26 +57548,28 @@ html.disable-forced-colors * {
     );
     --background-feedback-critical: color-mix(
       in oklab,
-      hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-info: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-positive: color-mix(
       in oklab,
-      hsl(var(--opacity-green-4-hsl) / 0.0392156862745098) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-warning: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      var(--yellow-new-1) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-mod-faint: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-mod-normal: color-mix(
@@ -57608,7 +57624,7 @@ html.disable-forced-colors * {
     );
     --checkbox-background-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-default: color-mix(
@@ -57619,7 +57635,7 @@ html.disable-forced-colors * {
     );
     --checkbox-border-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -57744,22 +57760,22 @@ html.disable-forced-colors * {
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-55) 100%,
+      var(--red-new-66) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
       in oklab,
-      var(--blue-new-57) 100%,
+      var(--blue-new-66) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-53) 100%,
+      var(--green-new-64) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
       in oklab,
-      var(--yellow-new-55) 100%,
+      var(--yellow-new-65) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-tertiary: color-mix(
@@ -57784,7 +57800,7 @@ html.disable-forced-colors * {
   --background-message-highlight-hover: hsl(
     var(--opacity-blurple-12-hsl) / 0.12156862745098039
   );
-  --background-message-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --background-message-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-modifier-accent: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -57799,6 +57815,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-95);
   --bg-base-secondary: var(--neutral-97);
   --bg-base-tertiary: var(--neutral-100);
+  --bg-brand: var(--blurple-50);
   --bg-mod-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --bg-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --bg-mod-subtle: hsl(var(--opacity-20-hsl) / 0.2);
@@ -57867,16 +57884,14 @@ html.disable-forced-colors * {
   --icon-muted: var(--neutral-33);
   --icon-primary: var(--neutral-14);
   --icon-secondary: var(--neutral-27);
-  --info-danger-background: hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
-  --info-danger-text: var(--red-new-35);
-  --info-help-background: hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
-  --info-help-text: var(--blue-new-37);
-  --info-positive-background: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --info-positive-text: var(--green-new-39);
-  --info-warning-background: hsl(var(--opacity-yellow-20-hsl) / 0.2);
-  --info-warning-text: var(--yellow-new-43);
+  --info-danger-background: var(--red-new-94);
+  --info-danger-text: var(--red-new-29);
+  --info-help-background: var(--blue-new-94);
+  --info-help-text: var(--blue-new-31);
+  --info-positive-background: var(--green-new-94);
+  --info-positive-text: var(--green-new-32);
+  --info-warning-background: var(--yellow-new-94);
+  --info-warning-text: var(--yellow-new-30);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
   --interactive-active: var(--neutral-7);
@@ -57902,10 +57917,10 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-42);
   --text-muted: var(--neutral-33);
   --text-normal: var(--neutral-10);
-  --text-positive: var(--green-new-39);
+  --text-positive: var(--green-new-32);
   --text-primary: var(--neutral-7);
   --text-secondary: var(--neutral-27);
-  --text-warning: var(--yellow-new-43);
+  --text-warning: var(--yellow-new-30);
   --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
@@ -57917,16 +57932,11 @@ html.disable-forced-colors * {
   --background-code-deletion: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --background-feedback-critical: hsl(
-    var(--opacity-red-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-info: hsl(
-    var(--opacity-blue-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-positive: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --background-feedback-warning: hsl(var(--opacity-yellow-20-hsl) / 0.2);
+  --background-feedback-critical: var(--red-new-94);
+  --background-feedback-info: var(--blue-new-94);
+  --background-feedback-positive: var(--green-new-94);
+  --background-feedback-warning: var(--yellow-new-94);
+  --background-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -57938,9 +57948,9 @@ html.disable-forced-colors * {
   );
   --border-normal: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
   --chat-background-default: var(--neutral-92);
-  --checkbox-background-checked: var(--brand-500);
+  --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-  --checkbox-border-checked: var(--brand-500);
+  --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-43);
   --icon-default: var(--neutral-14);
   --icon-tertiary: var(--neutral-33);
@@ -57965,10 +57975,10 @@ html.disable-forced-colors * {
   --text-code-title: var(--blurple-26);
   --text-code-variable: var(--blue-new-36);
   --text-default: var(--neutral-10);
-  --text-feedback-critical: var(--red-new-35);
-  --text-feedback-info: var(--blue-new-37);
-  --text-feedback-positive: var(--green-new-39);
-  --text-feedback-warning: var(--yellow-new-43);
+  --text-feedback-critical: var(--red-new-29);
+  --text-feedback-info: var(--blue-new-31);
+  --text-feedback-positive: var(--green-new-32);
+  --text-feedback-warning: var(--yellow-new-30);
   --text-tertiary: var(--neutral-33);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
@@ -58015,8 +58025,8 @@ html.disable-forced-colors * {
     );
     --background-message-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-accent: color-mix(
@@ -58157,46 +58167,42 @@ html.disable-forced-colors * {
     );
     --info-danger-background: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-35) 100%,
+      var(--red-new-29) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-help-text: color-mix(
       in oklab,
-      var(--blue-new-37) 100%,
+      var(--blue-new-31) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-positive-background: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-39) 100%,
+      var(--green-new-32) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--theme-base-color-amount, 0%)
+      var(--yellow-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-warning-text: color-mix(
       in oklab,
-      var(--yellow-new-43) 100%,
+      var(--yellow-new-30) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --input-background: color-mix(
@@ -58312,7 +58318,7 @@ html.disable-forced-colors * {
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-39) 100%,
+      var(--green-new-32) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -58327,7 +58333,7 @@ html.disable-forced-colors * {
     );
     --text-warning: color-mix(
       in oklab,
-      var(--yellow-new-43) 100%,
+      var(--yellow-new-30) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --app-border-frame: color-mix(
@@ -58371,26 +58377,28 @@ html.disable-forced-colors * {
     );
     --background-feedback-critical: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-info: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-positive: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-warning: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+      var(--yellow-new-94) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-mod-faint: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --background-mod-normal: color-mix(
@@ -58445,7 +58453,7 @@ html.disable-forced-colors * {
     );
     --checkbox-background-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-default: color-mix(
@@ -58456,7 +58464,7 @@ html.disable-forced-colors * {
     );
     --checkbox-border-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -58581,22 +58589,22 @@ html.disable-forced-colors * {
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-35) 100%,
+      var(--red-new-29) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
       in oklab,
-      var(--blue-new-37) 100%,
+      var(--blue-new-31) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-39) 100%,
+      var(--green-new-32) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
       in oklab,
-      var(--yellow-new-43) 100%,
+      var(--yellow-new-30) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-tertiary: color-mix(
@@ -58621,9 +58629,7 @@ html.disable-forced-colors * {
   --background-message-highlight-hover: hsl(
     var(--opacity-blurple-12-hsl) / 0.12156862745098039
   );
-  --background-message-hover: hsl(
-    var(--opacity-black-12-hsl) / 0.12156862745098039
-  );
+  --background-message-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-modifier-accent: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -58638,6 +58644,7 @@ html.disable-forced-colors * {
   --bg-base-primary: var(--neutral-82);
   --bg-base-secondary: var(--neutral-86);
   --bg-base-tertiary: var(--neutral-92);
+  --bg-brand: var(--blurple-50);
   --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
@@ -58706,16 +58713,14 @@ html.disable-forced-colors * {
   --icon-muted: var(--neutral-29);
   --icon-primary: var(--neutral-10);
   --icon-secondary: var(--neutral-22);
-  --info-danger-background: hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
-  --info-danger-text: var(--red-new-29);
-  --info-help-background: hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
-  --info-help-text: var(--blue-new-31);
-  --info-positive-background: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --info-positive-text: var(--green-new-34);
-  --info-warning-background: hsl(var(--opacity-yellow-20-hsl) / 0.2);
-  --info-warning-text: var(--yellow-new-38);
+  --info-danger-background: var(--red-new-85);
+  --info-danger-text: var(--red-new-23);
+  --info-help-background: var(--blue-new-86);
+  --info-help-text: var(--blue-new-26);
+  --info-positive-background: var(--green-new-86);
+  --info-positive-text: var(--green-new-27);
+  --info-warning-background: var(--yellow-new-85);
+  --info-warning-text: var(--yellow-new-24);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
   --interactive-active: var(--neutral-2);
@@ -58741,10 +58746,10 @@ html.disable-forced-colors * {
   --text-link: var(--blue-new-36);
   --text-muted: var(--neutral-29);
   --text-normal: var(--neutral-5);
-  --text-positive: var(--green-new-34);
+  --text-positive: var(--green-new-27);
   --text-primary: var(--neutral-2);
   --text-secondary: var(--neutral-22);
-  --text-warning: var(--yellow-new-38);
+  --text-warning: var(--yellow-new-24);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
@@ -58756,16 +58761,11 @@ html.disable-forced-colors * {
   --background-code-deletion: hsl(
     var(--opacity-red-12-hsl) / 0.12156862745098039
   );
-  --background-feedback-critical: hsl(
-    var(--opacity-red-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-info: hsl(
-    var(--opacity-blue-16-hsl) / 0.1607843137254902
-  );
-  --background-feedback-positive: hsl(
-    var(--opacity-green-8-hsl) / 0.0784313725490196
-  );
-  --background-feedback-warning: hsl(var(--opacity-yellow-20-hsl) / 0.2);
+  --background-feedback-critical: var(--red-new-85);
+  --background-feedback-info: var(--blue-new-86);
+  --background-feedback-positive: var(--green-new-86);
+  --background-feedback-warning: var(--yellow-new-85);
+  --background-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -58775,9 +58775,9 @@ html.disable-forced-colors * {
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --chat-background-default: var(--neutral-81);
-  --checkbox-background-checked: var(--brand-500);
+  --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
-  --checkbox-border-checked: var(--brand-500);
+  --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-40);
   --icon-default: var(--neutral-10);
   --icon-tertiary: var(--neutral-29);
@@ -58802,10 +58802,10 @@ html.disable-forced-colors * {
   --text-code-title: var(--blurple-19);
   --text-code-variable: var(--blue-new-30);
   --text-default: var(--neutral-5);
-  --text-feedback-critical: var(--red-new-29);
-  --text-feedback-info: var(--blue-new-31);
-  --text-feedback-positive: var(--green-new-34);
-  --text-feedback-warning: var(--yellow-new-38);
+  --text-feedback-critical: var(--red-new-23);
+  --text-feedback-info: var(--blue-new-26);
+  --text-feedback-positive: var(--green-new-27);
+  --text-feedback-warning: var(--yellow-new-24);
   --text-tertiary: var(--neutral-29);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
@@ -58852,8 +58852,8 @@ html.disable-forced-colors * {
     );
     --background-message-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-modifier-accent: color-mix(
@@ -58994,46 +58994,42 @@ html.disable-forced-colors * {
     );
     --info-danger-background: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-85) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-29) 100%,
+      var(--red-new-23) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-86) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-help-text: color-mix(
       in oklab,
-      var(--blue-new-31) 100%,
+      var(--blue-new-26) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-positive-background: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-86) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-34) 100%,
+      var(--green-new-27) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
-        var(--theme-base-color-amount, 0%)
+      var(--yellow-new-85) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --info-warning-text: color-mix(
       in oklab,
-      var(--yellow-new-38) 100%,
+      var(--yellow-new-24) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --input-background: color-mix(
@@ -59149,7 +59145,7 @@ html.disable-forced-colors * {
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-34) 100%,
+      var(--green-new-27) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -59164,7 +59160,7 @@ html.disable-forced-colors * {
     );
     --text-warning: color-mix(
       in oklab,
-      var(--yellow-new-38) 100%,
+      var(--yellow-new-24) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --app-border-frame: color-mix(
@@ -59208,26 +59204,28 @@ html.disable-forced-colors * {
     );
     --background-feedback-critical: color-mix(
       in oklab,
-      hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--red-new-85) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-info: color-mix(
       in oklab,
-      hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
-        var(--theme-base-color-amount, 0%)
+      var(--blue-new-86) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-positive: color-mix(
       in oklab,
-      hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
-        var(--theme-base-color-amount, 0%)
+      var(--green-new-86) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --background-feedback-warning: color-mix(
       in oklab,
-      hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+      var(--yellow-new-85) 100%,
+      var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+    );
+    --background-mod-faint: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --background-mod-normal: color-mix(
@@ -59282,7 +59280,7 @@ html.disable-forced-colors * {
     );
     --checkbox-background-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-default: color-mix(
@@ -59293,7 +59291,7 @@ html.disable-forced-colors * {
     );
     --checkbox-border-checked: color-mix(
       in oklab,
-      var(--brand-500) 100%,
+      var(--blurple-50) 100%,
       var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -59418,22 +59416,22 @@ html.disable-forced-colors * {
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-29) 100%,
+      var(--red-new-23) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
       in oklab,
-      var(--blue-new-31) 100%,
+      var(--blue-new-26) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-34) 100%,
+      var(--green-new-27) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
       in oklab,
-      var(--yellow-new-38) 100%,
+      var(--yellow-new-24) 100%,
       var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
     );
     --text-tertiary: color-mix(
@@ -60047,19 +60045,19 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
-  --guildbar-avatar-size: 48px;
-  --guildbar-folder-size: 48px;
-  --modal-horizontal-padding: 16px;
-  --modal-vertical-padding: 16px;
   --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
-  --chat-markup-line-height: 22px;
+  --chat-markup-line-height: 1.375rem;
+  --modal-horizontal-padding: 16px;
+  --modal-vertical-padding: 16px;
+  --guildbar-avatar-size: 48px;
+  --guildbar-folder-size: 48px;
 }
 .visual-refresh {
-  --guildbar-avatar-size: 40px;
-  --modal-horizontal-padding: 24px;
   --chat-input-icon-size: 20px;
-  --chat-markup-line-height: 24px;
+  --chat-markup-line-height: 1.5rem;
+  --modal-horizontal-padding: 24px;
+  --guildbar-avatar-size: 40px;
 }
 html,
 body,
@@ -61105,4 +61103,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.72f1cc0cf1500b5e7fe3.css.map*/
+/*# sourceMappingURL=12633.ee90b98c67042db86203.css.map*/
