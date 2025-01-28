@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7780272002](https://discord.com/jobs/7780272002)
 
-**Updated At:** Fri, 24 Jan 2025 23:51:52 GMT
+**Updated At:** Tue, 28 Jan 2025 17:26:23 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Staff Designer and leader within the organization, you’ll actively define what design quality means within Discord Design, and collaborate across teams to define and execute future evolutions of the product.
