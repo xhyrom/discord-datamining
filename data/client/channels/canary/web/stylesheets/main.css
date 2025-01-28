@@ -23385,9 +23385,6 @@ body .headerAnimation_a27f2f {
 .visual-refresh .body_bf926b {
   padding: 0 var(--space-24);
 }
-.visual-refresh .addPaymentSteps_bf926b {
-  padding: 0 var(--modal-horizontal-padding);
-}
 .visual-refresh .sliderBody_bf926b {
   padding-bottom: var(--space-8);
 }
@@ -23791,16 +23788,6 @@ html:not(.visual-refresh) .root_b93e3f {
 .buttonIcon_b78763 {
   margin-right: 8px;
 }
-.button_b78763 {
-  width: 200px;
-  margin-bottom: 8px;
-}
-.button_b78763:last-child {
-  margin-bottom: 0;
-}
-.button_b78763:nth-of-type(odd) {
-  margin-right: 8px;
-}
 .allPaymentsToggleButton_b78763 {
   color: var(--header-primary);
   margin: 20px auto 0;
@@ -23835,6 +23822,17 @@ html:not(.visual-refresh) .root_b93e3f {
 }
 .SeparatorLower_b78763 {
   margin: 16px 0 0;
+}
+.container_b78763 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--spacing-8);
+  gap: var(--spacing-8);
+}
+@media (max-width: 485px) {
+  .container_b78763 {
+    grid-template-columns: 1fr;
+  }
 }
 .inputWrapper_c40e61 {
   position: relative;
@@ -27557,8 +27555,7 @@ html:not(.visual-refresh) .root_b93e3f {
   margin-top: 8px;
 }
 .body_bb2fc6 {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin: var(--spacing-16) 0 var(--spacing-16);
 }
 .flexColumn_bb2fc6 {
   display: flex;
@@ -28159,6 +28156,9 @@ html:not(.visual-refresh) .root_b93e3f {
 }
 .visual-refresh .categoryList_b96147 {
   top: 120px;
+}
+.visual-refresh .emojiHeader_b96147 {
+  background-color: var(--background-secondary) !important;
 }
 .customGiftBox_c4afc7,
 .customGiftBoxHighlighted_c4afc7 {
@@ -61103,4 +61103,4 @@ img[alt] {
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=12633.ee90b98c67042db86203.css.map*/
+/*# sourceMappingURL=12633.6306e04860ee1b03f955.css.map*/
