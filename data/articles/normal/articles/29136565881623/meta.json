@@ -1,0 +1,38 @@
+{
+  "id": 29136565881623,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/29136565881623.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/29136565881623-Evolving-Nitro-Badges",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436391,
+  "created_at": "2025-01-10T22:55:52Z",
+  "name": "Evolving Nitro Badges",
+  "title": "Evolving Nitro Badges",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-01-15T17:52:57Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [
+    "01HDHA2BW70RHGC8RMMC1F8X43",
+    "01J3NCWMGR03XN71256WH95176"
+  ],
+  "label_names": [
+    "profile",
+    "badge",
+    "answer-bot",
+    "badges",
+    "subscription",
+    "nitro",
+    "tab",
+    "membership",
+    "progress",
+    "evolving",
+    "perk"
+  ]
+}
