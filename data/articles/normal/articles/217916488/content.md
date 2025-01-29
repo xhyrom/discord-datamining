@@ -295,11 +295,17 @@
     >Customizing Direct Messages for Individual Servers on Mobile</span
   >
 </h4>
-<h1 id="h_01J99ZR30T19437KSN0J5299QF">
-  <span style="color: #5765f2" data-darkreader-inline-color=""
-    >Blocking Users </span
+<h1 id="h_01J99ZR30T19437KSN0J5299QF">Blocking Users</h1>
+<div class="book-box">
+  Want to ignore users instead of blocking them? Check out our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28084948873623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >guide on ignoring users</a
   >
-</h1>
+  to learn about this alternative option.
+</div>
 <h2 id="h_01JC4GATFR2329WKFR4H8WAAV1">
   On Desktop/Browser: Using the Members List
 </h2>
