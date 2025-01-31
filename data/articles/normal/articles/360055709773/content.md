@@ -1,175 +1,204 @@
 <p>
-  <span style="font-weight: 400"
-    >As a server owner or admin, it can sometimes be really hard to tell what
-    the effect is going to be when you change roles and perms in your
-    server,</span
-  >
+  Managing server roles and permissions can be complex. It's not always clear
+  how permission changes will affect different members' experience of your
+  server.
 </p>
 <p>
-  With the View as Role feature, you can get a better understanding and see the
-  perspective of your own server from another role!
+  The<strong> View as Role</strong> feature helps you understand exactly how
+  your server appears to members with specific roles. This powerful tool lets
+  you preview your server from different role perspectives before making
+  changes.
 </p>
-<p>
+<div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >What does this article cover? </span
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
     ></strong
   >
+  <ul>
+    <li>
+      <a href="#h_01JJ7JNR1DX7SFHMSVVV05JTYV"
+        ><strong>Who Can Use View Server As Role</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01JJ7JNR1DFR4JP6DKTP7C0WZF"
+        ><strong>What You Can Preview with View Server As Role</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01JJ7JNR1DGQT6DSGM261H01YM"
+        ><strong>How to Use View Server As Role</strong></a
+      >
+      <ul>
+        <li>
+          <a href="#h_01JJ7JNR1DQQ0ZAJ1DAK896YW0"
+            ><strong>Viewing Multiple Roles</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JJ7JNR1DX77ZQP99VFVWS5DG"
+            ><strong>Exiting View Server As Role</strong></a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JJ7JNR1DX7SFHMSVVV05JTYV">Who Can Use View Server As Role</h1>
+<p>
+  The <strong>View Server As Role</strong> feature is available to server owners
+  and members with Administrator permissions. If you don't have
+  <strong>Administrator</strong> permissions, you won't see this option in your
+  <strong>Server Settings</strong>.
+</p>
+<div class="warn-box">
+  <strong>Administrator</strong> is the most powerful role permission. It grants
+  full access to all permissions, so be sure to assign this role with extreme
+  caution.
+</div>
+<h1 id="h_01JJ7JNR1DFR4JP6DKTP7C0WZF">
+  What You Can Preview with View Server As Role
+</h1>
+<p>
+  <strong>View Server As Role</strong> lets you check exactly what different
+  roles can access, including:
 </p>
 <ul>
-  <li>
-    <a href="#h_01EJT8TC0K8656RBPC37QFASF6" target="_self"
-      >Who can View as Role in Your Server?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01EJT97AD5VRTCY5YRSJAQ1H34" target="_self"
-      >What Can you View/See Using View as Role? </a
-    >
-  </li>
-  <li>
-    <a href="#h_01EJT8TVX8P4K7SWMXVS2Z5901" target="_self"
-      >How to View as Role in Your Server</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01EJT8V8NFBV4E8RGVH48HC9K3" target="_self"
-          >How to View as Multiple Roles</a
-        >
-      </li>
-      <li>
-        <a href="#h_01EJT8VFTEFWE0JJS79P6CMHV9" target="_self"
-          >How to Disable View as Role</a
-        >
-      </li>
-    </ul>
-  </li>
+  <li>Visible text channels and categories</li>
+  <li>Accessible voice channels</li>
+  <li>Available server settings and management options per role </li>
 </ul>
-<h1 id="h_01EJT8TC0K8656RBPC37QFASF6">Who can View as Role in Your Server? </h1>
+<div class="info-box">
+  <strong>NOTE</strong>: Because voice restrictions are tied to the user,
+  <strong>View Server As Role</strong> doesn't reflect voice restrictions like
+  suppression or priority speaker.
+</div>
+<h1 id="h_01JJ7JNR1DGQT6DSGM261H01YM">How to Use View Server As Role</h1>
 <p>
-  Only the server owner and server members with a role with "Administrator"
-  permission can use this feature in the server!
+  1. To access View Server As Role, press the server name in the upper-left
+  corner and select <strong>Server Settings</strong>.
 </p>
 <p>
-  If you don't have a role with the "Administrator" permission in the server,
-  you won't be able to view this option!
-</p>
-<h3 id="h_01JJ7JW2C8QMGBMVJ0KX5NV89S">
-  Note: Giving the "Administrator" permission to a user grants them all of the
-  permissions in the permissions list! Assign this permission with caution. 
-</h3>
-<h2 id="h_01EJT97AD5VRTCY5YRSJAQ1H34">What Can you See Using View as Role? </h2>
-<p>
-  Using the View as Role feature, server owners and admins will be able to
-  double check permissions such as: 
-</p>
-<ul>
-  <li>What text channels or categories a role can view</li>
-  <li>What voice channels a role can connect to</li>
-  <li>
-    What channels have Read Message History permission enabled for a specific
-    role
-  </li>
-  <li style="font-weight: 400">
-    <span style="font-weight: 400"
-      >What types of server settings a role can access/change (ex: Manage
-      Server, Manage Nickname, etc!)</span
-    >
-  </li>
-</ul>
-<h3 id="h_01JJ7JW2C8WRR9TFTQSQ7428VF">
-  Note: Because voice restrictions are tied to the user, View as Role doesn't
-  reflect voice restrictions like suppression or priority speaker.
-</h3>
-<h1 id="h_01EJT8TVX8P4K7SWMXVS2Z5901">How to View as Role in Your Server</h1>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360090863834"
-    alt="view_as_role_flow_new.gif"
-  />
-</p>
-<p>
-  If you have the right permissions in the server, head into your Server
-  Settings by clicking on the server name in the upper left hand corner, and
-  then selecting Server Settings in the drop down menu! 
-</p>
-<p>
-  Once you are in the <strong>Server Settings</strong> menu, press on the
-  <strong>Roles</strong> tab to view the full list of roles in the server! 
-</p>
-<p>
-  Now you'll be able to select the role of your choice and press the "<strong
-    >View Server As Role</strong
-  >" button within the permissions section for the role! 
+  2. Navigate to the <strong>Roles</strong> <strong>tab</strong> to see all
+  server roles.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092825833"
-    alt="Screen_Shot_2020-09-21_at_8.03.43_PM_copy.png"
-    width="603"
-    height="338"
+    src="https://support.discord.com/hc/article_attachments/29424125641879"
+    width="761"
+    height="538"
   />
 </p>
+<h4 id="h_01JJ7JNR1DCSMYKKTPHMJ84TSH" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >How to Navigate to Roles in Server Settings</span
+  >
+</h4>
 <p>
-  Additionally, you can also press on the
-  <strong>three dots symbol</strong> right beside the role name itself to enable
-  the "View Server as Role" Option! 
+  3. Select your desired role and scroll to
+  <strong>View Server As Role</strong> in the <strong>Display</strong>
+  <strong>tab</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360090684254"
-    alt="Screen_Shot_2020-09-21_at_11.10.30_PM.png"
-    width="602"
-    height="348"
+    src="https://support.discord.com/hc/article_attachments/29424088819351"
+    width="747"
+    height="528"
   />
 </p>
-<h2 id="h_01EJT8V8NFBV4E8RGVH48HC9K3">How to View as Multiple Roles</h2>
+<h4 id="h_01JJ7JNR1D3JFPRZVWHRECZYCH" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >View Server As Role Permission in Display Tab</span
+  >
+</h4>
 <p>
-  Once you've enabled the "View Server as Role" option, you'll see a bar at the
-  top of your app pop up! From this menu, you can also view how your server
-  looks like for a server member with multiple roles! 
-</p>
-<p>
-  Press on the "Select Roles" drop down menu and you'll see a new menu appear
-  with the full list of roles in your server! 
+  You can also select the <strong>ellipsis </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/29424125677591"
+    width="30"
+    height="24"
+  />] next to any role name to enable <strong>View Server As Role</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360090864694"
-    alt="select_roles_drop_down_menu.png"
+    src="https://support.discord.com/hc/article_attachments/29424125687831"
+    width="743"
+    height="537"
   />
 </p>
-<p class="wysiwyg-text-align-left">
-  Now to view the server as a user with a specific combination of role, you can
-  press your desired role names and you'll see what the server looks like from
-  their perspective! 
-</p>
-<p class="wysiwyg-text-align-left">
-  If you have a lot of roles in your server and want to easily find a specific
-  role, you can also type a specific role name in the "Search Roles" search bar
-  and then directly add that role to your viewing list! 
+<h4 id="h_01JJ7JNR1DQV17AKGJZ2DXY0DT" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Using the Ellipsis Menu to View Server As Role</span
+  >
+</h4>
+<h2 id="h_01JJ7JNR1DQQ0ZAJ1DAK896YW0">Viewing Multiple Roles</h2>
+<p>
+  When <strong>View Server As Role</strong> is active, a control bar appears at
+  the top of Discord. This lets you preview how the server appears to members
+  with multiple roles.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092990553"
-    alt="view_as_multiple_roles_flow_new.gif"
+    src="https://support.discord.com/hc/article_attachments/29424088847511"
+    width="756"
+    height="244"
   />
 </p>
-<h2 id="h_01EJT8VFTEFWE0JJS79P6CMHV9">How to Disable View as Role</h2>
+<h4 id="h_01JJ7JNR1D3SW09ZWKJCMVW071" class="wysiwyg-text-align-center">
+  <span style="color: #666666">View Server As Role Banner</span>
+</h4>
 <p>
-  Once you're finished viewing the server from the lens of a specific role, you
-  can disable the view by pressing on the <strong>Disable</strong> button on the
-  right in the View as Role menu bar!
+  Here, you can also press <strong>Select Roles</strong> to see all available
+  roles in your server.
 </p>
-<p>You'll then go back to how you view the server normally! </p>
 <p>
-  On the other hand, if you want to head directly back into your Role Settings,
-  you can directly press the <strong>Back to Roles</strong> Settings button in
-  the upper left hand corner!  
+  Select multiple roles to see the combined permissions view. You can also use
+  the search bar to quickly find specific roles.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360092991233"
-    alt="disable_button_view_as_role.png"
+    src="https://support.discord.com/hc/article_attachments/29424125720727"
+    width="731"
+    height="236"
   />
 </p>
+<h4 id="h_01JJ7JNR1DY329ST30VE5X4P0T" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Selecting Roles within View Server As Role Banner</span
+  >
+</h4>
+<h2 id="h_01JJ7JNR1DX77ZQP99VFVWS5DG">Exiting View as Role</h2>
+<p>
+  To return to your normal view, press the <strong>Disable</strong> button in
+  the <strong>View as Role</strong> control bar. Your server view will return to
+  normal.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29424088877591"
+    width="799"
+    height="258"
+  />
+</p>
+<h4 id="h_01JJ7JNR1D8CG89B89SD702XKC" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Disable Button in View Server As Role Banner</span
+  >
+</h4>
+<p>
+  Your server view will return to normal. To quickly return to role settings,
+  press the <strong>Back to Roles Settings</strong> button in the top-left
+  corner.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29424088887703"
+    width="762"
+    height="246"
+  />
+</p>
+<h4 id="h_01JJ7JNR1DQVDQVQ8N03SZ9861" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Back to Roles Settings Button in View Server As Role Banner</span
+  >
+</h4>

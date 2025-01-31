@@ -1,317 +1,341 @@
 <p>
-  This article will serve as your go-to reference for how Discord's roles and
-  associated permissions work. In here we'll cover:
+  Learn the fundamentals of Discord roles and permissions—the key tools for
+  running an organized and secure server. Whether you're just starting as a
+  server admin or want to improve your current setup, we'll explore the
+  following: role colors, the role hierarchy system, and channel permission
+  management.
 </p>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JJ7F294C00144N9006CA4A2M"><strong>Role Colors</strong></a>
+    </li>
+    <li>
+      <a href="#h_01JJ7FF0ES91KDVXNT9MQ6FQTC"
+        ><strong>Role Hierarchy System</strong></a
+      >
+    </li>
+    <li>
+      <a href="#h_01JJ7GADJD0AB33R945DMY2288"
+        ><strong>Channel Permission Management</strong></a
+      >
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JJ7F294C00144N9006CA4A2M">Role Colors</h1>
+<p>
+  Discord's role system includes <strong>role colors</strong>—a visual element
+  that lets you quickly identify members' permissions and status. Server members
+  inherit permissions and colors from the roles assigned to them. The color you
+  see for a member comes from their highest role in the hierarchy. 
+</p>
+<p>For example:</p>
+<ul>
+  <li>
+    If a member has multiple roles, they'll display the color of their
+    highest-positioned role
+  </li>
+  <li>
+    You can adjust role positions by dragging them up or down in the roles list
+  </li>
+  <li>
+    Moving a role higher in the list makes it more prominent - its color will
+    override lower roles
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422990637591"
+    width="491"
+    height="125"
+  />
+</p>
+<h4 id="h_01JJ7F52380Y3PR1MX2GRND6Q1" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Role Colors</span>
+</h4>
+<p>
+  1. Press the server name in the upper-left corner and select
+  <strong>Server Settings</strong>.
+</p>
+<p>
+  2. Navigate to the <strong>Roles tab</strong> and select the role you want to
+  assign a color to.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422990642455"
+    width="672"
+    height="480"
+  />
+</p>
+<h4 id="h_01JJ7F5XY9149TJX35J3X9FPDC" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >How to Navigate to Roles in Server Settings</span
+  >
+</h4>
+<p>
+  3. In <strong>Role Color</strong>, choose a color from the presets or use
+  the<strong> Custom Color </strong>picker.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422990644631"
+    width="666"
+    height="476"
+  />
+</p>
+<h4 id="h_01JJ7F6P4JB98TYAYXXMNJY0WR" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Role Color: Preset and Custom Color Options</span
+  >
+</h4>
+<p>4. Press <strong>Save Changes</strong> to confirm your selection. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422990646935"
+    width="647"
+    height="739"
+  />
+</p>
+<h4 id="h_01JJ7F81YVXSYP7H93N6GT1TXJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Save Changes Button in Role Settings</span>
+</h4>
+<div class="info-box">
+  <p>Role colors are visible in:</p>
+  <ul>
+    <li>Member usernames in chat and member lists</li>
+    <li>The separate role groups in the member list (when enabled)</li>
+  </ul>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/29422992401047"
+      width="657"
+      height="321"
+    />
+  </p>
+  <h4 id="h_01JJ7FDQHT1AXA7HCXEP1EZYZT" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Role Colors in Members List</span>
+  </h4>
+</div>
+<h1 id="h_01JJ7FF0ES91KDVXNT9MQ6FQTC">Role Hierarchy System</h1>
+<p>
+  The role hierarchy is crucial for server management and security. It offers a
+  structured way to delegate permissions to users and establish anything from a
+  multi-tiered public server admin system to a trusted buddy in your private
+  server helping out here and there. 
+</p>
+<p>Here's how the hierarchy works:</p>
+<ul>
+  <li>Roles follow a top-down structure</li>
+  <li>
+    Members can only affect users with roles lower than their highest role
+  </li>
+</ul>
+<div class="warn-box">
+  <strong>Administrator</strong> is the most powerful role permission. It grants
+  all permissions and bypasses all channel restrictions, so be sure to assign
+  this role with extreme caution.
+</div>
+<p>
+  1. Navigate to <strong>Server Settings &gt; Roles</strong> to find the
+  <strong>Administrator</strong> permission.
+</p>
+<p>
+  2. In <strong>Edit Role</strong>, select the <strong>Permissions</strong> tab.
+</p>
+<p>
+  3. Under <strong>Advanced Permissions</strong>, toggle
+  <strong>Administrator</strong> on or off.
+</p>
+<p>4. Press <strong>Save Changes</strong> to confirm your selection. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422990651287"
+    width="665"
+    height="475"
+  />
+</p>
+<h4 id="h_01JJ7G7106ZGPK5SV3JV28WK9H" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Administrator Permission Toggle in Advanced Permissions Settings</span
+  >
+</h4>
+<h2 id="h_01JJ7G7D286Q5TKRX1VTRE5HE9">Manage Roles</h2>
+<p>
+  Users with the <strong>Manage Roles</strong> permission can create and modify
+  roles positioned below their own in the role hierarchy. However, they are
+  limited to assigning only the permissions that they themselves possess, and
+  cannot make any changes to roles that are equal to or positioned above their
+  own role level. For example, if your role lacks the
+  <strong>Ban Members</strong> permission, you cannot grant this permission to
+  other users.
+</p>
+<div class="info-box">
+  <strong>NOTE</strong>: Members cannot ban, kick, or change nicknames of users
+  with equal or higher roles, even if they have those permissions.
+</div>
+<p>
+  1. Navigate to <strong>Server Settings &gt; Roles</strong> to find the
+  <strong>Manage Roles</strong> permission.
+</p>
+<p>
+  2. In <strong>Edit Role</strong>, select the <strong>Permissions</strong> tab.
+</p>
+<p>
+  3. Under <strong>General Server Permissions</strong>, toggle
+  <strong>Manage Roles</strong> on or off.
+</p>
+<p>4. Press <strong>Save Changes</strong> to confirm your selection.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422992403991"
+    width="704"
+    height="505"
+  />
+</p>
+<h4 id="h_01JJ7G99GD209W1F9R3KX0ZJFG" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Manage Roles Permission Toggle in General Server Permissions Settings</span
+  >
+</h4>
+<div class="tip-box">
+  When creating new roles, there are a few key points to remember:
+  <ul>
+    <li>The @everyone role acts as the template for all new roles.</li>
+    <li>
+      New roles are placed at the bottom of the hierarchy (just above
+      @everyone), though administrators can adjust their positions later.
+    </li>
+    <li>
+      You cannot remove permissions from lower roles that your own role requires
+      to function.
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JJ7GADJD0AB33R945DMY2288">Channel Permission Management</h1>
+<p>
+  Channel permissions let you customize access and capabilities within specific
+  channels to help you manage channel permissions effectively.
+</p>
+<p>
+  To manage channels in a server where you have permissions, right-click any
+  channel and select the desired action from the menu.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29422992407575"
+    width="743"
+    height="525"
+  />
+</p>
+<h4 id="h_01JJ7GCWH9FCTA8F2HAQDC7K51" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Channel Permissions: Available Actions</span>
+</h4>
+<p>There are two key tools that can streamline your server organization:</p>
+<ul>
+  <ul>
+    <ul>
+      <ul>
+        <li>
+          <strong>Duplicate Channel</strong>: This feature lets you quickly copy
+          any channel and its permission settings. It's especially helpful when
+          creating multiple channels that need the same access rules—for
+          example, when setting up different topic channels that should be
+          available to the same group of members.
+        </li>
+        To duplicate a channel, right-click the channel you want to copy, select
+      </ul>
+    </ul>
+  </ul>
+</ul>
+<p>
+  <strong
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Duplicate </strong
+  ><strong
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Channel</strong
+  ><span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >, enter a name, and press </span
+  ><strong
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Create Channel</strong
+  ><span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    ><img
+      src="https://support.discord.com/hc/article_attachments/29422992408855"
+      width="710"
+      height="502"
+  /></span>
+</p>
+<h4 id="h_01JJ7GES9WCSDVBDQWBENTT4YK" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Duplicating a Channel</span>
+</h4>
+<ul>
+  <li>
+    <strong>Role-exclusive Channels</strong>: Role-exclusive channels are
+    perfect for creating private spaces in your server. When you set up a
+    private channel, Discord automatically enhances security by removing the
+    View Channel permission from the @everyone role. You can then grant specific
+    roles access to the channel through permission overrides.
+  </li>
+  To make a channel role-exclusive:
+</ul>
 <ol>
-  <li>Role Colors</li>
-  <li>Role Hierarchies</li>
-  <li>Channel Permissions</li>
+  <li style="list-style-type: none">
+    <ol>
+      <li>
+        Right-click the desired channel and select
+        <strong>Edit Channel &gt; Permissions</strong>. 
+      </li>
+      <li>
+        Under <strong>Channel Permissions</strong>, toggle
+        <strong>Private Channel</strong>.
+      </li>
+      <li>You'll see a list of roles with current channel access.</li>
+      <li>
+        Press <strong>Add members or roles</strong> to grant access to
+        additional members or roles.
+      </li>
+    </ol>
+  </li>
 </ol>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/en-us/article_attachments/206138678/discord_colors-3.jpg"
-    alt=""
+    src="https://support.discord.com/hc/article_attachments/29422990658455"
+    width="780"
+    height="551"
   />
 </p>
-<h1 id="h_01JJ7GZVCVK3Y2138WH9TVR8DD">Part One: Role Colors</h1>
-<p>
-  Something that may not be immediately noticeable, but super helpful, is how
-  roles behave in the role tab. To put it simply:
-</p>
-<p>
-  <strong
-    >Members of a server inherit the permissions of the combined roles assigned
-    to them.</strong
-  >
-</p>
-<p>
-  Not only does this apply to permissions but to the color too! You can see the
-  difference pretty easily here:
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756731"
-    alt="Screen_Shot_2017-08-24_at_10.20.28_AM.png"
-    width="134"
-    height="180"
-  />
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756751"
-    alt="Role_Management_101__1.5_.jpg"
-    width="545"
-    height="180"
-  />
-</p>
-<p>
-  Even though Cats has all three roles, "PUBG" is the highest in the role list,
-  therefore Cats inherit its delightful orange color. BB maker and Cats have the
-  same roles with the exception of PUBG, so they inherit the next highest role
-  and color, "Overwatch" and blue. 
-</p>
-<p>
-  You can also drag to re-arrange roles and their position on the metaphorical
-  totem pole: 
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756771"
-    alt="Role_Management_101_Update.gif"
-    width="685"
-    height="345"
-  />
-</p>
-<p>Before:</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001762851"
-    alt="rename.png"
-  />
-</p>
-<p>After:</p>
-<p class="wysiwyg-text-align-left">
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001763372"
-    alt="rename2.png"
-  />
-</p>
-<p>
-  In this instance, all I did was drag "PUBG" up to the top, above Overwatch. As
-  a result, everyone has inherited its orange color, as well as PUBG being
-  listed first under my role titles. I still have my old Overwatch role, but
-  it's lower on the list, so I lose my shiny blue badge of honor.
-</p>
-<p>
-  You'll also see the color of your highest-sorted role in the user's list as
-  well:
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001763131"
-    alt="Screen_Shot_2017-08-17_at_2.07.37_PM.jpg"
-    width="685"
-    height="413"
-  />
-</p>
-<p>
-  <em
-    >In this case, some roles have the "Display role members separately from
-    online members" permission checked, but the others don't, such as the pink
-    Rocket League role here. Each user in this list has a different highest
-    role.</em
-  >
-</p>
-<h1 id="h_01JJ7GZVCV3HPTQVBM4K2GV10H">Part Two: Role Hierarchies</h1>
-<p>
-  In addition to looking pretty, roles offer a very structured way to delegate
-  permissions to users and establish anything from a multi-tiered public server
-  admin system to a trusted buddy in your private server helping out here and
-  there. 
-</p>
-<p>
-  <font size="4"><u>Role Linear Hierarchy:</u></font>
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756972"
-    alt="Role_Linear_Hierarchy__1.5.jpg"
-    width="685"
-    height="466"
-  />
-</p>
-<p>
-  <span class="wysiwyg-font-size-medium"
-    >The blurple arrow is your highest role; roles now follow a linear
-    hierarchy. In simpler terms, the "metaphorical totem pole" is now a bit more
-    literal in practice.</span
-  >
-</p>
-<p>
-  <strong
-    >All roles equal to and above your roles will appear with a lock next to
-    their name</strong
-  >. This enables server owners to establish multiple roles with
-  separate administrative powers that can't interfere with each other. Here are
-  some of the tools that enable hierarchies to work:
-</p>
-<p>
-  <span class="wysiwyg-font-size-medium"
-    ><strong
-      ><span class="wysiwyg-underline">Administrator:</span></strong
-    ></span
-  >
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756911"
-    alt="Administrator__1_.jpg"
-    width="685"
-    height="426"
-  />
-</p>
-<p>
-  <span class="wysiwyg-font-size-medium"
-    >This is the omega role! Giving this role to a user grants them <strong
-      >all of the permissions in the permissions list! They also cannot be
-      locked out of any voice or text channel, regardless of
-      permissions.</strong
-    > That's a tall order. This permission also lets users with that role assign
-    any permission to roles underneath them in the hierarchy, though they still
-    can't affect their role and any above them in the hierarchy. Real talk: with
-    great permissions power comes great permissions responsibility. Assign with
-    caution.</span
-  > 
-</p>
-<p>
-  <span class="wysiwyg-underline wysiwyg-font-size-medium"
-    ><strong>Manage</strong><strong> Roles:</strong></span
-  >
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756992"
-    alt="Manage_roles_1_.jpg"
-    width="686"
-    height="341"
-  />
-</p>
-<p>
-  <span class="wysiwyg-font-size-medium"
-    >This permission allows a role to create new roles beneath them, then edit
-    them accordingly. Keep in mind that this role comes 2nd to the Administrator
-    role, and although you can add, edit, and assign new roles to users,
-    you <strong>still can't edit your role and roles above yours.</strong
-    > <strong
-      >Additionally, you can only assign permissions that you have to roles
-      under you</strong
-    >. If your role doesn't have banning members enabled, you can't let other
-    users ban them either. Duh. </span
-  >
-</p>
-<p>
-  Another important point to remember about managing roles is <strong
-    >if you have multiple roles, you can't remove a permission from a lower role
-    that would remove it from yourself. </strong
-  >
-</p>
-<h3 id="h_01JJ7GZVCVN5D8TTVFV8GYTCB2">
-  Important note on adding roles: the <strong>@everyone</strong> role now serves
-  as the basic template for all added roles. Want anyone in your server to add
-  channels as they want? Assigning "Manage Channels" to @everyone will
-  automatically grant that permission to all other roles created. Any role
-  assigned to @everyone will be universal, regardless of assignment in higher
-  roles.
-</h3>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001757012"
-    alt="Newrole_1_.jpg"
-    width="685"
-    height="466"
-  />
-</p>
-<p>
-  Keep in mind that when you add a new role (if you're not the server owner),
-  that the roles are added at the very bottom, right above the @everyone role,
-  so that you can sort it as necessary, but not above your role.
-</p>
-<p> </p>
-<p>
-  <span class="wysiwyg-underline"
-    ><strong
-      ><span class="wysiwyg-font-size-medium"
-        >Ban/Kick/Nickname Hierarchy:</span
-      ></strong
-    ></span
-  >
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001757032"
-    alt="Screen_Shot_2017-08-18_at_10.45.19_AM.png"
-    width="685"
-    height="522"
-  />
-</p>
-<p>
-  Additional to the role sorting hierarchy, there's a special exception placed
-  on banning, kicking, and nicknaming members: <strong
-    >Even if users have ban/kick/nickname permissions, they <span
-      class="wysiwyg-underline"
-      >cannot ban / kick / change nicknames of anyone with the same role or a
-      role higher than theirs.</span
-    ></strong
-  >  
-</p>
-<h1 id="h_01JJ7GZVCVE1WQ8WBB5Z99H8M2">Part Three: Channel Permissions</h1>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756931"
-    alt="Channelpermission__1_.jpg"
-    width="685"
-    height="473"
-  />
-</p>
-<p>
-  If you're one of the more orderly types that enjoy the thrill of sorting your
-  clothes into oodles of boxes, then the right-click menu has some helpful tools
-  for you as well. These shortcuts apply when setting up individual text channel
-  permissions, instead of working in the server settings. 
-</p>
-<p>
-  <span class="wysiwyg-underline"><strong>Clone Channel:</strong></span>
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001756951"
-    alt="Clone_Channel__1_.jpg"
-    width="685"
-    height="473"
-  />
-</p>
-<p>
-  This option will create a new text channel with the exact same role-specific
-  permissions as the previous one selected. You'll be given the choice to name
-  the new channel, then poof, done. You can go in and edit specific permissions
-  once the channel is created. 
-</p>
-<p>
-  <span class="wysiwyg-underline"
-    ><strong>Creating role-exclusive Text Channels:</strong></span
-  >
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001757011"
-    alt="Screen_Shot_2017-08-24_at_10.28.18_AM.png"
-  />
-</p>
-<p>
-  When you (or anyone with the "manage channels" permission) creates a new
-  channel, you'll see the option to select specific roles that can access the
-  new channel. Selecting a role does two things in the permissions menu:
-</p>
-<p>
-  1. First, denies the @everyone role the "read messages" permission to this new
-  channel, making it inaccessible and invisible to them.
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001757172"
-    alt="Textpermissions_1_.jpg"
-    width="685"
-    height="491"
-  />
-</p>
-<p> </p>
-<p>
-  2. Also, specifically adds an exception for the role(s) selected. You'll see
-  both of these changes reflected in the Channel Permissions screen.
-</p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/115001757212"
-    alt="Textchannelspermissions_2_.jpg"
-    width="686"
-    height="402"
-  />
-</p>
+<h4 id="h_01JJ7GS973NVTQDEAHVPW7DCK5" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Making a Channel Role-Exclusive</span>
+</h4>
