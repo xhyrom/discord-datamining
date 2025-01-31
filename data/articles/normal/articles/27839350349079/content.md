@@ -18,6 +18,37 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Fortnite</strong></p>
+<p><strong>Quest Name: Fortnite OG S2 Quest</strong></p>
+<p>
+  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Fortnite </strong>and unlock a<strong>
+    Boogie Bomb avatar decoration</strong
+  >.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players on desktop where
+  <strong>Discord</strong> and <strong>Fortnite </strong>are available.
+  Discord’s premium services are restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Fortnite OG S2 Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>January 31, 2025</strong> until
+  <strong>February 6, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>March 6, 2025.  </strong>
+</p>
+<p>
+  The <strong>Boogie Bomb avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>April 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Game: Strinova</strong></p>
 <p><strong>Quest Name: Strinova Eika Quest</strong></p>
 <p>
