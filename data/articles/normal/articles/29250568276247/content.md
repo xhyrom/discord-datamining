@@ -103,6 +103,7 @@
 </h4>
 <div class="tip-box">
   <strong>Note:</strong> If your subscription streak has been lost, our Support
+  Team can not adjust your streak.
 </div>
 <h1 id="h_01JHNH8KCFHJK4W6EH6BPY7760">
   How to Maintain Your Server Boost Subscription Streak
@@ -182,10 +183,10 @@
       height="159"
   /></span>
 </p>
-<h4 id="h_01JHNH8KCF99ERE65XEVD8A7F3" class="wysiwyg-text-align-center">
+<h4 id="h_01JJYP8YKFER4TY7MBB20DKQ0F" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Server Boost Badge streak
-    evolution                                                                                                                       </span
+    >Example of Server Boost Badge streak evolution                             
+            </span
   >
 </h4>
 <h1 id="h_01JHNH8KCFBARK5KGW3C5KFQTF">
