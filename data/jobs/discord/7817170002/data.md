@@ -2,7 +2,7 @@
 
 ## Platform Policy Expert, Platform Integrity
 
-**Location:** San Francisco, CA or Remote (U.S.)
+**Location:** Remote (U.S.) or Remote (Canada)
 
 **Id:** 7817170002 <br/>
 **Internal Job Id:** 6082343002 <br/>
