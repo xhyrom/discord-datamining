@@ -1,0 +1,25 @@
+{
+  "id": 29755948322199,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/29755948322199.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/29755948322199--Known-Issue-API-Errors-involving-Messaging",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000352292,
+  "created_at": "2025-02-04T21:34:37Z",
+  "name": "[Known Issue] API Errors involving Messaging",
+  "title": "[Known Issue] API Errors involving Messaging",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-02-04T21:34:40Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "outage"
+  ]
+}
