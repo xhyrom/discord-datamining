@@ -12025,6 +12025,12 @@ div.modalHeader_c28af8 {
 .questRewardTile__28141:hover .questRewardTileDetailsLearnMore__28141 {
   opacity: 1;
 }
+.questRewardTileOrbQuantity__28141 {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  overflow: hidden;
+}
 .hideLearnMore__28141 {
   cursor: default;
 }
@@ -58093,4 +58099,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.159d0e8bb55a5353.css.map*/
+/*# sourceMappingURL=12633.921dc848ea0197fe.css.map*/
