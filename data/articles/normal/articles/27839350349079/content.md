@@ -18,6 +18,30 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: SUPERVIVE </strong></p>
+<p><strong>Quest Name: SUPERVIVE Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>SUPERVIVE </strong>to receive a
+  <strong>Crysta Hunter Bundle</strong>. 
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to players in the United States,
+  Canada, Eastern Europe, and Western Europe on desktop where Discord and
+  <strong>SUPERVIVE</strong> are available. Discord’s premium services are
+  restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The <strong>SUPERVIVE Quest</strong> can
+  be accepted on Discord from <strong>February 5, 2025</strong> until
+  <strong>February 11, 2025 (11:59PM UTC)</strong>.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>March 13, 2025 (0:00 UTC)</strong>.  
+</p>
+<p><strong>Other Terms: Limit of one reward redemption per account.</strong></p>
+<p> </p>
 <p><strong>Quest Game: Fortnite</strong></p>
 <p><strong>Quest Name: Fortnite OG S2 Quest</strong></p>
 <p>
