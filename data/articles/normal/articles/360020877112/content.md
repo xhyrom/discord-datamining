@@ -12,6 +12,43 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
+<h3 id="h_01JJMMEMCEK7DNWD0ADX1Y3KDG">
+  <span style="font-weight: 400"
+    >Gift Nitro as a Valentine’s Day gift to receive the
+    <strong>Heart-to-Heart avatar decoration</strong>, which is yours to
+    keep!</span
+  >
+</h3>
+<h3 id="h_01JJMMFGNSGEZ5ZX2GE3CBERH8" class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/29538302151959"
+      width="188"
+      height="188" /><br
+  /></span>
+</h3>
+<h3 id="h_01JJMMF0WTCBSMC7WBS6HBRDW9">
+  <span style="font-weight: 400"
+    >This special offer will roll out starting <strong>February 6</strong> and
+    run through <strong>February 18, 2025</strong> for eligible users. All
+    eligible users will have access to the promotion by
+    <strong>February 11th</strong>. Look for the pink promotion banner before
+    making your purchase.<br /><br /></span
+  ><span style="font-weight: 400"
+    >Please note: This offer is only valid for Nitro gifts (not Nitro Basic
+    gifts). Any avatar decorations received will be removed if you refund your
+    Nitro gift purchase.<br /><br /></span
+  ><span style="font-weight: 400"
+    >Want to learn more about avatar decorations? Check out our
+    <a
+      href="https://support.discord.com/hc/en-us/articles/13410113109911"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    >
+    for more details.</span
+  >
+</h3>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
@@ -230,7 +267,7 @@
     gift link &amp; generate a new one. </span
   >
 </p>
-<h3 id="h_01JJMMK46M34R1P0RFQ3D3PETZ">
+<h3 id="h_01JJMM0SVCJFA8F2GGAD25E65M">
   Please note, only unclaimed gifts will be listed here, any claimed gifts will
   no longer display in your inventory. If you are looking for your
   <a
@@ -322,3 +359,4 @@
   >
   within 5 days of the initial purchase date to request a refund.
 </h3>
+<p>&lt;/class="wysiwyg-text-align-center"&gt;</p>

@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-01-31T00:19:35Z",
+  "edited_at": "2025-02-05T19:45:16Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
@@ -25,11 +25,14 @@
     "answer-bot",
     "photo",
     "nitro",
+    "promo",
+    "holiday",
     "avatar decorations",
     "decorations",
     "customize",
     "feature",
     "user profile",
-    "server profiles"
+    "server profiles",
+    "valentine's"
   ]
 }
