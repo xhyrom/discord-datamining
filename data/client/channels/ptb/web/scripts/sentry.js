@@ -6394,6 +6394,8 @@
           (r.ACTIVITY_IFRAME_MOUNT = "activity_iframe_mount"),
           (r.ACTIVITY_IFRAME_UNMOUNT = "activity_iframe_unmount"),
           (r.ACTIVITY_HANDSHAKE = "activity_handshake"),
+          (r.ACTIVITY_INSTANCE_EMBED_CLICKED =
+            "activity_instance_embed_clicked"),
           (r.APP_PROFILE_OPEN_APP_BUTTON_CLICKED =
             "app_profile_open_app_button_clicked"),
           (r.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED =
@@ -7489,6 +7491,8 @@
           (r.CONSUMABLE_HD_STREAMING_ENTRYPOINT =
             "consumable_hd_streaming_entrypoint"),
           (r.CONFETTI_POTION_TRIGGERED = "confetti_potion_triggered"),
+          (r.CONFETTI_POTION_ENTRYPOINT_CLICKED =
+            "confetti_potion_entrypoint_clicked"),
           (r.SLIDE_CAROUSEL_ITEM_VIEWED = "slide_carousel_item_viewed"),
           (r.SLIDE_CAROUSEL_PAGINATION_CLICKED =
             "slide_carousel_pagination_clicked"),
@@ -8256,7 +8260,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-04-81183a6cd339d751c3deec3a3fac064b4c147b6b-discord_web",
+              "2025-02-05-198c1a6d1b5c5d185d4ff7b654c9b5bd622823c4-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8321,8 +8325,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "365373"),
-            _.YA("builtAt", String("1738708056190"));
+            _.YA("buildNumber", "365619"),
+            _.YA("builtAt", String("1738775045034"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45511,4 +45515,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f00c5aa5d0a52cca.js.map
+//# sourceMappingURL=sentry.0c6efaadc1ec40a1.js.map
