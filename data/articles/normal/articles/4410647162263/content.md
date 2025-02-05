@@ -1,4 +1,12 @@
-<h3>
+<div class="mega-box">
+  <strong>As of February 3, 2025:</strong> The
+  <strong>3 months of Nitro with Xbox Game Pass Ultimate</strong> promotion is
+  currently paused and not available to claim at this time. However, those who
+  claimed before the 3rd can still redeem during the pause. While we can't
+  provide a specific timeline for its return, we encourage you to check back
+  periodically for updates. We appreciate your patience and understanding.
+</div>
+<h3 id="h_01JK9TNPPARXZTTSEB108CEAXR">
   <strong>Note:</strong><strong><br /></strong>- Discord requires a payment
   method to redeem this Nitro promo. A temporary charge will be placed on the
   payment method upon activating the promotion.<br />- This is to help Discord
@@ -28,7 +36,7 @@
     alt="XBoxGamepassPromo_BlogHeader.png"
   />
 </p>
-<h1>
+<h1 id="h_01JK9TNPPA1CKFH7ZXMTY5KJ7R">
   <span class="wysiwyg-color-blue90 wysiwyg-font-size-x-large"
     ><strong>TL;DR</strong></span
   >
@@ -142,7 +150,9 @@
     Settings. </span
   >
 </p>
-<h2><strong>What does this article cover?</strong></h2>
+<h2 id="h_01JK9TNPPAEYYVTTRK9AE1QA8K">
+  <strong>What does this article cover?</strong>
+</h2>
 <ul>
   <li>
     <a href="#h_01EGMFZ0MASHQ9JFNQPZ0CDZFN" target="_self" rel="undefined"
@@ -447,7 +457,7 @@
     Discord account, you can follow these steps below to redeem the promo!</span
   >
 </p>
-<h3>
+<h3 id="h_01JK9TNPPB5GGK5G1ZQ7KCQ21C">
   <strong>NOTE:<br /></strong>- Before redeeming Nitro, make sure you are logged
   in your own Discord account.<br />- If you accidentally redeemed the Nitro
   promo link on an account that is not yours, we are unable to provide you with
@@ -615,7 +625,7 @@
     ><span style="font-weight: 400">" button. </span>
   </li>
 </ul>
-<h3>
+<h3 id="h_01JK9TNPPBQ8YV97JCBSTD4NYQ">
   <strong>Note:<br /></strong>- If you're logged into the incorrect Discord
   account, press the "Wrong account" button to login to the other account! 
 </h3>
@@ -653,7 +663,7 @@
   you will be able to redeem this promotion and replace it with the 3 month
   Nitro subscription.
 </p>
-<h3>
+<h3 id="h_01JK9TNPPBAA198AT6TEX91X1F">
   <strong>HOWEVER, please note:<br /></strong
   ><span style="font-weight: 400"
     >- By choosing to activate this 3 month trial, you will lose any features
@@ -721,7 +731,7 @@
     appears! 
   </li>
 </ul>
-<h3>
+<h3 id="h_01JK9TNPPB34V8HTCWF69E2J6G">
   <strong>Note: </strong>We recommend sending the link to your friend in a
   private direct message.
 </h3>
@@ -840,7 +850,7 @@
   able to redeem this promotion and replace it with the 3 months Nitro
   subscription.
 </p>
-<h3>
+<h3 id="h_01JK9TNPPB2ZXG26EEDHM6QBVY">
   <strong>HOWEVER, please note:<br /></strong
   ><span style="font-weight: 400"
     >- By choosing to activate this 3 month trial, you will lose any features
@@ -946,7 +956,7 @@
     hold from your payment method.</span
   >
 </p>
-<h3>
+<h3 id="h_01JK9TNPPBCX2CMC6WX0EM0BTF">
   <strong>Note: </strong>Banks will usually remove the temporary hold from your
   account within a few business days.
 </h3>
