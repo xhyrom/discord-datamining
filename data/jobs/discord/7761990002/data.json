@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6055589002,
   "location": {
-    "name": "San Francisco, CA (or Remote U.S.)"
+    "name": "San Francisco, CA or Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7761990002,
-  "updated_at": "2025-01-28T12:26:23-05:00",
+  "updated_at": "2025-02-05T18:18:24-05:00",
   "requisition_id": "R-100734",
   "title": "Senior Staff Software Engineer, Data Platform",
   "company_name": "Discord",

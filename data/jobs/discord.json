@@ -186,7 +186,7 @@
       "education": "education_optional",
       "internal_job_id": 6078090002,
       "location": {
-        "name": "San Francisco, CA (or Remote US)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -203,7 +203,7 @@
         }
       ],
       "id": 7807928002,
-      "updated_at": "2025-01-28T12:26:23-05:00",
+      "updated_at": "2025-02-05T18:18:47-05:00",
       "requisition_id": "R-100758",
       "title": "Director of Machine Learning, Safety",
       "company_name": "Discord",
@@ -977,7 +977,7 @@
       "education": "education_optional",
       "internal_job_id": 6053956002,
       "location": {
-        "name": "San Francisco, CA (or Remote U.S.)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -994,7 +994,7 @@
         }
       ],
       "id": 7757328002,
-      "updated_at": "2025-01-28T12:26:23-05:00",
+      "updated_at": "2025-02-05T18:17:58-05:00",
       "requisition_id": "R-100731",
       "title": "Senior Engineering Manager, Data Platform",
       "company_name": "Discord",
@@ -1664,7 +1664,7 @@
       "education": "education_optional",
       "internal_job_id": 6031833002,
       "location": {
-        "name": "San Francisco, CA & Remote (U.S.)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1681,7 +1681,7 @@
         }
       ],
       "id": 7704535002,
-      "updated_at": "2025-01-28T12:26:23-05:00",
+      "updated_at": "2025-02-05T18:17:10-05:00",
       "requisition_id": "R-100705",
       "title": "Senior Software Engineer - Realtime Infrastructure",
       "company_name": "Discord",
@@ -1788,7 +1788,7 @@
       "education": "education_optional",
       "internal_job_id": 6055589002,
       "location": {
-        "name": "San Francisco, CA (or Remote U.S.)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1805,7 +1805,7 @@
         }
       ],
       "id": 7761990002,
-      "updated_at": "2025-01-28T12:26:23-05:00",
+      "updated_at": "2025-02-05T18:18:24-05:00",
       "requisition_id": "R-100734",
       "title": "Senior Staff Software Engineer, Data Platform",
       "company_name": "Discord",

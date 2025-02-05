@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer - Realtime Infrastructure
 
-**Location:** San Francisco, CA & Remote (U.S.)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7704535002 <br/>
 **Internal Job Id:** 6031833002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7704535002](https://discord.com/jobs/7704535002)
 
-**Updated At:** Tue, 28 Jan 2025 17:26:23 GMT
+**Updated At:** Wed, 05 Feb 2025 23:17:10 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Realtime Infrastructure team is responsible for building and maintaining some of Discord’s highest scale and most critical services. Those systems are at the core of our text chat infrastructure and facilitate the dispatching of every update to our users sessions. This role will have a significant impact on Discord’s overall reliability and performance. It will also help our product teams build new features on top of our infrastructure. This team is small but critical, and its work has a direct impact on Discord's success and ability to scale. This role reports to the Senior Engineering Manager of Realtime Infrastructure.
