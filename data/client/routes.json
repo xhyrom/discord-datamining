@@ -4115,7 +4115,8 @@
     "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS"
+      "OPTIONS",
+      "PATCH"
     ]
   },
   "USER_SET_CLAN_IDENTITY": {
