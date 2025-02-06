@@ -11761,10 +11761,21 @@ div.cardContainer__88e24 {
 }
 .gradientLayer__6d6a1 {
   height: calc(100% - 2px);
-  width: 100%;
+  top: 1px;
+  border-radius: var(--radius-sm);
+}
+.borderLayer__6d6a1,
+.gradientLayer__6d6a1 {
+  width: calc(100% - 8px);
   position: absolute;
   left: 8px;
-  top: 1px;
+  pointer-events: none;
+}
+.borderLayer__6d6a1 {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid;
+  z-index: 2;
 }
 .img__6d6a1.hover__6d6a1 {
   opacity: 0.8;
@@ -11780,13 +11791,6 @@ div.cardContainer__88e24 {
 }
 .visual-refresh .privateChannel__6d6a1 {
   max-width: var(--custom-guild-sidebar-width);
-}
-.bordered__6d6a1 {
-  border: 1px solid;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
 }
 .content__6d6a1 {
   z-index: 1;
@@ -58146,4 +58150,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7d88a3df00b39e34.css.map*/
+/*# sourceMappingURL=12633.173841eafcfb15df.css.map*/
