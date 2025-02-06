@@ -9488,6 +9488,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   line-height: 18px;
   transition: background-color 0.2s ease-in-out;
 }
+.mediaMosaicAltText__0f481.reducedSize__0f481 {
+  padding: 0 4px;
+  font-size: 12px;
+}
 .mediaMosaicAltText__0f481:hover {
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.2s ease-in-out;
@@ -58150,4 +58154,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.173841eafcfb15df.css.map*/
+/*# sourceMappingURL=12633.1427291828228fd6.css.map*/
