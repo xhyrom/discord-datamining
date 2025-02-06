@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1130",
+    "module_version": 1,
+    "package_sha256": "95d4cd59ef51fc587ae76a2593294506565cf30faafbf59fa903b3790132ce7e",
+    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1130/discord_voice_filters/1/full.distro"
+  },
+  "deltas": []
+}
