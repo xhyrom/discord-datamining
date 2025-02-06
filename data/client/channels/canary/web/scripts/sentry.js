@@ -7793,6 +7793,7 @@
             GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE: 200,
             GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: 201,
             GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: 202,
+            GUILD_MEMBER_VERIFICATION_UPDATE: 210,
           }),
           Object.freeze({
             GIF: {
@@ -8259,7 +8260,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b6ee6a4296d7079342b6ee62458679e69f6ce765",
+            release: "discord_web-837c3b5cb3fca31d05783cffb68650d87f31be9d",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8324,8 +8325,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "366047"),
-            _.YA("builtAt", String("1738863940081"));
+            _.YA("buildNumber", "366049"),
+            _.YA("builtAt", String("1738864096557"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45514,4 +45515,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5c5070d306f7023d.js.map
+//# sourceMappingURL=sentry.c4feeee8a209a9e2.js.map
