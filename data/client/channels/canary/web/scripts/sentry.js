@@ -859,10 +859,10 @@
             C.push(2 * C[C.length - 1]);
           var S = C.length,
             G = C[S - 1];
-          function b(t) {
+          function M(t) {
             return 1e7 >= Math.abs(t);
           }
-          function M(t, e, a) {
+          function b(t, e, a) {
             e = F(e);
             for (
               var n = t.isNegative(),
@@ -895,7 +895,7 @@
           }
           (_.prototype.shiftLeft = function (t) {
             var e = F(t).toJSNumber();
-            if (!b(e)) throw Error(String(e) + " is too large for shifting.");
+            if (!M(e)) throw Error(String(e) + " is too large for shifting.");
             if (e < 0) return this.shiftRight(-e);
             var a = this;
             if (a.isZero()) return a;
@@ -907,7 +907,7 @@
             (_.prototype.shiftRight = function (t) {
               var e,
                 a = F(t).toJSNumber();
-              if (!b(a)) throw Error(String(a) + " is too large for shifting.");
+              if (!M(a)) throw Error(String(a) + " is too large for shifting.");
               if (a < 0) return this.shiftLeft(-a);
               for (var r = this; a >= S; ) {
                 if (r.isZero() || (r.isNegative() && r.isUnit())) return r;
@@ -923,19 +923,19 @@
             }),
             (c.prototype.not = i.prototype.not = _.prototype.not),
             (_.prototype.and = function (t) {
-              return M(this, t, function (t, e) {
+              return b(this, t, function (t, e) {
                 return t & e;
               });
             }),
             (c.prototype.and = i.prototype.and = _.prototype.and),
             (_.prototype.or = function (t) {
-              return M(this, t, function (t, e) {
+              return b(this, t, function (t, e) {
                 return t | e;
               });
             }),
             (c.prototype.or = i.prototype.or = _.prototype.or),
             (_.prototype.xor = function (t) {
-              return M(this, t, function (t, e) {
+              return b(this, t, function (t, e) {
                 return t ^ e;
               });
             }),
@@ -2015,7 +2015,7 @@
             v,
             C = function (t) {
               if (t === R && U) return U;
-              if (!N && t && t in b) return b[t];
+              if (!N && t && t in M) return M[t];
               switch (t) {
                 case h:
                 case O:
@@ -2030,10 +2030,10 @@
             },
             S = e + " Iterator",
             G = !1,
-            b = t.prototype,
-            M = b[L] || b["@@iterator"] || (R && b[R]),
-            U = (!N && M) || C(R),
-            w = ("Array" === e && b.entries) || M;
+            M = t.prototype,
+            b = M[L] || M["@@iterator"] || (R && M[R]),
+            U = (!N && b) || C(R),
+            w = ("Array" === e && M.entries) || b;
           if (
             (w &&
               (y = s(w.call(new t()))) !== Object.prototype &&
@@ -2043,22 +2043,22 @@
               o && (d[S] = g)),
             f &&
               R === O &&
-              M &&
-              M.name !== O &&
+              b &&
+              b.name !== O &&
               (!o && p
-                ? u(b, "name", O)
+                ? u(M, "name", O)
                 : ((G = !0),
                   (U = function () {
-                    return n(M, this);
+                    return n(b, this);
                   }))),
             R)
           ) {
             if (((P = { values: C(O), keys: A ? U : C(h), entries: C(D) }), m))
-              for (v in P) (!N && !G && v in b) || I(b, v, P[v]);
+              for (v in P) (!N && !G && v in M) || I(M, v, P[v]);
             else r({ target: e, proto: !0, forced: N || G }, P);
           }
           return (
-            (!o || m) && b[L] !== U && I(b, L, U, { name: R }), (d[e] = U), P
+            (!o || m) && M[L] !== U && I(M, L, U, { name: R }), (d[e] = U), P
           );
         };
       },
@@ -6396,6 +6396,7 @@
           (r.ACTIVITY_HANDSHAKE = "activity_handshake"),
           (r.ACTIVITY_INSTANCE_EMBED_CLICKED =
             "activity_instance_embed_clicked"),
+          (r.ACTIVITY_CLOSED_RPC_ERROR = "activity_closed_rpc_error"),
           (r.APP_PROFILE_OPEN_APP_BUTTON_CLICKED =
             "app_profile_open_app_button_clicked"),
           (r.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED =
@@ -8260,7 +8261,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-b247ec553d855751e45c261d0d947f2d7cecb613",
+            release: "discord_web-16983178ff0d04c1a3e953fc1f36a15722998806",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8325,8 +8326,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "366191"),
-            _.YA("builtAt", String("1738874715697"));
+            _.YA("buildNumber", "366201"),
+            _.YA("builtAt", String("1738875585186"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -21857,9 +21858,9 @@
               return n.length > 3 ? [e, a, r, n[3]] : [e, a, r, 1];
             },
             G = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
-            b =
-              /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
             M =
+              /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
+            b =
               /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
             U =
               /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
@@ -21877,11 +21878,11 @@
                 for (var e, a = e.slice(1, 4), r = 0; r < 3; r++) a[r] = +a[r];
                 return (a[3] = 1), a;
               }
-              if ((e = t.match(b))) {
+              if ((e = t.match(M))) {
                 for (var n = e.slice(1, 5), o = 0; o < 4; o++) n[o] = +n[o];
                 return n;
               }
-              if ((e = t.match(M))) {
+              if ((e = t.match(b))) {
                 for (var _ = e.slice(1, 4), i = 0; i < 3; i++)
                   _[i] = W(2.55 * _[i]);
                 return (_[3] = 1), _;
@@ -21907,8 +21908,8 @@
           Y.test = function (t) {
             return (
               G.test(t) ||
-              b.test(t) ||
               M.test(t) ||
+              b.test(t) ||
               U.test(t) ||
               w.test(t) ||
               B.test(t)
@@ -22382,11 +22383,11 @@
               return [E < 0 ? 0 : E, 500 * (i - c), 200 * (c - s)];
             },
             tG = i.unpack,
-            tb = Math.pow,
-            tM = function (t) {
+            tM = Math.pow,
+            tb = function (t) {
               return (
                 255 *
-                (t <= 0.00304 ? 12.92 * t : 1.055 * tb(t, 1 / 2.4) - 0.055)
+                (t <= 0.00304 ? 12.92 * t : 1.055 * tM(t, 1 / 2.4) - 0.055)
               );
             },
             tU = function (t) {
@@ -22403,15 +22404,15 @@
                 (t = isNaN(i) ? e : e + i / 500),
                 (a = isNaN(c) ? e : e - c / 200),
                 (e = tm.Yn * tU(e)),
-                (r = tM(
+                (r = tb(
                   3.2404542 * (t = tm.Xn * tU(t)) -
                     1.5371385 * e -
                     0.4985314 * (a = tm.Zn * tU(a)),
                 )),
                 [
                   r,
-                  tM(-0.969266 * t + 1.8760108 * e + 0.041556 * a),
-                  tM(0.0556434 * t - 0.2040259 * e + 1.0572252 * a),
+                  tb(-0.969266 * t + 1.8760108 * e + 0.041556 * a),
+                  tb(0.0556434 * t - 0.2040259 * e + 1.0572252 * a),
                   n.length > 3 ? n[3] : 1,
                 ]
               );
@@ -23074,7 +23075,7 @@
             (u.prototype.desaturate = function (t) {
               return void 0 === t && (t = 1), this.saturate(-t);
             });
-          var eb = i.type;
+          var eM = i.type;
           (u.prototype.set = function (t, e, a) {
             void 0 === a && (a = !1);
             var r = t.split("."),
@@ -23084,7 +23085,7 @@
             if (!o) return _;
             var i = n.indexOf(o) - ("ok" === n.substr(0, 2) ? 2 : 0);
             if (i > -1) {
-              if ("string" == eb(e))
+              if ("string" == eM(e))
                 switch (e.charAt(0)) {
                   case "+":
                   case "-":
@@ -23099,7 +23100,7 @@
                   default:
                     _[i] = +e;
                 }
-              else if ("number" === eb(e)) _[i] = e;
+              else if ("number" === eM(e)) _[i] = e;
               else throw Error("unsupported value for Color.set");
               var c = new u(_, n);
               return a ? ((this._rgb = c._rgb), this) : c;
@@ -23116,7 +23117,7 @@
                 "rgb",
               );
             });
-          var eM = Math.sqrt,
+          var eb = Math.sqrt,
             eU = Math.pow;
           (eC.lrgb = function (t, e, a) {
             var r = t._rgb,
@@ -23128,9 +23129,9 @@
               s = i[1],
               E = i[2];
             return new u(
-              eM(eU(n, 2) * (1 - a) + eU(c, 2) * a),
-              eM(eU(o, 2) * (1 - a) + eU(s, 2) * a),
-              eM(eU(_, 2) * (1 - a) + eU(E, 2) * a),
+              eb(eU(n, 2) * (1 - a) + eU(c, 2) * a),
+              eb(eU(o, 2) * (1 - a) + eU(s, 2) * a),
+              eb(eU(_, 2) * (1 - a) + eU(E, 2) * a),
               "rgb",
             );
           }),
@@ -23752,9 +23753,9 @@
                         C < y && ((y = C), (P = v)), T[P]++, (p[g] = P);
                       }
                     for (var S = Array(a), G = 0; G < a; G++) S[G] = null;
-                    for (var b = 0; b < f; b++)
-                      null === S[(A = p[b])] ? (S[A] = _[b]) : (S[A] += _[b]);
-                    for (var M = 0; M < a; M++) S[M] *= 1 / T[M];
+                    for (var M = 0; M < f; M++)
+                      null === S[(A = p[M])] ? (S[A] = _[M]) : (S[A] += _[M]);
+                    for (var b = 0; b < a; b++) S[b] *= 1 / T[b];
                     N = !1;
                     for (var U = 0; U < a; U++)
                       if (S[U] !== h[U]) {
@@ -24395,8 +24396,8 @@
                 (C = 2 * an(L * h) * al(_(C) / 2));
               var S = h - L,
                 G = 1 + (0.015 * ao(A - 50, 2)) / an(20 + ao(A - 50, 2)),
-                b = 1 + 0.045 * O,
-                M = 1 + 0.015 * O * v,
+                M = 1 + 0.045 * O,
+                b = 1 + 0.015 * O * v,
                 U = 30 * au(-ao((P - 275) / 25, 2)),
                 w = -(2 * an(ao(O, 7) / (ao(O, 7) + ao(25, 7)))) * al(2 * _(U));
               return ai(
@@ -24405,9 +24406,9 @@
                   100,
                   an(
                     ao((I - c) / (a * G), 2) +
-                      ao(S / (r * b), 2) +
-                      ao(C / (n * M), 2) +
-                      (S / (r * b)) * w * (C / (n * M)),
+                      ao(S / (r * M), 2) +
+                      ao(C / (n * b), 2) +
+                      (S / (r * M)) * w * (C / (n * b)),
                   ),
                 ),
               );
@@ -24764,7 +24765,7 @@
             SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE: () => n.TE,
             SEMANTIC_ATTRIBUTE_SENTRY_SOURCE: () => n.Zj,
             Scope: () => o.s,
-            WINDOW: () => M.m9,
+            WINDOW: () => b.m9,
             addBreadcrumb: () => _.n,
             addEventProcessor: () => i.Qy,
             addIntegration: () => c.M5,
@@ -24866,7 +24867,7 @@
             withActiveSpan: () => u._d,
             withIsolationScope: () => T.wi,
             withScope: () => T.$e,
-            zodErrorsIntegration: () => b.i,
+            zodErrorsIntegration: () => M.i,
           });
         var r = a(452896),
           n = a(988097),
@@ -24898,8 +24899,8 @@
           C = a(241225),
           S = a(305625),
           G = a(925746),
-          b = a(93198),
-          M = a(163162),
+          M = a(93198),
+          b = a(163162),
           U = a(833772),
           w = a(387486),
           B = a(297117),
@@ -25913,7 +25914,7 @@
           GC: () => G,
           WU: () => m,
           db: () => h,
-          dz: () => b,
+          dz: () => M,
           nm: () => v,
           ph: () => S,
           x5: () => L,
@@ -26274,7 +26275,7 @@
           let e = C.get(t);
           return e && C.delete(t), e;
         }
-        function b(t, e) {
+        function M(t, e) {
           if ((C.set(t, e), C.size > 30)) {
             let t = C.keys().next().value;
             C.delete(t);
@@ -26645,8 +26646,8 @@
                 traceFetch: C,
                 traceXHR: S,
                 shouldCreateSpanForRequest: G,
-                enableHTTPTimings: b,
-                instrumentPageLoad: M,
+                enableHTTPTimings: M,
+                instrumentPageLoad: b,
                 instrumentNavigation: U,
               } = { ...L, ...t },
               w = (0, r.PR)();
@@ -26738,7 +26739,7 @@
                     });
                   }),
                   p.m9.location &&
-                    (M &&
+                    (b &&
                       O(t, {
                         name: p.m9.location.pathname,
                         startTime: R.Z1 ? R.Z1 / 1e3 : void 0,
@@ -26821,7 +26822,7 @@
                     tracePropagationTargets:
                       t.getOptions().tracePropagationTargets,
                     shouldCreateSpanForRequest: G,
-                    enableHTTPTimings: b,
+                    enableHTTPTimings: M,
                   });
               },
             };
@@ -30655,9 +30656,9 @@ Event: ${(0, n.jH)(s)}`),
           let r = C(t),
             { forceTransaction: n, parentSpan: o } = t;
           return (0, i.$e)(t.scope, () =>
-            M(o)(() => {
+            b(o)(() => {
               let a = (0, i.nZ)(),
-                o = b(a),
+                o = M(a),
                 _ =
                   t.onlyIfParent && !o
                     ? new p.b()
@@ -30689,9 +30690,9 @@ Event: ${(0, n.jH)(s)}`),
           let r = C(t),
             { forceTransaction: n, parentSpan: o } = t;
           return (0, i.$e)(t.scope, () =>
-            M(o)(() => {
+            b(o)(() => {
               let a = (0, i.nZ)(),
-                o = b(a),
+                o = M(a),
                 _ =
                   t.onlyIfParent && !o
                     ? new p.b()
@@ -30732,7 +30733,7 @@ Event: ${(0, n.jH)(s)}`),
                 : (t) => t()
           )(() => {
             let e = (0, i.nZ)(),
-              n = b(e);
+              n = M(e);
             return t.onlyIfParent && !n
               ? new p.b()
               : v({
@@ -30847,7 +30848,7 @@ Event: ${(0, n.jH)(s)}`),
             l
           );
         }
-        function b(t) {
+        function M(t) {
           let e = (0, I.Y)(t);
           if (!e) return;
           let a = (0, i.s3)();
@@ -30855,7 +30856,7 @@ Event: ${(0, n.jH)(s)}`),
             ? (0, R.Gx)(e)
             : e;
         }
-        function M(t) {
+        function b(t) {
           return void 0 !== t ? (e) => y(t, e) : (t) => t();
         }
       },
@@ -34263,7 +34264,7 @@ Error:`,
           YF: () => O,
           _4: () => h,
           _j: () => D,
-          cN: () => M,
+          cN: () => b,
           to: () => L,
         });
         var c = a(622916),
@@ -34308,7 +34309,7 @@ Error:`,
                   );
               })(t),
               (p[t] = !0)),
-            b(t, e)
+            M(t, e)
           );
         }
         function g(t, e) {
@@ -34365,13 +34366,13 @@ Error:`,
             G(t, e),
             p[t] || ((o = a()), (p[t] = !0)),
             r && e({ metric: r }),
-            b(t, e, n ? o : void 0)
+            M(t, e, n ? o : void 0)
           );
         }
         function G(t, e) {
           (f[t] = f[t] || []), f[t].push(e);
         }
-        function b(t, e, a) {
+        function M(t, e, a) {
           return () => {
             a && a();
             let r = f[t];
@@ -34380,7 +34381,7 @@ Error:`,
             -1 !== n && r.splice(n, 1);
           };
         }
-        function M(t) {
+        function b(t) {
           return "duration" in t;
         }
       },
@@ -34983,7 +34984,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(95%)",
           },
-          b = {
+          M = {
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
@@ -34995,7 +34996,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(150%)",
           };
-        function M(t) {
+        function b(t) {
           return `
   --foreground: ${t.foreground};
   --background: ${t.background};
@@ -35117,7 +35118,7 @@ Error:`,
 
   ${"system" !== t ? "color-scheme: only light;" : ""}
 
-  ${M("dark" === t ? { ...b, ...e } : { ...G, ...a })}
+  ${b("dark" === t ? { ...M, ...e } : { ...G, ...a })}
 }
 
 ${
@@ -35125,7 +35126,7 @@ ${
     ? `
 @media (prefers-color-scheme: dark) {
   :host {
-    ${M({ ...b, ...e })}
+    ${b({ ...M, ...e })}
   }
 }`
     : ""
@@ -36195,7 +36196,7 @@ ${
             }, e)
           );
         }
-        function tb() {
+        function tM() {
           for (var t; (t = tp.shift()); )
             if (t.__P && t.__H)
               try {
@@ -36241,13 +36242,13 @@ ${
                       var e,
                         a = function () {
                           clearTimeout(r),
-                            tM && cancelAnimationFrame(e),
+                            tb && cancelAnimationFrame(e),
                             setTimeout(t);
                         },
                         r = setTimeout(a, 100);
-                      tM && (e = requestAnimationFrame(a));
+                      tb && (e = requestAnimationFrame(a));
                     }
-                  )(tb)),
+                  )(tM)),
               e.__H.__.forEach(function (t) {
                 t.i && (t.__H = t.i),
                   t.__V !== tT && (t.__ = t.__V),
@@ -36289,7 +36290,7 @@ ${
               (a.__H = void 0),
               e && tN.__e(e, a.__v));
           });
-        var tM = "function" == typeof requestAnimationFrame;
+        var tb = "function" == typeof requestAnimationFrame;
         function tU(t) {
           var e = tR,
             a = t.__c;
@@ -36475,10 +36476,10 @@ ${
             [y, v] = tP(!1),
             C = E && E.input,
             [S, G] = tP(null),
-            b = tG((t) => {
+            M = tG((t) => {
               G(t), v(!1);
             }, []),
-            M = tG(
+            b = tG(
               (t) => {
                 let e = (function (t, e) {
                   let a = [];
@@ -36526,7 +36527,7 @@ ${
                         message: tx(e, "message"),
                         attachments: a ? [a] : void 0,
                       };
-                    if (!M(r)) return;
+                    if (!b(r)) return;
                     try {
                       await n(
                         {
@@ -36551,7 +36552,7 @@ ${
             },
             C && y
               ? z(C, {
-                  onError: b,
+                  onError: M,
                   __self: this,
                   __source: { fileName: tk, lineNumber: 146 },
                 })
@@ -37846,7 +37847,7 @@ ${tZ}
       778600: function (t, e, a) {
         "use strict";
         let r;
-        a.d(e, { m: () => M });
+        a.d(e, { m: () => b });
         var n,
           o,
           _,
@@ -38589,7 +38590,7 @@ ${tZ}
               this.pendingCanvasMutations.delete(t);
           }
         }
-        let b = {
+        let M = {
             low: {
               sampling: { canvas: 1 },
               dataURLOptions: { type: "image/webp", quality: 0.25 },
@@ -38603,7 +38604,7 @@ ${tZ}
               dataURLOptions: { type: "image/webp", quality: 0.5 },
             },
           },
-          M = (0, c._I)((t = {}) => {
+          b = (0, c._I)((t = {}) => {
             let e;
             let [a, r] = t.maxCanvasSize || [],
               n = {
@@ -38639,7 +38640,7 @@ ${tZ}
                     });
                     return e(n), n;
                   },
-                  ...(b[t || "medium"] || b.medium),
+                  ...(M[t || "medium"] || M.medium),
                 };
               },
               async snapshot(t) {
@@ -38676,8 +38677,8 @@ ${tZ}
           C = a(467510),
           S = a(101284),
           G = a(622916),
-          b = a(394798),
-          M = a(886115),
+          M = a(394798),
+          b = a(886115),
           U = a(617726),
           w = a(928541),
           B = a(14588),
@@ -39096,8 +39097,8 @@ ${tZ}
               keepIframeSrcFn: S = () => !1,
               newlyAddedElement: G = !1,
             } = e,
-            { preserveWhiteSpace: b = !0 } = e,
-            M = (function (t, e) {
+            { preserveWhiteSpace: M = !0 } = e,
+            b = (function (t, e) {
               let {
                   doc: a,
                   mirror: o,
@@ -39479,7 +39480,7 @@ ${tZ}
               keepIframeSrcFn: S,
               newlyAddedElement: G,
             });
-          if (!M) return console.warn(t, "not serialized"), null;
+          if (!b) return console.warn(t, "not serialized"), null;
           a = _.hasNode(t)
             ? _.getId(t)
             : !(function (t, e) {
@@ -39563,14 +39564,14 @@ ${tZ}
                     }
                   }
                   return !1;
-                })(M, h) &&
-                (b ||
-                  M.type !== d.Text ||
-                  M.isStyle ||
-                  M.textContent.replace(/^\s+|\s+$/gm, "").length)
+                })(b, h) &&
+                (M ||
+                  b.type !== d.Text ||
+                  b.isStyle ||
+                  b.textContent.replace(/^\s+|\s+$/gm, "").length)
               ? tR()
               : -2;
-          let U = Object.assign(M, { id: a });
+          let U = Object.assign(b, { id: a });
           if ((_.add(t, U), -2 === a)) return null;
           m && m(t);
           let w = !A;
@@ -39583,7 +39584,7 @@ ${tZ}
             h.headWhitespace &&
               U.type === d.Element &&
               "head" === U.tagName &&
-              (b = !1);
+              (M = !1);
             let e = {
               doc: o,
               mirror: _,
@@ -39605,7 +39606,7 @@ ${tZ}
               dataURLOptions: O,
               inlineImages: D,
               recordCanvas: g,
-              preserveWhiteSpace: b,
+              preserveWhiteSpace: M,
               onSerialize: m,
               onIframeLoad: y,
               iframeLoadTimeout: P,
@@ -39680,7 +39681,7 @@ ${tZ}
                       dataURLOptions: O,
                       inlineImages: D,
                       recordCanvas: g,
-                      preserveWhiteSpace: b,
+                      preserveWhiteSpace: M,
                       onSerialize: m,
                       onIframeLoad: y,
                       iframeLoadTimeout: P,
@@ -39740,7 +39741,7 @@ ${tZ}
                       dataURLOptions: O,
                       inlineImages: D,
                       recordCanvas: g,
-                      preserveWhiteSpace: b,
+                      preserveWhiteSpace: M,
                       onSerialize: m,
                       onIframeLoad: y,
                       iframeLoadTimeout: P,
@@ -39781,18 +39782,18 @@ ${tZ}
             a.addEventListener(t, e, r), () => a.removeEventListener(t, e, r)
           );
         }
-        let tb =
+        let tM =
             "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.",
-          tM = {
+          tb = {
             map: {},
-            getId: () => (console.error(tb), -1),
-            getNode: () => (console.error(tb), null),
+            getId: () => (console.error(tM), -1),
+            getNode: () => (console.error(tM), null),
             removeNodeFromMap() {
-              console.error(tb);
+              console.error(tM);
             },
-            has: () => (console.error(tb), !1),
+            has: () => (console.error(tM), !1),
             reset() {
-              console.error(tb);
+              console.error(tM);
             },
           };
         function tU(t, e, a = {}) {
@@ -39843,9 +39844,9 @@ ${tZ}
         "undefined" != typeof window &&
           window.Proxy &&
           window.Reflect &&
-          (tM = new Proxy(tM, {
+          (tb = new Proxy(tb, {
             get: (t, e, a) => (
-              "map" === e && console.error(tb), Reflect.get(t, e, a)
+              "map" === e && console.error(tM), Reflect.get(t, e, a)
             ),
           }));
         let tB = Date.now;
@@ -42058,8 +42059,8 @@ ${tZ}
             mousemoveWait: C,
             recordDOM: S = !0,
             recordCanvas: G = !1,
-            recordCrossOriginIframes: b = !1,
-            recordAfter: M = "DOMContentLoaded" === t.recordAfter
+            recordCrossOriginIframes: M = !1,
+            recordAfter: b = "DOMContentLoaded" === t.recordAfter
               ? t.recordAfter
               : "load",
             userTriggeredOnInput: U = !1,
@@ -42073,7 +42074,7 @@ ${tZ}
             getCanvasManager: x,
           } = t;
           o = K;
-          let F = !b || window.parent === window,
+          let F = !M || window.parent === window,
             V = !1;
           if (!F)
             try {
@@ -42217,7 +42218,7 @@ ${tZ}
                     mirror: eO,
                     mutationCb: z,
                     stylesheetManager: tt,
-                    recordCrossOriginIframes: b,
+                    recordCrossOriginIframes: M,
                     wrappedEmit: _,
                   });
           for (let t of W || [])
@@ -42581,14 +42582,14 @@ ${tZ}
                 : (t.push(
                     tG("DOMContentLoaded", () => {
                       _({ type: t0.DomContentLoaded, data: {} }),
-                        "DOMContentLoaded" === M && a();
+                        "DOMContentLoaded" === b && a();
                     }),
                   ),
                   t.push(
                     tG(
                       "load",
                       () => {
-                        _({ type: t0.Load, data: {} }), "load" === M && a();
+                        _({ type: t0.Load, data: {} }), "load" === b && a();
                       },
                       window,
                     ),
@@ -42658,7 +42659,7 @@ ${tZ}
             var t;
             let e =
               ((t = () => {
-                this._lastMutation = eb();
+                this._lastMutation = eM();
               }),
               c ||
                 ((c = []),
@@ -42742,7 +42743,7 @@ ${tZ}
           }
           _checkClicks() {
             let t = [],
-              e = eb();
+              e = eM();
             for (let a of (this._clicks.forEach((a) => {
               !a.mutationAfter &&
                 this._lastMutation &&
@@ -42818,10 +42819,10 @@ ${tZ}
           }
         }
         let eG = ["A", "BUTTON", "INPUT"];
-        function eb() {
+        function eM() {
           return Date.now() / 1e3;
         }
-        function eM(t) {
+        function eb(t) {
           return { timestamp: Date.now() / 1e3, type: "default", ...t };
         }
         ((R = A || (A = {}))[(R.Document = 0)] = "Document"),
@@ -42859,7 +42860,7 @@ ${tZ}
                 }
                 return { target: r, message: e };
               })(t);
-              return eM({ category: `ui.${t.name}`, ...eB(e, a) });
+              return eb({ category: `ui.${t.name}`, ...eB(e, a) });
             })(e);
             if (!a) return;
             let r = "click" === e.name,
@@ -43290,7 +43291,7 @@ ${tZ}
         }
         function e6(t) {
           let e = Date.now(),
-            a = t.id || (0, b.DM)(),
+            a = t.id || (0, M.DM)(),
             r = t.started || e,
             n = t.lastActivity || e,
             o = t.segmentId || 0;
@@ -43583,7 +43584,7 @@ ${tZ}
             let r = a.href;
             return !t.endsWith("/") && r.endsWith("/") ? r.slice(0, -1) : r;
           })(t);
-          return (0, M.U0)(a, e);
+          return (0, b.U0)(a, e);
         }
         async function aT(t, e, a) {
           try {
@@ -43999,7 +44000,7 @@ ${tZ}
             super("Rate limit hit"), (this.rateLimits = t);
           }
         }
-        async function ab(t, e = { count: 0, interval: 5e3 }) {
+        async function aM(t, e = { count: 0, interval: 5e3 }) {
           let { recordingData: a, options: r } = t;
           if (a.length)
             try {
@@ -44025,7 +44026,7 @@ ${tZ}
                 new Promise((a, r) => {
                   (0, Y.iK)(async () => {
                     try {
-                      await ab(t, e), a(!0);
+                      await aM(t, e), a(!0);
                     } catch (t) {
                       r(t);
                     }
@@ -44034,7 +44035,7 @@ ${tZ}
               );
             }
         }
-        let aM = "__THROTTLED";
+        let ab = "__THROTTLED";
         class aU {
           constructor({ options: t, recordingOptions: e }) {
             aU.prototype.__init.call(this),
@@ -44108,7 +44109,7 @@ ${tZ}
                   let a = Math.floor(Date.now() / 1e3);
                   if ((n(a), o() >= 300)) {
                     let t = _;
-                    return (_ = !0), t ? "__SKIPPED" : aM;
+                    return (_ = !0), t ? "__SKIPPED" : ab;
                   }
                   _ = !1;
                   let i = r.get(a) || 0;
@@ -44495,8 +44496,8 @@ ${tZ}
           }
           throttledAddEvent(t, e) {
             let a = this._throttledAddEvent(t, e);
-            if (a === aM) {
-              let t = eM({ category: "replay.throttled" });
+            if (a === ab) {
+              let t = eb({ category: "replay.throttled" });
               this.addUpdate(
                 () =>
                   !ae(this, {
@@ -44646,7 +44647,7 @@ ${tZ}
                                     ? (function (t) {
                                         let e = t.data && t.data.arguments;
                                         if (!Array.isArray(e) || 0 === e.length)
-                                          return eM(t);
+                                          return eb(t);
                                         let a = !1,
                                           r = e.map((t) => {
                                             if (!t) return t;
@@ -44669,7 +44670,7 @@ ${tZ}
                                               } catch (t) {}
                                             return t;
                                           });
-                                        return eM({
+                                        return eb({
                                           ...t,
                                           data: {
                                             ...t.data,
@@ -44686,7 +44687,7 @@ ${tZ}
                                           },
                                         });
                                       })(a)
-                                    : eM(a));
+                                    : eb(a));
                               r && ey(t, r);
                             })(t, e),
                           );
@@ -44860,7 +44861,7 @@ ${tZ}
                                   )) &&
                                 ey(
                                   t,
-                                  eM({
+                                  eb({
                                     category: "replay.hydrate-error",
                                     data: { url: (0, C.l4)() },
                                   }),
@@ -44980,13 +44981,13 @@ ${tZ}
           }
           __init2() {
             this._handleWindowBlur = () => {
-              let t = eM({ category: "ui.blur" });
+              let t = eb({ category: "ui.blur" });
               this._doChangeToBackgroundTasks(t);
             };
           }
           __init3() {
             this._handleWindowFocus = () => {
-              let t = eM({ category: "ui.focus" });
+              let t = eb({ category: "ui.focus" });
               this._doChangeToForegroundTasks(t);
             };
           }
@@ -45018,7 +45019,7 @@ ${tZ}
                   if (!c && s) return null;
                   let E = (0, C.Rt)(i, { maxStringLength: 200 }) || "<unknown>",
                     l = eB(i, E);
-                  return eM({
+                  return eb({
                     category: "ui.keyDown",
                     message: E,
                     data: {
@@ -45134,7 +45135,7 @@ ${tZ}
                     r = this.session.segmentId++;
                   this._maybeSaveSession();
                   let n = await this.eventBuffer.finish();
-                  await ab({
+                  await aM({
                     replayId: t,
                     recordingData: n,
                     segmentId: r,
@@ -45209,7 +45210,7 @@ ${tZ}
                 r = this._options.mutationBreadcrumbLimit,
                 n = a && e > a;
               if (e > r || n) {
-                let t = eM({
+                let t = eb({
                   category: "replay.mutations",
                   data: { count: e, limit: n },
                 });
@@ -45515,4 +45516,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.cd209af067fd3bc6.js.map
+//# sourceMappingURL=sentry.c1b26738ff93cc48.js.map
