@@ -13869,6 +13869,7 @@ div.modalHeader_c28af8 {
 }
 .rootContainer_b0ba57 {
   width: 440px;
+  overflow: hidden;
 }
 .rootContainerLoading_b0ba57 {
   align-content: center;
@@ -13886,17 +13887,14 @@ div.modalHeader_c28af8 {
   grid-template: "layer" 1fr/1fr;
   background-color: var(--modal-footer-background);
 }
-.headerBackground_b0ba57,
-.headerContainer_b0ba57 {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
 .headerBackground_b0ba57 {
   grid-area: layer;
   width: 100%;
   max-width: 440px;
   -o-object-fit: cover;
   object-fit: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .headerForeground_b0ba57 {
   grid-area: layer;
@@ -58148,4 +58146,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c0a81f6c3f0ec821.css.map*/
+/*# sourceMappingURL=12633.7d88a3df00b39e34.css.map*/
