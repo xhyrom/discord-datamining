@@ -37487,6 +37487,15 @@ img.thumbnail__0f2e8 {
 .tabItemSelected__9e06a {
   color: var(--header-primary);
 }
+.icon__9e06a {
+  margin-right: var(--spacing-8);
+  width: 16px;
+  height: 16px;
+}
+.controlText__9e06a {
+  display: flex;
+  align-items: center;
+}
 .select__3f413 {
   border: 1px solid transparent;
   padding: 8px 8px 8px 12px;
@@ -58154,4 +58163,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1427291828228fd6.css.map*/
+/*# sourceMappingURL=12633.e1d0fac5e99cf319.css.map*/
