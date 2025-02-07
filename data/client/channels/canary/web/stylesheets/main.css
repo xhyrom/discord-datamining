@@ -29259,19 +29259,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 144px;
-  width: 144px;
-}
-.full-motion .avatarDecoration__78e61 {
-  animation: zoomin__78e61 1.5s;
-}
-@keyframes zoomin__78e61 {
-  0% {
-    transform: translate(-50%, -50%) scale(0.25);
-  }
-  to {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 .decorationBanner__78e61 {
   position: absolute;
@@ -58136,4 +58123,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.233ad18221745ac4.css.map*/
+/*# sourceMappingURL=12633.bfd5f9d9eee17abe.css.map*/
