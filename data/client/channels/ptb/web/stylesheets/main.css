@@ -9488,6 +9488,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   line-height: 18px;
   transition: background-color 0.2s ease-in-out;
 }
+.mediaMosaicAltText__0f481.reducedSize__0f481 {
+  padding: 0 4px;
+  font-size: 12px;
+}
 .mediaMosaicAltText__0f481:hover {
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.2s ease-in-out;
@@ -11761,10 +11765,21 @@ div.cardContainer__88e24 {
 }
 .gradientLayer__6d6a1 {
   height: calc(100% - 2px);
-  width: 100%;
+  top: 1px;
+  border-radius: var(--radius-sm);
+}
+.borderLayer__6d6a1,
+.gradientLayer__6d6a1 {
+  width: calc(100% - 8px);
   position: absolute;
   left: 8px;
-  top: 1px;
+  pointer-events: none;
+}
+.borderLayer__6d6a1 {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid;
+  z-index: 2;
 }
 .img__6d6a1.hover__6d6a1 {
   opacity: 0.8;
@@ -11780,13 +11795,6 @@ div.cardContainer__88e24 {
 }
 .visual-refresh .privateChannel__6d6a1 {
   max-width: var(--custom-guild-sidebar-width);
-}
-.bordered__6d6a1 {
-  border: 1px solid;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
 }
 .content__6d6a1 {
   z-index: 1;
@@ -13869,6 +13877,7 @@ div.modalHeader_c28af8 {
 }
 .rootContainer_b0ba57 {
   width: 440px;
+  overflow: hidden;
 }
 .rootContainerLoading_b0ba57 {
   align-content: center;
@@ -13886,17 +13895,14 @@ div.modalHeader_c28af8 {
   grid-template: "layer" 1fr/1fr;
   background-color: var(--modal-footer-background);
 }
-.headerBackground_b0ba57,
-.headerContainer_b0ba57 {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
 .headerBackground_b0ba57 {
   grid-area: layer;
   width: 100%;
   max-width: 440px;
   -o-object-fit: cover;
   object-fit: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .headerForeground_b0ba57 {
   grid-area: layer;
@@ -37481,6 +37487,15 @@ img.thumbnail__0f2e8 {
 .tabItemSelected__9e06a {
   color: var(--header-primary);
 }
+.icon__9e06a {
+  margin-right: var(--spacing-8);
+  width: 16px;
+  height: 16px;
+}
+.controlText__9e06a {
+  display: flex;
+  align-items: center;
+}
 .select__3f413 {
   border: 1px solid transparent;
   padding: 8px 8px 8px 12px;
@@ -58148,4 +58163,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c0a81f6c3f0ec821.css.map*/
+/*# sourceMappingURL=12633.e1d0fac5e99cf319.css.map*/
