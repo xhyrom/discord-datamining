@@ -6695,6 +6695,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background-color: var(--background-secondary);
   border-radius: 8px;
   max-height: calc(100vh - 20px);
+  display: flex;
 }
 .roleHeader__75297 {
   padding: 12px 8px 0 16px;
@@ -12054,12 +12055,6 @@ div.modalHeader_c28af8 {
 .questRewardTile__28141:focus .questRewardTileDetailsLearnMore__28141,
 .questRewardTile__28141:hover .questRewardTileDetailsLearnMore__28141 {
   opacity: 1;
-}
-.questRewardTileOrbQuantity__28141 {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  overflow: hidden;
 }
 .hideLearnMore__28141 {
   cursor: default;
@@ -29259,19 +29254,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 144px;
-  width: 144px;
-}
-.full-motion .avatarDecoration__78e61 {
-  animation: zoomin__78e61 1.5s;
-}
-@keyframes zoomin__78e61 {
-  0% {
-    transform: translate(-50%, -50%) scale(0.25);
-  }
-  to {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 .decorationBanner__78e61 {
   position: absolute;
@@ -40836,7 +40818,7 @@ img.thumbnail__0f2e8 {
 }
 .popoutWrapper_d6b206 {
   position: relative;
-  left: -30px;
+  margin-bottom: 10px;
   width: 200px;
   display: flex;
   max-height: 40vh;
@@ -41547,33 +41529,6 @@ img.thumbnail__0f2e8 {
 }
 .avatarWrapper_fb62e2 {
   border-radius: 50%;
-}
-@keyframes demoEffect_a8418b {
-  0% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-.demoEffectOverlay_a8418b {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  animation-name: demoEffect_a8418b;
-  animation-iteration-count: 1;
-  animation-duration: 0.25s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-.demoEffectImg_a8418b {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 }
 .button_fbcaba {
   line-height: 0;
@@ -58163,4 +58118,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e1d0fac5e99cf319.css.map*/
+/*# sourceMappingURL=12633.908ee0a3b5665f48.css.map*/

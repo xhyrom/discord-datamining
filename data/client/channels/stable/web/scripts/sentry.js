@@ -4675,6 +4675,17 @@
                   : "jpg";
               return "/users/".concat(t, "/avatars/").concat(e, ".").concat(a);
             },
+            ARCHIVED_AVATAR: function (t, e, a) {
+              let r =
+                arguments.length > 3 && void 0 !== arguments[3]
+                  ? arguments[3]
+                  : "jpg";
+              return "/avatars/"
+                .concat(t, "/archived/")
+                .concat(e, "/")
+                .concat(a, ".")
+                .concat(r);
+            },
             USER_BANNER: (t, e, a) =>
               "/users/".concat(t, "/banners/").concat(e, ".").concat(a),
             AVATAR_DECORATION_PRESETS: function (t) {
@@ -5062,6 +5073,8 @@
               "/users/@me/billing/subscriptions/"
                 .concat(t, "/invoices/")
                 .concat(e, "/pay"),
+            BILLING_SUBSCRIPTION_REWARDS: (t) =>
+              "/users/@me/billing/subscriptions/".concat(t, "/rewards"),
             Billing_SUBSCRIPTION_REWARD_ELIGIBILITY: (t) =>
               "/users/@me/billing/subscriptions/".concat(
                 t,
@@ -5657,8 +5670,12 @@
               "/quests/".concat(t, "/preview/dismissibility"),
             QUESTS_PREVIEW_COMPLETE: (t) =>
               "/quests/".concat(t, "/preview/complete"),
-            QUEST_FETCH_QUEST_TO_DELIVER: (t) =>
-              "/quests/decision?placement=".concat(t),
+            QUEST_FETCH_QUEST_TO_DELIVER: (t, e) =>
+              "/quests/decision?placement="
+                .concat(t)
+                .concat(
+                  null != e ? "&client_heartbeat_session_id=".concat(e) : "",
+                ),
             ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
             GAME_INVITE: (t) => "/game-invite/@me/".concat(t),
             GAME_INVITES: "/game-invite/@me",
@@ -5839,10 +5856,7 @@
                 .concat(I.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(e),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
-            GUILD_MEMBER_VERIFICATION: (t, e) =>
-              "/member-verification/"
-                .concat(t)
-                .concat(null != e ? "/".concat(e) : ""),
+            GUILD_MEMBER_VERIFICATION: (t) => "/member-verification/".concat(t),
             GUILD_MEMBER_VERIFICATION_FOR_HUB: (t, e) =>
               "/member-verification-for-hub/"
                 .concat(t)
@@ -6593,21 +6607,23 @@
           (r.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
           (r.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (r.QUEST_BAR_MODE_CHANGED = "quest_bar_mode_changed"),
-          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
-          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
-          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
-          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
-          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
-          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
-          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
-          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
-          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
-          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
+          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_ERROR = "quest_video_error"),
+          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
+          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
+          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
+          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
           (r.QUEST_VIDEO_MODAL_CLOSED = "quest_video_modal_closed"),
+          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
+          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
+          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
+          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
+          (r.QUEST_VIDEO_TIME_TO_FIRST_FRAME =
+            "quest_video_time_to_first_frame"),
+          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
           (r.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (r.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (r.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -8266,8 +8282,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release:
-              "2025-02-07-14b66953f402c4af3c3e90d76b9e05111f32f485-discord_web",
+            release: "discord_web-164e78e7d3c19706e59db983217ae3c452a18b1a",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8332,8 +8347,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "366749"),
-            _.YA("builtAt", String("1738962510731"));
+            _.YA("buildNumber", "366871"),
+            _.YA("builtAt", String("1738970452133"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45522,4 +45537,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.78637e99a90c3d98.js.map
+//# sourceMappingURL=sentry.c3a3a34ea5123559.js.map
