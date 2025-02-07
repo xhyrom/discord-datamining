@@ -6695,6 +6695,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background-color: var(--background-secondary);
   border-radius: 8px;
   max-height: calc(100vh - 20px);
+  display: flex;
 }
 .roleHeader__75297 {
   padding: 12px 8px 0 16px;
@@ -58117,4 +58118,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ebb91922c8aa7ef9.css.map*/
+/*# sourceMappingURL=12633.908ee0a3b5665f48.css.map*/
