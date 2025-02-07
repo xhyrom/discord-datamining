@@ -6607,21 +6607,23 @@
           (r.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
           (r.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (r.QUEST_BAR_MODE_CHANGED = "quest_bar_mode_changed"),
-          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
-          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
-          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
-          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
-          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
-          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
-          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
-          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
-          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
-          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
+          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_ERROR = "quest_video_error"),
+          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
+          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
+          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
+          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
           (r.QUEST_VIDEO_MODAL_CLOSED = "quest_video_modal_closed"),
+          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
+          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
+          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
+          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
+          (r.QUEST_VIDEO_TIME_TO_FIRST_FRAME =
+            "quest_video_time_to_first_frame"),
+          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
           (r.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (r.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (r.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -8280,7 +8282,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-feee6822909be54819b16691b8eb39b60b71f69e",
+            release: "discord_web-162835436311092cd278b6a532c8812a4657f503",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8345,8 +8347,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "366816"),
-            _.YA("builtAt", String("1738966360348"));
+            _.YA("buildNumber", "366836"),
+            _.YA("builtAt", String("1738967400766"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45535,4 +45537,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5c52b8a7fab19ba2.js.map
+//# sourceMappingURL=sentry.58b513607fc0aba1.js.map
