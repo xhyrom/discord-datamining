@@ -40836,7 +40836,7 @@ img.thumbnail__0f2e8 {
 }
 .popoutWrapper_d6b206 {
   position: relative;
-  left: -30px;
+  margin-bottom: 10px;
   width: 200px;
   display: flex;
   max-height: 40vh;
@@ -58136,4 +58136,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.80d7499265145b33.css.map*/
+/*# sourceMappingURL=12633.233ad18221745ac4.css.map*/
