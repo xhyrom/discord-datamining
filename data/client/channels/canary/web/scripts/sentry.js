@@ -8283,7 +8283,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4e32cec6c829585fbefa201d6c80155e8b847525",
+            release: "discord_web-9962ba77a065b4f857012501d4b86b4d15259e18",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8348,8 +8348,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "367015"),
-            _.YA("builtAt", String("1739062489131"));
+            _.YA("buildNumber", "367028"),
+            _.YA("builtAt", String("1739112436371"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -34489,7 +34489,7 @@ Error:`,
           _ = a(622574),
           i = a(433691),
           c = a(135813),
-          s = a(873712);
+          s = a(662355);
         let E = [100, 300],
           l = (t, e = {}) => {
             (0, s.A)(() => {
@@ -34525,7 +34525,7 @@ Error:`,
           _ = a(622574),
           i = a(433691),
           c = a(412828),
-          s = a(873712);
+          s = a(662355);
         let E = [200, 500],
           l = () => (0, c.U)() - 0,
           u = [],
@@ -34608,7 +34608,7 @@ Error:`,
           c = a(622574),
           s = a(433691),
           E = a(135813),
-          l = a(873712);
+          l = a(662355);
         let u = [2500, 4e3],
           I = {},
           R = (t, e = {}) => {
@@ -34812,7 +34812,7 @@ Error:`,
           };
         };
       },
-      873712: function (t, e, a) {
+      662355: function (t, e, a) {
         "use strict";
         a.d(e, { A: () => n });
         var r = a(395848);
@@ -34830,7 +34830,7 @@ Error:`,
           o = a(416987),
           _ = a(596308),
           i = a(622574),
-          c = a(873712);
+          c = a(662355);
         let s = [1800, 3e3],
           E = (t, e = {}) => {
             (0, c.A)(() => {
@@ -34859,7 +34859,7 @@ Error:`,
           o = a(202937),
           _ = a(896247),
           i = a(596308),
-          c = a(873712);
+          c = a(662355);
         let s = [800, 1800],
           E = (t) => {
             r.m.document && r.m.document.prerendering
@@ -45538,4 +45538,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5c00af845494ace9.js.map
+//# sourceMappingURL=sentry.f0de4c37fe48f7ab.js.map
