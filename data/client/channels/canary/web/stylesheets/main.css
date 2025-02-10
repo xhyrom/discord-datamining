@@ -26303,8 +26303,20 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .avatarDecoration__78e61 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   transform: translate(-50%, -50%);
+}
+.avatarDecorationPairOne__78e61 {
+  left: 32%;
+}
+.avatarDecorationPairOne__78e61,
+.avatarDecorationPairTwo__78e61 {
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+.avatarDecorationPairTwo__78e61 {
+  left: 68%;
 }
 .decorationBanner__78e61 {
   position: absolute;
@@ -26376,15 +26388,21 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .buttons__78e61 > * {
   flex: 1;
 }
+.buyButton__78e61 {
+  gap: 4px;
+}
+.buyButton__78e61,
+.easterEggContainer__78e61 {
+  display: flex;
+  align-items: center;
+}
 .easterEggContainer__78e61 {
   position: absolute;
   top: 0;
   right: -100%;
   height: 228px;
   width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .promotionalBanner__78e61 {
   background: linear-gradient(78.98deg, #ff9090, #f30ed8);
@@ -55408,4 +55426,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.713edcc3e6576153.css.map*/
+/*# sourceMappingURL=12633.c19c48bcf3774a3e.css.map*/
