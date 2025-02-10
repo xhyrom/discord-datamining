@@ -41170,6 +41170,9 @@ html.disable-forced-colors * {
   --modal-background: var(--primary-600);
   --modal-footer-background: var(--primary-630);
   --navigator-header-tint: var(--white);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-72-hsl) / 0.7215686274509804
+  );
   --panel-bg: var(--primary-600);
   --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
@@ -42062,6 +42065,12 @@ html.disable-forced-colors * {
       var(--white) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
     --panel-bg: color-mix(
       in oklab,
       var(--primary-600) 100%,
@@ -42627,6 +42636,9 @@ html.disable-forced-colors * {
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
   --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --overlay-backdrop-lightbox: hsl(
+    var(--opacity-black-92-hsl) / 0.9215686274509803
+  );
   --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -42705,6 +42717,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--brand-500-hsl) / 0.15) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
         var(--theme-base-color-amount, 0%)
     );
     --theme-locked-blur-fallback: color-mix(
@@ -42946,6 +42964,9 @@ html.disable-forced-colors * {
   --modal-background: var(--white);
   --modal-footer-background: var(--primary-130);
   --navigator-header-tint: var(--primary-500);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
   --panel-bg: var(--white);
   --polls-normal-fill-hover: var(--primary-230);
   --polls-normal-image-background: var(--white);
@@ -43829,6 +43850,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
     );
     --panel-bg: color-mix(
       in oklab,
@@ -45605,6 +45632,12 @@ html.disable-forced-colors * {
   --modal-background: var(--plum-16);
   --modal-footer-background: var(--plum-17);
   --navigator-header-tint: var(--white);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-72-hsl) / 0.7215686274509804
+  );
+  --overlay-backdrop-lightbox: hsl(
+    var(--opacity-black-92-hsl) / 0.9215686274509803
+  );
   --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
@@ -46049,6 +46082,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--white) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
     );
     --polls-normal-fill-hover: color-mix(
       in oklab,
@@ -54452,21 +54497,21 @@ html.disable-forced-colors * {
   --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
   --chat-markup-line-height: 1.375rem;
+  --guildbar-avatar-size: 48px;
+  --guildbar-folder-size: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
   --modal-width-small: 440px;
   --modal-width-medium: 600px;
   --modal-width-large: 800px;
-  --guildbar-avatar-size: 48px;
-  --guildbar-folder-size: 48px;
 }
 .visual-refresh {
   --chat-input-icon-size: 20px;
   --chat-markup-line-height: 1.5rem;
+  --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
   --modal-width-small: 442px;
   --modal-width-medium: 602px;
-  --guildbar-avatar-size: 40px;
 }
 a,
 abbr,
@@ -55429,4 +55474,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.addd176509af4750.css.map*/
+/*# sourceMappingURL=12633.fee4ec97bdb7feb6.css.map*/
