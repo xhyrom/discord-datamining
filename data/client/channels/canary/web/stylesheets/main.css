@@ -55296,7 +55296,7 @@ body {
 }
 .visual-refresh .appMount__51fd7,
 .visual-refresh body {
-  background: var(--bg-base-tertiary);
+  background: var(--background-base-lowest);
 }
 .overlay .appMount__51fd7,
 .overlay body {
@@ -55408,4 +55408,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.78e9abb13b79095e.css.map*/
+/*# sourceMappingURL=12633.7aa3adfb9ee4b6cf.css.map*/
