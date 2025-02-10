@@ -4675,6 +4675,17 @@
                   : "jpg";
               return "/users/".concat(t, "/avatars/").concat(e, ".").concat(a);
             },
+            ARCHIVED_AVATAR: function (t, e, a) {
+              let r =
+                arguments.length > 3 && void 0 !== arguments[3]
+                  ? arguments[3]
+                  : "jpg";
+              return "/avatars/"
+                .concat(t, "/archived/")
+                .concat(e, "/")
+                .concat(a, ".")
+                .concat(r);
+            },
             USER_BANNER: (t, e, a) =>
               "/users/".concat(t, "/banners/").concat(e, ".").concat(a),
             AVATAR_DECORATION_PRESETS: function (t) {
@@ -4818,6 +4829,7 @@
             VERIFY_PHONE_FOR_TICKET:
               "/phone-verifications/validate-support-ticket",
             RESEND_PHONE: "/phone-verifications/resend",
+            RECENT_AVATARS: "/users/@me/avatars",
             CONNECTIONS: "/users/@me/connections",
             CONNECTIONS_AUTHORIZE: (t) =>
               "/connections/".concat(t, "/authorize"),
@@ -5062,6 +5074,8 @@
               "/users/@me/billing/subscriptions/"
                 .concat(t, "/invoices/")
                 .concat(e, "/pay"),
+            BILLING_SUBSCRIPTION_REWARDS: (t) =>
+              "/users/@me/billing/subscriptions/".concat(t, "/rewards"),
             Billing_SUBSCRIPTION_REWARD_ELIGIBILITY: (t) =>
               "/users/@me/billing/subscriptions/".concat(
                 t,
@@ -5657,8 +5671,12 @@
               "/quests/".concat(t, "/preview/dismissibility"),
             QUESTS_PREVIEW_COMPLETE: (t) =>
               "/quests/".concat(t, "/preview/complete"),
-            QUEST_FETCH_QUEST_TO_DELIVER: (t) =>
-              "/quests/decision?placement=".concat(t),
+            QUEST_FETCH_QUEST_TO_DELIVER: (t, e) =>
+              "/quests/decision?placement="
+                .concat(t)
+                .concat(
+                  null != e ? "&client_heartbeat_session_id=".concat(e) : "",
+                ),
             ATTACHMENTS_REFRESH_URLS: "/attachments/refresh-urls",
             GAME_INVITE: (t) => "/game-invite/@me/".concat(t),
             GAME_INVITES: "/game-invite/@me",
@@ -5839,10 +5857,7 @@
                 .concat(I.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(e),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
-            GUILD_MEMBER_VERIFICATION: (t, e) =>
-              "/member-verification/"
-                .concat(t)
-                .concat(null != e ? "/".concat(e) : ""),
+            GUILD_MEMBER_VERIFICATION: (t) => "/member-verification/".concat(t),
             GUILD_MEMBER_VERIFICATION_FOR_HUB: (t, e) =>
               "/member-verification-for-hub/"
                 .concat(t)
@@ -6593,21 +6608,23 @@
           (r.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
           (r.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (r.QUEST_BAR_MODE_CHANGED = "quest_bar_mode_changed"),
-          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
-          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
-          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
-          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
-          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
-          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
-          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
-          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
-          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
-          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
+          (r.QUEST_VIDEO_BUFFERING_STARTED = "quest_video_buffering_started"),
           (r.QUEST_VIDEO_ERROR = "quest_video_error"),
+          (r.QUEST_VIDEO_FULLSCREEN_ENTERED = "quest_video_fullscreen_entered"),
+          (r.QUEST_VIDEO_FULLSCREEN_EXITED = "quest_video_fullscreen_exited"),
+          (r.QUEST_VIDEO_LOADING_ENDED = "quest_video_loading_ended"),
+          (r.QUEST_VIDEO_LOADING_STARTED = "quest_video_loading_started"),
           (r.QUEST_VIDEO_MODAL_CLOSED = "quest_video_modal_closed"),
+          (r.QUEST_VIDEO_PAUSED = "quest_video_paused"),
+          (r.QUEST_VIDEO_PROGRESSED = "quest_video_progressed"),
+          (r.QUEST_VIDEO_RESUMED = "quest_video_resumed"),
+          (r.QUEST_VIDEO_SEGMENT_WATCHED = "quest_video_segment_watched"),
+          (r.QUEST_VIDEO_TIME_TO_FIRST_FRAME =
+            "quest_video_time_to_first_frame"),
+          (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
           (r.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (r.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (r.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -8267,7 +8284,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-07-452b9c44479270e33f2b1888e579adec6197bef1-discord_web",
+              "2025-02-10-c355f20bd9f41dc8b56827f9e4fdd0ef0e0079a9-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8332,8 +8349,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "366955"),
-            _.YA("builtAt", String("1738986852360"));
+            _.YA("buildNumber", "367051"),
+            _.YA("builtAt", String("1739175671971"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -24919,7 +24936,7 @@
           F = a(42367),
           V = a(515737),
           j = a(27269),
-          X = a(17411),
+          X = a(188280),
           $ = a(453574),
           q = a(386797),
           z = a(616456),
@@ -25714,7 +25731,7 @@
           };
         });
       },
-      17411: function (t, e, a) {
+      188280: function (t, e, a) {
         "use strict";
         a.d(e, { y: () => E });
         var r = a(263449),
@@ -33814,7 +33831,7 @@ Error:`,
           R = a(395848),
           d = a(501684),
           A = a(108185),
-          f = a(896247),
+          f = a(474264),
           p = a(416987);
         let T = 0,
           N = {};
@@ -34473,7 +34490,7 @@ Error:`,
           _ = a(622574),
           i = a(433691),
           c = a(135813),
-          s = a(873712);
+          s = a(662355);
         let E = [100, 300],
           l = (t, e = {}) => {
             (0, s.A)(() => {
@@ -34509,7 +34526,7 @@ Error:`,
           _ = a(622574),
           i = a(433691),
           c = a(412828),
-          s = a(873712);
+          s = a(662355);
         let E = [200, 500],
           l = () => (0, c.U)() - 0,
           u = [],
@@ -34592,7 +34609,7 @@ Error:`,
           c = a(622574),
           s = a(433691),
           E = a(135813),
-          l = a(873712);
+          l = a(662355);
         let u = [2500, 4e3],
           I = {},
           R = (t, e = {}) => {
@@ -34651,13 +34668,13 @@ Error:`,
       202937: function (t, e, a) {
         "use strict";
         a.d(e, { A: () => n });
-        var r = a(896247);
+        var r = a(474264);
         let n = () => {
           let t = (0, r.W)();
           return (t && t.activationStart) || 0;
         };
       },
-      896247: function (t, e, a) {
+      474264: function (t, e, a) {
         "use strict";
         a.d(e, { W: () => n });
         var r = a(395848);
@@ -34704,7 +34721,7 @@ Error:`,
         var r = a(395848),
           n = a(383704),
           o = a(202937),
-          _ = a(896247);
+          _ = a(474264);
         let i = (t, e) => {
           let a = (0, _.W)(),
             i = "navigate";
@@ -34796,7 +34813,7 @@ Error:`,
           };
         };
       },
-      873712: function (t, e, a) {
+      662355: function (t, e, a) {
         "use strict";
         a.d(e, { A: () => n });
         var r = a(395848);
@@ -34814,7 +34831,7 @@ Error:`,
           o = a(416987),
           _ = a(596308),
           i = a(622574),
-          c = a(873712);
+          c = a(662355);
         let s = [1800, 3e3],
           E = (t, e = {}) => {
             (0, c.A)(() => {
@@ -34841,9 +34858,9 @@ Error:`,
         var r = a(395848),
           n = a(140955),
           o = a(202937),
-          _ = a(896247),
+          _ = a(474264),
           i = a(596308),
-          c = a(873712);
+          c = a(662355);
         let s = [800, 1800],
           E = (t) => {
             r.m.document && r.m.document.prerendering
@@ -45522,4 +45539,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ff085df62ee5a91d.js.map
+//# sourceMappingURL=sentry.ec31541d0a81b4ba.js.map
