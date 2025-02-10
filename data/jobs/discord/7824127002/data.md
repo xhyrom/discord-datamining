@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7824127002](https://discord.com/jobs/7824127002)
 
-**Updated At:** Tue, 28 Jan 2025 17:26:23 GMT
+**Updated At:** Mon, 10 Feb 2025 19:02:19 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced Senior Stock Plan Administrator to join our team to support the day-to-day administration of Discord’s global equity programs, including equity grants, option exercises, RSU releases, and special projects. You will partner with key stakeholders in our Finance, Payroll, Tax, Legal, and HR teams to answer employee inquiries, educate employees on equity programs, improve processes, implement controls, and provide reporting as needed. You will also work directly with external auditors and third-party vendors. This position will report directly to the Senior Manager, Stock Administration. You can be based in any of our US offices or remotely within the US.
@@ -23,7 +23,7 @@ In partnership with Legal, prepare and timely file Section 16 reports (Forms 3, 
 Ensure SOX compliance and controls on all aspects of the equity plan including documentation, testing and audit support. Ensure that all forms of equity compensation are administered following the terms and conditions of the plan(s) under which they are granted.
 Assist with other projects as assigned.
 
-What you should have
+What you should have:
 
 4+ years in stock plan administration, with experience at a private and public company.
 Certified Equity Professional.
