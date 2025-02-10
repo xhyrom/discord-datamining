@@ -47,7 +47,8 @@
 </p>
 <p>
   <img
-    src="https://cdn.discordapp.com/attachments/1032035365063757925/1337159938866413588/Screenshot_2025-02-06_at_2.26.07_PM.png?ex=67a66ebc&amp;is=67a51d3c&amp;hm=ff0c21ce6de086453c47bbb929c16f7204b8964ed3f697b4c1cacae472747361&amp;"
+    src="https://support-dev.discord.com/hc/article_attachments/29888737802007"
+    alt="Screenshot_2025-02-06_at_2.26.07_PM.png"
   />
 </p>
 <ul>
