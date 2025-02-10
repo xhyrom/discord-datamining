@@ -10,14 +10,18 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7439254002](https://discord.com/jobs/7439254002)
 
-**Updated At:** Mon, 10 Feb 2025 22:04:35 GMT
+**Updated At:** Mon, 10 Feb 2025 22:40:27 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
 The Real Time Infrastructure team is responsible for building, maintaining, and scaling the systems that power chat, push notifications, presence, and more for our users. This role will have a significant impact on the quality and performance of these features, including features built on top of our infrastructure. This team is a small but impactful team, whose work has direct and critical impact on Discord's success and ability to scale. This role reports to the Engineering Manager of Real Time Infrastructure.
 Example technical challenges that this team encounters include supporting the dispatch of more than 30 million messages per second and building the infrastructure that allows Discord Servers to&amp;nbsp;grow their communities to more than 20 million users, such as Midjourney.
 What you'll be doing:
-- Build and operate large-scale, reliable and performant distributed systems to support Discord's real time features and services.- Collaborate with product and infrastructure teams to develop primitives that provide compounding leverage for Discord engineering by reliably storing and serving user data, while also protecting the safety of our user data.- Exercise "First Principles Thinking" to always deliver what matters most to our users.
+
+Build and operate large-scale, reliable and performant distributed systems to support Discord's real time features and services.
+Collaborate with product and infrastructure teams to develop primitives that provide compounding leverage for Discord engineering by reliably storing and serving user data, while also protecting the safety of our user data.
+Exercise "First Principles Thinking" to always deliver what matters most to our users.
+
 What You Should Have:
 
 7+ years of experience building performant distributed systems.
