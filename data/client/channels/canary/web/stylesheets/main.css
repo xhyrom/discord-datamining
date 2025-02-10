@@ -27126,7 +27126,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
   border-top-left-radius: var(--radius-md);
   border-top-right-radius: var(--radius-md);
 }
-.modalOverrideBody__34eac {
+div.modalOverrideBody__34eac {
   padding: 0;
   overflow: visible;
   border-radius: 8px;
@@ -55429,4 +55429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.64c401799f5eba0a.css.map*/
+/*# sourceMappingURL=12633.34250de39507408b.css.map*/
