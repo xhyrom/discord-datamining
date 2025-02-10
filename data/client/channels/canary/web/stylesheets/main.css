@@ -12086,6 +12086,25 @@ div.modalHeader_c28af8 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.orbIconContainer__85200 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/cd3441c17ece9bd5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.orbIconContainer__85200 > img {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+.orbClaimCopy__8da0b {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
+}
 .nitroUpsellContainer_d0caf4 {
   display: flex;
   flex-direction: row;
@@ -55410,4 +55429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2dbb7f9b6b55e4bd.css.map*/
+/*# sourceMappingURL=12633.64c401799f5eba0a.css.map*/
