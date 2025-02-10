@@ -13,13 +13,10 @@
     /></span>
   </p>
 </div>
-<p class="wysiwyg-text-align-left">
-  <span style="font-weight: 400"
-    >Do you want to be notified of the latest messages in your servers? Or are
-    you looking to customize the notifications from specific channels in your
-    servers? Now you can with your personal </span
-  ><strong>Notification Settings</strong
-  ><span style="font-weight: 400"> within a server! </span>
+<p>
+  Want to stay updated with the latest messages in your servers? Looking to
+  customize notifications for specific channels? You can do all this through
+  your personal <strong>Notification Settings</strong> within each server!
 </p>
 <div class="toc-box">
   <strong
@@ -27,285 +24,357 @@
     ><br
   /></strong>
   <ul>
-    <li style="font-weight: 400" aria-level="1">
-      <strong
-        ><a href="#h_01GBNZQEQAR6CB1AYJ89P10XZT" target="_self"
-          >Where is my Notification Settings on a server?</a
-        ></strong
+    <li>
+      <a href="#h_01JK93S1AA1H3FFDHNPDF1ETEA"
+        ><strong>Finding Your Server Notification Settings</strong></a
       >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JK93S1AA26YYVFD8BP8ZRT9J"
+              >Finding Your Server Notification Settings on Mobile</a
+            ></strong
+          >
+        </li>
+        <li>
+          <a href="#h_01JK93S1AAT2XB2038ASTY6DQD"
+            ><strong>How to Mute an Entire Discord Server</strong></a
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JK93S1AADGBD51FQVAW5XEN9"
+              >How to Mute an Entire Server on Mobile</a
+            ></strong
+          >
+        </li>
+        <li>
+          <a href="#h_01JK93S1AAQ9P4248C690KC503"
+            ><strong>Server Notification Settings Options</strong></a
+          >
+        </li>
+      </ul>
     </li>
-    <li style="font-weight: 400" aria-level="1">
-      <strong
-        ><a href="#h_3d6f7848-f80f-49d5-aaab-5dba23d2c3f8" target="_self"
-          >Server-Wide Mute</a
-        ></strong
+    <li>
+      <a href="#h_01JK93S1ABMFFMTCGV2PMP2SX2"
+        ><strong>Finding Your Channel Notification Settings</strong></a
       >
-    </li>
-    <li style="font-weight: 400" aria-level="1">
-      <strong
-        ><a href="#h_02a56972-cd54-4811-8f94-85c556a44e2d" target="_self"
-          >Server Notification Settings</a
-        ></strong
-      >
-    </li>
-    <li style="font-weight: 400" aria-level="1">
-      <strong
-        ><a href="#h_570c11eb-b007-4e7c-8ae8-77515ea40c6a" target="_self"
-          >Channel Notification Settings</a
-        ></strong
-      >
-    </li>
-    <li style="font-weight: 400" aria-level="1">
-      <strong
-        ><a href="#h_01GBNZRGVFG37B8SE6KG3DYM6Q" target="_self"
-          >Highlight Notifications Settings
-        </a></strong
-      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JK93S1AB69TX5JBSXZNNY59F"
+              >Finding Your Channel Notification Settings on Mobile</a
+            ></strong
+          >
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
-<h1 id="h_01GBNZQEQAR6CB1AYJ89P10XZT">
-  <span style="font-weight: 400"
-    >Where is my Notification Settings on a server?</span
-  >
+<h1 id="h_01JK93S1AA1H3FFDHNPDF1ETEA">
+  Finding Your Server Notification Settings
 </h1>
 <p>
-  <span style="font-weight: 400">
-    1. Go to the server you want to adjust your notifications for and press on
-    the </span
-  ><strong>server name </strong
-  ><span style="font-weight: 400"
-    >in the upper left corner to open the drop-down menu. You can also
-    right-click on the server name to access the drop-down menu.</span
+  <span style="color: #2f3941"
+    >1. Go to the server where you want to adjust notifications and press the </span
+  ><strong><span style="color: #2f3941">server name</span></strong
+  ><span style="color: #2f3941">
+    in the upper-left corner to open the dropdown menu. You can also right-click
+    the server name to open this menu.</span
   >
 </p>
 <p>
-  <strong
-    ><span style="font-weight: 400">2. Select </span>Notification Settings<span
-      style="font-weight: 400"
-    >
-      from the drop-down menu.</span
-    ></strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><span style="font-weight: 400"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/8513513133719"
-        alt="access-notification-settings-server-name.gif" /></span
-  ></strong>
+  <span style="color: #2f3941">2. Select </span
+  ><strong><span style="color: #2f3941">Notification Settings</span></strong
+  ><span style="color: #2f3941"> from the dropdown menu.</span>
 </p>
 <p>
-  <strong><span style="font-weight: 400">3. </span></strong
-  ><span style="font-weight: 400">Now you can see the </span
-  ><strong>Notification Settings </strong
-  ><span style="font-weight: 400"
-    >menu! This is where you can customize your notifications for this
+  <span style="color: #2f3941">3. The </span
+  ><strong><span style="color: #2f3941">Notification Settings </span></strong
+  ><span style="color: #2f3941"
+    >menu will appear, where you can customize your notifications for this
     server.</span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
+  <span style="color: #2f3941"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8513512984599"
-      alt="notification-settings-1.png"
-      width="403"
-      height="538"
+      src="https://support.discord.com/hc/article_attachments/29750205651991"
+      width="1038"
+      height="594"
   /></span>
 </p>
-<h1 id="h_3d6f7848-f80f-49d5-aaab-5dba23d2c3f8" class="wysiwyg-text-align-left">
-  Server-Wide Mute
-</h1>
-<p class="wysiwyg-text-align-left">
-  Simplest addition first. Instead of <a
-    href="https://support.discord.com/hc/en-us/articles/209791877"
-    target="_blank"
-    rel="noopener noreferrer"
-    >muting each channel individually</a
-  >, you can check the mute server box to auto-mute each channel within the
-  server. Keep in mind, this is a blanket mute, and isn't selective. You'll
-  notice that the bell icons next to channel names don't update when this option
-  is selected, but all of the options in the notification settings blur out:
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360086360213"
-    alt="Capture.JPG"
-    width="317"
-    height="417"
-  /><img
-    src="https://support.discord.com/hc/article_attachments/360085183074"
-    alt="Capture__1_.JPG"
-    width="313"
-    height="417"
-  />
-</p>
-<p class="wysiwyg-text-align-left">Awesome. Remember, this will mute:</p>
-<p>ALL NOTIFICATIONS.</p>
-<p>ALL CHANNELS.</p>
-<p>IN THE SELECTED SERVER.</p>
-<p class="wysiwyg-text-align-left">
-  <strong>with the exception of @everyone mentions. </strong>This also means you
-  won't get Mobile Push Notifications if you switch over to mobile. More on that
-  in a bit.
-</p>
-<h1 id="h_02a56972-cd54-4811-8f94-85c556a44e2d" class="wysiwyg-text-align-left">
-  Server Notification Settings
-</h1>
-<p class="wysiwyg-text-align-left">
-  Alright. We found the total nuclear option in notification muting. Let's get a
-  little more in-depth.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360085183114"
-    alt="Capture__2_.JPG"
-    width="534"
-    height="347"
-  />
-</p>
-<p class="wysiwyg-text-align-left">
-  Starting with the selection on the top, the circular option selections
-  actually apply to each channel in a similar blanket format as the mute server
-  option, but with the added option of allowing us to choose different levels of
-  notifications.
-</p>
-<p class="wysiwyg-text-align-left">
-  Clicking an option in the Server Notifications Settings updates all of our
-  settings instantly:
-</p>
-<table style="height: 406px" width="715">
-  <tbody>
-    <tr>
-      <td style="width: 343.75px">
-        <img
-          class="shadow"
-          src="https://support.discord.com/hc/en-us/article_attachments/204624478/NewNotifMen__1_.png"
-          alt=""
-        />
-      </td>
-      <td style="width: 347.5px">
-        <img
-          class="shadow"
-          src="https://support.discord.com/hc/en-us/article_attachments/204624388/PerChanMention.png"
-          alt=""
-        />
-      </td>
-    </tr>
-    <tr>
-      <td style="width: 343.75px">
-        <img
-          class="shadow"
-          src="https://support.discord.com/hc/en-us/article_attachments/204624398/NewNotifNoth.png"
-          alt=""
-        />
-      </td>
-      <td style="width: 347.5px">
-        <img
-          class="shadow"
-          src="https://support.discord.com/hc/en-us/article_attachments/204640857/PerChanNoth.png"
-          alt=""
-        />
-      </td>
-    </tr>
-  </tbody>
-</table>
+<h4 id="h_01JK93S1AA26YYVFD8BP8ZRT9J" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Accessing Server Notification Settings on Desktop</span
+  >
+</h4>
+<div class="tip-box">
+  To find your server Notification Settings on mobile, tap a server’s name, then
+  tap the <strong>Notifications icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/29750205653911"
+    alt="388f4aa9-f37e-49b6-a157-7d3964a1a20f"
+  />] <strong>&gt; Server Notification Settings</strong>.
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/29750205658007"
+      width="304"
+      height="631"
+    />
+  </p>
+  <h4 id="h_01JK93S1AAAN5ZTGF5M1NC1PWF" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Accessing Server Notification Settings on Mobile</span
+    >
+  </h4>
+</div>
+<h2 id="h_01JK93S1AAT2XB2038ASTY6DQD">How to Mute an Entire Discord Server</h2>
 <p>
-  Pretty straightforward. Moving on, the other two functions in the window are
-  pretty simple:
+  <span style="color: #2f3941">In your server </span
+  ><strong><span style="color: #2f3941">Notifications Settings</span></strong
+  ><span style="color: #2f3941"
+    >, you can mute an entire Discord server by simply toggle the </span
+  ><strong><span style="color: #2f3941">Mute Server </span></strong
+  ><span style="color: #2f3941">to silence </span
+  ><strong><span style="color: #2f3941">all</span></strong
+  ><span style="color: #2f3941">
+    channels in that server at once. You can also choose how long to mute the
+    server notifications by selecting an option from the </span
+  ><strong><span style="color: #2f3941">Mute duration</span></strong
+  ><span style="color: #2f3941"> dropdown menu.</span>
 </p>
+<div class="book-box">
+  <p id="h_01JK93S1AA9Q958WPY6MP73BF6">
+    To learn more about managing unwanted notifications, including how to ignore
+    users, check out our Help Center article on
+    <a
+      href="https://support.discord.com/hc/en-us/articles/28084948873623"
+      target="_blank"
+      rel="noopener noreferrer"
+      >How to Ignore Users on Discord</a
+    >.
+  </p>
+</div>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2f3941"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/29750197210391"
+      width="851"
+      height="487"
+  /></span>
+</p>
+<h4 id="h_01JK93S1AADGBD51FQVAW5XEN9" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Muting an Entire Server in Notifications Settings on Desktop</span
+  >
+</h4>
+<div class="info-box">
+  <p id="h_01JK93S1AA8ES3FMFXX5WFYRMD">Muting a server will affect:</p>
+  <ul>
+    <li>All notifications across the server</li>
+    <li>All channels within the server</li>
+    <li>All server activity and updates</li>
+  </ul>
+  <p>
+    However, you will still receive
+    <strong>@everyone</strong> mentions.<br />Please note that mobile push
+    notifications will also be disabled when the server is muted.
+  </p>
+</div>
+<div class="tip-box">
+  <p id="h_01JK93S1AA8NWQ0W0BNECSW6N1">
+    To mute an entire server on mobile, tap a server’s name, then tap the
+    <strong>Notifications icon</strong> [<img
+      src="https://support.discord.com/hc/article_attachments/29750205653911"
+      alt="388f4aa9-f37e-49b6-a157-7d3964a1a20f"
+    />] and toggle the mute option. You can also select how long you’d like to
+    mute the server from the <strong>Mute this Server </strong>list.
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/29750197213975"
+      width="299"
+      height="621"
+    />
+  </p>
+  <h4 id="h_01JK93S1AA3MWE2261M5331J7V" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Muting an Entire Server in Notifications Settings on Mobile</span
+    >
+  </h4>
+</div>
+<h2 id="h_01JK93S1AAQ9P4248C690KC503">Server Notification Settings Options</h2>
+<p>
+  <span style="color: #2f3941"
+    >Aside from muting an entire server, you can instead choose different levels
+    of notifications. Simply select an option in the </span
+  ><strong
+    ><span style="color: #2f3941">Server Notifications Settings</span></strong
+  ><span style="color: #2f3941"> list.</span>
+</p>
+<div class="tip-box">
+  <span style="color: #2f3941"
+    >On mobile, navigate to <strong>Notifications</strong> and tap the option
+    you’d like in <strong>Server Notification Settings</strong>.</span
+  >
+  <p id="h_01JK93S1AAEC8MVD55G0F7ANYC" class="wysiwyg-text-align-center">
+    <span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/29750205665943"
+        width="828"
+        height="561"
+    /></span>
+  </p>
+  <h4 id="h_01JK93S1AATVMA7FSS27EVMVAV" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Selecting an Option from the Server Notification Settings List</span
+    >
+  </h4>
+</div>
+<p>Here, you can also choose suppression options and more:</p>
 <ul>
   <li>
-    The <strong>Suppress @everyone </strong>option disables any @everyone
-    mention from generating a notification, on the entire server.
+    <strong
+      ><span style="color: #2f3941">Suppress @everyone and @here</span></strong
+    ><span style="color: #2f3941">: Prevents notifications from </span
+    ><strong><span style="color: #2f3941">@everyone</span></strong
+    ><span style="color: #2f3941"> and </span
+    ><strong><span style="color: #2f3941">@here</span></strong
+    ><span style="color: #2f3941"> mentions across the entire server.</span>
   </li>
   <li>
-    The <strong>Mobile Push Notifications</strong> option means any notification
-    you'd normally get adds a push notification on your Android / iOS device
-    if you're signed on with the same account! Super handy!
+    <strong
+      ><span style="color: #2f3941">Suppress All Role @mentions</span></strong
+    ><span style="color: #2f3941"
+      >: Prevents notifications from all role mentions across the entire
+      server.</span
+    >
   </li>
-</ul>
-<h1 id="h_570c11eb-b007-4e7c-8ae8-77515ea40c6a">
-  Channel Notification Settings
-</h1>
-<p>
-  The last section of the notification settings menu lets you adjust individual
-  settings per channel. Use the <strong>Notification Overrides</strong> section
-  to select different channels in a drop-down. There are a few settings to
-  explore here:
-</p>
-<p>
-  Just like before, you can mute individual channels entirely by selecting mute.
-  You can still do this on the main channel page, but here <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    >you can quickly address problem channels in a list fashion.</span
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    src="https://support.discord.com/hc/article_attachments/360085183194"
-    alt="Capture23.jpg"
-  />
-</p>
-<p>
-  Even after each channel updates based on how you selected your server
-  notification settings, you can make individual channel notification selections
-  in the scroll down menu as well.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360085183214"
-    alt="Capture24.jpg"
-  />
-</p>
-<h1 id="h_01GBNZRGVFG37B8SE6KG3DYM6Q">
-  <span style="font-weight: 400">Highlight Notifications Settings</span>
-</h1>
-<p>
-  Highlights bring you the best content from the servers you care about. If you
-  are opted in to receive Highlights for a server, Discord will notify you via
-  email of the best messages, events, announcements, and more from that
-  server.<br />The Highlights setting is an additional suppression toggle you
-  can turn on or off in each server. It is located in your server notification
-  settings.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/9510431748119"
-    alt="highlight_settings.jpg"
-    width="599"
-    height="759"
-  />
-</p>
-<p>
-  This setting operates the same way as the ‘Suppress @everyone and @here’ and
-  ‘Suppress All Role @mentions’ settings, but it suppresses Highlight
-  Notifications when the toggle is turned on. The setting also operates
-  independently of your server notification settings (all messages, @mentions
-  only, or nothing). For example, you can have your server notifications
-  settings set to Nothing and still receive Highlights notifications if you have
-  not turned on the ‘Suppress Highlights’ toggle. Muting a server will turn off
-  the Highlights toggle, and you will not receive any notifications from that
-  server.
-</p>
-<p>
-  <span style="font-weight: 400"
-    >Learn more about Highlights
-    <a
+  <li>
+    <strong><span style="color: #2f3941">Suppress Highlights</span></strong
+    ><span style="color: #2f3941"
+      >: Controls email notifications for the best content from servers you
+      follow. This toggle works independently of other notification settings -
+      you can receive </span
+    ><strong><span style="color: #2f3941">Highlights</span></strong
+    ><span style="color: #2f3941">
+      even with notifications off, unless you mute the server completely.</span
+    ><a
       href="https://support.discord.com/hc/articles/5304469213079"
       target="_blank"
       rel="noopener noreferrer"
-      >here</a
-    >.</span
-  >
+    >
+      Learn more</a
+    ><span style="color: #2f3941">.</span>
+  </li>
+  <li>
+    <strong><span style="color: #2f3941">Mute New Events</span></strong
+    ><span style="color: #2f3941"
+      >: Prevents notifications for new events across the entire server.</span
+    >
+  </li>
+  <li>
+    <strong
+      ><span style="color: #2f3941">Mobile Push Notifications: </span></strong
+    ><span style="color: #2f3941"
+      >When you're signed in on your Android or iOS device, you'll get push
+      notifications for anything you'd normally be notified about on desktop.
+      Pretty convenient!</span
+    >
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2f3941"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/29750197222679"
+      width="522"
+      height="406"
+  /></span>
 </p>
-<p> </p>
-<p>And that wraps up the notifications menu. Pretty neat, huh? </p>
+<h4 id="h_01JK93S1ABN450T10W9PDGBJA5" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Notification Settings Menu Showing Suppression Toggles for @mentions,
+    Highlights, Events, and Mobile Notifications</span
+  >
+</h4>
+<h1 id="h_01JK93S1ABMFFMTCGV2PMP2SX2">
+  Finding Your Channel Notification Settings
+</h1>
+<p>
+  Discord's channel notification settings provide granular control over alerts
+  at the individual channel level. You can override notifications for specific
+  channels through <strong>Notification Overrides</strong>, even when other
+  server notification settings are enabled.
+</p>
+<p>
+  1. Simply navigate to your server <strong>Notification Settings</strong> &gt;
+  <strong>Notification Overrides</strong>.
+</p>
+<p>
+  2. Select the dropdown menu to see a list of channels and categories. You can
+  customize notification settings for each channel, even if you have other
+  server-wide settings enabled.
+</p>
+<p>
+  3. Select the channel you want to customize and choose your notification
+  preferences:
+</p>
+<ul>
+  <li><strong>All</strong>: Receive notifications for every message</li>
+  <li><strong>Mentions</strong>: Get notified only when you're mentioned</li>
+  <li><strong>Nothing</strong>: Disable all notifications</li>
+  <li><strong>Mute</strong>: Silence everything including @mentions</li>
+</ul>
+<p>
+  This gives you precise control over each channel's notifications, regardless
+  of your server-wide settings.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29750197224727"
+    width="832"
+    height="564"
+  />
+</p>
+<h4 id="h_01JK93S1AB7SRRYZQ3WZF45J51" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Customizing Channel and Category Notifications Using Overrides</span
+  >
+</h4>
+<p>
+  You can also set your channel notification settings by right-clicking a
+  channel &gt; <strong>Notification</strong> <strong>Settings</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29750205676951"
+    width="707"
+    height="479"
+  />
+</p>
+<h4 id="h_01JK93S1AB69TX5JBSXZNNY59F" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Accessing Channel Notification Settings and Selecting Notification Settings
+    on Desktop</span
+  >
+</h4>
+<div class="tip-box">
+  <p id="h_01JK93S1ABAYSFE1P88FF64E5R">
+    To find your channel notification settings on mobile, longpress the channel
+    and tap <strong>Notifications Settings</strong>.
+  </p>
+  <h3 id="h_01JK93S1AB9JDWMNA6HZ66M2KF" class="wysiwyg-text-align-center">
+    <span style="color: #434343; background-color: #d9f0e6"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/29750205685655"
+        width="275"
+        height="572"
+    /></span>
+  </h3>
+  <h4 id="h_01JK93S1ABDC3620PDTGWQWBG4">
+    <span style="color: #666666"
+      >Accessing Channel Notification Settings and Selecting Notification
+      Settings on Mobile</span
+    >
+  </h4>
+</div>

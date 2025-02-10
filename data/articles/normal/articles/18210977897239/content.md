@@ -4,19 +4,32 @@
   These safety alerts are default enabled for teens globally. No action is
   needed to turn safety alerts on for teens. 
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li><a href="#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a></li>
-  <li><a href="#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
-  <li>
-    <a href="#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</a>
+    </li>
+    <li><a href="#h_01HD4T7W175WSNRAA92JG3GMBG">Future safety alerts</a></li>
+    <li>
+      <a href="#h_01HD4T7W17V4WYW74FVP5B9GQ9">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HD4T7W17SPZXYY7B9NCY4X10">Safety alerts on senders</h1>
+<div class="book-box">
+  To learn more about managing unwanted messages, including how to ignore users,
+  check out our help article on
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28084948873623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Ignore Users on Discord</a
+  >.
+</div>
 <p>
   1. When a teen receives direct messages (DMs) from a sender for the first
   time, Discord will detect if a safety alert should be sent to the teen for

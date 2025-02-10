@@ -1,87 +1,88 @@
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
-      >How to Add a Friend</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
-          >Username</a
-        >
-        <ul>
-          <li>Desktop/Browser</li>
-          <li>Mobile</li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
-          >Profile</a
-        >
-        <ul>
-          <li>Desktop/Browser</li>
-          <li>Mobile</li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
-          >Server Member’s Lis</a
-        >t
-        <ul>
-          <li>Desktop/Browser</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
-      >How to Cancel a Pending Friend Request</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
-          >Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
-          >Mobile</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
-      >Common Errors When Adding a Friend</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
-          >Friend Request Failed</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
-          >Double Check that the Username is Correct</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
+        >How to Add a Friend</a
+      >
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
+            >Username</a
+          >
+          <ul>
+            <li>Desktop/Browser</li>
+            <li>Mobile</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
+            >Profile</a
+          >
+          <ul>
+            <li>Desktop/Browser</li>
+            <li>Mobile</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
+            >Server Member’s Lis</a
+          >t
+          <ul>
+            <li>Desktop/Browser</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
+        >How to Cancel a Pending Friend Request</a
+      >
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
+            >Desktop/Browser</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
+            >Mobile</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
+        >Common Errors When Adding a Friend</a
+      >
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
+            >Friend Request Failed</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
+            >Double Check that the Username is Correct</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01J0KH7RTGYND0G6C0645SK6K1">How to add a friend</h1>
 <h3 id="h_01J0KH7RTGAVD5S74SBSWVT909">
   <span style="color: #434343" data-darkreader-inline-color=""
@@ -93,6 +94,18 @@
   Adding a friend on Discord is as easy as 1-2-3! Let’s go over the various ways
   to send friend requests and some common errors you might encounter. 
 </p>
+<div class="book-box">
+  If you're receiving lots of unwanted friend requests, you may want to ignore
+  certain users. Need help managing unwanted friend requests? Learn how to
+  ignore users by checking out our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28084948873623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Ignore Users on Discord</a
+  >
+  article.
+</div>
 <h2 id="h_01J0KH7RTG27DP54JNAYPH0R1S">Username</h2>
 <p><strong>Desktop/Browser</strong></p>
 <p>1. Press on the Discord logo in the top-left corner.</p>
@@ -158,12 +171,11 @@
   3. Next, press on <strong>Send Friend Request</strong> to send them a request.
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24234624736535"
-      width="624"
-      height="351"
-  /></strong>
+  <img
+    src="https://support.discord.com/hc/article_attachments/24234624736535"
+    width="624"
+    height="351"
+  />
 </p>
 <p><strong>Mobile</strong></p>
 <p>1. Navigate to a group chat or a server of the user you’d like to add. </p>
@@ -177,13 +189,13 @@
   like to add.
 </p>
 <p>3. Press on <strong>Add Friend</strong> to add them as a friend.</p>
-<h2 id="h_01J0KH7RTGYT9DYZNHJ7QSEXFM" class="wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/24234618809751"
     width="300"
     height="650"
   />
-</h2>
+</p>
 <h2 id="h_01J0KH7RTGCQM07TYSXSHZZH1X">Server Member’s List</h2>
 <h3 id="h_01J0KH7RTGS0AY8A5VVSZ6NSR1">
   <span style="color: #434343" data-darkreader-inline-color=""
@@ -203,12 +215,11 @@
   <strong>Friends</strong> tab to see if the friend request is pending.
 </p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/24234624747159"
-      width="624"
-      height="351"
-  /></strong>
+  <img
+    src="https://support.discord.com/hc/article_attachments/24234624747159"
+    width="624"
+    height="351"
+  />
 </p>
 <p> </p>
 <h1 id="h_01J0KH7RTG27E6NZ2EYYF9DJ20">

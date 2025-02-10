@@ -76,10 +76,6 @@
   </ul>
 </div>
 <h1 id="h_01JF8Z48ZF5FA3HHHAXQ3M21KN">What is the Ignore Feature?</h1>
-<div class="exp-box">
-  This feature is currently experimental and available only to select mobile,
-  desktop, and browser users.
-</div>
 <p>
   In addition to
   <a

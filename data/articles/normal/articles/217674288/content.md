@@ -1,25 +1,32 @@
-<p><span class="wysiwyg-font-size-large">What this article covers: </span></p>
-<ul>
-  <li><a href="#h_01J7GKGQJ9BXFT0TN15WCB9GR8">What is the Friends List?</a></li>
-  <li>
-    <a href="#h_01J7GKGQJ9F6GDXNQ1NFW6YTQA"
-      >How to Add a User to Your Friends List</a
-    >
-    <ul>
-      <li><a href="#h_01J7GKGQJ941W7517T7TQVS8Z8">Desktop/Browser</a></li>
-      <li><a href="#h_01J7GKGQJ9B0YFS2C2WZDQCXCK">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J7GKGQJ9H8YZ4SNGGAFH045K"
-      >How to Accept or Decline a Friend Request</a
-    >
-    <ul>
-      <li><a href="#h_01J7GKGQJ984K33M0CWK3D7B3Y">Desktop/Browser</a></li>
-      <li><a href="#h_01J7GKGQJ9SRMV59TCJ882ZVKX">Mobile</a></li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01J7GKGQJ9BXFT0TN15WCB9GR8">What is the Friends List?</a>
+    </li>
+    <li>
+      <a href="#h_01J7GKGQJ9F6GDXNQ1NFW6YTQA"
+        >How to Add a User to Your Friends List</a
+      >
+      <ul>
+        <li><a href="#h_01J7GKGQJ941W7517T7TQVS8Z8">Desktop/Browser</a></li>
+        <li><a href="#h_01J7GKGQJ9B0YFS2C2WZDQCXCK">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J7GKGQJ9H8YZ4SNGGAFH045K"
+        >How to Accept or Decline a Friend Request</a
+      >
+      <ul>
+        <li><a href="#h_01J7GKGQJ984K33M0CWK3D7B3Y">Desktop/Browser</a></li>
+        <li><a href="#h_01J7GKGQJ9SRMV59TCJ882ZVKX">Mobile</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01J7GKGQJ9BXFT0TN15WCB9GR8">What is the Friends List?</h1>
 <p>
   The friends list is your list of all of the friends that you have added on
@@ -71,7 +78,7 @@
   Otherwise, you can check under <strong>Pending </strong>to see the pending
   request.
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26294748862359"
     width="624"
@@ -208,7 +215,7 @@
   requests. To accept a request,  tap the <strong>checkmark;</strong> to
   decline, tap <strong>x </strong>to decline. 
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26294748887447"
     width="624"
@@ -229,3 +236,14 @@
     height="772"
   />
 </p>
+<div class="book-box">
+  Need help managing unwanted friend requests? Learn how to ignore users by
+  checking out our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/28084948873623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Ignore Users on Discord</a
+  >
+  article.
+</div>
