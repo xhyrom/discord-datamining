@@ -28,6 +28,14 @@
       <a href="#h_01JHNGJHBTQTJP84DKAJHNDF82"
         ><strong>Checking Your Nitro Badge Progress</strong></a
       >
+      <ul>
+        <li>
+          <a href="#h_01JKC1W938CK485Z7ZHEYEN4JH"><strong>Desktop</strong></a>
+        </li>
+        <li>
+          <a href="#h_01JKC1NQW3A80RBC220FDMJMAZ"><strong>Mobile</strong></a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="#h_01JHNGJHBTT494G1SJ1RFVKJ5E"
@@ -37,12 +45,9 @@
   </ul>
 </div>
 <h1 id="h_01JHNGJHBTXHH3S33718SWJVV1">What are Evolving Nitro Badges?</h1>
-<div class="exp-box">
-  Evolving Nitro Badges can only be viewed on the desktop version of Discord.
-</div>
 <p>
   All Nitro subscribers get a special profile badge when they sign up for Nitro.
-  If you’re subscribed to Nitro, your profile badge will evolve to showcase
+  When you’re subscribed to Nitro, your profile badge will evolve to showcase
   different designs with each milestone that you reach. 
 </p>
 <div class="info-box">
@@ -71,6 +76,7 @@
   to maintain an active subscription to maintain your badge progress.
 </div>
 <h1 id="h_01JHNGJHBTQTJP84DKAJHNDF82">Checking Your Nitro Badge Progress</h1>
+<h2 id="h_01JKC1W938CK485Z7ZHEYEN4JH">Desktop</h2>
 <p>
   To check your current badge level and when you'll reach the next milestone,
   just hover your cursor over the badge on your <strong>profile</strong>. You
@@ -84,8 +90,69 @@
     height="475"
   />
 </p>
-<h4 id="h_01JHNGJHBT7SBZKTT592RRAXFD" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Evolving Profile Badge in Nitro Tab</span>
+<h4 id="h_01JKC1MMX5490C43TYBNMZDWYT" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >On Desktop: Evolving Profile Badge Card in Nitro Tab</span
+  >
+</h4>
+<h2 id="h_01JKC1NQW3A80RBC220FDMJMAZ">Mobile</h2>
+<div class="exp-box">
+  Evolving Nitro Badges on mobile is currently an experiment available to a
+  limited number of users.
+</div>
+<p>
+  1. To check your current badge level on mobile, tap your
+  <strong>avatar</strong> in the bottom right corner.  
+</p>
+<p>
+  2. Then tap the <strong>cogwheel</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/29786364045463"
+    width="24"
+    height="24"
+  />] to enter your <strong>Settings </strong>&gt;
+  <strong>Manage Nitro</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29786348750103"
+    width="213"
+    height="461"
+  /> 
+  <img
+    src="https://support.discord.com/hc/article_attachments/29786364051735"
+    width="215"
+    height="461"
+  /> 
+</p>
+<h4 id="h_01JKC1P2ESE3V84TTMWNPX0B4P" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >On Mobile: Avatar Icon and Settings Icon (Left), Manage Nitro Settings
+    (Right)</span
+  >
+</h4>
+<p>
+  3. In your <strong>Nitro Home</strong>, you’ll find the Evolving Profile Badge
+  card where you can select <strong>See All Badges</strong> to view your current
+  badge progress.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/29786364055575"
+    width="308"
+    height="429"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/29786348760727"
+    width="197"
+    height="428"
+  />
+</p>
+<h4 id="h_01JKC1QZNR9QYRS1Q0MT9BNJNS" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >On Mobile: Evolving Profile Badge Card (Left), Nitro Badge Milestones
+    (Right)</span
+  >
 </h4>
 <h1 id="h_01JHNGJHBTT494G1SJ1RFVKJ5E">Frequently Asked Questions</h1>
 <p>
