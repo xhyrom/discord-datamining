@@ -1,7 +1,7 @@
 <p>
-  <strong>Spark: Hero Tactics</strong> is a PvP battler game with CCG elements
-  that users can play as a Discord Activity. Check out this guide on how to
-  play!
+  Want to master <strong>Spark: Hero Tactics</strong>, Discord's strategic PvP
+  card battle game? Learn how to build powerful decks, deploy units effectively,
+  and dominate the battlefield in this tactical card-based combat game.
 </p>
 <div class="toc-box">
   <strong
@@ -84,15 +84,14 @@
 </div>
 <h1 id="h_01JABJ6250SWSC6ZP1P3CW8QGD">What is Spark: Hero Tactics?</h1>
 <p>
-  <strong><span style="color: #2e3338">Spark: Hero Tactics</span></strong
-  ><span style="color: #2e3338">
-    is an Activity developed by Discord, that is a fast-paced PvP battler that
-    combines elements of CCGs and tactical grid-based battles in fast-paced
-    real-time brawls! Collect cards, build decks, and embody heroic Sparkwrights
-    as you cast creatures, constructs, and spells to emerge victorious against
-    your foes. Battle through the lands of Sparkadia and discover powerful
-    magics to collect and tenacious opponents to defeat.</span
-  >
+  <strong>Spark: Hero Tactics</strong> is an Activity developed by
+  <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"
+    >Discord</a
+  >. Compete in fast-paced card battles on a 3x4 grid with players from around
+  the globe. Cast creatures, constructs, and powerful spells to smash enemy
+  fortresses. Craft your deck, upgrade unique heroes, and unlock their ultimate
+  powers. Compete in seasonal challenges, earn rewards, and rise in the ranks.
+  With endless quests and evolving strategies, every match is a new adventure!
 </p>
 <h1 id="h_01JABJ6CQMHQSHYF22J00RRTYK">How to Start Spark: Hero Tactics</h1>
 <p>
@@ -124,9 +123,10 @@
 </h1>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCbGR_Db_UDphX3AElMUd2Ud_jk4ZC98Tlu6RdvD7mfcBd5CEWE4FP1m1KrGatlGg17K5Ayi4aL_D696YZuPQWTWP78tWIP2BtHc82ikwa5o2lMKooNp8tpN0niWkYCIOz-ISKehehbPljUsz95fX5ID8?key=IFUDdwLPhFjQy0_2Q1fDGg"
-    width="719"
-    height="400"
+    src="https://support-apps.discord.com/hc/article_attachments/29806411603863"
+    alt="trimsparkpt-ezgif.com-optimize.gif"
+    width="866"
+    height="481"
   />
 </p>
 <h4 id="h_01JABW5BHJT512186X8R2P0A70" class="wysiwyg-text-align-center">
@@ -204,9 +204,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support-apps.discord.com/hc/article_attachments/27123888654487"
-      width="718"
-      height="407"
+      src="https://support-apps.discord.com/hc/article_attachments/29806411607447"
+      width="834"
+      height="600"
   /></span>
 </p>
 <h4 id="h_01JABW5RYSVZ30GVS1XW24C4X0" class="wysiwyg-text-align-center">
@@ -452,169 +452,13 @@
   </p>
 </div>
 <h1 id="h_01JABKG9NM3M8KEDZP4WX7YVCP" class="wysiwyg-text-align-left">
-  Game Terminology
+  <a
+    href="https://support-apps.discord.com/hc/en-us/articles/27113854710679-Spark-Hero-Tactics-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Game Terminology</a
+  >
 </h1>
-<table style="width: 100%">
-  <colgroup>
-    <col />
-    <col />
-  </colgroup>
-  <tbody>
-    <tr>
-      <td><strong>Term</strong></td>
-      <td><strong>Definition</strong></td>
-    </tr>
-    <tr>
-      <td><strong>Abilities</strong></td>
-      <td>
-        Special effects triggered by certain cards, affecting specified targets.
-        Example: "<strong>On Death</strong>" grants all cards on the board +2
-        health.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Attack</strong></td>
-      <td>
-        The amount of damage a <strong>Fortress</strong>,
-        <strong>Creature</strong>, or <strong>Spell</strong> can inflict on an
-        opponent's Fortress, Creature, or <strong>Construct</strong>.
-        Represented by a diamond/star icon.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Copper</strong></td>
-      <td>
-        In-game currency of lesser value than <strong>Gold</strong>. Obtainable
-        through purchases or gameplay, used for buying <strong>Cards</strong>,
-        <strong>Card</strong> <strong>Packs</strong>, or upgrading cards.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Creature</strong></td>
-      <td>
-        A card that battles across the board, belonging to a
-        <strong>Faction</strong>, with a <strong>Type</strong>,
-        <strong>Health</strong> and <strong>Attack</strong>
-        <strong>stats</strong>, <strong>Keywords</strong>, and sometimes special
-        <strong>Abilities</strong>. Moves and attacks automatically.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Faction</strong></td>
-      <td>
-        A group of creatures and spells. Includes
-        <strong>Flameborne</strong> (red), <strong>Tidewalkers</strong> (blue),
-        <strong>Bloomguard</strong> (green), and
-        <strong>Untethered</strong> (grey).
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Gold</strong></td>
-      <td>
-        In-game currency worth more than <strong>Copper</strong>. Purchasable or
-        earnable through gameplay, used for buying <strong>Cards</strong> and
-        <strong>Card Packs</strong>.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Health</strong></td>
-      <td>
-        Amount of damage a <strong>Fortress</strong>, <strong>Creature</strong>,
-        or <strong>Construct</strong> can withstand before it is destroyed and
-        ends the game. Represented by a heart icon.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Hero</strong></td>
-      <td>
-        <p>
-          The initial character chosen when making a <strong>Deck</strong>. The
-          deck you create should synergize with the Hero’s special powers. 
-        </p>
-        <p>
-          <strong>Heroes</strong> are stronger than regular cards, have a
-          special power called an <strong>Ultimate</strong>, and their
-          <strong>Health</strong> and <strong>Attack</strong> is what determines
-          that of your <strong>Fortress</strong>. Unlockable through gameplay
-          progression, such as leveling up and unlocking new locations. 
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Hero Ultimate</strong></td>
-      <td>
-        Unique ability of a <strong>Hero</strong> and their
-        <strong>Faction</strong>. <strong>Ultimates</strong> charge during
-        battle and can be used to deal damage or alter your opponents stats,
-        such as lowering attack stats, or buffing health.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Keywords</strong></td>
-      <td>
-        <p>
-          A word or short phrase that is a Modifier on specific
-          <strong>Creature</strong>. 
-        </p>
-        <p>
-          Examples: <strong>Demolisher </strong>(double damage vs
-          Fortress/Construct)<strong>, Resilient </strong>(-1 Damage from all
-          sources), <strong>Lumbering</strong> (Creature moves every 2 ticks).
-        </p>
-        <p>
-          <strong>Spell Proof </strong>(immune to spells),
-          <strong>Persistent</strong> (returns to Deck when killed).
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Quests</strong></td>
-      <td>
-        Daily and weekly missions rewarding <strong>Card Packs</strong>,
-        <strong>Copper</strong>, and <strong>Gold</strong>. May involve playing
-        specific card colors or dealing damage.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Shards</strong></td>
-      <td>In-game resource for upgrading and unlocking Heroes.</td>
-    </tr>
-    <tr>
-      <td><strong>Spark</strong></td>
-      <td>
-        Magical resource for casting <strong>Creatures</strong>,
-        <strong>Spells</strong>, and <strong>Construct</strong> cards in battle.
-        Represented by a hexagon icon as "<strong>Cost</strong>".
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Spell</strong></td>
-      <td>
-        Non-creature card with special effects. Targets friendly or enemy cards,
-        altering stats or board positions.
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Tick</strong></td>
-      <td>
-        Real-time game clock unit. Every <strong>tick</strong> grants 2
-        <strong>Spark</strong> and activates on-board Creatures and queued
-        Spells. During "<strong>Quick Time</strong>", ticks elapse  quicker – so
-        you must act quickly!
-      </td>
-    </tr>
-    <tr>
-      <td><strong>Types</strong></td>
-      <td>
-        Subcategories within <strong>Factions</strong> (e.g.,
-        <strong>Fishfolk</strong> and <strong>Leviathans</strong> for
-        <strong>Tidewalkers</strong>, <strong>Draken</strong> and
-        <strong>Dwarves</strong> for <strong>Flameborne</strong>). Some cards
-        affect others based on <strong>Type</strong>.
-      </td>
-    </tr>
-  </tbody>
-</table>
 <h1 id="h_01JABJRKGYKRBQKS281477A98B">Frequently Asked Questions</h1>
 <p>
   <strong
