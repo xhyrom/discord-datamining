@@ -32191,7 +32191,7 @@ img.thumbnail__0f2e8 {
 .circle_e928f4 {
   position: absolute;
   border-radius: var(--radius-round);
-  box-shadow: var(--shadow-low);
+  box-shadow: var(--shadow-high);
 }
 .avatar_e928f4 {
   outline: 2px solid var(--bg-surface-overlay);
@@ -55429,4 +55429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.34250de39507408b.css.map*/
+/*# sourceMappingURL=12633.addd176509af4750.css.map*/
