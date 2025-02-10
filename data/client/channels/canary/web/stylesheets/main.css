@@ -19426,22 +19426,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-top: -16px;
   cursor: pointer;
 }
-.container__10adc {
-  background-color: var(--background-floating);
-  opacity: 0.95;
-}
-.image__10adc {
-  height: 80px;
-  width: auto;
-}
-.buttonContainer__10adc {
-  position: relative;
-}
-.previewButtonContainer__10adc {
-  position: absolute;
-  top: 8px;
-  left: -24px;
-}
 .sectionContainer__61424 {
   display: flex;
   padding-left: 8px;
@@ -55426,4 +55410,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c19c48bcf3774a3e.css.map*/
+/*# sourceMappingURL=12633.2dbb7f9b6b55e4bd.css.map*/
