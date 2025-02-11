@@ -148,7 +148,7 @@
     height="532"
   />
 </p>
-<p>5. You can write the d<strong>escription</strong> for your Guild.</p>
+<p>5. You can write the <strong>description</strong> for your Guild.</p>
 <p>
   Focus on why someone should join and what your Guild offers. You can also
   describe your Guild in 3 words here too. Be creative!
