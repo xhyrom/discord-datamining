@@ -7725,6 +7725,20 @@
           (r.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (r.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (r.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
+          (r.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
+          (r.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
+          (r.VOICE_FILTER_DOWNLOAD_ATTEMPTED =
+            "voice_filter_download_attempted"),
+          (r.VOICE_FILTER_ACTIVATE_FAILED = "voice_filter_activate_failed"),
+          (r.VOICE_FILTER_PLAYBACK_TOGGLED = "voice_filter_playback_toggled"),
+          (r.VOICE_FILTER_PICKER_SCROLLED = "voice_filter_picker_scrolled"),
+          (r.VOICE_FILTER_MIC_SELECTOR_OPENED =
+            "voice_filter_mic_selector_opened"),
+          (r.VOICE_FILTER_MIC_SELECTOR_INPUT_SELECTED =
+            "voice_filter_mic_selector_input_selected"),
+          (r.VOICE_FILTER_VOICE_SETTINGS_CLICKED =
+            "voice_filter_voice_settings_clicked"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8285,7 +8299,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-04a10892affe5e531ce06470b913ed0a56920eb6",
+            release: "discord_web-7cf3871dfeeb782a13c932e3b098e5f6a46f4fa8",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8350,8 +8364,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "367465"),
-            _.YA("builtAt", String("1739234972921"));
+            _.YA("buildNumber", "367500"),
+            _.YA("builtAt", String("1739239102643"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45590,4 +45604,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1c0a782782bbfeda.js.map
+//# sourceMappingURL=sentry.716f206c810ccec3.js.map
