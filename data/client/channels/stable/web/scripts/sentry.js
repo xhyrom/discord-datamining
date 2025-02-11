@@ -6421,6 +6421,8 @@
             "app_profile_open_app_button_clicked"),
           (r.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED =
             "app_detail_page_entry_point_command_button_clicked"),
+          (r.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED =
+            "app_launcher_pep_button_not_rendered"),
           (r.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED =
             "embedded_application_invite_embed_viewed"),
           (r.NITRO_TAB_VISITED = "nitro_tab_visited"),
@@ -7723,6 +7725,20 @@
           (r.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (r.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (r.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
+          (r.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
+          (r.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
+          (r.VOICE_FILTER_DOWNLOAD_ATTEMPTED =
+            "voice_filter_download_attempted"),
+          (r.VOICE_FILTER_ACTIVATE_FAILED = "voice_filter_activate_failed"),
+          (r.VOICE_FILTER_PLAYBACK_TOGGLED = "voice_filter_playback_toggled"),
+          (r.VOICE_FILTER_PICKER_SCROLLED = "voice_filter_picker_scrolled"),
+          (r.VOICE_FILTER_MIC_SELECTOR_OPENED =
+            "voice_filter_mic_selector_opened"),
+          (r.VOICE_FILTER_MIC_SELECTOR_INPUT_SELECTED =
+            "voice_filter_mic_selector_input_selected"),
+          (r.VOICE_FILTER_VOICE_SETTINGS_CLICKED =
+            "voice_filter_voice_settings_clicked"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8284,7 +8300,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-10-dabb2aa4bd23506ed2198bdf776099ddfb2837f9-discord_web",
+              "2025-02-11-15569bebd32cef26a06a6efbc510ddca1589ad6a-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8349,8 +8365,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "367226"),
-            _.YA("builtAt", String("1739218400967"));
+            _.YA("buildNumber", "367533"),
+            _.YA("builtAt", String("1739262689935"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -10283,6 +10299,44 @@
                 [r.LIGHT]: { raw: "PRIMARY_500", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
                 [r.DARKER]: { raw: "WHITE", opacity: 1 },
+              },
+              OVERLAY_BACKDROP_DEFAULT: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+              },
+              OVERLAY_BACKDROP_LIGHTBOX: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
               },
               PANEL_BG: {
                 category: "background",
@@ -17708,6 +17762,18 @@
             r.I.PRIMARY_500,
             r.I.WHITE,
             r.I.WHITE,
+          ],
+          "overlay-backdrop-default": [
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_72,
+          ],
+          "overlay-backdrop-lightbox": [
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
           ],
           "panel-bg": [r.I.PRIMARY_600, r.I.WHITE, r.I.PLUM_24, r.I.PLUM_20],
           "polls-normal-fill-hover": [
@@ -45539,4 +45605,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1b6c823bd7d1a226.js.map
+//# sourceMappingURL=sentry.0d75197a0498d29e.js.map

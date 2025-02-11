@@ -11098,14 +11098,21 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: center;
   gap: 4px;
 }
+.container__8ac07.textXs__8ac07 {
+  --custom-live-activity-status-icon-size: 12px;
+  --custom-live-activity-status-emoji-size: 14px;
+}
+.container__8ac07.textSm__8ac07 {
+  --custom-live-activity-status-icon-size: 14px;
+  --custom-live-activity-status-emoji-size: 16px;
+}
+.container__8ac07:empty {
+  display: none;
+}
 .icon__8ac07 {
   flex-shrink: 0;
-  width: 12px;
-  height: 12px;
-}
-.icon__8ac07.fullWidth__8ac07 {
-  width: 14px;
-  height: 14px;
+  width: var(--custom-live-activity-status-icon-size);
+  height: var(--custom-live-activity-status-icon-size);
 }
 .text__8ac07 {
   color: var(--text-muted);
@@ -11114,12 +11121,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .emoji__8ac07 {
   flex: 0 0 auto;
   margin-right: 0;
-  width: 14px;
-  height: 14px;
+  width: var(--custom-live-activity-status-emoji-size);
+  height: var(--custom-live-activity-status-emoji-size);
 }
-.emoji__8ac07.fullWidth__8ac07 {
-  width: 16px;
-  height: 16px;
+.dot__8ac07 {
+  flex-shrink: 0;
 }
 .dot__8ac07:first-child,
 .dot__8ac07:last-child {
@@ -12085,6 +12091,25 @@ div.modalHeader_c28af8 {
   animation-name: Shine__28141;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+.orbIconContainer__85200 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/cd3441c17ece9bd5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.orbIconContainer__85200 > img {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+.orbClaimCopy__8da0b {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3px;
 }
 .nitroUpsellContainer_d0caf4 {
   display: flex;
@@ -13823,21 +13848,16 @@ div.modalHeader_c28af8 {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  padding: 16px;
 }
 .modalCloseButton_ced2f2 {
-  align-self: flex-start;
   padding: 0;
+  margin-right: -8px;
 }
 .modalContent_ced2f2 {
   display: flex;
-  padding: 0 16px;
 }
 .modalPreview_ced2f2 {
   margin-top: 24px;
-}
-.modalFooter_ced2f2 {
-  padding: 16px;
 }
 .modalFooterShopButton_ced2f2 {
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
@@ -19425,22 +19445,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .closeButton__46002 {
   margin-top: -16px;
   cursor: pointer;
-}
-.container__10adc {
-  background-color: var(--background-floating);
-  opacity: 0.95;
-}
-.image__10adc {
-  height: 80px;
-  width: auto;
-}
-.buttonContainer__10adc {
-  position: relative;
-}
-.previewButtonContainer__10adc {
-  position: absolute;
-  top: 8px;
-  left: -24px;
 }
 .sectionContainer__61424 {
   display: flex;
@@ -27123,7 +27127,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
   border-top-left-radius: var(--radius-md);
   border-top-right-radius: var(--radius-md);
 }
-.modalOverrideBody__34eac {
+div.modalOverrideBody__34eac {
   padding: 0;
   overflow: visible;
   border-radius: 8px;
@@ -32188,7 +32192,7 @@ img.thumbnail__0f2e8 {
 .circle_e928f4 {
   position: absolute;
   border-radius: var(--radius-round);
-  box-shadow: var(--shadow-low);
+  box-shadow: var(--shadow-high);
 }
 .avatar_e928f4 {
   outline: 2px solid var(--bg-surface-overlay);
@@ -41167,6 +41171,9 @@ html.disable-forced-colors * {
   --modal-background: var(--primary-600);
   --modal-footer-background: var(--primary-630);
   --navigator-header-tint: var(--white);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-72-hsl) / 0.7215686274509804
+  );
   --panel-bg: var(--primary-600);
   --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
@@ -42059,6 +42066,12 @@ html.disable-forced-colors * {
       var(--white) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
     --panel-bg: color-mix(
       in oklab,
       var(--primary-600) 100%,
@@ -42624,6 +42637,9 @@ html.disable-forced-colors * {
   --menu-item-default-active-bg: var(--brand-560);
   --menu-item-default-hover-bg: var(--brand-500);
   --message-reacted-background: hsl(var(--brand-500-hsl) / 0.15);
+  --overlay-backdrop-lightbox: hsl(
+    var(--opacity-black-92-hsl) / 0.9215686274509803
+  );
   --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
@@ -42702,6 +42718,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--brand-500-hsl) / 0.15) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.15)
+        var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
         var(--theme-base-color-amount, 0%)
     );
     --theme-locked-blur-fallback: color-mix(
@@ -42943,6 +42965,9 @@ html.disable-forced-colors * {
   --modal-background: var(--white);
   --modal-footer-background: var(--primary-130);
   --navigator-header-tint: var(--primary-500);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
   --panel-bg: var(--white);
   --polls-normal-fill-hover: var(--primary-230);
   --polls-normal-image-background: var(--white);
@@ -43826,6 +43851,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
     );
     --panel-bg: color-mix(
       in oklab,
@@ -45602,6 +45633,12 @@ html.disable-forced-colors * {
   --modal-background: var(--plum-16);
   --modal-footer-background: var(--plum-17);
   --navigator-header-tint: var(--white);
+  --overlay-backdrop-default: hsl(
+    var(--opacity-black-72-hsl) / 0.7215686274509804
+  );
+  --overlay-backdrop-lightbox: hsl(
+    var(--opacity-black-92-hsl) / 0.9215686274509803
+  );
   --polls-normal-fill-hover: var(--primary-600);
   --polls-normal-image-background: var(--primary-660);
   --polls-victor-fill: hsl(var(--green-360-hsl) / 0.2);
@@ -46046,6 +46083,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--white) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --overlay-backdrop-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
     );
     --polls-normal-fill-hover: color-mix(
       in oklab,
@@ -50785,9 +50834,9 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-72);
   --bg-base-tertiary: var(--neutral-76);
   --bg-brand: var(--blurple-50);
-  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --bg-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --bg-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --border-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -51031,8 +51080,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-faint: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-strong: color-mix(
@@ -51043,8 +51092,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -51581,9 +51630,9 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-2);
   --bg-base-tertiary: var(--neutral-4);
   --bg-brand: var(--blurple-50);
-  --bg-mod-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --bg-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --bg-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-faint: hsl(var(--opacity-20-hsl) / 0.2);
   --border-strong: hsl(var(--opacity-48-hsl) / 0.47843137254901963);
   --border-subtle: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
@@ -51825,8 +51874,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-faint: color-mix(
       in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-strong: color-mix(
@@ -51837,8 +51886,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -52399,9 +52448,9 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-97);
   --bg-base-tertiary: var(--neutral-100);
   --bg-brand: var(--blurple-50);
-  --bg-mod-faint: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --bg-mod-strong: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --bg-mod-subtle: hsl(var(--opacity-20-hsl) / 0.2);
+  --bg-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-faint: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -52582,8 +52631,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-faint: color-mix(
       in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-strong: color-mix(
@@ -52594,8 +52643,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-20-hsl) / 0.2) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -53160,9 +53209,9 @@ html.disable-forced-colors * {
   --bg-base-secondary: var(--neutral-86);
   --bg-base-tertiary: var(--neutral-92);
   --bg-brand: var(--blurple-50);
-  --bg-mod-faint: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --bg-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+  --bg-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
   --border-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -53351,8 +53400,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-faint: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--theme-base-color-amount, 0%)
     );
     --bg-mod-strong: color-mix(
@@ -53363,8 +53412,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -55314,7 +55363,7 @@ body {
 }
 .visual-refresh .appMount__51fd7,
 .visual-refresh body {
-  background: var(--bg-base-tertiary);
+  background: var(--background-base-lowest);
 }
 .overlay .appMount__51fd7,
 .overlay body {
@@ -55426,4 +55475,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6b2add2465ef900b.css.map*/
+/*# sourceMappingURL=12633.402ef4711bef920e.css.map*/
