@@ -11137,6 +11137,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .emoji_c9d15c {
   margin-right: 4px;
+  width: 14px;
+  height: 14px;
 }
 .icon_c9d15c {
   flex: 0 0 auto;
@@ -55475,4 +55477,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.402ef4711bef920e.css.map*/
+/*# sourceMappingURL=12633.bfcfc9def02fc033.css.map*/
