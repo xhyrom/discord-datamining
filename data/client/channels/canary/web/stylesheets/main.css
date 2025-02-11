@@ -27795,8 +27795,6 @@ div.modalOverrideBody__34eac {
 .visual-refresh .inlineContainer__74017 {
   box-shadow: none;
   --custom-channel-textarea-text-area-height: var(--form-input-height);
-  height: var(--form-input-height);
-  height: var(--custom-channel-textarea-text-area-height);
   box-sizing: border-box;
   background: var(--input-background);
   border-color: var(--input-border);
@@ -55494,4 +55492,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d0b6b4deab7da48d.css.map*/
+/*# sourceMappingURL=12633.7d35ada45896ae9d.css.map*/
