@@ -11098,14 +11098,21 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: center;
   gap: 4px;
 }
+.container__8ac07.textXs__8ac07 {
+  --custom-live-activity-status-icon-size: 12px;
+  --custom-live-activity-status-emoji-size: 14px;
+}
+.container__8ac07.textSm__8ac07 {
+  --custom-live-activity-status-icon-size: 14px;
+  --custom-live-activity-status-emoji-size: 16px;
+}
+.container__8ac07:empty {
+  display: none;
+}
 .icon__8ac07 {
   flex-shrink: 0;
-  width: 12px;
-  height: 12px;
-}
-.icon__8ac07.fullWidth__8ac07 {
-  width: 14px;
-  height: 14px;
+  width: var(--custom-live-activity-status-icon-size);
+  height: var(--custom-live-activity-status-icon-size);
 }
 .text__8ac07 {
   color: var(--text-muted);
@@ -11114,12 +11121,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .emoji__8ac07 {
   flex: 0 0 auto;
   margin-right: 0;
-  width: 14px;
-  height: 14px;
+  width: var(--custom-live-activity-status-emoji-size);
+  height: var(--custom-live-activity-status-emoji-size);
 }
-.emoji__8ac07.fullWidth__8ac07 {
-  width: 16px;
-  height: 16px;
+.dot__8ac07 {
+  flex-shrink: 0;
 }
 .dot__8ac07:first-child,
 .dot__8ac07:last-child {
@@ -55474,4 +55480,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fee4ec97bdb7feb6.css.map*/
+/*# sourceMappingURL=12633.a76d110942dd89f7.css.map*/
