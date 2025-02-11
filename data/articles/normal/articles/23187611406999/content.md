@@ -1,3 +1,8 @@
+<div class="exp-box">
+  The <strong>Guilds</strong> experiment will be ending in the coming weeks and
+  will no longer be available. However, certain features from the Guilds
+  experience may continue as standalone experiments.
+</div>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers: </strong></span
