@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7744203002](https://discord.com/jobs/7744203002)
 
-**Updated At:** Wed, 05 Feb 2025 18:19:17 GMT
+**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is the place for all things gaming.&amp;nbsp; With over 200M monthly active gamers and 1.5B hours of weekly playtime – Discord is the place where friends come to play games and hangout together.&amp;nbsp; To help gamers connect with games they love, we have launched a new Game Advertising and Marketing solution that enables game publishers and developers to run marketing campaigns on Discord that brings their games to gamers on Discord.

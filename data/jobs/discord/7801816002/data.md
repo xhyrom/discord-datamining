@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7801816002](https://discord.com/jobs/7801816002)
 
-**Updated At:** Tue, 28 Jan 2025 17:26:23 GMT
+**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a technical, hands-on, and mission-focused Engineering Manager to join our Ads team. This org just started last year and is growing fast. You’ll be responsible for building and scaling our ads platform from its foundations. You will lead a full-stack team of engineers working across platforms to build revenue driving products and services at Discord.

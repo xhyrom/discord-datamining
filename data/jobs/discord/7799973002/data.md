@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7799973002](https://discord.com/jobs/7799973002)
 
-**Updated At:** Tue, 28 Jan 2025 17:26:23 GMT
+**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Unlock the future of advertising with Discord! We’re on the hunt for a visionary Senior Data Science Manager to help lead our Advertising Data Science team. As part of our Data Science &amp;amp; Analytics team, you will play a pivotal role in shaping Discord’s innovative advertising ecosystem, empowering advertisers to connect with our global community in meaningful ways.

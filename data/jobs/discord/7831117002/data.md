@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7831117002](https://discord.com/jobs/7831117002)
 
-**Updated At:** Mon, 10 Feb 2025 19:11:13 GMT
+**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an experienced Senior IT Project Manager with a strong background in business systems and Oracle Fusion to oversee and drive the successful delivery of complex IT projects. In this role, you will manage the implementation, optimization, and integration of business systems, with a focus on Oracle Fusion applications, while ensuring compliance with regulatory standards and maintaining operational efficiency. This position requires a deep understanding of business system implementations, project management in public companies, and experience working with Oracle Fusion in a highly regulated, dynamic environment.
