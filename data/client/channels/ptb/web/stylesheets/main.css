@@ -26906,12 +26906,15 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .upsell__5be3e div {
   border-radius: var(--radius-xs);
 }
-html:not(.visual-refresh-chat-input) .inner_a99829 {
+html:not(.visual-refresh) .inner_a99829 {
   background: var(--input-background);
   border-radius: 3px;
 }
-.custom-profile-theme html:not(.visual-refresh-chat-input) .inner_a99829 {
+.custom-profile-theme html:not(.visual-refresh) .inner_a99829 {
   background: rgb(var(--bg-overlay-color-inverse) / 0.1);
+}
+.visual-refresh .custom-theme-background .container_a99829 {
+  border-color: var(--profile-body-border-color, var(--input-border));
 }
 .visual-refresh-chat-input .container_a99829,
 .visual-refresh.custom-theme-background .container_a99829 {
@@ -27791,11 +27794,21 @@ div.modalOverrideBody__34eac {
 }
 .visual-refresh .inlineContainer__74017 {
   box-shadow: none;
-  background: var(--bg-overlay-floating, var(--input-background));
+  --custom-channel-textarea-text-area-height: var(--form-input-height);
+  box-sizing: border-box;
+  background: var(--input-background);
+  border-color: var(--input-border);
+}
+.visual-refresh .inlineContainer__74017 .themedBackground__74017 {
+  background: none;
+  border: none;
+  height: auto;
 }
 .visual-refresh .inlineContainer__74017 .accessoryBar__74017 {
   border-top: none;
-  align-items: flex-start;
+  align-items: center;
+  height: var(--custom-channel-textarea-text-area-height);
+  box-sizing: border-box;
 }
 .visual-refresh .flushContainer__74017 {
   background: transparent none repeat 0 0 / auto auto padding-box border-box
@@ -27817,10 +27830,6 @@ div.modalOverrideBody__34eac {
   box-shadow: none;
   border-color: var(--input-border);
   background: var(--bg-overlay-floating, var(--input-background));
-}
-.visual-refresh-chat-input .inlineContainer__74017 .accessoryBar__74017 {
-  border-top: none;
-  align-items: flex-start;
 }
 .visual-refresh-chat-input .flushContainer__74017 {
   background: transparent none repeat 0 0 / auto auto padding-box border-box
@@ -30969,6 +30978,11 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .section_bf424d:has(> .headings_bf424d:only-child) {
   display: none;
 }
+.header_bf424d {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
 .list__20827 {
   display: inline-flex;
   flex-wrap: wrap;
@@ -31328,7 +31342,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   background: var(--bg-overlay-4, var(--background-accent));
 }
 .visual-refresh .container__0f2e8 {
-  background: var(--bg-overlay-3, var(--background-surface-high));
+  background: var(--bg-overlay-4, var(--background-surface-high));
   border: 1px solid var(--border-faint);
   max-width: calc(var(--custom-member-list-width) - 16px);
 }
@@ -32508,27 +32522,26 @@ img.thumbnail__0f2e8 {
 .applicationNameWrapper__2c2b3 {
   display: inline-block;
 }
-.layoutContainer__9f71b {
-  display: flex;
-  align-items: center;
-}
 .channelHeader__9f71b {
   background-color: var(--bg-mod-faint);
   padding: 12px 16px;
   border-radius: var(--radius-md);
   margin-top: 12px;
-}
-.channelHeader__9f71b .layoutContainer__9f71b {
   gap: var(--spacing-12);
+}
+.header__9f71b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
 }
 .profile__9f71b {
   padding: 12px;
-}
-.profile__9f71b .layoutContainer__9f71b {
   gap: var(--spacing-8);
 }
 .icon__9f71b {
   flex-shrink: 0;
+  color: var(--header-secondary);
 }
 .upsellContainer__5997d {
   border-radius: var(--radius-sm);
@@ -54500,21 +54513,23 @@ html.disable-forced-colors * {
   --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
   --chat-markup-line-height: 1.375rem;
-  --guildbar-avatar-size: 48px;
-  --guildbar-folder-size: 48px;
+  --form-input-height: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
   --modal-width-small: 440px;
   --modal-width-medium: 600px;
   --modal-width-large: 800px;
+  --guildbar-avatar-size: 48px;
+  --guildbar-folder-size: 48px;
 }
 .visual-refresh {
   --chat-input-icon-size: 20px;
   --chat-markup-line-height: 1.5rem;
-  --guildbar-avatar-size: 40px;
+  --form-input-height: 44px;
   --modal-horizontal-padding: 24px;
   --modal-width-small: 442px;
   --modal-width-medium: 602px;
+  --guildbar-avatar-size: 40px;
 }
 a,
 abbr,
@@ -55477,4 +55492,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.bfcfc9def02fc033.css.map*/
+/*# sourceMappingURL=12633.7d35ada45896ae9d.css.map*/
