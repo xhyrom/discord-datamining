@@ -8303,7 +8303,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-47685ddd8e7683a041275581c0b6f193d319298d",
+            release: "discord_web-7aeaf773db51cb525d77eaa0d417aea20b321d0e",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8368,8 +8368,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "367978"),
-            o.YA("builtAt", String("1739383274627"));
+            o.YA("buildNumber", "367990"),
+            o.YA("builtAt", String("1739384862938"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -25005,7 +25005,7 @@
           F = a(42367),
           V = a(515737),
           j = a(27269),
-          X = a(188280),
+          X = a(17411),
           $ = a(453574),
           q = a(386797),
           z = a(616456),
@@ -25800,7 +25800,7 @@
           };
         });
       },
-      188280: function (t, e, a) {
+      17411: function (t, e, a) {
         "use strict";
         a.d(e, { y: () => E });
         var r = a(263449),
@@ -33900,7 +33900,7 @@ Error:`,
           R = a(395848),
           d = a(501684),
           A = a(108185),
-          f = a(474264),
+          f = a(896247),
           p = a(416987);
         let T = 0,
           N = {};
@@ -34737,13 +34737,13 @@ Error:`,
       202937: function (t, e, a) {
         "use strict";
         a.d(e, { A: () => n });
-        var r = a(474264);
+        var r = a(896247);
         let n = () => {
           let t = (0, r.W)();
           return (t && t.activationStart) || 0;
         };
       },
-      474264: function (t, e, a) {
+      896247: function (t, e, a) {
         "use strict";
         a.d(e, { W: () => n });
         var r = a(395848);
@@ -34790,7 +34790,7 @@ Error:`,
         var r = a(395848),
           n = a(383704),
           _ = a(202937),
-          o = a(474264);
+          o = a(896247);
         let i = (t, e) => {
           let a = (0, o.W)(),
             i = "navigate";
@@ -34927,7 +34927,7 @@ Error:`,
         var r = a(395848),
           n = a(140955),
           _ = a(202937),
-          o = a(474264),
+          o = a(896247),
           i = a(596308),
           c = a(662355);
         let s = [800, 1800],
@@ -45608,4 +45608,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.0a80cc4f07b16b6b.js.map
+//# sourceMappingURL=sentry.06c8bf9513a0415a.js.map
