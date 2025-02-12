@@ -34828,6 +34828,8 @@ img.thumbnail__0f2e8 {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  grid-gap: 8px;
+  gap: 8px;
   border-radius: 4px;
 }
 .select__3f413,
@@ -55512,4 +55514,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fd4cf0e912654c86.css.map*/
+/*# sourceMappingURL=12633.864b96378bf2fc9e.css.map*/
