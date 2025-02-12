@@ -8303,7 +8303,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8f27da312dc514157dd021bf86d5e7825cf79d76",
+            release: "discord_web-dd2bc2e3c93019c8fd60e2c4d60bf36265f52c29",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8368,8 +8368,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "368100"),
-            o.YA("builtAt", String("1739394289396"));
+            o.YA("buildNumber", "368121"),
+            o.YA("builtAt", String("1739395547451"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11309,6 +11309,7 @@
               APPLICATION_SUBSCRIPTION_START: "#3442d9",
               BATTLENET: "#009ae5",
               BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_1: "#201e6e",
+              BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_2: "#1d0066",
               BG_ANIMATED_GRADIENT_BACKGROUND_NOT_BLACK: "#0d0d0f",
               BG_ANIMATED_GRADIENT_BACKGROUND_PINK_1: "#eb459e",
               BG_GRADIENT_AURORA_1: "#062053",
@@ -13389,6 +13390,8 @@
             (r.BATTLENET = "battlenet"),
             (r.BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_1 =
               "bg-animated-gradient-background-indigo-1"),
+            (r.BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_2 =
+              "bg-animated-gradient-background-indigo-2"),
             (r.BG_ANIMATED_GRADIENT_BACKGROUND_NOT_BLACK =
               "bg-animated-gradient-background-not-black"),
             (r.BG_ANIMATED_GRADIENT_BACKGROUND_PINK_1 =
@@ -14952,6 +14955,7 @@
           APPLICATION_SUBSCRIPTION_START: "#3442d9",
           BATTLENET: "#009ae5",
           BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_1: "#201e6e",
+          BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_2: "#1d0066",
           BG_ANIMATED_GRADIENT_BACKGROUND_NOT_BLACK: "#0d0d0f",
           BG_ANIMATED_GRADIENT_BACKGROUND_PINK_1: "#eb459e",
           BG_GRADIENT_AURORA_1: "#062053",
@@ -18479,6 +18483,8 @@
             "hsl(200, calc(var(--saturation-factor, 1) * 100.0%), 44.9%)",
           BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_1:
             "hsl(242, calc(var(--saturation-factor, 1) * 57.1%), 27.5%)",
+          BG_ANIMATED_GRADIENT_BACKGROUND_INDIGO_2:
+            "hsl(257, calc(var(--saturation-factor, 1) * 100.0%), 20.0%)",
           BG_ANIMATED_GRADIENT_BACKGROUND_NOT_BLACK:
             "hsl(240, calc(var(--saturation-factor, 1) * 7.1%), 5.5%)",
           BG_ANIMATED_GRADIENT_BACKGROUND_PINK_1:
@@ -45608,4 +45614,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bf3c1ae0ee7e0932.js.map
+//# sourceMappingURL=sentry.a13836fe4c0c05c2.js.map
