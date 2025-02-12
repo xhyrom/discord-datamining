@@ -18,6 +18,34 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Video: Exoborne Playtest</strong></p>
+<p><strong>Quest Name: EXOBORNE WISHLIST Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Watch the
+  <strong>Exoborne Playtest</strong> video in <strong>Discord</strong> and
+  unlock an <strong>Exoborne avatar decoration</strong>.
+</p>
+<p>
+  <strong>Who is Eligible:</strong> Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period:</strong> The
+  <strong>EXOBORNE WISHLIST</strong> Quest can be accepted on Discord desktop
+  app or browser client from <strong>February 12, 2025</strong> until
+  <strong>February 18, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>March 18, 2025</strong>.
+</p>
+<p>
+  The <strong>Exoborne avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>April 18, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
+<p> </p>
 <p><strong>Quest Video: Sid Meier's Civilization VII</strong></p>
 <p><strong>Quest Name: Sid Meier's Civilization VII Quest</strong></p>
 <p>
