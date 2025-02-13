@@ -6063,6 +6063,7 @@
           Object.freeze({
             TEXT_PLAYGROUND: "Text Playground",
             DESIGN_SYSTEMS: "Design System",
+            DESIGN_SYSTEMS_COLORS: "Design System",
             INTL_TESTING: "Intl Testing",
             OVERVIEW: "Overview",
             BROWSER: "Browser",
@@ -8306,7 +8307,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-534ff69ffc8a8bde93574fd18c42ed6959d10e9d",
+            release: "discord_web-df8314f4199b2c6430df8bc7dd965c11aef69ee8",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8371,8 +8372,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "368483"),
-            o.YA("builtAt", String("1739475913080"));
+            o.YA("buildNumber", "368503"),
+            o.YA("builtAt", String("1739477235783"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -25014,7 +25015,7 @@
           F = a(42367),
           V = a(515737),
           j = a(27269),
-          X = a(188280),
+          X = a(17411),
           $ = a(453574),
           q = a(386797),
           z = a(616456),
@@ -25809,7 +25810,7 @@
           };
         });
       },
-      188280: function (t, e, a) {
+      17411: function (t, e, a) {
         "use strict";
         a.d(e, { y: () => E });
         var r = a(263449),
@@ -33909,7 +33910,7 @@ Error:`,
           R = a(395848),
           d = a(501684),
           A = a(108185),
-          f = a(474264),
+          f = a(896247),
           p = a(416987);
         let T = 0,
           N = {};
@@ -34746,13 +34747,13 @@ Error:`,
       202937: function (t, e, a) {
         "use strict";
         a.d(e, { A: () => n });
-        var r = a(474264);
+        var r = a(896247);
         let n = () => {
           let t = (0, r.W)();
           return (t && t.activationStart) || 0;
         };
       },
-      474264: function (t, e, a) {
+      896247: function (t, e, a) {
         "use strict";
         a.d(e, { W: () => n });
         var r = a(395848);
@@ -34799,7 +34800,7 @@ Error:`,
         var r = a(395848),
           n = a(383704),
           _ = a(202937),
-          o = a(474264);
+          o = a(896247);
         let i = (t, e) => {
           let a = (0, o.W)(),
             i = "navigate";
@@ -34936,7 +34937,7 @@ Error:`,
         var r = a(395848),
           n = a(140955),
           _ = a(202937),
-          o = a(474264),
+          o = a(896247),
           i = a(596308),
           c = a(662355);
         let s = [800, 1800],
@@ -45617,4 +45618,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.91533fdf8c06ca3d.js.map
+//# sourceMappingURL=sentry.390e7a0910d34852.js.map
