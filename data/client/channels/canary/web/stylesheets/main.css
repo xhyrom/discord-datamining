@@ -55017,9 +55017,6 @@ code {
   --custom-guild-directory-max-page-width: 1608px;
   --custom-guild-directory-entry-card-card-height: 274px;
   --custom-guild-directory-landing-min-header-height: 200px;
-  --custom-custom-status-modal-art-height: 120px;
-  --custom-custom-status-modal-emoji-size: 22px;
-  --custom-custom-status-modal-emoji-margin: 10px;
   --custom-guild-shop-page-two-column-max-width: 1439px;
   --custom-aspect-stable-image-container-padding: 20px;
   --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
@@ -55514,4 +55511,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.06f46966f3271347.css.map*/
+/*# sourceMappingURL=12633.ba2156dfb7b4e044.css.map*/
