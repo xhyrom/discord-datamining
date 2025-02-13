@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 52,
+  "subdomain_count": 53,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -12,6 +12,7 @@
     "staging-gateway",
     "staging-media-2",
     "staging-media-1",
+    "staging-images",
     "airflow-data-analytics-stg",
     "latency",
     "us-east1001",
