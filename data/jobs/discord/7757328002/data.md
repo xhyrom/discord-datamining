@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Engineering Manager, Data Platform
+## Head of Data Platform 
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7757328002](https://discord.com/jobs/7757328002)
 
-**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
+**Updated At:** Thu, 13 Feb 2025 06:59:19 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is U.S. based only.
-We are seeking an experienced leader to join and lead our Data Platform function as Senior Engineering Manager. In this role, you’ll set the strategic direction and oversee the development of Discord’s data infrastructure, tools, and applications. You will lead the teams responsible for designing, scaling, and maintaining the systems that enable data-driven decision-making across the company.
+We are seeking an experienced leader to join and lead our Data Platform function. In this role, you’ll set the strategic direction and oversee the development of Discord’s data infrastructure, tools, and applications. You will lead the teams responsible for designing, scaling, and maintaining the systems that enable data-driven decision-making across the company.
 In this leadership role, you will combine technical leadership with organizational strategy to ensure our data platform empowers every part of Discord - from product innovation to operational excellence. This is a unique opportunity to define and own the vision for Discord’s data ecosystem while building, growing, and leading a high performance engineering team.
 To learn more about Discord’s Data Platform,&amp;nbsp;read our engineering blog — including&amp;nbsp;how we built our modern data stack leveraging open-source tools!
 What You'll Be Doing
