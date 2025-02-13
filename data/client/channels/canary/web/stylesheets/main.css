@@ -14550,31 +14550,31 @@ span.clanTag__5d473 {
 .bodySpacing__37357 {
   gap: var(--spacing-16);
 }
-.avatar__75742 {
+:where(.avatar__75742) {
   border-radius: var(--radius-round);
   position: absolute;
 }
-.avatar__75742.biteSize__75742 {
+:where(.avatar__75742).biteSize__75742 {
   z-index: 0;
   top: 61px;
   left: 16px;
 }
-.custom-profile-theme .avatar__75742.biteSize__75742 {
+.custom-profile-theme :where(.avatar__75742).biteSize__75742 {
   top: 57px;
   left: 12px;
 }
-.avatar__75742.fullSize__75742 {
+:where(.avatar__75742).fullSize__75742 {
   top: -68px;
   left: 24px;
 }
-.avatar__75742.panel__75742 {
+:where(.avatar__75742).panel__75742 {
   top: 72px;
   left: 16px;
 }
-.avatar__75742.withReactReply__75742 {
+:where(.avatar__75742).withReactReply__75742 {
   position: static;
 }
-.avatar__75742.hoisted__75742 {
+:where(.avatar__75742).hoisted__75742 {
   z-index: 4;
   pointer-events: none;
 }
@@ -55514,4 +55514,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6f2353b015f2e314.css.map*/
+/*# sourceMappingURL=12633.06f46966f3271347.css.map*/
