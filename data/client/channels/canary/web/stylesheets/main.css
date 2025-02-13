@@ -11761,68 +11761,6 @@ div.cardContainer__88e24 {
   -moz-user-select: none;
   user-select: none;
 }
-.container__6d6a1 {
-  position: relative;
-  overflow: hidden;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-width: 232px;
-}
-.container__6d6a1,
-.img__6d6a1 {
-  border-radius: var(--radius-sm);
-}
-.img__6d6a1 {
-  position: absolute;
-  top: 1px;
-  right: 0;
-  -o-object-fit: contain;
-  object-fit: contain;
-  pointer-events: none;
-  opacity: 0.5;
-  height: calc(100% - 2px);
-}
-.imgLayer__6d6a1 {
-  margin-left: 8px;
-  height: 100%;
-  width: 100%;
-}
-.gradientLayer__6d6a1 {
-  height: calc(100% - 2px);
-  top: 1px;
-  border-radius: var(--radius-sm);
-}
-.borderLayer__6d6a1,
-.gradientLayer__6d6a1 {
-  width: calc(100% - 8px);
-  position: absolute;
-  left: 8px;
-  pointer-events: none;
-}
-.borderLayer__6d6a1 {
-  height: 100%;
-  border-radius: var(--radius-sm);
-  border: 1px solid;
-  z-index: 2;
-}
-.img__6d6a1.hover__6d6a1 {
-  opacity: 0.8;
-}
-.img__6d6a1.selected__6d6a1 {
-  opacity: 1;
-}
-.plate__6d6a1 {
-  position: relative;
-}
-.visual-refresh .memberslist__6d6a1 {
-  max-width: calc(var(--custom-member-list-width) - 16px);
-}
-.visual-refresh .privateChannel__6d6a1 {
-  max-width: var(--custom-guild-sidebar-width);
-}
-.content__6d6a1 {
-  z-index: 1;
-}
 .container__91a9d {
   box-sizing: border-box;
   display: block;
@@ -11919,6 +11857,68 @@ div.cardContainer__88e24 {
 .children__91a9d {
   flex: 0 0 auto;
   margin-left: 8px;
+}
+.container__4bbc6 {
+  position: relative;
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 232px;
+}
+.container__4bbc6,
+.img__4bbc6 {
+  border-radius: var(--radius-sm);
+}
+.img__4bbc6 {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  pointer-events: none;
+  opacity: 0.5;
+  height: calc(100% - 2px);
+}
+.imgLayer__4bbc6 {
+  margin-left: 8px;
+  height: 100%;
+  width: 100%;
+}
+.gradientLayer__4bbc6 {
+  height: calc(100% - 2px);
+  top: 1px;
+  border-radius: var(--radius-sm);
+}
+.borderLayer__4bbc6,
+.gradientLayer__4bbc6 {
+  width: calc(100% - 8px);
+  position: absolute;
+  left: 8px;
+  pointer-events: none;
+}
+.borderLayer__4bbc6 {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid;
+  z-index: 2;
+}
+.img__4bbc6.hover__4bbc6 {
+  opacity: 0.8;
+}
+.img__4bbc6.selected__4bbc6 {
+  opacity: 1;
+}
+.plate__4bbc6 {
+  position: relative;
+}
+.visual-refresh .memberslist__4bbc6 {
+  max-width: calc(var(--custom-member-list-width) - 16px);
+}
+.visual-refresh .privateChannel__4bbc6 {
+  max-width: var(--custom-guild-sidebar-width);
+}
+.content__4bbc6 {
+  z-index: 1;
 }
 .nitroRewardTileAssetContainer_a92e89 {
   display: flex;
@@ -55514,4 +55514,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.864b96378bf2fc9e.css.map*/
+/*# sourceMappingURL=12633.6f2353b015f2e314.css.map*/
