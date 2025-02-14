@@ -12112,16 +12112,11 @@ div.modalHeader_c28af8 {
 }
 .orbIconContainer__85200 {
   position: relative;
-  width: 16px;
-  height: 16px;
-  background-image: url(/assets/cd3441c17ece9bd5.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 18px;
+  height: 18px;
 }
-.orbIconContainer__85200 > img {
-  position: absolute;
-  top: 5px;
-  left: 4px;
+.orbIconSVG__85200 {
+  height: 18px;
 }
 .full-motion .loading__85200 {
   animation-name: spin__85200;
@@ -55574,4 +55569,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cb418c2352d69c64.css.map*/
+/*# sourceMappingURL=12633.f5563d49e8a8ef93.css.map*/
