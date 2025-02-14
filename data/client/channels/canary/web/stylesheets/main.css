@@ -12123,6 +12123,20 @@ div.modalHeader_c28af8 {
   top: 5px;
   left: 4px;
 }
+.full-motion .loading__85200 {
+  animation-name: spin__85200;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin__85200 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 .orbClaimCopy__8da0b {
   display: flex;
   flex-wrap: nowrap;
@@ -55560,4 +55574,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8f878a6def2b7cc4.css.map*/
+/*# sourceMappingURL=12633.cb418c2352d69c64.css.map*/
