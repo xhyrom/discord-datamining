@@ -8307,7 +8307,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0d538db1e1258bf754feb243f81ff7da26330c69",
+            release: "discord_web-ea75e0cdbd637f16d15c0ae9b36b9824a33974e1",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8372,8 +8372,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "368946"),
-            _.YA("builtAt", String("1739565867872"));
+            _.YA("buildNumber", "368955"),
+            _.YA("builtAt", String("1739566271962"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -8392,9 +8392,8 @@
       },
       70956: function (t, e, a) {
         "use strict";
-        a.d(e, { Z: () => r });
-        let r = {
-          Millis: Object.freeze({
+        a.d(e, { Z: () => n });
+        let r = Object.freeze({
             HALF_SECOND: 500,
             SECOND: 1e3,
             MINUTE: 6e4,
@@ -8403,15 +8402,24 @@
             WEEK: 6048e5,
             DAYS_30: 2592e6,
           }),
-          Seconds: Object.freeze({
-            SECOND: 1,
-            MINUTE: 60,
-            HOUR: 3600,
-            DAY: 86400,
-            WEEK: 604800,
-            DAYS_30: 2592e3,
-          }),
-        };
+          n = {
+            Millis: r,
+            Seconds: Object.freeze({
+              SECOND: 1,
+              MINUTE: 60,
+              HOUR: 3600,
+              DAY: 86400,
+              WEEK: 604800,
+              DAYS_30: 2592e3,
+            }),
+            Minutes: Object.freeze({
+              MINUTE: 1,
+              HOUR: 60,
+              DAY: 1440,
+              WEEK: 10080,
+              DAYS_30: 43200,
+            }),
+          };
       },
       743606: function (t, e, a) {
         "use strict";
@@ -45603,4 +45611,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f16042c2bc32baeb.js.map
+//# sourceMappingURL=sentry.bd94dd4d41e8bf06.js.map
