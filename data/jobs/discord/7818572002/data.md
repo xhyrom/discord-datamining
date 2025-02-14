@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7818572002](https://discord.com/jobs/7818572002)
 
-**Updated At:** Wed, 12 Feb 2025 19:16:13 GMT
+**Updated At:** Fri, 14 Feb 2025 16:55:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This role is critical in supporting the company to deeply understand and mitigate how harmful content, including child sexual abuse material, manifests on our platform, as well as investigating complex threats, advancing our investigative capabilities, and developing innovative approaches to prevent harm to our users, particularly minors. This role must be based in the San Francisco Bay Area, but there is flexibility around working onsite.
@@ -23,7 +23,6 @@ Demonstrate operational excellence when evaluating risks, threats, and user priv
 Work collaboratively in responding to sensitive issues, providing deep knowledge into different exploitative content types and sharing insights and expertise about minor safety and exploitative content issues.
 Proactively identify currently undetected abuse by leveraging internal data, open-source intelligence, trusted partner information and third party private intelligence.
 Respond to users experiencing safety-related or high harm issues and empathetically address their concerns
-&amp;nbsp;
 
 What you should have
 
