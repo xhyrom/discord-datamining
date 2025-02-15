@@ -2152,10 +2152,7 @@
   },
   "MFA_TOTP_ENABLE_RESEND": {
     "url": "/users/@me/mfa/totp/enable/resend",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "MFA_TOTP_DISABLE": {
     "url": "/users/@me/mfa/totp/disable",
