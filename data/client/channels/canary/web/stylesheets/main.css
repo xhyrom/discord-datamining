@@ -11179,6 +11179,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   cursor: pointer;
   box-sizing: border-box;
   overflow: hidden;
+}
+.multiplePlaceholderAnimated__27cc6,
+.placeholderAnimated__27cc6 {
   animation: placeholderPulse__27cc6 3s ease-in-out infinite;
 }
 .placeholder__27cc6 {
@@ -55569,4 +55572,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f5563d49e8a8ef93.css.map*/
+/*# sourceMappingURL=12633.f304d02dfb501c3f.css.map*/
