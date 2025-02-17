@@ -11179,6 +11179,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   cursor: pointer;
   box-sizing: border-box;
   overflow: hidden;
+}
+.multiplePlaceholderAnimated__27cc6,
+.placeholderAnimated__27cc6 {
   animation: placeholderPulse__27cc6 3s ease-in-out infinite;
 }
 .placeholder__27cc6 {
@@ -12112,16 +12115,11 @@ div.modalHeader_c28af8 {
 }
 .orbIconContainer__85200 {
   position: relative;
-  width: 16px;
-  height: 16px;
-  background-image: url(/assets/cd3441c17ece9bd5.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 18px;
+  height: 18px;
 }
-.orbIconContainer__85200 > img {
-  position: absolute;
-  top: 5px;
-  left: 4px;
+.orbIconSVG__85200 {
+  height: 18px;
 }
 .full-motion .loading__85200 {
   animation-name: spin__85200;
@@ -35904,6 +35902,7 @@ img.thumbnail__0f2e8 {
   --__header-bar-background: var(--background-base-lower);
   border-bottom: 1px solid var(--border-subtle);
   padding-left: 20px;
+  height: var(--custom-channel-header-height);
 }
 .upperContainer__9293f {
   display: flex;
@@ -55516,7 +55515,7 @@ img[alt] {
   );
   --custom-rtc-account-height: 44px;
   --custom-app-top-bar-height: 36px;
-  --custom-channel-header-height: 56px;
+  --custom-channel-header-height: 52px;
   --custom-member-list-width: 265px;
   --custom-channel-textarea-text-area-height: 54px;
 }
@@ -55525,7 +55524,7 @@ img[alt] {
   --custom-channel-textarea-text-area-height: 48px;
 }
 .density-compact.visual-refresh {
-  --custom-channel-header-height: 56px;
+  --custom-channel-header-height: 48px;
 }
 .grecaptcha-badge {
   visibility: hidden;
@@ -55574,4 +55573,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cb418c2352d69c64.css.map*/
+/*# sourceMappingURL=12633.f94a718e1001db56.css.map*/
