@@ -3,6 +3,6 @@ Everything in [./data](./data) (everything here belongs to Discord) is generated
 Join [Hyro's Coffee](https://s.xhyrom.dev/discord) for the latest updates and support.
 
 **Install instructions**
-1. `git clone https://github.com/xHyroM/discord-dataming.git`
+1. `git clone https://github.com/xHyroM/discord-datamining.git`
 2. `bun install`
 3. `bun start`
