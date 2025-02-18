@@ -12208,11 +12208,11 @@ div.modalHeader_c28af8 {
     var(--premium-tier-2-pink-for-gradients) 95.93%
   );
 }
-.pausedButton__5d39a {
+.button__5d39a {
   display: flex;
   align-items: center;
 }
-.lockIcon__5d39a {
+.buttonIcon__5d39a {
   margin-right: 4px;
 }
 .container_bb1234 {
@@ -55620,4 +55620,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.572b53062e55aa21.css.map*/
+/*# sourceMappingURL=12633.a5881aaec847649d.css.map*/
