@@ -11972,6 +11972,36 @@ div.cardContainer__88e24 {
 .content__4bbc6 {
   z-index: 1;
 }
+.account__4bbc6 {
+  max-width: 240px;
+  border-radius: 0;
+}
+.account__4bbc6 .gradientLayer__4bbc6 {
+  top: 0;
+  height: 100%;
+}
+.account__4bbc6 .borderLayer__4bbc6,
+.account__4bbc6 .gradientLayer__4bbc6 {
+  left: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.account__4bbc6 .img__4bbc6 {
+  height: 100%;
+  top: 0;
+  border-radius: 0;
+  opacity: 0.8;
+}
+.account__4bbc6 .img__4bbc6.hover__4bbc6 {
+  opacity: 0.5;
+}
+.visual-refresh .account__4bbc6 {
+  min-height: var(--custom-rtc-account-height);
+  padding: var(--space-8);
+  box-sizing: border-box;
+  margin-left: -1px;
+  height: auto;
+}
 .nitroRewardTileAssetContainer_a92e89 {
   display: flex;
   align-content: center;
@@ -55657,4 +55687,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.47efc822cfd08659.css.map*/
+/*# sourceMappingURL=12633.19cc2b2c2126de33.css.map*/
