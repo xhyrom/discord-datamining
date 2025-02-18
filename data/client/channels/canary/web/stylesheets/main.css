@@ -15434,6 +15434,80 @@ span.clanTag__5d473 {
   border-color: Highlight;
   color: Highlight;
 }
+.wrapper__3add8 {
+  text-align: center;
+}
+.heading__3add8 {
+  margin-bottom: 32px;
+}
+.topPerksCards__3add8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.topPerksCard__3add8 {
+  background-color: var(--background-secondary-alt);
+  border-radius: 16px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-width: 340px;
+  max-width: 362px;
+  padding: 32px 24px;
+  width: 25%;
+  position: relative;
+}
+.topPerksCardImage__3add8 {
+  filter: saturate(1);
+  filter: saturate(var(--saturation-factor, 1));
+  border-radius: 4px;
+  display: block;
+  height: 128px;
+  margin: 0 auto 20px;
+  width: auto;
+}
+.topPerksCardHeading__3add8 {
+  margin-bottom: 4px;
+}
+.topPerksCardDescription__3add8 {
+  color: var(--header-secondary);
+}
+.topPerksCardNew__3add8 {
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: var(--spacing-32);
+  right: var(--spacing-24);
+}
+.topPerksCardLabelContainer__3add8 {
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-round);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--bg-base-primary);
+  padding: var(--spacing-4) 10px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-4);
+  align-items: center;
+  justify-self: center;
+  margin-top: var(--spacing-12);
+}
+.container_ef0711 {
+  flex-direction: column;
+  margin-top: var(--spacing-64);
+  text-align: center;
+}
+.container_ef0711,
+.powerupsContainer_ef0711 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.powerupsContainer_ef0711 {
+  gap: 16px;
+  margin-top: var(--spacing-32);
+}
 .wrapper__4d7bb {
   background: linear-gradient(
     45deg,
@@ -16268,43 +16342,6 @@ span.clanTag__5d473 {
   display: block;
   height: 168px;
   width: 280px;
-}
-.wrapper__3add8 {
-  text-align: center;
-}
-.heading__3add8 {
-  margin-bottom: 32px;
-}
-.topPerksCards__3add8 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-.topPerksCard__3add8 {
-  background-color: var(--background-secondary-alt);
-  border-radius: 16px;
-  box-sizing: border-box;
-  flex: 1 1 auto;
-  min-width: 340px;
-  max-width: 362px;
-  padding: 32px 24px;
-  width: 25%;
-}
-.topPerksCardImage__3add8 {
-  filter: saturate(1);
-  filter: saturate(var(--saturation-factor, 1));
-  border-radius: 4px;
-  display: block;
-  height: 128px;
-  margin: 0 auto 20px;
-  width: auto;
-}
-.topPerksCardHeading__3add8 {
-  margin-bottom: 4px;
-}
-.topPerksCardDescription__3add8 {
-  color: var(--header-secondary);
 }
 .headerWave__1dfae {
   bottom: -1px;
@@ -55620,4 +55657,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a5881aaec847649d.css.map*/
+/*# sourceMappingURL=12633.47efc822cfd08659.css.map*/

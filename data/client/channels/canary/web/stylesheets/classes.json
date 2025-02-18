@@ -654,6 +654,7 @@
   "keybind": "keybind_d4ced7",
   "closeButtonSolid": "closeButtonSolid_c2b141",
   "closeButtonBold": "closeButtonBold_c2b141",
+  "powerupsContainer": "powerupsContainer_ef0711",
   "largeCountdownPill": "largeCountdownPill_e270ac",
   "largeCountdownPillText": "largeCountdownPillText_e270ac",
   "largePillIcon": "largePillIcon_e270ac",
