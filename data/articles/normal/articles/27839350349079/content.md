@@ -1,12 +1,18 @@
 <ul>
   <li>
-    <span style="color: #333333; background-color: #ffffff"
+    <span
+      style="color: #333333; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Each Quest has a specific timeframe for acceptance and completion.
       Rewards are subject to specific terms. </span
     >
   </li>
   <li>
-    <span style="color: #333333; background-color: #ffffff"
+    <span
+      style="color: #333333; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >You can find the promotion terms for each Quest on the Quest Home page or
       after accepting the Quest.</span
     >
@@ -14,10 +20,37 @@
   <li>Limit of one reward redemption per account.</li>
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Game: Overwatch 2 </strong></p>
+<p><strong>Quest Name: Perked Up Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Overwatch 2</strong> to receive <strong>5 Loot Boxes</strong>. 
+</p>
+<p>
+  <strong>Who is Eligible: </strong>Available to players in the US who are 18+
+  on desktop and console where <strong>Discord</strong> and
+  <strong>Overwatch 2</strong> are available. Discord’s premium services are
+  restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period: </strong>The
+  <strong>Overwatch 2 Perked Up Quest</strong> can be accepted on Discord
+  <strong>February 18, 2025 </strong>until<strong>
+    February 24, 2025 (11:59PM UTC)</strong
+  >.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>March 10, 2025 (0:00 UTC)</strong>.
+</p>
+<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
 <p><strong>Quest Video: Exoborne Playtest</strong></p>
 <p><strong>Quest Name: EXOBORNE WISHLIST Quest</strong></p>
 <p>
@@ -77,7 +110,10 @@
   longer have access to this avatar decoration.
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     ><strong>Other Terms:</strong> Limit of one reward redemption per
     account.</span
   >
@@ -243,7 +279,10 @@
   <strong>February 24, 2025 (0:00 UTC)</strong>.
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     ><strong>Other Terms:</strong> Limit of one reward redemption per
     account.</span
   >
@@ -320,22 +359,53 @@
 </p>
 <p>
   <strong>Who is Eligible</strong>:
-  <span style="background-color: #ffffff">Available to players on </span
-  ><strong><span style="background-color: #ffffff">PC</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">PlayStation 4</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">PlayStation 5</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">Xbox Series X</span></strong
-  ><span style="background-color: #ffffff">, and </span
-  ><strong><span style="background-color: #ffffff">Xbox Series S</span></strong>
-  <span style="background-color: #ffffff">where both </span
-  ><strong><span style="background-color: #ffffff">Discord </span></strong
-  ><span style="background-color: #ffffff">and</span
-  ><strong><span style="background-color: #ffffff"> VALORANT </span></strong
-  ><span style="background-color: #ffffff">are available</span>.
-  <span style="background-color: #ffffff"
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >Available to players on </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PC</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PlayStation 4</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PlayStation 5</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Xbox Series X</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, and </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Xbox Series S</span
+    ></strong
+  >
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >where both </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Discord
+    </span></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >and</span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor="">
+      VALORANT
+    </span></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >are available</span
+  >.
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions. </span
   >
 </p>
@@ -346,7 +416,10 @@
   <strong>January 13, 2025 (11:59PM UTC)</strong>. 
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >Complete the quest requirements during this period and claim your reward by </span
   ><strong>February 13, 2025</strong>.
 </p>
@@ -430,22 +503,53 @@
 </p>
 <p>
   <strong>Who is Eligible</strong>:
-  <span style="background-color: #ffffff">Available to players on </span
-  ><strong><span style="background-color: #ffffff">PC</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">PlayStation 4</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">PlayStation 5</span></strong
-  ><span style="background-color: #ffffff">, </span
-  ><strong><span style="background-color: #ffffff">Xbox Series X</span></strong
-  ><span style="background-color: #ffffff">, and </span
-  ><strong><span style="background-color: #ffffff">Xbox Series S</span></strong>
-  <span style="background-color: #ffffff">where both </span
-  ><strong><span style="background-color: #ffffff">Discord </span></strong
-  ><span style="background-color: #ffffff">and</span
-  ><strong><span style="background-color: #ffffff"> Rec Room </span></strong
-  ><span style="background-color: #ffffff">are available</span>.
-  <span style="background-color: #ffffff"
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >Available to players on </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PC</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PlayStation 4</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >PlayStation 5</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Xbox Series X</span
+    ></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >, and </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Xbox Series S</span
+    ></strong
+  >
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >where both </span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+      >Discord
+    </span></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >and</span
+  ><strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor="">
+      Rec Room
+    </span></strong
+  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    >are available</span
+  >.
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions. </span
   >
 </p>
@@ -456,7 +560,10 @@
   <strong>December 29, 2024 (11:59PM UTC)</strong>. 
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >Complete the quest requirements during this period and claim your reward by </span
   ><strong>January 29, 2025</strong>.
 </p>
@@ -474,7 +581,10 @@
 <p>
   <strong
     >Quest Name:
-    <span class="wysiwyg-color-black" style="color: #1155cc"
+    <span
+      class="wysiwyg-color-black"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >Sonic 3 Quest</span
     ></strong
   >
@@ -574,7 +684,10 @@
 <p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p>
   <strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       ><!-- notionvc: 74a563cb-1aba-4cae-92f6-c924a6534d81 --></span
     ></strong
   >
