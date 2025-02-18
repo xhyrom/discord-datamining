@@ -7356,6 +7356,38 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .colorable_f1ceac.red_f1ceac:hover {
   background: var(--red-500);
 }
+.colorable_f1ceac.experimentRed_f1ceac,
+.colorable_f1ceac.experimentRed_f1ceac .centerIcon_f1ceac {
+  color: var(--red-400);
+}
+.colorable_f1ceac.experimentRed_f1ceac.active_f1ceac,
+.colorable_f1ceac.experimentRed_f1ceac:hover {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.colorable_f1ceac.disconnect_f1ceac {
+  background: var(--status-danger-background);
+}
+.colorable_f1ceac.disconnect_f1ceac,
+.colorable_f1ceac.disconnect_f1ceac .centerIcon_f1ceac {
+  color: var(--status-danger-text);
+}
+.colorable_f1ceac.disconnect_f1ceac.active_f1ceac,
+.colorable_f1ceac.disconnect_f1ceac:hover {
+  background: var(--red-500);
+}
+.colorable_f1ceac.redGlow_f1ceac {
+  background: hsl(var(--red-400-hsl) / 0.1);
+}
+.colorable_f1ceac.redGlow_f1ceac,
+.colorable_f1ceac.redGlow_f1ceac .centerIcon_f1ceac {
+  color: var(--red-400);
+}
+.colorable_f1ceac.redGlow_f1ceac.active_f1ceac {
+  background: hsl(var(--red-400-hsl) / 0.2);
+}
+.colorable_f1ceac.redGlow_f1ceac:hover {
+  background: hsl(var(--red-400-hsl) / 0.15);
+}
 .colorable_f1ceac.primaryDark_f1ceac {
   background: var(--primary-630);
 }
@@ -7410,6 +7442,19 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .colorable_f1ceac.green_f1ceac.active_f1ceac,
 .colorable_f1ceac.green_f1ceac:hover {
   background: var(--green-360);
+}
+.colorable_f1ceac.greenGlow_f1ceac {
+  background: hsl(var(--green-400-hsl) / 0.1);
+}
+.colorable_f1ceac.greenGlow_f1ceac,
+.colorable_f1ceac.greenGlow_f1ceac .centerIcon_f1ceac {
+  color: var(--green-300);
+}
+.colorable_f1ceac.greenGlow_f1ceac.active_f1ceac {
+  background: hsl(var(--green-400-hsl) / 0.3);
+}
+.colorable_f1ceac.greenGlow_f1ceac:hover {
+  background: hsl(var(--green-400-hsl) / 0.2);
 }
 .colorable_f1ceac.premiumGradient_f1ceac {
   background: linear-gradient(
@@ -7494,6 +7539,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .fullRegionDropdownButton_f1ceac.green_f1ceac {
   background-color: var(--green-360);
+}
+.fullRegionDropdownButton_f1ceac.disconnect_f1ceac {
+  background-color: var(--status-danger-background);
 }
 .fullRegionIcon_f1ceac {
   padding: 4px 12px;
@@ -55573,4 +55621,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f94a718e1001db56.css.map*/
+/*# sourceMappingURL=12633.db9faa69f8a6aa89.css.map*/
