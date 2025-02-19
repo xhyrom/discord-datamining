@@ -15514,6 +15514,31 @@ span.clanTag__5d473 {
   border-color: Highlight;
   color: Highlight;
 }
+.container__83f66 {
+  background-color: #fff;
+  display: flex;
+  padding: var(--spacing-8) var(--spacing-24);
+  padding-right: var(--spacing-12);
+  align-items: center;
+  gap: var(--spacing-12);
+  flex: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: var(--spacing-48);
+}
+.button__83f66,
+.container__83f66 {
+  border-radius: var(--radius-round);
+}
+.button__83f66 {
+  background: linear-gradient(
+    90deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+  color: #fff;
+}
 .wrapper__3add8 {
   text-align: center;
 }
@@ -55737,4 +55762,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8ef0ac5e0862ef6e.css.map*/
+/*# sourceMappingURL=12633.ac9c557e2a2d0432.css.map*/
