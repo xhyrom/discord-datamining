@@ -27,90 +27,69 @@
     >Additional Terms</span
   >
 </h1>
-<p><strong>Quest Game: Overwatch 2 </strong></p>
-<p><strong>Quest Name: Perked Up Quest</strong></p>
 <p>
-  <strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Overwatch 2</strong> to receive <strong>5 Loot Boxes</strong>. 
-</p>
-<p>
-  <strong>Who is Eligible: </strong>Available to players in the US who are 18+
-  on desktop and console where <strong>Discord</strong> and
-  <strong>Overwatch 2</strong> are available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
-  <strong>Overwatch 2 Perked Up Quest</strong> can be accepted on Discord
+  <strong>Quest Game: Overwatch 2 <br /></strong
+  ><strong>Quest Name: Perked Up Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Overwatch 2</strong> to receive
+  <strong>5 Loot Boxes</strong>. <br /><strong>Who is Eligible: </strong
+  >Available to players in the US who are 18+ on desktop and console where
+  <strong>Discord</strong> and <strong>Overwatch 2</strong> are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Overwatch 2 Perked Up Quest</strong> can be accepted on Discord
   <strong>February 18, 2025 </strong>until<strong>
     February 24, 2025 (11:59PM UTC)</strong
-  >.
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>March 10, 2025 (0:00 UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>March 10, 2025 (0:00 UTC)</strong>.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p><strong>Quest Video: Exoborne Playtest</strong></p>
-<p><strong>Quest Name: EXOBORNE WISHLIST Quest</strong></p>
-<p>
-  <strong>Offer Details:</strong> Watch the
+  <strong
+    >Quest Video: Exoborne Playtest<br />Quest Name: EXOBORNE WISHLIST Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the
   <strong>Exoborne Playtest</strong> video in <strong>Discord</strong> and
-  unlock an <strong>Exoborne avatar decoration</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period:</strong> The
-  <strong>EXOBORNE WISHLIST</strong> Quest can be accepted on Discord desktop
-  app or browser client from <strong>February 12, 2025</strong> until
+  unlock an <strong>Exoborne avatar decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to users on desktop where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>EXOBORNE WISHLIST</strong> Quest can be accepted on Discord
+  desktop app or browser client from <strong>February 12, 2025</strong> until
   <strong>February 18, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
   requirements during this period and claim your reward by
-  <strong>March 18, 2025</strong>.
-</p>
-<p>
-  The <strong>Exoborne avatar decoration</strong> is a limited-time avatar
+  <strong>March 18, 2025</strong>.<br />The
+  <strong>Exoborne avatar decoration</strong> is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
   <strong>April 18, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Video: Sid Meier's Civilization VII</strong></p>
-<p><strong>Quest Name: Sid Meier's Civilization VII Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Watch the
-  <strong>Sid Meier's Civilization VII video </strong>in Discord and unlock
-  a<strong> Scout avatar decoration.</strong>
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The<strong>
-    Sid Meier's Civilization VII Quest</strong
+  longer have access to this avatar decoration.<br /><strong
+    >Other Terms:</strong
   >
-  can be accepted on Discord desktop app or browser client from
+  Limit of one reward redemption per account.
+</p>
+<p>
+  <strong>Quest Video: Sid Meier's Civilization VII<br /></strong
+  ><strong>Quest Name: Sid Meier's Civilization VII Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>Sid Meier's Civilization VII video </strong>in Discord and unlock
+  a<strong> Scout avatar decoration.<br /></strong
+  ><strong>Who is Eligible:</strong> Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong
+  >The<strong> Sid Meier's Civilization VII Quest</strong> can be accepted on
+  Discord desktop app or browser client from
   <strong>February 11, 2025</strong> until
-  <strong>February 25, 2025 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>March 25, 2025.  </strong>
-</p>
-<p>
-  The <strong>Scout avatar decoration</strong> is a limited-time avatar
-  decoration and will only be yours as an avatar decoration until
+  <strong>February 25, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>March 25, 2025.  <br /></strong>The
+  <strong>Scout avatar decoration</strong> is a limited-time avatar decoration
+  and will only be yours as an avatar decoration until
   <strong>April 25, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p>
-  <span
+  longer have access to this avatar decoration.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
@@ -118,168 +97,120 @@
     account.</span
   >
 </p>
-<p> </p>
-<p><strong>Quest Game: SUPERVIVE </strong></p>
-<p><strong>Quest Name: SUPERVIVE Quest</strong></p>
 <p>
-  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Quest Game: SUPERVIVE <br /></strong
+  ><strong>Quest Name: SUPERVIVE Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
   <strong>SUPERVIVE </strong>to receive a
-  <strong>Crysta Hunter Bundle</strong>. 
+  <strong>Crysta Hunter Bundle</strong>. <br /><strong>Who is Eligible:</strong>
+  Available to players in the United States, Canada, Eastern Europe, and Western
+  Europe on desktop where Discord and <strong>SUPERVIVE</strong> are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>SUPERVIVE Quest</strong> can be accepted on Discord from
+  <strong>February 5, 2025</strong> until
+  <strong>February 11, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>March 13, 2025 (0:00 UTC)</strong>.  <br /><strong
+    >Other Terms: Limit of one reward redemption per account.</strong
+  >
 </p>
 <p>
-  <strong>Who is Eligible:</strong> Available to players in the United States,
-  Canada, Eastern Europe, and Western Europe on desktop where Discord and
-  <strong>SUPERVIVE</strong> are available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The <strong>SUPERVIVE Quest</strong> can
-  be accepted on Discord from <strong>February 5, 2025</strong> until
-  <strong>February 11, 2025 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>March 13, 2025 (0:00 UTC)</strong>.  
-</p>
-<p><strong>Other Terms: Limit of one reward redemption per account.</strong></p>
-<p> </p>
-<p><strong>Quest Game: Fortnite</strong></p>
-<p><strong>Quest Name: Fortnite OG S2 Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Quest Game: Fortnite<br /></strong
+  ><strong>Quest Name: Fortnite OG S2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
   <strong>Fortnite </strong>and unlock a<strong>
     Boogie Bomb avatar decoration</strong
-  >.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on desktop where
-  <strong>Discord</strong> and <strong>Fortnite </strong>are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
-  <strong>Fortnite OG S2 Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>January 31, 2025</strong> until
-  <strong>February 6, 2025 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>March 6, 2025.  </strong>
-</p>
-<p>
-  The <strong>Boogie Bomb avatar decoration</strong> is a limited-time avatar
+  >.<br /><strong>Who is Eligible:</strong> Available to players on desktop
+  where <strong>Discord</strong> and <strong>Fortnite </strong>are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Fortnite OG S2 Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>January 31, 2025</strong> until
+  <strong>February 6, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>March 6, 2025.  <br /></strong>The
+  <strong>Boogie Bomb avatar decoration</strong> is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
   <strong>April 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: Strinova</strong></p>
-<p><strong>Quest Name: Strinova Eika Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Strinova </strong>to receive a <strong>Eika Free Agent</strong>.
+  longer have access to this avatar decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
 </p>
 <p>
-  <strong>Who is Eligible:</strong> Available to players on desktop where
-  <strong>Discord</strong> and <strong>Strinova </strong>are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+  <strong>Quest Game: Strinova<br /></strong
+  ><strong>Quest Name: Strinova Eika Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Strinova </strong>to receive a
+  <strong>Eika Free Agent</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players on desktop where <strong>Discord</strong> and
+  <strong>Strinova </strong>are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
   <strong>Strinova Eika Quest </strong>can be accepted on Discord from
   <strong>January 23, 2025</strong> until
-  <strong>January 30, 2025 (11:59PM UTC)</strong>.
+  <strong>January 30, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 24, 2025 (0:00 UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.<strong> </strong>
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>February 24, 2025 (0:00 UTC)</strong>.
-</p>
-<p>
-  <strong>Other Terms:</strong> Limit of one reward redemption per
-  account.<strong> </strong>
-</p>
-<p> </p>
-<p><strong>Quest Game: Delta Force</strong></p>
-<p><strong>Quest Name: DELTA FORCE STARFALL Quest</strong></p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Quest Game: Delta Force<br /></strong
+  ><strong>Quest Name: DELTA FORCE STARFALL Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
   <strong>Delta Force </strong>to receive a
-  <strong>SCAR-H Skin &amp; Premium Armament Pack</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on PC where both
-  <strong>Discord</strong> and <strong>Delta Force</strong> are available.
-  Discord’s premium services are restricted in some regions. 
-</p>
-<p>
-  <strong>Availability Period: </strong>The<strong>
-    DELTA FORCE STARFALL Quest</strong
+  <strong>SCAR-H Skin &amp; Premium Armament Pack</strong>.<br /><strong
+    >Who is Eligible:</strong
   >
-  can be accepted on Discord from<strong> January 17, 2025</strong>
-  <strong>(6:00PM PT) </strong>until <strong>January 23,</strong>
-  <strong>2025 (11:59PM UTC)</strong>.
+  Available to players on PC where both <strong>Discord</strong> and
+  <strong>Delta Force</strong> are available. Discord’s premium services are
+  restricted in some regions. <br /><strong>Availability Period: </strong
+  >The<strong> DELTA FORCE STARFALL Quest</strong> can be accepted on Discord
+  from<strong> January 17, 2025</strong> <strong>(6:00PM PT) </strong>until
+  <strong>January 23,</strong>
+  <strong>2025 (11:59PM UTC)</strong>.<br />Complete the quest requirements
+  during this period and claim your reward by <strong>April 30, 2025</strong>
+  <strong>(11:59PM UTC)</strong>. <br /><strong>Other Terms:</strong> Limit of
+  one reward redemption per account.
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>April 30, 2025</strong> <strong>(11:59PM UTC)</strong>. 
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Video: Fuchsia Agent </strong></p>
-<p><strong>Quest Name: Strinova Fuchsia Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Watch the
+  <strong>Quest Video: Fuchsia Agent <br /></strong
+  ><strong>Quest Name: Strinova Fuchsia Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
   <strong>Fuchsia Agent video </strong>in Discord and unlock a<strong>
-    Fuchsia Agent avatar decoration.</strong
-  >
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to users on desktop where
+    Fuchsia Agent avatar decoration.<br /></strong
+  ><strong>Who is Eligible:</strong> Available to users on desktop where
   <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
   <strong>Strinova Fuchsia Quest</strong> can be accepted on Discord desktop app
   or browser client from <strong>January 17, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>February 23, 2025.  </strong>
-</p>
-<p>
-  The <strong>Fuchsia Agent avatar decoration</strong> is a limited-time avatar
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 23, 2025.  <br /></strong>The
+  <strong>Fuchsia Agent avatar decoration</strong> is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
   <strong>March 23, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: Strinova</strong></p>
-<p><strong>Quest Name: Strinova Fuchsia Play Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Strinova </strong>to receive a <strong>Fuchsia Free Agent</strong>.
+  longer have access to this avatar decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
 </p>
 <p>
-  <strong>Who is Eligible:</strong> Available to players on desktop where
-  <strong>Discord</strong> and <strong>Strinova </strong>are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+  <strong>Quest Game: Strinova<br /></strong
+  ><strong>Quest Name: Strinova Fuchsia Play Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Strinova </strong>to receive a
+  <strong>Fuchsia Free Agent</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players on desktop where <strong>Discord</strong> and
+  <strong>Strinova </strong>are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
   <strong>Strinova Fuchsia Quest </strong>can be accepted on Discord from
   <strong>January 17, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>February 24, 2025 (0:00 UTC)</strong>.
-</p>
-<p>
-  <span
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 24, 2025 (0:00 UTC)</strong>.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
@@ -287,66 +218,51 @@
     account.</span
   >
 </p>
-<p> </p>
-<p><strong>Quest Game: Once Human</strong></p>
-<p><strong>Quest Name: Once Human Crazy Quest</strong></p>
 <p>
-  <strong>Offer Details: </strong>Stream 15 minutes of
+  <strong>Quest Game: Once Human<br /></strong
+  ><strong>Quest Name: Once Human Crazy Quest<br /></strong
+  ><strong>Offer Details: </strong>Stream 15 minutes of
   <strong>Once Human</strong> to a friend on <strong>Discord </strong>to receive
-  a <strong>Gun Skin:</strong> <strong>Tiger Roar</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on desktop where both
-  <strong>Discord</strong> and <strong>Once Human</strong> are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period:</strong> The
+  a <strong>Gun Skin:</strong> <strong>Tiger Roar</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on desktop where both <strong>Discord</strong> and
+  <strong>Once Human</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
   <strong>Once Human Crazy Quest</strong> can be accepted on Discord from
   <strong>January 16, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.
+  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>April 10, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
+  >Limit of one reward redemption per account.
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>April 10, 2025 (0:00 UTC)</strong>.
-</p>
-<p><strong>Other Terms: </strong>Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: Marvel Rivals</strong></p>
-<p><strong>Quest Name: Marvel Rivals Quest</strong></p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Quest Game: Marvel Rivals<br /></strong
+  ><strong>Quest Name: Marvel Rivals Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
   <strong>Marvel Rivals</strong> to receive a limited-time
   <strong>Jeff The Land Shark</strong> <strong>avatar</strong>
-  <strong>decoration</strong>.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on desktop and console
-  where both <strong>Discord</strong> and <strong>Marvel Rivals</strong> are
-  available. Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period:</strong> The
+  <strong>decoration</strong>.<br /><strong>Who is Eligible:</strong> Available
+  to players on desktop and console where both <strong>Discord</strong> and
+  <strong>Marvel Rivals</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
   <strong>Marvel Rivals Quest</strong> can be accepted on Discord from
   <strong>January 10, 2025</strong> until
-  <strong>January 16, 2025 (4:59PM PST)</strong>.
+  <strong>January 16, 2025 (4:59PM PST)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 16, 2025</strong>.<br />The
+  <strong>Jeff The Land Shark</strong> <strong>avatar decoration</strong> is a
+  limited-time avatar decoration and will only be yours as an avatar decoration
+  until <strong>March 16, 2025 (4:59PM PST)</strong>. After this date, you will
+  no longer have access to this avatar decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>February 16, 2025</strong>.
-</p>
-<p>
-  The <strong>Jeff The Land Shark</strong> <strong>avatar decoration</strong> is
-  a limited-time avatar decoration and will only be yours as an avatar
-  decoration until <strong>March 16, 2025 (4:59PM PST)</strong>. After this
-  date, you will no longer have access to this avatar decoration.
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: VALORANT</strong></p>
-<p><strong>Quest Name: GO GET EM WINGS Quest </strong></p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Quest Game: VALORANT<br /></strong
+  ><strong>Quest Name: GO GET EM WINGS Quest <br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
   <strong>VALORANT </strong>to receive a<strong>
     WINGMAN’S GOT IT avatar decoration</strong
   >. You can learn more about avatar decorations
@@ -355,10 +271,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >. 
-</p>
-<p>
-  <strong>Who is Eligible</strong>:
+  >. <br /><strong>Who is Eligible</strong>:
   <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Available to players on </span
   ><strong
@@ -406,60 +319,43 @@
     >are available</span
   >.
   <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions. </span
-  >
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+    >Discord’s premium services are restricted in some regions. <br /></span
+  ><strong>Availability Period: </strong>The
   <strong>GO GET EM WINGS Quest</strong> can be accepted on Discord from
   <strong>January 7, 2025 </strong>until
-  <strong>January 13, 2025 (11:59PM UTC)</strong>. 
-</p>
-<p>
-  <span
+  <strong>January 13, 2025 (11:59PM UTC)</strong>. <br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
     >Complete the quest requirements during this period and claim your reward by </span
-  ><strong>February 13, 2025</strong>.
+  ><strong>February 13, 2025</strong>.<br /><strong>Other Terms:</strong> Limit
+  of one reward redemption per account. 
 </p>
 <p>
-  <strong>Other Terms:</strong> Limit of one reward redemption per account. 
-</p>
-<p> </p>
-<p><strong>Quest Game: Off The Grid </strong></p>
-<p><strong>Quest Name: Off The Grid Quest</strong></p>
-<p>
-  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Quest Game: Off The Grid <br /></strong
+  ><strong>Quest Name: Off The Grid Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
   <strong>Off The Grid </strong>to receive an<strong>
-    Impact Junkie Set.</strong
-  >
-</p>
-<p>
-  <strong>Who is Eligible: </strong>Available to players on<strong>
+    Impact Junkie Set.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to players on<strong>
     PC, PlayStation 5, Xbox Series X, </strong
   >and<strong> Xbox Series S </strong>where both
   <strong>Discord </strong>and<strong> Off The Grid </strong>are available.
-  Discord’s premium services are restricted in some regions.<strong> </strong>
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+  Discord’s premium services are restricted in some regions.<strong
+    > <br /></strong
+  ><strong>Availability Period: </strong>The
   <strong>Off The Grid Quest</strong> can be accepted on Discord from
   <strong>January 6, 2025 </strong>until<strong>
-    January 12, 2025 (11:59PM UTC). </strong
-  >
+    January 12, 2025 (11:59PM UTC). <br /></strong
+  >Complete the quest requirements during this period and claim your reward by
+  <strong>March 6, 2025 (23:59 UTC).<br /></strong
+  ><strong>Other Terms:</strong> Limit of one reward redemption per account.
 </p>
 <p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>March 6, 2025 (23:59 UTC).</strong>
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: Wuthering Waves</strong></p>
-<p><strong>Quest Name: V2.0 WUWA Quest</strong></p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of <strong>Wuthering</strong>
-  <strong>Waves</strong> to receive a
+  <strong>Quest Game: Wuthering Waves<br /></strong
+  ><strong>Quest Name: V2.0 WUWA Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Wuthering</strong> <strong>Waves</strong> to receive a
   <strong>V1.2 WUWA Quest Pack</strong> including: 
 </p>
 <ul>
@@ -472,24 +368,18 @@
   <strong>Who is Eligible: </strong>Available to players on
   <strong>PC and PlayStation 5 </strong>where both<strong> Discord </strong
   >and<strong> Wuthering Waves </strong>are available. Discord’s premium
-  services are restricted in some regions. 
+  services are restricted in some regions. <br /><strong
+    >Availability Period: </strong
+  >The <strong>V2.0 WUWA Quest</strong> can be accepted on Discord from
+  <strong>January 6, 2025 </strong>until<strong>
+    January 12, 2025 (11:59PM UTC). <br /></strong
+  >Complete the quest requirements during this period and claim your reward
+  by<strong> March 3, 2025 (08:00PM PST).<br /></strong
+  ><strong>Other Terms:</strong> Limit of one reward redemption per account.
 </p>
 <p>
-  <strong>Availability Period: </strong>The <strong>V2.0 WUWA Quest</strong> can
-  be accepted on Discord from <strong>January 6, 2025 </strong>until<strong>
-    January 12, 2025 (11:59PM UTC). </strong
-  >
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward
-  by<strong> March 3, 2025 (08:00PM PST).</strong>
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p><strong>Quest Game: Rec Room</strong></p>
-<p><strong>Quest Name: </strong>Rec Room Winter Quest</p>
-<p>
-  <strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Quest Game: Rec Room<br /></strong><strong>Quest Name: </strong>Rec
+  Room Winter Quest<br /><strong>Offer Details: </strong>Play 15 minutes of
   <strong>Rec Room</strong> on PC, PlayStation 4, PlayStation 5, Xbox Series X,
   and Xbox Series S to receive the<strong>
     Rec Room Lightning avatar decoration</strong
@@ -499,10 +389,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >. 
-</p>
-<p>
-  <strong>Who is Eligible</strong>:
+  >. <br /><strong>Who is Eligible</strong>:
   <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Available to players on </span
   ><strong
@@ -550,102 +437,71 @@
     >are available</span
   >.
   <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions. </span
-  >
-</p>
-<p>
-  <strong>Availability Period: </strong>The
+    >Discord’s premium services are restricted in some regions. <br /></span
+  ><strong>Availability Period: </strong>The
   <strong>Rec Room Winter Quest</strong> can be accepted on Discord from
   <strong>December 23, 2024 </strong>until
-  <strong>December 29, 2024 (11:59PM UTC)</strong>. 
-</p>
-<p>
-  <span
+  <strong>December 29, 2024 (11:59PM UTC)</strong>. <br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
     >Complete the quest requirements during this period and claim your reward by </span
-  ><strong>January 29, 2025</strong>.
+  ><strong>January 29, 2025</strong>.<br />The Rec Room Lightning avatar
+  decoration is a limited-time avatar decoration and will only be yours as an
+  avatar decoration until <strong>March 1, 2025 (11:59PM UTC)</strong>. After
+  this date, you will no longer have access to this avatar decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account. 
 </p>
 <p>
-  The Rec Room Lightning avatar decoration is a limited-time avatar decoration
-  and will only be yours as an avatar decoration until
-  <strong>March 1, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p>
-  <strong>Other Terms:</strong> Limit of one reward redemption per account. 
-</p>
-<p> </p>
-<p><strong>Quest Video:</strong> <strong>Sonic the Hedgehog 3</strong></p>
-<p>
-  <strong
+  <strong>Quest Video:</strong> <strong>Sonic the Hedgehog 3<br /></strong
+  ><strong
     >Quest Name:
     <span
       class="wysiwyg-color-black"
       style="color: #1155cc"
       data-darkreader-inline-color=""
-      >Sonic 3 Quest</span
-    ></strong
-  >
-</p>
-<p>
-  <strong>Offer Details:</strong> Watch
+      >Sonic 3 Quest<br /></span></strong
+  ><strong>Offer Details:</strong> Watch
   <strong>Sonic the Hedgehog 3</strong> video in Discord and unlock a
-  <strong>Shadow avatar decoration</strong>!
-</p>
-<p>
-  <strong>Availability Period: The Sonic 3 Quest </strong>can be accepted on
-  Discord desktop app or browser client from<strong> December 13, 2024 </strong
-  >until<strong> December 21, 2024 (11:59PM UTC)</strong>.  
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>January 21, 2025</strong>.
-</p>
-<p>
-  The Shadow avatar decoration is a limited-time avatar decoration and will only
-  be yours as an avatar decoration until
-  <strong>February 21, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration
-</p>
-<p><strong>Other Terms:</strong> Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Video: The Game Awards 2024 Trailer</strong><br /><strong
-    >Quest Name: The Game Awards Quest</strong
+  <strong>Shadow avatar decoration</strong>!<br /><strong
+    >Availability Period: The Sonic 3 Quest </strong
+  >can be accepted on Discord desktop app or browser client from<strong>
+    December 13, 2024 </strong
+  >until<strong> December 21, 2024 (11:59PM UTC)</strong>.  <br />Complete the
+  quest requirements during this period and claim your reward by
+  <strong>January 21, 2025</strong>.<br />The Shadow avatar decoration is a
+  limited-time avatar decoration and will only be yours as an avatar decoration
+  until <strong>February 21, 2025 (11:59PM UTC)</strong>. After this date, you
+  will no longer have access to this avatar decoration<br /><strong
+    >Other Terms:</strong
   >
+  Limit of one reward redemption per account.
 </p>
 <p>
-  <strong>Offer Details:</strong> Watch <strong>The Game Awards 2024</strong>
+  <strong>Quest Video: The Game Awards 2024 Trailer<br /></strong
+  ><strong>Quest Name: The Game Awards Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch <strong>The Game Awards 2024</strong>
   <strong>Trailer</strong> in Discord and unlock a
-  <strong>TGA Controller avatar decoration</strong>!
-</p>
-<p>
-  <strong>Availability Period: The Game Awards Quest</strong> can be accepted on
-  Discord desktop app or browser client from
-  <strong>December 11, 2024</strong> until
-  <strong>December 14, 2024 (11:59PM UTC)</strong>.
-</p>
-<p>
-  Complete the quest requirements during this period and claim your reward by
-  <strong>January 14, 2025</strong>.
-</p>
-<p>
-  The TGA Controller avatar decoration is a limited-time avatar decoration and
-  will only be yours as an avatar decoration until
-  <strong>February 14, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
-</p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Fortnite</strong><br /><strong
-    >Quest Name: Fortnite OG Quest</strong
+  <strong>TGA Controller avatar decoration</strong>!<br /><strong
+    >Availability Period: The Game Awards Quest</strong
   >
+  can be accepted on Discord desktop app or browser client from
+  <strong>December 11, 2024</strong> until
+  <strong>December 14, 2024 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>January 14, 2025</strong>.<br />The TGA Controller avatar decoration
+  is a limited-time avatar decoration and will only be yours as an avatar
+  decoration until <strong>February 14, 2025 (11:59PM UTC)</strong>. After this
+  date, you will no longer have access to this avatar decoration.<br /><strong
+    >Other Terms</strong
+  >: Limit of one reward redemption per account.
 </p>
 <p>
-  <strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Quest Game: Fortnite<br /></strong
+  ><strong>Quest Name: Fortnite OG Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
   <strong>Fortnite</strong> on <strong>PC</strong>,
   <strong>PlayStation 4</strong>,<strong> PlayStation 5</strong>,<strong>
     Xbox Series X</strong
@@ -657,31 +513,25 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >.
-</p>
-<p>
-  <strong>Who is Eligible:</strong> Available to players on PC, PlayStation 4,
-  PlayStation 5, Xbox Series X, and Xbox Series S where both
+  >.<br /><strong>Who is Eligible:</strong> Available to players on PC,
+  PlayStation 4, PlayStation 5, Xbox Series X, and Xbox Series S where both
   <strong>Discord</strong> and <strong>Fortnite</strong> are available.
-  Discord’s premium services are restricted in some regions.
-</p>
-<p>
-  <strong>Availability Period: The Fortnite OG Quest </strong>can be accepted on
-  Discord from <strong>December 11, 2024 </strong>until<strong>
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: The Fortnite OG Quest </strong
+  >can be accepted on Discord from
+  <strong>December 11, 2024 </strong>until<strong>
     December 15, 2024 (11:59PM UTC). </strong
   >Users must redeem the <strong>Shield Potion avatar decoration</strong> by
   <strong>January 15, 2025 </strong>and the
   <strong>Bush Camper avatar decoration</strong> by
   <strong>January 11, 2025</strong>. To receive these rewards, all quest
-  requirements must be completed within the specified timeframe.
-</p>
-<p>
-  The Shield Potion avatar decoration is a limited-time avatar decoration and
-  will only be yours as an avatar decoration until
+  requirements must be completed within the specified timeframe.<br />The Shield
+  Potion avatar decoration is a limited-time avatar decoration and will only be
+  yours as an avatar decoration until
   <strong>February 15, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.
+  longer have access to this avatar decoration.<br /><strong>Other Terms</strong
+  >: Limit of one reward redemption per account.
 </p>
-<p><strong>Other Terms</strong>: Limit of one reward redemption per account.</p>
 <p>
   <strong
     ><span
