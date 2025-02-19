@@ -55118,6 +55118,7 @@ code {
     var(--premium-tier-2-pink)
   );
   --custom-premium-colors-banner-yellow: #ffeaa0;
+  --custom-premium-colors-banner-black: #232428;
   --custom-pending-row-max-width: 1040px;
   --custom-people-page-max-width-with-toolbar: 940px;
   --custom-family-center-page-responsive-width-mobile: 900px;
@@ -55762,4 +55763,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ac9c557e2a2d0432.css.map*/
+/*# sourceMappingURL=12633.2cced5ab974594b3.css.map*/
