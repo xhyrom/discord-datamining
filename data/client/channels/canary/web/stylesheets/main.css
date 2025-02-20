@@ -28640,17 +28640,21 @@ div.modalOverrideBody__34eac {
 .stackedBars__74017 > :not(:last-child) {
   border-bottom: 1px solid var(--background-secondary-alt);
 }
+.floatingBars__74017:empty + .stackedBars__74017:nth-child(2),
 .stackedBars__74017:first-child {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 .visual-refresh .stackedBars__74017 {
   background: var(--background-surface-higher);
-  border-top-left-radius: var(--radius-sm);
-  border-top-right-radius: var(--radius-sm);
 }
 .visual-refresh .stackedBars__74017:not(:last-child) {
   border-bottom: 1px solid var(--border-subtle);
+}
+.floatingBars__74017:empty + .visual-refresh .stackedBars__74017:nth-child(2),
+.visual-refresh .stackedBars__74017:first-child {
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
 }
 .visual-refresh .floatingBars__74017 {
   margin-bottom: 0;
@@ -56055,4 +56059,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.530c3e0cec0341b4.css.map*/
+/*# sourceMappingURL=12633.e45f821783a5087b.css.map*/
