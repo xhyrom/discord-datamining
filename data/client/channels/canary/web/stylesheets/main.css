@@ -35430,7 +35430,7 @@ img.thumbnail__0f2e8 {
   box-sizing: border-box;
 }
 .option__3f413.focused__3f413,
-.option__3f413:focus,
+.option__3f413:focus-visible,
 .option__3f413:hover {
   background-color: var(--background-modifier-hover);
   color: var(--interactive-hover);
@@ -56044,4 +56044,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.81751d1a7d658eaf.css.map*/
+/*# sourceMappingURL=12633.de119c7fc15da465.css.map*/
