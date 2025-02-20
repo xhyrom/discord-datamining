@@ -11298,6 +11298,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .dot__8ac07:last-child {
   display: none;
 }
+.questsIcon__8ac07 {
+  flex-shrink: 0;
+}
 .container_c9d15c {
   display: flex;
   align-items: center;
@@ -56112,4 +56115,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e07b3d662272c529.css.map*/
+/*# sourceMappingURL=12633.45e30be1e9753b70.css.map*/
