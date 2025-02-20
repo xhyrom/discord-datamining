@@ -1,11 +1,3 @@
-<div class="mega-box">
-  <strong>As of February 3, 2025:</strong> The
-  <strong>3 months of Nitro with Xbox Game Pass Ultimate</strong> promotion is
-  currently paused and not available to claim at this time. However, those who
-  claimed before the 3rd can still redeem during the pause. While we can't
-  provide a specific timeline for its return, we encourage you to check back
-  periodically for updates. We appreciate your patience and understanding.
-</div>
 <h3 id="h_01JK9TNPPARXZTTSEB108CEAXR">
   <strong>Note:</strong><strong><br /></strong>- Discord requires a payment
   method to redeem this Nitro promo. A temporary charge will be placed on the
