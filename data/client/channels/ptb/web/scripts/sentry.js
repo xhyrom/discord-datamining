@@ -6540,6 +6540,8 @@
           (r.VOICE_QUALITY_PERIODIC_STATS = "voice_quality_periodic_stats"),
           (r.AUDIO_DEVICE_MODULE_ERROR = "audio_device_module_error"),
           (r.SDP_ERROR = "sdp_error"),
+          (r.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
+            "voice_filter_limited_time_voice_selected"),
           (r.CHANNEL_SIDEBAR_VIEWED = "channel_sidebar_viewed"),
           (r.CHANNEL_SIDEBAR_RESIZED = "channel_sidebar_resized"),
           (r.MEMBER_LIST_VIEWED = "member_list_viewed"),
@@ -6611,6 +6613,8 @@
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
           (r.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
           (r.ACTIVITY_SESSION_LEFT = "activity_session_left"),
+          (r.ACTIVITY_INTERACTION_CALLBACK_ERROR =
+            "activity_interaction_callback_error"),
           (r.ACTIVITY_VOICE_CONTROLS_TOGGLE_BUTTON_PRESSED =
             "activity_voice_controls_toggle_button_pressed"),
           (r.ACTIVITY_VOICE_CONTROLS_TOGGLE_MOVED =
@@ -6784,6 +6788,7 @@
           (r.NOTIFY_STREAM_SETTING_UPDATE = "notify_stream_setting_update"),
           (r.SECURE_FRAMES_TRANSITION = "secure_frames_transition"),
           (r.MLS_FAILURES = "mls_failures"),
+          (r.AV_ERROR_REPORTED = "av_error_reported"),
           (r.VIDEO_SPINNER_SHOWN_V2 = "video_spinner_shown_v2"),
           (r.VIDEO_TOGGLED = "video_toggled"),
           (r.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED =
@@ -7517,6 +7522,8 @@
           (r.APP_DIRECTORY_PAGE_SCROLLED = "app_directory_page_scrolled"),
           (r.APP_DIRECTORY_INSTALL_CLICKED = "app_directory_install_clicked"),
           (r.APP_DIRECTORY_LAUNCH_CLICKED = "app_directory_launch_clicked"),
+          (r.APP_DIRECTORY_MANAGE_APP_CLICKED =
+            "app_directory_manage_app_clicked"),
           (r.POPULAR_CHANNEL_CLICKED = "popular_channel_clicked"),
           (r.URL_CLICKED = "url_clicked"),
           (r.LINK_CLICKED = "link_clicked"),
@@ -8526,7 +8533,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-19-29f58c745bb6e2a4697725a17fe9029e8d3f1153-discord_web",
+              "2025-02-20-940656f901e9b76298d76e72e15a135803077b88-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8592,8 +8599,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "369751"),
-            _.YA("builtAt", String("1739983707136"));
+            _.YA("buildNumber", "370141"),
+            _.YA("builtAt", String("1740040009429"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45826,4 +45833,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ead1070813c14437.js.map
+//# sourceMappingURL=sentry.b3676861e00d3409.js.map
