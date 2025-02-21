@@ -15092,6 +15092,11 @@ span.clanTag__5d473 {
 .dmSettingsSwitch__50a54 {
   margin-bottom: 16px;
 }
+.dmSettingsMute__50a54 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .divider__50a54 {
   display: flex;
   width: 1px;
@@ -56051,4 +56056,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.eed487730eab0793.css.map*/
+/*# sourceMappingURL=12633.d8e68f9cb5e177e8.css.map*/
