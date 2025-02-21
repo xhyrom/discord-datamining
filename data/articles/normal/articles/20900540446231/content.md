@@ -1,3 +1,16 @@
+<div class="tip-box">
+  <strong>NOTE: </strong>If you're on macOS 10.15 or lower and Discord no longer
+  launches, it is recommended to install
+  <a
+    href="https://dl.discordapp.net/apps/osx/0.0.336/Discord.dmg"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this</a
+  >
+  version of the Discord app. This version will continue to work without
+  updating, but installing any newer version will prevent Discord from
+  launching.
+</div>
 <p>
   As of <strong>January 21</strong><strong>, 2025</strong>, Discord will no
   longer be supported on macOS 10.15.
