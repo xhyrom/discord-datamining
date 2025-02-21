@@ -28,6 +28,26 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Delta Force: Black Hawk Down <br /></strong
+  ><strong>Quest Name: Black Hawk Down Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Delta Force: Black Hawk Down </strong>to receive a
+  <strong>Spray Paint &amp; Premium Armament Pack</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on desktop where both <strong>Discord</strong> and
+  <strong>Delta Force: Black Hawk Down</strong> are available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Black Hawk Down Quest</strong> can be accepted on Discord from
+  <strong>February 20, 2025</strong> until
+  <strong>February 26, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>May 31, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p>
   <strong>Quest Game: Overwatch 2 <br /></strong
   ><strong>Quest Name: Perked Up Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
