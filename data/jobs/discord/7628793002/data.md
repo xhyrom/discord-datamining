@@ -2,7 +2,7 @@
 
 ## Staff Product Designer - Social Layer SDK
 
-**Location:** Remote (U.S.)
+**Location:** San Francisco, CA
 
 **Id:** 7628793002 <br/>
 **Internal Job Id:** 5999566002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7628793002](https://discord.com/jobs/7628793002)
 
-**Updated At:** Thu, 20 Feb 2025 21:11:38 GMT
+**Updated At:** Fri, 21 Feb 2025 17:28:08 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is your place to talk. Whether you're part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, millions of people use Discord every day to create connections, hang out, and talk.
