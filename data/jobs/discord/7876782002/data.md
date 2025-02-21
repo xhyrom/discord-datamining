@@ -2,15 +2,15 @@
 
 ## Account Executive - Mobile Gaming
 
-**Location:** San Francisco, CA
+**Location:** Los Angeles, CA
 
-**Id:** 7820758002 <br/>
+**Id:** 7876782002 <br/>
 **Internal Job Id:** 6083533002 <br/>
 **Requisition Id:** R-100772 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7820758002](https://discord.com/jobs/7820758002)
+**Discord Jobs:** [https://discord.com/jobs/7876782002](https://discord.com/jobs/7876782002)
 
-**Updated At:** Fri, 21 Feb 2025 22:45:43 GMT
+**Updated At:** Fri, 21 Feb 2025 22:46:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is California-based only.

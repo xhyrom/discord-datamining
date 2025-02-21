@@ -1,5 +1,5 @@
 {
-  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7820758002",
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7876782002",
   "data_compliance": [
     {
       "type": "gdpr",
@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6083533002,
   "location": {
-    "name": "San Francisco, CA"
+    "name": "Los Angeles, CA"
   },
   "metadata": [
     {
@@ -29,8 +29,8 @@
       "value_type": "single_select"
     }
   ],
-  "id": 7820758002,
-  "updated_at": "2025-02-21T17:45:43-05:00",
+  "id": 7876782002,
+  "updated_at": "2025-02-21T17:46:20-05:00",
   "requisition_id": "R-100772",
   "title": "Account Executive - Mobile Gaming",
   "company_name": "Discord",
