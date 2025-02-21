@@ -28,6 +28,26 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Fortnite<br /></strong
+  ><strong>Quest Name: Fortnite Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of the new season of
+  <strong>Fortnite </strong>and unlock a<strong>
+    Big Dill Chain avatar decoration</strong
+  >.<br /><strong>Who is Eligible:</strong> Available to players on desktop
+  where <strong>Discord</strong> and <strong>Fortnite </strong>are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Fortnite Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>February 21, 2025</strong> until
+  <strong>February 27, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 27, 2025.  <br /></strong>The
+  <strong>Big Dill Chain avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>April 27, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p>
   <strong>Quest Game: Delta Force: Black Hawk Down <br /></strong
   ><strong>Quest Name: Black Hawk Down Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
