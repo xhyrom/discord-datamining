@@ -7469,8 +7469,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .colorable_f1ceac.redGlow_f1ceac:active {
   background: hsl(var(--red-400-hsl) / 0.2);
 }
+.colorable_f1ceac.redGlow_f1ceac.popoutOpen_f1ceac,
 .colorable_f1ceac.redGlow_f1ceac:hover {
-  background: hsl(var(--red-400-hsl) / 0.15);
+  background: hsl(var(--red-400-hsl) / 0.16);
 }
 .colorable_f1ceac.primaryDark_f1ceac {
   background: var(--primary-630);
@@ -7546,6 +7547,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .colorable_f1ceac.greenGlow_f1ceac:active {
   background: hsl(var(--green-400-hsl) / 0.3);
 }
+.colorable_f1ceac.greenGlow_f1ceac.popoutOpen_f1ceac,
 .colorable_f1ceac.greenGlow_f1ceac:hover {
   background: hsl(var(--green-400-hsl) / 0.2);
 }
@@ -7612,6 +7614,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .experimentButton_f1ceac .centerIcon_f1ceac {
   transition: color 0.15s ease-in-out;
+}
+.attachedButton_f1ceac {
+  border-radius: 8px 0 0 8px;
 }
 .fullRegionButton_f1ceac {
   border-radius: 12px;
@@ -7699,6 +7704,26 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .caretButtonContainer_f1ceac.disabled_f1ceac:hover {
   background-color: transparent !important;
 }
+.attachedCaretButtonContainer_f1ceac {
+  display: flex;
+  direction: row;
+  align-items: center;
+}
+.attachedCaretButtonContainer_f1ceac.popoutOpen_f1ceac .experimentDark_f1ceac,
+.attachedCaretButtonContainer_f1ceac:hover .experimentDark_f1ceac {
+  background-color: var(--bg-mod-faint);
+}
+.attachedCaretButtonContainer_f1ceac.disabled_f1ceac {
+  color: var(--interactive-muted) !important;
+  background-color: transparent !important;
+  cursor: not-allowed !important;
+}
+.attachedCaretButtonContainer_f1ceac.disabled_f1ceac {
+  pointer-events: none;
+}
+.attachedCaretButtonContainer_f1ceac.disabled_f1ceac:hover {
+  background-color: transparent !important;
+}
 .contextMenuNubExperiment_f1ceac {
   cursor: pointer;
   padding: 10px 2px;
@@ -7714,6 +7739,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .contextMenuNubExperiment_f1ceac.disabled_f1ceac {
   cursor: not-allowed;
+}
+.contextMenuNubExperiment_f1ceac.attachedCaret_f1ceac {
+  border-radius: 0 8px 8px 0;
+  padding: 10px 0;
+  margin-left: 1px;
 }
 .contextMenuCaret_f1ceac {
   width: 16px;
@@ -56056,4 +56086,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d8e68f9cb5e177e8.css.map*/
+/*# sourceMappingURL=12633.a584a1d723d3ca4e.css.map*/
