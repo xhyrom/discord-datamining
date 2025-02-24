@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7871188002](https://discord.com/jobs/7871188002)
 
-**Updated At:** Mon, 24 Feb 2025 02:45:17 GMT
+**Updated At:** Mon, 24 Feb 2025 21:44:34 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position must be based in San Francisco or Los Angeles&amp;nbsp;
@@ -54,7 +54,7 @@ Excellent presentation, negotiation, and communication skills.
 Ability to work in a fast-paced, entrepreneurial environment, adapting quickly to new challenges and opportunities.
 Willingness to travel for industry events and key client meetings.
 
-#LI-RemoteThe US base salary range for this full-time position is $320k - 360k OTE + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+#LI-RemoteThe US base salary range for this full-time position is $320k - $400k OTE + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Education:**
