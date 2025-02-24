@@ -28,6 +28,29 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Seekers of Skyveil <br /></strong
+  ><strong>Quest Name: Seekers of Skyveil Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Seekers of Skyveil </strong>to receive a
+  <strong>Grassland Strix Skin</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players who are over the age of 18 and on desktop where both
+  <strong>Discord</strong> and <strong>Seekers of Skyveil</strong> are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Seekers of Skyveil Quest</strong> can be accepted on Discord from
+  <strong>February 24, 2025</strong> until
+  <strong>March 2, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>April 1, 2025 (0:00 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p>
   <strong>Quest Game: Fortnite<br /></strong
   ><strong>Quest Name: Fortnite Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of the new season of
