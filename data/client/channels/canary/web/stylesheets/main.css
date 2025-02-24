@@ -7455,7 +7455,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .colorable_f1ceac.disconnect_f1ceac .centerIcon_f1ceac {
   color: var(--status-danger-text);
 }
-.colorable_f1ceac.disconnect_f1ceac.active_f1ceac,
 .colorable_f1ceac.disconnect_f1ceac:hover {
   background: var(--red-500);
 }
@@ -56086,4 +56085,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a584a1d723d3ca4e.css.map*/
+/*# sourceMappingURL=12633.5cabc7ba9e6c097f.css.map*/
