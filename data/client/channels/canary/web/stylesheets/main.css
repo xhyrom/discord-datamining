@@ -36641,43 +36641,6 @@ img.thumbnail__0f2e8 {
 .enable-forced-colors .iconBadge__9293f {
   background-color: Highlight;
 }
-.wrapper__889ee {
-  width: auto;
-}
-.saturation__889ee {
-  position: relative;
-  width: auto;
-  height: 150px;
-  cursor: crosshair;
-}
-.saturation__889ee > div,
-.saturation__889ee > div > div {
-  border-radius: 3px;
-}
-.saturation__889ee > div > div > div {
-  cursor: crosshair !important;
-}
-.hue__889ee {
-  height: 8px;
-  margin: 8px 0;
-  position: relative;
-  cursor: crosshair;
-}
-.hue__889ee > div > div {
-  border-radius: 3px;
-}
-.hue__889ee > div > div > div > div {
-  height: 16px !important;
-  width: 8px !important;
-  margin-top: -3px !important;
-  border-radius: 3px !important;
-}
-.hue__889ee > div > div > div > div {
-  cursor: ew-resize;
-}
-.enable-forced-colors .wrapper__889ee {
-  forced-color-adjust: none;
-}
 .container__459fb {
   display: flex;
   flex-wrap: wrap;
@@ -56085,4 +56048,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5cabc7ba9e6c097f.css.map*/
+/*# sourceMappingURL=12633.7a21a9892cf5e622.css.map*/
