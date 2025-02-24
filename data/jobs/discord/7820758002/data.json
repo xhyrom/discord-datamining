@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6083533002,
   "location": {
-    "name": "San Francisco, CA"
+    "name": "San Francisco, CA or Los Angeles, CA"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7820758002,
-  "updated_at": "2025-02-21T17:45:43-05:00",
+  "updated_at": "2025-02-23T21:43:16-05:00",
   "requisition_id": "R-100772",
   "title": "Account Executive - Mobile Gaming",
   "company_name": "Discord",

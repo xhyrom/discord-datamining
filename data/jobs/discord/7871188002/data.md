@@ -1,8 +1,8 @@
 # Job Listing
 
-## Manager, Sales - Crossplatform Gaming
+## Manager, Sales - Cross-platform Gaming
 
-**Location:** San Francisco, CA
+**Location:** San Francisco, CA or Los Angeles, CA
 
 **Id:** 7871188002 <br/>
 **Internal Job Id:** 6105325002 <br/>
@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7871188002](https://discord.com/jobs/7871188002)
 
-**Updated At:** Fri, 21 Feb 2025 22:52:42 GMT
+**Updated At:** Mon, 24 Feb 2025 02:45:17 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position must be based in San Francisco or Los Angeles&amp;nbsp;
-We are seeking a dynamic Sales Manager for the Crossplatform Gaming vertical (PC/Desktop &amp;amp; Console Advertisers) to join our growing sales team at Discord. This role is a people leadership position, responsible for leading a team of Account Executives and Account Managers while also driving strategic initiatives and revenue growth within Crossplatform (XP) Enterprise Gaming clients.&amp;nbsp;
+We are seeking a dynamic Sales Manager for the Cross-platform Gaming vertical (PC/Desktop &amp;amp; Console Advertisers) to join our growing sales team at Discord. This role is a people leadership position, responsible for leading a team of Account Executives and Account Managers while also driving strategic initiatives and revenue growth within Cross-platform (XP) Enterprise Gaming clients.&amp;nbsp;
 As a Sales Manager, you will play a critical role in coaching and developing your team, developing and executing sales strategies, managing senior-level client relationships, and working cross-functionally to advocate for XP gaming needs. You will also be active in the market, representing Discord at key industry events and working directly with clients to help them achieve their marketing goals using our ad solutions.
-This role is ideal for a highly motivated leader with a strong background in digital advertising, media sales, and account strategy who thrives in a fast-paced, zero-to-one environment.
+This role is ideal for a highly motivated leader with a strong background in digital advertising, media sales, and account strategy who thrives in a fast-paced, zero-to-one environment. This role will report into the Director of Sales, Gaming.
 What you'll be doing:
 Leadership &amp;amp; Team Management
 
@@ -43,7 +43,8 @@ Partner with Marketing to develop go-to-market strategies, case studies, and cli
 
 What you should have:
 
-8+ years of experience in digital advertising, media sales, or brand marketing, with at least 2 years of leadership experience (team lead, manager, or similar).
+8+ years of experience in digital advertising, media sales, or brand marketing.
+3+ years of leadership experience (team lead, manager, or similar).
 Strong track record of meeting or exceeding revenue targets and driving successful sales strategies.
 Experience managing and coaching sales teams, with a focus on performance, growth, and culture.
 Deep understanding of advertising and media buying dynamics, particularly within the XP Gaming industry.

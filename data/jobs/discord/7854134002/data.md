@@ -1,8 +1,8 @@
 # Job Listing
 
-## Account Manager, Mobile Gaming (West)
+## Account Manager, Mobile Gaming
 
-**Location:** San Francisco, CA
+**Location:** San Francisco, CA or Los Angeles, CA
 
 **Id:** 7854134002 <br/>
 **Internal Job Id:** 6098079002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7854134002](https://discord.com/jobs/7854134002)
 
-**Updated At:** Fri, 21 Feb 2025 22:50:03 GMT
+**Updated At:** Mon, 24 Feb 2025 02:33:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
