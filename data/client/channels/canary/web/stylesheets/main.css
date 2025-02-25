@@ -30075,11 +30075,17 @@ div.modalOverrideBody__34eac {
   margin-left: 8px;
   margin-right: 8px;
 }
+.colorBrand__675aa {
+  --custom-background-color: var(--brand-500);
+}
+.colorPrimary__675aa {
+  --custom-background-color: var(--background-floating);
+}
 .upsellTooltipWrapper__675aa {
   box-sizing: border-box;
   max-width: 280px;
   padding: 16px;
-  background-color: var(--brand-500);
+  background-color: var(--custom-background-color);
   border-radius: 8px;
   box-shadow: var(--elevation-medium);
 }
@@ -30092,56 +30098,55 @@ div.modalOverrideBody__34eac {
 .upsellTooltipWrapper__675aa.caretTopCenter__675aa:after {
   left: 50%;
   bottom: 100%;
-  border-bottom-color: var(--brand-500);
+  border-bottom-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretTopRight__675aa:after {
   left: calc(100% - 16px);
   bottom: 100%;
-  border-bottom-color: var(--brand-500);
+  border-bottom-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretTopLeft__675aa:after {
   left: 16px;
   bottom: 100%;
-  border-bottom-color: var(--brand-500);
+  border-bottom-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretBottomCenter__675aa:after {
   left: 50%;
   top: 100%;
-  border-top-color: var(--brand-500);
+  border-top-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretBottomLeft__675aa:after {
   left: 16px;
   top: 100%;
-  border-top-color: var(--brand-500);
+  border-top-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretBottomRight__675aa:after {
   right: 16px;
   top: 100%;
-  border-top-color: var(--brand-500);
+  border-top-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretLeftCenter__675aa:after {
   right: 100%;
   top: calc(50% - 8px);
-  border-right-color: var(--brand-500);
+  border-right-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretLeftTop__675aa:after {
   right: 100%;
   top: 8px;
-  border-right-color: var(--brand-500);
+  border-right-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretRightCenter__675aa:after {
   right: -16px;
   top: calc(50% - 8px);
-  border-left-color: var(--brand-500);
+  border-left-color: var(--custom-background-color);
 }
 .upsellTooltipWrapper__675aa.caretRightTop__675aa:after {
   right: -16px;
   top: 8px;
-  border-left-color: var(--brand-500);
+  border-left-color: var(--custom-background-color);
 }
 .upsellTooltipHeader__675aa,
 .upsellTooltipText__675aa {
-  color: var(--white-500);
   text-align: center;
 }
 .upsellTooltipHeader__675aa {
@@ -56081,4 +56086,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ce1a18f648a3a83c.css.map*/
+/*# sourceMappingURL=12633.e3feeac25b3ef62a.css.map*/
