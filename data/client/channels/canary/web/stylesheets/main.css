@@ -12032,9 +12032,11 @@ div.cardContainer__88e24 {
 }
 .childContainer__91a9d {
   border-radius: inherit;
+  padding: 0 8px;
 }
 .childContainer__91a9d.nameplated__91a9d {
   position: relative;
+  padding-right: 36px;
 }
 .muted__91a9d .avatar__91a9d {
   opacity: 0.3;
@@ -12056,12 +12058,13 @@ div.cardContainer__88e24 {
   align-items: center;
   border-radius: inherit;
   height: 42px;
-  padding: 0 8px;
   z-index: 1;
   position: relative;
-}
-.plated__91a9d {
-  padding-right: 36px;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 0 1 auto;
+  max-width: 100%;
+  min-width: 0;
 }
 .visual-refresh .container__91a9d {
   border-radius: var(--radius-sm);
@@ -12070,17 +12073,17 @@ div.cardContainer__88e24 {
   height: auto;
   padding: 5px 8px;
 }
-.clickable__91a9d:hover .layout__91a9d {
+.clickable__91a9d:hover .childContainer__91a9d {
   background-color: var(--background-modifier-hover);
   cursor: pointer;
 }
-.clickable__91a9d:active .layout__91a9d {
+.clickable__91a9d:active .childContainer__91a9d {
   background-color: var(--background-modifier-active);
 }
-.selected__91a9d .layout__91a9d {
+.selected__91a9d .childContainer__91a9d {
   background-color: var(--background-modifier-selected);
 }
-.wrapperPlated__91a9d .layout__91a9d {
+.wrapperPlated__91a9d .childContainer__91a9d {
   background-color: transparent;
   background-color: initial;
 }
@@ -56110,4 +56113,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.076f9152584f1d96.css.map*/
+/*# sourceMappingURL=12633.2af55699bcd0c0ec.css.map*/
