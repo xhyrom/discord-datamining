@@ -4695,6 +4695,15 @@
                 .concat(t, "/sessions/")
                 .concat(e, "/activities/")
                 .concat(a, "/", 1),
+            JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_PRESENCE: (t, e, a) =>
+              "/users/"
+                .concat(t, "/sessions/")
+                .concat(e, "/embedded-activities/")
+                .concat(a, "/", 1),
+            JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE: (t, e) =>
+              "/activity-instances/"
+                .concat(t, "/embedded-activities/")
+                .concat(e, "/join"),
             USER_ACTIVITY_STATISTICS:
               "/users/@me/activities/statistics/applications",
             USER_ACTIVITY_SUBSCRIBE: "/users/@me/activities/subscribe",
@@ -7330,6 +7339,8 @@
           (r.SYSTEM_CAMERA_SETTINGS_OPENED = "system_camera_settings_opened"),
           (r.VOICE_AND_VIDEO_SETTINGS_UPDATED =
             "voice_and_video_settings_updated"),
+          (r.CALL_SETTINGS_MENU_ITEM_INTERACTED =
+            "call_settings_menu_item_interacted"),
           (r.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed"),
           (r.CLIP_SAVED = "clip_saved"),
           (r.CLIP_SAVE_FAILURE = "clip_save_failure"),
@@ -8534,7 +8545,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-24-10958c4ee91c03b48ecb271e913b70fe03982daa-discord_web",
+              "2025-02-25-38a98e9dfdf23ab0d25b975cb6939e12c4c97411-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8600,8 +8611,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "371033"),
-            _.YA("builtAt", String("1740416362095"));
+            _.YA("buildNumber", "371572"),
+            _.YA("builtAt", String("1740472648234"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45834,4 +45845,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.34ac747f06a86755.js.map
+//# sourceMappingURL=sentry.cbfcc162383e06d1.js.map
