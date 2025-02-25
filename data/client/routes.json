@@ -3384,10 +3384,7 @@
   },
   "ACTIVITY_JOIN_INSTANCE": {
     "url": "/activities/applications/:param/activity-instances/:param/join",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "ACTIVITY_TEST_MODE": {
     "url": "/activities/:param/test-mode",
