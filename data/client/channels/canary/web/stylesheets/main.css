@@ -29086,6 +29086,21 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .tooltipWordmark_f240e3 {
   color: var(--text-muted);
 }
+.tooltipWordmark_f240e3.orbBadge_f240e3 {
+  margin-bottom: 4px;
+}
+.orbBadgeImage_f240e3 {
+  width: 66px;
+  margin-bottom: 12px;
+}
+.orbLink_f240e3 {
+  margin-top: 10px;
+  color: var(--text-link);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 .container__8061a {
   display: flex;
   flex-wrap: wrap;
@@ -29131,6 +29146,10 @@ html:not(.visual-refresh) .root_e5f3a9 {
   height: 100%;
   background-color: var(--background-modifier-accent);
   border-radius: 50%;
+}
+.orbBadge__8061a {
+  height: 14px;
+  width: 14px;
 }
 .tieredTenureBadgeBronzeGlow__8061a {
   box-shadow: 0 0 18px 0 #f78d41;
@@ -34247,7 +34266,8 @@ img.thumbnail__0f2e8 {
 }
 .colorDefault_c1e9c4.focused_c1e9c4 .caret_c1e9c4,
 .colorDefault_c1e9c4.focused_c1e9c4 .checkbox_c1e9c4,
-.colorDefault_c1e9c4.focused_c1e9c4 .radioSelection_c1e9c4 {
+.colorDefault_c1e9c4.focused_c1e9c4 .radioSelection_c1e9c4,
+.colorDefault_c1e9c4.focused_c1e9c4 .subtext_c1e9c4 {
   color: var(--white);
 }
 .colorDefault_c1e9c4.focused_c1e9c4 .check_c1e9c4 {
@@ -56061,4 +56081,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ebe6c9dde3f16713.css.map*/
+/*# sourceMappingURL=12633.ce1a18f648a3a83c.css.map*/
