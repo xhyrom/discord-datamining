@@ -1,13 +1,12 @@
 <p>
   Starting from <strong>October 7, 2024 (10:00AM PT)</strong> to
   <strong>May 31, 2025 (11:59PM PT)</strong>, YouTube Premium subscribers within
-  the United States can claim 3 months of free Discord Nitro. 
+  the United States can claim Discord Nitro through YouTube's Member Hub.
 </p>
 <p>
-  YouTube Premium subscribers within the United States, Canada, United Kingdom,
-  France, Germany, Japan, and South Korea can claim 3 months of free Discord
-  Nitro from <strong>October 7, 2024 (10:00AM PT)</strong> to
-  <strong>May 31, 2025 (11:59PM PT)</strong>. Learn below about how you can
+  During this same period, YouTube Premium subscribers in the United States,
+  Canada, United Kingdom, France, Germany, Japan, and South Korea can claim
+  their 3-month Discord Nitro offer via email. Learn below about how you can
   claim
   <a
     href="https://support.discord.com/hc/articles/115000435108-What-are-Nitro-Nitro-Basic"
@@ -275,21 +274,22 @@
   >
 </p>
 <p>
-  <span style="color: #222222">1. Visit </span
+  <span style="color: #222222" data-darkreader-inline-color="">1. Visit </span
   ><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
     >YouTube</a
-  ><span style="color: #222222">
+  ><span style="color: #222222" data-darkreader-inline-color="">
     and log in to your YouTube Premium account.</span
   >
 </p>
 <p>
-  <span style="color: #222222">2. Press on your profile </span>picture in the
-  top right, and select “<strong>Your Premium Benefits</strong>” from the
-  dropdown menu. This is where you can find all your YouTube Premium membership
-  benefits including the Discord Nitro benefit.
+  <span style="color: #222222" data-darkreader-inline-color=""
+    >2. Press on your profile </span
+  >picture in the top right, and select “<strong>Your Premium Benefits</strong>”
+  from the dropdown menu. This is where you can find all your YouTube Premium
+  membership benefits including the Discord Nitro benefit.
 </p>
 <p>
-  <span style="color: #222222"
+  <span style="color: #222222" data-darkreader-inline-color=""
     >3. Select the Discord Nitro benefit and from here the promo link and
     details will appear in a pop-up. Press the promo link and you will be
     automatically redirected to claim your free Nitro. You can also copy and
@@ -297,9 +297,12 @@
   >
 </p>
 <p>
-  <span style="color: #222222">4. Select “</span
-  ><strong><span style="color: #222222">Redeem Now</span></strong
-  ><span style="color: #222222"
+  <span style="color: #222222" data-darkreader-inline-color="">4. Select “</span
+  ><strong
+    ><span style="color: #222222" data-darkreader-inline-color=""
+      >Redeem Now</span
+    ></strong
+  ><span style="color: #222222" data-darkreader-inline-color=""
     >” to be redirected to redeem your 3-month free trial of Discord
     Nitro.</span
   >
@@ -701,7 +704,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >https://support.google.com/youtube/answer/13365794</a
-  >. If you still can’t find it,contact YouTube's support team through their X
+  >. If you still can’t find it, contact YouTube's support team through their X
   page at<a
     href="https://twitter.com/TeamYouTube"
     target="_blank"
@@ -726,7 +729,9 @@
 <p>
   <strong>A:</strong> In order to receive this Nitro offer from YouTube in your
   YouTube Premium Member Hub, you must be a current YouTube Premium subscriber
-  in the United States.
+  in the United States. During this same period, YouTube Premium subscribers in
+  the United States, Canada, United Kingdom, France, Germany, Japan, and South
+  Korea can claim their 3-month Discord Nitro offer via email.
 </p>
 <p>
   If you aren’t sure how to find offers in your YouTube Premium account, follow
@@ -736,7 +741,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >https://support.google.com/youtube/answer/13365794</a
-  >. If you still can’t find it,contact YouTube's support team through their X
+  >. If you still can’t find it, contact YouTube's support team through their X
   page at https://x.com/TeamYouTube or at the bottom of this help article:
   <a
     href="https://support.google.com/youtube/answer/13365794"
