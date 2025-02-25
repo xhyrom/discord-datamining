@@ -12153,6 +12153,79 @@ div.cardContainer__88e24 {
   margin-top: 2px;
   margin-right: 10%;
 }
+.balanceCounterText__98f64 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: var(--white);
+  text-align: right;
+}
+.full-motion .balanceCounterText__98f64 {
+  transition:
+    all 0.4s ease-out,
+    opacity 0.4s ease-in;
+}
+.orbIconContainer__85200 {
+  position: relative;
+  height: 18px;
+}
+.orbIconSVG__85200 {
+  height: 18px;
+}
+.full-motion .loading__85200 {
+  animation-name: spin__85200;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin__85200 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.clickable_a3e8db {
+  height: 30px;
+}
+.container_a3e8db {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0 16px;
+  justify-content: flex-end;
+  min-height: 30px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--primary-700);
+}
+.containerLoading_a3e8db {
+  gap: 0;
+}
+.counterLoading_a3e8db {
+  visibility: hidden;
+}
+.container_a3e8db.default_a3e8db,
+.container_a3e8db.highlighted_a3e8db {
+  background: var(--primary-700);
+}
+.container_a3e8db.highlighted_a3e8db {
+  box-shadow: 0 0 24.6px 0 var(--brand-500);
+}
+.container_a3e8db.selected_a3e8db {
+  background: var(--brand-500);
+}
+.notificationBadge_a3e8db {
+  position: absolute;
+  right: -4.5px;
+}
+.wrapper__87c70 {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: all;
+}
 @value transitionDuration 200ms;
 div.modalRoot {
   position: relative;
@@ -12322,27 +12395,6 @@ div.modalHeader_c28af8 {
   animation-name: Shine__28141;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-}
-.orbIconContainer__85200 {
-  position: relative;
-  height: 18px;
-}
-.orbIconSVG__85200 {
-  height: 18px;
-}
-.full-motion .loading__85200 {
-  animation-name: spin__85200;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes spin__85200 {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
 }
 .orbClaimCopy__8da0b {
   display: flex;
@@ -56113,4 +56165,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2af55699bcd0c0ec.css.map*/
+/*# sourceMappingURL=12633.01550c31701ea4eb.css.map*/
