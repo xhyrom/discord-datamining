@@ -34,7 +34,6 @@ Experience working internally with crossfunctional partners to influence product
 Willingness to travel for regional in-person client meetings
 
 The total annual target compensation range for this full-time position is $255k - $300k OTE + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits.&amp;nbsp; &amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
-Check out our&amp;nbsp;inclusion, diversity and purpose efforts, company principles, or learn more about the Life @ Discord experience!
 
 **Education:**
 education_optional
