@@ -6607,10 +6607,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .markup__75297 h6:first-child {
   margin-top: 4px;
 }
+.visual-refresh .markup__75297 .codeContainer__75297 {
+  max-width: 50vw;
+}
 .visual-refresh .markup__75297 code {
   background: var(--background-code);
   border: 1px solid var(--border-normal);
-  max-width: 50vw;
 }
 @media (-webkit-max-device-pixel-ratio: 1) {
   .theme-light .markup__75297 {
@@ -56165,4 +56167,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.01550c31701ea4eb.css.map*/
+/*# sourceMappingURL=12633.651af367d4db1067.css.map*/
