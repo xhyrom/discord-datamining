@@ -10,13 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7628793002](https://discord.com/jobs/7628793002)
 
-**Updated At:** Fri, 21 Feb 2025 17:28:08 GMT
+**Updated At:** Wed, 26 Feb 2025 18:53:57 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is your place to talk. Whether you're part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, millions of people use Discord every day to create connections, hang out, and talk.
 As a Staff Product Designer at Discord, you’ll play a key leadership role in shaping the future of social gaming experiences. You’ll help define what design quality means within Discord, and push the boundaries of how players connect across platforms.
 The Social Layer (Slayer) team is defining how games integrate with Discord through a new SDK, enabling developers—from AAA studios to indies—to bring Discord’s social features directly into their games, and bring content from their games onto Discord. As part of this team, you’ll collaborate with UXR, Product Managers, Engineers, and Data Scientists, while also partnering with industry leaders like Xbox and PlayStation. Using your expertise in UX, UI, and prototyping, you’ll craft intuitive, visually compelling integrations that create seamless social experiences for players.
 If you're interested in joining a passionate team of designers that are creating fun experiences for millions of people across the world, Discord is the place to be.
+NOTE: This role is located in our San Francisco office.&amp;nbsp;
 What You'll Be Doing
 
 You will craft the standard for visual caliber and quality on Slayer (your team); owning the execution and production quality, and proactively identify opportunities to uplevel the quality of your work in production as you playtest.
@@ -40,7 +41,7 @@ A high level of design craft, and a commitment to maintaining a high bar for des
 A portfolio of work on which you were the primary designer leading large-scale, high impact projects across devices, and experience in leading designers or teams at an initiative level.
 Experience working with, and contributing to a design system.
 
-#LI-RemoteThe US base salary range for this full-time position is $205,000 to $225,500+ equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+#LI-SFThe US base salary range for this full-time position is $205,000 to $225,500+ equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 
 **Education:**
 education_optional
@@ -52,6 +53,5 @@ education_optional
 - Product Design
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
