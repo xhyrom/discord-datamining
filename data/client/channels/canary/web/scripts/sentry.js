@@ -6490,6 +6490,8 @@
           (r.COPY_INSTANT_INVITE = "copy_instant_invite"),
           (r.PERMANENT_INVITE_COMMUNITY_UPSELL_CLICKED =
             "guild_permanent_links_community_upsell_clicked"),
+          (r.INVITE_SERVER_CLICKED = "invite_server_clicked"),
+          (r.INVITE_EMBED_ACTIONED = "invite_embed_actioned"),
           (r.NATIVE_SHARE_SHEET_APP_CLICKED = "native_share_sheet_app_clicked"),
           (r.CHANNEL_LINK_PREVIEW_JOINED = "channel_link_preview_joined"),
           (r.CLIENT_HEARTBEAT = "client_heartbeat"),
@@ -7815,6 +7817,7 @@
             "guild_member_application_viewed"),
           (r.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE =
             "guild_member_application_interview_message"),
+          (r.GUILD_PROFILE_VIEWED = "guild_profile_viewed"),
           (r.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"),
           (r.GPLAY_PURCHASE_FAILED = "gplay_purchase_failed"),
           (r.LIVE_ACTIVITY_SETTINGS_UPDATED = "live_activity_settings_updated"),
@@ -8548,7 +8551,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1e38d13e02738fb8399ba666bac0bbcd4007e171",
+            release: "discord_web-1dee03f9341b280f9af482f860de2b8908ef6283",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8614,8 +8617,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "372406"),
-            _.YA("builtAt", String("1740603241543"));
+            _.YA("buildNumber", "372421"),
+            _.YA("builtAt", String("1740604564054"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45849,4 +45852,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.4b166cec97f74344.js.map
+//# sourceMappingURL=sentry.1470dd8ddb6663fc.js.map
