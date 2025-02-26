@@ -55019,6 +55019,8 @@ html.disable-forced-colors * {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display-marketing: "ABC Ginto Discord", "gg sans", serif, "Noto Sans",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
+    "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 :root,
 :root:lang(bg),
@@ -55045,6 +55047,8 @@ html.disable-forced-colors * {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display-marketing: "ABC Ginto Discord", "gg sans", serif, "Noto Sans",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
+    "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 :root:lang(ko) {
   --font-primary: "gg sans", "Apple SD Gothic Neo", NanumBarunGothic,
@@ -55067,6 +55071,10 @@ html.disable-forced-colors * {
     NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움,
     "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display-marketing: "ABC Ginto Discord", "gg sans", serif,
+    "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim,
+    굴림, Dotum, 돋움, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
     "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim,
     굴림, Dotum, 돋움, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -55095,6 +55103,10 @@ html.disable-forced-colors * {
     "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
     メイリオ, Meiryo, Osaka, "MS PGothic", "Noto Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
+    "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    メイリオ, Meiryo, Osaka, "MS PGothic", "Noto Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 :root:lang(zh-CN) {
   --font-primary: "gg sans", "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei",
@@ -55119,6 +55131,9 @@ html.disable-forced-colors * {
   --font-display-marketing: "ABC Ginto Discord", "gg sans", serif,
     "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei",
     宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
+    "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei",
+    宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 :root:lang(zh-TW) {
   --font-primary: "gg sans", "Microsoft JhengHei", 微軟正黑體,
@@ -55141,6 +55156,10 @@ html.disable-forced-colors * {
     微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体,
     SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display-marketing: "ABC Ginto Discord", "gg sans", serif,
+    "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei",
+    微軟雅黑, 宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-display-marketing-header: "ABC Ginto Nord Discord", "gg sans", serif,
     "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei",
     微軟雅黑, 宋体, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -56126,4 +56145,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.80f06bb4dc0bff4a.css.map*/
+/*# sourceMappingURL=12633.927b91609af56cc8.css.map*/
