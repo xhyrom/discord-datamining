@@ -6790,6 +6790,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   --__spoiler-warning-background-color: hsl(var(--black-500-hsl) / 0.6);
   --__spoiler-warning-background-color--hover: hsl(var(--black-500-hsl) / 0.9);
   --__spoiler-container-box-shadow-color: hsl(var(--black-500-hsl) / 0.1);
+  --__obscured-background-blur-radius: 40px;
+  --__obscured-background-brightness: 0.55;
 }
 .theme-dark,
 .theme-dark.custom-theme-background {
@@ -6804,6 +6806,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   --__spoiler-warning-background-color: hsl(var(--black-500-hsl) / 0.6);
   --__spoiler-warning-background-color--hover: hsl(var(--black-500-hsl) / 0.9);
   --__spoiler-container-box-shadow-color: hsl(var(--black-500-hsl) / 0.1);
+  --__obscured-background-blur-radius: 40px;
+  --__obscured-background-brightness: 0.55;
 }
 .theme-dark.custom-theme-background {
   --__spoiler-background-color--hidden: var(--primary-630);
@@ -6859,6 +6863,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   --__current--spoiler-warning-background-color: var(
     --__spoiler-warning-background-color--hover
   );
+}
+.opaque__54ab5 {
+  --__obscured-background-brightness: 0;
+  --__obscured-background-blur-radius: 500px;
 }
 .spoilerContainer__54ab5 {
   position: relative;
@@ -8561,7 +8569,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   overflow: hidden;
 }
 .obscureWrapper_b2eddf.obscure_b2eddf {
-  filter: blur(40px) brightness(0.55);
+  filter: blur(var(--__obscured-background-blur-radius))
+    brightness(var(--__obscured-background-brightness));
   pointer-events: none;
 }
 .fadeInWrapper_b2eddf {
@@ -23343,8 +23352,10 @@ body .headerAnimation_b54a5b {
 }
 .body_c6f1a4 {
   height: 100%;
-  border-radius: 0;
   background-color: var(--modal-background);
+}
+.body_c6f1a4.noRoundedCorners_c6f1a4 {
+  border-radius: 0;
 }
 .body_c6f1a4.reviewStep_c6f1a4 {
   padding: 0 16px;
@@ -56145,4 +56156,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.927b91609af56cc8.css.map*/
+/*# sourceMappingURL=12633.5c349bca31babf90.css.map*/
