@@ -8435,6 +8435,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   justify-self: center;
   display: flex;
   justify-content: center;
+  translate: 0 -4px;
 }
 .gallery_d75751 {
   flex-shrink: 1;
@@ -8551,16 +8552,16 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .nav_b2eddf {
   grid-row: 1 / span 3;
   align-self: center;
+  justify-self: center;
+  place-self: center;
   position: relative;
   z-index: 1;
 }
 .navPrev_b2eddf {
   grid-column: 1;
-  justify-self: end;
 }
 .navNext_b2eddf {
   grid-column: 5;
-  justify-self: start;
 }
 .obscureWrapper_b2eddf {
   display: flex;
@@ -56272,4 +56273,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b1d34126c959862b.css.map*/
+/*# sourceMappingURL=12633.db660587b8eb9b90.css.map*/
