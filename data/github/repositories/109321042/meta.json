@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/buildkite-agent",
   "created_at": "2017-11-02T21:32:11Z",
   "homepage": "https://buildkite.com/",
-  "size": 27488,
+  "size": 30387,
   "language": "Go",
   "has_issues": false,
   "has_projects": true,
