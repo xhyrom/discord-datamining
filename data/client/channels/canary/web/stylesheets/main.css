@@ -16041,33 +16041,107 @@ span.clanTag__5d473 {
   text-align: center;
 }
 .heading__3add8 {
-  margin-bottom: 32px;
+  margin-bottom: var(--spacing-32);
 }
 .topPerksCards__3add8 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: var(--spacing-16);
 }
 .topPerksCard__3add8 {
   background-color: var(--background-secondary-alt);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   box-sizing: border-box;
   flex: 1 1 auto;
   min-width: 340px;
   max-width: 362px;
-  padding: 32px 24px;
+  padding: var(--spacing-32) var(--spacing-24);
   width: 25%;
   position: relative;
+  overflow: hidden;
+}
+.topPerksCardImageWrapper__3add8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.animatedTopPerksCard__3add8 {
+  border-radius: var(--radius-md);
+  background: var(--background-secondary-alt);
+  max-width: 480px;
+  height: 315px;
+}
+.full-motion .animatedTopPerksCard__3add8 {
+  transition: border 0.3s ease;
+}
+.animatedTopPerksCard__3add8:hover {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(
+        var(--background-secondary-alt),
+        var(--background-secondary-alt)
+      )
+      padding-box,
+    linear-gradient(145deg, #3e70dd, #b377f3) border-box;
+}
+.imageGradientOverlay__3add8 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    transparent 0,
+    var(--background-secondary-alt) 70%,
+    var(--background-secondary-alt)
+  );
+}
+.contentContainer__3add8 {
+  position: relative;
+  z-index: 1;
+  margin-top: 148px;
+  overflow: hidden;
+}
+.buttonsContainer__3add8 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: var(--spacing-24);
+  overflow: hidden;
+}
+.button__3add8 {
+  flex: 1 1 0;
 }
 .topPerksCardImage__3add8 {
-  filter: saturate(1);
-  filter: saturate(var(--saturation-factor, 1));
-  border-radius: 4px;
-  display: block;
+  position: absolute;
   height: 128px;
-  margin: 0 auto 20px;
-  width: auto;
+}
+.borderGlowOverlay__3add8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--radius-md);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4);
+}
+.full-motion .borderGlowOverlay__3add8 {
+  transition: opacity 0.3s ease;
+}
+.topPerksCard__3add8:hover .borderGlowOverlay__3add8 {
+  opacity: 1;
 }
 .topPerksCardHeading__3add8 {
   margin-bottom: 4px;
@@ -16079,8 +16153,8 @@ span.clanTag__5d473 {
   position: absolute;
   width: -moz-fit-content;
   width: fit-content;
-  top: var(--spacing-32);
-  right: var(--spacing-24);
+  top: var(--spacing-16);
+  right: var(--spacing-16);
 }
 .topPerksCardLabelContainer__3add8 {
   border: 1px solid var(--border-faint);
@@ -56052,4 +56126,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b1b4f97f78c5aff4.css.map*/
+/*# sourceMappingURL=12633.80f06bb4dc0bff4a.css.map*/
