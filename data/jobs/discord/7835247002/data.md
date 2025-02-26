@@ -47,7 +47,7 @@ Enjoy competitive compensation, comprehensive benefits, and a flexible work envi
 
 How to ApplyIf you’re passionate about driving cost efficiencies and delivering sustainable growth at scale, we’d love to hear from you. Apply now and help shape the future of Discord!
 The US base salary range for this full-time position is $168,000 to $185,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
-Please see our Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.
+Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
 education_optional
