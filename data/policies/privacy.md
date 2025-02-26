@@ -492,7 +492,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://support.discord.com/hc/en-us"
+                    href="https://support.discord.com/hc/"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -503,7 +503,7 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Resources</div>
                           <a
-                            href="https://support.discord.com/hc/en-us"
+                            href="https://support.discord.com/hc"
                             class="dd_nav-link"
                             >Help Center</a
                           ><a
@@ -989,7 +989,7 @@
                                 Documentation
                               </div>
                               <a
-                                href="https://discord.com/safety-transparency-reports/2023-q4"
+                                href="https://discord.com/safety-transparency-reports/2024-h1"
                                 class="dd_nav-link is-new w-inline-block"
                                 ><div>Transparency Reports</div></a
                               >
@@ -1121,7 +1121,7 @@
                         <div class="nav_dd_content_layout">
                           <div class="nav_dd_link-group">
                             <a
-                              href="https://support.discord.com/hc/en-us"
+                              href="https://support.discord.com/hc"
                               class="nav_dd_link-group_title is-new"
                               >Support</a
                             >
@@ -1130,7 +1130,7 @@
                                 Resources
                               </div>
                               <a
-                                href="https://support.discord.com/hc/en-us"
+                                href="https://support.discord.com/hc"
                                 class="dd_nav-link is-new"
                                 >Help Center</a
                               ><a
