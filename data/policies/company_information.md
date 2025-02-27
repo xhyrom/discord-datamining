@@ -865,7 +865,9 @@
           <div class="nav_burger_list">
             <div class="nav_burger_content">
               <div class="nav_burger_top">
-                <a href="#" class="nav_brand is-burger w-nav-brand"
+                <a
+                  href="https://discord.com/"
+                  class="nav_brand is-burger w-nav-brand"
                   ><img
                     loading="lazy"
                     src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
