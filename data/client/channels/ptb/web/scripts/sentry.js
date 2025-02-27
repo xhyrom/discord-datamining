@@ -6490,6 +6490,8 @@
           (r.COPY_INSTANT_INVITE = "copy_instant_invite"),
           (r.PERMANENT_INVITE_COMMUNITY_UPSELL_CLICKED =
             "guild_permanent_links_community_upsell_clicked"),
+          (r.INVITE_SERVER_CLICKED = "invite_server_clicked"),
+          (r.INVITE_EMBED_ACTIONED = "invite_embed_actioned"),
           (r.NATIVE_SHARE_SHEET_APP_CLICKED = "native_share_sheet_app_clicked"),
           (r.CHANNEL_LINK_PREVIEW_JOINED = "channel_link_preview_joined"),
           (r.CLIENT_HEARTBEAT = "client_heartbeat"),
@@ -7815,6 +7817,7 @@
             "guild_member_application_viewed"),
           (r.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE =
             "guild_member_application_interview_message"),
+          (r.GUILD_PROFILE_VIEWED = "guild_profile_viewed"),
           (r.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"),
           (r.GPLAY_PURCHASE_FAILED = "gplay_purchase_failed"),
           (r.LIVE_ACTIVITY_SETTINGS_UPDATED = "live_activity_settings_updated"),
@@ -8549,7 +8552,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-26-1f27abde1138872024718c27acd4014ffacd6e83-discord_web",
+              "2025-02-27-a8f80531fdd39b305bd0a3eefae59098260487cb-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8615,8 +8618,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "372573"),
-            _.YA("builtAt", String("1740615939876"));
+            _.YA("buildNumber", "372693"),
+            _.YA("builtAt", String("1740645335402"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -12300,7 +12303,8 @@
               TEAL_860: "#021619",
               TEAL_900: "#011215",
               TRANSPARENT: "#00000000",
-              TWITCH: "#593695",
+              TWITCH: "#9147ff",
+              TWITCH_SECONDARY: "#772ce8",
               TWITTER: "#1da1f2",
               WHITE: "#ffffff",
               WHITE_100: "#ffffff",
@@ -13377,6 +13381,7 @@
           (r.MOD_ACADEMY_EXAM = "/moderation/exam"),
           (r.MOD_ACADEMY_ARTICLE = "/moderation/:article"),
           (r.BLOG = "/blog"),
+          (r.BUILD = "/build"),
           (r.APP_DIRECTORY = "/application-directory"),
           (r.REFRESH_INDEX = "/new"),
           (r.REFRESH_INDEX_WORD = "/new/index"),
@@ -15027,6 +15032,7 @@
             (r.TEAL_NEW_99 = "teal-new-99"),
             (r.TRANSPARENT = "transparent"),
             (r.TWITCH = "twitch"),
+            (r.TWITCH_SECONDARY = "twitch-secondary"),
             (r.TWITTER = "twitter"),
             (r.WHITE = "white"),
             (r.WHITE_100 = "white-100"),
@@ -16556,7 +16562,8 @@
           TEAL_NEW_98: "#030809",
           TEAL_NEW_99: "#020404",
           TRANSPARENT: "transparent",
-          TWITCH: "#593695",
+          TWITCH: "#9147ff",
+          TWITCH_SECONDARY: "#772ce8",
           TWITTER: "#1da1f2",
           WHITE: "#ffffff",
           WHITE_100: "#ffffff",
@@ -21327,7 +21334,9 @@
           TEAL_NEW_99:
             "hsl(180, calc(var(--saturation-factor, 1) * 33.3%), 1.2%)",
           TRANSPARENT: "transparent",
-          TWITCH: "hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)",
+          TWITCH: "hsl(264, calc(var(--saturation-factor, 1) * 100.0%), 63.9%)",
+          TWITCH_SECONDARY:
+            "hsl(264, calc(var(--saturation-factor, 1) * 80.3%), 54.1%)",
           TWITTER: "hsl(203, calc(var(--saturation-factor, 1) * 89.1%), 53.1%)",
           WHITE: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           WHITE_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
@@ -45849,4 +45858,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ffd6a201f6404839.js.map
+//# sourceMappingURL=sentry.ed05b66b68c34a27.js.map
