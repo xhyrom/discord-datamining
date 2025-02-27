@@ -5,7 +5,10 @@
   which may include in-game items or currency, or Discord
   <a
     href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >avatar decorations</span
     ></a
   >. Read on to learn more!
@@ -119,7 +122,7 @@
   />
 </p>
 <h4 id="h_01JFAWCFMDPV0EXAS4T5KFP263" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >“Start Video Quest” Button in Quest Bar for Video Quests</span
   >
 </h4>
@@ -143,7 +146,7 @@
   />
 </p>
 <h4 id="h_01JFAWDGBTG4XX266EGTXN8HTA" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >How to Navigate to Discover Page on Desktop</span
   >
 </h4>
@@ -166,7 +169,9 @@
   />
 </p>
 <h4 id="h_01JFAWE1SEFTW1F5E8P4CQ25QS" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Quest Home in Discover List</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Quest Home in Discover List</span
+  >
 </h4>
 <p>
   In <strong>Quests</strong>, you can browse recent and current Discord Quests.
@@ -182,7 +187,9 @@
   />
 </p>
 <h4 id="h_01JFAWRK81VEPVQ9PPH4FHP6YA" class="wysiwyg-text-align-center">
-  <span style="color: #666666">“Start Video Quest” Button in Quest Home</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >“Start Video Quest” Button in Quest Home</span
+  >
 </h4>
 <h2 id="h_01JFAWS0WY563CGM42C0BDVW9Z">
   <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
@@ -210,12 +217,12 @@
   />
 </p>
 <h4 id="h_01JCM01W664AEFCB6FC7E8SWWF" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Mobile: Quest Bar (Left) and Accept Quest Button (Right)</span
   >
 </h4>
 <div class="tip-box">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >If you dismiss the mobile <strong>Quest bar</strong>, you can still find
     the Quest in <strong>Quest Home</strong> (<strong
       >Settings &gt; Quest</strong
@@ -350,7 +357,7 @@
   />
 </p>
 <h4 id="h_01JFAWZRNPFNKWEYE0JV8N96PE" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of Claiming a Quest Reward on Desktop</span
   >
 </h4>
@@ -409,8 +416,8 @@
   />
 </p>
 <h4 id="h_01JCM1315BNHAJNH019W5MH50C" class="wysiwyg-text-align-center">
-  <span style="color: #666666">“</span
-  ><span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color="">“</span
+  ><span style="color: #666666" data-darkreader-inline-color=""
     >Hide This” Option in Quest In-App Promotion</span
   >
 </h4>
@@ -473,7 +480,7 @@
   /></span>
 </p>
 <h4 id="h_01JCM14CA6DRZH2QHVYXM2GNB6" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >In-game Rewards (aka Quests) Option in Privacy and Safety Settings</span
   >
 </h4>
@@ -584,6 +591,12 @@
     rel="noopener noreferrer"
     >Profile Badges 101 Help Center article</a
   >. 
+</p>
+<p><strong>Q: Why is my Quest progress bar not updating? </strong></p>
+<p>
+  A: To ensure your progress bar accurately tracks your Quest, please restart
+  the Discord app and check for any available updates. Once the app is restarted
+  and up to date, your Quest progress bar should update as expected.
 </p>
 <div class="book-box">
   For more information on additional Quest terms, visit
