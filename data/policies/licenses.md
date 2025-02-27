@@ -63,8 +63,8 @@
                 <div class="links-DGfZfm">
                   <a
                     class="link-1naFFL link-2eyudH"
-                    data-link-id="download"
                     href="/download"
+                    data-link-id="download"
                     >Download</a
                   ><a
                     class="link-1naFFL link-2eyudH"
