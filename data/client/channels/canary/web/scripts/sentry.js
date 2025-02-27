@@ -8551,7 +8551,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bda05edf091337533fb105b2f8fbb8a7b9a7e592",
+            release: "discord_web-11d0a65cb538253415901e461f5bcd336217131a",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8617,8 +8617,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "372659"),
-            _.YA("builtAt", String("1740625011648"));
+            _.YA("buildNumber", "372664"),
+            _.YA("builtAt", String("1740628483937"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -12302,7 +12302,8 @@
               TEAL_860: "#021619",
               TEAL_900: "#011215",
               TRANSPARENT: "#00000000",
-              TWITCH: "#593695",
+              TWITCH: "#9147ff",
+              TWITCH_SECONDARY: "#772ce8",
               TWITTER: "#1da1f2",
               WHITE: "#ffffff",
               WHITE_100: "#ffffff",
@@ -15030,6 +15031,7 @@
             (r.TEAL_NEW_99 = "teal-new-99"),
             (r.TRANSPARENT = "transparent"),
             (r.TWITCH = "twitch"),
+            (r.TWITCH_SECONDARY = "twitch-secondary"),
             (r.TWITTER = "twitter"),
             (r.WHITE = "white"),
             (r.WHITE_100 = "white-100"),
@@ -16559,7 +16561,8 @@
           TEAL_NEW_98: "#030809",
           TEAL_NEW_99: "#020404",
           TRANSPARENT: "transparent",
-          TWITCH: "#593695",
+          TWITCH: "#9147ff",
+          TWITCH_SECONDARY: "#772ce8",
           TWITTER: "#1da1f2",
           WHITE: "#ffffff",
           WHITE_100: "#ffffff",
@@ -21330,7 +21333,9 @@
           TEAL_NEW_99:
             "hsl(180, calc(var(--saturation-factor, 1) * 33.3%), 1.2%)",
           TRANSPARENT: "transparent",
-          TWITCH: "hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)",
+          TWITCH: "hsl(264, calc(var(--saturation-factor, 1) * 100.0%), 63.9%)",
+          TWITCH_SECONDARY:
+            "hsl(264, calc(var(--saturation-factor, 1) * 80.3%), 54.1%)",
           TWITTER: "hsl(203, calc(var(--saturation-factor, 1) * 89.1%), 53.1%)",
           WHITE: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           WHITE_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
@@ -45852,4 +45857,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2ede6a0bd7d76b19.js.map
+//# sourceMappingURL=sentry.f4abf5b7f058521c.js.map
