@@ -294,7 +294,7 @@
                           >
                         </div>
                       </div>
-                      <div class="nav_dd_link-group">
+                      <div class="nav_dd_link-group is_2025">
                         <a
                           href="https://discord.com/guidelines"
                           class="nav_dd_link-group_title is-new-white"
@@ -1071,10 +1071,6 @@
                                 href="https://discord.com/ads/quests-success-stories"
                                 class="dd_nav-link is-new"
                                 >Success Stories</a
-                              ><a
-                                href="https://discord.com/ads/quests-why-discord"
-                                class="dd_nav-link is-new"
-                                >Why Discord</a
                               ><a
                                 href="https://discord.com/ads/quests-faq"
                                 class="dd_nav-link is-new"
