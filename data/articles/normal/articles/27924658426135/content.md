@@ -40,9 +40,9 @@
 </div>
 <h1 id="h_01JFGGXGKXZA8K86CKGT3C8E6S">What are Soundmoji?</h1>
 <div class="exp-box">
-  Soundmoji are an experimental feature available to a limited number of users.
-  Users can send them from desktop or browser, but mobile devices only display
-  the Soundmoji without audio playback.
+  Soundmoji was an experimental feature available to a limited number of users.
+  At this time, we’ve closed out the Soundmoji experiment and this feature is no
+  longer available.
 </div>
 <p>
   Imagine an emoji, but with sound—a <strong>Soundmoji</strong>! These playful
@@ -77,7 +77,10 @@
   <strong>Soundmoji Picker</strong> will trigger an error message.
 </div>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >Soundmoji use the same sounds available in a server's Soundboard
     feature.</span
   >
@@ -94,44 +97,80 @@
   >.
 </div>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >1. To upload a new Soundmoji to a server, press the drop-down menu to the
     right of the server’s name and select </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Server Settings &gt; Soundboard. </span
     ></strong
   >
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >2. There, press the </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Upload Sound
     </span></strong
-  ><span style="color: #2e3338; background-color: #ffffff"
+  ><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >button and complete all fields in the </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Upload a Sound</span
     ></strong
-  ><span style="color: #2e3338; background-color: #ffffff">
+  ><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+  >
     pop-up window. </span
   >
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff">3. Select </span
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    >3. Select </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Upload</span
     ></strong
-  ><span style="color: #2e3338; background-color: #ffffff">
+  ><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+  >
     to confirm, and you’re done!  </span
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     ><img
       src="https://support.discord.com/hc/article_attachments/28665964692631"
       width="644"
@@ -139,7 +178,7 @@
   /></span>
 </p>
 <h4 id="h_01JFGGXGKX8ABCY6ZNCJVYFKG9" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >How to Upload Soundmoji Sounds to the Soundboard on Desktop</span
   >
 </h4>
@@ -181,24 +220,28 @@
   />
 </p>
 <h4 id="h_01JFGGXGKX64JT3V78WXJP5QDN" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of Sending a Soundmoji in Text Channel on Desktop</span
   >
 </h4>
 <div class="tip-box">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >When other users press a Soundmoji, they'll hear its audio. To control the
     volume, go to </span
   ><strong
-    ><span style="color: #434343"
+    ><span style="color: #434343" data-darkreader-inline-color=""
       >User Settings &gt; Voice &amp; Video &gt; Soundmoji</span
     ></strong
-  ><span style="color: #434343"> and adjust the </span
-  ><strong><span style="color: #434343">Soundmoji Volume</span></strong
-  ><span style="color: #434343"> slider.</span>
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    and adjust the </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Soundmoji Volume</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""> slider.</span>
 </div>
 <p id="h_01JFGGXGKX0RD0G2CAT4GJ7ZDB" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/28665964696727"
       width="644"
@@ -206,34 +249,59 @@
   /></span>
 </p>
 <h4 id="h_01JFGGXGKXRET5R846S9MAM7C2" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Adjusting Soundmoji Volume on Desktop</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Adjusting Soundmoji Volume on Desktop</span
+  >
 </h4>
 <h1 id="h_01JFGGXGKXPTR3NS31T9PEQ7XB">Frequently Asked Questions</h1>
 <p>
   <strong>Q:</strong
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff">
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
+    >
       How can I change the volume or opt out for Soundmoji?</span
     ></strong
   >
 </p>
 <p>
-  <span style="color: #2e3338; background-color: #ffffff"
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     >To adjust Soundmoji volume, go to </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >User Settings &gt; Voice &amp; Video &gt; Soundboard &gt; Soundmoji
       Volume</span
     ></strong
-  ><span style="color: #2e3338; background-color: #ffffff">
+  ><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+  >
     and move the slider to your preferred level. This setting syncs across all
     your devices. Setting the volume to 0% will mute all Soundmoji sounds—note
     that this is separate from the </span
   ><strong
-    ><span style="color: #2e3338; background-color: #ffffff"
+    ><span
+      style="color: #2e3338; background-color: #ffffff"
+      data-darkreader-inline-color=""
+      data-darkreader-inline-bgcolor=""
       >Soundboard Volume</span
     ></strong
-  ><span style="color: #2e3338; background-color: #ffffff"> setting.</span>
+  ><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+  >
+    setting.</span
+  >
 </p>
 <p>
   <strong
