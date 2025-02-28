@@ -5231,6 +5231,8 @@
                 t,
                 "/uncancel",
               ),
+            GUILD_POWERUP_TOGGLE: (t, e) =>
+              "/guilds/".concat(t, "/skus/").concat(e),
             SEARCH_CHANNEL: (t) => "/channels/".concat(t, "/messages/search"),
             SEARCH_TABS_CHANNEL: (t) =>
               "/channels/".concat(t, "/messages/search/tabs"),
@@ -5366,6 +5368,8 @@
             STORE_LISTING: (t) => "/store/listings/".concat(t),
             STORE_LISTINGS_SKU: (t) => "/store/skus/".concat(t, "/listings"),
             APPLICATION_SKUS: (t) => "/applications/".concat(t, "/skus"),
+            APPLICATION_MANAGED_ACTIVITY_LINK: (t, e) =>
+              "/applications/".concat(t, "/managed-links/").concat(e),
             STORE_EULA: (t) => "/store/eulas/".concat(t),
             ENTITLEMENTS_FOR_APPLICATION: (t) =>
               "/users/@me/applications/".concat(t, "/entitlements"),
@@ -7344,6 +7348,7 @@
             "voice_and_video_settings_updated"),
           (r.CALL_SETTINGS_MENU_ITEM_INTERACTED =
             "call_settings_menu_item_interacted"),
+          (r.CALL_BUTTON_CLICKED = "call_button_clicked"),
           (r.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed"),
           (r.CLIP_SAVED = "clip_saved"),
           (r.CLIP_SAVE_FAILURE = "clip_save_failure"),
@@ -8085,6 +8090,7 @@
             GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE: 201,
             GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: 202,
             GUILD_MEMBER_VERIFICATION_UPDATE: 210,
+            GUILD_PROFILE_UPDATE: 211,
           }),
           Object.freeze({
             GIF: {
@@ -8552,7 +8558,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-27-19e21faed1481f2784c7e9ba99dcc16b3b68c67e-discord_web",
+              "2025-02-28-3506331b47026f65ff6d38457d4ba1c736229d81-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8618,8 +8624,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "373136"),
-            _.YA("builtAt", String("1740700890591"));
+            _.YA("buildNumber", "373527"),
+            _.YA("builtAt", String("1740776230393"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45858,4 +45864,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.7c29e15d9e7d9e9d.js.map
+//# sourceMappingURL=sentry.040f7575aa7aec28.js.map
