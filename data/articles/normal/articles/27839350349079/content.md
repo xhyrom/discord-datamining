@@ -28,6 +28,33 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: The Wilds Are Calling<br /></strong
+  ><strong>Quest Name: Monster Hunter Wilds Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the
+  <strong>The Wilds Are Calling </strong>video in <strong>Discord</strong> and
+  unlock <strong>The Hunt Begins: Assistance Pack</strong>. <br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to users on desktop where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Monster Hunter Wilds Quest</strong> can be accepted on Discord
+  desktop app or browser client from <strong>February 28, 2025</strong> until
+  <strong>March 6, 2025 (11:59PM UTC).<br /></strong>Complete the quest
+  requirements during this period and claim your reward by
+  <strong>February 27, 2026 (10:59AM UTC)</strong>.  <br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per account.
+    After completing the Quest, you can redeem the reward on your preferred
+    platform: PC, Xbox, or PlayStation. After selecting your preferred platform,
+    you are unable to change this or switch to another platform. PlayStation
+    codes are only available in the Americas only.</span
+  >
+</p>
+<p>
   <strong>Quest Game: Seekers of Skyveil <br /></strong
   ><strong>Quest Name: Seekers of Skyveil Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
