@@ -1,0 +1,64 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7870527002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": false
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6105005002,
+  "location": {
+    "name": "San Francisco, CA or Remote (U.S.)"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 7870527002,
+  "updated_at": "2025-02-27T20:15:04-05:00",
+  "requisition_id": "R-100819",
+  "title": "Staff Software Engineer, Ads Infrastructure",
+  "company_name": "Discord",
+  "company_logo_url": "https://s2-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/025/200/resized/New_Linkedin_Logo_LinkedIn.png?1725582586",
+  "first_published": "2025-02-27T20:13:11-05:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Ads Delivery team at Discord is entrusted with the exciting challenge of determining the most effective ads to display to users, blending distributed systems with mathematical optimization and real-time infrastructure. As Discord pushes forward with developing its ads platform, the team is pivotal in driving this initiative towards becoming a significant revenue stream. With a focus on scalability, the team is building systems that scale towards the platform’s future, as well as creating an auction-based ads marketplace to maximize ad placement efficiency through market dynamics.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What Makes This Role Exciting:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You&#39;ll be joining the cutting edge of Discord’s business strategy, working on high-impact ads infrastructure that aims to build Discord’s next big revenue stream.&lt;/li&gt;\n&lt;li&gt;Your work will directly influence how ads are delivered across Discord, affecting millions of users and supporting advertisers and game publishers.&lt;/li&gt;\n&lt;li&gt;You&#39;ll tackle complex optimization problems within distributed systems, contributing to the evolution of our ads server that blends real-time systems with advanced math optimization problems.&lt;/li&gt;\n&lt;li&gt;You&#39;ll play a key role in building an auction-based ads marketplace, allowing market dynamics to dictate the best ad outcomes.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;br&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Designing, building, and maintaining scalable systems for delivering the best ad experience while balancing obligations to advertisers.&lt;/li&gt;\n&lt;li&gt;Solving complex challenges related to high-volume data collection, ads ranking, budget pacing, and frequency capping.&lt;/li&gt;\n&lt;li&gt;Collaborating with teams such as Data Platform, Serving Infrastructure, and Persistence Infrastructure to understand and meet requirements.&lt;/li&gt;\n&lt;li&gt;Owning projects from end-to-end, refining requirements with Product teams, creating technical designs, implementing changes, and overseeing launches.&lt;/li&gt;\n&lt;li&gt;Partnering with a small set of teams to define problems and build solutions into high-scale, reliable, and observable infrastructure.&lt;/li&gt;\n&lt;li&gt;Utilizing insights from large datasets to validate data and algorithms, crafting well-designed, available, and observable systems&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of professional software engineering experience, particularly in backend development with systems like Python, Rust, and Elixir.&lt;/li&gt;\n&lt;li&gt;Experience with large-scale system design, including database design, querying, and data caching.&lt;/li&gt;\n&lt;li&gt;Familiarity with cloud environments and observability tools such as Datadog.&lt;/li&gt;\n&lt;li&gt;A technical leadership background with at least 2 years of experience leading teams in a technical capacity.&lt;/li&gt;\n&lt;li&gt;Proficiency with event streaming tools like Kafka or PubSub.&lt;/li&gt;\n&lt;li&gt;A data-driven mindset and excitement for designing robust systems through infrastructure and algorithm validation.&lt;/li&gt;\n&lt;li&gt;A high degree of empathy for users, both internal and external, with a keen sense to seek feedback and continuously improve&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;mb-2 whitespace-pre-wrap&quot;&gt;&lt;em&gt;#LI-Remote&lt;/em&gt;&lt;em&gt;&lt;br&gt;&lt;/em&gt;&lt;em&gt;&lt;br&gt;&lt;/em&gt;&lt;em&gt;The US base salary range for this full-time position is $223,000 to $245,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074054002,
+      "name": "Product Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
