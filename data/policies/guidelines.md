@@ -2105,7 +2105,7 @@
             ><img
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
               loading="lazy"
-              alt="Go to Discord"
+              alt="Home page"
           /></a>
           <div class="p-footer">Language</div>
           <div class="padding-16px"></div>
