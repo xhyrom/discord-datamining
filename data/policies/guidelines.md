@@ -826,11 +826,11 @@
           id="w-node-f6bae115-40df-f6c0-010e-7dc6a2133746-a21336e6"
           class="nav_burger_button"
         >
-          <a
+          <div
             data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133747"
-            href="#"
-            class="nav_burger_trigger w-inline-block"
-            ><div class="close_icon w-embed">
+            class="nav_burger_trigger"
+          >
+            <div class="close_icon w-embed">
               <svg
                 width="24"
                 height="24"
@@ -844,12 +844,14 @@
                   d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6ZM4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12ZM5 17C4.44772 17 4 17.4477 4 18C4 18.5523 4.44772 19 5 19H12C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17H5Z"
                   fill="white"
                 ></path>
-              </svg></div></a
-          ><a
+              </svg>
+            </div>
+          </div>
+          <div
             data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133749"
-            href="#"
-            class="nav_burger_trigger-black w-inline-block"
-            ><div class="close_icon w-embed">
+            class="nav_burger_trigger-black"
+          >
+            <div class="close_icon w-embed">
               <svg
                 width="24"
                 height="24"
@@ -863,8 +865,9 @@
                   d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6ZM4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12ZM5 17C4.44772 17 4 17.4477 4 18C4 18.5523 4.44772 19 5 19H12C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17H5Z"
                   fill="black"
                 ></path>
-              </svg></div
-          ></a>
+              </svg>
+            </div>
+          </div>
           <div class="nav_burger_list">
             <div class="nav_burger_content">
               <div class="nav_burger_top">
