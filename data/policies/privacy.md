@@ -2985,7 +2985,7 @@
           <div class="flex-horizontal top-soc-new">
             <a
               data-track="twitter"
-              href="https://twitter.com/discord"
+              href="https://x.com/discord"
               target="_blank"
               class="link-s w-inline-block"
               ><img
