@@ -2105,7 +2105,7 @@
             ><img
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
               loading="lazy"
-              alt=""
+              alt="Go to Discord"
           /></a>
           <div class="p-footer">Language</div>
           <div class="padding-16px"></div>
@@ -2700,7 +2700,8 @@
       <img
         src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ac9b4644222140ae614b06_Wordmark.svg"
         loading="lazy"
-        alt=""
+        aria-label="Discord"
+        alt="Discord"
         class="word"
       />
     </div>
