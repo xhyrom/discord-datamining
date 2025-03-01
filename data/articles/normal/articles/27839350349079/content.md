@@ -67,7 +67,7 @@
   >
   The <strong>Seekers of Skyveil Quest</strong> can be accepted on Discord from
   <strong>February 24, 2025</strong> until
-  <strong>March 2, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  <strong>March 5, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
   requirements during this period and claim your reward by
   <strong>April 1, 2025 (0:00 UTC)</strong>.<br /><span
     style="color: #2e3338; background-color: #ffffff"
