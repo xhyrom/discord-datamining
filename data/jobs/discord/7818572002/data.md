@@ -1,8 +1,8 @@
 # Job Listing
 
-## Bilingual Threat Operations Specialist
+## Bilingual Threat Operations Specialist (West Coast)
 
-**Location:** San Francisco, CA
+**Location:** Remote (West Coast U.S.)
 
 **Id:** 7818572002 <br/>
 **Internal Job Id:** 6082800002 <br/>
@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7818572002](https://discord.com/jobs/7818572002)
 
-**Updated At:** Tue, 25 Feb 2025 22:14:49 GMT
+**Updated At:** Sat, 01 Mar 2025 18:45:06 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This role is critical in supporting the company to deeply understand and mitigate how harmful content, including child sexual abuse material, manifests on our platform, as well as investigating complex threats, advancing our investigative capabilities, and developing innovative approaches to prevent harm to our users, particularly minors. This role must be based in the San Francisco Bay Area, but there is flexibility around working onsite.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This role must be based on the West Coast (U.S.)
+This hire will be critical in supporting the company to deeply understand and mitigate how harmful content, including child sexual abuse material, manifests on our platform, as well as investigating complex threats, advancing our investigative capabilities, and developing innovative approaches to prevent harm to our users, particularly minors.
 This role involves exposure to graphic and/or objectionable content including but not limited to graphic images, videos and writings, offensive and derogatory language, and other potentially objectionable material, e.g. child exploitation, graphic violence, self-injury, animal abuse, and other content which may be considered offensive or disturbing.
 What You'll Be Doing
 
