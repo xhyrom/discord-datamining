@@ -12346,6 +12346,8 @@ div.modalHeader_c28af8 {
   display: block;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .questRewardTileAssetStatic__28141 {
   pointer-events: none;
@@ -56133,4 +56135,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.124c2b0ba6465a40.css.map*/
+/*# sourceMappingURL=12633.6ca0a2d72ece1b05.css.map*/
