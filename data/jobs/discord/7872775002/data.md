@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7872775002](https://discord.com/jobs/7872775002)
 
-**Updated At:** Thu, 20 Feb 2025 16:21:58 GMT
+**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a strategic and visionary Group Product Marketing Manager to help us build and scale our new advertising solution, Quests. As the Product Marketing lead, you’ll play a pivotal role in defining the strategy and driving the roadmap for our advertising solutions, with a particular focus on mobile. You'll work hand in hand with our Sales and Product teams to scale processes as our team continues to grow and Quests expands into new verticals.

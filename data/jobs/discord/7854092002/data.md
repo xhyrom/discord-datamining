@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7854092002](https://discord.com/jobs/7854092002)
 
-**Updated At:** Wed, 26 Feb 2025 21:27:07 GMT
+**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Reporting to the Director of Employee &amp;amp; Executive Communications, this role will support the Comms team in shaping and sharing our story to the 150 million+ people who come to Discord every month…and the passionate team members delivering for them. With an emphasis on business and brand communications, the Sr. Employee &amp;amp; Exec Comms Manager will help reinforce Discord’s vision, build trust and credibility with key audiences, and shape a more engaged and mission-driven workforce. This role must be based in the San Francisco Bay Area, but there is no hard requirement for working onsite.

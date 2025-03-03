@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7801651002](https://discord.com/jobs/7801651002)
 
-**Updated At:** Sat, 01 Mar 2025 00:22:20 GMT
+**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.People come to Discord before, during, and after gaming, and we want to make that experience even better. The Social Layer of Gaming team is building the tools for game developers to make that happen by harnessing the power of Discord from right within their games. We believe that gaming is better when playing with your friends and aim to foster better and deeper relationships through that. This is also reflected in how we work! Our engineering culture believes that great teams are built through collaboration and trust. Come and join us!
