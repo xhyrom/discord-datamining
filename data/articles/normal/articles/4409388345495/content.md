@@ -57,18 +57,8 @@
       >How do I change my profile theme?</a
     >
     <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4409388345495#h_01HNGBKZ179D803WSZXF5DV5C5"
-          >On Desktop/Browser</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4409388345495#h_01HNGBKZ187FNPGCSC4VGRDXWV"
-          >On Mobile</a
-        >
-      </li>
+      <li><a href="#h_01HNGBKZ179D803WSZXF5DV5C5">On Desktop/Browser</a></li>
+      <li><a href="#h_01HNGBKZ187FNPGCSC4VGRDXWV">On Mobile</a></li>
     </ul>
   </li>
   <li>
@@ -82,8 +72,7 @@
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/4409388345495#h_01HT0XZ4BMZEBV613KTPX05HFQ"
+    <a href="#h_01HT0XZ4BMZEBV613KTPX05HFQ"
       >How do I add Avatar Decorations and Profile Effects to my Server
       Profile?</a
     >
@@ -124,15 +113,14 @@
   confirm. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-d1f97042-7fff-d361-6004-ab6364018d10"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750745835159"
-      width="600"
-      height="383"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30373177431703"
+    width="624"
+    height="336"
+  />
 </p>
 <h3 id="docs-internal-guid-e766688b-7fff-e749-881a-f02201575d46">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Like profile avatars, PNG and JPG are the supported file types and Nitro
     users can upload a GIF for their server avatars. After uploading a server
     avatar, you can crop and center PNG, JPG, and GIF files. </span
@@ -146,21 +134,18 @@
   your avatar within a text channel, or in a voice channel.   
 </p>
 <p>
-  2. You'll then see a <strong>pencil icon </strong>in the top-right corner,
-  which you can press to show the <strong>Edit Server Profile </strong>and
-  <strong>Edit User Profile </strong>options. 
+  2. You'll then see an <strong>Edit Profile </strong>option that you can press.
 </p>
 <p>
   3. Select <strong>Edit Server Profile</strong> to change your server avatar in
   the <strong>Server Profile </strong>settings page.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-a13871be-7fff-4abb-1bdd-5baac0621c77"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750745837847"
-      width="600"
-      height="388"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30373177434903"
+    width="624"
+    height="336"
+  />
 </p>
 <p id="docs-internal-guid-c6299502-7fff-64f5-001a-b801c7ec6333">
   4. When you’re all set, press <strong>Save Changes</strong> to confirm your
@@ -268,6 +253,7 @@
       ><span
         id="docs-internal-guid-3acfeba7-7fff-553b-bf38-d8feb8ed2156"
         style="color: #ae6607"
+        data-darkreader-inline-color=""
         ><img
           src="https://support.discord.com/hc/article_attachments/21750745851415"
           width="624"
@@ -285,6 +271,7 @@
     ><span
       id="docs-internal-guid-2b53dd41-7fff-db36-1516-47dacda23485"
       style="color: #4f545c"
+      data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/21750745867287"
         width="600"
@@ -305,12 +292,13 @@
     ><span
       id="docs-internal-guid-391b53a7-7fff-45c8-0e1f-095e068edd56"
       style="color: #4f545c"
+      data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/21750753325719"
         width="237"
         height="489" /></span
-    ><span style="color: #4f545c">   </span
-    ><span style="color: #4f545c"
+    ><span style="color: #4f545c" data-darkreader-inline-color="">   </span
+    ><span style="color: #4f545c" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/21750745870487"
         width="235"
@@ -330,6 +318,7 @@
   <span
     id="docs-internal-guid-4c3a5ca2-7fff-9626-6b10-4779a01ea365"
     style="color: #4f545c"
+    data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/21750745874839"
       width="234"
@@ -346,6 +335,7 @@
   <span
     id="docs-internal-guid-1d796fd7-7fff-e3dd-ca69-987c99473cfd"
     style="color: #4f545c"
+    data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/21750745878423"
       width="256"
@@ -353,7 +343,7 @@
   /></span>
 </p>
 <h3 id="docs-internal-guid-12f2bf76-7fff-fb40-f617-267342d6548d">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Please note: if you have <strong>Sync profile themes</strong> enabled in
     your
     <a
@@ -368,14 +358,20 @@
 </h3>
 <h1 id="h_01FPE3GWZ62G842RFFFYD9NTJT">How do I change my profile banner?</h1>
 <p id="docs-internal-guid-bc012d53-7fff-b0f0-b188-69c5938e450b">
-  <span style="color: #4f545c">Head over to your </span
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Head over to your </span
   ><strong
-    ><span style="color: #4f545c"
+    ><span style="color: #4f545c" data-darkreader-inline-color=""
       >User Settings &gt; Profiles &gt; Server Profiles
     </span></strong
-  ><span style="color: #4f545c">and press </span
-  ><strong><span style="color: #4f545c">Change Banner</span></strong
-  ><span style="color: #4f545c"> to upload your server banner.</span>
+  ><span style="color: #4f545c" data-darkreader-inline-color="">and press </span
+  ><strong
+    ><span style="color: #4f545c" data-darkreader-inline-color=""
+      >Change Banner</span
+    ></strong
+  ><span style="color: #4f545c" data-darkreader-inline-color="">
+    to upload your server banner.</span
+  >
 </p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-ebd671b0-7fff-e98b-8372-bfba6496300f"
@@ -448,6 +444,7 @@
       ><span
         id="docs-internal-guid-dd771cae-7fff-ddb3-129a-ba027fb0a510"
         style="color: #2f3941"
+        data-darkreader-inline-color=""
         ><img
           src="https://support.discord.com/hc/article_attachments/21750753353495"
           width="624"
@@ -466,6 +463,7 @@
   <span
     id="docs-internal-guid-fc473c85-7fff-4978-45f0-8a190fc8700d"
     style="color: #4f545c"
+    data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/21750745893911"
       width="624"
@@ -491,14 +489,14 @@
   <strong>Save Changes </strong>in the pop up box located at the bottom.
 </p>
 <h3 id="docs-internal-guid-fc704d1b-7fff-d257-f379-6344f26d5b00">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Note: Avatar Decorations and Profile Effects can be found in the </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/17162747936663"
     target="_blank"
     rel="noopener noreferrer"
     >Shop</a
-  ><span style="color: #434343"
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >. You must purchase a profile cosmetic before being able to add to your
     profile.  </span
   >
