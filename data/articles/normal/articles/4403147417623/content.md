@@ -164,9 +164,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24857019309591"
-    width="398"
-    height="258"
+    src="https://support.discord.com/hc/article_attachments/30373148111767"
+    width="440"
+    height="274"
   />
 </p>
 <p>
@@ -175,9 +175,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24857019313303"
-    width="398"
-    height="401"
+    src="https://support.discord.com/hc/article_attachments/30373148113175"
+    width="596"
+    height="601"
   />
 </p>
 <h2 id="h_01HAWGZQYY8B5KQH1FJ2N2VJ01"><strong>Avatar Decorations</strong></h2>
@@ -359,7 +359,7 @@
   <li>Unicode characters</li>
 </ul>
 <p id="h_01HA5Q9PKN6E6PTAHFR49VRMT3" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/24857019326871"
       width="427"
@@ -431,8 +431,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15527697928727"
-    alt="banner_settings_upload.png"
+    src="https://support.discord.com/hc/article_attachments/30373162778647"
   />
 </p>
 <p>
@@ -443,9 +442,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24856991888663"
-    width="410"
-    height="417"
+    src="https://support.discord.com/hc/article_attachments/30373148123671"
   />
 </p>
 <h2 id="h_01H3MBS17WFZDJ870NW95MSQT7">Theme</h2>
