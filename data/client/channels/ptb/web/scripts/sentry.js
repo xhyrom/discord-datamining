@@ -6520,6 +6520,7 @@
             "notification_migration_guild_changed"),
           (r.NOTIFICATION_MIGRATION_OPTOUT = "notification_migration_optout"),
           (r.CALLKIT_CLICKED = "callkit_clicked"),
+          (r.PUSH_NOTIFICATION_RECEIVED = "push_notification_received"),
           (r.OVERLAY_DISABLED_SURVEY = "overlay_disabled_survey"),
           (r.NOTIFICATION_REPORT_SUBMITTED = "notification_report_submitted"),
           (r.NOTIFICATION_PERMISSION_PREPROMPT_ACKED =
@@ -7346,9 +7347,8 @@
           (r.SYSTEM_CAMERA_SETTINGS_OPENED = "system_camera_settings_opened"),
           (r.VOICE_AND_VIDEO_SETTINGS_UPDATED =
             "voice_and_video_settings_updated"),
-          (r.CALL_SETTINGS_MENU_ITEM_INTERACTED =
-            "call_settings_menu_item_interacted"),
           (r.CALL_BUTTON_CLICKED = "call_button_clicked"),
+          (r.CALL_MENU_ITEM_INTERACTED = "call_menu_item_interacted"),
           (r.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed"),
           (r.CLIP_SAVED = "clip_saved"),
           (r.CLIP_SAVE_FAILURE = "clip_save_failure"),
@@ -8558,7 +8558,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-02-28-3506331b47026f65ff6d38457d4ba1c736229d81-discord_web",
+              "2025-03-03-01f5c7fe64ff3df4868819a305e8ba935122a3ef-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8624,8 +8624,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            _.YA("buildNumber", "373527"),
-            _.YA("builtAt", String("1740776230393"));
+            _.YA("buildNumber", "373818"),
+            _.YA("builtAt", String("1740990606146"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) _.YA(e, t[e]);
           return i;
@@ -45864,4 +45864,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.040f7575aa7aec28.js.map
+//# sourceMappingURL=sentry.005f805396f9e7bc.js.map
