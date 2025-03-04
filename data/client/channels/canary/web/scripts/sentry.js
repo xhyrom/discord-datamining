@@ -4647,9 +4647,9 @@
           c = a(866442),
           s = a(860911),
           E = a(70956),
-          l = a(272242),
-          u = a(188785),
-          I = a(979007),
+          l = a(188785),
+          u = a(979007),
+          I = a(688357),
           R = a(526761),
           d = a(231338);
         a(334431),
@@ -6018,7 +6018,7 @@
             LOGIN: "/login",
             LOGIN_HANDOFF: "/login/handoff",
             REGISTER: "/register",
-            DEFAULT_LOGGED_OUT: u.a ? "/register" : "/login",
+            DEFAULT_LOGGED_OUT: l.a ? "/register" : "/login",
             INVITE: (t) => "/invite/".concat(t),
             INVITE_LOGIN: (t) => "/invite/".concat(t, "/login"),
             INVITE_REGISTER: (t) => "/invite/".concat(t, "/register"),
@@ -6086,7 +6086,7 @@
             GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU: (t, e) =>
               "/discovery/applications/"
                 .concat(t, "/")
-                .concat(I.GlobalDiscoveryAppsSections.STORE, "/")
+                .concat(u.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(e),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
             GUILD_MEMBER_VERIFICATION: (t) => "/member-verification/".concat(t),
@@ -6130,7 +6130,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (t, e) =>
               "/application-directory/"
                 .concat(t, "/")
-                .concat(l.c.STORE, "/")
+                .concat(I.c.STORE, "/")
                 .concat(e),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -8495,18 +8495,6 @@
           r.ZP.unsafe_rawColors.GUILD_BOOSTING_BLUE_FOR_GRADIENTS,
           r.ZP.unsafe_rawColors.GUILD_BOOSTING_PURPLE_FOR_GRADIENTS;
       },
-      272242: function (t, e, a) {
-        "use strict";
-        a.d(e, { c: () => n });
-        var r,
-          n =
-            (((r = {}).GENERAL = "general"),
-            (r.IMAGES = "images"),
-            (r.PREMIUM_DEPRECATED = "premium"),
-            (r.STORE = "store"),
-            (r.PRIVACY = "privacy"),
-            r);
-      },
       188785: function (t, e, a) {
         "use strict";
         a.d(e, { a: () => r });
@@ -8546,23 +8534,24 @@
       },
       25779: function (t, e, a) {
         "use strict";
-        a.d(e, { j: () => u }), a(47120);
+        a.d(e, { j: () => I }), a(47120);
         var r = a(509068),
           n = a(804410),
           _ = a(408720),
           o = a(233517),
           i = a(931327),
           c = a(903772),
-          s = a(97145);
-        let E = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          l = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function u() {
+          s = a(97145),
+          E = a(444675);
+        let l = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function I() {
           r.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f63632bed3b012b14b3c9d72f5daabf654c21304",
+            release: E.env.SENTRY_RELEASE,
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8574,7 +8563,7 @@
                         1 === t.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                E.some(
+                l.some(
                   (t) =>
                     window.navigator.appVersion.toLowerCase().indexOf(t) >= 0,
                 )
@@ -8582,7 +8571,7 @@
                 !(0, c.e)() &&
                 "Aborted" !== t.message &&
                 "cancel captcha" !== t.message &&
-                l()
+                u()
                 ? t
                 : null;
             },
@@ -8628,8 +8617,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "374154"),
-            o.YA("builtAt", String("1741045102878"));
+            o.YA("buildNumber", "374195"),
+            o.YA("builtAt", String("1741049312159"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8640,6 +8629,18 @@
         a.d(e, { GlobalDiscoveryAppsSections: () => n });
         var r,
           n = (((r = {}).ABOUT = "about"), (r.STORE = "store"), r);
+      },
+      688357: function (t, e, a) {
+        "use strict";
+        a.d(e, { c: () => n });
+        var r,
+          n =
+            (((r = {}).GENERAL = "general"),
+            (r.IMAGES = "images"),
+            (r.PREMIUM_DEPRECATED = "premium"),
+            (r.STORE = "store"),
+            (r.PRIVACY = "privacy"),
+            r);
       },
       526761: function (t, e, a) {
         "use strict";
