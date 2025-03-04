@@ -79,28 +79,6 @@
     height="407"
   />
 </p>
-<div class="mega-box">
-  <p class="wysiwyg-text-align-left">
-    Gift Nitro as a Valentine’s Day gift to receive the
-    <strong>Heart-to-Heart avatar decoratio</strong>n, which is yours to
-    keep!<br /><br />The special offer will roll out starting
-    <strong>February 6</strong> and run through
-    <strong>February 18, 2025</strong> for eligible users. All eligible users
-    will have access to the promotion by <strong>February 11th</strong>. Look
-    for the pink promotion banner before making your purchase.<br /><br />Please
-    note: This offer is only valid for Nitro gifts (not Nitro Basic gifts). Any
-    avatar decorations received will be removed if you refund your Nitro gift
-    purchase.<br /><br />Want to learn more about
-    <strong>Nitro gifting</strong>? Check out our
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360020877112#h_01JDAHX8ZV2GM9GG6SPVN2ZKAA"
-      target="_blank"
-      rel="noopener noreferrer"
-      >article</a
-    >
-    for more details.
-  </p>
-</div>
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an avatar decoration?
 </h1>
