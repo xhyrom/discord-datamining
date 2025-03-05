@@ -16076,7 +16076,7 @@ span.clanTag__5d473 {
   overflow: hidden;
 }
 .full-motion .animatedTopPerksCard__3add8.animate__3add8 {
-  animation: fadeEffects__3add8 1.2s ease-in-out forwards;
+  animation: fadeEffects__3add8 1.8s ease-in-out forwards;
 }
 .topPerksCardImageWrapper__3add8 {
   position: absolute;
@@ -16088,14 +16088,11 @@ span.clanTag__5d473 {
 }
 .animatedTopPerksCard__3add8 {
   border-radius: var(--radius-md);
-  background: var(--background-secondary-alt);
   max-width: 480px;
   height: 315px;
-}
-.full-motion .animatedTopPerksCard__3add8 {
-  transition: border 0.3s ease;
-}
-.animatedTopPerksCard__3add8:hover {
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4);
   border: 1px solid transparent;
   background:
     linear-gradient(
@@ -16104,6 +16101,22 @@ span.clanTag__5d473 {
       )
       padding-box,
     linear-gradient(145deg, #3e70dd, #b377f3) border-box;
+}
+.full-motion .animatedTopPerksCard__3add8 {
+  transition: border 0.3s ease;
+}
+.animatedTopPerksCard__3add8:hover {
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4) !important;
+  border: 1px solid transparent !important;
+  background:
+    linear-gradient(
+        var(--background-secondary-alt),
+        var(--background-secondary-alt)
+      )
+      padding-box,
+    linear-gradient(145deg, #3e70dd, #b377f3) border-box !important;
 }
 .imageGradientOverlay__3add8 {
   position: absolute;
@@ -16115,7 +16128,7 @@ span.clanTag__5d473 {
   background: linear-gradient(
     180deg,
     transparent 0,
-    var(--background-secondary-alt) 70%,
+    var(--background-secondary-alt) 60%,
     var(--background-secondary-alt)
   );
 }
@@ -16214,7 +16227,7 @@ span.clanTag__5d473 {
   z-index: 1;
 }
 .full-motion .shineLine__3add8 {
-  animation: shineEffect__3add8 1.2s ease-in-out;
+  animation: shineEffect__3add8 1.5s ease-in-out;
 }
 @keyframes shineEffect__3add8 {
   0% {
@@ -16240,7 +16253,7 @@ span.clanTag__5d473 {
   }
   to {
     box-shadow: none;
-    border: 1px solid transparent;
+    border: 1px solid var(--background-secondary-alt);
     background: var(--background-secondary-alt);
   }
 }
@@ -29117,9 +29130,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .nameplatePreview_fdeafc {
   position: relative;
   border-radius: var(--radius-sm);
-}
-.avatarWithTextInner_fdeafc {
-  margin-left: 8px;
 }
 .modalRoot__78e61 {
   border-radius: var(--radius-sm);
