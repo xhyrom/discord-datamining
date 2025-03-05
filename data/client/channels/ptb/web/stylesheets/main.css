@@ -7409,21 +7409,19 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .directionUp__5fbe9 {
   transform: rotate3d(0, 0, -1, 180deg);
 }
-.controlIcon_f1ceac {
-  width: 24px;
-  height: 24px;
+.controlIconColor_f1ceac {
   color: var(--interactive-normal);
   display: flex;
 }
-.controlIcon_f1ceac.active_f1ceac,
-.controlIcon_f1ceac:hover {
+.controlIconColor_f1ceac.active_f1ceac,
+.controlIconColor_f1ceac:hover {
   color: var(--interactive-active);
 }
-.controlIcon_f1ceac.themeable_f1ceac {
+.controlIconColor_f1ceac.themeable_f1ceac {
   color: var(--interactive-normal);
 }
-.controlIcon_f1ceac.themeable_f1ceac.active_f1ceac,
-.controlIcon_f1ceac.themeable_f1ceac:hover {
+.controlIconColor_f1ceac.themeable_f1ceac.active_f1ceac,
+.controlIconColor_f1ceac.themeable_f1ceac:hover {
   color: var(--interactive-active);
 }
 .experimentControlIcon_f1ceac {
@@ -7607,6 +7605,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   ),
 .colorable_f1ceac.experimentActiveLight_f1ceac:hover:not(.disabled_f1ceac) {
   background: var(--primary-230);
+}
+.buttonInnerWithText_f1ceac {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .centerButton_f1ceac {
   border-radius: 50%;
