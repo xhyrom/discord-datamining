@@ -29842,6 +29842,11 @@ html:not(.visual-refresh) .inner_a99829 {
 .engagementExpButton_a99829[aria-disabled="true"] {
   opacity: 0.5;
 }
+.column_ba7f98 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .container_ba7f98 {
   position: relative;
   box-sizing: content-box;
@@ -29852,6 +29857,17 @@ html:not(.visual-refresh) .inner_a99829 {
 }
 .custom-profile-theme .header_ba7f98 {
   min-height: calc(var(--custom-user-profile-banner-height) + 35px);
+}
+.nameplatePreviewSection_ba7f98 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.nameplate_ba7f98 {
+  width: 224px;
 }
 .previewContainer__50f14 {
   display: flex;
