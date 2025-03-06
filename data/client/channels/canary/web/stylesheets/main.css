@@ -16194,12 +16194,18 @@ span.clanTag__5d473 {
   width: fit-content;
   background-color: var(--bg-base-primary);
   padding: var(--spacing-4) 10px;
+  margin-top: var(--spacing-12);
+}
+.labelsContainer__3add8,
+.topPerksCardLabelContainer__3add8 {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-4);
   align-items: center;
   justify-self: center;
-  margin-top: var(--spacing-12);
+}
+.labelsContainer__3add8 {
+  color: var(--text-positive);
 }
 .intObserver__3add8 {
   bottom: 0;
