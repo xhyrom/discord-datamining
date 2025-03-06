@@ -52,6 +52,7 @@
       "global_name": null,
       "avatar": "0227b2e89ea08d666c43003fbadbc72a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3265",
       "public_flags": 0,
       "primary_guild": null,
@@ -122,6 +123,7 @@
       "global_name": null,
       "avatar": "a92e314d896b76f0939d54c0e75369a4",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7253",
       "public_flags": 0,
       "primary_guild": null,
@@ -195,6 +197,7 @@
       "global_name": null,
       "avatar": "5f5d6298cd8726781182a1d850781978",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4933",
       "public_flags": 0,
       "primary_guild": null,
@@ -273,6 +276,7 @@
       "global_name": null,
       "avatar": "fd76575399cd5854d11eef7de1d952da",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8620",
       "public_flags": 0,
       "primary_guild": null,
@@ -352,6 +356,7 @@
       "global_name": null,
       "avatar": "a57d315e721e49673f2ec1a0f89f9c03",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6557",
       "public_flags": 65536,
       "primary_guild": null,
@@ -452,6 +457,7 @@
       "global_name": null,
       "avatar": "50acfed6c7c7942849e0a9a3aca32258",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2033",
       "public_flags": 65536,
       "primary_guild": null,
@@ -553,6 +559,7 @@
       "global_name": null,
       "avatar": "8c2a3fcc5c888ab97e197c25a7c9eaed",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7405",
       "public_flags": 0,
       "primary_guild": null,
@@ -653,6 +660,7 @@
       "global_name": null,
       "avatar": "67d8c4354947832c82497e42dbd8001c",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9917",
       "public_flags": 0,
       "primary_guild": null,
@@ -753,6 +761,7 @@
       "global_name": null,
       "avatar": "0a6b8f4795c66ba12afbc766dd920bfb",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "1692",
       "public_flags": 65536,
       "primary_guild": null,
@@ -853,6 +862,7 @@
       "global_name": null,
       "avatar": "fe2b7fa334817b0346d57416ad75e93b",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5319",
       "public_flags": 65536,
       "primary_guild": null,
@@ -952,6 +962,7 @@
       "global_name": null,
       "avatar": "6f547114b2979b8bc83e4ba91b4d770d",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4614",
       "public_flags": 65536,
       "primary_guild": null,
@@ -1052,6 +1063,7 @@
       "global_name": null,
       "avatar": "b485f75e95e6486a758a4aa5db3352f4",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3171",
       "public_flags": 589825,
       "primary_guild": null,
@@ -1152,6 +1164,7 @@
       "global_name": null,
       "avatar": "97e50fed67f44802dbb4901d74a6f9a1",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8198",
       "public_flags": 589824,
       "primary_guild": null,
@@ -1252,6 +1265,7 @@
       "global_name": null,
       "avatar": "ed9496f7ae4d60a055bf8ddc7b418bd7",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9517",
       "public_flags": 589824,
       "primary_guild": null,
@@ -1352,6 +1366,7 @@
       "global_name": null,
       "avatar": "b1fea2d01adf092a4d086d62db5c2e3a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3730",
       "public_flags": 589824,
       "primary_guild": null,
@@ -1453,6 +1468,7 @@
       "global_name": null,
       "avatar": "e594da3ca4520c7edde5b59948e97cdc",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5821",
       "public_flags": 589824,
       "primary_guild": null,
@@ -1557,6 +1573,7 @@
       "global_name": null,
       "avatar": "5327102fd368e9ecc45f7fb9a73e9842",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2243",
       "public_flags": 65536,
       "primary_guild": null,
@@ -1656,6 +1673,7 @@
       "global_name": null,
       "avatar": "05f3ad2c91d157cd1a0bd8e904a3182e",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0659",
       "public_flags": 65536,
       "primary_guild": null,
@@ -1756,6 +1774,7 @@
       "global_name": null,
       "avatar": "37198e809dc6e1d02c979f33e6d6a285",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4167",
       "public_flags": 65536,
       "primary_guild": null,
@@ -1857,6 +1876,7 @@
       "global_name": null,
       "avatar": "12ee915c2f75d7f2c7d551819534f158",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4538",
       "public_flags": 589824,
       "primary_guild": null,
@@ -1956,6 +1976,7 @@
       "global_name": null,
       "avatar": "6ed44e27aadafd1897c633c49cf9e111",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6546",
       "public_flags": 589824,
       "primary_guild": null,
@@ -2057,6 +2078,7 @@
       "global_name": null,
       "avatar": null,
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2790",
       "public_flags": 0,
       "primary_guild": null,
@@ -2130,6 +2152,7 @@
       "global_name": null,
       "avatar": "9ba1bd6109617a4b32ef4b986793e578",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8587",
       "public_flags": 65536,
       "primary_guild": null,
@@ -2232,6 +2255,7 @@
       "global_name": null,
       "avatar": "a_bf76f4b59ab50da1065df1144d5cf46b",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3722",
       "public_flags": 589824,
       "primary_guild": null,
@@ -2335,6 +2359,7 @@
       "global_name": null,
       "avatar": "50acfed6c7c7942849e0a9a3aca32258",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4690",
       "public_flags": 0,
       "primary_guild": null,
@@ -2411,6 +2436,7 @@
       "global_name": null,
       "avatar": "4ba6202e17a1d6565d4f2c4adfd774d6",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9423",
       "public_flags": 589824,
       "primary_guild": null,
@@ -2513,6 +2539,7 @@
       "global_name": null,
       "avatar": "2f3c41097bf5e524db72836598e049ec",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4215",
       "public_flags": 65536,
       "primary_guild": null,
@@ -2613,6 +2640,7 @@
       "global_name": null,
       "avatar": "3f78f2247740a3e6a66e5725eae5c91c",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5039",
       "public_flags": 65536,
       "primary_guild": null,
@@ -2712,6 +2740,7 @@
       "global_name": null,
       "avatar": "40f0d0e46a7621b9973b7393aa60db3e",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2737",
       "public_flags": 589824,
       "primary_guild": null,
@@ -2811,6 +2840,7 @@
       "global_name": null,
       "avatar": "f10a2d7675cf85377b882dc737de0543",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5384",
       "public_flags": 0,
       "primary_guild": null,
@@ -2891,6 +2921,7 @@
       "global_name": null,
       "avatar": "b2aaa6596ebff0a23c475e1d595d873f",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6686",
       "public_flags": 65536,
       "primary_guild": null,
@@ -2992,6 +3023,7 @@
       "global_name": null,
       "avatar": "7300f6b9d38fb756cefecf39af296d5d",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5359",
       "public_flags": 589824,
       "primary_guild": null,
@@ -3094,6 +3126,7 @@
       "global_name": null,
       "avatar": "b949ebe89dbb2601b1f9ae70a81b1812",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8159",
       "public_flags": 524289,
       "primary_guild": null,
@@ -3187,6 +3220,7 @@
       "global_name": null,
       "avatar": "7de176c6ef0561f7f712e33cd21f284a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8196",
       "public_flags": 524289,
       "primary_guild": null,
@@ -3279,6 +3313,7 @@
       "global_name": null,
       "avatar": "f6a3d58cfd5999f90fb27bca521d34cd",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4065",
       "public_flags": 589825,
       "primary_guild": null,
@@ -3377,6 +3412,7 @@
       "global_name": null,
       "avatar": "2b5cd2dc89eb963155f55520a6fa0495",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2092",
       "public_flags": 589825,
       "primary_guild": null,
@@ -3477,6 +3513,7 @@
       "global_name": null,
       "avatar": "60afbb6dd3550b9a04f136566cf5ac21",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8136",
       "public_flags": 524289,
       "primary_guild": null,
@@ -3576,6 +3613,7 @@
       "global_name": null,
       "avatar": "a8079777da82533ebef1b7035f59559a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5948",
       "public_flags": 524288,
       "primary_guild": null,
@@ -3671,6 +3709,7 @@
       "global_name": null,
       "avatar": null,
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0743",
       "public_flags": 589824,
       "primary_guild": null,
@@ -3742,6 +3781,7 @@
       "global_name": null,
       "avatar": "f6a3d58cfd5999f90fb27bca521d34cd",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4065",
       "public_flags": 589825,
       "primary_guild": null,
@@ -3840,6 +3880,7 @@
       "global_name": null,
       "avatar": "7de176c6ef0561f7f712e33cd21f284a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8196",
       "public_flags": 524289,
       "primary_guild": null,
@@ -3932,6 +3973,7 @@
       "global_name": null,
       "avatar": "b949ebe89dbb2601b1f9ae70a81b1812",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8159",
       "public_flags": 524289,
       "primary_guild": null,
@@ -4025,6 +4067,7 @@
       "global_name": null,
       "avatar": "9c20c00537b280447d94201593b8683e",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5750",
       "public_flags": 589825,
       "primary_guild": null,
@@ -4127,6 +4170,7 @@
       "global_name": null,
       "avatar": "3212ca7f3e39571bd355367292ba30a5",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7896",
       "public_flags": 589825,
       "primary_guild": null,
@@ -4229,6 +4273,7 @@
       "global_name": null,
       "avatar": "f287892311029c54f77f92f5c07af5ad",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0152",
       "public_flags": 589825,
       "primary_guild": null,
@@ -4333,8 +4378,8 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
@@ -4343,8 +4388,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       }
     ],
@@ -4404,14 +4449,9 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4420,12 +4460,17 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -4466,12 +4511,6 @@
     "guild_id": "302094807046684672",
     "executables": [
       {
-        "os": "win32",
-        "name": ">javaw.exe",
-        "arguments": "net.minecraft.client.main.Main",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
@@ -4479,7 +4518,13 @@
       },
       {
         "os": "win32",
-        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "name": ">javaw.exe",
+        "arguments": "net.minecraft.client.main.Main",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "content/minecraft.exe",
         "is_launcher": false
       },
       {
@@ -4489,7 +4534,7 @@
       },
       {
         "os": "win32",
-        "name": "content/minecraft.exe",
+        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
         "is_launcher": false
       }
     ],
@@ -4523,6 +4568,7 @@
       "global_name": null,
       "avatar": "558f5a26ecb3b17c3dea3d15c1df537a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7458",
       "public_flags": 0,
       "primary_guild": null,
@@ -4613,52 +4659,38 @@
     "primary_sku_id": "491748506516717599",
     "third_party_skus": [
       {
-        "id": "271590",
-        "sku": "271590",
+        "id": "3240220",
+        "sku": "3240220",
         "distributor": "steam"
       },
       {
         "id": "491748506516717599",
         "sku": "491748506516717599",
         "distributor": "discord"
+      },
+      {
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
     "hook": true,
     "aliases": [
       "Grand Theft Auto V",
+      "Grand Theft Auto V Enhanced",
       "Grand Theft Auto V Legacy"
     ],
     "slug": "grand-theft-auto-v",
     "executables": [
       {
         "os": "win32",
-        "name": "gta5.exe",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "installers/social-club-setup.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_dumpserver",
+        "name": "grand theft auto v/gta5.exe",
         "is_launcher": false
       },
       {
@@ -4668,7 +4700,42 @@
       },
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
+        "name": "subprocess/fivem_dumpserver",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta5.exe",
         "is_launcher": false
       }
     ],
@@ -4692,6 +4759,11 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
+        "id": "Pro",
+        "sku": "Pro",
+        "distributor": "battlenet"
+      },
+      {
         "id": "2357570",
         "sku": "2357570",
         "distributor": "steam"
@@ -4700,11 +4772,6 @@
         "id": "125174",
         "sku": "125174",
         "distributor": "igdb"
-      },
-      {
-        "id": "Pro",
-        "sku": "Pro",
-        "distributor": "battlenet"
       }
     ],
     "overlay": true,
@@ -4750,13 +4817,13 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "darwin",
-        "name": "dota_osx.app",
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "dota2.exe",
+        "os": "darwin",
+        "name": "dota_osx.app",
         "is_launcher": false
       },
       {
@@ -4799,12 +4866,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       }
     ],
@@ -4839,6 +4906,7 @@
       "global_name": null,
       "avatar": "7dd9116c1287c1469cd14329cbc9c46f",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7504",
       "public_flags": 0,
       "primary_guild": null,
@@ -4860,12 +4928,12 @@
       },
       {
         "os": "win32",
-        "name": "cod23/cod23-cod.exe",
+        "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
+        "name": "cod23/cod23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -4907,17 +4975,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tslgame_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_uc.exe",
         "is_launcher": false
       },
       {
@@ -4927,7 +4990,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/tslgame_uc.exe",
+        "name": "tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame.exe",
         "is_launcher": false
       }
     ],
@@ -4968,12 +5036,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apex legends/r5apex.exe",
+        "name": "apex/r5apex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apex/r5apex.exe",
+        "name": "apex legends/r5apex.exe",
         "is_launcher": false
       }
     ],
@@ -5082,17 +5150,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "rainbowsixgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -5103,6 +5166,11 @@
       {
         "os": "win32",
         "name": "rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
         "is_launcher": false
       }
     ],
@@ -5141,6 +5209,7 @@
       "global_name": null,
       "avatar": "43df7ad3101426c8ce449614ae47ebf1",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4988",
       "public_flags": 0,
       "primary_guild": null,
@@ -5190,6 +5259,7 @@
       "global_name": null,
       "avatar": "175f4a2e3649615553d8085367b3f90f",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "4187",
       "public_flags": 0,
       "primary_guild": null,
@@ -5239,6 +5309,7 @@
       "global_name": null,
       "avatar": "9a953e0b1e69c913af3d8354e855de41",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6043",
       "public_flags": 0,
       "primary_guild": null,
@@ -5278,14 +5349,14 @@
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
-        "id": "1222670",
-        "sku": "1222670",
-        "distributor": "steam"
-      },
-      {
         "id": "3212",
         "sku": "3212",
         "distributor": "igdb"
+      },
+      {
+        "id": "1222670",
+        "sku": "1222670",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -5294,11 +5365,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "the sims 4.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "ts4_dx9_x64.exe",
         "is_launcher": false
@@ -5306,6 +5372,11 @@
       {
         "os": "win32",
         "name": "ts4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the sims 4.app",
         "is_launcher": false
       },
       {
@@ -5337,6 +5408,7 @@
       "global_name": null,
       "avatar": "78c2bd08dfd07a44f872b04c27f78f41",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6395",
       "public_flags": 0,
       "primary_guild": null,
@@ -5389,6 +5461,7 @@
       "global_name": null,
       "avatar": "da31ba4cb53774d3cad25780244ee813",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6537",
       "public_flags": 0,
       "primary_guild": null,
@@ -5476,6 +5549,7 @@
       "global_name": null,
       "avatar": "3d6a6ddf065f232dc0d93af3050954ce",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8276",
       "public_flags": 0,
       "primary_guild": null,
@@ -5493,12 +5567,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -5592,8 +5666,23 @@
     "guild_id": "113103747126747136",
     "executables": [
       {
+        "os": "darwin",
+        "name": "world of warcraft.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -5603,27 +5692,12 @@
       },
       {
         "os": "win32",
-        "name": "_beta_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "world of warcraft.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "_beta_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -5650,6 +5724,7 @@
       "global_name": null,
       "avatar": "444d067889922e42b0af99b13e5d5c72",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8967",
       "public_flags": 0,
       "primary_guild": null,
@@ -5702,6 +5777,7 @@
       "global_name": null,
       "avatar": "6d49be66d5f2b88bdfc8cc7095abdbda",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7627",
       "public_flags": 0,
       "primary_guild": null,
@@ -5758,12 +5834,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deadbydaylight-win64-shipping.exe",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
+        "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -5960,12 +6036,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "fallguys_client.exe",
+        "name": "fallguys_client_game.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "fallguys_client_game.exe",
+        "name": "fallguys_client.exe",
         "is_launcher": false
       }
     ],
@@ -5992,6 +6068,7 @@
       "global_name": null,
       "avatar": "e0e6805da2c220ad3a4a2ee74b242261",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7691",
       "public_flags": 0,
       "primary_guild": null,
@@ -6037,6 +6114,7 @@
       "global_name": null,
       "avatar": "c7bb04bdddaa82cf045b02df7168365e",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3395",
       "public_flags": 0,
       "primary_guild": null,
@@ -6093,6 +6171,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "among us - copy/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "among us - kopie/among us.exe",
         "is_launcher": false
       },
@@ -6104,11 +6187,6 @@
       {
         "os": "win32",
         "name": "among us - tou/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "among us - copy/among us.exe",
         "is_launcher": false
       }
     ],
@@ -6144,23 +6222,23 @@
     "guild_id": "251072485095636994",
     "executables": [
       {
-        "os": "darwin",
-        "name": "terraria.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "terraria/terraria.exe",
         "is_launcher": false
       },
       {
-        "os": "linux",
-        "name": "terraria.bin.x86",
+        "os": "win32",
+        "name": "terraria.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "terraria.exe",
+        "os": "darwin",
+        "name": "terraria.app",
+        "is_launcher": false
+      },
+      {
+        "os": "linux",
+        "name": "terraria.bin.x86",
         "is_launcher": false
       }
     ],
@@ -6184,14 +6262,14 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "com.ninjakiwi.bloonstd6",
-        "sku": "com.ninjakiwi.bloonstd6",
-        "distributor": "google_play"
-      },
-      {
         "id": "960090",
         "sku": "960090",
         "distributor": "steam"
+      },
+      {
+        "id": "com.ninjakiwi.bloonstd6",
+        "sku": "com.ninjakiwi.bloonstd6",
+        "distributor": "google_play"
       }
     ],
     "hook": true,
@@ -6201,7 +6279,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bloonstd6/bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       },
       {
@@ -6211,7 +6289,7 @@
       },
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       }
     ],
@@ -6250,6 +6328,7 @@
       "global_name": null,
       "avatar": "c42edcc1bbc6272f4abf9724648ff602",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2103",
       "public_flags": 0,
       "primary_guild": null,
@@ -6429,12 +6508,6 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": ">hl2.exe",
         "arguments": "-game garrysmod",
@@ -6443,6 +6516,12 @@
       {
         "os": "win32",
         "name": "hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -6509,14 +6588,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2344520",
-        "sku": "2344520",
-        "distributor": "steam"
-      },
-      {
         "id": "125165",
         "sku": "125165",
         "distributor": "igdb"
+      },
+      {
+        "id": "2344520",
+        "sku": "2344520",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -6525,6 +6604,7 @@
       "global_name": null,
       "avatar": "3b8d5467c617dfd06b4d9e5eee5d52ba",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2499",
       "public_flags": 0,
       "primary_guild": null,
@@ -6582,17 +6662,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "brawlhalla.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "brawlhalla.exe",
         "is_launcher": false
       }
     ],
@@ -6656,12 +6736,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "beamng.drive.x64.exe",
+        "name": "beamng.drive.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "beamng.drive.exe",
+        "name": "beamng.drive.x64.exe",
         "is_launcher": false
       }
     ],
@@ -6734,12 +6814,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       }
     ],
@@ -6765,14 +6845,14 @@
     "primary_sku_id": "494959992483348480",
     "third_party_skus": [
       {
-        "id": "230410",
-        "sku": "230410",
-        "distributor": "steam"
-      },
-      {
         "id": "494959992483348480",
         "sku": "494959992483348480",
         "distributor": "discord"
+      },
+      {
+        "id": "230410",
+        "sku": "230410",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -6781,6 +6861,7 @@
       "global_name": null,
       "avatar": "d007b246f69d95b1d2675d1908113504",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2298",
       "public_flags": 0,
       "primary_guild": null,
@@ -6842,12 +6923,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -6871,14 +6952,14 @@
     "splash": "6eb27b0dcff2889ab250106a8035fde4",
     "third_party_skus": [
       {
-        "id": "1911",
-        "sku": "1911",
-        "distributor": "igdb"
-      },
-      {
         "id": "238960",
         "sku": "238960",
         "distributor": "steam"
+      },
+      {
+        "id": "1911",
+        "sku": "1911",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -6890,12 +6971,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "流亡黯道/pathofexilesteam.exe",
+        "name": "path of exile/pathofexile_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "pathofexile/pathofexileegs.exe",
+        "name": "poe/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "流亡黯道/pathofexilesteam.exe",
         "is_launcher": false
       },
       {
@@ -6915,17 +7001,12 @@
       },
       {
         "os": "win32",
-        "name": "poe/pathofexile.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "path of exile taiwan/pathofexile.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64.exe",
+        "name": "pathofexile/pathofexileegs.exe",
         "is_launcher": false
       }
     ],
@@ -6959,6 +7040,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "vrchat/start_protected_game.exe",
         "is_launcher": false
       },
@@ -6966,11 +7052,6 @@
         "os": "win32",
         "name": "vrchat/vrchat.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -7029,6 +7110,7 @@
       "global_name": null,
       "avatar": "b533b32f1ce5c65656110da926a2ab38",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3176",
       "public_flags": 0,
       "primary_guild": null,
@@ -7078,14 +7160,14 @@
     "guild_id": "132349439506382848",
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": "hl2tf.exe",
         "arguments": "-game tf",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "hl2tf.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game tf",
         "is_launcher": false
       },
@@ -7128,12 +7210,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cyberpunk2077.exe",
+        "name": "x64/cyberpunk2077.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "x64/cyberpunk2077.exe",
+        "name": "cyberpunk2077.exe",
         "is_launcher": false
       }
     ],
@@ -7167,6 +7249,7 @@
       "global_name": null,
       "avatar": "f2039761488809de552d44ebc6739ffe",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6222",
       "public_flags": 0,
       "primary_guild": null,
@@ -7225,6 +7308,7 @@
       "global_name": null,
       "avatar": "de22427dff57c8a597a62a47ef44e9ca",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9958",
       "public_flags": 0,
       "primary_guild": null,
@@ -7251,12 +7335,12 @@
       },
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
+        "name": "tmodloader/tmodloader.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       }
     ],
@@ -7341,17 +7425,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "boot/ffxivboot.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "ffxiv.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "ffxiv_dx11.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "boot/ffxivboot.exe",
         "is_launcher": false
       },
       {
@@ -7391,17 +7475,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "assettocorsa/content manager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "editor/kseditor.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "assettocorsa/acs.exe",
+        "name": "assettocorsa.exe",
         "is_launcher": false
       },
       {
@@ -7411,17 +7490,22 @@
       },
       {
         "os": "win32",
+        "name": "assettocorsa/acs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "assettocorsa/jsgme.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "server/acservermanager.exe",
+        "name": "assettocorsa/content manager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "assettocorsa.exe",
+        "name": "server/acservermanager.exe",
         "is_launcher": false
       }
     ],
@@ -7456,12 +7540,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       }
     ],
@@ -7495,6 +7579,7 @@
       "global_name": null,
       "avatar": "70ba8e85259eb8a64e66cb4cedf27b0b",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6810",
       "public_flags": 0,
       "primary_guild": null,
@@ -7544,6 +7629,7 @@
       "global_name": null,
       "avatar": "424894ab221728be81a466100446b225",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7480",
       "public_flags": 0,
       "primary_guild": null,
@@ -7631,6 +7717,7 @@
       "global_name": null,
       "avatar": "469676e3ad37898c0289283c30c2c882",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9138",
       "public_flags": 0,
       "primary_guild": null,
@@ -7683,6 +7770,7 @@
       "global_name": null,
       "avatar": "0785baa7c08a9001079c329eb084b0ae",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "1819",
       "public_flags": 0,
       "primary_guild": null,
@@ -7802,6 +7890,7 @@
       "global_name": null,
       "avatar": "03e10d5589047e80d75a27d09b6557d0",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5637",
       "public_flags": 0,
       "primary_guild": null,
@@ -7892,6 +7981,7 @@
       "global_name": null,
       "avatar": "bf95d5256f5257d2819c4dafc65f7c59",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "7004",
       "public_flags": 0,
       "primary_guild": null,
@@ -7948,17 +8038,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "dayz/dayzuninstaller.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "dayz_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "dayz.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       }
     ],
@@ -7992,6 +8082,7 @@
       "global_name": null,
       "avatar": "93ac3b8489a031b721995a99102c73f1",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "1831",
       "public_flags": 0,
       "primary_guild": null,
@@ -8115,6 +8206,7 @@
       "global_name": null,
       "avatar": "8a5c76eb325425be2084115dfcba88b3",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3982",
       "public_flags": 0,
       "primary_guild": null,
@@ -8246,13 +8338,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
+        "os": "win32",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       },
       {
@@ -8296,6 +8388,7 @@
       "global_name": null,
       "avatar": "57c496c32727e7a9ba0a74fe6c8a60be",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "1791",
       "public_flags": 0,
       "primary_guild": null,
@@ -8383,6 +8476,7 @@
       "global_name": null,
       "avatar": "d779a9d9e479c04f27d977bc6c88fe18",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "1159",
       "public_flags": 0,
       "primary_guild": null,
@@ -8471,12 +8565,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       }
     ],
@@ -8611,14 +8705,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "9804",
-        "sku": "9804",
-        "distributor": "igdb"
-      },
-      {
         "id": "216150",
         "sku": "216150",
         "distributor": "steam"
+      },
+      {
+        "id": "9804",
+        "sku": "9804",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -8661,6 +8755,7 @@
       "global_name": null,
       "avatar": "897fcf5f83ff9b9b845847176cb3048c",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2093",
       "public_flags": 0,
       "primary_guild": null,
@@ -8717,7 +8812,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/shootergame_be.exe",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
@@ -8732,7 +8827,7 @@
       },
       {
         "os": "win32",
-        "name": "shootergame.exe",
+        "name": "win64/shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -8766,6 +8861,7 @@
       "global_name": null,
       "avatar": "402bf37b1f6587aa2b82da6b20cdf36c",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0842",
       "public_flags": 0,
       "primary_guild": null,
@@ -8849,6 +8945,7 @@
       "global_name": null,
       "avatar": "3f6589f21e7b6948f57c491744cfdf42",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0564",
       "public_flags": 0,
       "primary_guild": null,
@@ -8936,6 +9033,7 @@
       "global_name": null,
       "avatar": "d6d79f145bf860513c4a322247466f03",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "2795",
       "public_flags": 0,
       "primary_guild": null,
@@ -9022,6 +9120,7 @@
       "global_name": null,
       "avatar": "908f3f31004652e1971c6e8a4b9d7c30",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5316",
       "public_flags": 0,
       "primary_guild": null,
@@ -9071,6 +9170,7 @@
       "global_name": null,
       "avatar": "08e679bae42c738a66c1b2e0e546ecc0",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0584",
       "public_flags": 0,
       "primary_guild": null,
@@ -9114,6 +9214,7 @@
       "global_name": null,
       "avatar": "746124a5a40305b92d6dc4e983fd1de2",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "6871",
       "public_flags": 65536,
       "primary_guild": null,
@@ -9133,8 +9234,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -9168,6 +9269,7 @@
       "global_name": null,
       "avatar": "555fde45979c3cb3485d4674d051f16f",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "5716",
       "public_flags": 589824,
       "primary_guild": null,
@@ -9219,6 +9321,7 @@
       "global_name": null,
       "avatar": "ef0816821b254e4605f5a75408192ba3",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3214",
       "public_flags": 589824,
       "primary_guild": null,
@@ -9266,6 +9369,7 @@
       "global_name": null,
       "avatar": "0339b2bf25ba003ad1b406211b146811",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "8768",
       "public_flags": 589824,
       "primary_guild": null,
@@ -9284,8 +9388,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -9318,6 +9422,7 @@
       "global_name": null,
       "avatar": "92dccdc75139cf9f5aaf4d9dafa290d5",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "0680",
       "public_flags": 65536,
       "primary_guild": null,
@@ -9336,8 +9441,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -9371,6 +9476,7 @@
       "global_name": null,
       "avatar": "f43bfe6b62b3c38002b3c1cb5100a11a",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3928",
       "public_flags": 65536,
       "primary_guild": null,
@@ -9435,14 +9541,9 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -9451,12 +9552,17 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -9511,22 +9617,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
         "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -9535,9 +9631,19 @@
         "is_launcher": false
       },
       {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -9563,6 +9669,7 @@
       "global_name": null,
       "avatar": "f6ce562a6b4979c4b1cbc5b436d3be76",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9282",
       "public_flags": 589824,
       "primary_guild": null,
@@ -9643,6 +9750,7 @@
       "global_name": null,
       "avatar": "4bdf24b519467ca45422f7337d093ea1",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "3549",
       "public_flags": 0,
       "primary_guild": null,
@@ -9660,12 +9768,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher.exe",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -9675,7 +9778,12 @@
       },
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "launcher/df_launcher.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -9809,6 +9917,7 @@
       "global_name": null,
       "avatar": "192d82ac9259570145b3099f51ce1faa",
       "avatar_decoration_data": null,
+      "collectibles": null,
       "discriminator": "9425",
       "public_flags": 65536,
       "primary_guild": null,
@@ -9883,16 +9992,6 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
@@ -9901,6 +10000,16 @@
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
       },
       {
         "os": "win32",
