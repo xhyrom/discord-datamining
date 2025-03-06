@@ -134,7 +134,7 @@
   app in chat.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26593412482455"
       width="624"
@@ -146,7 +146,7 @@
   <strong>Launch</strong> button.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #23272a"
+  <span style="color: #23272a" data-darkreader-inline-color=""
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26593412486679"
       width="624"
@@ -184,10 +184,19 @@
 <h2 id="h_01J8JFFXHTEY480XZ6QBFVC2TV">Typing “/”</h2>
 <p>
   To use an app’s slash commands via the chat bar, simply type
-  <strong><span style="color: #38761d">“</span></strong
-  ><strong><span style="color: #188038">/”</span></strong> in chat to bring up
-  the <strong>command picker </strong>and select the command you would like to
-  use for that app. You can also type the entire<strong> “/ (command)”</strong>
+  <strong
+    ><span style="color: #38761d" data-darkreader-inline-color=""
+      >“</span
+    ></strong
+  ><strong
+    ><span style="color: #188038" data-darkreader-inline-color=""
+      >/”</span
+    ></strong
+  >
+  in chat to bring up the <strong>command picker </strong>and select the command
+  you would like to use for that app. You can also type the entire<strong>
+    “/ (command)”</strong
+  >
   within the text box to initiate the command.
 </p>
 <p>
@@ -196,7 +205,12 @@
     target="_blank"
     rel="noopener noreferrer"
     >For more information on slash commands, check out this
-    <span class="wysiwyg-underline" style="color: #1155cc">article</span></a
+    <span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >article</span
+    ></a
   >.
 </p>
 <h2 id="h_01J8JFFXHTM9K9E1WEDJQVNRPB">Launching Apps in Voice Calls</h2>
@@ -224,15 +238,18 @@
   />
 </p>
 <h4 id="h_01J8JFFXHTZ5JQAT14PH8J4NRX">
-  <span style="color: #666666">The </span
-  ><strong><span style="color: #666666">App Launcher</span></strong
-  ><span style="color: #666666">
+  <span style="color: #666666" data-darkreader-inline-color="">The </span
+  ><strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >App Launcher</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color="">
     appears on the bottom left-hand side, or the one that appears when in
     focused view, while in a voice channel.</span
   >
 </h4>
 <h4 id="h_01J8JFFXHTC38ACJ525BYKSF6H" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26593395738775"
       width="197"
@@ -286,20 +303,18 @@
   />
 </p>
 <h3 id="h_01J8JFFXHTAHGMNY07NC8GBBY3">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Note: Every app is different. To learn how each app functions, check out
     the app’s profile or the </span
-  ><strong><span style="color: #434343">App Directory</span></strong
-  ><span style="color: #434343"> page for the app. </span>
-</h3>
-<h1 id="h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat </h1>
-<h3 id="h_01J8JFFXHTWJ2RFQS8ZBJZEC63">
-  <span style="color: #434343"
-    >Note: The ability to edit images in Discord chat using apps is slowly
-    rolling out to users and currently available only on the desktop and
-    browser.</span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >App Directory</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    page for the app. </span
   >
 </h3>
+<h1 id="h_01J8JFFXHTAHHEJK5CZYQVYB43">Editing Images in Chat </h1>
 <p>
   Discord makes it easy to enhance and interact with images in chat using
   various apps. Here's how you can modify images directly within your
@@ -309,6 +324,8 @@
   1. <strong>Find the App Launcher on the image</strong>: When viewing an image
   in chat, locate the <strong>App Launcher </strong>button [<span
     style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
       width="24"
@@ -319,6 +336,8 @@
   2. <strong>Select your desired app command</strong>: Select the
   <strong>App</strong> <strong>Launcher</strong> button [<span
     style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
     ><img
       src="https://support-apps.discord.com/hc/article_attachments/26593395753495"
       width="24"
@@ -349,6 +368,14 @@
   easy-to-use apps, you can creatively modify images and make your chats even
   more engaging! 
 </p>
+<h3 id="h_01JNPNHKGJ4B2JEM6FYR08ZAAJ">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >If you want to limit the visibility of these apps in your server, you can
+    edit permissions so only a user that uses a command sees the results. You
+    can learn more about that
+    <a href="#h_01J8JFFXHV1QF8HRCTBH40H5C8">here.</a></span
+  >
+</h3>
 <h1 id="h_01J8JFFXHVNB9G8JMTQ0ES9AV7">
   Joining and Inviting Others to Join Activities
 </h1>
@@ -505,7 +532,6 @@
     If you have any apps opened in the background, please close out those apps. 
   </li>
 </ul>
-<p> </p>
 <p>
   Still experiencing issues? Please reach out to our Support team
   <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
@@ -546,6 +572,52 @@
   servers can be found within the app’s <strong>Overview</strong> section within
   the <strong>App Directory</strong>. 
 </p>
+<p><strong>Q: Who is able to manage apps in a server?</strong></p>
+<p>
+  A: To manage apps in a server, you must be the owner of the server or have the
+  <strong>Manage Server </strong>permissions enabled. 
+</p>
+<p>
+  <strong
+    >Q: Is it possible to disable apps that users in my server have installed to
+    their account?</strong
+  >
+</p>
+<p>
+  A: Although it’s not possible to fully disable these apps in your server, you
+  can edit permissions so only a user that uses a command sees the results. 
+</p>
+<p>
+  To edit permissions, head to <strong>Server Settings </strong>&gt;
+  <strong>Roles</strong> and with the correct role selected, tap on
+  <strong>Permissions</strong>. Scroll down until you see
+  <strong>Apps Permissions</strong> and make sure that
+  <strong>Use External Apps</strong> is disabled.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support-apps.discord.com/hc/article_attachments/30464802409623"
+    width="624"
+    height="467"
+  />
+</p>
+<p>
+  <strong
+    >Q: I no longer want an app that has been added in my server. How do I
+    remove the server app? </strong
+  >
+</p>
+<p>
+  A: Server apps are apps added to a server that all members can access, but
+  only users with the Manage Server permission can remove them. To remove a
+  server app, right-click the app’s bot within the
+  <strong>Members list</strong> and <strong>kick</strong> the bot. By kicking
+  the bot from the server, the app will be removed. To remove an app from a
+  server, you must be the owner of the server or have the
+  <strong>Manage Server </strong>permissions enabled. If you are in a server
+  where you want an app removed but don't have permissions, please reach out to
+  the server admin or leave the server. 
+</p>
 <p><strong>Q: Where can I use Apps?</strong></p>
 <p>
   A: Apps that are added directly to a server can be used within that server if
@@ -553,11 +625,68 @@
   that are added directly to a user’s account can be used in any server and
   DMs/group chats that the user is in.
 </p>
-<p><strong>Q: Which apps can I use to modify images sent in chat?</strong></p>
+<p><strong>Q: How do I install an app to my account?</strong></p>
+<p>
+  A: Some apps can be installed to your account directly, instead of or in
+  addition to a server. Some developers will be updating their apps to enable
+  this functionality. If you see an app that has this feature enabled, feel free
+  to add the app to your account! 
+</p>
+<p>
+  Please note that apps that are added to your account may not have all the same
+  capabilities as apps added to a server. 
+</p>
+<p><strong>Q: Which apps can I use to modify images in Discord?</strong></p>
 <p>
   A: Currently, there are several apps for image modification within your
   conversations. More apps may become available in the future. You can also
   search for other apps in the App Launcher and App Directory.
+</p>
+<p>
+  <strong
+    >Q: My server utilizes AutoMod. Will messages from application commands be
+    affected or flagged by AutoMod?</strong
+  >
+</p>
+<p>
+  A: AutoMod will not flag messages from apps that you’ve installed onto your
+  server.
+</p>
+<p>
+  AutoMod will only flag messages from apps that are installed directly onto a
+  user’s account. Any actions taken by AutoMod will happen on the user who
+  installed the application and first used it in a server. This means if an
+  application creates a message with buttons, additional messages created from
+  interacting with those buttons will also action against the user who used the
+  command initially.
+</p>
+<p>
+  <strong
+    >Q: What data can an app access about me or my server or DM, or the people
+    in it?</strong
+  >
+</p>
+<p>
+  A: Apps you’ve added to your account can access your information that you've
+  authorized. These apps are not able to access information about your server or
+  DMs. They also do not have permissions to take action in your server or DMs,
+  other than responding to your interactions. Additionally, user installed apps
+  are not able to get information about members of your servers or DMs that have
+  not used the app. If a user does choose to interact with the app (e.g.,
+  through buttons and select menus), then the app can access their basic user
+  information, like their username, user ID, avatar, and (if in a server) your
+  server nickname, roles, and permissions. <br />Apps added to servers can
+  access data as generally described
+  <a
+    href="https://support.discord.com/hc/en-us/articles/7933951485975-Visibility-of-Bot-Data-Access"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</p>
+<p>
+  To learn more about a specific app's data practices, please refer to the app’s
+  developer or its privacy policy. 
 </p>
 <p><strong>Q: Can I play in my preferred language?</strong></p>
 <p>
@@ -589,32 +718,4 @@
     >Edit &gt; Permissions &gt; Voice Channel Permissions &gt; Use
     Activities.</strong
   >
-</p>
-<p>
-  <strong
-    >Q: What data can an app access about me or my server or DM, or the people
-    in it?</strong
-  >
-</p>
-<p>
-  A: Apps you’ve added to your account can access your information that you've
-  authorized. These apps are not able to access information about your server or
-  DMs. They also do not have permissions to take action in your server or DMs,
-  other than responding to your interactions. Additionally, user installed apps
-  are not able to get information about members of your servers or DMs that have
-  not used the app. If a user does choose to interact with the app (e.g.,
-  through buttons and select menus), then the app can access their basic user
-  information, like their username, user ID, avatar, and (if in a server) your
-  server nickname, roles, and permissions. <br />Apps added to servers can
-  access data as generally described
-  <a
-    href="https://support.discord.com/hc/articles/7933951485975-Visibility-of-Bot-Data-Access"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
-</p>
-<p>
-  To learn more about a specific app's data practices, please refer to the app’s
-  developer or its privacy policy.
 </p>
