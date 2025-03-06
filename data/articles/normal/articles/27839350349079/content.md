@@ -47,8 +47,13 @@
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
+    ><strong>Other Terms: </strong>Limit of one reward redemption per account. </span
+  >For additional Terms and Conditions, please
+  <a
+    href="https://www.playthroneandliberty.com/en-us/talandre-discord-quest-terms"
+    target="_blank"
+    rel="noopener noreferrer"
+    >see more information here.</a
   >
 </p>
 <p>
