@@ -5085,6 +5085,7 @@
             CAPTCHA: "/users/@me/captcha/verify",
             CAPTCHA_TEST: "/captcha/decider",
             AGE_ASSURANCE_TEST: "/age-verification/test",
+            VERIFY_AGE: "/age-verification/verify",
             EXPERIMENTS: "/experiments",
             LOGIN: "/auth/login",
             LOGIN_MFA: (t) => "/auth/mfa/".concat(t),
@@ -7690,6 +7691,9 @@
           (r.SAFETY_HUB_ACTION = "safety_hub_action"),
           (r.AGE_VERIFICATION_MODAL_VIEWED = "age_verification_modal_viewed"),
           (r.AGE_VERIFICATION_MODAL_CLICKED = "age_verification_modal_clicked"),
+          (r.AGE_VERIFICATION_DM_CLICKED = "age_verification_dm_clicked"),
+          (r.NSFW_SPACE_WARNING_MODAL_VIEWED =
+            "nsfw_space_warning_modal_viewed"),
           (r.BOOSTING_UPSELL_VIEWED = "boosting_upsell_viewed"),
           (r.BOOSTING_UPSELL_CLICKED = "boosting_upsell_clicked"),
           (r.TNS_SKU_REPORT_SUBMITTED = "tns_sku_report_submitted"),
@@ -8535,24 +8539,24 @@
       },
       25779: function (t, e, a) {
         "use strict";
-        a.d(e, { j: () => u }), a(47120);
+        a.d(e, { j: () => I }), a(47120);
         var r = a(509068),
           n = a(804410),
           _ = a(408720),
           o = a(233517),
           i = a(931327),
           c = a(903772),
-          s = a(97145);
-        let E = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          l = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function u() {
+          s = a(97145),
+          E = a(444675);
+        let l = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function I() {
           r.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release:
-              "2025-03-05-9b95c5158d2b89da1d4eae97a2f0010c6939a546-discord_web",
+            release: E.env.SENTRY_RELEASE,
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8564,7 +8568,7 @@
                         1 === t.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                E.some(
+                l.some(
                   (t) =>
                     window.navigator.appVersion.toLowerCase().indexOf(t) >= 0,
                 )
@@ -8572,7 +8576,7 @@
                 !(0, c.e)() &&
                 "Aborted" !== t.message &&
                 "cancel captcha" !== t.message &&
-                l()
+                u()
                 ? t
                 : null;
             },
@@ -8618,8 +8622,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "374679"),
-            o.YA("builtAt", String("1741163571421"));
+            o.YA("buildNumber", "375018"),
+            o.YA("builtAt", String("1741249953158"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
