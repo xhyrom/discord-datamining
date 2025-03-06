@@ -7692,6 +7692,8 @@
           (r.AGE_VERIFICATION_DM_CLICKED = "age_verification_dm_clicked"),
           (r.NSFW_SPACE_WARNING_MODAL_VIEWED =
             "nsfw_space_warning_modal_viewed"),
+          (r.NSFW_SPACE_WARNING_MODAL_CLICKED =
+            "nsfw_space_warning_modal_clicked"),
           (r.BOOSTING_UPSELL_VIEWED = "boosting_upsell_viewed"),
           (r.BOOSTING_UPSELL_CLICKED = "boosting_upsell_clicked"),
           (r.TNS_SKU_REPORT_SUBMITTED = "tns_sku_report_submitted"),
@@ -8620,8 +8622,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "375164"),
-            o.YA("builtAt", String("1741292840748"));
+            o.YA("buildNumber", "375174"),
+            o.YA("builtAt", String("1741294433636"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
