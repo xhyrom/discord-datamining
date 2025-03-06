@@ -5839,10 +5839,8 @@
             FINISH_MFA_CHECK: "/mfa/finish",
             CREATE_USER_OFFER: (t, e) =>
               "/user-offers/create/".concat(e, "/").concat(t),
-            DELETE_USER_OFFER: (t, e) =>
+            UPDATE_USER_OFFER: (t, e) =>
               "/user-offers/".concat(e, "/").concat(t),
-            UNACK_USER_OFFER: (t, e) =>
-              "/user-offers/".concat(e, "/").concat(t, "/unack"),
             USER_OFFERS: "/user-offers",
             USER_OFFER_IDS: "/user-offer-ids",
             GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY: (t) =>
@@ -8622,8 +8620,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "375040"),
-            o.YA("builtAt", String("1741281638149"));
+            o.YA("buildNumber", "375049"),
+            o.YA("builtAt", String("1741282842311"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
