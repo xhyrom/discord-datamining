@@ -28,6 +28,30 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: THRONE AND LIBERTY<br /></strong
+  ><strong>Quest Name: Wilds of Talandre Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>THRONE AND LIBERTY </strong>to receive an
+  <strong>Amitoi &amp; Coin Bundle</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on PC, PlayStation 5, Xbox Series X, and Xbox Series S
+  where both <strong>Discord</strong> and
+  <strong>THRONE AND LIBERTY</strong> are available. Discord’s premium services
+  are restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Wilds of Talandre Quest</strong> can be accepted on Discord from
+  <strong>March 6, 2025</strong> until
+  <strong>March 12, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>May 6, 2025 (0:00 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p>
   <strong>Quest Video: The Wilds Are Calling<br /></strong
   ><strong>Quest Name: Monster Hunter Wilds Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
