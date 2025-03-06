@@ -6316,6 +6316,7 @@
             CONNECTIONS: "Connections",
             CONNECTIONS_XBOX: "Connections Xbox",
             AUTHORIZED_APPS: "Authorized Apps",
+            AUTHORIZED_APP: "Authorized App",
             TEXT: "Text & Images",
             VOICE: "Voice & Video",
             PRIVACY_AND_SAFETY: "Privacy & Safety",
@@ -8622,8 +8623,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "375268"),
-            o.YA("builtAt", String("1741301538975"));
+            o.YA("buildNumber", "375281"),
+            o.YA("builtAt", String("1741302427141"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
