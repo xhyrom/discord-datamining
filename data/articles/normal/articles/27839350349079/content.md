@@ -28,6 +28,34 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: FragPunk<br /></strong
+  ><strong>Quest Name: FragPunk Launch Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>FragPunk</strong> to receive a limited-time
+  <strong>Pathojen avatar decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on desktop where both <strong>Discord</strong> and
+  <strong>FragPunk</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>FragPunk Launch Quest</strong> can be accepted on Discord from
+  <strong>March 6, 2025</strong> until
+  <strong>March 12, 2025 (4:59PM PST)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>April 12, 2025</strong>.<br />The
+  <strong>Pathojen avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>May 12, 2025 (4:59PM PST)</strong>. After this date, you will no
+  longer have access to this avatar decoration.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: THRONE AND LIBERTY<br /></strong
   ><strong>Quest Name: Wilds of Talandre Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -47,15 +75,11 @@
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per account. </span
-  >For additional Terms and Conditions, please
-  <a
-    href="https://www.playthroneandliberty.com/en-us/talandre-discord-quest-terms"
-    target="_blank"
-    rel="noopener noreferrer"
-    >see more information here.</a
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Video: The Wilds Are Calling<br /></strong
   ><strong>Quest Name: Monster Hunter Wilds Quest<br /></strong
@@ -83,6 +107,7 @@
     codes are only available in the Americas only.</span
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Seekers of Skyveil <br /></strong
   ><strong>Quest Name: Seekers of Skyveil Quest<br /></strong
@@ -106,6 +131,7 @@
     account.</span
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Fortnite<br /></strong
   ><strong>Quest Name: Fortnite Quest<br /></strong
@@ -126,6 +152,7 @@
   <strong>April 27, 2025 (11:59PM UTC)</strong>. After this date, you will no
   longer have access to this avatar decoration.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Delta Force: Black Hawk Down <br /></strong
   ><strong>Quest Name: Black Hawk Down Quest<br /></strong
@@ -146,6 +173,7 @@
   <strong>May 31, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
   >Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Overwatch 2 <br /></strong
   ><strong>Quest Name: Perked Up Quest<br /></strong
@@ -165,6 +193,7 @@
   >
   Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong
     >Quest Video: Exoborne Playtest<br />Quest Name: EXOBORNE WISHLIST Quest<br /></strong
@@ -190,6 +219,7 @@
   >
   Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Video: Sid Meier's Civilization VII<br /></strong
   ><strong>Quest Name: Sid Meier's Civilization VII Quest<br /></strong
@@ -216,6 +246,7 @@
     account.</span
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: SUPERVIVE <br /></strong
   ><strong>Quest Name: SUPERVIVE Quest<br /></strong
@@ -234,6 +265,7 @@
     >Other Terms: Limit of one reward redemption per account.</strong
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Fortnite<br /></strong
   ><strong>Quest Name: Fortnite OG S2 Quest<br /></strong
@@ -257,6 +289,7 @@
   >
   Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Strinova<br /></strong
   ><strong>Quest Name: Strinova Eika Quest<br /></strong
@@ -275,6 +308,7 @@
   >
   Limit of one reward redemption per account.<strong> </strong>
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Delta Force<br /></strong
   ><strong>Quest Name: DELTA FORCE STARFALL Quest<br /></strong
@@ -294,6 +328,7 @@
   <strong>(11:59PM UTC)</strong>. <br /><strong>Other Terms:</strong> Limit of
   one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Video: Fuchsia Agent <br /></strong
   ><strong>Quest Name: Strinova Fuchsia Quest<br /></strong
@@ -316,6 +351,7 @@
   >
   Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Strinova<br /></strong
   ><strong>Quest Name: Strinova Fuchsia Play Quest<br /></strong
@@ -337,6 +373,7 @@
     account.</span
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Once Human<br /></strong
   ><strong>Quest Name: Once Human Crazy Quest<br /></strong
@@ -355,6 +392,7 @@
   <strong>April 10, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
   >Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Marvel Rivals<br /></strong
   ><strong>Quest Name: Marvel Rivals Quest<br /></strong
@@ -378,6 +416,7 @@
   >
   Limit of one reward redemption per account.
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: VALORANT<br /></strong
   ><strong>Quest Name: GO GET EM WINGS Quest <br /></strong
@@ -450,6 +489,7 @@
   ><strong>February 13, 2025</strong>.<br /><strong>Other Terms:</strong> Limit
   of one reward redemption per account. 
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Off The Grid <br /></strong
   ><strong>Quest Name: Off The Grid Quest<br /></strong
@@ -469,187 +509,6 @@
   >Complete the quest requirements during this period and claim your reward by
   <strong>March 6, 2025 (23:59 UTC).<br /></strong
   ><strong>Other Terms:</strong> Limit of one reward redemption per account.
-</p>
-<p>
-  <strong>Quest Game: Wuthering Waves<br /></strong
-  ><strong>Quest Name: V2.0 WUWA Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Wuthering</strong> <strong>Waves</strong> to receive a
-  <strong>V1.2 WUWA Quest Pack</strong> including: 
-</p>
-<ul>
-  <li><strong>Shell Credit x20,000</strong></li>
-  <li><strong>Advanced Resonance Potion x3</strong></li>
-  <li><strong>Advanced Energy Core x3</strong></li>
-  <li><strong>Astrite x30</strong></li>
-</ul>
-<p>
-  <strong>Who is Eligible: </strong>Available to players on
-  <strong>PC and PlayStation 5 </strong>where both<strong> Discord </strong
-  >and<strong> Wuthering Waves </strong>are available. Discord’s premium
-  services are restricted in some regions. <br /><strong
-    >Availability Period: </strong
-  >The <strong>V2.0 WUWA Quest</strong> can be accepted on Discord from
-  <strong>January 6, 2025 </strong>until<strong>
-    January 12, 2025 (11:59PM UTC). <br /></strong
-  >Complete the quest requirements during this period and claim your reward
-  by<strong> March 3, 2025 (08:00PM PST).<br /></strong
-  ><strong>Other Terms:</strong> Limit of one reward redemption per account.
-</p>
-<p>
-  <strong>Quest Game: Rec Room<br /></strong><strong>Quest Name: </strong>Rec
-  Room Winter Quest<br /><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Rec Room</strong> on PC, PlayStation 4, PlayStation 5, Xbox Series X,
-  and Xbox Series S to receive the<strong>
-    Rec Room Lightning avatar decoration</strong
-  >. You can learn more about avatar decorations
-  <a
-    href="https://support.discord.com/hc/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. <br /><strong>Who is Eligible</strong>:
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Available to players on </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PC</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PlayStation 4</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PlayStation 5</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Xbox Series X</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, and </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Xbox Series S</span
-    ></strong
-  >
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >where both </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Discord
-    </span></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >and</span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor="">
-      Rec Room
-    </span></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >are available</span
-  >.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions. <br /></span
-  ><strong>Availability Period: </strong>The
-  <strong>Rec Room Winter Quest</strong> can be accepted on Discord from
-  <strong>December 23, 2024 </strong>until
-  <strong>December 29, 2024 (11:59PM UTC)</strong>. <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Complete the quest requirements during this period and claim your reward by </span
-  ><strong>January 29, 2025</strong>.<br />The Rec Room Lightning avatar
-  decoration is a limited-time avatar decoration and will only be yours as an
-  avatar decoration until <strong>March 1, 2025 (11:59PM UTC)</strong>. After
-  this date, you will no longer have access to this avatar decoration.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account. 
-</p>
-<p>
-  <strong>Quest Video:</strong> <strong>Sonic the Hedgehog 3<br /></strong
-  ><strong
-    >Quest Name:
-    <span
-      class="wysiwyg-color-black"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Sonic 3 Quest<br /></span></strong
-  ><strong>Offer Details:</strong> Watch
-  <strong>Sonic the Hedgehog 3</strong> video in Discord and unlock a
-  <strong>Shadow avatar decoration</strong>!<br /><strong
-    >Availability Period: The Sonic 3 Quest </strong
-  >can be accepted on Discord desktop app or browser client from<strong>
-    December 13, 2024 </strong
-  >until<strong> December 21, 2024 (11:59PM UTC)</strong>.  <br />Complete the
-  quest requirements during this period and claim your reward by
-  <strong>January 21, 2025</strong>.<br />The Shadow avatar decoration is a
-  limited-time avatar decoration and will only be yours as an avatar decoration
-  until <strong>February 21, 2025 (11:59PM UTC)</strong>. After this date, you
-  will no longer have access to this avatar decoration<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
-</p>
-<p>
-  <strong>Quest Video: The Game Awards 2024 Trailer<br /></strong
-  ><strong>Quest Name: The Game Awards Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch <strong>The Game Awards 2024</strong>
-  <strong>Trailer</strong> in Discord and unlock a
-  <strong>TGA Controller avatar decoration</strong>!<br /><strong
-    >Availability Period: The Game Awards Quest</strong
-  >
-  can be accepted on Discord desktop app or browser client from
-  <strong>December 11, 2024</strong> until
-  <strong>December 14, 2024 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>January 14, 2025</strong>.<br />The TGA Controller avatar decoration
-  is a limited-time avatar decoration and will only be yours as an avatar
-  decoration until <strong>February 14, 2025 (11:59PM UTC)</strong>. After this
-  date, you will no longer have access to this avatar decoration.<br /><strong
-    >Other Terms</strong
-  >: Limit of one reward redemption per account.
-</p>
-<p>
-  <strong>Quest Game: Fortnite<br /></strong
-  ><strong>Quest Name: Fortnite OG Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Fortnite</strong> on <strong>PC</strong>,
-  <strong>PlayStation 4</strong>,<strong> PlayStation 5</strong>,<strong>
-    Xbox Series X</strong
-  >,<strong> and Xbox Series S</strong> to receive the
-  <strong>Shield Potion avatar decoration</strong>. You can learn more about
-  avatar decorations
-  <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.<br /><strong>Who is Eligible:</strong> Available to players on PC,
-  PlayStation 4, PlayStation 5, Xbox Series X, and Xbox Series S where both
-  <strong>Discord</strong> and <strong>Fortnite</strong> are available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: The Fortnite OG Quest </strong
-  >can be accepted on Discord from
-  <strong>December 11, 2024 </strong>until<strong>
-    December 15, 2024 (11:59PM UTC). </strong
-  >Users must redeem the <strong>Shield Potion avatar decoration</strong> by
-  <strong>January 15, 2025 </strong>and the
-  <strong>Bush Camper avatar decoration</strong> by
-  <strong>January 11, 2025</strong>. To receive these rewards, all quest
-  requirements must be completed within the specified timeframe.<br />The Shield
-  Potion avatar decoration is a limited-time avatar decoration and will only be
-  yours as an avatar decoration until
-  <strong>February 15, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.<br /><strong>Other Terms</strong
-  >: Limit of one reward redemption per account.
 </p>
 <p>
   <strong
