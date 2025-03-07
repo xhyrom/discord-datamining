@@ -5839,10 +5839,8 @@
             FINISH_MFA_CHECK: "/mfa/finish",
             CREATE_USER_OFFER: (t, e) =>
               "/user-offers/create/".concat(e, "/").concat(t),
-            DELETE_USER_OFFER: (t, e) =>
+            UPDATE_USER_OFFER: (t, e) =>
               "/user-offers/".concat(e, "/").concat(t),
-            UNACK_USER_OFFER: (t, e) =>
-              "/user-offers/".concat(e, "/").concat(t, "/unack"),
             USER_OFFERS: "/user-offers",
             USER_OFFER_IDS: "/user-offer-ids",
             GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY: (t) =>
@@ -6318,6 +6316,7 @@
             CONNECTIONS: "Connections",
             CONNECTIONS_XBOX: "Connections Xbox",
             AUTHORIZED_APPS: "Authorized Apps",
+            AUTHORIZED_APP: "Authorized App",
             TEXT: "Text & Images",
             VOICE: "Voice & Video",
             PRIVACY_AND_SAFETY: "Privacy & Safety",
@@ -7694,6 +7693,8 @@
           (r.AGE_VERIFICATION_DM_CLICKED = "age_verification_dm_clicked"),
           (r.NSFW_SPACE_WARNING_MODAL_VIEWED =
             "nsfw_space_warning_modal_viewed"),
+          (r.NSFW_SPACE_WARNING_MODAL_CLICKED =
+            "nsfw_space_warning_modal_clicked"),
           (r.BOOSTING_UPSELL_VIEWED = "boosting_upsell_viewed"),
           (r.BOOSTING_UPSELL_CLICKED = "boosting_upsell_clicked"),
           (r.TNS_SKU_REPORT_SUBMITTED = "tns_sku_report_submitted"),
@@ -8622,8 +8623,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "375018"),
-            o.YA("builtAt", String("1741249953158"));
+            o.YA("buildNumber", "375367"),
+            o.YA("builtAt", String("1741336688974"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;

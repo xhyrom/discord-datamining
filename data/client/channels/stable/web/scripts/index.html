@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta
-      content="width=device-width,initial-scale=1,maximum-scale=3"
+      content="width=device-width, initial-scale=1.0, maximum-scale=3.0"
       name="viewport"
     />
 
@@ -26,7 +26,8 @@
     <meta name="twitter:site" content="@discord" />
     <meta name="twitter:creator" content="@discord" />
     <!-- endsection -->
-    <script nonce="ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==">
+
+    <script nonce="OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=">
       window.GLOBAL_ENV = {
         API_ENDPOINT: "//discord.com/api",
         API_VERSION: 9,
@@ -53,7 +54,7 @@
         PROJECT_ENV: "production",
         REMOTE_AUTH_ENDPOINT: "//remote-auth-gateway.discord.gg",
         SENTRY_TAGS: {
-          buildId: "a3014e249bc2e8144f467a83d163a5b6171c1b26",
+          buildId: "104aef14d8b27cd78ebdfb4e079885b76819dc3e",
           buildType: "normal",
         },
         MIGRATION_SOURCE_ORIGIN: "https://discordapp.com",
@@ -64,91 +65,91 @@
         DEV_SESSION_KEY: "undefined",
       };
     </script>
-    <script nonce="ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==">
+
+    <script nonce="OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=">
       !(function () {
-        if (null != window.WebSocket) {
-          if (
-            (function (n) {
-              try {
-                var o = localStorage.getItem(n);
-                return null == o ? null : JSON.parse(o);
-              } catch (n) {
-                return null;
-              }
-            })("token") &&
-            !window.__OVERLAY__
-          ) {
-            var n =
-                null != window.DiscordNative || null != window.require
-                  ? "etf"
-                  : "json",
-              o =
-                window.GLOBAL_ENV.GATEWAY_ENDPOINT +
-                "/?encoding=" +
+        if (
+          null != window.WebSocket &&
+          (function (n) {
+            try {
+              var o = localStorage.getItem(n);
+              if (null == o) return null;
+              return JSON.parse(o);
+            } catch (e) {
+              return null;
+            }
+          })("token") &&
+          !window.__OVERLAY__
+        ) {
+          var n =
+              null != window.DiscordNative || null != window.require
+                ? "etf"
+                : "json",
+            o =
+              window.GLOBAL_ENV.GATEWAY_ENDPOINT +
+              "/?encoding=" +
+              n +
+              "&v=" +
+              window.GLOBAL_ENV.API_VERSION;
+          null != window.DiscordNative &&
+          void 0 !== window.Uint8Array &&
+          void 0 !== window.TextDecoder
+            ? (o += "&compress=zstd-stream")
+            : void 0 !== window.Uint8Array && (o += "&compress=zlib-stream"),
+            console.log(
+              "[FAST CONNECT] " +
+                o +
+                ", encoding: " +
                 n +
-                "&v=" +
-                window.GLOBAL_ENV.API_VERSION;
-            null != window.DiscordNative &&
-            void 0 !== window.Uint8Array &&
-            void 0 !== window.TextDecoder
-              ? (o += "&compress=zstd-stream")
-              : void 0 !== window.Uint8Array && (o += "&compress=zlib-stream"),
-              console.log(
-                "[FAST CONNECT] " +
-                  o +
-                  ", encoding: " +
-                  n +
-                  ", version: " +
-                  window.GLOBAL_ENV.API_VERSION,
-              );
-            var e = new WebSocket(o);
-            e.binaryType = "arraybuffer";
-            var i = Date.now(),
-              w = { open: !1, identify: !1, gateway: o, messages: [] };
-            (e.onopen = function () {
-              console.log(
-                "[FAST CONNECT] connected in " + (Date.now() - i) + "ms",
-              ),
-                (w.open = !0);
-            }),
-              (e.onclose = e.onerror =
-                function () {
-                  window._ws = null;
-                }),
-              (e.onmessage = function (n) {
-                w.messages.push(n);
+                ", version: " +
+                window.GLOBAL_ENV.API_VERSION,
+            );
+          var e = new WebSocket(o);
+          e.binaryType = "arraybuffer";
+          var i = Date.now(),
+            r = { open: !1, identify: !1, gateway: o, messages: [] };
+          (e.onopen = function () {
+            console.log(
+              "[FAST CONNECT] connected in " + (Date.now() - i) + "ms",
+            ),
+              (r.open = !0);
+          }),
+            (e.onclose = e.onerror =
+              function () {
+                window._ws = null;
               }),
-              (window._ws = { ws: e, state: w });
-          }
+            (e.onmessage = function (n) {
+              r.messages.push(n);
+            }),
+            (window._ws = { ws: e, state: r });
         }
       })();
     </script>
+
     <!-- section:title -->
     <title>Discord</title>
     <!-- endsection -->
+    <script nonce="OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=">
+      window.__OVERLAY__ = /overlay/.test(location.pathname);
+      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
+    </script>
     <link href="/assets/favicon.ico" rel="icon" />
-    <link href="/assets/12633.0c12219d3fc44d72.css" rel="stylesheet" />
+    <link href="/assets/12633.2fff547511bb2297.css" rel="stylesheet" />
   </head>
   <body>
     <div id="app-mount"></div>
-    <script nonce="ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==">
-      window.__OVERLAY__ = /overlay/.test(location.pathname);
-    </script>
-    <script nonce="ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==">
-      window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname);
-    </script>
 
-    <script defer src="/assets/web.72e5ae3d2565a764.js"></script>
-    <script defer src="/assets/sentry.db0bef50a361a35a.js"></script>
-    <script nonce="ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==">
+    <script defer src="/assets/web.528cd9934fcae7bf.js"></script>
+    <script defer src="/assets/sentry.3bac109b897c25cc.js"></script>
+    <script nonce="OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=">
       (function () {
         function c() {
           var b = a.contentDocument || a.contentWindow.document;
           if (b) {
             var d = b.createElement("script");
-            d.nonce = "ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==";
+            d.nonce = "OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=";
             d.innerHTML =
-              "window.__CF$cv$params={r:'91c3f571efc1cf15',t:'MTc0MTI4NjE4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='ODMsMTM1LDE1NywyMywxMDgsMTQxLDEwNyw4NA==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'91cbcfc41cea05e3',t:'MTc0MTM2ODUzMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='OTUsMjE0LDIyMCwyMzEsMjUyLDI5LDE0OSwyMTk=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
