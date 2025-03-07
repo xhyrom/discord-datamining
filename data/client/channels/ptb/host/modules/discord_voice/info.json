@@ -1,16 +1,16 @@
 {
   "full": {
     "host_version": "1.0.1134",
-    "module_version": 1,
-    "package_sha256": "2f8b1e13dcb048bfa3e50640430a5032f143061c6e70903c28e1b5ea25e423da",
-    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1134/discord_voice/1/full.distro"
+    "module_version": 2,
+    "package_sha256": "6eedb3aeca160fb22ce60dea9fcc77946448fb8a7865840a6d0d49d987516e0a",
+    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1134/discord_voice/2/full.distro"
   },
   "deltas": [
     {
-      "host_version": "1.0.1133",
+      "host_version": "1.0.1134",
       "module_version": 1,
-      "package_sha256": "cc1f9844ebd32b1ac0b33d510a1cb58b3c454ec24367de0cfc503982e94a65d6",
-      "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1134/discord_voice/1/from/1.0.1133/1"
+      "package_sha256": "9542c955dacaa827d68fb1d16c231839cb856bcab2f2c1d6051e6eb796d0d5fe",
+      "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1134/discord_voice/2/from/1.0.1134/1"
     }
   ]
 }
