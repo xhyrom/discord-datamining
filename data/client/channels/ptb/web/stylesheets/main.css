@@ -16039,6 +16039,11 @@ span.clanTag__5d473 {
   width: fit-content;
   margin: 0 auto;
   margin-bottom: var(--spacing-48);
+  justify-content: space-between;
+}
+.themeResponsiveContainer__83f66 {
+  background-color: var(--bg-mod-subtle);
+  width: 100%;
 }
 .text__83f66 {
   color: var(--primary-600);
@@ -16049,8 +16054,25 @@ span.clanTag__5d473 {
     var(--guild-boosting-blue),
     var(--guild-boosting-purple)
   );
+  background-size: 120% 100%;
+  background-position: 50%;
   color: #fff;
   border-radius: var(--radius-round);
+}
+.highlight__83f66 {
+  color: var(--text-brand);
+}
+.description__83f66 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing-4);
+}
+.responsiveText__83f66 {
+  color: var(--header-secondary);
+}
+.text__83f66 {
+  color: var(--button-filled-white-text);
 }
 .wrapper__3add8 {
   text-align: center;
@@ -16194,12 +16216,18 @@ span.clanTag__5d473 {
   width: fit-content;
   background-color: var(--bg-base-primary);
   padding: var(--spacing-4) 10px;
+  margin-top: var(--spacing-12);
+}
+.labelsContainer__3add8,
+.topPerksCardLabelContainer__3add8 {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-4);
   align-items: center;
   justify-self: center;
-  margin-top: var(--spacing-12);
+}
+.labelsContainer__3add8 {
+  color: var(--text-positive);
 }
 .intObserver__3add8 {
   bottom: 0;
@@ -28354,7 +28382,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: 100%;
 }
 .planOptionSubtext_b13085 {
-  max-width: 166px;
+  max-width: 176px;
   padding-bottom: 12px;
 }
 .discountPlanOptionSubtext_b13085 {
@@ -28516,6 +28544,59 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .compactSelectGiftTitle_d947e6 {
   margin-top: 16px;
+}
+.activeFractionalPremiumBannerContainer_d947e6 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.theme-light .activeFractionalPremiumBannerContainer_d947e6 {
+  background: linear-gradient(
+    90deg,
+    rgba(133, 71, 198, 0.4),
+    rgba(184, 69, 193, 0.4) 50.24%,
+    rgba(171, 93, 138, 0.4)
+  );
+}
+.theme-dark .activeFractionalPremiumBannerContainer_d947e6 {
+  background: linear-gradient(
+    90deg,
+    rgba(133, 71, 198, 0.5),
+    rgba(184, 69, 193, 0.5) 50.24%,
+    rgba(171, 93, 138, 0.5)
+  );
+}
+.activeFractionalPremiumBannerBackgroundImage_d947e6 {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 78%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(/assets/bb502dc7cfcbbacc.svg);
+}
+.nitroIconContainer_d947e6 {
+  width: 28px;
+  height: 28px;
+  padding-right: 12px;
+}
+.theme-light .iconFractional_d947e6 {
+  display: none;
+}
+.theme-dark .iconFractional_d947e6,
+.theme-light .iconFractionalDark_d947e6 {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+.theme-dark .iconFractionalDark_d947e6 {
+  display: none;
 }
 .subscriptionCostRowAmount__3d62f {
   font-weight: 500;
