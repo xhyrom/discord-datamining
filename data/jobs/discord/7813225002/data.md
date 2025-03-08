@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7813225002](https://discord.com/jobs/7813225002)
 
-**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
+**Updated At:** Sat, 08 Mar 2025 00:39:42 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an Executive Protection Program Manager to oversee and manage our Executive Protection and Event Security programs. The Program Manager will oversee the operations of the Executive Protection team, ensuring high levels of service and professionalism. This individual will also serve as Discord’s Event Security specialist, ensuring the safety of employees and guests at Discord events. The ideal candidate is someone who has experience building programs and working in a dynamic startup environment. The Executive Protection Program Manager is a key member of the Corporate Security team and will bring initiative, creativity, and a customer service attitude to the team.&amp;nbsp;&amp;nbsp;

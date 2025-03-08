@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7798305002](https://discord.com/jobs/7798305002)
 
-**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
+**Updated At:** Sat, 08 Mar 2025 00:46:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Discord Product Creative Team is seeking an exceptional animator with expertise in frame-by-frame animation and motion design. The ideal candidate is a master of their craft, bringing a combination of technical precision and artistic flair to everything they create. You'll be a vital part of our growing Collectibles Content Creation team, responsible for creating engaging, high-quality animations that enhance the user experience. We're looking for someone who can independently craft compelling motion pieces, collaborate with other creatives, and provide clear direction and feedback to vendors. Exceptional conceptual and illustration skills are essential for this role.
