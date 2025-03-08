@@ -4698,6 +4698,7 @@
   "DISCORDIFY_ME": {
     "url": "/users/@me/avatars/discordify",
     "allowed_methods": [
+      "DELETE",
       "OPTIONS",
       "POST"
     ]
