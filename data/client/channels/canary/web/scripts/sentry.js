@@ -6859,6 +6859,7 @@
           (r.QUEST_SURVEY_DISPLAYED = "quest_survey_displayed"),
           (r.QUEST_SURVEY_SUBMITTED = "quest_survey_submitted"),
           (r.QUEST_BAR_MODE_CHANGED = "quest_bar_mode_changed"),
+          (r.QUEST_EMBED_FALLBACK_VIEWED = "quest_embed_fallback_viewed"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -8623,8 +8624,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "375705"),
-            o.YA("builtAt", String("1741484189036"));
+            o.YA("buildNumber", "375712"),
+            o.YA("builtAt", String("1741545607976"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
