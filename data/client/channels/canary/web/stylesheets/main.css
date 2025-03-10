@@ -8416,6 +8416,26 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .enable-forced-colors .videoControls_cf09d8 {
   background-color: ButtonFace;
 }
+.errorOverlay_cf09d8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.errorMessage_cf09d8 {
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 80%;
+}
 .wrapper__091cf {
   cursor: inherit;
 }
