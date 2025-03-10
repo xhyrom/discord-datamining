@@ -27,6 +27,44 @@
     >Additional Terms</span
   >
 </h1>
+<p><strong>Quest Video: The First Berserker: Khazan</strong></p>
+<p><strong>Quest Name: Khazan Video Quest</strong></p>
+<p>
+  <strong>Offer Details:</strong> Watch the <strong>Khazan </strong>video in
+  Discord and unlock the <strong>Khazan avatar decoration</strong>.
+</p>
+<p>
+  <strong>Who is Eligible: </strong>Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.
+</p>
+<p>
+  <strong>Availability Period:</strong> The
+  <strong>Khazan Video Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>March 10, 2025 </strong>until<strong>
+    March 16, 2025 (11:59PM UTC)</strong
+  >.
+</p>
+<p>
+  Complete the quest requirements during this period and claim your reward by
+  <strong>April 16, 2025 (0:00 UTC)</strong>.
+</p>
+<p>
+  The <strong>Khazan avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>May 16, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.
+</p>
+<p>
+  <span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
 <p><strong>Quest Game: Split Fiction</strong></p>
 <p><strong>Quest Name: Split Fiction Quest</strong></p>
 <p>
