@@ -1,7 +1,8 @@
 <div class="exp-box">
-  The <strong>Guilds</strong> experiment will be ending in the coming weeks and
-  will no longer be available. However, certain features from the Guilds
-  experience may continue as standalone experiments.
+  <strong>Guilds</strong> was an experimental feature available to a limited
+  number of users. At this time, we’ve closed out the Guilds experiment and this
+  feature is no longer available. Certain features that were part of the Guilds
+  experience may still be available as standalone experiments.
 </div>
 <p>
   <span class="wysiwyg-font-size-large"
