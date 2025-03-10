@@ -63,8 +63,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26429353464087"
-    width="358"
-    height="675"
+    alt="551d5abe-0c5b-42f7-bf00-3c1b01f179f0"
+    width="456"
+    height="859"
   />
 </p>
 <p>
@@ -75,8 +76,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26429353466135"
-    width="514"
-    height="349"
+    alt="de9de035-4790-4ffe-82e9-5b86310ba570"
+    width="513"
+    height="348"
   />
 </p>
 <p>
@@ -87,15 +89,17 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26429365124503"
-    width="311"
-    height="620"
+    alt="52c4dfba-5b3e-4696-9c71-41d19e2de7b6"
+    width="378"
+    height="755"
   />
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26429353471767"
-    width="374"
-    height="752"
+    alt="ca7192e4-d135-4c7d-8d7d-870b6800b72a"
+    width="342"
+    height="686"
   />
 </p>
 <p>
@@ -105,8 +109,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26429353474711"
-    width="420"
-    height="872"
+    alt="66a6bfd4-c31a-4d63-b0f4-b3c3598d35bb"
   />
 </p>
 <p>6. And you’re done! Make sure to download and store your backup codes.</p>
