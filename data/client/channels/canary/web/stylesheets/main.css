@@ -12013,7 +12013,6 @@ div.cardContainer__88e24 {
 }
 .container__4bbc6 {
   width: 100%;
-  height: 100%;
   border-radius: inherit;
   overflow: hidden;
   left: 0;
@@ -12023,12 +12022,14 @@ div.cardContainer__88e24 {
 .img__4bbc6 {
   position: absolute;
   pointer-events: none;
+  height: 100%;
 }
 .img__4bbc6 {
   -o-object-position: right;
   object-position: right;
   right: 0;
   opacity: 0.5;
+  width: auto;
 }
 .img__4bbc6.hover__4bbc6 {
   opacity: 0.8;
