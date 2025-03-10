@@ -55992,17 +55992,17 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
-  --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
   --chat-markup-line-height: 1.375rem;
+  --chat-resize-handle-width: 8px;
   --form-input-height: 48px;
   --guildbar-avatar-size: 48px;
   --guildbar-folder-size: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
-  --modal-width-small: 440px;
-  --modal-width-medium: 600px;
   --modal-width-large: 800px;
+  --modal-width-medium: 600px;
+  --modal-width-small: 440px;
 }
 .visual-refresh {
   --chat-input-icon-size: 20px;
@@ -56010,8 +56010,8 @@ html.disable-forced-colors * {
   --form-input-height: 44px;
   --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
-  --modal-width-small: 442px;
   --modal-width-medium: 602px;
+  --modal-width-small: 442px;
 }
 a,
 abbr,
