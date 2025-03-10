@@ -5676,6 +5676,8 @@
             GUILD_CONVERT_TO_CLAN: (t) => "/clan/".concat(t),
             GUILD_CLAN_DISCOVERY_INFO: (t) => "/discovery/".concat(t, "/clan"),
             GUILD_PROFILE: (t) => "/guilds/".concat(t, "/profile"),
+            GUILD_PROFILE_VISIBILITY: (t) =>
+              "/guilds/".concat(t, "/profile/visibility"),
             USER_SET_CLAN_IDENTITY: "/users/@me/clan",
             CLAN_SETTINGS: (t) => "/clan/".concat(t, "/settings"),
             DISABLE_CLAN: (t) => "/clan/".concat(t, "/disable"),
@@ -8541,23 +8543,24 @@
       },
       25779: function (t, e, a) {
         "use strict";
-        a.d(e, { j: () => u }), a(47120);
+        a.d(e, { j: () => I }), a(47120);
         var r = a(509068),
           n = a(804410),
           _ = a(408720),
           o = a(233517),
           i = a(931327),
           c = a(903772),
-          s = a(97145);
-        let E = ["oppobrowser", "realmebrowser", "heytapbrowser"],
-          l = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
-        function u() {
+          s = a(97145),
+          E = a(444675);
+        let l = ["oppobrowser", "realmebrowser", "heytapbrowser"],
+          u = (0, s.f)({ maxBudgetMinute: 1, maxBudgetHour: 3 });
+        function I() {
           r.S1({
             tunnel: "/error-reporting-proxy/web",
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d8279753d05a78cb6551f39a2712f3944ff113a9",
+            release: E.env.SENTRY_RELEASE,
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8569,7 +8572,7 @@
                         1 === t.stacktrace.frames.length),
                   ) &&
                   "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL) ||
-                E.some(
+                l.some(
                   (t) =>
                     window.navigator.appVersion.toLowerCase().indexOf(t) >= 0,
                 )
@@ -8577,7 +8580,7 @@
                 !(0, c.e)() &&
                 "Aborted" !== t.message &&
                 "cancel captcha" !== t.message &&
-                l()
+                u()
                 ? t
                 : null;
             },
@@ -8623,8 +8626,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376146"),
-            o.YA("builtAt", String("1741646826195"));
+            o.YA("buildNumber", "376155"),
+            o.YA("builtAt", String("1741647896882"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
