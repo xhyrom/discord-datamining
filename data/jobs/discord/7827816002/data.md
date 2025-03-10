@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7827816002](https://discord.com/jobs/7827816002)
 
-**Updated At:** Mon, 03 Mar 2025 22:10:50 GMT
+**Updated At:** Mon, 10 Mar 2025 21:23:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on Revenue Design is to make Discord the best place to hang out online with friends. Specifically, our Ads teams focus on helping customers and business partners extend their experience to get the most out of Discord through use of Discord Quests, our first ads product at Discord. Whether you're part of a gaming community, school club, worldwide art group, or just a handful of friends that want to spend time together, millions of people use Discord every day to find belonging, create connections, and talk. Quests help enhance those activities by giving friends something fun to accomplish, and get rewarded for it!
