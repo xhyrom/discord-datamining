@@ -110,10 +110,6 @@
     Discord users who have <strong>not</strong> had a Nitro subscription within
     10 days before signing up for this promotion
   </li>
-  <li>
-    Discord users who do <strong>not</strong> have an active trial or discount
-    offer available. 
-  </li>
 </ul>
 <p>
   <strong>Regional availability</strong>: This promotion is only available in
@@ -559,14 +555,15 @@
 </p>
 <p>
   <strong
-    >Q: I claimed and redeemed a different free trial for Discord Nitro already.
-    Can I access this promo?</strong
+    >Q: I've already claimed and redeemed a Discord Nitro free trial or discount
+    offer. Can I still access this promo?</strong
   >
 </p>
 <p>
-  A: Unfortunately, if you are currently on a free trial or have been in the
-  last 10 days before attempting to claim, you are not eligible for this
-  promotion. Have no fear, there will be more of these down the road! 
+  A: Yes! If you claimed a Discord Nitro free trial or discount during this
+  campaign period, you can still get an exclusive Spring avatar decoration.
+  Simply go to <strong>Manage Nitro</strong> and select the
+  <strong>Claim Your Avatar Decoration Card</strong>.
 </p>
 <p>
   <strong
