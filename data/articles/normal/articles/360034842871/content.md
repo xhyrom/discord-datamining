@@ -23,6 +23,11 @@
     <a href="#h_01FSJF9GT2QJMS2PRAW36WNBS8" target="_self">Join a Server</a>
     <ul>
       <li>
+        <a href="#h_01JP3D5D0WGWRH4S99P9QEV26K"
+          >Edit Your Server Settings Before Joining</a
+        >
+      </li>
+      <li>
         <a href="#h_01FSJF9P8S5RM68NK77ACPW0Y4" target="_self">Server Cap</a>
       </li>
     </ul>
@@ -61,18 +66,18 @@
     alt="how-to-join-server-server-list-left-panel.png"
   />
 </p>
-<h3 id="h_01HTZYV231HBE4905KY65GV3J9">
-  Pro Tip: <br />- You can rearrange your server list by dragging server icons
-  up and down. <br />- You can even
+<div class="tip-box">
+  <strong>Pro Tip:</strong> You can rearrange your server list by dragging
+  server icons up and down. You can even
   <a
     href="https://support.discord.com/hc/en-us/articles/360030853132-Server-Folders-101"
     target="_blank"
     rel="noopener noreferrer"
     >group servers together</a
   >
-  by dragging them on top of another! 
-</h3>
-<h1 id="h_01FSJF9GT2QJMS2PRAW36WNBS8">Join a Server </h1>
+  by dragging them on top of another!
+</div>
+<h1 id="h_01FSJF9GT2QJMS2PRAW36WNBS8">Join a Server</h1>
 <p>
   To <strong>join</strong> or
   <strong
@@ -100,10 +105,32 @@
     alt="Add-server-create-or-join-server-window.gif"
   />
 </p>
-<h2 id="h_01FSJF9P8S5RM68NK77ACPW0Y4">
-  <span class="wysiwyg-font-size-large">Server Cap</span>
+<h2 id="h_01JP3D5D0WGWRH4S99P9QEV26K">
+  <strong>Edit Your Server Settings Before Joining</strong>
 </h2>
-<p>Users can join/create up to <strong>100</strong> Discord servers. </p>
+<p>
+  If you press directly on the invite link (<em
+    >for example: https://discord.gg/wumpus</em
+  >), you can modify the following privacy and security settings
+  <strong>before</strong> officially joining the server! 
+</p>
+<ul>
+  <li>Update your server nickname</li>
+  <li>Allow direct messages from server members</li>
+  <li>Show your activity status</li>
+</ul>
+<p class="wysiwyg-text-align-left">
+  Once you press the <strong>Accept</strong> button, you’ll then join the server
+  with your preferred settings!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30574378711447"
+    alt="advanced server join flow (1).gif"
+  />
+</p>
+<h2 id="h_01JP3D4DA7M0K1BG3A9E6KV5B9"><strong>Server Cap</strong></h2>
+<p>Users can join/create up to <strong>100</strong> Discord servers.</p>
 <p class="wysiwyg-text-align-center">
   <span class="wysiwyg-font-size-medium"
     ><img
@@ -131,13 +158,11 @@
       height="163"
   /></span>
 </p>
-<h3 id="h_01HTZYV231C6PGXACHEP8B1HV8">
-  <strong
-    >Q: What happens if I'm in more than 100 servers but lose Nitro?</strong
-  ><br />A: We won’t remove you from any servers you’ve joined; however, you
-  will no longer be able to join servers until you bring the total count under
-  100.
-</h3>
+<div class="info-box">
+  <strong>What happens if I'm in more than 100 servers but lose Nitro? </strong
+  ><br />We won’t remove you from any servers you’ve joined; however, you will
+  no longer be able to join servers until you bring the total count under 100.
+</div>
 <h1 id="h_01FSJF9XAAV3PYG45CPQCFHZDN">Let's keep this ball rolling</h1>
 <p>You are now in a Discord, so what's next?</p>
 <p>Check out these guide to continue: </p>
@@ -163,12 +188,3 @@
     >
   </li>
 </ul>
-<h3 id="h_01HTZYV231M4F8T1FZW6XHXNJA">
-  If you've got other questions or want to dive deeper into Discord's features,
-  check out the rest of our Help Center, or reach out to us on <a
-    href="https://twitter.com/discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Twitter</a
-  >!
-</h3>
