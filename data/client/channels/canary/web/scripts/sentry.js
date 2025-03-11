@@ -8011,6 +8011,7 @@
           (r.APP_EMBED_VIEWED = "app_embed_viewed"),
           (r.APP_EMBED_CLICKED = "app_embed_clicked"),
           (r.APP_EMBED_LINK_COPIED = "app_embed_link_copied"),
+          (r.APP_EMBED_LINK_SENT = "app_embed_link_sent"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8627,8 +8628,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376516"),
-            o.YA("builtAt", String("1741723683342"));
+            o.YA("buildNumber", "376538"),
+            o.YA("builtAt", String("1741725340434"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
