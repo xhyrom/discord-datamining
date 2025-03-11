@@ -5057,6 +5057,7 @@
               "/phone-verifications/validate-support-ticket",
             RESEND_PHONE: "/phone-verifications/resend",
             RECENT_AVATARS: "/users/@me/avatars",
+            RECENT_AVATARS_DELETE: (t) => "/users/@me/avatars/".concat(t),
             CONNECTIONS: "/users/@me/connections",
             CONNECTIONS_AUTHORIZE: (t) =>
               "/connections/".concat(t, "/authorize"),
@@ -8626,8 +8627,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376279"),
-            o.YA("builtAt", String("1741669984744"));
+            o.YA("buildNumber", "376285"),
+            o.YA("builtAt", String("1741677339028"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
