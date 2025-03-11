@@ -14,8 +14,8 @@
   We may tell you about Quests that we think will interest you based on the
   games you play or other information associated with your Discord account. If
   you’re not interested in receiving personalized Discord Quest promotions, you
-  can opt out of the use of your data for Quest targeting. You may still see
-  Quest promotions, but they won’t be personalized based on your activity on
+  can opt out of the use of your data for Quest personalization. You may still
+  see Quest promotions, but they won’t be personalized based on your activity on
   Discord.
 </p>
 <p>
