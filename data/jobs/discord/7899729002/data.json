@@ -29,7 +29,7 @@
     }
   ],
   "id": 7899729002,
-  "updated_at": "2025-03-07T13:10:42-05:00",
+  "updated_at": "2025-03-11T15:09:20-04:00",
   "requisition_id": "R-100829",
   "title": "Senior Data Engineer",
   "company_name": "Discord",
@@ -49,13 +49,6 @@
       "id": 4082816002,
       "name": "Remote (U.S.)",
       "location": null,
-      "child_ids": [],
-      "parent_id": null
-    },
-    {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
       "child_ids": [],
       "parent_id": null
     }
