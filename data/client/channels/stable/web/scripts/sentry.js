@@ -5057,6 +5057,7 @@
               "/phone-verifications/validate-support-ticket",
             RESEND_PHONE: "/phone-verifications/resend",
             RECENT_AVATARS: "/users/@me/avatars",
+            RECENT_AVATARS_DELETE: (t) => "/users/@me/avatars/".concat(t),
             CONNECTIONS: "/users/@me/connections",
             CONNECTIONS_AUTHORIZE: (t) =>
               "/connections/".concat(t, "/authorize"),
@@ -5676,6 +5677,8 @@
             GUILD_CONVERT_TO_CLAN: (t) => "/clan/".concat(t),
             GUILD_CLAN_DISCOVERY_INFO: (t) => "/discovery/".concat(t, "/clan"),
             GUILD_PROFILE: (t) => "/guilds/".concat(t, "/profile"),
+            GUILD_PROFILE_VISIBILITY: (t) =>
+              "/guilds/".concat(t, "/profile/visibility"),
             USER_SET_CLAN_IDENTITY: "/users/@me/clan",
             CLAN_SETTINGS: (t) => "/clan/".concat(t, "/settings"),
             DISABLE_CLAN: (t) => "/clan/".concat(t, "/disable"),
@@ -8624,8 +8627,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376136"),
-            o.YA("builtAt", String("1741646324544"));
+            o.YA("buildNumber", "376286"),
+            o.YA("builtAt", String("1741677537653"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;

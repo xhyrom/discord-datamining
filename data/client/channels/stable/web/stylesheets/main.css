@@ -7415,19 +7415,21 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .directionUp__5fbe9 {
   transform: rotate3d(0, 0, -1, 180deg);
 }
-.controlIconColor_f1ceac {
+.controlIcon_f1ceac {
+  width: 24px;
+  height: 24px;
   color: var(--interactive-normal);
   display: flex;
 }
-.controlIconColor_f1ceac.active_f1ceac,
-.controlIconColor_f1ceac:hover {
+.controlIcon_f1ceac.active_f1ceac,
+.controlIcon_f1ceac:hover {
   color: var(--interactive-active);
 }
-.controlIconColor_f1ceac.themeable_f1ceac {
+.controlIcon_f1ceac.themeable_f1ceac {
   color: var(--interactive-normal);
 }
-.controlIconColor_f1ceac.themeable_f1ceac.active_f1ceac,
-.controlIconColor_f1ceac.themeable_f1ceac:hover {
+.controlIcon_f1ceac.themeable_f1ceac.active_f1ceac,
+.controlIcon_f1ceac.themeable_f1ceac:hover {
   color: var(--interactive-active);
 }
 .experimentControlIcon_f1ceac {
@@ -7613,11 +7615,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   ),
 .colorable_f1ceac.experimentActiveLight_f1ceac:hover:not(.disabled_f1ceac) {
   background: var(--primary-230);
-}
-.buttonInnerWithText_f1ceac {
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }
 .centerButton_f1ceac {
   border-radius: 50%;
@@ -8418,6 +8415,26 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .enable-forced-colors .videoControls_cf09d8 {
   background-color: ButtonFace;
+}
+.errorOverlay_cf09d8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.errorMessage_cf09d8 {
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 80%;
 }
 .wrapper__091cf {
   cursor: inherit;
@@ -12012,23 +12029,48 @@ div.cardContainer__88e24 {
   user-select: none;
 }
 .container__4bbc6 {
+  position: absolute;
+  pointer-events: none;
   width: 100%;
   height: 100%;
   border-radius: inherit;
   overflow: hidden;
   left: 0;
   top: 0;
+  opacity: 0;
+  animation: fadeIn__4bbc6 0.3s forwards;
 }
-.container__4bbc6,
+@keyframes fadeIn__4bbc6 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.containerExit__4bbc6 {
+  animation: fadeOut__4bbc6 0.4s forwards;
+}
+@keyframes fadeOut__4bbc6 {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .img__4bbc6 {
   position: absolute;
   pointer-events: none;
-}
-.img__4bbc6 {
   -o-object-position: right;
   object-position: right;
   right: 0;
   opacity: 0.5;
+  height: 100%;
+  width: auto;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 .img__4bbc6.hover__4bbc6 {
   opacity: 0.8;
@@ -13435,6 +13477,11 @@ div.modalHeader_c28af8 {
 }
 .context__3ec70 {
   margin-bottom: 16px;
+}
+.betaTag__3ec70 {
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: baseline;
 }
 .artContainer__8162d {
   display: flex;
@@ -29343,6 +29390,15 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: 100%;
   height: 100%;
 }
+.externalProductWrapper__320c6 {
+  width: 100%;
+  height: 252px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
 .fadeInAvatarImg_d71c71 {
   animation: fadeIn_d71c71 1.5s;
 }
@@ -29678,6 +29734,11 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .buttons__78e61 > * {
   flex: 1;
+}
+.buttonRows__78e61 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .buyButton__78e61 {
   gap: 4px;
@@ -55970,17 +56031,17 @@ html.disable-forced-colors * {
     sans-serif;
 }
 :root {
-  --chat-resize-handle-width: 8px;
   --chat-input-icon-size: 24px;
   --chat-markup-line-height: 1.375rem;
+  --chat-resize-handle-width: 8px;
   --form-input-height: 48px;
   --guildbar-avatar-size: 48px;
   --guildbar-folder-size: 48px;
   --modal-horizontal-padding: 16px;
   --modal-vertical-padding: 16px;
-  --modal-width-small: 440px;
-  --modal-width-medium: 600px;
   --modal-width-large: 800px;
+  --modal-width-medium: 600px;
+  --modal-width-small: 440px;
 }
 .visual-refresh {
   --chat-input-icon-size: 20px;
@@ -55988,8 +56049,8 @@ html.disable-forced-colors * {
   --form-input-height: 44px;
   --guildbar-avatar-size: 40px;
   --modal-horizontal-padding: 24px;
-  --modal-width-small: 442px;
   --modal-width-medium: 602px;
+  --modal-width-small: 442px;
 }
 a,
 abbr,
