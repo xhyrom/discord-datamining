@@ -13478,6 +13478,11 @@ div.modalHeader_c28af8 {
 .context__3ec70 {
   margin-bottom: 16px;
 }
+.betaTag__3ec70 {
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: baseline;
+}
 .artContainer__8162d {
   display: flex;
   align-items: flex-end;
