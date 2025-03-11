@@ -6767,6 +6767,12 @@
           (r.VIBING_WUMPUS_ACTION = "vibing_wumpus_action"),
           (r.VIBING_WUMPUS_CLOSED = "vibing_wumpus_closed"),
           (r.DOWNLOAD_APP = "download_app"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_STARTED =
+            "apple_retry_pending_purchase_started"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_SUCCEEDED =
+            "apple_retry_pending_purchase_succeeded"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_FAILED =
+            "apple_retry_pending_purchase_failed"),
           (r.PAYMENT_FLOW_STARTED = "payment_flow_started"),
           (r.PAYMENT_FLOW_COMPLETED = "payment_flow_completed"),
           (r.PAYMENT_FLOW_STEP = "payment_flow_step"),
@@ -8628,8 +8634,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376588"),
-            o.YA("builtAt", String("1741728469975"));
+            o.YA("buildNumber", "376597"),
+            o.YA("builtAt", String("1741728907338"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
