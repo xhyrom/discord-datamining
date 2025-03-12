@@ -125,18 +125,15 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/360060867451"
-    alt="friend_server1.png"
-    width="635"
-    height="452"
+    alt="friend server1.png"
   />
 </p>
 <h2 id="h_d33e3809-909b-4720-899d-db26c17bafa9">
   <strong>How to Use Text and Voice Channels</strong>
 </h2>
 <p>
-  Your server is made up of <strong>text channels</strong> and<strong
-    >voice channels</strong
-  >
+  Your server is made up of <strong>text channels</strong> and
+  <strong>voice channels</strong>
 </p>
 <ul>
   <li>
@@ -154,7 +151,7 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/360060867491"
-    alt="text_chat.png"
+    alt="text chat.png"
   />
 </p>
 <ul>
