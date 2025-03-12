@@ -5818,8 +5818,6 @@
               "/users/@me/saved-messages/".concat(t, "/").concat(e),
             GET_REFERRALS_REMAINING: "/users/@me/referrals/eligibility",
             GET_REFERRAL_ELIGIBLE_USERS: "/users/@me/referrals/eligible-users",
-            GET_REFERRAL_INCENTIVE_ELIGIBILITY:
-              "/users/@me/referrals/incentive-eligibility",
             CREATE_REFERRAL_PREVIEW: (t) =>
               "/users/@me/referrals/".concat(t, "/preview"),
             CREATE_REFERRAL: (t) => "/users/@me/referrals/".concat(t),
@@ -8635,8 +8633,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "377147"),
-            o.YA("builtAt", String("1741813824010"));
+            o.YA("buildNumber", "377164"),
+            o.YA("builtAt", String("1741815042852"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
