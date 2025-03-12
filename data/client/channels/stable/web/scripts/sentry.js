@@ -6767,6 +6767,12 @@
           (r.VIBING_WUMPUS_ACTION = "vibing_wumpus_action"),
           (r.VIBING_WUMPUS_CLOSED = "vibing_wumpus_closed"),
           (r.DOWNLOAD_APP = "download_app"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_STARTED =
+            "apple_retry_pending_purchase_started"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_SUCCEEDED =
+            "apple_retry_pending_purchase_succeeded"),
+          (r.APPLE_RETRY_PENDING_PURCHASE_FAILED =
+            "apple_retry_pending_purchase_failed"),
           (r.PAYMENT_FLOW_STARTED = "payment_flow_started"),
           (r.PAYMENT_FLOW_COMPLETED = "payment_flow_completed"),
           (r.PAYMENT_FLOW_STEP = "payment_flow_step"),
@@ -8011,6 +8017,7 @@
           (r.APP_EMBED_VIEWED = "app_embed_viewed"),
           (r.APP_EMBED_CLICKED = "app_embed_clicked"),
           (r.APP_EMBED_LINK_COPIED = "app_embed_link_copied"),
+          (r.APP_EMBED_LINK_SENT = "app_embed_link_sent"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8627,8 +8634,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376817"),
-            o.YA("builtAt", String("1741748257625"));
+            o.YA("buildNumber", "376840"),
+            o.YA("builtAt", String("1741763996007"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
