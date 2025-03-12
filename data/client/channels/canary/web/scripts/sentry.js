@@ -8634,8 +8634,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "376981"),
-            o.YA("builtAt", String("1741803158774"));
+            o.YA("buildNumber", "376983"),
+            o.YA("builtAt", String("1741803276870"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
