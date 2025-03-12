@@ -28996,9 +28996,12 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .large_b52e4f {
   width: 60px;
   height: 60px;
+}
+.large_b52e4f,
+.xlarge_b52e4f {
   border-radius: var(--radius-lg);
 }
-.eighty_b52e4f {
+.xlarge_b52e4f {
   width: 80px;
   height: 80px;
 }
