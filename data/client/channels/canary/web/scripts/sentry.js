@@ -5589,6 +5589,7 @@
             HUB_EMAIL_VERIFY_SEND: "/guilds/automations/email-domain-lookup",
             GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD: (t) =>
               "/guilds/".concat(t, "/products/attachments"),
+            CHAT_WALLPAPERS: "/chat-wallpapers",
             GUILD_ROLE_SUBSCRIPTIONS_SETTINGS: (t) =>
               "/guilds/".concat(t, "/role-subscriptions/settings"),
             GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS: (t, e) =>
@@ -8634,8 +8635,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "377146"),
-            o.YA("builtAt", String("1741813716439"));
+            o.YA("buildNumber", "377147"),
+            o.YA("builtAt", String("1741813824010"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
