@@ -81,8 +81,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30570961477143"
-    width="258"
-    height="57"
+    width="415"
+    height="92"
   />
 </p>
 <h4 id="h_01JP37R8X2M7ERPQ19ZSP69M07" class="wysiwyg-text-align-center">
@@ -149,8 +149,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30570961477143"
-    width="258"
-    height="57"
+    width="414"
+    height="92"
   />
 </p>
 <h4 id="h_01JP37R8X2SG060A931ZN1MPWV" class="wysiwyg-text-align-center">
@@ -199,11 +199,11 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30570961477143"
-    width="258"
-    height="57"
+    width="414"
+    height="92"
   />
 </p>
-<h4 id="h_01JP37R8X2QW5BGPTH6D031GCW">
+<h4 id="h_01JP37R8X2QW5BGPTH6D031GCW" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
     >Microphone Settings drop-down arrow icon</span
   >
@@ -236,8 +236,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30570961477143"
-    width="258"
-    height="57"
+    width="424"
+    height="95"
   />
 </p>
 <h4 id="h_01JP37R8X2G7GKPJEZ848JNFDV" class="wysiwyg-text-align-center">
@@ -311,7 +311,7 @@
     height="564"
   />
 </p>
-<h4 id="h_01JP37R8X2E8H3BHMMRTSJMYZM">
+<h4 id="h_01JP37R8X2E8H3BHMMRTSJMYZM" class="wysiwyg-text-align-center">
   <strong
     ><span style="color: #666666" data-darkreader-inline-color=""
       >X</span
@@ -329,11 +329,11 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30570949880599"
-    width="292"
-    height="63"
+    width="440"
+    height="95"
   />
 </p>
-<h4 id="h_01JP37R8X2QRCEV0D3VKRYB2H2">
+<h4 id="h_01JP37R8X2QRCEV0D3VKRYB2H2" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
     >Example of microphone icon when a voice filter enabled</span
   >
