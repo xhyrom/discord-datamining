@@ -12038,6 +12038,8 @@ div.cardContainer__88e24 {
   left: 0;
   top: 0;
   opacity: 0;
+}
+.fadeIn__4bbc6 {
   animation: fadeIn__4bbc6 0.3s forwards;
 }
 @keyframes fadeIn__4bbc6 {
@@ -12289,7 +12291,7 @@ div.cardContainer__88e24 {
 }
 .orbsLottie_a3e8db {
   position: absolute;
-  right: -21px;
+  right: -20px;
 }
 @keyframes spin_a3e8db {
   0% {
@@ -29587,6 +29589,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .visual-refresh.density-compact .layout__20a53 {
   height: 42px;
+}
+.plated__20a53 {
+  padding-right: 32px;
 }
 .nameplateItem_fdeafc {
   width: 100%;
