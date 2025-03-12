@@ -12038,6 +12038,8 @@ div.cardContainer__88e24 {
   left: 0;
   top: 0;
   opacity: 0;
+}
+.fadeIn__4bbc6 {
   animation: fadeIn__4bbc6 0.3s forwards;
 }
 @keyframes fadeIn__4bbc6 {
