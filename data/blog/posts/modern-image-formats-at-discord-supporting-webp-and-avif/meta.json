@@ -1,0 +1,10 @@
+{
+  "id": "modern-image-formats-at-discord-supporting-webp-and-avif",
+  "title": "Modern Image Formats at Discord: Supporting WebP and AVIF",
+  "link": "https://discord.com/blog/modern-image-formats-at-discord-supporting-webp-and-avif",
+  "guid": "https://discord.com/blog/modern-image-formats-at-discord-supporting-webp-and-avif",
+  "description": "Recently Discord's Media Infrastructure team has modernized the app's image pipeline by adding support for animated WebP and AVIF formats! Join Scott Kidder as he explains how the team implemented support for these newer image formats. ",
+  "pubDate": "Wed, 12 Mar 2025 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d0c4e0932bb59c7f6271e5_2024_10_DiscordBlog_UsingDiscord-1.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d0c4e0932bb59c7f6271e5_2024_10_DiscordBlog_UsingDiscord-1.png"
+}
