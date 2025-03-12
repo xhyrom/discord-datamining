@@ -28,6 +28,38 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Drop Trailer<br /></strong
+  ><strong>Quest Name: Drop Trailer Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the <strong>Drop Trailer</strong> in
+  Discord to earn one-day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro</a
+  >! Learn more about Nitro Credits<a
+    href="https://support.discord.com/hc/en-us/articles/26362805097623"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    here</a
+  >.<br /><strong>Who is Eligible: </strong>Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Drop Video Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>March 12, 2025 </strong>until<strong>
+    March 19, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 19, 2025 (11:59 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The First Berserker: Khazan<br /></strong
   ><strong>Quest Name: Khazan Video Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the <strong>Khazan </strong>video in
@@ -131,34 +163,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Video: The Wilds Are Calling<br /></strong
-  ><strong>Quest Name: Monster Hunter Wilds Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>The Wilds Are Calling </strong>video in <strong>Discord</strong> and
-  unlock <strong>The Hunt Begins: Assistance Pack</strong>. <br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Monster Hunter Wilds Quest</strong> can be accepted on Discord
-  desktop app or browser client from <strong>February 28, 2025</strong> until
-  <strong>March 6, 2025 (11:59PM UTC).<br /></strong>Complete the quest
-  requirements during this period and claim your reward by
-  <strong>February 27, 2026 (10:59AM UTC)</strong>.  <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per account.
-    After completing the Quest, you can redeem the reward on your preferred
-    platform: PC, Xbox, or PlayStation. After selecting your preferred platform,
-    you are unable to change this or switch to another platform. PlayStation
-    codes are only available in the Americas only.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Seekers of Skyveil <br /></strong
   ><strong>Quest Name: Seekers of Skyveil Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -222,26 +226,6 @@
   requirements during this period and claim your reward by
   <strong>May 31, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
   >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Overwatch 2 <br /></strong
-  ><strong>Quest Name: Perked Up Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Overwatch 2</strong> to receive
-  <strong>5 Loot Boxes</strong>. <br /><strong>Who is Eligible: </strong
-  >Available to players in the US who are 18+ on desktop and console where
-  <strong>Discord</strong> and <strong>Overwatch 2</strong> are available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Overwatch 2 Perked Up Quest</strong> can be accepted on Discord
-  <strong>February 18, 2025 </strong>until<strong>
-    February 24, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>March 10, 2025 (0:00 UTC)</strong>.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -341,25 +325,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Strinova<br /></strong
-  ><strong>Quest Name: Strinova Eika Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Strinova </strong>to receive a
-  <strong>Eika Free Agent</strong>.<br /><strong>Who is Eligible:</strong>
-  Available to players on desktop where <strong>Discord</strong> and
-  <strong>Strinova </strong>are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period: </strong>The
-  <strong>Strinova Eika Quest </strong>can be accepted on Discord from
-  <strong>January 23, 2025</strong> until
-  <strong>January 30, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>February 24, 2025 (0:00 UTC)</strong>.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.<strong> </strong>
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Delta Force<br /></strong
   ><strong>Quest Name: DELTA FORCE STARFALL Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -403,28 +368,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Strinova<br /></strong
-  ><strong>Quest Name: Strinova Fuchsia Play Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Strinova </strong>to receive a
-  <strong>Fuchsia Free Agent</strong>.<br /><strong>Who is Eligible:</strong>
-  Available to players on desktop where <strong>Discord</strong> and
-  <strong>Strinova </strong>are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period: </strong>The
-  <strong>Strinova Fuchsia Quest </strong>can be accepted on Discord from
-  <strong>January 17, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>February 24, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Once Human<br /></strong
   ><strong>Quest Name: Once Human Crazy Quest<br /></strong
   ><strong>Offer Details: </strong>Stream 15 minutes of
@@ -465,100 +408,6 @@
     >Other Terms:</strong
   >
   Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: VALORANT<br /></strong
-  ><strong>Quest Name: GO GET EM WINGS Quest <br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>VALORANT </strong>to receive a<strong>
-    WINGMAN’S GOT IT avatar decoration</strong
-  >. You can learn more about avatar decorations
-  <a
-    href="https://support.discord.com/hc/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. <br /><strong>Who is Eligible</strong>:
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Available to players on </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PC</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PlayStation 4</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >PlayStation 5</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Xbox Series X</span
-    ></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >, and </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Xbox Series S</span
-    ></strong
-  >
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >where both </span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Discord
-    </span></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >and</span
-  ><strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor="">
-      VALORANT
-    </span></strong
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >are available</span
-  >.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions. <br /></span
-  ><strong>Availability Period: </strong>The
-  <strong>GO GET EM WINGS Quest</strong> can be accepted on Discord from
-  <strong>January 7, 2025 </strong>until
-  <strong>January 13, 2025 (11:59PM UTC)</strong>. <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Complete the quest requirements during this period and claim your reward by </span
-  ><strong>February 13, 2025</strong>.<br /><strong>Other Terms:</strong> Limit
-  of one reward redemption per account. 
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Off The Grid <br /></strong
-  ><strong>Quest Name: Off The Grid Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Off The Grid </strong>to receive an<strong>
-    Impact Junkie Set.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to players on<strong>
-    PC, PlayStation 5, Xbox Series X, </strong
-  >and<strong> Xbox Series S </strong>where both
-  <strong>Discord </strong>and<strong> Off The Grid </strong>are available.
-  Discord’s premium services are restricted in some regions.<strong
-    > <br /></strong
-  ><strong>Availability Period: </strong>The
-  <strong>Off The Grid Quest</strong> can be accepted on Discord from
-  <strong>January 6, 2025 </strong>until<strong>
-    January 12, 2025 (11:59PM UTC). <br /></strong
-  >Complete the quest requirements during this period and claim your reward by
-  <strong>March 6, 2025 (23:59 UTC).<br /></strong
-  ><strong>Other Terms:</strong> Limit of one reward redemption per account.
 </p>
 <p>
   <strong
