@@ -29599,10 +29599,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .avatarWithTextInnerClassName_fdeafc {
   padding: 0 8px !important;
 }
-.nameplatePurchased_fdeafc {
-  opacity: 0.4;
-  transition: opacity 0.5s;
-}
 .badgeDark_dd79c2 {
   background-color: var(--white-500);
   color: var(--black-500);
@@ -57225,4 +57221,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5383aeb0440513fd.css.map*/
+/*# sourceMappingURL=12633.92318b679518624c.css.map*/
