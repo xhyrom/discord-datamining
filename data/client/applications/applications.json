@@ -3396,6 +3396,1650 @@
     ]
   },
   {
+    "id": "1187013846746005515",
+    "name": "Farm Merge Valley",
+    "icon": "2a28c40c3f8ff09604450f4508a5ab86",
+    "description": "Farm, merge, grow and expand your land!\n\nWelcome to the world of farming that gets bigger and better with each discovery. Come play this part merge, part world-building puzzle game. Farm Merge Valley offers endless possibilities and combinations!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "8d6a344872d3524b58d2d1f668bb1865",
+    "bot": {
+      "id": "1187013846746005515",
+      "username": "Farm Merge Valley",
+      "global_name": null,
+      "avatar": "2a28c40c3f8ff09604450f4508a5ab86",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1040",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1158408201344135258",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+    "privacy_policy_url": "https://www.coolgames.com/privacy-policy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "29e81e92f05d7c35d1fde0f32fe424efb2d3a2ecadb994461de3117942afd678",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1232355776870223923",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 1,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Casual Game",
+      "Farming Game",
+      "Match 3",
+      "Puzzle",
+      "Single Player"
+    ]
+  },
+  {
+    "id": "1187013846746005515",
+    "name": "Farm Merge Valley",
+    "icon": "2a28c40c3f8ff09604450f4508a5ab86",
+    "description": "Farm, merge, grow and expand your land!\n\nWelcome to the world of farming that gets bigger and better with each discovery. Come play this part merge, part world-building puzzle game. Farm Merge Valley offers endless possibilities and combinations!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "8d6a344872d3524b58d2d1f668bb1865",
+    "bot": {
+      "id": "1187013846746005515",
+      "username": "Farm Merge Valley",
+      "global_name": null,
+      "avatar": "2a28c40c3f8ff09604450f4508a5ab86",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1040",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1158408201344135258",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+    "privacy_policy_url": "https://www.coolgames.com/privacy-policy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "29e81e92f05d7c35d1fde0f32fe424efb2d3a2ecadb994461de3117942afd678",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1232355776870223923",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 1,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Casual Game",
+      "Farming Game",
+      "Match 3",
+      "Puzzle",
+      "Single Player"
+    ]
+  },
+  {
+    "id": "1187013846746005515",
+    "name": "Farm Merge Valley",
+    "icon": "2a28c40c3f8ff09604450f4508a5ab86",
+    "description": "Farm, merge, grow and expand your land!\n\nWelcome to the world of farming that gets bigger and better with each discovery. Come play this part merge, part world-building puzzle game. Farm Merge Valley offers endless possibilities and combinations!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "8d6a344872d3524b58d2d1f668bb1865",
+    "bot": {
+      "id": "1187013846746005515",
+      "username": "Farm Merge Valley",
+      "global_name": null,
+      "avatar": "2a28c40c3f8ff09604450f4508a5ab86",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1040",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1158408201344135258",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+    "privacy_policy_url": "https://www.coolgames.com/privacy-policy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "29e81e92f05d7c35d1fde0f32fe424efb2d3a2ecadb994461de3117942afd678",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1232355776870223923",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 1,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Casual Game",
+      "Farming Game",
+      "Match 3",
+      "Puzzle",
+      "Single Player"
+    ]
+  },
+  {
+    "id": "1187013846746005515",
+    "name": "Farm Merge Valley",
+    "icon": "2a28c40c3f8ff09604450f4508a5ab86",
+    "description": "Farm, merge, grow and expand your land!\n\nWelcome to the world of farming that gets bigger and better with each discovery. Come play this part merge, part world-building puzzle game. Farm Merge Valley offers endless possibilities and combinations!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "8d6a344872d3524b58d2d1f668bb1865",
+    "bot": {
+      "id": "1187013846746005515",
+      "username": "Farm Merge Valley",
+      "global_name": null,
+      "avatar": "2a28c40c3f8ff09604450f4508a5ab86",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1040",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1158408201344135258",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://www.coolgames.com/terms-of-use/",
+    "privacy_policy_url": "https://www.coolgames.com/privacy-policy/",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "29e81e92f05d7c35d1fde0f32fe424efb2d3a2ecadb994461de3117942afd678",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1232355776870223923",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2024-10-22T12:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 1,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Casual Game",
+      "Farming Game",
+      "Match 3",
+      "Puzzle",
+      "Single Player"
+    ]
+  },
+  {
+    "id": "1227546263558422601",
+    "name": "Krunker Royale",
+    "icon": "b69206cb942bce58ca937ba94aa5553d",
+    "description": "Battle Royale in the Krunkerverse. Be a part of the last squad standing in a match with up to 48 players. ",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "bot": {
+      "id": "1227546263558422601",
+      "username": "Krunker Royale",
+      "global_name": null,
+      "avatar": "b69206cb942bce58ca937ba94aa5553d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7606",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "448194623580667916",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#TermsofService",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "b6c202e23c28952dfc3ecfe4069f36e4f1227178be38b4453651c2fe40dd4afe",
+    "flags": 8519690,
+    "max_participants": 48,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1346472750998618182",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 7,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Battle Royale",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
+    "id": "1227546263558422601",
+    "name": "Krunker Royale",
+    "icon": "b69206cb942bce58ca937ba94aa5553d",
+    "description": "Battle Royale in the Krunkerverse. Be a part of the last squad standing in a match with up to 48 players. ",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "bot": {
+      "id": "1227546263558422601",
+      "username": "Krunker Royale",
+      "global_name": null,
+      "avatar": "b69206cb942bce58ca937ba94aa5553d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7606",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "448194623580667916",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#TermsofService",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "b6c202e23c28952dfc3ecfe4069f36e4f1227178be38b4453651c2fe40dd4afe",
+    "flags": 8519690,
+    "max_participants": 48,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1346472750998618182",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 7,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Battle Royale",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
+    "id": "1227546263558422601",
+    "name": "Krunker Royale",
+    "icon": "b69206cb942bce58ca937ba94aa5553d",
+    "description": "Battle Royale in the Krunkerverse. Be a part of the last squad standing in a match with up to 48 players. ",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "bot": {
+      "id": "1227546263558422601",
+      "username": "Krunker Royale",
+      "global_name": null,
+      "avatar": "b69206cb942bce58ca937ba94aa5553d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7606",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "448194623580667916",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#TermsofService",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "b6c202e23c28952dfc3ecfe4069f36e4f1227178be38b4453651c2fe40dd4afe",
+    "flags": 8519690,
+    "max_participants": 48,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1346472750998618182",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 7,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Battle Royale",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
+    "id": "1227546263558422601",
+    "name": "Krunker Royale",
+    "icon": "b69206cb942bce58ca937ba94aa5553d",
+    "description": "Battle Royale in the Krunkerverse. Be a part of the last squad standing in a match with up to 48 players. ",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "bot": {
+      "id": "1227546263558422601",
+      "username": "Krunker Royale",
+      "global_name": null,
+      "avatar": "b69206cb942bce58ca937ba94aa5553d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7606",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "448194623580667916",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#TermsofService",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "b6c202e23c28952dfc3ecfe4069f36e4f1227178be38b4453651c2fe40dd4afe",
+    "flags": 8519690,
+    "max_participants": 48,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1346472750998618182",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 7,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Battle Royale",
+      "FPS",
+      "Shooter"
+    ]
+  },
+  {
+    "id": "1258330015917936700",
+    "name": "Quiz Planet",
+    "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+    "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
+    "bot": {
+      "id": "1258330015917936700",
+      "username": "Quiz Planet",
+      "global_name": null,
+      "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7366",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "dc05bbea9f951ea02f030d7fda8018d2",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1275776456408043530",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+    "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
+    "flags": 131074,
+    "max_participants": 100,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1298663472925638737",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 4,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Co-op",
+      "Competitive",
+      "Quiz",
+      "Trivia",
+      "Turn-based"
+    ]
+  },
+  {
+    "id": "1258330015917936700",
+    "name": "Quiz Planet",
+    "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+    "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
+    "bot": {
+      "id": "1258330015917936700",
+      "username": "Quiz Planet",
+      "global_name": null,
+      "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7366",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "dc05bbea9f951ea02f030d7fda8018d2",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1275776456408043530",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+    "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
+    "flags": 131074,
+    "max_participants": 100,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1298663472925638737",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 4,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Co-op",
+      "Competitive",
+      "Quiz",
+      "Trivia",
+      "Turn-based"
+    ]
+  },
+  {
+    "id": "1258330015917936700",
+    "name": "Quiz Planet",
+    "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+    "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
+    "bot": {
+      "id": "1258330015917936700",
+      "username": "Quiz Planet",
+      "global_name": null,
+      "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7366",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "dc05bbea9f951ea02f030d7fda8018d2",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1275776456408043530",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+    "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
+    "flags": 131074,
+    "max_participants": 100,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1298663472925638737",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 4,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Co-op",
+      "Competitive",
+      "Quiz",
+      "Trivia",
+      "Turn-based"
+    ]
+  },
+  {
+    "id": "1258330015917936700",
+    "name": "Quiz Planet",
+    "icon": "006dc5ef871aacae1aadeb88e12afb6e",
+    "description": "How many correct answers can you get? Team up with your friends and test your trivia skills!\n\nChallenge yourselves with a massive collection of fascinating questions spanning games, movies, sports, and many more categories. Join forces, combine your knowledge, and hit the jackpot together!\n\nReady to show off your collective smarts? Jump in and play now!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "006dc5ef871aacae1aadeb88e12afb6e",
+    "bot": {
+      "id": "1258330015917936700",
+      "username": "Quiz Planet",
+      "global_name": null,
+      "avatar": "006dc5ef871aacae1aadeb88e12afb6e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7366",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "dc05bbea9f951ea02f030d7fda8018d2",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1275776456408043530",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://lotum-legal.web.app/lotumone/en/terms.html",
+    "privacy_policy_url": "https://lotum-legal.web.app/lotumone/en/privacy-policy-discord-games.html",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "556e2e311c8a6211df2de7b393b9f1625166134a94a701a206a1cb2075b5c181",
+    "flags": 131074,
+    "max_participants": 100,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1298663472925638737",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-11-29T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 4,
+      "has_csp_exception": true,
+      "displays_advertisements": true
+    },
+    "tags": [
+      "Co-op",
+      "Competitive",
+      "Quiz",
+      "Trivia",
+      "Turn-based"
+    ]
+  },
+  {
+    "id": "1276646101914615872",
+    "name": "Mergest Kingdom",
+    "icon": "33f2e8570234fae25afcf81a61769ac5",
+    "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
+    "bot": {
+      "id": "1276646101914615872",
+      "username": "Mergest Kingdom",
+      "global_name": null,
+      "avatar": "33f2e8570234fae25afcf81a61769ac5",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0800",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1297853940192514148",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://cleverappssg.com/terms",
+    "privacy_policy_url": "https://cleverappssg.com/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1312253566794072114",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 9,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "farm",
+      "merge",
+      "simulation"
+    ]
+  },
+  {
+    "id": "1276646101914615872",
+    "name": "Mergest Kingdom",
+    "icon": "33f2e8570234fae25afcf81a61769ac5",
+    "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
+    "bot": {
+      "id": "1276646101914615872",
+      "username": "Mergest Kingdom",
+      "global_name": null,
+      "avatar": "33f2e8570234fae25afcf81a61769ac5",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0800",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1297853940192514148",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://cleverappssg.com/terms",
+    "privacy_policy_url": "https://cleverappssg.com/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1312253566794072114",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 9,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "farm",
+      "merge",
+      "simulation"
+    ]
+  },
+  {
+    "id": "1276646101914615872",
+    "name": "Mergest Kingdom",
+    "icon": "33f2e8570234fae25afcf81a61769ac5",
+    "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
+    "bot": {
+      "id": "1276646101914615872",
+      "username": "Mergest Kingdom",
+      "global_name": null,
+      "avatar": "33f2e8570234fae25afcf81a61769ac5",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0800",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1297853940192514148",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://cleverappssg.com/terms",
+    "privacy_policy_url": "https://cleverappssg.com/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1312253566794072114",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 9,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "farm",
+      "merge",
+      "simulation"
+    ]
+  },
+  {
+    "id": "1276646101914615872",
+    "name": "Mergest Kingdom",
+    "icon": "33f2e8570234fae25afcf81a61769ac5",
+    "description": "Merge together hundreds of objects in a land full of challenging quests, collect and harvest resources, design your own island by making it look the way YOU want it! Find the best ways to match and merge various pieces to erect the biggest buildings and cultivate the most fruitful plants! Help rebuild the Mergest Kingdom and make it the most magical one in the Seventh Realm!",
+    "summary": "",
+    "type": null,
+    "is_monetized": true,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "a7d7c37b7516ad88967261c8a2e3fae1",
+    "bot": {
+      "id": "1276646101914615872",
+      "username": "Mergest Kingdom",
+      "global_name": null,
+      "avatar": "33f2e8570234fae25afcf81a61769ac5",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0800",
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1297853940192514148",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://cleverappssg.com/terms",
+    "privacy_policy_url": "https://cleverappssg.com/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "117c347331603544d64271fa3a7e1e443ef213c152268ef2594683bf41ab5a31",
+    "flags": 131082,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1312253566794072114",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2024-12-31T00:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 9,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "farm",
+      "merge",
+      "simulation"
+    ]
+  },
+  {
     "id": "1211781489931452447",
     "name": "Wordle",
     "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
@@ -3418,7 +5062,7 @@
       "primary_guild": null,
       "clan": null,
       "bot": true,
-      "banner": "2ed17c1822e50a0488cb2949ec1255fe",
+      "banner": "366c0ce8c1b767440bff897a824854d0",
       "banner_color": null,
       "accent_color": null
     },
@@ -3728,7 +5372,7 @@
       "0": {}
     },
     "verify_key": "562506dbe40932b3b3c75e9ec6fb7349e64236788d34d710d1a4984317989c96",
-    "flags": 8519680,
+    "flags": 10616832,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": null,
@@ -4151,7 +5795,7 @@
     "tags": [
       "Card Battler",
       "Card Collection",
-      "Global Matches",
+      "Matchmaking",
       "PvP"
     ]
   },
@@ -4380,12 +6024,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       },
       {
@@ -4450,6 +6094,16 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
@@ -4462,16 +6116,6 @@
       {
         "os": "darwin",
         "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -4512,14 +6156,14 @@
     "guild_id": "302094807046684672",
     "executables": [
       {
-        "os": "win32",
-        "name": ">javaw.exe",
+        "os": "darwin",
+        "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": ">java",
+        "os": "win32",
+        "name": ">javaw.exe",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
@@ -4628,13 +6272,13 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       }
     ],
@@ -4665,14 +6309,14 @@
         "distributor": "steam"
       },
       {
-        "id": "491748506516717599",
-        "sku": "491748506516717599",
-        "distributor": "discord"
-      },
-      {
         "id": "271590",
         "sku": "271590",
         "distributor": "steam"
+      },
+      {
+        "id": "491748506516717599",
+        "sku": "491748506516717599",
+        "distributor": "discord"
       }
     ],
     "overlay": true,
@@ -4686,37 +6330,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "grand theft auto v enhanced/gta5_enhanced_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "gta5.exe",
         "is_launcher": false
       },
       {
@@ -4726,7 +6340,7 @@
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5_be.exe",
+        "name": "grand theft auto v/fivem.exe",
         "is_launcher": false
       },
       {
@@ -4736,7 +6350,37 @@
       },
       {
         "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
         "is_launcher": false
       }
     ],
@@ -4760,11 +6404,6 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "Pro",
-        "sku": "Pro",
-        "distributor": "battlenet"
-      },
-      {
         "id": "125174",
         "sku": "125174",
         "distributor": "igdb"
@@ -4773,6 +6412,11 @@
         "id": "2357570",
         "sku": "2357570",
         "distributor": "steam"
+      },
+      {
+        "id": "Pro",
+        "sku": "Pro",
+        "distributor": "battlenet"
       }
     ],
     "overlay": true,
@@ -4818,8 +6462,8 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "win32",
-        "name": "dota2.exe",
+        "os": "darwin",
+        "name": "dota_osx.app",
         "is_launcher": false
       },
       {
@@ -4828,8 +6472,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "dota_osx.app",
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       }
     ],
@@ -4924,12 +6568,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "mp23/mp23-cod.exe",
+        "name": "cod23/cod23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cod23/cod23-cod.exe",
+        "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       },
       {
@@ -4976,6 +6620,16 @@
     "executables": [
       {
         "os": "win32",
+        "name": "win64/tslgame_uc.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "win64/tslgame_be.exe",
         "is_launcher": false
       },
@@ -4986,17 +6640,7 @@
       },
       {
         "os": "win32",
-        "name": "tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/tslgame_uc.exe",
         "is_launcher": false
       }
     ],
@@ -5038,6 +6682,11 @@
       {
         "os": "win32",
         "name": "apex/r5apex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex/r5apex_dx12.exe",
         "is_launcher": false
       },
       {
@@ -5130,14 +6779,14 @@
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
       {
-        "id": "635",
-        "sku": "635",
-        "distributor": "uplay"
-      },
-      {
         "id": "359550",
         "sku": "359550",
         "distributor": "steam"
+      },
+      {
+        "id": "635",
+        "sku": "635",
+        "distributor": "uplay"
       }
     ],
     "overlay": true,
@@ -5151,12 +6800,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
+        "name": "rainbowsix_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -5166,12 +6815,12 @@
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rainbowsix_be.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
         "is_launcher": false
       }
     ],
@@ -5194,14 +6843,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2139460",
-        "sku": "2139460",
-        "distributor": "steam"
-      },
-      {
         "id": "204538",
         "sku": "204538",
         "distributor": "igdb"
+      },
+      {
+        "id": "2139460",
+        "sku": "2139460",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -5350,14 +6999,14 @@
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
-        "id": "3212",
-        "sku": "3212",
-        "distributor": "igdb"
-      },
-      {
         "id": "1222670",
         "sku": "1222670",
         "distributor": "steam"
+      },
+      {
+        "id": "3212",
+        "sku": "3212",
+        "distributor": "igdb"
       }
     ],
     "hook": true,
@@ -5372,17 +7021,17 @@
       },
       {
         "os": "win32",
-        "name": "ts4.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "ts4_dx9_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "ts4_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4.exe",
         "is_launcher": false
       }
     ],
@@ -5649,13 +7298,13 @@
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       },
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       }
     ],
@@ -5667,13 +7316,18 @@
     "guild_id": "113103747126747136",
     "executables": [
       {
-        "os": "darwin",
-        "name": "world of warcraft.app",
+        "os": "win32",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -5692,13 +7346,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow-64.exe",
+        "os": "darwin",
+        "name": "world of warcraft.app",
         "is_launcher": false
       }
     ],
@@ -5840,12 +7489,12 @@
       },
       {
         "os": "win32",
-        "name": "deadbydaylight-win64-shipping.exe",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
+        "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -6172,12 +7821,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
+        "name": "among us - kopie/among us.exe",
         "is_launcher": false
       },
       {
@@ -6228,13 +7877,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "terraria.app",
+        "os": "linux",
+        "name": "terraria.bin.x86",
         "is_launcher": false
       },
       {
-        "os": "linux",
-        "name": "terraria.bin.x86",
+        "os": "darwin",
+        "name": "terraria.app",
         "is_launcher": false
       },
       {
@@ -6280,17 +7929,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "cleaner/cleaner-btd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "bloonstd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bloonstd6/bloonstd6.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
@@ -6313,14 +7962,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "208476",
-        "sku": "208476",
-        "distributor": "igdb"
-      },
-      {
         "id": "2074920",
         "sku": "2074920",
         "distributor": "steam"
+      },
+      {
+        "id": "208476",
+        "sku": "208476",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -6504,13 +8153,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garrysmod/hl2.exe",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "hl2.exe",
+        "name": ">hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -6522,18 +8165,24 @@
       },
       {
         "os": "win32",
-        "name": ">hl2.exe",
+        "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/gmod.exe",
+        "name": "hl2.exe",
+        "arguments": "-game garrysmod",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bin/gmad.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/gmod.exe",
         "is_launcher": false
       }
     ],
@@ -6699,12 +8348,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "gta-sa.exe",
+        "name": "gta_sa.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "gta_sa.exe",
+        "name": "gta-sa.exe",
         "is_launcher": false
       }
     ],
@@ -6778,12 +8427,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "geometry dash/geometrydash.exe",
+        "name": "geometrydash.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "geometrydash.exe",
+        "name": "geometry dash/geometrydash.exe",
         "is_launcher": false
       }
     ],
@@ -6846,14 +8495,14 @@
     "primary_sku_id": "494959992483348480",
     "third_party_skus": [
       {
-        "id": "494959992483348480",
-        "sku": "494959992483348480",
-        "distributor": "discord"
-      },
-      {
         "id": "230410",
         "sku": "230410",
         "distributor": "steam"
+      },
+      {
+        "id": "494959992483348480",
+        "sku": "494959992483348480",
+        "distributor": "discord"
       }
     ],
     "bot": {
@@ -6924,12 +8573,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -6953,14 +8602,14 @@
     "splash": "6eb27b0dcff2889ab250106a8035fde4",
     "third_party_skus": [
       {
-        "id": "238960",
-        "sku": "238960",
-        "distributor": "steam"
-      },
-      {
         "id": "1911",
         "sku": "1911",
         "distributor": "igdb"
+      },
+      {
+        "id": "238960",
+        "sku": "238960",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -6972,22 +8621,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "path of exile/pathofexilesteam.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "poe/pathofexile.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "path of exile/pathofexile.exe",
+        "name": "path of exile taiwan/pathofexile.exe",
         "is_launcher": false
       },
       {
@@ -6997,7 +8631,7 @@
       },
       {
         "os": "win32",
-        "name": "path of exile taiwan/pathofexile.exe",
+        "name": "path of exile/pathofexilesteam.exe",
         "is_launcher": false
       },
       {
@@ -7007,7 +8641,22 @@
       },
       {
         "os": "win32",
+        "name": "path of exile/pathofexile_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "poe/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "path of exile/pathofexile_x64steam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexile.exe",
         "is_launcher": false
       }
     ],
@@ -7041,17 +8690,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/vrchat.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "vrchat/launch.exe",
         "is_launcher": true
       },
       {
         "os": "win32",
         "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "vrchat/vrchat.exe",
         "is_launcher": false
       }
     ],
@@ -7161,8 +8810,8 @@
     "guild_id": "132349439506382848",
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": ">hl2.exe",
         "arguments": "-game tf",
         "is_launcher": false
       },
@@ -7173,8 +8822,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": ">hl2.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -7211,12 +8860,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "x64/cyberpunk2077.exe",
+        "name": "cyberpunk2077.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cyberpunk2077.exe",
+        "name": "x64/cyberpunk2077.exe",
         "is_launcher": false
       }
     ],
@@ -7326,17 +8975,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "launchutils/busybox64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "tmodloader/tmodloader.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "6.0.0/dotnet.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       },
       {
@@ -7377,13 +9026,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -7431,7 +9080,7 @@
       },
       {
         "os": "win32",
-        "name": "ffxiv.exe",
+        "name": "ffxiv_dx11.exe",
         "is_launcher": false
       },
       {
@@ -7441,7 +9090,7 @@
       },
       {
         "os": "win32",
-        "name": "ffxiv_dx11.exe",
+        "name": "ffxiv.exe",
         "is_launcher": false
       }
     ],
@@ -7476,22 +9125,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "editor/kseditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/content manager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/acs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/jsgme.exe",
+        "name": "server/acservermanager.exe",
         "is_launcher": false
       },
       {
@@ -7501,7 +9135,22 @@
       },
       {
         "os": "win32",
-        "name": "server/acservermanager.exe",
+        "name": "assettocorsa/jsgme.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "editor/kseditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/content manager.exe",
         "is_launcher": false
       },
       {
@@ -7541,12 +9190,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       }
     ],
@@ -7943,12 +9592,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "hoi4.exe",
+        "name": "hearts of iron iv/hoi4.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hearts of iron iv/hoi4.exe",
+        "name": "hoi4.exe",
         "is_launcher": false
       }
     ],
@@ -8039,17 +9688,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "dayz.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "dayz_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dayz.exe",
         "is_launcher": false
       }
     ],
@@ -8168,12 +9817,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win_x64/huntgame.exe",
+        "name": "hunt showdown/hunt.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hunt showdown/hunt.exe",
+        "name": "win_x64/huntgame.exe",
         "is_launcher": false
       }
     ],
@@ -8335,17 +9984,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "isaacitempooleditor/itempooleditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "name": "roomeditor/roomeditor.exe",
         "is_launcher": false
       },
       {
@@ -8355,7 +9994,17 @@
       },
       {
         "os": "win32",
-        "name": "roomeditor/roomeditor.exe",
+        "name": "isaac-ng.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaacitempooleditor/itempooleditor.exe",
         "is_launcher": false
       }
     ],
@@ -8461,14 +10110,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125166",
-        "sku": "125166",
-        "distributor": "igdb"
-      },
-      {
         "id": "1517290",
         "sku": "1517290",
         "distributor": "steam"
+      },
+      {
+        "id": "125166",
+        "sku": "125166",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -8641,12 +10290,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "risk of rain 2.exe",
+        "name": "risk of rain 2/risk of rain 2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
+        "name": "risk of rain 2.exe",
         "is_launcher": false
       }
     ],
@@ -8706,14 +10355,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "9804",
-        "sku": "9804",
-        "distributor": "igdb"
-      },
-      {
         "id": "216150",
         "sku": "216150",
         "distributor": "steam"
+      },
+      {
+        "id": "9804",
+        "sku": "9804",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -8813,7 +10462,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "shootergame_be.exe",
+        "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
@@ -8823,12 +10477,7 @@
       },
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "shootergame.exe",
+        "name": "shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -8914,12 +10563,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       }
     ],
@@ -9553,13 +11202,13 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
@@ -9628,13 +11277,13 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
@@ -9774,17 +11423,17 @@
       },
       {
         "os": "win32",
+        "name": "deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "win64/deltaforceclient-win64-shipping.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -9849,13 +11498,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -9994,8 +11643,23 @@
     "executables": [
       {
         "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "darwin",
@@ -10005,21 +11669,6 @@
       {
         "os": "win32",
         "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
