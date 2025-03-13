@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 53,
+  "subdomain_count": 56,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -9,14 +9,15 @@
     "staging-images-2",
     "grafana-data-prd",
     "dashboard-ai-prd",
+    "us-east10004",
     "staging-gateway",
     "staging-media-2",
     "staging-media-1",
     "staging-images",
     "airflow-data-analytics-stg",
     "latency",
-    "us-east1001",
     "jupyterhub-data-analytics-prd",
+    "us-east10003",
     "static-edge.staging",
     "staging-gateway-us-east1-b",
     "datahub-stg",
@@ -35,12 +36,15 @@
     "airflow-data-analytics-prd",
     "jupyterhub-data-modeling-prd",
     "airflow-ai-stg",
+    "us-east10001",
     "jupyterhub-data-analytics-stg",
     "staging-media",
     "vector-prd",
+    "us-east10000",
     "static.staging",
     "smite-anti-abuse-prd",
     "staging",
+    "us-east10002",
     "airflow-data-prd",
     "smite-rules-api-prd",
     "updates",
@@ -52,7 +56,6 @@
     "remote-auth-gateway",
     "staging-gateway-us-east1-d",
     "staging-images-1",
-    "europe1000",
     "datahub-prd"
   ]
 }
