@@ -56145,19 +56145,16 @@ html.disable-forced-colors * {
   --channels-name-line-height: 20px;
   --channels-spine-inverted-offset-top: 2px;
   --channels-spine-offset-left: 20px;
-  --chat-markup-line-height: 1.35rem;
 }
 .visual-refresh.density-default {
   --channels-name-line-height: 24px;
   --channels-spine-inverted-offset-top: 6px;
   --channels-spine-offset-left: 24px;
-  --chat-markup-line-height: 1.375rem;
 }
 .visual-refresh.density-cozy {
   --channels-name-line-height: 28px;
   --channels-spine-inverted-offset-top: 9px;
   --channels-spine-offset-left: 28px;
-  --chat-markup-line-height: 1.4rem;
 }
 a,
 abbr,
@@ -57185,11 +57182,17 @@ img[alt] {
   --custom-channel-header-height: calc(
     var(--guildbar-avatar-size) + var(--space-xs)
   );
-  --custom-member-list-width: 265px;
-  --custom-channel-textarea-text-area-height: 54px;
+  --custom-member-list-width: 264px;
+  --custom-channel-textarea-text-area-height: calc(44px + var(--space-xs));
   --custom-chat-aligned-icon-offset: (
     (var(--chat-avatar-size) - var(--chat-input-icon-size))/2
   );
+}
+.visual-refresh.density-compact {
+  --custom-member-list-width: 256px;
+}
+.visual-refresh.density-cozy {
+  --custom-member-list-width: 268px;
 }
 .visual-refresh-chat-input {
   --custom-emoji-sprite-size: 20px;
@@ -57242,4 +57245,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9f9a7a231c1a82b8.css.map*/
+/*# sourceMappingURL=12633.ae1f6b797b36dbc5.css.map*/
