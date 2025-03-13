@@ -28,6 +28,34 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Metaphor: ReFantazio (Full Game)<br /></strong
+  ><strong>Quest Name: Metaphor Rank Up Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Metaphor: ReFantazio (Full Game) </strong>to receive a limited-time
+  <strong>Gallica avatar decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to users on PC, Playstation 4, PlayStation 5, Xbox Series X, and
+  Xbox Series S where <strong>Discord</strong> and
+  <strong>Metaphor: ReFantazio </strong>are available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Metaphor Rank Up Quest</strong> can be accepted on
+  <strong>PC, Playstation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
+    Xbox Series S</strong
+  >
+  from <strong>March 13, 2025 </strong>until<strong>
+    March 19, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 19, 2025 (0:00 UTC)</strong>.<br />The
+  <strong>Gallica avatar decoration</strong> is a limited-time avatar decoration
+  and will only be yours as an avatar decoration until
+  <strong>May 19, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Drop Trailer<br /></strong
   ><strong>Quest Name: Drop Trailer Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the <strong>Drop Trailer</strong> in
