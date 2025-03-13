@@ -8633,8 +8633,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "377387"),
-            o.YA("builtAt", String("1741831852219"));
+            o.YA("buildNumber", "377392"),
+            o.YA("builtAt", String("1741834181466"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46459,3 +46459,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
+//# sourceMappingURL=sentry.e0b8db414ac04647.js.map
