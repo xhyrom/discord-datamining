@@ -28091,6 +28091,59 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .visual-refresh .divider__58ce9 {
   background-color: var(--border-faint);
 }
+.activeFractionalPremiumBannerContainer__0687d {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.theme-light .activeFractionalPremiumBannerContainer__0687d {
+  background: linear-gradient(
+    90deg,
+    rgba(133, 71, 198, 0.4),
+    rgba(184, 69, 193, 0.4) 50.24%,
+    rgba(171, 93, 138, 0.4)
+  );
+}
+.theme-dark .activeFractionalPremiumBannerContainer__0687d {
+  background: linear-gradient(
+    90deg,
+    rgba(133, 71, 198, 0.5),
+    rgba(184, 69, 193, 0.5) 50.24%,
+    rgba(171, 93, 138, 0.5)
+  );
+}
+.activeFractionalPremiumBannerBackgroundImage__0687d {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 78%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(/assets/bb502dc7cfcbbacc.svg);
+}
+.nitroIconContainer__0687d {
+  width: 28px;
+  height: 28px;
+  padding-right: 12px;
+}
+.theme-light .iconFractional__0687d {
+  display: none;
+}
+.theme-dark .iconFractional__0687d,
+.theme-light .iconFractionalDark__0687d {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+.theme-dark .iconFractionalDark__0687d {
+  display: none;
+}
 .wrapper_c0e5ec {
   border-radius: 4px;
   transition: background-color 0.2s ease;
@@ -28692,59 +28745,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .compactSelectGiftTitle_d947e6 {
   margin-top: 16px;
-}
-.activeFractionalPremiumBannerContainer_d947e6 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-height: 48px;
-  border-radius: 4px;
-  padding: 8px 20px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.theme-light .activeFractionalPremiumBannerContainer_d947e6 {
-  background: linear-gradient(
-    90deg,
-    rgba(133, 71, 198, 0.4),
-    rgba(184, 69, 193, 0.4) 50.24%,
-    rgba(171, 93, 138, 0.4)
-  );
-}
-.theme-dark .activeFractionalPremiumBannerContainer_d947e6 {
-  background: linear-gradient(
-    90deg,
-    rgba(133, 71, 198, 0.5),
-    rgba(184, 69, 193, 0.5) 50.24%,
-    rgba(171, 93, 138, 0.5)
-  );
-}
-.activeFractionalPremiumBannerBackgroundImage_d947e6 {
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  left: 78%;
-  right: 0;
-  background-repeat: no-repeat;
-  background-image: url(/assets/bb502dc7cfcbbacc.svg);
-}
-.nitroIconContainer_d947e6 {
-  width: 28px;
-  height: 28px;
-  padding-right: 12px;
-}
-.theme-light .iconFractional_d947e6 {
-  display: none;
-}
-.theme-dark .iconFractional_d947e6,
-.theme-light .iconFractionalDark_d947e6 {
-  width: 28px;
-  height: 28px;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
-}
-.theme-dark .iconFractionalDark_d947e6 {
-  display: none;
 }
 .subscriptionCostRowAmount__3d62f {
   font-weight: 500;
@@ -57245,4 +57245,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ae1f6b797b36dbc5.css.map*/
+/*# sourceMappingURL=12633.d4017f57c2f33597.css.map*/
