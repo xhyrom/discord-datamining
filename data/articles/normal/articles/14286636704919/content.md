@@ -1,23 +1,5 @@
 <h1 id="docs-internal-guid-8f572d5e-7fff-d4bf-a25c-e575b65144ee">
-  Welcome to the Discord Support Twitter (<a
-    href="https://twitter.com/discord_support"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >@</span
-    ></a
-  ><a
-    href="https://twitter.com/discord_support"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >discord_support</span
-    ></a
-  >)!
+  Welcome to the Discord Support Twitter!
 </h1>
 <p>
   The Discord Support Twitter serves as a place for us to directly connect with
