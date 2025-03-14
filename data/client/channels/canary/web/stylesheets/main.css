@@ -12229,21 +12229,6 @@ div.cardContainer__88e24 {
   margin-top: 2px;
   margin-right: 10%;
 }
-.balanceCounterMargin__98f64 {
-  margin-left: 4px;
-}
-.balanceCounterText__98f64 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: var(--header-primary);
-  text-align: right;
-}
-.full-motion .balanceCounterText__98f64 {
-  transition:
-    all 0.4s ease-out,
-    opacity 0.4s ease-in;
-}
 .lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: var(--__lottieIconColor, var(--interactive-normal));
 }
@@ -12331,6 +12316,21 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
 .notificationBadge_a3e8db {
   position: absolute;
   right: -4.5px;
+}
+.balanceCounterMargin__98f64 {
+  margin-left: 4px;
+}
+.balanceCounterText__98f64 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: var(--header-primary);
+  text-align: right;
+}
+.full-motion .balanceCounterText__98f64 {
+  transition:
+    all 0.4s ease-out,
+    opacity 0.4s ease-in;
 }
 .wrapper__87c70 {
   position: fixed;
@@ -57088,4 +57088,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f5b0125778de9877.css.map*/
+/*# sourceMappingURL=12633.b99e061d62a66f3e.css.map*/
