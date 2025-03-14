@@ -29574,6 +29574,24 @@ html:not(.visual-refresh) .root_e5f3a9 {
   opacity: 0.4;
   transition: opacity 0.5s;
 }
+@keyframes placeholderPulse_fdeafc {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+.placeholderUsername_fdeafc {
+  border-radius: 8px;
+  height: 14px;
+  width: 100px;
+  background-color: var(--background-secondary);
+  animation: placeholderPulse_fdeafc 2s ease-in-out infinite;
+}
 .badgeDark_dd79c2 {
   background-color: var(--white-500);
   color: var(--black-500);
@@ -57058,4 +57076,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b6fdcd9d0f311c8e.css.map*/
+/*# sourceMappingURL=12633.37ed01232012ca62.css.map*/
