@@ -12061,8 +12061,12 @@ div.cardContainer__88e24 {
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
-  min-width: 320px;
   width: 100%;
+}
+@container (max-width: 320px) {
+  .img__4bbc6 {
+    width: auto;
+  }
 }
 .img__4bbc6.hover__4bbc6 {
   opacity: 0.8;
@@ -57079,4 +57083,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fd04ab3c1b328791.css.map*/
+/*# sourceMappingURL=12633.7b8faa426fb8bf1e.css.map*/
