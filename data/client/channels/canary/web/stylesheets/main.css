@@ -13569,7 +13569,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .theme-light .img__4bbc6.selected__4bbc6 {
   opacity: 1;
 }
-.account__4bbc6 {
+.account__4bbc6,
+.theme-light .account__4bbc6,
+.theme-light .account__4bbc6.hover__4bbc6 {
   opacity: 0.4;
 }
 .visual-refresh .accountContainer__4bbc6 {
@@ -57153,4 +57155,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5e30faa5902b60d1.css.map*/
+/*# sourceMappingURL=12633.7c3bcfb5bf51caa8.css.map*/
