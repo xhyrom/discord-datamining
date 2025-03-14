@@ -25,108 +25,81 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1ST1SRV8ZJG1T4RKJ"
+    <a href="#h_01HHG1XZR1ST1SRV8ZJG1T4RKJ"
       >Introduction to monetizing your server</a
     >
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1GGA87443YPDFCR0R"
+        <a href="#h_01HHG1XZR1GGA87443YPDFCR0R"
           >How can I monetize my server?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KJN764TKHNBG8WTF"
+        <a href="#h_01HHG1XZR1KJN764TKHNBG8WTF"
           >Who is eligible to monetize their servers?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1AF6GH4MTNPCXPT2B"
+        <a href="#h_01HHG1XZR1AF6GH4MTNPCXPT2B"
           >What types of content am I NOT allowed to monetize on Discord? </a
         >
       </li>
-      <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1HZ4DE9XVM69NAFQ3"
-          >How do I get started?</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1VAZKHGGZ7D4RXNMW"
-          >How do payments work?</a
-        >
-      </li>
+      <li><a href="#h_01HHG1XZR1HZ4DE9XVM69NAFQ3">How do I get started?</a></li>
+      <li><a href="#h_01HHG1XZR1VAZKHGGZ7D4RXNMW">How do payments work?</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1331MJBNBPR30KSVK"
-      >Server Subscriptions </a
-    >
+    <a href="#h_01HHG1XZR1331MJBNBPR30KSVK">Server Subscriptions </a>
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KP5DX848N5K60E1J"
+        <a href="#h_01HHG1XZR1KP5DX848N5K60E1J"
           >What are Server Subscriptions?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR18WXN305RK8Y870JZ"
+        <a href="#h_01HHG1XZR18WXN305RK8Y870JZ"
           >How do I create Server Subscriptions?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR121GMPN8CGF9T5MQR"
+        <a href="#h_01HHG1XZR121GMPN8CGF9T5MQR"
           >How do I disable Server Subscriptions? </a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR164X12W4MVD9FXVQ7"
+        <a href="#h_01HHG1XZR164X12W4MVD9FXVQ7"
           >How can a subscriber request a refund of a Server Subscription?</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1AK4K5B29Y5NDGJSK"
+    <a href="#h_01HHG1XZR1AK4K5B29Y5NDGJSK"
       >Server Subscriptions Free Trials  </a
     >
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1XJRXH14MSNEK8K81"
+        <a href="#h_01HHG1XZR1XJRXH14MSNEK8K81"
           >How do I enable Free Trials? </a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1JT5KKVZMZEFRJG3A"
+        <a href="#h_01HHG1XZR1JT5KKVZMZEFRJG3A"
           >How do I set the duration of the Free Trial? </a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR19C5E14G5J1KJPA5N"
+        <a href="#h_01HHG1XZR19C5E14G5J1KJPA5N"
           >Can I gift a free month of my Server Subscription to someone? </a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KGKG0W03120HB68Z"
+        <a href="#h_01HHG1XZR1KGKG0W03120HB68Z"
           >Can I limit the quantity of Free Trials? </a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1ZNEGWV5J56VM8JBJ"
+        <a href="#h_01HHG1XZR1ZNEGWV5J56VM8JBJ"
           >Once a Free Trial period is over will they be immediately
           charged? </a
         >
@@ -134,75 +107,52 @@
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR11S7QFE0HK12FY97Q"
+    <a href="#h_01HHG1XZR11S7QFE0HK12FY97Q"
       >Premium Emoji for Server Subscriptions</a
     >
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1XQTFPMYQMVHZTDMF"
-          >What are Premium Emoji?</a
-        >
+        <a href="#h_01HHG1XZR1XQTFPMYQMVHZTDMF">What are Premium Emoji?</a>
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1KW7H6FV9BTBXE7QT"
-      >Server Products</a
-    >
+    <a href="#h_01HHG1XZR1KW7H6FV9BTBXE7QT">Server Products</a>
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR116TN6X8XH4DAT24Z"
-          >What are Server Products?</a
-        >
+        <a href="#h_01HHG1XZR116TN6X8XH4DAT24Z">What are Server Products?</a>
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1CTKCCMSNMWS3V8GE"
+        <a href="#h_01HHG1XZR1CTKCCMSNMWS3V8GE"
           >Who can create Server Products?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1CMBM47VRQJYVDBYC"
+        <a href="#h_01HHG1XZR1CMBM47VRQJYVDBYC"
           >How do I create a Server Product?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1RNSBHVZ71DAXXHQ7"
+        <a href="#h_01HHG1XZR1RNSBHVZ71DAXXHQ7"
           >How do I delete a Server Product?</a
         >
       </li>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1RPMGV696TTFPB9XA"
+        <a href="#h_01HHG1XZR1RPMGV696TTFPB9XA"
           >How can a customer request a refund of a Server Product?</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1Z3F3Q1JJ9N7NVRD6"
-      >Other Frequently Asked Questions</a
-    >
+    <a href="#h_01HHG1XZR1Z3F3Q1JJ9N7NVRD6">Other Frequently Asked Questions</a>
     <ul>
       <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR13CA03PD67K3JQWMP"
+        <a href="#h_01HHG1XZR13CA03PD67K3JQWMP"
           >Roles, Permissions, &amp; Admins </a
         >
       </li>
-      <li>
-        <a
-          href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR23FKGH8Y1VE5QGMAB"
-          >Mobile Support</a
-        >
-      </li>
+      <li><a href="#h_01HHG1XZR23FKGH8Y1VE5QGMAB">Mobile Support</a></li>
     </ul>
   </li>
 </ul>
@@ -238,10 +188,18 @@
         You are not actively violating any of Discord’s<a
           href="https://discord.com/terms"
         >
-          <span class="wysiwyg-underline" style="color: #1155cc">Terms</span></a
+          <span
+            class="wysiwyg-underline"
+            style="color: #1155cc"
+            data-darkreader-inline-color=""
+            >Terms</span
+          ></a
         >
         or<a href="https://discord.com/guidelines">
-          <span class="wysiwyg-underline" style="color: #1155cc"
+          <span
+            class="wysiwyg-underline"
+            style="color: #1155cc"
+            data-darkreader-inline-color=""
             >Guidelines</span
           ></a
         >.
@@ -260,7 +218,11 @@
   <li>
     You must have<a
       href="https://support.discord.com/hc/en-us/articles/219576828"
-      ><span class="wysiwyg-underline" style="color: #1155cc">
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+      >
         Two-Factor Authentication</span
       ></a
     >
@@ -275,7 +237,10 @@
 <p>
   Your server may not offer anything listed on
   <a href="https://stripe.com/legal/restricted-businesses"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >Stripe's Prohibited and Restricted Businesses List
     </span></a
   >
@@ -437,9 +402,9 @@
   />
 </h2>
 <p>
-  1. Once the server owner has enabled monetization [link to the
-  <strong>How do I get started?</strong> section above], navigate to the
-  <strong>Server Subscriptions </strong>tab in your Server Settings.
+  1. Once the server owner has
+  <a href="#h_01HHG1XZR1HZ4DE9XVM69NAFQ3">enabled monetization,</a> navigate to
+  the <strong>Server Subscriptions </strong>tab in your Server Settings.
 </p>
 <p>
   2. Under <strong>Basic Info</strong>, select whether you want to make some
@@ -683,10 +648,8 @@
 <h2 id="h_01HHG1XZR1CTKCCMSNMWS3V8GE">Who can create Server Products?</h2>
 <p>
   Only the server owner can
-  <a
-    href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01HHG1XZR1HZ4DE9XVM69NAFQ3"
-    >enable monetization</a
-  >, but any member with an admin role can create and manage Server Products.
+  <a href="#h_01HHG1XZR1HZ4DE9XVM69NAFQ3">enable monetization</a>, but any
+  member with an admin role can create and manage Server Products.
 </p>
 <h2 id="h_01HHG1XZR1CMBM47VRQJYVDBYC">How do I create a Server Product?</h2>
 <h3 id="h_01HHG1XZR1291SNNTTTWQKGTNQ">
