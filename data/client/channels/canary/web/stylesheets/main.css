@@ -35082,6 +35082,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   path {
   fill: var(--interactive-active);
 }
+:where(.visual-refresh) .colorDefault_c1e9c4.focused_c1e9c4 .subtext_c1e9c4 {
+  color: var(--text-secondary);
+}
 :where(.visual-refresh)
   .colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
   background-color: var(--bg-mod-subtle);
@@ -57076,4 +57079,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.37ed01232012ca62.css.map*/
+/*# sourceMappingURL=12633.e42e74813acdcb2d.css.map*/
