@@ -12058,10 +12058,11 @@ div.cardContainer__88e24 {
   right: 0;
   opacity: 0.5;
   height: 100%;
-  width: auto;
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
+  min-width: 320px;
+  width: 100%;
 }
 .img__4bbc6.hover__4bbc6 {
   opacity: 0.8;
@@ -29545,8 +29546,17 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .overlayContainer_fdeafc {
   position: relative;
-  min-height: 40px;
+  height: 40px;
   width: 100%;
+}
+.visual-refresh.density-cozy .overlayContainer_fdeafc {
+  height: 48px;
+}
+.visual-refresh.density-default .overlayContainer_fdeafc {
+  height: 42px;
+}
+.visual-refresh.density-compact .overlayContainer_fdeafc {
+  height: 38px;
 }
 .avatarContainer_fdeafc {
   position: absolute;
@@ -29689,6 +29699,15 @@ html:not(.visual-refresh) .root_e5f3a9 {
   height: 40px;
   background-color: var(--background-floating);
   border-radius: var(--radius-sm);
+}
+.visual-refresh.density-cozy .nameplate__78e61 {
+  height: 48px;
+}
+.visual-refresh.density-default .nameplate__78e61 {
+  height: 42px;
+}
+.visual-refresh.density-compact .overlayContainer__78e61 {
+  height: 38px;
 }
 .decorationBanner__78e61 {
   position: absolute;
@@ -57039,4 +57058,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.204bf84bce589999.css.map*/
+/*# sourceMappingURL=12633.b6fdcd9d0f311c8e.css.map*/
