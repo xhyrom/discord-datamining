@@ -11482,79 +11482,103 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   mask-repeat: no-repeat;
   margin-right: -6px;
 }
-.gameImageContainer_ed15e7 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 1.5px solid transparent;
+.guildIconImage_bab6e1 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
-.highlighted_ed15e7 {
-  background-color: var(--border-strong);
-  border-radius: 5px;
+.guildIconImage_bab6e1.acronym_bab6e1 {
+  background-color: var(--bg-base-tertiary);
 }
-.extraGameCount_ed15e7 {
-  width: 24px;
-  height: 24px;
-  background-color: var(--bg-backdrop);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-radius: 4px;
-}
-.extraGameCount_ed15e7,
-.gameActivityLevel_ed15e7 {
-  position: absolute;
+.acronym_bab6e1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--header-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gameActivityLevel_ed15e7 {
-  top: -4px;
-  right: -4px;
-  border-radius: 50%;
-  background-color: var(--background-tertiary);
-}
-.gameActivityLevelInner_ed15e7 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-.gameImage_ed15e7 {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-}
-.tooltipText_ed15e7 {
-  text-align: center;
-}
-.tooltipGameImageContainer_ed15e7 {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 16px;
-}
-.tooltipGameImage_ed15e7 {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-}
-.tooltipGameName_ed15e7 {
-  flex: 1;
-}
-.tooltipGames_ed15e7 {
+.container__86ab2 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: flex-start;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface-overlay);
+  overflow: hidden;
 }
-.tooltipGame_ed15e7 {
+.banner__86ab2 {
+  width: 100%;
+  height: 120px;
+}
+.avatarContainer__86ab2 {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: -34px;
+  padding: 0 16px;
+}
+.overlay__86ab2 {
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--opacity-black-40);
+}
+.overlay__86ab2,
+.overlayIcon__86ab2 {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.clickable__86ab2 {
+  cursor: pointer;
+}
+.clickable__86ab2:hover .overlay__86ab2,
+.clickable__86ab2:hover .overlayIcon__86ab2 {
+  opacity: 1;
+}
+.avatarWrapper__86ab2 {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  width: 70px;
+  height: 70px;
+  background: var(--bg-surface-overlay);
+}
+.body__86ab2 {
+  margin-top: 12px;
+  text-align: flex-start;
+  padding: 0 16px;
+  flex-direction: column;
+  gap: 16px;
+  word-wrap: anywhere;
+}
+.body__86ab2,
+.error__86ab2 {
+  margin-bottom: 16px;
+  display: flex;
+}
+.error__86ab2 {
+  gap: 4px;
+  cursor: pointer;
+  color: var(--text-warning);
+}
+.header__86ab2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 8px;
+  padding: 0 16px;
+}
+.buttonContainer__86ab2 {
+  padding: 4px 16px 16px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .guildIconImage__79e3e {
   width: 100%;
@@ -11576,401 +11600,1859 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   justify-content: center;
   align-items: center;
 }
-.clickable_f01e54 {
-  cursor: pointer;
+.container__80da8 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 4px;
 }
-.clickable_f01e54:active {
-  transform: translateY(2px) scale(0.98);
+.gameIcon__80da8 {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  flex-shrink: 0;
 }
-.trait_f01e54 {
+.gameIconImage__80da8 {
+  border-radius: 4px;
+  border: 1px solid var(--border-faint);
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.extraGamesContainer__80da8 {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.extraGameRow__80da8 {
+  gap: 8px;
+}
+.extraGameItem__80da8,
+.extraGameRow__80da8 {
+  display: flex;
+  align-items: center;
+}
+.extraGameItem__80da8 {
+  position: relative;
+  justify-content: center;
+}
+.extraGameIconImage__80da8 {
+  position: absolute;
+  z-index: 1;
+}
+.extraGameOverlay__80da8 {
+  position: absolute;
+  z-index: 10;
+  background: var(--bg-backdrop);
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.extraGameText__80da8 {
+  z-index: 20;
+}
+.gameActivityLevel__80da8 {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: var(--bg-surface-overlay);
+}
+.gameActivityLevel__80da8,
+.gameActivityLevelInner__80da8 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-  border: 1px solid var(--border-subtle);
-  padding: 8px 12px;
-  border-radius: 16px;
-  transition:
-    transform 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+  box-sizing: border-box;
 }
-.theme-dark .selectable_f01e54,
-.theme-dark .selectable_f01e54:active,
-.theme-dark .selectable_f01e54:hover,
-.theme-light .selectable_f01e54 {
-  border-color: var(--border-strong);
+.gameActivityLevelInner__80da8 {
+  width: 14px;
+  height: 14px;
+  padding: 2px;
 }
-.theme-light .selectable_f01e54:active,
-.theme-light .selectable_f01e54:hover {
-  border-color: var(--interactive-hover);
+.favoriteGameContainer__80da8 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
-.selectable_f01e54 {
-  color: var(--text-secondary);
+.platform-osx:not(.visual-refresh) .drag__5c9fc {
+  -webkit-app-region: drag;
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
 }
-.selectable_f01e54:active,
-.selectable_f01e54:hover {
+.visual-refresh .drag__5c9fc {
+  display: none;
+}
+.root__5c9fc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  contain: strict;
+  pointer-events: all;
+}
+.enter__5c9fc,
+.enterReducedMotion__5c9fc,
+.exit__5c9fc,
+.exitReducedMotion__5c9fc {
+  transition-duration: var(--custom-full-screen-layer-animation-duration);
+  transition-timing-function: ease-in-out;
+  transition-property: transform, opacity;
+}
+.enter__5c9fc {
+  transform: scale(1.1);
+}
+.enter__5c9fc,
+.enterReducedMotion__5c9fc {
+  opacity: 0;
+}
+.exit__5c9fc {
+  transform: scale(1);
+}
+.exit__5c9fc,
+.exitReducedMotion__5c9fc {
+  opacity: 1;
+}
+.enterActive__5c9fc,
+.enterDone__5c9fc {
+  opacity: 1;
+  transform: scale(1);
+}
+.enterActiveReducedMotion__5c9fc,
+.enterDoneReducedMotion__5c9fc {
+  opacity: 1;
+}
+.exitActive__5c9fc,
+.exitDone__5c9fc {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.exitActiveReducedMotion__5c9fc,
+.exitDoneReducedMotion__5c9fc {
+  opacity: 0;
+}
+.container_c2b141 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keybind_c2b141 {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+.closeButton_c2b141 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 36px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.closeButton_c2b141:active {
+  transform: translateY(1px);
+}
+.closeButton_c2b141,
+.keybind_c2b141 {
+  color: var(--interactive-normal);
+}
+.closeButton_c2b141:hover {
+  background-color: var(--background-modifier-hover);
+}
+.closeButton_c2b141:hover,
+.closeButton_c2b141:hover + .keybind_c2b141 {
   color: var(--interactive-hover);
 }
-.selected_f01e54 {
+.closeButton_c2b141:active {
+  background-color: var(--background-modifier-active);
+}
+.closeButton_c2b141:active,
+.closeButton_c2b141:active + .keybind_c2b141 {
   color: var(--interactive-active);
 }
-.selected_f01e54,
-.selected_f01e54:active,
-.selected_f01e54:hover {
-  border-color: var(--brand-500);
+.closeButtonSolid_c2b141 {
+  border: none;
+  flex: 0 0 24px;
+  height: 24px;
+  width: 24px;
 }
-.clickableCard__5bdf8 {
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: var(--shadow-low);
-  min-width: 240px;
-  max-width: 500px;
-  width: 100%;
-  height: 400px;
+.closeButtonSolid_c2b141:hover {
+  background-color: transparent;
 }
-.clickableCard__5bdf8:hover .card__5bdf8 {
-  box-shadow: var(--shadow-high);
-  transform: translateY(-2px);
+.theme-dark .closeButtonBold_c2b141:hover {
+  background-color: hsl(var(--primary-300-hsl) / 0.3);
 }
-.clickableCard__5bdf8:active .card__5bdf8 {
-  box-shadow: var(--shadow-low);
-  transform: translateY(-2px) scale(0.99);
+.enable-forced-colors .closeButton_c2b141 {
+  background-color: ButtonFace;
+  border-color: ButtonText;
+  color: ButtonText;
 }
-.clickableCard__5bdf8:active .card__5bdf8:has(.favoriteButton__5bdf8:hover) {
-  box-shadow: var(--shadow-high);
-  transform: translateY(-2px);
+.enable-forced-colors .closeButton_c2b141:active {
+  background-color: HighlightText;
+  border-color: Highlight;
+  color: Highlight;
 }
-.applyToJoinButton__5bdf8 {
-  padding: 0 12px 12px;
-}
-.applyToJoinContainer__5bdf8 {
-  height: 427px !important;
-}
-.card__5bdf8 {
-  min-width: 240px;
-  max-width: 500px;
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid var(--border-subtle);
-  overflow: hidden;
-  background-color: var(--bg-base-tertiary);
+.container__83f66 {
+  border-radius: var(--radius-round);
+  background-color: #fff;
   display: flex;
-  flex-direction: column;
+  padding: var(--spacing-8) var(--spacing-24);
+  padding-right: var(--spacing-12);
+  align-items: center;
+  gap: var(--spacing-12);
+  flex: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: var(--spacing-48);
+  justify-content: space-between;
+}
+.themeResponsiveContainer__83f66 {
+  background-color: var(--bg-mod-subtle);
+  width: 100%;
+}
+.text__83f66 {
+  color: var(--primary-600);
+}
+.button__83f66 {
+  background: linear-gradient(
+    90deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+  background-size: 120% 100%;
+  background-position: 50%;
+  color: #fff;
+  border-radius: var(--radius-round);
+}
+.highlight__83f66 {
+  color: var(--text-brand);
+}
+.description__83f66 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing-4);
+}
+.responsiveText__83f66 {
+  color: var(--header-secondary);
+}
+.text__83f66 {
+  color: var(--button-filled-white-text);
+}
+.wrapper__3add8 {
+  text-align: center;
+}
+.heading__3add8 {
+  margin-bottom: var(--spacing-32);
+}
+.topPerksCards__3add8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-16);
+}
+.topPerksCard__3add8 {
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--radius-lg);
   box-sizing: border-box;
+  flex: 1 1 auto;
+  min-width: 340px;
+  max-width: 362px;
+  padding: var(--spacing-32) var(--spacing-24);
+  width: 25%;
+  position: relative;
+  overflow: hidden;
 }
-.full-motion .card__5bdf8 {
-  transition:
-    transform 0.2s,
-    box-shadow 0.1s;
+.full-motion .animatedTopPerksCard__3add8.animate__3add8 {
+  animation: fadeEffects__3add8 1.8s ease-in-out forwards;
 }
-.skeletonCard__5bdf8 {
-  height: 100%;
-  background-color: var(--bg-base-tertiary);
-}
-.favoriteButton__5bdf8 {
+.topPerksCardImageWrapper__3add8 {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  height: 18px;
-  width: 18px;
-  padding: 7px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: var(--bg-surface-overlay);
-  opacity: 0;
-  transition:
-    opacity 0.2s ease-in-out,
-    background-color 64ms ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.shownFavoriteButton__5bdf8 {
+.animatedTopPerksCard__3add8 {
+  border-radius: var(--radius-md);
+  max-width: 480px;
+  height: 315px;
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(
+        var(--background-secondary-alt),
+        var(--background-secondary-alt)
+      )
+      padding-box,
+    linear-gradient(145deg, #3e70dd, #b377f3) border-box;
+}
+.full-motion .animatedTopPerksCard__3add8 {
+  transition: border 0.3s ease;
+}
+.animatedTopPerksCard__3add8:hover {
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4) !important;
+  border: 1px solid transparent !important;
+  background:
+    linear-gradient(
+        var(--background-secondary-alt),
+        var(--background-secondary-alt)
+      )
+      padding-box,
+    linear-gradient(145deg, #3e70dd, #b377f3) border-box !important;
+}
+.imageGradientOverlay__3add8 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    transparent 0,
+    var(--background-secondary-alt) 60%,
+    var(--background-secondary-alt)
+  );
+}
+.contentContainer__3add8 {
+  position: relative;
+  z-index: 1;
+  margin-top: 148px;
+  overflow: hidden;
+}
+.buttonsContainer__3add8 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: var(--spacing-24);
+  overflow: hidden;
+}
+.button__3add8 {
+  flex: 1 1 0;
+}
+.topPerksCardImage__3add8 {
+  position: absolute;
+  height: 128px;
+}
+.borderGlowOverlay__3add8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--radius-md);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  box-shadow:
+    inset 0 0 15px rgba(62, 112, 221, 0.4),
+    inset 0 0 20px rgba(179, 119, 243, 0.4);
+}
+.full-motion .borderGlowOverlay__3add8 {
+  transition: opacity 0.3s ease;
+}
+.topPerksCard__3add8:hover .borderGlowOverlay__3add8 {
   opacity: 1;
 }
-.favoriteButton__5bdf8:active,
-.favoriteButton__5bdf8:hover {
-  background-color: var(--bg-surface-raised);
+.topPerksCardHeading__3add8 {
+  margin-bottom: 4px;
 }
-.cardStaticHeight__5bdf8 {
-  height: 400px;
+.topPerksCardDescription__3add8 {
+  color: var(--header-secondary);
 }
-.header__5bdf8 {
-  position: relative;
-}
-.clanIconMask__5bdf8 {
+.topPerksCardNew__3add8 {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  top: -51px;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: var(--spacing-16);
+  right: var(--spacing-16);
 }
-.clanIconInner__5bdf8 {
-  background-color: var(--bg-surface-overlay);
-  padding: 3px;
+.topPerksCardLabelContainer__3add8 {
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-round);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--bg-base-primary);
+  padding: var(--spacing-4) 10px;
+  margin-top: var(--spacing-12);
 }
-.skeletonIconInner__5bdf8 {
-  background-color: var(--bg-base-tertiary);
-  padding: 3px;
+.labelsContainer__3add8,
+.topPerksCardLabelContainer__3add8 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-4);
+  align-items: center;
+  justify-self: center;
+}
+.labelsContainer__3add8 {
+  color: var(--text-positive);
+}
+.intObserver__3add8 {
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.intObserver__3add8,
+.shineLine__3add8 {
+  position: absolute;
+  pointer-events: none;
+}
+.shineLine__3add8 {
+  top: -100%;
+  left: -400%;
+  height: 300%;
+  width: 400px;
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0) 0,
+    hsla(0, 0%, 100%, 0.1) 50%,
+    hsla(0, 0%, 100%, 0)
+  );
+  transform: rotate(30deg);
+  z-index: 1;
+}
+.full-motion .shineLine__3add8 {
+  animation: shineEffect__3add8 1.5s ease-in-out;
+}
+@keyframes shineEffect__3add8 {
+  0% {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes fadeEffects__3add8 {
+  0% {
+    box-shadow:
+      inset 0 0 15px rgba(62, 112, 221, 0.4),
+      inset 0 0 20px rgba(179, 119, 243, 0.4);
+    border: 1px solid transparent;
+    background:
+      linear-gradient(
+          var(--background-secondary-alt),
+          var(--background-secondary-alt)
+        )
+        padding-box,
+      linear-gradient(145deg, #3e70dd, #b377f3) border-box;
+  }
+  to {
+    box-shadow: none;
+    border: 1px solid var(--background-secondary-alt);
+    background: var(--background-secondary-alt);
+  }
+}
+.container_ef0711 {
+  flex-direction: column;
+  margin-top: var(--spacing-64);
+  text-align: center;
+}
+.container_ef0711,
+.powerupsContainer_ef0711 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.powerupsContainer_ef0711 {
+  gap: 16px;
+  margin-top: var(--spacing-32);
+}
+.wrapper__4d7bb {
+  background: linear-gradient(
+    45deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+  border-radius: 8px;
+  isolation: isolate;
+  margin-bottom: 85px;
   overflow: hidden;
-  border-radius: 12px;
-}
-.skeletonIcon__5bdf8 {
-  border-radius: 16px;
-}
-.clanBadge__5bdf8 {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-}
-.cardBrandingHeader__5bdf8 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 24px;
   position: relative;
-  height: 100px;
-  width: 100%;
+  text-align: center;
 }
-.clanBannerPreview__5bdf8 {
-  height: 98px;
-  margin-top: -2px;
-}
-.cardBrandingFooter__5bdf8 {
-  height: 8px;
-  width: 100%;
-}
-.headerBadge__5bdf8 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  background-color: var(--bg-surface-overlay);
-  padding: 4px 8px;
-  border-radius: 12px;
-}
-.cardContent__5bdf8 {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex: 1;
-}
-.cardContentTitleSection__5bdf8 {
-  flex: 0 0 auto;
-}
-.cardContentDescriptionSection__5bdf8 {
-  flex: 1 1 auto;
-}
-.cardContentDescriptionCollapsed__5bdf8 {
-  max-height: 64px;
-}
-.cardNameAndTagWrapper__5bdf8 {
+.content__4d7bb {
   position: relative;
-  width: 100%;
-  margin-bottom: 8px;
+  z-index: 2;
 }
-.clanTagChipletWrapper__5bdf8 {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
+.heading__4d7bb {
+  margin-bottom: 32px;
 }
-.clanTagChiplet__5bdf8 {
-  display: flex;
-  gap: 4px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--border-subtle);
-  border-radius: 4px;
-  padding: 2px 6px;
-  transition: border-color 0.2s ease-in-out;
-}
-.clanTagChiplet__5bdf8:hover {
-  border-color: var(--border-strong);
-}
-.playstyle__5bdf8 {
-  color: var(--role-orange);
-}
-.traitsContainer__5bdf8 {
-  height: 52px;
-  flex: 0 0 auto;
+.cards__4d7bb {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 4px;
-  padding: 8px 0 0;
+  gap: 16px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 768px;
 }
-.thinTrait__5bdf8 {
-  padding: 4px 8px;
-  gap: 4px;
-  max-width: 200px;
-  height: 24px;
+.card__4d7bb {
+  align-items: center;
+  background-color: hsl(var(--primary-600-hsl) / 0.9);
+  border-radius: 8px;
   box-sizing: border-box;
-}
-.cardFooter__5bdf8 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  border-top: 1px solid var(--border-subtle);
-  min-height: 24px;
-}
-.cardFooterInfo__5bdf8 {
-  display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
-  gap: 4px;
+  padding: 24px 12px;
+  min-width: 165px;
+  max-width: 180px;
 }
-.cardFooterMembers__5bdf8 {
+.theme-light .card__4d7bb {
+  background-color: hsl(var(--primary-100-hsl) / 0.9);
+}
+.icon__4d7bb {
+  color: var(--guild-boosting-pink);
+  display: block;
+  height: 30px;
+  margin-bottom: 10px;
+  width: 30px;
+}
+.backgroundImages__4d7bb {
+  background:
+    0 100% url(/assets/5f5e47f0133f9ee5.svg) no-repeat,
+    100% 100% url(/assets/383e4e1569554a59.svg) no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.backgroundImages__4d7bb,
+.iconImage__4d7bb {
+  filter: saturate(1);
+  filter: saturate(var(--saturation-factor, 1));
+}
+.largeCountdownPill_e270ac {
   display: flex;
-  gap: 4px;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 20px;
+}
+.largeCountdownPillText_e270ac {
+  font-weight: 800;
+  display: inline-block;
+  color: var(--custom-premium-colors-banner-yellow);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+}
+.largePillIcon_e270ac {
+  padding-left: 6px;
+}
+.unavailableCounterContainer_a466a0 {
+  display: flex;
+  justify-content: center;
+}
+.unavailableCounterPill_a466a0 {
+  display: inline-flex;
+  border: 1px solid var(--white);
+  padding: 0 20px;
+  border-radius: 57px;
+  justify-content: center;
   align-items: center;
 }
-.cardFooterMembersIcon__5bdf8 {
-  width: 12px;
-  height: 12px;
-  color: var(--text-secondary);
+.unavailableCounterPillText_a466a0 {
+  margin: 20px 0;
+  line-height: 8px;
+  color: #fff;
 }
-.cardFooterGames__5bdf8 {
-  display: flex;
-  gap: 2px;
+.countDownText_a466a0 {
+  margin-left: 8px;
 }
-.overflowTooltip__5bdf8 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+.tooltip_a466a0 {
+  text-align: center;
+  width: 215px;
+  max-width: 215px;
 }
-.clanInfoRow__5bdf8 {
+.buttonHighlighted__5d39a {
+  background: linear-gradient(
+    95.07deg,
+    var(--premium-tier-2-purple-for-gradients),
+    var(--premium-tier-2-purple-for-gradients-2) 49.96%,
+    var(--premium-tier-2-pink-for-gradients) 95.93%
+  );
+}
+.button__5d39a {
   display: flex;
-  gap: 4px;
   align-items: center;
 }
-.clanInfoItem__5bdf8 {
+.buttonIcon__5d39a {
+  margin-right: 4px;
+}
+.guildStatus_f9f04c {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.guildIcon_f9f04c {
+  margin: 0 auto 10px;
+}
+.guildName_f9f04c {
+  margin-bottom: 4px;
+}
+.guildBoostCountWrapper_f9f04c {
+  color: var(--white-500);
+  margin-bottom: 20px;
+}
+.guildBoostCount_f9f04c {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.guildBoostBadge_f9f04c {
+  color: inherit;
+  flex: 0 0 auto;
+  height: 16px;
+  margin-right: 4px;
+  opacity: 0.6;
+  width: 16px;
+}
+.guildBoostBadgeWithBoosts_f9f04c {
+  color: var(--guild-boosting-pink);
+  opacity: 1;
+}
+.guildStatusCopy_f9f04c {
+  color: inherit;
+  flex: 0 0 auto;
+  opacity: 0.6;
+}
+.guildBoostCountCurrentUser_f9f04c {
+  color: inherit;
+  margin-top: 4px;
+  opacity: 0.6;
+}
+.guildBoostCtas_f9f04c {
+  display: flex;
+  margin: 0 auto;
+  max-width: 470px;
+  width: 100%;
+}
+.guildBoostCta_f9f04c {
+  border-radius: 4px;
+  flex: 1 1 50%;
+}
+.guildBoostCtaBoostContent_f9f04c {
+  color: var(--brand-500);
+}
+.guildBoostCta_f9f04c + .guildBoostCta_f9f04c {
+  margin-left: 10px;
+}
+.guildBoostCtaBoostWrapper_f9f04c,
+.guildBoostCtaSecondary_f9f04c {
+  position: relative;
+}
+.full-motion .guildBoostCtaBoostWrapper_f9f04c,
+.full-motion .guildBoostCtaSecondary_f9f04c {
+  transition: transform 0.08s;
+}
+.full-motion .guildBoostCtaSecondary_f9f04c {
+  transition:
+    background 0.08s,
+    box-shadow 0.08s,
+    transform 0.08s;
+}
+.guildBoostCtaBoost_f9f04c {
+  border-radius: 4px;
+  box-shadow:
+    0 1px 2px hsl(var(--primary-500-hsl) / 0.2),
+    0 8px 16px hsl(var(--primary-500-hsl) / 0.3);
+  transition: box-shadow 0.08s;
+  width: 100%;
+}
+.full-motion .guildBoostCtaBoostWrapper_f9f04c:focus-within,
+.full-motion .guildBoostCtaBoostWrapper_f9f04c:hover,
+.full-motion .guildBoostCtaSecondary_f9f04c:focus,
+.full-motion .guildBoostCtaSecondary_f9f04c:hover {
+  transform: translateY(-3px);
+}
+.full-motion .guildBoostCtaBoostWrapper_f9f04c:focus-within:after,
+.full-motion .guildBoostCtaBoostWrapper_f9f04c:hover:after,
+.full-motion .guildBoostCtaSecondary_f9f04c:focus:after,
+.full-motion .guildBoostCtaSecondary_f9f04c:hover:after {
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.guildBoostCtaBoostWrapper_f9f04c:focus-within .guildBoostCtaBoost_f9f04c,
+.guildBoostCtaBoostWrapper_f9f04c:hover .guildBoostCtaBoost_f9f04c,
+.guildBoostCtaSecondary_f9f04c:focus,
+.guildBoostCtaSecondary_f9f04c:hover {
+  box-shadow:
+    0 1px 2px hsl(var(--primary-500-hsl) / 0.2),
+    0 12px 24px hsl(var(--primary-500-hsl) / 0.4);
+}
+.guildBoostCtaSecondary_f9f04c:focus,
+.guildBoostCtaSecondary_f9f04c:hover {
+  background-color: var(--opacity-white-4);
+}
+.guildBoostCtaBoostShine_f9f04c {
+  color: hsl(var(--brand-500-hsl) / 0.1);
+}
+.guildBoostCtaGiftContent_f9f04c {
+  display: inline-flex;
+}
+.guildBoostCtaGiftIcon_f9f04c {
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+}
+.FPContainer_f9f04c {
+  margin-bottom: 23px;
+}
+.wrapper__5b98e {
+  background-color: var(--background-secondary-alt);
+  border-radius: 8px;
+  padding: 60px 50px;
+}
+.heading__5b98e {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.list__5b98e {
+  border-top: 1px solid var(--interactive-muted);
+}
+.listItem__5b98e {
+  border-bottom: 1px solid var(--interactive-muted);
+}
+.questionWrapper__5b98e {
+  color: var(--interactive-normal);
+  cursor: pointer;
+  display: flex;
+  padding: 12px 0;
+  transition: color 0.1s;
+}
+.questionWrapper__5b98e:active,
+.questionWrapper__5b98e:hover,
+.questionWrapperExpanded__5b98e {
+  color: var(--interactive-active);
+}
+.questionWrapperExpanded__5b98e {
+  padding-bottom: 8px;
+}
+.question__5b98e {
+  color: inherit;
+  flex: 1 1 auto;
+  padding-right: 12px;
+  transition: color 0.1s;
+}
+.questionIcon__5b98e {
   flex: 0 0 auto;
 }
-.wildCardText__5bdf8 {
-  font-size: 12px;
-  font-weight: 600;
+.answer__5b98e {
+  margin-bottom: 12px;
+  width: 80%;
 }
-.nameText__5bdf8,
-.wildCardText__5bdf8 {
-  white-space: nowrap;
+@media (max-width: 700px) {
+  .answer__5b98e {
+    width: 100%;
+  }
+}
+.wrapper_b4589b {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.innerWrapper_b4589b {
+  align-items: center;
+  background-color: var(--background-secondary-alt);
+  border-radius: 50px;
+  box-shadow: var(--elevation-high);
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 36px;
+  padding: 12px 22px 12px 12px;
+  pointer-events: all;
+  position: relative;
+  width: 438px;
+}
+.innerWrapper_b4589b:after,
+.innerWrapper_b4589b:before {
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.innerWrapper_b4589b:after {
+  border-color: var(--guild-boosting-blue);
+  -webkit-mask: linear-gradient(45deg, #000, transparent);
+  mask: linear-gradient(45deg, #000, transparent);
+}
+.innerWrapper_b4589b:before {
+  border-color: var(--guild-boosting-purple);
+}
+.theme-light .innerWrapper_b4589b {
+  background-color: var(--background-secondary);
+}
+.guildInfo_b4589b {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  padding-right: 8px;
+  text-overflow: ellipsis;
+}
+.guildIcon_b4589b {
+  background-color: var(--background-primary);
+  flex: 0 0 auto;
+  margin-right: 14px;
+}
+.ctaButton_b4589b {
+  border-radius: var(--custom-button-button-lg-height);
+  flex: 0 0 auto;
+}
+.guildName_b4589b {
+  flex: 1 1 auto;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
+  white-space: nowrap;
 }
-.bannerImage__5bdf8 {
-  width: 100%;
+.cannonWrapper_d00019 {
+  z-index: 1;
+}
+.cannon_d00019,
+.cannonWrapper_d00019 {
+  position: absolute;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
 }
-.selectedTrait__5bdf8 {
-  background: var(--bg-surface-raised);
+.confettiTriggerWrapper_d00019 {
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
-.selectedTrait__5bdf8,
-.selectedTrait__5bdf8:active,
-.selectedTrait__5bdf8:hover {
-  border-color: var(--border-strong);
+.confettiTrigger_d00019 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
-.full-motion .animateButtonIn__5bdf8 {
-  animation: pulseIn__5bdf8 0.3s;
-}
-.full-motion .animateButtonOut__5bdf8 {
-  animation: pulseOut__5bdf8 0.2s;
-}
-@keyframes pulseIn__5bdf8 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes pulseOut__5bdf8 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.customButton__70335 {
-  background-color: var(--custom-clan-bg);
-  color: var(--custom-clan-text);
-  transition: background-color 0.25s;
-}
-.customButton__70335:focus,
-.customButton__70335:hover {
-  background-color: var(--custom-clan-hover-bg, var(--opacity-black-28));
-}
-.customButton__70335:active {
-  background-color: var(--custom-clan-active-bg, var(--opacity-black-36));
-}
-.container__88e24 {
-  pointer-events: all;
-  border-radius: var(--radius-md);
-  background: var(--bg-surface-overlay);
-  overflow: hidden;
-  box-shadow: var(--elevation-high);
-  width: 256px;
-}
-.buttonGroupContainer__88e24,
-.container__88e24 {
+.progressBarMarker__1f1cb {
+  align-items: center;
+  background-color: var(--opacity-white-40);
+  border-radius: 100%;
   display: flex;
   flex-direction: column;
+  height: var(
+    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
+  );
+  isolation: isolate;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(-50%);
+  width: var(
+    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
+  );
+  z-index: 2;
 }
-.buttonGroupContainer__88e24 {
-  margin: 0 12px 12px;
-  gap: 8px;
+.progressBarMarker__1f1cb:after {
+  content: "";
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 1;
 }
-div.cardContainer__88e24 {
-  border-radius: 0;
-  height: auto;
-  border: 0;
-  background: var(--bg-surface-overlay);
+.progressBarMarker__1f1cb.progressBarMarkerCurrent__1f1cb {
+  background-color: transparent;
 }
-.tooltipFooter__88e24 {
+.progressBarMarkerCurrent__1f1cb .progressBarMarkerIndicator__1f1cb {
+  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.25);
+}
+.progressBarMarkerUnlocked__1f1cb .progressBarMarkerIndicator__1f1cb {
+  background: var(--guild-boosting-pink);
+  border-radius: 100%;
+  content: "";
+  height: var(
+    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
+  );
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(
+    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
+  );
+  z-index: 0;
+}
+.progressBarMarkerUnlocked__1f1cb.progressBarMarkerLower__1f1cb
+  .progressBarMarkerIndicator__1f1cb {
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  z-index: 3;
+}
+.progressBarMarkerLocked__1f1cb {
+  cursor: pointer;
+}
+.progressBarMarkerLabel__1f1cb {
+  color: var(--white-500);
+  left: 50%;
+  padding-top: 4px;
+  opacity: 0.4;
+  position: absolute;
+  top: 100%;
+  transition: opacity 0.125s;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.progressBarMarkerLabel__1f1cb:after {
+  content: "";
+  height: 100%;
+  left: 50%;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
+  z-index: 1;
 }
-.button__88e24 {
+.progressBarMarkerUnlocked__1f1cb .progressBarMarkerLabel__1f1cb {
+  opacity: 0.8;
+}
+.progressBarMarkerCurrent__1f1cb .progressBarMarkerLabel__1f1cb,
+.progressBarMarkerLocked__1f1cb:hover .progressBarMarkerLabel__1f1cb {
   opacity: 1;
-  transition: opacity 0.1s ease-in-out;
 }
-.button__88e24:hover {
-  opacity: 0.9;
+.progressBarMarkerUnlockedIcon__1f1cb {
+  height: 16px;
+  padding-right: 3px;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(calc(-50% + 1px));
+  width: 16px;
 }
-.waitlistedButton__88e24 {
+.boostedTierIconBackground__1f1cb {
+  background-color: var(--white-500);
+  border-radius: 20px;
+  height: 20px;
+  left: 50%;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transition: opacity 0.125s;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  z-index: 2;
+}
+.progressBarMarkerLocked__1f1cb:hover .boostedTierIconBackground__1f1cb {
+  opacity: 1;
+}
+.boostedTierIcon__1f1cb {
+  color: var(--guild-boosting-pink);
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  z-index: 4;
+}
+.progressBarMarkerUnlocked__1f1cb .boostedTierIcon__1f1cb {
+  color: var(--white-500);
+}
+.progressBarMarkerCurrent__1f1cb .boostedTierIcon__1f1cb {
+  height: 16px;
+  width: 16px;
+}
+.progressBar_b28bb7 {
+  height: 54px;
+  isolation: isolate;
+  margin: 0 auto 48px;
+  max-width: 660px;
+  position: relative;
+}
+.progressBarScrubber_b28bb7 {
+  height: 8px;
+  left: calc(
+    var(--custom-guild-boosting-marketing-progress-bar-marker-dimensions) / 2 +
+      var(--custom-guild-boosting-marketing-progress-bar-end-markers-margin)
+  );
+  position: absolute;
+  right: calc(
+    var(--custom-guild-boosting-marketing-progress-bar-marker-dimensions) / 2 +
+      var(--custom-guild-boosting-marketing-progress-bar-end-markers-margin)
+  );
+  top: 13px;
+}
+.progressBarTrack_b28bb7 {
+  background-color: var(--opacity-white-28);
+  width: 100%;
+  z-index: 0;
+}
+.progressBarFill_b28bb7,
+.progressBarTrack_b28bb7 {
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+}
+.progressBarFill_b28bb7 {
+  background-image: linear-gradient(
+    90deg,
+    var(--guild-boosting-purple),
+    var(--white-500)
+  );
+  left: 0;
+  z-index: 2;
+}
+.progressBarCurrentProgressTooltip_b28bb7 {
+  margin-top: 100px;
+}
+.progressBarCurrentProgressTooltipMarker_b28bb7 {
+  border-radius: 100%;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 3;
+}
+.progressBarCurrentProgressTooltipHeading_b28bb7 {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.progressBarCurrentProgressTooltipSubheading_b28bb7 {
   display: flex;
   align-items: center;
-  gap: 4px;
 }
-.askToJoinInputWrapper__88e24 {
-  margin-top: 8px;
-  background: var(--bg-surface-overlay);
-  padding: 12px;
+.progressBarCurrentProgressTooltipSubheadingIcon_b28bb7 {
+  color: var(--guild-boosting-pink);
+  flex: 0 0 auto;
+  height: 16px;
+  margin-left: -2px;
+  margin-right: 4px;
+  width: 16px;
+}
+.progressBarCurrentProgressTooltipSubheadingCopy_b28bb7 {
+  flex: 1 1 auto;
+}
+.container_bb1234 {
+  position: relative;
+  display: inline-block;
+}
+.sparkle_bb1234 {
+  position: absolute;
+}
+.sparkleStarTopRight_bb1234 {
+  bottom: calc(100% - 4px);
+  left: calc(100% - 5px);
+  width: 12.75px;
+  height: 12.75px;
+}
+.sparkleStarRight_bb1234 {
+  bottom: 3px;
+  left: calc(100% + 1.31px);
+}
+.sparkleStarBottomLeft_bb1234,
+.sparkleStarRight_bb1234 {
+  height: 7.44px;
+  width: 7.44px;
+}
+.sparkleStarBottomLeft_bb1234 {
+  top: calc(100% + 0.56px);
+  left: -1px;
+}
+.theme-dark .sparkle_bb1234 {
+  color: var(--white-500);
+}
+.containerColored_bb1234 .sparkle_bb1234.sparkleStarTopRight_bb1234,
+.theme-light .sparkle_bb1234.sparkleStarTopRight_bb1234 {
+  color: #83ddc5;
+}
+.containerColored_bb1234 .sparkle_bb1234.sparkleStarRight_bb1234,
+.theme-light .sparkle_bb1234.sparkleStarRight_bb1234 {
+  color: #e15be1;
+}
+.containerColored_bb1234 .sparkle_bb1234.sparkleStarBottomLeft_bb1234,
+.theme-light .sparkle_bb1234.sparkleStarBottomLeft_bb1234 {
+  color: var(--yellow-260);
+}
+.tag_fe5e5d {
+  background-color: var(--brand-500);
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 6px;
+}
+.tag_fe5e5d.inheritBackgroundColor_fe5e5d {
+  background: inherit;
+}
+.tag_fe5e5d.inheritTextColor_fe5e5d {
+  color: inherit;
+}
+.tierCards_be48d0 {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.tierCard_be48d0 {
+  border-radius: var(
+    --custom-guild-boosting-marketing-tier-cards-tier-card-border-radius
+  );
   box-shadow: var(--elevation-high);
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: 24px 36px 30px;
+  position: relative;
+  width: 338px;
+}
+.tierCard_be48d0,
+.tierCardCurrentTier_be48d0 {
+  background-image: linear-gradient(
+    45deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+}
+.tierCardCurrentTier_be48d0 {
+  border-radius: 8px;
+  padding: 4px 8px;
+  position: absolute;
+  left: 28px;
+  text-transform: uppercase;
+  top: 0;
+  transform: translateY(-50%);
+}
+.tierCardHeader_be48d0 {
+  align-items: baseline;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.tierCardHeading_be48d0 {
+  flex: 0 0 auto;
+}
+.tierCardBoostRequirement_be48d0 {
+  flex: 0 0 auto;
+  opacity: 0.7;
+}
+.tierCardList_be48d0 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  border-radius: var(--radius-md);
+  gap: 12px;
 }
-.inputRow__88e24 {
+.tierCardListItem_be48d0 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.tierCardListIcon_be48d0 {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+}
+.tierCardSparkleHighlight_be48d0 {
+  background-image: radial-gradient(
+    100% 100% at center,
+    #fff 0,
+    hsla(0, 0%, 100%, 0) 50%
+  );
+  color: var(--white-500);
+  height: 80px;
+  position: absolute;
+  width: 1px;
+}
+.theme-light .tierCardSparkleHighlight_be48d0 {
+  background-image: radial-gradient(
+    100% 100% at center,
+    hsl(var(--guild-boosting-pink-hsl) / 1) 0,
+    hsl(var(--guild-boosting-pink-hsl) / 0) 50%
+  );
+  color: var(--guild-boosting-pink);
+}
+.tierCardSparkleHighlightTopRight_be48d0 {
+  right: 0;
+  top: 30px;
+}
+.tierCardSparkleHighlightBottomLeft_be48d0 {
+  bottom: 30px;
+  left: 0;
+}
+.tierCardBorderHighlight_be48d0 {
+  border-radius: var(
+    --custom-guild-boosting-marketing-tier-cards-tier-card-border-radius
+  );
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.tierCardBorderHighlightTopRight_be48d0 {
+  border: 1px solid var(--guild-boosting-blue);
+  -webkit-mask: radial-gradient(
+    100% 100% at top right,
+    #fff 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  mask: radial-gradient(
+    100% 100% at top right,
+    #fff 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+}
+.tierCardBorderHighlightBottomLeft_be48d0 {
+  border: 1px solid var(--guild-boosting-purple);
+  -webkit-mask: radial-gradient(
+    100% 100% at bottom left,
+    #fff 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  mask: radial-gradient(
+    100% 100% at bottom left,
+    #fff 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+}
+.tierCardSparkle1_be48d0 {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tierCardSparkle2_be48d0 {
+  left: 11px;
+  position: absolute;
+  top: 10%;
+}
+.tierCardSparkle3_be48d0 {
+  right: 21px;
+  position: absolute;
+  top: -20px;
+}
+.tierCardPerkRow_be48d0 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.tierCardNewFeatureBadge_be48d0 {
+  margin-left: 8px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--premium-tier-2-purple-for-gradients);
+  align-self: center;
+}
+.heading__686cf {
+  margin-bottom: 82px;
+  text-align: center;
+}
+.tableWrapper__686cf {
+  position: relative;
+}
+.table__686cf {
+  text-align: center;
+  width: 100%;
+}
+.columnHeading__686cf,
+.tableCell__686cf {
+  border-bottom: 1px solid var(--opacity-white-16);
+}
+.theme-light .columnHeading__686cf,
+.theme-light .tableCell__686cf {
+  border-bottom-color: var(--opacity-black-16);
+}
+.columnHeading__686cf {
+  padding-bottom: 16px;
+}
+.tableCell__686cf {
+  box-sizing: border-box;
+  padding: 22px 0;
+  vertical-align: middle;
+  width: 20%;
+}
+.tableCellWrapper__686cf {
+  padding: 0;
+}
+.tableCellInner__686cf {
+  border-bottom: none;
+  width: 100%;
+}
+.tableRowHeading__686cf {
+  text-align: left;
+}
+.booleanValueIcon__686cf {
+  color: var(--interactive-muted);
+  display: block;
+  margin: 0 auto;
+}
+.booleanValueTrue__686cf {
+  color: var(--header-primary);
+}
+.recommendedTierHighlight__686cf {
+  bottom: -16px;
+  pointer-events: none;
+  position: absolute;
+  top: -38px;
+  width: 20%;
+}
+.recommendedTierHighlight__686cf:after,
+.recommendedTierHighlight__686cf:before {
+  border-radius: 16px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.recommendedTierHighlight__686cf:after {
+  border-color: var(--guild-boosting-blue);
+  -webkit-mask: linear-gradient(70deg, #000, transparent);
+  mask: linear-gradient(70deg, #000, transparent);
+}
+.recommendedTierHighlight__686cf:before {
+  border-color: var(--guild-boosting-purple);
+}
+.recommendedTierHighlightTier2__686cf {
+  right: 20%;
+}
+.recommendedTierHighlightTier3__686cf {
+  right: 0;
+}
+.recommendedTierHighlightTag__686cf {
+  background-image: linear-gradient(
+    30deg,
+    var(--guild-boosting-blue),
+    var(--guild-boosting-purple)
+  );
+  border-radius: 8px;
+  padding: 4px 8px;
+  position: absolute;
+  left: 50%;
+  top: 1px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.perkPreviewImage__686cf {
+  background-color: var(--background-secondary-alt);
+  border-radius: 8px;
+  box-shadow: var(--elevation-high);
+  display: block;
+  height: 168px;
+  width: 280px;
+}
+.headerWave__1dfae {
+  bottom: -1px;
+  color: var(--background-primary);
+  max-height: 400px;
+}
+.bodyWave__1dfae,
+.headerWave__1dfae {
+  display: block;
+  left: 50%;
+  min-width: 1000px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+.bodyWave__1dfae {
+  max-height: 1200px;
+  top: 10%;
+}
+.bodyWaveGradientStop1__1dfae {
+  stop-color: var(--background-primary);
+}
+.bodyWaveGradientStop2__1dfae {
+  stop-color: var(--background-secondary-alt);
+}
+.bodyWaveGradientStop3__1dfae {
+  stop-color: var(--background-primary);
+}
+.closeIconWrapper__6fd0e {
+  margin: 0 auto;
+  max-width: 1060px;
+  mix-blend-mode: screen;
+  position: relative;
+  z-index: 2;
+}
+.theme-light .closeIconWrapper__6fd0e {
+  mix-blend-mode: multiply;
+}
+.closeIcon__6fd0e {
+  position: absolute;
+  right: 24px;
+  top: 48px;
+  z-index: 2;
+}
+.scroller__6fd0e {
+  background: var(--background-primary);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.content__6fd0e {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+.headerContentWrapper__6fd0e {
+  padding: 100px 32px 32px;
+  position: relative;
+  z-index: 2;
+}
+.header__6fd0e {
+  background:
+    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
+    linear-gradient(
+      359.37deg,
+      rgba(0, 0, 0, 0.5) 12.68%,
+      hsla(0, 0%, 100%, 0) 50.4%
+    ),
+    linear-gradient(
+      159.15deg,
+      var(--premium-tier-0-header-gradient-1) 8.49%,
+      var(--premium-tier-0-header-gradient-2) 32.21%,
+      var(--premium-tier-0-header-gradient-3) 42.9%,
+      var(--premium-tier-0-header-gradient-4) 66.06%,
+      var(--premium-tier-0-header-gradient-5) 71.4%
+    );
+  position: relative;
+}
+.theme-light .header__6fd0e {
+  background:
+    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
+    linear-gradient(
+      359.37deg,
+      hsla(0, 0%, 100%, 0.5) 12.68%,
+      hsla(0, 0%, 100%, 0) 50.4%
+    ),
+    linear-gradient(
+      159.15deg,
+      var(--premium-tier-0-header-gradient-1) 8.49%,
+      var(--premium-tier-0-header-gradient-2) 32.21%,
+      var(--premium-tier-0-header-gradient-3) 42.9%,
+      var(--premium-tier-0-header-gradient-4) 66.06%,
+      var(--premium-tier-0-header-gradient-5) 71.4%
+    );
+}
+.heading__6fd0e {
+  margin: 0 auto 48px;
+  max-width: 960px;
+  text-align: center;
+}
+.middleBodyContentWrapper__6fd0e {
+  padding: 32px;
+}
+.lowerBody__6fd0e {
+  position: relative;
+}
+.lowerBodyBackgroundImage__6fd0e {
+  filter: saturate(1);
+  filter: saturate(var(--saturation-factor, 1));
+  background: right 285px no-repeat url(/assets/32b48278e7e6c908.svg);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 1430px) {
+  .lowerBodyBackgroundImage__6fd0e {
+    display: none;
+  }
+}
+.lowerBodyContentWrapper__6fd0e {
+  padding: 32px;
+  position: relative;
+  z-index: 2;
+}
+.persistentCtaSpacer__6fd0e {
+  height: 120px;
+}
+.tierComparisonTable__6fd0e {
+  margin-bottom: 64px;
+}
+.premiumTooltipFooterBackground__7d7fe {
+  background: linear-gradient(90deg, #b473f5, #e292aa);
+  width: "100%";
+}
+.tooltipBodyContainer__7d7fe {
+  text-align: center;
+  padding: 8px 12px;
+}
+.tooltipPremiumFooterContainer__7d7fe {
+  background: linear-gradient(90deg, #b473f5, #e292aa);
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltipRemovePadding__7d7fe {
+  padding: 0;
+}
+.gemIcon__7d7fe {
+  margin-top: 2px;
+  margin-left: -4px;
+}
+.tooltipPremiumFooterSegment__7d7fe {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tooltipPremiumFooterTierSegment__7d7fe {
+  border-left-color: var(--background-floating);
+  border-bottom-color: var(--background-floating);
+  border-right: 1px solid;
+  border-right-color: var(--background-floating);
+  border-top-color: var(--background-floating);
+}
+.clanBadgeContainer__7d7fe img {
+  margin: 0;
+}
+.header__99f53 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 8px;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.members__99f53 {
+  display: flex;
+  gap: 0 8px;
+  flex-wrap: wrap;
+}
+.memberCount__99f53 {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.dot__99f53 {
+  background: var(--status-offline);
+}
+.dot__99f53,
+.dotOnline__99f53 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.dotOnline__99f53 {
+  background: var(--status-online);
+}
+.established__99f53 {
+  display: flex;
+}
+.nameContainer__99f53 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
-  z-index: 9;
+  gap: 4px;
+  width: 100%;
 }
-.sendButton__88e24 {
-  flex: 1;
-  min-width: 0;
+.guildName__99f53 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.input__88e24 {
-  font-size: 14px;
-  height: var(--custom-custom-button-md-height);
+.guildBadge__99f53 {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+@value traitMaxWidth: 268px;
+.container_d452e4 {
+  flex-wrap: wrap;
+}
+.container_d452e4,
+.trait_d452e4 {
+  display: flex;
+  gap: 4px;
+}
+.trait_d452e4 {
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  max-width: 268px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: border-color 0.2s ease;
+}
+.trait_d452e4:hover {
+  border-color: var(--border-strong);
+}
+.traitEmoji_d452e4 {
+  width: 16px;
+  height: 16px;
+}
+.traitLabel_d452e4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container__86bf6 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--elevation-high);
+  width: 300px;
+}
+.spinnerContainer__86bf6 {
+  background: var(--bg-surface-overlay);
+  padding: 16px;
+}
+.guildPopout__51eb2 {
+  width: var(--custom-guild-dialog-popout-width);
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+}
+.iconMask__51eb2 {
+  padding: 4px;
+  background-color: var(--activity-card-background);
+}
+.full-motion .iconMask__51eb2 {
+  transition:
+    box-shadow 0.2s ease-out,
+    transform 0.2s ease-out,
+    background 0.2s ease-out;
+}
+.unavailableIcon__51eb2 {
+  margin-bottom: 16px;
+  transition: box-shadow 0.1s ease-out;
+  color: var(--header-secondary);
+}
+.iconWithSplash__51eb2 {
+  position: absolute;
+  top: calc(
+    var(--custom-guild-dialog-popout-width) /
+      var(--custom-guild-dialog-splash-ratio) -
+      var(--custom-guild-dialog-icon-size) / 2 -
+      var(--custom-guild-dialog-icon-padding)
+  );
+}
+.avatar__51eb2,
+.splashImage__51eb2 {
+  width: 100%;
+  height: 100%;
+}
+.splashImage__51eb2 {
+  max-height: 140px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.body__51eb2 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body__51eb2.hasSplash__51eb2 {
+  padding-top: calc(var(--custom-guild-dialog-icon-size) / 2 + 16px);
+}
+.guildNameWrapper__51eb2 {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  display: flex;
+  align-items: center;
+}
+.guildName__51eb2 {
+  word-break: break-word;
+  color: var(--text-normal);
+}
+.badge__51eb2 {
+  margin-right: 4px;
+}
+.description__51eb2 {
+  text-align: center;
+  margin-top: 8px;
+}
+.memberInfo__51eb2 {
+  margin-top: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--header-secondary);
+}
+.memberCount__51eb2,
+.memberInfo__51eb2 {
+  display: flex;
+  align-items: center;
+}
+.memberCount__51eb2 {
+  margin-right: 8px;
+}
+.memberCount__51eb2:last-child {
+  margin-right: 0;
+}
+.dot__51eb2 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.dotOnline__51eb2 {
+  background-color: var(--green-360);
+}
+.dotOffline__51eb2 {
+  background-color: var(--primary-300);
+}
+.memberText__51eb2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.footer__51eb2 {
+  background-color: var(--background-primary);
+  max-width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+.emojiHeader__51eb2 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.emojiContainer__51eb2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.emojiContainer__51eb2.withCounter__51eb2 {
+  justify-content: space-between;
+}
+.emoji__51eb2 {
+  margin-right: 8px;
+}
+.emojiCounter__51eb2 {
+  background-color: var(--background-secondary);
+  height: 24px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+@keyframes placeholderPulse__51eb2 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.placeholderSkeleton__51eb2 {
+  border-radius: 8px;
+  background: var(--primary-400);
+  opacity: 0.2;
+  animation: placeholderPulse__51eb2 3s ease-in-out infinite;
+}
+.splashPlaceholder__51eb2 {
+  width: var(--custom-guild-dialog-popout-width);
+  height: calc(
+    var(--custom-guild-dialog-popout-width) /
+      var(--custom-guild-dialog-splash-ratio)
+  );
+  border-radius: 0;
+}
+.iconPlaceholder__51eb2 {
+  border-radius: 50%;
+  width: calc(
+    var(--custom-guild-dialog-icon-size) +
+      var(--custom-guild-dialog-icon-padding) * 2
+  );
+  height: calc(
+    var(--custom-guild-dialog-icon-size) +
+      var(--custom-guild-dialog-icon-padding) * 2
+  );
+  margin-bottom: 16px;
+  position: absolute;
+  top: calc(
+    var(--custom-guild-dialog-popout-width) /
+      var(--custom-guild-dialog-splash-ratio) -
+      var(--custom-guild-dialog-icon-size) / 2 -
+      var(--custom-guild-dialog-icon-padding)
+  );
+}
+.namePlaceholder__51eb2 {
+  height: 18px;
+  width: 170px;
+  animation-delay: 0.2s;
+}
+.memberInfoPlaceholder__51eb2,
+.namePlaceholder__51eb2 {
+  margin: 2px 0;
+}
+.memberInfoPlaceholder__51eb2 {
+  height: 12px;
+  width: 70px;
+  animation-delay: 0.3s;
+}
+.viewButtonPlaceholder__51eb2 {
+  height: 128px;
+}
+.unavailableHeader__51eb2 {
+  margin-bottom: 8px;
 }
 .chipletContainerInner__4a25c {
   line-height: 16px !important;
@@ -12548,74 +14030,6 @@ div.modalHeader_c28af8 {
 }
 .nitroText_d0caf4 {
   flex-wrap: wrap;
-}
-.buttonHighlighted__5d39a {
-  background: linear-gradient(
-    95.07deg,
-    var(--premium-tier-2-purple-for-gradients),
-    var(--premium-tier-2-purple-for-gradients-2) 49.96%,
-    var(--premium-tier-2-pink-for-gradients) 95.93%
-  );
-}
-.button__5d39a {
-  display: flex;
-  align-items: center;
-}
-.buttonIcon__5d39a {
-  margin-right: 4px;
-}
-.container_bb1234 {
-  position: relative;
-  display: inline-block;
-}
-.sparkle_bb1234 {
-  position: absolute;
-}
-.sparkleStarTopRight_bb1234 {
-  bottom: calc(100% - 4px);
-  left: calc(100% - 5px);
-  width: 12.75px;
-  height: 12.75px;
-}
-.sparkleStarRight_bb1234 {
-  bottom: 3px;
-  left: calc(100% + 1.31px);
-}
-.sparkleStarBottomLeft_bb1234,
-.sparkleStarRight_bb1234 {
-  height: 7.44px;
-  width: 7.44px;
-}
-.sparkleStarBottomLeft_bb1234 {
-  top: calc(100% + 0.56px);
-  left: -1px;
-}
-.theme-dark .sparkle_bb1234 {
-  color: var(--white-500);
-}
-.containerColored_bb1234 .sparkle_bb1234.sparkleStarTopRight_bb1234,
-.theme-light .sparkle_bb1234.sparkleStarTopRight_bb1234 {
-  color: #83ddc5;
-}
-.containerColored_bb1234 .sparkle_bb1234.sparkleStarRight_bb1234,
-.theme-light .sparkle_bb1234.sparkleStarRight_bb1234 {
-  color: #e15be1;
-}
-.containerColored_bb1234 .sparkle_bb1234.sparkleStarBottomLeft_bb1234,
-.theme-light .sparkle_bb1234.sparkleStarBottomLeft_bb1234 {
-  color: var(--yellow-260);
-}
-.tag_fe5e5d {
-  background-color: var(--brand-500);
-  font-size: 12px;
-  line-height: 16px;
-  padding: 0 6px;
-}
-.tag_fe5e5d.inheritBackgroundColor_fe5e5d {
-  background: inherit;
-}
-.tag_fe5e5d.inheritTextColor_fe5e5d {
-  color: inherit;
 }
 .firstPromotionalAvatar__55414 {
   z-index: 1;
@@ -16026,1415 +17440,6 @@ span.clanTag__5d473 {
   min-width: 16px;
   border-radius: 8px;
   padding: 0 4px;
-}
-.platform-osx:not(.visual-refresh) .drag__5c9fc {
-  -webkit-app-region: drag;
-  position: absolute;
-  width: 100%;
-  padding-top: 32px;
-}
-.visual-refresh .drag__5c9fc {
-  display: none;
-}
-.root__5c9fc {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  contain: strict;
-  pointer-events: all;
-}
-.enter__5c9fc,
-.enterReducedMotion__5c9fc,
-.exit__5c9fc,
-.exitReducedMotion__5c9fc {
-  transition-duration: var(--custom-full-screen-layer-animation-duration);
-  transition-timing-function: ease-in-out;
-  transition-property: transform, opacity;
-}
-.enter__5c9fc {
-  transform: scale(1.1);
-}
-.enter__5c9fc,
-.enterReducedMotion__5c9fc {
-  opacity: 0;
-}
-.exit__5c9fc {
-  transform: scale(1);
-}
-.exit__5c9fc,
-.exitReducedMotion__5c9fc {
-  opacity: 1;
-}
-.enterActive__5c9fc,
-.enterDone__5c9fc {
-  opacity: 1;
-  transform: scale(1);
-}
-.enterActiveReducedMotion__5c9fc,
-.enterDoneReducedMotion__5c9fc {
-  opacity: 1;
-}
-.exitActive__5c9fc,
-.exitDone__5c9fc {
-  opacity: 0;
-  transform: scale(1.1);
-}
-.exitActiveReducedMotion__5c9fc,
-.exitDoneReducedMotion__5c9fc {
-  opacity: 0;
-}
-.container_c2b141 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.keybind_c2b141 {
-  margin-top: 8px;
-  font-weight: 600;
-  font-size: 13px;
-  text-align: center;
-}
-.closeButton_c2b141 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 36px;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-.closeButton_c2b141:active {
-  transform: translateY(1px);
-}
-.closeButton_c2b141,
-.keybind_c2b141 {
-  color: var(--interactive-normal);
-}
-.closeButton_c2b141:hover {
-  background-color: var(--background-modifier-hover);
-}
-.closeButton_c2b141:hover,
-.closeButton_c2b141:hover + .keybind_c2b141 {
-  color: var(--interactive-hover);
-}
-.closeButton_c2b141:active {
-  background-color: var(--background-modifier-active);
-}
-.closeButton_c2b141:active,
-.closeButton_c2b141:active + .keybind_c2b141 {
-  color: var(--interactive-active);
-}
-.closeButtonSolid_c2b141 {
-  border: none;
-  flex: 0 0 24px;
-  height: 24px;
-  width: 24px;
-}
-.closeButtonSolid_c2b141:hover {
-  background-color: transparent;
-}
-.theme-dark .closeButtonBold_c2b141:hover {
-  background-color: hsl(var(--primary-300-hsl) / 0.3);
-}
-.enable-forced-colors .closeButton_c2b141 {
-  background-color: ButtonFace;
-  border-color: ButtonText;
-  color: ButtonText;
-}
-.enable-forced-colors .closeButton_c2b141:active {
-  background-color: HighlightText;
-  border-color: Highlight;
-  color: Highlight;
-}
-.container__83f66 {
-  border-radius: var(--radius-round);
-  background-color: #fff;
-  display: flex;
-  padding: var(--spacing-8) var(--spacing-24);
-  padding-right: var(--spacing-12);
-  align-items: center;
-  gap: var(--spacing-12);
-  flex: 1;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: var(--spacing-48);
-  justify-content: space-between;
-}
-.themeResponsiveContainer__83f66 {
-  background-color: var(--bg-mod-subtle);
-  width: 100%;
-}
-.text__83f66 {
-  color: var(--primary-600);
-}
-.button__83f66 {
-  background: linear-gradient(
-    90deg,
-    var(--guild-boosting-blue),
-    var(--guild-boosting-purple)
-  );
-  background-size: 120% 100%;
-  background-position: 50%;
-  color: #fff;
-  border-radius: var(--radius-round);
-}
-.highlight__83f66 {
-  color: var(--text-brand);
-}
-.description__83f66 {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: var(--spacing-4);
-}
-.responsiveText__83f66 {
-  color: var(--header-secondary);
-}
-.text__83f66 {
-  color: var(--button-filled-white-text);
-}
-.wrapper__3add8 {
-  text-align: center;
-}
-.heading__3add8 {
-  margin-bottom: var(--spacing-32);
-}
-.topPerksCards__3add8 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--spacing-16);
-}
-.topPerksCard__3add8 {
-  background-color: var(--background-secondary-alt);
-  border-radius: var(--radius-lg);
-  box-sizing: border-box;
-  flex: 1 1 auto;
-  min-width: 340px;
-  max-width: 362px;
-  padding: var(--spacing-32) var(--spacing-24);
-  width: 25%;
-  position: relative;
-  overflow: hidden;
-}
-.full-motion .animatedTopPerksCard__3add8.animate__3add8 {
-  animation: fadeEffects__3add8 1.8s ease-in-out forwards;
-}
-.topPerksCardImageWrapper__3add8 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.animatedTopPerksCard__3add8 {
-  border-radius: var(--radius-md);
-  max-width: 480px;
-  height: 315px;
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4);
-  border: 1px solid transparent;
-  background:
-    linear-gradient(
-        var(--background-secondary-alt),
-        var(--background-secondary-alt)
-      )
-      padding-box,
-    linear-gradient(145deg, #3e70dd, #b377f3) border-box;
-}
-.full-motion .animatedTopPerksCard__3add8 {
-  transition: border 0.3s ease;
-}
-.animatedTopPerksCard__3add8:hover {
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4) !important;
-  border: 1px solid transparent !important;
-  background:
-    linear-gradient(
-        var(--background-secondary-alt),
-        var(--background-secondary-alt)
-      )
-      padding-box,
-    linear-gradient(145deg, #3e70dd, #b377f3) border-box !important;
-}
-.imageGradientOverlay__3add8 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--radius-lg);
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(
-    180deg,
-    transparent 0,
-    var(--background-secondary-alt) 60%,
-    var(--background-secondary-alt)
-  );
-}
-.contentContainer__3add8 {
-  position: relative;
-  z-index: 1;
-  margin-top: 148px;
-  overflow: hidden;
-}
-.buttonsContainer__3add8 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: var(--spacing-24);
-  overflow: hidden;
-}
-.button__3add8 {
-  flex: 1 1 0;
-}
-.topPerksCardImage__3add8 {
-  position: absolute;
-  height: 128px;
-}
-.borderGlowOverlay__3add8 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--radius-md);
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0;
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4);
-}
-.full-motion .borderGlowOverlay__3add8 {
-  transition: opacity 0.3s ease;
-}
-.topPerksCard__3add8:hover .borderGlowOverlay__3add8 {
-  opacity: 1;
-}
-.topPerksCardHeading__3add8 {
-  margin-bottom: 4px;
-}
-.topPerksCardDescription__3add8 {
-  color: var(--header-secondary);
-}
-.topPerksCardNew__3add8 {
-  position: absolute;
-  width: -moz-fit-content;
-  width: fit-content;
-  top: var(--spacing-16);
-  right: var(--spacing-16);
-}
-.topPerksCardLabelContainer__3add8 {
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-round);
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: var(--bg-base-primary);
-  padding: var(--spacing-4) 10px;
-  margin-top: var(--spacing-12);
-}
-.labelsContainer__3add8,
-.topPerksCardLabelContainer__3add8 {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-4);
-  align-items: center;
-  justify-self: center;
-}
-.labelsContainer__3add8 {
-  color: var(--text-positive);
-}
-.intObserver__3add8 {
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-.intObserver__3add8,
-.shineLine__3add8 {
-  position: absolute;
-  pointer-events: none;
-}
-.shineLine__3add8 {
-  top: -100%;
-  left: -400%;
-  height: 300%;
-  width: 400px;
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 100%, 0) 0,
-    hsla(0, 0%, 100%, 0.1) 50%,
-    hsla(0, 0%, 100%, 0)
-  );
-  transform: rotate(30deg);
-  z-index: 1;
-}
-.full-motion .shineLine__3add8 {
-  animation: shineEffect__3add8 1.5s ease-in-out;
-}
-@keyframes shineEffect__3add8 {
-  0% {
-    left: -100%;
-  }
-  to {
-    left: 100%;
-  }
-}
-@keyframes fadeEffects__3add8 {
-  0% {
-    box-shadow:
-      inset 0 0 15px rgba(62, 112, 221, 0.4),
-      inset 0 0 20px rgba(179, 119, 243, 0.4);
-    border: 1px solid transparent;
-    background:
-      linear-gradient(
-          var(--background-secondary-alt),
-          var(--background-secondary-alt)
-        )
-        padding-box,
-      linear-gradient(145deg, #3e70dd, #b377f3) border-box;
-  }
-  to {
-    box-shadow: none;
-    border: 1px solid var(--background-secondary-alt);
-    background: var(--background-secondary-alt);
-  }
-}
-.container_ef0711 {
-  flex-direction: column;
-  margin-top: var(--spacing-64);
-  text-align: center;
-}
-.container_ef0711,
-.powerupsContainer_ef0711 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.powerupsContainer_ef0711 {
-  gap: 16px;
-  margin-top: var(--spacing-32);
-}
-.wrapper__4d7bb {
-  background: linear-gradient(
-    45deg,
-    var(--guild-boosting-blue),
-    var(--guild-boosting-purple)
-  );
-  border-radius: 8px;
-  isolation: isolate;
-  margin-bottom: 85px;
-  overflow: hidden;
-  padding: 50px 24px;
-  position: relative;
-  text-align: center;
-}
-.content__4d7bb {
-  position: relative;
-  z-index: 2;
-}
-.heading__4d7bb {
-  margin-bottom: 32px;
-}
-.cards__4d7bb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 768px;
-}
-.card__4d7bb {
-  align-items: center;
-  background-color: hsl(var(--primary-600-hsl) / 0.9);
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: 24px 12px;
-  min-width: 165px;
-  max-width: 180px;
-}
-.theme-light .card__4d7bb {
-  background-color: hsl(var(--primary-100-hsl) / 0.9);
-}
-.icon__4d7bb {
-  color: var(--guild-boosting-pink);
-  display: block;
-  height: 30px;
-  margin-bottom: 10px;
-  width: 30px;
-}
-.backgroundImages__4d7bb {
-  background:
-    0 100% url(/assets/5f5e47f0133f9ee5.svg) no-repeat,
-    100% 100% url(/assets/383e4e1569554a59.svg) no-repeat;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.backgroundImages__4d7bb,
-.iconImage__4d7bb {
-  filter: saturate(1);
-  filter: saturate(var(--saturation-factor, 1));
-}
-.largeCountdownPill_e270ac {
-  display: flex;
-  justify-content: center;
-  padding: 8px 16px;
-  background-color: hsla(0, 0%, 100%, 0.1);
-  border-radius: 20px;
-}
-.largeCountdownPillText_e270ac {
-  font-weight: 800;
-  display: inline-block;
-  color: var(--custom-premium-colors-banner-yellow);
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.7px;
-}
-.largePillIcon_e270ac {
-  padding-left: 6px;
-}
-.unavailableCounterContainer_a466a0 {
-  display: flex;
-  justify-content: center;
-}
-.unavailableCounterPill_a466a0 {
-  display: inline-flex;
-  border: 1px solid var(--white);
-  padding: 0 20px;
-  border-radius: 57px;
-  justify-content: center;
-  align-items: center;
-}
-.unavailableCounterPillText_a466a0 {
-  margin: 20px 0;
-  line-height: 8px;
-  color: #fff;
-}
-.countDownText_a466a0 {
-  margin-left: 8px;
-}
-.tooltip_a466a0 {
-  text-align: center;
-  width: 215px;
-  max-width: 215px;
-}
-.guildStatus_f9f04c {
-  margin-bottom: 50px;
-  text-align: center;
-}
-.guildIcon_f9f04c {
-  margin: 0 auto 10px;
-}
-.guildName_f9f04c {
-  margin-bottom: 4px;
-}
-.guildBoostCountWrapper_f9f04c {
-  color: var(--white-500);
-  margin-bottom: 20px;
-}
-.guildBoostCount_f9f04c {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.guildBoostBadge_f9f04c {
-  color: inherit;
-  flex: 0 0 auto;
-  height: 16px;
-  margin-right: 4px;
-  opacity: 0.6;
-  width: 16px;
-}
-.guildBoostBadgeWithBoosts_f9f04c {
-  color: var(--guild-boosting-pink);
-  opacity: 1;
-}
-.guildStatusCopy_f9f04c {
-  color: inherit;
-  flex: 0 0 auto;
-  opacity: 0.6;
-}
-.guildBoostCountCurrentUser_f9f04c {
-  color: inherit;
-  margin-top: 4px;
-  opacity: 0.6;
-}
-.guildBoostCtas_f9f04c {
-  display: flex;
-  margin: 0 auto;
-  max-width: 470px;
-  width: 100%;
-}
-.guildBoostCta_f9f04c {
-  border-radius: 4px;
-  flex: 1 1 50%;
-}
-.guildBoostCtaBoostContent_f9f04c {
-  color: var(--brand-500);
-}
-.guildBoostCta_f9f04c + .guildBoostCta_f9f04c {
-  margin-left: 10px;
-}
-.guildBoostCtaBoostWrapper_f9f04c,
-.guildBoostCtaSecondary_f9f04c {
-  position: relative;
-}
-.full-motion .guildBoostCtaBoostWrapper_f9f04c,
-.full-motion .guildBoostCtaSecondary_f9f04c {
-  transition: transform 0.08s;
-}
-.full-motion .guildBoostCtaSecondary_f9f04c {
-  transition:
-    background 0.08s,
-    box-shadow 0.08s,
-    transform 0.08s;
-}
-.guildBoostCtaBoost_f9f04c {
-  border-radius: 4px;
-  box-shadow:
-    0 1px 2px hsl(var(--primary-500-hsl) / 0.2),
-    0 8px 16px hsl(var(--primary-500-hsl) / 0.3);
-  transition: box-shadow 0.08s;
-  width: 100%;
-}
-.full-motion .guildBoostCtaBoostWrapper_f9f04c:focus-within,
-.full-motion .guildBoostCtaBoostWrapper_f9f04c:hover,
-.full-motion .guildBoostCtaSecondary_f9f04c:focus,
-.full-motion .guildBoostCtaSecondary_f9f04c:hover {
-  transform: translateY(-3px);
-}
-.full-motion .guildBoostCtaBoostWrapper_f9f04c:focus-within:after,
-.full-motion .guildBoostCtaBoostWrapper_f9f04c:hover:after,
-.full-motion .guildBoostCtaSecondary_f9f04c:focus:after,
-.full-motion .guildBoostCtaSecondary_f9f04c:hover:after {
-  content: "";
-  height: 4px;
-  left: 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-}
-.guildBoostCtaBoostWrapper_f9f04c:focus-within .guildBoostCtaBoost_f9f04c,
-.guildBoostCtaBoostWrapper_f9f04c:hover .guildBoostCtaBoost_f9f04c,
-.guildBoostCtaSecondary_f9f04c:focus,
-.guildBoostCtaSecondary_f9f04c:hover {
-  box-shadow:
-    0 1px 2px hsl(var(--primary-500-hsl) / 0.2),
-    0 12px 24px hsl(var(--primary-500-hsl) / 0.4);
-}
-.guildBoostCtaSecondary_f9f04c:focus,
-.guildBoostCtaSecondary_f9f04c:hover {
-  background-color: var(--opacity-white-4);
-}
-.guildBoostCtaBoostShine_f9f04c {
-  color: hsl(var(--brand-500-hsl) / 0.1);
-}
-.guildBoostCtaGiftContent_f9f04c {
-  display: inline-flex;
-}
-.guildBoostCtaGiftIcon_f9f04c {
-  height: 16px;
-  margin-right: 8px;
-  width: 16px;
-}
-.FPContainer_f9f04c {
-  margin-bottom: 23px;
-}
-.wrapper__5b98e {
-  background-color: var(--background-secondary-alt);
-  border-radius: 8px;
-  padding: 60px 50px;
-}
-.heading__5b98e {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.list__5b98e {
-  border-top: 1px solid var(--interactive-muted);
-}
-.listItem__5b98e {
-  border-bottom: 1px solid var(--interactive-muted);
-}
-.questionWrapper__5b98e {
-  color: var(--interactive-normal);
-  cursor: pointer;
-  display: flex;
-  padding: 12px 0;
-  transition: color 0.1s;
-}
-.questionWrapper__5b98e:active,
-.questionWrapper__5b98e:hover,
-.questionWrapperExpanded__5b98e {
-  color: var(--interactive-active);
-}
-.questionWrapperExpanded__5b98e {
-  padding-bottom: 8px;
-}
-.question__5b98e {
-  color: inherit;
-  flex: 1 1 auto;
-  padding-right: 12px;
-  transition: color 0.1s;
-}
-.questionIcon__5b98e {
-  flex: 0 0 auto;
-}
-.answer__5b98e {
-  margin-bottom: 12px;
-  width: 80%;
-}
-@media (max-width: 700px) {
-  .answer__5b98e {
-    width: 100%;
-  }
-}
-.wrapper_b4589b {
-  display: flex;
-  justify-content: center;
-  pointer-events: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  z-index: 1;
-}
-.innerWrapper_b4589b {
-  align-items: center;
-  background-color: var(--background-secondary-alt);
-  border-radius: 50px;
-  box-shadow: var(--elevation-high);
-  box-sizing: border-box;
-  display: flex;
-  margin-bottom: 36px;
-  padding: 12px 22px 12px 12px;
-  pointer-events: all;
-  position: relative;
-  width: 438px;
-}
-.innerWrapper_b4589b:after,
-.innerWrapper_b4589b:before {
-  border: 2px solid transparent;
-  border-radius: inherit;
-  box-sizing: border-box;
-  content: "";
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.innerWrapper_b4589b:after {
-  border-color: var(--guild-boosting-blue);
-  -webkit-mask: linear-gradient(45deg, #000, transparent);
-  mask: linear-gradient(45deg, #000, transparent);
-}
-.innerWrapper_b4589b:before {
-  border-color: var(--guild-boosting-purple);
-}
-.theme-light .innerWrapper_b4589b {
-  background-color: var(--background-secondary);
-}
-.guildInfo_b4589b {
-  align-items: center;
-  display: flex;
-  flex: 1 1 auto;
-  overflow: hidden;
-  padding-right: 8px;
-  text-overflow: ellipsis;
-}
-.guildIcon_b4589b {
-  background-color: var(--background-primary);
-  flex: 0 0 auto;
-  margin-right: 14px;
-}
-.ctaButton_b4589b {
-  border-radius: var(--custom-button-button-lg-height);
-  flex: 0 0 auto;
-}
-.guildName_b4589b {
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.cannonWrapper_d00019 {
-  z-index: 1;
-}
-.cannon_d00019,
-.cannonWrapper_d00019 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.confettiTriggerWrapper_d00019 {
-  cursor: pointer;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
-.confettiTrigger_d00019 {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-}
-.progressBarMarker__1f1cb {
-  align-items: center;
-  background-color: var(--opacity-white-40);
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  height: var(
-    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
-  );
-  isolation: isolate;
-  justify-content: center;
-  position: absolute;
-  transform: translateX(-50%);
-  width: var(
-    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
-  );
-  z-index: 2;
-}
-.progressBarMarker__1f1cb:after {
-  content: "";
-  height: 50px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  z-index: 1;
-}
-.progressBarMarker__1f1cb.progressBarMarkerCurrent__1f1cb {
-  background-color: transparent;
-}
-.progressBarMarkerCurrent__1f1cb .progressBarMarkerIndicator__1f1cb {
-  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.25);
-}
-.progressBarMarkerUnlocked__1f1cb .progressBarMarkerIndicator__1f1cb {
-  background: var(--guild-boosting-pink);
-  border-radius: 100%;
-  content: "";
-  height: var(
-    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
-  );
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: var(
-    --custom-guild-boosting-marketing-progress-bar-marker-marker-dimensions
-  );
-  z-index: 0;
-}
-.progressBarMarkerUnlocked__1f1cb.progressBarMarkerLower__1f1cb
-  .progressBarMarkerIndicator__1f1cb {
-  height: 20px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  z-index: 3;
-}
-.progressBarMarkerLocked__1f1cb {
-  cursor: pointer;
-}
-.progressBarMarkerLabel__1f1cb {
-  color: var(--white-500);
-  left: 50%;
-  padding-top: 4px;
-  opacity: 0.4;
-  position: absolute;
-  top: 100%;
-  transition: opacity 0.125s;
-  transform: translateX(-50%);
-  white-space: nowrap;
-}
-.progressBarMarkerLabel__1f1cb:after {
-  content: "";
-  height: 100%;
-  left: 50%;
-  padding: 3px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 1;
-}
-.progressBarMarkerUnlocked__1f1cb .progressBarMarkerLabel__1f1cb {
-  opacity: 0.8;
-}
-.progressBarMarkerCurrent__1f1cb .progressBarMarkerLabel__1f1cb,
-.progressBarMarkerLocked__1f1cb:hover .progressBarMarkerLabel__1f1cb {
-  opacity: 1;
-}
-.progressBarMarkerUnlockedIcon__1f1cb {
-  height: 16px;
-  padding-right: 3px;
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  transform: translateY(calc(-50% + 1px));
-  width: 16px;
-}
-.boostedTierIconBackground__1f1cb {
-  background-color: var(--white-500);
-  border-radius: 20px;
-  height: 20px;
-  left: 50%;
-  opacity: 0.5;
-  position: absolute;
-  top: 50%;
-  transition: opacity 0.125s;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  z-index: 2;
-}
-.progressBarMarkerLocked__1f1cb:hover .boostedTierIconBackground__1f1cb {
-  opacity: 1;
-}
-.boostedTierIcon__1f1cb {
-  color: var(--guild-boosting-pink);
-  height: 12px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 12px;
-  z-index: 4;
-}
-.progressBarMarkerUnlocked__1f1cb .boostedTierIcon__1f1cb {
-  color: var(--white-500);
-}
-.progressBarMarkerCurrent__1f1cb .boostedTierIcon__1f1cb {
-  height: 16px;
-  width: 16px;
-}
-.progressBar_b28bb7 {
-  height: 54px;
-  isolation: isolate;
-  margin: 0 auto 48px;
-  max-width: 660px;
-  position: relative;
-}
-.progressBarScrubber_b28bb7 {
-  height: 8px;
-  left: calc(
-    var(--custom-guild-boosting-marketing-progress-bar-marker-dimensions) / 2 +
-      var(--custom-guild-boosting-marketing-progress-bar-end-markers-margin)
-  );
-  position: absolute;
-  right: calc(
-    var(--custom-guild-boosting-marketing-progress-bar-marker-dimensions) / 2 +
-      var(--custom-guild-boosting-marketing-progress-bar-end-markers-margin)
-  );
-  top: 13px;
-}
-.progressBarTrack_b28bb7 {
-  background-color: var(--opacity-white-28);
-  width: 100%;
-  z-index: 0;
-}
-.progressBarFill_b28bb7,
-.progressBarTrack_b28bb7 {
-  border-radius: 8px;
-  height: 100%;
-  position: absolute;
-}
-.progressBarFill_b28bb7 {
-  background-image: linear-gradient(
-    90deg,
-    var(--guild-boosting-purple),
-    var(--white-500)
-  );
-  left: 0;
-  z-index: 2;
-}
-.progressBarCurrentProgressTooltip_b28bb7 {
-  margin-top: 100px;
-}
-.progressBarCurrentProgressTooltipMarker_b28bb7 {
-  border-radius: 100%;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  z-index: 3;
-}
-.progressBarCurrentProgressTooltipHeading_b28bb7 {
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.progressBarCurrentProgressTooltipSubheading_b28bb7 {
-  display: flex;
-  align-items: center;
-}
-.progressBarCurrentProgressTooltipSubheadingIcon_b28bb7 {
-  color: var(--guild-boosting-pink);
-  flex: 0 0 auto;
-  height: 16px;
-  margin-left: -2px;
-  margin-right: 4px;
-  width: 16px;
-}
-.progressBarCurrentProgressTooltipSubheadingCopy_b28bb7 {
-  flex: 1 1 auto;
-}
-.tierCards_be48d0 {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-}
-.tierCard_be48d0 {
-  border-radius: var(
-    --custom-guild-boosting-marketing-tier-cards-tier-card-border-radius
-  );
-  box-shadow: var(--elevation-high);
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  padding: 24px 36px 30px;
-  position: relative;
-  width: 338px;
-}
-.tierCard_be48d0,
-.tierCardCurrentTier_be48d0 {
-  background-image: linear-gradient(
-    45deg,
-    var(--guild-boosting-blue),
-    var(--guild-boosting-purple)
-  );
-}
-.tierCardCurrentTier_be48d0 {
-  border-radius: 8px;
-  padding: 4px 8px;
-  position: absolute;
-  left: 28px;
-  text-transform: uppercase;
-  top: 0;
-  transform: translateY(-50%);
-}
-.tierCardHeader_be48d0 {
-  align-items: baseline;
-  display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-.tierCardHeading_be48d0 {
-  flex: 0 0 auto;
-}
-.tierCardBoostRequirement_be48d0 {
-  flex: 0 0 auto;
-  opacity: 0.7;
-}
-.tierCardList_be48d0 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.tierCardListItem_be48d0 {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-}
-.tierCardListIcon_be48d0 {
-  flex: 0 0 auto;
-  width: 24px;
-  height: 24px;
-}
-.tierCardSparkleHighlight_be48d0 {
-  background-image: radial-gradient(
-    100% 100% at center,
-    #fff 0,
-    hsla(0, 0%, 100%, 0) 50%
-  );
-  color: var(--white-500);
-  height: 80px;
-  position: absolute;
-  width: 1px;
-}
-.theme-light .tierCardSparkleHighlight_be48d0 {
-  background-image: radial-gradient(
-    100% 100% at center,
-    hsl(var(--guild-boosting-pink-hsl) / 1) 0,
-    hsl(var(--guild-boosting-pink-hsl) / 0) 50%
-  );
-  color: var(--guild-boosting-pink);
-}
-.tierCardSparkleHighlightTopRight_be48d0 {
-  right: 0;
-  top: 30px;
-}
-.tierCardSparkleHighlightBottomLeft_be48d0 {
-  bottom: 30px;
-  left: 0;
-}
-.tierCardBorderHighlight_be48d0 {
-  border-radius: var(
-    --custom-guild-boosting-marketing-tier-cards-tier-card-border-radius
-  );
-  box-sizing: border-box;
-  height: 100%;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.tierCardBorderHighlightTopRight_be48d0 {
-  border: 1px solid var(--guild-boosting-blue);
-  -webkit-mask: radial-gradient(
-    100% 100% at top right,
-    #fff 0,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-  mask: radial-gradient(
-    100% 100% at top right,
-    #fff 0,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-}
-.tierCardBorderHighlightBottomLeft_be48d0 {
-  border: 1px solid var(--guild-boosting-purple);
-  -webkit-mask: radial-gradient(
-    100% 100% at bottom left,
-    #fff 0,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-  mask: radial-gradient(
-    100% 100% at bottom left,
-    #fff 0,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-}
-.tierCardSparkle1_be48d0 {
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.tierCardSparkle2_be48d0 {
-  left: 11px;
-  position: absolute;
-  top: 10%;
-}
-.tierCardSparkle3_be48d0 {
-  right: 21px;
-  position: absolute;
-  top: -20px;
-}
-.tierCardPerkRow_be48d0 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.tierCardNewFeatureBadge_be48d0 {
-  margin-left: 8px;
-  border-radius: 8px;
-  background: #fff;
-  color: var(--premium-tier-2-purple-for-gradients);
-  align-self: center;
-}
-.heading__686cf {
-  margin-bottom: 82px;
-  text-align: center;
-}
-.tableWrapper__686cf {
-  position: relative;
-}
-.table__686cf {
-  text-align: center;
-  width: 100%;
-}
-.columnHeading__686cf,
-.tableCell__686cf {
-  border-bottom: 1px solid var(--opacity-white-16);
-}
-.theme-light .columnHeading__686cf,
-.theme-light .tableCell__686cf {
-  border-bottom-color: var(--opacity-black-16);
-}
-.columnHeading__686cf {
-  padding-bottom: 16px;
-}
-.tableCell__686cf {
-  box-sizing: border-box;
-  padding: 22px 0;
-  vertical-align: middle;
-  width: 20%;
-}
-.tableCellWrapper__686cf {
-  padding: 0;
-}
-.tableCellInner__686cf {
-  border-bottom: none;
-  width: 100%;
-}
-.tableRowHeading__686cf {
-  text-align: left;
-}
-.booleanValueIcon__686cf {
-  color: var(--interactive-muted);
-  display: block;
-  margin: 0 auto;
-}
-.booleanValueTrue__686cf {
-  color: var(--header-primary);
-}
-.recommendedTierHighlight__686cf {
-  bottom: -16px;
-  pointer-events: none;
-  position: absolute;
-  top: -38px;
-  width: 20%;
-}
-.recommendedTierHighlight__686cf:after,
-.recommendedTierHighlight__686cf:before {
-  border-radius: 16px;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.recommendedTierHighlight__686cf:after {
-  border-color: var(--guild-boosting-blue);
-  -webkit-mask: linear-gradient(70deg, #000, transparent);
-  mask: linear-gradient(70deg, #000, transparent);
-}
-.recommendedTierHighlight__686cf:before {
-  border-color: var(--guild-boosting-purple);
-}
-.recommendedTierHighlightTier2__686cf {
-  right: 20%;
-}
-.recommendedTierHighlightTier3__686cf {
-  right: 0;
-}
-.recommendedTierHighlightTag__686cf {
-  background-image: linear-gradient(
-    30deg,
-    var(--guild-boosting-blue),
-    var(--guild-boosting-purple)
-  );
-  border-radius: 8px;
-  padding: 4px 8px;
-  position: absolute;
-  left: 50%;
-  top: 1px;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.perkPreviewImage__686cf {
-  background-color: var(--background-secondary-alt);
-  border-radius: 8px;
-  box-shadow: var(--elevation-high);
-  display: block;
-  height: 168px;
-  width: 280px;
-}
-.headerWave__1dfae {
-  bottom: -1px;
-  color: var(--background-primary);
-  max-height: 400px;
-}
-.bodyWave__1dfae,
-.headerWave__1dfae {
-  display: block;
-  left: 50%;
-  min-width: 1000px;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 1;
-}
-.bodyWave__1dfae {
-  max-height: 1200px;
-  top: 10%;
-}
-.bodyWaveGradientStop1__1dfae {
-  stop-color: var(--background-primary);
-}
-.bodyWaveGradientStop2__1dfae {
-  stop-color: var(--background-secondary-alt);
-}
-.bodyWaveGradientStop3__1dfae {
-  stop-color: var(--background-primary);
-}
-.closeIconWrapper__6fd0e {
-  margin: 0 auto;
-  max-width: 1060px;
-  mix-blend-mode: screen;
-  position: relative;
-  z-index: 2;
-}
-.theme-light .closeIconWrapper__6fd0e {
-  mix-blend-mode: multiply;
-}
-.closeIcon__6fd0e {
-  position: absolute;
-  right: 24px;
-  top: 48px;
-  z-index: 2;
-}
-.scroller__6fd0e {
-  background: var(--background-primary);
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-.content__6fd0e {
-  margin: 0 auto;
-  max-width: 1060px;
-}
-.headerContentWrapper__6fd0e {
-  padding: 100px 32px 32px;
-  position: relative;
-  z-index: 2;
-}
-.header__6fd0e {
-  background:
-    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
-    linear-gradient(
-      359.37deg,
-      rgba(0, 0, 0, 0.5) 12.68%,
-      hsla(0, 0%, 100%, 0) 50.4%
-    ),
-    linear-gradient(
-      159.15deg,
-      var(--premium-tier-0-header-gradient-1) 8.49%,
-      var(--premium-tier-0-header-gradient-2) 32.21%,
-      var(--premium-tier-0-header-gradient-3) 42.9%,
-      var(--premium-tier-0-header-gradient-4) 66.06%,
-      var(--premium-tier-0-header-gradient-5) 71.4%
-    );
-  position: relative;
-}
-.theme-light .header__6fd0e {
-  background:
-    center 15%/90% auto url(/assets/ea2ad3ad1bfd2975.svg) no-repeat,
-    linear-gradient(
-      359.37deg,
-      hsla(0, 0%, 100%, 0.5) 12.68%,
-      hsla(0, 0%, 100%, 0) 50.4%
-    ),
-    linear-gradient(
-      159.15deg,
-      var(--premium-tier-0-header-gradient-1) 8.49%,
-      var(--premium-tier-0-header-gradient-2) 32.21%,
-      var(--premium-tier-0-header-gradient-3) 42.9%,
-      var(--premium-tier-0-header-gradient-4) 66.06%,
-      var(--premium-tier-0-header-gradient-5) 71.4%
-    );
-}
-.heading__6fd0e {
-  margin: 0 auto 48px;
-  max-width: 960px;
-  text-align: center;
-}
-.middleBodyContentWrapper__6fd0e {
-  padding: 32px;
-}
-.lowerBody__6fd0e {
-  position: relative;
-}
-.lowerBodyBackgroundImage__6fd0e {
-  filter: saturate(1);
-  filter: saturate(var(--saturation-factor, 1));
-  background: right 285px no-repeat url(/assets/32b48278e7e6c908.svg);
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-@media (max-width: 1430px) {
-  .lowerBodyBackgroundImage__6fd0e {
-    display: none;
-  }
-}
-.lowerBodyContentWrapper__6fd0e {
-  padding: 32px;
-  position: relative;
-  z-index: 2;
-}
-.persistentCtaSpacer__6fd0e {
-  height: 120px;
-}
-.tierComparisonTable__6fd0e {
-  margin-bottom: 64px;
-}
-.premiumTooltipFooterBackground__7d7fe {
-  background: linear-gradient(90deg, #b473f5, #e292aa);
-  width: "100%";
-}
-.tooltipBodyContainer__7d7fe {
-  text-align: center;
-  padding: 8px 12px;
-}
-.tooltipPremiumFooterContainer__7d7fe {
-  background: linear-gradient(90deg, #b473f5, #e292aa);
-  color: #fff;
-  border-radius: 0 0 5px 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tooltipRemovePadding__7d7fe {
-  padding: 0;
-}
-.gemIcon__7d7fe {
-  margin-top: 2px;
-  margin-left: -4px;
-}
-.tooltipPremiumFooterSegment__7d7fe {
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.tooltipPremiumFooterTierSegment__7d7fe {
-  border-left-color: var(--background-floating);
-  border-bottom-color: var(--background-floating);
-  border-right: 1px solid;
-  border-right-color: var(--background-floating);
-  border-top-color: var(--background-floating);
-}
-.clanBadgeContainer__7d7fe img {
-  margin: 0;
 }
 .row_b1f768 {
   display: flex;
@@ -57148,4 +57153,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d8d865b8ba695a12.css.map*/
+/*# sourceMappingURL=12633.5e30faa5902b60d1.css.map*/
