@@ -12225,21 +12225,6 @@ div.cardContainer__88e24 {
   margin-top: 2px;
   margin-right: 10%;
 }
-.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIcon__5eb9b svg {
-  transform: none !important;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: currentColor;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: currentColor;
-}
 .balanceCounterMargin__98f64 {
   margin-left: 4px;
 }
@@ -12254,6 +12239,21 @@ div.cardContainer__88e24 {
   transition:
     all 0.4s ease-out,
     opacity 0.4s ease-in;
+}
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIcon__5eb9b svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
 }
 .clickable_a3e8db,
 .container_a3e8db {
@@ -57079,4 +57079,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e42e74813acdcb2d.css.map*/
+/*# sourceMappingURL=12633.fd04ab3c1b328791.css.map*/
