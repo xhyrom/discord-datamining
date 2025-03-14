@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6102921002,
   "location": {
-    "name": "San Francisco, CA or Remote (U.S.)"
+    "name": "San Francisco, CA"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7865139002,
-  "updated_at": "2025-03-03T17:28:02-05:00",
+  "updated_at": "2025-03-14T17:49:49-04:00",
   "requisition_id": "R-100817",
   "title": "Staff Technical Program Manager - AI Programs",
   "company_name": "Discord",
