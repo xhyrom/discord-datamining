@@ -29400,6 +29400,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
   -o-object-fit: contain;
   object-fit: contain;
 }
+.orbProfileBadgeAsset__320c6 {
+  height: 152px;
+}
 .fadeInAvatarImg_d71c71 {
   animation: fadeIn_d71c71 1.5s;
 }
@@ -30000,8 +30003,10 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .tooltipWordmark_f240e3.orbBadge_f240e3 {
   margin-bottom: 4px;
 }
-.orbBadgeImage_f240e3 {
-  width: 66px;
+.orbBadgeAsset_f240e3 {
+  width: 64px;
+}
+.orbHeaderWithSpacing_f240e3 {
   margin-bottom: 12px;
 }
 .orbLink_f240e3 {
@@ -57083,4 +57088,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7b8faa426fb8bf1e.css.map*/
+/*# sourceMappingURL=12633.f5b0125778de9877.css.map*/
