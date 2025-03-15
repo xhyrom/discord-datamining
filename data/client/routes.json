@@ -4173,7 +4173,10 @@
   },
   "GUILD_PROFILE_VISIBILITY": {
     "url": "/guilds/:param/profile/visibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
