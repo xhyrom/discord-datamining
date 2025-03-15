@@ -96,12 +96,33 @@
       "OPTIONS"
     ]
   },
+  "JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_PRESENCE": {
+    "url": "/users/:param/sessions/:param/embedded-activities/:param/1",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE": {
+    "url": "/activity-instances/:param/embedded-activities/:param/join",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "USER_ACTIVITY_STATISTICS": {
     "url": "/users/@me/activities/statistics/applications",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
+    ]
+  },
+  "USER_ACTIVITY_SUBSCRIBE": {
+    "url": "/users/@me/activities/subscribe",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
     ]
   },
   "APPLICATION_ACTIVITY_STATISTICS": {
@@ -839,6 +860,10 @@
     "url": "/users/:param/avatars/:param.:param",
     "allowed_methods": null
   },
+  "ARCHIVED_AVATAR": {
+    "url": "/avatars/:param/archived/:param/:param.:param",
+    "allowed_methods": null
+  },
   "USER_BANNER": {
     "url": "/users/:param/banners/:param.:param",
     "allowed_methods": null
@@ -902,13 +927,9 @@
       "OPTIONS"
     ]
   },
-  "COLLECTIBLES_SHOP_HOME": {
-    "url": "/collectibles-shop-home",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+  "COLLECTIBLES_SHOP": {
+    "url": "/collectibles-shop",
+    "allowed_methods": null
   },
   "CONSUMABLE_FETCH_PRICE": {
     "url": "/store/consumable/pricing/:param",
@@ -1548,6 +1569,18 @@
       "POST"
     ]
   },
+  "RECENT_AVATARS": {
+    "url": "/users/@me/avatars",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "RECENT_AVATARS_DELETE": {
+    "url": "/users/@me/avatars/:param",
+    "allowed_methods": null
+  },
   "CONNECTIONS": {
     "url": "/users/@me/connections",
     "allowed_methods": [
@@ -1680,6 +1713,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "VERIFY_AGE": {
+    "url": "/age-verification/verify",
+    "allowed_methods": null
   },
   "EXPERIMENTS": {
     "url": "/experiments",
@@ -2408,6 +2445,14 @@
       "POST"
     ]
   },
+  "GUILD_POWERUPS": {
+    "url": "/guilds/:param/powerups",
+    "allowed_methods": null
+  },
+  "GUILD_POWERUP_TOGGLE": {
+    "url": "/guilds/:param/skus/:param",
+    "allowed_methods": null
+  },
   "SEARCH_CHANNEL": {
     "url": "/channels/:param/messages/search",
     "allowed_methods": [
@@ -2656,6 +2701,14 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "BILLING_SUBSCRIPTION_REWARDS": {
+    "url": "/users/@me/billing/subscriptions/:param/rewards",
+    "allowed_methods": null
+  },
+  "Billing_SUBSCRIPTION_REWARD_ELIGIBILITY": {
+    "url": "/users/@me/billing/subscriptions/:param/reward-eligibility",
+    "allowed_methods": null
   },
   "BILLING_COUNTRY_CODE": {
     "url": "/users/@me/billing/country-code",
@@ -2930,6 +2983,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "APPLICATION_MANAGED_ACTIVITY_LINK": {
+    "url": "/applications/:param/managed-links/:param",
+    "allowed_methods": null
   },
   "STORE_EULA": {
     "url": "/store/eulas/:param",
@@ -3871,6 +3928,10 @@
       "POST"
     ]
   },
+  "CHAT_WALLPAPERS": {
+    "url": "/chat-wallpapers",
+    "allowed_methods": null
+  },
   "GUILD_ROLE_SUBSCRIPTIONS_SETTINGS": {
     "url": "/guilds/:param/role-subscriptions/settings",
     "allowed_methods": [
@@ -4109,6 +4170,10 @@
       "OPTIONS",
       "PATCH"
     ]
+  },
+  "GUILD_PROFILE_VISIBILITY": {
+    "url": "/guilds/:param/profile/visibility",
+    "allowed_methods": null
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
@@ -4607,15 +4672,6 @@
       "POST"
     ]
   },
-  "GET_REFERRAL_INCENTIVE_ELIGIBILITY": {
-    "url": "/users/@me/referrals/incentive-eligibility",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "CREATE_REFERRAL_PREVIEW": {
     "url": "/users/@me/referrals/:param/preview",
     "allowed_methods": [
@@ -4718,12 +4774,8 @@
     "url": "/user-offers/create/:param/:param",
     "allowed_methods": null
   },
-  "DELETE_USER_OFFER": {
+  "UPDATE_USER_OFFER": {
     "url": "/user-offers/:param/:param",
-    "allowed_methods": null
-  },
-  "UNACK_USER_OFFER": {
-    "url": "/user-offers/:param/:param/unack",
     "allowed_methods": null
   },
   "USER_OFFERS": {
@@ -4997,7 +5049,7 @@
     ]
   },
   "QUEST_FETCH_QUEST_TO_DELIVER": {
-    "url": "/quests/decision?placement=:param",
+    "url": "/quests/decision?placement=:param&client_heartbeat_session_id=:param",
     "allowed_methods": [
       "GET",
       "HEAD",
