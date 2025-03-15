@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_go_live_modal_refresh",
+    "label": "Go Live Modal Refresh",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show refreshed go live modal",
+      "Treatment 2: Show refreshed go live modal, 2 click variant"
+    ],
+    "hash": 2658192345,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

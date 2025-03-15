@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_activity_status_cleanup",
+    "label": "Activity Status Cleanup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Activity Status Cleanup Enabled"
+    ],
+    "hash": 2874990890,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

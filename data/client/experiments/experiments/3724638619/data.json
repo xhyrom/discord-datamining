@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_desktop_multiple_background_updates",
+    "label": "Support multiple native background updates",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow multiple native background updates"
+    ],
+    "hash": 3724638619,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

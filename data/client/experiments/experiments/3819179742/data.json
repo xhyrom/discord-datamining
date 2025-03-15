@@ -1,0 +1,31 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_voice_call_buttons_v2",
+    "label": "Voice and Video buttons V2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Grouped buttons with green active state",
+      "Treatment 2: Grouped green buttons with simplified settings",
+      "Treatment 3: Grouped tinted buttons",
+      "Treatment 4: Grouped tinted buttons with simplified settings"
+    ],
+    "hash": 3819179742,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "squareButtonsEnabled",
+      "coloredIconsEnabled",
+      "simplifiedSettingsEnabled"
+    ]
+  }
+}

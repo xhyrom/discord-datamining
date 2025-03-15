@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_shop_paired_deco_upsell",
+    "label": "Shop Paired Deco Upsell Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show paired deco upsell"
+    ],
+    "hash": 734161137,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showPairedDecoUpsell"
+    ]
+  }
+}

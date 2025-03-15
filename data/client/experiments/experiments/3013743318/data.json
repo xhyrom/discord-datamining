@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_custom_status_edit_preview_mobile",
+    "label": "Custom Status Edit Preview (Mobile)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable edit modal with preview"
+    ],
+    "hash": 3013743318,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

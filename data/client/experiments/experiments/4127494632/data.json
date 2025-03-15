@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_q1_marketing_reminder",
+    "label": "2025 Q1 Collectible Deco Marketing Moment Reminder",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will see a reminder for the 2025 Q1 Collectible Deco Marketing Moment"
+    ],
+    "hash": 4127494632,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

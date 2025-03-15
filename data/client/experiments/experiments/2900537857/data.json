@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_obscured_message_loaded_analytics",
+    "label": "Obscured message loaded analytics",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables the experiment"
+    ],
+    "hash": 2900537857,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

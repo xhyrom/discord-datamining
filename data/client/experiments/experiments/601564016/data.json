@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_app_directory_launch_activity_button",
+    "label": "App Directory Launch Activity Button",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable user to Launch an Activity directly from the App Directory"
+    ],
+    "hash": 601564016,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

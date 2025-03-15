@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable contextless activities"
+      "Treatment 1: Enable contextless activities on desktop only",
+      "Treatment 2: Enable contextless activities on desktop and mobile"
     ],
     "hash": 1212742421,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,

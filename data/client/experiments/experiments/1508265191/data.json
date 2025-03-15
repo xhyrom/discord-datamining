@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_test_user_auth_filter_overlay",
+    "label": "Test User Auth Filter Overlay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Variation with treatment enabled"
+    ],
+    "hash": 1508265191,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_voice_filters_pre_process_mute",
+    "label": "Voice Filters Pre Process Mute",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Mute before processing when voice filters is enabled"
+    ],
+    "hash": 3336307645,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "voiceFiltersPreProcessMute"
+    ]
+  }
+}

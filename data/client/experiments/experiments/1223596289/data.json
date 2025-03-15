@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_q1_marketing_messaging",
+    "label": "2025 Q1 Collectible Deco Marketing Moment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will see the 2025 Q1 Collectible Deco Marketing Moment"
+    ],
+    "hash": 1223596289,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

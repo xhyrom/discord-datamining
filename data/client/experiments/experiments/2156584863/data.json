@@ -16,47 +16,11 @@
       1,
       2
     ],
-    "holdout": {
-      "name": null,
-      "bucket": null
-    },
+    "holdout": {},
     "aa_mode": false,
     "config_keys": [
       "shouldOverrideKrisp",
       "overrideKrispSetting"
     ]
-  },
-  "rollout": {
-    "populations": [
-      {
-        "buckets": {
-          "none": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": [
-          {
-            "type": "guild_member_count_range",
-            "min_count": 1,
-            "max_count": 200
-          }
-        ]
-      }
-    ],
-    "revision": 2,
-    "overrides": {
-      "1": [
-        "844690435841851453"
-      ],
-      "2": [
-        "1220136599703130205"
-      ]
-    },
-    "overrides_formatted": []
   }
 }

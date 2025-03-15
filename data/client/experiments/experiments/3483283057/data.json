@@ -6,18 +6,27 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Use Overlay V3"
+      "Treatment 1: Use Overlay V3, All features included.",
+      "Treatment 2: Use Overlay V3, Minus \"Now Playing\" Notif.",
+      "Treatment 3: Use Overlay V3 minus any activity",
+      "Treatment 4: Use Overlay V3 tech with Overlay 2 UI"
     ],
     "hash": 3483283057,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "overlayV3tech",
+      "overlayV3UI",
+      "allowActivityWidget",
+      "allowNowPlaying"
     ]
   }
 }

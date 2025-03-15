@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_test_large_bucket_third",
+    "label": "Test Large Bucket Third Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Variation with first treatment enabled",
+      "Treatment 2: Variation with second treatment enabled"
+    ],
+    "hash": 2239431523,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

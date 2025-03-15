@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_app_dm_opt_out_settings",
+    "label": "App DM Opt Out Settings",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable user to opt out of DMs from apps"
+    ],
+    "hash": 2284717449,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

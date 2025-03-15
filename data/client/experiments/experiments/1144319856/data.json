@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_allow_nonstaff_to_preview_app_collections",
+    "label": "Allow Non-Staff to Preview App Collections",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: In App Launcher in Text, enable seeing only \"NON_STAFF_PREVIEW\" app collections"
+    ],
+    "hash": 1144319856,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

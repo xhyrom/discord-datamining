@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_reverse_trial_load_test",
+    "label": "Reverse Trials",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users receives reverse trial + 1 week follow-up offer"
+    ],
+    "hash": 2711274077,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

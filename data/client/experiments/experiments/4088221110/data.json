@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_q1_marketing_premium_card",
+    "label": "2025 Q1 Collectible Deco Marketing Moment Premium Card on Nitro Home",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will see a card to claim reward for the 2025 Q1 Collectible Deco Marketing Moment on Nitro Home"
+    ],
+    "hash": 4088221110,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

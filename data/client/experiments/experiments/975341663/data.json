@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_slayer_notif_supression_killswitch",
+    "label": "Disable suppressing notifications with slayer game active",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Disable suppressing"
+    ],
+    "hash": 975341663,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

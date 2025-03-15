@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_test_user_auth_apply_filter_badges",
+    "label": "Test User Auth Apply Filter Badges",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Variation with treatment enabled"
+    ],
+    "hash": 3126924587,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_improved_image_upload_flow",
+    "label": "Improved Image Upload Flow",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: QOL improvements to the image upload and edit flow used for profile assets, server banners & icons, etc."
+    ],
+    "hash": 825791778,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

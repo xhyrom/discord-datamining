@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-02_cropped_avatar_desktop_notifications",
+    "label": "Cropped Avatar Desktop Notifications",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show circular cropped avatars in desktop notifications"
+    ],
+    "hash": 4202809328,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

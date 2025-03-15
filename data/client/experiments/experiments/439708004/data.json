@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_user_profile_voice_activity_card",
+    "label": "User Profile Voice Activity Card",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: User Profile Voice Activity Card Enabled"
+    ],
+    "hash": 439708004,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

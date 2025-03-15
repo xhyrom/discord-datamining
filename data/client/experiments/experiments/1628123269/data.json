@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_test_user_auth_filter_marketing",
+    "label": "Test User Auth Filter Marketing",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Variation with treatment enabled"
+    ],
+    "hash": 1628123269,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

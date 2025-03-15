@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_dm_chat_wallpapers_setter",
+    "label": "DM Chat Wallpapers",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables setting dm chat wallpapers in the context menu",
+      "Treatment 2: Enables setting dm chat wallpapers in the toolbar"
+    ],
+    "hash": 3795802997,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

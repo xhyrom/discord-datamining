@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_expiring_status_v2",
+    "label": "Expiring status Experiment V2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: allow expiring status",
+      "Treatment 2: default change status click expires after 24h"
+    ],
+    "hash": 2874041378,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "expiringStatus",
+      "defaultClickExpire"
+    ]
+  }
+}

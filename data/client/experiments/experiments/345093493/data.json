@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_game_profile_reenable",
+    "label": "Re-enable content inventory on game profile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Re-enable"
+    ],
+    "hash": 345093493,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

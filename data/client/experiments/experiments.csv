@@ -487,6 +487,7 @@ id,hash,label
 2024-02_clips_quality_decoupling,2198288410,Clips quality decoupling
 2024-02_collectibles_anime_v2_marketing,3989121258,Anime V2 marketing Experiment
 2024-02_collectibles_shop_elements_marketing,3290168049,Collectibles Shop Marketing Experiment - Elements
+2024-02_cropped_avatar_desktop_notifications,4202809328,Cropped Avatar Desktop Notifications
 2024-02_desktop_animated_icons,151550492,Desktop animated icons
 2024-02_emoji_picker_upload_desktop,350727084,Desktop: Consistently show the Emoji Picker Upload button at the start of emoji lists
 2024-02_emoji_suggestions,867058171,Emoji Suggestions Experiment
@@ -540,6 +541,7 @@ id,hash,label
 2024-03_referral_program_recipient,1203883687,Referral Program Recipient Experience
 2024-03_referral_program_sender,2843439589,Referral Program Sender Experience
 2024-03_remb_experiment,3962844131,Bandwidth Estimation - REMB
+2024-03_shop_card_hover_animation,3326718803,Shop card hover animation experiment
 2024-03_simplified_profile_phase_one,526435992,Simplified Profile Experiment
 2024-03_social_proof_hd_streaming,913903122,Social proof in HD streaming upsell
 2024-03_unreads_new_users,1135801489,Unreads Experiment (grey-dot mode) (new users)
@@ -809,6 +811,7 @@ id,hash,label
 2024-10_block_user_feedback,1345574151,Block User Feedback Experiment
 2024-10_blocking_context,1289160534,Blocking Context
 2024-10_consumables_hd_streaming,3491032581,Consumable HD Streaming Experiment
+2024-10_flamingo,599786827,Flamingo
 2024-10_golive_simulcast,3942584255,GoLive Simulcast
 2024-10_icymi_legacy,1485834222,Legacy ICYMI experiment
 2024-10_icymi_random,807262478,random sort on ICYMI
@@ -834,6 +837,7 @@ id,hash,label
 2024-10_recent_activity_in_dms,2122002762,Recent Activity in DMs
 2024-10_retrigger_reaction_frecency_algorithms,3254726199,(Retrigger) Reaction Frecency Algorithms
 2024-10_shop_skus_in_gift_flow,1469485145,Gift Collectibles in DM
+2024-10_shop_tile_impression_logging,1219608372,Shop tile impressions logging
 2024-10_shop_variants,2849820511,Shop Variants Experiment
 2024-10_simplified_custom_status_bubble,2329002064,Simplified Custom Status Bubble
 2024-10_stealth_remediation,3936986189,A new user remediation tool
@@ -895,21 +899,110 @@ id,hash,label
 2024-12_winter_holiday,944123231,Winter Holiday
 2024-2024-10_shop_variants,1035618977,Shop Variants Experiment
 2025-01_202501defaultactivitystatusnewusers,3628236585,Guild activity status defaults
+2025-01_activity_status_cleanup,2874990890,Activity Status Cleanup
 2025-01_advanced_server_join,1739883879,Advanced Server Join Experiment
+2025-01_allow_nonstaff_to_preview_app_collections,1144319856,Allow Non-Staff to Preview App Collections
+2025-01_audio_nack,1021798937,Audio NACK 
 2025-01_avholdout,1426712360,AV Holdout - H1 2025
 2025-01_checkout_optimization_apple_pay,2234215604,Checkout Optimization Apple Pay
+2025-01_custom_status_edit_preview_mobile,3013743318,Custom Status Edit Preview (Mobile)
 2025-01_default_activity_status,3227839539,Guild activity status defaults
 2025-01_default_activity_status_new_users,1114170761,Guild activity status defaults
+2025-01_desktop_multiple_background_updates,3724638619,Support multiple native background updates
+2025-01_expiring_status_v2,2874041378,Expiring status Experiment V2
 2025-01_friend_requests_alerts,1248999811,Friend Request Setting Defaults
 2025-01_friend_requests_alerts_new_users,348548012,Friend Request Setting Defaults
 2025-01_friend_tiers_ui,3048471262,Slayer Friend Tiers UI
+2025-01_go_live_modal_refresh,2658192345,Go Live Modal Refresh
+2025-01_guild_settings_foundation,2398539226,Guild Settings Foundation Revamp
 2025-01_hotwheels_overlay_invites_v2,1665351603,Overlay Invites Notification
 2025-01_inappropriate_conversations_new_defaults,2278984228,Inappropriate Conversation Warning Default On
 2025-01_message_request_new_location,3031729682,Moves message requests ingress point closer to Friends
 2025-01_perceptual_volume_function,2812258452,Perceptual volume function adjustment
+2025-01_q1_marketing_messaging,1223596289,2025 Q1 Collectible Deco Marketing Moment
+2025-01_q1_marketing_premium_card,4088221110,2025 Q1 Collectible Deco Marketing Moment Premium Card on Nitro Home
+2025-01_q1_marketing_reminder,4127494632,2025 Q1 Collectible Deco Marketing Moment Reminder
+2025-01_quest_bar_copy_simplification,2675723457,Quest Bar Copy Simplification
+2025-01_recent_avatars,826493636,Recent Avatars
 2025-01_remove_emoji_effects,3976238319,Remove emoji effects
+2025-01_sensitive_content_defaults,2542064208,Sensitive Content Defaults
+2025-01_sensitive_content_defaults_new_users,2037806570,Sensitive Content Defaults - New Users
 2025-01_tiered_tenure_badges_mobile,698529632,Tiered Tenure Badging Mobile Experience
 2025-01_updated_activity_privacy_controls,3683707426,Enables the rtc popout and updated settings page
+2025-01_user_profile_voice_activity_card,439708004,User Profile Voice Activity Card
 2025-01_valentines_gifting_2025,3086590474,Valentines Gifting 2025
+2025-01_virtual_currency_rollout,2656369572,Virtual Currency Rollout
 2025-01_voice_and_video_settings_refresh,3267876834,Voice and Video Settings Refresh
+2025-02_2025_client_platform_holdout,144156745,Client Platform Holdout - H1 2025
+2025-02_activity_popout_window_v2,2587552621,Activity Popout Window V2 Experiment
+2025-02_activity_sharing_popout,1626530317,Enables the rtc popout
+2025-02_app_directory_launch_activity_button,601564016,App Directory Launch Activity Button
+2025-02_app_dm_opt_out_settings,2284717449,App DM Opt Out Settings
+2025-02_av_error_codes,3393973842,AV error new UI
+2025-02_clearer_notes_label,234579696,Clearer Notes Label Experiment
+2025-02_dm_defaults,2884295908,Default DM Settings
+2025-02_dm_defaults_new_users,1578255932,Default DM Settings - New Users
+2025-02_game_profile_reenable,345093493,Re-enable content inventory on game profile
+2025-02_hotwheels_overlay_invites_3,1142246346,Overlay Invites Notification Pt3
+2025-02_hotwheels_v2_model,19546350,Next iteration of the activity feed ranking model.
+2025-02_improved_image_upload_flow,825791778,Improved Image Upload Flow
+2025-02_name_plate_experiment,2637206255,Nameplates Experiment
+2025-02_nameplate_purchasing,1263296517,Nameplate Purchase Experiment
+2025-02_optimized_rpc_authorize,2278004000,Optimized RPC Authorization Experiment
+2025-02_quest_bar_reward_available_exclamation_mark,1277004955,Quest Bar Reward Available Exclamation Mark
+2025-02_quest_home_moved_callout,4005859919,Quest Home Moved Callout Experiment
+2025-02_quest_home_static_image,1949604747,Quest Home Static Image Experiment
+2025-02_reaction_reply,2171414724,Reaction Reply Experiment
+2025-02_reverse_trial_load_test,2711274077,Reverse Trials
+2025-02_reverse_trial_perk_access_kill_switch,3509006900,Reverse Trial Perk Access Kill Switch
+2025-02_rive_staff_testing,2986977424,Rive staff testing
+2025-02_settings_search_in_quick_switcher,3761102267,Settings in Quick Switcher
+2025-02_shop_paired_deco_upsell,734161137,Shop Paired Deco Upsell Experiment
+2025-02_show_popout_on_delayed_hover,3758641196,Show Profile Popout On Delayed Hover Experiment
+2025-02_skill_trees,1984074768,Skill Trees
+2025-02_test_first_bucket_allocation,445499752,Test First Bucket Allocation Experiment
+2025-02_test_large_bucket_second,1999513734,Test Large Bucket Second Experiment
+2025-02_test_large_bucket_third,2239431523,Test Large Bucket Third Experiment
+2025-02_test_third_bucket_allocation,3919150953,Test Third Bucket Allocation Experiment
+2025-02_test_user_auth_apply_filter,2464735833,Test User Auth Apply Filter
+2025-02_test_user_auth_apply_filter_anniversaries,191233475,Test User Auth Apply Filter Anniversaries
+2025-02_test_user_auth_apply_filter_badges,3126924587,Test User Auth Apply Filter Badges
+2025-02_test_user_auth_apply_filter_install,2579076166,Test User Auth Apply Filter Install
+2025-02_test_user_auth_apply_filter_marketing,3467689732,Test User Auth Apply Filter Marketing
+2025-02_test_user_auth_apply_filter_overlay,4207025862,Test User Auth Apply Filter Overlay
+2025-02_test_user_auth_apply_filter_soundmoji,681687036,Test User Auth Apply Filter Soundmoji
+2025-02_test_user_auth_apply_filter_viewer,2975009432,Test User Auth Apply Filter Viewer
+2025-02_test_user_auth_filter,3591412193,Test User Auth Filter
+2025-02_test_user_auth_filter_anniversaries,3472413502,Test User Auth Filter Anniversaries
+2025-02_test_user_auth_filter_badges,3450981360,Test User Auth Filter Badges
+2025-02_test_user_auth_filter_install,1775580709,Test User Auth Filter Install
+2025-02_test_user_auth_filter_marketing,1628123269,Test User Auth Filter Marketing
+2025-02_test_user_auth_filter_overlay,1508265191,Test User Auth Filter Overlay
+2025-02_test_user_auth_filter_soundmoji,1421508023,Test User Auth Filter Soundmoji
+2025-02_test_user_auth_filter_viewer,720408110,Test User Auth Filter Viewer
+2025-02_tigger_pawtect,442550442,Tigger pawtect
+2025-02_voice_activity_status,2986313484,Voice Activity Status
+2025-02_voice_call_buttons_v2,3819179742,Voice and Video buttons V2
+2025-02_voice_filters_pre_process_mute,3336307645,Voice Filters Pre Process Mute
+2025-02_voice_mic_button_state_for_mobile,908668827,Voice Mic Button State for Mobile
+2025-03_activity_privacy_per_guild_settings,2020090831,Show per-guild activity privacy settings
+2025-03_custom_status_prompts,2421730155,Custom Status Prompts Experiment
+2025-03_desktop_deeplinks,3176811877,Desktop Deeplinks
+2025-03_desktop_refresh_compact_mode,2412295181,Desktop Refresh Compact Mode
+2025-03_dm_chat_wallpapers_setter,3795802997,DM Chat Wallpapers
+2025-03_dm_chat_wallpapers_viewer,1017645027,DM Chat Wallpapers Viewer
+2025-03_fractional_premium_subscription_management,343170818,Subscription management while on fractional nitro
+2025-03_guild_profile_invite_embed,1144728667,Enables invite embeds using new guild profile components
+2025-03_obscured_message_loaded_analytics,2900537857,Obscured message loaded analytics
+2025-03_permadecos_marketing,957395828,Permadecos Marketing
+2025-03_remove_inbox_fyp,3320018478,Remove Inbox For You Tab
+2025-03_shop_hide_strikethrough_price,1907383429,Shop Hide Strikethrough Price Experiment
+2025-03_slayer_notif_supression_killswitch,975341663,Disable suppressing notifications with slayer game active
+2025-03_test_badges_existing_users,3151405917,Test Badges Existing Users Experiment
+2025-03_test_badges_new_users,522921030,Test Badges New Users Experiment
+2025-03_test_tile_existing_users,3685207000,Test Tile Existing Users Experiment
+2025-03_test_tile_new_users,1710485888,Test Tile New Users Experiment
+2025-03_toggle_camera_keybind,4285324985,Toggle Camera Keybind
+2025-03_video_occlusion_stat_tracking,870963564,Video Occlusion Stat Tracking Debug
+2025-05_mobile_video_quest_rollout,1681313735,Quests: Mobile Video Quest
 2025-1_call_settings,2418862162,Simplified Call Settings Experiment

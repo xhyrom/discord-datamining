@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_quest_bar_copy_simplification",
+    "label": "Quest Bar Copy Simplification",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Simplified copy"
+    ],
+    "hash": 2675723457,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

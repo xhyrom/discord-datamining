@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_fractional_premium_subscription_management",
+    "label": "Subscription management while on fractional nitro",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow subscription management while on fractional nitro"
+    ],
+    "hash": 343170818,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

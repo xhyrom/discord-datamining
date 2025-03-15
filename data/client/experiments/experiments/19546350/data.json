@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_hotwheels_v2_model",
+    "label": "Next iteration of the activity feed ranking model.",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 5: ML model V1",
+      "Treatment 13: ML model V2"
+    ],
+    "hash": 19546350,
+    "buckets": [
+      -1,
+      0,
+      5,
+      13
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": []
+  }
+}

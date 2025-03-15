@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_av_error_codes",
+    "label": "AV error new UI",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show new AV error UI"
+    ],
+    "hash": 3393973842,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

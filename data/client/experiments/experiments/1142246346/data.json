@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_hotwheels_overlay_invites_3",
+    "label": "Overlay Invites Notification Pt3",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled, no date cutoff",
+      "Treatment 2: Enabled, within past week"
+    ],
+    "hash": 1142246346,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

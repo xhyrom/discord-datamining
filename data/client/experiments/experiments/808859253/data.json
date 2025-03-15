@@ -19,8 +19,7 @@
       3
     ],
     "holdout": {
-      "name": "2023-06_server_subscriptions_tier_templates_holdout",
-      "bucket": 0
+      "name": "2023-06_server_subscriptions_tier_templates_holdout"
     },
     "aa_mode": false,
     "config_keys": [

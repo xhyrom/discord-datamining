@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_recent_avatars",
+    "label": "Recent Avatars",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow users to select from recently uploaded avatars"
+    ],
+    "hash": 826493636,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

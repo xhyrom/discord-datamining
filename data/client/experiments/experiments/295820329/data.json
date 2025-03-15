@@ -3,8 +3,7 @@
     "kind": "guild",
     "hash": 295820329,
     "holdout": {
-      "name": null,
-      "bucket": null
+      "name": null
     },
     "aa_mode": false
   },
@@ -12,7 +11,7 @@
     "populations": [
       {
         "buckets": {
-          "1": {
+          "none": {
             "rollout": [
               {
                 "start": 0,

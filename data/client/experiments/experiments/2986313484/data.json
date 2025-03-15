@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_voice_activity_status",
+    "label": "Voice Activity Status",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Voice Activity Status Enabled"
+    ],
+    "hash": 2986313484,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -3,8 +3,7 @@
     "kind": "guild",
     "hash": 2001176293,
     "holdout": {
-      "name": null,
-      "bucket": null
+      "name": null
     },
     "aa_mode": false
   },

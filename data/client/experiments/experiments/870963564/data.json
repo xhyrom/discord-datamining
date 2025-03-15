@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_video_occlusion_stat_tracking",
+    "label": "Video Occlusion Stat Tracking Debug",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Revert occlusion tracking changes"
+    ],
+    "hash": 870963564,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "revertOcclusionTrackingChanges"
+    ]
+  }
+}

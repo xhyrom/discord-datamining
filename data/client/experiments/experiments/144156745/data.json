@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_2025_client_platform_holdout",
+    "label": "Client Platform Holdout - H1 2025",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables the holdout experiment"
+    ],
+    "hash": 144156745,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "isInHoldout"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_reverse_trial_perk_access_kill_switch",
+    "label": "Reverse Trial Perk Access Kill Switch",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Prevent perk access for users with reverse trials"
+    ],
+    "hash": 3509006900,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

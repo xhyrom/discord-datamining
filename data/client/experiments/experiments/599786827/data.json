@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-10_flamingo",
+    "label": "Flamingo",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled - Treatment 1",
+      "Treatment 2: Enabled - Treatment 2",
+      "Treatment 3: Enabled - Treatment 3",
+      "Treatment 4: Enabled - Tester"
+    ],
+    "hash": 599786827,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-01_sensitive_content_defaults_new_users",
+    "label": "Sensitive Content Defaults - New Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Mixed",
+      "Treatment 2: Blur Default"
+    ],
+    "hash": 2037806570,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

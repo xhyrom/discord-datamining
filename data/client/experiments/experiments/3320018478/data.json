@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_remove_inbox_fyp",
+    "label": "Remove Inbox For You Tab",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Remove For You tab"
+    ],
+    "hash": 3320018478,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showForYouTab"
+    ]
+  }
+}

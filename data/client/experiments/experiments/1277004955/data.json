@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_quest_bar_reward_available_exclamation_mark",
+    "label": "Quest Bar Reward Available Exclamation Mark",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Reward Available Exclamation Mark"
+    ],
+    "hash": 1277004955,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

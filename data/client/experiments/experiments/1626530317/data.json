@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-02_activity_sharing_popout",
+    "label": "Enables the rtc popout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: RTC Popout"
+    ],
+    "hash": 1626530317,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
