@@ -2450,7 +2450,11 @@
   },
   "GUILD_POWERUPS": {
     "url": "/guilds/:param/powerups",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_POWERUP_TOGGLE": {
     "url": "/guilds/:param/skus/:param",
