@@ -1,10 +1,9 @@
 {
-  "subdomain_count": 56,
+  "subdomain_count": 55,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
     "airflow-data-tns-prd",
-    "us-east1000",
     "admin-stg",
     "staging-images-2",
     "grafana-data-prd",
