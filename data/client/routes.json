@@ -1716,7 +1716,10 @@
   },
   "VERIFY_AGE": {
     "url": "/age-verification/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPERIMENTS": {
     "url": "/experiments",
@@ -2990,7 +2993,13 @@
   },
   "APPLICATION_MANAGED_ACTIVITY_LINK": {
     "url": "/applications/:param/managed-links/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STORE_EULA": {
     "url": "/store/eulas/:param",
