@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-09_redesigned_icons_experiment",
-    "label": "Redesigned icons experiment",
+    "id": "2025-03_activity_sharing_popout_with_invisibility",
+    "label": "Activity Sharing Popout with Invisibility",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Redesigned icons enabled"
+      "Treatment 1: Enable the RTC popout when the user is not sharing activity or is invisible"
     ],
-    "hash": 2688743035,
+    "hash": 2004988961,
     "buckets": [
       -1,
       0,
