@@ -7543,91 +7543,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-02_hotwheels_overlay_invites_3",
-      "label": "Overlay Invites Notification Pt3",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled, no date cutoff",
-        "Treatment 2: Enabled, within past week"
-      ],
-      "hash": 1142246346,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_test_first_bucket_allocation",
-      "label": "Test First Bucket Allocation Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Variation with first treatment enabled",
-        "Treatment 2: Variation with second treatment enabled"
-      ],
-      "hash": 445499752,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1412337990,
-      "holdout": {
-        "name": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "799349358776549378",
-          "763838479293349899"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-10_rapidash_discovery_plus",
       "label": "Rapidash Discovery Plus",
       "description": [
@@ -8269,79 +8184,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-11_soundmoji_sending",
-      "label": "Send soundmojis",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled w/o emoji section",
-        "Treatment 2: Enabled w/ emoji section"
-      ],
-      "hash": 1328765334,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "showSoundmojiInEmojiPicker"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-11_third_party_access_settings_redesign",
-      "label": "Third Party Access User Settings Redesign",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: show updated settings UI"
-      ],
-      "hash": 2932220947,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showRedesign"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-11_unreads_new_users2",
-      "label": "Unreads Experiment (grey-dot mode) (new users) 2",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Auto open migration"
-      ],
-      "hash": 1130924794,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "logExposure"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-12_app_dm_report_button",
       "label": "App DMs Report Button Experiment",
       "description": [
@@ -8391,173 +8233,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-12_confetti_potion",
-      "label": "Confetti Potion Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Viewer Treatment",
-        "Treatment 2: Purchaser Treatment"
-      ],
-      "hash": 1949530485,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "canPurchase",
-        "canSeeConfetti",
-        "canSeeEducation",
-        "canSeeUpsells"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2024-12_guild_voice_channel_ringing",
-      "label": "Guild Voice Ringing",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow users to ring each other in Guild Voice Channels"
-      ],
-      "hash": 3294787359,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {
-        "name": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "1138217295597011016",
-                "1199152226233483358",
-                "1345154197250637914",
-                "689949103198961671",
-                "895433068389752902"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_icymi_status_with_media",
-      "label": "Shows media with custom status in ICYMI",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables showing media with custom status in ICYMI"
-      ],
-      "hash": 4006754440,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_new_guild_profile",
-      "label": "Enables new guild profile",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: On"
-      ],
-      "hash": 3008491910,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_overlay_v3_tech",
-      "label": "Overlay V3 Shared Tech Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Use Overlay V3 Tech"
-      ],
-      "hash": 558925743,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "useOverlayV3Tech"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-12_participants_panel",
       "label": "Participants Panel",
       "description": [
@@ -8566,75 +8241,6 @@
         "Treatment 1: Participants panel in VC and GDM"
       ],
       "hash": 3915594045,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_premium_wow_moment",
-      "label": "Premium Wow Moment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the wow moment"
-      ],
-      "hash": 2616729737,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_premium_wow_moment_fetch_analytics",
-      "label": "Premium Wow Moment Fetch Analytics",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the analytics"
-      ],
-      "hash": 2333858302,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_quests_nitro_permadecos",
-      "label": "Quests Nitro Permadecos",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 763918667,
       "buckets": [
         -1,
         0,
@@ -8673,174 +8279,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-12_shop_link_mention",
-      "label": "Collectibles Shop Link Mention Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Render shop link as mention"
-      ],
-      "hash": 4271370555,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_uplift_trial_nux",
-      "label": "Uplift Trial NUX",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Users will see the uplift trial NUX"
-      ],
-      "hash": 2788035008,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_user_profile_modal_recent_activity",
-      "label": "User Profile Modal Recent Activity",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Recent Activity Tab Enabled"
-      ],
-      "hash": 2340201155,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_voice_call_buttons",
-      "label": "Voice/Video icon states",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Microphone button moved to left",
-        "Treatment 2: Grouped buttons with control colors",
-        "Treatment 3: Grouped buttons with only red mic"
-      ],
-      "hash": 2815273603,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "mode",
-        "groupedButtons"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-12_winter_holiday",
-      "label": "Winter Holiday",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 944123231,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_activity_status_cleanup",
-      "label": "Activity Status Cleanup",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Activity Status Cleanup Enabled"
-      ],
-      "hash": 2874990890,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_advanced_server_join",
-      "label": "Advanced Server Join Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Advanced Server Join w/ Server Mute",
-        "Treatment 2: Enable Advanced Server Join w/o Server Mute"
-      ],
-      "hash": 1739883879,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-01_allow_nonstaff_to_preview_app_collections",
       "label": "Allow Non-Staff to Preview App Collections",
       "description": [
@@ -8849,145 +8287,6 @@
         "Treatment 1: In App Launcher in Text, enable seeing only \"NON_STAFF_PREVIEW\" app collections"
       ],
       "hash": 1144319856,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_audio_nack",
-      "label": "Audio NACK ",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable NACK for audio"
-      ],
-      "hash": 1021798937,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_avholdout",
-      "label": "AV Holdout - H1 2025",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables the holdout experiment"
-      ],
-      "hash": 1426712360,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "isInHoldout"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_checkout_optimization_apple_pay",
-      "label": "Checkout Optimization Apple Pay",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2234215604,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "delay"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_custom_status_edit_preview_mobile",
-      "label": "Custom Status Edit Preview (Mobile)",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable edit modal with preview"
-      ],
-      "hash": 3013743318,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_default_activity_status",
-      "label": "Guild activity status defaults",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable new defaults"
-      ],
-      "hash": 3227839539,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_default_activity_status_new_users",
-      "label": "Guild activity status defaults",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable new defaults"
-      ],
-      "hash": 1114170761,
       "buckets": [
         -1,
         0,
@@ -9026,105 +8325,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-01_expiring_status_v2",
-      "label": "Expiring status Experiment V2",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: allow expiring status",
-        "Treatment 2: default change status click expires after 24h"
-      ],
-      "hash": 2874041378,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "expiringStatus",
-        "defaultClickExpire"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_friend_requests_alerts",
-      "label": "Friend Request Setting Defaults",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: warning",
-        "Treatment 2: defaults"
-      ],
-      "hash": 1248999811,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_friend_requests_alerts_new_users",
-      "label": "Friend Request Setting Defaults",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: warning",
-        "Treatment 2: defaults"
-      ],
-      "hash": 348548012,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_friend_tiers_ui",
-      "label": "Slayer Friend Tiers UI",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable game friend features in app"
-      ],
-      "hash": 3048471262,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-01_go_live_modal_refresh",
       "label": "Go Live Modal Refresh",
       "description": [
@@ -9139,225 +8339,6 @@
         0,
         1,
         2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2025-01_guild_settings_foundation",
-      "label": "Guild Settings Foundation Revamp",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Guild Settings Foundation Revamp"
-      ],
-      "hash": 2398539226,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {
-        "name": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "CLAN"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 1100,
-                  "end": 2000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 2000,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 2,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "SERVER_PROFILES_TEST"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "1001740690297999360",
-                "1001972372544438542",
-                "1100836130829648064",
-                "1166812177232044032",
-                "1199152226233483358",
-                "1286390027080826940",
-                "1288241159553941606",
-                "1319410486688878713",
-                "1327079999001591909",
-                "1331700684088803339",
-                "1339295778048315403",
-                "1343976459009790086",
-                "1346588960964476961",
-                "267054589960912898",
-                "674658876997500938",
-                "728392551937212487",
-                "808798785341095966",
-                "816408867092561940",
-                "834645574266650674",
-                "840296607785287763",
-                "946571334207561789"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_inappropriate_conversations_new_defaults",
-      "label": "Inappropriate Conversation Warning Default On",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Inappropriate Conversation Warnings On"
-      ],
-      "hash": 2278984228,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_perceptual_volume_function",
-      "label": "Perceptual volume function adjustment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Use gamma 2.8",
-        "Treatment 2: Use gamma ~1.7 (50% = -10dB, 25% = -20dB)",
-        "Treatment 3: Use gamma 2.6",
-        "Treatment 4: Use gamma 3.0",
-        "Treatment 5: Use gamma 2.0",
-        "Treatment 6: Use gamma 4.0"
-      ],
-      "hash": 2812258452,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "gamma",
-        "attenuationRange",
-        "boostRange"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_q1_marketing_messaging",
-      "label": "2025 Q1 Collectible Deco Marketing Moment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Users will see the 2025 Q1 Collectible Deco Marketing Moment"
-      ],
-      "hash": 1223596289,
-      "buckets": [
-        -1,
-        0,
-        1
       ],
       "holdout": {},
       "aa_mode": false,
@@ -9415,52 +8396,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-01_quest_bar_copy_simplification",
-      "label": "Quest Bar Copy Simplification",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Simplified copy"
-      ],
-      "hash": 2675723457,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_recent_avatars",
-      "label": "Recent Avatars",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow users to select from recently uploaded avatars"
-      ],
-      "hash": 826493636,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-01_remove_emoji_effects",
       "label": "Remove emoji effects",
       "description": [
@@ -9478,56 +8413,6 @@
       "aa_mode": false,
       "config_keys": [
         "removeEmojiEffects"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_sensitive_content_defaults",
-      "label": "Sensitive Content Defaults",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Mixed",
-        "Treatment 2: Blur Default"
-      ],
-      "hash": 2542064208,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_sensitive_content_defaults_new_users",
-      "label": "Sensitive Content Defaults - New Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Mixed",
-        "Treatment 2: Blur Default"
-      ],
-      "hash": 2037806570,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -9552,78 +8437,6 @@
       "config_keys": [
         "enabled",
         "isBadgeVersion2"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_user_profile_voice_activity_card",
-      "label": "User Profile Voice Activity Card",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: User Profile Voice Activity Card Enabled"
-      ],
-      "hash": 439708004,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_valentines_gifting_2025",
-      "label": "Valentines Gifting 2025",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show Valentines Coachmark and Gifting Flow",
-        "Treatment 2: Show Valentines Gifting Flow only. No Coachmark."
-      ],
-      "hash": 3086590474,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableGiftingFlow",
-        "enableCoachmark"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-01_virtual_currency_rollout",
-      "label": "Virtual Currency Rollout",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Virtual Currency features"
-      ],
-      "hash": 2656369572,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -9676,29 +8489,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-02_activity_popout_window_v2",
-      "label": "Activity Popout Window V2 Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable activity popout window"
-      ],
-      "hash": 2587552621,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-02_activity_sharing_popout",
       "label": "Enables the rtc popout",
       "description": [
@@ -9730,75 +8520,6 @@
         "Treatment 1: Enable user to Launch an Activity directly from the App Directory"
       ],
       "hash": 601564016,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_app_dm_opt_out_settings",
-      "label": "App DM Opt Out Settings",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable user to opt out of DMs from apps"
-      ],
-      "hash": 2284717449,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_av_error_codes",
-      "label": "AV error new UI",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show new AV error UI"
-      ],
-      "hash": 3393973842,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_clearer_notes_label",
-      "label": "Clearer Notes Label Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable clearer notes label"
-      ],
-      "hash": 234579696,
       "buckets": [
         -1,
         0,
@@ -9864,14 +8585,39 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-02_game_profile_reenable",
-      "label": "Re-enable content inventory on game profile",
+      "id": "2025-02_hotwheels_overlay_invites_3",
+      "label": "Overlay Invites Notification Pt3",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Re-enable"
+        "Treatment 1: Enabled, no date cutoff",
+        "Treatment 2: Enabled, within past week"
       ],
-      "hash": 345093493,
+      "hash": 1142246346,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_optimized_rpc_authorize",
+      "label": "Optimized RPC Authorization Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable optimized RPC authorization"
+      ],
+      "hash": 2278004000,
       "buckets": [
         -1,
         0,
@@ -9887,37 +8633,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-02_hotwheels_v2_model",
-      "label": "Next iteration of the activity feed ranking model.",
+      "id": "2025-02_quest_bar_reward_available_exclamation_mark",
+      "label": "Quest Bar Reward Available Exclamation Mark",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 5: ML model V1",
-        "Treatment 13: ML model V2"
+        "Treatment 1: Reward Available Exclamation Mark"
       ],
-      "hash": 19546350,
-      "buckets": [
-        -1,
-        0,
-        5,
-        13
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_optimized_rpc_authorize",
-      "label": "Optimized RPC Authorization Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable optimized RPC authorization"
-      ],
-      "hash": 2278004000,
+      "hash": 1277004955,
       "buckets": [
         -1,
         0,
@@ -10014,6 +8737,31 @@
         -1,
         0,
         1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_test_first_bucket_allocation",
+      "label": "Test First Bucket Allocation Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Variation with first treatment enabled",
+        "Treatment 2: Variation with second treatment enabled"
+      ],
+      "hash": 445499752,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -10514,6 +9262,238 @@
   {
     "data": {
       "kind": "user",
+      "id": "2025-03_activity_privacy_per_guild_settings",
+      "label": "Show per-guild activity privacy settings",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show settings"
+      ],
+      "hash": 2020090831,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_activity_sharing_popout_with_invisibility",
+      "label": "Activity Sharing Popout with Invisibility",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the RTC popout when the user is not sharing activity or is invisible"
+      ],
+      "hash": 2004988961,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_desktop_deeplinks",
+      "label": "Desktop Deeplinks",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: On"
+      ],
+      "hash": 3176811877,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_desktop_refresh_compact_mode",
+      "label": "Desktop Refresh Compact Mode",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2412295181,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_dm_chat_wallpapers_setter",
+      "label": "DM Chat Wallpapers",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables setting dm chat wallpapers in the context menu",
+        "Treatment 2: Enables setting dm chat wallpapers in the toolbar"
+      ],
+      "hash": 3795802997,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_dm_chat_wallpapers_viewer",
+      "label": "DM Chat Wallpapers Viewer",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables viewing dm chat wallpapers"
+      ],
+      "hash": 1017645027,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_guild_profile_invite_embed",
+      "label": "Enables invite embeds using new guild profile components",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: new embeds enabled"
+      ],
+      "hash": 1144728667,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_permadecos_marketing",
+      "label": "Permadecos Marketing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 957395828,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_remove_inbox_fyp",
+      "label": "Remove Inbox For You Tab",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Remove For You tab"
+      ],
+      "hash": 3320018478,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "showForYouTab"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_slayer_notif_supression_killswitch",
+      "label": "Disable suppressing notifications with slayer game active",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Disable suppressing"
+      ],
+      "hash": 975341663,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2025-03_test_badges_existing_users",
       "label": "Test Badges Existing Users Experiment",
       "description": [
@@ -10716,192 +9696,6 @@
             }
           ]
         }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_improved_image_upload_flow",
-      "label": "Improved Image Upload Flow",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: QOL improvements to the image upload and edit flow used for profile assets, server banners & icons, etc."
-      ],
-      "hash": 825791778,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_name_plate_experiment",
-      "label": "Nameplates Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Can see",
-        "Treatment 2: Can see and default palette opacity 10%"
-      ],
-      "hash": 2637206255,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "canSee"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_nameplate_purchasing",
-      "label": "Nameplate Purchase Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Can purchase"
-      ],
-      "hash": 1263296517,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_quest_bar_reward_available_exclamation_mark",
-      "label": "Quest Bar Reward Available Exclamation Mark",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Reward Available Exclamation Mark"
-      ],
-      "hash": 1277004955,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_reaction_reply",
-      "label": "Reaction Reply Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable reaction reply"
-      ],
-      "hash": 2171414724,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_reverse_trial_perk_access_kill_switch",
-      "label": "Reverse Trial Perk Access Kill Switch",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Prevent perk access for users with reverse trials"
-      ],
-      "hash": 3509006900,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_rive_staff_testing",
-      "label": "Rive staff testing",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Enable Rive staff testing"
-      ],
-      "hash": 2986977424,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_shop_paired_deco_upsell",
-      "label": "Shop Paired Deco Upsell Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show paired deco upsell"
-      ],
-      "hash": 734161137,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showPairedDecoUpsell"
       ]
     }
   },
@@ -11126,384 +9920,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2025-02_show_popout_on_delayed_hover",
-      "label": "Show Profile Popout On Delayed Hover Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable showing profile popout on delayed hover"
-      ],
-      "hash": 3758641196,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2025-02_skill_trees",
-      "label": "Skill Trees",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enabled"
-      ],
-      "hash": 1984074768,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_voice_activity_status",
-      "label": "Voice Activity Status",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Voice Activity Status Enabled"
-      ],
-      "hash": 2986313484,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_voice_call_buttons_v2",
-      "label": "Voice and Video buttons V2",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Grouped buttons with green active state",
-        "Treatment 2: Grouped green buttons with simplified settings",
-        "Treatment 3: Grouped tinted buttons",
-        "Treatment 4: Grouped tinted buttons with simplified settings"
-      ],
-      "hash": 3819179742,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "squareButtonsEnabled",
-        "coloredIconsEnabled",
-        "simplifiedSettingsEnabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_voice_filters_pre_process_mute",
-      "label": "Voice Filters Pre Process Mute",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Mute before processing when voice filters is enabled"
-      ],
-      "hash": 3336307645,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "voiceFiltersPreProcessMute"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_activity_controller_icon",
-      "label": "Activities Icon - Desktop",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Change all activities icon to controller"
-      ],
-      "hash": 1748590261,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_activity_privacy_per_guild_settings",
-      "label": "Show per-guild activity privacy settings",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show settings"
-      ],
-      "hash": 2020090831,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_activity_sharing_popout_with_invisibility",
-      "label": "Activity Sharing Popout with Invisibility",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the RTC popout when the user is not sharing activity or is invisible"
-      ],
-      "hash": 2004988961,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_custom_status_prompts",
-      "label": "Custom Status Prompts Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable custom status prompts"
-      ],
-      "hash": 2421730155,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_desktop_deeplinks",
-      "label": "Desktop Deeplinks",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: On"
-      ],
-      "hash": 3176811877,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_desktop_refresh_compact_mode",
-      "label": "Desktop Refresh Compact Mode",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2412295181,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_dm_chat_wallpapers_setter",
-      "label": "DM Chat Wallpapers",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables setting dm chat wallpapers in the context menu",
-        "Treatment 2: Enables setting dm chat wallpapers in the toolbar"
-      ],
-      "hash": 3795802997,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_dm_chat_wallpapers_viewer",
-      "label": "DM Chat Wallpapers Viewer",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables viewing dm chat wallpapers"
-      ],
-      "hash": 1017645027,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_fractional_premium_subscription_management",
-      "label": "Subscription management while on fractional nitro",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow subscription management while on fractional nitro"
-      ],
-      "hash": 343170818,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_guild_profile_invite_embed",
-      "label": "Enables invite embeds using new guild profile components",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: new embeds enabled"
-      ],
-      "hash": 1144728667,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_permadecos_marketing",
-      "label": "Permadecos Marketing",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 957395828,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 968663312,
       "holdout": {
@@ -11546,52 +9962,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_remove_inbox_fyp",
-      "label": "Remove Inbox For You Tab",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Remove For You tab"
-      ],
-      "hash": 3320018478,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showForYouTab"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_slayer_notif_supression_killswitch",
-      "label": "Disable suppressing notifications with slayer game active",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Disable suppressing"
-      ],
-      "hash": 975341663,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
@@ -11678,6 +10048,114 @@
       "overrides": {
         "1": [
           "651595875897835540"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_soundmoji_sending",
+      "label": "Send soundmojis",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled w/o emoji section",
+        "Treatment 2: Enabled w/ emoji section"
+      ],
+      "hash": 1328765334,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "showSoundmojiInEmojiPicker"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_third_party_access_settings_redesign",
+      "label": "Third Party Access User Settings Redesign",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: show updated settings UI"
+      ],
+      "hash": 2932220947,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "showRedesign"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-11_unreads_new_users2",
+      "label": "Unreads Experiment (grey-dot mode) (new users) 2",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Auto open migration"
+      ],
+      "hash": 1130924794,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "logExposure"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 1412337990,
+      "holdout": {
+        "name": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "799349358776549378",
+          "763838479293349899"
         ]
       },
       "overrides_formatted": []
@@ -12062,52 +10540,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-03_obscured_message_loaded_analytics",
-      "label": "Obscured message loaded analytics",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables the experiment"
-      ],
-      "hash": 2900537857,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_shop_hide_strikethrough_price",
-      "label": "Shop Hide Strikethrough Price Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Hide strikethrough prices"
-      ],
-      "hash": 1907383429,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "hideStrikethroughPrice"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-03_test_tile_existing_users",
       "label": "Test Tile Existing Users Experiment",
       "description": [
@@ -12357,6 +10789,1597 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_confetti_potion",
+      "label": "Confetti Potion Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Viewer Treatment",
+        "Treatment 2: Purchaser Treatment"
+      ],
+      "hash": 1949530485,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "canPurchase",
+        "canSeeConfetti",
+        "canSeeEducation",
+        "canSeeUpsells"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2024-12_guild_voice_channel_ringing",
+      "label": "Guild Voice Ringing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow users to ring each other in Guild Voice Channels"
+      ],
+      "hash": 3294787359,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {
+        "name": null
+      },
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "1138217295597011016",
+                "1199152226233483358",
+                "1345154197250637914",
+                "689949103198961671",
+                "895433068389752902"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_icymi_status_with_media",
+      "label": "Shows media with custom status in ICYMI",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables showing media with custom status in ICYMI"
+      ],
+      "hash": 4006754440,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_new_guild_profile",
+      "label": "Enables new guild profile",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: On"
+      ],
+      "hash": 3008491910,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_overlay_v3_tech",
+      "label": "Overlay V3 Shared Tech Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Use Overlay V3 Tech"
+      ],
+      "hash": 558925743,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "useOverlayV3Tech"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_premium_wow_moment",
+      "label": "Premium Wow Moment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the wow moment"
+      ],
+      "hash": 2616729737,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_premium_wow_moment_fetch_analytics",
+      "label": "Premium Wow Moment Fetch Analytics",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the analytics"
+      ],
+      "hash": 2333858302,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_quests_nitro_permadecos",
+      "label": "Quests Nitro Permadecos",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 763918667,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_shop_link_mention",
+      "label": "Collectibles Shop Link Mention Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Render shop link as mention"
+      ],
+      "hash": 4271370555,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_uplift_trial_nux",
+      "label": "Uplift Trial NUX",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Users will see the uplift trial NUX"
+      ],
+      "hash": 2788035008,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_user_profile_modal_recent_activity",
+      "label": "User Profile Modal Recent Activity",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Recent Activity Tab Enabled"
+      ],
+      "hash": 2340201155,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_voice_call_buttons",
+      "label": "Voice/Video icon states",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Microphone button moved to left",
+        "Treatment 2: Grouped buttons with control colors",
+        "Treatment 3: Grouped buttons with only red mic"
+      ],
+      "hash": 2815273603,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "mode",
+        "groupedButtons"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-12_winter_holiday",
+      "label": "Winter Holiday",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 944123231,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_activity_status_cleanup",
+      "label": "Activity Status Cleanup",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Activity Status Cleanup Enabled"
+      ],
+      "hash": 2874990890,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_advanced_server_join",
+      "label": "Advanced Server Join Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Advanced Server Join w/ Server Mute",
+        "Treatment 2: Enable Advanced Server Join w/o Server Mute"
+      ],
+      "hash": 1739883879,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_audio_nack",
+      "label": "Audio NACK ",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable NACK for audio"
+      ],
+      "hash": 1021798937,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_avholdout",
+      "label": "AV Holdout - H1 2025",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables the holdout experiment"
+      ],
+      "hash": 1426712360,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "isInHoldout"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_checkout_optimization_apple_pay",
+      "label": "Checkout Optimization Apple Pay",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2234215604,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled",
+        "delay"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_custom_status_edit_preview_mobile",
+      "label": "Custom Status Edit Preview (Mobile)",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable edit modal with preview"
+      ],
+      "hash": 3013743318,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_default_activity_status",
+      "label": "Guild activity status defaults",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable new defaults"
+      ],
+      "hash": 3227839539,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_default_activity_status_new_users",
+      "label": "Guild activity status defaults",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable new defaults"
+      ],
+      "hash": 1114170761,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_expiring_status_v2",
+      "label": "Expiring status Experiment V2",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: allow expiring status",
+        "Treatment 2: default change status click expires after 24h"
+      ],
+      "hash": 2874041378,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "expiringStatus",
+        "defaultClickExpire"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_friend_requests_alerts",
+      "label": "Friend Request Setting Defaults",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: warning",
+        "Treatment 2: defaults"
+      ],
+      "hash": 1248999811,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_friend_requests_alerts_new_users",
+      "label": "Friend Request Setting Defaults",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: warning",
+        "Treatment 2: defaults"
+      ],
+      "hash": 348548012,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_friend_tiers_ui",
+      "label": "Slayer Friend Tiers UI",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable game friend features in app"
+      ],
+      "hash": 3048471262,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2025-01_guild_settings_foundation",
+      "label": "Guild Settings Foundation Revamp",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Guild Settings Foundation Revamp"
+      ],
+      "hash": 2398539226,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {
+        "name": null
+      },
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "CLAN"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 100,
+                  "end": 200
+                },
+                {
+                  "start": 1100,
+                  "end": 2000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 2000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "SERVER_PROFILES_TEST"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "1001740690297999360",
+                "1001972372544438542",
+                "1100836130829648064",
+                "1166812177232044032",
+                "1199152226233483358",
+                "1286390027080826940",
+                "1288241159553941606",
+                "1319410486688878713",
+                "1327079999001591909",
+                "1331700684088803339",
+                "1339295778048315403",
+                "1343976459009790086",
+                "1346588960964476961",
+                "267054589960912898",
+                "674658876997500938",
+                "728392551937212487",
+                "808798785341095966",
+                "816408867092561940",
+                "834645574266650674",
+                "840296607785287763",
+                "946571334207561789"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_inappropriate_conversations_new_defaults",
+      "label": "Inappropriate Conversation Warning Default On",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Inappropriate Conversation Warnings On"
+      ],
+      "hash": 2278984228,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_perceptual_volume_function",
+      "label": "Perceptual volume function adjustment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Use gamma 2.8",
+        "Treatment 2: Use gamma ~1.7 (50% = -10dB, 25% = -20dB)",
+        "Treatment 3: Use gamma 2.6",
+        "Treatment 4: Use gamma 3.0",
+        "Treatment 5: Use gamma 2.0",
+        "Treatment 6: Use gamma 4.0"
+      ],
+      "hash": 2812258452,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "gamma",
+        "attenuationRange",
+        "boostRange"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_q1_marketing_messaging",
+      "label": "2025 Q1 Collectible Deco Marketing Moment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Users will see the 2025 Q1 Collectible Deco Marketing Moment"
+      ],
+      "hash": 1223596289,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_quest_bar_copy_simplification",
+      "label": "Quest Bar Copy Simplification",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Simplified copy"
+      ],
+      "hash": 2675723457,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_recent_avatars",
+      "label": "Recent Avatars",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow users to select from recently uploaded avatars"
+      ],
+      "hash": 826493636,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_sensitive_content_defaults",
+      "label": "Sensitive Content Defaults",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Mixed",
+        "Treatment 2: Blur Default"
+      ],
+      "hash": 2542064208,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_sensitive_content_defaults_new_users",
+      "label": "Sensitive Content Defaults - New Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Mixed",
+        "Treatment 2: Blur Default"
+      ],
+      "hash": 2037806570,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_user_profile_voice_activity_card",
+      "label": "User Profile Voice Activity Card",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: User Profile Voice Activity Card Enabled"
+      ],
+      "hash": 439708004,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_valentines_gifting_2025",
+      "label": "Valentines Gifting 2025",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show Valentines Coachmark and Gifting Flow",
+        "Treatment 2: Show Valentines Gifting Flow only. No Coachmark."
+      ],
+      "hash": 3086590474,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableGiftingFlow",
+        "enableCoachmark"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-01_virtual_currency_rollout",
+      "label": "Virtual Currency Rollout",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Virtual Currency features"
+      ],
+      "hash": 2656369572,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_activity_popout_window_v2",
+      "label": "Activity Popout Window V2 Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable activity popout window"
+      ],
+      "hash": 2587552621,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_app_dm_opt_out_settings",
+      "label": "App DM Opt Out Settings",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable user to opt out of DMs from apps"
+      ],
+      "hash": 2284717449,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_av_error_codes",
+      "label": "AV error new UI",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show new AV error UI"
+      ],
+      "hash": 3393973842,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_clearer_notes_label",
+      "label": "Clearer Notes Label Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable clearer notes label"
+      ],
+      "hash": 234579696,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_game_profile_reenable",
+      "label": "Re-enable content inventory on game profile",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Re-enable"
+      ],
+      "hash": 345093493,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_hotwheels_v2_model",
+      "label": "Next iteration of the activity feed ranking model.",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 5: ML model V1",
+        "Treatment 13: ML model V2"
+      ],
+      "hash": 19546350,
+      "buckets": [
+        -1,
+        0,
+        5,
+        13
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_improved_image_upload_flow",
+      "label": "Improved Image Upload Flow",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: QOL improvements to the image upload and edit flow used for profile assets, server banners & icons, etc."
+      ],
+      "hash": 825791778,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_name_plate_experiment",
+      "label": "Nameplates Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Can see",
+        "Treatment 2: Can see and default palette opacity 10%"
+      ],
+      "hash": 2637206255,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "canSee"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_nameplate_purchasing",
+      "label": "Nameplate Purchase Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Can purchase"
+      ],
+      "hash": 1263296517,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_reaction_reply",
+      "label": "Reaction Reply Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable reaction reply"
+      ],
+      "hash": 2171414724,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_reverse_trial_perk_access_kill_switch",
+      "label": "Reverse Trial Perk Access Kill Switch",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Prevent perk access for users with reverse trials"
+      ],
+      "hash": 3509006900,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_rive_staff_testing",
+      "label": "Rive staff testing",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Enable Rive staff testing"
+      ],
+      "hash": 2986977424,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_shop_paired_deco_upsell",
+      "label": "Shop Paired Deco Upsell Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show paired deco upsell"
+      ],
+      "hash": 734161137,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "showPairedDecoUpsell"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_show_popout_on_delayed_hover",
+      "label": "Show Profile Popout On Delayed Hover Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable showing profile popout on delayed hover"
+      ],
+      "hash": 3758641196,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2025-02_skill_trees",
+      "label": "Skill Trees",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enabled"
+      ],
+      "hash": 1984074768,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_voice_activity_status",
+      "label": "Voice Activity Status",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Voice Activity Status Enabled"
+      ],
+      "hash": 2986313484,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_voice_call_buttons_v2",
+      "label": "Voice and Video buttons V2",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Grouped buttons with green active state",
+        "Treatment 2: Grouped green buttons with simplified settings",
+        "Treatment 3: Grouped tinted buttons",
+        "Treatment 4: Grouped tinted buttons with simplified settings"
+      ],
+      "hash": 3819179742,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "squareButtonsEnabled",
+        "coloredIconsEnabled",
+        "simplifiedSettingsEnabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-02_voice_filters_pre_process_mute",
+      "label": "Voice Filters Pre Process Mute",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Mute before processing when voice filters is enabled"
+      ],
+      "hash": 3336307645,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "voiceFiltersPreProcessMute"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_activity_controller_icon",
+      "label": "Activities Icon - Desktop",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Change all activities icon to controller"
+      ],
+      "hash": 1748590261,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_custom_status_prompts",
+      "label": "Custom Status Prompts Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable custom status prompts"
+      ],
+      "hash": 2421730155,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_fractional_premium_subscription_management",
+      "label": "Subscription management while on fractional nitro",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow subscription management while on fractional nitro"
+      ],
+      "hash": 343170818,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_nameplate_new_release",
+      "label": "Nameplate New Release Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show new release badge"
+      ],
+      "hash": 2690692066,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_obscured_message_loaded_analytics",
+      "label": "Obscured message loaded analytics",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables the experiment"
+      ],
+      "hash": 2900537857,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_shop_hide_strikethrough_price",
+      "label": "Shop Hide Strikethrough Price Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Hide strikethrough prices"
+      ],
+      "hash": 1907383429,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "hideStrikethroughPrice"
+      ]
     }
   },
   {

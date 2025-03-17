@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_nameplate_new_release",
+    "label": "Nameplate New Release Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show new release badge"
+    ],
+    "hash": 2690692066,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
