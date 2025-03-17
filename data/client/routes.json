@@ -1579,7 +1579,10 @@
   },
   "RECENT_AVATARS_DELETE": {
     "url": "/users/@me/avatars/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS": {
     "url": "/users/@me/connections",
