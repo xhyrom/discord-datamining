@@ -13589,6 +13589,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .theme-light .account__4bbc6.hover__4bbc6 {
   opacity: 0.4;
 }
+.shopPreview__4bbc6 {
+  opacity: 0.8;
+}
+.shopPreview__4bbc6.hover__4bbc6 {
+  opacity: 1;
+}
 .visual-refresh .accountContainer__4bbc6 {
   border-radius: 4px;
 }
@@ -29614,7 +29620,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   border-radius: 8px;
   height: 14px;
   width: 124px;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .theme-light .placeholderUsernameColor_fdeafc {
   background-color: #aaaab2;
@@ -57283,4 +57289,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.87f7b22ac1f01d08.css.map*/
+/*# sourceMappingURL=12633.d4759598763273c5.css.map*/
