@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7898977002](https://discord.com/jobs/7898977002)
 
-**Updated At:** Tue, 11 Mar 2025 16:09:54 GMT
+**Updated At:** Mon, 17 Mar 2025 14:45:43 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Lifecycle Marketing Lead to help acquire new audiences, engage our existing customers, and help grow our business. In this role, you will work cross-functionally with Product Managers, Engineering, Data Science, Product Design, Brand Marketing, as we continue to build impactful programs to acquire, retain, and monetize our users.
@@ -29,7 +29,7 @@ Evolve the CRM marketing systems, tools, and technology for Discord working with
 
 What you should have
 
-6+ years of experience in CRM / Growth marketing, customer engagement, or related fields.
+8+ years of experience in CRM / Growth marketing, customer engagement, or related fields.
 Expert, hands-on level knowledge of CRM platforms, with a preference for Iterable.
 Proven track record of developing and executing successful CRM strategies in a global context.
 Ability to work with both product, engineering, data and marketing, creative, and brand.
