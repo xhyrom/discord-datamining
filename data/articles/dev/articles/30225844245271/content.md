@@ -304,12 +304,6 @@
       PECUNIARY LOSS AND WHETHER OR NOT WE HAVE BEEN ADVISED OF THE POSSIBILITY
       OF SUCH DAMAGES.
     </p>
-    <p>
-      DISCORD IS NOT LIABLE FOR THE CONDUCT OR CONTENT, WHETHER ONLINE OR
-      OFFLINE, OF ANY USER OF DISCORD SERVICES. IN ALL CASES, DISCORD, AND ITS
-      AFFILIATES, SUPPLIERS, AND DISTRIBUTORS, WILL NOT BE LIABLE FOR ANY
-      EXPENSE, LOSS, OR DAMAGE THAT IS NOT REASONABLY FORESEEABLE.
-    </p>
     DISCORD IS NOT LIABLE FOR THE CONDUCT OR CONTENT, WHETHER ONLINE OR OFFLINE,
     OF ANY USER OF DISCORD SERVICES. IN ALL CASES, DISCORD, AND ITS AFFILIATES,
     SUPPLIERS, AND DISTRIBUTORS, WILL NOT BE LIABLE FOR ANY EXPENSE, LOSS, OR
@@ -321,7 +315,7 @@
     liabilities, damages, losses, costs, fees (including legal and accounting
     fees), fines, investigations, and expenses relating to your use (or any use
     on your behalf) of the Discord Social SDK or Integrations or your breach of
-    the Terms.<br /><br />
+    the Terms.
   </li>
   <li>
     <strong>General Provisions.<br /></strong><strong>a. Modification</strong>.
