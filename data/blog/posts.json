@@ -2381,8 +2381,8 @@
     "guid": "https://discord.com/blog/announcing-discord-social-sdk-to-power-game-comms",
     "description": "Announcing Discord Social SDK, which enables developers of all sizes to tap into Discord’s social infrastructure and drive their game’s social and multiplayer experiences — with or without a Discord account.",
     "pubDate": "Mon, 17 Mar 2025 00:00:00 GMT",
-    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d35926a0920109a1262ac8_2024_10_DiscordBlog_UsingDiscord-3.png",
-    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d35926a0920109a1262ac8_2024_10_DiscordBlog_UsingDiscord-3.png"
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d8342841717d38bc4269c6_Discord-SDK-Hero_Image_1800x720_2.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d8342841717d38bc4269c6_Discord-SDK-Hero_Image_1800x720_2.png"
   },
   {
     "id": "announcing-discords-social-sdk-helping-power-your-games-social-experiences",
@@ -2394,5 +2394,38 @@
     "pubDate": "Mon, 17 Mar 2025 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d81e40b860d18d09760bff_Discord-SDK-Blog-Header_1800x720.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d81e40b860d18d09760bff_Discord-SDK-Blog-Header_1800x720.png"
+  },
+  {
+    "id": "the-game-developer-playbook-part-one-getting-started-on-discord",
+    "body": "",
+    "title": "The Game Developer Playbook, Part One: Getting Started on Discord",
+    "link": "https://discord.com/blog/the-game-developer-playbook-part-one-getting-started-on-discord",
+    "guid": "https://discord.com/blog/the-game-developer-playbook-part-one-getting-started-on-discord",
+    "description": "We'll create a home where you can monitor playtests, gather feedback, and talk with those who want to be part of your game's success.",
+    "pubDate": "Mon, 17 Mar 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614229871f0a0c09567fb67e_1_Eihere84tvAAHEKUc9PpEQ.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614229871f0a0c09567fb67e_1_Eihere84tvAAHEKUc9PpEQ.png"
+  },
+  {
+    "id": "the-game-developer-playbook-part-two-early-access-and-pre-launch",
+    "body": "",
+    "title": "The Game Developer Playbook, Part Two: Early Access and Pre-Launch",
+    "link": "https://discord.com/blog/the-game-developer-playbook-part-two-early-access-and-pre-launch",
+    "guid": "https://discord.com/blog/the-game-developer-playbook-part-two-early-access-and-pre-launch",
+    "description": "In Part Two, we'll help inspire the creation of real-time conversations around your game and foster engagement within your community.",
+    "pubDate": "Sun, 16 Mar 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614233b64d1e7ec1556caf32_1_jAwf-40J1rziW5LsHLm5-A.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614233b64d1e7ec1556caf32_1_jAwf-40J1rziW5LsHLm5-A.png"
+  },
+  {
+    "id": "the-game-developer-playbook-three-incredible-game-focused-communities",
+    "body": "",
+    "title": "The Game Developer Playbook: Three Incredible Game-Focused Communities",
+    "link": "https://discord.com/blog/the-game-developer-playbook-three-incredible-game-focused-communities",
+    "guid": "https://discord.com/blog/the-game-developer-playbook-three-incredible-game-focused-communities",
+    "description": "In this segment of our GameDev Playbook, we'll look at three communities that represent what we consider best-in-class server setups.",
+    "pubDate": "Sat, 15 Mar 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614236332e955871dd60a421_0_8cgjGtPwCPxWkOhC.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614236332e955871dd60a421_0_8cgjGtPwCPxWkOhC.png"
   }
 ]
