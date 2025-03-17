@@ -1,5 +1,21 @@
 [
   {
+    "id": 30608814750103,
+    "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/30608814750103.json",
+    "html_url": "https://support-dev.discord.com/hc/en-us/sections/30608814750103-Discord-Social-SDK",
+    "category_id": 30608732211607,
+    "position": 0,
+    "sorting": "manual",
+    "created_at": "2025-03-13T00:22:11Z",
+    "name": "Discord Social SDK",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 30608824789911,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/30608824789911.json",
     "html_url": "https://support-dev.discord.com/hc/en-us/sections/30608824789911-Embedded-App-SDK",

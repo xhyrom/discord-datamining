@@ -2,7 +2,7 @@
 <p id="h_01HZPTENNS5FMN52RRR5Y1PPPM"><em>Last updated: June 6, 2024</em></p>
 <p>
   <a
-    href="https://support-dev.discord.com/hc/articles/25280523748759"
+    href="https://support-dev.discord.com/hc/sections/25277842336151-Archives"
     target="_blank"
     rel="noopener noreferrer"
     >For a link to the previous terms, please see here.</a
@@ -80,43 +80,38 @@
       data-darkreader-inline-color=""
       >Help Center</span
     ></a
-  >). If there is a conflict between these Developer Terms and any additional
-  terms, then these Developer Terms will control for that conflict. If you use
-  other Discord services in connection with the APIs, then the terms for those
-  other services also apply to you. Additional defined terms are described in
-  Section 13 (Definitions) below.
+  >). If you access or use our Social SDK, the Terms include our
+  <a href="https://support-dev.discord.com/hc/articles/30225844245271/"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Social SDK Terms</span
+    ></a
+  >. If there is a conflict between these Developer Terms and any additional
+  terms, then these Developer Terms will control for that conflict unless
+  expressly stated otherwise in the additional terms. If you use other Discord
+  services in connection with the APIs, then the terms for those other services
+  also apply to you. Additional defined terms are described in Section 13
+  (Definitions) below.
 </p>
 <p>
-  <strong
-    >Important Note: Section 12(e) (Choice of Law; Dispute Resolution)
-    incorporates the</strong
-  ><a
-    href="https://discord.com/terms#settling-disputes-between-you-and-discord"
-  >
-    <strong
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >dispute resolution provision</span
-      ></strong
+  Important Note: Section 12(e) (Choice of Law; Dispute Resolution) incorporates
+  the<a href="https://discord.com/terms#16"> dispute resolution provision</a>
+  from our<a href="https://discord.com/terms">
+    <span
+      class="wysiwyg-underline"
+      style="
+        color: #1155cc;
+        --darkreader-inline-color: var(--darkreader-text-1155cc, #91b6dc);
+      "
+      data-darkreader-inline-color=""
+      >Terms of Service</span
     ></a
-  ><strong> from our</strong
-  ><a href="https://discord.com/terms">
-    <strong
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Terms of Service</span
-      ></strong
-    ></a
-  ><strong
-    >, which includes an arbitration clause and class action waiver that applies
-    to all U.S.-based Discord users. Please read this section carefully as it
-    may significantly affect your legal rights, including your right to file a
-    lawsuit in court.</strong
-  >
+  >, which includes an arbitration clause and class action waiver that applies
+  to all U.S.-based Discord users. Please read this section carefully as it may
+  significantly affect your legal rights, including your right to file a lawsuit
+  in court.
 </p>
 <h2 id="h_01HZPTENNST90ZW5G7FNPTJ046">
   <strong>Section 1: Acceptance of the Terms and Registration</strong>
