@@ -98,8 +98,8 @@
                     >Blog</a
                   ><a
                     class="link-1naFFL link-2eyudH"
-                    href="/build"
-                    data-link-id="build"
+                    href="/developers"
+                    data-link-id="developers"
                     >Developers</a
                   ><a
                     class="link-1naFFL link-2eyudH"
@@ -61114,7 +61114,7 @@ without specific prior written permission.</code></pre>
                     ></a
                   ><a
                     class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
-                    href="/build"
+                    href="/developers"
                     ><span class="text-2H5FnP textSmall-Rm6-Ys"
                       >Developers</span
                     ></a
