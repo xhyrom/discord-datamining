@@ -37,8 +37,7 @@
 <h1 id="h_01JP5J6R2S40C77HHC4CRVX36A">Understanding the Nitro Quest Perk</h1>
 <div class="exp-box">
   The <strong>Nitro Quest Perk</strong> is an experimental feature for a limited
-  number of users. We're gradually expanding access to all eligible users by
-  <strong>March 25, 2025</strong>.
+  number of users. We're gradually expanding access to all eligible users.
 </div>
 <p>
   Earned Quest avatar decorations are now available for use for two months after
