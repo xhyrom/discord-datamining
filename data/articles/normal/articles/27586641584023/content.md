@@ -212,7 +212,7 @@
       href="https://support.discord.com/hc/en-us/articles/4409388345495"
       target="_blank"
       rel="noopener noreferrer"
-      >Unique Server Profiles</a
+      >Per-Server Profile</a
     >
   </li>
   <li>
