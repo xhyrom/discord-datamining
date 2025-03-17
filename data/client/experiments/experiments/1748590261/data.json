@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_activity_controller_icon",
+    "label": "Activities Icon - Desktop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Change all activities icon to controller"
+    ],
+    "hash": 1748590261,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

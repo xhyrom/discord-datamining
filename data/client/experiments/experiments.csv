@@ -985,6 +985,7 @@ id,hash,label
 2025-02_voice_call_buttons_v2,3819179742,Voice and Video buttons V2
 2025-02_voice_filters_pre_process_mute,3336307645,Voice Filters Pre Process Mute
 2025-02_voice_mic_button_state_for_mobile,908668827,Voice Mic Button State for Mobile
+2025-03_activity_controller_icon,1748590261,Activities Icon - Desktop
 2025-03_activity_privacy_per_guild_settings,2020090831,Show per-guild activity privacy settings
 2025-03_activity_sharing_popout_with_invisibility,2004988961,Activity Sharing Popout with Invisibility
 2025-03_custom_status_prompts,2421730155,Custom Status Prompts Experiment
