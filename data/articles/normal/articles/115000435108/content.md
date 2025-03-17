@@ -122,7 +122,7 @@
         href="https://support.discord.com/hc/en-us/articles/4409388345495"
         target="_blank"
         rel="noopener noreferrer"
-        >Server Profiles</a
+        >Per-server profile</a
       >:</strong
     ><span style="font-weight: 400">
       Be who you want in every server by customizing the details in your profile

@@ -1,5 +1,4 @@
 <p>
-  Starting <strong>March 25th, 2025</strong>,
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
     ><span class="wysiwyg-underline" style="color: #1155cc"

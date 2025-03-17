@@ -230,9 +230,9 @@
   />
 </p>
 <div class="tip-box">
-  If you have multiple server profiles, you can wear a different profile effect
-  for each one to add a unique touch in each of your servers. You can find out
-  more
+  If you have multiple per-server profiles, you can wear a different profile
+  effect for each one to add a unique touch in each of your servers. You can
+  find out more
   <a
     href="https://support.discord.com/hc/en-us/articles/4409388345495"
     target="_blank"
@@ -241,7 +241,7 @@
   >.
 </div>
 <h2 id="h_01HQY9V1GJ98FMQCWRJA1V58TC">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     ><span id="docs-internal-guid-b896025e-7fff-51be-4fbf-c446dd915769"
       >Mobile</span
     ></span
@@ -252,7 +252,7 @@
   tapping your avatar. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
+  <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/24862900851607"
       width="284"
@@ -266,7 +266,7 @@
   <strong>Add Profile Effect </strong>page.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #4f545c"
+  <span style="color: #4f545c" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/24862900855447"
       width="277"

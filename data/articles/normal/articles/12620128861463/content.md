@@ -35,9 +35,13 @@
   <span
     id="docs-internal-guid-d3592318-7fff-496c-0e7e-ccf68f96d7d3"
     style="color: #434343"
+    data-darkreader-inline-color=""
     >Starting </span
-  ><strong><span style="color: #434343">March 4, 2024</span></strong
-  ><span style="color: #434343"
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >March 4, 2024</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >, Discord will begin assigning new usernames to users who have not chosen
     one themselves.</span
   >
@@ -310,7 +314,7 @@
 </p>
 <p>
   You can set a server nickname by navigating to <strong>User Settings</strong>
-  <strong>&gt; Profiles &gt; Server Profiles</strong>.
+  <strong>&gt; Profiles &gt; Per-server profiles</strong>.
 </p>
 <h1 id="docs-internal-guid-c6a005d2-7fff-a358-a3a9-c671fb309737">
   Where are Display Names and Usernames Used?
@@ -343,7 +347,7 @@
   <span id="docs-internal-guid-8ca4e633-7fff-ed46-cb8e-47ddf58b68bf"
     ><span id="docs-internal-guid-ee4fea6e-7fff-77d3-861e-51d8c63b7c04"
       >When searching for users to mention in a server, you can search for them
-      by their display name or their username. If they have a Server Profile
+      by their display name or their username. If they have a per-server profile
       with a server nickname set up in that server, that is how they will appear
       when mentioned or tagged. Otherwise, they will appear in the mention as
       their display name.</span
@@ -746,14 +750,20 @@
     ><span
       id="docs-internal-guid-476f1638-7fff-ec63-6e96-4c1682f7473d"
       style="background-color: #ffffff"
+      data-darkreader-inline-bgcolor=""
       >Starting </span
     ><strong
-      ><span style="background-color: #ffffff">March 4, 2024</span></strong
-    ><span style="background-color: #ffffff"
+      ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+        >March 4, 2024</span
+      ></strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
       >, Discord will begin assigning new usernames to users who have not chosen
       one themselves. If your username still has a discriminator (username</span
-    ><strong><span style="background-color: #ffffff">#0000</span></strong
-    ><span style="background-color: #ffffff"
+    ><strong
+      ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+        >#0000</span
+      ></strong
+    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
       >), Discord will begin assigning you a new, unique username as soon as
       March 4, 2024. We will try to assign you a unique username that is similar
       to your current username.</span

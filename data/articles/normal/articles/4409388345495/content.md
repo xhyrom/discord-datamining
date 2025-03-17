@@ -12,7 +12,7 @@
   want to have a server-specific avatar, profile banner, and bio inspired by
   your super cool character? Or maybe you're in a server all about coffee and
   you want an avatar and profile banner of your favorite cup of hot bean juice?
-  Well, now you can with our Nitro perk: Server Profiles!
+  Well, now you can with our Nitro perk: per-server profiles!
 </p>
 <p id="docs-internal-guid-04483fd6-7fff-6ad1-ee29-d2e971e3d241">
   <span class="wysiwyg-font-size-large"
@@ -22,7 +22,7 @@
 <ul>
   <li>
     <a href="#h_01FGCPNVQ6F9X6ET40NPETDMVK" target="_self" rel="undefined"
-      >What are Server Profiles?</a
+      >What are Per-Server Profiles?</a
     >
   </li>
   <li>
@@ -68,12 +68,12 @@
   </li>
   <li>
     <a href="#h_01G52M1Y6A47PB0S6MRYJF7VQD" target="_self"
-      >How do I set up an “About Me” for my Server Profile?</a
+      >How do I set up an “About Me” for my Per-Server Profile?</a
     >
   </li>
   <li>
     <a href="#h_01HT0XZ4BMZEBV613KTPX05HFQ"
-      >How do I add Avatar Decorations and Profile Effects to my Server
+      >How do I add Avatar Decorations and Profile Effects to my Per-Server
       Profile?</a
     >
   </li>
@@ -83,14 +83,14 @@
     >
   </li>
 </ul>
-<h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are Server Profiles?</h1>
+<h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are Per-Server Profiles?</h1>
 <p>
-  Server profiles are a new customization feature for Nitro users! With server
-  profiles, users can set a different server-specific avatar, banner, and about
-  me section for each of the servers they're in.
+  Per-server profiles are a new customization feature for Nitro users! With
+  server profiles, users can set a different server-specific avatar, banner, and
+  about me section for each of the servers they're in.
 </p>
 <h3 id="h_01HNGBKZ17VD2YQG517HE860D8">
-  Note: Even if you change your server profile, your user profile will be
+  Note: Even if you change your per-server profile, your user profile will be
   unaffected and remain as your primary avatar in servers where you don't upload
   server avatars.
 </h3>
@@ -101,12 +101,12 @@
   channel. This will activate the drop-down menu.
 </p>
 <p>
-  2. Select <strong>Edit Server Profile </strong>to navigate to the
-  <strong>Server Profiles </strong>page. 
+  2. Select <strong>Edit per-server profile </strong>to navigate to the
+  <strong>per-server profiles </strong>page. 
 </p>
 <p>
   3. You can then press on your avatar or <strong>Change Avatar</strong> to
-  upload the specific avatar you would like to use for that server profile.
+  upload the specific avatar you would like to use for that per-server profile.
 </p>
 <p>
   4. Once you have chosen your avatar, press <strong>Save Changes</strong> to
@@ -137,8 +137,8 @@
   2. You'll then see an <strong>Edit Profile </strong>option that you can press.
 </p>
 <p>
-  3. Select <strong>Edit Server Profile</strong> to change your server avatar in
-  the <strong>Server Profile </strong>settings page.
+  3. Select <strong>Edit per-server profile</strong> to change your server
+  avatar in the <strong>per-server profile </strong>settings page.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -157,8 +157,8 @@
 <p id="docs-internal-guid-c6884b72-7fff-95be-085b-79b42483902f">
   If you made a mistake with your server avatar or if you would like to revert
   your server avatar to your profile avatar, you can follow either of the two
-  methods above and navigate to the Server Profile settings page. Once there,
-  select <strong>Reset Avatar</strong>.
+  methods above and navigate to the per-server profile settings page. Once
+  there, select <strong>Reset Avatar</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-8eeef814-7fff-ac12-7857-ef64d36f3f66"
@@ -172,7 +172,7 @@
 <p id="docs-internal-guid-744d586d-7fff-e1a2-7747-a9a27306b50d">
   If you'd like to customize your server avatar while on the iOS or Android, you
   can do so through two ways: the <strong>User Profile</strong> and the
-  <strong>Server Profile</strong>.
+  <strong>per-server profile.</strong>
 </p>
 <p>
   <strong
@@ -185,12 +185,12 @@
   the server's Member List.
 </p>
 <p>
-  2. Then, tap <strong>Edit Server Profile</strong> to navigate to your
-  <strong>Server Profiles</strong> settings.   
+  2. Then, tap <strong>Edit per-server profile</strong> to navigate to your
+  <strong>per-server profile</strong> settings.   
 </p>
 <p>
-  3. Once you have been directed to Server Profiles, you can upload and apply a
-  new image for your server avatar by selecting your current server avatar and
+  3. Once you have been directed to per-server profile, you can upload and apply
+  a new image for your server avatar by selecting your current server avatar and
   tapping <strong>Change Avatar</strong>.
 </p>
 <p>
@@ -206,13 +206,14 @@
   /></span>
 </p>
 <p id="docs-internal-guid-bc90ff8c-7fff-1812-f7c5-77306a2c511d">
-  <strong><span class="wysiwyg-underline">Through Server Profile:</span></strong
+  <strong
+    ><span class="wysiwyg-underline">Through Per-server profile:</span></strong
   > 
 </p>
 <p>
   1. Tap on the ellipses located next to the server’s name and select
-  <strong>Edit Server Profile</strong> to navigate to your
-  <strong>Server Profiles</strong> settings. 
+  <strong>Edit per-server profile</strong> to navigate to your
+  <strong>per-server profile</strong> settings. 
 </p>
 <p>
   2. Then, select your current server avatar and tap
@@ -240,7 +241,7 @@
     rel="noopener noreferrer"
     >Nitro</a
   >
-  members can customize each of their server profiles’ themes! This will
+  members can customize each of their per-server profiles’ themes! This will
   specifically change the colors of your mini profile card. You can choose a
   <strong>Primary</strong> color and an <strong>Accent </strong>color.
 </p>
@@ -282,9 +283,9 @@
   <span style="font-weight: 400">On Mobile</span>
 </h2>
 <p id="docs-internal-guid-bb412cbe-7fff-1d29-afc2-54dd7b56bc13">
-  To access your <strong>Server Profile</strong> page on your mobile clients,
-  swipe right while in the Discord app and tap on your avatar icon in the bottom
-  right corner to open up <strong>User Settings &gt;</strong>
+  To access your <strong>per-server profile</strong> page on your mobile
+  clients, swipe right while in the Discord app and tap on your avatar icon in
+  the bottom right corner to open up <strong>User Settings &gt;</strong>
   <strong>Profiles</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
@@ -307,12 +308,12 @@
 </p>
 <p id="docs-internal-guid-b1c8ccf4-7fff-6e35-ca02-92fa30720c67">
   You can also tap on your avatar icon in a channel of your desired server and
-  select <strong>Edit Server Profile</strong> in your mini profile card.
+  select <strong>Edit per-server profile</strong> in your mini profile card.
 </p>
 <p>
   In the <strong>Profile</strong> page, make sure the profile option slider is
-  towards the right for <strong>Server Profile</strong> and that server you
-  intend to customize your server profile is chosen in the dropdown menu.
+  towards the right for <strong>per-server profile</strong> and that server you
+  intend to customize your per-server profile is chosen in the dropdown menu.
 </p>
 <p class="wysiwyg-text-align-center">
   <span
@@ -362,7 +363,7 @@
     >Head over to your </span
   ><strong
     ><span style="color: #4f545c" data-darkreader-inline-color=""
-      >User Settings &gt; Profiles &gt; Server Profiles
+      >User Settings &gt; Profiles &gt; Per-server profiles
     </span></strong
   ><span style="color: #4f545c" data-darkreader-inline-color="">and press </span
   ><strong
@@ -396,18 +397,21 @@
   Tip: Images can be cropped after upload
 </h3>
 <h1 id="h_01G52M1Y6A47PB0S6MRYJF7VQD">
-  How do I set up an “About Me” for my Server Profile?
+  How do I set up an “About Me” for my Per-Server Profile?
 </h1>
 <p>
-  <span style="font-weight: 400">In the </span><strong>Server Profiles</strong
+  <span style="font-weight: 400">In the <strong>per-s</strong></span
+  ><strong>erver profiles</strong
   ><span style="font-weight: 400">
     settings page, you can write a small blurb in the text box under </span
   ><strong>About Me </strong
-  ><span style="font-weight: 400">that’s specific to your server profile.</span>
+  ><span style="font-weight: 400"
+    >that’s specific to your per-server profile.</span
+  >
 </p>
 <p>
   <span style="font-weight: 400">Your </span><strong>About Me</strong
-  ><span style="font-weight: 400"> for your server profile can have:</span>
+  ><span style="font-weight: 400"> for your per-server profile can have:</span>
 </p>
 <ul>
   <li style="font-weight: 400" aria-level="1">
@@ -452,11 +456,11 @@
   ></span>
 </p>
 <h1 id="h_01HT0XZ4BMZEBV613KTPX05HFQ">
-  How do I add Avatar Decorations and Profile Effects to my Server Profile?
+  How do I add Avatar Decorations and Profile Effects to my Per-Server Profile?
 </h1>
 <p id="docs-internal-guid-0e77bf92-7fff-3462-1394-5151c16c0b4d">
-  1. In your <strong>Server Profiles</strong> settings, be sure to choose the
-  server you would like to update within the
+  1. In your <strong>per-server profiles</strong> settings, be sure to choose
+  the server you would like to update within the
   <strong>Choose A Server</strong> selection box. 
 </p>
 <p class="wysiwyg-text-align-center">
@@ -474,7 +478,7 @@
   2.  Once you have chosen the server, press
   <strong>Change Decoration</strong> or <strong>Change Effect</strong> to select
   the avatar decoration or profile effect you would like to set for the specific
-  Server Profile. 
+  per-server profile. 
 </p>
 <p class="wysiwyg-text-align-center">
   <span id="docs-internal-guid-f5339dbf-7fff-8e58-47e9-f1dd21d3cebd"

@@ -7,7 +7,10 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    <span class="wysiwyg-underline" style="color: #1155cc"
+    <span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >Discord Nitro</span
     ></a
   >.
@@ -61,7 +64,12 @@
     rel="noopener noreferrer"
   >
     Help Center article</a
-  ><span class="wysiwyg-underline" style="color: #1155cc">.</span>
+  ><span
+    class="wysiwyg-underline"
+    style="color: #1155cc"
+    data-darkreader-inline-color=""
+    >.</span
+  >
 </div>
 <p>
   <strong>Requirements:</strong> Claim through Streamlabs by

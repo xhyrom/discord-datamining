@@ -100,7 +100,9 @@
   />
 </p>
 <h4 id="h_01JK8ZT53MH2S8D4WP398CGBMM" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Accessing Server Member Applications</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Accessing Server Member Applications</span
+  >
 </h4>
 <h1 id="h_01JK8ZT53MYSBZS4FAJYB7ZAFQ">How to Configure Server Join Settings</h1>
 <p>
@@ -117,7 +119,7 @@
   />
 </p>
 <h4 id="h_01JK8ZT53MQT3AXRKE95ZFJPK5" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Server Join Setting Options: Invite Only, Apply to Join, and
     Discoverable</span
   >
@@ -147,7 +149,10 @@
       href="https://support.discord.com/hc/en-us/articles/115001542132-Custom-Invite-Link"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline" style="color: #1155cc"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
         >customized invite links</span
       ></a
     >
@@ -162,7 +167,9 @@
   />
 </p>
 <h4 id="h_01JK8ZT53M2GHZPEQ5TBYPTZ7N" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Invite Only Option</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Invite Only Option</span
+  >
 </h4>
 <h2 id="h_01JK8ZT53MQA698MX4Z2H1X56X">Apply to Join</h2>
 <div class="info-box">
@@ -183,7 +190,7 @@
     community
   </li>
   <li>
-    Choose whether to display application links on server profiles for easier
+    Choose whether to display application links on per-server profile for easier
     discovery
   </li>
 </ul>
@@ -195,7 +202,9 @@
   />
 </p>
 <h4 id="h_01JK8ZT53M6Z8EAM2NTF5EE7BS" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Apply to Join Option</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Apply to Join Option</span
+  >
 </h4>
 <div class="info-box">
   <strong>NOTE</strong>: Server members who have the
@@ -247,7 +256,9 @@
   />
 </p>
 <h4 id="h_01JK8ZT53MWRVKH9HB2GWVWFGQ" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Discoverable Option</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Discoverable Option</span
+  >
 </h4>
 <h1 id="h_01JK8ZT53M0HGHFJ7EKBC43SHH">Reviewing Server Member Applications</h1>
 <p>
@@ -282,7 +293,7 @@
   />
 </p>
 <h4 id="h_01JK8ZT53MXWVER0CNRX8NVKCF" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Reviewing a Server Members Application in Members Page</span
   >
 </h4>
@@ -311,7 +322,9 @@
   />
 </p>
 <h4 id="h_01JK8ZT53M4WN1N5QX5JWC730P" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Example of Selecting Interview</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Selecting Interview</span
+  >
 </h4>
 <h1 id="h_01JK8ZT53M7HJWR3P90AE6WMB0">Frequently Asked Questions</h1>
 <p>

@@ -93,7 +93,7 @@
       target="_blank"
       rel="noopener noreferrer"
       >Nitro Quests</a
-    >! Learnmore about extended decoration access and other benefits in our
+    >! Learn more about extended decoration access and other benefits in our
     <a
       href="https://support.discord.com/hc/articles/nitro-quest-perks"
       target="_blank"
@@ -296,7 +296,7 @@
   />
 </p>
 <div class="tip-box">
-  If you have multiple server profiles, you can wear a different avatar
+  If you have multiple per-server profiles, you can wear a different avatar
   decoration for each one to add a unique touch in each of your servers. You can
   find out more
   <a

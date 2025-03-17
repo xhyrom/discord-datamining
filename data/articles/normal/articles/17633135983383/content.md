@@ -78,8 +78,8 @@
   />
 </p>
 <p>
-  4. If you have purchased a Premium Role, the role will apply to your server
-  profile instantly. For downloadables, head into your
+  4. If you have purchased a Premium Role, the role will apply to your
+  per-server profile instantly. For downloadables, head into your
   <strong>User Settings</strong> &gt; <strong>Server Products</strong> to
   download your purchase. 
 </p>

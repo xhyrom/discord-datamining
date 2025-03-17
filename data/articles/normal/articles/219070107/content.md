@@ -67,7 +67,7 @@
     >
   </li>
 </ul>
-<h1>
+<h1 id="h_01JPJPW6RYR8JA0KWZNX0AMRYG">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >What Role Permissions Do You Need? </span
@@ -138,7 +138,7 @@
     order to change your own nickname in the server!</span
   >
 </p>
-<h3>
+<h3 id="h_01JPJPW6RZBMKC1P77F7EY6X30">
   <strong
     ><span style="color: #104c32" data-darkreader-inline-color=""
       >Note: If you don't have this permission, double check with the server
@@ -178,7 +178,7 @@
 <p>
   Press
   <span style="color: #2e3338" data-darkreader-inline-color="">on the </span
-  >Edit Server Profile<span
+  >Edit per-server profile<span
     style="color: #2e3338"
     data-darkreader-inline-color=""
   >
@@ -198,7 +198,7 @@
     alt="profile_server_nickname.gif"
   />
 </p>
-<h3>
+<h3 id="h_01JPJPW6RZH1JXFECWNXC0FMYM">
   <strong
     ><span style="color: #104c32" data-darkreader-inline-color=""
       >Note: if you have the Manage Nickname permission, you can use similar
@@ -225,7 +225,7 @@
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Don't fear! You can also right-click your own avatar/username on a recent
     message that you've sent within the text channel to see the </span
-  >Edit Server Profile<span
+  >Edit per-server profile<span
     style="color: #2e3338"
     data-darkreader-inline-color=""
   >
@@ -244,7 +244,7 @@
     alt="edit_server_profile.png"
   />
 </p>
-<h3>
+<h3 id="h_01JPJPW6S0R3V81AWWYSCYQRVD">
   <strong
     ><span style="color: #104c32" data-darkreader-inline-color=""
       >Note: if you have the Manage Nickname permission, you can use similar
@@ -290,7 +290,7 @@
       src="https://lh4.googleusercontent.com/VnumgEY-DA2q7RBh07Dpa-wrIKDIujSACFpQRyA_d6z46H69IFCEBLYbMecgk0HTKJvOSIQFt9kp1r97U-Hf0zwcwJGjdxBG7F8nq9Dh5qvRnTda3H7Klh9gWbNAzQj0VU_c6fNm0pHxOzgi28Hf7m4"
   /></span>
 </p>
-<h3>
+<h3 id="h_01JPJPW6S08JHSMMARB4AFH7EG">
   <strong
     ><span
       class="wysiwyg-underline"
@@ -305,7 +305,7 @@
     ></strong
   >
 </h3>
-<h3>
+<h3 id="h_01JPJPW6S0JW9YDQB2QEXYZQZC">
   <strong
     ><span style="color: #104c32" data-darkreader-inline-color=""
       >The "Change Nickname" selection in the menu won't appear, and Clyde will
@@ -318,7 +318,7 @@
         src="https://lh4.googleusercontent.com/GTytVUr6q72Coo3ZKpWjwE3qx5IBlcGwkjDw7GoTTOw3R-8CbyoKzR4V4rgaecDqY7wJ-jCYSEkvDnJjZxe3VerWKMhaI7vBttBxuNMqpe4bCxQs-7hrcCT49_8n4ZzHJvVUpCGRw5v81fc8M5iw-kc" /></span
   ></strong>
 </h3>
-<h3>
+<h3 id="h_01JPJPW6S03EX9AG0KVYJVWE1D">
   <strong
     >If you're looking to learn more about Server Avatars, check out this </strong
   ><a href="https://support.discord.com/hc/en-us/articles/4409388345495"
