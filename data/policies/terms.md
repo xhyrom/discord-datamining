@@ -678,7 +678,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/build"
+                    href="https://discord.com/developers"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -689,16 +689,16 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Featured</div>
                           <a
-                            href="https://discord.com/developers/gdc-2024"
+                            href="https://discord.com/developers/gdc-2025"
                             class="dd_nav-link w-inline-block"
-                            ><div>GDC 2024</div></a
+                            ><div>GDC 2025</div></a
                           ><a
                             href="https://discord.com/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
-                            ><div>App Pitches 2024</div></a
+                            ><div>Discord Social SDK</div></a
                           ><a
                             href="https://discord.com/developers/build"
-                            class="dd_nav-link is_hide w-inline-block"
+                            class="dd_nav-link w-inline-block"
                             ><div>Apps and Activities</div></a
                           >
                         </div>
@@ -706,51 +706,34 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Documentation</div>
                           <a
-                            href="https://discord.com/developers/docs/developer-tools/embedded-app-sdk"
+                            href="https://discord.com/developers"
                             class="dd_nav-link w-inline-block"
-                            ><div>Embedded App SDK</div>
-                            <div class="nav_dd_link_arrow w-embed">
-                              <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5 4H12M12 4V11M12 4L4 12"
-                                  stroke="white"
-                                  stroke-opacity="0.5"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg></div></a
-                          ><a
-                            href="https://discord.com/developers/docs/rich-presence/overview#introducing-rich-presence"
-                            class="dd_nav-link w-inline-block"
-                            ><div>Rich Presence</div>
-                            <div class="nav_dd_link_arrow w-embed">
-                              <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5 4H12M12 4V11M12 4L4 12"
-                                  stroke="white"
-                                  stroke-opacity="0.5"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg></div></a
+                            ><div>Developer Home</div></a
                           ><a
                             href="https://discord.com/developers/docs/intro"
                             class="dd_nav-link w-inline-block"
-                            ><div>Developer Portal</div>
+                            ><div>Developer Documentation</div>
+                            <div class="nav_dd_link_arrow w-embed">
+                              <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 4H12M12 4V11M12 4L4 12"
+                                  stroke="white"
+                                  stroke-opacity="0.5"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg></div></a
+                          ><a
+                            href="https://discord.com/developers/applications"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Applications</div>
                             <div class="nav_dd_link_arrow w-embed">
                               <svg
                                 width="16"
@@ -1268,7 +1251,7 @@
                         <div class="nav_dd_content_layout">
                           <div class="nav_dd_link-group">
                             <a
-                              href="https://discord.com/build"
+                              href="https://discord.com/developers"
                               class="nav_dd_link-group_title is-new"
                               >Developers</a
                             >
@@ -1277,13 +1260,17 @@
                                 Featured
                               </div>
                               <a
-                                href="https://discord.com/gdc-2024"
+                                href="https://discord.com/developers/gdc-2025"
                                 class="dd_nav-link is-new w-inline-block"
-                                ><div>GDC 2024</div></a
+                                ><div>GDC 2025</div></a
                               ><a
-                                href="https://discord.com/build/app-pitches-2024"
+                                href="https://discord.com/developers/social-sdk"
                                 class="dd_nav-link is-new w-inline-block"
-                                ><div>App Pitches 2024</div></a
+                                ><div>Discord Social SDK</div></a
+                              ><a
+                                href="https://discord.com/developers/build"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Apps and Activities</div></a
                               >
                             </div>
                             <div class="nav_dd_link_line"></div>
@@ -1292,51 +1279,34 @@
                                 Documentation
                               </div>
                               <a
-                                href="https://discord.com/developers/docs/developer-tools/embedded-app-sdk"
+                                href="https://discord.com/developers"
                                 class="dd_nav-link is-new w-inline-block"
-                                ><div>Embedded App SDK</div>
-                                <div class="nav_dd_link_arrow w-embed">
-                                  <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M5 4H12M12 4V11M12 4L4 12"
-                                      stroke="white"
-                                      stroke-opacity="0.5"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    ></path>
-                                  </svg></div></a
-                              ><a
-                                href="https://discord.com/developers/docs/rich-presence/overview#introducing-rich-presence"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>Rich Presence</div>
-                                <div class="nav_dd_link_arrow w-embed">
-                                  <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M5 4H12M12 4V11M12 4L4 12"
-                                      stroke="white"
-                                      stroke-opacity="0.5"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    ></path>
-                                  </svg></div></a
+                                ><div>Developer Home</div></a
                               ><a
                                 href="https://discord.com/developers/docs/intro"
                                 class="dd_nav-link is-new w-inline-block"
-                                ><div>Developer Portal</div>
+                                ><div>Developer Documentation</div>
+                                <div class="nav_dd_link_arrow w-embed">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5 4H12M12 4V11M12 4L4 12"
+                                      stroke="white"
+                                      stroke-opacity="0.5"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    ></path>
+                                  </svg></div></a
+                              ><a
+                                href="https://discord.com/developers/applications"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Applications</div>
                                 <div class="nav_dd_link_arrow w-embed">
                                   <svg
                                     width="16"
@@ -3083,7 +3053,7 @@
                 >Community</a
               ><a
                 data-track="Build"
-                href="https://discord.com/build"
+                href="https://discord.com/developers"
                 class="link-footer top-new-link"
                 >Developers</a
               ><a
