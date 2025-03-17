@@ -232,6 +232,32 @@
       style.</span
     >
   </li>
+  <li style="font-weight: 400" aria-level="1">
+    <span style="font-weight: 400"
+      ><strong>Keep your Quest rewards longer</strong>: Nitro members enjoy
+      <a
+        href="https://support.discord.com/hc/en-us/articles/29790581779735"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Quest-rewarded avatar decorations for longer</a
+      >! Complete
+      <a
+        href="https://support.discord.com/hc/articles/22225719947543"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Quests</a
+      >
+      to unlock decorations and keep them for an extended period of time.
+      Additionally, you'll see most past rewards returning to your collection,
+      giving you more time to showcase your favorite
+      <a
+        href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
+        target="_blank"
+        rel="noopener noreferrer"
+        >avatar decorations</a
+      >.</span
+    >
+  </li>
 </ol>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
 <p>

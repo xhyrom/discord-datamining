@@ -79,6 +79,29 @@
     height="407"
   />
 </p>
+<div class="book-box">
+  <p class="wysiwyg-text-align-left">
+    <a
+      href="https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic-Nitro"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord Nitro subscribers</a
+    >
+    get exclusive perks with avatar decorations through
+    <a
+      href="https://support.discord.com/hc/articles/22225719947543"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Nitro Quests</a
+    >! Learnmore about extended decoration access and other benefits in our
+    <a
+      href="https://support.discord.com/hc/articles/nitro-quest-perks"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Nitro Quest Perks article</a
+    >.
+  </p>
+</div>
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
   How can I collect an avatar decoration?
 </h1>
