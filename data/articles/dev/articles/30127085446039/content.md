@@ -104,7 +104,7 @@
   To apply for full access to closed beta features, or to reach out to Discord
   directly to discuss your game, please fill out
   <a
-    href="https://discord.com/developers/social-sdk-closed-beta-access-request-form"
+    href="https://discord.com/developers/social-sdk-closed-beta-access-form"
     target="_blank"
     rel="noopener noreferrer"
     >this form</a
