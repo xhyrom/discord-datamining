@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7868606002](https://discord.com/jobs/7868606002)
 
-**Updated At:** Fri, 14 Mar 2025 23:17:30 GMT
+**Updated At:** Mon, 17 Mar 2025 19:39:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Adaptive Data Analytics is a dynamic team responsible for protecting users from Scaled Abuse on Discord including spam, account compromise, and payments fraud.
@@ -27,7 +27,7 @@ Work cross-collaboratively with other teams, including Product, Safety Engineeri
 What you should have
 
 5+ years of experience working with scripting languages like Python or Javascript, and expert level proficiency with SQL on large datasets
-5+ years of experience combating scaled abuse online, with proactive and innovative approaches to handle adversarial actors, understanding the tradeoffs and risks that come with this space
+3+ years of experience combating scaled abuse online, with proactive and innovative approaches to handle adversarial actors, understanding the tradeoffs and risks that come with this space
 Strong problem-solving, troubleshooting, and investigative skills: we believe in getting to the root of the matter instead of just addressing symptoms
 Strong stakeholder management skills––you’re adept at improving processes and know how to leverage the skills of multiple disparate teams
 Ability to work in a fast-paced environment and make important decisions under pressure
