@@ -689,13 +689,17 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Featured</div>
                           <a
-                            href="https://discord.com/gdc-2024"
+                            href="https://discord.com/developers/gdc-2024"
                             class="dd_nav-link w-inline-block"
                             ><div>GDC 2024</div></a
                           ><a
-                            href="https://discord.com/build/app-pitches-2024"
+                            href="https://discord.com/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
                             ><div>App Pitches 2024</div></a
+                          ><a
+                            href="https://discord.com/developers/build"
+                            class="dd_nav-link is_hide w-inline-block"
+                            ><div>Apps and Activities</div></a
                           >
                         </div>
                         <div class="nav_dd_link_line is-n"></div>
