@@ -11944,9 +11944,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .contentContainer__3add8 {
   position: relative;
-  z-index: 1;
-  margin-top: 148px;
   overflow: hidden;
+  margin-top: var(--spacing-16);
 }
 .buttonsContainer__3add8 {
   display: flex;
@@ -11960,7 +11959,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   flex: 1 1 0;
 }
 .topPerksCardImage__3add8 {
-  position: absolute;
   height: 128px;
 }
 .borderGlowOverlay__3add8 {
@@ -12074,19 +12072,33 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   }
 }
 .container_ef0711 {
+  flex-wrap: wrap;
   flex-direction: column;
   margin-top: var(--spacing-64);
   text-align: center;
+  flex: 1;
 }
 .container_ef0711,
 .powerupsContainer_ef0711 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .powerupsContainer_ef0711 {
-  gap: 16px;
+  position: relative;
+  gap: var(--spacing-16);
   margin-top: var(--spacing-32);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.powerupCard_ef0711 {
+  min-width: 500px;
+}
+.image_ef0711 {
+  position: absolute;
+}
+.contentContainer_ef0711 {
+  z-index: 1;
+  margin-top: 148px;
 }
 .wrapper__4d7bb {
   background: linear-gradient(
@@ -29599,23 +29611,17 @@ html:not(.visual-refresh) .root_e5f3a9 {
   opacity: 0.4;
   transition: opacity 0.5s;
 }
-@keyframes placeholderPulse_fdeafc {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
 .placeholderUsername_fdeafc {
   border-radius: 8px;
   height: 14px;
-  width: 100px;
-  background-color: var(--background-secondary);
-  animation: placeholderPulse_fdeafc 2s ease-in-out infinite;
+  width: 124px;
+  opacity: 0.8;
+}
+.theme-light .placeholderUsernameColor_fdeafc {
+  background-color: #aaaab2;
+}
+.theme-dark .placeholderUsernameColor_fdeafc {
+  background-color: #706f74;
 }
 .badgeDark_dd79c2 {
   background-color: var(--white-500);
@@ -57278,4 +57284,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.06c204f956be4d1c.css.map*/
+/*# sourceMappingURL=12633.4a782fc1324c7ae9.css.map*/
