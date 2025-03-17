@@ -11850,10 +11850,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   color: var(--text-brand);
 }
 .description__83f66 {
-  display: flex;
   align-items: center;
   flex-direction: row;
-  gap: var(--spacing-4);
+  display: inline-block;
 }
 .responsiveText__83f66 {
   color: var(--header-secondary);
@@ -57284,4 +57283,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4a782fc1324c7ae9.css.map*/
+/*# sourceMappingURL=12633.87f7b22ac1f01d08.css.map*/
