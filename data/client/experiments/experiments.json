@@ -3322,29 +3322,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-10_premium_tier_2_trial_offer_expiring_notice",
-      "label": "Premium Tier 2 Trial Offer Expiring Notice",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3950847537,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-10_social_proofing_file_size",
       "label": "Social Proofing File Size",
       "description": [
@@ -5299,32 +5276,6 @@
       "aa_mode": false,
       "config_keys": [
         "doSomething"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-06_desktop_app_launcher_in_activities_shelf",
-      "label": "Desktop App Launcher In Activities Shelf",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> performs activity action (i.e. launch)",
-        "Treatment 2: Enable the desktop app launcher in activities shelf: On home screen, clicking activity card -> activity detail page"
-      ],
-      "hash": 2442141621,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled",
-        "clickOnHomeActivityOpensAppDetail"
       ]
     }
   },
@@ -9967,6 +9918,66 @@
   {
     "data": {
       "kind": "user",
+      "id": "2025-02_test_first_bucket_allocation",
+      "label": "Test First Bucket Allocation Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Variation with first treatment enabled",
+        "Treatment 2: Variation with second treatment enabled"
+      ],
+      "hash": 445499752,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 1412337990,
+      "holdout": {
+        "name": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "799349358776549378",
+          "763838479293349899"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2025-02_quest_home_moved_callout",
       "label": "Quest Home Moved Callout Experiment",
       "description": [
@@ -10186,31 +10197,6 @@
         -1,
         0,
         1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-02_test_first_bucket_allocation",
-      "label": "Test First Bucket Allocation Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Variation with first treatment enabled",
-        "Treatment 2: Variation with second treatment enabled"
-      ],
-      "hash": 445499752,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -10811,52 +10797,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2025-03_activity_privacy_per_guild_settings",
-      "label": "Show per-guild activity privacy settings",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show settings"
-      ],
-      "hash": 2020090831,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_activity_sharing_popout_with_invisibility",
-      "label": "Activity Sharing Popout with Invisibility",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable the RTC popout when the user is not sharing activity or is invisible"
-      ],
-      "hash": 2004988961,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2025-03_custom_status_prompts",
       "label": "Custom Status Prompts Experiment",
       "description": [
@@ -10865,52 +10805,6 @@
         "Treatment 1: Enable custom status prompts"
       ],
       "hash": 2421730155,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_desktop_deeplinks",
-      "label": "Desktop Deeplinks",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: On"
-      ],
-      "hash": 3176811877,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_desktop_refresh_compact_mode",
-      "label": "Desktop Refresh Compact Mode",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2412295181,
       "buckets": [
         -1,
         0,
@@ -11005,121 +10899,6 @@
         "Treatment 1: Allow subscription management while on fractional nitro"
       ],
       "hash": 343170818,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_guild_profile_invite_embed",
-      "label": "Enables invite embeds using new guild profile components",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: new embeds enabled"
-      ],
-      "hash": 1144728667,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_permadecos_marketing",
-      "label": "Permadecos Marketing",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 957395828,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_remove_inbox_fyp",
-      "label": "Remove Inbox For You Tab",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Remove For You tab"
-      ],
-      "hash": 3320018478,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "showForYouTab"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_shop_hide_strikethrough_price",
-      "label": "Shop Hide Strikethrough Price Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Hide strikethrough prices"
-      ],
-      "hash": 1907383429,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "hideStrikethroughPrice"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_slayer_notif_supression_killswitch",
-      "label": "Disable suppressing notifications with slayer game active",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Disable suppressing"
-      ],
-      "hash": 975341663,
       "buckets": [
         -1,
         0,
@@ -11561,6 +11340,144 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2025-03_activity_privacy_per_guild_settings",
+      "label": "Show per-guild activity privacy settings",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show settings"
+      ],
+      "hash": 2020090831,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_activity_sharing_popout_with_invisibility",
+      "label": "Activity Sharing Popout with Invisibility",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable the RTC popout when the user is not sharing activity or is invisible"
+      ],
+      "hash": 2004988961,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_desktop_deeplinks",
+      "label": "Desktop Deeplinks",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: On"
+      ],
+      "hash": 3176811877,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_desktop_refresh_compact_mode",
+      "label": "Desktop Refresh Compact Mode",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2412295181,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_guild_profile_invite_embed",
+      "label": "Enables invite embeds using new guild profile components",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: new embeds enabled"
+      ],
+      "hash": 1144728667,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_permadecos_marketing",
+      "label": "Permadecos Marketing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 957395828,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "hash": 968663312,
       "holdout": {
@@ -11603,6 +11520,52 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_remove_inbox_fyp",
+      "label": "Remove Inbox For You Tab",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Remove For You tab"
+      ],
+      "hash": 3320018478,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "showForYouTab"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_slayer_notif_supression_killswitch",
+      "label": "Disable suppressing notifications with slayer game active",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Disable suppressing"
+      ],
+      "hash": 975341663,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
@@ -11689,41 +11652,6 @@
       "overrides": {
         "1": [
           "651595875897835540"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1412337990,
-      "holdout": {
-        "name": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "799349358776549378",
-          "763838479293349899"
         ]
       },
       "overrides_formatted": []
@@ -12357,6 +12285,75 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_nameplate_new_release",
+      "label": "Nameplate New Release Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show new release badge"
+      ],
+      "hash": 2690692066,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_obscured_message_loaded_analytics",
+      "label": "Obscured message loaded analytics",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables the experiment"
+      ],
+      "hash": 2900537857,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2025-03_shop_hide_strikethrough_price",
+      "label": "Shop Hide Strikethrough Price Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Hide strikethrough prices"
+      ],
+      "hash": 1907383429,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "hideStrikethroughPrice"
+      ]
     }
   },
   {
@@ -13063,29 +13060,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2025-03_nameplate_new_release",
-      "label": "Nameplate New Release Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show new release badge"
-      ],
-      "hash": 2690692066,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 2701598838,
       "holdout": {
@@ -13307,29 +13281,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_obscured_message_loaded_analytics",
-      "label": "Obscured message loaded analytics",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables the experiment"
-      ],
-      "hash": 2900537857,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
