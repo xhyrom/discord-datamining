@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2025-02_filter_wordle_from_voice_channel_launcher",
+    "label": "Filter Wordle From Voice Channel Launcher",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Filter Wordle From Voice Channels"
+    ],
+    "hash": 4025024414,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
