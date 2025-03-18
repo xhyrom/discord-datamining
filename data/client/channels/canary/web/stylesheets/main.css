@@ -32332,16 +32332,18 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   display: inline;
 }
 .addStatusPrompt_ab8609 {
-  color: var(--text-muted);
-}
-.addStatusIcon_ab8609,
-.addStatusPrompt_ab8609 {
   display: inline;
+  color: var(--text-muted);
   vertical-align: middle;
 }
+.italicPrompt_ab8609 {
+  font-style: italic;
+}
 .addStatusIcon_ab8609 {
+  display: inline;
   margin-right: 4px;
   fill: var(--text-muted);
+  vertical-align: middle;
 }
 .outer_ab8609:hover .addStatusPrompt_ab8609 {
   color: var(--text-normal);
@@ -57350,4 +57352,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e20906c03f906307.css.map*/
+/*# sourceMappingURL=12633.68284592d694cad9.css.map*/
