@@ -41509,13 +41509,20 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.wallpaper_f86e69 {
+.wallpaper_f86e69,
+.wallpaperRemoveSelection_f86e69 {
   width: 88px;
   height: 88px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+}
+.wallpaperRemoveSelection_f86e69 {
+  background-color: var(--background-tertiary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .wallpaperSelected_f86e69 {
   border: 1.88px solid var(--brand-500);
@@ -57305,4 +57312,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1a9dc2b2a5f45f7d.css.map*/
+/*# sourceMappingURL=12633.18e600ae879ca573.css.map*/
