@@ -28,6 +28,31 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Overwatch 2 – Midseason Mashup Trailer<br /></strong
+  ><strong>Quest Name: Lifeweaver Skin Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the
+  <strong>Overwatch 2 – Midseason Mashup Trailer </strong>in Discord and unlock
+  the <strong>Frozen Seer Lifeweaver skin</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to US users on desktop where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Overwatch 2 Lifeweaver Skin Video Quest</strong> can be accepted
+  on Discord desktop app or browser client from
+  <strong>March 18, 2025 </strong>until<strong>
+    March 24, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 7, 2025 (0:00 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Hunt: Mega Edition <br /></strong
   ><strong>Quest Name: Roblox Video Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the <strong>Roblox Video </strong>in
