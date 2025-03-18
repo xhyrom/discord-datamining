@@ -929,7 +929,11 @@
   },
   "COLLECTIBLES_SHOP": {
     "url": "/collectibles-shop",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONSUMABLE_FETCH_PRICE": {
     "url": "/store/consumable/pricing/:param",
