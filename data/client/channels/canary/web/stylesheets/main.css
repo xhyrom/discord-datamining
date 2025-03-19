@@ -15732,6 +15732,31 @@ div.modalHeader_c28af8 {
 .visual-refresh .modalFooterShopButton_ced2f2 {
   background-clip: padding-box;
 }
+.brandShine__9497e {
+  color: hsl(var(--brand-500-hsl) / 0.1) !important;
+}
+.freeTrialText__9497e {
+  text-transform: capitalize;
+}
+.upsellContainer__88422 {
+  display: flex;
+  background-color: hsl(var(--black-hsl) / 0.1);
+  border-radius: var(--radius-xs);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+.row__88422 {
+  display: flex;
+  flex-direction: row;
+}
+.upsellText__88422 {
+  margin: auto 0 auto 4px;
+}
+.button__88422 {
+  padding: 0 8px;
+}
 .headerImage__802af {
   width: 180px;
   margin-bottom: 24px;
@@ -15836,6 +15861,9 @@ div.modalHeader_c28af8 {
 }
 .loadingIndicatorWrapper_b0ba57 {
   padding: 24px 0;
+}
+.upsell_b0ba57 {
+  margin-top: 24px;
 }
 .headerImage__8da80 {
   position: absolute;
@@ -57356,4 +57384,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.df5d7d2e2d9f7bae.css.map*/
+/*# sourceMappingURL=12633.a1a9c7d1ab707d6f.css.map*/
