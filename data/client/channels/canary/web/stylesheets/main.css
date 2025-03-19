@@ -16614,12 +16614,12 @@ span.clanTag__5d473 {
 .streamerModeEnabledBtn_aa3ffd {
   margin-top: 20px;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: var(--white-500);
   background-color: var(--twitch);
   padding: 10px 20px;
   border-radius: 3px;
-  line-height: 1.8125rem;
+  line-height: 29px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -57391,4 +57391,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.441f6a8b4cef15fc.css.map*/
+/*# sourceMappingURL=12633.68d3a5b11fe12fd2.css.map*/
