@@ -1533,6 +1533,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .keyboard-mode .simpleFocused_cc5dd2 {
   box-shadow: 0 0 0 4px var(--blue-345);
 }
+.visual-refresh.keyboard-mode .focusStroke_cc5dd2 {
+  fill: transparent;
+}
 .hiddenVisually__27f77,
 .showOnFocus__27f77:not(:focus-within) {
   clip: rect(0 0 0 0);
@@ -2409,6 +2412,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .checkboxWrapper_f525d3.row_f525d3:active:not(.checked_f525d3) {
   background-color: var(--background-modifier-active);
   color: var(--interactive-active);
+}
+.checkboxWrapper_f525d3.row_f525d3 .inputDefault_f525d3 {
+  top: 10px;
+  left: 10px;
 }
 .checkboxWrapperDisabled_f525d3 {
   opacity: 0.6;
@@ -57384,4 +57391,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a1a9c7d1ab707d6f.css.map*/
+/*# sourceMappingURL=12633.68d3a5b11fe12fd2.css.map*/
