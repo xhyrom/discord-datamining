@@ -6562,8 +6562,6 @@
           (r.VOICE_QUALITY_PERIODIC_STATS = "voice_quality_periodic_stats"),
           (r.AUDIO_DEVICE_MODULE_ERROR = "audio_device_module_error"),
           (r.SDP_ERROR = "sdp_error"),
-          (r.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
-            "voice_filter_limited_time_voice_selected"),
           (r.CHANNEL_SIDEBAR_VIEWED = "channel_sidebar_viewed"),
           (r.CHANNEL_SIDEBAR_RESIZED = "channel_sidebar_resized"),
           (r.MEMBER_LIST_VIEWED = "member_list_viewed"),
@@ -7998,6 +7996,9 @@
           (r.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (r.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (r.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
+            "voice_filter_limited_time_voice_selected"),
+          (r.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
           (r.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
           (r.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
           (r.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
@@ -8581,7 +8582,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-37b4e2c26acb01a885fe29e9318e81851bbdba5f",
+            release: "discord_web-b5cc2435b825194833fbe18cfbc31ebfc302d5e8",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8647,8 +8648,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "379612"),
-            o.YA("builtAt", String("1742355171874"));
+            o.YA("buildNumber", "379632"),
+            o.YA("builtAt", String("1742362681062"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46474,4 +46475,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.6e022bd266dd142f.js.map
+//# sourceMappingURL=sentry.8591bed6162298a2.js.map
