@@ -1,6 +1,6 @@
 # Job Listing
 
-## Creative Director
+## Creative Director, Developers
 
 **Location:** Remote (U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7904395002](https://discord.com/jobs/7904395002)
 
-**Updated At:** Mon, 17 Mar 2025 18:51:57 GMT
+**Updated At:** Wed, 19 Mar 2025 19:46:29 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is a voice, video, and text communication app over two hundred million people use it to hang out and play games with their friends. We’re building an outstanding marketing and communications organization to help shape and broaden our brand and appeal to more players.We are looking for a Creative Director with a design background and deep experience engaging developer audiences to join our Brand Creative team. This role is ideal for a visionary leader who understands how to translate complex technical concepts into visually compelling narratives that resonate with game developers and B2B audiences.
