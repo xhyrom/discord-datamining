@@ -21878,6 +21878,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 :where(.visual-refresh-chat-input) .channelTextArea__74017:focus-within {
   border-color: var(--border-subtle);
 }
+.visual-refresh .channelTextArea__74017 {
+  transition: border-color 0.2s ease;
+}
+.visual-refresh .channelTextArea__74017:focus-within {
+  border-color: var(--border-subtle);
+}
 .visual-refresh-chat-input .themedBackground__74017 {
   background: none;
 }
@@ -21999,7 +22005,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-left: -16px;
 }
 .visual-refresh .attachButton__74017 {
-  margin-left: -14px;
+  margin-left: calc(var(--space-xs) * -1 + var(--space-6) * -1);
 }
 .visual-refresh-chat-input .attachButton__74017 {
   margin-left: 0;
@@ -57391,4 +57397,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.68d3a5b11fe12fd2.css.map*/
+/*# sourceMappingURL=12633.7b33303fc1c8adb5.css.map*/
