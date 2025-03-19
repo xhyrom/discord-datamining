@@ -7,12 +7,11 @@
   /></span>
 </p>
 <p>
-  Have you ever wanted to express yourself with unique user identities across
-  all your servers? Perhaps you're in a tabletop roleplaying game server and you
-  want to have a server-specific avatar, profile banner, and bio inspired by
-  your super cool character? Or maybe you're in a server all about coffee and
-  you want an avatar and profile banner of your favorite cup of hot bean juice?
-  Well, now you can with our Nitro perk: per-server profiles!
+  Have you wanted to personalize your identity across different servers? Whether
+  you're roleplaying in a gaming server and want your profile to match your
+  character's aesthetic, or sharing your passion for coffee with themed avatars
+  - our Nitro perk <strong>p</strong><strong>er-server profiles </strong>makes
+  it possible!
 </p>
 <p id="docs-internal-guid-04483fd6-7fff-6ad1-ee29-d2e971e3d241">
   <span class="wysiwyg-font-size-large"
@@ -21,39 +20,47 @@
 </p>
 <ul>
   <li>
-    <a href="#h_01FGCPNVQ6F9X6ET40NPETDMVK" target="_self" rel="undefined"
-      >What are Per-Server Profiles?</a
-    >
+    <a href="#h_01FGCPNVQ6F9X6ET40NPETDMVK">What are per-server profiles?</a>
   </li>
   <li>
-    <a href="#h_01FGCPP3V7BS1QVCQQZ2YC0RXB" target="_self"
-      >How can I change my Server Avatar?</a
+    <a href="#h_01FGCPP3V7BS1QVCQQZ2YC0RXB"
+      >How can I change my server avatar?</a
     >
     <ul>
       <li>
-        <a href="#h_01FGM5HZ9G9RE5R7836J63ZX1P" target="_self"
-          >Right-Click on your Avatar</a
+        <a href="#h_01JPQHTHHQ25N1SDHR0YC3QAGF"
+          >Desktop/Browser: Right-Click on your Avatar</a
         >
       </li>
       <li>
-        <a href="#h_01FGM5JCW5TMQAR0VAFG1Y8SZH" target="_self"
-          >Left-Click on your Avatar</a
+        <a href="#h_01JPQJ0CG96RYZ4RT4V7MQTZHG"
+          >Desktop/Browser: Left-Click on your Avatar</a
         >
       </li>
       <li>
-        <a href="#h_01FGM5JM22TG41PZR8SMFXBTKR" target="_self"
-          >What if I want to reset my Server Avatar?</a
+        <a href="#h_01JPQJ3CM6J1ESP0DWV15FM9F7"
+          >Desktop/Browser: Resetting My Server Avatar to a Recent Avatar</a
         >
       </li>
       <li>
-        <a href="#h_01FJ354SN3Q9YQ28AB5GMXWTVA" target="_self"
-          >Changing your Server Avatar on Mobile</a
+        <a href="#h_01FJ354SN3Q9YQ28AB5GMXWTVA"
+          >Mobile: Changing your Server Avatar</a
         >
       </li>
     </ul>
   </li>
   <li>
-    <a href="#h_01GG6C7WG2GAF74SBZ02GC20VQ" target="_self"
+    <a href="#h_01FPE3GWZ62G842RFFFYD9NTJT"
+      >How do I change my profile banner?</a
+    >
+  </li>
+  <li>
+    <a href="#h_01G52M1Y6A47PB0S6MRYJF7VQD"
+      >How do I set up an “About Me” for my per-server profile?</a
+    >
+  </li>
+  <li>
+    <a href="#h_01GG6C7WG2GAF74SBZ02GC20VQ"
       >How do I change my profile theme?</a
     >
     <ul>
@@ -62,71 +69,104 @@
     </ul>
   </li>
   <li>
-    <a href="#h_01FPE3GWZ62G842RFFFYD9NTJT" target="_self"
-      >How do I change my profile banner?</a
+    <a href="#h_01JPQK1YCEXWF53G4PXJ0BAWY1"
+      >How do I add avatar decorations and profile effects to my per-server
+      profile?</a
     >
   </li>
   <li>
-    <a href="#h_01G52M1Y6A47PB0S6MRYJF7VQD" target="_self"
-      >How do I set up an “About Me” for my Per-Server Profile?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01HT0XZ4BMZEBV613KTPX05HFQ"
-      >How do I add Avatar Decorations and Profile Effects to my Per-Server
-      Profile?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01FGCPPE37QG92W7XCVV53NVC3" target="_self"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01FGCPPE37QG92W7XCVV53NVC3">Frequently Asked Questions</a>
   </li>
 </ul>
-<h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are Per-Server Profiles?</h1>
+<h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are per-server profiles?</h1>
 <p>
-  Per-server profiles are a new customization feature for Nitro users! With
-  server profiles, users can set a different server-specific avatar, banner, and
-  about me section for each of the servers they're in.
+  <strong>Per-server profiles</strong> are a new customization feature for Nitro
+  users! With per-server profiles, users can set a different server-specific
+  avatar, banner, and about me section for each of the servers they're in.
 </p>
-<h3 id="h_01HNGBKZ17VD2YQG517HE860D8">
-  Note: Even if you change your per-server profile, your user profile will be
-  unaffected and remain as your primary avatar in servers where you don't upload
-  server avatars.
-</h3>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767021257367"
+    width="628"
+    height="427"
+  />
+</p>
+<h4 id="h_01JPQHRXA29WZQ6SA54EKZV259" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >How to Customize Your Profile for Different Servers</span
+  >
+</h4>
+<div class="info-box">
+  <strong>NOTE</strong>: Even if you change your per-server profile, your user
+  profile will be unaffected and remain as your primary avatar in servers where
+  you don't upload server avatars.
+</div>
 <h1 id="h_01FGCPP3V7BS1QVCQQZ2YC0RXB">How can I change my Server Avatar?</h1>
-<h2 id="h_01FGM5HZ9G9RE5R7836J63ZX1P">Right-Click on your Avatar</h2>
-<p id="docs-internal-guid-86b7434e-7fff-abc7-a117-b2a6e9a0c1ab">
+<h2 id="h_01JPQHTHHQ25N1SDHR0YC3QAGF">
+  Desktop/Browser: Right-Click on your Avatar
+</h2>
+<p>
   1. In the browser or desktop app, you can right-click your avatar in a text
   channel. This will activate the drop-down menu.
 </p>
 <p>
-  2. Select <strong>Edit per-server profile </strong>to navigate to the
-  <strong>per-server profiles </strong>page. 
+  2. Select <strong>Edit Per-server Profile </strong>to navigate to the
+  <strong>Per</strong>-<strong>server Profiles </strong>page. 
 </p>
 <p>
   3. You can then press on your avatar or <strong>Change Avatar</strong> to
   upload the specific avatar you would like to use for that per-server profile.
 </p>
+<div class="info-box">
+  Like profile avatars, PNG and JPG are the supported file types and Nitro users
+  can upload a GIF for their server avatars.
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767021259159"
+    width="621"
+    height="413"
+  />
+</p>
+<h4 id="h_01JPQHX125D3FYHD7GPFHGMVRD">
+  <span style="color: #666666"
+    >Right-click your avatar and select Edit Per-server Profile to customize it
+    for specific servers</span
+  >
+</h4>
 <p>
   4. Once you have chosen your avatar, press <strong>Save Changes</strong> to
   confirm. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30373177431703"
-    width="624"
-    height="336"
+    src="https://support.discord.com/hc/article_attachments/30767074365463"
+    width="651"
+    height="49"
   />
 </p>
-<h3 id="docs-internal-guid-e766688b-7fff-e749-881a-f02201575d46">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Like profile avatars, PNG and JPG are the supported file types and Nitro
-    users can upload a GIF for their server avatars. After uploading a server
-    avatar, you can crop and center PNG, JPG, and GIF files. </span
+<h4 id="h_01JPQHXPMJS4EFC3MZB5JBP961" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Save Changes Button</span>
+</h4>
+<div class="info-box">
+  After uploading a server avatar, you can crop, center, and rotate PNG, JPG,
+  and GIF files.
+</div>
+<p id="h_01JPQHZX1CV36KC90AV559T5RT" class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767021264919"
+    width="400"
+    height="401"
+  />
+</p>
+<h4 id="h_01JPQJ01XFMAHMKTXPM0SNTMBC" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Edit your avatar: Crop, center, and rotate your profile picture</span
   >
-</h3>
-<h2 id="h_01FGM5JCW5TMQAR0VAFG1Y8SZH">Left-Click on your Avatar</h2>
+</h4>
+<h2 id="h_01JPQJ0CG96RYZ4RT4V7MQTZHG">
+  Desktop/Browser: Left-Click on your Avatar
+</h2>
 <p id="docs-internal-guid-7dc53c08-7fff-108c-766a-036bd2c4040e">
   1. Alternatively, you can left-click your avatar in the server’s
   <strong>Member List</strong>, which is the sidebar located to the right, to
@@ -138,41 +178,70 @@
 </p>
 <p>
   3. Select <strong>Edit per-server profile</strong> to change your server
-  avatar in the <strong>per-server profile </strong>settings page.
+  avatar in the <strong>per-server profile</strong> page.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30373177434903"
-    width="624"
-    height="336"
+    src="https://support.discord.com/hc/article_attachments/30767021267607"
+    width="658"
+    height="367"
   />
 </p>
+<h4 id="h_01JPQJ1QWE335W0FF2Q7M93RJ5" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Left-click your avatar in the Member List and select Edit Per-server
+    Profile</span
+  >
+</h4>
 <p id="docs-internal-guid-c6299502-7fff-64f5-001a-b801c7ec6333">
   4. When you’re all set, press <strong>Save Changes</strong> to confirm your
   avatar change.
 </p>
-<h2 id="h_01FGM5JM22TG41PZR8SMFXBTKR">
-  What if I want to reset my Server Avatar?
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074382871"
+    width="664"
+    height="50"
+  />
+</p>
+<h4 id="h_01JPQJ2EDH7608DWR74CR9M638" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Save Changes Button</span>
+</h4>
+<h2 id="h_01JPQJ3CM6J1ESP0DWV15FM9F7">
+  Desktop/Browser: Resetting My Server Avatar to a Recent Avatar
 </h2>
-<p id="docs-internal-guid-c6884b72-7fff-95be-085b-79b42483902f">
-  If you made a mistake with your server avatar or if you would like to revert
-  your server avatar to your profile avatar, you can follow either of the two
-  methods above and navigate to the per-server profile settings page. Once
-  there, select <strong>Reset Avatar</strong>.
+<div class="info-box">
+  <strong>Recent Avatars</strong> lets Nitro subscribers store their 6 most
+  recent avatars, while non-subscribers can store 2.
+</div>
+<p>
+  To return to a recent avatar, navigate to the <strong>Profiles</strong> page.
+  You can do this using either of the methods described
+  <a href="#h_01JPQHRXA29WZQ6SA54EKZV259">above</a>. 
+</p>
+<p>
+  If you'd like to use a different recent avatar instead, select
+  <strong>Change</strong> <strong>Avatar</strong> and choose one from the
+  <strong>Recent</strong> <strong>Avatars</strong> section.
+</p>
+<p>
+  After making your selection, press <strong>Apply</strong> and
+  <strong>Save Changes</strong> to confirm.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-8eeef814-7fff-ac12-7857-ef64d36f3f66"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750745844631"
-      width="624"
-      height="375"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074384791"
+    width="630"
+    height="419"
+  />
 </p>
-<h2 id="h_01FJ354SN3Q9YQ28AB5GMXWTVA">Changing your Server Avatar on Mobile</h2>
-<p id="docs-internal-guid-744d586d-7fff-e1a2-7747-a9a27306b50d">
-  If you'd like to customize your server avatar while on the iOS or Android, you
-  can do so through two ways: the <strong>User Profile</strong> and the
-  <strong>per-server profile.</strong>
+<h4 id="h_01JPQJ7FQBY1DZ36FERVETX6RC" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Save Changes Button</span>
+</h4>
+<h2 id="h_01FJ354SN3Q9YQ28AB5GMXWTVA">Mobile: Changing your Server Avatar</h2>
+<p>
+  You can customize your server avatar on iOS or Android through two methods:
+  <strong>User Profile</strong> and <strong>Per-server Profiles</strong>.
 </p>
 <p>
   <strong
@@ -180,60 +249,87 @@
   > 
 </p>
 <p>
-  1. Navigate to the specific server where you would like to update your server
-  avatar and select your avatar in one of the channels you've messaged in or in
-  the server's Member List.
+  1. Navigate to the specific server and select your
+  <strong>avatar </strong>from either a channel where you’ve posted messages or
+  from the server's <strong>Member List</strong>.
 </p>
 <p>
-  2. Then, tap <strong>Edit per-server profile</strong> to navigate to your
-  <strong>per-server profile</strong> settings.   
+  2. Tap <strong>Edit Per-server Profile</strong> to access your
+  <strong>Per-server Profiles</strong> settings.   
 </p>
 <p>
-  3. Once you have been directed to per-server profile, you can upload and apply
-  a new image for your server avatar by selecting your current server avatar and
-  tapping <strong>Change Avatar</strong>.
+  3. In the <strong>Per-server Profiles </strong>page, tap your current
+  <strong>server avatar</strong> and select <strong>Upload Image </strong>to set
+  a new avatar.
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074390039"
+    width="248"
+    height="518"
+  />
+</p>
+<h4 id="h_01JPQJBF2YTY57CKRN8FE88XM8" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Per-server Profiles on Mobile</span>
+</h4>
 <p>
   4. After a new server avatar has been uploaded, tap <strong>Save </strong>in
   the top right corner to confirm the change.  
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-4ba19cd1-7fff-0019-5ecb-6b11f07c11e3"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750745847191"
-      width="253"
-      height="523"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767021281687"
+    width="242"
+    height="505"
+  />
 </p>
-<p id="docs-internal-guid-bc90ff8c-7fff-1812-f7c5-77306a2c511d">
+<h4 id="h_01JPQJC79VRMB3A5Z3YKDKTTH6" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Remember to tap Save on mobile devices to confirm your profile
+    changes</span
+  >
+</h4>
+<p>
   <strong
-    ><span class="wysiwyg-underline">Through Per-server profile:</span></strong
+    ><span class="wysiwyg-underline">Through Per-server Profiles:</span></strong
   > 
 </p>
 <p>
-  1. Tap on the ellipses located next to the server’s name and select
-  <strong>Edit per-server profile</strong> to navigate to your
-  <strong>per-server profile</strong> settings. 
+  1. Tap on the server’s <strong>name</strong> and select
+  <strong>Edit Per-server Profile</strong> to open your
+  <strong>Per-server Profiles</strong> settings. 
 </p>
-<p>
-  2. Then, select your current server avatar and tap
-  <strong>Change Avatar </strong>to select a new image you would like to use.
+<p id="docs-internal-guid-bc90ff8c-7fff-1812-f7c5-77306a2c511d">
+  2. Select your current <strong>server</strong> <strong>avatar</strong> and tap
+  <strong>Upload Image </strong>to choose a new image.
 </p>
-<p>
-  3. Once the changes have been made, tap <strong>Save</strong> in the top right
-  corner to confirm. 
-</p>
-<h1 id="h_01GG6C7WG2GAF74SBZ02GC20VQ">How do I change my profile theme?</h1>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><strong
-      ><span id="docs-internal-guid-39e98b80-7fff-7451-a11e-a899c242c5cb"
-        ><img
-          src="https://support.discord.com/hc/article_attachments/21750745850007"
-          width="253"
-          height="339" /></span></strong
-  ></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074396055"
+    width="252"
+    height="524"
+  />
 </p>
+<h4 id="h_01JPQJDTKZ069SY4WZ0771TAX6" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Uploading an image in per-server profiles</span>
+</h4>
+<p>
+  3. After making your changes, tap <strong>Save</strong> in the top-right
+  corner to confirm.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074397591"
+    width="240"
+    height="500"
+  />
+</p>
+<h4 id="h_01JPQJEMCXNK31CBQBX94B7H3H" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Tap Save on mobile devices to confirm your profile changes</span
+  >
+</h4>
+<h1 id="h_01GG6C7WG2GAF74SBZ02GC20VQ">How do I change my profile theme?</h1>
 <p id="docs-internal-guid-9ea847a7-7fff-f708-2f57-59c0125e441c">
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
@@ -241,52 +337,42 @@
     rel="noopener noreferrer"
     >Nitro</a
   >
-  members can customize each of their per-server profiles’ themes! This will
+  members can customize each of their per-server profile themes! This will
   specifically change the colors of your mini profile card. You can choose a
   <strong>Primary</strong> color and an <strong>Accent </strong>color.
 </p>
 <h2 id="h_01HNGBKZ179D803WSZXF5DV5C5">
   <span style="font-weight: 400">On Desktop/Browser</span>
 </h2>
-<p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><strong
-      ><span
-        id="docs-internal-guid-3acfeba7-7fff-553b-bf38-d8feb8ed2156"
-        style="color: #ae6607"
-        data-darkreader-inline-color=""
-        ><img
-          src="https://support.discord.com/hc/article_attachments/21750745851415"
-          width="624"
-          height="541" /></span></strong
-  ></span>
-</p>
-<p id="docs-internal-guid-505909e6-7fff-a18a-80e0-41a9177551a0">
-  In your <strong>Profiles </strong>page, under the
+<p>
+  In your <strong>Profiles </strong>tab &gt;
+  <strong>Per-server Profiles</strong> page, under the
   <strong>Profile Theme</strong>, press the <strong>Primary</strong> color
   square to choose the main color of your mini profile card. Then, press the
   <strong>Accent</strong> color square to choose a secondary color.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><span
-      id="docs-internal-guid-2b53dd41-7fff-db36-1516-47dacda23485"
-      style="color: #4f545c"
-      data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/21750745867287"
-        width="600"
-        height="496" /></span
-  ></span>
+  <span style="color: #4f545c"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30767074402327"
+      width="624"
+      height="444"
+  /></span>
 </p>
+<h4 id="h_01JPQJJS6G9BQQ2YNBBT57PCYX" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Select Profile Theme Colors: Choose a primary and accent color on
+    desktop</span
+  >
+</h4>
 <h2 id="h_01HNGBKZ187FNPGCSC4VGRDXWV">
   <span style="font-weight: 400">On Mobile</span>
 </h2>
-<p id="docs-internal-guid-bb412cbe-7fff-1d29-afc2-54dd7b56bc13">
-  To access your <strong>per-server profile</strong> page on your mobile
-  clients, swipe right while in the Discord app and tap on your avatar icon in
-  the bottom right corner to open up <strong>User Settings &gt;</strong>
-  <strong>Profiles</strong>.
+<p>
+  To access your <strong>Per-server Profile</strong> page on your mobile
+  clients, swipe right while in the Discord app and tap on your
+  <strong>avatar</strong> icon in the bottom right corner to open up your
+  profile. Then, tap <strong>Edit Profile</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
@@ -294,38 +380,40 @@
       id="docs-internal-guid-391b53a7-7fff-45c8-0e1f-095e068edd56"
       style="color: #4f545c"
       data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/21750753325719"
-        width="237"
-        height="489" /></span
-    ><span style="color: #4f545c" data-darkreader-inline-color="">   </span
-    ><span style="color: #4f545c" data-darkreader-inline-color=""
-      ><img
-        src="https://support.discord.com/hc/article_attachments/21750745870487"
-        width="235"
-        height="488" /></span
+      ><span style="color: #4f545c"
+        ><img
+          src="https://support.discord.com/hc/article_attachments/30767021292311"
+          width="259"
+          height="538" /></span></span
   ></span>
 </p>
-<p id="docs-internal-guid-b1c8ccf4-7fff-6e35-ca02-92fa30720c67">
+<p class="wysiwyg-text-align-center">
+  <span style="color: #4f545c"
+    >To customize your User Profile and per-server profiles, tap your avatar and
+    Edit Profile</span
+  >
+</p>
+<p>
   You can also tap on your avatar icon in a channel of your desired server and
-  select <strong>Edit per-server profile</strong> in your mini profile card.
+  select <strong>Edit Per-server Profile</strong> in your mini profile card.
 </p>
 <p>
   In the <strong>Profile</strong> page, make sure the profile option slider is
-  towards the right for <strong>per-server profile</strong> and that server you
-  intend to customize your per-server profile is chosen in the dropdown menu.
+  towards the right for <strong>P</strong><strong>er-server Profile</strong> and
+  that server you intend to customize your per-server profile is chosen in the
+  dropdown menu.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span
-    id="docs-internal-guid-4c3a5ca2-7fff-9626-6b10-4779a01ea365"
-    style="color: #4f545c"
-    data-darkreader-inline-color=""
+  <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/21750745874839"
-      width="234"
-      height="486"
+      src="https://support.discord.com/hc/article_attachments/30767021296023"
+      width="253"
+      height="527"
   /></span>
 </p>
+<h4 id="h_01JPQJNMZWEJRQ2A2XTS693YEK" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Per-server Profiles Tab on Mobile</span>
+</h4>
 <p id="docs-internal-guid-2e90fdd9-7fff-bad3-1154-101e6151d50f">
   Under the <strong>Profile Themes</strong> section, press the
   <strong>Primary</strong> color square to choose the main color of your mini
@@ -333,56 +421,46 @@
   secondary color.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span
-    id="docs-internal-guid-1d796fd7-7fff-e3dd-ca69-987c99473cfd"
-    style="color: #4f545c"
-    data-darkreader-inline-color=""
+  <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/21750745878423"
-      width="256"
-      height="530"
+      src="https://support.discord.com/hc/article_attachments/30767074410391"
+      width="250"
+      height="521"
   /></span>
 </p>
-<h3 id="docs-internal-guid-12f2bf76-7fff-fb40-f617-267342d6548d">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Please note: if you have <strong>Sync profile themes</strong> enabled in
-    your
-    <a
-      href="https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Accessibility settings page</a
-    >, which syncs your profile themes to your chosen Discord client theme, the
-    background color of your profile card will reflect the color of your client
-    theme (Light or Dark).</span
+<h4 id="h_01JPQJPA7DW18QPXGW5HWN61FF" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Pick a Primary and Accent color under Profile Theme</span
   >
-</h3>
+</h4>
+<div class="info-box">
+  Please note: if you have <strong>Sync profile themes</strong> enabled in your
+  <a
+    href="https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Accessibility settings page</a
+  >, which syncs your profile themes to your chosen Discord client theme, the
+  background color of your profile card will reflect the color of your client
+  theme (Light or Dark).
+</div>
 <h1 id="h_01FPE3GWZ62G842RFFFYD9NTJT">How do I change my profile banner?</h1>
-<p id="docs-internal-guid-bc012d53-7fff-b0f0-b188-69c5938e450b">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >Head over to your </span
-  ><strong
-    ><span style="color: #4f545c" data-darkreader-inline-color=""
-      >User Settings &gt; Profiles &gt; Per-server profiles
-    </span></strong
-  ><span style="color: #4f545c" data-darkreader-inline-color="">and press </span
-  ><strong
-    ><span style="color: #4f545c" data-darkreader-inline-color=""
-      >Change Banner</span
-    ></strong
-  ><span style="color: #4f545c" data-darkreader-inline-color="">
-    to upload your server banner.</span
-  >
+<p>
+  Head over to your
+  <strong>User Settings &gt; Profiles &gt; Per-server Profiles </strong>and
+  press <strong>Change Banner</strong> to upload your server banner.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-ebd671b0-7fff-e98b-8372-bfba6496300f"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750753346455"
-      width="624"
-      height="368"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767074415127"
+    width="624"
+    height="444"
+  />
 </p>
-<p>
+<h4 id="h_01JPQJRWKZW16ZR8WQCSAVHFQZ" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Changing your Profile Banner on Desktop</span>
+</h4>
+<div class="info-box">
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
@@ -392,16 +470,14 @@
   members can upload an image or animated GIF as their profile banner. Supported
   file types are PNG, JPG, and animated GIFs under 10MB. The recommended minimum
   size is 600x240.
-</p>
-<h3 id="h_01HNGBKZ1AMD3AT9MNXHKJZJMB" class="wysiwyg-text-align-left">
-  Tip: Images can be cropped after upload
-</h3>
+</div>
 <h1 id="h_01G52M1Y6A47PB0S6MRYJF7VQD">
   How do I set up an “About Me” for my Per-Server Profile?
 </h1>
 <p>
-  <span style="font-weight: 400">In the <strong>per-s</strong></span
-  ><strong>erver profiles</strong
+  <span style="font-weight: 400"
+    >In the <strong>P</strong><strong>er-s</strong></span
+  ><strong>erver Profiles</strong
   ><span style="font-weight: 400">
     settings page, you can write a small blurb in the text box under </span
   ><strong>About Me </strong
@@ -418,9 +494,6 @@
     <span style="font-weight: 400">Up to 190 characters</span>
   </li>
   <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Emojis</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
     <a
       href="https://support.discord.com/hc/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-"
       target="_blank"
@@ -429,129 +502,122 @@
     ><span style="font-weight: 400"> and links</span>
   </li>
   <li style="font-weight: 400" aria-level="1">
+    <span style="font-weight: 400">Emojis</span>
+  </li>
+  <li style="font-weight: 400" aria-level="1">
     <span style="font-weight: 400">Unicode</span>
   </li>
 </ul>
-<h3 id="h_01HNGBKZ1ABA9ZEEW5VV14G3E2">
-  Note: Nitro<span style="font-weight: 400"> and </span>Nitro Classic<span
-    style="font-weight: 400"
-  >
+<div class="info-box">
+  <strong>NOTE</strong>: Nitro and Nitro Classic<span style="font-weight: 400">
     members can use </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis"
     ><span style="font-weight: 400">custom emojis</span></a
   ><span style="font-weight: 400"> in their About Me.</span>
-</h3>
+</div>
 <p class="wysiwyg-text-align-center">
-  <span style="font-weight: 400"
-    ><strong
-      ><span
-        id="docs-internal-guid-dd771cae-7fff-ddb3-129a-ba027fb0a510"
-        style="color: #2f3941"
-        data-darkreader-inline-color=""
-        ><img
-          src="https://support.discord.com/hc/article_attachments/21750753353495"
-          width="624"
-          height="543" /></span></strong
-  ></span>
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30767021301783"
+      width="624"
+      height="449"
+  /></span>
 </p>
-<h1 id="h_01HT0XZ4BMZEBV613KTPX05HFQ">
-  How do I add Avatar Decorations and Profile Effects to my Per-Server Profile?
+<h4 id="h_01JPQK19FYKK00QX3Z27TW4W3F" class="wysiwyg-text-align-center">
+  <span style="color: #666666">About Me section in Profiles</span>
+</h4>
+<h1 id="h_01JPQK1YCEXWF53G4PXJ0BAWY1">
+  How do I add avatar decorations and profile effects to my per-server profile? 
 </h1>
-<p id="docs-internal-guid-0e77bf92-7fff-3462-1394-5151c16c0b4d">
-  1. In your <strong>per-server profiles</strong> settings, be sure to choose
+<p>
+  1. In your <strong>Per-server Profiles</strong> settings, be sure to choose
   the server you would like to update within the
   <strong>Choose A Server</strong> selection box. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span
-    id="docs-internal-guid-fc473c85-7fff-4978-45f0-8a190fc8700d"
-    style="color: #4f545c"
-    data-darkreader-inline-color=""
+  <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/21750745893911"
+      src="https://support.discord.com/hc/article_attachments/30767021304983"
       width="624"
-      height="404"
+      height="424"
   /></span>
 </p>
-<p id="docs-internal-guid-2d5a8244-7fff-61a7-4976-ff67df627a7c">
-  2.  Once you have chosen the server, press
+<h4 id="h_01JPQK2PXY2VFQ75YTEBHDEWG2" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Choose Server dropdown in Per-server Profiles</span
+  >
+</h4>
+<p>
+  2. Once you have chosen the server, press
   <strong>Change Decoration</strong> or <strong>Change Effect</strong> to select
-  the avatar decoration or profile effect you would like to set for the specific
+  the avatar decoration or profile effect you would like to set for the
   per-server profile. 
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-f5339dbf-7fff-8e58-47e9-f1dd21d3cebd"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/21750745895319"
-      width="595"
-      height="381"
-  /></span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/30767021307031"
+    width="628"
+    height="521"
+  />
 </p>
+<h4 id="h_01JPQK3GX7S5YSFQVT761VZM63" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of Adding an Avatar Decoration and a Profile Effect</span
+  >
+</h4>
 <p id="docs-internal-guid-a83d9812-7fff-a629-92ca-d18b2b577fa5">
   3. When you’re ready, be sure to confirm your changes by pressing
   <strong>Save Changes </strong>in the pop up box located at the bottom.
 </p>
-<h3 id="docs-internal-guid-fc704d1b-7fff-d257-f379-6344f26d5b00">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: Avatar Decorations and Profile Effects can be found in the </span
-  ><a
+<div class="info-box">
+  <strong>NOTE</strong>: Avatar decorations and profile effects can be found in
+  the
+  <a
     href="https://support.discord.com/hc/en-us/articles/17162747936663"
     target="_blank"
     rel="noopener noreferrer"
     >Shop</a
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >. You must purchase a profile cosmetic before being able to add to your
-    profile.  </span
-  >
-</h3>
+  >. You must purchase a profile cosmetic before being able to add to your
+  profile.
+</div>
 <h1 id="h_01FGCPPE37QG92W7XCVV53NVC3">Frequently Asked Questions</h1>
-<p id="h_01FGCPPQ1ZJN7YBBFZ5J3T21XA">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: What happened to server nicknames?</strong></span
-  >
-</p>
+<p><strong>Q: What happened to server nicknames?</strong></p>
 <p>
   A: Server nicknames still exist and are free to all Discord users! To change
   your server nickname, you can follow the same steps to change your server
   avatar, but instead input/change your server nickname in the in-app pop-up
   window.
 </p>
-<h3 id="h_01HNGBKZ1A0VRDS70VWWGR2RV0">
-  You can learn more about server nicknames in this
+<div class="book-box">
+  Learn more about server nicknames in this
   <a
     href="https://support.discord.com/hc/en-us/articles/219070107"
     target="_blank"
     rel="noopener noreferrer"
     >article</a
   >!
-</h3>
+</div>
 <p id="h_01FGCPQ21A9ZTX4702J5R99GHB">
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: Do I get custom server avatars with Nitro Classic?</strong
-    ></span
-  >
+  <strong>Q: Do I get custom server avatars with Nitro Classic?</strong>
 </p>
 <p>
   A: Nitro Classic users can still set server nicknames; however only Nitro
   users will be able to set custom server avatars.
 </p>
-<h3 id="h_01HNGBKZ1ARJ99ARFH7V96VMNQ">
-  You can learn more about Nitro and Nitro Classic in this
+<div class="book-box">
+  Learn more about Nitro and Nitro Classic in this
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
     rel="noopener noreferrer"
     >article</a
   >!
-</h3>
+</div>
 <p id="h_01FGCPWPYJGK0ABKCE70EQDPNB">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >Q: What are the size limits and accepted file types for server
-      avatars?</span
-    ></strong
+    >Q: What are the size limits and accepted file types for server
+    avatars?</strong
   >
 </p>
 <p>
@@ -559,17 +625,13 @@
   maximum file size is 8 MB.
 </p>
 <p id="h_01FGCPRK0M00FRY1P2XENK2JM2">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: Can I edit avatars after I upload them?</strong></span
-  >
+  <strong>Q: Can I edit avatars after I upload them?</strong>
 </p>
-<p>A: You can crop and center PNG, JPG, and GIF files</p>
+<p>A: You can crop, center, and rotate files after uploading them.</p>
 <p id="h_01FGCPS86FRBXS61RPP0CW4C02">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >Q: Is there a limit to the number of custom server avatars I can
-      have?</span
-    ></strong
+    >Q: Is there a limit to the number of custom server avatars I can
+    have?</strong
   >
 </p>
 <p>
@@ -577,19 +639,13 @@
   can join up to 200 servers.
 </p>
 <p id="h_01FGCPSMMDP2GNCW8005G1G9Y2">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: Can I have more than 1 avatar in a server?</strong></span
-  >
+  <strong>Q: Can I have more than 1 avatar in a server?</strong>
 </p>
 <p id="docs-internal-guid-972c3509-7fff-7354-e5fe-d2452ed62c39">
   A: At this time, you may only set 1 custom avatar per server.
 </p>
 <p id="h_01FGCPT2AGFZGEBY95Z061E4AT">
-  <strong
-    ><span class="wysiwyg-font-size-large"
-      >Q: Can I reset all my server avatars at once?</span
-    ></strong
-  >
+  <strong>Q: Can I reset all my server avatars at once?</strong>
 </p>
 <p>
   Unfortunately, there is no bulk editing option at this time. You will need to
@@ -606,11 +662,9 @@
   profile effects on the desktop/browser app.
 </p>
 <p id="h_01FGCPVDKTQHEY6ZJ8WCTMD3JE">
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: Will I get in trouble for using an inappropriate image as a server
-      avatar?</strong
-    ></span
+  <strong
+    >Q: Will I get in trouble for using an inappropriate image as a server
+    avatar?</strong
   >
 </p>
 <p>
@@ -628,14 +682,36 @@
   >.
 </p>
 <p id="h_01FGCPVPK8NH9ZT7J2TZ7SABNS">
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: Are server owners or admins able to change another server member's
-      avatar like how they can change nicknames?</strong
-    ></span
+  <strong
+    >Q: Are server owners or admins able to change another server member's
+    avatar like how they can change nicknames?</strong
   >
 </p>
 <p>
   No, server owners and/or admins do not have the ability to change a server
   member's server avatar or reset it to their primary avatar.
+</p>
+<p>
+  If you notice someone using a server avatar that violates our<a
+    href="https://discord.com/terms"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Terms of Service</a
+  >
+  or<a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Community Guidelines,</a
+  >
+  please use our<a
+    href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    report form</a
+  >
+  to report the user to our Trust and Safety team. 
 </p>
