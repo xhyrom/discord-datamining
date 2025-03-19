@@ -96,8 +96,7 @@
 <h4 id="h_01JP3374EGCSEJZC4JVHR2C42K" class="callout">
   ⚠️ Please Note: We cannot guarantee that access will be granted. However, we
   encourage you to explore these limited access features already available to
-  all developers in the Discord Social SDK that are available to everyone
-  mentioned above.
+  all developers in the Discord Social SDK mentioned above.
 </h4>
 <p>
   <strong

@@ -120,15 +120,15 @@
 <h2 id="h_01JP341J1YS4GQ813T7YA56PK3">Desktop</h2>
 <ul>
   <li>Standalone C++ (Windows and macOS)</li>
-  <li>Unreal engine (Windows Only)</li>
-  <li>Unity engine (Windows and macOS)</li>
+  <li>Unreal Engine (Windows Only)</li>
+  <li>Unity Engine (Windows and macOS)</li>
 </ul>
 <h2 id="h_01JP341J1YVCCDS17MFGCBK4Q1">
   Android/iOS (full mobile support coming soon)
 </h2>
 <ul>
   <li>Standalone C++</li>
-  <li>Unity engine</li>
+  <li>Unity Engine</li>
 </ul>
 <h2 id="h_01JP341J1YK86JW34FPVETFVAY">
   Console (full console support coming soon)
