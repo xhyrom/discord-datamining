@@ -158,7 +158,7 @@
     software, tool, agent, device or mechanism (including spiders, robots,
     crawlers or any other similar data mining tools) other than software or
     features provided to you by Discord for use expressly for such purposes; or
-    (viii) use the Discord Social SDK for benchmarking or competitive analysis
+    (vii) use the Discord Social SDK for benchmarking or competitive analysis
     with respect to competitive or related products or services, or to develop,
     commercialize, license or sell any product, service or technology that
     could, directly or indirectly, compete with the Discord Social SDK or other
