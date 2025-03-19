@@ -6502,6 +6502,7 @@
           (r.NATIVE_SHARE_SHEET_APP_CLICKED = "native_share_sheet_app_clicked"),
           (r.CHANNEL_LINK_PREVIEW_JOINED = "channel_link_preview_joined"),
           (r.CLIENT_HEARTBEAT = "client_heartbeat"),
+          (r.CLIENT_AD_HEARTBEAT = "client_ad_heartbeat"),
           (r.HEADLESS_TASK_INVOKED = "headless_task_invoked"),
           (r.HEADLESS_TASK_COMPLETED = "headless_task_completed"),
           (r.VERIFY_ACCOUNT_APP_OPENED = "verify_account_app_opened"),
@@ -6561,8 +6562,6 @@
           (r.VOICE_QUALITY_PERIODIC_STATS = "voice_quality_periodic_stats"),
           (r.AUDIO_DEVICE_MODULE_ERROR = "audio_device_module_error"),
           (r.SDP_ERROR = "sdp_error"),
-          (r.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
-            "voice_filter_limited_time_voice_selected"),
           (r.CHANNEL_SIDEBAR_VIEWED = "channel_sidebar_viewed"),
           (r.CHANNEL_SIDEBAR_RESIZED = "channel_sidebar_resized"),
           (r.MEMBER_LIST_VIEWED = "member_list_viewed"),
@@ -7997,6 +7996,9 @@
           (r.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED =
             "invite_accept_join_settings_expanded"),
           (r.INVITE_ACCEPT_DISMISSED = "invite_accept_dismissed"),
+          (r.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED =
+            "voice_filter_limited_time_voice_selected"),
+          (r.VOICE_FILTER_FEEDBACK = "voice_filter_feedback"),
           (r.VOICE_FILTER_PICKER_OPENED = "voice_filter_picker_opened"),
           (r.VOICE_FILTER_ENABLED = "voice_filter_enabled"),
           (r.VOICE_FILTER_DISABLED = "voice_filter_disabled"),
@@ -8447,6 +8449,7 @@
             f17: 128,
             f18: 129,
             f19: 130,
+            f20: 131,
             f5: 116,
             f6: 117,
             f7: 118,
@@ -8479,6 +8482,18 @@
             rewind: 177,
             play: 179,
             "fast forward": 176,
+            "^": 220,
+            "\xa7": 220,
+            "\xbd": 220,
+            plus: 192,
+            ž: 192,
+            "@": 192,
+            "|": 220,
+            "#": 222,
+            $: 222,
+            process: 229,
+            "\xb7": 229,
+            ذ: 192,
             "`": 192,
             "\\": 220,
             "'": 222,
@@ -8568,7 +8583,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-18-404488df48b9598a5f1b4c0652658961a84de1ab-discord_web",
+              "2025-03-19-b9bf6eef26c51335b5ec4227d16f017c3ac2bc33-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8634,8 +8649,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "379362"),
-            o.YA("builtAt", String("1742327743017"));
+            o.YA("buildNumber", "379642"),
+            o.YA("builtAt", String("1742368748950"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46461,4 +46476,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.98ac4cd241779da8.js.map
+//# sourceMappingURL=sentry.8ab119cf0ebe1b2d.js.map

@@ -6638,13 +6638,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .blockquoteDivider__75297 {
   background-color: var(--interactive-muted);
 }
-.visual-refresh .blockquoteContainer__75297 {
-  margin-bottom: var(--space-4);
-  margin-top: var(--space-4);
-}
-.visual-refresh .blockquoteDivider__75297 {
-  background-color: var(--spine-default);
-}
 .slateBlockquoteContainer__75297 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6659,6 +6652,17 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
+}
+.visual-refresh .blockquoteContainer__75297 {
+  margin-bottom: var(--space-4);
+  margin-top: var(--space-4);
+}
+.visual-refresh .blockquoteDivider__75297 {
+  background-color: var(--spine-default);
+}
+.visual-refresh .slateBlockquoteContainer__75297 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .background-opacity-low .markup__75297,
 .background-opacity-medium .markup__75297 {
@@ -6825,6 +6829,16 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   --__spoiler-background-color--hidden--hover: hsl(
     var(--primary-630-hsl) / 0.8
   );
+}
+.visual-refresh {
+  --__spoiler-background-color--hidden: var(--spoiler-hidden-background);
+  --__spoiler-background-color--hidden--hover: var(
+    --spoiler-hidden-background-hover
+  );
+  --__spoiler-background-color--revealed: var(--background-mod-subtle);
+}
+.visual-refresh .spoilerMarkdownContent__54ab5 {
+  transition: background-color 0.2s ease;
 }
 .enable-forced-colors.enable-forced-colors.enable-forced-colors {
   --__spoiler-background-color--hidden: ButtonFace;
@@ -8418,26 +8432,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .enable-forced-colors .videoControls_cf09d8 {
   background-color: ButtonFace;
-}
-.errorOverlay_cf09d8 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-.errorMessage_cf09d8 {
-  color: #fff;
-  text-align: center;
-  padding: 16px;
-  font-size: 14px;
-  line-height: 1.4;
-  max-width: 80%;
 }
 .wrapper__091cf {
   cursor: inherit;
@@ -15738,6 +15732,31 @@ div.modalHeader_c28af8 {
 .visual-refresh .modalFooterShopButton_ced2f2 {
   background-clip: padding-box;
 }
+.brandShine__9497e {
+  color: hsl(var(--brand-500-hsl) / 0.1) !important;
+}
+.freeTrialText__9497e {
+  text-transform: capitalize;
+}
+.upsellContainer__88422 {
+  display: flex;
+  background-color: hsl(var(--black-hsl) / 0.1);
+  border-radius: var(--radius-xs);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+.row__88422 {
+  display: flex;
+  flex-direction: row;
+}
+.upsellText__88422 {
+  margin: auto 0 auto 4px;
+}
+.button__88422 {
+  padding: 0 8px;
+}
 .headerImage__802af {
   width: 180px;
   margin-bottom: 24px;
@@ -15842,6 +15861,9 @@ div.modalHeader_c28af8 {
 }
 .loadingIndicatorWrapper_b0ba57 {
   padding: 24px 0;
+}
+.upsell_b0ba57 {
+  margin-top: 24px;
 }
 .headerImage__8da80 {
   position: absolute;
@@ -32342,16 +32364,18 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   display: inline;
 }
 .addStatusPrompt_ab8609 {
-  color: var(--text-muted);
-}
-.addStatusIcon_ab8609,
-.addStatusPrompt_ab8609 {
   display: inline;
+  color: var(--text-muted);
   vertical-align: middle;
 }
+.italicPrompt_ab8609 {
+  font-style: italic;
+}
 .addStatusIcon_ab8609 {
+  display: inline;
   margin-right: 4px;
   fill: var(--text-muted);
+  vertical-align: middle;
 }
 .outer_ab8609:hover .addStatusPrompt_ab8609 {
   color: var(--text-normal);
@@ -52608,7 +52632,7 @@ html.disable-forced-colors * {
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
   --input-placeholder-text: var(--neutral-31);
   --interactive-active: var(--neutral-1);
-  --interactive-hover: var(--neutral-15);
+  --interactive-hover: var(--neutral-1);
   --interactive-normal: var(--neutral-15);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
@@ -52627,6 +52651,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-39);
   --spine-default: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
+  --spoiler-hidden-background: var(--neutral-37);
   --text-brand: var(--blurple-25);
   --text-link: var(--blue-new-26);
   --text-muted: var(--neutral-22);
@@ -52682,6 +52707,7 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-2);
   --notice-text-positive: var(--green-new-4);
   --notice-text-warning: var(--yellow-new-1);
+  --spoiler-hidden-background-hover: var(--neutral-31);
   --text-code-addition: var(--green-new-13);
   --text-code-builtin: var(--orange-new-12);
   --text-code-bullet: var(--yellow-new-13);
@@ -52940,7 +52966,7 @@ html.disable-forced-colors * {
     );
     --interactive-hover: color-mix(
       in oklab,
-      var(--neutral-15) 100%,
+      var(--neutral-1) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --interactive-normal: color-mix(
@@ -53016,6 +53042,11 @@ html.disable-forced-colors * {
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
         var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background: color-mix(
+      in oklab,
+      var(--neutral-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -53223,6 +53254,11 @@ html.disable-forced-colors * {
       var(--yellow-new-1) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --spoiler-hidden-background-hover: color-mix(
+      in oklab,
+      var(--neutral-31) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --text-code-addition: color-mix(
       in oklab,
       var(--green-new-13) 100%,
@@ -53427,7 +53463,7 @@ html.disable-forced-colors * {
   --input-focused-border: hsl(var(--black-hsl) / 0.04);
   --input-placeholder-text: var(--neutral-44);
   --interactive-active: var(--neutral-71);
-  --interactive-hover: var(--neutral-44);
+  --interactive-hover: var(--neutral-71);
   --interactive-normal: var(--neutral-44);
   --mention-foreground: var(--blurple-71);
   --message-reacted-text: var(--blurple-75);
@@ -53440,6 +53476,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-32);
   --spine-default: hsl(var(--opacity-48-hsl) / 0.47843137254901963);
+  --spoiler-hidden-background: var(--neutral-30);
   --text-brand: var(--blurple-49);
   --text-link: var(--blue-new-49);
   --text-muted: var(--neutral-38);
@@ -53494,6 +53531,7 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-76);
   --notice-text-positive: var(--green-new-75);
   --notice-text-warning: var(--yellow-new-76);
+  --spoiler-hidden-background-hover: var(--neutral-36);
   --text-code-addition: var(--green-new-71);
   --text-code-builtin: var(--orange-new-67);
   --text-code-bullet: var(--yellow-new-67);
@@ -53722,7 +53760,7 @@ html.disable-forced-colors * {
     );
     --interactive-hover: color-mix(
       in oklab,
-      var(--neutral-44) 100%,
+      var(--neutral-71) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --interactive-normal: color-mix(
@@ -53786,6 +53824,11 @@ html.disable-forced-colors * {
       hsl(var(--opacity-48-hsl) / 0.47843137254901963) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
         var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background: color-mix(
+      in oklab,
+      var(--neutral-30) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -53975,6 +54018,11 @@ html.disable-forced-colors * {
     --notice-text-warning: color-mix(
       in oklab,
       var(--yellow-new-76) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background-hover: color-mix(
+      in oklab,
+      var(--neutral-36) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-code-addition: color-mix(
@@ -54211,7 +54259,7 @@ html.disable-forced-colors * {
   --input-border: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
   --input-placeholder-text: var(--neutral-38);
   --interactive-active: var(--neutral-7);
-  --interactive-hover: var(--neutral-27);
+  --interactive-hover: var(--neutral-7);
   --interactive-normal: var(--neutral-27);
   --mention-foreground: var(--blurple-26);
   --message-reacted-text: var(--blurple-21);
@@ -54223,6 +54271,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-45);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-46);
+  --spoiler-hidden-background: var(--neutral-45);
   --text-brand: var(--blurple-41);
   --text-link: var(--blue-new-42);
   --text-muted: var(--neutral-33);
@@ -54277,6 +54326,7 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-19);
   --notice-text-positive: var(--green-new-20);
   --notice-text-warning: var(--yellow-new-18);
+  --spoiler-hidden-background-hover: var(--neutral-39);
   --text-code-addition: var(--green-new-27);
   --text-code-builtin: var(--orange-new-26);
   --text-code-bullet: var(--yellow-new-27);
@@ -54499,7 +54549,7 @@ html.disable-forced-colors * {
     );
     --interactive-hover: color-mix(
       in oklab,
-      var(--neutral-27) 100%,
+      var(--neutral-7) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --interactive-normal: color-mix(
@@ -54556,6 +54606,11 @@ html.disable-forced-colors * {
     --scrollbar-thin-thumb: color-mix(
       in oklab,
       var(--neutral-46) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background: color-mix(
+      in oklab,
+      var(--neutral-45) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -54746,6 +54801,11 @@ html.disable-forced-colors * {
     --notice-text-warning: color-mix(
       in oklab,
       var(--yellow-new-18) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background-hover: color-mix(
+      in oklab,
+      var(--neutral-39) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-code-addition: color-mix(
@@ -54975,7 +55035,7 @@ html.disable-forced-colors * {
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
   --input-placeholder-text: var(--neutral-36);
   --interactive-active: var(--neutral-2);
-  --interactive-hover: var(--neutral-22);
+  --interactive-hover: var(--neutral-2);
   --interactive-normal: var(--neutral-22);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
@@ -54993,6 +55053,7 @@ html.disable-forced-colors * {
   --scrollbar-auto-thumb: var(--neutral-42);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
   --scrollbar-thin-thumb: var(--neutral-44);
+  --spoiler-hidden-background: var(--neutral-42);
   --text-brand: var(--blurple-35);
   --text-link: var(--blue-new-36);
   --text-muted: var(--neutral-29);
@@ -55048,6 +55109,7 @@ html.disable-forced-colors * {
   --notice-text-info: var(--blue-new-12);
   --notice-text-positive: var(--green-new-14);
   --notice-text-warning: var(--yellow-new-12);
+  --spoiler-hidden-background-hover: var(--neutral-36);
   --text-code-addition: var(--green-new-21);
   --text-code-builtin: var(--orange-new-20);
   --text-code-bullet: var(--yellow-new-21);
@@ -55300,7 +55362,7 @@ html.disable-forced-colors * {
     );
     --interactive-hover: color-mix(
       in oklab,
-      var(--neutral-22) 100%,
+      var(--neutral-2) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --interactive-normal: color-mix(
@@ -55369,6 +55431,11 @@ html.disable-forced-colors * {
     --scrollbar-thin-thumb: color-mix(
       in oklab,
       var(--neutral-44) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background: color-mix(
+      in oklab,
+      var(--neutral-42) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -55575,6 +55642,11 @@ html.disable-forced-colors * {
     --notice-text-warning: color-mix(
       in oklab,
       var(--yellow-new-12) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --spoiler-hidden-background-hover: color-mix(
+      in oklab,
+      var(--neutral-36) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-code-addition: color-mix(
@@ -57312,4 +57384,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.18e600ae879ca573.css.map*/
+/*# sourceMappingURL=12633.a1a9c7d1ab707d6f.css.map*/
