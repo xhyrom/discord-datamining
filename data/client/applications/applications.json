@@ -340,512 +340,6 @@
     ]
   },
   {
-    "id": "1070087967294631976",
-    "name": "Whiteboard",
-    "icon": "9a04eab3b9f50302006577b769354520",
-    "description": "Draw, upload images, write, and use GIFs to create virtually anything in this collaborative whiteboard. Boards are saved, so come back any time. It’s not just what you create, it’s the fun of creating it together!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "9a04eab3b9f50302006577b769354520",
-    "bot": {
-      "id": "1070087967294631976",
-      "username": "Whiteboard",
-      "global_name": null,
-      "avatar": "a57d315e721e49673f2ec1a0f89f9c03",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "6557",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "7117608cde7cd402e57f0f63fe2c9df6",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "6f5e042d9c27b4e9f48db12fafc29886288b81012fbef0aa470d2b6106490ccb",
-    "flags": 9568258,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1146495383174926457",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 2,
-          "label_until": "2023-10-24T00:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 15,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Collaborate",
-      "Productivity",
-      "Whiteboard"
-    ]
-  },
-  {
-    "id": "1007373802981822582",
-    "name": "Gartic Phone",
-    "icon": "50acfed6c7c7942849e0a9a3aca32258",
-    "description": "The Telephone Game with drawings and guesses. Have some good laughs in this party game with friends!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "7293b549efff3c5a809999d883f09202",
-    "bot": {
-      "id": "1007373802981822582",
-      "username": "Gartic Phone",
-      "global_name": null,
-      "avatar": "50acfed6c7c7942849e0a9a3aca32258",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "2033",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "6c056e2cc4dc41881eadc74762123913",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "469229972641284097",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://garticphone.com/en/terms",
-    "privacy_policy_url": "https://garticphone.com/en/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
-    "flags": 131074,
-    "max_participants": 16,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1240733893318152293",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": "2023-05-15T16:30:00+00:00",
-      "free_period_ends_at": "2023-06-16T07:00:00+00:00",
-      "client_platform_config": {
-        "web": {
-          "label_type": 2,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 2,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 2,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 2,
-      "has_csp_exception": true,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Drawing",
-      "Party",
-      "Telephone Game"
-    ]
-  },
-  {
-    "id": "1039835161136746497",
-    "name": "Color Together",
-    "icon": "c1962e3f45c660e0f9dfc84acc717f98",
-    "description": "Pick a color, and start painting in this relaxing color-by-numbers game. Color Together is a relaxed space to hang out with your friends. Together you'll return the color to the world. ",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "800aeb4c6899941eb52a743abe773a0b",
-    "bot": {
-      "id": "1039835161136746497",
-      "username": "Color Together",
-      "global_name": null,
-      "avatar": "8c2a3fcc5c888ab97e197c25a7c9eaed",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "7405",
-      "public_flags": 0,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": null,
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "1290635887528513566",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://www.fundaygames.dk/legal/color-together/terms-of-use",
-    "privacy_policy_url": "https://www.fundaygames.dk/legal/color-together/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "310fab18f3d036c66b576cdec920cb62a4d79f1e946ef40c95e447ebbb4bc8dd",
-    "flags": 131074,
-    "max_participants": 100,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1123566402528346122",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 32,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Chill",
-      "Color-by-Numbers"
-    ]
-  },
-  {
-    "id": "852509694341283871",
-    "name": "SpellCast",
-    "icon": "9a4a52c760994654a416740ae0b19fbb",
-    "description": "A word game where players search for words on a magical grid of letters. Challenge friends or play solo.",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "9a4a52c760994654a416740ae0b19fbb",
-    "bot": {
-      "id": "852509694341283871",
-      "username": "SpellCast",
-      "global_name": null,
-      "avatar": "67d8c4354947832c82497e42dbd8001c",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "9917",
-      "public_flags": 0,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": null,
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "1290948197916872744",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://frvr.com/legal#TermsofService",
-    "privacy_policy_url": "https://frvr.com/legal/#PrivacyPolicy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "3dec42617bd0e2d2f7c316330cf99eb949a168c9b93a6aee6d1525946a9c3f1a",
-    "flags": 131074,
-    "max_participants": 6,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951492843522895872",
-      "supported_platforms": [
-        "ios",
-        "android",
-        "web"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 35,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Solo",
-      "Word Game"
-    ]
-  },
-  {
-    "id": "903769130790969345",
-    "name": "Land-io",
-    "icon": "0a6b8f4795c66ba12afbc766dd920bfb",
-    "description": "Pick a character and encircle new territory. Run into trails to knock out foes - careful not to hit your own!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "0a6b8f4795c66ba12afbc766dd920bfb",
-    "bot": {
-      "id": "903769130790969345",
-      "username": "Land-io",
-      "global_name": null,
-      "avatar": "0a6b8f4795c66ba12afbc766dd920bfb",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "1692",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "83310ffc154ef7b234fe114d9edbb1f7",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "82c2ef51c10e534207dee215fd1cbffc13708f8245a2d5e1e3e233099b30403e",
-    "flags": 9568258,
-    "max_participants": 16,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "956935500910956584",
-      "supported_platforms": [
-        "ios",
-        "android",
-        "web"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": true,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 31,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Arcade",
-      "Cross-Server",
-      "IO"
-    ]
-  },
-  {
     "id": "880218394199220334",
     "name": "Watch Together",
     "icon": "ec48acbad4c32efab4275cb9f3ca3a58",
@@ -943,511 +437,6 @@
     "tags": [
       "Video Player",
       "Watch"
-    ]
-  },
-  {
-    "id": "1078728822972764312",
-    "name": "Know What I Meme",
-    "icon": "6f547114b2979b8bc83e4ba91b4d770d",
-    "description": "The feeling when memes and inside jokes become a game.",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "6f547114b2979b8bc83e4ba91b4d770d",
-    "bot": {
-      "id": "1078728822972764312",
-      "username": "Know What I Meme",
-      "global_name": null,
-      "avatar": "6f547114b2979b8bc83e4ba91b4d770d",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "4614",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "6149afd8457dcc20743680cb0f9bd895",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "864918885639ea54d153abdd48270f659456e02ca7cead6a512fe26e56002eeb",
-    "flags": 9568258,
-    "max_participants": 9,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1078738117185515581",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": true,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 30,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "GIFs",
-      "Memes",
-      "Party"
-    ]
-  },
-  {
-    "id": "947957217959759964",
-    "name": "Bobble League",
-    "icon": "b485f75e95e6486a758a4aa5db3352f4",
-    "description": "In this arcade-style soccer game use Power Plays and formations to bounce the ball into the goal, leading your team to victory! Try cross-server matchmaking to find more players to play with!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "b485f75e95e6486a758a4aa5db3352f4",
-    "bot": {
-      "id": "947957217959759964",
-      "username": "Bobble League",
-      "global_name": null,
-      "avatar": "b485f75e95e6486a758a4aa5db3352f4",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "3171",
-      "public_flags": 589825,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "59232db16360b5ed7b6a19152b63ce1f",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "35334d24152b346fa751dafbbc4d3ac14f9b6ff9501c975c75fe3072e2c8226f",
-    "flags": 1179650,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1206675158241382461",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 2,
-          "label_until": "2024-03-01T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 2,
-          "label_until": "2024-03-01T00:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 2,
-          "label_until": "2024-03-01T00:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 27,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Sports",
-      "Strategy",
-      "Team"
-    ]
-  },
-  {
-    "id": "832013003968348200",
-    "name": "Checkers In The Park",
-    "icon": "97e50fed67f44802dbb4901d74a6f9a1",
-    "description": "With boards spread across your server, jump between games as easily as you jump your opponent's pieces!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "97e50fed67f44802dbb4901d74a6f9a1",
-    "bot": {
-      "id": "832013003968348200",
-      "username": "Checkers in the Park",
-      "global_name": null,
-      "avatar": "97e50fed67f44802dbb4901d74a6f9a1",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "8198",
-      "public_flags": 589824,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "a3e5a298a5d495ccd8a1d140fa4106c0",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "f5b322fcb0baf39974eed3c04b81f590b9e584fbdf8d6189cfe07d19eaeb57f8",
-    "flags": 1179648,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1199472410844479568",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 2,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 36,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Board Game",
-      "Classic",
-      "Strategy"
-    ]
-  },
-  {
-    "id": "832012774040141894",
-    "name": "Chess In The Park",
-    "icon": "3b3981ddf67c8702920fae10b5f123ed",
-    "description": "Unleash your inner Grandmaster by playing multiple games of Chess at once vs anybody on your server.",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "3b3981ddf67c8702920fae10b5f123ed",
-    "bot": {
-      "id": "832012774040141894",
-      "username": "Chess In The Park",
-      "global_name": null,
-      "avatar": "ed9496f7ae4d60a055bf8ddc7b418bd7",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "9517",
-      "public_flags": 589824,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "dd2ccb058a3dc59eb21670fb48e35609",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "bc758e51403b1374ea262c8412b91bcdc53349a337037d10921cbf6c39bc696f",
-    "flags": 11665410,
-    "max_participants": -1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1199472403294720111",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 13,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Board Game",
-      "Classic",
-      "Strategy"
-    ]
-  },
-  {
-    "id": "832025144389533716",
-    "name": "Blazing 8s",
-    "icon": "6fe6e3dda7657b83758693205a833aa1",
-    "description": "Be the first to zero cards by swapping hands, skipping players, and reversing turns in this Crazy Eights inspired card game!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "6fe6e3dda7657b83758693205a833aa1",
-    "bot": {
-      "id": "832025144389533716",
-      "username": "Blazing 8s",
-      "global_name": null,
-      "avatar": "b1fea2d01adf092a4d086d62db5c2e3a",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "3730",
-      "public_flags": 589824,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "582891a0abba60a55de2730008177a86",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "138631e02cf2de499ebfcba54a724ddeb99957274ee9a3db967376666cffdc5e",
-    "flags": 1179650,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951327865570467880",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 25,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Card Game",
-      "Classic",
-      "Crazy Eights"
     ]
   },
   {
@@ -1554,409 +543,6 @@
       "Card Game",
       "Classic",
       "IAP"
-    ]
-  },
-  {
-    "id": "879863686565621790",
-    "name": "Letter League",
-    "icon": "0096355142a9b00bc2676ec09b9c8dbc",
-    "description": "In this turn-based word game, use letter tiles from your rack to form a word that connects to a word on the board. Each letter placed is worth points, and some squares earn double or triple points. Let your lexicon fly!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "0096355142a9b00bc2676ec09b9c8dbc",
-    "bot": {
-      "id": "879863686565621790",
-      "username": "Letter League",
-      "global_name": null,
-      "avatar": "5327102fd368e9ecc45f7fb9a73e9842",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "2243",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "581d38eacf262d0794012fac72dca502",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "c282d4b2693092a1f657cc699ddbcc26b83b7d7a1bfd0eae1697583ee04e1bef",
-    "flags": 9568258,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "951327524460310568",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 1,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 33,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Classic",
-      "Word Game"
-    ]
-  },
-  {
-    "id": "902271654783242291",
-    "name": "Sketch Heads",
-    "icon": "05f3ad2c91d157cd1a0bd8e904a3182e",
-    "description": "A drawing game where you discover that you're either bad at drawing or your friends are bad at guessing! Take turns drawing and guessing in Classic mode, or for added chaos have multiple drawers and guessers in Blitz mode!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "71de505d10dfb56dfbb895305a603635",
-    "bot": {
-      "id": "902271654783242291",
-      "username": "Sketch Heads",
-      "global_name": null,
-      "avatar": "05f3ad2c91d157cd1a0bd8e904a3182e",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "0659",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "ebaf376baafd4c9cfd90428ed3ea8dc4",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "31c42a3c9317409819db8c40cd0d6993d11b3f9c11abb2e3276c71efc02a3307",
-    "flags": 9568258,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1325917826007175383",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": true,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 18,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Creative",
-      "Drawing Game",
-      "Guessing Game"
-    ]
-  },
-  {
-    "id": "1037680572660727838",
-    "name": "Chef Showdown",
-    "icon": "b27f11b43c0ebea952aa1ce60d9c9a8e",
-    "description": "Join friends to be the best Chefs on Discord",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "61847edf739aba25c08069b7df4ff191",
-    "bot": {
-      "id": "1037680572660727838",
-      "username": "Chef Showdown",
-      "global_name": null,
-      "avatar": "37198e809dc6e1d02c979f33e6d6a285",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "4167",
-      "public_flags": 65536,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "0ace7fe3d4ed318beffa772c3fff19d7",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "1051879185850835015",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://mojiworks.com/privacy-policy",
-    "privacy_policy_url": "https://mojiworks.com/privacy-policy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
-    "flags": 131082,
-    "max_participants": 15,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1156987260890259467",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 2,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": true,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 26,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Co-op",
-      "Competitive",
-      "Cooking"
-    ]
-  },
-  {
-    "id": "945737671223947305",
-    "name": "Putt Party",
-    "icon": "12ee915c2f75d7f2c7d551819534f158",
-    "description": "Perfect your putts in this pumped-up version of a mini golf game. Use over 20 different power-ups to help you or throw off your opponents. The least amount of putts used will win the game. Try tournament mode for an extra challenge!",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": true,
-    "cover_image": "95c64853134eb048670d9cfbbe92853b",
-    "bot": {
-      "id": "945737671223947305",
-      "username": "Putt Party",
-      "global_name": null,
-      "avatar": "12ee915c2f75d7f2c7d551819534f158",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "4538",
-      "public_flags": 589824,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "86248258a5e74a134126def9e8d44a63",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "62c87eb718eb2c06232b2e7b1e14d8a63ca76add1a00c290e8e09669e5aed916",
-    "flags": 1179650,
-    "max_participants": 8,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1217242587786645514",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 3,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        }
-      },
-      "shelf_rank": 14,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "Arcade",
-      "Mini golf"
     ]
   },
   {
@@ -2239,6 +825,108 @@
     ]
   },
   {
+    "id": "1037680572660727838",
+    "name": "Chef Showdown",
+    "icon": "b27f11b43c0ebea952aa1ce60d9c9a8e",
+    "description": "Join friends to be the best Chefs on Discord",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "61847edf739aba25c08069b7df4ff191",
+    "bot": {
+      "id": "1037680572660727838",
+      "username": "Chef Showdown",
+      "global_name": null,
+      "avatar": "37198e809dc6e1d02c979f33e6d6a285",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4167",
+      "public_flags": 65536,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "0ace7fe3d4ed318beffa772c3fff19d7",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1051879185850835015",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://mojiworks.com/privacy-policy",
+    "privacy_policy_url": "https://mojiworks.com/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
+    "flags": 131082,
+    "max_participants": 15,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1156987260890259467",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 2,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": true,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 26,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "Co-op",
+      "Competitive",
+      "Cooking"
+    ]
+  },
+  {
     "id": "235088799074484224",
     "name": "Rythm",
     "icon": "8bbffb0f3547424baf6798ecf632831e",
@@ -2275,8 +963,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2048"
     },
@@ -2284,8 +972,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2048"
         }
@@ -2341,6 +1029,108 @@
       "Music",
       "Rythm",
       "Together"
+    ]
+  },
+  {
+    "id": "1007373802981822582",
+    "name": "Gartic Phone",
+    "icon": "50acfed6c7c7942849e0a9a3aca32258",
+    "description": "The Telephone Game with drawings and guesses. Have some good laughs in this party game with friends!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": true,
+    "cover_image": "7293b549efff3c5a809999d883f09202",
+    "bot": {
+      "id": "1007373802981822582",
+      "username": "Gartic Phone",
+      "global_name": null,
+      "avatar": "50acfed6c7c7942849e0a9a3aca32258",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2033",
+      "public_flags": 65536,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "6c056e2cc4dc41881eadc74762123913",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "469229972641284097",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://garticphone.com/en/terms",
+    "privacy_policy_url": "https://garticphone.com/en/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
+    "flags": 131074,
+    "max_participants": 16,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1240733893318152293",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": "2023-05-15T16:30:00+00:00",
+      "free_period_ends_at": "2023-06-16T07:00:00+00:00",
+      "client_platform_config": {
+        "web": {
+          "label_type": 2,
+          "label_until": "2024-05-24T23:30:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 2,
+          "label_until": "2024-05-24T23:30:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 2,
+          "label_until": "2024-05-24T23:30:00+00:00",
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 2,
+      "has_csp_exception": true,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "Drawing",
+      "Party",
+      "Telephone Game"
     ]
   },
   {
@@ -3393,6 +2183,108 @@
       "FPS",
       "Shooter",
       "Speedrun"
+    ]
+  },
+  {
+    "id": "1211781489931452447",
+    "name": "Wordle",
+    "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
+    "description": "Enjoy Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": false,
+    "cover_image": "866e3bb1398f00f83f86c7b0bd667521",
+    "bot": {
+      "id": "1211781489931452447",
+      "username": "Wordle",
+      "global_name": null,
+      "avatar": "2b5cd2dc89eb963155f55520a6fa0495",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2092",
+      "public_flags": 589825,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": "366c0ce8c1b767440bff897a824854d0",
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "1278783719708164118",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://discord.com/terms",
+    "privacy_policy_url": "https://discord.com/privacy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "79c638c31d8c9f5da835e25cc077c911aa9458e41c5b39e9afe40c3c7377cb27",
+    "flags": 11665410,
+    "max_participants": null,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1334610713074864221",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 2,
+      "tablet_default_orientation_lock_state": 1,
+      "requires_age_gate": false,
+      "legacy_responsive_aspect_ratio": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "soft_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "soft_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "soft_launch"
+        }
+      },
+      "shelf_rank": 49,
+      "has_csp_exception": false,
+      "displays_advertisements": false
+    },
+    "tags": [
+      "New York Times",
+      "Official Wordle",
+      "Word game"
     ]
   },
   {
@@ -6023,6 +4915,11 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
+        "os": "darwin",
+        "name": "roblox.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "robloxplayerbeta.exe",
         "is_launcher": false
@@ -6030,11 +4927,6 @@
       {
         "os": "win32",
         "name": "roblox.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "roblox.app",
         "is_launcher": false
       }
     ],
@@ -6094,14 +4986,14 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
       },
       {
         "os": "win32",
@@ -6109,8 +5001,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -6119,8 +5011,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -6277,13 +5169,13 @@
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -6309,6 +5201,11 @@
     "primary_sku_id": "491748506516717599",
     "third_party_skus": [
       {
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
+      },
+      {
         "id": "3240220",
         "sku": "3240220",
         "distributor": "steam"
@@ -6317,11 +5214,6 @@
         "id": "491748506516717599",
         "sku": "491748506516717599",
         "distributor": "discord"
-      },
-      {
-        "id": "271590",
-        "sku": "271590",
-        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -6335,31 +5227,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v enhanced/gta5_enhanced_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_dumpserver",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "grand theft auto v/fivem.exe",
         "is_launcher": false
       },
@@ -6370,12 +5237,12 @@
       },
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
+        "name": "grand theft auto v/gta5_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5.exe",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       },
       {
@@ -6386,6 +5253,31 @@
       {
         "os": "win32",
         "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_dumpserver",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
         "is_launcher": false
       }
     ],
@@ -6409,14 +5301,14 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "Pro",
-        "sku": "Pro",
-        "distributor": "battlenet"
-      },
-      {
         "id": "2357570",
         "sku": "2357570",
         "distributor": "steam"
+      },
+      {
+        "id": "Pro",
+        "sku": "Pro",
+        "distributor": "battlenet"
       },
       {
         "id": "125174",
@@ -6467,11 +5359,6 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "win32",
-        "name": "dota2.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "dota_osx.app",
         "is_launcher": false
@@ -6479,6 +5366,11 @@
       {
         "os": "darwin",
         "name": "osx64/dota2.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       }
     ],
@@ -6516,12 +5408,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       }
     ],
@@ -6578,12 +5470,12 @@
       },
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
+        "name": "cod23/cod23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cod23/cod23-cod.exe",
+        "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -6625,12 +5517,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tslgame_be.exe",
+        "name": "win64/tslgame_be.exe",
         "is_launcher": false
       },
       {
@@ -6640,12 +5527,17 @@
       },
       {
         "os": "win32",
-        "name": "win64/tslgame_be.exe",
+        "name": "tslgame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tslgame.exe",
+        "name": "win64/tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       }
     ],
@@ -6686,17 +5578,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apex legends/r5apex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "apex/r5apex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "apex/r5apex_dx12.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex legends/r5apex.exe",
         "is_launcher": false
       }
     ],
@@ -6784,14 +5676,14 @@
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
       {
-        "id": "359550",
-        "sku": "359550",
-        "distributor": "steam"
-      },
-      {
         "id": "635",
         "sku": "635",
         "distributor": "uplay"
+      },
+      {
+        "id": "359550",
+        "sku": "359550",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -6810,17 +5702,17 @@
       },
       {
         "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "rainbowsixgame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "rainbowsix_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -7020,6 +5912,11 @@
     ],
     "executables": [
       {
+        "os": "win32",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "the sims 4.app",
         "is_launcher": false
@@ -7027,11 +5924,6 @@
       {
         "os": "win32",
         "name": "ts4_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4_dx9_x64.exe",
         "is_launcher": false
       },
       {
@@ -7222,12 +6114,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -7269,13 +6161,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rust.exe",
-        "is_launcher": true
+        "name": "rust/rustclient.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rust/rustclient.exe",
-        "is_launcher": false
+        "name": "rust.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -7303,13 +6195,13 @@
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       }
     ],
@@ -7322,27 +6214,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_beta_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "world of warcraft.app",
         "is_launcher": false
       },
       {
@@ -7352,7 +6224,27 @@
       },
       {
         "os": "win32",
+        "name": "_retail_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "world of warcraft.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       }
     ],
@@ -7613,12 +6505,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "stardew valley/stardew valley.exe",
+        "name": "stardew valley.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "stardew valley.exe",
+        "name": "stardew valley/stardew valley.exe",
         "is_launcher": false
       }
     ],
@@ -7831,17 +6723,17 @@
       },
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "among us/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "among us - copy/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       }
     ],
@@ -7882,13 +6774,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "terraria.exe",
+        "os": "darwin",
+        "name": "terraria.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "terraria.app",
+        "os": "win32",
+        "name": "terraria.exe",
         "is_launcher": false
       },
       {
@@ -7917,14 +6809,14 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "960090",
-        "sku": "960090",
-        "distributor": "steam"
-      },
-      {
         "id": "com.ninjakiwi.bloonstd6",
         "sku": "com.ninjakiwi.bloonstd6",
         "distributor": "google_play"
+      },
+      {
+        "id": "960090",
+        "sku": "960090",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -7934,7 +6826,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       },
       {
@@ -7944,7 +6836,7 @@
       },
       {
         "os": "win32",
-        "name": "bloonstd6/bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
@@ -8063,13 +6955,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "left4dead2.exe",
+        "name": "left 4 dead 2/left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "left 4 dead 2/left4dead2.exe",
+        "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -8157,12 +7049,6 @@
     "guild_id": "565105920414318602",
     "executables": [
       {
-        "os": "win32",
-        "name": "hl2.exe",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": ">hl2_osx",
         "arguments": "-game garrysmod",
@@ -8171,6 +7057,12 @@
       {
         "os": "win32",
         "name": ">hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -8316,8 +7208,8 @@
     "guild_id": "118778495085182976",
     "executables": [
       {
-        "os": "darwin",
-        "name": "brawlhalla.app",
+        "os": "win32",
+        "name": "brawlhalla.exe",
         "is_launcher": false
       },
       {
@@ -8326,8 +7218,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "brawlhalla.exe",
+        "os": "darwin",
+        "name": "brawlhalla.app",
         "is_launcher": false
       }
     ],
@@ -8353,12 +7245,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "gta-sa.exe",
+        "name": "gta_sa.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "gta_sa.exe",
+        "name": "gta-sa.exe",
         "is_launcher": false
       }
     ],
@@ -8469,12 +7361,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       }
     ],
@@ -8500,14 +7392,14 @@
     "primary_sku_id": "494959992483348480",
     "third_party_skus": [
       {
-        "id": "230410",
-        "sku": "230410",
-        "distributor": "steam"
-      },
-      {
         "id": "494959992483348480",
         "sku": "494959992483348480",
         "distributor": "discord"
+      },
+      {
+        "id": "230410",
+        "sku": "230410",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -8536,12 +7428,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "warframe.exe",
+        "name": "warframe.x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warframe.x64.exe",
+        "name": "warframe.exe",
         "is_launcher": false
       }
     ],
@@ -8578,12 +7470,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -8607,14 +7499,14 @@
     "splash": "6eb27b0dcff2889ab250106a8035fde4",
     "third_party_skus": [
       {
-        "id": "238960",
-        "sku": "238960",
-        "distributor": "steam"
-      },
-      {
         "id": "1911",
         "sku": "1911",
         "distributor": "igdb"
+      },
+      {
+        "id": "238960",
+        "sku": "238960",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -8624,16 +7516,6 @@
     ],
     "guild_id": "174993814845521922",
     "executables": [
-      {
-        "os": "win32",
-        "name": "path of exile/pathofexilesteam.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "流亡黯道/pathofexilesteam.exe",
-        "is_launcher": false
-      },
       {
         "os": "win32",
         "name": "path of exile taiwan/pathofexile.exe",
@@ -8646,7 +7528,7 @@
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile.exe",
+        "name": "path of exile/pathofexilesteam.exe",
         "is_launcher": false
       },
       {
@@ -8661,7 +7543,17 @@
       },
       {
         "os": "win32",
+        "name": "path of exile/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "pathofexile/pathofexileegs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "流亡黯道/pathofexilesteam.exe",
         "is_launcher": false
       }
     ],
@@ -8980,22 +7872,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
+        "name": "tmodloader/tmodloader.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "tmodloader/tmodloader64bit.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       }
     ],
@@ -9031,13 +7923,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -9061,14 +7953,14 @@
     "splash": "c99384f8b68bf43672bdb79d0a3833ea",
     "third_party_skus": [
       {
-        "id": "39210",
-        "sku": "39210",
-        "distributor": "steam"
-      },
-      {
         "id": "386",
         "sku": "386",
         "distributor": "igdb"
+      },
+      {
+        "id": "39210",
+        "sku": "39210",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -9078,6 +7970,11 @@
       "FINAL FANTASY XIV - A Realm Reborn"
     ],
     "executables": [
+      {
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
+        "is_launcher": false
+      },
       {
         "os": "win32",
         "name": "boot/ffxivboot.exe",
@@ -9091,11 +7988,6 @@
       {
         "os": "win32",
         "name": "ffxiv_dx11.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "final fantasy xiv.app",
         "is_launcher": false
       }
     ],
@@ -9130,7 +8022,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "assettocorsa/acshowroom.exe",
+        "name": "assettocorsa.exe",
         "is_launcher": false
       },
       {
@@ -9155,12 +8047,12 @@
       },
       {
         "os": "win32",
-        "name": "server/acservermanager.exe",
+        "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "assettocorsa.exe",
+        "name": "server/acservermanager.exe",
         "is_launcher": false
       }
     ],
@@ -9324,14 +8216,14 @@
     "splash": "2d646423539ce9fa89f06a5c1ae8cfcc",
     "third_party_skus": [
       {
-        "id": "25657",
-        "sku": "25657",
-        "distributor": "igdb"
-      },
-      {
         "id": "1085660",
         "sku": "1085660",
         "distributor": "steam"
+      },
+      {
+        "id": "25657",
+        "sku": "25657",
+        "distributor": "igdb"
       }
     ],
     "hook": true,
@@ -9693,17 +8585,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "dayz.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "dayz_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dayz.exe",
         "is_launcher": false
       }
     ],
@@ -9822,12 +8714,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win_x64/huntgame.exe",
+        "name": "hunt showdown/hunt.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hunt showdown/hunt.exe",
+        "name": "win_x64/huntgame.exe",
         "is_launcher": false
       }
     ],
@@ -9988,8 +8880,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       },
       {
@@ -9998,13 +8890,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
+        "os": "win32",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       },
       {
@@ -10467,7 +9359,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/shootergame_be.exe",
+        "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
@@ -10477,12 +9374,7 @@
       },
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "shootergame.exe",
+        "name": "win64/shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -10568,12 +9460,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       }
     ],
@@ -10889,8 +9781,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "469887038"
     },
@@ -11043,8 +9935,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -11096,8 +9988,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -11151,8 +10043,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -11160,8 +10052,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -11197,12 +10089,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -11212,17 +10104,17 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -11272,12 +10164,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -11287,17 +10179,17 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -11343,8 +10235,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147601472"
     },
@@ -11352,8 +10244,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2147601472"
         }
@@ -11389,14 +10281,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "262186",
-        "sku": "262186",
-        "distributor": "igdb"
-      },
-      {
         "id": "2507950",
         "sku": "2507950",
         "distributor": "steam"
+      },
+      {
+        "id": "262186",
+        "sku": "262186",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -11423,12 +10315,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -11438,12 +10325,17 @@
       },
       {
         "os": "win32",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -11503,13 +10395,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -11648,7 +10540,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -11657,8 +10549,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -11668,12 +10560,12 @@
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
