@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_user_profile_editing_holdout_h1",
+    "label": "User Profile Editing Holdout Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Is in Holdout"
+    ],
+    "hash": 2513794464,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

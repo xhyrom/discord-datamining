@@ -1008,6 +1008,8 @@ id,hash,label
 2025-03_test_tile_existing_users,3685207000,Test Tile Existing Users Experiment
 2025-03_test_tile_new_users,1710485888,Test Tile New Users Experiment
 2025-03_toggle_camera_keybind,4285324985,Toggle Camera Keybind
+2025-03_user_profile_awareness_and_engagement_holdout_h1,2305128728,User Profile Awareness and Engagement Holdout Experiment
+2025-03_user_profile_editing_holdout_h1,2513794464,User Profile Editing Holdout Experiment
 2025-03_video_occlusion_stat_tracking,870963564,Video Occlusion Stat Tracking Debug
 2025-05_mobile_video_quest_rollout,1681313735,Quests: Mobile Video Quest
 2025-1_call_settings,2418862162,Simplified Call Settings Experiment
