@@ -8583,7 +8583,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2add38f3b47e37b7e6dfc11063b8bc6ab5a448b5",
+            release: "discord_web-eb7dac0a251382478c4b540c0537563361fc76bf",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8649,8 +8649,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "380374"),
-            o.YA("builtAt", String("1742493920392"));
+            o.YA("buildNumber", "380387"),
+            o.YA("builtAt", String("1742494955981"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22324,6 +22324,8 @@
             (r[(r.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION = 54)] =
               "GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION"),
             (r[(r.HD_STREAMING_UPGRADED = 55)] = "HD_STREAMING_UPGRADED"),
+            (r[(r.CHAT_WALLPAPER_SET = 56)] = "CHAT_WALLPAPER_SET"),
+            (r[(r.CHAT_WALLPAPER_REMOVED = 57)] = "CHAT_WALLPAPER_REMOVED"),
             r);
       },
       149765: function (t, e, a) {
@@ -46476,4 +46478,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.04a576c6be8dc7c8.js.map
+//# sourceMappingURL=sentry.bfdc09ad6aeda40d.js.map
