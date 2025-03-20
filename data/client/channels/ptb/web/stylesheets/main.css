@@ -1533,6 +1533,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .keyboard-mode .simpleFocused_cc5dd2 {
   box-shadow: 0 0 0 4px var(--blue-345);
 }
+.visual-refresh.keyboard-mode .focusStroke_cc5dd2 {
+  fill: transparent;
+}
 .hiddenVisually__27f77,
 .showOnFocus__27f77:not(:focus-within) {
   clip: rect(0 0 0 0);
@@ -2409,6 +2412,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .checkboxWrapper_f525d3.row_f525d3:active:not(.checked_f525d3) {
   background-color: var(--background-modifier-active);
   color: var(--interactive-active);
+}
+.checkboxWrapper_f525d3.row_f525d3 .inputDefault_f525d3 {
+  top: 10px;
+  left: 10px;
 }
 .checkboxWrapperDisabled_f525d3 {
   opacity: 0.6;
@@ -14014,10 +14021,6 @@ div.modalHeader_c28af8 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.orbIconContainer__85200 {
-  position: relative;
-  height: 18px;
-}
 .orbIconSVG__85200 {
   height: 18px;
 }
@@ -21871,6 +21874,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 :where(.visual-refresh-chat-input) .channelTextArea__74017:focus-within {
   border-color: var(--border-subtle);
 }
+.visual-refresh .channelTextArea__74017 {
+  transition: border-color 0.2s ease;
+}
+.visual-refresh .channelTextArea__74017:focus-within {
+  border-color: var(--border-subtle);
+}
 .visual-refresh-chat-input .themedBackground__74017 {
   background: none;
 }
@@ -21992,7 +22001,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-left: -16px;
 }
 .visual-refresh .attachButton__74017 {
-  margin-left: -14px;
+  margin-left: calc(var(--space-xs) * -1 + var(--space-6) * -1);
 }
 .visual-refresh-chat-input .attachButton__74017 {
   margin-left: 0;
@@ -30060,9 +30069,10 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .orbHeaderWithSpacing_f240e3 {
   margin-bottom: 12px;
 }
-.orbLink_f240e3 {
+.orbSubtext_f240e3 {
   margin-top: 10px;
-  color: var(--text-link);
+  margin-bottom: 4px;
+  color: var(--text-muted);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -57384,4 +57394,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a1a9c7d1ab707d6f.css.map*/
+/*# sourceMappingURL=12633.b8a99a38de6732ae.css.map*/
