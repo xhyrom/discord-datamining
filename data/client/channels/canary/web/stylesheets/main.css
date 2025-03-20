@@ -15632,12 +15632,6 @@ div.modalHeader_c28af8 {
   width: 24px;
   margin-bottom: 4px;
 }
-.notAllowedIcon_dfa67d {
-  transform: rotate(90deg);
-}
-.show-redesigned-icons .notAllowedIcon_dfa67d {
-  transform: none;
-}
 .shopIcon_dfa67d {
 }
 .presetDecorationImg_dfa67d {
@@ -15702,10 +15696,7 @@ div.modalHeader_c28af8 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-}
-.show-redesigned-icons .newBadgeText_dfa67d {
-  gap: var(--spacing-4);
+  gap: var(--space-4);
 }
 .spinner_ced2f2 {
   margin: 8px;
@@ -22470,13 +22461,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .sendIcon_aa63ab {
   width: 20px !important;
   height: 20px !important;
-}
-.sendIcon_aa63ab {
-  padding-top: 2px;
-}
-.show-redesigned-icons .sendIcon_aa63ab {
-  padding-top: 0;
-  padding-top: initial;
 }
 .innerButton_aa63ab {
   padding: 4px;
@@ -34963,13 +34947,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   margin-left: 8px;
 }
 .caret_c1e9c4 {
-  width: 10px;
-  height: 10px;
-  color: var(--text-muted);
-}
-.show-redesigned-icons .caret_c1e9c4 {
   width: 16px;
   height: 16px;
+  color: var(--text-muted);
 }
 .disabled_c1e9c4 {
   cursor: pointer;
@@ -35134,7 +35114,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   margin: 8px;
   border-bottom-color: var(--border-subtle);
 }
-:where(.visual-refresh).show-redesigned-icons .caret_c1e9c4,
+:where(.visual-refresh) .caret_c1e9c4,
 :where(.visual-refresh) svg.radioIcon_c1e9c4 {
   width: 20px;
   height: 20px;
@@ -57437,4 +57417,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.39cc912097ebf7c1.css.map*/
+/*# sourceMappingURL=12633.3eecfc5819655b75.css.map*/
