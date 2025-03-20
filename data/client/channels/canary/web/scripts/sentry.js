@@ -6297,6 +6297,7 @@
             DESIGN_SYSTEMS: "Design System",
             DESIGN_SYSTEMS_COLORS: "Design System",
             INTL_TESTING: "Intl Testing",
+            ANIMATION_TESTING: "Design System",
             OVERVIEW: "Overview",
             BROWSER: "Browser",
             CHANGE_LOG: "Change Log",
@@ -8582,7 +8583,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-40da6a8b1db61b71aff7b473cafe1f68bf07cc49",
+            release: "discord_web-0407fea102f6c9a8bd30352c965d5c64b61415b6",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8648,8 +8649,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "380281"),
-            o.YA("builtAt", String("1742486300290"));
+            o.YA("buildNumber", "380297"),
+            o.YA("builtAt", String("1742487569249"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46475,4 +46476,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b1aa944756416def.js.map
+//# sourceMappingURL=sentry.a70dcc18cee1ad82.js.map

@@ -41513,6 +41513,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   align-items: center;
   text-align: center;
 }
+.coachmarkHeaderTextContainer_f86e69 {
+  padding-left: var(--spacing-24);
+  padding-right: var(--spacing-24);
+}
 .coachmarkCloseIcon_f86e69 {
   position: absolute;
   right: 0;
@@ -41543,8 +41547,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.wallpaper_f86e69,
-.wallpaperRemoveSelection_f86e69 {
+.wallpaper_f86e69 {
   width: 88px;
   height: 88px;
   border-radius: 12px;
@@ -41552,16 +41555,30 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   position: relative;
   cursor: pointer;
 }
+.wallpaperSelectionClickableContainer_f86e69 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wallpaperRemoveSelection_f86e69 {
+  width: 88px;
+  height: 88px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
   background-color: var(--background-tertiary);
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 .wallpaperSelected_f86e69 {
-  border: 1.88px solid var(--brand-500);
+  position: relative;
 }
-.wallpaper_f86e69:after {
+.wallpaper_f86e69:after,
+.wallpaperRemoveSelection_f86e69:after {
   content: "";
   position: absolute;
   top: 0;
@@ -41572,6 +41589,15 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   box-sizing: border-box;
   pointer-events: none;
   z-index: 1;
+  border-radius: 12px;
+}
+.wallpaper_f86e69:hover:after {
+  border-width: 2px;
+}
+.wallpaper_f86e69.wallpaperSelected_f86e69:after,
+.wallpaperRemoveSelection_f86e69.wallpaperSelected_f86e69:after {
+  border: 2px solid var(--brand-500);
+  z-index: 2;
 }
 .wallpaperImage_f86e69 {
   width: 100%;
@@ -41593,6 +41619,19 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   box-sizing: border-box;
   overflow: hidden;
   padding: var(--spacing-16);
+}
+.nonTier2FooterText_f86e69 {
+  margin-right: var(--spacing-16);
+  flex: 1;
+  min-width: 0;
+}
+.getNitroButton_f86e69 {
+  height: 40px;
+  flex-shrink: 0;
+}
+.getNitroButtonText_f86e69 {
+  font-size: 14px;
+  font-weight: 500;
 }
 [data-popout-root],
 html {
@@ -57394,4 +57433,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b8a99a38de6732ae.css.map*/
+/*# sourceMappingURL=12633.1cbce2b655842457.css.map*/
