@@ -989,6 +989,7 @@ id,hash,label
 2025-03_activity_controller_icon,1748590261,Activities Icon - Desktop
 2025-03_activity_privacy_per_guild_settings,2020090831,Show per-guild activity privacy settings
 2025-03_activity_sharing_popout_with_invisibility,2004988961,Activity Sharing Popout with Invisibility
+2025-03_afk_timeout_default_experiment,669195029,Afk timeout defaults
 2025-03_custom_status_prompts,2421730155,Custom Status Prompts Experiment
 2025-03_desktop_deeplinks,3176811877,Desktop Deeplinks
 2025-03_desktop_refresh_compact_mode,2412295181,Desktop Refresh Compact Mode

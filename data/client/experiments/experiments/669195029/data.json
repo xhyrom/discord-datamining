@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_afk_timeout_default_experiment",
+    "label": "Afk timeout defaults",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new defaults"
+    ],
+    "hash": 669195029,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
