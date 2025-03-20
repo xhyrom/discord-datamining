@@ -24490,6 +24490,10 @@ html:not(.visual-refresh) .root_e5f3a9 {
     opacity: 0.6;
   }
 }
+.body_af4c15 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .body_d31d57 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -57433,4 +57437,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1cbce2b655842457.css.map*/
+/*# sourceMappingURL=12633.39cc912097ebf7c1.css.map*/
