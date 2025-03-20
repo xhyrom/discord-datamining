@@ -1,4 +1,3 @@
-<p> </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/16313642172183"
@@ -331,6 +330,7 @@
   <span
     id="docs-internal-guid-f90a2c40-7fff-61de-ef96-145e0dad233b"
     style="color: #434343"
+    data-darkreader-inline-color=""
     >We’re currently experimenting with the Discord Game Overlay! If you are
     using the overlay while playing Baldur’s Gate 3, Roblox, or Counter-Strike 2
     and you’re experiencing issues, try changing your game display settings to
