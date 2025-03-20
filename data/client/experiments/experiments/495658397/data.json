@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_settings_authorized_apps_redesign",
+    "label": "Settings Authorized Apps Redesign",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable user to see authorized apps settings redesign"
+    ],
+    "hash": 495658397,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
