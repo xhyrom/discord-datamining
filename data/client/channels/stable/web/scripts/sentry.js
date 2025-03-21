@@ -6297,6 +6297,7 @@
             DESIGN_SYSTEMS: "Design System",
             DESIGN_SYSTEMS_COLORS: "Design System",
             INTL_TESTING: "Intl Testing",
+            ANIMATION_TESTING: "Design System",
             OVERVIEW: "Overview",
             BROWSER: "Browser",
             CHANGE_LOG: "Change Log",
@@ -6319,6 +6320,7 @@
             CONNECTIONS_XBOX: "Connections Xbox",
             AUTHORIZED_APPS: "Authorized Apps",
             AUTHORIZED_APP: "Authorized App",
+            AUTHORIZED_APP_PERMISSIONS: "Authorized App Permissions",
             TEXT: "Text & Images",
             VOICE: "Voice & Video",
             PRIVACY_AND_SAFETY: "Privacy & Safety",
@@ -8583,7 +8585,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-20-5b4e5ed2c9cbb2d7217a831560211237a8797e79-discord_web",
+              "2025-03-21-2d43ef5f5b6b5935bd9572d6ff9fdada9c4326cc-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8649,8 +8651,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "380213"),
-            o.YA("builtAt", String("1742455148747"));
+            o.YA("buildNumber", "380730"),
+            o.YA("builtAt", String("1742572288761"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22324,6 +22326,8 @@
             (r[(r.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION = 54)] =
               "GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION"),
             (r[(r.HD_STREAMING_UPGRADED = 55)] = "HD_STREAMING_UPGRADED"),
+            (r[(r.CHAT_WALLPAPER_SET = 56)] = "CHAT_WALLPAPER_SET"),
+            (r[(r.CHAT_WALLPAPER_REMOVED = 57)] = "CHAT_WALLPAPER_REMOVED"),
             r);
       },
       149765: function (t, e, a) {
@@ -46476,4 +46480,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.673c05b71b81a6be.js.map
+//# sourceMappingURL=sentry.add067d102ccd829.js.map
