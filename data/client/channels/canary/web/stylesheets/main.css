@@ -18615,6 +18615,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .newlyAddedHighlightContainer_fc7141 .emojiListRow_fc7141 {
   padding-left: 0;
 }
+.visual-refresh .emojiListRow_fc7141 li {
+  overflow: hidden;
+}
 .topEmojiSectionContainer_fc7141 {
   display: flex;
   flex-direction: row;
@@ -57420,4 +57423,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0a176ff636b37931.css.map*/
+/*# sourceMappingURL=12633.f6f714f348751852.css.map*/
