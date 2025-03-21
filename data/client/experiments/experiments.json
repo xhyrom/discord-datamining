@@ -9921,19 +9921,7 @@
             "1": {
               "rollout": [
                 {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 1100,
-                  "end": 2000
-                },
-                {
-                  "start": 3500,
-                  "end": 5000
-                },
-                {
-                  "start": 7500,
+                  "start": 0,
                   "end": 10000
                 }
               ]
@@ -9942,7 +9930,7 @@
           "filters": []
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "overrides": {},
       "overrides_formatted": [
         {
