@@ -37380,7 +37380,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   margin: 0 2px;
 }
 .visual-refresh .caret__9293f {
-  color: var(--background-mod-strong);
+  color: var(--icon-tertiary);
 }
 .scrollable__9293f {
   overflow: auto;
@@ -57431,4 +57431,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c613830ccf045b29.css.map*/
+/*# sourceMappingURL=12633.b2c6198638b44bec.css.map*/
