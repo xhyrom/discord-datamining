@@ -29005,6 +29005,18 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: 80px;
   height: 80px;
 }
+.externalProductWrapper__320c6 {
+  width: 100%;
+  height: 252px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.orbProfileBadgeAsset__320c6 {
+  height: 152px;
+}
 .profileEffectContainer__0b5ea {
   position: relative;
   width: 42px;
@@ -29030,6 +29042,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .nameplateContainer__0b5ea {
   position: relative;
+}
+.externalProductAsset__0b5ea {
+  height: 42px;
 }
 .collectiblePreview_a56a22 {
   display: flex;
@@ -29447,18 +29462,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .banner__9ed41 {
   width: 100%;
   height: 100%;
-}
-.externalProductWrapper__320c6 {
-  width: 100%;
-  height: 252px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.orbProfileBadgeAsset__320c6 {
-  height: 152px;
 }
 .fadeInAvatarImg_d71c71 {
   animation: fadeIn_d71c71 1.5s;
@@ -57417,4 +57420,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.870abe1fb023efac.css.map*/
+/*# sourceMappingURL=12633.0a176ff636b37931.css.map*/
