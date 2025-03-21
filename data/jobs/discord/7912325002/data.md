@@ -1,6 +1,6 @@
 # Job Listing
 
-## Floating Administrative Business Partner (Contract)
+## Floating Administrative Business Partner
 
 **Location:** San Francisco, CA
 
@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7912325002](https://discord.com/jobs/7912325002)
 
-**Updated At:** Thu, 20 Mar 2025 23:21:18 GMT
+**Updated At:** Fri, 21 Mar 2025 16:08:08 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.What You'll Be Doing
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is temporary and US based only.
+What You'll Be Doing
 As a Floating Administrative Business Partner, you will serve as a strategic and tactical partner to a rotation of leaders covering for upcoming parental leaves. This role requires adaptability, strong organizational skills, and the ability to seamlessly integrate into various teams, ensuring continuity and efficiency in leadership support.
 
 Act as a trusted business partner,&amp;nbsp;quickly adapting to the needs of different leaders and teams.
@@ -39,7 +40,7 @@ Proficiency in G-Suite, particularly Google Calendar and Gmail.
 3+ year(s) of administrative support experience, particularly supporting VP+ level roles.
 Experience with Asana or Notion (or similar project management tools).
 
-The US base salary for this temporary full-time position is $132,000/year and will be prorated based on amount of time served. The contract duration will be approximately 28 weeks, concluding on Friday, October 31st.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The US base salary for this temporary full-time position is $132,000/year and will be prorated based on the amount of time served. This position is anticipated to go no later than October 31, 2025, subject to business needs, and is an at-will role.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
