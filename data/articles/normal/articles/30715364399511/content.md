@@ -15,28 +15,31 @@
   right community members or can show what your friend group is all about. Let’s
   explore how to make yours stand out!
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li><a href="#h_01JPQPRCDSRSTM16KKC2D06ZVR">What are Server Profiles?</a></li>
-  <li>
-    <a href="#h_01JPQPRCDSTXK41VF3DQ8ESFH3"
-      >How to Customize a Server Profile</a
-    >
-    <ul>
-      <li><a href="#h_01JPQPRCDSPXZW1P0SGW23PBBM">Name</a></li>
-      <li><a href="#h_01JPQPRCDSDX0HFKN7YC184FVV">Icon</a></li>
-      <li><a href="#h_01JPQPRCDS97D73MH802HP0KX0">Banner</a></li>
-      <li><a href="#h_01JPQPRCDTTZ8JSM0JGMQA1RX2">Traits</a></li>
-      <li><a href="#h_01JPQPRCDT89CN57S3W1T3KEBY">Description</a></li>
-      <li><a href="#h_01JPQPRCDTPPYF857KEKNNK0B4">Games</a></li>
-      <li><a href="#h_01JPQPRCDT8SFQ0YZKKZ1F14CX">Private Profile</a></li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JPQPRCDSRSTM16KKC2D06ZVR">What are Server Profiles?</a>
+    </li>
+    <li>
+      <a href="#h_01JPQPRCDSTXK41VF3DQ8ESFH3"
+        >How to Customize a Server Profile</a
+      >
+      <ul>
+        <li><a href="#h_01JPQPRCDSPXZW1P0SGW23PBBM">Name</a></li>
+        <li><a href="#h_01JPQPRCDSDX0HFKN7YC184FVV">Icon</a></li>
+        <li><a href="#h_01JPQPRCDS97D73MH802HP0KX0">Banner</a></li>
+        <li><a href="#h_01JPQPRCDTTZ8JSM0JGMQA1RX2">Traits</a></li>
+        <li><a href="#h_01JPQPRCDT89CN57S3W1T3KEBY">Description</a></li>
+        <li><a href="#h_01JPQPRCDTPPYF857KEKNNK0B4">Games</a></li>
+        <li><a href="#h_01JPQPRCDT8SFQ0YZKKZ1F14CX">Private Profile</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01JPQPRCDSRSTM16KKC2D06ZVR">What are Server Profiles?</h1>
 <p>
   <strong>Server Profiles </strong>are customizable information cards that
