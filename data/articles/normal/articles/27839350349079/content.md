@@ -28,6 +28,25 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Walmart Skyward Cinematic Trailer<br /></strong
+  ><strong>Quest Name: Walmart Skyward Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the
+  <strong>Walmart Skyward Cinematic Trailer </strong>in Discord and receive
+  <strong>Marty the Hippo Pet</strong>.<br /><strong>Who is Eligible: </strong
+  >Available to US users on desktop where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Walmart Skyward Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>March 21, 2025 </strong>until<strong>
+    March 30, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 18, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: Limit of one reward redemption per account.</strong
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Overwatch 2 – Midseason Mashup Trailer<br /></strong
   ><strong>Quest Name: Lifeweaver Skin Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
@@ -359,25 +378,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: SUPERVIVE <br /></strong
-  ><strong>Quest Name: SUPERVIVE Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>SUPERVIVE </strong>to receive a
-  <strong>Crysta Hunter Bundle</strong>. <br /><strong>Who is Eligible:</strong>
-  Available to players in the United States, Canada, Eastern Europe, and Western
-  Europe on desktop where Discord and <strong>SUPERVIVE</strong> are available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>SUPERVIVE Quest</strong> can be accepted on Discord from
-  <strong>February 5, 2025</strong> until
-  <strong>February 11, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>March 13, 2025 (0:00 UTC)</strong>.  <br /><strong
-    >Other Terms: Limit of one reward redemption per account.</strong
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Fortnite<br /></strong
   ><strong>Quest Name: Fortnite OG S2 Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -461,30 +461,6 @@
   requirements during this period and claim your reward by
   <strong>April 10, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
   >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Marvel Rivals<br /></strong
-  ><strong>Quest Name: Marvel Rivals Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Marvel Rivals</strong> to receive a limited-time
-  <strong>Jeff The Land Shark</strong> <strong>avatar</strong>
-  <strong>decoration</strong>.<br /><strong>Who is Eligible:</strong> Available
-  to players on desktop and console where both <strong>Discord</strong> and
-  <strong>Marvel Rivals</strong> are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Marvel Rivals Quest</strong> can be accepted on Discord from
-  <strong>January 10, 2025</strong> until
-  <strong>January 16, 2025 (4:59PM PST)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>February 16, 2025</strong>.<br />The
-  <strong>Jeff The Land Shark</strong> <strong>avatar decoration</strong> is a
-  limited-time avatar decoration and will only be yours as an avatar decoration
-  until <strong>March 16, 2025 (4:59PM PST)</strong>. After this date, you will
-  no longer have access to this avatar decoration.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
 </p>
 <p>
   <strong
