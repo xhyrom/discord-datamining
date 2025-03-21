@@ -4703,13 +4703,6 @@
       "POST"
     ]
   },
-  "CREATE_REFERRAL_PREVIEW": {
-    "url": "/users/@me/referrals/:param/preview",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "CREATE_REFERRAL": {
     "url": "/users/@me/referrals/:param",
     "allowed_methods": [
