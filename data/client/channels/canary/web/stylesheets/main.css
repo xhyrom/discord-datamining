@@ -41623,6 +41623,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   font-size: 14px;
   font-weight: 500;
 }
+.loadingContainer_f86e69 {
+  display: flex;
+  min-height: 300px;
+  max-height: 442px;
+  height: 80vh;
+  padding-top: var(--spacing-16);
+  justify-content: center;
+}
 [data-popout-root],
 html {
   --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
@@ -57423,4 +57431,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f6f714f348751852.css.map*/
+/*# sourceMappingURL=12633.c613830ccf045b29.css.map*/
