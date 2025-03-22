@@ -314,7 +314,7 @@
 </p>
 <p>
   You can set a server nickname by navigating to <strong>User Settings</strong>
-  <strong>&gt; Profiles &gt; Per-server profiles</strong>.
+  <strong>&gt; Profiles &gt; Per-server Profiles</strong>.
 </p>
 <h1 id="docs-internal-guid-c6a005d2-7fff-a358-a3a9-c671fb309737">
   Where are Display Names and Usernames Used?
