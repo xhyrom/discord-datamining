@@ -11507,6 +11507,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2025-03_shop_hide_strikethrough_price",
+      "label": "Shop Hide Strikethrough Price Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Hide strikethrough prices"
+      ],
+      "hash": 1907383429,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "hideStrikethroughPrice"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2025-03_slayer_notif_supression_killswitch",
       "label": "Disable suppressing notifications with slayer game active",
       "description": [
@@ -12244,29 +12267,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2025-03_shop_hide_strikethrough_price",
-      "label": "Shop Hide Strikethrough Price Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Hide strikethrough prices"
-      ],
-      "hash": 1907383429,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "hideStrikethroughPrice"
-      ]
     }
   },
   {
