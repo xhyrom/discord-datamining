@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2025-03_activity_notification_improvements",
+    "label": "Activity Notification Improvements",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Disable notifications for current activity"
+    ],
+    "hash": 1335474056,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "disableCurrentActivityNotifications"
+    ]
+  }
+}
