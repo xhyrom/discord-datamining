@@ -347,21 +347,20 @@
     <li>Enable server widget</li>
     <li>Create an announcement channel</li>
   </ul>
-  You can re-enable Private Profile through settings, except for one key
-  exception: For
+  You can re-enable Private Profile through your Server Settings, except for
+  servers currently in
   <a
     href="https://support.discord.com/hc/en-us/articles/360023968311"
     target="_blank"
     rel="noopener noreferrer"
-    >discoverable servers</a
-  >, Private Profile cannot be enabled. To set your server's profile to
-  <strong>Private Profile</strong>, you must first disable server discovery
-  using the steps
+    >Discover</a
+  >. If you disable any of these features mentioned above, you will still have
+  to manually enable
   <a
     href="https://support.discord.com/hc/en-us/articles/360030843331-Enabling-Server-Discovery#h_01GCHW5CGDT4A50EF1ZJKHDTSC"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
+    >Private Profile</a
   >.
 </div>
 <p>
