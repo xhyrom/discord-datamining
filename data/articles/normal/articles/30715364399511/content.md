@@ -64,7 +64,7 @@
 </div>
 <p>
   To customize your server profile, navigate to your
-  <strong>Server Settings</strong> and select the
+  <strong>Server Settings</strong> by selecting the
   <strong>dropdown arrow</strong> [<img
     src="https://support.discord.com/hc/article_attachments/30769476878359"
     width="25"

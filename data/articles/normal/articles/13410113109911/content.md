@@ -94,7 +94,7 @@
     >Nitro Quests</a
   >! Learn more about extended decoration access and other benefits in our
   <a
-    href="https://support.discord.com/hc/articles/nitro-quest-perks"
+    href="https://support.discord.com/hc/articles/29790581779735-Nitro-Quest-Perk"
     target="_blank"
     rel="noopener noreferrer"
     >Nitro Quest Perks article</a
