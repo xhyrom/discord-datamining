@@ -11375,62 +11375,46 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   color: var(--text-code-deletion);
   background-color: var(--background-code-deletion);
 }
-.container__8ac07 {
+.container_c9d15c {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.container__8ac07.textXs__8ac07 {
-  --custom-live-activity-status-icon-size: 12px;
-  --custom-live-activity-status-emoji-size: 14px;
+.container_c9d15c.textXs_c9d15c {
+  --custom-activity-status-icon-size: 12px;
+  --custom-activity-status-emoji-size: 14px;
 }
-.container__8ac07.textSm__8ac07 {
-  --custom-live-activity-status-icon-size: 14px;
-  --custom-live-activity-status-emoji-size: 16px;
+.container_c9d15c.textSm_c9d15c {
+  --custom-activity-status-icon-size: 14px;
+  --custom-activity-status-emoji-size: 16px;
 }
-.container__8ac07:empty {
+.container_c9d15c:empty {
   display: none;
 }
-.icon__8ac07 {
+.icon_c9d15c {
   flex-shrink: 0;
-  width: var(--custom-live-activity-status-icon-size);
-  height: var(--custom-live-activity-status-icon-size);
+  width: var(--custom-activity-status-icon-size);
+  height: var(--custom-activity-status-icon-size);
 }
-.text__8ac07 {
+.text_c9d15c {
   color: var(--text-muted);
   overflow: hidden;
 }
-.emoji__8ac07 {
+.emoji_c9d15c {
   flex: 0 0 auto;
   margin-right: 0;
-  width: var(--custom-live-activity-status-emoji-size);
-  height: var(--custom-live-activity-status-emoji-size);
+  width: var(--custom-activity-status-emoji-size);
+  height: var(--custom-activity-status-emoji-size);
 }
-.dot__8ac07 {
+.dot_c9d15c {
   flex-shrink: 0;
 }
-.dot__8ac07:first-child,
-.dot__8ac07:last-child {
+.dot_c9d15c:first-child,
+.dot_c9d15c:last-child {
   display: none;
 }
-.questsIcon__8ac07 {
-  flex-shrink: 0;
-}
-.container_c9d15c {
-  display: flex;
-  align-items: center;
-}
-.emoji_c9d15c {
-  margin-right: 4px;
-  width: 14px;
-  height: 14px;
-}
-.icon_c9d15c {
-  flex: 0 0 auto;
-  margin-left: 2px;
-}
 .questsIcon_c9d15c {
-  margin-left: 4px;
+  flex-shrink: 0;
 }
 @keyframes placeholderPulse__27cc6 {
   0% {
@@ -12098,7 +12082,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .contentContainer_ef0711 {
   z-index: 1;
-  margin-top: 148px;
+  margin-top: 160px;
 }
 .wrapper__4d7bb {
   background: linear-gradient(
@@ -18614,6 +18598,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .newlyAddedHighlightContainer_fc7141 .emojiListRow_fc7141 {
   padding-left: 0;
+}
+.visual-refresh .emojiListRow_fc7141 li {
+  overflow: hidden;
 }
 .topEmojiSectionContainer_fc7141 {
   display: flex;
@@ -35511,6 +35498,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.visual-refresh .layer_bc663c {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
 .layer_bc663c:has([data-modal-align="top"]) {
   bottom: auto;
   padding-top: 0;
@@ -37377,7 +37368,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   margin: 0 2px;
 }
 .visual-refresh .caret__9293f {
-  color: var(--background-mod-strong);
+  color: var(--icon-tertiary);
 }
 .scrollable__9293f {
   overflow: auto;
@@ -39088,14 +39079,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 :where(.visual-refresh) .small__49fc1 {
   min-height: 220px;
-  max-height: min(900px, 70vh);
-}
-:where(.visual-refresh) .medium__49fc1 {
-  max-height: min(900px, 70vh);
 }
 :where(.visual-refresh) .large__49fc1 {
   max-width: 962px;
-  max-height: min(900px, 70vh);
 }
 @media (max-width: 485px) {
   .root__49fc1 {
@@ -41619,6 +41605,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .getNitroButtonText_f86e69 {
   font-size: 14px;
   font-weight: 500;
+}
+.loadingContainer_f86e69 {
+  display: flex;
+  min-height: 300px;
+  max-height: 442px;
+  height: 80vh;
+  padding-top: var(--spacing-16);
+  justify-content: center;
 }
 [data-popout-root],
 html {
@@ -57420,4 +57414,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0a176ff636b37931.css.map*/
+/*# sourceMappingURL=12633.44078180d398ad60.css.map*/

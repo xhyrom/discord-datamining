@@ -5818,8 +5818,6 @@
               "/users/@me/saved-messages/".concat(t, "/").concat(e),
             GET_REFERRALS_REMAINING: "/users/@me/referrals/eligibility",
             GET_REFERRAL_ELIGIBLE_USERS: "/users/@me/referrals/eligible-users",
-            CREATE_REFERRAL_PREVIEW: (t) =>
-              "/users/@me/referrals/".concat(t, "/preview"),
             CREATE_REFERRAL: (t) => "/users/@me/referrals/".concat(t),
             FAMILY_CENTER_TEEN_ACTIVITY: (t) =>
               "/family-center/".concat(t, "/activity"),
@@ -6319,8 +6317,8 @@
             CONNECTIONS: "Connections",
             CONNECTIONS_XBOX: "Connections Xbox",
             AUTHORIZED_APPS: "Authorized Apps",
-            AUTHORIZED_APP: "Authorized App",
-            AUTHORIZED_APP_PERMISSIONS: "Authorized App Permissions",
+            AUTHORIZED_APP: "Authorized App - Detail Page",
+            AUTHORIZED_APP_PERMISSIONS: "Authorized App - Permissions",
             TEXT: "Text & Images",
             VOICE: "Voice & Video",
             PRIVACY_AND_SAFETY: "Privacy & Safety",
@@ -8585,7 +8583,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-21-2d43ef5f5b6b5935bd9572d6ff9fdada9c4326cc-discord_web",
+              "2025-03-24-d14886fd072271f0c49b7546e7f76740e1a1717a-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8651,8 +8649,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "380730"),
-            o.YA("builtAt", String("1742572288761"));
+            o.YA("buildNumber", "381182"),
+            o.YA("builtAt", String("1742800735659"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46480,4 +46478,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.add067d102ccd829.js.map
+//# sourceMappingURL=sentry.5d9401749b0ec682.js.map
