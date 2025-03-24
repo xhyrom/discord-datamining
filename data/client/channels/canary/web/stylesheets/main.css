@@ -10427,8 +10427,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   text-align: center;
 }
 .visual-refresh .soundButton__6d4ed {
-  background-color: var(--button-secondary-background);
-  border: 1px solid var(--border-subtle);
+  background: var(--background-mod-subtle);
+}
+.visual-refresh .soundButton__6d4ed.focused__6d4ed,
+.visual-refresh .soundButton__6d4ed:active:not(:focus-within),
+.visual-refresh .soundButton__6d4ed:hover {
+  border-color: var(--border-subtle);
 }
 .soundButtonRefresh__6d4ed {
   box-sizing: border-box;
@@ -10505,13 +10509,19 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .addButton__6d4ed > * {
   margin-right: 4px;
 }
-.soundButton__6d4ed.focused__6d4ed.hoverActiveBackground__6d4ed,
-.soundButton__6d4ed:focus-within.hoverActiveBackground__6d4ed,
-.soundButton__6d4ed:hover.hoverActiveBackground__6d4ed,
-.soundButtonRefresh__6d4ed.focused__6d4ed.hoverActiveBackground__6d4ed,
-.soundButtonRefresh__6d4ed:focus-within.hoverActiveBackground__6d4ed,
-.soundButtonRefresh__6d4ed:hover.hoverActiveBackground__6d4ed {
+.hoverActiveBackground__6d4ed.focused__6d4ed,
+.hoverActiveBackground__6d4ed:focus-within {
   background: var(--background-tertiary);
+}
+.visual-refresh .hoverActiveBackground__6d4ed.focused__6d4ed,
+.visual-refresh .hoverActiveBackground__6d4ed:focus-within {
+  background: var(--background-mod-normal);
+}
+.hoverActiveBackground__6d4ed:hover {
+  background: var(--background-tertiary);
+}
+.visual-refresh .hoverActiveBackground__6d4ed:hover {
+  background: var(--background-mod-strong);
 }
 .soundButton__6d4ed.focused__6d4ed .buttonOverlay__6d4ed,
 .soundButton__6d4ed:focus-within .buttonOverlay__6d4ed,
@@ -10710,6 +10720,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .buttonOverlayBackground__6d4ed {
   background: var(--background-secondary);
   opacity: 0.8;
+}
+.visual-refresh .buttonOverlayBackground__6d4ed {
+  background: var(--background-surface-highest);
 }
 .buttonOverlayActions__6d4ed {
   padding: 0 8px;
@@ -20409,11 +20422,27 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   list-style: none;
 }
 .soundAddButton__58c6c {
+  color: var(--header-primary);
   cursor: pointer;
 }
 .soundAddButton__58c6c.focused__58c6c,
 .soundAddButton__58c6c:hover {
   background-color: var(--background-tertiary);
+}
+.visual-refresh .soundAddButton__58c6c {
+  background: transparent none repeat 0 0 / auto auto padding-box border-box
+    scroll;
+  background: initial;
+  border: 1px dashed var(--border-subtle);
+  color: var(--text-tertiary);
+}
+.visual-refresh .soundAddButton__58c6c:hover {
+  border-color: var(--border-normal);
+  color: var(--text-default);
+}
+.visual-refresh .soundAddButton__58c6c.focused__58c6c {
+  border-color: var(--border-strong);
+  color: var(--text-default);
 }
 .soundAddButtonRefresh__58c6c {
   cursor: pointer;
@@ -20443,7 +20472,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .soundAddIcon__58c6c {
   width: 16px;
   height: 16px;
-  color: var(--header-primary);
 }
 .soundAddIconRefresh__58c6c {
   width: 24px;
@@ -30106,45 +30134,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .orbBadge__8061a {
   height: 14px;
   width: 14px;
-}
-.tieredTenureBadgeBronzeGlow__8061a {
-  box-shadow: 0 0 18px 0 #f78d41;
-}
-.tieredTenureBadgeSilverGlow__8061a {
-  box-shadow: 0 0 18px 0 #d2d2d2;
-}
-.tieredTenureBadgeGoldGlow__8061a {
-  box-shadow: 0 0 18px 0 #ffa813;
-}
-.tieredTenureBadgePlatinumGlow__8061a {
-  box-shadow: 0 0 18px 0 #5eacc2;
-}
-.tieredTenureBadgeDiamondGlow__8061a {
-  box-shadow: 0 0 18px 0 #6d5cf2;
-}
-.tieredTenureBadgeEmeraldGlow__8061a {
-  box-shadow: 0 0 18px 0 #32c102;
-}
-.tieredTenureBadgeRubyGlow__8061a {
-  box-shadow: 0 0 18px 0 #f29cc3;
-}
-.tieredTenureBadgeFireGlow__8061a {
-  box-shadow: 0 0 18px 0 #e95c03;
-}
-.starContainer__8061a {
-  position: relative;
-}
-.bottomRightStar__8061a,
-.topLeftStar__8061a {
-  position: absolute;
-}
-.topLeftStar__8061a {
-  top: -34px;
-  left: -13px;
-}
-.bottomRightStar__8061a {
-  bottom: -16px;
-  right: -15px;
 }
 .nameTag__05e81 {
   display: flex;
@@ -57427,4 +57416,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d8d3dccd36c60caa.css.map*/
+/*# sourceMappingURL=12633.c4cd0dbd5821b31c.css.map*/
