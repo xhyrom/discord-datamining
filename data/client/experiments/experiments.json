@@ -7678,21 +7678,18 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Tiered Tenure Badges v1",
         "Treatment 2: Enable Tiered Tenure Badges v2"
       ],
       "hash": 882504092,
       "buckets": [
         -1,
         0,
-        1,
         2
       ],
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled",
-        "isBadgeVersion2"
+        "enabled"
       ]
     }
   },
@@ -10238,8 +10235,7 @@
       "holdout": {},
       "aa_mode": false,
       "config_keys": [
-        "enabled",
-        "isBadgeVersion2"
+        "enabled"
       ]
     }
   },
