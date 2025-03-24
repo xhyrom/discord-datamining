@@ -26,7 +26,7 @@
 <h1 id="h_01JQ4N5599MNJP93871HS6VY9S">How do I verify my age group?</h1>
 <p>
   1. If you have not verified your age group and are included in the experiment,
-  when you access an age-restricted space you’ll see an
+  when you access an age-restricted space, you’ll see an
   <strong>age-restricted warning</strong>. If age verification is required,
   press the <strong>Verify Age</strong> button to begin.
 </p>
