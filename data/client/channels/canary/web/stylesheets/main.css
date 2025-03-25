@@ -52611,8 +52611,8 @@ html.disable-forced-colors * {
   --button-transparent-text: var(--neutral-6);
   --card-primary-bg: var(--neutral-66);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --channel-icon: var(--neutral-15);
-  --channels-default: var(--neutral-22);
+  --channel-icon: var(--neutral-29);
+  --channels-default: var(--neutral-29);
   --header-muted: var(--neutral-22);
   --header-primary: var(--neutral-1);
   --header-secondary: var(--neutral-11);
@@ -52858,12 +52858,12 @@ html.disable-forced-colors * {
     );
     --channel-icon: color-mix(
       in oklab,
-      var(--neutral-15) 100%,
+      var(--neutral-29) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --channels-default: color-mix(
       in oklab,
-      var(--neutral-22) 100%,
+      var(--neutral-29) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --header-muted: color-mix(
@@ -53450,8 +53450,8 @@ html.disable-forced-colors * {
   );
   --button-transparent-text: var(--neutral-95);
   --card-primary-bg: var(--neutral-1);
-  --channel-icon: var(--neutral-44);
-  --channels-default: var(--neutral-38);
+  --channel-icon: var(--neutral-42);
+  --channels-default: var(--neutral-42);
   --header-muted: var(--neutral-38);
   --header-primary: var(--neutral-71);
   --header-secondary: var(--neutral-67);
@@ -53676,12 +53676,12 @@ html.disable-forced-colors * {
     );
     --channel-icon: color-mix(
       in oklab,
-      var(--neutral-44) 100%,
+      var(--neutral-42) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --channels-default: color-mix(
       in oklab,
-      var(--neutral-38) 100%,
+      var(--neutral-42) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --header-muted: color-mix(
@@ -54247,8 +54247,8 @@ html.disable-forced-colors * {
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --card-primary-bg: var(--neutral-91);
-  --channel-icon: var(--neutral-27);
-  --channels-default: var(--neutral-33);
+  --channel-icon: var(--neutral-36);
+  --channels-default: var(--neutral-36);
   --header-muted: var(--neutral-33);
   --header-primary: var(--neutral-7);
   --header-secondary: var(--neutral-10);
@@ -54471,12 +54471,12 @@ html.disable-forced-colors * {
     );
     --channel-icon: color-mix(
       in oklab,
-      var(--neutral-27) 100%,
+      var(--neutral-36) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --channels-default: color-mix(
       in oklab,
-      var(--neutral-33) 100%,
+      var(--neutral-36) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --header-muted: color-mix(
@@ -55015,8 +55015,8 @@ html.disable-forced-colors * {
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --card-primary-bg: var(--neutral-79);
   --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --channel-icon: var(--neutral-22);
-  --channels-default: var(--neutral-29);
+  --channel-icon: var(--neutral-34);
+  --channels-default: var(--neutral-34);
   --header-muted: var(--neutral-29);
   --header-primary: var(--neutral-2);
   --header-secondary: var(--neutral-5);
@@ -55260,12 +55260,12 @@ html.disable-forced-colors * {
     );
     --channel-icon: color-mix(
       in oklab,
-      var(--neutral-22) 100%,
+      var(--neutral-34) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --channels-default: color-mix(
       in oklab,
-      var(--neutral-29) 100%,
+      var(--neutral-34) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --header-muted: color-mix(
@@ -57393,4 +57393,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7312db6caf226c02.css.map*/
+/*# sourceMappingURL=12633.676ce2cb971ba525.css.map*/
