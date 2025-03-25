@@ -31,7 +31,7 @@
   <strong>Quest Video: New Drop Trailer<br /></strong
   ><strong>Quest Name: Drop Trailer Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
-  <strong>New Drop Trailer</strong> in Discord to earn one-day of
+  <strong>New Drop Trailer</strong> in Discord to earn 1 day of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
     ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
