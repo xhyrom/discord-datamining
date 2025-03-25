@@ -5,52 +5,34 @@
   >
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><iframe
+  <span style="color: #2e3338" data-darkreader-inline-color="">
+    <iframe
       src="//www.youtube-nocookie.com/embed/TJ13BA3-NR4"
       width="560"
       height="315"
       frameborder="0"
       allowfullscreen=""
-    ></iframe
-  ></span>
+    ></iframe>
+  </span>
 </p>
-<p>
+<div class="toc-box">
   <strong
-    ><span
-      class="wysiwyg-font-size-large"
-      style="color: #2e3338"
-      data-darkreader-inline-color=""
-      >What this article covers: </span
-    ></strong
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01H4RR2BX2WKB7F3E6TE1AEB5X" target="_self" rel="undefined"
-      >Get the app</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H4RR2GE2FAK7DZ5W3765NGVT" target="_self" rel="undefined"
-      >Create your account </a
-    >
-  </li>
-  <li>
-    <a href="#h_01H4RR2QA47KEEKXM7MYAP9VDY" target="_self" rel="undefined"
-      >Claim your account</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H4RR2WQMJPNM20TG8NWDDWSS" target="_self" rel="undefined"
-      >Verify Your Phone Number</a
-    >
-  </li>
-</ul>
-<h1 id="h_01H4RR2BX2WKB7F3E6TE1AEB5X">
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li><a href="#h_01JQ6Y0957HQAY1FX9EAKHT9MQ">Get the app</a></li>
+    <li><a href="#h_01H4RR2GE2FAK7DZ5W3765NGVT">Create your account</a></li>
+    <li><a href="#h_01H4RR2QA47KEEKXM7MYAP9VDY">Claim your account</a></li>
+    <li>
+      <a href="#h_01H4RR2WQMJPNM20TG8NWDDWSS">Verify Your Phone Number</a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JQ6Y0957HQAY1FX9EAKHT9MQ">
   <strong
     ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >Get The App</span
+      >Get the App</span
     ></strong
   >
 </h1>
@@ -81,20 +63,36 @@
     on mobile and tablets. </span
   >
 </p>
-<h1 id="h_01HGKNN1VZPHE9S81W835EDCQ0" class="wysiwyg-text-align-center">
+<p id="h_01HGKNN1VZPHE9S81W835EDCQ0" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30910033160471"
+      width="624"
+      height="311"
+  /></span>
+</p>
+<h4 id="h_01JQ6XRRHQHRE6HKCQKFMPKMXS" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of where to download the Discord desktop app on the Discord
+    website</span
+  >
+</h4>
+<p id="h_01HGKNN1VZN7X0530WGNRPT6HP" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 293px; width: 624px"
-      src="https://lh5.googleusercontent.com/waggYk7PfK22ox_h0T6V7q7LKjNcJ-sacaj_GYyji8I9_ACDH7IPC0YgDHqmmesYW8UxEePRJXeeMjUJHe8wV2K3aNbU234gzJj1_q_F8dXeFrvPI88zVnGkp8yS5Tpd9U9dIji_5TN6-T8lhOSyGPk"
+      src="https://support.discord.com/hc/article_attachments/30910013244695"
+      width="624"
+      height="332"
   /></span>
-</h1>
-<h1 id="h_01HGKNN1VZN7X0530WGNRPT6HP" class="wysiwyg-text-align-center">
+</p>
+<h4 id="h_01JQ6XRRHQDA8C7Z88CJ0SGMVX" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      style="height: 783px; width: 624px"
-      src="https://lh6.googleusercontent.com/ej1vIyJweNdiKNdbaQzim8qTSrPWd6Ps5HHioJztKf17p8L1PbrLEvSaosw9YwC8EV8igaZfl2MFgUuuG4Ls0qSNYikcyN7FdamSlZo_z9ZOdf9_S5HEGg72dYB_dQiuzrAevM4XdeQpcmG056-hFHI"
-  /></span>
-</h1>
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of where to download the Discord mobile app on the Discord
+      website</span
+    ></span
+  >
+</h4>
 <p class="wysiwyg-text-align-center">
   <a href="https://support.discord.com/hc/en-us/articles/360034561191"
     ><strong
@@ -126,23 +124,32 @@
     to access Discord directly from your browser. </span
   >
 </p>
-<h1 id="h_01HGKNN1VZQDWA3GKTY1NVZK0W" class="wysiwyg-text-align-center">
+<p id="h_01HGKNN1VZQDWA3GKTY1NVZK0W" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 225px; width: 624px"
-      src="https://lh6.googleusercontent.com/Sf90xUeKKn5V9eWEwtzCBMs49db19IzR6WGCIF9oRUG5mUSlFUdbAw7vGM8iU4F3T1iR7VtGU8GDPLXoH_ekkL8YsfePL0aAvUfE3zan2VEMyKEUfZoN_Nay_dvJkoG77w1w60ycxAyndwSdNtvcR6Y"
+      src="https://support.discord.com/hc/article_attachments/30910033170967"
+      width="624"
+      height="328"
   /></span>
-</h1>
-<h3 id="h_01HGKNN1VZW9B0ZVB1JY6EGQQV">
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >For an in depth list of compatible Browsers and Operating Systems, check </span
-  ><a
+</p>
+<h4 id="h_01JQ6XSH7E45Z0F88MRXR856RX" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of where to access the Discord app through your web browser on
+      the Discord website</span
+    ></span
+  >
+</h4>
+<div class="tip-box">
+  <strong>NOTE:</strong> For an in depth list of compatible Browsers and
+  Operating Systems, check
+  <a
     href="https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-"
     ><span style="color: #0067e0" data-darkreader-inline-color=""
       >the OS/system requirements guide here</span
     ></a
-  ><span style="color: #104c32" data-darkreader-inline-color="">. </span>
-</h3>
+  >.
+</div>
 <h1 id="h_01H4RR2GE2FAK7DZ5W3765NGVT">
   <strong
     ><span style="color: #ae6607" data-darkreader-inline-color=""
@@ -161,14 +168,21 @@
     >, or in the app. </span
   >
 </p>
-<h1 id="h_01HGKNN1VZANH5KKBMY2JXHQR2" class="wysiwyg-text-align-center">
+<p id="h_01HGKNN1VZANH5KKBMY2JXHQR2" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 411px; width: 624px"
-      src="https://lh6.googleusercontent.com/WKQP74f8lHv5idW4qwa1FZFe9BArMdU2NbeSPDKO5VOwN3Xh_6qI4r1tRRbEfUnjS9NmqLJ6qwUBLg6F7aEaIb9wuM244Ivl9M2x0v4TJJK_GniE8gT9yRX0MtAOePjEK4fIoIvln_sxFKkwZUs8tqU"
-      alt="Login-page-of-Discord-press-register-to-create-account-gif.gif"
+      src="https://support.discord.com/hc/article_attachments/30910033173271"
+      width="624"
+      height="363"
   /></span>
-</h1>
+</p>
+<h4 id="h_01JQ6XT9HCV1RV4AE0V42HMHDF" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of the Register button on the Discord browser/desktop app</span
+    ></span
+  >
+</h4>
 <h1 id="h_01H4RR2QA47KEEKXM7MYAP9VDY">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
@@ -271,10 +285,19 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 487px; width: 624px"
-      src="https://lh4.googleusercontent.com/bY23li9J37McRGEKp7Wd6eOFyOU1oz3EpdTESjLcxtdth8Di5w4-X1Eb6eWUVq8wYK79oSZpHyNALJHP5FWOAXwIL-joSgJbaxzarEABn3n_O3Xrp3hTpkNW3pRxBfMo9s0Hb3X0xZT5UH0rULZ_sVo"
+      src="https://support.discord.com/hc/article_attachments/30807658276247"
+      width="624"
+      height="457"
   /></span>
 </p>
+<h4 id="h_01JQ6XTQPZDXPS0JSSQA113ED3" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of where to add your phone number to your Discord account on the
+      Discord desktop/browser app</span
+    ></span
+  >
+</h4>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Once pressed, you’ll be able to directly enter your phone and then press
@@ -292,17 +315,35 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 334px; width: 496px"
-      src="https://lh5.googleusercontent.com/rGapq6ybxKAb2hD7cY4LC25UolFUyafqw78CzqDFzKwovVpKwwmnefJxdroiam20bWVzYJ-TxyiwRjpOawwCdu0_iE3Plse1q62o1DMVWcDnclMBQxgVHM6mzqUWeao7xPPW7iY1AYnEcnYydlqxjSU"
+      src="https://support.discord.com/hc/article_attachments/30807658278423"
+      width="500"
+      height="334"
   /></span>
 </p>
+<h4 id="h_01JQ6XV1S7581462S71EPC3W7B" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of adding your phone number to your Discord account on the
+      Discord desktop/browser app</span
+    ></span
+  >
+</h4>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      style="height: 433px; width: 516px"
-      src="https://lh5.googleusercontent.com/Se9IASwlcBzfT9ViXfxATBHZ675jtCLG2kqGY29I3jq7cPliHg_mrEPtTEd4Oalb8vdxiuPcDguS8udLA1zegAs2IXGRCcmDSWga24-drfJA5hl5KWEmUeO1UNI7JyaZLLeE93B3g_Kdb9Ib76JdjOY"
+      src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeqbA1cWhXe0ITXWDcN1LtMGdmCcgwtqpY_BPeu3O7aq2AgHD3Ss6NBgcLdu-7k3R9ZCAGQoicNpc5A6RcFsfp7G6Zw4Rf0nk9zOCriCxd7mwj0wC2fFEI1kBIEvuGNgvgE31NE?key=URElhgvXw4GunbQ3mI6dcw"
+      width="498"
+      height="385"
   /></span>
 </p>
+<h4 id="h_01JQ6XVBNYXN97EM4X97339SRV" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of where to add your verification code for your phone number on
+      the Discord desktop/browser app</span
+    ></span
+  >
+</h4>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Last but not least, to confirm your changes, you’ll need to enter the

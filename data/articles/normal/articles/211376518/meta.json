@@ -2,7 +2,7 @@
   "id": 211376518,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/211376518.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/211376518-Voice-Input-Modes-101-Push-to-Talk-Voice-Activated",
-  "author_id": 1199351638,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -15,11 +15,15 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2020-05-26T22:13:29Z",
+  "edited_at": "2025-03-25T15:56:22Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot"
+    "push to talk",
+    "answer-bot",
+    "voice input",
+    "voice input modes",
+    "voice activity"
   ]
 }

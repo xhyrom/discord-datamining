@@ -1,86 +1,119 @@
 <p>
-  <span style="font-weight: 400"
-    >Sup!.... Can you hear me…? Is anyone there…? Type something in chat if you
-    can hear me… </span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"
-    >(╮°-°)╮┳━━┳                                                               
-                              ( ╯°□°)╯ ┻━━┻</span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400"
-    >It’s infuriating to start a gaming session only to discover your team
-    hasn’t been hearing you yell at them this entire time!</span
+  Discord's built-in <strong>Mic Test</strong> feature ensures clear and
+  reliable voice communication, enhancing your gaming experience. Audio issues
+  can be disruptive, especially when coordinating with your team, but with this
+  simple tool, you can quickly verify your microphone's functionality before
+  hopping into any important call or gaming session.
+</p>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JQ70DSERS1W93PQXK59S8C1T"
+        >How to Use the Mic Test in Discord</a
+      >
+    </li>
+    <li><a href="#h_01JQ70DSER75DE8DKXJVP403D9">Troubleshooting Steps</a></li>
+  </ul>
+</div>
+<h1 id="h_01JQ70DSERS1W93PQXK59S8C1T">How to Use the Mic Test in Discord</h1>
+<div class="tip-box">
+  <strong>NOTE:</strong>
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >: Discord’s Mic Test feature is only available on desktop/browser.</span
   >
-</p>
+</div>
 <p>
-  <span style="font-weight: 400">Introducing </span><strong>Mic Testing</strong
-  ><span style="font-weight: 400">!</span>
+  1. Select the <strong>cogwheel </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/30911531441175"
+    width="24"
+    height="24"
+  />] in the lower-left corner of the app to access your
+  <strong>User Settings</strong>.
 </p>
-<p>
-  <span style="font-weight: 400"
-    >The newest way to test if your silky smooth voice is being transmitted into
-    the Discord machine. Go to </span
-  ><strong>User Settings &gt; Voice &amp; Video</strong
-  ><span style="font-weight: 400"
-    >. Under the input &amp; output volume sliders, you’ll see this new mic test
-    feature.
-  </span>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911568491031"
+      width="424"
+      height="94"
+  /></span>
 </p>
-<p>
-  <img
-    src="https://support.discord.com/hc/article_attachments/360017380211/1_.jpg"
-    alt="1_.jpg"
-    width="1274"
-    height="730"
-  />
-</p>
-<p>
-  <span style="font-weight: 400">Click on </span><strong>Let’s Check </strong
-  ><span style="font-weight: 400">&amp; start to speak. </span
-  ><span style="font-weight: 400"><br /></span> <img
-    src="https://support.discord.com/hc/article_attachments/360017380491/2_.jpg"
-    alt="2_.jpg"
-  />
-</p>
-<p>
-  <span style="font-weight: 400"
-    >The sound will then be played right back to you through the selected output
-    device. If you use Push to Talk you won’t need to hit that keybind, it’ll
-    act as if you’re using Voice Activated mode. This will allow you to
-    immediately tell if your voice is being picked up &amp; what you sound like.
-    Be sure to adjust the input volume accordingly. </span
-  > 
-</p>
-<p>
-  <span style="font-weight: 400"
-    >If Discord isn’t detecting any input method you’ll run into this: </span
-  > <img
-    src="https://support.discord.com/hc/article_attachments/360017495812/Screen_Shot_2018-12-13_at_4.56.20_PM.png"
-    alt="Screen_Shot_2018-12-13_at_4.56.20_PM.png"
-    width="806"
-    height="146"
-  />
-</p>
-<p>
-  <span style="font-weight: 400"
-    >If you’re running into this message, give this guide </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/214925018"
-    target="_self"
-    >here</a
-  ><span style="font-weight: 400">
-    a gander to troubleshoot away audio input problems.
-  </span>
-</p>
-<h3>
-  <span style="font-weight: 400"
-    >Note: if you test your mic while connected to a voice channel you will be
-    automatically muted &amp; deafened.</span
+<h4 id="h_01JQ70DSERNTH4H0WDH5G3FFPQ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Cogwheel icon on Discord Desktop/Browser</span
   >
-</h3>
+</h4>
 <p>
-  <span style="font-weight: 400"><br /></span
-  ><span style="font-weight: 400">┬─┬ノ( º _ ºノ)</span>
+  2. Navigate to the <strong>Voice &amp; Video</strong> tab and make sure you’re
+  under the <strong>Voice </strong>section.
 </p>
+<p>
+  3. Under <strong>Mic Test</strong> tap on <strong>Let’s Check </strong>to
+  begin testing your mic.
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911568494615"
+      width="624"
+      height="113"
+  /></span>
+</p>
+<h4 id="h_01JQ70DSERM4R1DZVKQ8VK7939" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Mic Test feature in Voice &amp; Video Settings</span
+  >
+</h4>
+<p>
+  4. Your voice will be played back to you through the selected output device,
+  allowing you to check if your microphone is working properly. Once you're
+  finished with your test, tap on <strong>Stop Testing</strong> to stop the
+  test.
+</p>
+<h1 id="h_01JQ70DSER75DE8DKXJVP403D9">Troubleshooting Steps</h1>
+<div class="tip-box">
+  <strong>NOTE:</strong>
+  <span style="color: #434343" data-darkreader-inline-color="">
+    If you test your mic while connected to a voice channel, you will be
+    automatically muted &amp; deafened. You will not be able to communicate in
+    the voice channel again until the test has been completed.</span
+  >
+</div>
+<p>
+  If Discord isn’t detecting your microphone, you may see an error message like
+  the one below that says “Discord isn’t detecting any input from your mic.
+  Please check that you’ve selected the right input device”. In that case,
+  please check your input and output devices to ensure the correct ones are
+  selected. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911531456663"
+      width="624"
+      height="153"
+  /></span>
+</p>
+<h4 id="h_01JQ70DSER0SCTD07KZCXZPT6H" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of an error message you’ll see if your microphone isn’t
+    transmitting</span
+  >
+</h4>
+<div class="book-box">
+  <strong>NOTE:</strong> If the correct input and output is selected and you’re
+  still running into an issue, please check out the
+  <a href="https://support.discord.com/hc/en-us/articles/360045138471"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Discord Voice and Video Troubleshooting Help Center article</span
+    ></a
+  >
+  for further troubleshooting steps.
+</div>

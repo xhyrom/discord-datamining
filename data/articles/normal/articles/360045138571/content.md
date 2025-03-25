@@ -123,11 +123,20 @@
   spend time with.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060867451"
-    alt="friend server1.png"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214194967"
+      width="368"
+      height="338"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZEFTN7Z9QVZA3RMBBNM7J" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of a Discord server</span
+    ></span
+  >
+</h4>
 <h2 id="h_d33e3809-909b-4720-899d-db26c17bafa9">
   <strong>How to Use Text and Voice Channels</strong>
 </h2>
@@ -149,11 +158,20 @@
   fishing trips to cooking tips.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060867491"
-    alt="text chat.png"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911227788055"
+      width="368"
+      height="338"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZEYYYETNQVR60C8X7QRHS" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Example of what a Text Channel is in a Discord server</span
+    ></span
+  >
+</h4>
 <ul>
   <li>
     <span class="wysiwyg-font-size-x-large"
@@ -168,11 +186,18 @@
   talk, wave hello over video, or share their screen.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060700252"
-    alt="voice_channel.png"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214203799"
+      width="368"
+      height="338"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZF63MW9H4Y12VNMP1B98H" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of what a Voice Channel is in a Discord server</span
+  >
+</h4>
 <h2 id="h_65e18002-076e-4670-a07f-4a55cc61cdc4">
   <strong
     >Want to go further with your server setup? Check out these articles for
@@ -241,11 +266,18 @@
   your server!
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060871251"
-    alt="joining_voice_channel_demo.gif"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214206743"
+      width="233"
+      height="146"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZFHGDHZ130WYSS6WDJ6NQ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of being in a Voice Channel in a Discord server</span
+  >
+</h4>
 <h2 id="h_9de92bc2-3bca-459f-8efd-e1e2739ca4f4">
   <strong>How to Voice Chat </strong>
 </h2>
@@ -312,11 +344,19 @@
   <strong>How to Video Chat</strong>
 </h2>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060868111"
-    alt="Video_Chat_-_Focused.png"
-  />
+  <strong
+    ><span style="color: #ad8201" data-darkreader-inline-color=""
+      ><img
+        src="https://support.discord.com/hc/article_attachments/30911214208151"
+        width="624"
+        height="336" /></span
+  ></strong>
 </p>
+<h4 id="h_01JQ6ZH3EGD6PYZMJFN7FQCKA7" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of a Voice Channel in a Discord server</span
+  >
+</h4>
 <p>
   <span class="wysiwyg-font-size-x-large"
     ><strong>Step 1: Join a Voice Channel!</strong></span
@@ -347,21 +387,33 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060700832"
-    alt="video_chat.png"
-    width="419"
-    height="248"
-  /><br />Desktop
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214209431"
+      width="267"
+      height="166"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZHWXCQC8RPTHP4D0WDQE2" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of how to turn on your camera while in a Discord Voice
+    Channel</span
+  >
+</h4>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060700952"
-    alt="mobile_video.png"
-    width="416"
-    height="512"
-  /><br />Mobile
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214213271"
+      width="396"
+      height="861"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZJ6GPFWAP0SKDATDSH42H" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""><br /></span
+  ><span style="color: #666666" data-darkreader-inline-color=""
+    >Example of how to share your video on the Discord mobile app</span
+  >
+</h4>
 <ul>
   <li>
     <strong>To change your input device, </strong>click the
@@ -381,11 +433,19 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060701192"
-    alt="voice_setting.png"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911227800471"
+      width="624"
+      height="463"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZJPFT3K3YYAMFTX3FJRN4" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of where to find your Input and Output Devices in the Voice &amp;
+    Video tab on the Discord desktop/browser app</span
+  >
+</h4>
 <h2 id="h_93cf0203-d5bb-4e02-b1b2-80dad445895d">
   <strong>How to Share your Screen</strong>
 </h2>
@@ -497,13 +557,18 @@
   hovering over the stream.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060703252"
-    alt="go_live.png"
-    width="534"
-    height="365"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214219415"
+      width="536"
+      height="356"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZK1J4F9499CD7ZYGB859W" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of what it looks like when someone is streaming on Discord</span
+  >
+</h4>
 <h1 id="h_ff9f9e16-c1d7-4626-8fbd-42d930f72536">
   <strong>More Tips and Tricks</strong>
 </h1>
@@ -688,11 +753,18 @@
   >and learn all the shortcuts for how to easily edit your text formatting!
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360060709052"
-    alt="markdowns.gif"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911227806999"
+      width="516"
+      height="226"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZKFG6FK0402J4Y8TXX255" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Various examples of different text markdown you can do on Discord</span
+  >
+</h4>
 <h2 id="h_01H93R67TVRVH0Q6PJEFCDS5JM">
   <strong>How to Add a Status to Your Voice/Video Call</strong>
 </h2>
@@ -747,13 +819,18 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/17153912411543"
-    alt="Voice Channel Status Example.png"
-    width="469"
-    height="466"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911214227607"
+      width="430"
+      height="433"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZKTF0V589QCNKB6WKDEXP" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of how to set a status for a Discord Voice Channel</span
+  >
+</h4>
 <p>
   <span class="wysiwyg-font-size-x-large"
     ><strong
@@ -782,11 +859,24 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/17153912416663"
-    alt="Permissions for roles.png"
-  />
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30911227810071"
+      width="463"
+      height="74"
+  /></span>
 </p>
+<h4 id="h_01JQ6ZMB07GWWGSDV8H0GK9T9Y" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of the </span
+  ><strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Set Voice Channel Status</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color="">
+    permission for a server role on the Discord desktop app</span
+  >
+</h4>
 <h1 id="h_377f3391-50a8-4266-a2c2-7cb90c3cace5">
   <strong>Troubleshooting &amp; Support</strong>
 </h1>

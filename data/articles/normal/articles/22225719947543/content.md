@@ -116,9 +116,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110464023"
-    width="600"
-    height="486"
+    src="https://support.discord.com/hc/article_attachments/30911692485271"
+    width="624"
+    height="380"
   />
 </p>
 <h4 id="h_01JFAWCFMDPV0EXAS4T5KFP263" class="wysiwyg-text-align-center">
@@ -140,9 +140,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110469015"
-    width="600"
-    height="486"
+    src="https://support.discord.com/hc/article_attachments/30911692490135"
+    width="624"
+    height="380"
   />
 </p>
 <h4 id="h_01JFAWDGBTG4XX266EGTXN8HTA" class="wysiwyg-text-align-center">
@@ -163,9 +163,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110477591"
+    src="https://support.discord.com/hc/article_attachments/30911692493335"
     width="624"
-    height="171"
+    height="380"
   />
 </p>
 <h4 id="h_01JFAWE1SEFTW1F5E8P4CQ25QS" class="wysiwyg-text-align-center">
@@ -181,9 +181,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110479767"
+    src="https://support.discord.com/hc/article_attachments/30911692497303"
     width="624"
-    height="505"
+    height="379"
   />
 </p>
 <h4 id="h_01JFAWRK81VEPVQ9PPH4FHP6YA" class="wysiwyg-text-align-center">
@@ -351,9 +351,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110485399"
-    width="601"
-    height="487"
+    src="https://support.discord.com/hc/article_attachments/30911713019799"
+    width="624"
+    height="379"
   />
 </p>
 <h4 id="h_01JFAWZRNPFNKWEYE0JV8N96PE" class="wysiwyg-text-align-center">
@@ -410,9 +410,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/28598110488087"
-    width="368"
-    height="360"
+    src="https://support.discord.com/hc/article_attachments/30911692504855"
+    width="483"
+    height="403"
   />
 </p>
 <h4 id="h_01JCM1315BNHAJNH019W5MH50C" class="wysiwyg-text-align-center">
@@ -468,16 +468,11 @@
   >
 </div>
 <p class="wysiwyg-text-align-center">
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26336778784407"
-      width="624"
-      height="424"
-  /></span>
+  <img
+    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXee3UW4nLedpucsNth7zCMDXiP_aAqrxOJk6OFoGXRNYz1zrRTC4oWQH54o2gMnYzfCEOuivf3blEADwJb_w1xewUa1-Fg57mi7UkwNSZtCTgzaJIZXNCevqa7DscOc4bibmszJGQ?key=abeLufT3tu3XbxpXcE6DLA"
+    width="624"
+    height="309"
+  />
 </p>
 <h4 id="h_01JCM14CA6DRZH2QHVYXM2GNB6" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
