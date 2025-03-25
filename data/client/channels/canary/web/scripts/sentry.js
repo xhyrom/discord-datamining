@@ -8521,7 +8521,20 @@
           d.pK.MYR,
           d.pK.VND,
           d.pK.KRW,
-          d.pK.IDR;
+          d.pK.IDR,
+          Object.freeze({
+            APPLICATIONS: (t) => (null == t ? null : ["applications", t]),
+            APP_PREMIUM_BUTTON: (t) =>
+              null == t ? null : ["premium-button", t],
+            CUSTOM_ACTIVITY_LINK: (t, e) =>
+              null == t || null == e ? null : ["custom-activity-links", t, e],
+            SKU: (t) => (null == t ? null : ["SKU", t]),
+            STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
+            SUBSCRIPTION_PLANS: (t) =>
+              null == t ? null : ["subscription-plans", t],
+            __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (t) =>
+              null == t ? null : ["useParentSkuData", t],
+          });
       },
       334431: function (t, e, a) {
         "use strict";
@@ -8596,7 +8609,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1606c1c668f72b2a562a26f7f419703dbb9562e1",
+            release: "discord_web-58a5c671f618e0076b39671c0e2439247368984c",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8662,8 +8675,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "382045"),
-            o.YA("builtAt", String("1742934927854"));
+            o.YA("buildNumber", "382051"),
+            o.YA("builtAt", String("1742935334975"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46492,4 +46505,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d9aa33e1df075a9a.js.map
+//# sourceMappingURL=sentry.9d6e13abf2555c7b.js.map
