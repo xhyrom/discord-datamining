@@ -28,6 +28,61 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: New Drop Trailer<br /></strong
+  ><strong>Quest Name: Drop Trailer Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the
+  <strong>New Drop Trailer</strong> in Discord to earn one-day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+  >! Learn more about Nitro Credits<a
+    href="https://support.discord.com/hc/en-us/articles/26362805097623"
+  >
+    <span class="wysiwyg-underline" style="color: #1155cc">here</span></a
+  >.<br /><strong>Who is Eligible: </strong>Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Drop Trailer Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>March 25, 2025 </strong>until<strong>
+    March 30, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 30, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: Fortnite <br /></strong
+  ><strong>Quest Name: Fortnite OG Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Fortnite OG Season 3 </strong>to receive a limited-time
+  <strong>Supply Llama avatar decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to users on PC, Playstation 4, PlayStation 5, Xbox Series X, and
+  Xbox Series S where <strong>Discord</strong> and <strong>Fortnite </strong>are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Fortnite OG Quest</strong> can be accepted on
+  <strong>PC, Playstation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
+    Xbox Series S</strong
+  >
+  from <strong>March 25, 2025 </strong>until<strong>
+    March 30, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 30, 2025 (0:00 UTC)</strong>.<br />The
+  <strong>Supply Llama avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>May 30, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Walmart Skyward Cinematic Trailer<br /></strong
   ><strong>Quest Name: Walmart Skyward Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
@@ -42,8 +97,8 @@
     March 30, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
   reward by <strong>May 18, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: Limit of one reward redemption per account.</strong
-  >
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -63,30 +118,6 @@
     March 24, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
   reward by <strong>April 7, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: The Hunt: Mega Edition <br /></strong
-  ><strong>Quest Name: Roblox Video Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the <strong>Roblox Video </strong>in
-  Discord and unlock a <strong>Cactrot</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Roblox Video Quest</strong> can be accepted on Discord desktop app
-  or browser client from
-  <strong>March 13, 2025 (11:00PM UTC) </strong>until<strong>
-    March 17, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>March 24, 2025 (11:00PM UTC)</strong>.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
@@ -419,29 +450,6 @@
   during this period and claim your reward by <strong>April 30, 2025</strong>
   <strong>(11:59PM UTC)</strong>. <br /><strong>Other Terms:</strong> Limit of
   one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Fuchsia Agent <br /></strong
-  ><strong>Quest Name: Strinova Fuchsia Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the
-  <strong>Fuchsia Agent video </strong>in Discord and unlock a<strong>
-    Fuchsia Agent avatar decoration.<br /></strong
-  ><strong>Who is Eligible:</strong> Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period: </strong>The
-  <strong>Strinova Fuchsia Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>January 17, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>February 23, 2025.  <br /></strong>The
-  <strong>Fuchsia Agent avatar decoration</strong> is a limited-time avatar
-  decoration and will only be yours as an avatar decoration until
-  <strong>March 23, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this avatar decoration.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
