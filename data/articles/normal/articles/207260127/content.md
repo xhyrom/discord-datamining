@@ -148,12 +148,10 @@
   </li>
 </ul>
 <div class="info-box">
-  <p class="wysiwyg-text-align-left">
-    When you enable Sync across clients on desktop, your theme syncs across all
-    devices (desktop, mobile, and browser). However, themes may display slightly
-    differently on mobile.<br />For instance, if you select Ash on desktop, it
-    will appear as Dark on mobile.
-  </p>
+  When you enable Sync across clients on desktop, your theme syncs across all
+  devices (desktop, mobile, and browser). However, themes may display slightly
+  differently on mobile.<br />For instance, if you select Ash on desktop, it
+  will appear as Dark on mobile.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -255,11 +253,9 @@
   >
 </h4>
 <div class="tip-box">
-  <p class="wysiwyg-text-align-left">
-    Even without Nitro, you can preview themes on the desktop app. Select the
-    <strong>Preview Theme</strong> button to open a preview sidebar where you
-    can test different themes.
-  </p>
+  Even without Nitro, you can preview themes on the desktop app. Select the
+  <strong>Preview Theme</strong> button to open a preview sidebar where you can
+  test different themes.
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/30893767846423"

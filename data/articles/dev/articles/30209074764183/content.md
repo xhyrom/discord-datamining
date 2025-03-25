@@ -20,8 +20,10 @@
   your console's developer portal.
 </p>
 <h4 id="h_01JP33DA4D9FGPMCDH1MVDA5YY">
-  ⚠️ Although binaries are available, we recommend waiting for full console
-  support before starting commercial development.
+  ⚠️ The Discord Social SDK is fully licensed middleware for PlayStation 5 and
+  Xbox Series X|S, we are limiting access to select partners at this time.
+  Please submit a request through the appropriate directory and Discord will
+  follow up with further information as soon as it's more widely available.
 </h4>
 <h1 id="h_01JP33DR398CK8ZP3H1MA63NQC">Discord Social SDK for PlayStation™</h1>
 <p>
