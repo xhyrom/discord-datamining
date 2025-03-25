@@ -8024,6 +8024,16 @@
           (r.APP_EMBED_CLICKED = "app_embed_clicked"),
           (r.APP_EMBED_LINK_COPIED = "app_embed_link_copied"),
           (r.APP_EMBED_LINK_SENT = "app_embed_link_sent"),
+          (r.CHAT_WALLPAPER_DM_CONTEXT_MENU_ENTRY_POINT_CLICKED =
+            "chat_wallpaper_dm_context_menu_entry_point_clicked"),
+          (r.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED =
+            "chat_wallpaper_toolbar_entry_point_clicked"),
+          (r.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED =
+            "chat_wallpaper_picker_blur_toggled"),
+          (r.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED =
+            "chat_wallpaper_picker_cancel_clicked"),
+          (r.CHAT_WALLPAPER_PICKER_APPLY_CLICKED =
+            "chat_wallpaper_picker_apply_clicked"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8586,7 +8596,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9b124a7474de147a1f2c8ec6408841fcfb000ea2",
+            release: "discord_web-1606c1c668f72b2a562a26f7f419703dbb9562e1",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8652,8 +8662,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "382029"),
-            o.YA("builtAt", String("1742934213656"));
+            o.YA("buildNumber", "382045"),
+            o.YA("builtAt", String("1742934927854"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46482,4 +46492,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.88b647a058368f72.js.map
+//# sourceMappingURL=sentry.d9aa33e1df075a9a.js.map
