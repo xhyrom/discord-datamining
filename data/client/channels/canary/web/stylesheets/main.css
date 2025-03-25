@@ -14026,29 +14026,6 @@ div.modalHeader_c28af8 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.orbIconSVG__85200 {
-  height: 18px;
-}
-.full-motion .loading__85200 {
-  animation-name: spin__85200;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes spin__85200 {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-.orbClaimCopy__8da0b {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 3px;
-}
 .nitroUpsellContainer_d0caf4 {
   display: flex;
   flex-direction: row;
@@ -57416,4 +57393,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c4cd0dbd5821b31c.css.map*/
+/*# sourceMappingURL=12633.7312db6caf226c02.css.map*/
