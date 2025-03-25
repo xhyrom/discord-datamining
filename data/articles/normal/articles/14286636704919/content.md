@@ -1,3 +1,10 @@
+<p>
+  The
+  <a href="https://x.com/discord_support">Discord Support X account</a> serves
+  as a place for us to directly connect with our users, allowing our team to
+  target specific concerns while also engaging with the community! Think of us
+  as @discord but now with…additional support!
+</p>
 <p id="h_01JQ5MJ9M13Z66XFKNH83WD8ZP">
   <strong
     ><span class="wysiwyg-font-size-x-large"
@@ -7,20 +14,19 @@
 </p>
 <ul>
   <li>
-    <a href="#h_01JQ5NEEKCEPQYBPXFD5KWBR7Y"
-      >Welcome to Discord X Support (@discord_support)!</a
-    >
-  </li>
-  <li><a href="#h_01JQ5NEEKCVD82WG83N21TBGVD">Our X Posts</a></li>
-  <li>
-    <a href="#h_01JQ5NEEKCZQ8HVFZ1MPG9PTHR"
-      >Issues @discord_support CAN Assist With</a
-    >
-  </li>
-  <li>
-    <a href="#h_01JQ5NEEKCRY7XNEZA1N3N2PZS"
-      >Issues @discord_support CANNOT Assist With</a
-    >
+    <a href="#h_01JQ5NEEKCVD82WG83N21TBGVD">Our X Posts</a>
+    <ul>
+      <li>
+        <a href="#h_01JQ5NEEKCZQ8HVFZ1MPG9PTHR"
+          >Issues @discord_support CAN Assist With</a
+        >
+      </li>
+      <li>
+        <a href="#h_01JQ5NEEKCRY7XNEZA1N3N2PZS"
+          >Issues @discord_support CANNOT Assist With</a
+        >
+      </li>
+    </ul>
   </li>
   <li>
     <a href="#h_01JQ5MJ9M14H26CJW4CSQENJZF"
@@ -29,16 +35,6 @@
   </li>
   <li><a href="#h_01JQ5MJ9M1S6PJJK0E83E5M745">Want to Learn More?</a></li>
 </ul>
-<h1 id="h_01JQ5NEEKCEPQYBPXFD5KWBR7Y">
-  Welcome to Discord X Support (@discord_support)!
-</h1>
-<p>
-  The
-  <a href="https://x.com/discord_support">Discord Support X account</a> serves
-  as a place for us to directly connect with our users, allowing our team to
-  target specific concerns while also engaging with the community! Think of us
-  as @discord but now with…additional support!
-</p>
 <h1 id="h_01JQ5NEEKCVD82WG83N21TBGVD">Our X Posts</h1>
 <p>
   Our <a href="https://x.com/discord_support">X posts</a> help keep Discord
@@ -63,8 +59,11 @@
   attach a screenshot of any error messages you’re receiving!
 </p>
 <p>
-  Although this list is not exhaustive, here are a few examples of issues that
-  <a href="https://x.com/discord_support">@discord_support</a> can assist with:
+  <strong
+    >Although this list is not exhaustive, here are a few examples of issues
+    that <a href="https://x.com/discord_support">@discord_support</a>
+    <span class="wysiwyg-underline"><em>can</em></span> assist with:</strong
+  >
 </p>
 <ul>
   <li>Basic troubleshooting</li>
@@ -92,36 +91,20 @@
   <a href="https://x.com/discord_support">@discord_support</a> account scope of
   support.
 </p>
-<p><strong>Examples of issues @Discord_Support cannot assist with:</strong></p>
+<p>
+  <strong
+    >Examples of issues @discord_Support
+    <span class="wysiwyg-underline"><em>cannot</em></span> assist with:</strong
+  >
+</p>
 <ul>
   <li>
-    2FA removal or lost account access
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/115001221072"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Lost Two-Factor Codes</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/4423385681175"
-          target="_blank"
-          rel="noopener noreferrer"
-          >How To Change your Discord Account’s Email</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/218410947"
-          target="_blank"
-          rel="noopener noreferrer"
-          >I forgot my Password! Where can I set a new one?</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/115001221072"
+      target="_blank"
+      rel="noopener noreferrer"
+      >2FA removal or lost account access</a
+    >
   </li>
   <li>
     <a
@@ -132,99 +115,60 @@
     >
   </li>
   <li>
-    Disabled and banned accounts
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/18210965981847"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Discord Warning System</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/18210965981847"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Disabled and banned accounts</a
+    >
   </li>
   <li>
-    Hacked accounts
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/24160905919511"
-          target="_blank"
-          rel="noopener noreferrer"
-          >My Discord Account was Hacked or Compromised</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/24160905919511"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Hacked accounts</a
+    >
   </li>
   <li>
-    Phone verification issues
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/6181726888215"
-          target="_blank"
-          rel="noopener noreferrer"
-          >How to Verify Your Discord Account</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/6181726888215"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Phone verification issues</a
+    >
   </li>
   <li>
-    Refunds or subscription cancellations
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360012668071"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Refund Policy</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/19580873036695"
-          target="_blank"
-          rel="noopener noreferrer"
-          >How to Cancel Your Nitro Subscription</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360012668071"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Refunds</a
+    >
+    or subscription
+    <a
+      href="https://support.discord.com/hc/en-us/articles/19580873036695"
+      target="_blank"
+      rel="noopener noreferrer"
+      >cancellations</a
+    >
   </li>
   <li>
-    Server ownership transfer
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/26286635870359"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Requesting a Transfer of Server Ownership</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/26286635870359"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Server ownership transfer</a
+    >
   </li>
   <li>
-    Terms of service related inquiries - including reports of Terms of Service
-    violations
-    <ul>
-      <li>
-        <a
-          href="https://discord.com/terms"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Terms of Service</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://discord.com/guidelines"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Community Guidelines</a
-        >
-      </li>
-    </ul>
+    <a
+      href="https://discord.com/terms"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Terms of service</a
+    >
+    related inquiries
   </li>
 </ul>
 <h1 id="h_01JQ5MJ9M14H26CJW4CSQENJZF">
@@ -243,8 +187,8 @@
 </p>
 <p>
   If you have any updates or questions regarding a support ticket, make sure to
-  drop it directly into your pre-existing ticket thread to avoid any confusion
-  with those that are handling your ticket. 
+  drop it directly into your pre-existing support ticket thread to avoid any
+  confusion with the Discord Support teammates that are handling your ticket. 
 </p>
 <h1 id="h_01JQ5MJ9M1S6PJJK0E83E5M745">Want to Learn More?</h1>
 <p>
