@@ -37950,12 +37950,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .notice__6e2b9 .closeIcon__6e2b9 path {
   fill: var(--custom-notice-text);
 }
-@supports not (grid-template-columns: subgrid) {
+@supports not (
+  (grid-template-columns: subgrid) and (white-space-collapse: collapse)
+) {
   .visual-refresh .notice__6e2b9 {
     border-top-left-radius: 0;
   }
 }
-@supports (grid-template-columns: subgrid) {
+@supports (grid-template-columns: subgrid) and (white-space-collapse: collapse) {
   .visual-refresh .notice__6e2b9 {
     grid-area: notice;
   }
@@ -41655,7 +41657,7 @@ html.disable-forced-colors * {
 .clearOverrideButton_a57b28 {
   margin-left: 8px;
 }
-@supports (grid-template-columns: subgrid) {
+@supports (grid-template-columns: subgrid) and (white-space-collapse: collapse) {
   .bar_c38106 {
     grid-area: titleBar;
   }
@@ -57416,4 +57418,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.efafdce931e6867f.css.map*/
+/*# sourceMappingURL=12633.451aec20d22a1786.css.map*/
