@@ -1008,6 +1008,7 @@ id,hash,label
 2025-03_settings_authorized_apps_redesign,495658397,Settings Authorized Apps Redesign
 2025-03_shop_hide_strikethrough_price,1907383429,Shop Hide Strikethrough Price Experiment
 2025-03_slayer_notif_supression_killswitch,975341663,Disable suppressing notifications with slayer game active
+2025-03_soundboard_row_limit,1059166982,Soundboard Row Limit
 2025-03_test_badges_existing_users,3151405917,Test Badges Existing Users Experiment
 2025-03_test_badges_new_users,522921030,Test Badges New Users Experiment
 2025-03_test_tile_existing_users,3685207000,Test Tile Existing Users Experiment
