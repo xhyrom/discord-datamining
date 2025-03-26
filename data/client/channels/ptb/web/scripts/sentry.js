@@ -7301,6 +7301,8 @@
           (r.FORUM_CHANNEL_SEEN_BATCH = "forum_channel_seen_batch"),
           (r.FORUM_CHANNEL_GRID_UPSELL_VIEWED =
             "forum_channel_grid_upsell_viewed"),
+          (r.MESSAGE_DISPATCH_SESSION_METADATA_FOUND =
+            "message_dispatch_session_metadata_found"),
           (r.MEDIA_CHANNEL_UPSELL_CLICKED = "media_channel_upsell_clicked"),
           (r.MEDIA_POST_PREVIEW_EMBED_CLICKED =
             "media_post_preview_embed_clicked"),
@@ -8022,6 +8024,16 @@
           (r.APP_EMBED_CLICKED = "app_embed_clicked"),
           (r.APP_EMBED_LINK_COPIED = "app_embed_link_copied"),
           (r.APP_EMBED_LINK_SENT = "app_embed_link_sent"),
+          (r.CHAT_WALLPAPER_DM_CONTEXT_MENU_ENTRY_POINT_CLICKED =
+            "chat_wallpaper_dm_context_menu_entry_point_clicked"),
+          (r.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED =
+            "chat_wallpaper_toolbar_entry_point_clicked"),
+          (r.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED =
+            "chat_wallpaper_picker_blur_toggled"),
+          (r.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED =
+            "chat_wallpaper_picker_cancel_clicked"),
+          (r.CHAT_WALLPAPER_PICKER_APPLY_CLICKED =
+            "chat_wallpaper_picker_apply_clicked"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8509,7 +8521,20 @@
           d.pK.MYR,
           d.pK.VND,
           d.pK.KRW,
-          d.pK.IDR;
+          d.pK.IDR,
+          Object.freeze({
+            APPLICATIONS: (t) => (null == t ? null : ["applications", t]),
+            APP_PREMIUM_BUTTON: (t) =>
+              null == t ? null : ["premium-button", t],
+            CUSTOM_ACTIVITY_LINK: (t, e) =>
+              null == t || null == e ? null : ["custom-activity-links", t, e],
+            SKU: (t) => (null == t ? null : ["SKU", t]),
+            STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
+            SUBSCRIPTION_PLANS: (t) =>
+              null == t ? null : ["subscription-plans", t],
+            __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (t) =>
+              null == t ? null : ["useParentSkuData", t],
+          });
       },
       334431: function (t, e, a) {
         "use strict";
@@ -8585,7 +8610,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-25-0a1bd50a37560e6479a32a4de6b733bf3d1e39a8-discord_web",
+              "2025-03-26-e3770fd049c94419ad40495c0687480d173fb9e4-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8651,8 +8676,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "382201"),
-            o.YA("builtAt", String("1742943311724"));
+            o.YA("buildNumber", "382355"),
+            o.YA("builtAt", String("1742973539030"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46481,4 +46506,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.181fdc8225ffbd7a.js.map
+//# sourceMappingURL=sentry.2b611c5b665a5d38.js.map
