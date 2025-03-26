@@ -32,7 +32,7 @@
       data-darkreader-inline-color=""
       >even bigger files</span
     ></a
-  >. For non-Nitro subscribers, the maximum file upload is 25MB. 
+  >. For non-Nitro subscribers, the maximum file upload is 10MB. 
 </p>
 <p>
   There is a wide variety of file types that can be uploaded to Discord. Here
