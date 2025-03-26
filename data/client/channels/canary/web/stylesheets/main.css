@@ -33548,8 +33548,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   height: 24px;
 }
 .role_dfa8b6 > :first-child {
-  margin-right: 4px;
-  margin-left: 1px;
+  margin-right: 2px;
+  margin-left: -2px;
 }
 .roleFlowerStar_dfa8b6 {
   margin: 0 4px;
@@ -57410,4 +57410,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ed5aee43e5ea2a1e.css.map*/
+/*# sourceMappingURL=12633.73478225f52bb0df.css.map*/
