@@ -1293,17 +1293,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 :where(.visual-refresh)
   .tooltipTop__382e7
   .tooltipPointer__382e7:not(.tooltipPointerBg__382e7) {
-  margin-top: -3px;
+  margin-top: -1.5px;
 }
 :where(.visual-refresh)
   .tooltipLeft__382e7
   .tooltipPointer__382e7:not(.tooltipPointerBg__382e7) {
-  margin-left: -3px;
+  margin-left: -1.5px;
 }
 :where(.visual-refresh)
   .tooltipRight__382e7
   .tooltipPointer__382e7:not(.tooltipPointerBg__382e7) {
-  margin-right: -3px;
+  margin-right: -1.5px;
 }
 :where(.visual-refresh)
   .tooltipBottom__382e7
@@ -1311,7 +1311,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 :where(.visual-refresh)
   .tooltipCenter__382e7
   .tooltipPointer__382e7:not(.tooltipPointerBg__382e7) {
-  margin-bottom: -3px;
+  margin-bottom: -1.5px;
 }
 :where(.visual-refresh) .tooltipPrimary__382e7 {
   --tooltip-pointer-bg: var(--background-floating);
@@ -57412,4 +57412,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fd35b385d0adc6dd.css.map*/
+/*# sourceMappingURL=12633.32e36cbe5976171e.css.map*/
