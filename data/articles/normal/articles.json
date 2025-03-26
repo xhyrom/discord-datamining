@@ -9263,37 +9263,6 @@
     "body": "<p class=\"wysiwyg-text-align-left\">You all know and love our Safety Officer Jim. He's here to give you another reminder, and this time it's about scam/phishing bots. <br><br>If you receive a Direct Message from a bot offering you something, or asking you to click on a link, disregard it! We have never created a bot designed to offer you free products, so you can safely determine that this is a scam. Do not add these bots to your server in hopes of receiving something in return as they likely will compromise your server. If anything gets deleted, we have no way of restoring what was lost!<br><br>Whenever you're curious about a bot, your best bet is to reach out to the developer. If you're unsure of how to proceed, or your account gets compromised, you should reach out to our support team. Options to reach our support team are listed at the bottom of this page.</p>\n<h3 class=\"wysiwyg-text-align-left\">If a bot is contacting you to be added to your server, or asking you to click on a suspicious link, please <a href=\"https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord\" target=\"_blank\" rel=\"noopener\">report</a> this to our Trust &amp; Safety team so they can investigate it.</h3>"
   },
   {
-    "id": 360035966492,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360035966492.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/360035966492-Screen-Reader-Data-Toggle",
-    "author_id": 364802902112,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 7,
-    "section_id": 24453668939799,
-    "created_at": "2019-11-15T20:52:28Z",
-    "name": "Screen Reader Data Toggle",
-    "title": "Screen Reader Data Toggle",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2023-12-05T16:48:07Z",
-    "user_segment_id": null,
-    "permission_group_id": 1720972,
-    "content_tag_ids": [],
-    "label_names": [
-      "Privacy",
-      "answer-bot",
-      "Accessibility",
-      "A11y",
-      "screen reader",
-      "vision"
-    ],
-    "body": "<h3 id=\"docs-internal-guid-3f8ad128-7fff-baf2-22e3-068c08a7396e\">\n<span style=\"color: #434343;\">By December 5, 2023, the screen reader detection modal will be retired. We are no longer tracking any screen-reader usage data and the </span><strong><span style=\"color: #434343;\">Allow Discord to track Screen Reader usage</span></strong><span style=\"color: #434343;\"> setting has been removed.</span>\n</h3>\n<p><span style=\"font-weight: 400;\">We’re constantly working to improve Discord for everyone that uses it—no matter how they use it. Screen readers are a unique way people use Discord, and we want to be sure we’re delivering the best possible experience.</span></p>\n<p><span style=\"font-weight: 400;\">If our app detects that you are using a screen reader, you will see an alert that asks if you’d be willing to let us anonymously record that. We use this data to improve Discord for all screen reader users. <br>Nothing in the app will change.</span></p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/360043315552\" alt=\"1.png\"></p>\n<h3 id=\"h_01HGVP6E9QW99D5RQ052NCS6ZR\" class=\"wysiwyg-text-align-center\">Note: We will only show this modal once per device, regardless of which option you choose.</h3>\n<h1 id=\"h_01HGVP6E9RCBG0WM7FHE00EWPA\">Privacy</h1>\n<p><span style=\"font-weight: 400;\">If you press </span><strong>Yep!</strong><span style=\"font-weight: 400;\">, we will note that you use a screen reader anonymously, so that we can work on improvements based on the data gathered.</span></p>\n<p><span style=\"font-weight: 400;\">If you press </span><strong>No. Turn this off.</strong><span style=\"font-weight: 400;\"> or </span><strong>click outside the modal to exit, </strong><span style=\"font-weight: 400;\">the modal will go away and not bother you again. Our servers will not know that you ever saw this modal, nor that you disabled screen reader tracking. We do store data locally on your computer to make sure that we never show you that modal again.</span></p>\n<p><span style=\"font-weight: 400;\">If you change your mind at a later time, you can toggle this setting by going to your </span><strong>User Settings</strong><span style=\"font-weight: 400;\"> ⚙️ &gt; </span><strong>Privacy &amp; Safety</strong><span style=\"font-weight: 400;\"> &gt; </span><strong>Toggle the \"Allow Discord to track Screen Reader usage\" switch to on or off</strong><span style=\"font-weight: 400;\">.</span></p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/360043418711\" alt=\"2.png\"></p>\n<p><span style=\"font-weight: 400;\">We hope to use this data to improve your Discord experience and if you would like to give our Accessibility team live feedback, please fill out this </span><a href=\"https://dis.gd/a11y\" target=\"_self\">form</a><span style=\"font-weight: 400;\">. </span></p>"
-  },
-  {
     "id": 360017949691,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360017949691.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/360017949691-Legacy-Nitro-Classic-FAQ",
