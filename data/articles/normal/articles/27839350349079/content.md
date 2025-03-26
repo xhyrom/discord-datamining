@@ -67,12 +67,12 @@
     Xbox Series S</strong
   >
   from <strong>March 25, 2025 </strong>until<strong>
-    March 30, 2025 (11:59PM UTC)</strong
+    March 31, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 30, 2025 (0:00 UTC)</strong>.<br />The
+  reward by <strong>May 1, 2025 (0:00 UTC)</strong>.<br />The
   <strong>Supply Llama avatar decoration</strong> is a limited-time avatar
   decoration and will only be yours as an avatar decoration until
-  <strong>May 30, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  <strong>May 31, 2025 (11:59PM UTC)</strong>. After this date, you will no
   longer have access to this avatar decoration.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
