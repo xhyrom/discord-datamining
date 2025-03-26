@@ -32344,6 +32344,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .italicPrompt_ab8609 {
   font-style: italic;
+  padding-right: 1px;
+  padding-bottom: 1px;
 }
 .addStatusIcon_ab8609 {
   display: inline;
@@ -57407,4 +57409,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.aac4378d37434556.css.map*/
+/*# sourceMappingURL=12633.15aeee3d2268d1c2.css.map*/
