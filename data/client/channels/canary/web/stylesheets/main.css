@@ -13540,6 +13540,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .fadeIn__4bbc6 {
   animation: fadeIn__4bbc6 0.3s forwards;
 }
+.noFade__4bbc6 {
+  opacity: 1;
+}
 @keyframes fadeIn__4bbc6 {
   0% {
     opacity: 0;
@@ -13548,7 +13551,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
     opacity: 1;
   }
 }
-.containerExit__4bbc6 {
+.fadeOut__4bbc6 {
   animation: fadeOut__4bbc6 0.4s forwards;
 }
 @keyframes fadeOut__4bbc6 {
@@ -57409,4 +57412,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.15aeee3d2268d1c2.css.map*/
+/*# sourceMappingURL=12633.fd35b385d0adc6dd.css.map*/

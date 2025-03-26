@@ -8034,6 +8034,12 @@
             "chat_wallpaper_picker_cancel_clicked"),
           (r.CHAT_WALLPAPER_PICKER_APPLY_CLICKED =
             "chat_wallpaper_picker_apply_clicked"),
+          (r.CHAT_WALLPAPER_USER_SIDE_CLEAR_TOGGLED =
+            "chat_wallpaper_user_side_clear_toggled"),
+          (r.CHAT_WALLPAPER_NITRO_LINK_CLICKED =
+            "chat_wallpaper_nitro_link_clicked"),
+          (r.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED =
+            "chat_wallpaper_wallpaper_option_selected"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8609,7 +8615,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f9e005eb537988a916d0299767eb4f4c3f1a0242",
+            release: "discord_web-2acebb6205d25f3949ba86fff15e032918bd6536",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8675,8 +8681,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "382725"),
-            o.YA("builtAt", String("1743026745965"));
+            o.YA("buildNumber", "382738"),
+            o.YA("builtAt", String("1743027427678"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46505,4 +46511,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.0489a197061521c8.js.map
+//# sourceMappingURL=sentry.00ddd58399613b27.js.map
