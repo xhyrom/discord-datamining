@@ -30123,10 +30123,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   background-color: var(--background-modifier-accent);
   border-radius: 50%;
 }
-.orbBadge__8061a {
-  height: 14px;
-  width: 14px;
-}
 .nameTag__05e81 {
   display: flex;
   justify-content: flex-start;
@@ -57410,4 +57406,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.73478225f52bb0df.css.map*/
+/*# sourceMappingURL=12633.549e2ad045205cf2.css.map*/
