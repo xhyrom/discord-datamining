@@ -1,7 +1,7 @@
 <p>
-  Starting from <strong>October 7, 2024 (10:00AM PT)</strong> to
-  <strong>May 31, 2025 (11:59PM PT)</strong>, YouTube Premium subscribers within
-  the United States can claim Discord Nitro through YouTube's Member Hub.
+  Starting from <strong>October 7, 2024 (10:00AM PT)</strong> to
+  <strong>June 30, 2025 (11:59PM PT)</strong>, YouTube Premium subscribers
+  within the United States can claim Discord Nitro through YouTube's Member Hub.
 </p>
 <p>
   During this same period, YouTube Premium subscribers in the United States,
@@ -66,7 +66,7 @@
   the 3 month Nitro trial. 
 </p>
 <p><strong>Requirements:</strong></p>
-<p>Redeem to Discord account by <strong>June 30, 2025 (11:59PM PT)</strong>.</p>
+<p>Redeem to Discord account by <strong>July 29, 2025 (11:59PM PT)</strong>.</p>
 <p><strong>Subscription:</strong></p>
 <p>
   After the 3 month free trial period, your Nitro subscription will convert to a
@@ -230,7 +230,7 @@
   As long as you're a <strong>YouTube Premium </strong>member, you'll be able to
   claim the Nitro promo from YouTube from
   <strong>October 7, 2024 (10:00AM PT)</strong><strong> </strong>to
-  <strong>May 31, 2025 (11:59PM PT). </strong>
+  <strong>June 30, 2025 (11:59PM PT)</strong><strong>. </strong>
 </p>
 <h2 id="h_01J8K1GT0VW0XK53J8Y5FWEVZK">
   <strong>Eligibility for the Claiming this Promotion from Youtube</strong>
@@ -243,8 +243,8 @@
 <p>
   In the US, active YouTube Premium subscribers can claim the code from their
   YouTube Premium Member Hub. All offer claims must be by
-  <strong>May 31, 2025 (11:59PM PT)</strong> and redeemed by
-  <strong>June 30, 2025 (11:59PM PT)</strong>.
+  <strong>June 30, 2025 (11:59PM PT)</strong> and redeemed by
+  <strong>July 29, 2025 (11:59PM PT)</strong>.
 </p>
 <div class="tip-box">
   <strong>NOTE</strong>: If you currently have a YouTube Premium trial
@@ -526,20 +526,20 @@
     Canada, United Kingdom, France, Germany, Japan, and South Korea</strong
   >
   can claim Discord Nitro promo between
-  <strong>October 7, 2024 (10:00AM PT)</strong> -
-  <strong>May 31, 2025 (11:59PM PT). </strong>
+  <strong>October 7, 2024 (10:00AM PT)</strong> -
+  <strong>June 30, 2025 (11:59PM PT)</strong><strong>. </strong>
 </p>
 <p>
   <strong>Q: How long does the Discord Nitro promotion link last for?</strong>
 </p>
 <p>
   <strong>A:</strong> You must redeem the Nitro promotion by
-  <strong>June 30, 2025</strong> <strong>(11:59PM PT)</strong> if you’re a
+  <strong>July 29, 2025</strong> <strong>(11:59PM PT)</strong> if you’re a
   <strong>YouTube Premium</strong> subscriber.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>June 30, 2025 (11:59pm PT)</strong>, it will expire and you will no
+  <strong>July 29, 2025 (11:59pm PT)</strong>, it will expire and you will no
   longer be able to claim 3 months of Discord Nitro. 
 </p>
 <h2 id="h_01J8K1GT0VTBXFK3F0E8VA9B9Q">
