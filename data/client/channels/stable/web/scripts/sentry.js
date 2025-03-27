@@ -7728,6 +7728,7 @@
             "referral_program_share_cta_clicked"),
           (r.CACHE_STORE_CACHE_SKIPPED = "cache_store_cache_skipped"),
           (r.GATEWAY_SOCKET_RESET = "gateway_socket_reset"),
+          (r.SESSION_START_CLIENT = "session_start_client"),
           (r.APPLE_PARTNER_IAP_REQUEST_SENT = "apple_partner_iap_request_sent"),
           (r.POMELO_ERRORS = "pomelo_errors"),
           (r.POMELO_EDIT_STEP_VIEWED = "pomelo_edit_step_viewed"),
@@ -8034,6 +8035,12 @@
             "chat_wallpaper_picker_cancel_clicked"),
           (r.CHAT_WALLPAPER_PICKER_APPLY_CLICKED =
             "chat_wallpaper_picker_apply_clicked"),
+          (r.CHAT_WALLPAPER_USER_SIDE_CLEAR_TOGGLED =
+            "chat_wallpaper_user_side_clear_toggled"),
+          (r.CHAT_WALLPAPER_NITRO_LINK_CLICKED =
+            "chat_wallpaper_nitro_link_clicked"),
+          (r.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED =
+            "chat_wallpaper_wallpaper_option_selected"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8610,7 +8617,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-26-e3770fd049c94419ad40495c0687480d173fb9e4-discord_web",
+              "2025-03-27-c38a556c596d2c9b66838ce2430240f639ac8bad-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8676,8 +8683,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "382355"),
-            o.YA("builtAt", String("1742973539030"));
+            o.YA("buildNumber", "383047"),
+            o.YA("builtAt", String("1743099678009"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46506,4 +46513,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2b611c5b665a5d38.js.map
+//# sourceMappingURL=sentry.38b4fdecae8bc511.js.map
