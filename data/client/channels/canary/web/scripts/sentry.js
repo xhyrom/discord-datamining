@@ -12,7 +12,7 @@
               ? _[0]
               : void 0 !== e && (10 != +e || a)
                 ? Y(t, e, a, r)
-                : F(t);
+                : V(t);
           }
           function o(t, e) {
             (this.value = t), (this.sign = e), (this.isSmall = !1);
@@ -190,7 +190,7 @@
           function P(t, e) {
             var a,
               r,
-              s = F(e);
+              s = V(e);
             if (n) return [new c(t.value / s.value), new c(t.value % s.value)];
             var d = t.value,
               A = s.value;
@@ -350,7 +350,7 @@
             (i.prototype = Object.create(_.prototype)),
             (c.prototype = Object.create(_.prototype)),
             (o.prototype.add = function (t) {
-              var e = F(t);
+              var e = V(t);
               if (this.sign !== e.sign) return this.subtract(e.negate());
               var a = this.value,
                 r = e.value;
@@ -360,7 +360,7 @@
             }),
             (o.prototype.plus = o.prototype.add),
             (i.prototype.add = function (t) {
-              var e = F(t),
+              var e = V(t),
                 a = this.value;
               if (a < 0 !== e.sign) return this.subtract(e.negate());
               var r = e.value;
@@ -372,13 +372,13 @@
             }),
             (i.prototype.plus = i.prototype.add),
             (c.prototype.add = function (t) {
-              return new c(this.value + F(t).value);
+              return new c(this.value + V(t).value);
             }),
             (c.prototype.plus = c.prototype.add),
             (o.prototype.subtract = function (t) {
               var e,
                 a,
-                r = F(t);
+                r = V(t);
               if (this.sign !== r.sign) return this.add(r.negate());
               var n = this.value,
                 _ = r.value;
@@ -392,7 +392,7 @@
             }),
             (o.prototype.minus = o.prototype.subtract),
             (i.prototype.subtract = function (t) {
-              var e = F(t),
+              var e = V(t),
                 a = this.value;
               if (a < 0 !== e.sign) return this.add(e.negate());
               var r = e.value;
@@ -400,7 +400,7 @@
             }),
             (i.prototype.minus = i.prototype.subtract),
             (c.prototype.subtract = function (t) {
-              return new c(this.value - F(t).value);
+              return new c(this.value - V(t).value);
             }),
             (c.prototype.minus = c.prototype.subtract),
             (o.prototype.negate = function () {
@@ -427,7 +427,7 @@
               var e,
                 a,
                 r,
-                n = F(t),
+                n = V(t),
                 i = this.value,
                 c = n.value,
                 s = this.sign !== n.sign;
@@ -481,11 +481,11 @@
                     : O(Math.abs(t.value), this.value, this.sign !== t.sign);
             }),
             (i.prototype.multiply = function (t) {
-              return F(t)._multiplyBySmall(this);
+              return V(t)._multiplyBySmall(this);
             }),
             (i.prototype.times = i.prototype.multiply),
             (c.prototype.multiply = function (t) {
-              return new c(this.value * F(t).value);
+              return new c(this.value * V(t).value);
             }),
             (c.prototype.times = c.prototype.multiply),
             (o.prototype.square = function () {
@@ -508,7 +508,7 @@
             }),
             (c.prototype.over = c.prototype.divide =
               function (t) {
-                return new c(this.value / F(t).value);
+                return new c(this.value / V(t).value);
               }),
             (i.prototype.over =
               i.prototype.divide =
@@ -519,7 +519,7 @@
             }),
             (c.prototype.mod = c.prototype.remainder =
               function (t) {
-                return new c(this.value % F(t).value);
+                return new c(this.value % V(t).value);
               }),
             (i.prototype.remainder =
               i.prototype.mod =
@@ -529,7 +529,7 @@
               var e,
                 a,
                 r,
-                n = F(t),
+                n = V(t),
                 o = this.value,
                 c = n.value;
               if (0 === c) return _[1];
@@ -550,7 +550,7 @@
             }),
             (i.prototype.pow = o.prototype.pow),
             (c.prototype.pow = function (t) {
-              var e = F(t),
+              var e = V(t),
                 a = this.value,
                 r = e.value,
                 n = BigInt(0),
@@ -570,7 +570,7 @@
               return E;
             }),
             (o.prototype.modPow = function (t, e) {
-              if (((t = F(t)), (e = F(e)).isZero()))
+              if (((t = V(t)), (e = V(e)).isZero()))
                 throw Error("Cannot take modPow with modulus 0");
               var a = _[1],
                 r = this.mod(e);
@@ -588,13 +588,13 @@
             }),
             (c.prototype.modPow = i.prototype.modPow = o.prototype.modPow),
             (o.prototype.compareAbs = function (t) {
-              var e = F(t),
+              var e = V(t),
                 a = this.value,
                 r = e.value;
               return e.isSmall ? 1 : m(a, r);
             }),
             (i.prototype.compareAbs = function (t) {
-              var e = F(t),
+              var e = V(t),
                 a = Math.abs(this.value),
                 r = e.value;
               return e.isSmall
@@ -607,7 +607,7 @@
             }),
             (c.prototype.compareAbs = function (t) {
               var e = this.value,
-                a = F(t).value;
+                a = V(t).value;
               return (e = e >= 0 ? e : -e) === (a = a >= 0 ? a : -a)
                 ? 0
                 : e > a
@@ -617,7 +617,7 @@
             (o.prototype.compare = function (t) {
               if (t === 1 / 0) return -1;
               if (t === -1 / 0) return 1;
-              var e = F(t),
+              var e = V(t),
                 a = this.value,
                 r = e.value;
               return this.sign !== e.sign
@@ -634,7 +634,7 @@
             (i.prototype.compare = function (t) {
               if (t === 1 / 0) return -1;
               if (t === -1 / 0) return 1;
-              var e = F(t),
+              var e = V(t),
                 a = this.value,
                 r = e.value;
               return e.isSmall
@@ -656,7 +656,7 @@
               if (t === 1 / 0) return -1;
               if (t === -1 / 0) return 1;
               var e = this.value,
-                a = F(t).value;
+                a = V(t).value;
               return e === a ? 0 : e > a ? 1 : -1;
             }),
             (c.prototype.compareTo = c.prototype.compare),
@@ -765,7 +765,7 @@
               return this.value === BigInt(0);
             }),
             (o.prototype.isDivisibleBy = function (t) {
-              var e = F(t);
+              var e = V(t);
               return (
                 !e.isZero() &&
                 (!!e.isUnit() ||
@@ -810,7 +810,7 @@
               o.prototype.isProbablePrime),
             (o.prototype.modInv = function (t) {
               for (
-                var e, a, n, _ = r.zero, o = r.one, i = F(t), c = this.abs();
+                var e, a, n, _ = r.zero, o = r.one, i = V(t), c = this.abs();
                 !c.isZero();
 
               )
@@ -863,7 +863,7 @@
             return 1e7 >= Math.abs(t);
           }
           function M(t, e, a) {
-            e = F(e);
+            e = V(e);
             for (
               var n = t.isNegative(),
                 _ = e.isNegative(),
@@ -893,7 +893,7 @@
             return I;
           }
           (o.prototype.shiftLeft = function (t) {
-            var e = F(t).toJSNumber();
+            var e = V(t).toJSNumber();
             if (!b(e)) throw Error(String(e) + " is too large for shifting.");
             if (e < 0) return this.shiftRight(-e);
             var a = this;
@@ -905,7 +905,7 @@
               o.prototype.shiftLeft),
             (o.prototype.shiftRight = function (t) {
               var e,
-                a = F(t).toJSNumber();
+                a = V(t).toJSNumber();
               if (!b(a)) throw Error(String(a) + " is too large for shifting.");
               if (a < 0) return this.shiftLeft(-a);
               for (var r = this; a >= S; ) {
@@ -950,13 +950,13 @@
             return a & -a;
           }
           function w(t, e) {
-            return (t = F(t)), (e = F(e)), t.greater(e) ? t : e;
+            return (t = V(t)), (e = V(e)), t.greater(e) ? t : e;
           }
           function B(t, e) {
-            return (t = F(t)), (e = F(e)), t.lesser(e) ? t : e;
+            return (t = V(t)), (e = V(e)), t.lesser(e) ? t : e;
           }
           function W(t, e) {
-            if (((t = F(t).abs()), (e = F(e).abs()), t.equals(e))) return t;
+            if (((t = V(t).abs()), (e = V(e).abs()), t.equals(e))) return t;
             if (t.isZero()) return e;
             if (e.isZero()) return t;
             for (var a, r, n = _[1]; t.isEven() && e.isEven(); )
@@ -1009,17 +1009,17 @@
                 throw Error(s + " is not a valid digit in base " + e + ".");
               }
             }
-            e = F(e);
+            e = V(e);
             var E = [],
               l = "-" === t[0];
             for (_ = +!!l; _ < t.length; _++) {
               var s = t[_];
-              if (s in c) E.push(F(c[s]));
+              if (s in c) E.push(V(c[s]));
               else if ("<" === s) {
                 var u = _;
                 do _++;
                 while (">" !== t[_] && _ < t.length);
-                E.push(F(t.slice(u + 1, _)));
+                E.push(V(t.slice(u + 1, _)));
               } else throw Error(s + " is not a valid character");
             }
             return H(E, e, l);
@@ -1137,7 +1137,7 @@
               I.push(+t.slice(A, d)), (A -= 7) < 0 && (A = 0), (d -= 7);
             return u(I), new o(I, a);
           }
-          function F(t) {
+          function V(t) {
             return "number" == typeof t
               ? (function (t) {
                   if (n) return new c(BigInt(t));
@@ -1196,7 +1196,7 @@
               function () {
                 return parseInt(this.toString(), 10);
               });
-          for (var V = 0; V < 1e3; V++) (_[V] = F(V)), V > 0 && (_[-V] = F(-V));
+          for (var F = 0; F < 1e3; F++) (_[F] = V(F)), F > 0 && (_[-F] = V(-F));
           return (
             (_.one = _[1]),
             (_.zero = _[0]),
@@ -1206,8 +1206,8 @@
             (_.gcd = W),
             (_.lcm = function (t, e) {
               return (
-                (t = F(t).abs()),
-                (e = F(e).abs()),
+                (t = V(t).abs()),
+                (e = V(e).abs()),
                 t.divide(W(t, e)).multiply(e)
               );
             }),
@@ -1215,9 +1215,9 @@
               return t instanceof o || t instanceof i || t instanceof c;
             }),
             (_.randBetween = function (t, e, a) {
-              t = F(t);
+              t = V(t);
               var r = a || Math.random,
-                n = B(t, (e = F(e))),
+                n = B(t, (e = V(e))),
                 o = w(t, e).subtract(n).add(1);
               if (o.isSmall) return n.add(Math.floor(r() * o));
               for (
@@ -1232,7 +1232,7 @@
               return n.add(_.fromArray(c, 1e7, !1));
             }),
             (_.fromArray = function (t, e, a) {
-              return H(t.map(F), F(e || 10), a);
+              return H(t.map(V), V(e || 10), a);
             }),
             _
           );
@@ -8041,6 +8041,12 @@
             "chat_wallpaper_nitro_link_clicked"),
           (r.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED =
             "chat_wallpaper_wallpaper_option_selected"),
+          (r.RING_TO_GUILD_VC_BANNER_SHOWN =
+            "impression_ring_to_guild_vc_banner_shown"),
+          (r.RING_TO_GUILD_VC_MENU_ITEM_SHOWN =
+            "impression_ring_to_guild_vc_menu_item_shown"),
+          (r.RING_CALL_DECLINED = "ring_call_declined"),
+          (r.RING_CALL_ACCEPTED = "ring_call_accepted"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -8616,7 +8622,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-e8ae40a7e6b91f2b95d50b0136230f1b738a34ca",
+            release: "discord_web-0f7bdcf84dd6573e0600ea0ab34055ba5c8b4ed0",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8682,8 +8688,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "383229"),
-            o.YA("builtAt", String("1743110591222"));
+            o.YA("buildNumber", "383240"),
+            o.YA("builtAt", String("1743111108880"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22965,8 +22971,8 @@
               return [t[0] / 255, t[1] / 255, t[2] / 255, t[3]];
             });
           var x = i.unpack,
-            F = i.unpack,
-            V = Math.floor,
+            V = i.unpack,
+            F = Math.floor,
             j = i.unpack,
             X = i.type,
             $ = function () {
@@ -23006,7 +23012,7 @@
 
               )
                 s[E] = arguments[E];
-              var l = (s = F(s, "hcg"))[0],
+              var l = (s = V(s, "hcg"))[0],
                 u = s[1],
                 I = s[2];
               I *= 255;
@@ -23016,7 +23022,7 @@
                 360 === l && (l = 0),
                   l > 360 && (l -= 360),
                   l < 0 && (l += 360);
-                var d = V((l /= 60)),
+                var d = F((l /= 60)),
                   A = l - d,
                   f = I * (1 - u),
                   p = f + R * (1 - A),
@@ -23443,7 +23449,7 @@
             tK = Math.sqrt,
             tk = Math.atan2,
             tx = Math.round,
-            tF = function () {
+            tV = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               var a = tY(t, "lab"),
                 r = a[0],
@@ -23453,7 +23459,7 @@
                 i = (tk(_, n) * tH + 360) % 360;
               return 0 === tx(1e4 * o) && (i = Number.NaN), [r, o, i];
             },
-            tV = i.unpack,
+            tF = i.unpack,
             tj = i.unpack,
             tX = i.DEG2RAD,
             t$ = Math.sin,
@@ -23478,9 +23484,9 @@
             t1 = i.type,
             t2 = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tV(t, "rgb"),
+              var a = tF(t, "rgb"),
                 r = tS(a[0], a[1], a[2]);
-              return tF(r[0], r[1], r[2]);
+              return tV(r[0], r[1], r[2]);
             };
           (u.prototype.lch = function () {
             return t2(this._rgb);
@@ -23934,7 +23940,7 @@
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               var a = eT(t, "rgb"),
                 r = el(a[0], a[1], a[2]);
-              return tF(r[0], r[1], r[2]);
+              return tV(r[0], r[1], r[2]);
             };
           (u.prototype.oklch = function () {
             return eD(this._rgb);
@@ -24225,8 +24231,8 @@
             eK = Math.PI,
             ek = Math.cos,
             ex = Math.sin,
-            eF = Math.atan2,
-            eV = function (t, e) {
+            eV = Math.atan2,
+            eF = function (t, e) {
               for (
                 var a = t.length, r = [0, 0, 0, 0], n = 0;
                 n < t.length;
@@ -25236,7 +25242,7 @@
                 })),
                 "lrgb" === e)
               )
-                return eV(t, a);
+                return eF(t, a);
               for (
                 var _ = t.shift(), o = _.get(e), i = [], c = 0, s = 0, E = 0;
                 E < o.length;
@@ -25264,7 +25270,7 @@
               });
               for (var R = 0; R < o.length; R++)
                 if ("h" === e.charAt(R)) {
-                  for (var d = (eF(s / i[R], c / i[R]) / eK) * 180; d < 0; )
+                  for (var d = (eV(s / i[R], c / i[R]) / eK) * 180; d < 0; )
                     d += 360;
                   for (; d >= 360; ) d -= 360;
                   o[R] = d;
@@ -25770,7 +25776,7 @@
             addIntegration: () => c.M5,
             addTracingExtensions: () => s.T,
             breadcrumbsIntegration: () => K.f,
-            browserApiErrorsIntegration: () => V.t,
+            browserApiErrorsIntegration: () => F.t,
             browserProfilingIntegration: () => t_.x,
             browserTracingIntegration: () => tr.E8,
             captureConsoleIntegration: () => E.X,
@@ -25824,7 +25830,7 @@
             isInitialized: () => i.dk,
             lastEventId: () => i.eW,
             lazyLoadIntegration: () => j.R,
-            linkedErrorsIntegration: () => F.O,
+            linkedErrorsIntegration: () => V.O,
             makeBrowserOfflineTransport: () => tn.O1,
             makeFetchTransport: () => w.f,
             makeMultiplexedTransport: () => O.W,
@@ -25909,8 +25915,8 @@
           K = a(408720),
           k = a(804410),
           x = a(376457),
-          F = a(42367),
-          V = a(515737),
+          V = a(42367),
+          F = a(515737),
           j = a(27269),
           X = a(17411),
           $ = a(453574),
@@ -36028,8 +36034,8 @@ Error:`,
             colorScheme: K = "system",
             themeLight: k = {},
             themeDark: x = {},
-            addScreenshotButtonLabel: F = g,
-            cancelButtonLabel: V = I,
+            addScreenshotButtonLabel: V = g,
+            cancelButtonLabel: F = I,
             confirmButtonLabel: j = d,
             emailLabel: X = p,
             emailPlaceholder: $ = f,
@@ -36066,7 +36072,7 @@ Error:`,
                 themeLight: k,
                 triggerLabel: tn,
                 triggerAriaLabel: t_,
-                cancelButtonLabel: V,
+                cancelButtonLabel: F,
                 submitButtonLabel: ta,
                 confirmButtonLabel: j,
                 formTitle: q,
@@ -36078,7 +36084,7 @@ Error:`,
                 namePlaceholder: tt,
                 successMessageText: tr,
                 isRequiredLabel: z,
-                addScreenshotButtonLabel: F,
+                addScreenshotButtonLabel: V,
                 removeScreenshotButtonLabel: te,
                 onFormClose: ti,
                 onFormOpen: to,
@@ -36415,8 +36421,8 @@ ${
           K,
           k,
           x,
-          F = {},
-          V = [],
+          V = {},
+          F = [],
           j =
             /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i,
           X = Array.isArray;
@@ -36537,7 +36543,7 @@ ${
                   (n.length = r.length = 0),
                   (e = void 0),
                   H.sort(x))
-                : e && W.__c && W.__c(e, V));
+                : e && W.__c && W.__c(e, F));
           e && ts(r, e, n), (ta.__r = 0);
         }
         function tr(t, e, a, r, n, _, o, i, c, s, E) {
@@ -36546,7 +36552,7 @@ ${
             I,
             R,
             d,
-            A = (r && r.__k) || V,
+            A = (r && r.__k) || F,
             f = e.length;
           for (
             a.__d = c,
@@ -36654,7 +36660,7 @@ ${
             null != (I = a.__k[l]) &&
               "boolean" != typeof I &&
               "function" != typeof I &&
-              ((u = -1 === I.__i ? F : A[I.__i] || F),
+              ((u = -1 === I.__i ? V : A[I.__i] || V),
               (I.__i = l),
               tc(t, I, u, n, _, o, i, c, s, E),
               (R = I.__e),
@@ -36946,7 +36952,7 @@ ${
                   else {
                     if (
                       ((_ = _ && B.call(t.childNodes)),
-                      (A = a.props || F),
+                      (A = a.props || V),
                       !i && null != _)
                     )
                       for (A = {}, s = 0; s < t.attributes.length; s++)
@@ -37056,7 +37062,7 @@ ${
         function tu(t, e, a) {
           return this.constructor(t, a);
         }
-        (B = V.slice),
+        (B = F.slice),
           (W = {
             __e: function (t, e, a, r) {
               for (var n, _, o; (e = e.__); )
@@ -37442,7 +37448,7 @@ ${
           let a = t.get(e);
           return "string" == typeof a ? a.trim() : "";
         }
-        function tF({
+        function tV({
           options: t,
           defaultEmail: e,
           defaultName: a,
@@ -37590,7 +37596,7 @@ ${
                         __self: this,
                         __source: { fileName: tk, lineNumber: 154 },
                       },
-                      z(tV, {
+                      z(tF, {
                         label: L,
                         isRequiredLabel: D,
                         isRequired: p,
@@ -37626,7 +37632,7 @@ ${
                         __self: this,
                         __source: { fileName: tk, lineNumber: 171 },
                       },
-                      z(tV, {
+                      z(tF, {
                         label: d,
                         isRequiredLabel: D,
                         isRequired: f,
@@ -37661,7 +37667,7 @@ ${
                     __self: this,
                     __source: { fileName: tk, lineNumber: 187 },
                   },
-                  z(tV, {
+                  z(tF, {
                     label: N,
                     isRequiredLabel: D,
                     isRequired: !0,
@@ -37748,7 +37754,7 @@ ${
             ),
           );
         }
-        function tV({ label: t, isRequired: e, isRequiredLabel: a }) {
+        function tF({ label: t, isRequired: e, isRequiredLabel: a }) {
           return z(
             "span",
             {
@@ -37889,7 +37895,7 @@ ${
                         __self: this,
                         __source: { fileName: tj, lineNumber: 66 },
                       }),
-                      z(tF, {
+                      z(tV, {
                         ...a,
                         onSubmitSuccess: c,
                         __self: this,
@@ -38268,8 +38274,8 @@ ${tZ}
                     tc(
                       i,
                       (r = (n || i).__k = z(Z, null, [r])),
-                      c || F,
-                      F,
+                      c || V,
+                      V,
                       void 0 !== i.ownerSVGElement,
                       n
                         ? [n]
@@ -39686,8 +39692,8 @@ ${tZ}
           K = a(157079),
           k = a(469359),
           x = a(393523);
-        let F = m.n,
-          V = "sentryReplaySession",
+        let V = m.n,
+          F = "sentryReplaySession",
           j = "Unable to send Replay";
         function X(t, e) {
           return null != t ? t : e();
@@ -40951,10 +40957,10 @@ ${tZ}
         function tx(t, e) {
           return -2 === e.getId(t);
         }
-        function tF(t) {
+        function tV(t) {
           return !!t.changedTouches;
         }
-        function tV(t, e) {
+        function tF(t, e) {
           return !!("IFRAME" === t.nodeName && e.getMeta(t));
         }
         function tj(t, e) {
@@ -41233,7 +41239,7 @@ ${tZ}
                       recordCanvas: this.recordCanvas,
                       inlineImages: this.inlineImages,
                       onSerialize: (t) => {
-                        tV(t, this.mirror) && this.iframeManager.addIframe(t),
+                        tF(t, this.mirror) && this.iframeManager.addIframe(t),
                           tj(t, this.mirror) &&
                             this.stylesheetManager.trackLinkElement(t),
                           tX(n) &&
@@ -41867,7 +41873,7 @@ ${tZ}
                   tU(
                     et((t) => {
                       let e = er(t),
-                        { clientX: a, clientY: _ } = tF(t)
+                        { clientX: a, clientY: _ } = tV(t)
                           ? t.changedTouches[0]
                           : t;
                       n || (n = tB()),
@@ -41936,14 +41942,14 @@ ${tZ}
                         ? (E = "TouchStart")
                         : t2[e] === t2.MouseUp && (E = "TouchEnd")
                       : t3.Pen;
-                  } else tF(o) && (c = t3.Touch);
+                  } else tV(o) && (c = t3.Touch);
                   null !== c
                     ? ((s = c),
                       ((E.startsWith("Touch") && c === t3.Touch) ||
                         (E.startsWith("Mouse") && c === t3.Mouse)) &&
                         (c = null))
                     : t2[e] === t2.Click && ((c = s), (s = null));
-                  let l = tF(o) ? o.changedTouches[0] : o;
+                  let l = tV(o) ? o.changedTouches[0] : o;
                   if (!l) return;
                   let u = a.getId(i),
                     { clientX: I, clientY: R } = l;
@@ -43072,15 +43078,15 @@ ${tZ}
             getCanvasManager: x,
           } = t;
           _ = K;
-          let F = !b || window.parent === window,
-            V = !1;
-          if (!F)
+          let V = !b || window.parent === window,
+            F = !1;
+          if (!V)
             try {
-              window.parent.document && (V = !1);
+              window.parent.document && (F = !1);
             } catch (t) {
-              V = !0;
+              F = !0;
             }
-          if (F && !a) throw Error("emit function is required");
+          if (V && !a) throw Error("emit function is required");
           void 0 !== C && void 0 === y.mousemove && (y.mousemove = C),
             eO.reset();
           let j =
@@ -43142,7 +43148,7 @@ ${tZ}
             q = (t) => {
               for (let e of W || [])
                 e.eventProcessor && (t = e.eventProcessor(t));
-              return m && !V && (t = m(t)), t;
+              return m && !F && (t = m(t)), t;
             };
           o = (t, _) => {
             if (
@@ -43160,10 +43166,10 @@ ${tZ}
                 (t.type !== t0.IncrementalSnapshot ||
                   t.data.source !== t1.Mutation) &&
                 ea.forEach((t) => t.unfreeze()),
-              F)
+              V)
             )
               (0, p.x)([a, "optionalCall", (e) => e(q(t), _)]);
-            else if (V) {
+            else if (F) {
               let e = {
                 type: "rrweb",
                 event: q(t),
@@ -43416,7 +43422,7 @@ ${tZ}
                 recordCanvas: G,
                 inlineImages: B,
                 onSerialize: (t) => {
-                  tV(t, eO) && te.addIframe(t),
+                  tF(t, eO) && te.addIframe(t),
                     tj(t, eO) && tt.trackLinkElement(t),
                     tX(t) && tn.addShadowRoot(t.shadowRoot, document);
                 },
@@ -43659,13 +43665,13 @@ ${tZ}
               }),
               c ||
                 ((c = []),
-                (0, v.hl)(F, "open", function (t) {
+                (0, v.hl)(V, "open", function (t) {
                   return function (...e) {
                     if (c)
                       try {
                         c.forEach((t) => t());
                       } catch (t) {}
-                    return t.apply(F, e);
+                    return t.apply(V, e);
                   };
                 })),
               c.push(t),
@@ -43779,7 +43785,7 @@ ${tZ}
                   category: "ui.slowClickDetected",
                   data: {
                     ..._.data,
-                    url: F.location.href,
+                    url: V.location.href,
                     route: e.getCurrentRoute(),
                     timeAfterClickMs: a,
                     endReason: r,
@@ -43797,7 +43803,7 @@ ${tZ}
                 category: "ui.multiClick",
                 data: {
                   ..._.data,
-                  url: F.location.href,
+                  url: V.location.href,
                   route: e.getCurrentRoute(),
                   clickCount: n,
                   metric: !0,
@@ -43993,7 +43999,7 @@ ${tZ}
           return e ? e(t) : null;
         }
         function eK(t) {
-          return ((S.Z1 || F.performance.timeOrigin) + t) / 1e3;
+          return ((S.Z1 || V.performance.timeOrigin) + t) / 1e3;
         }
         function ek(t) {
           let e = t.entries[t.entries.length - 1];
@@ -44009,7 +44015,7 @@ ${tZ}
           if (e && e.sources) for (let t of e.sources) t.node && a.push(t.node);
           return ej(t, "cumulative-layout-shift", a);
         }
-        function eF(t) {
+        function eV(t) {
           let e = t.entries[t.entries.length - 1];
           return ej(
             t,
@@ -44017,7 +44023,7 @@ ${tZ}
             e && e.target ? [e.target] : void 0,
           );
         }
-        function eV(t) {
+        function eF(t) {
           let e = t.entries[t.entries.length - 1];
           return ej(
             t,
@@ -44277,7 +44283,7 @@ ${tZ}
         }
         function e2() {
           try {
-            return "sessionStorage" in F && !!F.sessionStorage;
+            return "sessionStorage" in V && !!V.sessionStorage;
           } catch (t) {
             return !1;
           }
@@ -44303,7 +44309,7 @@ ${tZ}
         function e4(t) {
           if (e2())
             try {
-              F.sessionStorage.setItem(V, JSON.stringify(t));
+              V.sessionStorage.setItem(F, JSON.stringify(t));
             } catch (t) {}
         }
         function e5(
@@ -44349,7 +44355,7 @@ ${tZ}
             (function (t) {
               if (!e2()) return null;
               try {
-                let e = F.sessionStorage.getItem(V);
+                let e = V.sessionStorage.getItem(F);
                 if (!e) return null;
                 let a = JSON.parse(e);
                 return eq("[Replay] Loading existing session", t), e6(a);
@@ -44568,11 +44574,11 @@ ${tZ}
           return new URLSearchParams(t).toString();
         }
         function ap(t, e) {
-          let a = (function (t, e = F.document.baseURI) {
+          let a = (function (t, e = V.document.baseURI) {
             if (
               t.startsWith("http://") ||
               t.startsWith("https://") ||
-              t.startsWith(F.location.origin)
+              t.startsWith(V.location.origin)
             )
               return t;
             let a = new URL(t, e);
@@ -44874,7 +44880,7 @@ ${tZ}
                       },
                     },
                   };
-                })(F.performance.memory),
+                })(V.performance.memory),
               ]),
             );
           } catch (t) {
@@ -45387,7 +45393,7 @@ ${tZ}
                   (function () {
                     if (e2())
                       try {
-                        F.sessionStorage.removeItem(V);
+                        V.sessionStorage.removeItem(F);
                       } catch (t) {}
                   })(),
                   (this.session = void 0);
@@ -45481,8 +45487,8 @@ ${tZ}
             return !!this._checkSession();
           }
           setInitialState() {
-            let t = `${F.location.pathname}${F.location.hash}${F.location.search}`,
-              e = `${F.location.origin}${t}`;
+            let t = `${V.location.pathname}${V.location.hash}${V.location.search}`,
+              e = `${V.location.origin}${t}`;
             (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
               this._clearContext(),
@@ -45591,13 +45597,13 @@ ${tZ}
           }
           _addListeners() {
             try {
-              F.document.addEventListener(
+              V.document.addEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                F.addEventListener("blur", this._handleWindowBlur),
-                F.addEventListener("focus", this._handleWindowFocus),
-                F.addEventListener("keydown", this._handleKeyboardEvent),
+                V.addEventListener("blur", this._handleWindowBlur),
+                V.addEventListener("focus", this._handleWindowFocus),
+                V.addEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.addListeners(),
                 this._hasInitializedCoreListeners ||
                   ((function (t) {
@@ -45943,8 +45949,8 @@ ${tZ}
                 r.push(
                   (0, H.$A)(eY(ek, t)),
                   (0, H.PR)(eY(ex, t)),
-                  (0, H.to)(eY(eF, t)),
-                  (0, H.YF)(eY(eV, t)),
+                  (0, H.to)(eY(eV, t)),
+                  (0, H.YF)(eY(eF, t)),
                 ),
                 () => {
                   r.forEach((t) => t());
@@ -45954,13 +45960,13 @@ ${tZ}
           }
           _removeListeners() {
             try {
-              F.document.removeEventListener(
+              V.document.removeEventListener(
                 "visibilitychange",
                 this._handleVisibilityChange,
               ),
-                F.removeEventListener("blur", this._handleWindowBlur),
-                F.removeEventListener("focus", this._handleWindowFocus),
-                F.removeEventListener("keydown", this._handleKeyboardEvent),
+                V.removeEventListener("blur", this._handleWindowBlur),
+                V.removeEventListener("focus", this._handleWindowFocus),
+                V.removeEventListener("keydown", this._handleKeyboardEvent),
                 this.clickDetector && this.clickDetector.removeListeners(),
                 this._performanceCleanupCallback &&
                   this._performanceCleanupCallback();
@@ -45970,7 +45976,7 @@ ${tZ}
           }
           __init() {
             this._handleVisibilityChange = () => {
-              "visible" === F.document.visibilityState
+              "visible" === V.document.visibilityState
                 ? this._doChangeToForegroundTasks()
                 : this._doChangeToBackgroundTasks();
             };
@@ -46512,4 +46518,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bd4832728f85cd30.js.map
+//# sourceMappingURL=sentry.ecd2e82de98ae167.js.map
