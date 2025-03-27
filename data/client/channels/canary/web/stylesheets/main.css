@@ -13608,8 +13608,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .preview__4bbc6.hover__4bbc6 {
   opacity: 1;
 }
-.visual-refresh .accountContainer__4bbc6 {
-  border-radius: 4px;
+.visual-refresh .rtcOpened__4bbc6 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .account__4bbc6.hover__4bbc6 {
   opacity: 0.4;
@@ -57415,4 +57416,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.149bd45f38571521.css.map*/
+/*# sourceMappingURL=12633.ea6301f97a777827.css.map*/
