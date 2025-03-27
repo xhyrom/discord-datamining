@@ -28,6 +28,35 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: We Got You<br /></strong
+  ><strong>Quest Name: PC Game Pass Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch the <strong>We Got You </strong>video
+  in Discord to receive a
+  <strong>7 Day PC Game Pass Trial</strong>!<br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the <strong>United States</strong>,
+  <strong>Canada</strong>, <strong>Mexico</strong>, <strong>Brazil</strong>,
+  <strong>United</strong> <strong>Kingdom</strong>, <strong>France</strong>,
+  <strong>Germany</strong>, <strong>Australia</strong>, <strong>Japan</strong>,
+  <strong>Thailand</strong>, <strong>Malaysia</strong>,
+  <strong>Singapore, Korea</strong> on desktop where <strong>Discord</strong> is
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>PC Game Pass Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>March 27, 2025 </strong>until<strong>
+    March 31, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 15, 2025 (11:59 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per account.
+    This reward is not available in Argentina, China, Russia, and Turkey.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: New Drop Trailer<br /></strong
   ><strong>Quest Name: Drop Trailer Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
