@@ -1,6 +1,6 @@
 # Job Listing
 
-## Staff Security Engineer, Platform Security
+## Staff Software Engineer, Platform Security
 
 **Location:** San Francisco, CA or Remote (U.S. only)
 
@@ -10,12 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7849838002](https://discord.com/jobs/7849838002)
 
-**Updated At:** Wed, 26 Mar 2025 23:54:37 GMT
+**Updated At:** Fri, 28 Mar 2025 20:17:39 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is about empowering people to find belonging. Trusted by millions to keep their communications out of the hands of evildoers, we depend on security and privacy for success. Our Platform Security Engineering team protects the people who create Discord and the systems they use to do it, making the “secure way” the “easy way.”
-We are looking for a Staff Security Engineer, reporting to the Platform Security Engineering Manager, to advance this mission through security expertise, software development, and operational excellence. You’ll articulate and pursue the most leveraged opportunities to reduce security risk across Engineering, bridging organizational boundaries to create secure and lovable “paved paths” for managing identities and access, shipping code, configuring cloud infrastructure, and operating services.
-If you are a security engineer with a passion for security and privacy, deep curiosity, eagerness to own technically and socially complex projects, and a strong desire to improve Discord, read on!
+We are looking for a Staff Software Engineer, reporting to the Platform Security Engineering Manager, to advance this mission through security expertise, software development, and operational excellence. You’ll articulate and pursue the most leveraged opportunities to reduce security risk across Engineering, bridging organizational boundaries to create secure and lovable “paved paths” for managing identities and access, shipping code, configuring cloud infrastructure, and operating services.
+If you are a software engineer with a passion for security and privacy, deep curiosity, eagerness to own technically and socially complex projects, and a strong desire to improve Discord, read on!
 What you'll do
 
 Guide strategy and lead software engineering projects on a small, highly-autonomous, horizontally-integrated security team with a lot of leverage. This is a code-forward role!
