@@ -38,8 +38,8 @@
   <strong>Canada</strong>, <strong>Mexico</strong>, <strong>Brazil</strong>,
   <strong>United</strong> <strong>Kingdom</strong>, <strong>France</strong>,
   <strong>Germany</strong>, <strong>Australia</strong>, <strong>Japan</strong>,
-  <strong>Thailand</strong>, <strong>Malaysia</strong>,
-  <strong>Singapore, Korea</strong> on desktop where <strong>Discord</strong> is
+  <strong>Thailand</strong>, <strong>Malaysia</strong>, and
+  <strong>Singapore</strong> on desktop where <strong>Discord</strong> is
   available. Discord’s premium services are restricted in some regions.<br /><strong
     >Availability Period:</strong
   >
@@ -52,7 +52,8 @@
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
     ><strong>Other Terms: </strong>Limit of one reward redemption per account.
-    This reward is not available in Argentina, China, Russia, and Turkey.</span
+    This reward is not available in Argentina, China, Russia, Korea, and
+    Turkey.</span
   >
 </p>
 <p> </p>
