@@ -23365,6 +23365,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .completed__183e8 {
   color: var(--status-positive);
 }
+.customConfetti__69c6c {
+  top: -120px;
+  right: -75px;
+  pointer-events: none;
+}
 .container_b7b2cf {
   display: flex;
   flex-direction: column;
@@ -29846,11 +29851,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .darkText__78e61 {
   color: var(--black-500);
-}
-.customConfetti__78e61 {
-  top: -120px;
-  right: -75px;
-  pointer-events: none;
 }
 .bundlePreview__78e61 {
   width: 292px;
@@ -41703,7 +41703,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   min-width: 0;
 }
 .getNitroButton_f86e69 {
-  height: 40px;
+  min-height: 40px;
   flex-shrink: 0;
 }
 .getNitroButtonText_f86e69 {
@@ -41717,6 +41717,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   height: 80vh;
   padding-top: var(--spacing-16);
   justify-content: center;
+}
+.blurToggle_f86e69 {
+  padding: 12px 10px !important;
 }
 [data-popout-root],
 html {
@@ -57523,4 +57526,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c7535f2e0a5a796d.css.map*/
+/*# sourceMappingURL=12633.b66cc4e4bf3dada6.css.map*/
