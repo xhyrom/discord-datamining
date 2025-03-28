@@ -39928,6 +39928,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   color: var(--primary-200);
   text-align: center;
 }
+.description_c6e099 a {
+  position: relative;
+  z-index: 1;
+}
 .description_c6e099 p {
   margin: 0;
 }
@@ -57542,4 +57546,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.dc3d048acab7b3a3.css.map*/
+/*# sourceMappingURL=12633.e1bf27bc5f8d9e0e.css.map*/
