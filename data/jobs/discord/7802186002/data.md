@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7802186002](https://discord.com/jobs/7802186002)
 
-**Updated At:** Mon, 10 Mar 2025 21:22:27 GMT
+**Updated At:** Fri, 28 Mar 2025 14:56:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
@@ -32,7 +32,7 @@ You have experience building and shipping product features. Especially features 
 You have a sense for product and design. We don’t operate in silos, and you’ll be collaborating closely with cross-functional peers (product managers, designers, analysts, and other engineers. You should be able to express opinions and collaborate to make something great.
 You take a holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.
 
-#LI-RemoteThe US base salary range for this full-time position is $223,000 - $245,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+#LI-RemoteThe US base salary range for this full-time position is $248,000 - $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
