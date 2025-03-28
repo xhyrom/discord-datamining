@@ -23680,7 +23680,7 @@ body .headerAnimation_b54a5b {
   }
 }
 .visual-refresh .body_c6f1a4 {
-  padding: 0 var(--space-24);
+  padding: 0 var(--space-16);
   border-radius: var(--radius-md);
 }
 .visual-refresh .sliderBody_c6f1a4 {
@@ -57526,4 +57526,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b66cc4e4bf3dada6.css.map*/
+/*# sourceMappingURL=12633.81f222766888b448.css.map*/
