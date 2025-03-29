@@ -321,7 +321,7 @@
       "education": "education_optional",
       "internal_job_id": 6078090002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "San Francisco, CA "
       },
       "metadata": [
         {
@@ -338,7 +338,7 @@
         }
       ],
       "id": 7807928002,
-      "updated_at": "2025-03-25T18:14:24-04:00",
+      "updated_at": "2025-03-28T23:49:50-04:00",
       "requisition_id": "R-100758",
       "title": "Director of Machine Learning, Safety",
       "company_name": "Discord",
@@ -353,13 +353,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
