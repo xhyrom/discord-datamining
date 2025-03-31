@@ -47,9 +47,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/31059872203287"
-    width="218"
-    height="334"
+    src="https://support.discord.com/hc/article_attachments/31060803746967"
+    width="287"
+    height="340"
   />
 </p>
 <h4 id="h_01JPX017456EV62EJGYWTKGNSA" class="wysiwyg-text-align-center">
@@ -288,9 +288,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30836679224855"
-      width="496"
-      height="358"
+      src="https://support.discord.com/hc/article_attachments/31060803747991"
+      width="513"
+      height="327"
   /></span>
 </p>
 <h4 id="h_01JPXB6JDGC5Y2ZSE747E1JJFQ" class="wysiwyg-text-align-center">
