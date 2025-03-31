@@ -23759,6 +23759,11 @@ body .headerAnimation_b54a5b {
   position: relative;
   background-color: var(--background-primary);
 }
+.visual-refresh .headerContainer__2dea3 {
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  margin-top: -2px;
+}
 .closeContainer__2dea3 {
   width: 24px;
   height: 24px;
@@ -57551,4 +57556,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f64551312099d908.css.map*/
+/*# sourceMappingURL=12633.e2bccbb13256dd0c.css.map*/
