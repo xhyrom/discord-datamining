@@ -206,7 +206,12 @@
             loading="lazy"
             alt=""
             src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/671a186071e6c3f032efd4d2_Logo.svg"
-            class="nav_brand_main-black-logo"
+            class="nav_brand_main-black-logo" /><img
+            width="146"
+            loading="lazy"
+            alt=""
+            src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
+            class="nav_brand_main-logo-bg"
         /></a>
         <div class="nav_menu_wr">
           <ul role="list" class="nav_menu">
@@ -689,10 +694,6 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Featured</div>
                           <a
-                            href="https://discord.com/developers/gdc-2025"
-                            class="dd_nav-link w-inline-block"
-                            ><div>GDC 2025</div></a
-                          ><a
                             href="https://discord.com/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
                             ><div>Discord Social SDK</div></a
