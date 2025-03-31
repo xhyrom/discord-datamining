@@ -17079,17 +17079,22 @@ span.clanTag__5d473 {
   min-width: initial;
   padding: 4px;
 }
+.full-motion .button__2d0ab .icon__2d0ab {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
 .button__2d0ab:hover {
   background: var(--background-modifier-hover);
 }
 .button__2d0ab:hover .icon__2d0ab {
   fill: var(--interactive-hover);
+  transform: scale(1.1);
 }
 .button__2d0ab:active {
   background: var(--background-modifier-active);
 }
 .button__2d0ab:active .icon__2d0ab {
   fill: var(--interactive-active);
+  transform: scale(1);
 }
 .tooltipContainer__2d0ab:first-child > .button__2d0ab {
   padding-left: 6px;
@@ -57546,4 +57551,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d79d747449c33863.css.map*/
+/*# sourceMappingURL=12633.2c29277e75d3f056.css.map*/
