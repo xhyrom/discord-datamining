@@ -182,9 +182,9 @@
     height="479"
   />
 </p>
-<h4 id="h_01JQPFH6B0EA05G5069HN894HW" class="wysiwyg-text-align-center">
+<h4 id="h_01JQPNFZFQM0YQMQWD4S6DM6S8" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Discord server Verification Levels on desktop</span
+    >Discord server Verification Levels on the desktop app</span
   >
 </h4>
 <div class="tip-box">
@@ -218,15 +218,15 @@
     height="489"
   />
 </p>
-<h4 id="h_01JQPFH6B0QE65ES9Y649FFN92" class="wysiwyg-text-align-center">
+<h4 id="h_01JQPNGENPPVZQDVY8JE85XP94" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Discord server Verification Levels on mobile</span
+    >Discord server Verification Levels on the mobile app</span
   >
 </h4>
 <p>
   4. After you have made your choice, press <strong>Save</strong> in the upper
   right corner to save your changes. Once you’ve saved your changes, the
-  Verification Level for your server should be all set!
+  Verification Level for your server should be set!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
