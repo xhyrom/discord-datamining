@@ -41,15 +41,15 @@
 <h1 id="h_01JPWZHHA3AV3DDVEF35WSHKWP">What are nameplates?</h1>
 <p>
   Nameplates are unique designs that let you customize how your display name
-  appears on DIscord. While avatar decorations and profile effects let you
+  appears on Discord. While avatar decorations and profile effects let you
   personalize your profile, nameplates let you add more flair to your name so it
   stands out with style in your DMs, group chats, and servers.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30830984961175"
-    width="292"
-    height="306"
+    src="https://support.discord.com/hc/article_attachments/31059872203287"
+    width="218"
+    height="334"
   />
 </p>
 <h4 id="h_01JPX017456EV62EJGYWTKGNSA" class="wysiwyg-text-align-center">
