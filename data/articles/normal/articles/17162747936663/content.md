@@ -1,42 +1,68 @@
-<p id="docs-internal-guid-8cd8f672-7fff-9773-4f1d-080db30352f2">
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li><a href="#h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop </a></li>
-  <li>
-    <a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a>
-    <ul>
-      <li><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
-    <ul>
-      <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></li>
-      <li><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></li>
-    </ul>
-  </li>
-  <li><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G">Gifting from the Shop</a></li>
-  <li>
-    <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li><a href="#h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop </a></li>
+    <li>
+      <a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a>
+      <ul>
+        <li><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
+      <ul>
+        <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></li>
+        <li><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></li>
+      </ul>
+    </li>
+    <li><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G">Gifting from the Shop</a></li>
+    <li>
+      <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop</h1>
 <p>
-  From <strong>avatar decorations</strong> to <strong>profile effects</strong>,
-  our Shop has a variety of items you can buy and collect to customize your
-  profile! Items purchased from the Shop are yours to keep and apply whenever
-  you want. Now you can add your favorite styles to your profile for any
-  occasion!  
+  From <strong>avatar decorations</strong> to
+  <strong>profile effects </strong>and<strong> nameplates</strong>, our Shop has
+  a variety of items you can buy and collect to customize your profile! Items
+  purchased from the Shop are yours to keep and apply whenever you want. Now you
+  can add your favorite styles to your profile for any occasion!  
 </p>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
 <p id="docs-internal-guid-06d82dee-7fff-3f1f-f01d-d16bf0924909">
   Once you enter the Shop, you will be able to preview and purchase available
-  avatar decorations and profile effects! Nitro members can also claim any Nitro
-  exclusive items while in the Shop! 
+  <a
+    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decorations</a
+  >,
+  <a
+    href="https://support.discord.com/hc/en-us/articles/17828465914263-Profile-Effects"
+    target="_blank"
+    rel="noopener noreferrer"
+    >profile effects</a
+  >, and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30408457944215"
+    target="_blank"
+    rel="noopener noreferrer"
+    >nameplates</a
+  >! Nitro members can also claim any Nitro exclusive items while in the Shop! 
 </p>
+<div class="exp-box">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30408457944215"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nameplates</a
+  >
+  are currently in experiment and are only available to select users on desktop.
+</div>
 <div class="info-box">
   Items available for purchase in the Shop will change periodically and may be
   available for a limited time. However, any purchased items are yours to keep
@@ -153,23 +179,30 @@
   />
 </p>
 <p>
-  3. Once directed to the Shop, you can preview and buy avatar decorations and
-  profile effects to add to your collection! 
+  3. Once directed to the Shop, you can preview and buy avatar decorations,
+  profile effects, and nameplates to add to your collection! 
 </p>
 <p>
   Head over to the
   <a
-    href="https://support.discord.com/hc/articles/13410113109911"
+    href="https://support.discord.com/hc/en-us/articles/13410113109911"
     target="_blank"
     rel="noopener noreferrer"
     >Avatar Decorations</a
   >
-  article and the
+  article, the
   <a
-    href="https://support.discord.com/hc/articles/17828465914263"
+    href="https://support.discord.com/hc/en-us/articles/17828465914263"
     target="_blank"
     rel="noopener noreferrer"
     >Profile Effects</a
+  >
+  article, and the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30408457944215"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nameplates</a
   >
   article to find steps on how to apply your collection and customize your
   profile! 
@@ -205,7 +238,7 @@
 </p>
 <p>
   3. This will direct you to the Shop where you can preview and buy avatar
-  decorations and profile effects! 
+  decorations, profile effects, and nameplates! 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -271,17 +304,6 @@
   >. 
 </div>
 <h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
-<p id="docs-internal-guid-19fc1892-7fff-8091-9662-2453d7666148">
-  <strong
-    >Q: Who can currently access the Shop and buy and use profile
-    effects?</strong
-  >
-</p>
-<p>
-  A:  The Shop is available to all Discord users. If you are also a Nitro
-  member, you will have special member pricing on all purchases within the
-  Shop!  
-</p>
 <p><strong>Q: How do I get a discount on items in the Shop?</strong></p>
 <p>
   A: Only Nitro members have access to special member pricing in the Shop. You

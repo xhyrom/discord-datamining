@@ -648,8 +648,8 @@
   <strong>Q: Can I reset all my server avatars at once?</strong>
 </p>
 <p>
-  Unfortunately, there is no bulk editing option at this time. You will need to
-  manually reset your avatar in each server.
+  A: Unfortunately, there is no bulk editing option at this time. You will need
+  to manually reset your avatar in each server.
 </p>
 <p id="docs-internal-guid-c86adaa8-7fff-b105-fb05-e89bae2917cc">
   <strong
@@ -668,7 +668,7 @@
   >
 </p>
 <p>
-  As is true for all content that you use on Discord, you are responsible for
+  A: As is true for all content that you use on Discord, you are responsible for
   ensuring that any content you use for server avatars complies with our
   <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
     >Terms of Service</a
@@ -688,7 +688,7 @@
   >
 </p>
 <p>
-  No, server owners and/or admins do not have the ability to change a server
+  A: No, server owners and/or admins do not have the ability to change a server
   member's server avatar or reset it to their primary avatar.
 </p>
 <p>
