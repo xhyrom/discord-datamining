@@ -6236,6 +6236,10 @@
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/terms/paid-services-terms",
             ),
+            PAID_TERMS_VIRTUAL_GOODS: "".concat(
+              window.GLOBAL_ENV.MARKETING_ENDPOINT,
+              "/terms/paid-services-terms#:~:text=at%20our%20discretion.-,Virtual%20Goods,-You%20may%20be",
+            ),
             PRIVACY: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/privacy",
@@ -7768,6 +7772,8 @@
           (r.REDESIGN_NAV_BAR_CLICKED = "redesign_nav_bar_clicked"),
           (r.REDESIGN_NAV_BAR_RENDERED = "redesign_nav_bar_rendered"),
           (r.CHANNEL_BACK_NAVIGATED = "channel_back_navigated"),
+          (r.MEDIA_VIDEO_CAPABILITIES_DETECTED =
+            "media_video_capabilities_detected"),
           (r.MEDIA_ATTACHMENT_PLAYBACK_STARTED =
             "media_attachment_playback_started"),
           (r.MEDIA_ATTACHMENT_PLAYBACK_ENDED =
@@ -8623,7 +8629,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-03-28-95ee19143be8db2c5cade2a82f733f37ec821bb7-discord_web",
+              "2025-03-31-59528899748be9950389ee9431c2ca2d4a3d152a-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8689,8 +8695,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "383453"),
-            o.YA("builtAt", String("1743146326817"));
+            o.YA("buildNumber", "383971"),
+            o.YA("builtAt", String("1743405525938"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46519,4 +46525,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.44de9cf75f61a2ae.js.map
+//# sourceMappingURL=sentry.1cdcf6f9c78aa09b.js.map
