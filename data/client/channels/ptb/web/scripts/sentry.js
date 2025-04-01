@@ -5958,6 +5958,7 @@
             SCHEDULED_MESSAGES: "/users/@me/scheduled-messages",
             SCHEDULED_MESSAGE: (t) =>
               "/users/@me/scheduled-messages/".concat(t),
+            HOLIDAY_REDEEM_PRIZE: "/holidays/redeem-prize",
           }),
           f = Object.freeze({
             INDEX: "/",
@@ -6134,6 +6135,7 @@
                 .concat(e),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
+            CLICKER_GAME: "/clicker",
             SERVER_SHOP: (t) => "/channels/".concat(t, "/shop"),
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
             REPORT: "/report",
@@ -6399,6 +6401,7 @@
             REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
             VIRTUAL_CURRENCY_CONFIGURATION_PAGE:
               "Virtual Currency Configuration",
+            CLICKER_GAME: "Clicker Game Settings",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -7212,6 +7215,8 @@
           (r.APP_LAUNCHER_EXPANDED = "app_launcher_expanded"),
           (r.APP_LAUNCHER_APPLICATION_LINK_COPIED =
             "app_launcher_application_link_copied"),
+          (r.CLICKER_GAME_LAUNCHED = "clicker_game_launched"),
+          (r.CLICKER_GAME_COMPLETED = "clicker_game_completed"),
           (r.APP_OAUTH2_LINK_EMBED_URL_SENT = "app_oauth2_link_embed_url_sent"),
           (r.APP_OAUTH2_LINK_EMBED_CTA_CLICKED =
             "app_oauth2_link_embed_cta_clicked"),
@@ -8630,7 +8635,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-01-c5104447b5c7f738bcb60035e941dc2d614d1e57-discord_web",
+              "2025-04-01-16f6d5651674626c6e8ce0ef9e3aa0bd0fdd6a33-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8696,8 +8701,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "384557"),
-            o.YA("builtAt", String("1743491943942"));
+            o.YA("buildNumber", "384595"),
+            o.YA("builtAt", String("1743522414030"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46526,4 +46531,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bc558cf1920af0f5.js.map
+//# sourceMappingURL=sentry.417a4f7324b42a5a.js.map
