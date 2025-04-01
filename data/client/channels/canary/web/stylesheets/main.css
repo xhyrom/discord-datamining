@@ -29559,6 +29559,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   align-items: center;
   justify-content: center;
   min-height: 280px;
+  min-width: 402px;
 }
 .trialHeader_e4d803 {
   margin-bottom: 18px;
@@ -58171,4 +58172,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6a8b4f838bdff9a4.css.map*/
+/*# sourceMappingURL=12633.9c6d1d2bc98c929e.css.map*/
