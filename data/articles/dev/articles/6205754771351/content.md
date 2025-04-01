@@ -21,7 +21,9 @@
       font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
         Helvetica, Arial, sans-serif;
     "
-    href="https://dis.gd/contact"
+    href="https://dis.gd/apps-dev-portal-error"
+    target="_blank"
+    rel="noopener noreferrer"
     >reach out to us via support</a
   ><span
     style="
