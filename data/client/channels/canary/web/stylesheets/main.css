@@ -36629,7 +36629,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   border-radius: 50%;
   background: transparent;
 }
-:where(.visual-refresh) .visual-refresh .radioIndicatorGroup__001a7 {
+:where(.visual-refresh) .radioIndicatorGroup__001a7 {
   display: flex;
   flex-direction: row;
   gap: var(--space-8);
@@ -58172,4 +58172,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9c6d1d2bc98c929e.css.map*/
+/*# sourceMappingURL=12633.b34b3c17c010154d.css.map*/
