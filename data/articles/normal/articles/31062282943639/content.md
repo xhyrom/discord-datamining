@@ -1,6 +1,6 @@
 <p>
   From <strong>April 1, 2025 (9:00AM PDT)</strong> to
-  <strong>April 7, 2025 (11:59AM PDT)</strong> play the new adventure by Discord
+  <strong>April 7, 2025 (11:59PM PDT)</strong> play the new adventure by Discord
   and earn an avatar decoration. This avatar decoration will be yours until
   <strong>May 1, 2025 (12:00AM PDT)</strong>.
 </p>
@@ -85,7 +85,7 @@
 <p><strong>Q: How long will this game be available? </strong></p>
 <p>
   A: The game will be available until
-  <strong>April 7, 2025 (11:59AM PDT). </strong>After this time, the game will
+  <strong>April 7, 2025 (11:59PM PDT). </strong>After this time, the game will
   be removed and cannot be played in the app.
 </p>
 <p><strong>Q: Will my score be saved if I exit the game? </strong></p>
