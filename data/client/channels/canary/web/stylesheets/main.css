@@ -17243,6 +17243,7 @@ span.clanTag__5d473 {
 .authedAppV2__50a54 {
   border-radius: var(--radius-sm);
   overflow: hidden;
+  margin-bottom: 16px;
 }
 .header__50a54,
 .headerV2__50a54 {
@@ -17297,15 +17298,16 @@ span.clanTag__5d473 {
 .appAvatar__50a54 {
   width: 32px;
   height: 32px;
-}
-.appAvatar__50a54,
-.appAvatarV2__50a54 {
   border-radius: 50%;
   -webkit-user-drag: none;
 }
 .appAvatarV2__50a54 {
   width: 40px;
   height: 40px;
+  border-radius: var(--radius-sm);
+  -webkit-user-drag: none;
+  box-sizing: border-box;
+  border: 1px solid var(--border-subtle);
 }
 .reportButton__50a54 {
   margin-right: 8px;
@@ -17402,6 +17404,9 @@ span.clanTag__5d473 {
   align-items: center;
   justify-content: flex-end;
   margin: 16px 0;
+}
+.deauthorizeButton__50a54 {
+  flex-shrink: 0;
 }
 .marginReset_fd297e {
   margin-top: 0;
@@ -58156,4 +58161,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5e1fac6a367f3542.css.map*/
+/*# sourceMappingURL=12633.c87c5d3ee6b34f77.css.map*/
