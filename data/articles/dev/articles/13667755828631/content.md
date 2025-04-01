@@ -1,4 +1,4 @@
-<h3>Table of Contents</h3>
+<h3 id="h_01JQSC6KC6C0QAS6GPMNWKBY9E">Table of Contents</h3>
 <ul>
   <li>
     <a href="#h_01GYA8YEFHMQ365RN3K3Y3CSFG" target="_self" rel="undefined"
@@ -129,7 +129,9 @@
   </li>
 </ul>
 <h2 id="h_01H26BDRT8ASH1YVKG6HMGZ1J2">Frequently Asked Questions (FAQs)</h2>
-<h3>Why isn’t Discord making this change for apps?</h3>
+<h3 id="h_01JQSC6KC62C7F13VKN9TYQPA5">
+  Why isn’t Discord making this change for apps?
+</h3>
 <p>
   Although bots are users under the hood, they still interact differently with
   Discord. Our username changes are all about making it easier to find and add
@@ -141,7 +143,9 @@
   make them more distinct from normal users so that you can show off the awesome
   things you build in a way that makes them feel distinct.
 </p>
-<h3>Will users be able to claim my app’s name?</h3>
+<h3 id="h_01JQSC6KC6HTSBKF74SH1M589Z">
+  Will users be able to claim my app’s name?
+</h3>
 <p>
   First and foremost, we want users to be able to express themselves how they
   want on Discord. However, there will be some names that are blocked or
@@ -155,7 +159,9 @@
   disputes or DMCA takedowns. Those are all available through our online support
   form: <a href="https://dis.gd/contact">https://dis.gd/contact</a>
 </p>
-<h3>Will apps be able to update their names?</h3>
+<h3 id="h_01JQSC6KC7QD8NE2ZBNDWHAMDF">
+  Will apps be able to update their names?
+</h3>
 <p>
   Consider App names, business as usual! If yours is not verified, you can
   change its name within the app’s Developer Portal page. If your app is
@@ -172,25 +178,8 @@
         Helvetica, Arial, sans-serif;
       font-size: 15px;
     "
-    >As always, if you have any further questions please </span
-  ><a
-    style="
-      background-color: #282929;
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-      font-size: 15px;
-    "
-    href="https://dis.gd/developer-support"
-    target="_blank"
-    rel="noopener noreferrer"
-    data-darkreader-inline-bgcolor=""
-    >contact Developer Support</a
-  ><span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-      font-size: 15px;
-    "
+    >As always, if you have any further questions please
+    <a href="https://dis.gd/developer-support">contact Developer Support</a
     >.</span
   >
 </p>
