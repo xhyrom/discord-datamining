@@ -1,5 +1,32 @@
 [
   {
+    "id": 31062282943639,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/31062282943639.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/31062282943639-Touch-Grass-FAQ",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 115000457731,
+    "created_at": "2025-03-31T20:12:14Z",
+    "name": "Touch Grass FAQ",
+    "title": "Touch Grass FAQ",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2025-03-31T20:15:18Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "answer-bot",
+      "touch grass"
+    ],
+    "body": "<p>From <strong>April 1, 2025 (9:00AM PDT)</strong> to <strong>April 7, 2025 (11:59AM PDT)</strong> play the new adventure by Discord and earn an avatar decoration. This avatar decoration will be yours until <strong>May 1, 2025 (12:00AM PDT)</strong>.</p>\n<div class=\"toc-box\">\n<strong><span class=\"wysiwyg-font-size-x-large\">What this article covers:</span><br></strong>\n<ul>\n<li><a href=\"#h_01JQPX6WDEATS1KB3JE1TZ25KA\">How to Play</a></li>\n<li><a href=\"#h_01JQPX6WDE8CMJB69FC5XPMWDK\">Frequently Asked Questions</a></li>\n</ul>\n</div>\n<h1 id=\"h_01JQPX6WDEATS1KB3JE1TZ25KA\">How to Play</h1>\n<div class=\"tip-box\">\n<strong>NOTE:</strong> The game is only available to play on the desktop app and browser.</div>\n<p><strong>Option 1</strong></p>\n<p>1. Tap on the alert in the bottom-right corner and then press on the <strong>right arrow icon</strong> to access the game.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/31062282929431\" width=\"381\" height=\"108\"></p>\n<h4 id=\"h_01JQPXD23TD7767GKBD97C99A2\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\" data-darkreader-inline-color=\"\">Example of the alert that will appear in the Discord app</span></h4>\n<p>2. Press on <strong>Play Game</strong> to start the game.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/31062282932503\" width=\"624\" height=\"465\"></p>\n<h4 id=\"h_01JQPXE7CQK787M9GX768CTG43\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\" data-darkreader-inline-color=\"\">Example of where to locate The Last Meadow under your User Settings</span></h4>\n<p><strong>Option 2</strong></p>\n<p>1. Open <strong>User Settings</strong> by pressing the <strong>cogwheel</strong> [<img src=\"https://support.discord.com/hc/article_attachments/31062282933143\" width=\"24\" height=\"24\">] in the bottom-left corner and select <strong>The Last Meadow </strong>in the left sidebar. </p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/31062282934423\" width=\"624\" height=\"465\"></p>\n<p>2. Tap on <strong>Play Game</strong> to start the game!</p>\n<h1 id=\"h_01JQPX6WDE8CMJB69FC5XPMWDK\"><strong>Frequently Asked Questions</strong></h1>\n<p><strong>Q: What clients is this game available on?</strong></p>\n<p>A: The game is only available on desktop app/browser. Unfortunately, the game cannot be played on the mobile version of the app.</p>\n<p><strong>Q: How long does the avatar decoration last? </strong></p>\n<p>A: The avatar decoration is yours until <strong>May 1, 2025 (12:00AM PDT)</strong>.</p>\n<p><strong>Q: How long will this game be available? </strong></p>\n<p>A: The game will be available until <strong>April 7, 2025 (11:59AM PDT). </strong>After this time, the game will be removed and cannot be played in the app.</p>\n<p><strong>Q: Will my score be saved if I exit the game? </strong></p>\n<p>A: Yes, when you go back to <strong>The Last Meadow</strong> tab in your <strong>User Settings</strong>, you can tap on the <strong>Continue Game</strong> option to continue your progress.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/31062282940183\" width=\"624\" height=\"379\"></p>\n<h4 id=\"h_01JQPXFHHPYFP2GH5Z2WBM6VWX\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\" data-darkreader-inline-color=\"\">Example of where to tap to continue your game</span></h4>"
+  },
+  {
     "id": 30952914470807,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/30952914470807.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/30952914470807-Discord-Audio-and-Video-Error-Codes-Troubleshooting-Guide",
