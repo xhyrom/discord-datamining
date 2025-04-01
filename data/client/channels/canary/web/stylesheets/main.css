@@ -42198,12 +42198,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   pointer-events: all;
 }
 .draggableContainer_f86e69 {
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 .container_f86e69 {
   width: 314px;
   background-color: var(--background-primary);
   border-radius: 12px;
+  border: 1px solid var(--border-subtle);
 }
 .closeContainer_f86e69 {
   margin-left: var(--spacing-8);
@@ -58161,4 +58163,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c87c5d3ee6b34f77.css.map*/
+/*# sourceMappingURL=12633.20528581cf82b87b.css.map*/
