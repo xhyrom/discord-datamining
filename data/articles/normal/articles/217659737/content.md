@@ -111,13 +111,11 @@
 </p>
 <p>
   To see messages in the Game Overlay, go to User Settings &gt; Game Overlay and
-  enable <strong>Show text chat notifications</strong>. 
+  enable <strong>Messages</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30795293374999"
-    width="624"
-    height="44"
+    src="https://support.discord.com/hc/article_attachments/31116601188887"
   />
 </p>
 <p>
