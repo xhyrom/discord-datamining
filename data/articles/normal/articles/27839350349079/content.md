@@ -28,6 +28,29 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: SUPERVIVE <br /></strong
+  ><strong>Quest Name: SUPERVIVE Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>SUPERVIVE </strong>to receive the
+  <strong>New Hunter: Eva</strong>. <br /><strong>Who is Eligible: </strong
+  >Available to users in the
+  <strong>United States, Canada, Western Europe, </strong>and<strong>
+    Eastern Europe</strong
+  >
+  on PC where <strong>Discord</strong> and <strong>SUPERVIVE </strong>are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>SUPERVIVE Quest</strong> can be accepted on
+  <strong>PC </strong>from
+  <strong>April 2, 2025 (7:00PM UTC) </strong>until<strong>
+    April 8, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 8, 2025 (0:00 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: We Got You<br /></strong
   ><strong>Quest Name: PC Game Pass Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the <strong>We Got You </strong>video
@@ -311,30 +334,6 @@
   <strong>March 12, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
   requirements during this period and claim your reward by
   <strong>May 6, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Seekers of Skyveil <br /></strong
-  ><strong>Quest Name: Seekers of Skyveil Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Seekers of Skyveil </strong>to receive a
-  <strong>Grassland Strix Skin</strong>.<br /><strong>Who is Eligible:</strong>
-  Available to players who are over the age of 18 and on desktop where both
-  <strong>Discord</strong> and <strong>Seekers of Skyveil</strong> are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Seekers of Skyveil Quest</strong> can be accepted on Discord from
-  <strong>February 24, 2025</strong> until
-  <strong>March 5, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>April 1, 2025 (0:00 UTC)</strong>.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
