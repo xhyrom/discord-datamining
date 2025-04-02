@@ -42227,9 +42227,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   border: 1px solid var(--border-subtle);
 }
 .closeContainer_f86e69 {
-  margin-left: var(--spacing-8);
   align-self: flex-start;
   flex-shrink: 0;
+  padding: 0;
 }
 .headerContainer_f86e69 {
   display: flex;
@@ -58183,4 +58183,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8d61fef8f7327f22.css.map*/
+/*# sourceMappingURL=12633.7f3b167ec14003ef.css.map*/
