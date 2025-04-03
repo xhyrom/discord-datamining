@@ -35385,6 +35385,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .whiteText_f43ba5 a {
   color: var(--white-500);
 }
+.visual-refresh .whiteText_f43ba5,
+.visual-refresh .whiteText_f43ba5 a {
+  color: inherit;
+}
 .children__7bffb {
   flex-direction: column;
 }
@@ -58245,4 +58249,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c9de0257210666ab.css.map*/
+/*# sourceMappingURL=12633.87ad557ce904a265.css.map*/
