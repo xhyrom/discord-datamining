@@ -12640,6 +12640,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   height: 16px;
   width: 16px;
 }
+.tooltip__1f1cb {
+  text-align: center;
+}
+.disabledIndicator__1f1cb {
+  color: currentColor;
+}
 .progressBar_b28bb7 {
   height: 54px;
   isolation: isolate;
@@ -42227,9 +42233,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   border: 1px solid var(--border-subtle);
 }
 .closeContainer_f86e69 {
-  margin-left: var(--spacing-8);
   align-self: flex-start;
   flex-shrink: 0;
+  padding: 0;
 }
 .headerContainer_f86e69 {
   display: flex;
@@ -58183,4 +58189,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8d61fef8f7327f22.css.map*/
+/*# sourceMappingURL=12633.f7947845f8ea7f03.css.map*/

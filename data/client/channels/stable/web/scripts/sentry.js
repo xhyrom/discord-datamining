@@ -7046,6 +7046,7 @@
           (r.OAUTH2_AUTHORIZE_STEP_VIEWED = "oauth2_authorize_step_viewed"),
           (r.GUILD_OUTAGE_VIEWED = "guild_outage_viewed"),
           (r.CONTACT_SYNC_FLOW_KEY = "relationship_sync_flow"),
+          (r.LOGIN_ATTEMPTED = "login_attempted"),
           (r.LOGIN_SUCCESSFUL = "login_successful"),
           (r.REPLY_STARTED = "reply_started"),
           (r.GUILD_TEMPLATE_APP_OPENED = "guild_template_app_opened"),
@@ -7714,6 +7715,7 @@
           (r.AGE_VERIFICATION_MODAL_VIEWED = "age_verification_modal_viewed"),
           (r.AGE_VERIFICATION_MODAL_CLICKED = "age_verification_modal_clicked"),
           (r.AGE_VERIFICATION_DM_CLICKED = "age_verification_dm_clicked"),
+          (r.AGE_VERIFICATION_TOAST_VIEWED = "age_verification_toast_viewed"),
           (r.NSFW_SPACE_WARNING_MODAL_VIEWED =
             "nsfw_space_warning_modal_viewed"),
           (r.NSFW_SPACE_WARNING_MODAL_CLICKED =
@@ -8635,7 +8637,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-02-1d0552a8d79b4983afe536958b5f0bf815b512de-discord_web",
+              "2025-04-03-29a644f380a20845ea5dc295b8be216e8275bbff-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8701,8 +8703,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "385240"),
-            o.YA("builtAt", String("1743617107693"));
+            o.YA("buildNumber", "385599"),
+            o.YA("builtAt", String("1743664743459"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46531,4 +46533,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.eca5e75ef2bab65c.js.map
+//# sourceMappingURL=sentry.6f89ee8f57aefe8b.js.map
