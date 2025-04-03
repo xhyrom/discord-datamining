@@ -8611,7 +8611,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-34dd5b8c019a55725e44fe6af1fb86a0c9ad7cc3",
+            release: "discord_web-2f6ce7a7dc375ae041700dbcb5568e0bbf7ddd54",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -8677,8 +8677,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "386016"),
-            o.YA("builtAt", String("1743717973858"));
+            o.YA("buildNumber", "386041"),
+            o.YA("builtAt", String("1743719074895"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11774,7 +11774,7 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_25: "#7fb3f5",
+              BLUE_NEW_24: "#83b5f6",
               BLUE_NEW_26: "#7bb0f5",
               BLUE_NEW_34: "#5a9cef",
               BLUE_NEW_36: "#5197ed",
@@ -11782,19 +11782,19 @@
               BLUE_NEW_42: "#3687e9",
               BLUE_NEW_49: "#0074e3",
               BLUE_NEW_56: "#0666c4",
-              BLURPLE_10: "#c7d2ff",
               BLURPLE_14: "#b9c7ff",
               BLURPLE_19: "#a9baff",
               BLURPLE_21: "#a3b4fe",
               BLURPLE_25: "#96aafd",
               BLURPLE_26: "#93a7fd",
+              BLURPLE_3: "#dfe4ff",
               BLURPLE_35: "#7a8ef9",
               BLURPLE_41: "#6a7df6",
               BLURPLE_49: "#5865f2",
-              BLURPLE_5: "#d8dfff",
               BLURPLE_50: "#5865f2",
               BLURPLE_71: "#2e3c89",
               BLURPLE_75: "#273578",
+              BLURPLE_8: "#ced7ff",
               BRAND_100: "#f7f7fe",
               BRAND_130: "#f0f1fe",
               BRAND_160: "#e7e9fd",
@@ -11854,7 +11854,7 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_26: "#71c07f",
+              GREEN_NEW_24: "#78c586",
               GREEN_NEW_34: "#53ac66",
               GREEN_NEW_40: "#3b9d54",
               GREEN_NEW_50: "#00863a",
@@ -11876,7 +11876,6 @@
               NEUTRAL_1: "#ffffff",
               NEUTRAL_10: "#dcdcde",
               NEUTRAL_100: "#000000",
-              NEUTRAL_11: "#d8d8db",
               NEUTRAL_14: "#ccccd0",
               NEUTRAL_15: "#c8c8cd",
               NEUTRAL_17: "#c1c1c6",
@@ -11891,9 +11890,7 @@
               NEUTRAL_33: "#86868e",
               NEUTRAL_34: "#83838b",
               NEUTRAL_36: "#7c7c84",
-              NEUTRAL_37: "#787881",
               NEUTRAL_38: "#75757e",
-              NEUTRAL_39: "#71717a",
               NEUTRAL_4: "#f3f3f4",
               NEUTRAL_42: "#676771",
               NEUTRAL_43: "#64646d",
@@ -11903,14 +11900,13 @@
               NEUTRAL_5: "#efeff0",
               NEUTRAL_59: "#42424a",
               NEUTRAL_6: "#ebebed",
+              NEUTRAL_64: "#3a3a41",
               NEUTRAL_66: "#37373e",
-              NEUTRAL_67: "#36363c",
               NEUTRAL_69: "#333339",
               NEUTRAL_7: "#e7e7e9",
               NEUTRAL_71: "#303035",
-              NEUTRAL_72: "#2e2e34",
-              NEUTRAL_75: "#2a2a2f",
-              NEUTRAL_76: "#28282d",
+              NEUTRAL_73: "#2d2d32",
+              NEUTRAL_74: "#2b2b31",
               NEUTRAL_79: "#242429",
               NEUTRAL_82: "#202024",
               NEUTRAL_86: "#1a1a1e",
@@ -12438,7 +12434,7 @@
               RED_830: "#2e090a",
               RED_860: "#280808",
               RED_900: "#220606",
-              RED_NEW_23: "#fc8f8a",
+              RED_NEW_21: "#fe9691",
               RED_NEW_32: "#f16f6c",
               RED_NEW_37: "#e95d5c",
               RED_NEW_50: "#d22d39",
@@ -12557,7 +12553,7 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
-              YELLOW_NEW_24: "#d6a76c",
+              YELLOW_NEW_22: "#daac74",
               YELLOW_NEW_32: "#c5914d",
               YELLOW_NEW_38: "#b98036",
               YELLOW_NEW_54: "#955a03",
@@ -46423,4 +46419,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8b67527f3363fc69.js.map
+//# sourceMappingURL=sentry.a846aed76b0851e9.js.map
