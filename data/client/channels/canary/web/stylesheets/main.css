@@ -40945,12 +40945,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   width: 100%;
   padding-bottom: var(--space-48);
 }
+:where(.visual-refresh) .artContainer__29209.small__29209 {
+  padding-bottom: 0;
+}
 :where(.visual-refresh) .art__29209 {
   width: 100%;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: var(--space-16);
   background-image: url(/assets/422703837071ae97.svg);
   height: 185px;
 }
@@ -41072,6 +41074,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .participantName__2cdb8 {
   margin-left: 8px;
+}
+.videoControls__2cdb8 {
+  background: none;
 }
 .loading__6ef4d {
   position: absolute;
@@ -58189,4 +58194,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f7947845f8ea7f03.css.map*/
+/*# sourceMappingURL=12633.4c51bcdcb4042a7b.css.map*/
