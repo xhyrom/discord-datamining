@@ -53475,6 +53475,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-1);
   --text-secondary: var(--neutral-15);
   --text-warning: var(--yellow-new-24);
+  --app-background-frame: var(--neutral-81);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-69);
   --background-base-lower: var(--neutral-72);
@@ -53903,6 +53904,11 @@ html.disable-forced-colors * {
       var(--yellow-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-81) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --app-border-frame: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
@@ -54300,6 +54306,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-71);
   --text-secondary: var(--neutral-44);
   --text-warning: var(--yellow-new-54);
+  --app-background-frame: var(--neutral-7);
   --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
@@ -54684,6 +54691,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--yellow-new-54) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-7) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
       in oklab,
@@ -55095,6 +55107,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-7);
   --text-secondary: var(--neutral-27);
   --text-warning: var(--yellow-new-38);
+  --app-background-frame: var(--neutral-100);
   --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
@@ -55467,6 +55480,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--yellow-new-38) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-100) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
       in oklab,
@@ -55877,6 +55895,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-2);
   --text-secondary: var(--neutral-22);
   --text-warning: var(--yellow-new-32);
+  --app-background-frame: var(--neutral-99);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
@@ -56292,6 +56311,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--yellow-new-32) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-99) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
       in oklab,
@@ -57222,6 +57246,15 @@ html.disable-forced-colors * {
   --channels-spine-inverted-offset-top: 9px;
   --channels-spine-offset-left: 28px;
 }
+.refresh-fast-follow-avatars.density-compact {
+  --guildbar-avatar-size: 40px;
+  --guildbar-folder-size: 48px;
+}
+.refresh-fast-follow-avatars.density-cozy,
+.refresh-fast-follow-avatars.density-default {
+  --guildbar-avatar-size: 44px;
+  --guildbar-folder-size: 52px;
+}
 a,
 abbr,
 acronym,
@@ -58127,7 +58160,7 @@ img[alt] {
   --custom-guild-list-width: 72px;
 }
 .visual-refresh {
-  --custom-guild-list-padding: min(var(--space-md));
+  --custom-guild-list-padding: var(--space-md);
   --custom-guild-list-width: calc(
     var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
   );
@@ -58146,6 +58179,14 @@ img[alt] {
     (var(--chat-avatar-size) - var(--chat-input-icon-size))/2
   );
   --custom-message-margin-horizontal: var(--space-md);
+}
+.visual-refresh.refresh-fast-follow-avatars {
+  --custom-guild-list-padding: min(var(--space-md), var(--space-16));
+  --custom-guild-list-width: calc(
+    var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+  );
+  --custom-app-top-bar-height: calc(24px + var(--space-xs));
+  --custom-channel-header-height: var(--guildbar-avatar-size);
 }
 .visual-refresh.density-compact {
   --custom-member-list-width: 256px;
@@ -58204,4 +58245,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5b904fffad8cbed6.css.map*/
+/*# sourceMappingURL=12633.0d4ed56e6c85afa0.css.map*/
