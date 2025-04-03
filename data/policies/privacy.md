@@ -201,18 +201,22 @@
             loading="lazy"
             alt=""
             src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e90ab9506850e8a5dd48e3_Discrod_MainLogo.svg"
-            class="nav_brand_main-logo" /><img
-            width="146"
-            loading="lazy"
-            alt=""
-            src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/671a186071e6c3f032efd4d2_Logo.svg"
-            class="nav_brand_main-black-logo" /><img
-            width="146"
-            loading="lazy"
-            alt=""
-            src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
-            class="nav_brand_main-logo-bg"
-        /></a>
+            class="nav_brand_main-logo" />
+          <div class="nav_brand_main-black-logo">
+            <img
+              width="146"
+              loading="lazy"
+              alt=""
+              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ed8194f41d7d8eade32c90_Logo.svg"
+              class="nav_brand_main-black-icon"
+            /><img
+              width="Auto"
+              loading="lazy"
+              alt=""
+              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ece93be2524af5cf14dc1c_Logo-black-bg.svg"
+              class="nav_brand_main-logo-2"
+            /></div
+        ></a>
         <div class="nav_menu_wr">
           <ul role="list" class="nav_menu">
             <li>
