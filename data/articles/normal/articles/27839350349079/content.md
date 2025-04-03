@@ -28,7 +28,30 @@
   >
 </h1>
 <p>
-  <strong>Quest Game: SUPERVIVE <br /></strong
+  <strong>Quest Game: COD: Warzone<br /></strong
+  ><strong>Quest Name: Call of Duty: Warzone<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Call of Duty: Warzone </strong>to receive a
+  <strong>Calling Card + 2WXP</strong>. <br /><strong>Who is Eligible: </strong
+  >Available to users on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
+  Xbox Series S where <strong>Discord</strong> and
+  <strong>Call of Duty: Warzone </strong>are available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>COD: Warzone Quest</strong> can be accepted on
+  <strong>PC</strong>, <strong>PlayStation 4</strong>,
+  <strong>PlayStation 5</strong>, <strong>Xbox Series X</strong>, and
+  <strong>Xbox Series S </strong>from
+  <strong>April 3, 2025 (11:59PM UTC) </strong>until<strong>
+    April 16, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>April 17, 2025 (10:00 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.<br /></span
+  ><strong>Quest Game: SUPERVIVE <br /></strong
   ><strong>Quest Name: SUPERVIVE Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
   <strong>SUPERVIVE </strong>to receive the
@@ -87,11 +110,21 @@
   <strong>New Drop Trailer</strong> in Discord to earn 1 day of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Nitro</span
+    ></a
   >! Learn more about Nitro Credits<a
     href="https://support.discord.com/hc/en-us/articles/26362805097623"
   >
-    <span class="wysiwyg-underline" style="color: #1155cc">here</span></a
+    <span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >here</span
+    ></a
   >.<br /><strong>Who is Eligible: </strong>Available to users on desktop where
   <strong>Discord</strong> is available. Discord’s premium services are
   restricted in some regions.<br /><strong>Availability Period:</strong> The
@@ -111,12 +144,12 @@
   <strong>Fortnite OG Season 3 </strong>to receive a limited-time
   <strong>Supply Llama avatar decoration</strong>.<br /><strong
     >Who is Eligible: </strong
-  >Available to users on PC, Playstation 4, PlayStation 5, Xbox Series X, and
+  >Available to users on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
   Xbox Series S where <strong>Discord</strong> and <strong>Fortnite </strong>are
   available. Discord’s premium services are restricted in some regions.<br /><strong
     >Availability Period: </strong
   >The <strong>Fortnite OG Quest</strong> can be accepted on
-  <strong>PC, Playstation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
+  <strong>PC, PlayStation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
     Xbox Series S</strong
   >
   from <strong>March 25, 2025 </strong>until<strong>
@@ -186,13 +219,13 @@
   <strong>Metaphor: ReFantazio (Full Game) </strong>to receive a limited-time
   <strong>Gallica avatar decoration</strong>.<br /><strong
     >Who is Eligible: </strong
-  >Available to users on PC, Playstation 4, PlayStation 5, Xbox Series X, and
+  >Available to users on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
   Xbox Series S where <strong>Discord</strong> and
   <strong>Metaphor: ReFantazio </strong>are available. Discord’s premium
   services are restricted in some regions.<br /><strong
     >Availability Period: </strong
   >The <strong>Metaphor Rank Up Quest</strong> can be accepted on
-  <strong>PC, Playstation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
+  <strong>PC, PlayStation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
     Xbox Series S</strong
   >
   from <strong>March 13, 2025 </strong>until<strong>
