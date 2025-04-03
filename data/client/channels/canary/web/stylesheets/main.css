@@ -55895,7 +55895,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-2);
   --text-secondary: var(--neutral-22);
   --text-warning: var(--yellow-new-32);
-  --app-background-frame: var(--neutral-99);
+  --app-background-frame: var(--neutral-96);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
@@ -56314,7 +56314,7 @@ html.disable-forced-colors * {
     );
     --app-background-frame: color-mix(
       in oklab,
-      var(--neutral-99) 100%,
+      var(--neutral-96) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
@@ -58245,4 +58245,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4ecf50fe8dc0f06f.css.map*/
+/*# sourceMappingURL=12633.c9de0257210666ab.css.map*/
