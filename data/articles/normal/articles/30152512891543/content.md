@@ -30,8 +30,8 @@
   </ul>
 </div>
 <div class="exp-box">
-  <strong>[Beta]</strong> Voice filters are currently in experimentation and
-  available to a limited group of users on Windows desktop-only.
+  <strong>[Beta]</strong> Voice filters is currently an experiment and available
+  to a limited group of users on Windows desktop only.
 </div>
 <h1 id="h_01JP37R8X2TPC8RWRQYPA3ZKTD">What are voice filters?</h1>
 <p>
@@ -373,6 +373,11 @@
 </p>
 <h4 id="h_01JP37R8X2H9ZRC4NDEV9MDB9P" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of a voice filter with the clock icon
-  </span>
+    >Example of a voice filter with the clock icon</span
+  >
 </h4>
+<p id="h_01JR0V13HTH3H1C6KKD0FV20B6">
+  <strong>Q: Does Discord store my voice data?</strong><br />A: Discord does not
+  store any voice data or use voice data for any identifying purposes. Voice
+  filters are synthesized on your device.
+</p>
