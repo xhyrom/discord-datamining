@@ -6,7 +6,7 @@
     ></a
   >
   subscribers will gain extended access to Quest avatar decoration rewards -
-  allowing you to use your new rewards longer and restore previously expired
+  allowing them to use the new rewards for longer and restore previously expired
   decorations. This premium feature enhances your customization options across
   all Discord platforms.
 </p>
@@ -35,34 +35,34 @@
   </li>
 </ul>
 <h1 id="h_01JP5J6R2S40C77HHC4CRVX36A">Understanding the Nitro Quest Perk</h1>
-<div class="exp-box">
-  The <strong>Nitro Quest Perk</strong> is an experimental feature for a limited
-  number of users. We're gradually expanding access to all eligible users.
-</div>
 <p>
-  Earned Quest avatar decorations are now available for use for two months after
-  earning them. However,
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro subscribers</a
-  >
-  will gain an exclusive perk—they can keep their earned decorations for longer
-  - and in most cases, previously expired decorations will become available
-  again for use!
+  Normally, avatar decorations earned through Quests are available for two
+  months. However, Nitro subscribers get an exclusive perk: the ability to keep
+  many of these decorations for an extended period. We're working to make even
+  more quest rewards eligible for this benefit.
 </p>
 <p><strong>Requirements to utilize the Nitro Quest Perk:</strong></p>
 <ul>
   <li>
-    This benefit is exclusively for standard Nitro subscribers (not available
-    for Nitro Basic or Classic).
+    This benefit is exclusively for Nitro subscribers on the standard plan (not
+    available for Nitro Basic or Classic).
   </li>
   <li>
     You must have claimed the decoration reward after completing a Quest to be
     eligible for extended access.
   </li>
-  <li>Decoration must not have a listed expiry date.</li>
+</ul>
+<p><strong>Important Note:</strong></p>
+<ul>
+  <li>
+    Not all avatar decorations will be eligible for this perk. Eligible rewards
+    will be indicated during the Quest completion experience.
+  </li>
+  <li>
+    You can check the avatar expiration date of earned avatar decorations listed
+    under the specific avatar decoration in
+    <strong>Profile Settings</strong> &gt; <strong>Change Decoration</strong>.
+  </li>
 </ul>
 <h1 id="h_01JP5J6R2SYW886QBFCM1TBT4Z">Finding Your Quest Avatar Decorations</h1>
 <p>
@@ -237,8 +237,10 @@
 </p>
 <p>
   A: Not all past avatar decoration rewards are available - however, Nitro
-  members can access most decorations they previously earned by completing
-  Quests and claiming the rewards.
+  members can access some of the decorations they previously earned by
+  completing Quests and claiming the rewards. You can see which decorations are
+  available at <strong>Profile Settings</strong> &gt;
+  <strong>Change Decoration</strong>.
 </p>
 <p>
   <strong
@@ -250,13 +252,17 @@
 </p>
 <p>
   <strong
-    >Q: How do I know how long I can keep a Quest-earned avatar
-    decoration?</strong
-  >
+    >Q: Is this Nitro perk applicable to all decoration rewards from
+    Quests?</strong
+  ><br />A: No, not all decorations rewards from Quest are eligible for this
+  Nitro Perk. If decoration reward is not eligible, you will see an expiry date
+  listed under the specific decoration in <strong>Profile Settings</strong> &gt;
+  <strong>Change Decoration</strong>.
 </p>
 <p>
-  A: Most Quest-earned avatar decorations are yours to use with your Discord
-  account. If an avatar decoration has a specific expiry date, you’ll see the
-  expiry date listed under the specific avatar decoration in
+  <strong
+    >Q: How do I know how long I can keep a Quest-earned avatar decoration?<br /></strong
+  >A: You can see the expiration date of Quest-earned avatar decorations listed
+  under the specific avatar decoration in
   <strong>Profile Settings &gt; Change Decoration</strong>.
 </p>
