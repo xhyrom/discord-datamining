@@ -42545,9 +42545,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   padding-top: var(--spacing-16);
   justify-content: center;
 }
-.blurToggle_f86e69 {
-  padding: 12px 10px !important;
-}
 [data-popout-root],
 html {
   --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
@@ -58532,4 +58529,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6251ab505f30e9ff.css.map*/
+/*# sourceMappingURL=12633.9e9927d9e57cd34b.css.map*/
