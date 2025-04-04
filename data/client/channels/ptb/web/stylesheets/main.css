@@ -2150,6 +2150,75 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .code_cf4812.fontScaling_cf4812 {
   font-size: 0.75rem;
 }
+.container__35859 {
+  display: flex;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.icon__35859 {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.iconDiv__35859 {
+  display: flex;
+}
+.text__35859 {
+  margin-left: 10px;
+  flex: 1;
+  align-self: center;
+}
+.text__35859 p {
+  margin: 0;
+}
+.text__35859 p ~ p {
+  margin-top: 8px;
+}
+.positive__35859 {
+  background: var(--info-positive-background);
+  border: 1px solid var(--info-positive-foreground);
+  color: var(--info-positive-text);
+}
+.positive__35859 .icon__35859 {
+  color: var(--info-positive-foreground);
+}
+.warning__35859 {
+  background: var(--info-warning-background);
+  border: 1px solid var(--info-warning-foreground);
+  color: var(--info-warning-text);
+}
+.warning__35859 .icon__35859 {
+  color: var(--info-warning-foreground);
+}
+.info__35859 {
+  background: var(--info-help-background);
+  border: 1px solid var(--info-help-foreground);
+  color: var(--info-help-text);
+}
+.info__35859 .icon__35859 {
+  color: var(--info-help-foreground);
+}
+.error__35859 {
+  background: var(--info-danger-background);
+  border: 1px solid var(--info-danger-foreground);
+  color: var(--info-danger-text);
+}
+.error__35859 .icon__35859 {
+  color: var(--info-danger-foreground);
+}
+.visual-refresh .container__35859 {
+  border-radius: var(--radius-sm);
+}
+.visual-refresh .icon__35859 {
+  width: 20px;
+  height: 20px;
+}
+.visual-refresh .text__35859 {
+  margin-left: var(--space-8);
+}
 .stack_dbd263 {
   width: 100%;
   display: flex;
@@ -13750,6 +13819,61 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .children__91a9d {
   flex: 0 0 auto;
   margin-left: 8px;
+}
+.twoColorGradient__65640 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-1)
+  );
+  background-size: 100px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.threeColorGradient__65640 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-3),
+    var(--custom-gradient-color-1)
+  );
+  background-size: 100px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.threeColorGradient__65640:after,
+.twoColorGradient__65640:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(7px) brightness(1.2);
+  animation: inherit;
+  opacity: 0.5;
+}
+.gradient__65640:hover {
+  animation: gradient__65640 2.5s linear infinite;
+}
+.gradientText__65640 {
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient__65640 {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100px;
+  }
 }
 .nitroRewardTileAssetContainer_a92e89 {
   display: flex;
@@ -28744,7 +28868,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   align-items: center;
   min-height: 48px;
   border-radius: 4px;
-  padding: 8px 20px;
+  padding: 10px 20px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -35385,6 +35509,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .whiteText_f43ba5 a {
   color: var(--white-500);
 }
+.visual-refresh .whiteText_f43ba5,
+.visual-refresh .whiteText_f43ba5 a {
+  color: inherit;
+}
 .children__7bffb {
   flex-direction: column;
 }
@@ -38121,6 +38249,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .theme-midnight .container__9293f {
   border-bottom: 1px solid var(--background-modifier-accent);
 }
+.theme-midnight .container__9293f.transparent__9293f {
+  border-bottom: none;
+}
 .theme-dark .themed__9293f {
   background: var(--bg-overlay-2, var(--__header-bar-background));
 }
@@ -38159,6 +38290,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   flex-wrap: wrap;
   margin-top: -10px;
   margin-right: -10px;
+}
+.container__459fb.gradient__459fb {
+  flex-wrap: nowrap;
 }
 .customContainer__459fb,
 .defaultContainer__459fb {
@@ -38233,6 +38367,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   width: 100%;
   height: 50px;
   border-radius: 4px;
+}
+.colorPickerSwatch__459fb.gradientPreset__459fb {
+  width: 40px;
+  height: 20px;
 }
 .colorPickerSwatch__459fb.disabled__459fb {
   opacity: 0.3;
@@ -39710,75 +39848,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   outline-color: GrayText;
   opacity: 1;
 }
-.container__6436f {
-  display: flex;
-  border-radius: 4px;
-  font-weight: 500;
-  padding: 8px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.icon__6436f {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-}
-.iconDiv__6436f {
-  display: flex;
-}
-.text__6436f {
-  margin-left: 10px;
-  flex: 1;
-  align-self: center;
-}
-.text__6436f p {
-  margin: 0;
-}
-.text__6436f p ~ p {
-  margin-top: 8px;
-}
-.positive__6436f {
-  background: var(--info-positive-background);
-  border: 1px solid var(--info-positive-foreground);
-  color: var(--info-positive-text);
-}
-.positive__6436f .icon__6436f {
-  color: var(--info-positive-foreground);
-}
-.warning__6436f {
-  background: var(--info-warning-background);
-  border: 1px solid var(--info-warning-foreground);
-  color: var(--info-warning-text);
-}
-.warning__6436f .icon__6436f {
-  color: var(--info-warning-foreground);
-}
-.info__6436f {
-  background: var(--info-help-background);
-  border: 1px solid var(--info-help-foreground);
-  color: var(--info-help-text);
-}
-.info__6436f .icon__6436f {
-  color: var(--info-help-foreground);
-}
-.error__6436f {
-  background: var(--info-danger-background);
-  border: 1px solid var(--info-danger-foreground);
-  color: var(--info-danger-text);
-}
-.error__6436f .icon__6436f {
-  color: var(--info-danger-foreground);
-}
-.visual-refresh .container__6436f {
-  border-radius: var(--radius-sm);
-}
-.visual-refresh .icon__6436f {
-  width: 20px;
-  height: 20px;
-}
-.visual-refresh .text__6436f {
-  margin-left: var(--space-8);
-}
 .focusLock__49fc1 {
   min-height: 0;
   max-width: 100%;
@@ -40945,12 +41014,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   width: 100%;
   padding-bottom: var(--space-48);
 }
+:where(.visual-refresh) .artContainer__29209.small__29209 {
+  padding-bottom: 0;
+}
 :where(.visual-refresh) .art__29209 {
   width: 100%;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: var(--space-16);
   background-image: url(/assets/422703837071ae97.svg);
   height: 185px;
 }
@@ -41072,6 +41143,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .participantName__2cdb8 {
   margin-left: 8px;
+}
+.videoControls__2cdb8 {
+  background: none;
 }
 .loading__6ef4d {
   position: absolute;
@@ -41630,16 +41704,18 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   animation: incoming-call-pulse_f910d0
     var(--custom-call-avatar-incoming-duration) infinite ease-out;
 }
-.status_f910d0 {
-  background-clip: padding-box;
-  border-radius: 50%;
-  padding: 4px;
-  width: 16px;
-  height: 16px;
+.statusContainer_f910d0 {
   position: absolute;
   right: 0;
   bottom: 0;
   background-color: var(--red-400);
+  border-radius: 50%;
+  padding: 4px;
+}
+.status_f910d0,
+.statusContainer_f910d0 {
+  width: 16px;
+  height: 16px;
 }
 .voiceAvatar_f910d0 {
   width: 100%;
@@ -53317,9 +53393,9 @@ html.disable-forced-colors * {
 }
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
-  --activity-card-background: var(--neutral-66);
-  --autocomplete-bg: var(--neutral-66);
-  --background-floating: var(--neutral-66);
+  --activity-card-background: var(--neutral-64);
+  --autocomplete-bg: var(--neutral-64);
+  --background-floating: var(--neutral-64);
   --background-mentioned: hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
   --background-mentioned-hover: hsl(
     var(--opacity-yellow-4-hsl) / 0.0392156862745098
@@ -53330,25 +53406,25 @@ html.disable-forced-colors * {
   --background-message-highlight-hover: hsl(
     var(--opacity-blurple-12-hsl) / 0.12156862745098039
   );
-  --background-message-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --background-message-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-modifier-accent: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --background-modifier-active: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-  --background-modifier-hover: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --background-modifier-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-modifier-selected: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
-  --background-primary: var(--neutral-69);
-  --background-secondary: var(--neutral-72);
-  --background-tertiary: var(--neutral-76);
-  --bg-base-primary: var(--neutral-69);
-  --bg-base-secondary: var(--neutral-72);
-  --bg-base-tertiary: var(--neutral-76);
+  --background-primary: var(--neutral-66);
+  --background-secondary: var(--neutral-69);
+  --background-tertiary: var(--neutral-73);
+  --bg-base-primary: var(--neutral-66);
+  --bg-base-secondary: var(--neutral-69);
+  --bg-base-tertiary: var(--neutral-73);
   --bg-brand: var(--blurple-50);
   --bg-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --bg-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --bg-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+  --bg-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --border-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --border-strong: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --border-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -53405,65 +53481,66 @@ html.disable-forced-colors * {
   --button-transparent-background-active: hsl(var(--primary-500-hsl) / 0.3);
   --button-transparent-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --button-transparent-text: var(--neutral-6);
-  --card-primary-bg: var(--neutral-66);
-  --card-secondary-bg: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --channel-icon: var(--neutral-29);
-  --channels-default: var(--neutral-29);
+  --card-primary-bg: var(--neutral-64);
+  --card-secondary-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --channel-icon: var(--neutral-27);
+  --channels-default: var(--neutral-27);
   --header-muted: var(--neutral-22);
   --header-primary: var(--neutral-1);
-  --header-secondary: var(--neutral-11);
+  --header-secondary: var(--neutral-9);
   --icon-muted: var(--neutral-22);
   --icon-primary: var(--neutral-2);
   --icon-secondary: var(--neutral-15);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
-  --info-danger-text: var(--red-new-23);
+  --info-danger-text: var(--red-new-21);
   --info-help-background: hsl(var(--opacity-blue-8-hsl) / 0.0784313725490196);
-  --info-help-text: var(--blue-new-25);
+  --info-help-text: var(--blue-new-24);
   --info-positive-background: hsl(
     var(--opacity-green-8-hsl) / 0.0784313725490196
   );
-  --info-positive-text: var(--green-new-26);
+  --info-positive-text: var(--green-new-24);
   --info-warning-background: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
-  --info-warning-text: var(--yellow-new-24);
-  --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
+  --info-warning-text: var(--yellow-new-22);
+  --input-background: hsl(var(--opacity-black-20-hsl) / 0.2);
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
-  --input-placeholder-text: var(--neutral-31);
+  --input-placeholder-text: var(--neutral-32);
   --interactive-active: var(--neutral-1);
   --interactive-hover: var(--neutral-1);
   --interactive-normal: var(--neutral-15);
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
-  --mention-foreground: var(--blurple-10);
+  --mention-foreground: var(--blurple-8);
   --message-reacted-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
-  --message-reacted-text: var(--blurple-5);
-  --modal-background: var(--neutral-66);
-  --modal-footer-background: var(--neutral-66);
+  --message-reacted-text: var(--blurple-3);
+  --modal-background: var(--neutral-64);
+  --modal-footer-background: var(--neutral-64);
   --premium-nitro-pink-text: var(--pink-33);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-38);
-  --scrollbar-auto-scrollbar-color-track: var(--neutral-75);
-  --scrollbar-auto-thumb: var(--neutral-37);
+  --scrollbar-auto-scrollbar-color-track: var(--neutral-74);
+  --scrollbar-auto-thumb: var(--neutral-36);
   --scrollbar-auto-track: hsl(var(--transparent-hsl) / 0);
-  --scrollbar-thin-thumb: var(--neutral-39);
+  --scrollbar-thin-thumb: var(--neutral-38);
   --spine-default: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
-  --spoiler-hidden-background: var(--neutral-37);
+  --spoiler-hidden-background: var(--neutral-36);
   --text-brand: var(--blurple-25);
   --text-link: var(--blue-new-26);
   --text-muted: var(--neutral-22);
-  --text-normal: var(--neutral-11);
-  --text-positive: var(--green-new-26);
+  --text-normal: var(--neutral-9);
+  --text-positive: var(--green-new-24);
   --text-primary: var(--neutral-1);
   --text-secondary: var(--neutral-15);
-  --text-warning: var(--yellow-new-24);
+  --text-warning: var(--yellow-new-22);
+  --app-background-frame: var(--neutral-78);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-base-low: var(--neutral-69);
-  --background-base-lower: var(--neutral-72);
-  --background-base-lowest: var(--neutral-76);
+  --background-base-low: var(--neutral-66);
+  --background-base-lower: var(--neutral-69);
+  --background-base-lowest: var(--neutral-73);
   --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
   --background-code-addition: hsl(
     var(--opacity-green-12-hsl) / 0.12156862745098039
@@ -53486,45 +53563,46 @@ html.disable-forced-colors * {
   --background-mod-faint: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --background-surface-high: var(--neutral-66);
-  --background-surface-higher: var(--neutral-63);
+  --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --background-surface-high: var(--neutral-64);
+  --background-surface-higher: var(--neutral-62);
   --background-surface-highest: var(--neutral-60);
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
-  --chat-background-default: var(--neutral-69);
+  --chat-background-default: var(--neutral-64);
+  --chat-text-muted: var(--neutral-27);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-34);
   --icon-default: var(--neutral-2);
   --icon-tertiary: var(--neutral-22);
-  --notice-background-critical: var(--red-new-76);
-  --notice-background-info: var(--blue-new-77);
-  --notice-background-positive: var(--green-new-77);
-  --notice-background-warning: var(--yellow-new-76);
+  --notice-background-critical: var(--red-new-74);
+  --notice-background-info: var(--blue-new-76);
+  --notice-background-positive: var(--green-new-76);
+  --notice-background-warning: var(--yellow-new-75);
   --notice-text-critical: var(--red-new-1);
-  --notice-text-info: var(--blue-new-2);
-  --notice-text-positive: var(--green-new-4);
+  --notice-text-info: var(--blue-new-1);
+  --notice-text-positive: var(--green-new-2);
   --notice-text-warning: var(--yellow-new-1);
-  --spoiler-hidden-background-hover: var(--neutral-28);
-  --text-code-addition: var(--green-new-13);
-  --text-code-builtin: var(--orange-new-12);
-  --text-code-bullet: var(--yellow-new-13);
-  --text-code-comment: var(--neutral-28);
-  --text-code-default: var(--blue-new-14);
-  --text-code-deletion: var(--red-new-9);
-  --text-code-keyword: var(--red-new-11);
-  --text-code-section: var(--blue-new-14);
-  --text-code-string: var(--teal-new-15);
-  --text-code-tag: var(--green-new-15);
-  --text-code-title: var(--blurple-13);
-  --text-code-variable: var(--blue-new-14);
-  --text-default: var(--neutral-11);
-  --text-feedback-critical: var(--red-new-23);
-  --text-feedback-info: var(--blue-new-25);
-  --text-feedback-positive: var(--green-new-26);
-  --text-feedback-warning: var(--yellow-new-24);
+  --spoiler-hidden-background-hover: var(--neutral-27);
+  --text-code-addition: var(--green-new-10);
+  --text-code-builtin: var(--orange-new-10);
+  --text-code-bullet: var(--yellow-new-10);
+  --text-code-comment: var(--neutral-26);
+  --text-code-default: var(--blue-new-11);
+  --text-code-deletion: var(--red-new-6);
+  --text-code-keyword: var(--red-new-8);
+  --text-code-section: var(--blue-new-11);
+  --text-code-string: var(--teal-new-12);
+  --text-code-tag: var(--green-new-13);
+  --text-code-title: var(--blurple-10);
+  --text-code-variable: var(--blue-new-11);
+  --text-default: var(--neutral-9);
+  --text-feedback-critical: var(--red-new-21);
+  --text-feedback-info: var(--blue-new-24);
+  --text-feedback-positive: var(--green-new-24);
+  --text-feedback-warning: var(--yellow-new-22);
   --text-tertiary: var(--neutral-22);
 }
 @supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
@@ -53532,17 +53610,17 @@ html.disable-forced-colors * {
   .visual-refresh .theme-dark {
     --activity-card-background: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --autocomplete-bg: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-mentioned: color-mix(
@@ -53571,38 +53649,38 @@ html.disable-forced-colors * {
     );
     --background-message-hover: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --background-primary: color-mix(
       in oklab,
-      var(--neutral-69) 100%,
+      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-secondary: color-mix(
       in oklab,
-      var(--neutral-72) 100%,
+      var(--neutral-69) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-tertiary: color-mix(
       in oklab,
-      var(--neutral-76) 100%,
+      var(--neutral-73) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --bg-base-primary: color-mix(
       in oklab,
-      var(--neutral-69) 100%,
+      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --bg-base-secondary: color-mix(
       in oklab,
-      var(--neutral-72) 100%,
+      var(--neutral-69) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --bg-base-tertiary: color-mix(
       in oklab,
-      var(--neutral-76) 100%,
+      var(--neutral-73) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --bg-mod-faint: color-mix(
@@ -53619,8 +53697,8 @@ html.disable-forced-colors * {
     );
     --bg-mod-subtle: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --border-faint: color-mix(
@@ -53643,23 +53721,23 @@ html.disable-forced-colors * {
     );
     --card-primary-bg: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --card-secondary-bg: color-mix(
       in oklab,
-      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-base-color-amount, 0%)
     );
     --channel-icon: color-mix(
       in oklab,
-      var(--neutral-29) 100%,
+      var(--neutral-27) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --channels-default: color-mix(
       in oklab,
-      var(--neutral-29) 100%,
+      var(--neutral-27) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --header-muted: color-mix(
@@ -53674,7 +53752,7 @@ html.disable-forced-colors * {
     );
     --header-secondary: color-mix(
       in oklab,
-      var(--neutral-11) 100%,
+      var(--neutral-9) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
@@ -53700,7 +53778,7 @@ html.disable-forced-colors * {
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-23) 100%,
+      var(--red-new-21) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
@@ -53711,7 +53789,7 @@ html.disable-forced-colors * {
     );
     --info-help-text: color-mix(
       in oklab,
-      var(--blue-new-25) 100%,
+      var(--blue-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --info-positive-background: color-mix(
@@ -53722,7 +53800,7 @@ html.disable-forced-colors * {
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
@@ -53733,13 +53811,13 @@ html.disable-forced-colors * {
     );
     --info-warning-text: color-mix(
       in oklab,
-      var(--yellow-new-24) 100%,
+      var(--yellow-new-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --input-background: color-mix(
       in oklab,
-      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      hsl(var(--opacity-black-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--theme-base-color-amount, 0%)
     );
     --input-border: color-mix(
@@ -53756,7 +53834,7 @@ html.disable-forced-colors * {
     );
     --input-placeholder-text: color-mix(
       in oklab,
-      var(--neutral-31) 100%,
+      var(--neutral-32) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --interactive-active: color-mix(
@@ -53782,7 +53860,7 @@ html.disable-forced-colors * {
     );
     --mention-foreground: color-mix(
       in oklab,
-      var(--blurple-10) 100%,
+      var(--blurple-8) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --message-reacted-background: color-mix(
@@ -53793,17 +53871,17 @@ html.disable-forced-colors * {
     );
     --message-reacted-text: color-mix(
       in oklab,
-      var(--blurple-5) 100%,
+      var(--blurple-3) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --modal-footer-background: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --premium-nitro-pink-text: color-mix(
@@ -53818,12 +53896,12 @@ html.disable-forced-colors * {
     );
     --scrollbar-auto-scrollbar-color-track: color-mix(
       in oklab,
-      var(--neutral-75) 100%,
+      var(--neutral-74) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-thumb: color-mix(
       in oklab,
-      var(--neutral-37) 100%,
+      var(--neutral-36) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-track: color-mix(
@@ -53834,7 +53912,7 @@ html.disable-forced-colors * {
     );
     --scrollbar-thin-thumb: color-mix(
       in oklab,
-      var(--neutral-39) 100%,
+      var(--neutral-38) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --spine-default: color-mix(
@@ -53845,7 +53923,7 @@ html.disable-forced-colors * {
     );
     --spoiler-hidden-background: color-mix(
       in oklab,
-      var(--neutral-37) 100%,
+      var(--neutral-36) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -53865,12 +53943,12 @@ html.disable-forced-colors * {
     );
     --text-normal: color-mix(
       in oklab,
-      var(--neutral-11) 100%,
+      var(--neutral-9) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -53885,8 +53963,13 @@ html.disable-forced-colors * {
     );
     --text-warning: color-mix(
       in oklab,
-      var(--yellow-new-24) 100%,
+      var(--yellow-new-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-78) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
       in oklab,
@@ -53896,17 +53979,17 @@ html.disable-forced-colors * {
     );
     --background-base-low: color-mix(
       in oklab,
-      var(--neutral-69) 100%,
+      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-base-lower: color-mix(
       in oklab,
-      var(--neutral-72) 100%,
+      var(--neutral-69) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-base-lowest: color-mix(
       in oklab,
-      var(--neutral-76) 100%,
+      var(--neutral-73) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-code: color-mix(
@@ -53953,12 +54036,12 @@ html.disable-forced-colors * {
     );
     --background-surface-high: color-mix(
       in oklab,
-      var(--neutral-66) 100%,
+      var(--neutral-64) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-surface-higher: color-mix(
       in oklab,
-      var(--neutral-63) 100%,
+      var(--neutral-62) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-surface-highest: color-mix(
@@ -53980,7 +54063,12 @@ html.disable-forced-colors * {
     );
     --chat-background-default: color-mix(
       in oklab,
-      var(--neutral-69) 100%,
+      var(--neutral-64) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --chat-text-muted: color-mix(
+      in oklab,
+      var(--neutral-27) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-checked: color-mix(
@@ -54016,22 +54104,22 @@ html.disable-forced-colors * {
     );
     --notice-background-critical: color-mix(
       in oklab,
-      var(--red-new-76) 100%,
+      var(--red-new-74) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-background-info: color-mix(
       in oklab,
-      var(--blue-new-77) 100%,
+      var(--blue-new-76) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-background-positive: color-mix(
       in oklab,
-      var(--green-new-77) 100%,
+      var(--green-new-76) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-background-warning: color-mix(
       in oklab,
-      var(--yellow-new-76) 100%,
+      var(--yellow-new-75) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-critical: color-mix(
@@ -54041,12 +54129,12 @@ html.disable-forced-colors * {
     );
     --notice-text-info: color-mix(
       in oklab,
-      var(--blue-new-2) 100%,
+      var(--blue-new-1) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-positive: color-mix(
       in oklab,
-      var(--green-new-4) 100%,
+      var(--green-new-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-warning: color-mix(
@@ -54056,92 +54144,92 @@ html.disable-forced-colors * {
     );
     --spoiler-hidden-background-hover: color-mix(
       in oklab,
-      var(--neutral-28) 100%,
+      var(--neutral-27) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --text-code-addition: color-mix(
       in oklab,
-      var(--green-new-13) 100%,
+      var(--green-new-10) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-builtin: color-mix(
       in oklab,
-      var(--orange-new-12) 100%,
+      var(--orange-new-10) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-bullet: color-mix(
       in oklab,
-      var(--yellow-new-13) 100%,
+      var(--yellow-new-10) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-comment: color-mix(
       in oklab,
-      var(--neutral-28) 100%,
+      var(--neutral-26) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-default: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--blue-new-11) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-9) 100%,
+      var(--red-new-6) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
-      var(--red-new-11) 100%,
+      var(--red-new-8) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--blue-new-11) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-string: color-mix(
       in oklab,
-      var(--teal-new-15) 100%,
+      var(--teal-new-12) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-tag: color-mix(
       in oklab,
-      var(--green-new-15) 100%,
+      var(--green-new-13) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-title: color-mix(
       in oklab,
-      var(--blurple-13) 100%,
+      var(--blurple-10) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-variable: color-mix(
       in oklab,
-      var(--blue-new-14) 100%,
+      var(--blue-new-11) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-default: color-mix(
       in oklab,
-      var(--neutral-11) 100%,
+      var(--neutral-9) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-23) 100%,
+      var(--red-new-21) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
       in oklab,
-      var(--blue-new-25) 100%,
+      var(--blue-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-26) 100%,
+      var(--green-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
       in oklab,
-      var(--yellow-new-24) 100%,
+      var(--yellow-new-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-tertiary: color-mix(
@@ -54250,7 +54338,7 @@ html.disable-forced-colors * {
   --channels-default: var(--neutral-42);
   --header-muted: var(--neutral-38);
   --header-primary: var(--neutral-71);
-  --header-secondary: var(--neutral-67);
+  --header-secondary: var(--neutral-69);
   --icon-muted: var(--neutral-38);
   --icon-primary: var(--neutral-59);
   --icon-secondary: var(--neutral-44);
@@ -54280,11 +54368,12 @@ html.disable-forced-colors * {
   --text-brand: var(--blurple-49);
   --text-link: var(--blue-new-49);
   --text-muted: var(--neutral-38);
-  --text-normal: var(--neutral-67);
+  --text-normal: var(--neutral-69);
   --text-positive: var(--green-new-55);
   --text-primary: var(--neutral-71);
   --text-secondary: var(--neutral-44);
   --text-warning: var(--yellow-new-54);
+  --app-background-frame: var(--neutral-7);
   --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
@@ -54320,6 +54409,7 @@ html.disable-forced-colors * {
   );
   --border-normal: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --chat-background-default: var(--neutral-1);
+  --chat-text-muted: var(--neutral-39);
   --checkbox-border-default: var(--neutral-29);
   --icon-default: var(--neutral-59);
   --icon-tertiary: var(--neutral-38);
@@ -54344,7 +54434,7 @@ html.disable-forced-colors * {
   --text-code-tag: var(--green-new-68);
   --text-code-title: var(--blurple-68);
   --text-code-variable: var(--blue-new-68);
-  --text-default: var(--neutral-67);
+  --text-default: var(--neutral-69);
   --text-feedback-critical: var(--red-new-54);
   --text-feedback-info: var(--blue-new-56);
   --text-feedback-positive: var(--green-new-55);
@@ -54492,7 +54582,7 @@ html.disable-forced-colors * {
     );
     --header-secondary: color-mix(
       in oklab,
-      var(--neutral-67) 100%,
+      var(--neutral-69) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
@@ -54647,7 +54737,7 @@ html.disable-forced-colors * {
     );
     --text-normal: color-mix(
       in oklab,
-      var(--neutral-67) 100%,
+      var(--neutral-69) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-positive: color-mix(
@@ -54669,6 +54759,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--yellow-new-54) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-7) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --app-border-frame: color-mix(
       in oklab,
@@ -54763,6 +54858,11 @@ html.disable-forced-colors * {
     --chat-background-default: color-mix(
       in oklab,
       var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --chat-text-muted: color-mix(
+      in oklab,
+      var(--neutral-39) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -54887,7 +54987,7 @@ html.disable-forced-colors * {
     );
     --text-default: color-mix(
       in oklab,
-      var(--neutral-67) 100%,
+      var(--neutral-69) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-critical: color-mix(
@@ -55080,6 +55180,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-7);
   --text-secondary: var(--neutral-27);
   --text-warning: var(--yellow-new-38);
+  --app-background-frame: var(--neutral-100);
   --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
@@ -55114,7 +55215,8 @@ html.disable-forced-colors * {
     var(--opacity-red-24-hsl) / 0.23921568627450981
   );
   --border-normal: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
-  --chat-background-default: var(--neutral-92);
+  --chat-background-default: var(--neutral-91);
+  --chat-text-muted: var(--neutral-37);
   --checkbox-border-default: var(--neutral-43);
   --icon-default: var(--neutral-14);
   --icon-tertiary: var(--neutral-33);
@@ -55453,6 +55555,11 @@ html.disable-forced-colors * {
       var(--yellow-new-38) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-100) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --app-border-frame: color-mix(
       in oklab,
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
@@ -55545,7 +55652,12 @@ html.disable-forced-colors * {
     );
     --chat-background-default: color-mix(
       in oklab,
-      var(--neutral-92) 100%,
+      var(--neutral-91) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --chat-text-muted: color-mix(
+      in oklab,
+      var(--neutral-37) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
@@ -55862,6 +55974,7 @@ html.disable-forced-colors * {
   --text-primary: var(--neutral-2);
   --text-secondary: var(--neutral-22);
   --text-warning: var(--yellow-new-32);
+  --app-background-frame: var(--neutral-96);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
@@ -55894,7 +56007,8 @@ html.disable-forced-colors * {
   --background-surface-highest: var(--neutral-73);
   --border-feedback-critical: hsl(var(--opacity-red-20-hsl) / 0.2);
   --border-normal: hsl(var(--opacity-20-hsl) / 0.2);
-  --chat-background-default: var(--neutral-81);
+  --chat-background-default: var(--neutral-80);
+  --chat-text-muted: var(--neutral-34);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
@@ -56278,6 +56392,11 @@ html.disable-forced-colors * {
       var(--yellow-new-32) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --app-background-frame: color-mix(
+      in oklab,
+      var(--neutral-96) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --app-border-frame: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
@@ -56370,7 +56489,12 @@ html.disable-forced-colors * {
     );
     --chat-background-default: color-mix(
       in oklab,
-      var(--neutral-81) 100%,
+      var(--neutral-80) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --chat-text-muted: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --checkbox-background-checked: color-mix(
@@ -57206,6 +57330,15 @@ html.disable-forced-colors * {
   --channels-name-line-height: 28px;
   --channels-spine-inverted-offset-top: 9px;
   --channels-spine-offset-left: 28px;
+}
+.refresh-fast-follow-avatars.density-compact {
+  --guildbar-avatar-size: 40px;
+  --guildbar-folder-size: 48px;
+}
+.refresh-fast-follow-avatars.density-cozy,
+.refresh-fast-follow-avatars.density-default {
+  --guildbar-avatar-size: 44px;
+  --guildbar-folder-size: 52px;
 }
 a,
 abbr,
@@ -58112,7 +58245,7 @@ img[alt] {
   --custom-guild-list-width: 72px;
 }
 .visual-refresh {
-  --custom-guild-list-padding: min(var(--space-md));
+  --custom-guild-list-padding: var(--space-md);
   --custom-guild-list-width: calc(
     var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
   );
@@ -58131,6 +58264,14 @@ img[alt] {
     (var(--chat-avatar-size) - var(--chat-input-icon-size))/2
   );
   --custom-message-margin-horizontal: var(--space-md);
+}
+.visual-refresh.refresh-fast-follow-avatars {
+  --custom-guild-list-padding: min(var(--space-md), var(--space-16));
+  --custom-guild-list-width: calc(
+    var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+  );
+  --custom-app-top-bar-height: calc(24px + var(--space-xs));
+  --custom-channel-header-height: var(--guildbar-avatar-size);
 }
 .visual-refresh.density-compact {
   --custom-member-list-width: 256px;
@@ -58189,4 +58330,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f7947845f8ea7f03.css.map*/
+/*# sourceMappingURL=12633.1269e61814b11818.css.map*/
