@@ -34796,6 +34796,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .panel__581dd {
   padding: var(--spacing-12);
 }
+.hoverable__76c22 {
+  display: inline;
+}
 .roleDot__57082 {
   margin-right: 2px;
   margin-left: -2px;
@@ -58171,4 +58174,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fd328c822b81091a.css.map*/
+/*# sourceMappingURL=12633.0bd7c49312ae9ee5.css.map*/
