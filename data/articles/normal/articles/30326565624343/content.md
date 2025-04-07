@@ -1,61 +1,142 @@
 <p>
-  We are working to provide a seamless way for you to verify your age group to
-  enter age-restricted spaces, change certain settings, and/or view sensitive
-  content. 
+  We provide age verification to help users manage content filter settings and
+  sensitive content visibility. This one-time process can be completed when you
+  first adjust these settings, with the option to re-verify if needed.
 </p>
-<div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
-  <a href="#h_01JQ4N4R4K238K45JTARQVK2CN"
-    >Why do I need to verify my age group?</a
-  ><br /><a href="#h_01JQ4N5599MNJP93871HS6VY9S"
-    >How do I verify my age group?</a
-  ><br /><a href="#h_01JQ4N9Y8E96WFDRN01KC81VTP">Frequently Asked Questions</a>
-</div>
 <div class="exp-box">
   The age verification features described are an experiment and available only
   to users in the United Kingdom and Australia.
 </div>
-<h1 id="h_01JQ4N4R4K238K45JTARQVK2CN">Why do I need to verify my age group?</h1>
 <p>
-  Some Discord features or spaces are designed for certain age groups. We're
-  experimenting with new ways to verify your age when you try to access them.
-</p>
-<h1 id="h_01JQ4N5599MNJP93871HS6VY9S">How do I verify my age group?</h1>
-<p>
-  1. If you have not verified your age group and are included in the experiment,
-  when you access an age-restricted space, you’ll see an
-  <strong>age-restricted warning</strong>. If age verification is required,
-  press the <strong>Verify Age</strong> button to begin.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/30885684647447"
-    width="624"
-    height="372"
-  />
-</p>
-<h4 id="h_01JQ4N5MRTCKFC8Q6NRKBBD3AK" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
-    >Example of Age- Restricted Channel Warning and Verify Age Button</span
-  >
-</h4>
-<p>
-  2. A <strong>We need to verify your age </strong>window will appear, offering
-  two verification options:
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
 </p>
 <ul>
   <li>
-    <strong>Face Scan</strong>: Select <strong>Face Scan</strong> on the
-    verification page. Choose your preferred webcam or camera, follow the
-    on-screen instructions, and press <strong>Done</strong> when finished.
+    <a href="#h_01JQ4N4R4K238K45JTARQVK2CN"
+      >Why do I need to verify my age group?</a
+    >
   </li>
   <li>
-    <strong>Scan ID</strong>: Select <strong>Scan ID</strong> on the
-    verification page. Scan the displayed QR code with your device, follow the
-    instructions to photograph your ID, and press <strong>Done</strong>.
+    <a href="#h_01JQWGF3DAAB04W64D7E2NVFKW">When do I need to verify my age?</a>
+  </li>
+  <li>
+    <a href="#h_01JQ4N5599MNJP93871HS6VY9S">How do I verify my age group?</a>
+  </li>
+  <li>
+    <a href="#h_01JQ4N9Y8E96WFDRN01KC81VTP">Frequently Asked Questions</a>
+  </li>
+</ul>
+<h1 id="h_01JQ4N4R4K238K45JTARQVK2CN">Why do I need to verify my age group?</h1>
+<p>
+  Some Discord settings and content are designed for certain age groups. We're
+  experimenting with a streamlined way for you to verify your age group when you
+  try to access those settings or content.
+</p>
+<div class="info-box">
+  <strong>NOTE</strong>: Age verification is required to unblur media flagged by
+  our sensitive media filter and to update your sensitive media filter settings.
+</div>
+<h1 id="h_01JQWGF3DAAB04W64D7E2NVFKW">When do I need to verify my age?</h1>
+<p>You may be asked to verify your age in two situations:</p>
+<p>
+  1. When you encounter content flagged by our sensitive media filter, you may
+  need to verify your age group.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31127603185303"
+    width="624"
+    height="273"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01JR8NRWN7BMRHWS1K2MQEMPPB">
+  <span style="color: #666666"
+    >Example of Blurred Sensitive Media in a Message<br
+  /></span>
+</h4>
+<p>
+  2. When you try to change your sensitive content filter settings and need to
+  verify your age first. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31127572747159"
+    width="624"
+    height="292"
+  />
+</p>
+<h4 id="h_01JQWGGW5KCT3F483KR8SFQVFT" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Sensitive Content Settings in Content &amp; Social</span
+  >
+</h4>
+<h1 id="h_01JQ4N5599MNJP93871HS6VY9S">How do I verify my age group?</h1>
+<p>
+  The age verification process works the same way, regardless of how it is
+  triggered. Here’s how to verify to verify your age group:
+</p>
+<p>
+  1. When you encounter blurred sensitive content or try to change content
+  filter settings, you'll be prompted to verify your age if you haven't done so
+  already.
+  <span style="color: #1f1f1f; background-color: #ffffff"
+    >This requirement applies to users who haven't verified their age and are
+    included in this experiment.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31127572747287"
+    width="484"
+    height="458"
+  />
+</p>
+<h4 id="h_01JQWGJ3G5ABA5507MQD0M3RTC" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Verify age group window</span>
+</h4>
+<p>
+  2. A <strong>We need to verify your age </strong>window will appear, offering
+  two verification options: 
+</p>
+<ul>
+  <li>
+    <strong>Option 1: Face Scan</strong> 
+    <ul>
+      <li>Select <strong>Face Scan</strong> on the verification page. </li>
+      <li>Allow access to your camera when prompted.</li>
+      <li>Follow the on-screen instructions to complete the scan. </li>
+      <li>Press <strong>Done</strong> to submit.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>
+    <strong>Option 2: Scan ID</strong> 
+    <ul>
+      <li>Select <strong>Scan ID</strong> on the verification page. </li>
+      <li>Use your mobile device to scan the QR code.</li>
+      <li>Take a clear photo of your ID following the guidelines.</li>
+      <li>
+        Press
+        <strong
+          style="
+            font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Helvetica, Arial, sans-serif;
+          "
+          >Done</strong
+        ><span
+          style="
+            font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Helvetica, Arial, sans-serif;
+          "
+        >
+          to submit.</span
+        >
+      </li>
+    </ul>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -110,12 +191,22 @@
   stored by Discord or its vendor. For Face Scan, the solution our vendor uses
   operates on-device, which means there is no collection of any biometric
   information when you scan your face. For ID verification, the scan of your ID
-  is deleted upon verification. 
+  is deleted upon verification.
 </p>
 <p>
   <strong
-    >Q: Do I need to verify my age multiple times to access age-restricted
-    content?</strong
+    >Q: Do I need to verify my age to access content flagged by our Sensitive
+    Media Filter and settings?</strong
+  >
+</p>
+<p>
+  A: Yes, age verification is required before you can access that flagged
+  content and the sensitive media filter settings.
+</p>
+<p>
+  <strong
+    >Q: Do I need to verify my age multiple times to change the settings for the
+    Sensitive Media Filter?</strong
   >
 </p>
 <p>
