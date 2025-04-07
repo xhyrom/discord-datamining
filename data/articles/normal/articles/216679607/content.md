@@ -256,15 +256,19 @@
 </p>
 <p>
   A: Users who don't meet the verification requirements won't be able to send
-  text messages in the server channels. They'll need to complete the required
-  verification steps based on the server's settings before they can
-  participate.<br /><strong
+  text messages in the server channels or join voice channels. They'll need to
+  complete the required verification steps based on the server's settings before
+  they can participate.
+</p>
+<p>
+  <strong
     >Q: Do I still need to meet other requirements if I have a verified phone
     number?</strong
-  ><strong><br /></strong>A: No. Having a verified phone number supersedes all
-  other requirements.<br /><strong
-    >Q: Can different channels have different verification levels?</strong
   >
+</p>
+<p>A: No. Having a verified phone number supersedes all other requirements.</p>
+<p>
+  <strong>Q: Can different channels have different verification levels?</strong>
 </p>
 <p>
   A: No, verification levels are set server-wide and apply to all channels
