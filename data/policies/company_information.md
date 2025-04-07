@@ -800,18 +800,18 @@
         </div>
         <div class="nav_buttons-wr_new">
           <a
+            data-track-nav="login"
+            data-track="login"
+            href="https://discord.com/app"
+            class="menu-button-login login-button-js abc"
+            >Log in</a
+          ><a
             id="login"
             data-track="login"
             data-track-nav="login"
             href="https://discord.com/app"
             class="button-nav login-button-js new w-button"
             >Log In</a
-          ><a
-            data-track-nav="login"
-            data-track="login"
-            href="https://discord.com/app"
-            class="menu-button-login login-button-js abc"
-            >Log in</a
           >
         </div>
         <div
