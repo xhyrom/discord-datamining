@@ -53966,7 +53966,7 @@ html.disable-forced-colors * {
     --chat-text-muted: color-mix(
       in oklab,
       var(--neutral-27) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --checkbox-background-checked: color-mix(
       in oklab,
@@ -54760,7 +54760,7 @@ html.disable-forced-colors * {
     --chat-text-muted: color-mix(
       in oklab,
       var(--neutral-39) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
       in oklab,
@@ -55555,7 +55555,7 @@ html.disable-forced-colors * {
     --chat-text-muted: color-mix(
       in oklab,
       var(--neutral-37) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --checkbox-border-default: color-mix(
       in oklab,
@@ -56390,7 +56390,7 @@ html.disable-forced-colors * {
     --chat-text-muted: color-mix(
       in oklab,
       var(--neutral-34) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --checkbox-background-checked: color-mix(
       in oklab,
@@ -58225,4 +58225,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9ff42cfcc18a59ca.css.map*/
+/*# sourceMappingURL=12633.3a3d9e03abb8c000.css.map*/
