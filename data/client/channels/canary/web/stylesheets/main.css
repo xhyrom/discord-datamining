@@ -32891,6 +32891,12 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   visibility: hidden;
   pointer-events: none;
 }
+.referenceContainer_ab8609.withLabel_ab8609,
+.referenceContainer_ab8609.withLabel_ab8609.biteSize_ab8609,
+.referenceContainer_ab8609.withLabel_ab8609.fullSize_ab8609,
+.referenceContainer_ab8609.withLabel_ab8609.panel_ab8609 {
+  margin-top: -24px;
+}
 .referenceContainer_ab8609.biteSize_ab8609 {
   margin-top: -10px;
   margin-left: 109px;
@@ -33030,6 +33036,15 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .outer_ab8609:hover .addStatusIconColor_ab8609 {
   fill: var(--text-normal);
+}
+.labelContent_ab8609 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+.labelText_ab8609 {
+  line-height: 12px;
 }
 .section_bf424d {
   display: flex;
@@ -58179,4 +58194,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3e84486968df4d09.css.map*/
+/*# sourceMappingURL=12633.104997b920e9c34a.css.map*/
