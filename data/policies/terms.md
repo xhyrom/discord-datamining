@@ -123,6 +123,15 @@
       .bottom-dd_icon-s {
         color: white;
       }
+      .nav_brand_main-black-logo {
+        opacity: 1;
+      }
+    </style>
+    <style>
+      .menu-button-login.login-button-js {
+        color: white;
+        background-color: black;
+      }
     </style>
   </div>
   <header class="nav">
