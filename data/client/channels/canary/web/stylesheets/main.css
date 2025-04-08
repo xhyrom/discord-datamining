@@ -12045,17 +12045,18 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   width: fit-content;
   background-color: var(--bg-base-primary);
   padding: var(--spacing-4) 10px;
+  gap: 2px;
   margin-top: var(--spacing-12);
 }
 .labelsContainer__3add8,
 .topPerksCardLabelContainer__3add8 {
   display: flex;
   flex-direction: row;
-  gap: var(--spacing-4);
   align-items: center;
   justify-self: center;
 }
 .labelsContainer__3add8 {
+  gap: var(--spacing-4);
   color: var(--text-positive);
 }
 .intObserver__3add8 {
@@ -58178,4 +58179,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f7740223d82f32c0.css.map*/
+/*# sourceMappingURL=12633.3e84486968df4d09.css.map*/
