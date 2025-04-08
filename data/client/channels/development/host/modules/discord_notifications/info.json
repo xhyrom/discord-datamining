@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.912",
+    "module_version": 1,
+    "package_sha256": "1383eb182d38d6c8df963adca9fae0dd21695f9a8824d7e71a3052aef77a4ab4",
+    "url": "https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.912/discord_notifications/1/full.distro"
+  },
+  "deltas": []
+}
