@@ -7205,6 +7205,61 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.twoColorGradient__65640 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-1)
+  );
+  background-size: 100px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.threeColorGradient__65640 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-3),
+    var(--custom-gradient-color-1)
+  );
+  background-size: 100px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.threeColorGradient__65640:after,
+.twoColorGradient__65640:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(7px) brightness(1.2);
+  animation: inherit;
+  opacity: 0.5;
+}
+.gradient__65640:hover {
+  animation: gradient__65640 2.5s linear infinite;
+}
+.gradientText__65640 {
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient__65640 {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100px;
+  }
+}
 .wrapper_f61d60 {
   border-radius: 3px;
   padding: 0 2px;
@@ -13787,61 +13842,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .children__91a9d {
   flex: 0 0 auto;
   margin-left: 8px;
-}
-.twoColorGradient__65640 {
-  background: linear-gradient(
-    90deg,
-    var(--custom-gradient-color-1),
-    var(--custom-gradient-color-2),
-    var(--custom-gradient-color-1)
-  );
-  background-size: 100px auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.threeColorGradient__65640 {
-  background: linear-gradient(
-    90deg,
-    var(--custom-gradient-color-1),
-    var(--custom-gradient-color-2),
-    var(--custom-gradient-color-3),
-    var(--custom-gradient-color-1)
-  );
-  background-size: 100px auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.threeColorGradient__65640:after,
-.twoColorGradient__65640:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: inherit;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: blur(7px) brightness(1.2);
-  animation: inherit;
-  opacity: 0.5;
-}
-.gradient__65640:hover {
-  animation: gradient__65640 2.5s linear infinite;
-}
-.gradientText__65640 {
-  position: relative;
-  z-index: 1;
-}
-@keyframes gradient__65640 {
-  0% {
-    background-position: 0;
-  }
-  to {
-    background-position: 100px;
-  }
 }
 .nitroRewardTileAssetContainer_a92e89 {
   display: flex;
@@ -58207,4 +58207,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.56501f4687b69f64.css.map*/
+/*# sourceMappingURL=12633.4e0ad052345d92b2.css.map*/
