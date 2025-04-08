@@ -44,12 +44,12 @@
   and/or the documentation for the programming library you're using.
 </p>
 <p>
-  For guidance on acceptable use cases for Privileged Intents, see our
+  For guidance on best practices for using Privileged Intents, see our
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/6177533521047-What-is-considered-an-acceptable-use-case-for-Privileged-Intents"
     target="_blank"
     rel="noopener noreferrer"
-    >Acceptable Use Cases for Privileged Intents</a
+    >Privileged Intents Best Practices</a
   >
   article.
 </p>
