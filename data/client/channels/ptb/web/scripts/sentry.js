@@ -3592,6 +3592,7 @@
               "/reporting/unauthenticated/".concat(t, "/verify"),
             DSA_EXPERIMENT_UNAUTHENTICATED:
               "/reporting/unauthenticated/experiment",
+            DSA_CAPABILITIES: "/reporting/unauthenticated/capabilities",
             SUBMIT_REPORT_SECOND_LOOK: "/reporting/review",
             STAGE_INSTANCES: "/stage-instances",
             STAGE_INSTANCES_EXTRA: "/stage-instances/extra",
@@ -4663,6 +4664,7 @@
           (r.VOICE_QUALITY_PERIODIC_STATS = "voice_quality_periodic_stats"),
           (r.AUDIO_DEVICE_MODULE_ERROR = "audio_device_module_error"),
           (r.SDP_ERROR = "sdp_error"),
+          (r.VOICE_QUEUE_METRICS = "voice_queue_metrics"),
           (r.CHANNEL_SIDEBAR_VIEWED = "channel_sidebar_viewed"),
           (r.CHANNEL_SIDEBAR_RESIZED = "channel_sidebar_resized"),
           (r.MEMBER_LIST_VIEWED = "member_list_viewed"),
@@ -6629,6 +6631,7 @@
             "\xb7": 229,
             ذ: 192,
             "`": 192,
+            "\xac": 223,
             "\\": 220,
             "'": 222,
           }),
@@ -6730,7 +6733,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-07-6dce6300c95cf839ba07a15d08364c3028797b2d-discord_web",
+              "2025-04-08-e1ca4b4b45fb0e0cb56251d298473b5953fc08e3-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6796,8 +6799,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "387004"),
-            o.YA("builtAt", String("1744062961904"));
+            o.YA("buildNumber", "387211"),
+            o.YA("builtAt", String("1744096734256"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -9893,27 +9896,27 @@
               BLUE_830: "#001630",
               BLUE_860: "#00132b",
               BLUE_900: "#001024",
-              BLUE_NEW_24: "#83b5f6",
-              BLUE_NEW_26: "#7bb0f5",
-              BLUE_NEW_34: "#5a9cef",
-              BLUE_NEW_36: "#5197ed",
-              BLUE_NEW_40: "#3f8cea",
-              BLUE_NEW_42: "#3687e9",
+              BLUE_NEW_24: "#79b6ff",
+              BLUE_NEW_26: "#72b1fc",
+              BLUE_NEW_34: "#549cf3",
+              BLUE_NEW_36: "#4c97f0",
+              BLUE_NEW_40: "#3c8cec",
+              BLUE_NEW_42: "#3387ea",
               BLUE_NEW_49: "#0074e3",
               BLUE_NEW_56: "#0666c4",
-              BLURPLE_14: "#b9c7ff",
-              BLURPLE_19: "#a9baff",
-              BLURPLE_21: "#a3b4fe",
-              BLURPLE_25: "#96aafd",
-              BLURPLE_26: "#93a7fd",
-              BLURPLE_3: "#dfe4ff",
-              BLURPLE_35: "#7a8ef9",
-              BLURPLE_41: "#6a7df6",
+              BLURPLE_14: "#b4c7ff",
+              BLURPLE_18: "#a7bcff",
+              BLURPLE_2: "#e1e6ff",
+              BLURPLE_21: "#9eb4ff",
+              BLURPLE_25: "#92a9ff",
+              BLURPLE_26: "#90a6ff",
+              BLURPLE_35: "#788efd",
+              BLURPLE_41: "#6a7df7",
               BLURPLE_49: "#5865f2",
               BLURPLE_50: "#5865f2",
               BLURPLE_71: "#2e3c89",
               BLURPLE_75: "#273578",
-              BLURPLE_8: "#ced7ff",
+              BLURPLE_8: "#cad7ff",
               BRAND_100: "#f7f7fe",
               BRAND_130: "#f0f1fe",
               BRAND_160: "#e7e9fd",
@@ -9973,9 +9976,9 @@
               GREEN_830: "#031b0a",
               GREEN_860: "#041708",
               GREEN_900: "#051307",
-              GREEN_NEW_24: "#78c586",
-              GREEN_NEW_34: "#53ac66",
-              GREEN_NEW_40: "#3b9d54",
+              GREEN_NEW_24: "#6ec77f",
+              GREEN_NEW_34: "#4eac63",
+              GREEN_NEW_40: "#399d53",
               GREEN_NEW_50: "#00863a",
               GREEN_NEW_53: "#047e37",
               GREEN_NEW_55: "#057834",
@@ -9993,43 +9996,44 @@
               LOL_TEXT_DARK: "#94620f",
               LOL_TEXT_LIGHT: "#cbaa62",
               NEUTRAL_1: "#ffffff",
-              NEUTRAL_10: "#dcdcde",
+              NEUTRAL_10: "#dbdcdf",
               NEUTRAL_100: "#000000",
-              NEUTRAL_14: "#ccccd0",
               NEUTRAL_15: "#c8c8cd",
-              NEUTRAL_17: "#c1c1c6",
+              NEUTRAL_16: "#c4c5c9",
+              NEUTRAL_17: "#c0c1c6",
               NEUTRAL_2: "#fbfbfb",
-              NEUTRAL_22: "#aeaeb4",
-              NEUTRAL_27: "#9c9ca3",
-              NEUTRAL_29: "#94949c",
+              NEUTRAL_22: "#adaeb4",
+              NEUTRAL_23: "#aaaab1",
+              NEUTRAL_27: "#9b9ca3",
+              NEUTRAL_29: "#94959c",
               NEUTRAL_3: "#f7f7f8",
-              NEUTRAL_30: "#919199",
-              NEUTRAL_31: "#8d8d95",
-              NEUTRAL_32: "#8a8a92",
-              NEUTRAL_33: "#86868e",
-              NEUTRAL_34: "#83838b",
-              NEUTRAL_36: "#7c7c84",
-              NEUTRAL_38: "#75757e",
+              NEUTRAL_30: "#909199",
+              NEUTRAL_31: "#8c8d95",
+              NEUTRAL_32: "#898a92",
+              NEUTRAL_33: "#85868e",
+              NEUTRAL_34: "#82838b",
+              NEUTRAL_36: "#7b7c84",
+              NEUTRAL_38: "#74757e",
               NEUTRAL_4: "#f3f3f4",
-              NEUTRAL_42: "#676771",
-              NEUTRAL_43: "#64646d",
-              NEUTRAL_44: "#60606a",
-              NEUTRAL_45: "#5d5d67",
-              NEUTRAL_46: "#5a5a64",
+              NEUTRAL_42: "#666771",
+              NEUTRAL_43: "#63646d",
+              NEUTRAL_44: "#5f606a",
+              NEUTRAL_45: "#5c5d67",
+              NEUTRAL_46: "#595a64",
               NEUTRAL_5: "#efeff0",
-              NEUTRAL_59: "#42424a",
+              NEUTRAL_59: "#41424a",
               NEUTRAL_6: "#ebebed",
-              NEUTRAL_64: "#3a3a41",
-              NEUTRAL_66: "#37373e",
-              NEUTRAL_69: "#333339",
-              NEUTRAL_7: "#e7e7e9",
-              NEUTRAL_71: "#303035",
-              NEUTRAL_73: "#2d2d32",
+              NEUTRAL_64: "#393a41",
+              NEUTRAL_66: "#36373e",
+              NEUTRAL_69: "#323339",
+              NEUTRAL_71: "#2f3035",
+              NEUTRAL_73: "#2c2d32",
               NEUTRAL_74: "#2b2b31",
               NEUTRAL_79: "#242429",
+              NEUTRAL_8: "#e3e3e6",
               NEUTRAL_82: "#202024",
               NEUTRAL_86: "#1a1a1e",
-              NEUTRAL_9: "#dfdfe2",
+              NEUTRAL_9: "#dfe0e2",
               NEUTRAL_90: "#151518",
               NEUTRAL_91: "#131416",
               NEUTRAL_92: "#121214",
@@ -10339,52 +10343,52 @@
               ORANGE_900: "#190d04",
               PARTNER: "#4087ed",
               PAYPAL: "#13216b",
-              PINK_1: "#ffd8f3",
-              PINK_10: "#ffbfee",
+              PINK_1: "#ffd3f8",
+              PINK_10: "#ffbef0",
               PINK_100: "#000000",
-              PINK_11: "#ffbced",
-              PINK_12: "#ffbaec",
-              PINK_13: "#ffb7ec",
-              PINK_14: "#ffb4eb",
-              PINK_15: "#ffb1eb",
-              PINK_16: "#ffafea",
-              PINK_17: "#fface9",
-              PINK_18: "#ffa9e9",
-              PINK_19: "#ffa6e8",
-              PINK_2: "#ffd5f2",
-              PINK_20: "#ffa4e7",
-              PINK_21: "#ffa1e7",
-              PINK_22: "#ff9ee6",
-              PINK_23: "#ff9be5",
-              PINK_24: "#ff99e5",
-              PINK_25: "#ff96e4",
-              PINK_26: "#ff93e3",
-              PINK_27: "#ff90e2",
-              PINK_28: "#ff8ee2",
-              PINK_29: "#ff8be1",
-              PINK_3: "#ffd2f2",
-              PINK_30: "#ff88e0",
-              PINK_31: "#ff85df",
-              PINK_32: "#ff82df",
-              PINK_33: "#ff7fde",
-              PINK_34: "#ff7cdd",
-              PINK_35: "#ff7add",
-              PINK_36: "#ff77dc",
-              PINK_37: "#ff74db",
-              PINK_38: "#ff71da",
-              PINK_39: "#ff6eda",
-              PINK_4: "#ffcff1",
-              PINK_40: "#ff6ad9",
-              PINK_41: "#ff67d8",
-              PINK_42: "#ff64d7",
-              PINK_43: "#ff61d7",
-              PINK_44: "#ff5ed6",
+              PINK_11: "#ffbcef",
+              PINK_12: "#ffbaef",
+              PINK_13: "#ffb7ee",
+              PINK_14: "#ffb4ed",
+              PINK_15: "#ffb2ec",
+              PINK_16: "#ffafec",
+              PINK_17: "#ffadeb",
+              PINK_18: "#ffaaea",
+              PINK_19: "#ffa7e9",
+              PINK_2: "#ffd1f7",
+              PINK_20: "#ffa5e8",
+              PINK_21: "#ffa2e8",
+              PINK_22: "#ff9fe7",
+              PINK_23: "#ff9ce6",
+              PINK_24: "#ff99e6",
+              PINK_25: "#ff96e5",
+              PINK_26: "#ff93e4",
+              PINK_27: "#ff90e4",
+              PINK_28: "#ff8de3",
+              PINK_29: "#ff8ae2",
+              PINK_3: "#ffcff7",
+              PINK_30: "#ff87e2",
+              PINK_31: "#ff84e1",
+              PINK_32: "#ff80e0",
+              PINK_33: "#ff7de0",
+              PINK_34: "#ff7adf",
+              PINK_35: "#ff76df",
+              PINK_36: "#ff74de",
+              PINK_37: "#ff71dd",
+              PINK_38: "#ff6edc",
+              PINK_39: "#ff6cdb",
+              PINK_4: "#ffccf6",
+              PINK_40: "#ff69da",
+              PINK_41: "#ff66d9",
+              PINK_42: "#ff63d8",
+              PINK_43: "#ff60d7",
+              PINK_44: "#ff5dd6",
               PINK_45: "#ff5ad5",
               PINK_46: "#ff57d4",
               PINK_47: "#ff53d4",
               PINK_48: "#ff50d3",
               PINK_49: "#ff4cd2",
-              PINK_5: "#ffcdf1",
+              PINK_5: "#ffcaf5",
               PINK_50: "#ff4cd2",
               PINK_51: "#f94bcd",
               PINK_52: "#f34ac8",
@@ -10395,7 +10399,7 @@
               PINK_57: "#d843b1",
               PINK_58: "#d242ad",
               PINK_59: "#cd40a8",
-              PINK_6: "#ffcaf0",
+              PINK_6: "#ffc8f4",
               PINK_60: "#c83fa4",
               PINK_61: "#c33da0",
               PINK_62: "#bd3c9b",
@@ -10406,7 +10410,7 @@
               PINK_67: "#a53386",
               PINK_68: "#a03182",
               PINK_69: "#9b307e",
-              PINK_7: "#ffc7ef",
+              PINK_7: "#ffc6f3",
               PINK_70: "#962e7a",
               PINK_71: "#912c76",
               PINK_72: "#8d2a72",
@@ -10417,7 +10421,7 @@
               PINK_77: "#76215f",
               PINK_78: "#71205b",
               PINK_79: "#6d1e57",
-              PINK_8: "#ffc4ef",
+              PINK_8: "#ffc3f2",
               PINK_80: "#681c53",
               PINK_81: "#641b50",
               PINK_82: "#5f194c",
@@ -10428,7 +10432,7 @@
               PINK_87: "#4a113a",
               PINK_88: "#450f37",
               PINK_89: "#410e33",
-              PINK_9: "#ffc2ee",
+              PINK_9: "#ffc1f1",
               PINK_90: "#3d0d30",
               PINK_91: "#390b2c",
               PINK_92: "#350a29",
@@ -10553,9 +10557,9 @@
               RED_830: "#2e090a",
               RED_860: "#280808",
               RED_900: "#220606",
-              RED_NEW_21: "#fe9691",
-              RED_NEW_32: "#f16f6c",
-              RED_NEW_37: "#e95d5c",
+              RED_NEW_21: "#ff918b",
+              RED_NEW_32: "#f56c69",
+              RED_NEW_37: "#eb5b5b",
               RED_NEW_50: "#d22d39",
               RED_NEW_54: "#c12a35",
               RED_NEW_57: "#b42831",
@@ -10672,9 +10676,9 @@
               YELLOW_830: "#221302",
               YELLOW_860: "#1c1002",
               YELLOW_900: "#160e02",
-              YELLOW_NEW_22: "#daac74",
-              YELLOW_NEW_32: "#c5914d",
-              YELLOW_NEW_38: "#b98036",
+              YELLOW_NEW_22: "#deab67",
+              YELLOW_NEW_32: "#c79045",
+              YELLOW_NEW_38: "#ba8032",
               YELLOW_NEW_54: "#955a03",
               YOUTUBE: "#cb2120",
             },
@@ -13768,52 +13772,52 @@
           BLUE_830: "#001630",
           BLUE_860: "#00132b",
           BLUE_900: "#001024",
-          BLUE_NEW_1: "#e6eeff",
-          BLUE_NEW_10: "#bed8fe",
+          BLUE_NEW_1: "#e2efff",
+          BLUE_NEW_10: "#b5d9ff",
           BLUE_NEW_100: "#000000",
-          BLUE_NEW_11: "#bad6fd",
-          BLUE_NEW_12: "#b5d4fd",
-          BLUE_NEW_13: "#b1d1fc",
-          BLUE_NEW_14: "#adcffc",
-          BLUE_NEW_15: "#a8ccfb",
-          BLUE_NEW_16: "#a4cafb",
-          BLUE_NEW_17: "#a0c7fa",
-          BLUE_NEW_18: "#9cc5fa",
-          BLUE_NEW_19: "#98c2f9",
-          BLUE_NEW_2: "#e1ecff",
-          BLUE_NEW_20: "#93c0f9",
-          BLUE_NEW_21: "#8fbdf8",
-          BLUE_NEW_22: "#8bbaf7",
-          BLUE_NEW_23: "#87b8f7",
-          BLUE_NEW_24: "#83b5f6",
-          BLUE_NEW_25: "#7fb3f5",
-          BLUE_NEW_26: "#7bb0f5",
-          BLUE_NEW_27: "#77aef4",
-          BLUE_NEW_28: "#72abf3",
-          BLUE_NEW_29: "#6ea9f3",
-          BLUE_NEW_3: "#ddeaff",
-          BLUE_NEW_30: "#6aa6f2",
-          BLUE_NEW_31: "#66a4f1",
-          BLUE_NEW_32: "#62a1f0",
-          BLUE_NEW_33: "#5e9ef0",
-          BLUE_NEW_34: "#5a9cef",
-          BLUE_NEW_35: "#5599ee",
-          BLUE_NEW_36: "#5197ed",
-          BLUE_NEW_37: "#4d94ed",
-          BLUE_NEW_38: "#4891ec",
-          BLUE_NEW_39: "#448feb",
-          BLUE_NEW_4: "#d8e7ff",
-          BLUE_NEW_40: "#3f8cea",
-          BLUE_NEW_41: "#3b89e9",
-          BLUE_NEW_42: "#3687e9",
-          BLUE_NEW_43: "#3184e8",
-          BLUE_NEW_44: "#2b81e7",
-          BLUE_NEW_45: "#257fe6",
-          BLUE_NEW_46: "#1f7ce5",
+          BLUE_NEW_11: "#b0d7ff",
+          BLUE_NEW_12: "#abd4ff",
+          BLUE_NEW_13: "#a7d2ff",
+          BLUE_NEW_14: "#a3cfff",
+          BLUE_NEW_15: "#9ecdff",
+          BLUE_NEW_16: "#9acaff",
+          BLUE_NEW_17: "#96c8ff",
+          BLUE_NEW_18: "#91c5ff",
+          BLUE_NEW_19: "#8dc3ff",
+          BLUE_NEW_2: "#ddecff",
+          BLUE_NEW_20: "#89c0ff",
+          BLUE_NEW_21: "#85beff",
+          BLUE_NEW_22: "#81bbff",
+          BLUE_NEW_23: "#7db8ff",
+          BLUE_NEW_24: "#79b6ff",
+          BLUE_NEW_25: "#75b3fd",
+          BLUE_NEW_26: "#72b1fc",
+          BLUE_NEW_27: "#6eaefb",
+          BLUE_NEW_28: "#6aacfa",
+          BLUE_NEW_29: "#66a9f9",
+          BLUE_NEW_3: "#d7eaff",
+          BLUE_NEW_30: "#63a6f8",
+          BLUE_NEW_31: "#5fa4f6",
+          BLUE_NEW_32: "#5ba1f5",
+          BLUE_NEW_33: "#579ff4",
+          BLUE_NEW_34: "#549cf3",
+          BLUE_NEW_35: "#5099f2",
+          BLUE_NEW_36: "#4c97f0",
+          BLUE_NEW_37: "#4894ef",
+          BLUE_NEW_38: "#4491ee",
+          BLUE_NEW_39: "#408fed",
+          BLUE_NEW_4: "#d2e8ff",
+          BLUE_NEW_40: "#3c8cec",
+          BLUE_NEW_41: "#3889eb",
+          BLUE_NEW_42: "#3387ea",
+          BLUE_NEW_43: "#2f84e9",
+          BLUE_NEW_44: "#2a81e8",
+          BLUE_NEW_45: "#247fe7",
+          BLUE_NEW_46: "#1e7ce6",
           BLUE_NEW_47: "#1779e5",
-          BLUE_NEW_48: "#0e77e4",
+          BLUE_NEW_48: "#0d77e4",
           BLUE_NEW_49: "#0074e3",
-          BLUE_NEW_5: "#d4e5ff",
+          BLUE_NEW_5: "#cde5ff",
           BLUE_NEW_50: "#0074e3",
           BLUE_NEW_51: "#0272de",
           BLUE_NEW_52: "#046fd8",
@@ -13824,7 +13828,7 @@
           BLUE_NEW_57: "#0664bf",
           BLUE_NEW_58: "#0662ba",
           BLUE_NEW_59: "#055fb5",
-          BLUE_NEW_6: "#cfe2ff",
+          BLUE_NEW_6: "#c8e3ff",
           BLUE_NEW_60: "#055db0",
           BLUE_NEW_61: "#045bac",
           BLUE_NEW_62: "#0358a7",
@@ -13835,7 +13839,7 @@
           BLUE_NEW_67: "#004d91",
           BLUE_NEW_68: "#004b8d",
           BLUE_NEW_69: "#004989",
-          BLUE_NEW_7: "#cbe0ff",
+          BLUE_NEW_7: "#c3e0ff",
           BLUE_NEW_70: "#004785",
           BLUE_NEW_71: "#004481",
           BLUE_NEW_72: "#00427d",
@@ -13846,7 +13850,7 @@
           BLUE_NEW_77: "#003769",
           BLUE_NEW_78: "#003565",
           BLUE_NEW_79: "#003361",
-          BLUE_NEW_8: "#c7ddff",
+          BLUE_NEW_8: "#bedeff",
           BLUE_NEW_80: "#00315e",
           BLUE_NEW_81: "#002f5a",
           BLUE_NEW_82: "#002d56",
@@ -13857,7 +13861,7 @@
           BLUE_NEW_87: "#002344",
           BLUE_NEW_88: "#002140",
           BLUE_NEW_89: "#001f3d",
-          BLUE_NEW_9: "#c2dbfe",
+          BLUE_NEW_9: "#b9dcff",
           BLUE_NEW_90: "#001d39",
           BLUE_NEW_91: "#001b36",
           BLUE_NEW_92: "#001932",
@@ -13868,52 +13872,52 @@
           BLUE_NEW_97: "#000c1c",
           BLUE_NEW_98: "#000815",
           BLUE_NEW_99: "#00040b",
-          BLURPLE_1: "#e7eaff",
-          BLURPLE_10: "#c7d2ff",
+          BLURPLE_1: "#e5e9ff",
+          BLURPLE_10: "#c2d1ff",
           BLURPLE_100: "#000000",
-          BLURPLE_11: "#c3cfff",
-          BLURPLE_12: "#c0cdff",
-          BLURPLE_13: "#bdcaff",
-          BLURPLE_14: "#b9c7ff",
-          BLURPLE_15: "#b6c5ff",
-          BLURPLE_16: "#b3c2ff",
-          BLURPLE_17: "#afbfff",
-          BLURPLE_18: "#acbdff",
-          BLURPLE_19: "#a9baff",
-          BLURPLE_2: "#e3e7ff",
-          BLURPLE_20: "#a6b7ff",
-          BLURPLE_21: "#a3b4fe",
-          BLURPLE_22: "#9fb2fe",
-          BLURPLE_23: "#9caffe",
-          BLURPLE_24: "#99acfd",
-          BLURPLE_25: "#96aafd",
-          BLURPLE_26: "#93a7fd",
-          BLURPLE_27: "#90a4fc",
-          BLURPLE_28: "#8da1fc",
-          BLURPLE_29: "#8b9ffb",
-          BLURPLE_3: "#dfe4ff",
-          BLURPLE_30: "#889cfb",
-          BLURPLE_31: "#8599fb",
-          BLURPLE_32: "#8296fa",
-          BLURPLE_33: "#7f94fa",
-          BLURPLE_34: "#7d91f9",
-          BLURPLE_35: "#7a8ef9",
-          BLURPLE_36: "#778bf8",
-          BLURPLE_37: "#7588f8",
-          BLURPLE_38: "#7286f7",
-          BLURPLE_39: "#6f83f7",
-          BLURPLE_4: "#dce2ff",
-          BLURPLE_40: "#6d80f6",
-          BLURPLE_41: "#6a7df6",
-          BLURPLE_42: "#687af5",
-          BLURPLE_43: "#6677f5",
-          BLURPLE_44: "#6374f4",
+          BLURPLE_11: "#bfcfff",
+          BLURPLE_12: "#bbccff",
+          BLURPLE_13: "#b8c9ff",
+          BLURPLE_14: "#b4c7ff",
+          BLURPLE_15: "#b1c4ff",
+          BLURPLE_16: "#aec1ff",
+          BLURPLE_17: "#aabfff",
+          BLURPLE_18: "#a7bcff",
+          BLURPLE_19: "#a4b9ff",
+          BLURPLE_2: "#e1e6ff",
+          BLURPLE_20: "#a1b7ff",
+          BLURPLE_21: "#9eb4ff",
+          BLURPLE_22: "#9bb1ff",
+          BLURPLE_23: "#98aeff",
+          BLURPLE_24: "#95acff",
+          BLURPLE_25: "#92a9ff",
+          BLURPLE_26: "#90a6ff",
+          BLURPLE_27: "#8da4ff",
+          BLURPLE_28: "#8aa1ff",
+          BLURPLE_29: "#879eff",
+          BLURPLE_3: "#dde4ff",
+          BLURPLE_30: "#859bff",
+          BLURPLE_31: "#8299ff",
+          BLURPLE_32: "#8096ff",
+          BLURPLE_33: "#7d93ff",
+          BLURPLE_34: "#7a90fe",
+          BLURPLE_35: "#788efd",
+          BLURPLE_36: "#768bfc",
+          BLURPLE_37: "#7388fb",
+          BLURPLE_38: "#7185fa",
+          BLURPLE_39: "#6e82f9",
+          BLURPLE_4: "#d9e1ff",
+          BLURPLE_40: "#6c80f8",
+          BLURPLE_41: "#6a7df7",
+          BLURPLE_42: "#677af7",
+          BLURPLE_43: "#6577f6",
+          BLURPLE_44: "#6374f5",
           BLURPLE_45: "#6171f4",
-          BLURPLE_46: "#5f6ef3",
+          BLURPLE_46: "#5e6ef4",
           BLURPLE_47: "#5c6bf3",
-          BLURPLE_48: "#5a68f2",
+          BLURPLE_48: "#5a68f3",
           BLURPLE_49: "#5865f2",
-          BLURPLE_5: "#d8dfff",
+          BLURPLE_5: "#d5dfff",
           BLURPLE_50: "#5865f2",
           BLURPLE_51: "#5663ec",
           BLURPLE_52: "#5461e6",
@@ -13924,7 +13928,7 @@
           BLURPLE_57: "#4a58cb",
           BLURPLE_58: "#4856c6",
           BLURPLE_59: "#4654c0",
-          BLURPLE_6: "#d5dcff",
+          BLURPLE_6: "#d1dcff",
           BLURPLE_60: "#4452bb",
           BLURPLE_61: "#4250b6",
           BLURPLE_62: "#404eb2",
@@ -13935,7 +13939,7 @@
           BLURPLE_67: "#36449a",
           BLURPLE_68: "#344296",
           BLURPLE_69: "#324091",
-          BLURPLE_7: "#d1daff",
+          BLURPLE_7: "#cdd9ff",
           BLURPLE_70: "#303e8d",
           BLURPLE_71: "#2e3c89",
           BLURPLE_72: "#2c3a84",
@@ -13946,7 +13950,7 @@
           BLURPLE_77: "#23316f",
           BLURPLE_78: "#212f6b",
           BLURPLE_79: "#1f2d67",
-          BLURPLE_8: "#ced7ff",
+          BLURPLE_8: "#cad7ff",
           BLURPLE_80: "#1d2b63",
           BLURPLE_81: "#1c295f",
           BLURPLE_82: "#1a275b",
@@ -13957,7 +13961,7 @@
           BLURPLE_87: "#121e48",
           BLURPLE_88: "#101c45",
           BLURPLE_89: "#0f1a41",
-          BLURPLE_9: "#cad5ff",
+          BLURPLE_9: "#c6d4ff",
           BLURPLE_90: "#0d193d",
           BLURPLE_91: "#0c173a",
           BLURPLE_92: "#0a1536",
@@ -14029,52 +14033,52 @@
           GREEN_830: "#031b0a",
           GREEN_860: "#041708",
           GREEN_900: "#051307",
-          GREEN_NEW_1: "#cfffd7",
-          GREEN_NEW_10: "#ace9b6",
+          GREEN_NEW_1: "#bcffca",
+          GREEN_NEW_10: "#9beda9",
           GREEN_NEW_100: "#000701",
-          GREEN_NEW_11: "#a8e7b2",
-          GREEN_NEW_12: "#a5e4af",
-          GREEN_NEW_13: "#a1e1ab",
-          GREEN_NEW_14: "#9ddfa8",
-          GREEN_NEW_15: "#99dca4",
-          GREEN_NEW_16: "#96daa1",
-          GREEN_NEW_17: "#92d79d",
-          GREEN_NEW_18: "#8ed59a",
-          GREEN_NEW_19: "#8bd296",
-          GREEN_NEW_2: "#cbfdd4",
-          GREEN_NEW_20: "#87cf93",
-          GREEN_NEW_21: "#83cd90",
-          GREEN_NEW_22: "#80ca8c",
-          GREEN_NEW_23: "#7cc889",
-          GREEN_NEW_24: "#78c586",
-          GREEN_NEW_25: "#75c383",
-          GREEN_NEW_26: "#71c07f",
-          GREEN_NEW_27: "#6dbe7c",
-          GREEN_NEW_28: "#6abb79",
-          GREEN_NEW_29: "#66b876",
-          GREEN_NEW_3: "#c7fbd0",
-          GREEN_NEW_30: "#62b673",
-          GREEN_NEW_31: "#5eb370",
-          GREEN_NEW_32: "#5bb16c",
-          GREEN_NEW_33: "#57ae69",
-          GREEN_NEW_34: "#53ac66",
-          GREEN_NEW_35: "#4fa963",
-          GREEN_NEW_36: "#4ba760",
-          GREEN_NEW_37: "#47a45d",
-          GREEN_NEW_38: "#43a25a",
-          GREEN_NEW_39: "#3f9f57",
-          GREEN_NEW_4: "#c3f8cc",
-          GREEN_NEW_40: "#3b9d54",
-          GREEN_NEW_41: "#379a51",
-          GREEN_NEW_42: "#32984e",
-          GREEN_NEW_43: "#2d954b",
-          GREEN_NEW_44: "#289248",
-          GREEN_NEW_45: "#239046",
-          GREEN_NEW_46: "#1d8d43",
-          GREEN_NEW_47: "#168b40",
+          GREEN_NEW_11: "#98eaa6",
+          GREEN_NEW_12: "#95e8a3",
+          GREEN_NEW_13: "#91e5a0",
+          GREEN_NEW_14: "#8ee29c",
+          GREEN_NEW_15: "#8be099",
+          GREEN_NEW_16: "#88dd96",
+          GREEN_NEW_17: "#84da93",
+          GREEN_NEW_18: "#81d790",
+          GREEN_NEW_19: "#7ed58d",
+          GREEN_NEW_2: "#b8ffc6",
+          GREEN_NEW_20: "#7bd28a",
+          GREEN_NEW_21: "#78cf87",
+          GREEN_NEW_22: "#75cd85",
+          GREEN_NEW_23: "#71ca82",
+          GREEN_NEW_24: "#6ec77f",
+          GREEN_NEW_25: "#6bc47c",
+          GREEN_NEW_26: "#68c279",
+          GREEN_NEW_27: "#65bf76",
+          GREEN_NEW_28: "#62bc74",
+          GREEN_NEW_29: "#5eba71",
+          GREEN_NEW_3: "#b4ffc2",
+          GREEN_NEW_30: "#5bb76e",
+          GREEN_NEW_31: "#58b46b",
+          GREEN_NEW_32: "#55b269",
+          GREEN_NEW_33: "#52af66",
+          GREEN_NEW_34: "#4eac63",
+          GREEN_NEW_35: "#4baa61",
+          GREEN_NEW_36: "#47a75e",
+          GREEN_NEW_37: "#44a55b",
+          GREEN_NEW_38: "#40a258",
+          GREEN_NEW_39: "#3c9f56",
+          GREEN_NEW_4: "#b1fdbe",
+          GREEN_NEW_40: "#399d53",
+          GREEN_NEW_41: "#359a50",
+          GREEN_NEW_42: "#30984e",
+          GREEN_NEW_43: "#2c954b",
+          GREEN_NEW_44: "#279348",
+          GREEN_NEW_45: "#229045",
+          GREEN_NEW_46: "#1c8e42",
+          GREEN_NEW_47: "#158b40",
           GREEN_NEW_48: "#0c883d",
           GREEN_NEW_49: "#00863a",
-          GREEN_NEW_5: "#bff6c8",
+          GREEN_NEW_5: "#adfabb",
           GREEN_NEW_50: "#00863a",
           GREEN_NEW_51: "#028339",
           GREEN_NEW_52: "#038138",
@@ -14085,7 +14089,7 @@
           GREEN_NEW_57: "#057332",
           GREEN_NEW_58: "#047031",
           GREEN_NEW_59: "#046e2f",
-          GREEN_NEW_6: "#bbf3c5",
+          GREEN_NEW_6: "#a9f8b7",
           GREEN_NEW_60: "#046b2e",
           GREEN_NEW_61: "#03692d",
           GREEN_NEW_62: "#02662c",
@@ -14096,7 +14100,7 @@
           GREEN_NEW_67: "#005925",
           GREEN_NEW_68: "#005723",
           GREEN_NEW_69: "#005522",
-          GREEN_NEW_7: "#b8f1c1",
+          GREEN_NEW_7: "#a6f5b4",
           GREEN_NEW_70: "#005221",
           GREEN_NEW_71: "#00501f",
           GREEN_NEW_72: "#004d1e",
@@ -14107,7 +14111,7 @@
           GREEN_NEW_77: "#004117",
           GREEN_NEW_78: "#003f16",
           GREEN_NEW_79: "#003d14",
-          GREEN_NEW_8: "#b4eebd",
+          GREEN_NEW_8: "#a2f2b0",
           GREEN_NEW_80: "#003a13",
           GREEN_NEW_81: "#003812",
           GREEN_NEW_82: "#003611",
@@ -14118,7 +14122,7 @@
           GREEN_NEW_87: "#002b0b",
           GREEN_NEW_88: "#002809",
           GREEN_NEW_89: "#002608",
-          GREEN_NEW_9: "#b0ecb9",
+          GREEN_NEW_9: "#9ff0ad",
           GREEN_NEW_90: "#002407",
           GREEN_NEW_91: "#002207",
           GREEN_NEW_92: "#002006",
@@ -14142,99 +14146,99 @@
           LOL_TEXT_DARK: "#94620f",
           LOL_TEXT_LIGHT: "#cbaa62",
           NEUTRAL_1: "#ffffff",
-          NEUTRAL_10: "#dcdcde",
+          NEUTRAL_10: "#dbdcdf",
           NEUTRAL_100: "#000000",
-          NEUTRAL_11: "#d8d8db",
-          NEUTRAL_12: "#d4d4d7",
+          NEUTRAL_11: "#d7d8db",
+          NEUTRAL_12: "#d3d4d7",
           NEUTRAL_13: "#d0d0d4",
           NEUTRAL_14: "#ccccd0",
           NEUTRAL_15: "#c8c8cd",
-          NEUTRAL_16: "#c5c5c9",
-          NEUTRAL_17: "#c1c1c6",
-          NEUTRAL_18: "#bdbdc2",
+          NEUTRAL_16: "#c4c5c9",
+          NEUTRAL_17: "#c0c1c6",
+          NEUTRAL_18: "#bcbdc2",
           NEUTRAL_19: "#b9b9bf",
           NEUTRAL_2: "#fbfbfb",
           NEUTRAL_20: "#b5b6bb",
-          NEUTRAL_21: "#b2b2b8",
-          NEUTRAL_22: "#aeaeb4",
+          NEUTRAL_21: "#b1b2b8",
+          NEUTRAL_22: "#adaeb4",
           NEUTRAL_23: "#aaaab1",
-          NEUTRAL_24: "#a7a7ad",
-          NEUTRAL_25: "#a3a3aa",
+          NEUTRAL_24: "#a6a7ad",
+          NEUTRAL_25: "#a2a3aa",
           NEUTRAL_26: "#9f9fa6",
-          NEUTRAL_27: "#9c9ca3",
-          NEUTRAL_28: "#98989f",
-          NEUTRAL_29: "#94949c",
+          NEUTRAL_27: "#9b9ca3",
+          NEUTRAL_28: "#97989f",
+          NEUTRAL_29: "#94959c",
           NEUTRAL_3: "#f7f7f8",
-          NEUTRAL_30: "#919199",
-          NEUTRAL_31: "#8d8d95",
-          NEUTRAL_32: "#8a8a92",
-          NEUTRAL_33: "#86868e",
-          NEUTRAL_34: "#83838b",
-          NEUTRAL_35: "#7f7f88",
-          NEUTRAL_36: "#7c7c84",
-          NEUTRAL_37: "#787881",
-          NEUTRAL_38: "#75757e",
-          NEUTRAL_39: "#71717a",
+          NEUTRAL_30: "#909199",
+          NEUTRAL_31: "#8c8d95",
+          NEUTRAL_32: "#898a92",
+          NEUTRAL_33: "#85868e",
+          NEUTRAL_34: "#82838b",
+          NEUTRAL_35: "#7e7f88",
+          NEUTRAL_36: "#7b7c84",
+          NEUTRAL_37: "#777881",
+          NEUTRAL_38: "#74757e",
+          NEUTRAL_39: "#70717a",
           NEUTRAL_4: "#f3f3f4",
-          NEUTRAL_40: "#6e6e77",
-          NEUTRAL_41: "#6a6a74",
-          NEUTRAL_42: "#676771",
-          NEUTRAL_43: "#64646d",
-          NEUTRAL_44: "#60606a",
-          NEUTRAL_45: "#5d5d67",
-          NEUTRAL_46: "#5a5a64",
-          NEUTRAL_47: "#565660",
-          NEUTRAL_48: "#53535d",
-          NEUTRAL_49: "#50505a",
+          NEUTRAL_40: "#6d6e77",
+          NEUTRAL_41: "#6a6b74",
+          NEUTRAL_42: "#666771",
+          NEUTRAL_43: "#63646d",
+          NEUTRAL_44: "#5f606a",
+          NEUTRAL_45: "#5c5d67",
+          NEUTRAL_46: "#595a64",
+          NEUTRAL_47: "#555760",
+          NEUTRAL_48: "#52535d",
+          NEUTRAL_49: "#4f505a",
           NEUTRAL_5: "#efeff0",
-          NEUTRAL_50: "#50505a",
-          NEUTRAL_51: "#4e4e58",
-          NEUTRAL_52: "#4d4d56",
-          NEUTRAL_53: "#4b4b55",
-          NEUTRAL_54: "#4a4a53",
-          NEUTRAL_55: "#484851",
+          NEUTRAL_50: "#4f505a",
+          NEUTRAL_51: "#4d4e58",
+          NEUTRAL_52: "#4c4d56",
+          NEUTRAL_53: "#4a4b55",
+          NEUTRAL_54: "#494a53",
+          NEUTRAL_55: "#474851",
           NEUTRAL_56: "#46474f",
-          NEUTRAL_57: "#45454d",
+          NEUTRAL_57: "#44454d",
           NEUTRAL_58: "#43434c",
-          NEUTRAL_59: "#42424a",
+          NEUTRAL_59: "#41424a",
           NEUTRAL_6: "#ebebed",
-          NEUTRAL_60: "#404048",
-          NEUTRAL_61: "#3f3f46",
-          NEUTRAL_62: "#3d3d45",
-          NEUTRAL_63: "#3c3c43",
-          NEUTRAL_64: "#3a3a41",
-          NEUTRAL_65: "#393940",
-          NEUTRAL_66: "#37373e",
-          NEUTRAL_67: "#36363c",
+          NEUTRAL_60: "#3f4048",
+          NEUTRAL_61: "#3e3f46",
+          NEUTRAL_62: "#3c3d45",
+          NEUTRAL_63: "#3b3c43",
+          NEUTRAL_64: "#393a41",
+          NEUTRAL_65: "#383940",
+          NEUTRAL_66: "#36373e",
+          NEUTRAL_67: "#35363c",
           NEUTRAL_68: "#34343a",
-          NEUTRAL_69: "#333339",
+          NEUTRAL_69: "#323339",
           NEUTRAL_7: "#e7e7e9",
           NEUTRAL_70: "#313137",
-          NEUTRAL_71: "#303035",
+          NEUTRAL_71: "#2f3035",
           NEUTRAL_72: "#2e2e34",
-          NEUTRAL_73: "#2d2d32",
+          NEUTRAL_73: "#2c2d32",
           NEUTRAL_74: "#2b2b31",
-          NEUTRAL_75: "#2a2a2f",
+          NEUTRAL_75: "#292a2f",
           NEUTRAL_76: "#28282d",
           NEUTRAL_77: "#27272c",
-          NEUTRAL_78: "#26262a",
+          NEUTRAL_78: "#25262a",
           NEUTRAL_79: "#242429",
           NEUTRAL_8: "#e3e3e6",
-          NEUTRAL_80: "#232327",
+          NEUTRAL_80: "#222327",
           NEUTRAL_81: "#212125",
           NEUTRAL_82: "#202024",
-          NEUTRAL_83: "#1f1f22",
+          NEUTRAL_83: "#1e1f22",
           NEUTRAL_84: "#1d1d21",
-          NEUTRAL_85: "#1c1c1f",
+          NEUTRAL_85: "#1b1c1f",
           NEUTRAL_86: "#1a1a1e",
           NEUTRAL_87: "#19191c",
-          NEUTRAL_88: "#18181b",
+          NEUTRAL_88: "#17181b",
           NEUTRAL_89: "#161619",
-          NEUTRAL_9: "#dfdfe2",
+          NEUTRAL_9: "#dfe0e2",
           NEUTRAL_90: "#151518",
           NEUTRAL_91: "#131416",
           NEUTRAL_92: "#121214",
-          NEUTRAL_93: "#101012",
+          NEUTRAL_93: "#101013",
           NEUTRAL_94: "#0e0e10",
           NEUTRAL_95: "#0c0c0e",
           NEUTRAL_96: "#0a0a0c",
@@ -14543,52 +14547,52 @@
           ORANGE_830: "#261005",
           ORANGE_860: "#200e05",
           ORANGE_900: "#190d04",
-          ORANGE_NEW_1: "#ffe3da",
-          ORANGE_NEW_10: "#fbc7ac",
+          ORANGE_NEW_1: "#ffe1d3",
+          ORANGE_NEW_10: "#ffc39f",
           ORANGE_NEW_100: "#090001",
-          ORANGE_NEW_11: "#fac3a7",
-          ORANGE_NEW_12: "#f9c0a2",
-          ORANGE_NEW_13: "#f8bd9e",
-          ORANGE_NEW_14: "#f7ba99",
-          ORANGE_NEW_15: "#f6b794",
-          ORANGE_NEW_16: "#f5b490",
-          ORANGE_NEW_17: "#f4b18b",
-          ORANGE_NEW_18: "#f2ad87",
-          ORANGE_NEW_19: "#f1aa83",
-          ORANGE_NEW_2: "#ffe0d5",
-          ORANGE_NEW_20: "#f0a77e",
-          ORANGE_NEW_21: "#eea47a",
-          ORANGE_NEW_22: "#eda176",
-          ORANGE_NEW_23: "#ec9e71",
-          ORANGE_NEW_24: "#ea9b6d",
-          ORANGE_NEW_25: "#e99869",
-          ORANGE_NEW_26: "#e79565",
-          ORANGE_NEW_27: "#e69261",
-          ORANGE_NEW_28: "#e48f5d",
-          ORANGE_NEW_29: "#e28c59",
-          ORANGE_NEW_3: "#ffddd0",
-          ORANGE_NEW_30: "#e18855",
-          ORANGE_NEW_31: "#df8551",
-          ORANGE_NEW_32: "#dd824d",
-          ORANGE_NEW_33: "#dc7f4a",
-          ORANGE_NEW_34: "#da7c46",
-          ORANGE_NEW_35: "#d87942",
-          ORANGE_NEW_36: "#d6763e",
-          ORANGE_NEW_37: "#d5733a",
-          ORANGE_NEW_38: "#d37036",
-          ORANGE_NEW_39: "#d16d32",
-          ORANGE_NEW_4: "#ffdaca",
-          ORANGE_NEW_40: "#cf6a2e",
-          ORANGE_NEW_41: "#cd672a",
-          ORANGE_NEW_42: "#cb6426",
-          ORANGE_NEW_43: "#c96122",
-          ORANGE_NEW_44: "#c75e1e",
-          ORANGE_NEW_45: "#c55b19",
-          ORANGE_NEW_46: "#c35814",
+          ORANGE_NEW_11: "#ffc09a",
+          ORANGE_NEW_12: "#ffbd95",
+          ORANGE_NEW_13: "#ffba90",
+          ORANGE_NEW_14: "#ffb78b",
+          ORANGE_NEW_15: "#ffb487",
+          ORANGE_NEW_16: "#feb182",
+          ORANGE_NEW_17: "#fcad7e",
+          ORANGE_NEW_18: "#fbaa7a",
+          ORANGE_NEW_19: "#f9a775",
+          ORANGE_NEW_2: "#ffddcd",
+          ORANGE_NEW_20: "#f7a471",
+          ORANGE_NEW_21: "#f6a16d",
+          ORANGE_NEW_22: "#f49e6a",
+          ORANGE_NEW_23: "#f29b66",
+          ORANGE_NEW_24: "#f09862",
+          ORANGE_NEW_25: "#ee955e",
+          ORANGE_NEW_26: "#ec935b",
+          ORANGE_NEW_27: "#ea9057",
+          ORANGE_NEW_28: "#e88d54",
+          ORANGE_NEW_29: "#e68a50",
+          ORANGE_NEW_3: "#ffdac6",
+          ORANGE_NEW_30: "#e4874d",
+          ORANGE_NEW_31: "#e28449",
+          ORANGE_NEW_32: "#e08146",
+          ORANGE_NEW_33: "#de7e43",
+          ORANGE_NEW_34: "#dc7b3f",
+          ORANGE_NEW_35: "#da783c",
+          ORANGE_NEW_36: "#d87539",
+          ORANGE_NEW_37: "#d67236",
+          ORANGE_NEW_38: "#d47032",
+          ORANGE_NEW_39: "#d26d2f",
+          ORANGE_NEW_4: "#ffd7c0",
+          ORANGE_NEW_40: "#d06a2b",
+          ORANGE_NEW_41: "#ce6728",
+          ORANGE_NEW_42: "#cc6424",
+          ORANGE_NEW_43: "#ca6120",
+          ORANGE_NEW_44: "#c75e1c",
+          ORANGE_NEW_45: "#c55b18",
+          ORANGE_NEW_46: "#c35813",
           ORANGE_NEW_47: "#c1550e",
           ORANGE_NEW_48: "#bf5207",
           ORANGE_NEW_49: "#bd4f00",
-          ORANGE_NEW_5: "#ffd7c5",
+          ORANGE_NEW_5: "#ffd3ba",
           ORANGE_NEW_50: "#bd4f00",
           ORANGE_NEW_51: "#b94d01",
           ORANGE_NEW_52: "#b54c02",
@@ -14599,7 +14603,7 @@
           ORANGE_NEW_57: "#a34303",
           ORANGE_NEW_58: "#9f4203",
           ORANGE_NEW_59: "#9b4002",
-          ORANGE_NEW_6: "#fed3c0",
+          ORANGE_NEW_6: "#ffd0b4",
           ORANGE_NEW_60: "#983e02",
           ORANGE_NEW_61: "#943c02",
           ORANGE_NEW_62: "#913b01",
@@ -14610,7 +14614,7 @@
           ORANGE_NEW_67: "#803200",
           ORANGE_NEW_68: "#7d3000",
           ORANGE_NEW_69: "#792e00",
-          ORANGE_NEW_7: "#fed0bb",
+          ORANGE_NEW_7: "#ffcdaf",
           ORANGE_NEW_70: "#762d00",
           ORANGE_NEW_71: "#732b00",
           ORANGE_NEW_72: "#702900",
@@ -14621,7 +14625,7 @@
           ORANGE_NEW_77: "#602000",
           ORANGE_NEW_78: "#5d1f00",
           ORANGE_NEW_79: "#5a1d00",
-          ORANGE_NEW_8: "#fdcdb6",
+          ORANGE_NEW_8: "#ffcaa9",
           ORANGE_NEW_80: "#571b00",
           ORANGE_NEW_81: "#531900",
           ORANGE_NEW_82: "#501800",
@@ -14632,7 +14636,7 @@
           ORANGE_NEW_87: "#420f00",
           ORANGE_NEW_88: "#3f0e00",
           ORANGE_NEW_89: "#3c0c00",
-          ORANGE_NEW_9: "#fccab1",
+          ORANGE_NEW_9: "#ffc6a4",
           ORANGE_NEW_90: "#390a00",
           ORANGE_NEW_91: "#360900",
           ORANGE_NEW_92: "#330700",
@@ -14645,52 +14649,52 @@
           ORANGE_NEW_99: "#140001",
           PARTNER: "#4087ed",
           PAYPAL: "#13216b",
-          PINK_1: "#ffd8f3",
-          PINK_10: "#ffbfee",
+          PINK_1: "#ffd3f8",
+          PINK_10: "#ffbef0",
           PINK_100: "#000000",
-          PINK_11: "#ffbced",
-          PINK_12: "#ffbaec",
-          PINK_13: "#ffb7ec",
-          PINK_14: "#ffb4eb",
-          PINK_15: "#ffb1eb",
-          PINK_16: "#ffafea",
-          PINK_17: "#fface9",
-          PINK_18: "#ffa9e9",
-          PINK_19: "#ffa6e8",
-          PINK_2: "#ffd5f2",
-          PINK_20: "#ffa4e7",
-          PINK_21: "#ffa1e7",
-          PINK_22: "#ff9ee6",
-          PINK_23: "#ff9be5",
-          PINK_24: "#ff99e5",
-          PINK_25: "#ff96e4",
-          PINK_26: "#ff93e3",
-          PINK_27: "#ff90e2",
-          PINK_28: "#ff8ee2",
-          PINK_29: "#ff8be1",
-          PINK_3: "#ffd2f2",
-          PINK_30: "#ff88e0",
-          PINK_31: "#ff85df",
-          PINK_32: "#ff82df",
-          PINK_33: "#ff7fde",
-          PINK_34: "#ff7cdd",
-          PINK_35: "#ff7add",
-          PINK_36: "#ff77dc",
-          PINK_37: "#ff74db",
-          PINK_38: "#ff71da",
-          PINK_39: "#ff6eda",
-          PINK_4: "#ffcff1",
-          PINK_40: "#ff6ad9",
-          PINK_41: "#ff67d8",
-          PINK_42: "#ff64d7",
-          PINK_43: "#ff61d7",
-          PINK_44: "#ff5ed6",
+          PINK_11: "#ffbcef",
+          PINK_12: "#ffbaef",
+          PINK_13: "#ffb7ee",
+          PINK_14: "#ffb4ed",
+          PINK_15: "#ffb2ec",
+          PINK_16: "#ffafec",
+          PINK_17: "#ffadeb",
+          PINK_18: "#ffaaea",
+          PINK_19: "#ffa7e9",
+          PINK_2: "#ffd1f7",
+          PINK_20: "#ffa5e8",
+          PINK_21: "#ffa2e8",
+          PINK_22: "#ff9fe7",
+          PINK_23: "#ff9ce6",
+          PINK_24: "#ff99e6",
+          PINK_25: "#ff96e5",
+          PINK_26: "#ff93e4",
+          PINK_27: "#ff90e4",
+          PINK_28: "#ff8de3",
+          PINK_29: "#ff8ae2",
+          PINK_3: "#ffcff7",
+          PINK_30: "#ff87e2",
+          PINK_31: "#ff84e1",
+          PINK_32: "#ff80e0",
+          PINK_33: "#ff7de0",
+          PINK_34: "#ff7adf",
+          PINK_35: "#ff76df",
+          PINK_36: "#ff74de",
+          PINK_37: "#ff71dd",
+          PINK_38: "#ff6edc",
+          PINK_39: "#ff6cdb",
+          PINK_4: "#ffccf6",
+          PINK_40: "#ff69da",
+          PINK_41: "#ff66d9",
+          PINK_42: "#ff63d8",
+          PINK_43: "#ff60d7",
+          PINK_44: "#ff5dd6",
           PINK_45: "#ff5ad5",
           PINK_46: "#ff57d4",
           PINK_47: "#ff53d4",
           PINK_48: "#ff50d3",
           PINK_49: "#ff4cd2",
-          PINK_5: "#ffcdf1",
+          PINK_5: "#ffcaf5",
           PINK_50: "#ff4cd2",
           PINK_51: "#f94bcd",
           PINK_52: "#f34ac8",
@@ -14701,7 +14705,7 @@
           PINK_57: "#d843b1",
           PINK_58: "#d242ad",
           PINK_59: "#cd40a8",
-          PINK_6: "#ffcaf0",
+          PINK_6: "#ffc8f4",
           PINK_60: "#c83fa4",
           PINK_61: "#c33da0",
           PINK_62: "#bd3c9b",
@@ -14712,7 +14716,7 @@
           PINK_67: "#a53386",
           PINK_68: "#a03182",
           PINK_69: "#9b307e",
-          PINK_7: "#ffc7ef",
+          PINK_7: "#ffc6f3",
           PINK_70: "#962e7a",
           PINK_71: "#912c76",
           PINK_72: "#8d2a72",
@@ -14723,7 +14727,7 @@
           PINK_77: "#76215f",
           PINK_78: "#71205b",
           PINK_79: "#6d1e57",
-          PINK_8: "#ffc4ef",
+          PINK_8: "#ffc3f2",
           PINK_80: "#681c53",
           PINK_81: "#641b50",
           PINK_82: "#5f194c",
@@ -14734,7 +14738,7 @@
           PINK_87: "#4a113a",
           PINK_88: "#450f37",
           PINK_89: "#410e33",
-          PINK_9: "#ffc2ee",
+          PINK_9: "#ffc1f1",
           PINK_90: "#3d0d30",
           PINK_91: "#390b2c",
           PINK_92: "#350a29",
@@ -14861,52 +14865,52 @@
           RED_830: "#2e090a",
           RED_860: "#280808",
           RED_900: "#220606",
-          RED_NEW_1: "#ffdfde",
-          RED_NEW_10: "#ffbdba",
+          RED_NEW_1: "#ffdbda",
+          RED_NEW_10: "#ffbbb6",
           RED_NEW_100: "#040001",
-          RED_NEW_11: "#ffbab6",
-          RED_NEW_12: "#ffb6b2",
-          RED_NEW_13: "#ffb2ae",
-          RED_NEW_14: "#ffafaa",
-          RED_NEW_15: "#ffaba7",
-          RED_NEW_16: "#ffa8a3",
-          RED_NEW_17: "#ffa49f",
-          RED_NEW_18: "#ffa09c",
-          RED_NEW_19: "#ff9d98",
-          RED_NEW_2: "#ffdbda",
-          RED_NEW_20: "#ff9994",
-          RED_NEW_21: "#fe9691",
-          RED_NEW_22: "#fd928d",
-          RED_NEW_23: "#fc8f8a",
-          RED_NEW_24: "#fb8b87",
-          RED_NEW_25: "#fa8883",
-          RED_NEW_26: "#f98480",
-          RED_NEW_27: "#f8817c",
-          RED_NEW_28: "#f67d79",
-          RED_NEW_29: "#f57976",
-          RED_NEW_3: "#ffd7d6",
-          RED_NEW_30: "#f47672",
-          RED_NEW_31: "#f2726f",
-          RED_NEW_32: "#f16f6c",
-          RED_NEW_33: "#ef6b69",
-          RED_NEW_34: "#ee6866",
-          RED_NEW_35: "#ec6463",
-          RED_NEW_36: "#ea615f",
-          RED_NEW_37: "#e95d5c",
-          RED_NEW_38: "#e75959",
-          RED_NEW_39: "#e55656",
-          RED_NEW_4: "#ffd3d1",
-          RED_NEW_40: "#e45253",
-          RED_NEW_41: "#e24e50",
-          RED_NEW_42: "#e04a4d",
-          RED_NEW_43: "#de464a",
-          RED_NEW_44: "#dc4347",
+          RED_NEW_11: "#ffb7b2",
+          RED_NEW_12: "#ffb3ae",
+          RED_NEW_13: "#ffafaa",
+          RED_NEW_14: "#ffaba6",
+          RED_NEW_15: "#ffa7a2",
+          RED_NEW_16: "#ffa39d",
+          RED_NEW_17: "#ff9f99",
+          RED_NEW_18: "#ff9b95",
+          RED_NEW_19: "#ff9791",
+          RED_NEW_2: "#ffd7d6",
+          RED_NEW_20: "#ff948e",
+          RED_NEW_21: "#ff918b",
+          RED_NEW_22: "#ff8d87",
+          RED_NEW_23: "#ff8a84",
+          RED_NEW_24: "#ff8681",
+          RED_NEW_25: "#ff837e",
+          RED_NEW_26: "#ff807b",
+          RED_NEW_27: "#fe7c78",
+          RED_NEW_28: "#fc7975",
+          RED_NEW_29: "#fa7672",
+          RED_NEW_3: "#ffd4d2",
+          RED_NEW_30: "#f8736f",
+          RED_NEW_31: "#f76f6c",
+          RED_NEW_32: "#f56c69",
+          RED_NEW_33: "#f36966",
+          RED_NEW_34: "#f16563",
+          RED_NEW_35: "#ef6260",
+          RED_NEW_36: "#ed5f5d",
+          RED_NEW_37: "#eb5b5b",
+          RED_NEW_38: "#e95858",
+          RED_NEW_39: "#e75455",
+          RED_NEW_4: "#ffd0ce",
+          RED_NEW_40: "#e55152",
+          RED_NEW_41: "#e34d4f",
+          RED_NEW_42: "#e14a4d",
+          RED_NEW_43: "#df464a",
+          RED_NEW_44: "#dc4247",
           RED_NEW_45: "#da3e44",
-          RED_NEW_46: "#d83a42",
+          RED_NEW_46: "#d83a41",
           RED_NEW_47: "#d6363f",
           RED_NEW_48: "#d4323c",
           RED_NEW_49: "#d22d39",
-          RED_NEW_5: "#ffd0cd",
+          RED_NEW_5: "#ffcdca",
           RED_NEW_50: "#d22d39",
           RED_NEW_51: "#ce2c38",
           RED_NEW_52: "#c92c37",
@@ -14917,7 +14921,7 @@
           RED_NEW_57: "#b42831",
           RED_NEW_58: "#b02730",
           RED_NEW_59: "#ac262f",
-          RED_NEW_6: "#ffccc9",
+          RED_NEW_6: "#ffc9c6",
           RED_NEW_60: "#a8242d",
           RED_NEW_61: "#a4232c",
           RED_NEW_62: "#a0222b",
@@ -14928,7 +14932,7 @@
           RED_NEW_67: "#8d1c24",
           RED_NEW_68: "#891b23",
           RED_NEW_69: "#851a21",
-          RED_NEW_7: "#ffc8c5",
+          RED_NEW_7: "#ffc6c2",
           RED_NEW_70: "#821920",
           RED_NEW_71: "#7e171f",
           RED_NEW_72: "#7a161d",
@@ -14939,7 +14943,7 @@
           RED_NEW_77: "#690f17",
           RED_NEW_78: "#650e16",
           RED_NEW_79: "#620d14",
-          RED_NEW_8: "#ffc5c1",
+          RED_NEW_8: "#ffc2be",
           RED_NEW_80: "#5e0b13",
           RED_NEW_81: "#5b0a12",
           RED_NEW_82: "#580911",
@@ -14950,7 +14954,7 @@
           RED_NEW_87: "#47040b",
           RED_NEW_88: "#44030a",
           RED_NEW_89: "#400209",
-          RED_NEW_9: "#ffc1bd",
+          RED_NEW_9: "#ffbeba",
           RED_NEW_90: "#3d0208",
           RED_NEW_91: "#3a0107",
           RED_NEW_92: "#370107",
@@ -15016,52 +15020,52 @@
           TEAL_830: "#02191d",
           TEAL_860: "#021619",
           TEAL_900: "#011215",
-          TEAL_NEW_1: "#c8fbff",
-          TEAL_NEW_10: "#a8e3ea",
+          TEAL_NEW_1: "#b1ffff",
+          TEAL_NEW_10: "#93e7ef",
           TEAL_NEW_100: "#00060b",
-          TEAL_NEW_11: "#a4e1e7",
-          TEAL_NEW_12: "#a1dee5",
-          TEAL_NEW_13: "#9ddce2",
-          TEAL_NEW_14: "#99d9e0",
-          TEAL_NEW_15: "#96d6dd",
-          TEAL_NEW_16: "#92d4db",
-          TEAL_NEW_17: "#8fd1d8",
-          TEAL_NEW_18: "#8bcfd6",
-          TEAL_NEW_19: "#88ccd3",
-          TEAL_NEW_2: "#c5f8fe",
-          TEAL_NEW_20: "#84cad1",
-          TEAL_NEW_21: "#81c7ce",
-          TEAL_NEW_22: "#7dc4cc",
-          TEAL_NEW_23: "#7ac2c9",
-          TEAL_NEW_24: "#76bfc7",
-          TEAL_NEW_25: "#73bdc4",
-          TEAL_NEW_26: "#6fbac2",
-          TEAL_NEW_27: "#6cb8bf",
-          TEAL_NEW_28: "#68b5bd",
-          TEAL_NEW_29: "#64b3ba",
-          TEAL_NEW_3: "#c1f6fb",
-          TEAL_NEW_30: "#61b0b8",
-          TEAL_NEW_31: "#5daeb5",
-          TEAL_NEW_32: "#5aabb3",
-          TEAL_NEW_33: "#56a9b1",
-          TEAL_NEW_34: "#52a6ae",
-          TEAL_NEW_35: "#4ea3ac",
-          TEAL_NEW_36: "#4ba1a9",
-          TEAL_NEW_37: "#479fa7",
-          TEAL_NEW_38: "#439ca4",
-          TEAL_NEW_39: "#3f9aa2",
-          TEAL_NEW_4: "#bdf3f9",
-          TEAL_NEW_40: "#3b97a0",
-          TEAL_NEW_41: "#36959d",
-          TEAL_NEW_42: "#32929b",
-          TEAL_NEW_43: "#2d9098",
-          TEAL_NEW_44: "#288d96",
-          TEAL_NEW_45: "#238b94",
-          TEAL_NEW_46: "#1d8891",
-          TEAL_NEW_47: "#16868f",
+          TEAL_NEW_11: "#90e4ec",
+          TEAL_NEW_12: "#8de1e9",
+          TEAL_NEW_13: "#8adee7",
+          TEAL_NEW_14: "#87dce4",
+          TEAL_NEW_15: "#84d9e1",
+          TEAL_NEW_16: "#81d6de",
+          TEAL_NEW_17: "#7ed4dc",
+          TEAL_NEW_18: "#7cd1d9",
+          TEAL_NEW_19: "#79ced6",
+          TEAL_NEW_2: "#adfcff",
+          TEAL_NEW_20: "#76ccd4",
+          TEAL_NEW_21: "#73c9d1",
+          TEAL_NEW_22: "#70c6ce",
+          TEAL_NEW_23: "#6dc4cc",
+          TEAL_NEW_24: "#6ac1c9",
+          TEAL_NEW_25: "#67bec6",
+          TEAL_NEW_26: "#64bcc4",
+          TEAL_NEW_27: "#61b9c1",
+          TEAL_NEW_28: "#5fb6bf",
+          TEAL_NEW_29: "#5cb4bc",
+          TEAL_NEW_3: "#aafaff",
+          TEAL_NEW_30: "#59b1b9",
+          TEAL_NEW_31: "#56aeb7",
+          TEAL_NEW_32: "#53acb4",
+          TEAL_NEW_33: "#4fa9b2",
+          TEAL_NEW_34: "#4ca7af",
+          TEAL_NEW_35: "#49a4ac",
+          TEAL_NEW_36: "#46a1aa",
+          TEAL_NEW_37: "#429fa7",
+          TEAL_NEW_38: "#3f9ca5",
+          TEAL_NEW_39: "#3b9aa2",
+          TEAL_NEW_4: "#a7f7ff",
+          TEAL_NEW_40: "#3897a0",
+          TEAL_NEW_41: "#34959d",
+          TEAL_NEW_42: "#30929b",
+          TEAL_NEW_43: "#2c9098",
+          TEAL_NEW_44: "#278d96",
+          TEAL_NEW_45: "#228b94",
+          TEAL_NEW_46: "#1c8891",
+          TEAL_NEW_47: "#15868f",
           TEAL_NEW_48: "#0c838c",
           TEAL_NEW_49: "#00818a",
-          TEAL_NEW_5: "#baf0f6",
+          TEAL_NEW_5: "#a3f4fc",
           TEAL_NEW_50: "#00818a",
           TEAL_NEW_51: "#027e87",
           TEAL_NEW_52: "#037c85",
@@ -15072,7 +15076,7 @@
           TEAL_NEW_57: "#056f77",
           TEAL_NEW_58: "#046c75",
           TEAL_NEW_59: "#046a72",
-          TEAL_NEW_6: "#b6eef4",
+          TEAL_NEW_6: "#a0f1f9",
           TEAL_NEW_60: "#03676f",
           TEAL_NEW_61: "#02656d",
           TEAL_NEW_62: "#01626a",
@@ -15083,7 +15087,7 @@
           TEAL_NEW_67: "#00565e",
           TEAL_NEW_68: "#00535b",
           TEAL_NEW_69: "#005159",
-          TEAL_NEW_7: "#b3ebf1",
+          TEAL_NEW_7: "#9deff7",
           TEAL_NEW_70: "#004f57",
           TEAL_NEW_71: "#004c54",
           TEAL_NEW_72: "#004a52",
@@ -15094,7 +15098,7 @@
           TEAL_NEW_77: "#003e46",
           TEAL_NEW_78: "#003c44",
           TEAL_NEW_79: "#003a42",
-          TEAL_NEW_8: "#afe9ef",
+          TEAL_NEW_8: "#9aecf4",
           TEAL_NEW_80: "#00373f",
           TEAL_NEW_81: "#00353d",
           TEAL_NEW_82: "#00333b",
@@ -15105,7 +15109,7 @@
           TEAL_NEW_87: "#002830",
           TEAL_NEW_88: "#00262e",
           TEAL_NEW_89: "#00242c",
-          TEAL_NEW_9: "#abe6ec",
+          TEAL_NEW_9: "#96e9f1",
           TEAL_NEW_90: "#002229",
           TEAL_NEW_91: "#002027",
           TEAL_NEW_92: "#001e25",
@@ -15175,52 +15179,52 @@
           YELLOW_830: "#221302",
           YELLOW_860: "#1c1002",
           YELLOW_900: "#160e02",
-          YELLOW_NEW_1: "#ffe8d4",
-          YELLOW_NEW_10: "#f1cea8",
+          YELLOW_NEW_1: "#ffe6c9",
+          YELLOW_NEW_10: "#f8cd98",
           YELLOW_NEW_100: "#0e0000",
-          YELLOW_NEW_11: "#efcba3",
-          YELLOW_NEW_12: "#edc99f",
-          YELLOW_NEW_13: "#ebc69a",
-          YELLOW_NEW_14: "#e9c396",
-          YELLOW_NEW_15: "#e7c092",
-          YELLOW_NEW_16: "#e6bd8d",
-          YELLOW_NEW_17: "#e4ba89",
-          YELLOW_NEW_18: "#e2b785",
-          YELLOW_NEW_19: "#e0b580",
-          YELLOW_NEW_2: "#ffe5cf",
-          YELLOW_NEW_20: "#deb27c",
-          YELLOW_NEW_21: "#dcaf78",
-          YELLOW_NEW_22: "#daac74",
-          YELLOW_NEW_23: "#d8a970",
-          YELLOW_NEW_24: "#d6a76c",
-          YELLOW_NEW_25: "#d4a468",
-          YELLOW_NEW_26: "#d2a164",
-          YELLOW_NEW_27: "#d09e60",
-          YELLOW_NEW_28: "#ce9c5c",
-          YELLOW_NEW_29: "#cc9958",
-          YELLOW_NEW_3: "#fde2ca",
-          YELLOW_NEW_30: "#ca9654",
-          YELLOW_NEW_31: "#c89351",
-          YELLOW_NEW_32: "#c5914d",
-          YELLOW_NEW_33: "#c38e49",
-          YELLOW_NEW_34: "#c18b45",
-          YELLOW_NEW_35: "#bf8841",
-          YELLOW_NEW_36: "#bd863e",
-          YELLOW_NEW_37: "#bb833a",
-          YELLOW_NEW_38: "#b98036",
-          YELLOW_NEW_39: "#b77e32",
-          YELLOW_NEW_4: "#fcdfc5",
-          YELLOW_NEW_40: "#b57b2e",
-          YELLOW_NEW_41: "#b2782a",
-          YELLOW_NEW_42: "#b07626",
-          YELLOW_NEW_43: "#ae7322",
-          YELLOW_NEW_44: "#ac701e",
-          YELLOW_NEW_45: "#aa6e19",
-          YELLOW_NEW_46: "#a86b14",
+          YELLOW_NEW_11: "#f6ca94",
+          YELLOW_NEW_12: "#f4c78f",
+          YELLOW_NEW_13: "#f2c48b",
+          YELLOW_NEW_14: "#f0c186",
+          YELLOW_NEW_15: "#eebe82",
+          YELLOW_NEW_16: "#ecbc7e",
+          YELLOW_NEW_17: "#eab97a",
+          YELLOW_NEW_18: "#e7b676",
+          YELLOW_NEW_19: "#e5b372",
+          YELLOW_NEW_2: "#ffe3c3",
+          YELLOW_NEW_20: "#e3b16e",
+          YELLOW_NEW_21: "#e1ae6b",
+          YELLOW_NEW_22: "#deab67",
+          YELLOW_NEW_23: "#dca863",
+          YELLOW_NEW_24: "#daa660",
+          YELLOW_NEW_25: "#d8a35c",
+          YELLOW_NEW_26: "#d5a059",
+          YELLOW_NEW_27: "#d39d56",
+          YELLOW_NEW_28: "#d19b52",
+          YELLOW_NEW_29: "#ce984f",
+          YELLOW_NEW_3: "#ffe1bd",
+          YELLOW_NEW_30: "#cc954c",
+          YELLOW_NEW_31: "#ca9348",
+          YELLOW_NEW_32: "#c79045",
+          YELLOW_NEW_33: "#c58d42",
+          YELLOW_NEW_34: "#c38b3f",
+          YELLOW_NEW_35: "#c1883c",
+          YELLOW_NEW_36: "#be8538",
+          YELLOW_NEW_37: "#bc8335",
+          YELLOW_NEW_38: "#ba8032",
+          YELLOW_NEW_39: "#b77d2f",
+          YELLOW_NEW_4: "#ffdeb7",
+          YELLOW_NEW_40: "#b57b2b",
+          YELLOW_NEW_41: "#b37828",
+          YELLOW_NEW_42: "#b17524",
+          YELLOW_NEW_43: "#ae7320",
+          YELLOW_NEW_44: "#ac701c",
+          YELLOW_NEW_45: "#aa6d18",
+          YELLOW_NEW_46: "#a86b13",
           YELLOW_NEW_47: "#a5680e",
           YELLOW_NEW_48: "#a36607",
           YELLOW_NEW_49: "#a16300",
-          YELLOW_NEW_5: "#faddc0",
+          YELLOW_NEW_5: "#ffdbb2",
           YELLOW_NEW_50: "#a16300",
           YELLOW_NEW_51: "#9e6101",
           YELLOW_NEW_52: "#9b5f02",
@@ -15231,7 +15235,7 @@
           YELLOW_NEW_57: "#8c5403",
           YELLOW_NEW_58: "#895203",
           YELLOW_NEW_59: "#864f02",
-          YELLOW_NEW_6: "#f8dabb",
+          YELLOW_NEW_6: "#ffd8ad",
           YELLOW_NEW_60: "#834d02",
           YELLOW_NEW_61: "#804b01",
           YELLOW_NEW_62: "#7e4901",
@@ -15242,7 +15246,7 @@
           YELLOW_NEW_67: "#703e00",
           YELLOW_NEW_68: "#6d3c00",
           YELLOW_NEW_69: "#6a3a00",
-          YELLOW_NEW_7: "#f6d7b6",
+          YELLOW_NEW_7: "#fed5a7",
           YELLOW_NEW_70: "#683800",
           YELLOW_NEW_71: "#653600",
           YELLOW_NEW_72: "#623400",
@@ -15253,7 +15257,7 @@
           YELLOW_NEW_77: "#552a00",
           YELLOW_NEW_78: "#532700",
           YELLOW_NEW_79: "#502500",
-          YELLOW_NEW_8: "#f4d4b2",
+          YELLOW_NEW_8: "#fcd2a2",
           YELLOW_NEW_80: "#4e2300",
           YELLOW_NEW_81: "#4b2100",
           YELLOW_NEW_82: "#491f00",
@@ -15264,7 +15268,7 @@
           YELLOW_NEW_87: "#3c1500",
           YELLOW_NEW_88: "#3a1400",
           YELLOW_NEW_89: "#381200",
-          YELLOW_NEW_9: "#f3d1ad",
+          YELLOW_NEW_9: "#facf9d",
           YELLOW_NEW_90: "#351000",
           YELLOW_NEW_91: "#330e00",
           YELLOW_NEW_92: "#300c00",
@@ -17534,97 +17538,97 @@
           BLUE_900:
             "hsl(213, calc(var(--saturation-factor, 1) * 100.0%), 7.1%)",
           BLUE_NEW_1:
-            "hsl(221, calc(var(--saturation-factor, 1) * 100.0%), 95.1%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 100.0%), 94.3%)",
           BLUE_NEW_10:
-            "hsl(216, calc(var(--saturation-factor, 1) * 97.0%), 87.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 85.5%)",
           BLUE_NEW_100:
             "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           BLUE_NEW_11:
-            "hsl(215, calc(var(--saturation-factor, 1) * 94.4%), 86.1%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 100.0%), 84.5%)",
           BLUE_NEW_12:
-            "hsl(214, calc(var(--saturation-factor, 1) * 94.7%), 85.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 83.5%)",
           BLUE_NEW_13:
-            "hsl(214, calc(var(--saturation-factor, 1) * 92.6%), 84.1%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
           BLUE_NEW_14:
-            "hsl(214, calc(var(--saturation-factor, 1) * 92.9%), 83.3%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 82.0%)",
           BLUE_NEW_15:
-            "hsl(214, calc(var(--saturation-factor, 1) * 91.2%), 82.2%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 81.0%)",
           BLUE_NEW_16:
-            "hsl(214, calc(var(--saturation-factor, 1) * 91.6%), 81.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 80.2%)",
           BLUE_NEW_17:
-            "hsl(214, calc(var(--saturation-factor, 1) * 90.0%), 80.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 79.4%)",
           BLUE_NEW_18:
-            "hsl(214, calc(var(--saturation-factor, 1) * 90.4%), 79.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 78.4%)",
           BLUE_NEW_19:
-            "hsl(214, calc(var(--saturation-factor, 1) * 89.0%), 78.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 77.6%)",
           BLUE_NEW_2:
-            "hsl(218, calc(var(--saturation-factor, 1) * 100.0%), 94.1%)",
+            "hsl(214, calc(var(--saturation-factor, 1) * 100.0%), 93.3%)",
           BLUE_NEW_20:
-            "hsl(214, calc(var(--saturation-factor, 1) * 89.5%), 77.6%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 76.9%)",
           BLUE_NEW_21:
-            "hsl(214, calc(var(--saturation-factor, 1) * 88.2%), 76.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 76.1%)",
           BLUE_NEW_22:
-            "hsl(214, calc(var(--saturation-factor, 1) * 87.1%), 75.7%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 75.3%)",
           BLUE_NEW_23:
-            "hsl(214, calc(var(--saturation-factor, 1) * 87.5%), 74.9%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 100.0%), 74.5%)",
           BLUE_NEW_24:
-            "hsl(214, calc(var(--saturation-factor, 1) * 86.5%), 73.9%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 100.0%), 73.7%)",
           BLUE_NEW_25:
-            "hsl(214, calc(var(--saturation-factor, 1) * 85.5%), 72.9%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 97.1%), 72.5%)",
           BLUE_NEW_26:
-            "hsl(214, calc(var(--saturation-factor, 1) * 85.9%), 72.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 95.8%), 71.8%)",
           BLUE_NEW_27:
-            "hsl(214, calc(var(--saturation-factor, 1) * 85.0%), 71.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 94.6%), 70.8%)",
           BLUE_NEW_28:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.3%), 70.0%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 93.5%), 69.8%)",
           BLUE_NEW_29:
-            "hsl(213, calc(var(--saturation-factor, 1) * 84.7%), 69.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 92.5%), 68.8%)",
           BLUE_NEW_3:
-            "hsl(217, calc(var(--saturation-factor, 1) * 100.0%), 93.3%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 100.0%), 92.2%)",
           BLUE_NEW_30:
-            "hsl(214, calc(var(--saturation-factor, 1) * 84.0%), 68.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 91.4%), 68.0%)",
           BLUE_NEW_31:
-            "hsl(213, calc(var(--saturation-factor, 1) * 83.2%), 67.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 89.3%), 66.9%)",
           BLUE_NEW_32:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.6%), 66.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 88.5%), 65.9%)",
           BLUE_NEW_33:
-            "hsl(214, calc(var(--saturation-factor, 1) * 83.0%), 65.5%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 87.7%), 64.9%)",
           BLUE_NEW_34:
-            "hsl(213, calc(var(--saturation-factor, 1) * 82.3%), 64.5%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 86.9%), 64.1%)",
           BLUE_NEW_35:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.8%), 63.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 86.2%), 63.1%)",
           BLUE_NEW_36:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.3%), 62.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 84.5%), 62.0%)",
           BLUE_NEW_37:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.6%), 61.6%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 83.9%), 61.0%)",
           BLUE_NEW_38:
-            "hsl(213, calc(var(--saturation-factor, 1) * 81.2%), 60.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 83.3%), 60.0%)",
           BLUE_NEW_39:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.7%), 59.4%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 82.8%), 59.0%)",
           BLUE_NEW_4:
-            "hsl(217, calc(var(--saturation-factor, 1) * 100.0%), 92.4%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 91.2%)",
           BLUE_NEW_40:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.3%), 58.2%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 82.2%), 58.0%)",
           BLUE_NEW_41:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.8%), 57.3%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 81.7%), 57.1%)",
           BLUE_NEW_42:
-            "hsl(213, calc(var(--saturation-factor, 1) * 80.3%), 56.3%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 81.3%), 55.9%)",
           BLUE_NEW_43:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.9%), 55.1%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.9%), 54.9%)",
           BLUE_NEW_44:
-            "hsl(213, calc(var(--saturation-factor, 1) * 79.7%), 53.7%)",
+            "hsl(213, calc(var(--saturation-factor, 1) * 80.5%), 53.7%)",
           BLUE_NEW_45:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.4%), 52.4%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 80.2%), 52.4%)",
           BLUE_NEW_46:
-            "hsl(212, calc(var(--saturation-factor, 1) * 79.2%), 51.0%)",
+            "hsl(212, calc(var(--saturation-factor, 1) * 80.0%), 51.0%)",
           BLUE_NEW_47:
             "hsl(211, calc(var(--saturation-factor, 1) * 81.7%), 49.4%)",
           BLUE_NEW_48:
-            "hsl(211, calc(var(--saturation-factor, 1) * 88.4%), 47.5%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 89.2%), 47.3%)",
           BLUE_NEW_49:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 44.5%)",
           BLUE_NEW_5:
-            "hsl(216, calc(var(--saturation-factor, 1) * 100.0%), 91.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
           BLUE_NEW_50:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 44.5%)",
           BLUE_NEW_51:
@@ -17646,7 +17650,7 @@
           BLUE_NEW_59:
             "hsl(209, calc(var(--saturation-factor, 1) * 94.6%), 36.5%)",
           BLUE_NEW_6:
-            "hsl(216, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 89.2%)",
           BLUE_NEW_60:
             "hsl(209, calc(var(--saturation-factor, 1) * 94.5%), 35.5%)",
           BLUE_NEW_61:
@@ -17668,7 +17672,7 @@
           BLUE_NEW_69:
             "hsl(208, calc(var(--saturation-factor, 1) * 100.0%), 26.9%)",
           BLUE_NEW_7:
-            "hsl(216, calc(var(--saturation-factor, 1) * 100.0%), 89.8%)",
+            "hsl(211, calc(var(--saturation-factor, 1) * 100.0%), 88.2%)",
           BLUE_NEW_70:
             "hsl(208, calc(var(--saturation-factor, 1) * 100.0%), 26.1%)",
           BLUE_NEW_71:
@@ -17690,7 +17694,7 @@
           BLUE_NEW_79:
             "hsl(208, calc(var(--saturation-factor, 1) * 100.0%), 19.0%)",
           BLUE_NEW_8:
-            "hsl(216, calc(var(--saturation-factor, 1) * 100.0%), 89.0%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 100.0%), 87.3%)",
           BLUE_NEW_80:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 18.4%)",
           BLUE_NEW_81:
@@ -17712,7 +17716,7 @@
           BLUE_NEW_89:
             "hsl(210, calc(var(--saturation-factor, 1) * 100.0%), 12.0%)",
           BLUE_NEW_9:
-            "hsl(215, calc(var(--saturation-factor, 1) * 96.8%), 87.8%)",
+            "hsl(210, calc(var(--saturation-factor, 1) * 100.0%), 86.3%)",
           BLUE_NEW_90:
             "hsl(209, calc(var(--saturation-factor, 1) * 100.0%), 11.2%)",
           BLUE_NEW_91:
@@ -17734,96 +17738,96 @@
           BLUE_NEW_99:
             "hsl(218, calc(var(--saturation-factor, 1) * 100.0%), 2.2%)",
           BLURPLE_1:
-            "hsl(233, calc(var(--saturation-factor, 1) * 100.0%), 95.3%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 100.0%), 94.9%)",
           BLURPLE_10:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 89.0%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 88.0%)",
           BLURPLE_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           BLURPLE_11:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 88.2%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 87.5%)",
           BLURPLE_12:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 87.6%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 86.7%)",
           BLURPLE_13:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 87.1%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 86.1%)",
           BLURPLE_14:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 86.3%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
           BLURPLE_15:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 85.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 84.7%)",
           BLURPLE_16:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 85.1%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 84.1%)",
           BLURPLE_17:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 84.3%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 83.3%)",
           BLURPLE_18:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 83.7%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
           BLURPLE_19:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 83.1%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 82.2%)",
           BLURPLE_2:
-            "hsl(231, calc(var(--saturation-factor, 1) * 100.0%), 94.5%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 100.0%), 94.1%)",
           BLURPLE_20:
-            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 82.5%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 81.6%)",
           BLURPLE_21:
-            "hsl(229, calc(var(--saturation-factor, 1) * 97.8%), 81.8%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 81.0%)",
           BLURPLE_22:
-            "hsl(228, calc(var(--saturation-factor, 1) * 97.9%), 81.0%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 100.0%), 80.4%)",
           BLURPLE_23:
-            "hsl(228, calc(var(--saturation-factor, 1) * 98.0%), 80.4%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 100.0%), 79.8%)",
           BLURPLE_24:
-            "hsl(229, calc(var(--saturation-factor, 1) * 96.2%), 79.6%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 100.0%), 79.2%)",
           BLURPLE_25:
-            "hsl(228, calc(var(--saturation-factor, 1) * 96.3%), 79.0%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 100.0%), 78.6%)",
           BLURPLE_26:
-            "hsl(229, calc(var(--saturation-factor, 1) * 96.4%), 78.4%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 78.2%)",
           BLURPLE_27:
-            "hsl(229, calc(var(--saturation-factor, 1) * 94.7%), 77.6%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 77.6%)",
           BLURPLE_28:
-            "hsl(229, calc(var(--saturation-factor, 1) * 94.9%), 77.1%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 77.1%)",
           BLURPLE_29:
-            "hsl(229, calc(var(--saturation-factor, 1) * 93.3%), 76.5%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 76.5%)",
           BLURPLE_3:
-            "hsl(231, calc(var(--saturation-factor, 1) * 100.0%), 93.7%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 93.3%)",
           BLURPLE_30:
-            "hsl(230, calc(var(--saturation-factor, 1) * 93.5%), 75.9%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 76.1%)",
           BLURPLE_31:
-            "hsl(230, calc(var(--saturation-factor, 1) * 93.7%), 75.3%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 75.5%)",
           BLURPLE_32:
-            "hsl(230, calc(var(--saturation-factor, 1) * 92.3%), 74.5%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 100.0%), 75.1%)",
           BLURPLE_33:
-            "hsl(230, calc(var(--saturation-factor, 1) * 92.5%), 73.9%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 100.0%), 74.5%)",
           BLURPLE_34:
-            "hsl(230, calc(var(--saturation-factor, 1) * 91.2%), 73.3%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 98.5%), 73.7%)",
           BLURPLE_35:
-            "hsl(231, calc(var(--saturation-factor, 1) * 91.4%), 72.7%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 97.1%), 73.1%)",
           BLURPLE_36:
-            "hsl(231, calc(var(--saturation-factor, 1) * 90.2%), 72.0%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 95.7%), 72.5%)",
           BLURPLE_37:
-            "hsl(231, calc(var(--saturation-factor, 1) * 90.3%), 71.6%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 94.4%), 71.8%)",
           BLURPLE_38:
-            "hsl(231, calc(var(--saturation-factor, 1) * 89.3%), 70.8%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 93.2%), 71.2%)",
           BLURPLE_39:
-            "hsl(231, calc(var(--saturation-factor, 1) * 89.5%), 70.2%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 92.1%), 70.4%)",
           BLURPLE_4:
-            "hsl(230, calc(var(--saturation-factor, 1) * 100.0%), 93.1%)",
+            "hsl(227, calc(var(--saturation-factor, 1) * 100.0%), 92.5%)",
           BLURPLE_40:
-            "hsl(232, calc(var(--saturation-factor, 1) * 88.4%), 69.6%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 90.9%), 69.8%)",
           BLURPLE_41:
-            "hsl(232, calc(var(--saturation-factor, 1) * 88.6%), 69.0%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 89.8%), 69.2%)",
           BLURPLE_42:
-            "hsl(232, calc(var(--saturation-factor, 1) * 87.6%), 68.4%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 90.0%), 68.6%)",
           BLURPLE_43:
-            "hsl(233, calc(var(--saturation-factor, 1) * 87.7%), 68.0%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 89.0%), 68.0%)",
           BLURPLE_44:
-            "hsl(233, calc(var(--saturation-factor, 1) * 86.8%), 67.3%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 88.0%), 67.5%)",
           BLURPLE_45:
             "hsl(233, calc(var(--saturation-factor, 1) * 87.0%), 66.9%)",
           BLURPLE_46:
-            "hsl(234, calc(var(--saturation-factor, 1) * 86.0%), 66.3%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 87.2%), 66.3%)",
           BLURPLE_47:
             "hsl(234, calc(var(--saturation-factor, 1) * 86.3%), 65.7%)",
           BLURPLE_48:
-            "hsl(234, calc(var(--saturation-factor, 1) * 85.4%), 65.1%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 86.4%), 65.3%)",
           BLURPLE_49:
             "hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)",
           BLURPLE_5:
-            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 92.4%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 91.8%)",
           BLURPLE_50:
             "hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)",
           BLURPLE_51:
@@ -17845,7 +17849,7 @@
           BLURPLE_59:
             "hsl(233, calc(var(--saturation-factor, 1) * 49.2%), 51.4%)",
           BLURPLE_6:
-            "hsl(230, calc(var(--saturation-factor, 1) * 100.0%), 91.8%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 91.0%)",
           BLURPLE_60:
             "hsl(233, calc(var(--saturation-factor, 1) * 46.7%), 50.0%)",
           BLURPLE_61:
@@ -17867,7 +17871,7 @@
           BLURPLE_69:
             "hsl(231, calc(var(--saturation-factor, 1) * 48.7%), 38.2%)",
           BLURPLE_7:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 91.0%)",
+            "hsl(226, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
           BLURPLE_70:
             "hsl(231, calc(var(--saturation-factor, 1) * 49.2%), 37.1%)",
           BLURPLE_71:
@@ -17889,7 +17893,7 @@
           BLURPLE_79:
             "hsl(228, calc(var(--saturation-factor, 1) * 53.7%), 26.3%)",
           BLURPLE_8:
-            "hsl(229, calc(var(--saturation-factor, 1) * 100.0%), 90.4%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
           BLURPLE_80:
             "hsl(228, calc(var(--saturation-factor, 1) * 54.7%), 25.1%)",
           BLURPLE_81:
@@ -17911,7 +17915,7 @@
           BLURPLE_89:
             "hsl(227, calc(var(--saturation-factor, 1) * 62.5%), 15.7%)",
           BLURPLE_9:
-            "hsl(228, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 100.0%), 88.8%)",
           BLURPLE_90:
             "hsl(225, calc(var(--saturation-factor, 1) * 64.9%), 14.5%)",
           BLURPLE_91:
@@ -18049,97 +18053,97 @@
           GREEN_900:
             "hsl(129, calc(var(--saturation-factor, 1) * 58.3%), 4.7%)",
           GREEN_NEW_1:
-            "hsl(130, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 100.0%), 86.9%)",
           GREEN_NEW_10:
-            "hsl(130, calc(var(--saturation-factor, 1) * 58.1%), 79.4%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 69.5%), 76.9%)",
           GREEN_NEW_100:
             "hsl(129, calc(var(--saturation-factor, 1) * 100.0%), 1.4%)",
           GREEN_NEW_11:
-            "hsl(130, calc(var(--saturation-factor, 1) * 56.8%), 78.2%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 66.1%), 75.7%)",
           GREEN_NEW_12:
-            "hsl(130, calc(var(--saturation-factor, 1) * 53.8%), 77.1%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 64.3%), 74.7%)",
           GREEN_NEW_13:
-            "hsl(129, calc(var(--saturation-factor, 1) * 51.6%), 75.7%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 61.8%), 73.3%)",
           GREEN_NEW_14:
-            "hsl(130, calc(var(--saturation-factor, 1) * 50.8%), 74.5%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 59.2%), 72.2%)",
           GREEN_NEW_15:
-            "hsl(130, calc(var(--saturation-factor, 1) * 48.9%), 73.1%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 57.8%), 71.2%)",
           GREEN_NEW_16:
-            "hsl(130, calc(var(--saturation-factor, 1) * 47.9%), 72.2%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 55.6%), 70.0%)",
           GREEN_NEW_17:
-            "hsl(130, calc(var(--saturation-factor, 1) * 46.3%), 70.8%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 53.7%), 68.6%)",
           GREEN_NEW_18:
-            "hsl(130, calc(var(--saturation-factor, 1) * 45.8%), 69.6%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 51.8%), 67.5%)",
           GREEN_NEW_19:
-            "hsl(129, calc(var(--saturation-factor, 1) * 44.1%), 68.4%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 50.9%), 66.5%)",
           GREEN_NEW_2:
-            "hsl(131, calc(var(--saturation-factor, 1) * 92.6%), 89.4%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 100.0%), 86.1%)",
           GREEN_NEW_20:
-            "hsl(130, calc(var(--saturation-factor, 1) * 42.9%), 67.1%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 49.2%), 65.3%)",
           GREEN_NEW_21:
-            "hsl(131, calc(var(--saturation-factor, 1) * 42.5%), 65.9%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 47.5%), 64.1%)",
           GREEN_NEW_22:
-            "hsl(130, calc(var(--saturation-factor, 1) * 41.1%), 64.7%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 46.8%), 63.1%)",
           GREEN_NEW_23:
-            "hsl(130, calc(var(--saturation-factor, 1) * 40.9%), 63.5%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 45.6%), 61.8%)",
           GREEN_NEW_24:
-            "hsl(131, calc(var(--saturation-factor, 1) * 39.9%), 62.2%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 44.3%), 60.6%)",
           GREEN_NEW_25:
-            "hsl(131, calc(var(--saturation-factor, 1) * 39.4%), 61.2%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 43.0%), 59.4%)",
           GREEN_NEW_26:
-            "hsl(131, calc(var(--saturation-factor, 1) * 38.5%), 59.8%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 42.5%), 58.4%)",
           GREEN_NEW_27:
-            "hsl(131, calc(var(--saturation-factor, 1) * 38.4%), 58.6%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 41.3%), 57.3%)",
           GREEN_NEW_28:
-            "hsl(131, calc(var(--saturation-factor, 1) * 37.3%), 57.5%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 40.2%), 56.1%)",
           GREEN_NEW_29:
-            "hsl(132, calc(var(--saturation-factor, 1) * 36.6%), 56.1%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 40.0%), 54.9%)",
           GREEN_NEW_3:
-            "hsl(130, calc(var(--saturation-factor, 1) * 86.7%), 88.2%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
           GREEN_NEW_30:
-            "hsl(132, calc(var(--saturation-factor, 1) * 36.5%), 54.9%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 39.0%), 53.7%)",
           GREEN_NEW_31:
-            "hsl(133, calc(var(--saturation-factor, 1) * 35.9%), 53.5%)",
+            "hsl(132, calc(var(--saturation-factor, 1) * 38.0%), 52.5%)",
           GREEN_NEW_32:
-            "hsl(132, calc(var(--saturation-factor, 1) * 35.5%), 52.5%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 37.7%), 51.6%)",
           GREEN_NEW_33:
-            "hsl(132, calc(var(--saturation-factor, 1) * 34.9%), 51.2%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 36.8%), 50.4%)",
           GREEN_NEW_34:
-            "hsl(133, calc(var(--saturation-factor, 1) * 34.9%), 50.0%)",
+            "hsl(133, calc(var(--saturation-factor, 1) * 37.6%), 49.0%)",
           GREEN_NEW_35:
-            "hsl(133, calc(var(--saturation-factor, 1) * 36.3%), 48.6%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 38.8%), 48.0%)",
           GREEN_NEW_36:
-            "hsl(134, calc(var(--saturation-factor, 1) * 38.0%), 47.5%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 40.3%), 46.7%)",
           GREEN_NEW_37:
-            "hsl(134, calc(var(--saturation-factor, 1) * 39.6%), 46.1%)",
+            "hsl(134, calc(var(--saturation-factor, 1) * 41.6%), 45.7%)",
           GREEN_NEW_38:
-            "hsl(135, calc(var(--saturation-factor, 1) * 41.5%), 44.9%)",
+            "hsl(135, calc(var(--saturation-factor, 1) * 43.4%), 44.3%)",
           GREEN_NEW_39:
-            "hsl(135, calc(var(--saturation-factor, 1) * 43.2%), 43.5%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 45.2%), 42.9%)",
           GREEN_NEW_4:
-            "hsl(130, calc(var(--saturation-factor, 1) * 79.1%), 86.9%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 95.0%), 84.3%)",
           GREEN_NEW_40:
-            "hsl(135, calc(var(--saturation-factor, 1) * 45.4%), 42.4%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 46.7%), 42.0%)",
           GREEN_NEW_41:
-            "hsl(136, calc(var(--saturation-factor, 1) * 47.4%), 41.0%)",
+            "hsl(136, calc(var(--saturation-factor, 1) * 48.8%), 40.6%)",
           GREEN_NEW_42:
-            "hsl(136, calc(var(--saturation-factor, 1) * 50.5%), 39.6%)",
+            "hsl(137, calc(var(--saturation-factor, 1) * 52.0%), 39.2%)",
           GREEN_NEW_43:
-            "hsl(137, calc(var(--saturation-factor, 1) * 53.6%), 38.0%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 54.4%), 37.8%)",
           GREEN_NEW_44:
-            "hsl(138, calc(var(--saturation-factor, 1) * 57.0%), 36.5%)",
+            "hsl(138, calc(var(--saturation-factor, 1) * 58.1%), 36.5%)",
           GREEN_NEW_45:
-            "hsl(139, calc(var(--saturation-factor, 1) * 60.9%), 35.1%)",
+            "hsl(139, calc(var(--saturation-factor, 1) * 61.8%), 34.9%)",
           GREEN_NEW_46:
-            "hsl(140, calc(var(--saturation-factor, 1) * 65.9%), 33.3%)",
+            "hsl(140, calc(var(--saturation-factor, 1) * 67.1%), 33.3%)",
           GREEN_NEW_47:
-            "hsl(142, calc(var(--saturation-factor, 1) * 72.7%), 31.6%)",
+            "hsl(142, calc(var(--saturation-factor, 1) * 73.7%), 31.4%)",
           GREEN_NEW_48:
             "hsl(144, calc(var(--saturation-factor, 1) * 83.8%), 29.0%)",
           GREEN_NEW_49:
             "hsl(146, calc(var(--saturation-factor, 1) * 100.0%), 26.3%)",
           GREEN_NEW_5:
-            "hsl(130, calc(var(--saturation-factor, 1) * 75.3%), 85.7%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 88.5%), 82.9%)",
           GREEN_NEW_50:
             "hsl(146, calc(var(--saturation-factor, 1) * 100.0%), 26.3%)",
           GREEN_NEW_51:
@@ -18161,7 +18165,7 @@
           GREEN_NEW_59:
             "hsl(144, calc(var(--saturation-factor, 1) * 93.0%), 22.4%)",
           GREEN_NEW_6:
-            "hsl(131, calc(var(--saturation-factor, 1) * 70.0%), 84.3%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 84.9%), 81.8%)",
           GREEN_NEW_60:
             "hsl(144, calc(var(--saturation-factor, 1) * 92.8%), 21.8%)",
           GREEN_NEW_61:
@@ -18183,7 +18187,7 @@
           GREEN_NEW_69:
             "hsl(144, calc(var(--saturation-factor, 1) * 100.0%), 16.7%)",
           GREEN_NEW_7:
-            "hsl(129, calc(var(--saturation-factor, 1) * 67.1%), 83.3%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 79.8%), 80.6%)",
           GREEN_NEW_70:
             "hsl(144, calc(var(--saturation-factor, 1) * 100.0%), 16.1%)",
           GREEN_NEW_71:
@@ -18205,7 +18209,7 @@
           GREEN_NEW_79:
             "hsl(140, calc(var(--saturation-factor, 1) * 100.0%), 12.0%)",
           GREEN_NEW_8:
-            "hsl(129, calc(var(--saturation-factor, 1) * 63.0%), 82.0%)",
+            "hsl(131, calc(var(--saturation-factor, 1) * 75.5%), 79.2%)",
           GREEN_NEW_80:
             "hsl(140, calc(var(--saturation-factor, 1) * 100.0%), 11.4%)",
           GREEN_NEW_81:
@@ -18227,7 +18231,7 @@
           GREEN_NEW_89:
             "hsl(133, calc(var(--saturation-factor, 1) * 100.0%), 7.5%)",
           GREEN_NEW_9:
-            "hsl(129, calc(var(--saturation-factor, 1) * 61.2%), 80.8%)",
+            "hsl(130, calc(var(--saturation-factor, 1) * 73.0%), 78.2%)",
           GREEN_NEW_90:
             "hsl(132, calc(var(--saturation-factor, 1) * 100.0%), 7.1%)",
           GREEN_NEW_91:
@@ -18273,12 +18277,12 @@
             "hsl(41, calc(var(--saturation-factor, 1) * 50.2%), 59.0%)",
           NEUTRAL_1: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 100.0%)",
           NEUTRAL_10:
-            "hsl(240, calc(var(--saturation-factor, 1) * 2.9%), 86.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 5.9%), 86.7%)",
           NEUTRAL_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           NEUTRAL_11:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.0%), 85.3%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 5.3%), 85.1%)",
           NEUTRAL_12:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.6%), 83.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 4.8%), 83.5%)",
           NEUTRAL_13:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.4%), 82.4%)",
           NEUTRAL_14:
@@ -18286,168 +18290,168 @@
           NEUTRAL_15:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.8%), 79.4%)",
           NEUTRAL_16:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.6%), 78.0%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 4.4%), 77.8%)",
           NEUTRAL_17:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.2%), 76.7%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 5.0%), 76.5%)",
           NEUTRAL_18:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.9%), 75.1%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 4.7%), 74.9%)",
           NEUTRAL_19:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.5%), 73.7%)",
           NEUTRAL_2: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 98.4%)",
           NEUTRAL_20:
             "hsl(230, calc(var(--saturation-factor, 1) * 4.2%), 72.2%)",
           NEUTRAL_21:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.1%), 71.0%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 4.7%), 70.8%)",
           NEUTRAL_22:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.8%), 69.4%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 4.5%), 69.2%)",
           NEUTRAL_23:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 68.0%)",
           NEUTRAL_24:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.5%), 66.7%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 4.1%), 66.5%)",
           NEUTRAL_25:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.0%), 65.3%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 4.5%), 65.1%)",
           NEUTRAL_26:
             "hsl(240, calc(var(--saturation-factor, 1) * 3.8%), 63.7%)",
           NEUTRAL_27:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.7%), 62.5%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 4.2%), 62.4%)",
           NEUTRAL_28:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.5%), 61.0%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 4.0%), 60.8%)",
           NEUTRAL_29:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.9%), 59.6%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 3.9%), 59.6%)",
           NEUTRAL_3:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.7%), 97.1%)",
           NEUTRAL_30:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.8%), 58.4%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 4.2%), 58.2%)",
           NEUTRAL_31:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.6%), 56.9%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 4.1%), 56.7%)",
           NEUTRAL_32:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.5%), 55.7%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 4.0%), 55.5%)",
           NEUTRAL_33:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.4%), 54.1%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 3.8%), 53.9%)",
           NEUTRAL_34:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.3%), 52.9%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 3.7%), 52.7%)",
           NEUTRAL_35:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.6%), 51.6%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.0%), 51.4%)",
           NEUTRAL_36:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.1%), 50.2%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 3.5%), 50.0%)",
           NEUTRAL_37:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.6%), 48.8%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.0%), 48.6%)",
           NEUTRAL_38:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.7%), 47.6%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.1%), 47.5%)",
           NEUTRAL_39:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.8%), 46.1%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.3%), 45.9%)",
           NEUTRAL_4:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 95.5%)",
           NEUTRAL_40:
-            "hsl(240, calc(var(--saturation-factor, 1) * 3.9%), 44.9%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.4%), 44.7%)",
           NEUTRAL_41:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.5%), 43.5%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.5%), 43.5%)",
           NEUTRAL_42:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.6%), 42.4%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 5.1%), 42.2%)",
           NEUTRAL_43:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 41.0%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 4.8%), 40.8%)",
           NEUTRAL_44:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.0%), 39.6%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 5.5%), 39.4%)",
           NEUTRAL_45:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.1%), 38.4%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 5.6%), 38.2%)",
           NEUTRAL_46:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 37.3%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 5.8%), 37.1%)",
           NEUTRAL_47:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.5%), 35.7%)",
+            "hsl(229, calc(var(--saturation-factor, 1) * 6.1%), 35.5%)",
           NEUTRAL_48:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 34.5%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 6.3%), 34.3%)",
           NEUTRAL_49:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 33.3%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 6.5%), 33.1%)",
           NEUTRAL_5:
             "hsl(240, calc(var(--saturation-factor, 1) * 3.2%), 93.9%)",
           NEUTRAL_50:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 33.3%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 6.5%), 33.1%)",
           NEUTRAL_51:
-            "hsl(240, calc(var(--saturation-factor, 1) * 6.0%), 32.5%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 6.7%), 32.4%)",
           NEUTRAL_52:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.5%), 32.0%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 6.2%), 31.8%)",
           NEUTRAL_53:
-            "hsl(240, calc(var(--saturation-factor, 1) * 6.2%), 31.4%)",
+            "hsl(235, calc(var(--saturation-factor, 1) * 6.9%), 31.2%)",
           NEUTRAL_54:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 30.8%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 6.4%), 30.6%)",
           NEUTRAL_55:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 30.0%)",
+            "hsl(234, calc(var(--saturation-factor, 1) * 6.6%), 29.8%)",
           NEUTRAL_56:
             "hsl(233, calc(var(--saturation-factor, 1) * 6.0%), 29.2%)",
           NEUTRAL_57:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.5%), 28.6%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 6.2%), 28.4%)",
           NEUTRAL_58:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.3%), 28.0%)",
           NEUTRAL_59:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 27.5%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 6.5%), 27.3%)",
           NEUTRAL_6:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 92.5%)",
           NEUTRAL_60:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 26.7%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 6.7%), 26.5%)",
           NEUTRAL_61:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 26.1%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 6.1%), 25.9%)",
           NEUTRAL_62:
-            "hsl(240, calc(var(--saturation-factor, 1) * 6.2%), 25.5%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 7.0%), 25.3%)",
           NEUTRAL_63:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.5%), 24.9%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 6.3%), 24.7%)",
           NEUTRAL_64:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 24.1%)",
+            "hsl(233, calc(var(--saturation-factor, 1) * 6.6%), 23.9%)",
           NEUTRAL_65:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.8%), 23.7%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 6.7%), 23.5%)",
           NEUTRAL_66:
-            "hsl(240, calc(var(--saturation-factor, 1) * 6.0%), 22.9%)",
+            "hsl(232, calc(var(--saturation-factor, 1) * 6.9%), 22.7%)",
           NEUTRAL_67:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 22.4%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 6.2%), 22.2%)",
           NEUTRAL_68:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.5%), 21.6%)",
           NEUTRAL_69:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.6%), 21.2%)",
+            "hsl(231, calc(var(--saturation-factor, 1) * 6.5%), 21.0%)",
           NEUTRAL_7:
             "hsl(240, calc(var(--saturation-factor, 1) * 4.3%), 91.0%)",
           NEUTRAL_70:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.8%), 20.4%)",
           NEUTRAL_71:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.0%), 19.8%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 6.0%), 19.6%)",
           NEUTRAL_72:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.1%), 19.2%)",
           NEUTRAL_73:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 18.6%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 6.4%), 18.4%)",
           NEUTRAL_74:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.5%), 18.0%)",
           NEUTRAL_75:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.6%), 17.5%)",
+            "hsl(230, calc(var(--saturation-factor, 1) * 6.8%), 17.3%)",
           NEUTRAL_76:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 16.7%)",
           NEUTRAL_77:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.0%), 16.3%)",
           NEUTRAL_78:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.0%), 15.7%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 6.3%), 15.5%)",
           NEUTRAL_79:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.5%), 15.1%)",
           NEUTRAL_8:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 89.6%)",
           NEUTRAL_80:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.4%), 14.5%)",
+            "hsl(228, calc(var(--saturation-factor, 1) * 6.8%), 14.3%)",
           NEUTRAL_81:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 13.7%)",
           NEUTRAL_82:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 13.3%)",
           NEUTRAL_83:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.6%), 12.7%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 6.3%), 12.5%)",
           NEUTRAL_84:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.5%), 12.2%)",
           NEUTRAL_85:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.1%), 11.6%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 6.9%), 11.4%)",
           NEUTRAL_86:
             "hsl(240, calc(var(--saturation-factor, 1) * 7.1%), 11.0%)",
           NEUTRAL_87:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.7%), 10.4%)",
           NEUTRAL_88:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 10.0%)",
+            "hsl(225, calc(var(--saturation-factor, 1) * 8.0%), 9.8%)",
           NEUTRAL_89:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.4%), 9.2%)",
           NEUTRAL_9:
-            "hsl(240, calc(var(--saturation-factor, 1) * 4.9%), 88.0%)",
+            "hsl(220, calc(var(--saturation-factor, 1) * 4.9%), 88.0%)",
           NEUTRAL_90:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.7%), 8.8%)",
           NEUTRAL_91:
@@ -18455,7 +18459,7 @@
           NEUTRAL_92:
             "hsl(240, calc(var(--saturation-factor, 1) * 5.3%), 7.5%)",
           NEUTRAL_93:
-            "hsl(240, calc(var(--saturation-factor, 1) * 5.9%), 6.7%)",
+            "hsl(240, calc(var(--saturation-factor, 1) * 8.6%), 6.9%)",
           NEUTRAL_94:
             "hsl(240, calc(var(--saturation-factor, 1) * 6.7%), 5.9%)",
           NEUTRAL_95:
@@ -19072,89 +19076,89 @@
           ORANGE_900:
             "hsl(26, calc(var(--saturation-factor, 1) * 72.4%), 5.7%)",
           ORANGE_NEW_1:
-            "hsl(15, calc(var(--saturation-factor, 1) * 100.0%), 92.7%)",
+            "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 91.4%)",
           ORANGE_NEW_10:
-            "hsl(21, calc(var(--saturation-factor, 1) * 90.8%), 82.9%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 100.0%), 81.2%)",
           ORANGE_NEW_100:
             "hsl(353, calc(var(--saturation-factor, 1) * 100.0%), 1.8%)",
           ORANGE_NEW_11:
-            "hsl(20, calc(var(--saturation-factor, 1) * 89.2%), 81.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 80.2%)",
           ORANGE_NEW_12:
-            "hsl(21, calc(var(--saturation-factor, 1) * 87.9%), 80.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 79.2%)",
           ORANGE_NEW_13:
-            "hsl(21, calc(var(--saturation-factor, 1) * 86.5%), 79.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 78.2%)",
           ORANGE_NEW_14:
-            "hsl(21, calc(var(--saturation-factor, 1) * 85.5%), 78.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 77.3%)",
           ORANGE_NEW_15:
-            "hsl(21, calc(var(--saturation-factor, 1) * 84.5%), 77.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 76.5%)",
           ORANGE_NEW_16:
-            "hsl(21, calc(var(--saturation-factor, 1) * 83.5%), 76.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 98.4%), 75.3%)",
           ORANGE_NEW_17:
-            "hsl(22, calc(var(--saturation-factor, 1) * 82.7%), 75.1%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 95.5%), 74.1%)",
           ORANGE_NEW_18:
-            "hsl(21, calc(var(--saturation-factor, 1) * 80.5%), 73.9%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 94.2%), 73.1%)",
           ORANGE_NEW_19:
-            "hsl(21, calc(var(--saturation-factor, 1) * 79.7%), 72.9%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 91.7%), 71.8%)",
           ORANGE_NEW_2:
-            "hsl(16, calc(var(--saturation-factor, 1) * 100.0%), 91.8%)",
+            "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
           ORANGE_NEW_20:
-            "hsl(22, calc(var(--saturation-factor, 1) * 79.2%), 71.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 89.3%), 70.6%)",
           ORANGE_NEW_21:
-            "hsl(22, calc(var(--saturation-factor, 1) * 77.3%), 70.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 88.4%), 69.6%)",
           ORANGE_NEW_22:
-            "hsl(22, calc(var(--saturation-factor, 1) * 76.8%), 69.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 86.3%), 68.6%)",
           ORANGE_NEW_23:
-            "hsl(22, calc(var(--saturation-factor, 1) * 76.4%), 68.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 84.3%), 67.5%)",
           ORANGE_NEW_24:
-            "hsl(22, calc(var(--saturation-factor, 1) * 74.9%), 67.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 82.6%), 66.3%)",
           ORANGE_NEW_25:
-            "hsl(22, calc(var(--saturation-factor, 1) * 74.4%), 66.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 80.9%), 65.1%)",
           ORANGE_NEW_26:
-            "hsl(22, calc(var(--saturation-factor, 1) * 73.0%), 65.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 79.2%), 64.1%)",
           ORANGE_NEW_27:
-            "hsl(22, calc(var(--saturation-factor, 1) * 72.7%), 64.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 77.8%), 62.9%)",
           ORANGE_NEW_28:
-            "hsl(22, calc(var(--saturation-factor, 1) * 71.4%), 62.9%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 76.3%), 62.0%)",
           ORANGE_NEW_29:
-            "hsl(22, calc(var(--saturation-factor, 1) * 70.3%), 61.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 75.0%), 60.8%)",
           ORANGE_NEW_3:
-            "hsl(17, calc(var(--saturation-factor, 1) * 100.0%), 90.8%)",
+            "hsl(21, calc(var(--saturation-factor, 1) * 100.0%), 88.8%)",
           ORANGE_NEW_30:
-            "hsl(22, calc(var(--saturation-factor, 1) * 70.0%), 60.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 73.7%), 59.8%)",
           ORANGE_NEW_31:
-            "hsl(22, calc(var(--saturation-factor, 1) * 68.9%), 59.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 72.5%), 58.6%)",
           ORANGE_NEW_32:
-            "hsl(22, calc(var(--saturation-factor, 1) * 67.9%), 58.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 71.3%), 57.6%)",
           ORANGE_NEW_33:
-            "hsl(22, calc(var(--saturation-factor, 1) * 67.6%), 57.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 70.1%), 56.7%)",
           ORANGE_NEW_34:
-            "hsl(22, calc(var(--saturation-factor, 1) * 66.7%), 56.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 69.2%), 55.5%)",
           ORANGE_NEW_35:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.8%), 55.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 68.1%), 54.5%)",
           ORANGE_NEW_36:
-            "hsl(22, calc(var(--saturation-factor, 1) * 65.0%), 54.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 67.1%), 53.5%)",
           ORANGE_NEW_37:
-            "hsl(22, calc(var(--saturation-factor, 1) * 64.9%), 53.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 66.1%), 52.5%)",
           ORANGE_NEW_38:
-            "hsl(22, calc(var(--saturation-factor, 1) * 64.1%), 52.0%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 65.3%), 51.4%)",
           ORANGE_NEW_39:
-            "hsl(22, calc(var(--saturation-factor, 1) * 63.3%), 50.8%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 64.4%), 50.4%)",
           ORANGE_NEW_4:
-            "hsl(18, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 100.0%), 87.6%)",
           ORANGE_NEW_40:
-            "hsl(22, calc(var(--saturation-factor, 1) * 63.6%), 49.6%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 65.7%), 49.2%)",
           ORANGE_NEW_41:
-            "hsl(22, calc(var(--saturation-factor, 1) * 66.0%), 48.4%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 67.5%), 48.2%)",
           ORANGE_NEW_42:
-            "hsl(23, calc(var(--saturation-factor, 1) * 68.5%), 47.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 70.0%), 47.1%)",
           ORANGE_NEW_43:
-            "hsl(23, calc(var(--saturation-factor, 1) * 71.1%), 46.1%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 72.6%), 45.9%)",
           ORANGE_NEW_44:
-            "hsl(23, calc(var(--saturation-factor, 1) * 73.8%), 44.9%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 75.3%), 44.5%)",
           ORANGE_NEW_45:
-            "hsl(23, calc(var(--saturation-factor, 1) * 77.5%), 43.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 78.3%), 43.3%)",
           ORANGE_NEW_46:
-            "hsl(23, calc(var(--saturation-factor, 1) * 81.4%), 42.2%)",
+            "hsl(24, calc(var(--saturation-factor, 1) * 82.2%), 42.0%)",
           ORANGE_NEW_47:
             "hsl(24, calc(var(--saturation-factor, 1) * 86.5%), 40.6%)",
           ORANGE_NEW_48:
@@ -19162,7 +19166,7 @@
           ORANGE_NEW_49:
             "hsl(25, calc(var(--saturation-factor, 1) * 100.0%), 37.1%)",
           ORANGE_NEW_5:
-            "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 88.6%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 100.0%), 86.5%)",
           ORANGE_NEW_50:
             "hsl(25, calc(var(--saturation-factor, 1) * 100.0%), 37.1%)",
           ORANGE_NEW_51:
@@ -19184,7 +19188,7 @@
           ORANGE_NEW_59:
             "hsl(24, calc(var(--saturation-factor, 1) * 97.5%), 30.8%)",
           ORANGE_NEW_6:
-            "hsl(18, calc(var(--saturation-factor, 1) * 96.9%), 87.5%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
           ORANGE_NEW_60:
             "hsl(24, calc(var(--saturation-factor, 1) * 97.4%), 30.2%)",
           ORANGE_NEW_61:
@@ -19206,7 +19210,7 @@
           ORANGE_NEW_69:
             "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 23.7%)",
           ORANGE_NEW_7:
-            "hsl(19, calc(var(--saturation-factor, 1) * 97.1%), 86.5%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 84.3%)",
           ORANGE_NEW_70:
             "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 23.1%)",
           ORANGE_NEW_71:
@@ -19228,7 +19232,7 @@
           ORANGE_NEW_79:
             "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 17.6%)",
           ORANGE_NEW_8:
-            "hsl(19, calc(var(--saturation-factor, 1) * 94.7%), 85.3%)",
+            "hsl(23, calc(var(--saturation-factor, 1) * 100.0%), 83.1%)",
           ORANGE_NEW_80:
             "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 17.1%)",
           ORANGE_NEW_81:
@@ -19250,7 +19254,7 @@
           ORANGE_NEW_89:
             "hsl(12, calc(var(--saturation-factor, 1) * 100.0%), 11.8%)",
           ORANGE_NEW_9:
-            "hsl(20, calc(var(--saturation-factor, 1) * 92.6%), 84.1%)",
+            "hsl(22, calc(var(--saturation-factor, 1) * 100.0%), 82.2%)",
           ORANGE_NEW_90:
             "hsl(11, calc(var(--saturation-factor, 1) * 100.0%), 11.2%)",
           ORANGE_NEW_91:
@@ -19273,81 +19277,81 @@
             "hsl(357, calc(var(--saturation-factor, 1) * 100.0%), 3.9%)",
           PARTNER: "hsl(215, calc(var(--saturation-factor, 1) * 82.8%), 59.0%)",
           PAYPAL: "hsl(230, calc(var(--saturation-factor, 1) * 69.8%), 24.7%)",
-          PINK_1: "hsl(318, calc(var(--saturation-factor, 1) * 100.0%), 92.4%)",
+          PINK_1: "hsl(310, calc(var(--saturation-factor, 1) * 100.0%), 91.4%)",
           PINK_10:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 87.5%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 87.3%)",
           PINK_100: "hsl(0, calc(var(--saturation-factor, 1) * 0.0%), 0.0%)",
           PINK_11:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 86.9%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 86.9%)",
           PINK_12:
-            "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 86.5%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 86.5%)",
           PINK_13:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 85.9%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 85.9%)",
           PINK_14:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 85.3%)",
           PINK_15:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 84.7%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 84.9%)",
           PINK_16:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 84.3%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 84.3%)",
           PINK_17:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 83.7%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 83.9%)",
           PINK_18:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 83.1%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 83.3%)",
           PINK_19:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 82.5%)",
-          PINK_2: "hsl(319, calc(var(--saturation-factor, 1) * 100.0%), 91.8%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
+          PINK_2: "hsl(310, calc(var(--saturation-factor, 1) * 100.0%), 91.0%)",
           PINK_20:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 82.2%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 82.4%)",
           PINK_21:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 81.6%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 81.8%)",
           PINK_22:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 81.0%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 81.2%)",
           PINK_23:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 80.4%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 80.6%)",
           PINK_24:
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 80.0%)",
           PINK_25:
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 79.4%)",
           PINK_26:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 78.8%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 78.8%)",
           PINK_27:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 78.2%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 78.2%)",
           PINK_28:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 77.8%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 77.6%)",
           PINK_29:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 77.3%)",
-          PINK_3: "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 91.2%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 77.1%)",
+          PINK_3: "hsl(310, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
           PINK_30:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 76.7%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 76.5%)",
           PINK_31:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 76.1%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 75.9%)",
           PINK_32:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 75.5%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 75.1%)",
           PINK_33:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 74.9%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 74.5%)",
           PINK_34:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 74.3%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 73.9%)",
           PINK_35:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 73.9%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 73.1%)",
           PINK_36:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 73.3%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 72.7%)",
           PINK_37:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 72.7%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 72.2%)",
           PINK_38:
-            "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 72.2%)",
+            "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 71.6%)",
           PINK_39:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 71.6%)",
-          PINK_4: "hsl(318, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 71.2%)",
+          PINK_4: "hsl(311, calc(var(--saturation-factor, 1) * 100.0%), 90.0%)",
           PINK_40:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 70.8%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 70.6%)",
           PINK_41:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 70.2%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 70.0%)",
           PINK_42:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 69.6%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 69.4%)",
           PINK_43:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 69.0%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 68.8%)",
           PINK_44:
-            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 68.4%)",
+            "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 68.2%)",
           PINK_45:
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 67.6%)",
           PINK_46:
@@ -19358,7 +19362,7 @@
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 65.7%)",
           PINK_49:
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 64.9%)",
-          PINK_5: "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
+          PINK_5: "hsl(311, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
           PINK_50:
             "hsl(315, calc(var(--saturation-factor, 1) * 100.0%), 64.9%)",
           PINK_51: "hsl(315, calc(var(--saturation-factor, 1) * 93.5%), 63.5%)",
@@ -19370,7 +19374,7 @@
           PINK_57: "hsl(316, calc(var(--saturation-factor, 1) * 65.6%), 55.5%)",
           PINK_58: "hsl(315, calc(var(--saturation-factor, 1) * 61.5%), 54.1%)",
           PINK_59: "hsl(316, calc(var(--saturation-factor, 1) * 58.5%), 52.7%)",
-          PINK_6: "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
+          PINK_6: "hsl(312, calc(var(--saturation-factor, 1) * 100.0%), 89.2%)",
           PINK_60: "hsl(316, calc(var(--saturation-factor, 1) * 55.5%), 51.6%)",
           PINK_61: "hsl(316, calc(var(--saturation-factor, 1) * 52.8%), 50.2%)",
           PINK_62: "hsl(316, calc(var(--saturation-factor, 1) * 51.8%), 48.8%)",
@@ -19381,7 +19385,7 @@
           PINK_67: "hsl(316, calc(var(--saturation-factor, 1) * 52.8%), 42.4%)",
           PINK_68: "hsl(316, calc(var(--saturation-factor, 1) * 53.1%), 41.0%)",
           PINK_69: "hsl(316, calc(var(--saturation-factor, 1) * 52.7%), 39.8%)",
-          PINK_7: "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 89.0%)",
+          PINK_7: "hsl(313, calc(var(--saturation-factor, 1) * 100.0%), 88.8%)",
           PINK_70: "hsl(316, calc(var(--saturation-factor, 1) * 53.1%), 38.4%)",
           PINK_71: "hsl(316, calc(var(--saturation-factor, 1) * 53.4%), 37.1%)",
           PINK_72: "hsl(316, calc(var(--saturation-factor, 1) * 54.1%), 35.9%)",
@@ -19392,7 +19396,7 @@
           PINK_77: "hsl(316, calc(var(--saturation-factor, 1) * 56.3%), 29.6%)",
           PINK_78: "hsl(316, calc(var(--saturation-factor, 1) * 55.9%), 28.4%)",
           PINK_79: "hsl(317, calc(var(--saturation-factor, 1) * 56.8%), 27.3%)",
-          PINK_8: "hsl(316, calc(var(--saturation-factor, 1) * 100.0%), 88.4%)",
+          PINK_8: "hsl(313, calc(var(--saturation-factor, 1) * 100.0%), 88.2%)",
           PINK_80: "hsl(317, calc(var(--saturation-factor, 1) * 57.6%), 25.9%)",
           PINK_81: "hsl(316, calc(var(--saturation-factor, 1) * 57.5%), 24.9%)",
           PINK_82: "hsl(316, calc(var(--saturation-factor, 1) * 58.3%), 23.5%)",
@@ -19403,7 +19407,7 @@
           PINK_87: "hsl(317, calc(var(--saturation-factor, 1) * 62.6%), 17.8%)",
           PINK_88: "hsl(316, calc(var(--saturation-factor, 1) * 64.3%), 16.5%)",
           PINK_89: "hsl(316, calc(var(--saturation-factor, 1) * 64.6%), 15.5%)",
-          PINK_9: "hsl(317, calc(var(--saturation-factor, 1) * 100.0%), 88.0%)",
+          PINK_9: "hsl(314, calc(var(--saturation-factor, 1) * 100.0%), 87.8%)",
           PINK_90: "hsl(316, calc(var(--saturation-factor, 1) * 64.9%), 14.5%)",
           PINK_91: "hsl(317, calc(var(--saturation-factor, 1) * 67.6%), 13.3%)",
           PINK_92: "hsl(317, calc(var(--saturation-factor, 1) * 68.3%), 12.4%)",
@@ -19591,85 +19595,85 @@
           RED_860: "hsl(0, calc(var(--saturation-factor, 1) * 66.7%), 9.4%)",
           RED_900: "hsl(0, calc(var(--saturation-factor, 1) * 70.0%), 7.8%)",
           RED_NEW_1:
-            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 93.5%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 92.7%)",
           RED_NEW_10:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 86.5%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 85.7%)",
           RED_NEW_100:
             "hsl(345, calc(var(--saturation-factor, 1) * 100.0%), 0.8%)",
           RED_NEW_11:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 85.7%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 84.9%)",
           RED_NEW_12:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 84.9%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 84.1%)",
           RED_NEW_13:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 84.1%)",
-          RED_NEW_14:
             "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 83.3%)",
+          RED_NEW_14:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 82.5%)",
           RED_NEW_15:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 81.8%)",
           RED_NEW_16:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 82.0%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 80.8%)",
           RED_NEW_17:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 81.2%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 80.0%)",
           RED_NEW_18:
-            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 80.6%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 79.2%)",
           RED_NEW_19:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 79.8%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 78.4%)",
           RED_NEW_2:
-            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 92.7%)",
-          RED_NEW_20:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 79.0%)",
-          RED_NEW_21:
-            "hsl(3, calc(var(--saturation-factor, 1) * 98.2%), 78.2%)",
-          RED_NEW_22:
-            "hsl(3, calc(var(--saturation-factor, 1) * 96.6%), 77.3%)",
-          RED_NEW_23:
-            "hsl(3, calc(var(--saturation-factor, 1) * 95.0%), 76.5%)",
-          RED_NEW_24:
-            "hsl(2, calc(var(--saturation-factor, 1) * 93.5%), 75.7%)",
-          RED_NEW_25:
-            "hsl(3, calc(var(--saturation-factor, 1) * 92.2%), 74.7%)",
-          RED_NEW_26:
-            "hsl(2, calc(var(--saturation-factor, 1) * 91.0%), 73.9%)",
-          RED_NEW_27:
-            "hsl(2, calc(var(--saturation-factor, 1) * 89.9%), 72.9%)",
-          RED_NEW_28:
-            "hsl(2, calc(var(--saturation-factor, 1) * 87.4%), 72.0%)",
-          RED_NEW_29:
-            "hsl(1, calc(var(--saturation-factor, 1) * 86.4%), 71.2%)",
-          RED_NEW_3:
             "hsl(1, calc(var(--saturation-factor, 1) * 100.0%), 92.0%)",
+          RED_NEW_20:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 77.8%)",
+          RED_NEW_21:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 77.3%)",
+          RED_NEW_22:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 76.5%)",
+          RED_NEW_23:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 75.9%)",
+          RED_NEW_24:
+            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 75.3%)",
+          RED_NEW_25:
+            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 74.7%)",
+          RED_NEW_26:
+            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 74.1%)",
+          RED_NEW_27:
+            "hsl(2, calc(var(--saturation-factor, 1) * 98.5%), 73.3%)",
+          RED_NEW_28:
+            "hsl(2, calc(var(--saturation-factor, 1) * 95.7%), 72.4%)",
+          RED_NEW_29:
+            "hsl(2, calc(var(--saturation-factor, 1) * 93.2%), 71.4%)",
+          RED_NEW_3:
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 91.2%)",
           RED_NEW_30:
-            "hsl(2, calc(var(--saturation-factor, 1) * 85.5%), 70.2%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 90.7%), 70.4%)",
           RED_NEW_31:
-            "hsl(1, calc(var(--saturation-factor, 1) * 83.4%), 69.2%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 89.7%), 69.6%)",
           RED_NEW_32:
-            "hsl(1, calc(var(--saturation-factor, 1) * 82.6%), 68.4%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 87.5%), 68.6%)",
           RED_NEW_33:
-            "hsl(1, calc(var(--saturation-factor, 1) * 80.7%), 67.5%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 85.5%), 67.6%)",
           RED_NEW_34:
-            "hsl(1, calc(var(--saturation-factor, 1) * 80.0%), 66.7%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 83.5%), 66.7%)",
           RED_NEW_35:
-            "hsl(0, calc(var(--saturation-factor, 1) * 78.3%), 65.7%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 81.7%), 65.7%)",
           RED_NEW_36:
-            "hsl(1, calc(var(--saturation-factor, 1) * 76.8%), 64.5%)",
+            "hsl(1, calc(var(--saturation-factor, 1) * 80.0%), 64.7%)",
           RED_NEW_37:
-            "hsl(0, calc(var(--saturation-factor, 1) * 76.2%), 63.7%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 78.3%), 63.9%)",
           RED_NEW_38:
-            "hsl(0, calc(var(--saturation-factor, 1) * 74.7%), 62.7%)",
+            "hsl(0, calc(var(--saturation-factor, 1) * 76.7%), 62.9%)",
           RED_NEW_39:
-            "hsl(0, calc(var(--saturation-factor, 1) * 73.3%), 61.8%)",
+            "hsl(360, calc(var(--saturation-factor, 1) * 75.4%), 61.8%)",
           RED_NEW_4:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 91.0%)",
+            "hsl(2, calc(var(--saturation-factor, 1) * 100.0%), 90.4%)",
           RED_NEW_40:
-            "hsl(360, calc(var(--saturation-factor, 1) * 73.0%), 60.8%)",
+            "hsl(360, calc(var(--saturation-factor, 1) * 74.0%), 60.8%)",
           RED_NEW_41:
-            "hsl(359, calc(var(--saturation-factor, 1) * 71.8%), 59.6%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 72.8%), 59.6%)",
           RED_NEW_42:
-            "hsl(359, calc(var(--saturation-factor, 1) * 70.8%), 58.4%)",
+            "hsl(359, calc(var(--saturation-factor, 1) * 71.6%), 58.6%)",
           RED_NEW_43:
-            "hsl(358, calc(var(--saturation-factor, 1) * 69.7%), 57.3%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 70.5%), 57.5%)",
           RED_NEW_44:
-            "hsl(358, calc(var(--saturation-factor, 1) * 68.6%), 56.3%)",
+            "hsl(358, calc(var(--saturation-factor, 1) * 68.8%), 56.1%)",
           RED_NEW_45:
             "hsl(358, calc(var(--saturation-factor, 1) * 67.8%), 54.9%)",
           RED_NEW_46:
@@ -19681,7 +19685,7 @@
           RED_NEW_49:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.7%), 50.0%)",
           RED_NEW_5:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 90.2%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 89.6%)",
           RED_NEW_50:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.7%), 50.0%)",
           RED_NEW_51:
@@ -19703,7 +19707,7 @@
           RED_NEW_59:
             "hsl(356, calc(var(--saturation-factor, 1) * 63.8%), 41.2%)",
           RED_NEW_6:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 89.4%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 88.8%)",
           RED_NEW_60:
             "hsl(356, calc(var(--saturation-factor, 1) * 64.7%), 40.0%)",
           RED_NEW_61:
@@ -19725,7 +19729,7 @@
           RED_NEW_69:
             "hsl(356, calc(var(--saturation-factor, 1) * 67.3%), 31.2%)",
           RED_NEW_7:
-            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 88.6%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 88.0%)",
           RED_NEW_70:
             "hsl(356, calc(var(--saturation-factor, 1) * 67.7%), 30.4%)",
           RED_NEW_71:
@@ -19747,7 +19751,7 @@
           RED_NEW_79:
             "hsl(355, calc(var(--saturation-factor, 1) * 76.6%), 21.8%)",
           RED_NEW_8:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 87.8%)",
+            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 87.3%)",
           RED_NEW_80:
             "hsl(354, calc(var(--saturation-factor, 1) * 79.0%), 20.6%)",
           RED_NEW_81:
@@ -19769,7 +19773,7 @@
           RED_NEW_89:
             "hsl(353, calc(var(--saturation-factor, 1) * 93.9%), 12.9%)",
           RED_NEW_9:
-            "hsl(4, calc(var(--saturation-factor, 1) * 100.0%), 87.1%)",
+            "hsl(3, calc(var(--saturation-factor, 1) * 100.0%), 86.5%)",
           RED_NEW_90:
             "hsl(354, calc(var(--saturation-factor, 1) * 93.7%), 12.4%)",
           RED_NEW_91:
@@ -19888,97 +19892,97 @@
           TEAL_860: "hsl(188, calc(var(--saturation-factor, 1) * 85.2%), 5.3%)",
           TEAL_900: "hsl(189, calc(var(--saturation-factor, 1) * 90.9%), 4.3%)",
           TEAL_NEW_1:
-            "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 89.2%)",
+            "hsl(180, calc(var(--saturation-factor, 1) * 100.0%), 84.7%)",
           TEAL_NEW_10:
-            "hsl(186, calc(var(--saturation-factor, 1) * 61.1%), 78.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 74.2%), 75.7%)",
           TEAL_NEW_100:
             "hsl(207, calc(var(--saturation-factor, 1) * 100.0%), 2.2%)",
           TEAL_NEW_11:
-            "hsl(185, calc(var(--saturation-factor, 1) * 58.3%), 77.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 70.8%), 74.5%)",
           TEAL_NEW_12:
-            "hsl(186, calc(var(--saturation-factor, 1) * 56.7%), 76.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 67.6%), 73.3%)",
           TEAL_NEW_13:
-            "hsl(185, calc(var(--saturation-factor, 1) * 54.3%), 75.1%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 66.0%), 72.4%)",
           TEAL_NEW_14:
-            "hsl(186, calc(var(--saturation-factor, 1) * 53.4%), 73.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 63.3%), 71.2%)",
           TEAL_NEW_15:
-            "hsl(186, calc(var(--saturation-factor, 1) * 51.1%), 72.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 60.8%), 70.0%)",
           TEAL_NEW_16:
-            "hsl(186, calc(var(--saturation-factor, 1) * 50.3%), 71.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 58.5%), 68.8%)",
           TEAL_NEW_17:
-            "hsl(186, calc(var(--saturation-factor, 1) * 48.3%), 70.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 57.3%), 67.8%)",
           TEAL_NEW_18:
-            "hsl(186, calc(var(--saturation-factor, 1) * 47.8%), 69.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 55.0%), 66.9%)",
           TEAL_NEW_19:
-            "hsl(186, calc(var(--saturation-factor, 1) * 46.0%), 68.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 53.1%), 65.7%)",
           TEAL_NEW_2:
-            "hsl(186, calc(var(--saturation-factor, 1) * 96.6%), 88.4%)",
+            "hsl(182, calc(var(--saturation-factor, 1) * 100.0%), 83.9%)",
           TEAL_NEW_20:
-            "hsl(185, calc(var(--saturation-factor, 1) * 45.6%), 66.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 52.2%), 64.7%)",
           TEAL_NEW_21:
-            "hsl(185, calc(var(--saturation-factor, 1) * 44.0%), 65.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 50.5%), 63.5%)",
           TEAL_NEW_22:
-            "hsl(186, calc(var(--saturation-factor, 1) * 43.6%), 64.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 49.0%), 62.4%)",
           TEAL_NEW_23:
-            "hsl(185, calc(var(--saturation-factor, 1) * 42.2%), 63.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 48.2%), 61.4%)",
           TEAL_NEW_24:
-            "hsl(186, calc(var(--saturation-factor, 1) * 42.0%), 62.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 46.8%), 60.2%)",
           TEAL_NEW_25:
-            "hsl(185, calc(var(--saturation-factor, 1) * 40.7%), 61.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 45.5%), 59.0%)",
           TEAL_NEW_26:
-            "hsl(186, calc(var(--saturation-factor, 1) * 40.5%), 59.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 44.9%), 58.0%)",
           TEAL_NEW_27:
-            "hsl(185, calc(var(--saturation-factor, 1) * 39.3%), 58.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 43.6%), 56.9%)",
           TEAL_NEW_28:
-            "hsl(186, calc(var(--saturation-factor, 1) * 39.2%), 57.5%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 42.9%), 56.1%)",
           TEAL_NEW_29:
-            "hsl(185, calc(var(--saturation-factor, 1) * 38.4%), 56.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.7%), 54.9%)",
           TEAL_NEW_3:
-            "hsl(185, calc(var(--saturation-factor, 1) * 87.9%), 87.1%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 83.3%)",
           TEAL_NEW_30:
-            "hsl(186, calc(var(--saturation-factor, 1) * 38.0%), 55.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 40.7%), 53.7%)",
           TEAL_NEW_31:
-            "hsl(185, calc(var(--saturation-factor, 1) * 37.3%), 53.7%)",
+            "hsl(186, calc(var(--saturation-factor, 1) * 40.2%), 52.7%)",
           TEAL_NEW_32:
-            "hsl(185, calc(var(--saturation-factor, 1) * 36.9%), 52.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 39.3%), 51.6%)",
           TEAL_NEW_33:
-            "hsl(185, calc(var(--saturation-factor, 1) * 36.8%), 51.6%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 39.1%), 50.4%)",
           TEAL_NEW_34:
-            "hsl(185, calc(var(--saturation-factor, 1) * 36.2%), 50.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 39.4%), 49.2%)",
           TEAL_NEW_35:
-            "hsl(186, calc(var(--saturation-factor, 1) * 37.6%), 49.0%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 40.4%), 48.0%)",
           TEAL_NEW_36:
-            "hsl(185, calc(var(--saturation-factor, 1) * 38.5%), 47.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 41.7%), 47.1%)",
           TEAL_NEW_37:
-            "hsl(185, calc(var(--saturation-factor, 1) * 40.3%), 46.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 43.3%), 45.7%)",
           TEAL_NEW_38:
-            "hsl(185, calc(var(--saturation-factor, 1) * 42.0%), 45.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 44.7%), 44.7%)",
           TEAL_NEW_39:
-            "hsl(185, calc(var(--saturation-factor, 1) * 44.0%), 44.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 46.6%), 43.3%)",
           TEAL_NEW_4:
-            "hsl(186, calc(var(--saturation-factor, 1) * 83.3%), 85.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 100.0%), 82.7%)",
           TEAL_NEW_40:
-            "hsl(185, calc(var(--saturation-factor, 1) * 46.1%), 42.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 48.1%), 42.4%)",
           TEAL_NEW_41:
-            "hsl(185, calc(var(--saturation-factor, 1) * 48.8%), 41.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 50.2%), 41.0%)",
           TEAL_NEW_42:
-            "hsl(185, calc(var(--saturation-factor, 1) * 51.2%), 40.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 52.7%), 39.8%)",
           TEAL_NEW_43:
-            "hsl(184, calc(var(--saturation-factor, 1) * 54.3%), 38.6%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 55.1%), 38.4%)",
           TEAL_NEW_44:
-            "hsl(185, calc(var(--saturation-factor, 1) * 57.9%), 37.3%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 58.7%), 37.1%)",
           TEAL_NEW_45:
-            "hsl(185, calc(var(--saturation-factor, 1) * 61.7%), 35.9%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 62.6%), 35.7%)",
           TEAL_NEW_46:
-            "hsl(185, calc(var(--saturation-factor, 1) * 66.7%), 34.1%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 67.6%), 33.9%)",
           TEAL_NEW_47:
-            "hsl(184, calc(var(--saturation-factor, 1) * 73.3%), 32.4%)",
+            "hsl(184, calc(var(--saturation-factor, 1) * 74.4%), 32.2%)",
           TEAL_NEW_48:
             "hsl(184, calc(var(--saturation-factor, 1) * 84.2%), 29.8%)",
           TEAL_NEW_49:
             "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 27.1%)",
           TEAL_NEW_5:
-            "hsl(186, calc(var(--saturation-factor, 1) * 76.9%), 84.7%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 93.7%), 81.4%)",
           TEAL_NEW_50:
             "hsl(184, calc(var(--saturation-factor, 1) * 100.0%), 27.1%)",
           TEAL_NEW_51:
@@ -20000,7 +20004,7 @@
           TEAL_NEW_59:
             "hsl(184, calc(var(--saturation-factor, 1) * 93.2%), 23.1%)",
           TEAL_NEW_6:
-            "hsl(186, calc(var(--saturation-factor, 1) * 73.8%), 83.5%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 88.1%), 80.2%)",
           TEAL_NEW_60:
             "hsl(184, calc(var(--saturation-factor, 1) * 94.7%), 22.4%)",
           TEAL_NEW_61:
@@ -20022,7 +20026,7 @@
           TEAL_NEW_69:
             "hsl(185, calc(var(--saturation-factor, 1) * 100.0%), 17.5%)",
           TEAL_NEW_7:
-            "hsl(186, calc(var(--saturation-factor, 1) * 68.9%), 82.4%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 84.9%), 79.2%)",
           TEAL_NEW_70:
             "hsl(186, calc(var(--saturation-factor, 1) * 100.0%), 17.1%)",
           TEAL_NEW_71:
@@ -20044,7 +20048,7 @@
           TEAL_NEW_79:
             "hsl(187, calc(var(--saturation-factor, 1) * 100.0%), 12.9%)",
           TEAL_NEW_8:
-            "hsl(186, calc(var(--saturation-factor, 1) * 66.7%), 81.2%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 80.4%), 78.0%)",
           TEAL_NEW_80:
             "hsl(188, calc(var(--saturation-factor, 1) * 100.0%), 12.4%)",
           TEAL_NEW_81:
@@ -20066,7 +20070,7 @@
           TEAL_NEW_89:
             "hsl(191, calc(var(--saturation-factor, 1) * 100.0%), 8.6%)",
           TEAL_NEW_9:
-            "hsl(186, calc(var(--saturation-factor, 1) * 63.1%), 79.8%)",
+            "hsl(185, calc(var(--saturation-factor, 1) * 76.5%), 76.7%)",
           TEAL_NEW_90:
             "hsl(190, calc(var(--saturation-factor, 1) * 100.0%), 8.0%)",
           TEAL_NEW_91:
@@ -20174,89 +20178,89 @@
           YELLOW_900:
             "hsl(36, calc(var(--saturation-factor, 1) * 83.3%), 4.7%)",
           YELLOW_NEW_1:
-            "hsl(28, calc(var(--saturation-factor, 1) * 100.0%), 91.6%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 100.0%), 89.4%)",
           YELLOW_NEW_10:
-            "hsl(31, calc(var(--saturation-factor, 1) * 72.3%), 80.2%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 87.3%), 78.4%)",
           YELLOW_NEW_100:
             "hsl(0, calc(var(--saturation-factor, 1) * 100.0%), 2.7%)",
           YELLOW_NEW_11:
-            "hsl(32, calc(var(--saturation-factor, 1) * 70.4%), 78.8%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 84.5%), 77.3%)",
           YELLOW_NEW_12:
-            "hsl(32, calc(var(--saturation-factor, 1) * 68.4%), 77.6%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 82.1%), 75.9%)",
           YELLOW_NEW_13:
-            "hsl(33, calc(var(--saturation-factor, 1) * 66.9%), 76.3%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 79.8%), 74.7%)",
           YELLOW_NEW_14:
-            "hsl(33, calc(var(--saturation-factor, 1) * 65.4%), 75.1%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 77.9%), 73.3%)",
           YELLOW_NEW_15:
-            "hsl(32, calc(var(--saturation-factor, 1) * 63.9%), 73.9%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 76.1%), 72.2%)",
           YELLOW_NEW_16:
-            "hsl(32, calc(var(--saturation-factor, 1) * 64.0%), 72.7%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 74.3%), 71.0%)",
           YELLOW_NEW_17:
-            "hsl(32, calc(var(--saturation-factor, 1) * 62.8%), 71.6%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 72.7%), 69.8%)",
           YELLOW_NEW_18:
-            "hsl(32, calc(var(--saturation-factor, 1) * 61.6%), 70.4%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 70.2%), 68.4%)",
           YELLOW_NEW_19:
-            "hsl(33, calc(var(--saturation-factor, 1) * 60.8%), 69.0%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 68.9%), 67.3%)",
           YELLOW_NEW_2:
-            "hsl(28, calc(var(--saturation-factor, 1) * 100.0%), 90.6%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 100.0%), 88.2%)",
           YELLOW_NEW_20:
-            "hsl(33, calc(var(--saturation-factor, 1) * 59.8%), 67.8%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 67.6%), 66.1%)",
           YELLOW_NEW_21:
-            "hsl(33, calc(var(--saturation-factor, 1) * 58.8%), 66.7%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 66.3%), 65.1%)",
           YELLOW_NEW_22:
-            "hsl(33, calc(var(--saturation-factor, 1) * 58.0%), 65.5%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 64.3%), 63.7%)",
           YELLOW_NEW_23:
-            "hsl(33, calc(var(--saturation-factor, 1) * 57.1%), 64.3%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 63.4%), 62.5%)",
           YELLOW_NEW_24:
-            "hsl(33, calc(var(--saturation-factor, 1) * 56.4%), 63.1%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 62.2%), 61.6%)",
           YELLOW_NEW_25:
-            "hsl(33, calc(var(--saturation-factor, 1) * 55.7%), 62.0%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 61.4%), 60.4%)",
           YELLOW_NEW_26:
-            "hsl(33, calc(var(--saturation-factor, 1) * 55.0%), 60.8%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 59.6%), 59.2%)",
           YELLOW_NEW_27:
-            "hsl(33, calc(var(--saturation-factor, 1) * 54.4%), 59.6%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 58.7%), 58.2%)",
           YELLOW_NEW_28:
-            "hsl(34, calc(var(--saturation-factor, 1) * 53.8%), 58.4%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 58.0%), 57.1%)",
           YELLOW_NEW_29:
-            "hsl(34, calc(var(--saturation-factor, 1) * 53.2%), 57.3%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 56.4%), 55.9%)",
           YELLOW_NEW_3:
-            "hsl(28, calc(var(--saturation-factor, 1) * 92.7%), 89.2%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 100.0%), 87.1%)",
           YELLOW_NEW_30:
-            "hsl(34, calc(var(--saturation-factor, 1) * 52.7%), 56.1%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 55.7%), 54.9%)",
           YELLOW_NEW_31:
-            "hsl(33, calc(var(--saturation-factor, 1) * 52.0%), 55.1%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 55.1%), 53.7%)",
           YELLOW_NEW_32:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.8%), 53.7%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 53.7%), 52.5%)",
           YELLOW_NEW_33:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.4%), 52.5%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 53.0%), 51.6%)",
           YELLOW_NEW_34:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.0%), 51.4%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 52.4%), 50.6%)",
           YELLOW_NEW_35:
-            "hsl(34, calc(var(--saturation-factor, 1) * 49.6%), 50.2%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 52.6%), 49.6%)",
           YELLOW_NEW_36:
-            "hsl(34, calc(var(--saturation-factor, 1) * 50.6%), 49.2%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 54.5%), 48.2%)",
           YELLOW_NEW_37:
-            "hsl(34, calc(var(--saturation-factor, 1) * 52.7%), 48.0%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 56.0%), 47.3%)",
           YELLOW_NEW_38:
-            "hsl(34, calc(var(--saturation-factor, 1) * 54.8%), 46.9%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 57.6%), 46.3%)",
           YELLOW_NEW_39:
-            "hsl(34, calc(var(--saturation-factor, 1) * 57.1%), 45.7%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 59.1%), 45.1%)",
           YELLOW_NEW_4:
-            "hsl(28, calc(var(--saturation-factor, 1) * 90.2%), 88.0%)",
+            "hsl(33, calc(var(--saturation-factor, 1) * 100.0%), 85.9%)",
           YELLOW_NEW_40:
-            "hsl(34, calc(var(--saturation-factor, 1) * 59.5%), 44.5%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 61.6%), 43.9%)",
           YELLOW_NEW_41:
-            "hsl(34, calc(var(--saturation-factor, 1) * 61.8%), 43.1%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 63.5%), 42.9%)",
           YELLOW_NEW_42:
-            "hsl(35, calc(var(--saturation-factor, 1) * 64.5%), 42.0%)",
+            "hsl(34, calc(var(--saturation-factor, 1) * 66.2%), 41.8%)",
           YELLOW_NEW_43:
-            "hsl(35, calc(var(--saturation-factor, 1) * 67.3%), 40.8%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 68.9%), 40.4%)",
           YELLOW_NEW_44:
-            "hsl(35, calc(var(--saturation-factor, 1) * 70.3%), 39.6%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 72.0%), 39.2%)",
           YELLOW_NEW_45:
-            "hsl(35, calc(var(--saturation-factor, 1) * 74.4%), 38.2%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 75.3%), 38.0%)",
           YELLOW_NEW_46:
-            "hsl(35, calc(var(--saturation-factor, 1) * 78.7%), 36.9%)",
+            "hsl(35, calc(var(--saturation-factor, 1) * 79.7%), 36.7%)",
           YELLOW_NEW_47:
             "hsl(36, calc(var(--saturation-factor, 1) * 84.4%), 35.1%)",
           YELLOW_NEW_48:
@@ -20264,7 +20268,7 @@
           YELLOW_NEW_49:
             "hsl(37, calc(var(--saturation-factor, 1) * 100.0%), 31.6%)",
           YELLOW_NEW_5:
-            "hsl(30, calc(var(--saturation-factor, 1) * 85.3%), 86.7%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 100.0%), 84.9%)",
           YELLOW_NEW_50:
             "hsl(37, calc(var(--saturation-factor, 1) * 100.0%), 31.6%)",
           YELLOW_NEW_51:
@@ -20286,7 +20290,7 @@
           YELLOW_NEW_59:
             "hsl(35, calc(var(--saturation-factor, 1) * 97.1%), 26.7%)",
           YELLOW_NEW_6:
-            "hsl(30, calc(var(--saturation-factor, 1) * 81.3%), 85.3%)",
+            "hsl(31, calc(var(--saturation-factor, 1) * 100.0%), 83.9%)",
           YELLOW_NEW_60:
             "hsl(35, calc(var(--saturation-factor, 1) * 97.0%), 26.1%)",
           YELLOW_NEW_61:
@@ -20308,7 +20312,7 @@
           YELLOW_NEW_69:
             "hsl(33, calc(var(--saturation-factor, 1) * 100.0%), 20.8%)",
           YELLOW_NEW_7:
-            "hsl(31, calc(var(--saturation-factor, 1) * 78.0%), 83.9%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 97.8%), 82.5%)",
           YELLOW_NEW_70:
             "hsl(32, calc(var(--saturation-factor, 1) * 100.0%), 20.4%)",
           YELLOW_NEW_71:
@@ -20330,7 +20334,7 @@
           YELLOW_NEW_79:
             "hsl(28, calc(var(--saturation-factor, 1) * 100.0%), 15.7%)",
           YELLOW_NEW_8:
-            "hsl(31, calc(var(--saturation-factor, 1) * 75.0%), 82.7%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 93.8%), 81.2%)",
           YELLOW_NEW_80:
             "hsl(27, calc(var(--saturation-factor, 1) * 100.0%), 15.3%)",
           YELLOW_NEW_81:
@@ -20352,7 +20356,7 @@
           YELLOW_NEW_89:
             "hsl(19, calc(var(--saturation-factor, 1) * 100.0%), 11.0%)",
           YELLOW_NEW_9:
-            "hsl(31, calc(var(--saturation-factor, 1) * 74.5%), 81.6%)",
+            "hsl(32, calc(var(--saturation-factor, 1) * 90.3%), 79.8%)",
           YELLOW_NEW_90:
             "hsl(18, calc(var(--saturation-factor, 1) * 100.0%), 10.4%)",
           YELLOW_NEW_91:
@@ -46424,4 +46428,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.6c727014c1e5f7a3.js.map
+//# sourceMappingURL=sentry.9c313d319fc131a1.js.map
