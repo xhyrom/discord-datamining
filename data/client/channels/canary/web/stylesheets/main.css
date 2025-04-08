@@ -11905,7 +11905,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   border-radius: var(--radius-round);
 }
 .highlight__83f66 {
-  color: var(--text-brand);
+  color: var(--brand-500);
 }
 .description__83f66 {
   align-items: center;
@@ -58207,4 +58207,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.83f1bd79fc56a038.css.map*/
+/*# sourceMappingURL=12633.56501f4687b69f64.css.map*/
