@@ -11190,6 +11190,37 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .buttonLoader__124c8 {
   background-color: var(--background-primary);
 }
+.root__5c1cf {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--background-surface-high);
+  padding: var(--space-12);
+  max-width: 360px;
+  min-width: 160px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+  width: auto;
+}
+.root__5c1cf div[role="button"] {
+  margin-left: 0;
+}
+.header__5c1cf {
+  display: grid;
+  align-items: center;
+}
+.experimentOverride__5c1cf {
+  flex: 1;
+}
+.copyLinkButton__5c1cf {
+  cursor: pointer;
+  color: var(--icon-secondary);
+}
+.copyLinkButton__5c1cf:hover {
+  color: var(--icon-primary);
+}
 .icon_e59963 {
   vertical-align: middle;
   margin-bottom: 0.2rem;
@@ -58194,4 +58225,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.104997b920e9c34a.css.map*/
+/*# sourceMappingURL=12633.9ff42cfcc18a59ca.css.map*/
