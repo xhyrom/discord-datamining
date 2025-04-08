@@ -8651,24 +8651,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .fadeInWrapper_b2eddf {
   margin: auto;
 }
-.modal_b0827a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-.image_b0827a,
-.modal_b0827a {
-  border-radius: 0;
-}
-@media (max-width: 485px) {
-  .modal_b0827a {
-    display: relative;
-    overflow: visible;
-    overflow: initial;
-  }
-}
 .fileWrapper__0ccae {
   position: relative;
   width: 432px;
@@ -58225,4 +58207,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3a3d9e03abb8c000.css.map*/
+/*# sourceMappingURL=12633.83f1bd79fc56a038.css.map*/
