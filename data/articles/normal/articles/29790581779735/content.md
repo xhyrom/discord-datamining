@@ -134,9 +134,10 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30625378234775"
-    width="460"
-    height="410"
+    src="https://support.discord.com/hc/article_attachments/31267526906647"
+    alt="IMG_4333.jpeg"
+    width="429"
+    height="379"
   />
 </p>
 <h4 id="h_01JP88XHENWVMCKWKAAKT61Y35" class="wysiwyg-text-align-center">
