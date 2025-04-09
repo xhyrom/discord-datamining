@@ -1,4 +1,4 @@
-<h2>Yes and No </h2>
+<h2 id="h_01JRE47RJ1Z359G8380FXCDXK0">Yes and No </h2>
 <p>
   The move away from prefix commands has lead to many people looking for ways to
   retain their traditional command system. While slash commands are our
@@ -6,11 +6,7 @@
   you. In most cases though, the traditional way of thinking about commands with
   custom prefixes preceding a message is no longer a viable option.
 </p>
-<p>
-  Below are several brief articles with different options for your bot’s
-  commands.
-</p>
-<p> </p>
+<p>Below is brief article on why we moved to Slash Commands.</p>
 <ul>
   <li>
     <a
@@ -19,30 +15,7 @@
       >Why We Moved to Slash Commands</a
     >
   </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/6027579011863"
-      target="_self"
-      >Can I Use Mentions or DMs As Commands?</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/6027634717335"
-      target="_self"
-      >I Received the Message Content Intent for Other Functionality, Can I Use
-      Prefix Commands?</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/6027710558487"
-      target="_self"
-      >Slash Command Alternatives</a
-    >
-  </li>
 </ul>
-<p> </p>
 <p>
   We know that being forced to update your code that would otherwise be stable
   is a pain, but our hope is that we suffer our growing pains now so that the
