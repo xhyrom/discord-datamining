@@ -33004,6 +33004,12 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .labelText_ab8609 {
   line-height: 12px;
 }
+.labelIconsRow_ab8609 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2px;
+}
 .section_bf424d {
   display: flex;
   flex-direction: column;
@@ -38284,6 +38290,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .colorPickerSwatch__459fb.gradientPreset__459fb {
   width: 40px;
   height: 20px;
+  border: none;
+  margin-right: var(--spacing-8);
 }
 .colorPickerSwatch__459fb.disabled__459fb {
   opacity: 0.3;
@@ -41763,6 +41771,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .actionButton__2dbe1 {
   line-height: 0;
+}
+.fullRegionDropdownButtonOverride__2dbe1 {
+  padding: 0 4px;
 }
 .experimentActions__2dbe1 {
   display: flex;
@@ -58207,4 +58218,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.00fbafa12b3add5e.css.map*/
+/*# sourceMappingURL=12633.07bafc336b1b9b27.css.map*/
