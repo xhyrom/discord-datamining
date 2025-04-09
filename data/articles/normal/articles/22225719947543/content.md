@@ -121,10 +121,10 @@
     height="380"
   />
 </p>
-<h4 id="h_01JFAWCFMDPV0EXAS4T5KFP263" class="wysiwyg-text-align-center">
+<h4 id="h_01JRDWBS9J2GM6H8RJSDCBWV47" class="wysiwyg-text-align-center">
   <span style="color: #666666" data-darkreader-inline-color=""
-    >“Start Video Quest” Button in Quest Bar for Video Quests</span
-  >
+    >“Start Video Quest” button in Quest bar for Video Quests </span
+  ><span style="color: #666666">on the Discord desktop/browser app</span>
 </h4>
 <h2 id="h_01JFAWCX89PT7F7ZCQP1KPBCQT">
   <span class="wysiwyg-font-size-large"
@@ -145,9 +145,9 @@
     height="380"
   />
 </p>
-<h4 id="h_01JFAWDGBTG4XX266EGTXN8HTA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >How to Navigate to Discover Page on Desktop</span
+<h4 id="h_01JRDW714VWHEG9G7VMGSWC0YE" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >How to navigate to Discover page on the Discord desktop/browser app</span
   >
 </h4>
 <p>
@@ -168,9 +168,10 @@
     height="380"
   />
 </p>
-<h4 id="h_01JFAWE1SEFTW1F5E8P4CQ25QS" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Quest Home in Discover List</span
+<h4 id="h_01JRDW83SF6JNZ2S3YQQGR8XZB" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Quest Home in the Discover list within the Discord desktop/browser
+    app</span
   >
 </h4>
 <p>
@@ -186,9 +187,10 @@
     height="379"
   />
 </p>
-<h4 id="h_01JFAWRK81VEPVQ9PPH4FHP6YA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >“Start Video Quest” Button in Quest Home</span
+<h4 id="h_01JRDW90WV43WNAS25F8CM2J3H" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >“Start Video Quest” button in Quest Home within the Discord desktop/browser
+    app</span
   >
 </h4>
 <h2 id="h_01JFAWS0WY563CGM42C0BDVW9Z">
@@ -216,9 +218,10 @@
     height="519"
   />
 </p>
-<h4 id="h_01JCM01W664AEFCB6FC7E8SWWF" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Mobile: Quest Bar (Left) and Accept Quest Button (Right)</span
+<h4 id="h_01JRDW9S27WNJ4DJ43WNZ8JYGC" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Quest bar (Left) and Accept Quest button (Right) in the Discord mobile
+    app</span
   >
 </h4>
 <div class="tip-box">
@@ -356,9 +359,9 @@
     height="379"
   />
 </p>
-<h4 id="h_01JFAWZRNPFNKWEYE0JV8N96PE" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Claiming a Quest Reward on Desktop</span
+<h4 id="h_01JRDWAPACA2KR6REM6PF16547" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of claiming a Quest reward on the Discord desktop/browser app</span
   >
 </h4>
 <p>
@@ -373,6 +376,22 @@
   the reward will be automatically added to your Discord account once you claim
   it.
 </p>
+<div class="info-box">
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic-Nitro"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Nitro subscribers</a
+  ><span style="color: #434343">
+    get extended access to avatar decoration rewards earned through Quests!
+    Learn more in our </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro Quest Perks</a
+  ><span style="color: #434343"> article.</span>
+</div>
 <h1 id="h_01HVPBZR5F0EKW79KK7RGEK1HG">
   Controlling the Quest Promotions You See
 </h1>
@@ -415,10 +434,9 @@
     height="403"
   />
 </p>
-<h4 id="h_01JCM1315BNHAJNH019W5MH50C" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color="">“</span
-  ><span style="color: #666666" data-darkreader-inline-color=""
-    >Hide This” Option in Quest In-App Promotion</span
+<h4 id="h_01JRDWE5B2EHBRQ2WP8NPC6YCA" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >“Hide This” option in the Quest in-app promotion on the Discord app</span
   >
 </h4>
 <h2 id="h_01HVPBZR5FZ4PEXTW08Q4RYP41">
@@ -474,9 +492,10 @@
     height="309"
   />
 </p>
-<h4 id="h_01JCM14CA6DRZH2QHVYXM2GNB6" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >In-game Rewards (aka Quests) Option in Privacy and Safety Settings</span
+<h4 id="h_01JRDWFMK18T081ZYQ1MPHNMV2" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >In-game Rewards (aka Quests) option in Data &amp; Privacy settings under
+    User Settings within the Discord desktop/browser app</span
   >
 </h4>
 <div class="info-box">
