@@ -82,9 +82,9 @@
   where titles are requested.
 </p>
 <p>
-  Once your form submission has been reviewed, we'll set up your application
-  with the appropriate permissions to access the console binaries and notify you
-  directly.
+  Once your form submission has been reviewed, if approved, we'll set up your
+  application with the appropriate permissions to access the console binaries
+  and notify you directly.
 </p>
 <p>
   Need more help? Join our

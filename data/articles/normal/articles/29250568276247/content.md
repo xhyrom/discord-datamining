@@ -81,7 +81,7 @@
   Nitro Classic. 
 </p>
 <p>
-  If your subscription has ended, you have <strong>3 days</strong> to renew your
+  If your subscription has ended, you have <strong>7 days</strong> to renew your
   subscription in order to maintain your streak.
 </p>
 <p>
