@@ -233,4 +233,87 @@
     >
   </li>
 </ul>
+<p>
+  <span
+    style="
+      color: #2e3338;
+      font-family: gg_sans, &quot; Noto Sans&quot;, &quot; Helvetica Neue&quot;,
+        Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      letter-spacing: normal;
+      orphans: 2;
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      widows: 2;
+      word-spacing: 0px;
+      -webkit-text-stroke-width: 0px;
+      white-space: normal;
+      background-color: #ffffff;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+      float: none;
+      display: inline !important;
+    "
+    >After reviewing this and other linked articles, if you have any questions,
+    please </span
+  ><a
+    style="
+      box-sizing: border-box;
+      background-color: #ffffff;
+      font-weight: 700 !important;
+      color: #1f73b7;
+      text-decoration: none;
+      font-family: gg_sans, &quot; Noto Sans&quot;, &quot; Helvetica Neue&quot;,
+        Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      letter-spacing: normal;
+      orphans: 2;
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      widows: 2;
+      word-spacing: 0px;
+      -webkit-text-stroke-width: 0px;
+      white-space: normal;
+    "
+    href="https://dis.gd/intents"
+    target="_blank"
+    rel="noopener noreferrer"
+    >reach out to our Developer Support team</a
+  ><span
+    style="
+      color: #2e3338;
+      font-family: gg_sans, &quot; Noto Sans&quot;, &quot; Helvetica Neue&quot;,
+        Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      letter-spacing: normal;
+      orphans: 2;
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      widows: 2;
+      word-spacing: 0px;
+      -webkit-text-stroke-width: 0px;
+      white-space: normal;
+      background-color: #ffffff;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+      float: none;
+      display: inline !important;
+    "
+    >!</span
+  >
+</p>
 <p><!-- notionvc: 0c05dd3b-8e56-4e5c-86eb-001bc4626ba1 --></p>
