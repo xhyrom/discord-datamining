@@ -11745,7 +11745,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .favoriteGameContainer__80da8 {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 .platform-osx:not(.visual-refresh) .drag__5c9fc {
   -webkit-app-region: drag;
@@ -13241,6 +13241,74 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .clanBadgeContainer__7d7fe img {
   margin: 0;
+}
+.boostedGuildIconGem__97677 {
+  transition: color 0.1s linear;
+  height: 10px;
+}
+.visual-refresh .boostedGuildIconGem__97677 {
+  height: 12px;
+  width: 12px;
+}
+.theme-light .iconBackgroundTierNone__97677,
+.theme-light .iconBackgroundTierOne__97677,
+.theme-light .iconBackgroundTierThree__97677,
+.theme-light .iconBackgroundTierTwo__97677 {
+  color: var(--background-accent);
+}
+.theme-dark .iconBackgroundTierNone__97677,
+.theme-dark .iconBackgroundTierOne__97677,
+.theme-dark .iconBackgroundTierThree__97677,
+.theme-dark .iconBackgroundTierTwo__97677 {
+  color: var(--interactive-muted);
+}
+.iconTierNone__97677 {
+  color: var(--opacity-white-20);
+}
+.iconTierOne__97677,
+.iconTierTwo__97677 {
+  color: var(--white-500);
+}
+.iconTierThree__97677 {
+  color: var(--guild-boosting-pink);
+}
+.guildIconContainer__85d16 {
+  margin-right: 4px;
+}
+.guildIconV2Container__85d16 {
+  margin-right: 8px;
+}
+.visual-refresh .guildIconContainer__85d16,
+.visual-refresh .guildIconV2Container__85d16 {
+  margin-right: var(--space-xs);
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+}
+.guildBadge__85d16 .boostedGuildIconGem__85d16 {
+  transition: color 0.1s linear;
+}
+.disableColor__85d16 {
+  color: var(--background-accent);
+}
+.tierTooltipTitle__85d16 {
+  font-weight: 600;
+}
+.boostedGuildIconGem__85d16 {
+  height: 10px;
+}
+.boostedGuildTierMutedIconWithVisibleBanner__85d16 {
+  color: var(--text-muted);
+}
+.iconTierNone__85d16 {
+  color: var(--opacity-white-20);
+}
+.boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
+  color: var(--interactive-active);
+}
+.invitesRefresh__85d16.guildIconContainer__85d16,
+.invitesRefresh__85d16.guildIconV2Container__85d16 {
+  margin-right: 0;
 }
 .header__99f53 {
   display: flex;
@@ -17207,12 +17275,12 @@ span.clanTag__5d473 {
 .streamerModeEnabledBtn_aa3ffd {
   margin-top: 20px;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 18px;
   color: var(--white-500);
   background-color: var(--twitch);
   padding: 10px 20px;
   border-radius: 3px;
-  line-height: 1.8125rem;
+  line-height: 29px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -58218,4 +58286,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.56aee193386f54ea.css.map*/
+/*# sourceMappingURL=12633.e1bbbbcca30b1453.css.map*/
