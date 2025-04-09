@@ -102,6 +102,8 @@
   documentation
   <a
     href="https://discord.com/developers/docs/interactions/application-commands"
+    target="_blank"
+    rel="noopener noreferrer"
     >here</a
   >.
 </p>
@@ -138,9 +140,18 @@
   <li>Polls and voting mechanisms</li>
 </ul>
 <p>
-  To learn more about buttons, check out our developer documentation
+  To learn more about buttons, check out our  help center
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/6381892888087"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Buttons FAQ</a
+  >
+  or the developer documentation
   <a
     href="https://discord.com/developers/docs/interactions/message-components#buttons"
+    target="_blank"
+    rel="noopener noreferrer"
     >here</a
   >.
 </p>
@@ -158,9 +169,18 @@
   <li>Language preference selection</li>
 </ul>
 <p>
-  To learn more about select menus, check out our developer documentation
+  To learn more about select menus, check out our help center
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/6382655804311-Bots-Select-Menus"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Select Menus FAQ</a
+  >
+  or the developer documentation
   <a
     href="https://discord.com/developers/docs/interactions/message-components#select-menus"
+    target="_blank"
+    rel="noopener noreferrer"
     >here</a
   >.
 </p>
@@ -199,12 +219,16 @@
   <li>
     <a
       href="https://discord.com/developers/docs/interactions/application-commands"
+      target="_blank"
+      rel="noopener noreferrer"
       >Discord Interactions Documentation</a
     >
   </li>
   <li>
     <a
       href="https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-for-Verified-Bots"
+      target="_blank"
+      rel="noopener noreferrer"
       >Message Content Announcement</a
     >
   </li>
