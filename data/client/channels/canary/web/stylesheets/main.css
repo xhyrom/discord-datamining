@@ -40596,6 +40596,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   text-align: center;
   margin-bottom: 4px;
 }
+.errorCodeMessage_c6e099 {
+  position: relative;
+  z-index: 1;
+}
 .description_c6e099 {
   color: var(--primary-200);
   text-align: center;
@@ -58286,4 +58290,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e1bbbbcca30b1453.css.map*/
+/*# sourceMappingURL=12633.b5e8288792b299b2.css.map*/
