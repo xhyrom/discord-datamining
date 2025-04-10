@@ -61,9 +61,9 @@
       rewards will be indicated during the Quest completion experience.
     </li>
     <li>
-      You can check the avatar expiration date of earned avatar decorations
-      listed under the specific avatar decoration in
-      <strong>Profile Settings</strong> &gt; <strong>Change Decoration</strong>.
+      If the earned avatar decoration has an expiration date, it will be listed
+      under the specific avatar decoration in
+      <strong>Profile Settings &gt; Change Decoration</strong>.
     </li>
   </ul>
 </div>
@@ -266,7 +266,7 @@
 <p>
   <strong
     >Q: How do I know how long I can keep a Quest-earned avatar decoration?<br /></strong
-  >A: You can see the expiration date of Quest-earned avatar decorations listed
-  under the specific avatar decoration in
-  <strong>Profile Settings &gt; Change Decoration</strong>.
+  >A: If the Quest-earned avatar decoration has an expiration date, it will be
+  listed under the specific avatar decoration in
+  <strong>Profile Settings &gt; Change Decoration</strong>. 
 </p>
