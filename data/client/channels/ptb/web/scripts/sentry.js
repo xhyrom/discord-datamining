@@ -6151,6 +6151,7 @@
             "chat_wallpaper_nitro_link_clicked"),
           (r.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED =
             "chat_wallpaper_wallpaper_option_selected"),
+          (r.CHAT_WALLPAPER_DOWNLOADED = "chat_wallpaper_downloaded"),
           (r.RING_TO_GUILD_VC_BANNER_SHOWN =
             "impression_ring_to_guild_vc_banner_shown"),
           (r.RING_TO_GUILD_VC_MENU_ITEM_SHOWN =
@@ -6734,7 +6735,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-09-05981ae8034256503eb86cbc5053482324da37c8-discord_web",
+              "2025-04-10-fe304ad49ce5a7dbfa610b346ac1960408f93fce-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6800,8 +6801,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "388257"),
-            o.YA("builtAt", String("1744243844447"));
+            o.YA("buildNumber", "388298"),
+            o.YA("builtAt", String("1744269560432"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46429,4 +46430,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fe67cb61ae71ed7c.js.map
+//# sourceMappingURL=sentry.a2860cb63219c4e2.js.map

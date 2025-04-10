@@ -7205,61 +7205,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.twoColorGradient__65640 {
-  background: linear-gradient(
-    90deg,
-    var(--custom-gradient-color-1),
-    var(--custom-gradient-color-2),
-    var(--custom-gradient-color-1)
-  );
-  background-size: 100px auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.threeColorGradient__65640 {
-  background: linear-gradient(
-    90deg,
-    var(--custom-gradient-color-1),
-    var(--custom-gradient-color-2),
-    var(--custom-gradient-color-3),
-    var(--custom-gradient-color-1)
-  );
-  background-size: 100px auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.threeColorGradient__65640:after,
-.twoColorGradient__65640:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: inherit;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: blur(7px) brightness(1.2);
-  animation: inherit;
-  opacity: 0.5;
-}
-.gradient__65640:hover {
-  animation: gradient__65640 2.5s linear infinite;
-}
-.gradientText__65640 {
-  position: relative;
-  z-index: 1;
-}
-@keyframes gradient__65640 {
-  0% {
-    background-position: 0;
-  }
-  to {
-    background-position: 100px;
-  }
-}
 .wrapper_f61d60 {
   border-radius: 3px;
   padding: 0 2px;
@@ -11800,7 +11745,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .favoriteGameContainer__80da8 {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 .platform-osx:not(.visual-refresh) .drag__5c9fc {
   -webkit-app-region: drag;
@@ -13296,6 +13241,74 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .clanBadgeContainer__7d7fe img {
   margin: 0;
+}
+.boostedGuildIconGem__97677 {
+  transition: color 0.1s linear;
+  height: 10px;
+}
+.visual-refresh .boostedGuildIconGem__97677 {
+  height: 12px;
+  width: 12px;
+}
+.theme-light .iconBackgroundTierNone__97677,
+.theme-light .iconBackgroundTierOne__97677,
+.theme-light .iconBackgroundTierThree__97677,
+.theme-light .iconBackgroundTierTwo__97677 {
+  color: var(--background-accent);
+}
+.theme-dark .iconBackgroundTierNone__97677,
+.theme-dark .iconBackgroundTierOne__97677,
+.theme-dark .iconBackgroundTierThree__97677,
+.theme-dark .iconBackgroundTierTwo__97677 {
+  color: var(--interactive-muted);
+}
+.iconTierNone__97677 {
+  color: var(--opacity-white-20);
+}
+.iconTierOne__97677,
+.iconTierTwo__97677 {
+  color: var(--white-500);
+}
+.iconTierThree__97677 {
+  color: var(--guild-boosting-pink);
+}
+.guildIconContainer__85d16 {
+  margin-right: 4px;
+}
+.guildIconV2Container__85d16 {
+  margin-right: 8px;
+}
+.visual-refresh .guildIconContainer__85d16,
+.visual-refresh .guildIconV2Container__85d16 {
+  margin-right: var(--space-xs);
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+}
+.guildBadge__85d16 .boostedGuildIconGem__85d16 {
+  transition: color 0.1s linear;
+}
+.disableColor__85d16 {
+  color: var(--background-accent);
+}
+.tierTooltipTitle__85d16 {
+  font-weight: 600;
+}
+.boostedGuildIconGem__85d16 {
+  height: 10px;
+}
+.boostedGuildTierMutedIconWithVisibleBanner__85d16 {
+  color: var(--text-muted);
+}
+.iconTierNone__85d16 {
+  color: var(--opacity-white-20);
+}
+.boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
+  color: var(--interactive-active);
+}
+.invitesRefresh__85d16.guildIconContainer__85d16,
+.invitesRefresh__85d16.guildIconV2Container__85d16 {
+  margin-right: 0;
 }
 .header__99f53 {
   display: flex;
@@ -33059,6 +33072,12 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .labelText_ab8609 {
   line-height: 12px;
 }
+.labelIconsRow_ab8609 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2px;
+}
 .section_bf424d {
   display: flex;
   flex-direction: column;
@@ -36815,6 +36834,71 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .enable-forced-colors .radioIndicatorDisabled__001a7 .refreshIconFill__001a7 {
   fill: Canvas;
 }
+.twoColorGradient_e5de78 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-1)
+  );
+}
+.threeColorGradient_e5de78 {
+  background: linear-gradient(
+    90deg,
+    var(--custom-gradient-color-1),
+    var(--custom-gradient-color-2),
+    var(--custom-gradient-color-3),
+    var(--custom-gradient-color-1)
+  );
+}
+.username_e5de78 {
+  background-size: 100px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.username_e5de78,
+.username_e5de78:after {
+  -webkit-text-fill-color: transparent;
+}
+.username_e5de78:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: blur(7px) brightness(1.2);
+  animation: inherit;
+  opacity: 0.5;
+}
+.gradient_e5de78:hover {
+  animation: gradient_e5de78 2.5s linear infinite;
+}
+.gradientText_e5de78 {
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient_e5de78 {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100px;
+  }
+}
+.gradientDot_e5de78:hover {
+  animation: gradientDot_e5de78 2.5s linear infinite;
+}
+@keyframes gradientDot_e5de78 {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 12px;
+  }
+}
 .svg__4f569 {
   vertical-align: text-bottom;
   display: inline-block;
@@ -38284,6 +38368,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .colorPickerSwatch__459fb.gradientPreset__459fb {
   width: 40px;
   height: 20px;
+  border: none;
+  margin-right: var(--spacing-8);
 }
 .colorPickerSwatch__459fb.disabled__459fb {
   opacity: 0.3;
@@ -40520,6 +40606,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   text-align: center;
   margin-bottom: 4px;
 }
+.errorCodeMessage_c6e099 {
+  position: relative;
+  z-index: 1;
+}
 .description_c6e099 {
   color: var(--primary-200);
   text-align: center;
@@ -41763,6 +41853,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .actionButton__2dbe1 {
   line-height: 0;
+}
+.fullRegionDropdownButtonOverride__2dbe1 {
+  padding: 0 4px;
 }
 .experimentActions__2dbe1 {
   display: flex;
@@ -58207,4 +58300,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4e0ad052345d92b2.css.map*/
+/*# sourceMappingURL=12633.beda6b5d028cc84c.css.map*/
