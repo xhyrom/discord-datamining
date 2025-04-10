@@ -1,8 +1,8 @@
 {
-  "id": 832270770,
-  "node_id": "R_kgDOMZtxsg",
-  "name": "embedded-app-sdk-examples",
-  "full_name": "discord/embedded-app-sdk-examples",
+  "id": 963454003,
+  "node_id": "R_kgDOOW0kMw",
+  "name": "pillow-simd",
+  "full_name": "discord/pillow-simd",
   "private": false,
   "owner": {
     "login": "discord",
@@ -25,14 +25,14 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "description": "Examples for the Embedded App SDK",
-  "fork": false,
-  "url": "https://api.github.com/repos/discord/embedded-app-sdk-examples",
-  "created_at": "2024-07-22T17:07:50Z",
-  "homepage": "https://discord.dev",
-  "size": 1534,
-  "language": "TypeScript",
-  "has_issues": true,
+  "description": "The friendly PIL fork",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/pillow-simd",
+  "created_at": "2025-04-09T17:52:05Z",
+  "homepage": "https://python-pillow.github.io/pillow-perf/",
+  "size": 205139,
+  "language": null,
+  "has_issues": false,
   "has_projects": false,
   "has_downloads": true,
   "has_wiki": false,
@@ -41,20 +41,18 @@
   "archived": false,
   "disabled": false,
   "license": {
-    "key": "mit",
-    "name": "MIT License",
-    "spdx_id": "MIT",
-    "url": "https://api.github.com/licenses/mit",
-    "node_id": "MDc6TGljZW5zZTEz"
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
   },
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
-  "topics": [
-    "samples"
-  ],
+  "topics": [],
   "visibility": "public",
-  "default_branch": "main",
+  "default_branch": "simd/master",
   "permissions": {
     "admin": false,
     "maintain": false,
