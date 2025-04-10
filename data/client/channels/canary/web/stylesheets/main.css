@@ -36841,10 +36841,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
     var(--custom-gradient-color-2),
     var(--custom-gradient-color-1)
   );
-  background-size: 100px auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .threeColorGradient_e5de78 {
   background: linear-gradient(
@@ -36854,13 +36850,17 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
     var(--custom-gradient-color-3),
     var(--custom-gradient-color-1)
   );
+}
+.username_e5de78 {
   background-size: 100px auto;
   -webkit-background-clip: text;
   background-clip: text;
+}
+.username_e5de78,
+.username_e5de78:after {
   -webkit-text-fill-color: transparent;
 }
-.threeColorGradient_e5de78:after,
-.twoColorGradient_e5de78:after {
+.username_e5de78:after {
   content: attr(data-text);
   position: absolute;
   left: 0;
@@ -36869,7 +36869,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   background: inherit;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   filter: blur(7px) brightness(1.2);
   animation: inherit;
   opacity: 0.5;
@@ -36887,6 +36886,17 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   }
   to {
     background-position: 100px;
+  }
+}
+.gradientDot_e5de78:hover {
+  animation: gradientDot_e5de78 2.5s linear infinite;
+}
+@keyframes gradientDot_e5de78 {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 12px;
   }
 }
 .svg__4f569 {
@@ -58290,4 +58300,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b5e8288792b299b2.css.map*/
+/*# sourceMappingURL=12633.beda6b5d028cc84c.css.map*/
