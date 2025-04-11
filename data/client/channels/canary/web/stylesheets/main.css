@@ -59866,8 +59866,7 @@ img[alt] {
   --custom-guild-list-width: calc(
     var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
   );
-  --custom-app-top-bar-height: calc(24px + var(--space-xs));
-  --custom-channel-header-height: var(--guildbar-avatar-size);
+  --custom-channel-header-height: calc(40px + var(--space-xs));
 }
 .visual-refresh.density-compact {
   --custom-member-list-width: 256px;
@@ -59926,4 +59925,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4b47d0f658ccba94.css.map*/
+/*# sourceMappingURL=12633.54cf8fd565c66122.css.map*/
