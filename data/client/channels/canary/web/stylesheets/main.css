@@ -60627,6 +60627,7 @@ html {
   width: 100%;
 }
 .appMount__51fd7 {
+  color: var(--background-base-lowest);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -60767,4 +60768,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.68724911e7a59a98.css.map*/
+/*# sourceMappingURL=12633.b850f2857d5a014e.css.map*/
