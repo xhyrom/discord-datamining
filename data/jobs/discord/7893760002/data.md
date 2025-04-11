@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7893760002](https://discord.com/jobs/7893760002)
 
-**Updated At:** Fri, 04 Apr 2025 20:42:23 GMT
+**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Senior Manager, Procurement to drive strategic sourcing and procurement process improvements across all of Discord. This role requires a seasoned procurement leader who has evolved from hands-on sourcing to a strategic, business-impacting role. You will be responsible for shaping procurement strategies, implementing best-in-class processes, and ensuring we secure optimal value from our vendor relationships. &amp;nbsp;As a senior leader in the function, you will partner closely with Finance, Legal, and Business stakeholders to align Procurement with company goals, negotiate high-value contracts, and enhance operational efficiencies through procurement tooling and process improvements. &amp;nbsp;
