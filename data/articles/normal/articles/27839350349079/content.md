@@ -148,9 +148,9 @@
     April 10, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
   reward by <strong>April 15, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: Limit of one reward redemption per account. This reward is not
-    available in Argentina, China, Russia, Korea, and Turkey.</strong
-  >
+    >Other Terms: </strong
+  >Limit of one reward redemption per account. This reward is not available in
+  Argentina, China, Russia, Korea, and Turkey.
 </p>
 <p> </p>
 <p>
@@ -353,31 +353,6 @@
   reward by <strong>May 18, 2025 (11:59 UTC)</strong>.<br /><strong
     >Other Terms: </strong
   >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Overwatch 2 – Midseason Mashup Trailer<br /></strong
-  ><strong>Quest Name: Lifeweaver Skin Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>Overwatch 2 – Midseason Mashup Trailer </strong>in Discord and unlock
-  the <strong>Frozen Seer Lifeweaver skin</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to US users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Overwatch 2 Lifeweaver Skin Video Quest</strong> can be accepted
-  on Discord desktop app or browser client from
-  <strong>March 18, 2025 </strong>until<strong>
-    March 24, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 7, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
 </p>
 <p> </p>
 <p>
@@ -656,25 +631,6 @@
   during this period and claim your reward by <strong>April 30, 2025</strong>
   <strong>(11:59PM UTC)</strong>. <br /><strong>Other Terms:</strong> Limit of
   one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Once Human<br /></strong
-  ><strong>Quest Name: Once Human Crazy Quest<br /></strong
-  ><strong>Offer Details: </strong>Stream 15 minutes of
-  <strong>Once Human</strong> to a friend on <strong>Discord </strong>to receive
-  a <strong>Gun Skin:</strong> <strong>Tiger Roar</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on desktop where both <strong>Discord</strong> and
-  <strong>Once Human</strong> are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Once Human Crazy Quest</strong> can be accepted on Discord from
-  <strong>January 16, 2025</strong> until
-  <strong>January 23, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>April 10, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
-  >Limit of one reward redemption per account.
 </p>
 <p>
   <strong
