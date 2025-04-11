@@ -28,6 +28,79 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Marvel Rivals<br /></strong
+  ><strong>Quest Name: Marvel Rivals S2 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Marvel Rivals </strong>to receive an
+  <strong>Emma Frost avatar decoration.</strong> <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the <strong>United States</strong>,
+  <strong>Canada</strong>, and <strong>Great Britain</strong> on PC, PlayStation
+  5, Xbox Series X, and Xbox Series S where <strong>Discord</strong> and
+  <strong>Marvel Rivals </strong>are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Marvel Rivals S2 Quest</strong> can be accepted on
+  <strong>PC, PlayStation 5, Xbox Series X, and Xbox Series S</strong> from
+  <strong>April 11, 2025 (6:00PM UTC) </strong>until<strong>
+    April 18, 2025 (6:00PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 18, 2025 (0:00 UTC)</strong>.<br />The
+  <strong>Emma Frost avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>June 18, 2025 (6:00PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: Path of Exile 2 <br /></strong
+  ><strong>Quest Name: Path of Exile 2 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Path of Exile 2 </strong>to receive a
+  <strong>Face of Corruption avatar decoration.</strong> <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the <strong>United States</strong>,
+  <strong>Brazil</strong>, <strong>Great Britain</strong>,
+  <strong>France</strong>, <strong>Germany</strong>, <strong>Japan</strong>,
+  <strong>Thailand</strong>, and <strong>Poland</strong> on PC, PlayStation 4,
+  PlayStation 5, Xbox Series X, and Xbox Series S where
+  <strong>Discord</strong> and <strong>Path of Exile 2 </strong>are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Path of Exile 2 Quest</strong> can be accepted on
+  <strong
+    >PC, PlayStation 4, PlayStation 5, Xbox Series X, and Xbox Series S</strong
+  >
+  from <strong>April 11, 2025 (11:59PM UTC) </strong>until<strong>
+    April 17, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 17, 2025 (0:00 UTC)</strong>.<br />The
+  <strong>Face of Corruption avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>June 17, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decoration for longer</a
+  >! <br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Last of Us Season 2<br /></strong
   ><strong>Quest Name: The Last of Us Season 2 Quest<br /></strong
   ><strong>Offer Details:</strong> Watch
