@@ -31254,6 +31254,12 @@ html:not(.visual-refresh) .root_e5f3a9 {
   border-top-left-radius: var(--radius-md);
   border-top-right-radius: var(--radius-md);
 }
+.orbCheckoutHeaderVideo__9abb9 {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left top;
+  object-position: left top;
+}
 div.modalOverrideBody__34eac {
   padding: 0;
   overflow: visible;
@@ -60066,4 +60072,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.229a7bbcff2197ef.css.map*/
+/*# sourceMappingURL=12633.3db800ddd9c1ce62.css.map*/
