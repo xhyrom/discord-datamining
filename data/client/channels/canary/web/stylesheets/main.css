@@ -28585,42 +28585,42 @@ html:not(.visual-refresh) .root_e5f3a9 {
   text-transform: uppercase;
   vertical-align: center;
 }
-.table__58ce9 {
+.table_fda3e4 {
   background-color: var(--background-secondary);
   border-radius: 4px;
   padding: 12px;
 }
-.header__58ce9 {
+.header_fda3e4 {
   color: var(--interactive-active);
   font-weight: 600;
   margin-bottom: 8px;
 }
-.header__58ce9,
-.rowBase__58ce9 {
+.header_fda3e4,
+.rowBase_fda3e4 {
   font-size: 16px;
   line-height: 20px;
 }
-.rowBase__58ce9 {
+.rowBase_fda3e4 {
   display: flex;
   font-weight: 500;
 }
-.rowBase__58ce9:not(:last-child) {
+.rowBase_fda3e4:not(:last-child) {
   margin-bottom: 8px;
 }
-.row__58ce9 {
+.row_fda3e4 {
   align-items: flex-start;
   color: var(--interactive-normal);
   justify-content: space-between;
 }
-.rowAmount__58ce9 {
+.rowAmount_fda3e4 {
   align-items: center;
   display: flex;
   white-space: nowrap;
 }
-.rowLabel__58ce9 {
+.rowLabel_fda3e4 {
   margin-right: 10px;
 }
-.rowPercentDiscount__58ce9 {
+.rowPercentDiscount_fda3e4 {
   background-color: var(--green-360);
   border-radius: 2px;
   color: var(--white-500);
@@ -28629,7 +28629,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   margin-left: 8px;
   padding: 2px 4px;
 }
-.rowDiscountOriginalPrice__58ce9 {
+.rowDiscountOriginalPrice_fda3e4 {
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;
@@ -28638,55 +28638,55 @@ html:not(.visual-refresh) .root_e5f3a9 {
   text-align: right;
   text-decoration: line-through;
 }
-.entitlementDiscountRow__58ce9 {
+.entitlementDiscountRow_fda3e4 {
   color: var(--text-positive);
   justify-content: flex-end;
 }
-.divider__58ce9 {
+.divider_fda3e4 {
   background-color: var(--background-modifier-accent);
   height: 1px;
   margin: 16px 0;
 }
-.divider__58ce9.negativeMarginTop__58ce9 {
+.divider_fda3e4.negativeMarginTop_fda3e4 {
   margin-top: -16px;
 }
-.divider__58ce9.negativeMarginBottom__58ce9 {
+.divider_fda3e4.negativeMarginBottom_fda3e4 {
   margin-bottom: -4px;
 }
-.dividerExtended__58ce9 {
+.dividerExtended_fda3e4 {
   height: 4px;
   margin-left: -16px;
   margin-right: -16px;
 }
-.totalRow__58ce9 {
+.totalRow_fda3e4 {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-.totalLabel__58ce9 {
+.totalLabel_fda3e4 {
   color: var(--interactive-normal);
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
 }
-.totalAmount__58ce9,
-.totalLabel__58ce9 strong {
+.totalAmount_fda3e4,
+.totalLabel_fda3e4 strong {
   color: var(--interactive-active);
   font-weight: 600;
 }
-.finePrint__58ce9 {
+.finePrint_fda3e4 {
   color: var(--text-normal);
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
   margin: 16px 0;
 }
-.annualPlanDiscountPriceSection__58ce9 {
+.annualPlanDiscountPriceSection_fda3e4 {
   align-self: flex-end;
   display: flex;
   flex-direction: row;
 }
-.annualPlanOptionDiscount__58ce9 {
+.annualPlanOptionDiscount_fda3e4 {
   background-color: var(--green-360);
   border-radius: 8px;
   font-weight: 600;
@@ -28696,20 +28696,20 @@ html:not(.visual-refresh) .root_e5f3a9 {
   padding: 0 6px;
   position: relative;
 }
-.annualDiscountValues__58ce9 {
+.annualDiscountValues_fda3e4 {
   display: flex;
   flex-direction: column;
 }
-.trialEndPrice__58ce9 {
+.trialEndPrice_fda3e4 {
   text-align: right;
 }
-.visual-refresh .table__58ce9 {
+.visual-refresh .table_fda3e4 {
   background-color: var(--background-mod-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   padding: var(--space-12);
 }
-.visual-refresh .divider__58ce9 {
+.visual-refresh .divider_fda3e4 {
   background-color: var(--border-faint);
 }
 .activeFractionalPremiumBannerContainer__0687d {
@@ -33139,7 +33139,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .clickableContainer__39ec2 {
   cursor: pointer;
-  display: contents;
 }
 .clickableContainer__39ec2:hover > .card__39ec2 {
   background: var(--bg-mod-subtle);
@@ -60645,4 +60644,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0cf14ddeb2f8b1ea.css.map*/
+/*# sourceMappingURL=12633.7af222e24283a5d9.css.map*/
