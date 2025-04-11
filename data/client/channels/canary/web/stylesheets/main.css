@@ -16770,11 +16770,13 @@ span.clanTag__5d473 {
   --custom-user-profile-theme-padding: 4px;
 }
 :where(.outer_c0bea0) {
-  background: var(--background-secondary-alt);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
+}
+.visual-refresh :where(.outer_c0bea0) {
+  background: var(--background-surface-high);
 }
 :where(.outer_c0bea0).biteSize_c0bea0 {
   border-radius: var(--radius-sm);
@@ -16810,10 +16812,6 @@ span.clanTag__5d473 {
   gap: 8px;
   padding-bottom: 4px;
 }
-.inner_c0bea0.biteSize_c0bea0,
-.inner_c0bea0.fullSize_c0bea0 {
-  background: var(--bg-surface-overlay);
-}
 .inner_c0bea0.fullSize_c0bea0 {
   height: 100%;
 }
@@ -16848,27 +16846,22 @@ span.clanTag__5d473 {
   );
 }
 :where(.overlay_c0bea0) {
-  background: var(--bg-mod-faint);
-  border: 1px solid var(--border-faint);
+  background: var(--user-profile-overlay-background);
   border-radius: var(--radius-sm);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
 }
-.theme-dark.custom-user-profile-theme :where(.overlay_c0bea0) {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-5));
-  border-color: var(--profile-body-border-color);
-}
-.theme-light.custom-user-profile-theme :where(.overlay_c0bea0) {
-  background: rgb(var(--bg-overlay-color) / 0.4);
-  border-color: var(--profile-body-border-color);
+.theme-light :where(.overlay_c0bea0),
+:where(.overlay_c0bea0) .theme-dark {
+  border: 1px solid var(--border-faint);
 }
 :where(.overlay_c0bea0) ::-webkit-scrollbar-thumb {
-  background-color: var(--profile-body-divider-color);
+  background-color: var(--user-profile-border);
 }
 .no-webkit-scrollbar :where(.overlay_c0bea0) * {
-  scrollbar-color: var(--profile-body-divider-color) var(--scrollbar-thin-track);
+  scrollbar-color: var(--user-profile-border) var(--scrollbar-thin-track);
 }
 .enable-forced-colors .inner_c0bea0.biteSize_c0bea0,
 .enable-forced-colors .inner_c0bea0.fullSize_c0bea0,
@@ -16918,6 +16911,7 @@ span.clanTag__5d473 {
   min-width: 16px;
 }
 .custom-user-profile-theme .themeColor_fb7f94 {
+  color: var(--interactive-active);
   transition: background var(--custom-button-transition-duration) ease-in-out;
 }
 .custom-user-profile-theme .themeColor_fb7f94:disabled,
@@ -16943,28 +16937,28 @@ span.clanTag__5d473 {
   );
 }
 .custom-user-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94 {
-  background: rgba(var(--bg-overlay-color-inverse) / 0.24);
-  color: var(--interactive-active);
+  background: var(--opacity-white-24);
+  border: var(--opacity-white-8);
 }
 .custom-user-profile-theme.theme-dark
   .themeColor_fb7f94.secondary_fb7f94:hover {
-  background: rgb(var(--bg-overlay-color-inverse) / 0.3);
+  background: var(--opacity-white-36);
 }
 .custom-user-profile-theme.theme-dark
   .themeColor_fb7f94.secondary_fb7f94:active {
-  background: rgb(var(--bg-overlay-color-inverse) / 0.34);
+  background: var(--opacity-white-32);
 }
 .custom-user-profile-theme.theme-light .themeColor_fb7f94.secondary_fb7f94 {
-  background: rgb(var(--bg-overlay-color) / 0.72);
-  color: var(--interactive-active);
+  background: var(--opacity-white-72);
+  border: var(--opacity-white-8);
 }
 .custom-user-profile-theme.theme-light
   .themeColor_fb7f94.secondary_fb7f94:hover {
-  background: rgb(var(--bg-overlay-color) / 0.68);
+  background: var(--opacity-white-92);
 }
 .custom-user-profile-theme.theme-light
   .themeColor_fb7f94.secondary_fb7f94:active {
-  background: rgb(var(--bg-overlay-color) / 0.62);
+  background: var(--opacity-white-84);
 }
 .hoverColor_fb7f94 {
   color: var(--interactive-normal);
@@ -30667,9 +30661,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .container__8061a {
   align-items: center;
-  background: var(--bg-mod-faint);
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-xs);
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -30682,10 +30673,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .container__8061a:empty {
   visibility: hidden;
-}
-.custom-user-profile-theme .container__8061a {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
-  border-color: var(--profile-body-border-color);
 }
 .badge__8061a {
   background-position: 50%;
@@ -30703,7 +30690,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   opacity: 0.8;
 }
 .badge__8061a:before {
-  background-color: var(--background-modifier-accent);
+  background-color: var(--user-profile-border);
   border-radius: 50%;
   content: "";
   display: block;
@@ -30841,20 +30828,13 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: 4px;
 }
 .clanTagContainer__63ed3 {
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-xs);
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
   box-sizing: border-box;
   height: 22px;
 }
 .clanTag__63ed3 {
-  background: var(--bg-mod-faint);
   margin: 0 auto;
-}
-.custom-user-profile-theme .clanTagContainer__63ed3 {
-  border-color: var(--profile-body-border-color);
-}
-.custom-user-profile-theme .clanTag__63ed3 {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
 }
 .viewFullBio_f5f93a {
   margin-top: 8px;
@@ -30939,29 +30919,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
   top: calc((var(--custom-user-profile-banner-height) - 56px) / 2);
   z-index: 5;
 }
-.activity__5be3e,
-.upsell__5be3e div {
-  border-radius: var(--radius-xs);
-}
-html:not(.visual-refresh) .inner_a99829 {
-  background: var(--input-background);
-  border-radius: 3px;
-}
-.custom-user-profile-theme html:not(.visual-refresh) .inner_a99829 {
+.custom-user-profile-theme .container_a99829 {
   background: rgb(var(--bg-overlay-color-inverse) / 0.1);
-}
-.visual-refresh .custom-theme-background .container_a99829 {
-  border-color: var(--profile-body-border-color, var(--input-border));
-}
-.visual-refresh-chat-input .container_a99829,
-.visual-refresh.custom-theme-background .container_a99829 {
-  background: var(--input-background);
-}
-.custom-user-profile-theme .visual-refresh-chat-input .container_a99829,
-.custom-user-profile-theme
-  .visual-refresh.custom-theme-background
-  .container_a99829 {
-  background: rgb(var(--bg-overlay-color-inverse) / 0.1);
+  border: none;
 }
 .editor_a99829 {
   --channel-text-area-placeholder: var(--text-muted);
@@ -30982,21 +30942,6 @@ html:not(.visual-refresh) .inner_a99829 {
 }
 .biteSizeButton_a99829 {
   height: 38px;
-}
-.engagementExpButton_a99829 {
-  background-color: var(--profile-gradient-button-color);
-  color: var(--white-500);
-  transition: opacity var(--custom-button-transition-duration) ease;
-}
-.engagementExpButton_a99829:hover {
-  opacity: 0.8;
-}
-.engagementExpButton_a99829:active {
-  opacity: 0.9;
-}
-.engagementExpButton_a99829:disabled,
-.engagementExpButton_a99829[aria-disabled="true"] {
-  opacity: 0.5;
 }
 .column_ba7f98 {
   display: flex;
@@ -32743,7 +32688,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   fill: var(--interactive-active);
 }
 .container_ab8609 {
-  --custom-status-bubble-background-color: var(--bg-surface-raised);
   --custom-status-bubble-background: var(
     --custom-status-bubble-background-color
   );
@@ -32756,8 +32700,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   width: fit-content;
   z-index: 2;
 }
-.custom-user-profile-theme .container_ab8609 {
-  --custom-status-bubble-background-color: var(--bg-surface-overlay);
+.visual-refresh .container_ab8609 {
+  --custom-status-bubble-background-color: var(--background-surface-highest);
 }
 .theme-dark .container_ab8609 {
   --custom-status-bubble-overlay-color: 255 255 255;
@@ -32767,8 +32711,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .container_ab8609.editable_ab8609:hover {
   --custom-status-bubble-background: linear-gradient(
-      rgb(var(--custom-status-bubble-overlay-color) / 0.05),
-      rgb(var(--custom-status-bubble-overlay-color) / 0.05)
+      rgb(var(--custom-status-bubble-overlay-color) / 0.04),
+      rgb(var(--custom-status-bubble-overlay-color) / 0.04)
     ),
     var(--custom-status-bubble-background-color);
 }
@@ -33027,7 +32971,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   object-fit: cover;
 }
 .card__39ec2 {
-  border: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -33141,14 +33084,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   cursor: pointer;
 }
 .clickableContainer__39ec2:hover > .card__39ec2 {
-  background: var(--bg-mod-subtle);
-}
-.custom-user-profile-theme .clickableContainer__39ec2:hover > .card__39ec2 {
-  background: linear-gradient(
-      rgb(var(--bg-overlay-color-inverse) / 0.05),
-      rgb(var(--bg-overlay-color-inverse) / 0.05)
-    ),
-    var(--profile-gradient-end);
+  background: var(--user-profile-overlay-background-hover);
 }
 .clickableImage__39ec2:after {
   background-color: var(--black-500);
@@ -33219,8 +33155,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   top: 1px;
 }
 .voiceChannelDivider__39ec2 {
-  background-color: var(--profile-body-divider-color);
-  height: 1px;
   width: 100%;
 }
 .contextMenu__39ec2 {
@@ -33277,6 +33211,10 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .badgesContainerPopout__635ed {
   flex-wrap: wrap;
   row-gap: 4px;
+}
+.divider__23eb0 {
+  background-color: var(--user-profile-border);
+  height: 1px;
 }
 .container__8e51c {
   align-items: center;
@@ -35904,13 +35842,8 @@ img.thumbnail__0f2e8 {
   cursor: pointer;
 }
 .pill_dfa8b6 {
-  background: var(--bg-mod-faint);
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-xs);
-}
-.custom-user-profile-theme .pill_dfa8b6 {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
-  border-color: var(--profile-body-border-color);
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
 }
 .role_dfa8b6 {
   align-items: center;
@@ -35987,9 +35920,8 @@ img.thumbnail__0f2e8 {
   margin-right: 8px;
 }
 .button__7d7f7 {
-  background: var(--bg-mod-faint);
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-xs);
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
   color: var(--interactive-normal);
   height: 24px;
   padding: 4px;
@@ -35997,9 +35929,8 @@ img.thumbnail__0f2e8 {
   width: -moz-fit-content;
   width: fit-content;
 }
-.custom-user-profile-theme .button__7d7f7 {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
-  border-color: var(--profile-body-border-color);
+.button__7d7f7:hover {
+  background-color: var(--user-profile-background-hover);
 }
 .root_fccfdf {
   color: var(--text-normal);
@@ -36009,27 +35940,27 @@ img.thumbnail__0f2e8 {
   position: relative;
 }
 .pill_fccfdf {
-  background: var(--bg-mod-faint);
-  border: 1px solid var(--border-faint);
-  border-radius: var(--radius-xs);
+  border: 1px solid var(--user-profile-border);
+  border-radius: var(--radius-sm);
 }
-.custom-user-profile-theme .pill_fccfdf {
-  background: rgb(var(--bg-overlay-color) / var(--bg-overlay-opacity-6));
-  border-color: var(--profile-body-border-color);
-}
-.expandButton_fccfdf {
-  padding: 3px 7px;
-}
-.collapseButton_fccfdf,
 .expandButton_fccfdf {
   align-items: center;
   cursor: pointer;
+  padding: 3px 7px;
+}
+.expandButton_fccfdf:hover {
+  background-color: var(--user-profile-background-hover);
 }
 .collapseButton_fccfdf {
+  align-items: center;
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   height: 24px;
   padding: 3px 5px;
+}
+.collapseButton_fccfdf:hover {
+  background-color: var(--user-profile-background-hover);
 }
 .container__530ce {
   align-items: center;
@@ -36154,7 +36085,7 @@ img.thumbnail__0f2e8 {
   border-radius: var(--radius-sm);
 }
 .upsellContent__5997d {
-  background-color: var(--profile-body-background-color);
+  background: var(--user-profile-overlay-background);
   border-radius: inherit;
   position: relative;
 }
@@ -36259,36 +36190,33 @@ img.thumbnail__0f2e8 {
 .upsellCloseIcon__5997d:active {
   color: var(--interactive-active);
 }
-.theme-light.custom-user-profile-theme .upsellButton__5997d {
-  background-color: hsl(var(--white-hsl) / 0.72);
+.custom-user-profile-theme .upsellButton__5997d {
+  border: var(--opacity-white-8);
   color: var(--interactive-active);
 }
-.theme-light.custom-user-profile-theme .upsellButton__5997d:hover {
-  background-color: hsl(var(--white-hsl) / 0.52);
-}
-.theme-light.custom-user-profile-theme .upsellButton__5997d:active {
-  background-color: hsl(var(--white-hsl) / 0.57);
-}
-.theme-light.custom-user-profile-theme .upsellButton__5997d:disabled {
+.custom-user-profile-theme .upsellButton__5997d:disabled {
   opacity: 0.5;
 }
-.theme-light.custom-user-profile-theme .upsellContent__5997d {
-  background-color: rgb(var(--bg-overlay-color) / 0.4);
+.theme-light.custom-user-profile-theme .upsellButton__5997d {
+  background: var(--opacity-white-72);
+}
+.theme-light.custom-user-profile-theme .upsellButton__5997d:hover {
+  background: var(--opacity-white-92);
+}
+.theme-light.custom-user-profile-theme .upsellButton__5997d:active {
+  background: var(--opacity-white-84);
 }
 .theme-light.custom-user-profile-theme .viewPremiumPerksButtonShine__5997d {
   color: var(--opacity-black-4);
 }
 .theme-dark.custom-user-profile-theme .upsellButton__5997d {
-  background-color: hsl(var(--white-hsl) / 0.24);
+  background: var(--opacity-white-24);
 }
 .theme-dark.custom-user-profile-theme .upsellButton__5997d:hover {
-  background-color: hsl(var(--white-hsl) / 0.34);
+  background: var(--opacity-white-36);
 }
 .theme-dark.custom-user-profile-theme .upsellButton__5997d:active {
-  background-color: hsl(var(--white-hsl) / 0.39);
-}
-.theme-dark.custom-user-profile-theme .upsellContent__5997d {
-  background-color: rgb(var(--bg-overlay-color) / 0.4);
+  background: var(--opacity-white-32);
 }
 .container__43a4b {
   border-radius: var(--radius-sm);
@@ -36310,22 +36238,23 @@ img.thumbnail__0f2e8 {
   padding: 2px 8px;
 }
 .custom-user-profile-theme .color__43a4b {
-  background-color: var(--profile-gradient-button-color);
+  background: var(--profile-gradient-button-color);
   color: var(--white-500);
   transition: opacity 0.2s ease-in-out;
 }
 .custom-user-profile-theme .color__43a4b:hover {
-  background-color: var(--profile-gradient-button-color);
-  opacity: 0.8;
+  background: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 80%,
+    transparent
+  );
 }
 .custom-user-profile-theme .color__43a4b:active {
-  background-color: var(--profile-gradient-button-color);
-  opacity: 0.9;
-}
-.custom-user-profile-theme .color__43a4b:disabled,
-.custom-user-profile-theme .color__43a4b[aria-disabled="true"] {
-  background-color: var(--profile-gradient-button-color);
-  opacity: 0.5;
+  background: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 90%,
+    transparent
+  );
 }
 .gameIcon__43a4b {
   vertical-align: bottom;
@@ -36336,9 +36265,6 @@ img.thumbnail__0f2e8 {
   flex-direction: row;
   gap: var(--spacing-8);
   padding: var(--spacing-16);
-}
-.panel__581dd {
-  padding: var(--spacing-12);
 }
 .hoverable__76c22 {
   display: inline;
@@ -38359,6 +38285,9 @@ img.thumbnail__0f2e8 {
   position: absolute;
   top: 0;
   z-index: -1;
+}
+.full-motion .gradientAlwaysAnimate_e5de78 {
+  animation: gradient_e5de78 2.5s linear infinite;
 }
 .gradient_e5de78:hover {
   animation: gradient_e5de78 2.5s linear infinite;
@@ -45912,13 +45841,6 @@ html.disable-forced-colors * {
     var(--premium-nitro-pink-light) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
-  --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
-  --profile-gradient-message-input-border: color-mix(
-    in oklab,
-    hsl(var(--primary-500-hsl) / 0.48) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
-      var(--theme-base-color-amount, 0%)
-  );
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-note-background: color-mix(
     in oklab,
@@ -45940,15 +45862,6 @@ html.disable-forced-colors * {
     in oklab,
     hsl(var(--black-hsl) / 0.8) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
-      var(--theme-base-color-amount, 0%)
-  );
-  --profile-gradient-profile-body-background-hover: hsl(
-    var(--white-hsl) / 0.16
-  );
-  --profile-gradient-profile-body-background-hover: color-mix(
-    in oklab,
-    hsl(var(--white-hsl) / 0.16) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
       var(--theme-base-color-amount, 0%)
   );
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
@@ -46562,11 +46475,44 @@ html.disable-forced-colors * {
     var(--primary-630) 100%,
     var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(var(--primary-500-hsl) / 0.3);
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--primary-500-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-border: hsl(var(--white-hsl) / 0.08);
+  --user-profile-border: color-mix(
+    in oklab,
+    hsl(var(--white-hsl) / 0.08) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+      var(--theme-base-color-amount, 0%)
+  );
   --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
   --user-profile-header-overflow-background: color-mix(
     in oklab,
     hsl(var(--primary-700-hsl) / 0.5) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-note-background-focus: var(--primary-700);
+  --user-profile-note-background-focus: color-mix(
+    in oklab,
+    var(--primary-700) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--primary-800);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--primary-800) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(var(--primary-500-hsl) / 0.3);
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--primary-500-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
       var(--theme-base-color-amount, 0%)
   );
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
@@ -47686,13 +47632,6 @@ html.disable-forced-colors * {
     var(--premium-nitro-pink-dark) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
-  --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
-  --profile-gradient-message-input-border: color-mix(
-    in oklab,
-    hsl(var(--primary-430-hsl) / 0.24) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
-      var(--theme-base-color-amount, 0%)
-  );
   --profile-gradient-note-background: hsl(var(--white-hsl) / 0.3);
   --profile-gradient-note-background: color-mix(
     in oklab,
@@ -47714,15 +47653,6 @@ html.disable-forced-colors * {
     in oklab,
     hsl(var(--white-hsl) / 0.8) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
-      var(--theme-base-color-amount, 0%)
-  );
-  --profile-gradient-profile-body-background-hover: hsl(
-    var(--black-hsl) / 0.08
-  );
-  --profile-gradient-profile-body-background-hover: color-mix(
-    in oklab,
-    hsl(var(--black-hsl) / 0.08) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
       var(--theme-base-color-amount, 0%)
   );
   --profile-gradient-role-pill-background: hsl(var(--white-hsl) / 0.5);
@@ -48339,11 +48269,44 @@ html.disable-forced-colors * {
     var(--primary-130) 100%,
     var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(var(--primary-400-hsl) / 0.16);
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--primary-400-hsl) / 0.16) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-border: hsl(var(--black-hsl) / 0.08);
+  --user-profile-border: color-mix(
+    in oklab,
+    hsl(var(--black-hsl) / 0.08) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+      var(--theme-base-color-amount, 0%)
+  );
   --user-profile-header-overflow-background: hsl(var(--white-hsl) / 0.5);
   --user-profile-header-overflow-background: color-mix(
     in oklab,
     hsl(var(--white-hsl) / 0.5) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-note-background-focus: var(--primary-200);
+  --user-profile-note-background-focus: color-mix(
+    in oklab,
+    var(--primary-200) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--white);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--white) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(var(--primary-400-hsl) / 0.16);
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--primary-400-hsl) / 0.16) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
       var(--theme-base-color-amount, 0%)
   );
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
@@ -49487,13 +49450,6 @@ html.disable-forced-colors * {
     var(--premium-nitro-pink-light) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
-  --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
-  --profile-gradient-message-input-border: color-mix(
-    in oklab,
-    hsl(var(--primary-500-hsl) / 0.48) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
-      var(--theme-base-color-amount, 0%)
-  );
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-note-background: color-mix(
     in oklab,
@@ -49515,15 +49471,6 @@ html.disable-forced-colors * {
     in oklab,
     hsl(var(--black-hsl) / 0.8) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
-      var(--theme-base-color-amount, 0%)
-  );
-  --profile-gradient-profile-body-background-hover: hsl(
-    var(--white-hsl) / 0.16
-  );
-  --profile-gradient-profile-body-background-hover: color-mix(
-    in oklab,
-    hsl(var(--white-hsl) / 0.16) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
       var(--theme-base-color-amount, 0%)
   );
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
@@ -50141,11 +50088,44 @@ html.disable-forced-colors * {
     var(--black) 100%,
     var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--plum-13-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-border: hsl(var(--plum-11-hsl) / 0.14);
+  --user-profile-border: color-mix(
+    in oklab,
+    hsl(var(--plum-11-hsl) / 0.14) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.14)
+      var(--theme-base-color-amount, 0%)
+  );
   --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --user-profile-header-overflow-background: color-mix(
     in oklab,
     hsl(var(--plum-20-hsl) / 0.5) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-note-background-focus: var(--plum-19);
+  --user-profile-note-background-focus: color-mix(
+    in oklab,
+    var(--plum-19) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--plum-23);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--plum-23) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--plum-13-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
       var(--theme-base-color-amount, 0%)
   );
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
@@ -51289,13 +51269,6 @@ html.disable-forced-colors * {
     var(--premium-nitro-pink-light) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
-  --profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
-  --profile-gradient-message-input-border: color-mix(
-    in oklab,
-    hsl(var(--primary-500-hsl) / 0.48) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
-      var(--theme-base-color-amount, 0%)
-  );
   --profile-gradient-note-background: hsl(var(--black-hsl) / 0.3);
   --profile-gradient-note-background: color-mix(
     in oklab,
@@ -51317,15 +51290,6 @@ html.disable-forced-colors * {
     in oklab,
     hsl(var(--black-hsl) / 0.8) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
-      var(--theme-base-color-amount, 0%)
-  );
-  --profile-gradient-profile-body-background-hover: hsl(
-    var(--white-hsl) / 0.16
-  );
-  --profile-gradient-profile-body-background-hover: color-mix(
-    in oklab,
-    hsl(var(--white-hsl) / 0.16) 100%,
-    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
       var(--theme-base-color-amount, 0%)
   );
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
@@ -51943,11 +51907,44 @@ html.disable-forced-colors * {
     var(--plum-20) 100%,
     var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--plum-13-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-border: hsl(var(--plum-11-hsl) / 0.12);
+  --user-profile-border: color-mix(
+    in oklab,
+    hsl(var(--plum-11-hsl) / 0.12) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
+      var(--theme-base-color-amount, 0%)
+  );
   --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
   --user-profile-header-overflow-background: color-mix(
     in oklab,
     hsl(var(--plum-20-hsl) / 0.5) 100%,
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-note-background-focus: var(--plum-16);
+  --user-profile-note-background-focus: color-mix(
+    in oklab,
+    var(--plum-16) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--plum-18);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--plum-18) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--plum-13-hsl) / 0.3) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
       var(--theme-base-color-amount, 0%)
   );
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
@@ -51964,6 +51961,14 @@ html.disable-forced-colors * {
     hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
       var(--theme-base-color-amount, 0%)
   );
+}
+.custom-user-profile-theme.theme-dark {
+  --user-profile-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
+  --user-profile-note-background-focus: hsl(var(--black-hsl) / 0.3);
+}
+.custom-user-profile-theme.theme-light {
+  --user-profile-border: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
+  --user-profile-note-background-focus: hsl(var(--white-hsl) / 0.3);
 }
 :root {
   --neutral-1: hsl(var(--neutral-1-hsl) / 1);
@@ -56119,6 +56124,30 @@ html.disable-forced-colors * {
     var(--yellow-new-22) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--neutral-60);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--neutral-60) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      var(--theme-base-color-amount, 0%)
+  );
   --app-background-frame: var(--neutral-78);
   --app-background-frame: color-mix(
     in oklab,
@@ -56966,6 +56995,30 @@ html.disable-forced-colors * {
     var(--yellow-new-54) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--neutral-1);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--neutral-1) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      var(--theme-base-color-amount, 0%)
+  );
   --app-background-frame: var(--neutral-7);
   --app-background-frame: color-mix(
     in oklab,
@@ -57804,6 +57857,30 @@ html.disable-forced-colors * {
     var(--yellow-new-38) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--neutral-83);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--neutral-83) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+      var(--theme-base-color-amount, 0%)
+  );
   --app-background-frame: var(--neutral-100);
   --app-background-frame: color-mix(
     in oklab,
@@ -58640,6 +58717,30 @@ html.disable-forced-colors * {
     var(--yellow-new-32) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
+  --user-profile-background-hover: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --user-profile-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background: var(--neutral-73);
+  --user-profile-overlay-background: color-mix(
+    in oklab,
+    var(--neutral-73) 100%,
+    var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+  );
+  --user-profile-overlay-background-hover: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --user-profile-overlay-background-hover: color-mix(
+    in oklab,
+    hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+    hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+      var(--theme-base-color-amount, 0%)
+  );
   --app-background-frame: var(--neutral-96);
   --app-background-frame: color-mix(
     in oklab,
@@ -58979,6 +59080,28 @@ html.disable-forced-colors * {
     var(--neutral-29) 100%,
     var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
   );
+}
+.visual-refresh .theme-light.custom-user-profile-theme,
+.visual-refresh.theme-light.custom-user-profile-theme {
+  --user-profile-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --user-profile-overlay-background: hsl(
+    var(--opacity-white-24-hsl) / 0.23921568627450981
+  );
+  --user-profile-overlay-background-hover: hsl(
+    var(--opacity-white-36-hsl) / 0.3607843137254902
+  );
+}
+.visual-refresh .theme-dark.custom-user-profile-theme,
+.visual-refresh.theme-dark.custom-user-profile-theme {
+  --user-profile-background-hover: hsl(
+    var(--opacity-white-4-hsl) / 0.0392156862745098
+  );
+  --user-profile-overlay-background: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --user-profile-overlay-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
 }
 .theme-dark {
   --shadow-border: 0 0 0 1px hsl(none 0% 100%/0.08);
@@ -60644,4 +60767,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7af222e24283a5d9.css.map*/
+/*# sourceMappingURL=12633.68724911e7a59a98.css.map*/
