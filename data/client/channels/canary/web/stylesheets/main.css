@@ -11957,33 +11957,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   border-radius: var(--radius-md);
   max-width: 480px;
   height: 315px;
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4);
-  border: 1px solid transparent;
-  background:
-    linear-gradient(
-        var(--background-secondary-alt),
-        var(--background-secondary-alt)
-      )
-      padding-box,
-    linear-gradient(145deg, #3e70dd, #b377f3) border-box;
-}
-.full-motion .animatedTopPerksCard__3add8 {
-  transition: border 0.3s ease;
-}
-.animatedTopPerksCard__3add8:hover {
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4) !important;
-  border: 1px solid transparent !important;
-  background:
-    linear-gradient(
-        var(--background-secondary-alt),
-        var(--background-secondary-alt)
-      )
-      padding-box,
-    linear-gradient(145deg, #3e70dd, #b377f3) border-box !important;
 }
 .imageGradientOverlay__3add8 {
   position: absolute;
@@ -12017,26 +11990,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .topPerksCardImage__3add8 {
   height: 128px;
-}
-.borderGlowOverlay__3add8 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--radius-md);
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0;
-  box-shadow:
-    inset 0 0 15px rgba(62, 112, 221, 0.4),
-    inset 0 0 20px rgba(179, 119, 243, 0.4);
-}
-.full-motion .borderGlowOverlay__3add8 {
-  transition: opacity 0.3s ease;
-}
-.topPerksCard__3add8:hover .borderGlowOverlay__3add8 {
-  opacity: 1;
 }
 .topPerksCardHeading__3add8 {
   margin-bottom: 4px;
@@ -12107,26 +12060,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   }
   to {
     left: 100%;
-  }
-}
-@keyframes fadeEffects__3add8 {
-  0% {
-    box-shadow:
-      inset 0 0 15px rgba(62, 112, 221, 0.4),
-      inset 0 0 20px rgba(179, 119, 243, 0.4);
-    border: 1px solid transparent;
-    background:
-      linear-gradient(
-          var(--background-secondary-alt),
-          var(--background-secondary-alt)
-        )
-        padding-box,
-      linear-gradient(145deg, #3e70dd, #b377f3) border-box;
-  }
-  to {
-    box-shadow: none;
-    border: 1px solid var(--background-secondary-alt);
-    background: var(--background-secondary-alt);
   }
 }
 .container_ef0711 {
@@ -60072,4 +60005,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3db800ddd9c1ce62.css.map*/
+/*# sourceMappingURL=12633.ce693684e60503ed.css.map*/
