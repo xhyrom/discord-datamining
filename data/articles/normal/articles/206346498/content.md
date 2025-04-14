@@ -174,7 +174,7 @@
 </p>
 <h4 id="h_01JQ70BAHWP08F1HQSR2WYMC6C" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Desktop: Right-click a user to find Copy User ID</span
+    >Desktop: Right-click a user to find Copy Server ID</span
   >
 </h4>
 <h2 id="h_01HRSTXPS5VT8H65S3RQ87VXTR">Mobile</h2>
@@ -193,7 +193,7 @@
 </p>
 <h4 id="h_01JQ70DVRP2ARM15N96084YDDC" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Mobile: Tap the server name to find Copy User ID</span
+    >Mobile: Tap the server name to find Copy Server ID</span
   >
 </h4>
 <h1 id="h_01HRSTXPS52TR10R4EPMPE8MGG">How to find the Message Link</h1>
