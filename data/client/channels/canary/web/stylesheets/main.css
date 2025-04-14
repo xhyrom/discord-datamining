@@ -17439,6 +17439,14 @@ span.clanTag__5d473 {
   right: 8px;
   top: 8px;
 }
+.labelRow__1fdc8 {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.labelText__1fdc8 {
+  line-height: 12px;
+}
 .wrapper_f7ecac {
   align-items: center;
   background-color: var(--background-primary);
@@ -32816,20 +32824,14 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .outer_ab8609:hover .addStatusIconColor_ab8609 {
   fill: var(--text-normal);
 }
-.labelContent_ab8609 {
-  align-items: center;
-  display: flex;
-  gap: 4px;
+.labelIconsRow_ab8609,
+.labelRow_ab8609 {
   margin-bottom: 2px;
-}
-.labelText_ab8609 {
-  line-height: 12px;
 }
 .labelIconsRow_ab8609 {
   align-items: center;
   display: flex;
   gap: 4px;
-  margin-bottom: 2px;
 }
 .section_bf424d {
   display: flex;
@@ -60705,4 +60707,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d3e669acfa52e5e3.css.map*/
+/*# sourceMappingURL=12633.127e8aa49f7bf1e2.css.map*/
