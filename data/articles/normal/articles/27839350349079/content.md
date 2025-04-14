@@ -28,6 +28,42 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Gameplay Reveal Trailer<br /></strong
+  ><strong>Quest Name: Marathon Reveal Quest<br /></strong
+  ><strong>Offer Details:</strong> Watch
+  <strong>Gameplay Reveal Trailer </strong>in Discord to receive a
+  <strong>Signal from Tau Ceti avatar decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users in the
+  <strong>United States</strong>, <strong>Great Britain</strong>,
+  <strong>France</strong>, <strong>Germany</strong>, and<strong> Japan</strong>
+  on desktop where <strong>Discord</strong> is available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Marathon Reveal Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>April 14, 2025 </strong>until<strong>
+    April 20, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 20, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Signal from Tau Ceti avatar decoration</strong> is a limited-time
+  avatar decoration and will only be yours as an avatar decoration until
+  <strong>June 20, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >avatar decoration for longer</a
+  >! <br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.<br
+  /></span>
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Marvel Rivals<br /></strong
   ><strong>Quest Name: Marvel Rivals S2 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
