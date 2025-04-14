@@ -17205,6 +17205,7 @@ span.clanTag__5d473 {
   padding: 20px;
 }
 .authedAppV2__50a54 {
+  background-color: var(--bg-surface-raised);
   border-radius: var(--radius-sm);
   margin-bottom: 16px;
   overflow: hidden;
@@ -17216,7 +17217,7 @@ span.clanTag__5d473 {
   grid-template-columns: auto minmax(0, 1fr) auto auto;
 }
 .headerV2__50a54 {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--bg-mod-subtle);
   padding: 16px;
 }
 .headerText__50a54 {
@@ -17233,12 +17234,11 @@ span.clanTag__5d473 {
   overflow: hidden;
 }
 .appDetailsContainer__50a54 {
-  background-color: var(--background-secondary);
   padding: 4px 16px;
 }
 .appDetailsContainer__50a54 .appDetailsSection__50a54 {
   background-color: inherit;
-  border-bottom: 1px solid var(--background-modifier-accent);
+  border-bottom: 1px solid var(--border-subtle);
   border-radius: 0;
   margin-bottom: 0;
   padding: 16px 0;
@@ -60707,4 +60707,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.127e8aa49f7bf1e2.css.map*/
+/*# sourceMappingURL=12633.f17523547b19f00f.css.map*/
