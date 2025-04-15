@@ -30094,14 +30094,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .highlighted__20a53 .name__20a53 {
   font-weight: var(--font-weight-semibold-1x-light-theme, 500);
 }
-.wrappedLayout__20a53 {
-  height: auto;
-  padding: 5px 8px;
-}
-.wrappedName__20a53 {
-  overflow: none;
-  white-space: normal;
-}
 .nameAndDecorators__20a53 {
   align-items: center;
   display: flex;
@@ -60726,4 +60718,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.00c434ddeeed2562.css.map*/
+/*# sourceMappingURL=12633.96a82f67c63da714.css.map*/
