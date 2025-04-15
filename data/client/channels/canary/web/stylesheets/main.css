@@ -13592,35 +13592,43 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .img__4bbc6.selected__4bbc6 {
   opacity: 1;
 }
-.plate__4bbc6 {
-  position: relative;
-}
-.theme-light .img__4bbc6 {
+.theme-light .img__4bbc6:not(.updated__4bbc6) {
   opacity: 0.8;
 }
-.theme-light .img__4bbc6.hover__4bbc6 {
+.theme-light .img__4bbc6.hover__4bbc6:not(.updated__4bbc6) {
   opacity: 0.9;
 }
-.theme-light .img__4bbc6.selected__4bbc6 {
+.theme-light .img__4bbc6.selected__4bbc6:not(.updated__4bbc6) {
   opacity: 1;
 }
-.theme-light .account__4bbc6 {
+.theme-light .img__4bbc6.account__4bbc6 {
   opacity: 0.4;
 }
-.theme-light .account__4bbc6.hover__4bbc6 {
+.theme-light .img__4bbc6.account__4bbc6.hover__4bbc6 {
   opacity: 0.4;
 }
-.account__4bbc6 {
+.img__4bbc6.updated__4bbc6,
+.img__4bbc6.updated__4bbc6.hover__4bbc6 {
+  opacity: 0.6;
+}
+.img__4bbc6.updated__4bbc6.selected__4bbc6 {
+  opacity: 0.9;
+}
+.img__4bbc6.updated__4bbc6.channel__4bbc6.hover__4bbc6 {
   opacity: 0.4;
 }
-.preview__4bbc6 {
+.img__4bbc6.updated__4bbc6.channel__4bbc6.selected__4bbc6 {
+  opacity: 0.9;
+}
+.img__4bbc6.account__4bbc6,
+.img__4bbc6.account__4bbc6.hover__4bbc6 {
+  opacity: 0.4;
+}
+.img__4bbc6.preview__4bbc6 {
   opacity: 0.8;
 }
-.preview__4bbc6.hover__4bbc6 {
+.img__4bbc6.preview__4bbc6.hover__4bbc6 {
   opacity: 1;
-}
-.account__4bbc6.hover__4bbc6 {
-  opacity: 0.4;
 }
 .videoContainer__4bbc6 {
   height: 100%;
@@ -60718,4 +60726,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0c402f70f1712f0c.css.map*/
+/*# sourceMappingURL=12633.00c434ddeeed2562.css.map*/
