@@ -43805,12 +43805,26 @@ img.thumbnail__0f2e8 {
   font-weight: 500;
 }
 .loadingContainer_f86e69 {
-  display: flex;
   height: 80vh;
-  justify-content: center;
   max-height: 442px;
   min-height: 300px;
   padding-top: var(--spacing-16);
+}
+.errorContainer_f86e69,
+.loadingContainer_f86e69 {
+  display: flex;
+  justify-content: center;
+}
+.errorContainer_f86e69 {
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+.errorText_f86e69 {
+  color: var(--text-muted);
+  max-width: 200px;
+  text-align: center;
 }
 [data-popout-root],
 html {
@@ -60707,4 +60721,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f17523547b19f00f.css.map*/
+/*# sourceMappingURL=12633.d335647c2e6493e7.css.map*/
