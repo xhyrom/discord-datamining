@@ -11431,7 +11431,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   width: var(--custom-activity-status-icon-size);
 }
 .text_c9d15c {
-  color: var(--text-muted);
   overflow: hidden;
 }
 .emoji_c9d15c {
@@ -13664,9 +13663,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .clickable__91a9d.container__91a9d:hover .avatar__91a9d {
   opacity: 1;
 }
-.active__91a9d.container__91a9d,
 .clickable__91a9d.container__91a9d:active,
-.highlighted__91a9d.container__91a9d {
+.highlighted__91a9d.container__91a9d,
+.selected__91a9d.container__91a9d {
   color: var(--interactive-active);
 }
 .layout__91a9d {
@@ -16036,18 +16035,15 @@ div.modalHeader_c28af8 {
 }
 .username__5d473 {
   display: flex;
+}
+.name__5d473,
+.username__5d473 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.activityText__5d473 {
-  color: var(--channels-default);
 }
 .name__5d473 {
   flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 span.clanTag__5d473 {
   margin-bottom: 1px;
@@ -16061,9 +16057,6 @@ span.clanTag__5d473 {
   box-sizing: border-box;
   height: auto;
   padding: var(--space-xxs) var(--space-16) var(--space-xxs) var(--space-xs);
-}
-.visual-refresh .activityText__5d473 {
-  color: var(--text-secondary);
 }
 .heading-sm\/normal__13cf1 {
   font-family: var(--font-display);
@@ -60718,4 +60711,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.96a82f67c63da714.css.map*/
+/*# sourceMappingURL=12633.788b762ad2a506cd.css.map*/
