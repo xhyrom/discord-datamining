@@ -637,7 +637,7 @@
         }
       ],
       "id": 7944061002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-15T11:53:38-04:00",
       "requisition_id": "R-100869",
       "title": "Engineering Manager - Database Infrastructure",
       "company_name": "Discord",
@@ -652,13 +652,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
