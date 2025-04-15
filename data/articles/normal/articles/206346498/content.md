@@ -161,7 +161,7 @@
 <h2 id="h_01HRSTXPS5N2Y7H57WNY7DJSC8">Desktop</h2>
 <p>1. Navigate to the server you want to copy the ID from.</p>
 <p>
-  2. Right-click on the server icon, and then tap on
+  2. Right-click the server icon, and then tap on
   <strong>Copy Server ID</strong>.
 </p>
 <p>3. Now you can paste this server ID number where needed.</p>
@@ -174,7 +174,7 @@
 </p>
 <h4 id="h_01JQ70BAHWP08F1HQSR2WYMC6C" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Desktop: Right-click a user to find Copy Server ID</span
+    >Desktop: Right-click the server icon to find Copy Server ID</span
   >
 </h4>
 <h2 id="h_01HRSTXPS5VT8H65S3RQ87VXTR">Mobile</h2>
