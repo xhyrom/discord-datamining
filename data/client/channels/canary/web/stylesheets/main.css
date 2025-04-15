@@ -30110,9 +30110,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 :where(.visual-refresh) .highlighted__20a53 {
   color: var(--text-primary);
 }
-:where(.visual-refresh) .highlighted__20a53 .subText__20a53 {
-  color: var(--text-secondary);
-}
 :where(.visual-refresh) .layout__20a53 {
   padding: 0;
 }
@@ -60711,4 +60708,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.788b762ad2a506cd.css.map*/
+/*# sourceMappingURL=12633.b1229d4f5ae9a890.css.map*/
