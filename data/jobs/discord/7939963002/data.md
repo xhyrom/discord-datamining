@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7939963002](https://discord.com/jobs/7939963002)
 
-**Updated At:** Mon, 14 Apr 2025 20:07:43 GMT
+**Updated At:** Tue, 15 Apr 2025 23:02:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.
@@ -48,7 +48,7 @@ Experience in negotiating and structuring standard and non-standard ad-buying ag
 Willingness to travel as 20-30% of job duties
 
 #LI-Remote
-The total annual target compensation range for this full-time position is $320k - $360k OTE + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The total annual target compensation range for this full-time position is $272k - $360k OTE + equity + benefits. Our compensation ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the OTE (base salary + target variable compensation) only, and do not include equity, or benefits.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
