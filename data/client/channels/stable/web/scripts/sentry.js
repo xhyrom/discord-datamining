@@ -4051,6 +4051,8 @@
             SCHEDULED_MESSAGE: (t) =>
               "/users/@me/scheduled-messages/".concat(t),
             HOLIDAY_REDEEM_PRIZE: "/holidays/redeem-prize",
+            APPLIED_BOOST_MODIFY_END_DATE: (t) =>
+              "/debug/applied-boosts/".concat(t, "/ends-at"),
           }),
           f = Object.freeze({
             INDEX: "/",
@@ -4422,6 +4424,7 @@
             VOICE: "Voice & Video",
             PRIVACY_AND_SAFETY: "Privacy & Safety",
             CONTENT_AND_SOCIAL: "Content & Social",
+            CONNECTED_GAMES: "Connected Games",
             DATA_AND_PRIVACY: "Data & Privacy",
             ACCOUNT_STANDING: "Account Standing",
             NOTIFICATIONS: "Notifications",
@@ -6741,7 +6744,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-14-8ebfee0cd94f6928eb1e7657638f741fbee42711-discord_web",
+              "2025-04-15-ed1362e34f591bfe13726b4cb312e0e7f2497ebf-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6807,8 +6810,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "389335"),
-            o.YA("builtAt", String("1744615117823"));
+            o.YA("buildNumber", "389893"),
+            o.YA("builtAt", String("1744701545607"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46477,4 +46480,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9df8db239132216b.js.map
+//# sourceMappingURL=sentry.9e7ad1fcd64f0de7.js.map
