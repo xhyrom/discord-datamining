@@ -13692,9 +13692,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .selected__91a9d .childContainer__91a9d {
   background-color: var(--background-modifier-selected);
 }
-.wrapperPlated__91a9d .childContainer__91a9d {
-  background-color: unset;
-}
 .avatar__91a9d {
   align-items: center;
   display: flex;
@@ -60721,4 +60718,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d335647c2e6493e7.css.map*/
+/*# sourceMappingURL=12633.0c402f70f1712f0c.css.map*/
