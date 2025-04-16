@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7628793002](https://discord.com/jobs/7628793002)
 
-**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
+**Updated At:** Wed, 16 Apr 2025 00:02:43 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is your place to talk. Whether you're part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, millions of people use Discord every day to create connections, hang out, and talk.
-As a Staff Product Designer at Discord, you’ll play a key leadership role in shaping the future of social gaming experiences. You’ll help define what design quality means within Discord, and push the boundaries of how players connect across platforms.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Staff Product Designer at Discord, you’ll play a key leadership role in shaping the future of social gaming experiences. You’ll help define what design quality means within Discord, and push the boundaries of how players connect across platforms.
 The Social Layer (Slayer) team is defining how games integrate with Discord and enabling developers—from AAA studios to indies—to bring Discord’s social features directly into their games, and bring content from their games onto Discord. As part of this team, you’ll collaborate with UXR, Product Managers, Engineers, and Data Scientists, while also partnering with industry leaders like Xbox and PlayStation. Using your expertise in UX, UI, and prototyping, you’ll craft intuitive, visually compelling integrations that create seamless social experiences for players.
 If you're interested in joining a passionate team of designers that are creating fun experiences for millions of people across the world, Discord is the place to be.
 NOTE: This role is located in our San Francisco office.&amp;nbsp;

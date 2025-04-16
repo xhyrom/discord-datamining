@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7929923002](https://discord.com/jobs/7929923002)
 
-**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
+**Updated At:** Wed, 16 Apr 2025 00:04:37 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is where anyone can hang out and play games with their friends. Every day, students, hikers, artists, and people of all types use Discord to chat, play games together, share amazing moments, and form new connections. Nitro is the best version of Discord and it’s full of features for people who love expressing themselves in fun ways. Our Revenue team is responsible for ensuring that Nitro is always delivering real value for people on Discord, no matter where they live or what community they belong to.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Nitro is the best version of Discord and it’s full of features for people who love expressing themselves in fun ways. Our Revenue team is responsible for ensuring that Nitro is always delivering real value for people on Discord, no matter where they live or what community they belong to.
 We are looking for a Product Manager to lead monetization growth efforts for Nitro. You will be responsible for creating a vision around how we ensure users understand the value of Nitro, then defining a strategy for how we can deliver that message. You will drive execution on a roadmap you create while scaling our growth engine for other teams to build on. Finally, you will partner both internally and externally to form creative solutions and build an impactful team in Discord’s core business and one of the highest-priority product areas.
 &amp;nbsp;
 What You'll Be Doing
