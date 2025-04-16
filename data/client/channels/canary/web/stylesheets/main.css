@@ -43813,6 +43813,11 @@ img.thumbnail__0f2e8 {
   max-width: 200px;
   text-align: center;
 }
+.previewLoadingSpinner_f86e69 {
+  background-color: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  position: absolute;
+}
 [data-popout-root],
 html {
   --brand-05a: hsla(var(--brand-500-hsl) / 0.05);
@@ -60708,4 +60713,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b1229d4f5ae9a890.css.map*/
+/*# sourceMappingURL=12633.b98ffa22b102c339.css.map*/
