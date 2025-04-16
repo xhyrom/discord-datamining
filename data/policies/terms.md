@@ -1576,23 +1576,6 @@
           >.
         </p>
       </div>
-      <div id="1" class="rich-guidlines-negative _1 w-richtext">
-        <h2>Who we are</h2>
-        <p>
-          We provide services that allow you to interact with other Discord
-          users (such as through direct messages and group direct messages) and
-          participate in large and small spaces (or “servers”). Our services may
-          also include access to certain software, features, and content,
-          including items that you can purchase from us or others. Additional
-          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
-          apply to those purchases.
-        </p>
-        <p>
-          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
-          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
-          195, 1118 BG Schiphol, Netherlands.
-        </p>
-      </div>
       <div id="2" class="rich-guidlines-negative w-richtext">
         <h2>
           Age requirements and responsibility of parents and legal guardians
@@ -2579,6 +2562,23 @@
           send you electronic communications related to our services. Where
           required, we’ll get your consent before sending you direct marketing,
           and we’ll make it easy for you to opt out.
+        </p>
+      </div>
+      <div id="1" class="rich-guidlines-negative _1 w-richtext">
+        <h2>Who we are</h2>
+        <p>
+          We provide services that allow you to interact with other Discord
+          users (such as through direct messages and group direct messages) and
+          participate in large and small spaces (or “servers”). Our services may
+          also include access to certain software, features, and content,
+          including items that you can purchase from us or others. Additional
+          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
+          apply to those purchases.
+        </p>
+        <p>
+          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
+          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
+          195, 1118 BG Schiphol, Netherlands.
         </p>
       </div>
     </div>
