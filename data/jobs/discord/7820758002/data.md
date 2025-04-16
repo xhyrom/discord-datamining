@@ -10,12 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7820758002](https://discord.com/jobs/7820758002)
 
-**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
+**Updated At:** Wed, 16 Apr 2025 17:52:16 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is California-based only.
-Discord is the place for all things gaming.&amp;nbsp; Discord is the place where players have their entire hangout experience with friends – from before, during, and after gaming sessions.&amp;nbsp; Discord is also the place where every major game publisher and studio maintains an official community.&amp;nbsp; And finally Discord is the place where the latest news, beta codes, and big gaming moments happen.&amp;nbsp;&amp;nbsp;
-We are looking for Account Executives to join as founding members of the sales team for our new Quests ads business line. In this role you work on the mobile gaming business at Discord and be influential in developing our ad product offering for this segment. We are seeking an individual who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
+We are looking for an Account Executive to join as a founding member of the sales team for our Quests ads business line. In this role you work on the mobile gaming business at Discord and be influential in developing our ad product offering for this segment. We are seeking an individual who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
 You will be working in a zero to 1 environment to build up and grow a new, and fast-growing business line at Discord.&amp;nbsp; You will harness your prior experience in advertising/media/marketing spaces and bring a combination of strategic business thinking, industry relationships, product insights, and an ability to build a significant, recurring book of business with clients.
 What you'll be doing
 
