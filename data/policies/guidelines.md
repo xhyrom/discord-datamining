@@ -1509,6 +1509,70 @@
         <div class="w-dyn-bind-empty"></div
       ></a>
       <div class="rich-guidlines-negative w-dyn-bind-empty w-richtext"></div>
+      <div
+        id="2"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="3"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="4"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="5"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="6"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="7"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="8"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="9"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="10"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="11"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="12"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="13"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="14"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="15"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="16"
+        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+      ></div>
+      <div
+        id="17"
+        class="rich-guidlines-negative w-condition-invisible w-dyn-bind-empty w-richtext"
+      ></div>
       <div id="1" class="rich-guidlines-negative _1 w-richtext">
         <p>
           We created Discord to be the best place to talk, hang out, and have
@@ -1988,70 +2052,6 @@
         </p>
         <p>‍</p>
       </div>
-      <div
-        id="2"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="3"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="4"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="5"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="6"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="7"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="8"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="9"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="10"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="11"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="12"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="13"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="14"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="15"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="16"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="17"
-        class="rich-guidlines-negative w-condition-invisible w-dyn-bind-empty w-richtext"
-      ></div>
     </div>
   </div>
   <div class="footer_new">
