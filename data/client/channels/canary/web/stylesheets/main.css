@@ -28647,7 +28647,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   display: flex;
   flex-direction: row;
   margin-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 5px;
   min-height: 48px;
   padding: 10px 20px;
   position: relative;
@@ -60749,4 +60749,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1acfe3c05b8d7075.css.map*/
+/*# sourceMappingURL=12633.8c3f65b71ba54455.css.map*/
