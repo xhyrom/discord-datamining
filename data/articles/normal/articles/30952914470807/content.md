@@ -636,7 +636,7 @@
         class=""
         style="width: 350.698px; text-align: left; vertical-align: top"
       >
-        Video stream timeout (sender)
+        Video stream timeout (Streamer)
       </td>
       <td
         id="Tw|w"
@@ -659,7 +659,7 @@
         class=""
         style="width: 350.698px; text-align: left; vertical-align: top"
       >
-        Video stream timeout (receiver)
+        Video stream timeout (Viewer)
       </td>
       <td
         id="Tw|w"
@@ -705,7 +705,7 @@
         class=""
         style="width: 350.698px; text-align: left; vertical-align: top"
       >
-        Video stream timeout (sender)
+        Video stream timeout (Streamer)
       </td>
       <td
         id="Tw|w"
@@ -728,7 +728,7 @@
         class=""
         style="width: 350.698px; text-align: left; vertical-align: top"
       >
-        Video stream timeout (receiver)
+        Video stream timeout (Viewer)
       </td>
       <td
         id="Tw|w"
