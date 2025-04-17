@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7939963002](https://discord.com/jobs/7939963002)
 
-**Updated At:** Wed, 16 Apr 2025 22:38:17 GMT
+**Updated At:** Thu, 17 Apr 2025 23:13:15 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is Los Angeles or NYC based only.
 We are looking for an Account Executive to join our Entertainment Advertising Team to help bring entertainment to Discord. We are seeking an individual who is passionate about entertainment, the entertainment industry, and helping entertainment brands connect with their most engaged audiences. This is a role where you will be working to grow our entertainment advertising business focused on movies, shows, and categories that align with Discord's platform and audience.&amp;nbsp;
 You will harness your prior experience in entertainment advertising/media/marketing spaces and bring a combination of strategic business thinking, industry relationships, product insights, and an ability to build a significant, recurring book of business with clients.
-What you'll be doing
+What you'll be doing:
 
 You will be the primary day-to-day contact with entertainment advertising partners,&amp;nbsp;responsible for identifying client's marketing needs and breaking new lines of business
 You will develop solutions/proposals for your clients that deliver value against those needs, lead pitching and presentation preparation, creating customized decks based on client's movies/shows
@@ -32,7 +32,7 @@ You will create and convey compelling sales presentations and proposals utilizin
 You will demonstrate expertise around entertainment marketing, media trends, audience engagement, and advertising opportunities within Discord
 You will submit weekly revenue narratives, and collaborate with Account Managers who will own campaign execution
 
-What you should have
+What you should have:
 
 6+ years of direct revenue driving experience in media buying, brand marketing, digital advertising, and ad sales with media and entertainment clients
 Strong knowledge of current and upcoming entertainment releases and industry trends
