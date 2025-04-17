@@ -89,8 +89,12 @@
   </span>
 </h3>
 <h1 id="h_01HGX7DJ33W4WY3FYVPRZ2CK02">
-  What are the levels and perks for Server Boosting?
+  What are the levels and perks for Server Boosting
 </h1>
+<div class="exp-box">
+  <strong>Note</strong>: Server Tags and Server Enhanced Role Colors are
+  currently an experiment only available to select servers.
+</div>
 <p>
   Here is how many Server Boosts are required for each level and an overview of
   the perks you can get.
