@@ -29550,50 +29550,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   height: 80px;
   width: 80px;
 }
-.externalProductWrapper__320c6 {
-  align-items: center;
-  display: flex;
-  height: 252px;
-  justify-content: center;
-  object-fit: contain;
-  width: 100%;
-}
-.orbProfileBadgeAsset__320c6 {
-  height: 120px;
-}
-.profileEffectContainer__0b5ea {
-  height: 52px;
-  position: relative;
-  width: 42px;
-}
-.profileEffect__0b5ea,
-.profileEffectBackground__0b5ea {
-  border-radius: var(--radius-xs);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-.profileEffect__0b5ea {
-  object-fit: cover;
-  object-position: top;
-}
-.avatarDecoration__0b5ea,
-.nameplateContainer__0b5ea {
-  height: 42px;
-  width: 42px;
-}
-.nameplateContainer__0b5ea {
-  position: relative;
-}
-.externalProductAsset__0b5ea {
-  height: 42px;
-}
-.collectiblePreview_a56a22 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
 .profileEffects__01370 {
   height: 100%;
   left: 0;
@@ -29645,6 +29601,50 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .avatar_a84142 {
   margin-top: 24px;
+}
+.externalProductWrapper__320c6 {
+  align-items: center;
+  display: flex;
+  height: 252px;
+  justify-content: center;
+  object-fit: contain;
+  width: 100%;
+}
+.orbProfileBadgeAsset__320c6 {
+  height: 120px;
+}
+.profileEffectContainer__0b5ea {
+  height: 52px;
+  position: relative;
+  width: 42px;
+}
+.profileEffect__0b5ea,
+.profileEffectBackground__0b5ea {
+  border-radius: var(--radius-xs);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.profileEffect__0b5ea {
+  object-fit: cover;
+  object-position: top;
+}
+.avatarDecoration__0b5ea,
+.nameplateContainer__0b5ea {
+  height: 42px;
+  width: 42px;
+}
+.nameplateContainer__0b5ea {
+  position: relative;
+}
+.externalProductAsset__0b5ea {
+  height: 42px;
+}
+.collectiblePreview_a56a22 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 .stepBody_b44961 {
   padding-top: 16px;
@@ -60765,4 +60765,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.665fb1ff815c5c6e.css.map*/
+/*# sourceMappingURL=12633.d3d17f4f171d7b6a.css.map*/
