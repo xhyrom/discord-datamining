@@ -92,7 +92,7 @@
   What are the levels and perks for Server Boosting
 </h1>
 <div class="exp-box">
-  <strong>Note</strong>: Server Tags and Server Enhanced Role Colors are
+  <strong>Note</strong>: Server Tags and Server Enhanced Role Styles are
   currently an experiment only available to select servers.
 </div>
 <p>
