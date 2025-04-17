@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.607",
+    "module_version": 1,
+    "package_sha256": "3acdfd7a794832f8f885fbd5dce818cb3cff9936b8a38163f2585938ba15632e",
+    "url": "https://canary.dl2.discordapp.net/distro/app/canary/win/x64/1.0.607/discord_notifications/1/full.distro"
+  },
+  "deltas": []
+}
