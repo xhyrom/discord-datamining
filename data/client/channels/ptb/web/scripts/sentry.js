@@ -5064,6 +5064,7 @@
           (r.SEARCH_V2_FILTERS_APPLIED = "search_v2_filters_applied"),
           (r.SEARCH_V2_TAB_SELECTED = "search_v2_tab_selected"),
           (r.SEARCH_V2_JUMP_TO_MESSAGE = "search_v2_jump_to_message"),
+          (r.SEARCH_V2_STARTED = "search_v2_started"),
           (r.GLOBAL_DISCOVERY_VIEWED = "global_discovery_viewed"),
           (r.GLOBAL_DISCOVERY_ENTRYPOINT_CLICKED =
             "global_discovery_entrypoint_clicked"),
@@ -5905,6 +5906,7 @@
           (r.COLLECTIBLES_TILE_IMPRESSION = "collectibles_tile_impression"),
           (r.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED =
             "collectibles_share_link_button_clicked"),
+          (r.COLLECTIBLES_SHOP_PERF_TRACKED = "collectibles_shop_perf_tracked"),
           (r.CONSUMABLE_HD_STREAMING_ENTRYPOINT =
             "consumable_hd_streaming_entrypoint"),
           (r.CONFETTI_POTION_TRIGGERED = "confetti_potion_triggered"),
@@ -6744,7 +6746,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-04-16-9b68b4852aad925e78996fe1390a561b524b2532-discord_web",
+              "2025-04-17-66084d22c043702722677568d3bda748e2c066e8-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6810,8 +6812,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "390505"),
-            o.YA("builtAt", String("1744787987432"));
+            o.YA("buildNumber", "391020"),
+            o.YA("builtAt", String("1744874348813"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46480,4 +46482,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.7e26ddc310f955d0.js.map
+//# sourceMappingURL=sentry.36995e19d0933744.js.map
