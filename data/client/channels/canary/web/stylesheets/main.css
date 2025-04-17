@@ -32075,17 +32075,23 @@ div.popoutCloseButton__1e3f8:hover {
   position: relative;
 }
 .avatar_ef4a91 {
-  margin-left: -2px;
   -webkit-mask: url(/assets/38fe464a6fea7d0e.svg);
   mask: url(/assets/38fe464a6fea7d0e.svg);
   -webkit-mask-size: 100%;
   mask-size: 100%;
   mask-type: alpha;
 }
-.avatar_ef4a91:first-child {
-  margin-left: 0;
+.avatar_ef4a91.size16_ef4a91 {
+  margin-right: -3px;
 }
-.avatar_ef4a91:last-child {
+.avatar_ef4a91.size20_ef4a91 {
+  margin-right: -5px;
+}
+.avatar_ef4a91.size24_ef4a91 {
+  margin-right: -6px;
+}
+.avatar_ef4a91.isLast_ef4a91 {
+  margin-right: 0;
   -webkit-mask: none;
   mask: none;
 }
@@ -32094,10 +32100,23 @@ div.popoutCloseButton__1e3f8:hover {
   background-color: var(--background-tertiary);
   border-radius: 16px;
   display: flex;
-  height: 24px;
   justify-content: center;
-  padding: 0 8px;
   width: auto;
+}
+.overflow_ef4a91.size16_ef4a91 {
+  height: 16px;
+  min-width: 16px;
+  padding: 0 4px;
+}
+.overflow_ef4a91.size20_ef4a91 {
+  height: 20px;
+  min-width: 20px;
+  padding: 0 6px;
+}
+.overflow_ef4a91.size24_ef4a91 {
+  height: 24px;
+  min-width: 24px;
+  padding: 0 8px;
 }
 .container_b9f75c {
   align-items: center;
@@ -35319,9 +35338,6 @@ img.thumbnail__0f2e8 {
 .primaryButton_af3b89,
 .secondaryButton_af3b89 {
   flex: 1;
-}
-.popoutStackedAvatar_af3b89 {
-  margin-left: -6px;
 }
 .popoutBlockedWarningIcon_af3b89 {
   margin-bottom: -2px;
@@ -60749,4 +60765,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8c3f65b71ba54455.css.map*/
+/*# sourceMappingURL=12633.665fb1ff815c5c6e.css.map*/
