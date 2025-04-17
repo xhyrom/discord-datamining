@@ -5962,6 +5962,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   gap: 16px;
   padding-top: 24px;
 }
+.applicationDetails__94ab2.noPadding__94ab2 {
+  padding: 0;
+}
 .entry__94ab2 {
   align-items: center;
   display: flex;
@@ -6016,6 +6019,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .scopes__29337:not(:last-child) {
   border-bottom: 1px solid var(--background-modifier-accent);
   padding-bottom: 24px;
+}
+.scopes__29337.noDivider__29337:not(:last-child) {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .scope__29337 {
   display: flex;
@@ -16058,6 +16065,10 @@ span.clanTag__5d473 {
   height: auto;
   padding: var(--space-xxs) var(--space-16) var(--space-xxs) var(--space-xs);
 }
+.visual-refresh .flatBottom__5d473 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .heading-sm\/normal__13cf1 {
   font-family: var(--font-display);
   font-size: 14px;
@@ -17248,6 +17259,19 @@ span.clanTag__5d473 {
   border-radius: 0;
   box-shadow: none;
 }
+.appDetailsContainer__50a54 .directMessagesSection__50a54 {
+  background-color: inherit;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+.appDetailsContainer__50a54 .directMessagesSection__50a54:active {
+  background-color: inherit;
+}
+.appDetailsContainer__50a54 .directMessagesSection__50a54:before {
+  border-radius: 0;
+  box-shadow: none;
+}
 .appDetailsSectionHeader__50a54 {
   align-items: center;
   cursor: pointer;
@@ -17344,6 +17368,10 @@ span.clanTag__5d473 {
 .dmSettingsHeader__50a54,
 .dmSettingsSwitch__50a54 {
   margin-bottom: 16px;
+}
+.dmSettingsSwitch__50a54 {
+  border-bottom: 1px solid var(--background-modifier-accent);
+  padding-bottom: 16px;
 }
 .dmSettingsMute__50a54 {
   align-items: center;
@@ -36418,9 +36446,17 @@ img.thumbnail__0f2e8 {
 .recaptcha__3d3b0 {
   height: 80px;
 }
+.contentWrapper__3d3b0 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 32px 48px;
+}
+.contentWrapper__3d3b0.minimalPadding__3d3b0 {
+  margin: 0;
+}
 .content__3d3b0 {
   border-radius: 8px;
-  margin: 0 32px 48px;
   padding: 32px;
   position: relative;
 }
@@ -36501,6 +36537,10 @@ img.thumbnail__0f2e8 {
   padding: 32px;
   text-align: center;
   width: 480px;
+}
+div.mobilePushContainer__3d3b0 {
+  margin: 0;
+  padding-top: 16px;
 }
 .errorCodeMessage__85414 {
   margin-top: 16px;
@@ -60765,4 +60805,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d3d17f4f171d7b6a.css.map*/
+/*# sourceMappingURL=12633.6fc572b3667f737f.css.map*/
