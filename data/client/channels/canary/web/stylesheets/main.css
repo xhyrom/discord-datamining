@@ -43924,12 +43924,9 @@ html.disable-forced-colors * {
   display: flex;
 }
 .fixed_c38106 {
-  position: fixed;
-}
-.fixed_c38106,
-.title_c38106 {
   left: 0;
-  right: 0;
+  position: fixed;
+  right: var(--devtools-sidebar-width);
   top: 0;
 }
 .title_c38106 {
@@ -43937,7 +43934,10 @@ html.disable-forced-colors * {
   bottom: 0;
   display: flex;
   justify-content: center;
+  left: 0;
   position: absolute;
+  right: 0;
+  top: 0;
 }
 .leading_c38106 {
   box-sizing: border-box;
@@ -60779,4 +60779,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.04581e4657ab40bf.css.map*/
+/*# sourceMappingURL=12633.9a1df4fa243f3446.css.map*/
