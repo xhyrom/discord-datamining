@@ -1504,6 +1504,50 @@
         ><div class="menu-numbers">17.</div>
         <div class="w-dyn-bind-empty"></div
       ></a>
+      <div id="1" class="rich-guidlines-negative _1 w-richtext">
+        <h2><strong>Welcome!</strong></h2>
+        <p>
+          This Privacy Policy explains how we collect, use, store, protect, and
+          share your personal information through our services. If you reside in
+          the European Economic Area (“EEA”) or United Kingdom, Discord
+          Netherlands BV is the “data controller” of your personal information
+          collected through the services (as defined in our
+          <a href="https://discord.com/terms">Terms of Service</a>). For
+          everyone else, Discord Inc. is the data controller. It’s important
+          that you read this entire policy, but here’s a summary to get you
+          started:
+        </p>
+        <ul role="list">
+          <li>
+            <strong>We care a lot about privacy</strong>. We are committed to
+            creating spaces where people can talk, hang out and have fun with
+            friends online. Respecting user privacy is a key part of
+            <a href="https://discord.com/safety-privacy">that mission</a>.
+          </li>
+          <li>
+            <strong>We don’t sell your personal information</strong>. Our
+            business is based on subscriptions and paid products, not from
+            selling your personal information to third parties.
+          </li>
+          <li>
+            <strong>We limit what information is required</strong>. We require
+            the information that enables us to create your account, provide and
+            maintain our services, meet our commitments to our users, and
+            satisfy our legal requirements. The rest is optional.
+          </li>
+          <li>
+            <strong>We care deeply about safety</strong>. Our dedicated Trust
+            and Safety team works hard to help keep our community safe. We also
+            use certain information to help us identify violations of our
+            Community Guidelines and prevent harmful content from being
+            distributed through the services.&nbsp;
+          </li>
+          <li>
+            <strong>We give you control</strong>. We give you the ability to
+            control your privacy on Discord.
+          </li>
+        </ul>
+      </div>
       <div class="rich-guidlines-negative w-dyn-bind-empty w-richtext"></div>
       <div id="2" class="rich-guidlines-negative w-richtext">
         <h2>
@@ -2353,50 +2397,6 @@
         id="17"
         class="rich-guidlines-negative w-condition-invisible w-dyn-bind-empty w-richtext"
       ></div>
-      <div id="1" class="rich-guidlines-negative _1 w-richtext">
-        <h2><strong>Welcome!</strong></h2>
-        <p>
-          This Privacy Policy explains how we collect, use, store, protect, and
-          share your personal information through our services. If you reside in
-          the European Economic Area (“EEA”) or United Kingdom, Discord
-          Netherlands BV is the “data controller” of your personal information
-          collected through the services (as defined in our
-          <a href="https://discord.com/terms">Terms of Service</a>). For
-          everyone else, Discord Inc. is the data controller. It’s important
-          that you read this entire policy, but here’s a summary to get you
-          started:
-        </p>
-        <ul role="list">
-          <li>
-            <strong>We care a lot about privacy</strong>. We are committed to
-            creating spaces where people can talk, hang out and have fun with
-            friends online. Respecting user privacy is a key part of
-            <a href="https://discord.com/safety-privacy">that mission</a>.
-          </li>
-          <li>
-            <strong>We don’t sell your personal information</strong>. Our
-            business is based on subscriptions and paid products, not from
-            selling your personal information to third parties.
-          </li>
-          <li>
-            <strong>We limit what information is required</strong>. We require
-            the information that enables us to create your account, provide and
-            maintain our services, meet our commitments to our users, and
-            satisfy our legal requirements. The rest is optional.
-          </li>
-          <li>
-            <strong>We care deeply about safety</strong>. Our dedicated Trust
-            and Safety team works hard to help keep our community safe. We also
-            use certain information to help us identify violations of our
-            Community Guidelines and prevent harmful content from being
-            distributed through the services.&nbsp;
-          </li>
-          <li>
-            <strong>We give you control</strong>. We give you the ability to
-            control your privacy on Discord.
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
   <div class="footer_new">
