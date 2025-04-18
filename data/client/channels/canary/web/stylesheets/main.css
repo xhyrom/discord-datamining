@@ -30085,10 +30085,11 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .nameplatePreview_fdeafc {
   border-radius: var(--radius-sm);
+  height: 100%;
   position: relative;
 }
 .overlayContainer_fdeafc {
-  height: 40px;
+  height: 42px;
   position: relative;
   width: 100%;
 }
@@ -30244,21 +30245,11 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .nameplate__78e61 {
   background-color: var(--background-floating);
   border-radius: var(--radius-sm);
-  height: 40px;
   left: 50%;
   position: absolute;
   top: 55%;
   transform: translate(-50%, -50%) scale(1.2);
   width: 224px;
-}
-.visual-refresh.density-cozy .nameplate__78e61 {
-  height: 48px;
-}
-.visual-refresh.density-default .nameplate__78e61 {
-  height: 42px;
-}
-.visual-refresh.density-compact .overlayContainer__78e61 {
-  height: 38px;
 }
 .decorationBanner__78e61 {
   background-position: 50% 50%;
@@ -60784,4 +60775,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a53696b077428c4d.css.map*/
+/*# sourceMappingURL=12633.26a96bac4ad76f27.css.map*/
