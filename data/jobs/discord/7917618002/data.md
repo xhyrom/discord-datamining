@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7917618002](https://discord.com/jobs/7917618002)
 
-**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
+**Updated At:** Fri, 18 Apr 2025 20:50:29 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Help our team members succeed every day as our IT Support Associate, where the results of your critical analysis will directly enhance the work experience of colleagues across the company. Your impact will be felt as you develop, enhance, and document critical IT processes including comprehensive user lifecycle management, systems access for various user classifications, and asset management across over a dozen different countries. This role will report to our IT Operations Manager.
