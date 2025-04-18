@@ -28,6 +28,33 @@
   >
 </h1>
 <p>
+  <strong>Quest Video:</strong> <strong>HIM OFFICIAL TEASER </strong
+  ><br /><strong>Quest Name:</strong> <strong>HIM OFFICIAL TEASER Quest</strong
+  ><br /><strong>Offer Details:</strong> Watch the
+  <strong>HIM OFFICIAL TEASER</strong> in Discord to earn 1 day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro</a
+  >! Learn more about Nitro Credits
+  <a
+    href="https://support.discord.com/hc/en-us/articles/26362805097623"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.<br /><strong>Who is Eligible:</strong> Available to users in the United
+  States on desktop where Discord is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>HIM OFFICIAL TEASER</strong> Quest can be accepted on Discord desktop
+  app or browser client from <strong>April 18, 2025</strong> until
+  <strong>April 24, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>May 24, 2025 (11:59 UTC)</strong>.<br /><strong>Other Terms:</strong>
+  Limit of one reward redemption per account.<strong><br /></strong>
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Whispers of the Witch Tree<br /></strong
   ><strong>Quest Name: Mandragora Quest<br /></strong
   ><strong>Offer Details:</strong> Watch the
