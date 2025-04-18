@@ -4,13 +4,13 @@
 
 **Location:** Sao Paulo or Brasilia, Brazil
 
-**Id:** 7940734002 <br/>
-**Internal Job Id:** 6138133002 <br/>
-**Requisition Id:** R-100862 <br/>
+**Id:** 7964314002 <br/>
+**Internal Job Id:** 6149082002 <br/>
+**Requisition Id:** R-100884 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7940734002](https://discord.com/jobs/7940734002)
+**Discord Jobs:** [https://discord.com/jobs/7964314002](https://discord.com/jobs/7964314002)
 
-**Updated At:** Fri, 11 Apr 2025 23:05:22 GMT
+**Updated At:** Fri, 18 Apr 2025 20:18:58 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Discord’s Head of Public Policy for Brazil and Latin America, you will be responsible for building trust and finding common ground with policymakers, regulators, and other stakeholders in Brasilia and national capitals across Latin America.&amp;nbsp; This role can be resident in Sao Paulo or Brasilia and will report to the Head of Americas Public Policy.
