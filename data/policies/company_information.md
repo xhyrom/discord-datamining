@@ -1829,11 +1829,6 @@
                 href="https://discord.com/application-directory"
                 class="link-footer top-new-link"
                 >App Directory</a
-              ><a
-                data-track="app directory"
-                href="https://discord.com/mobile"
-                class="link-footer top-new-link"
-                >Mobile Experience</a
               >
             </nav>
           </div>
@@ -1938,11 +1933,6 @@
                 href="https://discord.com/developers"
                 class="link-footer top-new-link"
                 >Developers</a
-              ><a
-                data-track="Build"
-                href="https://discord.com/gaming"
-                class="link-footer top-new-link"
-                >Gaming</a
               ><a
                 data-track="Build"
                 href="https://discord.com/quests"
