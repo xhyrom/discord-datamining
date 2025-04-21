@@ -14488,7 +14488,6 @@ div.modalHeader_c28af8 {
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: row;
-  gap: 10px;
   height: 20px;
   justify-content: center;
 }
@@ -14512,6 +14511,9 @@ div.modalHeader_c28af8 {
     var(--premium-tier-2-pink-for-gradients) 95.57%
   );
   border: 1px solid #b473f5;
+}
+.freeTrialPill_ac86f6.freeTrialPillGap_ac86f6 {
+  gap: 10px;
 }
 .freeTrialPillText_ac86f6 {
   cursor: default;
@@ -60778,4 +60780,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.27bf40680adeb7fa.css.map*/
+/*# sourceMappingURL=12633.42860f2fe706141e.css.map*/
