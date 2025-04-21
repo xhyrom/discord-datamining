@@ -11639,6 +11639,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   gap: 4px;
   width: 100%;
 }
+.gameIconWrapper__80da8 {
+  cursor: pointer;
+}
 .gameIcon__80da8 {
   flex-shrink: 0;
   height: 26px;
@@ -60775,4 +60778,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0e579a128489e0da.css.map*/
+/*# sourceMappingURL=12633.27bf40680adeb7fa.css.map*/
