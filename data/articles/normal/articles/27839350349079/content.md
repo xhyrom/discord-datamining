@@ -28,6 +28,46 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Delta Force<br /></strong
+  ><strong>Quest Name: Global Launch Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Delta Force</strong> to receive a
+  <strong>Hackclaw avatar decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players in the <strong>United</strong> <strong>States</strong>,
+  <strong>Canada</strong>, <strong>Great</strong> <strong>Britain</strong>,
+  <strong>France</strong>, <strong>Germany</strong>, <strong>Spain</strong>,
+  <strong>Japan</strong>, <strong>Korea</strong>, <strong>Poland</strong>,
+  and<strong> Italy</strong> on desktop where both <strong>Discord</strong> and
+  <strong>Delta Force</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
+  <strong>Global Launch Quest</strong> can be accepted on Discord from
+  <strong>April 21, 2025 </strong>until
+  <strong>April 27, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>May 27, 2025 (0:00 UTC</strong>). <br />The
+  <strong>Hackclaw avatar decoration</strong> is a limited-time avatar
+  decoration and will only be yours as an avatar decoration until
+  <strong>June 27, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this avatar decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >avatar decoration for longer</span
+    ></a
+  >! <br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video:</strong> <strong>HIM OFFICIAL TEASER </strong
   ><br /><strong>Quest Name:</strong> <strong>HIM OFFICIAL TEASER Quest</strong
   ><br /><strong>Offer Details:</strong> Watch the
