@@ -32,7 +32,7 @@
         }
       ],
       "id": 7939963002,
-      "updated_at": "2025-04-17T19:13:15-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100858",
       "title": "Account Executive - Media & Entertainment",
       "company_name": "Discord",
@@ -95,7 +95,7 @@
         }
       ],
       "id": 7820758002,
-      "updated_at": "2025-04-16T13:52:16-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100772",
       "title": "Account Executive - Mobile Gaming",
       "company_name": "Discord",
@@ -158,7 +158,7 @@
         }
       ],
       "id": 7950420002,
-      "updated_at": "2025-04-16T13:59:14-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100871",
       "title": "Account Manager - Crossplatform Gaming",
       "company_name": "Discord",
@@ -220,7 +220,7 @@
         }
       ],
       "id": 7818572002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100770",
       "title": "Bilingual Threat Operations Specialist (West Coast)",
       "company_name": "Discord",
@@ -283,7 +283,7 @@
         }
       ],
       "id": 7898236002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100827",
       "title": "Customer Experience Associate, Account Security",
       "company_name": "Discord",
@@ -339,7 +339,7 @@
         }
       ],
       "id": 7950306002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100731",
       "title": "Director of Engineering, Data Platform",
       "company_name": "Discord",
@@ -390,12 +390,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Science & Machine Learning",
+          "value": "Machine Learning",
           "value_type": "single_select"
         }
       ],
       "id": 7807928002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100758",
       "title": "Director of Machine Learning, Safety",
       "company_name": "Discord",
@@ -450,7 +450,7 @@
         }
       ],
       "id": 7855982002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100814",
       "title": "Engineering Manager",
       "company_name": "Discord",
@@ -513,7 +513,7 @@
         }
       ],
       "id": 7953291002,
-      "updated_at": "2025-04-14T13:18:01-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100872",
       "title": "Engineering Manager, Consumer Revenue ",
       "company_name": "Discord",
@@ -576,7 +576,7 @@
         }
       ],
       "id": 7944061002,
-      "updated_at": "2025-04-15T11:53:38-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100869",
       "title": "Engineering Manager - Database Infrastructure",
       "company_name": "Discord",
@@ -632,7 +632,7 @@
         }
       ],
       "id": 7810816002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100762",
       "title": "Engineering Manager, Financial Platform",
       "company_name": "Discord",
@@ -695,7 +695,7 @@
         }
       ],
       "id": 7912325002,
-      "updated_at": "2025-04-21T15:33:10-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100837",
       "title": "Floating Administrative Business Partner",
       "company_name": "Discord",
@@ -757,7 +757,7 @@
         }
       ],
       "id": 7964314002,
-      "updated_at": "2025-04-18T16:18:58-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100884",
       "title": "Head of Public Policy, Latin America",
       "company_name": "Discord",
@@ -812,7 +812,7 @@
         }
       ],
       "id": 7917618002,
-      "updated_at": "2025-04-18T16:50:29-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100847",
       "title": "IT Support Associate, ChromeOS",
       "company_name": "Discord",
@@ -874,7 +874,7 @@
         }
       ],
       "id": 7898977002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100828",
       "title": "Lifecycle Marketing Lead",
       "company_name": "Discord",
@@ -937,7 +937,7 @@
         }
       ],
       "id": 7928060002,
-      "updated_at": "2025-04-18T11:08:43-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100854",
       "title": "Product Manager, Experimentation",
       "company_name": "Discord",
@@ -1000,7 +1000,7 @@
         }
       ],
       "id": 7917031002,
-      "updated_at": "2025-04-15T15:43:20-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100843",
       "title": "Program Manager, Marketing",
       "company_name": "Discord",
@@ -1062,7 +1062,7 @@
         }
       ],
       "id": 7871254002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100821",
       "title": "Public Policy Advisor",
       "company_name": "Discord",
@@ -1124,7 +1124,7 @@
         }
       ],
       "id": 7868606002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100818",
       "title": "Senior Adaptive Data Analyst",
       "company_name": "Discord",
@@ -1186,7 +1186,7 @@
         }
       ],
       "id": 7963308002,
-      "updated_at": "2025-04-18T17:03:21-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100877",
       "title": "Senior Counsel, Intellectual Property",
       "company_name": "Discord",
@@ -1243,12 +1243,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Platform & Data Engineering",
+          "value": "Data Science & Data Engineering",
           "value_type": "single_select"
         }
       ],
       "id": 7899729002,
-      "updated_at": "2025-04-11T19:09:40-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100829",
       "title": "Senior Data Engineer",
       "company_name": "Discord",
@@ -1304,7 +1304,7 @@
         }
       ],
       "id": 7687712002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100693",
       "title": "Senior Developer Advocate, Web Games",
       "company_name": "Discord",
@@ -1366,7 +1366,7 @@
         }
       ],
       "id": 7943999002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100868",
       "title": "Senior Engineering Manager, Core Product",
       "company_name": "Discord",
@@ -1428,7 +1428,7 @@
         }
       ],
       "id": 7893760002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100823",
       "title": "Senior Manager, Procurement",
       "company_name": "Discord",
@@ -1490,7 +1490,7 @@
         }
       ],
       "id": 7957326002,
-      "updated_at": "2025-04-17T17:40:52-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100875",
       "title": "Senior Regulatory Counsel",
       "company_name": "Discord",
@@ -1546,7 +1546,7 @@
         }
       ],
       "id": 7946170002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100870",
       "title": "Senior Software Engineer, Design Systems ",
       "company_name": "Discord",
@@ -1609,7 +1609,7 @@
         }
       ],
       "id": 7803984002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100753",
       "title": "Senior Staff Engineer, Performance & Quality",
       "company_name": "Discord",
@@ -1672,7 +1672,7 @@
         }
       ],
       "id": 7808149002,
-      "updated_at": "2025-04-21T14:01:19-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100761",
       "title": "Senior Staff Software Engineer, Consumer Revenue",
       "company_name": "Discord",
@@ -1734,7 +1734,7 @@
         }
       ],
       "id": 7824127002,
-      "updated_at": "2025-04-18T15:31:07-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100775",
       "title": "Senior Stock Plan Administrator",
       "company_name": "Discord",
@@ -1797,7 +1797,7 @@
         }
       ],
       "id": 7835247002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100790",
       "title": "Senior Technical Program Manager, Cost & Efficiency",
       "company_name": "Discord",
@@ -1860,7 +1860,7 @@
         }
       ],
       "id": 7628793002,
-      "updated_at": "2025-04-15T20:02:43-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100660",
       "title": "Staff Product Designer, Player Experience",
       "company_name": "Discord",
@@ -1916,7 +1916,7 @@
         }
       ],
       "id": 7870527002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100819",
       "title": "Staff Software Engineer, Ads Infrastructure",
       "company_name": "Discord",
@@ -1979,7 +1979,7 @@
         }
       ],
       "id": 7953473002,
-      "updated_at": "2025-04-11T19:08:17-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100874",
       "title": "Staff Software Engineer, Audio/Video Infrastructure",
       "company_name": "Discord",
@@ -2042,7 +2042,7 @@
         }
       ],
       "id": 7855519002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100813",
       "title": "Staff Software Engineer, Consumer Revenue ",
       "company_name": "Discord",
@@ -2105,7 +2105,7 @@
         }
       ],
       "id": 7845336002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100799",
       "title": "Staff Software Engineer, Media Infrastructure",
       "company_name": "Discord",
@@ -2168,7 +2168,7 @@
         }
       ],
       "id": 7662238002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100672",
       "title": "Staff Software Engineer - Notifications Platform",
       "company_name": "Discord",
@@ -2231,7 +2231,7 @@
         }
       ],
       "id": 7849838002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100804",
       "title": "Staff Software Engineer, Platform Security",
       "company_name": "Discord",
@@ -2293,7 +2293,7 @@
         }
       ],
       "id": 7854326002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100812",
       "title": "Staff Software Engineer – UI/UX & Animations",
       "company_name": "Discord",
@@ -2356,7 +2356,7 @@
         }
       ],
       "id": 7865139002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100817",
       "title": "Staff Technical Program Manager - AI Programs",
       "company_name": "Discord",
@@ -2418,7 +2418,7 @@
         }
       ],
       "id": 7940788002,
-      "updated_at": "2025-04-11T19:05:22-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100863",
       "title": "Threat Operations Specialist, Child Safety",
       "company_name": "Discord",
@@ -2474,7 +2474,7 @@
         }
       ],
       "id": 7942212002,
-      "updated_at": "2025-04-15T17:36:36-04:00",
+      "updated_at": "2025-04-21T19:17:39-04:00",
       "requisition_id": "R-100866",
       "title": "Website Manager",
       "company_name": "Discord",

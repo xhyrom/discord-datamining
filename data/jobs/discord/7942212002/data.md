@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7942212002](https://discord.com/jobs/7942212002)
 
-**Updated At:** Tue, 15 Apr 2025 21:36:36 GMT
+**Updated At:** Mon, 21 Apr 2025 23:17:39 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced Web Manager to support our Core Platform Marketing team composed of web managers, content writers, project managers, and external agencies. You'll be contributing to our site strategy execution &amp;amp; operation, and managing project deliverables/OKRs through the entirety of their digital lifecycle. As a Web Manager you'll help oversee the delivery of all discord.com marketing projects from ideation through execution while keeping the health of our digital channels top of mind. This role would report to the Head of Web &amp;amp; Editorial.
