@@ -25023,6 +25023,53 @@ html:not(.visual-refresh) .root_e5f3a9 {
   padding-bottom: 16px;
   padding-top: 16px;
 }
+.paymentRestrictionBannerContainer__52623 {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  min-height: 48px;
+  padding: 10px 20px;
+  position: relative;
+}
+.theme-light .paymentRestrictionBannerContainer__52623 {
+  background: linear-gradient(90deg, #475cc6 0, #6045c1);
+}
+.theme-dark .paymentRestrictionBannerContainer__52623 {
+  background: linear-gradient(90deg, #475cc6 0, #6045c1);
+}
+.paymentRestrictionBannerBackgroundImage__52623 {
+  background-image: url(/assets/bb502dc7cfcbbacc.svg);
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 78%;
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+.appsIconContainer__52623 {
+  height: 28px;
+  padding-right: 12px;
+  width: 28px;
+}
+.theme-light .icon__52623 {
+  display: none;
+}
+.theme-light .iconDark__52623 {
+  filter: drop-shadow(0 1px 2px rgb(0 0 0/0.4));
+  height: 28px;
+  width: 28px;
+}
+.theme-dark .icon__52623 {
+  filter: drop-shadow(0 1px 2px rgb(0 0 0/0.4));
+  height: 28px;
+  width: 28px;
+}
+.theme-dark .iconDark__52623 {
+  display: none;
+}
 .adyen-checkout__spinner__wrapper {
   align-items: center;
   display: flex;
@@ -38432,6 +38479,9 @@ div.mobilePushContainer__3d3b0 {
 .disabled__3f413 * {
   cursor: not-allowed;
   opacity: 0.6;
+}
+.optionDisabled__3f413 {
+  opacity: 0.5;
 }
 .searchInput__3f413.multi__3f413.hidden__3f413 {
   opacity: 0;
@@ -60780,4 +60830,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.42860f2fe706141e.css.map*/
+/*# sourceMappingURL=12633.cf760ef7f92f7f9e.css.map*/
