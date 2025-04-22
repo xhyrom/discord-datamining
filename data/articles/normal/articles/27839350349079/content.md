@@ -28,6 +28,25 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Overwatch 2 <br /></strong
+  ><strong>Quest Name: New Way to Play Quest <br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Overwatch 2</strong> to receive
+  <strong>5 Loot Boxes</strong>.<br /><strong>Who is Eligible: </strong
+  >Available to players in the <strong>United States</strong> who are 18+ on
+  desktop and console where Discord and <strong>Overwatch 2</strong> are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>New Way to Play Quest</strong> can be accepted on Discord
+  <strong>April 22, 2025 </strong>until<strong>
+    April 28, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>May 12, 2025 (0:00 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Delta Force<br /></strong
   ><strong>Quest Name: Global Launch Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
