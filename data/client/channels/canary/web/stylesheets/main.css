@@ -30750,15 +30750,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   height: 4px;
   width: 4px;
 }
-.clanTagContainer__63ed3 {
-  border: 1px solid var(--user-profile-border);
-  border-radius: var(--radius-sm);
-  box-sizing: border-box;
-  height: 22px;
-}
-.clanTag__63ed3 {
-  margin: 0 auto;
-}
 .viewFullBio_f5f93a {
   margin-top: 8px;
 }
@@ -60862,4 +60853,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.65ef6c6f4b8b6e29.css.map*/
+/*# sourceMappingURL=12633.4f003c6defd7b798.css.map*/
