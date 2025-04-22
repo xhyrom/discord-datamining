@@ -334,12 +334,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": "Data Platform & Data Engineering",
+          "value": "Data Platform",
           "value_type": "single_select"
         }
       ],
       "id": 7950306002,
-      "updated_at": "2025-04-21T19:17:39-04:00",
+      "updated_at": "2025-04-21T19:32:15-04:00",
       "requisition_id": "R-100731",
       "title": "Director of Engineering, Data Platform",
       "company_name": "Discord",
@@ -1248,7 +1248,7 @@
         }
       ],
       "id": 7899729002,
-      "updated_at": "2025-04-21T19:17:39-04:00",
+      "updated_at": "2025-04-21T19:32:45-04:00",
       "requisition_id": "R-100829",
       "title": "Senior Data Engineer",
       "company_name": "Discord",
