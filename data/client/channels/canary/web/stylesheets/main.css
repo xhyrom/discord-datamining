@@ -30643,7 +30643,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   overflow: hidden;
   word-break: break-word;
 }
-.nickname__63ed3 .user-profile-popout,
+.user-profile-popout .nickname__63ed3,
 .user-profile-sidebar .nickname__63ed3 {
   max-height: 72px;
 }
@@ -30655,7 +30655,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   display: flex;
   gap: 2px;
 }
-.nicknameIcons__63ed3 .user-profile-popout,
+.user-profile-popout .nicknameIcons__63ed3,
 .user-profile-sidebar .nicknameIcons__63ed3 {
   padding-top: 4px;
 }
@@ -30676,7 +30676,7 @@ html:not(.visual-refresh) .root_e5f3a9 {
   column-gap: 9.33px;
   flex-wrap: wrap;
 }
-.tags__63ed3 .user-profile-popout,
+.user-profile-popout .tags__63ed3,
 .user-profile-sidebar .tags__63ed3 {
   row-gap: 2px;
 }
@@ -60823,4 +60823,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.97edd901f5177e2f.css.map*/
+/*# sourceMappingURL=12633.d2d4059533d2767a.css.map*/
