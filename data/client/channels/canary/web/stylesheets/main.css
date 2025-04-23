@@ -11539,21 +11539,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
     opacity: 1;
   }
 }
-.fadeOut__4bbc6 {
-  animation: fadeOut__4bbc6 0.15s forwards;
-}
-@keyframes fadeOut__4bbc6 {
-  0% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .img__4bbc6 {
   height: 100%;
   object-position: right;
-  opacity: 0.5;
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -11562,38 +11550,17 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
     transform 0.3s ease;
   width: auto;
 }
+.img__4bbc6,
 .img__4bbc6.hover__4bbc6 {
-  opacity: 0.8;
-}
-.img__4bbc6.selected__4bbc6 {
-  opacity: 1;
-}
-.theme-light .img__4bbc6:not(.updated__4bbc6) {
-  opacity: 0.8;
-}
-.theme-light .img__4bbc6.hover__4bbc6:not(.updated__4bbc6) {
-  opacity: 0.9;
-}
-.theme-light .img__4bbc6.selected__4bbc6:not(.updated__4bbc6) {
-  opacity: 1;
-}
-.theme-light .img__4bbc6.account__4bbc6 {
-  opacity: 0.4;
-}
-.theme-light .img__4bbc6.account__4bbc6.hover__4bbc6 {
-  opacity: 0.4;
-}
-.img__4bbc6.updated__4bbc6,
-.img__4bbc6.updated__4bbc6.hover__4bbc6 {
   opacity: 0.6;
 }
-.img__4bbc6.updated__4bbc6.selected__4bbc6 {
+.img__4bbc6.selected__4bbc6 {
   opacity: 0.9;
 }
-.img__4bbc6.updated__4bbc6.channel__4bbc6.hover__4bbc6 {
+.img__4bbc6.channel__4bbc6.hover__4bbc6 {
   opacity: 0.4;
 }
-.img__4bbc6.updated__4bbc6.channel__4bbc6.selected__4bbc6 {
+.img__4bbc6.channel__4bbc6.selected__4bbc6 {
   opacity: 0.9;
 }
 .img__4bbc6.account__4bbc6,
@@ -60856,4 +60823,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8777a4b8cf60a62b.css.map*/
+/*# sourceMappingURL=12633.97edd901f5177e2f.css.map*/
