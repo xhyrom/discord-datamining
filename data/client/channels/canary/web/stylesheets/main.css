@@ -18796,6 +18796,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   font-size: 12px;
   font-weight: 600;
   justify-content: flex-start;
+  min-width: 0;
   transition: color 0.125s;
 }
 .visual-refresh .wrapper__14245 {
@@ -18821,6 +18822,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .headerIcon__14245 + .headerLabel__14245 {
   margin-left: 8px;
+}
+.headerCollapseIcon__14245 {
+  flex-shrink: 0;
 }
 .full-motion .headerCollapseIcon__14245 {
   transition: transform 0.1s;
@@ -60822,4 +60826,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.60b8ac47e7615e7b.css.map*/
+/*# sourceMappingURL=12633.e865beca5b167c5d.css.map*/
