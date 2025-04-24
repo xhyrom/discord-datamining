@@ -84,12 +84,13 @@
   </ul>
 </div>
 <h1 id="h_01J0KH7RTGYND0G6C0645SK6K1">How to add a friend</h1>
-<h3 id="h_01J0KH7RTGAVD5S74SBSWVT909">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >The maximum number of friends you can have on an account is 1,000. This
-    includes any pending friend requests you have sent or received.</span
-  >
-</h3>
+<div class="info-box">
+  The maximum number of friends you can have on an account is 1,000 (accepted
+  friends only). You can have up to 1,500 pending incoming friend requests and
+  1,000 pending outgoing friend requests. If the incoming request limit is
+  exceeded, the oldest pending requests will automatically be removed until
+  you're back to 1,000.
+</div>
 <p>
   Adding a friend on Discord is as easy as 1-2-3! Let’s go over the various ways
   to send friend requests and some common errors you might encounter. 
