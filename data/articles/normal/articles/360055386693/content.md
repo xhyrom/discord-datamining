@@ -12,28 +12,18 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360055386693#h_01HA2DNCG30AG0D9E1RPGACNFH"
+    <a href="#h_01HA2DNCG30AG0D9E1RPGACNFH"
       >How do I Purchase A Subscription on Android?</a
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360055386693#h_01HA2DNCG3V7W5XFJAC0SVWPXN"
-      >How do I Change my Subscription?</a
-    >
+    <a href="#h_01HA2DNCG3V7W5XFJAC0SVWPXN">How do I Change my Subscription?</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360055386693#h_01HA2DNCG3AM6N49ENCBCJA7RP"
-      >How do I Cancel my Subscription?</a
-    >
+    <a href="#h_01HA2DNCG3AM6N49ENCBCJA7RP">How do I Cancel my Subscription?</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360055386693#h_01HA2DNCG397HGC2BFAHY2GFSJ"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HA2DNCG397HGC2BFAHY2GFSJ">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01HA2DNCG30AG0D9E1RPGACNFH">
