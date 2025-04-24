@@ -29647,12 +29647,18 @@ html:not(.visual-refresh) .root_e5f3a9 {
   margin-bottom: 16px;
   margin-top: 16px;
 }
-.subscriptionCostRow_b44961 {
-  align-items: center;
+.invoiceRow_b44961 {
   color: var(--header-primary);
+}
+.invoiceDiscountRow_b44961,
+.invoiceRow_b44961 {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.invoiceDiscountRow_b44961 {
+  color: var(--text-positive);
 }
 .invoiceSpinner_b44961 {
   height: 23px;
@@ -60826,4 +60832,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e865beca5b167c5d.css.map*/
+/*# sourceMappingURL=12633.6fe8a7b0089fad50.css.map*/
