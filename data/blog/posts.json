@@ -2592,5 +2592,16 @@
     "pubDate": "Wed, 23 Apr 2025 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png"
+  },
+  {
+    "id": "how-discord-indexes-trillions-of-messages",
+    "body": "",
+    "title": "How Discord Indexes Trillions of Messages",
+    "link": "https://discord.com/blog/how-discord-indexes-trillions-of-messages",
+    "guid": "https://discord.com/blog/how-discord-indexes-trillions-of-messages",
+    "description": "Learn how Discord scaled its search infrastructure to index trillions of messages and unlock new features.",
+    "pubDate": "Thu, 24 Apr 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png"
   }
 ]
