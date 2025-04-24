@@ -1,0 +1,9 @@
+{
+  "full": {
+    "host_version": "1.0.1139",
+    "module_version": 1,
+    "package_sha256": "4cb18b2e6625d723bd97fe49f5664e7b19a42a2b7a1c7dd7ee581732f3a3d8ca",
+    "url": "https://ptb.dl2.discordapp.net/distro/app/ptb/win/x64/1.0.1139/discord_notifications/1/full.distro"
+  },
+  "deltas": []
+}
