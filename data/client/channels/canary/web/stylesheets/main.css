@@ -38304,6 +38304,9 @@ div.mobilePushContainer__3d3b0 {
   position: relative;
   z-index: 1;
 }
+.theme-light .username_e5de78 {
+  filter: brightness(75%);
+}
 .convenienceGradient_e5de78:after {
   background: inherit;
   -webkit-background-clip: text;
@@ -60883,4 +60886,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9b1c348410c27db8.css.map*/
+/*# sourceMappingURL=12633.b1e6be7a89a97c0f.css.map*/
