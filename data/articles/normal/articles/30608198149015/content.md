@@ -236,7 +236,7 @@
 <p>
   A: Whenever the wallpaper changes, you'll receive a system notification in the
   direct message. Simply press the <strong>Hide Wallpaper</strong> button on the
-  right side of this message to hide the wallpaper.
+  right side of the system message to hide the wallpaper.
 </p>
 <p><strong>Q: Can I prevent others from changing my wallpaper?</strong></p>
 <p>
