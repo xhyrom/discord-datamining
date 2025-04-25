@@ -235,8 +235,9 @@
 <p><strong>Q: How can I hide a DM wallpaper?</strong></p>
 <p>
   A: Whenever the wallpaper changes, you'll receive a system notification in the
-  direct message. Simply press the <strong>Hide Wallpaper</strong> button on the
-  right side of the system message to hide the wallpaper.
+  direct message. The only method to hide a DM wallpaper is to press the
+  <strong>Hide Wallpaper</strong> button on the right side of the system message
+  to hide the wallpaper.
 </p>
 <p><strong>Q: Can I prevent others from changing my wallpaper?</strong></p>
 <p>
