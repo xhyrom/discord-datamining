@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7939963002](https://discord.com/jobs/7939963002)
 
-**Updated At:** Mon, 28 Apr 2025 20:20:33 GMT
+**Updated At:** Mon, 28 Apr 2025 21:13:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is Los Angeles or NYC based only.
@@ -26,6 +26,7 @@ Prospecting and sourcing new marketing opportunities with entertainment studios,
 Building &amp;amp; deepening relationships with key entertainment brands and their media agencies
 Negotiating &amp;amp; closing opportunities
 Helping clients achieve business and marketing goals via Discord's solutions
+
 
 You will deploy and execute effective and repeatable sales motions. You will apply an account planning process to prioritize accounts, grow revenue, educate clients, lead strategic client conversations, and navigate complex relationships
 You will create and convey compelling sales presentations and proposals utilizing internal and external data, become an expert in Discord solutions and adapt recommendations to suit varying entertainment client needs, and&amp;nbsp;consult with clients to advise them on their strategic marketing and media plans and how Discord's entertainment-specific solutions contribute to their plans

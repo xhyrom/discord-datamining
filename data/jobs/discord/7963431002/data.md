@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963431002](https://discord.com/jobs/7963431002)
 
-**Updated At:** Mon, 28 Apr 2025 20:20:33 GMT
+**Updated At:** Mon, 28 Apr 2025 20:28:44 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our work on Core Product focuses on improving and simplifying the foundations of the Discord experience at large. This could be streamlining how users customize their settings, to the way they express themselves over text, voice, and video. This position would begin on our “Diamond” team, which is focused on our existing foundations of the app. Instead of usually focusing on net-new features, this position will be focused on taking our more antiquated and heavily used surfaces and updating/refocusing them on our most key user needs. This could encapsulate anything from upgrading our voice messages to incorporate faster speeds and transcriptions, or revisiting our media viewers across platforms, to even redesigning our entire Settings platform.
