@@ -32742,7 +32742,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .customStatusLabelToolbar_ab8609 {
   background-color: var(--custom-status-bubble-background-color);
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--user-profile-border);
   box-shadow: var(--shadow-low);
 }
 .section_bf424d {
@@ -60797,4 +60797,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.54727fdc639920d1.css.map*/
+/*# sourceMappingURL=12633.87505ad999083bed.css.map*/
