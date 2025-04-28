@@ -2,7 +2,7 @@
 
 ## Product Designer, Core Product
 
-**Location:** San Francisco, CA and/or Remote (U.S.)
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 7963456002 <br/>
 **Internal Job Id:** 6148754002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963456002](https://discord.com/jobs/7963456002)
 
-**Updated At:** Mon, 28 Apr 2025 20:28:44 GMT
+**Updated At:** Mon, 28 Apr 2025 21:54:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on Core Product is to improve both the quality and depth of Discord’s core product value - which is to make Discord the best place to hang out online and play games with friends. Millions of people use Discord every day to find belonging, create connections, and talk… and this is most notably through our Voice &amp;amp; Video experience.

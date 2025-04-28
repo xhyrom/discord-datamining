@@ -982,7 +982,7 @@
       "education": "education_optional",
       "internal_job_id": 6148754002,
       "location": {
-        "name": "San Francisco, CA and/or Remote (U.S.)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -999,7 +999,7 @@
         }
       ],
       "id": 7963456002,
-      "updated_at": "2025-04-28T16:28:44-04:00",
+      "updated_at": "2025-04-28T17:54:51-04:00",
       "requisition_id": "R-100881",
       "title": "Product Designer, Core Product",
       "company_name": "Discord",
@@ -1788,7 +1788,7 @@
       "education": "education_optional",
       "internal_job_id": 6148741002,
       "location": {
-        "name": "San Francisco, CA and/or Remote (U.S.)"
+        "name": "San Francisco, CA or Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1805,7 +1805,7 @@
         }
       ],
       "id": 7963431002,
-      "updated_at": "2025-04-28T16:28:44-04:00",
+      "updated_at": "2025-04-28T17:55:09-04:00",
       "requisition_id": "R-100880",
       "title": "Senior Product Designer, Core Product",
       "company_name": "Discord",
@@ -2237,7 +2237,7 @@
         }
       ],
       "id": 7972402002,
-      "updated_at": "2025-04-28T16:28:44-04:00",
+      "updated_at": "2025-04-28T17:41:36-04:00",
       "requisition_id": "R-100893",
       "title": "Software Engineer, Player Engagement",
       "company_name": "Discord",
