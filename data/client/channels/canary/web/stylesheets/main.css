@@ -32902,7 +32902,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   margin-bottom: 2px;
 }
 .labelToolbar_ab8609 {
-  bottom: -26px;
+  bottom: -30px;
   height: unset;
   opacity: 0;
   pointer-events: none;
@@ -61017,4 +61017,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3cd6d38ee3977c1a.css.map*/
+/*# sourceMappingURL=12633.341c069c4b4ddecb.css.map*/
