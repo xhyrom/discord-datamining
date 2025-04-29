@@ -218,11 +218,61 @@
   >
 </h4>
 <p>
-  Fine-tune your app's appearance using the sliders for<strong>
-    Chat Font Scaling</strong
-  >, <strong>Space Between Message Groups</strong>, and
-  <strong>Zoom Level</strong>.
+  Fine-tune your app's appearance using the sliders to adjust the following:
 </p>
+<ul>
+  <li>
+    <strong>Zoom Level: </strong>Adjusting zoom changes the size of all Discord
+    elements, including text. The Discord desktop app offers a slider control,
+    while browsers use their built-in zoom function. Use Ctrl/Cmd + plus (+) to
+    zoom in or minus (-) to zoom out.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31746435181719"
+    width="499"
+    height="329"
+  />
+</p>
+<h4 id="h_01JT16BF5CS2C0R0R6YSGDWJQJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Decreasing Zoom Level</span>
+</h4>
+<ul>
+  <li>
+    <strong>Chat Font Scaling: </strong>This setting adjusts only chat text size
+    while keeping other elements unchanged. Note that the zoom level will
+    amplify whatever font size you choose here.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31746455730199"
+    width="513"
+    height="339"
+  />
+</p>
+<h4 id="h_01JT16CPDWXANV295NREQ74YKG" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Example of Increasing Chat Font Scaling</span>
+</h4>
+<ul>
+  <li>
+    <strong>Message Group Spacing: </strong>Increase the space between chat
+    messages to make conversations easier to read.
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31746455731607"
+    width="521"
+    height="343"
+  />
+</p>
+<h4 id="h_01JT16DK8N70XJB5E32V07J585" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of Decreasing Message Group Spacing</span
+  >
+</h4>
 <div class="info-box">
   <strong>NOTE</strong>: These steps may appear slightly different on mobile.
 </div>
