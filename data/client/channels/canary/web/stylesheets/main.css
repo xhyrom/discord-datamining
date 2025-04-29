@@ -38231,9 +38231,11 @@ div.mobilePushContainer__3d3b0 {
   opacity: 0.7;
   z-index: 0;
 }
-.full-motion .gradientAlwaysAnimate_e5de78 {
+.full-motion .animateGradient_e5de78 {
   animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
 }
+.full-motion.app-focused:not(.hardware-acceleration-disabled)
+  .animateGradient_e5de78,
 .full-motion.app-focused:not(.hardware-acceleration-disabled)
   .gradientUsernameAnimation_e5de78:hover {
   animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
@@ -60797,4 +60799,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.87505ad999083bed.css.map*/
+/*# sourceMappingURL=12633.e0fd6e1624ccf321.css.map*/
