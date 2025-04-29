@@ -149,7 +149,7 @@
 <div class="tip-box">
   <strong>Note:</strong> If you’re upgrading your subscription you will have to
   pay a prorated price for the difference. If you’re downgrading your
-  subscription, it will not change nor will you be charged the new upgraded
+  subscription, it will not change nor will you be charged the new downgraded
   price point until your subscription renews.
 </div>
 <p>
