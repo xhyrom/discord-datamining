@@ -84,6 +84,34 @@
 </p>
 <p> </p>
 <p>
+  <strong>Quest Game: Mission: Impossible Puzzle Activity<br /></strong
+  ><strong>Quest Name: Mission: Impossible Puzzle Quest<br /></strong
+  ><strong>Offer Details:</strong> Solve the first puzzle in the
+  <strong>Mission: Impossible Puzzle Activity</strong> to win 1 day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro</a
+  >! <br /><strong>Who is Eligible: </strong>Available to players in the
+  <strong>United States</strong> on desktop where <strong>Discord</strong> and
+  <strong>Mission: Impossible Puzzle Activity </strong>are available. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Mission: Impossible Puzzle Quest</strong> can be accepted on
+  Discord <strong>April 28, 2025 </strong>until<strong>
+    May 5, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 5, 2025 (0:00 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Overwatch 2 <br /></strong
   ><strong>Quest Name: New Way to Play Quest <br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of

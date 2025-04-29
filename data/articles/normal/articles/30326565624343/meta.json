@@ -20,19 +20,19 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "account",
-    "security",
-    "face",
     "answer-bot",
-    "age",
-    "verification",
-    "feature",
+    "security",
     "age verification",
     "k-ID",
-    "scan",
+    "age-restricted",
+    "face",
     "ID",
+    "age",
     "gap",
+    "verification",
     "k-id",
-    "age-restricted"
+    "account",
+    "scan",
+    "feature"
   ]
 }
