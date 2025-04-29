@@ -13421,11 +13421,8 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   max-width: 268px;
-  overflow: hidden;
   padding: 4px 8px;
-  text-overflow: ellipsis;
   transition: border-color 0.2s ease;
-  white-space: nowrap;
 }
 .trait_d452e4:hover {
   border-color: var(--border-strong);
@@ -13434,7 +13431,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   height: 16px;
   width: 16px;
 }
-.traitLabel_d452e4 {
+.ellipsize_d452e4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -29474,11 +29471,45 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .externalProductAsset__0b5ea {
   height: 42px;
 }
-.collectiblePreview_a56a22 {
+.invoiceTable__25766 {
+  margin-bottom: 16px;
+}
+.invoiceRow__25766 {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px;
+  line-height: 20px;
+}
+.invoiceRow__25766:not(:last-child) {
+  margin-bottom: 8px;
+}
+.invoiceTagColumn__25766 {
+  flex: 1;
+}
+.invoiceDescriptionColumn__25766 {
+  flex: 5;
+}
+.invoiceRegularText__25766 {
+  color: var(--header-primary);
+}
+.invoiceDiscountText__25766 {
+  color: var(--text-positive);
+}
+.invoiceDiscountTag__25766 {
+  background-color: var(--green-360);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+}
+.totalRow__25766 {
+  font-weight: 700;
 }
 .stepBody_b44961 {
   padding-top: 16px;
@@ -29486,28 +29517,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .visual-refresh .stepBody_b44961 {
   padding-top: var(--space-8);
 }
-.invoice_b44961 {
-  margin-bottom: 16px;
-}
 .paymentSourceWrapper_b44961 {
   margin: 16px 0;
-}
-.currencyWrapper_b44961 {
-  margin-bottom: 16px;
-  margin-top: 16px;
-}
-.invoiceRow_b44961 {
-  color: var(--header-primary);
-}
-.invoiceDiscountRow_b44961,
-.invoiceRow_b44961 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.invoiceDiscountRow_b44961 {
-  color: var(--text-positive);
 }
 .invoiceSpinner_b44961 {
   height: 23px;
@@ -29526,10 +29537,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .skuHeadingText_b44961 {
   align-self: center;
-}
-.giftMainAnimation_b44961 {
-  margin-bottom: 24px;
-  max-width: 325px;
 }
 .back_e125f1 {
   margin-right: auto;
@@ -60904,4 +60911,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.68f2b77a3417b347.css.map*/
+/*# sourceMappingURL=12633.9c0d6c45e7149c99.css.map*/
