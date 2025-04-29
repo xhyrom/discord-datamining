@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Audio/Video Infrastructure
 
-**Location:** San Francisco, CA/Bay Area
+**Location:** San Francisco, CA or Bay Area
 
 **Id:** 7953473002 <br/>
 **Internal Job Id:** 6144014002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7953473002](https://discord.com/jobs/7953473002)
 
-**Updated At:** Mon, 28 Apr 2025 20:28:44 GMT
+**Updated At:** Tue, 29 Apr 2025 17:56:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an engineer excited about building the software that powers our realtime Audio &amp;amp; Video infrastructure. The Audio &amp;amp; Video Infrastructure team builds and maintain our WebRTC software and scales the system that powers it for all our users. Your role will have a significant impact on the quality of experience for all Discord users utilizing these features. This opportunity calls for an engineer ready to tackle challenging problems, drive improvements, and contribute to the technology that connects millions of people globally.
