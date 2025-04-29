@@ -11746,7 +11746,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .body__86ab2 {
   flex-direction: column;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 8px;
   overflow-wrap: anywhere;
   padding: 0 16px;
   text-align: flex-start;
@@ -60904,4 +60904,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8ff97fbb0bee36e0.css.map*/
+/*# sourceMappingURL=12633.68f2b77a3417b347.css.map*/
