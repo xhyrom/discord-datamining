@@ -23,16 +23,16 @@
     "01J3NCWMGR03XN71256WH95176"
   ],
   "label_names": [
-    "profile",
-    "badge",
-    "answer-bot",
-    "badges",
-    "subscription",
     "nitro",
+    "badge",
     "tab",
     "membership",
+    "subscription",
+    "badges",
+    "perk",
     "progress",
+    "profile",
     "evolving",
-    "perk"
+    "answer-bot"
   ]
 }
