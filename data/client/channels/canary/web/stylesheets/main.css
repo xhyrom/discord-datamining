@@ -29404,6 +29404,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
   top: 0;
   width: 100%;
 }
+.user-profile-modal-v2 .inner__01370 {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
 .innerNoRadius__01370 {
   border-radius: 0;
 }
@@ -60914,4 +60917,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.273fac4ebe681305.css.map*/
+/*# sourceMappingURL=12633.94be44ba08bad594.css.map*/

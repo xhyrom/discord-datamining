@@ -3994,6 +3994,8 @@
               "/quests/".concat(t, "/preview/dismissibility"),
             QUESTS_PREVIEW_COMPLETE: (t) =>
               "/quests/".concat(t, "/preview/complete"),
+            QUESTS_RESET_RECENT_QUEST_COMPLETIONS:
+              "/quests/reset-recent-quest-completions",
             QUEST_FETCH_QUEST_TO_DELIVER: (t, e, a) =>
               "/quests/decision?placement="
                 .concat(t)
@@ -4513,6 +4515,8 @@
             HIGHLIGHT_NOTIFICATIONS: "Highlight notification settings",
             QUESTS: "Quests",
             QUEST_PREVIEW_TOOL: "Quest Preview Tool",
+            QUEST_MINOR_REWARD_CAPPING_CONFIG:
+              "Quest Minor Reward Capping Config",
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
             WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool",
@@ -6722,7 +6726,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-36b19b125af0f2ee5af6ab6a6e8683eb76a81685",
+            release: "discord_web-371a5d7d7b9d3ae0efff92922f7676ebe15d841f",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6788,8 +6792,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "395363"),
-            o.YA("builtAt", String("1746035429445"));
+            o.YA("buildNumber", "395386"),
+            o.YA("builtAt", String("1746036697854"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46458,4 +46462,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.6411ad1a940ea719.js.map
+//# sourceMappingURL=sentry.78989ceb44979977.js.map
