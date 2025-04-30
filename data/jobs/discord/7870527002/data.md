@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7870527002](https://discord.com/jobs/7870527002)
 
-**Updated At:** Mon, 28 Apr 2025 20:28:44 GMT
+**Updated At:** Wed, 30 Apr 2025 22:12:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Ads Delivery team at Discord is entrusted with the exciting challenge of determining the most effective ads to display to users, blending distributed systems with mathematical optimization and real-time infrastructure. As Discord pushes forward with developing its ads platform, the team is pivotal in driving this initiative towards becoming a significant revenue stream. With a focus on scalability, the team is building systems that scale towards the platform’s future, as well as creating an auction-based ads marketplace to maximize ad placement efficiency through market dynamics.

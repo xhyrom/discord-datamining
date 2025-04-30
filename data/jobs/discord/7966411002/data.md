@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Audio/Video
 
-**Location:** San Francisco, CA
+**Location:** San Francisco, CA or Bay Area
 
 **Id:** 7966411002 <br/>
 **Internal Job Id:** 6150734002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7966411002](https://discord.com/jobs/7966411002)
 
-**Updated At:** Mon, 28 Apr 2025 20:28:44 GMT
+**Updated At:** Wed, 30 Apr 2025 22:12:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Join our journey to create the best cross-platform application for messaging and real-time interactions! The Audio &amp;amp; Video engineering team at Discord owns the technology and end-to-end experience of audio/video across desktop and mobile. The team’s mission is to give our users an outstanding voice, video, and client experience.
@@ -54,6 +54,5 @@ education_optional
 - Core Tech Engineering
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
