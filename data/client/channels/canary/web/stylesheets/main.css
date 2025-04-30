@@ -35691,8 +35691,10 @@ img.thumbnail__0f2e8 {
   will-change: height;
 }
 .firstCardContainer__84832 {
-  margin-bottom: 24px;
   position: relative;
+}
+.firstCardContainer__84832.hasShowMoreButton__84832 {
+  margin-bottom: 24px;
 }
 .firstCardContainer__84832 .card__84832 {
   -webkit-backdrop-filter: blur(16px);
@@ -35758,9 +35760,6 @@ img.thumbnail__0f2e8 {
   transition:
     transform 0.2s ease-in-out,
     opacity 0.1s ease-in-out;
-}
-.secondCardContainer__84832 {
-  margin-top: -24px;
 }
 .remainingCardContainer__84832 {
   margin-left: 8px;
@@ -60915,4 +60914,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.eb69974b1e6dac38.css.map*/
+/*# sourceMappingURL=12633.273fac4ebe681305.css.map*/
