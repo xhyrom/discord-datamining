@@ -60752,10 +60752,13 @@ code {
       fixed 0 0 / cover,
     var(--custom-theme-background) fixed 0 0 / cover;
 }
-.disable-adaptive-theme,
-[data-disable-adaptive-theme="true"] {
+.disable-adaptive-theme {
   --theme-base-color-amount: 0% !important;
   --theme-text-color-amount: 0% !important;
+}
+.reduce-adaptive-theme {
+  --theme-base-color-amount: 20% !important;
+  --theme-text-color-amount: 20% !important;
 }
 .visual-refresh.custom-theme-background {
   --custom-app-border-frame-base: color-mix(
@@ -60917,4 +60920,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.94be44ba08bad594.css.map*/
+/*# sourceMappingURL=12633.584fd354a76edb3e.css.map*/
