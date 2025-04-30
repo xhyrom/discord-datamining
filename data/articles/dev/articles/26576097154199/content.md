@@ -7,15 +7,10 @@
 </p>
 <p>
   <a href="#h_01J8JESC989C99FYAYBXPYZ05Q"
-    >When to Keep your Activity Unverified</a
+    >When to Keep Your Activity Unverified</a
   >
 </p>
-<p><a href="#h_01J8JESC98H586ZCZJN1T6YN77">When to Verify your Activity</a></p>
-<p>
-  <a href="#h_01J8JESC98NQPAGDEGJYTDNWVD"
-    >How to Change the Public/Private Settings</a
-  >
-</p>
+<p><a href="#h_01J8JESC98H586ZCZJN1T6YN77">When to Verify Your Activity</a></p>
 <h1 id="h_01J8JESC983NH01G412Q0672KZ">Introduction</h1>
 <p>
   Discord offers two distinct settings for Activities: Verified and Unverified.
@@ -52,7 +47,7 @@
 <ul>
   <li>Only visible to you, your development team, and app testers</li>
   <li>Not discoverable by the general Discord community</li>
-  <li>Limited to servers with less than 25 members</li>
+  <li>Limited to servers with fewer than 25 members</li>
   <li>Great for testing and development</li>
 </ul>
 <p>
@@ -60,12 +55,12 @@
   open to all Discord users, while Unverified Activities are restricted to
   developers and testers.
 </p>
-<h1 id="h_01J8JESC989C99FYAYBXPYZ05Q">When to Keep your Activity Unverified</h1>
+<h1 id="h_01J8JESC989C99FYAYBXPYZ05Q">When to Keep Your Activity Unverified</h1>
 <p>
-  While you are developing and testing your Activity, keeping your Activity
-  unverified is the best option as they are only playable by the developers on
-  the team and app testers who are explicitly invited to test them. They are
-  also only able to be launched in servers with less than 25 members.
+  While you are developing and testing your Activity, keeping it unverified is
+  the best option. It is only playable by the team's developers and app testers
+  who are explicitly invited to test it. It can also only be launched in servers
+  with less than 25 members.
 </p>
 <h4 id="h_01J8JH7WCPJEP7KX505A3N1DMW" class="callout">
   <span
@@ -109,33 +104,31 @@
   an unverified Activity. Meanwhile, maintain a separate verified "live"
   Activity for your stable build.
 </p>
-<h1 id="h_01J8JESC98H586ZCZJN1T6YN77">When to Verify your Activity</h1>
+<h1 id="h_01J8JESC98H586ZCZJN1T6YN77">When to Verify Your Activity</h1>
 <p>
-  When you are ready to release your Activity to the world, this will open up
-  the doors to discoverability and monetization. But first, verification is a
-  necessary step to enable both <strong>discovery</strong> and
+  When you are ready to release your Activity to the world, this will open the
+  doors to discoverability and monetization. But first, verification is
+  necessary to enable <strong>discovery</strong> and
   <strong>monetization</strong> features for your Activity.
 </p>
 <h2 id="h_01J8JESC987FWKEFYHVTEKHP97"><strong>Verification</strong></h2>
 <p class="callout">
-  Once your application is verified, you will <strong>not</strong> be able to
-  turn off the public setting in the Developer Portal. For development and
-  iteration, we suggest having a unverified Activity.
+  For development and iteration, we suggest having an unverified Activity.
 </p>
 <p>
-  To learn about how to get your Activity verified, please see the
+  To learn about how to get your Activity verified, please take a look at the
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified"
     target="_blank"
     rel="noopener noreferrer"
     >How Do I Get My App Verified</a
   >
-  article
+  article.
 </p>
 <h2 id="h_01J8JESC98218H31J9FDZ01J0F"><strong>Discoverability</strong></h2>
 <p>
-  There are currently 3 surfaces where people can discover your Activity once
-  it’s verified and discovery has been enabled.
+  There are currently three surfaces where people can discover your Activity
+  once it’s verified and discovery has been enabled.
 </p>
 <ul>
   <li>
@@ -164,14 +157,13 @@
   </li>
 </ul>
 <p>
-  To learn more about these surfaces and how users can find and launch your
-  Activity, please see
+  Please see
   <a
-    href="https://support-dev.discord.com/hc/en-us/articles/21204493235991"
-    target="_blank"
-    rel="noopener noreferrer"
+    href="https://support-dev.discord.com/hc/en-us/articles/21204493235991-How-Can-Users-Discover-and-Play-My-Activity"
     >this article</a
-  >.
+  >
+  to learn more about these surfaces and how users can find and launch your
+  Activity.
 </p>
 <h4 id="h_01J8JH6Y24GVCJ1WMRZSYKYN5K" class="callout">
   <span
@@ -202,7 +194,7 @@
     "
     >⚠️ </span
   >Note that after enabling discovery for your app, it can take up to 30 hours
-  for your Activity to show up in the search bar.
+  for your Activity to appear in the search bar.
 </h4>
 <h2 id="h_01J8JESC98PKW0YZRF0TAQ38AD"><strong>Monetization</strong></h2>
 <p>
@@ -215,7 +207,7 @@
   >!
 </p>
 <p>
-  To learn about the eligibility criteria and how to monetize your application
+  To learn about the eligibility criteria and how to monetize your application,
   check out
   <a
     href="https://support-dev.discord.com/hc/en-us/articles/17297949965079-How-Do-I-Monetize-My-App"
@@ -224,41 +216,7 @@
     >this article</a
   >.
 </p>
-<p>
-  When you are ready to release your application to the world, you can toggle on
-  that <strong>public</strong> switch in the bot settings and get your app
-  verified!
-</p>
-<h1 id="h_01J8JESC98NQPAGDEGJYTDNWVD">
-  How to Change the Public/Private Bot Setting
-</h1>
-<p>
-  In the
-  <a
-    href="https://discord.com/developers/applications"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Developer Portal</a
-  >, find the Application you wish to modify. Navigate to the Bot tab and scroll
-  down until you see <strong>Public Bot</strong>. Toggle this switch on to set
-  your bot to <strong>Public</strong>.
-</p>
-<p>
-  <img
-    src="https://support-dev.discord.com/hc/article_attachments/26594401281303"
-  />
-</p>
-<p>
-  If your application is already <strong>Public</strong> and you want to turn
-  that setting off, you can only do so if the application hasn't been Verified
-  and if the <strong>Install Link</strong> on the
-  <strong>Installation</strong> tab is set to <strong>None</strong>.
-</p>
-<p>
-  <img
-    src="https://support-dev.discord.com/hc/article_attachments/26594417678231"
-  />
-</p>
+<p> </p>
 <h2 id="h_01J8JESC983PHQYEVEYKA14B5M">Additional Resources</h2>
 <ul>
   <li>

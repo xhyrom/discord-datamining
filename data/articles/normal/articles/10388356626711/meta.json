@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "admin",
     "answer-bot",
-    "connections",
+    "connection",
+    "admin community",
     "linked roles",
     "App Connections",
-    "admin",
-    "admin community",
-    "connection"
+    "connections"
   ]
 }

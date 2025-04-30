@@ -24,6 +24,7 @@
     >Where can I find my Activity’s Application ID?</a
   >
 </p>
+<p><a href="#h_01J8JESC98NQPAGDEGJYTDNWVD">Public/Private Bot Setting</a></p>
 <p><a href="#h_01J8JK19X2ZJW3306P0X0ZVM95">Additional Resources</a></p>
 <h1 id="h_01J8JK19X2SK05BPGRYXB7DVDH">Introduction</h1>
 <p>
@@ -295,6 +296,73 @@
     src="https://support-dev.discord.com/hc/article_attachments/26595964627735"
   />
 </p>
+<h2 id="h_01J8JESC98NQPAGDEGJYTDNWVD">Public/Private Bot Setting</h2>
+<p>
+  The "Public Bot" setting in the Bot tab of the Developer Portal controls who
+  can add your bot to servers. Only you and those on your developer team can add
+  the bot to servers when this setting is OFF. When it's ON, any Discord user
+  with proper permissions can add your bot to their servers.
+</p>
+<h4 id="01JT3X294ESBKAKEMJMT0N5WMZ" class="callout">
+  <span
+    style="
+      color: #2e3338;
+      font-family: gg_sans, &quot; Noto Sans&quot;, &quot; Helvetica Neue&quot;,
+        Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-weight: 500;
+      letter-spacing: normal;
+      orphans: 2;
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      widows: 2;
+      word-spacing: 0px;
+      -webkit-text-stroke-width: 0px;
+      white-space: normal;
+      background-color: #ffffff;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+      display: inline !important;
+      float: none;
+    "
+    >⚠️ </span
+  >Please note: Enabling this setting does not automatically make your
+  application Discoverable. You will need to
+  <a href="#h_01J8JK19X2EWZ0C3JXXTDPYZBM">enable Discovery</a> separately.
+</h4>
+<p>
+  In the
+  <a
+    href="https://discord.com/developers/applications"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Developer Portal</a
+  >, find the Application you wish to modify. Navigate to the Bot tab and scroll
+  down until you see <strong>Public Bot</strong>. Toggle this switch on to set
+  your bot to <strong>Public</strong>.
+</p>
+<p>
+  <img
+    src="https://support-dev.discord.com/hc/article_attachments/31777838916119"
+  />
+</p>
+<p>
+  If your application is already <strong>Public</strong> and you want to turn
+  that setting off, you can only do so if the application hasn't been verified
+  and if the <strong>Install Link</strong> on the
+  <strong>Installation</strong> tab is set to <strong>None</strong>.
+</p>
+<p>
+  <img
+    src="https://support-dev.discord.com/hc/article_attachments/31777845377687"
+  />
+</p>
+<h2 id="h_01JT3XEMP7N7WMQBM37KQTG0M4"> </h2>
 <h2 id="h_01J8JK19X2ZJW3306P0X0ZVM95">Additional Resources</h2>
 <ul>
   <li>
