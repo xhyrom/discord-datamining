@@ -4213,10 +4213,7 @@
   },
   "DISABLE_CLAN": {
     "url": "/clan/:param/disable",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
