@@ -2104,7 +2104,7 @@
         }
       ],
       "id": 7803984002,
-      "updated_at": "2025-04-30T18:12:55-04:00",
+      "updated_at": "2025-05-01T01:34:06-04:00",
       "requisition_id": "R-100753",
       "title": "Senior Staff Software Engineer, React Native (Performance & Quality)",
       "company_name": "Discord",
@@ -2119,13 +2119,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -2537,7 +2530,7 @@
         }
       ],
       "id": 7953473002,
-      "updated_at": "2025-04-30T18:12:55-04:00",
+      "updated_at": "2025-05-01T01:34:31-04:00",
       "requisition_id": "R-100874",
       "title": "Staff Software Engineer, Audio/Video Infrastructure",
       "company_name": "Discord",
@@ -2552,13 +2545,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
