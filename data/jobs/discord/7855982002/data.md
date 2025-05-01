@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7855982002](https://discord.com/jobs/7855982002)
 
-**Updated At:** Wed, 30 Apr 2025 22:12:55 GMT
+**Updated At:** Thu, 01 May 2025 18:04:59 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a highly technical, creative, hands-on, and empathetic Engineering Manager for our Social Layer of Gaming team. This team is building tools for game developers to harness the power of Discord and put that right into their games. We believe that gaming is better when playing with your friends and aim to foster better and deeper relationships through that. This is also reflected in how we work! Our engineering culture believes that great teams are built through collaboration and trust. Come and join us!
@@ -31,6 +31,7 @@ What you should have
 2+ years of experience as an Engineering Manager.
 Experience building C++ SDKs either as an engineer or manager.
 Strong communication skills and the ability to work well cross-functionally. You have opinions but can discuss them generously with other people with all kinds of backgrounds.
+Experience building software solutions as an engineer or manager that included web APIS's and/or services. This role will focus on our C++ SDK, but touches other pieces of our infrastructure, and you’ll need to navigate that.
 Comfortability with ambiguity and are excited about working collaboratively to figure out solutions to complex problems, and then executing on them.
 Motivation to help your team members succeed and experience growing engineers.
 A holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.
