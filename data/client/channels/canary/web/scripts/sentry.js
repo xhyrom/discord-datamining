@@ -6726,7 +6726,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4d22b7632951c47c5a25b9f6a55fbadb7ebc6779",
+            release: "discord_web-aa64f4a667ef9b1705781fac8e54e0e84bbf94a4",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6792,8 +6792,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "395727"),
-            o.YA("builtAt", String("1746112969037"));
+            o.YA("buildNumber", "395734"),
+            o.YA("builtAt", String("1746114047939"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -6955,6 +6955,13 @@
                 [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.07 },
                 [r.DARKER]: { raw: "WHITE", opacity: 0.07 },
               },
+              APP_BORDER_FRAME: {
+                category: "generic",
+                [r.DARK]: { raw: "WHITE", opacity: 0.08 },
+                [r.LIGHT]: { raw: "BLACK", opacity: 0.08 },
+                [r.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.14 },
+                [r.DARKER]: { raw: "PLUM_11", opacity: 0.12 },
+              },
               AUTOCOMPLETE_BG: {
                 category: "background",
                 [r.DARK]: { raw: "PRIMARY_630", opacity: 1 },
@@ -6981,6 +6988,13 @@
                     saturation: "*1.2",
                   },
                 },
+              },
+              BACKGROUND_BASE_LOW: {
+                category: "background",
+                [r.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
               },
               BACKGROUND_FLOATING: {
                 category: "background",
@@ -10012,6 +10026,7 @@
               NEUTRAL_1: "#ffffff",
               NEUTRAL_10: "#dbdcdf",
               NEUTRAL_100: "#000000",
+              NEUTRAL_12: "#d3d4d7",
               NEUTRAL_15: "#c8c8cd",
               NEUTRAL_16: "#c4c5c9",
               NEUTRAL_17: "#c0c1c6",
@@ -10035,10 +10050,12 @@
               NEUTRAL_45: "#5c5d67",
               NEUTRAL_46: "#595a64",
               NEUTRAL_5: "#efeff0",
+              NEUTRAL_52: "#4c4d56",
               NEUTRAL_59: "#41424a",
               NEUTRAL_6: "#ebebed",
               NEUTRAL_60: "#3f4048",
               NEUTRAL_64: "#393a41",
+              NEUTRAL_65: "#383940",
               NEUTRAL_66: "#36373e",
               NEUTRAL_69: "#323339",
               NEUTRAL_71: "#2f3035",
@@ -15334,6 +15351,7 @@
             r.I.PLUM_24,
           ],
           "android-ripple": [r.I.WHITE, r.I.BLACK, r.I.WHITE, r.I.WHITE],
+          "app-border-frame": [r.I.WHITE, r.I.BLACK, r.I.PLUM_11, r.I.PLUM_11],
           "autocomplete-bg": [
             r.I.PRIMARY_630,
             r.I.PRIMARY_100,
@@ -15345,6 +15363,12 @@
             r.I.PRIMARY_430,
             r.I.PLUM_17,
             r.I.PLUM_15,
+          ],
+          "background-base-low": [
+            r.I.NEUTRAL_66,
+            r.I.NEUTRAL_2,
+            r.I.NEUTRAL_95,
+            r.I.NEUTRAL_82,
           ],
           "background-floating": [
             r.I.PRIMARY_800,
@@ -46462,4 +46486,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d569148ae14d2e7c.js.map
+//# sourceMappingURL=sentry.507fe8b973918cd3.js.map

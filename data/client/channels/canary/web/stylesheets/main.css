@@ -1349,6 +1349,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .custom-theme-background .tooltip__382e7 {
   border: 1px solid var(--border-strong);
 }
+.refresh-fast-follow-distinct-borders .tooltip__382e7 {
+  border-color: var(--app-border-frame);
+}
 .wrapper__44b0c {
   border-radius: 50%;
   position: relative;
@@ -3110,6 +3113,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background-color: var(--modal-background);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
+}
+.refresh-fast-follow-distinct-borders .container__3dde2 {
+  border-color: var(--app-border-frame);
 }
 .react-datepicker__month-read-view--down-arrow,
 .react-datepicker__month-year-read-view--down-arrow,
@@ -22204,6 +22210,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .visual-refresh-chat-input .themedBackground__74017 {
   background: none;
 }
+.refresh-fast-follow-distinct-borders .channelTextArea__74017 {
+  border: 1px solid var(--border-subtle);
+}
+.refresh-fast-follow-distinct-borders .channelTextArea__74017:focus-within {
+  border-color: var(--app-border-frame);
+}
 .sticker__74017 {
   display: block;
 }
@@ -37459,6 +37471,12 @@ div.mobilePushContainer__3d3b0 {
 :where(.visual-refresh.density-compact) .labelContainer_c1e9c4 {
   padding: 4px 8px;
 }
+.refresh-fast-follow-distinct-borders .menu_c1e9c4 {
+  border-color: var(--app-border-frame);
+}
+.refresh-fast-follow-distinct-borders .separator_c1e9c4 {
+  border-bottom-color: var(--app-border-frame);
+}
 .enable-forced-colors .menu_c1e9c4 {
   background-color: ButtonFace;
   border: 2px solid CanvasText;
@@ -39265,6 +39283,9 @@ div.mobilePushContainer__3d3b0 {
 :where(.visual-refresh) .top_b3f026 .item_b3f026 + .item_b3f026 {
   margin-left: var(--space-xl);
 }
+.refresh-fast-follow-distinct-borders .top_b3f026 {
+  border-color: var(--app-border-frame);
+}
 .textArea__7aff3 {
   height: auto;
   resize: none;
@@ -39754,6 +39775,12 @@ div.mobilePushContainer__3d3b0 {
 .scrollable__9293f {
   overflow: auto;
   -ms-overflow-style: none;
+}
+.refresh-fast-follow-distinct-borders .container__9293f {
+  border-bottom-color: var(--app-border-frame);
+}
+.refresh-fast-follow-distinct-borders .divider__9293f {
+  background: var(--app-border-frame);
 }
 .no-webkit-scrollbar .scrollable__9293f {
   scrollbar-width: none;
@@ -44837,8 +44864,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--primary-830);
   --android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--white-hsl) / 0.08);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
+  --background-base-low: var(--neutral-66);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -45272,6 +45301,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.08) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -45280,6 +45315,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-530) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -46656,8 +46696,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--primary-100);
   --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
   --android-ripple: hsl(var(--black-hsl) / 0.12);
+  --app-border-frame: hsl(var(--black-hsl) / 0.08);
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
+  --background-base-low: var(--neutral-2);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -47075,6 +47117,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--black-hsl) / 0.08) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-100) 100%,
@@ -47083,6 +47131,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-430) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -48454,8 +48507,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--plum-24);
   --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--plum-11-hsl) / 0.14);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
+  --background-base-low: var(--neutral-95);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -48889,6 +48944,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.14) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.14)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -48897,6 +48958,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-95) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -50277,8 +50343,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--plum-24);
   --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--plum-11-hsl) / 0.12);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
+  --background-base-low: var(--neutral-82);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -50712,6 +50780,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.12) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -50720,6 +50794,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-82) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -55904,8 +55983,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-78);
-  --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-base-low: var(--neutral-66);
   --background-base-lower: var(--neutral-69);
   --background-base-lowest: var(--neutral-73);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -56355,17 +56432,6 @@ html.disable-forced-colors * {
       var(--neutral-78) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-66) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-69) 100%,
@@ -56780,8 +56846,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-7);
-  --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
   --background-base-lowest: var(--neutral-4);
   --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
@@ -57233,17 +57297,6 @@ html.disable-forced-colors * {
       var(--neutral-7) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-2) 100%,
@@ -57653,8 +57706,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-100);
-  --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
   --background-base-lowest: var(--neutral-100);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -58100,17 +58151,6 @@ html.disable-forced-colors * {
       var(--neutral-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-95) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-97) 100%,
@@ -58518,8 +58558,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-97);
-  --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
   --background-base-lowest: var(--neutral-92);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -58963,17 +59001,6 @@ html.disable-forced-colors * {
       var(--neutral-97) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-82) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-86) 100%,
@@ -59252,6 +59279,62 @@ html.disable-forced-colors * {
     var(--opacity-16-hsl) / 0.1607843137254902
   );
   --user-profile-overlay-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
+}
+.refresh-fast-follow-distinct-borders .theme-dark,
+.refresh-fast-follow-distinct-borders.theme-dark {
+  --app-border-frame: var(--neutral-52);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-dark,
+  .refresh-fast-follow-distinct-borders.theme-dark {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-52) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-light,
+.refresh-fast-follow-distinct-borders.theme-light {
+  --app-border-frame: var(--neutral-12);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-light,
+  .refresh-fast-follow-distinct-borders.theme-light {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-midnight,
+.refresh-fast-follow-distinct-borders.theme-midnight {
+  --app-border-frame: var(--neutral-73);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-midnight,
+  .refresh-fast-follow-distinct-borders.theme-midnight {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-73) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-darker,
+.refresh-fast-follow-distinct-borders.theme-darker {
+  --app-border-frame: var(--neutral-65);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-darker,
+  .refresh-fast-follow-distinct-borders.theme-darker {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
 }
 .theme-dark {
   --shadow-border: 0 0 0 1px hsl(none 0% 100%/0.08);
@@ -60919,4 +61002,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5f0a9432c92a8e49.css.map*/
+/*# sourceMappingURL=12633.7565d1f871c633a8.css.map*/
