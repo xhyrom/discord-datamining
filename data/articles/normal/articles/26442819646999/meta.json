@@ -26,11 +26,11 @@
     "01J8QYQG16YS4ZD50RPA1FH8CC"
   ],
   "label_names": [
-    "bookmarks",
-    "faq",
-    "reminders",
+    "chat",
     "Messages",
     "answer-bot",
-    "chat"
+    "faq",
+    "reminders",
+    "bookmarks"
   ]
 }
