@@ -29404,6 +29404,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
   top: 0;
   width: 100%;
 }
+.user-profile-modal-v2 .inner__01370 {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
 .innerNoRadius__01370 {
   border-radius: 0;
 }
@@ -32919,16 +32922,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .actions__39ec2:empty {
   display: none;
 }
-.tinyIconButton__39ec2 {
-  height: var(--custom-button-button-tn-height);
-  width: var(--custom-button-button-tn-height);
-}
-.tinyIconButtonInner__39ec2 {
-  max-height: 12px;
-  max-width: 12px;
-  min-height: 12px;
-  min-width: 12px;
-}
 .badges__39ec2 {
   -moz-column-gap: 8px;
   column-gap: 8px;
@@ -35705,6 +35698,22 @@ img.thumbnail__0f2e8 {
 .firstCardContainer__84832.hasShowMoreButton__84832 .card__84832 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
+.firstCardContainer__84832.isInteracting__84832 {
+  z-index: 4;
+}
+.firstCardContainer__84832.isInteracting__84832 .showMoreButton__84832 {
+  pointer-events: none;
+}
+.firstCardContainer__84832.isInteracting__84832 .showMoreButton__84832:after {
+  background-color: var(--bg-backdrop);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .showMoreButtonContainer__84832 {
   display: flex;
   overflow: hidden;
@@ -35721,6 +35730,7 @@ img.thumbnail__0f2e8 {
   flex-grow: 1;
   margin: 0 8px;
   opacity: 1;
+  overflow: hidden;
   padding: 4px 8px;
   position: relative;
   transform: translateY(-50%);
@@ -35729,21 +35739,13 @@ img.thumbnail__0f2e8 {
 .showMoreButton__84832.isHidden__84832 {
   opacity: 0;
 }
-.showMoreButton__84832:after {
-  background-color: var(--opacity-black-4);
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .showMoreButton__84832:hover {
   background-color: var(--user-profile-overlay-background-hover);
 }
-.firstCardContainer__84832:focus-within .showMoreButton__84832,
-.firstCardContainer__84832:hover .showMoreButton__84832,
+.firstCardContainer__84832:not(.isInteracting__84832):focus-within
+  .showMoreButton__84832,
+.firstCardContainer__84832:not(.isInteracting__84832):hover
+  .showMoreButton__84832,
 .showMoreButton__84832:focus,
 .showMoreButton__84832:hover {
   transform: translateY(0);
@@ -60749,10 +60751,13 @@ code {
       fixed 0 0 / cover,
     var(--custom-theme-background) fixed 0 0 / cover;
 }
-.disable-adaptive-theme,
-[data-disable-adaptive-theme="true"] {
+.disable-adaptive-theme {
   --theme-base-color-amount: 0% !important;
   --theme-text-color-amount: 0% !important;
+}
+.reduce-adaptive-theme {
+  --theme-base-color-amount: 20% !important;
+  --theme-text-color-amount: 20% !important;
 }
 .visual-refresh.custom-theme-background {
   --custom-app-border-frame-base: color-mix(
@@ -60914,4 +60919,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.273fac4ebe681305.css.map*/
+/*# sourceMappingURL=12633.5f0a9432c92a8e49.css.map*/
