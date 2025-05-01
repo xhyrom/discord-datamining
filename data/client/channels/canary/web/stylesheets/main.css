@@ -35708,6 +35708,22 @@ img.thumbnail__0f2e8 {
 .firstCardContainer__84832.hasShowMoreButton__84832 .card__84832 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
+.firstCardContainer__84832.isInteracting__84832 {
+  z-index: 4;
+}
+.firstCardContainer__84832.isInteracting__84832 .showMoreButton__84832 {
+  pointer-events: none;
+}
+.firstCardContainer__84832.isInteracting__84832 .showMoreButton__84832:after {
+  background-color: var(--bg-backdrop);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .showMoreButtonContainer__84832 {
   display: flex;
   overflow: hidden;
@@ -35724,6 +35740,7 @@ img.thumbnail__0f2e8 {
   flex-grow: 1;
   margin: 0 8px;
   opacity: 1;
+  overflow: hidden;
   padding: 4px 8px;
   position: relative;
   transform: translateY(-50%);
@@ -35732,21 +35749,13 @@ img.thumbnail__0f2e8 {
 .showMoreButton__84832.isHidden__84832 {
   opacity: 0;
 }
-.showMoreButton__84832:after {
-  background-color: var(--opacity-black-4);
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .showMoreButton__84832:hover {
   background-color: var(--user-profile-overlay-background-hover);
 }
-.firstCardContainer__84832:focus-within .showMoreButton__84832,
-.firstCardContainer__84832:hover .showMoreButton__84832,
+.firstCardContainer__84832:not(.isInteracting__84832):focus-within
+  .showMoreButton__84832,
+.firstCardContainer__84832:not(.isInteracting__84832):hover
+  .showMoreButton__84832,
 .showMoreButton__84832:focus,
 .showMoreButton__84832:hover {
   transform: translateY(0);
@@ -60920,4 +60929,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.584fd354a76edb3e.css.map*/
+/*# sourceMappingURL=12633.f0a2e447409db9f0.css.map*/
