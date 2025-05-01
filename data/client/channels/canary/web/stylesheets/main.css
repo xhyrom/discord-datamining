@@ -29538,18 +29538,16 @@ html:not(.visual-refresh) .root_e5f3a9 {
   flex: 5;
 }
 .invoiceRegularText__25766 {
-  color: var(--header-primary);
+  color: var(--text-primary);
 }
 .invoiceDiscountText__25766 {
   color: var(--text-positive);
 }
 .invoiceDiscountTag__25766 {
   background-color: var(--green-360);
-  border-radius: 10px;
+  border-radius: 12px;
   display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 0 8px;
+  padding: 2px 6px;
   position: relative;
   text-align: center;
 }
@@ -61038,4 +61036,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d1250c58d06cb63b.css.map*/
+/*# sourceMappingURL=12633.5292a87f9ec507d3.css.map*/
