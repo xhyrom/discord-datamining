@@ -35780,10 +35780,16 @@ img.thumbnail__0f2e8 {
   padding: 4px 8px;
   position: relative;
   transform: translateY(-50%);
-  transition: opacity 0.1s ease-in-out;
+  transition:
+    opacity 0.1s ease-in-out,
+    background-color var(--custom-button-transition-duration) ease-in-out;
 }
 .showMoreButton__84832.isHidden__84832 {
   opacity: 0;
+}
+.theme-light .showMoreButton__84832 {
+  border: 1px solid var(--border-faint);
+  border-top: none;
 }
 .showMoreButton__84832:hover {
   background-color: var(--user-profile-overlay-background-hover);
@@ -35807,7 +35813,8 @@ img.thumbnail__0f2e8 {
 .full-motion .showMoreButton__84832:hover {
   transition:
     transform 0.2s ease-in-out,
-    opacity 0.1s ease-in-out;
+    opacity 0.1s ease-in-out,
+    background-color var(--custom-button-transition-duration) ease-in-out;
 }
 .remainingCardContainer__84832 {
   margin-left: 8px;
@@ -61040,4 +61047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ec73f8be0a754989.css.map*/
+/*# sourceMappingURL=12633.20f900428e72d79c.css.map*/
