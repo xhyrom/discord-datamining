@@ -11752,7 +11752,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .body__86ab2 {
   flex-direction: column;
   gap: 16px;
-  margin-top: 8px;
   overflow-wrap: anywhere;
   padding: 0 16px;
   text-align: flex-start;
@@ -11771,6 +11770,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   margin-top: 8px;
   padding: 0 16px;
 }
@@ -11859,6 +11859,35 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: center;
   display: flex;
   gap: 8px;
+}
+@value traitMaxWidth: 268px;
+.container_d452e4 {
+  flex-wrap: wrap;
+}
+.container_d452e4,
+.trait_d452e4 {
+  display: flex;
+  gap: 4px;
+}
+.trait_d452e4 {
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  max-width: 268px;
+  padding: 4px 8px;
+  transition: border-color 0.2s ease;
+}
+.trait_d452e4:hover {
+  border-color: var(--border-strong);
+}
+.traitEmoji_d452e4 {
+  height: 16px;
+  width: 16px;
+}
+.ellipsize_d452e4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .platform-osx:not(.visual-refresh) .drag__5c9fc {
   -webkit-app-region: drag;
@@ -13366,6 +13395,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   margin-top: 8px;
   padding: 0 16px;
   width: 100%;
@@ -13412,35 +13442,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   flex-shrink: 0;
   height: 16px;
   width: 16px;
-}
-@value traitMaxWidth: 268px;
-.container_d452e4 {
-  flex-wrap: wrap;
-}
-.container_d452e4,
-.trait_d452e4 {
-  display: flex;
-  gap: 4px;
-}
-.trait_d452e4 {
-  align-items: center;
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  max-width: 268px;
-  padding: 4px 8px;
-  transition: border-color 0.2s ease;
-}
-.trait_d452e4:hover {
-  border-color: var(--border-strong);
-}
-.traitEmoji_d452e4 {
-  height: 16px;
-  width: 16px;
-}
-.ellipsize_d452e4 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .container__86bf6 {
   border-radius: 16px;
@@ -61002,4 +61003,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7565d1f871c633a8.css.map*/
+/*# sourceMappingURL=12633.4385b67afca59704.css.map*/
