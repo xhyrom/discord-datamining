@@ -224,6 +224,12 @@
               alt=""
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ece93be2524af5cf14dc1c_Logo-black-bg.svg"
               class="nav_brand_main-logo-2"
+            /><img
+              width="146"
+              loading="lazy"
+              alt=""
+              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
+              class="nav_brand_main-logo-bg"
             /></div
         ></a>
         <div class="nav_menu_wr">
