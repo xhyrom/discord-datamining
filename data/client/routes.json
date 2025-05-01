@@ -4174,10 +4174,7 @@
   },
   "GUILD_CONVERT_TO_CLAN": {
     "url": "/clan/:param",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_CLAN_DISCOVERY_INFO": {
     "url": "/discovery/:param/clan",
@@ -4212,12 +4209,7 @@
   },
   "CLAN_SETTINGS": {
     "url": "/clan/:param/settings",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
+    "allowed_methods": null
   },
   "DISABLE_CLAN": {
     "url": "/clan/:param/disable",
