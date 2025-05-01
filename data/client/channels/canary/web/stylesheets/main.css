@@ -32922,16 +32922,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .actions__39ec2:empty {
   display: none;
 }
-.tinyIconButton__39ec2 {
-  height: var(--custom-button-button-tn-height);
-  width: var(--custom-button-button-tn-height);
-}
-.tinyIconButtonInner__39ec2 {
-  max-height: 12px;
-  max-width: 12px;
-  min-height: 12px;
-  min-width: 12px;
-}
 .badges__39ec2 {
   -moz-column-gap: 8px;
   column-gap: 8px;
@@ -60929,4 +60919,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f0a2e447409db9f0.css.map*/
+/*# sourceMappingURL=12633.5f0a9432c92a8e49.css.map*/
