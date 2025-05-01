@@ -35850,10 +35850,10 @@ img.thumbnail__0f2e8 {
   opacity: 1;
 }
 .remainingCardsCopyToMeasure__84832 {
+  bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
   visibility: hidden;
 }
 .tooltip__0f074 {
@@ -61047,4 +61047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.20f900428e72d79c.css.map*/
+/*# sourceMappingURL=12633.5efe782ca1b98a7d.css.map*/
