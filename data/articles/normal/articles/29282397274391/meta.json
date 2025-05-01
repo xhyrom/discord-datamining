@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
     "promo",
-    "youtube",
-    "faq",
-    "premium",
     "3",
+    "faq",
+    "answer-bot",
+    "youtube",
+    "premium",
     "months"
   ]
 }

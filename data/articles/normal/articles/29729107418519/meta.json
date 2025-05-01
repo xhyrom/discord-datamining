@@ -20,20 +20,20 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "invite",
-    "servers",
-    "community",
     "answer-bot",
-    "server",
-    "join",
-    "app",
-    "discovery",
-    "members",
     "applications",
+    "servers",
+    "discovery",
+    "join",
     "member",
-    "invitations",
-    "apply",
     "discoverable",
-    "only"
+    "invite",
+    "members",
+    "server",
+    "apply",
+    "app",
+    "only",
+    "invitations",
+    "community"
   ]
 }

@@ -21,7 +21,7 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "security keys",
-    "passkeys"
+    "passkeys",
+    "security keys"
   ]
 }
