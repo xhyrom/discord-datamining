@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7950420002](https://discord.com/jobs/7950420002)
 
-**Updated At:** Wed, 30 Apr 2025 22:12:55 GMT
+**Updated At:** Fri, 02 May 2025 17:24:32 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
@@ -78,7 +78,7 @@ Deep knowledge and usage of Discord
 Team player with a sense of humor, humility and empathy
 
 
-#LI-RemoteThe US base salary range for this full-time position is $180,000 - $202,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The US base salary range for this full-time position is $180,000 - $202,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
@@ -91,6 +91,5 @@ education_optional
 - Sales
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
