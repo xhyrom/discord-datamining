@@ -2,19 +2,18 @@
 
 ## Senior Regulatory Counsel
 
-**Location:** London, England
+**Location:** Amsterdam, Netherlands
 
-**Id:** 7957326002 <br/>
+**Id:** 7982522002 <br/>
 **Internal Job Id:** 6146034002 <br/>
 **Requisition Id:** R-100875 <br/>
 
-**Discord Jobs:** [https://discord.com/jobs/7957326002](https://discord.com/jobs/7957326002)
+**Discord Jobs:** [https://discord.com/jobs/7982522002](https://discord.com/jobs/7982522002)
 
-**Updated At:** Fri, 02 May 2025 21:55:29 GMT
+**Updated At:** Fri, 02 May 2025 21:56:22 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This is an international position in England employed by an international PEO.
-We're looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you'll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the EU/UK and Australia on matters involving online safety and content moderation, and supporting in other regions as available. If you like things predictable and routine - this is not the role for you!&amp;nbsp; When you combine a rapidly-scaling company with a regulatory environment in hyper-evolution, the results are guaranteed to keep you on your toes. This role can be based in Amsterdam, Netherlands or London, England.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you'll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the EU/UK and Australia on matters involving online safety and content moderation, and supporting in other regions as available. If you like things predictable and routine - this is not the role for you!&amp;nbsp; When you combine a rapidly-scaling company with a regulatory environment in hyper-evolution, the results are guaranteed to keep you on your toes. This role can be based in Amsterdam, Netherlands or London, England.
 What you'll be doing:
 
 Lead and implement Discord's responses to regulatory requests including:&amp;nbsp; assess the incentive (or threat) posed to Discord by the inquiry; gather and organize responsive data and information; and draft accurate, compelling responses that meet our obligations and further Discord’s interests

@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7628793002](https://discord.com/jobs/7628793002)
 
-**Updated At:** Fri, 02 May 2025 19:53:52 GMT
+**Updated At:** Fri, 02 May 2025 22:20:46 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As a Staff Product Designer at Discord, you’ll play a key leadership role in shaping the future of social gaming experiences. You’ll help define what design quality means within Discord, and push the boundaries of how players connect across platforms.
 The Social Layer (Slayer) team is defining how games integrate with Discord and enabling developers—from AAA studios to indies—to bring Discord’s social features directly into their games, and bring content from their games onto Discord. As part of this team, you’ll collaborate with UXR, Product Managers, Engineers, and Data Scientists, while also partnering with industry leaders like Xbox and PlayStation. Using your expertise in UX, UI, and prototyping, you’ll craft intuitive, visually compelling integrations that create seamless social experiences for players.
 If you're interested in joining a passionate team of designers that are creating fun experiences for millions of people across the world, Discord is the place to be.
-NOTE: This role is located in our San Francisco office.&amp;nbsp;
+This position is US-based only. We are seeking candidates located in the San Francisco Bay Area.
 What You'll Be Doing
 
 You will craft the standard for visual caliber and quality on Slayer (your team); owning the execution and production quality, and proactively identify opportunities to uplevel the quality of your work in production as you playtest.
