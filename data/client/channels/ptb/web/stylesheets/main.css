@@ -1349,6 +1349,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .custom-theme-background .tooltip__382e7 {
   border: 1px solid var(--border-strong);
 }
+.refresh-fast-follow-distinct-borders .tooltip__382e7 {
+  border-color: var(--app-border-frame);
+}
 .wrapper__44b0c {
   border-radius: 50%;
   position: relative;
@@ -3110,6 +3113,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background-color: var(--modal-background);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
+}
+.refresh-fast-follow-distinct-borders .container__3dde2 {
+  border-color: var(--app-border-frame);
 }
 .react-datepicker__month-read-view--down-arrow,
 .react-datepicker__month-year-read-view--down-arrow,
@@ -9149,6 +9155,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  gap: var(--spacing-12);
   max-width: 100%;
   min-width: 0;
   padding: 12px;
@@ -9162,10 +9169,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .visual-refresh .container_a8e786 {
   background-color: var(--background-mod-subtle);
-  border: 1px solid var(--border-subtle);
-  transition:
-    background-color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .playButtonContainer_a8e786 {
   align-items: center;
@@ -9264,9 +9268,40 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .audioElement_a8e786 {
   display: none;
 }
+.playbackRate_a8e786 {
+  background-color: var(--background-modifier-accent);
+  border-radius: 4px;
+  color: var(--interactive-normal);
+  text-align: center;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s ease-in,
+    color 0.2s ease-in;
+  width: 40px;
+}
+.playbackRateContainer_a8e786 {
+  cursor: pointer;
+  padding: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+.playbackRateContainer_a8e786:hover .playbackRate_a8e786 {
+  background-color: var(--background-modifier-hover);
+  color: var(--interactive-active);
+  transition: none;
+}
+.playing_a8e786 .playbackRateContainer_a8e786 .playbackRate_a8e786 {
+  background-color: var(--background-modifier-active);
+  color: var(--brand-200);
+}
+.playing_a8e786 .playbackRateContainer_a8e786:hover .playbackRate_a8e786 {
+  background-color: var(--background-modifier-hover);
+  color: var(--white-500);
+}
 .volumeButton_a8e786 {
   flex-shrink: 0;
-  margin-left: 12px;
 }
 .volumeButtonIcon_a8e786 {
   color: var(--interactive-normal);
@@ -9281,13 +9316,13 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   transition: none;
 }
 .playing_a8e786 .volumeButtonIcon_a8e786 {
-  color: var(--brand-300);
-}
-.playing_a8e786 .volumeButtonIcon_a8e786:hover {
   color: var(--brand-200);
 }
-.playing_a8e786 .volumeButtonIcon_a8e786:active {
+.playing_a8e786 .volumeButtonIcon_a8e786:hover {
   color: var(--white-500);
+}
+.playing_a8e786 .volumeButtonIcon_a8e786:active {
+  color: var(--brand-200);
 }
 .volumeSlider_a8e786 {
   margin-bottom: 4px;
@@ -9297,7 +9332,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .duration_a8e786 {
   color: var(--interactive-normal);
   flex-shrink: 0;
-  margin-left: 12px;
   transition: color 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -9308,10 +9342,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   color: var(--white-500);
 }
 .waveform_a8e786 {
-  margin-left: 12px;
   z-index: 1;
 }
 .rippleContainer_a8e786 {
+  border: 1px solid var(--border-subtle);
   border-radius: 24px;
   bottom: 0;
   left: 0;
@@ -9319,10 +9353,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   position: absolute;
   right: 0;
   top: 0;
+  transition: border-color 0.2s ease-in-out;
 }
 .ripple_a8e786 {
   aspect-ratio: 1/1;
-  background-color: var(--brand-500);
+  background-color: var(--brand-530);
   border-radius: 50%;
   left: 24px;
   position: absolute;
@@ -11746,7 +11781,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .body__86ab2 {
   flex-direction: column;
   gap: 16px;
-  margin-top: 8px;
   overflow-wrap: anywhere;
   padding: 0 16px;
   text-align: flex-start;
@@ -11765,6 +11799,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   margin-top: 8px;
   padding: 0 16px;
 }
@@ -11853,6 +11888,35 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   align-items: center;
   display: flex;
   gap: 8px;
+}
+@value traitMaxWidth: 268px;
+.container_d452e4 {
+  flex-wrap: wrap;
+}
+.container_d452e4,
+.trait_d452e4 {
+  display: flex;
+  gap: 4px;
+}
+.trait_d452e4 {
+  align-items: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  max-width: 268px;
+  padding: 4px 8px;
+  transition: border-color 0.2s ease;
+}
+.trait_d452e4:hover {
+  border-color: var(--border-strong);
+}
+.traitEmoji_d452e4 {
+  height: 16px;
+  width: 16px;
+}
+.ellipsize_d452e4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .platform-osx:not(.visual-refresh) .drag__5c9fc {
   -webkit-app-region: drag;
@@ -13360,6 +13424,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   margin-top: 8px;
   padding: 0 16px;
   width: 100%;
@@ -13406,35 +13471,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   flex-shrink: 0;
   height: 16px;
   width: 16px;
-}
-@value traitMaxWidth: 268px;
-.container_d452e4 {
-  flex-wrap: wrap;
-}
-.container_d452e4,
-.trait_d452e4 {
-  display: flex;
-  gap: 4px;
-}
-.trait_d452e4 {
-  align-items: center;
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  max-width: 268px;
-  padding: 4px 8px;
-  transition: border-color 0.2s ease;
-}
-.trait_d452e4:hover {
-  border-color: var(--border-strong);
-}
-.traitEmoji_d452e4 {
-  height: 16px;
-  width: 16px;
-}
-.ellipsize_d452e4 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .container__86bf6 {
   border-radius: 16px;
@@ -22204,6 +22240,12 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .visual-refresh-chat-input .themedBackground__74017 {
   background: none;
 }
+.refresh-fast-follow-distinct-borders .channelTextArea__74017 {
+  border: 1px solid var(--border-subtle);
+}
+.refresh-fast-follow-distinct-borders .channelTextArea__74017:focus-within {
+  border-color: var(--app-border-frame);
+}
 .sticker__74017 {
   display: block;
 }
@@ -29496,18 +29538,16 @@ html:not(.visual-refresh) .root_e5f3a9 {
   flex: 5;
 }
 .invoiceRegularText__25766 {
-  color: var(--header-primary);
+  color: var(--text-primary);
 }
 .invoiceDiscountText__25766 {
   color: var(--text-positive);
 }
 .invoiceDiscountTag__25766 {
   background-color: var(--green-360);
-  border-radius: 10px;
+  border-radius: 12px;
   display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 0 8px;
+  padding: 2px 6px;
   position: relative;
   text-align: center;
 }
@@ -32560,6 +32600,12 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   > .content_ab8609.unclamped_ab8609 {
   position: absolute;
   top: 0;
+}
+.referenceContainer_ab8609 > .outer_ab8609 {
+  max-width: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .outer_ab8609 {
   background: var(--custom-status-bubble-background);
@@ -35734,10 +35780,16 @@ img.thumbnail__0f2e8 {
   padding: 4px 8px;
   position: relative;
   transform: translateY(-50%);
-  transition: opacity 0.1s ease-in-out;
+  transition:
+    opacity 0.1s ease-in-out,
+    background-color var(--custom-button-transition-duration) ease-in-out;
 }
 .showMoreButton__84832.isHidden__84832 {
   opacity: 0;
+}
+.theme-light .showMoreButton__84832 {
+  border: 1px solid var(--border-faint);
+  border-top: none;
 }
 .showMoreButton__84832:hover {
   background-color: var(--user-profile-overlay-background-hover);
@@ -35761,7 +35813,8 @@ img.thumbnail__0f2e8 {
 .full-motion .showMoreButton__84832:hover {
   transition:
     transform 0.2s ease-in-out,
-    opacity 0.1s ease-in-out;
+    opacity 0.1s ease-in-out,
+    background-color var(--custom-button-transition-duration) ease-in-out;
 }
 .remainingCardContainer__84832 {
   margin-left: 8px;
@@ -35797,10 +35850,10 @@ img.thumbnail__0f2e8 {
   opacity: 1;
 }
 .remainingCardsCopyToMeasure__84832 {
+  bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
   visibility: hidden;
 }
 .tooltip__0f074 {
@@ -37458,6 +37511,12 @@ div.mobilePushContainer__3d3b0 {
 }
 :where(.visual-refresh.density-compact) .labelContainer_c1e9c4 {
   padding: 4px 8px;
+}
+.refresh-fast-follow-distinct-borders .menu_c1e9c4 {
+  border-color: var(--app-border-frame);
+}
+.refresh-fast-follow-distinct-borders .separator_c1e9c4 {
+  border-bottom-color: var(--app-border-frame);
 }
 .enable-forced-colors .menu_c1e9c4 {
   background-color: ButtonFace;
@@ -39265,6 +39324,9 @@ div.mobilePushContainer__3d3b0 {
 :where(.visual-refresh) .top_b3f026 .item_b3f026 + .item_b3f026 {
   margin-left: var(--space-xl);
 }
+.refresh-fast-follow-distinct-borders .top_b3f026 {
+  border-color: var(--app-border-frame);
+}
 .textArea__7aff3 {
   height: auto;
   resize: none;
@@ -39754,6 +39816,12 @@ div.mobilePushContainer__3d3b0 {
 .scrollable__9293f {
   overflow: auto;
   -ms-overflow-style: none;
+}
+.refresh-fast-follow-distinct-borders .container__9293f {
+  border-bottom-color: var(--app-border-frame);
+}
+.refresh-fast-follow-distinct-borders .divider__9293f {
+  background: var(--app-border-frame);
 }
 .no-webkit-scrollbar .scrollable__9293f {
   scrollbar-width: none;
@@ -44837,8 +44905,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--primary-830);
   --android-navigation-scrim-background: hsl(var(--primary-830-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--white-hsl) / 0.08);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
+  --background-base-low: var(--neutral-66);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -45272,6 +45342,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.08) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -45280,6 +45356,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-530) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -46656,8 +46737,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--primary-100);
   --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
   --android-ripple: hsl(var(--black-hsl) / 0.12);
+  --app-border-frame: hsl(var(--black-hsl) / 0.08);
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
+  --background-base-low: var(--neutral-2);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -47075,6 +47158,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--black-hsl) / 0.08) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-100) 100%,
@@ -47083,6 +47172,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--primary-430) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -48454,8 +48548,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--plum-24);
   --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--plum-11-hsl) / 0.14);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
+  --background-base-low: var(--neutral-95);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -48889,6 +48985,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.14) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.14)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -48897,6 +48999,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-95) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -50277,8 +50384,10 @@ html.disable-forced-colors * {
   --android-navigation-bar-background: var(--plum-24);
   --android-navigation-scrim-background: hsl(var(--plum-24-hsl) / 0.5);
   --android-ripple: hsl(var(--white-hsl) / 0.07);
+  --app-border-frame: hsl(var(--plum-11-hsl) / 0.12);
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
+  --background-base-low: var(--neutral-82);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -50712,6 +50821,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.07)
         var(--theme-base-color-amount, 0%)
     );
+    --app-border-frame: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.12) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
+        var(--theme-base-color-amount, 0%)
+    );
     --autocomplete-bg: color-mix(
       in oklab,
       var(--primary-630) 100%,
@@ -50720,6 +50835,11 @@ html.disable-forced-colors * {
     --background-accent: color-mix(
       in oklab,
       var(--plum-15) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-low: color-mix(
+      in oklab,
+      var(--neutral-82) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -52302,101 +52422,101 @@ html.disable-forced-colors * {
   --neutral-100: hsl(var(--neutral-100-hsl) / 1);
   --neutral-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --blue-new-1: hsl(var(--blue-new-1-hsl) / 1);
-  --blue-new-1-hsl: 213.103 calc(var(--saturation-factor, 1) * 100%) 94.314%;
+  --blue-new-1-hsl: 220.8 calc(var(--saturation-factor, 1) * 100%) 95.098%;
   --blue-new-2: hsl(var(--blue-new-2-hsl) / 1);
-  --blue-new-2-hsl: 213.529 calc(var(--saturation-factor, 1) * 100%) 93.333%;
+  --blue-new-2-hsl: 218 calc(var(--saturation-factor, 1) * 100%) 94.118%;
   --blue-new-3: hsl(var(--blue-new-3-hsl) / 1);
-  --blue-new-3-hsl: 211.5 calc(var(--saturation-factor, 1) * 100%) 92.157%;
+  --blue-new-3-hsl: 217.059 calc(var(--saturation-factor, 1) * 100%) 93.333%;
   --blue-new-4: hsl(var(--blue-new-4-hsl) / 1);
-  --blue-new-4-hsl: 210.667 calc(var(--saturation-factor, 1) * 100%) 91.176%;
+  --blue-new-4-hsl: 216.923 calc(var(--saturation-factor, 1) * 100%) 92.353%;
   --blue-new-5: hsl(var(--blue-new-5-hsl) / 1);
-  --blue-new-5-hsl: 211.2 calc(var(--saturation-factor, 1) * 100%) 90.196%;
+  --blue-new-5-hsl: 216.279 calc(var(--saturation-factor, 1) * 100%) 91.569%;
   --blue-new-6: hsl(var(--blue-new-6-hsl) / 1);
-  --blue-new-6-hsl: 210.545 calc(var(--saturation-factor, 1) * 100%) 89.216%;
+  --blue-new-6-hsl: 216.25 calc(var(--saturation-factor, 1) * 100%) 90.588%;
   --blue-new-7: hsl(var(--blue-new-7-hsl) / 1);
-  --blue-new-7-hsl: 211 calc(var(--saturation-factor, 1) * 100%) 88.235%;
+  --blue-new-7-hsl: 215.769 calc(var(--saturation-factor, 1) * 100%) 89.804%;
   --blue-new-8: hsl(var(--blue-new-8-hsl) / 1);
-  --blue-new-8-hsl: 210.462 calc(var(--saturation-factor, 1) * 100%) 87.255%;
+  --blue-new-8-hsl: 216.429 calc(var(--saturation-factor, 1) * 100%) 89.02%;
   --blue-new-9: hsl(var(--blue-new-9-hsl) / 1);
-  --blue-new-9-hsl: 210 calc(var(--saturation-factor, 1) * 100%) 86.275%;
+  --blue-new-9-hsl: 215 calc(var(--saturation-factor, 1) * 96.774%) 87.843%;
   --blue-new-10: hsl(var(--blue-new-10-hsl) / 1);
-  --blue-new-10-hsl: 210.811 calc(var(--saturation-factor, 1) * 100%) 85.49%;
+  --blue-new-10-hsl: 215.625 calc(var(--saturation-factor, 1) * 96.97%) 87.059%;
   --blue-new-11: hsl(var(--blue-new-11-hsl) / 1);
-  --blue-new-11-hsl: 210.38 calc(var(--saturation-factor, 1) * 100%) 84.51%;
+  --blue-new-11-hsl: 214.925 calc(var(--saturation-factor, 1) * 94.366%) 86.078%;
   --blue-new-12: hsl(var(--blue-new-12-hsl) / 1);
-  --blue-new-12-hsl: 210.714 calc(var(--saturation-factor, 1) * 100%) 83.529%;
+  --blue-new-12-hsl: 214.167 calc(var(--saturation-factor, 1) * 94.737%) 85.098%;
   --blue-new-13: hsl(var(--blue-new-13-hsl) / 1);
-  --blue-new-13-hsl: 210.682 calc(var(--saturation-factor, 1) * 100%) 82.745%;
+  --blue-new-13-hsl: 214.4 calc(var(--saturation-factor, 1) * 92.593%) 84.118%;
   --blue-new-14: hsl(var(--blue-new-14-hsl) / 1);
-  --blue-new-14-hsl: 211.304 calc(var(--saturation-factor, 1) * 100%) 81.961%;
+  --blue-new-14-hsl: 214.177 calc(var(--saturation-factor, 1) * 92.941%) 83.333%;
   --blue-new-15: hsl(var(--blue-new-15-hsl) / 1);
-  --blue-new-15-hsl: 210.928 calc(var(--saturation-factor, 1) * 100%) 80.98%;
+  --blue-new-15-hsl: 213.976 calc(var(--saturation-factor, 1) * 91.209%) 82.157%;
   --blue-new-16: hsl(var(--blue-new-16-hsl) / 1);
-  --blue-new-16-hsl: 211.485 calc(var(--saturation-factor, 1) * 100%) 80.196%;
+  --blue-new-16-hsl: 213.793 calc(var(--saturation-factor, 1) * 91.579%) 81.373%;
   --blue-new-17: hsl(var(--blue-new-17-hsl) / 1);
-  --blue-new-17-hsl: 211.429 calc(var(--saturation-factor, 1) * 100%) 79.412%;
+  --blue-new-17-hsl: 214 calc(var(--saturation-factor, 1) * 90%) 80.392%;
   --blue-new-18: hsl(var(--blue-new-18-hsl) / 1);
-  --blue-new-18-hsl: 211.636 calc(var(--saturation-factor, 1) * 100%) 78.431%;
+  --blue-new-18-hsl: 213.83 calc(var(--saturation-factor, 1) * 90.385%) 79.608%;
   --blue-new-19: hsl(var(--blue-new-19-hsl) / 1);
-  --blue-new-19-hsl: 211.579 calc(var(--saturation-factor, 1) * 100%) 77.647%;
+  --blue-new-19-hsl: 214.021 calc(var(--saturation-factor, 1) * 88.991%) 78.627%;
   --blue-new-20: hsl(var(--blue-new-20-hsl) / 1);
-  --blue-new-20-hsl: 212.034 calc(var(--saturation-factor, 1) * 100%) 76.863%;
+  --blue-new-20-hsl: 213.529 calc(var(--saturation-factor, 1) * 89.474%) 77.647%;
   --blue-new-21: hsl(var(--blue-new-21-hsl) / 1);
-  --blue-new-21-hsl: 211.967 calc(var(--saturation-factor, 1) * 100%) 76.078%;
+  --blue-new-21-hsl: 213.714 calc(var(--saturation-factor, 1) * 88.235%) 76.667%;
   --blue-new-22: hsl(var(--blue-new-22-hsl) / 1);
-  --blue-new-22-hsl: 212.381 calc(var(--saturation-factor, 1) * 100%) 75.294%;
+  --blue-new-22-hsl: 213.889 calc(var(--saturation-factor, 1) * 87.097%) 75.686%;
   --blue-new-23: hsl(var(--blue-new-23-hsl) / 1);
-  --blue-new-23-hsl: 212.769 calc(var(--saturation-factor, 1) * 100%) 74.51%;
+  --blue-new-23-hsl: 213.75 calc(var(--saturation-factor, 1) * 87.5%) 74.902%;
   --blue-new-24: hsl(var(--blue-new-24-hsl) / 1);
-  --blue-new-24-hsl: 212.687 calc(var(--saturation-factor, 1) * 100%) 73.725%;
+  --blue-new-24-hsl: 213.913 calc(var(--saturation-factor, 1) * 86.466%) 73.922%;
   --blue-new-25: hsl(var(--blue-new-25-hsl) / 1);
-  --blue-new-25-hsl: 212.647 calc(var(--saturation-factor, 1) * 97.143%) 72.549%;
+  --blue-new-25-hsl: 213.559 calc(var(--saturation-factor, 1) * 85.507%) 72.941%;
   --blue-new-26: hsl(var(--blue-new-26-hsl) / 1);
-  --blue-new-26-hsl: 212.609 calc(var(--saturation-factor, 1) * 95.833%) 71.765%;
+  --blue-new-26-hsl: 213.934 calc(var(--saturation-factor, 1) * 85.915%) 72.157%;
   --blue-new-27: hsl(var(--blue-new-27-hsl) / 1);
-  --blue-new-27-hsl: 212.766 calc(var(--saturation-factor, 1) * 94.631%) 70.784%;
+  --blue-new-27-hsl: 213.6 calc(var(--saturation-factor, 1) * 85.034%) 71.176%;
   --blue-new-28: hsl(var(--blue-new-28-hsl) / 1);
-  --blue-new-28-hsl: 212.5 calc(var(--saturation-factor, 1) * 93.506%) 69.804%;
+  --blue-new-28-hsl: 213.488 calc(var(--saturation-factor, 1) * 84.314%) 70%;
   --blue-new-29: hsl(var(--blue-new-29-hsl) / 1);
-  --blue-new-29-hsl: 212.653 calc(var(--saturation-factor, 1) * 92.453%) 68.824%;
+  --blue-new-29-hsl: 213.383 calc(var(--saturation-factor, 1) * 84.713%) 69.216%;
   --blue-new-30: hsl(var(--blue-new-30-hsl) / 1);
-  --blue-new-30-hsl: 213.02 calc(var(--saturation-factor, 1) * 91.411%) 68.039%;
+  --blue-new-30-hsl: 213.529 calc(var(--saturation-factor, 1) * 83.951%) 68.235%;
   --blue-new-31: hsl(var(--blue-new-31-hsl) / 1);
-  --blue-new-31-hsl: 212.583 calc(var(--saturation-factor, 1) * 89.349%) 66.863%;
+  --blue-new-31-hsl: 213.237 calc(var(--saturation-factor, 1) * 83.234%) 67.255%;
   --blue-new-32: hsl(var(--blue-new-32-hsl) / 1);
-  --blue-new-32-hsl: 212.727 calc(var(--saturation-factor, 1) * 88.506%) 65.882%;
+  --blue-new-32-hsl: 213.38 calc(var(--saturation-factor, 1) * 82.558%) 66.275%;
   --blue-new-33: hsl(var(--blue-new-33-hsl) / 1);
-  --blue-new-33-hsl: 212.484 calc(var(--saturation-factor, 1) * 87.709%) 64.902%;
+  --blue-new-33-hsl: 213.699 calc(var(--saturation-factor, 1) * 82.955%) 65.49%;
   --blue-new-34: hsl(var(--blue-new-34-hsl) / 1);
-  --blue-new-34-hsl: 212.83 calc(var(--saturation-factor, 1) * 86.885%) 64.118%;
+  --blue-new-34-hsl: 213.423 calc(var(--saturation-factor, 1) * 82.32%) 64.51%;
   --blue-new-35: hsl(var(--blue-new-35-hsl) / 1);
-  --blue-new-35-hsl: 212.963 calc(var(--saturation-factor, 1) * 86.17%) 63.137%;
+  --blue-new-35-hsl: 213.333 calc(var(--saturation-factor, 1) * 81.818%) 63.333%;
   --blue-new-36: hsl(var(--blue-new-36-hsl) / 1);
-  --blue-new-36-hsl: 212.561 calc(var(--saturation-factor, 1) * 84.536%) 61.961%;
+  --blue-new-36-hsl: 213.077 calc(var(--saturation-factor, 1) * 81.25%) 62.353%;
   --blue-new-37: hsl(var(--blue-new-37-hsl) / 1);
-  --blue-new-37-hsl: 212.695 calc(var(--saturation-factor, 1) * 83.92%) 60.98%;
+  --blue-new-37-hsl: 213.375 calc(var(--saturation-factor, 1) * 81.633%) 61.569%;
   --blue-new-38: hsl(var(--blue-new-38-hsl) / 1);
-  --blue-new-38-hsl: 212.824 calc(var(--saturation-factor, 1) * 83.333%) 60%;
+  --blue-new-38-hsl: 213.293 calc(var(--saturation-factor, 1) * 81.188%) 60.392%;
   --blue-new-39: hsl(var(--blue-new-39-hsl) / 1);
-  --blue-new-39-hsl: 212.601 calc(var(--saturation-factor, 1) * 82.775%) 59.02%;
+  --blue-new-39-hsl: 213.054 calc(var(--saturation-factor, 1) * 80.676%) 59.412%;
   --blue-new-40: hsl(var(--blue-new-40-hsl) / 1);
-  --blue-new-40-hsl: 212.727 calc(var(--saturation-factor, 1) * 82.243%) 58.039%;
+  --blue-new-40-hsl: 212.982 calc(var(--saturation-factor, 1) * 80.282%) 58.235%;
   --blue-new-41: hsl(var(--blue-new-41-hsl) / 1);
-  --blue-new-41-hsl: 212.849 calc(var(--saturation-factor, 1) * 81.735%) 57.059%;
+  --blue-new-41-hsl: 213.103 calc(var(--saturation-factor, 1) * 79.817%) 57.255%;
   --blue-new-42: hsl(var(--blue-new-42-hsl) / 1);
-  --blue-new-42-hsl: 212.459 calc(var(--saturation-factor, 1) * 81.333%) 55.882%;
+  --blue-new-42-hsl: 212.849 calc(var(--saturation-factor, 1) * 80.269%) 56.275%;
   --blue-new-43: hsl(var(--blue-new-43-hsl) / 1);
-  --blue-new-43-hsl: 212.581 calc(var(--saturation-factor, 1) * 80.87%) 54.902%;
+  --blue-new-43-hsl: 212.787 calc(var(--saturation-factor, 1) * 79.913%) 55.098%;
   --blue-new-44: hsl(var(--blue-new-44-hsl) / 1);
-  --blue-new-44-hsl: 212.526 calc(var(--saturation-factor, 1) * 80.508%) 53.725%;
+  --blue-new-44-hsl: 212.553 calc(var(--saturation-factor, 1) * 79.661%) 53.725%;
   --blue-new-45: hsl(var(--blue-new-45-hsl) / 1);
-  --blue-new-45-hsl: 212 calc(var(--saturation-factor, 1) * 80.247%) 52.353%;
+  --blue-new-45-hsl: 212.021 calc(var(--saturation-factor, 1) * 79.424%) 52.353%;
   --blue-new-46: hsl(var(--blue-new-46-hsl) / 1);
-  --blue-new-46-hsl: 211.8 calc(var(--saturation-factor, 1) * 80%) 50.98%;
+  --blue-new-46-hsl: 211.818 calc(var(--saturation-factor, 1) * 79.2%) 50.98%;
   --blue-new-47: hsl(var(--blue-new-47-hsl) / 1);
   --blue-new-47-hsl: 211.456 calc(var(--saturation-factor, 1) * 81.746%) 49.412%;
   --blue-new-48: hsl(var(--blue-new-48-hsl) / 1);
-  --blue-new-48-hsl: 210.419 calc(var(--saturation-factor, 1) * 89.212%) 47.255%;
+  --blue-new-48-hsl: 210.561 calc(var(--saturation-factor, 1) * 88.43%) 47.451%;
   --blue-new-49: hsl(var(--blue-new-49-hsl) / 1);
   --blue-new-49-hsl: 209.339 calc(var(--saturation-factor, 1) * 100%) 44.51%;
   --blue-new-50: hsl(var(--blue-new-50-hsl) / 1);
@@ -52502,101 +52622,101 @@ html.disable-forced-colors * {
   --blue-new-100: hsl(var(--blue-new-100-hsl) / 1);
   --blue-new-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --blurple-1: hsl(var(--blurple-1-hsl) / 1);
-  --blurple-1-hsl: 230.769 calc(var(--saturation-factor, 1) * 100%) 94.902%;
+  --blurple-1-hsl: 232.5 calc(var(--saturation-factor, 1) * 100%) 95.294%;
   --blurple-2: hsl(var(--blurple-2-hsl) / 1);
-  --blurple-2-hsl: 230 calc(var(--saturation-factor, 1) * 100%) 94.118%;
+  --blurple-2-hsl: 231.429 calc(var(--saturation-factor, 1) * 100%) 94.51%;
   --blurple-3: hsl(var(--blurple-3-hsl) / 1);
-  --blurple-3-hsl: 227.647 calc(var(--saturation-factor, 1) * 100%) 93.333%;
+  --blurple-3-hsl: 230.625 calc(var(--saturation-factor, 1) * 100%) 93.725%;
   --blurple-4: hsl(var(--blurple-4-hsl) / 1);
-  --blurple-4-hsl: 227.368 calc(var(--saturation-factor, 1) * 100%) 92.549%;
+  --blurple-4-hsl: 229.714 calc(var(--saturation-factor, 1) * 100%) 93.137%;
   --blurple-5: hsl(var(--blurple-5-hsl) / 1);
-  --blurple-5-hsl: 225.714 calc(var(--saturation-factor, 1) * 100%) 91.765%;
+  --blurple-5-hsl: 229.231 calc(var(--saturation-factor, 1) * 100%) 92.353%;
   --blurple-6: hsl(var(--blurple-6-hsl) / 1);
-  --blurple-6-hsl: 225.652 calc(var(--saturation-factor, 1) * 100%) 90.98%;
+  --blurple-6-hsl: 230 calc(var(--saturation-factor, 1) * 100%) 91.765%;
   --blurple-7: hsl(var(--blurple-7-hsl) / 1);
-  --blurple-7-hsl: 225.6 calc(var(--saturation-factor, 1) * 100%) 90.196%;
+  --blurple-7-hsl: 228.261 calc(var(--saturation-factor, 1) * 100%) 90.98%;
   --blurple-8: hsl(var(--blurple-8-hsl) / 1);
-  --blurple-8-hsl: 225.283 calc(var(--saturation-factor, 1) * 100%) 89.608%;
+  --blurple-8-hsl: 228.98 calc(var(--saturation-factor, 1) * 100%) 90.392%;
   --blurple-9: hsl(var(--blurple-9-hsl) / 1);
-  --blurple-9-hsl: 225.263 calc(var(--saturation-factor, 1) * 100%) 88.824%;
+  --blurple-9-hsl: 227.547 calc(var(--saturation-factor, 1) * 100%) 89.608%;
   --blurple-10: hsl(var(--blurple-10-hsl) / 1);
-  --blurple-10-hsl: 225.246 calc(var(--saturation-factor, 1) * 100%) 88.039%;
+  --blurple-10-hsl: 228.214 calc(var(--saturation-factor, 1) * 100%) 89.02%;
   --blurple-11: hsl(var(--blurple-11-hsl) / 1);
-  --blurple-11-hsl: 225 calc(var(--saturation-factor, 1) * 100%) 87.451%;
+  --blurple-11-hsl: 228 calc(var(--saturation-factor, 1) * 100%) 88.235%;
   --blurple-12: hsl(var(--blurple-12-hsl) / 1);
-  --blurple-12-hsl: 225 calc(var(--saturation-factor, 1) * 100%) 86.667%;
+  --blurple-12-hsl: 227.619 calc(var(--saturation-factor, 1) * 100%) 87.647%;
   --blurple-13: hsl(var(--blurple-13-hsl) / 1);
-  --blurple-13-hsl: 225.634 calc(var(--saturation-factor, 1) * 100%) 86.078%;
+  --blurple-13-hsl: 228.182 calc(var(--saturation-factor, 1) * 100%) 87.059%;
   --blurple-14: hsl(var(--blurple-14-hsl) / 1);
-  --blurple-14-hsl: 224.8 calc(var(--saturation-factor, 1) * 100%) 85.294%;
+  --blurple-14-hsl: 228 calc(var(--saturation-factor, 1) * 100%) 86.275%;
   --blurple-15: hsl(var(--blurple-15-hsl) / 1);
-  --blurple-15-hsl: 225.385 calc(var(--saturation-factor, 1) * 100%) 84.706%;
+  --blurple-15-hsl: 227.671 calc(var(--saturation-factor, 1) * 100%) 85.686%;
   --blurple-16: hsl(var(--blurple-16-hsl) / 1);
-  --blurple-16-hsl: 225.926 calc(var(--saturation-factor, 1) * 100%) 84.118%;
+  --blurple-16-hsl: 228.158 calc(var(--saturation-factor, 1) * 100%) 85.098%;
   --blurple-17: hsl(var(--blurple-17-hsl) / 1);
-  --blurple-17-hsl: 225.176 calc(var(--saturation-factor, 1) * 100%) 83.333%;
+  --blurple-17-hsl: 228 calc(var(--saturation-factor, 1) * 100%) 84.314%;
   --blurple-18: hsl(var(--blurple-18-hsl) / 1);
-  --blurple-18-hsl: 225.682 calc(var(--saturation-factor, 1) * 100%) 82.745%;
+  --blurple-18-hsl: 227.711 calc(var(--saturation-factor, 1) * 100%) 83.725%;
   --blurple-19: hsl(var(--blurple-19-hsl) / 1);
-  --blurple-19-hsl: 226.154 calc(var(--saturation-factor, 1) * 100%) 82.157%;
+  --blurple-19-hsl: 228.14 calc(var(--saturation-factor, 1) * 100%) 83.137%;
   --blurple-20: hsl(var(--blurple-20-hsl) / 1);
-  --blurple-20-hsl: 225.957 calc(var(--saturation-factor, 1) * 100%) 81.569%;
+  --blurple-20-hsl: 228.539 calc(var(--saturation-factor, 1) * 100%) 82.549%;
   --blurple-21: hsl(var(--blurple-21-hsl) / 1);
-  --blurple-21-hsl: 226.392 calc(var(--saturation-factor, 1) * 100%) 80.98%;
+  --blurple-21-hsl: 228.791 calc(var(--saturation-factor, 1) * 97.849%) 81.765%;
   --blurple-22: hsl(var(--blurple-22-hsl) / 1);
-  --blurple-22-hsl: 226.8 calc(var(--saturation-factor, 1) * 100%) 80.392%;
+  --blurple-22-hsl: 228 calc(var(--saturation-factor, 1) * 97.938%) 80.98%;
   --blurple-23: hsl(var(--blurple-23-hsl) / 1);
-  --blurple-23-hsl: 227.184 calc(var(--saturation-factor, 1) * 100%) 79.804%;
+  --blurple-23-hsl: 228.367 calc(var(--saturation-factor, 1) * 98%) 80.392%;
   --blurple-24: hsl(var(--blurple-24-hsl) / 1);
-  --blurple-24-hsl: 226.981 calc(var(--saturation-factor, 1) * 100%) 79.216%;
+  --blurple-24-hsl: 228.6 calc(var(--saturation-factor, 1) * 96.154%) 79.608%;
   --blurple-25: hsl(var(--blurple-25-hsl) / 1);
-  --blurple-25-hsl: 227.339 calc(var(--saturation-factor, 1) * 100%) 78.627%;
+  --blurple-25-hsl: 228.35 calc(var(--saturation-factor, 1) * 96.262%) 79.02%;
   --blurple-26: hsl(var(--blurple-26-hsl) / 1);
-  --blurple-26-hsl: 228.108 calc(var(--saturation-factor, 1) * 100%) 78.235%;
+  --blurple-26-hsl: 228.679 calc(var(--saturation-factor, 1) * 96.364%) 78.431%;
   --blurple-27: hsl(var(--blurple-27-hsl) / 1);
-  --blurple-27-hsl: 227.895 calc(var(--saturation-factor, 1) * 100%) 77.647%;
+  --blurple-27-hsl: 228.889 calc(var(--saturation-factor, 1) * 94.737%) 77.647%;
   --blurple-28: hsl(var(--blurple-28-hsl) / 1);
-  --blurple-28-hsl: 228.205 calc(var(--saturation-factor, 1) * 100%) 77.059%;
+  --blurple-28-hsl: 229.189 calc(var(--saturation-factor, 1) * 94.872%) 77.059%;
   --blurple-29: hsl(var(--blurple-29-hsl) / 1);
-  --blurple-29-hsl: 228.5 calc(var(--saturation-factor, 1) * 100%) 76.471%;
+  --blurple-29-hsl: 229.286 calc(var(--saturation-factor, 1) * 93.333%) 76.471%;
   --blurple-30: hsl(var(--blurple-30-hsl) / 1);
-  --blurple-30-hsl: 229.18 calc(var(--saturation-factor, 1) * 100%) 76.078%;
+  --blurple-30-hsl: 229.565 calc(var(--saturation-factor, 1) * 93.496%) 75.882%;
   --blurple-31: hsl(var(--blurple-31-hsl) / 1);
-  --blurple-31-hsl: 228.96 calc(var(--saturation-factor, 1) * 100%) 75.49%;
+  --blurple-31-hsl: 229.831 calc(var(--saturation-factor, 1) * 93.651%) 75.294%;
   --blurple-32: hsl(var(--blurple-32-hsl) / 1);
-  --blurple-32-hsl: 229.606 calc(var(--saturation-factor, 1) * 100%) 75.098%;
+  --blurple-32-hsl: 230 calc(var(--saturation-factor, 1) * 92.308%) 74.51%;
   --blurple-33: hsl(var(--blurple-33-hsl) / 1);
-  --blurple-33-hsl: 229.846 calc(var(--saturation-factor, 1) * 100%) 74.51%;
+  --blurple-33-hsl: 229.756 calc(var(--saturation-factor, 1) * 92.481%) 73.922%;
   --blurple-34: hsl(var(--blurple-34-hsl) / 1);
-  --blurple-34-hsl: 230 calc(var(--saturation-factor, 1) * 98.507%) 73.725%;
+  --blurple-34-hsl: 230.323 calc(var(--saturation-factor, 1) * 91.176%) 73.333%;
   --blurple-35: hsl(var(--blurple-35-hsl) / 1);
-  --blurple-35-hsl: 230.075 calc(var(--saturation-factor, 1) * 97.08%) 73.137%;
+  --blurple-35-hsl: 230.551 calc(var(--saturation-factor, 1) * 91.367%) 72.745%;
   --blurple-36: hsl(var(--blurple-36-hsl) / 1);
-  --blurple-36-hsl: 230.597 calc(var(--saturation-factor, 1) * 95.714%) 72.549%;
+  --blurple-36-hsl: 230.698 calc(var(--saturation-factor, 1) * 90.21%) 71.961%;
   --blurple-37: hsl(var(--blurple-37-hsl) / 1);
-  --blurple-37-hsl: 230.735 calc(var(--saturation-factor, 1) * 94.444%) 71.765%;
+  --blurple-37-hsl: 231.298 calc(var(--saturation-factor, 1) * 90.345%) 71.569%;
   --blurple-38: hsl(var(--blurple-38-hsl) / 1);
-  --blurple-38-hsl: 231.241 calc(var(--saturation-factor, 1) * 93.197%) 71.176%;
+  --blurple-38-hsl: 230.977 calc(var(--saturation-factor, 1) * 89.262%) 70.784%;
   --blurple-39: hsl(var(--blurple-39-hsl) / 1);
-  --blurple-39-hsl: 231.367 calc(var(--saturation-factor, 1) * 92.053%) 70.392%;
+  --blurple-39-hsl: 231.176 calc(var(--saturation-factor, 1) * 89.474%) 70.196%;
   --blurple-40: hsl(var(--blurple-40-hsl) / 1);
-  --blurple-40-hsl: 231.429 calc(var(--saturation-factor, 1) * 90.909%) 69.804%;
+  --blurple-40-hsl: 231.679 calc(var(--saturation-factor, 1) * 88.387%) 69.608%;
   --blurple-41: hsl(var(--blurple-41-hsl) / 1);
-  --blurple-41-hsl: 231.915 calc(var(--saturation-factor, 1) * 89.809%) 69.216%;
+  --blurple-41-hsl: 231.857 calc(var(--saturation-factor, 1) * 88.608%) 69.02%;
   --blurple-42: hsl(var(--blurple-42-hsl) / 1);
-  --blurple-42-hsl: 232.083 calc(var(--saturation-factor, 1) * 90%) 68.627%;
+  --blurple-42-hsl: 232.34 calc(var(--saturation-factor, 1) * 87.578%) 68.431%;
   --blurple-43: hsl(var(--blurple-43-hsl) / 1);
-  --blurple-43-hsl: 232.552 calc(var(--saturation-factor, 1) * 88.957%) 68.039%;
+  --blurple-43-hsl: 232.867 calc(var(--saturation-factor, 1) * 87.73%) 68.039%;
   --blurple-44: hsl(var(--blurple-44-hsl) / 1);
-  --blurple-44-hsl: 233.014 calc(var(--saturation-factor, 1) * 87.952%) 67.451%;
+  --blurple-44-hsl: 232.966 calc(var(--saturation-factor, 1) * 86.826%) 67.255%;
   --blurple-45: hsl(var(--blurple-45-hsl) / 1);
   --blurple-45-hsl: 233.469 calc(var(--saturation-factor, 1) * 86.982%) 66.863%;
   --blurple-46: hsl(var(--blurple-46-hsl) / 1);
-  --blurple-46-hsl: 233.6 calc(var(--saturation-factor, 1) * 87.209%) 66.275%;
+  --blurple-46-hsl: 233.919 calc(var(--saturation-factor, 1) * 86.047%) 66.275%;
   --blurple-47: hsl(var(--blurple-47-hsl) / 1);
   --blurple-47-hsl: 234.04 calc(var(--saturation-factor, 1) * 86.286%) 65.686%;
   --blurple-48: hsl(var(--blurple-48-hsl) / 1);
-  --blurple-48-hsl: 234.51 calc(var(--saturation-factor, 1) * 86.441%) 65.294%;
+  --blurple-48-hsl: 234.474 calc(var(--saturation-factor, 1) * 85.393%) 65.098%;
   --blurple-49: hsl(var(--blurple-49-hsl) / 1);
   --blurple-49-hsl: 234.935 calc(var(--saturation-factor, 1) * 85.556%) 64.706%;
   --blurple-50: hsl(var(--blurple-50-hsl) / 1);
@@ -52702,125 +52822,126 @@ html.disable-forced-colors * {
   --blurple-100: hsl(var(--blurple-100-hsl) / 1);
   --blurple-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --green-new-1: hsl(var(--green-new-1-hsl) / 1);
-  --green-new-1-hsl: 132.537 calc(var(--saturation-factor, 1) * 100%) 86.863%;
+  --green-new-1-hsl: 130 calc(var(--saturation-factor, 1) * 100%) 90.588%;
   --green-new-2: hsl(var(--green-new-2-hsl) / 1);
-  --green-new-2-hsl: 131.831 calc(var(--saturation-factor, 1) * 100%) 86.078%;
+  --green-new-2-hsl: 130.8 calc(var(--saturation-factor, 1) * 92.593%) 89.412%;
   --green-new-3: hsl(var(--green-new-3-hsl) / 1);
-  --green-new-3-hsl: 131.2 calc(var(--saturation-factor, 1) * 100%) 85.294%;
+  --green-new-3-hsl: 130.385 calc(var(--saturation-factor, 1) * 86.667%) 88.235%;
   --green-new-4: hsl(var(--green-new-4-hsl) / 1);
-  --green-new-4-hsl: 130.263 calc(var(--saturation-factor, 1) * 95%) 84.314%;
+  --green-new-4-hsl: 130.189 calc(var(--saturation-factor, 1) * 79.104%) 86.863%;
   --green-new-5: hsl(var(--green-new-5-hsl) / 1);
-  --green-new-5-hsl: 130.909 calc(var(--saturation-factor, 1) * 88.506%) 82.941%;
+  --green-new-5-hsl: 129.818 calc(var(--saturation-factor, 1) * 75.342%) 85.686%;
   --green-new-6: hsl(var(--green-new-6-hsl) / 1);
-  --green-new-6-hsl: 130.633 calc(var(--saturation-factor, 1) * 84.946%) 81.765%;
+  --green-new-6-hsl: 130.714 calc(var(--saturation-factor, 1) * 70%) 84.314%;
   --green-new-7: hsl(var(--green-new-7-hsl) / 1);
-  --green-new-7-hsl: 130.633 calc(var(--saturation-factor, 1) * 79.798%) 80.588%;
+  --green-new-7-hsl: 129.474 calc(var(--saturation-factor, 1) * 67.059%) 83.333%;
   --green-new-8: hsl(var(--green-new-8-hsl) / 1);
-  --green-new-8-hsl: 130.5 calc(var(--saturation-factor, 1) * 75.472%) 79.216%;
+  --green-new-8-hsl: 129.31 calc(var(--saturation-factor, 1) * 63.043%) 81.961%;
   --green-new-9: hsl(var(--green-new-9-hsl) / 1);
-  --green-new-9-hsl: 130.37 calc(var(--saturation-factor, 1) * 72.973%) 78.235%;
+  --green-new-9-hsl: 129 calc(var(--saturation-factor, 1) * 61.224%) 80.784%;
   --green-new-10: hsl(var(--green-new-10-hsl) / 1);
-  --green-new-10-hsl: 130.244 calc(var(--saturation-factor, 1) * 69.492%)
-    76.863%;
+  --green-new-10-hsl: 129.836 calc(var(--saturation-factor, 1) * 58.095%)
+    79.412%;
   --green-new-11: hsl(var(--green-new-11-hsl) / 1);
-  --green-new-11-hsl: 130.244 calc(var(--saturation-factor, 1) * 66.129%)
-    75.686%;
+  --green-new-11-hsl: 129.524 calc(var(--saturation-factor, 1) * 56.757%)
+    78.235%;
   --green-new-12: hsl(var(--green-new-12-hsl) / 1);
-  --green-new-12-hsl: 130.12 calc(var(--saturation-factor, 1) * 64.341%) 74.706%;
+  --green-new-12-hsl: 129.524 calc(var(--saturation-factor, 1) * 53.846%)
+    77.059%;
   --green-new-13: hsl(var(--green-new-13-hsl) / 1);
-  --green-new-13-hsl: 130.714 calc(var(--saturation-factor, 1) * 61.765%)
-    73.333%;
+  --green-new-13-hsl: 129.375 calc(var(--saturation-factor, 1) * 51.613%)
+    75.686%;
   --green-new-14: hsl(var(--green-new-14-hsl) / 1);
-  --green-new-14-hsl: 130 calc(var(--saturation-factor, 1) * 59.155%) 72.157%;
+  --green-new-14-hsl: 130 calc(var(--saturation-factor, 1) * 50.769%) 74.51%;
   --green-new-15: hsl(var(--green-new-15-hsl) / 1);
-  --green-new-15-hsl: 129.882 calc(var(--saturation-factor, 1) * 57.823%)
-    71.176%;
+  --green-new-15-hsl: 129.851 calc(var(--saturation-factor, 1) * 48.905%)
+    73.137%;
   --green-new-16: hsl(var(--green-new-16-hsl) / 1);
-  --green-new-16-hsl: 129.882 calc(var(--saturation-factor, 1) * 55.556%) 70%;
+  --green-new-16-hsl: 129.706 calc(var(--saturation-factor, 1) * 47.887%)
+    72.157%;
   --green-new-17: hsl(var(--green-new-17-hsl) / 1);
-  --green-new-17-hsl: 130.465 calc(var(--saturation-factor, 1) * 53.75%) 68.627%;
+  --green-new-17-hsl: 129.565 calc(var(--saturation-factor, 1) * 46.309%)
+    70.784%;
   --green-new-18: hsl(var(--green-new-18-hsl) / 1);
-  --green-new-18-hsl: 130.465 calc(var(--saturation-factor, 1) * 51.807%)
-    67.451%;
+  --green-new-18-hsl: 130.141 calc(var(--saturation-factor, 1) * 45.806%)
+    69.608%;
   --green-new-19: hsl(var(--green-new-19-hsl) / 1);
-  --green-new-19-hsl: 130.345 calc(var(--saturation-factor, 1) * 50.877%)
-    66.471%;
+  --green-new-19-hsl: 129.296 calc(var(--saturation-factor, 1) * 44.099%)
+    68.431%;
   --green-new-20: hsl(var(--green-new-20-hsl) / 1);
-  --green-new-20-hsl: 130.345 calc(var(--saturation-factor, 1) * 49.153%)
-    65.294%;
+  --green-new-20-hsl: 130 calc(var(--saturation-factor, 1) * 42.857%) 67.059%;
   --green-new-21: hsl(var(--green-new-21-hsl) / 1);
-  --green-new-21-hsl: 130.345 calc(var(--saturation-factor, 1) * 47.541%)
-    64.118%;
+  --green-new-21-hsl: 130.541 calc(var(--saturation-factor, 1) * 42.529%)
+    65.882%;
   --green-new-22: hsl(var(--green-new-22-hsl) / 1);
-  --green-new-22-hsl: 130.909 calc(var(--saturation-factor, 1) * 46.809%)
-    63.137%;
+  --green-new-22-hsl: 129.73 calc(var(--saturation-factor, 1) * 41.111%) 64.706%;
   --green-new-23: hsl(var(--green-new-23-hsl) / 1);
-  --green-new-23-hsl: 131.461 calc(var(--saturation-factor, 1) * 45.641%)
-    61.765%;
+  --green-new-23-hsl: 130.263 calc(var(--saturation-factor, 1) * 40.86%) 63.529%;
   --green-new-24: hsl(var(--green-new-24-hsl) / 1);
-  --green-new-24-hsl: 131.461 calc(var(--saturation-factor, 1) * 44.279%)
-    60.588%;
+  --green-new-24-hsl: 130.909 calc(var(--saturation-factor, 1) * 39.896%)
+    62.157%;
   --green-new-25: hsl(var(--green-new-25-hsl) / 1);
-  --green-new-25-hsl: 131.461 calc(var(--saturation-factor, 1) * 42.995%)
-    59.412%;
+  --green-new-25-hsl: 130.769 calc(var(--saturation-factor, 1) * 39.394%)
+    61.176%;
   --green-new-26: hsl(var(--green-new-26-hsl) / 1);
-  --green-new-26-hsl: 131.333 calc(var(--saturation-factor, 1) * 42.453%)
-    58.431%;
+  --green-new-26-hsl: 130.633 calc(var(--saturation-factor, 1) * 38.537%)
+    59.804%;
   --green-new-27: hsl(var(--green-new-27-hsl) / 1);
-  --green-new-27-hsl: 131.333 calc(var(--saturation-factor, 1) * 41.284%)
-    57.255%;
+  --green-new-27-hsl: 131.111 calc(var(--saturation-factor, 1) * 38.389%)
+    58.627%;
   --green-new-28: hsl(var(--green-new-28-hsl) / 1);
-  --green-new-28-hsl: 132 calc(var(--saturation-factor, 1) * 40.179%) 56.078%;
+  --green-new-28-hsl: 131.111 calc(var(--saturation-factor, 1) * 37.327%)
+    57.451%;
   --green-new-29: hsl(var(--green-new-29-hsl) / 1);
-  --green-new-29-hsl: 132.391 calc(var(--saturation-factor, 1) * 40%) 54.902%;
+  --green-new-29-hsl: 131.707 calc(var(--saturation-factor, 1) * 36.607%)
+    56.078%;
   --green-new-30: hsl(var(--green-new-30-hsl) / 1);
-  --green-new-30-hsl: 132.391 calc(var(--saturation-factor, 1) * 38.983%)
-    53.725%;
+  --green-new-30-hsl: 132.143 calc(var(--saturation-factor, 1) * 36.522%)
+    54.902%;
   --green-new-31: hsl(var(--green-new-31-hsl) / 1);
-  --green-new-31-hsl: 132.391 calc(var(--saturation-factor, 1) * 38.017%)
-    52.549%;
+  --green-new-31-hsl: 132.706 calc(var(--saturation-factor, 1) * 35.865%)
+    53.529%;
   --green-new-32: hsl(var(--green-new-32-hsl) / 1);
-  --green-new-32-hsl: 132.903 calc(var(--saturation-factor, 1) * 37.652%)
-    51.569%;
+  --green-new-32-hsl: 131.86 calc(var(--saturation-factor, 1) * 35.537%) 52.549%;
   --green-new-33: hsl(var(--green-new-33-hsl) / 1);
-  --green-new-33-hsl: 132.903 calc(var(--saturation-factor, 1) * 36.759%)
-    50.392%;
+  --green-new-33-hsl: 132.414 calc(var(--saturation-factor, 1) * 34.94%) 51.176%;
   --green-new-34: hsl(var(--green-new-34-hsl) / 1);
-  --green-new-34-hsl: 133.404 calc(var(--saturation-factor, 1) * 37.6%) 49.02%;
+  --green-new-34-hsl: 132.809 calc(var(--saturation-factor, 1) * 34.902%) 50%;
   --green-new-35: hsl(var(--green-new-35-hsl) / 1);
-  --green-new-35-hsl: 133.895 calc(var(--saturation-factor, 1) * 38.776%)
-    48.039%;
+  --green-new-35-hsl: 133.333 calc(var(--saturation-factor, 1) * 36.29%) 48.627%;
   --green-new-36: hsl(var(--green-new-36-hsl) / 1);
-  --green-new-36-hsl: 134.375 calc(var(--saturation-factor, 1) * 40.336%)
-    46.667%;
+  --green-new-36-hsl: 133.696 calc(var(--saturation-factor, 1) * 38.017%)
+    47.451%;
   --green-new-37: hsl(var(--green-new-37-hsl) / 1);
-  --green-new-37-hsl: 134.227 calc(var(--saturation-factor, 1) * 41.631%)
-    45.686%;
+  --green-new-37-hsl: 134.194 calc(var(--saturation-factor, 1) * 39.574%)
+    46.078%;
   --green-new-38: hsl(var(--green-new-38-hsl) / 1);
-  --green-new-38-hsl: 134.694 calc(var(--saturation-factor, 1) * 43.363%)
-    44.314%;
+  --green-new-38-hsl: 134.526 calc(var(--saturation-factor, 1) * 41.485%)
+    44.902%;
   --green-new-39: hsl(var(--green-new-39-hsl) / 1);
-  --green-new-39-hsl: 135.758 calc(var(--saturation-factor, 1) * 45.205%)
-    42.941%;
+  --green-new-39-hsl: 135 calc(var(--saturation-factor, 1) * 43.243%) 43.529%;
   --green-new-40: hsl(var(--green-new-40-hsl) / 1);
-  --green-new-40-hsl: 135.6 calc(var(--saturation-factor, 1) * 46.729%) 41.961%;
+  --green-new-40-hsl: 135.306 calc(var(--saturation-factor, 1) * 45.37%) 42.353%;
   --green-new-41: hsl(var(--green-new-41-hsl) / 1);
-  --green-new-41-hsl: 136.04 calc(var(--saturation-factor, 1) * 48.792%) 40.588%;
+  --green-new-41-hsl: 135.758 calc(var(--saturation-factor, 1) * 47.368%) 40.98%;
   --green-new-42: hsl(var(--green-new-42-hsl) / 1);
-  --green-new-42-hsl: 137.308 calc(var(--saturation-factor, 1) * 52%) 39.216%;
+  --green-new-42-hsl: 136.471 calc(var(--saturation-factor, 1) * 50.495%)
+    39.608%;
   --green-new-43: hsl(var(--green-new-43-hsl) / 1);
-  --green-new-43-hsl: 137.714 calc(var(--saturation-factor, 1) * 54.404%)
-    37.843%;
+  --green-new-43-hsl: 137.308 calc(var(--saturation-factor, 1) * 53.608%)
+    38.039%;
   --green-new-44: hsl(var(--green-new-44-hsl) / 1);
-  --green-new-44-hsl: 138.333 calc(var(--saturation-factor, 1) * 58.065%)
+  --green-new-44-hsl: 138.113 calc(var(--saturation-factor, 1) * 56.989%)
     36.471%;
   --green-new-45: hsl(var(--green-new-45-hsl) / 1);
-  --green-new-45-hsl: 139.091 calc(var(--saturation-factor, 1) * 61.798%)
-    34.902%;
+  --green-new-45-hsl: 139.266 calc(var(--saturation-factor, 1) * 60.894%)
+    35.098%;
   --green-new-46: hsl(var(--green-new-46-hsl) / 1);
-  --green-new-46-hsl: 140 calc(var(--saturation-factor, 1) * 67.059%) 33.333%;
+  --green-new-46-hsl: 140.357 calc(var(--saturation-factor, 1) * 65.882%)
+    33.333%;
   --green-new-47: hsl(var(--green-new-47-hsl) / 1);
-  --green-new-47-hsl: 141.864 calc(var(--saturation-factor, 1) * 73.75%) 31.373%;
+  --green-new-47-hsl: 141.538 calc(var(--saturation-factor, 1) * 72.671%)
+    31.569%;
   --green-new-48: hsl(var(--green-new-48-hsl) / 1);
   --green-new-48-hsl: 143.71 calc(var(--saturation-factor, 1) * 83.784%) 29.02%;
   --green-new-49: hsl(var(--green-new-49-hsl) / 1);
@@ -52933,97 +53054,97 @@ html.disable-forced-colors * {
   --green-new-100: hsl(var(--green-new-100-hsl) / 1);
   --green-new-100-hsl: 128.571 calc(var(--saturation-factor, 1) * 100%) 1.373%;
   --red-new-1: hsl(var(--red-new-1-hsl) / 1);
-  --red-new-1-hsl: 1.622 calc(var(--saturation-factor, 1) * 100%) 92.745%;
+  --red-new-1-hsl: 1.818 calc(var(--saturation-factor, 1) * 100%) 93.529%;
   --red-new-2: hsl(var(--red-new-2-hsl) / 1);
-  --red-new-2-hsl: 1.463 calc(var(--saturation-factor, 1) * 100%) 91.961%;
+  --red-new-2-hsl: 1.622 calc(var(--saturation-factor, 1) * 100%) 92.745%;
   --red-new-3: hsl(var(--red-new-3-hsl) / 1);
-  --red-new-3-hsl: 2.667 calc(var(--saturation-factor, 1) * 100%) 91.176%;
+  --red-new-3-hsl: 1.463 calc(var(--saturation-factor, 1) * 100%) 91.961%;
   --red-new-4: hsl(var(--red-new-4-hsl) / 1);
-  --red-new-4-hsl: 2.449 calc(var(--saturation-factor, 1) * 100%) 90.392%;
+  --red-new-4-hsl: 2.609 calc(var(--saturation-factor, 1) * 100%) 90.98%;
   --red-new-5: hsl(var(--red-new-5-hsl) / 1);
-  --red-new-5-hsl: 3.396 calc(var(--saturation-factor, 1) * 100%) 89.608%;
+  --red-new-5-hsl: 3.6 calc(var(--saturation-factor, 1) * 100%) 90.196%;
   --red-new-6: hsl(var(--red-new-6-hsl) / 1);
-  --red-new-6-hsl: 3.158 calc(var(--saturation-factor, 1) * 100%) 88.824%;
+  --red-new-6-hsl: 3.333 calc(var(--saturation-factor, 1) * 100%) 89.412%;
   --red-new-7: hsl(var(--red-new-7-hsl) / 1);
-  --red-new-7-hsl: 3.934 calc(var(--saturation-factor, 1) * 100%) 88.039%;
+  --red-new-7-hsl: 3.103 calc(var(--saturation-factor, 1) * 100%) 88.627%;
   --red-new-8: hsl(var(--red-new-8-hsl) / 1);
-  --red-new-8-hsl: 3.692 calc(var(--saturation-factor, 1) * 100%) 87.255%;
+  --red-new-8-hsl: 3.871 calc(var(--saturation-factor, 1) * 100%) 87.843%;
   --red-new-9: hsl(var(--red-new-9-hsl) / 1);
-  --red-new-9-hsl: 3.478 calc(var(--saturation-factor, 1) * 100%) 86.471%;
+  --red-new-9-hsl: 3.636 calc(var(--saturation-factor, 1) * 100%) 87.059%;
   --red-new-10: hsl(var(--red-new-10-hsl) / 1);
-  --red-new-10-hsl: 4.11 calc(var(--saturation-factor, 1) * 100%) 85.686%;
+  --red-new-10-hsl: 2.609 calc(var(--saturation-factor, 1) * 100%) 86.471%;
   --red-new-11: hsl(var(--red-new-11-hsl) / 1);
-  --red-new-11-hsl: 3.896 calc(var(--saturation-factor, 1) * 100%) 84.902%;
+  --red-new-11-hsl: 3.288 calc(var(--saturation-factor, 1) * 100%) 85.686%;
   --red-new-12: hsl(var(--red-new-12-hsl) / 1);
-  --red-new-12-hsl: 3.704 calc(var(--saturation-factor, 1) * 100%) 84.118%;
+  --red-new-12-hsl: 3.117 calc(var(--saturation-factor, 1) * 100%) 84.902%;
   --red-new-13: hsl(var(--red-new-13-hsl) / 1);
-  --red-new-13-hsl: 3.529 calc(var(--saturation-factor, 1) * 100%) 83.333%;
+  --red-new-13-hsl: 2.963 calc(var(--saturation-factor, 1) * 100%) 84.118%;
   --red-new-14: hsl(var(--red-new-14-hsl) / 1);
-  --red-new-14-hsl: 3.371 calc(var(--saturation-factor, 1) * 100%) 82.549%;
+  --red-new-14-hsl: 3.529 calc(var(--saturation-factor, 1) * 100%) 83.333%;
   --red-new-15: hsl(var(--red-new-15-hsl) / 1);
-  --red-new-15-hsl: 3.226 calc(var(--saturation-factor, 1) * 100%) 81.765%;
+  --red-new-15-hsl: 2.727 calc(var(--saturation-factor, 1) * 100%) 82.745%;
   --red-new-16: hsl(var(--red-new-16-hsl) / 1);
-  --red-new-16-hsl: 3.673 calc(var(--saturation-factor, 1) * 100%) 80.784%;
+  --red-new-16-hsl: 3.261 calc(var(--saturation-factor, 1) * 100%) 81.961%;
   --red-new-17: hsl(var(--red-new-17-hsl) / 1);
-  --red-new-17-hsl: 3.529 calc(var(--saturation-factor, 1) * 100%) 80%;
+  --red-new-17-hsl: 3.125 calc(var(--saturation-factor, 1) * 100%) 81.176%;
   --red-new-18: hsl(var(--red-new-18-hsl) / 1);
-  --red-new-18-hsl: 3.396 calc(var(--saturation-factor, 1) * 100%) 79.216%;
+  --red-new-18-hsl: 2.424 calc(var(--saturation-factor, 1) * 100%) 80.588%;
   --red-new-19: hsl(var(--red-new-19-hsl) / 1);
-  --red-new-19-hsl: 3.273 calc(var(--saturation-factor, 1) * 100%) 78.431%;
+  --red-new-19-hsl: 2.913 calc(var(--saturation-factor, 1) * 100%) 79.804%;
   --red-new-20: hsl(var(--red-new-20-hsl) / 1);
-  --red-new-20-hsl: 3.186 calc(var(--saturation-factor, 1) * 100%) 77.843%;
+  --red-new-20-hsl: 2.804 calc(var(--saturation-factor, 1) * 100%) 79.02%;
   --red-new-21: hsl(var(--red-new-21-hsl) / 1);
-  --red-new-21-hsl: 3.103 calc(var(--saturation-factor, 1) * 100%) 77.255%;
+  --red-new-21-hsl: 2.752 calc(var(--saturation-factor, 1) * 98.198%) 78.235%;
   --red-new-22: hsl(var(--red-new-22-hsl) / 1);
-  --red-new-22-hsl: 3 calc(var(--saturation-factor, 1) * 100%) 76.471%;
+  --red-new-22-hsl: 2.679 calc(var(--saturation-factor, 1) * 96.552%) 77.255%;
   --red-new-23: hsl(var(--red-new-23-hsl) / 1);
-  --red-new-23-hsl: 2.927 calc(var(--saturation-factor, 1) * 100%) 75.882%;
+  --red-new-23-hsl: 2.632 calc(var(--saturation-factor, 1) * 95%) 76.471%;
   --red-new-24: hsl(var(--red-new-24-hsl) / 1);
-  --red-new-24-hsl: 2.381 calc(var(--saturation-factor, 1) * 100%) 75.294%;
+  --red-new-24-hsl: 2.069 calc(var(--saturation-factor, 1) * 93.548%) 75.686%;
   --red-new-25: hsl(var(--red-new-25-hsl) / 1);
-  --red-new-25-hsl: 2.326 calc(var(--saturation-factor, 1) * 100%) 74.706%;
+  --red-new-25-hsl: 2.521 calc(var(--saturation-factor, 1) * 92.248%) 74.706%;
   --red-new-26: hsl(var(--red-new-26-hsl) / 1);
-  --red-new-26-hsl: 2.273 calc(var(--saturation-factor, 1) * 100%) 74.118%;
+  --red-new-26-hsl: 1.983 calc(var(--saturation-factor, 1) * 90.977%) 73.922%;
   --red-new-27: hsl(var(--red-new-27-hsl) / 1);
-  --red-new-27-hsl: 1.791 calc(var(--saturation-factor, 1) * 98.529%) 73.333%;
+  --red-new-27-hsl: 2.419 calc(var(--saturation-factor, 1) * 89.855%) 72.941%;
   --red-new-28: hsl(var(--red-new-28-hsl) / 1);
-  --red-new-28-hsl: 1.778 calc(var(--saturation-factor, 1) * 95.745%) 72.353%;
+  --red-new-28-hsl: 1.92 calc(var(--saturation-factor, 1) * 87.413%) 71.961%;
   --red-new-29: hsl(var(--red-new-29-hsl) / 1);
-  --red-new-29-hsl: 1.765 calc(var(--saturation-factor, 1) * 93.151%) 71.373%;
+  --red-new-29-hsl: 1.417 calc(var(--saturation-factor, 1) * 86.395%) 71.176%;
   --red-new-30: hsl(var(--red-new-30-hsl) / 1);
-  --red-new-30-hsl: 1.752 calc(var(--saturation-factor, 1) * 90.728%) 70.392%;
+  --red-new-30-hsl: 1.846 calc(var(--saturation-factor, 1) * 85.526%) 70.196%;
   --red-new-31: hsl(var(--red-new-31-hsl) / 1);
-  --red-new-31-hsl: 1.295 calc(var(--saturation-factor, 1) * 89.677%) 69.608%;
+  --red-new-31-hsl: 1.374 calc(var(--saturation-factor, 1) * 83.439%) 69.216%;
   --red-new-32: hsl(var(--red-new-32-hsl) / 1);
-  --red-new-32-hsl: 1.286 calc(var(--saturation-factor, 1) * 87.5%) 68.627%;
+  --red-new-32-hsl: 1.353 calc(var(--saturation-factor, 1) * 82.609%) 68.431%;
   --red-new-33: hsl(var(--red-new-33-hsl) / 1);
-  --red-new-33-hsl: 1.277 calc(var(--saturation-factor, 1) * 85.455%) 67.647%;
+  --red-new-33-hsl: 0.896 calc(var(--saturation-factor, 1) * 80.723%) 67.451%;
   --red-new-34: hsl(var(--red-new-34-hsl) / 1);
-  --red-new-34-hsl: 0.845 calc(var(--saturation-factor, 1) * 83.529%) 66.667%;
+  --red-new-34-hsl: 0.882 calc(var(--saturation-factor, 1) * 80%) 66.667%;
   --red-new-35: hsl(var(--red-new-35-hsl) / 1);
-  --red-new-35-hsl: 0.839 calc(var(--saturation-factor, 1) * 81.714%) 65.686%;
+  --red-new-35-hsl: 0.438 calc(var(--saturation-factor, 1) * 78.286%) 65.686%;
   --red-new-36: hsl(var(--red-new-36-hsl) / 1);
-  --red-new-36-hsl: 0.833 calc(var(--saturation-factor, 1) * 80%) 64.706%;
+  --red-new-36-hsl: 0.863 calc(var(--saturation-factor, 1) * 76.796%) 64.51%;
   --red-new-37: hsl(var(--red-new-37-hsl) / 1);
-  --red-new-37-hsl: 0 calc(var(--saturation-factor, 1) * 78.261%) 63.922%;
+  --red-new-37-hsl: 0.426 calc(var(--saturation-factor, 1) * 76.216%) 63.725%;
   --red-new-38: hsl(var(--red-new-38-hsl) / 1);
-  --red-new-38-hsl: 0 calc(var(--saturation-factor, 1) * 76.72%) 62.941%;
+  --red-new-38-hsl: 0 calc(var(--saturation-factor, 1) * 74.737%) 62.745%;
   --red-new-39: hsl(var(--red-new-39-hsl) / 1);
-  --red-new-39-hsl: 359.592 calc(var(--saturation-factor, 1) * 75.385%) 61.765%;
+  --red-new-39-hsl: 0 calc(var(--saturation-factor, 1) * 73.333%) 61.765%;
   --red-new-40: hsl(var(--red-new-40-hsl) / 1);
-  --red-new-40-hsl: 359.595 calc(var(--saturation-factor, 1) * 74%) 60.784%;
+  --red-new-40-hsl: 359.589 calc(var(--saturation-factor, 1) * 73%) 60.784%;
   --red-new-41: hsl(var(--red-new-41-hsl) / 1);
-  --red-new-41-hsl: 359.2 calc(var(--saturation-factor, 1) * 72.816%) 59.608%;
+  --red-new-41-hsl: 359.189 calc(var(--saturation-factor, 1) * 71.845%) 59.608%;
   --red-new-42: hsl(var(--red-new-42-hsl) / 1);
-  --red-new-42-hsl: 358.808 calc(var(--saturation-factor, 1) * 71.564%) 58.627%;
+  --red-new-42-hsl: 358.8 calc(var(--saturation-factor, 1) * 70.755%) 58.431%;
   --red-new-43: hsl(var(--red-new-43-hsl) / 1);
-  --red-new-43-hsl: 358.431 calc(var(--saturation-factor, 1) * 70.507%) 57.451%;
+  --red-new-43-hsl: 358.421 calc(var(--saturation-factor, 1) * 69.725%) 57.255%;
   --red-new-44: hsl(var(--red-new-44-hsl) / 1);
-  --red-new-44-hsl: 358.052 calc(var(--saturation-factor, 1) * 68.75%) 56.078%;
+  --red-new-44-hsl: 358.431 calc(var(--saturation-factor, 1) * 68.61%) 56.275%;
   --red-new-45: hsl(var(--red-new-45-hsl) / 1);
   --red-new-45-hsl: 357.692 calc(var(--saturation-factor, 1) * 67.826%) 54.902%;
   --red-new-46: hsl(var(--red-new-46-hsl) / 1);
-  --red-new-46-hsl: 357.342 calc(var(--saturation-factor, 1) * 66.949%) 53.725%;
+  --red-new-46-hsl: 356.962 calc(var(--saturation-factor, 1) * 66.949%) 53.725%;
   --red-new-47: hsl(var(--red-new-47-hsl) / 1);
   --red-new-47-hsl: 356.625 calc(var(--saturation-factor, 1) * 66.116%) 52.549%;
   --red-new-48: hsl(var(--red-new-48-hsl) / 1);
@@ -53133,99 +53254,99 @@ html.disable-forced-colors * {
   --red-new-100: hsl(var(--red-new-100-hsl) / 1);
   --red-new-100-hsl: 345 calc(var(--saturation-factor, 1) * 100%) 0.784%;
   --teal-new-1: hsl(var(--teal-new-1-hsl) / 1);
-  --teal-new-1-hsl: 180 calc(var(--saturation-factor, 1) * 100%) 84.706%;
+  --teal-new-1-hsl: 184.364 calc(var(--saturation-factor, 1) * 100%) 89.216%;
   --teal-new-2: hsl(var(--teal-new-2-hsl) / 1);
-  --teal-new-2-hsl: 182.195 calc(var(--saturation-factor, 1) * 100%) 83.922%;
+  --teal-new-2-hsl: 186.316 calc(var(--saturation-factor, 1) * 96.61%) 88.431%;
   --teal-new-3: hsl(var(--teal-new-3-hsl) / 1);
-  --teal-new-3-hsl: 183.529 calc(var(--saturation-factor, 1) * 100%) 83.333%;
+  --teal-new-3-hsl: 185.172 calc(var(--saturation-factor, 1) * 87.879%) 87.059%;
   --teal-new-4: hsl(var(--teal-new-4-hsl) / 1);
-  --teal-new-4-hsl: 185.455 calc(var(--saturation-factor, 1) * 100%) 82.745%;
+  --teal-new-4-hsl: 186 calc(var(--saturation-factor, 1) * 83.333%) 85.882%;
   --teal-new-5: hsl(var(--teal-new-5-hsl) / 1);
-  --teal-new-5-hsl: 185.393 calc(var(--saturation-factor, 1) * 93.684%) 81.373%;
+  --teal-new-5-hsl: 186 calc(var(--saturation-factor, 1) * 76.923%) 84.706%;
   --teal-new-6: hsl(var(--teal-new-6-hsl) / 1);
-  --teal-new-6-hsl: 185.393 calc(var(--saturation-factor, 1) * 88.119%) 80.196%;
+  --teal-new-6-hsl: 185.806 calc(var(--saturation-factor, 1) * 73.81%) 83.529%;
   --teal-new-7: hsl(var(--teal-new-7-hsl) / 1);
-  --teal-new-7-hsl: 185.333 calc(var(--saturation-factor, 1) * 84.906%) 79.216%;
+  --teal-new-7-hsl: 185.806 calc(var(--saturation-factor, 1) * 68.889%) 82.353%;
   --teal-new-8: hsl(var(--teal-new-8-hsl) / 1);
-  --teal-new-8-hsl: 185.333 calc(var(--saturation-factor, 1) * 80.357%) 78.039%;
+  --teal-new-8-hsl: 185.625 calc(var(--saturation-factor, 1) * 66.667%) 81.176%;
   --teal-new-9: hsl(var(--teal-new-9-hsl) / 1);
-  --teal-new-9-hsl: 185.275 calc(var(--saturation-factor, 1) * 76.471%) 76.667%;
+  --teal-new-9-hsl: 185.538 calc(var(--saturation-factor, 1) * 63.107%) 79.804%;
   --teal-new-10: hsl(var(--teal-new-10-hsl) / 1);
-  --teal-new-10-hsl: 185.217 calc(var(--saturation-factor, 1) * 74.194%) 75.686%;
+  --teal-new-10-hsl: 186.364 calc(var(--saturation-factor, 1) * 61.111%) 78.824%;
   --teal-new-11: hsl(var(--teal-new-11-hsl) / 1);
-  --teal-new-11-hsl: 185.217 calc(var(--saturation-factor, 1) * 70.769%) 74.51%;
+  --teal-new-11-hsl: 185.373 calc(var(--saturation-factor, 1) * 58.261%) 77.451%;
   --teal-new-12: hsl(var(--teal-new-12-hsl) / 1);
-  --teal-new-12-hsl: 185.217 calc(var(--saturation-factor, 1) * 67.647%) 73.333%;
+  --teal-new-12-hsl: 186.176 calc(var(--saturation-factor, 1) * 56.667%) 76.471%;
   --teal-new-13: hsl(var(--teal-new-13-hsl) / 1);
-  --teal-new-13-hsl: 185.806 calc(var(--saturation-factor, 1) * 65.957%) 72.353%;
+  --teal-new-13-hsl: 185.217 calc(var(--saturation-factor, 1) * 54.331%) 75.098%;
   --teal-new-14: hsl(var(--teal-new-14-hsl) / 1);
-  --teal-new-14-hsl: 185.161 calc(var(--saturation-factor, 1) * 63.265%) 71.176%;
+  --teal-new-14-hsl: 185.915 calc(var(--saturation-factor, 1) * 53.383%) 73.922%;
   --teal-new-15: hsl(var(--teal-new-15-hsl) / 1);
-  --teal-new-15-hsl: 185.161 calc(var(--saturation-factor, 1) * 60.784%) 70%;
+  --teal-new-15-hsl: 185.915 calc(var(--saturation-factor, 1) * 51.079%) 72.745%;
   --teal-new-16: hsl(var(--teal-new-16-hsl) / 1);
-  --teal-new-16-hsl: 185.161 calc(var(--saturation-factor, 1) * 58.491%) 68.824%;
+  --teal-new-16-hsl: 185.753 calc(var(--saturation-factor, 1) * 50.345%) 71.569%;
   --teal-new-17: hsl(var(--teal-new-17-hsl) / 1);
-  --teal-new-17-hsl: 185.106 calc(var(--saturation-factor, 1) * 57.317%) 67.843%;
+  --teal-new-17-hsl: 185.753 calc(var(--saturation-factor, 1) * 48.344%) 70.392%;
   --teal-new-18: hsl(var(--teal-new-18-hsl) / 1);
-  --teal-new-18-hsl: 185.161 calc(var(--saturation-factor, 1) * 55.03%) 66.863%;
+  --teal-new-18-hsl: 185.6 calc(var(--saturation-factor, 1) * 47.771%) 69.216%;
   --teal-new-19: hsl(var(--teal-new-19-hsl) / 1);
-  --teal-new-19-hsl: 185.161 calc(var(--saturation-factor, 1) * 53.143%) 65.686%;
+  --teal-new-19-hsl: 185.6 calc(var(--saturation-factor, 1) * 46.012%) 68.039%;
   --teal-new-20: hsl(var(--teal-new-20-hsl) / 1);
-  --teal-new-20-hsl: 185.106 calc(var(--saturation-factor, 1) * 52.222%) 64.706%;
+  --teal-new-20-hsl: 185.455 calc(var(--saturation-factor, 1) * 45.562%) 66.863%;
   --teal-new-21: hsl(var(--teal-new-21-hsl) / 1);
-  --teal-new-21-hsl: 185.106 calc(var(--saturation-factor, 1) * 50.538%) 63.529%;
+  --teal-new-21-hsl: 185.455 calc(var(--saturation-factor, 1) * 44%) 65.686%;
   --teal-new-22: hsl(var(--teal-new-22-hsl) / 1);
-  --teal-new-22-hsl: 185.106 calc(var(--saturation-factor, 1) * 48.958%) 62.353%;
+  --teal-new-22-hsl: 186.076 calc(var(--saturation-factor, 1) * 43.646%) 64.51%;
   --teal-new-23: hsl(var(--teal-new-23-hsl) / 1);
-  --teal-new-23-hsl: 185.053 calc(var(--saturation-factor, 1) * 48.223%) 61.373%;
+  --teal-new-23-hsl: 185.316 calc(var(--saturation-factor, 1) * 42.246%) 63.333%;
   --teal-new-24: hsl(var(--teal-new-24-hsl) / 1);
-  --teal-new-24-hsl: 185.053 calc(var(--saturation-factor, 1) * 46.798%) 60.196%;
+  --teal-new-24-hsl: 185.926 calc(var(--saturation-factor, 1) * 41.969%) 62.157%;
   --teal-new-25: hsl(var(--teal-new-25-hsl) / 1);
-  --teal-new-25-hsl: 185.053 calc(var(--saturation-factor, 1) * 45.455%) 59.02%;
+  --teal-new-25-hsl: 185.185 calc(var(--saturation-factor, 1) * 40.704%) 60.98%;
   --teal-new-26: hsl(var(--teal-new-26-hsl) / 1);
-  --teal-new-26-hsl: 185 calc(var(--saturation-factor, 1) * 44.86%) 58.039%;
+  --teal-new-26-hsl: 185.783 calc(var(--saturation-factor, 1) * 40.488%) 59.804%;
   --teal-new-27: hsl(var(--teal-new-27-hsl) / 1);
-  --teal-new-27-hsl: 185 calc(var(--saturation-factor, 1) * 43.636%) 56.863%;
+  --teal-new-27-hsl: 185.06 calc(var(--saturation-factor, 1) * 39.336%) 58.627%;
   --teal-new-28: hsl(var(--teal-new-28-hsl) / 1);
-  --teal-new-28-hsl: 185.625 calc(var(--saturation-factor, 1) * 42.857%) 56.078%;
+  --teal-new-28-hsl: 185.647 calc(var(--saturation-factor, 1) * 39.171%) 57.451%;
   --teal-new-29: hsl(var(--teal-new-29-hsl) / 1);
-  --teal-new-29-hsl: 185 calc(var(--saturation-factor, 1) * 41.739%) 54.902%;
+  --teal-new-29-hsl: 184.884 calc(var(--saturation-factor, 1) * 38.393%) 56.078%;
   --teal-new-30: hsl(var(--teal-new-30-hsl) / 1);
-  --teal-new-30-hsl: 185 calc(var(--saturation-factor, 1) * 40.678%) 53.725%;
+  --teal-new-30-hsl: 185.517 calc(var(--saturation-factor, 1) * 37.991%) 55.098%;
   --teal-new-31: hsl(var(--teal-new-31-hsl) / 1);
-  --teal-new-31-hsl: 185.567 calc(var(--saturation-factor, 1) * 40.249%) 52.745%;
+  --teal-new-31-hsl: 184.773 calc(var(--saturation-factor, 1) * 37.288%) 53.725%;
   --teal-new-32: hsl(var(--teal-new-32-hsl) / 1);
-  --teal-new-32-hsl: 184.948 calc(var(--saturation-factor, 1) * 39.271%) 51.569%;
+  --teal-new-32-hsl: 185.393 calc(var(--saturation-factor, 1) * 36.929%) 52.745%;
   --teal-new-33: hsl(var(--teal-new-33-hsl) / 1);
-  --teal-new-33-hsl: 185.455 calc(var(--saturation-factor, 1) * 39.13%) 50.392%;
+  --teal-new-33-hsl: 185.275 calc(var(--saturation-factor, 1) * 36.842%) 51.569%;
   --teal-new-34: hsl(var(--teal-new-34-hsl) / 1);
-  --teal-new-34-hsl: 184.848 calc(var(--saturation-factor, 1) * 39.442%) 49.216%;
+  --teal-new-34-hsl: 185.217 calc(var(--saturation-factor, 1) * 36.22%) 50.196%;
   --teal-new-35: hsl(var(--teal-new-35-hsl) / 1);
-  --teal-new-35-hsl: 184.848 calc(var(--saturation-factor, 1) * 40.408%) 48.039%;
+  --teal-new-35-hsl: 185.745 calc(var(--saturation-factor, 1) * 37.6%) 49.02%;
   --teal-new-36: hsl(var(--teal-new-36-hsl) / 1);
-  --teal-new-36-hsl: 185.4 calc(var(--saturation-factor, 1) * 41.667%) 47.059%;
+  --teal-new-36-hsl: 185.106 calc(var(--saturation-factor, 1) * 38.525%) 47.843%;
   --teal-new-37: hsl(var(--teal-new-37-hsl) / 1);
-  --teal-new-37-hsl: 184.752 calc(var(--saturation-factor, 1) * 43.348%) 45.686%;
+  --teal-new-37-hsl: 185 calc(var(--saturation-factor, 1) * 40.336%) 46.667%;
   --teal-new-38: hsl(var(--teal-new-38-hsl) / 1);
-  --teal-new-38-hsl: 185.294 calc(var(--saturation-factor, 1) * 44.737%) 44.706%;
+  --teal-new-38-hsl: 184.948 calc(var(--saturation-factor, 1) * 41.991%) 45.294%;
   --teal-new-39: hsl(var(--teal-new-39-hsl) / 1);
-  --teal-new-39-hsl: 184.66 calc(var(--saturation-factor, 1) * 46.606%) 43.333%;
+  --teal-new-39-hsl: 184.848 calc(var(--saturation-factor, 1) * 44%) 44.118%;
   --teal-new-40: hsl(var(--teal-new-40-hsl) / 1);
-  --teal-new-40-hsl: 185.192 calc(var(--saturation-factor, 1) * 48.148%) 42.353%;
+  --teal-new-40-hsl: 185.347 calc(var(--saturation-factor, 1) * 46.119%) 42.941%;
   --teal-new-41: hsl(var(--teal-new-41-hsl) / 1);
-  --teal-new-41-hsl: 184.571 calc(var(--saturation-factor, 1) * 50.239%) 40.98%;
+  --teal-new-41-hsl: 184.66 calc(var(--saturation-factor, 1) * 48.815%) 41.373%;
   --teal-new-42: hsl(var(--teal-new-42-hsl) / 1);
-  --teal-new-42-hsl: 185.047 calc(var(--saturation-factor, 1) * 52.709%) 39.804%;
+  --teal-new-42-hsl: 185.143 calc(var(--saturation-factor, 1) * 51.22%) 40.196%;
   --teal-new-43: hsl(var(--teal-new-43-hsl) / 1);
-  --teal-new-43-hsl: 184.444 calc(var(--saturation-factor, 1) * 55.102%) 38.431%;
+  --teal-new-43-hsl: 184.486 calc(var(--saturation-factor, 1) * 54.315%) 38.627%;
   --teal-new-44: hsl(var(--teal-new-44-hsl) / 1);
-  --teal-new-44-hsl: 184.865 calc(var(--saturation-factor, 1) * 58.73%) 37.059%;
+  --teal-new-44-hsl: 184.909 calc(var(--saturation-factor, 1) * 57.895%) 37.255%;
   --teal-new-45: hsl(var(--teal-new-45-hsl) / 1);
-  --teal-new-45-hsl: 184.737 calc(var(--saturation-factor, 1) * 62.637%) 35.686%;
+  --teal-new-45-hsl: 184.779 calc(var(--saturation-factor, 1) * 61.749%) 35.882%;
   --teal-new-46: hsl(var(--teal-new-46-hsl) / 1);
-  --teal-new-46-hsl: 184.615 calc(var(--saturation-factor, 1) * 67.63%) 33.922%;
+  --teal-new-46-hsl: 184.655 calc(var(--saturation-factor, 1) * 66.667%) 34.118%;
   --teal-new-47: hsl(var(--teal-new-47-hsl) / 1);
-  --teal-new-47-hsl: 184.426 calc(var(--saturation-factor, 1) * 74.39%) 32.157%;
+  --teal-new-47-hsl: 184.463 calc(var(--saturation-factor, 1) * 73.333%) 32.353%;
   --teal-new-48: hsl(var(--teal-new-48-hsl) / 1);
   --teal-new-48-hsl: 184.219 calc(var(--saturation-factor, 1) * 84.211%) 29.804%;
   --teal-new-49: hsl(var(--teal-new-49-hsl) / 1);
@@ -53333,126 +53454,120 @@ html.disable-forced-colors * {
   --teal-new-100: hsl(var(--teal-new-100-hsl) / 1);
   --teal-new-100-hsl: 207.273 calc(var(--saturation-factor, 1) * 100%) 2.157%;
   --yellow-new-1: hsl(var(--yellow-new-1-hsl) / 1);
-  --yellow-new-1-hsl: 32.222 calc(var(--saturation-factor, 1) * 100%) 89.412%;
+  --yellow-new-1-hsl: 27.907 calc(var(--saturation-factor, 1) * 100%) 91.569%;
   --yellow-new-2: hsl(var(--yellow-new-2-hsl) / 1);
-  --yellow-new-2-hsl: 32 calc(var(--saturation-factor, 1) * 100%) 88.235%;
+  --yellow-new-2-hsl: 27.5 calc(var(--saturation-factor, 1) * 100%) 90.588%;
   --yellow-new-3: hsl(var(--yellow-new-3-hsl) / 1);
-  --yellow-new-3-hsl: 32.727 calc(var(--saturation-factor, 1) * 100%) 87.059%;
+  --yellow-new-3-hsl: 28.235 calc(var(--saturation-factor, 1) * 92.727%) 89.216%;
   --yellow-new-4: hsl(var(--yellow-new-4-hsl) / 1);
-  --yellow-new-4-hsl: 32.5 calc(var(--saturation-factor, 1) * 100%) 85.882%;
+  --yellow-new-4-hsl: 28.364 calc(var(--saturation-factor, 1) * 90.164%) 88.039%;
   --yellow-new-5: hsl(var(--yellow-new-5-hsl) / 1);
-  --yellow-new-5-hsl: 31.948 calc(var(--saturation-factor, 1) * 100%) 84.902%;
+  --yellow-new-5-hsl: 30 calc(var(--saturation-factor, 1) * 85.294%) 86.667%;
   --yellow-new-6: hsl(var(--yellow-new-6-hsl) / 1);
-  --yellow-new-6-hsl: 31.463 calc(var(--saturation-factor, 1) * 100%) 83.922%;
+  --yellow-new-6-hsl: 30.492 calc(var(--saturation-factor, 1) * 81.333%) 85.294%;
   --yellow-new-7: hsl(var(--yellow-new-7-hsl) / 1);
-  --yellow-new-7-hsl: 31.724 calc(var(--saturation-factor, 1) * 97.753%) 82.549%;
+  --yellow-new-7-hsl: 30.938 calc(var(--saturation-factor, 1) * 78.049%) 83.922%;
   --yellow-new-8: hsl(var(--yellow-new-8-hsl) / 1);
-  --yellow-new-8-hsl: 32 calc(var(--saturation-factor, 1) * 93.75%) 81.176%;
+  --yellow-new-8-hsl: 30.909 calc(var(--saturation-factor, 1) * 75%) 82.745%;
   --yellow-new-9: hsl(var(--yellow-new-9-hsl) / 1);
-  --yellow-new-9-hsl: 32.258 calc(var(--saturation-factor, 1) * 90.291%) 79.804%;
+  --yellow-new-9-hsl: 30.857 calc(var(--saturation-factor, 1) * 74.468%) 81.569%;
   --yellow-new-10: hsl(var(--yellow-new-10-hsl) / 1);
-  --yellow-new-10-hsl: 33.125 calc(var(--saturation-factor, 1) * 87.273%)
-    78.431%;
+  --yellow-new-10-hsl: 31.233 calc(var(--saturation-factor, 1) * 72.277%)
+    80.196%;
   --yellow-new-11: hsl(var(--yellow-new-11-hsl) / 1);
-  --yellow-new-11-hsl: 33.061 calc(var(--saturation-factor, 1) * 84.483%)
-    77.255%;
+  --yellow-new-11-hsl: 31.579 calc(var(--saturation-factor, 1) * 70.37%) 78.824%;
   --yellow-new-12: hsl(var(--yellow-new-12-hsl) / 1);
-  --yellow-new-12-hsl: 33.267 calc(var(--saturation-factor, 1) * 82.114%)
-    75.882%;
+  --yellow-new-12-hsl: 32.308 calc(var(--saturation-factor, 1) * 68.421%)
+    77.647%;
   --yellow-new-13: hsl(var(--yellow-new-13-hsl) / 1);
-  --yellow-new-13-hsl: 33.204 calc(var(--saturation-factor, 1) * 79.845%)
-    74.706%;
+  --yellow-new-13-hsl: 32.593 calc(var(--saturation-factor, 1) * 66.942%)
+    76.275%;
   --yellow-new-14: hsl(var(--yellow-new-14-hsl) / 1);
-  --yellow-new-14-hsl: 33.396 calc(var(--saturation-factor, 1) * 77.941%)
-    73.333%;
+  --yellow-new-14-hsl: 32.53 calc(var(--saturation-factor, 1) * 65.354%) 75.098%;
   --yellow-new-15: hsl(var(--yellow-new-15-hsl) / 1);
-  --yellow-new-15-hsl: 33.333 calc(var(--saturation-factor, 1) * 76.056%)
-    72.157%;
+  --yellow-new-15-hsl: 32.471 calc(var(--saturation-factor, 1) * 63.91%) 73.922%;
   --yellow-new-16: hsl(var(--yellow-new-16-hsl) / 1);
-  --yellow-new-16-hsl: 33.818 calc(var(--saturation-factor, 1) * 74.324%) 70.98%;
+  --yellow-new-16-hsl: 32.36 calc(var(--saturation-factor, 1) * 64.029%) 72.745%;
   --yellow-new-17: hsl(var(--yellow-new-17-hsl) / 1);
-  --yellow-new-17-hsl: 33.75 calc(var(--saturation-factor, 1) * 72.727%) 69.804%;
+  --yellow-new-17-hsl: 32.308 calc(var(--saturation-factor, 1) * 62.759%)
+    71.569%;
   --yellow-new-18: hsl(var(--yellow-new-18-hsl) / 1);
-  --yellow-new-18-hsl: 33.982 calc(var(--saturation-factor, 1) * 70.186%)
-    68.431%;
+  --yellow-new-18-hsl: 32.258 calc(var(--saturation-factor, 1) * 61.589%)
+    70.392%;
   --yellow-new-19: hsl(var(--yellow-new-19-hsl) / 1);
-  --yellow-new-19-hsl: 33.913 calc(var(--saturation-factor, 1) * 68.862%)
-    67.255%;
+  --yellow-new-19-hsl: 33.125 calc(var(--saturation-factor, 1) * 60.759%) 69.02%;
   --yellow-new-20: hsl(var(--yellow-new-20-hsl) / 1);
-  --yellow-new-20-hsl: 34.359 calc(var(--saturation-factor, 1) * 67.63%) 66.078%;
+  --yellow-new-20-hsl: 33.061 calc(var(--saturation-factor, 1) * 59.756%)
+    67.843%;
   --yellow-new-21: hsl(var(--yellow-new-21-hsl) / 1);
-  --yellow-new-21-hsl: 34.068 calc(var(--saturation-factor, 1) * 66.292%)
-    65.098%;
+  --yellow-new-21-hsl: 33 calc(var(--saturation-factor, 1) * 58.824%) 66.667%;
   --yellow-new-22: hsl(var(--yellow-new-22-hsl) / 1);
-  --yellow-new-22-hsl: 34.286 calc(var(--saturation-factor, 1) * 64.324%)
-    63.725%;
+  --yellow-new-22-hsl: 32.941 calc(var(--saturation-factor, 1) * 57.955%) 65.49%;
   --yellow-new-23: hsl(var(--yellow-new-23-hsl) / 1);
-  --yellow-new-23-hsl: 34.215 calc(var(--saturation-factor, 1) * 63.351%)
-    62.549%;
+  --yellow-new-23-hsl: 32.885 calc(var(--saturation-factor, 1) * 57.143%)
+    64.314%;
   --yellow-new-24: hsl(var(--yellow-new-24-hsl) / 1);
-  --yellow-new-24-hsl: 34.426 calc(var(--saturation-factor, 1) * 62.245%)
-    61.569%;
+  --yellow-new-24-hsl: 33.396 calc(var(--saturation-factor, 1) * 56.383%)
+    63.137%;
   --yellow-new-25: hsl(var(--yellow-new-25-hsl) / 1);
-  --yellow-new-25-hsl: 34.355 calc(var(--saturation-factor, 1) * 61.386%)
-    60.392%;
+  --yellow-new-25-hsl: 33.333 calc(var(--saturation-factor, 1) * 55.67%) 61.961%;
   --yellow-new-26: hsl(var(--yellow-new-26-hsl) / 1);
-  --yellow-new-26-hsl: 34.355 calc(var(--saturation-factor, 1) * 59.615%)
-    59.216%;
+  --yellow-new-26-hsl: 33.273 calc(var(--saturation-factor, 1) * 55%) 60.784%;
   --yellow-new-27: hsl(var(--yellow-new-27-hsl) / 1);
-  --yellow-new-27-hsl: 34.08 calc(var(--saturation-factor, 1) * 58.685%) 58.235%;
+  --yellow-new-27-hsl: 33.214 calc(var(--saturation-factor, 1) * 54.369%)
+    59.608%;
   --yellow-new-28: hsl(var(--yellow-new-28-hsl) / 1);
-  --yellow-new-28-hsl: 34.488 calc(var(--saturation-factor, 1) * 57.991%)
-    57.059%;
+  --yellow-new-28-hsl: 33.684 calc(var(--saturation-factor, 1) * 53.774%)
+    58.431%;
   --yellow-new-29: hsl(var(--yellow-new-29-hsl) / 1);
-  --yellow-new-29-hsl: 34.488 calc(var(--saturation-factor, 1) * 56.444%)
-    55.882%;
+  --yellow-new-29-hsl: 33.621 calc(var(--saturation-factor, 1) * 53.211%)
+    57.255%;
   --yellow-new-30: hsl(var(--yellow-new-30-hsl) / 1);
-  --yellow-new-30-hsl: 34.219 calc(var(--saturation-factor, 1) * 55.652%)
-    54.902%;
+  --yellow-new-30-hsl: 33.559 calc(var(--saturation-factor, 1) * 52.679%)
+    56.078%;
   --yellow-new-31: hsl(var(--yellow-new-31-hsl) / 1);
-  --yellow-new-31-hsl: 34.615 calc(var(--saturation-factor, 1) * 55.085%)
-    53.725%;
+  --yellow-new-31-hsl: 33.277 calc(var(--saturation-factor, 1) * 51.965%)
+    55.098%;
   --yellow-new-32: hsl(var(--yellow-new-32-hsl) / 1);
-  --yellow-new-32-hsl: 34.615 calc(var(--saturation-factor, 1) * 53.719%)
-    52.549%;
+  --yellow-new-32-hsl: 34 calc(var(--saturation-factor, 1) * 50.847%) 53.725%;
   --yellow-new-33: hsl(var(--yellow-new-33-hsl) / 1);
-  --yellow-new-33-hsl: 34.351 calc(var(--saturation-factor, 1) * 53.036%)
-    51.569%;
+  --yellow-new-33-hsl: 33.934 calc(var(--saturation-factor, 1) * 50.413%)
+    52.549%;
   --yellow-new-34: hsl(var(--yellow-new-34-hsl) / 1);
-  --yellow-new-34-hsl: 34.545 calc(var(--saturation-factor, 1) * 52.381%)
-    50.588%;
+  --yellow-new-34-hsl: 33.871 calc(var(--saturation-factor, 1) * 50%) 51.373%;
   --yellow-new-35: hsl(var(--yellow-new-35-hsl) / 1);
-  --yellow-new-35-hsl: 34.286 calc(var(--saturation-factor, 1) * 52.569%)
-    49.608%;
+  --yellow-new-35-hsl: 33.81 calc(var(--saturation-factor, 1) * 49.606%) 50.196%;
   --yellow-new-36: hsl(var(--yellow-new-36-hsl) / 1);
-  --yellow-new-36-hsl: 34.478 calc(var(--saturation-factor, 1) * 54.472%)
-    48.235%;
+  --yellow-new-36-hsl: 34.016 calc(var(--saturation-factor, 1) * 50.598%)
+    49.216%;
   --yellow-new-37: hsl(var(--yellow-new-37-hsl) / 1);
-  --yellow-new-37-hsl: 34.667 calc(var(--saturation-factor, 1) * 56.017%)
-    47.255%;
+  --yellow-new-37-hsl: 33.953 calc(var(--saturation-factor, 1) * 52.653%)
+    48.039%;
   --yellow-new-38: hsl(var(--yellow-new-38-hsl) / 1);
-  --yellow-new-38-hsl: 34.412 calc(var(--saturation-factor, 1) * 57.627%)
-    46.275%;
+  --yellow-new-38-hsl: 33.893 calc(var(--saturation-factor, 1) * 54.812%)
+    46.863%;
   --yellow-new-39: hsl(var(--yellow-new-39-hsl) / 1);
-  --yellow-new-39-hsl: 34.412 calc(var(--saturation-factor, 1) * 59.13%) 45.098%;
+  --yellow-new-39-hsl: 34.286 calc(var(--saturation-factor, 1) * 57.082%)
+    45.686%;
   --yellow-new-40: hsl(var(--yellow-new-40-hsl) / 1);
-  --yellow-new-40-hsl: 34.783 calc(var(--saturation-factor, 1) * 61.607%)
-    43.922%;
+  --yellow-new-40-hsl: 34.222 calc(var(--saturation-factor, 1) * 59.471%) 44.51%;
   --yellow-new-41: hsl(var(--yellow-new-41-hsl) / 1);
-  --yellow-new-41-hsl: 34.532 calc(var(--saturation-factor, 1) * 63.47%) 42.941%;
+  --yellow-new-41-hsl: 34.412 calc(var(--saturation-factor, 1) * 61.818%)
+    43.137%;
   --yellow-new-42: hsl(var(--yellow-new-42-hsl) / 1);
-  --yellow-new-42-hsl: 34.468 calc(var(--saturation-factor, 1) * 66.197%)
-    41.765%;
+  --yellow-new-42-hsl: 34.783 calc(var(--saturation-factor, 1) * 64.486%)
+    41.961%;
   --yellow-new-43: hsl(var(--yellow-new-43-hsl) / 1);
-  --yellow-new-43-hsl: 35.07 calc(var(--saturation-factor, 1) * 68.932%) 40.392%;
+  --yellow-new-43-hsl: 34.714 calc(var(--saturation-factor, 1) * 67.308%)
+    40.784%;
   --yellow-new-44: hsl(var(--yellow-new-44-hsl) / 1);
-  --yellow-new-44-hsl: 35 calc(var(--saturation-factor, 1) * 72%) 39.216%;
+  --yellow-new-44-hsl: 34.648 calc(var(--saturation-factor, 1) * 70.297%)
+    39.608%;
   --yellow-new-45: hsl(var(--yellow-new-45-hsl) / 1);
-  --yellow-new-45-hsl: 34.932 calc(var(--saturation-factor, 1) * 75.258%)
-    38.039%;
+  --yellow-new-45-hsl: 35.172 calc(var(--saturation-factor, 1) * 74.359%)
+    38.235%;
   --yellow-new-46: hsl(var(--yellow-new-46-hsl) / 1);
-  --yellow-new-46-hsl: 35.436 calc(var(--saturation-factor, 1) * 79.679%)
-    36.667%;
+  --yellow-new-46-hsl: 35.27 calc(var(--saturation-factor, 1) * 78.723%) 36.863%;
   --yellow-new-47: hsl(var(--yellow-new-47-hsl) / 1);
   --yellow-new-47-hsl: 35.762 calc(var(--saturation-factor, 1) * 84.358%)
     35.098%;
@@ -53571,119 +53686,128 @@ html.disable-forced-colors * {
   --yellow-new-100: hsl(var(--yellow-new-100-hsl) / 1);
   --yellow-new-100-hsl: 0 calc(var(--saturation-factor, 1) * 100%) 2.745%;
   --orange-new-1: hsl(var(--orange-new-1-hsl) / 1);
-  --orange-new-1-hsl: 19.091 calc(var(--saturation-factor, 1) * 100%) 91.373%;
+  --orange-new-1-hsl: 14.595 calc(var(--saturation-factor, 1) * 100%) 92.745%;
   --orange-new-2: hsl(var(--orange-new-2-hsl) / 1);
-  --orange-new-2-hsl: 19.2 calc(var(--saturation-factor, 1) * 100%) 90.196%;
+  --orange-new-2-hsl: 15.714 calc(var(--saturation-factor, 1) * 100%) 91.765%;
   --orange-new-3: hsl(var(--orange-new-3-hsl) / 1);
-  --orange-new-3-hsl: 21.053 calc(var(--saturation-factor, 1) * 100%) 88.824%;
+  --orange-new-3-hsl: 16.596 calc(var(--saturation-factor, 1) * 100%) 90.784%;
   --orange-new-4: hsl(var(--orange-new-4-hsl) / 1);
-  --orange-new-4-hsl: 21.905 calc(var(--saturation-factor, 1) * 100%) 87.647%;
+  --orange-new-4-hsl: 18.113 calc(var(--saturation-factor, 1) * 100%) 89.608%;
   --orange-new-5: hsl(var(--orange-new-5-hsl) / 1);
-  --orange-new-5-hsl: 21.739 calc(var(--saturation-factor, 1) * 100%) 86.471%;
+  --orange-new-5-hsl: 18.621 calc(var(--saturation-factor, 1) * 100%) 88.627%;
   --orange-new-6: hsl(var(--orange-new-6-hsl) / 1);
-  --orange-new-6-hsl: 22.4 calc(var(--saturation-factor, 1) * 100%) 85.294%;
+  --orange-new-6-hsl: 18.387 calc(var(--saturation-factor, 1) * 96.875%) 87.451%;
   --orange-new-7: hsl(var(--orange-new-7-hsl) / 1);
-  --orange-new-7-hsl: 22.5 calc(var(--saturation-factor, 1) * 100%) 84.314%;
+  --orange-new-7-hsl: 18.806 calc(var(--saturation-factor, 1) * 97.101%) 86.471%;
   --orange-new-8: hsl(var(--orange-new-8-hsl) / 1);
-  --orange-new-8-hsl: 23.023 calc(var(--saturation-factor, 1) * 100%) 83.137%;
+  --orange-new-8-hsl: 19.437 calc(var(--saturation-factor, 1) * 94.667%) 85.294%;
   --orange-new-9: hsl(var(--orange-new-9-hsl) / 1);
-  --orange-new-9-hsl: 22.418 calc(var(--saturation-factor, 1) * 100%) 82.157%;
+  --orange-new-9-hsl: 20 calc(var(--saturation-factor, 1) * 92.593%) 84.118%;
   --orange-new-10: hsl(var(--orange-new-10-hsl) / 1);
-  --orange-new-10-hsl: 22.5 calc(var(--saturation-factor, 1) * 100%) 81.176%;
+  --orange-new-10-hsl: 20.506 calc(var(--saturation-factor, 1) * 90.805%)
+    82.941%;
   --orange-new-11: hsl(var(--orange-new-11-hsl) / 1);
-  --orange-new-11-hsl: 22.574 calc(var(--saturation-factor, 1) * 100%) 80.196%;
+  --orange-new-11-hsl: 20.241 calc(var(--saturation-factor, 1) * 89.247%)
+    81.765%;
   --orange-new-12: hsl(var(--orange-new-12-hsl) / 1);
-  --orange-new-12-hsl: 22.642 calc(var(--saturation-factor, 1) * 100%) 79.216%;
+  --orange-new-12-hsl: 20.69 calc(var(--saturation-factor, 1) * 87.879%) 80.588%;
   --orange-new-13: hsl(var(--orange-new-13-hsl) / 1);
-  --orange-new-13-hsl: 22.703 calc(var(--saturation-factor, 1) * 100%) 78.235%;
+  --orange-new-13-hsl: 20.667 calc(var(--saturation-factor, 1) * 86.538%)
+    79.608%;
   --orange-new-14: hsl(var(--orange-new-14-hsl) / 1);
-  --orange-new-14-hsl: 22.759 calc(var(--saturation-factor, 1) * 100%) 77.255%;
+  --orange-new-14-hsl: 21.064 calc(var(--saturation-factor, 1) * 85.455%)
+    78.431%;
   --orange-new-15: hsl(var(--orange-new-15-hsl) / 1);
-  --orange-new-15-hsl: 22.5 calc(var(--saturation-factor, 1) * 100%) 76.471%;
+  --orange-new-15-hsl: 21.429 calc(var(--saturation-factor, 1) * 84.483%)
+    77.255%;
   --orange-new-16: hsl(var(--orange-new-16-hsl) / 1);
-  --orange-new-16-hsl: 22.742 calc(var(--saturation-factor, 1) * 98.413%)
-    75.294%;
+  --orange-new-16-hsl: 21.386 calc(var(--saturation-factor, 1) * 83.471%)
+    76.275%;
   --orange-new-17: hsl(var(--orange-new-17-hsl) / 1);
-  --orange-new-17-hsl: 22.381 calc(var(--saturation-factor, 1) * 95.455%)
-    74.118%;
+  --orange-new-17-hsl: 21.714 calc(var(--saturation-factor, 1) * 82.677%)
+    75.098%;
   --orange-new-18: hsl(var(--orange-new-18-hsl) / 1);
-  --orange-new-18-hsl: 22.326 calc(var(--saturation-factor, 1) * 94.161%)
-    73.137%;
+  --orange-new-18-hsl: 21.308 calc(var(--saturation-factor, 1) * 80.451%)
+    73.922%;
   --orange-new-19: hsl(var(--orange-new-19-hsl) / 1);
-  --orange-new-19-hsl: 22.727 calc(var(--saturation-factor, 1) * 91.667%)
-    71.765%;
+  --orange-new-19-hsl: 21.273 calc(var(--saturation-factor, 1) * 79.71%) 72.941%;
   --orange-new-20: hsl(var(--orange-new-20-hsl) / 1);
-  --orange-new-20-hsl: 22.836 calc(var(--saturation-factor, 1) * 89.333%)
-    70.588%;
+  --orange-new-20-hsl: 21.579 calc(var(--saturation-factor, 1) * 79.167%)
+    71.765%;
   --orange-new-21: hsl(var(--orange-new-21-hsl) / 1);
-  --orange-new-21-hsl: 22.774 calc(var(--saturation-factor, 1) * 88.387%)
-    69.608%;
+  --orange-new-21-hsl: 21.724 calc(var(--saturation-factor, 1) * 77.333%)
+    70.588%;
   --orange-new-22: hsl(var(--orange-new-22-hsl) / 1);
-  --orange-new-22-hsl: 22.609 calc(var(--saturation-factor, 1) * 86.25%) 68.627%;
+  --orange-new-22-hsl: 21.681 calc(var(--saturation-factor, 1) * 76.774%)
+    69.608%;
   --orange-new-23: hsl(var(--orange-new-23-hsl) / 1);
-  --orange-new-23-hsl: 22.714 calc(var(--saturation-factor, 1) * 84.337%)
-    67.451%;
+  --orange-new-23-hsl: 21.951 calc(var(--saturation-factor, 1) * 76.398%)
+    68.431%;
   --orange-new-24: hsl(var(--orange-new-24-hsl) / 1);
-  --orange-new-24-hsl: 22.817 calc(var(--saturation-factor, 1) * 82.558%)
-    66.275%;
+  --orange-new-24-hsl: 22.08 calc(var(--saturation-factor, 1) * 74.85%) 67.255%;
   --orange-new-25: hsl(var(--orange-new-25-hsl) / 1);
-  --orange-new-25-hsl: 22.917 calc(var(--saturation-factor, 1) * 80.899%)
-    65.098%;
+  --orange-new-25-hsl: 22.031 calc(var(--saturation-factor, 1) * 74.419%)
+    66.275%;
   --orange-new-26: hsl(var(--orange-new-26-hsl) / 1);
-  --orange-new-26-hsl: 23.172 calc(var(--saturation-factor, 1) * 79.235%)
-    64.118%;
+  --orange-new-26-hsl: 22.154 calc(var(--saturation-factor, 1) * 73.034%)
+    65.098%;
   --orange-new-27: hsl(var(--orange-new-27-hsl) / 1);
-  --orange-new-27-hsl: 23.265 calc(var(--saturation-factor, 1) * 77.778%)
-    62.941%;
+  --orange-new-27-hsl: 22.105 calc(var(--saturation-factor, 1) * 72.678%)
+    64.118%;
   --orange-new-28: hsl(var(--orange-new-28-hsl) / 1);
-  --orange-new-28-hsl: 23.108 calc(var(--saturation-factor, 1) * 76.289%)
-    61.961%;
+  --orange-new-28-hsl: 22.222 calc(var(--saturation-factor, 1) * 71.429%)
+    62.941%;
   --orange-new-29: hsl(var(--orange-new-29-hsl) / 1);
-  --orange-new-29-hsl: 23.2 calc(var(--saturation-factor, 1) * 75%) 60.784%;
+  --orange-new-29-hsl: 22.336 calc(var(--saturation-factor, 1) * 70.256%)
+    61.765%;
   --orange-new-30: hsl(var(--orange-new-30-hsl) / 1);
-  --orange-new-30-hsl: 23.046 calc(var(--saturation-factor, 1) * 73.659%)
-    59.804%;
+  --orange-new-30-hsl: 21.857 calc(var(--saturation-factor, 1) * 70%) 60.784%;
   --orange-new-31: hsl(var(--orange-new-31-hsl) / 1);
-  --orange-new-31-hsl: 23.137 calc(var(--saturation-factor, 1) * 72.512%)
-    58.627%;
+  --orange-new-31-hsl: 21.972 calc(var(--saturation-factor, 1) * 68.932%)
+    59.608%;
   --orange-new-32: hsl(var(--orange-new-32-hsl) / 1);
-  --orange-new-32-hsl: 22.987 calc(var(--saturation-factor, 1) * 71.296%)
-    57.647%;
+  --orange-new-32-hsl: 22.083 calc(var(--saturation-factor, 1) * 67.925%)
+    58.431%;
   --orange-new-33: hsl(var(--orange-new-33-hsl) / 1);
-  --orange-new-33-hsl: 22.839 calc(var(--saturation-factor, 1) * 70.136%)
-    56.667%;
+  --orange-new-33-hsl: 21.781 calc(var(--saturation-factor, 1) * 67.593%)
+    57.647%;
   --orange-new-34: hsl(var(--orange-new-34-hsl) / 1);
-  --orange-new-34-hsl: 22.93 calc(var(--saturation-factor, 1) * 69.163%) 55.49%;
+  --orange-new-34-hsl: 21.892 calc(var(--saturation-factor, 1) * 66.667%)
+    56.471%;
   --orange-new-35: hsl(var(--orange-new-35-hsl) / 1);
-  --orange-new-35-hsl: 22.785 calc(var(--saturation-factor, 1) * 68.103%) 54.51%;
+  --orange-new-35-hsl: 22 calc(var(--saturation-factor, 1) * 65.789%) 55.294%;
   --orange-new-36: hsl(var(--orange-new-36-hsl) / 1);
-  --orange-new-36-hsl: 22.642 calc(var(--saturation-factor, 1) * 67.089%)
-    53.529%;
+  --orange-new-36-hsl: 22.105 calc(var(--saturation-factor, 1) * 64.957%)
+    54.118%;
   --orange-new-37: hsl(var(--orange-new-37-hsl) / 1);
-  --orange-new-37-hsl: 22.5 calc(var(--saturation-factor, 1) * 66.116%) 52.549%;
+  --orange-new-37-hsl: 22.065 calc(var(--saturation-factor, 1) * 64.854%)
+    53.137%;
   --orange-new-38: hsl(var(--orange-new-38-hsl) / 1);
-  --orange-new-38-hsl: 22.963 calc(var(--saturation-factor, 1) * 65.323%)
-    51.373%;
+  --orange-new-38-hsl: 22.166 calc(var(--saturation-factor, 1) * 64.082%)
+    51.961%;
   --orange-new-39: hsl(var(--orange-new-39-hsl) / 1);
-  --orange-new-39-hsl: 22.822 calc(var(--saturation-factor, 1) * 64.427%)
-    50.392%;
+  --orange-new-39-hsl: 22.264 calc(var(--saturation-factor, 1) * 63.347%)
+    50.784%;
   --orange-new-40: hsl(var(--orange-new-40-hsl) / 1);
-  --orange-new-40-hsl: 22.909 calc(var(--saturation-factor, 1) * 65.737%)
-    49.216%;
+  --orange-new-40-hsl: 22.36 calc(var(--saturation-factor, 1) * 63.636%) 49.608%;
   --orange-new-41: hsl(var(--orange-new-41-hsl) / 1);
-  --orange-new-41-hsl: 22.771 calc(var(--saturation-factor, 1) * 67.48%) 48.235%;
+  --orange-new-41-hsl: 22.454 calc(var(--saturation-factor, 1) * 65.992%)
+    48.431%;
   --orange-new-42: hsl(var(--orange-new-42-hsl) / 1);
-  --orange-new-42-hsl: 22.857 calc(var(--saturation-factor, 1) * 70%) 47.059%;
+  --orange-new-42-hsl: 22.545 calc(var(--saturation-factor, 1) * 68.465%)
+    47.255%;
   --orange-new-43: hsl(var(--orange-new-43-hsl) / 1);
-  --orange-new-43-hsl: 22.941 calc(var(--saturation-factor, 1) * 72.65%) 45.882%;
+  --orange-new-43-hsl: 22.635 calc(var(--saturation-factor, 1) * 71.064%)
+    46.078%;
   --orange-new-44: hsl(var(--orange-new-44-hsl) / 1);
-  --orange-new-44-hsl: 23.158 calc(var(--saturation-factor, 1) * 75.33%) 44.51%;
+  --orange-new-44-hsl: 22.722 calc(var(--saturation-factor, 1) * 73.799%)
+    44.902%;
   --orange-new-45: hsl(var(--orange-new-45-hsl) / 1);
-  --orange-new-45-hsl: 23.237 calc(var(--saturation-factor, 1) * 78.281%)
-    43.333%;
+  --orange-new-45-hsl: 23.023 calc(var(--saturation-factor, 1) * 77.477%)
+    43.529%;
   --orange-new-46: hsl(var(--orange-new-46-hsl) / 1);
-  --orange-new-46-hsl: 23.523 calc(var(--saturation-factor, 1) * 82.243%)
-    41.961%;
+  --orange-new-46-hsl: 23.314 calc(var(--saturation-factor, 1) * 81.395%)
+    42.157%;
   --orange-new-47: hsl(var(--orange-new-47-hsl) / 1);
   --orange-new-47-hsl: 23.799 calc(var(--saturation-factor, 1) * 86.473%)
     40.588%;
@@ -53802,93 +53926,93 @@ html.disable-forced-colors * {
   --orange-new-100: hsl(var(--orange-new-100-hsl) / 1);
   --orange-new-100-hsl: 353.333 calc(var(--saturation-factor, 1) * 100%) 1.765%;
   --pink-1: hsl(var(--pink-1-hsl) / 1);
-  --pink-1-hsl: 309.545 calc(var(--saturation-factor, 1) * 100%) 91.373%;
+  --pink-1-hsl: 318.462 calc(var(--saturation-factor, 1) * 100%) 92.353%;
   --pink-2: hsl(var(--pink-2-hsl) / 1);
-  --pink-2-hsl: 310.435 calc(var(--saturation-factor, 1) * 100%) 90.98%;
+  --pink-2-hsl: 318.571 calc(var(--saturation-factor, 1) * 100%) 91.765%;
   --pink-3: hsl(var(--pink-3-hsl) / 1);
-  --pink-3-hsl: 310 calc(var(--saturation-factor, 1) * 100%) 90.588%;
+  --pink-3-hsl: 317.333 calc(var(--saturation-factor, 1) * 100%) 91.176%;
   --pink-4: hsl(var(--pink-4-hsl) / 1);
-  --pink-4-hsl: 310.588 calc(var(--saturation-factor, 1) * 100%) 90%;
+  --pink-4-hsl: 317.5 calc(var(--saturation-factor, 1) * 100%) 90.588%;
   --pink-5: hsl(var(--pink-5-hsl) / 1);
-  --pink-5-hsl: 311.321 calc(var(--saturation-factor, 1) * 100%) 89.608%;
+  --pink-5-hsl: 316.8 calc(var(--saturation-factor, 1) * 100%) 90.196%;
   --pink-6: hsl(var(--pink-6-hsl) / 1);
-  --pink-6-hsl: 312 calc(var(--saturation-factor, 1) * 100%) 89.216%;
+  --pink-6-hsl: 316.981 calc(var(--saturation-factor, 1) * 100%) 89.608%;
   --pink-7: hsl(var(--pink-7-hsl) / 1);
-  --pink-7-hsl: 312.632 calc(var(--saturation-factor, 1) * 100%) 88.824%;
+  --pink-7-hsl: 317.143 calc(var(--saturation-factor, 1) * 100%) 89.02%;
   --pink-8: hsl(var(--pink-8-hsl) / 1);
-  --pink-8-hsl: 313 calc(var(--saturation-factor, 1) * 100%) 88.235%;
+  --pink-8-hsl: 316.271 calc(var(--saturation-factor, 1) * 100%) 88.431%;
   --pink-9: hsl(var(--pink-9-hsl) / 1);
-  --pink-9-hsl: 313.548 calc(var(--saturation-factor, 1) * 100%) 87.843%;
+  --pink-9-hsl: 316.721 calc(var(--saturation-factor, 1) * 100%) 88.039%;
   --pink-10: hsl(var(--pink-10-hsl) / 1);
-  --pink-10-hsl: 313.846 calc(var(--saturation-factor, 1) * 100%) 87.255%;
+  --pink-10-hsl: 315.938 calc(var(--saturation-factor, 1) * 100%) 87.451%;
   --pink-11: hsl(var(--pink-11-hsl) / 1);
-  --pink-11-hsl: 314.328 calc(var(--saturation-factor, 1) * 100%) 86.863%;
+  --pink-11-hsl: 316.119 calc(var(--saturation-factor, 1) * 100%) 86.863%;
   --pink-12: hsl(var(--pink-12-hsl) / 1);
-  --pink-12-hsl: 313.913 calc(var(--saturation-factor, 1) * 100%) 86.471%;
+  --pink-12-hsl: 316.522 calc(var(--saturation-factor, 1) * 100%) 86.471%;
   --pink-13: hsl(var(--pink-13-hsl) / 1);
-  --pink-13-hsl: 314.167 calc(var(--saturation-factor, 1) * 100%) 85.882%;
+  --pink-13-hsl: 315.833 calc(var(--saturation-factor, 1) * 100%) 85.882%;
   --pink-14: hsl(var(--pink-14-hsl) / 1);
-  --pink-14-hsl: 314.4 calc(var(--saturation-factor, 1) * 100%) 85.294%;
+  --pink-14-hsl: 316 calc(var(--saturation-factor, 1) * 100%) 85.294%;
   --pink-15: hsl(var(--pink-15-hsl) / 1);
-  --pink-15-hsl: 314.805 calc(var(--saturation-factor, 1) * 100%) 84.902%;
+  --pink-15-hsl: 315.385 calc(var(--saturation-factor, 1) * 100%) 84.706%;
   --pink-16: hsl(var(--pink-16-hsl) / 1);
-  --pink-16-hsl: 314.25 calc(var(--saturation-factor, 1) * 100%) 84.314%;
+  --pink-16-hsl: 315.75 calc(var(--saturation-factor, 1) * 100%) 84.314%;
   --pink-17: hsl(var(--pink-17-hsl) / 1);
-  --pink-17-hsl: 314.634 calc(var(--saturation-factor, 1) * 100%) 83.922%;
+  --pink-17-hsl: 315.904 calc(var(--saturation-factor, 1) * 100%) 83.725%;
   --pink-18: hsl(var(--pink-18-hsl) / 1);
-  --pink-18-hsl: 314.824 calc(var(--saturation-factor, 1) * 100%) 83.333%;
+  --pink-18-hsl: 315.349 calc(var(--saturation-factor, 1) * 100%) 83.137%;
   --pink-19: hsl(var(--pink-19-hsl) / 1);
-  --pink-19-hsl: 315 calc(var(--saturation-factor, 1) * 100%) 82.745%;
+  --pink-19-hsl: 315.506 calc(var(--saturation-factor, 1) * 100%) 82.549%;
   --pink-20: hsl(var(--pink-20-hsl) / 1);
-  --pink-20-hsl: 315.333 calc(var(--saturation-factor, 1) * 100%) 82.353%;
+  --pink-20-hsl: 315.824 calc(var(--saturation-factor, 1) * 100%) 82.157%;
   --pink-21: hsl(var(--pink-21-hsl) / 1);
-  --pink-21-hsl: 314.839 calc(var(--saturation-factor, 1) * 100%) 81.765%;
+  --pink-21-hsl: 315.319 calc(var(--saturation-factor, 1) * 100%) 81.569%;
   --pink-22: hsl(var(--pink-22-hsl) / 1);
-  --pink-22-hsl: 315 calc(var(--saturation-factor, 1) * 100%) 81.176%;
+  --pink-22-hsl: 315.464 calc(var(--saturation-factor, 1) * 100%) 80.98%;
   --pink-23: hsl(var(--pink-23-hsl) / 1);
-  --pink-23-hsl: 315.152 calc(var(--saturation-factor, 1) * 100%) 80.588%;
+  --pink-23-hsl: 315.6 calc(var(--saturation-factor, 1) * 100%) 80.392%;
   --pink-24: hsl(var(--pink-24-hsl) / 1);
-  --pink-24-hsl: 314.706 calc(var(--saturation-factor, 1) * 100%) 80%;
+  --pink-24-hsl: 315.294 calc(var(--saturation-factor, 1) * 100%) 80%;
   --pink-25: hsl(var(--pink-25-hsl) / 1);
-  --pink-25-hsl: 314.857 calc(var(--saturation-factor, 1) * 100%) 79.412%;
+  --pink-25-hsl: 315.429 calc(var(--saturation-factor, 1) * 100%) 79.412%;
   --pink-26: hsl(var(--pink-26-hsl) / 1);
-  --pink-26-hsl: 315 calc(var(--saturation-factor, 1) * 100%) 78.824%;
+  --pink-26-hsl: 315.556 calc(var(--saturation-factor, 1) * 100%) 78.824%;
   --pink-27: hsl(var(--pink-27-hsl) / 1);
-  --pink-27-hsl: 314.595 calc(var(--saturation-factor, 1) * 100%) 78.235%;
+  --pink-27-hsl: 315.676 calc(var(--saturation-factor, 1) * 100%) 78.235%;
   --pink-28: hsl(var(--pink-28-hsl) / 1);
-  --pink-28-hsl: 314.737 calc(var(--saturation-factor, 1) * 100%) 77.647%;
+  --pink-28-hsl: 315.398 calc(var(--saturation-factor, 1) * 100%) 77.843%;
   --pink-29: hsl(var(--pink-29-hsl) / 1);
-  --pink-29-hsl: 314.872 calc(var(--saturation-factor, 1) * 100%) 77.059%;
+  --pink-29-hsl: 315.517 calc(var(--saturation-factor, 1) * 100%) 77.255%;
   --pink-30: hsl(var(--pink-30-hsl) / 1);
-  --pink-30-hsl: 314.5 calc(var(--saturation-factor, 1) * 100%) 76.471%;
+  --pink-30-hsl: 315.63 calc(var(--saturation-factor, 1) * 100%) 76.667%;
   --pink-31: hsl(var(--pink-31-hsl) / 1);
-  --pink-31-hsl: 314.634 calc(var(--saturation-factor, 1) * 100%) 75.882%;
+  --pink-31-hsl: 315.738 calc(var(--saturation-factor, 1) * 100%) 76.078%;
   --pink-32: hsl(var(--pink-32-hsl) / 1);
-  --pink-32-hsl: 314.646 calc(var(--saturation-factor, 1) * 100%) 75.098%;
+  --pink-32-hsl: 315.36 calc(var(--saturation-factor, 1) * 100%) 75.49%;
   --pink-33: hsl(var(--pink-33-hsl) / 1);
-  --pink-33-hsl: 314.308 calc(var(--saturation-factor, 1) * 100%) 74.51%;
+  --pink-33-hsl: 315.469 calc(var(--saturation-factor, 1) * 100%) 74.902%;
   --pink-34: hsl(var(--pink-34-hsl) / 1);
-  --pink-34-hsl: 314.436 calc(var(--saturation-factor, 1) * 100%) 73.922%;
+  --pink-34-hsl: 315.573 calc(var(--saturation-factor, 1) * 100%) 74.314%;
   --pink-35: hsl(var(--pink-35-hsl) / 1);
-  --pink-35-hsl: 314.015 calc(var(--saturation-factor, 1) * 100%) 73.137%;
+  --pink-35-hsl: 315.338 calc(var(--saturation-factor, 1) * 100%) 73.922%;
   --pink-36: hsl(var(--pink-36-hsl) / 1);
-  --pink-36-hsl: 314.245 calc(var(--saturation-factor, 1) * 100%) 72.745%;
+  --pink-36-hsl: 315.441 calc(var(--saturation-factor, 1) * 100%) 73.333%;
   --pink-37: hsl(var(--pink-37-hsl) / 1);
-  --pink-37-hsl: 314.366 calc(var(--saturation-factor, 1) * 100%) 72.157%;
+  --pink-37-hsl: 315.54 calc(var(--saturation-factor, 1) * 100%) 72.745%;
   --pink-38: hsl(var(--pink-38-hsl) / 1);
-  --pink-38-hsl: 314.483 calc(var(--saturation-factor, 1) * 100%) 71.569%;
+  --pink-38-hsl: 315.634 calc(var(--saturation-factor, 1) * 100%) 72.157%;
   --pink-39: hsl(var(--pink-39-hsl) / 1);
-  --pink-39-hsl: 314.694 calc(var(--saturation-factor, 1) * 100%) 71.176%;
+  --pink-39-hsl: 315.31 calc(var(--saturation-factor, 1) * 100%) 71.569%;
   --pink-40: hsl(var(--pink-40-hsl) / 1);
-  --pink-40-hsl: 314.8 calc(var(--saturation-factor, 1) * 100%) 70.588%;
+  --pink-40-hsl: 315.302 calc(var(--saturation-factor, 1) * 100%) 70.784%;
   --pink-41: hsl(var(--pink-41-hsl) / 1);
-  --pink-41-hsl: 314.902 calc(var(--saturation-factor, 1) * 100%) 70%;
+  --pink-41-hsl: 315.395 calc(var(--saturation-factor, 1) * 100%) 70.196%;
   --pink-42: hsl(var(--pink-42-hsl) / 1);
-  --pink-42-hsl: 315 calc(var(--saturation-factor, 1) * 100%) 69.412%;
+  --pink-42-hsl: 315.484 calc(var(--saturation-factor, 1) * 100%) 69.608%;
   --pink-43: hsl(var(--pink-43-hsl) / 1);
-  --pink-43-hsl: 315.094 calc(var(--saturation-factor, 1) * 100%) 68.824%;
+  --pink-43-hsl: 315.19 calc(var(--saturation-factor, 1) * 100%) 69.02%;
   --pink-44: hsl(var(--pink-44-hsl) / 1);
-  --pink-44-hsl: 315.185 calc(var(--saturation-factor, 1) * 100%) 68.235%;
+  --pink-44-hsl: 315.28 calc(var(--saturation-factor, 1) * 100%) 68.431%;
   --pink-45: hsl(var(--pink-45-hsl) / 1);
   --pink-45-hsl: 315.273 calc(var(--saturation-factor, 1) * 100%) 67.647%;
   --pink-46: hsl(var(--pink-46-hsl) / 1);
@@ -55286,20 +55410,20 @@ html.disable-forced-colors * {
   --blue-130-hsl: var(--blue-new-1-hsl);
   --blue-160: var(--blue-new-1);
   --blue-160-hsl: var(--blue-new-1-hsl);
-  --blue-200: var(--blue-new-4);
-  --blue-200-hsl: var(--blue-new-4-hsl);
-  --blue-230: var(--blue-new-9);
-  --blue-230-hsl: var(--blue-new-9-hsl);
-  --blue-260: var(--blue-new-15);
-  --blue-260-hsl: var(--blue-new-15-hsl);
-  --blue-300: var(--blue-new-22);
-  --blue-300-hsl: var(--blue-new-22-hsl);
-  --blue-330: var(--blue-new-29);
-  --blue-330-hsl: var(--blue-new-29-hsl);
-  --blue-345: var(--blue-new-33);
-  --blue-345-hsl: var(--blue-new-33-hsl);
-  --blue-360: var(--blue-new-39);
-  --blue-360-hsl: var(--blue-new-39-hsl);
+  --blue-200: var(--blue-new-5);
+  --blue-200-hsl: var(--blue-new-5-hsl);
+  --blue-230: var(--blue-new-11);
+  --blue-230-hsl: var(--blue-new-11-hsl);
+  --blue-260: var(--blue-new-16);
+  --blue-260-hsl: var(--blue-new-16-hsl);
+  --blue-300: var(--blue-new-23);
+  --blue-300-hsl: var(--blue-new-23-hsl);
+  --blue-330: var(--blue-new-31);
+  --blue-330-hsl: var(--blue-new-31-hsl);
+  --blue-345: var(--blue-new-35);
+  --blue-345-hsl: var(--blue-new-35-hsl);
+  --blue-360: var(--blue-new-40);
+  --blue-360-hsl: var(--blue-new-40-hsl);
   --blue-400: var(--blue-new-45);
   --blue-400-hsl: var(--blue-new-45-hsl);
   --blue-430: var(--blue-new-51);
@@ -55338,26 +55462,26 @@ html.disable-forced-colors * {
   --brand-130-hsl: var(--blurple-1-hsl);
   --brand-160: var(--blurple-1);
   --brand-160-hsl: var(--blurple-1-hsl);
-  --brand-200: var(--blurple-3);
-  --brand-200-hsl: var(--blurple-3-hsl);
-  --brand-230: var(--blurple-6);
-  --brand-230-hsl: var(--blurple-6-hsl);
+  --brand-200: var(--blurple-4);
+  --brand-200-hsl: var(--blurple-4-hsl);
+  --brand-230: var(--blurple-7);
+  --brand-230-hsl: var(--blurple-7-hsl);
   --brand-260: var(--blurple-10);
   --brand-260-hsl: var(--blurple-10-hsl);
-  --brand-300: var(--blurple-13);
-  --brand-300-hsl: var(--blurple-13-hsl);
+  --brand-300: var(--blurple-14);
+  --brand-300-hsl: var(--blurple-14-hsl);
   --brand-330: var(--blurple-21);
   --brand-330-hsl: var(--blurple-21-hsl);
-  --brand-345: var(--blurple-25);
-  --brand-345-hsl: var(--blurple-25-hsl);
-  --brand-360: var(--blurple-27);
-  --brand-360-hsl: var(--blurple-27-hsl);
+  --brand-345: var(--blurple-26);
+  --brand-345-hsl: var(--blurple-26-hsl);
+  --brand-360: var(--blurple-28);
+  --brand-360-hsl: var(--blurple-28-hsl);
   --brand-400: var(--blurple-37);
   --brand-400-hsl: var(--blurple-37-hsl);
   --brand-430: var(--blurple-41);
   --brand-430-hsl: var(--blurple-41-hsl);
-  --brand-460: var(--blurple-45);
-  --brand-460-hsl: var(--blurple-45-hsl);
+  --brand-460: var(--blurple-44);
+  --brand-460-hsl: var(--blurple-44-hsl);
   --brand-500: var(--blurple-49);
   --brand-500-hsl: var(--blurple-49-hsl);
   --brand-530: var(--blurple-54);
@@ -55388,24 +55512,24 @@ html.disable-forced-colors * {
   --green-100-hsl: var(--green-new-1-hsl);
   --green-130: var(--green-new-1);
   --green-130-hsl: var(--green-new-1-hsl);
-  --green-160: var(--green-new-1);
-  --green-160-hsl: var(--green-new-1-hsl);
-  --green-200: var(--green-new-8);
-  --green-200-hsl: var(--green-new-8-hsl);
-  --green-230: var(--green-new-13);
-  --green-230-hsl: var(--green-new-13-hsl);
-  --green-260: var(--green-new-19);
-  --green-260-hsl: var(--green-new-19-hsl);
-  --green-300: var(--green-new-23);
-  --green-300-hsl: var(--green-new-23-hsl);
-  --green-330: var(--green-new-29);
-  --green-330-hsl: var(--green-new-29-hsl);
-  --green-345: var(--green-new-32);
-  --green-345-hsl: var(--green-new-32-hsl);
+  --green-160: var(--green-new-3);
+  --green-160-hsl: var(--green-new-3-hsl);
+  --green-200: var(--green-new-11);
+  --green-200-hsl: var(--green-new-11-hsl);
+  --green-230: var(--green-new-16);
+  --green-230-hsl: var(--green-new-16-hsl);
+  --green-260: var(--green-new-21);
+  --green-260-hsl: var(--green-new-21-hsl);
+  --green-300: var(--green-new-25);
+  --green-300-hsl: var(--green-new-25-hsl);
+  --green-330: var(--green-new-30);
+  --green-330-hsl: var(--green-new-30-hsl);
+  --green-345: var(--green-new-34);
+  --green-345-hsl: var(--green-new-34-hsl);
   --green-360: var(--green-new-38);
   --green-360-hsl: var(--green-new-38-hsl);
-  --green-400: var(--green-new-43);
-  --green-400-hsl: var(--green-new-43-hsl);
+  --green-400: var(--green-new-44);
+  --green-400-hsl: var(--green-new-44-hsl);
   --green-430: var(--green-new-52);
   --green-430-hsl: var(--green-new-52-hsl);
   --green-460: var(--green-new-58);
@@ -55442,22 +55566,22 @@ html.disable-forced-colors * {
   --orange-130-hsl: var(--orange-new-1-hsl);
   --orange-160: var(--orange-new-1);
   --orange-160-hsl: var(--orange-new-1-hsl);
-  --orange-200: var(--orange-new-2);
-  --orange-200-hsl: var(--orange-new-2-hsl);
-  --orange-230: var(--orange-new-6);
-  --orange-230-hsl: var(--orange-new-6-hsl);
-  --orange-260: var(--orange-new-12);
-  --orange-260-hsl: var(--orange-new-12-hsl);
-  --orange-300: var(--orange-new-19);
-  --orange-300-hsl: var(--orange-new-19-hsl);
-  --orange-330: var(--orange-new-27);
-  --orange-330-hsl: var(--orange-new-27-hsl);
-  --orange-345: var(--orange-new-34);
-  --orange-345-hsl: var(--orange-new-34-hsl);
+  --orange-200: var(--orange-new-3);
+  --orange-200-hsl: var(--orange-new-3-hsl);
+  --orange-230: var(--orange-new-8);
+  --orange-230-hsl: var(--orange-new-8-hsl);
+  --orange-260: var(--orange-new-14);
+  --orange-260-hsl: var(--orange-new-14-hsl);
+  --orange-300: var(--orange-new-22);
+  --orange-300-hsl: var(--orange-new-22-hsl);
+  --orange-330: var(--orange-new-29);
+  --orange-330-hsl: var(--orange-new-29-hsl);
+  --orange-345: var(--orange-new-35);
+  --orange-345-hsl: var(--orange-new-35-hsl);
   --orange-360: var(--orange-new-38);
   --orange-360-hsl: var(--orange-new-38-hsl);
-  --orange-400: var(--orange-new-40);
-  --orange-400-hsl: var(--orange-new-40-hsl);
+  --orange-400: var(--orange-new-41);
+  --orange-400-hsl: var(--orange-new-41-hsl);
   --orange-430: var(--orange-new-44);
   --orange-430-hsl: var(--orange-new-44-hsl);
   --orange-460: var(--orange-new-58);
@@ -55604,18 +55728,18 @@ html.disable-forced-colors * {
   --red-160-hsl: var(--red-new-1-hsl);
   --red-200: var(--red-new-1);
   --red-200-hsl: var(--red-new-1-hsl);
-  --red-230: var(--red-new-4);
-  --red-230-hsl: var(--red-new-4-hsl);
-  --red-260: var(--red-new-9);
-  --red-260-hsl: var(--red-new-9-hsl);
-  --red-300: var(--red-new-14);
-  --red-300-hsl: var(--red-new-14-hsl);
-  --red-330: var(--red-new-20);
-  --red-330-hsl: var(--red-new-20-hsl);
-  --red-345: var(--red-new-28);
-  --red-345-hsl: var(--red-new-28-hsl);
-  --red-360: var(--red-new-37);
-  --red-360-hsl: var(--red-new-37-hsl);
+  --red-230: var(--red-new-5);
+  --red-230-hsl: var(--red-new-5-hsl);
+  --red-260: var(--red-new-10);
+  --red-260-hsl: var(--red-new-10-hsl);
+  --red-300: var(--red-new-15);
+  --red-300-hsl: var(--red-new-15-hsl);
+  --red-330: var(--red-new-22);
+  --red-330-hsl: var(--red-new-22-hsl);
+  --red-345: var(--red-new-29);
+  --red-345-hsl: var(--red-new-29-hsl);
+  --red-360: var(--red-new-38);
+  --red-360-hsl: var(--red-new-38-hsl);
   --red-400: var(--red-new-45);
   --red-400-hsl: var(--red-new-45-hsl);
   --red-430: var(--red-new-47);
@@ -55652,18 +55776,18 @@ html.disable-forced-colors * {
   --teal-100-hsl: var(--teal-new-1-hsl);
   --teal-130: var(--teal-new-1);
   --teal-130-hsl: var(--teal-new-1-hsl);
-  --teal-160: var(--teal-new-1);
-  --teal-160-hsl: var(--teal-new-1-hsl);
-  --teal-200: var(--teal-new-5);
-  --teal-200-hsl: var(--teal-new-5-hsl);
-  --teal-230: var(--teal-new-11);
-  --teal-230-hsl: var(--teal-new-11-hsl);
-  --teal-260: var(--teal-new-17);
-  --teal-260-hsl: var(--teal-new-17-hsl);
-  --teal-300: var(--teal-new-23);
-  --teal-300-hsl: var(--teal-new-23-hsl);
-  --teal-330: var(--teal-new-28);
-  --teal-330-hsl: var(--teal-new-28-hsl);
+  --teal-160: var(--teal-new-2);
+  --teal-160-hsl: var(--teal-new-2-hsl);
+  --teal-200: var(--teal-new-6);
+  --teal-200-hsl: var(--teal-new-6-hsl);
+  --teal-230: var(--teal-new-13);
+  --teal-230-hsl: var(--teal-new-13-hsl);
+  --teal-260: var(--teal-new-18);
+  --teal-260-hsl: var(--teal-new-18-hsl);
+  --teal-300: var(--teal-new-24);
+  --teal-300-hsl: var(--teal-new-24-hsl);
+  --teal-330: var(--teal-new-29);
+  --teal-330-hsl: var(--teal-new-29-hsl);
   --teal-345: var(--teal-new-33);
   --teal-345-hsl: var(--teal-new-33-hsl);
   --teal-360: var(--teal-new-38);
@@ -55706,20 +55830,20 @@ html.disable-forced-colors * {
   --yellow-130-hsl: var(--yellow-new-1-hsl);
   --yellow-160: var(--yellow-new-1);
   --yellow-160-hsl: var(--yellow-new-1-hsl);
-  --yellow-200: var(--yellow-new-4);
-  --yellow-200-hsl: var(--yellow-new-4-hsl);
-  --yellow-230: var(--yellow-new-11);
-  --yellow-230-hsl: var(--yellow-new-11-hsl);
-  --yellow-260: var(--yellow-new-20);
-  --yellow-260-hsl: var(--yellow-new-20-hsl);
-  --yellow-300: var(--yellow-new-25);
-  --yellow-300-hsl: var(--yellow-new-25-hsl);
-  --yellow-330: var(--yellow-new-28);
-  --yellow-330-hsl: var(--yellow-new-28-hsl);
-  --yellow-345: var(--yellow-new-31);
-  --yellow-345-hsl: var(--yellow-new-31-hsl);
-  --yellow-360: var(--yellow-new-38);
-  --yellow-360-hsl: var(--yellow-new-38-hsl);
+  --yellow-200: var(--yellow-new-6);
+  --yellow-200-hsl: var(--yellow-new-6-hsl);
+  --yellow-230: var(--yellow-new-13);
+  --yellow-230-hsl: var(--yellow-new-13-hsl);
+  --yellow-260: var(--yellow-new-24);
+  --yellow-260-hsl: var(--yellow-new-24-hsl);
+  --yellow-300: var(--yellow-new-28);
+  --yellow-300-hsl: var(--yellow-new-28-hsl);
+  --yellow-330: var(--yellow-new-30);
+  --yellow-330-hsl: var(--yellow-new-30-hsl);
+  --yellow-345: var(--yellow-new-34);
+  --yellow-345-hsl: var(--yellow-new-34-hsl);
+  --yellow-360: var(--yellow-new-39);
+  --yellow-360-hsl: var(--yellow-new-39-hsl);
   --yellow-400: var(--yellow-new-43);
   --yellow-400-hsl: var(--yellow-new-43-hsl);
   --yellow-430: var(--yellow-new-48);
@@ -55852,13 +55976,13 @@ html.disable-forced-colors * {
   --icon-primary: var(--neutral-2);
   --icon-secondary: var(--neutral-16);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
-  --info-danger-text: var(--red-new-21);
+  --info-danger-text: var(--red-new-22);
   --info-help-background: hsl(var(--opacity-blue-8-hsl) / 0.0784313725490196);
   --info-help-text: var(--blue-new-24);
   --info-positive-background: hsl(
     var(--opacity-green-8-hsl) / 0.0784313725490196
   );
-  --info-positive-text: var(--green-new-24);
+  --info-positive-text: var(--green-new-25);
   --info-warning-background: hsl(
     var(--opacity-yellow-8-hsl) / 0.0784313725490196
   );
@@ -55877,10 +56001,10 @@ html.disable-forced-colors * {
   --message-reacted-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
-  --message-reacted-text: var(--blurple-2);
+  --message-reacted-text: var(--blurple-3);
   --modal-background: var(--neutral-64);
   --modal-footer-background: var(--neutral-64);
-  --premium-nitro-pink-text: var(--pink-33);
+  --premium-nitro-pink-text: var(--pink-34);
   --scrollbar-auto-scrollbar-color-thumb: var(--neutral-38);
   --scrollbar-auto-scrollbar-color-track: var(--neutral-74);
   --scrollbar-auto-thumb: var(--neutral-36);
@@ -55888,11 +56012,11 @@ html.disable-forced-colors * {
   --scrollbar-thin-thumb: var(--neutral-38);
   --spine-default: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --spoiler-hidden-background: var(--neutral-36);
-  --text-brand: var(--blurple-25);
+  --text-brand: var(--blurple-26);
   --text-link: var(--blue-new-26);
   --text-muted: var(--neutral-22);
   --text-normal: var(--neutral-9);
-  --text-positive: var(--green-new-24);
+  --text-positive: var(--green-new-25);
   --text-primary: var(--neutral-1);
   --text-secondary: var(--neutral-16);
   --text-warning: var(--yellow-new-22);
@@ -55904,8 +56028,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-78);
-  --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-base-low: var(--neutral-66);
   --background-base-lower: var(--neutral-69);
   --background-base-lowest: var(--neutral-73);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -55950,7 +56072,7 @@ html.disable-forced-colors * {
   --notice-background-warning: var(--yellow-new-75);
   --notice-text-critical: var(--red-new-1);
   --notice-text-info: var(--blue-new-1);
-  --notice-text-positive: var(--green-new-1);
+  --notice-text-positive: var(--green-new-2);
   --notice-text-warning: var(--yellow-new-1);
   --spoiler-hidden-background-hover: var(--neutral-27);
   --text-code-addition: var(--green-new-15);
@@ -55959,16 +56081,16 @@ html.disable-forced-colors * {
   --text-code-comment: var(--neutral-25);
   --text-code-default: var(--blue-new-15);
   --text-code-deletion: var(--red-new-11);
-  --text-code-keyword: var(--red-new-11);
+  --text-code-keyword: var(--red-new-12);
   --text-code-section: var(--blue-new-15);
   --text-code-string: var(--teal-new-16);
   --text-code-tag: var(--green-new-12);
   --text-code-title: var(--blurple-9);
   --text-code-variable: var(--blue-new-10);
   --text-default: var(--neutral-9);
-  --text-feedback-critical: var(--red-new-21);
+  --text-feedback-critical: var(--red-new-22);
   --text-feedback-info: var(--blue-new-24);
-  --text-feedback-positive: var(--green-new-24);
+  --text-feedback-positive: var(--green-new-25);
   --text-feedback-warning: var(--yellow-new-22);
   --text-tertiary: var(--neutral-22);
 }
@@ -56145,7 +56267,7 @@ html.disable-forced-colors * {
     );
     --info-danger-text: color-mix(
       in oklab,
-      var(--red-new-21) 100%,
+      var(--red-new-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --info-help-background: color-mix(
@@ -56167,7 +56289,7 @@ html.disable-forced-colors * {
     );
     --info-positive-text: color-mix(
       in oklab,
-      var(--green-new-24) 100%,
+      var(--green-new-25) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --info-warning-background: color-mix(
@@ -56238,7 +56360,7 @@ html.disable-forced-colors * {
     );
     --message-reacted-text: color-mix(
       in oklab,
-      var(--blurple-2) 100%,
+      var(--blurple-3) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --modal-background: color-mix(
@@ -56253,7 +56375,7 @@ html.disable-forced-colors * {
     );
     --premium-nitro-pink-text: color-mix(
       in oklab,
-      var(--pink-33) 100%,
+      var(--pink-34) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
@@ -56295,7 +56417,7 @@ html.disable-forced-colors * {
     );
     --text-brand: color-mix(
       in oklab,
-      var(--blurple-25) 100%,
+      var(--blurple-26) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-link: color-mix(
@@ -56315,7 +56437,7 @@ html.disable-forced-colors * {
     );
     --text-positive: color-mix(
       in oklab,
-      var(--green-new-24) 100%,
+      var(--green-new-25) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-primary: color-mix(
@@ -56353,17 +56475,6 @@ html.disable-forced-colors * {
     --app-background-frame: color-mix(
       in oklab,
       var(--neutral-78) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-66) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-base-lower: color-mix(
@@ -56518,7 +56629,7 @@ html.disable-forced-colors * {
     );
     --notice-text-positive: color-mix(
       in oklab,
-      var(--green-new-1) 100%,
+      var(--green-new-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-warning: color-mix(
@@ -56563,7 +56674,7 @@ html.disable-forced-colors * {
     );
     --text-code-keyword: color-mix(
       in oklab,
-      var(--red-new-11) 100%,
+      var(--red-new-12) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
@@ -56598,7 +56709,7 @@ html.disable-forced-colors * {
     );
     --text-feedback-critical: color-mix(
       in oklab,
-      var(--red-new-21) 100%,
+      var(--red-new-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-info: color-mix(
@@ -56608,7 +56719,7 @@ html.disable-forced-colors * {
     );
     --text-feedback-positive: color-mix(
       in oklab,
-      var(--green-new-24) 100%,
+      var(--green-new-25) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-feedback-warning: color-mix(
@@ -56780,8 +56891,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-7);
-  --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-  --background-base-low: var(--neutral-2);
   --background-base-lower: var(--neutral-2);
   --background-base-lowest: var(--neutral-4);
   --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
@@ -56826,10 +56935,10 @@ html.disable-forced-colors * {
   --notice-background-info: var(--blue-new-1);
   --notice-background-positive: var(--green-new-1);
   --notice-background-warning: var(--yellow-new-1);
-  --notice-text-critical: var(--red-new-78);
+  --notice-text-critical: var(--red-new-77);
   --notice-text-info: var(--blue-new-76);
-  --notice-text-positive: var(--green-new-76);
-  --notice-text-warning: var(--yellow-new-77);
+  --notice-text-positive: var(--green-new-75);
+  --notice-text-warning: var(--yellow-new-76);
   --spoiler-hidden-background-hover: var(--neutral-39);
   --text-code-addition: var(--green-new-67);
   --text-code-builtin: var(--orange-new-63);
@@ -57233,17 +57342,6 @@ html.disable-forced-colors * {
       var(--neutral-7) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-2) 100%,
@@ -57386,7 +57484,7 @@ html.disable-forced-colors * {
     );
     --notice-text-critical: color-mix(
       in oklab,
-      var(--red-new-78) 100%,
+      var(--red-new-77) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-info: color-mix(
@@ -57396,12 +57494,12 @@ html.disable-forced-colors * {
     );
     --notice-text-positive: color-mix(
       in oklab,
-      var(--green-new-76) 100%,
+      var(--green-new-75) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-warning: color-mix(
       in oklab,
-      var(--yellow-new-77) 100%,
+      var(--yellow-new-76) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --spoiler-hidden-background-hover: color-mix(
@@ -57653,8 +57751,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-100);
-  --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-  --background-base-low: var(--neutral-95);
   --background-base-lower: var(--neutral-97);
   --background-base-lowest: var(--neutral-100);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -57699,9 +57795,9 @@ html.disable-forced-colors * {
   --notice-background-info: var(--blue-new-94);
   --notice-background-positive: var(--green-new-96);
   --notice-background-warning: var(--yellow-new-94);
-  --notice-text-critical: var(--red-new-15);
+  --notice-text-critical: var(--red-new-16);
   --notice-text-info: var(--blue-new-19);
-  --notice-text-positive: var(--green-new-21);
+  --notice-text-positive: var(--green-new-20);
   --notice-text-warning: var(--yellow-new-18);
   --spoiler-hidden-background-hover: var(--neutral-36);
   --text-code-addition: var(--green-new-31);
@@ -58100,17 +58196,6 @@ html.disable-forced-colors * {
       var(--neutral-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-95) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-base-lower: color-mix(
       in oklab,
       var(--neutral-97) 100%,
@@ -58253,7 +58338,7 @@ html.disable-forced-colors * {
     );
     --notice-text-critical: color-mix(
       in oklab,
-      var(--red-new-15) 100%,
+      var(--red-new-16) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-info: color-mix(
@@ -58263,7 +58348,7 @@ html.disable-forced-colors * {
     );
     --notice-text-positive: color-mix(
       in oklab,
-      var(--green-new-21) 100%,
+      var(--green-new-20) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-warning: color-mix(
@@ -58487,7 +58572,7 @@ html.disable-forced-colors * {
   --mention-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
-  --mention-foreground: var(--blurple-18);
+  --mention-foreground: var(--blurple-19);
   --message-reacted-background: hsl(
     var(--opacity-blurple-24-hsl) / 0.23921568627450981
   );
@@ -58518,8 +58603,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-97);
-  --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-base-low: var(--neutral-82);
   --background-base-lower: var(--neutral-86);
   --background-base-lowest: var(--neutral-92);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
@@ -58562,7 +58645,7 @@ html.disable-forced-colors * {
   --notice-background-info: var(--blue-new-86);
   --notice-background-positive: var(--green-new-87);
   --notice-background-warning: var(--yellow-new-86);
-  --notice-text-critical: var(--red-new-8);
+  --notice-text-critical: var(--red-new-9);
   --notice-text-info: var(--blue-new-12);
   --notice-text-positive: var(--green-new-14);
   --notice-text-warning: var(--yellow-new-12);
@@ -58572,8 +58655,8 @@ html.disable-forced-colors * {
   --text-code-bullet: var(--yellow-new-25);
   --text-code-comment: var(--neutral-32);
   --text-code-default: var(--blue-new-27);
-  --text-code-deletion: var(--red-new-22);
-  --text-code-keyword: var(--red-new-23);
+  --text-code-deletion: var(--red-new-23);
+  --text-code-keyword: var(--red-new-24);
   --text-code-section: var(--blue-new-27);
   --text-code-string: var(--teal-new-27);
   --text-code-tag: var(--green-new-23);
@@ -58835,7 +58918,7 @@ html.disable-forced-colors * {
     );
     --mention-foreground: color-mix(
       in oklab,
-      var(--blurple-18) 100%,
+      var(--blurple-19) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --message-reacted-background: color-mix(
@@ -58961,17 +59044,6 @@ html.disable-forced-colors * {
     --app-background-frame: color-mix(
       in oklab,
       var(--neutral-97) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --app-border-frame: color-mix(
-      in oklab,
-      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
-        var(--theme-base-color-amount, 0%)
-    );
-    --background-base-low: color-mix(
-      in oklab,
-      var(--neutral-82) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-base-lower: color-mix(
@@ -59116,7 +59188,7 @@ html.disable-forced-colors * {
     );
     --notice-text-critical: color-mix(
       in oklab,
-      var(--red-new-8) 100%,
+      var(--red-new-9) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --notice-text-info: color-mix(
@@ -59166,12 +59238,12 @@ html.disable-forced-colors * {
     );
     --text-code-deletion: color-mix(
       in oklab,
-      var(--red-new-22) 100%,
+      var(--red-new-23) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-keyword: color-mix(
       in oklab,
-      var(--red-new-23) 100%,
+      var(--red-new-24) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-code-section: color-mix(
@@ -59252,6 +59324,62 @@ html.disable-forced-colors * {
     var(--opacity-16-hsl) / 0.1607843137254902
   );
   --user-profile-overlay-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
+}
+.refresh-fast-follow-distinct-borders .theme-dark,
+.refresh-fast-follow-distinct-borders.theme-dark {
+  --app-border-frame: var(--neutral-52);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-dark,
+  .refresh-fast-follow-distinct-borders.theme-dark {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-52) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-light,
+.refresh-fast-follow-distinct-borders.theme-light {
+  --app-border-frame: var(--neutral-12);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-light,
+  .refresh-fast-follow-distinct-borders.theme-light {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-midnight,
+.refresh-fast-follow-distinct-borders.theme-midnight {
+  --app-border-frame: var(--neutral-73);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-midnight,
+  .refresh-fast-follow-distinct-borders.theme-midnight {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-73) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
+}
+.refresh-fast-follow-distinct-borders .theme-darker,
+.refresh-fast-follow-distinct-borders.theme-darker {
+  --app-border-frame: var(--neutral-65);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .refresh-fast-follow-distinct-borders .theme-darker,
+  .refresh-fast-follow-distinct-borders.theme-darker {
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--neutral-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+  }
 }
 .theme-dark {
   --shadow-border: 0 0 0 1px hsl(none 0% 100%/0.08);
@@ -60919,4 +61047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5f0a9432c92a8e49.css.map*/
+/*# sourceMappingURL=12633.5efe782ca1b98a7d.css.map*/
