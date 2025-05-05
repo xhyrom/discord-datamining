@@ -38,6 +38,7 @@
           >Server Level Perks</a
         >
       </li>
+      <li><a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</a></li>
       <li>
         <a
           href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
@@ -91,10 +92,6 @@
 <h1 id="h_01HGX7DJ33W4WY3FYVPRZ2CK02">
   What are the levels and perks for Server Boosting
 </h1>
-<div class="exp-box">
-  <strong>Note</strong>: Server Tags and Server Enhanced Role Styles are
-  currently an experiment only available to select servers.
-</div>
 <p>
   Here is how many Server Boosts are required for each level and an overview of
   the perks you can get.
@@ -179,6 +176,78 @@
   <li>60 Soundboard slots</li>
   <li>Animated Server banner</li>
 </ul>
+<h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
+<div class="exp-box">
+  <strong>Info:</strong>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/31444248479639"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Server Tags</a
+  >
+  and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/31444213087255"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Enhanced Role Styles</a
+  >
+  are currently part of an experiment that is only available to select servers. 
+</div>
+<p>
+  Server Tags and Enhanced Role Styles are new server perks that can be unlocked
+  without changing your server level.
+</p>
+<p>
+  1. With the correct server selected, select the
+  <strong>Server Boosts </strong>tab in the upper-left corner. This tab is only
+  visible to admins and moderators of the server.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31808582990743"
+    width="374"
+    height="400"
+  />
+</p>
+<h4 id="h_01JT6SH1QB88W7S0J147123MXW" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Server Boosts tab in a server</span
+  >
+</h4>
+<p>
+  2. In the upper-right, you’ll see how many Server Boosts are available and
+  recent activity of Server Boosts.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31808574571287"
+    width="362"
+    height="424"
+  />
+</p>
+<h4 id="h_01JT6SH1QBW27KS2ZEHPWQFVMJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Available Server Boosts</span
+  >
+</h4>
+<p>
+  3. You can apply your available Server Boosts to any of the available
+  additional perks by pressing on <strong>Enable Perk</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/31808574573719"
+      width="565"
+      height="425"
+  /></strong>
+</p>
+<h4 id="h_01JT6SH1QBA2X12HMVJ5KZNNPD" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Enable Perk option for purchasing additional perks</span
+  >
+</h4>
 <h2 id="h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</h2>
 <p class="wysiwyg-text-align-center">
   <img
