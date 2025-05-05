@@ -1428,8 +1428,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .svg_cc5dd2 {
   contain: paint;
-  left: -4px;
   position: absolute;
+}
+.shiftSVG_cc5dd2 {
+  left: -4px;
   top: -4px;
 }
 .noContain_cc5dd2 {
@@ -61054,4 +61056,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3f0e1a1976b01b46.css.map*/
+/*# sourceMappingURL=12633.cdbc3c86c556357c.css.map*/
