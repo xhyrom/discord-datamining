@@ -32745,7 +32745,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 :not(.keyboard-mode).full-motion
   .labelToolbar_ab8609.labelToolbarVisible_ab8609 {
-  animation: labelToolbarFadeIn_ab8609 0.15s ease-out forwards;
+  animation: labelToolbarFadeIn_ab8609 0.15s ease-in forwards;
   opacity: 0;
 }
 :not(.keyboard-mode).full-motion
@@ -32770,6 +32770,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 @keyframes labelToolbarFadeOut_ab8609 {
   0% {
     bottom: -30px;
+    opacity: 1;
     pointer-events: all;
   }
   1% {
@@ -61047,4 +61048,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5efe782ca1b98a7d.css.map*/
+/*# sourceMappingURL=12633.136deeedb7ee048b.css.map*/
