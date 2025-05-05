@@ -55956,7 +55956,7 @@ html.disable-forced-colors * {
   --header-primary: var(--neutral-1);
   --header-secondary: var(--neutral-9);
   --icon-muted: var(--neutral-22);
-  --icon-primary: var(--neutral-2);
+  --icon-primary: var(--neutral-1);
   --icon-secondary: var(--neutral-16);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
   --info-danger-text: var(--red-new-22);
@@ -56047,7 +56047,8 @@ html.disable-forced-colors * {
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-34);
-  --icon-default: var(--neutral-2);
+  --icon-default: var(--neutral-9);
+  --icon-link: var(--blue-new-26);
   --icon-tertiary: var(--neutral-22);
   --notice-background-critical: var(--red-new-74);
   --notice-background-info: var(--blue-new-76);
@@ -56234,7 +56235,7 @@ html.disable-forced-colors * {
     );
     --icon-primary: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-1) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-secondary: color-mix(
@@ -56572,7 +56573,12 @@ html.disable-forced-colors * {
     );
     --icon-default: color-mix(
       in oklab,
-      var(--neutral-2) 100%,
+      var(--neutral-9) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --icon-link: color-mix(
+      in oklab,
+      var(--blue-new-26) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-tertiary: color-mix(
@@ -56819,7 +56825,7 @@ html.disable-forced-colors * {
   --header-primary: var(--neutral-71);
   --header-secondary: var(--neutral-69);
   --icon-muted: var(--neutral-38);
-  --icon-primary: var(--neutral-59);
+  --icon-primary: var(--neutral-71);
   --icon-secondary: var(--neutral-44);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
   --info-danger-text: var(--red-new-54);
@@ -56912,7 +56918,8 @@ html.disable-forced-colors * {
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-30);
-  --icon-default: var(--neutral-59);
+  --icon-default: var(--neutral-69);
+  --icon-link: var(--blue-new-49);
   --icon-tertiary: var(--neutral-38);
   --notice-background-critical: var(--red-new-1);
   --notice-background-info: var(--blue-new-1);
@@ -57099,7 +57106,7 @@ html.disable-forced-colors * {
     );
     --icon-primary: color-mix(
       in oklab,
-      var(--neutral-59) 100%,
+      var(--neutral-71) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-secondary: color-mix(
@@ -57437,7 +57444,12 @@ html.disable-forced-colors * {
     );
     --icon-default: color-mix(
       in oklab,
-      var(--neutral-59) 100%,
+      var(--neutral-69) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --icon-link: color-mix(
+      in oklab,
+      var(--blue-new-49) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-tertiary: color-mix(
@@ -57680,7 +57692,7 @@ html.disable-forced-colors * {
   --header-primary: var(--neutral-8);
   --header-secondary: var(--neutral-10);
   --icon-muted: var(--neutral-33);
-  --icon-primary: var(--neutral-15);
+  --icon-primary: var(--neutral-8);
   --icon-secondary: var(--neutral-27);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
   --info-danger-text: var(--red-new-37);
@@ -57772,7 +57784,8 @@ html.disable-forced-colors * {
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-43);
-  --icon-default: var(--neutral-15);
+  --icon-default: var(--neutral-10);
+  --icon-link: var(--blue-new-42);
   --icon-tertiary: var(--neutral-33);
   --notice-background-critical: var(--red-new-94);
   --notice-background-info: var(--blue-new-94);
@@ -57959,7 +57972,7 @@ html.disable-forced-colors * {
     );
     --icon-primary: color-mix(
       in oklab,
-      var(--neutral-15) 100%,
+      var(--neutral-8) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-secondary: color-mix(
@@ -58291,7 +58304,12 @@ html.disable-forced-colors * {
     );
     --icon-default: color-mix(
       in oklab,
-      var(--neutral-15) 100%,
+      var(--neutral-10) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --icon-link: color-mix(
+      in oklab,
+      var(--blue-new-42) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-tertiary: color-mix(
@@ -58532,7 +58550,7 @@ html.disable-forced-colors * {
   --header-primary: var(--neutral-2);
   --header-secondary: var(--neutral-5);
   --icon-muted: var(--neutral-29);
-  --icon-primary: var(--neutral-10);
+  --icon-primary: var(--neutral-2);
   --icon-secondary: var(--neutral-23);
   --info-danger-background: hsl(var(--opacity-red-8-hsl) / 0.0784313725490196);
   --info-danger-text: var(--red-new-32);
@@ -58622,7 +58640,8 @@ html.disable-forced-colors * {
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-40);
-  --icon-default: var(--neutral-10);
+  --icon-default: var(--neutral-5);
+  --icon-link: var(--blue-new-36);
   --icon-tertiary: var(--neutral-29);
   --notice-background-critical: var(--red-new-85);
   --notice-background-info: var(--blue-new-86);
@@ -58809,7 +58828,7 @@ html.disable-forced-colors * {
     );
     --icon-primary: color-mix(
       in oklab,
-      var(--neutral-10) 100%,
+      var(--neutral-2) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-secondary: color-mix(
@@ -59141,7 +59160,12 @@ html.disable-forced-colors * {
     );
     --icon-default: color-mix(
       in oklab,
-      var(--neutral-10) 100%,
+      var(--neutral-5) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --icon-link: color-mix(
+      in oklab,
+      var(--blue-new-36) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-tertiary: color-mix(
@@ -61030,4 +61054,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.31402511e413d85c.css.map*/
+/*# sourceMappingURL=12633.3f0e1a1976b01b46.css.map*/
