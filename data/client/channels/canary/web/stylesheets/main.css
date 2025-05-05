@@ -35646,8 +35646,8 @@ img.thumbnail__0f2e8 {
     ),
     linear-gradient(
       270deg,
-      var(--bg-modal-gradient-lavender-end) 0,
-      var(--bg-modal-gradient-lavender-start) 100%
+      var(--background-modal-gradient-purple-end) 0,
+      var(--background-modal-gradient-purple-start) 100%
     );
   border-radius: inherit;
   border-bottom-left-radius: 0;
@@ -42546,8 +42546,8 @@ div.mobilePushContainer__3d3b0 {
     ),
     linear-gradient(
       270deg,
-      var(--bg-modal-gradient-lavender-start) 0,
-      var(--bg-modal-gradient-lavender-end) 100%
+      var(--background-modal-gradient-purple-start) 0,
+      var(--background-modal-gradient-purple-end) 100%
     );
   display: flex;
   flex-wrap: wrap;
@@ -44524,96 +44524,6 @@ html.disable-forced-colors * {
   );
   --bg-gradient-under-the-sea-3-hsl: 175.385
     calc(var(--saturation-factor, 1) * 10.924%) 46.667%;
-  --bg-modal-gradient-green-dark-1: hsl(
-    var(--bg-modal-gradient-green-dark-1-hsl) / 1
-  );
-  --bg-modal-gradient-green-dark-1-hsl: 145.935
-    calc(var(--saturation-factor, 1) * 70.776%) 42.941%;
-  --bg-modal-gradient-green-dark-2: hsl(
-    var(--bg-modal-gradient-green-dark-2-hsl) / 1
-  );
-  --bg-modal-gradient-green-dark-2-hsl: 152.941
-    calc(var(--saturation-factor, 1) * 100%) 20%;
-  --bg-modal-gradient-green-light-1: hsl(
-    var(--bg-modal-gradient-green-light-1-hsl) / 1
-  );
-  --bg-modal-gradient-green-light-1-hsl: 145.385
-    calc(var(--saturation-factor, 1) * 100%) 94.902%;
-  --bg-modal-gradient-green-light-2: hsl(
-    var(--bg-modal-gradient-green-light-2-hsl) / 1
-  );
-  --bg-modal-gradient-green-light-2-hsl: 143.67
-    calc(var(--saturation-factor, 1) * 87.2%) 75.49%;
-  --bg-modal-gradient-lavender-dark-1: hsl(
-    var(--bg-modal-gradient-lavender-dark-1-hsl) / 1
-  );
-  --bg-modal-gradient-lavender-dark-1-hsl: 268.462
-    calc(var(--saturation-factor, 1) * 85.714%) 64.314%;
-  --bg-modal-gradient-lavender-dark-2: hsl(
-    var(--bg-modal-gradient-lavender-dark-2-hsl) / 1
-  );
-  --bg-modal-gradient-lavender-dark-2-hsl: 260.87
-    calc(var(--saturation-factor, 1) * 72.327%) 31.176%;
-  --bg-modal-gradient-lavender-light-1: hsl(
-    var(--bg-modal-gradient-lavender-light-1-hsl) / 1
-  );
-  --bg-modal-gradient-lavender-light-1-hsl: 268.966
-    calc(var(--saturation-factor, 1) * 90.625%) 87.451%;
-  --bg-modal-gradient-lavender-light-2: hsl(
-    var(--bg-modal-gradient-lavender-light-2-hsl) / 1
-  );
-  --bg-modal-gradient-lavender-light-2-hsl: 269.011
-    calc(var(--saturation-factor, 1) * 88.35%) 79.804%;
-  --bg-modal-gradient-magenta-dark-1: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 1
-  );
-  --bg-modal-gradient-magenta-dark-1-hsl: 309.787
-    calc(var(--saturation-factor, 1) * 64.977%) 42.549%;
-  --bg-modal-gradient-magenta-dark-2: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 1
-  );
-  --bg-modal-gradient-magenta-dark-2-hsl: 300
-    calc(var(--saturation-factor, 1) * 100%) 20%;
-  --bg-modal-gradient-magenta-light-1: hsl(
-    var(--bg-modal-gradient-magenta-light-1-hsl) / 1
-  );
-  --bg-modal-gradient-magenta-light-1-hsl: 290.4
-    calc(var(--saturation-factor, 1) * 100%) 95.098%;
-  --bg-modal-gradient-magenta-light-2: hsl(
-    var(--bg-modal-gradient-magenta-light-2-hsl) / 1
-  );
-  --bg-modal-gradient-magenta-light-2-hsl: 312
-    calc(var(--saturation-factor, 1) * 96.154%) 79.608%;
-  --bg-modal-gradient-navy-dark-1: hsl(
-    var(--bg-modal-gradient-navy-dark-1-hsl) / 1
-  );
-  --bg-modal-gradient-navy-dark-1-hsl: 234.935
-    calc(var(--saturation-factor, 1) * 85.556%) 64.706%;
-  --bg-modal-gradient-navy-dark-2: hsl(
-    var(--bg-modal-gradient-navy-dark-2-hsl) / 1
-  );
-  --bg-modal-gradient-navy-dark-2-hsl: 237.931
-    calc(var(--saturation-factor, 1) * 72.5%) 31.373%;
-  --bg-modal-gradient-navy-light-1: hsl(
-    var(--bg-modal-gradient-navy-light-1-hsl) / 1
-  );
-  --bg-modal-gradient-navy-light-1-hsl: 234.737
-    calc(var(--saturation-factor, 1) * 90.476%) 87.647%;
-  --bg-modal-gradient-navy-light-2: hsl(
-    var(--bg-modal-gradient-navy-light-2-hsl) / 1
-  );
-  --bg-modal-gradient-navy-light-2-hsl: 234
-    calc(var(--saturation-factor, 1) * 90%) 80.392%;
-  --bg-tile-gradient-magenta-dark-1: hsl(
-    var(--bg-tile-gradient-magenta-dark-1-hsl) / 1
-  );
-  --bg-tile-gradient-magenta-dark-1-hsl: 309.787
-    calc(var(--saturation-factor, 1) * 64.977%) 42.549%;
-  --bg-tile-gradient-magenta-dark-2: hsl(
-    var(--bg-tile-gradient-magenta-dark-2-hsl) / 1
-  );
-  --bg-tile-gradient-magenta-dark-2-hsl: 300
-    calc(var(--saturation-factor, 1) * 100%) 20%;
   --bungie: hsl(var(--bungie-hsl) / 1);
   --bungie-hsl: 196.916 calc(var(--saturation-factor, 1) * 100%) 44.51%;
   --crunchyroll: hsl(var(--crunchyroll-hsl) / 1);
@@ -44656,6 +44566,70 @@ html.disable-forced-colors * {
   --hypesquad-house-3: hsl(var(--hypesquad-house-3-hsl) / 1);
   --hypesquad-house-3-hsl: 168.553 calc(var(--saturation-factor, 1) * 69.091%)
     56.863%;
+  --illo-blue-1: hsl(var(--illo-blue-1-hsl) / 1);
+  --illo-blue-1-hsl: 235.2 calc(var(--saturation-factor, 1) * 100%) 95.098%;
+  --illo-blue-2: hsl(var(--illo-blue-2-hsl) / 1);
+  --illo-blue-2-hsl: 234.737 calc(var(--saturation-factor, 1) * 90.476%) 87.647%;
+  --illo-blue-3: hsl(var(--illo-blue-3-hsl) / 1);
+  --illo-blue-3-hsl: 234 calc(var(--saturation-factor, 1) * 90%) 80.392%;
+  --illo-blue-4: hsl(var(--illo-blue-4-hsl) / 1);
+  --illo-blue-4-hsl: 234.935 calc(var(--saturation-factor, 1) * 85.556%) 64.706%;
+  --illo-blue-5: hsl(var(--illo-blue-5-hsl) / 1);
+  --illo-blue-5-hsl: 236.25 calc(var(--saturation-factor, 1) * 58.716%) 42.745%;
+  --illo-blue-6: hsl(var(--illo-blue-6-hsl) / 1);
+  --illo-blue-6-hsl: 237.931 calc(var(--saturation-factor, 1) * 72.5%) 31.373%;
+  --illo-blue-7: hsl(var(--illo-blue-7-hsl) / 1);
+  --illo-blue-7-hsl: 240 calc(var(--saturation-factor, 1) * 100%) 20%;
+  --illo-green-1: hsl(var(--illo-green-1-hsl) / 1);
+  --illo-green-1-hsl: 145.385 calc(var(--saturation-factor, 1) * 100%) 94.902%;
+  --illo-green-2: hsl(var(--illo-green-2-hsl) / 1);
+  --illo-green-2-hsl: 144.407 calc(var(--saturation-factor, 1) * 88.06%) 86.863%;
+  --illo-green-3: hsl(var(--illo-green-3-hsl) / 1);
+  --illo-green-3-hsl: 143.67 calc(var(--saturation-factor, 1) * 87.2%) 75.49%;
+  --illo-green-4: hsl(var(--illo-green-4-hsl) / 1);
+  --illo-green-4-hsl: 143.804 calc(var(--saturation-factor, 1) * 83.636%)
+    56.863%;
+  --illo-green-5: hsl(var(--illo-green-5-hsl) / 1);
+  --illo-green-5-hsl: 145.714 calc(var(--saturation-factor, 1) * 70%) 43.137%;
+  --illo-green-6: hsl(var(--illo-green-6-hsl) / 1);
+  --illo-green-6-hsl: 149.048 calc(var(--saturation-factor, 1) * 79.747%) 30.98%;
+  --illo-green-7: hsl(var(--illo-green-7-hsl) / 1);
+  --illo-green-7-hsl: 152.941 calc(var(--saturation-factor, 1) * 100%) 20%;
+  --illo-nitro-blue: hsl(var(--illo-nitro-blue-hsl) / 1);
+  --illo-nitro-blue-hsl: 240 calc(var(--saturation-factor, 1) * 82.063%) 43.725%;
+  --illo-pink-1: hsl(var(--illo-pink-1-hsl) / 1);
+  --illo-pink-1-hsl: 290.4 calc(var(--saturation-factor, 1) * 100%) 95.098%;
+  --illo-pink-2: hsl(var(--illo-pink-2-hsl) / 1);
+  --illo-pink-2-hsl: 308 calc(var(--saturation-factor, 1) * 90.909%) 87.059%;
+  --illo-pink-3: hsl(var(--illo-pink-3-hsl) / 1);
+  --illo-pink-3-hsl: 312 calc(var(--saturation-factor, 1) * 96.154%) 79.608%;
+  --illo-pink-4: hsl(var(--illo-pink-4-hsl) / 1);
+  --illo-pink-4-hsl: 315.084 calc(var(--saturation-factor, 1) * 100%) 64.902%;
+  --illo-pink-5: hsl(var(--illo-pink-5-hsl) / 1);
+  --illo-pink-5-hsl: 309.787 calc(var(--saturation-factor, 1) * 64.977%) 42.549%;
+  --illo-pink-6: hsl(var(--illo-pink-6-hsl) / 1);
+  --illo-pink-6-hsl: 305.455 calc(var(--saturation-factor, 1) * 76.101%) 31.176%;
+  --illo-pink-7: hsl(var(--illo-pink-7-hsl) / 1);
+  --illo-pink-7-hsl: 300 calc(var(--saturation-factor, 1) * 100%) 20%;
+  --illo-purple-1: hsl(var(--illo-purple-1-hsl) / 1);
+  --illo-purple-1-hsl: 271.2 calc(var(--saturation-factor, 1) * 100%) 95.098%;
+  --illo-purple-2: hsl(var(--illo-purple-2-hsl) / 1);
+  --illo-purple-2-hsl: 268.966 calc(var(--saturation-factor, 1) * 90.625%)
+    87.451%;
+  --illo-purple-3: hsl(var(--illo-purple-3-hsl) / 1);
+  --illo-purple-3-hsl: 269.011 calc(var(--saturation-factor, 1) * 88.35%)
+    79.804%;
+  --illo-purple-4: hsl(var(--illo-purple-4-hsl) / 1);
+  --illo-purple-4-hsl: 268.462 calc(var(--saturation-factor, 1) * 85.714%)
+    64.314%;
+  --illo-purple-5: hsl(var(--illo-purple-5-hsl) / 1);
+  --illo-purple-5-hsl: 264.275 calc(var(--saturation-factor, 1) * 59.817%)
+    42.941%;
+  --illo-purple-6: hsl(var(--illo-purple-6-hsl) / 1);
+  --illo-purple-6-hsl: 260.87 calc(var(--saturation-factor, 1) * 72.327%)
+    31.176%;
+  --illo-purple-7: hsl(var(--illo-purple-7-hsl) / 1);
+  --illo-purple-7-hsl: 257.059 calc(var(--saturation-factor, 1) * 100%) 20%;
   --input-placeholder-text-dark: hsl(
     var(--input-placeholder-text-dark-hsl) / 1
   );
@@ -44904,6 +44878,24 @@ html.disable-forced-colors * {
   --background-message-hover: hsl(var(--primary-900-hsl) / 0.06);
   --background-mobile-primary: var(--primary-600);
   --background-mobile-secondary: var(--primary-630);
+  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.45);
+  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.45);
+  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.45);
+  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.45);
+  --background-modal-gradient-nitro-1-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.5
+  );
+  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.5);
+  --background-modal-gradient-nitro-2-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.5
+  );
+  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.5);
+  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.45);
+  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.45);
+  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.45);
+  --background-modal-gradient-purple-start: hsl(
+    var(--illo-purple-4-hsl) / 0.45
+  );
   --background-modifier-accent: hsl(var(--primary-500-hsl) / 0.48);
   --background-modifier-active: hsl(var(--primary-500-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--primary-500-hsl) / 0.3);
@@ -44913,6 +44905,8 @@ html.disable-forced-colors * {
   --background-secondary: var(--primary-630);
   --background-secondary-alt: var(--primary-660);
   --background-tertiary: var(--primary-700);
+  --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
+  --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
@@ -44925,39 +44919,9 @@ html.disable-forced-colors * {
   --bg-mod-faint: hsl(var(--primary-500-hsl) / 0.3);
   --bg-mod-strong: hsl(var(--primary-500-hsl) / 0.54);
   --bg-mod-subtle: hsl(var(--primary-500-hsl) / 0.48);
-  --bg-modal-gradient-green-end: hsl(
-    var(--bg-modal-gradient-green-dark-2-hsl) / 0.45
-  );
-  --bg-modal-gradient-green-start: hsl(
-    var(--bg-modal-gradient-green-dark-1-hsl) / 0.45
-  );
-  --bg-modal-gradient-lavender-end: hsl(
-    var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.45
-  );
-  --bg-modal-gradient-lavender-start: hsl(
-    var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.45
-  );
-  --bg-modal-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.45
-  );
-  --bg-modal-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.45
-  );
-  --bg-modal-gradient-navy-end: hsl(
-    var(--bg-modal-gradient-navy-dark-2-hsl) / 0.45
-  );
-  --bg-modal-gradient-navy-start: hsl(
-    var(--bg-modal-gradient-navy-dark-1-hsl) / 0.45
-  );
   --bg-surface-overlay: var(--primary-800);
   --bg-surface-overlay-tmp: var(--primary-800);
   --bg-surface-raised: var(--primary-560);
-  --bg-tile-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3
-  );
-  --bg-tile-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3
-  );
   --blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--primary-730-hsl) / 0.96);
   --border-faint: hsl(var(--white-hsl) / 0.03);
@@ -45430,6 +45394,18 @@ html.disable-forced-colors * {
       var(--primary-700) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --background-tile-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-tile-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.7) 100%,
@@ -45480,54 +45456,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.48)
         var(--theme-base-color-amount, 0%)
     );
-    --bg-modal-gradient-green-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-2-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-green-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-1-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-2-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-1-hsl) / 0.45) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
-        var(--theme-base-color-amount, 0%)
-    );
     --bg-surface-overlay: color-mix(
       in oklab,
       var(--primary-800) 100%,
@@ -45542,18 +45470,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-560) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
     );
     --blur-fallback: color-mix(
       in oklab,
@@ -46736,6 +46652,18 @@ html.disable-forced-colors * {
   --background-message-hover: hsl(var(--primary-900-hsl) / 0.03);
   --background-mobile-primary: var(--primary-100);
   --background-mobile-secondary: var(--white);
+  --background-modal-gradient-blue-end: hsl(var(--illo-blue-3-hsl) / 0.8);
+  --background-modal-gradient-blue-start: hsl(var(--illo-blue-1-hsl) / 0.8);
+  --background-modal-gradient-green-end: hsl(var(--illo-green-3-hsl) / 0.8);
+  --background-modal-gradient-green-start: hsl(var(--illo-green-1-hsl) / 0.8);
+  --background-modal-gradient-nitro-1-end: hsl(var(--illo-blue-4-hsl) / 0.9);
+  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-3-hsl) / 0.9);
+  --background-modal-gradient-nitro-2-end: hsl(var(--illo-blue-4-hsl) / 0.9);
+  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-1-hsl) / 0.9);
+  --background-modal-gradient-pink-end: hsl(var(--illo-pink-3-hsl) / 0.8);
+  --background-modal-gradient-pink-start: hsl(var(--illo-pink-1-hsl) / 0.8);
+  --background-modal-gradient-purple-end: hsl(var(--illo-purple-3-hsl) / 0.8);
+  --background-modal-gradient-purple-start: hsl(var(--illo-purple-1-hsl) / 0.8);
   --background-modifier-accent: hsl(var(--primary-400-hsl) / 0.24);
   --background-modifier-active: hsl(var(--primary-400-hsl) / 0.2);
   --background-modifier-hover: hsl(var(--primary-400-hsl) / 0.16);
@@ -46745,6 +46673,8 @@ html.disable-forced-colors * {
   --background-secondary: var(--primary-130);
   --background-secondary-alt: var(--primary-160);
   --background-tertiary: var(--primary-200);
+  --background-tile-gradient-pink-end: hsl(var(--illo-pink-3-hsl) / 0.3);
+  --background-tile-gradient-pink-start: hsl(var(--illo-pink-1-hsl) / 0.3);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.54);
@@ -46757,23 +46687,9 @@ html.disable-forced-colors * {
   --bg-mod-faint: hsl(var(--primary-400-hsl) / 0.08);
   --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
   --bg-mod-subtle: hsl(var(--primary-400-hsl) / 0.16);
-  --bg-modal-gradient-green-end: var(--bg-modal-gradient-green-light-2);
-  --bg-modal-gradient-green-start: var(--bg-modal-gradient-green-light-1);
-  --bg-modal-gradient-lavender-end: var(--bg-modal-gradient-lavender-light-2);
-  --bg-modal-gradient-lavender-start: var(--bg-modal-gradient-lavender-light-1);
-  --bg-modal-gradient-magenta-end: var(--bg-modal-gradient-magenta-light-2);
-  --bg-modal-gradient-magenta-start: var(--bg-modal-gradient-magenta-light-1);
-  --bg-modal-gradient-navy-end: var(--bg-modal-gradient-navy-light-2);
-  --bg-modal-gradient-navy-start: var(--bg-modal-gradient-navy-light-1);
   --bg-surface-overlay: var(--white);
   --bg-surface-overlay-tmp: var(--primary-130);
   --bg-surface-raised: var(--white);
-  --bg-tile-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-light-2-hsl) / 0.3
-  );
-  --bg-tile-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-light-1-hsl) / 0.3
-  );
   --blur-fallback: hsl(var(--primary-530-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--primary-560-hsl) / 0.96);
   --border-faint: hsl(var(--black-hsl) / 0.04);
@@ -47246,6 +47162,18 @@ html.disable-forced-colors * {
       var(--primary-200) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --background-tile-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-3-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-tile-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-1-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.54) 100%,
@@ -47296,46 +47224,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--theme-base-color-amount, 0%)
     );
-    --bg-modal-gradient-green-end: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-green-light-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-green-start: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-green-light-1) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-end: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-lavender-light-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-start: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-lavender-light-1) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-end: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-magenta-light-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-start: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-magenta-light-1) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-end: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-navy-light-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-start: color-mix(
-      in oklab,
-      var(--bg-modal-gradient-navy-light-1) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --bg-surface-overlay: color-mix(
       in oklab,
       var(--white) 100%,
@@ -47350,18 +47238,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--white) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-light-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-light-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
     );
     --blur-fallback: color-mix(
       in oklab,
@@ -48547,6 +48423,24 @@ html.disable-forced-colors * {
   --background-message-hover: var(--plum-21);
   --background-mobile-primary: var(--black);
   --background-mobile-secondary: var(--black);
+  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.25);
+  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.25);
+  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.25);
+  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.25);
+  --background-modal-gradient-nitro-1-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.3
+  );
+  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.3);
+  --background-modal-gradient-nitro-2-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.3
+  );
+  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.3);
+  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.25);
+  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.25);
+  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.25);
+  --background-modal-gradient-purple-start: hsl(
+    var(--illo-purple-4-hsl) / 0.25
+  );
   --background-modifier-accent: hsl(var(--plum-23-alpha-hsl) / 0.1);
   --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
@@ -48556,6 +48450,8 @@ html.disable-forced-colors * {
   --background-secondary: var(--plum-23);
   --background-secondary-alt: var(--plum-17);
   --background-tertiary: var(--plum-19);
+  --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
+  --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--plum-19-hsl) / 0.75);
@@ -48568,39 +48464,9 @@ html.disable-forced-colors * {
   --bg-mod-faint: hsl(var(--plum-11-hsl) / 0.16);
   --bg-mod-strong: hsl(var(--plum-11-hsl) / 0.18);
   --bg-mod-subtle: hsl(var(--plum-11-hsl) / 0.12);
-  --bg-modal-gradient-green-end: hsl(
-    var(--bg-modal-gradient-green-dark-2-hsl) / 0.25
-  );
-  --bg-modal-gradient-green-start: hsl(
-    var(--bg-modal-gradient-green-dark-1-hsl) / 0.25
-  );
-  --bg-modal-gradient-lavender-end: hsl(
-    var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.25
-  );
-  --bg-modal-gradient-lavender-start: hsl(
-    var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.25
-  );
-  --bg-modal-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.25
-  );
-  --bg-modal-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.25
-  );
-  --bg-modal-gradient-navy-end: hsl(
-    var(--bg-modal-gradient-navy-dark-2-hsl) / 0.25
-  );
-  --bg-modal-gradient-navy-start: hsl(
-    var(--bg-modal-gradient-navy-dark-1-hsl) / 0.25
-  );
   --bg-surface-overlay: var(--plum-19);
   --bg-surface-overlay-tmp: var(--plum-21);
   --bg-surface-raised: var(--plum-23);
-  --bg-tile-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3
-  );
-  --bg-tile-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3
-  );
   --blur-fallback: hsl(var(--plum-19-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--plum-20-hsl) / 0.96);
   --border-faint: hsl(var(--plum-11-hsl) / 0.08);
@@ -49072,6 +48938,18 @@ html.disable-forced-colors * {
       var(--plum-19) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --background-tile-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-tile-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--plum-19-hsl) / 0.75) 100%,
@@ -49122,54 +49000,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12)
         var(--theme-base-color-amount, 0%)
     );
-    --bg-modal-gradient-green-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-2-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-green-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-1-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-2-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-1-hsl) / 0.25) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
-        var(--theme-base-color-amount, 0%)
-    );
     --bg-surface-overlay: color-mix(
       in oklab,
       var(--plum-19) 100%,
@@ -49184,18 +49014,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-23) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
     );
     --blur-fallback: color-mix(
       in oklab,
@@ -50383,6 +50201,22 @@ html.disable-forced-colors * {
   --background-message-hover: var(--plum-21);
   --background-mobile-primary: var(--plum-20);
   --background-mobile-secondary: var(--plum-20);
+  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.3);
+  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.3);
+  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.3);
+  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.3);
+  --background-modal-gradient-nitro-1-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.4
+  );
+  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.4);
+  --background-modal-gradient-nitro-2-end: hsl(
+    var(--illo-nitro-blue-hsl) / 0.4
+  );
+  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.4);
+  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
+  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
+  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.3);
+  --background-modal-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.3);
   --background-modifier-accent: hsl(var(--plum-11-hsl) / 0.12);
   --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
   --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
@@ -50392,6 +50226,8 @@ html.disable-forced-colors * {
   --background-secondary: var(--plum-18);
   --background-secondary-alt: var(--plum-15);
   --background-tertiary: var(--plum-16);
+  --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
+  --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
@@ -50404,39 +50240,9 @@ html.disable-forced-colors * {
   --bg-mod-faint: hsl(var(--plum-11-hsl) / 0.12);
   --bg-mod-strong: hsl(var(--plum-11-hsl) / 0.24);
   --bg-mod-subtle: hsl(var(--plum-11-hsl) / 0.16);
-  --bg-modal-gradient-green-end: hsl(
-    var(--bg-modal-gradient-green-dark-2-hsl) / 0.3
-  );
-  --bg-modal-gradient-green-start: hsl(
-    var(--bg-modal-gradient-green-dark-1-hsl) / 0.3
-  );
-  --bg-modal-gradient-lavender-end: hsl(
-    var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.3
-  );
-  --bg-modal-gradient-lavender-start: hsl(
-    var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.3
-  );
-  --bg-modal-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3
-  );
-  --bg-modal-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3
-  );
-  --bg-modal-gradient-navy-end: hsl(
-    var(--bg-modal-gradient-navy-dark-2-hsl) / 0.3
-  );
-  --bg-modal-gradient-navy-start: hsl(
-    var(--bg-modal-gradient-navy-dark-1-hsl) / 0.3
-  );
   --bg-surface-overlay: var(--plum-17);
   --bg-surface-overlay-tmp: var(--plum-17);
   --bg-surface-raised: var(--plum-18);
-  --bg-tile-gradient-magenta-end: hsl(
-    var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3
-  );
-  --bg-tile-gradient-magenta-start: hsl(
-    var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3
-  );
   --blur-fallback: hsl(var(--plum-17-hsl) / 0.96);
   --blur-fallback-pressed: hsl(var(--plum-18-hsl) / 0.96);
   --border-faint: hsl(var(--plum-11-hsl) / 0.06);
@@ -50908,6 +50714,18 @@ html.disable-forced-colors * {
       var(--plum-16) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --background-tile-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --background-tile-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.7) 100%,
@@ -50958,54 +50776,6 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--theme-base-color-amount, 0%)
     );
-    --bg-modal-gradient-green-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-green-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-green-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-lavender-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-lavender-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-modal-gradient-navy-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-navy-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
     --bg-surface-overlay: color-mix(
       in oklab,
       var(--plum-17) 100%,
@@ -51020,18 +50790,6 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-end: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-2-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
-    );
-    --bg-tile-gradient-magenta-start: color-mix(
-      in oklab,
-      hsl(var(--bg-modal-gradient-magenta-dark-1-hsl) / 0.3) 100%,
-      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--theme-base-color-amount, 0%)
     );
     --blur-fallback: color-mix(
       in oklab,
@@ -61056,4 +60814,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cdbc3c86c556357c.css.map*/
+/*# sourceMappingURL=12633.7d669bfe9f74717f.css.map*/
