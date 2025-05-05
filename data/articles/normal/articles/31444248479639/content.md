@@ -26,10 +26,10 @@
       <ul>
         <li><a href="#h_01JT6VKRACJ3XRZBQTQP4G50EV">Desktop/Browser</a></li>
         <li><a href="#h_01JT6VKRAC46AR20P1M6BV61A8">Mobile</a></li>
-        <li>
-          <a href="#h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</a>
-        </li>
       </ul>
+    </li>
+    <li>
+      <a href="#h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
@@ -181,7 +181,10 @@
   you can edit the following:
 </p>
 <ul>
-  <li>Server Tag name (can use up to 4 characters that are alphanumeric).</li>
+  <li>
+    Server Tag name (can use up to 4 characters that are alphanumeric and
+    certain special characters)
+  </li>
   <li>Badge</li>
   <li>Color </li>
 </ul>
@@ -401,8 +404,9 @@
   <strong>Q: Can I include emoji or special characters in a Server Tag?</strong>
 </p>
 <p>
-  A: No, Server Tags can only contain alphanumeric characters. Emoji, spaces,
-  and special characters are not supported at this time. 
+  A: Server Tags can consist of alphanumerical characters and certain special
+  characters. Certain characters, spaces, and emojis are not supported at this
+  time.
 </p>
 <p><strong>Q: Can my server have multiple Server Tags?</strong></p>
 <p>
@@ -447,5 +451,16 @@
 </p>
 <p>
   A: If you update the Server Tag for your server, server members will have to
-  reapply the tag again for the change to take effect. 
+  reapply the tag again for the change to take effect.
 </p>
+<p>
+  <strong
+    >Q: Is there a rate limit for how many times I can change my server tag once
+    it is set?</strong
+  >
+</p>
+<p>
+  A: Yes, there is a rate limit for changing your server tag. You can change
+  your server tag after a certain period of time.
+</p>
+<p> </p>
