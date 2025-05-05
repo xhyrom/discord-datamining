@@ -28,6 +28,32 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: SID MEIER'S CIVILIZATION® VII - VR TRAILER<br /></strong
+  ><strong>Quest Name: Civilization® VII - VR Trailer Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    SID MEIER'S CIVILIZATION® VII - VR TRAILER </strong
+  >in Discord to receive 1 day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+  >!<br /><strong>Who is Eligible: </strong>Available to users in the
+  <strong>United States</strong> on desktop and browser where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Civilization® VII - VR Trailer Quest</strong> can be accepted on
+  Discord desktop app or browser client from
+  <strong>May 5, 2025 </strong>until<strong> May 26, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 26, 2025 (11:59 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: FragPunk<br /></strong
   ><strong>Quest Name: Season 1 Chapter 2 Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
