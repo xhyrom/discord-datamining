@@ -337,8 +337,8 @@
 <h1 id="h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</h1>
 <p><strong>Q: How many characters can I use in a Server Tag?</strong></p>
 <p>
-  A: Server Tags can include up to 4 characters. These characters must be
-  alphanumeric (letters and numbers only).
+  A: Server Tags are non-unique, 4-character tags that can consist of
+  alphanumerical characters and certain special characters.
 </p>
 <p><strong>Q: Do Server Tags need to be unique across Discord?</strong></p>
 <p>

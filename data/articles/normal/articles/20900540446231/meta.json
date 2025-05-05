@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "os",
     "support",
     "answer-bot",
-    "mac",
-    "issue",
-    "os",
-    "10.14",
     "macOS",
+    "mac",
     "known",
+    "issue",
     "10.13",
+    "10.14",
     "10.15"
   ]
 }
