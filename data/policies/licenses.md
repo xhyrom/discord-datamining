@@ -1,5 +1,10 @@
 <body>
   <div id="app-mount">
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/779a770c34fcb823a598a7277301adaf.svg"
+    />
     <div style="height: 100%; overflow-x: hidden">
       <div class="">
         <div class="grid-3d2PVT">
@@ -60998,12 +61003,6 @@ without specific prior written permission.</code></pre>
                     ><span class="text-2H5FnP textSmall-Rm6-Ys"
                       >App Directory</span
                     ></a
-                  ><a
-                    class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
-                    href="/mobile"
-                    ><span class="text-2H5FnP textSmall-Rm6-Ys"
-                      >New Mobile Experience</span
-                    ></a
                   >
                 </nav>
               </div>
@@ -61118,10 +61117,6 @@ without specific prior written permission.</code></pre>
                     ><span class="text-2H5FnP textSmall-Rm6-Ys"
                       >Developers</span
                     ></a
-                  ><a
-                    class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
-                    href="/gaming"
-                    ><span class="text-2H5FnP textSmall-Rm6-Ys">Gaming</span></a
                   ><a
                     class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
                     href="/quests"
