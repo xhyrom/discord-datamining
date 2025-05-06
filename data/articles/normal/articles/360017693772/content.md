@@ -340,6 +340,12 @@
     <span style="font-weight: 400">PayPal (Global)</span>
   </li>
   <li style="font-weight: 400" aria-level="1">
+    <span style="font-weight: 400">Apple Pay</span>
+  </li>
+  <li style="font-weight: 400" aria-level="1">
+    <span style="font-weight: 400">Google Pay<br /></span>
+  </li>
+  <li style="font-weight: 400" aria-level="1">
     <span style="font-weight: 400">Venmo (United States)</span>
   </li>
   <li style="font-weight: 400" aria-level="1">
