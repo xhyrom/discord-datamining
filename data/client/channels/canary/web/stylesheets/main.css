@@ -13505,7 +13505,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   cursor: pointer;
 }
 .text__10651 {
+  align-items: center;
+  display: inline-flex;
   line-height: 16px !important;
+  max-width: 60px;
 }
 .badge__10651 {
   margin-bottom: -1px;
@@ -60814,4 +60817,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.98382d5a79408bd8.css.map*/
+/*# sourceMappingURL=12633.a9b5f22b9ad8a885.css.map*/
