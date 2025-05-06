@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963308002](https://discord.com/jobs/7963308002)
 
-**Updated At:** Fri, 02 May 2025 19:54:40 GMT
+**Updated At:** Tue, 06 May 2025 21:13:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an exceptional Senior Counsel, Intellectual Property to join our growing legal team. This is a high-impact role at one of the most interesting companies on the planet!
@@ -60,6 +60,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Legal
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     

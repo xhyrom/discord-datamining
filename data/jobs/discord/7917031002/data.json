@@ -30,7 +30,7 @@
     }
   ],
   "id": 7917031002,
-  "updated_at": "2025-05-02T15:54:26-04:00",
+  "updated_at": "2025-05-06T16:58:26-04:00",
   "requisition_id": "R-100843",
   "title": "Program Manager, Marketing",
   "company_name": "Discord",
@@ -45,13 +45,6 @@
     }
   ],
   "offices": [
-    {
-      "id": 4082816002,
-      "name": "Remote (U.S.)",
-      "location": null,
-      "child_ids": [],
-      "parent_id": null
-    },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",

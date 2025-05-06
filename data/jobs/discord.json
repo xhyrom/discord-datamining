@@ -449,7 +449,7 @@
         }
       ],
       "id": 7970933002,
-      "updated_at": "2025-05-02T15:54:48-04:00",
+      "updated_at": "2025-05-06T17:15:41-04:00",
       "requisition_id": "R-100892",
       "title": "Director of Marketing, Ads",
       "company_name": "Discord",
@@ -464,13 +464,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -511,7 +504,7 @@
         }
       ],
       "id": 7970905002,
-      "updated_at": "2025-05-02T15:54:55-04:00",
+      "updated_at": "2025-05-06T17:15:13-04:00",
       "requisition_id": "R-100891",
       "title": "Director of Partner Marketing",
       "company_name": "Discord",
@@ -526,13 +519,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -818,7 +804,7 @@
         }
       ],
       "id": 7912325002,
-      "updated_at": "2025-05-06T12:58:40-04:00",
+      "updated_at": "2025-05-06T16:58:04-04:00",
       "requisition_id": "R-100837",
       "title": "Floating Administrative Business Partner",
       "company_name": "Discord",
@@ -833,13 +819,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -935,7 +914,7 @@
         }
       ],
       "id": 7917618002,
-      "updated_at": "2025-05-02T15:54:24-04:00",
+      "updated_at": "2025-05-06T16:58:49-04:00",
       "requisition_id": "R-100847",
       "title": "IT Support Associate, ChromeOS",
       "company_name": "Discord",
@@ -950,13 +929,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1060,7 +1032,7 @@
         }
       ],
       "id": 7982515002,
-      "updated_at": "2025-05-03T10:44:33-04:00",
+      "updated_at": "2025-05-06T17:14:26-04:00",
       "requisition_id": "R-100913",
       "title": "Product Manager, Core Product",
       "company_name": "Discord",
@@ -1075,13 +1047,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1249,7 +1214,7 @@
         }
       ],
       "id": 7917031002,
-      "updated_at": "2025-05-02T15:54:26-04:00",
+      "updated_at": "2025-05-06T16:58:26-04:00",
       "requisition_id": "R-100843",
       "title": "Program Manager, Marketing",
       "company_name": "Discord",
@@ -1264,13 +1229,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1492,7 +1450,7 @@
         }
       ],
       "id": 7977997002,
-      "updated_at": "2025-05-06T11:20:07-04:00",
+      "updated_at": "2025-05-06T17:16:45-04:00",
       "requisition_id": "R-100900",
       "title": "Senior Administrative Business Partner, CBO",
       "company_name": "Discord",
@@ -1507,13 +1465,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1554,7 +1505,7 @@
         }
       ],
       "id": 7971022002,
-      "updated_at": "2025-05-02T15:54:04-04:00",
+      "updated_at": "2025-05-06T16:55:40-04:00",
       "requisition_id": "R-100777",
       "title": "Senior Copywriter, B2B",
       "company_name": "Discord",
@@ -1569,13 +1520,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1616,7 +1560,7 @@
         }
       ],
       "id": 7963308002,
-      "updated_at": "2025-05-02T15:54:40-04:00",
+      "updated_at": "2025-05-06T17:13:37-04:00",
       "requisition_id": "R-100877",
       "title": "Senior Counsel, Intellectual Property",
       "company_name": "Discord",
@@ -1631,13 +1575,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1859,7 +1796,7 @@
         }
       ],
       "id": 7898977002,
-      "updated_at": "2025-05-02T15:54:20-04:00",
+      "updated_at": "2025-05-06T16:56:52-04:00",
       "requisition_id": "R-100828",
       "title": "Senior Lifecycle Marketing Manager",
       "company_name": "Discord",
@@ -1874,13 +1811,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
@@ -1983,7 +1913,7 @@
         }
       ],
       "id": 7807878002,
-      "updated_at": "2025-05-02T15:53:59-04:00",
+      "updated_at": "2025-05-06T16:53:34-04:00",
       "requisition_id": "R-100757",
       "title": "Senior Oracle Business Analyst",
       "company_name": "Discord",
@@ -2045,7 +1975,7 @@
         }
       ],
       "id": 7977942002,
-      "updated_at": "2025-05-02T15:54:58-04:00",
+      "updated_at": "2025-05-06T17:17:08-04:00",
       "requisition_id": "R-100898",
       "title": "Senior Product Marketing Manager, Game Communities and Servers",
       "company_name": "Discord",
@@ -2060,13 +1990,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
