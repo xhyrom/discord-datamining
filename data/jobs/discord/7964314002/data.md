@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7964314002](https://discord.com/jobs/7964314002)
 
-**Updated At:** Fri, 02 May 2025 21:54:54 GMT
+**Updated At:** Tue, 06 May 2025 16:10:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This is an international position in Brazil employed by an international PEO.
-As Discord’s Head of Public Policy for Brazil and Latin America, you will be responsible for building trust and finding common ground with policymakers, regulators, and other stakeholders in Brasilia and national capitals across Latin America.&amp;nbsp; This role can be resident in Sao Paulo or Brasilia and will report to the Head of Americas Public Policy.
+As the Head of Public Policy for Brazil and Latin America, you will be responsible for building trust and finding common ground with policymakers, regulators, and other stakeholders in Brasilia and national capitals across Latin America.&amp;nbsp; This role can be resident in Sao Paulo or Brasilia and will report to the Head of Americas Public Policy.
 What you will do
 
 Introduce Discord to government policymakers and civil society stakeholders in key markets across the region, including educating decision-makers on our founding vision, our products, and our investments in privacy and safety;
