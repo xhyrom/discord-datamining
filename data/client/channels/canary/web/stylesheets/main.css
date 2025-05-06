@@ -40317,10 +40317,7 @@ div.mobilePushContainer__3d3b0 {
   width: var(--guildbar-avatar-size);
 }
 .childWrapperNoHoverBg__6e9f8 {
-  background-color: var(--background-primary);
-}
-.visual-refresh .childWrapperNoHoverBg__6e9f8 {
-  background-color: var(--background-surface-higher);
+  background-color: var(--background-mod-subtle);
 }
 .wrapper__6e9f8.selected__6e9f8 .childWrapperHoverScale__6e9f8,
 .wrapper__6e9f8:hover .childWrapperHoverScale__6e9f8 {
@@ -60654,17 +60651,19 @@ code {
   --theme-base-color-amount: 20% !important;
   --theme-text-color-amount: 20% !important;
 }
-.visual-refresh.custom-theme-background {
-  --custom-app-border-frame-base: color-mix(
-    in oklab,
-    var(--custom-theme-primary-color) 50%,
-    var(--custom-theme-secondary-color) 50%
-  );
-  --app-border-frame: color-mix(
-    in oklab,
-    var(--custom-app-border-frame-base) 24%,
-    var(--border-subtle) 100%
-  );
+@supports (color: color-mix(in lch, red, blue)) {
+  .custom-theme-background {
+    --custom-app-border-frame-base: color-mix(
+      in oklab,
+      var(--custom-theme-primary-color) 50%,
+      var(--custom-theme-secondary-color) 50%
+    );
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--custom-app-border-frame-base) 24%,
+      var(--border-subtle) 100%
+    );
+  }
 }
 .appMount__51fd7,
 body,
@@ -60814,4 +60813,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7d669bfe9f74717f.css.map*/
+/*# sourceMappingURL=12633.634800dea221e305.css.map*/
