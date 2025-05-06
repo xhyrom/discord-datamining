@@ -267,10 +267,6 @@
   >. 
 </div>
 <h1 id="h_01JD8N8F28HG61QXY041GA63P7">Share Nitro On Mobile</h1>
-<div class="exp-box">
-  We are currently running an experiment to a limited number of users. We are
-  hoping to expand access to this feature to more users in the future.
-</div>
 <p>
   Some Nitro members will be able to send and receive trials on their iOS and
   Android devices. <br />Please note that on iOS devices, if your account has
