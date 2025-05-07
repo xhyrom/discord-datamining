@@ -11459,8 +11459,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   height: var(--custom-activity-status-icon-size);
   width: var(--custom-activity-status-icon-size);
 }
-.text_c9d15c {
+.truncated_c9d15c {
   overflow: hidden;
+}
+.untruncated_c9d15c {
+  white-space: nowrap;
 }
 .emoji_c9d15c {
   flex: 0 0 auto;
@@ -11477,6 +11480,19 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .questsIcon_c9d15c {
   flex-shrink: 0;
+}
+.container_b0fbc2 {
+  max-width: 100%;
+  overflow: hidden;
+}
+.container_b0fbc2:has(.marquee_b0fbc2:empty) {
+  display: none;
+}
+.marquee_b0fbc2 {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  will-change: transform;
 }
 @keyframes placeholderPulse__27cc6 {
   0% {
@@ -60817,4 +60833,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a9b5f22b9ad8a885.css.map*/
+/*# sourceMappingURL=12633.bccfc74784d2cb61.css.map*/
