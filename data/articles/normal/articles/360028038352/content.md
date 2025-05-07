@@ -201,7 +201,7 @@
 <p>
   1. With the correct server selected, select the
   <strong>Server Boosts </strong>tab in the upper-left corner. This tab is only
-  visible to admins and moderators of the server.
+  visible to admins of the server.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
