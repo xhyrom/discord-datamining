@@ -11459,8 +11459,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   height: var(--custom-activity-status-icon-size);
   width: var(--custom-activity-status-icon-size);
 }
-.text_c9d15c {
+.truncated_c9d15c {
   overflow: hidden;
+}
+.untruncated_c9d15c {
+  white-space: nowrap;
 }
 .emoji_c9d15c {
   flex: 0 0 auto;
@@ -11477,6 +11480,19 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .questsIcon_c9d15c {
   flex-shrink: 0;
+}
+.container_b0fbc2 {
+  max-width: 100%;
+  overflow: hidden;
+}
+.container_b0fbc2:has(.marquee_b0fbc2:empty) {
+  display: none;
+}
+.marquee_b0fbc2 {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  will-change: transform;
 }
 @keyframes placeholderPulse__27cc6 {
   0% {
@@ -13505,7 +13521,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   cursor: pointer;
 }
 .text__10651 {
+  align-items: center;
+  display: inline-flex;
   line-height: 16px !important;
+  max-width: 60px;
 }
 .badge__10651 {
   margin-bottom: -1px;
@@ -13545,119 +13564,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   margin-right: 10%;
   margin-top: 2px;
   width: 70%;
-}
-.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIcon__5eb9b svg {
-  transform: none !important;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: currentColor;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: currentColor;
-}
-.clickable_a3e8db,
-.container_a3e8db {
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 36px;
-  pointer-events: all;
-}
-.container_a3e8db {
-  align-items: center;
-  border: 1px solid var(--border-faint, hsla(240, 4%, 61%, 0.04));
-  border-radius: var(--radius-sm);
-  display: inline-flex;
-  flex-shrink: 0;
-  justify-content: flex-end;
-  padding: 8px 12px;
-  position: relative;
-}
-.orbsLottieContainer_a3e8db {
-  height: 60px;
-  overflow: visible;
-  position: relative;
-  width: 20px;
-}
-.orbsLottie_a3e8db {
-  position: absolute;
-  right: -20px;
-}
-@keyframes spin_a3e8db {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-.full-motion .orbIconloading_a3e8db {
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-name: spin_a3e8db;
-  animation-timing-function: linear;
-}
-.containerLoading_a3e8db {
-  gap: 0;
-}
-.counterLoading_a3e8db {
-  visibility: hidden;
-}
-.visual-refresh .container_a3e8db.default_a3e8db {
-  background-color: var(--background-mod-subtle);
-}
-.visual-refresh .container_a3e8db.highlighted_a3e8db {
-  background-color: var(--background-mod-normal);
-}
-.visual-refresh .container_a3e8db.selected_a3e8db {
-  background-color: var(--background-mod-normal);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.default_a3e8db {
-  background-color: var(--primary-100);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.highlighted_a3e8db {
-  background-color: var(--primary-130);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.selected_a3e8db {
-  background-color: var(--primary-130);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.default_a3e8db {
-  background: var(--primary-700);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.highlighted_a3e8db {
-  background: var(--primary-630);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
-  background: var(--primary-630);
-}
-.notificationBadge_a3e8db {
-  position: absolute;
-  right: -4.5px;
-}
-.balanceCounterMargin__98f64 {
-  margin-left: 4px;
-}
-.balanceCounterText__98f64 {
-  color: var(--header-primary);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-align: right;
-}
-.full-motion .balanceCounterText__98f64 {
-  transition:
-    all 0.4s ease-out,
-    opacity 0.4s ease-in;
-}
-.wrapper__87c70 {
-  pointer-events: all;
-  position: fixed;
-  z-index: 1000;
 }
 @value transitionDuration 200ms;
 div.modalRoot {
@@ -29870,6 +29776,120 @@ html:not(.visual-refresh) .root_e5f3a9 {
   flex: 1;
   place-content: center;
 }
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIcon__5eb9b svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
+}
+.clickable_a3e8db,
+.container_a3e8db {
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 36px;
+  pointer-events: all;
+}
+.container_a3e8db {
+  align-items: center;
+  border: 1px solid var(--border-faint, hsla(240, 4%, 61%, 0.04));
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  opacity: 1 !important;
+  padding: 8px 12px;
+  position: relative;
+}
+.orbsLottieContainer_a3e8db {
+  height: 60px;
+  overflow: visible;
+  position: relative;
+  width: 20px;
+}
+.orbsLottie_a3e8db {
+  position: absolute;
+  right: -20px;
+}
+@keyframes spin_a3e8db {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.full-motion .orbIconloading_a3e8db {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: spin_a3e8db;
+  animation-timing-function: linear;
+}
+.containerLoading_a3e8db {
+  gap: 0;
+}
+.counterLoading_a3e8db {
+  visibility: hidden;
+}
+.visual-refresh .container_a3e8db.default_a3e8db {
+  background-color: var(--background-mod-subtle);
+}
+.visual-refresh .container_a3e8db.highlighted_a3e8db {
+  background-color: var(--background-mod-normal);
+}
+.visual-refresh .container_a3e8db.selected_a3e8db {
+  background-color: var(--background-mod-normal);
+}
+html:not(.visual-refresh).theme-light .container_a3e8db.default_a3e8db {
+  background-color: var(--primary-100);
+}
+html:not(.visual-refresh).theme-light .container_a3e8db.highlighted_a3e8db {
+  background-color: var(--primary-130);
+}
+html:not(.visual-refresh).theme-light .container_a3e8db.selected_a3e8db {
+  background-color: var(--primary-130);
+}
+html:not(.visual-refresh).theme-dark .container_a3e8db.default_a3e8db {
+  background: var(--primary-700);
+}
+html:not(.visual-refresh).theme-dark .container_a3e8db.highlighted_a3e8db {
+  background: var(--primary-630);
+}
+html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
+  background: var(--primary-630);
+}
+.notificationBadge_a3e8db {
+  position: absolute;
+  right: -4.5px;
+}
+.balanceCounterMargin__98f64 {
+  margin-left: 4px;
+}
+.balanceCounterText__98f64 {
+  color: var(--header-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+.full-motion .balanceCounterText__98f64 {
+  transition:
+    all 0.4s ease-out,
+    opacity 0.4s ease-in;
+}
+.wrapper__87c70 {
+  pointer-events: all;
+  position: fixed;
+  z-index: 1000;
+}
 .banner__9ed41 {
   height: 100%;
   width: 100%;
@@ -40317,10 +40337,7 @@ div.mobilePushContainer__3d3b0 {
   width: var(--guildbar-avatar-size);
 }
 .childWrapperNoHoverBg__6e9f8 {
-  background-color: var(--background-primary);
-}
-.visual-refresh .childWrapperNoHoverBg__6e9f8 {
-  background-color: var(--background-surface-higher);
+  background-color: var(--background-mod-subtle);
 }
 .wrapper__6e9f8.selected__6e9f8 .childWrapperHoverScale__6e9f8,
 .wrapper__6e9f8:hover .childWrapperHoverScale__6e9f8 {
@@ -60654,17 +60671,19 @@ code {
   --theme-base-color-amount: 20% !important;
   --theme-text-color-amount: 20% !important;
 }
-.visual-refresh.custom-theme-background {
-  --custom-app-border-frame-base: color-mix(
-    in oklab,
-    var(--custom-theme-primary-color) 50%,
-    var(--custom-theme-secondary-color) 50%
-  );
-  --app-border-frame: color-mix(
-    in oklab,
-    var(--custom-app-border-frame-base) 24%,
-    var(--border-subtle) 100%
-  );
+@supports (color: color-mix(in lch, red, blue)) {
+  .custom-theme-background {
+    --custom-app-border-frame-base: color-mix(
+      in oklab,
+      var(--custom-theme-primary-color) 50%,
+      var(--custom-theme-secondary-color) 50%
+    );
+    --app-border-frame: color-mix(
+      in oklab,
+      var(--custom-app-border-frame-base) 24%,
+      var(--border-subtle) 100%
+    );
+  }
 }
 .appMount__51fd7,
 body,
@@ -60814,4 +60833,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7d669bfe9f74717f.css.map*/
+/*# sourceMappingURL=12633.bccfc74784d2cb61.css.map*/
