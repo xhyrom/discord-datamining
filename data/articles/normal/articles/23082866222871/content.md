@@ -94,7 +94,7 @@
     rel="noopener noreferrer"
     >Server Boost</a
   ><span style="color: #2e3338" data-darkreader-inline-color="">
-    subscription is past due, you will have 28 to 30 days to pay for your
+    subscription is past due, you will have 30 to 60 days to pay for your
     subscription depending on where you signed up:</span
   >
 </p>
@@ -111,7 +111,7 @@
   </li>
   <li>
     <span style="color: #2e3338" data-darkreader-inline-color=""
-      >iOS App Store: 28 days from the renewal date</span
+      >iOS App Store: 60 days from the renewal date</span
     >
   </li>
 </ul>
@@ -261,7 +261,7 @@
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >A: Depending on which platform you purchased the subscription, you’ll have
-    access to your subscription perks for 28-30 days after your payment fails.
+    access to your subscription perks for 30-60 days after your payment fails.
     If you do not make the payment before this window ends, your subscription
     will automatically end, and you will lose any perks associated with your
     subscription.</span
@@ -314,7 +314,7 @@
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >A:  The Google Play Store allows subscriptions to be past due for a total
-    of 30 days, while Apple (iOS) has 28 days to be past due. You will need to
+    of 30 days, while Apple (iOS) has 60 days to be past due. You will need to
     complete your payment through where your subscription is managed.</span
   >
 </p>
