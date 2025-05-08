@@ -16367,7 +16367,7 @@ span.clanTag__5d473 {
 }
 .user-profile-modal-v2 :where(.avatar__75742) {
   left: 32px;
-  top: 96px;
+  top: 80px;
 }
 .user-profile-sidebar :where(.avatar__75742) {
   left: 16px;
@@ -32544,8 +32544,8 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   top: -10px;
 }
 .user-profile-modal-v2 .container_ab8609 {
-  left: 121px;
-  top: calc(var(--custom-user-profile-banner-height) - 7px);
+  left: 172px;
+  top: calc(var(--custom-user-profile-banner-height) - 8px);
 }
 .user-profile-sidebar .container_ab8609 {
   left: 109px;
@@ -60833,4 +60833,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1efc270f7f91422b.css.map*/
+/*# sourceMappingURL=12633.5dfaf04074f6c7b7.css.map*/
