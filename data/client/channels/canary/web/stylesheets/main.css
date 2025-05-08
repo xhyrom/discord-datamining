@@ -30448,6 +30448,10 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
 .tooltipWordmark_cd30d9 {
   color: var(--text-muted);
 }
+.ambient_cd30d9.badgeImage_cd30d9 {
+  min-height: 80px;
+  min-width: 80px;
+}
 .tooltipWordmark_d4ff11 {
   color: var(--text-muted);
   margin-bottom: 4px;
@@ -60841,4 +60845,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0f871ecbf990ad28.css.map*/
+/*# sourceMappingURL=12633.e81771df9beda0ba.css.map*/
