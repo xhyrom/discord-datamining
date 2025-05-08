@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7981932002](https://discord.com/jobs/7981932002)
 
-**Updated At:** Thu, 08 May 2025 16:01:50 GMT
+**Updated At:** Thu, 08 May 2025 17:21:24 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.PLEASE NOTE: This is not a 100% remote role. We are looking for someone to work in our San Francisco office at least 1 day per week.
@@ -53,6 +53,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Data Science & Engineering
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
