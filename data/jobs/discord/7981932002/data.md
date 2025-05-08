@@ -2,7 +2,7 @@
 
 ## Data Scientist, Analytics
 
-**Location:** San Francisco, CA or Remote (U.S.)
+**Location:** San Francisco, CA or Bay Area
 
 **Id:** 7981932002 <br/>
 **Internal Job Id:** 6157243002 <br/>
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7981932002](https://discord.com/jobs/7981932002)
 
-**Updated At:** Mon, 05 May 2025 21:51:51 GMT
+**Updated At:** Thu, 08 May 2025 16:01:50 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&amp;nbsp;
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.PLEASE NOTE: This is not a 100% remote role. We are looking for someone to work in our San Francisco office at least 1 day per week.
 As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Analytics Data Scientists leverage their deep analytical skills and product intuition to solve a wide array of complex problems — from strategic analysis to dashboard creation and experimentation design and analysis. We are currently hiring across a number of different data science teams. If you’re passionate about data, impact, and working on an amazing team, read on!
 What you'll be doing
 
