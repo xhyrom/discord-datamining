@@ -28,6 +28,38 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Fortnite<br /></strong
+  ><strong>Quest Name: Fortnite Galactic Battle Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Fortnite Galactic Battle</strong> to receive a
+  <strong>Fortnite Galactic Battle Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
+  Xbox Series S where <strong>Discord</strong> and <strong>Fortnite</strong> are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Fortnite Galactic Battle Quest</strong> can be accepted on
+  <strong>PC</strong>, <strong>PlayStation</strong> <strong>4</strong>,
+  <strong>PlayStation</strong> <strong>5</strong>,
+  <strong>Xbox Series X</strong>, and <strong>Xbox Series S</strong> from
+  <strong>May 8, 2025 </strong>until<strong> May 14, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 14, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Fortnite Galactic Battle Avatar Decoration</strong> is a limited-time
+  Avatar Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 14, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong
     >Quest Video: Official Trailer 2<br />Quest Name: DOOM: The Dark Ages
     Quest<br />Offer Details: </strong
@@ -62,7 +94,12 @@
   >in Discord to receive 1 day of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Nitro</span
+    ></a
   >!<br /><strong>Who is Eligible: </strong>Available to users in the
   <strong>United States</strong> on desktop and browser where
   <strong>Discord</strong> is available. Discord’s premium services are
