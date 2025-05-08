@@ -38412,7 +38412,7 @@ div.mobilePushContainer__3d3b0 {
   animation: inherit;
   filter: blur(4px);
   opacity: 0.7;
-  z-index: 0;
+  z-index: -1;
 }
 .full-motion .animateGradient_e5de78 {
   animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
@@ -60833,4 +60833,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.bccfc74784d2cb61.css.map*/
+/*# sourceMappingURL=12633.1efc270f7f91422b.css.map*/
