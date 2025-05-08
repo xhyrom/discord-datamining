@@ -29848,6 +29848,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .visual-refresh .container_a3e8db.selected_a3e8db {
   background-color: var(--background-mod-normal);
 }
+.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.default_a3e8db {
+  background-color: var(--modal-background);
+}
 html:not(.visual-refresh).theme-light .container_a3e8db.default_a3e8db {
   background-color: var(--primary-100);
 }
@@ -60833,4 +60836,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5dfaf04074f6c7b7.css.map*/
+/*# sourceMappingURL=12633.aae378e3285896f9.css.map*/
