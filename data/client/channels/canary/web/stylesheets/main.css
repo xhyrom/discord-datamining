@@ -32704,6 +32704,11 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .statusEmoji_ab8609 + .statusText_ab8609 {
   display: inline;
 }
+.labelRow_ab8609 + .statusEmoji_ab8609:not(:has(+ .statusText_ab8609)) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .addStatusPrompt_ab8609 {
   color: var(--text-muted);
   display: inline;
@@ -60836,4 +60841,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.aae378e3285896f9.css.map*/
+/*# sourceMappingURL=12633.0f871ecbf990ad28.css.map*/
