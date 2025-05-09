@@ -38396,12 +38396,11 @@ div.mobilePushContainer__3d3b0 {
   background-clip: text;
   background-size: 100px auto;
   -webkit-text-fill-color: transparent;
-  z-index: 1;
 }
 .usernameGlow_e5de78 {
   filter: blur(4px);
   opacity: 0;
-  z-index: 0;
+  z-index: -1;
 }
 .usernameGlow_e5de78,
 .usernameGlowActive_e5de78 {
@@ -38415,7 +38414,7 @@ div.mobilePushContainer__3d3b0 {
 }
 .convenienceGlowGradient_e5de78 {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .theme-light .username_e5de78 {
   filter: brightness(75%);
@@ -38520,10 +38519,10 @@ div.mobilePushContainer__3d3b0 {
 }
 .nameContainer__703b9 {
   position: relative;
+  z-index: 0;
 }
 .name__703b9 {
   position: relative;
-  z-index: 2;
 }
 .name__703b9,
 .nameGlow__703b9 {
@@ -60859,4 +60858,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.061a2f2ff33ab2f2.css.map*/
+/*# sourceMappingURL=12633.7e2ae9903e19b37d.css.map*/
