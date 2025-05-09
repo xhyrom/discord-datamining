@@ -993,8 +993,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2048"
     },
@@ -1002,8 +1002,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2048"
         }
@@ -2114,7 +2114,7 @@
       }
     },
     "verify_key": "76e2bffa52a54801664544169aa1d93dd50ef0d8a7e9493e806823d49cccd56c",
-    "flags": 143785994,
+    "flags": 145883146,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": null,
@@ -2254,111 +2254,6 @@
       "FPS",
       "Shooter",
       "Speedrun"
-    ]
-  },
-  {
-    "id": "1211781489931452447",
-    "name": "Wordle",
-    "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
-    "description": "Enjoy Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
-    "summary": "",
-    "type": null,
-    "is_monetized": false,
-    "is_verified": true,
-    "is_discoverable": false,
-    "cover_image": "866e3bb1398f00f83f86c7b0bd667521",
-    "bot": {
-      "id": "1211781489931452447",
-      "username": "Wordle",
-      "global_name": null,
-      "avatar": "2b5cd2dc89eb963155f55520a6fa0495",
-      "avatar_decoration_data": null,
-      "collectibles": null,
-      "discriminator": "2092",
-      "public_flags": 589825,
-      "primary_guild": null,
-      "clan": null,
-      "bot": true,
-      "banner": "ac77ee6cc9026d701ec68aab26be1603",
-      "banner_color": null,
-      "accent_color": null
-    },
-    "hook": true,
-    "guild_id": "1278783719708164118",
-    "storefront_available": false,
-    "bot_public": true,
-    "bot_require_code_grant": false,
-    "terms_of_service_url": "https://discord.com/terms",
-    "privacy_policy_url": "https://discord.com/privacy",
-    "install_params": {
-      "scopes": [
-        "applications.commands"
-      ],
-      "permissions": "0"
-    },
-    "integration_types_config": {
-      "0": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      },
-      "1": {
-        "oauth2_install_params": {
-          "scopes": [
-            "applications.commands"
-          ],
-          "permissions": "0"
-        }
-      }
-    },
-    "verify_key": "79c638c31d8c9f5da835e25cc077c911aa9458e41c5b39e9afe40c3c7377cb27",
-    "flags": 11665410,
-    "max_participants": null,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1334610713074864221",
-      "supported_platforms": [
-        "web",
-        "ios",
-        "android"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 1,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": null,
-      "free_period_ends_at": null,
-      "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "soft_launch",
-          "omit_badge_from_surfaces": []
-        },
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "soft_launch",
-          "omit_badge_from_surfaces": []
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "soft_launch",
-          "omit_badge_from_surfaces": []
-        }
-      },
-      "shelf_rank": 47,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    },
-    "tags": [
-      "New York Times",
-      "Official Wordle",
-      "Word game"
     ]
   },
   {
@@ -2901,7 +2796,7 @@
       }
     },
     "verify_key": "76e2bffa52a54801664544169aa1d93dd50ef0d8a7e9493e806823d49cccd56c",
-    "flags": 143785994,
+    "flags": 145883146,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": null,
@@ -3604,8 +3499,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -3657,8 +3552,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -3712,8 +3607,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "268561430"
     },
@@ -3721,8 +3616,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "268561430"
         }
@@ -3757,9 +3652,9 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
       },
       {
         "os": "win32",
@@ -3767,9 +3662,14 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -3778,12 +3678,7 @@
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -3832,13 +3727,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -3853,12 +3748,12 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -3984,17 +3879,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "df_garena/deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       },
       {
@@ -4005,6 +3890,16 @@
       {
         "os": "win32",
         "name": "win64/deltaforceclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -4064,13 +3959,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -4260,8 +4155,8 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4270,12 +4165,7 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -4285,7 +4175,12 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
