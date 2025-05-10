@@ -60406,9 +60406,6 @@ code {
   --custom-application-directory-profile-icon-size: 122px;
   --custom-application-directory-search-sidebar-width: 200px;
   --custom-application-directory-search-sidebar-margin-right: 32px;
-  --custom-activity-bookmark-embed-image-width: 356px;
-  --custom-activity-bookmark-embed-image-height: 200px;
-  --custom-activity-bookmark-embed-content-height: 400px;
   --custom-activity-shelf-item-activity-item-height: 230px;
   --custom-activity-shelf-item-large-activity-item-height: 143px;
   --custom-activity-shelf-modal-modal-padding: 80px;
@@ -60858,4 +60855,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7e2ae9903e19b37d.css.map*/
+/*# sourceMappingURL=12633.302707d143e9fe33.css.map*/
