@@ -38429,6 +38429,7 @@ div.mobilePushContainer__3d3b0 {
   -webkit-text-fill-color: transparent;
   filter: blur(4px);
   opacity: 0;
+  text-indent: 0;
   transition: opacity 0.1s ease-in-out;
   z-index: -1;
 }
@@ -60861,4 +60862,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.83a724384789d082.css.map*/
+/*# sourceMappingURL=12633.0be0d4cfe2063eb7.css.map*/
