@@ -38594,6 +38594,12 @@ div.mobilePushContainer__3d3b0 {
 .pillItemText__9e06a {
   line-height: 1;
 }
+.disabled__9e06a {
+  cursor: not-allowed;
+}
+.disabledContainer__9e06a {
+  opacity: 0.3;
+}
 .select__3f413 {
   align-items: center;
   border: 1px solid transparent;
@@ -60855,4 +60861,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.302707d143e9fe33.css.map*/
+/*# sourceMappingURL=12633.83a724384789d082.css.map*/
