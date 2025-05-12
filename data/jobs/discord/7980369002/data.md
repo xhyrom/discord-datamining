@@ -10,18 +10,18 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7980369002](https://discord.com/jobs/7980369002)
 
-**Updated At:** Mon, 12 May 2025 18:01:58 GMT
+**Updated At:** Mon, 12 May 2025 19:43:05 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US based only.
 We're looking for a talented Senior Software Engineer to join our Growth team at Discord. In this role, you'll help build features and systems that provide meaningful value to our users while expanding our community. You’ll work cross-functionally with Product, Data Science, Design, and other teams to create best in class experiences for our users. You will be reporting to the Senior Engineering Manager of Discovery.
 What You'll Be Doing
 
-Collaborate with leads and senior engineers on the team to drive projects on our Growth team..
-Own projects end to end — you’ll be responsible for working with Product to refine requirements, creating a technical spec, implementing changes, and seeing the project through to launch.
-Work with other full-stack engineers on your team to build new features and expand existing capabilities across our product surfaces across Web, Android, iOS, and beyond.&amp;nbsp;
-Develop a deep understanding of our users, and work with cross-functional partners to build experience that acquire, activate, and retain users.
-Work closely with Design to deliver visually refined and exceptional user experiences.
+Collaborate with leads and senior engineers on the team to drive projects on our Growth team.
+Own projects end to end — you’ll be responsible for working with Product to refine requirements, create technical specs, and projects execute end-to-end.
+Work with other full-stack engineers on your team to build new features and expand existing capabilities. You will work on our product surfaces across Web, Android, iOS, and beyond.&amp;nbsp;
+Develop a deep understanding of our users, and work with cross-functional partners to build experiences that acquire, activate, and retain users.
+Work closely with design to deliver best-in-class user experiences.
 Contribute to a fast-paced product engineering team by rapidly prototyping new features and developing principled learnings through experimentation.
 
 What you should have
