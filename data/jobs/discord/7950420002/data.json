@@ -30,7 +30,7 @@
     }
   ],
   "id": 7950420002,
-  "updated_at": "2025-05-02T15:54:37-04:00",
+  "updated_at": "2025-05-12T12:10:37-04:00",
   "requisition_id": "R-100871",
   "title": "Account Manager - Crossplatform Gaming",
   "company_name": "Discord",
@@ -39,7 +39,7 @@
   "departments": [
     {
       "id": 4099568002,
-      "name": "Sales",
+      "name": "Advertising Solutions",
       "child_ids": [],
       "parent_id": 4109059002
     }

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7917031002](https://discord.com/jobs/7917031002)
 
-**Updated At:** Tue, 06 May 2025 20:58:26 GMT
+**Updated At:** Mon, 12 May 2025 16:10:37 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Program Manager for our Marketing Operations team. As the Program Manager, you will lead driving priorities across our revenue teams through seamless daily operations and strong stakeholder alignment, with an eye towards scale and efficiency. You will serve as the senior level connection point for the Program Management team between critical business functions such as Marketing, Sales, Product, Finance, Legal and Comms teams. Day to day, you will be a strategic partner to our revenue marketing team in the prioritization and cadence of initiatives.You have demonstrated strong performance in your prior roles; you can impact decisions at all levels; you thrive in ambiguity and demonstrate problem-solving leadership. We are a collaborative team that focuses on creating high-quality experiences that elevate Discord above everything else. You will report to the Director of Marketing Operations.What You'll Be Doing
