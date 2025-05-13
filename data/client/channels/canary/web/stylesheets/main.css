@@ -11481,6 +11481,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .questsIcon_c9d15c {
   flex-shrink: 0;
 }
+.customStatusLabel_c9d15c {
+  white-space: nowrap;
+}
 .container_b0fbc2 {
   max-width: 100%;
   overflow: hidden;
@@ -60862,4 +60865,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0be0d4cfe2063eb7.css.map*/
+/*# sourceMappingURL=12633.d7aa20c257e0ecd7.css.map*/
