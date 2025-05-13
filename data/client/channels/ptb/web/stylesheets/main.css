@@ -38429,6 +38429,7 @@ div.mobilePushContainer__3d3b0 {
   -webkit-text-fill-color: transparent;
   filter: blur(4px);
   opacity: 0;
+  text-indent: 0;
   transition: opacity 0.1s ease-in-out;
   z-index: -1;
 }
@@ -38593,6 +38594,12 @@ div.mobilePushContainer__3d3b0 {
 }
 .pillItemText__9e06a {
   line-height: 1;
+}
+.disabled__9e06a {
+  cursor: not-allowed;
+}
+.disabledContainer__9e06a {
+  opacity: 0.3;
 }
 .select__3f413 {
   align-items: center;
@@ -60855,4 +60862,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.302707d143e9fe33.css.map*/
+/*# sourceMappingURL=12633.0be0d4cfe2063eb7.css.map*/
