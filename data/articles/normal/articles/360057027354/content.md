@@ -1,14 +1,14 @@
 <p>
-  <span style="font-weight: 400"
-    ><span id="docs-internal-guid-168b442f-7fff-7b3f-e9ac-ad3c68c52d66"
-      >Now that you’ve registered and verified your account, you can follow
-      these steps below to login to your app if you’re ever logged out!
-    </span></span
-  >
+  Signing in to your Discord account is quick and easy, whether you're using the
+  desktop app, mobile app, or web browser. With the Discord sign-in process, you
+  can securely access your account and connect with your communities in just a
+  few steps. This guide will walk you through the different ways to log in,
+  including using your email and password or QR code sign in. Follow along to
+  ensure a smooth Discord sign in experience!
 </p>
 <div class="info-box">
-  Note: If you haven’t verified your account yet, make sure to do so, otherwise
-  you risk losing access to your account. Check out this
+  <strong>Info:</strong> If you haven’t verified your account yet, make sure to
+  do so, otherwise you risk losing access to your account. Check out this
   <a
     href="https://support.discord.com/hc/en-us/articles/360033931551"
     target="_blank"
@@ -17,160 +17,178 @@
   >
   for more information!
 </div>
-<p id="docs-internal-guid-61c70365-7fff-158e-2b15-8040dab84a7f">
+<div class="wysiwyg-text-align-center">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9"
+    src="//www.youtube-nocookie.com/embed/Fl-OCQk0-fw"
+    frameborder="0"
+    allowfullscreen=""
+    allow="encrypted-media"
+  ></iframe>
+</div>
+<div class="toc-box">
   <span class="wysiwyg-font-size-large"
-    ><strong>What does this article cover?</strong></span
+    ><strong>What this article covers:</strong></span
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01GSTZJYY12DCBEATVC6J4H6TD" target="_self"
-      >Logging into Your Account</a
-    >
-  </li>
-  <li>
-    <a
-      href="#docs-internal-guid-c3a8edad-7fff-8f8f-dba9-70f8a98fdb46"
-      target="_self"
-      >QR Code Login</a
-    >
-  </li>
-</ul>
-<div class="book-box">
-  Discord has implemented Google's reCAPTCHA Enterprise product on its site for
-  security and authentication purposes and use of the service is subject to
-  Google's
+  <ul>
+    <li>
+      <a href="#h_01GSTZJYY12DCBEATVC6J4H6TD"
+        >How to Log In to Discord on Desktop/Browser</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01JV5H5706A56CJY7V06S47EH7"
+            >Use your QR Code to Log In to Discord</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JV5HZFMN00J6Z3W6VETSKNHK"
+        >Log In to Discord on the Mobile App</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="info-box">
+  <strong>Info:</strong> If you are experiencing issues with logging into
+  Discord or seeing error messages for your login attempts, check out
   <a
-    href="https://policies.google.com/privacy"
+    href="https://support.discord.com/hc/articles/31676852332439"
     target="_blank"
     rel="noopener noreferrer"
-    >Privacy Policy</a
+    >this support article</a
   >
-  and
-  <a
-    href="https://policies.google.com/terms"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Terms of Use</a
-  >.
+  explaining the common login errors.
 </div>
 <h1 id="h_01GSTZJYY12DCBEATVC6J4H6TD">
-  <strong>Logging into Your Account</strong>
+  How to Log In to Discord on Desktop/Browser
 </h1>
 <p id="docs-internal-guid-267d046f-7fff-8021-b942-49aabd4f4b12">
-  If you’re on a browser, start by heading to<a
-    href="https://discord.com/login"
-  >
+  1. If you’re using Discord web login, you can start the login process by
+  heading to<a href="https://discord.com/login">
     <span class="wysiwyg-underline">https://discord.com/login</span></a
-  >! 
+  >! Otherwise, you can open the Discord app on your desktop device.
 </p>
 <p>
-  If you’re on a desktop or mobile device, you can directly open the Discord app
-  on your device! (You can learn more information on downloading the app
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360033931551"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.) 
-</p>
-<p>
-  Once you’re at the login page, type in either 1)
-  <strong>your email address</strong> or 2)<strong> phone number </strong>that
+  2. At the Discord login page, enter either 1)
+  <strong>your email address</strong> or 2) <strong>phone number</strong> that
   has been officially verified to your Discord account in the first text box. 
 </p>
-<div class="tip-box">
-  Note: You will need to verify your phone number to your Discord account before
-  using phone number login! Click
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started#h_01H4RR2WQMJPNM20TG8NWDDWSS"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >
-  to learn how to verify your phone number to your Discord account.
-</div>
-<p>In the second box, type the password associated with your account!</p>
+<p>
+  3. In the second box, type the password associated with your Discord account!
+</p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-4c960900-7fff-1eb3-22dc-57ab616ee6ce"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27098861617687"
-      width="552"
-      height="287" /></span
-  ><img
-    src="https://support.discord.com/hc/article_attachments/27098856315671"
-    width="137"
-    height="286"
+  <img
+    src="https://support.discord.com/hc/article_attachments/27098861617687"
+    alt="9e488a19-dbdd-48a9-a751-40a1e405b82e"
   />
 </p>
-<h1 id="docs-internal-guid-c3a8edad-7fff-8f8f-dba9-70f8a98fdb46">
-  QR Code Login
-</h1>
+<h2 id="h_01JV5H5706A56CJY7V06S47EH7" class="wysiwyg-text-align-left">
+  Use your QR Code to Log In to Discord
+</h2>
 <p>
-  If you would like to conveniently and securely login into the Discord desktop
-  client, you can also use the QR Code Login feature via the Discord mobile app
-  to do so.
+  If you would like to conveniently and securely log in to the Discord on the
+  desktop app or through a web browser, you can also use the QR Code Login
+  feature via the Discord mobile app to do so.
 </p>
 <p>
   1. In order to use QR Code Login, start by logging into your Discord account
-  on the mobile device.
+  on your mobile device.
 </p>
 <p>
-  2. Then open the <strong>User Settings</strong> menu by pressing your profile
-  icon in the bottom left corner.
+  2. Open the <strong>User Settings</strong> menu by pressing your profile
+  avatar in the bottom left corner.
 </p>
 <p>
-  3. Once you’ve been redirected to the <strong>Overview</strong> page, select
-  the <strong>Scan QR Code</strong> option to enable your camera mode for the QR
-  scan. 
+  3. On the <strong>Overview</strong> page, select the
+  <strong>Scan QR Code</strong> option to enable your camera mode on your mobile
+  device for the QR scan.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-6ec7583d-7fff-0c1d-a9ed-9d1a23492a43"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27098861621911"
-      width="312"
-      height="649"
-  /></span>
-   
+  <img
+    src="https://support.discord.com/hc/article_attachments/27098861621911"
+    alt="b1f8ab11-d031-46e9-8286-4a6a22818221"
+    width="221"
+    height="460"
+  />
   <img
     src="https://support.discord.com/hc/article_attachments/20362247312919"
     alt="image1.png"
-    width="318"
-    height="649"
+    width="225"
+    height="459"
   />
 </p>
 <div class="tip-box">
-  Note: The app will ask for camera permissions on your mobile device in order
-  to scan the QR Code!
+  <strong>Tip:</strong> The app will ask for camera permissions on your mobile
+  device in order to scan the QR Code!
 </div>
-<p id="docs-internal-guid-77926f60-7fff-1f37-e239-dcbde4161fdb">
-  4. After the scanner is triggered, simply line up the box with the QR code on
-  the desktop screen. and then you’ll be asked to verify your Discord login on
-  the mobile device.
+<p>
+  4. After the QR scanner is triggered, simply line up the box outline in your
+  mobile device’s camera with the QR code on the desktop screen. You’ll be asked
+  to verify your Discord login into the desktop/browser on your mobile Discord
+  app.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-98efd4f3-7fff-358f-d149-be0a490b4de4"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/27098856321687"
-      width="564"
-      height="278" /></span
-  ><img
+  <img
+    src="https://support.discord.com/hc/article_attachments/27098856321687"
+    alt="d4afb194-668f-4355-b078-f28f9f540fbb"
+    width="400"
+    height="197"
+  />
+  <img
     src="https://support.discord.com/hc/article_attachments/27098861626135"
-    width="134"
-    height="278"
+    alt="bd380f46-a66d-4a4a-a597-72d1362f669c"
+    width="170"
+    height="353"
   />
 </p>
-<p id="docs-internal-guid-300e7c9f-7fff-f9b7-81e3-01bf65941b02">
-  For more information on this login process, make sure to check out this link
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />For more information on this QR
+  login process, make sure to check out this
   <a
-    href="https://support.discord.com/hc/en-us/articles/360039213771"
+    href="https://support.discord.com/hc/articles/360039213771"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
+    >support article here</a
   >.
-</p>
+</div>
 <div class="warn-box">
-  Note: Never approve a QR code login that you didn't generate yourself! If
-  you've been sent a QR code by someone else that opened the login verification
-  screen, hit cancel right away.
+  <strong>Important:</strong> Never approve a QR code login that you didn't
+  generate yourself! If you've been sent a QR code by someone else that opened
+  the login verification screen, hit cancel right away.
+</div>
+<h1 id="h_01JV5HZFMN00J6Z3W6VETSKNHK">Log In to Discord on the Mobile App</h1>
+<p>
+  1. Open the Discord app that’s downloaded on your mobile device. If you need
+  to download Discord on your mobile device, you can check out this article for
+  how to download Discord.
+</p>
+<p>
+  2. Enter either 1) <strong>your email address</strong> or 2)
+  <strong>phone number</strong> that has been officially verified to your
+  Discord account in the first text field box of the Discord login page.
+</p>
+<p>
+  3. In the second text field box, enter the password associated with your
+  Discord account!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/27098856315671"
+    alt="e50b1e1b-fa36-4b34-bce6-7eca247830e7"
+    width="243"
+    height="508"
+  />
+</p>
+<div class="info-box">
+  <strong>Info:</strong> You will need to verify your phone number to your
+  Discord account before using phone number login! Check out
+  <a
+    href="https://support.discord.com/hc/articles/360033931551#h_01H4RR2WQMJPNM20TG8NWDDWSS"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this support article</a
+  >
+  to learn how to verify your phone number to your Discord account.
 </div>
