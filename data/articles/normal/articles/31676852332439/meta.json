@@ -15,14 +15,14 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-05-13T18:13:17Z",
+  "edited_at": "2025-05-13T21:14:12Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "sign up",
     "answer-bot",
     "how to register",
+    "sign up",
     "discord invite"
   ]
 }

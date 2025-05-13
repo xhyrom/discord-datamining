@@ -6,7 +6,7 @@
 <p>
   <iframe
     style="width: 100%; aspect-ratio: 16 / 9"
-    src="//www.youtube-nocookie.com/embed/hGtRmYIg9RI"
+    src="//www.youtube-nocookie.com/embed/hGtRmYIg9RI?&amp;rel=0"
     frameborder="0"
     allowfullscreen=""
     allow="encrypted-media"
@@ -242,7 +242,7 @@
   >
 </div>
 <div class="book-box">
-  <strong>Want to learn more?</strong> <br />For account verification issues,
+  <strong>Want to learn more?</strong><br />For account verification issues,
   please refer to our Help Center article
   <a href="https://support.discord.com/hc/en-us/articles/6181726888215"
     ><span
