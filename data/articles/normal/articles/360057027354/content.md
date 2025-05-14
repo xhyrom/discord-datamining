@@ -17,15 +17,15 @@
   >
   for more information!
 </div>
-<div class="wysiwyg-text-align-center">
+<p>
   <iframe
     style="width: 100%; aspect-ratio: 16 / 9"
-    src="//www.youtube-nocookie.com/embed/Fl-OCQk0-fw"
+    src="https://www.youtube-nocookie.com/embed/Fl-OCQk0-fw?&amp;rel=0"
     frameborder="0"
     allowfullscreen=""
     allow="encrypted-media"
   ></iframe>
-</div>
+</p>
 <div class="toc-box">
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
