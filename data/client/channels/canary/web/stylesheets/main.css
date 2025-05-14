@@ -7228,40 +7228,40 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .icon__36b87 {
   margin-right: 4px;
 }
-.premiumSubscribeButton__29199 {
+.premiumSubscribeButton_e00877 {
   align-items: center;
   display: flex;
 }
-.premiumIcon__29199 {
+.premiumIcon_e00877 {
   height: 20px;
   margin-right: 4px;
 }
-.buttonText__29199 {
+.buttonText_e00877 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.giftButton__29199 {
+.giftButton_e00877 {
   align-items: center;
   display: flex;
 }
-.giftIcon__29199 {
+.giftIcon_e00877 {
   height: 16px;
   margin-right: 4px;
   min-height: 16px;
   min-width: 16px;
   width: 16px;
 }
-.tier1Gradient__29199 {
+.tier1Gradient_e00877 {
   background: var(--custom-premium-colors-premium-gradient-tier-1);
   color: var(--white-500);
 }
-.tier2Gradient__29199 {
+.tier2Gradient_e00877 {
   background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
   color: var(--white-500);
 }
-.visual-refresh .tier1Gradient__29199,
-.visual-refresh .tier2Gradient__29199 {
+.visual-refresh .tier1Gradient_e00877,
+.visual-refresh .tier2Gradient_e00877 {
   background-clip: padding-box;
   border-radius: var(--radius-sm);
 }
@@ -60873,4 +60873,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.86e6429362c032e2.css.map*/
+/*# sourceMappingURL=12633.ed7f7f3078e14109.css.map*/
