@@ -445,7 +445,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 6,
+      "shelf_rank": 7,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -553,7 +553,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 11,
+      "shelf_rank": 12,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -658,7 +658,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 7,
+      "shelf_rank": 8,
       "has_csp_exception": true,
       "displays_advertisements": true
     },
@@ -946,7 +946,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 24,
+      "shelf_rank": 25,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -993,8 +993,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2048"
     },
@@ -1002,8 +1002,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2048"
         }
@@ -1054,7 +1054,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 18,
+      "shelf_rank": 19,
       "has_csp_exception": true,
       "displays_advertisements": false
     },
@@ -1159,7 +1159,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 3,
+      "shelf_rank": 4,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -1344,7 +1344,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 15,
+      "shelf_rank": 16,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -1449,7 +1449,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 48,
+      "shelf_rank": 46,
       "has_csp_exception": true,
       "displays_advertisements": false
     },
@@ -1950,7 +1950,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 17,
+      "shelf_rank": 18,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -2260,12 +2260,12 @@
     "id": "1211781489931452447",
     "name": "Wordle",
     "icon": "8904fec86de9bb7a71b2ae1e71a1adbc",
-    "description": "Enjoy Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
+    "description": "Play Wordle from New York Times Games. You have 6 chances to guess a 5-letter word. When you make a guess, the color of the tiles will change to show how close you are to the winning word. Can you solve today’s puzzle? Play now.",
     "summary": "",
     "type": null,
     "is_monetized": false,
     "is_verified": true,
-    "is_discoverable": false,
+    "is_discoverable": true,
     "cover_image": "866e3bb1398f00f83f86c7b0bd667521",
     "bot": {
       "id": "1211781489931452447",
@@ -2284,7 +2284,6 @@
       "accent_color": null
     },
     "hook": true,
-    "guild_id": "1278783719708164118",
     "storefront_available": false,
     "bot_public": true,
     "bot_require_code_grant": false,
@@ -2335,23 +2334,23 @@
         "web": {
           "label_type": 0,
           "label_until": null,
-          "release_phase": "soft_launch",
+          "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
           "label_until": null,
-          "release_phase": "soft_launch",
+          "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
           "label_until": null,
-          "release_phase": "soft_launch",
+          "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 47,
+      "shelf_rank": 1,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -3029,7 +3028,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 52,
+      "shelf_rank": 50,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -3345,8 +3344,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "469887038"
     },
@@ -3399,8 +3398,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3499,8 +3498,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -3607,8 +3606,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "268561430"
     },
@@ -3616,8 +3615,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "268561430"
         }
@@ -3653,16 +3652,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
@@ -3673,13 +3662,23 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3728,16 +3727,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
@@ -3748,13 +3737,23 @@
       },
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3884,7 +3883,7 @@
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -3894,12 +3893,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -3959,13 +3958,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -4155,16 +4154,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
@@ -4177,6 +4166,16 @@
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
