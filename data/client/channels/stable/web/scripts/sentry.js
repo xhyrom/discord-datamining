@@ -2786,15 +2786,6 @@
                 .concat(t, "/sessions/")
                 .concat(e, "/activities/")
                 .concat(a, "/", 1),
-            JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_PRESENCE: (t, e, a) =>
-              "/users/"
-                .concat(t, "/sessions/")
-                .concat(e, "/embedded-activities/")
-                .concat(a, "/", 1),
-            JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE: (t, e) =>
-              "/activity-instances/"
-                .concat(t, "/embedded-activities/")
-                .concat(e, "/join"),
             USER_ACTIVITY_STATISTICS:
               "/users/@me/activities/statistics/applications",
             USER_ACTIVITY_SUBSCRIBE: "/users/@me/activities/subscribe",
@@ -3593,6 +3584,7 @@
               "/reporting/unauthenticated/".concat(t, "/verify"),
             SUBMIT_MODERATOR_MESSAGE_REPORT: (t, e) =>
               "/channels/".concat(t, "/").concat(e, "/mod-report"),
+            REPORT_TO_MOD_REOPEN: (t) => "/mod-report/".concat(t, "/reopen"),
             DSA_EXPERIMENT_UNAUTHENTICATED:
               "/reporting/unauthenticated/experiment",
             DSA_CAPABILITIES: "/reporting/unauthenticated/capabilities",
@@ -5908,6 +5900,8 @@
           (r.FEEDBACK_FORM_VIEWED = "feedback_form_viewed"),
           (r.FEEDBACK_FORM_SUBMITTED = "feedback_form_submitted"),
           (r.HOTSPOT_HIDDEN = "hotspot_hidden"),
+          (r.USER_SETTINGS_IN_APP_FEEDBACK_OPTED_OUT =
+            "user_settings_in_app_feedback_opted_out"),
           (r.APP_ICON_UPDATED = "app_icon_updated"),
           (r.APP_ICON_PREVIEW_VIEWED = "app_icon_preview_viewed"),
           (r.CHANNEL_LIST_END_REACHED = "channel_list_end_reached"),
@@ -6732,7 +6726,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-13-409005be9100667f0117906be25257c9dd57323e-discord_web",
+              "2025-05-14-ab71a5c413ecb11a437d8d4763e9e88b8af8ff8b-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6798,8 +6792,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "398955"),
-            o.YA("builtAt", String("1747120904307"));
+            o.YA("buildNumber", "399244"),
+            o.YA("builtAt", String("1747207117921"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46468,4 +46462,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.52ce35808cac0c4f.js.map
+//# sourceMappingURL=sentry.144877d80cdd0d03.js.map
