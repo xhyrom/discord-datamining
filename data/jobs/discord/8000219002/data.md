@@ -2,7 +2,7 @@
 
 ## Business Recruiter
 
-**Location:** San Francisco, CA
+**Location:** San Francisco, CA or Remote (U.S.)
 
 **Id:** 8000219002 <br/>
 **Internal Job Id:** 6165116002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8000219002](https://discord.com/jobs/8000219002)
 
-**Updated At:** Thu, 15 May 2025 22:08:52 GMT
+**Updated At:** Thu, 15 May 2025 22:58:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is temporary and US-based only.&amp;nbsp;
