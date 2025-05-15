@@ -134,6 +134,16 @@
       }
     </style>
   </div>
+  <div class="w-embed">
+    <style>
+      body {
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+    </style>
+  </div>
   <header class="nav">
     <div class="nav_styles w-embed">
       <style>
@@ -1420,47 +1430,49 @@
   </header>
   <div class="section-rich">
     <div class="padding-menu"></div>
-    <div class="container780">
-      <a href="/archive" class="archived-link w-inline-block"
+    <div class="container780 left-vert">
+      <a href="/archive" class="archived-link is_new w-inline-block"
         ><div class="new-link-small">Archived Versions</div></a
       >
     </div>
     <div class="container780 left-vert">
-      <h1 class="new-h1">Discord's Terms of Service</h1>
-      <div class="rich-terms w-richtext">
+      <div class="hi-wr">
+        <h1 class="new-h1 is_new">Discord's Terms of Service</h1>
+      </div>
+      <div class="rich-terms_new w-richtext">
         <h4>Effective: April 15, 2024</h4>
         <h4>Last Updated: March 15, 2024</h4>
       </div>
-      <a href="#1" class="link-terms w-inline-block"
+      <a href="#" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">1.</div>
         <div>Who we are</div></a
-      ><a href="#2" class="link-terms w-inline-block"
+      ><a href="#2" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">2.</div>
         <div>
           Age requirements and responsibility of parents and legal guardians
         </div></a
-      ><a href="#3" class="link-terms w-inline-block"
+      ><a href="#3" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">3.</div>
         <div>What you can expect from us</div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#4" class="link-terms w-inline-block"
+      ><a href="#4" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">4.</div>
         <div>Your Discord account</div></a
-      ><a href="#5" class="link-terms w-inline-block"
+      ><a href="#5" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">5.</div>
         <div>Content in Discord’s services</div></a
       ><a href="#5" class="link-terms _30px w-inline-block"
@@ -1472,61 +1484,44 @@
       ><a href="#5" class="link-terms _30px w-inline-block"
         ><div class="menu-numbers bl">•</div>
         <div>Other content</div></a
-      ><a href="#6" class="link-terms w-inline-block"
+      ><a href="#6" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">6.</div>
         <div>Software in Discord’s services</div></a
-      ><a href="#7" class="link-terms w-inline-block"
+      ><a href="#7" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">7.</div>
         <div>Copyright</div></a
-      ><a href="#8" class="link-terms w-inline-block"
+      ><a href="#8" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">8.</div>
         <div>Discord’s paid services</div></a
-      ><a href="#9" class="link-terms w-inline-block"
+      ><a href="#9" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">9.</div>
         <div>Restrictions on your use of Discord’s services</div></a
-      ><a href="#10" class="link-terms w-inline-block"
+      ><a href="#10" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">10.</div>
         <div>Termination</div></a
-      ><a href="#11" class="link-terms w-inline-block"
+      ><a href="#11" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">11.</div>
         <div>Appeals</div></a
-      ><a href="#12" class="link-terms w-inline-block"
+      ><a href="#12" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">12.</div>
         <div>Indemnity</div></a
-      ><a href="#13" class="link-terms w-inline-block"
+      ><a href="#13" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">13.</div>
         <div>Services “AS IS”</div></a
-      ><a href="#14" class="link-terms w-inline-block"
+      ><a href="#14" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">14.</div>
         <div>Data Charges</div></a
-      ><a href="#15" class="link-terms w-inline-block"
+      ><a href="#15" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">15.</div>
         <div>Limitation of liability</div></a
-      ><a href="#16" class="link-terms w-inline-block"
+      ><a href="#16" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">16.</div>
         <div>Settling disputes between you and Discord</div></a
-      ><a href="#17" class="link-terms w-inline-block"
+      ><a href="#17" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">17.</div>
         <div>More important stuff</div></a
       >
-      <div id="1" class="rich-guidlines-negative _1 w-richtext">
-        <h2>Who we are</h2>
-        <p>
-          We provide services that allow you to interact with other Discord
-          users (such as through direct messages and group direct messages) and
-          participate in large and small spaces (or “servers”). Our services may
-          also include access to certain software, features, and content,
-          including items that you can purchase from us or others. Additional
-          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
-          apply to those purchases.
-        </p>
-        <p>
-          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
-          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
-          195, 1118 BG Schiphol, Netherlands.
-        </p>
-      </div>
-      <div class="rich-guidlines-negative w-richtext">
+      <div class="rich-guidlines-negative_new w-richtext">
         <p>
           Welcome! Discord is the best place to talk, hang out and have fun with
           friends online. We’re happy you’re here.
@@ -1599,7 +1594,24 @@
           >.
         </p>
       </div>
-      <div id="2" class="rich-guidlines-negative w-richtext">
+      <div id="1" class="rich-guidlines-negative_new w-richtext">
+        <h2>Who we are</h2>
+        <p>
+          We provide services that allow you to interact with other Discord
+          users (such as through direct messages and group direct messages) and
+          participate in large and small spaces (or “servers”). Our services may
+          also include access to certain software, features, and content,
+          including items that you can purchase from us or others. Additional
+          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
+          apply to those purchases.
+        </p>
+        <p>
+          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
+          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
+          195, 1118 BG Schiphol, Netherlands.
+        </p>
+      </div>
+      <div id="2" class="rich-guidlines-negative_new w-richtext">
         <h2>
           Age requirements and responsibility of parents and legal guardians
         </h2>
@@ -1623,7 +1635,7 @@
           “Discord’s Paid Services” below.
         </p>
       </div>
-      <div id="3" class="rich-guidlines-negative w-richtext">
+      <div id="3" class="rich-guidlines-negative_new w-richtext">
         <h2>What you can expect from us</h2>
         <p>
           Discord is the best place to talk, hang out and have fun with friends
@@ -1689,7 +1701,7 @@
           or changes. We are not liable for any such outages or service changes.
         </p>
       </div>
-      <div id="4" class="rich-guidlines-negative w-richtext">
+      <div id="4" class="rich-guidlines-negative_new w-richtext">
         <h2>Your Discord account</h2>
         <p>
           To access the services on an ongoing basis, you will need to create a
@@ -1730,7 +1742,7 @@
           or reclaim your username, URL, or other identifier.
         </p>
       </div>
-      <div id="5" class="rich-guidlines-negative w-richtext">
+      <div id="5" class="rich-guidlines-negative_new w-richtext">
         <h2>Content in Discord’s services</h2>
         <h4>Your Content</h4>
         <p>
@@ -1859,7 +1871,7 @@
           or resources.
         </p>
       </div>
-      <div id="6" class="rich-guidlines-negative w-richtext">
+      <div id="6" class="rich-guidlines-negative_new w-richtext">
         <h2>Software in Discord’s services</h2>
         <p>
           License to our software. Some of our services allow you to download
@@ -1906,7 +1918,7 @@
           >), Discord is not responsible for any third-party services.
         </p>
       </div>
-      <div id="7" class="rich-guidlines-negative w-richtext">
+      <div id="7" class="rich-guidlines-negative_new w-richtext">
         <h2>Copyright</h2>
         <p>
           We respect the intellectual property of others and expect our users to
@@ -1917,7 +1929,7 @@
           for information on how to file a copyright complaint.
         </p>
       </div>
-      <div id="8" class="rich-guidlines-negative w-richtext">
+      <div id="8" class="rich-guidlines-negative_new w-richtext">
         <h2>Discord’s paid services</h2>
         <p>
           We won’t charge you a fee to use the basic functionality of our
@@ -1932,7 +1944,7 @@
           through Discord.
         </p>
       </div>
-      <div id="9" class="rich-guidlines-negative w-richtext">
+      <div id="9" class="rich-guidlines-negative_new w-richtext">
         <h2>Restrictions on your use of Discord’s services</h2>
         <p>
           When using our services, you must comply with these terms and all
@@ -1990,7 +2002,7 @@
           >.
         </p>
       </div>
-      <div id="10" class="rich-guidlines-negative w-richtext">
+      <div id="10" class="rich-guidlines-negative_new w-richtext">
         <h2>Termination</h2>
         <p>
           Your right to terminate. You’re free to stop using Discord’s services
@@ -2039,7 +2051,7 @@
           required by applicable law.
         </p>
       </div>
-      <div id="11" class="rich-guidlines-negative w-richtext">
+      <div id="11" class="rich-guidlines-negative_new w-richtext">
         <h2>Appeals</h2>
         <p>
           We value transparency and work hard to give you context for the
@@ -2054,7 +2066,7 @@
           submitted within six months of the relevant decision.
         </p>
       </div>
-      <div id="12" class="rich-guidlines-negative w-richtext">
+      <div id="12" class="rich-guidlines-negative_new w-richtext">
         <h2>Indemnity</h2>
         <p>
           If you are using the services on behalf of a business or legal entity
@@ -2066,7 +2078,7 @@
           violation of these terms.
         </p>
       </div>
-      <div id="13" class="rich-guidlines-negative w-richtext">
+      <div id="13" class="rich-guidlines-negative_new w-richtext">
         <h2>Services “AS IS”</h2>
         <p>
           We work hard to offer great services, but there are certain aspects
@@ -2083,7 +2095,7 @@
           EXTENT PERMISSIBLE UNDER THOSE LAWS.
         </p>
       </div>
-      <div id="14" class="rich-guidlines-negative w-richtext">
+      <div id="14" class="rich-guidlines-negative_new w-richtext">
         <h2>Data Charges</h2>
         <p>
           You are responsible for any mobile charges that you may incur for
@@ -2093,7 +2105,7 @@
           ask your mobile service provider before using our services.
         </p>
       </div>
-      <div id="15" class="rich-guidlines-negative w-richtext">
+      <div id="15" class="rich-guidlines-negative_new w-richtext">
         <h2>Limitation of liability</h2>
         <p>
           WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE
@@ -2144,7 +2156,7 @@
           RESIDENTS OF NEW JERSEY.
         </p>
       </div>
-      <div id="16" class="rich-guidlines-negative w-richtext">
+      <div id="16" class="rich-guidlines-negative_new w-richtext">
         <h2>Settling disputes between you and Discord</h2>
         <p>
           <strong>Informal resolution.</strong>&nbsp; Most disputes can be
@@ -2445,7 +2457,7 @@
           section.
         </p>
       </div>
-      <div id="17" class="rich-guidlines-negative w-richtext">
+      <div id="17" class="rich-guidlines-negative_new w-richtext">
         <h2>More important stuff</h2>
         <p>
           You have certain rights that, by law, can’t be limited by these terms,
