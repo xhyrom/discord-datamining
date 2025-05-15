@@ -134,6 +134,16 @@
       }
     </style>
   </div>
+  <div class="w-embed">
+    <style>
+      body {
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+    </style>
+  </div>
   <header class="nav">
     <div class="nav_styles w-embed">
       <style>
@@ -1420,46 +1430,56 @@
   </header>
   <div class="section-rich">
     <div class="padding-menu"></div>
-    <div class="container780">
-      <a href="/archive" class="archived-link w-inline-block"
+    <div class="container780 left-vert">
+      <a href="/archive" class="archived-link is_new w-inline-block"
         ><div class="new-link-small">Archived Versions</div></a
       >
     </div>
     <div class="container780 left-vert">
-      <h1 class="new-h1">Discord Community Guidelines</h1>
-      <div class="rich-terms w-richtext">
+      <div class="hi-wr">
+        <h1 class="new-h1 is_new">Discord Community Guidelines</h1>
+      </div>
+      <div class="rich-terms_new w-richtext">
         <h4>Effective:&nbsp;April 15, 2024</h4>
         <h4>Last Updated:&nbsp;March 15, 2024</h4>
         <p>‍</p>
       </div>
-      <a href="#1" class="link-terms w-inline-block w-condition-invisible"
+      <a href="#" class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">1.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#2" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#2"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">2.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#3" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#3"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">3.</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
         href="#3"
-        class="link-terms _30px w-inline-block w-condition-invisible"
+        class="link-terms _30px is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#4" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#4"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">4.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#5" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#5"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">5.</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
@@ -1477,44 +1497,71 @@
         class="link-terms _30px w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#6" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#6"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">6.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#7" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#7"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">7.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#8" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#8"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">8.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#9" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#9"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">9.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#10" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#10"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">10.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#11" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#11"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">11.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#12" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#12"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">12.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#13" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#13"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">13.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#14" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#14"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">14.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#15" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#15"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">15.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#16" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#16"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">16.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#17" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#17"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">17.</div>
         <div class="w-dyn-bind-empty"></div
       ></a>
-      <div id="1" class="rich-guidlines-negative _1 w-richtext">
+      <div
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
+      ></div>
+      <div id="1" class="rich-guidlines-negative_new w-richtext">
         <p>
           We created Discord to be the best place to talk, hang out, and have
           fun with friends online. Our Community Guidelines ensure everyone can
@@ -1993,70 +2040,69 @@
         </p>
         <p>‍</p>
       </div>
-      <div class="rich-guidlines-negative w-dyn-bind-empty w-richtext"></div>
       <div
         id="2"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="3"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="4"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="5"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="6"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="7"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="8"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="9"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="10"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="11"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="12"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="13"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="14"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="15"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="16"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="17"
-        class="rich-guidlines-negative w-condition-invisible w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-condition-invisible w-dyn-bind-empty w-richtext"
       ></div>
     </div>
   </div>
