@@ -28,6 +28,70 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: The Official Trailer 2<br /></strong
+  ><strong>Quest Name: DOOM: The Dark Ages Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch
+  <strong>The Official Trailer 2 </strong>in Discord to receive a
+  <strong>Shield Saw Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users who are aged 18+ in the
+  <strong>United States</strong> and <strong>Canada</strong> on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>DOOM: The Dark Ages Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>May 15, 2025 </strong>until<strong>
+    May 21, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 21, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Shield Saw Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 21, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: The Bad Guys 2 <br /></strong
+  ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>The Bad Guys 2 </strong>in
+  Discord to receive a <strong>Vault Heist Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users in the
+  <strong>United States</strong> on desktop where <strong>Discord</strong> is
+  available. <br />Discord’s premium services are restricted in some
+  regions.This Quest is not available in <strong>Canada</strong>,
+  <strong>France</strong>, <strong>Australia</strong>, <strong>Mexico</strong>,
+  and the <strong>United</strong> <strong>Kingdom</strong>. <br /><strong
+    >Availability Period:</strong
+  >
+  <strong>The</strong> <strong>Bad Guys 2 Quest </strong>can be accepted on
+  Discord desktop app or browser client from
+  <strong>May 15, 2025 </strong>until<strong> May 21, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 21, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Vault Heist Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 21, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Nobody 2 Trailer<br /></strong
   ><strong>Quest Name: Nobody 2 Trailer Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong> Nobody 2 Trailer </strong
@@ -227,25 +291,6 @@
     ><strong>Other Terms: </strong>Limit of one reward redemption per
     account.</span
   >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Overwatch 2 <br /></strong
-  ><strong>Quest Name: New Way to Play Quest <br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Overwatch 2</strong> to receive
-  <strong>5 Loot Boxes</strong>.<br /><strong>Who is Eligible: </strong
-  >Available to players in the <strong>United States</strong> who are 18+ on
-  desktop and console where Discord and <strong>Overwatch 2</strong> are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>New Way to Play Quest</strong> can be accepted on Discord
-  <strong>April 22, 2025 </strong>until<strong>
-    April 28, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 12, 2025 (0:00 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -486,128 +531,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Video: The Last of Us Season 2<br /></strong
-  ><strong>Quest Name: The Last of Us Season 2 Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch
-  <strong>The Last of Us Season 2 </strong>video in Discord to receive a
-  <strong>Clicker Avatar Decoration.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>The Last of Us Season 2 Quest</strong> can be accepted on Discord
-  desktop app or browser client from
-  <strong>April 7, 2025 </strong>until<strong>
-    April 13, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 13, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Clicker Avatar Decoration</strong> is a limited-time Avatar Decoration
-  and will only be yours as an Avatar Decoration until
-  <strong>May 13, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: M3GAN 2.0 Trailer<br /></strong
-  ><strong>Quest Name: M3GAN 2.0 Trailer Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>M3GAN 2.0 Trailer</strong> in Discord to earn 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Nitro</span
-    ></a
-  >! Learn more about Nitro Credits<a
-    href="https://support.discord.com/hc/en-us/articles/26362805097623"
-  >
-    <span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >here</span
-    ></a
-  >.<br /><strong>Who is Eligible: </strong>Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>M3GAN 2.0 Trailer Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>April 3, 2025 </strong>until<strong>
-    April 9, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 9, 2025 (11:59 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: SUPERVIVE <br /></strong
-  ><strong>Quest Name: SUPERVIVE Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>SUPERVIVE </strong>to receive the
-  <strong>New Hunter: Eva</strong>. <br /><strong>Who is Eligible: </strong
-  >Available to users in the
-  <strong>United States, Canada, Western Europe, </strong>and<strong>
-    Eastern Europe</strong
-  >
-  on PC where <strong>Discord</strong> and <strong>SUPERVIVE </strong>are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>SUPERVIVE Quest</strong> can be accepted on
-  <strong>PC </strong>from
-  <strong>April 2, 2025 (7:00PM UTC) </strong>until<strong>
-    April 8, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 8, 2025 (0:00 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: New Drop Trailer<br /></strong
-  ><strong>Quest Name: Drop Trailer Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>New Drop Trailer</strong> in Discord to earn 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Nitro</span
-    ></a
-  >! Learn more about Nitro Credits<a
-    href="https://support.discord.com/hc/en-us/articles/26362805097623"
-  >
-    <span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >here</span
-    ></a
-  >.<br /><strong>Who is Eligible: </strong>Available to users on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Drop Trailer Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>March 25, 2025 </strong>until<strong>
-    March 30, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 30, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Fortnite <br /></strong
   ><strong>Quest Name: Fortnite OG Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -713,82 +636,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Split Fiction<br /></strong
-  ><strong>Quest Name: Split Fiction Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Split Fiction </strong>to receive a limited-time
-  <strong>Split Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to users on desktop where <strong>Discord</strong> and
-  <strong>Split Fiction </strong>are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period: </strong>The
-  <strong>Split Fiction Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>March 7, 2025 </strong>until<strong>
-    March 13, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 13, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Split Avatar Decoration</strong> is a limited-time Avatar Decoration
-  and will only be yours as an Avatar Decoration until
-  <strong>May 13, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: FragPunk<br /></strong
-  ><strong>Quest Name: FragPunk Launch Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>FragPunk</strong> to receive a limited-time
-  <strong>Pathojen Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on desktop where both <strong>Discord</strong> and
-  <strong>FragPunk</strong> are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>FragPunk Launch Quest</strong> can be accepted on Discord from
-  <strong>March 6, 2025</strong> until
-  <strong>March 12, 2025 (4:59PM PST)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>April 12, 2025</strong>.<br />The
-  <strong>Pathojen Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>May 12, 2025 (4:59PM PST)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: THRONE AND LIBERTY<br /></strong
-  ><strong>Quest Name: Wilds of Talandre Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>THRONE AND LIBERTY </strong>to receive an
-  <strong>Amitoi &amp; Coin Bundle</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on PC, PlayStation 5, Xbox Series X, and Xbox Series S
-  where both <strong>Discord</strong> and
-  <strong>THRONE AND LIBERTY</strong> are available. Discord’s premium services
-  are restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Wilds of Talandre Quest</strong> can be accepted on Discord from
-  <strong>March 6, 2025</strong> until
-  <strong>March 12, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>May 6, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Delta Force: Black Hawk Down <br /></strong
   ><strong>Quest Name: Black Hawk Down Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -806,26 +653,7 @@
   <strong>February 26, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
   requirements during this period and claim your reward by
   <strong>May 31, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
-  >Limit of one reward redemption per account.<br /><br />
-</p>
-<p>
-  <strong>Quest Game: Delta Force<br /></strong
-  ><strong>Quest Name: DELTA FORCE STARFALL Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Delta Force </strong>to receive a
-  <strong>SCAR-H Skin &amp; Premium Armament Pack</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on PC where both <strong>Discord</strong> and
-  <strong>Delta Force</strong> are available. Discord’s premium services are
-  restricted in some regions. <br /><strong>Availability Period: </strong
-  >The<strong> DELTA FORCE STARFALL Quest</strong> can be accepted on Discord
-  from<strong> January 17, 2025 (6:00PM PT)</strong> until
-  <strong>January 23,</strong>
-  <strong>2025 (11:59PM UTC)</strong>.<br />Complete the quest requirements
-  during this period and claim your reward by <strong>April 30, 2025</strong>
-  <strong>(11:59PM UTC)</strong>. <br /><strong>Other Terms:</strong> Limit of
-  one reward redemption per account.
+  >Limit of one reward redemption per account.
 </p>
 <p>
   <strong
