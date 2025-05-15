@@ -134,6 +134,16 @@
       }
     </style>
   </div>
+  <div class="w-embed">
+    <style>
+      body {
+        font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+    </style>
+  </div>
   <header class="nav">
     <div class="nav_styles w-embed">
       <style>
@@ -1420,42 +1430,44 @@
   </header>
   <div class="section-rich">
     <div class="padding-menu"></div>
-    <div class="container780">
-      <a href="/archive" class="archived-link w-inline-block"
+    <div class="container780 left-vert">
+      <a href="/archive" class="archived-link is_new w-inline-block"
         ><div class="new-link-small">Archived Versions</div></a
       >
     </div>
     <div class="container780 left-vert">
-      <h1 class="new-h1">Discord Privacy Policy</h1>
-      <div class="rich-terms w-richtext">
+      <div class="hi-wr">
+        <h1 class="new-h1 is_new">Discord Privacy Policy</h1>
+      </div>
+      <div class="rich-terms_new w-richtext">
         <h4>Effective: April 15, 2024</h4>
         <h4>Last Updated: March 15, 2024</h4>
       </div>
-      <a href="#1" class="link-terms w-inline-block"
+      <a href="#" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">1.</div>
         <div>Welcome!</div></a
-      ><a href="#2" class="link-terms w-inline-block"
+      ><a href="#2" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">2.</div>
         <div>
           Discord is the best place to talk, hang out and have fun with friends
           online
         </div></a
-      ><a href="#3" class="link-terms w-inline-block"
+      ><a href="#3" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">3.</div>
         <div>The information we collect</div></a
-      ><a href="#3" class="link-terms _30px w-inline-block"
+      ><a href="#3" class="link-terms _30px is_new w-inline-block"
         ><div class="menu-numbers bl">•</div>
         <div>Information you provide to us</div></a
-      ><a href="#3" class="link-terms _30px w-inline-block"
+      ><a href="#3" class="link-terms _30px is_new w-inline-block"
         ><div class="menu-numbers bl">•</div>
         <div>Information we collect automatically</div></a
-      ><a href="#3" class="link-terms _30px w-inline-block"
+      ><a href="#3" class="link-terms _30px is_new w-inline-block"
         ><div class="menu-numbers bl">•</div>
         <div>Information we receive from other sources</div></a
-      ><a href="#4" class="link-terms w-inline-block"
+      ><a href="#4" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">4.</div>
         <div>How we use your information</div></a
-      ><a href="#5" class="link-terms w-inline-block"
+      ><a href="#5" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">5.</div>
         <div>How we disclose your information</div></a
       ><a
@@ -1473,45 +1485,54 @@
         class="link-terms _30px w-inline-block w-condition-invisible"
         ><div class="menu-numbers bl">•</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#6" class="link-terms w-inline-block"
+      ><a href="#6" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">6.</div>
         <div>Data retention</div></a
-      ><a href="#7" class="link-terms w-inline-block"
+      ><a href="#7" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">7.</div>
         <div>How we protect your information</div></a
-      ><a href="#8" class="link-terms w-inline-block"
+      ><a href="#8" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">8.</div>
         <div>How to control your privacy</div></a
-      ><a href="#9" class="link-terms w-inline-block"
+      ><a href="#9" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">9.</div>
         <div>International data transfers</div></a
-      ><a href="#10" class="link-terms w-inline-block"
+      ><a href="#10" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">10.</div>
         <div>Services offered by third parties</div></a
-      ><a href="#11" class="link-terms w-inline-block"
+      ><a href="#11" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">11.</div>
         <div>Data Protection Officer</div></a
-      ><a href="#12" class="link-terms w-inline-block"
+      ><a href="#12" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">12.</div>
         <div>Information about local privacy laws</div></a
-      ><a href="#13" class="link-terms w-inline-block"
+      ><a href="#13" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">13.</div>
         <div>Changes to this Privacy Policy</div></a
-      ><a href="#14" class="link-terms w-inline-block"
+      ><a href="#14" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">14.</div>
         <div>Contact us</div></a
-      ><a href="#15" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#15"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">15.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#16" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#16"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">16.</div>
         <div class="w-dyn-bind-empty"></div></a
-      ><a href="#17" class="link-terms w-inline-block w-condition-invisible"
+      ><a
+        href="#17"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">17.</div>
         <div class="w-dyn-bind-empty"></div
       ></a>
-      <div id="1" class="rich-guidlines-negative _1 w-richtext">
-        <h2><strong>Welcome!</strong></h2>
+      <div
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
+      ></div>
+      <div id="1" class="rich-guidlines-negative_new w-richtext">
+        <h2>Welcome!</h2>
         <p>
           This Privacy Policy explains how we collect, use, store, protect, and
           share your personal information through our services. If you reside in
@@ -1554,8 +1575,7 @@
           </li>
         </ul>
       </div>
-      <div class="rich-guidlines-negative w-dyn-bind-empty w-richtext"></div>
-      <div id="2" class="rich-guidlines-negative w-richtext">
+      <div id="2" class="rich-guidlines-negative_new w-richtext">
         <h2>
           Discord is the best place to talk, hang out and have fun with friends
           online
@@ -1618,7 +1638,7 @@
           to third parties.
         </p>
       </div>
-      <div id="3" class="rich-guidlines-negative w-richtext">
+      <div id="3" class="rich-guidlines-negative_new w-richtext">
         <h2>The information we collect</h2>
         <p>
           We collect certain information when you use Discord. This includes
@@ -1751,7 +1771,7 @@
           certain information about you like your username on that platform.
         </p>
       </div>
-      <div id="4" class="rich-guidlines-negative w-richtext">
+      <div id="4" class="rich-guidlines-negative_new w-richtext">
         <h2>How we use your information</h2>
         <p>
           Under certain data protection laws like GDPR, companies must have a
@@ -1940,7 +1960,7 @@
           danger—for example, to help resolve an urgent medical situation.
         </p>
       </div>
-      <div id="5" class="rich-guidlines-negative w-richtext">
+      <div id="5" class="rich-guidlines-negative_new w-richtext">
         <h2>How we disclose your information</h2>
         <ul role="list">
           <li>
@@ -2032,7 +2052,7 @@
           </li>
         </ul>
       </div>
-      <div id="6" class="rich-guidlines-negative w-richtext">
+      <div id="6" class="rich-guidlines-negative_new w-richtext">
         <h2>Data retention</h2>
         <p>
           We retain personal information until we determine it is no longer
@@ -2044,7 +2064,7 @@
           >.
         </p>
       </div>
-      <div id="7" class="rich-guidlines-negative w-richtext">
+      <div id="7" class="rich-guidlines-negative_new w-richtext">
         <h2>How we protect your information</h2>
         <p>
           We take a number of steps to help protect your information. All
@@ -2060,7 +2080,7 @@
           >.
         </p>
       </div>
-      <div id="8" class="rich-guidlines-negative w-richtext">
+      <div id="8" class="rich-guidlines-negative_new w-richtext">
         <h2>How to control your privacy</h2>
         <p>
           We believe that users should be able to tailor their Discord
@@ -2199,7 +2219,7 @@
           >.
         </p>
       </div>
-      <div id="9" class="rich-guidlines-negative w-richtext">
+      <div id="9" class="rich-guidlines-negative_new w-richtext">
         <h2>International data transfers</h2>
         <p>
           We are based in the United States, and we process and store
@@ -2256,7 +2276,7 @@
           >.
         </p>
       </div>
-      <div id="10" class="rich-guidlines-negative w-richtext">
+      <div id="10" class="rich-guidlines-negative_new w-richtext">
         <h2>Services offered by third parties</h2>
         <p>
           We allow third party developers to build certain features or other
@@ -2285,7 +2305,7 @@
           uses bots, and whether to engage with third-party services in general.
         </p>
       </div>
-      <div id="11" class="rich-guidlines-negative w-richtext">
+      <div id="11" class="rich-guidlines-negative_new w-richtext">
         <h2>Data Protection Officer</h2>
         <p>
           You can contact Discord Netherlands BV’s Data Protection Officer at
@@ -2299,7 +2319,7 @@
           processing of personal data.
         </p>
       </div>
-      <div id="12" class="rich-guidlines-negative w-richtext">
+      <div id="12" class="rich-guidlines-negative_new w-richtext">
         <h2>Information about local privacy laws</h2>
         <p>
           Certain local laws, such as the European Union’s General Data
@@ -2345,7 +2365,7 @@
           privacy@discord.com.
         </p>
       </div>
-      <div id="13" class="rich-guidlines-negative w-richtext">
+      <div id="13" class="rich-guidlines-negative_new w-richtext">
         <h2>Changes to this Privacy Policy</h2>
         <p>
           We will update this Privacy Policy from time to time. We always
@@ -2355,7 +2375,7 @@
           services.
         </p>
       </div>
-      <div id="14" class="rich-guidlines-negative w-richtext">
+      <div id="14" class="rich-guidlines-negative_new w-richtext">
         <h2>Contact us</h2>
         <p>
           Email us at privacy@discord.com with any questions about this Privacy
@@ -2393,15 +2413,15 @@
       </div>
       <div
         id="15"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="16"
-        class="rich-guidlines-negative w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
       ></div>
       <div
         id="17"
-        class="rich-guidlines-negative w-condition-invisible w-dyn-bind-empty w-richtext"
+        class="rich-guidlines-negative_new w-condition-invisible w-dyn-bind-empty w-richtext"
       ></div>
     </div>
   </div>
