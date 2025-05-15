@@ -53,7 +53,7 @@
   first: 
 </p>
 <ul>
-  <li>You have not redeemed any trial or discount in the past 3 months</li>
+  <li>You have not redeemed any trial or discount in the past three months</li>
   <li>You have not canceled your Nitro subscription in the past 30 days</li>
   <li>Your Discord account must be more than 30 days old</li>
   <li>
@@ -77,8 +77,12 @@
   <strong>Important</strong>: If you purchase a subscription during your free
   trial week, your paid subscription will start right away and replace your
   trial. You won't be able to use any remaining trial days. For example, if you
-  buy a subscription 3 days into your trial, you'll switch to the paid
-  subscription immediately rather than finishing the last 4 days of your trial.
+  buy a subscription three days into your trial, you'll switch to the paid
+  subscription immediately rather than finishing the last four days of your
+  trial. If you earn a one-day Nitro reward from completing a Quest while your
+  one-week trial is active, the one-day reward will replace your remaining trial
+  time. This means your trial will end, and you'll receive only the one-day of
+  Nitro instead of your remaining trial days.
 </div>
 <h1 id="h_01JT6Y3EPJCJ9RFJB0T6JGGAXR">What is Discord Nitro?</h1>
 <p>
@@ -155,8 +159,8 @@
   After the initial free trial expires, you can receive an additional bonus
   one-week trial of Nitro by adding a payment method and selecting a Nitro
   subscription. After your bonus trial week ends, your plan will convert to a
-  paid subscription, unless cancelled. This gives you the opportunity to enjoy 2
-  weeks of Nitro trials in total! 
+  paid subscription, unless cancelled. This gives you the opportunity to enjoy
+  two weeks of Nitro trials in total! 
 </p>
 <p>
   During the bonus week trial, you can manage your subscription settings through
@@ -180,6 +184,12 @@
   Example of Free Nitro Trial Window
 </h4>
 <h1 id="h_01JT6Y3EPJ4TG69CAETEV0QHAY">Frequently Asked Questions</h1>
+<p>
+  <strong>Q: Do I need to do anything special to claim this trial? </strong
+  ><br />A: If you opened your desktop app and saw a notification saying ‘You’ve
+  got Nitro’, then you don’t need to do anything else to redeem the one-week
+  trial. You’re good to go. Enjoy!
+</p>
 <p><strong>Q: Do I need a payment method?</strong></p>
 <p>A: No payment method is required to start your free trial.</p>
 <p><strong>Q: Can I cancel my trial before it ends?</strong></p>
@@ -230,8 +240,17 @@
 <p>
   A: Your paid subscription will begin immediately, replacing your trial. Any
   remaining trial days will be forfeited. For instance, if you purchase a
-  subscription on day 3 of your trial, you'll immediately switch to the paid
-  subscription instead of using your remaining 4 trial days.
+  subscription on day three of your trial, you'll immediately switch to the paid
+  subscription instead of using your remaining four trial days.
+</p>
+<p>
+  <strong
+    >Q: What happens if I complete a Quest and earn Nitro during my one-week
+    trial? </strong
+  ><br />If you earn a one-day Nitro reward from completing a Quest while your
+  one-week trial is active, the one-day reward will replace your remaining trial
+  time. This means your trial will end, and you'll receive only the one-day of
+  Nitro instead of your remaining trial days.
 </p>
 <p><strong>Q: What is this free Nitro trial I received?</strong></p>
 <p>
