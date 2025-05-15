@@ -35511,21 +35511,24 @@ img.thumbnail__0f2e8 {
   position: absolute;
 }
 .avatar_e928f4 {
-  outline: 2px solid var(--bg-surface-overlay);
-}
-.avatar_e928f4,
-.overflowCount_e928f4 {
   border-radius: inherit;
   height: 100%;
+  outline: 2px solid var(--bg-surface-overlay);
   width: 100%;
+}
+.user-profile-modal-v2 .avatar_e928f4 {
+  outline-width: 3px;
 }
 .overflowCount_e928f4 {
   align-items: center;
   background: var(--bg-surface-overlay);
+  border-radius: inherit;
   display: flex;
+  height: 100%;
   justify-content: center;
   padding: 1px;
   position: relative;
+  width: 100%;
 }
 .form__08bd2 {
   display: contents;
@@ -60776,4 +60779,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cb024d06d35b30f5.css.map*/
+/*# sourceMappingURL=12633.e12d127694924e3f.css.map*/
