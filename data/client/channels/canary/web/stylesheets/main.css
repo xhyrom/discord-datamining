@@ -11711,6 +11711,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .avatarWrapper__86ab2 .acronymText__86ab2 {
   font-size: 22px;
 }
+.emptyBody__86ab2 {
+  height: 8px;
+}
 .body__86ab2 {
   flex-direction: column;
   gap: 16px;
@@ -11738,7 +11741,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .buttonContainer__86ab2 {
   box-sizing: border-box;
-  padding: 4px 16px 16px;
+  padding: 0 16px 16px;
   width: 100%;
 }
 .container__80da8 {
@@ -60784,4 +60787,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0a1fb4ce1926ef1b.css.map*/
+/*# sourceMappingURL=12633.98cafcaff702a63a.css.map*/
