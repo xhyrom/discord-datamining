@@ -45026,6 +45026,7 @@ html.disable-forced-colors * {
   --header-primary: var(--primary-130);
   --header-secondary: var(--primary-330);
   --home-background: var(--primary-645);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-130);
   --icon-secondary: var(--primary-330);
@@ -45200,6 +45201,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-360);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--primary-360);
@@ -45763,6 +45765,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-645) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -46475,6 +46482,11 @@ html.disable-forced-colors * {
       var(--red-345) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -46794,6 +46806,7 @@ html.disable-forced-colors * {
   --header-primary: var(--primary-860);
   --header-secondary: var(--primary-500);
   --home-background: var(--primary-100);
+  --icon-invert: var(--neutral-1);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-860);
   --icon-secondary: var(--primary-500);
@@ -46968,6 +46981,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--white);
   --text-brand: var(--brand-500);
   --text-danger: var(--red-500);
+  --text-invert: var(--neutral-1);
   --text-link: var(--blue-430);
   --text-link-low-saturation: var(--blue-430);
   --text-low-contrast: var(--primary-460);
@@ -47530,6 +47544,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -48246,6 +48265,11 @@ html.disable-forced-colors * {
       var(--red-500) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-430) 100%,
@@ -48571,6 +48595,7 @@ html.disable-forced-colors * {
   --header-primary: var(--plum-2);
   --header-secondary: var(--plum-8);
   --home-background: var(--plum-18);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--plum-12);
   --icon-primary: var(--plum-5);
   --icon-secondary: var(--plum-9);
@@ -48745,6 +48770,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-400);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--plum-12);
@@ -49307,6 +49333,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -50024,6 +50055,11 @@ html.disable-forced-colors * {
       var(--red-345) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -50347,6 +50383,7 @@ html.disable-forced-colors * {
   --header-primary: var(--plum-3);
   --header-secondary: var(--plum-9);
   --home-background: var(--plum-18);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--plum-11);
   --icon-primary: var(--plum-4);
   --icon-secondary: var(--plum-9);
@@ -50521,6 +50558,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-360);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--plum-11);
@@ -51083,6 +51121,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -51798,6 +51841,11 @@ html.disable-forced-colors * {
     --text-danger: color-mix(
       in oklab,
       var(--red-345) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-link: color-mix(
@@ -60787,4 +60835,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8649b763fd7c3165.css.map*/
+/*# sourceMappingURL=12633.14c384435d5c1b54.css.map*/

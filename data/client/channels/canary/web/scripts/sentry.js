@@ -6727,7 +6727,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1896481c009bf99b10ca4a4684370e63acafc68e",
+            release: "discord_web-34e5df0d35aa02793f2e973d4b44064860d1b7a5",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6793,8 +6793,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "400357"),
-            o.YA("builtAt", String("1747434605134"));
+            o.YA("buildNumber", "400396"),
+            o.YA("builtAt", String("1747437124562"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8334,6 +8334,13 @@
                 [r.MIDNIGHT]: { raw: "PLUM_18", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_18", opacity: 1 },
               },
+              ICON_INVERT: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
+              },
               ICON_MUTED: {
                 category: "generic",
                 [r.DARK]: { raw: "PRIMARY_400", opacity: 1 },
@@ -9485,6 +9492,13 @@
                 [r.LIGHT]: { raw: "RED_500", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
                 [r.DARKER]: { raw: "RED_345", opacity: 1 },
+              },
+              TEXT_INVERT: {
+                category: "text",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
               },
               TEXT_LINK: {
                 category: "generic",
@@ -16315,6 +16329,12 @@
             r.I.PLUM_18,
             r.I.PLUM_18,
           ],
+          "icon-invert": [
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
+          ],
           "icon-muted": [
             r.I.PRIMARY_400,
             r.I.PRIMARY_400,
@@ -17133,6 +17153,12 @@
             r.I.BRAND_360,
           ],
           "text-danger": [r.I.RED_345, r.I.RED_500, r.I.RED_345, r.I.RED_345],
+          "text-invert": [
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
+          ],
           "text-link": [r.I.BLUE_345, r.I.BLUE_430, r.I.BLUE_345, r.I.BLUE_345],
           "text-link-low-saturation": [
             r.I.BLUE_330,
@@ -46463,4 +46489,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fbbdaf26ad2ff026.js.map
+//# sourceMappingURL=sentry.82f9092c4af02d4b.js.map
