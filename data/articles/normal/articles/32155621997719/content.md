@@ -1,15 +1,20 @@
-<p class="wysiwyg-text-align-justify">
+<div class="warn-box">
   <strong
-    ><span
-      style="
-        color: #2e3338;
-        --darkreader-inline-color: var(--darkreader-text-2e3338, #c4c0b9);
-      "
-      data-darkreader-inline-color=""
-      >Updated May 16, 2025</span
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Archived Version:</span
     ></strong
   >
-</p>
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >This version of the Discord Addendum is archived as of May 16, 2025. You
+    can find the current version of Discord Advertising IAB Addendum
+    <a
+      href="https://support.discord.com/hc/en-us/articles/28455100031511"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >.</span
+  >
+</div>
 <p class="wysiwyg-text-align-justify">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >This Discord Advertising IAB Addendum (this “Discord Addendum”), which
@@ -126,11 +131,8 @@
     Media Company Rewards may not be available to users in certain regions where
     not supported by the Discord Platform. Advertiser and Agency may not
     terminate for convenience any Quest with (i) a Media Company Reward that
-    contains or is derived from Advertising Materials (“Custom Reward”) or (ii)
-    any other custom Media Company Reward created specifically for the Quest.
-    Where there is a Custom Reward, Advertiser, or Agency on behalf of
-    Advertiser, grants Discord a worldwide, royalty-free, perpetual license in
-    and to the Custom Reward to provide it to Discord Nitro users. </span
+    contains or is derived from Advertising Materials or (ii) any other custom
+    Media Company Reward created specifically for the Quest. </span
   >
 </p>
 <p>
@@ -413,29 +415,19 @@
   >
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color="">“</span
-  ><em
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >All notices of termination or breach must be in English, in writing and
-      addressed to the other party’s legal department (with a copy to any
-      contact listed on an IO). The email address for notices being sent to the
-      Media Company legal department is legal.notices@discordapp.com. All other
-      notices must be in English, in writing (including email) and addressed to
-      the other party’s applicable notice information designated on an IO.
-      Notice will be treated as given on receipt, as verified by written or
-      automated receipt or by electronic log (as applicable).</span
-    ></em
-  ><span style="color: #2e3338" data-darkreader-inline-color="">”</span>
-</p>
-<div class="info-box">
-  <strong>Info:</strong>
   <span style="color: #434343" data-darkreader-inline-color=""
-    >You can find past versions Discord Advertising IAB Addendum(s)
-    <a
-      href="https://support.discord.com/hc/en-us/articles/32155621997719"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.</span
+    ><span style="color: #2e3338" data-darkreader-inline-color="">“</span
+    ><em
+      ><span style="color: #2e3338" data-darkreader-inline-color=""
+        >All notices of termination or breach must be in English, in writing and
+        addressed to the other party’s legal department (with a copy to any
+        contact listed on an IO). The email address for notices being sent to
+        the Media Company legal department is legal.notices@discordapp.com. All
+        other notices must be in English, in writing (including email) and
+        addressed to the other party’s applicable notice information designated
+        on an IO. Notice will be treated as given on receipt, as verified by
+        written or automated receipt or by electronic log (as applicable).</span
+      ></em
+    ><span style="color: #2e3338" data-darkreader-inline-color="">”</span></span
   >
-</div>
+</p>
