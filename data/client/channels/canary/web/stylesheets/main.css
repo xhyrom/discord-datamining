@@ -8074,6 +8074,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   position: absolute;
   right: 0;
   -webkit-app-region: no-drag;
+  pointer-events: none;
+}
+.volumeButtonSlider__2d263 > div {
+  overflow: hidden;
+  pointer-events: auto;
 }
 .volumeButtonSlider__2d263.sliderVisible__2d263 {
   display: initial;
@@ -60779,4 +60784,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e12d127694924e3f.css.map*/
+/*# sourceMappingURL=12633.0a1fb4ce1926ef1b.css.map*/
