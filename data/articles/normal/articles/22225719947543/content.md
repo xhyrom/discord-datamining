@@ -77,6 +77,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="#h_01JVDE7SJ7RDVYTXVFDR73AQRG">Quests Daily Caps</a></li>
     <li>
       <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
         ><strong>Frequently Asked Questions</strong></a
@@ -519,6 +520,64 @@
     >Privacy Policy</a
   >.
 </div>
+<h1 id="h_01JVDE7SJ7RDVYTXVFDR73AQRG">Quests Daily Caps</h1>
+<p>
+  If you are between the ages of <strong>13</strong> and <strong>17</strong>,
+  you will only be able to complete <strong>three </strong>Quests per day. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32165758115607"
+    width="624"
+    height="241"
+  />
+</p>
+<h4 id="h_01JVDE8FZJH402NBRDVD6DYKBT" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of Quest Display When Daily Cap Is Reached on Desktop</span
+  >
+</h4>
+<p>
+  When you reach your daily Quest cap, you won’t be able to accept any new
+  Quests for <strong>24 hours</strong>. Press the <strong>Why?</strong> button
+  to see how much time remains.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32165758117911"
+    width="624"
+    height="241"
+  />
+</p>
+<h4 id="h_01JVDE8FZJWP7GGD6FFCS2HN4F" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Why? Button within a Quest Banner</span>
+</h4>
+<div class="info-box">
+  <strong><span style="color: #434343">Info</span></strong
+  ><span style="color: #434343"
+    >: The daily Quest timer begins counting down 24 hours from when you
+    complete your third Quest of the day. For example, if you complete your
+    third Quest at 2:00 PM, you'll be able to accept new Quests starting at 2:00
+    PM the next day.</span
+  >
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32165758121111"
+    width="367"
+    height="248"
+  />
+</p>
+<h4 id="h_01JVDE8FZKPJ2A43GBBR23DY2Z" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Daily Quest Cap Detail View</span>
+</h4>
+<div class="info-box">
+  <strong><span style="color: #434343">Info</span></strong
+  ><span style="color: #434343"
+    >: While you cannot accept new Quests after reaching the cap, you can still
+    claim rewards for Quests completed beforehand.</span
+  >
+</div>
 <h1 id="h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</h1>
 <p>
   <strong
@@ -527,9 +586,21 @@
   >
 </p>
 <p>
-  A: Eligible users can redeem one of each of the available Quest campaigns on
-  their Discord account. 
+  A: Eligible users can complete one Quest for each available Quest once.
+  Available Quests can be accessed from
+  <a href="#h_01JFAWB392Z58VMP5PDW63222E">Quest Home or the Quest bar</a>. 
 </p>
+<p>
+  For users aged <strong>13-17</strong>, there's a limit of
+  <strong>three</strong> Quests per day. When you reach this daily cap:
+</p>
+<ul>
+  <li>A countdown timer will display for when you can accept new Quests</li>
+  <li>
+    You'll be able to accept new Quests in Quest Home or via the Quest bar once
+    the cap has been lifted
+  </li>
+</ul>
 <p><strong>Q: Is this feature/promotion available in my region?</strong></p>
 <p>
   A: Quests will not be available in certain regions. If you are in an
