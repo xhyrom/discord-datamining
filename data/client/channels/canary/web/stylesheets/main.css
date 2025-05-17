@@ -32674,11 +32674,11 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   z-index: 1;
 }
 .labelToolbarHoverGap_ab8609 {
-  bottom: -32px;
-  height: 32px;
-  left: 0;
+  bottom: -34px;
+  height: 34px;
   position: absolute;
-  right: 0;
+  right: -5px;
+  width: 120px;
 }
 .labelToolbarVisible_ab8609 {
   cursor: pointer;
@@ -60835,4 +60835,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.14c384435d5c1b54.css.map*/
+/*# sourceMappingURL=12633.ea3b8499919e27f8.css.map*/
