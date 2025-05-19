@@ -25,12 +25,12 @@
     {
       "id": 96196709002,
       "name": "Careers Site Department",
-      "value": null,
+      "value": "Data Platform",
       "value_type": "single_select"
     }
   ],
   "id": 7995339002,
-  "updated_at": "2025-05-16T16:53:33-04:00",
+  "updated_at": "2025-05-19T12:25:27-04:00",
   "requisition_id": "R-100927",
   "title": "Senior Software Engineer, Data Platform",
   "company_name": "Discord",
