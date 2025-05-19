@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7971022002](https://discord.com/jobs/7971022002)
 
-**Updated At:** Mon, 12 May 2025 16:10:37 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As we expand our presence in the gaming world, we are seeking a dynamic and experienced Senior Copywriter with deep roots in the gaming industry to join our in-house creative team. The Senior Copywriter will work closely with internal teams and external partners to help establish our B2B brand identity and strategy while fostering growth for Discord.

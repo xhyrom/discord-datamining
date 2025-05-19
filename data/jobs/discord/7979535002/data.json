@@ -7,7 +7,7 @@
       "requires_processing_consent": false,
       "requires_retention_consent": false,
       "retention_period": null,
-      "demographic_data_consent_applies": false
+      "demographic_data_consent_applies": true
     }
   ],
   "education": "education_optional",
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7979535002,
-  "updated_at": "2025-05-14T18:12:53-04:00",
+  "updated_at": "2025-05-19T12:39:33-04:00",
   "requisition_id": "R-100906",
   "title": "Senior Software Engineer - Desktop Platform",
   "company_name": "Discord",

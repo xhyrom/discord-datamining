@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7970933002](https://discord.com/jobs/7970933002)
 
-**Updated At:** Mon, 12 May 2025 16:10:37 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a founding Marketing Director to lead the marketing strategy for Discord’s advertising solutions. In this role, you’ll set the vision and drive execution across both Product Marketing and Business Marketing, shaping how advertisers discover, understand, and adopt Ads on Discord. You'll position our platform to win in a competitive, fast-evolving market—uniting cross-functional teams around a bold, cohesive strategy to establish Discord as a leading destination for innovative advertising.

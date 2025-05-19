@@ -7,7 +7,7 @@
       "requires_processing_consent": false,
       "requires_retention_consent": false,
       "retention_period": null,
-      "demographic_data_consent_applies": false
+      "demographic_data_consent_applies": true
     }
   ],
   "internal_job_id": 6078068002,
@@ -29,7 +29,7 @@
     }
   ],
   "id": 7807878002,
-  "updated_at": "2025-05-12T12:10:37-04:00",
+  "updated_at": "2025-05-19T12:39:33-04:00",
   "requisition_id": "R-100757",
   "title": "Senior Oracle Business Analyst",
   "company_name": "Discord",

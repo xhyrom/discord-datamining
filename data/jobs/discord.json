@@ -9,7 +9,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -32,7 +32,7 @@
         }
       ],
       "id": 7820758002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100772",
       "title": "Account Executive - Mobile Gaming",
       "company_name": "Discord",
@@ -72,7 +72,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -95,7 +95,7 @@
         }
       ],
       "id": 7950420002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100871",
       "title": "Account Manager - Crossplatform Gaming",
       "company_name": "Discord",
@@ -128,7 +128,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6082800002,
@@ -150,7 +150,7 @@
         }
       ],
       "id": 7818572002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100770",
       "title": "Bilingual Threat Operations Specialist (West Coast)",
       "company_name": "Discord",
@@ -190,7 +190,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6165116002,
@@ -212,7 +212,7 @@
         }
       ],
       "id": 8000219002,
-      "updated_at": "2025-05-15T18:58:20-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100930",
       "title": "Business Recruiter",
       "company_name": "Discord",
@@ -268,7 +268,7 @@
         }
       ],
       "id": 7898236002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100827",
       "title": "Customer Experience Associate, Account Security",
       "company_name": "Discord",
@@ -301,7 +301,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6157243002,
@@ -323,7 +323,7 @@
         }
       ],
       "id": 7981932002,
-      "updated_at": "2025-05-14T17:25:23-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100912",
       "title": "Data Scientist, Analytics",
       "company_name": "Discord",
@@ -356,7 +356,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -379,7 +379,7 @@
         }
       ],
       "id": 7991834002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100731",
       "title": "Director of Engineering, Data Platform",
       "company_name": "Discord",
@@ -412,7 +412,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6152596002,
@@ -434,7 +434,7 @@
         }
       ],
       "id": 7970933002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100892",
       "title": "Director of Marketing, Ads",
       "company_name": "Discord",
@@ -467,7 +467,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6152586002,
@@ -489,7 +489,7 @@
         }
       ],
       "id": 7970905002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100891",
       "title": "Director of Partner Marketing",
       "company_name": "Discord",
@@ -522,7 +522,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6156352002,
@@ -544,7 +544,7 @@
         }
       ],
       "id": 7979501002,
-      "updated_at": "2025-05-16T18:32:39-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100904",
       "title": "Director, Scaled Operations",
       "company_name": "Discord",
@@ -584,7 +584,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -607,7 +607,7 @@
         }
       ],
       "id": 7810816002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100762",
       "title": "Engineering Manager, Financial Platform",
       "company_name": "Discord",
@@ -647,7 +647,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6098922002,
@@ -669,7 +669,7 @@
         }
       ],
       "id": 7855982002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100814",
       "title": "Engineering Manager - Social SDK",
       "company_name": "Discord",
@@ -709,7 +709,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6149082002,
@@ -731,7 +731,7 @@
         }
       ],
       "id": 7964314002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100884",
       "title": "Head of Public Policy, Latin America",
       "company_name": "Discord",
@@ -764,7 +764,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -787,7 +787,7 @@
         }
       ],
       "id": 7982515002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100913",
       "title": "Product Manager, Core Product",
       "company_name": "Discord",
@@ -820,7 +820,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -843,7 +843,7 @@
         }
       ],
       "id": 7928060002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100854",
       "title": "Product Manager, Experimentation",
       "company_name": "Discord",
@@ -883,7 +883,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -906,7 +906,7 @@
         }
       ],
       "id": 7968678002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100888",
       "title": "Product Manager, Growth",
       "company_name": "Discord",
@@ -946,7 +946,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -969,7 +969,7 @@
         }
       ],
       "id": 7917031002,
-      "updated_at": "2025-05-15T18:33:26-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100843",
       "title": "Program Manager, Marketing",
       "company_name": "Discord",
@@ -1002,7 +1002,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6105366002,
@@ -1024,7 +1024,7 @@
         }
       ],
       "id": 7871254002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100821",
       "title": "Public Policy Advisor",
       "company_name": "Discord",
@@ -1064,7 +1064,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1087,7 +1087,7 @@
         }
       ],
       "id": 7972716002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100894",
       "title": "Sales Operations Manager",
       "company_name": "Discord",
@@ -1120,7 +1120,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1143,7 +1143,7 @@
         }
       ],
       "id": 7977997002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100900",
       "title": "Senior Administrative Business Partner, CBO",
       "company_name": "Discord",
@@ -1176,7 +1176,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6086880002,
@@ -1198,7 +1198,7 @@
         }
       ],
       "id": 7971022002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100777",
       "title": "Senior Copywriter, B2B",
       "company_name": "Discord",
@@ -1231,7 +1231,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6148690002,
@@ -1253,7 +1253,7 @@
         }
       ],
       "id": 7963308002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100877",
       "title": "Senior Counsel, Intellectual Property",
       "company_name": "Discord",
@@ -1286,7 +1286,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6119901002,
@@ -1308,7 +1308,7 @@
         }
       ],
       "id": 7899729002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100829",
       "title": "Senior Data Engineer",
       "company_name": "Discord",
@@ -1341,7 +1341,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6163217002,
@@ -1363,7 +1363,7 @@
         }
       ],
       "id": 7994912002,
-      "updated_at": "2025-05-14T18:18:23-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100926",
       "title": "Senior Design Program Manager",
       "company_name": "Discord",
@@ -1403,7 +1403,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1426,7 +1426,7 @@
         }
       ],
       "id": 7687712002,
-      "updated_at": "2025-05-13T14:41:56-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100693",
       "title": "Senior Developer Advocate",
       "company_name": "Discord",
@@ -1466,7 +1466,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1489,7 +1489,7 @@
         }
       ],
       "id": 7944061002,
-      "updated_at": "2025-05-16T17:08:47-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100869",
       "title": "Senior Engineering Manager - Database Infrastructure",
       "company_name": "Discord",
@@ -1522,7 +1522,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1545,7 +1545,7 @@
         }
       ],
       "id": 7989621002,
-      "updated_at": "2025-05-15T15:27:05-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100920",
       "title": "Senior Front-End Specialist, Ads",
       "company_name": "Discord",
@@ -1585,7 +1585,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -1608,7 +1608,7 @@
         }
       ],
       "id": 7967109002,
-      "updated_at": "2025-05-15T15:25:40-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100886",
       "title": "Senior Full-Stack Engineer, Ads",
       "company_name": "Discord",
@@ -1648,7 +1648,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6119588002,
@@ -1670,7 +1670,7 @@
         }
       ],
       "id": 7898977002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100828",
       "title": "Senior Lifecycle Marketing Manager",
       "company_name": "Discord",
@@ -1703,7 +1703,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6156126002,
@@ -1725,7 +1725,7 @@
         }
       ],
       "id": 7979061002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100902",
       "title": "Senior Litigation Counsel",
       "company_name": "Discord",
@@ -1765,7 +1765,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6078068002,
@@ -1787,7 +1787,7 @@
         }
       ],
       "id": 7807878002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100757",
       "title": "Senior Oracle Business Analyst",
       "company_name": "Discord",
@@ -1827,7 +1827,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6155621002,
@@ -1849,7 +1849,7 @@
         }
       ],
       "id": 7977942002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100898",
       "title": "Senior Product Marketing Manager, Game Communities and Servers",
       "company_name": "Discord",
@@ -1882,7 +1882,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6146034002,
@@ -1904,7 +1904,7 @@
         }
       ],
       "id": 7957326002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100875",
       "title": "Senior Regulatory Counsel",
       "company_name": "Discord",
@@ -1937,7 +1937,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6146034002,
@@ -1959,7 +1959,7 @@
         }
       ],
       "id": 7982522002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100875",
       "title": "Senior Regulatory Counsel",
       "company_name": "Discord",
@@ -1992,7 +1992,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2015,7 +2015,7 @@
         }
       ],
       "id": 7966411002,
-      "updated_at": "2025-05-14T20:01:32-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100885",
       "title": "Senior Software Engineer, Audio/Video",
       "company_name": "Discord",
@@ -2048,7 +2048,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6163548002,
@@ -2070,7 +2070,7 @@
         }
       ],
       "id": 7995650002,
-      "updated_at": "2025-05-14T11:02:36-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100928",
       "title": "Senior Software Engineer, Core Product",
       "company_name": "Discord",
@@ -2110,7 +2110,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2133,7 +2133,7 @@
         }
       ],
       "id": 7978053002,
-      "updated_at": "2025-05-12T18:28:19-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100899",
       "title": "Senior Software Engineer- Database Infrastructure",
       "company_name": "Discord",
@@ -2173,7 +2173,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2196,7 +2196,7 @@
         }
       ],
       "id": 7995339002,
-      "updated_at": "2025-05-19T12:25:27-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100927",
       "title": "Senior Software Engineer, Data Platform",
       "company_name": "Discord",
@@ -2236,7 +2236,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2259,7 +2259,7 @@
         }
       ],
       "id": 7946170002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100870",
       "title": "Senior Software Engineer, Design Systems ",
       "company_name": "Discord",
@@ -2299,7 +2299,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2322,7 +2322,7 @@
         }
       ],
       "id": 7979535002,
-      "updated_at": "2025-05-14T18:12:53-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100906",
       "title": "Senior Software Engineer - Desktop Platform",
       "company_name": "Discord",
@@ -2362,7 +2362,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2385,7 +2385,7 @@
         }
       ],
       "id": 7990185002,
-      "updated_at": "2025-05-15T15:27:57-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100922",
       "title": "Senior Software Engineer, Game Integrations",
       "company_name": "Discord",
@@ -2425,7 +2425,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2448,7 +2448,7 @@
         }
       ],
       "id": 7980369002,
-      "updated_at": "2025-05-12T15:43:05-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100907",
       "title": "Senior Software Engineer, Growth ",
       "company_name": "Discord",
@@ -2488,7 +2488,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2511,7 +2511,7 @@
         }
       ],
       "id": 7803984002,
-      "updated_at": "2025-05-14T17:47:41-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100753",
       "title": "Senior Staff Software Engineer, React Native (Performance & Quality)",
       "company_name": "Discord",
@@ -2544,7 +2544,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6085191002,
@@ -2566,7 +2566,7 @@
         }
       ],
       "id": 7824127002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100775",
       "title": "Senior Stock Plan Administrator",
       "company_name": "Discord",
@@ -2606,7 +2606,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2629,7 +2629,7 @@
         }
       ],
       "id": 7835247002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100790",
       "title": "Senior Technical Program Manager, Cost & Efficiency",
       "company_name": "Discord",
@@ -2669,7 +2669,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2692,7 +2692,7 @@
         }
       ],
       "id": 7980373002,
-      "updated_at": "2025-05-12T15:42:13-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100909",
       "title": "Software Engineer, Growth ",
       "company_name": "Discord",
@@ -2732,7 +2732,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2755,7 +2755,7 @@
         }
       ],
       "id": 7628793002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100660",
       "title": "Staff Product Designer, Player Experience",
       "company_name": "Discord",
@@ -2788,7 +2788,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2811,7 +2811,7 @@
         }
       ],
       "id": 7953473002,
-      "updated_at": "2025-05-14T17:46:47-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100874",
       "title": "Staff Software Engineer, Audio/Video Infrastructure",
       "company_name": "Discord",
@@ -2844,7 +2844,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2867,7 +2867,7 @@
         }
       ],
       "id": 7855519002,
-      "updated_at": "2025-05-16T13:44:14-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100813",
       "title": "Staff Software Engineer, Consumer Revenue ",
       "company_name": "Discord",
@@ -2907,7 +2907,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2930,7 +2930,7 @@
         }
       ],
       "id": 7761990002,
-      "updated_at": "2025-05-16T16:49:04-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100734",
       "title": "Staff Software Engineer, Data Platform",
       "company_name": "Discord",
@@ -2970,7 +2970,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "education": "education_optional",
@@ -2993,7 +2993,7 @@
         }
       ],
       "id": 7845336002,
-      "updated_at": "2025-05-14T17:48:17-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100799",
       "title": "Staff Software Engineer, Media Infrastructure",
       "company_name": "Discord",
@@ -3033,7 +3033,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6098161002,
@@ -3055,7 +3055,7 @@
         }
       ],
       "id": 7854326002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100812",
       "title": "Staff Software Engineer – UI/UX & Animations",
       "company_name": "Discord",
@@ -3095,7 +3095,7 @@
           "requires_processing_consent": false,
           "requires_retention_consent": false,
           "retention_period": null,
-          "demographic_data_consent_applies": false
+          "demographic_data_consent_applies": true
         }
       ],
       "internal_job_id": 6138157002,
@@ -3117,7 +3117,7 @@
         }
       ],
       "id": 7940788002,
-      "updated_at": "2025-05-12T12:10:37-04:00",
+      "updated_at": "2025-05-19T12:39:33-04:00",
       "requisition_id": "R-100863",
       "title": "Threat Operations Specialist, Child Safety",
       "company_name": "Discord",

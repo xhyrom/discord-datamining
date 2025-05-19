@@ -7,7 +7,7 @@
       "requires_processing_consent": false,
       "requires_retention_consent": false,
       "retention_period": null,
-      "demographic_data_consent_applies": false
+      "demographic_data_consent_applies": true
     }
   ],
   "education": "education_optional",
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7950420002,
-  "updated_at": "2025-05-12T12:10:37-04:00",
+  "updated_at": "2025-05-19T12:39:33-04:00",
   "requisition_id": "R-100871",
   "title": "Account Manager - Crossplatform Gaming",
   "company_name": "Discord",

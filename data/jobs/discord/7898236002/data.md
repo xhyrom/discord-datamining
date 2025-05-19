@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7898236002](https://discord.com/jobs/7898236002)
 
-**Updated At:** Mon, 12 May 2025 16:10:37 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're a group of Customer Experience professionals here at Discord, and we are looking for someone who shares our dedication to supporting others with extra care and problem-solving expertise! This teammate must possess exemplary empathy and unwavering patience as they directly support our amazing community. This includes timely assistance to users experiencing account-related issues, including login problems, password resets, and account recovery.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7977997002](https://discord.com/jobs/7977997002)
 
-**Updated At:** Mon, 12 May 2025 16:10:37 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.I’ve always loved smooth things. Put me in a room filled with satin, butter, and smooth jazz, and I may never come out. It’s only fitting that my life’s work would come down to being the person that ensures a business is running like a well-oiled machine. If this is your calling, then please read on! Discord is looking to hire a Senior Administrative Business Partner to support our Chief Business Officer. This role will require a high level of adaptability, but with the help of our Senior ABP Manager as your guide, we believe you will create order in the chaos.

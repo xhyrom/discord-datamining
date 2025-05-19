@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7928060002](https://discord.com/jobs/7928060002)
 
-**Updated At:** Mon, 12 May 2025 16:10:37 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As the Product Manager on Experimentation, you’ll drive the vision, strategy, and roadmap for Discord’s Experimentation Platform. You’ll lead the effort to build systems and tools that increase experimentation confidence and velocity, empowering teams across Discord to develop and ship products more quickly and with greater confidence.

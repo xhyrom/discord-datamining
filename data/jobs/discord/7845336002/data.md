@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7845336002](https://discord.com/jobs/7845336002)
 
-**Updated At:** Wed, 14 May 2025 21:48:17 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Media Infrastructure team at Discord is responsible for managing the storage, processing, and delivery of over 100PB of user-generated media across millions of users. As a Staff Software Engineer on the team, you will play a pivotal role in architecting and evolving our media infrastructure to be scalable, high-performance, and cost-effective.

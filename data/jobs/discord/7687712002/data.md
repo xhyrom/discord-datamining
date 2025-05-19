@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7687712002](https://discord.com/jobs/7687712002)
 
-**Updated At:** Tue, 13 May 2025 18:41:56 GMT
+**Updated At:** Mon, 19 May 2025 16:39:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We recently made it easier than ever for developers to build and distribute the next great game on Discord. We’re looking for a Senior Developer Advocate to help support, educate, and inspire our growing game developer community. You will build meaningful relationships with our community by engaging with their questions and ideas, by speaking at events and workshops, and by communicating their feedback to the rest of the team. 
