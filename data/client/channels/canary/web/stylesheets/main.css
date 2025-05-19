@@ -17190,11 +17190,13 @@ span.clanTag__5d473 {
   pointer-events: none;
   position: absolute;
   top: -16px;
-  z-index: 2;
+  z-index: 4;
 }
 .popover__2d0ab.visible__2d0ab,
-.popover__2d0ab:focus-within,
 .popover__2d0ab:hover {
+  opacity: 1;
+}
+.keyboard-mode .popover__2d0ab:focus-within {
   opacity: 1;
 }
 .reduce-motion .popover__2d0ab {
@@ -17228,14 +17230,12 @@ span.clanTag__5d473 {
   width: fit-content;
 }
 :not(.keyboard-mode).full-motion .popover__2d0ab.visible__2d0ab,
-:not(.keyboard-mode).full-motion .popover__2d0ab:focus-within,
 :not(.keyboard-mode).full-motion .popover__2d0ab:hover {
   animation: fadeIn__2d0ab 0.15s ease forwards;
   opacity: 0;
 }
 :not(.keyboard-mode).full-motion
   .popover__2d0ab.visible__2d0ab.expandable__2d0ab,
-:not(.keyboard-mode).full-motion .popover__2d0ab:focus-within.expandable__2d0ab,
 :not(.keyboard-mode).full-motion .popover__2d0ab:hover.expandable__2d0ab {
   animation-delay: 0.45s;
 }
@@ -60835,4 +60835,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ea3b8499919e27f8.css.map*/
+/*# sourceMappingURL=12633.235149c592ea4b5d.css.map*/
