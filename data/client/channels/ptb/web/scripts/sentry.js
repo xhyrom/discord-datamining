@@ -4923,6 +4923,7 @@
           (r.SECURE_FRAMES_TRANSITION = "secure_frames_transition"),
           (r.MLS_FAILURES = "mls_failures"),
           (r.AV_ERROR_REPORTED = "av_error_reported"),
+          (r.VIDEO_CALL_ENDED = "video_call_ended"),
           (r.VIDEO_SPINNER_SHOWN_V2 = "video_spinner_shown_v2"),
           (r.VIDEO_TOGGLED = "video_toggled"),
           (r.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED =
@@ -5109,6 +5110,8 @@
             "custom_status_randomizer_clicked"),
           (r.CUSTOM_STATUS_LABEL_CLICKED = "custom_status_label_clicked"),
           (r.CUSTOM_STATUS_TOOLBAR_CLICKED = "custom_status_toolbar_clicked"),
+          (r.ACTIVITY_STATUS_ICON_TOOLTIP_SHOWN =
+            "activity_status_icon_tooltip_shown"),
           (r.TEXT_COPIED = "text_copied"),
           (r.TEXT_SHARED = "text_shared"),
           (r.NAV_DRAWER_OPENED = "nav_drawer_opened"),
@@ -6727,7 +6730,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-16-c371a8ad704137299cf8f14078989e7fad4633e3-discord_web",
+              "2025-05-19-c6691d9150a6c0029db9920bbbeff9c72688131c-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6793,8 +6796,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "400453"),
-            o.YA("builtAt", String("1747442109710"));
+            o.YA("buildNumber", "400507"),
+            o.YA("builtAt", String("1747639112863"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8334,6 +8337,13 @@
                 [r.MIDNIGHT]: { raw: "PLUM_18", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_18", opacity: 1 },
               },
+              ICON_INVERT: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
+              },
               ICON_MUTED: {
                 category: "generic",
                 [r.DARK]: { raw: "PRIMARY_400", opacity: 1 },
@@ -9485,6 +9495,13 @@
                 [r.LIGHT]: { raw: "RED_500", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "RED_345", opacity: 1 },
                 [r.DARKER]: { raw: "RED_345", opacity: 1 },
+              },
+              TEXT_INVERT: {
+                category: "text",
+                [r.DARK]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_71", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_71", opacity: 1 },
               },
               TEXT_LINK: {
                 category: "generic",
@@ -16315,6 +16332,12 @@
             r.I.PLUM_18,
             r.I.PLUM_18,
           ],
+          "icon-invert": [
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
+          ],
           "icon-muted": [
             r.I.PRIMARY_400,
             r.I.PRIMARY_400,
@@ -17133,6 +17156,12 @@
             r.I.BRAND_360,
           ],
           "text-danger": [r.I.RED_345, r.I.RED_500, r.I.RED_345, r.I.RED_345],
+          "text-invert": [
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
+          ],
           "text-link": [r.I.BLUE_345, r.I.BLUE_430, r.I.BLUE_345, r.I.BLUE_345],
           "text-link-low-saturation": [
             r.I.BLUE_330,
@@ -46463,4 +46492,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bdc9ef2ac95d7fbb.js.map
+//# sourceMappingURL=sentry.4e9393c6b4928572.js.map

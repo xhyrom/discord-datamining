@@ -8074,6 +8074,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   position: absolute;
   right: 0;
   -webkit-app-region: no-drag;
+  pointer-events: none;
+}
+.volumeButtonSlider__2d263 > div {
+  overflow: hidden;
+  pointer-events: auto;
 }
 .volumeButtonSlider__2d263.sliderVisible__2d263 {
   display: initial;
@@ -11706,6 +11711,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .avatarWrapper__86ab2 .acronymText__86ab2 {
   font-size: 22px;
 }
+.emptyBody__86ab2 {
+  height: 8px;
+}
 .body__86ab2 {
   flex-direction: column;
   gap: 16px;
@@ -11733,7 +11741,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .buttonContainer__86ab2 {
   box-sizing: border-box;
-  padding: 4px 16px 16px;
+  padding: 0 16px 16px;
   width: 100%;
 }
 .container__80da8 {
@@ -32666,11 +32674,11 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   z-index: 1;
 }
 .labelToolbarHoverGap_ab8609 {
-  bottom: -32px;
-  height: 32px;
-  left: 0;
+  bottom: -34px;
+  height: 34px;
   position: absolute;
-  right: 0;
+  right: -5px;
+  width: 120px;
 }
 .labelToolbarVisible_ab8609 {
   cursor: pointer;
@@ -45018,6 +45026,7 @@ html.disable-forced-colors * {
   --header-primary: var(--primary-130);
   --header-secondary: var(--primary-330);
   --home-background: var(--primary-645);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-130);
   --icon-secondary: var(--primary-330);
@@ -45192,6 +45201,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-360);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--primary-360);
@@ -45755,6 +45765,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-645) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -46467,6 +46482,11 @@ html.disable-forced-colors * {
       var(--red-345) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -46786,6 +46806,7 @@ html.disable-forced-colors * {
   --header-primary: var(--primary-860);
   --header-secondary: var(--primary-500);
   --home-background: var(--primary-100);
+  --icon-invert: var(--neutral-1);
   --icon-muted: var(--primary-400);
   --icon-primary: var(--primary-860);
   --icon-secondary: var(--primary-500);
@@ -46960,6 +46981,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--white);
   --text-brand: var(--brand-500);
   --text-danger: var(--red-500);
+  --text-invert: var(--neutral-1);
   --text-link: var(--blue-430);
   --text-link-low-saturation: var(--blue-430);
   --text-low-contrast: var(--primary-460);
@@ -47522,6 +47544,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--primary-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -48238,6 +48265,11 @@ html.disable-forced-colors * {
       var(--red-500) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-430) 100%,
@@ -48563,6 +48595,7 @@ html.disable-forced-colors * {
   --header-primary: var(--plum-2);
   --header-secondary: var(--plum-8);
   --home-background: var(--plum-18);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--plum-12);
   --icon-primary: var(--plum-5);
   --icon-secondary: var(--plum-9);
@@ -48737,6 +48770,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-400);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--plum-12);
@@ -49299,6 +49333,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -50016,6 +50055,11 @@ html.disable-forced-colors * {
       var(--red-345) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
     --text-link: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -50339,6 +50383,7 @@ html.disable-forced-colors * {
   --header-primary: var(--plum-3);
   --header-secondary: var(--plum-9);
   --home-background: var(--plum-18);
+  --icon-invert: var(--neutral-71);
   --icon-muted: var(--plum-11);
   --icon-primary: var(--plum-4);
   --icon-secondary: var(--plum-9);
@@ -50513,6 +50558,7 @@ html.disable-forced-colors * {
   --status-warning-text: var(--black);
   --text-brand: var(--brand-360);
   --text-danger: var(--red-345);
+  --text-invert: var(--neutral-71);
   --text-link: var(--blue-345);
   --text-link-low-saturation: var(--blue-330);
   --text-low-contrast: var(--plum-11);
@@ -51075,6 +51121,11 @@ html.disable-forced-colors * {
       in oklab,
       var(--plum-18) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --icon-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --icon-muted: color-mix(
       in oklab,
@@ -51790,6 +51841,11 @@ html.disable-forced-colors * {
     --text-danger: color-mix(
       in oklab,
       var(--red-345) 100%,
+      var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --text-invert: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
     --text-link: color-mix(
@@ -60704,7 +60760,7 @@ img[alt] {
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
   --custom-rtc-account-height: 44px;
-  --custom-app-top-bar-height: calc(24px + var(--space-sm));
+  --custom-app-top-bar-height: calc(24px + var(--space-8));
   --custom-channel-header-height: calc(
     var(--guildbar-avatar-size) + var(--space-xs)
   );
@@ -60779,4 +60835,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e12d127694924e3f.css.map*/
+/*# sourceMappingURL=12633.ea3b8499919e27f8.css.map*/
