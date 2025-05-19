@@ -28,6 +28,34 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Mission: Impossible The Final Reckoning<br /></strong
+  ><strong>Quest Name: Mission: Impossible Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>Mission: Impossible The Final Reckoning </strong>in Discord to receive
+  a <strong>Mission: Impossible Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the <strong>United States</strong> on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Mission: Impossible Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>May 19, 2025 </strong>until<strong>
+    May 25, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 25, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Mission: Impossible Avatar Decoration</strong> is a limited-time
+  Avatar Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 25, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Official Trailer 2<br /></strong
   ><strong>Quest Name: DOOM: The Dark Ages Quest<br /></strong
   ><strong>Offer Details: </strong>Watch
