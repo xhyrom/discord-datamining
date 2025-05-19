@@ -105,10 +105,7 @@
   },
   "JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE": {
     "url": "/activity-instances/:param/embedded-activities/:param/join",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "USER_ACTIVITY_STATISTICS": {
     "url": "/users/@me/activities/statistics/applications",
