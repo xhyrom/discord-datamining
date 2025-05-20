@@ -30014,7 +30014,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: 100%;
 }
 .promotionalBanner__78e61 {
-  background: linear-gradient(78.98deg, #ff9090, #f30ed8);
   height: 230px;
   width: 100%;
 }
@@ -36012,6 +36011,9 @@ img.thumbnail__0f2e8 {
 }
 .upsellButtonWrapper__5997d {
   flex: 1;
+}
+.user-profile-modal-v2 .upsellButtonWrapper__5997d {
+  flex: unset;
 }
 .upsellButton__5997d {
   width: 100%;
@@ -60686,4 +60688,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cf8fdd405a8cdc59.css.map*/
+/*# sourceMappingURL=12633.dea3ce4a7769698e.css.map*/
