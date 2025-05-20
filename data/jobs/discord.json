@@ -584,68 +584,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7855982002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6098922002,
-      "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7855982002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
-      "requisition_id": "R-100814",
-      "title": "Engineering Manager - Social SDK",
-      "company_name": "Discord",
-      "first_published": "2025-02-24T19:16:14-05:00",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Discord is looking for a highly technical, creative, hands-on, and empathetic Engineering Manager for our Social Layer of Gaming team. This team is building tools for game developers to harness the power of Discord and put that right into their games. We believe that gaming is better when playing with your friends and aim to foster better and deeper relationships through that. This is also reflected in how we work! Our engineering culture believes that great teams are built through collaboration and trust. Come and join us!&lt;/p&gt;\n&lt;p&gt;We’ve built a pretty great SDK and have a lot more work to do! We’re expanding its functionality, bringing it to more platforms, and adding support for more engines. This work is a key endeavor for Discord and is nestled deeply into our company strategy.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Build highly-engaged teams by hiring, coaching, and instilling a sense of ownership and impact in your engineers.&lt;/li&gt;\n&lt;li&gt;Work cross-functionally with other engineering teams, Product, Design, Global Partnerships, and Marketing to define your team’s vision and roadmap by understanding the needs of Game Developers and their players.&lt;/li&gt;\n&lt;li&gt;Collaborate on designing scalable technical solutions, and help to set the technical strategy of our SDK’s architecture.&lt;/li&gt;\n&lt;li&gt;Collaborate with your engineers to continually raise the bar and ensure your team delivers extraordinary results at the high technical level we set.&lt;/li&gt;\n&lt;li&gt;Find the right degree of process that makes your team productive and reach greater heights.&lt;/li&gt;\n&lt;li&gt;Mentor and guide the careers of the engineers through coaching and finding opportunities that support their technical skills and goals.&lt;/li&gt;\n&lt;li&gt;Partner with your senior manager on strategic planning and to improve the Engineering organization and uphold our workplace philosophy.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience as a Software Engineer.&lt;/li&gt;\n&lt;li&gt;2+ years of experience as an Engineering Manager.&lt;/li&gt;\n&lt;li&gt;Experience building C++ SDKs either as an engineer or manager.&lt;/li&gt;\n&lt;li&gt;Strong communication skills and the ability to work well cross-functionally. You have opinions but can discuss them generously with other people with all kinds of backgrounds.&lt;/li&gt;\n&lt;li&gt;Experience building software solutions as an engineer or manager that included web APIS&#39;s and/or services. This role will focus on our C++ SDK, but touches other pieces of our infrastructure, and you’ll need to navigate that.&lt;/li&gt;\n&lt;li&gt;Comfortability with ambiguity and are excited about working collaboratively to figure out solutions to complex problems, and then executing on them.&lt;/li&gt;\n&lt;li&gt;Motivation to help your team members succeed and experience growing engineers.&lt;/li&gt;\n&lt;li&gt;A holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have some experience with game development. Bonus bonus points if you have experience with Unreal or Unity.&lt;/li&gt;\n&lt;li&gt;You are a Discord user, and understand the core features and flow of Discord communications&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $248,000 to $279,000&amp;nbsp;+ equity + benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4107920002,
-          "name": "Developers",
-          "child_ids": [],
-          "parent_id": 4094266002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7964314002",
       "data_compliance": [
         {
@@ -3089,6 +3027,6 @@
     }
   ],
   "meta": {
-    "total": 52
+    "total": 51
   }
 }
