@@ -1,151 +1,147 @@
-<h3 id="h_01HFFJ28PJCJBNAFVKRZVBR4YE">
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >This article covers Go Live and Screen Share in DMs and voice channels on
-    the desktop client.</span
-  >
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >For more information on how to start a video call check out our </span
+<div class="book-box">
+  <strong>Want to learn more?</strong><br /><span
+    style="color: #434343"
+    data-darkreader-inline-color=""
+    >This article covers How to Screen Share and Go Live on Discord in DMs and
+    voice channels on the desktop client. For more information on how to start a
+    video call check out our </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360041721052"
     target="_blank"
     rel="noopener noreferrer"
     >Video Calls article</a
-  ><span style="color: #104c32" data-darkreader-inline-color=""
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >. If you have questions about screen sharing on a mobile device, please
     review our </span
-  ><a
-    href="https://support.discord.com/hc/articles/360058862134"
-    target="_blank"
-    rel="noopener noreferrer"
-    >[Mobile] Screenshare FAQ article.</a
-  >
-</h3>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJN3P338W5BPT2MV63"
-      >What is Go Live and Screen Share?</a
-    > 
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF3AW5WS7TNZNCPKN"
-          >How do I share my screen with Go Live?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
-      >How do I share my game?</a
-    > 
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJTSNBKEPFGMSM8CNJ"
-          >Sharing your Game using Overlay</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0KS0XE3DCV4EWDA4"
-          >How do I share my screen in a Direct Message?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0F9PHJ9SKK6DWC2E"
-      >Stream Quality Settings</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0M35H8PM3PMFYWPE"
-          >Stream Quality Settings for Go Live</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF9VT9WJ853CA4762"
-          >Stream Quality Settings for Direct Messages</a
-        > 
-        <ul>
-          <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV2A3A3M3YER8CH3Y"
-              >View Modes</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJS00NX4CMYT1R1V30"
-              >Window Modes</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJK46RNAZ8JPEF2G0J"
-              >Audio Sharing</a
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV9BYYQKW4ACP1W26"
-      >Go Live: Server Permissions</a
-    >
-  </li>
-  <li>
-    <a href="#h_01J80B8BC0DJ9J6WEVKM0FGP89"
-      >How to Enable or Disable Stream Preview</a
-    >
-    <ul>
-      <li><a href="#h_01J80B8BC05NNHRCJW1CDEY39D">Desktop/Browser</a></li>
-      <li><a href="#h_01J80B8BC0YFPX0MF495DJ5Z9E">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJH77AAZ7HR0GEN6M3"
-      >How do I watch a Stream?</a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJVPX87HMESR599JHH"
-          >Troubleshooting for a Go Live Viewer</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ2BY2WHE38TTRXQ3P"
-          >Go Live: Pop Out</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+  ><a href="https://support.discord.com/hc/articles/360058862134"
+    >[Mobile] Screenshare FAQ article</a
+  >.
+</div>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJN3P338W5BPT2MV63"
+        >What is Go Live and Screen Share?</a
+      > 
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF3AW5WS7TNZNCPKN"
+            >How to Stream in a Discord Channel</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJAY9AHGRQ85XRSF8G"
+        >How do I Screen Share my Game on Discord?</a
+      > 
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJTSNBKEPFGMSM8CNJ"
+            >Screen Share Your Game Using Overlay</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0KS0XE3DCV4EWDA4"
+            >How do I screen share in a Direct Message?</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0F9PHJ9SKK6DWC2E"
+        >Stream Quality Settings</a
+      >
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ0M35H8PM3PMFYWPE"
+            >Stream Quality Settings for Go Live</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJF9VT9WJ853CA4762"
+            >Screen Share Stream Quality Settings For Direct Messages </a
+          > 
+          <ul>
+            <li>
+              <a
+                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV2A3A3M3YER8CH3Y"
+                >View Modes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJS00NX4CMYT1R1V30"
+                >Window Modes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJK46RNAZ8JPEF2G0J"
+                >Audio Sharing</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJV9BYYQKW4ACP1W26"
+        >Go Live: Screen Share Server Permissions</a
+      >
+    </li>
+    <li>
+      <a href="#h_01J80B8BC0DJ9J6WEVKM0FGP89"
+        >How to Enable or Disable Screen Share Stream Preview</a
+      >
+      <ul>
+        <li><a href="#h_01J80B8BC05NNHRCJW1CDEY39D">Desktop/Browser</a></li>
+        <li><a href="#h_01J80B8BC0YFPX0MF495DJ5Z9E">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJH77AAZ7HR0GEN6M3"
+        >How do I watch a Stream?</a
+      >
+      <ul>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJVPX87HMESR599JHH"
+            >Troubleshooting for a Go Live Viewer</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151#h_01HFFJ28PJ2BY2WHE38TTRXQ3P"
+            >Go Live: Pop Out</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HFFJ28PJN3P338W5BPT2MV63">What is Go Live and Screen Share?</h1>
 <p>
   <strong>Go Live</strong> and <strong>Screen Share</strong> allows you to
-  screen share any application window, or your entire screen in a server or
-  voice call. Up to 50 people can share their video or screen at a time in a
-  voice channel.
+  screen share any application window, or your entire screen in a Discord server
+  or voice call. Up to 50 people can share their video or screen at a time in a
+  Discord voice chat.
 </p>
-<h2 id="h_01HFFJ28PJF3AW5WS7TNZNCPKN">
-  How do I Share my Screen with Go Live?
-</h2>
+<h2 id="h_01HFFJ28PJF3AW5WS7TNZNCPKN">How to Stream in a Discord Channel</h2>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Here is how to Screen Share and Go Live in a Discord server:</span
@@ -173,30 +169,33 @@
     alt="screen_share.gif"
   />
 </p>
-<h3 id="h_01HFFJ28PJT8QWQQXA55W29PFD">
-  <span style="color: #104c32" data-darkreader-inline-color=""
-    >- At this time, audio sharing is available when sharing an application
-    window on Windows 10 or MacOS version 10.13 or later. You can enable MacOS
-    audio sharing following this guide </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/1500006741102"
+<h4 id="h_01JVDFW1RJ8BPPR6WCR8ASCP14" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >How to stream in a Discord voice channel</span
+  >
+</h4>
+<div class="info-box">
+  <strong>Info:</strong> Currently audio can only be captured by the Windows
+  desktop,
+  <a
+    href="https://support.discord.com/hc/en-us/articles/1500006741102-macOS-Screen-Share-with-Audio"
     target="_blank"
     rel="noopener noreferrer"
-    >here</a
-  ><span style="color: #104c32" data-darkreader-inline-color="">. <br /></span
-  ><span style="color: #104c32" data-darkreader-inline-color=""
-    >- Unfortunately, audio sharing is unavailable on Linux.</span
-  >
-</h3>
-<h1 id="h_01HFFJ28PJAY9AHGRQ85XRSF8G">How do I Share my Game?</h1>
+    >MacOS desktop</a
+  >, Chrome browser, and mobile clients. Unfortunately, audio sharing is
+  unavailable on Linux.
+</div>
+<h1 id="h_01HFFJ28PJAY9AHGRQ85XRSF8G">
+  How do I Screen Share my Game on Discord?
+</h1>
 <p>
   To share your game it needs to be recognized by our built-in game detection
   system. 
 </p>
-<h3 id="h_01HFFJ28PJQ6A2QYCFEQGGBYQH">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If the game does not appear, try manually adding your game by going to </span
-  ><strong
+<div class="tip-box">
+  <strong>Tip:</strong> If the game does not appear, try manually adding your
+  game by going to
+  <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
       >User Settings</span
     ></strong
@@ -210,13 +209,13 @@
     ><span style="color: #434343" data-darkreader-inline-color=""
       >Add it</span
     ></strong
-  ><span style="color: #434343" data-darkreader-inline-color="">.<br /></span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Unfortunately, if your game is not recognized by Game Detection, or through
-    the process of manually adding it, then you will not be able to stream the
-    game.</span
-  >
-</h3>
+  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+</div>
+<div class="info-box">
+  <strong>Info:</strong> Unfortunately, if your game is not recognized by Game
+  Detection, or through the process of manually adding it, then you will not be
+  able to stream the game.
+</div>
 <p><strong>Option 1</strong></p>
 <p>
   1. Join a voice channel in your server that you have permissions to screen
@@ -238,6 +237,11 @@
     height="351"
   />
 </p>
+<h4 id="h_01JVDFWCWMMHEZESVT5FW607TD" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Screen sharing a game through Discord</span
+  >
+</h4>
 <p><strong>Option 2</strong></p>
 <p>
   1. While in a Voice Channel with the game you want to stream open tap on the
@@ -251,10 +255,15 @@
       height="315"
   /></span>
 </p>
+<h4 id="h_01JVDG1FNJ5KM07WK896EZB4PM" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Stream icon
+  </span>
+</h4>
 <p>
   2. Here you can pick the Voice Channel you want to stream to (if you’re not
-  already in one) and change any of the stream settings (quality and framerate)
-  and tap on <strong>Go Live</strong> to stream
+  already in one), and change any of the stream settings (quality and framerate)
+  and tap on <strong>Go Live</strong> to stream.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -263,6 +272,11 @@
     height="351"
   />
 </p>
+<h4 id="h_01JVDG33WVV0N2GEC7SGRKJCS8" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Pick the voice channel you want to stream in</span
+  >
+</h4>
 <p>
   You should see a small Picture-in-Picture (PiP) window of the game you're
   sharing so you can view how it looks. Hovering over the PiP will give you
@@ -276,13 +290,18 @@
       height="352"
   /></span>
 </p>
-<h3 id="h_01HFFJ28PJTEEAZZ85JEJ53G5S">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >The PiP window will be automatically paused once you have the game in
-    focus.</span
+<h4 id="h_01JVDG3FCGPQM6TY02YT8HNGPE" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Picture-in-Picture (PiP) window</span
+    ></span
   >
-</h3>
-<h2 id="h_01HFFJ28PJTSNBKEPFGMSM8CNJ">Sharing Your Game Using Overlay</h2>
+</h4>
+<div class="tip-box">
+  <strong>Tip:</strong> The PiP window will be automatically paused once you
+  have the game in focus.
+</div>
+<h2 id="h_01HFFJ28PJTSNBKEPFGMSM8CNJ">Screen Share Your Game Using Overlay</h2>
 <p>You can also share your game through the Discord overlay.</p>
 <p>
   1. While your game is open, toggle your Discord overlay by tapping on the hot
@@ -301,6 +320,13 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JVDG4HYJKR01FW796WT4TS55" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Screen sharing through the Discord overlay</span
+    ></span
+  >
+</h4>
 <p>
   If someone is watching your stream, you’ll see a little eyeball icon 👁 next
   to their name in the overlay.
@@ -313,8 +339,15 @@
       height="239"
   /></span>
 </p>
+<h4 id="h_01JVDG4SPP1Z5H9BRJRZVRS69N" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Eyeball icon</span
+    ></span
+  >
+</h4>
 <h2 id="h_01HFFJ28PJ0KS0XE3DCV4EWDA4">
-  How do I share my screen in a Direct Message? 
+  How do I screen share in a Direct Message?
 </h2>
 <p>
   To share your screen in a Direct Message (DM), you'll want to start a call
@@ -329,6 +362,13 @@
       height="39"
   /></span>
 </p>
+<h4 id="h_01JVDG50D27GH4K102BV21JR7N" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Screen share through a direct message</span
+    ></span
+  >
+</h4>
 <p>
   1. Tap on the <strong>Share Your Screen</strong> icon to start streaming in a
   DM.
@@ -350,15 +390,22 @@
       height="351"
   /></span>
 </p>
-<h3 id="h_01HFFJ28PJQ6K18R8NQ0JMC59J">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you want to swap from one app window to another, you’ll be able to
-    easily swap by selecting the "Change Window" option!</span
+<h4 id="h_01JVDG5AVYPRA355F2K3ZPFWJ8" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Screen sharing through a direct message</span
+    ></span
   >
-</h3>
+</h4>
+<div class="tip-box">
+  <strong>Tip:</strong> Tip: If you want to swap from one app window to another,
+  you’ll be able to easily swap by selecting the "Change Window" option!
+</div>
 <h1 id="h_01HFFJ28PJ0F9PHJ9SKK6DWC2E">Stream Quality Settings</h1>
-<h3 id="h_01HFFJ28PJVT5Z43MHX560Q0B7">
-  <span style="color: #434343" data-darkreader-inline-color=""
+<div class="tip-box">
+  <strong>Info:</strong><br /><span
+    style="color: #434343"
+    data-darkreader-inline-color=""
     >- All users can stream up to 720p/30fps. <br />- </span
   ><span style="color: #434343" data-darkreader-inline-color=""
     >Nitro Classic subscribers have access to 1080p/60fps. <br />- </span
@@ -372,7 +419,7 @@
     >
     subscribers can go all the way up to 4k/60fps.</span
   >
-</h3>
+</div>
 <p>
   The frame rate and resolution of your stream can be adjusted from multiple
   different places.
@@ -390,12 +437,17 @@
       height="569"
   /></span>
 </p>
-<h3 id="h_01HFFJ28PJX2VTDYHRVM3AZJH8">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >When streaming through browser, you can not adjust the stream’s
-    quality.</span
+<h4 id="h_01JVDG87GEE2Q52P9ABMGMMM7P" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Stream quality settings</span
+    ></span
   >
-</h3>
+</h4>
+<div class="tip-box">
+  <strong>Tip:</strong> When streaming through browser, you can not adjust the
+  stream’s quality.
+</div>
 <h2 id="h_01HFFJ28PJ0M35H8PM3PMFYWPE">Stream Quality Settings For Go Live</h2>
 <p>While streaming, you can adjust the stream quality at any time. </p>
 <p>
@@ -412,8 +464,15 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JVDG9CGKMAQPMD8AFNX0TF3A" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >How to change stream quality settings while live</span
+    ></span
+  >
+</h4>
 <h2 id="h_01HFFJ28PJF9VT9WJ853CA4762">
-  Stream Quality Settings For Direct Messages 
+  Screen Share Stream Quality Settings For Direct Messages
 </h2>
 <p>
   Here is how to edit your stream quality while streaming through a Direct
@@ -433,6 +492,13 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JVDG9N0S80JQDRC7A53M3S40" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Screen share quality settings while in a direct message</span
+    ></span
+  >
+</h4>
 <h2 id="h_01HFFJ28PJV2A3A3M3YER8CH3Y">View Modes</h2>
 <p>
   <strong
@@ -461,6 +527,13 @@
       height="336"
   /></span>
 </p>
+<h4 id="h_01JVDG9XJE3SCC905A3R78YVTA" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Grid view</span
+    ></span
+  >
+</h4>
 <p>
   <img
     src="https://support.discord.com/hc/article_attachments/19155525693847"
@@ -519,6 +592,9 @@
       height="405"
   /></strong>
 </p>
+<h4 id="h_01JVDGA64X7EN9PA4CCW2DS73M" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color="">Focus view</span>
+</h4>
 <h2 id="h_01HFFJ28PJS00NX4CMYT1R1V30">Window Modes</h2>
 <p>
   <img
@@ -552,10 +628,10 @@
   maximize the video size on your screen.
 </p>
 <h2 id="h_01HFFJ28PJK46RNAZ8JPEF2G0J">Audio Sharing</h2>
-<h3 id="h_01HFFJ28PJSPG8947AGFC161D4">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: Currently audio can only be captured by the Windows desktop, </span
-  ><a href="https://support.discord.com/hc/en-us/articles/1500006741102"
+<div class="info-box">
+  <strong>Info:</strong> Currently audio can only be captured by the Windows
+  desktop,
+  <a href="https://support.discord.com/hc/en-us/articles/1500006741102"
     ><span
       class="wysiwyg-underline"
       style="color: #1155cc"
@@ -564,16 +640,16 @@
     ></a
   ><span style="color: #434343" data-darkreader-inline-color=""
     >, Chrome browser, and mobile clients. You cannot share your application's
-    audio on other browsers or Linux. </span
+    audio on other browsers or Linux.</span
   >
-</h3>
-<h1 id="h_01HFFJ28PJV9BYYQKW4ACP1W26">Go Live: Server Permissions</h1>
-<h3 id="h_01HFFJ28PJ8BP7NJ5TGET2PXFM">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >The ability to share your screen in a voice channel is enabled by
-    default.  </span
-  >
-</h3>
+</div>
+<h1 id="h_01HFFJ28PJV9BYYQKW4ACP1W26">
+  Go Live: Screen Share Server Permissions
+</h1>
+<div class="info-box">
+  <strong>Info:</strong> The ability to share your screen in a voice channel is
+  enabled by default.
+</div>
 <p>
   The ability to Screen Share on a channel is locked behind the
   <strong>Video </strong>permission. If you are the server owner or have
@@ -598,6 +674,11 @@
     height="82"
   />
 </p>
+<h4 id="h_01JVDGCWJCY9BZ3VQW5W82E8VW" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Video permissions</span
+  >
+</h4>
 <p><strong>For a Specific Channel </strong></p>
 <p>
   1. You can also customize this permission on the channel level by
@@ -626,8 +707,13 @@
     height="96"
   />
 </p>
+<h4 id="h_01JVDGD2XENHBGK67FE48T5E9E" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Video permissions for a specific channel</span
+  >
+</h4>
 <h1 id="h_01J80B8BC0DJ9J6WEVKM0FGP89">
-  How to Enable or Disable Stream Preview
+  How to Enable or Disable Screen Share Stream Preview
 </h1>
 <p>
   If you do not want other members of the server to be able to see a preview of
@@ -664,6 +750,13 @@
       height="392"
   /></span>
 </p>
+<h4 id="h_01JVDGDA927FRGRN1F8NG2NWK8" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Voice &amp; Video tab</span
+    ></span
+  >
+</h4>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >2. Scroll down until you see </span
@@ -685,12 +778,17 @@
     height="92"
   />
 </p>
+<h4 id="h_01JVDGDGT7A9JSRRFQWWSMMBXZ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Stream preview setting</span
+  >
+</h4>
 <p><strong>Option 2</strong></p>
-<h3 id="h_01J80BSKCNGB7KTMPC93TS7F76" class="tip-box">
-  This setting is per-stream and will default to your global setting. If you
-  want to make a different choice than your global setting you will have to
-  change this setting each time.
-</h3>
+<div class="info-box">
+  <strong>Info:</strong> This setting is per-stream and will default to your
+  global setting. If you want to make a different choice than your global
+  setting you will have to change this setting each time.
+</div>
 <p>
   When you start your screen share, you’ll see an option that says
   <strong>Hide stream preview</strong>, which controls whether users will or
@@ -705,6 +803,11 @@
     height="809"
   />
 </p>
+<h4 id="h_01JVDGEWZJWFNNSZVT0Y83QPRP" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Stream preview check box</span
+  >
+</h4>
 <h2 id="h_01J80B8BC0YFPX0MF495DJ5Z9E">Mobile</h2>
 <p>
   There is only one option for disabling or enabling this setting on mobile.
@@ -724,6 +827,11 @@
     height="758"
   />
 </p>
+<h4 id="h_01JVDGF8GAKSPDBX9DYRN48G90" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >User Settings on mobile</span
+  >
+</h4>
 <p>2. Tap on <strong>Voice</strong>. </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -732,7 +840,12 @@
     height="710"
   />
 </p>
-<p>
+<h4 id="h_01JVDGFJQG8V4BZH5NZZV3KABD" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Voice Activity tab on mobile</span
+  >
+</h4>
+<p class="wysiwyg-text-align-center">
   3. Then scroll down until you see <strong>Stream Previews</strong>. Here you
   can toggle the setting to enable or disable it.
 </p>
@@ -740,13 +853,18 @@
   <li>Check mark means the setting is enabled</li>
   <li>X means the setting is disabled</li>
 </ul>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/26432317575319"
     width="624"
     height="241"
   />
 </p>
+<h4 id="h_01JVDGFZ77A4K6J7JGRGNQF6A8" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Stream previews setting on mobile</span
+  >
+</h4>
 <p>
   4. If enabled, the next time you screen share to Discord on your mobile device
   the stream preview will be disabled.
@@ -767,6 +885,11 @@
     height="100"
   />
 </p>
+<h4 id="h_01JVDGG60HADN20KSHW2HN29AY" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Live (Go Live) badge</span
+  >
+</h4>
 <p>
   1. Check any voice channels for someone with a Go Live icon and join the voice
   channel with them.
@@ -788,19 +911,24 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JVDGGDMVC6VTWRECYAGMTTMQ" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >How to watch a stream</span
+    ></span
+  >
+</h4>
 <p>
   If you just want to chat, you can join a voice channel as you normally would
   without spectating the stream. Additionally, Go Live streams have a maximum of
   50 concurrent viewers (50 viewers, plus the broadcaster). 
 </p>
 <h2 id="h_01HFFJ28PJVPX87HMESR599JHH">Troubleshooting for a Go Live Viewer</h2>
-<h3 id="h_01HFFJ28PJ6XMK6XRRXJJB2XPC">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Joining another voice channel will disconnect you from the Go Live session
-    and the stream will disappear! You can only view one stream, within one
-    voice channel at a time.</span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> Joining another voice channel will disconnect you from
+  the Go Live session and the stream will disappear! You can only view one
+  stream, within one voice channel at a time.
+</div>
 <p><strong>No Audio</strong></p>
 <p>
   If you’re not hearing any audio while watching a stream and you’ve already
@@ -826,25 +954,24 @@
     height="212"
   />
 </p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Stream volume control</span
+  >
+</p>
 <p><strong>Stream is Lagging</strong></p>
 <p>
   If the stream you are watching is lagging, try asking the person streaming if
   they’re able to adjust any of their <strong>Stream Quality </strong>settings
   to see if that helps.
 </p>
-<h3 id="h_01HFFJ28PJJHDJQ70XM28K4X3Z">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you’re still having any issues while viewing a stream, please reach out
-    to our support team here: </span
-  ><a href="https://dis.gd/contact"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >https://dis.gd/contact</span
-    ></a
+<div class="form-box">
+  <strong>Contact Us:</strong>If you’re still having any issues while viewing a
+  stream, please reach out to our support team here:
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >https://dis.gd/contact</a
   >
-</h3>
+</div>
 <h2 id="h_01HFFJ28PJ2BY2WHE38TTRXQ3P">Go Live: Pop Out</h2>
 <p>
   We also included a <strong>Pop Out</strong> feature to suit your browsing
@@ -860,6 +987,13 @@
       height="82"
   /></span>
 </p>
+<h4 id="h_01JVDGK3MDQQVSKYMPF2RV91B2" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Pop Out icon</span
+    ></span
+  >
+</h4>
 <p>
   The <strong>Pop Out</strong> window can be resized to whatever size you’d like
   it to be.
@@ -871,6 +1005,11 @@
     height="419"
   />
 </p>
+<h4 id="h_01JVDGKE7X8PBWDYCHTYJYHTHE" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Go Live pop out window</span
+  >
+</h4>
 <p>
   If you want to pin the <strong>Pop Out</strong> window so that it stays above
   all other windows, you can use the <strong>Stay On Top</strong> button. To
@@ -884,19 +1023,24 @@
       height="511"
   /></span>
 </p>
-<h3 id="h_01HFFJ28PJ4N450QW4FBPRZTRW">
+<h4 id="h_01JVDGKR7MJQ1YYAX7FNE0PQZK" class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
-    >We hope you enjoy Go Live - Screen Share and if you have any suggestions on
-    how to improve the feature, please share your ideas here: </span
-  ><a href="https://dis.gd/feedback" target="_blank" rel="noopener noreferrer"
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Pin icon</span
+    ></span
+  >
+</h4>
+<div class="info-box">
+  <strong>Info:</strong> We hope you enjoy Discord streaming and if you have any
+  suggestions on how to improve the feature, please share your ideas here:
+  <a href="https://dis.gd/feedback" target="_blank" rel="noopener noreferrer"
     >https://dis.gd/feedback</a
   ><span style="color: #2e3338" data-darkreader-inline-color=""> </span>
-</h3>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you have any questions or run into any issues, please make sure to hit
-    up our support team here: </span
-  ><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+</div>
+<div class="form-box">
+  <strong>Contact Us:</strong>If you have any questions or run into any issues,
+  please make sure to hit up our support team here:
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
     >https://dis.gd/contact</a
   >
-</p>
+</div>
