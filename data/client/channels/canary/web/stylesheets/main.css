@@ -29633,135 +29633,6 @@ html:not(.visual-refresh) .root_e5f3a9 {
   flex: 1;
   place-content: center;
 }
-.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: var(--__lottieIconColor, var(--interactive-normal));
-}
-.lottieIcon__5eb9b svg {
-  transform: none !important;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: currentColor;
-}
-.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
-  stroke: currentColor;
-}
-.clickable_a3e8db {
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 36px;
-  pointer-events: all;
-}
-.disabled_a3e8db {
-  cursor: none;
-  pointer-events: none;
-}
-.container_a3e8db {
-  align-items: center;
-  border: 1px solid var(--border-faint, hsla(240, 4%, 61%, 0.04));
-  border-radius: var(--radius-sm);
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-flex;
-  flex-shrink: 0;
-  height: 36px;
-  justify-content: flex-end;
-  opacity: 1 !important;
-  padding: 8px 12px;
-  pointer-events: all;
-  position: relative;
-}
-.container_a3e8db.disabled_a3e8db {
-  cursor: none;
-  pointer-events: none;
-}
-.orbsLottieContainer_a3e8db {
-  height: 60px;
-  overflow: visible;
-  position: relative;
-  width: 20px;
-}
-.orbsLottie_a3e8db {
-  position: absolute;
-  right: -20px;
-}
-@keyframes spin_a3e8db {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-.full-motion .orbIconloading_a3e8db {
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-name: spin_a3e8db;
-  animation-timing-function: linear;
-}
-.containerLoading_a3e8db {
-  gap: 0;
-}
-.counterLoading_a3e8db {
-  visibility: hidden;
-}
-.visual-refresh .container_a3e8db.default_a3e8db {
-  background-color: var(--background-mod-subtle);
-}
-.visual-refresh .container_a3e8db.highlighted_a3e8db {
-  background-color: var(--background-mod-normal);
-}
-.visual-refresh .container_a3e8db.selected_a3e8db {
-  background-color: var(--background-mod-normal);
-}
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.default_a3e8db {
-  background-color: var(--modal-background);
-}
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.highlighted_a3e8db {
-  background-color: var(--modal-background);
-}
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.selected_a3e8db {
-  background-color: var(--modal-background);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.default_a3e8db {
-  background-color: var(--primary-100);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.highlighted_a3e8db {
-  background-color: var(--primary-130);
-}
-html:not(.visual-refresh).theme-light .container_a3e8db.selected_a3e8db {
-  background-color: var(--primary-130);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.default_a3e8db {
-  background: var(--primary-700);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.highlighted_a3e8db {
-  background: var(--primary-630);
-}
-html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
-  background: var(--primary-630);
-}
-.notificationBadge_a3e8db {
-  position: absolute;
-  right: -4.5px;
-}
-.balanceCounterMargin__98f64 {
-  margin-left: 4px;
-}
-.balanceCounterText__98f64 {
-  color: var(--header-primary);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-align: right;
-}
-.full-motion .balanceCounterText__98f64 {
-  transition:
-    all 0.4s ease-out,
-    opacity 0.4s ease-in;
-}
 .banner__9ed41 {
   height: 100%;
   width: 100%;
@@ -31480,6 +31351,21 @@ div.modalOverrideBody__34eac {
 }
 .enable-forced-colors .spriteGreyscale__04eed {
   background-color: ButtonText;
+}
+.lottieIconColors__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIconColors__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: var(--__lottieIconColor, var(--interactive-normal));
+}
+.lottieIcon__5eb9b svg {
+  transform: none !important;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+  fill: currentColor;
+}
+.enable-forced-colors .lottieIcon__5eb9b :not(defs *)[stroke][stroke-opacity] {
+  stroke: currentColor;
 }
 .container__1e3f8 {
   align-content: center;
@@ -60778,4 +60664,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.155c9dc6c5e1b9d7.css.map*/
+/*# sourceMappingURL=12633.1c8b46bda4b6652b.css.map*/
