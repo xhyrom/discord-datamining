@@ -98,7 +98,8 @@
 </p>
 <p>
   2. Open the <strong>User Settings</strong> menu by pressing your profile
-  avatar in the bottom left corner.
+  avatar in the bottom left corner, then tap on the
+  <strong>cog wheel icon</strong> in the upper right corner.
 </p>
 <p>
   3. On the <strong>Overview</strong> page, select the
@@ -161,8 +162,14 @@
 <h1 id="h_01JV5HZFMN00J6Z3W6VETSKNHK">Log In to Discord on the Mobile App</h1>
 <p>
   1. Open the Discord app that’s downloaded on your mobile device. If you need
-  to download Discord on your mobile device, you can check out this article for
-  how to download Discord.
+  to download Discord on your mobile device, you can check out
+  <a
+    href="https://support.discord.com/hc/articles/360033931551"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this article</a
+  >
+  for how to download Discord.
 </p>
 <p>
   2. Enter either 1) <strong>your email address</strong> or 2)
