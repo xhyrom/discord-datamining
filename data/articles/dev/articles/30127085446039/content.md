@@ -123,16 +123,7 @@
   <li>Unreal Engine (Windows Only)</li>
   <li>Unity Engine (Windows and macOS)</li>
 </ul>
-<h2 id="h_01JP341J1YVCCDS17MFGCBK4Q1">
-  Android/iOS (full mobile support coming soon)
-</h2>
-<ul>
-  <li>Standalone C++</li>
-  <li>Unity Engine</li>
-</ul>
-<h2 id="h_01JP341J1YK86JW34FPVETFVAY">
-  Console (full console support coming soon)
-</h2>
+<h2 id="h_01JP341J1YK86JW34FPVETFVAY">Console</h2>
 <h4 id="h_01JP343V3KWVFA76XXPKSNXZQT">
   ⚠️ To use the Discord Social SDK in your console games, you will need to
   request middleware approval and be an approved developer for the target
@@ -155,6 +146,13 @@
 <ul>
   <li>Standalone C++</li>
   <li>Unreal Engine</li>
+  <li>Unity Engine</li>
+</ul>
+<h2 id="h_01JP341J1YVCCDS17MFGCBK4Q1">
+  Android/iOS (full mobile support coming soon)
+</h2>
+<ul>
+  <li>Standalone C++</li>
   <li>Unity Engine</li>
 </ul>
 <h1 id="h_01JP341J1Y9N1F40YZJQ0SDDFK">How Do I Get Started?</h1>

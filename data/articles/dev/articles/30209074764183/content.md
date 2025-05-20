@@ -19,15 +19,9 @@
   request process. Start by requesting the Discord Social SDK middleware through
   your console's developer portal.
 </p>
-<h4 id="h_01JP33DA4D9FGPMCDH1MVDA5YY">
-  ⚠️ The Discord Social SDK is fully licensed middleware for PlayStation 5 and
-  Xbox Series X|S, we are limiting access to select partners at this time.
-  Please submit a request through the appropriate directory and Discord will
-  follow up with further information as soon as it's more widely available.
-</h4>
 <h1 id="h_01JP33DR398CK8ZP3H1MA63NQC">Discord Social SDK for PlayStation™</h1>
 <p>
-  <strong>Step 1.</strong> Sign into your
+  <strong>Step 1.</strong> Sign in to your
   <a
     href="https://partners.playstation.net/"
     target="_blank"
@@ -43,7 +37,7 @@
 <p>After completing the request, proceed to the "What Next?" section below.</p>
 <h1 id="h_01JP33DYW142NNPPFTPSA2X57G">Discord Social SDK for Xbox</h1>
 <p>
-  <strong>Step 1.</strong> Sign into your
+  <strong>Step 1.</strong> Sign in to your
   <a
     href="https://developer.microsoft.com/en-us/games/publish?xr=footnav"
     target="_blank"
