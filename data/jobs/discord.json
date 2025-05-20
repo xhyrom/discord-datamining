@@ -182,62 +182,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7898236002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": false
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6119389002,
-      "location": {
-        "name": "Amsterdam, Netherlands"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7898236002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
-      "requisition_id": "R-100827",
-      "title": "Customer Experience Associate, Account Security",
-      "company_name": "Discord",
-      "first_published": "2025-03-19T08:38:39-04:00",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re a group of Customer Experience professionals here at Discord, and we are looking for someone who shares our dedication to supporting others with extra care and problem-solving expertise! This teammate must possess exemplary empathy and unwavering patience as they directly support our amazing community. This includes timely assistance to users experiencing account-related issues, including login problems, password resets, and account recovery.&lt;/p&gt;\n&lt;p&gt;As a team member, you’ll be on the frontlines of supporting our communities, listening to their feedback, and sharing these insights with other stakeholders to help make the Discord experience the best it can be! If you’re looking for an amazing support team, join us!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Working the Morning Shift on Tuesday to Saturday (9 AM to 6 PM CEST)\n&lt;ul&gt;\n&lt;li&gt;We work remotely but expect you to occasionally be present in our Amsterdam office to connect with the team.&lt;/li&gt;\n&lt;li&gt;Candidates must be local.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Delivering timely, accurate, and thoughtful responses to our users’ questions and requests through our support channels.&lt;/li&gt;\n&lt;li&gt;Investigating user account requests, providing timely, accurate, and educational responses to our users.&lt;/li&gt;\n&lt;li&gt;Monitoring Discord user security trends, identify opportunities for improved operational efficiency, and provide actionable feedback to partners.&lt;/li&gt;\n&lt;li&gt;Ensuring the security and integrity of user accounts by implementing and enforcing security protocols and best practices.&lt;/li&gt;\n&lt;li&gt;Investigating and resolving suspicious or unauthorized account activities, including identifying potential security breaches.&lt;/li&gt;\n&lt;li&gt;Collaborating with cross-functional teams to address user account issues and implement solutions that enhance user experience and security.&lt;/li&gt;\n&lt;li&gt;Educating users on account security measures and promote awareness of potential risks and vulnerabilities.&lt;/li&gt;\n&lt;li&gt;Maintaining accurate records of user interactions and resolutions, and contribute to developing support documentation and knowledge base resources.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Proficiency in troubleshooting account-related issues.&lt;/li&gt;\n&lt;li&gt;Excellent communication skills, both written and verbal, with the ability to explain technical concepts clearly to non-technical users.&lt;/li&gt;\n&lt;li&gt;Only English is necessary, but any of the following languages are a plus: Brazilian Portuguese, Russian, French, German, and Turkish with both written and speaking fluency.&lt;/li&gt;\n&lt;li&gt;Ability to work collaboratively in a fast-paced environment and prioritize tasks effectively.&lt;/li&gt;\n&lt;li&gt;Technical skills with knowledge of desktop and mobile operating systems.&lt;/li&gt;\n&lt;li&gt;Experience with customer service solutions platforms.&lt;/li&gt;\n&lt;li&gt;A passion for building communities and belief in our mission at Discord.&lt;/li&gt;\n&lt;li&gt;A commitment to diversity and inclusion.&lt;/li&gt;\n&lt;li&gt;Experience with customer support or technical support roles is required, as well as a passion for supporting our users with unwavering patience and empathy.&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4000668002,
-          "name": "Customer Experience",
-          "child_ids": [],
-          "parent_id": 4094265002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4058029002,
-          "name": "Remote (International)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7981932002",
       "data_compliance": [
         {
@@ -2964,6 +2908,6 @@
     }
   ],
   "meta": {
-    "total": 50
+    "total": 49
   }
 }
