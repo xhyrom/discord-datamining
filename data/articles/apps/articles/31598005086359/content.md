@@ -245,9 +245,9 @@
 </p>
 <p>
   <strong>Q: How do I turn off notifications from Wordle?</strong><br />A: Open
-  the settings menu by clicking on the gear icon in the header. Then toggle the
-  “Mute Daily Reminders” setting off. You will still get summaries of daily
-  Wordle activity, but they will not show up as notifications.
+  the settings menu by clicking on the gear icon in the header. Then toggle to
+  enable the “Mute Daily Reminders” setting. You will still get summaries of
+  daily Wordle activity, but they will not show up as notifications.
 </p>
 <p>
   <strong>Q: Where can I report bugs and problems with the game?</strong
