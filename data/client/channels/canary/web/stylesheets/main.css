@@ -13663,58 +13663,6 @@ div.modalHeader_c28af8 {
 .nitroText_d0caf4 {
   flex-wrap: wrap;
 }
-.firstPromotionalAvatar__55414 {
-  z-index: 1;
-}
-.secondPromotionalAvatar__55414 {
-  margin-right: -18px;
-}
-.container__55414 {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.promotionalGiftMessage__6fbbd {
-  background: linear-gradient(78.98deg, #ff9090, #f30ed8);
-  border-radius: 0 0 16px 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-height: 24px;
-  padding: 12px 24px;
-  position: relative;
-  right: 24px;
-  top: 24px;
-  width: 100%;
-}
-.promotionalGiftMessageText__6fbbd {
-  color: #000;
-}
-.promotionalTextSection__6fbbd {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 12px;
-}
-.avatar__6fbbd {
-  margin-top: -40px;
-}
-.pricePerInterval_fd0764 {
-  font-weight: 200;
-  margin-bottom: 18px;
-}
-.price_fd0764 {
-  font-weight: 700;
-}
-.priceSpinner_fd0764 {
-  display: flex;
-  height: 22px;
-  justify-content: flex-start;
-  margin-bottom: 18px;
-}
-.annualDiscountString_fd0764 {
-  display: flex;
-  flex-direction: column;
-}
 .rightSparkle_fc1723 {
   margin-left: 1px;
   margin-top: 15px;
@@ -13789,23 +13737,6 @@ div.modalHeader_c28af8 {
     #fff 50.52%,
     var(--premium-tier-2-purple-for-gradients) 100%
   );
-}
-.container__33718 {
-  align-items: center;
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 100%, 0),
-    hsla(0, 0%, 100%, 0.1) 50%,
-    hsla(0, 0%, 100%, 0)
-  );
-  display: flex;
-  height: 36px;
-}
-.text__33718 {
-  margin-left: 6px;
-}
-.textWithAD__33718 {
-  margin-left: 9px;
 }
 .premiumCards_ac86f6 {
   display: flex;
@@ -14016,7 +13947,7 @@ div.modalHeader_c28af8 {
 .taglineXPPrices_ac86f6:last-of-type {
   margin: 8px 0 16px;
 }
-.price_ac86f6 {
+.card_ac86f6 .price_ac86f6 {
   margin: 0 0 8px;
 }
 .price_ac86f6:last-of-type {
@@ -60847,4 +60778,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f307a5850f9d4b01.css.map*/
+/*# sourceMappingURL=12633.155c9dc6c5e1b9d7.css.map*/
