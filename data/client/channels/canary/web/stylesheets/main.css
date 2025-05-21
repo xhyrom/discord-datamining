@@ -16386,7 +16386,7 @@ span.clanTag__5d473 {
   flex-direction: row;
   gap: 32px;
   height: 100%;
-  margin: 48px 48px 0;
+  margin: 48px 36px 0 48px;
 }
 .user-profile-sidebar .inner_c0bea0 {
   border-radius: 0;
@@ -60853,4 +60853,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cb446eb43ea9fe0c.css.map*/
+/*# sourceMappingURL=12633.d2555052d220ae71.css.map*/
