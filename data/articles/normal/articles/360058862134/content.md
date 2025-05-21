@@ -1,11 +1,11 @@
-<h3>
+<h3 id="h_01JVSTFP250MRYWMG4XBXS9EG0">
   <span style="font-weight: 400"
     ><strong>Note:</strong> <br />- If you don't see this feature on your mobile
     device yet, make sure that your app has been fully updated in the App Store
     or Google Play Store!<br
   /></span>
 </h3>
-<h3>
+<h3 id="h_01JVSTFP25SMCCVEF2S0EMWSQN">
   <span style="font-weight: 400"
     >Note: Beginning on August 1st, 2022, Discord users can expect to see
     improvements to the Discord Android application, including:<br />- </span
@@ -31,7 +31,7 @@
   ><a
     href="https://discord.com/blog/android-react-native-framework-update"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     >blog post</a
   ><span style="font-weight: 400"
     >.<br />The old Discord Android application will officially sunset on
@@ -49,7 +49,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/360099319594/image11.png"
+      src="https://support.discord.com/hc/article_attachments/360099319594"
       alt="image11.png"
       width="615"
       height="347"
@@ -138,7 +138,7 @@
     mobile devices. </span
   >
 </p>
-<h3>
+<h3 id="h_01JVSTFP26SME4VP7KCYBKJ59H">
   <span style="font-weight: 400"
     >Note: Mobile Screenshare is currently unavailable on Xiaomi devices with
     the MIUI OS. </span
@@ -170,7 +170,7 @@
     Spotify. </span
   >
 </p>
-<h3>
+<h3 id="h_01JVSTFP26PM775NW6J8DKZQVV">
   <span style="font-weight: 400"
     ><strong>Note:</strong> We do not provide support for screensharing these
     streaming applications. </span
@@ -203,7 +203,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/1500000444782/image4.png"
+      src="https://support.discord.com/hc/article_attachments/1500000444782"
       alt="image4.png"
       width="302"
       height="577"
@@ -220,7 +220,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360101543633/image6.gif"
+    src="https://support.discord.com/hc/article_attachments/360101543633"
     alt="image6.gif"
     width="471"
     height="1015"
@@ -257,7 +257,7 @@
     </ul>
   </li>
 </ul>
-<h3>
+<h3 id="h_01JVSTFP26S1ZSK85W0GRTNA04">
   <span style="font-weight: 400"
     >Note: If you don’t see the option there, swipe up from the bottom of the
     screen and a voice/video control panel will appear. You can then press the </span
@@ -266,12 +266,12 @@
 </h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360099320014/image5.png"
+    src="https://support.discord.com/hc/article_attachments/360099320014"
     alt="image5.png"
     width="259"
     height="494"
   /><img
-    src="https://support.discord.com/hc/article_attachments/360101543653/image12.png"
+    src="https://support.discord.com/hc/article_attachments/360101543653"
     alt="image12.png"
     width="306"
     height="493"
@@ -293,17 +293,17 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/1500000453521/image13.png"
+      src="https://support.discord.com/hc/article_attachments/1500000453521"
       alt="image13.png"
       width="295"
       height="563" /><img
-      src="https://support.discord.com/hc/article_attachments/360099320114/image10.png"
+      src="https://support.discord.com/hc/article_attachments/360099320114"
       alt="image10.png"
       width="291"
       height="562"
   /></span>
 </p>
-<h3>
+<h3 id="h_01JVSTFP27K03P0XFEYEA9T87F">
   <span style="font-weight: 400"
     >Note: While sharing your screen, you’ll also be able to video chat at the
     same time! Just press the Video icon in the control panel to share your
@@ -342,7 +342,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/360099320174/image2.png"
+      src="https://support.discord.com/hc/article_attachments/360099320174"
       alt="image2.png"
       width="303"
       height="587" /><img
@@ -350,7 +350,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
-      src="https://support.discord.com/hc/article_attachments/360101543873/image9.png"
+      src="https://support.discord.com/hc/article_attachments/360101543873"
       alt="image9.png"
       width="302"
       height="586"
@@ -372,25 +372,26 @@
     >” button, you’ll be able to directly watch your friend’s stream!</span
   >
 </p>
-<h3>
+<h3 id="h_01JVSTFP276V47MJHH2XPNG7CA">
   <span
     style="
       color: #68737d;
       font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
         Helvetica, Arial, sans-serif;
     "
+    data-darkreader-inline-color=""
     >Note: Streams have a maximum of 50 concurrent viewers (50 viewers, plus the
     broadcaster!).</span
   >
 </h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360099320194/image1.png"
+    src="https://support.discord.com/hc/article_attachments/360099320194"
     alt="image1.png"
     width="315"
     height="610"
   /><img
-    src="https://support.discord.com/hc/article_attachments/1500000453741/image8.png"
+    src="https://support.discord.com/hc/article_attachments/1500000453741"
     alt="image8.png"
     width="315"
     height="609"
@@ -409,7 +410,9 @@
     instead!</span
   >
 </p>
-<h2><span style="font-weight: 400">Controlling the Stream Settings</span></h2>
+<h2 id="h_01JVSTFP2767XMDS02CDWXSGVS">
+  <span style="font-weight: 400">Controlling the Stream Settings</span>
+</h2>
 <p>
   <span style="font-weight: 400"
     >While watching your friend’s shared screen, you’ll be able to swipe up from
@@ -419,7 +422,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/1500000453761/image3.png"
+      src="https://support.discord.com/hc/article_attachments/1500000453761"
       alt="image3.png"
       width="307"
       height="596"
@@ -428,11 +431,21 @@
 <h1 id="h_01ESM3SEZ8M2N2RCTZ2CE9647V">
   <span style="font-weight: 400">Best Practices when Screensharing </span>
 </h1>
-<h3>
-  <strong
-    >While screensharing, whatever is on your mobile screen will be visible,
-    including notifications on your device. </strong
-  >
+<h3 id="h_01JVSTGDFGFNH9EFW1YBHHA0DF">
+  <span style="color: #104c32" data-darkreader-inline-color=""
+    >Be extremely cautious with any sensitive and private information you may
+    have on your mobile device that could get accidentally revealed while
+    screensharing. <br /></span
+  ><span style="color: #104c32" data-darkreader-inline-color=""
+    >If you are a Nitro or Nitro Classic subscriber, you can adjust the video
+    resolution of your screenshare streams only on the desktop app. You can
+    learn more </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/115000435108"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  ><span style="color: #104c32" data-darkreader-inline-color="">.</span>
 </h3>
 <p>
   <strong
@@ -453,13 +466,13 @@
     >
   </li>
 </ol>
-<h3>
+<h3 id="h_01JVSTFP27SDYN5AVV1WS777MY">
   <span style="font-weight: 400"
     >Additionally, be extremely cautious with any sensitive and private
     information you may have on your mobile device. </span
   >
 </h3>
-<h3>
+<h3 id="h_01JVSTFP27AFPNC8R84X04NMGX">
   <span style="font-weight: 400"
     >If you are a Nitro or Nitro Classic subscriber, you can adjust the video
     quality of your screenshare streams only on desktop devices. You can learn
