@@ -3584,6 +3584,7 @@
               "/reporting/unauthenticated/".concat(t, "/verify"),
             SUBMIT_MODERATOR_MESSAGE_REPORT: (t, e) =>
               "/channels/".concat(t, "/").concat(e, "/mod-report"),
+            MODERATOR_REPORT_CLOSE: (t) => "/mod-report/".concat(t, "/close"),
             REPORT_TO_MOD_REOPEN: (t) => "/mod-report/".concat(t, "/reopen"),
             DSA_EXPERIMENT_UNAUTHENTICATED:
               "/reporting/unauthenticated/experiment",
@@ -5861,6 +5862,7 @@
             "referral_program_share_cta_clicked"),
           (r.CACHE_STORE_CACHE_SKIPPED = "cache_store_cache_skipped"),
           (r.GATEWAY_CONNECT_SKIPPED = "gateway_connect_skipped"),
+          (r.POST_GATEWAY_CONNECT_SKIPPED = "post_gateway_connect_skipped"),
           (r.GATEWAY_SOCKET_RESET = "gateway_socket_reset"),
           (r.SESSION_START_CLIENT = "session_start_client"),
           (r.APPLE_PARTNER_IAP_REQUEST_SENT = "apple_partner_iap_request_sent"),
@@ -5926,6 +5928,10 @@
           (r.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED =
             "collectibles_share_link_button_clicked"),
           (r.COLLECTIBLES_SHOP_PERF_TRACKED = "collectibles_shop_perf_tracked"),
+          (r.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED =
+            "collectibles_shop_feed_shuffle_clicked"),
+          (r.COLLECTIBLES_SHOP_FEED_SORT_CHANGED =
+            "collectibles_shop_feed_sort_changed"),
           (r.CONSUMABLE_HD_STREAMING_ENTRYPOINT =
             "consumable_hd_streaming_entrypoint"),
           (r.CONFETTI_POTION_TRIGGERED = "confetti_potion_triggered"),
@@ -6738,7 +6744,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-20-8de2f64a53d5a2919fd55ffc378ae5038471c2eb-discord_web",
+              "2025-05-21-b05eb61d3126f4beb2af8ba94793129ca7d5eb90-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6804,8 +6810,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "400887"),
-            o.YA("builtAt", String("1747725694387"));
+            o.YA("buildNumber", "401429"),
+            o.YA("builtAt", String("1747812007757"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46500,4 +46506,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b4923d92b0f0801d.js.map
+//# sourceMappingURL=sentry.f5c11ae2f46ecce3.js.map
