@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Oracle Business Analyst
+## Senior Oracle Technical Business Analyst
 
 **Location:** San Francisco, CA or Remote (U.S.)
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7807878002](https://discord.com/jobs/7807878002)
 
-**Updated At:** Mon, 19 May 2025 16:39:33 GMT
+**Updated At:** Wed, 21 May 2025 19:09:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are a high-growth startup focused on building scalable, resilient infrastructure to support rapid business expansion. Our business systems team is critical to ensuring that finance, procurement, and revenue operations run efficiently and in full compliance with regulatory standards. We are looking for a Senior Oracle Technical Business Systems Analyst to join our team and support the continued optimization of Oracle Fusion Cloud ERP—particularly in the areas of Revenue Automation, Procure-to-Pay (P2P) and Quote-to-Cash (Q2C).
