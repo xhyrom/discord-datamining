@@ -15,19 +15,19 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-05-19T22:32:11Z",
+  "edited_at": "2025-05-22T17:35:07Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "Credits",
-    "in-app",
     "Nitro",
+    "answer-bot",
     "credit",
+    "quest",
+    "quests",
     "discord",
     "rewards",
-    "quest",
-    "quests"
+    "in-app",
+    "Credits"
   ]
 }
