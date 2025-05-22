@@ -5711,6 +5711,8 @@
           (r.MOBILE_NITRO_HOME_PERKS_CAROUSEL_SCROLLED =
             "mobile_nitro_home_perks_carousel_scrolled"),
           (r.TIERED_TENURE_BADGE_CLICKED = "tiered_tenure_badge_clicked"),
+          (r.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED =
+            "tiered_tenure_badge_level_up_replay_clicked"),
           (r.TIERED_TENURE_BADGE_PERK_CARD_CLICKED =
             "tiered_tenure_badge_perk_card_clicked"),
           (r.VOICE_CALL_TRANSFER = "voice_call_transfer"),
@@ -5927,6 +5929,8 @@
           (r.COLLECTIBLES_TILE_IMPRESSION = "collectibles_tile_impression"),
           (r.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED =
             "collectibles_share_link_button_clicked"),
+          (r.COLLECTIBLES_SHOP_ELEMENT_CLICKED =
+            "collectibles_shop_element_clicked"),
           (r.COLLECTIBLES_SHOP_PERF_TRACKED = "collectibles_shop_perf_tracked"),
           (r.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED =
             "collectibles_shop_feed_shuffle_clicked"),
@@ -6744,7 +6748,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-21-b05eb61d3126f4beb2af8ba94793129ca7d5eb90-discord_web",
+              "2025-05-22-3feee1246ec14311fd92bf3ffebbf759853becf9-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6810,8 +6814,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "401429"),
-            o.YA("builtAt", String("1747812007757"));
+            o.YA("buildNumber", "401882"),
+            o.YA("builtAt", String("1747898335365"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7506,6 +7510,27 @@
                 [r.LIGHT]: { raw: "WHITE_500", opacity: 0 },
                 [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0 },
                 [r.DARKER]: { raw: "WHITE_500", opacity: 0 },
+              },
+              BUTTON_EXPRESSIVE_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "BRAND_500", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
+              },
+              BUTTON_EXPRESSIVE_BACKGROUND_ACTIVE: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_5", opacity: 1 },
+                [r.LIGHT]: { raw: "BRAND_600", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_5", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_5", opacity: 1 },
+              },
+              BUTTON_EXPRESSIVE_BACKGROUND_HOVER: {
+                category: "generic",
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "BRAND_560", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_FILLED_BRAND_BACKGROUND: {
                 category: "generic",
@@ -15664,6 +15689,24 @@
             r.I.WHITE_500,
             r.I.WHITE_500,
             r.I.WHITE_500,
+          ],
+          "button-expressive-background": [
+            r.I.WHITE,
+            r.I.BRAND_500,
+            r.I.WHITE,
+            r.I.WHITE,
+          ],
+          "button-expressive-background-active": [
+            r.I.NEUTRAL_5,
+            r.I.BRAND_600,
+            r.I.NEUTRAL_5,
+            r.I.NEUTRAL_5,
+          ],
+          "button-expressive-background-hover": [
+            r.I.WHITE,
+            r.I.BRAND_560,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-filled-brand-background": [
             r.I.BRAND_500,
@@ -46506,4 +46549,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f5c11ae2f46ecce3.js.map
+//# sourceMappingURL=sentry.a23a57baa7684c5d.js.map
