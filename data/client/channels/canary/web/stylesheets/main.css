@@ -30717,15 +30717,17 @@ html:not(.visual-refresh) .root_e5f3a9 {
   right: 16px;
 }
 .body__5be3e {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   padding: 4px 16px 8px;
 }
-.body__5be3e,
+.card__5be3e {
+  padding: 12px;
+}
 .footer__5be3e {
   display: flex;
   flex-direction: column;
-}
-.footer__5be3e {
   padding: 0 16px 12px;
 }
 .footer__5be3e:empty {
@@ -61146,4 +61148,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.373e717744cee810.css.map*/
+/*# sourceMappingURL=12633.b0c2470f86d63f9a.css.map*/
