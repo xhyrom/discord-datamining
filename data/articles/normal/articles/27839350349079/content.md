@@ -28,6 +28,35 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Splitgate 2 Open Beta Trailer<br /></strong
+  ><strong>Quest Name: Open Beta Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>Splitgate 2 Open Beta Trailer </strong>in Discord to receive a
+  <strong>Portal Pulse Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users on desktop where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Open Beta Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>May 22, 2025 </strong>until<strong>
+    May 29, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 29, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Portal Pulse Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 29, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Jurassic World Rebirth Trailer<br /></strong
   ><strong>Quest Name: Jurassic World Rebirth Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
@@ -608,80 +637,6 @@
   <strong>Supply Llama Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>May 31, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Walmart Skyward Cinematic Trailer<br /></strong
-  ><strong>Quest Name: Walmart Skyward Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>Walmart Skyward Cinematic Trailer </strong>in Discord and receive
-  <strong>Marty the Hippo Pet</strong>.<br /><strong>Who is Eligible: </strong
-  >Available to US users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Walmart Skyward Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>March 21, 2025 </strong>until<strong>
-    March 30, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 18, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Metaphor: ReFantazio (Full Game)<br /></strong
-  ><strong>Quest Name: Metaphor Rank Up Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Metaphor: ReFantazio (Full Game) </strong>to receive a limited-time
-  <strong>Gallica Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to users on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
-  Xbox Series S where <strong>Discord</strong> and
-  <strong>Metaphor: ReFantazio </strong>are available. Discord’s premium
-  services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Metaphor Rank Up Quest</strong> can be accepted on
-  <strong>PC, PlayStation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
-    Xbox Series S</strong
-  >
-  from <strong>March 13, 2025 </strong>until<strong>
-    March 19, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 19, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Gallica Avatar Decoration</strong> is a limited-time Avatar Decoration
-  and will only be yours as an Avatar Decoration until
-  <strong>May 19, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: The First Berserker: Khazan<br /></strong
-  ><strong>Quest Name: Khazan Video Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the <strong>Khazan </strong>video in
-  Discord and unlock the <strong>Khazan Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Khazan Video Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>March 10, 2025 </strong>until<strong>
-    March 16, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>April 16, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Khazan Avatar Decoration</strong> is a limited-time Avatar Decoration
-  and will only be yours as an Avatar Decoration until
-  <strong>May 16, 2025 (11:59PM UTC)</strong>. After this date, you will no
   longer have access to this Avatar Decoration.<br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
