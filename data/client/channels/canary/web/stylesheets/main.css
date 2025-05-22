@@ -43614,6 +43614,30 @@ div.mobilePushContainer__3d3b0 {
 .guildIconWithoutImage__2dbe1 {
   background-color: var(--background-primary);
 }
+.container__8fea4 {
+  align-items: center;
+  border-color: var(--border-subtle);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+}
+.paletteIcon__8fea4 {
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.14));
+}
+.newBadge__8fea4 {
+  bottom: -4px;
+  position: absolute;
+}
+.newRing__8fea4 {
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgba(180, 115, 245, 0.44));
+  height: calc(100% + 8px);
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: calc(100% + 8px);
+}
 .presets__67a11 {
   display: flex;
   flex-wrap: wrap;
@@ -61125,4 +61149,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1701bc866e3f69aa.css.map*/
+/*# sourceMappingURL=12633.7e1bf752dfef8c1c.css.map*/
