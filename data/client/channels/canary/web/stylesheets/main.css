@@ -16539,13 +16539,19 @@ span.clanTag__5d473 {
 }
 :where(
     .outer_c0bea0
-  ).theme-dark.custom-user-profile-theme.user-profile-modal-v2,
+  ).theme-dark.custom-user-profile-theme.user-profile-modal-v2 {
+  background: color-mix(
+    in oklab,
+    var(--black-500) 70%,
+    var(--profile-gradient-secondary-color)
+  );
+}
 :where(
     .outer_c0bea0
   ).theme-light.custom-user-profile-theme.user-profile-modal-v2 {
   background: color-mix(
     in oklab,
-    var(--profile-gradient-overlay-color) 70%,
+    var(--white-500) 70%,
     var(--profile-gradient-secondary-color)
   );
 }
@@ -61148,4 +61154,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.34b76e0a082f4965.css.map*/
+/*# sourceMappingURL=12633.48b893dea756c651.css.map*/
