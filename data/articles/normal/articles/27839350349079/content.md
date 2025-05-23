@@ -28,6 +28,34 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: The Bad Guys 2 <br /></strong
+  ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch
+  <strong>The Bad Guys 2 trailer </strong>in Discord to receive a
+  <strong>Vault Heist Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users in
+  <strong>France, Australia, Mexico, and the United Kingdom</strong> on desktop
+  where <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong>
+  <strong>The</strong> <strong>Bad Guys 2 Quest </strong>can be accepted on
+  Discord desktop app or browser client from
+  <strong>May 23, 2025 </strong>until<strong> May 29, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>June 29, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Vault Heist Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>July 29, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Splitgate 2 Open Beta Trailer<br /></strong
   ><strong>Quest Name: Open Beta Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
