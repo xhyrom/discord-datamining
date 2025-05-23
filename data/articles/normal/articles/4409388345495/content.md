@@ -13,71 +13,106 @@
   - our Nitro perk <strong>p</strong><strong>er-server profiles </strong>makes
   it possible!
 </p>
-<p id="docs-internal-guid-04483fd6-7fff-6ad1-ee29-d2e971e3d241">
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01FGCPNVQ6F9X6ET40NPETDMVK">What are per-server profiles?</a>
-  </li>
-  <li>
-    <a href="#h_01FGCPP3V7BS1QVCQQZ2YC0RXB"
-      >How can I change my server avatar?</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01JPQHTHHQ25N1SDHR0YC3QAGF"
-          >Desktop/Browser: Right-Click on your Avatar</a
-        >
-      </li>
-      <li>
-        <a href="#h_01JPQJ0CG96RYZ4RT4V7MQTZHG"
-          >Desktop/Browser: Left-Click on your Avatar</a
-        >
-      </li>
-      <li>
-        <a href="#h_01JPQJ3CM6J1ESP0DWV15FM9F7"
-          >Desktop/Browser: Resetting My Server Avatar to a Recent Avatar</a
-        >
-      </li>
-      <li>
-        <a href="#h_01FJ354SN3Q9YQ28AB5GMXWTVA"
-          >Mobile: Changing your Server Avatar</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01FPE3GWZ62G842RFFFYD9NTJT"
-      >How do I change my profile banner?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01G52M1Y6A47PB0S6MRYJF7VQD"
-      >How do I set up an “About Me” for my per-server profile?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01GG6C7WG2GAF74SBZ02GC20VQ"
-      >How do I change my profile theme?</a
-    >
-    <ul>
-      <li><a href="#h_01HNGBKZ179D803WSZXF5DV5C5">On Desktop/Browser</a></li>
-      <li><a href="#h_01HNGBKZ187FNPGCSC4VGRDXWV">On Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01JPQK1YCEXWF53G4PXJ0BAWY1"
-      >How do I add avatar decorations and profile effects to my per-server
-      profile?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01FGCPPE37QG92W7XCVV53NVC3">Frequently Asked Questions</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01FGCPNVQ6F9X6ET40NPETDMVK"
+          >What are per-server profiles?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01FGCPP3V7BS1QVCQQZ2YC0RXB"
+          >How can I change my server avatar?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JPQHTHHQ25N1SDHR0YC3QAGF"
+              >Desktop/Browser: Right-Click on your Avatar</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JPQJ0CG96RYZ4RT4V7MQTZHG"
+              >Desktop/Browser: Left-Click on your Avatar</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JPQJ3CM6J1ESP0DWV15FM9F7"
+              >Desktop/Browser: Resetting My Server Avatar to a Recent Avatar</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01FJ354SN3Q9YQ28AB5GMXWTVA"
+              >Mobile: Changing your Server Avatar</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01FPE3GWZ62G842RFFFYD9NTJT"
+          >How do I change my profile banner?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01G52M1Y6A47PB0S6MRYJF7VQD"
+          >How do I set up an “About Me” for my per-server profile?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GG6C7WG2GAF74SBZ02GC20VQ"
+          >How do I change my profile theme?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01HNGBKZ179D803WSZXF5DV5C5"
+              >On Desktop/Browser</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01HNGBKZ187FNPGCSC4VGRDXWV">On Mobile</a></strong>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JPQK1YCEXWF53G4PXJ0BAWY1"
+          >How do I add avatar decorations and profile effects to my per-server
+          profile?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01FGCPPE37QG92W7XCVV53NVC3"
+          >Frequently Asked Questions</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01FGCPNVQ6F9X6ET40NPETDMVK">What are per-server profiles?</h1>
 <p>
   <strong>Per-server profiles</strong> are a new customization feature for Nitro
@@ -211,8 +246,10 @@
   Desktop/Browser: Resetting My Server Avatar to a Recent Avatar
 </h2>
 <div class="info-box">
-  <strong>Recent Avatars</strong> lets Nitro subscribers store their 6 most
-  recent avatars, while non-subscribers can store 2.
+  <strong>Recent Avatars</strong> automatically saves your 6 most recent avatar
+  uploads across all platforms. While avatars uploaded from mobile are stored in
+  your history, you can only view and select from your Recent Avatars when using
+  Discord on desktop or browser versions.
 </div>
 <p>
   To return to a recent avatar, navigate to the <strong>Profiles</strong> page.
