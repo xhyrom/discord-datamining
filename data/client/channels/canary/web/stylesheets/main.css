@@ -38246,8 +38246,8 @@ div.mobilePushContainer__3d3b0 {
   position: relative;
   z-index: 0;
 }
-.theme-light .username_e5de78 {
-  filter: brightness(75%);
+.theme-light .usernameGradient_e5de78 {
+  filter: brightness(0.65) saturate(1.8);
 }
 .convenienceGlowGradient_e5de78:after {
   background: inherit;
@@ -60786,4 +60786,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.84bb1fc0b27baa6a.css.map*/
+/*# sourceMappingURL=12633.4aef715a81018f00.css.map*/
