@@ -17168,53 +17168,6 @@ span.clanTag__5d473 {
 .labelText__1fdc8 {
   line-height: 12px;
 }
-.toolbar__7e6ab {
-  align-items: center;
-  background-color: var(--background-primary);
-  border: 1px solid var(--border-subtle);
-  border-radius: 100px;
-  box-shadow: var(--shadow-low);
-  display: flex;
-  flex-direction: row;
-  padding: 2px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.toolbar__7e6ab > :first-of-type > .toolbarItem__7e6ab {
-  border-radius: 100px 36px 36px 100px;
-  padding-left: 6px;
-}
-.toolbar__7e6ab > :last-of-type > .toolbarItem__7e6ab {
-  border-radius: 36px 100px 100px 36px;
-  padding-right: 6px;
-}
-.toolbarItem__7e6ab {
-  align-items: center;
-  border-radius: 6px;
-  display: flex;
-  height: unset;
-  min-width: unset;
-  padding: 4px;
-  transition: background-color 0.2s ease;
-}
-.full-motion .toolbarItem__7e6ab .icon__7e6ab {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.toolbarItem__7e6ab:hover {
-  background-color: var(--background-modifier-hover);
-}
-.toolbarItem__7e6ab:hover .icon__7e6ab {
-  fill: var(--interactive-hover);
-  transform: scale(1.1);
-}
-.toolbarItem__7e6ab:active {
-  background-color: var(--background-modifier-active);
-}
-.toolbarItem__7e6ab:active .icon__7e6ab {
-  fill: var(--interactive-active);
-  transform: scale(1);
-}
 .wrapper_f7ecac {
   align-items: center;
   background-color: var(--background-primary);
@@ -32652,70 +32605,6 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .labelRow_ab8609 {
   margin-bottom: 2px;
-}
-.labelToolbar_ab8609 {
-  bottom: -30px;
-  height: unset;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-}
-.labelToolbarHoverGap_ab8609 {
-  bottom: -34px;
-  height: 34px;
-  position: absolute;
-  right: -5px;
-  width: 120px;
-}
-.labelToolbarVisible_ab8609 {
-  cursor: pointer;
-  opacity: 1;
-  pointer-events: all;
-}
-:not(.keyboard-mode).full-motion
-  .labelToolbar_ab8609.labelToolbarVisible_ab8609 {
-  animation: labelToolbarFadeIn_ab8609 0.15s ease-in forwards;
-  opacity: 0;
-}
-:not(.keyboard-mode).full-motion
-  .labelToolbar_ab8609.labelToolbarFadingOut_ab8609 {
-  animation: labelToolbarFadeOut_ab8609 0.15s ease-out forwards;
-}
-@keyframes labelToolbarFadeIn_ab8609 {
-  0% {
-    bottom: -28px;
-    opacity: 0;
-    pointer-events: none;
-  }
-  99% {
-    pointer-events: none;
-  }
-  to {
-    bottom: -30px;
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-@keyframes labelToolbarFadeOut_ab8609 {
-  0% {
-    bottom: -30px;
-    opacity: 1;
-    pointer-events: all;
-  }
-  1% {
-    pointer-events: none;
-  }
-  to {
-    bottom: -28px;
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-.customStatusLabelToolbar_ab8609 {
-  background-color: var(--custom-status-bubble-background-color);
-  border: 1px solid var(--user-profile-border);
-  box-shadow: var(--shadow-low);
 }
 .section_bf424d {
   display: flex;
@@ -60897,4 +60786,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.79a9dbdfb8f3b47b.css.map*/
+/*# sourceMappingURL=12633.18bf43b135d71479.css.map*/
