@@ -2,7 +2,7 @@
   "id": 24160905919511,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/24160905919511.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/24160905919511-My-Discord-Account-was-Hacked-or-Compromised",
-  "author_id": 12415876668,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2024-11-25T16:31:11Z",
+  "edited_at": "2025-05-23T20:47:21Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
@@ -23,6 +23,7 @@
     "hack",
     "hacked",
     "hacked account",
-    "compromised"
+    "compromised",
+    "answer-bot"
   ]
 }
