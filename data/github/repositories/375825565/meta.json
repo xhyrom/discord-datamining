@@ -59,5 +59,6 @@
     "push": false,
     "triage": false,
     "pull": false
-  }
+  },
+  "custom_properties": {}
 }

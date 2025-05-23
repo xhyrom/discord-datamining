@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/dd-trace-py",
   "created_at": "2022-03-16T23:08:15Z",
   "homepage": "https://ddtrace.readthedocs.io/",
-  "size": 32580,
+  "size": 32584,
   "language": "Python",
   "has_issues": false,
   "has_projects": false,
@@ -59,5 +59,6 @@
     "push": false,
     "triage": false,
     "pull": false
-  }
+  },
+  "custom_properties": {}
 }
