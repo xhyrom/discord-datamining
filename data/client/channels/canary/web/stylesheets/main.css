@@ -13837,6 +13837,18 @@ div.modalHeader_c28af8 {
   animation-name: Shine__28141;
   animation-timing-function: ease-in-out;
 }
+.hidden__28141 {
+  opacity: 0;
+}
+.imageVideoOverlay__28141 {
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .nitroUpsellContainer_d0caf4 {
   align-items: center;
   display: flex;
@@ -60803,4 +60815,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.24e8c39ef9cd9555.css.map*/
+/*# sourceMappingURL=12633.75e095c5ee6939c3.css.map*/
