@@ -1,24 +1,17 @@
-<h2>TL;DR</h2>
-<p>
-  If you are not seeing the <strong>Copy</strong> button located in your bot
-  settings to copy your bot's token, this means the token has already been
-  viewed once and is now hidden. You will need to regenerate the token using the
-  <strong>Reset Token</strong> button and paste that new token into your code.
-</p>
+<h2 id="h_01JW9NGTGWCWTHSEGZDE0N7EGY">Contents</h2>
 <ul>
   <li>
-    <a href="#h_01G56XR6D2HY7K3BHQ2A6C4ZZC" target="_self"
-      >Why did the copy button disappear?</a
+    <a href="#h_01G56XR6D2HY7K3BHQ2A6C4ZZC"
+      >Why did the Copy Button Disappear?</a
     >
   </li>
   <li>
-    <a href="#h_01G56XRFF5AN811CKKMQ9T2HQT" target="_self"
-      >How to Regenerate your Bot’s Token</a
+    <a href="#h_01G56XRFF5AN811CKKMQ9T2HQT"
+      >How to Regenerate the Bot's Token</a
     >
   </li>
 </ul>
-<h2> </h2>
-<h2 id="h_01G56XR6D2HY7K3BHQ2A6C4ZZC">WHY DID THE COPY BUTTON DISAPPEAR?</h2>
+<h2 id="h_01G56XR6D2HY7K3BHQ2A6C4ZZC">Why did the Copy Button Disappear?</h2>
 <p>
   You may have noticed that the copy button has disappeared from the Bot page in
   the Developer Portal. After you have viewed the token once and leave the page,
@@ -32,8 +25,8 @@
     alt="6430E4B2-745C-4671-9AEB-7A4D58B133A4_1_201_a.jpeg"
   />
 </p>
-<h2> </h2>
-<h2 id="h_01G56XRFF5AN811CKKMQ9T2HQT">HOW TO REGENERATE YOUR BOT’S TOKEN</h2>
+<h2 id="h_01JW9NGTGWZSKD3AD1AGNY03M9"> </h2>
+<h2 id="h_01G56XRFF5AN811CKKMQ9T2HQT">How to Regenerate the Bot's Token</h2>
 <ol>
   <li>
     Open your App on the
