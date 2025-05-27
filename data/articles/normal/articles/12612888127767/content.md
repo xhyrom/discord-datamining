@@ -6,10 +6,6 @@
   Learn more about how you can use soundboard, add sounds to your soundboard,
   and how to manage soundboard usage in Discord servers.
 </p>
-<div class="exp-box">
-  <strong>Info:</strong> This experimental feature is only available to select
-  servers.
-</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -348,10 +344,6 @@
   >
 </h4>
 <h1 id="h_01JVDEHVSXFQV5E2FV7RVE8NXM">Soundboard Entrance Sounds</h1>
-<div class="exp-box">
-  <strong>Info: </strong>This experimental feature is only available to a
-  limited number of users.
-</div>
 <p>
   Are you finding yourself using a specific sound in Soundboard anytime you join
   a specific server? You can now set your own sound to automatically play from
