@@ -20,14 +20,14 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "server",
-    "server guide",
     "admin",
     "setup",
-    "guide",
-    "onboarding",
-    "joining",
+    "answer-bot",
+    "server",
     "page",
-    "answer-bot"
+    "guide",
+    "server guide",
+    "onboarding",
+    "joining"
   ]
 }
