@@ -20,10 +20,10 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "connection",
-    "connections",
     "roblox",
-    "roblox connection"
+    "connections",
+    "connection",
+    "roblox connection",
+    "answer-bot"
   ]
 }

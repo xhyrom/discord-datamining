@@ -33,17 +33,17 @@
     "01J5BC8JTHWHJVMGH16QPKSGP4"
   ],
   "label_names": [
-    "Server",
-    "answer-bot",
-    "FAQ",
-    "Quest",
-    "Quests",
-    "Rewards",
-    "Icon",
-    "Feature",
     "Discover",
-    "Tab",
+    "Icon",
+    "Server",
     "Servers",
-    "Discovery"
+    "Quests",
+    "Discovery",
+    "Rewards",
+    "answer-bot",
+    "Tab",
+    "Quest",
+    "Feature",
+    "FAQ"
   ]
 }
