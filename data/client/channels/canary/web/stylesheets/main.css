@@ -14090,6 +14090,11 @@ div.modalHeader_c28af8 {
   margin-right: 8px;
   width: 24px;
 }
+.smallIcon_ac86f6 {
+  height: 18px;
+  margin-right: 10px;
+  width: 18px;
+}
 .newCircleIcon_ac86f6 {
   filter: saturate(var(--saturation-factor, 1));
   left: 250px;
@@ -17467,17 +17472,15 @@ span.clanTag__5d473 {
   text-align: center;
 }
 .image__4f6e5 {
-  height: 112px;
-  margin: 14px 0;
-  width: 127px;
+  width: 250px;
 }
 .title__4f6e5 {
   margin-bottom: var(--spacing-16);
   margin-top: var(--spacing-32);
   max-width: 250px;
 }
-.titleNoSocialProof__4f6e5 {
-  margin-bottom: 24px;
+.body__4f6e5 {
+  max-width: 380px;
 }
 .footer__4f6e5 {
   background-color: var(--background-primary);
@@ -60800,4 +60803,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.92adc9d0314ed57d.css.map*/
+/*# sourceMappingURL=12633.24e8c39ef9cd9555.css.map*/
