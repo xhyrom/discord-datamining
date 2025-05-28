@@ -17,6 +17,9 @@
       <li style="font-weight: 400" aria-level="1">
         <a href="#h_01J5BJ03FMG9GKPN0EYVYE5T23">Paysafecards</a>
       </li>
+      <li style="font-weight: 400" aria-level="1">
+        <a href="#h_01JW9DNYQXDHAH0YFC08MM536A">Orbs</a>
+      </li>
     </ul>
   </li>
   <li style="font-weight: 400" aria-level="1">
@@ -97,6 +100,19 @@
 <h2 id="h_01J5BJ03FMG9GKPN0EYVYE5T23">Paysafecards</h2>
 <p>
   We are unable to provide any refunds for purchases made with Paysafecards.
+</p>
+<h2 id="h_01JW9DNYQXDHAH0YFC08MM536A">Orbs</h2>
+<p>
+  We are unable to provide any refunds for any purchases made with Orbs.
+  However, if you are concerned that any Orbs you’ve accumulated have been spent
+  without your permission, please submit a ticket through
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+    >dis</a
+  ><span style="color: #2e3338; background-color: #ffffff"
+    ><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+      >.gd/billing</a
+    >. </span
+  >
 </p>
 <h1 id="h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts</h1>
 <p>

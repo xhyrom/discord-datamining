@@ -66,7 +66,7 @@
   </ul>
 </div>
 <div class="exp-box">
-  <strong>NOTE</strong>: Nitro credits are currently an experimental offer
+  <strong>Info</strong>: Nitro credits are currently an experimental offer
   available to a limited number of users and only through the Discord desktop
   app.
 </div>
@@ -74,7 +74,7 @@
 <p>Nitro credits give you Nitro for a limited amount of time. </p>
 <ul>
   <li>
-    They are earned by successfully completing specific
+    They are earned by purchasing in the Shop, or by completing specific
     <a
       href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
       target="_blank"
@@ -92,9 +92,19 @@
     Once all your Nitro credits have been used and their duration is over, your
     Nitro subscription will revert to its normal state.
   </li>
+  <li>
+    Some Nitro Perks are not available with Nitro credits. Perks that are not
+    included:
+    <ul>
+      <li>Two Boosts</li>
+      <li>Boost discount</li>
+      <li>Profile badge</li>
+      <li>Share Nitro (Referral Program)</li>
+    </ul>
+  </li>
 </ul>
 <div class="info-box">
-  <strong><span style="color: #434343">NOTE</span></strong
+  <strong><span style="color: #434343">Info</span></strong
   ><span style="color: #434343"
     >: Nitro credits do not give you 2 free Server Boosts or the 30% discount on
     additional Boost purchases. However, you can still enjoy all the other Nitro
@@ -127,15 +137,18 @@
   list to explore available Discord Quests. You've now reached
   <strong>Quest Home</strong>, where you can find Quests offering Nitro credits.
 </p>
-<p>
-  For more details on accepting and completing Quests, check out our
-  <a
-    href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Discord Quests FAQ.</a
-  >
-</p>
+<div class="book-box">
+  <p><strong>Want to learn more?</strong></p>
+  <p>
+    For more details on accepting and completing Quests, check out our
+    <a
+      href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord Quests FAQ.</a
+    >
+  </p>
+</div>
 <p>
   3. After completing the Quest, you'll receive a notification informing you
   that you've earned Nitro credits!
@@ -150,6 +163,17 @@
 <h4 id="h_01JRKC3C4F547QM8JA5WG0QMEQ" class="wysiwyg-text-align-center">
   <span style="color: #666666">Confirmation of earned Nitro credits</span>
 </h4>
+<div class="info-box">
+  Info: You can also get Nitro credits by spending Discord Orbs in the Shop &gt;
+  Orbs Exclusives.
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  >
+  is currently in Beta.
+</div>
 <h1 id="h_01JDB0ACQVRA46TFAA79SVQBH0">Where can I view my Nitro Credits?</h1>
 <p>
   To view your Nitro credits, go to your <strong>User Settings</strong> by

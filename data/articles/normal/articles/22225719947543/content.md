@@ -5,12 +5,7 @@
   which may include in-game items or currency, or Discord
   <a
     href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >avatar decorations</span
-    ></a
+    >Avatar Decorations</a
   >. Read on to learn more!
 </p>
 <p class="wysiwyg-text-align-center">
@@ -373,9 +368,21 @@
   email with detailed redemption instructions.
 </p>
 <p>
-  For <strong>Discord-specific rewards</strong> (such as avatar decorations),
-  the reward will be automatically added to your Discord account once you claim
-  it.
+  For <strong>Discord-specific rewards</strong> (such as
+  <a
+    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decorations</a
+  >
+  or
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Orbs</a
+  >), the reward will be automatically added to your Discord account once you
+  claim it.
 </p>
 <div class="info-box">
   <a
@@ -384,7 +391,7 @@
     rel="noopener noreferrer"
     >Discord Nitro subscribers</a
   ><span style="color: #434343">
-    get extended access to avatar decoration rewards earned through Quests!
+    get extended access to Avatar Decoration rewards earned through Quests!
     Learn more in our </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"

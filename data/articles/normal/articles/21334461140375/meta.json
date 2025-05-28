@@ -27,16 +27,16 @@
     "01J7CJHJVZG0867D5TGRGKTKMD"
   ],
   "label_names": [
-    "admin",
-    "answer-bot",
-    "server",
-    "activities",
-    "app directory",
     "apps",
     "directory",
-    "management",
+    "app directory",
     "developer",
     "applications",
-    "owner"
+    "activities",
+    "server",
+    "management",
+    "admin",
+    "owner",
+    "answer-bot"
   ]
 }
