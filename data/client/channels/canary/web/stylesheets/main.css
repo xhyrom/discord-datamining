@@ -32655,13 +32655,13 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 .labelRow_ab8609 {
   margin-bottom: 2px;
 }
-.section_bf424d {
+:where(.section_bf424d) {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.section_bf424d:empty,
-.section_bf424d:has(> .headings_bf424d:only-child) {
+:where(.section_bf424d):empty,
+:where(.section_bf424d):has(> .headings_bf424d:only-child) {
   display: none;
 }
 .header_bf424d {
@@ -60906,4 +60906,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.95625c635bff976a.css.map*/
+/*# sourceMappingURL=12633.de45bbf62717cd11.css.map*/
