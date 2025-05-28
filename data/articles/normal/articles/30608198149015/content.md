@@ -41,16 +41,8 @@
 </div>
 <h1 id="h_01JRGZEB25MH4BR9MAW84CYDA7">What are DM Wallpapers?</h1>
 <div class="exp-box">
-  Choosing and setting DM wallpapers is currently an experiment available to
-  select
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >
-  users only. This feature is not available to users with a Nitro Basic
-  membership.
+  Thank you for testing DM wallpapers! As of May 28, 2025, we have removed the
+  experiment for the time being.
 </div>
 <p>
   DM wallpapers allow Nitro users to choose and set a background image from our
