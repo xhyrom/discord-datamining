@@ -42385,6 +42385,13 @@ div.mobilePushContainer__3d3b0 {
   position: absolute;
   top: 0;
 }
+.pictureInPicture__6341f.dragging__6341f {
+  cursor: grabbing;
+  height: 100%;
+  pointer-events: auto;
+  width: 100%;
+  z-index: 999;
+}
 .pictureInPictureWindow__6341f {
   position: absolute;
   z-index: 1000;
@@ -60915,4 +60922,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b9254bc2a0df3d95.css.map*/
+/*# sourceMappingURL=12633.512c1596def28339.css.map*/
