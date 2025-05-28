@@ -1,0 +1,56 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7990178002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6160770002,
+  "location": {
+    "name": "San Francisco, CA or Remote (U.S.)"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 7990178002,
+  "updated_at": "2025-05-27T19:39:14-04:00",
+  "requisition_id": "R-100921",
+  "title": "Software Engineer, Safety Processing",
+  "company_name": "Discord",
+  "first_published": "2025-05-27T19:39:14-04:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As an engineer on the Safety Processing team, you will work on the core safety pipeline — ingesting signals, like user reports, and the processing of those signals through automated and manual means. This includes partnering with ML teams, AI tooling integrations, and building Agent facing tooling for manual review. You will be reporting to the Engineering Manager of Safety Processing. Join our team in taking on the immense challenge of designing the future of safety at Discord!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll do&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Scale and Improve Discord’s ability to review potentially harmful content on the platform&lt;/li&gt;\n&lt;li&gt;Collaborate with ML teams to implement models to improve efficiency&lt;/li&gt;\n&lt;li&gt;Modernize both server side business logic &amp;amp; UI’s for agent facing tooling, across the full stack role&lt;/li&gt;\n&lt;li&gt;Bring our next-generation review processing tooling to life at the scale of Discord&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years experience working on full-stack products or systems using Python + Flask or similar technologies&lt;/li&gt;\n&lt;li&gt;Experience creating pragmatic solutions to complex problems&lt;/li&gt;\n&lt;li&gt;Comfort working within a highly collaborative team environment&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience building internal tools, especially for content moderation, customer service, data-driven investigation, or Safety orgs&lt;/li&gt;\n&lt;li&gt;Experience designing and deploying scalable services using components such as Kafka, PubSub, GCP/AWS, and Kubernetes&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $160,000 to $180,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074059002,
+      "name": "Core Tech Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
