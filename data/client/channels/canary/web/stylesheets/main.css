@@ -13589,6 +13589,15 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   gap: 4px;
   width: 100%;
 }
+.guildNameContainer__99f53 {
+  overflow: hidden;
+}
+.guildNameContainer__99f53:hover {
+  cursor: pointer;
+}
+.guildNameContainer__99f53:hover .guildName__99f53 {
+  text-decoration: underline;
+}
 .guildName__99f53 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -60906,4 +60915,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.de45bbf62717cd11.css.map*/
+/*# sourceMappingURL=12633.b9254bc2a0df3d95.css.map*/
