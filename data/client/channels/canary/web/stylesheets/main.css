@@ -23769,6 +23769,125 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   position: absolute;
   top: 43px;
 }
+.breadcrumbs_d7fde8 {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.breadcrumbWrapper_d7fde8 {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  font-weight: 600;
+}
+.breadcrumbFinalWrapper_d7fde8 {
+  overflow: hidden;
+}
+.breadcrumbArrow_d7fde8 {
+  color: var(--text-muted);
+  height: 18px;
+  margin: 0 11px;
+  width: 18px;
+}
+.container_c7bb69 {
+  align-items: flex-end;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  display: flex;
+  height: 120px;
+  min-height: 120px;
+  padding: 0 var(--space-16) 0;
+  position: relative;
+}
+.container_c7bb69.containerBottomPadding_c7bb69 {
+  padding-bottom: var(--space-12);
+}
+.tier0Background_c7bb69 {
+  background: radial-gradient(
+      112.41% 100% at 50% 100%,
+      var(--background-primary) 49.85%,
+      var(--transparent) 100%
+    ),
+    linear-gradient(
+      270deg,
+      var(--background-modal-gradient-green-start) 0,
+      var(--background-modal-gradient-green-end) 100%
+    ),
+    var(--background-primary);
+}
+.tier2Background_c7bb69 {
+  background: radial-gradient(
+      112.41% 100% at 50% 100%,
+      var(--background-primary) 49.85%,
+      var(--transparent) 100%
+    ),
+    linear-gradient(
+      270deg,
+      var(--background-modal-gradient-pink-start) 0,
+      var(--background-modal-gradient-pink-end) 100%
+    ),
+    var(--background-primary);
+}
+.bigWumpus_c7bb69 {
+  height: 159px;
+  position: absolute;
+  right: 41px;
+  top: 28px;
+  z-index: 1000;
+}
+.wumpus_c7bb69 {
+  height: 117px;
+  position: absolute;
+  right: 35px;
+  top: 12px;
+}
+.bigCloud_c7bb69 {
+  left: calc(50% - 60px);
+  position: absolute;
+  top: 39px;
+  transform: translateX(-50%);
+}
+.smallCloud_c7bb69 {
+  position: absolute;
+  right: 39px;
+  top: 58px;
+}
+.mediumCloud_c7bb69 {
+  left: 28px;
+  position: absolute;
+  top: 22px;
+}
+.closeButtonPosition_c7bb69 {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.textContainer_c7bb69 {
+  gap: var(--space-16);
+}
+.headerTextWrapper_c7bb69,
+.textContainer_c7bb69 {
+  display: flex;
+  flex-direction: column;
+}
+.headerTextWrapper_c7bb69 {
+  background-color: var(--background-primary);
+  gap: var(--space-12);
+  justify-content: center;
+  padding-bottom: var(--space-12);
+  padding-top: var(--space-24);
+  text-align: center;
+}
+.oneStepCheckoutTextWrapper_c7bb69 {
+  background-color: var(--background-primary);
+  padding: var(--space-16) var(--space-16) var(--space-12);
+}
+.wordmark_c7bb69 {
+  height: 22px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .tier2Animation__387d4 {
   position: relative;
 }
@@ -60922,4 +61041,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.512c1596def28339.css.map*/
+/*# sourceMappingURL=12633.1907764d2d3150ec.css.map*/
