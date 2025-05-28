@@ -28,6 +28,30 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Discord Orbs Intro <br /></strong
+  ><strong>Quest Name: Discord Orbs Intro Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong> Discord Orbs Intro </strong
+  >in Discord to receive
+  <a href="https://support.discord.com/hc/articles/30593690165783"
+    ><strong
+      ><span class="wysiwyg-underline" style="color: #1155cc"
+        >Discord Orbs</span
+      ></strong
+    ></a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to
+  limited users on desktop where <strong>Discord</strong> is available and who
+  are in the Orbs Beta. Discord’s premium services are restricted in some
+  regions.<br /><strong>Availability Period:</strong> The
+  <strong>Discord Orbs Intro Quest </strong>can be accepted on Discord desktop
+  app or browser client from <strong>May 28, 2025 </strong>until<strong>
+    June 10, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 10, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Bad Guys 2 <br /></strong
   ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
   ><strong>Offer Details: </strong>Watch
