@@ -39713,6 +39713,9 @@ div.mobilePushContainer__3d3b0 {
       var(--custom-chat-aligned-icon-offset)
   );
 }
+.theme-light.custom-theme-background .container__9293f {
+  background: var(--bg-overlay-chat);
+}
 .upperContainer__9293f {
   display: flex;
   flex: 1;
@@ -60733,7 +60736,7 @@ code {
     0.024 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.4 * 0.04
   );
   --bg-overlay-opacity-chat: calc(
-    0.54 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.4 * 0.9
+    0.57 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.4 * 0.95
   );
   --bg-overlay-opacity-home: calc(
     0.42 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.4 * 0.7
@@ -60742,7 +60745,7 @@ code {
     0.54 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.4 * 0.9
   );
   --bg-overlay-opacity-floating: calc(
-    0.665 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.3 * 0.95
+    0.8 + var(--theme-bg-overlay-opacity-mix-amount, 1) * 0.2 * 1
   );
 }
 .custom-theme-background .theme-light,
@@ -61040,4 +61043,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.18f669c0b8d63753.css.map*/
+/*# sourceMappingURL=12633.d12855dcf4eafd35.css.map*/
