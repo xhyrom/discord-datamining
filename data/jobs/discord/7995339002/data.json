@@ -30,7 +30,7 @@
     }
   ],
   "id": 7995339002,
-  "updated_at": "2025-05-19T12:39:33-04:00",
+  "updated_at": "2025-05-29T16:45:12-04:00",
   "requisition_id": "R-100927",
   "title": "Senior Software Engineer, Data Platform",
   "company_name": "Discord",
@@ -45,13 +45,6 @@
     }
   ],
   "offices": [
-    {
-      "id": 4082816002,
-      "name": "Remote (U.S.)",
-      "location": null,
-      "child_ids": [],
-      "parent_id": null
-    },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",
