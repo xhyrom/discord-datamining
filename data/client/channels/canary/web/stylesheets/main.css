@@ -36373,9 +36373,6 @@ img.thumbnail__0f2e8 {
   gap: var(--spacing-8);
   padding: var(--spacing-16);
 }
-.hoverable__76c22 {
-  display: inline;
-}
 .roleDot__57082 {
   margin-left: -2px;
   margin-right: 2px;
@@ -61040,4 +61037,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d76864e7e4a38de0.css.map*/
+/*# sourceMappingURL=12633.3677248d48086dc8.css.map*/
