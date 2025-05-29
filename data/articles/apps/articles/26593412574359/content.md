@@ -372,28 +372,20 @@
   <strong>Important:</strong> The "Edit Image with Apps" feature provides a menu
   to discover image editing tools while maintaining user control and privacy. No
   images are automatically shared with these apps - they only receive images
-  when users explicitly choose to send them for editing. <span
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    ><br />Discord does not provide these apps with access to your message
-    content, and these apps do not passively receive information about the
-    Discord server where you might see them in this feature. <br /></span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Users must manually authorize each app and decide to use it on specific
-    images. If you do choose to use one of these apps, then the app can access
-    the specific image you're editing, your command request, and your basic user
-    profile information (such as your username, ID, avatar, and, if used in a
-    server, your server nickname, roles, and permissions).<br /></span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >Both server administrators and individual users maintain control over this
-    feature - admins can disable external app usage (see below) and individual
-    users choose whether or not to authorize and use these apps.</span
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    ><br />If you want to limit the visibility of these apps in your server, you
-    can edit permissions so only a user that uses a command sees the results.
-    You can learn more about that
-    <a href="#h_01J8JFFXHV1QF8HRCTBH40H5C8">here.</a></span
-  >
+  when users explicitly choose to send them for editing.<br /><br />Discord does
+  not provide these apps with access to your message content, and these apps do
+  not passively receive information about the Discord server where you might see
+  them in this feature. <br />Users must manually authorize each app and decide
+  to use it on specific images. If you do choose to use one of these apps, then
+  the app can access the specific image you're editing, your command request,
+  and your basic user profile information (such as your username, ID, avatar,
+  and, if used in a server, your server nickname, roles, and permissions).<br /><br />Both
+  server administrators and individual users maintain control over this feature
+  - admins can disable external app usage (see below) and individual users
+  choose whether or not to authorize and use these apps.<br /><br />If you want
+  to limit the visibility of these apps in your server, you can edit permissions
+  so only a user that uses a command sees the results. You can learn more about
+  that <a href="#h_01J8JFFXHV1QF8HRCTBH40H5C8">here.</a>
 </div>
 <h1 id="h_01J8JFFXHVNB9G8JMTQ0ES9AV7">
   Joining and Inviting Others to Join Activities
