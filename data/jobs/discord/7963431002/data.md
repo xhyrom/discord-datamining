@@ -10,14 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963431002](https://discord.com/jobs/7963431002)
 
-**Updated At:** Thu, 22 May 2025 14:30:38 GMT
+**Updated At:** Thu, 29 May 2025 18:53:17 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on the Developer Platform Team is to help game studios succeed by creating meaningful experiences for players. As a B2B2C team, we serve two key audiences. For game studios, we build smart integrations and intuitive tools that make it easy for developers, community managers, and marketers to connect with players and bring the best of Discord into their games. For players, we enhance on-platform experiences that deepen their connection to the games they love—and make it easier to build lasting friendships through play.
 While this role will eventually support experiences for both audiences, your initial focus will be on the game studio experience. We’re looking for a designer who’s excited to shape the future of our tools and offerings for the developers, community managers, and marketers who bring games to life. You’ll design cohesive, empowering, and delightful experiences across every touchpoint studios have with Discord—from onboarding and documentation to dashboards, self-serve portals, Official Game Communities, and beyond.
 As a product designer, you’ll work across the full product development cycle—from early exploration through to launch and iteration. You’ll apply a thoughtful blend of user empathy, systems thinking, and visual craft to solve meaningful problems for businesses and players alike. If you’re energized by complex challenges, passionate about the developer experience, and excited to help define how studios build with Discord, we’d love to hear from you.
-&amp;nbsp;
-This position is US-based only. We are seeking candidates located in the San Francisco Bay Area.
+We are seeking candidates located in the San Francisco Bay Area.
 What You'll Be Doing
 
 You will embed within a product squad and partner with engineers, product managers, researchers, and data scientists to oversee the user experience of a product from concept to launch — and then continue to improve it after release.
