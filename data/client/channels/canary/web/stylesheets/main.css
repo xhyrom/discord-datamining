@@ -21595,6 +21595,21 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   flex-direction: row;
   gap: var(--spacing-4);
 }
+.addEmojiButton__08434 {
+  height: 14px;
+  line-height: 20px;
+  margin: 9px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.addEmojiButton__08434 > div {
+  align-items: center;
+  display: flex;
+}
+.addEmojiButton__08434 svg {
+  margin-right: 4px;
+}
 .container_d4ced7 {
   bottom: 100%;
   left: auto;
@@ -61221,4 +61236,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f4e7e63f7a36f794.css.map*/
+/*# sourceMappingURL=12633.0c5096b8a0f5e321.css.map*/
