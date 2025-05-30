@@ -20,19 +20,19 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "google",
-    "payment",
-    "sub",
     "answer-bot",
-    "billing",
-    "subscription",
-    "desktop",
-    "nitro",
-    "apple",
-    "browser",
+    "method",
     "payments",
-    "pay",
+    "browser",
+    "desktop",
+    "billing",
     "google pay",
-    "method"
+    "google",
+    "pay",
+    "apple",
+    "payment",
+    "nitro",
+    "sub",
+    "subscription"
   ]
 }
