@@ -23831,6 +23831,37 @@ html:not(.visual-refresh) .root_e5f3a9 {
   margin: 0 11px;
   width: 18px;
 }
+.badgeContainer_fc0249 {
+  align-items: center;
+  background: var(--background-primary);
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  margin-left: var(--space-16);
+  margin-top: var(--space-8);
+  padding: var(--spacing-8) var(--spacing-12);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.badgeContainer_fc0249.tier2_fc0249 {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 29, 165, 0.34),
+    rgba(30, 35, 83, 0.34) 120%
+  );
+}
+.badgeContainer_fc0249.tier0_fc0249 {
+  background: linear-gradient(
+    270deg,
+    rgba(20, 20, 203, 0.3),
+    rgba(33, 187, 99, 0.3)
+  );
+}
+.badgeText_fc0249 {
+  text-transform: uppercase;
+}
 .container_c7bb69 {
   align-items: flex-end;
   border-top-left-radius: calc(var(--radius-md) - 1px);
@@ -61190,4 +61221,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f3a411325e611c28.css.map*/
+/*# sourceMappingURL=12633.f9d4982485f95ba9.css.map*/
