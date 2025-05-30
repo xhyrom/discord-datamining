@@ -23883,8 +23883,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-green-end) 0,
-      var(--background-modal-gradient-green-start) 100%
+      var(--background-modal-gradient-nitro-2-end) 0,
+      var(--background-modal-gradient-nitro-2-start) 100%
     );
 }
 .tier2Background_c7bb69 {
@@ -23895,8 +23895,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-pink-end) 0,
-      var(--background-modal-gradient-pink-start) 100%
+      var(--background-modal-gradient-nitro-1-end) 0,
+      var(--background-modal-gradient-nitro-1-start) 100%
     );
 }
 .bigWumpus_c7bb69 {
@@ -61221,4 +61221,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f9d4982485f95ba9.css.map*/
+/*# sourceMappingURL=12633.f4e7e63f7a36f794.css.map*/
