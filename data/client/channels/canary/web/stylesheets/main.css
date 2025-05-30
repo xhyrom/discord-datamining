@@ -6643,6 +6643,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background: var(--background-code);
   border: 1px solid var(--border-normal);
 }
+.custom-theme-background .markup__75297 code {
+  background: color-mix(in oklab, var(--background-code) 95%, var(--white-500));
+}
 @media (-webkit-max-device-pixel-ratio: 1) {
   .theme-light .markup__75297 {
     font-weight: 500;
@@ -61017,4 +61020,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a34a8451f34f7a1b.css.map*/
+/*# sourceMappingURL=12633.7114c4bfac0aa1cc.css.map*/
