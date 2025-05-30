@@ -5000,6 +5000,7 @@
           (r.QUEST_VIDEO_TIME_TO_FIRST_FRAME =
             "quest_video_time_to_first_frame"),
           (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
+          (r.ATT_PROMPT_RESULT = "att_prompt_result"),
           (r.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (r.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
           (r.USER_AVATAR_UPDATED = "user_avatar_updated"),
@@ -5863,6 +5864,7 @@
           (r.CACHE_STORE_CACHE_SKIPPED = "cache_store_cache_skipped"),
           (r.GATEWAY_CONNECT_SKIPPED = "gateway_connect_skipped"),
           (r.POST_GATEWAY_CONNECT_SKIPPED = "post_gateway_connect_skipped"),
+          (r.GATEWAY_BRIDGE_TIMEOUT = "gateway_bridge_timeout"),
           (r.GATEWAY_SOCKET_RESET = "gateway_socket_reset"),
           (r.SESSION_START_CLIENT = "session_start_client"),
           (r.APPLE_PARTNER_IAP_REQUEST_SENT = "apple_partner_iap_request_sent"),
@@ -6169,6 +6171,7 @@
           (r.RING_CALL_ACCEPTED = "ring_call_accepted"),
           (r.CHANNEL_ICON_EDIT_PROGRESSED = "channel_icon_edit_progressed"),
           (r.GDM_EDIT_INTERACTED = "gdm_edit_interacted"),
+          (r.CAN_OPEN_URL_REQUESTED = "can_open_url_requested"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6747,7 +6750,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-29-25109bf52f4be54d28725dbda745ddfc8663016c-discord_web",
+              "2025-05-30-57688b9cddec0ed83c512d6d6e961c4cfcbc9abd-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6813,8 +6816,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "404023"),
-            o.YA("builtAt", String("1748548098747"));
+            o.YA("buildNumber", "404269"),
+            o.YA("builtAt", String("1748589515773"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46548,4 +46551,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.363500b20c636048.js.map
+//# sourceMappingURL=sentry.9556421d46eedeb6.js.map
