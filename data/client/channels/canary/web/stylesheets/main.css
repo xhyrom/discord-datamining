@@ -39695,7 +39695,7 @@ div.mobilePushContainer__3d3b0 {
       var(--custom-chat-aligned-icon-offset)
   );
 }
-.theme-light.custom-theme-background .container__9293f {
+.theme-light.client-theme-color-picker .container__9293f {
   background: var(--bg-overlay-chat);
 }
 .upperContainer__9293f {
@@ -61025,4 +61025,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6f9f912dbabf83d7.css.map*/
+/*# sourceMappingURL=12633.72bfca479bdd25e7.css.map*/
