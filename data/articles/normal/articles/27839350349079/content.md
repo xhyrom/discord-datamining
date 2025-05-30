@@ -28,7 +28,32 @@
   >
 </h1>
 <p>
-  <strong>Quest Video: New Ballerina Video <br /></strong
+  <strong>Quest Game: Marvel Rivals<br /></strong
+  ><strong>Quest Name: Marvel Rivals S2.5 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Marvel Rivals</strong> to receive an
+  <strong>Ultron Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
+  Xbox Series S where <strong>Discord</strong> and
+  <strong>Marvel Rivals</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Marvel Rivals S2.5 Quest </strong>can be accepted on
+  <strong>PC</strong>, <strong>PlayStation</strong> <strong>4</strong>,
+  <strong>PlayStation</strong> <strong>5</strong>,
+  <strong>Xbox Series X</strong>, and <strong>Xbox Series S</strong> from
+  <strong>May 30, 2025 </strong>until<strong> June 6, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 6, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Ultron Avatar Decoration</strong> is a limited-time Avatar Decoration
+  and will only be yours as an Avatar Decoration until
+  <strong>August 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.<br /><br /><strong
+    >Quest Video: New Ballerina Video <br /></strong
   ><strong>Quest Name: Ballerina Video Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
   <strong>New Ballerina Video </strong>in Discord to receive a
