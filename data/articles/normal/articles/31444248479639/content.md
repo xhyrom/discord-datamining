@@ -463,4 +463,103 @@
   A: Yes, there is a rate limit for changing your server tag. You can change
   your server tag after a certain period of time.
 </p>
+<p>
+  <strong
+    >Q: What are “Additional Perks” and how are they different from
+    Levels?</strong
+  >
+</p>
+<p>
+  A: Additional Perks are new features you can unlock directly with Boosts,
+  separate from your server's Boost Level. Currently, there are two available:
+  Enhanced Role Styles (which add gradient and holographic effects to roles) and
+  Server Tags (4-character identifiers members can display on their profiles
+  across Discord). Unlike traditional server levels, these perks can be unlocked
+  individually without reaching specific level thresholds.
+</p>
+<p><strong>Q: How much do the new Additional Perks cost?</strong></p>
+<p>
+  A: Enhanced Role Styles and Server Tags each cost 3 Boosts. If you want both
+  perks, you'll need 6 Boosts total (3 for each perk).
+</p>
+<p>
+  <strong
+    >Q: Are Additional Perks replacing the current server level system?</strong
+  >
+</p>
+<p>
+  A: No, this supplements the existing level system. All current server level
+  perks (emoji slots, file upload limits, etc.) remain exactly the same. This
+  new system simply gives you additional ways to use your Boosts for targeted
+  perks without affecting your server's level progression.
+</p>
+<p>
+  <strong
+    >Q: Do Additional Perks use separate Boosts from my server level?</strong
+  >
+</p>
+<p>
+  A: Yes, Boosts used for Additional Perks are dedicated specifically to those
+  perks and don't count toward your server's level progression. Similarly,
+  Boosts allocated to your server level can't be used for Additional Perks.
+  You'll need separate Boosts for each - so if you want Enhanced Role Styles,
+  you need 3 Boosts just for that perk, plus whatever Boosts you want to
+  maintain your current server level.
+</p>
+<p>
+  <strong
+    >Q: What happens to my Additional Perks if my server loses Boosts?</strong
+  >
+</p>
+<p>
+  A: Perks require ongoing Boost allocation to remain active. If your server
+  drops below the required number of Boosts for a perk, that perk will be
+  disabled. Enhanced Role Styles will revert to solid colors, and Server Tags
+  will be removed from members' profiles. Server owners/admins can choose which
+  perks to maintain if Boost counts drop.
+</p>
+<p>
+  <strong>Q: Why can't I unlock perks even though I have enough Boosts?</strong>
+</p>
+<p>
+  A: Make sure you're accessing the Server Boost tab (visible only to server
+  owners/admins) and that your Boosts are "available" rather than already
+  allocated to your server level. Only server members with admin permissions can
+  unlock Additional Perks. You need to have enough unallocated Boosts to enable
+  Additional Perks. 
+</p>
+<p>
+  <strong
+    >Q: Can I move Boosts between levels and perks after I've allocated
+    them?</strong
+  >
+</p>
+<p>
+  A: Yes, server owners and admins can reallocate Boosts between server levels
+  and Additional Perks through the Server Boosts tab. However, if you move
+  Boosts away from a perk, that perk will be disabled until you allocate enough
+  Boosts back to it.
+</p>
+<p>
+  <strong
+    >Q: Are Additional Perks a one-time purchase, or do they require ongoing
+    Boosts?</strong
+  >
+</p>
+<p>
+  A: Each additional perk requires an ongoing allocation of its required Boosts
+  to stay active, just like levels. If your server drops below the required
+  number of Boosts, the perk will be disabled until the necessary Boosts are
+  reallocated.
+</p>
+<p>
+  <strong
+    >Q: Can I purchase and manage Additional Perks from both desktop and
+    mobile?</strong
+  >
+</p>
+<p>
+  <strong>A:</strong> Additional Perks can currently only be purchased and
+  configured on desktop.
+</p>
 <p> </p>
