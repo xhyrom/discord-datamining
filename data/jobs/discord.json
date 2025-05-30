@@ -2600,7 +2600,7 @@
       "education": "education_optional",
       "internal_job_id": 6165126002,
       "location": {
-        "name": "\"San Francisco, CA\" or \"Remote (U.S.)\""
+        "name": "San Francisco"
       },
       "metadata": [
         {
@@ -2617,7 +2617,7 @@
         }
       ],
       "id": 8000265002,
-      "updated_at": "2025-05-29T20:31:37-04:00",
+      "updated_at": "2025-05-30T18:25:29-04:00",
       "requisition_id": "R-100932",
       "title": "Senior Technical Recruiter TFTE",
       "company_name": "Discord",
