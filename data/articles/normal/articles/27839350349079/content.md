@@ -28,13 +28,45 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: New Ballerina Video <br /></strong
+  ><strong>Quest Name: Ballerina Video Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>New Ballerina Video </strong>in Discord to receive a
+  <strong>Ballerina Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users who are aged 18+ in the
+  <strong>United States</strong> on desktop where <strong>Discord</strong> is
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Ballerina Video Quest </strong>can be accepted on Discord desktop
+  app or browser client from <strong>May 30, 2025 </strong>until<strong>
+    June 6, 2025 (11:59PM PT)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 6, 2025 (11:59 PT)</strong>.<br />The
+  <strong>Ballerina Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 6, 2025 (11:59PM PT)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong
+    >Other Terms: Limit of one reward redemption per account.<br /><br
+  /></strong>
+</p>
+<p>
   <strong>Quest Video: Discord Orbs Intro <br /></strong
   ><strong>Quest Name: Discord Orbs Intro Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong> Discord Orbs Intro </strong
   >in Discord to receive
   <a href="https://support.discord.com/hc/articles/30593690165783"
     ><strong
-      ><span class="wysiwyg-underline" style="color: #1155cc"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
         >Discord Orbs</span
       ></strong
     ></a
