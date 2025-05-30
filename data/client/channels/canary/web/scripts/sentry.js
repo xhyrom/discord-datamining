@@ -6749,7 +6749,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-eb64005f71be7b7e50e6c8f5a50b9ce414d0d16e",
+            release: "discord_web-199e3a388c6aeb72cd7b77d03366c72f747b50c9",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6815,8 +6815,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "404355"),
-            o.YA("builtAt", String("1748623878847"));
+            o.YA("buildNumber", "404361"),
+            o.YA("builtAt", String("1748624974013"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -9349,6 +9349,44 @@
                 [r.LIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              },
+              SCRIM_DEFAULT: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+              },
+              SCRIM_LIGHTBOX: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
               },
               SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB: {
                 category: "generic",
@@ -17092,6 +17130,18 @@
             r.I.BRAND_500,
             r.I.BRAND_500,
             r.I.BRAND_500,
+          ],
+          "scrim-default": [
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_72,
+          ],
+          "scrim-lightbox": [
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
           ],
           "scrollbar-auto-scrollbar-color-thumb": [
             r.I.PRIMARY_730,
@@ -46550,4 +46600,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.74bfa3ae3de3f8f7.js.map
+//# sourceMappingURL=sentry.dccefefdd19cc865.js.map
