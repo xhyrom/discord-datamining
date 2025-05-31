@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 42,
+  "subdomain_count": 43,
   "subdomains": [
     "o12.ptr5556",
     "staging-invite",
@@ -42,6 +42,7 @@
     "remote-auth-gateway",
     "staging-images-1",
     "staging-gateway-us-east1-d",
+    "otelcol",
     "datahub-prd"
   ]
 }
