@@ -19190,14 +19190,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   background-color: var(--background-primary);
   box-shadow: inset 0 0 0 1px var(--background-modifier-accent);
 }
-.link_c53b47 {
-  color: var(--text-link);
-  margin-left: auto;
-  white-space: nowrap;
-}
-.link_c53b47 svg {
-  margin: 0 2px 0 4px;
-}
 .listWrapper_c656ac {
   bottom: 0;
   left: 0;
@@ -61236,4 +61228,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0c5096b8a0f5e321.css.map*/
+/*# sourceMappingURL=12633.36432d956b12dd48.css.map*/
