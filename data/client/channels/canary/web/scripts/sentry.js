@@ -6749,7 +6749,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9f52513044b008f287a2dd446b587be3fb4a0097",
+            release: "discord_web-6887c8bdfbb220b99e5519bf5dc514f485864e5b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6815,8 +6815,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "405042"),
-            o.YA("builtAt", String("1748900558582"));
+            o.YA("buildNumber", "405044"),
+            o.YA("builtAt", String("1748900654504"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -9762,6 +9762,13 @@
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 0.16 },
                 [r.MIDNIGHT]: { raw: "PLUM_13", opacity: 0.3 },
                 [r.DARKER]: { raw: "PLUM_13", opacity: 0.3 },
+              },
+              USER_PROFILE_TOOLBAR_BORDER: {
+                category: "generic",
+                [r.DARK]: { raw: "WHITE", opacity: 0.03 },
+                [r.LIGHT]: { raw: "BLACK", opacity: 0.04 },
+                [r.MIDNIGHT]: { raw: "PLUM_11", opacity: 0.08 },
+                [r.DARKER]: { raw: "PLUM_11", opacity: 0.06 },
               },
               VOICE_VIDEO_VIDEO_TILE_BACKGROUND: {
                 category: "generic",
@@ -17391,6 +17398,12 @@
             r.I.PRIMARY_400,
             r.I.PLUM_13,
             r.I.PLUM_13,
+          ],
+          "user-profile-toolbar-border": [
+            r.I.WHITE,
+            r.I.BLACK,
+            r.I.PLUM_11,
+            r.I.PLUM_11,
           ],
           "voice-video-video-tile-background": [
             r.I.PLUM_17,
@@ -46600,4 +46613,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.e092519aa5a1d293.js.map
+//# sourceMappingURL=sentry.67066ef0035267c6.js.map
