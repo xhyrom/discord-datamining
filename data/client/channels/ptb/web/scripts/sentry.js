@@ -3059,8 +3059,8 @@
             GUILD_FEED_MARK_SEEN: (t) =>
               "/guilds/".concat(t, "/guild-feed/mark-seen"),
             PINS_ACK: (t) => "/channels/".concat(t, "/pins/ack"),
-            PINS: (t) => "/channels/".concat(t, "/pins"),
-            PIN: (t, e) => "/channels/".concat(t, "/pins/").concat(e),
+            PINS: (t) => "/channels/".concat(t, "/messages/pins"),
+            PIN: (t, e) => "/channels/".concat(t, "/messages/pins/").concat(e),
             INSTANT_INVITES: (t) => "/channels/".concat(t, "/invites"),
             TYPING: (t) => "/channels/".concat(t, "/typing"),
             CHANNEL_PERMISSIONS_OVERWRITE: (t, e) =>
@@ -6750,7 +6750,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-05-30-57688b9cddec0ed83c512d6d6e961c4cfcbc9abd-discord_web",
+              "2025-06-02-127f08e0f93faf8c5a1f97059851eec49a637460-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6816,8 +6816,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "404269"),
-            o.YA("builtAt", String("1748589515773"));
+            o.YA("buildNumber", "404755"),
+            o.YA("builtAt", String("1748848743238"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -9350,6 +9350,44 @@
                 [r.LIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "BRAND_500", opacity: 1 },
                 [r.DARKER]: { raw: "BRAND_500", opacity: 1 },
+              },
+              SCRIM_DEFAULT: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_72",
+                  opacity: 0.7215686274509804,
+                },
+              },
+              SCRIM_LIGHTBOX: {
+                category: "generic",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_92",
+                  opacity: 0.9215686274509803,
+                },
               },
               SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB: {
                 category: "generic",
@@ -17093,6 +17131,18 @@
             r.I.BRAND_500,
             r.I.BRAND_500,
             r.I.BRAND_500,
+          ],
+          "scrim-default": [
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_72,
+            r.I.OPACITY_BLACK_72,
+          ],
+          "scrim-lightbox": [
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
+            r.I.OPACITY_BLACK_92,
           ],
           "scrollbar-auto-scrollbar-color-thumb": [
             r.I.PRIMARY_730,
@@ -46551,4 +46601,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9556421d46eedeb6.js.map
+//# sourceMappingURL=sentry.6e93d3bbb8deac7d.js.map
