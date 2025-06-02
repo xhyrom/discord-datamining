@@ -11575,7 +11575,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   display: flex;
   flex-shrink: 0;
   gap: 4px;
+  max-width: 100%;
   overflow: hidden;
+}
+.activitiesTooltip_c9d15c,
+.tooltip_c9d15c {
+  word-break: break-word;
 }
 .activitiesTooltip_c9d15c {
   align-items: start;
@@ -11599,6 +11604,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.textWithIconContainer_c9d15c {
+  max-width: 100%;
+}
+.activityCounter_c9d15c {
+  flex-shrink: 0;
 }
 .emoji_c9d15c {
   flex: 0 0 auto;
@@ -61228,4 +61239,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.36432d956b12dd48.css.map*/
+/*# sourceMappingURL=12633.67d6f906503aba53.css.map*/
