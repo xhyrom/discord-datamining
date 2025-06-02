@@ -1042,6 +1042,21 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 :where(.visual-refresh) .lookFilled__201d5.colorWhite__201d5:active {
   background-color: var(--button-filled-white-background-active);
 }
+.scrim_d9cec8 {
+  background-color: var(--scrim-default);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: var(--devtools-sidebar-width, 0);
+  top: 0;
+  transform: translateZ(0);
+}
+.lightbox_d9cec8 {
+  background-color: var(--scrim-lightbox);
+}
+.pointerEventsNone_d9cec8 {
+  pointer-events: none;
+}
 .dots__5ad89 {
   color: var(--white-500);
   pointer-events: none;
@@ -6642,6 +6657,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .visual-refresh .markup__75297 code {
   background: var(--background-code);
   border: 1px solid var(--border-normal);
+}
+.custom-theme-background .markup__75297 code {
+  background: color-mix(in oklab, var(--background-code) 95%, var(--white-500));
 }
 @media (-webkit-max-device-pixel-ratio: 1) {
   .theme-light .markup__75297 {
@@ -17471,10 +17489,9 @@ span.clanTag__5d473 {
       var(--background-modal-gradient-nitro-1-start) 0,
       var(--background-modal-gradient-nitro-1-end) 100%
     );
-  border-radius: inherit;
+  background-color: var(--background-primary);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: inset 0 0 0 1px var(--border-subtle);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -17512,11 +17529,8 @@ span.clanTag__5d473 {
 }
 .footer__4f6e5 {
   background-color: var(--background-primary);
-  border-bottom: 1px solid var(--border-subtle);
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
-  border-left: 1px solid var(--border-subtle);
-  border-right: 1px solid var(--border-subtle);
   box-sizing: border-box;
   margin-top: auto;
   padding-bottom: var(--spacing-32);
@@ -17529,16 +17543,6 @@ span.clanTag__5d473 {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 var(--spacing-32);
-}
-.visual-refresh .container__4f6e5,
-.visual-refresh .ctaContainer__4f6e5 {
-  background-color: var(--modal-background);
-}
-.visual-refresh .container__4f6e5 {
-  border-radius: var(--radius-sm);
-}
-.visual-refresh .ctaContainer__4f6e5 {
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 .noParentContainer_d829e7 {
   bottom: 0;
@@ -19185,14 +19189,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .theme-light .emojiItem_fc7141.expandCollapseButtonSelected_fc7141 {
   background-color: var(--background-primary);
   box-shadow: inset 0 0 0 1px var(--background-modifier-accent);
-}
-.link_c53b47 {
-  color: var(--text-link);
-  margin-left: auto;
-  white-space: nowrap;
-}
-.link_c53b47 svg {
-  margin: 0 2px 0 4px;
 }
 .listWrapper_c656ac {
   bottom: 0;
@@ -21591,6 +21587,21 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   flex-direction: row;
   gap: var(--spacing-4);
 }
+.addEmojiButton__08434 {
+  height: 14px;
+  line-height: 20px;
+  margin: 9px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.addEmojiButton__08434 > div {
+  align-items: center;
+  display: flex;
+}
+.addEmojiButton__08434 svg {
+  margin-right: 4px;
+}
 .container_d4ced7 {
   bottom: 100%;
   left: auto;
@@ -23598,6 +23609,56 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   right: -75px;
   top: -120px;
 }
+.shaker_e5f3a9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  max-height: 720px;
+}
+html:not(.visual-refresh) .root_e5f3a9 {
+  background-color: transparent;
+}
+.root_e5f3a9 > :last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.visual-refresh .shaker_e5f3a9 {
+  max-height: inherit;
+}
+.visual-refresh .root_e5f3a9 > :last-child {
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+}
+.root_e5f3a9.withHeader_e5f3a9 > :first-child {
+  background-color: transparent;
+}
+@media (max-width: 485px) {
+  .shaker_e5f3a9 {
+    bottom: 0;
+    left: 0;
+    max-height: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .root_e5f3a9,
+  .shaker_e5f3a9 {
+    justify-content: center;
+  }
+  .root_e5f3a9 {
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+.halloweenModalHeight_e5f3a9 {
+  max-height: 800px;
+}
+.premiumRebrandBackground_e5f3a9 {
+  background-color: var(--background-primary) !important;
+}
 .container_b7b2cf {
   align-items: center;
   display: flex;
@@ -23777,10 +23838,41 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin: 0 11px;
   width: 18px;
 }
+.badgeContainer_fc0249 {
+  align-items: center;
+  background: var(--background-primary);
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  margin-left: var(--space-16);
+  margin-top: var(--space-8);
+  padding: var(--spacing-8) var(--spacing-12);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.badgeContainer_fc0249.tier2_fc0249 {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 29, 165, 0.34),
+    rgba(30, 35, 83, 0.34) 120%
+  );
+}
+.badgeContainer_fc0249.tier0_fc0249 {
+  background: linear-gradient(
+    270deg,
+    rgba(20, 20, 203, 0.3),
+    rgba(33, 187, 99, 0.3)
+  );
+}
+.badgeText_fc0249 {
+  text-transform: uppercase;
+}
 .container_c7bb69 {
   align-items: flex-end;
-  border-top-left-radius: var(--radius-md);
-  border-top-right-radius: var(--radius-md);
+  border-top-left-radius: calc(var(--radius-md) - 1px);
+  border-top-right-radius: calc(var(--radius-md) - 1px);
   display: flex;
   height: 120px;
   min-height: 120px;
@@ -23792,29 +23884,27 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .tier0Background_c7bb69 {
   background: radial-gradient(
-      112.41% 100% at 50% 100%,
-      var(--background-primary) 49.85%,
+      100% 100% at 50% 100%,
+      var(--background-primary) 60%,
       var(--transparent) 100%
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-green-start) 0,
-      var(--background-modal-gradient-green-end) 100%
-    ),
-    var(--background-primary);
+      var(--background-modal-gradient-nitro-2-end) 0,
+      var(--background-modal-gradient-nitro-2-start) 100%
+    );
 }
 .tier2Background_c7bb69 {
   background: radial-gradient(
-      112.41% 100% at 50% 100%,
-      var(--background-primary) 49.85%,
+      100% 100% at 50% 100%,
+      var(--background-primary) 60%,
       var(--transparent) 100%
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-pink-start) 0,
-      var(--background-modal-gradient-pink-end) 100%
-    ),
-    var(--background-primary);
+      var(--background-modal-gradient-nitro-1-end) 0,
+      var(--background-modal-gradient-nitro-1-start) 100%
+    );
 }
 .bigWumpus_c7bb69 {
   height: 159px;
@@ -24173,57 +24263,9 @@ body .headerAnimation_b54a5b {
   background-size: unset;
 }
 .spinner_ca0af2 {
-  background-color: var(--modal-background);
   border-radius: 4px;
   max-height: 720px;
   min-height: 200px;
-}
-.shaker_e5f3a9 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  height: 100%;
-  justify-content: center;
-  max-height: 720px;
-}
-html:not(.visual-refresh) .root_e5f3a9 {
-  background-color: transparent;
-}
-.root_e5f3a9 > :last-child {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.visual-refresh .shaker_e5f3a9 {
-  max-height: inherit;
-}
-.visual-refresh .root_e5f3a9 > :last-child {
-  border-bottom-left-radius: var(--radius-sm);
-  border-bottom-right-radius: var(--radius-sm);
-}
-.root_e5f3a9.withHeader_e5f3a9 > :first-child {
-  background-color: transparent;
-}
-@media (max-width: 485px) {
-  .shaker_e5f3a9 {
-    bottom: 0;
-    left: 0;
-    max-height: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .root_e5f3a9,
-  .shaker_e5f3a9 {
-    justify-content: center;
-  }
-  .root_e5f3a9 {
-    border-radius: 0;
-    width: 100vw;
-  }
-}
-.halloweenModalHeight_e5f3a9 {
-  max-height: 800px;
 }
 .cardIcon__29abc {
   box-shadow: 0 1px 3px var(--opacity-black-8);
@@ -29282,6 +29324,10 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .invoice_e4d803,
 .taxInclusiveNote_e4d803 {
   margin-bottom: 16px;
+}
+.premiumRebrandInputBackground_e4d803 {
+  background-color: var(--background-mod-subtle) !important;
+  border: 0 !important;
 }
 .paymentSourceWrapper_e4d803 {
   margin: 12px 0;
@@ -43829,77 +43875,6 @@ html.disable-forced-colors * {
 .closeCircle__2a891:hover {
   color: var(--interactive-hover);
 }
-.themeSelector__5a15d {
-  margin-right: var(--spacing-8);
-  min-width: 200px;
-}
-.themeSelector__5a15d .pillContainer {
-  height: 32px;
-}
-.container__1436a {
-  background: var(--background-primary);
-  border-left: 5px solid var(--background-secondary);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
-  height: 100%;
-  right: 0;
-}
-.editorBody__1436a {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 234px;
-}
-.header__1436a,
-.subheader__1436a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.header__1436a {
-  margin: 16px 0;
-}
-.subheader__1436a {
-  margin: 12px 0 8px;
-}
-.slider__1436a {
-  margin: -8px 0;
-  width: 100%;
-}
-.themeColorPicker__1436a {
-  border: none;
-  box-shadow: none;
-  box-sizing: border-box;
-  width: 100%;
-}
-.themeControl__1436a {
-  margin-top: 16px;
-}
-.themeControl__1436a:first-of-type {
-  margin-top: 0;
-}
-.colorList__1436a {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 8px;
-}
-.colorItem__1436a {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-}
-.colorPreview__1436a {
-  border: 1px solid var(--background-tertiary);
-  border-radius: 4px;
-  height: 24px;
-  width: 24px;
-}
-.exitButton__1436a,
-.saveButton__1436a {
-  margin-top: 16px;
-}
 .container__8fea4 {
   align-items: center;
   border-color: var(--border-subtle);
@@ -44122,6 +44097,178 @@ html.disable-forced-colors * {
   height: 24px;
   margin-right: 10px;
   width: 24px;
+}
+.container_b29565 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  width: 100%;
+}
+.headerContainer_b29565 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.addColorButtonText_b29565 {
+  color: var(--text-brand);
+}
+.gradientBar_b29565 {
+  border-radius: 8px;
+  height: 44px;
+  position: relative;
+  width: 100%;
+}
+.colorCircle_b29565 {
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.full-motion .colorCircle_b29565 {
+  transition: all 0.2s ease;
+}
+.full-motion .colorCircle_b29565:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.colorCircleSelected_b29565 {
+  border: 4px solid var(--brand-500);
+}
+.colorCircleInner_b29565 {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow:
+    0 3px 13.2px 0 rgba(0, 0, 0, 0.15),
+    0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  height: 16px;
+  width: 16px;
+}
+.colorCircle_b29565:hover .removeColorButton_b29565 {
+  opacity: 1;
+}
+.hexInputContainer_b29565 {
+  align-items: center;
+  background: var(--background-mod-subtle);
+  border: 1px solid var(--border-faint);
+  border-radius: 8px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  padding: 4px 8px;
+  position: relative;
+}
+.colorSwatch_b29565 {
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  flex-shrink: 0;
+  height: 16px;
+  width: 16px;
+}
+.hexInput_b29565 {
+  flex: 1 1 auto;
+  padding-left: 8px;
+}
+.hexInputInner_b29565 {
+  background: none;
+  border: none;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  padding: 0;
+}
+.eyeDropperIcon_b29565 {
+  height: 16px;
+  width: 16px;
+}
+.colorItem_b29565 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.colorPreview_b29565 {
+  border: 1px solid var(--background-tertiary);
+  border-radius: 4px;
+  height: 24px;
+  width: 24px;
+}
+.enable-forced-colors .container_b29565 {
+  forced-color-adjust: none;
+}
+.themeSelector__5a15d {
+  margin-right: var(--spacing-8);
+  min-width: 200px;
+}
+.themeSelector__5a15d .pillContainer {
+  height: 32px;
+}
+.container__68a18 {
+  background: var(--background-primary);
+  border-left: 5px solid var(--background-secondary);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  height: 100%;
+  right: 0;
+}
+.editorBody__68a18 {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 234px;
+}
+.header__68a18,
+.subheader__68a18 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header__68a18 {
+  margin: 16px 0;
+}
+.subheader__68a18 {
+  margin: 12px 0 8px;
+}
+.slider__68a18 {
+  margin: -8px 0;
+  width: 100%;
+}
+.themeColorPicker__68a18 {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+.themeControl__68a18 {
+  margin-top: 16px;
+}
+.themeControl__68a18:first-of-type {
+  margin-top: 0;
+}
+.colorList__68a18 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.colorItem__68a18 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.colorPreview__68a18 {
+  border: 1px solid var(--background-tertiary);
+  border-radius: 4px;
+  height: 24px;
+  width: 24px;
+}
+.exitButton__68a18,
+.saveButton__68a18 {
+  margin-top: 16px;
 }
 .errorPage_a57b28 {
   width: 100%;
@@ -45252,6 +45399,8 @@ html.disable-forced-colors * {
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--primary-645);
   --redesign-input-control-selected: var(--brand-500);
+  --scrim-default: hsl(var(--opacity-black-72-hsl) / 0.7215686274509804);
+  --scrim-lightbox: hsl(var(--opacity-black-92-hsl) / 0.9215686274509803);
   --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
   --scrollbar-auto-scrollbar-color-track: var(--primary-630);
   --scrollbar-auto-thumb: var(--primary-730);
@@ -46498,6 +46647,18 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --scrim-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --scrim-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
+    );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
       var(--primary-730) 100%,
@@ -47035,6 +47196,8 @@ html.disable-forced-colors * {
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--white);
   --redesign-input-control-selected: var(--brand-500);
+  --scrim-default: hsl(var(--opacity-black-52-hsl) / 0.5215686274509804);
+  --scrim-lightbox: hsl(var(--opacity-black-92-hsl) / 0.9215686274509803);
   --scrollbar-auto-scrollbar-color-thumb: var(--primary-230);
   --scrollbar-auto-scrollbar-color-track: var(--primary-130);
   --scrollbar-auto-thumb: var(--primary-300);
@@ -48283,6 +48446,18 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --scrim-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --scrim-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
+    );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
       var(--primary-230) 100%,
@@ -48827,6 +49002,8 @@ html.disable-forced-colors * {
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--plum-17);
   --redesign-input-control-selected: var(--brand-500);
+  --scrim-default: hsl(var(--opacity-black-72-hsl) / 0.7215686274509804);
+  --scrim-lightbox: hsl(var(--opacity-black-92-hsl) / 0.9215686274509803);
   --scrollbar-auto-scrollbar-color-thumb: var(--plum-20);
   --scrollbar-auto-scrollbar-color-track: var(--plum-17);
   --scrollbar-auto-thumb: var(--plum-16);
@@ -50076,6 +50253,18 @@ html.disable-forced-colors * {
       var(--brand-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --scrim-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --scrim-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
+    );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
       var(--plum-20) 100%,
@@ -50618,6 +50807,8 @@ html.disable-forced-colors * {
   --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
   --redesign-input-control-active-bg: var(--plum-16);
   --redesign-input-control-selected: var(--brand-500);
+  --scrim-default: hsl(var(--opacity-black-72-hsl) / 0.7215686274509804);
+  --scrim-lightbox: hsl(var(--opacity-black-92-hsl) / 0.9215686274509803);
   --scrollbar-auto-scrollbar-color-thumb: var(--plum-21);
   --scrollbar-auto-scrollbar-color-track: var(--plum-17);
   --scrollbar-auto-thumb: var(--plum-21);
@@ -51866,6 +52057,18 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-500) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --scrim-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --scrim-lightbox: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-92-hsl) / 0.9215686274509803) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9215686274509803)
+        var(--theme-base-color-amount, 0%)
     );
     --scrollbar-auto-scrollbar-color-thumb: color-mix(
       in oklab,
@@ -61025,4 +61228,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.72bfca479bdd25e7.css.map*/
+/*# sourceMappingURL=12633.36432d956b12dd48.css.map*/
