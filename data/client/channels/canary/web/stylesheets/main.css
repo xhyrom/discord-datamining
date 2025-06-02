@@ -23932,19 +23932,25 @@ html:not(.visual-refresh) .root_e5f3a9 {
 }
 .bigCloud_c7bb69 {
   left: calc(50% - 60px);
+  opacity: 0.25;
   position: absolute;
   top: 39px;
   transform: translateX(-50%);
-}
-.smallCloud_c7bb69 {
-  position: absolute;
-  right: 39px;
-  top: 58px;
+  width: 120px;
 }
 .mediumCloud_c7bb69 {
   left: 28px;
+  opacity: 0.35;
   position: absolute;
   top: 22px;
+  width: 74px;
+}
+.smallCloud_c7bb69 {
+  opacity: 0.25;
+  position: absolute;
+  right: 39px;
+  top: 58px;
+  width: 59px;
 }
 .closeButtonPosition_c7bb69 {
   position: absolute;
@@ -61249,4 +61255,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ca509de7a6347657.css.map*/
+/*# sourceMappingURL=12633.4281fac52d78ed7d.css.map*/
