@@ -2016,7 +2016,7 @@
         }
       ],
       "id": 7978053002,
-      "updated_at": "2025-05-29T16:56:42-04:00",
+      "updated_at": "2025-06-02T13:05:25-04:00",
       "requisition_id": "R-100899",
       "title": "Senior Software Engineer- Database Infrastructure",
       "company_name": "Discord",
@@ -2032,9 +2032,9 @@
       ],
       "offices": [
         {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
           "child_ids": [],
           "parent_id": null
         }
@@ -2719,7 +2719,7 @@
       "education": "education_optional",
       "internal_job_id": 6160770002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "San Francisco, CA "
       },
       "metadata": [
         {
@@ -2736,7 +2736,7 @@
         }
       ],
       "id": 7990178002,
-      "updated_at": "2025-05-27T19:39:14-04:00",
+      "updated_at": "2025-06-02T13:06:59-04:00",
       "requisition_id": "R-100921",
       "title": "Software Engineer, Safety Processing",
       "company_name": "Discord",
@@ -2752,9 +2752,9 @@
       ],
       "offices": [
         {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
           "child_ids": [],
           "parent_id": null
         }
