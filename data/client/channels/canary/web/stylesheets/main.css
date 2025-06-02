@@ -17324,6 +17324,7 @@ span.clanTag__5d473 {
   color: Highlight;
 }
 .popover__2d0ab {
+  border: 1px solid var(--user-profile-toolbar-border);
   border-radius: 100px;
   display: inline-flex;
   gap: 2px;
@@ -17334,6 +17335,17 @@ span.clanTag__5d473 {
   position: absolute;
   top: -16px;
   z-index: var(--custom-user-profile-hoist-z-index);
+}
+.visual-refresh .popover__2d0ab {
+  background-color: var(--user-profile-toolbar-background);
+}
+.full-motion.visual-refresh .popover__2d0ab:hover,
+.visual-refresh .popover__2d0ab {
+  box-shadow: var(--shadow-low);
+}
+.custom-user-profile-theme .popover__2d0ab {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 .popover__2d0ab.visible__2d0ab,
 .popover__2d0ab:hover {
@@ -17431,6 +17443,9 @@ span.clanTag__5d473 {
 }
 .full-motion .button__2d0ab .icon__2d0ab {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.custom-user-profile-theme .button__2d0ab .icon__2d0ab {
+  color: var(--icon-primary);
 }
 .button__2d0ab:hover {
   background: var(--background-modifier-hover);
@@ -45477,6 +45492,7 @@ html.disable-forced-colors * {
   --user-profile-note-background-focus: var(--primary-700);
   --user-profile-overlay-background: var(--primary-800);
   --user-profile-overlay-background-hover: hsl(var(--primary-500-hsl) / 0.3);
+  --user-profile-toolbar-border: hsl(var(--white-hsl) / 0.03);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
 }
@@ -46867,6 +46883,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
+    --user-profile-toolbar-border: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.03) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.03)
+        var(--theme-base-color-amount, 0%)
+    );
     --voice-video-video-tile-background: color-mix(
       in oklab,
       hsl(var(--plum-17-hsl) / 0.4) 100%,
@@ -47274,6 +47296,7 @@ html.disable-forced-colors * {
   --user-profile-note-background-focus: var(--primary-200);
   --user-profile-overlay-background: var(--white);
   --user-profile-overlay-background-hover: hsl(var(--primary-400-hsl) / 0.16);
+  --user-profile-toolbar-border: hsl(var(--black-hsl) / 0.04);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
 }
@@ -48667,6 +48690,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--theme-base-color-amount, 0%)
     );
+    --user-profile-toolbar-border: color-mix(
+      in oklab,
+      hsl(var(--black-hsl) / 0.04) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.04)
+        var(--theme-base-color-amount, 0%)
+    );
     --voice-video-video-tile-background: color-mix(
       in oklab,
       hsl(var(--plum-17-hsl) / 0.4) 100%,
@@ -49080,6 +49109,7 @@ html.disable-forced-colors * {
   --user-profile-note-background-focus: var(--plum-19);
   --user-profile-overlay-background: var(--plum-23);
   --user-profile-overlay-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-toolbar-border: hsl(var(--plum-11-hsl) / 0.08);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
 }
@@ -50474,6 +50504,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
+    --user-profile-toolbar-border: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.08) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08)
+        var(--theme-base-color-amount, 0%)
+    );
     --voice-video-video-tile-background: color-mix(
       in oklab,
       hsl(var(--plum-17-hsl) / 0.4) 100%,
@@ -50885,6 +50921,7 @@ html.disable-forced-colors * {
   --user-profile-note-background-focus: var(--plum-16);
   --user-profile-overlay-background: var(--plum-18);
   --user-profile-overlay-background-hover: hsl(var(--plum-13-hsl) / 0.3);
+  --user-profile-toolbar-border: hsl(var(--plum-11-hsl) / 0.06);
   --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
   --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
 }
@@ -52279,6 +52316,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--theme-base-color-amount, 0%)
     );
+    --user-profile-toolbar-border: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.06) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06)
+        var(--theme-base-color-amount, 0%)
+    );
     --voice-video-video-tile-background: color-mix(
       in oklab,
       hsl(var(--plum-17-hsl) / 0.4) 100%,
@@ -52296,10 +52339,12 @@ html.disable-forced-colors * {
 .custom-user-profile-theme.theme-dark {
   --user-profile-border: hsl(var(--opacity-white-8-hsl) / 0.0784313725490196);
   --user-profile-note-background-focus: hsl(var(--black-hsl) / 0.3);
+  --user-profile-toolbar-border: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
 }
 .custom-user-profile-theme.theme-light {
   --user-profile-border: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --user-profile-note-background-focus: hsl(var(--white-hsl) / 0.3);
+  --user-profile-toolbar-border: hsl(var(--opacity-20-hsl) / 0.2);
 }
 :root {
   --neutral-1: hsl(var(--neutral-1-hsl) / 1);
@@ -56175,6 +56220,7 @@ html.disable-forced-colors * {
   --text-feedback-positive: var(--green-new-25);
   --text-feedback-warning: var(--yellow-new-22);
   --text-tertiary: var(--neutral-22);
+  --user-profile-toolbar-background: var(--neutral-60);
 }
 @supports (color: color-mix(in lch, red, blue)) {
   .visual-refresh .theme-dark,
@@ -56819,6 +56865,11 @@ html.disable-forced-colors * {
       var(--neutral-22) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --user-profile-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
   }
 }
 .visual-refresh .theme-light,
@@ -57046,6 +57097,7 @@ html.disable-forced-colors * {
   --text-feedback-positive: var(--green-new-55);
   --text-feedback-warning: var(--yellow-new-54);
   --text-tertiary: var(--neutral-38);
+  --user-profile-toolbar-background: var(--neutral-1);
 }
 @supports (color: color-mix(in lch, red, blue)) {
   .visual-refresh .theme-light,
@@ -57690,6 +57742,11 @@ html.disable-forced-colors * {
       var(--neutral-38) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --user-profile-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
   }
 }
 .visual-refresh .theme-midnight,
@@ -57912,6 +57969,7 @@ html.disable-forced-colors * {
   --text-feedback-positive: var(--green-new-40);
   --text-feedback-warning: var(--yellow-new-38);
   --text-tertiary: var(--neutral-33);
+  --user-profile-toolbar-background: var(--neutral-83);
 }
 @supports (color: color-mix(in lch, red, blue)) {
   .visual-refresh .theme-midnight,
@@ -58550,6 +58608,11 @@ html.disable-forced-colors * {
       var(--neutral-33) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --user-profile-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-83) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
   }
 }
 .visual-refresh .theme-darker,
@@ -58768,6 +58831,7 @@ html.disable-forced-colors * {
   --text-feedback-positive: var(--green-new-34);
   --text-feedback-warning: var(--yellow-new-32);
   --text-tertiary: var(--neutral-29);
+  --user-profile-toolbar-background: var(--neutral-73);
 }
 @supports (color: color-mix(in lch, red, blue)) {
   .visual-refresh .theme-darker,
@@ -59406,6 +59470,11 @@ html.disable-forced-colors * {
       var(--neutral-29) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
     );
+    --user-profile-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-73) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
   }
 }
 .visual-refresh .theme-light.custom-user-profile-theme,
@@ -59419,6 +59488,9 @@ html.disable-forced-colors * {
   --user-profile-overlay-background-hover: hsl(
     var(--opacity-white-36-hsl) / 0.3607843137254902
   );
+  --user-profile-toolbar-background: hsl(
+    var(--opacity-white-36-hsl) / 0.3607843137254902
+  );
 }
 .visual-refresh .theme-dark.custom-user-profile-theme,
 .visual-refresh.theme-dark.custom-user-profile-theme {
@@ -59429,6 +59501,7 @@ html.disable-forced-colors * {
     var(--opacity-16-hsl) / 0.1607843137254902
   );
   --user-profile-overlay-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --user-profile-toolbar-background: hsl(var(--opacity-20-hsl) / 0.2);
 }
 .refresh-fast-follow-distinct-borders .theme-dark,
 .refresh-fast-follow-distinct-borders.theme-dark {
@@ -61255,4 +61328,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e391b82077dc4955.css.map*/
+/*# sourceMappingURL=12633.31ff8237a8d8b5d4.css.map*/
