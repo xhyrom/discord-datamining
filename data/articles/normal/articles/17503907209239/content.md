@@ -31,8 +31,7 @@
     >
     <ul>
       <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/17503907209239#docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd"
+        <a href="#docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd"
           >Desktop</a
         >
       </li>
