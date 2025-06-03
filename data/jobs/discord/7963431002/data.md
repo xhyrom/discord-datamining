@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963431002](https://discord.com/jobs/7963431002)
 
-**Updated At:** Thu, 29 May 2025 18:53:17 GMT
+**Updated At:** Tue, 03 Jun 2025 22:06:41 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on the Developer Platform Team is to help game studios succeed by creating meaningful experiences for players. As a B2B2C team, we serve two key audiences. For game studios, we build smart integrations and intuitive tools that make it easy for developers, community managers, and marketers to connect with players and bring the best of Discord into their games. For players, we enhance on-platform experiences that deepen their connection to the games they love—and make it easier to build lasting friendships through play.
@@ -52,6 +52,5 @@ education_optional
 - Product Design
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     
