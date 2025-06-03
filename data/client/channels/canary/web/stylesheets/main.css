@@ -17855,6 +17855,9 @@ span.clanTag__5d473 {
   background: var(--background-accent);
   border-radius: 50%;
 }
+.emptyUserDimmed__183c2 {
+  background: var(--opacity-black-52);
+}
 .avatar__183c2 {
   border-radius: 50%;
   height: 100%;
@@ -17868,6 +17871,9 @@ span.clanTag__5d473 {
   display: flex;
   font-weight: 500;
   justify-content: center;
+}
+.moreUsers__183c2.moreUsersDimmed__183c2 {
+  background-color: var(--opacity-black-52);
 }
 .size56__183c2 .moreUsers__183c2 {
   border-radius: 28px;
@@ -61328,4 +61334,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.31ff8237a8d8b5d4.css.map*/
+/*# sourceMappingURL=12633.20cf46297ba7543c.css.map*/
