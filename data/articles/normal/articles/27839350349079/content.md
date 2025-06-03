@@ -28,6 +28,54 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: Symbiote Spider-Man<br /></strong
+  ><strong>Quest Name: Symbiote Spider-Man Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    Symbiote Spider-Man </strong
+  >video in Discord to receive
+  <strong>Marvel Snap Venom Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users on mobile where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Symbiote Spider-Man Quest </strong>can be accepted on Discord desktop
+  app or browser client from <strong>June 3, 2025 </strong>until<strong>
+    June 9, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 9, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Marvel Snap Venom Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 9, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: Sea of Thieves Brand Trailer<br /></strong
+  ><strong>Quest Name: Sea of Thieves Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    Sea of Thieves Brand Trailer </strong
+  >in Discord to receive
+  <a href="https://support.discord.com/hc/articles/30593690165783"
+    ><strong
+      ><span class="wysiwyg-underline" style="color: #1155cc"
+        >Discord Orbs</span
+      ></strong
+    ></a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to
+  limited users on desktop where <strong>Discord</strong> is available and who
+  are in the Orbs Beta. Discord’s premium services are restricted in some
+  regions.<br /><strong>Availability Period:</strong> The
+  <strong>Sea of Thieves Quest </strong>can be accepted on Discord desktop app
+  or browser client from <strong>June 3, 2025 </strong>until<strong>
+    June 10, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 10, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Marvel Rivals<br /></strong
   ><strong>Quest Name: Marvel Rivals S2.5 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -52,8 +100,11 @@
   longer have access to this Avatar Decoration.<br /><strong
     >Other Terms:</strong
   >
-  Limit of one reward redemption per account.<br /><br /><strong
-    >Quest Video: New Ballerina Video <br /></strong
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: New Ballerina Video <br /></strong
   ><strong>Quest Name: Ballerina Video Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
   <strong>New Ballerina Video </strong>in Discord to receive a
@@ -436,30 +487,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Arena Breakout<br /></strong
-  ><strong>Quest Name: Arena Breakout: Infinite Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Arena Breakout </strong>to receive a
-  <strong>Vector 45 Skin &amp; 7-Day Secure Case</strong>!<br /><strong
-    >Who is Eligible: </strong
-  >Available to players in the <strong>United States</strong> on desktop where
-  both <strong>Discord</strong> and <strong>Arena Breakout </strong>are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Arena Breakout: Infinite Quest</strong> can be accepted on
-  Discord from <strong>April 29, 2025 </strong>until
-  <strong>May 5, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>May 29, 2025 (4:00PM UTC</strong>). <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Mission: Impossible Puzzle Activity<br /></strong
   ><strong>Quest Name: Mission: Impossible Puzzle Quest<br /></strong
   ><strong>Offer Details:</strong> Solve the first puzzle in the
@@ -525,65 +552,6 @@
     ><strong>Other Terms: </strong>Limit of one reward redemption per
     account.</span
   >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video:</strong> <strong>HIM OFFICIAL TEASER </strong
-  ><br /><strong>Quest Name:</strong> <strong>HIM OFFICIAL TEASER Quest</strong
-  ><br /><strong>Offer Details:</strong> Watch the
-  <strong>HIM OFFICIAL TEASER</strong> in Discord to earn 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >! Learn more about Nitro Credits
-  <a
-    href="https://support.discord.com/hc/en-us/articles/26362805097623"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.<br /><strong>Who is Eligible:</strong> Available to users in the United
-  States on desktop where Discord is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>HIM OFFICIAL TEASER</strong> Quest can be accepted on Discord desktop
-  app or browser client from <strong>April 18, 2025</strong> until
-  <strong>April 24, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>May 24, 2025 (11:59 UTC)</strong>.<br /><strong>Other Terms:</strong>
-  Limit of one reward redemption per account.<strong><br /></strong>
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Whispers of the Witch Tree<br /></strong
-  ><strong>Quest Name: Mandragora Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch the
-  <strong>Whispers of the Witch Tree </strong>in Discord to earn 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >! Learn more about Nitro Credits<a
-    href="https://support.discord.com/hc/en-us/articles/26362805097623"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    here</a
-  >.<br /><strong>Who is Eligible: </strong>Available to users in the
-  <strong>United States</strong>, <strong>Great Britain</strong>,
-  <strong>Germany</strong>, <strong>Brazil</strong>, and<strong> Canada</strong>
-  on desktop where <strong>Discord</strong> is available. Discord’s premium
-  services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Mandragora Quest</strong> can be accepted on Discord desktop app
-  or browser client from <strong>April 17, 2025 </strong>until<strong>
-    April 24, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 24, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -722,58 +690,6 @@
     ><strong>Other Terms: </strong>Limit of one reward redemption per
     account.</span
   >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Fortnite <br /></strong
-  ><strong>Quest Name: Fortnite OG Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Fortnite OG Season 3 </strong>to receive a limited-time
-  <strong>Supply Llama Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to users on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
-  Xbox Series S where <strong>Discord</strong> and <strong>Fortnite </strong>are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Fortnite OG Quest</strong> can be accepted on
-  <strong>PC, PlayStation 4, PlayStation 5, Xbox Series X, </strong>and<strong>
-    Xbox Series S</strong
-  >
-  from <strong>March 25, 2025 </strong>until<strong>
-    March 31, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 1, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Supply Llama Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>May 31, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Delta Force: Black Hawk Down <br /></strong
-  ><strong>Quest Name: Black Hawk Down Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Delta Force: Black Hawk Down </strong>to receive a
-  <strong>Spray Paint &amp; Premium Armament Pack</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on desktop where both <strong>Discord</strong> and
-  <strong>Delta Force: Black Hawk Down</strong> are available. Discord’s premium
-  services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Black Hawk Down Quest</strong> can be accepted on Discord from
-  <strong>February 20, 2025</strong> until
-  <strong>February 26, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>May 31, 2025 (0:00 UTC)</strong>.<br /><strong>Other Terms: </strong
-  >Limit of one reward redemption per account.
 </p>
 <p>
   <strong
