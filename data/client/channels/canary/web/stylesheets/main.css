@@ -24019,6 +24019,9 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: -moz-fit-content;
   width: fit-content;
 }
+.bodyGradientPadding_c7bb69 {
+  height: 24px;
+}
 .bodyGradientContainer_c7bb69 {
   bottom: -24px;
   height: 30px;
@@ -61350,4 +61353,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8da57999e441510e.css.map*/
+/*# sourceMappingURL=12633.2ea365691595e288.css.map*/
