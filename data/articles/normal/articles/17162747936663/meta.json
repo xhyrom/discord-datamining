@@ -20,14 +20,14 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "nitro",
     "avatar decorations",
-    "perks",
-    "shop",
-    "nitro members",
-    "profile effects",
     "shop faq",
+    "perks",
+    "nitro",
+    "profile effects",
+    "shop",
     "Shop",
-    "Shop FAQ"
+    "Shop FAQ",
+    "nitro members"
   ]
 }
