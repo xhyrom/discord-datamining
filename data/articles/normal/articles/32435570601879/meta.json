@@ -20,19 +20,19 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "Nitro",
     "answer-bot",
-    "nitro",
-    "promo",
-    "trial",
-    "members",
-    "plan",
-    "1 month",
-    "discord",
-    "code",
-    "users",
-    "subscribers",
     "exitlag",
-    "solo"
+    "solo",
+    "trial",
+    "Nitro",
+    "subscribers",
+    "1 month",
+    "promo",
+    "plan",
+    "code",
+    "discord",
+    "nitro",
+    "users",
+    "members"
   ]
 }

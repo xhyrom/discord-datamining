@@ -1,11 +1,18 @@
 <p id="docs-internal-guid-b0ecfa91-7fff-9d30-f228-185b68d88550">
   Our goal for Discord is to support as many devices and operating systems as
   possible. Below, you’ll see the minimum operating systems requirements, along
-  with what we recommend for the best experience.
+  with what we recommend for the best and fastest experience.
 </p>
 <div class="warn-box">
   <strong>Note</strong>: Devices with older operating systems can run Discord,
-  but may encounter issues. Our support for these devices is limited.
+  but may encounter issues. Our support for these devices is limited. For
+  information on devices not supported by Discord, you can check out our
+  <a
+    href="https://support.discord.com/hc/articles/1500005933882"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Unsupported Bug Reports Help Center article</a
+  >.
 </div>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -23,6 +30,21 @@
   <li><a href="#h_01H30Q0N5QCNK259ATR3BR4A41" target="_self">Mobile</a></li>
   <li><a href="#h_01H30Q0T863H0VTGBN9BY653ZD" target="_self">Browser</a></li>
   <li><a href="#h_01JCP4A30YP25B3WPNVWWZJ95A">What is Not Supported? </a></li>
+  <li>
+    <a href="#h_01JWVBE959FTG48S905H9T7AZY">How to Fix Lag on Discord</a>
+    <ul>
+      <li>
+        <a href="#h_01JWVBK7F1AQZ7CPHFX7W9WNE7"
+          >Are you experiencing a bug on Discord?</a
+        >
+      </li>
+      <li>
+        <a href="#h_01JWVBN790J8MRFY5MR57P0QPB"
+          >Are you experiencing an outage on Discord?</a
+        >
+      </li>
+    </ul>
+  </li>
 </ul>
 <h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f">
   <strong>Desktop</strong>
@@ -44,7 +66,10 @@
     <tr style="height: 22px">
       <td style="width: 21.8571%; height: 22px">Linux</td>
       <td style="width: 66.7143%; height: 22px">
-        Ubuntu 20.04+ and Debian 11+
+        Ubuntu 20.04+ and Debian 11+,
+        <span id="docs-internal-guid-21d00ed6-7fff-bdb2-7833-fb456e933435"
+          >openSUSE 16.2+ and Fedora Linux 32+</span
+        >
       </td>
     </tr>
   </tbody>
@@ -241,3 +266,100 @@
     Running Discord in a mobile browser is <strong>not supported</strong>.
   </li>
 </ul>
+<h1 id="h_01JWVBE959FTG48S905H9T7AZY">How to Fix Lag on your Discord</h1>
+<p>
+  Lag on your Discord app can occur for a variety of reasons and vary on a
+  user-by-user basis. If you are experiencing delayed functionality or
+  stuttering on your Discord app, there are a few troubleshooting steps you can
+  take that might help help fix lag:
+</p>
+<ul>
+  <li>
+    Ensure that your Discord desktop/mobile app is updated to the latest version
+    <ul>
+      <li>
+        You can also try reinstalling the Discord app on desktop or mobile
+      </li>
+    </ul>
+  </li>
+  <li>Ensure that your device is updated to the latest OS version/drivers</li>
+  <li>
+    Ensure your web browser is updated or try a different web browser for
+    Discord
+    <ul>
+      <li>
+        You can also try reducing the number of open tabs and browser windows
+      </li>
+    </ul>
+  </li>
+  <li>
+    Test your Internet connection speed and reset your Internet modem and/or
+    router
+  </li>
+  <li>
+    Disable <strong>Automatically play GIFs when Discord</strong> is focused by
+    going to
+    <strong
+      >User Settings &gt; Accessibility &gt; disable Automatically play GIFs
+      when Discord is focused</strong
+    >
+  </li>
+  <li>
+    Disable <strong>Play animated emoji</strong> by going to
+    <strong
+      >User Settings &gt; Accessibility &gt; disable Play animated emoji</strong
+    >
+  </li>
+  <li>
+    On the Discord desktop app: Disable
+    <strong>Hardware Acceleration</strong> by going to
+    <strong
+      >User Settings &gt; Advanced &gt; disable Hardware Acceleration</strong
+    >
+  </li>
+  <li>
+    When
+    <a
+      href="https://support.discord.com/hc/articles/360040816151"
+      target="_blank"
+      rel="noopener noreferrer"
+      >streaming</a
+    >: Reduce the stream quality by pressing on the
+    <strong>three dots menu icon</strong> in the bottom corner of the video
+    stream &gt; pressing <strong>Stream Quality</strong> &gt; selecting lower
+    <strong>Frame Rate </strong>and <strong>Resolution</strong> options
+  </li>
+</ul>
+<h2 id="h_01JWVBK7F1AQZ7CPHFX7W9WNE7">
+  Are you experiencing a bug on Discord?
+</h2>
+<p>
+  If you tried the troubleshooting steps above and are still experiencing lag on
+  your Discord app, you may have run into a bug. Before you reach out to us
+  about the potential bug, please check out our
+  <a
+    href="https://support.discord.com/hc/articles/1500005933882"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Unsupported Bug Reports article</a
+  >
+  for bugs we cannot provide support on. If the bug you’re experiencing is not
+  mentioned in that article, you can learn more about reporting bugs to Discord
+  on the
+  <a
+    href="https://support.discord.com/hc/articles/1500006052822"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Report a Bug article</a
+  >.
+</p>
+<h2 id="h_01JWVBN790J8MRFY5MR57P0QPB">
+  Are you experiencing an outage on Discord?
+</h2>
+<p>
+  Alternatively, your Discord might be impacted by an outage affecting our
+  Discord services. You can check for outages on the
+  <a href="https://discordstatus.com/" target="_blank" rel="noopener noreferrer"
+    >Discord Status page</a
+  >.
+</p>
