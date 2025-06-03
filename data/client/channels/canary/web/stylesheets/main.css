@@ -23901,7 +23901,11 @@ html:not(.visual-refresh) .root_e5f3a9 {
 .badgeText_fc0249 {
   text-transform: uppercase;
 }
-.container_c7bb69 {
+.container_c7bb69,
+.headerContainer_c7bb69 {
+  position: relative;
+}
+.headerContainer_c7bb69 {
   align-items: flex-end;
   border-top-left-radius: calc(var(--radius-md) - 1px);
   border-top-right-radius: calc(var(--radius-md) - 1px);
@@ -23909,9 +23913,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
   height: 120px;
   min-height: 120px;
   padding: 0 var(--space-16) 0;
-  position: relative;
 }
-.container_c7bb69.containerBottomPadding_c7bb69 {
+.headerContainer_c7bb69.containerBottomPadding_c7bb69 {
   padding-bottom: var(--space-12);
 }
 .tier0Background_c7bb69 {
@@ -24003,6 +24006,26 @@ html:not(.visual-refresh) .root_e5f3a9 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.bodyGradientContainer_c7bb69 {
+  bottom: -24px;
+  height: 30px;
+  margin: 0 var(--space-8);
+  overflow: hidden;
+  position: absolute;
+  width: calc(100% - 16px);
+}
+.bodyGradient_c7bb69 {
+  background: linear-gradient(
+    0deg,
+    transparent 0,
+    var(--background-primary) 46.63%
+  );
+  bottom: 0;
+  height: 48px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 .tier2Animation__387d4 {
   position: relative;
@@ -30153,14 +30176,6 @@ body .headerAnimation_b54a5b {
 }
 .theme-dark .placeholderUsernameColor_fdeafc {
   background-color: #706f74;
-}
-.badgeDark_dd79c2 {
-  background-color: var(--white-500);
-  color: var(--black-500);
-}
-.badgeLight_dd79c2 {
-  background-color: var(--black-500);
-  color: var(--white-500);
 }
 .shopBanner__7f856 {
   align-items: center;
@@ -61334,4 +61349,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.20cf46297ba7543c.css.map*/
+/*# sourceMappingURL=12633.097f29d384b9a34f.css.map*/
