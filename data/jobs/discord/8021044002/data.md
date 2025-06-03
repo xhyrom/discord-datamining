@@ -10,14 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8021044002](https://discord.com/jobs/8021044002)
 
-**Updated At:** Mon, 02 Jun 2025 21:49:07 GMT
+**Updated At:** Tue, 03 Jun 2025 19:04:09 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our Database Infrastructure team is the backbone of Discord's live user data. Responsible for all databases and data services, this team ensures that everything from messages to user profiles is stored durably and reliably for our 200M+ active users. As Engineering Manager of the Storage Platform, you'll lead a team of exceptional engineers who build and maintain these mission-critical systems. You'll oversee the operation and scaling of our databases, while also providing essential storage primitives that power innovation across our engineering organization. This role places you at the helm of some of Discord's most vital infrastructure, directly impacting the experience of hundreds of millions of users worldwide.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our Storage Platform team is the backbone of Discord's live user data. Responsible for all databases and data services, this team ensures that everything from messages to user profiles is stored durably and reliably for our 200M+ active users. As its manager, you'll lead a team of exceptional engineers who build and maintain these mission-critical systems. You'll oversee the operation and scaling of our databases, while also providing essential storage primitives that power innovation across our engineering organization. This role places you at the helm of some of Discord's most vital infrastructure, directly impacting the experience of hundreds of millions of users worldwide.
 You will:
 
-Guide the technical vision and roadmap for Discord's Database Infrastructure.
-Grow and manage a team of talented infrastructure engineers.
+Guide the technical vision and roadmap for Discord's Storage Platform.
+Grow and manage a team of talented infrastructure and distributed systems engineers.
 Ensure Discord just works by building and operating reliable and efficient infrastructure.
 Work with leaders from all over the company to build new features.
 
