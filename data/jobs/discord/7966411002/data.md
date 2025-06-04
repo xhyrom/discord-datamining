@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7966411002](https://discord.com/jobs/7966411002)
 
-**Updated At:** Wed, 21 May 2025 18:27:04 GMT
+**Updated At:** Wed, 04 Jun 2025 19:12:00 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Join our journey to create the best cross-platform application for messaging and real-time interactions! The Audio &amp;amp; Video engineering team at Discord owns the technology and end-to-end experience of audio/video across desktop and mobile. The team’s mission is to give our users an outstanding voice, video, and client experience.
-We are looking for passionate, energetic and self-motived individuals, who are user-focused and obsessed with quality and performance to join the Core AV team.
+We are looking for passionate, energetic and self-motived individuals, who are user-focused and obsessed with quality and performance to join the full stack Core AV Software Engineering team. This role reports to the Engineering Manager for Core AV.&amp;nbsp;
 What you'll be doing
 
 Develop core libraries and infrastructure supporting high-quality, low-latency communications between hundreds of millions of users.
@@ -25,7 +25,7 @@ Work with customer support team troubleshooting real-world end-user audio/video 
 What you should have
 
 4+ years experience working on large, cross-platform software projects.
-Comfort writing high-performance code in C++.
+Proficient in developing high-performance code using C++ or Rust.
 Intimate knowledge with Windows, MacOS, Android, iOS or game console development.
 Knowledge of performance metrics such as CPU, GPU and memory management.
 Enjoyment in coming up with pragmatic solutions to concrete problems using first principles thinking.
@@ -35,7 +35,6 @@ Comfort planning rollouts and tracking success through experiments.
 
 Bonus Points
 
-Comfort writing high-performance code in Rust.
 Working experience with WebRTC, SDP, SRTP, DTLS.
 Experience working with common audio/video codecs such as Opus, VP8, H.264, etc.
 Working experience with media pipeline on platforms supported by Discord.
