@@ -59831,6 +59831,12 @@ html.disable-forced-colors * {
   src: url(/assets/bb673ee29d9d9269.woff2) format("woff2");
 }
 @font-face {
+  font-family: ABC Ginto Nord Discord;
+  font-style: italic;
+  font-weight: 700;
+  src: url(/assets/1a1e4ba0da23278e.woff2) format("woff2");
+}
+@font-face {
   font-family: ABC Ginto Normal;
   font-style: normal;
   font-weight: 300;
@@ -61353,4 +61359,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8cfdfe0e64245800.css.map*/
+/*# sourceMappingURL=12633.1ae818aaccdb0750.css.map*/
