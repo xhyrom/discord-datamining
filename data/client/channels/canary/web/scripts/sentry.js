@@ -6758,7 +6758,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0bd260a5d6341fff85df3cc371883233cfd70012",
+            release: "discord_web-0ec02e8ce4352d800055761dccdea4a5ee55c3c0",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6824,8 +6824,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "405804"),
-            o.YA("builtAt", String("1749058327108"));
+            o.YA("buildNumber", "405810"),
+            o.YA("builtAt", String("1749058968153"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -21999,12 +21999,12 @@
                   return "named";
               },
             });
-          var t4 = i.unpack,
-            t5 = i.type,
+          var t5 = i.unpack,
+            t4 = i.type,
             t8 = i.type,
             t7 = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = t4(t, "rgb");
+              var a = t5(t, "rgb");
               return (a[0] << 16) + (a[1] << 8) + a[2];
             };
           (u.prototype.num = function () {
@@ -22018,7 +22018,7 @@
               ))();
             }),
             (c.format.num = function (t) {
-              if ("number" == t5(t) && t >= 0 && t <= 0xffffff)
+              if ("number" == t4(t) && t >= 0 && t <= 0xffffff)
                 return [t >> 16, (t >> 8) & 255, 255 & t, 1];
               throw Error("unknown num color: " + t);
             }),
@@ -22951,8 +22951,8 @@
               e2 = i.TWOPI,
               e3 = Math.pow,
               e6 = Math.sin,
-              e4 = Math.cos,
-              e5 = Math.floor,
+              e5 = Math.cos,
+              e4 = Math.floor,
               e8 = Math.random,
               e7 = Math.log,
               e9 = Math.pow,
@@ -23590,7 +23590,7 @@
                 var c = e2 * ((t + 120) / 360 + e * i),
                   s = e3(n[0] + _ * i, r),
                   E = ((0 !== o ? a[0] + i * o : a) * s * (1 - s)) / 2,
-                  l = e4(c),
+                  l = e5(c),
                   u = e6(c);
                 return I(
                   e1([
@@ -23637,7 +23637,7 @@
             (I.mix = I.interpolate = eU),
             (I.random = function () {
               for (var t = "#", e = 0; e < 6; e++)
-                t += "0123456789abcdef".charAt(e5(16 * e8()));
+                t += "0123456789abcdef".charAt(e4(16 * e8()));
               return new u(t, "hex");
             }),
             (I.scale = e$),
@@ -41314,8 +41314,8 @@ ${tZ}
               this.length--);
           }
         }
-        let t4 = (t, e) => `${t}@${e}`;
-        class t5 {
+        let t5 = (t, e) => `${t}@${e}`;
+        class t4 {
           constructor() {
             (this.frozen = !1),
               (this.locked = !1),
@@ -41658,7 +41658,7 @@ ${tZ}
                                       (!e.parentNode || t(e.parentNode, a)))
                                   );
                                 })(t.target, this.mirror) ||
-                                (this.movedSet.has(e) && this.movedMap[t4(a, r)]
+                                (this.movedSet.has(e) && this.movedMap[t5(a, r)]
                                   ? t8(this.movedSet, e)
                                   : this.removes.push({
                                       parentId: r,
@@ -41683,7 +41683,7 @@ ${tZ}
                     e && this.mirror.hasNode(e) && (a = this.mirror.getId(e)),
                       a &&
                         -1 !== a &&
-                        (this.movedMap[t4(this.mirror.getId(t), a)] = !0);
+                        (this.movedMap[t5(this.mirror.getId(t), a)] = !0);
                   } else this.addedSet.add(t), this.droppedSet.delete(t);
                   !tk(
                     t,
@@ -41816,7 +41816,7 @@ ${tZ}
           return t && t.target;
         }
         function en(t, e) {
-          let a = new t5();
+          let a = new t4();
           ea.push(a), a.init(t);
           let r = window.MutationObserver || window.__rrMutationObserver,
             n = ee([
@@ -44438,13 +44438,13 @@ ${tZ}
             previousSessionId: t.previousSessionId,
           };
         }
-        function e4(t) {
+        function e5(t) {
           if (e2())
             try {
               F.sessionStorage.setItem(V, JSON.stringify(t));
             } catch (t) {}
         }
-        function e5(
+        function e4(
           { sessionSampleRate: t, allowBuffering: e, stickySession: a = !1 },
           { previousSessionId: r } = {},
         ) {
@@ -44452,7 +44452,7 @@ ${tZ}
             sampled: e3(t) ? "session" : !!e && "buffer",
             previousSessionId: r,
           });
-          return a && e4(n), n;
+          return a && e5(n), n;
         }
         function e8(t, e, a = +new Date()) {
           return null === t || void 0 === e || e < 0 || (0 !== e && t + e <= a);
@@ -44500,10 +44500,10 @@ ${tZ}
               ? (eq(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
-                e5(n, { previousSessionId: _.id }))
+                e4(n, { previousSessionId: _.id }))
               : _
             : (eq("[Replay] Creating new session", t),
-              e5(n, { previousSessionId: r }));
+              e4(n, { previousSessionId: r }));
         }
         function ae(t, e, a) {
           return !!ar(t, e) && (aa(t, e, a), !0);
@@ -45478,7 +45478,7 @@ ${tZ}
                               t.getOptions()._experiments.traceInternals,
                             ),
                             (t.session.started = e),
-                            t.getOptions().stickySession && e4(t.session));
+                            t.getOptions().stickySession && e5(t.session));
                         }
                         return "session" === t.recordingMode && t.flush(), !0;
                       });
@@ -46320,7 +46320,7 @@ ${tZ}
             };
           }
           _maybeSaveSession() {
-            this.session && this._options.stickySession && e4(this.session);
+            this.session && this._options.stickySession && e5(this.session);
           }
           __init6() {
             this._onMutationHandler = (t) => {
@@ -46622,4 +46622,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b98a44a44b958abb.js.map
+//# sourceMappingURL=sentry.df82d78fe08057d5.js.map
