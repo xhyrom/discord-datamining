@@ -7482,6 +7482,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   background-clip: padding-box;
   border-radius: var(--radius-sm);
 }
+.brandShine_e00877 {
+  color: hsl(var(--brand-500-hsl) / 0.1) !important;
+}
 .imageWrapper_af017a {
   border-radius: 3px;
   display: block;
@@ -15512,9 +15515,6 @@ div.modalHeader_c28af8 {
 }
 .visual-refresh .modalFooterShopButton_ced2f2 {
   background-clip: padding-box;
-}
-.brandShine__1995d {
-  color: hsl(var(--brand-500-hsl) / 0.1) !important;
 }
 .freeTrialText__1995d {
   text-transform: capitalize;
@@ -61353,4 +61353,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2ea365691595e288.css.map*/
+/*# sourceMappingURL=12633.8cfdfe0e64245800.css.map*/
