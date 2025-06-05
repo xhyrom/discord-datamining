@@ -4990,6 +4990,7 @@
           (r.QUEST_BAR_MODE_CHANGED = "quest_bar_mode_changed"),
           (r.QUEST_EMBED_FALLBACK_VIEWED = "quest_embed_fallback_viewed"),
           (r.QUEST_THIRD_PARTY_LINK_CLICKED = "quest_third_party_link_clicked"),
+          (r.DISCOVERY_QUEST_TAB_CLICKED = "discovery_quest_tab_clicked"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -5068,6 +5069,8 @@
           (r.SEARCH_STARTED = "search_started"),
           (r.SEARCH_CLOSED = "search_closed"),
           (r.SEARCH_INPUT_CLEARED = "search_input_cleared"),
+          (r.SEARCH_RESULTS_FEEDBACK_SUBMITTED =
+            "search_results_feedback_submitted"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
           (r.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -5580,6 +5583,7 @@
           (r.FEED_ITEM_INTERACTED = "feed_item_interacted"),
           (r.FEED_ITEM_SEEN_BATCH = "feed_item_seen_batch"),
           (r.FEED_ITEM_SEEN_LONG = "feed_item_seen_long"),
+          (r.FEED_ITEM_CONTENT_GEN_FEEDBACK = "feed_item_content_gen_feedback"),
           (r.FEED_SHOWN = "feed_shown"),
           (r.ACTIVE_CHANNEL_CLICKED = "active_channel_clicked"),
           (r.ACTIVE_CHANNELS_LOADED = "active_channels_loaded"),
@@ -6758,7 +6762,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-06-04-7458c7c317e7b0ed34e98c5a60f6387c4c7e48c5-discord_web",
+              "2025-06-05-2e474c7f9125c3739617b98649d3a965bd85fa6f-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6824,8 +6828,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "405688"),
-            o.YA("builtAt", String("1749021526045"));
+            o.YA("buildNumber", "406188"),
+            o.YA("builtAt", String("1749107928773"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -46622,4 +46626,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a62815e954b60b1a.js.map
+//# sourceMappingURL=sentry.be72bd03de90b94c.js.map
