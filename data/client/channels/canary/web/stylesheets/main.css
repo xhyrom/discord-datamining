@@ -39808,6 +39808,12 @@ div.mobilePushContainer__3d3b0 {
 .enable-forced-colors .iconBadge__9293f {
   background-color: Highlight;
 }
+.titleClickable__9293f {
+  cursor: pointer;
+}
+.titleClickable__9293f:hover {
+  color: var(--header-primary);
+}
 .container__459fb {
   display: flex;
   flex-wrap: wrap;
@@ -61211,4 +61217,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8900d4d1e98060aa.css.map*/
+/*# sourceMappingURL=12633.46a076903eddd376.css.map*/
