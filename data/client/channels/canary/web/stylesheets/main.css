@@ -44134,18 +44134,34 @@ html.disable-forced-colors * {
 .footerContainer__68a18 {
   align-items: center;
   border-top: 1px solid var(--border-subtle);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   padding: 16px 20px;
+}
+.footerRightButtons__68a18 {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 .backButton__68a18 {
   color: var(--text-default);
-  margin-left: auto;
+  flex: 0 1 80px;
+  height: 40px;
+  min-width: 50px;
 }
-.applyButton__68a18,
-.backButton__68a18 {
+.applyButton__68a18 {
+  flex-shrink: 0;
   height: 40px;
   width: 80px;
+}
+.subscribeButton__68a18 {
+  color: var(--white);
+  flex-shrink: 0;
+  height: 40px;
+  max-width: 140px;
+  min-width: 110px;
+  width: auto;
 }
 .coachmarkHeaderContainer__68a18 {
   display: flex;
@@ -61195,4 +61211,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.52d6061a9576a5cc.css.map*/
+/*# sourceMappingURL=12633.8900d4d1e98060aa.css.map*/
