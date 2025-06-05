@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7997969002](https://discord.com/jobs/7997969002)
 
-**Updated At:** Tue, 20 May 2025 20:50:56 GMT
+**Updated At:** Thu, 05 Jun 2025 21:25:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We have open position across Discovery Machine Learning as well as Trust and Safety.
 Our Safety Machine Learning team deploys state-of-the-art detection systems to mitigate harmful behavior, illegal content, spam, and other adversarial abuse. We take ownership of the solutions we build from concept to deployment, working closely with product, engineering, and data science teams to drive large-scale impact.
 In our Discovery teams, we are applying Machine Learning to unlock impactful and new possibilities that drive user engagement, growth, understanding and personalization.
-We’re seking technical, mission-driven Machine Learning Engineers to design and implement end-to-end ML solutions that make Discord safer and help our users navigate the myriad of wonderful content across the platform. If this excites you, keep reading!
+We’re seeking technical, mission-driven Machine Learning Engineers to design and implement end-to-end ML solutions that make Discord safer and help our users navigate the myriad of wonderful content across the platform. If this excites you, keep reading!
 What You'll Be Doing
 
 Build new and iterate on existing ML-driven products to foster creativity, discovery and engagement on Discord.
