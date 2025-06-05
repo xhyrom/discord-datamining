@@ -2713,5 +2713,16 @@
     "pubDate": "Tue, 03 Jun 2025 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png"
+  },
+  {
+    "id": "discord-social-sdk-updates-integrations",
+    "body": "",
+    "title": "Discord Social SDK Updates & Integrations",
+    "link": "https://discord.com/blog/discord-social-sdk-updates-integrations",
+    "guid": "https://discord.com/blog/discord-social-sdk-updates-integrations",
+    "description": "Dig into the latest news about the Discord Social SDK! Learn how Facepunch Studios implemented the SDK directly in their game Rust to enhance their player’s social experience, and how you can do the same.",
+    "pubDate": "Thu, 05 Jun 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a1be02c321cc94c5ad745_image7.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a1be02c321cc94c5ad745_image7.png"
   }
 ]
