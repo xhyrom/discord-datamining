@@ -7307,6 +7307,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .lg__2723e .text__2723e {
   font-size: 18px;
 }
+.fullWidth__2723e {
+  flex-grow: 1;
+}
 .primary__2723e {
   background-color: var(--button-filled-brand-background);
   border-color: var(--button-filled-brand-border);
@@ -61222,4 +61225,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2724359106ad13a8.css.map*/
+/*# sourceMappingURL=12633.3373a031688f16ba.css.map*/
