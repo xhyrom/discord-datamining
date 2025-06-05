@@ -9412,11 +9412,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   border-radius: 4px;
   color: var(--interactive-normal);
   text-align: center;
-  text-transform: uppercase;
   transition:
     background-color 0.2s ease-in,
     color 0.2s ease-in;
-  width: 40px;
+  width: 32px;
 }
 .playbackRateContainer_a8e786 {
   cursor: pointer;
@@ -61225,4 +61224,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f650e7237f5816af.css.map*/
+/*# sourceMappingURL=12633.44e031a8ce85f4ec.css.map*/
