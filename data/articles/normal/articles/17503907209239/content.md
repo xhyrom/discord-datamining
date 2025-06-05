@@ -19,35 +19,17 @@
 </p>
 <ul>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70RNE834ZCQQWMQD2SD"
-      >What is a custom app icon?</a
-    >
+    <a href="#h_01HACYH70RNE834ZCQQWMQD2SD">What is a custom app icon?</a>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70R05GDSSA7PQSVHC50"
-      >How to set a custom app icon</a
-    >
+    <a href="#h_01HACYH70R05GDSSA7PQSVHC50">How to set a custom app icon</a>
     <ul>
-      <li>
-        <a href="#docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd"
-          >Desktop</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HCDAFTPTNM3QR1EH6C8RYTX5"
-          >Mobile</a
-        >
-      </li>
+      <li><a href="#h_01JWRT4J14ZKPM8JZQANHK7YYF">Desktop</a></li>
+      <li><a href="#h_01HCDAFTPTNM3QR1EH6C8RYTX5">Mobile</a></li>
     </ul>
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70RDN1V4RYWXEVVQBCQ"
-      >Frequently Asked Questions</a
-    >
+    <a href="#h_01HACYH70RDN1V4RYWXEVVQBCQ">Frequently Asked Questions</a>
   </li>
 </ul>
 <h1 id="h_01HACYH70RNE834ZCQQWMQD2SD">What is a custom app icon?</h1>
@@ -65,7 +47,7 @@
   as you’d like!  
 </p>
 <h1 id="h_01HACYH70R05GDSSA7PQSVHC50">How to set a custom app icon</h1>
-<h2 id="docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd">Desktop</h2>
+<h2 id="h_01JWRT4J14ZKPM8JZQANHK7YYF">Desktop</h2>
 <h3 id="h_01HCDAC4RBC8W2XASACQ95QCV5">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Note: For desktop, your custom app icon will appear within the Discord
@@ -183,18 +165,14 @@
 <h1 id="h_01HACYH70RDN1V4RYWXEVVQBCQ">Frequently Asked Questions</h1>
 <p>
   <strong
-    >Q: What happens if I set a custom app icon, but my Nitro or Nitro Basic
-    expires?</strong
+    >Q: What happens if I set a custom app icon, but my Nitro credit, Nitro, or
+    Nitro Basic expires?</strong
   >
 </p>
 <p>
-  A: Even if your Nitro or Nitro Basic expires, you’ll still be able to keep the
-  selected custom app icon. However, you’ll no longer be able to change to
-  another custom app icon aside from the default app icon. 
-</p>
-<p>
-  The only exception would be if you’re using a limited time icon - which will
-  change back to the default app icon when the limited icon is removed.
+  A: Once your Nitro credit, Nitro, or Nitro Basic expires, you will no longer
+  be able to keep the selected custom app icon. To add a custom app icon again,
+  you will need to be subscribed to Nitro, Nitro Basic, or have Nitro credit.  
 </p>
 <p><strong>Q: Can I upload my own custom app icon to Discord?</strong></p>
 <p>A: No. You can only select from one of the available Discord app icons. </p>
