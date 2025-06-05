@@ -11395,6 +11395,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .textWithIconContainer_c9d15c {
   max-width: 100%;
+  min-width: var(--custom-activity-status-icon-size);
 }
 .activityCounter_c9d15c {
   flex-shrink: 0;
@@ -29409,7 +29410,6 @@ body .headerAnimation_b54a5b {
   height: 100%;
   max-width: 100%;
   opacity: 0;
-  overflow: hidden;
   position: absolute;
   transition: opacity 0.4s ease;
 }
@@ -29444,6 +29444,9 @@ body .headerAnimation_b54a5b {
 }
 .theme-dark .placeholderUsernameColor_fdeafc {
   background-color: #706f74;
+}
+.tagChiplet_fdeafc {
+  margin-left: var(--spacing-4);
 }
 .profileEffects__01370 {
   height: 100%;
@@ -61163,4 +61166,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c811b112e396a130.css.map*/
+/*# sourceMappingURL=12633.9055175d2d8b20e8.css.map*/
