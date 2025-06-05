@@ -44150,7 +44150,6 @@ html.disable-forced-colors * {
 .coachmarkHeaderContainer__68a18 {
   display: flex;
   flex-direction: column;
-  margin-top: var(--spacing-16);
 }
 .coachmarkHeaderTextContainer__68a18 {
   margin-top: var(--spacing-4);
@@ -61196,4 +61195,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f73ede95bc0c60e8.css.map*/
+/*# sourceMappingURL=12633.52d6061a9576a5cc.css.map*/
