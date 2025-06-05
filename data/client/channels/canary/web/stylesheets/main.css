@@ -35314,6 +35314,9 @@ img.thumbnail__0f2e8 {
 .clickable__3299f {
   cursor: pointer;
 }
+.disabled__3299f {
+  cursor: not-allowed;
+}
 .overlay__3299f {
   position: relative;
 }
@@ -35336,7 +35339,7 @@ img.thumbnail__0f2e8 {
 .overlayText__3299f {
   background: var(--opacity-black-60);
   border-radius: var(--radius-sm);
-  cursor: pointer;
+  cursor: inherit;
   opacity: 0;
   padding: 7px 16px;
   position: absolute;
@@ -61228,4 +61231,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.bde5a6b98eb64e57.css.map*/
+/*# sourceMappingURL=12633.31d55030150a5977.css.map*/
