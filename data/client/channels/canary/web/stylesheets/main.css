@@ -1536,6 +1536,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   height: 1px;
   overflow: hidden;
   position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   white-space: nowrap;
   width: 1px;
 }
@@ -44144,6 +44147,33 @@ html.disable-forced-colors * {
   height: 40px;
   width: 80px;
 }
+.coachmarkHeaderContainer__68a18 {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-16);
+}
+.coachmarkHeaderTextContainer__68a18 {
+  margin-top: var(--spacing-4);
+}
+.badgeAndCloseRow__68a18 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.subtitle__68a18 {
+  margin-top: var(--spacing-4);
+}
+.coachmarkFooterContainer__68a18 {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-16) 16px var(--spacing-16) 20px;
+}
+.coachmarkSecondButton__68a18 {
+  height: 40px;
+  margin-top: var(--spacing-8);
+  width: 100%;
+}
 .errorPage_a57b28 {
   width: 100%;
 }
@@ -61166,4 +61196,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9055175d2d8b20e8.css.map*/
+/*# sourceMappingURL=12633.f73ede95bc0c60e8.css.map*/
