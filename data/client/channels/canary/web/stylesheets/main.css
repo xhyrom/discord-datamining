@@ -44123,6 +44123,21 @@ html.disable-forced-colors * {
   gap: 4px;
   padding: 5px;
 }
+.shareButton__68a18 {
+  background: var(--background-modifier-hover);
+  border: 1px solid var(--border-faint);
+  color: var(--text-default);
+}
+.shareButton__68a18:hover {
+  background: var(--background-modifier-accent);
+}
+.shareButtonContent__68a18 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 5px;
+}
 .footerContainer__68a18 {
   align-items: center;
   border-top: 1px solid var(--border-subtle);
@@ -61205,4 +61220,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9a26bd769bcfbda1.css.map*/
+/*# sourceMappingURL=12633.e069267e79dd6199.css.map*/
