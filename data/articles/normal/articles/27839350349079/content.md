@@ -50,9 +50,9 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Video: GTA VI Trailer 2<br /></strong
-  ><strong>Quest Name: GTA VI Trailer 2 Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch <strong>GTA VI Trailer 2 </strong>in
+  <strong>Quest Video: GTAVI Trailer 2<br /></strong
+  ><strong>Quest Name: GTAVI Trailer 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>GTAVI Trailer 2 </strong>in
   Discord to receive 1 day of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
@@ -62,7 +62,7 @@
   premium services are restricted in some regions.<br /><strong
     >Availability Period:</strong
   >
-  The <strong>GTA VI Trailer 2 Quest </strong>can be accepted on Discord desktop
+  The <strong>GTAVI Trailer 2 Quest </strong>can be accepted on Discord desktop
   app or browser client from <strong>June 6, 2025 </strong>until<strong>
     June 12, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
