@@ -13470,12 +13470,11 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .text__10651 {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   line-height: 16px !important;
   max-width: 60px;
 }
 .badge__10651 {
-  margin-bottom: -1px;
   margin-right: 2px;
   margin-top: 0;
 }
@@ -16402,7 +16401,10 @@ span.clanTag__5d473 {
   padding: var(--custom-user-profile-theme-padding);
 }
 :where(.outer_c0bea0).custom-user-profile-theme.user-profile-modal-v2 {
-  background: linear-gradient(var(--profile-gradient-modal-background-color));
+  background: linear-gradient(
+    var(--profile-gradient-modal-background-color),
+    var(--profile-gradient-modal-background-color)
+  );
 }
 .inner_c0bea0 {
   border-radius: var(--radius-xs);
@@ -61203,4 +61205,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d865efdf5a86b2a5.css.map*/
+/*# sourceMappingURL=12633.9a26bd769bcfbda1.css.map*/
