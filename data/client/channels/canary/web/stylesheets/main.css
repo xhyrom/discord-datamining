@@ -13470,11 +13470,12 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 }
 .text__10651 {
   align-items: center;
-  display: flex;
+  display: inline-flex;
   line-height: 16px !important;
   max-width: 60px;
 }
 .badge__10651 {
+  margin-bottom: -1px;
   margin-right: 2px;
   margin-top: 0;
 }
@@ -44217,12 +44218,15 @@ html.disable-forced-colors * {
   gap: var(--space-8);
   justify-content: space-between;
   min-height: var(--custom-app-top-bar-height);
-  padding-left: calc(var(--custom-guild-list-width) + var(--space-8));
+  padding-left: var(--space-12);
   padding-right: var(--space-12);
   position: relative;
   -webkit-app-region: drag;
 }
-.bar_c38106[data-windows="true"] {
+.platform-osx .bar_c38106 {
+  padding-left: calc(var(--custom-guild-list-width) + var(--space-8));
+}
+.platform-win .bar_c38106 {
   padding-right: 0;
 }
 .shortBar_c38106 {
@@ -61220,4 +61224,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e069267e79dd6199.css.map*/
+/*# sourceMappingURL=12633.483cd342df560f47.css.map*/
