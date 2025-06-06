@@ -28,6 +28,50 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Zenless Zone Zero<br /></strong
+  ><strong>Quest Name: Version 2.0 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Zenless Zone Zero</strong> to receive a
+  <strong>V2.0 Quest Reward</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players on PC and PlayStation 5, where
+  <strong>Discord</strong> and <strong>Zenless Zone Zero</strong> are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Version 2.0 Quest </strong>can be accepted on
+  <strong>PC</strong> and <strong>PlayStation</strong> <strong>5</strong> from
+  <strong>June 6, 2025 </strong>until<strong>
+    June 12, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 11, 2025 (9:00PM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: GTA VI Trailer 2<br /></strong
+  ><strong>Quest Name: GTA VI Trailer 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>GTA VI Trailer 2 </strong>in
+  Discord to receive 1 day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+  >.<br /><strong>Who is Eligible: </strong>Available to users that are 18+ on
+  desktop and browser where <strong>Discord</strong> is available. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>GTA VI Trailer 2 Quest </strong>can be accepted on Discord desktop
+  app or browser client from <strong>June 6, 2025 </strong>until<strong>
+    June 12, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 12, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Symbiote Spider-Man<br /></strong
   ><strong>Quest Name: Symbiote Spider-Man Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>
@@ -484,34 +528,6 @@
     >Avatar Decoration for longer</a
   >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
   account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Mission: Impossible Puzzle Activity<br /></strong
-  ><strong>Quest Name: Mission: Impossible Puzzle Quest<br /></strong
-  ><strong>Offer Details:</strong> Solve the first puzzle in the
-  <strong>Mission: Impossible Puzzle Activity</strong> to win 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >! <br /><strong>Who is Eligible: </strong>Available to players in the
-  <strong>United States</strong> on desktop where <strong>Discord</strong> and
-  <strong>Mission: Impossible Puzzle Activity </strong>are available. Discord’s
-  premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Mission: Impossible Puzzle Quest</strong> can be accepted on
-  Discord <strong>April 28, 2025 </strong>until<strong>
-    May 5, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 5, 2025 (0:00 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
 </p>
 <p> </p>
 <p>
