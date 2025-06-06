@@ -61103,7 +61103,7 @@ code {
   --theme-text-color-amount: 20% !important;
 }
 @supports (color: color-mix(in lch, red, blue)) {
-  .custom-theme-background {
+  .custom-theme-background:not(.client-theme-color-picker) {
     --custom-app-border-frame-base: color-mix(
       in oklab,
       var(--custom-theme-primary-color) 50%,
@@ -61267,4 +61267,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0f672a1ed41b69be.css.map*/
+/*# sourceMappingURL=12633.b8c8211a2e863e11.css.map*/
