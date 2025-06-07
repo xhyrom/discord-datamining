@@ -5142,10 +5142,7 @@
   },
   "TENURE_REWARD_SYNC": {
     "url": "/users/@me/tenure-reward/sync",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "STORE_LAYOUT": {
     "url": "/applications/:param/store-layout",
