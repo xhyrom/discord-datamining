@@ -16390,6 +16390,8 @@ span.clanTag__5d473 {
   background: var(--background-base-lower);
   border-radius: var(--radius-lg);
   height: 800px;
+  max-width: 100%;
+  min-width: 800px;
   width: 960px;
 }
 :where(.outer_c0bea0).user-profile-sidebar {
@@ -61267,4 +61269,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b8c8211a2e863e11.css.map*/
+/*# sourceMappingURL=12633.bd603ee69e5d93d9.css.map*/
