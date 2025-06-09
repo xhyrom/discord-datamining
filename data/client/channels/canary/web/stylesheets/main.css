@@ -1899,10 +1899,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   padding-left: 0;
   padding-right: 0;
 }
-.contentInner__53cea {
-  padding: var(--space-12) var(--custom-modal-padding);
-  padding-right: calc(var(--custom-modal-padding) - var(--space-16));
-}
 .contentSpacerTop__53cea {
   flex-grow: 0;
   padding-top: var(--custom-modal-padding-top);
@@ -1949,10 +1945,22 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     visibility 0s ease-out 0s;
   visibility: visible;
 }
+.contentInner__53cea {
+  padding-left: var(--custom-modal-padding);
+  padding-right: calc(var(--custom-modal-padding) - var(--space-16));
+}
+.contentControls__53cea + .content__53cea .contentInner__53cea,
+.contentInnerShouldScroll__53cea {
+  padding-top: var(--space-12);
+}
+.contentInnerShouldScroll__53cea {
+  padding-bottom: var(--space-12);
+}
 .footer__53cea {
   padding-bottom: 0;
 }
 .actionBar__53cea {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-8);
@@ -61504,4 +61512,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.aab15bc23e38f22b.css.map*/
+/*# sourceMappingURL=12633.ef4151b408e832e5.css.map*/
