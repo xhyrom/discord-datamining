@@ -29,7 +29,7 @@
     }
   ],
   "id": 7824127002,
-  "updated_at": "2025-06-09T12:31:40-04:00",
+  "updated_at": "2025-06-09T16:33:38-04:00",
   "requisition_id": "R-100775",
   "title": "Senior Stock Plan Administrator",
   "company_name": "Discord",
@@ -45,9 +45,9 @@
   ],
   "offices": [
     {
-      "id": 4000383002,
-      "name": "San Francisco, CA",
-      "location": "San Francisco, California, United States",
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
       "child_ids": [],
       "parent_id": null
     }
