@@ -8,12 +8,12 @@
     Discord Nitro</a
   >
   subscribers can claim <strong>1 month</strong> of
-  <strong>Exitlag Solo Plan trial</strong>. Read more below about the promotion
+  <strong>ExitLag Solo Plan trial</strong>. Read more below about the promotion
   below.
 </p>
 <h1 id="h_01JWV7MNG8BT3884CNBH5NDCCF">Promotion Summary</h1>
 <p>
-  <strong>Offer Details:</strong> 1 month of Exitlag Solo Plan for<a
+  <strong>Offer Details:</strong> 1 month of ExitLag Solo Plan for<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
     rel="noopener noreferrer"
@@ -49,7 +49,7 @@
 <p>
   Claim through Discord <strong>Gift Inventory</strong> from
   <strong>June 3, 2025 (10:00AM PDT)</strong> to
-  <strong>July 3, 2025 (11:59PM PDT)</strong>, and redeem in your Exitlag
+  <strong>July 3, 2025 (11:59PM PDT)</strong>, and redeem in your ExitLag
   account by <strong>June 3, 2026 (10:00AM PDT)</strong>.
 </p>
 <div class="toc-box">
@@ -69,14 +69,14 @@
       >
     </li>
     <li>
-      <a href="#h_01JWV7MNG88YZKSJEB9PXR7X4X"
-        ><strong>What is Exitlag? </strong></a
+      <strong
+        ><a href="#h_01JWV7MNG88YZKSJEB9PXR7X4X">What is ExitLag? </a></strong
       >
     </li>
     <li>
       <a href="#h_01JWV7MNG8XNDQKKWG8TJKGF9B"
         ><strong
-          >How do I claim the Exitlag Solo Plan trial in Discord? </strong
+          >How do I claim the ExitLag Solo Plan trial in Discord? </strong
         ></a
       >
       <ul>
@@ -95,14 +95,14 @@
     <li>
       <a href="#h_01JWV7MNG8CK67PBNPVZP4A8JF"
         ><strong
-          >How do I redeem the Exitlag Solo Plan trial on my Exitlag
+          >How do I redeem the ExitLag Solo Plan trial on my ExitLag
           Account? </strong
         ></a
       >
       <ul>
         <li>
           <a href="#h_01JWV7MNG80XEZ8DW9Y7A8Q57Q"
-            >Eligibility for Redeeming the Exitlag Solo Plan Trial</a
+            >Eligibility for Redeeming the ExitLag Solo Plan Trial</a
           >
         </li>
       </ul>
@@ -202,7 +202,7 @@
     >
   </li>
 </ul>
-<h1 id="h_01JWV7MNG88YZKSJEB9PXR7X4X">What is Exitlag?</h1>
+<h1 id="h_01JWV7MNG88YZKSJEB9PXR7X4X">What is ExitLag?</h1>
 <p>
   <a href="https://www.exitlag.com/" target="_blank" rel="noopener noreferrer"
     >ExitLag</a
@@ -216,11 +216,11 @@
   purchasing.
 </p>
 <h1 id="h_01JWV7MNG8XNDQKKWG8TJKGF9B">
-  How do I claim the Exitlag Solo Plan trial in Discord?
+  How do I claim the ExitLag Solo Plan trial in Discord?
 </h1>
 <p>
   As long as you're a <strong>Discord Nitro</strong> subscriber, you'll be able
-  to claim the <strong>Exitlag Solo Plan trial</strong> <strong>code</strong> in
+  to claim the <strong>ExitLag Solo Plan trial</strong> <strong>code</strong> in
   the <strong>Gift Inventory</strong> from
   <strong>June 3, 2025 (10:00AM PDT)</strong> to
   <strong>July 3, 2025 (11:59PM PDT)</strong>.
@@ -284,11 +284,11 @@
 </h4>
 <p>
   <strong
-    >2) Press the Claim button for the Exitlag Solo Plan trial Gift</strong
+    >2) Press the Claim button for the ExitLag Solo Plan trial Gift</strong
   >
 </p>
 <p>
-  Once you press <strong>Claim </strong>on the Exitlag Solo Plan trial Gift in
+  Once you press <strong>Claim </strong>on the ExitLag Solo Plan trial Gift in
   the <strong>Gift Inventory</strong> and you'll then see a new pop-up with your
   12 character code for this promotion.
 </p>
@@ -305,14 +305,14 @@
   />
 </p>
 <h4 id="h_01JWV9J0ANF6HZRWQ5Z2TTME6K" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Exitlag Solo Plan Trial in Gift Inventory</span>
+  <span style="color: #666666">ExitLag Solo Plan Trial in Gift Inventory</span>
 </h4>
 <h1 id="h_01JWV7MNG8CK67PBNPVZP4A8JF">
-  How do I redeem the Exitlag Solo Plan trial on my Exitlag Account?
+  How do I redeem the ExitLag Solo Plan trial on my ExitLag Account?
 </h1>
 <p>
   Once you have claimed the code in the <strong>Gift Inventory</strong>, you'll
-  now need to officially redeem this code on your Exitlag account (or share this
+  now need to officially redeem this code on your ExitLag account (or share this
   code with a friend).
 </p>
 <p>
@@ -334,7 +334,7 @@
   press <strong>Redeem</strong>.
 </p>
 <h2 id="h_01JWV7MNG80XEZ8DW9Y7A8Q57Q">
-  Eligibility for Redeeming the Exitlag Solo Plan Trial
+  Eligibility for Redeeming the ExitLag Solo Plan Trial
 </h2>
 <p>
   This promotional offer is valid exclusively for ExitLag users without an
@@ -352,19 +352,19 @@
   <strong><span style="color: #434343">Contact Support:</span></strong>
   <p id="h_01JWV7MNG8HDG8WKT069T88BE8">
     <span style="color: #434343"
-      >For help with your Exitlag Solo Plan trial code, contact Exitlag support
+      >For help with your ExitLag Solo Plan trial code, contact ExitLag support
       through live chat at</span
     >
     <a href="http://www.exitlag.com/" target="_blank" rel="noopener noreferrer"
       >www.exitlag.com</a
     ><span style="color: #434343">
-      or submit a ticket via your Exitlag account dashboard.</span
+      or submit a ticket via your ExitLag account dashboard.</span
     >
   </p>
 </div>
 <h1 id="h_01JWV7MNG8KBWECCJ2FGCFTGNG">How do I share my Code with a Friend?</h1>
 <p>
-  If you're unable to claim this code on your own Exitlag account, you'll be
+  If you're unable to claim this code on your own ExitLag account, you'll be
   able to share this code with a friend to use instead.
 </p>
 <p>
@@ -408,20 +408,20 @@
 </p>
 <p>
   <strong
-    >Q: How long does my Exitlag Solo Plan trial code last for in my Gift
+    >Q: How long does my ExitLag Solo Plan trial code last for in my Gift
     Inventory?</strong
   >
 </p>
 <p>
   <strong>A: </strong>Once a code is claimed in the
-  <strong>Gift Inventory</strong> in Discord, all Exitlag Solo Plan trial codes
+  <strong>Gift Inventory</strong> in Discord, all ExitLag Solo Plan trial codes
   must be redeemed by <strong>June 3, 2026 (10:00AM PDT)</strong>.
 </p>
 <p>
-  If a code has not been redeemed to your Exitlag account by
+  If a code has not been redeemed to your ExitLag account by
   <strong>June 3, 2026 (10:00AM PDT)</strong>, it will expire and you will no
   longer be able to claim <strong>1 month</strong> of
-  <strong>Exitlag Solo Plan</strong>.
+  <strong>ExitLag Solo Plan</strong>.
 </p>
 <h2 id="h_01JWV7MNG9MZ6YC76R00FAFZT6">Eligibility for the Promotion</h2>
 <p>
@@ -439,7 +439,7 @@
 </p>
 <p>
   <strong
-    >Q: Who can redeem this Exitlag Solo Plan trial to their Exitlag
+    >Q: Who can redeem this ExitLag Solo Plan trial to their ExitLag
     account?</strong
   >
 </p>
@@ -457,7 +457,7 @@
 </p>
 <p>
   <strong
-    >Q: Can I redeem the Exitlag promotion to my Exitlag account in my
+    >Q: Can I redeem the ExitLag promotion to my ExitLag account in my
     region? </strong
   >
 </p>
@@ -481,7 +481,7 @@
 <h2 id="h_01JWV7MNG997V6CPGE04P1J3R3">Potential Errors and Other Issues</h2>
 <p>
   <strong
-    >Q: What if I don't see the Exitlag Solo Plan trial code in my Discord Gift
+    >Q: What if I don't see the ExitLag Solo Plan trial code in my Discord Gift
     Inventory? </strong
   >
 </p>
@@ -527,13 +527,13 @@
 </ul>
 <p>
   <strong
-    >Q: I'm having trouble redeeming this promotion to my Exitlag account. How
-    do I contact Exitlag support? </strong
+    >Q: I'm having trouble redeeming this promotion to my ExitLag account. How
+    do I contact ExitLag support? </strong
   >
 </p>
 <p>
-  <strong>A:</strong> You can contact our support team via live chat at
+  <strong>A:</strong> You can contact the ExitLag support team via live chat at
   <a href="http://www.exitlag.com" target="_blank" rel="noopener noreferrer"
     >www.exitlag.com</a
-  >, or by opening a ticket through your Exitlag account dashboard.
+  >, or by opening a ticket through your ExitLag account dashboard.
 </p>

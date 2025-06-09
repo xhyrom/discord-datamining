@@ -22,9 +22,9 @@
   "label_names": [
     "answer-bot",
     "message error",
-    "javatarscript error",
     "error message guide",
     "verification error",
+    "javatarscript error",
     "discord error"
   ]
 }
