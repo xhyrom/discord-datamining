@@ -44224,6 +44224,12 @@ html.disable-forced-colors * {
 .enable-forced-colors .container_b29565 {
   forced-color-adjust: none;
 }
+.iconWithHover_b29565 {
+  fill: var(--icon-tertiary);
+}
+.iconButton_b29565:hover .iconWithHover_b29565 {
+  fill: var(--icon-primary);
+}
 .themeSelector__5a15d {
   height: 32px;
 }
@@ -44251,12 +44257,18 @@ html.disable-forced-colors * {
   width: 234px;
 }
 .headerContainer__68a18 {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   gap: 4px;
 }
 .closeButton__68a18 {
   margin-left: auto;
+}
+.closeIconWithHover__68a18 {
+  fill: var(--icon-tertiary);
+}
+.closeButton__68a18:hover .closeIconWithHover__68a18 {
+  fill: var(--icon-primary);
 }
 .sliderContainer__68a18 {
   display: flex;
@@ -44371,6 +44383,21 @@ html.disable-forced-colors * {
   height: 40px;
   margin-top: var(--spacing-8);
   width: 100%;
+}
+.nitroIconContainer__68a18 {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+}
+.nitroIconWithHover__68a18 {
+  height: 20px;
+  width: 20px;
+  fill: var(--icon-tertiary);
+}
+.nitroIconContainer__68a18:hover .nitroIconWithHover__68a18 {
+  fill: var(--icon-primary);
 }
 .errorPage_a57b28 {
   width: 100%;
@@ -61402,4 +61429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.04230906f7936973.css.map*/
+/*# sourceMappingURL=12633.43c153df209e5a36.css.map*/
