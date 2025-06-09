@@ -28,6 +28,32 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Starlight Re:Volver<br /></strong
+  ><strong>Quest Name: SUMMER FEST DEMO Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Starlight Re:Volver</strong> to receive a
+  <strong>RE:VOLVING STAR</strong>
+  <strong>Avatar Decoration</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players in the <strong>United States</strong> on desktop where
+  <strong>Discord</strong> and <strong>Starlight Re:Volver</strong> are
+  available. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>SUMMER FEST DEMO Quest </strong>can be accepted on desktop from
+  <strong>June 9, 2025 </strong>until<strong>
+    June 15, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 15, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>RE:VOLVING STAR</strong> <strong>Avatar Decoration</strong> is a
+  limited-time Avatar Decoration and will only be yours as an Avatar Decoration
+  until <strong>August 15, 2025 (11:59PM UTC)</strong>. After this date, you
+  will no longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Zenless Zone Zero<br /></strong
   ><strong>Quest Name: Version 2.0 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
