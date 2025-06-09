@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7979501002](https://discord.com/jobs/7979501002)
 
-**Updated At:** Mon, 19 May 2025 16:39:33 GMT
+**Updated At:** Mon, 09 Jun 2025 22:19:53 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Scaled Operations team is responsible for primarily reactive policy enforcement, quality assurance, appeals processing, data analysis, agent training, model application, and cross-functional safety initiatives. As Discord grows, you'll grow and scale this function, both by designing better ways to get the work done, and by supporting a team of motivated problem-solvers. Reporting to our VP, Trust &amp;amp; Safety, you'll champion your team of operations and safety experts to manage relationships with business process outsourcing partners, partner with product and engineering to develop new tools, work with internal teams to implement operational procedures, act as the front line for escalations from users and internal teams, develop training for stakeholders, and represent our overall Trust &amp;amp; Safety efforts. You're an experienced and dynamic leader responsible for developing and executing strategies to ensure platform integrity and user safety while developing an empowered and healthy team. You'll also do many things we haven't even thought of yet.
@@ -44,5 +44,4 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 
 **Offices:**
 - Remote (U.S.)
-- San Francisco, CA in San Francisco, California, United States
     
