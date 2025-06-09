@@ -21,12 +21,12 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "email does not exist",
+    "registration error",
+    "lost access to email",
     "invalid email error",
     "invalid email",
-    "registration error",
     "changing email too fast",
-    "forgot email",
-    "lost access to email"
+    "email does not exist",
+    "forgot email"
   ]
 }
