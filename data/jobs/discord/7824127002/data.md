@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7824127002](https://discord.com/jobs/7824127002)
 
-**Updated At:** Mon, 19 May 2025 16:39:33 GMT
+**Updated At:** Mon, 09 Jun 2025 16:31:40 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for an experienced Senior Stock Plan Administrator to join our team to support the day-to-day administration of Discord’s global equity programs, including equity grants, option exercises, RSU releases, and special projects. You will partner with key stakeholders in our Finance, Payroll, Tax, Legal, and HR teams to answer employee inquiries, educate employees on equity programs, improve processes, implement controls, and provide reporting as needed. You will also work directly with external auditors and third-party vendors. This position will report directly to the Senior Manager, Stock Administration. You can be based in any of our US offices or remotely within the US.
@@ -43,6 +43,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - Accounting
 
 **Offices:**
-- Remote (U.S.)
 - San Francisco, CA in San Francisco, California, United States
     

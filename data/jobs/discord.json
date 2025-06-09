@@ -482,7 +482,7 @@
         }
       ],
       "id": 7928060002,
-      "updated_at": "2025-05-23T12:41:16-04:00",
+      "updated_at": "2025-06-09T12:48:07-04:00",
       "requisition_id": "R-100854",
       "title": "Product Manager, Experimentation",
       "company_name": "Discord",
@@ -501,13 +501,6 @@
           "id": 4082816002,
           "name": "Remote (U.S.)",
           "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
           "child_ids": [],
           "parent_id": null
         }
@@ -2066,7 +2059,7 @@
         }
       ],
       "id": 7824127002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
+      "updated_at": "2025-06-09T12:31:40-04:00",
       "requisition_id": "R-100775",
       "title": "Senior Stock Plan Administrator",
       "company_name": "Discord",
@@ -2081,13 +2074,6 @@
         }
       ],
       "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
         {
           "id": 4000383002,
           "name": "San Francisco, CA",
