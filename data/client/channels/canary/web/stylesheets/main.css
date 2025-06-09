@@ -13670,9 +13670,10 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   padding: 16px;
 }
 .chipletContainerInner__10651 {
+  align-items: center;
   background: var(--bg-mod-strong);
   border-radius: 4px;
-  display: inline-block;
+  display: inline-flex;
   line-height: 16px !important;
   padding: 0 4px;
   transition: background 0.1s ease-in-out;
@@ -13694,7 +13695,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   max-width: 60px;
 }
 .badge__10651 {
-  margin-bottom: -1px;
   margin-right: 2px;
   margin-top: 0;
 }
@@ -61512,4 +61512,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ef4151b408e832e5.css.map*/
+/*# sourceMappingURL=12633.ece75543bead164b.css.map*/
