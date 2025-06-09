@@ -271,7 +271,7 @@
   Lag on your Discord app can occur for a variety of reasons and vary on a
   user-by-user basis. If you are experiencing delayed functionality or
   stuttering on your Discord app, there are a few troubleshooting steps you can
-  take that might help help fix lag:
+  take that might help fix lag:
 </p>
 <ul>
   <li>
