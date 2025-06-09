@@ -514,69 +514,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7968678002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "education": "education_optional",
-      "internal_job_id": 6151749002,
-      "location": {
-        "name": "Remote (U.S.)"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7968678002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
-      "requisition_id": "R-100888",
-      "title": "Product Manager, Growth",
-      "company_name": "Discord",
-      "first_published": "2025-04-24T19:48:39-04:00",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Growth team at Discord is responsible for creating exceptional experiences that retain new and resurrected users. We build features that bring delight within Discord and via email and notifications, ensuring users stay connected to relevant conversations and activities that matter to them.&lt;/p&gt;\n&lt;p&gt;We&#39;re looking for a Product Manager reporting to our Growth Product Lead to join us and lead our Notifications team. You will be responsible for creating a vision, building systems and features, and ideating creative solutions to help users stay connected to their friends through effective notification experiences with the goal of driving user engagement and growth across the platform.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Guide the product philosophy, vision, and roadmap for Notifications Platform and Experiences at Discord, finding the balance between signal and noise for users across all platforms.&lt;/li&gt;\n&lt;li&gt;Lead cross-functional execution with a team of Engineers, Designers, ML engineers, and Data Scientists to build delightful notification products and a platform that scales to hundreds of millions of users&lt;/li&gt;\n&lt;li&gt;Drive improvements to our notification delivery infrastructure to ensure timely, relevant, and personalized notifications across all platforms&lt;/li&gt;\n&lt;li&gt;Partner with other product teams across Discord, such as Revenue, Developer Ecosystem, ML, and more to enable the right notification experiences for users.&lt;/li&gt;\n&lt;li&gt;Independently make decisions for your product area, gain buy-in from leadership, and act as a momentum catalyst for your execution team.&lt;/li&gt;\n&lt;li&gt;Clearly communicate roadmaps, priorities, experiments and decisions across a wide spectrum of audiences from partner teams to executive levels.&lt;/li&gt;\n&lt;li&gt;Define and own performance against key engagement metrics.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Ability to thrive in ambiguous environments, excited about finding solutions to complex problems, and then executing on them&lt;/li&gt;\n&lt;li&gt;5+ years of experience building and shipping great software, including responsibilities driving prioritization, trade-offs, and timelines&lt;/li&gt;\n&lt;li&gt;Proven track record of impact through solving challenging user experience problems at scale&lt;/li&gt;\n&lt;li&gt;Strong analytical ability to quickly organize and leverage data (including writing SQL) to make informed product decisions with cross-functional stakeholders.&lt;/li&gt;\n&lt;li&gt;Demonstrated technical proficiency and effectiveness working closely with engineers on both platform infrastructure and user-facing features&lt;/li&gt;\n&lt;li&gt;Strong product sense and pride in understanding your customers&#39; needs around notifications and engagement&lt;/li&gt;\n&lt;li&gt;Experience working on notification systems, engagement mechanisms, and other retention-focused features&lt;/li&gt;\n&lt;li&gt;Experience with A/B testing and experimentation frameworks.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working on communication, social, or community platforms.&lt;/li&gt;\n&lt;li&gt;BA/BS in Computer Science, Engineering, or relevant technical experience&lt;/li&gt;\n&lt;li&gt;Experience working on international/localization problems&lt;/li&gt;\n&lt;li&gt;Passion for Discord and gaming&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4074056002,
-          "name": "Product Management",
-          "child_ids": [],
-          "parent_id": 4094267002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        },
-        {
-          "id": 4000383002,
-          "name": "San Francisco, CA",
-          "location": "San Francisco, California, United States",
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7917031002",
       "data_compliance": [
         {
@@ -2832,6 +2769,6 @@
     }
   ],
   "meta": {
-    "total": 50
+    "total": 49
   }
 }
