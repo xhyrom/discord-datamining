@@ -43971,9 +43971,6 @@ html.disable-forced-colors * {
 }
 .container__8fea4 {
   align-items: center;
-  border-color: var(--border-subtle);
-  border-style: solid;
-  border-width: 1px;
   display: flex;
   justify-content: center;
 }
@@ -43983,6 +43980,7 @@ html.disable-forced-colors * {
 .newBadge__8fea4 {
   bottom: -4px;
   position: absolute;
+  z-index: 1;
 }
 .newRing__8fea4 {
   border-radius: 50%;
@@ -43992,6 +43990,32 @@ html.disable-forced-colors * {
   position: absolute;
   top: -4px;
   width: calc(100% + 8px);
+}
+.darkOverlay__8fea4 {
+  --bg-overlay: linear-gradient(
+    var(--opacity-black-40),
+    var(--opacity-black-40)
+  );
+}
+.lightOverlay__8fea4 {
+  --bg-overlay: linear-gradient(
+    var(--background-mod-subtle),
+    var(--background-mod-subtle)
+  );
+}
+.borderOverlay__8fea4 {
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: inset 0 0 0 1px var(--border-strong);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.disabled__8fea4 {
+  opacity: 0.5;
+  pointer-events: none;
 }
 .presets__67a11 {
   display: flex;
@@ -61538,4 +61562,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9b4813fde4a622c5.css.map*/
+/*# sourceMappingURL=12633.1c8c41088a9c861d.css.map*/
