@@ -17870,6 +17870,8 @@ span.clanTag__5d473 {
   display: flex;
   font-weight: 500;
   justify-content: center;
+  line-height: 1;
+  text-align: center;
 }
 .moreUsers__183c2.moreUsersDimmed__183c2 {
   background-color: var(--opacity-black-52);
@@ -61536,4 +61538,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a9b03c33f3adc86c.css.map*/
+/*# sourceMappingURL=12633.9b4813fde4a622c5.css.map*/
