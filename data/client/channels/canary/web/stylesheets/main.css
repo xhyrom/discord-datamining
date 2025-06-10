@@ -7748,6 +7748,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   display: flex;
   height: 24px;
   margin: 4px;
+  overflow: hidden;
   padding: 3px;
   position: absolute;
   right: 0;
@@ -61610,4 +61611,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ec2a70e973358297.css.map*/
+/*# sourceMappingURL=12633.57e6279f885aa6d4.css.map*/
