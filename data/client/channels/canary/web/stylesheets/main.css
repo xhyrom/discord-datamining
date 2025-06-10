@@ -21618,12 +21618,10 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   gap: var(--spacing-4);
 }
 .addEmojiButton__08434 {
-  height: 14px;
-  line-height: 20px;
-  margin: 9px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  height: 32px;
+  margin-left: auto;
+  min-width: 32px;
+  padding: 0 12px;
 }
 .addEmojiButton__08434 > div {
   align-items: center;
@@ -21631,6 +21629,20 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .addEmojiButton__08434 svg {
   margin-right: 4px;
+}
+.emojiStudioActive__08434 {
+  grid-template-rows: 32px auto;
+  grid-row-gap: 12px;
+}
+.emojiStudioActive__08434 .navItem__08434 {
+  line-height: 32px;
+  padding: 0 12px;
+}
+.emojiStudioActive__08434 .navItem__08434 + .navItem__08434 {
+  margin: 0;
+}
+.emojiStudioActive__08434 .navList__08434 {
+  gap: 8px;
 }
 .container_d4ced7 {
   bottom: 100%;
@@ -61598,4 +61610,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ae499571d679b018.css.map*/
+/*# sourceMappingURL=12633.ec2a70e973358297.css.map*/
