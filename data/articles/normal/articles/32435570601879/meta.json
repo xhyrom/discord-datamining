@@ -33,6 +33,7 @@
     "users",
     "subscribers",
     "exitlag",
-    "solo"
+    "solo",
+    "ExitLag"
   ]
 }
