@@ -15,20 +15,20 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-04-23T23:07:57Z",
+  "edited_at": "2025-06-10T16:15:45Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "video",
-    "bug",
-    "answer-bot",
-    "audio",
-    "troubleshoot",
     "troubleshooting",
     "guide",
+    "video",
+    "answer-bot",
+    "troubleshoot",
     "installation",
+    "audio",
     "common",
+    "bug",
     "steps"
   ]
 }

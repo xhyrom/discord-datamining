@@ -106,53 +106,23 @@
   >
   <ul>
     <li>
-      <p id="h_01JSJC35HNW771716KABYVYR46">
+      <p id="h_01JSJC35HNE4WQCQ79ETKA3RFR">
         <a
-          href="https://support.discord.com/hc/en-us/articles/360019877191-Connection-Issues-and-Troubleshooting"
+          href="https://support.discord.com/hc/en-us/articles/115001310031-Voice-Connection-Errors"
           target="_blank"
           rel="noopener noreferrer"
-          >Connection Issues and Troubleshooting</a
+          >Voice Connection Errors</a
         >
       </p>
     </li>
     <li>
-      <p id="h_01JSJC35HNSQT74VJ1Z43RC0JH">
+      <p>
         <a
-          href="https://support.discord.com/hc/en-us/articles/360035612292-Connection-Quality-and-Voice-Issues"
+          href="https://support.discord.com/hc/en-us/articles/212855038-I-m-hearing-Robotic-and-Distorted-voices-How-do-I-fix-it"
           target="_blank"
           rel="noopener noreferrer"
-          >Connection Quality and Voice Issues</a
+          >I'm hearing Robotic and Distorted voices. How do I fix it?</a
         >
-      </p>
-    </li>
-    <li>
-      <p id="h_01JSJC35HN8AR49ZXNYECJCN66">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360030114991-Server-Region-Change"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Server Region Change Guide</a
-        >
-      </p>
-    </li>
-    <li>
-      <p id="h_01JSJC35HNDZXVFMSK8VN1BWKK">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360045138471-Discord-Voice-and-Video-Troubleshooting-Guide"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Voice and Video Connection Guide</a
-        >
-      </p>
-    </li>
-    <li>
-      <p id="h_01JSJC35HNXVTYA9B9BJA9JHQB">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360050982471-Connection-Issues-iOS-Android"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Mobile Connection Issues Guide</a
-        ><span style="color: #434343"> </span>
       </p>
     </li>
   </ul>
@@ -247,54 +217,36 @@
   >
   <ul>
     <li>
-      <p id="h_01JSJC35HNE4WQCQ79ETKA3RFR">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/207209858"
-          target="_blank"
-          rel="noopener noreferrer"
-          >General Installation Issues Guide</a
-        >
-      </p>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/13148417007767-Troubleshooting-Mobile-Crashing-and-Installation-Issues"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Mobile Installation &amp; Crashing Guide</a
+      >
     </li>
     <li>
-      <p id="h_01JSJC35HN1AMHAQE75AXWWXK5">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/13148417007767-Troubleshooting-Mobile-Crashing-and-Installation-Issues"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Mobile Installation &amp; Crashing Guide</a
-        >
-      </p>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/360022082931--macOS-Install-and-Updating-Errors"
+        target="_blank"
+        rel="noopener noreferrer"
+        >macOS Installation Guide</a
+      >
     </li>
     <li>
-      <p id="h_01JSJC35HNTPX485DCFE6TFSBN">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360022082931--macOS-Install-and-Updating-Errors"
-          target="_blank"
-          rel="noopener noreferrer"
-          >macOS Installation Guide</a
-        >
-      </p>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/115004307527--Windows-Corrupt-Installation"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Windows Corrupt Installation Guide</a
+      >
     </li>
     <li>
-      <p id="h_01JSJC35HN6YAZKDGDZPW6S3NM">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/115004307527--Windows-Corrupt-Installation"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Windows Corrupt Installation Guide</a
-        >
-      </p>
-    </li>
-    <li>
-      <p id="h_01JSJC35HNZCDG9AZ026FVZ4KT">
-        <a
-          href="https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Windows Installer Errors Guide</a
-        >
-      </p>
+      <a
+        href="https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Windows Installer Errors Guide</a
+      >
     </li>
   </ul>
 </div>
@@ -393,46 +345,41 @@
   <ul>
     <li>
       <p id="h_01JSJC35HNQY94ZB3EA0WX38SZ">
-        <a href="https://support.discord.com/hc/en-us/articles/360036082452"
-          ><span class="wysiwyg-underline" style="color: #1155cc"
-            >Connection Issues and Fixes</span
-          ></a
+        <a
+          href="https://support.discord.com/hc/en-us/articles/360045138471"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Voice and Video Troubleshooting</a
         >
       </p>
     </li>
     <li>
-      <p id="h_01JSJC35HNWXYWEZ1AFFHV0R19">
-        <a href="https://support.discord.com/hc/en-us/articles/115001656452"
-          ><span class="wysiwyg-underline" style="color: #1155cc"
-            >Notifications Troubleshooting</span
-          ></a
+      <p id="h_01JSJC35HNQY94ZB3EA0WX38SZ">
+        <a
+          href="https://support.discord.com/hc/en-us/articles/18621944634391-Color-Issues-in-Go-Live-Screenshare-for-NVIDIA-Graphics-Card"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Color Issues in Go Live/Screenshare for NVIDIA Graphics Card</a
         >
       </p>
     </li>
     <li>
-      <p id="h_01JSJC35HNA17WGW0P0E4S159S">
-        <a href="https://support.discord.com/hc/en-us/articles/207209858"
-          ><span class="wysiwyg-underline" style="color: #1155cc"
-            >Discord Installation Issues</span
-          ></a
+      <p id="h_01JSJC35HNQY94ZB3EA0WX38SZ">
+        <a
+          href="https://support.discord.com/hc/en-us/articles/9360429789463-Computer-Freeze-while-Screen-Sharing-or-Go-Live-FAQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Computer Freeze while Screen Sharing or Go Live FAQ</a
         >
       </p>
     </li>
     <li>
-      <p id="h_01JSJC35HNZ0Z74V1WVQBZR2RZ">
-        <a href="https://support.discord.com/hc/en-us/articles/360045138471"
-          ><span class="wysiwyg-underline" style="color: #1155cc"
-            >Voice and Video Troubleshooting</span
-          ></a
-        >
-      </p>
-    </li>
-    <li>
-      <p id="h_01JSJC35HNBAY8FG0HSYDFXKB6">
-        <a href="https://support.discord.com/hc/en-us/articles/360041721052"
-          ><span class="wysiwyg-underline" style="color: #1155cc"
-            >Screen Share Troubleshooting</span
-          ></a
+      <p>
+        <a
+          href="https://support.discord.com/hc/en-us/sections/360007770612-Troubleshooting-Help"
+          target="_blank"
+          rel="noopener noreferrer"
+          >And much more!</a
         >
       </p>
     </li>
