@@ -93,7 +93,7 @@
   </li>
 </ul>
 <div class="book-box">
-  Check the
+  <strong>Info</strong>: Check the
   <a href="https://status.discord.com" target="_blank" rel="noopener noreferrer"
     >Discord Status page</a
   >
