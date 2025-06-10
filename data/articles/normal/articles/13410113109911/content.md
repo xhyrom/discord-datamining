@@ -72,6 +72,49 @@
     pizazz to your avatar and profile aesthetic whenever you want.</span
   >
 </p>
+<div class="mega-box">
+  <strong><span style="color: #434343">Offer</span></strong
+  ><span style="color: #434343"
+    >: Treat your friend to either a 1-month or 1-year Nitro subscription and
+    you’ll earn the </span
+  ><strong
+    ><span style="color: #434343"
+      >Freshly Picked Avatar Decoration</span
+    ></strong
+  ><span style="color: #434343">
+    to splash across your profile pic starting on </span
+  ><strong><span style="color: #434343">June 12, 2025</span></strong
+  ><span style="color: #434343">! </span>
+  <p>
+    <span style="color: #434343"
+      >This special offer will roll out starting </span
+    ><strong><span style="color: #434343">June 12, 2025</span></strong
+    ><span style="color: #434343"> and run through </span
+    ><strong><span style="color: #434343">June 20, 2025</span></strong
+    ><span style="color: #434343"> for eligible users. </span
+    ><span class="wysiwyg-underline" style="color: #434343"
+      >Look for the promotion banner before making your purchase.</span
+    ><span style="color: #434343"> </span>
+  </p>
+  <p>
+    <strong><span style="color: #434343">Please note</span></strong
+    ><span style="color: #434343"
+      >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
+      any Avatar Decoration you receive is yours to keep, it will be removed if
+      you refund your Nitro gift purchase.</span
+    >
+  </p>
+  <p>
+    Want to learn more about <strong>Nitro Gifting</strong>? Check out our
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360020877112"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    >
+    for more details.
+  </p>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/27897516515223"

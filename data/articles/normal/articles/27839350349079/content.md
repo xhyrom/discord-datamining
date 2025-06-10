@@ -28,6 +28,31 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Dune: Awakening<br /></strong
+  ><strong>Quest Name: Dune: Awakening Launch Quest<br /></strong
+  ><strong>Offer Details: </strong>Stream 15 minutes of
+  <strong>Dune: Awakening</strong> to receive a
+  <strong>Mural - Call to Adventure</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players in the<strong> United States</strong>,<strong>
+    Great Britain</strong
+  >,<strong> France</strong>,<strong> Germany</strong>, and<strong>
+    Canada </strong
+  >who have access to <strong>Dune: Awakening </strong>and<strong>
+    Discord </strong
+  >on desktop. <br /><span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The
+  <strong>Dune: Awakening Launch Quest </strong> can be accepted on
+  <strong>desktop</strong> from <strong>June 10, 2025</strong> until
+  <strong>June 16, 2025 (11:59PM UTC)</strong>. <br />Quest requirements must be
+  completed during this period to receive the reward. Reward gift codes expire
+  <strong>July 31, 2025 (11:59PM UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Starlight Re:Volver<br /></strong
   ><strong>Quest Name: SUMMER FEST DEMO Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of

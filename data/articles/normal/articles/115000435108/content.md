@@ -1,411 +1,620 @@
 <p>
-  <span style="font-weight: 400"
-    >Looking to unleash more fun on Discord? Look no further! Nitro and Nitro
-    Basic are subscriptions that unlock new features and perks on Discord so you
-    can better express yourself and get the best quality settings we have to
-    offer. </span
-  >
+  Looking to enhance your Discord experience? Discord Nitro and Nitro Basic are
+  premium subscription plans that unlock powerful features to help you express
+  yourself and make the most of Discord.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01GFV3NE6JPS6BRTX7XYQDJ0S4" target="_self">Nitro Plans</a>
-    <ul>
-      <li><a href="#h_01GFV3P0M2YEC5GQA04QZZ3XTA" target="_self">Nitro</a></li>
-      <li>
-        <a href="#h_01GFV3P6JCBPK991K73KW8C70B" target="_self">Nitro Basic</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GFV3PD5V65SNQDEGHD084MBA" target="_self">How do I sign up?</a>
-  </li>
-  <li>
-    <a href="#h_01GFV3PNMEJEF92W0XX69MEE2W" target="_self"
-      >How do I switch or cancel my plan?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01GFV3PWAGD4EGTD91ERBZ5R4S" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
-<h1 id="h_01GFV3NE6JPS6BRTX7XYQDJ0S4"><strong>Nitro Plans</strong></h1>
-<h2 id="h_01GFV3P0M2YEC5GQA04QZZ3XTA"><strong>Nitro</strong></h2>
-<h3 id="h_01HHJJ9PMRV33X830SJCRMQNNT">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For both Nitro yearly and Nitro monthly memberships, you will receive 2
-    Server Boosts in total to use to support your favorite servers. You can
-    learn more about Server Boosts </span
-  ><a
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01GFV3NE6JPS6BRTX7XYQDJ0S4"
+          >What types of Nitro plans are there?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01GFV3P0M2YEC5GQA04QZZ3XTA" target="_self"
+              >Nitro</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01GFV3P6JCBPK991K73KW8C70B" target="_self"
+              >Nitro Basic</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JXDBQ7YTESHKC4EFEMTEAQ7G"
+          >How to Subscribe to Nitro or Nitro Basic</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JXDBW1M9V03F3QCWBSVX1XXR"
+              >On Desktop/Browser</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01JXDBZ39KR58GMC6FPHM90VZD">On Mobile</a></strong>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic-Nitro#h_01GFV3PWAGD4EGTD91ERBZ5R4S"
+          >Frequently Asked Questions</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic</a></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</a></strong
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JXDBAEEQSS9BKVA82R7JNKM1">What types of Nitro plans are there?</h1>
+<h2 id="h_01JXDBAR0WH1RJAGD4N99QN13J"><strong>Nitro</strong></h2>
+<div class="info-box">
+  <strong>Info</strong>: All Nitro subscriptions—both yearly and monthly—include
+  2 Server Boosts that you can use to support your favorite servers. Learn more
+  about Server Boosts
+  <a
     href="https://support.discord.com/hc/en-us/articles/360028038352"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
+  >.
+</div>
 <p>
-  <span style="font-weight: 400"
-    >Our most-popular plan, Nitro, unlocks access to all the perks we offer,
-    including custom emoji and stickers anywhere, HD video streaming, and 2
-    Server Boosts just to name a few.</span
-  >
+  Our most-popular plan, Nitro, gives you access to all premium features,
+  including custom emoji and stickers, HD video streaming, and 2 Server
+  Boosts—plus much more! 
 </p>
 <p><span style="font-weight: 400">All included subscriber perks:</span></p>
-<ol>
-  <li style="font-weight: 400" aria-level="1">
-    <strong
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/360036479811"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Custom and animated emoji</a
-      >
-      anywhere: </strong
-    ><span style="font-weight: 400"
-      >Use any custom emoji from any servers you belong to, anywhere you can use
-      emoji.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Custom stickers anywhere:</strong> Similar to custom emojis, use any
-    custom stickers from any servers you belong to when sending messages.
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Bigger file sharing</strong><span style="font-weight: 400">: </span
-    ><span style="font-weight: 400"
-      >Upload files up to 500 MB so you can share videos, photos, and more with
-      ease.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>HD Streaming</strong
-    ><span style="font-weight: 400"
-      >: Share your screen in high resolution for crispy gameplay. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>2 Boosts + 30% off extra Boosts:</strong
-    ><span style="font-weight: 400"> You’ll get 2 </span
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/360028038352"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><strong>Server Boosts</strong></a
-    ><span style="font-weight: 400">
-      that you can apply to any servers. Plus, you’ll get 30% off any additional
-      future Boost purchases. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/4403147417623"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Profile</a
-      >
-      Upgrades:</strong
-    ><span style="font-weight: 400">
-      add an animated avatar, a banner image, and a profile theme to personalize
-      how you present yourself.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/4409388345495"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Per-server profile</a
-      >:</strong
-    ><span style="font-weight: 400">
-      Be who you want in every server by customizing the details in your profile
-      for each server. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Nitro Badge:</strong
-    ><span style="font-weight: 400">
-      An exclusive profile badge that only shows for subscribers. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/4413490191127"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Custom Video Backgrounds</a
-      >: </strong
-    ><span style="font-weight: 400"
-      >Upload your own image to show up in your video background, giving you
-      privacy with personality.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Join up to 200 servers:</strong
-    ><span style="font-weight: 400">
-      Get double the server space so you can join more communities you
-      love. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Longer Messages:</strong
-    ><span style="font-weight: 400">
-      Say how you really feel with an increased character count limit of 4000
-      characters.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      ><strong
-        >Color
-        <a
-          href="https://support.discord.com/hc/en-us/articles/207260127"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Themes</a
-        >
-        for your Discord app:</strong
-      >
-      Add your vibe to the app with unique themes only available to Nitro
-      subscribers.   </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      ><a href="https://support.discord.com/hc/en-us/articles/12612888127767"
-        ><strong
-          ><span style="color: #1155cc" data-darkreader-inline-color=""
-            >Soundboard</span
-          ></strong
-        ></a
-      ><strong> anywhere:</strong> Use any Soundboard from a server you’re in,
-      anywhere you have permissions to use them in.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <strong
-      ><span id="docs-internal-guid-8469ce58-7fff-9f29-f26f-227d7dcb2cce"
-        >Special
-      </span></strong
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/17162747936663"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Shop</a
-    ><strong> Perks</strong>: Get special member pricing on all Shop purchases
-    and Nitro exclusive items in the Shop.
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      ><strong
-        ><span id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41"
-          >Unlimited </span
-        ><span
-          id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41"
-        ></span></strong
-      ><a href="https://support.discord.com/hc/en-us/articles/12102061808663"
-        ><strong>Super Reactions</strong></a
-      ><strong>:</strong> Bring an extra burst of energy and hype up chat with
-      animated reactions.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      ><a
-        href="https://support.discord.com/hc/en-us/articles/17503907209239-Custom-App-Icon"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><strong
-          ><span style="color: #1155cc" data-darkreader-inline-color=""
-            >Custom App Icon</span
-          ></strong
-        ></a
-      >: Customize your Discord app icon on mobile and desktop to match your
-      style.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      ><strong>Keep your Quest rewards longer</strong>: Nitro members enjoy
-      <a
-        href="https://support.discord.com/hc/en-us/articles/29790581779735"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Quest-rewarded avatar decorations for longer</a
-      >! Complete
-      <a
-        href="https://support.discord.com/hc/articles/22225719947543"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Quests</a
-      >
-      to unlock decorations and keep them for an extended period of time.
-      Additionally, you'll see most past rewards returning to your collection,
-      giving you more time to showcase your favorite
-      <a
-        href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-        target="_blank"
-        rel="noopener noreferrer"
-        >avatar decorations</a
-      >.</span
-    >
-  </li>
-</ol>
+<div>
+  <table style="width: 100%">
+    <colgroup>
+      <col style="width: 195px" />
+      <col style="width: 398px" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><strong>Nitro Perk</strong></td>
+        <td><strong>Description </strong></td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis#h_01H06JVDAV2VKZBTRGJDY8NBV7"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Custom &amp; Animated Emoji</a
+          >
+        </td>
+        <td>
+          Use custom emojis from any server in your chats! As long as you have
+          emoji permissions, you can express yourself with any custom emoji,
+          anywhere!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4403089981975-Custom-Stickers-FAQ#h_01H2RBGF6TNF547ZRF53YQ5VGT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Custom Stickers</a
+          >
+        </td>
+        <td>
+          Add fun stickers from any server to your messages. Use custom stickers
+          wherever you have permission!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ#h_01J4M00QYZN32G2KQM21D4F5ZF"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Premium File Uploads</a
+          >
+        </td>
+        <td>
+          Share larger files up to 500 MB - perfect for videos, photos, and more
+          files like videos and photos up to 500 MB!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJ0F9PHJ9SKK6DWC2E"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HD Streaming</a
+          >
+        </td>
+        <td>Stream and share your screen in crystal-clear quality!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ#h_01HGX7DJ332WE7WX2XH0FEN6H9"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Server Boosts</a
+          >
+        </td>
+        <td>
+          Power up 2 servers of your choice, plus get 30% off additional Boosts!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Profile Customization</a
+          > 
+        </td>
+        <td>
+          Stand out with an animated avatar, banner image, and unique profile
+          theme!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4409388345495-Per-Server-Profiles"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Per-server Profiles</a
+          >
+        </td>
+        <td>Create unique profiles for different communities!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/29136565881623-Evolving-Nitro-Badges"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Nitro Badge</a
+          >
+        </td>
+        <td>Display your Nitro status with an exclusive badge!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4413490191127"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Custom Video Backgrounds</a
+          >
+        </td>
+        <td>Make your video calls pop with custom backgrounds!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360034842871-How-do-I-join-a-Server#h_01FSJF9P8S5RM68NK77ACPW0Y4"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Server Capacity</a
+          >
+        </td>
+        <td>Join up to 200 servers to explore more communities!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages#h_01FSWZRDKD7310TJHGCA616642"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Longer Messages</a
+          >
+        </td>
+        <td>Express more with up to 4000 characters per message!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/207260127"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Color Themes</a
+          >
+        </td>
+        <td>Style your Discord with exclusive Nitro themes!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/12612888127767-Discord-Soundboard-Guide-Using-Adding-and-Managing-Sounds"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Soundboard</a
+          >
+        </td>
+        <td>Add fun audio clips from any server to your conversations!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/articles/17162747936663"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Shop Perks</a
+          >
+        </td>
+        <td>Get special pricing and exclusive items in the Discord Shop!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/12102061808663"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Super Reactions</a
+          >
+        </td>
+        <td>React with unlimited animated expressions!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/17503907209239-Custom-App-Icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            >App Icon Customization</a
+          >
+        </td>
+        <td>Make Discord yours with custom app icons!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/29790581779735"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Extended Quest Rewards</a
+          >
+        </td>
+        <td>
+          Keep your
+          <a
+            href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01JCM0891G5K7DGK0GVCQ02EXS"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Quest</a
+          >
+          earned
+          <a
+            href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations#h_01GWJJPDWA7210GPEJB5Z4R5WC"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Avatar Decorations</a
+          >
+          longer and unlock past rewards!
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
 <p>
-  <span style="font-weight: 400"
-    >The Nitro Basic plan includes some of the most-loved Nitro features that
-    help you better express yourself for a fraction of the cost.</span
-  >
+  Get started with Discord's premium features through Nitro Basic—our affordable
+  entry-level subscription.
 </p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Custom and animated emoji anywhere</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Custom stickers anywhere</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Bigger file sharing (50 MB limit)</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Nitro badge</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Custom video backgrounds</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Custom app icon</span>
-  </li>
-</ul>
-<h3 id="h_01HBCK2APPH2Q7ABWTMKADV4H5">
-  <span style="font-weight: 400"
-    >Are you looking for Classic? Check our FAQ at the bottom of this
-    article.</span
+<p>Here's what Nitro Basic includes:</p>
+<div>
+  <table style="width: 100%">
+    <colgroup>
+      <col style="width: 195px" />
+      <col style="width: 398px" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="text-align: center"><strong>Nitro Basic Perk</strong></td>
+        <td style="text-align: center"><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis#h_01H06JVDAV2VKZBTRGJDY8NBV7"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Emoji</a
+          >
+          &amp;
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4403089981975-Custom-Stickers-FAQ#h_01H2RBGF6TNF547ZRF53YQ5VGT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Stickers</a
+          >
+        </td>
+        <td>
+          Use custom emojis &amp; stickers from any server anywhere you have
+          permissions!
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/12102061808663-Reactions-and-Super-Reactions-FAQ#h_01HDM7H8DH3Q5PT4W9MST5H4J8"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Super Reactions</a
+          >
+        </td>
+        <td>React with unlimited animated expressions!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/25444343291031-File-Attachments-FAQ#h_01J4M00QYZN32G2KQM21D4F5ZF"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Enhanced File Uploads</a
+          >
+        </td>
+        <td>Share larger files up to 50 MB!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/4413490191127"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Custom Video Backgrounds</a
+          >
+        </td>
+        <td>Make your video calls pop with custom backgrounds!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/360035962891-Profile-Badges-101#h_01GM67J796MR95BNQZJRWZ7M34"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Nitro Basic Badge</a
+          >
+        </td>
+        <td>Display your Nitro Basic status with an exclusive badge!</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://support.discord.com/hc/en-us/articles/17503907209239-Custom-App-Icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            >App Icon Customization</a
+          >
+        </td>
+        <td>Make Discord yours with custom app icons!</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="book-box">
+  <span style="color: #434343"
+    >Looking for Nitro Classic? Check our FAQ
+    <a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">below</a>.</span
   >
-</h3>
-<h1 id="h_01GFV3PD5V65SNQDEGHD084MBA"><strong>How do I sign up?</strong></h1>
+</div>
+<h1 id="h_01JXDBQ7YTESHKC4EFEMTEAQ7G">
+  How to Subscribe to Nitro or Nitro Basic
+</h1>
 <p>
-  <span style="font-weight: 400">Nitro and Nitro Basic are </span
-  ><a
+  Nitro and Nitro Basic are available as<a
     href="https://support.discord.com/hc/en-us/articles/360017693772"
     target="_blank"
     rel="noopener noreferrer"
-    >billed as a subscription</a
-  ><span style="font-weight: 400">
-    and we offer annual and monthly versions as well as </span
-  ><a
+  >
+    monthly or annual subscriptions</a
+  >, with<a
     href="https://support.discord.com/hc/en-us/articles/4407269525911"
     target="_blank"
     rel="noopener noreferrer"
-    >localized pricing</a
-  ><span style="font-weight: 400"> in some countries. </span>
+  >
+    local pricing</a
+  >
+  in select countries.
 </p>
 <p>
-  <span style="font-weight: 400"
-    >As a subscriber, you’ll be charged once per billing period. When you pay
-    for a subscription, you have access to those benefits for the length of that
-    subscription. You can cancel your subscription at any time, which will be
-    effective at the end of your current billing period.</span
+  You'll be billed once per billing period, with benefits lasting the length of
+  your subscription. Cancel anytime—your subscription will remain active until
+  the end of your current billing period.
+</p>
+<div class="info-box">
+  <strong>Info</strong>: To manage your Nitro or Nitro Basic subscription, you
+  must cancel or switch plans using the same type of device where you originally
+  made the purchase. Learn more about canceling your subscription in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695-How-to-Cancel-your-Nitro-Subscription"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Cancel Nitro Subscription article</a
+  >.
+</div>
+<h2 id="h_01JXDBW1M9V03F3QCWBSVX1XXR">On Desktop/Browser</h2>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Through User Settings</strong></span
   >
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>On Desktop/Browser</strong></span
-  >
+  1. Open your <strong>User Settings </strong>by selecting the
+  <strong>cogwheel</strong> <strong>icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/32720389735831"
+    width="24"
+    height="24"
+  />] in the bottom-left.
 </p>
-<ol>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select the </span><strong>cogwheel</strong
-    ><span style="font-weight: 400"> in the bottom left to open </span
-    ><strong>User Settings</strong><span style="font-weight: 400">.</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select </span><strong>Nitro</strong
-    ><span style="font-weight: 400"
-      >, then choose your desired plan and hit </span
-    ><strong>Subscribe</strong><span style="font-weight: 400">! </span>
-  </li>
-</ol>
+<p>2. Select the <strong>Nitro</strong> <strong>tab</strong>.</p>
 <p>
-  <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
+  3. Find the <strong>Subscribe</strong> <strong>button</strong> in the
+  <strong>Nitro</strong> <strong>banner</strong>, <strong>Nitro</strong>
+  <strong>card</strong> or <strong>Nitro</strong> <strong>Basic</strong>
+  <strong>card</strong>.
 </p>
-<ol>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Open the </span><strong>bottom menu </strong
-    ><span style="font-weight: 400">by swiping right.</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select your </span><strong>user icon</strong
-    ><span style="font-weight: 400">.</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select </span><strong>Get Nitro</strong
-    ><span style="font-weight: 400"> then </span><strong>Subscribe</strong
-    ><span style="font-weight: 400"> to your desired plan!</span>
-  </li>
-</ol>
-<h1 id="h_01GFV3PNMEJEF92W0XX69MEE2W">
-  <strong>How do I switch or cancel my plan?</strong>
-</h1>
+<p>
+  4. Follow the prompts in the <strong>Select Plan window</strong> to complete
+  your subscription!
+</p>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/11548179381399"
-      alt="UPDATED-switch-sub-plans-subscription-page_copy.png"
-  /></strong>
+  <img
+    src="https://support.discord.com/hc/article_attachments/32720384324119"
+    width="624"
+    height="416"
+  />
 </p>
+<h4 id="h_01JXDBXH9P916VDHPE0844SVH3" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Desktop: Subscribing to Nitro Through User Settings</span
+  >
+</h4>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>On Desktop/Browser</strong></span
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Through the Nitro Tab</strong></span
   >
 </p>
-<ol>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select the </span><strong>cogwheel</strong
-    ><span style="font-weight: 400"> in the bottom left to open </span
-    ><strong>User Settings</strong><span style="font-weight: 400">.</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select </span><strong>Subscribe</strong
-    ><span style="font-weight: 400">, then choose either </span
-    ><strong>Switch Plans</strong><span style="font-weight: 400"> or </span
-    ><strong>Cancel</strong><span style="font-weight: 400">. </span>
-  </li>
-</ol>
 <p>
-  <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
+  1. Press the <strong>Direct Messages icon</strong> in the upper-left and
+  select the <strong>Nitro tab</strong>. 
 </p>
-<ol>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Open the</span><strong> bottom menu </strong
-    ><span style="font-weight: 400">by swiping right.</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Select your </span><strong>user icon</strong
-    ><span style="font-weight: 400"> &gt; select </span
-    ><strong>Manage Nitro</strong
-    ><span style="font-weight: 400"> &gt; Subscribe to your desired plan.</span>
-  </li>
-</ol>
-<h1 id="h_01GFV3PWAGD4EGTD91ERBZ5R4S">
-  <strong>Frequently Asked Questions</strong>
-</h1>
-<h2 id="h_01HBCK2APPYM5CDJSC020DGQ82"><strong>General Questions</strong></h2>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: My Nitro subscription comes with 2 Server Boosts. What are
-      those?</strong
-    ></span
+  2. Find the <strong>Subscribe</strong> <strong>button</strong> in the
+  <strong>Nitro</strong> <strong>banner</strong>, <strong>Nitro</strong>
+  <strong>card</strong> or <strong>Nitro</strong> <strong>Basic</strong>
+  <strong>card</strong>.
+</p>
+<p>
+  3. Follow the prompts in the <strong>Select Plan window</strong> to complete
+  your subscription!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32720384335127"
+    width="628"
+    height="420"
+  />
+</p>
+<h4 id="h_01JXDBYVR4YH4H85CKFD5S6546" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Desktop: Subscribing to Nitro Through the Nitro Tab</span
+  >
+</h4>
+<h2 id="h_01JXDBZ39KR58GMC6FPHM90VZD">On Mobile</h2>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Through Settings</strong></span
+  >
+</p>
+<p>
+  1. Tap your <strong>avatar</strong> <strong>icon</strong> in the bottom-right
+  corner. 
+</p>
+<p>
+  2. Press the <strong>cogwheel</strong> <strong>icon </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/32720389750679"
+    width="24"
+    height="24"
+  />] in the upper-right corner to navigate to <strong>Settings</strong>.
+</p>
+<p>
+  3. Tap the <strong>Get Nitro tab </strong>to navigate to the
+  <strong>Nitro page</strong>.  
+</p>
+<p>
+  4. Tap the <strong>Get Nitro button</strong> to subscribe to Nitro or the
+  <strong>Get Basic button</strong> to subscribe to Nitro Basic!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32720384340503"
+    width="269"
+    height="560"
+  />
+</p>
+<h4 id="h_01JXDC10GS4029W5XFP8MX8QTP" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Mobile: Subscribing to Nitro Through Settings</span
+  >
+</h4>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Through Nitro Icon</strong></span
+  >
+</p>
+<p>
+  1. Tap your <strong>avatar</strong> <strong>icon</strong> in the bottom-right
+  corner. 
+</p>
+<p>
+  2. Press the <strong>Nitro icon </strong>at the top to navigate to the<strong>
+    Nitro page</strong
+  >.
+</p>
+<p>
+  3. Tap the <strong>Get Nitro button</strong> to subscribe to Nitro or the
+  <strong>Get Basic button</strong> to subscribe to Nitro Basic!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32720384345239"
+    width="276"
+    height="572"
+  />
+</p>
+<h4 id="h_01JXDC24F13JBF30ACM5CBH9XY" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Mobile: Subscribing to Nitro Through Nitro Icon</span
+  >
+</h4>
+<h1 id="h_01JXDC2X91EXZZKRPMQ1729F5Z">Frequently Asked Questions</h1>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>In this FAQ section: </strong></span
+  >
+</p>
+<ul>
+  <li><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></li>
+  <li><a href="#h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic </a></li>
+  <li><a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</a></li>
+</ul>
+<h2 id="h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</h2>
+<p>
+  <strong
+    >Q: My Nitro subscription comes with 2 Server Boosts. What are
+    those?</strong
   >
 </p>
 <p>
@@ -421,11 +630,9 @@
   ><span style="font-weight: 400">! </span>
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: I’m having issues with my payment method when I try to buy a Nitro or
-      Nitro Basic subscription.</strong
-    ></span
+  <strong
+    >Q: I’m having issues with my payment method when I try to buy a Nitro or
+    Nitro Basic subscription.</strong
   >
 </p>
 <p>
@@ -440,9 +647,7 @@
   ><span style="font-weight: 400">.</span>
 </p>
 <p id="docs-internal-guid-58cf7475-7fff-01d4-ff85-6b1f2433dbac">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: Can I gift Nitro to a friend?</strong></span
-  >
+  <strong>Q: Can I gift Nitro to a friend?</strong>
 </p>
 <p>
   <span style="font-weight: 400"
@@ -457,10 +662,8 @@
 </p>
 <p>
   <span style="font-weight: 400"
-    ><span class="wysiwyg-font-size-large"
-      ><strong
-        >Q: Why do I need Nitro to upload more than 10MB of files?</strong
-      ></span
+    ><strong
+      >Q: Why do I need Nitro to upload more than 10MB of files?</strong
     ></span
   >
 </p>
@@ -478,13 +681,56 @@
   offers a 50MB limit, and Nitro gives you up to 500 MB, so you have options
   that fit your needs.
 </p>
-<h2 id="h_01HBCK2APPN2Y15C13HGT52NWZ"><strong>Classic</strong></h2>
+<p><strong>Q: How do I cancel or switch my Nitro plan?</strong></p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: I have a Nitro Classic subscription, but I no longer see Nitro Classic
-      in the UI. Can I still subscribe to Nitro Classic?</strong
-    ></span
+  A: On desktop or browser, navigate to your <strong>User Settings </strong>and
+  select the <strong>Subscribe</strong> tab, then choose
+  <strong>Switch Plans</strong> or <strong>Cancel</strong> in the upper-right
+  corner of the subscription banner. Learn more about canceling your
+  subscription in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695-How-to-Cancel-your-Nitro-Subscription"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Cancel Nitro Subscription article</a
+  >.
+</p>
+<h2 id="h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic</h2>
+<p>
+  <strong>Q: Do you offer Nitro and Nitro Basic in my local currency?</strong>
+</p>
+<p>
+  A: We are constantly working to expand the availability of accepted currencies
+  for Nitro and Nitro Basic. Check
+  <a
+    href="https://support.discord.com/hc/en-us/articles/4407269525911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this article</a
+  >
+  for information on localized pricing.
+</p>
+<p><strong>Q: Can I gift Nitro Basic to a friend? </strong></p>
+<p>
+  A:
+  <span id="docs-internal-guid-3ca05bc3-7fff-fe7a-993e-3d2cedafcf64"
+    >Gifting Nitro Basic is available on the desktop/browser clients and the
+    mobile clients. To gift Nitro Basic, you must go to the </span
+  ><strong>Nitro</strong> page which you can find by pressing the Discord logo
+  in your desktop or browser app or you can go to the Nitro page in your
+  <strong>User Settings.</strong> Learn more about
+  <a
+    href="https://support.discord.com/hc/articles/360020877112"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro Gifting here</a
+  >.
+</p>
+<h2 id="h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</h2>
+<p>
+  <strong
+    >Q: I have a Nitro Classic subscription, but I no longer see Nitro Classic
+    in the UI. Can I still subscribe to Nitro Classic?</strong
   >
 </p>
 <p>
@@ -495,11 +741,9 @@
   >
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: I have Nitro Classic credits in my account but I don’t know what Nitro
-      Classic gives me.</strong
-    ></span
+  <strong
+    >Q: I have Nitro Classic credits in my account but I don’t know what Nitro
+    Classic gives me.</strong
   >
 </p>
 <p>
@@ -528,11 +772,7 @@
     <span style="font-weight: 400">Screen share up to 1080p/60fps </span>
   </li>
 </ul>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: I have Nitro Classic credits, how can I use them?</strong></span
-  >
-</p>
+<p><strong>Q: I have Nitro Classic credits, how can I use them?</strong></p>
 <p>
   <span style="font-weight: 400"
     >A: Please keep in mind that you cannot follow these steps if you already
@@ -575,11 +815,9 @@
   >
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: I don’t have a Nitro subscription and I want to purchase
-      Classic.</strong
-    ></span
+  <strong
+    >Q: I don’t have a Nitro subscription and I want to purchase
+    Classic.</strong
   >
 </p>
 <p>
@@ -589,47 +827,5 @@
     Classic is not available for purchase.</span
   >
 </p>
-<h2 id="h_01HBCK2APPMT7K0Z8VFPKA4H5K"><strong>Basic</strong></h2>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong
-      >Q: Do you offer Nitro and Nitro Basic in my local currency?</strong
-    ></span
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >A: We are constantly working to expand the availability of accepted
-    currencies for Nitro and Nitro Basic. Check </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/4407269525911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >this article</a
-  ><span style="font-weight: 400"> for information on localized pricing.</span>
-</p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>Q: Can I gift Nitro Basic to a friend? </strong></span
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >A:
-    <span id="docs-internal-guid-3ca05bc3-7fff-fe7a-993e-3d2cedafcf64"
-      >Gifting Nitro Basic is available on the desktop/browser clients and the
-      mobile clients. To gift Nitro Basic, you must go to the </span
-    ><strong>Nitro</strong> page which you can find by pressing the Discord logo
-    in your desktop or browser app or you can go to the Nitro page in your
-    <strong>User Settings.</strong> Learn more about
-    <a
-      href="https://support.discord.com/hc/articles/360020877112"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Nitro Gifting here</a
-    >.<br
-  /></span>
-</p>
-<p> </p>
 <p> </p>
 <p> </p>

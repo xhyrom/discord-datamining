@@ -1,13 +1,14 @@
 <p>
   Starting from <strong>October 7, 2024 (10:00AM PT)</strong> to
-  <strong>June 30, 2025 (11:59PM PT)</strong>, YouTube Premium subscribers
-  within the United States can claim Discord Nitro through YouTube's Member Hub.
+  <strong>June 30, 2025 (11:59PM PT)</strong>, eligible YouTube Premium
+  subscribers within the United States can claim a 3 month trial of Discord
+  Nitro through YouTube's Member Hub. 
 </p>
 <p>
-  During this same period, YouTube Premium subscribers in the United States,
-  Canada, United Kingdom, France, Germany, Japan, and South Korea can claim
-  their 3-month Discord Nitro offer via email. Learn below about how you can
-  claim
+  During this same period, eligible YouTube Premium subscribers in the United
+  States, Canada, United Kingdom, France, Germany, Japan, and South Korea can
+  claim their 3-month Discord Nitro offer via email. Learn below about how you
+  can claim
   <a
     href="https://support.discord.com/hc/articles/115000435108-What-are-Nitro-Nitro-Basic"
     target="_blank"
@@ -28,8 +29,8 @@
   >
 </p>
 <p>
-  <strong>Offer Details:</strong> 3 months of Discord Nitro for YouTube Premium
-  subscribers
+  <strong>Offer Details:</strong> 3 months of Discord Nitro for eligible YouTube
+  Premium subscribers
 </p>
 <p>
   <strong>Who is Eligible: To claim through YouTube Premium,</strong> you must
@@ -48,22 +49,17 @@
 </p>
 <p>
   Users who have never had an active Nitro subscription on their Discord
-  accounts are eligible to redeem this Nitro promotion.
+  accounts are eligible to redeem this Nitro promotion. Eligible Nitro Basic or
+  Classic subscribers who have not had an active Nitro Basic or Classic
+  subscription in the 12 months prior to redeeming this promotion are
+  eligible.  
 </p>
 <p>
-  Users who have had a Discord Nitro subscription at any point on their accounts
-  and have had a Nitro Classic or Nitro Basic subscription in the past 12 months
-  are ineligible to redeem this promotion.
-</p>
-<p>
-  If a user has had a Nitro Basic, Nitro Classic, or Server Boosting
-  subscription active on their account and they’ve never had a Nitro
-  subscription, redeeming this promotion will override that subscription.
-</p>
-<p>
-  We will not be able to refund any leftover subscription time from those, and
-  the user will be forfeiting the remainder of the existing sub when activating
-  the 3 month Nitro trial. 
+  If a user has a Nitro Basic, Nitro Classic, or Server Boosting subscription
+  active on their account, redeeming this promotion will override that
+  subscription. We will not be able to refund any leftover subscription time
+  from those, and the user will be forfeiting the remainder of the existing sub
+  when activating the 3 month Nitro trial.
 </p>
 <p><strong>Requirements:</strong></p>
 <p>Redeem to Discord account by <strong>July 29, 2025 (11:59PM PT)</strong>.</p>
@@ -71,8 +67,14 @@
 <p>
   After the 3 month free trial period, your Nitro subscription will convert to a
   monthly recurring subscription, and Discord will bill your payment method per
-  month until you cancel it. You can cancel at any time in your Discord User
-  Settings. 
+  month until you cancel it. You can
+  <a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >cancel</a
+  >
+  at any time in your Discord User Settings.
 </p>
 <p id="h_01J8K1GT0TYB4KXK3F1ERW23ZP">
   <span class="wysiwyg-font-size-large"
@@ -224,7 +226,7 @@
   </li>
 </ul>
 <h1 id="h_01J8K1GT0VX168FWH44KVGQX22">
-  <strong>How do I claim the Nitro Promo from YouTube </strong>
+  <strong>How do I claim the Discord Nitro Promo from YouTube </strong>
 </h1>
 <p>
   As long as you're a <strong>YouTube Premium </strong>member, you'll be able to
@@ -233,7 +235,7 @@
   <strong>June 30, 2025 (11:59PM PT)</strong><strong>. </strong>
 </p>
 <h2 id="h_01J8K1GT0VW0XK53J8Y5FWEVZK">
-  <strong>Eligibility for the Claiming this Promotion from Youtube</strong>
+  <strong>Eligibility for the Claiming this Promotion from YouTube</strong>
 </h2>
 <p>
   In order to claim this promotion link, you'll need to be an active subscriber
@@ -311,9 +313,9 @@
   <strong>How do I redeem the Nitro Trial on my Discord Account? </strong>
 </h1>
 <p>
-  Once you have claimed the promo link in your YouTube Premium Member Hub,
-  you'll now need to officially redeem this promo link on your Discord account
-  (or share this code with a friend)! 
+  Once you have claimed the Discord Nitro YouTube offer, you'll now need to
+  officially redeem this promo link on your Discord account (or share this code
+  with a friend)!
 </p>
 <h2 id="h_01J8K1GT0VPEEYCP0H61X1N53R">
   <strong>Eligibility for Redeeming the Nitro Trial</strong>
@@ -475,7 +477,14 @@
 </div>
 <p>
   At the end of the promotion period, you'll be converted to a paying Nitro
-  subscription per month unless you cancel your subscription.
+  subscription per month unless you
+  <a
+    href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    target="_blank"
+    rel="noopener noreferrer"
+    >cancel</a
+  >
+  your subscription.
 </p>
 <h1 id="h_01J8K1GT0VRHR3GGQFV1C9B0QQ">
   <strong>How do I share my Code with a Friend?</strong>
@@ -631,7 +640,16 @@
 </div>
 <p>
   At the end of the promotion period, you'll be converted to a paying Nitro
-  subscription per month unless you cancel your subscription.
+  subscription per month unless you
+  <a href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >cancel</span
+    ></a
+  >
+  your subscription.
 </p>
 <h2 id="h_01J8K1GT0V36QKSPR2B12ZTDRE">
   <strong>Payment Info and Subscription Questions</strong>
@@ -645,8 +663,16 @@
   to enjoy Nitro on Discord.
 </p>
 <p>
-  However, you can cancel the Nitro subscription at any time before the end of
-  the 3 months!
+  However, you can
+  <a href="https://support.discord.com/hc/en-us/articles/19580873036695"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >cancel</span
+    ></a
+  >
+  the Nitro subscription at any time before the end of the 3 months!
 </p>
 <p>
   <strong
