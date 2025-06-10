@@ -98,10 +98,7 @@
   },
   "JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_PRESENCE": {
     "url": "/users/:param/sessions/:param/embedded-activities/:param/1",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "JOIN_CONTEXTLESS_EMBEDDED_ACTIVITY_VIA_INSTANCE": {
     "url": "/activity-instances/:param/embedded-activities/:param/join",
