@@ -10,12 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7977511002](https://discord.com/jobs/7977511002)
 
-**Updated At:** Tue, 20 May 2025 22:27:36 GMT
+**Updated At:** Tue, 10 Jun 2025 17:55:00 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for experienced and passionate Data Engineers to join our Data team! Data Engineers at Discord collaborate with data science and engineering teams to build and support foundational high-leverage data sets that power tools, analyses, and models. The data sets built by DE directly inform how we identify opportunities, measure success, and make decisions. If this sounds exciting to you and you’re passionate about data, impact, and working on an amazing team, read on!
-
-This position is US based only.
+This position is SF based only.
 What You'll Be Doing
 
 Create and maintain data pipelines and foundational datasets to support analytics, modeling, experimentation, and product/business needs
@@ -37,7 +36,6 @@ A desire to work with amazing, passionate people who care deeply about solving c
 Last but not least - a collaborative attitude and a healthy dose of natural curiosity!
 
 Bonus Points
-&amp;nbsp;
 
 Passion for Discord or online communities
 Experience owning and proactively improving the data models for a functional area
