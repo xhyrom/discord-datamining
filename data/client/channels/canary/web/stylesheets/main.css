@@ -20819,9 +20819,15 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .notFirstSectionHeader__61424 {
   margin-top: 16px;
 }
-.sectionFooter__61424 {
+.nitroFooter__61424 {
   background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
+  height: 20px;
+}
+.nitroFooter__61424.lastSection__61424 {
   height: 60px;
+}
+.nonNitroFooter__61424 {
+  height: 70px;
 }
 .sectionTitle__61424 {
   margin: 0 8px;
@@ -45282,6 +45288,8 @@ html.disable-forced-colors * {
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--primary-530);
   --background-base-low: var(--neutral-66);
+  --background-base-lower: var(--neutral-69);
+  --background-base-lowest: var(--neutral-73);
   --background-floating: var(--primary-800);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -45347,22 +45355,22 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-danger-border: hsl(var(--white-hsl) / 0);
   --button-expressive-background: var(--white);
   --button-expressive-background-active: var(--neutral-5);
   --button-expressive-background-hover: var(--white);
   --button-filled-brand-background: var(--brand-500);
   --button-filled-brand-background-active: var(--brand-600);
   --button-filled-brand-background-hover: var(--brand-560);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-border: hsl(var(--white-hsl) / 0);
   --button-filled-brand-inverted-background: var(--white);
   --button-filled-brand-inverted-background-active: var(--brand-200);
   --button-filled-brand-inverted-background-hover: var(--brand-100);
   --button-filled-brand-inverted-text: var(--brand-500);
   --button-filled-brand-text: var(--white);
-  --button-filled-white-background: var(--white-500);
-  --button-filled-white-background-active: var(--white-500);
-  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-background: var(--white);
+  --button-filled-white-background-active: var(--white);
+  --button-filled-white-background-hover: var(--white);
   --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
@@ -45404,15 +45412,15 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-500);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0);
+  --button-positive-border: hsl(var(--white-hsl) / 0);
   --button-secondary-background: var(--primary-500);
   --button-secondary-background-active: var(--primary-400);
   --button-secondary-background-disabled: var(--primary-500);
   --button-secondary-background-hover: var(--primary-430);
-  --button-secondary-text: var(--white-500);
-  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
-  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
-  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-secondary-text: var(--white);
+  --button-transparent-background: hsl(var(--white-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-hsl) / 0.05);
   --button-transparent-text: var(--primary-130);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
@@ -45732,6 +45740,16 @@ html.disable-forced-colors * {
     --background-base-low: color-mix(
       in oklab,
       var(--neutral-66) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-69) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-73) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -47092,6 +47110,8 @@ html.disable-forced-colors * {
   --autocomplete-bg: var(--primary-100);
   --background-accent: var(--primary-430);
   --background-base-low: var(--neutral-2);
+  --background-base-lower: var(--neutral-2);
+  --background-base-lowest: var(--neutral-4);
   --background-floating: var(--white);
   --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
@@ -47151,22 +47171,22 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-danger-border: hsl(var(--white-hsl) / 0);
   --button-expressive-background: var(--brand-500);
   --button-expressive-background-active: var(--brand-600);
   --button-expressive-background-hover: var(--brand-560);
   --button-filled-brand-background: var(--brand-500);
   --button-filled-brand-background-active: var(--brand-600);
   --button-filled-brand-background-hover: var(--brand-560);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-border: hsl(var(--white-hsl) / 0);
   --button-filled-brand-inverted-background: var(--white);
   --button-filled-brand-inverted-background-active: var(--brand-200);
   --button-filled-brand-inverted-background-hover: var(--brand-100);
   --button-filled-brand-inverted-text: var(--brand-500);
   --button-filled-brand-text: var(--white);
-  --button-filled-white-background: var(--white-500);
-  --button-filled-white-background-active: var(--white-500);
-  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-background: var(--white);
+  --button-filled-white-background-active: var(--white);
+  --button-filled-white-background-hover: var(--white);
   --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
@@ -47208,12 +47228,12 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-530);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0);
+  --button-positive-border: hsl(var(--white-hsl) / 0);
   --button-secondary-background: var(--primary-430);
   --button-secondary-background-active: var(--primary-530);
   --button-secondary-background-disabled: var(--primary-430);
   --button-secondary-background-hover: var(--primary-500);
-  --button-secondary-text: var(--white-500);
+  --button-secondary-text: var(--white);
   --button-transparent-background: hsl(var(--primary-400-hsl) / 0.01);
   --button-transparent-background-active: hsl(var(--primary-400-hsl) / 0.25);
   --button-transparent-background-hover: hsl(var(--primary-400-hsl) / 0.2);
@@ -47536,6 +47556,16 @@ html.disable-forced-colors * {
     --background-base-low: color-mix(
       in oklab,
       var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-4) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -48899,6 +48929,8 @@ html.disable-forced-colors * {
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-17);
   --background-base-low: var(--neutral-95);
+  --background-base-lower: var(--neutral-97);
+  --background-base-lowest: var(--neutral-100);
   --background-floating: var(--plum-23);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -48964,22 +48996,22 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-danger-border: hsl(var(--white-hsl) / 0);
   --button-expressive-background: var(--white);
   --button-expressive-background-active: var(--neutral-5);
   --button-expressive-background-hover: var(--white);
   --button-filled-brand-background: var(--brand-500);
   --button-filled-brand-background-active: var(--brand-600);
   --button-filled-brand-background-hover: var(--brand-560);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-border: hsl(var(--white-hsl) / 0);
   --button-filled-brand-inverted-background: var(--white);
   --button-filled-brand-inverted-background-active: var(--brand-200);
   --button-filled-brand-inverted-background-hover: var(--brand-100);
   --button-filled-brand-inverted-text: var(--brand-500);
   --button-filled-brand-text: var(--white);
-  --button-filled-white-background: var(--white-500);
-  --button-filled-white-background-active: var(--white-500);
-  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-background: var(--white);
+  --button-filled-white-background-active: var(--white);
+  --button-filled-white-background-hover: var(--white);
   --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
@@ -49021,15 +49053,15 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-530);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0);
+  --button-positive-border: hsl(var(--white-hsl) / 0);
   --button-secondary-background: var(--plum-13);
   --button-secondary-background-active: var(--plum-10);
   --button-secondary-background-disabled: var(--plum-13);
   --button-secondary-background-hover: var(--plum-11);
-  --button-secondary-text: var(--white-500);
-  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
-  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
-  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-secondary-text: var(--white);
+  --button-transparent-background: hsl(var(--white-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-hsl) / 0.05);
   --button-transparent-text: var(--plum-2);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
@@ -49349,6 +49381,16 @@ html.disable-forced-colors * {
     --background-base-low: color-mix(
       in oklab,
       var(--neutral-95) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-97) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -50713,6 +50755,8 @@ html.disable-forced-colors * {
   --autocomplete-bg: var(--primary-630);
   --background-accent: var(--plum-15);
   --background-base-low: var(--neutral-82);
+  --background-base-lower: var(--neutral-86);
+  --background-base-lowest: var(--neutral-92);
   --background-floating: var(--plum-18);
   --background-mentioned: hsl(var(--yellow-260-hsl) / 0.08);
   --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.08);
@@ -50776,22 +50820,22 @@ html.disable-forced-colors * {
   --button-danger-background-active: var(--red-530);
   --button-danger-background-disabled: var(--red-430);
   --button-danger-background-hover: var(--red-500);
-  --button-danger-border: hsl(var(--white-500-hsl) / 0);
+  --button-danger-border: hsl(var(--white-hsl) / 0);
   --button-expressive-background: var(--white);
   --button-expressive-background-active: var(--neutral-5);
   --button-expressive-background-hover: var(--white);
   --button-filled-brand-background: var(--brand-500);
   --button-filled-brand-background-active: var(--brand-600);
   --button-filled-brand-background-hover: var(--brand-560);
-  --button-filled-brand-border: hsl(var(--white-500-hsl) / 0);
+  --button-filled-brand-border: hsl(var(--white-hsl) / 0);
   --button-filled-brand-inverted-background: var(--white);
   --button-filled-brand-inverted-background-active: var(--brand-200);
   --button-filled-brand-inverted-background-hover: var(--brand-100);
   --button-filled-brand-inverted-text: var(--brand-500);
   --button-filled-brand-text: var(--white);
-  --button-filled-white-background: var(--white-500);
-  --button-filled-white-background-active: var(--white-500);
-  --button-filled-white-background-hover: var(--white-500);
+  --button-filled-white-background: var(--white);
+  --button-filled-white-background-active: var(--white);
+  --button-filled-white-background-hover: var(--white);
   --button-filled-white-text: var(--primary-500);
   --button-outline-brand-background: hsl(var(--white-hsl) / 0);
   --button-outline-brand-background-active: var(--brand-560);
@@ -50833,15 +50877,15 @@ html.disable-forced-colors * {
   --button-positive-background-active: var(--green-530);
   --button-positive-background-disabled: var(--green-430);
   --button-positive-background-hover: var(--green-500);
-  --button-positive-border: hsl(var(--white-500-hsl) / 0);
+  --button-positive-border: hsl(var(--white-hsl) / 0);
   --button-secondary-background: var(--plum-13);
   --button-secondary-background-active: var(--plum-10);
   --button-secondary-background-disabled: var(--plum-13);
   --button-secondary-background-hover: var(--plum-11);
-  --button-secondary-text: var(--white-500);
-  --button-transparent-background: hsl(var(--white-500-hsl) / 0.1);
-  --button-transparent-background-active: hsl(var(--white-500-hsl) / 0.01);
-  --button-transparent-background-hover: hsl(var(--white-500-hsl) / 0.05);
+  --button-secondary-text: var(--white);
+  --button-transparent-background: hsl(var(--white-hsl) / 0.1);
+  --button-transparent-background-active: hsl(var(--white-hsl) / 0.01);
+  --button-transparent-background-hover: hsl(var(--white-hsl) / 0.05);
   --button-transparent-text: var(--plum-3);
   --card-gradient-bg: hsl(var(--black-hsl) / 0.4);
   --card-gradient-pressed-bg: hsl(var(--black-hsl) / 0.5);
@@ -51161,6 +51205,16 @@ html.disable-forced-colors * {
     --background-base-low: color-mix(
       in oklab,
       var(--neutral-82) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lower: color-mix(
+      in oklab,
+      var(--neutral-86) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --background-base-lowest: color-mix(
+      in oklab,
+      var(--neutral-92) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-floating: color-mix(
@@ -56331,8 +56385,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-78);
-  --background-base-lower: var(--neutral-69);
-  --background-base-lowest: var(--neutral-73);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
   --background-code-addition: hsl(
     var(--opacity-green-12-hsl) / 0.12156862745098039
@@ -56782,16 +56834,6 @@ html.disable-forced-colors * {
       var(--neutral-78) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-69) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-73) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-code: color-mix(
       in oklab,
       hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196) 100%,
@@ -57206,8 +57248,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-7);
-  --background-base-lower: var(--neutral-2);
-  --background-base-lowest: var(--neutral-4);
   --background-code: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
   --background-code-addition: hsl(
     var(--opacity-green-12-hsl) / 0.12156862745098039
@@ -57659,16 +57699,6 @@ html.disable-forced-colors * {
       var(--neutral-7) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-2) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-4) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
     --background-code: color-mix(
       in oklab,
       hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098) 100%,
@@ -58040,6 +58070,7 @@ html.disable-forced-colors * {
   --info-warning-text: var(--yellow-new-38);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --input-focused-border: hsl(var(--plum-11-hsl) / 0.24);
   --input-placeholder-text: var(--neutral-38);
   --interactive-active: var(--neutral-8);
   --interactive-hover: var(--neutral-8);
@@ -58078,8 +58109,6 @@ html.disable-forced-colors * {
     var(--opacity-12-hsl) / 0.12156862745098039
   );
   --app-background-frame: var(--neutral-100);
-  --background-base-lower: var(--neutral-97);
-  --background-base-lowest: var(--neutral-100);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
   --background-code-addition: hsl(
     var(--opacity-green-12-hsl) / 0.12156862745098039
@@ -58369,6 +58398,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
         var(--theme-base-color-amount, 0%)
     );
+    --input-focused-border: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.24) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24)
+        var(--theme-base-color-amount, 0%)
+    );
     --input-placeholder-text: color-mix(
       in oklab,
       var(--neutral-38) 100%,
@@ -58521,16 +58556,6 @@ html.disable-forced-colors * {
         var(--theme-base-color-amount, 0%)
     );
     --app-background-frame: color-mix(
-      in oklab,
-      var(--neutral-100) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-97) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
       in oklab,
       var(--neutral-100) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
@@ -58904,6 +58929,7 @@ html.disable-forced-colors * {
   --info-warning-text: var(--yellow-new-32);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-focused-border: hsl(var(--plum-11-hsl) / 0.32);
   --input-placeholder-text: var(--neutral-36);
   --interactive-active: var(--neutral-2);
   --interactive-hover: var(--neutral-2);
@@ -58942,8 +58968,6 @@ html.disable-forced-colors * {
     var(--opacity-8-hsl) / 0.0784313725490196
   );
   --app-background-frame: var(--neutral-97);
-  --background-base-lower: var(--neutral-86);
-  --background-base-lowest: var(--neutral-92);
   --background-code: hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
   --background-code-addition: hsl(
     var(--opacity-green-12-hsl) / 0.12156862745098039
@@ -59231,6 +59255,12 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--theme-base-color-amount, 0%)
     );
+    --input-focused-border: color-mix(
+      in oklab,
+      hsl(var(--plum-11-hsl) / 0.32) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.32)
+        var(--theme-base-color-amount, 0%)
+    );
     --input-placeholder-text: color-mix(
       in oklab,
       var(--neutral-36) 100%,
@@ -59385,16 +59415,6 @@ html.disable-forced-colors * {
     --app-background-frame: color-mix(
       in oklab,
       var(--neutral-97) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lower: color-mix(
-      in oklab,
-      var(--neutral-86) 100%,
-      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
-    );
-    --background-base-lowest: color-mix(
-      in oklab,
-      var(--neutral-92) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --background-code: color-mix(
@@ -61516,4 +61536,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.557a374cd3bc82cf.css.map*/
+/*# sourceMappingURL=12633.a9b03c33f3adc86c.css.map*/

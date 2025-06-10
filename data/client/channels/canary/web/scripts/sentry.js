@@ -6777,7 +6777,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1f3580e2fc43c25920b5d54aa4410ddb6bfd38d8",
+            release: "discord_web-f3160c50ec324df1e00025744eb8e343b25b18c1",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6843,8 +6843,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "407507"),
-            o.YA("builtAt", String("1749513096695"));
+            o.YA("buildNumber", "407569"),
+            o.YA("builtAt", String("1749519100139"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7046,6 +7046,20 @@
                 [r.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
                 [r.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
+              },
+              BACKGROUND_BASE_LOWER: {
+                category: "background",
+                [r.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
+              },
+              BACKGROUND_BASE_LOWEST: {
+                category: "background",
+                [r.DARK]: { raw: "NEUTRAL_73", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_4", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_92", opacity: 1 },
               },
               BACKGROUND_FLOATING: {
                 category: "background",
@@ -7535,10 +7549,10 @@
               },
               BUTTON_DANGER_BORDER: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0 },
+                [r.DARK]: { raw: "WHITE", opacity: 0 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0 },
               },
               BUTTON_EXPRESSIVE_BACKGROUND: {
                 category: "generic",
@@ -7584,10 +7598,10 @@
               },
               BUTTON_FILLED_BRAND_BORDER: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0 },
+                [r.DARK]: { raw: "WHITE", opacity: 0 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0 },
               },
               BUTTON_FILLED_BRAND_INVERTED_BACKGROUND: {
                 category: "generic",
@@ -7626,24 +7640,24 @@
               },
               BUTTON_FILLED_WHITE_BACKGROUND: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 1 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 1 },
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_FILLED_WHITE_BACKGROUND_ACTIVE: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 1 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 1 },
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_FILLED_WHITE_BACKGROUND_HOVER: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 1 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 1 },
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_FILLED_WHITE_TEXT: {
                 category: "text",
@@ -7934,10 +7948,10 @@
               },
               BUTTON_POSITIVE_BORDER: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0 },
+                [r.DARK]: { raw: "WHITE", opacity: 0 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0 },
               },
               BUTTON_SECONDARY_BACKGROUND: {
                 category: "generic",
@@ -7969,31 +7983,31 @@
               },
               BUTTON_SECONDARY_TEXT: {
                 category: "text",
-                [r.DARK]: { raw: "WHITE_500", opacity: 1 },
-                [r.LIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 1 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 1 },
+                [r.DARK]: { raw: "WHITE", opacity: 1 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 1 },
               },
               BUTTON_TRANSPARENT_BACKGROUND: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0.1 },
+                [r.DARK]: { raw: "WHITE", opacity: 0.1 },
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 0.01 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0.1 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0.1 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.1 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0.1 },
               },
               BUTTON_TRANSPARENT_BACKGROUND_ACTIVE: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0.01 },
+                [r.DARK]: { raw: "WHITE", opacity: 0.01 },
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 0.25 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0.01 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0.01 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.01 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0.01 },
               },
               BUTTON_TRANSPARENT_BACKGROUND_HOVER: {
                 category: "generic",
-                [r.DARK]: { raw: "WHITE_500", opacity: 0.05 },
+                [r.DARK]: { raw: "WHITE", opacity: 0.05 },
                 [r.LIGHT]: { raw: "PRIMARY_400", opacity: 0.2 },
-                [r.MIDNIGHT]: { raw: "WHITE_500", opacity: 0.05 },
-                [r.DARKER]: { raw: "WHITE_500", opacity: 0.05 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.05 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0.05 },
               },
               BUTTON_TRANSPARENT_TEXT: {
                 category: "text",
@@ -15423,6 +15437,18 @@
             r.I.NEUTRAL_95,
             r.I.NEUTRAL_82,
           ],
+          "background-base-lower": [
+            r.I.NEUTRAL_69,
+            r.I.NEUTRAL_2,
+            r.I.NEUTRAL_97,
+            r.I.NEUTRAL_86,
+          ],
+          "background-base-lowest": [
+            r.I.NEUTRAL_73,
+            r.I.NEUTRAL_4,
+            r.I.NEUTRAL_100,
+            r.I.NEUTRAL_92,
+          ],
           "background-floating": [
             r.I.PRIMARY_800,
             r.I.WHITE,
@@ -15758,12 +15784,7 @@
             r.I.RED_500,
             r.I.RED_500,
           ],
-          "button-danger-border": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-          ],
+          "button-danger-border": [r.I.WHITE, r.I.WHITE, r.I.WHITE, r.I.WHITE],
           "button-expressive-background": [
             r.I.WHITE,
             r.I.BRAND_500,
@@ -15801,10 +15822,10 @@
             r.I.BRAND_560,
           ],
           "button-filled-brand-border": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-filled-brand-inverted-background": [
             r.I.WHITE,
@@ -15837,22 +15858,22 @@
             r.I.WHITE,
           ],
           "button-filled-white-background": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-filled-white-background-active": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-filled-white-background-hover": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-filled-white-text": [
             r.I.PRIMARY_500,
@@ -16101,10 +16122,10 @@
             r.I.GREEN_500,
           ],
           "button-positive-border": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-secondary-background": [
             r.I.PRIMARY_500,
@@ -16130,29 +16151,24 @@
             r.I.PLUM_11,
             r.I.PLUM_11,
           ],
-          "button-secondary-text": [
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
-          ],
+          "button-secondary-text": [r.I.WHITE, r.I.WHITE, r.I.WHITE, r.I.WHITE],
           "button-transparent-background": [
-            r.I.WHITE_500,
+            r.I.WHITE,
             r.I.PRIMARY_400,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-transparent-background-active": [
-            r.I.WHITE_500,
+            r.I.WHITE,
             r.I.PRIMARY_400,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-transparent-background-hover": [
-            r.I.WHITE_500,
+            r.I.WHITE,
             r.I.PRIMARY_400,
-            r.I.WHITE_500,
-            r.I.WHITE_500,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "button-transparent-text": [
             r.I.PRIMARY_130,
@@ -46641,4 +46657,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.3f15b3b5abfd49e4.js.map
+//# sourceMappingURL=sentry.576d640d46ae8bca.js.map
