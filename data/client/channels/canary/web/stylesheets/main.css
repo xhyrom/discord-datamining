@@ -44396,6 +44396,9 @@ html.disable-forced-colors * {
 .closeButton__68a18 {
   margin-left: auto;
 }
+.closeIcon__68a18 {
+  display: block;
+}
 .closeIconWithHover__68a18 {
   fill: var(--icon-tertiary);
 }
@@ -44406,10 +44409,6 @@ html.disable-forced-colors * {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-.slider__68a18 {
-  margin: 0 6px;
-  width: auto;
 }
 .gradientDirectionSliderContainer__68a18 {
   margin-bottom: 4px;
@@ -44516,19 +44515,7 @@ html.disable-forced-colors * {
   margin-top: var(--spacing-8);
   width: 100%;
 }
-.nitroIconContainer__68a18 {
-  align-items: center;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-}
-.nitroIconWithHover__68a18 {
-  height: 20px;
-  width: 20px;
-  fill: var(--icon-tertiary);
-}
-.nitroIconContainer__68a18:hover .nitroIconWithHover__68a18 {
+.nitroIcon__68a18 {
   fill: var(--icon-primary);
 }
 .errorPage_a57b28 {
@@ -61587,4 +61574,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.baf793e248ede8f9.css.map*/
+/*# sourceMappingURL=12633.ffd7720d3d598a9d.css.map*/
