@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8021192002](https://discord.com/jobs/8021192002)
 
-**Updated At:** Fri, 06 Jun 2025 17:59:48 GMT
+**Updated At:** Tue, 10 Jun 2025 16:09:00 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position US-based only. We are seeking candidates located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is San Francisco-based only. We are seeking candidates located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
 What would an amazing office be without an equally amazing support team? Discord’s Workplace team is searching for a data-driven Workplace Operations Specialist, Analytics to join us in our mission to provide a delightful, safe, comfortable, and inclusive office environment and experience for Discord employees and visitors at our San Francisco HQ! This role will focus on transforming how we understand and optimize our physical workspace and the office experience through data collection, analysis, and actionable insights.&amp;nbsp;
 What you'll be doing:
 

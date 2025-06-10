@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7950420002](https://discord.com/jobs/7950420002)
 
-**Updated At:** Mon, 19 May 2025 16:39:33 GMT
+**Updated At:** Tue, 10 Jun 2025 16:05:46 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is San Francisco-based only. We are seeking candidates located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
+We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
 You will harness your prior experience in advertising/media/marketing spaces and bring a combination of relationship building, industry relationships, product insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region. This hire must be based on the West Coast, however, there is no in-office requirement
 What you'll be doing
 
