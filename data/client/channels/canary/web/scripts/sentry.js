@@ -6777,7 +6777,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-acc9438f898b0ed588f832adeaf9a4f92cbb484a",
+            release: "discord_web-fa2c5ab3ea4306f539dce2418fa26fec8015d84b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6843,8 +6843,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "407690"),
-            o.YA("builtAt", String("1749573461665"));
+            o.YA("buildNumber", "407700"),
+            o.YA("builtAt", String("1749574040229"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8608,6 +8608,25 @@
                 [r.LIGHT]: { raw: "PRIMARY_860", opacity: 1 },
                 [r.MIDNIGHT]: { raw: "PLUM_2", opacity: 1 },
                 [r.DARKER]: { raw: "PLUM_3", opacity: 1 },
+              },
+              EXPERIMENTAL_AVATAR_EMBED_BG: {
+                category: "background",
+                [r.DARK]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.LIGHT]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.MIDNIGHT]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
+                [r.DARKER]: {
+                  raw: "OPACITY_BLACK_52",
+                  opacity: 0.5215686274509804,
+                },
               },
               EXPRESSION_PICKER_BG: {
                 category: "background",
@@ -17115,6 +17134,12 @@
             r.I.PRIMARY_860,
             r.I.PLUM_2,
             r.I.PLUM_3,
+          ],
+          "experimental-avatar-embed-bg": [
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_52,
+            r.I.OPACITY_BLACK_52,
           ],
           "expression-picker-bg": [
             r.I.PRIMARY_630,
@@ -47529,4 +47554,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2b95634672b46fc5.js.map
+//# sourceMappingURL=sentry.3d9998890f6ce9c1.js.map
