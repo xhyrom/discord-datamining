@@ -46,7 +46,7 @@
   >
 </p>
 <p>
-  A: No, the social features that enable you to to send/receive Discord messages
+  A: No, the social features that enable you to send/receive Discord messages
   and view your Discord friends from within a game are optional. You can choose
   whether to use them.
 </p>
