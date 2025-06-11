@@ -11581,6 +11581,9 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   max-width: 100%;
   overflow: hidden;
 }
+.activityContainer_c9d15c.iconOnly_c9d15c {
+  gap: 1px;
+}
 .activitiesTooltip_c9d15c,
 .tooltipText_c9d15c {
   word-break: break-word;
@@ -35970,6 +35973,7 @@ img.thumbnail__0f2e8 {
   backdrop-filter: blur(16px);
   background-color: var(--user-profile-overlay-background);
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  color: var(--text-tertiary);
   flex-grow: 1;
   margin: 0 8px;
   opacity: 1;
@@ -35997,11 +36001,13 @@ img.thumbnail__0f2e8 {
   .showMoreButton__84832,
 .showMoreButton__84832:focus,
 .showMoreButton__84832:hover {
+  color: var(--header-primary);
   transform: translateY(0);
 }
 .full-motion .showMoreButton__84832 {
   transition:
     transform 0.2s ease-in-out 0.1s,
+    color 0.2s ease-in-out 0.1s,
     opacity 0.1s ease-in-out;
 }
 .full-motion .firstCardContainer__84832:focus-within .showMoreButton__84832,
@@ -36010,6 +36016,7 @@ img.thumbnail__0f2e8 {
 .full-motion .showMoreButton__84832:hover {
   transition:
     transform 0.2s ease-in-out,
+    color 0.2s ease-in-out,
     opacity 0.1s ease-in-out,
     background-color var(--custom-button-transition-duration) ease-in-out;
 }
@@ -59719,4 +59726,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2999f70bf47fcc60.css.map*/
+/*# sourceMappingURL=12633.d3073ba584957f41.css.map*/
