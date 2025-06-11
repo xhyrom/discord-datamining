@@ -5470,32 +5470,16 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .content__468a6 {
   height: 100%;
 }
+.body__468a6,
 .title__468a6 {
-  text-align: center;
-}
-.minorContainer__468a6 {
-  cursor: pointer;
-  flex: 0 0 auto;
-  margin-bottom: -10px;
-  margin-top: 8px;
-  width: 100%;
-}
-.secondaryAction__468a6 {
-  opacity: 0.6;
-  text-align: center;
-}
-.secondaryAction__468a6:hover {
-  text-decoration: underline;
-}
-.body__468a6 {
   text-align: center;
 }
 .primaryButton__468a6,
 .secondaryButton__468a6 {
   flex: 1 1 45%;
 }
-.gutter__468a6 {
-  margin-left: 10px;
+.modalFooter__468a6 {
+  gap: var(--space-8);
 }
 .visual-refresh .container__468a6 {
   min-height: auto;
@@ -44315,7 +44299,8 @@ html.disable-forced-colors * {
   border-radius: 50%;
   box-shadow:
     0 3px 13.2px 0 rgba(0, 0, 0, 0.15),
-    0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    0 1px 2px 0 rgba(0, 0, 0, 0.05),
+    inset 0 1px 6px 0 rgba(0, 0, 0, 0.15);
   height: 16px;
   width: 16px;
 }
@@ -44406,6 +44391,9 @@ html.disable-forced-colors * {
 }
 .iconButton_b29565:hover .iconWithHover_b29565 {
   fill: var(--icon-primary);
+}
+.eyeDropperTooltip_b29565 {
+  max-width: 130px;
 }
 .themeSelector__5a15d {
   height: 32px;
@@ -59731,4 +59719,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ce4f1c0024977a42.css.map*/
+/*# sourceMappingURL=12633.2999f70bf47fcc60.css.map*/
