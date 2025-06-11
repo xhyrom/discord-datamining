@@ -21655,6 +21655,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   grid-template-rows: 32px auto;
   grid-row-gap: 12px;
 }
+.emojiStudioActive__08434.contentWrapper__08434 {
+  border-radius: var(--radius-lg);
+}
 .emojiStudioActive__08434 .navItem__08434 {
   line-height: 32px;
   padding: 0 12px;
@@ -59738,4 +59741,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.52e76b3d90cb8f51.css.map*/
+/*# sourceMappingURL=12633.dfcaf1b18d6336f7.css.map*/
