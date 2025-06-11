@@ -21639,17 +21639,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   gap: var(--spacing-4);
 }
 .addEmojiButton__08434 {
-  height: 32px;
   margin-left: auto;
-  min-width: 32px;
-  padding: 0 12px;
-}
-.addEmojiButton__08434 > div {
-  align-items: center;
-  display: flex;
-}
-.addEmojiButton__08434 svg {
-  margin-right: 4px;
 }
 .emojiStudioActive__08434 {
   grid-template-rows: 32px auto;
@@ -59741,4 +59731,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.dfcaf1b18d6336f7.css.map*/
+/*# sourceMappingURL=12633.ce4f1c0024977a42.css.map*/
