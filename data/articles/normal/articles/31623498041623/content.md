@@ -195,7 +195,7 @@
 </ul>
 <p><strong>macOS Installation Issues</strong></p>
 <ul>
-  <li>Check system requirements (macOS 10.11 or later)</li>
+  <li>Check system requirements (macOS 11 or later)</li>
   <li>Clear ~/Library/Application Support/discord directory</li>
   <li>Verify disk permissions</li>
   <li>Download fresh installer from Discord website</li>
@@ -287,7 +287,7 @@
 </ul>
 <p>5. <strong>Check system requirements</strong></p>
 <ul>
-  <li>Windows 7+ or macOS 10.11+</li>
+  <li>Windows 10+ or macOS 11 (Big Sur)</li>
   <li>Minimum 4GB RAM recommended</li>
 </ul>
 <h1 id="h_01JSJC35HN5YYCQ5F1JSF21ZKP">When to Report a Bug</h1>
