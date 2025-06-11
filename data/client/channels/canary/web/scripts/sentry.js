@@ -6777,7 +6777,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-73109a62338ad35883eb88c39d1f147c647ffb05",
+            release: "discord_web-4d6636440048fd85bb59fe1e7d7116197e4fd8b4",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6843,8 +6843,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "408079"),
-            o.YA("builtAt", String("1749599106631"));
+            o.YA("buildNumber", "408123"),
+            o.YA("builtAt", String("1749603924741"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -10248,6 +10248,13 @@
                     opacity: 0.9,
                   },
                 },
+              },
+              USER_PROFILE_ACTIVITY_TOOLBAR_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_60", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_1", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_83", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_73", opacity: 1 },
               },
               USER_PROFILE_BACKGROUND_HOVER: {
                 category: "generic",
@@ -19010,6 +19017,12 @@
             r.I.NEUTRAL_2,
             r.I.NEUTRAL_97,
             r.I.NEUTRAL_86,
+          ],
+          "user-profile-activity-toolbar-background": [
+            r.I.NEUTRAL_60,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_83,
+            r.I.NEUTRAL_73,
           ],
           "user-profile-background-hover": [
             r.I.OPACITY_8,
@@ -48268,4 +48281,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1f958c55d8d9b1dd.js.map
+//# sourceMappingURL=sentry.e052de14d30de551.js.map

@@ -17370,13 +17370,17 @@ span.clanTag__5d473 {
 .visual-refresh .popover__2d0ab {
   background-color: var(--user-profile-toolbar-background);
 }
+.custom-user-profile-theme.theme-dark .popover__2d0ab {
+  -webkit-backdrop-filter: blur(36px);
+  backdrop-filter: blur(36px);
+}
+.custom-user-profile-theme.theme-light .popover__2d0ab {
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
 .full-motion.visual-refresh .popover__2d0ab:hover,
 .visual-refresh .popover__2d0ab {
   box-shadow: var(--shadow-low);
-}
-.custom-user-profile-theme .popover__2d0ab {
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
 }
 .popover__2d0ab.visible__2d0ab,
 .popover__2d0ab:hover {
@@ -17403,6 +17407,13 @@ span.clanTag__5d473 {
 }
 .activityPopover__2d0ab {
   right: 8px;
+}
+.visual-refresh .activityPopover__2d0ab {
+  background-color: var(--user-profile-activity-toolbar-background);
+}
+.custom-user-profile-theme .activityPopover__2d0ab {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 .statusPopover__2d0ab {
   right: min(8px, calc(50% - 29px));
@@ -17452,14 +17463,14 @@ span.clanTag__5d473 {
   color: var(--icon-primary);
 }
 .button__2d0ab:hover {
-  background: var(--background-modifier-hover);
+  background: var(--background-mod-normal);
 }
 .button__2d0ab:hover .icon__2d0ab {
   fill: var(--interactive-hover);
   transform: scale(1.1);
 }
 .button__2d0ab:active {
-  background: var(--background-modifier-active);
+  background: var(--background-mod-strong);
 }
 .button__2d0ab:active .icon__2d0ab {
   fill: var(--interactive-active);
@@ -32661,6 +32672,7 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   top: -25px;
 }
 .popover_c97e55 {
+  border: 1px solid var(--user-profile-toolbar-border);
   border-radius: 100px;
   display: inline-flex;
   gap: 2px;
@@ -32671,6 +32683,21 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   position: absolute;
   right: min(8px, calc(50% - 29px));
   top: -16px;
+}
+.visual-refresh .popover_c97e55 {
+  background-color: var(--user-profile-toolbar-background);
+}
+.custom-user-profile-theme.theme-dark .popover_c97e55 {
+  -webkit-backdrop-filter: blur(36px);
+  backdrop-filter: blur(36px);
+}
+.custom-user-profile-theme.theme-light .popover_c97e55 {
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+.full-motion.visual-refresh .popover_c97e55:hover,
+.visual-refresh .popover_c97e55 {
+  box-shadow: var(--shadow-low);
 }
 .popover_c97e55.visible_c97e55,
 .popover_c97e55:focus-within {
@@ -32712,13 +32739,13 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
   padding-right: 6px;
 }
 .button_c97e55:hover {
-  background: var(--background-modifier-hover);
+  background: var(--background-mod-normal);
 }
 .button_c97e55:hover .icon_c97e55 {
   fill: var(--interactive-hover);
 }
 .button_c97e55:active {
-  background: var(--background-modifier-active);
+  background: var(--background-mod-strong);
 }
 .button_c97e55:active .icon_c97e55 {
   fill: var(--interactive-active);
@@ -45826,6 +45853,7 @@ html.disable-forced-colors * {
   --thread-channel-spine: var(--primary-500);
   --toast-bg: var(--neutral-64);
   --typing-indicator-bg: var(--neutral-69);
+  --user-profile-activity-toolbar-background: var(--neutral-60);
   --user-profile-background-hover: hsl(
     var(--opacity-8-hsl) / 0.0784313725490196
   );
@@ -47470,6 +47498,11 @@ html.disable-forced-colors * {
       var(--neutral-69) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --user-profile-activity-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --user-profile-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
@@ -48030,6 +48063,7 @@ html.disable-forced-colors * {
   --thread-channel-spine: var(--primary-300);
   --toast-bg: var(--white);
   --typing-indicator-bg: var(--neutral-2);
+  --user-profile-activity-toolbar-background: var(--neutral-1);
   --user-profile-background-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -49675,6 +49709,11 @@ html.disable-forced-colors * {
       var(--neutral-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --user-profile-activity-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --user-profile-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
@@ -50243,6 +50282,7 @@ html.disable-forced-colors * {
   --thread-channel-spine: var(--plum-13);
   --toast-bg: var(--plum-19);
   --typing-indicator-bg: var(--neutral-97);
+  --user-profile-activity-toolbar-background: var(--neutral-83);
   --user-profile-background-hover: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -51893,6 +51933,11 @@ html.disable-forced-colors * {
       var(--neutral-97) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --user-profile-activity-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-83) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --user-profile-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
@@ -52451,6 +52496,7 @@ html.disable-forced-colors * {
   --thread-channel-spine: var(--plum-13);
   --toast-bg: var(--plum-17);
   --typing-indicator-bg: var(--neutral-86);
+  --user-profile-activity-toolbar-background: var(--neutral-73);
   --user-profile-background-hover: hsl(
     var(--opacity-8-hsl) / 0.0784313725490196
   );
@@ -54099,6 +54145,11 @@ html.disable-forced-colors * {
       var(--neutral-86) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --user-profile-activity-toolbar-background: color-mix(
+      in oklab,
+      var(--neutral-73) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
     --user-profile-background-hover: color-mix(
       in oklab,
       hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
@@ -54159,6 +54210,9 @@ html.disable-forced-colors * {
   }
 }
 .custom-user-profile-theme.theme-dark {
+  --user-profile-activity-toolbar-background: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
   --user-profile-background-hover: hsl(
     var(--opacity-white-4-hsl) / 0.0392156862745098
   );
@@ -54168,10 +54222,15 @@ html.disable-forced-colors * {
     var(--opacity-16-hsl) / 0.1607843137254902
   );
   --user-profile-overlay-background-hover: hsl(var(--opacity-20-hsl) / 0.2);
-  --user-profile-toolbar-background: hsl(var(--opacity-20-hsl) / 0.2);
+  --user-profile-toolbar-background: hsl(
+    var(--opacity-black-48-hsl) / 0.47843137254901963
+  );
   --user-profile-toolbar-border: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
 }
 .custom-user-profile-theme.theme-light {
+  --user-profile-activity-toolbar-background: hsl(
+    var(--opacity-white-48-hsl) / 0.47843137254901963
+  );
   --user-profile-background-hover: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
@@ -54183,9 +54242,7 @@ html.disable-forced-colors * {
   --user-profile-overlay-background-hover: hsl(
     var(--opacity-white-36-hsl) / 0.3607843137254902
   );
-  --user-profile-toolbar-background: hsl(
-    var(--opacity-white-36-hsl) / 0.3607843137254902
-  );
+  --user-profile-toolbar-background: hsl(var(--opacity-white-60-hsl) / 0.6);
   --user-profile-toolbar-border: hsl(var(--opacity-20-hsl) / 0.2);
 }
 :root {
@@ -59681,4 +59738,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.da4389bb4f6c20e0.css.map*/
+/*# sourceMappingURL=12633.52e76b3d90cb8f51.css.map*/
