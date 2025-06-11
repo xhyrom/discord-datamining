@@ -52,7 +52,7 @@
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 19, 2025 (11:59PM UTC)</strong>. After this date, you will no
   longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms:</strong
+    >Other Terms: </strong
   >Limit of one reward redemption per account.
 </p>
 <p> </p>
