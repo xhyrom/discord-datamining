@@ -28,6 +28,68 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Rainbow Six Siege X<br /></strong
+  ><strong>Quest Name: R6 Siege X Avatar Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Rainbow Six Siege X </strong>to receive a
+  <strong>Sledge Hammer Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players that are +18 in the<strong> United States</strong
+  >,<strong> Great Britain</strong>,<strong> France</strong>,<strong>
+    Germany</strong
+  >,<strong> Australia</strong>, <strong>Canada</strong>, and
+  <strong>Italy </strong>who have access to
+  <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC.<br /><span
+    style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The
+  <strong>R6 Siege X Avatar Quest</strong> can be accepted on
+  <strong>PC</strong> from <strong>June 11, 2025</strong> until
+  <strong>June 19, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 19, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Sledge Hammer Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 19, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms:</strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: Towerborne<br /></strong
+  ><strong>Quest Name: Towerborne Play Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Towerborne</strong> to receive a
+  <strong>Shiro Mask Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players on PC, Steam, Xbox Series X, Xbox One and Xbox Series S,
+  where <strong>Discord</strong> and <strong>Towerborne</strong> are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Towerborne Play Quest </strong>can be accepted on
+  <strong>PC</strong>, <strong>Steam</strong>,
+  <strong>Xbox Series X, Xbox One</strong>, and
+  <strong>Xbox Series S</strong> from
+  <strong>June 11, 2025 </strong>until<strong>
+    June 18, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 18, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Shiro Mask Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 18, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Dune: Awakening<br /></strong
   ><strong>Quest Name: Dune: Awakening Launch Quest<br /></strong
   ><strong>Offer Details: </strong>Stream 15 minutes of
