@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7982515002](https://discord.com/jobs/7982515002)
 
-**Updated At:** Fri, 23 May 2025 21:00:18 GMT
+**Updated At:** Wed, 11 Jun 2025 17:44:45 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Core Product team at Discord is responsible for creating exceptional experiences that drive deeper engagement with our users and provide a strong product foundation for other teams to build upon.
@@ -55,5 +55,5 @@ education_optional
 - Product Management
 
 **Offices:**
-- San Francisco, CA in San Francisco, California, United States
+- Remote (U.S.)
     
