@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6139443002,
   "location": {
-    "name": "San Francisco, CA or Bay Area"
+    "name": "San Francisco Bay Area"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8021044002,
-  "updated_at": "2025-06-09T17:13:38-04:00",
+  "updated_at": "2025-06-11T18:35:19-04:00",
   "requisition_id": "R-100869",
   "title": "Senior Engineering Manager - Storage Platform",
   "company_name": "Discord",
