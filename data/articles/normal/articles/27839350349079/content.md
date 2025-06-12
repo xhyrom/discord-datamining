@@ -28,6 +28,29 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Wuthering Waves<br /></strong
+  ><strong>Quest Name: V2.4 WUWA Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Wuthering Waves </strong>to receive a
+  <strong>V2.4 WUWA Quest Pack</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players in the <strong>United States</strong> and
+  <strong>Japan</strong> on PC, where <strong>Discord</strong> and
+  <strong>Wuthering Waves</strong> are available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>V2.4 WUWA Quest </strong>can be accepted on <strong>PC</strong> from
+  <strong>June 12, 2025 </strong>until<strong>
+    June 18, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>September 11, 2025 (12:00AM UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Rainbow Six Siege X<br /></strong
   ><strong>Quest Name: R6 Siege X Avatar Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
@@ -41,6 +64,7 @@
   <strong>Italy </strong>who have access to
   <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC.<br /><span
     style="background-color: #ffffff"
+    data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The
   <strong>R6 Siege X Avatar Quest</strong> can be accepted on
@@ -102,7 +126,9 @@
     Canada </strong
   >who have access to <strong>Dune: Awakening </strong>and<strong>
     Discord </strong
-  >on desktop. <br /><span style="background-color: #ffffff"
+  >on desktop. <br /><span
+    style="background-color: #ffffff"
+    data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The
   <strong>Dune: Awakening Launch Quest </strong> can be accepted on
@@ -169,7 +195,12 @@
   Discord to receive 1 day of
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span class="wysiwyg-underline" style="color: #1155cc">Nitro</span></a
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Nitro</span
+    ></a
   >.<br /><strong>Who is Eligible: </strong>Available to users that are 18+ on
   desktop and browser where <strong>Discord</strong> is available. Discord’s
   premium services are restricted in some regions.<br /><strong
@@ -215,7 +246,10 @@
   >in Discord to receive
   <a href="https://support.discord.com/hc/articles/30593690165783"
     ><strong
-      ><span class="wysiwyg-underline" style="color: #1155cc"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
         >Discord Orbs</span
       ></strong
     ></a
