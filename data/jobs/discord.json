@@ -1904,7 +1904,7 @@
       "education": "education_optional",
       "internal_job_id": 6076509002,
       "location": {
-        "name": "San Francisco, CA or Bay Area"
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -1921,7 +1921,7 @@
         }
       ],
       "id": 7803984002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
+      "updated_at": "2025-06-12T12:28:28-04:00",
       "requisition_id": "R-100753",
       "title": "Senior Staff Software Engineer, React Native (Performance & Quality)",
       "company_name": "Discord",
