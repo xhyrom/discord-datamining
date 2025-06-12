@@ -3964,6 +3964,8 @@
                 .concat(e, "/answers/")
                 .concat(a),
             PREMIUM_MARKETING: "/premium-marketing",
+            MARKETING_CAMPAIGN_ELIGIBILITY: (t) =>
+              "/premium-marketing/@me/campaigns/".concat(t, "/eligibility"),
             QUESTS_CURRENT_QUESTS: "/quests/@me",
             QUESTS_CLAIMED_QUESTS: "/quests/@me/claimed",
             QUEST: (t) => "/quests/".concat(t),
@@ -5036,6 +5038,7 @@
             "premium_marketing_what_is_new_card_hovered"),
           (r.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED =
             "premium_marketing_perks_see_all_clicked"),
+          (r.BOGO_ELIGIBILITY_RESULT = "bogo_eligibility_result"),
           (r.STORE_DIRECTORY_VIEWED = "store_directory_viewed"),
           (r.STORE_DIRECTORY_BROWSE_VIEWED = "store_directory_browse_viewed"),
           (r.STORE_DIRECTORY_FILTER_UPDATED = "store_directory_filter_updated"),
@@ -6795,7 +6798,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-19a3e419a0190a15856f83c9681b812e21091443",
+            release: "discord_web-9f0d3912b3df8c849bdbdc6cbf9be67ed64f2055",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6861,8 +6864,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "409017"),
-            o.YA("builtAt", String("1749764906527"));
+            o.YA("buildNumber", "409032"),
+            o.YA("builtAt", String("1749765597147"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -50356,4 +50359,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1d98e3d2b0cf6b87.js.map
+//# sourceMappingURL=sentry.fc8383d465affd00.js.map
