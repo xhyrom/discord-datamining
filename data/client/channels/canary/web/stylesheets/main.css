@@ -2465,61 +2465,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .keyboard-mode .simpleFocused_cc5dd2 {
   box-shadow: 0 0 0 4px var(--blue-345);
 }
-.hiddenVisually__27f77,
-.showOnFocus__27f77:not(:focus-within) {
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  width: 1px;
-}
-.linkButton_a995b9 {
-  align-items: center;
-  background: initial;
-  box-sizing: border-box;
-  color: inherit;
-  display: inline-flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  font-size: medium;
-  font-weight: 400;
-  gap: 2px;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-  text-align: start;
-  width: auto;
-}
-.default_a995b9 {
-  color: var(--text-primary);
-}
-.white_a995b9 {
-  color: var(--white);
-}
-.primary_a995b9 {
-  color: var(--text-brand);
-}
-.destructive_a995b9 {
-  color: var(--text-danger);
-}
-.link_a995b9 {
-  color: var(--text-link);
-}
-.linkButton_a995b9:hover .text_a995b9 {
-  text-decoration: underline;
-}
-:where(.decorate-links) .text_a995b9 {
-  text-decoration: underline;
-}
-:where(.low-saturation) .link_a995b9 {
-  color: var(--text-link-low-saturation);
-}
 .button__06eda {
   align-items: center;
   border-radius: 50%;
@@ -7471,7 +7416,7 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
 .icon__36b87 {
   margin-right: 4px;
 }
-.button__2723e {
+.button__6af3a {
   align-items: center;
   background: initial;
   border: 1px solid transparent;
@@ -7484,7 +7429,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   flex-shrink: 0;
   font-size: medium;
   font-weight: 400;
-  gap: var(--spacing-4);
   justify-content: center;
   margin: 0;
   max-height: -webkit-min-content;
@@ -7494,65 +7438,291 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   padding: 0;
   position: relative;
   text-align: start;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 50ms ease-in,
+    opacity 50ms ease-in;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.button__6af3a:hover {
+  transition:
+    background-color 0.15s ease-out,
+    opacity 0.15s ease-out;
+}
+.button__6af3a:disabled {
+  opacity: 0.5;
+}
+.buttonChildrenWrapper__6af3a {
+  align-items: center;
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.buttonChildren__6af3a {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-4);
+  opacity: 1;
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+.buttonChildren__6af3a.submitting__6af3a {
+  opacity: 0;
+}
+.spinnerWrapper__6af3a {
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.spinnerWrapper__6af3a.fadeIn__6af3a {
+  animation-name: spinner-opacity-in__6af3a;
+}
+.spinnerWrapper__6af3a.fadeOut__6af3a {
+  animation-name: spinner-opacity-out__6af3a;
+}
+.full-motion .spinnerWrapper__6af3a.fadeIn__6af3a {
+  animation-name: spinner-transform-in__6af3a, spinner-opacity-in__6af3a;
+}
+.full-motion .spinnerWrapper__6af3a.fadeOut__6af3a {
+  animation-name: spinner-transform-out__6af3a, spinner-opacity-out__6af3a;
+}
+.full-motion .buttonChildren__6af3a {
+  transform: translateY(0);
+}
+.full-motion .buttonChildren__6af3a.submitting__6af3a {
+  transform: translateY(-100%);
+}
+@keyframes spinner-opacity-in__6af3a {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spinner-opacity-out__6af3a {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes spinner-transform-in__6af3a {
+  0% {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes spinner-transform-out__6af3a {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+.sm__6af3a .buttonChildrenWrapper__6af3a {
+  min-height: 32px;
+  min-width: 32px;
+}
+.sm__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+  min-width: 60px;
+  padding: calc(var(--spacing-4) - 1px) calc(var(--spacing-12) - 1px);
+}
+.md__6af3a .buttonChildrenWrapper__6af3a {
+  min-height: 40px;
+  min-width: 40px;
+}
+.md__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+  min-width: 100px;
+  padding: calc(var(--spacing-8) - 1px) calc(var(--spacing-16) - 1px);
+}
+.lg__6af3a .buttonChildrenWrapper__6af3a {
+  min-height: 48px;
+  min-width: 48px;
+}
+.lg__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+  min-width: 130px;
+  padding: calc(var(--spacing-8) - 1px) calc(var(--spacing-24) - 1px);
+}
+.lg__6af3a .text__6af3a {
+  font-size: 18px;
+  line-height: 28px;
+}
+.fullWidth__6af3a {
+  flex-grow: 1;
   width: auto;
 }
-.xs__2723e {
-  min-height: 32px;
-  padding: 7px 11px;
+.spinnerItem__6af3a {
+  background-color: currentColor !important;
 }
-.sm__2723e {
-  min-height: 40px;
-  padding: 11px 15px;
+.spinner__6af3a {
+  height: 100%;
 }
-.md__2723e {
-  min-height: 44px;
-  padding: 11px 23px;
+.spinner-sm__6af3a {
+  min-height: 16px;
+  min-width: 16px;
+  transform: scale(0.75);
 }
-.lg__2723e {
-  min-height: 56px;
-  padding: 15px 31px;
+.spinner-md__6af3a {
+  transform: scale(0.9);
 }
-.lg__2723e .text__2723e {
-  font-size: 18px;
+.spinner-lg__6af3a,
+.spinner-md__6af3a {
+  min-height: 20px;
+  min-width: 20px;
 }
-.fullWidth__2723e {
-  flex-grow: 1;
+.primary__6af3a {
+  background-color: var(--control-background-primary-default);
+  border-color: var(--control-border-primary-default);
+  color: var(--control-text-primary-default);
 }
-.primary__2723e {
-  background-color: var(--button-filled-brand-background);
-  border-color: var(--button-filled-brand-border);
-  color: var(--white);
+.primary__6af3a:hover {
+  background-color: var(--control-background-primary-hover);
+  border-color: var(--control-border-primary-hover);
+  color: var(--control-text-primary-hover);
 }
-.primary__2723e:hover {
-  background-color: var(--button-filled-brand-background-hover);
+.primary__6af3a:active {
+  background-color: var(--control-background-primary-active);
+  border-color: var(--control-border-primary-active);
+  color: var(--control-text-primary-active);
 }
-.primary__2723e:active {
-  background-color: var(--button-filled-brand-background-active);
+.secondary__6af3a {
+  background-color: var(--control-background-secondary-default);
+  border-color: var(--control-border-secondary-default);
+  color: var(--control-text-secondary-default);
 }
-.expressive__2723e {
-  background: transparent;
-  border: none;
-  color: var(--text-invert);
+.secondary__6af3a:hover {
+  background-color: var(--control-background-secondary-hover);
+  border-color: var(--control-border-secondary-hover);
+  color: var(--control-text-secondary-hover);
 }
-.expressive__2723e > * {
+.secondary__6af3a:active {
+  background-color: var(--control-background-secondary-active);
+  border-color: var(--control-border-secondary-active);
+  color: var(--control-text-secondary-active);
+}
+.tertiary__6af3a {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--control-text-tertiary-default);
+}
+.tertiary__6af3a:hover {
+  background-color: var(--control-background-tertiary-hover);
+  border-color: var(--control-border-tertiary-hover);
+  color: var(--control-text-tertiary-hover);
+}
+.tertiary__6af3a:active {
+  background-color: var(--control-background-tertiary-active);
+  border-color: var(--control-border-tertiary-active);
+  color: var(--control-text-tertiary-active);
+}
+.destructive-primary__6af3a {
+  background-color: var(--control-background-critical-primary-default);
+  border-color: var(--control-border-critical-primary-default);
+  color: var(--control-text-critical-primary-default);
+}
+.destructive-primary__6af3a:hover {
+  background-color: var(--control-background-critical-primary-hover);
+  border-color: var(--control-border-critical-primary-hover);
+  color: var(--control-text-critical-primary-hover);
+}
+.destructive-primary__6af3a:active {
+  background-color: var(--control-background-critical-primary-active);
+  border-color: var(--control-border-critical-primary-active);
+  color: var(--control-text-critical-primary-active);
+}
+.destructive-secondary__6af3a {
+  background-color: var(--control-background-critical-secondary-default);
+  border-color: var(--control-border-critical-secondary-default);
+  color: var(--control-text-critical-secondary-default);
+}
+.destructive-secondary__6af3a:hover {
+  background-color: var(--control-background-critical-secondary-hover);
+  border-color: var(--control-border-critical-secondary-hover);
+  color: var(--control-text-critical-secondary-hover);
+}
+.destructive-secondary__6af3a:active {
+  background-color: var(--control-background-critical-secondary-active);
+  border-color: var(--control-border-critical-secondary-active);
+  color: var(--control-text-critical-secondary-active);
+}
+.active__6af3a {
+  background-color: var(--control-background-active-default);
+  border-color: var(--control-border-active-default);
+  color: var(--control-text-active-default);
+}
+.active__6af3a:hover {
+  background-color: var(--control-background-active-hover);
+  border-color: var(--control-border-active-hover);
+  color: var(--control-text-active-hover);
+}
+.active__6af3a:active {
+  background-color: var(--control-background-active-active);
+  border-color: var(--control-border-active-active);
+  color: var(--control-text-active-active);
+}
+.overlay-primary__6af3a {
+  background-color: var(--control-background-overlay-primary-default);
+  border-color: var(--control-border-overlay-primary-default);
+  color: var(--control-text-overlay-primary-default);
+}
+.overlay-primary__6af3a:hover {
+  background-color: var(--control-background-overlay-primary-hover);
+  border-color: var(--control-border-overlay-primary-hover);
+  color: var(--control-text-overlay-primary-hover);
+}
+.overlay-primary__6af3a:active {
+  background-color: var(--control-background-overlay-primary-active);
+  border-color: var(--control-border-overlay-primary-active);
+  color: var(--control-text-overlay-primary-active);
+}
+.overlay-secondary__6af3a {
+  background-color: var(--control-background-overlay-secondary-default);
+  border-color: var(--control-border-overlay-secondary-default);
+  color: var(--control-text-overlay-secondary-default);
+}
+.overlay-secondary__6af3a:hover {
+  background-color: var(--control-background-overlay-secondary-hover);
+  border-color: var(--control-border-overlay-secondary-hover);
+  color: var(--control-text-overlay-secondary-hover);
+}
+.overlay-secondary__6af3a:active {
+  background-color: var(--control-background-overlay-secondary-active);
+  border-color: var(--control-border-overlay-secondary-active);
+  color: var(--control-text-overlay-secondary-active);
+}
+.expressive__6af3a > * {
   pointer-events: none;
   z-index: 1;
 }
-.expressiveRive__2723e {
-  height: calc(100% + var(--__glow-amount) * 2);
-  left: calc(var(--__glow-amount) * -1);
+.expressiveRive__6af3a {
+  height: calc(100% + var(--__glow-amount) * 2 + 2px);
+  left: calc(var(--__glow-amount) * -1 - 1px);
   position: absolute;
-  top: calc(var(--__glow-amount) * -1);
-  width: calc(100% + var(--__glow-amount) * 2);
+  top: calc(var(--__glow-amount) * -1 - 1px);
+  width: calc(100% + var(--__glow-amount) * 2 + 2px);
 }
-.expressive__2723e .expressiveBackground__2723e {
+.expressive__6af3a .expressiveBackground__6af3a {
   filter: blur(10px) saturate(var(--saturation-factor, 1));
 }
-.reduce-motion .expressive__2723e .expressiveBackground__2723e {
+.reduce-motion .expressive__6af3a .expressiveBackground__6af3a {
   filter: blur(7px) saturate(var(--saturation-factor, 1));
 }
-.expressive__2723e .expressiveFill__2723e {
+.expressive__6af3a .expressiveFill__6af3a {
   --__glow-amount: 0px;
   background-color: var(--button-expressive-background);
   border-radius: 8px;
@@ -7563,102 +7733,25 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
     top 0.15s ease,
     left 0.15s ease;
 }
-.expressive__2723e:hover .expressiveFill__2723e {
+.expressive__6af3a:hover .expressiveFill__6af3a {
   background-color: var(--button-expressive-background-hover);
 }
-.expressive__2723e:active .expressiveFill__2723e {
+.expressive__6af3a:active .expressiveFill__6af3a {
   --__glow-amount: -1px;
   background-color: var(--button-expressive-background-active);
 }
-.expressive__2723e .expressiveHover__2723e {
+.expressive__6af3a .expressiveHoverContainer__6af3a {
   filter: blur(8px);
   mix-blend-mode: plus-lighter;
   pointer-events: all;
 }
-.expressiveWrapper__2723e {
+.expressiveWrapper__6af3a {
   --__glow-amount: 8px;
   display: flex;
   position: relative;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-}
-.secondary__2723e {
-  background-color: var(--bg-mod-subtle);
-  border-color: var(--border-faint);
-  color: var(--text-primary);
-}
-.secondary__2723e:hover {
-  background-color: var(--button-secondary-background-hover);
-}
-.secondary__2723e:active {
-  background-color: var(--bg-mod-faint);
-}
-.tertiary__2723e {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--text-primary);
-}
-.tertiary__2723e:hover {
-  background-color: var(--bg-mod-subtle);
-}
-.tertiary__2723e:active {
-  background-color: var(--bg-mod-faint);
-}
-.destructive-primary__2723e {
-  background-color: var(--button-danger-background);
-  border-color: var(--button-danger-border);
-  color: var(--white);
-}
-.destructive-primary__2723e:hover {
-  background-color: var(--button-danger-background-hover);
-}
-.destructive-primary__2723e:active {
-  background-color: var(--button-danger-background-active);
-}
-.destructive-secondary__2723e {
-  background-color: var(--bg-mod-subtle);
-  border-color: var(--border-faint);
-  color: var(--text-feedback-critical);
-}
-.destructive-secondary__2723e:hover {
-  background-color: var(--button-secondary-background-hover);
-}
-.destructive-secondary__2723e:active {
-  background-color: var(--bg-mod-faint);
-}
-.active__2723e {
-  background-color: var(--button-positive-background);
-  border-color: var(--button-positive-border);
-  color: var(--white);
-}
-.active__2723e:hover {
-  background-color: var(--button-positive-background-hover);
-}
-.active__2723e:active {
-  background-color: var(--button-positive-background-active);
-}
-.overlay-primary__2723e {
-  background-color: var(--white);
-  border-color: transparent;
-  color: var(--black);
-}
-.overlay-primary__2723e:hover {
-  background-color: var(--button-filled-white-background-hover);
-}
-.overlay-primary__2723e:active {
-  background-color: var(--button-filled-white-background-active);
-}
-.overlay-secondary__2723e {
-  background-color: rgba(0, 0, 0, 0.54);
-  border-color: transparent;
-  color: var(--white);
-}
-.overlay-secondary__2723e:hover {
-  background-color: rgba(0, 0, 0, 0.64);
-}
-.overlay-secondary__2723e:active {
-  background-color: rgba(0, 0, 0, 0.72);
 }
 .premiumSubscribeButton_e00877 {
   align-items: center;
@@ -37071,6 +37164,20 @@ div.mobilePushContainer__3d3b0 {
   padding-top: 4px;
   position: relative;
 }
+.hiddenVisually__27f77,
+.showOnFocus__27f77:not(:focus-within) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 1px;
+}
 .label__1b9d6 {
   color: var(--header-secondary);
   cursor: default;
@@ -45571,8 +45678,240 @@ html.disable-forced-colors * {
   --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
   --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.7);
+  --control-background-active-active: var(--green-new-62);
+  --control-background-active-default: var(--green-new-50);
+  --control-background-active-hover: var(--green-new-55);
+  --control-background-active-loading: var(--green-new-50);
+  --control-background-critical-primary-active: var(--red-new-62);
+  --control-background-critical-primary-default: var(--red-new-50);
+  --control-background-critical-primary-hover: var(--red-new-55);
+  --control-background-critical-primary-loading: var(--red-new-50);
+  --control-background-critical-secondary-active: hsl(
+    var(--opacity-20-hsl) / 0.2
+  );
+  --control-background-critical-secondary-default: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-critical-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-critical-secondary-loading: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-expressive-active: var(--neutral-10);
+  --control-background-expressive-default: var(--neutral-1);
+  --control-background-expressive-hover: var(--neutral-1);
+  --control-background-expressive-loading: var(--neutral-1);
+  --control-background-overlay-primary-active: var(--neutral-17);
+  --control-background-overlay-primary-default: var(--neutral-1);
+  --control-background-overlay-primary-hover: var(--neutral-9);
+  --control-background-overlay-primary-loading: var(--neutral-1);
+  --control-background-overlay-secondary-active: hsl(
+    var(--opacity-black-48-hsl) / 0.47843137254901963
+  );
+  --control-background-overlay-secondary-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-overlay-secondary-hover: hsl(
+    var(--opacity-black-64-hsl) / 0.6392156862745098
+  );
+  --control-background-overlay-secondary-loading: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-primary-active: var(--blurple-65);
+  --control-background-primary-default: var(--blurple-50);
+  --control-background-primary-hover: var(--blurple-60);
+  --control-background-primary-loading: var(--blurple-50);
+  --control-background-secondary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-secondary-default: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-secondary-loading: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-tertiary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-active-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-expressive-active: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-active: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-tertiary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-tertiary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
+  --control-icon-active-active: var(--white);
+  --control-icon-active-default: var(--white);
+  --control-icon-active-hover: var(--white);
+  --control-icon-active-loading: var(--white);
+  --control-icon-critical-primary-active: var(--white);
+  --control-icon-critical-primary-default: var(--white);
+  --control-icon-critical-primary-hover: var(--white);
+  --control-icon-critical-primary-loading: var(--white);
+  --control-icon-critical-secondary-active: var(--red-new-22);
+  --control-icon-critical-secondary-default: var(--red-new-22);
+  --control-icon-critical-secondary-hover: var(--red-new-22);
+  --control-icon-critical-secondary-loading: var(--red-new-22);
+  --control-icon-expressive-active: var(--black);
+  --control-icon-expressive-default: var(--black);
+  --control-icon-expressive-hover: var(--black);
+  --control-icon-expressive-loading: var(--black);
+  --control-icon-overlay-primary-active: var(--black);
+  --control-icon-overlay-primary-default: var(--black);
+  --control-icon-overlay-primary-hover: var(--black);
+  --control-icon-overlay-primary-loading: var(--black);
+  --control-icon-overlay-secondary-active: var(--white);
+  --control-icon-overlay-secondary-default: var(--white);
+  --control-icon-overlay-secondary-hover: var(--white);
+  --control-icon-overlay-secondary-loading: var(--white);
+  --control-icon-primary-active: var(--white);
+  --control-icon-primary-default: var(--white);
+  --control-icon-primary-hover: var(--white);
+  --control-icon-primary-loading: var(--white);
+  --control-icon-secondary-active: var(--neutral-1);
+  --control-icon-secondary-default: var(--neutral-1);
+  --control-icon-secondary-hover: var(--neutral-1);
+  --control-icon-secondary-loading: var(--neutral-1);
+  --control-icon-tertiary-active: var(--neutral-1);
+  --control-icon-tertiary-default: var(--neutral-1);
+  --control-icon-tertiary-hover: var(--neutral-1);
+  --control-icon-tertiary-loading: var(--neutral-1);
+  --control-text-active-active: var(--white);
+  --control-text-active-default: var(--white);
+  --control-text-active-hover: var(--white);
+  --control-text-active-loading: var(--white);
+  --control-text-critical-primary-active: var(--white);
+  --control-text-critical-primary-default: var(--white);
+  --control-text-critical-primary-hover: var(--white);
+  --control-text-critical-primary-loading: var(--white);
+  --control-text-critical-secondary-active: var(--red-new-22);
+  --control-text-critical-secondary-default: var(--red-new-22);
+  --control-text-critical-secondary-hover: var(--red-new-22);
+  --control-text-critical-secondary-loading: var(--red-new-22);
+  --control-text-expressive-active: var(--black);
+  --control-text-expressive-default: var(--black);
+  --control-text-expressive-hover: var(--black);
+  --control-text-expressive-loading: var(--black);
+  --control-text-overlay-primary-active: var(--black);
+  --control-text-overlay-primary-default: var(--black);
+  --control-text-overlay-primary-hover: var(--black);
+  --control-text-overlay-primary-loading: var(--black);
+  --control-text-overlay-secondary-active: var(--white);
+  --control-text-overlay-secondary-default: var(--white);
+  --control-text-overlay-secondary-hover: var(--white);
+  --control-text-overlay-secondary-loading: var(--white);
+  --control-text-primary-active: var(--white);
+  --control-text-primary-default: var(--white);
+  --control-text-primary-hover: var(--white);
+  --control-text-primary-loading: var(--white);
+  --control-text-secondary-active: var(--neutral-1);
+  --control-text-secondary-default: var(--neutral-1);
+  --control-text-secondary-hover: var(--neutral-1);
+  --control-text-secondary-loading: var(--neutral-1);
+  --control-text-tertiary-active: var(--neutral-1);
+  --control-text-tertiary-default: var(--neutral-1);
+  --control-text-tertiary-hover: var(--neutral-1);
+  --control-text-tertiary-loading: var(--neutral-1);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -46352,6 +46691,394 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--theme-base-color-amount, 0%)
     );
+    --control-background-active-active: color-mix(
+      in oklab,
+      var(--green-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-default: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-hover: color-mix(
+      in oklab,
+      var(--green-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-loading: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-active: color-mix(
+      in oklab,
+      var(--red-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-default: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-hover: color-mix(
+      in oklab,
+      var(--red-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-loading: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-active: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-active: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-48-hsl) / 0.47843137254901963) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-active: color-mix(
+      in oklab,
+      var(--blurple-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-default: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-hover: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-loading: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
     --control-brand-foreground: color-mix(
       in oklab,
       var(--brand-360) 100%,
@@ -46361,6 +47088,366 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-360) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --control-icon-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -47781,8 +48868,216 @@ html.disable-forced-colors * {
   --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
   --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.54);
+  --control-background-active-active: var(--green-new-62);
+  --control-background-active-default: var(--green-new-50);
+  --control-background-active-hover: var(--green-new-55);
+  --control-background-active-loading: var(--green-new-50);
+  --control-background-critical-primary-active: var(--red-new-62);
+  --control-background-critical-primary-default: var(--red-new-50);
+  --control-background-critical-primary-hover: var(--red-new-55);
+  --control-background-critical-primary-loading: var(--red-new-50);
+  --control-background-critical-secondary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-critical-secondary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-critical-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-critical-secondary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-expressive-active: var(--blurple-65);
+  --control-background-expressive-default: var(--blurple-50);
+  --control-background-expressive-hover: var(--blurple-60);
+  --control-background-expressive-loading: var(--blurple-50);
+  --control-background-overlay-primary-active: var(--neutral-17);
+  --control-background-overlay-primary-default: var(--neutral-1);
+  --control-background-overlay-primary-hover: var(--neutral-9);
+  --control-background-overlay-primary-loading: var(--neutral-1);
+  --control-background-overlay-secondary-active: hsl(
+    var(--opacity-black-48-hsl) / 0.47843137254901963
+  );
+  --control-background-overlay-secondary-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-overlay-secondary-hover: hsl(
+    var(--opacity-black-64-hsl) / 0.6392156862745098
+  );
+  --control-background-overlay-secondary-loading: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-primary-active: var(--blurple-65);
+  --control-background-primary-default: var(--blurple-50);
+  --control-background-primary-hover: var(--blurple-60);
+  --control-background-primary-loading: var(--blurple-50);
+  --control-background-secondary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-secondary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-secondary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-tertiary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-tertiary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-active-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-secondary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-critical-secondary-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-critical-secondary-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-critical-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-expressive-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-expressive-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-expressive-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-expressive-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-overlay-primary-active: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --control-border-overlay-primary-default: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --control-border-overlay-primary-hover: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --control-border-overlay-primary-loading: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --control-border-overlay-secondary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-overlay-secondary-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-overlay-secondary-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-overlay-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-secondary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-secondary-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-secondary-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-tertiary-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-brand-foreground: var(--brand-500);
   --control-brand-foreground-new: var(--brand-500);
+  --control-icon-active-active: var(--white);
+  --control-icon-active-default: var(--white);
+  --control-icon-active-hover: var(--white);
+  --control-icon-active-loading: var(--white);
+  --control-icon-critical-primary-active: var(--white);
+  --control-icon-critical-primary-default: var(--white);
+  --control-icon-critical-primary-hover: var(--white);
+  --control-icon-critical-primary-loading: var(--white);
+  --control-icon-critical-secondary-active: var(--red-new-54);
+  --control-icon-critical-secondary-default: var(--red-new-54);
+  --control-icon-critical-secondary-hover: var(--red-new-54);
+  --control-icon-critical-secondary-loading: var(--red-new-54);
+  --control-icon-expressive-active: var(--white);
+  --control-icon-expressive-default: var(--white);
+  --control-icon-expressive-hover: var(--white);
+  --control-icon-expressive-loading: var(--white);
+  --control-icon-overlay-primary-active: var(--black);
+  --control-icon-overlay-primary-default: var(--black);
+  --control-icon-overlay-primary-hover: var(--black);
+  --control-icon-overlay-primary-loading: var(--black);
+  --control-icon-overlay-secondary-active: var(--white);
+  --control-icon-overlay-secondary-default: var(--white);
+  --control-icon-overlay-secondary-hover: var(--white);
+  --control-icon-overlay-secondary-loading: var(--white);
+  --control-icon-primary-active: var(--white);
+  --control-icon-primary-default: var(--white);
+  --control-icon-primary-hover: var(--white);
+  --control-icon-primary-loading: var(--white);
+  --control-icon-secondary-active: var(--neutral-71);
+  --control-icon-secondary-default: var(--neutral-71);
+  --control-icon-secondary-hover: var(--neutral-71);
+  --control-icon-secondary-loading: var(--neutral-71);
+  --control-icon-tertiary-active: var(--neutral-71);
+  --control-icon-tertiary-default: var(--neutral-71);
+  --control-icon-tertiary-hover: var(--neutral-71);
+  --control-icon-tertiary-loading: var(--neutral-71);
+  --control-text-active-active: var(--white);
+  --control-text-active-default: var(--white);
+  --control-text-active-hover: var(--white);
+  --control-text-active-loading: var(--white);
+  --control-text-critical-primary-active: var(--white);
+  --control-text-critical-primary-default: var(--white);
+  --control-text-critical-primary-hover: var(--white);
+  --control-text-critical-primary-loading: var(--white);
+  --control-text-critical-secondary-active: var(--red-new-54);
+  --control-text-critical-secondary-default: var(--red-new-54);
+  --control-text-critical-secondary-hover: var(--red-new-54);
+  --control-text-critical-secondary-loading: var(--red-new-54);
+  --control-text-expressive-active: var(--white);
+  --control-text-expressive-default: var(--white);
+  --control-text-expressive-hover: var(--white);
+  --control-text-expressive-loading: var(--white);
+  --control-text-overlay-primary-active: var(--black);
+  --control-text-overlay-primary-default: var(--black);
+  --control-text-overlay-primary-hover: var(--black);
+  --control-text-overlay-primary-loading: var(--black);
+  --control-text-overlay-secondary-active: var(--white);
+  --control-text-overlay-secondary-default: var(--white);
+  --control-text-overlay-secondary-hover: var(--white);
+  --control-text-overlay-secondary-loading: var(--white);
+  --control-text-primary-active: var(--white);
+  --control-text-primary-default: var(--white);
+  --control-text-primary-hover: var(--white);
+  --control-text-primary-loading: var(--white);
+  --control-text-secondary-active: var(--neutral-71);
+  --control-text-secondary-default: var(--neutral-71);
+  --control-text-secondary-hover: var(--neutral-71);
+  --control-text-secondary-loading: var(--neutral-71);
+  --control-text-tertiary-active: var(--neutral-71);
+  --control-text-tertiary-default: var(--neutral-71);
+  --control-text-tertiary-hover: var(--neutral-71);
+  --control-text-tertiary-loading: var(--neutral-71);
   --creator-revenue-icon-gradient-end: var(--teal-400);
   --creator-revenue-icon-gradient-start: var(--teal-345);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -48562,6 +49857,394 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54)
         var(--theme-base-color-amount, 0%)
     );
+    --control-background-active-active: color-mix(
+      in oklab,
+      var(--green-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-default: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-hover: color-mix(
+      in oklab,
+      var(--green-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-loading: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-active: color-mix(
+      in oklab,
+      var(--red-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-default: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-hover: color-mix(
+      in oklab,
+      var(--red-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-loading: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-active: color-mix(
+      in oklab,
+      var(--blurple-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-default: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-hover: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-loading: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-active: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-48-hsl) / 0.47843137254901963) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-active: color-mix(
+      in oklab,
+      var(--blurple-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-default: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-hover: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-loading: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
     --control-brand-foreground: color-mix(
       in oklab,
       var(--brand-500) 100%,
@@ -48571,6 +50254,366 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-500) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --control-icon-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -49994,8 +52037,240 @@ html.disable-forced-colors * {
   --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
   --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.7);
+  --control-background-active-active: var(--green-new-62);
+  --control-background-active-default: var(--green-new-50);
+  --control-background-active-hover: var(--green-new-55);
+  --control-background-active-loading: var(--green-new-50);
+  --control-background-critical-primary-active: var(--red-new-62);
+  --control-background-critical-primary-default: var(--red-new-50);
+  --control-background-critical-primary-hover: var(--red-new-55);
+  --control-background-critical-primary-loading: var(--red-new-50);
+  --control-background-critical-secondary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-critical-secondary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-critical-secondary-hover: hsl(
+    var(--opacity-20-hsl) / 0.2
+  );
+  --control-background-critical-secondary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-expressive-active: var(--neutral-10);
+  --control-background-expressive-default: var(--neutral-1);
+  --control-background-expressive-hover: var(--neutral-1);
+  --control-background-expressive-loading: var(--neutral-1);
+  --control-background-overlay-primary-active: var(--neutral-17);
+  --control-background-overlay-primary-default: var(--neutral-1);
+  --control-background-overlay-primary-hover: var(--neutral-9);
+  --control-background-overlay-primary-loading: var(--neutral-1);
+  --control-background-overlay-secondary-active: hsl(
+    var(--opacity-black-48-hsl) / 0.47843137254901963
+  );
+  --control-background-overlay-secondary-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-overlay-secondary-hover: hsl(
+    var(--opacity-black-64-hsl) / 0.6392156862745098
+  );
+  --control-background-overlay-secondary-loading: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-primary-active: var(--blurple-65);
+  --control-background-primary-default: var(--blurple-50);
+  --control-background-primary-hover: var(--blurple-60);
+  --control-background-primary-loading: var(--blurple-50);
+  --control-background-secondary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-secondary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-secondary-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-secondary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-background-tertiary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-tertiary-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-active-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-secondary-active: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-critical-secondary-default: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-critical-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-critical-secondary-loading: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-expressive-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-expressive-default: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-expressive-hover: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-expressive-loading: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-overlay-primary-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-overlay-primary-default: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-overlay-primary-hover: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-overlay-primary-loading: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-overlay-secondary-active: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-overlay-secondary-default: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-overlay-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-overlay-secondary-loading: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-secondary-active: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-secondary-default: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-secondary-loading: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-tertiary-active: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-tertiary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
+  --control-icon-active-active: var(--white);
+  --control-icon-active-default: var(--white);
+  --control-icon-active-hover: var(--white);
+  --control-icon-active-loading: var(--white);
+  --control-icon-critical-primary-active: var(--white);
+  --control-icon-critical-primary-default: var(--white);
+  --control-icon-critical-primary-hover: var(--white);
+  --control-icon-critical-primary-loading: var(--white);
+  --control-icon-critical-secondary-active: var(--red-new-37);
+  --control-icon-critical-secondary-default: var(--red-new-37);
+  --control-icon-critical-secondary-hover: var(--red-new-37);
+  --control-icon-critical-secondary-loading: var(--red-new-37);
+  --control-icon-expressive-active: var(--black);
+  --control-icon-expressive-default: var(--black);
+  --control-icon-expressive-hover: var(--black);
+  --control-icon-expressive-loading: var(--black);
+  --control-icon-overlay-primary-active: var(--black);
+  --control-icon-overlay-primary-default: var(--black);
+  --control-icon-overlay-primary-hover: var(--black);
+  --control-icon-overlay-primary-loading: var(--black);
+  --control-icon-overlay-secondary-active: var(--white);
+  --control-icon-overlay-secondary-default: var(--white);
+  --control-icon-overlay-secondary-hover: var(--white);
+  --control-icon-overlay-secondary-loading: var(--white);
+  --control-icon-primary-active: var(--white);
+  --control-icon-primary-default: var(--white);
+  --control-icon-primary-hover: var(--white);
+  --control-icon-primary-loading: var(--white);
+  --control-icon-secondary-active: var(--neutral-8);
+  --control-icon-secondary-default: var(--neutral-8);
+  --control-icon-secondary-hover: var(--neutral-8);
+  --control-icon-secondary-loading: var(--neutral-8);
+  --control-icon-tertiary-active: var(--neutral-8);
+  --control-icon-tertiary-default: var(--neutral-8);
+  --control-icon-tertiary-hover: var(--neutral-8);
+  --control-icon-tertiary-loading: var(--neutral-8);
+  --control-text-active-active: var(--white);
+  --control-text-active-default: var(--white);
+  --control-text-active-hover: var(--white);
+  --control-text-active-loading: var(--white);
+  --control-text-critical-primary-active: var(--white);
+  --control-text-critical-primary-default: var(--white);
+  --control-text-critical-primary-hover: var(--white);
+  --control-text-critical-primary-loading: var(--white);
+  --control-text-critical-secondary-active: var(--red-new-37);
+  --control-text-critical-secondary-default: var(--red-new-37);
+  --control-text-critical-secondary-hover: var(--red-new-37);
+  --control-text-critical-secondary-loading: var(--red-new-37);
+  --control-text-expressive-active: var(--black);
+  --control-text-expressive-default: var(--black);
+  --control-text-expressive-hover: var(--black);
+  --control-text-expressive-loading: var(--black);
+  --control-text-overlay-primary-active: var(--black);
+  --control-text-overlay-primary-default: var(--black);
+  --control-text-overlay-primary-hover: var(--black);
+  --control-text-overlay-primary-loading: var(--black);
+  --control-text-overlay-secondary-active: var(--white);
+  --control-text-overlay-secondary-default: var(--white);
+  --control-text-overlay-secondary-hover: var(--white);
+  --control-text-overlay-secondary-loading: var(--white);
+  --control-text-primary-active: var(--white);
+  --control-text-primary-default: var(--white);
+  --control-text-primary-hover: var(--white);
+  --control-text-primary-loading: var(--white);
+  --control-text-secondary-active: var(--neutral-8);
+  --control-text-secondary-default: var(--neutral-8);
+  --control-text-secondary-hover: var(--neutral-8);
+  --control-text-secondary-loading: var(--neutral-8);
+  --control-text-tertiary-active: var(--neutral-8);
+  --control-text-tertiary-default: var(--neutral-8);
+  --control-text-tertiary-hover: var(--neutral-8);
+  --control-text-tertiary-loading: var(--neutral-8);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -50783,6 +53058,394 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--theme-base-color-amount, 0%)
     );
+    --control-background-active-active: color-mix(
+      in oklab,
+      var(--green-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-default: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-hover: color-mix(
+      in oklab,
+      var(--green-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-loading: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-active: color-mix(
+      in oklab,
+      var(--red-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-default: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-hover: color-mix(
+      in oklab,
+      var(--red-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-loading: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-active: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-active: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-48-hsl) / 0.47843137254901963) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-active: color-mix(
+      in oklab,
+      var(--blurple-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-default: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-hover: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-loading: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
     --control-brand-foreground: color-mix(
       in oklab,
       var(--brand-360) 100%,
@@ -50792,6 +53455,366 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-360) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --control-icon-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-8) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -52212,8 +55235,240 @@ html.disable-forced-colors * {
   --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
   --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
   --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.7);
+  --control-background-active-active: var(--green-new-62);
+  --control-background-active-default: var(--green-new-50);
+  --control-background-active-hover: var(--green-new-55);
+  --control-background-active-loading: var(--green-new-50);
+  --control-background-critical-primary-active: var(--red-new-62);
+  --control-background-critical-primary-default: var(--red-new-50);
+  --control-background-critical-primary-hover: var(--red-new-55);
+  --control-background-critical-primary-loading: var(--red-new-50);
+  --control-background-critical-secondary-active: hsl(
+    var(--opacity-20-hsl) / 0.2
+  );
+  --control-background-critical-secondary-default: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-critical-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-critical-secondary-loading: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-expressive-active: var(--neutral-10);
+  --control-background-expressive-default: var(--neutral-1);
+  --control-background-expressive-hover: var(--neutral-1);
+  --control-background-expressive-loading: var(--neutral-1);
+  --control-background-overlay-primary-active: var(--neutral-17);
+  --control-background-overlay-primary-default: var(--neutral-1);
+  --control-background-overlay-primary-hover: var(--neutral-9);
+  --control-background-overlay-primary-loading: var(--neutral-1);
+  --control-background-overlay-secondary-active: hsl(
+    var(--opacity-black-48-hsl) / 0.47843137254901963
+  );
+  --control-background-overlay-secondary-default: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-overlay-secondary-hover: hsl(
+    var(--opacity-black-64-hsl) / 0.6392156862745098
+  );
+  --control-background-overlay-secondary-loading: hsl(
+    var(--opacity-black-52-hsl) / 0.5215686274509804
+  );
+  --control-background-primary-active: var(--blurple-65);
+  --control-background-primary-default: var(--blurple-50);
+  --control-background-primary-hover: var(--blurple-60);
+  --control-background-primary-loading: var(--blurple-50);
+  --control-background-secondary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-secondary-default: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-secondary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-background-secondary-loading: hsl(
+    var(--opacity-8-hsl) / 0.0784313725490196
+  );
+  --control-background-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-tertiary-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-active-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-active-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-critical-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-critical-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-expressive-active: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-expressive-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-active: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-default: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-hover: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-primary-loading: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --control-border-overlay-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-overlay-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-primary-active: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-default: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-hover: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-primary-loading: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
+  --control-border-secondary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-default: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-secondary-loading: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-tertiary-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-tertiary-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
+  --control-icon-active-active: var(--white);
+  --control-icon-active-default: var(--white);
+  --control-icon-active-hover: var(--white);
+  --control-icon-active-loading: var(--white);
+  --control-icon-critical-primary-active: var(--white);
+  --control-icon-critical-primary-default: var(--white);
+  --control-icon-critical-primary-hover: var(--white);
+  --control-icon-critical-primary-loading: var(--white);
+  --control-icon-critical-secondary-active: var(--red-new-32);
+  --control-icon-critical-secondary-default: var(--red-new-32);
+  --control-icon-critical-secondary-hover: var(--red-new-32);
+  --control-icon-critical-secondary-loading: var(--red-new-32);
+  --control-icon-expressive-active: var(--black);
+  --control-icon-expressive-default: var(--black);
+  --control-icon-expressive-hover: var(--black);
+  --control-icon-expressive-loading: var(--black);
+  --control-icon-overlay-primary-active: var(--black);
+  --control-icon-overlay-primary-default: var(--black);
+  --control-icon-overlay-primary-hover: var(--black);
+  --control-icon-overlay-primary-loading: var(--black);
+  --control-icon-overlay-secondary-active: var(--white);
+  --control-icon-overlay-secondary-default: var(--white);
+  --control-icon-overlay-secondary-hover: var(--white);
+  --control-icon-overlay-secondary-loading: var(--white);
+  --control-icon-primary-active: var(--white);
+  --control-icon-primary-default: var(--white);
+  --control-icon-primary-hover: var(--white);
+  --control-icon-primary-loading: var(--white);
+  --control-icon-secondary-active: var(--neutral-2);
+  --control-icon-secondary-default: var(--neutral-2);
+  --control-icon-secondary-hover: var(--neutral-2);
+  --control-icon-secondary-loading: var(--neutral-2);
+  --control-icon-tertiary-active: var(--neutral-2);
+  --control-icon-tertiary-default: var(--neutral-2);
+  --control-icon-tertiary-hover: var(--neutral-2);
+  --control-icon-tertiary-loading: var(--neutral-2);
+  --control-text-active-active: var(--white);
+  --control-text-active-default: var(--white);
+  --control-text-active-hover: var(--white);
+  --control-text-active-loading: var(--white);
+  --control-text-critical-primary-active: var(--white);
+  --control-text-critical-primary-default: var(--white);
+  --control-text-critical-primary-hover: var(--white);
+  --control-text-critical-primary-loading: var(--white);
+  --control-text-critical-secondary-active: var(--red-new-32);
+  --control-text-critical-secondary-default: var(--red-new-32);
+  --control-text-critical-secondary-hover: var(--red-new-32);
+  --control-text-critical-secondary-loading: var(--red-new-32);
+  --control-text-expressive-active: var(--black);
+  --control-text-expressive-default: var(--black);
+  --control-text-expressive-hover: var(--black);
+  --control-text-expressive-loading: var(--black);
+  --control-text-overlay-primary-active: var(--black);
+  --control-text-overlay-primary-default: var(--black);
+  --control-text-overlay-primary-hover: var(--black);
+  --control-text-overlay-primary-loading: var(--black);
+  --control-text-overlay-secondary-active: var(--white);
+  --control-text-overlay-secondary-default: var(--white);
+  --control-text-overlay-secondary-hover: var(--white);
+  --control-text-overlay-secondary-loading: var(--white);
+  --control-text-primary-active: var(--white);
+  --control-text-primary-default: var(--white);
+  --control-text-primary-hover: var(--white);
+  --control-text-primary-loading: var(--white);
+  --control-text-secondary-active: var(--neutral-2);
+  --control-text-secondary-default: var(--neutral-2);
+  --control-text-secondary-hover: var(--neutral-2);
+  --control-text-secondary-loading: var(--neutral-2);
+  --control-text-tertiary-active: var(--neutral-2);
+  --control-text-tertiary-default: var(--neutral-2);
+  --control-text-tertiary-hover: var(--neutral-2);
+  --control-text-tertiary-loading: var(--neutral-2);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -52995,6 +56250,394 @@ html.disable-forced-colors * {
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
         var(--theme-base-color-amount, 0%)
     );
+    --control-background-active-active: color-mix(
+      in oklab,
+      var(--green-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-default: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-hover: color-mix(
+      in oklab,
+      var(--green-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-active-loading: color-mix(
+      in oklab,
+      var(--green-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-active: color-mix(
+      in oklab,
+      var(--red-new-62) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-default: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-hover: color-mix(
+      in oklab,
+      var(--red-new-55) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-primary-loading: color-mix(
+      in oklab,
+      var(--red-new-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-active: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-expressive-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-active: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-48-hsl) / 0.47843137254901963) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-52-hsl) / 0.5215686274509804) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5215686274509804)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-active: color-mix(
+      in oklab,
+      var(--blurple-65) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-default: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-hover: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-primary-loading: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-background-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-active-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-critical-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-expressive-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-overlay-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-primary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-secondary-loading: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
+    --control-border-tertiary-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--theme-base-color-amount, 0%)
+    );
     --control-brand-foreground: color-mix(
       in oklab,
       var(--brand-360) 100%,
@@ -53004,6 +56647,366 @@ html.disable-forced-colors * {
       in oklab,
       var(--brand-360) 100%,
       var(--theme-text-color, #000) var(--theme-text-color-amount, 0%)
+    );
+    --control-icon-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-icon-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-active-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-active: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-default: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-hover: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-critical-secondary-loading: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-expressive-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-active: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-default: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-hover: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-primary-loading: color-mix(
+      in oklab,
+      var(--black) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-overlay-secondary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-active: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-default: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-hover: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-primary-loading: color-mix(
+      in oklab,
+      var(--white) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-active: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-default: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-hover: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-secondary-loading: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-active: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-default: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-hover: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --control-text-tertiary-loading: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
     --creator-revenue-icon-gradient-end: color-mix(
       in oklab,
@@ -59725,4 +63728,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.93c87540903a8c79.css.map*/
+/*# sourceMappingURL=12633.9fa0c35c2fd757ea.css.map*/
