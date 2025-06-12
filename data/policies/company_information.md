@@ -1430,8 +1430,10 @@
         </p>
         <p>
           Discord Customer Support:
-          <a href="https://dis.gd/contact" target="_blank"
-            >https://dis.gd/contact</a
+          <a
+            href="https://support.discord.com/hc/en-us/requests/new"
+            target="_blank"
+            >https://support.discord.com/hc/en-us/requests/new</a
           ><br /><br />Authorized Representative<br />Clint Smith, CLO<br /><br />Discord
           Inc. is a United States corporation incorporated and registered under
           the laws of the State of Delaware, USA. Registrar: 5128862, Department
@@ -1446,8 +1448,10 @@
         </p>
         <p>
           Discord Customer Support:
-          <a href="https://dis.gd/contact" target="_blank"
-            >https://dis.gd/contact</a
+          <a
+            href="https://support.discord.com/hc/en-us/requests/new"
+            target="_blank"
+            >https://support.discord.com/hc/en-us/requests/new</a
           ><br /><br />Authorized Representative<br />Tom Marcinkowski,
           Director<br /><br />Discord Netherlands B.V. is a Dutch private
           limited liability company (B.V.) incorporated and registered under the
