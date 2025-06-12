@@ -11712,9 +11712,6 @@ html:not(.visual-refresh).theme-dark.checked_f525d3 {
   top: 0;
   width: 100%;
 }
-.visual-refresh.align-chat-input .container__4bbc6 {
-  border-radius: unset;
-}
 .fadeIn__4bbc6 {
   animation: fadeIn__4bbc6 0.12s ease-in forwards;
   opacity: 0;
@@ -59726,4 +59723,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d3073ba584957f41.css.map*/
+/*# sourceMappingURL=12633.37641a49d193ef98.css.map*/
