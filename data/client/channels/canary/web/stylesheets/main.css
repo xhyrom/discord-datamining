@@ -16598,7 +16598,9 @@ span.clanTag__5d473 {
 }
 :where(.outer_c0bea0).user-profile-modal-v2 {
   background: var(--background-base-lower);
+  border: 1px solid var(--border-normal);
   border-radius: var(--radius-lg);
+  box-sizing: border-box;
   height: 800px;
   max-width: 100%;
   min-width: 800px;
@@ -59723,4 +59725,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.37641a49d193ef98.css.map*/
+/*# sourceMappingURL=12633.93c87540903a8c79.css.map*/
