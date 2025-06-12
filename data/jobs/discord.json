@@ -2144,7 +2144,7 @@
         }
       ],
       "id": 7990178002,
-      "updated_at": "2025-06-11T19:17:40-04:00",
+      "updated_at": "2025-06-12T12:31:56-04:00",
       "requisition_id": "R-100921",
       "title": "Software Engineer, Safety Processing",
       "company_name": "Discord",
@@ -2183,7 +2183,7 @@
       "education": "education_optional",
       "internal_job_id": 6171739002,
       "location": {
-        "name": "San Francisco, CA or Bay Area"
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -2200,7 +2200,7 @@
         }
       ],
       "id": 8015636002,
-      "updated_at": "2025-06-09T17:10:53-04:00",
+      "updated_at": "2025-06-12T12:30:07-04:00",
       "requisition_id": "R-100940",
       "title": "Software Engineer, Traffic Infrastructure",
       "company_name": "Discord",

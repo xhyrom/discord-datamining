@@ -2,7 +2,7 @@
 
 ## Software Engineer, Traffic Infrastructure
 
-**Location:** San Francisco, CA or Bay Area
+**Location:** San Francisco Bay Area
 
 **Id:** 8015636002 <br/>
 **Internal Job Id:** 6171739002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8015636002](https://discord.com/jobs/8015636002)
 
-**Updated At:** Mon, 09 Jun 2025 21:10:53 GMT
+**Updated At:** Thu, 12 Jun 2025 16:30:07 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Traffic Infrastructure is a small group being formed to evolve the way Discord handles petabytes of network traffic daily. As a Software Engineer on this team, you'll scale our infrastructure to serve billions of requests per day, defend against malicious traffic and facilitate seamless communication between internal services. You'll maintain critical systems that support nearly every function of our platform, ensuring an efficient and reliable experience for hundreds of millions of users worldwide.
