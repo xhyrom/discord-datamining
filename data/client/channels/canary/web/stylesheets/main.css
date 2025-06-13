@@ -19553,6 +19553,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   bottom: unset;
   left: 0;
   padding-left: 16px;
+  pointer-events: all;
   right: 0;
   top: -24px;
 }
@@ -63729,4 +63730,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fc6dd05d86a70bb7.css.map*/
+/*# sourceMappingURL=12633.4603660ef345eadb.css.map*/
