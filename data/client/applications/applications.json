@@ -993,8 +993,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -1002,8 +1002,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "8"
         }
@@ -1356,20 +1356,20 @@
   },
   {
     "id": "1245041113882955918",
-    "name": "Tiny Royale - Army of Boom",
-    "icon": "2f3c41097bf5e524db72836598e049ec",
-    "description": "Loot, shoot, and survive! Upgrade your Hero to stay alive!\nTeam up with friends in Squads of 4, or go Solo in a 30-Player\nBattle Royale! Climb the ranks in weekly Leaderboards!\nWill you come out on top?\n\nGame is free to download with in-game purchases and is governed by our Terms of Service. For questions see support page. For information about how Zynga uses personal data read our privacy policy.",
+    "name": "Tiny Royale - ZOMBIES!",
+    "icon": "be4c34bdaa80f131ba65bf26786a6c5b",
+    "description": "The Zombie Army is here — time to fight back!\nSquad up in teams of 4 to take on endless undead.\nUpgrade your Hero. Climb the leaderboards.\nOnly the strongest survive. Will it be you?\n\nGame is free to download with in-game purchases and is governed by our Terms of Service. For questions see support page. For information about how Zynga uses personal data read our privacy policy.",
     "summary": "",
     "type": null,
     "is_monetized": true,
     "is_verified": true,
     "is_discoverable": true,
-    "cover_image": "cf7adbc4578075bc740b6413aba3c775",
+    "cover_image": "8a8c04532581ccd56d805595dd4bda41",
     "bot": {
       "id": "1245041113882955918",
       "username": "Tiny Royale - Army of Boom",
       "global_name": null,
-      "avatar": "2f3c41097bf5e524db72836598e049ec",
+      "avatar": "be4c34bdaa80f131ba65bf26786a6c5b",
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4215",
@@ -1377,7 +1377,7 @@
       "primary_guild": null,
       "clan": null,
       "bot": true,
-      "banner": "c4bbfd01071069c4b78ec32dcfdc057e",
+      "banner": "b62bd27a750217108b38bf313a2024b5",
       "banner_color": null,
       "accent_color": null
     },
@@ -1416,7 +1416,7 @@
     "flags": 131082,
     "max_participants": null,
     "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1317182882212610128",
+      "activity_preview_video_asset_id": "1382851437016649839",
       "supported_platforms": [
         "web",
         "ios",
@@ -1456,7 +1456,8 @@
     "tags": [
       "Battle Royale",
       "Co-op",
-      "Competitive"
+      "Competitive",
+      "Zombies"
     ]
   },
   {
@@ -3506,8 +3507,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -3559,8 +3560,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -3664,13 +3665,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -3685,7 +3681,12 @@
       },
       {
         "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -3734,6 +3735,16 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
@@ -3744,23 +3755,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -3886,12 +3887,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -3906,7 +3902,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "launcher/df_launcher_global.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       }
     ],
@@ -4161,23 +4162,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -4187,7 +4178,17 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
