@@ -15671,6 +15671,7 @@ div.modalHeader_c28af8 {
   display: grid;
   grid-area: header;
   grid-template: "layer" 1fr/1fr;
+  max-height: 123px;
 }
 .headerBackground_b0ba57 {
   border-top-left-radius: 4px;
@@ -63728,4 +63729,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b921650d78e7c316.css.map*/
+/*# sourceMappingURL=12633.fc6dd05d86a70bb7.css.map*/
