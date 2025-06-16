@@ -10,10 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7963308002](https://discord.com/jobs/7963308002)
 
-**Updated At:** Mon, 19 May 2025 16:39:33 GMT
+**Updated At:** Mon, 16 Jun 2025 19:20:19 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an exceptional Senior Counsel, Intellectual Property to join our growing legal team. This is a high-impact role at one of the most interesting companies on the planet!
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
+We are looking for an exceptional Senior Counsel, Intellectual Property to join our growing legal team. This is a high-impact role at one of the most interesting companies on the planet!
 As our Senior IP Counsel, you will own and execute on IP portfolio strategy, including refining and adapting our trademark, copyright, and patent prosecution and enforcement strategy in support of the company’s strategy. In doing so, you will help our company expand across the world. You'll get to work with some super inspiring people, including our Engineering, Product, Sales, Marketing, Litigation, and Corp Dev teams.&amp;nbsp;Reporting to our VP &amp;amp; Deputy General Counsel, you will have the opportunity to have a significant impact on how the Legal team and the company evolve.
 If this sounds like a fun challenge, please read on...&amp;nbsp;
 What You’ll Be Doing

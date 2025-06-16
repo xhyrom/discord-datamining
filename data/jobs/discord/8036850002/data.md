@@ -10,13 +10,13 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8036850002](https://discord.com/jobs/8036850002)
 
-**Updated At:** Fri, 13 Jun 2025 15:45:19 GMT
+**Updated At:** Mon, 16 Jun 2025 19:56:44 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Learning Experience (LX) team at Discord creates learning experiences that empower Discordians to grow, lead, and thrive. We blend learning science, design thinking, and Discord's unique culture to drive personal and organizational success. We're the team that makes sure every Discordian—from their first day to their leadership journey—has the tools and knowledge they need to do their best work.
 We're looking for a Senior Learning Experience Partner to join our team and lead transformational learning initiatives across Discord. Your first quest? Reimagine and drive our company-wide onboarding program. But that's just the beginning. We need someone who approaches challenges with curiosity, designs with intention to solve real problems, and builds programs that create lasting impact—including initiatives we haven't even imagined yet.
 The work will naturally require regular presence in our San Francisco office - you'll be there when onboarding cohorts run and for other key in-person learning moments. We trust you to balance office time with the rhythm of our programs.
-This position is US-based only. We are seeking candidates located in the San Francisco Bay Area.
+This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma Counties), or be willing to relocate to the San Francisco Bay Area.
 What You'll Be Doing
 
 Company-wide Onboarding Program: Design, implement and iterate a scalable onboarding experience that accelerates new hire impact and their sense of belonging at Discord (requires regular on-site facilitation in our SF office).
