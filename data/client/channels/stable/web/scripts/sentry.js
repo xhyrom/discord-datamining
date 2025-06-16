@@ -5851,6 +5851,8 @@
           (r.CLIENT_THEME_PREVIEW_CLOSED = "client_theme_preview_closed"),
           (r.CUSTOM_THEME_RESET_BUTTON_CLICKED =
             "custom_theme_reset_button_clicked"),
+          (r.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED =
+            "custom_themes_editor_controls_changed"),
           (r.CUSTOM_THEMES_BACK_BUTTON_CLICKED =
             "custom_themes_back_button_clicked"),
           (r.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED =
@@ -6216,6 +6218,10 @@
           (r.NOTIFICATIONS_INBOX_UNMOUNTED = "notifications_inbox_unmounted"),
           (r.NOTIFICATIONS_INBOX_LOADED = "notifications_inbox_loaded"),
           (r.MASKED_LINK_MODAL_CLICKED = "masked_link_modal_clicked"),
+          (r.ACTIVITY_SHARING_SETTINGS_INTERACTED =
+            "activity_sharing_settings_interacted"),
+          (r.RUNNING_GAME_CARD_STATE_CHANGED =
+            "running_game_card_state_changed"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6798,7 +6804,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-06-13-932f288d58b6faf78dc0843b4e1adcc05cdf3f29-discord_web",
+              "2025-06-16-2a3d1a1ffb43101250a3513422294ec50837713e-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6864,8 +6870,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "409214"),
-            o.YA("builtAt", String("1749799088037"));
+            o.YA("buildNumber", "409725"),
+            o.YA("builtAt", String("1750058303756"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -50359,4 +50365,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.03d13372baf3d359.js.map
+//# sourceMappingURL=sentry.92241702e8f2114d.js.map
