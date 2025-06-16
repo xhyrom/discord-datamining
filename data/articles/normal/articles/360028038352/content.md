@@ -1,3 +1,16 @@
+<div class="mega-box">
+  <strong><span style="color: #434343">What’s New:</span></strong>
+  <span style="color: #434343"><br /></span
+  ><span style="color: #434343"
+    >Server Boosting just got more flexible! You can now use your available
+    Boosts to unlock additional perks like </span
+  ><strong><span style="color: #434343">Server Tags</span></strong
+  ><span style="color: #434343"> and </span
+  ><strong><span style="color: #434343">Enhanced Role Styles</span></strong
+  ><span style="color: #434343">
+    without needing to reach higher server levels.</span
+  >
+</div>
 <p>
   Want to share some extra special perks with your favorite community? With
   Server Boosts, you and your community can now work together to unlock some
@@ -19,92 +32,133 @@
     ></strong
   >
 </h4>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33W4WY3FYVPRZ2CK02"
-      >What are the levels and perks for Server Boosting? </a
-    >
-    <ul>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ"
-          >Server Level Perks</a
-        >
-      </li>
-      <li><a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</a></li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
-          >Boosting Badge Perks</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ332WE7WX2XH0FEN6H9"
-          >Nitro Subscription Perks </a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ331AJ25MPQRD6R83KJ"
-      >How do I Boost a Server?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks work?</a>
-    <ul>
-      <li>
-        <a href="#h_01JXWRENPD3N35RBKMS1YR1538"
-          >How do I apply Server Boosts to Additional Perks</a
-        >
-      </li>
-      <li>
-        <a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
-          >How Do Server Boosts Work for Levels vs Additional Perks?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ34QP27HTRJCM5JQ783"
-      >How to maintain your Boosting Streak</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ3486SXSGHT99XVMNFN"
-      >How do I Transfer my Server Boost?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01HGX7DJ34RX96KX2RBPEANZKB"
-      >Server Owner/Admin View Of Server Boosts</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01JXWRJZQVZ41QP7XNF1BMW8RH"
-          >Managing Your Server's Boosts and Perks</a
-        >
-      </li>
-      <li>
-        <a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
-          >Grace Period for Server Boost Loss</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li><a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8">FAQs for Additional Perks</a></li>
-</ul>
-<h3 id="h_01HGXF12BMP1KADAXYHZNK6SA0">
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33W4WY3FYVPRZ2CK02"
+          >What are the levels and perks for Server Boosting? </a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33Z5HGWCXJ6NKR2FTZ"
+              >Server Level Perks</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JT6SH1QBD1XZKK4KEAD64GXS"
+              >Additional Perks</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ33YD3AP7K0E0GYSMYM"
+              >Boosting Badge Perks</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ332WE7WX2XH0FEN6H9"
+              >Nitro Subscription Perks </a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ331AJ25MPQRD6R83KJ"
+          >How do I Boost a Server?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JXWRENPDXWD623DT9NTY70R1"
+          >How do Additional Perks work?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JXWRENPD3N35RBKMS1YR1538"
+              >How do I apply Server Boosts to Additional Perks</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
+              >How Do Server Boosts Work for Levels vs Additional Perks?</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ34QP27HTRJCM5JQ783"
+          >How to maintain your Boosting Streak</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ3486SXSGHT99XVMNFN"
+          >How do I Transfer my Server Boost?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01HGX7DJ34RX96KX2RBPEANZKB"
+          >Server Owner/Admin View Of Server Boosts</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01JXWRJZQVZ41QP7XNF1BMW8RH"
+              >Managing Your Server's Boosts and Perks</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
+              >Grace Period for Server Boost Loss</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8"
+          >FAQs for Additional Perks</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
+<div class="book-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Looking to cancel your Server Boost? Please check out our article on
     <a
@@ -114,7 +168,7 @@
       >how to cancel a subscription</a
     >.
   </span>
-</h3>
+</div>
 <h1 id="h_01HGX7DJ33W4WY3FYVPRZ2CK02">
   What are the levels and perks for Server Boosting
 </h1>
@@ -317,14 +371,14 @@
   Once finished, you’ll receive a final pop-up that says your boost has been
   activated.
 </p>
-<h1 id="h_01HGX7DJ344FN50A4GM9VPAV52" class="wysiwyg-text-align-center">
+<p id="h_01HGX7DJ344FN50A4GM9VPAV52" class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/19576232983959"
     width="624"
     height="351"
   />
-</h1>
-<h3 id="h_01HGX7DJ3475JPXZECYF786DPA">
+</p>
+<div class="book-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If you'd like to Boost your server directly to the next Level in one button
     click and save your brain from any extra math problems, check out this
@@ -337,7 +391,7 @@
       >here</span
     ></a
   ><span style="color: #434343" data-darkreader-inline-color="">! </span>
-</h3>
+</div>
 <h1 id="h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks Work?</h1>
 <p>Here’s a quick summary of how additional perks work in servers:</p>
 <ul>
@@ -354,7 +408,7 @@
   perks are specific enhancements for your server that you can unlock with
   available Server Boosts—no specific level required!
 </p>
-<h3 id="h_01JXWRENPD6FEWWQHKJ84KTV4Q">
+<div class="warn-box">
   <strong><span style="color: #434343">Important:</span></strong
   ><span style="color: #434343">
     Additional perks use dedicated Boosts that are separate from those
@@ -366,7 +420,7 @@
     toward additional perks. Each perk requires ongoing Boosts to remain active,
     similar to how server levels require ongoing Boosts.</span
   >
-</h3>
+</div>
 <h2 id="h_01JXWRENPD3N35RBKMS1YR1538">
   How Do I Apply Server Boosts to Additional Perks
 </h2>
@@ -382,7 +436,7 @@
     height="400"
   />
 </p>
-<h4 id="h_01JXWRENPDKMVMVFMWFR3YENFC">
+<h4 id="h_01JXWRENPDKMVMVFMWFR3YENFC" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Server Boosts tab in a server</span>
 </h4>
 <p>
@@ -396,7 +450,7 @@
     height="424"
   />
 </p>
-<h4 id="h_01JXWRENPDTXQBAJTP217V0VPK">
+<h4 id="h_01JXWRENPDTXQBAJTP217V0VPK" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of Available Server Boosts</span>
 </h4>
 <p>
@@ -411,12 +465,12 @@
       height="255"
   /></strong>
 </p>
-<h4 id="h_01JXWRENPDHNAM5CBB3V6V563V">
+<h4 id="h_01JXWRENPDHNAM5CBB3V6V563V" class="wysiwyg-text-align-center">
   <span style="color: #666666"
     >Enable Perk option for purchasing additional perks</span
   >
 </h4>
-<h3 id="h_01JXWRENPDG78TP9PB1P5AH3VT">
+<div class="warn-box">
   <strong><span style="color: #434343">Important:</span></strong
   ><span style="color: #434343">
     If your server's Boost count drops and you no longer have enough Boosts
@@ -425,22 +479,22 @@
     member profiles. Server owners and admins can choose which perks to
     prioritize when managing limited Boosts.</span
   >
-</h3>
-<h3 id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/32847285274903"
-      width="272"
-      height="395"
-  /></span>
-</h3>
-<h3 id="h_01JXWRENPDTF83Z8A6PBWFZA25">
+  <p id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
+    <span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/32847285274903"
+        width="272"
+        height="395"
+    /></span>
+  </p>
+</div>
+<div class="info-box">
   <strong><span style="color: #434343">Info: </span></strong
   ><span style="color: #434343"
     >Additional perks can currently only be unlocked and configured on desktop
     at this time.</span
   >
-</h3>
+</div>
 <h2 id="h_01JXWRENPDE8PJ41K82SM9CSNX">
   How Do Server Boosts Work for Levels vs Additional Perks?
 </h2>
@@ -486,20 +540,21 @@
   </li>
 </ul>
 <h1 id="h_01HGX7DJ34QP27HTRJCM5JQ783">How to maintain your Boosting Streak</h1>
-<h3 id="h_01HGX7DJ34TTVV8G66PQBRCC5R">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If you have been removed from a server that you were boosting, you will
     have a 7 day cooldown before you can use your boost again. Learn more about
-    transferring a boost below.</span
+    transferring a boost
+    <a href="#h_01HGX7DJ3486SXSGHT99XVMNFN">below</a>.</span
   >
-</h3>
-<h3 id="h_01HGX7DJ34DAP2TT1A6C015STQ">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you are also switching your purchase from desktop to mobile or vice
-    versa, you have 72 hours to manually reactivate your Server Boosts in order
-    to not lose your streak.</span
-  >
-</h3>
+  <p id="h_01HGX7DJ34DAP2TT1A6C015STQ">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      >If you are also switching your purchase from desktop to mobile or vice
+      versa, you have 72 hours to manually reactivate your Server Boosts in
+      order to not lose your streak.</span
+    >
+  </p>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/19576232987799"
@@ -524,21 +579,21 @@
   <li>The server you have been boosting has been deleted </li>
   <li>You’ve been removed from the server by an admin or moderator</li>
 </ul>
-<h3 id="h_01HGX7DJ34ARGWRP4KH9YTBSW1">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If you stop boosting a server for any of the listed reasons, you have 72
     hours to reapply your boosts to a new server in order to maintain your
     streak. If you do not boost another server within 72 hours, you will lose
     your streak and our Support Team can not adjust your streak.</span
   >
-</h3>
+</div>
 <h1 id="h_01HGX7DJ3486SXSGHT99XVMNFN">How do I Transfer my Server Boosts? </h1>
-<h3 id="h_01HGX7DJ34ERHGKWPPKZNVR70D">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >After using your Server Boost, you’ll need to wait 7 days for the cooldown
     before transferring it to another server.</span
   >
-</h3>
+</div>
 <p>
   If you accidentally Boosted the wrong server, or you just want to move your
   Boost, you can easily transfer your Server Boost to another server! Just keep
@@ -754,10 +809,9 @@
   <strong
     >Q: I just added 3 Boosts to my server for an additional perk, but I can't
     enable it. Why aren't my Boosts available?</strong
-  >
-  <br />A: When you add new Boosts to your server, they're automatically applied
-  toward server levels whenever you have enough for the next level. This means
-  your Boosts might have triggered an automatic level upgrade, making them
+  ><br />A: When you add new Boosts to your server, they're automatically
+  applied toward server levels whenever you have enough for the next level. This
+  means your Boosts might have triggered an automatic level upgrade, making them
   unavailable for additional perks. To free up those Boosts for additional
   perks, you'll need to disable the level.
 </p>
