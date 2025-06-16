@@ -17074,17 +17074,15 @@ span.clanTag__5d473 {
 .infoBox__50a54 {
   margin-top: 16px;
 }
-.twoWayWarningV1__50a54 {
-  margin-top: 24px;
-}
-.twoWayWarningV2__50a54 {
+.warningContainer__50a54 {
   flex-grow: 1;
+  margin-right: 4px;
 }
-.twoWayWarning__50a54 {
+.warningOuterContainer__50a54 {
   align-items: center;
   display: flex;
 }
-.twoWayWarningIcon__50a54 {
+.warningIcon__50a54 {
   color: var(--text-muted);
   height: 24px;
   margin-right: 8px;
@@ -63577,4 +63575,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.22de87a15c69d8cb.css.map*/
+/*# sourceMappingURL=12633.98046b7eb5f9c1a9.css.map*/
