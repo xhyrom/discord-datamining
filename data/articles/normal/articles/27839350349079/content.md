@@ -47,9 +47,14 @@
   <strong>28 Years Later Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 22, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
+  longer have access to this Avatar Decoration.Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -119,9 +124,14 @@
   <strong>Sledge Hammer Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 19, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -148,7 +158,13 @@
   <strong>Shiro Mask Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 18, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><span
     style="color: #2e3338; background-color: #ffffff"
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
@@ -204,10 +220,15 @@
   <strong>RE:VOLVING STAR</strong> <strong>Avatar Decoration</strong> is a
   limited-time Avatar Decoration and will only be yours as an Avatar Decoration
   until <strong>August 15, 2025 (11:59PM UTC)</strong>. After this date, you
-  will no longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
+  will no longer have access to this Avatar Decoration. Nitro subscribers can
+  keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -277,9 +298,14 @@
   <strong>Marvel Snap Venom Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 9, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -332,10 +358,14 @@
   <strong>Ultron Avatar Decoration</strong> is a limited-time Avatar Decoration
   and will only be yours as an Avatar Decoration until
   <strong>August 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
