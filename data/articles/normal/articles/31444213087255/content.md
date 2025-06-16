@@ -30,8 +30,9 @@
   </ul>
 </div>
 <div class="exp-box">
-  <strong>Info:</strong> Enhanced Role Styles is an experiment and currently
-  available to select servers.
+  <strong>Info:</strong> As of 6/16/25 we’re gradually rolling this feature out
+  to all servers. You’ll receive a notification in your server once this feature
+  becomes available in your server.
 </div>
 <h1 id="h_01JT6W75AN16FJWVZ7M2EQMGE9">What are Enhanced Role Styles?</h1>
 <p class="wysiwyg-text-align-center">
@@ -311,30 +312,30 @@
   press on <strong>Disable Perk</strong>. You’ll then receive a confirmation
   window press on <strong>Disable</strong> to confirm. You can use all available
   Server Boosts to unlock
-  <a href="#h_01JT6W75AN5YEZQ9RPSENYX9VH">Additional Perks</a>.
+  <a href="#h_01JT6W75AN5YEZQ9RPSENYX9VH">additional perks</a>.
 </p>
 <p>
   <strong
-    >Q: What are “Additional Perks” and how are they different from
+    >Q: What are “additional perks” and how are they different from
     Levels?</strong
   >
 </p>
 <p>
-  A: Additional Perks are new features you can unlock directly with Boosts,
+  A: additional perks are new features you can unlock directly with Boosts,
   separate from your server's Boost Level. Currently, there are two available:
   Enhanced Role Styles (which add gradient and holographic effects to roles) and
   Server Tags (4-character identifiers members can display on their profiles
   across Discord). Unlike traditional server levels, these perks can be unlocked
   individually without reaching specific level thresholds.
 </p>
-<p><strong>Q: How much do the new Additional Perks cost?</strong></p>
+<p><strong>Q: How much do the new additional perks cost?</strong></p>
 <p>
   A: Enhanced Role Styles and Server Tags each cost 3 Boosts. If you want both
   perks, you'll need 6 Boosts total (3 for each perk).
 </p>
 <p>
   <strong
-    >Q: Are Additional Perks replacing the current server level system?</strong
+    >Q: Are additional perks replacing the current server level system?</strong
   >
 </p>
 <p>
@@ -345,20 +346,20 @@
 </p>
 <p>
   <strong
-    >Q: Do Additional Perks use separate Boosts from my server level?</strong
+    >Q: Do additional perks use separate Boosts from my server level?</strong
   >
 </p>
 <p>
-  A: Yes, Boosts used for Additional Perks are dedicated specifically to those
+  A: Yes, Boosts used for additional perks are dedicated specifically to those
   perks and don't count toward your server's level progression. Similarly,
-  Boosts allocated to your server level can't be used for Additional Perks.
+  Boosts allocated to your server level can't be used for additional perks.
   You'll need separate Boosts for each - so if you want Enhanced Role Styles,
   you need 3 Boosts just for that perk, plus whatever Boosts you want to
   maintain your current server level.
 </p>
 <p>
   <strong
-    >Q: What happens to my Additional Perks if my server loses Boosts?</strong
+    >Q: What happens to my additional perks if my server loses Boosts?</strong
   >
 </p>
 <p>
@@ -375,8 +376,8 @@
   A: Make sure you're accessing the Server Boost tab (visible only to server
   owners/admins) and that your Boosts are "available" rather than already
   allocated to your server level. Only server members with admin permissions can
-  unlock Additional Perks. You need to have enough unallocated Boosts to enable
-  Additional Perks. 
+  unlock additional perks. You need to have enough unallocated Boosts to enable
+  additional perks. 
 </p>
 <p>
   <strong
@@ -386,13 +387,13 @@
 </p>
 <p>
   A: Yes, server owners and admins can reallocate Boosts between server levels
-  and Additional Perks through the Server Boosts tab. However, if you move
+  and additional perks through the Server Boosts tab. However, if you move
   Boosts away from a perk, that perk will be disabled until you allocate enough
   Boosts back to it.
 </p>
 <p>
   <strong
-    >Q: Are Additional Perks a one-time purchase, or do they require ongoing
+    >Q: Are additional perks a one-time purchase, or do they require ongoing
     Boosts?</strong
   >
 </p>
@@ -404,11 +405,11 @@
 </p>
 <p>
   <strong
-    >Q: Can I purchase and manage Additional Perks from both desktop and
+    >Q: Can I purchase and manage additional perks from both desktop and
     mobile?</strong
   >
 </p>
 <p>
-  <strong>A:</strong> Additional Perks can currently only be purchased and
+  <strong>A:</strong> additional perks can currently only be purchased and
   configured on desktop.
 </p>

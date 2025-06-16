@@ -34,8 +34,9 @@
   </ul>
 </div>
 <div class="exp-box">
-  <strong>Info:</strong> Server Tags are currently available as an experiment
-  only for select servers.
+  <strong>Info:</strong> As of 6/16/25 we’re gradually rolling this feature out
+  to all servers. You’ll receive a notification in your server once this feature
+  becomes available in your server.<strong><br /></strong>
 </div>
 <h1 id="h_01JT6VKRAB9C1PW9Z7TAT24AAA">What are Server Tags?</h1>
 <p class="wysiwyg-text-align-center">

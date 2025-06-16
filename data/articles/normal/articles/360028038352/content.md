@@ -1,9 +1,8 @@
 <p>
   Want to share some extra special perks with your favorite community? With
-  Server Boosts, you and your community will now be able to work together to
-  unlock some fresh new and improved collective perks for a server of your
-  choice each month. By using your Server Boosts every month, you can unlock
-  some epic perks to the rest of your server community! 
+  Server Boosts, you and your community can now work together to unlock some
+  fresh new perks for your server each month. By using your Server Boosts every
+  month, you can unlock some epic perks to the rest of your server community! 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
@@ -60,6 +59,21 @@
     >
   </li>
   <li>
+    <a href="#h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks work?</a>
+    <ul>
+      <li>
+        <a href="#h_01JXWRENPD3N35RBKMS1YR1538"
+          >How do I apply Server Boosts to Additional Perks</a
+        >
+      </li>
+      <li>
+        <a href="#h_01JXWRENPDE8PJ41K82SM9CSNX"
+          >How Do Server Boosts Work for Levels vs Additional Perks?</a
+        >
+      </li>
+    </ul>
+  </li>
+  <li>
     <a
       href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ34QP27HTRJCM5JQ783"
       >How to maintain your Boosting Streak</a
@@ -72,11 +86,23 @@
     >
   </li>
   <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360028038352#h_01HGX7DJ34RX96KX2RBPEANZKB"
+    <a href="#h_01HGX7DJ34RX96KX2RBPEANZKB"
       >Server Owner/Admin View Of Server Boosts</a
     >
+    <ul>
+      <li>
+        <a href="#h_01JXWRJZQVZ41QP7XNF1BMW8RH"
+          >Managing Your Server's Boosts and Perks</a
+        >
+      </li>
+      <li>
+        <a href="#h_01JXWRKHF311JQS7ZB7ERSKWNW"
+          >Grace Period for Server Boost Loss</a
+        >
+      </li>
+    </ul>
   </li>
+  <li><a href="#h_01JXWRM6K7KF6GMB6XRGJFKQD8">FAQs for Additional Perks</a></li>
 </ul>
 <h3 id="h_01HGXF12BMP1KADAXYHZNK6SA0">
   <span style="color: #434343" data-darkreader-inline-color=""
@@ -178,76 +204,39 @@
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
 <div class="exp-box">
-  <strong>Info:</strong>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/31444248479639"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Server Tags</a
+  <span style="color: #434343"
+    >Starting 6/16, we're gradually rolling out Server Tags and Enhanced Role
+    Styles as additional Boosted perks to all servers. You'll see a notification
+    in Discord when these features become available for your servers. To learn
+    more about additional perks, check out this section below.</span
   >
-  and
-  <a
-    href="https://support.discord.com/hc/en-us/articles/31444213087255"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Enhanced Role Styles</a
-  >
-  are currently part of an experiment that is only available to select servers. 
 </div>
-<p>
-  Server Tags and Enhanced Role Styles are new server perks that can be unlocked
-  without changing your server level.
-</p>
-<p>
-  1. With the correct server selected, select the
-  <strong>Server Boosts </strong>tab in the upper-left corner. This tab is only
-  visible to admins of the server.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/31808582990743"
-    width="374"
-    height="400"
-  />
-</p>
-<h4 id="h_01JT6SH1QB88W7S0J147123MXW" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Server Boosts tab in a server</span
-  >
-</h4>
-<p>
-  2. In the upper-right, you’ll see how many Server Boosts are available and
-  recent activity of Server Boosts.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/31808574571287"
-    width="362"
-    height="424"
-  />
-</p>
-<h4 id="h_01JT6SH1QBW27KS2ZEHPWQFVMJ" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Available Server Boosts</span
-  >
-</h4>
-<p>
-  3. You can apply your available Server Boosts to any of the available
-  additional perks by pressing on <strong>Enable Perk</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/31808574573719"
-      width="565"
-      height="425"
-  /></strong>
-</p>
-<h4 id="h_01JT6SH1QBA2X12HMVJ5KZNNPD" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Enable Perk option for purchasing additional perks</span
-  >
-</h4>
+<ul>
+  <li>
+    <strong>Server Tags (3 Boosts)</strong> - Give your members a custom
+    4-character tag they can display on their profiles everywhere on Discord,
+    helping them represent your community across the platform
+  </li>
+  <li>
+    <strong
+      style="
+        color: #434343;
+        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+          Helvetica, Arial, sans-serif;
+      "
+      >Enhanced Role Styles (3 Boosts)</strong
+    ><span
+      style="
+        color: #434343;
+        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+          Helvetica, Arial, sans-serif;
+      "
+    >
+      - Make certain roles stand out with animated gradient and holographic
+      effects that go beyond standard solid colors</span
+    >
+  </li>
+</ul>
 <h2 id="h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</h2>
 <p class="wysiwyg-text-align-center">
   <img
@@ -349,6 +338,153 @@
     ></a
   ><span style="color: #434343" data-darkreader-inline-color="">! </span>
 </h3>
+<h1 id="h_01JXWRENPDXWD623DT9NTY70R1">How do Additional Perks Work?</h1>
+<p>Here’s a quick summary of how additional perks work in servers:</p>
+<ul>
+  <li>Cost: 3 Boosts per perk </li>
+  <li>Independent from server level perks </li>
+  <li>Need Boosts that are not allocated to server level perks</li>
+  <li>Can only be enabled and configured on the Discord desktop app </li>
+  <li>Disabled immediately if Boosts are removed from the perk</li>
+</ul>
+<p id="h_01JXWRENPDR7Q2TJ8XQ9DE116Q">
+  <strong>Server Tags</strong> and <strong>Enhanced Role Styles</strong> are
+  additional server perks that can be unlocked independently from your server
+  level. Unlike the bundled perks that come with each server level, additional
+  perks are specific enhancements for your server that you can unlock with
+  available Server Boosts—no specific level required!
+</p>
+<h3 id="h_01JXWRENPD6FEWWQHKJ84KTV4Q">
+  <strong><span style="color: #434343">Important:</span></strong
+  ><span style="color: #434343">
+    Additional perks use dedicated Boosts that are separate from those
+    maintaining your server level. You'll need </span
+  ><strong
+    ><span style="color: #434343">available (unallocated) Boosts</span></strong
+  ><span style="color: #434343">
+    to unlock them—Boosts already allocated to your server level won't count
+    toward additional perks. Each perk requires ongoing Boosts to remain active,
+    similar to how server levels require ongoing Boosts.</span
+  >
+</h3>
+<h2 id="h_01JXWRENPD3N35RBKMS1YR1538">
+  How Do I Apply Server Boosts to Additional Perks
+</h2>
+<p>
+  1. With the correct server selected, select the
+  <strong>Server Boosts </strong>tab in the upper-left corner. This tab is only
+  visible to admins of the server.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32847301580439"
+    width="374"
+    height="400"
+  />
+</p>
+<h4 id="h_01JXWRENPDKMVMVFMWFR3YENFC">
+  <span style="color: #666666">Example of Server Boosts tab in a server</span>
+</h4>
+<p>
+  2. In the upper-right, you’ll see how many Server Boosts are available and
+  recent activity of Server Boosts.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32847285271575"
+    width="362"
+    height="424"
+  />
+</p>
+<h4 id="h_01JXWRENPDTXQBAJTP217V0VPK">
+  <span style="color: #666666">Example of Available Server Boosts</span>
+</h4>
+<p>
+  3. You can apply your available Server Boosts to any of the available
+  additional perks by pressing on <strong>Enable Perk</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32847301588631"
+      width="339"
+      height="255"
+  /></strong>
+</p>
+<h4 id="h_01JXWRENPDHNAM5CBB3V6V563V">
+  <span style="color: #666666"
+    >Enable Perk option for purchasing additional perks</span
+  >
+</h4>
+<h3 id="h_01JXWRENPDG78TP9PB1P5AH3VT">
+  <strong><span style="color: #434343">Important:</span></strong
+  ><span style="color: #434343">
+    If your server's Boost count drops and you no longer have enough Boosts
+    allocated to a perk, that perk will be disabled. Enhanced Role Styles will
+    automatically revert to solid colors, and Server Tags will be removed from
+    member profiles. Server owners and admins can choose which perks to
+    prioritize when managing limited Boosts.</span
+  >
+</h3>
+<h3 id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
+  <span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32847285274903"
+      width="272"
+      height="395"
+  /></span>
+</h3>
+<h3 id="h_01JXWRENPDTF83Z8A6PBWFZA25">
+  <strong><span style="color: #434343">Info: </span></strong
+  ><span style="color: #434343"
+    >Additional perks can currently only be unlocked and configured on desktop
+    at this time.</span
+  >
+</h3>
+<h2 id="h_01JXWRENPDE8PJ41K82SM9CSNX">
+  How Do Server Boosts Work for Levels vs Additional Perks?
+</h2>
+<p>
+  Your server's Server Boosts can now be strategically allocated in two ways:
+</p>
+<ul>
+  <li>
+    <strong>For server levels: </strong>Boosts that count toward your server's
+    level progression (2, 7, or 14)
+  </li>
+  <li>
+    <strong>For additional perks</strong>: Separate allocations of 3 Boosts per
+    perk
+  </li>
+</ul>
+<p>This means if your server has 10 total Boosts, you could: </p>
+<ul>
+  <li>Use 7 for Level 2 and 3 for one additional perk [NEW] </li>
+  <li>Use 2 for Level 1 and 6 for two additional perks (3 each)</li>
+  <li>Use 7 for Level 2 and save up for more Boosts to get to Level 3 later</li>
+</ul>
+<p>
+  When new Boosts are added to your server, they're automatically applied toward
+  server levels whenever you have enough Boosts for the next level. Boosts must
+  be manually applied to additional perks on the Discord desktop app. Server
+  owners and admins can reallocate Boosts between levels and perks at any time
+  through the <strong>Server Boosts tab</strong> on desktop. However, keep in
+  mind: 
+</p>
+<ul>
+  <li>
+    Moving Boosts away from your level requirements will cause you to lose those
+    level perks after the grace period
+  </li>
+  <li>
+    Moving Boosts away from additional perks will immediately disable those
+    perks 
+  </li>
+  <li>
+    You need enough total Boosts to maintain both your desired level AND any
+    additional perks you want active
+  </li>
+</ul>
 <h1 id="h_01HGX7DJ34QP27HTRJCM5JQ783">How to maintain your Boosting Streak</h1>
 <h3 id="h_01HGX7DJ34TTVV8G66PQBRCC5R">
   <span style="color: #434343" data-darkreader-inline-color=""
@@ -404,10 +540,11 @@
   >
 </h3>
 <p>
-  If you accidentally boosted the wrong server, or you just want to move your
-  boost, you can easily transfer your Server Boost to another server! Just keep
-  in mind, if you move your boost to another server, the original server might
-  lose a server boost level. Here’s how to transfer your boost.
+  If you accidentally Boosted the wrong server, or you just want to move your
+  Boost, you can easily transfer your Server Boost to another server! Just keep
+  in mind, if you move your Boost to another server, the original server might
+  lose a server Boost level or additional perks if those Boosts were allocated
+  to maintain them. Here’s how to transfer your Boost.
 </p>
 <p>
   1. Tap on <strong>cogwheel</strong> next to your Discord username to access
@@ -484,6 +621,23 @@
       height="268"
   /></strong>
 </p>
+<h2 id="h_01JXWRJZQVZ41QP7XNF1BMW8RH">
+  Managing Your Server's Boosts and Perks
+</h2>
+<p>
+  As a server owner or admin with <strong>Manage Server</strong> permissions,
+  you'll have access to the new <strong>Server Boosts</strong> tab at the top of
+  your channel list. This powerful management interface lets you:
+</p>
+<ul>
+  <li>View your total available Boosts and how they're currently allocated</li>
+  <li>See your server's current level and active perks</li>
+  <li>Enable new perks if you have available Boosts </li>
+  <li>Reallocate Boosts between levels and additional perks as needed</li>
+  <li>
+    Configure settings for Enhanced Role Styles and Server Tags once enabled
+  </li>
+</ul>
 <p>
   If you’re the server owner or have <strong>Manage Server</strong> permissions
   within the server, you’ll also be able to go behind the scenes and head into
@@ -504,6 +658,7 @@
     height="488"
   />
 </p>
+<h2 id="h_01JXWRKHF311JQS7ZB7ERSKWNW">Grace Periods for Server Boost Loss</h2>
 <p>
   If your server is running low on Server Boosts and loses a level, the server
   will be able to keep the perks for a grace period of 72 hours. After 72 hours,
@@ -516,9 +671,127 @@
   servers after 30 days.
 </p>
 <p>
+  Unlike level perks which have a grace period, additional perks like Server
+  Tags and Enhanced Role Styles are disabled immediately when their required
+  Boosts are removed or reallocated. If your server is losing Boosts, you can
+  use the Server Boosts tab to prioritize which perks to keep active with your
+  remaining Boosts.
+</p>
+<p>
   Want to see different perks added to this in the future? We'd love to hear all
   your feedback and suggestions over at
   <a href="http://dis.gd/feedback" target="_blank" rel="noopener noreferrer"
     >http://dis.gd/feedback</a
   >!
+</p>
+<h1 id="h_01JXWRM6K7KF6GMB6XRGJFKQD8">FAQs for Additional Perks</h1>
+<p>
+  <strong
+    >Q: What are ‘additional perks’ and how are they different from
+    Levels?</strong
+  >
+</p>
+<p>
+  A: Additional perks are new features you can unlock directly with Boosts,
+  separate from your server's Boost Level. Currently, there are two available:
+  Enhanced Role Styles (which add gradient and holographic effects to roles) and
+  Server Tags (4-character identifiers members can display on their profiles
+  across Discord). Unlike traditional server levels, these perks can be unlocked
+  individually without reaching specific level thresholds.
+</p>
+<p><strong>Q: How much do the new additional perks cost?</strong></p>
+<p>
+  A: Enhanced Role Styles and Server Tags each cost 3 Boosts. If you want both
+  perks, you'll need 6 Boosts total (3 for each perk).
+</p>
+<p>
+  <strong
+    >Q: Are additional perks replacing the current server level system?</strong
+  >
+</p>
+<p>
+  A: No, this supplements the existing level system. All current server level
+  perks (emoji slots, file upload limits, etc.) remain exactly the same. This
+  new system simply gives you additional ways to use your Boosts for targeted
+  perks without affecting your server's level progression.
+</p>
+<p>
+  <strong
+    >Q: Do additional perks use separate Boosts from my server level?</strong
+  >
+</p>
+<p>
+  A: Yes, Boosts used for additional perks are dedicated specifically to those
+  perks and don't count toward your server's level progression. Similarly,
+  Boosts allocated to your server level can't be used for additional perks.
+  You'll need separate Boosts for each - so if you want Enhanced Role Styles,
+  you need 3 Boosts just for that perk, plus whatever Boosts you want to
+  maintain your current server level.
+</p>
+<p>
+  <strong
+    >Q: What happens to my additional perks if my server loses Boosts?</strong
+  >
+</p>
+<p>
+  A: Perks require ongoing Boost allocation to remain active. If your server
+  drops below the required number of Boosts for a perk, that perk will be
+  disabled. Enhanced Role Styles will revert to solid colors, and Server Tags
+  will be removed from members' profiles. Server owners/admins can choose which
+  perks to maintain if Boost counts drop.
+</p>
+<p>
+  <strong>Q: Why can't I unlock perks even though I have enough Boosts?</strong>
+</p>
+<p>
+  A: Make sure you're accessing the Server Boost tab (visible only to server
+  owners/admins) and that your Boosts are "available" rather than already
+  allocated to your server level. Only server members with admin permissions can
+  unlock additional perks. You need to have enough unallocated Boosts to enable
+  additional perks. 
+</p>
+<p>
+  <strong
+    >Q: I just added 3 Boosts to my server for an additional perk, but I can't
+    enable it. Why aren't my Boosts available?</strong
+  >
+  <br />A: When you add new Boosts to your server, they're automatically applied
+  toward server levels whenever you have enough for the next level. This means
+  your Boosts might have triggered an automatic level upgrade, making them
+  unavailable for additional perks. To free up those Boosts for additional
+  perks, you'll need to disable the level.
+</p>
+<p>
+  <strong
+    >Q: Can I move Boosts between levels and perks after I've allocated
+    them?</strong
+  >
+</p>
+<p>
+  A: Yes, server owners and admins can reallocate Boosts between server levels
+  and additional perks through the Server Boosts tab. However, if you move
+  Boosts away from a perk, that perk will be disabled until you allocate enough
+  Boosts back to it.
+</p>
+<p>
+  <strong
+    >Q: Are additional perks a one-time purchase, or do they require ongoing
+    Boosts?</strong
+  >
+</p>
+<p>
+  A: Each additional perk requires an ongoing allocation of its required Boosts
+  to stay active, just like levels. If your server drops below the required
+  number of Boosts, the perk will be disabled until the necessary Boosts are
+  reallocated.
+</p>
+<p>
+  <strong
+    >Q: Can I purchase and manage additional perks from both desktop and
+    mobile?</strong
+  >
+</p>
+<p>
+  <strong>A:</strong> Additional perks can currently only be
+  <strong>purchased and configured on desktop</strong>.
 </p>
