@@ -28,6 +28,31 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: 28 Years Later Trailer<br /></strong
+  ><strong>Quest Name: 28 Years Later Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    28 Years Later Trailer</strong
+  >
+  in Discord to receive <strong>28 Years Later Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users that are +18 in the
+  <strong>United States</strong> where <strong>Discord</strong> is available on
+  desktop. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>28 Years Later Quest </strong>can be accepted on Discord desktop
+  app or browser client from <strong>June 16, 2025 </strong>until<strong>
+    June 22, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 22, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>28 Years Later Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 22, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: World of Tanks Blitz Trailer<br /></strong
   ><strong>Quest Name: World of Tanks Blitz Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>
