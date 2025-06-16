@@ -87,11 +87,11 @@
   ><span style="color: #434343">! </span>
   <p>
     <span style="color: #434343"
-      >This special offer will roll out starting </span
-    ><strong><span style="color: #434343">June 12, 2025</span></strong
-    ><span style="color: #434343"> and run through </span
-    ><strong><span style="color: #434343">June 20, 2025</span></strong
-    ><span style="color: #434343"> for eligible users. </span
+      >This special offer will roll out starting
+      <strong>June 10, 2025</strong> to a small percentage of users, with full
+      launch on <strong>June 12th</strong>. We've extended this promotion
+      through the weekend due to popular demand. Offer will now end on
+      <strong>June 23, 2025!</strong> </span
     ><span class="wysiwyg-underline" style="color: #434343"
       >Look for the promotion banner before making your purchase.</span
     ><span style="color: #434343"> </span>

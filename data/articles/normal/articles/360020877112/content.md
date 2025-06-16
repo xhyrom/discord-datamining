@@ -67,9 +67,9 @@
   ><span style="color: #434343">
     to a small percentage of users, with full launch on </span
   ><strong><span style="color: #434343">June 12th</span></strong
-  ><span style="color: #434343">. The offer will run through </span
-  ><strong><span style="color: #434343">June 20, 2025</span></strong
-  ><span style="color: #434343"> for eligible users. </span
+  ><span style="color: #434343"
+    >. We've extended this promotion through the weekend due to popular demand.
+    Offer will now end on <strong>June 23, 2025!</strong> </span
   ><span style="color: #434343"
     ><span class="wysiwyg-underline"
       >Look for the promotion banner before making your purchase.</span
