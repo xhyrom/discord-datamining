@@ -28,6 +28,30 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Dead by Daylight<br /></strong
+  ><strong>Quest Name: Dead by Daylight x FNAF Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Dead by Daylight </strong>to receive a
+  <strong>Springtrap profile banner</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players that are 18+ on PC and console, where
+  <strong>Discord</strong> and <strong>Dead by Daylight </strong>are available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Dead by Daylight x FNAF Quest </strong>can be accepted on
+  <strong>PC </strong>and<strong> console</strong> from
+  <strong>June 17, 2025 </strong>until<strong>
+    June 24, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 24, 2025 (11:59PM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: 28 Years Later Trailer<br /></strong
   ><strong>Quest Name: 28 Years Later Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>

@@ -43,88 +43,91 @@
     >Keep reading below to learn how to get started!</span
   >
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: <br /></strong
-  ></span>
-</p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self"
-      >How to Connect My Account for PlayStation Network from Discord</a
-    >
-    <ul>
-      <li style="font-weight: 400" aria-level="1">
-        <a href="#h_01GR8PF2VH9BS8CFKBHNHBTQ2G" target="_self"
-          >How Do I Remove the Connection from My Account?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GR8PFBW9PFTVBATEGV20Z916" target="_self"
-      >How to Display Connection &amp; Game Activity on My Profile</a
-    >
-    <ul>
-      <li style="font-weight: 400" aria-level="2">
-        <a href="#h_01GR8PFXHG2Y6T34TD64VZ0S47" target="_self"
-          >Display on User Profile</a
-        >
-      </li>
-      <li style="font-weight: 400" aria-level="2">
-        <a href="#h_01GR8PGFSE731F5WRTYE5WCEPB" target="_self"
-          >Display PlayStation Network as Your status</a
-        >
-      </li>
-      <li style="font-weight: 400" aria-level="2">
-        <a href="#h_01GR8PGRY8J6BGTDEW0W1RVM3J" target="_self"
-          >Why isn't my PlayStation Network status displaying on Discord?</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J049N7BER15B39GYQZN0GKE0"
-      >How to Join your Discord Voice Chat on Your PS5</a
-    >
-    <ul>
-      <li><a href="#h_01J049NE2A0N2GDWPWTGQM4T4M">On PS5 Console</a></li>
-      <li><a href="#h_01J049S60CM4HB11T9V1WK9PY0">On Discord mobile app</a></li>
-      <li>
-        <a href="#h_01J049S60CKGSQNEQY6XZMZP52"
-          >On Discord Desktop/Browser client</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01J1TXNAT4RFSX9R7HQ30MHFCC"
-      >How to Complete Discord Quests on Your PlayStation</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01J1TXQ49RPB0RJDBVK4HV28VS"
-          >Verify Your Privacy Settings via PlayStation Website</a
-        >
-      </li>
-      <li>
-        <a href="#h_01J1TXTBG0SA4NDB7B7B00YQVV"
-          >Verify Your Privacy Settings on PS4 Console</a
-        >
-      </li>
-      <li>
-        <a href="#h_01J1TXXFSZPMPA9T3JTNH838SY"
-          >Verify Your Privacy Settings on PS5 Console</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <a href="#h_01GR8PJV4MXFH1FAXQRETQXJ25" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2" target="_self"
+        >How to Connect My Account for PlayStation Network from Discord</a
+      >
+      <ul>
+        <li style="font-weight: 400" aria-level="1">
+          <a href="#h_01GR8PF2VH9BS8CFKBHNHBTQ2G" target="_self"
+            >How Do I Remove the Connection from My Account?</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GR8PFBW9PFTVBATEGV20Z916" target="_self"
+        >How to Display Connection &amp; Game Activity on My Profile</a
+      >
+      <ul>
+        <li style="font-weight: 400" aria-level="2">
+          <a href="#h_01GR8PFXHG2Y6T34TD64VZ0S47" target="_self"
+            >Display on User Profile</a
+          >
+        </li>
+        <li style="font-weight: 400" aria-level="2">
+          <a href="#h_01GR8PGFSE731F5WRTYE5WCEPB" target="_self"
+            >Display PlayStation Network as Your status</a
+          >
+        </li>
+        <li style="font-weight: 400" aria-level="2">
+          <a href="#h_01GR8PGRY8J6BGTDEW0W1RVM3J" target="_self"
+            >Why isn't my PlayStation Network status displaying on Discord?</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J049N7BER15B39GYQZN0GKE0"
+        >How to Voice Chat with Discord on PS5 Consoles</a
+      >
+      <ul>
+        <li><a href="#h_01J049NE2A0N2GDWPWTGQM4T4M">On PS5 Console</a></li>
+        <li>
+          <a href="#h_01J049S60CM4HB11T9V1WK9PY0">On Discord mobile app</a>
+        </li>
+        <li>
+          <a href="#h_01J049S60CKGSQNEQY6XZMZP52"
+            >On Discord Desktop/Browser client</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01J1TXNAT4RFSX9R7HQ30MHFCC"
+        >How to Complete Discord Quests on Your PlayStation</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01J1TXQ49RPB0RJDBVK4HV28VS"
+            >Verify Your Privacy Settings via PlayStation Website</a
+          >
+        </li>
+        <li>
+          <a href="#h_01J1TXTBG0SA4NDB7B7B00YQVV"
+            >Verify Your Privacy Settings on PS4 Console</a
+          >
+        </li>
+        <li>
+          <a href="#h_01J1TXXFSZPMPA9T3JTNH838SY"
+            >Verify Your Privacy Settings on PS5 Console</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li style="font-weight: 400" aria-level="1">
+      <a href="#h_01GR8PJV4MXFH1FAXQRETQXJ25" target="_self"
+        >Frequently Asked Questions</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GR8PBN8T469XJ2V0EV5G15P2">
   <strong
     >How to Connect My Account for PlayStation Network from Discord</strong
@@ -161,11 +164,16 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585601119767"
-    width="624"
-    height="533"
-  /> 
+    src="https://support.discord.com/hc/article_attachments/32871548707863"
+    width="702"
+    height="445"
+  />
 </p>
+<h4 id="h_01JXZ6FF6Z6KWW3TD1BRFPPKZN" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Connections tab
+  </span>
+</h4>
 <p>
   In the <strong>Connections tab</strong>, press the
   <strong>PlayStation Network icon </strong>and a new browser window will appear
@@ -178,6 +186,11 @@
     height="444"
   />
 </p>
+<h4 id="h_01JXZ6G14ATDWH6C2S8HEEV9JH" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Sign in to PlayStation</span
+  >
+</h4>
 <p>
   Sign in to your account on PlayStation Network with your credentials on the
   login page and when everything has been authorized, you’ll see a message
@@ -186,11 +199,17 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585601146519"
+    src="https://support.discord.com/hc/article_attachments/32871548711191"
     width="524"
     height="326"
   />
 </p>
+<h4 id="h_01JXZ6GMHM5CQEW8EJ57G4BVVJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Confirmation of successfully connected PlayStation account to your Discord
+    account</span
+  >
+</h4>
 <h2 id="h_01GR8PF2VH9BS8CFKBHNHBTQ2G">
   <strong>How Do I Remove the Connection from My Account?</strong>
 </h2>
@@ -218,11 +237,20 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585601150103"
+    src="https://support.discord.com/hc/article_attachments/32871548718487"
     width="624"
-    height="533"
+    height="401"
   />
 </p>
+<h4 id="h_01JXZ6HA6TRB26W3FTW0JQE16N" class="wysiwyg-text-align-center">
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >X</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color="">
+    button to remove a connection</span
+  >
+</h4>
 <h1 id="h_01GR8PFBW9PFTVBATEGV20Z916">
   <strong>How to Display Connection &amp; Game Activity on My Profile</strong>
 </h1>
@@ -238,11 +266,16 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585632119319"
+    src="https://support.discord.com/hc/article_attachments/32871593850647"
     width="624"
-    height="379"
+    height="401"
   />
 </p>
+<h4 id="h_01JXZ6HN3WKJHFJPC710D60RAA" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of PlayStation connection under Connections tab</span
+  >
+</h4>
 <h2 id="h_01GR8PFXHG2Y6T34TD64VZ0S47">
   <strong>Display on User Profile</strong>
 </h2>
@@ -253,11 +286,16 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585601164439"
-    width="528"
-    height="569"
+    src="https://support.discord.com/hc/article_attachments/32871548722327"
+    width="522"
+    height="675"
   />
 </p>
+<h4 id="h_01JXZ6J0H8V9N391JZ2X4D20AP" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Discord user profile showing PlayStation connection</span
+  >
+</h4>
 <h2 id="h_01GR8PGFSE731F5WRTYE5WCEPB">
   <strong>Display PlayStation Network as your status</strong>
 </h2>
@@ -272,15 +310,16 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19585601171863"
-    width="445"
-    height="768"
-  /><img
-    src="https://support.discord.com/hc/article_attachments/19585601177623"
-    width="478"
-    height="515"
+    src="https://support.discord.com/hc/article_attachments/32871593855127"
+    width="290"
+    height="401"
   />
 </p>
+<h4 id="h_01JXZ6JQS0G7BW0XBPSPM0HXSK" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >User profile showing PlayStation game activity</span
+  >
+</h4>
 <h2 id="h_01GR8PGRY8J6BGTDEW0W1RVM3J">
   <strong
     >Why isn't my PlayStation Network status displaying on Discord?</strong
@@ -306,11 +345,14 @@
       alt="Discord_HC_PS4_1.jpg"
   /></strong>
 </p>
-<p>
-  2. For PS4: Press &lt;&gt;<strong>Profile</strong>&gt;<strong
-    >Change Privacy Settings</strong
+<h4 id="h_01JXZ6MBR26T3AEDDR0K4BBQGD" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >PlayStation profile</span
   >
-  page. &lt;/&gt;
+</h4>
+<p>
+  2. For PS4: Press <strong>Profile </strong>&gt;
+  <strong>Change Privacy Settings</strong> page. 
 </p>
 <p>
   <span style="font-weight: 400"
@@ -319,6 +361,13 @@
       alt="Discord_HC_PS4_2.jpg"
   /></span>
 </p>
+<h4 id="h_01JXZ6MR1YEVJFCX8EDHPM1JVC" class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Privacy settings on PS4</span
+    ></span
+  >
+</h4>
 <p>
   <span style="font-weight: 400">3. Open up </span
   ><strong>Privacy Settings </strong
@@ -332,6 +381,11 @@
       alt="Discord_HC_PS4_3.jpg"
   /></strong>
 </p>
+<h4 id="h_01JXZ6N3SNPQ3A49PFNMB37P0Q" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Personal Info | Messaging on PlayStation</span
+  >
+</h4>
 <p>
   <span style="font-weight: 400">4. Expand </span
   ><strong>Online Status and Now Playing</strong
@@ -345,6 +399,13 @@
       alt="Discord_HC_PS4_4.jpg"
   /></span>
 </p>
+<h4 id="h_01JXZ6NQ834QC6CVWSBPQ0H5CZ" class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Online Status and Now Playing setting on PlayStation</span
+    ></span
+  >
+</h4>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
@@ -352,6 +413,13 @@
       alt="Discord_HC_PS4_5.jpg"
   /></strong>
 </p>
+<h4 id="h_01JXZ6NYJPHCF6BB387NJ9EYZ9" class="wysiwyg-text-align-center">
+  <span style="font-weight: 400"
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Setting options for Online Status and Now Playing</span
+    ></span
+  >
+</h4>
 <p>
   <span style="font-weight: 400"
     >5. Go back to your Discord client and refresh to see if the issue
@@ -377,6 +445,11 @@
         height="351" /></span
   ></strong>
 </p>
+<h4 id="h_01JXZ6PATMB2WH0MB4P9QSKAR2" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >PS4 Settings</span
+  >
+</h4>
 <p
   id="docs-internal-guid-91a3ebe4-7fff-f5ba-de17-60ac09e76119"
   class="wysiwyg-text-align-center"
@@ -393,6 +466,11 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JXZ6Q5QATCPWP72ATNQSGVD3" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >PS5 View and Customize Your Privacy Settings</span
+  >
+</h4>
 <p id="docs-internal-guid-8851a15f-7fff-716e-26f8-e0916ccb57bf">
   4. Under the
   <strong
@@ -409,11 +487,16 @@
       height="351"
   /></span>
 </p>
+<h4 id="h_01JXZ6QEXBDMC878D860M377XW" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >PS5 privacy settings</span
+  >
+</h4>
 <p id="docs-internal-guid-8291437d-7fff-cbf3-ba73-7c1f06c7cec2">
   5. Go back to your Discord client and refresh to see if the issue persists.
 </p>
 <h1 id="h_01J049N7BER15B39GYQZN0GKE0">
-  How to Join your Discord Voice Chat on your PS5
+  How to Voice Chat with Discord on PS5 Consoles
 </h1>
 <h2 id="h_01J049NE2A0N2GDWPWTGQM4T4M"><strong>On PS5 console</strong></h2>
 <div class="info-box">
@@ -437,6 +520,11 @@
     height="478"
   />
 </p>
+<h4 id="h_01JXZ6RCJ6XDAMWQ3HJK3E22TK" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Discord tab on PlayStation</span
+  >
+</h4>
 <p>4. Choose a voice channel in a server or group message to join. </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -447,6 +535,13 @@
     ><strong><br /></strong
   ></span>
 </p>
+<h4 id="h_01JXZ6RNCNHCGSA19KVP5EQSNW" class="wysiwyg-text-align-center">
+  <span class="wysiwyg-font-size-large"
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Voice channels on PlayStation</span
+    ></span
+  >
+</h4>
 <p>
   5. After selecting the correct voice channel, tap on <strong>Join</strong> to
   join through your PS5.
@@ -458,6 +553,11 @@
     height="546"
   />
 </p>
+<h4 id="h_01JXZ6RXAQWY1MSHGYV6T0TWXJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Join button while on PlayStation</span
+  >
+</h4>
 <h2 id="h_01J049S60CM4HB11T9V1WK9PY0">
   <strong>On Discord Mobile app</strong>
 </h2>
@@ -475,12 +575,18 @@
   <strong>Join on PlayStation</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/24112279317015"
-    width="235"
-    height="508"
-  />
+  <span style="color: #666666" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32871593885079"
+      width="411"
+      height="890"
+  /></span>
 </p>
+<h4 id="h_01JXZ6S5W9SHBE8P4T69CMYP5W" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Transfer to PlayStation on mobile</span
+  >
+</h4>
 <p>
   3. Within the app, a pop-up will appear that will allow you to choose the PS5
   console associated with your account for PlayStation Network connected to your
@@ -507,25 +613,34 @@
 </div>
 <p>
   1. Ensure that your Discord account is connected to your account for
-  PlayStation Network by following the steps in the
-  <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2"
-    >How to Connect My PlayStation Network Account from Discord</a
-  >
-  section above. 
+  PlayStation Network by following the steps in the How to Connect My
+  PlayStation Network Account from Discord section above. 
 </p>
 <p>
   2. Join the desired voice channel on your Discord desktop client. Then, in the
-  focused voice channel view, press on <strong>Transfer to Console</strong>,
-  which looks like a phone + game controller icon, in the bottom left corner.
-  You may also right click on the voice channel name.
+  focused voice channel view, press on the <strong>ellipses</strong>
+</p>
+<p>
+  [
+  <img
+    src="https://support.discord.com/hc/article_attachments/32871548760983"
+    width="28"
+    height="12"
+  />]  and then <strong>Transfer Voice to PlayStation</strong>. You may also
+  right click on the voice channel name.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24112279326103"
+    src="https://support.discord.com/hc/article_attachments/32871593888279"
     width="624"
-    height="263"
+    height="421"
   />
 </p>
+<h4 id="h_01JXZ6TMYJKBEN7F32D18SXB3Y" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Transfer to PlayStation on desktop/browser app</span
+  >
+</h4>
 <p>3. Select <strong>Transfer to PlayStation</strong>.</p>
 <p>
   4. The <strong>Transfer Voice to PlayStation </strong>pop-up will appear that
@@ -618,9 +733,18 @@
   >
   to “<strong>Anyone</strong>”.
 </p>
-<h1 id="h_01GR8PJV4MXFH1FAXQRETQXJ25">
-  <strong>Frequently Asked Questions</strong>
+<h1 id="h_01JXZ6YQ42SVDP4HVTVBDYFRK1">
+  <strong>Frequently Asked Questions<br /></strong>
 </h1>
+<p><strong>Q: How do I get Discord on PlayStation? </strong></p>
+<p>
+  A: Discord isn't a standalone app on PlayStation. Instead, you can connect
+  your Discord and PlayStation accounts to display your gaming activity on
+  Discord and use Discord voice chat on your PlayStation console. You'll need
+  both the Discord mobile app and PlayStation mobile app to set this up. Follow
+  the <a href="#h_01GR8PBN8T469XJ2V0EV5G15P2">connection instructions</a> above
+  to get started.
+</p>
 <p>
   <strong
     >Q: Is the Discord activity status feature available for child accounts on
