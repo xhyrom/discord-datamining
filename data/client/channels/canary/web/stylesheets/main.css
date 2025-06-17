@@ -21692,18 +21692,20 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   flex-direction: row;
   gap: var(--spacing-4);
 }
+@value navTabHeight: 34px;
 .addEmojiButton__08434 {
+  height: 34px;
   margin-left: auto;
 }
 .emojiStudioActive__08434 {
-  grid-template-rows: 32px auto;
+  grid-template-rows: 34px auto;
   grid-row-gap: 12px;
 }
 .emojiStudioActive__08434.contentWrapper__08434 {
   border-radius: var(--radius-lg);
 }
 .emojiStudioActive__08434 .navItem__08434 {
-  line-height: 32px;
+  line-height: 34px;
   padding: 0 12px;
 }
 .emojiStudioActive__08434 .navItem__08434 + .navItem__08434 {
@@ -62509,4 +62511,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fc73da7de4c0ef18.css.map*/
+/*# sourceMappingURL=12633.284aef8e9a8560e9.css.map*/
