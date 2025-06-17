@@ -23588,6 +23588,37 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   right: -75px;
   top: -120px;
 }
+.body_ceece4 {
+  margin: var(--spacing-16) 0;
+  padding: 0 4px;
+}
+.addressElementContainer_ceece4 {
+  flex-direction: column;
+}
+.visible_ceece4 {
+  transform: translateX(0);
+}
+.full-motion .visible_ceece4 {
+  transition: transform 0.4s ease-out;
+}
+.hidden_ceece4 {
+  height: 0;
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+.full-motion .hidden_ceece4 {
+  transition: transform 0.4s ease-out;
+}
+.cardElementContainer_ceece4.visible_ceece4 {
+  height: 236px;
+}
+.addressElementContainer_ceece4.visible_ceece4 {
+  min-height: 500px;
+}
+.addressElementContainer_ceece4.hidden_ceece4 {
+  height: 0;
+  min-height: 0;
+}
 .shaker_e5f3a9 {
   align-items: center;
   display: flex;
@@ -62512,4 +62543,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5bd57d35453de7d1.css.map*/
+/*# sourceMappingURL=12633.fab1f5f59dc8adb9.css.map*/
