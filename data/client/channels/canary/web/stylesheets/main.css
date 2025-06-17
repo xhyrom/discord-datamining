@@ -44196,6 +44196,7 @@ html.disable-forced-colors * {
 }
 .addColorButtonText_b29565 {
   color: var(--text-brand);
+  text-transform: capitalize;
 }
 .gradientBar_b29565 {
   border-radius: 8px;
@@ -62483,4 +62484,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9aa7341c68b30d0d.css.map*/
+/*# sourceMappingURL=12633.7c30a3143551484d.css.map*/
