@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8038557002](https://discord.com/jobs/8038557002)
 
-**Updated At:** Mon, 16 Jun 2025 22:15:38 GMT
+**Updated At:** Tue, 17 Jun 2025 20:36:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma Counties), or be willing to relocate to the San Francisco Bay Area.
@@ -19,7 +19,7 @@ If you’re a self-starter and team player that excels in a fast paced environme
 What You'll Be Doing
 
 Develop and execute GTM strategies tailored to the M&amp;amp;E vertical, including market analysis, competitive positioning, and targeted campaigns to increase awareness, understanding, and adoption of our products and features.
-Lead targeted activation initiatives within the M&amp;amp;E vertical), customizing messaging and tactics to address unique customer needs and market dynamics.
+Lead targeted activation initiatives within the M&amp;amp;E vertical, customizing messaging and tactics to address unique customer needs and market dynamics.
 Design and implement impactful sales enablement programs, including training, content development, and resource optimization, to empower the sales team to effectively communicate value propositions and accelerate product adoption.
 Identify and implement new processes and workflows to improve GTM efficiency and effectiveness.
 Serve as the voice of the customer, collaborating closely with PMM and the Product organization to provide actionable insights and inform roadmap prioritization.
