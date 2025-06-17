@@ -6,7 +6,7 @@
       >@m.discord.com</span
     ></strong
   ><span style="color: #1e1e1e; background-color: #ffffff">
-    - it is safe to trust the message and open this email. </span
+    - it is safe to trust the message and open this email.  </span
   >
 </p>
 <p>
