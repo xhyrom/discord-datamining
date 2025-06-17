@@ -45266,6 +45266,7 @@ html.disable-forced-colors * {
   --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
   --app-background-frame: var(--neutral-78);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --app-message-embed-secondary-text: hsl(var(--white-hsl) / 0.7);
   --autocomplete-bg: var(--neutral-64);
   --background-accent: var(--primary-530);
   --background-base-low: var(--neutral-66);
@@ -45989,6 +45990,12 @@ html.disable-forced-colors * {
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-border-color-amount, var(--theme-base-color-amount, 0%))
+    );
+    --app-message-embed-secondary-text: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.7) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
+        var(--theme-text-color-amount, 0%)
     );
     --autocomplete-bg: color-mix(
       in oklab,
@@ -48191,6 +48198,7 @@ html.disable-forced-colors * {
   --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
   --app-background-frame: var(--neutral-7);
   --app-border-frame: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+  --app-message-embed-secondary-text: hsl(var(--white-hsl) / 0.7);
   --autocomplete-bg: var(--neutral-1);
   --background-accent: var(--primary-430);
   --background-base-low: var(--neutral-2);
@@ -48892,6 +48900,12 @@ html.disable-forced-colors * {
       hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
         var(--theme-border-color-amount, var(--theme-base-color-amount, 0%))
+    );
+    --app-message-embed-secondary-text: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.7) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
+        var(--theme-text-color-amount, 0%)
     );
     --autocomplete-bg: color-mix(
       in oklab,
@@ -51094,6 +51108,7 @@ html.disable-forced-colors * {
   --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
   --app-background-frame: var(--neutral-100);
   --app-border-frame: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+  --app-message-embed-secondary-text: hsl(var(--white-hsl) / 0.7);
   --autocomplete-bg: var(--neutral-91);
   --background-accent: var(--plum-17);
   --background-base-low: var(--neutral-95);
@@ -51827,6 +51842,12 @@ html.disable-forced-colors * {
       hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--theme-border-color-amount, var(--theme-base-color-amount, 0%))
+    );
+    --app-message-embed-secondary-text: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.7) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
+        var(--theme-text-color-amount, 0%)
     );
     --autocomplete-bg: color-mix(
       in oklab,
@@ -54032,6 +54053,7 @@ html.disable-forced-colors * {
   --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
   --app-background-frame: var(--neutral-97);
   --app-border-frame: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --app-message-embed-secondary-text: hsl(var(--white-hsl) / 0.7);
   --autocomplete-bg: var(--neutral-79);
   --background-accent: var(--plum-15);
   --background-base-low: var(--neutral-82);
@@ -54755,6 +54777,12 @@ html.disable-forced-colors * {
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--theme-border-color-amount, var(--theme-base-color-amount, 0%))
+    );
+    --app-message-embed-secondary-text: color-mix(
+      in oklab,
+      hsl(var(--white-hsl) / 0.7) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7)
+        var(--theme-text-color-amount, 0%)
     );
     --autocomplete-bg: color-mix(
       in oklab,
@@ -62484,4 +62512,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7c30a3143551484d.css.map*/
+/*# sourceMappingURL=12633.5bd57d35453de7d1.css.map*/
