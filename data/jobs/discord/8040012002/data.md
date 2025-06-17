@@ -1,6 +1,6 @@
 # Job Listing
 
-## Group Product Marketing Manager, Shops
+## Group Product Marketing Manager, Shop
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8040012002](https://discord.com/jobs/8040012002)
 
-**Updated At:** Tue, 17 Jun 2025 15:51:32 GMT
+**Updated At:** Tue, 17 Jun 2025 17:27:36 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Nap, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma Counties), or be willing to relocate to the San Francisco Bay Area.
@@ -27,7 +27,7 @@ Manage and grow a small but mighty team of marketers
 
 What you should have
 
-+8 years of marketing experience in online retail, ecommerce, gaming merchandising.
++8 years of marketing experience in online retail, e-commerce, gaming merchandising.
 Strong operations and project management skills.&amp;nbsp;
 Excel in ambiguous environments - excited about finding solutions to complex problems
 Experience in the gaming industry
