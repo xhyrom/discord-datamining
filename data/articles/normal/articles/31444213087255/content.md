@@ -29,11 +29,6 @@
     </li>
   </ul>
 </div>
-<div class="exp-box">
-  <strong>Info:</strong> As of 6/16/25 we’re gradually rolling this feature out
-  to all servers. You’ll receive a notification in your server once this feature
-  becomes available in your server.
-</div>
 <h1 id="h_01JT6W75AN16FJWVZ7M2EQMGE9">What are Enhanced Role Styles?</h1>
 <p class="wysiwyg-text-align-center">
   <img
@@ -321,7 +316,7 @@
   >
 </p>
 <p>
-  A: additional perks are new features you can unlock directly with Boosts,
+  A: Additional perks are new features you can unlock directly with Boosts,
   separate from your server's Boost Level. Currently, there are two available:
   Enhanced Role Styles (which add gradient and holographic effects to roles) and
   Server Tags (4-character identifiers members can display on their profiles
