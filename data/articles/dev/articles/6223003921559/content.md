@@ -1,58 +1,200 @@
-<p>So your bot is getting hit with a rate limit error code.</p>
-<h3>API Rate Limits</h3>
 <p>
-  If a rate limit is exceeded (currently, 50 requests per second), the API will
-  return a HTTP 429 response code. The limit for invalid requests is currently
-  10,000 per 10 minutes. However, if your bot gets temporarily CloudFlare banned
-  from the API, it is most likely <strong>not</strong> a global rate limit issue
-  and is more likely a spike in errors that were not properly handled.
+  If your bot is encountering rate limit errors, don't worry—this is a common
+  challenge that can be resolved with the right approach. This article will help
+  you understand Discord's rate-limiting system and provide practical solutions.
 </p>
+<h2 id="h_01JY29F3YPMXHFZ23DXKDMSRY1">Content</h2>
 <p>
-  First thing we want to note is that
-  <strong
-    >we, under very few circumstances, raise the global rate limit on
-    applications</strong
-  >. The good news is there are available workarounds that we encourage
-  developers to look into when building their apps.
+  <a href="#h_01JY29F3YPG9CQMDVR84KAYF6D"
+    >Understanding Discord's Rate Limit Types</a
+  >
 </p>
+<p>    <a href="#h_01JY29F3YPJXMAZ5N4MC19HW1N">Global Rate Limits</a></p>
+<p>    <a href="#h_01JY29F3YPZT91B3X4FNQ6AGCB">Per-Route Rate Limits</a></p>
 <p>
-  We also want to mention that interaction endpoints are not bound to the rate
-  limit. So migrating functionality to application commands where possible could
-  be another solution. Definitely take a look at our docs on that
-  <a
-    href="https://discord.com/developers/docs/interactions/application-commands"
-    >here</a
-  >, or documentation for the library of your choice.
+      <a href="#h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</a>
 </p>
-<h2>Gateway Rate Limits</h2>
+<p>    <a href="#h_01JY29F3YPHEFEQSH1AGCE66TH">Invalid Request Limits</a></p>
 <p>
-  To send data to/from Discord, your application connects to a websocket.
-  <strong>Sharding</strong> is generally a best practice for applications
-  especially as they continue to grow and scale on Discord. It’s a sure-fire way
-  of working not quite around.. but within our API rate limits. Sharding opens
-  multiple websockets so data can be exchanged across all of these connections
-  rather than overloading one.
-</p>
-<pre><code class="language-jsx">shard_id = (guild_id &gt;&gt; 22) % num_shards
-</code></pre>
-<p>
-  Traffic from guilds/servers will be routed to a shard (open websocket) and
-  their requests will run in parallel to each other to stay under the global
-  rate limit. Think of sharding as splitting your bot into multiple instances of
-  itself. It’s entirely user-controlled and is only made simpler by your library
-  of choice!
-</p>
-<p>
-  With regard to <em>large bot sharding</em> and an increased global rate limit,
-  these are services we can only offer to bots that are operating in 150,000
-  servers or more. You can learn more about how these requests work in our
-  documentation: <a
-    href="https://discord.com/developers/docs/topics/gateway#sharding-for-very-large-bots"
-    >https://discord.com/developers/docs/topics/gateway#sharding-for-very-large-bots</a
+  <a href="#h_01JY29F3YPQYYQXCDW7H3PCHV9"
+    >How to Identify Your Rate Limit Issue</a
   >
 </p>
 <p>
-  You can read more about how to fine tune and configure shards
-  <a href="https://discord.com/developers/docs/topics/gateway#sharding">here</a
+  <a href="#h_01JY29F3YPR3YQ7G8XZQFB2YPC"
+    >Best Practices for Handling Rate Limits</a
+  >
+</p>
+<p><a href="#h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</a></p>
+<p>
+  <a href="#h_01JY29F3YPHEVS66T9GW4X7078"
+    >Gateway Considerations and Sharding</a
+  >
+</p>
+<h2 id="h_01JY29F3YPG9CQMDVR84KAYF6D">
+  Understanding Discord's Rate Limit Types
+</h2>
+<p>
+  Discord uses multiple types of rate limiting to protect the API. Identifying
+  which type you're encountering is crucial for finding the right solution:
+</p>
+<h3 id="h_01JY29F3YPJXMAZ5N4MC19HW1N">Global Rate Limits</h3>
+<p><strong>Limit</strong>: 50 requests per second across most endpoints</p>
+<p><strong>Scope</strong>: Applies to your entire application</p>
+<p>
+  <strong>Identification</strong>: Look for
+  <code>X-RateLimit-Scope: global</code> in response headers
+</p>
+<h3 id="h_01JY29F3YPZT91B3X4FNQ6AGCB">Per-Route Rate Limits</h3>
+<p><strong>Limit</strong>: Varies by endpoint</p>
+<p><strong>Scope</strong>: Specific to individual API routes</p>
+<p>
+  <strong>Identification</strong>: Check for
+  <code>X-RateLimit-Scope: user</code>
+</p>
+<h3 id="h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</h3>
+<h4 id="h_01JY29P3H18ERMB01FZFPY7WJR">
+  Note: Resource-specific rate Limits can be reached by multiple sources (other
+  users, bots, webhooks, etc.) and may not indicate that your application is
+  solely responsible.
+</h4>
+<p>
+  <strong>Limit</strong>: Independent limits for specific guilds, channels, or
+  webhooks
+</p>
+<p><strong>Scope</strong>: Applies to actions on specific resources.</p>
+<p>
+  <strong>Identification</strong>: Look for
+  <code>X-RateLimit-Scope: shared</code> in headers
+</p>
+<h3 id="h_01JY29F3YPHEFEQSH1AGCE66TH">Invalid Request Limits</h3>
+<p><strong>Limit</strong>: 10,000 invalid requests per 10 minutes</p>
+<p>
+  <strong>Common Cause</strong>: Unhandled errors
+  (<strong>401</strong>, <strong>403</strong>, or <strong>429</strong>) causing
+  request spikes. Please note,
+  <em
+    >429 errors returned with <code>X-RateLimit-Scope: shared</code> are not
+    counted towards your invalid request limit.</em
+  >
+</p>
+<p><strong>Result:</strong> Temporary Cloudflare ban</p>
+<h2 id="h_01JY29F3YPQYYQXCDW7H3PCHV9">How to Identify Your Rate Limit Issue</h2>
+<p>
+  The most reliable way to determine which limit you're hitting is by examining
+  the HTTP response headers when you receive a 429 status code. Key headers to
+  check:
+</p>
+<p><code>X-RateLimit-Limit</code>: The rate limit ceiling for that endpoint</p>
+<p>
+  <code>X-RateLimit-Remaining</code>: Number of requests remaining in the
+  current window
+</p>
+<p>
+  <code>X-RateLimit-Reset</code>: When the rate limit window resets (Unix
+  timestamp)
+</p>
+<p><code>X-RateLimit-Reset-After</code>: Seconds until the limit resets</p>
+<p>
+  <code>X-RateLimit-Scope</code>: Indicates the type of rate limit (global,
+  user, or shared)
+</p>
+<p>
+  <code>retry_after</code>: Milliseconds to wait before making another request
+</p>
+<h2 id="h_01JY29F3YPR3YQ7G8XZQFB2YPC">
+  Best Practices for Handling Rate Limits
+</h2>
+<h3 id="h_01JY29F3YP8CN6HBHEQ6FMRJAP">Implement Proper Backoff Strategies</h3>
+<p>
+  Always respect the <code>retry_after</code> value in rate limit responses.
+  This tells you exactly how long to wait before retrying.
+</p>
+<h3 id="h_01JY29F3YPE9ZAR0AAEEQG8GAE">
+  Consider Using Interactions Where Possible
+</h3>
+<p>
+  <a
+    href="https://discord.com/developers/docs/interactions/application-commands"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Application commands</a
+  >
+  and
+  <a
+    href="https://discord.com/developers/docs/components/overview"
+    target="_blank"
+    rel="noopener noreferrer"
+    >message components</a
+  >
+  are an excellent alternative to prefix commands, which may prevent excessive
+  API requests and messages in channels.
+</p>
+<p>
+  Bonus tip: Make Interaction Responses and follow-up messages ephemeral since
+  they do not count towards the rate limits.
+</p>
+<h3 id="h_01JY29F3YPZ0CZ313HMYRVWXTK">Cache Data Effectively</h3>
+<p>Reduce API calls by caching frequently accessed data, like:</p>
+<ul>
+  <li>Guild information</li>
+  <li>Channel details</li>
+  <li>User profiles</li>
+  <li>Role data</li>
+</ul>
+<h3 id="h_01JY29F3YP5WYRF5FBNWA0M8DT">Use Request Throttling</h3>
+<p>
+  Throttling is a proactive approach to preventing rate limits by controlling
+  the pace of your requests before hitting the limit.
+</p>
+<p>
+  For example, if your bot needs to send welcome messages to 200 new members,
+  instead of sending all 200 messages immediately, place them in a queue that
+  releases 4 requests every 100 milliseconds. This maintains a steady rate of 40
+  requests per second, staying safely below the 50 request limit while ensuring
+  all messages are sent in about 5 seconds.
+</p>
+<h2 id="h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</h2>
+<p>
+  If you're hitting global rate limits, your program may have an underlying
+  issue that needs to be addressed.
+</p>
+<p>Here's how to optimize your code to stay within limits:</p>
+<ul>
+  <li>Implementing proper caching</li>
+  <li>Migrate to interaction-based features</li>
+</ul>
+<p>
+  If these solutions don't resolve your global rate limit issues, we encourage
+  you to reach out in the Discord Developer Server
+  <code>#api-help</code> channel or reach out to
+  <a
+    href="https://dis.gd/api-and-gateway"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Developer Support</a
   >.
 </p>
+<h2 id="h_01JY29F3YPHEVS66T9GW4X7078">Gateway Considerations and Sharding</h2>
+<p>
+  For bots handling real-time events through Discord's Gateway (websocket
+  connection), sharding is essential as your bot grows.
+</p>
+<h3 id="h_01JY29F3YPKDT2E08R6P20M5BJ">What is Sharding?</h3>
+<p>
+  Sharding splits your bot into multiple instances, each handling a subset of
+  guilds. This distributes the load across multiple websocket connections,
+  helping you stay within rate limits.
+</p>
+<p>
+  It's recommended to start planning for sharding implementation when
+  approaching 2,000 guilds, as sharding <strong>must</strong> be enabled at
+  2,500+ guilds. For optimal performance, follow the best practice of
+  maintaining approximately 1 shard per 1,000 guilds.
+</p>
+<p>
+  Remember, rate limits exist to ensure a stable experience for all Discord
+  users. By following these best practices, you can build a bot that scales
+  effectively while respecting these limits.
+</p>
+<p><!-- notionvc: 0702b028-bf66-450d-a141-059fb7712caf --></p>
