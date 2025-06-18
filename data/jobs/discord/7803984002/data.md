@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7803984002](https://discord.com/jobs/7803984002)
 
-**Updated At:** Thu, 12 Jun 2025 16:28:28 GMT
+**Updated At:** Wed, 18 Jun 2025 22:09:33 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Senior Staff Engineer to join our Client Platform &amp;amp; Performance team to help lead the technical vision for Discord's client experience across all platforms, with a special focus on mobile performance in 2025.
