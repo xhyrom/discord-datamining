@@ -445,7 +445,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 7,
+      "shelf_rank": 9,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -553,7 +553,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 12,
+      "shelf_rank": 14,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -658,7 +658,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 8,
+      "shelf_rank": 10,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -946,7 +946,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 25,
+      "shelf_rank": 26,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -1054,7 +1054,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 19,
+      "shelf_rank": 20,
       "has_csp_exception": true,
       "displays_advertisements": false
     },
@@ -1159,7 +1159,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 4,
+      "shelf_rank": 5,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -1344,7 +1344,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 16,
+      "shelf_rank": 17,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -1449,7 +1449,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 46,
+      "shelf_rank": 45,
       "has_csp_exception": true,
       "displays_advertisements": false
     },
@@ -1890,8 +1890,8 @@
     "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2048"
     },
@@ -1899,8 +1899,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2048"
         }
@@ -1951,7 +1951,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 18,
+      "shelf_rank": 19,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -3037,7 +3037,7 @@
           "omit_badge_from_surfaces": []
         }
       },
-      "shelf_rank": 50,
+      "shelf_rank": 49,
       "has_csp_exception": false,
       "displays_advertisements": false
     },
@@ -3407,8 +3407,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3507,8 +3507,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -3560,8 +3560,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -3615,8 +3615,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "268561430"
     },
@@ -3624,8 +3624,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "268561430"
         }
@@ -3666,7 +3666,7 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -3676,7 +3676,7 @@
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -3735,23 +3735,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -3760,8 +3745,23 @@
         "is_launcher": true
       },
       {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
@@ -3807,8 +3807,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147601472"
     },
@@ -3816,8 +3816,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2147601472"
         }
@@ -3853,14 +3853,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "262186",
-        "sku": "262186",
-        "distributor": "igdb"
-      },
-      {
         "id": "2507950",
         "sku": "2507950",
         "distributor": "steam"
+      },
+      {
+        "id": "262186",
+        "sku": "262186",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -3892,11 +3892,6 @@
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
@@ -3908,6 +3903,11 @@
       {
         "os": "win32",
         "name": "launcher/df_launcher_global.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -3967,13 +3967,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -4162,9 +4162,14 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4182,13 +4187,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
