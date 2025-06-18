@@ -257,14 +257,6 @@
   <li>Animated Server banner</li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
-<div class="exp-box">
-  <span style="color: #434343"
-    >Starting 6/16, we're gradually rolling out Server Tags and Enhanced Role
-    Styles as additional Boosted perks to all servers. You'll see a notification
-    in Discord when these features become available for your servers. To learn
-    more about additional perks, check out this section below.</span
-  >
-</div>
 <ul>
   <li>
     <strong>Server Tags (3 Boosts)</strong> - Give your members a custom
