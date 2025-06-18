@@ -28,6 +28,68 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: R.E.P.O.<br /></strong
+  ><strong>Quest Name: R.E.P.O. Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>R.E.P.O. </strong>to receive a
+  <strong>I Love R.E.P.O. Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players who have access to <strong>R.E.P.O. </strong>and<strong>
+    Discord </strong
+  >on desktop.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The <strong>R.E.P.O. Quest</strong> can
+  be accepted on <strong>desktop</strong> from
+  <strong>June 18, 2025</strong> until
+  <strong>June 24, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 24, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>I Love R.E.P.O. Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 24, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: LEGO® Fortnite Expeditions<br /></strong
+  ><strong>Quest Name: LEGO® Fortnite Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>LEGO® Fortnite Expeditions </strong>to receive a
+  <strong>LEGO® Fortnite Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players who have access to
+  <strong>LEGO® Fortnite Expeditions </strong>and<strong> Discord </strong>on
+  PC, PlayStation 4, PlayStation 5, and Xbox Series X/S.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The
+  <strong>LEGO® Fortnite Quest</strong> can be accepted on
+  <strong>PC, PlayStation 4, PlayStation 5, and Xbox Series X/S</strong> from
+  <strong>June 18, 2025</strong> until
+  <strong>June 22, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 22, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>LEGO® Fortnite Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 22, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Dead by Daylight<br /></strong
   ><strong>Quest Name: Dead by Daylight x FNAF Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
