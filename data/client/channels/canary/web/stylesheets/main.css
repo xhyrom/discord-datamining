@@ -22405,34 +22405,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
     transform: rotate(0deg);
   }
 }
-.fontSize12Padding__74017 {
-  padding-bottom: 14px;
-  padding-top: 14px;
-}
-.fontSize14Padding__74017 {
-  padding-bottom: 12px;
-  padding-top: 13px;
-}
-.fontSize15Padding__74017 {
-  padding-bottom: 12px;
-  padding-top: 12px;
-}
-.fontSize16Padding__74017 {
-  padding-bottom: 11px;
-  padding-top: 11px;
-}
-.fontSize18Padding__74017 {
-  padding-bottom: 9px;
-  padding-top: 9px;
-}
-.fontSize20Padding__74017 {
-  padding-bottom: 9px;
-  padding-top: 8px;
-}
-.fontSize24Padding__74017 {
-  padding-bottom: 6px;
-  padding-top: 5px;
-}
 .floatingBars__74017 {
   margin-bottom: -8px;
   min-height: 8px;
@@ -62546,4 +62518,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.72055b1680d07514.css.map*/
+/*# sourceMappingURL=12633.e579ff23dc1ed79c.css.map*/
