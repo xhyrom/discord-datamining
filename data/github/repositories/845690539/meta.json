@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/libdave",
   "created_at": "2024-08-21T18:30:24Z",
   "homepage": "https://daveprotocol.com",
-  "size": 150,
+  "size": 156,
   "language": "C++",
   "has_issues": true,
   "has_projects": false,
