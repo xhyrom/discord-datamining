@@ -17307,7 +17307,7 @@ span.clanTag__5d473 {
   top: 8px;
 }
 .labelRow__1fdc8 {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   gap: 4px;
 }
@@ -32842,6 +32842,9 @@ html:not(.visual-refresh-chat-input) .inputInner_b1f01d {
 }
 .content_ab8609.unclamped_ab8609 {
   -webkit-line-clamp: 9;
+}
+.singleLineTextClamp_ab8609 {
+  -webkit-line-clamp: 1;
 }
 .ring_ab8609 {
   border-radius: var(--radius-lg);
@@ -62543,4 +62546,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.fab1f5f59dc8adb9.css.map*/
+/*# sourceMappingURL=12633.72055b1680d07514.css.map*/
