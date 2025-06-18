@@ -5082,6 +5082,10 @@
           (r.SEARCH_INPUT_CLEARED = "search_input_cleared"),
           (r.SEARCH_RESULTS_FEEDBACK_SUBMITTED =
             "search_results_feedback_submitted"),
+          (r.SEARCH_RESULTS_FEEDBACK_MODAL_VIEWED =
+            "search_results_feedback_modal_viewed"),
+          (r.SEARCH_RESULTS_FEEDBACK_ENTRYPOINT_VIEWED =
+            "search_results_feedback_entrypoint_viewed"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
           (r.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -6213,6 +6217,7 @@
           (r.CAN_OPEN_URL_REQUESTED = "can_open_url_requested"),
           (r.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED =
             "moderator_report_original_message_link_clicked"),
+          (r.MODERATOR_QUEUE_ACTION = "moderator_queue_action"),
           (r.NOTIFICATIONS_INBOX_OPENED = "notifications_inbox_opened"),
           (r.NOTIFICATIONS_INBOX_ITEM_INTERACTED =
             "notifications_inbox_item_interacted"),
@@ -6806,7 +6811,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-06-17-9c7437b76c32efa3e8bf794f755469f3b75344a2-discord_web",
+              "2025-06-18-47190172cae712865d239ac522d4b72fafd2df37-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6872,8 +6877,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "410194"),
-            o.YA("builtAt", String("1750145226643"));
+            o.YA("buildNumber", "410706"),
+            o.YA("builtAt", String("1750231208382"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7034,6 +7039,13 @@
                 [r.LIGHT]: { raw: "BLACK", opacity: 0.12 },
                 [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.07 },
                 [r.DARKER]: { raw: "WHITE", opacity: 0.07 },
+              },
+              APP_MESSAGE_EMBED_SECONDARY_TEXT: {
+                category: "text",
+                [r.DARK]: { raw: "WHITE", opacity: 0.7 },
+                [r.LIGHT]: { raw: "WHITE", opacity: 0.7 },
+                [r.MIDNIGHT]: { raw: "WHITE", opacity: 0.7 },
+                [r.DARKER]: { raw: "WHITE", opacity: 0.7 },
               },
               BACKGROUND_ACCENT: {
                 category: "background",
@@ -15715,6 +15727,12 @@
             r.I.OPACITY_28,
             r.I.OPACITY_24,
             r.I.OPACITY_12,
+          ],
+          "app-message-embed-secondary-text": [
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
+            r.I.WHITE,
           ],
           "autocomplete-bg": [
             r.I.NEUTRAL_64,
@@ -48180,4 +48198,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.395064ce93b61e02.js.map
+//# sourceMappingURL=sentry.74793733e445fd5b.js.map
