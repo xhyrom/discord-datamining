@@ -1,8 +1,11 @@
 <p>
-  If you’d like to request ownership of a server, please read the information
-  below.
+  When a server owner steps away or becomes inactive on Discord, this can leave
+  their server without someone to look after it! When this happens, a server
+  member can request ownership transfer to help take care of the server and keep
+  things running smoothly for everyone! If you’d like to request ownership of a
+  server, keep reading to learn how.
 </p>
-<p>
+<div class="book-box">
   If you’re a server owner and you’d like to transfer ownership of your server,
   please reference our article on
   <a
@@ -11,7 +14,7 @@
     rel="noopener noreferrer"
     >how to transfer server ownership</a
   >!
-</p>
+</div>
 <p>
   <span class="wysiwyg-font-size-large"
     ><strong>What this article covers:</strong></span
@@ -62,10 +65,7 @@
 <h1 id="h_01J7F760SVNTBXP55GDANPP0MH">
   What is the policy for Server Ownership Transfers?
 </h1>
-<p>
-  Our Discord support team can only assist with server ownership transfers if
-  the following criteria are met:
-</p>
+<p>The criteria for a server ownership transfer:</p>
 <ul>
   <li>The server has 100 members.</li>
   <li>
@@ -78,11 +78,18 @@
     You (the requestor) have administrator or moderator permissions within the
     server.
   </li>
+  <li>The server is not monetized.</li>
 </ul>
 <div class="warn-box">
   Our Support team can only assist with server ownership transfers if your
   request meets the criteria. If your request does not meet the criteria, then
   it will be denied— no exceptions.
+</div>
+<div class="warn-box">
+  Please note that we cannot transfer ownership if you’re asking on behalf of
+  another user, and you will need to ask that other user to directly contact our
+  Support team with their own transfer request! The new owner should be the one
+  submitting the support ticket, unless your server is Partnered or Verified
 </div>
 <h1 id="h_01J7F79PJ506MZ2FV08AQ579TA">
   How do I submit a Server Ownership Transfer Request ticket?
@@ -110,6 +117,11 @@
   <strong>Server Ownership Transfer Request</strong>
 </p>
 <p>6. Input the requested information</p>
+<div class="tip-box">
+  When submitting your request, please indicate whether your server is
+  monetized, partnered, or verified by selecting Yes/No in the appropriate
+  fields.
+</div>
 <h2 id="h_01J7F7DSBYD2HWGHPFC953S40Z">
   What information is needed in a Server Ownership Transfer request?
 </h2>
@@ -129,45 +141,36 @@
 </ul>
 <h2 id="h_01J7F7G7QAF13AMMMGD453V2Z9">How do I find a Server/User ID?</h2>
 <p>
-  1. You must enable <strong>Developer Mode</strong> on your Discord app before
-  you can find the server/user ID. You can check out this support article on
+  To find the Server/User ID you will need to enable Developer Mode on your
+  Discord app.
+</p>
+<p>
+  You can check out
   <a
     href="https://support.discord.com/hc/articles/206346498"
     target="_blank"
     rel="noopener noreferrer"
-    >how you can enable developer mode on your Discord app</a
-  >.
+    >this support article</a
+  >
+  on how you can enable developer mode.
 </p>
 <p>
-  2. After you’ve enabled <strong>Developer Mode</strong>, you can now find and
-  copy a server ID and a User ID.
-</p>
-<p>
-  To find the user ID, right-click a user’s avatar and then select
+  User ID: right-click a user’s avatar and then select
   <strong>Copy User ID</strong>. You can also press on a user’s avatar &gt;
   press on the <strong>ellipses icon</strong> in the top right corner of the
   user’s profile &gt; select <strong>Copy User ID</strong>.
 </p>
 <p>
-  To find a server ID, right-click the server’s name or the server icon and then
-  select <strong>Copy Server ID</strong>.
+  Server ID: right-click the server’s name or the server icon and then select
+  <strong>Copy Server ID</strong>.
 </p>
-<div class="warn-box">
-  Please note that we cannot transfer ownership if you’re asking on behalf of
-  another user, and you will need to ask that other user to directly contact our
-  support team with their own transfer request! The new owner should be the one
-  submitting the support ticket, unless your server is Partnered or Verified.
-</div>
 <h1 id="h_01J7F7PP92JRTF5006QJ1X6HM2">
   What if my Server is Partnered or Verified?
 </h1>
 <p>
-  Before submitting a ticket,
-  <span class="wysiwyg-underline"
-    >please check if your server is part of either the Partnered or Verified
-    programs</span
-  >. If your server is Partnered or Verified, you will have the corresponding
-  badge next to your server’s name. You can learn more about
+  Before submitting a ticket, please check if your server is Partnered or
+  Verified. If your server is Partnered or Verified, you will have the
+  corresponding badge next to your server’s name. You can learn more about
   <a
     href="https://support.discord.com/hc/articles/14078261239831"
     target="_blank"
@@ -175,18 +178,21 @@
     >server types on this support article</a
   >.
 </p>
+<p>
+  If you own a Partnered or Verified server and wish to transfer ownership, you
+  must submit the request yourself.
+</p>
 <div class="warn-box">
   Please note that if your server has the
-  <strong>Community Feature</strong> enabled, then this is not included in the
-  Partner or Verified program. When submitting your transfer request, please
-  only select <strong>Yes</strong> under
-  <strong>Is your server Partnered, Verified?</strong> if your server is
-  confirmed to be Partnered or Verified, not Community. Choosing incorrectly
-  could delay your request processing.
+  <strong>Community Feature</strong> enabled, this does not mean that your
+  server is Partner or Verified.
 </div>
 <p>
-  After confirming that the server is part of our Partner or Verified program,
-  only the server owner can submit an ownership transfer request.
+  When submitting your transfer request, please only select
+  <strong>Yes</strong> under
+  <strong>Is your server Partnered, Verified?</strong> If your server is
+  confirmed to be Partnered or Verified, not Community. Choosing incorrectly
+  could delay your request processing.
 </p>
 <h1 id="h_01J7F84ST9CK89DKAHPK6AM7Y7">
   What if I Want to Request an Ownership Transfer of Multiple Servers?
