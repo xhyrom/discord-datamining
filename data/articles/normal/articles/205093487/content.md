@@ -33,7 +33,8 @@
     </li>
     <li>
       <a href="#h_01J8GFAF2FKKSV1443DZF4PG12"
-        ><strong>Step 3: Join Voice and Allow to Enable Access<br /></strong
+        ><strong
+          >Step 3: Join Voice and Press Allow to Enable Access<br /></strong
       ></a>
     </li>
   </ul>
@@ -43,7 +44,7 @@
 </h1>
 <p>
   Select the <strong>ellipsis</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/26739695242519"
+    src="https://support.discord.com/hc/article_attachments/32891219438743"
     width="24"
     height="24"
   />] on the browser toolbar and choose <strong>Settings</strong>.
@@ -55,7 +56,7 @@
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/4413154480535"
+      src="https://support.discord.com/hc/article_attachments/32891219439511"
       alt="Enable-mic-Chrome-Privacy-setting-demo.gif"
       width="683"
       height="483"
@@ -73,14 +74,14 @@
 <p>
   To the right of <strong>Discord</strong>, press the
   <strong>trashcan </strong>[<img
-    src="https://support.discord.com/hc/article_attachments/26739695245847"
+    src="https://support.discord.com/hc/article_attachments/32891219439895"
     width="24"
     height="24"
   />] to remove the block in access. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/4413141142295"
+    src="https://support.discord.com/hc/article_attachments/32891219440535"
     alt="Enable-Mic-in-Chrome-Unblock-Discord-mic-demo.gif"
     width="679"
     height="480"
@@ -109,7 +110,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c; background-color: #ffffff"
     ><img
-      src="https://support.discord.com/hc/article_attachments/26739677033879"
+      src="https://support.discord.com/hc/article_attachments/32891251442583"
       width="682"
       height="448"
   /></span>
