@@ -28235,13 +28235,16 @@ body .headerAnimation_b54a5b {
 .giftIcon__3f9a4 {
   color: #fff;
 }
+.nitroIcon__3f9a4 {
+  margin-right: 8px;
+  position: relative;
+}
 .textContainer__3f9a4 {
   height: 48px;
   justify-content: center;
   max-width: 408px;
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
   top: 0;
   width: 408px;
 }
@@ -28250,7 +28253,7 @@ body .headerAnimation_b54a5b {
   align-items: center;
   display: flex;
 }
-.textHeaderWithGiftIcon__3f9a4 {
+.textHeaderWithIcon__3f9a4 {
   margin-left: 10px;
 }
 .banner__3f9a4 {
@@ -62116,4 +62119,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5d2e7a6f0e7c46dc.css.map*/
+/*# sourceMappingURL=12633.bfb717565c7c7189.css.map*/
