@@ -218,7 +218,7 @@
           ><img
             width="146"
             loading="lazy"
-            alt=""
+            alt="Home"
             src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e90ab9506850e8a5dd48e3_Discrod_MainLogo.svg"
             class="nav_brand_main-logo" />
           <div class="nav_brand_main-black-logo">
