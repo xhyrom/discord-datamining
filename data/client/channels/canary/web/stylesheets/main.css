@@ -22124,9 +22124,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   min-height: 100%;
   padding-right: 0 !important;
 }
-.textAreaWithoutAttachmentButton__74017 {
-  margin-left: 0;
-}
 .textAreaForPostCreation__74017 {
   padding: 0 !important;
 }
@@ -34911,7 +34908,6 @@ img.thumbnail__0f2e8 {
   border-right: none;
   cursor: pointer;
   display: flex;
-  padding-right: var(--space-8);
 }
 .visual-refresh-chat-input .shareToChannelButton_af3b89 {
   padding-right: 0;
@@ -62217,4 +62213,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.40d297db9ee6b4a4.css.map*/
+/*# sourceMappingURL=12633.10bec8bfba437b98.css.map*/
