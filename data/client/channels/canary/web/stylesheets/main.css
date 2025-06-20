@@ -1749,27 +1749,35 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
 }
 .container__53cea {
-  --custom-modal-padding: var(--space-24);
-  --custom-modal-padding-bottom: var(--space-8);
-  --custom-modal-padding-top: var(--space-16);
+  --custom-border-radius: var(--radius-md);
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  border-radius: var(--custom-border-radius);
   box-shadow: var(--shadow-high);
   color: var(--text-normal);
   flex-direction: column;
   max-height: 100%;
-  padding-bottom: var(--custom-modal-padding-top);
-  padding-top: var(--custom-modal-padding-bottom);
   pointer-events: auto;
   width: 100%;
 }
-.section__53cea {
-  box-sizing: border-box;
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding: var(--custom-modal-padding-top) var(--custom-modal-padding)
-    var(--custom-modal-padding-bottom);
+.padding-size-sm__53cea {
+  --custom-modal-padding: var(--space-24);
+  --custom-modal-padding-sm: var(--space-8);
+  --custom-modal-padding-md: var(--space-16);
+  --custom-modal-padding-top: var(--custom-modal-padding-sm);
+}
+.padding-size-lg__53cea,
+.padding-size-sm__53cea {
+  padding-bottom: var(--custom-modal-padding-md);
+  padding-top: var(--custom-modal-padding-top);
+}
+.padding-size-lg__53cea {
+  --custom-modal-padding: var(--space-32);
+  --custom-modal-padding-sm: var(--space-16);
+  --custom-modal-padding-md: var(--space-16);
+  --custom-modal-padding-top: calc(
+    var(--space-24) - var(--custom-modal-padding-md)
+  );
 }
 .size-sm__53cea {
   max-width: 440px;
@@ -1797,19 +1805,49 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     padding: 0;
   }
   .fullScreenOnMobile__53cea .container__53cea {
+    --custom-border-radius: 0;
+    --custom-modal-padding-top: calc(
+      var(--custom-app-top-bar-height) + var(--custom-modal-padding-sm)
+    );
     border: none;
-    border-radius: 0;
     height: 100%;
     overflow-y: auto;
-    padding-top: calc(
-      var(--custom-app-top-bar-height) + var(--custom-modal-padding-bottom)
-    );
   }
+}
+.section__53cea {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: var(--custom-modal-padding-md) var(--custom-modal-padding)
+    var(--custom-modal-padding-sm);
 }
 .header__53cea {
   align-items: flex-start;
   display: flex;
   position: relative;
+}
+.headerGradient__53cea {
+  border-radius: var(--custom-border-radius) var(--custom-border-radius) 0 0;
+  margin: -1px;
+  margin-top: calc(var(--custom-modal-padding-top) * -1 - 1px);
+  padding: 1px;
+  padding-top: calc(var(--custom-modal-padding-top) + 1px);
+}
+.headerImage__53cea {
+  align-items: center;
+  aspect-ratio: 16/9;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: calc(var(--space-24) - var(--space-8));
+  margin-top: calc(var(--space-24) - var(--space-4));
+  max-width: 288px;
+  width: 100%;
+}
+.headerImage__53cea img {
+  max-height: 100%;
+  max-width: 100%;
 }
 .headerLeading__53cea,
 .headerLeadingSpacer__53cea {
@@ -1822,6 +1860,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   margin-right: calc(var(--space-4) * -1);
   margin-top: calc(var(--space-4) * -1);
   padding-left: var(--space-12);
+}
+.padding-size-lg__53cea .headerTrailing__53cea {
+  margin-right: calc(
+    (var(--space-4) + var(--custom-modal-padding) - var(--space-24)) * -1
+  );
 }
 .headerLeading__53cea,
 .headerLeadingSpacer__53cea,
@@ -1840,7 +1883,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .headerLeadingAbsolute__53cea,
 .headerTrailingAbsolute__53cea {
   position: absolute;
-  top: var(--custom-modal-padding-top);
+  top: var(--custom-modal-padding-md);
 }
 .headerTrailingAbsolute__53cea {
   right: var(--custom-modal-padding);
@@ -1871,14 +1914,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .contentSpacerTop__53cea {
   flex-grow: 0;
-  padding-top: var(--custom-modal-padding-top);
+  padding-top: var(--custom-modal-padding-md);
 }
 .contentSpacerTopBorder__53cea {
   border-bottom: 1px solid var(--border-subtle);
 }
 .contentSpacerBottom__53cea {
   flex-grow: 0;
-  padding-bottom: var(--custom-modal-padding-bottom);
+  padding-bottom: var(--custom-modal-padding-sm);
 }
 .contentSpacerBottomBorder__53cea {
   border-top: 1px solid var(--border-subtle);
@@ -4975,6 +5018,60 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   user-select: none;
   white-space: nowrap;
   width: 1px;
+}
+.container__73454 {
+  --custom-gradient-color-start: var(--blurple-50);
+  --custom-gradient-color-end: var(--blurple-50);
+  position: relative;
+}
+.container__73454:before {
+  background: linear-gradient(
+    270deg,
+    var(--custom-gradient-color-end) 0,
+    var(--custom-gradient-color-start) 100%
+  );
+  border-radius: inherit;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  -webkit-mask-image: radial-gradient(
+    100% 100% at 50% 100%,
+    var(--transparent) 60%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    100% 100% at 50% 100%,
+    var(--transparent) 60%,
+    #000 100%
+  );
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.purple__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-purple-start);
+  --custom-gradient-color-end: var(--expressive-gradient-purple-end);
+}
+.blue__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-blue-start);
+  --custom-gradient-color-end: var(--expressive-gradient-blue-end);
+}
+.green__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-green-start);
+  --custom-gradient-color-end: var(--expressive-gradient-green-end);
+}
+.pink__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-pink-start);
+  --custom-gradient-color-end: var(--expressive-gradient-pink-end);
+}
+.nitro-pink__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-nitro-pink-start);
+  --custom-gradient-color-end: var(--expressive-gradient-nitro-pink-end);
+}
+.nitro-green__73454 {
+  --custom-gradient-color-start: var(--expressive-gradient-nitro-green-start);
+  --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
 }
 .heading-sm\/normal_b717a1 {
   font-family: var(--font-display);
@@ -17375,8 +17472,8 @@ span.clanTag__5d473 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-nitro-1-start) 0,
-      var(--background-modal-gradient-nitro-1-end) 100%
+      var(--expressive-gradient-nitro-pink-start) 0,
+      var(--expressive-gradient-nitro-pink-end) 100%
     );
   background-color: var(--background-primary);
   border-bottom-left-radius: 0;
@@ -23555,8 +23652,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-nitro-2-end) 0,
-      var(--background-modal-gradient-nitro-2-start) 100%
+      var(--expressive-gradient-nitro-green-end) 0,
+      var(--expressive-gradient-nitro-green-start) 100%
     );
 }
 .tier2Background_c7bb69 {
@@ -23567,8 +23664,8 @@ html:not(.visual-refresh) .root_e5f3a9 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-nitro-1-end) 0,
-      var(--background-modal-gradient-nitro-1-start) 100%
+      var(--expressive-gradient-nitro-pink-end) 0,
+      var(--expressive-gradient-nitro-pink-start) 100%
     );
 }
 .bigWumpus_c7bb69 {
@@ -35347,8 +35444,8 @@ img.thumbnail__0f2e8 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-purple-end) 0,
-      var(--background-modal-gradient-purple-start) 100%
+      var(--expressive-gradient-purple-end) 0,
+      var(--expressive-gradient-purple-start) 100%
     );
   border-radius: inherit;
   border-bottom-left-radius: 0;
@@ -42100,8 +42197,8 @@ svg.radioIcon_c1e9c4 {
     ),
     linear-gradient(
       270deg,
-      var(--background-modal-gradient-purple-start) 0,
-      var(--background-modal-gradient-purple-end) 100%
+      var(--expressive-gradient-purple-start) 0,
+      var(--expressive-gradient-purple-end) 100%
     );
   display: flex;
   flex-wrap: wrap;
@@ -44649,24 +44746,6 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.45);
-  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.45);
-  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.45);
-  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.45);
-  --background-modal-gradient-nitro-1-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.5
-  );
-  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.5);
-  --background-modal-gradient-nitro-2-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.5
-  );
-  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.5);
-  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.45);
-  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.45);
-  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.45);
-  --background-modal-gradient-purple-start: hsl(
-    var(--illo-purple-4-hsl) / 0.45
-  );
   --background-modifier-accent: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -45070,6 +45149,18 @@ html.disable-forced-colors * {
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
   --expression-picker-bg: var(--neutral-69);
+  --expressive-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.45);
+  --expressive-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.45);
+  --expressive-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.45);
+  --expressive-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.45);
+  --expressive-gradient-nitro-green-end: hsl(var(--illo-nitro-blue-hsl) / 0.5);
+  --expressive-gradient-nitro-green-start: hsl(var(--illo-green-5-hsl) / 0.5);
+  --expressive-gradient-nitro-pink-end: hsl(var(--illo-nitro-blue-hsl) / 0.5);
+  --expressive-gradient-nitro-pink-start: hsl(var(--illo-pink-6-hsl) / 0.5);
+  --expressive-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.45);
+  --expressive-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.45);
+  --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.45);
+  --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.45);
   --focus-primary: var(--blue-345);
   --header-muted: var(--neutral-22);
   --header-primary: var(--neutral-1);
@@ -46576,6 +46667,78 @@ html.disable-forced-colors * {
       var(--neutral-69) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --expressive-gradient-blue-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-6-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-blue-start: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-4-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-green-7-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.5) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.5) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.5) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-6-hsl) / 0.5) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.5)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-end: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-6-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-start: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-4-hsl) / 0.45) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.45)
+        var(--theme-base-color-amount, 0%)
+    );
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -47581,18 +47744,6 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-modal-gradient-blue-end: hsl(var(--illo-blue-3-hsl) / 0.8);
-  --background-modal-gradient-blue-start: hsl(var(--illo-blue-1-hsl) / 0.8);
-  --background-modal-gradient-green-end: hsl(var(--illo-green-3-hsl) / 0.8);
-  --background-modal-gradient-green-start: hsl(var(--illo-green-1-hsl) / 0.8);
-  --background-modal-gradient-nitro-1-end: hsl(var(--illo-blue-4-hsl) / 0.9);
-  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-3-hsl) / 0.9);
-  --background-modal-gradient-nitro-2-end: hsl(var(--illo-blue-4-hsl) / 0.9);
-  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-1-hsl) / 0.9);
-  --background-modal-gradient-pink-end: hsl(var(--illo-pink-3-hsl) / 0.8);
-  --background-modal-gradient-pink-start: hsl(var(--illo-pink-1-hsl) / 0.8);
-  --background-modal-gradient-purple-end: hsl(var(--illo-purple-3-hsl) / 0.8);
-  --background-modal-gradient-purple-start: hsl(var(--illo-purple-1-hsl) / 0.8);
   --background-modifier-accent: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --background-modifier-active: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-modifier-hover: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -47980,6 +48131,18 @@ html.disable-forced-colors * {
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
   --expression-picker-bg: var(--neutral-2);
+  --expressive-gradient-blue-end: hsl(var(--illo-blue-3-hsl) / 0.8);
+  --expressive-gradient-blue-start: hsl(var(--illo-blue-1-hsl) / 0.8);
+  --expressive-gradient-green-end: hsl(var(--illo-green-3-hsl) / 0.8);
+  --expressive-gradient-green-start: hsl(var(--illo-green-1-hsl) / 0.8);
+  --expressive-gradient-nitro-green-end: hsl(var(--illo-blue-4-hsl) / 0.9);
+  --expressive-gradient-nitro-green-start: hsl(var(--illo-green-1-hsl) / 0.9);
+  --expressive-gradient-nitro-pink-end: hsl(var(--illo-blue-4-hsl) / 0.9);
+  --expressive-gradient-nitro-pink-start: hsl(var(--illo-pink-3-hsl) / 0.9);
+  --expressive-gradient-pink-end: hsl(var(--illo-pink-3-hsl) / 0.8);
+  --expressive-gradient-pink-start: hsl(var(--illo-pink-1-hsl) / 0.8);
+  --expressive-gradient-purple-end: hsl(var(--illo-purple-3-hsl) / 0.8);
+  --expressive-gradient-purple-start: hsl(var(--illo-purple-1-hsl) / 0.8);
   --focus-primary: var(--blue-360);
   --header-muted: var(--neutral-40);
   --header-primary: var(--neutral-71);
@@ -49485,6 +49648,78 @@ html.disable-forced-colors * {
       var(--neutral-2) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --expressive-gradient-blue-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-3-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-blue-start: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-1-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-green-3-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-1-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-4-hsl) / 0.9) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-1-hsl) / 0.9) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-4-hsl) / 0.9) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-3-hsl) / 0.9) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-3-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-1-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-end: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-3-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-start: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-1-hsl) / 0.8) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--theme-base-color-amount, 0%)
+    );
     --focus-primary: color-mix(
       in oklab,
       var(--blue-360) 100%,
@@ -50491,24 +50726,6 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-strong: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --background-mod-subtle: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.25);
-  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.25);
-  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.25);
-  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.25);
-  --background-modal-gradient-nitro-1-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.3
-  );
-  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.3);
-  --background-modal-gradient-nitro-2-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.3
-  );
-  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.3);
-  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.25);
-  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.25);
-  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.25);
-  --background-modal-gradient-purple-start: hsl(
-    var(--illo-purple-4-hsl) / 0.25
-  );
   --background-modifier-accent: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -50916,6 +51133,18 @@ html.disable-forced-colors * {
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
   --expression-picker-bg: var(--neutral-97);
+  --expressive-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.25);
+  --expressive-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.25);
+  --expressive-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.25);
+  --expressive-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.25);
+  --expressive-gradient-nitro-green-end: hsl(var(--illo-nitro-blue-hsl) / 0.3);
+  --expressive-gradient-nitro-green-start: hsl(var(--illo-green-5-hsl) / 0.3);
+  --expressive-gradient-nitro-pink-end: hsl(var(--illo-nitro-blue-hsl) / 0.3);
+  --expressive-gradient-nitro-pink-start: hsl(var(--illo-pink-6-hsl) / 0.3);
+  --expressive-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.25);
+  --expressive-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.25);
+  --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.25);
+  --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.25);
   --focus-primary: var(--blue-345);
   --header-muted: var(--neutral-33);
   --header-primary: var(--neutral-8);
@@ -52428,6 +52657,78 @@ html.disable-forced-colors * {
       var(--neutral-97) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
     );
+    --expressive-gradient-blue-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-6-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-blue-start: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-4-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-green-7-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-6-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-end: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-6-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-start: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-4-hsl) / 0.25) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.25)
+        var(--theme-base-color-amount, 0%)
+    );
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
@@ -53436,22 +53737,6 @@ html.disable-forced-colors * {
   --background-mod-normal: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --background-mod-strong: hsl(var(--opacity-20-hsl) / 0.2);
   --background-mod-subtle: hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-  --background-modal-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.3);
-  --background-modal-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.3);
-  --background-modal-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.3);
-  --background-modal-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.3);
-  --background-modal-gradient-nitro-1-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.4
-  );
-  --background-modal-gradient-nitro-1-start: hsl(var(--illo-pink-6-hsl) / 0.4);
-  --background-modal-gradient-nitro-2-end: hsl(
-    var(--illo-nitro-blue-hsl) / 0.4
-  );
-  --background-modal-gradient-nitro-2-start: hsl(var(--illo-green-5-hsl) / 0.4);
-  --background-modal-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
-  --background-modal-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
-  --background-modal-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.3);
-  --background-modal-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.3);
   --background-modifier-accent: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -53855,6 +54140,18 @@ html.disable-forced-colors * {
     var(--opacity-black-52-hsl) / 0.5215686274509804
   );
   --expression-picker-bg: var(--neutral-86);
+  --expressive-gradient-blue-end: hsl(var(--illo-blue-6-hsl) / 0.3);
+  --expressive-gradient-blue-start: hsl(var(--illo-blue-4-hsl) / 0.3);
+  --expressive-gradient-green-end: hsl(var(--illo-green-7-hsl) / 0.3);
+  --expressive-gradient-green-start: hsl(var(--illo-green-5-hsl) / 0.3);
+  --expressive-gradient-nitro-green-end: hsl(var(--illo-nitro-blue-hsl) / 0.4);
+  --expressive-gradient-nitro-green-start: hsl(var(--illo-green-5-hsl) / 0.4);
+  --expressive-gradient-nitro-pink-end: hsl(var(--illo-nitro-blue-hsl) / 0.4);
+  --expressive-gradient-nitro-pink-start: hsl(var(--illo-pink-6-hsl) / 0.4);
+  --expressive-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
+  --expressive-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
+  --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.3);
+  --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.3);
   --focus-primary: var(--blue-345);
   --header-muted: var(--neutral-29);
   --header-primary: var(--neutral-2);
@@ -55362,6 +55659,78 @@ html.disable-forced-colors * {
       in oklab,
       var(--neutral-86) 100%,
       var(--theme-base-color, #000) var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-blue-end: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-6-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-blue-start: color-mix(
+      in oklab,
+      hsl(var(--illo-blue-4-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-green-7-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.4) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-green-start: color-mix(
+      in oklab,
+      hsl(var(--illo-green-5-hsl) / 0.4) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-nitro-blue-hsl) / 0.4) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-nitro-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-6-hsl) / 0.4) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-end: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-7-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-pink-start: color-mix(
+      in oklab,
+      hsl(var(--illo-pink-5-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-end: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-6-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
+    );
+    --expressive-gradient-purple-start: color-mix(
+      in oklab,
+      hsl(var(--illo-purple-4-hsl) / 0.3) 100%,
+      hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3)
+        var(--theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
       in oklab,
@@ -61848,4 +62217,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b140f4644e37794b.css.map*/
+/*# sourceMappingURL=12633.40d297db9ee6b4a4.css.map*/
