@@ -190,7 +190,7 @@
   restricted in some regions.<br /><strong>Availability Period:</strong> The
   <strong>World of Tanks Blitz Quest </strong>can be accepted on the Discord
   mobile app from <strong>June 16, 2025 </strong>until<strong>
-    June 22, 2025 (11:59PM UTC)</strong
+    June 27, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
   reward by <strong>August 18, 2025 (11:00 UTC)</strong>.<br /><strong
     >Other Terms: </strong
