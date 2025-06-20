@@ -28,6 +28,41 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Rainbow Six Siege X<br /></strong
+  ><strong
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Quest Name: R6 Siege X Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Rainbow Six Siege X </strong>to receive
+  <strong>4 Operators (Doc, IQ, Blitz, Pulse)</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players that are +18 in the<strong> United States</strong
+  >,<strong> Great Britain</strong>,<strong> France</strong>,<strong>
+    Germany</strong
+  >,<strong> Australia</strong>, <strong>Canada</strong>, and
+  <strong>Italy </strong>who have access to
+  <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC and
+  console.
+  <span style="background-color: #ffffff"
+    >Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The<strong> R6 Siege X Quest</strong>
+  can be accepted on <strong>PC </strong>and <strong>console</strong> from
+  <strong>June 20, 2025</strong> until
+  <strong>June 26, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>June 25, 2025 (4:34PM UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: R.E.P.O.<br /></strong
   ><strong>Quest Name: R.E.P.O. Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
