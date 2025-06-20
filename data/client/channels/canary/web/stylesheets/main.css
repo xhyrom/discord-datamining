@@ -23518,36 +23518,41 @@ html:not(.visual-refresh) .root_e5f3a9 {
   margin: 0 11px;
   width: 18px;
 }
-.badgeContainer_fc0249 {
+.pill__18dd3 {
   align-items: center;
-  background: var(--background-primary);
   border: 1px solid var(--border-normal);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   display: flex;
   justify-content: center;
-  margin-left: var(--space-16);
-  margin-top: var(--space-8);
   padding: var(--spacing-8) var(--spacing-12);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.badgeContainer_fc0249.tier2_fc0249 {
+.pillGradient__18dd3 {
   background: linear-gradient(
-    90deg,
-    rgba(155, 29, 165, 0.34),
-    rgba(30, 35, 83, 0.34) 120%
-  );
+      90deg,
+      rgba(155, 29, 165, 0.35) 0,
+      rgba(30, 35, 83, 0.35) 120%
+    ),
+    var(--background-base-lower);
 }
-.badgeContainer_fc0249.tier0_fc0249 {
+.theme-light .pillGradient__18dd3 {
   background: linear-gradient(
-    270deg,
-    rgba(20, 20, 203, 0.3),
-    rgba(33, 187, 99, 0.3)
-  );
+      90deg,
+      rgba(155, 29, 165, 0.1) 0,
+      rgba(30, 35, 83, 0.1) 120%
+    ),
+    var(--background-base-lower);
 }
-.badgeText_fc0249 {
+.pillText__18dd3 {
+  line-height: 1;
+  padding-top: 0.75px;
   text-transform: uppercase;
+}
+.badgeContainer_fc0249 {
+  margin-left: var(--space-16);
+  margin-top: var(--space-8);
 }
 .container_c7bb69,
 .headerContainer_c7bb69 {
@@ -62134,4 +62139,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.89f5e265b81134e1.css.map*/
+/*# sourceMappingURL=12633.37a2d8aa494437d0.css.map*/
