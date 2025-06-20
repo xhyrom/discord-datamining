@@ -40784,6 +40784,13 @@ svg.radioIcon_c1e9c4 {
   min-width: 16px;
   text-align: center;
 }
+.textBadge__2b1f5 {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  padding: 0 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .baseShapeRound__2b1f5 {
   border-radius: var(--radius-round);
 }
@@ -40793,22 +40800,13 @@ svg.radioIcon_c1e9c4 {
 .baseShapeRoundRight__2b1f5 {
   border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
 }
+.iconBadge__2b1f5,
 .numberBadge__2b1f5 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.textBadge__2b1f5 {
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  padding: 0 6px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .iconBadge__2b1f5 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   width: 16px;
 }
 .icon__2b1f5 {
@@ -61845,4 +61843,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.735ffbf22abde694.css.map*/
+/*# sourceMappingURL=12633.cc091e7a7a706834.css.map*/
