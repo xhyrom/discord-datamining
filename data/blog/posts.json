@@ -2746,5 +2746,16 @@
     "pubDate": "Mon, 16 Jun 2025 00:00:00 GMT",
     "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/684a07a2968307ee558f19dd_image5.png",
     "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/684a07a2968307ee558f19dd_image5.png"
+  },
+  {
+    "id": "how-to-set-up-your-servers-roles-for-members-mods-admins",
+    "body": "",
+    "title": "How to Set Up Your Server’s Roles for Members, Mods & Admins",
+    "link": "https://discord.com/blog/how-to-set-up-your-servers-roles-for-members-mods-admins",
+    "guid": "https://discord.com/blog/how-to-set-up-your-servers-roles-for-members-mods-admins",
+    "description": "There’s a LOT of Role permissions to comb through for your Discord server, and every community has its own needs. In this article, we’ll give some general guidance on each permission to help you decide what works best. ",
+    "pubDate": "Fri, 20 Jun 2025 00:00:00 GMT",
+    "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png",
+    "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png"
   }
 ]
