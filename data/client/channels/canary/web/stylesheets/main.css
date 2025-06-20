@@ -16516,6 +16516,11 @@ span.clanTag__5d473 {
   height: 100%;
   padding: 48px 36px 0 48px;
 }
+@media (max-width: 960px) {
+  .user-profile-modal-v2 .inner_c0bea0 {
+    padding: 48px 4px 0 16px;
+  }
+}
 .user-profile-sidebar .inner_c0bea0 {
   border-radius: 0;
   height: 100%;
@@ -61843,4 +61848,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.cc091e7a7a706834.css.map*/
+/*# sourceMappingURL=12633.b140f4644e37794b.css.map*/
