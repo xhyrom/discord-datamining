@@ -43464,6 +43464,9 @@ html.disable-forced-colors * {
 .enable-forced-colors .container_b29565 {
   forced-color-adjust: none;
 }
+.icon_b29565 {
+  display: block;
+}
 .iconWithHover_b29565 {
   fill: var(--icon-tertiary);
 }
@@ -61927,4 +61930,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.90591eccc8164425.css.map*/
+/*# sourceMappingURL=12633.53f7ed69d0df19d6.css.map*/
