@@ -319,7 +319,7 @@
               if (t[a] !== e[a]) return t[a] > e[a] ? 1 : -1;
             return 0;
           }
-          function m(t) {
+          function v(t) {
             var e = t.abs();
             return (
               !e.isUnit() &&
@@ -328,7 +328,7 @@
                   (!!e.lesser(49) || void 0)))
             );
           }
-          function v(t, e) {
+          function m(t, e) {
             for (var a, _, n, o = t.prev(), i = o, c = 0; i.isEven(); )
               (i = i.divide(2)), c++;
             t: for (_ = 0; _ < e.length; _++)
@@ -777,12 +777,12 @@
             (c.prototype.isDivisibleBy = i.prototype.isDivisibleBy =
               o.prototype.isDivisibleBy),
             (o.prototype.isPrime = function (t) {
-              var e = m(this);
+              var e = v(this);
               if (void 0 !== e) return e;
               var a = this.abs(),
                 _ = a.bitLength();
               if (_ <= 64)
-                return v(a, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+                return m(a, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
               for (
                 var n = Math.log(2) * _.toJSNumber(),
                   o = Math.ceil(!0 === t ? 2 * Math.pow(n, 2) : n),
@@ -792,11 +792,11 @@
                 c++
               )
                 i.push(r(c + 2));
-              return v(a, i);
+              return m(a, i);
             }),
             (c.prototype.isPrime = i.prototype.isPrime = o.prototype.isPrime),
             (o.prototype.isProbablePrime = function (e, a) {
-              var _ = m(this);
+              var _ = v(this);
               if (void 0 !== _) return _;
               for (
                 var n = this.abs(), o = t === e ? 5 : e, i = [], c = 0;
@@ -804,7 +804,7 @@
                 c++
               )
                 i.push(r.randBetween(2, n.minus(2), a));
-              return v(n, i);
+              return m(n, i);
             }),
             (c.prototype.isProbablePrime = i.prototype.isProbablePrime =
               o.prototype.isProbablePrime),
@@ -1572,8 +1572,8 @@
               D = O && d.call(e, "__wrapped__");
             if (g || D) {
               var C = g ? t.value() : t,
-                m = D ? e.value() : e;
-              return f || (f = new r()), N(C, m, a, R, f);
+                v = D ? e.value() : e;
+              return f || (f = new r()), N(C, v, a, R, f);
             }
           }
           return !!P && (f || (f = new r()), o(t, e, a, R, N, f));
@@ -5105,6 +5105,8 @@
           (r.SEARCH_V2_TAB_SELECTED = "search_v2_tab_selected"),
           (r.SEARCH_V2_JUMP_TO_MESSAGE = "search_v2_jump_to_message"),
           (r.SEARCH_V2_STARTED = "search_v2_started"),
+          (r.SEARCH_V2_RESULT_COUNTS_VIEWED = "search_v2_result_counts_viewed"),
+          (r.SEARCH_V2_RESULTS_VIEWED = "search_v2_results_viewed"),
           (r.GLOBAL_DISCOVERY_VIEWED = "global_discovery_viewed"),
           (r.GLOBAL_DISCOVERY_ENTRYPOINT_CLICKED =
             "global_discovery_entrypoint_clicked"),
@@ -6813,7 +6815,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-06-20-448b0791d1b49266a7b02b7bb26cc8902eab8291-discord_web",
+              "2025-06-23-debc7e1ee80fb7e6482986949dd32293ec21502e-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6879,8 +6881,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "411206"),
-            o.YA("builtAt", String("1750403933844"));
+            o.YA("buildNumber", "411537"),
+            o.YA("builtAt", String("1750663265038"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7236,90 +7238,6 @@
                   light: { color: "WHITE_500", opacity: 0.6 },
                   dark: { color: "BLACK_500", opacity: 0.4 },
                 },
-              },
-              BACKGROUND_MODAL_GRADIENT_BLUE_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_BLUE_6", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_BLUE_3", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_BLUE_6", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_BLUE_6", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_BLUE_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_BLUE_4", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_BLUE_1", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_BLUE_4", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_GREEN_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_GREEN_7", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_GREEN_3", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_GREEN_7", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_GREEN_7", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_GREEN_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_GREEN_5", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_GREEN_1", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_GREEN_5", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_GREEN_5", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_NITRO_1_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_NITRO_BLUE", opacity: 0.5 },
-                [r.LIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.9 },
-                [r.MIDNIGHT]: { raw: "ILLO_NITRO_BLUE", opacity: 0.3 },
-                [r.DARKER]: { raw: "ILLO_NITRO_BLUE", opacity: 0.4 },
-              },
-              BACKGROUND_MODAL_GRADIENT_NITRO_1_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_PINK_6", opacity: 0.5 },
-                [r.LIGHT]: { raw: "ILLO_PINK_3", opacity: 0.9 },
-                [r.MIDNIGHT]: { raw: "ILLO_PINK_6", opacity: 0.3 },
-                [r.DARKER]: { raw: "ILLO_PINK_6", opacity: 0.4 },
-              },
-              BACKGROUND_MODAL_GRADIENT_NITRO_2_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_NITRO_BLUE", opacity: 0.5 },
-                [r.LIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.9 },
-                [r.MIDNIGHT]: { raw: "ILLO_NITRO_BLUE", opacity: 0.3 },
-                [r.DARKER]: { raw: "ILLO_NITRO_BLUE", opacity: 0.4 },
-              },
-              BACKGROUND_MODAL_GRADIENT_NITRO_2_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_GREEN_5", opacity: 0.5 },
-                [r.LIGHT]: { raw: "ILLO_GREEN_1", opacity: 0.9 },
-                [r.MIDNIGHT]: { raw: "ILLO_GREEN_5", opacity: 0.3 },
-                [r.DARKER]: { raw: "ILLO_GREEN_5", opacity: 0.4 },
-              },
-              BACKGROUND_MODAL_GRADIENT_PINK_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_PINK_7", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_PINK_3", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_PINK_7", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_PINK_7", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_PINK_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_PINK_5", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_PINK_1", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_PINK_5", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_PINK_5", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_PURPLE_END: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_PURPLE_6", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_PURPLE_3", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_PURPLE_6", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_PURPLE_6", opacity: 0.3 },
-              },
-              BACKGROUND_MODAL_GRADIENT_PURPLE_START: {
-                category: "background",
-                [r.DARK]: { raw: "ILLO_PURPLE_4", opacity: 0.45 },
-                [r.LIGHT]: { raw: "ILLO_PURPLE_1", opacity: 0.8 },
-                [r.MIDNIGHT]: { raw: "ILLO_PURPLE_4", opacity: 0.25 },
-                [r.DARKER]: { raw: "ILLO_PURPLE_4", opacity: 0.3 },
               },
               BACKGROUND_MODIFIER_ACCENT: {
                 category: "background",
@@ -8114,6 +8032,90 @@
                   light: { color: "gradient.end", lightness: "*1.05" },
                   dark: { color: "gradient.end", lightness: "*0.95" },
                 },
+              },
+              EXPRESSIVE_GRADIENT_BLUE_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_BLUE_6", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_BLUE_3", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_BLUE_6", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_BLUE_6", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_BLUE_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_BLUE_4", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_BLUE_1", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_BLUE_4", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_GREEN_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_GREEN_7", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_GREEN_3", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_GREEN_7", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_GREEN_7", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_GREEN_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_GREEN_5", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_GREEN_1", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_GREEN_5", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_GREEN_5", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_NITRO_GREEN_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_NITRO_BLUE", opacity: 0.5 },
+                [r.LIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.9 },
+                [r.MIDNIGHT]: { raw: "ILLO_NITRO_BLUE", opacity: 0.3 },
+                [r.DARKER]: { raw: "ILLO_NITRO_BLUE", opacity: 0.4 },
+              },
+              EXPRESSIVE_GRADIENT_NITRO_GREEN_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_GREEN_5", opacity: 0.5 },
+                [r.LIGHT]: { raw: "ILLO_GREEN_1", opacity: 0.9 },
+                [r.MIDNIGHT]: { raw: "ILLO_GREEN_5", opacity: 0.3 },
+                [r.DARKER]: { raw: "ILLO_GREEN_5", opacity: 0.4 },
+              },
+              EXPRESSIVE_GRADIENT_NITRO_PINK_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_NITRO_BLUE", opacity: 0.5 },
+                [r.LIGHT]: { raw: "ILLO_BLUE_4", opacity: 0.9 },
+                [r.MIDNIGHT]: { raw: "ILLO_NITRO_BLUE", opacity: 0.3 },
+                [r.DARKER]: { raw: "ILLO_NITRO_BLUE", opacity: 0.4 },
+              },
+              EXPRESSIVE_GRADIENT_NITRO_PINK_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_PINK_6", opacity: 0.5 },
+                [r.LIGHT]: { raw: "ILLO_PINK_3", opacity: 0.9 },
+                [r.MIDNIGHT]: { raw: "ILLO_PINK_6", opacity: 0.3 },
+                [r.DARKER]: { raw: "ILLO_PINK_6", opacity: 0.4 },
+              },
+              EXPRESSIVE_GRADIENT_PINK_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_PINK_7", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_PINK_3", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_PINK_7", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_PINK_7", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_PINK_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_PINK_5", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_PINK_1", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_PINK_5", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_PINK_5", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_PURPLE_END: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_PURPLE_6", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_PURPLE_3", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_PURPLE_6", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_PURPLE_6", opacity: 0.3 },
+              },
+              EXPRESSIVE_GRADIENT_PURPLE_START: {
+                category: "generic",
+                [r.DARK]: { raw: "ILLO_PURPLE_4", opacity: 0.45 },
+                [r.LIGHT]: { raw: "ILLO_PURPLE_1", opacity: 0.8 },
+                [r.MIDNIGHT]: { raw: "ILLO_PURPLE_4", opacity: 0.25 },
+                [r.DARKER]: { raw: "ILLO_PURPLE_4", opacity: 0.3 },
               },
               FOCUS_PRIMARY: {
                 category: "generic",
@@ -15892,78 +15894,6 @@
             r.I.OPACITY_12,
             r.I.OPACITY_8,
           ],
-          "background-modal-gradient-blue-end": [
-            r.I.ILLO_BLUE_6,
-            r.I.ILLO_BLUE_3,
-            r.I.ILLO_BLUE_6,
-            r.I.ILLO_BLUE_6,
-          ],
-          "background-modal-gradient-blue-start": [
-            r.I.ILLO_BLUE_4,
-            r.I.ILLO_BLUE_1,
-            r.I.ILLO_BLUE_4,
-            r.I.ILLO_BLUE_4,
-          ],
-          "background-modal-gradient-green-end": [
-            r.I.ILLO_GREEN_7,
-            r.I.ILLO_GREEN_3,
-            r.I.ILLO_GREEN_7,
-            r.I.ILLO_GREEN_7,
-          ],
-          "background-modal-gradient-green-start": [
-            r.I.ILLO_GREEN_5,
-            r.I.ILLO_GREEN_1,
-            r.I.ILLO_GREEN_5,
-            r.I.ILLO_GREEN_5,
-          ],
-          "background-modal-gradient-nitro-1-end": [
-            r.I.ILLO_NITRO_BLUE,
-            r.I.ILLO_BLUE_4,
-            r.I.ILLO_NITRO_BLUE,
-            r.I.ILLO_NITRO_BLUE,
-          ],
-          "background-modal-gradient-nitro-1-start": [
-            r.I.ILLO_PINK_6,
-            r.I.ILLO_PINK_3,
-            r.I.ILLO_PINK_6,
-            r.I.ILLO_PINK_6,
-          ],
-          "background-modal-gradient-nitro-2-end": [
-            r.I.ILLO_NITRO_BLUE,
-            r.I.ILLO_BLUE_4,
-            r.I.ILLO_NITRO_BLUE,
-            r.I.ILLO_NITRO_BLUE,
-          ],
-          "background-modal-gradient-nitro-2-start": [
-            r.I.ILLO_GREEN_5,
-            r.I.ILLO_GREEN_1,
-            r.I.ILLO_GREEN_5,
-            r.I.ILLO_GREEN_5,
-          ],
-          "background-modal-gradient-pink-end": [
-            r.I.ILLO_PINK_7,
-            r.I.ILLO_PINK_3,
-            r.I.ILLO_PINK_7,
-            r.I.ILLO_PINK_7,
-          ],
-          "background-modal-gradient-pink-start": [
-            r.I.ILLO_PINK_5,
-            r.I.ILLO_PINK_1,
-            r.I.ILLO_PINK_5,
-            r.I.ILLO_PINK_5,
-          ],
-          "background-modal-gradient-purple-end": [
-            r.I.ILLO_PURPLE_6,
-            r.I.ILLO_PURPLE_3,
-            r.I.ILLO_PURPLE_6,
-            r.I.ILLO_PURPLE_6,
-          ],
-          "background-modal-gradient-purple-start": [
-            r.I.ILLO_PURPLE_4,
-            r.I.ILLO_PURPLE_1,
-            r.I.ILLO_PURPLE_4,
-            r.I.ILLO_PURPLE_4,
-          ],
           "background-modifier-accent": [
             r.I.OPACITY_12,
             r.I.OPACITY_28,
@@ -17745,6 +17675,78 @@
             r.I.NEUTRAL_2,
             r.I.NEUTRAL_97,
             r.I.NEUTRAL_86,
+          ],
+          "expressive-gradient-blue-end": [
+            r.I.ILLO_BLUE_6,
+            r.I.ILLO_BLUE_3,
+            r.I.ILLO_BLUE_6,
+            r.I.ILLO_BLUE_6,
+          ],
+          "expressive-gradient-blue-start": [
+            r.I.ILLO_BLUE_4,
+            r.I.ILLO_BLUE_1,
+            r.I.ILLO_BLUE_4,
+            r.I.ILLO_BLUE_4,
+          ],
+          "expressive-gradient-green-end": [
+            r.I.ILLO_GREEN_7,
+            r.I.ILLO_GREEN_3,
+            r.I.ILLO_GREEN_7,
+            r.I.ILLO_GREEN_7,
+          ],
+          "expressive-gradient-green-start": [
+            r.I.ILLO_GREEN_5,
+            r.I.ILLO_GREEN_1,
+            r.I.ILLO_GREEN_5,
+            r.I.ILLO_GREEN_5,
+          ],
+          "expressive-gradient-nitro-green-end": [
+            r.I.ILLO_NITRO_BLUE,
+            r.I.ILLO_BLUE_4,
+            r.I.ILLO_NITRO_BLUE,
+            r.I.ILLO_NITRO_BLUE,
+          ],
+          "expressive-gradient-nitro-green-start": [
+            r.I.ILLO_GREEN_5,
+            r.I.ILLO_GREEN_1,
+            r.I.ILLO_GREEN_5,
+            r.I.ILLO_GREEN_5,
+          ],
+          "expressive-gradient-nitro-pink-end": [
+            r.I.ILLO_NITRO_BLUE,
+            r.I.ILLO_BLUE_4,
+            r.I.ILLO_NITRO_BLUE,
+            r.I.ILLO_NITRO_BLUE,
+          ],
+          "expressive-gradient-nitro-pink-start": [
+            r.I.ILLO_PINK_6,
+            r.I.ILLO_PINK_3,
+            r.I.ILLO_PINK_6,
+            r.I.ILLO_PINK_6,
+          ],
+          "expressive-gradient-pink-end": [
+            r.I.ILLO_PINK_7,
+            r.I.ILLO_PINK_3,
+            r.I.ILLO_PINK_7,
+            r.I.ILLO_PINK_7,
+          ],
+          "expressive-gradient-pink-start": [
+            r.I.ILLO_PINK_5,
+            r.I.ILLO_PINK_1,
+            r.I.ILLO_PINK_5,
+            r.I.ILLO_PINK_5,
+          ],
+          "expressive-gradient-purple-end": [
+            r.I.ILLO_PURPLE_6,
+            r.I.ILLO_PURPLE_3,
+            r.I.ILLO_PURPLE_6,
+            r.I.ILLO_PURPLE_6,
+          ],
+          "expressive-gradient-purple-start": [
+            r.I.ILLO_PURPLE_4,
+            r.I.ILLO_PURPLE_1,
+            r.I.ILLO_PURPLE_4,
+            r.I.ILLO_PURPLE_4,
           ],
           "focus-primary": [
             r.I.BLUE_345,
@@ -22699,13 +22701,13 @@
                 r + "(" + a.join(",") + ")"
               );
             },
-            m = Math.round,
-            v = i.unpack,
+            v = Math.round,
+            m = i.unpack,
             y = Math.round,
             S = function () {
               for (var t, e, a, r, _ = [], n = arguments.length; n--; )
                 _[n] = arguments[n];
-              var o = (_ = v(_, "hsl"))[0],
+              var o = (_ = m(_, "hsl"))[0],
                 i = _[1],
                 c = _[2];
               if (0 === i) e = a = r = 255 * c;
@@ -22797,9 +22799,9 @@
                 r = D(t) || "rgb";
               return "hsl" == r.substr(0, 3)
                 ? C(P(a), r)
-                : ((a[0] = m(a[0])),
-                  (a[1] = m(a[1])),
-                  (a[2] = m(a[2])),
+                : ((a[0] = v(a[0])),
+                  (a[1] = v(a[1])),
+                  (a[2] = v(a[2])),
                   ("rgba" === r || (a.length > 3 && a[3] < 1)) &&
                     ((a[3] = a.length > 3 ? a[3] : 1), (r = "rgba")),
                   r + "(" + a.slice(0, "rgb" === r ? 3 : 4).join(",") + ")");
@@ -23223,14 +23225,14 @@
               t3: 0.008856452,
             },
             tC = i.unpack,
-            tm = Math.pow,
-            tv = function (t) {
+            tv = Math.pow,
+            tm = function (t) {
               return (t /= 255) <= 0.04045
                 ? t / 12.92
-                : tm((t + 0.055) / 1.055, 2.4);
+                : tv((t + 0.055) / 1.055, 2.4);
             },
             ty = function (t) {
-              return t > tD.t3 ? tm(t, 1 / 3) : t / tD.t2 + tD.t0;
+              return t > tD.t3 ? tv(t, 1 / 3) : t / tD.t2 + tD.t0;
             },
             tS = function () {
               for (var t, e, a, r = [], _ = arguments.length; _--; )
@@ -23242,9 +23244,9 @@
                   (a = n[2]),
                   [
                     ty(
-                      (0.4124564 * (t = tv(t)) +
-                        0.3575761 * (e = tv(e)) +
-                        0.1804375 * (a = tv(a))) /
+                      (0.4124564 * (t = tm(t)) +
+                        0.3575761 * (e = tm(e)) +
+                        0.1804375 * (a = tm(a))) /
                         tD.Xn,
                     ),
                     ty((0.2126729 * t + 0.7151522 * e + 0.072175 * a) / tD.Yn),
@@ -23894,15 +23896,15 @@
                 ).rgb();
               return new u(_.concat([this._rgb[3]]));
             }
-            return em.apply(void 0, this._rgb.slice(0, 3));
+            return ev.apply(void 0, this._rgb.slice(0, 3));
           };
-          var em = function (t, e, a) {
+          var ev = function (t, e, a) {
               return (
-                (t = ev(t)),
-                0.2126 * t + 0.7152 * (e = ev(e)) + 0.0722 * (a = ev(a))
+                (t = em(t)),
+                0.2126 * t + 0.7152 * (e = em(e)) + 0.0722 * (a = em(a))
               );
             },
-            ev = function (t) {
+            em = function (t) {
               return (t /= 255) <= 0.03928
                 ? t / 12.92
                 : eC((t + 0.055) / 1.055, 2.4);
@@ -24618,12 +24620,12 @@
                     for (var P = 0; P < a; P++) T[P] = 0;
                     for (var g = 0; g < f; g++)
                       for (
-                        var D = o[g], C = Number.MAX_VALUE, m = void 0, v = 0;
-                        v < a;
-                        v++
+                        var D = o[g], C = Number.MAX_VALUE, v = void 0, m = 0;
+                        m < a;
+                        m++
                       ) {
-                        var y = ae(h[v] - D);
-                        y < C && ((C = y), (m = v)), T[m]++, (A[g] = m);
+                        var y = ae(h[m] - D);
+                        y < C && ((C = y), (v = m)), T[v]++, (A[g] = v);
                       }
                     for (var S = Array(a), U = 0; U < a; U++) S[U] = null;
                     for (var b = 0; b < f; b++)
@@ -25256,21 +25258,21 @@
                 g = n(ac(R, p)),
                 D = P >= 0 ? P : P + 360,
                 C = g >= 0 ? g : g + 360,
-                m = as(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
-                v =
+                v = as(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
+                m =
                   1 -
-                  0.17 * aE(o(m - 30)) +
-                  0.24 * aE(o(2 * m)) +
-                  0.32 * aE(o(3 * m + 6)) -
-                  0.2 * aE(o(4 * m - 63)),
+                  0.17 * aE(o(v - 30)) +
+                  0.24 * aE(o(2 * v)) +
+                  0.32 * aE(o(3 * v + 6)) -
+                  0.2 * aE(o(4 * v - 63)),
                 y = C - D;
               (y = 180 >= as(y) ? y : C <= D ? y + 360 : y - 360),
                 (y = 2 * a_(L * h) * al(o(y) / 2));
               var S = h - L,
                 U = 1 + (0.015 * an(N - 50, 2)) / a_(20 + an(N - 50, 2)),
                 b = 1 + 0.045 * O,
-                G = 1 + 0.015 * O * v,
-                W = 30 * au(-an((m - 275) / 25, 2)),
+                G = 1 + 0.015 * O * m,
+                W = 30 * au(-an((v - 275) / 25, 2)),
                 w = -(2 * a_(an(O, 7) / (an(O, 7) + an(25, 7)))) * al(2 * o(W));
               return ai(
                 0,
@@ -26092,8 +26094,8 @@
         t.exports = function (t, e, a, o, d, N, D) {
           c(a, e, o);
           var C,
-            m,
             v,
+            m,
             y = function (t) {
               if (t === d && W) return W;
               if (!p && t && t in b) return b[t];
@@ -26134,11 +26136,11 @@
                   }))),
             d)
           )
-            if (((m = { values: y(O), keys: N ? W : y(h), entries: y(P) }), D))
-              for (v in m) (!p && !U && v in b) || I(b, v, m[v]);
-            else r({ target: e, proto: !0, forced: p || U }, m);
+            if (((v = { values: y(O), keys: N ? W : y(h), entries: y(P) }), D))
+              for (m in v) (!p && !U && m in b) || I(b, m, v[m]);
+            else r({ target: e, proto: !0, forced: p || U }, v);
           return (
-            (!n || D) && b[L] !== W && I(b, L, W, { name: d }), (R[e] = W), m
+            (!n || D) && b[L] !== W && I(b, L, W, { name: d }), (R[e] = W), v
           );
         };
       },
@@ -26609,20 +26611,20 @@
               );
             var D = I.groups,
               C = O && this.sticky,
-              m = n(c, this),
-              v = this.source,
+              v = n(c, this),
+              m = this.source,
               y = 0,
               S = d;
             if (
               (C &&
-                (-1 === T((m = p(m, "y", "")), "g") && (m += "g"),
+                (-1 === T((v = p(v, "y", "")), "g") && (v += "g"),
                 (S = L(d, this.lastIndex)),
                 this.lastIndex > 0 &&
                   (!this.multiline ||
                     (this.multiline && "\n" !== A(d, this.lastIndex - 1))) &&
-                  ((v = "(?: " + v + ")"), (S = " " + S), y++),
-                (a = RegExp("^(?:" + v + ")", m))),
-              P && (a = RegExp("^" + v + "$(?!\\s)", m)),
+                  ((m = "(?: " + m + ")"), (S = " " + S), y++),
+                (a = RegExp("^(?:" + m + ")", v))),
+              P && (a = RegExp("^" + m + "$(?!\\s)", v)),
               h && (r = this.lastIndex),
               (_ = n(N, C ? a : this, S)),
               C
@@ -27598,9 +27600,9 @@
             reportingObserverIntegration: () => X.y,
             rewriteFramesIntegration: () => C.v,
             sendFeedback: () => tt.fA,
-            sessionTimingIntegration: () => m.r,
+            sessionTimingIntegration: () => v.r,
             setContext: () => i.v,
-            setCurrentClient: () => v.K,
+            setCurrentClient: () => m.K,
             setExtra: () => i.sU,
             setExtras: () => i.rJ,
             setHttpStatus: () => L.Q0,
@@ -27651,8 +27653,8 @@
           g = a(971304),
           D = a(859502),
           C = a(757502),
-          m = a(726318),
-          v = a(511906),
+          v = a(726318),
+          m = a(511906),
           y = a(241225),
           S = a(305625),
           U = a(925746),
@@ -28668,14 +28670,14 @@
       748688: function (t, e, a) {
         "use strict";
         a.d(e, {
-          $X: () => m,
+          $X: () => v,
           AJ: () => O,
           Ei: () => C,
           GC: () => U,
           WU: () => D,
           db: () => h,
           dz: () => b,
-          nm: () => v,
+          nm: () => m,
           ph: () => S,
           x5: () => L,
         });
@@ -28777,7 +28779,7 @@
               (g = !0);
           }
         }
-        function m(t) {
+        function v(t) {
           if (g)
             return (
               l.X &&
@@ -28838,7 +28840,7 @@
                   ),
                 !1);
         }
-        function v(t, e, a, _) {
+        function m(t, e, a, _) {
           var s;
           if (
             !(a.samples.length < 2
@@ -29034,11 +29036,11 @@
       509068: function (t, e, a) {
         "use strict";
         a.d(e, {
-          Eg: () => m,
+          Eg: () => v,
           Jd: () => y,
           S1: () => D,
           jp: () => C,
-          lA: () => v,
+          lA: () => m,
           nV: () => g,
         });
         var r = a(636361),
@@ -29193,8 +29195,8 @@
                 "Not injecting report dialog. No injection point found in HTML",
               );
         }
-        function m() {}
-        function v(t) {
+        function v() {}
+        function m(t) {
           t();
         }
         function y(t) {
@@ -29390,8 +29392,8 @@
                 beforeStartSpan: h,
                 idleTimeout: D,
                 finalTimeout: C,
-                childSpanTimeout: m,
-                markBackgroundSpan: v,
+                childSpanTimeout: v,
+                markBackgroundSpan: m,
                 traceFetch: y,
                 traceXHR: S,
                 shouldCreateSpanForRequest: U,
@@ -29419,7 +29421,7 @@
               let i = (0, o.R)(_, {
                 idleTimeout: D,
                 finalTimeout: C,
-                childSpanTimeout: m,
+                childSpanTimeout: v,
                 disableAutoFinish: a,
                 beforeSpanEnd: (t) => {
                   w(), (0, r.f7)(t);
@@ -29514,11 +29516,11 @@
                             },
                           }));
                       })),
-                  v && (0, T.j)(),
+                  m && (0, T.j)(),
                   N &&
                     ((a = D),
                     (r = C),
-                    (i = m),
+                    (i = v),
                     (R = M),
                     A.m9.document &&
                       addEventListener(
@@ -29628,8 +29630,8 @@
               enableHTTPTimings: P,
               tracePropagationTargets: D,
             } = { traceFetch: O.traceFetch, traceXHR: O.traceXHR, ...e },
-            m = "function" == typeof N ? N : (t) => !0,
-            v = (t) =>
+            v = "function" == typeof N ? N : (t) => !0,
+            m = (t) =>
               (function (t, e) {
                 let a = p.m9.location && p.m9.location.href;
                 if (a) {
@@ -29672,7 +29674,7 @@
               }
             }),
             (0, d.Uf)((t) => {
-              let e = (0, n.m)(t, m, v, y);
+              let e = (0, n.m)(t, v, m, y);
               if (
                 (t.response &&
                   t.fetchData.__span &&
@@ -29751,7 +29753,7 @@
                       })(n, O, (0, i.z)() && L ? h : void 0),
                     h
                   );
-                })(t, m, v, y);
+                })(t, v, m, y);
                 P && e && g(e);
               });
         }
@@ -32818,7 +32820,7 @@ Event: ${(0, _.jH)(s)}`),
           if (!g || !(0, c.z)()) return new l.b();
           let D = (0, n.nZ)(),
             C = (0, E.HN)(),
-            m = (function (t) {
+            v = (function (t) {
               let e = (0, I.qp)(t);
               return (
                 (0, s.D)((0, n.nZ)(), e),
@@ -32826,28 +32828,28 @@ Event: ${(0, _.jH)(s)}`),
                 e
               );
             })(t);
-          function v() {
+          function m() {
             a && (clearTimeout(a), (a = void 0));
           }
           function y(t) {
-            v(),
+            m(),
               (a = setTimeout(() => {
-                !f && 0 === N.size && T && ((A = "idleTimeout"), m.end(t));
+                !f && 0 === N.size && T && ((A = "idleTimeout"), v.end(t));
               }, L));
           }
           function S(t) {
             a = setTimeout(() => {
-              !f && T && ((A = "heartbeatFailed"), m.end(t));
+              !f && T && ((A = "heartbeatFailed"), v.end(t));
             }, O);
           }
           function U(t) {
             (f = !0), N.clear(), p.forEach((t) => t()), (0, s.D)(D, C);
-            let e = (0, E.XU)(m),
+            let e = (0, E.XU)(v),
               { start_timestamp: a } = e;
             if (!a) return;
-            (e.data || {})[i.ju] || m.setAttribute(i.ju, A),
+            (e.data || {})[i.ju] || v.setAttribute(i.ju, A),
               _.kg.log(`[Tracing] Idle span "${e.op}" finished`);
-            let r = (0, E.Dp)(m).filter((t) => t !== m),
+            let r = (0, E.Dp)(v).filter((t) => t !== v),
               n = 0;
             r.forEach((e) => {
               e.isRecording() &&
@@ -32874,22 +32876,22 @@ Event: ${(0, _.jH)(s)}`),
                       t,
                     );
               }
-              (!c || !i) && ((0, E.ed)(m, e), n++);
+              (!c || !i) && ((0, E.ed)(v, e), n++);
             }),
-              n > 0 && m.setAttribute("sentry.idle_span_discarded_spans", n);
+              n > 0 && v.setAttribute("sentry.idle_span_discarded_spans", n);
           }
           return (
-            (m.end = new Proxy(m.end, {
+            (v.end = new Proxy(v.end, {
               apply(t, e, a) {
-                P && P(m);
+                P && P(v);
                 let [_, ...n] = a,
                   o = _ || (0, r.ph)(),
                   i = (0, E.$k)(o),
-                  c = (0, E.Dp)(m).filter((t) => t !== m);
+                  c = (0, E.Dp)(v).filter((t) => t !== v);
                 if (!c.length) return U(i), Reflect.apply(t, e, [i, ...n]);
                 let s = c.map((t) => (0, E.XU)(t).timestamp).filter((t) => !!t),
                   l = s.length ? Math.max(...s) : void 0,
-                  u = (0, E.XU)(m).start_timestamp,
+                  u = (0, E.XU)(v).start_timestamp,
                   I = Math.min(
                     u ? u + h / 1e3 : 1 / 0,
                     Math.max(u || -1 / 0, Math.min(i, l || 1 / 0)),
@@ -32901,11 +32903,11 @@ Event: ${(0, _.jH)(s)}`),
               g.on("spanStart", (t) => {
                 var e;
                 f ||
-                  t === m ||
+                  t === v ||
                   (0, E.XU)(t).timestamp ||
-                  ((0, E.Dp)(m).includes(t) &&
+                  ((0, E.Dp)(v).includes(t) &&
                     ((e = t.spanContext().spanId),
-                    v(),
+                    m(),
                     N.set(e, !0),
                     S((0, r.ph)() + O / 1e3)));
               }),
@@ -32922,17 +32924,17 @@ Event: ${(0, _.jH)(s)}`),
             ),
             p.push(
               g.on("idleSpanEnableAutoFinish", (t) => {
-                t === m && ((T = !0), y(), N.size && S());
+                t === v && ((T = !0), y(), N.size && S());
               }),
             ),
             e.disableAutoFinish || y(),
             setTimeout(() => {
               f ||
-                (m.setStatus({ code: u.jt, message: "deadline_exceeded" }),
+                (v.setStatus({ code: u.jt, message: "deadline_exceeded" }),
                 (A = "finalTimeout"),
-                m.end());
+                v.end());
             }, h),
-            m
+            v
           );
         }
       },
@@ -33357,7 +33359,7 @@ Event: ${(0, _.jH)(s)}`),
         "use strict";
         a.d(e, {
           GK: () => O,
-          Iw: () => m,
+          Iw: () => v,
           V0: () => P,
           _d: () => C,
           qp: () => g,
@@ -33395,7 +33397,7 @@ Event: ${(0, _.jH)(s)}`),
                 o =
                   t.onlyIfParent && !n
                     ? new A.b()
-                    : v({
+                    : m({
                         parentSpan: n,
                         spanArguments: r,
                         forceTransaction: _,
@@ -33429,7 +33431,7 @@ Event: ${(0, _.jH)(s)}`),
                 o =
                   t.onlyIfParent && !n
                     ? new A.b()
-                    : v({
+                    : m({
                         parentSpan: n,
                         spanArguments: r,
                         forceTransaction: _,
@@ -33469,7 +33471,7 @@ Event: ${(0, _.jH)(s)}`),
               _ = b(e);
             return t.onlyIfParent && !_
               ? new A.b()
-              : v({
+              : m({
                   parentSpan: _,
                   spanArguments: a,
                   forceTransaction: r,
@@ -33488,7 +33490,7 @@ Event: ${(0, _.jH)(s)}`),
             ? a.withActiveSpan(t, e)
             : (0, i.$e)((a) => ((0, I.D)(a, t || void 0), e(a)));
         }
-        function m(t) {
+        function v(t) {
           return (0, i.$e)(
             (e) => (
               e.setPropagationContext((0, _.Q)()),
@@ -33500,7 +33502,7 @@ Event: ${(0, _.jH)(s)}`),
             ),
           );
         }
-        function v({
+        function m({
           parentSpan: t,
           spanArguments: e,
           forceTransaction: a,
@@ -34241,8 +34243,8 @@ Event: ${(0, _.jH)(s)}`),
         a.d(e, {
           $k: () => A,
           Dp: () => C,
-          Gx: () => m,
-          HN: () => v,
+          Gx: () => v,
+          HN: () => m,
           HR: () => R,
           Hb: () => f,
           Tt: () => L,
@@ -34369,16 +34371,16 @@ Event: ${(0, _.jH)(s)}`),
             Array.from(e)
           );
         }
-        function m(t) {
+        function v(t) {
           return t[P] || t;
         }
-        function v() {
+        function m() {
           let t = (0, i.c)(),
             e = (0, o.G)(t);
           return e.getActiveSpan ? e.getActiveSpan() : (0, u.Y)((0, c.nZ)());
         }
         function y(t, e, a, r, _, n) {
-          let o = v();
+          let o = m();
           o && (0, s.V)(o, t, e, a, r, _, n);
         }
       },
@@ -36902,25 +36904,25 @@ Error:`,
                 g = p.getUser(),
                 D = a.getIntegrationByName("Replay"),
                 C = D && D.getReplayId(),
-                m = void 0 !== g ? g.email || g.id || g.ip_address : void 0;
+                v = void 0 !== g ? g.email || g.id || g.ip_address : void 0;
               try {
                 e = p.getScopeData().contexts.profile.profile_id;
               } catch (t) {}
-              let v = (0, c.Rt)(l.target),
+              let m = (0, c.Rt)(l.target),
                 y = (0, s.Jr)({
                   release: f.release,
                   environment: f.environment,
                   transaction: P,
                   [n.JQ]: t.value,
                   [n.S3]: "auto.http.browser.inp",
-                  user: m || void 0,
+                  user: v || void 0,
                   profile_id: e || void 0,
                   replay_id: C || void 0,
                   "user_agent.original":
                     E.m.navigator && E.m.navigator.userAgent,
                 }),
                 S = (0, o.qp)({
-                  name: v,
+                  name: m,
                   op: `ui.interaction.${R}`,
                   attributes: y,
                   startTime: A,
@@ -37009,13 +37011,13 @@ Error:`,
           return S("cls", t, D, r, e);
         }
         function p(t, e = !1) {
-          return S("lcp", t, m, n, e);
+          return S("lcp", t, v, n, e);
         }
         function L(t) {
           return S("fid", t, C, _);
         }
         function h(t) {
-          return S("ttfb", t, v, o);
+          return S("ttfb", t, m, o);
         }
         function O(t) {
           return S("inp", t, y, i);
@@ -37069,7 +37071,7 @@ Error:`,
             g("fid", { metric: t }), (_ = t);
           });
         }
-        function m() {
+        function v() {
           return (0, d.N)(
             (t) => {
               g("lcp", { metric: t }), (n = t);
@@ -37077,7 +37079,7 @@ Error:`,
             { reportAllChanges: !0 },
           );
         }
-        function v() {
+        function m() {
           return (0, N.m)((t) => {
             g("ttfb", { metric: t }), (o = t);
           });
@@ -37658,8 +37660,8 @@ Error:`,
                 });
             });
           },
-          m = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function v(t, e) {
+          v = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
+        function m(t, e) {
           return {
             ...t,
             ...e,
@@ -37895,7 +37897,7 @@ ${
                   ]);
                 if (!_)
                   throw (
-                    (m &&
+                    (v &&
                       i.kg.error(
                         "[Feedback] Missing feedback modal integration. Try using `feedbackSyncIntegration` in your `Sentry.init`.",
                       ),
@@ -37904,7 +37906,7 @@ ${
                 return (
                   r &&
                     !n &&
-                    m &&
+                    v &&
                     i.kg.error(
                       "[Feedback] Missing feedback screenshot integration. Proceeding without screenshots.",
                     ),
@@ -37917,7 +37919,7 @@ ${
                 );
               },
               tf = (t, e = {}) => {
-                let a = v(tl, e),
+                let a = m(tl, e),
                   r =
                     "string" == typeof t
                       ? E.querySelector(t)
@@ -37926,7 +37928,7 @@ ${
                         : null;
                 if (!r)
                   throw (
-                    (m &&
+                    (v &&
                       i.kg.error(
                         "[Feedback] Unable to attach to target element",
                       ),
@@ -37958,7 +37960,7 @@ ${
                 return tI.push(o), o;
               },
               tA = (t = {}) => {
-                let e = v(tl, t),
+                let e = m(tl, t),
                   a = td(e),
                   r = (function ({
                     triggerLabel: t,
@@ -38118,10 +38120,10 @@ ${
               },
               attachTo: tf,
               createWidget(t = {}) {
-                let e = tA(v(tl, t));
+                let e = tA(m(tl, t));
                 return e.appendToDom(), e;
               },
-              createForm: async (t = {}) => tN(v(tl, t)),
+              createForm: async (t = {}) => tN(m(tl, t)),
               remove() {
                 tu &&
                   (tu.parentElement && tu.parentElement.remove(), (tu = null)),
@@ -38847,10 +38849,10 @@ ${
           var a = td.__H || (td.__H = { __: [], __h: [] });
           return t >= a.__.length && a.__.push({ __V: tT }), a.__[t];
         }
-        function tm(t) {
-          return (tf = 1), tv(tB, t);
+        function tv(t) {
+          return (tf = 1), tm(tB, t);
         }
-        function tv(t, e, a) {
+        function tm(t, e, a) {
           var r = tC(tI++, 2);
           if (
             ((r.t = t),
@@ -39060,7 +39062,7 @@ ${
             },
             useErrorBoundary: function (t) {
               var e = tC(tI++, 10),
-                a = tm();
+                a = tv();
               return (
                 (e.__ = t),
                 td.componentDidCatch ||
@@ -39106,7 +39108,7 @@ ${
             },
             useLayoutEffect: ty,
             useMemo: tS,
-            useReducer: tv,
+            useReducer: tm,
             useRef: function (t) {
               return (
                 (tf = 5),
@@ -39115,7 +39117,7 @@ ${
                 }, [])
               );
             },
-            useState: tm,
+            useState: tv,
           },
           tH =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
@@ -39196,12 +39198,12 @@ ${
               submitButtonLabel: O,
               isRequiredLabel: P,
             } = t,
-            [g, D] = tm(null),
-            [C, v] = tm(!1),
+            [g, D] = tv(null),
+            [C, m] = tv(!1),
             y = E && E.input,
-            [S, U] = tm(null),
+            [S, U] = tv(null),
             b = tU((t) => {
-              U(t), v(!1);
+              U(t), m(!1);
             }, []),
             G = tU(
               (t) => {
@@ -39265,7 +39267,7 @@ ${
                       ),
                         n(r);
                     } catch (t) {
-                      m && i.kg.error(t), D(t), o(t);
+                      v && i.kg.error(t), D(t), o(t);
                     }
                   } catch (t) {}
                 },
@@ -39421,7 +39423,7 @@ ${
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            U(null), v((t) => !t);
+                            U(null), m((t) => !t);
                           },
                           __self: this,
                           __source: { fileName: tk, lineNumber: 202 },
@@ -39541,7 +39543,7 @@ ${
               }),
               [],
             ),
-            [n, o] = tm(null),
+            [n, o] = tv(null),
             i = tU(() => {
               n && (clearTimeout(n), o(null)), e();
             }, [n]),
@@ -40764,7 +40766,7 @@ ${tZ}
         let D = new Map(),
           C = (t, e, a) => {
             let r;
-            if (!t || !(v(t, e) || "object" == typeof t)) return;
+            if (!t || !(m(t, e) || "object" == typeof t)) return;
             let _ = t.constructor.name,
               n =
                 ((r = D.get(a)) || ((r = new Map()), D.set(a, r)),
@@ -40773,7 +40775,7 @@ ${tZ}
               o = n.indexOf(t);
             return -1 === o && ((o = n.length), n.push(t)), o;
           },
-          m = (t, e, a) =>
+          v = (t, e, a) =>
             t.map((t) =>
               (function t(e, a, r) {
                 if (e instanceof Array) return e.map((e) => t(e, a, r));
@@ -40811,12 +40813,12 @@ ${tZ}
                     rr_type: e.constructor.name,
                     args: [t(e.data, a, r), e.width, e.height],
                   };
-                else if (v(e, a) || "object" == typeof e)
+                else if (m(e, a) || "object" == typeof e)
                   return { rr_type: e.constructor.name, index: C(e, a, r) };
                 return e;
               })(t, e, a),
             ),
-          v = (t, e) =>
+          m = (t, e) =>
             !![
               "WebGLActiveInfo",
               "WebGLBuffer",
@@ -40886,7 +40888,7 @@ ${tZ}
                       (C(s, i, this),
                       "tagName" in this.canvas && !R(this.canvas, r, _, n, !0))
                     ) {
-                      let t = m(c, i, this),
+                      let t = v(c, i, this),
                         r = { type: e, property: o, args: t };
                       a(this.canvas, r);
                     }
@@ -41113,7 +41115,7 @@ ${tZ}
                           return (
                             R(this.canvas, a, r, _, !0) ||
                               T(() => {
-                                let a = m(i, e, this);
+                                let a = v(i, e, this);
                                 t(this.canvas, {
                                   type: p["2D"],
                                   property: o,
@@ -41392,8 +41394,8 @@ ${tZ}
           g = a(988097),
           D = a(820754),
           C = a(899517),
-          m = a(202811),
-          v = a(370336),
+          v = a(202811),
+          m = a(370336),
           y = a(467510),
           S = a(101284),
           U = a(622916),
@@ -41747,7 +41749,7 @@ ${tZ}
             }
           };
         }
-        function tm(t, e, a, r, _, n) {
+        function tv(t, e, a, r, _, n) {
           try {
             let o = t.nodeType === t.ELEMENT_NODE ? t : t.parentElement;
             if (null === o) return !1;
@@ -41779,7 +41781,7 @@ ${tZ}
           } catch (t) {}
           return !!n;
         }
-        function tv(t) {
+        function tm(t) {
           return null == t ? "" : t.toLowerCase();
         }
         function ty(t, e) {
@@ -41807,8 +41809,8 @@ ${tZ}
               recordCanvas: g = !1,
               onSerialize: D,
               onIframeLoad: C,
-              iframeLoadTimeout: m = 5e3,
-              onStylesheetLoad: v,
+              iframeLoadTimeout: v = 5e3,
+              onStylesheetLoad: m,
               stylesheetLoadTimeout: y = 5e3,
               keepIframeSrcFn: S = () => !1,
               newlyAddedElement: U = !1,
@@ -41903,8 +41905,8 @@ ${tZ}
                         return tI.test(e) ? "div" : e;
                       })(t),
                       C = {},
-                      m = t.attributes.length;
-                    for (let e = 0; e < m; e++) {
+                      v = t.attributes.length;
+                    for (let e = 0; e < v; e++) {
                       let a = t.attributes[e];
                       a.name &&
                         !tg(D, a.name, a.value) &&
@@ -41939,7 +41941,7 @@ ${tZ}
                         a = to(t, tr(D), e),
                         r = t.checked;
                       if ("submit" !== e && "button" !== e && a) {
-                        let r = tm(
+                        let r = tv(
                           t,
                           L,
                           O,
@@ -42116,7 +42118,7 @@ ${tZ}
                       u = tT(u, tO());
                     }
                     d && (u = "SCRIPT_PLACEHOLDER");
-                    let f = tm(t, r, n, _, o, a);
+                    let f = tv(t, r, n, _, o, a);
                     return (
                       I ||
                         d ||
@@ -42133,7 +42135,7 @@ ${tZ}
                       "OPTION" === l &&
                         u &&
                         (u = te({
-                          isMasked: tm(
+                          isMasked: tv(
                             t,
                             r,
                             n,
@@ -42220,33 +42222,33 @@ ${tZ}
                       (("link" === t.tagName &&
                         "shortcut icon" === t.attributes.rel) ||
                         ("meta" === t.tagName &&
-                          (tv(t.attributes.name).match(
+                          (tm(t.attributes.name).match(
                             /^msapplication-tile(image|color)$/,
                           ) ||
-                            "application-name" === tv(t.attributes.name) ||
-                            "icon" === tv(t.attributes.rel) ||
-                            "apple-touch-icon" === tv(t.attributes.rel) ||
-                            "shortcut icon" === tv(t.attributes.rel))))
+                            "application-name" === tm(t.attributes.name) ||
+                            "icon" === tm(t.attributes.rel) ||
+                            "apple-touch-icon" === tm(t.attributes.rel) ||
+                            "shortcut icon" === tm(t.attributes.rel))))
                     )
                       return !0;
                     else if ("meta" === t.tagName) {
                       if (
                         e.headMetaDescKeywords &&
-                        tv(t.attributes.name).match(/^description|keywords$/)
+                        tm(t.attributes.name).match(/^description|keywords$/)
                       )
                         return !0;
                       else if (
                         e.headMetaSocial &&
-                        (tv(t.attributes.property).match(/^(og|twitter|fb):/) ||
-                          tv(t.attributes.name).match(/^(og|twitter):/) ||
-                          "pinterest" === tv(t.attributes.name))
+                        (tm(t.attributes.property).match(/^(og|twitter|fb):/) ||
+                          tm(t.attributes.name).match(/^(og|twitter):/) ||
+                          "pinterest" === tm(t.attributes.name))
                       )
                         return !0;
                       else if (
                         e.headMetaRobots &&
-                        ("robots" === tv(t.attributes.name) ||
-                          "googlebot" === tv(t.attributes.name) ||
-                          "bingbot" === tv(t.attributes.name))
+                        ("robots" === tm(t.attributes.name) ||
+                          "googlebot" === tm(t.attributes.name) ||
+                          "bingbot" === tm(t.attributes.name))
                       )
                         return !0;
                       else if (
@@ -42256,25 +42258,25 @@ ${tZ}
                         return !0;
                       else if (
                         e.headMetaAuthorship &&
-                        ("author" === tv(t.attributes.name) ||
-                          "generator" === tv(t.attributes.name) ||
-                          "framework" === tv(t.attributes.name) ||
-                          "publisher" === tv(t.attributes.name) ||
-                          "progid" === tv(t.attributes.name) ||
-                          tv(t.attributes.property).match(/^article:/) ||
-                          tv(t.attributes.property).match(/^product:/))
+                        ("author" === tm(t.attributes.name) ||
+                          "generator" === tm(t.attributes.name) ||
+                          "framework" === tm(t.attributes.name) ||
+                          "publisher" === tm(t.attributes.name) ||
+                          "progid" === tm(t.attributes.name) ||
+                          tm(t.attributes.property).match(/^article:/) ||
+                          tm(t.attributes.property).match(/^product:/))
                       )
                         return !0;
                       else if (
                         e.headMetaVerification &&
-                        ("google-site-verification" === tv(t.attributes.name) ||
-                          "yandex-verification" === tv(t.attributes.name) ||
-                          "csrf-token" === tv(t.attributes.name) ||
-                          "p:domain_verify" === tv(t.attributes.name) ||
-                          "verify-v1" === tv(t.attributes.name) ||
-                          "verification" === tv(t.attributes.name) ||
+                        ("google-site-verification" === tm(t.attributes.name) ||
+                          "yandex-verification" === tm(t.attributes.name) ||
+                          "csrf-token" === tm(t.attributes.name) ||
+                          "p:domain_verify" === tm(t.attributes.name) ||
+                          "verify-v1" === tm(t.attributes.name) ||
+                          "verification" === tm(t.attributes.name) ||
                           "shopify-checkout-api-token" ===
-                            tv(t.attributes.name))
+                            tm(t.attributes.name))
                       )
                         return !0;
                     }
@@ -42325,8 +42327,8 @@ ${tZ}
               preserveWhiteSpace: b,
               onSerialize: D,
               onIframeLoad: C,
-              iframeLoadTimeout: m,
-              onStylesheetLoad: v,
+              iframeLoadTimeout: v,
+              onStylesheetLoad: m,
               stylesheetLoadTimeout: y,
               keepIframeSrcFn: S,
             };
@@ -42400,15 +42402,15 @@ ${tZ}
                       preserveWhiteSpace: b,
                       onSerialize: D,
                       onIframeLoad: C,
-                      iframeLoadTimeout: m,
-                      onStylesheetLoad: v,
+                      iframeLoadTimeout: v,
+                      onStylesheetLoad: m,
                       stylesheetLoadTimeout: y,
                       keepIframeSrcFn: S,
                     });
                     a && C(t, a);
                   }
                 },
-                m,
+                v,
               ),
             W.type === R.Element &&
               "link" === W.tagName &&
@@ -42435,7 +42437,7 @@ ${tZ}
               })(
                 t,
                 () => {
-                  if (v) {
+                  if (m) {
                     let e = ty(t, {
                       doc: n,
                       mirror: o,
@@ -42460,12 +42462,12 @@ ${tZ}
                       preserveWhiteSpace: b,
                       onSerialize: D,
                       onIframeLoad: C,
-                      iframeLoadTimeout: m,
-                      onStylesheetLoad: v,
+                      iframeLoadTimeout: v,
+                      onStylesheetLoad: m,
                       stylesheetLoadTimeout: y,
                       keepIframeSrcFn: S,
                     });
-                    e && v(t, e);
+                    e && m(t, e);
                   }
                 },
                 y,
@@ -43083,7 +43085,7 @@ ${tZ}
                         e === t.oldValue ||
                         this.texts.push({
                           value:
-                            tm(
+                            tv(
                               t.target,
                               this.maskTextClass,
                               this.maskTextSelector,
@@ -43113,7 +43115,7 @@ ${tZ}
                           type: a,
                         });
                         r = te({
-                          isMasked: tm(
+                          isMasked: tv(
                             t.target,
                             this.maskTextClass,
                             this.maskTextSelector,
@@ -43755,7 +43757,7 @@ ${tZ}
                   p = to(A, N, T),
                   L = !1,
                   h = tt({ maskInputOptions: c, tagName: N, type: T }),
-                  O = tm(a, u, d, I, R, h);
+                  O = tv(a, u, d, I, R, h);
                 ("radio" === T || "checkbox" === T) && (L = a.checked),
                   (p = te({
                     isMasked: O,
@@ -44769,8 +44771,8 @@ ${tZ}
               maskTextFn: g,
               maxCanvasSize: D = null,
               packFn: C,
-              sampling: m = {},
-              dataURLOptions: v = {},
+              sampling: v = {},
+              dataURLOptions: m = {},
               mousemoveWait: y,
               recordDOM: S = !0,
               recordCanvas: U = !1,
@@ -44798,7 +44800,7 @@ ${tZ}
               V = !0;
             }
           if (F && !a) throw Error("emit function is required");
-          void 0 !== y && void 0 === m.mousemove && (m.mousemove = y),
+          void 0 !== y && void 0 === v.mousemove && (v.mousemove = y),
             eO.reset();
           let j =
               !0 === p
@@ -44963,8 +44965,8 @@ ${tZ}
               blockSelector: s,
               unblockSelector: E,
               maxCanvasSize: D,
-              sampling: m.canvas,
-              dataURLOptions: v,
+              sampling: v.canvas,
+              dataURLOptions: m,
               errorHandler: K,
             }),
             t_ =
@@ -44986,13 +44988,13 @@ ${tZ}
                       unmaskTextSelector: f,
                       inlineStylesheet: T,
                       maskInputOptions: j,
-                      dataURLOptions: v,
+                      dataURLOptions: m,
                       maskAttributeFn: O,
                       maskTextFn: g,
                       maskInputFn: P,
                       recordCanvas: U,
                       inlineImages: M,
-                      sampling: m,
+                      sampling: v,
                       slimDOMOptions: X,
                       iframeManager: te,
                       stylesheetManager: tt,
@@ -45129,7 +45131,7 @@ ${tZ}
                 maskInputFn: P,
                 maskTextFn: g,
                 slimDOM: X,
-                dataURLOptions: v,
+                dataURLOptions: m,
                 recordCanvas: U,
                 inlineImages: M,
                 onSerialize: (t) => {
@@ -45232,7 +45234,7 @@ ${tZ}
                     unmaskTextSelector: f,
                     maskInputOptions: j,
                     inlineStylesheet: T,
-                    sampling: m,
+                    sampling: v,
                     recordDOM: S,
                     recordCanvas: U,
                     inlineImages: M,
@@ -45246,7 +45248,7 @@ ${tZ}
                     blockSelector: s,
                     unblockSelector: E,
                     slimDOMOptions: X,
-                    dataURLOptions: v,
+                    dataURLOptions: m,
                     mirror: eO,
                     iframeManager: te,
                     stylesheetManager: tt,
@@ -45331,18 +45333,18 @@ ${tZ}
                 t.throttledAddEvent({
                   type: t0.Custom,
                   timestamp: 1e3 * (e.timestamp || 0),
-                  data: { tag: "breadcrumb", payload: (0, m.Fv)(e, 10, 1e3) },
+                  data: { tag: "breadcrumb", payload: (0, v.Fv)(e, 10, 1e3) },
                 }),
                 "console" === e.category
               ),
             ));
         }
-        function em(t) {
+        function ev(t) {
           return t.closest("button,a") || t;
         }
-        function ev(t) {
+        function em(t) {
           let e = ey(t);
-          return e && e instanceof Element ? em(e) : e;
+          return e && e instanceof Element ? ev(e) : e;
         }
         function ey(t) {
           var e;
@@ -45376,7 +45378,7 @@ ${tZ}
               }),
               c ||
                 ((c = []),
-                (0, v.hl)(F, "open", function (t) {
+                (0, m.hl)(F, "open", function (t) {
                   return function (...e) {
                     if (c)
                       try {
@@ -45443,7 +45445,7 @@ ${tZ}
             this._lastScroll = eD(t);
           }
           registerClick(t) {
-            let e = em(t);
+            let e = ev(t);
             this._handleMultiClick(e);
           }
           _handleMultiClick(t) {
@@ -45567,7 +45569,7 @@ ${tZ}
                   a = "click" === t.name,
                   r = null;
                 try {
-                  (r = a ? ev(t.event) : ey(t.event)),
+                  (r = a ? em(t.event) : ey(t.event)),
                     (e = (0, y.Rt)(r, { maxStringLength: 200 }) || "<unknown>");
                 } catch (t) {
                   e = "<unknown>";
@@ -45587,7 +45589,7 @@ ${tZ}
               !o.metaKey &&
               !o.ctrlKey &&
               !o.shiftKey &&
-              ((a = t.clickDetector), (r = ev(e.event)), a.handleClick(_, r)),
+              ((a = t.clickDetector), (r = em(e.event)), a.handleClick(_, r)),
               eC(t, _);
           };
         function eM(t, e) {
@@ -46234,7 +46236,7 @@ ${tZ}
             start: a / 1e3,
             end: r / 1e3,
             name: _,
-            data: (0, v.Jr)({
+            data: (0, m.Jr)({
               method: n,
               statusCode: o,
               request: i,
@@ -46566,7 +46568,7 @@ ${tZ}
             eX && U.kg.error("[Replay] Failed to capture xhr breadcrumb", t);
           }
         }
-        async function am(t) {
+        async function av(t) {
           try {
             return Promise.all(
               ai(t, [
@@ -46597,7 +46599,7 @@ ${tZ}
             return [];
           }
         }
-        async function av({ client: t, scope: e, replayId: a, event: r }) {
+        async function am({ client: t, scope: e, replayId: a, event: r }) {
           let _ = {
             event_id: a,
             integrations:
@@ -46661,7 +46663,7 @@ ${tZ}
               segment_id: a,
               replay_type: n.sampled,
             },
-            A = await av({ scope: d, client: I, replayId: e, event: f });
+            A = await am({ scope: d, client: I, replayId: e, event: f });
           if (!A)
             return (
               I.recordDroppedEvent("event_processor", "replay", f),
@@ -47367,7 +47369,7 @@ ${tZ}
                                             : t;
                                         if ("object" == typeof t)
                                           try {
-                                            let e = (0, m.Fv)(t, 7);
+                                            let e = (0, v.Fv)(t, 7);
                                             if (JSON.stringify(e).length > 5e3)
                                               return (
                                                 (a = !0),
@@ -47817,7 +47819,7 @@ ${tZ}
               this.eventBuffer && this.eventBuffer.hasEvents)
             ) {
               if (
-                (await am(this), this.eventBuffer) &&
+                (await av(this), this.eventBuffer) &&
                 t === this.getSessionId()
               )
                 try {
@@ -47965,10 +47967,10 @@ ${tZ}
             ignore: g = [],
             maskFn: D,
             beforeAddRecordingEvent: C,
-            beforeErrorSampling: m,
+            beforeErrorSampling: v,
           } = {}) {
             this.name = aK.id;
-            let v = (function ({
+            let m = (function ({
               mask: t,
               unmask: e,
               block: a,
@@ -48021,12 +48023,12 @@ ${tZ}
                   })({
                     maskAttributes: L,
                     maskAllText: c,
-                    privacyOptions: v,
+                    privacyOptions: m,
                     key: t,
                     value: e,
                     el: a,
                   }),
-                ...v,
+                ...m,
                 slimDOMOptions: "all",
                 inlineStylesheet: !0,
                 inlineImages: !1,
@@ -48058,7 +48060,7 @@ ${tZ}
                 networkRequestHeaders: ak(A),
                 networkResponseHeaders: ak(T),
                 beforeAddRecordingEvent: C,
-                beforeErrorSampling: m,
+                beforeErrorSampling: v,
                 _experiments: i,
               }),
               this._initialOptions.blockAllMedia &&
@@ -48119,7 +48121,7 @@ ${tZ}
                 r = {
                   sessionSampleRate: 0,
                   errorSampleRate: 0,
-                  ...(0, v.Jr)(t),
+                  ...(0, m.Jr)(t),
                 },
                 _ = (0, D.o)(a.replaysSessionSampleRate),
                 n = (0, D.o)(a.replaysOnErrorSampleRate);
@@ -48200,4 +48202,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.66f8818d7739b305.js.map
+//# sourceMappingURL=sentry.e7741f8db52c48b2.js.map
