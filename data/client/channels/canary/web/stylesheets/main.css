@@ -4529,6 +4529,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .button__6af3a:disabled {
   opacity: 0.5;
+  pointer-events: none;
 }
 .buttonChildrenWrapper__6af3a {
   align-items: center;
@@ -58715,4 +58716,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1a1675e3b10fc74c.css.map*/
+/*# sourceMappingURL=12633.2926b395ea7a59e4.css.map*/
