@@ -28,6 +28,34 @@
   >
 </h1>
 <p>
+  <strong>Quest Video: The Old Guard 2<br /></strong
+  ><strong>Quest Name: The Old Guard 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>The Old Guard 2 </strong>trailer in Discord to receive 1 day of
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Nitro</a
+  >.<br /><strong>Who is Eligible: </strong>Available to users that are +18
+  where <strong>Discord</strong> is available on desktop. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  <strong>The Old Guard 2 Quest </strong>can be accepted on Discord desktop app
+  or browser client from <strong>June 23, 2025 </strong>until<strong>
+    July 6, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 6, 2025 (11:59 UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms: </strong>Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Rainbow Six Siege X<br /></strong
   ><strong
     style="
@@ -46,7 +74,7 @@
   <strong>Italy </strong>who have access to
   <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC and
   console.
-  <span style="background-color: #ffffff"
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The<strong> R6 Siege X Quest</strong>
   can be accepted on <strong>PC </strong>and <strong>console</strong> from
@@ -72,7 +100,7 @@
   >Available to players who have access to <strong>R.E.P.O. </strong>and<strong>
     Discord </strong
   >on desktop.
-  <span style="background-color: #ffffff"
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The <strong>R.E.P.O. Quest</strong> can
   be accepted on <strong>desktop</strong> from
@@ -103,7 +131,7 @@
   >Available to players who have access to
   <strong>LEGO® Fortnite Expeditions </strong>and<strong> Discord </strong>on
   PC, PlayStation 4, PlayStation 5, and Xbox Series X/S.
-  <span style="background-color: #ffffff"
+  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
     >Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The
   <strong>LEGO® Fortnite Quest</strong> can be accepted on
