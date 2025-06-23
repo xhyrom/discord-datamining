@@ -17170,8 +17170,10 @@ span.clanTag__5d473 {
   color: Highlight;
 }
 .popover__2d0ab {
+  background-color: var(--user-profile-toolbar-background);
   border: 1px solid var(--user-profile-toolbar-border);
   border-radius: 100px;
+  box-shadow: var(--shadow-low);
   display: inline-flex;
   gap: 2px;
   height: unset;
@@ -17214,6 +17216,7 @@ span.clanTag__5d473 {
   display: none;
 }
 .activityPopover__2d0ab {
+  background-color: var(--user-profile-activity-toolbar-background);
   right: 8px;
 }
 .custom-user-profile-theme .activityPopover__2d0ab {
@@ -31807,8 +31810,10 @@ div.popoutCloseButton__1e3f8:hover {
   top: -25px;
 }
 .popover_c97e55 {
+  background-color: var(--user-profile-toolbar-background);
   border: 1px solid var(--user-profile-toolbar-border);
   border-radius: 100px;
+  box-shadow: var(--shadow-low);
   display: inline-flex;
   gap: 2px;
   height: unset;
@@ -61661,4 +61666,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c0dcf82b44ea6deb.css.map*/
+/*# sourceMappingURL=12633.dded4fa929f38c1d.css.map*/
