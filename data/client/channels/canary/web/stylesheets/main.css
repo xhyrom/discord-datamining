@@ -32387,10 +32387,10 @@ div.popoutCloseButton__1e3f8:hover {
   display: flex;
   margin-right: 4px;
 }
-.timestamp__230d2 {
+.fontCode__230d2 {
   font-family: var(--font-code);
 }
-.timestamp__230d2.bold__230d2 {
+.bold__230d2 {
   font-weight: 700;
 }
 .inlineTimestamp__230d2 {
@@ -61661,4 +61661,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1657ad7a9f89319a.css.map*/
+/*# sourceMappingURL=12633.c0dcf82b44ea6deb.css.map*/
