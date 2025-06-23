@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8024582002](https://discord.com/jobs/8024582002)
 
-**Updated At:** Mon, 16 Jun 2025 20:26:30 GMT
+**Updated At:** Mon, 23 Jun 2025 17:43:12 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on Core Product is to improve both the quality and depth of Discord’s core product value - which is to make Discord the best place to hang out online and play games with friends. Millions of people use Discord every day to find belonging, create connections, and talk… and we are the center of this.
