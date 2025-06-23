@@ -466,22 +466,3 @@
     >
   </li>
 </ol>
-<h3 id="h_01JVSTFP27SDYN5AVV1WS777MY">
-  <span style="font-weight: 400"
-    >Additionally, be extremely cautious with any sensitive and private
-    information you may have on your mobile device. </span
-  >
-</h3>
-<h3 id="h_01JVSTFP27AFPNC8R84X04NMGX">
-  <span style="font-weight: 400"
-    >If you are a Nitro or Nitro Classic subscriber, you can adjust the video
-    quality of your screenshare streams only on desktop devices. You can learn
-    more
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115000435108"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >.</span
-  >
-</h3>
