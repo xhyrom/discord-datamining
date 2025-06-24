@@ -36,87 +36,17 @@
 <h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
-<h3 id="h_01JXAZG2B3876N3NYRNKEZJY6P">
-  <strong><span style="color: #434343">Offer</span></strong
-  ><span style="color: #434343"
-    >: Treat your friend to either a 1-month or 1-year Nitro subscription, and
-    you’ll earn the </span
-  ><strong
-    ><span style="color: #434343"
-      >Freshly Picked Avatar Decoration</span
-    ></strong
-  ><span style="color: #434343">
-    to splash across your profile pic starting on
-    <strong>June 12, 2025</strong>! </span
-  >
-</h3>
-<h3 id="h_01JXAZG2B3EAY4XH5GZT8HAXZ2" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/32701669075479"
-      width="411"
-      height="246"
-  /></span>
-</h3>
-<h4 id="h_01JXAZ7XF503KWJNGW2N2HCVE1" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Freshly Picked Avatar Decoration</span>
-</h4>
-<h3 id="h_01JXBDDBXHKPR7581CZ5P691HS">
-  <span style="color: #434343">This special offer will roll out starting </span
-  ><strong><span style="color: #434343">June 10, 2025</span></strong
-  ><span style="color: #434343">
-    to a small percentage of users, with full launch on </span
-  ><strong><span style="color: #434343">June 12th</span></strong
-  ><span style="color: #434343"
-    >. We've extended this promotion through the weekend due to popular demand.
-    Offer will now end on <strong>June 23, 2025!</strong> </span
-  ><span style="color: #434343"
-    ><span class="wysiwyg-underline"
-      >Look for the promotion banner before making your purchase.</span
-    ></span
-  >
-</h3>
-<h3 id="h_01JXAZG2B3G8EDV43HY89T1STM" class="wysiwyg-text-align-center">
-  <span style="color: #434343"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/32597682838935"
-      width="266"
-      height="268"
-  /></span>
-</h3>
-<h4 id="h_01JWYKXW70DMTBCB1MZB151DZV" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Promotion Banner </span>
-</h4>
-<h3 id="h_01JX1240DXPSM3CBGQYT0B4JJF">
-  <strong><span style="color: #434343">Please note</span></strong
-  ><span style="color: #434343"
-    >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
-    any Avatar Decoration you receive is yours to keep, it will be removed if
-    you refund your Nitro gift purchase.<br /></span
-  ><span style="color: #434343">Want to learn more about </span
-  ><strong><span style="color: #434343">Avatar Decorations</span></strong
-  ><span style="color: #434343">? Check out our </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article</a
-  ><span style="color: #434343"> for more details.</span>
-</h3>
 <p>
   <strong>Discord Nitro gifts</strong> can be purchased within
   <strong>direct messages (DMs)</strong>,<strong> group chats</strong>,
   <strong>server channels</strong>, and the <strong>Nitro page</strong>.
 </p>
-<h3 id="h_01HGBW65QX0JFS12HPP6QKN553">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Gifts purchased within a DM on desktop or browser will allow you to
-    customize your gift by selecting a card design, adding a personal note, a
-    soundboard effect, and emoji confetti. You will not be able to customize
-    your gift with these personal touches within group chats and server
-    channels.   </span
-  >
-</h3>
+<div class="info-box">
+  Gifts purchased within a DM on desktop or browser will allow you to customize
+  your gift by selecting a card design, adding a personal note, a soundboard
+  effect, and emoji confetti. You will not be able to customize your gift with
+  these personal touches within group chats and server channels.   
+</div>
 <p>
   1. To get started, open up the Discord app and head over to where you would
   like to send your gift.
