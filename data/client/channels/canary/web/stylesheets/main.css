@@ -13507,17 +13507,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: inline-flex;
   line-height: 16px !important;
   padding: 0 4px;
-  transition: background 0.1s ease-in-out;
   vertical-align: middle;
-}
-.chipletContainerInner__10651:hover {
-  background: var(--background-mod-faint);
 }
 .chipletContainerInline__10651 {
   margin-top: -2px;
 }
 .clickable__10651 {
   cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.clickable__10651:hover {
+  background: var(--bg-mod-faint);
 }
 .text__10651 {
   align-items: center;
@@ -58553,4 +58553,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.86d5a3601e66cec2.css.map*/
+/*# sourceMappingURL=12633.752b0a4f73f2bf08.css.map*/
