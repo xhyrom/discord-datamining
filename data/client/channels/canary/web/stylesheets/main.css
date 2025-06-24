@@ -9027,7 +9027,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: 100%;
 }
 .textContainer__4d95d {
-  background-color: var(--background-code);
+  background-color: var(--background-base-lower);
   border: 1px solid var(--background-secondary-alt);
   border-color: var(--border-subtle);
   border-radius: 4px 4px 0 0;
@@ -58716,4 +58716,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.2926b395ea7a59e4.css.map*/
+/*# sourceMappingURL=12633.6eefb4cdcae8d29f.css.map*/
