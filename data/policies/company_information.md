@@ -204,7 +204,7 @@
     </div>
     <div class="nav_padding">
       <div class="nav_wrapper">
-        <a href="https://discord.com/" class="nav_brand w-nav-brand"
+        <a href="https://discord.com" class="nav_brand w-nav-brand"
           ><img
             width="146"
             loading="lazy"
@@ -429,7 +429,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/ads/quests"
+                    href="https://discord.com/quests"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -1871,22 +1871,22 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="about"
-                href="/company"
+                href="https://discord.com/company"
                 class="link-footer top-new-link"
                 >About</a
               ><a
                 data-track="jobs"
-                href="/careers"
+                href="https://discord.com/careers"
                 class="link-footer top-new-link"
                 >Jobs</a
               ><a
                 data-track="branding"
-                href="/branding"
+                href="https://discord.com/branding"
                 class="link-footer top-new-link"
                 >Brand</a
               ><a
                 data-track="newsroom"
-                href="/newsroom"
+                href="https://discord.com/newsroom"
                 class="link-footer top-new-link"
                 >Newsroom</a
               >
@@ -1991,12 +1991,12 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="terms"
-                href="/terms"
+                href="https://discord.com/terms"
                 class="link-footer top-new-link"
                 >Terms</a
               ><a
                 data-track="privacy"
-                href="/privacy"
+                href="https://discord.com/privacy"
                 class="link-footer top-new-link"
                 >Privacy</a
               ><a
@@ -2006,7 +2006,7 @@
                 >Cookie Settings</a
               ><a
                 data-track="guidelines"
-                href="/guidelines"
+                href="https://discord.com/guidelines"
                 class="link-footer top-new-link"
                 >Guidelines</a
               ><a
