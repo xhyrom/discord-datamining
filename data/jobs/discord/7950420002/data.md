@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7950420002](https://discord.com/jobs/7950420002)
 
-**Updated At:** Tue, 24 Jun 2025 13:07:41 GMT
+**Updated At:** Tue, 24 Jun 2025 22:54:03 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
-You will harness your prior experience in advertising/media/marketing spaces and bring a combination of relationship building, industry relationships, product insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region. This hire must be based on the West Coast, however, there is no in-office requirement
+You will harness your prior experience in advertising/media/marketing spaces and bring a combination of relationship building, industry relationships, product insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region.&amp;nbsp;
 What you'll be doing
 
 
