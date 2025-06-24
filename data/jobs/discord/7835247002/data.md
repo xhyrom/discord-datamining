@@ -2,7 +2,7 @@
 
 ## Senior Technical Program Manager, Cost & Efficiency
 
-**Location:** San Francisco Bay Area, CA
+**Location:** San Francisco Bay Area
 
 **Id:** 7835247002 <br/>
 **Internal Job Id:** 6089923002 <br/>
@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7835247002](https://discord.com/jobs/7835247002)
 
-**Updated At:** Wed, 11 Jun 2025 21:43:12 GMT
+**Updated At:** Tue, 24 Jun 2025 14:00:02 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
-To ensure our platform continues to deliver value at scale, we’re committed to optimizing costs while maintaining exceptional user experiences. We’re seeking a&amp;nbsp;Senior Technical Program Manager (TPM) to help lead initiatives that track, manage, and reduce infrastructure, operational, and data costs across Discord.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.To ensure our platform continues to deliver value at scale, we’re committed to optimizing costs while maintaining exceptional user experiences. We’re seeking a Senior Technical Program Manager (TPM) to help lead initiatives that track, manage, and reduce infrastructure, operational, and data costs across Discord.
 About the RoleAs a Senior TPM for Cost &amp;amp; Efficiency, you’ll collaborate with teams across infrastructure, data, and machine learning to identify and execute cost-saving opportunities. This role combines technical expertise, strategic thinking, and program management to drive efficiencies in how Discord leverages resources. You’ll also partner with leaders across engineering and product to help them understand the financial impact of their decisions, ensuring sustainable growth for the platform.
 What You'll Do
 
@@ -47,7 +46,8 @@ Collaborate with talented teams who are passionate about innovation and sustaina
 Enjoy competitive compensation, comprehensive benefits, and a flexible work environment.
 
 How to ApplyIf you’re passionate about driving cost efficiencies and delivering sustainable growth at scale, we’d love to hear from you. Apply now and help shape the future of Discord!
-The US base salary range for this full-time position is $196,000 to $220,000 + equity + benefits.&amp;nbsp;Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties).
+The US base salary range for this full-time position is $196,000 to $220,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Education:**
