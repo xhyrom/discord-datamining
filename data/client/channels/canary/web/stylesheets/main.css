@@ -13541,7 +13541,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .chipletContainerInner__10651.noTooltip__10651:hover {
   background: var(--background-mod-strong);
 }
-.unselectable__10651 {
+.tagText__10651 {
+  text-indent: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -58553,4 +58554,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.752b0a4f73f2bf08.css.map*/
+/*# sourceMappingURL=12633.0bc1e5605abd02ae.css.map*/
