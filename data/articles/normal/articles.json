@@ -16,12 +16,12 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2025-06-24T18:33:08Z",
+    "edited_at": "2025-06-24T18:41:51Z",
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [],
-    "body": "<figure class=\"wysiwyg-media\"><div data-oembed-url=\"https://youtu.be/VJDYrbtt4hg?&amp;amp;rel=0\"><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/VJDYrbtt4hg\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></div></figure>"
+    "body": "<p><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/VJDYrbtt4hg?rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\" data-oembed-url=\"https://www.youtube.com/watch?v=VJDYrbtt4hg?rel=0\"></iframe></p>"
   },
   {
     "id": 32902912176279,
@@ -6903,12 +6903,12 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2025-06-24T18:27:00Z",
+    "edited_at": "2025-06-24T18:42:51Z",
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [],
-    "body": "<figure class=\"wysiwyg-media\"><div data-oembed-url=\"https://youtu.be/Fl-OCQk0-fw\"><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/Fl-OCQk0-fw\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></div></figure>"
+    "body": "<p><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/Fl-OCQk0-fw?rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\" data-oembed-url=\"https://youtu.be/Fl-OCQk0-fw?rel=0\"></iframe></p>"
   },
   {
     "id": 22582288274071,
@@ -7437,12 +7437,12 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2025-06-24T18:21:56Z",
+    "edited_at": "2025-06-24T18:44:28Z",
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [],
-    "body": "<figure class=\"wysiwyg-media\"><div data-oembed-url=\"https://youtu.be/VJDYrbtt4hg\"><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/VJDYrbtt4hg\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></div></figure>"
+    "body": "<p><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/VJDYrbtt4hg?rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></p>"
   },
   {
     "id": 23082866222871,
@@ -8086,12 +8086,12 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2025-06-24T18:29:11Z",
+    "edited_at": "2025-06-24T18:45:11Z",
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [],
-    "body": "<figure class=\"wysiwyg-media\"><div data-oembed-url=\"https://youtu.be/QxHyd2IkuSU\"><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/QxHyd2IkuSU\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></div></figure>"
+    "body": "<p><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/QxHyd2IkuSU?rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\" data-oembed-url=\"https://youtu.be/QxHyd2IkuSU?rel=0\"></iframe></p>"
   },
   {
     "id": 18210977897239,
@@ -8592,12 +8592,12 @@
     "locale": "en-us",
     "outdated": false,
     "outdated_locales": [],
-    "edited_at": "2025-06-24T18:28:10Z",
+    "edited_at": "2025-06-24T18:45:42Z",
     "user_segment_id": null,
     "permission_group_id": 1720972,
     "content_tag_ids": [],
     "label_names": [],
-    "body": "<figure class=\"wysiwyg-media\"><div data-oembed-url=\"https://youtu.be/3pPNdmbLxc8\"><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/3pPNdmbLxc8\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></div></figure>"
+    "body": "<p><iframe style=\"width: 100%; aspect-ratio: 16 / 9;\" src=\"//www.youtube-nocookie.com/embed/3pPNdmbLxc8?rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\" data-oembed-url=\"https://youtu.be/3pPNdmbLxc8\"></iframe></p>"
   },
   {
     "id": 22567595858327,
