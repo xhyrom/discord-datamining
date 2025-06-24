@@ -21665,6 +21665,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   padding-right: 0 !important;
 }
 .textAreaForPostCreation__74017 {
+  margin-left: 0 !important;
   padding: 0 !important;
 }
 .textAreaForOverlayInlineReply__74017,
@@ -58552,4 +58553,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.bd22265d6f8dccca.css.map*/
+/*# sourceMappingURL=12633.86d5a3601e66cec2.css.map*/
