@@ -1,5 +1,21 @@
 [
   {
+    "id": 33024419968279,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/33024419968279.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/33024419968279-Videos",
+    "category_id": 33024416595735,
+    "position": 0,
+    "sorting": "manual",
+    "created_at": "2025-06-24T18:12:45Z",
+    "name": "Videos",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
+  },
+  {
     "id": 24920609838359,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/24920609838359.json",
     "html_url": "https://support.discord.com/hc/en-us/sections/24920609838359-Vendor-Agreements",

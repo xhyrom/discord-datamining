@@ -1,4 +1,13 @@
 <p>
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9"
+    src="//www.youtube-nocookie.com/embed/QxHyd2IkuSU?&amp;rel=0"
+    frameborder="0"
+    allowfullscreen=""
+    allow="encrypted-media"
+  ></iframe>
+</p>
+<p>
   Being locked out of your Discord account due to Multi-Factor Authentication
   can be frustrating, but with the right approach and Discord's recovery
   options, you can regain access to your account. 
@@ -296,7 +305,7 @@
   >
 </h4>
 <div class="book-box">
-  <strong>Want to learn more?</strong> <br />To set MFA back up on your account,
+  <strong>Want to learn more?</strong><br />To set MFA back up on your account,
   please check out the
   <a
     href="https://support.discord.com/hc/en-us/articles/219576828"

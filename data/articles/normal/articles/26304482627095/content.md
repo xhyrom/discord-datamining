@@ -1,3 +1,16 @@
+<p>
+  <strong>
+    <span class="wysiwyg-font-size-x-large">
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="//www.youtube-nocookie.com/embed/3pPNdmbLxc8?&amp;rel=0"
+        frameborder="0"
+        allowfullscreen=""
+        allow="encrypted-media"
+      ></iframe>
+    </span>
+  </strong>
+</p>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span

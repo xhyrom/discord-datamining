@@ -28,6 +28,67 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: Palia<br /></strong
+  ><strong>Quest Name: Palia Play Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of <strong>Palia </strong>to
+  receive a <strong>Chapaa Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players in the <strong>United States</strong>,
+  <strong>Canada</strong>, and <strong>Great Britain</strong> who have access to
+  <strong>Palia </strong>and<strong> Discord </strong>on desktop, Playstation 5,
+  and Xbox Series S/X.<span style="background-color: #ffffff">
+    Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The
+  <strong>Palia Play Quest </strong> can be accepted on
+  <strong>desktop</strong>,<strong> Playstation 5</strong>, and<strong>
+    Xbox Series S.X</strong
+  >
+  from <strong>June 24, 2025</strong> until
+  <strong>June 30, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 30, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Chapaa Avatar Decoration</strong> is a limited-time Avatar Decoration
+  and will only be yours as an Avatar Decoration until
+  <strong>August 30, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: MTG Arena<br /></strong
+  ><strong>Quest Name: MTG x FINAL FANTASY Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 20 minutes of
+  <strong>MTG Arena </strong>to receive
+  <strong>Limited FINAL FANTASY Sleeves</strong>.<br /><strong
+    >Who is Eligible: </strong
+  >Available to players in the<strong> United States </strong>who have access to
+  <strong>MTG Arena </strong>and<strong> Discord </strong>on PC.<span
+    style="background-color: #ffffff"
+  >
+    Discord’s premium services are restricted in some regions.<br /></span
+  ><strong>Availability Period: </strong>The<strong>
+    MTG x FINAL FANTASY Quest</strong
+  >
+  can be accepted on <strong>PC</strong> from
+  <strong>June 24, 2025</strong> until
+  <strong>June 30, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>June 16, 2026 (11:59 PM UTC)</strong>.<br /><span
+    style="color: #2e3338; background-color: #ffffff"
+    data-darkreader-inline-color=""
+    data-darkreader-inline-bgcolor=""
+    ><strong>Other Terms:</strong> Limit of one reward redemption per
+    account.</span
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Old Guard 2<br /></strong
   ><strong>Quest Name: The Old Guard 2 Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
