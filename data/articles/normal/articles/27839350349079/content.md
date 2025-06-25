@@ -28,6 +28,38 @@
   >
 </h1>
 <p>
+  <strong>Quest Game: VALORANT<br /></strong
+  ><strong>Quest Name: Summer Kickoff Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>VALORANT</strong> to receive a
+  <strong>WHO GAVE HIM A GUN? Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players who have access to <strong>VALORANT</strong> and
+  <strong>Discord</strong> on PC, PlayStation 4/5, and Xbox Series S/X.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Summer Kickoff Quest</strong> can be accepted on
+  <strong>PC</strong>, <strong>PlayStation</strong> <strong>4/5</strong>, and
+  <strong>Xbox</strong> <strong>Series S/X</strong>. from
+  <strong>June 25, 2025</strong> until
+  <strong>June 30, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 30, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>WHO GAVE HIM A GUN? Avatar Decoration</strong> is a limited-time
+  Avatar Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 30, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Palia<br /></strong
   ><strong>Quest Name: Palia Play Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of <strong>Palia </strong>to
