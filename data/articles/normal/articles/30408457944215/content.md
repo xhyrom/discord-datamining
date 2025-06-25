@@ -17,12 +17,14 @@
       >
       <ul>
         <li><a href="#h_01JPX02BD1CZAG3J0VG150AS89">Desktop/Browser</a></li>
+        <li><a href="#h_01JYMFGJH3KRYC6KY4E3JE6AHD">Mobile</a></li>
       </ul>
     </li>
     <li>
       <a href="#h_01JPX0BTK2HGNNAM1YSK29YQWT">How do I apply a Nameplate?</a>
       <ul>
         <li><a href="#h_01JPX0CAAY58H37ZX42WSF1XYA">Desktop/Browser</a></li>
+        <li><a href="#h_01JYMFN7VJV63R0D4224VD2XCN">Mobile</a></li>
       </ul>
     </li>
     <li>
@@ -69,7 +71,9 @@
 </div>
 <h2 id="h_01JPX02BD1CZAG3J0VG150AS89">Desktop/Browser</h2>
 <p>
-  <span class="wysiwyg-font-size-large"><strong>Option 1</strong></span>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Accessing the Shop via Shop Tab</strong></span
+  >
 </p>
 <p>
   You can head over to the Shop to preview and purchase Nameplates.<br />1.
@@ -79,9 +83,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/31565664715799"
-      width="281"
-      height="409.658227932747"
+      src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXczbP2Ohx-kePfJ35fqbQhFAQ4N0G_VX9uOYG0O9OrKjlR15b4GYHwaQc2Kr6l7LbxSllRdbsTfc9O2d_srMKf_OdXv3QiS1RYf75U6b4CdTkyJS32UlaFgnDHk0bsl40NHz7ro?key=xUzPWPzgJXCOkgnke9nQpipb"
+      width="323"
+      height="331"
   /></span>
 </p>
 <h4 id="h_01JPX05NRE545V748HXM1WQAC9" class="wysiwyg-text-align-center">
@@ -103,19 +107,17 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/31565679727127"
-      width="299"
-      height="434.4007406596841"
+      src="https://support.discord.com/hc/article_attachments/33057436077975"
+      width="334"
+      height="334"
   /></span>
 </p>
 <h4 id="h_01JPX06GQ7HPZ81RDT76SPRA8W" class="wysiwyg-text-align-center">
   <span style="color: #666666">Shop tab</span>
 </h4>
 <p>
-  <span style="color: #2e3338"
-    >3. Once directed to the Shop, you can preview and buy Nameplates which get 
-    added to your collection. </span
-  >
+  3. Once directed to the Shop, you can preview and buy Nameplates to add to
+  your collection. 
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
@@ -129,8 +131,8 @@
   <span style="color: #666666">Example of Nameplates in the Shop</span>
 </h4>
 <p>
-  <span class="wysiwyg-color-black wysiwyg-font-size-large"
-    ><strong>Option 2</strong></span
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Accessing the Shop via User Settings</strong></span
   >
 </p>
 <p>
@@ -157,10 +159,10 @@
   <strong>Check it out</strong>. You can also select
   <strong>Change Nameplate </strong>and select the <strong>Shop </strong>icon
   [<img
-    src="https://support.discord.com/hc/article_attachments/30831023558807"
+    src="https://support.discord.com/hc/article_attachments/33057423400215"
     width="24"
     height="24"
-  />].  
+  />] to be redirected to the Shop.  
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
@@ -182,11 +184,34 @@
   <strong>User Settings &gt; Profiles &gt; Nameplate</strong>. Items available
   for purchase in the Shop will change periodically.
 </div>
+<h2 id="h_01JYMFGJH3KRYC6KY4E3JE6AHD">Mobile</h2>
+<div class="info-box">
+  Nameplates are only available on desktop for purchase, but you can view and
+  apply them on mobile.
+</div>
+<p>
+  To enter the Shop on mobile, tap your <strong>avatar</strong> icon in the
+  bottom-right corner, then tap the <strong>Shop</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/33057423400855"
+    width="24"
+    height="24"
+  />] to view Nameplates.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrFp8AZ0FaOgl0Rr4ColsebCvhV0rmiIy9RMUUGTeabnfLBrVCyKH7BaQ2Gzz-cbyS8Iwi1X31S_lYNbBD_IxTMoM4LHWf_MWEx3jwPE19bm2ysj4HLk4EONbCDjj1y_-qxe9FTg?key=xUzPWPzgJXCOkgnke9nQpipb"
+    width="242"
+    height="504"
+  />
+</p>
+<h4 id="h_01JYMFK8MGHG8ZMRS2TT6N2XG1" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Accessing the Shop on Mobile</span>
+</h4>
 <h1 id="h_01JPX0BTK2HGNNAM1YSK29YQWT">How do I apply a Nameplate?</h1>
 <h2 id="h_01JPX0CAAY58H37ZX42WSF1XYA">Desktop/Browser</h2>
 <p>
   <span style="color: #2e3338"
-    >1. On the desktop app or web app, head into your </span
+    >1. On the desktop app or browser, head into your </span
   ><strong><span style="color: #2e3338">User Settings</span></strong
   ><span style="color: #2e3338"> by selecting the </span
   ><strong><span style="color: #2e3338">cogwheel</span></strong
@@ -246,20 +271,17 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30836664500247"
+      src="https://support.discord.com/hc/article_attachments/33057436081047"
       width="624"
-      height="480"
+      height="448"
   /></span>
 </p>
 <h4 id="h_01JPXB4KAS47H2E422W239DGEA" class="wysiwyg-text-align-center">
   <span style="color: #666666">Selecting a Nameplate</span>
 </h4>
 <p>
-  <span style="color: #2e3338"
-    >5. After you apply your selected Nameplate, confirm your changes by
-    selecting </span
-  ><strong><span style="color: #2e3338">Save Changes</span></strong
-  ><span style="color: #2e3338">. </span>
+  5. After applying your selected Nameplate, confirm your profile changes by
+  selecting <strong>Save Changes</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -270,6 +292,57 @@
 </p>
 <h4 id="h_01JPX0PWRXNY78Y63ETP1GC4N7" class="wysiwyg-text-align-center">
   <span style="color: #666666">Save Changes Button</span>
+</h4>
+<h2 id="h_01JYMFN7VJV63R0D4224VD2XCN">Mobile</h2>
+<div class="info-box">
+  <span style="color: #434343"
+    >Ensure your mobile device is updated to use Nameplates on mobile. </span
+  >
+</div>
+<p>
+  1. On mobile, tap your <strong>avatar </strong>icon in the bottom-right
+  corner, then tap <strong>Edit Profile</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33057423402263"
+    width="266"
+    height="554"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/33057423403671"
+    width="266"
+    height="554"
+  />
+</p>
+<h4 id="h_01JYMFPKTM13MZZGR4AYHJ7821" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Avatar icon (Left), Edit Profile Button (Right)</span
+  >
+</h4>
+<p>
+  2. In the <strong>Profile </strong>settings, scroll down to
+  <strong>Nameplate</strong> and tap the field to open the
+  <strong>Change Nameplates</strong> selection menu. 
+</p>
+<p>3. Choose a Nameplate and tap <strong>Apply</strong>. </p>
+<p>
+  <span style="color: #666666"
+    >4. After applying your selected Nameplate, tap <strong>Save</strong> in the
+    upper-right corner to confirm your changes.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33057436084119"
+      width="266"
+      height="558"
+  /></span>
+</p>
+<h4 id="h_01JYMFS01WCQHH2K0EY6WN75FX" class="wysiwyg-text-align-center">
+  <span style="color: #434343">Applying a Nameplate on Mobile</span>
 </h4>
 <h1 id="h_01JPX0PS9Q4QRZWW1FK8SXSV42" class="wysiwyg-text-align-left">
   Where do Nameplates appear?
@@ -330,19 +403,23 @@
   <span style="color: #666666">Example of Nameplate in Members List </span>
 </h4>
 <h1 id="h_01JPX0WK8GHNC71DWGTMCMRQXX">Frequently Asked Questions</h1>
+<p><strong>Q: Can everyone see my Nameplate or just me?</strong></p>
+<p>A: Everyone can see your Nameplate.</p>
+<p><strong>Q: Do Nitro subscribers get discounts on Nameplates?</strong></p>
 <p>
-  <strong>Q: Can everyone see my Nameplate or just me?</strong><br />A: Everyone
-  can see your Nameplate.
+  A: Yes, Nitro subscribers receive discounts on all items in the Shop,
+  including Nameplates.
 </p>
 <p>
-  <strong>Q: Do Nitro subscribers get discounts on Nameplates?</strong><br />A:
-  Yes, Nitro subscribers receive discounts on all items in the Shop, including
-  Nameplates.<br /><strong
-    >Q: Are Nameplates available to purchase and edit on mobile?</strong
-  ><br />A: Currently, you can only purchase and edit Nameplates on desktop.
-  However, Nameplates are visible on both desktop and mobile devices.<br /><strong
-    >Q: Can I get a refund for my Nameplate purchase? </strong
-  ><br /><span style="color: #2e3338"
+  <strong>Q: Are Nameplates available to purchase and edit on mobile?</strong>
+</p>
+<p>
+  A: Currently, you can only purchase and edit Nameplates on desktop. However,
+  Nameplates are visible on both desktop and mobile devices.
+</p>
+<p><strong>Q: Can I get a refund for my Nameplate purchase?</strong></p>
+<p>
+  <span style="color: #2e3338"
     >A: While Nameplates are generally non-refundable, as stated in our </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy"
@@ -363,19 +440,30 @@
   ><span style="color: #2e3338"> by </span
   ><strong><span style="color: #2e3338">May 5th, 2025</span></strong
   ><span style="color: #2e3338"
-    >. Otherwise, all Nameplate purchases are final.</span
+    >. Otherwise, all Nameplate purchases are final and non-refundable.</span
+  >
+</p>
+<p><strong>Q: Can I refund Nitro after buying a Nameplate?</strong></p>
+<p>
+  A: No, if you’ve purchased a Nameplate within 5 days of starting or renewing
+  your Nitro subscription, you will not be eligible to refund your Nitro
+  subscription.
+</p>
+<p>
+  <strong>Q: Can Nameplates be turned off? I don't want to see them.</strong>
+</p>
+<p>
+  A: Nameplates cannot be disabled, but you can go to
+  <strong>User Settings &gt; Accessibility &gt; Enable Reduced Motion</strong>
+  to minimize Nameplate animations and effects.
+</p>
+<p>
+  <strong
+    >Q: I purchased and applied a Nameplate to my profile - but I don’t see it
+    enabled or active? </strong
   >
 </p>
 <p>
-  <strong>Q: Can I refund Nitro after buying a Nameplate?</strong><br />A: No,
-  if you’ve purchased a Nameplate within 5 days of starting or renewing your
-  Nitro subscription, you will not be eligible to refund that Nitro
-  subscription.<br /><strong
-    >Q: Can Nameplates be turned off? I don't want to see them. </strong
-  ><br />A: Nameplates cannot be turned off, but you can go to
-  <strong>User Settings &gt; Accessibility &gt; Enable Reduced Motion</strong>
-  to minimize Nameplate animations and effects.<br /><strong
-    >Q: I purchased a nameplate but I don’t see it on my name? </strong
-  ><br />A: Currently, Nameplates show when you are active on Discord so ensure
-  you are not in invisible mode or offline.
+  A: Currently, Nameplates show when you are active on Discord—so make sure you
+  are not in invisible mode or offline.
 </p>
