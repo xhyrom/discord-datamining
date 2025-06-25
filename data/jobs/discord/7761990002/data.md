@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Data Platform
 
-**Location:** San Francisco Bay Area
+**Location:** Remote (U.S.)
 
 **Id:** 7761990002 <br/>
 **Internal Job Id:** 6055589002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7761990002](https://discord.com/jobs/7761990002)
 
-**Updated At:** Mon, 23 Jun 2025 20:26:18 GMT
+**Updated At:** Wed, 25 Jun 2025 20:10:19 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an accomplished and experienced Staff Software Engineer to join our dynamic team. As a leader within our Data Platform team, you will be responsible for designing, developing, and maintaining our data infrastructure and services. You will collaborate with cross-functional teams, including data engineers, data scientists, software engineers, and product managers, to deliver modern and bleeding-edge solutions that drive business insights and innovation. This role reports to our Director of Engineering, Data Platform.

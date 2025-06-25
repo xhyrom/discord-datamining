@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6055589002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7761990002,
-  "updated_at": "2025-06-23T16:26:18-04:00",
+  "updated_at": "2025-06-25T16:10:19-04:00",
   "requisition_id": "R-100734",
   "title": "Staff Software Engineer, Data Platform",
   "company_name": "Discord",

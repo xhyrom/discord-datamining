@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Engineering Manager, Performance & Quality
+## Senior Engineering Manager, Client Platforms
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8045535002](https://discord.com/jobs/8045535002)
 
-**Updated At:** Tue, 24 Jun 2025 19:38:42 GMT
+**Updated At:** Wed, 25 Jun 2025 19:18:50 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Senior Engineering Manager to join our Client Platform &amp;amp; Performance team to help lead the technical vision for Discord's client experience across all platforms, with a special focus on mobile performance in 2025.
