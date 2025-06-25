@@ -2751,6 +2751,7 @@
             SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS: 16,
             SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES: 32,
             SUPPRESS_CHANNEL_PROMPT_DEADCHAT: 128,
+            SUPPRESS_UGC_ADDED_NOTIFICATIONS: 256,
           }),
           i.u.REPLY,
           i.u.THREAD_STARTER_MESSAGE,
@@ -6815,7 +6816,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a6129e1b9fac9aa68dd4280371368eb022b04f2d",
+            release: "discord_web-d3b874cc47c94544a0d8d409000ec92676e5c6db",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6881,8 +6882,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "412508"),
-            o.YA("builtAt", String("1750813217155"));
+            o.YA("buildNumber", "412540"),
+            o.YA("builtAt", String("1750819255938"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22239,6 +22240,7 @@
             (r[(r.REPORT_TO_MOD_BAN_USER = 61)] = "REPORT_TO_MOD_BAN_USER"),
             (r[(r.REPORT_TO_MOD_CLOSED_REPORT = 62)] =
               "REPORT_TO_MOD_CLOSED_REPORT"),
+            (r[(r.EMOJI_ADDED = 63)] = "EMOJI_ADDED"),
             r);
       },
       149765: function (t, e, a) {
@@ -48202,4 +48204,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.caf58e2e1184d9a5.js.map
+//# sourceMappingURL=sentry.3d7077aad465267c.js.map
