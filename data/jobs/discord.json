@@ -1737,7 +1737,7 @@
       "education": "education_optional",
       "internal_job_id": 6156366002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1754,7 +1754,7 @@
         }
       ],
       "id": 7979535002,
-      "updated_at": "2025-06-18T18:08:56-04:00",
+      "updated_at": "2025-06-25T18:06:50-04:00",
       "requisition_id": "R-100906",
       "title": "Senior Software Engineer - Desktop Platform",
       "company_name": "Discord",

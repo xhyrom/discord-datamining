@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer - Desktop Platform
 
-**Location:** San Francisco, CA or Remote (U.S.)
+**Location:** Remote (U.S.)
 
 **Id:** 7979535002 <br/>
 **Internal Job Id:** 6156366002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7979535002](https://discord.com/jobs/7979535002)
 
-**Updated At:** Wed, 18 Jun 2025 22:08:56 GMT
+**Updated At:** Wed, 25 Jun 2025 22:06:50 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Senior Engineer to join our Desktop Platform team to help lead the technical vision for Discord's client experience across Windows, macOS, and Linux.&amp;nbsp;You will report to our Engineering Manager, Desktop Platform, and play a critical role in shaping the technical foundation that powers Discord's user experience for millions of people worldwide. Our goal is to build products that our customers absolutely love - products that are functional, reliable, usable, and delightful, with performance as a core feature and an iterative approach to solving complex problems.
