@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Game Integrations
 
-**Location:** San Francisco, CA or Remote (U.S.)
+**Location:** Remote (U.S.)
 
 **Id:** 7990185002 <br/>
 **Internal Job Id:** 6160773002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7990185002](https://discord.com/jobs/7990185002)
 
-**Updated At:** Fri, 06 Jun 2025 23:00:40 GMT
+**Updated At:** Wed, 25 Jun 2025 20:43:14 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position is US-based only.

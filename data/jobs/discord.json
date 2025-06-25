@@ -959,7 +959,7 @@
       "education": "education_optional",
       "internal_job_id": 6151033002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -976,7 +976,7 @@
         }
       ],
       "id": 7967109002,
-      "updated_at": "2025-06-24T09:50:29-04:00",
+      "updated_at": "2025-06-25T16:43:29-04:00",
       "requisition_id": "R-100886",
       "title": "Senior Full-Stack Engineer, Ads (Back-End Leaning) ",
       "company_name": "Discord",
@@ -1015,7 +1015,7 @@
       "education": "education_optional",
       "internal_job_id": 6160632002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1032,7 +1032,7 @@
         }
       ],
       "id": 7989621002,
-      "updated_at": "2025-06-24T09:50:00-04:00",
+      "updated_at": "2025-06-25T16:42:06-04:00",
       "requisition_id": "R-100920",
       "title": "Senior Full-Stack Engineer, Ads (Front-End Leaning) ",
       "company_name": "Discord",
@@ -1625,7 +1625,7 @@
       ],
       "internal_job_id": 6163548002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1642,7 +1642,7 @@
         }
       ],
       "id": 7995650002,
-      "updated_at": "2025-06-24T09:54:39-04:00",
+      "updated_at": "2025-06-25T16:47:46-04:00",
       "requisition_id": "R-100928",
       "title": "Senior Software Engineer, Core Product",
       "company_name": "Discord",
@@ -1793,7 +1793,7 @@
       "education": "education_optional",
       "internal_job_id": 6160773002,
       "location": {
-        "name": "San Francisco, CA or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -1810,7 +1810,7 @@
         }
       ],
       "id": 7990185002,
-      "updated_at": "2025-06-06T19:00:40-04:00",
+      "updated_at": "2025-06-25T16:43:14-04:00",
       "requisition_id": "R-100922",
       "title": "Senior Software Engineer, Game Integrations",
       "company_name": "Discord",
@@ -2464,7 +2464,7 @@
       ],
       "internal_job_id": 6098161002,
       "location": {
-        "name": "San Francisco or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -2481,7 +2481,7 @@
         }
       ],
       "id": 7854326002,
-      "updated_at": "2025-06-24T09:55:39-04:00",
+      "updated_at": "2025-06-25T16:43:40-04:00",
       "requisition_id": "R-100812",
       "title": "Staff Software Engineer – UI/UX & Animations",
       "company_name": "Discord",

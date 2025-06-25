@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6151033002,
   "location": {
-    "name": "San Francisco, CA or Remote (U.S.)"
+    "name": "Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7967109002,
-  "updated_at": "2025-06-24T09:50:29-04:00",
+  "updated_at": "2025-06-25T16:43:29-04:00",
   "requisition_id": "R-100886",
   "title": "Senior Full-Stack Engineer, Ads (Back-End Leaning) ",
   "company_name": "Discord",
