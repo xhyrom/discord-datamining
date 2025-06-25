@@ -8974,7 +8974,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   color: var(--text-muted);
 }
 .custom-theme-background .file__0ccae {
-  background-color: var(--background-mod-faint);
+  background-color: var(--background-mod-subtle);
   border-color: var(--border-subtle);
 }
 @use postcss-pxtorem;
@@ -58555,4 +58555,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8d799828b332b327.css.map*/
+/*# sourceMappingURL=12633.09afe36caeb20655.css.map*/
