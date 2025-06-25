@@ -21693,7 +21693,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   position: sticky;
   top: 0;
 }
-.visual-refresh.align-chat-input .emojiButton__74017:hover {
+.align-chat-input .emojiButton__74017:hover {
   background-color: var(--background-modifier-selected);
   border-radius: 8px;
 }
@@ -30757,7 +30757,7 @@ div.modalOverrideBody__34eac {
 .button__24af7:active {
   color: var(--interactive-active);
 }
-.visual-refresh.align-chat-input .button__24af7:not(.noHover__24af7):hover {
+.align-chat-input .button__24af7:not(.noHover__24af7):hover {
   background-color: var(--background-modifier-selected);
   border-radius: 8px;
 }
@@ -58555,4 +58555,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1132ec46e9606115.css.map*/
+/*# sourceMappingURL=12633.8d799828b332b327.css.map*/
