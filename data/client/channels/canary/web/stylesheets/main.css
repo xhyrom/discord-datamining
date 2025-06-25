@@ -21473,11 +21473,19 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   transition: border-color 0.2s ease;
   width: 100%;
 }
+.channelTextArea__74017:not(.highlighted__74017) {
+  transition: box-shadow 0.2s ease;
+}
+.channelTextArea__74017.error__74017:not(:hover):not(:focus-within) {
+  box-shadow: 0 0 0 2px var(--text-danger);
+}
 .channelTextArea__74017.highlighted__74017 {
+  border: 1px solid var(--border-faint);
   box-shadow: 0 0 0 4px var(--blue-345);
 }
 .channelTextArea__74017:focus-within {
   border-color: var(--border-subtle);
+  box-shadow: none;
 }
 .focusRing__74017 {
   border-radius: 8px;
@@ -58541,4 +58549,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.174043539b879cd8.css.map*/
+/*# sourceMappingURL=12633.6b3ef27f3b7939d0.css.map*/
