@@ -27490,6 +27490,7 @@ body .headerAnimation_b54a5b {
   text-align: center;
   text-transform: uppercase;
   vertical-align: center;
+  width: 100%;
 }
 .table_fda3e4 {
   background-color: var(--background-mod-subtle);
@@ -58064,4 +58065,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.72ae82136288232b.css.map*/
+/*# sourceMappingURL=12633.0d24c8bde8ad54ab.css.map*/
