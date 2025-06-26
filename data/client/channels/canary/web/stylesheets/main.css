@@ -9729,12 +9729,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   right: -16px;
 }
 .jumpToPresentBar__0f481 {
-  background-color: var(--background-accent);
-  border-radius: 8px 8px 0 0;
-  bottom: 0;
   color: var(--text-default);
-  opacity: 0.95;
-  padding-bottom: 8px;
+  margin-bottom: var(--space-24);
 }
 .jumpToPresentBar__0f481:active {
   margin-bottom: -1px;
@@ -58081,4 +58077,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.6b9d1984d79c5954.css.map*/
+/*# sourceMappingURL=12633.5e879194c3ecedbb.css.map*/
