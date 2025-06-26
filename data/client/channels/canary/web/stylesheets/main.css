@@ -9733,7 +9733,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   margin-bottom: var(--space-24);
 }
 .jumpToPresentBar__0f481:active {
-  margin-bottom: -1px;
+  margin-bottom: calc(var(--space-24) - 1px);
 }
 .jumpToPresentBar__0f481 .spinner__0f481 {
   padding-right: 12px;
@@ -58064,4 +58064,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ad93ffb0649328e3.css.map*/
+/*# sourceMappingURL=12633.72ae82136288232b.css.map*/
