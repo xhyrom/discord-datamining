@@ -1857,8 +1857,8 @@
   {
     "id": "1227719606223765687",
     "name": "Magic Circle",
-    "icon": "34c14046f6e94bc8355dabd58164ede6",
-    "description": "Play hilarious party games! Ask spicy questions, find the spy, and create your own Blobling in Magic Circle.",
+    "icon": "3b270eaf6c45320251903708cb977f34",
+    "description": "Garden with friends and play hilarious party games while your plants grow! Your plants keep growing while you're offline!",
     "summary": "",
     "type": null,
     "is_monetized": true,
@@ -1869,7 +1869,7 @@
       "id": "1227719606223765687",
       "username": "Magic Circle",
       "global_name": null,
-      "avatar": "34c14046f6e94bc8355dabd58164ede6",
+      "avatar": "3b270eaf6c45320251903708cb977f34",
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5359",
@@ -1890,8 +1890,8 @@
     "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2048"
     },
@@ -1899,8 +1899,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2048"
         }
@@ -1956,11 +1956,10 @@
       "displays_advertisements": false
     },
     "tags": [
-      "Game",
-      "Icebreaker",
-      "Jokes",
-      "Party",
-      "Social Deduction"
+      "Farming",
+      "Garden",
+      "Multiplayer",
+      "Party"
     ]
   },
   {
@@ -3407,8 +3406,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3507,8 +3506,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -3560,8 +3559,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -3615,8 +3614,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -3624,8 +3623,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -3661,7 +3660,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -3675,11 +3674,6 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
@@ -3688,6 +3682,11 @@
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -3735,23 +3734,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3761,7 +3750,17 @@
       },
       {
         "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
@@ -3887,16 +3886,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "launcher/df_launcher.exe",
         "is_launcher": false
       },
@@ -3907,7 +3896,17 @@
       },
       {
         "os": "win32",
+        "name": "launcher/df_launcher_global.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -4163,22 +4162,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -4188,7 +4172,22 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
