@@ -214,7 +214,7 @@
     </div>
     <div class="nav_padding">
       <div class="nav_wrapper">
-        <a href="https://discord.com" class="nav_brand w-nav-brand"
+        <a href="/" class="nav_brand w-nav-brand"
           ><img
             width="146"
             loading="lazy"
@@ -243,19 +243,9 @@
         ></a>
         <div class="nav_menu_wr">
           <ul role="list" class="nav_menu">
-            <li>
-              <a href="https://discord.com/download" class="nav_link"
-                >Download</a
-              >
-            </li>
-            <li>
-              <a href="https://discord.com/nitro" class="nav_link">Nitro</a>
-            </li>
-            <li>
-              <a href="https://discord.com/servers" class="nav_link"
-                >Discover</a
-              >
-            </li>
+            <li><a href="/download" class="nav_link">Download</a></li>
+            <li><a href="/nitro" class="nav_link">Nitro</a></li>
+            <li><a href="/servers" class="nav_link">Discover</a></li>
             <li>
               <div
                 data-delay="0"
@@ -306,7 +296,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/safety"
+                    href="/safety"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -316,35 +306,31 @@
                       <div class="nav_dd_link-group">
                         <div class="nav_dd_link_list is-new">
                           <div class="nav_dd_link_title">Resources</div>
-                          <a
-                            href="https://discord.com/safety-news"
-                            class="dd_nav-link"
+                          <a href="/safety-news" class="dd_nav-link"
                             >Safety News</a
-                          ><a
-                            href="https://discord.com/safety-library"
-                            class="dd_nav-link"
+                          ><a href="/safety-library" class="dd_nav-link"
                             >Safety Library</a
                           >
                         </div>
                       </div>
                       <div class="nav_dd_link-group is_2025">
                         <a
-                          href="https://discord.com/guidelines"
+                          href="/guidelines"
                           class="nav_dd_link-group_title is-new-white"
                           >Community Guidelines</a
                         >
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Resources</div>
                           <a
-                            href="https://discord.com/safety-privacy"
+                            href="/safety-privacy"
                             class="dd_nav-link w-inline-block"
                             ><div>Privacy Hub</div></a
                           ><a
-                            href="https://discord.com/safety-policies"
+                            href="/safety-policies"
                             class="dd_nav-link w-inline-block"
                             ><div>Policy Hub</div></a
                           ><a
-                            href="https://discord.com/safety-transparency"
+                            href="/safety-transparency"
                             class="dd_nav-link w-inline-block"
                             ><div>Transparency Hub</div></a
                           >
@@ -361,18 +347,18 @@
                       </div>
                       <div class="nav_dd_link-group">
                         <a
-                          href="https://discord.com/safety-family-center"
+                          href="/safety-family-center"
                           class="nav_dd_link-group_title is-new-white"
                           >Family Center</a
                         >
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Resources</div>
                           <a
-                            href="https://discord.com/safety-parents"
+                            href="/safety-parents"
                             class="dd_nav-link w-inline-block"
                             ><div>Parent Hub</div></a
                           ><a
-                            href="https://discord.com/safety-teen-charter"
+                            href="/safety-teen-charter"
                             class="dd_nav-link w-inline-block"
                             ><div>Teen Charter</div></a
                           >
@@ -439,7 +425,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/quests"
+                    href="/ads/quests"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -449,17 +435,13 @@
                       <div class="nav_dd_link-group">
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Resources</div>
-                          <a
-                            href="https://discord.com/ads/quests"
-                            class="dd_nav-link"
+                          <a href="/ads/quests" class="dd_nav-link"
                             >Advertising</a
                           ><a
-                            href="https://discord.com/ads/quests-success-stories"
+                            href="/ads/quests-success-stories"
                             class="dd_nav-link"
                             >Success Stories</a
-                          ><a
-                            href="https://discord.com/ads/quests-faq"
-                            class="dd_nav-link"
+                          ><a href="/ads/quests-faq" class="dd_nav-link"
                             >Quests FAQ</a
                           >
                         </div>
@@ -611,7 +593,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/blog"
+                    href="/blog"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -621,31 +603,20 @@
                       <div class="nav_dd_link-group">
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Collections</div>
-                          <a href="https://discord.com/blog" class="dd_nav-link"
-                            >Featured</a
-                          ><a
-                            href="https://discord.com/category/community"
-                            class="dd_nav-link"
+                          <a href="/blog" class="dd_nav-link">Featured</a
+                          ><a href="/category/community" class="dd_nav-link"
                             >Community</a
-                          ><a
-                            href="https://discord.com/category/company"
-                            class="dd_nav-link"
+                          ><a href="/category/company" class="dd_nav-link"
                             >Discord HQ</a
-                          ><a
-                            href="https://discord.com/category/engineering"
-                            class="dd_nav-link"
+                          ><a href="/category/engineering" class="dd_nav-link"
                             >Engineering &amp; Developers</a
                           ><a
-                            href="https://discord.com/category/how-to-discord"
+                            href="/category/how-to-discord"
                             class="dd_nav-link"
                             >How to Discord</a
-                          ><a
-                            href="https://discord.com/category/safety"
-                            class="dd_nav-link"
+                          ><a href="/category/safety" class="dd_nav-link"
                             >Policy &amp; Safety</a
-                          ><a
-                            href="https://discord.com/category/product"
-                            class="dd_nav-link"
+                          ><a href="/category/product" class="dd_nav-link"
                             >Product &amp; Features</a
                           >
                         </div>
@@ -711,7 +682,7 @@
                   </div>
                   <a
                     tabindex="0"
-                    href="https://discord.com/developers"
+                    href="/developers"
                     class="nav_link_dropdown w-inline-block"
                   ></a>
                 </div>
@@ -722,11 +693,11 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Featured</div>
                           <a
-                            href="https://discord.com/developers/social-sdk"
+                            href="/developers/social-sdk"
                             class="dd_nav-link w-inline-block"
                             ><div>Discord Social SDK</div></a
                           ><a
-                            href="https://discord.com/developers/build"
+                            href="/developers/build"
                             class="dd_nav-link w-inline-block"
                             ><div>Apps and Activities</div></a
                           >
@@ -735,11 +706,11 @@
                         <div class="nav_dd_link_list">
                           <div class="nav_dd_link_title">Documentation</div>
                           <a
-                            href="https://discord.com/developers"
+                            href="/developers"
                             class="dd_nav-link w-inline-block"
                             ><div>Developer Home</div></a
                           ><a
-                            href="https://discord.com/developers/docs/intro"
+                            href="/developers/docs/intro"
                             class="dd_nav-link w-inline-block"
                             ><div>Developer Documentation</div>
                             <div class="nav_dd_link_arrow w-embed">
@@ -760,7 +731,7 @@
                                 ></path>
                               </svg></div></a
                           ><a
-                            href="https://discord.com/developers/applications"
+                            href="/developers/applications"
                             class="dd_nav-link w-inline-block"
                             ><div>Developer Applications</div>
                             <div class="nav_dd_link_arrow w-embed">
@@ -815,11 +786,7 @@
                 </nav>
               </div>
             </li>
-            <li>
-              <a href="https://discord.com/careers" class="nav_link is_careers"
-                >Careers</a
-              >
-            </li>
+            <li><a href="/careers" class="nav_link is_careers">Careers</a></li>
           </ul>
         </div>
         <div class="nav_buttons-wr_new">
@@ -2140,7 +2107,7 @@
           id="w-node-_93d0322f-4184-d118-cde0-447042a4716e-42a4716b"
           class="vertical-flex mobile-left is_new"
         >
-          <a href="https://discord.com/" class="footer-logo-link w-inline-block"
+          <a href="/" class="footer-logo-link w-inline-block"
             ><img
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e278299a53f5bf88615e90_Symbol.svg"
               loading="lazy"
@@ -2465,12 +2432,12 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="download"
-                href="https://discord.com/download"
+                href="/download"
                 class="link-footer top-new-link"
                 >Download</a
               ><a
                 data-track="nitro"
-                href="https://discord.com/nitro"
+                href="/nitro"
                 class="link-footer top-new-link"
                 >Nitro</a
               ><a
@@ -2480,7 +2447,7 @@
                 >Status</a
               ><a
                 data-track="app directory"
-                href="https://discord.com/application-directory"
+                href="/application-directory"
                 class="link-footer top-new-link"
                 >App Directory</a
               >
@@ -2507,22 +2474,22 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="about"
-                href="https://discord.com/company"
+                href="/company"
                 class="link-footer top-new-link"
                 >About</a
               ><a
                 data-track="jobs"
-                href="https://discord.com/careers"
+                href="/careers"
                 class="link-footer top-new-link"
                 >Jobs</a
               ><a
                 data-track="branding"
-                href="https://discord.com/branding"
+                href="/branding"
                 class="link-footer top-new-link"
                 >Brand</a
               ><a
                 data-track="newsroom"
-                href="https://discord.com/newsroom"
+                href="/newsroom"
                 class="link-footer top-new-link"
                 >Newsroom</a
               >
@@ -2549,7 +2516,7 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="college"
-                href="https://discord.com/college"
+                href="/college"
                 class="link-footer top-new-link"
                 >College</a
               ><a
@@ -2559,37 +2526,37 @@
                 >Support</a
               ><a
                 data-track="safety"
-                href="https://discord.com/safety"
+                href="/safety"
                 class="link-footer top-new-link"
                 >Safety</a
               ><a
                 data-track="blog"
-                href="https://discord.com/blog"
+                href="/blog"
                 class="link-footer top-new-link"
                 >Blog</a
               ><a
                 data-track="streamkit"
-                href="https://discord.com/streamkit"
+                href="/streamkit"
                 class="link-footer top-new-link"
                 >StreamKit</a
               ><a
                 data-track="creators"
-                href="https://discord.com/creators"
+                href="/creators"
                 class="link-footer top-new-link"
                 >Creators</a
               ><a
                 data-track="community"
-                href="https://discord.com/community"
+                href="/community"
                 class="link-footer top-new-link"
                 >Community</a
               ><a
                 data-track="Build"
-                href="https://discord.com/developers"
+                href="/developers"
                 class="link-footer top-new-link"
                 >Developers</a
               ><a
                 data-track="Build"
-                href="https://discord.com/quests"
+                href="/ads/quests"
                 class="link-footer top-new-link"
                 >Quests</a
               ><a
@@ -2627,12 +2594,12 @@
               <div class="padding-16px show-landscape"></div>
               <a
                 data-track="terms"
-                href="https://discord.com/terms"
+                href="/terms"
                 class="link-footer top-new-link"
                 >Terms</a
               ><a
                 data-track="privacy"
-                href="https://discord.com/privacy"
+                href="/privacy"
                 class="link-footer top-new-link"
                 >Privacy</a
               ><a
@@ -2642,22 +2609,22 @@
                 >Cookie Settings</a
               ><a
                 data-track="guidelines"
-                href="https://discord.com/guidelines"
+                href="/guidelines"
                 class="link-footer top-new-link"
                 >Guidelines</a
               ><a
                 data-track="acknowledgement"
-                href="https://discord.com/acknowledgements"
+                href="/acknowledgements"
                 class="link-footer top-new-link"
                 >Acknowledgements</a
               ><a
                 data-track="licenses"
-                href="https://discord.com/licenses"
+                href="/licenses"
                 class="link-footer top-new-link"
                 >Licenses</a
               ><a
                 data-track="moderation"
-                href="https://discord.com/company-information"
+                href="/company-information"
                 class="link-footer top-new-link"
                 >Company Information</a
               >
