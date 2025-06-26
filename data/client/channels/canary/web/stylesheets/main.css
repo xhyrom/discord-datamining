@@ -40386,7 +40386,7 @@ svg.radioIcon_c1e9c4 {
   max-width: 962px;
   min-width: var(--modal-width-large);
 }
-@media (max-width: 485px) or (max-height: 550px) {
+@media screen and (max-height: 550px), screen and (max-width: 485px) {
   .root__49fc1 {
     max-width: 100%;
     min-width: auto;
@@ -40472,7 +40472,7 @@ svg.radioIcon_c1e9c4 {
 .closeWithCircleBackground__49fc1:hover {
   background-color: var(--black-500);
 }
-@media (max-width: 485px) or (max-height: 550px) {
+@media screen and (max-height: 550px), screen and (max-width: 485px) {
   .hideOnFullscreen__49fc1 {
     display: none;
   }
@@ -57951,4 +57951,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ab32d930784d3fc0.css.map*/
+/*# sourceMappingURL=12633.786fe13cd1511e75.css.map*/
