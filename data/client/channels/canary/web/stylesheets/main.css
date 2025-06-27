@@ -21470,7 +21470,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .slateTextArea_ec4baf {
   box-sizing: border-box;
   left: 0;
-  margin-left: 10px;
   min-height: var(--custom-channel-textarea-text-area-height);
   padding: calc(
       (
@@ -21628,6 +21627,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .attachButton__74017 {
   margin-left: calc((var(--space-xs) + var(--space-6)) * -1);
+  margin-right: 10px;
 }
 .textArea__74017 {
   -webkit-appearance: none;
@@ -57932,4 +57932,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e6dc1520719ee9b2.css.map*/
+/*# sourceMappingURL=12633.70cfb05ae396cfe6.css.map*/
