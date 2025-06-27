@@ -11,36 +11,29 @@
 </p>
 <p>
   If your server is approaching its member size limit, you’ll need to send in a
-  request to our team to grow past 500k members! At that point, we will review
-  your server and decide whether your server qualifies for a server member cap
-  increase.
+  request to our team to grow past 1.5 million (1,500,000) members! At that
+  point, we will review your server and decide whether your server qualifies for
+  a server member cap increase.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360052841734#h_01HF9NMM37D32CYC5BWFG0T4NJ"
-      >How to Submit A Request</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360052841734#h_01HF9NMM37ZSG64WVNC01JG503"
-      >Criteria for Increasing the Member Cap</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li><a href="#h_01HF9NMM37D32CYC5BWFG0T4NJ">How to Submit A Request</a></li>
+    <li>
+      <a href="#h_01HF9NMM37ZSG64WVNC01JG503"
+        >Criteria for Increasing the Member Cap</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HF9NMM37D32CYC5BWFG0T4NJ">How to Submit A Request</h1>
-<h3 id="h_01HF9NMM37JGR1MSFVY5R3835H">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >In order to submit a Server Member Cap increase, you must be the Server
-    Owner.</span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> In order to submit a Server Member Cap increase, you
+  must be the Server Owner.
+</div>
 <p>
   1. To submit a request, you’ll need to start by heading to our support portal
   at
@@ -117,12 +110,8 @@
   </li>
   <li>A new member retention rate of more than 10%</li>
 </ul>
-<h3 id="h_01HF9NMM37QQASHAR17R725KV1">
-  <span
-    style="color: #434343; --darkreader-inline-color: #beb8b0"
-    data-darkreader-inline-color=""
-    >Decisions will be made at Discord's sole discretion. Discord will review
-    your application and decide whether your server qualifies for a server
-    member cap increase.</span
-  >
-</h3>
+<div class="warn-box">
+  <strong>Important:</strong> Decisions will be made at Discord's sole
+  discretion. Discord will review your application and decide whether your
+  server qualifies for a server member cap increase.
+</div>
