@@ -8,7 +8,7 @@
 </p>
 <p>
   <img
-    src="https://support.discord.com/hc/article_attachments/360089056153/Screen_Shot_2020-09-03_at_11.43.09_AM.png"
+    src="https://support.discord.com/hc/article_attachments/360089056153"
     alt="Screen_Shot_2020-09-03_at_11.43.09_AM.png"
   />
 </p>
@@ -18,7 +18,9 @@
     Servers. For the main differences between the two, here’s the lowdown:</span
   >
 </p>
-<h1><span style="font-weight: 400">What is a Verified Server? </span></h1>
+<h1 id="h_01JYS1YHD71M3MFVJRRCK2QZE5">
+  <span style="font-weight: 400">What is a Verified Server? </span>
+</h1>
 <p>
   <span style="font-weight: 400"
     >Verified Servers are communities run by businesses, brands, and figures of
@@ -39,7 +41,9 @@
     our Verified Server Requirements article before applying.</span
   >
 </p>
-<h1><span style="font-weight: 400">What’s a Discord Partner? </span></h1>
+<h1 id="h_01JYS1YHD7398BMAWMABDBMHQJ">
+  <span style="font-weight: 400">What’s a Discord Partner? </span>
+</h1>
 <p>
   <span style="font-weight: 400"
     >The Discord Partner Program is designed to reward </span
@@ -60,17 +64,10 @@
 <p>
   <span style="font-weight: 400"
     >Anyone can apply for the Partner Program, but you’ll need to hit some
-    requirements before being able to apply. Get the full scoop on what we look
-    for in a Partnered server
-    <a
-      href="https://support.discord.com/hc/en-us/articles/115001494012-Discord-Partnership-Requirements"
-      target="_blank"
-      rel="noopener"
-      >here</a
-    >. </span
+    requirements before being able to apply. </span
   >
 </p>
-<h1>
+<h1 id="h_01JYS1YHD7MNJ1G5J2F1N9F32J">
   <span style="font-weight: 400"
     >What are the differences? Can I be both? </span
   >
@@ -216,7 +213,7 @@
   </tbody>
 </table>
 <p> </p>
-<h3>
+<h3 id="h_01JYS1YHD8XM7CCAB32D4CTYR6">
   <span style="font-weight: 400"
     >Important thing to note: If you’re part of both programs, your Verification
     badge will override the Discord Partner badge visually. However, you still
