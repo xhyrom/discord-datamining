@@ -2207,7 +2207,7 @@
           >
           (Module 1 and Module 2), and we rely on the European Commission's
           <a
-            href="https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en"
+            href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"
             >adequacy decisions</a
           >
           about certain countries, as applicable, or other legally compliant
