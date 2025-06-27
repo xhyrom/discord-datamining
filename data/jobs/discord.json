@@ -1393,61 +1393,6 @@
       ]
     },
     {
-      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7982522002",
-      "data_compliance": [
-        {
-          "type": "gdpr",
-          "requires_consent": false,
-          "requires_processing_consent": false,
-          "requires_retention_consent": false,
-          "retention_period": null,
-          "demographic_data_consent_applies": true
-        }
-      ],
-      "internal_job_id": 6146034002,
-      "location": {
-        "name": "Amsterdam, Netherlands"
-      },
-      "metadata": [
-        {
-          "id": 4105571002,
-          "name": "Featured on Website",
-          "value": [],
-          "value_type": "multi_select"
-        },
-        {
-          "id": 96196709002,
-          "name": "Careers Site Department",
-          "value": null,
-          "value_type": "single_select"
-        }
-      ],
-      "id": 7982522002,
-      "updated_at": "2025-05-19T12:39:33-04:00",
-      "requisition_id": "R-100875",
-      "title": "Senior Regulatory Counsel",
-      "company_name": "Discord",
-      "first_published": "2025-05-02T17:56:22-04:00",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you&#39;ll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the EU/UK and Australia on matters involving online safety and content moderation, and supporting in other regions as available. If you like things predictable and routine - this is not the role for you!&amp;nbsp; When you combine a rapidly-scaling company with a regulatory environment in hyper-evolution, the results are guaranteed to keep you on your toes. This role can be based in Amsterdam, Netherlands or London, England.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and implement Discord&#39;s responses to regulatory requests including:&amp;nbsp; assess the incentive (or threat) posed to Discord by the inquiry; gather and organize responsive data and information; and draft accurate, compelling responses that meet our obligations and further Discord’s interests&lt;/li&gt;\n&lt;li&gt;Meet with and present to relevant regulatory authorities on Discord’s approach to regulatory compliance&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Collaborate with product counsel on regulatory responses and to advise on regulatory compliance-related product updates&lt;/li&gt;\n&lt;li&gt;Monitor new and updated regulations and anticipate enforcement risks&lt;/li&gt;\n&lt;li&gt;Collaborate with our public policy and communications teams in connection with Discord’s safety communications strategy and play a role in presenting our narrative&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Maintain up-to-date canonical templates for company practices and positions on topics such as privacy, security, teen safety, etc.&lt;/li&gt;\n&lt;li&gt;Depending on overall workload and interest, you may help to defend Discord by responding to consumer complaints, small claims, and other consumer-related issues; and manage defensive matters depending on size and complexity&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years working in regulatory legal related to Internet regulation (e.g., user safety, minor safety, privacy, data protection, consumer protection)&lt;/li&gt;\n&lt;li&gt;In-depth knowledge of regulatory landscapes across UK/EU and/or Australia, including UK &amp;amp; Australian Online Safety Act and EU Digital Services Act.&amp;nbsp; Knowledge of GDPR, AI Act, privacy rights, data protection, consumer protection, and relevant industry standards is a plus.&lt;/li&gt;\n&lt;li&gt;Experience meeting with applicable regulators in one or more of the UK, EU and Australia&lt;/li&gt;\n&lt;li&gt;Experience preparing and submitting responses to requests for information or other inquiries from relevant regulatory agencies&lt;/li&gt;\n&lt;li&gt;License to practice law in a relevant jurisdiction&lt;/li&gt;\n&lt;li&gt;Experience working with or for a company or companies in the social media, communication/ messaging, content or gaming spaces&lt;/li&gt;\n&lt;li&gt;Demonstrated experience managing projects, prioritizing, and achieving results&lt;/li&gt;\n&lt;li&gt;Ability to work collaboratively, independently, strategically, and with sound judgment&lt;/li&gt;\n&lt;li&gt;Excellent emotional intelligence&lt;/li&gt;\n&lt;li&gt;Commitment to diversity, inclusion, and belonging&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You are familiar with Discord and the video game industry&lt;/li&gt;\n&lt;li&gt;Relevant litigation experience&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-      "departments": [
-        {
-          "id": 4095032002,
-          "name": "Legal",
-          "child_ids": [],
-          "parent_id": 4094263002
-        }
-      ],
-      "offices": [
-        {
-          "id": 4058029002,
-          "name": "Remote (International)",
-          "location": null,
-          "child_ids": [],
-          "parent_id": null
-        }
-      ]
-    },
-    {
       "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7957326002",
       "data_compliance": [
         {
@@ -1484,6 +1429,61 @@
       "company_name": "Discord",
       "first_published": "2025-04-17T17:40:52-04:00",
       "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;This is an international position in England employed by an international PEO.&lt;/em&gt;&lt;em&gt;&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you&#39;ll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the EU/UK and Australia on matters involving online safety and content moderation, and supporting in other regions as available. If you like things predictable and routine - this is not the role for you!&amp;nbsp; When you combine a rapidly-scaling company with a regulatory environment in hyper-evolution, the results are guaranteed to keep you on your toes. This role can be based in Amsterdam, Netherlands or London, England.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and implement Discord&#39;s responses to regulatory requests including:&amp;nbsp; assess the incentive (or threat) posed to Discord by the inquiry; gather and organize responsive data and information; and draft accurate, compelling responses that meet our obligations and further Discord’s interests&lt;/li&gt;\n&lt;li&gt;Meet with and present to relevant regulatory authorities on Discord’s approach to regulatory compliance&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Collaborate with product counsel on regulatory responses and to advise on regulatory compliance-related product updates&lt;/li&gt;\n&lt;li&gt;Monitor new and updated regulations and anticipate enforcement risks&lt;/li&gt;\n&lt;li&gt;Collaborate with our public policy and communications teams in connection with Discord’s safety communications strategy and play a role in presenting our narrative&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Maintain up-to-date canonical templates for company practices and positions on topics such as privacy, security, teen safety, etc.&lt;/li&gt;\n&lt;li&gt;Depending on overall workload and interest, you may help to defend Discord by responding to consumer complaints, small claims, and other consumer-related issues; and manage defensive matters depending on size and complexity&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years working in regulatory legal related to Internet regulation (e.g., user safety, minor safety, privacy, data protection, consumer protection)&lt;/li&gt;\n&lt;li&gt;In-depth knowledge of regulatory landscapes across UK/EU and/or Australia, including UK &amp;amp; Australian Online Safety Act and EU Digital Services Act.&amp;nbsp; Knowledge of GDPR, AI Act, privacy rights, data protection, consumer protection, and relevant industry standards is a plus.&lt;/li&gt;\n&lt;li&gt;Experience meeting with applicable regulators in one or more of the UK, EU and Australia&lt;/li&gt;\n&lt;li&gt;Experience preparing and submitting responses to requests for information or other inquiries from relevant regulatory agencies&lt;/li&gt;\n&lt;li&gt;License to practice law in a relevant jurisdiction&lt;/li&gt;\n&lt;li&gt;Experience working with or for a company or companies in the social media, communication/ messaging, content or gaming spaces&lt;/li&gt;\n&lt;li&gt;Demonstrated experience managing projects, prioritizing, and achieving results&lt;/li&gt;\n&lt;li&gt;Ability to work collaboratively, independently, strategically, and with sound judgment&lt;/li&gt;\n&lt;li&gt;Excellent emotional intelligence&lt;/li&gt;\n&lt;li&gt;Commitment to diversity, inclusion, and belonging&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You are familiar with Discord and the video game industry&lt;/li&gt;\n&lt;li&gt;Relevant litigation experience&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4095032002,
+          "name": "Legal",
+          "child_ids": [],
+          "parent_id": 4094263002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4058029002,
+          "name": "Remote (International)",
+          "location": null,
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7982522002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6146034002,
+      "location": {
+        "name": "Amsterdam, Netherlands"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 7982522002,
+      "updated_at": "2025-05-19T12:39:33-04:00",
+      "requisition_id": "R-100875",
+      "title": "Senior Regulatory Counsel",
+      "company_name": "Discord",
+      "first_published": "2025-05-02T17:56:22-04:00",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We&#39;re looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you&#39;ll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the EU/UK and Australia on matters involving online safety and content moderation, and supporting in other regions as available. If you like things predictable and routine - this is not the role for you!&amp;nbsp; When you combine a rapidly-scaling company with a regulatory environment in hyper-evolution, the results are guaranteed to keep you on your toes. This role can be based in Amsterdam, Netherlands or London, England.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead and implement Discord&#39;s responses to regulatory requests including:&amp;nbsp; assess the incentive (or threat) posed to Discord by the inquiry; gather and organize responsive data and information; and draft accurate, compelling responses that meet our obligations and further Discord’s interests&lt;/li&gt;\n&lt;li&gt;Meet with and present to relevant regulatory authorities on Discord’s approach to regulatory compliance&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Collaborate with product counsel on regulatory responses and to advise on regulatory compliance-related product updates&lt;/li&gt;\n&lt;li&gt;Monitor new and updated regulations and anticipate enforcement risks&lt;/li&gt;\n&lt;li&gt;Collaborate with our public policy and communications teams in connection with Discord’s safety communications strategy and play a role in presenting our narrative&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Maintain up-to-date canonical templates for company practices and positions on topics such as privacy, security, teen safety, etc.&lt;/li&gt;\n&lt;li&gt;Depending on overall workload and interest, you may help to defend Discord by responding to consumer complaints, small claims, and other consumer-related issues; and manage defensive matters depending on size and complexity&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;10+ years working in regulatory legal related to Internet regulation (e.g., user safety, minor safety, privacy, data protection, consumer protection)&lt;/li&gt;\n&lt;li&gt;In-depth knowledge of regulatory landscapes across UK/EU and/or Australia, including UK &amp;amp; Australian Online Safety Act and EU Digital Services Act.&amp;nbsp; Knowledge of GDPR, AI Act, privacy rights, data protection, consumer protection, and relevant industry standards is a plus.&lt;/li&gt;\n&lt;li&gt;Experience meeting with applicable regulators in one or more of the UK, EU and Australia&lt;/li&gt;\n&lt;li&gt;Experience preparing and submitting responses to requests for information or other inquiries from relevant regulatory agencies&lt;/li&gt;\n&lt;li&gt;License to practice law in a relevant jurisdiction&lt;/li&gt;\n&lt;li&gt;Experience working with or for a company or companies in the social media, communication/ messaging, content or gaming spaces&lt;/li&gt;\n&lt;li&gt;Demonstrated experience managing projects, prioritizing, and achieving results&lt;/li&gt;\n&lt;li&gt;Ability to work collaboratively, independently, strategically, and with sound judgment&lt;/li&gt;\n&lt;li&gt;Excellent emotional intelligence&lt;/li&gt;\n&lt;li&gt;Commitment to diversity, inclusion, and belonging&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You are familiar with Discord and the video game industry&lt;/li&gt;\n&lt;li&gt;Relevant litigation experience&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4095032002,
@@ -1791,7 +1791,6 @@
           "demographic_data_consent_applies": true
         }
       ],
-      "education": "education_optional",
       "internal_job_id": 6160773002,
       "location": {
         "name": "Remote (U.S.)"
@@ -1811,12 +1810,12 @@
         }
       ],
       "id": 7990185002,
-      "updated_at": "2025-06-25T16:43:14-04:00",
+      "updated_at": "2025-06-27T17:30:17-04:00",
       "requisition_id": "R-100922",
-      "title": "Senior Software Engineer, Game Integrations",
+      "title": "Senior Software Engineer, Game Experience",
       "company_name": "Discord",
       "first_published": "2025-05-09T13:25:14-04:00",
-      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This position is US-based only.&lt;/p&gt;\n&lt;p&gt;People come to Discord before, during, and after gaming, and we want to make that experience even better. Working directly with our developer partners and communities, we are building brand new ways for users on Discord to connect, engage, and have a great time while gaming. We believe that gaming is better when playing with friends, and aim to provide the features and tooling for developers to help us enrich those experiences. This is also reflected in how we work! Our engineering culture values collaboration and building great teams. Come and join us!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build, and maintain features that help users connect and make friends through gaming on our platform, across desktop and mobile.&lt;/li&gt;\n&lt;li&gt;Engage with partners and external developers to find opportunities, evaluate challenges and provide solutions for growing online communities and enriched gaming experiences.&lt;/li&gt;\n&lt;li&gt;Collaborate with Engineers, Designers, Product, and Data Science to build engaging, fun, and trusted experiences, while experimenting and iterating on ideas that enhance user interactions.&lt;/li&gt;\n&lt;li&gt;Partner with our Content, Marketing and ML teams to improve ranking and discovery systems, enabling users to find meaningful connections and relevant content.&lt;/li&gt;\n&lt;li&gt;Build innovative features that help users discover new friendships and deepen existing ones, creating a trusted and welcoming environment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 5+ years of experience as a software engineer.&lt;/li&gt;\n&lt;li&gt;You have experience in Unity, Unreal or other game development software, as well as the backend infrastructure required to scale to an indie-size userbase.&lt;/li&gt;\n&lt;li&gt;You have experience with React, Python or other modern programming languages.&lt;/li&gt;\n&lt;li&gt;You are comfortable switching between different technical stacks and learning new ones.&lt;/li&gt;\n&lt;li&gt;You have a sense for product and design. We don’t operate in silos, and you’ll be collaborating closely with cross-functional peers. You should be able to express opinions and collaborate to make something great.&lt;/li&gt;\n&lt;li&gt;You take a holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.&lt;/li&gt;\n&lt;li&gt;You are a Discord user and want to make the product better!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working on social products.&lt;/li&gt;\n&lt;li&gt;Experience integrating or deploying on Steam (or similar platforms)&lt;/li&gt;\n&lt;li&gt;Experience using Epic Games Online Services, Steamworks API, Playfab&lt;/li&gt;\n&lt;li&gt;Experience shipping a game on Xbox, Playstation or Nintendo Switch&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This position is US-based only.&lt;/p&gt;\n&lt;p&gt;People come to Discord before, during, and after gaming, and we want to make that experience even better. Working directly with our developer partners and communities, we are building brand new ways for users on Discord to connect, engage, and have a great time while gaming. We believe that gaming is better when playing with friends, and aim to provide the features and tooling for developers to help us enrich those experiences. This is also reflected in how we work! Our engineering culture values collaboration and building great teams. Come and join us!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build, and maintain features that help users connect and make friends through gaming on our platform, across desktop and mobile.&lt;/li&gt;\n&lt;li&gt;Engage with partners and external developers to find opportunities, evaluate challenges and provide solutions for growing online communities and enriched gaming experiences.&lt;/li&gt;\n&lt;li&gt;Collaborate with Engineers, Designers, Product, and Data Science to build engaging, fun, and trusted experiences, while experimenting and iterating on ideas that enhance user interactions.&lt;/li&gt;\n&lt;li&gt;Partner with our Content, Marketing and ML teams to improve ranking and discovery systems, enabling users to find meaningful connections and relevant content.&lt;/li&gt;\n&lt;li&gt;Build innovative features that help users discover new friendships and deepen existing ones, creating a trusted and welcoming environment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You have 5+ years of experience as a full-stack software engineer.&lt;/li&gt;\n&lt;li&gt;You have experience with React, Typescript, Python and/or other modern programming languages.&lt;/li&gt;\n&lt;li&gt;You are comfortable switching between different technical stacks and learning new ones.&lt;/li&gt;\n&lt;li&gt;You have a sense for product and design. We don’t operate in silos, and you’ll be collaborating closely with cross-functional peers. You should be able to express opinions and collaborate to make something great.&lt;/li&gt;\n&lt;li&gt;You take a holistic approach to problem solving. You believe in solving a problem from first principles rather than simply shipping a solution. You learn from your mistakes and work through obstacles with the rest of the team.&lt;/li&gt;\n&lt;li&gt;You have experience in Unity, Unreal or other game development software, as well as the backend infrastructure required to scale to an indie-size userbase.&lt;/li&gt;\n&lt;li&gt;You are a Discord user and want to make the product better!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working on social products.&lt;/li&gt;\n&lt;li&gt;Experience integrating or deploying on Steam (or similar platforms)&lt;/li&gt;\n&lt;li&gt;Experience using Epic Games Online Services, Steamworks API, Playfab&lt;/li&gt;\n&lt;li&gt;Experience shipping a game on Xbox, Playstation or Nintendo Switch&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;#LI-Remote&lt;br&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
       "departments": [
         {
           "id": 4107920002,
@@ -2159,6 +2158,61 @@
           "name": "Core Tech Engineering",
           "child_ids": [],
           "parent_id": 4094266002
+        }
+      ],
+      "offices": [
+        {
+          "id": 4000383002,
+          "name": "San Francisco, CA",
+          "location": "San Francisco, California, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8037496002",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": true
+        }
+      ],
+      "internal_job_id": 6181001002,
+      "location": {
+        "name": "San Francisco, CA"
+      },
+      "metadata": [
+        {
+          "id": 4105571002,
+          "name": "Featured on Website",
+          "value": [],
+          "value_type": "multi_select"
+        },
+        {
+          "id": 96196709002,
+          "name": "Careers Site Department",
+          "value": null,
+          "value_type": "single_select"
+        }
+      ],
+      "id": 8037496002,
+      "updated_at": "2025-06-27T17:37:36-04:00",
+      "requisition_id": "R-100956",
+      "title": "Sr. Program Manager, Safety Core Initiatives",
+      "company_name": "Discord",
+      "first_published": "2025-06-27T17:37:36-04:00",
+      "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties).&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;Discord&#39;s Trust &amp;amp; Safety Strategy &amp;amp; Operations team is seeking a highly motivated Senior Program Manager to lead our Business Operations &amp;amp; Wellness initiatives. In this role, you will be responsible for enhancing the operational efficiency of the Trust &amp;amp; Safety organization while championing our wellness programs that ensure the resilience and sustainability of our teams. This position will serve as the connective tissue between leadership, cross-functional partners, and team members, driving strategic initiatives that strengthen our operational foundation and team culture.&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;What you’ll be doing&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and execute consistent business operating rhythms, including all-hands meetings, strategic leadership touchpoints, and standardized T&amp;amp;S information flows that connect operational teams with leadership decision-making&lt;/li&gt;\n&lt;li&gt;Build and maintain analytics infrastructure, including KPIs, dashboards, and reporting cadences (weekly reports, MBRs) that provide actionable insights to leadership and stakeholders&lt;/li&gt;\n&lt;li&gt;Lead strategic planning initiatives, including quarterly planning, annual planning, and bi-annual financial planning, while tracking and managing strategic priorities throughout the year&lt;/li&gt;\n&lt;li&gt;Develop and optimize wellness programs that promote team resilience and work-life balance, coordinating with People Operations and cross-functional partners to maximize organizational impact&lt;/li&gt;\n&lt;li&gt;Serve as the knowledge management expert for Trust &amp;amp; Safety, ensuring internal communications, documentation, and risk/trend identification mechanisms are consistently maintained and effective&lt;/li&gt;\n&lt;li&gt;Facilitate cross-functional alignment through strategy check-ins, management-level programs, and strategic partnerships that enhance organizational coherence and leadership effectiveness&lt;/li&gt;\n&lt;li&gt;Lead transformational projects and establish standardized frameworks that improve operational effectiveness, streamline processes, and strengthen team culture&lt;/li&gt;\n&lt;li&gt;Drive systematic continuous improvement through process evaluation, feedback collection, operational incident ownership with root cause analysis, and implementation of solutions that enhance overall organizational performance&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;Bachelor&#39;s degree or equivalent experience in a relevant field (Business, Operations, Management, etc.)&lt;/li&gt;\n&lt;li&gt;5+ years of experience in program management, operations, management consulting, or related roles specifically within Trust &amp;amp; Safety orgs at enterprise technology companies&lt;/li&gt;\n&lt;li&gt;Demonstrated experience managing diverse types of programs across operational and strategic domains&lt;/li&gt;\n&lt;li&gt;Strong understanding of organizational maturity models and experience scaling processes within rapidly growing organizations&lt;/li&gt;\n&lt;li&gt;Experience navigating complex stakeholder environments and driving alignment across multiple teams&lt;/li&gt;\n&lt;li&gt;Strong analytical skills with the ability to translate data into actionable business insights using visualization tools and business intelligence platforms&lt;/li&gt;\n&lt;li&gt;Proven track record of building and optimizing operational systems and processes&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;strong&gt;Bonus Points&amp;nbsp;&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;Master&#39;s degree in Business Administration, Data Analytics, Organizational Management, or related field&lt;/li&gt;\n&lt;li&gt;Demonstrated experience leveraging AI tools and large language models to enhance operational efficiency and decision-making processes&lt;/li&gt;\n&lt;li&gt;Advanced analytical capabilities including data modeling, statistical analysis, and SQL proficiency for extracting insights from complex datasets&lt;/li&gt;\n&lt;li&gt;Professional certification in project management methodologies (PMP, PRINCE2) or proven experience implementing agile framework&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $160,000 to $180,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4000669002,
+          "name": "Trust & Safety",
+          "child_ids": [],
+          "parent_id": 4094263002
         }
       ],
       "offices": [
@@ -2563,6 +2617,6 @@
     }
   ],
   "meta": {
-    "total": 46
+    "total": 47
   }
 }
