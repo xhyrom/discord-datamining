@@ -14210,6 +14210,21 @@ div.modalHeader_c28af8 {
   position: absolute;
   width: 100vw;
 }
+.subButton_ac86f6 {
+  margin-top: 60px;
+}
+.v2SubButtonText_ac86f6 {
+  color: var(--brand-500);
+}
+.theme-light .v2SubButtonText_ac86f6 {
+  color: var(--white);
+}
+.buttonShine_ac86f6 {
+  color: hsl(var(--brand-500-hsl) / 0.1);
+}
+.subButtonText_ac86f6 {
+  color: var(--brand-500);
+}
 .heading_e62f9d {
   margin-bottom: 8px;
 }
@@ -22663,37 +22678,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   right: -75px;
   top: -120px;
 }
-.body_ceece4 {
-  margin: var(--space-16) 0;
-  padding: 0 4px;
-}
-.addressElementContainer_ceece4 {
-  flex-direction: column;
-}
-.visible_ceece4 {
-  transform: translateX(0);
-}
-.full-motion .visible_ceece4 {
-  transition: transform 0.4s ease-out;
-}
-.hidden_ceece4 {
-  height: 0;
-  transform: translateX(-100%);
-  visibility: hidden;
-}
-.full-motion .hidden_ceece4 {
-  transition: transform 0.4s ease-out;
-}
-.cardElementContainer_ceece4.visible_ceece4 {
-  height: 236px;
-}
-.addressElementContainer_ceece4.visible_ceece4 {
-  min-height: 500px;
-}
-.addressElementContainer_ceece4.hidden_ceece4 {
-  height: 0;
-  min-height: 0;
-}
 .shaker_e5f3a9 {
   align-items: center;
   display: flex;
@@ -23953,6 +23937,37 @@ body .headerAnimation_b54a5b {
   display: flex;
   height: 243px;
   justify-content: center;
+}
+.body_ceece4 {
+  margin: var(--space-16) 0;
+  padding: 0 4px;
+}
+.addressElementContainer_ceece4 {
+  flex-direction: column;
+}
+.visible_ceece4 {
+  transform: translateX(0);
+}
+.full-motion .visible_ceece4 {
+  transition: transform 0.4s ease-out;
+}
+.hidden_ceece4 {
+  height: 0;
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+.full-motion .hidden_ceece4 {
+  transition: transform 0.4s ease-out;
+}
+.cardElementContainer_ceece4.visible_ceece4 {
+  height: 236px;
+}
+.addressElementContainer_ceece4.visible_ceece4 {
+  min-height: 500px;
+}
+.addressElementContainer_ceece4.hidden_ceece4 {
+  height: 0;
+  min-height: 0;
 }
 .link__6a22b {
   color: var(--interactive-active);
@@ -57917,4 +57932,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.675d62620d1094b7.css.map*/
+/*# sourceMappingURL=12633.e6dc1520719ee9b2.css.map*/
