@@ -6556,7 +6556,13 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .botTagAI__82f07 {
   background: var(--text-feedback-positive);
+}
+.botTagAI__82f07,
+.botTagNotStaffWarning__82f07 {
   color: var(--white);
+}
+.botTagNotStaffWarning__82f07 {
+  background: var(--status-warning-background);
 }
 .botTag__82f07.botTagRemix__82f07 {
   top: 0.3em;
@@ -57932,4 +57938,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c4e44d68012569e1.css.map*/
+/*# sourceMappingURL=12633.3325bc3733ee9332.css.map*/
