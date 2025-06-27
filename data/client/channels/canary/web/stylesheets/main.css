@@ -9743,7 +9743,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   padding-bottom: var(--space-8);
 }
 .jumpToPresentBar__0f481:active {
-  margin-bottom: calc(var(--space-24) - 1px);
+  margin-bottom: calc(var(--space-8) - 1px);
 }
 .jumpToPresentBar__0f481 .spinner__0f481 {
   padding-right: 12px;
@@ -57932,4 +57932,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.70cfb05ae396cfe6.css.map*/
+/*# sourceMappingURL=12633.c4e44d68012569e1.css.map*/
