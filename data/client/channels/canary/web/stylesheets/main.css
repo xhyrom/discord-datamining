@@ -27813,6 +27813,9 @@ body .headerAnimation_b54a5b {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.viewFullProfileButton_ace4f5 {
+  margin-left: auto;
+}
 .disabled_ace4f5 {
   opacity: 0.4;
   pointer-events: none;
@@ -57938,4 +57941,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3325bc3733ee9332.css.map*/
+/*# sourceMappingURL=12633.ba3cac0277be7a03.css.map*/
