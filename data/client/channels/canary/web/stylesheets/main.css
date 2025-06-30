@@ -11161,6 +11161,23 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .copyLinkButton__5c1cf:hover {
   color: var(--icon-primary);
 }
+.icon__1bb46 {
+  display: inline-block;
+  filter: saturate(var(--saturation-factor, 1));
+  margin-bottom: 0.2rem;
+  margin-right: 3px;
+  vertical-align: middle;
+  -webkit-user-drag: none;
+  background-size: 100%;
+}
+.imageIcon__1bb46 {
+  height: 1em;
+  width: 1em;
+}
+.name__1bb46 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .icon_e59963 {
   margin-bottom: 0.2rem;
   margin-right: var(--space-4);
@@ -57941,4 +57958,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ba3cac0277be7a03.css.map*/
+/*# sourceMappingURL=12633.045f72306ca7bcce.css.map*/
