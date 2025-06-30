@@ -1,10 +1,10 @@
 # Canary
 
 ### Info
-Build number: 414185  
-Version hash: a03be0fdf8636bb5608fa9f76343c9f8af4ba5a5  
+Build number: 414196  
+Version hash: f87387b0ecf7299f0b133f0a110c0771180f76b9  
 Host version: 1.0.663  
-Built at: 6/30/2025, 4:31:00 PM  
+Built at: 6/30/2025, 4:58:33 PM  
 
 ### Modules
 | Module                  | Version | Package sha256                                                   | URL                                                                                                       |
