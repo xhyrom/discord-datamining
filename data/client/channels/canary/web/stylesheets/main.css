@@ -36986,8 +36986,9 @@ svg.radioIcon_c1e9c4 {
   bottom: auto;
   padding-top: 0;
 }
-.hidden_bc663c * {
+.inactive_bc663c * {
   pointer-events: none !important;
+  z-index: -1;
 }
 .content_e9b214 {
   padding-bottom: 20px;
@@ -57958,4 +57959,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.045f72306ca7bcce.css.map*/
+/*# sourceMappingURL=12633.bc753d4c86c0d211.css.map*/
