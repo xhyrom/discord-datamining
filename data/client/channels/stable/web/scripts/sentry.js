@@ -4053,6 +4053,8 @@
             SEND_POWERUPS_SYSTEM_MESSAGE: (t) =>
               "/guilds/".concat(t, "/powerups-system-message"),
             SAFETY_FLOWS_TASK: "/safety-flows/task",
+            SAFETY_FLOWS_RESEND_VERIFICATION_CODE:
+              "/safety-flows/resend/email/reverification/pincode",
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
           }),
           f = Object.freeze({
@@ -4641,6 +4643,7 @@
           (r.ENABLE_NOTIFICATIONS = "enable_notifications"),
           (r.NOTIFICATION_CLICKED = "notification_clicked"),
           (r.NOTIFICATION_RENDERED = "notification_rendered"),
+          (r.NOTIFICATION_ACTION = "notification_action"),
           (r.NOTIFICATION_VIEWED = "notification_viewed"),
           (r.NOTIFICATION_SETTINGS_UPDATED = "notification_settings_updated"),
           (r.NOTIFICATION_PERMISSION_STATUS = "notification_permission_status"),
@@ -5598,6 +5601,7 @@
           (r.UPLOAD_FILE_LIMIT_ERROR = "upload_file_limit_error"),
           (r.UPDATE_USER_SETTINGS_LOCAL = "update_user_settings_local"),
           (r.UPDATE_SOUNDBOARD_SETTINGS = "update_soundboard_settings"),
+          (r.SYNC_ACROSS_CLIENTS_TOGGLED = "sync_across_clients_toggled"),
           (r.CHANNEL_INFORMATION_OPENED = "channel_information_opened"),
           (r.CHANNEL_INFORMATION_TAB_CLICKED =
             "channel_information_tab_clicked"),
@@ -6819,7 +6823,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-06-27-1c8bbc4d9610669c42096075bc960c47e43f37b5-discord_web",
+              "2025-06-30-79f1e3c19cbab9a61dcfd2f0682685de8f09cf88-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6885,8 +6889,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "414005"),
-            o.YA("builtAt", String("1751061220015"));
+            o.YA("buildNumber", "414131"),
+            o.YA("builtAt", String("1751267961680"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48207,4 +48211,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.290b7705cdeb958a.js.map
+//# sourceMappingURL=sentry.8d8bb20238590d35.js.map
