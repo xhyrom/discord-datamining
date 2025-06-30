@@ -32,6 +32,9 @@
         >How to Use a Color for my Theme</a
       >
     </li>
+    <li>
+      <a href="#h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</a>
+    </li>
   </ul>
 </div>
 <h1 id="h_01JPR4VE8AKNPT1S6735SEJ2WQ">How to Change your Discord Theme</h1>
@@ -148,10 +151,10 @@
   </li>
 </ul>
 <div class="info-box">
-  When you enable Sync across clients on desktop, your theme syncs across all
-  devices (desktop, mobile, and browser). However, themes may display slightly
-  differently on mobile.<br />For instance, if you select Ash on desktop, it
-  will appear as Dark on mobile.
+  When you enable "<strong>Sync across clients</strong>" on desktop, your theme
+  syncs across all devices (desktop, mobile, and browser). However, themes may
+  display slightly differently on mobile.<br />For instance, if you select Ash
+  on desktop, it will appear as Dark on mobile.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
@@ -328,4 +331,238 @@
     >accessibility article</a
   >
   for additional appearance settings.
+</div>
+<h1 id="h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</h1>
+<div class="exp-box">
+  <span style="color: #434343"
+    ><strong>Custom Themes</strong> is an experimental feature available only to
+    select Nitro subscribers on desktop. <br />When the “<strong
+      >Sync across clients</strong
+    >" toggle is enabled, custom themes applied on desktop may affect your
+    mobile experience. <br />For example: On the desktop app, if you switch from
+    dark mode to a custom theme with a light background, your mobile app will
+    automatically switch to light mode as well. Since custom themes are not
+    supported on mobile, the mobile app defaults to the standard light mode
+    theme.<br
+  /></span>
+</div>
+<p>
+  Make Discord match your unique vibe with custom themes! Nitro subscribers can
+  choose custom themes with endless color combinations to customize their app’s
+  appearance. 
+</p>
+<p>
+  1. To get started, navigate to your <strong>User Settings</strong> by
+  selecting the <strong>cogwheel </strong>icon [<img
+    src="https://support.discord.com/hc/article_attachments/32883966902167"
+    width="24"
+    height="24"
+  />] located to the right of your <strong>avatar</strong> in the bottom-left
+  corner.  
+</p>
+<p>
+  2. Press <strong>Appearance</strong> where you will find the
+  <strong>Theme</strong> category. 
+</p>
+<p>
+  3. Under <strong>Color Themes</strong>, select the
+  <strong>Custom Theme</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/32883966904343"
+    width="24"
+    height="24"
+  />].
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943203863"
+    width="624"
+    height="492"
+  />
+</p>
+<h4 id="h_01JXZX031FCD5QW5X504HQM8NM" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Navigating to User Settings &gt; Appearance &gt; Theme on Desktop</span
+  >
+</h4>
+<p>
+  4. In the <strong>Customize your theme</strong> sidebar to the right of your
+  app, you can select the following: 
+</p>
+<ul>
+  <li>
+    Select between <strong>Dark</strong> or <strong>Light</strong> mode color
+    palettes
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943206167"
+    width="624"
+    height="444"
+  />
+</p>
+<h4 id="h_01JXZX031F7S1G4NXN2B41A9B2" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Selecting Between Dark and Light Mode</span>
+</h4>
+<ul>
+  <li>
+    Select your custom colors using the <strong>color field </strong>and<strong>
+      hue slider</strong
+    >
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943207319"
+    width="624"
+    height="444"
+  />
+</p>
+<h4 id="h_01JXZX031FVRQHDE9B7YKQC8GY" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Choosing Colors from the Color Field and Hue Slider</span
+  >
+</h4>
+<div class="tip-box">
+  <strong><span style="color: #434343">Tip</span></strong
+  ><span style="color: #434343">: You can use either the </span
+  ><strong><span style="color: #434343">color picker</span></strong
+  ><span style="color: #434343"> icon [</span
+  ><span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32883943209495"
+      width="24"
+      height="24" /></span
+  ><span style="color: #434343"
+    >] or enter a Hex code to select a color for your theme.</span
+  >
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/32883966912407"
+      width="624"
+      height="444"
+    />
+  </p>
+  <h4 id="h_01JXZX031FY7EEMK3W1EGJHZ00" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Choosing Colors Using the Color Picker or Entering a Hex Code</span
+    >
+  </h4>
+</div>
+<ul>
+  <li>
+    Add additional colors to your gradient by pressing
+    <strong>Add Color</strong> 
+  </li>
+</ul>
+<div class="info-box">
+  <strong><span style="color: #434343">Info</span></strong
+  ><span style="color: #434343"
+    >: You can select up to 5 colors when creating a gradient. </span
+  >
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943212951"
+    width="624"
+    height="444"
+  />
+</p>
+<h4 id="h_01JXZX031FA54MZ6H4DR9ZXWP6" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Using the Add Color Option</span>
+</h4>
+<ul>
+  <li>
+    Use the <strong>Gradient Direction</strong> slider to control how your
+    colors flow
+  </li>
+</ul>
+<div class="info-box">
+  <strong><span style="color: #434343">Info</span></strong
+  ><span style="color: #434343"
+    >: The Gradient Direction slider will only show as an option once you’ve
+    added two or more color options.</span
+  >
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943213847"
+    width="624"
+    height="444"
+  />
+</p>
+<h4 id="h_01JXZX031FGYJQ7NRJ9TYB9KNG" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Using the Gradient Direction Slider</span>
+</h4>
+<ul>
+  <li>
+    Use the <strong>Color Intensity</strong> slider to adjust how vibrant your
+    colors appear
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943214359"
+    width="624"
+    height="444"
+  />
+</p>
+<h4 id="h_01JXZX031FQ066GDG54FV32PME" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Using the Color Intensity Slider</span>
+</h4>
+<p>
+  5. When you're satisfied with your changes, select <strong>Apply</strong> in
+  the bottom-right corner of the sidebar to save them.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/32883943215639"
+    width="624"
+    height="492"
+  />
+</p>
+<h4 id="h_01JXZX031FZ7VXHF50Y5RC69JX" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Apply Button in Sidebar</span>
+</h4>
+<div class="tip-box">
+  <strong><span style="color: #434343">Tip</span></strong
+  ><span style="color: #434343">: Press the </span
+  ><strong><span style="color: #434343">Surprise Me</span></strong
+  ><span style="color: #434343"> icon [</span
+  ><span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32883943217175"
+      width="24"
+      height="24" /></span
+  ><span style="color: #434343"
+    >] in the bottom-left corner of the sidebar to generate random color
+    combinations for your theme! </span
+  >
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/32883943217687"
+      width="624"
+      height="492"
+    />
+  </p>
+  <h4 id="h_01JXZX031GPP70BACCDMYJKRYY" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Using the Surprise Me Icon</span>
+  </h4>
+</div>
+<div class="tip-box">
+  <strong><span style="color: #434343">Tip</span></strong
+  ><span style="color: #434343"
+    >: You can also restore your theme back to your previous custom theme by
+    selecting the <strong>Reset</strong> button.</span
+  ><span style="color: #434343"> </span>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/32883966923159"
+      width="624"
+      height="492"
+    />
+  </p>
+  <h4 id="h_01JXZX031G3B7ZKBM7STQ97JM4" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Using Reset Button</span>
+  </h4>
 </div>
