@@ -57,10 +57,10 @@
             for (var e = Array(t), a = -1; ++a < t; ) e[a] = 0;
             return e;
           }
-          function R(t) {
+          function d(t) {
             return t > 0 ? Math.floor(t) : Math.ceil(t);
           }
-          function d(t, e) {
+          function R(t, e) {
             var a,
               r,
               _ = t.length,
@@ -74,7 +74,7 @@
             return i > 0 && o.push(i), o;
           }
           function N(t, e) {
-            return t.length >= e.length ? d(t, e) : d(e, t);
+            return t.length >= e.length ? R(t, e) : R(e, t);
           }
           function f(t, e) {
             var a,
@@ -182,7 +182,7 @@
               o = t.length,
               i = I(o);
             for (_ = 0, a = o - 1; a >= 0; --a)
-              (r = R((n = 1e7 * _ + t[a]) / e)),
+              (r = d((n = 1e7 * _ + t[a]) / e)),
                 (_ = n - r * e),
                 (i[a] = 0 | r);
             return [i, 0 | _];
@@ -192,17 +192,17 @@
               r,
               s = F(e);
             if (_) return [new c(t.value / s.value), new c(t.value % s.value)];
-            var d = t.value,
+            var R = t.value,
               N = s.value;
             if (0 === N) throw Error("Cannot divide by zero");
             if (t.isSmall)
-              return s.isSmall ? [new i(R(d / N)), new i(d % N)] : [n[0], t];
+              return s.isSmall ? [new i(d(R / N)), new i(R % N)] : [n[0], t];
             if (s.isSmall) {
               if (1 === N) return [t, n[0]];
               if (-1 == N) return [t.negate(), n[0]];
               var f = Math.abs(N);
               if (f < 1e7) {
-                a = l((r = g(d, f))[0]);
+                a = l((r = g(R, f))[0]);
                 var T = r[1];
                 return (t.sign && (T = -T), "number" == typeof a)
                   ? (t.sign !== s.sign && (a = -a), [new i(a), new i(T)])
@@ -210,11 +210,11 @@
               }
               N = E(f);
             }
-            var p = C(d, N);
+            var p = C(R, N);
             if (-1 === p) return [n[0], t];
             if (0 === p) return [n[t.sign === s.sign ? 1 : -1], n[0]];
             a = (r =
-              d.length + N.length <= 200
+              R.length + N.length <= 200
                 ? (function (t, e) {
                     var a,
                       r,
@@ -226,23 +226,23 @@
                       s = t.length,
                       E = e.length,
                       u = I(e.length),
-                      R = e[E - 1],
-                      d = Math.ceil(1e7 / (2 * R)),
-                      N = L(t, d),
-                      f = L(e, d);
+                      d = e[E - 1],
+                      R = Math.ceil(1e7 / (2 * d)),
+                      N = L(t, R),
+                      f = L(e, R);
                     for (
                       N.length <= s && N.push(0),
                         f.push(0),
-                        R = f[E - 1],
+                        d = f[E - 1],
                         r = s - E;
                       r >= 0;
                       r--
                     ) {
                       for (
                         a = 1e7 - 1,
-                          N[r + E] !== R &&
+                          N[r + E] !== d &&
                             (a = Math.floor(
-                              (1e7 * N[r + E] + N[r + E - 1]) / R,
+                              (1e7 * N[r + E] + N[r + E - 1]) / d,
                             )),
                           _ = 0,
                           n = 0,
@@ -267,8 +267,8 @@
                       }
                       u[r] = a;
                     }
-                    return (N = g(N, d)[0]), [l(u), l(N)];
-                  })(d, N)
+                    return (N = g(N, R)[0]), [l(u), l(N)];
+                  })(R, N)
                 : (function (t, e) {
                     for (
                       var a,
@@ -299,7 +299,7 @@
                       s.push(a), (E = A(E, o));
                     }
                     return s.reverse(), [l(s), l(E)];
-                  })(d, N))[0];
+                  })(R, N))[0];
             var h = t.sign !== s.sign,
               O = r[1],
               P = t.sign;
@@ -319,7 +319,7 @@
               if (t[a] !== e[a]) return t[a] > e[a] ? 1 : -1;
             return 0;
           }
-          function v(t) {
+          function m(t) {
             var e = t.abs();
             return (
               !e.isUnit() &&
@@ -328,7 +328,7 @@
                   (!!e.lesser(49) || void 0)))
             );
           }
-          function m(t, e) {
+          function v(t, e) {
             for (var a, _, n, o = t.prev(), i = o, c = 0; i.isEven(); )
               (i = i.divide(2)), c++;
             t: for (_ = 0; _ < e.length; _++)
@@ -539,7 +539,7 @@
               if (_.sign) return n[0];
               if (!_.isSmall)
                 throw Error("The exponent " + _.toString() + " is too large.");
-              if (this.isSmall && s((e = Math.pow(o, c)))) return new i(R(e));
+              if (this.isSmall && s((e = Math.pow(o, c)))) return new i(d(e));
               for (
                 a = this, r = n[1];
                 !0 & c && ((r = r.times(a)), --c), 0 !== c;
@@ -777,12 +777,12 @@
             (c.prototype.isDivisibleBy = i.prototype.isDivisibleBy =
               o.prototype.isDivisibleBy),
             (o.prototype.isPrime = function (t) {
-              var e = v(this);
+              var e = m(this);
               if (void 0 !== e) return e;
               var a = this.abs(),
                 _ = a.bitLength();
               if (_ <= 64)
-                return m(a, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+                return v(a, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
               for (
                 var n = Math.log(2) * _.toJSNumber(),
                   o = Math.ceil(!0 === t ? 2 * Math.pow(n, 2) : n),
@@ -792,11 +792,11 @@
                 c++
               )
                 i.push(r(c + 2));
-              return m(a, i);
+              return v(a, i);
             }),
             (c.prototype.isPrime = i.prototype.isPrime = o.prototype.isPrime),
             (o.prototype.isProbablePrime = function (e, a) {
-              var _ = v(this);
+              var _ = m(this);
               if (void 0 !== _) return _;
               for (
                 var n = this.abs(), o = t === e ? 5 : e, i = [], c = 0;
@@ -804,7 +804,7 @@
                 c++
               )
                 i.push(r.randBetween(2, n.minus(2), a));
-              return m(n, i);
+              return v(n, i);
             }),
             (c.prototype.isProbablePrime = i.prototype.isProbablePrime =
               o.prototype.isProbablePrime),
@@ -885,11 +885,11 @@
                 (i = l[0]),
                 u.push(a(c, s));
             for (
-              var I = 0 !== a(+!!_, +!!n) ? r(-1) : r(0), R = u.length - 1;
-              R >= 0;
-              R -= 1
+              var I = 0 !== a(+!!_, +!!n) ? r(-1) : r(0), d = u.length - 1;
+              d >= 0;
+              d -= 1
             )
-              I = I.multiply(U).add(r(u[R]));
+              I = I.multiply(U).add(r(u[d]));
             return I;
           }
           (o.prototype.shiftLeft = function (t) {
@@ -1102,7 +1102,7 @@
           function x(t) {
             if (s(+t)) {
               var e = +t;
-              if (e === R(e)) return _ ? new c(BigInt(e)) : new i(e);
+              if (e === d(e)) return _ ? new c(BigInt(e)) : new i(e);
               throw Error("Invalid integer: " + t);
             }
             var a = "-" === t[0];
@@ -1112,7 +1112,7 @@
             if (2 === r.length) {
               var n = r[1];
               if (
-                ("+" === n[0] && (n = n.slice(1)), (n *= 1) !== R(n) || !s(n))
+                ("+" === n[0] && (n = n.slice(1)), (n *= 1) !== d(n) || !s(n))
               )
                 throw Error(
                   "Invalid integer: " + n + " is not a valid exponent.",
@@ -1133,15 +1133,15 @@
             if (!/^([0-9][0-9]*)$/.test(t))
               throw Error("Invalid integer: " + t);
             if (_) return new c(BigInt(a ? "-" + t : t));
-            for (var I = [], d = t.length, N = d - 7; d > 0; )
-              I.push(+t.slice(N, d)), (N -= 7) < 0 && (N = 0), (d -= 7);
+            for (var I = [], R = t.length, N = R - 7; R > 0; )
+              I.push(+t.slice(N, R)), (N -= 7) < 0 && (N = 0), (R -= 7);
             return u(I), new o(I, a);
           }
           function F(t) {
             if ("number" == typeof t) {
               if (_) return new c(BigInt(t));
               if (s(t)) {
-                if (t !== R(t)) throw Error(t + " is not an integer.");
+                if (t !== d(t)) throw Error(t + " is not an integer.");
                 return new i(t);
               }
               return x(t.toString());
@@ -1225,7 +1225,7 @@
                 E++
               ) {
                 var l = s ? i[E] : 1e7,
-                  u = R(r() * l);
+                  u = d(r() * l);
                 c.push(u), u < l && (s = !1);
               }
               return _.add(n.fromArray(c, 1e7, !1));
@@ -1407,8 +1407,8 @@
             l = !a && !E && o(t),
             u = !a && !E && !l && c(t),
             I = a || E || l || u,
-            R = I ? r(t.length, String) : [],
-            d = R.length;
+            d = I ? r(t.length, String) : [],
+            R = d.length;
           for (var N in t)
             (e || s.call(t, N)) &&
               !(
@@ -1419,10 +1419,10 @@
                     ("buffer" == N ||
                       "byteLength" == N ||
                       "byteOffset" == N)) ||
-                  i(N, d))
+                  i(N, R))
               ) &&
-              R.push(N);
-          return R;
+              d.push(N);
+          return d;
         };
       },
       467631: function (t) {
@@ -1548,8 +1548,8 @@
           l = "[object Arguments]",
           u = "[object Array]",
           I = "[object Object]",
-          R = Object.prototype.hasOwnProperty;
-        t.exports = function (t, e, a, d, N, f) {
+          d = Object.prototype.hasOwnProperty;
+        t.exports = function (t, e, a, R, N, f) {
           var A = c(t),
             T = c(e),
             p = A ? u : i(t),
@@ -1565,18 +1565,18 @@
           if (P && !h)
             return (
               f || (f = new r()),
-              A || E(t) ? _(t, e, a, d, N, f) : n(t, e, p, a, d, N, f)
+              A || E(t) ? _(t, e, a, R, N, f) : n(t, e, p, a, R, N, f)
             );
           if (!(1 & a)) {
-            var g = h && R.call(t, "__wrapped__"),
-              D = O && R.call(e, "__wrapped__");
+            var g = h && d.call(t, "__wrapped__"),
+              D = O && d.call(e, "__wrapped__");
             if (g || D) {
               var C = g ? t.value() : t,
-                v = D ? e.value() : e;
-              return f || (f = new r()), N(C, v, a, d, f);
+                m = D ? e.value() : e;
+              return f || (f = new r()), N(C, m, a, R, f);
             }
           }
-          return !!P && (f || (f = new r()), o(t, e, a, d, N, f));
+          return !!P && (f || (f = new r()), o(t, e, a, R, N, f));
         };
       },
       46166: function (t, e, a) {
@@ -1599,8 +1599,8 @@
               if (void 0 === l && !(E in t)) return !1;
             } else {
               var I = new r();
-              if (n) var R = n(l, u, E, t, e, I);
-              if (!(void 0 === R ? _(u, l, 3, n, I) : R)) return !1;
+              if (n) var d = n(l, u, E, t, e, I);
+              if (!(void 0 === d ? _(u, l, 3, n, I) : d)) return !1;
             }
           }
           return !0;
@@ -1818,16 +1818,16 @@
           var u = c.get(t),
             I = c.get(e);
           if (u && I) return u == e && I == t;
-          var R = -1,
-            d = !0,
+          var d = -1,
+            R = !0,
             N = 2 & a ? new r() : void 0;
-          for (c.set(t, e), c.set(e, t); ++R < E; ) {
-            var f = t[R],
-              A = e[R];
-            if (o) var T = s ? o(A, f, R, e, t, c) : o(f, A, R, t, e, c);
+          for (c.set(t, e), c.set(e, t); ++d < E; ) {
+            var f = t[d],
+              A = e[d];
+            if (o) var T = s ? o(A, f, d, e, t, c) : o(f, A, d, t, e, c);
             if (void 0 !== T) {
               if (T) continue;
-              d = !1;
+              R = !1;
               break;
             }
             if (N) {
@@ -1837,15 +1837,15 @@
                     return N.push(e);
                 })
               ) {
-                d = !1;
+                R = !1;
                 break;
               }
             } else if (!(f === A || i(f, A, a, o, c))) {
-              d = !1;
+              R = !1;
               break;
             }
           }
-          return c.delete(t), c.delete(e), d;
+          return c.delete(t), c.delete(e), R;
         };
       },
       575473: function (t, e, a) {
@@ -1878,10 +1878,10 @@
             case "[object Map]":
               var I = i;
             case "[object Set]":
-              var R = 1 & r;
-              if ((I || (I = c), t.size != e.size && !R)) break;
-              var d = u.get(t);
-              if (d) return d == e;
+              var d = 1 & r;
+              if ((I || (I = c), t.size != e.size && !d)) break;
+              var R = u.get(t);
+              if (R) return R == e;
               (r |= 2), u.set(t, e);
               var N = o(I(t), I(e), r, s, l, u);
               return u.delete(t), N;
@@ -1904,21 +1904,21 @@
             if (!(c ? u in e : _.call(e, u))) return !1;
           }
           var I = i.get(t),
-            R = i.get(e);
-          if (I && R) return I == e && R == t;
-          var d = !0;
+            d = i.get(e);
+          if (I && d) return I == e && d == t;
+          var R = !0;
           i.set(t, e), i.set(e, t);
           for (var N = c; ++l < E; ) {
             var f = t[(u = s[l])],
               A = e[u];
             if (n) var T = c ? n(A, f, u, e, t, i) : n(f, A, u, t, e, i);
             if (!(void 0 === T ? f === A || o(f, A, a, n, i) : T)) {
-              d = !1;
+              R = !1;
               break;
             }
             N || (N = "constructor" == u);
           }
-          if (d && !N) {
+          if (R && !N) {
             var p = t.constructor,
               L = e.constructor;
             p != L &&
@@ -1930,9 +1930,9 @@
                 "function" == typeof L &&
                 L instanceof L
               ) &&
-              (d = !1);
+              (R = !1);
           }
-          return i.delete(t), i.delete(e), d;
+          return i.delete(t), i.delete(e), R;
         };
       },
       940151: function (t, e, a) {
@@ -2018,14 +2018,14 @@
           l = "[object Promise]",
           u = "[object Set]",
           I = "[object WeakMap]",
-          R = "[object DataView]",
-          d = s(r),
+          d = "[object DataView]",
+          R = s(r),
           N = s(_),
           f = s(n),
           A = s(o),
           T = s(i),
           p = c;
-        ((r && p(new r(new ArrayBuffer(1))) != R) ||
+        ((r && p(new r(new ArrayBuffer(1))) != d) ||
           (_ && p(new _()) != E) ||
           (n && p(n.resolve()) != l) ||
           (o && p(new o()) != u) ||
@@ -2036,8 +2036,8 @@
               r = a ? s(a) : "";
             if (r)
               switch (r) {
-                case d:
-                  return R;
+                case R:
+                  return d;
                 case N:
                   return E;
                 case f:
@@ -2684,7 +2684,7 @@
         function I(t, e) {
           (this.fun = t), (this.array = e);
         }
-        function R() {}
+        function d() {}
         (_.nextTick = function (t) {
           var e = Array(arguments.length - 1);
           if (arguments.length > 1)
@@ -2700,15 +2700,15 @@
           (_.argv = []),
           (_.version = ""),
           (_.versions = {}),
-          (_.on = R),
-          (_.addListener = R),
-          (_.once = R),
-          (_.off = R),
-          (_.removeListener = R),
-          (_.removeAllListeners = R),
-          (_.emit = R),
-          (_.prependListener = R),
-          (_.prependOnceListener = R),
+          (_.on = d),
+          (_.addListener = d),
+          (_.once = d),
+          (_.off = d),
+          (_.removeListener = d),
+          (_.removeAllListeners = d),
+          (_.emit = d),
+          (_.prependListener = d),
+          (_.prependOnceListener = d),
           (_.listeners = function (t) {
             return [];
           }),
@@ -2740,8 +2740,8 @@
           l = a(188785),
           u = a(979007),
           I = a(688357),
-          R = a(526761),
-          d = a(231338);
+          d = a(526761),
+          R = a(231338);
         a(334431),
           Object.freeze({
             SUPPRESS_JOIN_NOTIFICATIONS: 1,
@@ -4470,7 +4470,7 @@
             GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
             GUILD_BOOSTING: "Nitro Server Boost",
             WEBAUTHN_VIEW: "View Security Keys",
-            [R.cP]: "Guild Role Subscription",
+            [d.cP]: "Guild Role Subscription",
             BILLING: "Billing",
             EXPERIMENTS: "Experiments",
             DEVELOPER_OPTIONS: "Developer Options",
@@ -6728,16 +6728,16 @@
             "\\": 220,
             "'": 222,
           }),
-          d.pK.USD,
-          d.pK.CAD,
-          d.pK.EUR,
-          d.pK.AUD,
-          d.pK.GBP,
-          d.pK.PHP,
-          d.pK.MYR,
-          d.pK.VND,
-          d.pK.KRW,
-          d.pK.IDR,
+          R.pK.USD,
+          R.pK.CAD,
+          R.pK.EUR,
+          R.pK.AUD,
+          R.pK.GBP,
+          R.pK.PHP,
+          R.pK.MYR,
+          R.pK.VND,
+          R.pK.KRW,
+          R.pK.IDR,
           Object.freeze({
             APPLICATIONS: (t) => (null == t ? null : ["applications", t]),
             APP_PREMIUM_BUTTON: (t) =>
@@ -6825,7 +6825,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d75729e6681e5090203de722dc6cd59b849b3520",
+            release: "discord_web-1971e794ba42c235fc4e098488083674cbf35f76",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6891,8 +6891,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "414791"),
-            o.YA("builtAt", String("1751397389661"));
+            o.YA("buildNumber", "414811"),
+            o.YA("builtAt", String("1751398220012"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11098,15 +11098,15 @@
           l = a(897710),
           u = a(15202),
           I = a(211468);
-        let { Themes: R } = u.V,
-          { SemanticColors: d } = i.V,
+        let { Themes: d } = u.V,
+          { SemanticColors: R } = i.V,
           { RawColors: N } = c.V,
           { Shadows: f } = E.V,
           { Spacing: A } = l.V,
           T = Symbol("semanticColor"),
           p = {
-            themes: R,
-            colors: o()(d, (t, e) => ({ [T]: e })),
+            themes: d,
+            colors: o()(R, (t, e) => ({ [T]: e })),
             unsafe_rawColors: N,
             shadows: o()(f, (t) => {
               function e(e) {
@@ -11133,12 +11133,12 @@
                 t = (function (t) {
                   if ("string" == typeof t) {
                     let e = t.toUpperCase();
-                    if (!(e in R)) throw Error("Invalid theme: ".concat(t));
-                    t = R[e];
+                    if (!(e in d)) throw Error("Invalid theme: ".concat(t));
+                    t = d[e];
                   }
                   return t;
                 })(t);
-                let o = d[e[T]],
+                let o = R[e[T]],
                   { category: i } = o,
                   c = o[t],
                   s = N[c.raw],
@@ -16814,6 +16814,18 @@
             r.I.NEUTRAL_1,
             r.I.NEUTRAL_1,
           ],
+          "control-background-icon-only-active": [
+            r.I.OPACITY_20,
+            r.I.OPACITY_24,
+            r.I.OPACITY_24,
+            r.I.OPACITY_20,
+          ],
+          "control-background-icon-only-hover": [
+            r.I.OPACITY_16,
+            r.I.OPACITY_16,
+            r.I.OPACITY_20,
+            r.I.OPACITY_16,
+          ],
           "control-background-overlay-primary-active": [
             r.I.NEUTRAL_17,
             r.I.NEUTRAL_17,
@@ -16909,18 +16921,6 @@
             r.I.OPACITY_12,
             r.I.OPACITY_12,
             r.I.OPACITY_8,
-          ],
-          "control-background-tertiary-active": [
-            r.I.OPACITY_20,
-            r.I.OPACITY_24,
-            r.I.OPACITY_24,
-            r.I.OPACITY_20,
-          ],
-          "control-background-tertiary-hover": [
-            r.I.OPACITY_16,
-            r.I.OPACITY_16,
-            r.I.OPACITY_20,
-            r.I.OPACITY_16,
           ],
           "control-border-active-active": [
             r.I.OPACITY_WHITE_8,
@@ -17018,6 +17018,18 @@
             r.I.OPACITY_24,
             r.I.OPACITY_12,
           ],
+          "control-border-icon-only-active": [
+            r.I.OPACITY_4,
+            r.I.OPACITY_20,
+            r.I.OPACITY_16,
+            r.I.OPACITY_4,
+          ],
+          "control-border-icon-only-hover": [
+            r.I.OPACITY_4,
+            r.I.OPACITY_20,
+            r.I.OPACITY_16,
+            r.I.OPACITY_4,
+          ],
           "control-border-overlay-primary-active": [
             r.I.OPACITY_12,
             r.I.OPACITY_28,
@@ -17109,18 +17121,6 @@
             r.I.OPACITY_4,
           ],
           "control-border-secondary-loading": [
-            r.I.OPACITY_4,
-            r.I.OPACITY_20,
-            r.I.OPACITY_16,
-            r.I.OPACITY_4,
-          ],
-          "control-border-tertiary-active": [
-            r.I.OPACITY_4,
-            r.I.OPACITY_20,
-            r.I.OPACITY_16,
-            r.I.OPACITY_4,
-          ],
-          "control-border-tertiary-hover": [
             r.I.OPACITY_4,
             r.I.OPACITY_20,
             r.I.OPACITY_16,
@@ -17234,6 +17234,30 @@
             r.I.BLACK,
             r.I.BLACK,
           ],
+          "control-icon-icon-only-active": [
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_8,
+            r.I.NEUTRAL_2,
+          ],
+          "control-icon-icon-only-default": [
+            r.I.NEUTRAL_16,
+            r.I.NEUTRAL_44,
+            r.I.NEUTRAL_27,
+            r.I.NEUTRAL_23,
+          ],
+          "control-icon-icon-only-hover": [
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_8,
+            r.I.NEUTRAL_2,
+          ],
+          "control-icon-icon-only-loading": [
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_8,
+            r.I.NEUTRAL_2,
+          ],
           "control-icon-overlay-primary-active": [
             r.I.BLACK,
             r.I.BLACK,
@@ -17325,30 +17349,6 @@
             r.I.NEUTRAL_2,
           ],
           "control-icon-secondary-loading": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-icon-tertiary-active": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-icon-tertiary-default": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-icon-tertiary-hover": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-icon-tertiary-loading": [
             r.I.NEUTRAL_1,
             r.I.NEUTRAL_71,
             r.I.NEUTRAL_8,
@@ -17541,30 +17541,6 @@
             r.I.NEUTRAL_2,
           ],
           "control-text-secondary-loading": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-text-tertiary-active": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-text-tertiary-default": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-text-tertiary-hover": [
-            r.I.NEUTRAL_1,
-            r.I.NEUTRAL_71,
-            r.I.NEUTRAL_8,
-            r.I.NEUTRAL_2,
-          ],
-          "control-text-tertiary-loading": [
             r.I.NEUTRAL_1,
             r.I.NEUTRAL_71,
             r.I.NEUTRAL_8,
@@ -22618,18 +22594,18 @@
             ))();
           };
           (I.Color = u), (I.version = "2.4.2");
-          var R = i.unpack,
-            d = Math.max,
+          var d = i.unpack,
+            R = Math.max,
             N = i.unpack,
             f = i.unpack,
             A = i.type,
             T = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = R(t, "rgb"),
+              var a = d(t, "rgb"),
                 r = a[0],
                 _ = a[1],
                 n = a[2],
-                o = 1 - d((r /= 255), d((_ /= 255), (n /= 255))),
+                o = 1 - R((r /= 255), R((_ /= 255), (n /= 255))),
                 i = o < 1 ? 1 / (1 - o) : 0;
               return [(1 - r - o) * i, (1 - _ - o) * i, (1 - n - o) * i, o];
             };
@@ -22712,13 +22688,13 @@
                 r + "(" + a.join(",") + ")"
               );
             },
-            v = Math.round,
-            m = i.unpack,
+            m = Math.round,
+            v = i.unpack,
             y = Math.round,
             S = function () {
               for (var t, e, a, r, _ = [], n = arguments.length; n--; )
                 _[n] = arguments[n];
-              var o = (_ = m(_, "hsl"))[0],
+              var o = (_ = v(_, "hsl"))[0],
                 i = _[1],
                 c = _[2];
               if (0 === i) e = a = r = 255 * c;
@@ -22729,16 +22705,16 @@
                   u = 2 * c - l,
                   I = o / 360;
                 (s[0] = I + 1 / 3), (s[1] = I), (s[2] = I - 1 / 3);
-                for (var R = 0; R < 3; R++)
-                  s[R] < 0 && (s[R] += 1),
-                    s[R] > 1 && (s[R] -= 1),
-                    6 * s[R] < 1
-                      ? (E[R] = u + (l - u) * 6 * s[R])
-                      : 2 * s[R] < 1
-                        ? (E[R] = l)
-                        : 3 * s[R] < 2
-                          ? (E[R] = u + (l - u) * (2 / 3 - s[R]) * 6)
-                          : (E[R] = u);
+                for (var d = 0; d < 3; d++)
+                  s[d] < 0 && (s[d] += 1),
+                    s[d] > 1 && (s[d] -= 1),
+                    6 * s[d] < 1
+                      ? (E[d] = u + (l - u) * 6 * s[d])
+                      : 2 * s[d] < 1
+                        ? (E[d] = l)
+                        : 3 * s[d] < 2
+                          ? (E[d] = u + (l - u) * (2 / 3 - s[d]) * 6)
+                          : (E[d] = u);
                 (e = (t = [y(255 * E[0]), y(255 * E[1]), y(255 * E[2])])[0]),
                   (a = t[1]),
                   (r = t[2]);
@@ -22789,8 +22765,8 @@
               if ((e = t.match(M))) {
                 var I = e.slice(1, 4);
                 (I[1] *= 0.01), (I[2] *= 0.01);
-                var R = S(I);
-                return (R[3] = +e[4]), R;
+                var d = S(I);
+                return (d[3] = +e[4]), d;
               }
             };
           Y.test = function (t) {
@@ -22810,9 +22786,9 @@
                 r = D(t) || "rgb";
               return "hsl" == r.substr(0, 3)
                 ? C(P(a), r)
-                : ((a[0] = v(a[0])),
-                  (a[1] = v(a[1])),
-                  (a[2] = v(a[2])),
+                : ((a[0] = m(a[0])),
+                  (a[1] = m(a[1])),
+                  (a[2] = m(a[2])),
                   ("rgba" === r || (a.length > 3 && a[3] < 1)) &&
                     ((a[3] = a.length > 3 ? a[3] : 1), (r = "rgba")),
                   r + "(" + a.slice(0, "rgb" === r ? 3 : 4).join(",") + ")");
@@ -22899,19 +22875,19 @@
                 u = s[1],
                 I = s[2];
               I *= 255;
-              var R = 255 * u;
+              var d = 255 * u;
               if (0 === u) o = i = c = I;
               else {
                 360 === l && (l = 0),
                   l > 360 && (l -= 360),
                   l < 0 && (l += 360);
-                var d = V((l /= 60)),
-                  N = l - d,
+                var R = V((l /= 60)),
+                  N = l - R,
                   f = I * (1 - u),
-                  A = f + R * (1 - N),
-                  T = f + R * N,
-                  p = f + R;
-                switch (d) {
+                  A = f + d * (1 - N),
+                  T = f + d * N,
+                  p = f + d;
+                switch (R) {
                   case 0:
                     (o = (t = [p, T, f])[0]), (i = t[1]), (c = t[2]);
                     break;
@@ -23035,8 +23011,8 @@
             tl = i.PITHIRD,
             tu = Math.cos,
             tI = i.unpack,
-            tR = i.type,
-            td = function () {
+            td = i.type,
+            tR = function () {
               for (var t, e = [], a = arguments.length; a--; )
                 e[a] = arguments[a];
               var r = tr(e, "rgb"),
@@ -23061,7 +23037,7 @@
               );
             };
           (u.prototype.hsi = function () {
-            return td(this._rgb);
+            return tR(this._rgb);
           }),
             (I.hsi = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -23111,7 +23087,7 @@
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === tR((t = tI(t, "hsi"))) && 3 === t.length)
+                if ("array" === td((t = tI(t, "hsi"))) && 3 === t.length)
                   return "hsi";
               },
             });
@@ -23189,12 +23165,12 @@
                 360 === l && (l = 0),
                   l > 360 && (l -= 360),
                   l < 0 && (l += 360);
-                var R = th((l /= 60)),
-                  d = l - R,
+                var d = th((l /= 60)),
+                  R = l - d,
                   N = I * (1 - u),
-                  f = I * (1 - u * d),
-                  A = I * (1 - u * (1 - d));
-                switch (R) {
+                  f = I * (1 - u * R),
+                  A = I * (1 - u * (1 - R));
+                switch (d) {
                   case 0:
                     (o = (t = [I, A, N])[0]), (i = t[1]), (c = t[2]);
                     break;
@@ -23236,14 +23212,14 @@
               t3: 0.008856452,
             },
             tC = i.unpack,
-            tv = Math.pow,
-            tm = function (t) {
+            tm = Math.pow,
+            tv = function (t) {
               return (t /= 255) <= 0.04045
                 ? t / 12.92
-                : tv((t + 0.055) / 1.055, 2.4);
+                : tm((t + 0.055) / 1.055, 2.4);
             },
             ty = function (t) {
-              return t > tD.t3 ? tv(t, 1 / 3) : t / tD.t2 + tD.t0;
+              return t > tD.t3 ? tm(t, 1 / 3) : t / tD.t2 + tD.t0;
             },
             tS = function () {
               for (var t, e, a, r = [], _ = arguments.length; _--; )
@@ -23255,9 +23231,9 @@
                   (a = n[2]),
                   [
                     ty(
-                      (0.4124564 * (t = tm(t)) +
-                        0.3575761 * (e = tm(e)) +
-                        0.1804375 * (a = tm(a))) /
+                      (0.4124564 * (t = tv(t)) +
+                        0.3575761 * (e = tv(e)) +
+                        0.1804375 * (a = tv(a))) /
                         tD.Xn,
                     ),
                     ty((0.2126729 * t + 0.7151522 * e + 0.072175 * a) / tD.Yn),
@@ -23766,16 +23742,16 @@
               : (eE(t) || 1) * es((e + 0.055) / 1.055, 2.4);
           }
           var eI = i.unpack,
-            eR = Math.pow,
-            ed = Math.sign,
+            ed = Math.pow,
+            eR = Math.sign,
             eN = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               var a = (t = eI(t, "lab"))[0],
                 r = t[1],
                 _ = t[2],
-                n = eR(a + 0.3963377774 * r + 0.2158037573 * _, 3),
-                o = eR(a - 0.1055613458 * r - 0.0638541728 * _, 3),
-                i = eR(a - 0.0894841775 * r - 1.291485548 * _, 3);
+                n = ed(a + 0.3963377774 * r + 0.2158037573 * _, 3),
+                o = ed(a - 0.1055613458 * r - 0.0638541728 * _, 3),
+                i = ed(a - 0.0894841775 * r - 1.291485548 * _, 3);
               return [
                 255 *
                   ef(4.0767416621 * n - 3.3077115913 * o + 0.2309699292 * i),
@@ -23789,7 +23765,7 @@
           function ef(t) {
             var e = Math.abs(t);
             return e > 0.0031308
-              ? (ed(t) || 1) * (1.055 * eR(e, 1 / 2.4) - 0.055)
+              ? (eR(t) || 1) * (1.055 * ed(e, 1 / 2.4) - 0.055)
               : 12.92 * t;
           }
           var eA = i.unpack,
@@ -23907,15 +23883,15 @@
                 ).rgb();
               return new u(_.concat([this._rgb[3]]));
             }
-            return ev.apply(void 0, this._rgb.slice(0, 3));
+            return em.apply(void 0, this._rgb.slice(0, 3));
           };
-          var ev = function (t, e, a) {
+          var em = function (t, e, a) {
               return (
-                (t = em(t)),
-                0.2126 * t + 0.7152 * (e = em(e)) + 0.0722 * (a = em(a))
+                (t = ev(t)),
+                0.2126 * t + 0.7152 * (e = ev(e)) + 0.0722 * (a = ev(a))
               );
             },
-            em = function (t) {
+            ev = function (t) {
               return (t /= 255) <= 0.03928
                 ? t / 12.92
                 : eC((t + 0.055) / 1.055, 2.4);
@@ -24033,7 +24009,7 @@
               );
             });
           var ew = function (t, e, a, r) {
-              var _, n, o, i, c, s, E, l, I, R, d, N, f, A;
+              var _, n, o, i, c, s, E, l, I, d, R, N, f, A;
               return (
                 "hsl" === r
                   ? ((o = t.hsl()), (i = e.hsl()))
@@ -24054,13 +24030,13 @@
                   (I = _[2]),
                   (s = (n = i)[0]),
                   (l = n[1]),
-                  (R = n[2])),
+                  (d = n[2])),
                 isNaN(c) || isNaN(s)
                   ? isNaN(c)
                     ? isNaN(s)
                       ? (N = Number.NaN)
-                      : ((N = s), (1 == I || 0 == I) && "hsv" != r && (d = l))
-                    : ((N = c), (1 == R || 0 == R) && "hsv" != r && (d = E))
+                      : ((N = s), (1 == I || 0 == I) && "hsv" != r && (R = l))
+                    : ((N = c), (1 == d || 0 == d) && "hsv" != r && (R = E))
                   : ((A =
                       s > c && s - c > 180
                         ? s - (c + 360)
@@ -24068,9 +24044,9 @@
                           ? s + 360 - c
                           : s - c),
                     (N = c + a * A)),
-                void 0 === d && (d = E + a * (l - E)),
-                (f = I + a * (R - I)),
-                "oklch" === r ? new u([f, d, N], r) : new u([N, d, f], r)
+                void 0 === R && (R = E + a * (l - E)),
+                (f = I + a * (d - I)),
+                "oklch" === r ? new u([f, R, N], r) : new u([N, R, f], r)
               );
             },
             eM = function (t, e, a) {
@@ -24151,8 +24127,8 @@
                 E = 0,
                 l = 1,
                 u = !1,
-                R = {},
-                d = !0,
+                d = {},
+                R = !0,
                 N = 1,
                 f = function (t) {
                   if (
@@ -24198,7 +24174,7 @@
                         Math.max(0, (s = o[0] + s * (1 - o[0] - o[1]))),
                       )),
                   );
-                  if (d && R[u]) _ = R[u];
+                  if (R && d[u]) _ = d[u];
                   else {
                     if ("array" === ej(c))
                       for (var f = 0; f < n.length; f++) {
@@ -24214,12 +24190,12 @@
                         }
                       }
                     else "function" === ej(c) && (_ = c(s));
-                    d && (R[u] = _);
+                    R && (d[u] = _);
                   }
                   return _;
                 },
                 h = function () {
-                  return (R = {});
+                  return (d = {});
                 };
               f(t);
               var O = function (t) {
@@ -24366,7 +24342,7 @@
                   );
                 }),
                 (O.cache = function (t) {
-                  return null != t ? ((d = t), O) : d;
+                  return null != t ? ((R = t), O) : R;
                 }),
                 (O.gamma = function (t) {
                   return null != t ? ((N = t), O) : N;
@@ -24609,11 +24585,11 @@
                   i.push(r);
                   for (var u = 1; u < a; u++) {
                     var I = ((o.length - 1) * u) / a,
-                      R = at(I);
-                    if (R === I) i.push(o[R]);
+                      d = at(I);
+                    if (d === I) i.push(o[d]);
                     else {
-                      var d = I - R;
-                      i.push(o[R] * (1 - d) + o[R + 1] * d);
+                      var R = I - d;
+                      i.push(o[d] * (1 - R) + o[d + 1] * R);
                     }
                   }
                   i.push(_);
@@ -24631,12 +24607,12 @@
                     for (var P = 0; P < a; P++) T[P] = 0;
                     for (var g = 0; g < f; g++)
                       for (
-                        var D = o[g], C = Number.MAX_VALUE, v = void 0, m = 0;
-                        m < a;
-                        m++
+                        var D = o[g], C = Number.MAX_VALUE, m = void 0, v = 0;
+                        v < a;
+                        v++
                       ) {
-                        var y = ae(h[m] - D);
-                        y < C && ((C = y), (v = m)), T[v]++, (A[g] = v);
+                        var y = ae(h[v] - D);
+                        y < C && ((C = y), (m = v)), T[m]++, (A[g] = m);
                       }
                     for (var S = Array(a), U = 0; U < a; U++) S[U] = null;
                     for (var b = 0; b < f; b++)
@@ -24675,7 +24651,7 @@
               al = Math.sin,
               au = Math.exp,
               aI = Math.PI,
-              aR = {
+              ad = {
                 OrRd: [
                   "#fff7ec",
                   "#fee8c8",
@@ -25093,13 +25069,13 @@
                   "#f2f2f2",
                 ],
               },
-              ad = 0,
-              aN = Object.keys(aR);
-            ad < aN.length;
-            ad += 1
+              aR = 0,
+              aN = Object.keys(ad);
+            aR < aN.length;
+            aR += 1
           ) {
-            var af = aN[ad];
-            aR[af.toLowerCase()] = aR[af];
+            var af = aN[aR];
+            ad[af.toLowerCase()] = ad[af];
           }
           return (
             (I.average = function (t, e, a) {
@@ -25148,13 +25124,13 @@
                       (c += ek(E) * a[r + 1]), (s += ex(E) * a[r + 1]);
                     } else o[n] += _[n] * a[r + 1];
               });
-              for (var R = 0; R < o.length; R++)
-                if ("h" === e.charAt(R)) {
-                  for (var d = (eF(s / i[R], c / i[R]) / eK) * 180; d < 0; )
-                    d += 360;
-                  for (; d >= 360; ) d -= 360;
-                  o[R] = d;
-                } else o[R] = o[R] / i[R];
+              for (var d = 0; d < o.length; d++)
+                if ("h" === e.charAt(d)) {
+                  for (var R = (eF(s / i[d], c / i[d]) / eK) * 180; R < 0; )
+                    R += 360;
+                  for (; R >= 360; ) R -= 360;
+                  o[d] = R;
+                } else o[d] = o[d] / i[d];
               return (I /= r), new u(o, e).alpha(I > 0.99999 ? 1 : I, !0);
             }),
             (I.bezier = function (t) {
@@ -25255,35 +25231,35 @@
                 E = i[2],
                 l = Array.from(e.lab()),
                 I = l[0],
-                R = l[1],
-                d = l[2],
+                d = l[1],
+                R = l[2],
                 N = (c + I) / 2,
-                f = (a_(an(s, 2) + an(E, 2)) + a_(an(R, 2) + an(d, 2))) / 2,
+                f = (a_(an(s, 2) + an(E, 2)) + a_(an(d, 2) + an(R, 2))) / 2,
                 A = 0.5 * (1 - a_(an(f, 7) / (an(f, 7) + an(25, 7)))),
                 T = s * (1 + A),
-                p = R * (1 + A),
+                p = d * (1 + A),
                 L = a_(an(T, 2) + an(E, 2)),
-                h = a_(an(p, 2) + an(d, 2)),
+                h = a_(an(p, 2) + an(R, 2)),
                 O = (L + h) / 2,
                 P = n(ac(E, T)),
-                g = n(ac(d, p)),
+                g = n(ac(R, p)),
                 D = P >= 0 ? P : P + 360,
                 C = g >= 0 ? g : g + 360,
-                v = as(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
-                m =
+                m = as(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
+                v =
                   1 -
-                  0.17 * aE(o(v - 30)) +
-                  0.24 * aE(o(2 * v)) +
-                  0.32 * aE(o(3 * v + 6)) -
-                  0.2 * aE(o(4 * v - 63)),
+                  0.17 * aE(o(m - 30)) +
+                  0.24 * aE(o(2 * m)) +
+                  0.32 * aE(o(3 * m + 6)) -
+                  0.2 * aE(o(4 * m - 63)),
                 y = C - D;
               (y = 180 >= as(y) ? y : C <= D ? y + 360 : y - 360),
                 (y = 2 * a_(L * h) * al(o(y) / 2));
               var S = h - L,
                 U = 1 + (0.015 * an(N - 50, 2)) / a_(20 + an(N - 50, 2)),
                 b = 1 + 0.045 * O,
-                G = 1 + 0.015 * O * m,
-                W = 30 * au(-an((v - 275) / 25, 2)),
+                G = 1 + 0.015 * O * v,
+                W = 30 * au(-an((m - 275) / 25, 2)),
                 w = -(2 * a_(an(O, 7) / (an(O, 7) + an(25, 7)))) * al(2 * o(W));
               return ai(
                 0,
@@ -25329,7 +25305,7 @@
               },
             }),
             (I.colors = t3),
-            (I.brewer = aR),
+            (I.brewer = ad),
             I
           );
         })();
@@ -25700,15 +25676,15 @@
             l,
             u,
             I,
-            R = t.target,
-            d = t.global,
+            d = t.target,
+            R = t.global,
             N = t.stat;
-          if ((a = d ? r : N ? r[R] || i(R, {}) : r[R] && r[R].prototype))
+          if ((a = R ? r : N ? r[d] || i(d, {}) : r[d] && r[d].prototype))
             for (E in e) {
               if (
                 ((u = e[E]),
                 (l = t.dontCallGetSet ? (I = _(a, E)) && I.value : a[E]),
-                !s(d ? E : R + (N ? "." : "#") + E, t.forced) && void 0 !== l)
+                !s(R ? E : d + (N ? "." : "#") + E, t.forced) && void 0 !== l)
               ) {
                 if (typeof u == typeof l) continue;
                 c(u, l);
@@ -25937,8 +25913,8 @@
           l = a(651144),
           u = a(661314),
           I = a(485073),
-          R = "Object already initialized",
-          d = i.TypeError,
+          d = "Object already initialized",
+          R = i.TypeError,
           N = i.WeakMap;
         if (o || l.state) {
           var f = l.state || (l.state = new N());
@@ -25946,7 +25922,7 @@
             (f.has = f.has),
             (f.set = f.set),
             (r = function (t, e) {
-              if (f.has(t)) throw new d(R);
+              if (f.has(t)) throw new R(d);
               return (e.facade = t), f.set(t, e), e;
             }),
             (_ = function (t) {
@@ -25959,7 +25935,7 @@
           var A = u("state");
           (I[A] = !0),
             (r = function (t, e) {
-              if (E(t, A)) throw new d(R);
+              if (E(t, A)) throw new R(d);
               return (e.facade = t), s(t, A, e), e;
             }),
             (_ = function (t) {
@@ -25980,7 +25956,7 @@
             return function (e) {
               var a;
               if (!c(e) || (a = _(e)).type !== t)
-                throw new d("Incompatible receiver, " + t + " required");
+                throw new R("Incompatible receiver, " + t + " required");
               return a;
             };
           },
@@ -26088,27 +26064,27 @@
           l = a(25124),
           u = a(436207),
           I = a(556585),
-          R = a(751736),
-          d = a(933121),
+          d = a(751736),
+          R = a(933121),
           N = a(112493),
           f = o.PROPER,
           A = o.CONFIGURABLE,
           T = N.IteratorPrototype,
           p = N.BUGGY_SAFARI_ITERATORS,
-          L = R("iterator"),
+          L = d("iterator"),
           h = "keys",
           O = "values",
           P = "entries",
           g = function () {
             return this;
           };
-        t.exports = function (t, e, a, o, R, N, D) {
+        t.exports = function (t, e, a, o, d, N, D) {
           c(a, e, o);
           var C,
-            v,
             m,
+            v,
             y = function (t) {
-              if (t === R && W) return W;
+              if (t === d && W) return W;
               if (!p && t && t in b) return b[t];
               switch (t) {
                 case h:
@@ -26125,8 +26101,8 @@
             S = e + " Iterator",
             U = !1,
             b = t.prototype,
-            G = b[L] || b["@@iterator"] || (R && b[R]),
-            W = (!p && G) || y(R),
+            G = b[L] || b["@@iterator"] || (d && b[d]),
+            W = (!p && G) || y(d),
             w = ("Array" === e && b.entries) || G;
           if (
             (w &&
@@ -26134,9 +26110,9 @@
               C.next &&
               (!n && s(C) !== T && (E ? E(C, T) : i(C[L]) || I(C, L, g)),
               l(C, S, !0, !0),
-              n && (d[S] = g)),
+              n && (R[S] = g)),
             f &&
-              R === O &&
+              d === O &&
               G &&
               G.name !== O &&
               (!n && A
@@ -26145,13 +26121,13 @@
                   (W = function () {
                     return _(G, this);
                   }))),
-            R)
+            d)
           )
-            if (((v = { values: y(O), keys: N ? W : y(h), entries: y(P) }), D))
-              for (m in v) (!p && !U && m in b) || I(b, m, v[m]);
-            else r({ target: e, proto: !0, forced: p || U }, v);
+            if (((m = { values: y(O), keys: N ? W : y(h), entries: y(P) }), D))
+              for (v in m) (!p && !U && v in b) || I(b, v, m[v]);
+            else r({ target: e, proto: !0, forced: p || U }, m);
           return (
-            (!n || D) && b[L] !== W && I(b, L, W, { name: R }), (d[e] = W), v
+            (!n || D) && b[L] !== W && I(b, L, W, { name: d }), (R[e] = W), m
           );
         };
       },
@@ -26168,24 +26144,24 @@
           l = a(556585),
           u = a(751736),
           I = a(511696),
-          R = u("iterator"),
-          d = !1;
+          d = u("iterator"),
+          R = !1;
         [].keys &&
           ("next" in (n = [].keys())
             ? (_ = E(E(n))) !== Object.prototype && (r = _)
-            : (d = !0)),
+            : (R = !0)),
           !c(r) ||
           o(function () {
             var t = {};
-            return r[R].call(t) !== t;
+            return r[d].call(t) !== t;
           })
             ? (r = {})
             : I && (r = s(r)),
-          i(r[R]) ||
-            l(r, R, function () {
+          i(r[d]) ||
+            l(r, d, function () {
               return this;
             }),
-          (t.exports = { IteratorPrototype: r, BUGGY_SAFARI_ITERATORS: d });
+          (t.exports = { IteratorPrototype: r, BUGGY_SAFARI_ITERATORS: R });
       },
       933121: function (t) {
         "use strict";
@@ -26211,33 +26187,33 @@
           l = E.enforce,
           u = E.get,
           I = String,
-          R = Object.defineProperty,
-          d = r("".slice),
+          d = Object.defineProperty,
+          R = r("".slice),
           N = r("".replace),
           f = r([].join),
           A =
             i &&
             !_(function () {
-              return 8 !== R(function () {}, "length", { value: 8 }).length;
+              return 8 !== d(function () {}, "length", { value: 8 }).length;
             }),
           T = String(String).split("String"),
           p = (t.exports = function (t, e, a) {
-            "Symbol(" === d(I(e), 0, 7) &&
+            "Symbol(" === R(I(e), 0, 7) &&
               (e = "[" + N(I(e), /^Symbol\(([^)]*)\).*$/, "$1") + "]"),
               a && a.getter && (e = "get " + e),
               a && a.setter && (e = "set " + e),
               (!o(t, "name") || (c && t.name !== e)) &&
                 (i
-                  ? R(t, "name", { value: e, configurable: !0 })
+                  ? d(t, "name", { value: e, configurable: !0 })
                   : (t.name = e)),
               A &&
                 a &&
                 o(a, "arity") &&
                 t.length !== a.arity &&
-                R(t, "length", { value: a.arity });
+                d(t, "length", { value: a.arity });
             try {
               a && o(a, "constructor") && a.constructor
-                ? i && R(t, "prototype", { writable: !1 })
+                ? i && d(t, "prototype", { writable: !1 })
                 : t.prototype && (t.prototype = void 0);
             } catch (t) {}
             var r = l(t);
@@ -26282,12 +26258,12 @@
           l = "prototype",
           u = "script",
           I = E("IE_PROTO"),
-          R = function () {},
-          d = function (t) {
+          d = function () {},
+          R = function (t) {
             return "<" + u + ">" + t + "</" + u + ">";
           },
           N = function (t) {
-            t.write(d("")), t.close();
+            t.write(R("")), t.close();
             var e = t.parentWindow.Object;
             return (t = null), e;
           },
@@ -26299,7 +26275,7 @@
               c.appendChild(e),
               (e.src = String("java" + u + ":")),
               (t = e.contentWindow.document).open(),
-              t.write(d("document.F=Object")),
+              t.write(R("document.F=Object")),
               t.close(),
               t.F
             );
@@ -26324,7 +26300,7 @@
               var a;
               return (
                 null !== t
-                  ? ((R[l] = _(t)), (a = new R()), (R[l] = null), (a[I] = t))
+                  ? ((d[l] = _(t)), (a = new d()), (d[l] = null), (a[I] = t))
                   : (a = A()),
                 void 0 === e ? a : n.f(a, e)
               );
@@ -26586,8 +26562,8 @@
           l = a(713411),
           u = a(199838).get,
           I = a(923646),
-          R = a(204954),
-          d = E("native-string-replace", String.prototype.replace),
+          d = a(204954),
+          R = E("native-string-replace", String.prototype.replace),
           N = RegExp.prototype.exec,
           f = N,
           A = o("".charAt),
@@ -26601,7 +26577,7 @@
             0 !== r.lastIndex || 0 !== _.lastIndex),
           O = s.BROKEN_CARET,
           P = void 0 !== /()??/.exec("")[1];
-        (h || P || O || I || R) &&
+        (h || P || O || I || d) &&
           (f = function (t) {
             var e,
               a,
@@ -26611,31 +26587,31 @@
               s,
               E,
               I = u(this),
-              R = i(t),
+              d = i(t),
               g = I.raw;
             if (g)
               return (
                 (g.lastIndex = this.lastIndex),
-                (e = n(f, g, R)),
+                (e = n(f, g, d)),
                 (this.lastIndex = g.lastIndex),
                 e
               );
             var D = I.groups,
               C = O && this.sticky,
-              v = n(c, this),
-              m = this.source,
+              m = n(c, this),
+              v = this.source,
               y = 0,
-              S = R;
+              S = d;
             if (
               (C &&
-                (-1 === T((v = p(v, "y", "")), "g") && (v += "g"),
-                (S = L(R, this.lastIndex)),
+                (-1 === T((m = p(m, "y", "")), "g") && (m += "g"),
+                (S = L(d, this.lastIndex)),
                 this.lastIndex > 0 &&
                   (!this.multiline ||
-                    (this.multiline && "\n" !== A(R, this.lastIndex - 1))) &&
-                  ((m = "(?: " + m + ")"), (S = " " + S), y++),
-                (a = RegExp("^(?:" + m + ")", v))),
-              P && (a = RegExp("^" + m + "$(?!\\s)", v)),
+                    (this.multiline && "\n" !== A(d, this.lastIndex - 1))) &&
+                  ((v = "(?: " + v + ")"), (S = " " + S), y++),
+                (a = RegExp("^(?:" + v + ")", m))),
+              P && (a = RegExp("^" + v + "$(?!\\s)", m)),
               h && (r = this.lastIndex),
               (_ = n(N, C ? a : this, S)),
               C
@@ -26651,7 +26627,7 @@
               P &&
                 _ &&
                 _.length > 1 &&
-                n(d, _[0], a, function () {
+                n(R, _[0], a, function () {
                   for (o = 1; o < arguments.length - 2; o++)
                     void 0 === arguments[o] && (_[o] = void 0);
                 }),
@@ -26961,8 +26937,8 @@
           l = a(759319),
           u = a(179351),
           I = a(903225),
-          R = a(507604),
-          d = a(511696);
+          d = a(507604),
+          R = a(511696);
         t.exports = function (t, e, a, N) {
           var f = "stackTraceLimit",
             A = N ? 2 : 1,
@@ -26971,7 +26947,7 @@
             L = r.apply(null, T);
           if (L) {
             var h = L.prototype;
-            if ((!d && _(h, "cause") && delete h.cause, !a)) return L;
+            if ((!R && _(h, "cause") && delete h.cause, !a)) return L;
             var O = r("Error"),
               P = e(function (t, e) {
                 var a = l(N ? e : t, void 0),
@@ -26990,9 +26966,9 @@
                 ? i
                   ? i(P, O)
                   : c(P, O, { name: !0 })
-                : R && f in L && (s(P, L, f), s(P, L, "prepareStackTrace")),
+                : d && f in L && (s(P, L, f), s(P, L, "prepareStackTrace")),
               c(P, L),
-              !d)
+              !R)
             )
               try {
                 h.name !== p && n(h, "name", p), (h.constructor = P);
@@ -27014,7 +26990,7 @@
           l = a(507604),
           u = "Array Iterator",
           I = o.set,
-          R = o.getterFor(u);
+          d = o.getterFor(u);
         t.exports = c(
           Array,
           "Array",
@@ -27022,7 +26998,7 @@
             I(this, { type: u, target: r(t), index: 0, kind: e });
           },
           function () {
-            var t = R(this),
+            var t = d(this),
               e = t.target,
               a = t.index++;
             if (!e || a >= e.length) return (t.target = null), s(void 0, !0);
@@ -27036,12 +27012,12 @@
           },
           "values",
         );
-        var d = (n.Arguments = n.Array);
+        var R = (n.Arguments = n.Array);
         if (
-          (_("keys"), _("values"), _("entries"), !E && l && "values" !== d.name)
+          (_("keys"), _("values"), _("entries"), !E && l && "values" !== R.name)
         )
           try {
-            i(d, "name", { value: "values" });
+            i(R, "name", { value: "values" });
           } catch (t) {}
       },
       415506: function (t, e, a) {
@@ -27138,35 +27114,35 @@
           l = a(573078),
           u = a(190289),
           I = n.Symbol,
-          R = I && I.prototype;
+          d = I && I.prototype;
         if (
           _ &&
           c(I) &&
-          (!("description" in R) || void 0 !== I().description)
+          (!("description" in d) || void 0 !== I().description)
         ) {
-          var d = {},
+          var R = {},
             N = function () {
               var t =
                   arguments.length < 1 || void 0 === arguments[0]
                     ? void 0
                     : E(arguments[0]),
-                e = s(R, this) ? new I(t) : void 0 === t ? I() : I(t);
-              return "" === t && (d[e] = !0), e;
+                e = s(d, this) ? new I(t) : void 0 === t ? I() : I(t);
+              return "" === t && (R[e] = !0), e;
             };
-          u(N, I), (N.prototype = R), (R.constructor = N);
+          u(N, I), (N.prototype = d), (d.constructor = N);
           var f =
               "Symbol(description detection)" ===
               String(I("description detection")),
-            A = o(R.valueOf),
-            T = o(R.toString),
+            A = o(d.valueOf),
+            T = o(d.toString),
             p = /^Symbol\((.*)\)[^)]+$/,
             L = o("".replace),
             h = o("".slice);
-          l(R, "description", {
+          l(d, "description", {
             configurable: !0,
             get: function () {
               var t = A(this);
-              if (i(d, t)) return "";
+              if (i(R, t)) return "";
               var e = T(t),
                 a = f ? h(e, 7, -1) : L(e, p, "$1");
               return "" === a ? void 0 : a;
@@ -27289,7 +27265,7 @@
       },
       878719: function (t, e, a) {
         "use strict";
-        a.d(e, { GJ: () => s, ME: () => d, aB: () => R, dr: () => I });
+        a.d(e, { GJ: () => s, ME: () => R, aB: () => d, dr: () => I });
         var r = a(263449),
           _ = a(202811),
           n = a(573736),
@@ -27332,7 +27308,7 @@
         }
         let u = /Minified React error #\d+;/i;
         function I(t, e, a, r) {
-          let _ = d(t, e, (a && a.syntheticException) || void 0, r);
+          let _ = R(t, e, (a && a.syntheticException) || void 0, r);
           return (
             (0, o.EG)(_),
             (_.level = "error"),
@@ -27340,7 +27316,7 @@
             (0, i.WD)(_)
           );
         }
-        function R(t, e, a = "info", r, _) {
+        function d(t, e, a = "info", r, _) {
           let n = N(t, e, (r && r.syntheticException) || void 0, _);
           return (
             (n.level = a),
@@ -27348,7 +27324,7 @@
             (0, i.WD)(n)
           );
         }
-        function d(t, e, a, i, u) {
+        function R(t, e, a, i, u) {
           let I;
           if ((0, n.VW)(e) && e.error) return E(t, e.error);
           if ((0, n.TX)(e) || (0, n.fm)(e)) {
@@ -27380,7 +27356,7 @@
                       I = { __serialized__: (0, _.Qy)(e, E) };
                     if (u)
                       return { exception: { values: [s(t, u)] }, extra: I };
-                    let R = {
+                    let d = {
                       exception: {
                         values: [
                           {
@@ -27413,9 +27389,9 @@
                     if (a) {
                       let e = l(t, a);
                       e.length &&
-                        (R.exception.values[0].stacktrace = { frames: e });
+                        (d.exception.values[0].stacktrace = { frames: e });
                     }
-                    return R;
+                    return d;
                   })(t, e, a, u))
                 : ((I = N(t, e, a, i)), (0, o.Db)(I, `${e}`, void 0)),
               (0, o.EG)(I, { synthetic: !0 }),
@@ -27557,8 +27533,8 @@
             continueTrace: () => u.yn,
             createTransport: () => I.q,
             createUserFeedbackEnvelope: () => Y.r,
-            debugIntegration: () => R.s,
-            dedupeIntegration: () => d.R,
+            debugIntegration: () => d.s,
+            dedupeIntegration: () => R.R,
             defaultRequestInstrumentationOptions: () => ta.k3,
             defaultStackLineParsers: () => M.d8,
             defaultStackParser: () => M.Dt,
@@ -27611,9 +27587,9 @@
             reportingObserverIntegration: () => X.y,
             rewriteFramesIntegration: () => C.v,
             sendFeedback: () => tt.fA,
-            sessionTimingIntegration: () => v.r,
+            sessionTimingIntegration: () => m.r,
             setContext: () => i.v,
-            setCurrentClient: () => m.K,
+            setCurrentClient: () => v.K,
             setExtra: () => i.sU,
             setExtras: () => i.rJ,
             setHttpStatus: () => L.Q0,
@@ -27650,8 +27626,8 @@
           l = a(425930),
           u = a(152228),
           I = a(867921),
-          R = a(522521),
-          d = a(907765),
+          d = a(522521),
+          R = a(907765),
           N = a(898029),
           f = a(502990),
           A = a(696486),
@@ -27664,8 +27640,8 @@
           g = a(971304),
           D = a(859502),
           C = a(757502),
-          v = a(726318),
-          m = a(511906),
+          m = a(726318),
+          v = a(511906),
           y = a(241225),
           S = a(305625),
           U = a(925746),
@@ -27711,8 +27687,8 @@
           l = a(394798),
           u = a(622916),
           I = a(467510),
-          R = a(954211),
-          d = a(886115),
+          d = a(954211),
+          R = a(886115),
           N = a(873567),
           f = a(454463),
           A = a(163162);
@@ -27738,13 +27714,13 @@
                     let e = {
                       category: "console",
                       data: { arguments: t.args, logger: "console" },
-                      level: (0, R.V)(t.level),
-                      message: (0, d.nK)(t.args, " "),
+                      level: (0, d.V)(t.level),
+                      message: (0, R.nK)(t.args, " "),
                     };
                     if ("assert" === t.level)
                       if (!1 !== t.args[0]) return;
                       else
-                        (e.message = `Assertion failed: ${(0, d.nK)(t.args.slice(1), " ") || "console.assert"}`),
+                        (e.message = `Assertion failed: ${(0, R.nK)(t.args.slice(1), " ") || "console.assert"}`),
                           (e.data.arguments = t.args.slice(1));
                     (0, c.n)(e, { input: t.args, level: t.level });
                   }),
@@ -28131,7 +28107,7 @@
       },
       804410: function (t, e, a) {
         "use strict";
-        a.d(e, { k: () => d });
+        a.d(e, { k: () => R });
         var r = a(151122),
           _ = a(263449),
           n = a(233517),
@@ -28143,8 +28119,8 @@
           l = a(622916),
           u = a(454463),
           I = a(878719),
-          R = a(163162);
-        let d = (0, r._I)((t = {}) => {
+          d = a(163162);
+        let R = (0, r._I)((t = {}) => {
           let e = { onerror: !0, onunhandledrejection: !0, ...t };
           return {
             name: "GlobalHandlers",
@@ -28157,8 +28133,8 @@
                 ((a = t),
                 (0, o.V)((t) => {
                   let { stackParser: e, attachStacktrace: r } = f();
-                  if ((0, _.s3)() !== a || (0, R.Wz)()) return;
-                  let { msg: o, url: i, line: l, column: u, error: d } = t,
+                  if ((0, _.s3)() !== a || (0, d.Wz)()) return;
+                  let { msg: o, url: i, line: l, column: u, error: R } = t,
                     N = (function (t, e, a, r) {
                       let _ = (t.exception = t.exception || {}),
                         n = (_.values = _.values || []),
@@ -28167,22 +28143,22 @@
                         l = (i.frames = i.frames || []),
                         u = isNaN(parseInt(r, 10)) ? void 0 : r,
                         I = isNaN(parseInt(a, 10)) ? void 0 : a,
-                        R = (0, c.HD)(e) && e.length > 0 ? e : (0, s.l4)();
+                        d = (0, c.HD)(e) && e.length > 0 ? e : (0, s.l4)();
                       return (
                         0 === l.length &&
                           l.push({
                             colno: u,
-                            filename: R,
+                            filename: d,
                             function: E.Fi,
                             in_app: !0,
                             lineno: I,
                           }),
                         t
                       );
-                    })((0, I.ME)(e, d || o, void 0, r, !1), i, l, u);
+                    })((0, I.ME)(e, R || o, void 0, r, !1), i, l, u);
                   (N.level = "error"),
                     (0, n.eN)(N, {
-                      originalException: d,
+                      originalException: R,
                       mechanism: { handled: !1, type: "onerror" },
                     });
                 }),
@@ -28192,7 +28168,7 @@
                   (0, i.h)((t) => {
                     var e;
                     let { stackParser: a, attachStacktrace: o } = f();
-                    if ((0, _.s3)() !== r || (0, R.Wz)()) return;
+                    if ((0, _.s3)() !== r || (0, d.Wz)()) return;
                     let i = (function (t) {
                         if ((0, c.pt)(t)) return t;
                         try {
@@ -28243,7 +28219,7 @@
       },
       453574: function (t, e, a) {
         "use strict";
-        a.d(e, { l: () => R });
+        a.d(e, { l: () => d });
         var r = a(157079),
           _ = a(151122),
           n = a(233517),
@@ -28255,7 +28231,7 @@
           l = a(899517),
           u = a(394798),
           I = a(454463);
-        let R = (0, _._I)((t = {}) => {
+        let d = (0, _._I)((t = {}) => {
           let e = {
             failedRequestStatusCodes: [[500, 599]],
             failedRequestTargets: [/.*/],
@@ -28287,8 +28263,8 @@
                                 ? _
                                 : new Request(_, o));
                           T() &&
-                            (([t, c] = d("Cookie", E)),
-                            ([i, s] = d("Set-Cookie", a)));
+                            (([t, c] = R("Cookie", E)),
+                            ([i, s] = R("Set-Cookie", a)));
                           let l = A({
                             url: E.url,
                             method: E.method,
@@ -28368,7 +28344,7 @@
             },
           };
         });
-        function d(t, e) {
+        function R(t, e) {
           let a,
             r = (function (t) {
               let e = {};
@@ -28662,33 +28638,33 @@
                 ),
                 u();
             }, E.WU),
-            R = t.end.bind(t);
+            d = t.end.bind(t);
           t.end = function () {
             return t
               ? (u().then(
                   () => {
-                    R();
+                    d();
                   },
                   () => {
-                    R();
+                    d();
                   },
                 ),
                 t)
-              : R();
+              : d();
           };
         }
       },
       748688: function (t, e, a) {
         "use strict";
         a.d(e, {
-          $X: () => v,
+          $X: () => m,
           AJ: () => O,
           Ei: () => C,
           GC: () => U,
           WU: () => D,
           db: () => h,
           dz: () => b,
-          nm: () => m,
+          nm: () => v,
           ph: () => S,
           x5: () => L,
         });
@@ -28703,8 +28679,8 @@
           l = a(454463),
           u = a(163162);
         let I = String(0),
-          R = "",
           d = "",
+          R = "",
           N = "",
           f = (u.m9.navigator && u.m9.navigator.userAgent) || "",
           A = "",
@@ -28753,10 +28729,10 @@
             ])
             .then((t) => {
               if (
-                ((R = t.platform || ""),
+                ((d = t.platform || ""),
                 (N = t.architecture || ""),
                 (A = t.model || ""),
-                (d = t.platformVersion || ""),
+                (R = t.platformVersion || ""),
                 t.fullVersionList && t.fullVersionList.length > 0)
               ) {
                 let e = t.fullVersionList[t.fullVersionList.length - 1];
@@ -28790,7 +28766,7 @@
               (g = !0);
           }
         }
-        function v(t) {
+        function m(t) {
           if (g)
             return (
               l.X &&
@@ -28851,7 +28827,7 @@
                   ),
                 !1);
         }
-        function m(t, e, a, _) {
+        function v(t, e, a, _) {
           var s;
           if (
             !(a.samples.length < 2
@@ -28975,7 +28951,7 @@
             release: _.release || "",
             environment: _.environment || r.J,
             runtime: { name: "javascript", version: u.m9.navigator.userAgent },
-            os: { name: R, version: d, build_number: f },
+            os: { name: d, version: R, build_number: f },
             device: {
               locale: T,
               model: A,
@@ -29047,11 +29023,11 @@
       509068: function (t, e, a) {
         "use strict";
         a.d(e, {
-          Eg: () => v,
+          Eg: () => m,
           Jd: () => y,
           S1: () => D,
           jp: () => C,
-          lA: () => m,
+          lA: () => v,
           nV: () => g,
         });
         var r = a(636361),
@@ -29065,8 +29041,8 @@
           l = a(622916),
           u = a(694043),
           I = a(688838),
-          R = a(393523),
-          d = a(833772),
+          d = a(393523),
+          R = a(833772),
           N = a(454463),
           f = a(163162),
           A = a(408720),
@@ -29140,7 +29116,7 @@
               integrations: (0, o.m8)(e),
               transport: e.transport || P.f,
             },
-            r = (0, i.M)(d.R, a);
+            r = (0, i.M)(R.R, a);
           return (
             e.autoSessionTracking &&
               (function () {
@@ -29153,7 +29129,7 @@
                 }
                 (0, s.yj)({ ignoreDuration: !0 }),
                   (0, s.cg)(),
-                  (0, R.a)(({ from: t, to: e }) => {
+                  (0, d.a)(({ from: t, to: e }) => {
                     void 0 !== t &&
                       t !== e &&
                       ((0, s.yj)({ ignoreDuration: !0 }), (0, s.cg)());
@@ -29206,8 +29182,8 @@
                 "Not injecting report dialog. No injection point found in HTML",
               );
         }
-        function v() {}
-        function m(t) {
+        function m() {}
+        function v(t) {
           t();
         }
         function y(t) {
@@ -29222,7 +29198,7 @@
           $Q: () => l,
           Dt: () => T,
           HH: () => f,
-          NP: () => d,
+          NP: () => R,
           R2: () => I,
           d8: () => A,
         });
@@ -29296,11 +29272,11 @@
                 : void 0;
             },
           ],
-          R = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i,
-          d = [
+          d = / line (\d+).*script (?:in )?(\S+)(?:: in function (\S+))?$/i,
+          R = [
             10,
             (t) => {
-              let e = R.exec(t);
+              let e = d.exec(t);
               return e ? _(e[2], e[3] || r.Fi, +e[1]) : void 0;
             },
           ],
@@ -29375,8 +29351,8 @@
           l = a(305625),
           u = a(622916),
           I = a(370541),
-          R = a(101284),
-          d = a(731889),
+          d = a(101284),
+          R = a(731889),
           N = a(467510),
           f = a(454463),
           A = a(163162),
@@ -29398,13 +29374,13 @@
             let {
                 enableInp: e,
                 enableLongTask: a,
-                enableLongAnimationFrame: d,
+                enableLongAnimationFrame: R,
                 _experiments: { enableInteractions: N },
                 beforeStartSpan: h,
                 idleTimeout: D,
                 finalTimeout: C,
-                childSpanTimeout: v,
-                markBackgroundSpan: m,
+                childSpanTimeout: m,
+                markBackgroundSpan: v,
                 traceFetch: y,
                 traceXHR: S,
                 shouldCreateSpanForRequest: U,
@@ -29414,7 +29390,7 @@
               } = { ...L, ...t },
               w = (0, r.PR)();
             e && (0, _.N)(),
-              d &&
+              R &&
               PerformanceObserver.supportedEntryTypes.includes(
                 "long-animation-frame",
               )
@@ -29432,7 +29408,7 @@
               let i = (0, o.R)(_, {
                 idleTimeout: D,
                 finalTimeout: C,
-                childSpanTimeout: v,
+                childSpanTimeout: m,
                 disableAutoFinish: a,
                 beforeSpanEnd: (t) => {
                   w(), (0, r.f7)(t);
@@ -29456,7 +29432,7 @@
             return {
               name: "BrowserTracing",
               afterAllSetup(t) {
-                var a, r, i, d;
+                var a, r, i, R;
                 let L,
                   h,
                   w = A.m9.location && A.m9.location.href;
@@ -29505,7 +29481,7 @@
                     (G &&
                       O(t, {
                         name: A.m9.location.pathname,
-                        startTime: R.Z1 ? R.Z1 / 1e3 : void 0,
+                        startTime: d.Z1 ? d.Z1 / 1e3 : void 0,
                         attributes: {
                           [c.Zj]: "url",
                           [c.S3]: "auto.pageload.browser",
@@ -29527,12 +29503,12 @@
                             },
                           }));
                       })),
-                  m && (0, T.j)(),
+                  v && (0, T.j)(),
                   N &&
                     ((a = D),
                     (r = C),
-                    (i = v),
-                    (d = M),
+                    (i = m),
+                    (R = M),
                     A.m9.document &&
                       addEventListener(
                         "click",
@@ -29555,7 +29531,7 @@
                               (L.setAttribute(c.ju, "interactionInterrupted"),
                               L.end(),
                               (L = void 0)),
-                            !d.name)
+                            !R.name)
                           ) {
                             f.X &&
                               u.kg.warn(
@@ -29565,9 +29541,9 @@
                           }
                           L = (0, o.R)(
                             {
-                              name: d.name,
+                              name: R.name,
                               op: t,
-                              attributes: { [c.Zj]: d.source || "url" },
+                              attributes: { [c.Zj]: R.source || "url" },
                             },
                             {
                               idleTimeout: a,
@@ -29597,8 +29573,8 @@
           return "pageload" === (r && (0, E.XU)(r).op) ? r : void 0;
         }
         function P(t, e) {
-          (0, s.aF)().setPropagationContext((0, d.Q)()),
-            (0, s.nZ)().setPropagationContext((0, d.Q)()),
+          (0, s.aF)().setPropagationContext((0, R.Q)()),
+            (0, s.nZ)().setPropagationContext((0, R.Q)()),
             t.emit("startNavigationSpan", e),
             (0, s.nZ)().setTransactionName(e.name);
           let a = (0, E.HN)();
@@ -29623,8 +29599,8 @@
           l = a(789112),
           u = a(263449),
           I = a(305625),
-          R = a(64685),
-          d = a(873567),
+          d = a(64685),
+          R = a(873567),
           N = a(101284),
           f = a(886115),
           A = a(370541),
@@ -29641,8 +29617,8 @@
               enableHTTPTimings: P,
               tracePropagationTargets: D,
             } = { traceFetch: O.traceFetch, traceXHR: O.traceXHR, ...e },
-            v = "function" == typeof N ? N : (t) => !0,
-            m = (t) =>
+            m = "function" == typeof N ? N : (t) => !0,
+            v = (t) =>
               (function (t, e) {
                 let a = p.m9.location && p.m9.location.href;
                 if (a) {
@@ -29678,14 +29654,14 @@
                 t
               ),
             ),
-            (0, R.cf)((t) => {
+            (0, d.cf)((t) => {
               if (t.response) {
                 let e = L.get(t.response);
                 e && t.endTimestamp && h.set(e, t.endTimestamp);
               }
             }),
-            (0, R.Uf)((t) => {
-              let e = (0, n.m)(t, v, m, y);
+            (0, d.Uf)((t) => {
+              let e = (0, n.m)(t, m, v, y);
               if (
                 (t.response &&
                   t.fetchData.__span &&
@@ -29693,7 +29669,7 @@
                 e)
               ) {
                 let a = C(t.fetchData.url),
-                  r = a ? (0, d.en)(a).host : void 0;
+                  r = a ? (0, R.en)(a).host : void 0;
                 e.setAttributes({ "http.url": a, "server.address": r });
               }
               P && e && g(e);
@@ -29702,30 +29678,30 @@
               (0, r.UK)((t) => {
                 let e = (function (t, e, a, _) {
                   let n = t.xhr,
-                    R = n && n[r.xU];
-                  if (!n || n.__sentry_own_request__ || !R) return;
-                  let N = (0, i.z)() && e(R.url);
+                    d = n && n[r.xU];
+                  if (!n || n.__sentry_own_request__ || !d) return;
+                  let N = (0, i.z)() && e(d.url);
                   if (t.endTimestamp && N) {
                     let t = n.__sentry_xhr_span_id__;
                     if (!t) return;
                     let e = _[t];
                     e &&
-                      void 0 !== R.status_code &&
-                      ((0, c.Q0)(e, R.status_code), e.end(), delete _[t]);
+                      void 0 !== d.status_code &&
+                      ((0, c.Q0)(e, d.status_code), e.end(), delete _[t]);
                     return;
                   }
-                  let f = C(R.url),
-                    p = f ? (0, d.en)(f).host : void 0,
+                  let f = C(d.url),
+                    p = f ? (0, R.en)(f).host : void 0,
                     L = !!(0, o.HN)(),
                     h =
                       N && L
                         ? (0, s.qp)({
-                            name: `${R.method} ${R.url}`,
+                            name: `${d.method} ${d.url}`,
                             attributes: {
                               type: "xhr",
-                              "http.method": R.method,
+                              "http.method": d.method,
                               "http.url": f,
-                              url: R.url,
+                              url: d.url,
                               "server.address": p,
                               [E.S3]: "auto.http.browser",
                               [E.$J]: "http.client",
@@ -29737,7 +29713,7 @@
                   let O = (0, u.s3)();
                   return (
                     n.setRequestHeader &&
-                      a(R.url) &&
+                      a(d.url) &&
                       O &&
                       (function (t, e, a) {
                         let r = (0, u.nZ)(),
@@ -29753,18 +29729,18 @@
                           E =
                             a && (0, i.z)() ? (0, o.Hb)(a) : (0, A.$p)(_, n, c);
                         var l = t,
-                          R = E,
-                          d = (0, T.IQ)(
+                          d = E,
+                          R = (0, T.IQ)(
                             s || (a ? (0, I.jC)(a) : (0, I._l)(_, e)),
                           );
                         try {
-                          l.setRequestHeader("sentry-trace", R),
-                            d && l.setRequestHeader(T.bU, d);
+                          l.setRequestHeader("sentry-trace", d),
+                            R && l.setRequestHeader(T.bU, R);
                         } catch (t) {}
                       })(n, O, (0, i.z)() && L ? h : void 0),
                     h
                   );
-                })(t, v, m, y);
+                })(t, m, v, y);
                 P && e && g(e);
               });
         }
@@ -30180,8 +30156,8 @@
           l = a(538022),
           u = a(510529),
           I = a(263449),
-          R = a(255768),
-          d = a(380132),
+          d = a(255768),
+          R = a(380132),
           N = a(151122),
           f = a(112797),
           A = a(305625),
@@ -30199,7 +30175,7 @@
               (this._eventProcessors = []),
               t.dsn
                 ? (this._dsn = (0, r.vK)(t.dsn))
-                : R.X &&
+                : d.X &&
                   _.kg.warn("No DSN provided, client will not send events."),
               this._dsn)
             ) {
@@ -30218,7 +30194,7 @@
           }
           captureException(t, e, a) {
             let r = (0, n.DM)();
-            if ((0, n.YO)(t)) return R.X && _.kg.log(L), r;
+            if ((0, n.YO)(t)) return d.X && _.kg.log(L), r;
             let o = { event_id: r, ...e };
             return (
               this._process(
@@ -30243,14 +30219,14 @@
           captureEvent(t, e, a) {
             let r = (0, n.DM)();
             if (e && e.originalException && (0, n.YO)(e.originalException))
-              return R.X && _.kg.log(L), r;
+              return d.X && _.kg.log(L), r;
             let o = { event_id: r, ...e },
               i = (t.sdkProcessingMetadata || {}).capturedSpanScope;
             return this._process(this._captureEvent(t, o, i || a)), o.event_id;
           }
           captureSession(t) {
             "string" != typeof t.release
-              ? R.X &&
+              ? d.X &&
                 _.kg.warn(
                   "Discarded session because of missing or non-string release",
                 )
@@ -30300,7 +30276,7 @@
           }
           sendEvent(t, e = {}) {
             this.emit("beforeSendEvent", t, e);
-            let a = (0, d.Mq)(
+            let a = (0, R.Mq)(
               t,
               this._dsn,
               this._options._metadata,
@@ -30311,7 +30287,7 @@
             r && r.then((e) => this.emit("afterSendEvent", t, e), null);
           }
           sendSession(t) {
-            let e = (0, d.Q3)(
+            let e = (0, R.Q3)(
               t,
               this._dsn,
               this._options._metadata,
@@ -30323,7 +30299,7 @@
             if (this._options.sendClientReports) {
               let r = "number" == typeof a ? a : 1,
                 n = `${t}:${e}`;
-              R.X &&
+              d.X &&
                 _.kg.log(
                   `Recording outcome: "${n}"${r > 1 ? ` (${r} times)` : ""}`,
                 ),
@@ -30352,10 +30328,10 @@
                   .then(
                     null,
                     (t) => (
-                      R.X && _.kg.error("Error while sending event:", t), t
+                      d.X && _.kg.error("Error while sending event:", t), t
                     ),
                   )
-              : (R.X && _.kg.error("Transport disabled"), (0, i.WD)({}));
+              : (d.X && _.kg.error("Transport disabled"), (0, i.WD)({}));
           }
           _setupIntegrations() {
             let { integrations: t } = this._options;
@@ -30432,7 +30408,7 @@
             return this._processEvent(t, e, a).then(
               (t) => t.event_id,
               (t) => {
-                R.X &&
+                d.X &&
                   ("log" === t.logLevel ? _.kg.log(t.message) : _.kg.warn(t));
               },
             );
@@ -30456,8 +30432,8 @@
                 )
               );
             let I = "replay_event" === s ? "replay" : s,
-              R = (t.sdkProcessingMetadata || {}).capturedSpanIsolationScope;
-            return this._prepareEvent(t, e, a, R)
+              d = (t.sdkProcessingMetadata || {}).capturedSpanIsolationScope;
+            return this._prepareEvent(t, e, a, d)
               .then((a) => {
                 if (null === a)
                   throw (
@@ -30577,17 +30553,17 @@ Reason: ${t}`))
             );
           }
           _flushOutcomes() {
-            R.X && _.kg.log("Flushing outcomes...");
+            d.X && _.kg.log("Flushing outcomes...");
             let t = this._clearOutcomes();
             if (0 === t.length) {
-              R.X && _.kg.log("No outcomes to send");
+              d.X && _.kg.log("No outcomes to send");
               return;
             }
             if (!this._dsn) {
-              R.X && _.kg.log("No dsn provided, will not send outcomes");
+              d.X && _.kg.log("No dsn provided, will not send outcomes");
               return;
             }
-            R.X && _.kg.log("Sending outcomes:", t);
+            d.X && _.kg.log("Sending outcomes:", t);
             let e = (0, l.y)(t, this._options.tunnel && (0, r.RA)(this._dsn));
             this.sendEnvelope(e);
           }
@@ -30802,8 +30778,8 @@ Reason: ${t}`))
           eN: () => u,
           eW: () => T,
           mG: () => N,
-          rJ: () => R,
-          sU: () => d,
+          rJ: () => d,
+          sU: () => R,
           uT: () => l,
           v: () => I,
           xv: () => L,
@@ -30831,10 +30807,10 @@ Reason: ${t}`))
         function I(t, e) {
           (0, o.aF)().setContext(t, e);
         }
-        function R(t) {
+        function d(t) {
           (0, o.aF)().setExtras(t);
         }
-        function d(t, e) {
+        function R(t, e) {
           (0, o.aF)().setExtra(t, e);
         }
         function N(t) {
@@ -30942,13 +30918,13 @@ Reason: ${t}`))
               level: "info",
               tags: u,
             },
-            R = (a && a.getClient()) || (0, _.s3)();
-          return R && R.emit("beforeSendFeedback", I, e), a.captureEvent(I, e);
+            d = (a && a.getClient()) || (0, _.s3)();
+          return d && d.emit("beforeSendFeedback", I, e), a.captureEvent(I, e);
         }
       },
       868497: function (t, e, a) {
         "use strict";
-        a.d(e, { m: () => d });
+        a.d(e, { m: () => R });
         var r = a(873567),
           _ = a(370541),
           n = a(285883),
@@ -30960,8 +30936,8 @@ Reason: ${t}`))
           l = a(789112),
           u = a(793373),
           I = a(152228),
-          R = a(305625);
-        function d(t, e, a, N, f = "auto.http.browser") {
+          d = a(305625);
+        function R(t, e, a, N, f = "auto.http.browser") {
           if (!t.fetchData) return;
           let A = (0, s.z)() && e(t.fetchData.url);
           if (t.endTimestamp && A) {
@@ -31033,20 +31009,20 @@ Reason: ${t}`))
                   ...(0, i.aF)().getPropagationContext(),
                   ...a.getPropagationContext(),
                 },
-                d = c ? (0, E.Hb)(c) : (0, _.$p)(s, l, u),
-                N = (0, n.IQ)(I || (c ? (0, R.jC)(c) : (0, R._l)(s, e))),
+                R = c ? (0, E.Hb)(c) : (0, _.$p)(s, l, u),
+                N = (0, n.IQ)(I || (c ? (0, d.jC)(c) : (0, d._l)(s, e))),
                 f =
                   r.headers ||
                   ("undefined" != typeof Request && (0, o.V9)(t, Request)
                     ? t.headers
                     : void 0);
-              if (!f) return { "sentry-trace": d, baggage: N };
+              if (!f) return { "sentry-trace": R, baggage: N };
               if ("undefined" != typeof Headers && (0, o.V9)(f, Headers)) {
                 let t = new Headers(f);
-                return t.append("sentry-trace", d), N && t.append(n.bU, N), t;
+                return t.append("sentry-trace", R), N && t.append(n.bU, N), t;
               }
               if (Array.isArray(f)) {
-                let t = [...f, ["sentry-trace", d]];
+                let t = [...f, ["sentry-trace", R]];
                 return N && t.push([n.bU, N]), t;
               }
               {
@@ -31057,7 +31033,7 @@ Reason: ${t}`))
                   N && e.push(N),
                   {
                     ...f,
-                    "sentry-trace": d,
+                    "sentry-trace": R,
                     baggage: e.length > 0 ? e.join(",") : void 0,
                   }
                 );
@@ -31503,7 +31479,7 @@ Reason: ${t}`))
           s = (0, i._I)((t = {}) => ({
             name: "InboundFilters",
             processEvent: (e, a, i) => {
-              var s, l, u, I, R;
+              var s, l, u, I, d;
               return ((s = e),
               (l = (function (t = {}, e = {}) {
                 return {
@@ -31557,12 +31533,12 @@ Event: ${(0, _.jH)(s)}`),
                         .warn(`Event dropped due to being matched by \`ignoreErrors\` option.
 Event: ${(0, _.jH)(s)}`),
                     0)
-                  : (R = s).type ||
-                      !R.exception ||
-                      !R.exception.values ||
-                      0 === R.exception.values.length ||
-                      R.message ||
-                      R.exception.values.some(
+                  : (d = s).type ||
+                      !d.exception ||
+                      !d.exception.values ||
+                      0 === d.exception.values.length ||
+                      d.message ||
+                      d.exception.values.some(
                         (t) =>
                           t.stacktrace ||
                           (t.type && "Error" !== t.type) ||
@@ -31939,9 +31915,9 @@ Event: ${(0, _.jH)(s)}`),
             let l = Math.floor(E),
               u = (0, c.s3)(e),
               I = (0, c.Bg)(s),
-              R = (0, c.OC)(o),
-              d = (0, c.Ic)(t, u, R, I),
-              N = this._buckets.get(d),
+              d = (0, c.OC)(o),
+              R = (0, c.Ic)(t, u, d, I),
+              N = this._buckets.get(R),
               f = N && t === n.is ? N.metric.weight : 0;
             N
               ? (N.metric.add(a), N.timestamp < l && (N.timestamp = l))
@@ -31950,12 +31926,12 @@ Event: ${(0, _.jH)(s)}`),
                   timestamp: l,
                   metricType: t,
                   name: u,
-                  unit: R,
+                  unit: d,
                   tags: I,
                 }),
-                this._buckets.set(d, N));
+                this._buckets.set(R, N));
             let A = "string" == typeof a ? N.metric.weight - f : a;
-            (0, _.yc)(t, u, A, R, s, d);
+            (0, _.yc)(t, u, A, d, s, R);
           }
           flush() {
             if (0 === this._buckets.size) return;
@@ -32011,7 +31987,7 @@ Event: ${(0, _.jH)(s)}`),
       },
       226377: function (t, e, a) {
         "use strict";
-        a.d(e, { q: () => d });
+        a.d(e, { q: () => R });
         var r = a(899517),
           _ = a(622916),
           n = a(101284),
@@ -32038,24 +32014,24 @@ Event: ${(0, _.jH)(s)}`),
           if (!s) return;
           let E = (0, c.HN)(),
             l = E ? (0, c.Gx)(E) : void 0,
-            R = l && (0, c.XU)(l).description,
-            { unit: d, tags: N, timestamp: f } = n,
+            d = l && (0, c.XU)(l).description,
+            { unit: R, tags: N, timestamp: f } = n,
             { release: A, environment: T } = s.getOptions(),
             p = {};
           A && (p.release = A),
             T && (p.environment = T),
-            R && (p.transaction = R),
+            d && (p.transaction = d),
             i.X && _.kg.log(`Adding value of ${r} to ${e} metric ${a}`),
-            u(s, t).add(e, a, r, d, { ...p, ...N }, f);
+            u(s, t).add(e, a, r, R, { ...p, ...N }, f);
         }
-        function R(t, e, a, r) {
+        function d(t, e, a, r) {
           I(t, l.g_, e, N(a), r);
         }
-        let d = {
+        let R = {
           increment: function (t, e, a = 1, r) {
             I(t, l.JM, e, N(a), r);
           },
-          distribution: R,
+          distribution: d,
           set: function (t, e, a, r) {
             I(t, l.is, e, a, r);
           },
@@ -32078,12 +32054,12 @@ Event: ${(0, _.jH)(s)}`),
                     () => {},
                     () => {
                       let a = (0, n.ph)();
-                      R(t, e, a - r, { ..._, unit: "second" }), o.end(a);
+                      d(t, e, a - r, { ..._, unit: "second" }), o.end(a);
                     },
                   ),
               );
             }
-            R(t, e, a, { ..._, unit: r });
+            d(t, e, a, { ..._, unit: r });
           },
           getMetricsAggregatorForClient: u,
         };
@@ -32748,12 +32724,12 @@ Event: ${(0, _.jH)(s)}`),
             u = E && E.get("sentry.dsc"),
             I = u && (0, _.EN)(u);
           if (I) return I;
-          let R = (0, c.XU)(r),
-            d = R.data || {},
-            N = d[i.TE];
+          let d = (0, c.XU)(r),
+            R = d.data || {},
+            N = R[i.TE];
           null != N && (a.sample_rate = `${N}`);
-          let f = d[i.Zj],
-            A = R.description;
+          let f = R[i.Zj],
+            A = d.description;
           return (
             "url" !== f && A && (a.transaction = A),
             (a.sampled = String((0, c.Tt)(r))),
@@ -32801,7 +32777,7 @@ Event: ${(0, _.jH)(s)}`),
       },
       553062: function (t, e, a) {
         "use strict";
-        a.d(e, { A: () => R, R: () => d });
+        a.d(e, { A: () => d, R: () => R });
         var r = a(101284),
           _ = a(622916),
           n = a(263449),
@@ -32813,8 +32789,8 @@ Event: ${(0, _.jH)(s)}`),
           l = a(789112),
           u = a(793373),
           I = a(152228);
-        let R = { idleTimeout: 1e3, finalTimeout: 3e4, childSpanTimeout: 15e3 };
-        function d(t, e = {}) {
+        let d = { idleTimeout: 1e3, finalTimeout: 3e4, childSpanTimeout: 15e3 };
+        function R(t, e = {}) {
           let a,
             N = new Map(),
             f = !1,
@@ -32822,16 +32798,16 @@ Event: ${(0, _.jH)(s)}`),
             T = !e.disableAutoFinish,
             p = [],
             {
-              idleTimeout: L = R.idleTimeout,
-              finalTimeout: h = R.finalTimeout,
-              childSpanTimeout: O = R.childSpanTimeout,
+              idleTimeout: L = d.idleTimeout,
+              finalTimeout: h = d.finalTimeout,
+              childSpanTimeout: O = d.childSpanTimeout,
               beforeSpanEnd: P,
             } = e,
             g = (0, n.s3)();
           if (!g || !(0, c.z)()) return new l.b();
           let D = (0, n.nZ)(),
             C = (0, E.HN)(),
-            v = (function (t) {
+            m = (function (t) {
               let e = (0, I.qp)(t);
               return (
                 (0, s.D)((0, n.nZ)(), e),
@@ -32839,28 +32815,28 @@ Event: ${(0, _.jH)(s)}`),
                 e
               );
             })(t);
-          function m() {
+          function v() {
             a && (clearTimeout(a), (a = void 0));
           }
           function y(t) {
-            m(),
+            v(),
               (a = setTimeout(() => {
-                !f && 0 === N.size && T && ((A = "idleTimeout"), v.end(t));
+                !f && 0 === N.size && T && ((A = "idleTimeout"), m.end(t));
               }, L));
           }
           function S(t) {
             a = setTimeout(() => {
-              !f && T && ((A = "heartbeatFailed"), v.end(t));
+              !f && T && ((A = "heartbeatFailed"), m.end(t));
             }, O);
           }
           function U(t) {
             (f = !0), N.clear(), p.forEach((t) => t()), (0, s.D)(D, C);
-            let e = (0, E.XU)(v),
+            let e = (0, E.XU)(m),
               { start_timestamp: a } = e;
             if (!a) return;
-            (e.data || {})[i.ju] || v.setAttribute(i.ju, A),
+            (e.data || {})[i.ju] || m.setAttribute(i.ju, A),
               _.kg.log(`[Tracing] Idle span "${e.op}" finished`);
-            let r = (0, E.Dp)(v).filter((t) => t !== v),
+            let r = (0, E.Dp)(m).filter((t) => t !== m),
               n = 0;
             r.forEach((e) => {
               e.isRecording() &&
@@ -32887,22 +32863,22 @@ Event: ${(0, _.jH)(s)}`),
                       t,
                     );
               }
-              (!c || !i) && ((0, E.ed)(v, e), n++);
+              (!c || !i) && ((0, E.ed)(m, e), n++);
             }),
-              n > 0 && v.setAttribute("sentry.idle_span_discarded_spans", n);
+              n > 0 && m.setAttribute("sentry.idle_span_discarded_spans", n);
           }
           return (
-            (v.end = new Proxy(v.end, {
+            (m.end = new Proxy(m.end, {
               apply(t, e, a) {
-                P && P(v);
+                P && P(m);
                 let [_, ...n] = a,
                   o = _ || (0, r.ph)(),
                   i = (0, E.$k)(o),
-                  c = (0, E.Dp)(v).filter((t) => t !== v);
+                  c = (0, E.Dp)(m).filter((t) => t !== m);
                 if (!c.length) return U(i), Reflect.apply(t, e, [i, ...n]);
                 let s = c.map((t) => (0, E.XU)(t).timestamp).filter((t) => !!t),
                   l = s.length ? Math.max(...s) : void 0,
-                  u = (0, E.XU)(v).start_timestamp,
+                  u = (0, E.XU)(m).start_timestamp,
                   I = Math.min(
                     u ? u + h / 1e3 : 1 / 0,
                     Math.max(u || -1 / 0, Math.min(i, l || 1 / 0)),
@@ -32914,11 +32890,11 @@ Event: ${(0, _.jH)(s)}`),
               g.on("spanStart", (t) => {
                 var e;
                 f ||
-                  t === v ||
+                  t === m ||
                   (0, E.XU)(t).timestamp ||
-                  ((0, E.Dp)(v).includes(t) &&
+                  ((0, E.Dp)(m).includes(t) &&
                     ((e = t.spanContext().spanId),
-                    m(),
+                    v(),
                     N.set(e, !0),
                     S((0, r.ph)() + O / 1e3)));
               }),
@@ -32935,17 +32911,17 @@ Event: ${(0, _.jH)(s)}`),
             ),
             p.push(
               g.on("idleSpanEnableAutoFinish", (t) => {
-                t === v && ((T = !0), y(), N.size && S());
+                t === m && ((T = !0), y(), N.size && S());
               }),
             ),
             e.disableAutoFinish || y(),
             setTimeout(() => {
               f ||
-                (v.setStatus({ code: u.jt, message: "deadline_exceeded" }),
+                (m.setStatus({ code: u.jt, message: "deadline_exceeded" }),
                 (A = "finalTimeout"),
-                v.end());
+                m.end());
             }, h),
-            v
+            m
           );
         }
       },
@@ -33114,8 +33090,8 @@ Event: ${(0, _.jH)(s)}`),
           l = a(988097),
           u = a(696486),
           I = a(305625),
-          R = a(966497),
-          d = a(241225),
+          d = a(966497),
+          R = a(241225),
           N = a(881243);
         class f {
           constructor(t = {}) {
@@ -33172,7 +33148,7 @@ Event: ${(0, _.jH)(s)}`),
           end(t) {
             this._endTime ||
               ((this._endTime = (0, u.$k)(t)),
-              (0, R.w)(this),
+              (0, d.w)(this),
               this._onSpanEnded());
           }
           getSpanJSON() {
@@ -33190,7 +33166,7 @@ Event: ${(0, _.jH)(s)}`),
               _metrics_summary: (0, E.y)(this),
               profile_id: this._attributes[l.p6],
               exclusive_time: this._attributes[l.JQ],
-              measurements: (0, d.l)(this._events),
+              measurements: (0, R.l)(this._events),
               is_segment:
                 (this._isStandaloneSpan && (0, u.Gx)(this) === this) || void 0,
               segment_id: this._isStandaloneSpan
@@ -33289,16 +33265,16 @@ Event: ${(0, _.jH)(s)}`),
                 _metrics_summary: (0, E.y)(this),
                 ...(_ && { transaction_info: { source: _ } }),
               },
-              R = (0, d.l)(this._events);
+              d = (0, R.l)(this._events);
             return (
-              R &&
-                Object.keys(R).length &&
+              d &&
+                Object.keys(d).length &&
                 (c.X &&
                   o.kg.log(
                     "[Measurements] Adding measurements to transaction event",
-                    JSON.stringify(R, void 0, 2),
+                    JSON.stringify(d, void 0, 2),
                   ),
-                (s.measurements = R)),
+                (s.measurements = d)),
               s
             );
           }
@@ -33370,7 +33346,7 @@ Event: ${(0, _.jH)(s)}`),
         "use strict";
         a.d(e, {
           GK: () => O,
-          Iw: () => v,
+          Iw: () => m,
           V0: () => P,
           _d: () => C,
           qp: () => g,
@@ -33387,8 +33363,8 @@ Event: ${(0, _.jH)(s)}`),
           l = a(366569),
           u = a(73453),
           I = a(99342),
-          R = a(696486),
-          d = a(305625),
+          d = a(696486),
+          R = a(305625),
           N = a(966497),
           f = a(787659),
           A = a(789112),
@@ -33408,7 +33384,7 @@ Event: ${(0, _.jH)(s)}`),
                 o =
                   t.onlyIfParent && !n
                     ? new A.b()
-                    : m({
+                    : v({
                         parentSpan: n,
                         spanArguments: r,
                         forceTransaction: _,
@@ -33419,7 +33395,7 @@ Event: ${(0, _.jH)(s)}`),
                 (0, l.i)(
                   () => e(o),
                   () => {
-                    let { status: t } = (0, R.XU)(o);
+                    let { status: t } = (0, d.XU)(o);
                     o.isRecording() &&
                       (!t || "ok" === t) &&
                       o.setStatus({ code: p.jt, message: "internal_error" });
@@ -33442,7 +33418,7 @@ Event: ${(0, _.jH)(s)}`),
                 o =
                   t.onlyIfParent && !n
                     ? new A.b()
-                    : m({
+                    : v({
                         parentSpan: n,
                         spanArguments: r,
                         forceTransaction: _,
@@ -33456,7 +33432,7 @@ Event: ${(0, _.jH)(s)}`),
                 (0, l.i)(
                   () => e(o, c),
                   () => {
-                    let { status: t } = (0, R.XU)(o);
+                    let { status: t } = (0, d.XU)(o);
                     o.isRecording() &&
                       (!t || "ok" === t) &&
                       o.setStatus({ code: p.jt, message: "internal_error" });
@@ -33482,7 +33458,7 @@ Event: ${(0, _.jH)(s)}`),
               _ = b(e);
             return t.onlyIfParent && !_
               ? new A.b()
-              : m({
+              : v({
                   parentSpan: _,
                   spanArguments: a,
                   forceTransaction: r,
@@ -33501,7 +33477,7 @@ Event: ${(0, _.jH)(s)}`),
             ? a.withActiveSpan(t, e)
             : (0, i.$e)((a) => ((0, I.D)(a, t || void 0), e(a)));
         }
-        function v(t) {
+        function m(t) {
           return (0, i.$e)(
             (e) => (
               e.setPropagationContext((0, _.Q)()),
@@ -33513,7 +33489,7 @@ Event: ${(0, _.jH)(s)}`),
             ),
           );
         }
-        function m({
+        function v({
           parentSpan: t,
           spanArguments: e,
           forceTransaction: a,
@@ -33525,11 +33501,11 @@ Event: ${(0, _.jH)(s)}`),
           if (t && !a)
             (_ = (function (t, e, a) {
               let { spanId: r, traceId: _ } = t.spanContext(),
-                n = !e.getScopeData().sdkProcessingMetadata[h] && (0, R.Tt)(t),
+                n = !e.getScopeData().sdkProcessingMetadata[h] && (0, d.Tt)(t),
                 o = n
                   ? new T.s({ ...a, parentSpanId: r, traceId: _, sampled: n })
                   : new A.b({ traceId: _ });
-              (0, R.j5)(t, o);
+              (0, d.j5)(t, o);
               let c = (0, i.s3)();
               return (
                 c &&
@@ -33538,13 +33514,13 @@ Event: ${(0, _.jH)(s)}`),
                 o
               );
             })(t, r, e)),
-              (0, R.j5)(t, _);
+              (0, d.j5)(t, _);
           else if (t) {
-            let a = (0, d.jC)(t),
+            let a = (0, R.jC)(t),
               { traceId: n, spanId: o } = t.spanContext(),
-              i = (0, R.Tt)(t);
+              i = (0, d.Tt)(t);
             (_ = U({ traceId: n, parentSpanId: o, ...e }, r, i)),
-              (0, d.Lh)(_, a);
+              (0, R.Lh)(_, a);
           } else {
             let {
               traceId: t,
@@ -33553,7 +33529,7 @@ Event: ${(0, _.jH)(s)}`),
               sampled: i,
             } = { ...n.getPropagationContext(), ...r.getPropagationContext() };
             (_ = U({ traceId: t, parentSpanId: o, ...e }, r, i)),
-              a && (0, d.Lh)(_, a);
+              a && (0, R.Lh)(_, a);
           }
           return (0, N.Z)(_), (0, L.YJ)(_, r, n), _;
         }
@@ -33562,7 +33538,7 @@ Event: ${(0, _.jH)(s)}`),
           if (t.startTime) {
             let a = { ...e };
             return (
-              (a.startTimestamp = (0, R.$k)(t.startTime)), delete a.startTime, a
+              (a.startTimestamp = (0, d.$k)(t.startTime)), delete a.startTime, a
             );
           }
           return e;
@@ -33599,7 +33575,7 @@ Event: ${(0, _.jH)(s)}`),
           if (!e) return;
           let a = (0, i.s3)();
           return (a ? a.getOptions() : {}).parentSpanIsAlwaysRootSpan
-            ? (0, R.Gx)(e)
+            ? (0, d.Gx)(e)
             : e;
         }
         function G(t) {
@@ -33646,7 +33622,7 @@ Event: ${(0, _.jH)(s)}`),
               )
                 return (0, o.WD)({});
               let I = (0, _.Jd)(r[0], E),
-                R = (e) => {
+                d = (e) => {
                   (0, _.gv)(I, (a, r) => {
                     let n = l(a, r);
                     t.recordDroppedEvent(e, (0, _.mL)(r), n);
@@ -33666,7 +33642,7 @@ Event: ${(0, _.jH)(s)}`),
                       t
                     ),
                     (t) => {
-                      throw (R("network_error"), t);
+                      throw (d("network_error"), t);
                     },
                   ),
                 )
@@ -33679,7 +33655,7 @@ Event: ${(0, _.jH)(s)}`),
                           i.kg.error(
                             "Skipped sending event because buffer is full.",
                           ),
-                        R("queue_overflow"),
+                        d("queue_overflow"),
                         (0, o.WD)({})
                       );
                     throw t;
@@ -33925,8 +33901,8 @@ Event: ${(0, _.jH)(s)}`),
             eventProcessors: l,
             attachments: u,
             propagationContext: I,
-            transactionName: R,
-            span: d,
+            transactionName: d,
+            span: R,
           } = e;
           s(t, "extra", a),
             s(t, "tags", r),
@@ -33934,8 +33910,8 @@ Event: ${(0, _.jH)(s)}`),
             s(t, "contexts", n),
             s(t, "sdkProcessingMetadata", i),
             o && (t.level = o),
-            R && (t.transactionName = R),
-            d && (t.span = d),
+            d && (t.transactionName = d),
+            R && (t.span = R),
             c.length && (t.breadcrumbs = [...t.breadcrumbs, ...c]),
             E.length && (t.fingerprint = [...t.fingerprint, ...E]),
             l.length && (t.eventProcessors = [...t.eventProcessors, ...l]),
@@ -34046,7 +34022,7 @@ Event: ${(0, _.jH)(s)}`),
       },
       822578: function (t, e, a) {
         "use strict";
-        a.d(e, { R: () => I, U0: () => d });
+        a.d(e, { R: () => I, U0: () => R });
         var r = a(394798),
           _ = a(101284),
           n = a(886115),
@@ -34057,7 +34033,7 @@ Event: ${(0, _.jH)(s)}`),
           E = a(574054),
           l = a(307854),
           u = a(396234);
-        function I(t, e, a, I, d, N) {
+        function I(t, e, a, I, R, N) {
           var f, A;
           let { normalizeDepth: T = 3, normalizeMaxBreadth: p = 1e3 } = t,
             L = {
@@ -34087,14 +34063,14 @@ Event: ${(0, _.jH)(s)}`),
             (A = h).length > 0 &&
               ((f.sdk = f.sdk || {}),
               (f.sdk.integrations = [...(f.sdk.integrations || []), ...A])),
-            d && d.emit("applyFrameMetadata", e),
+            R && R.emit("applyFrameMetadata", e),
             void 0 === e.type &&
               (function (t, e) {
                 let a,
                   r = o.n._sentryDebugIds;
                 if (!r) return;
-                let _ = R.get(e);
-                _ ? (a = _) : ((a = new Map()), R.set(e, a));
+                let _ = d.get(e);
+                _ ? (a = _) : ((a = new Map()), d.set(e, a));
                 let n = Object.entries(r).reduce((t, [r, _]) => {
                   let n,
                     o = a.get(r);
@@ -34122,7 +34098,7 @@ Event: ${(0, _.jH)(s)}`),
             return a.update(e), a;
           })(I, a.captureContext);
           a.mechanism && (0, r.EG)(L, a.mechanism);
-          let P = d ? d.getEventProcessors() : [],
+          let P = R ? R.getEventProcessors() : [],
             g = (0, s.lW)().getScopeData();
           if (N) {
             let t = N.getScopeData();
@@ -34197,8 +34173,8 @@ Event: ${(0, _.jH)(s)}`),
               : t,
           );
         }
-        let R = new WeakMap();
-        function d(t) {
+        let d = new WeakMap();
+        function R(t) {
           if (t) {
             var e;
             return (e = t) instanceof l.s ||
@@ -34254,15 +34230,15 @@ Event: ${(0, _.jH)(s)}`),
         a.d(e, {
           $k: () => A,
           Dp: () => C,
-          Gx: () => v,
-          HN: () => m,
-          HR: () => d,
+          Gx: () => m,
+          HN: () => v,
+          HR: () => R,
           Hb: () => f,
           Tt: () => L,
           XU: () => p,
           _4: () => h,
           ed: () => D,
-          i0: () => R,
+          i0: () => d,
           j5: () => g,
           ve: () => I,
           wy: () => N,
@@ -34279,8 +34255,8 @@ Event: ${(0, _.jH)(s)}`),
           l = a(793373),
           u = a(99342);
         let I = 0,
-          R = 1;
-        function d(t) {
+          d = 1;
+        function R(t) {
           let { spanId: e, traceId: a } = t.spanContext(),
             { data: _, op: n, parent_span_id: o, status: i, origin: c } = p(t);
           return (0, r.Jr)({
@@ -34356,7 +34332,7 @@ Event: ${(0, _.jH)(s)}`),
         }
         function L(t) {
           let { traceFlags: e } = t.spanContext();
-          return e === R;
+          return e === d;
         }
         function h(t) {
           if (t && t.code !== l.pq)
@@ -34382,16 +34358,16 @@ Event: ${(0, _.jH)(s)}`),
             Array.from(e)
           );
         }
-        function v(t) {
+        function m(t) {
           return t[P] || t;
         }
-        function m() {
+        function v() {
           let t = (0, i.c)(),
             e = (0, o.G)(t);
           return e.getActiveSpan ? e.getActiveSpan() : (0, u.Y)((0, c.nZ)());
         }
         function y(t, e, a, r, _, n) {
-          let o = m();
+          let o = v();
           o && (0, s.V)(o, t, e, a, r, _, n);
         }
       },
@@ -34409,11 +34385,11 @@ Event: ${(0, _.jH)(s)}`),
             !(0, r.V9)(l.originalException, Error)
           )
             return;
-          let R =
+          let d =
             E.exception.values.length > 0
               ? E.exception.values[E.exception.values.length - 1]
               : void 0;
-          R &&
+          d &&
             (E.exception.values =
               ((u = (function t(e, a, _, n, c, s, E, l) {
                 if (s.length >= _ + 1) return s;
@@ -34437,7 +34413,7 @@ Event: ${(0, _.jH)(s)}`),
                     }),
                   u
                 );
-              })(t, e, s, l.originalException, c, E.exception.values, R, 0)),
+              })(t, e, s, l.originalException, c, E.exception.values, d, 0)),
               (I = a),
               u.map((t) => (t.value && (t.value = (0, _.$G)(t.value, I)), t))));
         }
@@ -34755,13 +34731,13 @@ Event: ${(0, _.jH)(s)}`),
           Cd: () => T,
           HY: () => A,
           Jd: () => i,
-          KQ: () => R,
+          KQ: () => d,
           R: () => E,
           V$: () => u,
           f4: () => I,
           gv: () => s,
           mL: () => f,
-          zQ: () => d,
+          zQ: () => R,
         });
         var r = a(967752),
           _ = a(202811),
@@ -34853,10 +34829,10 @@ ${JSON.stringify(e)}
           }
           return [_, n];
         }
-        function R(t) {
+        function d(t) {
           return [{ type: "span" }, t];
         }
-        function d(t) {
+        function R(t) {
           let e = "string" == typeof t.data ? l(t.data) : t.data;
           return [
             (0, n.Jr)({
@@ -34974,7 +34950,7 @@ ${JSON.stringify(e)}
                     if (2 === t.length) {
                       let [e, a] = t;
                       return {
-                        url: R(e),
+                        url: d(e),
                         method: I(a, "method")
                           ? String(a.method).toUpperCase()
                           : "GET",
@@ -34982,7 +34958,7 @@ ${JSON.stringify(e)}
                     }
                     let e = t[0];
                     return {
-                      url: R(e),
+                      url: d(e),
                       method: I(e, "method")
                         ? String(e.method).toUpperCase()
                         : "GET",
@@ -35067,7 +35043,7 @@ ${JSON.stringify(e)}
         function I(t, e) {
           return !!t && "object" == typeof t && !!t[e];
         }
-        function R(t) {
+        function d(t) {
           return "string" == typeof t
             ? t
             : t
@@ -35165,7 +35141,7 @@ Error:`,
           Cy: () => f,
           HD: () => s,
           J8: () => N,
-          Kj: () => d,
+          Kj: () => R,
           Le: () => E,
           PO: () => u,
           TX: () => i,
@@ -35174,7 +35150,7 @@ Error:`,
           VZ: () => _,
           cO: () => I,
           fm: () => c,
-          kK: () => R,
+          kK: () => d,
           pt: () => l,
           y1: () => T,
         });
@@ -35225,10 +35201,10 @@ Error:`,
         function I(t) {
           return "undefined" != typeof Event && A(t, Event);
         }
-        function R(t) {
+        function d(t) {
           return "undefined" != typeof Element && A(t, Element);
         }
-        function d(t) {
+        function R(t) {
           return n(t, "RegExp");
         }
         function N(t) {
@@ -35521,19 +35497,19 @@ Error:`,
                   let e = a.toJSON();
                   return t("", e, I - 1, c, s);
                 } catch (t) {}
-              let R = Array.isArray(a) ? [] : {},
-                d = 0,
+              let d = Array.isArray(a) ? [] : {},
+                R = 0,
                 N = (0, n.Sh)(a);
               for (let e in N) {
                 if (!Object.prototype.hasOwnProperty.call(N, e)) continue;
-                if (d >= c) {
-                  R[e] = "[MaxProperties ~]";
+                if (R >= c) {
+                  d[e] = "[MaxProperties ~]";
                   break;
                 }
                 let a = N[e];
-                (R[e] = t(e, a, I - 1, c, s)), d++;
+                (d[e] = t(e, a, I - 1, c, s)), R++;
               }
-              return l(a), R;
+              return l(a), d;
             })("", t, e, a);
           } catch (t) {
             return { ERROR: `**non-serializable** (${t})` };
@@ -35598,15 +35574,15 @@ Error:`,
               message: t.message,
               name: t.name,
               stack: t.stack,
-              ...d(t),
+              ...R(t),
             };
           if (!(0, n.cO)(t)) return t;
           {
             let e = {
               type: t.type,
-              target: R(t.target),
-              currentTarget: R(t.currentTarget),
-              ...d(t),
+              target: d(t.target),
+              currentTarget: d(t.currentTarget),
+              ...R(t),
             };
             return (
               "undefined" != typeof CustomEvent &&
@@ -35616,7 +35592,7 @@ Error:`,
             );
           }
         }
-        function R(t) {
+        function d(t) {
           try {
             return (0, n.kK)(t)
               ? (0, r.Rt)(t)
@@ -35625,7 +35601,7 @@ Error:`,
             return "<unknown>";
           }
         }
-        function d(t) {
+        function R(t) {
           if ("object" != typeof t || null === t) return {};
           {
             let e = {};
@@ -36542,8 +36518,8 @@ Error:`,
           l = a(622916),
           u = a(873567),
           I = a(665909),
-          R = a(395848),
-          d = a(501684),
+          d = a(395848),
+          R = a(501684),
           N = a(108185),
           f = a(896247),
           A = a(416987);
@@ -36552,8 +36528,8 @@ Error:`,
         function L() {
           let t = (0, N.QV)();
           if (t && s.Z1) {
-            t.mark && R.m.performance.mark("sentry-tracing-init");
-            let e = (0, d.to)(({ metric: t }) => {
+            t.mark && d.m.performance.mark("sentry-tracing-init");
+            let e = (0, R.to)(({ metric: t }) => {
                 let e = t.entries[t.entries.length - 1];
                 if (!e) return;
                 let a = (0, N.XL)(s.Z1),
@@ -36562,21 +36538,21 @@ Error:`,
                   (p.fid = { value: t.value, unit: "millisecond" }),
                   (p["mark.fid"] = { value: a + r, unit: "second" });
               }),
-              a = (0, d.PR)(({ metric: t }) => {
+              a = (0, R.PR)(({ metric: t }) => {
                 let e = t.entries[t.entries.length - 1];
                 e &&
                   (I.X && l.kg.log("[Measurements] Adding CLS"),
                   (p.cls = { value: t.value, unit: "" }),
                   (_ = e));
               }, !0),
-              n = (0, d.$A)(({ metric: t }) => {
+              n = (0, R.$A)(({ metric: t }) => {
                 let e = t.entries[t.entries.length - 1];
                 e &&
                   (I.X && l.kg.log("[Measurements] Adding LCP"),
                   (p.lcp = { value: t.value, unit: "millisecond" }),
                   (r = e));
               }, !0),
-              o = (0, d._4)(({ metric: t }) => {
+              o = (0, R._4)(({ metric: t }) => {
                 t.entries[t.entries.length - 1] &&
                   (I.X && l.kg.log("[Measurements] Adding TTFB"),
                   (p.ttfb = { value: t.value, unit: "millisecond" }));
@@ -36588,7 +36564,7 @@ Error:`,
           return () => void 0;
         }
         function h() {
-          (0, d._j)("longtask", ({ entries: t }) => {
+          (0, R._j)("longtask", ({ entries: t }) => {
             for (let e of t) {
               if (!(0, n.HN)()) return;
               let t = (0, N.XL)(s.Z1 + e.startTime),
@@ -36636,7 +36612,7 @@ Error:`,
           }).observe({ type: "long-animation-frame", buffered: !0 });
         }
         function P() {
-          (0, d._j)("event", ({ entries: t }) => {
+          (0, R._j)("event", ({ entries: t }) => {
             for (let e of t) {
               if (!(0, n.HN)()) return;
               if ("click" === e.name) {
@@ -36658,19 +36634,19 @@ Error:`,
         }
         function g(t) {
           let e = (0, N.QV)();
-          if (!e || !R.m.performance.getEntries || !s.Z1) return;
+          if (!e || !d.m.performance.getEntries || !s.Z1) return;
           I.X &&
             l.kg.log(
               "[Tracing] Adding & adjusting spans using Performance API",
             );
           let a = (0, N.XL)(s.Z1),
             o = e.getEntries(),
-            { op: d, start_timestamp: L } = (0, n.XU)(t);
+            { op: R, start_timestamp: L } = (0, n.XU)(t);
           if (
             (o.slice(T).forEach((e) => {
               let r = (0, N.XL)(e.startTime),
                 _ = (0, N.XL)(Math.max(0, e.duration));
-              if ("navigation" !== d || !L || !(a + r < L))
+              if ("navigation" !== R || !L || !(a + r < L))
                 switch (e.entryType) {
                   case "navigation":
                     var n, o, c;
@@ -36727,14 +36703,14 @@ Error:`,
                         op: E.entryType,
                         attributes: u,
                       });
-                    let R = (0, A.Y)(),
-                      d = e.startTime < R.firstHiddenTime;
+                    let d = (0, A.Y)(),
+                      R = e.startTime < d.firstHiddenTime;
                     "first-paint" === e.name &&
-                      d &&
+                      R &&
                       (I.X && l.kg.log("[Measurements] Adding FP"),
                       (p.fp = { value: e.startTime, unit: "millisecond" })),
                       "first-contentful-paint" === e.name &&
-                        d &&
+                        R &&
                         (I.X && l.kg.log("[Measurements] Adding FCP"),
                         (p.fcp = { value: e.startTime, unit: "millisecond" }));
                     break;
@@ -36768,11 +36744,11 @@ Error:`,
                           (c["url.scheme"] = o.protocol.split(":").pop()),
                         o.host && (c["server.address"] = o.host),
                         (c["url.same_origin"] = a.includes(
-                          R.m.location.origin,
+                          d.m.location.origin,
                         ));
                       let s = n + r;
                       (0, N.Y)(t, s, s + _, {
-                        name: a.replace(R.m.location.origin, ""),
+                        name: a.replace(d.m.location.origin, ""),
                         op: e.initiatorType
                           ? `resource.${e.initiatorType}`
                           : "resource.other",
@@ -36783,7 +36759,7 @@ Error:`,
             }),
             (T = Math.max(o.length - 1, 0)),
             (function (t) {
-              let e = R.m.navigator;
+              let e = d.m.navigator;
               if (!e) return;
               let a = e.connection;
               a &&
@@ -36803,7 +36779,7 @@ Error:`,
                     String(e.hardwareConcurrency),
                   );
             })(t),
-            "pageload" === d)
+            "pageload" === R)
           ) {
             var h;
             (function (t) {
@@ -36877,7 +36853,7 @@ Error:`,
       },
       423850: function (t, e, a) {
         "use strict";
-        a.d(e, { D: () => f, N: () => d });
+        a.d(e, { D: () => f, N: () => R });
         var r = a(263449),
           _ = a(696486),
           n = a(988097),
@@ -36889,8 +36865,8 @@ Error:`,
           l = a(501684),
           u = a(108185);
         let I = [],
-          R = new Map();
-        function d() {
+          d = new Map();
+        function R() {
           if ((0, u.QV)() && i.Z1) {
             let t = (0, l.YF)(({ metric: t }) => {
               let e,
@@ -36901,40 +36877,40 @@ Error:`,
               );
               if (!l) return;
               let { interactionId: I } = l,
-                d = N[l.name],
+                R = N[l.name],
                 f = a.getOptions(),
                 A = (0, u.XL)(i.Z1 + l.startTime),
                 T = (0, u.XL)(t.value),
                 p = (0, r.nZ)(),
                 L = (0, _.HN)(),
                 h = L ? (0, _.Gx)(L) : void 0,
-                O = (null != I ? R.get(I) : void 0) || h,
+                O = (null != I ? d.get(I) : void 0) || h,
                 P = O
                   ? (0, _.XU)(O).description
                   : p.getScopeData().transactionName,
                 g = p.getUser(),
                 D = a.getIntegrationByName("Replay"),
                 C = D && D.getReplayId(),
-                v = void 0 !== g ? g.email || g.id || g.ip_address : void 0;
+                m = void 0 !== g ? g.email || g.id || g.ip_address : void 0;
               try {
                 e = p.getScopeData().contexts.profile.profile_id;
               } catch (t) {}
-              let m = (0, c.Rt)(l.target),
+              let v = (0, c.Rt)(l.target),
                 y = (0, s.Jr)({
                   release: f.release,
                   environment: f.environment,
                   transaction: P,
                   [n.JQ]: t.value,
                   [n.S3]: "auto.http.browser.inp",
-                  user: v || void 0,
+                  user: m || void 0,
                   profile_id: e || void 0,
                   replay_id: C || void 0,
                   "user_agent.original":
                     E.m.navigator && E.m.navigator.userAgent,
                 }),
                 S = (0, o.qp)({
-                  name: m,
-                  op: `ui.interaction.${d}`,
+                  name: v,
+                  op: `ui.interaction.${R}`,
                   attributes: y,
                   startTime: A,
                   experimental: { standalone: !0 },
@@ -36983,12 +36959,12 @@ Error:`,
             t.forEach((t) => {
               if (!(0, l.cN)(t) || !a) return;
               let e = t.interactionId;
-              if (null != e && !R.has(e)) {
+              if (null != e && !d.has(e)) {
                 if (I.length > 10) {
                   let t = I.shift();
-                  R.delete(t);
+                  d.delete(t);
                 }
-                I.push(e), R.set(e, a);
+                I.push(e), d.set(e, a);
               }
             });
           };
@@ -37013,8 +36989,8 @@ Error:`,
           l = a(795927),
           u = a(661129),
           I = a(231550),
-          R = a(428983),
-          d = a(622574),
+          d = a(428983),
+          R = a(622574),
           N = a(288570);
         let f = {},
           A = {};
@@ -37022,13 +36998,13 @@ Error:`,
           return S("cls", t, D, r, e);
         }
         function p(t, e = !1) {
-          return S("lcp", t, v, n, e);
+          return S("lcp", t, m, n, e);
         }
         function L(t) {
           return S("fid", t, C, _);
         }
         function h(t) {
-          return S("ttfb", t, m, o);
+          return S("ttfb", t, v, o);
         }
         function O(t) {
           return S("inp", t, y, i);
@@ -37040,7 +37016,7 @@ Error:`,
               ((function (t) {
                 let e = {};
                 "event" === t && (e.durationThreshold = 0),
-                  (0, d.N)(
+                  (0, R.N)(
                     t,
                     (e) => {
                       g(t, { entries: e });
@@ -37082,15 +37058,15 @@ Error:`,
             g("fid", { metric: t }), (_ = t);
           });
         }
-        function v() {
-          return (0, R.N)(
+        function m() {
+          return (0, d.N)(
             (t) => {
               g("lcp", { metric: t }), (n = t);
             },
             { reportAllChanges: !0 },
           );
         }
-        function m() {
+        function v() {
           return (0, N.m)((t) => {
             g("ttfb", { metric: t }), (o = t);
           });
@@ -37223,12 +37199,12 @@ Error:`,
                 I = (t) => {
                   t.forEach(u);
                 },
-                R = (0, o.N)("first-input", I);
+                d = (0, o.N)("first-input", I);
               (a = (0, r._)(t, l, E, e.reportAllChanges)),
-                R &&
+                d &&
                   (0, i.u)(
                     (0, c.R)(() => {
-                      I(R.takeRecords()), R.disconnect();
+                      I(d.takeRecords()), d.disconnect();
                     }),
                   );
             });
@@ -37248,7 +37224,7 @@ Error:`,
           l = () => (0, c.U)() - 0,
           u = [],
           I = {},
-          R = (t) => {
+          d = (t) => {
             let e = u[u.length - 1],
               a = I[t.interactionId];
             if (a || u.length < 10 || (e && t.duration > e.latency)) {
@@ -37269,7 +37245,7 @@ Error:`,
                 });
             }
           },
-          d = () => {
+          R = () => {
             let t = Math.min(u.length - 1, Math.floor(l() / 50));
             return u[t];
           },
@@ -37280,7 +37256,7 @@ Error:`,
               let s = (0, n.I)("INP"),
                 I = (t) => {
                   t.forEach((t) => {
-                    t.interactionId && R(t),
+                    t.interactionId && d(t),
                       "first-input" === t.entryType &&
                         (u.some((e) =>
                           e.entries.some(
@@ -37289,9 +37265,9 @@ Error:`,
                               t.startTime === e.startTime,
                           ),
                         ) ||
-                          R(t));
+                          d(t));
                   });
-                  let e = d();
+                  let e = R();
                   e &&
                     e.latency !== s.value &&
                     ((s.value = e.latency), (s.entries = e.entries), a());
@@ -37317,7 +37293,7 @@ Error:`,
       },
       428983: function (t, e, a) {
         "use strict";
-        a.d(e, { N: () => R });
+        a.d(e, { N: () => d });
         var r = a(395848),
           _ = a(140955),
           n = a(202937),
@@ -37329,25 +37305,25 @@ Error:`,
           l = a(662355);
         let u = [2500, 4e3],
           I = {},
-          R = (t, e = {}) => {
+          d = (t, e = {}) => {
             (0, l.A)(() => {
               let a,
                 l = (0, o.Y)(),
-                R = (0, i.I)("LCP"),
-                d = (t) => {
+                d = (0, i.I)("LCP"),
+                R = (t) => {
                   let e = t[t.length - 1];
                   e &&
                     e.startTime < l.firstHiddenTime &&
-                    ((R.value = Math.max(e.startTime - (0, n.A)(), 0)),
-                    (R.entries = [e]),
+                    ((d.value = Math.max(e.startTime - (0, n.A)(), 0)),
+                    (d.entries = [e]),
                     a());
                 },
-                N = (0, c.N)("largest-contentful-paint", d);
+                N = (0, c.N)("largest-contentful-paint", R);
               if (N) {
-                a = (0, _._)(t, R, u, e.reportAllChanges);
+                a = (0, _._)(t, d, u, e.reportAllChanges);
                 let n = (0, E.R)(() => {
-                  I[R.id] ||
-                    (d(N.takeRecords()), N.disconnect(), (I[R.id] = !0), a(!0));
+                  I[d.id] ||
+                    (R(N.takeRecords()), N.disconnect(), (I[d.id] = !0), a(!0));
                 });
                 ["keydown", "click"].forEach((t) => {
                   r.m.document &&
@@ -37626,8 +37602,8 @@ Error:`,
           l = s.navigator,
           u = "Report a Bug",
           I = "Cancel",
-          R = "Send Bug Report",
-          d = "Confirm",
+          d = "Send Bug Report",
+          R = "Confirm",
           N = "Report a Bug",
           f = "your.email@example.org",
           A = "Email",
@@ -37671,8 +37647,8 @@ Error:`,
                 });
             });
           },
-          v = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function m(t, e) {
+          m = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
+        function v(t, e) {
           return {
             ...t,
             ...e,
@@ -37769,7 +37745,7 @@ Error:`,
             themeDark: x = {},
             addScreenshotButtonLabel: F = g,
             cancelButtonLabel: V = I,
-            confirmButtonLabel: j = d,
+            confirmButtonLabel: j = R,
             emailLabel: X = A,
             emailPlaceholder: $ = f,
             formTitle: q = N,
@@ -37779,7 +37755,7 @@ Error:`,
             nameLabel: Q = h,
             namePlaceholder: tt = L,
             removeScreenshotButtonLabel: te = D,
-            submitButtonLabel: ta = R,
+            submitButtonLabel: ta = d,
             successMessageText: tr = O,
             triggerLabel: t_ = u,
             triggerAriaLabel: tn = "",
@@ -37827,7 +37803,7 @@ Error:`,
               },
               tu = null,
               tI = [],
-              tR = (t) => {
+              td = (t) => {
                 if (!tu) {
                   let e = E.createElement("div");
                   (e.id = String(t.id)),
@@ -37877,7 +37853,7 @@ ${
                 }
                 return tu;
               },
-              td = async (e, a, _) => {
+              tR = async (e, a, _) => {
                 let n = (0, r.s3)(),
                   o = n && n.getIntegrationByName(e);
                 if (o) return o;
@@ -37897,9 +37873,9 @@ ${
                     ) &&
                     !!isSecureContext,
                   [_, n] = await Promise.all([
-                    td("FeedbackModal", e, "feedbackModalIntegration"),
+                    tR("FeedbackModal", e, "feedbackModalIntegration"),
                     r
-                      ? td(
+                      ? tR(
                           "FeedbackScreenshot",
                           a,
                           "feedbackScreenshotIntegration",
@@ -37908,7 +37884,7 @@ ${
                   ]);
                 if (!_)
                   throw (
-                    (v &&
+                    (m &&
                       i.kg.error(
                         "[Feedback] Missing feedback modal integration. Try using `feedbackSyncIntegration` in your `Sentry.init`.",
                       ),
@@ -37917,7 +37893,7 @@ ${
                 return (
                   r &&
                     !n &&
-                    v &&
+                    m &&
                     i.kg.error(
                       "[Feedback] Missing feedback screenshot integration. Proceeding without screenshots.",
                     ),
@@ -37925,12 +37901,12 @@ ${
                     options: t,
                     screenshotIntegration: r ? n : void 0,
                     sendFeedback: C,
-                    shadow: tR(t),
+                    shadow: td(t),
                   })
                 );
               },
               tf = (t, e = {}) => {
-                let a = m(tl, e),
+                let a = v(tl, e),
                   r =
                     "string" == typeof t
                       ? E.querySelector(t)
@@ -37939,7 +37915,7 @@ ${
                         : null;
                 if (!r)
                   throw (
-                    (v &&
+                    (m &&
                       i.kg.error(
                         "[Feedback] Unable to attach to target element",
                       ),
@@ -37971,8 +37947,8 @@ ${
                 return tI.push(o), o;
               },
               tA = (t = {}) => {
-                let e = m(tl, t),
-                  a = tR(e),
+                let e = v(tl, t),
+                  a = td(e),
                   r = (function ({
                     triggerLabel: t,
                     triggerAriaLabel: e,
@@ -38131,10 +38107,10 @@ ${
               },
               attachTo: tf,
               createWidget(t = {}) {
-                let e = tA(m(tl, t));
+                let e = tA(v(tl, t));
                 return e.appendToDom(), e;
               },
-              createForm: async (t = {}) => tN(m(tl, t)),
+              createForm: async (t = {}) => tN(v(tl, t)),
               remove() {
                 tu &&
                   (tu.parentElement && tu.parentElement.remove(), (tu = null)),
@@ -38283,8 +38259,8 @@ ${
           var l,
             u,
             I,
-            R,
             d,
+            R,
             N = (r && r.__k) || V,
             f = e.length;
           for (
@@ -38396,11 +38372,11 @@ ${
               ((u = -1 === I.__i ? F : N[I.__i] || F),
               (I.__i = l),
               tc(t, I, u, _, n, o, i, c, s, E),
-              (R = I.__e),
+              (d = I.__e),
               I.ref &&
                 u.ref != I.ref &&
-                (u.ref && tE(u.ref, null, I), E.push(I.ref, I.__c || R, I)),
-              null == d && null != R && (d = R),
+                (u.ref && tE(u.ref, null, I), E.push(I.ref, I.__c || d, I)),
+              null == R && null != d && (R = d),
               65536 & I.__u || u.__k === I.__k
                 ? (c = (function t(e, a, r) {
                     var _, n;
@@ -38417,10 +38393,10 @@ ${
                   })(I, c, t))
                 : "function" == typeof I.type && void 0 !== I.__d
                   ? (c = I.__d)
-                  : R && (c = R.nextSibling),
+                  : d && (c = d.nextSibling),
               (I.__d = void 0),
               (I.__u &= -196609));
-          (a.__d = c), (a.__e = d);
+          (a.__d = c), (a.__e = R);
         }
         function t_(t, e, a) {
           "-" === e[0]
@@ -38494,8 +38470,8 @@ ${
             l,
             u,
             I,
-            R,
             d,
+            R,
             N,
             f,
             A,
@@ -38535,7 +38511,7 @@ ${
                   (l.__s == l.state && (l.__s = $({}, l.__s)),
                   $(l.__s, g.getDerivedStateFromProps(f, l.__s))),
                 (I = l.props),
-                (R = l.state),
+                (d = l.state),
                 (l.__v = e),
                 u)
               )
@@ -38575,7 +38551,7 @@ ${
                   l.componentWillUpdate(f, l.__s, T),
                   null != l.componentDidUpdate &&
                     l.__h.push(function () {
-                      l.componentDidUpdate(I, R, d);
+                      l.componentDidUpdate(I, d, R);
                     });
               }
               if (
@@ -38610,7 +38586,7 @@ ${
                   (r = $($({}, r), l.getChildContext())),
                 u ||
                   null == l.getSnapshotBeforeUpdate ||
-                  (d = l.getSnapshotBeforeUpdate(I, R)),
+                  (R = l.getSnapshotBeforeUpdate(I, d)),
                 tr(
                   t,
                   X(
@@ -38653,8 +38629,8 @@ ${
                     l,
                     u,
                     I,
-                    R,
                     d,
+                    R,
                     N = a.props,
                     f = e.props,
                     A = e.type;
@@ -38703,9 +38679,9 @@ ${
                           : "dangerouslySetInnerHTML" == s
                             ? (E = I)
                             : "value" == s
-                              ? (R = I)
+                              ? (d = I)
                               : "checked" == s
-                                ? (d = I)
+                                ? (R = I)
                                 : "key" === s ||
                                   (i && "function" != typeof I) ||
                                   N[s] === I ||
@@ -38737,13 +38713,13 @@ ${
                       for (s = n.length; s--; ) null != n[s] && q(n[s]);
                     i ||
                       ((s = "value"),
-                      void 0 === R ||
-                        (R === t[s] &&
-                          ("progress" !== A || R) &&
-                          ("option" !== A || R === N[s])) ||
-                        tn(t, s, R, N[s], !1),
+                      void 0 === d ||
+                        (d === t[s] &&
+                          ("progress" !== A || d) &&
+                          ("option" !== A || d === N[s])) ||
+                        tn(t, s, d, N[s], !1),
                       (s = "checked"),
-                      void 0 !== d && d !== t[s] && tn(t, s, d, N[s], !1));
+                      void 0 !== R && R !== t[s] && tn(t, s, R, N[s], !1));
                   }
                   return t;
                 })(a.__e, e, a, r, _, n, o, c, s));
@@ -38842,8 +38818,8 @@ ${
           }),
           (ta.__r = 0);
         var tI,
-          tR,
           td,
+          tR,
           tN,
           tf = 0,
           tA = [],
@@ -38856,14 +38832,14 @@ ${
           tg = tp.unmount,
           tD = tp.__;
         function tC(t, e) {
-          tp.__h && tp.__h(tR, t, tf || e), (tf = 0);
-          var a = tR.__H || (tR.__H = { __: [], __h: [] });
+          tp.__h && tp.__h(td, t, tf || e), (tf = 0);
+          var a = td.__H || (td.__H = { __: [], __h: [] });
           return t >= a.__.length && a.__.push({ __V: tT }), a.__[t];
         }
-        function tv(t) {
-          return (tf = 1), tm(tB, t);
+        function tm(t) {
+          return (tf = 1), tv(tB, t);
         }
-        function tm(t, e, a) {
+        function tv(t, e, a) {
           var r = tC(tI++, 2);
           if (
             ((r.t = t),
@@ -38876,8 +38852,8 @@ ${
                   e !== a && ((r.__N = [a, r.__[1]]), r.__c.setState({}));
                 },
               ]),
-              (r.__c = tR),
-              !tR.u))
+              (r.__c = td),
+              !td.u))
           ) {
             var _ = function (t, e, a) {
               if (!r.__c.__H) return !0;
@@ -38901,23 +38877,23 @@ ${
                 !(!o && r.__c.props === t) && (!n || n.call(this, t, e, a))
               );
             };
-            tR.u = !0;
-            var n = tR.shouldComponentUpdate,
-              o = tR.componentWillUpdate;
-            (tR.componentWillUpdate = function (t, e, a) {
+            td.u = !0;
+            var n = td.shouldComponentUpdate,
+              o = td.componentWillUpdate;
+            (td.componentWillUpdate = function (t, e, a) {
               if (this.__e) {
                 var r = n;
                 (n = void 0), _(t, e, a), (n = r);
               }
               o && o.call(this, t, e, a);
             }),
-              (tR.shouldComponentUpdate = _);
+              (td.shouldComponentUpdate = _);
           }
           return r.__N || r.__;
         }
         function ty(t, e) {
           var a = tC(tI++, 4);
-          !tp.__s && tM(a.__H, e) && ((a.__ = t), (a.i = e), tR.__h.push(a));
+          !tp.__s && tM(a.__H, e) && ((a.__ = t), (a.i = e), td.__h.push(a));
         }
         function tS(t, e) {
           var a = tC(tI++, 7);
@@ -38943,18 +38919,18 @@ ${
               }
         }
         (tp.__b = function (t) {
-          (tR = null), tL && tL(t);
+          (td = null), tL && tL(t);
         }),
           (tp.__ = function (t, e) {
             e.__k && e.__k.__m && (t.__m = e.__k.__m), tD && tD(t, e);
           }),
           (tp.__r = function (t) {
             th && th(t), (tI = 0);
-            var e = (tR = t.__c).__H;
+            var e = (td = t.__c).__H;
             e &&
-              (td === tR
+              (tR === td
                 ? ((e.__h = []),
-                  (tR.__h = []),
+                  (td.__h = []),
                   e.__.forEach(function (t) {
                     t.__N && (t.__ = t.__N),
                       (t.__V = tT),
@@ -38964,7 +38940,7 @@ ${
                   e.__h.forEach(tw),
                   (e.__h = []),
                   (tI = 0))),
-              (td = tR);
+              (tR = td);
           }),
           (tp.diffed = function (t) {
             tO && tO(t);
@@ -38992,7 +38968,7 @@ ${
                   (t.i = void 0),
                   (t.__V = tT);
               })),
-              (td = tR = null);
+              (tR = td = null);
           }),
           (tp.__c = function (t, e) {
             e.some(function (t) {
@@ -39029,13 +39005,13 @@ ${
           });
         var tG = "function" == typeof requestAnimationFrame;
         function tW(t) {
-          var e = tR,
+          var e = td,
             a = t.__c;
-          "function" == typeof a && ((t.__c = void 0), a()), (tR = e);
+          "function" == typeof a && ((t.__c = void 0), a()), (td = e);
         }
         function tw(t) {
-          var e = tR;
-          (t.__c = t.__()), (tR = e);
+          var e = td;
+          (t.__c = t.__()), (td = e);
         }
         function tM(t, e) {
           return (
@@ -39053,12 +39029,12 @@ ${
             __proto__: null,
             useCallback: tU,
             useContext: function (t) {
-              var e = tR.context[t.__c],
+              var e = td.context[t.__c],
                 a = tC(tI++, 9);
               return (
                 (a.c = t),
                 e
-                  ? (null == a.__ && ((a.__ = !0), e.sub(tR)), e.props.value)
+                  ? (null == a.__ && ((a.__ = !0), e.sub(td)), e.props.value)
                   : t.__
               );
             },
@@ -39069,15 +39045,15 @@ ${
               var a = tC(tI++, 3);
               !tp.__s &&
                 tM(a.__H, e) &&
-                ((a.__ = t), (a.i = e), tR.__H.__h.push(a));
+                ((a.__ = t), (a.i = e), td.__H.__h.push(a));
             },
             useErrorBoundary: function (t) {
               var e = tC(tI++, 10),
-                a = tv();
+                a = tm();
               return (
                 (e.__ = t),
-                tR.componentDidCatch ||
-                  (tR.componentDidCatch = function (t, r) {
+                td.componentDidCatch ||
+                  (td.componentDidCatch = function (t, r) {
                     e.__ && e.__(t, r), a[1](t);
                   }),
                 [
@@ -39091,7 +39067,7 @@ ${
             useId: function () {
               var t = tC(tI++, 11);
               if (!t.__) {
-                for (var e = tR.__v; null !== e && !e.__m && null !== e.__; )
+                for (var e = td.__v; null !== e && !e.__m && null !== e.__; )
                   e = e.__;
                 var a = e.__m || (e.__m = [0, 0]);
                 t.__ = "P" + a[0] + "-" + a[1]++;
@@ -39119,7 +39095,7 @@ ${
             },
             useLayoutEffect: ty,
             useMemo: tS,
-            useReducer: tm,
+            useReducer: tv,
             useRef: function (t) {
               return (
                 (tf = 5),
@@ -39128,7 +39104,7 @@ ${
                 }, [])
               );
             },
-            useState: tv,
+            useState: tm,
           },
           tH =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
@@ -39197,8 +39173,8 @@ ${
               tags: l,
               addScreenshotButtonLabel: u,
               removeScreenshotButtonLabel: I,
-              cancelButtonLabel: R,
-              emailLabel: d,
+              cancelButtonLabel: d,
+              emailLabel: R,
               emailPlaceholder: N,
               isEmailRequired: f,
               isNameRequired: A,
@@ -39209,12 +39185,12 @@ ${
               submitButtonLabel: O,
               isRequiredLabel: P,
             } = t,
-            [g, D] = tv(null),
-            [C, m] = tv(!1),
+            [g, D] = tm(null),
+            [C, v] = tm(!1),
             y = E && E.input,
-            [S, U] = tv(null),
+            [S, U] = tm(null),
             b = tU((t) => {
-              U(t), m(!1);
+              U(t), v(!1);
             }, []),
             G = tU(
               (t) => {
@@ -39227,7 +39203,7 @@ ${
                     a
                   );
                 })(t, {
-                  emailLabel: d,
+                  emailLabel: R,
                   isEmailRequired: f,
                   isNameRequired: A,
                   messageLabel: T,
@@ -39242,7 +39218,7 @@ ${
                   0 === e.length
                 );
               },
-              [d, f, A, T, L],
+              [R, f, A, T, L],
             );
           return z(
             "form",
@@ -39278,7 +39254,7 @@ ${
                       ),
                         n(r);
                     } catch (t) {
-                      v && i.kg.error(t), D(t), o(t);
+                      m && i.kg.error(t), D(t), o(t);
                     }
                   } catch (t) {}
                 },
@@ -39366,7 +39342,7 @@ ${
                         __source: { fileName: tk, lineNumber: 171 },
                       },
                       z(tV, {
-                        label: d,
+                        label: R,
                         isRequiredLabel: P,
                         isRequired: f,
                         __self: this,
@@ -39434,7 +39410,7 @@ ${
                           class: "btn btn--default",
                           type: "button",
                           onClick: () => {
-                            U(null), m((t) => !t);
+                            U(null), v((t) => !t);
                           },
                           __self: this,
                           __source: { fileName: tk, lineNumber: 202 },
@@ -39481,7 +39457,7 @@ ${
                     __self: this,
                     __source: { fileName: tk, lineNumber: 220 },
                   },
-                  R,
+                  d,
                 ),
               ),
             ),
@@ -39554,7 +39530,7 @@ ${
               }),
               [],
             ),
-            [n, o] = tv(null),
+            [n, o] = tm(null),
             i = tU(() => {
               n && (clearTimeout(n), o(null)), e();
             }, [n]),
@@ -40215,7 +40191,7 @@ ${tZ}
                       l = e.useRef(null),
                       u = e.useRef(null),
                       I = e.useRef(null),
-                      [R, d] = e.useState({
+                      [d, R] = e.useState({
                         startX: 0,
                         startY: 0,
                         endX: 0,
@@ -40238,7 +40214,7 @@ ${tZ}
                       r &&
                         ((r.style.width = `${e.width}px`),
                         (r.style.height = `${e.height}px`)),
-                        d({
+                        R({
                           startX: 0,
                           startY: 0,
                           endX: e.width,
@@ -40266,7 +40242,7 @@ ${tZ}
                         let e = t.getContext("2d");
                         if (!e) return;
                         let r = t2(t3(a)),
-                          _ = t2(R);
+                          _ = t2(d);
                         e.clearRect(0, 0, r.width, r.height),
                           (e.fillStyle = "rgba(0, 0, 0, 0.5)"),
                           e.fillRect(0, 0, r.width, r.height),
@@ -40287,7 +40263,7 @@ ${tZ}
                             _.width - 6,
                             _.height - 6,
                           );
-                      }, [R]);
+                      }, [d]);
                     let h = e.useCallback(
                         (t) =>
                           function (e) {
@@ -40298,14 +40274,14 @@ ${tZ}
                               n = e.clientY - r.y;
                             switch (t) {
                               case "top-left":
-                                d((t) => ({
+                                R((t) => ({
                                   ...t,
                                   startX: Math.min(Math.max(0, _), t.endX - 33),
                                   startY: Math.min(Math.max(0, n), t.endY - 33),
                                 }));
                                 break;
                               case "top-right":
-                                d((t) => ({
+                                R((t) => ({
                                   ...t,
                                   endX: Math.max(
                                     Math.min(_, a.width / t1),
@@ -40315,7 +40291,7 @@ ${tZ}
                                 }));
                                 break;
                               case "bottom-left":
-                                d((t) => ({
+                                R((t) => ({
                                   ...t,
                                   startX: Math.min(Math.max(0, _), t.endX - 33),
                                   endY: Math.max(
@@ -40325,7 +40301,7 @@ ${tZ}
                                 }));
                                 break;
                               case "bottom-right":
-                                d((t) => ({
+                                R((t) => ({
                                   ...t,
                                   endX: Math.max(
                                     Math.min(_, a.width / t1),
@@ -40408,7 +40384,7 @@ ${tZ}
                                     if (!e) return;
                                     let a = t.clientX - O.current.initialX,
                                       r = t.clientY - O.current.initialY;
-                                    d((_) => {
+                                    R((_) => {
                                       let n = Math.max(
                                           0,
                                           Math.min(
@@ -40453,32 +40429,32 @@ ${tZ}
                               __source: { fileName: t0, lineNumber: 319 },
                             }),
                             t(c, {
-                              left: R.startX - 3,
-                              top: R.startY - 3,
+                              left: d.startX - 3,
+                              top: d.startY - 3,
                               onGrabButton: L,
                               corner: "top-left",
                               __self: this,
                               __source: { fileName: t0, lineNumber: 324 },
                             }),
                             t(c, {
-                              left: R.endX - 30 + 3,
-                              top: R.startY - 3,
+                              left: d.endX - 30 + 3,
+                              top: d.startY - 3,
                               onGrabButton: L,
                               corner: "top-right",
                               __self: this,
                               __source: { fileName: t0, lineNumber: 330 },
                             }),
                             t(c, {
-                              left: R.startX - 3,
-                              top: R.endY - 30 + 3,
+                              left: d.startX - 3,
+                              top: d.endY - 30 + 3,
                               onGrabButton: L,
                               corner: "bottom-left",
                               __self: this,
                               __source: { fileName: t0, lineNumber: 336 },
                             }),
                             t(c, {
-                              left: R.endX - 30 + 3,
-                              top: R.endY - 30 + 3,
+                              left: d.endX - 30 + 3,
+                              top: d.endY - 30 + 3,
                               onGrabButton: L,
                               corner: "bottom-right",
                               __self: this,
@@ -40488,8 +40464,8 @@ ${tZ}
                               "div",
                               {
                                 style: {
-                                  left: Math.max(0, R.endX - 191),
-                                  top: Math.max(0, R.endY + 8),
+                                  left: Math.max(0, d.endX - 191),
+                                  top: Math.max(0, d.endY + 8),
                                   display: N ? "flex" : "none",
                                 },
                                 class: "editor__crop-btn-group",
@@ -40502,7 +40478,7 @@ ${tZ}
                                   onClick: (t) => {
                                     t.preventDefault(),
                                       I.current &&
-                                        d({
+                                        R({
                                           startX: 0,
                                           startY: 0,
                                           endX: I.current.width / t1,
@@ -40524,7 +40500,7 @@ ${tZ}
                                       (function () {
                                         let t = E.createElement("canvas"),
                                           e = t2(t3(a)),
-                                          r = t2(R);
+                                          r = t2(d);
                                         (t.width = r.width * t1),
                                           (t.height = r.height * t1);
                                         let _ = t.getContext("2d");
@@ -40662,7 +40638,7 @@ ${tZ}
             () => I(t, e, n || {}, !0)
           );
         }
-        function R(t, e, a) {
+        function d(t, e, a) {
           try {
             if (!(e in t)) return () => {};
             let r = t[e],
@@ -40682,7 +40658,7 @@ ${tZ}
             return () => {};
           }
         }
-        function d(t, e, a, r, _) {
+        function R(t, e, a, r, _) {
           if (!t) return !1;
           let n = t
             ? t.nodeType === t.ELEMENT_NODE
@@ -40777,7 +40753,7 @@ ${tZ}
         let D = new Map(),
           C = (t, e, a) => {
             let r;
-            if (!t || !(m(t, e) || "object" == typeof t)) return;
+            if (!t || !(v(t, e) || "object" == typeof t)) return;
             let _ = t.constructor.name,
               n =
                 ((r = D.get(a)) || ((r = new Map()), D.set(a, r)),
@@ -40786,7 +40762,7 @@ ${tZ}
               o = n.indexOf(t);
             return -1 === o && ((o = n.length), n.push(t)), o;
           },
-          v = (t, e, a) =>
+          m = (t, e, a) =>
             t.map((t) =>
               (function t(e, a, r) {
                 if (e instanceof Array) return e.map((e) => t(e, a, r));
@@ -40824,12 +40800,12 @@ ${tZ}
                     rr_type: e.constructor.name,
                     args: [t(e.data, a, r), e.width, e.height],
                   };
-                else if (m(e, a) || "object" == typeof e)
+                else if (v(e, a) || "object" == typeof e)
                   return { rr_type: e.constructor.name, index: C(e, a, r) };
                 return e;
               })(t, e, a),
             ),
-          m = (t, e) =>
+          v = (t, e) =>
             !![
               "WebGLActiveInfo",
               "WebGLBuffer",
@@ -40848,12 +40824,12 @@ ${tZ}
         function y(t, e, a, r, _) {
           let n = [];
           try {
-            let o = R(
+            let o = d(
               t.HTMLCanvasElement.prototype,
               "getContext",
               function (t) {
                 return function (n, ...o) {
-                  if (!d(this, e, a, r, !0)) {
+                  if (!R(this, e, a, r, !0)) {
                     let t = "experimental-webgl" === n ? "webgl" : n;
                     if (
                       ("__context" in this || (this.__context = t),
@@ -40892,14 +40868,14 @@ ${tZ}
             )
               try {
                 if ("function" != typeof t[o]) continue;
-                let s = R(t, o, function (t) {
+                let s = d(t, o, function (t) {
                   return function (...c) {
                     let s = t.apply(this, c);
                     if (
                       (C(s, i, this),
-                      "tagName" in this.canvas && !d(this.canvas, r, _, n, !0))
+                      "tagName" in this.canvas && !R(this.canvas, r, _, n, !0))
                     ) {
-                      let t = v(c, i, this),
+                      let t = m(c, i, this),
                         r = { type: e, property: o, args: t };
                       a(this.canvas, r);
                     }
@@ -41118,15 +41094,15 @@ ${tZ}
                       typeof e.CanvasRenderingContext2D.prototype[o]
                     )
                       continue;
-                    let i = R(
+                    let i = d(
                       e.CanvasRenderingContext2D.prototype,
                       o,
                       function (n) {
                         return function (...i) {
                           return (
-                            d(this.canvas, a, r, _, !0) ||
+                            R(this.canvas, a, r, _, !0) ||
                               T(() => {
-                                let a = v(i, e, this);
+                                let a = m(i, e, this);
                                 t(this.canvas, {
                                   type: p["2D"],
                                   property: o,
@@ -41218,7 +41194,7 @@ ${tZ}
                 let e = [],
                   n = (t) => {
                     t.querySelectorAll("canvas").forEach((t) => {
-                      d(t, a, r, _, !0) || e.push(t);
+                      R(t, a, r, _, !0) || e.push(t);
                     });
                   };
                 for (let t of this.windows) {
@@ -41391,8 +41367,8 @@ ${tZ}
           l,
           u,
           I,
-          R,
           d,
+          R,
           N,
           f = a(505676),
           A = a(507690),
@@ -41405,8 +41381,8 @@ ${tZ}
           g = a(988097),
           D = a(820754),
           C = a(899517),
-          v = a(202811),
-          m = a(370336),
+          m = a(202811),
+          v = a(370336),
           y = a(467510),
           S = a(101284),
           U = a(622916),
@@ -41499,7 +41475,7 @@ ${tZ}
             );
           return e || t.cssText;
         }
-        ((s = d || (d = {}))[(s.Document = 0)] = "Document"),
+        ((s = R || (R = {}))[(s.Document = 0)] = "Document"),
           (s[(s.DocumentType = 1)] = "DocumentType"),
           (s[(s.Element = 2)] = "Element"),
           (s[(s.Text = 3)] = "Text"),
@@ -41639,15 +41615,15 @@ ${tZ}
         }
         let tu = 1,
           tI = RegExp("[^a-z0-9-_:]");
-        function tR() {
+        function td() {
           return tu++;
         }
-        let td = /url\((?:(')([^']*)'|(")(.*?)"|([^)]*))\)/gm,
+        let tR = /url\((?:(')([^']*)'|(")(.*?)"|([^)]*))\)/gm,
           tN = /^(?:[a-z+]+:)?\/\//i,
           tf = /^www\..*/i,
           tA = /^(data:)([^,]*),(.*)/i;
         function tT(t, e) {
-          return (t || "").replace(td, (t, a, r, _, n, o) => {
+          return (t || "").replace(tR, (t, a, r, _, n, o) => {
             let i = r || n || o,
               c = a || _ || "";
             if (!i) return t;
@@ -41760,7 +41736,7 @@ ${tZ}
             }
           };
         }
-        function tv(t, e, a, r, _, n) {
+        function tm(t, e, a, r, _, n) {
           try {
             let o = t.nodeType === t.ELEMENT_NODE ? t : t.parentElement;
             if (null === o) return !1;
@@ -41792,7 +41768,7 @@ ${tZ}
           } catch (t) {}
           return !!n;
         }
-        function tm(t) {
+        function tv(t) {
           return null == t ? "" : t.toLowerCase();
         }
         function ty(t, e) {
@@ -41807,7 +41783,7 @@ ${tZ}
               maskTextClass: l,
               unmaskTextClass: u,
               maskTextSelector: I,
-              unmaskTextSelector: R,
+              unmaskTextSelector: d,
               skipChild: N = !1,
               inlineStylesheet: f = !0,
               maskInputOptions: A = {},
@@ -41820,8 +41796,8 @@ ${tZ}
               recordCanvas: g = !1,
               onSerialize: D,
               onIframeLoad: C,
-              iframeLoadTimeout: v = 5e3,
-              onStylesheetLoad: m,
+              iframeLoadTimeout: m = 5e3,
+              onStylesheetLoad: v,
               stylesheetLoadTimeout: y = 5e3,
               keepIframeSrcFn: S = () => !1,
               newlyAddedElement: U = !1,
@@ -41839,7 +41815,7 @@ ${tZ}
                   maskTextClass: l,
                   unmaskTextClass: u,
                   maskTextSelector: I,
-                  unmaskTextSelector: R,
+                  unmaskTextSelector: d,
                   inlineStylesheet: N,
                   maskInputOptions: f = {},
                   maskTextFn: A,
@@ -41859,14 +41835,14 @@ ${tZ}
                 case t.DOCUMENT_NODE:
                   if ("CSS1Compat" !== t.compatMode)
                     return {
-                      type: d.Document,
+                      type: R.Document,
                       childNodes: [],
                       compatMode: t.compatMode,
                     };
-                  return { type: d.Document, childNodes: [] };
+                  return { type: R.Document, childNodes: [] };
                 case t.DOCUMENT_TYPE_NODE:
                   return {
-                    type: d.DocumentType,
+                    type: R.DocumentType,
                     name: t.name,
                     publicId: t.publicId,
                     systemId: t.systemId,
@@ -41885,7 +41861,7 @@ ${tZ}
                         maskAttributeFn: l,
                         maskInputFn: u,
                         dataURLOptions: I = {},
-                        inlineImages: R,
+                        inlineImages: d,
                         recordCanvas: N,
                         keepIframeSrcFn: f,
                         newlyAddedElement: A = !1,
@@ -41916,8 +41892,8 @@ ${tZ}
                         return tI.test(e) ? "div" : e;
                       })(t),
                       C = {},
-                      v = t.attributes.length;
-                    for (let e = 0; e < v; e++) {
+                      m = t.attributes.length;
+                    for (let e = 0; e < m; e++) {
                       let a = t.attributes[e];
                       a.name &&
                         !tg(D, a.name, a.value) &&
@@ -41952,7 +41928,7 @@ ${tZ}
                         a = to(t, tr(D), e),
                         r = t.checked;
                       if ("submit" !== e && "button" !== e && a) {
-                        let r = tv(
+                        let r = tm(
                           t,
                           L,
                           O,
@@ -42008,7 +41984,7 @@ ${tZ}
                             (C.rr_dataURL = e);
                       }
                     }
-                    if ("img" === D && R) {
+                    if ("img" === D && d) {
                       r ||
                         (_ = (r = n.createElement("canvas")).getContext("2d"));
                       let e = t.crossOrigin;
@@ -42057,7 +42033,7 @@ ${tZ}
                       customElements.get(D) && (a = !0);
                     } catch (t) {}
                     return {
-                      type: d.Element,
+                      type: R.Element,
                       tagName: D,
                       attributes: C,
                       childNodes: [],
@@ -42086,7 +42062,7 @@ ${tZ}
                     maskTextClass: l,
                     unmaskTextClass: u,
                     maskTextSelector: I,
-                    unmaskTextSelector: R,
+                    unmaskTextSelector: d,
                   });
                 case t.TEXT_NODE:
                   return (function (t, e) {
@@ -42104,7 +42080,7 @@ ${tZ}
                       l = t.parentNode && t.parentNode.tagName,
                       u = t.textContent,
                       I = "STYLE" === l || void 0,
-                      R = "SCRIPT" === l || void 0,
+                      d = "SCRIPT" === l || void 0,
                       N = "TEXTAREA" === l || void 0;
                     if (I && u) {
                       try {
@@ -42128,11 +42104,11 @@ ${tZ}
                       }
                       u = tT(u, tO());
                     }
-                    R && (u = "SCRIPT_PLACEHOLDER");
-                    let f = tv(t, r, n, _, o, a);
+                    d && (u = "SCRIPT_PLACEHOLDER");
+                    let f = tm(t, r, n, _, o, a);
                     return (
                       I ||
-                        R ||
+                        d ||
                         N ||
                         !u ||
                         !f ||
@@ -42146,7 +42122,7 @@ ${tZ}
                       "OPTION" === l &&
                         u &&
                         (u = te({
-                          isMasked: tv(
+                          isMasked: tm(
                             t,
                             r,
                             n,
@@ -42159,7 +42135,7 @@ ${tZ}
                           maskInputFn: s,
                         })),
                       {
-                        type: d.Text,
+                        type: R.Text,
                         textContent: u || "",
                         isStyle: I,
                         rootId: E,
@@ -42170,17 +42146,17 @@ ${tZ}
                     maskTextClass: l,
                     unmaskTextClass: u,
                     maskTextSelector: I,
-                    unmaskTextSelector: R,
+                    unmaskTextSelector: d,
                     maskTextFn: A,
                     maskInputOptions: f,
                     maskInputFn: T,
                     rootId: g,
                   });
                 case t.CDATA_SECTION_NODE:
-                  return { type: d.CDATA, textContent: "", rootId: g };
+                  return { type: R.CDATA, textContent: "", rootId: g };
                 case t.COMMENT_NODE:
                   return {
-                    type: d.Comment,
+                    type: R.Comment,
                     textContent: t.textContent || "",
                     rootId: g,
                   };
@@ -42197,7 +42173,7 @@ ${tZ}
               maskTextClass: l,
               unmaskTextClass: u,
               maskTextSelector: I,
-              unmaskTextSelector: R,
+              unmaskTextSelector: d,
               inlineStylesheet: f,
               maskInputOptions: A,
               maskAttributeFn: T,
@@ -42213,8 +42189,8 @@ ${tZ}
           a = o.hasNode(t)
             ? o.getId(t)
             : !(function (t, e) {
-                  if (e.comment && t.type === d.Comment) return !0;
-                  if (t.type === d.Element) {
+                  if (e.comment && t.type === R.Comment) return !0;
+                  if (t.type === R.Element) {
                     if (
                       e.script &&
                       ("script" === t.tagName ||
@@ -42233,33 +42209,33 @@ ${tZ}
                       (("link" === t.tagName &&
                         "shortcut icon" === t.attributes.rel) ||
                         ("meta" === t.tagName &&
-                          (tm(t.attributes.name).match(
+                          (tv(t.attributes.name).match(
                             /^msapplication-tile(image|color)$/,
                           ) ||
-                            "application-name" === tm(t.attributes.name) ||
-                            "icon" === tm(t.attributes.rel) ||
-                            "apple-touch-icon" === tm(t.attributes.rel) ||
-                            "shortcut icon" === tm(t.attributes.rel))))
+                            "application-name" === tv(t.attributes.name) ||
+                            "icon" === tv(t.attributes.rel) ||
+                            "apple-touch-icon" === tv(t.attributes.rel) ||
+                            "shortcut icon" === tv(t.attributes.rel))))
                     )
                       return !0;
                     else if ("meta" === t.tagName) {
                       if (
                         e.headMetaDescKeywords &&
-                        tm(t.attributes.name).match(/^description|keywords$/)
+                        tv(t.attributes.name).match(/^description|keywords$/)
                       )
                         return !0;
                       else if (
                         e.headMetaSocial &&
-                        (tm(t.attributes.property).match(/^(og|twitter|fb):/) ||
-                          tm(t.attributes.name).match(/^(og|twitter):/) ||
-                          "pinterest" === tm(t.attributes.name))
+                        (tv(t.attributes.property).match(/^(og|twitter|fb):/) ||
+                          tv(t.attributes.name).match(/^(og|twitter):/) ||
+                          "pinterest" === tv(t.attributes.name))
                       )
                         return !0;
                       else if (
                         e.headMetaRobots &&
-                        ("robots" === tm(t.attributes.name) ||
-                          "googlebot" === tm(t.attributes.name) ||
-                          "bingbot" === tm(t.attributes.name))
+                        ("robots" === tv(t.attributes.name) ||
+                          "googlebot" === tv(t.attributes.name) ||
+                          "bingbot" === tv(t.attributes.name))
                       )
                         return !0;
                       else if (
@@ -42269,25 +42245,25 @@ ${tZ}
                         return !0;
                       else if (
                         e.headMetaAuthorship &&
-                        ("author" === tm(t.attributes.name) ||
-                          "generator" === tm(t.attributes.name) ||
-                          "framework" === tm(t.attributes.name) ||
-                          "publisher" === tm(t.attributes.name) ||
-                          "progid" === tm(t.attributes.name) ||
-                          tm(t.attributes.property).match(/^article:/) ||
-                          tm(t.attributes.property).match(/^product:/))
+                        ("author" === tv(t.attributes.name) ||
+                          "generator" === tv(t.attributes.name) ||
+                          "framework" === tv(t.attributes.name) ||
+                          "publisher" === tv(t.attributes.name) ||
+                          "progid" === tv(t.attributes.name) ||
+                          tv(t.attributes.property).match(/^article:/) ||
+                          tv(t.attributes.property).match(/^product:/))
                       )
                         return !0;
                       else if (
                         e.headMetaVerification &&
-                        ("google-site-verification" === tm(t.attributes.name) ||
-                          "yandex-verification" === tm(t.attributes.name) ||
-                          "csrf-token" === tm(t.attributes.name) ||
-                          "p:domain_verify" === tm(t.attributes.name) ||
-                          "verify-v1" === tm(t.attributes.name) ||
-                          "verification" === tm(t.attributes.name) ||
+                        ("google-site-verification" === tv(t.attributes.name) ||
+                          "yandex-verification" === tv(t.attributes.name) ||
+                          "csrf-token" === tv(t.attributes.name) ||
+                          "p:domain_verify" === tv(t.attributes.name) ||
+                          "verify-v1" === tv(t.attributes.name) ||
+                          "verification" === tv(t.attributes.name) ||
                           "shopify-checkout-api-token" ===
-                            tm(t.attributes.name))
+                            tv(t.attributes.name))
                       )
                         return !0;
                     }
@@ -42295,23 +42271,23 @@ ${tZ}
                   return !1;
                 })(G, h) &&
                 (b ||
-                  G.type !== d.Text ||
+                  G.type !== R.Text ||
                   G.isStyle ||
                   G.textContent.replace(/^\s+|\s+$/gm, "").length)
-              ? tR()
+              ? td()
               : -2;
           let W = Object.assign(G, { id: a });
           if ((o.add(t, W), -2 === a)) return null;
           D && D(t);
           let w = !N;
-          if (W.type === d.Element) {
+          if (W.type === R.Element) {
             (w = w && !W.needBlock), delete W.needBlock;
             let e = t.shadowRoot;
             e && z(e) && (W.isShadowHost = !0);
           }
-          if ((W.type === d.Document || W.type === d.Element) && w) {
+          if ((W.type === R.Document || W.type === R.Element) && w) {
             h.headWhitespace &&
-              W.type === d.Element &&
+              W.type === R.Element &&
               "head" === W.tagName &&
               (b = !1);
             let e = {
@@ -42324,7 +42300,7 @@ ${tZ}
               maskTextClass: l,
               unmaskTextClass: u,
               maskTextSelector: I,
-              unmaskTextSelector: R,
+              unmaskTextSelector: d,
               skipChild: N,
               inlineStylesheet: f,
               maskInputOptions: A,
@@ -42338,8 +42314,8 @@ ${tZ}
               preserveWhiteSpace: b,
               onSerialize: D,
               onIframeLoad: C,
-              iframeLoadTimeout: v,
-              onStylesheetLoad: m,
+              iframeLoadTimeout: m,
+              onStylesheetLoad: v,
               stylesheetLoadTimeout: y,
               keepIframeSrcFn: S,
             };
@@ -42359,7 +42335,7 @@ ${tZ}
               q(t.parentNode) &&
               z(t.parentNode) &&
               (W.isShadow = !0),
-            W.type === d.Element &&
+            W.type === R.Element &&
               "iframe" === W.tagName &&
               (function (t, e, a) {
                 let r,
@@ -42399,7 +42375,7 @@ ${tZ}
                       maskTextClass: l,
                       unmaskTextClass: u,
                       maskTextSelector: I,
-                      unmaskTextSelector: R,
+                      unmaskTextSelector: d,
                       skipChild: !1,
                       inlineStylesheet: f,
                       maskInputOptions: A,
@@ -42413,17 +42389,17 @@ ${tZ}
                       preserveWhiteSpace: b,
                       onSerialize: D,
                       onIframeLoad: C,
-                      iframeLoadTimeout: v,
-                      onStylesheetLoad: m,
+                      iframeLoadTimeout: m,
+                      onStylesheetLoad: v,
                       stylesheetLoadTimeout: y,
                       keepIframeSrcFn: S,
                     });
                     a && C(t, a);
                   }
                 },
-                v,
+                m,
               ),
-            W.type === d.Element &&
+            W.type === R.Element &&
               "link" === W.tagName &&
               "string" == typeof W.attributes.rel &&
               ("stylesheet" === W.attributes.rel ||
@@ -42448,7 +42424,7 @@ ${tZ}
               })(
                 t,
                 () => {
-                  if (m) {
+                  if (v) {
                     let e = ty(t, {
                       doc: n,
                       mirror: o,
@@ -42459,7 +42435,7 @@ ${tZ}
                       maskTextClass: l,
                       unmaskTextClass: u,
                       maskTextSelector: I,
-                      unmaskTextSelector: R,
+                      unmaskTextSelector: d,
                       skipChild: !1,
                       inlineStylesheet: f,
                       maskInputOptions: A,
@@ -42473,12 +42449,12 @@ ${tZ}
                       preserveWhiteSpace: b,
                       onSerialize: D,
                       onIframeLoad: C,
-                      iframeLoadTimeout: v,
-                      onStylesheetLoad: m,
+                      iframeLoadTimeout: m,
+                      onStylesheetLoad: v,
                       stylesheetLoadTimeout: y,
                       keepIframeSrcFn: S,
                     });
-                    e && m(t, e);
+                    e && v(t, e);
                   }
                 },
                 y,
@@ -43096,7 +43072,7 @@ ${tZ}
                         e === t.oldValue ||
                         this.texts.push({
                           value:
-                            tv(
+                            tm(
                               t.target,
                               this.maskTextClass,
                               this.maskTextSelector,
@@ -43126,7 +43102,7 @@ ${tZ}
                           type: a,
                         });
                         r = te({
-                          isMasked: tv(
+                          isMasked: tm(
                             t.target,
                             this.maskTextClass,
                             this.maskTextSelector,
@@ -43676,12 +43652,12 @@ ${tZ}
                   let l = tF(o) ? o.changedTouches[0] : o;
                   if (!l) return;
                   let u = a.getId(i),
-                    { clientX: I, clientY: R } = l;
+                    { clientX: I, clientY: d } = l;
                   et(t)({
                     type: t2[E],
                     id: u,
                     x: I,
-                    y: R,
+                    y: d,
                     ...(null !== c && { pointerType: c }),
                   });
                 };
@@ -43750,8 +43726,8 @@ ${tZ}
               userTriggeredOnInput: l,
               maskTextClass: u,
               unmaskTextClass: I,
-              maskTextSelector: R,
-              unmaskTextSelector: d,
+              maskTextSelector: d,
+              unmaskTextSelector: R,
             }) {
               function N(t) {
                 let a = er(t),
@@ -43768,7 +43744,7 @@ ${tZ}
                   p = to(A, N, T),
                   L = !1,
                   h = tt({ maskInputOptions: c, tagName: N, type: T }),
-                  O = tv(a, u, R, I, d, h);
+                  O = tm(a, u, d, I, R, h);
                 ("radio" === T || "checkbox" === T) && (L = a.checked),
                   (p = te({
                     isMasked: O,
@@ -44165,7 +44141,7 @@ ${tZ}
                   })
                 );
               })(t)));
-          let R = (function (t) {
+          let d = (function (t) {
               let {
                   doc: e,
                   mirror: a,
@@ -44205,7 +44181,7 @@ ${tZ}
                 });
               return c(), tU("selectionchange", c);
             })(t),
-            d = (function ({ doc: t, customElementCb: e }) {
+            R = (function ({ doc: t, customElementCb: e }) {
               let a = t.defaultView;
               return a && a.customElements
                 ? tw(a.customElements, "define", function (t) {
@@ -44239,8 +44215,8 @@ ${tZ}
               l(),
               u(),
               I(),
-              R(),
               d(),
+              R(),
               N.forEach((t) => t());
           });
         }
@@ -44255,7 +44231,7 @@ ${tZ}
             "deleteRule" in window[t].prototype
           );
         }
-        class eR {
+        class ed {
           constructor(t) {
             (this.generateIdFn = t),
               (this.iframeIdToRemoteIdMap = new WeakMap()),
@@ -44306,7 +44282,7 @@ ${tZ}
             );
           }
         }
-        function ed(t) {
+        function eR(t) {
           let e,
             a = t[0],
             r = 1;
@@ -44327,7 +44303,7 @@ ${tZ}
         }
         class eN {
           constructor() {
-            (this.crossOriginIframeMirror = new eR(tR)),
+            (this.crossOriginIframeMirror = new ed(td)),
               (this.crossOriginIframeRootIdMap = new WeakMap());
           }
           addIframe() {}
@@ -44338,13 +44314,13 @@ ${tZ}
           constructor(t) {
             (this.iframes = new WeakMap()),
               (this.crossOriginIframeMap = new WeakMap()),
-              (this.crossOriginIframeMirror = new eR(tR)),
+              (this.crossOriginIframeMirror = new ed(td)),
               (this.crossOriginIframeRootIdMap = new WeakMap()),
               (this.mutationCb = t.mutationCb),
               (this.wrappedEmit = t.wrappedEmit),
               (this.stylesheetManager = t.stylesheetManager),
               (this.recordCrossOriginIframes = t.recordCrossOriginIframes),
-              (this.crossOriginIframeStyleMirror = new eR(
+              (this.crossOriginIframeStyleMirror = new ed(
                 this.stylesheetManager.styleMirror.generateId.bind(
                   this.stylesheetManager.styleMirror,
                 ),
@@ -44372,7 +44348,7 @@ ${tZ}
               attributes: [],
               isAttachIframe: !0,
             }),
-              ed([
+              eR([
                 this,
                 "access",
                 (t) => t.loadListener,
@@ -44507,7 +44483,7 @@ ${tZ}
                     return (
                       this.replaceIds(e.data, t, ["id"]),
                       this.replaceStyleIds(e.data, t, ["styleIds"]),
-                      ed([
+                      eR([
                         e,
                         "access",
                         (t) => t.data,
@@ -44549,7 +44525,7 @@ ${tZ}
                 });
           }
           patchRootIdOnNode(t, e) {
-            t.type === d.Document || t.rootId || (t.rootId = e),
+            t.type === R.Document || t.rootId || (t.rootId = e),
               "childNodes" in t &&
                 t.childNodes.forEach((t) => {
                   this.patchRootIdOnNode(t, e);
@@ -44769,8 +44745,8 @@ ${tZ}
               ignoreClass: l = "rr-ignore",
               ignoreSelector: u = null,
               maskAllText: I = !1,
-              maskTextClass: R = "rr-mask",
-              unmaskTextClass: d = null,
+              maskTextClass: d = "rr-mask",
+              unmaskTextClass: R = null,
               maskTextSelector: N = null,
               unmaskTextSelector: f = null,
               inlineStylesheet: T = !0,
@@ -44782,8 +44758,8 @@ ${tZ}
               maskTextFn: g,
               maxCanvasSize: D = null,
               packFn: C,
-              sampling: v = {},
-              dataURLOptions: m = {},
+              sampling: m = {},
+              dataURLOptions: v = {},
               mousemoveWait: y,
               recordDOM: S = !0,
               recordCanvas: U = !1,
@@ -44811,7 +44787,7 @@ ${tZ}
               V = !0;
             }
           if (F && !a) throw Error("emit function is required");
-          void 0 !== y && void 0 === v.mousemove && (v.mousemove = y),
+          void 0 !== y && void 0 === m.mousemove && (m.mousemove = y),
             eO.reset();
           let j =
               !0 === p
@@ -44976,8 +44952,8 @@ ${tZ}
               blockSelector: s,
               unblockSelector: E,
               maxCanvasSize: D,
-              sampling: v.canvas,
-              dataURLOptions: m,
+              sampling: m.canvas,
+              dataURLOptions: v,
               errorHandler: K,
             }),
             t_ =
@@ -44993,19 +44969,19 @@ ${tZ}
                       blockSelector: s,
                       unblockSelector: E,
                       maskAllText: I,
-                      maskTextClass: R,
-                      unmaskTextClass: d,
+                      maskTextClass: d,
+                      unmaskTextClass: R,
                       maskTextSelector: N,
                       unmaskTextSelector: f,
                       inlineStylesheet: T,
                       maskInputOptions: j,
-                      dataURLOptions: m,
+                      dataURLOptions: v,
                       maskAttributeFn: O,
                       maskTextFn: g,
                       maskInputFn: P,
                       recordCanvas: U,
                       inlineImages: M,
-                      sampling: v,
+                      sampling: m,
                       slimDOMOptions: X,
                       iframeManager: te,
                       stylesheetManager: tt,
@@ -45045,8 +45021,8 @@ ${tZ}
                   inlineStylesheet: l = !0,
                   inlineImages: u = !1,
                   recordCanvas: I = !1,
-                  maskAllInputs: R = !1,
-                  maskAttributeFn: d,
+                  maskAllInputs: d = !1,
+                  maskAttributeFn: R,
                   maskTextFn: N,
                   maskInputFn: f,
                   slimDOM: A = !1,
@@ -45073,7 +45049,7 @@ ${tZ}
                   skipChild: !1,
                   inlineStylesheet: l,
                   maskInputOptions:
-                    !0 === R
+                    !0 === d
                       ? {
                           color: !0,
                           date: !0,
@@ -45091,10 +45067,10 @@ ${tZ}
                           textarea: !0,
                           select: !0,
                         }
-                      : !1 === R
+                      : !1 === d
                         ? {}
-                        : R,
-                  maskAttributeFn: d,
+                        : d,
+                  maskAttributeFn: R,
                   maskTextFn: N,
                   maskInputFn: f,
                   slimDOMOptions:
@@ -45132,8 +45108,8 @@ ${tZ}
                 blockSelector: s,
                 unblockSelector: E,
                 maskAllText: I,
-                maskTextClass: R,
-                unmaskTextClass: d,
+                maskTextClass: d,
+                unmaskTextClass: R,
                 maskTextSelector: N,
                 unmaskTextSelector: f,
                 inlineStylesheet: T,
@@ -45142,7 +45118,7 @@ ${tZ}
                 maskInputFn: P,
                 maskTextFn: g,
                 slimDOM: X,
-                dataURLOptions: m,
+                dataURLOptions: v,
                 recordCanvas: U,
                 inlineImages: M,
                 onSerialize: (t) => {
@@ -45239,13 +45215,13 @@ ${tZ}
                     ignoreClass: l,
                     ignoreSelector: u,
                     maskAllText: I,
-                    maskTextClass: R,
-                    unmaskTextClass: d,
+                    maskTextClass: d,
+                    unmaskTextClass: R,
                     maskTextSelector: N,
                     unmaskTextSelector: f,
                     maskInputOptions: j,
                     inlineStylesheet: T,
-                    sampling: v,
+                    sampling: m,
                     recordDOM: S,
                     recordCanvas: U,
                     inlineImages: M,
@@ -45259,7 +45235,7 @@ ${tZ}
                     blockSelector: s,
                     unblockSelector: E,
                     slimDOMOptions: X,
-                    dataURLOptions: m,
+                    dataURLOptions: v,
                     mirror: eO,
                     iframeManager: te,
                     stylesheetManager: tt,
@@ -45344,18 +45320,18 @@ ${tZ}
                 t.throttledAddEvent({
                   type: t0.Custom,
                   timestamp: 1e3 * (e.timestamp || 0),
-                  data: { tag: "breadcrumb", payload: (0, v.Fv)(e, 10, 1e3) },
+                  data: { tag: "breadcrumb", payload: (0, m.Fv)(e, 10, 1e3) },
                 }),
                 "console" === e.category
               ),
             ));
         }
-        function ev(t) {
+        function em(t) {
           return t.closest("button,a") || t;
         }
-        function em(t) {
+        function ev(t) {
           let e = ey(t);
-          return e && e instanceof Element ? ev(e) : e;
+          return e && e instanceof Element ? em(e) : e;
         }
         function ey(t) {
           var e;
@@ -45389,7 +45365,7 @@ ${tZ}
               }),
               c ||
                 ((c = []),
-                (0, m.hl)(F, "open", function (t) {
+                (0, v.hl)(F, "open", function (t) {
                   return function (...e) {
                     if (c)
                       try {
@@ -45456,7 +45432,7 @@ ${tZ}
             this._lastScroll = eD(t);
           }
           registerClick(t) {
-            let e = ev(t);
+            let e = em(t);
             this._handleMultiClick(e);
           }
           _handleMultiClick(t) {
@@ -45551,12 +45527,12 @@ ${tZ}
         function eG(t) {
           return { timestamp: Date.now() / 1e3, type: "default", ...t };
         }
-        ((R = N || (N = {}))[(R.Document = 0)] = "Document"),
-          (R[(R.DocumentType = 1)] = "DocumentType"),
-          (R[(R.Element = 2)] = "Element"),
-          (R[(R.Text = 3)] = "Text"),
-          (R[(R.CDATA = 4)] = "CDATA"),
-          (R[(R.Comment = 5)] = "Comment");
+        ((d = N || (N = {}))[(d.Document = 0)] = "Document"),
+          (d[(d.DocumentType = 1)] = "DocumentType"),
+          (d[(d.Element = 2)] = "Element"),
+          (d[(d.Text = 3)] = "Text"),
+          (d[(d.CDATA = 4)] = "CDATA"),
+          (d[(d.Comment = 5)] = "Comment");
         let eW = new Set([
             "id",
             "class",
@@ -45580,7 +45556,7 @@ ${tZ}
                   a = "click" === t.name,
                   r = null;
                 try {
-                  (r = a ? em(t.event) : ey(t.event)),
+                  (r = a ? ev(t.event) : ey(t.event)),
                     (e = (0, y.Rt)(r, { maxStringLength: 200 }) || "<unknown>");
                 } catch (t) {
                   e = "<unknown>";
@@ -45600,7 +45576,7 @@ ${tZ}
               !o.metaKey &&
               !o.ctrlKey &&
               !o.shiftKey &&
-              ((a = t.clickDetector), (r = em(e.event)), a.handleClick(_, r)),
+              ((a = t.clickDetector), (r = ev(e.event)), a.handleClick(_, r)),
               eC(t, _);
           };
         function eM(t, e) {
@@ -45688,18 +45664,18 @@ ${tZ}
               loadEventEnd: l,
               redirectCount: u,
               startTime: I,
-              transferSize: R,
-              type: d,
+              transferSize: d,
+              type: R,
             } = t;
             return 0 === _
               ? null
               : {
-                  type: `${e}.${d}`,
+                  type: `${e}.${R}`,
                   start: eK(I),
                   end: eK(n),
                   name: a,
                   data: {
-                    size: R,
+                    size: d,
                     decodedBodySize: r,
                     encodedBodySize: o,
                     duration: _,
@@ -46247,7 +46223,7 @@ ${tZ}
             start: a / 1e3,
             end: r / 1e3,
             name: _,
-            data: (0, m.Jr)({
+            data: (0, v.Jr)({
               method: n,
               statusCode: o,
               request: i,
@@ -46255,10 +46231,10 @@ ${tZ}
             }),
           };
         }
-        function aR(t) {
+        function ad(t) {
           return { headers: {}, size: t, _meta: { warnings: ["URL_SKIPPED"] } };
         }
-        function ad(t, e, a) {
+        function aR(t, e, a) {
           if (!e && 0 === Object.keys(t).length) return;
           if (!e) return { headers: t };
           if (!a) return { headers: t, size: e };
@@ -46355,12 +46331,12 @@ ${tZ}
                           ? ag(_[1], n)
                           : {})
                     : {};
-                  if (!t) return ad(o, r, void 0);
+                  if (!t) return aR(o, r, void 0);
                   let [i, c] = al(aO(a)),
-                    s = ad(o, r, i);
+                    s = aR(o, r, i);
                   return c ? au(s, c) : s;
                 })(a, e.input, s)
-              : aR(s),
+              : ad(s),
             response: await aL(l, a, e.response, E),
           };
         }
@@ -46370,9 +46346,9 @@ ${tZ}
           r,
           _,
         ) {
-          if (!t && void 0 !== _) return aR(_);
+          if (!t && void 0 !== _) return ad(_);
           let n = r ? aP(r.headers, a) : {};
-          if (!r || (!e && void 0 !== _)) return ad(n, _, void 0);
+          if (!r || (!e && void 0 !== _)) return aR(n, _, void 0);
           let [o, i] = await ah(r),
             c = (function (
               t,
@@ -46385,14 +46361,14 @@ ${tZ}
             ) {
               try {
                 let n = t && t.length && void 0 === a ? as(t) : a;
-                if (!r) return aR(n);
-                if (e) return ad(_, n, t);
-                return ad(_, n, void 0);
+                if (!r) return ad(n);
+                if (e) return aR(_, n, t);
+                return aR(_, n, void 0);
               } catch (t) {
                 return (
                   eX &&
                     U.kg.warn("[Replay] Failed to serialize response body", t),
-                  ad(_, a, void 0)
+                  aR(_, a, void 0)
                 );
               }
             })(o, {
@@ -46486,7 +46462,7 @@ ${tZ}
                   !aA(c, a.networkDetailAllowUrls) ||
                   aA(c, a.networkDetailDenyUrls)
                 ) {
-                  let t = aR(l);
+                  let t = ad(l);
                   return {
                     startTimestamp: _,
                     endTimestamp: n,
@@ -46494,12 +46470,12 @@ ${tZ}
                     method: s,
                     statusCode: E,
                     request: t,
-                    response: aR(u),
+                    response: ad(u),
                   };
                 }
                 let I = i[K.xU],
-                  R = I ? aN(I.request_headers, a.networkRequestHeaders) : {},
-                  d = aN(
+                  d = I ? aN(I.request_headers, a.networkRequestHeaders) : {},
+                  R = aN(
                     (function (t) {
                       let e = t.getAllResponseHeaders();
                       return e
@@ -46561,8 +46537,8 @@ ${tZ}
                         );
                       })(i)
                     : [void 0],
-                  p = ad(R, l, N),
-                  L = ad(d, u, A);
+                  p = aR(d, l, N),
+                  L = aR(R, u, A);
                 return {
                   startTimestamp: _,
                   endTimestamp: n,
@@ -46579,7 +46555,7 @@ ${tZ}
             eX && U.kg.error("[Replay] Failed to capture xhr breadcrumb", t);
           }
         }
-        async function av(t) {
+        async function am(t) {
           try {
             return Promise.all(
               ai(t, [
@@ -46610,7 +46586,7 @@ ${tZ}
             return [];
           }
         }
-        async function am({ client: t, scope: e, replayId: a, event: r }) {
+        async function av({ client: t, scope: e, replayId: a, event: r }) {
           let _ = {
             event_id: a,
             integrations:
@@ -46659,10 +46635,10 @@ ${tZ}
             })({ recordingData: t, headers: { segment_id: a } }),
             { urls: s, errorIds: E, traceIds: l, initialTimestamp: u } = r,
             I = (0, p.s3)(),
-            R = (0, p.nZ)(),
-            d = I && I.getTransport(),
+            d = (0, p.nZ)(),
+            R = I && I.getTransport(),
             N = I && I.getDsn();
-          if (!I || !d || !N || !n.sampled) return (0, w.WD)({});
+          if (!I || !R || !N || !n.sampled) return (0, w.WD)({});
           let f = {
               type: "replay_event",
               replay_start_timestamp: u / 1e3,
@@ -46674,7 +46650,7 @@ ${tZ}
               segment_id: a,
               replay_type: n.sampled,
             },
-            A = await am({ scope: R, client: I, replayId: e, event: f });
+            A = await av({ scope: d, client: I, replayId: e, event: f });
           if (!A)
             return (
               I.recordDroppedEvent("event_processor", "replay", f),
@@ -46698,7 +46674,7 @@ ${tZ}
               ],
             ]));
           try {
-            i = await d.send(T);
+            i = await R.send(T);
           } catch (e) {
             let t = Error(j);
             try {
@@ -47380,7 +47356,7 @@ ${tZ}
                                             : t;
                                         if ("object" == typeof t)
                                           try {
-                                            let e = (0, v.Fv)(t, 7);
+                                            let e = (0, m.Fv)(t, 7);
                                             if (JSON.stringify(e).length > 5e3)
                                               return (
                                                 (a = !0),
@@ -47830,7 +47806,7 @@ ${tZ}
               this.eventBuffer && this.eventBuffer.hasEvents)
             ) {
               if (
-                (await av(this), this.eventBuffer) &&
+                (await am(this), this.eventBuffer) &&
                 t === this.getSessionId()
               )
                 try {
@@ -47964,8 +47940,8 @@ ${tZ}
             mutationBreadcrumbLimit: l = 750,
             mutationLimit: u = 1e4,
             slowClickTimeout: I = 7e3,
-            slowClickIgnoreSelectors: R = [],
-            networkDetailAllowUrls: d = [],
+            slowClickIgnoreSelectors: d = [],
+            networkDetailAllowUrls: R = [],
             networkDetailDenyUrls: N = [],
             networkCaptureBodies: f = !0,
             networkRequestHeaders: A = [],
@@ -47978,10 +47954,10 @@ ${tZ}
             ignore: g = [],
             maskFn: D,
             beforeAddRecordingEvent: C,
-            beforeErrorSampling: v,
+            beforeErrorSampling: m,
           } = {}) {
             this.name = aK.id;
-            let m = (function ({
+            let v = (function ({
               mask: t,
               unmask: e,
               block: a,
@@ -48034,12 +48010,12 @@ ${tZ}
                   })({
                     maskAttributes: L,
                     maskAllText: c,
-                    privacyOptions: m,
+                    privacyOptions: v,
                     key: t,
                     value: e,
                     el: a,
                   }),
-                ...m,
+                ...v,
                 slimDOMOptions: "all",
                 inlineStylesheet: !0,
                 inlineImages: !1,
@@ -48064,14 +48040,14 @@ ${tZ}
                 mutationBreadcrumbLimit: l,
                 mutationLimit: u,
                 slowClickTimeout: I,
-                slowClickIgnoreSelectors: R,
-                networkDetailAllowUrls: d,
+                slowClickIgnoreSelectors: d,
+                networkDetailAllowUrls: R,
                 networkDetailDenyUrls: N,
                 networkCaptureBodies: f,
                 networkRequestHeaders: ak(A),
                 networkResponseHeaders: ak(T),
                 beforeAddRecordingEvent: C,
-                beforeErrorSampling: v,
+                beforeErrorSampling: m,
                 _experiments: i,
               }),
               this._initialOptions.blockAllMedia &&
@@ -48132,7 +48108,7 @@ ${tZ}
                 r = {
                   sessionSampleRate: 0,
                   errorSampleRate: 0,
-                  ...(0, m.Jr)(t),
+                  ...(0, v.Jr)(t),
                 },
                 _ = (0, D.o)(a.replaysSessionSampleRate),
                 n = (0, D.o)(a.replaysOnErrorSampleRate);
@@ -48213,4 +48189,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2d0ab5954778a15f.js.map
+//# sourceMappingURL=sentry.a361fb4f08a7db06.js.map

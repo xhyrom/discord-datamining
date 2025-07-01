@@ -4504,6 +4504,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   text-align: start;
   transition:
     background-color 50ms ease-in,
+    color 50ms ease-in,
     border-color 50ms ease-in,
     opacity 50ms ease-in;
   width: -webkit-min-content;
@@ -4513,6 +4514,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .button__6af3a:hover {
   transition:
     background-color 0.15s ease-out,
+    color 0.15s ease-out,
     border-color 0.15s ease-out,
     opacity 0.15s ease-out;
 }
@@ -4666,31 +4668,31 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   border-color: var(--control-border-secondary-active);
   color: var(--control-text-secondary-active);
 }
-.tertiary__6af3a {
+.icon-only__6af3a {
   background-color: transparent;
   border-color: transparent;
-  color: var(--control-text-tertiary-default);
+  color: var(--control-icon-icon-only-default);
 }
-.tertiary__6af3a:hover {
-  background-color: var(--control-background-tertiary-hover);
-  border-color: var(--control-border-tertiary-hover);
-  color: var(--control-text-tertiary-hover);
+.icon-only__6af3a:hover {
+  background-color: var(--control-background-icon-only-hover);
+  border-color: var(--control-border-icon-only-hover);
+  color: var(--control-icon-icon-only-hover);
 }
-.tertiary__6af3a:active {
-  background-color: var(--control-background-tertiary-active);
-  border-color: var(--control-border-tertiary-active);
-  color: var(--control-text-tertiary-active);
+.icon-only__6af3a:active {
+  background-color: var(--control-background-icon-only-active);
+  border-color: var(--control-border-icon-only-active);
+  color: var(--control-icon-icon-only-active);
 }
 .color-mix__6af3a {
   background-color: transparent;
   border: transparent;
-  color: var(--control-text-tertiary-default);
+  color: var(--icon-primary);
 }
 .color-mix__6af3a:hover {
-  color: var(--control-text-tertiary-hover);
+  color: var(--control-icon-icon-only-hover);
 }
 .color-mix__6af3a:active {
-  color: var(--control-text-tertiary-active);
+  color: var(--control-icon-icon-only-active);
 }
 .color-mix__6af3a:before {
   border: 1px solid transparent;
@@ -4709,7 +4711,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: 100%;
 }
 .color-mix__6af3a:hover:before {
-  background-color: var(--control-background-tertiary-hover);
+  background-color: var(--control-background-icon-only-hover);
   border-color: var(--border-subtle);
   transition:
     background-color 0.15s ease-out,
@@ -4717,7 +4719,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     opacity 0.15s ease-out;
 }
 .color-mix__6af3a:active:before {
-  background-color: var(--control-background-tertiary-active);
+  background-color: var(--control-background-icon-only-active);
   border-color: var(--border-subtle);
 }
 .theme-light .color-mix__6af3a:before {
@@ -4849,6 +4851,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .fullWidth__6af3a {
   flex: 1;
   width: auto;
+}
+.rounded__6af3a {
+  border-radius: var(--radius-round);
 }
 .scrollerBase_d125d2 {
   box-sizing: border-box;
@@ -44105,6 +44110,10 @@ html.disable-forced-colors * {
   --control-background-expressive-default: var(--neutral-1);
   --control-background-expressive-hover: var(--neutral-1);
   --control-background-expressive-loading: var(--neutral-1);
+  --control-background-icon-only-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-icon-only-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --control-background-overlay-primary-active: var(--neutral-17);
   --control-background-overlay-primary-default: var(--neutral-1);
   --control-background-overlay-primary-hover: var(--neutral-9);
@@ -44134,10 +44143,6 @@ html.disable-forced-colors * {
   );
   --control-background-secondary-loading: hsl(
     var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-background-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
-  --control-background-tertiary-hover: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
   );
   --control-border-active-active: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
@@ -44187,6 +44192,12 @@ html.disable-forced-colors * {
   --control-border-expressive-loading: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
+  --control-border-icon-only-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-icon-only-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
   --control-border-overlay-primary-active: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -44235,12 +44246,6 @@ html.disable-forced-colors * {
   --control-border-secondary-loading: hsl(
     var(--opacity-4-hsl) / 0.0392156862745098
   );
-  --control-border-tertiary-active: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
-  --control-border-tertiary-hover: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
   --control-icon-active-active: var(--white);
@@ -44259,6 +44264,10 @@ html.disable-forced-colors * {
   --control-icon-expressive-default: var(--black);
   --control-icon-expressive-hover: var(--black);
   --control-icon-expressive-loading: var(--black);
+  --control-icon-icon-only-active: var(--neutral-1);
+  --control-icon-icon-only-default: var(--neutral-16);
+  --control-icon-icon-only-hover: var(--neutral-1);
+  --control-icon-icon-only-loading: var(--neutral-1);
   --control-icon-overlay-primary-active: var(--black);
   --control-icon-overlay-primary-default: var(--black);
   --control-icon-overlay-primary-hover: var(--black);
@@ -44275,10 +44284,6 @@ html.disable-forced-colors * {
   --control-icon-secondary-default: var(--neutral-1);
   --control-icon-secondary-hover: var(--neutral-1);
   --control-icon-secondary-loading: var(--neutral-1);
-  --control-icon-tertiary-active: var(--neutral-1);
-  --control-icon-tertiary-default: var(--neutral-1);
-  --control-icon-tertiary-hover: var(--neutral-1);
-  --control-icon-tertiary-loading: var(--neutral-1);
   --control-text-active-active: var(--white);
   --control-text-active-default: var(--white);
   --control-text-active-hover: var(--white);
@@ -44311,10 +44316,6 @@ html.disable-forced-colors * {
   --control-text-secondary-default: var(--neutral-1);
   --control-text-secondary-hover: var(--neutral-1);
   --control-text-secondary-loading: var(--neutral-1);
-  --control-text-tertiary-active: var(--neutral-1);
-  --control-text-tertiary-default: var(--neutral-1);
-  --control-text-tertiary-hover: var(--neutral-1);
-  --control-text-tertiary-loading: var(--neutral-1);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -46246,6 +46247,12 @@ html.disable-forced-colors * {
   --control-background-expressive-default: var(--blurple-50);
   --control-background-expressive-hover: var(--blurple-60);
   --control-background-expressive-loading: var(--blurple-50);
+  --control-background-icon-only-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-icon-only-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --control-background-overlay-primary-active: var(--neutral-17);
   --control-background-overlay-primary-default: var(--neutral-1);
   --control-background-overlay-primary-hover: var(--neutral-9);
@@ -46277,12 +46284,6 @@ html.disable-forced-colors * {
   );
   --control-background-secondary-loading: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
-  );
-  --control-background-tertiary-active: hsl(
-    var(--opacity-24-hsl) / 0.23921568627450981
-  );
-  --control-background-tertiary-hover: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
   );
   --control-border-active-active: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
@@ -46324,6 +46325,8 @@ html.disable-forced-colors * {
   --control-border-expressive-loading: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
   );
+  --control-border-icon-only-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-border-icon-only-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-border-overlay-primary-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
@@ -46356,8 +46359,6 @@ html.disable-forced-colors * {
   --control-border-secondary-default: hsl(var(--opacity-20-hsl) / 0.2);
   --control-border-secondary-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-border-secondary-loading: hsl(var(--opacity-20-hsl) / 0.2);
-  --control-border-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
-  --control-border-tertiary-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-brand-foreground: var(--brand-500);
   --control-brand-foreground-new: var(--brand-500);
   --control-icon-active-active: var(--white);
@@ -46376,6 +46377,10 @@ html.disable-forced-colors * {
   --control-icon-expressive-default: var(--white);
   --control-icon-expressive-hover: var(--white);
   --control-icon-expressive-loading: var(--white);
+  --control-icon-icon-only-active: var(--neutral-71);
+  --control-icon-icon-only-default: var(--neutral-44);
+  --control-icon-icon-only-hover: var(--neutral-71);
+  --control-icon-icon-only-loading: var(--neutral-71);
   --control-icon-overlay-primary-active: var(--black);
   --control-icon-overlay-primary-default: var(--black);
   --control-icon-overlay-primary-hover: var(--black);
@@ -46392,10 +46397,6 @@ html.disable-forced-colors * {
   --control-icon-secondary-default: var(--neutral-71);
   --control-icon-secondary-hover: var(--neutral-71);
   --control-icon-secondary-loading: var(--neutral-71);
-  --control-icon-tertiary-active: var(--neutral-71);
-  --control-icon-tertiary-default: var(--neutral-71);
-  --control-icon-tertiary-hover: var(--neutral-71);
-  --control-icon-tertiary-loading: var(--neutral-71);
   --control-text-active-active: var(--white);
   --control-text-active-default: var(--white);
   --control-text-active-hover: var(--white);
@@ -46428,10 +46429,6 @@ html.disable-forced-colors * {
   --control-text-secondary-default: var(--neutral-71);
   --control-text-secondary-hover: var(--neutral-71);
   --control-text-secondary-loading: var(--neutral-71);
-  --control-text-tertiary-active: var(--neutral-71);
-  --control-text-tertiary-default: var(--neutral-71);
-  --control-text-tertiary-hover: var(--neutral-71);
-  --control-text-tertiary-loading: var(--neutral-71);
   --creator-revenue-icon-gradient-end: var(--teal-400);
   --creator-revenue-icon-gradient-start: var(--teal-345);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -48357,6 +48354,10 @@ html.disable-forced-colors * {
   --control-background-expressive-default: var(--neutral-1);
   --control-background-expressive-hover: var(--neutral-1);
   --control-background-expressive-loading: var(--neutral-1);
+  --control-background-icon-only-active: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-background-icon-only-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-background-overlay-primary-active: var(--neutral-17);
   --control-background-overlay-primary-default: var(--neutral-1);
   --control-background-overlay-primary-hover: var(--neutral-9);
@@ -48387,10 +48388,6 @@ html.disable-forced-colors * {
   --control-background-secondary-loading: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
-  --control-background-tertiary-active: hsl(
-    var(--opacity-24-hsl) / 0.23921568627450981
-  );
-  --control-background-tertiary-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --control-border-active-active: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
   );
@@ -48438,6 +48435,12 @@ html.disable-forced-colors * {
   );
   --control-border-expressive-loading: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --control-border-icon-only-active: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
+  --control-border-icon-only-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
   );
   --control-border-overlay-primary-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
@@ -48487,12 +48490,6 @@ html.disable-forced-colors * {
   --control-border-secondary-loading: hsl(
     var(--opacity-16-hsl) / 0.1607843137254902
   );
-  --control-border-tertiary-active: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
-  --control-border-tertiary-hover: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
-  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
   --control-icon-active-active: var(--white);
@@ -48511,6 +48508,10 @@ html.disable-forced-colors * {
   --control-icon-expressive-default: var(--black);
   --control-icon-expressive-hover: var(--black);
   --control-icon-expressive-loading: var(--black);
+  --control-icon-icon-only-active: var(--neutral-8);
+  --control-icon-icon-only-default: var(--neutral-27);
+  --control-icon-icon-only-hover: var(--neutral-8);
+  --control-icon-icon-only-loading: var(--neutral-8);
   --control-icon-overlay-primary-active: var(--black);
   --control-icon-overlay-primary-default: var(--black);
   --control-icon-overlay-primary-hover: var(--black);
@@ -48527,10 +48528,6 @@ html.disable-forced-colors * {
   --control-icon-secondary-default: var(--neutral-8);
   --control-icon-secondary-hover: var(--neutral-8);
   --control-icon-secondary-loading: var(--neutral-8);
-  --control-icon-tertiary-active: var(--neutral-8);
-  --control-icon-tertiary-default: var(--neutral-8);
-  --control-icon-tertiary-hover: var(--neutral-8);
-  --control-icon-tertiary-loading: var(--neutral-8);
   --control-text-active-active: var(--white);
   --control-text-active-default: var(--white);
   --control-text-active-hover: var(--white);
@@ -48563,10 +48560,6 @@ html.disable-forced-colors * {
   --control-text-secondary-default: var(--neutral-8);
   --control-text-secondary-hover: var(--neutral-8);
   --control-text-secondary-loading: var(--neutral-8);
-  --control-text-tertiary-active: var(--neutral-8);
-  --control-text-tertiary-default: var(--neutral-8);
-  --control-text-tertiary-hover: var(--neutral-8);
-  --control-text-tertiary-loading: var(--neutral-8);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -50497,6 +50490,10 @@ html.disable-forced-colors * {
   --control-background-expressive-default: var(--neutral-1);
   --control-background-expressive-hover: var(--neutral-1);
   --control-background-expressive-loading: var(--neutral-1);
+  --control-background-icon-only-active: hsl(var(--opacity-20-hsl) / 0.2);
+  --control-background-icon-only-hover: hsl(
+    var(--opacity-16-hsl) / 0.1607843137254902
+  );
   --control-background-overlay-primary-active: var(--neutral-17);
   --control-background-overlay-primary-default: var(--neutral-1);
   --control-background-overlay-primary-hover: var(--neutral-9);
@@ -50526,10 +50523,6 @@ html.disable-forced-colors * {
   );
   --control-background-secondary-loading: hsl(
     var(--opacity-8-hsl) / 0.0784313725490196
-  );
-  --control-background-tertiary-active: hsl(var(--opacity-20-hsl) / 0.2);
-  --control-background-tertiary-hover: hsl(
-    var(--opacity-16-hsl) / 0.1607843137254902
   );
   --control-border-active-active: hsl(
     var(--opacity-white-8-hsl) / 0.0784313725490196
@@ -50579,6 +50572,12 @@ html.disable-forced-colors * {
   --control-border-expressive-loading: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
+  --control-border-icon-only-active: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
+  --control-border-icon-only-hover: hsl(
+    var(--opacity-4-hsl) / 0.0392156862745098
+  );
   --control-border-overlay-primary-active: hsl(
     var(--opacity-12-hsl) / 0.12156862745098039
   );
@@ -50627,12 +50626,6 @@ html.disable-forced-colors * {
   --control-border-secondary-loading: hsl(
     var(--opacity-4-hsl) / 0.0392156862745098
   );
-  --control-border-tertiary-active: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
-  --control-border-tertiary-hover: hsl(
-    var(--opacity-4-hsl) / 0.0392156862745098
-  );
   --control-brand-foreground: var(--brand-360);
   --control-brand-foreground-new: var(--brand-360);
   --control-icon-active-active: var(--white);
@@ -50651,6 +50644,10 @@ html.disable-forced-colors * {
   --control-icon-expressive-default: var(--black);
   --control-icon-expressive-hover: var(--black);
   --control-icon-expressive-loading: var(--black);
+  --control-icon-icon-only-active: var(--neutral-2);
+  --control-icon-icon-only-default: var(--neutral-23);
+  --control-icon-icon-only-hover: var(--neutral-2);
+  --control-icon-icon-only-loading: var(--neutral-2);
   --control-icon-overlay-primary-active: var(--black);
   --control-icon-overlay-primary-default: var(--black);
   --control-icon-overlay-primary-hover: var(--black);
@@ -50667,10 +50664,6 @@ html.disable-forced-colors * {
   --control-icon-secondary-default: var(--neutral-2);
   --control-icon-secondary-hover: var(--neutral-2);
   --control-icon-secondary-loading: var(--neutral-2);
-  --control-icon-tertiary-active: var(--neutral-2);
-  --control-icon-tertiary-default: var(--neutral-2);
-  --control-icon-tertiary-hover: var(--neutral-2);
-  --control-icon-tertiary-loading: var(--neutral-2);
   --control-text-active-active: var(--white);
   --control-text-active-default: var(--white);
   --control-text-active-hover: var(--white);
@@ -50703,10 +50696,6 @@ html.disable-forced-colors * {
   --control-text-secondary-default: var(--neutral-2);
   --control-text-secondary-hover: var(--neutral-2);
   --control-text-secondary-loading: var(--neutral-2);
-  --control-text-tertiary-active: var(--neutral-2);
-  --control-text-tertiary-default: var(--neutral-2);
-  --control-text-tertiary-hover: var(--neutral-2);
-  --control-text-tertiary-loading: var(--neutral-2);
   --creator-revenue-icon-gradient-end: var(--teal-430);
   --creator-revenue-icon-gradient-start: var(--teal-360);
   --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
@@ -57900,4 +57889,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.da04396dda03391e.css.map*/
+/*# sourceMappingURL=12633.72b7c4916cf4c2b9.css.map*/
