@@ -17725,7 +17725,10 @@ span.clanTag__5d473 {
   background: var(--experimental-avatar-embed-bg);
 }
 .avatarWithBackground__183c2 {
-  background-color: var(--background-mod-strong);
+  align-items: center;
+  background-color: var(--opacity-black-52);
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .avatar__183c2,
@@ -57889,4 +57892,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.72b7c4916cf4c2b9.css.map*/
+/*# sourceMappingURL=12633.7887a2f410f8a330.css.map*/
