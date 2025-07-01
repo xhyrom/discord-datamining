@@ -1,7 +1,6 @@
 <div class="exp-box">
-  <strong>Note: </strong>This feature is currently experimental. It is only
-  available to a limited number of English, US users and only available on the
-  iOS mobile app.
+  <strong>Note</strong>: This feature is currently experimental. It is only
+  available to a limited number of English, US users on the iOS mobile app.
 </div>
 <p>
   <strong
@@ -10,14 +9,22 @@
   /></strong>
 </p>
 <ul>
-  <li><a href="#h_01J67VMBYCCNSMGT1W7YWT20KK">What is ICYMI?</a></li>
   <li>
-    <a href="#h_01J67VMBYCF6ED60R9Z3Q26FM0"
-      >How to edit which Servers or Server Channels appear in your ICYMI</a
+    <strong><a href="#h_01J67VMBYCCNSMGT1W7YWT20KK">What is ICYMI?</a></strong>
+  </li>
+  <li>
+    <strong
+      ><a href="#h_01J67VMBYCF6ED60R9Z3Q26FM0"
+        >How to edit which Servers or Channels appear in your ICYMI</a
+      ></strong
     >
   </li>
   <li>
-    <a href="#h_01J67VMBYC5YYSCKSFPY1XK7M4">Frequently Asked Questions</a>
+    <strong
+      ><a href="#h_01J67VMBYC5YYSCKSFPY1XK7M4"
+        >Frequently Asked Questions</a
+      ></strong
+    >
   </li>
 </ul>
 <h1 id="h_01J67VMBYCCNSMGT1W7YWT20KK">What is ICYMI?</h1>
@@ -34,12 +41,12 @@
   actively using Discord. 
 </p>
 <p>
-  Your ICYMI tab will display the following: Recently played activity from
-  friends, status updates, recent messages or announcements in servers, and
-  more!
+  Your ICYMI tab will display recently played activity from friends, status
+  updates, messages and announcements from servers, conversation summaries and
+  more! Some summaries may be generated with the help of AI.
 </p>
 <h1 id="h_01J67VMBYCF6ED60R9Z3Q26FM0">
-  How to edit which Servers or Server Channels appear in your ICYMI
+  How to edit which Servers or Channels appear in your ICYMI
 </h1>
 <p>
   If there is a specific server or channel that you want to see more or less of
@@ -63,9 +70,10 @@
   />
 </p>
 <p>
-  4. You can completely remove a server from displaying in ICYMI by toggling
-  <strong>Show content in ICYMI,</strong> or you can adjust how much information
-  from a server is displayed on ICYMI by selecting one of the following:
+  4. You can completely remove a server from displaying in your ICYMI feed by
+  toggling <strong>Show content in ICYMI,</strong> or you can adjust how much
+  information from a server is displayed on ICYMI by selecting one of the
+  following:
 </p>
 <ul>
   <li>
@@ -99,11 +107,11 @@
   />
 </p>
 <p>
-  6. You can go through each server and adjust the settings based on your
+  6. You can review each server and adjust the settings based on your
   preferences. 
 </p>
 <h1 id="h_01J67VMBYC5YYSCKSFPY1XK7M4">Frequently Asked Questions</h1>
-<p><strong>Q: Why is my feed empty?</strong></p>
+<p><strong>Q: Why is my ICYMI feed empty?</strong></p>
 <p>
   A: When you first access the ICYMI tab, it may take up to 5 minutes for your
   first feed to generate and it may take 30 minutes for content to be available
