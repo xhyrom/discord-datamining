@@ -1,32 +1,48 @@
 <ul>
   <li>
-    <span
-      style="color: #333333; background-color: #ffffff"
-      data-darkreader-inline-color=""
-      data-darkreader-inline-bgcolor=""
-      >Each Quest has a specific timeframe for acceptance and completion.
-      Rewards are subject to specific terms. </span
-    >
+    Each Quest has a specific timeframe for acceptance and completion. Rewards
+    are subject to specific terms.
   </li>
   <li>
-    <span
-      style="color: #333333; background-color: #ffffff"
-      data-darkreader-inline-color=""
-      data-darkreader-inline-bgcolor=""
-      >You can find the promotion terms for each Quest on the Quest Home page or
-      after accepting the Quest.</span
-    >
+    You can find the promotion terms for each Quest on the Quest Home page or
+    after accepting the Quest.
   </li>
   <li>Limit of one reward redemption per account.</li>
 </ul>
-<h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">
-  <span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Additional Terms</span
-  >
-</h1>
+<h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
+<p>
+  <strong>Quest Video: Jurassic World Rebirth Trailer<br /></strong
+  ><strong>Quest Name: Jurassic World Rebirth Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>Jurassic World Rebirth Trailer </strong>in Discord to receive a
+  <strong>Dilophosaurus Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the
+  <strong>Brazil, South Korea, Australia and United Kingdom</strong> on desktop
+  where <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Jurassic World Rebirth Quest</strong> can be accepted on Discord
+  desktop app or browser client from
+  <strong>June 30, 2025 </strong>until<strong>
+    July 6, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>July 30, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Dilophosaurus Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>August 30, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Avatar Decoration for longer</span
+    ></a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
 <p>
   <strong>Quest Game: VALORANT<br /></strong
   ><strong>Quest Name: Summer Kickoff Quest<br /></strong
@@ -68,7 +84,10 @@
   >Available to players in the <strong>United States</strong>,
   <strong>Canada</strong>, and <strong>Great Britain</strong> who have access to
   <strong>Palia </strong>and<strong> Discord </strong>on desktop, Playstation 5,
-  and Xbox Series S/X.<span style="background-color: #ffffff">
+  and Xbox Series S/X.<span
+    style="background-color: #ffffff"
+    data-darkreader-inline-bgcolor=""
+  >
     Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The
   <strong>Palia Play Quest </strong> can be accepted on
@@ -102,6 +121,7 @@
   >Available to players in the<strong> United States </strong>who have access to
   <strong>MTG Arena </strong>and<strong> Discord </strong>on PC.<span
     style="background-color: #ffffff"
+    data-darkreader-inline-bgcolor=""
   >
     Discord’s premium services are restricted in some regions.<br /></span
   ><strong>Availability Period: </strong>The<strong>
