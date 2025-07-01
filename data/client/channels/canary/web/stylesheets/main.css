@@ -9264,6 +9264,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   position: absolute;
   width: 8px;
 }
+.dimmed__58105 {
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
 .enable-forced-colors .item__58105 {
   background-color: Highlight;
 }
@@ -57890,4 +57894,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.0a7e7f130a7b7c20.css.map*/
+/*# sourceMappingURL=12633.7a49006db1d2408d.css.map*/
