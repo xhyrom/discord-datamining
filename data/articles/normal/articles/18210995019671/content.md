@@ -34,7 +34,7 @@
   </li>
   <li>
     <strong>Graphic Media Filter</strong>: Helps detect image-based media that
-    may contain violent or potentially potentially disturbing visual material
+    may contain violent or potentially disturbing visual material
   </li>
 </ul>
 <div class="info-box">
