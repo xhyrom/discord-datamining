@@ -1,1143 +1,1108 @@
 <p>
-  Not able to hear your friend in your voice channel? Friends not able to hear
-  you in group DMs even when you're shouting at the top of your lungs? Is your
-  video not loading at all? 
+  Having trouble with Discord voice or video? Whether you can't hear others,
+  they can't hear you, or your video isn't working - we're here to help.
 </p>
 <p>
-  If you answered "<strong
-    ><em><span class="wysiwyg-underline">YES</span>"</em></strong
-  >
-  to any of those questions above, or are having any other shenanigans,
-  hopefully this guide below can help you resolve any audio/voice and video
-  issues that pop up for you! 
+  This troubleshooting guide will walk you through common solutions for audio
+  and video issues to get you back to chatting with your friends in no time.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: <br /></strong
-  ></span>
-</p>
-<ul>
-  <li id="h_beafdc94-8cff-414c-a0ed-df92aae5a7c3">
-    <strong
-      ><a href="#h_01GRYQGF5DBVRE83BGXGNS71ZV" target="_self" rel="undefined"
-        >First Discord Settings to Check</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_27782bc4-e6e7-412d-a096-e6a0d11a5746" target="_self"
-            >Mutes or Deafens</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_5423de57-b662-4bb6-9673-698527b2ed58" target="_self"
-            >Channel/Role Permissions</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_3e79f2bf-5065-4b06-a958-185dbed8edad" target="_self"
-            >Volume Settings</a
-          ></strong
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>
-    <strong
-      ><a href="#h_5a079da6-3cf3-441b-99d3-9ae874dd1bc6" target="_self"
-        >Desktop Troubleshooting</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_0098f091-6bc4-4964-b54c-4e6a7e96cb14" target="_self"
-            >Initial Steps</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_d3914a7c-6b16-4aea-ad6d-f3b51ceff99f" target="_self"
-            >Next Steps</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_bb4e45a9-a4e1-4a3b-8fc4-ea67fde14fca" target="_self"
-            >Advanced Steps</a
-          ></strong
-        >
-        <ul>
-          <li>
-            <strong
-              ><a href="#h_0e9d80c8-f9fe-4191-8d1f-b5d30a49a46b" target="_self"
-                >PC/Window Users Only Steps</a
-              ></strong
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>
-    <strong
-      ><a href="#h_b373929a-d071-46f8-a98b-9f26fa0cfe36" target="_self"
-        >Browser Troubleshooting</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_2ad277da-bbca-4e4a-abd5-8e2e1ca09184" target="_self"
-            >Initial Steps</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_e5496a95-ced9-470b-8df7-e09d6ef13f54" target="_self"
-            >Next Steps</a
-          ></strong
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>
-    <strong
-      ><a href="#h_2f36a508-3978-454d-b596-a28356d78033" target="_self"
-        >Mobile Troubleshooting</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_0c7665e5-aad9-4f67-8e25-e69ba53a8c00" target="_self"
-            >Initial Steps</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_97c51449-7815-408a-b344-d12a8524a015" target="_self"
-            >Next Steps</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a
-            href="#docs-internal-guid-91e9ab90-7fff-c6e8-8845-3fb2536ce008"
-            target="_self"
-            >For iOS</a
-          ></strong
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
-<h1 id="h_01GRYQGF5DBVRE83BGXGNS71ZV">
-  <strong>First Discord Settings to Check</strong>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01JQCP7H3ZBRJYHS9JVFMBHFJX"
+        >Essential Discord Settings to Check First</a
+      >
+      <ul>
+        <li><a href="#h_01JQCP7H3Z107XBMCTY4TE6DC8">Mute or Deafen</a></li>
+        <li>
+          <a href="#h_01JQCP7H3Z6P6A91530VM31YYA"
+            >Channel or Role Permissions</a
+          >
+        </li>
+        <li><a href="#h_01JQCP7H3ZQGS5TX8CJWPAXG3F">Volume Settings</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JQCP7H3ZKFAV3SRRKN380N7S">Desktop Troubleshooting</a>
+      <ul>
+        <li><a href="#h_01JQCP7H3ZVZFK409F1QC6A702">Initial Steps</a></li>
+        <li>
+          <a href="#h_01JQCP7H3ZMEAQEV4N827D14VV"
+            >Voice &amp; Video Setting Steps</a
+          >
+        </li>
+        <li><a href="#h_01JQCP7H4095K4BCZP4VPD86A9">Advanced Steps</a></li>
+        <li>
+          <a href="#h_01JQCP7H4042T06F3PE5NB5MQH"
+            >Troubleshooting Steps for PC/Window Users Only</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JQCP7H40183AE8W3ECYQAWA8">Browser Troubleshooting</a>
+      <ul>
+        <li><a href="#h_01JQCP7H40GRW38JE03F0DCVY2">Initial Steps</a></li>
+        <li>
+          <a href="#h_01JQCP7H40XZQ9W22DKFVSKFAN"
+            >Voice &amp; Video Setting Steps</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JQCP7H402P86GBTNDFBTHTD4">Mobile Troubleshooting</a>
+      <ul>
+        <li><a href="#h_01JQCP7H40HT7ERX7BV6V51A6A">Initial Steps</a></li>
+        <li><a href="#h_01JQCP7H40GCKDWFDGWKSAXZJG">Voice Setting Steps</a></li>
+        <li><a href="#h_01JQCP7H407BQ4WFJ5BJ32EWE2">For iOS</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JQCP7H404EP0EMMB05BXBXK1">Discord Audio Issues and Fixes</a>
+      <ul>
+        <li>
+          <a href="#h_01JQCP7H409S9SW6MS80S6X0JV">No Sound from Others</a>
+        </li>
+        <li>
+          <a href="#h_01JQCP7H40PC6CQ1BEDJDDG4WY">Microphone Not Working</a>
+        </li>
+        <li>
+          <a href="#h_01JQCP7H402NFRJ76G262WJD8J">Audio Quality Issues</a>
+        </li>
+        <li><a href="#h_01JQCP7H40X208RY24R8HPQC7F">Screen Share Issues</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01JQCP7H413Q53QS822HXSMEHX">Discord Video Issues and Fixes</a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JQCP7H3ZBRJYHS9JVFMBHFJX">
+  Essential Discord Settings to Check First
 </h1>
 <p>
-  Before you start any troubleshooting below for any voice/audio or video
-  issues, make sure to double check these settings before moving on to
-  troubleshooting for your specific client. 
+  Before you start troubleshooting voice, audio, or video issues in Discord,
+  check these basic settings first. A quick review of these common settings
+  often solves the problem and saves you from needing to try more complex
+  solutions.
 </p>
 <p>
-  Sometimes if you identify these issues early on, you won’t have to try any
-  other steps! 
+  By identifying and fixing simple settings issues upfront, you may be able to
+  skip the more detailed troubleshooting steps completely!
 </p>
-<h2 id="h_27782bc4-e6e7-412d-a096-e6a0d11a5746">
-  <strong>Check for Mutes or Deafens</strong>
-</h2>
+<h2 id="h_01JQCP7H3Z107XBMCTY4TE6DC8">Mute or Deafen</h2>
 <p>
-  First steps first, check if you have muted/deafened yourself or another user.
-  You’ll be able to check this by seeing if the mic or headset icon has a slash
-  across it or not.
+  When troubleshooting voice and audio issues, start by checking your
+  <strong>mute</strong> and <strong>deafen</strong> status. Look at the
+  <strong>mic</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/30984507032727"
+    width="24"
+    height="24"
+  />] or <strong>headset</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/30984500915479"
+    width="24"
+    height="24"
+  />]—if there's a slash through it, that means your voice and audio is
+  disabled.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19102679763863"
-    alt="image9.png"
-    width="390"
-    height="230"
+    src="https://support.discord.com/hc/article_attachments/30984500916759"
+    width="450"
+    height="192"
   />
 </p>
+<h4 id="h_01JQCP7H3Z06SE0NPT0DYZAG07" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Mic and Headset Icon</span>
+</h4>
+<div class="info-box">
+  Keep in mind that server administrators can also mute or deafen users at the
+  server level. If you've been server muted or deafened, you'll need to contact
+  an admin or the server owner to have these restrictions lifted.
+</div>
+<h2 id="h_01JQCP7H3Z6P6A91530VM31YYA">Channel or Role Permissions</h2>
 <p>
-  Additionally, it’s possible that you may have been Server Muted or Deafened by
-  an admin or Server Owner. In these cases, you will need to reach out to the
-  server owner or admins to remove the Server Mute or Deafen.
+  Start by identifying whether your audio or video issues are affecting all
+  servers and channels, or just specific ones. This helps narrow down the source
+  of the problem. If you're only experiencing issues in certain servers or
+  channels, it's likely related to permissions. 
 </p>
-<h2 id="h_5423de57-b662-4bb6-9673-698527b2ed58">
-  <strong>Check Channel/Role Permissions</strong>
-</h2>
+<p>
+  In these cases, you'll need to check with the server owner or administrators
+  to ensure you have the necessary voice permissions enabled. These include:
+</p>
 <ul>
+  <li><strong>Connect</strong> - Allows you to join voice channels </li>
+  <li><strong>Speak</strong> - Enables your microphone in voice channels </li>
   <li>
-    Does this voice/audio/video issue happen in all servers, or only within a
-    specific channel or server? 
-  </li>
-  <li>
-    If this issue only occurs in the specific channel or server, you may need to
-    reach out to the server owner or admins to make sure you have the correct
-    role or channel permissions and enable the following voice permissions: 
-    <ul>
-      <li>Connect</li>
-      <li>Speak </li>
-      <li>Video</li>
-    </ul>
+    <strong>Video</strong> - Permits you to share your camera in voice channels
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/12334678122263"
-    alt="channelperms.png"
+    src="https://support.discord.com/hc/article_attachments/30984507039511"
+    width="624"
+    height="433"
   />
 </p>
-<h2 id="h_3e79f2bf-5065-4b06-a958-185dbed8edad">
-  <strong>Check Volume Settings</strong>
-</h2>
+<h4 id="h_01JQCP7H3ZH984PYRCSFRC8RJ1" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Voice Channel Permissions: Connect, Speak, and Video</span
+  >
+</h4>
+<h2 id="h_01JQCP7H3ZQGS5TX8CJWPAXG3F">Volume Settings</h2>
+<p>
+  Having trouble hearing someone specific in a call? You might have accidentally
+  adjusted their individual volume settings. Here's how to fix it:
+</p>
 <ul>
   <li>
-    If you’re not able to hear a specific user in the server or direct call,
-    it’s possible that you may have changed the volume settings for an
-    individual user. <br />
-    <ul>
-      <li>
-        On <strong>Desktop or Browser: </strong>right-click the user’s icon and
-        then change the <strong>User Volume</strong> using the volume slider in
-        the menu.
-      </li>
-      <li>
-        On <strong>Mobile:</strong> in a voice channel/voice call, you can tap
-        on the member’s icon in the top right and select the user. Then, you
-        will be able to change the <strong>Volume Settings</strong> directly by
-        adjusting the volume slider.
-      </li>
-    </ul>
+    <strong>Desktop and Browser Users</strong>: Right-click on the user's
+    profile in the voice channel or voice call and adjust their volume using the
+    slider in the menu that appears.
+  </li>
+  <li>
+    <strong>Mobile Users</strong>: In a voice call, longpress the user’s profile
+    and you'll find a volume slider to adjust their individual volume level.
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19102693855767"
-    alt="image22.gif"
-    width="537"
-    height="298"
+    src="https://support.discord.com/hc/article_attachments/30984500918551"
+    width="449"
+    height="314"
   />
    
   <img
-    src="https://support.discord.com/hc/article_attachments/19102693859223"
-    alt="image7.gif"
-    width="149"
-    height="299"
-  />
+    src="https://support.discord.com/hc/article_attachments/30984507041687"
+    width="151"
+    height="314"
+  />  
 </p>
-<h1 id="h_5a079da6-3cf3-441b-99d3-9ae874dd1bc6">
-  <strong>Desktop Troubleshooting</strong>
-</h1>
+<h4 id="h_01JQCP7H3ZKH3JGYQDEADY1H4D" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Adjusting a user’s volume: Desktop (Left) and Mobile (Right)</span
+  >
+</h4>
 <p>
-  For those of you that have installed our desktop app on your Mac or Windows,
-  here are some troubleshooting steps that might be able to help you out!
+  This simple adjustment often resolves issues when you can't hear a particular
+  person while everyone else sounds fine.
 </p>
-<h2 id="h_0098f091-6bc4-4964-b54c-4e6a7e96cb14">
-  <strong>Initial Steps for Desktop Users</strong>
-</h2>
-<p><strong>🔲   Check that your OS is compatible with our app! </strong></p>
+<h1 id="h_01JQCP7H3ZKFAV3SRRKN380N7S">Desktop Troubleshooting</h1>
+<p>
+  If you've installed our desktop app on Mac or Windows, here are some helpful
+  troubleshooting steps.
+</p>
+<h2 id="h_01JQCP7H3ZVZFK409F1QC6A702">Initial Steps</h2>
+<p>1. Check that your operating system (OS) is compatible with our app. </p>
 <ul>
   <li>
-    <span id="docs-internal-guid-eb99e20a-7fff-6433-c91f-e5e8f22283a6"
-      >Head over to our OS/system requirements </span
-    ><a
+    Head over to our OS/system requirements
+    <a
       href="https://support.discord.com/hc/articles/213491697"
       target="_blank"
       rel="noopener noreferrer"
-      ><span class="wysiwyg-underline" style="color: #1155cc">article</span></a
+      >article</a
     >
     to learn more.
   </li>
 </ul>
-<p>
-  <strong
-    >🔲   Make sure that your OS is fully up to date for your computer! </strong
-  >
-</p>
+<p>2. Make sure that your OS is fully up to date for your computer! </p>
 <ul>
-  <li>You can check this by following these guides here:</li>
-  <ul>
-    <li>
-      <strong>Windows:</strong>
-      <a
-        href="https://support.microsoft.com/en-us/help/12373/windows-update-faq"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.microsoft.com/en-us/help/12373/windows-update-faq</a
-      >
-    </li>
-    <li>
-      <strong>MacOS:</strong>
-      <a
-        href="https://support.apple.com/en-us/HT201541"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.apple.com/en-us/HT201541</a
-      > 
-    </li>
-  </ul>
+  <li>
+    You can check this by following these guides here:
+    <ul>
+      <li>
+        <strong>Windows</strong>:<a
+          href="https://support.microsoft.com/en-us/help/12373/windows-update-faq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.microsoft.com/en-us/help/12373/windows-update-faq</a
+        >
+      </li>
+      <li>
+        <strong>MacOS</strong>:<a
+          href="https://support.apple.com/en-us/HT201541"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.apple.com/en-us/HT201541</a
+        >
+      </li>
+    </ul>
+  </li>
 </ul>
-<p>
-  <strong>🔲   Make sure that your Discord app is fully up to date! </strong>
-</p>
+<p>3. Make sure that your Discord app is fully up to date! </p>
 <ul>
-  <li>You can refresh your client completely by pressing Ctrl/CMD + r. </li>
+  <li>
+    You can refresh your client completely by pressing
+    <strong>Ctrl/CMD + R.</strong> 
+  </li>
   <li>
     Sometimes, you may need to completely exit and quit the active Discord
     program, and then restart Discord.
   </li>
 </ul>
 <p>
-  <strong
-    >🔲   If you’re using a headset/headphones/webcam, make sure your USB or
-    input jack is securely connected to your computer. </strong
-  >
+  4.  If you’re using a headset/headphones/webcam, make sure your USB or input
+  jack is securely connected to your computer. 
 </p>
 <p>
-  <strong
-    >🔲   Check your app permissions for Discord and make sure you have
-    Microphone and Camera enabled permissions for Discord! </strong
-  >
+  5. Check your app permissions for Discord and make sure you have microphone
+  and camera enabled permissions for Discord.
 </p>
 <ul>
   <li>
-    <strong>Windows</strong>:
-    <strong
-      ><a
-        href="https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions</a
-      >
-      or
-      <a
-        href="https://support.discord.com/hc/en-us/articles/360004159932"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.discord.com/hc/en-us/articles/360004159932</a
-      ></strong
+    <strong>Windows users</strong>:
+    <a
+      href="https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Windows App permissions guide</a
+    >
+    or
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360004159932"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord’s [Windows 10] Allowing Access for Microphone &amp; Camera
+      article</a
     >
   </li>
   <li>
-    <strong
-      >Mac:
-      <a
-        href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0</a
-      ></strong
+    <strong>Mac users: </strong
+    ><a
+      href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Change Privacy &amp; Security settings on Mac guide</a
     >
   </li>
 </ul>
+<p class="wysiwyg-text-align-center">
+  <span class="wysiwyg-underline" style="color: #1155cc"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30984507042455"
+      width="516"
+      height="456"
+  /></span>
+</p>
+<h4 id="h_01JQCP7H3ZT6XWPS041XWAJV8C" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Security &amp; Privacy on Mac</span>
+</h4>
+<p>
+  6. For <strong>Windows</strong> users, be sure to check your drivers for
+  audio, webcam, and graphics card. Keeping your device drivers up to date is
+  essential for optimal performance. Visit these official guides to update your
+  drivers:
+</p>
+<ul>
+  <li>
+    <a
+      href="https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Update drivers through Device Manager in Windows</a
+    >
+  </li>
+  <li>
+    <a
+      href="https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Camera doesn't work in Windows</a
+    > 
+  </li>
+</ul>
+<h2 id="h_01JQCP7H3ZMEAQEV4N827D14VV">Voice &amp; Video Setting Steps</h2>
+<p>
+  Follow these steps in your <strong>Voice &amp; Video </strong>settings to
+  troubleshoot common issues:
+</p>
+<p>
+  1. Open <strong>User Settings</strong> by pressing the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/30984507043223"
+    width="24"
+    height="24"
+  />] in the bottom left corner and select <strong>Voice &amp; Video </strong>in
+  the left sidebar. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500923159"
+    width="624"
+    height="425"
+  />
+</p>
+<h4 id="h_01JQCP7H3Z6X1Y1KXFXJ6R75GR" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Navigating to Voice &amp; Video Settings </span>
+</h4>
+<p>
+  2. Under the <strong>Voice</strong> tab, verify your
+  <strong>Input Mode</strong> is set correctly (not accidentally on
+  <strong>Push to Talk</strong>). 
+</p>
 <p class="wysiwyg-text-align-center">
   <strong
     ><img
-      src="https://support.discord.com/hc/article_attachments/19102693861015"
-      alt="image12.png"
-      width="531"
-      height="469"
+      src="https://support.discord.com/hc/article_attachments/30984500923927"
+      width="624"
+      height="427"
   /></strong>
 </p>
+<h4 id="h_01JQCP7H3Z6AF60K5K4XDVXEPR" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Input Mode under Voice Tab</span>
+</h4>
 <p>
-  <strong>🔲   And for PC/Windows Users:</strong
-  ><strong>
-    Check that your sound/audio or webcam/video/graphic card drivers and
-    software are fully up to date! </strong
-  >
+  3. Select the correct input and output devices in the settings for your
+  microphone and speakers/headphones.
 </p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30984507045015"
+      width="624"
+      height="165"
+  /></strong>
+</p>
+<h4 id="h_01JQCP7H3ZCXW401FZQJRVQ0PP" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Input Device and Output Device under Voice Tab</span
+  >
+</h4>
+<p>
+  4. Adjust volume settings for both input and output to appropriate levels.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507045399"
+    width="624"
+    height="168"
+  />
+</p>
+<h4 id="h_01JQCP7H3ZQ5H9NEX2XGN1RZ57" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Input Volume and Output Volume under Voice Tab</span
+  >
+</h4>
+<p>
+  5. If issues persist, try selecting
+  <strong>Reset Voice and Video Settings</strong> under the
+  <strong>Debugging</strong> tab in your
+  <strong>Voice &amp; Video </strong>settings. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30984500928151"
+      width="624"
+      height="300"
+  /></strong>
+</p>
+<h4 id="h_01JQCP7H40ZTH2RHE5PP8WXAR2" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Reset Voice and Video Settings under Debugging Tab</span
+  >
+</h4>
+<p>
+  6. For connection issues, locate
+  <strong>Ensure Quality of Service High Packet Priority</strong> under the
+  <strong>Voice</strong> tab in <strong>Voice &amp; Video </strong>settings.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507047319"
+    width="624"
+    height="80"
+  />
+</p>
+<h4 id="h_01JQCP7H4067XES3RYJMC49QNK" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of enabled Ensure Quality of Service High Packet Priority
+    setting </span
+  >
+</h4>
+<h2 id="h_01JQCP7H4095K4BCZP4VPD86A9">Advanced Steps</h2>
+<p>1. Restart your computer/device. </p>
 <ul>
-  <li>
-    Follow these official guides here for more information on how to update your
-    drivers for your device:
-  </li>
-  <ul>
-    <li>
-      <strong
-        ><a
-          href="https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.microsoft.com/en-us/help/4028443/windows-10-update-drivers</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        ><a
-          href="https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.microsoft.com/en-us/help/13753/windows-10-camera-does-not-work</a
-        ></strong
-      >
-    </li>
-  </ul>
+  <li>This can help complete pending updates and refresh system resources.</li>
 </ul>
-<h2 id="h_d3914a7c-6b16-4aea-ad6d-f3b51ceff99f">
-  <strong>Next Steps for Desktop Users</strong>
-</h2>
-<p>
-  Head into your <strong>Voice &amp; Video Settings</strong> (by clicking on the
-  cog icon in the bottom left corner, and then selecting Voice &amp; Video in
-  the left sidebar) and check these settings below!
-</p>
-<p>
-  <strong
-    >🔲   Check your input mode - Make sure you’re not accidentally on Push to
-    Talk mode.</strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334840393879"
-    alt="input_mode.jpg"
-  />
-</p>
-<p>
-  <strong
-    >🔲   Make sure to check and switch your input/output device in the Voice
-    Settings section to the specific device you’re using!</strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334879876119"
-    alt="voice_settings.jpg"
-  />
-</p>
-<p>
-  <strong
-    >🔲   Check your Volume Settings for your input and output mode!</strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334867652119"
-    alt="voice_settings_input_volume.jpg"
-  />
-</p>
-<p>
-  <strong
-    >🔲   Try resetting your voice and audio settings by pressing “Reset Voice
-    Settings” when you scroll down.</strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334968540183"
-    alt="voice_settings_reset_voice_settings.jpg"
-  />
-</p>
-<p>
-  <strong
-    >🔲   Scroll down to the Quality of Service section and try disabling the 
-    "Ensure Quality of Service High Packet Priority" option.</strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334941609751"
-    alt="voice_settings_enable_quality.jpg"
-  />
-</p>
-<h2 id="h_bb4e45a9-a4e1-4a3b-8fc4-ea67fde14fca">
-  <strong>Advanced Steps for Desktop Users</strong>
-</h2>
-<p><strong>🔲   Restart your computer/device! </strong></p>
+<p>2. Try re-installing the Discord app completely.</p>
 <ul>
   <li>
-    Sometimes a restart will help with updates that are needed on your computer.
-  </li>
-</ul>
-<p><strong>🔲   Try re-installing the Discord app completely</strong></p>
-<ul>
-  <li>
-    Here’s a link to our downloads page if you need the installation file once
-    more:
-    <a
+    Download a fresh copy from<a
       href="https://discord.com/download"
       target="_blank"
       rel="noopener noreferrer"
-      >https://discord.com/download</a
     >
+      discord.com/download</a
+    >
+    and perform a clean installation.
   </li>
 </ul>
-<p>
-  <strong
-    >🔲   Plug your headset/headphones/webcam into all other USB or audio ports
-    on your computer and see if there’s a difference with a new port</strong
-  >
-</p>
-<p><strong>🔲   Disable Krisp Noise Suppression </strong></p>
+<p>3. Test Different USB Ports. </p>
 <ul>
   <li>
-    Go to your <strong>User Settings</strong> &gt;
-    <strong>Voice &amp; Video</strong> and scroll down the page to the
-    <strong>Advanced</strong> section.
-  </li>
-  <li>
-    <strong>Disable</strong> <strong>Noise Suppression</strong> by toggling the
-    button on the right.
+    Try connecting your headset, headphones, or webcam to different USB ports to
+    rule out port-specific issues.
   </li>
 </ul>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/12334980260375"
-      alt="voice_settings_noise_suppression.jpg"
-  /></strong>
-</p>
+<p>4. Disable Krisp Noise Suppression.</p>
 <ul>
   <li>
-    You can learn more about <strong>Krisp</strong> at this Help Center article:
-    <a
+    Navigate to <strong>User Settings</strong> &gt;
+    <strong>Voice &amp; Video settings</strong>. 
+  </li>
+  <li>
+    Under the <strong>Voice</strong> tab, try disabling
+    <strong>Noise Suppression</strong> to see if it improves audio quality. For
+    more details, see the<a
       href="https://support.discord.com/hc/en-us/articles/360040843952-Krisp-FAQ"
       target="_blank"
       rel="noopener noreferrer"
-      >Krisp FAQ</a
     >
-  </li>
-</ul>
-<p>
-  <strong
-    >🔲   Scan your device for any potential viruses and clear the viruses if
-    found.</strong
-  >
-</p>
-<ul>
-  <li>
-    Once the viruses and threats have been completely cleared, try restarting
-    your device, then temporarily disabling your antivirus scanner.
-  </li>
-  <li>Then relaunch Discord to see if there is any impact! </li>
-</ul>
-<p><strong>🔲   Try downloading the beta version of Discord </strong></p>
-<ul>
-  <li>
-    Since it's not officially released yet and is a pre-release build, it may
-    break occasionally, but it’s also a useful testing tool to see if the newest
-    version of code helps resolve your issue!
-  </li>
-  <ul>
-    <li>
-      <strong
-        >Windows:
-        <a
-          href="https://discord.com/api/download/ptb?platform=win"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://discord.com/api/download/ptb?platform=win</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Mac:
-        <a
-          href="https://discord.com/api/download/ptb?platform=osx"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://discord.com/api/download/ptb?platform=osx</a
-        ></strong
-      >
-    </li>
-  </ul>
-</ul>
-<p>
-  <span class="wysiwyg-color-blue"
-    ><strong
-      >🔲   Last but not least, if all of the above didn’t work, send a ticket
-      to our support team at </strong
-    ><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
-      >https://dis.gd/contact</a
-    ><strong> with all the following information:</strong></span
-  >
-</p>
-<ol>
-  <li>A clear description of your issue</li>
-  <li>The OS and OS version you're using (ex: Windows 10)</li>
-  <li>
-    Which clients is this issue occurring on (ex: browser, mobile and/or
-    desktop)?
-  </li>
-  <li>Screenshots of all your Voice &amp; Video settings</li>
-  <li>A list of input and output devices you’re using</li>
-  <li>
-    A copy of your debug log 
-    <ol>
-      <li>
-        You can find this option when you scroll down in your
-        <strong>Voice &amp; Video</strong> settings
-      </li>
-    </ol>
-  </li>
-</ol>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12334938511767"
-    alt="voice_settings_debug_logs.jpg"
-  />
-</p>
-<h2 id="h_0e9d80c8-f9fe-4191-8d1f-b5d30a49a46b">
-  <strong>PC/Window Users Only Troubleshooting Steps</strong>
-</h2>
-<p>
-  <strong
-    >🔲   For PC/Windows users, try running Discord as admin on your
-    device!</strong
-  >
-</p>
-<ul>
-  <li>
-    To do so, right-click the Discord shortcut and click "Run as administrator"
+      Krisp FAQ</a
+    >. 
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/12335022136215"
-    alt="voice_run_as_admin.jpg"
+    src="https://support.discord.com/hc/article_attachments/30984500929431"
+    width="624"
+    height="257"
   />
 </p>
-<p>
-  <strong
-    >🔲   Try disabling optional microphone enhancements on your
-    PC/Windows.</strong
-  >
-</p>
+<h4 id="h_01JQCP7H40WSCCBQDZMN1JPGBS" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Noise Suppression Settings under Voice Tab</span>
+</h4>
+<p>5. Scan your device for any potential malware.</p>
 <ul>
-  <li>
-    Go to the<strong> Sound Control Panel</strong>, choose the<strong>
-      Recording </strong
-    >tab, and right-click on your selected recording device to choose the<strong>
-      Properties </strong
-    >option from the drop-down menu. You can also select your recording device
-    and click on <strong>Properties </strong>in the bottom right-hand corner.
-  </li>
+  <li>Run a complete virus scan on your device.</li>
+  <li>If threats are found, remove them and restart your device.</li>
+  <li>Temporarily disable your antivirus and test Discord again. </li>
 </ul>
-<p class="wysiwyg-text-align-center">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/12335040419351"
-      alt="voice_sound_properties.jpg"
-  /></strong>
-</p>
+<p>6. Try Discord Beta.</p>
 <p>
-  <strong>🔲   </strong>In <strong>Voice &amp; Video </strong>tab<strong
-    >, </strong
-  >scroll down to the <strong>Audio Subsystem</strong> settings, to change your
-  system from <strong>Standard</strong> to <strong>Legacy </strong>(or vice
-  versa)
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12335045789847"
-    alt="voice_audio_subsystem.jpg"
-  />
-</p>
-<p><strong>🔲   For Video Issues in particular:</strong></p>
-<ul>
-  <li>
-    In <strong>Voice &amp; Video tab, </strong>scroll down to the Video Codec
-    section, and try disabling the
-    <strong>H.264 Hardware Acceleration option</strong>
-  </li>
-  <li>
-    If you’re still having an issue while also in the
-    <strong>Voice &amp; Video tab</strong>, please also disable the
-    <strong>AV1 video codec</strong> option.
-  </li>
-</ul>
-<h3 id="h_01HFAJVG003H5D9F857MR7KQJR">
-  If a viewer is seeing high CPU while watching AV1 streams, they may consider
-  disabling the AV1 video codec option.
-</h3>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/12335067230743"
-    alt="voice_settings_video_codec.jpg"
-  />
-</p>
-<h1 id="h_b373929a-d071-46f8-a98b-9f26fa0cfe36">
-  <strong>Browser Troubleshooting</strong>
-</h1>
-<p>
-  If you're logging in through
-  <a href="https://discord.com/">https://discord.com/</a> and using our app on a
-  browser like Chrome, Firefox or Safari, follow these troubleshooting steps to
-  help you resolve your audio, voice, video issues! 
-</p>
-<h2 id="h_2ad277da-bbca-4e4a-abd5-8e2e1ca09184">
-  <strong>Initial Steps for Browser Users</strong>
-</h2>
-<p>
-  <strong
-    >🔲   Check that your browser and browser version is compatible with our
-    app! </strong
-  >
+  Since it's not officially released yet and is a pre-release build, it may
+  break occasionally, but it’s also a useful testing tool to see if the newest
+  version of code helps resolve your issue.
 </p>
 <ul>
   <li>
-    Navigate<a
-      href="https://support.discord.com/hc/en-us/articles/213491697"
+    <strong>Mac</strong>:
+    <a
+      href="https://discord.com/api/download/ptb?platform=osx"
       target="_blank"
       rel="noopener noreferrer"
+      >Download Beta (Mac)</a
     >
-      here</a
+  </li>
+  <li>
+    <strong>Windows</strong>:
+    <a
+      href="https://discord.com/api/download/ptb?platform=win"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Download Beta (Windows)</a
     >
-    to double-check your browser compatibility!
   </li>
 </ul>
 <p>
-  <strong
-    >🔲   Check that you have given permissions to Discord to use your
-    Microphone and Camera with the browser!</strong
+  7. If the above steps didn’t work and the issues persist, submit a ticket to
+  our
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >support team</a
   >
+  with:
+</p>
+<ul>
+  <li>A detailed description of your issue</li>
+  <li>Your OS and version (e.g., Windows 10)</li>
+  <li>Affected clients (browser, mobile, desktop)</li>
+  <li>Screenshots of Voice &amp; Video settings</li>
+  <li>List of input/output devices</li>
+  <li>
+    Debug log (found in <strong>Voice &amp; Video </strong>settings<strong>
+      &gt; Debugging </strong
+    >tab)
+  </li>
+</ul>
+<p id="h_01JQCP7H40MH3MBJ5SB9DFW9WB" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30984500930327"
+      width="624"
+      height="315"
+  /></span>
+</p>
+<h4 id="h_01JQD0CPRJBRM4Z70ZFAB2V4RS" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Debug Logging under Debugging Tab</span>
+</h4>
+<h2 id="h_01JQCP7H4042T06F3PE5NB5MQH">
+  Troubleshooting Steps for PC/Window Users Only 
+</h2>
+<p>1. For PC/Windows users, try running Discord as admin on your device.</p>
+<ul>
+  <li>
+    To do so, right-click the Discord shortcut and select
+    <strong>Run as administrator</strong>. 
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507051671"
+    width="292"
+    height="309"
+  />
+</p>
+<h4 id="h_01JQCP7H40E6KKJR08JWQR6038" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Run as administrator Shortcut</span>
+</h4>
+<p>2. Try disabling optional microphone enhancements on your device.</p>
+<ul>
+  <li>
+    Go to the<strong> Sound Control Panel</strong>, select the<strong>
+      Recording </strong
+    >tab, then right-click your selected recording device to choose the<strong>
+      Properties </strong
+    >option from the drop-down menu. You can also select your recording device
+    and choose <strong>Properties </strong>in the bottom right-hand corner. 
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507052311"
+    width="396"
+    height="445"
+  />
+</p>
+<h4 id="h_01JQCP7H40Y5BBH8AZJDZ1C45D" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Sound Control Panel on Windows</span>
+</h4>
+<p>
+  3. In <strong>Voice &amp; Video </strong>tab, scroll down to the
+  <strong>Audio Subsystem</strong> settings, to change your system from
+  <strong>Standard</strong> to <strong>Legacy </strong>(or vice versa)
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507054359"
+    width="624"
+    height="91"
+  />
+</p>
+<h4 id="h_01JQCP7H4002R8XYNDZSWM5SW7" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Audio Subsystem setting</span>
+</h4>
+<p>
+  4. For video issues in particular,  navigate to
+  <strong>Voice &amp; Video </strong>settings<strong> &gt; Video </strong>tab,
+  scroll down to the <strong>Advanced</strong> section and disable the
+  <strong>Hardware Acceleration</strong>. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507055127"
+    width="624"
+    height="79"
+  />
+</p>
+<h4 id="h_01JQCP7H405M1V7YB5GMQ1YSTA" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of enabled Hardware Acceleration setting </span
+  >
+</h4>
+<h1 id="h_01JQCP7H40183AE8W3ECYQAWA8">Browser Troubleshooting</h1>
+<p>
+  If you're logging in through<a
+    href="https://discord.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    https://discord.com/</a
+  >
+  and using our app on a browser like Chrome, Firefox or Safari, follow these
+  troubleshooting steps to help you resolve your audio, voice, video issues. 
+</p>
+<h2 id="h_01JQCP7H40GRW38JE03F0DCVY2">Initial Steps</h2>
+<p>
+  1. Check that your browser and browser version is compatible with our app. 
 </p>
 <ul>
   <li>
-    <strong>Safari:</strong>
+    Navigate
     <a
+      href="https://support.discord.com/hc/articles/213491697"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >
+    to double-check your browser compatibility.
+  </li>
+</ul>
+<p>
+  2. Check that you have given permissions to Discord to use your microphone and
+  camera with the browser. You can check this by following these guides here:
+</p>
+<ul>
+  <li>
+    <strong>Safari:</strong
+    ><a
       href="https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac"
       target="_blank"
       rel="noopener noreferrer"
-      >https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac</a
+    >
+      https://support.apple.com/guide/safari/websites-ibrwe2159f50/mac</a
     >
   </li>
   <li>
-    <strong>Chrome: </strong
+    <strong>Chrome:</strong
     ><a
       href="https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DDesktop&amp;hl=en"
       target="_blank"
       rel="noopener noreferrer"
-      >https://support.google.com/chrome/answer/2693767</a
+    >
+      https://support.google.com/chrome/answer/2693767?co=GENIE.Platform%3DDesktop&amp;hl=en</a
     >
   </li>
   <li>
-    <strong>Firefox: </strong
+    <strong>Firefox:</strong
     ><a
       href="https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions"
       target="_blank"
       rel="noopener noreferrer"
-      >https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions</a
+    >
+      https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions</a
     >
   </li>
 </ul>
 <p>
-  <strong>🔲   Lastly, try some of these steps in the </strong
-  ><a href="#h_0098f091-6bc4-4964-b54c-4e6a7e96cb14">Desktop Users</a
-  ><strong>
-    section that are relevant for your device and Operating System! </strong
-  >
+  3. Lastly, try some of these steps in the Desktop Users section that are
+  relevant for your device and OS:
 </p>
 <ul>
-  <li><strong>For example:</strong></li>
-  <ul>
-    <li>Make sure that your OS is fully up to date for your computer! </li>
-    <li>
-      If you’re using a headset/headphones/webcam, make sure your USB or input
-      jack is securely connected to your computer. 
-    </li>
-    <li>
-      Check that your sound/audio or webcam/video/graphic card drivers and
-      software are fully up to date! 
-    </li>
-    <li>
-      Plug your headset/headphones/webcam into all other USB or audio ports on
-      your computer and see if there’s a difference with a new port!
-    </li>
-    <li>
-      Scan your device for any potential viruses and clear the viruses if found.
-    </li>
-    <li>Try restarting your computer/device! </li>
-  </ul>
+  <li>Make sure that your OS is fully up to date for your computer.  </li>
+  <li>
+    If you’re using a headset, headphones, or webcam, make sure your USB or
+    input jack is securely connected to your computer. 
+  </li>
+  <li>
+    Try connecting your headset, headphones, or webcam to different USB ports to
+    rule out port-specific issues.
+  </li>
+  <li>
+    Ensure your audio, webcam, and graphics card drivers and software are up to
+    date.
+  </li>
+  <li>
+    Scan your device for any potential malware and remove threats if found.
+  </li>
+  <li>Try restarting your computer/device.</li>
 </ul>
-<h2 id="h_e5496a95-ced9-470b-8df7-e09d6ef13f54">
-  <strong>Next Steps for Browser Users</strong>
-</h2>
+<h2 id="h_01JQCP7H40XZQ9W22DKFVSKFAN">Voice &amp; Video Setting Steps</h2>
 <p>
-  <strong
-    >🔲   Head into your Voice &amp; Video tab (by clicking on the cog icon in
-    the bottom left corner, and then selecting Voice &amp; Video in the left
-    sidebar) and check these settings below!</strong
-  >
+  Navigate to <strong>User Settings</strong> by pressing the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/30984507043223"
+    width="24"
+    height="24"
+  />] in the bottom left corner and select <strong>Voice &amp; Video </strong>in
+  the left sidebar. Here you can: 
 </p>
-<ul>
-  <li>
-    Check your <strong>input mode </strong>- Make sure you’re not accidentally
-    on <strong>Push to Talk</strong> mode
-  </li>
-  <li>Check your volume settings for your input and output mode</li>
-  <li>
-    Make sure to check and switch your input device in the Voice Settings
-    section to the specific device you’re using
-  </li>
-  <li>
-    Try resetting your voice and audio settings by pressing “<strong
-      >Reset Voice Settings</strong
-    >” when you scroll down
-  </li>
-</ul>
+<p>
+  1. Check your input mode to ensure you’re not accidentally on
+  <strong>Push to Talk</strong> mode.
+</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/12335149399447"
-    alt="voice_browser_reset.jpg"
+    src="https://support.discord.com/hc/article_attachments/30984500935319"
+    width="624"
+    height="145"
   />
 </p>
+<h4 id="h_01JQCP7H40J9BQW22GCBDSQ79J" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Input Mode: Voice Activity and Push to Talk (Limited) on Desktop</span
+  >
+</h4>
 <p>
-  <span class="wysiwyg-color-blue"
-    ><strong
-      >🔲   Last but not least, if all of the above didn’t work, send a ticket
-      to our support team at </strong
-    ><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
-      >https://dis.gd/contact</a
-    ><strong> with all the following information:</strong></span
+  2. Review your input and output device settings, adjusting volume levels and
+  making sure the correct input device is selected.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507057687"
+    width="624"
+    height="164"
+  />
+</p>
+<h4 id="h_01JQCP7H40F2AS1RMVCNZG9M73" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Input and Output Device Settings with Volume Controls</span
+  >
+</h4>
+<p>
+  3. Try resetting your voice and audio settings by going to
+  <strong>Voice &amp; Video </strong>settings<strong> &gt; Debugging </strong
+  >tab and pressing <strong>Reset Voice and Video Settings</strong>.<strong
+    > </strong
   >
 </p>
-<ol>
-  <li>A clear description of your issue</li>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500939415"
+    width="624"
+    height="275"
+  />
+</p>
+<h4 id="h_01JQCP7H40X6RJ1Q72BCS0DZZN" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Reset Voice and Video Settings under Debugging Tab</span
+  >
+</h4>
+<p>
+  4. If none of the above steps resolve your issue, submit a ticket to our<a
+    href="https://dis.gd/contact"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    support team</a
+  >
+  with the following information:
+</p>
+<ul>
   <li>
-    The browser and browser version you’re using? (ex: Chrome, Version
-    83.0.4103.106 (Official Build) (64-bit))
+    Your browser and version (for example: Chrome Version 83.0.4103.106
+    (Official Build) (64-bit))
   </li>
-  <li>
-    Which clients is this issue occurring on (ex: browser, mobile and/or
-    desktop)?
-  </li>
+  <li>Where you're experiencing the issue (browser, mobile, or desktop)</li>
   <li>Screenshots of all your Voice &amp; Video settings</li>
-  <li>A list of input and output devices you’re using</li>
-</ol>
-<h1 id="h_2f36a508-3978-454d-b596-a28356d78033">
-  <strong>Mobile Troubleshooting</strong>
-</h1>
+  <li>A list of your input and output devices</li>
+</ul>
+<h1 id="h_01JQCP7H402P86GBTNDFBTHTD4">Mobile Troubleshooting</h1>
 <p>
   If you're using Discord on your mobile device, give these troubleshooting
   steps below a shot! 
 </p>
-<h2 id="h_0c7665e5-aad9-4f67-8e25-e69ba53a8c00">
-  <strong>Initial Steps for Mobile Users</strong>
-</h2>
-<p><strong>🔲   Check that your OS is compatible with our app! </strong></p>
+<h2 id="h_01JQCP7H40HT7ERX7BV6V51A6A">Initial Steps</h2>
+<p>1. Check that your OS is compatible with our app. </p>
 <ul>
   <li>
     Head over to this
-    <a href="https://support.discord.com/hc/en-us/articles/213491697"
+    <a
+      href="https://support.discord.com/hc/articles/213491697"
+      target="_blank"
+      rel="noopener noreferrer"
       >article</a
     >
     to check your OS compatibility.
   </li>
 </ul>
-<p>
-  <strong
-    >🔲   Make sure that your OS is fully up to date for your device!</strong
-  >
-</p>
+<p>2. Make sure that your OS is fully up to date for your device.</p>
 <ul>
-  <li>You can check this by following these guides here: </li>
-  <ul>
-    <li>
-      <strong
-        >iOS Steps:
-        <a
+  <li>
+    You can check this by following these guides here: 
+    <ul>
+      <li>
+        <strong>iOS steps</strong>:<a
           href="https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios"
           target="_blank"
           rel="noopener noreferrer"
-          >https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Android Steps:
-        <a
+        >
+          https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios</a
+        >
+      </li>
+      <li>
+        <strong>Android steps</strong>:<a
           href="https://support.google.com/android/answer/7680439?hl=en"
           target="_blank"
           rel="noopener noreferrer"
-          >https://support.google.com/android/answer/7680439?hl=en</a
-        ></strong
-      >
-    </li>
-  </ul>
+        >
+          https://support.google.com/android/answer/7680439?hl=en</a
+        >
+      </li>
+    </ul>
+  </li>
 </ul>
-<p>
-  <strong>🔲   Make sure that your Discord app is fully up to date! </strong>
-</p>
+<div class="info-box">
+  If you are experiencing low resolution or low quality video on iOS 16.4, we
+  recommend upgrading to iOS 16.5.
+</div>
+<p>3. Make sure that your Discord app is fully up to date. </p>
 <ul>
-  <li>You can manually update your app by following these steps:</li>
-  <ul>
-    <li>
-      <strong
-        >iOS Steps:<a
+  <li>
+    You can manually update your app by following these steps:
+    <ul>
+      <li>
+        <strong>iOS Steps</strong>:<a
           href="https://support.apple.com/en-us/HT202180"
           target="_blank"
           rel="noopener noreferrer"
         >
           https://support.apple.com/en-us/HT202180</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Android Steps:
-        <a
+        >
+      </li>
+      <li>
+        <strong>Android Steps</strong>:<a
           href="https://support.google.com/googleplay/answer/113412?hl=en"
           target="_blank"
           rel="noopener noreferrer"
-          >https://support.google.com/googleplay/answer/113412?hl=en</a
-        ></strong
-      >
-    </li>
-  </ul>
-</ul>
-<h3 id="docs-internal-guid-fbededba-7fff-255b-1551-435a447e1ab5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you are experiencing low resolution or low quality video on iOS 16.4, we
-    recommend upgrading to iOS 16.5.</span
-  >
-</h3>
-<p>
-  <strong
-    >🔲   Check your app permissions for Discord and make sure you have enabled
-    Microphone and Camera permissions for Discord! </strong
-  >
-</p>
-<ul>
-  <li>Check these links for how to enable those permissions: </li>
-  <ul>
-    <li>
-      <strong
-        >iOS Steps:
-        <a
-          href="https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Android Steps:<a
-          href="https://support.google.com/googleplay/answer/6270602?hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.google.com/googleplay/answer/6270602?hl=en</a
-        ></strong
-      >
-    </li>
-  </ul>
-</ul>
-<p><strong>🔲   Try turning off battery saver mode on your device</strong></p>
-<ul>
-  <li>
-    Depending on what kind of device you use, these tips can help you to check: 
-  </li>
-  <ul>
-    <li>
-      <strong
-        >iOS Steps:
-        <a
-          href="https://support.apple.com/en-us/HT205234"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.apple.com/en-us/HT205234</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Android Steps:<a
-          href="https://support.google.com/android/answer/7664692?hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.google.com/android/answer/7664692?hl=en</a
-        ></strong
-      >
-    </li>
-  </ul>
-</ul>
-<p>
-  <strong
-    >🔲   Try switching from wifi to data or data to wifi to see if there’s a
-    difference</strong
-  >
-</p>
-<ul>
-  <li>
-    <strong
-      >iOS Steps:
-      <a
-        href="https://support.apple.com/en-us/HT201299"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://support.apple.com/en-us/HT201299</a
-      ></strong
-    >
-  </li>
-  <li>
-    <strong>Android Steps:</strong> Depending on the manufacturer of your phone,
-    you can switch between data and wifi by tapping into Settings, and then
-    select your Network &amp; Internet options!
-  </li>
-</ul>
-<p><strong>🔲   Check your volume settings for your device</strong></p>
-<ul>
-  <li>Check these links for how to access your volume settings to check: </li>
-  <ul>
-    <li>
-      <strong
-        >iOS Steps:
-        <a
-          href="https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios</a
-        ></strong
-      >
-    </li>
-    <li>
-      <strong
-        >Android Steps:
-        <a
-          href="https://support.google.com/android/answer/9082609?hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          >https://support.google.com/android/answer/9082609?hl=en</a
-        ></strong
-      >
-    </li>
-  </ul>
-</ul>
-<h2 id="h_97c51449-7815-408a-b344-d12a8524a015">
-  <strong>Next Steps for Mobile Users</strong>
-</h2>
-<p>
-  <strong
-    >🔲   Tap on your avatar in the bottom right hand corner to head into your
-    User Settings and then scroll down to press on Voice &amp; Video. </strong
-  >
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/19102679782039"
-    alt="image5.gif"
-    width="368"
-    height="762"
-  />
-</p>
-<ul>
-  <li>
-    Check your <strong>input mode </strong>- Make sure you’re not accidentally
-    on <strong>Push to Talk</strong> mode
-  </li>
-  <li>Check your volume settings for your input and output mode</li>
-  <li>
-    Try enabling and disabling the following settings to see if there’s a
-    difference and is impacting your voice/audio
-  </li>
-  <ul>
-    <li>Auto Sensitivity</li>
-    <li>Noise Suppression</li>
-    <li>Echo Cancellation</li>
-    <li>Noise Reduction</li>
-    <li>Automatic Gain Control</li>
-  </ul>
-</ul>
-<h2 id="docs-internal-guid-91e9ab90-7fff-c6e8-8845-3fb2536ce008">
-  <strong>For iOS </strong>
-</h2>
-<p id="docs-internal-guid-8d0bf51d-7fff-2907-55a9-2628595659a7">
-  <strong>🔲  </strong>If you’re running into any voice related issues while
-  using iOS, you can try the steps below: 
-</p>
-<ul>
-  <li>
-    <strong
-      >Tap on your avatar in the bottom right hand corner to head into your User
-      Settings. </strong
-    >
-  </li>
-</ul>
-<p>
-  Then, scroll to the bottom of the User Settings and press
-  <strong>Clear Caches</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-eac406e4-7fff-6e52-62dd-480f4ebd99e6"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26736649259671"
-      width="265"
-      height="400"
-  /></span>
-</p>
-<ul id="docs-internal-guid-965012a9-7fff-5928-c283-4ff4e4b50eaf">
-  <li>
-    <strong>Next, we can tweak your Voice Settings.</strong>
-    <ul>
-      <li>
-        Go to <strong>User Settings</strong> &gt; <strong>Voice</strong>, then
-        swap between <strong>Voice Activity</strong> and
-        <strong>Push to Talk</strong>
-      </li>
-      <li>
-        Try enabling the <strong>Callkit integration</strong>. This allows you
-        to stay connected to Discord voice while using other applications. If
-        you’d like to learn more about the Callkit integration, you can check
-        out this
-        <a
-          href="https://developer.apple.com/documentation/callkit"
-          target="_blank"
-          rel="noopener noreferrer"
-          >article</a
-        >. 
-        <ul>
-          <li>
-            The option to enable CallKit can be found by going to Discord’s
-            <strong>User Settings </strong>&gt;<strong> Notifications </strong
-            >&gt; enable <strong>“Integrate calls with the Phone app”.</strong>
-          </li>
-          <li>If it’s already enabled, try disabling then re-enabling it.</li>
-        </ul>
+        >
+          https://support.google.com/googleplay/answer/113412?hl=en</a
+        >
       </li>
     </ul>
   </li>
 </ul>
+<p>
+  4. Check your app permissions for Discord and make sure you have enabled
+  microphone and camera permissions for Discord. 
+</p>
+<ul>
+  <li>
+    Follow these guides for instructions on managing those permissions: 
+    <ul>
+      <li>
+        <strong>iOS Steps</strong>:<a
+          href="https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.apple.com/guide/iphone/change-app-access-to-information-iph251e92810/ios</a
+        >
+      </li>
+      <li>
+        <strong>Android Steps</strong>:<a
+          href="https://support.google.com/googleplay/answer/6270602?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.google.com/googleplay/answer/6270602?hl=en</a
+        >
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>5. Try turning off battery saver mode on your device.</p>
+<ul>
+  <li>
+    Depending on what kind of device you use, these tips can help you to check: 
+    <ul>
+      <li>
+        <strong>iOS Steps</strong>:<a
+          href="https://support.apple.com/en-us/HT205234"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.apple.com/en-us/HT205234</a
+        >
+      </li>
+      <li>
+        <strong>Android Steps</strong>:<a
+          href="https://support.google.com/android/answer/7664692?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.google.com/android/answer/7664692?hl=en</a
+        >
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>
+  6.  Try switching from wifi to data or data to wifi to see if there’s a
+  difference.
+</p>
+<ul>
+  <li>
+    <strong>iOS Steps</strong>:<a
+      href="https://support.apple.com/en-us/HT201299"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      https://support.apple.com/en-us/HT201299</a
+    >
+  </li>
+  <li>
+    <strong>Android Steps</strong>: Depending on the manufacturer of your phone,
+    you can switch between data and wifi by tapping into
+    <strong>Settings</strong>, and then select your
+    <strong>Network &amp; Internet</strong> options.
+  </li>
+</ul>
+<p>7. Check your volume settings for your device.</p>
+<ul>
+  <li>
+    Check these links for how to access your volume settings: 
+    <ul>
+      <li>
+        <strong>iOS Steps</strong>:<a
+          href="https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios</a
+        >
+      </li>
+      <li>
+        <strong>Android Steps</strong>:<a
+          href="https://support.google.com/android/answer/9082609?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://support.google.com/android/answer/9082609?hl=en</a
+        >
+      </li>
+    </ul>
+  </li>
+</ul>
+<h2 id="h_01JQCP7H40GCKDWFDGWKSAXZJG">Voice Setting Steps</h2>
+<p>
+  Follow these steps in your <strong>Voice </strong>settings to troubleshoot
+  common issues on mobile:
+</p>
+<p>
+  1. Tap your <strong>avatar</strong> in the bottom-right corner, then tap the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/30984500940055"
+    width="24"
+    height="24"
+  />] in the upper-right corner to open your <strong>User Settings</strong>.
+  Scroll down and tap <strong>Voice</strong>.
+</p>
 <p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-e0cef370-7fff-9b3f-c7ff-a0a378d23f9e"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26736681385367"
-      width="324"
-      height="326"
-  /></span>
-   
-  <img
-    src="https://support.discord.com/hc/article_attachments/26736681389079"
-    width="323"
-    height="327"
+   <img
+    src="https://support.discord.com/hc/article_attachments/30984507060247"
+    width="242"
+    height="504"
   />
 </p>
-<p id="docs-internal-guid-d9db40b8-7fff-a55d-55f8-e0b1be78059a">
-  <strong>🔲 </strong>Additionally, if you’re experiencing output issues, be
-  sure to have the correct output selected.
+<h4 id="h_01JQCP7H40E1FTRS5EC63WSWET" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Navigating to Voice settings on Mobile</span>
+</h4>
+<p>
+  2. Check your <strong>input mode </strong>to ensure you’re not accidentally on
+  <strong>Push to Talk</strong> mode.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507060503"
+    width="248"
+    height="518"
+  />
+</p>
+<h4 id="h_01JQCP7H40GQB1CDX9DXCB31SJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Input Mode: Push to Talk and Voice Activity</span
+  >
+</h4>
+<p>
+  3. Review your input and output device settings, adjusting volume levels and
+  making sure the correct input device is selected.
+</p>
+<p>
+  4. Try enabling and disabling the following settings to see if there’s a
+  difference and is impacting your voice/audio:
+</p>
+<ul>
+  <li>Auto Sensitivity</li>
+  <li>Noise Suppression</li>
+  <li>Echo Cancellation</li>
+  <li>Noise Reduction</li>
+  <li>Automatic Gain Control</li>
+</ul>
+<h2 id="h_01JQCP7H407BQ4WFJ5BJ32EWE2">For iOS </h2>
+<p>
+  If you’re running into any voice related issues while using iOS, you can try
+  the steps below: 
+</p>
+<p>
+  1. Tap your <strong>avatar</strong> in the bottom-right corner, then tap the
+  <strong>cogwheel</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/30984500940055"
+    width="24"
+    height="24"
+  />] in the upper-right corner to open your <strong>User Settings</strong>.
+  Scroll down and tap <strong>Voice</strong>.
+</p>
+<p>
+  2. Then, scroll to <strong>Developer Settings </strong>and tap
+  <strong>Cache Actions</strong> <strong>&gt;</strong>
+  <strong>Clear Caches</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500941591"
+    width="233"
+    height="484"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500941847"
+    width="232"
+    height="484"
+  />
+</p>
+<h4 id="h_01JQCP7H40NT4F690CQW8VFX74" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Settings: Cache Actions (Left) and Clear Caches (Right) </span
+  >
+</h4>
+<p>3. Next, we can tweak your <strong>Voice</strong> settings.</p>
+<ul>
+  <li>
+    Go to <strong>User Settings</strong> &gt; <strong>Voice</strong>, then swap
+    between <strong>Voice Activity</strong> and <strong>Push to Talk</strong>.
+  </li>
+  <li>
+    Try enabling the <strong>CallKit integration</strong>. This allows you to
+    stay connected to Discord voice while using other applications. If you’d
+    like to learn more about the CallKit integration, you can check out this
+    <a
+      href="https://developer.apple.com/documentation/callkit"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    >. 
+    <ul>
+      <li>
+        The option to enable CallKit can be found by going to Discord’s
+        <strong>User Settings </strong>&gt;<strong> Notifications </strong>&gt;
+        enable <strong>Integrate calls with the Phone app.</strong>
+      </li>
+      <li>If it’s already enabled, try disabling then re-enabling it.</li>
+    </ul>
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500942999"
+    width="321"
+    height="400"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500943767"
+    width="367"
+    height="400"
+  />
+</p>
+<h4 id="h_01JQCP7H402W9M5HD3TRT3B7AH" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Settings: Notifications (Left) and Integrate calls with Phone app
+    (Right) </span
+  >
+</h4>
+<p>
+  4. Additionally, if you’re experiencing output issues, be sure to have the
+  correct output selected.
 </p>
 <ul>
   <li>
@@ -1147,59 +1112,296 @@
       href="https://developer.apple.com/airplay/"
       target="_blank"
       rel="noopener noreferrer"
-      >Airplay</a
+      >AirPlay</a
+    ><strong>.</strong>
+    <ul>
+      <li>
+        The <strong>AirPlay</strong> button can be found when pressing on
+        the<strong> bluetooth </strong>icon while in a call. You can, then,
+        select the Bluetooth device that you’d like to connect to Discord.
+      </li>
+    </ul>
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984500944663"
+    width="243"
+    height="506"
+  />
+   
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507064471"
+    width="234"
+    height="506"
+  />
+</p>
+<h4 id="h_01JQCP7H404CP6JGKF5GF35ZSM" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Accessing AirPlay on iOS: Bluetooth icon (Left) and AirPlay selection menu
+    (Right) </span
+  >
+</h4>
+<div class="info-box">
+  If you are using Discord via iOS, you will have to enable AirPlay to select an
+  external output source if you prefer not to use speakerphone.   
+</div>
+<p>
+  5. If you're still experiencing issues after trying all the above steps,
+  submit a ticket to our
+  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >support team</a
+  >
+  with the following information:
+</p>
+<ul>
+  <li>A clear description of your issue</li>
+  <li>Your device and OS version (for example: iPadOS 13, iOS 13, iOS 16)</li>
+  <li>Your Discord app version (for example: Version 26.1)</li>
+  <li>
+    Which clients you're experiencing the issue on (browser, mobile, and/or
+    desktop)
+  </li>
+  <li>Screenshots of all your Voice &amp; Video settings</li>
+  <li>A list of input and output devices you're using (if applicable)</li>
+</ul>
+<h1 id="h_01JQCP7H404EP0EMMB05BXBXK1">Discord Audio Issues and Fixes</h1>
+<p>
+  Experiencing Discord audio issues? Let's explore some quick troubleshooting
+  steps to resolve the most common audio issues, and get you back to chatting
+  with your friends. If you're experiencing issues where you can't hear anyone
+  on Discord or other users' audio isn't coming through, follow the
+  troubleshooting steps below.
+</p>
+<h2 id="h_01JQCP7H409S9SW6MS80S6X0JV">No Sound from Others</h2>
+<p>
+  If you can't hear other users in voice channels even though you see the green
+  indicator around their icons, follow these steps:
+</p>
+<p>
+  1. Make sure your operating system and audio drivers are up to date—outdated
+  drivers are a common cause of audio issues.
+</p>
+<p>
+  2. Verify your output device settings in Discord by navigating to
+  <strong>User Settings &gt; Voice &amp; Video settings</strong>. 
+</p>
+<p>
+  3. Under the <strong>Voice</strong> tab, check the
+  <strong>Output Device</strong> dropdown menu. Make sure it matches the audio
+  device you want to use.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507066263"
+    width="624"
+    height="208"
+  />
+</p>
+<h4 id="h_01JQCP7H40NX7PQFWMX8VBQEK1" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Output Device under Voice tab on Desktop</span>
+</h4>
+<p>
+  4. Still no sound? Double-check your PC's playback devices and ensure your
+  preferred audio device is enabled. As a last resort, try disabling other audio
+  devices and launching Discord as administrator.
+</p>
+<p>5. Ensure you're not deafened or the channel volume isn't muted. </p>
+<div class="form-box">
+  If you're still experiencing issues after trying all the above steps,
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >submit a ticket to our support team</a
+  >
+</div>
+<h2 id="h_01JQCP7H40PC6CQ1BEDJDDG4WY">Microphone Not Working</h2>
+<p>
+  Is your microphone not working in Discord? Follow these simple steps to get
+  back to chatting:
+</p>
+<p>
+  1. Update your system and audio drivers first - this resolves many common
+  audio issues quickly.
+</p>
+<p>
+  2. Check your Discord input settings by going to
+  <strong>User Settings &gt; Voice &amp; Video </strong>settings<strong>
+    &gt; Voice </strong
+  >tab. 
+</p>
+<p>
+  3. Select your microphone from the <strong>Input Device</strong> dropdown
+  menu. Use the <strong>Mic Test</strong> feature by pressing the
+  <strong>Let's Check </strong>button to confirm your microphone works.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/31566590424471"
+    width="215"
+    height="66"
+  />   <img
+    src="https://support.discord.com/hc/article_attachments/31566592178455"
+    width="463"
+    height="67"
+  />
+</p>
+<h4 id="h_01JQCP7H40V0RW4GWWJXQVAGQ8" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Input Device (left) and Mic Test (right)</span>
+</h4>
+<p>
+  4. Look for the mute icon [<img
+    src="https://support.discord.com/hc/article_attachments/30984500948119"
+    width="24"
+    height="24"
+  />] in your channel or server. Remember that server permissions might affect
+  your ability to speak.
+</p>
+<p>
+  5. As a last resort, restart your device and reset your voice settings at
+  <strong>User Settings &gt; Voice &amp; Video &gt; Debugging </strong
+  >tab<strong> &gt; Reset Voice and Video Settings</strong> to restore
+  everything.
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/30984500928151"
+      width="624"
+      height="300"
+  /></strong>
+</p>
+<h4 id="h_01JQCP7H40ZP489MY3PVHHBQWD" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Reset Voice and Video Settings under Debugging tab</span
+  >
+</h4>
+<div class="form-box">
+  If you're still experiencing issues after trying all the above steps,
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >submit a ticket to our support team</a
+  >
+</div>
+<h2 id="h_01JQCP7H402NFRJ76G262WJD8J">Audio Quality Issues</h2>
+<p>
+  If you're experiencing intermittent audio issues or choppy sound quality, try
+  these solutions:
+</p>
+<p>1. Test your internet connection speed and stability.</p>
+<p>
+  2. Head into
+  <strong>User Settings &gt; Voice &amp; Video </strong>settings<strong>
+    &gt; Voice </strong
+  >tab to disable the
+  <strong>Enable Quality of Service High Packet Priority</strong> setting. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507068567"
+    width="624"
+    height="101"
+  />
+</p>
+<h4 id="h_01JQCP7H40T8BK21S4VH82ZZBY" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Enable Quality of Service High Packet Priority setting on Desktop</span
+  >
+</h4>
+<p>
+  3. For optimal performance, close any resource-heavy applications running in
+  the background.
+</p>
+<div class="form-box">
+  If you're still experiencing issues after trying all the above steps,
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >submit a ticket to our support team</a
+  >
+</div>
+<h2 id="h_01JQCP7H40X208RY24R8HPQC7F">Screen Share Issues</h2>
+<p>If you're having trouble with screen sharing, follow these steps:</p>
+<p>
+  1. Check that Discord has permission to access your screen in your system
+  settings.
+</p>
+<p>
+  2. Update your device's drivers and operating system to the latest versions.
+</p>
+<p>
+  3. Try adjusting these Discord settings under
+  <strong>User Settings &gt; Voice &amp; Video </strong>settings. Under the
+  <strong>Video </strong>tab, disable <strong>Hardware Acceleration</strong>. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/30984507055127"
+    width="624"
+    height="79"
+  />
+</p>
+<h4 id="h_01JQCP7H40BKQ1GB6JEGFHRMYK" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Hardware Acceleration setting on Desktop</span>
+</h4>
+<p>
+  4. If issues persist, try lowering your screen share quality and frame rate
+  settings. 
+</p>
+<p>
+  5. Make sure you have enough bandwidth - screen sharing requires a stable
+  internet connection.
+</p>
+<div class="form-box">
+  If you're still experiencing issues after trying all the above steps,
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >submit a ticket to our support team</a
+  >
+</div>
+<h1 id="h_01JQCP7H413Q53QS822HXSMEHX">Discord Video Issues and Fixes</h1>
+<p>
+  Having video issues with Discord? Let's walk through some troubleshooting
+  steps to fix common video problems and get your stream working again. If you
+  can't
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Go Live</a
+  >
+  or you're experiencing poor stream quality, try the steps below.
+</p>
+<p>
+  1. Keep your device's operating system and drivers up-to-date and your
+  graphics card software.
+</p>
+<p>
+  2. Head over to
+  <strong>User Settings &gt; Voice &amp; Video &gt; Video</strong>, then disable
+  <strong>Hardware Acceleration</strong> to see if that helps. 
+</p>
+<p>
+  3. If all else fails, see if the newest version of code helps resolve your
+  issue.
+</p>
+<ul>
+  <li>
+    <strong>Mac</strong>:
+    <a
+      href="https://discord.com/api/download/ptb?platform=osx"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Download Beta (Mac)</a
+    >
+  </li>
+  <li>
+    <strong>Windows</strong>:
+    <a
+      href="https://discord.com/api/download/ptb?platform=win"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Download Beta (Windows)</a
     >
   </li>
 </ul>
-<p class="wysiwyg-text-align-left">
-  The <strong>Airplay</strong> button can be found when pressing on the<strong>
-    bluetooth </strong
-  >icon while in a call. You can, then, select the Bluetooth device that you’d
-  like to connect to Discord.
-</p>
-<p class="wysiwyg-text-align-center">
-  <span id="docs-internal-guid-647d2e6f-7fff-2c61-1f66-c243c8f93fce"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26736649272215"
-      width="264"
-      height="486"
-    />
-      </span
-  ><img
-    src="https://support.discord.com/hc/article_attachments/26736649273495"
-    width="264"
-    height="486"
-  />
-</p>
-<h3 id="h_01HFAJVG02DPW5FKSBXG70WKDC" class="wysiwyg-text-align-left">
-  <span
-    id="docs-internal-guid-7baad4f9-7fff-0d3b-dc2d-dfe4cdb971a2"
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    >Note: If you are using Discord via iOS, you will have to enable Airplay to
-    select an external output source if you prefer not to use speakerphone.  
-  </span>
-</h3>
-<p class="wysiwyg-text-align-left">
-  <span class="wysiwyg-color-blue"
-    ><strong
-      >🔲   Last but not least, if all of the above didn’t work, send a ticket
-      to our support team at </strong
-    ><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
-      >https://dis.gd/contact</a
-    ><strong> with all the following information:</strong></span
-  >
-</p>
-<ol>
-  <li>A clear description of your issue</li>
-  <li>
-    The device and OS version you’re using? (ex. ipadOS 13, iOS 13, iOS 16)
-  </li>
-  <li>The Discord app version you’re using (ex: Version 26.1)</li>
-  <li>
-    Which clients is this issue occurring on (ex: browser, mobile and/or
-    desktop)?
-  </li>
-  <li>Screenshots of all your Voice &amp; Video settings</li>
-  <li>(If applicable) A list of input and output devices you’re using</li>
-</ol>
+<div class="form-box">
+  If you're still experiencing issues after trying all the above steps,
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >submit a ticket to our support team</a
+  >.
+</div>
