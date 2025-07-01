@@ -4504,6 +4504,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   text-align: start;
   transition:
     background-color 50ms ease-in,
+    border-color 50ms ease-in,
     opacity 50ms ease-in;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -4512,6 +4513,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .button__6af3a:hover {
   transition:
     background-color 0.15s ease-out,
+    border-color 0.15s ease-out,
     opacity 0.15s ease-out;
 }
 .button__6af3a:disabled {
@@ -4678,6 +4680,48 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background-color: var(--control-background-tertiary-active);
   border-color: var(--control-border-tertiary-active);
   color: var(--control-text-tertiary-active);
+}
+.color-mix__6af3a {
+  background-color: transparent;
+  border: transparent;
+  color: var(--control-text-tertiary-default);
+}
+.color-mix__6af3a:hover {
+  color: var(--control-text-tertiary-hover);
+}
+.color-mix__6af3a:active {
+  color: var(--control-text-tertiary-active);
+}
+.color-mix__6af3a:before {
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: 0;
+  mix-blend-mode: plus-lighter;
+  position: absolute;
+  top: 0;
+  transition:
+    background-color 50ms ease-in,
+    border-color 50ms ease-in,
+    opacity 50ms ease-in;
+  width: 100%;
+}
+.color-mix__6af3a:hover:before {
+  background-color: var(--control-background-tertiary-hover);
+  border-color: var(--border-subtle);
+  transition:
+    background-color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    opacity 0.15s ease-out;
+}
+.color-mix__6af3a:active:before {
+  background-color: var(--control-background-tertiary-active);
+  border-color: var(--border-subtle);
+}
+.theme-light .color-mix__6af3a:before {
+  mix-blend-mode: difference;
 }
 .critical-primary__6af3a {
   background-color: var(--control-background-critical-primary-default);
@@ -57846,4 +57890,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e0786cfa90b11a1c.css.map*/
+/*# sourceMappingURL=12633.0a7e7f130a7b7c20.css.map*/
