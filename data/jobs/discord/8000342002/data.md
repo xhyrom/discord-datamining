@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8000342002](https://discord.com/jobs/8000342002)
 
-**Updated At:** Tue, 24 Jun 2025 13:06:39 GMT
+**Updated At:** Wed, 02 Jul 2025 20:56:26 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Senior Revenue Accountant will take on the month-end revenue close process and prepare workpapers to ensure revenue numbers are in accordance with U.S GAAP each period. You will assist in SOX compliance and ensure controls are being effectively performed and documented. You will work with the team to identify inefficiencies and work cross-functionally with our business partners to streamline the revenue reporting process. As the company grows, you will have the opportunity to help develop our accounting policies, in accordance with U.S GAAP, for new revenue streams. This hire will report to the Senior Manager of Revenue Accounting.&amp;nbsp;
@@ -30,7 +30,8 @@ What you should have
 BS/BA in Accounting/Finance, CPA license preferred
 4+ years in Accounting, including public accounting experience
 Experience with ASC 606 guidance under a SaaS revenue model
-Strong organizational, verbal, analytical, and written communication skills
+Experience analyzing revenue contracts, including multiple element arrangements, in accordance with ASC 606
+Strong organizational, verbal, analytical, and written communication&amp;nbsp;skills
 Strong accounting research and problem-solving skills
 Highly detail-oriented and able to multitask—must be able to pivot quickly and thrive in a fast-paced environment.
 Strong quantitative and qualitative analytical skills – must have significant experience in Microsoft and Google applications
