@@ -1,0 +1,27 @@
+{
+  "id": 33208314215063,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33208314215063.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/33208314215063-How-to-Set-Up-a-Discord-Server-Video-Tutorial",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 33024419968279,
+  "created_at": "2025-07-02T17:23:11Z",
+  "name": "How to Set Up a Discord Server - Video Tutorial",
+  "title": "How to Set Up a Discord Server - Video Tutorial",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-07-02T17:23:19Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "video",
+    "server setup",
+    "discord server"
+  ]
+}

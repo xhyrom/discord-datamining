@@ -11,7 +11,7 @@
 </p>
 <p>
   If your server is approaching its member size limit, you’ll need to send in a
-  request to our team to grow past 1.5 million (1,500,000) members! At that
+  request to our team to grow past 2.5 million (2,500,000) members! At that
   point, we will review your server and decide whether your server qualifies for
   a server member cap increase.
 </p>

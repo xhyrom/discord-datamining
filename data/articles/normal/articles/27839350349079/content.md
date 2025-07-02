@@ -74,7 +74,7 @@
     >Availability Period: </strong
   >The <strong>Summer Kickoff Quest</strong> can be accepted on
   <strong>PC</strong>, <strong>PlayStation</strong> <strong>4/5</strong>, and
-  <strong>Xbox</strong> <strong>Series S/X</strong>. from
+  <strong>Xbox</strong> <strong>Series S/X </strong>from
   <strong>June 25, 2025</strong> until
   <strong>June 30, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
   requirements during this period and claim your reward by
@@ -129,35 +129,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: MTG Arena<br /></strong
-  ><strong>Quest Name: MTG x FINAL FANTASY Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 20 minutes of
-  <strong>MTG Arena </strong>to receive
-  <strong>Limited FINAL FANTASY Sleeves</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to players in the<strong> United States </strong>who have access to
-  <strong>MTG Arena </strong>and<strong> Discord </strong>on PC.<span
-    style="background-color: #ffffff"
-    data-darkreader-inline-bgcolor=""
-  >
-    Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The<strong>
-    MTG x FINAL FANTASY Quest</strong
-  >
-  can be accepted on <strong>PC</strong> from
-  <strong>June 24, 2025</strong> until
-  <strong>June 30, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>June 16, 2026 (11:59 PM UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Video: The Old Guard 2<br /></strong
   ><strong>Quest Name: The Old Guard 2 Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
@@ -181,41 +152,6 @@
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
     ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Rainbow Six Siege X<br /></strong
-  ><strong
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    >Quest Name: R6 Siege X Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Rainbow Six Siege X </strong>to receive
-  <strong>4 Operators (Doc, IQ, Blitz, Pulse)</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to players that are +18 in the<strong> United States</strong
-  >,<strong> Great Britain</strong>,<strong> France</strong>,<strong>
-    Germany</strong
-  >,<strong> Australia</strong>, <strong>Canada</strong>, and
-  <strong>Italy </strong>who have access to
-  <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC and
-  console.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The<strong> R6 Siege X Quest</strong>
-  can be accepted on <strong>PC </strong>and <strong>console</strong> from
-  <strong>June 20, 2025</strong> until
-  <strong>June 26, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>June 25, 2025 (4:34PM UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
     account.</span
   >
 </p>
@@ -672,9 +608,8 @@
     target="_blank"
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
-  >! <br /><strong
-    >Other Terms: Limit of one reward redemption per account.<br /><br
-  /></strong>
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.<strong><br /><br /></strong>
 </p>
 <p>
   <strong>Quest Video: Discord Orbs Intro <br /></strong
@@ -881,34 +816,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Video: Nobody 2 Trailer<br /></strong
-  ><strong>Quest Name: Nobody 2 Trailer Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the<strong> Nobody 2 Trailer </strong
-  >in Discord to receive 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >!<br /><strong>Who is Eligible: </strong>Available to users that are 18+ on
-  desktop and browser where <strong>Discord</strong> is available. Discord’s
-  premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Nobody 2 Trailer</strong> can be accepted on Discord desktop app
-  or browser client from <strong>May 13, 2025 </strong>until<strong>
-    May 19, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 19, 2025 (11:59 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Fortnite<br /></strong
   ><strong>Quest Name: Fortnite Galactic Battle Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -936,37 +843,6 @@
     data-darkreader-inline-color=""
     data-darkreader-inline-bgcolor=""
     ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: SID MEIER'S CIVILIZATION® VII - VR TRAILER<br /></strong
-  ><strong>Quest Name: Civilization® VII - VR Trailer Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the<strong>
-    SID MEIER'S CIVILIZATION® VII - VR TRAILER </strong
-  >in Discord to receive 1 day of
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Nitro</span
-    ></a
-  >!<br /><strong>Who is Eligible: </strong>Available to users in the
-  <strong>United States</strong> on desktop and browser where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Civilization® VII - VR Trailer Quest</strong> can be accepted on
-  Discord desktop app or browser client from
-  <strong>May 5, 2025 </strong>until<strong> May 26, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 26, 2025 (11:59 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
     account.</span
   >
 </p>
@@ -1001,184 +877,6 @@
     >Avatar Decoration for longer</a
   >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
   account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Delta Force<br /></strong
-  ><strong>Quest Name: Global Launch Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>Delta Force</strong> to receive a
-  <strong>Hackclaw Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to players in the <strong>United</strong> <strong>States</strong>,
-  <strong>Canada</strong>, <strong>Great</strong> <strong>Britain</strong>,
-  <strong>France</strong>, <strong>Germany</strong>, <strong>Spain</strong>,
-  <strong>Japan</strong>, <strong>Korea</strong>, <strong>Poland</strong>,
-  and<strong> Italy</strong> on desktop where both <strong>Discord</strong> and
-  <strong>Delta Force</strong> are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period: </strong>The
-  <strong>Global Launch Quest</strong> can be accepted on Discord from
-  <strong>April 21, 2025 </strong>until
-  <strong>April 27, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>May 27, 2025 (0:00 UTC</strong>). <br />The
-  <strong>Hackclaw Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>June 27, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Avatar Decoration for longer</span
-    ></a
-  >! <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Fortnite Reload <br /></strong
-  ><strong>Quest Name: Fortnite Reload Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 30 minutes of
-  <strong>Fortnite Reload </strong>to receive a
-  <strong>Slurp Barrel Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on PC, PlayStation 4, Playstation 5, Xbox Series X, and
-  Xbox Series S where <strong>Discord</strong> and <strong>Fortnite</strong> are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Fortnite Reload Quest</strong> can be accepted on
-  <strong>PC</strong>,<strong> PlayStation 4</strong>,<strong>
-    Playstation 5</strong
-  >,<strong> Xbox Series X</strong>, and<strong> Xbox Series S</strong> from
-  <strong>April 15, 2025 </strong>until<strong>
-    April 20, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 20, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Slurp Barrel Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>June 20, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Gameplay Reveal Trailer<br /></strong
-  ><strong>Quest Name: Marathon Reveal Quest<br /></strong
-  ><strong>Offer Details:</strong> Watch
-  <strong>Gameplay Reveal Trailer </strong>in Discord to receive a
-  <strong>Signal from Tau Ceti Avatar Decoration.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to users in the
-  <strong>United States</strong>, <strong>Great Britain</strong>,
-  <strong>France</strong>, <strong>Germany</strong>, and<strong> Japan</strong>
-  on desktop where <strong>Discord</strong> is available. Discord’s premium
-  services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Marathon Reveal Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>April 14, 2025 </strong>until<strong>
-    April 20, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 20, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Signal from Tau Ceti Avatar Decoration</strong> is a limited-time
-  Avatar Decoration and will only be yours as an Avatar Decoration until
-  <strong>June 20, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.<br
-  /></span>
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Marvel Rivals<br /></strong
-  ><strong>Quest Name: Marvel Rivals S2 Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Marvel Rivals </strong>to receive an
-  <strong>Emma Frost Avatar Decoration.</strong> <br /><strong
-    >Who is Eligible: </strong
-  >Available to users in the <strong>United States</strong>,
-  <strong>Canada</strong>, and <strong>Great Britain</strong> on PC, PlayStation
-  5, Xbox Series X, and Xbox Series S where <strong>Discord</strong> and
-  <strong>Marvel Rivals </strong>are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Marvel Rivals S2 Quest</strong> can be accepted on
-  <strong>PC, PlayStation 5, Xbox Series X, and Xbox Series S</strong> from
-  <strong>April 11, 2025 (6:00PM UTC) </strong>until<strong>
-    April 18, 2025 (6:00PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 18, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Emma Frost Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>June 18, 2025 (6:00PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Path of Exile 2 <br /></strong
-  ><strong>Quest Name: Path of Exile 2 Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Path of Exile 2 </strong>to receive a
-  <strong>Face of Corruption Avatar Decoration.</strong> <br /><strong
-    >Who is Eligible: </strong
-  >Available to users in the <strong>United States</strong>,
-  <strong>Brazil</strong>, <strong>Great Britain</strong>,
-  <strong>France</strong>, <strong>Germany</strong>, <strong>Japan</strong>,
-  <strong>Thailand</strong>, and <strong>Poland</strong> on PC, PlayStation 4,
-  PlayStation 5, Xbox Series X, and Xbox Series S where
-  <strong>Discord</strong> and <strong>Path of Exile 2 </strong>are available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Path of Exile 2 Quest</strong> can be accepted on
-  <strong
-    >PC, PlayStation 4, PlayStation 5, Xbox Series X, and Xbox Series S</strong
-  >
-  from <strong>April 11, 2025 (11:59PM UTC) </strong>until<strong>
-    April 17, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>May 17, 2025 (0:00 UTC)</strong>.<br />The
-  <strong>Face of Corruption Avatar Decoration</strong> is a limited-time avatar
-  decoration and will only be yours as an Avatar Decoration until
-  <strong>June 17, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
 </p>
 <p>
   <strong
