@@ -4,6 +4,15 @@
   hobbies, we'll walk you through the steps to create a server as well as share
   the different features and tools to manage it.
 </p>
+<p>
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9"
+    src="//www.youtube-nocookie.com/embed/j1aUDPcxxKQ?&amp;rel=0"
+    frameborder="0"
+    allowfullscreen=""
+    allow="encrypted-media"
+  ></iframe>
+</p>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span

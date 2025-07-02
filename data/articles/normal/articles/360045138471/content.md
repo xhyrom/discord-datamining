@@ -6,6 +6,15 @@
   This troubleshooting guide will walk you through common solutions for audio
   and video issues to get you back to chatting with your friends in no time.
 </p>
+<p>
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9"
+    src="//www.youtube-nocookie.com/embed/-bDPrWeabJg?&amp;rel=0"
+    frameborder="0"
+    allowfullscreen=""
+    allow="encrypted-media"
+  ></iframe>
+</p>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -118,7 +127,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H3Z06SE0NPT0DYZAG07" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Mic and Headset Icon</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Mic and Headset Icon</span
+  >
 </h4>
 <div class="info-box">
   Keep in mind that server administrators can also mute or deafen users at the
@@ -151,7 +162,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H3ZH984PYRCSFRC8RJ1" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Voice Channel Permissions: Connect, Speak, and Video</span
   >
 </h4>
@@ -185,7 +196,7 @@
   />  
 </p>
 <h4 id="h_01JQCP7H3ZKH3JGYQDEADY1H4D" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Adjusting a user’s volume: Desktop (Left) and Mobile (Right)</span
   >
 </h4>
@@ -286,7 +297,10 @@
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
-  <span class="wysiwyg-underline" style="color: #1155cc"
+  <span
+    class="wysiwyg-underline"
+    style="color: #1155cc"
+    data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/30984507042455"
       width="516"
@@ -294,7 +308,9 @@
   /></span>
 </p>
 <h4 id="h_01JQCP7H3ZT6XWPS041XWAJV8C" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Security &amp; Privacy on Mac</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Security &amp; Privacy on Mac</span
+  >
 </h4>
 <p>
   6. For <strong>Windows</strong> users, be sure to check your drivers for
@@ -342,7 +358,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H3Z6X1Y1KXFXJ6R75GR" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Navigating to Voice &amp; Video Settings </span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Navigating to Voice &amp; Video Settings </span
+  >
 </h4>
 <p>
   2. Under the <strong>Voice</strong> tab, verify your
@@ -358,7 +376,9 @@
   /></strong>
 </p>
 <h4 id="h_01JQCP7H3Z6AF60K5K4XDVXEPR" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Input Mode under Voice Tab</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Input Mode under Voice Tab</span
+  >
 </h4>
 <p>
   3. Select the correct input and output devices in the settings for your
@@ -373,7 +393,7 @@
   /></strong>
 </p>
 <h4 id="h_01JQCP7H3ZCXW401FZQJRVQ0PP" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Input Device and Output Device under Voice Tab</span
   >
 </h4>
@@ -388,7 +408,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H3ZQ5H9NEX2XGN1RZ57" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Input Volume and Output Volume under Voice Tab</span
   >
 </h4>
@@ -407,7 +427,7 @@
   /></strong>
 </p>
 <h4 id="h_01JQCP7H40ZTH2RHE5PP8WXAR2" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Reset Voice and Video Settings under Debugging Tab</span
   >
 </h4>
@@ -424,7 +444,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H4067XES3RYJMC49QNK" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of enabled Ensure Quality of Service High Packet Priority
     setting </span
   >
@@ -480,7 +500,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40WSCCBQDZMN1JPGBS" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Noise Suppression Settings under Voice Tab</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Noise Suppression Settings under Voice Tab</span
+  >
 </h4>
 <p>5. Scan your device for any potential malware.</p>
 <ul>
@@ -535,7 +557,7 @@
   </li>
 </ul>
 <p id="h_01JQCP7H40MH3MBJ5SB9DFW9WB" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/30984500930327"
       width="624"
@@ -543,7 +565,9 @@
   /></span>
 </p>
 <h4 id="h_01JQD0CPRJBRM4Z70ZFAB2V4RS" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Debug Logging under Debugging Tab</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Debug Logging under Debugging Tab</span
+  >
 </h4>
 <h2 id="h_01JQCP7H4042T06F3PE5NB5MQH">
   Troubleshooting Steps for PC/Window Users Only 
@@ -563,7 +587,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40E6KKJR08JWQR6038" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Run as administrator Shortcut</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Run as administrator Shortcut</span
+  >
 </h4>
 <p>2. Try disabling optional microphone enhancements on your device.</p>
 <ul>
@@ -584,7 +610,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40Y5BBH8AZJDZ1C45D" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Sound Control Panel on Windows</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Sound Control Panel on Windows</span
+  >
 </h4>
 <p>
   3. In <strong>Voice &amp; Video </strong>tab, scroll down to the
@@ -599,7 +627,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H4002R8XYNDZSWM5SW7" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Audio Subsystem setting</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Audio Subsystem setting</span
+  >
 </h4>
 <p>
   4. For video issues in particular,  navigate to
@@ -615,7 +645,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H405M1V7YB5GMQ1YSTA" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of enabled Hardware Acceleration setting </span
   >
 </h4>
@@ -728,7 +758,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40J9BQW22GCBDSQ79J" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Input Mode: Voice Activity and Push to Talk (Limited) on Desktop</span
   >
 </h4>
@@ -744,7 +774,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40F2AS1RMVCNZG9M73" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Input and Output Device Settings with Volume Controls</span
   >
 </h4>
@@ -763,7 +793,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40X6RJ1Q72BCS0DZZN" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Reset Voice and Video Settings under Debugging Tab</span
   >
 </h4>
@@ -985,7 +1015,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40E1FTRS5EC63WSWET" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Navigating to Voice settings on Mobile</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Navigating to Voice settings on Mobile</span
+  >
 </h4>
 <p>
   2. Check your <strong>input mode </strong>to ensure you’re not accidentally on
@@ -999,7 +1031,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40GQB1CDX9DXCB31SJ" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Input Mode: Push to Talk and Voice Activity</span
   >
 </h4>
@@ -1051,7 +1083,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40NT4F690CQW8VFX74" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Settings: Cache Actions (Left) and Clear Caches (Right) </span
   >
 </h4>
@@ -1095,7 +1127,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H402W9M5HD3TRT3B7AH" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Settings: Notifications (Left) and Integrate calls with Phone app
     (Right) </span
   >
@@ -1137,7 +1169,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H404CP6JGKF5GF35ZSM" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Accessing AirPlay on iOS: Bluetooth icon (Left) and AirPlay selection menu
     (Right) </span
   >
@@ -1199,7 +1231,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40NX7PQFWMX8VBQEK1" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Output Device under Voice tab on Desktop</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Output Device under Voice tab on Desktop</span
+  >
 </h4>
 <p>
   4. Still no sound? Double-check your PC's playback devices and ensure your
@@ -1245,7 +1279,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40V0RW4GWWJXQVAGQ8" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Input Device (left) and Mic Test (right)</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Input Device (left) and Mic Test (right)</span
+  >
 </h4>
 <p>
   4. Look for the mute icon [<img
@@ -1270,7 +1306,7 @@
   /></strong>
 </p>
 <h4 id="h_01JQCP7H40ZP489MY3PVHHBQWD" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Reset Voice and Video Settings under Debugging tab</span
   >
 </h4>
@@ -1301,7 +1337,7 @@
   />
 </p>
 <h4 id="h_01JQCP7H40T8BK21S4VH82ZZBY" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Enable Quality of Service High Packet Priority setting on Desktop</span
   >
 </h4>
@@ -1337,7 +1373,9 @@
   />
 </p>
 <h4 id="h_01JQCP7H40BKQ1GB6JEGFHRMYK" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Hardware Acceleration setting on Desktop</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Hardware Acceleration setting on Desktop</span
+  >
 </h4>
 <p>
   4. If issues persist, try lowering your screen share quality and frame rate
