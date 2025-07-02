@@ -56,10 +56,13 @@
   claim further gifts from this promotion.
 </p>
 <p>
-  This promotion is not available in the following regions: Syria, Ukraine,
-  Russia, Iran and North Korea. If you receive an "Unknown Gift Code" error
-  during the claim/redemption process, you are not eligible to redeem this
-  promotion. You can learn more at this<a
+  <span style="color: #434343"
+    >This promotion is not eligible in the following regions: Syria, Russia,
+    Turkey, Iran, North Korea, Zaporizhzhia, Kherson, Donetsk, and
+    Luhansk.</span
+  > If you receive an "Unknown Gift Code" error during the claim/redemption
+  process, you are not eligible to redeem this promotion. You can learn more at
+  this<a
     href="https://support.discord.com/hc/en-us/articles/4708041338391"
     target="_blank"
     rel="noopener noreferrer"
