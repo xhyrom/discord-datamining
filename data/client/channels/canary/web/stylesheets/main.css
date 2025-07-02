@@ -42973,6 +42973,9 @@ html.disable-forced-colors * {
 .themeSelector__5a15d {
   height: 32px;
 }
+.themePillItemSelected__5a15d {
+  border: 1px solid var(--border-faint);
+}
 .container__68a18 {
   background: var(--bg-overlay-5);
 }
@@ -57892,4 +57895,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c04b7bc83d811617.css.map*/
+/*# sourceMappingURL=12633.2c269ce428126cf7.css.map*/
