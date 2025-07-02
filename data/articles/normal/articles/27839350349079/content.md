@@ -11,6 +11,23 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: The Milk Cup<br /></strong
+  ><strong>Quest Name: The Milk Cup Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>The Milk Cup Quest</strong> in
+  Discord to receive a <strong>Moomoo Hood Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong>
+  <strong>The Milk Cup Quest </strong>can be accepted on the desktop app or
+  browser client from <strong>July 2, 2025 </strong>until<strong>
+    July 10, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 2, 2025 (11:00 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Jurassic World Rebirth Trailer<br /></strong
   ><strong>Quest Name: Jurassic World Rebirth Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
