@@ -10,23 +10,23 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8015636002](https://discord.com/jobs/8015636002)
 
-**Updated At:** Thu, 12 Jun 2025 16:30:07 GMT
+**Updated At:** Wed, 02 Jul 2025 14:31:31 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Traffic Infrastructure is a small group being formed to evolve the way Discord handles petabytes of network traffic daily. As a Software Engineer on this team, you'll scale our infrastructure to serve billions of requests per day, defend against malicious traffic and facilitate seamless communication between internal services. You'll maintain critical systems that support nearly every function of our platform, ensuring an efficient and reliable experience for hundreds of millions of users worldwide.
 What you'll be doing:
 
 Become a subject matter expert for network infrastructure on a global scale
-Troubleshoot complex problems across many layers of Discord’s architecture,
-Support the growth and stability of nearly every function of Discord,
+Troubleshoot complex problems across many layers of Discord’s architecture
+Support the growth and stability of nearly every function of Discord
 Establish primitives that allow other teams to confidently and efficiently serve user requests
 
 What you should have:
 
 3+ years of backend software engineering experience.
 Knowledge of networking fundamentals,
-Experience working with cloud providers like GCP or AWS,
-Experience validating assumptions with data and digging deeper when results are inconclusive,
+Experience working with cloud providers like GCP or AWS
+Experience validating assumptions with data and digging deeper when results are inconclusive
 
 Bonus Skills:
 

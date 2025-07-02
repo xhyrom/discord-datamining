@@ -10,20 +10,19 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7953473002](https://discord.com/jobs/7953473002)
 
-**Updated At:** Tue, 01 Jul 2025 23:36:40 GMT
+**Updated At:** Wed, 02 Jul 2025 15:23:59 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This position will be located in the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties), or willing to relocate to the San Francisco Bay Area.
 Discord is looking for a Staff Audio &amp;amp; Video Infrastructure Engineer excited about building the software that powers our realtime communication infrastructure. The Audio &amp;amp; Video Infrastructure team builds and maintains our WebRTC-based systems and scales the infrastructure that enables millions of concurrent voice and video conversations. Your role will have significant impact on the quality of experience for Discord users and will involve architecting solutions for our next-generation edge computing infrastructure. This opportunity calls for an engineer ready to tackle challenging problems, drive improvements, and contribute to the technology that connects millions of people globally.
 What you'll do:
 
-Architect and build large-scale real-time Audio &amp;amp; Video systems that handle millions of concurrent users
-Design and implement WebRTC infrastructure including Selective Forwarding Units (SFUs), signaling systems, and media transport
-Lead the migration to edge computing for ultra-low latency real-time communication
-Optimize network protocols (RTP, RTCP, UDP) for performance, quality, and reliability at global scale
-Collaborate with cloud providers (GCP, Cloudflare) to deploy and scale our infrastructure
-Mentor engineers and drive technical decisions across the team
-Balance technical trade-offs across performance, cost, and scale for real-time systems
+Architect and build large-scale real-time Audio &amp;amp; Video systems that handle millions of concurrent users.
+Optimize system performance and reliability across control and media layers for improved user experience.
+Lead the migration to edge computing for reduced latency.
+Partner with third-party vendors and service providers to scale our global infrastructure.
+Guide cross-functional feature development and product launches.
+Mentor a world-class engineering team who have built one of the largest communication platforms in the world.
 
 What you have:
 
