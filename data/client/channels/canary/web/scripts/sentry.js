@@ -6244,7 +6244,7 @@
           (r.RUNNING_GAME_CARD_STATE_CHANGED =
             "running_game_card_state_changed"),
           (r.BILLING_IP_LOCATION_FETCH_ERROR =
-            "billing_ip_location_fetch_error"),
+            "network_action_billing_ip_location_fetch_error"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6825,7 +6825,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-c38d5e496f601b4d3f9fe62e8bc786cf0f460e9c",
+            release: "discord_web-43ae64e06a19edb3773b4f0aa12a692503ff5da1",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6891,8 +6891,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "415024"),
-            o.YA("builtAt", String("1751413929126"));
+            o.YA("buildNumber", "415050"),
+            o.YA("builtAt", String("1751419282663"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48189,4 +48189,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d9fb0bf2b6193b3e.js.map
+//# sourceMappingURL=sentry.b532fce5c0e442cf.js.map
