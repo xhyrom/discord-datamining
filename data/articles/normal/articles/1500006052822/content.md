@@ -195,13 +195,12 @@
 <p>2. Tap the <strong>You</strong> button in the bottom-right corner.</p>
 <p>
   3. Tap the <strong>cogwheel</strong>
-  <span style="background-color: #ffffff">[</span
-  ><span style="background-color: #ffffff"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/31486865731735"
-      width="20"
-      height="20" /></span
-  ><span style="background-color: #ffffff">] in the upper-right corner.</span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/31486865731735"
+    width="20"
+    height="20"
+  />
+  in the upper-right corner.
 </p>
 <p>
   4. Scroll down to the <strong>Support</strong> category and  tap
@@ -231,21 +230,13 @@
   >
 </p>
 <p>
-  Here's how to upload your Debug Logs through Discord:<br /><span
-    style="background-color: #ffffff"
-    >1. Open your </span
-  ><strong><span style="background-color: #ffffff">User Settings</span></strong
-  ><span style="background-color: #ffffff"> by pressing the </span
-  ><strong><span style="background-color: #ffffff">cogwheel</span></strong
-  ><span style="background-color: #ffffff"> [</span
-  ><span style="background-color: #ffffff"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/31486910559383"
-      width="20"
-      height="20" /></span
-  ><span style="background-color: #ffffff"
-    >] in the bottom-left corner of the desktop app.</span
-  >
+  Here's how to upload your Debug Logs through Discord:<br />1. Open your
+  <strong>User Settings</strong> by pressing the cogwheel<img
+    src="https://support.discord.com/hc/article_attachments/31486910559383"
+    width="20"
+    height="20"
+  />
+  in the bottom-left corner of the desktop app.
 </p>
 <p>
   2. Select <strong>Voice &amp; Video</strong> and press the

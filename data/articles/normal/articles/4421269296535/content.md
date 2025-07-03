@@ -13,54 +13,73 @@
     alt="automod_header.png"
   />
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What does this article cover?</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01GV3GPHP4ES8CJ4MRXWHNDDDD" target="_self">What is AutoMod?</a>
-  </li>
-  <li>
-    <a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self"
-      >What are Keyword Filters?</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01GV3GQDQD4EJH71R6PA5C6DAC" target="_self"
-          >How to Set Up Keyword Filters for AutoMod</a
-        >
-      </li>
-      <li>
-        <a
-          href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462"
-          target="_self"
-          ><span id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354"
-            >Block Words in Server Member Usernames or Server Nicknames</span
-          ></a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
-      >What are Spam Filters?</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01GV3GR6B7X9461TJYBJFYSHMK" target="_self"
-          >How to Set Up Spam Filters for AutoMod</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01GV3GPHP4ES8CJ4MRXWHNDDDD" target="_self"
+          >What is AutoMod?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self"
+          >What are Keyword Filters?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01GV3GQDQD4EJH71R6PA5C6DAC" target="_self"
+              >How to Set Up Keyword Filters for AutoMod</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a
+              href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462"
+              target="_self"
+              ><span
+                id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354"
+                >Block Words in Server Member Usernames or Server
+                Nicknames</span
+              ></a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GV3GQSB85NVWN1KQJ8AKZYC8" target="_self"
+          >What are Spam Filters?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01GV3GR6B7X9461TJYBJFYSHMK" target="_self"
+              >How to Set Up Spam Filters for AutoMod</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self"
+          >Frequently Asked Questions</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GV3GPHP4ES8CJ4MRXWHNDDDD">WHAT IS AUTOMOD?</h1>
 <p>
   <strong>AutoMod</strong> is a system of multiple content filters designed to
@@ -98,23 +117,17 @@
 </p>
 <h1 id="h_01GV3GQ8B6WR17JJA5KX92GDHT">WHAT ARE KEYWORD FILTERS?</h1>
 <p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >AutoMod’s Keyword Filters let you set up the following rules to determine
-    what AutoMod should look out for and how to respond when it flags a message
-    containing certain words or phrases: </span
-  >
+  AutoMod’s Keyword Filters let you set up the following rules to determine what
+  AutoMod should look out for and how to respond when it flags a message
+  containing certain words or phrases: 
 </p>
 <p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >1. Commonly Flagged Words Rule - Use ready-made word lists to filter
-    commonly flagged words</span
-  >
+  1. Commonly Flagged Words Rule - Use ready-made word lists to filter commonly
+  flagged words
 </p>
 <p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >2. Custom Keywords Rule - Build your own list of keywords and terms to
-    filter in your Community </span
-  >
+  2. Custom Keywords Rule - Build your own list of keywords and terms to filter
+  in your Community 
 </p>
 <p>
   We understand it can be tough and time-consuming to think of all the words
@@ -193,8 +206,7 @@
 </p>
 <p>
   3. Choose to have AutoMod block flagged messages entirely with a custom
-  message, send you an alert, and/or time out users* when it flags a message.
-  <br />*<em
+  message, send you an alert, and/or time out users* when it flags a message.<br />*<em
     >Timeout user response is only available under Custom Keyword Rules</em
   >
 </p>
@@ -294,11 +306,8 @@
 </p>
 <p>
   With AutoMod’s Spam filters, you can enable the two rules below to protect
-  your Community against different types of spam.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >You can also choose how AutoMod will respond when a message triggers your
-    rules.</span
-  >
+  your Community against different types of spam. You can also choose how
+  AutoMod will respond when a message triggers your rules.
 </p>
 <ol>
   <li>
@@ -464,7 +473,7 @@
 <p>
   A: AutoMod can detect and filter words and characters in English and other
   languages, links, emojis*, punctuation, and symbols that you enter in your
-  Custom Keyword Rules. <br /><em
+  Custom Keyword Rules.<br /><em
     >*Note that you are not able to add custom emojis from other servers that
     you don't have access to into your Custom Keyword rules.</em
   >
@@ -519,8 +528,8 @@
   </li>
 </ol>
 <p>
-  Examples: <br />cat* ⇒ get a <strong>cat</strong>-sitter <br />*cat ⇒ cool
-  bob<strong>cat</strong> <br />*ana* ⇒ b<strong>ana</strong>nas
+  Examples:<br />cat* ⇒ get a <strong>cat</strong>-sitter<br />*cat ⇒ cool
+  bob<strong>cat</strong><br />*ana* ⇒ b<strong>ana</strong>nas
 </p>
 <p>
   <strong

@@ -1,4 +1,4 @@
-<h3>
+<h3 id="h_01JZ8MTJ8109HZ0CF821N0YESX">
   You may notice issues with your Crunchyroll activity on Discord when connected
   to multiple Discord accounts. This issue is currently being investigated by
   Crunchyroll and we apologize for any inconvenience during this time.
@@ -7,30 +7,36 @@
   With our new Crunchyroll connection, your Discord friends can now see what
   you’re watching on Crunchyroll!
 </p>
-<h1><strong>What does this article cover? </strong></h1>
-<ul>
-  <li>
-    <strong
-      ><a href="#h_01GGSNGAN18MP89ST2GVBX5MHT" target="_self"
-        >Profile &amp; Mini Profile</a
-      ></strong
-    >
-  </li>
-  <li>
-    <strong
-      ><a href="#h_01GGSNGG8J476J6A79SF6M5FJD" target="_self"
-        >Connecting your Crunchyroll Account</a
-      ></strong
-    >
-  </li>
-  <li>
-    <strong
-      ><a href="#h_01GGSNGNFM5DF7FYZFZ054F26Q" target="_self"
-        >Disconnecting your Crunchyroll &amp; Discord Accounts</a
-      ></strong
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
+    ></strong
+  >
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01GGSNGAN18MP89ST2GVBX5MHT" target="_self"
+          >Profile &amp; Mini Profile</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GGSNGG8J476J6A79SF6M5FJD" target="_self"
+          >Connecting your Crunchyroll Account</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GGSNGNFM5DF7FYZFZ054F26Q" target="_self"
+          >Disconnecting your Crunchyroll &amp; Discord Accounts</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h2 id="h_01GGSNGAN18MP89ST2GVBX5MHT">
   <strong>Profile &amp; Mini Profile</strong>
 </h2>
@@ -95,23 +101,8 @@
 </p>
 <p>
   3. You’ll be prompted with a step-by-step modal that tells you to navigate to
-  <a
-    style="
-      background-color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    href="https://www.crunchyroll.com/account/connected-apps"
-    >https://www.crunchyroll.com/account/connected-apps</a
-  ><span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-  >
-    to connect your accounts. (The Discord client will wait until it sees you’ve
-    connected your account.)</span
-  >
+  https://www.crunchyroll.com/account/connected-apps to connect your accounts.
+  (The Discord client will wait until it sees you’ve connected your account.)
 </p>
 <p class="wysiwyg-text-align-center">
   <span
@@ -179,7 +170,7 @@
     height="149"
   />
 </p>
-<h3>
+<h3 id="h_01JZ8MTJ81Y4CVE9BSMJXAZFQA">
   <span
     style="
       font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
@@ -251,7 +242,7 @@
     height="239"
   />
 </p>
-<h3 class="wysiwyg-text-align-left">
+<h3 id="h_01JZ8MTJ81DEGT6Z05XNBZTD48" class="wysiwyg-text-align-left">
   <strong>Note</strong>: You will need to remove the connection from both
   Discord and Crunchyroll in order for the connection to be fully removed!
 </h3>

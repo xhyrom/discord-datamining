@@ -409,25 +409,6 @@
 </div>
 <p><strong>Step 2 - Claiming your promotion gift</strong></p>
 <p>
-  Once you have logged in to your account, head over to your
-  <strong>User Settings</strong> by selecting the
-  <strong>cogwheel</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/33049770350999"
-    width="24"
-    height="24"
-  />] in the bottom-right corner.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/33049739488919"
-    width="423"
-    height="65"
-  />
-</p>
-<h4 id="h_01JYM0S2ZJE71DRDGXPWVG9T87">
-  <span style="color: #666666">Cogwheel icon</span>
-</h4>
-<p>
   Once you have logged into your Discord account, you'll see a new message
   asking you to confirm that you are accepting the Nitro subscription on the
   correct Discord account.
@@ -459,6 +440,42 @@
     >
   </p>
 </div>
+<p><strong>Step 3 - Redeeming your promotion gift</strong></p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33233301463063"
+      width="339"
+      height="363"
+  /></strong>
+</p>
+<h4 id="h_01JZ8JTCXM0S50GR6K7WJ74A87" class="wysiwyg-text-align-center">
+  <span style="color: #666666">1 Month of Nitro Gift</span>
+</h4>
+<p>
+  Review the details of the promotion then press on <strong>Next</strong>.
+  Please note: if you switch to a different account at this step, you will not
+  be able to claim and redeem the promotion on the account you switched to. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33233273783703"
+    width="285"
+    height="504"
+  />
+</p>
+<h4 id="h_01JZ8JWXZJCG8CW3HY42X8XG1V" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Payment Details Review</span>
+</h4>
+<p>
+  Make sure your payment information is accurate. If your Discord account does
+  not have your payment information, please fill out your payment details. You
+  will not be charged until the trial ends and the subscription renews.
+</p>
+<p>
+  When you've filled out all the necessary information and you're ready to
+  redeem this promotion, press the confirmation button.
+</p>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
   <li>

@@ -14,28 +14,30 @@
   the different types of servers, how to recognize them, and what you can expect
   in those spaces.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
+    ></strong
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01H1W0A6Y2FN2P05CD7WD96RF8" target="_self"
-      >At a Glance: Friend vs. Community Servers</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H1W0ABM3N9PXPQTDJR5WAZCD" target="_self"
-      >Becoming a Community Server</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H1W0AFG0KTPNN94FVPEZK156" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#h_01H1W0A6Y2FN2P05CD7WD96RF8" target="_self"
+        >At a Glance: Friend vs. Community Servers</a
+      >
+    </li>
+    <li>
+      <a href="#h_01H1W0ABM3N9PXPQTDJR5WAZCD" target="_self"
+        >Becoming a Community Server</a
+      >
+    </li>
+    <li>
+      <a href="#h_01H1W0AFG0KTPNN94FVPEZK156" target="_self"
+        >Frequently Asked Questions</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01H1W0A6Y2FN2P05CD7WD96RF8">
   At a Glance: Friend vs. Community Servers
 </h1>
@@ -129,12 +131,10 @@
   receive the “Verified” badge, and the tooltip will denote both statuses.
 </p>
 <p class="wysiwyg-text-align-center">
-  <em
-    ><span style="background-color: #ffff00" data-darkreader-inline-bgcolor=""
-      ><img
-        style="height: 345px; width: 624px"
-        src="https://support.discord.com/hc/article_attachments/15027054348695" /></span
-  ></em>
+  <img
+    style="height: 345px; width: 624px"
+    src="https://support.discord.com/hc/article_attachments/15027054348695"
+  />
 </p>
 <p>
   For more information on our approach to safety across server types, please
@@ -148,53 +148,18 @@
 </p>
 <h1 id="h_01H1W0AFG0KTPNN94FVPEZK156">Frequently Asked Questions</h1>
 <p>
-  <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Q: What happens with badges if you’re verified and partnered? </span
-    ></strong
-  >
+  <strong>Q: What happens with badges if you’re verified and partnered?</strong>
 </p>
 <p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >A: We’ll display your Verified badge, and the tooltip will indicate that
-    the server is Verified &amp; Partnered. </span
-  >
+  A: We’ll display your Verified badge, and the tooltip will indicate that the
+  server is Verified &amp; Partnered. 
 </p>
+<p><strong>Q: Does this mean that partner badges go away?</strong></p>
+<p>A: No. Partner and Verified badges will remain unchanged.</p>
+<p><strong>Q: How will I know what type of server I am in?</strong></p>
 <p>
-  <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Q: Does this mean that partner badges go away?</span
-    ></strong
-  >
+  A: Community, Partnered and Verified servers will have badges and tooltips
+  that display the server type.
 </p>
-<p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >A: No. Partner and Verified badges will remain unchanged. </span
-  >
-</p>
-<p>
-  <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Q: How will I know what type of server I am in? </span
-    ></strong
-  >
-</p>
-<p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >A: Community, Partnered and Verified servers will have badges and tooltips
-    that display the server type.</span
-  >
-</p>
-<p>
-  <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-      >Q: Will Friend Servers be labeled/ badged? </span
-    ></strong
-  >
-</p>
-<p>
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >A: We may consider adding a badge to Friend Servers in a future
-    rollout. </span
-  >
-</p>
+<p><strong>Q: Will Friend Servers be labeled/ badged? </strong></p>
+<p>A: We may consider adding a badge to Friend Servers in a future rollout. </p>

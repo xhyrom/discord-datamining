@@ -21,13 +21,10 @@
   </li>
   <li>
     <strong>Additional Eligibility Requirements:</strong> You must be a legal
-    resident of the United States,
-    <span style="color: #444746; background-color: #ffffff"
-      >United Kingdom, France, Germany, Japan, South Korea, Brazil or
-      Australia</span
-    >
-    and thirteen (13) years of age or older (with legal guardian approval if you
-    are under the age of majority) as of the date of entry.
+    resident of the United States, United Kingdom, France, Germany, Japan, South
+    Korea, Brazil or Australia and thirteen (13) years of age or older (with
+    legal guardian approval if you are under the age of majority) as of the date
+    of entry.
   </li>
   <li>
     <strong>Entry Time Frame</strong>: May 13, 2025 8:00 AM PT - May 19, 2025
@@ -87,13 +84,10 @@
   </li>
   <li>
     <strong>Eligibility Requirements:</strong> You must be a legal resident of
-    the United States,
-    <span style="color: #444746; background-color: #ffffff"
-      >United Kingdom, France, Germany, Japan, South Korea, Brazil or
-      Australia</span
-    >
-    and thirteen (13) years of age or older (with legal guardian approval if you
-    are under the age of majority) as of the date of entry.
+    the United States, United Kingdom, France, Germany, Japan, South Korea,
+    Brazil or Australia and thirteen (13) years of age or older (with legal
+    guardian approval if you are under the age of majority) as of the date of
+    entry.
   </li>
   <li>
     <strong>Entry Time Frame</strong>: May 14, 2025 8:00 AM PT - May 19, 2025
@@ -154,13 +148,10 @@
   </li>
   <li>
     <strong>Eligibility Requirements:</strong> You must be a legal resident of
-    the United States,
-    <span style="color: #444746; background-color: #ffffff"
-      >United Kingdom, France, Germany, Japan, South Korea, Brazil or
-      Australia</span
-    >
-    and thirteen (13) years of age or older (with legal guardian approval if you
-    are under the age of majority) as of the date of entry.
+    the United States, United Kingdom, France, Germany, Japan, South Korea,
+    Brazil or Australia and thirteen (13) years of age or older (with legal
+    guardian approval if you are under the age of majority) as of the date of
+    entry.
   </li>
   <li>
     <strong>Entry Time Frame</strong>: May 15, 2025 8:00 AM PT - May 19, 2025
@@ -221,13 +212,10 @@
   </li>
   <li>
     <strong>Eligibility Requirements:</strong> You must be a legal resident of
-    the United States,
-    <span style="color: #444746; background-color: #ffffff"
-      >United Kingdom, France, Germany, Japan, South Korea, Brazil or
-      Australia</span
-    >
-    and thirteen (13) years of age or older (with legal guardian approval if you
-    are under the age of majority) as of the date of entry.
+    the United States, United Kingdom, France, Germany, Japan, South Korea,
+    Brazil or Australia and thirteen (13) years of age or older (with legal
+    guardian approval if you are under the age of majority) as of the date of
+    entry.
   </li>
   <li>
     <strong>Entry Time Frame</strong>: May 16, 2025 8:00 AM PT - May 19, 2025

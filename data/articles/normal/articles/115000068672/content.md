@@ -6,27 +6,42 @@
   direct message filters, which can help reduce the amount of unwanted content
   you see on Discord and promote a safer environment for you.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01GXVY0E4TNTTW9P7PZT1XGSJS" target="_self">For Individuals</a>
-  </li>
-  <li>
-    <a href="#docs-internal-guid-ce2fb5e7-7fff-812b-c0a1-7eb161deb540"
-      >Sensitive Content Filters</a
-    >
-  </li>
-  <li>
-    <a href="#h_01GXVY2AV9X9Y0787SHWNNV5XZ" target="_self">DM Spam Filter</a>
-  </li>
-  <li>
-    <a href="#h_01GXVY2J7ZKBF60BHT6V2K0E97" target="_self">For Server Owners</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01GXVY0E4TNTTW9P7PZT1XGSJS" target="_self"
+          >For Individuals</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#docs-internal-guid-ce2fb5e7-7fff-812b-c0a1-7eb161deb540"
+          >Sensitive Content Filters</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GXVY2AV9X9Y0787SHWNNV5XZ" target="_self"
+          >DM Spam Filter</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GXVY2J7ZKBF60BHT6V2K0E97" target="_self"
+          >For Server Owners</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GXVY0E4TNTTW9P7PZT1XGSJS">For Individuals</h1>
 <p>
   You can control these settings by going into <strong>User Settings</strong>,
@@ -34,29 +49,21 @@
   <strong>Direct message filters</strong> section.
 </p>
 <p id="docs-internal-guid-22d4b6e2-7fff-06c1-d6a7-3882eb091b62">
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >You can learn more about sensitive content filters </span
-  ><a
+  You can learn more about sensitive content filters
+  <a
     href="https://support.discord.com/hc/articles/18210995019671/"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >. </span
-  >
+  >.
 </p>
 <h1 id="docs-internal-guid-ce2fb5e7-7fff-812b-c0a1-7eb161deb540">
   Sensitive Content Filters
 </h1>
 <p id="docs-internal-guid-b2c682b5-7fff-e993-d9ab-78d885369612">
-  <span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Discord works to detect if media posted on our platform may be sensitive.
-    When these new filters are set to “blur,” they apply to all historic and new
-    media. </span
-  >
+  Discord works to detect if media posted on our platform may be sensitive. When
+  these new filters are set to “blur,” they apply to all historic and new
+  media. 
 </p>
 <h1 id="h_01GXVY2AV9X9Y0787SHWNNV5XZ">DM Spam Filter</h1>
 <p>

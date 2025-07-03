@@ -1,10 +1,8 @@
 <p>
   We use certain information to help us understand and improve Discord and to
-  develop features that make Discord safer and better for you to use.
-  <span style="color: #23272a; background-color: #ffffff"
-    >This includes information such as how you use our services, the games you
-    play, and how servers are structured. </span
-  >
+  develop features that make Discord safer and better for you to use. This
+  includes information such as how you use our services, the games you play, and
+  how servers are structured.
 </p>
 <p>
   Turning <strong>the Use Data to Improve Discord Setting</strong> off means we

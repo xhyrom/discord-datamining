@@ -1,205 +1,166 @@
-<h3 id="h_01HT0CCGC5GQX4YRP3B0GB85W5">
-  🚧 Help center article under construction! 🚧
-</h3>
+<div class="warn-box">🚧 Article under construction! 🚧</div>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="list-style-type: none">
+      <ul>
+        <li>
+          <a href="#h_01JZ8MW48MXW1D2PFBSDD3YYDC"
+            >Introduction to Testing Clients</a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ8MGFQXEW9JWG0C37GY4KVT"
+            >Where can I download these clients?</a
+          >
+          <ul>
+            <li><a href="#h_01JZ8MGFQXV698WKB72EC48PRJ">Browser</a></li>
+            <li><a href="#h_01JZ8MGFQXZWQSTQDN0M2R2MPK">Windows</a></li>
+            <li><a href="#h_01JZ8MGFQXA70DDY5TYKMA7T5D">MacOS</a></li>
+            <li><a href="#h_01JZ8MGFQXN3ZKQ05W82XNC1R4">Linux</a></li>
+            <li><a href="#h_01JZ8MGFQXGKTZ04NYM5415AGT">iOS</a></li>
+            <li><a href="#h_01HT0CCGC6NZYJ4C7D6G0BAPAD">Android</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JZ8MW48MXW1D2PFBSDD3YYDC">Introduction to Testing Clients</h1>
 <p>
-  <span style="font-weight: 400"
-    >We have a couple of early access programs for all desktop clients, where
-    you can get a sneak peek at the new features, and you can still do all of
-    the stuff you normally do on Discord. The catch is that these new features
-    are untested and are probably full of bugs.</span
-  >
+  We have a couple of early access programs for all desktop clients, where you
+  can get a sneak peek at the new features, and you can still do all of the
+  stuff you normally do on Discord. The catch is that these new features are
+  untested and are probably full of bugs.
 </p>
 <p><strong>The different versions can be categorized as:</strong></p>
 <p>
-  <strong>Stable</strong
-  ><span style="font-weight: 400">
-    - The standard version. This usually doesn’t have a lot of bugs and everyone
-    can use it.</span
-  >
+  <strong>Stable</strong> - The standard version. This usually doesn’t have a
+  lot of bugs and everyone can use it.
 </p>
 <p>
-  <strong>Beta</strong
-  ><span style="font-weight: 400">
-    - Also called public test build (PTB) for Desktop, for iOS it is Testflight,
-    and for Android it is Beta. This version usually has more bugs than Stable
-    but should not hinder your normal usage.</span
-  >
+  <strong>Beta</strong> - Also called public test build (PTB) for Desktop, for
+  iOS it is Testflight, and for Android it is Beta. This version usually has
+  more bugs than Stable but should not hinder your normal usage.
 </p>
 <p>
-  <strong>Alpha</strong
-  ><span style="font-weight: 400">
-    - Commonly called Canary on Desktop and on Android it’s called Alpha. This
-    is the most unstable version of Discord, with lots of updates. Bugs usually
-    happen here so use this client at your own risk.</span
-  >
+  <strong>Alpha</strong> - Commonly called Canary on Desktop and on Android it’s
+  called Alpha. This is the most unstable version of Discord, with lots of
+  updates. Bugs usually happen here so use this client at your own risk.
 </p>
-<h1 id="h_01HT0CCGC57K9HY3EQ1RT23HYC">
-  <span style="font-weight: 400">Where can I download these clients?</span>
-</h1>
-<h2 id="h_01HT0CCGC5DM4T0B1FAAZWZX32">
-  <strong>Browser:</strong><span style="font-weight: 400"><br /></span>
-</h2>
+<h1 id="h_01JZ8MGFQXEW9JWG0C37GY4KVT">Where can I download these clients?</h1>
+<h2 id="h_01JZ8MGFQXV698WKB72EC48PRJ"><strong>Browser</strong></h2>
 <ul>
   <li>
-    <span style="font-weight: 400">Stable - </span
-    ><a href="https://discord.com/" target="_blank" rel="noopener noreferrer"
-      >https://discord.com/</a
-    ><span style="font-weight: 400"> and click open Discord.</span>
+    Stable - <a href="https://discord.com/">https://discord.com/</a> and click
+    open Discord.
   </li>
   <li>
-    <span style="font-weight: 400">PTB- </span
-    ><a
-      href="https://ptb.discord.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://ptb.discord.com/</a
-    ><span style="font-weight: 400"> and click open Discord.</span>
+    PTB- <a href="https://ptb.discord.com/">https://ptb.discord.com/</a> and
+    click open Discord.
   </li>
   <li>
-    <span style="font-weight: 400">Canary - </span
-    ><a
-      href="https://canary.discord.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://canary.discord.com/</a
-    ><span style="font-weight: 400"> and click open Discord.</span>
+    Canary -
+    <a href="https://canary.discord.com/">https://canary.discord.com/</a> and
+    click open Discord.
   </li>
 </ul>
-<h3 id="h_01HT0CCGC54EMZ2PX0QZ2CWYB3">
-  <span style="font-weight: 400"
-    >Note: Internet Explorer and versions of Microsoft Edge prior to version 17
-    are not supported.</span
-  >
-</h3>
+<div class="info-box">
+  Note: Internet Explorer and versions of Microsoft Edge prior to version 17 are
+  not supported.
+</div>
 <p>
-  <span style="font-weight: 400">All stable installers can be found at </span
-  ><a href="https://discord.com/download"
-    ><span style="font-weight: 400">https://discord.com/download</span></a
-  ><span style="font-weight: 400">
-    or the Google Play Store and Apple AppStore.</span
-  >
+  All stable installers can be found at
+  <a href="https://discord.com/download">https://discord.com/download</a> or the
+  Google Play Store and Apple AppStore.
 </p>
-<h2 id="h_01HT0CCGC52TEK0BJYZRPF6NHW"><strong>Windows:</strong></h2>
+<h2 id="h_01JZ8MGFQXZWQSTQDN0M2R2MPK"><strong>Windows</strong></h2>
 <ul>
   <li>
-    <span style="font-weight: 400">PTB - Can be found at </span
-    ><a
-      href="https://discord.com/download"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://discord.com/download</a
-    >
+    PTB - Can be found at
+    <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
   <li>
-    <span style="font-weight: 400"
-      >Canary 64-bit -
-      <a
-        href="https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64"
-        >https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64</a
-      ></span
+    Canary 64-bit -
+    <a
+      href="https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64"
+      >https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64</a
     >
   </li>
 </ul>
-<h2 id="h_01HT0CCGC6NX67V51CREY6SP28"><strong>MacOS:</strong></h2>
+<h2 id="h_01JZ8MGFQXA70DDY5TYKMA7T5D"><strong>MacOS</strong></h2>
 <ul>
   <li>
-    <span style="font-weight: 400">PTB - Can be found at </span
-    ><a
-      href="https://discord.com/download"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://discord.com/download</a
-    >
+    PTB - Can be found at
+    <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
   <li>
-    <span style="font-weight: 400">Canary - </span
-    ><a
-      href="https://discord.com/api/download/canary?platform=osx"
-      target="_blank"
-      rel="noopener noreferrer"
+    Canary -
+    <a href="https://discord.com/api/download/canary?platform=osx"
       >https://discord.com/api/download/canary?platform=osx</a
     >
   </li>
 </ul>
-<h2 id="h_01HT0CCGC624VQZNVG68B9HSN8"><strong>Linux:</strong></h2>
+<h2 id="h_01JZ8MGFQXN3ZKQ05W82XNC1R4"><strong>Linux</strong></h2>
 <ul>
   <li>
-    <span style="font-weight: 400">PTB - Can be found at </span
-    ><a
-      href="https://discord.com/download"
-      target="_blank"
-      rel="noopener noreferrer"
-      >https://discord.com/download</a
-    >
+    PTB - Can be found at
+    <a href="https://discord.com/download">https://discord.com/download</a>
   </li>
   <li>
-    <span style="font-weight: 400">Canary - Linux deb: </span
-    ><span style="font-weight: 400"
-      ><a
-        href="https://discord.com/api/download/canary?platform=linux&amp;format=deb"
-        target="_blank"
-        rel="noopener noreferrer"
-        >https://discord.com/api/download/canary?platform=linux&amp;format=deb</a
-      ></span
+    Canary - Linux deb:
+    <a
+      href="https://discord.com/api/download/canary?platform=linux&amp;format=deb"
+      >https://discord.com/api/download/canary?platform=linux&amp;format=deb</a
     >
   </li>
   <li>
     Canary - Linux tar.gz:
     <a
-      style="background-color: #ffffff"
       href="https://discord.com/api/download/canary?platform=linux&amp;format=tar.gz"
-      target="_blank"
-      rel="noopener noreferrer"
       >https://discord.com/api/download/canary?platform=linux&amp;format=tar.gz</a
-    > 
+    >
   </li>
 </ul>
-<h2 id="h_01HT0CCGC676TESP64K7SWC056"><strong>iOS:</strong></h2>
+<h2 id="h_01JZ8MGFQXGKTZ04NYM5415AGT"><strong>iOS</strong></h2>
 <p>Follow these steps to sign up and install Discord TestFlight</p>
-<h3 id="h_01HT0CCGC6ZFSMHDSG70JBTW54">
+<div class="info-box">
   If you're unable to join iOS Testflight, you may need to wait until the
   beginning of next month in order to download this version of the mobile app.
-</h3>
+</div>
 <p><strong>1. Install TestFlight from the App Store</strong></p>
 <p>
   If you haven’t already, install the
-  <a
-    href="https://apps.apple.com/us/app/testflight/id899247664"
-    target="_blank"
-    rel="noopener noreferrer"
+  <a href="https://apps.apple.com/us/app/testflight/id899247664"
     >TestFlight app</a
-  > on your device. All iOS Discord beta updates come through TestFlight. 
+  > on your device. All iOS Discord beta updates come through TestFlight.
 </p>
 <p>
   Make sure notifications are enabled in TestFlight so you are notified when
   there's an update!
 </p>
-<p>
-  <span class="diff-added"><strong>2. Join the beta</strong></span
-  ><span class="diff-removed"><strong>:</strong></span>
-</p>
+<p><strong>2. Join the beta:</strong></p>
 <p>
   With TestFlight installed on your device, simply head to
-  <a href="https://dis.gd/testflight" target="_blank" rel="noopener noreferrer"
-    >https://dis.gd/testflight</a
-  >
-  to sign up and install Discord TestFlight.
+  <a href="https://dis.gd/testflight">https://dis.gd/testflight</a> to sign up
+  and install Discord TestFlight.
 </p>
-<h3 id="h_01HT0CCGC67K7YR83M3223RFGV">
-  NOTE: If at any point you no longer wish to be apart of the Discord TestFlight
-  program, launch the TestFlight app, navigate to Discord, scroll down and tap
-  on Stop Testing!
-</h3>
+<div class="info-box">
+  <strong>Note</strong>: If at any point you no longer wish to be apart of the
+  Discord TestFlight program, launch the TestFlight app, navigate to Discord,
+  scroll down and tap on Stop Testing! You can then simply install the Discord
+  Stable app from the App Store.
+</div>
 <p>
   <img
     src="https://support.discord.com/hc/article_attachments/4405173412375"
     alt="testflight.png"
   />
 </p>
-<h3 id="h_01HT0CCGC63FQJYM4N9NDPYJHG">
-  You can then simply install the Discord Stable app from the App Store.
-</h3>
-<h2 id="h_01HT0CCGC6NZYJ4C7D6G0BAPAD"><strong>Android:</strong></h2>
+<h2 id="h_01HT0CCGC6NZYJ4C7D6G0BAPAD"><strong>Android</strong></h2>
 <ul>
   <li>
     <span style="font-weight: 400"
@@ -209,7 +170,7 @@
       target="_blank"
       rel="noopener noreferrer"
       >https://support.google.com/googleplay/answer/7003180?hl=en</a
-    ><span style="font-weight: 400"> </span>
+    >
   </li>
   <li><span style="font-weight: 400">Alpha:</span></li>
 </ul>
@@ -280,8 +241,7 @@
     alt="leave_confirmation.png"
   />
 </p>
-<h3 id="h_01HT0CCGC6YXBA3SMYMS8NMM9Y">
-  NOTE: You may need to uninstall and reinstall the Discord app from the Google
+<div class="info-box">
+  Note: You may need to uninstall and reinstall the Discord app from the Google
   Play Store to return to Discord stable.
-</h3>
-<p> </p>
+</div>

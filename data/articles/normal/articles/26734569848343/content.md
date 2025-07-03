@@ -1,12 +1,11 @@
 <p>
   <strong
-    >See full terms and conditions in the Master Sweepstakes Rules here: </strong
-  ><a
+    >See full terms and conditions in the Master Sweepstakes Rules here:</strong
+  >
+  <a
     href="https://support.discord.com/hc/en-us/articles/16000885744791-Master-Sweepstakes-Rules"
-    target="_blank"
-    rel="noopener noreferrer"
     >https://support.discord.com/hc/en-us/articles/16000885744791-Master-Sweepstakes-Rules</a
-  > 
+  >
 </p>
 <p>By entering, you agree to these Master Sweepstakes Terms.</p>
 <ol>
@@ -27,23 +26,11 @@
     <strong>Prizes</strong>: Three (3) winners ($300 USD Total Prize Value):
     <ul>
       <li>
-        <strong>Three (3) Prize Winners will receive </strong>($100.00 USD Total
-        Value): 
+        <strong>Three (3) Prize Winners will receive</strong> ($100.00 USD Total
+        Value):
         <ul>
-          <li>
-            <span
-              style="background-color: #ffffff"
-              data-darkreader-inline-bgcolor=""
-              >One (1) Kaiju Wumpus Plushie ($50.00 USD Value)</span
-            >
-          </li>
-          <li>
-            <span
-              style="background-color: #ffffff"
-              data-darkreader-inline-bgcolor=""
-              >One (1) Tokyo Special Edition Figurines ($50.00 USD Value)</span
-            >
-          </li>
+          <li>One (1) Kaiju Wumpus Plushie ($50.00 USD Value)</li>
+          <li>One (1) Tokyo Special Edition Figurines ($50.00 USD Value)</li>
         </ul>
       </li>
     </ul>
