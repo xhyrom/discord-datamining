@@ -302,65 +302,46 @@
                 </div>
                 <nav class="nav_dd_list is-safety w-dropdown-list">
                   <div class="nav_dd_content-wr isnew">
-                    <div class="nav_dd_content_layout top-none">
-                      <div class="nav_dd_link-group">
+                    <div class="nav_dd_content_layout top-none _2-col is_n">
+                      <div class="nav_dd_link-group is_2025 is_n">
                         <div class="nav_dd_link_list is-new">
                           <div class="nav_dd_link_title">Resources</div>
-                          <a href="/safety-news" class="dd_nav-link"
-                            >Safety News</a
+                          <a href="/safety-family-center" class="dd_nav-link"
+                            >Family Center</a
                           ><a href="/safety-library" class="dd_nav-link"
                             >Safety Library</a
+                          ><a href="/safety-news" class="dd_nav-link"
+                            >Safety News</a
+                          ><a
+                            href="/safety-teen-charter"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Teen Charter</div></a
                           >
                         </div>
                       </div>
-                      <div class="nav_dd_link-group is_2025">
-                        <a
-                          href="/guidelines"
-                          class="nav_dd_link-group_title is-new-white"
-                          >Community Guidelines</a
-                        >
-                        <div class="nav_dd_link_list">
-                          <div class="nav_dd_link_title">Resources</div>
-                          <a
-                            href="/safety-privacy"
-                            class="dd_nav-link w-inline-block"
-                            ><div>Privacy Hub</div></a
-                          ><a
-                            href="/safety-policies"
-                            class="dd_nav-link w-inline-block"
-                            ><div>Policy Hub</div></a
-                          ><a
-                            href="/safety-transparency"
-                            class="dd_nav-link w-inline-block"
-                            ><div>Transparency Hub</div></a
-                          >
-                        </div>
-                        <div class="nav_dd_link_line is-n"></div>
-                        <div class="nav_dd_link_list">
-                          <div class="nav_dd_link_title">Documentation</div>
-                          <a
-                            href="https://discord.com/safety-transparency-reports/2024-h1"
-                            class="dd_nav-link w-inline-block"
-                            ><div>Transparency Reports</div></a
-                          >
-                        </div>
-                      </div>
-                      <div class="nav_dd_link-group">
-                        <a
-                          href="/safety-family-center"
-                          class="nav_dd_link-group_title is-new-white"
-                          >Family Center</a
-                        >
-                        <div class="nav_dd_link_list">
-                          <div class="nav_dd_link_title">Resources</div>
+                      <div class="nav_dd_link-group is_hub">
+                        <div class="nav_dd_link_list is-new">
+                          <div class="nav_dd_link_title">Hubs</div>
                           <a
                             href="/safety-parents"
                             class="dd_nav-link w-inline-block"
                             ><div>Parent Hub</div></a
                           ><a
-                            href="/safety-teen-charter"
+                            href="/safety-policies"
                             class="dd_nav-link w-inline-block"
-                            ><div>Teen Charter</div></a
+                            ><div>Policy Hub</div></a
+                          ><a
+                            href="/safety-privacy"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Privacy Hub</div></a
+                          ><a
+                            href="/safety-transparency"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Transparency Hub</div></a
+                          ><a
+                            href="/safety-wellbeing"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Wellbeing Hub</div></a
                           >
                         </div>
                       </div>
@@ -931,7 +912,7 @@
                         <div class="nav_dd_content_layout">
                           <div class="nav_dd_link-group">
                             <a
-                              href="https://discord.com/safety"
+                              href="/safety"
                               class="nav_dd_link-group_title is-new"
                               >Safety</a
                             >
@@ -940,70 +921,45 @@
                                 Resources
                               </div>
                               <a
-                                href="https://discord.com/safety-news"
-                                class="dd_nav-link is-new"
-                                >Safety News</a
+                                href="/safety-family-center"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Family Center</div></a
                               ><a
-                                href="https://discord.com/safety-library"
+                                href="/safety-library"
                                 class="dd_nav-link is-new"
                                 >Safety Library</a
+                              ><a href="/safety-news" class="dd_nav-link is-new"
+                                >Safety News</a
+                              ><a
+                                href="/safety-teen-charter"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Teen Charter</div></a
                               >
                             </div>
                           </div>
                           <div class="nav_dd_link-group">
-                            <a
-                              href="https://discord.com/guidelines"
-                              class="nav_dd_link-group_title is-new"
-                              >Community Guidelines</a
-                            >
                             <div class="nav_dd_link_list">
-                              <div class="nav_dd_link_title is-new">
-                                Resources
-                              </div>
+                              <div class="nav_dd_link_title is-new">Hubs</div>
                               <a
-                                href="https://discord.com/safety-privacy"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>Privacy Hub</div></a
-                              ><a
-                                href="https://discord.com/safety-policies"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>Policy Hub</div></a
-                              ><a
-                                href="https://discord.com/safety-transparency"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>Transparency Hub</div></a
-                              >
-                            </div>
-                            <div class="nav_dd_link_line"></div>
-                            <div class="nav_dd_link_list">
-                              <div class="nav_dd_link_title is-new">
-                                Documentation
-                              </div>
-                              <a
-                                href="https://discord.com/safety-transparency-reports/2024-h1"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>Transparency Reports</div></a
-                              >
-                            </div>
-                          </div>
-                          <div class="nav_dd_link-group">
-                            <a
-                              href="https://discord.com/safety-family-center"
-                              class="nav_dd_link-group_title is-new"
-                              >Family Center</a
-                            >
-                            <div class="nav_dd_link_list">
-                              <div class="nav_dd_link_title is-new">
-                                Resources
-                              </div>
-                              <a
-                                href="https://discord.com/safety-parents"
+                                href="/safety-parents"
                                 class="dd_nav-link is-new w-inline-block"
                                 ><div>Parent Hub</div></a
                               ><a
-                                href="https://discord.com/safety-teen-charter"
+                                href="/safety-policies"
                                 class="dd_nav-link is-new w-inline-block"
-                                ><div>Teen Charter</div></a
+                                ><div>Policy Hub</div></a
+                              ><a
+                                href="/safety-privacy"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Privacy Hub</div></a
+                              ><a
+                                href="/safety-transparency"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Transparency Hub</div></a
+                              ><a
+                                href="/safety-wellbeing"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Wellbeing Hub</div></a
                               >
                             </div>
                           </div>
