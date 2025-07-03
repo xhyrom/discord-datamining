@@ -26204,6 +26204,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .align-chat-input .emojiButton__74017:hover {
   background-color: var(--background-modifier-selected);
 }
+.align-chat-input .stickerButton__74017 {
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
 .has-webkit-scrollbar .buttons__74017 {
   margin-right: 0;
 }
@@ -26232,10 +26237,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-top: 1px;
   padding-left: 2px;
   padding-right: 2px;
-}
-.stickerButtonTilted__74017 {
-  transform: rotate(12deg) scale(1.05);
-  transition: transform 0.15s;
 }
 .messageConfettiButton__74017:hover .messageConfettiIcon__74017,
 .messageConfettiIcon__74017.active__74017 {
@@ -57930,4 +57931,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4ca05a7dad25568a.css.map*/
+/*# sourceMappingURL=12633.55b958895247d0b6.css.map*/
