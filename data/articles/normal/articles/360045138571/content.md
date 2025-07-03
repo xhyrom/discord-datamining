@@ -55,6 +55,14 @@
   and video. Users can join or create their own communities, which can be
   organized around various topics, interests, or gaming groups.
 </p>
+<div class="info-box">
+  Check out our
+  <a
+    href="https://support.discord.com/hc/en-us/categories/33024416595735-Video-Tutorials"
+    >Video Tutorials</a
+  >
+  to learn even more about Discord.
+</div>
 <h1 id="h_01JYSK9MCPDZFM3DH2WM2CQ1XV">Account Setup and Troubleshooting</h1>
 <p>
   You can register a Discord account through the desktop app, your mobile

@@ -34,11 +34,13 @@
   <strong>Jurassic World Rebirth Trailer </strong>in Discord to receive a
   <strong>Dilophosaurus Avatar Decoration</strong>. <br /><strong
     >Who is Eligible: </strong
-  >Available to users in the
-  <strong>Brazil, South Korea, Australia and United Kingdom</strong> on desktop
-  where <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Jurassic World Rebirth Quest</strong> can be accepted on Discord
+  >Available to users in
+  <strong>Brazil, South Korea, Australia and the United Kingdom</strong> on
+  desktop where <strong>Discord</strong> is available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Jurassic World Rebirth Quest</strong> can be accepted on Discord
   desktop app or browser client from
   <strong>June 30, 2025 </strong>until<strong>
     July 6, 2025 (11:59PM UTC)</strong
