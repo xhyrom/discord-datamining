@@ -1,62 +1,5 @@
 [
   {
-    "id": 33208475180695,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33208475180695.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/33208475180695-How-to-Troubleshoot-Voice-and-Video-Issues-on-Discord-Video-Tutorial",
-    "author_id": 2921470028,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 0,
-    "section_id": 33024419968279,
-    "created_at": "2025-07-02T17:28:40Z",
-    "name": "How to Troubleshoot Voice and Video Issues on Discord - Video Tutorial",
-    "title": "How to Troubleshoot Voice and Video Issues on Discord - Video Tutorial",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2025-07-02T17:28:50Z",
-    "user_segment_id": null,
-    "permission_group_id": 6449276657303,
-    "content_tag_ids": [],
-    "label_names": [
-      "troubleshooting",
-      "video issues",
-      "video tutorial",
-      "voice issues"
-    ],
-    "body": "<p><iframe style=\"aspect-ratio: 16 / 9; width: 100%;\" src=\"//www.youtube-nocookie.com/embed/-bDPrWeabJg?&amp;rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></p>"
-  },
-  {
-    "id": 33208314215063,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33208314215063.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/33208314215063-How-to-Set-Up-a-Discord-Server-Video-Tutorial",
-    "author_id": 2921470028,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 0,
-    "section_id": 33024419968279,
-    "created_at": "2025-07-02T17:23:11Z",
-    "name": "How to Set Up a Discord Server - Video Tutorial",
-    "title": "How to Set Up a Discord Server - Video Tutorial",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2025-07-02T17:23:19Z",
-    "user_segment_id": null,
-    "permission_group_id": 6449276657303,
-    "content_tag_ids": [],
-    "label_names": [
-      "video",
-      "server setup",
-      "discord server"
-    ],
-    "body": "<p><iframe style=\"aspect-ratio: 16 / 9; width: 100%;\" src=\"//www.youtube-nocookie.com/embed/j1aUDPcxxKQ?&amp;rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></p>"
-  },
-  {
     "id": 33103248997911,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33103248997911.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/33103248997911-How-to-Report-an-Unrecognized-Charge-on-Your-Discord-Account",
@@ -9387,6 +9330,34 @@
     "body": "<p>One of the great things about creating communities on Discord is our permission system! In this Help Center article, you'll learn more about permissions, how to create and customize permissions based on roles, and the difference between server, category, and channel permissions.</p>\n<p><span class=\"wysiwyg-font-size-large\"><strong>What does this article cover?</strong></span></p>\n<ul>\n<li><a href=\"#h_01FFTVY8DEK832YB6MWF51MMRE\" target=\"_self\">What are permissions?</a></li>\n<li>\n<a href=\"#h_01FFTVYFNVY8GHKTHCFBXMBGAZ\" target=\"_self\">How to Set Up Server Permissions</a>\n<ul>\n<li><a href=\"#h_01FFTVYQ38W9TVCTM6YZHZXFFA\" target=\"_self\">Step 1 - Create a role</a></li>\n<li><a href=\"#h_01FFTVYZ40ZBHKZWTN1N8WPDTG\" target=\"_self\">Step 2 -  Customize the role</a></li>\n<li><a href=\"#h_01FFTVZC9MSSMCG841X5JE482D\" target=\"_self\">Step 3 - Assign the role</a></li>\n</ul>\n</li>\n<li>\n<a href=\"#h_01FFTVZWZVQ3BZ0ZXRJ1QBCKY1\" target=\"_self\">Understanding Category and Channel Permissions</a>\n<ul>\n<li><a href=\"#h_01FFTW0BY5PDYV8YKSAWHJKR3T\" target=\"_self\">How to Set Up Channel Permissions</a></li>\n<li><a href=\"#h_01FFTW0NHWARAWRYW17NY20AXA\" target=\"_self\">How to Set Up Category Permissions</a></li>\n<li><a href=\"#h_01FFTW0XAAE10CGQXK6707JKTB\" target=\"_self\">Understanding Synced and Not-Synced Permissions</a></li>\n</ul>\n</li>\n<li><a href=\"#h_01FKP2FBYY22J5KP9BJ46W2VR9\" target=\"_self\">Learn more about how to use permissions</a></li>\n</ul>\n<h1 id=\"h_01FFTVY8DEK832YB6MWF51MMRE\">What are permissions?</h1>\n<p>Permissions allow users to have specific privileges and functions in their server. Some permissions can be as basic as allowing users the ability to add reactions to messages while other permissions grant users more administrative actions. These permissions are based on the roles assigned to users in a server and permissions can be assigned per role on both the server level and channel level.</p>\n<h1 id=\"h_01FFTVYFNVY8GHKTHCFBXMBGAZ\">How to Set Up Server Permissions</h1>\n<h2 id=\"h_01FFTVYQ38W9TVCTM6YZHZXFFA\">Step 1 - Create roles</h2>\n<p>Your journey to setting up permissions in your server begins with you creating roles!</p>\n<p>When you first create your server there is only one pre-made role: @everyone. The @everyone role defines the permissions that are enabled for everyone on your server even if they have no other roles assigned to them.</p>\n<h3>Note: As the creator of your server you don't need to assign any roles or permissions to yourself. You will always have access to everything.</h3>\n<ol>\n<li>Press on the downward arrow next to the server name.</li>\n<li>Choose <strong>Server Settings</strong> &gt; <strong>Roles</strong> &gt; <strong>Create Role</strong>.</li>\n</ol>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412259091351/Permission-Setup-Where-To-Create-Role-gif.gif\" alt=\"Permission-Setup-Where-To-Create-Role-gif.gif\" width=\"678\" height=\"340\"></p>\n<h2 id=\"h_01FFTVYZ40ZBHKZWTN1N8WPDTG\">Step 2 - Customize role and permissions</h2>\n<ol>\n<li>Give the new role a name. You can always change this later! Feel free to change the display of this role at this point, but for this article, we'll focus on Permissions.</li>\n<li>Select on the <strong>Permissions</strong> tab of the new role you just created to see the list of server Permissions you can assign under this role.</li>\n<li>Make sure to consider what you want users in this role to do in your server when choosing permissions.</li>\n<li>Don't forget to <strong>Save</strong> the changes you're making to this role!</li>\n</ol>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412259091095/Create-Role-Permission-Setup.gif\" alt=\"Create-Role-Permission-Setup.gif\" width=\"686\" height=\"279\"></p>\n<h2 id=\"h_01FFTVZC9MSSMCG841X5JE482D\">Step 3 - Assign the role</h2>\n<p>Finally, once you've configured the role's permission, you can assign the role to members of your server.</p>\n<ol>\n<li class=\"wysiwyg-text-align-left\">Select the <strong>Manage Members</strong> tab for the list of server members and pick the user you want to assign the role to.</li>\n<li>Or you can press on a user's avatar in the server then select the <strong>plus sign</strong> under the role section to select a role from the pop-up window</li>\n</ol>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412259093143/Assigning-Role-to-User-Plus-Sign-gif.gif\" alt=\"Assigning-Role-to-User-Plus-Sign-gif.gif\" width=\"686\" height=\"468\"></p>\n<p>Now this user has the server-wide permissions that you assigned to that role.</p>\n<h1 id=\"h_01FFTVZWZVQ3BZ0ZXRJ1QBCKY1\">Understanding Channel and Category Permissions</h1>\n<h2 id=\"h_01FFTW0BY5PDYV8YKSAWHJKR3T\">How to Set Up Channel Permissions</h2>\n<p>Now that you've set up roles with server permissions, it's important to understand channel permissions. Like server permissions, channel permissions allow specific users on how they can interact with a specific channel. Here's how to set up channel permissions.</p>\n<h3>Note: Channel permissions will override server permissions.</h3>\n<ol>\n<li>You can adjust permissions of specific channels, both text and voice, through the channel settings menu by hovering over a channel and clicking on the cog icon.</li>\n<li>Select the <strong>Permissions</strong> tab on the left-hand side.</li>\n<li>By default @everyone has access to all features of a channel. You can allow or deny the permissions everyone has on this particular channel by clicking the check boxes.</li>\n<li>You can add roles or specific people whom you want to manage channel permissions for by clicking the <strong>plus sign</strong>.</li>\n<li>Once you have added a <strong>Role</strong> or member you can begin assigning channel permissions to this group or person.</li>\n</ol>\n<h2 id=\"h_01FFTW0NHWARAWRYW17NY20AXA\">How to Set Up Category Permissions</h2>\n<p>In your server, you're also capable of adjusting Category permissions so that the channels under a category can all have the same permissions. Here's how you can set up Category permissions.</p>\n<ol>\n<li>Right-click the category and choose <strong>Edit Category</strong>.</li>\n<li>Select <strong>Permissions</strong> in the left-hand panel to alter permissions and add roles.</li>\n</ol>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412259094551/Find-Category-Permissions-option.gif\" alt=\"Find-Category-Permissions-option.gif\" width=\"674\" height=\"338\"></p>\n<h2 id=\"h_01FFTW0XAAE10CGQXK6707JKTB\">Understanding Synced and Not-Synced Permissions</h2>\n<p>There are two default states for a channel in regards to category permissions: <strong>synced</strong> and <strong>not-synced</strong>. A synced channel will have permissions that completely match that of the category. A not-synced channel will have permissions that differ from the permissions set for the category.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412259094807/Synced-Channel-example.png\" alt=\"Synced-Channel-example.png\"></p>\n<h4 class=\"wysiwyg-text-align-center\">A synced channel!</h4>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412274201367/Not-Synced-Channel-example.png\" alt=\"Not-Synced-Channel-example.png\"></p>\n<h4 class=\"wysiwyg-text-align-center\">A not synced channel!</h4>\n<p>If you change the permissions on a category, all channels that are synced will automatically update.</p>\n<p>If you do not sync permissions when moving a channel between categories, or if you change an individual permission on the channel level, it will then show that the channel is not synced with the category.</p>\n<p>This means the channel currently does not share the same permissions as the category and will not automatically update when you make changes to the category's permissions.</p>\n<p>If you want a not-synced channel to sync with its category again, here's how you can do it:</p>\n<ol>\n<li>Right-click on the not-synced channel and choose <strong>Edit Channel</strong> from the drop-down menu.</li>\n<li>Press the <strong>Permissions</strong> option in the left-hand panel.</li>\n<li>Press the <strong>Sync Now</strong> button and the channel's permission will match the permissions of the category.</li>\n</ol>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/4412245350167/Syncing-Channel-Permissions.gif\" alt=\"Syncing-Channel-Permissions.gif\" width=\"691\" height=\"311\"></p>\n<h3>Note: Synced and not-synced channels can coexist within a category. Changing a category’s permissions will change all synced channel’s permissions, but not the permissions of any not-synced channel!</h3>\n<p>One final note on category permissions - if you don't want to utilize them at all, you can leave all channels within the category as \"not synced\" and manage them individually. Permissions can also be managed on a per-channel basis.</p>\n<h1 id=\"h_01FKP2FBYY22J5KP9BJ46W2VR9\">Learn more about how to use permissions</h1>\n<p>You can check out step-by-step instructions for the following popular permission settings:</p>\n<ul>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/206143407\" target=\"_blank\" rel=\"noopener\">How do I set up a private server?</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/206143877\" target=\"_blank\" rel=\"noopener\">How do I set up a leaders channel?</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/205369668\" target=\"_blank\" rel=\"noopener\">How do I set up an announcements channel?</a></li>\n<li><a href=\"https://support.discord.com/hc/en-us/articles/206141927\" target=\"_blank\" rel=\"noopener\">How is the permission hierarchy structured? </a></li>\n</ul>\n<p> </p>"
   },
   {
+    "id": 33208314215063,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33208314215063.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/33208314215063-How-to-Set-Up-a-Discord-Server-Video-Tutorial",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 5,
+    "section_id": 33024419968279,
+    "created_at": "2025-07-02T17:23:11Z",
+    "name": "How to Set Up a Discord Server - Video Tutorial",
+    "title": "How to Set Up a Discord Server - Video Tutorial",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2025-07-02T17:23:19Z",
+    "user_segment_id": null,
+    "permission_group_id": 6449276657303,
+    "content_tag_ids": [],
+    "label_names": [
+      "video",
+      "server setup",
+      "discord server"
+    ],
+    "body": "<p><iframe style=\"aspect-ratio: 16 / 9; width: 100%;\" src=\"//www.youtube-nocookie.com/embed/j1aUDPcxxKQ?&amp;rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></p>"
+  },
+  {
     "id": 27839350349079,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/27839350349079.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/27839350349079-Discord-Quest-Promotion-Terms",
@@ -9858,6 +9829,35 @@
       "user ID"
     ],
     "body": "<p>Users, individual messages, and entire Discord servers all have a multi-digit ID number that can be used in various cases. While you can use Discord entirely without knowing any of these ID numbers, if you are reaching out to our <a href=\"http://dis.gd/support\" target=\"_blank\" rel=\"noopener noreferrer\">Support team</a> they might require an ID to further assist you. Here’s how to get those ID numbers on both desktop and mobile.</p>\n<div class=\"toc-box\">\n<strong><span class=\"wysiwyg-font-size-x-large\">What this article covers:</span><br></strong>\n<ul>\n<li>\n<a href=\"#h_01HRSTXPS5CRSRTWYCGPHZQ37H\">How to Enable Developer Mode</a>\n<ul>\n<li><a href=\"#h_01HRSTXPS5H1KKPQWG4YCWBJVA\">Desktop</a></li>\n<li><a href=\"#h_01HRSTXPS58W15V93XGSKPWA05\">Mobile</a></li>\n</ul>\n</li>\n<li>\n<a href=\"#h_01HRSTXPS5H5D7JBY2QKKPVKNA\">How to find a User ID number</a>\n<ul>\n<li><a href=\"#h_01HRSTXPS58KNN33AZPCZ1W2F2\">Desktop</a></li>\n<li><a href=\"#h_01HRSTXPS51868RZW0AG3ENKCE\">Mobile</a></li>\n</ul>\n</li>\n<li>\n<a href=\"#h_01HRSTXPS5FSFA0VWMY2CKGZXA\">How to find a Server ID number</a>\n<ul>\n<li><a href=\"#h_01HRSTXPS5N2Y7H57WNY7DJSC8\">Desktop</a></li>\n<li><a href=\"#h_01HRSTXPS5VT8H65S3RQ87VXTR\">Mobile</a></li>\n</ul>\n</li>\n<li>\n<a href=\"#h_01HRSTXPS52TR10R4EPMPE8MGG\">How to find the Message Link</a>\n<ul>\n<li><a href=\"#h_01HRSTXPS5DPNBF4W9C8DA2VGN\">Desktop</a></li>\n<li><a href=\"#h_01HRSTXPS5BSEA2CKVGHH6406G\">Mobile</a></li>\n</ul>\n</li>\n<li>\n<a href=\"#h_01HRSTXPS5FMK2A5SMVSX4JW4E\">How to find the Channel ID number</a>\n<ul>\n<li><a href=\"#h_01HRSTXPS5WGDKT73WADV2HGCH\">Desktop</a></li>\n<li><a href=\"#h_01HRSTXPS5135ZAB5J5JA6MA6R\">Mobile</a></li>\n</ul>\n</li>\n</ul>\n</div>\n<h1 id=\"h_01HRSTXPS5CRSRTWYCGPHZQ37H\">How to Enable Developer Mode</h1>\n<p>In order to be able to copy an ID number, you need to have<strong> Developer Mode </strong>enabled. Here’s how.</p>\n<h2 id=\"h_01HRSTXPS5H1KKPQWG4YCWBJVA\">Desktop</h2>\n<p>1. Tap on the <strong>cogwheel</strong> [<img src=\"https://support.discord.com/hc/article_attachments/22015869446039\" width=\"20\" height=\"20\">] in the bottom left corner of the desktop app to open up your <strong>User Settings</strong>.</p>\n<p>2. Then head to <strong>Advanced</strong>. </p>\n<p>3. Now, tap on the main toggle next to <strong>Developer Mode</strong> to enable. A “checkmark” means it’s enabled, while an “x” means it’s disabled.</p>\n<p class=\"wysiwyg-text-align-center\"><span style=\"color: #2e3338;\"><img src=\"https://support.discord.com/hc/article_attachments/30911629526551\" width=\"624\" height=\"444\"></span></p>\n<h4 id=\"h_01JQ707HYDMCX35WW77HSJF3G1\" class=\"wysiwyg-text-align-center\"><span style=\"color: #2e3338;\">Desktop: Open User Settings &gt; Advanced and toggle on Developer Mode<br></span></h4>\n<h2 id=\"h_01HRSTXPS58W15V93XGSKPWA05\">Mobile</h2>\n<p>1. Tap on your Avatar in the bottom-right corner.</p>\n<p>2. Next, tap on the <strong>cogwheel</strong> [<img src=\"https://support.discord.com/hc/article_attachments/22015869446039\" width=\"20\" height=\"20\">] in the top-right corner.</p>\n<p>3. Now, scroll down until you see <strong>Advanced</strong> under <strong>App Settings</strong>.</p>\n<p>4. Finally, tap on the toggle next to <strong>Developer Mode</strong>. A “checkmark” means it’s enabled, while an “x” means it’s disabled.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911616486423\" width=\"228\" height=\"477\"></p>\n<h4 id=\"h_01JQ708X8DJXJ9RF3QD7V1TCHN\" class=\"wysiwyg-text-align-center\">Mobile: Open Settings &gt; Advanced and toggle on Developer Mode</h4>\n<p>Now that you can see ID numbers, let’s go over how to find each type.</p>\n<h1 id=\"h_01HRSTXPS5H5D7JBY2QKKPVKNA\">How to find a User ID number</h1>\n<p>You can also copy the user ID from a server, group chat, or direct message with a user. </p>\n<h2 id=\"h_01HRSTXPS58KNN33AZPCZ1W2F2\">Desktop</h2>\n<p>1. Navigate to where you want to copy the user ID from. </p>\n<p>2. Next, right-click on the user and tap on <strong>Copy User ID</strong>. </p>\n<p>3. After copying the user ID you can then paste it where needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911629534871\" width=\"280\" height=\"486\"></p>\n<h4 id=\"h_01JQ709S90EK2Q0G7ENEPJRTGZ\" class=\"wysiwyg-text-align-center\">Desktop: Right-click a user to find Copy User ID</h4>\n<h2 id=\"h_01HRSTXPS51868RZW0AG3ENKCE\">Mobile</h2>\n<p>1. Navigate to where you want to copy the user ID from. </p>\n<p>2. Tap on the user and then tap on the <strong>ellipsis</strong> (<img src=\"https://support.discord.com/hc/article_attachments/30911616499735\" width=\"30\" height=\"24\">) in the top-right corner.</p>\n<p>3. Next, tap on <strong>Copy User ID</strong>. </p>\n<p>4. After copying the user ID you can then paste it where needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911616502679\" width=\"278\" height=\"571\"></p>\n<h4 id=\"h_01JQ70AVKW1KS9NAGNTGPSBJNN\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Mobile: Tap a user to find Copy User ID</span></h4>\n<h1 id=\"h_01HRSTXPS5FSFA0VWMY2CKGZXA\">How to find a Server ID number</h1>\n<h2 id=\"h_01HRSTXPS5N2Y7H57WNY7DJSC8\">Desktop</h2>\n<p>1. Navigate to the server you want to copy the ID from.</p>\n<p>2. Right-click the server icon, and then tap on <strong>Copy Server ID</strong>.</p>\n<p>3. Now you can paste this server ID number where needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911616506647\" width=\"624\" height=\"303\"></p>\n<h4 id=\"h_01JQ70BAHWP08F1HQSR2WYMC6C\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Desktop: Right-click the server icon to find Copy Server ID</span></h4>\n<h2 id=\"h_01HRSTXPS5VT8H65S3RQ87VXTR\">Mobile</h2>\n<p>1. Navigate to the server whose ID number you want to copy.</p>\n<p>2. Tap the server name, then scroll down and tap <strong>Copy Server ID</strong>.</p>\n<p>3. The server ID number is now copied and ready to paste wherever needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911616516247\" width=\"209\" height=\"436\"></p>\n<h4 id=\"h_01JQ70DVRP2ARM15N96084YDDC\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Mobile: Tap the server name to find Copy Server ID</span></h4>\n<h1 id=\"h_01HRSTXPS52TR10R4EPMPE8MGG\">How to find the Message Link</h1>\n<div class=\"tip-box\">If you want to copy a message link from a group message instead, you just need to navigate to the group message and copy the ID following the same steps below.</div>\n<p>You can use the message link to link a channel (that someone has access to), so they can easily jump into the conversation or for any other reason you might need it. </p>\n<h2 id=\"h_01HRSTXPS5DPNBF4W9C8DA2VGN\">Desktop </h2>\n<p>1. Navigate to the message you want to copy the link for.</p>\n<p>2. Right-click on the message and then tap on <strong>Copy Message Link</strong>.</p>\n<p>3. Now you can paste this link anywhere to directly link to the copied message.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911629563799\" width=\"338\" height=\"308\"></p>\n<h4 id=\"h_01JQ70FM1WGV2SD640EZVAT1SE\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Desktop: Right-click a message to find Copy Message ID</span></h4>\n<h2 id=\"h_01HRSTXPS5BSEA2CKVGHH6406G\">Mobile</h2>\n<p>1. Navigate to the message you want to copy the link for.</p>\n<p>2. Longpress a message and select <strong>Copy Message Link </strong>in the menu.</p>\n<p>3. Now you can paste this link anywhere to directly link to the copied message.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911629568023\" width=\"265\" height=\"552\"></p>\n<h4 id=\"h_01JQ70GJE1HPMHVSKBMPFM8XM0\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\"> Mobile: Longpress a message to find Copy Message ID</span></h4>\n<h1 id=\"h_01HRSTXPS5FMK2A5SMVSX4JW4E\">How to find the Channel ID number</h1>\n<div class=\"tip-box\">If you want to copy the channel ID number from a group message instead, you just need to navigate to the group message and copy the channel ID following the same steps below.</div>\n<p>If you have a channel ID copied, you can send a clickable link to someone by typing out &lt;#channelidnumber&gt;. </p>\n<h2 id=\"h_01HRSTXPS5WGDKT73WADV2HGCH\">Desktop </h2>\n<p>1. Navigate to the channel you want to copy the ID for.</p>\n<p>2. Right-click on the channel, and then tap on <strong>Copy Channel ID</strong>.</p>\n<p>3. Now you can paste the channel ID as needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911616532119\" width=\"249\" height=\"338\"></p>\n<h4 id=\"h_01JQ70JB72WV44ARZVC7TBBQ4Y\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Desktop: Right-click a channel to find Copy Channel ID</span></h4>\n<h2 id=\"h_01HRSTXPS5135ZAB5J5JA6MA6R\">Mobile</h2>\n<p>1. Navigate to the channel you want to copy the ID for.</p>\n<p>2. Longpress a channel, then scroll down and tap <strong>Copy Channel ID</strong>.</p>\n<p>3. Now you can paste the channel ID where needed.</p>\n<p class=\"wysiwyg-text-align-center\"><img src=\"https://support.discord.com/hc/article_attachments/30911629575447\" width=\"251\" height=\"524\"></p>\n<h4 id=\"h_01JQ70K0M94ZPRKW0BS0K063X0\" class=\"wysiwyg-text-align-center\"><span style=\"color: #666666;\">Mobile: Longpress a channel to find Copy Channel ID</span></h4>"
+  },
+  {
+    "id": 33208475180695,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33208475180695.json",
+    "html_url": "https://support.discord.com/hc/en-us/articles/33208475180695-How-to-Troubleshoot-Voice-and-Video-Issues-on-Discord-Video-Tutorial",
+    "author_id": 2921470028,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 6,
+    "section_id": 33024419968279,
+    "created_at": "2025-07-02T17:28:40Z",
+    "name": "How to Troubleshoot Voice and Video Issues on Discord - Video Tutorial",
+    "title": "How to Troubleshoot Voice and Video Issues on Discord - Video Tutorial",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2025-07-02T17:28:50Z",
+    "user_segment_id": null,
+    "permission_group_id": 6449276657303,
+    "content_tag_ids": [],
+    "label_names": [
+      "troubleshooting",
+      "video issues",
+      "video tutorial",
+      "voice issues"
+    ],
+    "body": "<p><iframe style=\"aspect-ratio: 16 / 9; width: 100%;\" src=\"//www.youtube-nocookie.com/embed/-bDPrWeabJg?&amp;rel=0\" frameborder=\"0\" allowfullscreen=\"\" allow=\"encrypted-media\"></iframe></p>"
   },
   {
     "id": 4978019693463,
