@@ -10,7 +10,6 @@
       "demographic_data_consent_applies": true
     }
   ],
-  "education": "education_optional",
   "internal_job_id": 6089923002,
   "location": {
     "name": "San Francisco Bay Area"
@@ -30,7 +29,7 @@
     }
   ],
   "id": 7835247002,
-  "updated_at": "2025-06-24T10:00:02-04:00",
+  "updated_at": "2025-07-03T15:45:38-04:00",
   "requisition_id": "R-100790",
   "title": "Senior Technical Program Manager, Cost & Efficiency",
   "company_name": "Discord",
