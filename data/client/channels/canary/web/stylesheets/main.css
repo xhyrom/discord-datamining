@@ -18178,6 +18178,23 @@ svg.radioIcon_c1e9c4 {
   -moz-user-select: none;
   user-select: none;
 }
+.hidden__7d7b6 {
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+}
+.image__7d7b6 {
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.video__7d7b6 {
+  transition: opacity 0.35s ease-in-out;
+  z-index: 10;
+}
 .nitroRewardTileAssetContainer_a92e89 {
   background-image: linear-gradient(
     135deg,
@@ -18301,6 +18318,9 @@ div.modalHeader_c28af8 {
   object-fit: cover;
   width: 100%;
 }
+.questRewardTileAssetLazyVideo__28141 {
+  position: absolute;
+}
 .questRewardTileAssetStatic__28141 {
   pointer-events: none;
 }
@@ -18359,6 +18379,15 @@ div.modalHeader_c28af8 {
   animation-iteration-count: infinite;
   animation-name: Shine__28141;
   animation-timing-function: ease-in-out;
+}
+.imageVideoOverlay__28141 {
+  border-radius: inherit;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .nitroUpsellContainer_d0caf4 {
   align-items: center;
@@ -57929,4 +57958,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.89ad59651512d89f.css.map*/
+/*# sourceMappingURL=12633.3fad0e456f66916d.css.map*/
