@@ -11,6 +11,30 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: ONCE HUMAN<br /></strong
+  ><strong
+    style="
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+        Helvetica, Arial, sans-serif;
+    "
+    >Quest Name: Dreamveil Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>ONCE HUMAN</strong> to receive a
+  <strong>Sugar Sketch Cap</strong>.<br /><strong>Who is Eligible:</strong>
+  Available to players who have access to <strong>ONCE HUMAN</strong> and
+  <strong>Discord</strong> on PC. Discord’s premium services are restricted in
+  some regions.<br /><strong>Availability Period: </strong>The
+  <strong>Dreamveil Quest</strong> can be accepted on <strong>PC</strong> from
+  <strong>July 3, 2025</strong> until
+  <strong>July 10, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 30, 2025 (12:00AM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: The Milk Cup<br /></strong
   ><strong>Quest Name: The Milk Cup Quest<br /></strong
   ><strong>Offer Details: </strong>Watch <strong>The Milk Cup Quest</strong> in
@@ -103,12 +127,8 @@
   >Available to players in the <strong>United States</strong>,
   <strong>Canada</strong>, and <strong>Great Britain</strong> who have access to
   <strong>Palia </strong>and<strong> Discord </strong>on desktop, Playstation 5,
-  and Xbox Series S/X.<span
-    style="background-color: #ffffff"
-    data-darkreader-inline-bgcolor=""
-  >
-    Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The
+  and Xbox Series S/X. Discord’s premium services are restricted in some
+  regions.<br /><strong>Availability Period: </strong>The
   <strong>Palia Play Quest </strong> can be accepted on
   <strong>desktop</strong>,<strong> Playstation 5</strong>, and<strong>
     Xbox Series S.X</strong
@@ -149,13 +169,9 @@
   or browser client from <strong>June 23, 2025 </strong>until<strong>
     July 6, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>August 6, 2025 (11:59 UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
+  reward by <strong>August 6, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -167,12 +183,10 @@
     >Who is Eligible: </strong
   >Available to players who have access to <strong>R.E.P.O. </strong>and<strong>
     Discord </strong
-  >on desktop.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The <strong>R.E.P.O. Quest</strong> can
-  be accepted on <strong>desktop</strong> from
-  <strong>June 18, 2025</strong> until
+  >on desktop. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>R.E.P.O. Quest</strong> can be accepted on
+  <strong>desktop</strong> from <strong>June 18, 2025</strong> until
   <strong>June 24, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
   requirements during this period and claim your reward by
   <strong>July 24, 2025 (11:59 UTC)</strong>.<br />The
@@ -198,11 +212,10 @@
     >Who is Eligible: </strong
   >Available to players who have access to
   <strong>LEGO® Fortnite Expeditions </strong>and<strong> Discord </strong>on
-  PC, PlayStation 4, PlayStation 5, and Xbox Series X/S.
-  <span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The
-  <strong>LEGO® Fortnite Quest</strong> can be accepted on
+  PC, PlayStation 4, PlayStation 5, and Xbox Series X/S. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>LEGO® Fortnite Quest</strong> can be accepted on
   <strong>PC, PlayStation 4, PlayStation 5, and Xbox Series X/S</strong> from
   <strong>June 18, 2025</strong> until
   <strong>June 22, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
@@ -211,13 +224,10 @@
   <strong>LEGO® Fortnite Avatar Decoration</strong> is a limited-time Avatar
   Decoration and will only be yours as an Avatar Decoration until
   <strong>August 22, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms:</strong
   >
+  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -307,13 +317,10 @@
   <strong>June 12, 2025 </strong>until<strong>
     June 18, 2025 (11:59PM UTC)</strong
   >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>September 11, 2025 (12:00AM UTC)</strong>.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
+  reward by <strong>September 11, 2025 (12:00AM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
   >
+  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -328,12 +335,10 @@
     Germany</strong
   >,<strong> Australia</strong>, <strong>Canada</strong>, and
   <strong>Italy </strong>who have access to
-  <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC.<br /><span
-    style="background-color: #ffffff"
-    data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The
-  <strong>R6 Siege X Avatar Quest</strong> can be accepted on
+  <strong>Rainbow Six Siege X </strong>and<strong> Discord </strong>on PC.<br />Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>R6 Siege X Avatar Quest</strong> can be accepted on
   <strong>PC</strong> from <strong>June 11, 2025</strong> until
   <strong>June 19, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
   requirements during this period and claim your reward by
@@ -381,13 +386,8 @@
     target="_blank"
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
-  >! <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
-  >
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -403,11 +403,8 @@
     Canada </strong
   >who have access to <strong>Dune: Awakening </strong>and<strong>
     Discord </strong
-  >on desktop. <br /><span
-    style="background-color: #ffffff"
-    data-darkreader-inline-bgcolor=""
-    >Discord’s premium services are restricted in some regions.<br /></span
-  ><strong>Availability Period: </strong>The
+  >on desktop. <br />Discord’s premium services are restricted in some
+  regions.<br /><strong>Availability Period: </strong>The
   <strong>Dune: Awakening Launch Quest </strong> can be accepted on
   <strong>desktop</strong> from <strong>June 10, 2025</strong> until
   <strong>June 16, 2025 (11:59PM UTC)</strong>. <br />Quest requirements must be
@@ -808,13 +805,8 @@
     target="_blank"
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
-  >! <br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms: </strong>Limit of one reward redemption per
-    account.</span
-  >
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
 </p>
 <p> </p>
 <p>
@@ -840,13 +832,10 @@
   <strong>Fortnite Galactic Battle Avatar Decoration</strong> is a limited-time
   Avatar Decoration and will only be yours as an Avatar Decoration until
   <strong>July 14, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration.<br /><span
-    style="color: #2e3338; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    ><strong>Other Terms:</strong> Limit of one reward redemption per
-    account.</span
+  longer have access to this Avatar Decoration.<br /><strong
+    >Other Terms:</strong
   >
+  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
@@ -881,12 +870,5 @@
   account.
 </p>
 <p>
-  <strong
-    ><span
-      style="color: #2e3338; background-color: #ffffff"
-      data-darkreader-inline-color=""
-      data-darkreader-inline-bgcolor=""
-      ><!-- notionvc: 74a563cb-1aba-4cae-92f6-c924a6534d81 --></span
-    ></strong
-  >
+  <strong><!-- notionvc: 74a563cb-1aba-4cae-92f6-c924a6534d81 --></strong>
 </p>

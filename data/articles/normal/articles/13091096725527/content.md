@@ -2,53 +2,53 @@
   Need to send a quick message to all of your friends but can't type because
   you're on the go? Or do you want to make sure your joke lands by adding
   comedic timing? Well, you're in luck - You can now send Voice Messages on
-  Discord!<br /><br /><span class="wysiwyg-font-size-large"
-    ><strong
-      ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
-        >What this article covers:</span
-      ></strong
-    ></span
-  >
+  Discord!
 </p>
-<ul>
-  <li>
-    <a href="#h_01GWHZTVQF14XB4MWF9JRS0QMT" target="_self"
-      >What are Voice Messages?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01GWHZV65X6WFR736EB5123ZKY" target="_self"
-      >How do I use Voice Messages?</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01GWHZVAH98HXS8E7W2KAFTV0A" target="_self"
-          >Sending Voice Messages</a
-        >
-      </li>
-      <li>
-        <a href="#h_01GWHZVF94B4GVD1W0TH2CDSJM" target="_self"
-          >Canceling Voice Messages</a
-        >
-      </li>
-      <li>
-        <a href="#h_01GWHZVKZFPZ5569VT9PE4MRPQ" target="_self"
-          >Listening to Voice Messages</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01GY0QJKCN13FJ6QXWXS6HD8BV" target="_self"
-      >How to Disable Voice Messages in your server</a
-    >
-  </li>
-  <li>
-    <a href="#h_01GWHZVRDT9K9FJA8EPS16GCM9" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01GWHZTVQF14XB4MWF9JRS0QMT" target="_self"
+        >What are Voice Messages?</a
+      >
+    </li>
+    <li>
+      <a href="#h_01GWHZV65X6WFR736EB5123ZKY" target="_self"
+        >How do I use Voice Messages?</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01GWHZVAH98HXS8E7W2KAFTV0A" target="_self"
+            >Sending Voice Messages</a
+          >
+        </li>
+        <li>
+          <a href="#h_01GWHZVF94B4GVD1W0TH2CDSJM" target="_self"
+            >Canceling Voice Messages</a
+          >
+        </li>
+        <li>
+          <a href="#h_01GWHZVKZFPZ5569VT9PE4MRPQ" target="_self"
+            >Listening to Voice Messages</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01GY0QJKCN13FJ6QXWXS6HD8BV" target="_self"
+        >How to Disable Voice Messages in your server</a
+      >
+    </li>
+    <li>
+      <a href="#h_01GWHZVRDT9K9FJA8EPS16GCM9" target="_self"
+        >Frequently Asked Questions</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01GWHZTVQF14XB4MWF9JRS0QMT">What are Voice Messages?</h1>
 <p>
   Voice Messages give you the ability to send an audio recording directly to

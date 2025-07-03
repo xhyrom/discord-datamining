@@ -1,43 +1,41 @@
-<p id="docs-internal-guid-556e42f2-7fff-c093-ac1a-d3e7afee356f">
+<div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >What this article covers: </span
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
     ></strong
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01HEJRG4MR97JBQDQYQFYWYM07"
-      >What are In-Channel Conversation Summaries?</a
-    >
-  </li>
-  <li>
-    <a href="#h_01HEJRG4MRT6EAE4NCQD084F1T"
-      >Where to find In-Channel Conversation Summaries</a
-    >
-    <ul>
-      <li><a href="#h_01HEJRG4MR5EXESJPMXXQKHAGY">Topic Subheader</a></li>
-      <li><a href="#h_01HEJRG4MRPAE93CYH0Q59DVHA">Summaries List</a></li>
-      <li>
-        <a href="#h_01HEJRG4MRSTR9FP3MPK1SM1X5"
-          >How to Hide In-Channel Conversation Summaries </a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01HEJRG4MRQMKK1FENZD4RQB05">Frequently Asked Questions</a>
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#h_01HEJRG4MR97JBQDQYQFYWYM07"
+        >What are In-Channel Conversation Summaries?</a
+      >
+    </li>
+    <li>
+      <a href="#h_01HEJRG4MRT6EAE4NCQD084F1T"
+        >Where to find In-Channel Conversation Summaries</a
+      >
+      <ul>
+        <li><a href="#h_01HEJRG4MR5EXESJPMXXQKHAGY">Topic Subheader</a></li>
+        <li><a href="#h_01HEJRG4MRPAE93CYH0Q59DVHA">Summaries List</a></li>
+        <li>
+          <a href="#h_01HEJRG4MRSTR9FP3MPK1SM1X5"
+            >How to Hide In-Channel Conversation Summaries </a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01HEJRG4MRQMKK1FENZD4RQB05">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HEJRG4MR97JBQDQYQFYWYM07">
   What are In-Channel Conversation Summaries?
 </h1>
-<h3 id="h_01HEJRG4MR3HJMVH783CQCFZJW">
-  <span style="color: #434343"
-    >This feature is currently an experiment and limited to a few
-    servers. </span
-  >
-</h3>
+<div class="exp-box">
+  <strong>Info:</strong> This feature is currently an experiment and limited to
+  a few servers.
+</div>
 <p>
   Have you ever stepped away from your phone and came back to dozens of missed
   messages? Overwhelmed at trying to catch up on what everyone is talking about?
@@ -121,23 +119,15 @@
   />
 </p>
 <p>
-  2.
-  <span style="background-color: #ffffff"
-    >The owner of that server or administrators with the </span
-  ><strong><span style="background-color: #ffffff">Manage Channel</span></strong
-  ><span style="background-color: #ffffff">
-    permission can hide the In-Channel Conversation Summaries UI in any channel
-    through the channel's settings by selecting the cog wheel next to the
-    channel [</span
-  ><img
+  2. The owner of that server or administrators with the
+  <strong>Manage Channel&lt;&gt;&lt;/&gt;</strong>permission can hide the
+  In-Channel Conversation Summaries UI in any channel through the channel's
+  settings by selecting the cog wheel next to the channel [&lt;&gt;<img
     src="https://support.discord.com/hc/article_attachments/18859469840919"
     alt="image6.png"
-  /><span style="background-color: #ffffff">]. Once there, toggle </span
-  ><strong
-    ><span style="background-color: #ffffff"
-      >Enable Channel Summaries</span
-    ></strong
-  ><span style="background-color: #ffffff"> to disable this setting.</span>
+  />. Once there, toggle
+  <strong>Enable Channel Summaries&lt;&gt;&lt;/&gt;</strong> to disable this
+  setting. &lt;/&gt;
 </p>
 <p class="wysiwyg-text-align-center">
   <img

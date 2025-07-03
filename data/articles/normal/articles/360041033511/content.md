@@ -8,52 +8,50 @@
     src="https://support.discord.com/hc/article_attachments/14711194315927"
   />
 </p>
-<p>
+<div class="toc-box">
   <strong
-    ><span style="background-color: #ffffff" data-darkreader-inline-bgcolor=""
+    ><span class="wysiwyg-font-size-x-large"
       >What this article covers:</span
     ></strong
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01H0TCJ3ZR5K7A387D2G661Z9S" target="_self"
-      >Creating a Server Template</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01H0TCJDWN13DFN9FTP502E13Q" target="_self"
-          >Sync Server Templates</a
-        >
-      </li>
-      <li>
-        <a href="#h_01H0TCJKQ3W0VF8TPMS5PN548P" target="_self"
-          >Deleting Server Templates</a
-        >
-      </li>
-      <li>
-        <a href="#h_01H0TCJXK9B5N6YQZBESF7KBEB" target="_self"
-          >Server Template Creation Errors</a
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01H0TCK5PHAH4ZHZA1WQX2T3FG" target="_self"
-      >Using Server Templates</a
-    >
-  </li>
-</ul>
+  <ul>
+    <li>
+      <a href="#h_01H0TCJ3ZR5K7A387D2G661Z9S" target="_self"
+        >Creating a Server Template</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01H0TCJDWN13DFN9FTP502E13Q" target="_self"
+            >Sync Server Templates</a
+          >
+        </li>
+        <li>
+          <a href="#h_01H0TCJKQ3W0VF8TPMS5PN548P" target="_self"
+            >Deleting Server Templates</a
+          >
+        </li>
+        <li>
+          <a href="#h_01H0TCJXK9B5N6YQZBESF7KBEB" target="_self"
+            >Server Template Creation Errors</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01H0TCK5PHAH4ZHZA1WQX2T3FG" target="_self"
+        >Using Server Templates</a
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01H0TCJ3ZR5K7A387D2G661Z9S">
   <strong>Creating a Server Template</strong>
 </h1>
-<h3 id="h_01HKB09WH3V4RQEY8T3EYQ44HA">
-  <strong
-    >Note: This feature is currently only available on the desktop and browser
-    app. If you’re on the mobile app, you sadly won’t be able to create a new
-    Server Template at this point in time.</strong
-  >
-</h3>
+<div class="exp-box">
+  <strong>Info:</strong> This feature is currently only available on the desktop
+  and browser app. If you’re on the mobile app, you sadly won’t be able to
+  create a new Server Template at this point in time.
+</div>
 <p>
   <strong>1.</strong> To create a Server Template, you will need to be the owner
   of the server or have a role with the
@@ -108,7 +106,7 @@
   />
 </p>
 <h3 id="docs-internal-guid-84a9ee3d-7fff-fdff-493a-a547934d75c6">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Note: Community-enabled channel types (e.g. Forum, Announcement, and Stage)
     are not transferable and are not included within Server Templates.</span
   >

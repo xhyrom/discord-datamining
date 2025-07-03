@@ -67,8 +67,11 @@
 </div>
 <h1 id="h_01JVN9B6E5CEK0KRXD7T6S6G6M">What are Discord Orbs? </h1>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Info</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: The Discord Orbs Beta is currently available to select users on desktop
     and browser. By using Discord Orbs, you agree to the Discord Orbs Terms
     contained in our </span
@@ -77,10 +80,10 @@
     target="_blank"
     rel="noopener noreferrer"
     >Paid Services Terms</a
-  ><span style="color: #434343">.</span>
+  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
 </div>
 <p>
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Discord Orbs are rewards you earn by completing
     <a
       href="https://support.discord.com/hc/articles/22225719947543"
@@ -135,7 +138,9 @@
   />
 </p>
 <h4 id="h_01JVN9C8T6MGA2732NBEB8QP3H" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Quest Bar in Discord Desktop App</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Quest Bar in Discord Desktop App</span
+  >
 </h4>
 <ul>
   <li>Through Quest Home (<strong>Discover &gt; Quests</strong>)</li>
@@ -148,7 +153,7 @@
   />
 </p>
 <h4 id="h_01JVN9C8T6ZHY4NDP8HQZC7A4K" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Navigating to Quest Home through Discover Tab</span
   >
 </h4>
@@ -169,7 +174,7 @@
   />
 </p>
 <h4 id="h_01JVN9C8T6ECTMTDGH8SNS8CQZ" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of Claiming Discord Orbs from a Quest</span
   >
 </h4>
@@ -206,7 +211,7 @@
   view Orbs-exclusive items.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338"
+  <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
       src="https://support.discord.com/hc/article_attachments/32220889855255"
       width="606"
@@ -214,7 +219,9 @@
   /></span>
 </p>
 <h4 id="h_01JVN9C8T71905QW41KJTZG59C" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Navigating to the Shop</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Navigating to the Shop</span
+  >
 </h4>
 <h2 id="h_01JVN9C8T7QS6SMHNPSE97MYZP">What can I buy with Orbs? </h2>
 <p>Here’s what you <em>can</em> purchase with Orbs in the Shop: </p>
@@ -262,8 +269,11 @@
   </li>
 </ol>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Info</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: For eligible items, the Shop automatically displays the Orbs price if you
     have enough Orbs. If you don’t have enough Orbs for an item, the regular
     monetary price will be displayed instead.</span
@@ -276,8 +286,11 @@
   </li>
 </ol>
 <div class="warn-box">
-  <strong><span style="color: #434343">Important</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Important</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: Discord Orb purchases are final and cannot be refunded.</span
   >
 </div>
@@ -289,15 +302,25 @@
   />
 </p>
 <h4 id="h_01JVN9C8T7N1TY4WR71F55X55B" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Orbs Exclusives Shop Items </span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Orbs Exclusives Shop Items </span
+  >
 </h4>
 <div class="tip-box">
-  <strong><span style="color: #434343">Tip</span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Tip</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >: To switch from Orbs to regular payment during purchase confirmation, exit
     and select the </span
-  ><strong><span style="color: #434343">Buy</span></strong
-  ><span style="color: #434343"> button instead. </span>
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Buy</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
+    button instead. </span
+  >
   <p class="wysiwyg-text-align-center">
     <img
       src="https://support.discord.com/hc/article_attachments/32220859090199"
@@ -306,7 +329,9 @@
     />
   </p>
   <h4 id="h_01JVN9C8T73C7JHJVS73QAMEM0" class="wysiwyg-text-align-center">
-    <span style="color: #666666">Buy Option in Shop Window</span>
+    <span style="color: #666666" data-darkreader-inline-color=""
+      >Buy Option in Shop Window</span
+    >
   </h4>
 </div>
 <h1 id="h_01JVN9C8T730VEP0NXKG44GKHV">Important Discord Orbs Information</h1>
@@ -334,18 +359,14 @@
 <p>
   <strong>Q: </strong
   ><strong
-    ><span style="background-color: #ffffff"
-      >I don't see any information about Discord Orbs in my desktop app or
-      browser client. Why not?</span
-    ></strong
+    >I don't see any information about Discord Orbs in my desktop app or browser
+    client. Why not?</strong
   >
 </p>
 <p>
-  <span style="background-color: #ffffff"
-    >A: Orbs is currently in limited Beta access, and isn’t currently available
-    to everyone. You’ll receive an in-app notification when Discord Orbs becomes
-    available to you! </span
-  >
+  A: Orbs is currently in limited Beta access, and isn’t currently available to
+  everyone. You’ll receive an in-app notification when Discord Orbs becomes
+  available to you!
 </p>
 <p><strong>Q: Are Orbs available on mobile?</strong></p>
 <p>

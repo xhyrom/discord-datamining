@@ -52,7 +52,7 @@
     height="273"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01JR8NRWN7BMRHWS1K2MQEMPPB">
+<h4 id="h_01JR8NRWN7BMRHWS1K2MQEMPPB" class="wysiwyg-text-align-center">
   <span style="color: #666666"
     >Example of Blurred Sensitive Media in a Message<br
   /></span>
@@ -73,7 +73,7 @@
     >Sensitive Content Settings in Content &amp; Social</span
   >
 </h4>
-<h1 id="h_01JQ4N5599MNJP93871HS6VY9S">How do I verify my age group?</h1>
+<h1 id="h_01JZ8PF4KJRZCPP33R83DPHCSN">How do I verify my age group?</h1>
 <p>
   The age verification process works the same way, regardless of how it is
   triggered. Here’s how to verify to verify your age group:
@@ -81,12 +81,10 @@
 <p>
   1. When you encounter blurred sensitive content or try to change content
   filter settings, you'll be prompted to verify your age if you haven't done so
-  already.
-  <span style="color: #1f1f1f; background-color: #ffffff"
-    >This requirement applies to users who haven't verified their age and are
-    included in this experiment.</span
-  >
+  already. This requirement applies to users who haven't verified their age and
+  are included in this experiment.
 </p>
+<p><!-- notionvc: bdea263f-41cd-439e-ab8b-d03378eb7ddd --></p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/31127572747287"
@@ -261,19 +259,13 @@
   A:
   <a
     href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out"
-    target="_blank"
-    rel="noopener noreferrer"
     >Your account may be banned</a
   >
   if your age is below the minimum requirement. If you believe the result is
-  incorrect, you can submit an appeal through the
-  <span style="color: #1f1f1f; background-color: #ffffff"
-    >underage appeals process</span
-  >
+  incorrect, you can submit an appeal through the underage appeals process
   <a
     href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731"
-    target="_blank"
-    rel="noopener noreferrer"
     >here</a
   >.
 </p>
+<p><!-- notionvc: abd858cc-de27-40a1-8c4f-2a4d7f87086e --></p>

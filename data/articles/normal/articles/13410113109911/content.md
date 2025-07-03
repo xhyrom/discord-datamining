@@ -57,20 +57,15 @@
 </div>
 <h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
 <p id="docs-internal-guid-7e1ad2f6-7fff-9866-e11f-e7ad74a22924">
-  <span
-    style="color: #444746; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Avatar decorations let you customize and style your avatar on Discord! You
-    can buy and collect all kinds of decorations from the
-    <a
-      href="https://support.discord.com/hc/articles/17162747936663"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Shop</a
-    >. Purchased decorations are yours to keep so you can add all kinds of
-    pizazz to your avatar and profile aesthetic whenever you want.</span
-  >
+  Avatar decorations let you customize and style your avatar on Discord! You can
+  buy and collect all kinds of decorations from the
+  <a
+    href="https://support.discord.com/hc/articles/17162747936663"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Shop</a
+  >. Purchased decorations are yours to keep so you can add all kinds of pizazz
+  to your avatar and profile aesthetic whenever you want.
 </p>
 <p class="wysiwyg-text-align-center">
   <img

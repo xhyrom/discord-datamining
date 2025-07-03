@@ -15,19 +15,18 @@
     >Webhooks</a
   >! 
 </p>
-<p class="wysiwyg-text-align-center"> </p>
-<h3>
-  <span style="font-weight: 400"
-    >Note: Channel Following is now available to all servers with
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
-      target="_blank"
-      rel="noopener"
-      >Community Servers enabled</a
-    ></span
-  >. 
-</h3>
-<h1 class="wysiwyg-text-align-left">Spotting an Announcement Channel</h1>
+<div class="tip-box">
+  <strong>Tip:</strong>Channel Following is now available to all servers with
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Community Servers enabled</a
+  >
+</div>
+<h1 id="h_01JZ8NXW0SYV9T2FFT9K4M2DDD" class="wysiwyg-text-align-left">
+  Spotting an Announcement Channel
+</h1>
 <p>
   In select servers with <strong>Announcement Channels</strong>, which are
   special channels labeled with a Megaphone icon, you'll be able to use the
@@ -64,19 +63,17 @@
   your server, as you'll need it to order some post pizzas! Then, click the
   Follow button!
 </p>
-<h3>
-  <span style="font-weight: 400"
-    >Note: The Follow button is only available in Announcement Channels, labeled
-    with the Megaphone icon! Developers can learn how to make an Announcement
-    Channel
-    <a
-      href="https://support-dev.discord.com/hc/en-us/articles/360027891611-Sell-Your-Game-on-Discord-How-to-do-it"
-      target="_self"
-      >here</a
-    >! </span
-  >
-</h3>
-<h1>Adding it to your server</h1>
+<div class="tip-box">
+  <strong>Tip:</strong> The Follow button is only available in Announcement
+  Channels, labeled with the Megaphone icon! Developers can learn how to make an
+  Announcement Channel
+  <a
+    href="https://support-dev.discord.com/hc/en-us/articles/360027891611-Sell-Your-Game-on-Discord-How-to-do-it"
+    target="_self"
+    >here</a
+  >!
+</div>
+<h1 id="h_01JZ8NXW0S8MYQW9XR444A1BV9">Adding it to your server</h1>
 <p>
   When you click the Follow button in an eligible channel, you'll be greeted
   with a whole host of options for where you want that Announcement channel's
@@ -98,7 +95,7 @@
   to start getting post pizzas delivered to your server by your very own
   delivery bot!
 </p>
-<h1>Sit back &amp; enjoy</h1>
+<h1 id="h_01JZ8NXW0SZCC194PG3FHVT35F">Sit back &amp; enjoy</h1>
 <p>
   As the server you followed continues to post announcements, you'll receive
   posts from that server in the channel you picked. The posts will look a bit
@@ -116,13 +113,13 @@
   delivery bots will remove any and all role mentions in the post, including
   @everyone and @here.
 </p>
-<h3>
-  Keep in mind, server admins have the ability to choose which announcement
-  posts will be published and sent to your server through Channel Following. If
-  you're missing an announcement post, it's likely the admins have chosen to not
-  publish that post.
-</h3>
-<h1>How to remove</h1>
+<div class="info-box">
+  <strong>Info:</strong> Keep in mind, server admins have the ability to choose
+  which announcement posts will be published and sent to your server through
+  Channel Following. If you're missing an announcement post, it's likely the
+  admins have chosen to not publish that post.
+</div>
+<h1 id="h_01JZ8NXW0S8DRPV9WZ4GVNF157">How to remove</h1>
 <p>
   If you've got Manage Webhooks permissions, you can follow and unfollow servers
   at any time! If you want to stop receiving posts from a server that you
@@ -144,14 +141,12 @@
     alt="Screen_Shot_2019-05-21_at_2.12.22_PM.png"
   />
 </p>
-<h3>
-  <span style="font-weight: 400"
-    >Note: You can use the Webhooks settings to modify your new follow bot
-    too--you can change the channel it posts in, the bot's name, and the avatar
-    of the bot, all using the Edit button! </span
-  >
-</h3>
-<h1>
+<div class="tip-box">
+  <strong>Tip: </strong>You can use the Webhooks settings to modify your new
+  follow bot too--you can change the channel it posts in, the bot's name, and
+  the avatar of the bot, all using the Edit button!
+</div>
+<h1 id="h_01JZ8NXW0SYXDEZQY1RN2ZN620">
   <span style="font-weight: 400">All set!<br /></span>
 </h1>
 <p>
@@ -159,21 +154,18 @@
   is still in the experiment phase, so it'll only be available on select servers
   as our amazing pizza chefs continue to build out the feature! Keep an eye on
   our changelogs for more information on Channel Following in the future! <br /><br />If
-  you run a <span class="wysiwyg-font-size-medium" style="font-weight: 400"
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
-      target="_blank"
-      rel="noopener"
-      >Community Server</a
-    ></span
-  ><span style="font-size: 1.2em; font-weight: 600"
-    >, please check out the </span
-  ><a
-    style="font-size: 1.2em; font-weight: 600; background-color: #ffffff"
+  you run a
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Community Server</a
+  >, please check out the <a
     href="https://support.discord.com/hc/en-us/articles/360032008192"
     target="_self"
+    data-darkreader-inline-bgcolor=""
     >Announcement Channels FAQ</a
-  ><span style="font-size: 1.2em; font-weight: 600">.</span>
+  >.
 </p>
 <p>
   While we continue to experiment with and improve Channel Following, if you

@@ -170,16 +170,10 @@
     height="149"
   />
 </p>
-<h3 id="h_01JZ8MTJ81Y4CVE9BSMJXAZFQA">
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    ><strong>Note</strong>: You can choose to toggle your Crunchyroll status on
-    or off whenever you’d like.</span
-  >
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> You can choose to toggle your Crunchyroll status on or
+  off whenever you’d like.
+</div>
 <h2 id="h_01GGSNGNFM5DF7FYZFZ054F26Q">
   <strong>Disconnecting your Crunchyroll &amp; Discord Accounts</strong>
 </h2>
@@ -242,7 +236,7 @@
     height="239"
   />
 </p>
-<h3 id="h_01JZ8MTJ81DEGT6Z05XNBZTD48" class="wysiwyg-text-align-left">
-  <strong>Note</strong>: You will need to remove the connection from both
-  Discord and Crunchyroll in order for the connection to be fully removed!
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> You will need to remove the connection from both Discord
+  and Crunchyroll in order for the connection to be fully removed!
+</div>
