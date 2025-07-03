@@ -87,18 +87,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -164,18 +167,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -243,18 +249,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -325,18 +334,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -428,18 +440,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -536,18 +551,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -641,18 +659,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-04-08T08:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-04-08T08:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-04-08T08:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -723,18 +744,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -822,18 +846,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -929,18 +956,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -993,8 +1023,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -1002,8 +1032,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "8"
         }
@@ -1037,18 +1067,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-07-01T07:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-07-01T07:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2024-07-01T07:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -1117,18 +1150,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-05-24T23:30:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-05-24T23:30:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-05-24T23:30:00+00:00",
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -1195,18 +1231,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -1297,18 +1336,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-10-17T23:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-10-17T23:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 2,
+          "label_from": null,
           "label_until": "2024-10-17T23:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -1402,18 +1444,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-07-08T07:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-07-08T07:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-07-08T07:30:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -1506,18 +1551,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -1609,18 +1657,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -1692,18 +1743,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -1795,18 +1849,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -1904,18 +1961,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -2006,18 +2066,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -2103,18 +2166,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -2200,18 +2266,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "soft_launch_multi_geo",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
@@ -2304,6 +2373,7 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-06-10T19:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": [
@@ -2312,6 +2382,7 @@
         },
         "android": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-06-10T19:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": [
@@ -2320,6 +2391,7 @@
         },
         "ios": {
           "label_type": 1,
+          "label_from": null,
           "label_until": "2025-06-10T19:00:00+00:00",
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": [
@@ -2412,18 +2484,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -2515,18 +2590,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -2593,18 +2671,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -2690,18 +2771,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "soft_launch_multi_geo",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
@@ -2792,18 +2876,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -2888,18 +2975,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -2989,18 +3079,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "global_launch",
           "omit_badge_from_surfaces": []
@@ -3094,18 +3187,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "in_development",
           "omit_badge_from_surfaces": []
@@ -3200,18 +3296,21 @@
       "client_platform_config": {
         "web": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 0,
+          "label_from": null,
           "label_until": null,
           "release_phase": "activities_team",
           "omit_badge_from_surfaces": []
@@ -3322,8 +3421,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -3476,8 +3575,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -3630,17 +3729,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -3652,11 +3756,6 @@
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3710,12 +3809,7 @@
       },
       {
         "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3730,7 +3824,12 @@
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
@@ -3866,17 +3965,17 @@
       },
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "win64/deltaforceclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       }
     ],
@@ -4137,12 +4236,7 @@
       },
       {
         "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -4157,7 +4251,12 @@
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
