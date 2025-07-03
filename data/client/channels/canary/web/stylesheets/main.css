@@ -16851,7 +16851,6 @@ svg.radioIcon_c1e9c4 {
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: var(--space-64);
   text-align: center;
 }
 .container_ef0711,
@@ -17884,6 +17883,9 @@ svg.radioIcon_c1e9c4 {
   text-align: center;
 }
 .middleBodyContentWrapper__6fd0e {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-64);
   padding: 32px;
 }
 .lowerBody__6fd0e {
@@ -57931,4 +57933,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.55b958895247d0b6.css.map*/
+/*# sourceMappingURL=12633.f4dfc9a35ba6acff.css.map*/
