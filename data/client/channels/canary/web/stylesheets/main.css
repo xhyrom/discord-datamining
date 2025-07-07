@@ -27754,8 +27754,8 @@ body .headerAnimation_b54a5b {
   width: 100%;
 }
 .headerImage__2dea3 {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   object-fit: cover;
 }
 .confirmationContainer__2dea3 {
@@ -57932,4 +57932,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.b30668594cd484b4.css.map*/
+/*# sourceMappingURL=12633.e61b0ed95294cfe8.css.map*/
