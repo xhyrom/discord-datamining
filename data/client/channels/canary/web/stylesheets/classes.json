@@ -1164,6 +1164,7 @@
   "addressElementContainer": "addressElementContainer_ceece4",
   "hidden": "hidden_c5bcbe",
   "cardElementContainer": "cardElementContainer_ceece4",
+  "customPaymentElementContainer": "customPaymentElementContainer_ceece4",
   "connectionInstructions": "connectionInstructions_d2b05e",
   "flexColumn": "flexColumn_b25217",
   "infoNotice": "infoNotice_b25217",

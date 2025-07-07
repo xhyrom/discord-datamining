@@ -28449,7 +28449,10 @@ body .headerAnimation_b54a5b {
   transition: transform 0.4s ease-out;
 }
 .cardElementContainer_ceece4.visible_ceece4 {
-  height: 236px;
+  height: 324px;
+}
+.customPaymentElementContainer_ceece4.visible_ceece4 {
+  height: 160px;
 }
 .addressElementContainer_ceece4.visible_ceece4 {
   min-height: 500px;
@@ -57953,4 +57956,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.899ce879d695bc28.css.map*/
+/*# sourceMappingURL=12633.38af1e0e48c3f91d.css.map*/
