@@ -11,6 +11,41 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Mecha BREAK<br /></strong
+  ><strong>Quest Name: Mecha BREAK Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Mecha BREAK</strong> to receive a
+  <strong>Mecha BREAK Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players in the
+  <strong
+    >United States, Brazil, Great Britain, France, Germany, Japan, Korea, </strong
+  >and<strong> Mexico</strong> who have access to
+  <strong>Mecha BREAK</strong> and <strong>Discord</strong> on PC and Xbox
+  Series S/X. Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Mecha BREAK Quest</strong> can be accepted on
+  <strong>PC </strong>and<strong> Xbox Series S/X</strong> from
+  <strong>July 7, 2025</strong> until
+  <strong>July 14, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>August 14, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Mecha BREAK Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>September 14, 2025 (11:59PM UTC)</strong>. After this date, you will
+  no longer have access to this Avatar Decoration. Nitro subscribers can keep
+  this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: ONCE HUMAN<br /></strong
   ><strong
     style="
@@ -836,38 +871,6 @@
     >Other Terms:</strong
   >
   Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: FragPunk<br /></strong
-  ><strong>Quest Name: Season 1 Chapter 2 Quest<br /></strong
-  ><strong>Offer Details: </strong>Play 15 minutes of
-  <strong>FragPunk </strong>to receive a
-  <strong>Friend of Dex Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to players in the <strong>United</strong> <strong>States</strong>,
-  <strong>Canada</strong>, <strong>United Kingdom</strong>,
-  <strong>Germany</strong>, <strong>France</strong>, <strong>Japan</strong>,
-  <strong>South Korea</strong>, and<strong> Taiwan</strong> on desktop and
-  console where both <strong>Discord</strong> and <strong>FragPunk </strong>are
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
-  >The <strong>Season 1 Chapter 2 Quest</strong> can be accepted on Discord from
-  <strong>April 29, 2025 </strong>until
-  <strong>May 6, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
-  requirements during this period and claim your reward by
-  <strong>June 6, 2025 (0:00 UTC</strong>). <br />The
-  <strong>Friend of Dex Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>July 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
 </p>
 <p>
   <strong><!-- notionvc: 74a563cb-1aba-4cae-92f6-c924a6534d81 --></strong>
