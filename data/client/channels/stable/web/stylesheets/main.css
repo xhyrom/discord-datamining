@@ -2151,21 +2151,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .tooltipPrimary__382e7 .tooltipPointer__382e7 {
   border-top-color: var(--background-surface-high);
 }
-.tooltipNested__382e7 {
-  background-color: var(--background-nested-floating);
-  --tooltip-pointer-bg: var(--background-nested-floating);
-}
-.tooltipNested__382e7 .tooltipPointer__382e7 {
-  border-top-color: var(--background-nested-floating);
-}
-.tooltipBlack__382e7 {
-  background-color: var(--black-500);
-  color: var(--white-500);
-  --tooltip-pointer-bg: var(--black-500);
-}
-.tooltipBlack__382e7 .tooltipPointer__382e7 {
-  border-top-color: var(--black-500);
-}
 .tooltipGrey__382e7 {
   background-color: var(--primary-700);
   color: var(--white-500);
@@ -2197,25 +2182,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .tooltipGreen__382e7 .tooltipPointer__382e7 {
   border-top-color: var(--green-360);
-}
-.tooltipYellow__382e7 {
-  background-color: var(--status-warning-background);
-  color: var(--status-warning-text);
-  --tooltip-pointer-bg: var(--status-warning-background);
-}
-.tooltipYellow__382e7 .tooltipPointer__382e7 {
-  border-top-color: var(--status-warning-background);
-}
-.tooltipPremium__382e7 {
-  background: linear-gradient(
-    270deg,
-    var(--premium-tier-2-pink-for-gradients) 0,
-    var(--premium-tier-2-pink-for-gradients-2) 33.63%,
-    var(--premium-tier-2-purple-for-gradients) 100%
-  );
-}
-.tooltipPremium__382e7 .tooltipPointer__382e7 {
-  border-top-color: var(--premium-tier-2-pink-for-gradients-2);
 }
 .tooltipPointerBg__382e7 {
   display: none;
@@ -16885,7 +16851,6 @@ svg.radioIcon_c1e9c4 {
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: var(--space-64);
   text-align: center;
 }
 .container_ef0711,
@@ -17918,6 +17883,9 @@ svg.radioIcon_c1e9c4 {
   text-align: center;
 }
 .middleBodyContentWrapper__6fd0e {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-64);
   padding: 32px;
 }
 .lowerBody__6fd0e {
@@ -26238,6 +26206,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .align-chat-input .emojiButton__74017:hover {
   background-color: var(--background-modifier-selected);
 }
+.align-chat-input .stickerButton__74017 {
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
 .has-webkit-scrollbar .buttons__74017 {
   margin-right: 0;
 }
@@ -26266,10 +26239,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-top: 1px;
   padding-left: 2px;
   padding-right: 2px;
-}
-.stickerButtonTilted__74017 {
-  transform: rotate(12deg) scale(1.05);
-  transition: transform 0.15s;
 }
 .messageConfettiButton__74017:hover .messageConfettiIcon__74017,
 .messageConfettiIcon__74017.active__74017 {
@@ -40253,23 +40222,6 @@ img.thumbnail__0f2e8 {
   display: flex;
   gap: 16px;
 }
-@media (max-width: 485px) {
-  .footer__3d3b0 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 4px var(--modal-horizontal-padding) var(--modal-vertical-padding);
-  }
-  .footer__3d3b0 button {
-    margin-top: 12px;
-  }
-  .action__3d3b0,
-  .action__3d3b0 .tooltip__3d3b0 {
-    flex: 1;
-  }
-  .action__3d3b0 button {
-    width: 100%;
-  }
-}
 .fullWidth__3d3b0 {
   width: 100%;
 }
@@ -40328,6 +40280,29 @@ img.thumbnail__0f2e8 {
   .content__3d3b0.minimalPadding__3d3b0 {
     margin: 0;
     padding: 16px 0;
+  }
+}
+@media (max-width: 485px) {
+  .footer__3d3b0 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4px var(--modal-horizontal-padding) var(--modal-vertical-padding);
+  }
+  .footer__3d3b0 button {
+    margin-top: 12px;
+  }
+  .action__3d3b0,
+  .action__3d3b0 .tooltip__3d3b0 {
+    flex: 1;
+  }
+  .action__3d3b0 button {
+    width: 100%;
+  }
+  .contentWrapper__3d3b0 {
+    margin: 0 0 48px;
+  }
+  .content__3d3b0 {
+    margin: 0;
   }
 }
 .sectionGroup__3d3b0 {
@@ -57958,4 +57933,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3fad0e456f66916d.css.map*/
+/*# sourceMappingURL=12633.f4dfc9a35ba6acff.css.map*/
