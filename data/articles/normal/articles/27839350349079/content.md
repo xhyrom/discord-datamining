@@ -11,6 +11,35 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: THPS 3 + 4 Launch Gameplay Trailer<br /></strong
+  ><strong>Quest Name: THPS 3+4 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>THPS 3 + 4 Launch Gameplay Trailer </strong>in Discord to receive a
+  <strong>THPS Half Pipe Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in the<strong> United States </strong>on desktop where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>THPS 3+4 Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>July 8, 2025 </strong>until<strong>
+    July 22, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 22, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>THPS Half Pipe Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>September 22, 2025 (11:59PM UTC)</strong>. After this date, you will
+  no longer have access to this Avatar Decoration. Nitro subscribers can keep
+  this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Mecha BREAK<br /></strong
   ><strong>Quest Name: Mecha BREAK Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
