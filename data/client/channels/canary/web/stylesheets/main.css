@@ -28440,6 +28440,9 @@ body .headerAnimation_b54a5b {
 .addressElementContainer_ceece4 {
   flex-direction: column;
 }
+.loadingContainer_ceece4 {
+  padding-top: 18px;
+}
 .visible_ceece4 {
   transform: translateX(0);
 }
@@ -57962,4 +57965,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f6e24f179fb96b30.css.map*/
+/*# sourceMappingURL=12633.89a527d5927ed508.css.map*/
