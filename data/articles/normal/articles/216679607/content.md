@@ -42,10 +42,10 @@
   different levels of verification and understand how each one works.
 </p>
 <div class="info-box">
-  <strong>NOTE</strong>: Having a verified phone number supersedes all other
-  requirements. This means that if a user has a verified phone number on their
-  Discord account, they can participate in servers with any verification level,
-  without needing to meet the email verification or time-based requirements.
+  Having a verified phone number supersedes all other requirements. This means
+  that if a user has a verified phone number on their Discord account, they can
+  participate in servers with any verification level, without needing to meet
+  the email verification or time-based requirements.
 </div>
 <h2 id="h_01JQPFH6B0T584EH4S77QR39WZ">None</h2>
 <p class="wysiwyg-text-align-center">
@@ -142,14 +142,29 @@
   please reach out to the server’s admin for further assistance.
 </div>
 <h1 id="h_01JQPFH6B0FKWRC8ZT51C6FN3M">Finding Verification Settings</h1>
+<div class="info-box">
+  Finding your Verification settings on desktop/browser vary depending on your
+  server type (<strong>Friend Server</strong> or
+  <strong>Community Server</strong>).<br />Not sure which type you have? Check
+  out our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/14078261239831-Clarifying-Server-Types-"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Clarifying Server Types article</a
+  >.
+</div>
 <p>
-  If you would like to change the Verification Levels for your server, you can
-  do so on browser, desktop client, or mobile app.
+  You can change your server's Verification Levels using the browser, desktop
+  app, or mobile app. 
 </p>
 <h2 id="h_01JQPFH6B0FR1D8242W281KYTB">Desktop/Browser</h2>
 <p>
-  1. Press the dropdown menu next to your server’s name to navigate to your
-  <strong>Server Settings</strong>.
+  <span class="wysiwyg-font-size-x-large"><strong>Friend Server</strong></span>
+</p>
+<p>
+  1. For a Friend Server, press the dropdown menu next to your server’s name to
+  navigate to your <strong>Server Settings</strong>. 
 </p>
 <p>
   2. Select the <strong>Safety Setup </strong>tab and navigate to
@@ -162,12 +177,13 @@
     height="372"
   />
 </p>
-<h4 id="h_01JQPFH6B0EMYMNK65FXMYHFEF" class="wysiwyg-text-align-center">
-  <span style="color: #666666">To find Verification Levels: Go to </span
+<h4 id="h_01JZNKS1EYD4GAPTNN4J8J29RT" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >To find Verification Levels for Friend Servers: Go to </span
   ><strong><span style="color: #666666">Server Settings </span></strong
   ><span style="color: #666666">&gt; </span
   ><strong><span style="color: #666666">Safety Setup</span></strong
-  ><span style="color: #666666"> in the desktop Discord app</span>
+  ><span style="color: #666666"> on desktop/browser </span>
 </h4>
 <p>
   3. To choose between different Verification Levels, select either the current
@@ -187,16 +203,36 @@
     >Discord server Verification Levels on the desktop app</span
   >
 </h4>
-<div class="tip-box">
-  If you have a community-enabled server, head into
-  <strong>Server Settings &gt; Safety Setup &gt; DM</strong>
-  <strong>and</strong> <strong>Spam Protection</strong> to set your community
-  server’s Verification Level.
-</div>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Community Server</strong> </span
+  >
+</p>
+<p>
+  For community-enabled servers, go to
+  <strong>Server Settings &gt; Safety Setup &gt; DM and Spam Protection</strong>
+  to adjust your <strong>Verification Level</strong>. Press
+  <strong>Edit</strong> in the <strong>Verification Level box</strong>, make
+  your selection, then press <strong>Save</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33330999243671"
+    width="624"
+    height="437"
+  />
+</p>
+<h4 id="h_01JZNKVCP4QRMG38YJ358DHN2D" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >To find Verification Levels for Community Servers: Go to Server Settings
+    &gt; Safety Setup &gt; DM and Spam Protection on desktop/browser Discord
+    app</span
+  >
+</h4>
 <h2 id="h_01JQPFH6B0Z7TTE3BBP5AT6R3Q">Mobile</h2>
 <p>
   1. Head over to your <strong>Server Settings</strong> by tapping your server’s
-  name and the cogwheel icon [<img
+  name and the <strong>cogwheel icon</strong> [<img
     src="https://support.discord.com/hc/article_attachments/31053162352663"
     width="24"
     height="24"
@@ -224,8 +260,8 @@
   >
 </h4>
 <p>
-  4. After you have made your choice, press <strong>Save</strong> in the upper
-  right corner to save your changes. Once you’ve saved your changes, the
+  4. After you have made your choice, press <strong>Save</strong> in the
+  upper-right corner to save your changes. Once you’ve saved your changes, the
   Verification Level for your server should be set!
 </p>
 <p class="wysiwyg-text-align-center">
@@ -237,7 +273,7 @@
 </p>
 <h4 id="h_01JQPFH6B1C3330FSXD5AG8Q95" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >Save button in the upper right corner of the mobile app</span
+    >Save button in the upper-right corner of the mobile app</span
   >
 </h4>
 <div class="form-box">
