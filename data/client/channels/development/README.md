@@ -3,29 +3,29 @@
 ### Info
 Build number: as canary  
 Version hash: as canary  
-Host version: 1.0.930  
+Host version: 1.0.931  
 Built at: Invalid Date  
 
 ### Modules
 | Module                  | Version | Package sha256                                                   | URL                                                                                                                 |
 | ----------------------- | ------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| discord_utils           | 1       | 22265fdd87588ed9476e83a75f617dcf146f75b99253f1d742c86e437e873a3c | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_utils/1/full.distro           |
-| discord_dispatch        | 1       | 5e19c6b3208e2be7f8826a07be933420426900797dea3f3a0cb48f906322bc21 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_dispatch/1/full.distro        |
-| discord_desktop_overlay | 1       | b856fcbb50582401387a839f59276638eb6816da0b22144b5a0fa3cd4bb11e81 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_desktop_overlay/1/full.distro |
-| discord_rpc             | 1       | 0a3e07943baf94e318b38cc2b11ff1c544ce7af6b8efa7c9fb403f68c29132b4 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_rpc/1/full.distro             |
-| discord_sekrit          | 1       | 0bf763b9270631208328fc7b189c88e0a7e013293bb37a29a3057e97230e6741 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_sekrit/1/full.distro          |
-| discord_vigilante       | 1       | b70069ffefb7e48d93704d2068bd4f4a35f0d4d9da39d2a1cc2790071c2bb2ce | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_vigilante/1/full.distro       |
-| discord_hook            | 1       | a0f9480a4b4ff00aafb09d04bc0556d39f615575c2259916af4785393c9b3133 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_hook/1/full.distro            |
-| discord_media           | 1       | 4c7f45c0bc39fae0524f7239500c2ac7217e672518d3b659e39544174dff2a5b | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_media/1/full.distro           |
-| discord_spellcheck      | 1       | ac95d738865aa0dbdc32d5355e8c58eb59c4f257e097c1022bb9ea1af0288d53 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_spellcheck/1/full.distro      |
-| discord_game_utils      | 1       | cd9f592f85d7953f0b672240567830c1ac51f1d272a71e12340607bbc6f228bd | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_game_utils/1/full.distro      |
-| discord_voice           | 1       | 7e9effc570404f13ad5aa956ae17c23bef3feb097da41c9e9e7b04f2b09d6627 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_voice/1/full.distro           |
-| discord_modules         | 1       | 0ef4bf2fb9b1f55d866683f679ee63ce77665a3e9d343b5821ed0a4e4fce192d | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_modules/1/full.distro         |
-| discord_desktop_core    | 1       | 962e9ab79ccbf84c5d90dc1ec53e2305d247c90e19299317ee155524c618cb5c | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_desktop_core/1/full.distro    |
-| discord_krisp           | 1       | b9d2568f2e249e3bdea405ca1c3a71ba45945b77c6f5c65721b140f39b609e19 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_krisp/1/full.distro           |
-| discord_overlay2        | 1       | 28961047b9929aaa2e72c398af754494a5b9f5b8fe93b4bc4b4d3dffc7faf786 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_overlay2/1/full.distro        |
-| discord_erlpack         | 1       | 8bf03f5dec63499cbd10327e27c92123214536751cfda45c894d56f4fdb5cede | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_erlpack/1/full.distro         |
-| discord_notifications   | 1       | 62ea0bb7def910a444709fb9491557a0e9d65eba502faf9013be64137552af2e | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_notifications/1/full.distro   |
-| discord_zstd            | 1       | 81a300efc948ec1d08fc16a0d8fae5aaabe297d9c096a7a529a5637d06f4ceca | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_zstd/1/full.distro            |
-| discord_cloudsync       | 1       | 1f9bcbaa5d4686cc859dca9209fac8230fa6e295bb519d87a3b2336eda06b7e3 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_cloudsync/1/full.distro       |
-| discord_voice_filters   | 1       | 5f26c80cade34611b4860deff0f12d1e7bf08dea2ce7e6a411f445e64290996b | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.930/discord_voice_filters/1/full.distro   |
+| discord_krisp           | 1       | 3684638094dcd42244a8bf631f700c0174ae49b89984e71564dbdeebb719c8f8 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_krisp/1/full.distro           |
+| discord_desktop_core    | 1       | 2889000c6c7ea6c7f6b47b260f9c176d81d8aea8148496c1121de775174e76e6 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_desktop_core/1/full.distro    |
+| discord_rpc             | 1       | 4194213bbf123b727eb6cc204f82edd114913a2ba4bd68ad58fe0016bc13a77d | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_rpc/1/full.distro             |
+| discord_overlay2        | 1       | 0abedea8eebd49c2139fd5d3068c134c628abb0019bace2c273afb8bff249f78 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_overlay2/1/full.distro        |
+| discord_game_utils      | 1       | b12b46f8ad485f6b3a907b476de0b66451dc6b08e1148687be9c760bf0216e71 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_game_utils/1/full.distro      |
+| discord_notifications   | 1       | d4c48159ae0ff233cd8804d80c15f1aeca2481ff2cecb738108ac302215ba7c6 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_notifications/1/full.distro   |
+| discord_vigilante       | 1       | 5bb8c0351f49ffee110bb7a23a10349d3bf538dac7c8ef09492f8a376fe49534 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_vigilante/1/full.distro       |
+| discord_desktop_overlay | 1       | 969b9aebecc602fa83b6948e272bf622165ec165c7711be0fd847202e90960f3 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_desktop_overlay/1/full.distro |
+| discord_hook            | 1       | 9ba3d876ca7790b9d49beb8954675564deb485e90bf44b87825b226cf3154f05 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_hook/1/full.distro            |
+| discord_media           | 1       | fa9827cd5c0ef5f8b5460fe93d35c4ce245a80f67652782c017285ec86a34296 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_media/1/full.distro           |
+| discord_utils           | 1       | 4917164595acf5e856e4f6e547a3db21a93dc1112bdeb98320324568a66745b5 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_utils/1/full.distro           |
+| discord_zstd            | 1       | 98fe1ddbb931ad3fa8f22c724d13e752d75ca5d078d1b22f4234bfa63278f46b | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_zstd/1/full.distro            |
+| discord_spellcheck      | 1       | 02b5a4c1702cf590fe7320f02e5270cf3f1dcdbdedf6d3022f408a8ebd24e023 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_spellcheck/1/full.distro      |
+| discord_erlpack         | 1       | 00575ebd5531a07f119ed9564010f0a4a2b1858d8a72c812357953f69b8d2d61 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_erlpack/1/full.distro         |
+| discord_voice           | 1       | e14225fc70913e30c7144cf5edd0791b5bdd7812470bc54ad6b889bcbdf62720 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_voice/1/full.distro           |
+| discord_voice_filters   | 1       | 73bdb981bf8e664d62d0e9fd31289e54a5324d247821c7d862e6336fbe81742e | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_voice_filters/1/full.distro   |
+| discord_dispatch        | 1       | 978403f0965ab153134e6dea012d0f02ec39045abd843d3d8137cc52294b27c3 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_dispatch/1/full.distro        |
+| discord_cloudsync       | 1       | 6a5371d6c8a9747747f0d3caaa40a0e4ac5199215c56d691ea1cbebc720cd368 | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_cloudsync/1/full.distro       |
+| discord_sekrit          | 1       | 6d11bc7d371c310ff91b7d35e188ea468b3e60b7579e11eff0d8c91e9e7b1aef | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_sekrit/1/full.distro          |
+| discord_modules         | 1       | 5804813032449e248259bdd0718a100b352939b9cae60527b0d7afab9d84eaea | https://development.dl2.discordapp.net/distro/app/development/win/x64/1.0.931/discord_modules/1/full.distro         |
