@@ -7,8 +7,8 @@
   ensure a smooth Discord sign in experience!
 </p>
 <div class="info-box">
-  <strong>Info:</strong> If you haven’t verified your account yet, make sure to
-  do so, otherwise you risk losing access to your account. Check out this
+  If you haven’t verified your account yet, make sure to do so, otherwise you
+  risk losing access to your account. Check out this
   <a
     href="https://support.discord.com/hc/en-us/articles/360033931551"
     target="_blank"
@@ -51,8 +51,8 @@
   </ul>
 </div>
 <div class="info-box">
-  <strong>Info:</strong> If you are experiencing issues with logging into
-  Discord or seeing error messages for your login attempts, check out
+  If you are experiencing issues with logging into Discord or seeing error
+  messages for your login attempts, check out
   <a
     href="https://support.discord.com/hc/articles/31676852332439"
     target="_blank"
@@ -189,8 +189,8 @@
   />
 </p>
 <div class="info-box">
-  <strong>Info:</strong> You will need to verify your phone number to your
-  Discord account before using phone number login! Check out
+  You will need to verify your phone number to your Discord account before using
+  phone number login! Check out
   <a
     href="https://support.discord.com/hc/articles/360033931551#h_01H4RR2WQMJPNM20TG8NWDDWSS"
     target="_blank"
