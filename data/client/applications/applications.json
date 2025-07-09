@@ -1023,8 +1023,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -1032,8 +1032,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "8"
         }
@@ -1133,47 +1133,7 @@
       "1": {}
     },
     "verify_key": "8ffdc7b099a299d592e43b258dfa4f47c058f2752003c28972ad83c78e544c27",
-    "flags": 131074,
-    "max_participants": 1,
-    "embedded_activity_config": {
-      "activity_preview_video_asset_id": "1389546634018422794",
-      "supported_platforms": [
-        "web"
-      ],
-      "default_orientation_lock_state": 2,
-      "tablet_default_orientation_lock_state": 3,
-      "requires_age_gate": false,
-      "legacy_responsive_aspect_ratio": false,
-      "premium_tier_requirement": null,
-      "free_period_starts_at": "2023-05-15T16:30:00+00:00",
-      "free_period_ends_at": "2023-06-16T07:00:00+00:00",
-      "client_platform_config": {
-        "web": {
-          "label_type": 2,
-          "label_from": null,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "in_development",
-          "omit_badge_from_surfaces": []
-        },
-        "android": {
-          "label_type": 2,
-          "label_from": null,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "in_development",
-          "omit_badge_from_surfaces": []
-        },
-        "ios": {
-          "label_type": 2,
-          "label_from": null,
-          "label_until": "2024-05-24T23:30:00+00:00",
-          "release_phase": "in_development",
-          "omit_badge_from_surfaces": []
-        }
-      },
-      "shelf_rank": 5,
-      "has_csp_exception": false,
-      "displays_advertisements": false
-    }
+    "flags": 0
   },
   {
     "id": "1067803140071620628",
@@ -2147,7 +2107,7 @@
       }
     },
     "verify_key": "76e2bffa52a54801664544169aa1d93dd50ef0d8a7e9493e806823d49cccd56c",
-    "flags": 145884170,
+    "flags": 143787018,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": null,
@@ -2857,7 +2817,7 @@
       }
     },
     "verify_key": "76e2bffa52a54801664544169aa1d93dd50ef0d8a7e9493e806823d49cccd56c",
-    "flags": 145884170,
+    "flags": 143787018,
     "max_participants": null,
     "embedded_activity_config": {
       "activity_preview_video_asset_id": null,
@@ -3575,8 +3535,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -3628,8 +3588,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -3729,6 +3689,16 @@
     "executables": [
       {
         "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
@@ -3739,22 +3709,12 @@
       },
       {
         "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -3804,12 +3764,22 @@
     "executables": [
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3820,16 +3790,6 @@
       {
         "os": "win32",
         "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       }
     ],
@@ -3955,17 +3915,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "launcher/df_launcher_global.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "launcher/df_launcher.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -3975,7 +3935,7 @@
       },
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "deltaforceclient.exe",
         "is_launcher": false
       }
     ],
@@ -4035,13 +3995,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -4230,8 +4190,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -4241,7 +4201,7 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -4255,8 +4215,8 @@
         "is_launcher": true
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
