@@ -42889,10 +42889,17 @@ html.disable-forced-colors * {
   width: 24px;
 }
 .container_b29565 {
-  display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.container_b29565,
+.loader_b29565 {
+  display: flex;
   width: 100%;
+}
+.loader_b29565 {
+  align-items: center;
+  justify-content: center;
 }
 .headerContainer_b29565 {
   align-items: center;
@@ -58658,4 +58665,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.1b09dd0c3ac15eac.css.map*/
+/*# sourceMappingURL=12633.829c32820d45dd02.css.map*/
