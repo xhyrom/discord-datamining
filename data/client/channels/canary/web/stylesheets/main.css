@@ -42725,10 +42725,16 @@ html.disable-forced-colors * {
 .closeCircle__2a891:hover {
   color: var(--interactive-hover);
 }
+.badgeContainer__8fea4 {
+  position: relative;
+}
+.badgeContainer__8fea4,
 .container__8fea4 {
-  align-items: center;
   display: flex;
   justify-content: center;
+}
+.container__8fea4 {
+  align-items: center;
 }
 .paletteIcon__8fea4 {
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.14));
@@ -58030,4 +58036,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.23890057f7a66a3f.css.map*/
+/*# sourceMappingURL=12633.d6905c5b34a471b3.css.map*/
