@@ -11,6 +11,31 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Delta Force<br /></strong
+  ><strong>Quest Name: New Season "Break" Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of<strong>
+    Delta Force </strong
+  >to receive a <strong>Desert Eagle - Action Time</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players in the <strong>United States</strong>,
+  <strong>Great Britain</strong>, <strong>France</strong>,
+  <strong>Germany</strong>, <strong>Canada</strong>, <strong>Mexico</strong>,
+  <strong>Japan</strong>, <strong>Korea</strong>, and
+  <strong>Poland</strong> who have access to <strong>Delta Force </strong>and
+  <strong>Discord</strong> on desktop.<br />Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
+  <strong>New Season "Break" Quest</strong> can be accepted on
+  <strong>desktop</strong> from <strong>July 9, 2025</strong> until
+  <strong>July 15, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>November 20, 2025 (12:00AM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: THPS 3 + 4 Launch Gameplay Trailer<br /></strong
   ><strong>Quest Name: THPS 3+4 Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
