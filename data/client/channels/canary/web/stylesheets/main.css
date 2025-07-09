@@ -22314,7 +22314,7 @@ span.clanTag__5d473 {
   box-sizing: border-box;
   color: var(--text-default);
   display: flex;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semibold);
   justify-content: center;
   line-height: 1;
   text-align: center;
@@ -43138,7 +43138,7 @@ html.disable-forced-colors * {
   margin-right: 16px;
   padding-bottom: 16px;
   padding-top: 16px;
-  width: 234px;
+  width: 227px;
 }
 .headerContainer__68a18 {
   align-items: flex-end;
@@ -58036,4 +58036,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.d6905c5b34a471b3.css.map*/
+/*# sourceMappingURL=12633.9a962ad71ad45bb0.css.map*/
