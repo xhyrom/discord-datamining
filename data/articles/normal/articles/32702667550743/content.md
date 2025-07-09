@@ -1,15 +1,12 @@
 <p>
   It’s back! Double up on the magic with our new Nitro promotion valid from
-  <strong>July 2, 2025</strong> until <strong>July 15, 2025</strong>! Read below
+  <strong>July 8, 2025</strong> until <strong>July 15, 2025</strong>! Read below
   to learn more.
 </p>
 <div class="info-box">
-  <strong
-    >This promotion is gradually rolling out to users and will be available to
-    all eligible users by July 8, 2025</strong
-  >. If you don't see it yet, check back soon - it should appear in your app
-  within the next few days. Make sure you're running the latest version of
-  Discord to ensure you receive the update!
+  <span style="color: #434343"
+    >Please make sure your Discord app is updated to the latest version!</span
+  >
 </div>
 <div class="toc-box">
   <strong
