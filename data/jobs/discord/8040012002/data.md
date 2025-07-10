@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8040012002](https://discord.com/jobs/8040012002)
 
-**Updated At:** Fri, 27 Jun 2025 18:42:22 GMT
+**Updated At:** Thu, 10 Jul 2025 21:57:03 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Two years ago, we launched the Discord Shop and watched millions of users transform how they express themselves on Discord through personalized in-app cosmetic items. Since then, we've rolled out a series of exciting content drops, including high-profile collaborations with franchises like Valorant, SpongeBob, and Star Wars. And we're just getting started — many more exciting initiatives are on the horizon.
@@ -31,7 +31,7 @@ You excel in ambiguous environments and are excited about finding solutions to c
 Experience in the gaming industry
 Entrepreneurial or start-up background
 
-Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties).
+Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.
 The US base salary range for this full-time position is $256,000 to $288,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 

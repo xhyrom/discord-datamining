@@ -2,7 +2,7 @@
 
 ## Product Designer, Player & Developer Experience
 
-**Location:** San Francisco, CA
+**Location:** San Francisco Bay Area
 
 **Id:** 8061190002 <br/>
 **Internal Job Id:** 6191201002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8061190002](https://discord.com/jobs/8061190002)
 
-**Updated At:** Thu, 03 Jul 2025 14:34:45 GMT
+**Updated At:** Thu, 10 Jul 2025 22:08:21 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our mission on the Developer Platform Team is to help game studios succeed by creating meaningful experiences for players. As a B2B2C team, we serve two key audiences. For game studios, we build smart integrations and intuitive tools that make it easy for developers, community managers, and marketers to connect with players and bring the best of Discord into their games. For players, we enhance on-platform experiences that deepen their connection to the games they love—and make it easier to build lasting friendships through play.
@@ -37,6 +37,7 @@ You collaboratively guide the vision for the product and achieve it through desi
 Ownership mindset with a bias towards action, helping to drive projects and decisions forward. Maintains low ego with a focus on progress and growth.
 You have experience working with a design system/library.
 
+Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.
 The US base salary range for this full-time position is $160,000 to $180,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
