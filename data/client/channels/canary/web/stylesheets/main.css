@@ -1710,6 +1710,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .stack_dbd263[data-align="baseline"] {
   align-items: baseline;
 }
+.stack_dbd263[data-wrap="true"] {
+  flex-wrap: wrap;
+}
 .stack_dbd263[data-justify="start"] {
   justify-content: flex-start;
 }
@@ -58667,4 +58670,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8a05238c45f3a369.css.map*/
+/*# sourceMappingURL=12633.82836f01d5149735.css.map*/
