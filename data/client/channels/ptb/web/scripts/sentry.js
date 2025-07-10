@@ -4525,9 +4525,10 @@
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
+            SHOP_KEEPER: "Shop Keeper",
+            COLLECTIBLES_SHOP_FEATURED_PAGE: "Collectibles Shop Featured Page",
             COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS:
               "Collectibles Shop View All Category Items",
-            SHOP_KEEPER: "Shop Keeper",
             COMMUNITY_ALERTS: "Community Alerts Settings",
             HIGHLIGHT_NOTIFICATIONS: "Highlight notification settings",
             QUESTS: "Quests",
@@ -4908,6 +4909,7 @@
             "apple_retry_pending_purchase_succeeded"),
           (r.APPLE_RETRY_PENDING_PURCHASE_FAILED =
             "apple_retry_pending_purchase_failed"),
+          (r.PAYMENT_ELEMENT_CHANGED = "payment_element_changed"),
           (r.PAYMENT_FLOW_STARTED = "payment_flow_started"),
           (r.PAYMENT_FLOW_COMPLETED = "payment_flow_completed"),
           (r.PAYMENT_FLOW_STEP = "payment_flow_step"),
@@ -6831,7 +6833,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-09-491dd2eea7bcf7bff1a24011b49607016993b352-discord_web",
+              "2025-07-10-007c1f22bb1bd6bd7d28686d4b8ea5b81fcd9d1f-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6897,8 +6899,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "417266"),
-            o.YA("builtAt", String("1752095814172"));
+            o.YA("buildNumber", "417521"),
+            o.YA("builtAt", String("1752131930008"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48195,4 +48197,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5b0de92bc8079428.js.map
+//# sourceMappingURL=sentry.10a8e41fbacd4f5b.js.map
