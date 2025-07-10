@@ -60834,6 +60834,22 @@ without specific prior written permission.</code></pre>
                   EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span
                 >
               </div>
+              <div class="document-25D7S4">
+                <h1 id="igdb">
+                  IGDB<a class="hyperlink" href="#igdb"
+                    ><div name="igdb"></div
+                  ></a>
+                </h1>
+                <span class="paragraph-3ckiht"
+                  >Certain information and content about games is provided by
+                  <a
+                    href="https://www.igdb.com/about"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>IGDB</span></a
+                  >.</span
+                >
+              </div>
             </div>
           </div>
         </div>
