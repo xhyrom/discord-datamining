@@ -28439,10 +28439,10 @@ body .headerAnimation_b54a5b {
   transition: transform 0.4s ease-out;
 }
 .cardElementContainer_ceece4.visible_ceece4 {
-  height: 324px;
+  min-height: 324px;
 }
 .customPaymentElementContainer_ceece4.visible_ceece4 {
-  height: 160px;
+  min-height: 160px;
 }
 .addressElementContainer_ceece4.visible_ceece4 {
   min-height: 500px;
@@ -38644,6 +38644,7 @@ img.thumbnail__0f2e8 {
   border-right: none;
   cursor: pointer;
   display: flex;
+  margin-right: var(--space-xs);
 }
 .attachment_af3b89 {
   width: 100%;
@@ -58666,4 +58667,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.e3750dbe58621581.css.map*/
+/*# sourceMappingURL=12633.8a05238c45f3a369.css.map*/
