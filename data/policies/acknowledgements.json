@@ -1444,10 +1444,6 @@
     "link": "https://github.com/facebook/react"
   },
   {
-    "name": "credit-card-type",
-    "link": "https://github.com/braintree/credit-card-type"
-  },
-  {
     "name": "cross-spawn",
     "link": "https://github.com/IndigoUnited/node-cross-spawn"
   },
