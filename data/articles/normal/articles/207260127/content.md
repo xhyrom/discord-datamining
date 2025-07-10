@@ -4,6 +4,11 @@
   personalize your Discord experience. Learn how to change themes and customize
   your app's appearance.
 </p>
+<div class="exp-box">
+  <strong>Custom Themes</strong> is an experimental feature available only to
+  select Nitro subscribers on desktop.
+  <a href="#h_01JXZWY4ZQVKSDMSVG2RMJMFKF">Learn more about Custom Themes</a>.
+</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -333,18 +338,13 @@
   for additional appearance settings.
 </div>
 <h1 id="h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</h1>
-<div class="exp-box">
-  <span style="color: #434343"
-    ><strong>Custom Themes</strong> is an experimental feature available only to
-    select Nitro subscribers on desktop. <br />When the “<strong
-      >Sync across clients</strong
-    >" toggle is enabled, custom themes applied on desktop may affect your
-    mobile experience. <br />For example: On the desktop app, if you switch from
-    dark mode to a custom theme with a light background, your mobile app will
-    automatically switch to light mode as well. Since custom themes are not
-    supported on mobile, the mobile app defaults to the standard light mode
-    theme.<br
-  /></span>
+<div class="info-box">
+  When the “<strong>Sync across clients</strong>" toggle is enabled, custom
+  themes applied on desktop may affect your mobile experience. <br />For
+  example: On the desktop app, if you switch from dark mode to a custom theme
+  with a light background, your mobile app will automatically switch to light
+  mode as well. Since custom themes are not supported on mobile, the mobile app
+  defaults to the standard light mode theme.
 </div>
 <p>
   Make Discord match your unique vibe with custom themes! Nitro subscribers can
