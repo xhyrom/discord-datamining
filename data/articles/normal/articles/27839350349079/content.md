@@ -11,6 +11,28 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Honkai: Star Rail<br /></strong
+  ><strong>Quest Name: Honkai: Star Rail Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Honkai: Star Rail</strong> to receive a
+  <strong>V3.4 Quest Bundle</strong>. <br /><strong>Who is Eligible:</strong>
+  Available to players who have access to <strong>Honkai: Star Rail </strong>and
+  <strong>Discord</strong> on desktop and PlayStation 5. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>Honkai: Star Rail Quest</strong> can be accepted on
+  <strong>desktop</strong> and <strong>PlayStation 5</strong> from
+  <strong>July 10, 2025</strong> until
+  <strong>July 16, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>July 31, 2025 (12:00AM UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Delta Force<br /></strong
   ><strong>Quest Name: New Season "Break" Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of<strong>
