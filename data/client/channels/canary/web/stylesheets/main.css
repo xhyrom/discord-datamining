@@ -57498,6 +57498,66 @@ html.disable-forced-colors * {
   font-weight: 300 800;
   src: url(/assets/943f151cdf1b637e.woff2) format("woff2");
 }
+@font-face {
+  font-family: Bangers;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/97a5dab060f60792.woff2) format("woff2");
+}
+@font-face {
+  font-family: BioRhyme;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/f75115b65a230189.woff2) format("woff2");
+}
+@font-face {
+  font-family: Cherry Bomb One;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/c064d4440a5d10c4.woff2) format("woff2");
+}
+@font-face {
+  font-family: Compagnon;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/3f3231f943ecd459.woff2) format("woff2");
+}
+@font-face {
+  font-family: Chicle;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
+}
+@font-face {
+  font-family: Neo Castel;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/048ee98a65e366a7.woff2) format("woff2");
+}
+@font-face {
+  font-family: Museo Moderno;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/70a13bfa8fb5fd84.woff2) format("woff2");
+}
+@font-face {
+  font-family: Ribes;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/assets/0640a78957378fbd.woff2) format("woff2");
+}
+@font-face {
+  font-family: Pixelify Sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/2836656d4f7513d9.woff2) format("woff2");
+}
+@font-face {
+  font-family: Sinistre;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/bccdc9cd3d272519.woff2) format("woff2");
+}
 :root {
   --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -58679,4 +58739,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5f9f6925ab96ce56.css.map*/
+/*# sourceMappingURL=12633.ba26f4247e2123dc.css.map*/
