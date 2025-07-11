@@ -1710,6 +1710,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .stack_dbd263[data-align="baseline"] {
   align-items: baseline;
 }
+.stack_dbd263[data-wrap="true"] {
+  flex-wrap: wrap;
+}
 .stack_dbd263[data-justify="start"] {
   justify-content: flex-start;
 }
@@ -16404,6 +16407,7 @@ svg.radioIcon_c1e9c4 {
 }
 .buttonContainer_dca174 {
   box-sizing: border-box;
+  display: flex;
   padding: 0 16px 16px;
   width: 100%;
 }
@@ -28438,10 +28442,10 @@ body .headerAnimation_b54a5b {
   transition: transform 0.4s ease-out;
 }
 .cardElementContainer_ceece4.visible_ceece4 {
-  height: 324px;
+  min-height: 324px;
 }
 .customPaymentElementContainer_ceece4.visible_ceece4 {
-  height: 160px;
+  min-height: 160px;
 }
 .addressElementContainer_ceece4.visible_ceece4 {
   min-height: 500px;
@@ -38643,6 +38647,7 @@ img.thumbnail__0f2e8 {
   border-right: none;
   cursor: pointer;
   display: flex;
+  margin-right: var(--space-xs);
 }
 .attachment_af3b89 {
   width: 100%;
@@ -58665,4 +58670,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.829c32820d45dd02.css.map*/
+/*# sourceMappingURL=12633.82836f01d5149735.css.map*/
