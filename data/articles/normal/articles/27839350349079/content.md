@@ -11,6 +11,42 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Marvel Rivals<br /></strong
+  ><strong>Quest Name: Marvel Rivals s3.0 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Marvel Rivals</strong> to receive a
+  <strong>Phoenix Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players in the <strong>United States </strong>and<strong>
+    Canada</strong
+  >
+  who have access to <strong>Marvel Rivals</strong> and
+  <strong>Discord</strong> on PC, PlayStation 5, and Xbox Series X/S. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Marvel Rivals s3.0 Quest</strong> can be accepted on
+  <strong>PC</strong>, <strong>PlayStation 5</strong>,
+  <strong> </strong>and<strong> Xbox Series X/S</strong> from
+  <strong>July 11, 2025</strong> until
+  <strong>July 18, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>August 18, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Phoenix Avatar Decoration</strong> is a limited-time Avatar Decoration
+  and will only be yours as an Avatar Decoration until
+  <strong>September 18, 2025 (11:59PM UTC)</strong>. After this date, you will
+  no longer have access to this Avatar Decoration. Nitro subscribers can keep
+  this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Honkai: Star Rail<br /></strong
   ><strong>Quest Name: Honkai: Star Rail Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -634,34 +670,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Video: Sea of Thieves Brand Trailer<br /></strong
-  ><strong>Quest Name: Sea of Thieves Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the<strong>
-    Sea of Thieves Brand Trailer </strong
-  >in Discord to receive
-  <a href="https://support.discord.com/hc/articles/30593690165783"
-    ><strong
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Discord Orbs</span
-      ></strong
-    ></a
-  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to
-  limited users on desktop where <strong>Discord</strong> is available and who
-  are in the Orbs Beta. Discord’s premium services are restricted in some
-  regions.<br /><strong>Availability Period:</strong> The
-  <strong>Sea of Thieves Quest </strong>can be accepted on Discord desktop app
-  or browser client from <strong>June 3, 2025 </strong>until<strong>
-    June 10, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 10, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Marvel Rivals<br /></strong
   ><strong>Quest Name: Marvel Rivals S2.5 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -719,33 +727,7 @@
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
   >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.<strong><br /><br /></strong>
-</p>
-<p>
-  <strong>Quest Video: Discord Orbs Intro <br /></strong
-  ><strong>Quest Name: Discord Orbs Intro Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the<strong> Discord Orbs Intro </strong
-  >in Discord to receive
-  <a href="https://support.discord.com/hc/articles/30593690165783"
-    ><strong
-      ><span
-        class="wysiwyg-underline"
-        style="color: #1155cc"
-        data-darkreader-inline-color=""
-        >Discord Orbs</span
-      ></strong
-    ></a
-  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to
-  limited users on desktop where <strong>Discord</strong> is available and who
-  are in the Orbs Beta. Discord’s premium services are restricted in some
-  regions.<br /><strong>Availability Period:</strong> The
-  <strong>Discord Orbs Intro Quest </strong>can be accepted on Discord desktop
-  app or browser client from <strong>May 28, 2025 </strong>until<strong>
-    June 10, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 10, 2025 (11:59 UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
+  account.
 </p>
 <p> </p>
 <p>
