@@ -54,6 +54,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "3265",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -131,6 +132,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "7253",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -211,6 +213,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4933",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -296,6 +299,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8620",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -382,6 +386,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5319",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -489,6 +494,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5821",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -600,6 +606,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "6546",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -708,6 +715,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "2790",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -788,6 +796,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8587",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -897,6 +906,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4167",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -1005,6 +1015,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "3722",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -1116,6 +1127,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "0",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -1153,6 +1165,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4690",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -1236,6 +1249,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "9423",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -1345,6 +1359,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4215",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -1453,6 +1468,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5039",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -1559,6 +1575,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "2737",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -1665,6 +1682,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5384",
+      "display_name_styles": null,
       "public_flags": 524288,
       "primary_guild": null,
       "clan": null,
@@ -1752,6 +1770,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "6686",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -1860,6 +1879,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5359",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -1970,6 +1990,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8159",
+      "display_name_styles": null,
       "public_flags": 524289,
       "primary_guild": null,
       "clan": null,
@@ -2070,6 +2091,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8196",
+      "display_name_styles": null,
       "public_flags": 524289,
       "primary_guild": null,
       "clan": null,
@@ -2169,6 +2191,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4065",
+      "display_name_styles": null,
       "public_flags": 589825,
       "primary_guild": null,
       "clan": null,
@@ -2275,6 +2298,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "2092",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -2388,6 +2412,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8136",
+      "display_name_styles": null,
       "public_flags": 524289,
       "primary_guild": null,
       "clan": null,
@@ -2494,6 +2519,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5948",
+      "display_name_styles": null,
       "public_flags": 524288,
       "primary_guild": null,
       "clan": null,
@@ -2596,6 +2622,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "0743",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -2674,6 +2701,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "4065",
+      "display_name_styles": null,
       "public_flags": 589825,
       "primary_guild": null,
       "clan": null,
@@ -2780,6 +2808,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8196",
+      "display_name_styles": null,
       "public_flags": 524289,
       "primary_guild": null,
       "clan": null,
@@ -2879,6 +2908,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8159",
+      "display_name_styles": null,
       "public_flags": 524289,
       "primary_guild": null,
       "clan": null,
@@ -2979,6 +3009,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5750",
+      "display_name_styles": null,
       "public_flags": 589825,
       "primary_guild": null,
       "clan": null,
@@ -3088,6 +3119,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "7896",
+      "display_name_styles": null,
       "public_flags": 589825,
       "primary_guild": null,
       "clan": null,
@@ -3197,6 +3229,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "0152",
+      "display_name_styles": null,
       "public_flags": 589825,
       "primary_guild": null,
       "clan": null,
@@ -3305,6 +3338,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "0604",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -3363,6 +3397,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "6871",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -3418,6 +3453,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "5716",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -3470,6 +3506,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "3214",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -3518,6 +3555,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8768",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -3535,8 +3573,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -3571,6 +3609,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "0680",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -3625,6 +3664,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "3928",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -3643,8 +3683,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "268561430"
     },
@@ -3652,8 +3692,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "268561430"
         }
@@ -3688,18 +3728,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3714,7 +3744,17 @@
       },
       {
         "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
@@ -3763,13 +3803,13 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -3779,17 +3819,17 @@
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
@@ -3818,6 +3858,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "9282",
+      "display_name_styles": null,
       "public_flags": 589824,
       "primary_guild": null,
       "clan": null,
@@ -3835,8 +3876,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147601472"
     },
@@ -3844,8 +3885,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2147601472"
         }
@@ -3881,14 +3922,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "262186",
-        "sku": "262186",
-        "distributor": "igdb"
-      },
-      {
         "id": "2507950",
         "sku": "2507950",
         "distributor": "steam"
+      },
+      {
+        "id": "262186",
+        "sku": "262186",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -3899,6 +3940,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "3549",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -3925,12 +3967,12 @@
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       },
       {
@@ -4037,6 +4079,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "8445",
+      "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
       "clan": null,
@@ -4116,6 +4159,7 @@
       "avatar_decoration_data": null,
       "collectibles": null,
       "discriminator": "9425",
+      "display_name_styles": null,
       "public_flags": 65536,
       "primary_guild": null,
       "clan": null,
@@ -4190,18 +4234,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -4216,7 +4250,17 @@
       },
       {
         "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       }
     ],
