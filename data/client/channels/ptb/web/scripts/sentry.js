@@ -4058,6 +4058,7 @@
             SAFETY_FLOWS_RESEND_VERIFICATION_CODE:
               "/safety-flows/resend/email/reverification/pincode",
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
+            APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
           }),
           f = Object.freeze({
             INDEX: "/",
@@ -5049,7 +5050,6 @@
             "premium_marketing_what_is_new_card_hovered"),
           (r.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED =
             "premium_marketing_perks_see_all_clicked"),
-          (r.BOGO_ELIGIBILITY_RESULT = "bogo_eligibility_result"),
           (r.STORE_DIRECTORY_VIEWED = "store_directory_viewed"),
           (r.STORE_DIRECTORY_BROWSE_VIEWED = "store_directory_browse_viewed"),
           (r.STORE_DIRECTORY_FILTER_UPDATED = "store_directory_filter_updated"),
@@ -6833,7 +6833,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-10-007c1f22bb1bd6bd7d28686d4b8ea5b81fcd9d1f-discord_web",
+              "2025-07-11-044e6419c2a97824facffb4a156f6cab7ab5cb0b-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6899,8 +6899,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "417521"),
-            o.YA("builtAt", String("1752131930008"));
+            o.YA("buildNumber", "418067"),
+            o.YA("builtAt", String("1752218528875"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48197,4 +48197,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.10a8e41fbacd4f5b.js.map
+//# sourceMappingURL=sentry.780145b76c8fa16e.js.map
