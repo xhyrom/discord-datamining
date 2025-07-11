@@ -36389,6 +36389,10 @@ html:not(.chat-input) .inputInner_b1f01d {
   flex-wrap: wrap;
   gap: 6px;
 }
+.link_d9ba3e:hover {
+  -webkit-text-decoration-color: var(--text-default);
+  text-decoration-color: var(--text-default);
+}
 :where(.contentImage__42bf5) {
   border-radius: var(--radius-xs);
   object-fit: contain;
@@ -58739,4 +58743,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ba26f4247e2123dc.css.map*/
+/*# sourceMappingURL=12633.4f0147e395f569fb.css.map*/
