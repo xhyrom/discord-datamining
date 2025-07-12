@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6164339002,
   "location": {
-    "name": "San Francisco, CA or Remote (U.S.)"
+    "name": "Remote (U.S.)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 7997969002,
-  "updated_at": "2025-07-02T12:34:07-04:00",
+  "updated_at": "2025-07-11T20:58:46-04:00",
   "requisition_id": "R-100929",
   "title": "Staff Software Engineer, Machine Learning",
   "company_name": "Discord",
