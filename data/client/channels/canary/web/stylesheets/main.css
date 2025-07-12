@@ -11989,6 +11989,7 @@ svg.radioIcon_c1e9c4 {
   color: ButtonText;
   text-decoration: underline;
 }
+.root,
 :root {
   --__spoiler-background-color--hidden: var(--spoiler-hidden-background);
   --__spoiler-background-color--hidden--hover: var(
@@ -58743,4 +58744,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.4f0147e395f569fb.css.map*/
+/*# sourceMappingURL=12633.07d8f127c5774429.css.map*/
