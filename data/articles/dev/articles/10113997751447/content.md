@@ -133,9 +133,9 @@
     >
   </li>
 </ul>
-<h3 id="70ebf968-173e-4ffb-86d5-2e417eeb20a4" class="wysiwyg-indent1">
+<h2 id="70ebf968-173e-4ffb-86d5-2e417eeb20a4" class="wysiwyg-indent1">
   Select an Active App
-</h3>
+</h2>
 <p class="wysiwyg-indent1">
   First, select an app from the dropdown. Any active app will be eligible, as
   long as it has received a command within the past 30 days.
@@ -145,9 +145,9 @@
   Developer Badge, please allow at least 24 hours for your app's activity status
   to be updated.
 </p>
-<h3 id="h_01GHW11D9TAXKM9YVATV2P63BX" class="wysiwyg-indent1">
+<h2 id="h_01GHW11D9TAXKM9YVATV2P63BX" class="wysiwyg-indent1">
   Designate a Community Server
-</h3>
+</h2>
 <p class="wysiwyg-indent1">
   Next, designate your official server for your app (for example, your App
   Support Server, App Community Server or App Development Server).
@@ -169,9 +169,9 @@
     ></strong
   >.
 </p>
-<h3 id="h_01GHW11VRTNAYAMAATV3MEB4VH" class="wysiwyg-indent1">
+<h2 id="h_01GHW11VRTNAYAMAATV3MEB4VH" class="wysiwyg-indent1">
   Choose a Developer News Channel
-</h3>
+</h2>
 <p class="wysiwyg-indent1">
   Finally, select the channel within the designated server for the Developer
   News channel to appear in. This will allow for updates about Discord API and
