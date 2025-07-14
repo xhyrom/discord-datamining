@@ -1,13 +1,6 @@
 <p>
-  <strong>Nitro credits</strong> are an experimental reward that Discord users
-  can earn for completing
-  <a
-    href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Quests</a
-  >
-  that give you Nitro for a limited amount of time.
+  <strong>Nitro credits</strong> are an Orbs-exclusive item in the Shop that
+  give you Nitro for a limited amount of time.
 </p>
 <div class="toc-box">
   <strong
@@ -65,16 +58,17 @@
     </li>
   </ul>
 </div>
-<div class="exp-box">
-  <strong>Info</strong>: Nitro credits are currently an experimental offer
-  available to a limited number of users and only through the Discord desktop
-  app.
-</div>
 <h1 id="h_01JDB0ACQV156W5C32S3XR69WC">What are Nitro Credits?</h1>
 <p>Nitro credits give you Nitro for a limited amount of time. </p>
 <ul>
   <li>
-    They are earned by purchasing in the Shop, or by completing specific
+    They are earned by purchasing in the
+    <a
+      href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Shop</a
+    >, or occasionally completing specific
     <a
       href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
       target="_blank"
@@ -104,9 +98,8 @@
   </li>
 </ul>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: Nitro credits do not give you 2 free Server Boosts or the 30% discount on
+  <span style="color: #434343"
+    >Nitro credits do not give you 2 free Server Boosts or the 30% discount on
     additional Boost purchases. However, you can still enjoy all the other Nitro
     perks. To learn more about all Nitro perks, check out this </span
   ><a
@@ -116,63 +109,57 @@
     >article</a
   ><span style="color: #434343">.</span>
 </div>
-<h1 id="h_01JDB0ACQVVVSJ44EZDSKQQZ18">How do I earn Nitro Credits?</h1>
-<p>
-  To earn Nitro credits, complete a specific Quest that offers them. Here's how:
-</p>
-<p>
-  1. Select the <strong>Discover</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/28009931046935"
-    width="26"
-    height="24"
-  />] at the bottom of the <strong>server list</strong> on the left side of the
-  app. This takes you to the <strong>Discover</strong> page.
-</p>
-<p>
-  2. Select the <strong>Quest</strong> tab within the<a
-    href="https://support.discord.com/hc/articles/25323248535319-Discover-Tab"
-  >
-    <span class="wysiwyg-underline" style="color: #1155cc">Discover</span></a
-  >
-  list to explore available Discord Quests. You've now reached
-  <strong>Quest Home</strong>, where you can find Quests offering Nitro credits.
-</p>
-<div class="book-box">
-  <p><strong>Want to learn more?</strong></p>
-  <p>
-    For more details on accepting and completing Quests, check out our
-    <a
-      href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Discord Quests FAQ.</a
-    >
-  </p>
+<h1 id="h_01JDB0ACQVVVSJ44EZDSKQQZ18">How do I obtain Nitro Credits?</h1>
+<div class="info-box">
+  Nitro credits can only be obtained on the Discord desktop app and browser app,
+  but if you have active Nitro credits, you can enjoy your Nitro benefits on any
+  device, including mobile.
 </div>
 <p>
-  3. After completing the Quest, you'll receive a notification informing you
-  that you've earned Nitro credits!
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/28009931047703"
-    width="407"
-    height="383"
-  />
-</p>
-<h4 id="h_01JRKC3C4F547QM8JA5WG0QMEQ" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Confirmation of earned Nitro credits</span>
-</h4>
-<div class="info-box">
-  Info: You can also get Nitro credits by spending Discord Orbs in the Shop &gt;
-  Orbs Exclusives.
+  You can claim Nitro credits in the
   <a
-    href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
+    ><span class="wysiwyg-underline" style="color: #1155cc">Shop</span></a
+  >
+  using
+  <a href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    ><span class="wysiwyg-underline" style="color: #1155cc"
+      >Discord Orbs</span
+    ></a
+  >. Orbs are virtual rewards that you can earn by completing Quests. 
+</p>
+<p>
+  Once you have earned Orbs, you can get Nitro credits in the 
+  <strong>Shop &gt; Orbs Exclusives page. </strong> 
+</p>
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />Find out how to earn Discord Orbs
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783-Discord-Orbs-FAQ#h_01JVN9BXVA54DT1W6C0NAHSM73"
     target="_blank"
     rel="noopener noreferrer"
-    >Discord Orbs</a
-  >
-  is currently in Beta.
+    >here</a
+  >.
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244735239575"
+    width="624"
+    height="453"
+  />
+</p>
+<h4 id="h_01JZ9DJEK7GHZE9TS56Y3WWYFC" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Claiming Nitro credit in Orbs Exclusives</span>
+</h4>
+<div class="info-box">
+  Nitro credits are also occasionally offered as Quest rewards. For more details
+  on accepting and completing Quests, check out our
+  <a
+    href="https://support.discord.com/hc/articles/22225719947543-Discord-Quests-FAQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Quests FAQ</a
+  >.
 </div>
 <h1 id="h_01JDB0ACQVRA46TFAA79SVQBH0">Where can I view my Nitro Credits?</h1>
 <p>
@@ -217,12 +204,18 @@
 </p>
 <ul>
   <li>
-    <strong>No Nitro subscription</strong>: credits activate instantly upon
-    earning them.
+    <strong>If you have no Nitro subscription</strong>: 
+    <ul>
+      <li>Credits activate instantly upon earning them.</li>
+    </ul>
   </li>
   <li>
-    <strong>Active Nitro subscription</strong>: credits activate automatically
-    at the end of your current billing cycle. 
+    <strong>If you have an active Nitro subscription</strong>: 
+    <ul>
+      <li>
+        Credits activate automatically at the end of your current billing cycle.
+      </li>
+    </ul>
   </li>
 </ul>
 <h1 id="h_01JRKCBE60B42NJH08MG46EDCG">
@@ -261,35 +254,30 @@
     target="_blank"
     rel="noopener noreferrer"
     >Boost-only subscription</a
-  >:
+  >, you can freely manage your Boosts, including cancelling your subscription,
+  without any impact to your Nitro credits.
 </p>
-<ul>
-  <li>
-    If you have a Boost-only subscription, you can freely manage your Boosts,
-    including cancelling, without any impact to your Nitro credits.
-  </li>
-</ul>
 <h1 id="h_01JDB0ACQVQ96K8TW31DJ2KR43">Frequently Asked Questions</h1>
 <p>
   <strong
-    >Q: What happens to my Nitro subscription if I earn Nitro credits?</strong
+    >Q: What happens to my Nitro subscription if I obtain Nitro credits?</strong
   >
 </p>
 <p>
   A: Your Nitro subscription will continue until the end of your current billing
-  cycle. Then, your Nitro credits will activate automatically, lasting for the
-  time you've earned. Once your Nitro credits have been fully used, your paid
-  Nitro subscription will automatically renew again.
+  cycle. Then, your Nitro credits will activate automatically. Once your Nitro
+  credits have been fully used, your paid Nitro subscription will automatically
+  renew again.
 </p>
 <p>
   <strong
     >Q: I’m a current Nitro subscriber. What happens to my billing date if I
-    earn Nitro credits?</strong
+    obtain Nitro credits?</strong
   >
 </p>
 <p>
-  A: Your billing date will be adjusted to reflect any additional time earned
-  through Nitro credits. 
+  A: Your billing date will be adjusted based on how long your Nitro credits
+  last.
 </p>
 <p>
   <strong
@@ -305,7 +293,7 @@
     href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ"
     target="_blank"
     rel="noopener noreferrer"
-    >Boost FAQ</a
+    >Server Boosting FAQ</a
   >
   for more information.  
 </p>
@@ -330,12 +318,13 @@
 </p>
 <p>
   <strong
-    >Q: What if I earn Nitro credits when my subscription is past due?</strong
+    >Q: What if I obtain Nitro credits while my subscription is past
+    due?</strong
   >
 </p>
 <p>
-  A: If you're rewarded Nitro credits while your subscription is past due, they
-  will be applied in one of two ways:
+  A: If you obtain Nitro credits while your subscription is past due, they will
+  be applied in one of two ways:
 </p>
 <ul>
   <li>
@@ -347,13 +336,21 @@
     cycle. 
   </li>
 </ul>
-<p><strong>Q: Can I use my earned Nitro credits at any time?</strong></p>
+<p><strong>Q: Can I use my Nitro credits at any time?</strong></p>
 <p>
-  A: Nitro credits activate between billing cycles. They will automatically
-  apply once your current subscription period ends. If you don’t have an active
-  Nitro subscription, your Nitro credits will be activated immediately upon
-  earning them.
+  A: No, Nitro credits automatically activate at different times depending on
+  your subscription status:
 </p>
+<ul>
+  <li>
+    <strong>If you’re a current subscriber</strong>: Nitro credits automatically
+    apply at the end of your current billing cycle. 
+  </li>
+  <li>
+    <strong>If you don’t have an active Nitro subscription</strong>: Your Nitro
+    credits will be activated immediately upon getting them.
+  </li>
+</ul>
 <p>
   <strong
     >Q: How do Nitro credits interact with subscription credits (<a
@@ -369,15 +366,16 @@
   your specific situation. Here are some common scenarios:
 </p>
 <p>
-  1. Active<strong> gift credit, no stored credits:</strong> Nitro credits
-  activate after current gift period ends.
+  1. <strong>Active gift credit, no stored credits:</strong> Nitro credits
+  activate after the current gift period ends.
 </p>
 <p>
-  2. Multiple<strong> stored gift credits with an active subscription:</strong>
+  2.
+  <strong>Multiple stored gift credits with an active subscription:</strong>
   Nitro credits activate after the current billing period. Then, the next gift
   credit will be used to continue the subscription.
 </p>
 <p>
-  3. Stored<strong> gift credits, no active subscription:</strong> Nitro credits
+  3. <strong>Stored gift credits, no active subscription:</strong> Nitro credits
   activate immediately. Doesn't affect existing gift credits.
 </p>

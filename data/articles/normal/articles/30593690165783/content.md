@@ -62,25 +62,45 @@
       <a href="#h_01JVN9C8T7BJ54A4DWBYKRXC6F"
         ><strong>Frequently Asked Questions</strong></a
       >
+      <ul>
+        <li>
+          <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8"
+            ><strong>General Orbs Information</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF"
+            ><strong>Earning and Obtaining Orbs</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ"
+            ><strong>Spending Orbs</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9AY4XRXM6YWSVB8TA2AARX"
+            ><strong>Sharing and Transferring Orbs</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC"
+            ><strong>Support and Issues</strong></a
+          >
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
 <h1 id="h_01JVN9B6E5CEK0KRXD7T6S6G6M">What are Discord Orbs? </h1>
 <div class="info-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Info</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: The Discord Orbs Beta is currently available to select users on desktop
-    and browser. By using Discord Orbs, you agree to the Discord Orbs Terms
-    contained in our </span
-  ><a
+  By using Discord Orbs, you agree to the Discord Orbs Terms in our
+  <a
     href="https://discord.com/terms/paid-services-terms"
     target="_blank"
     rel="noopener noreferrer"
     >Paid Services Terms</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  >.
 </div>
 <p>
   <span style="color: #434343" data-darkreader-inline-color=""
@@ -125,7 +145,7 @@
       <li>
         You will occasionally see the <strong>Quest bar</strong> pop up in the
         bottom-left of the app when you're eligible for a Quest. Hover over it
-        to learn more and get started!
+        to learn more about the Quest details and get started.
       </li>
     </ul>
   </li>
@@ -182,46 +202,77 @@
   3. You can check your Orbs balance in the top-right corner of
   <strong>Quest Home</strong> and <strong>Shop</strong>. 
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244208615319"
+    width="608"
+    height="555"
+  />
+</p>
+<h4 id="h_01JZ9AKNM6PTF4AKG7FP94KP3H" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Orbs Balance</span>
+</h4>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
   Head to the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Shop</a
+  <strong
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/17162747936663-Shop-FAQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Shop</a
+    >
+    tab</strong
   >
-  tab to begin spending your Discord Orbs!
+  to begin spending your Discord Orbs!
 </p>
 <p><strong>Desktop/Browser</strong></p>
 <p>
   1. Navigate to your <strong>Direct Messages list</strong> by selecting the
-  Discord app icon in the upper-left corner. 
+  <strong>Discord app icon</strong> in the upper-left corner. 
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244216874391"
+    width="281"
+    height="297"
+  />
+</p>
+<h4 id="h_01JZ9AN7W4HR2TF7EZW7H8FAWX" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Discord App Icon </span>
+</h4>
 <p>
-  2. Then, press the Shop tab [<img
+  2. Then, press the <strong>Shop tab</strong> [<img
     src="https://support.discord.com/hc/article_attachments/32220889853079"
     width="24"
     height="24"
-  />] to the right of your server list to enter the Shop.
+  />] to the right of your <strong>server list</strong> to enter the Shop.
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244216875799"
+    width="287"
+    height="292"
+  />
+</p>
+<h4 id="h_01JZ9AP29Y93J4767D5EBEP0FF" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Shop Tab</span>
+</h4>
 <p>
   3. In the Shop, select the <strong>Orbs Exclusives tab</strong> at the top to
   view Orbs-exclusive items.
 </p>
 <p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
+  <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/32220889855255"
-      width="606"
-      height="477"
+      src="https://support.discord.com/hc/article_attachments/33244208618903"
+      width="624"
+      height="585"
   /></span>
 </p>
-<h4 id="h_01JVN9C8T71905QW41KJTZG59C" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Navigating to the Shop</span
-  >
+<h4 id="h_01JZ9APQ8PJEG56K5J553BDZER" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Orbs Exclusives Tab in the Shop</span>
 </h4>
 <h2 id="h_01JVN9C8T7QS6SMHNPSE97MYZP">What can I buy with Orbs? </h2>
 <p>Here’s what you <em>can</em> purchase with Orbs in the Shop: </p>
@@ -233,20 +284,19 @@
       href="https://support.discord.com/hc/en-us/articles/26362805097623-Nitro-Credits-FAQ"
       target="_blank"
       rel="noopener noreferrer"
-      >Nitro Credits</a
+      >Nitro credits</a
     >, a profile badge, special Avatar Decoration, and special Profile Effect. 
   </li>
 </ul>
 <p>You <em>cannot</em> purchase these items with Orbs: </p>
 <ul>
-  <li>Partner-branded Shop items</li>
   <li>Gifts</li>
+  <li>Partner-branded Shop items</li>
   <li>Recurring Nitro or Boosting subscriptions</li>
 </ul>
 <div class="info-box">
-  <strong>Note</strong>: Nitro credits are considered an Orbs-exclusive item
-  within the Shop. However, you can also earn them occasionally by completing
-  specific
+  Nitro credits are considered an Orbs-exclusive item within the Shop. However,
+  you can also earn them occasionally by completing specific
   <a
     href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ"
     target="_blank"
@@ -257,11 +307,11 @@
 <h2 id="h_01JVN9C8T7EDJC0CT3DKGW8DJ6">How to Spend Orbs</h2>
 <ol>
   <li>
-    Browse Orbs-exclusive items in the <strong>Orbs Exclusives</strong> tab of
-    the <strong>Shop</strong>, or check the <strong>Shop All</strong> tab to see
-    the full collection of items that can be claimed with Orbs. If you don’t see
-    an Orbs price on an item, it means it’s not eligible to be claimed with
-    Orbs. 
+    Browse Orbs-exclusive items in the <strong>Orbs Exclusives</strong>
+    <strong>tab</strong> of the <strong>Shop</strong>, or check the
+    <strong>Shop All</strong> <strong>tab</strong> to see the full collection of
+    items that can be claimed with Orbs. If you don’t see an Orbs price on an
+    item, it means it’s not eligible to be claimed with Orbs. 
   </li>
   <li>
     Each item will display whether you can claim with Orbs or spend money to
@@ -269,12 +319,8 @@
   </li>
 </ol>
 <div class="info-box">
-  <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >Info</span
-    ></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >: For eligible items, the Shop automatically displays the Orbs price if you
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >For eligible items, the Shop automatically displays the Orbs price if you
     have enough Orbs. If you don’t have enough Orbs for an item, the regular
     monetary price will be displayed instead.</span
   >
@@ -282,7 +328,7 @@
 <ol start="3">
   <li>
     To make a purchase, select your desired item and press
-    <strong>Claim</strong> in the <strong>Shop</strong> window.
+    <strong>Claim</strong> in the <strong>Shop</strong> <strong>window</strong>.
   </li>
 </ol>
 <div class="warn-box">
@@ -296,9 +342,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/32220889857815"
-    width="613"
-    height="484"
+    src="https://support.discord.com/hc/article_attachments/33244208620311"
+    width="624"
+    height="451"
   />
 </p>
 <h4 id="h_01JVN9C8T7N1TY4WR71F55X55B" class="wysiwyg-text-align-center">
@@ -323,9 +369,9 @@
   >
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/32220859090199"
-      width="624"
-      height="449"
+      src="https://support.discord.com/hc/article_attachments/33244216877719"
+      width="608"
+      height="509"
     />
   </p>
   <h4 id="h_01JVN9C8T73C7JHJVS73QAMEM0" class="wysiwyg-text-align-center">
@@ -356,23 +402,112 @@
   </li>
 </ul>
 <h1 id="h_01JVN9C8T7BJ54A4DWBYKRXC6F">Frequently Asked Questions</h1>
-<p>
-  <strong>Q: </strong
-  ><strong
-    >I don't see any information about Discord Orbs in my desktop app or browser
-    client. Why not?</strong
-  >
-</p>
-<p>
-  A: Orbs is currently in limited Beta access, and isn’t currently available to
-  everyone. You’ll receive an in-app notification when Discord Orbs becomes
-  available to you!
-</p>
+<p>This FAQ is divided into sections:</p>
+<ul>
+  <li>
+    <a href="#h_01JZ9AY4XRS43ZEP3GPWRJTYM8"
+      ><strong>General Orbs Information</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9AY4XRNS4GA22J5GPD7XBF"
+      ><strong>Earning and Obtaining Orbs</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9AY4XRM4JH1FDGDDHKVMCZ"><strong>Spending Orbs</strong></a>
+  </li>
+  <li>
+    <a href="#h_01JZ9AY4XRXM6YWSVB8TA2AARX"
+      ><strong>Sharing and Transferring Orbs</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9AY4XRE0VH4X2KR6Y4CATC"
+      ><strong>Support and Issues</strong></a
+    >
+  </li>
+</ul>
+<h2 id="h_01JZ9AY4XRS43ZEP3GPWRJTYM8">General Orbs Information</h2>
 <p><strong>Q: Are Orbs available on mobile?</strong></p>
 <p>
   A: Not at this time. You can only earn and spend Orbs on the desktop app and
   browser client.
 </p>
+<p><strong>Q: Will my Orbs expire?</strong></p>
+<p>
+  A: Your Orbs stay in your account until you decide to spend them. However, as
+  we continue monitoring how users earn and spend Orbs we might make future
+  adjustments to keep the experience balanced for everyone. Additionally, keep
+  in mind that if you lose access to your Discord account for any reason,
+  including violating our
+  <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
+    >Terms of Service</a
+  >
+  or
+  <a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Community Guidelines</a
+  >, you may lose access to any Orbs associated with that account. 
+</p>
+<p>
+  <strong
+    >Q: What happens to my Orbs if my account is compromised or banned?</strong
+  >
+</p>
+<p>
+  A: If you lose access to your Discord account for any reason, including
+  violating our Terms of Service or Community Guidelines, you may lose access to
+  any Orbs associated with that account. For cases involving compromised
+  accounts or fraudulent purchases, please contact our
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+    >support team</a
+  >
+  for assistance.
+</p>
+<h2 id="h_01JZ9AY4XRNS4GA22J5GPD7XBF">Earning and Obtaining Orbs</h2>
+<p><strong>Q: Can I buy or gift Orbs to someone?</strong></p>
+<p>
+  A: No, you cannot gift or buy Orbs. The only way to obtain Orbs today is
+  through completing
+  <a
+    href="https://support.discord.com/hc/articles/22225719947543"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Quests</a
+  >.
+</p>
+<p>
+  <strong
+    >Q: Is there any other way to obtain Orbs? Can I only earn Orbs from
+    Quests?</strong
+  >
+</p>
+<p>
+  A: The only way to earn Orbs today is to complete specific
+  <a
+    href="https://support.discord.com/hc/articles/22225719947543"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Quests</a
+  >
+  that offer Orbs as a reward.
+</p>
+<p><strong>Q: What should I do if I see someone selling Orbs?</strong></p>
+<p>
+  A: Please
+  <a
+    href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >report</a
+  >
+  any attempts to sell or trade Orbs, as this violates the Discord Orbs Terms
+  and may result in account penalties.
+</p>
+<h2 id="h_01JZ9AY4XRM4JH1FDGDDHKVMCZ">Spending Orbs</h2>
 <p><strong>Q: I noticed I can’t buy a specific Shop item. Why not?</strong></p>
 <p>
   A: You can spend Orbs on most Shop items, including Orbs-exclusive items.
@@ -404,37 +539,9 @@
     rel="noopener noreferrer"
     >Help Center article</a
   >
-  for more information on how Nitro credits work.
+  for more information on how Nitro credits work. 
 </p>
-<p><strong>Q: Is there a limit to the number of Orbs I can collect?</strong></p>
-<p>A: Nope! You can earn and collect as many Orbs as you’d like.</p>
-<p><strong>Q: Can I buy or gift Orbs to someone?</strong></p>
-<p>
-  A: No, you cannot gift or buy Orbs. The only way to obtain Orbs is through
-  completing
-  <a
-    href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Quests</a
-  >.
-</p>
-<p>
-  <strong
-    >Q: Is there any other way to obtain Orbs? Can I only earn Orbs from
-    Quests?</strong
-  >
-</p>
-<p>
-  A: The only way to earn Orbs is to complete specific
-  <a
-    href="https://support.discord.com/hc/articles/22225719947543"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Quests</a
-  >
-  that offer Orbs as a reward.
-</p>
+<h2 id="h_01JZ9AY4XRXM6YWSVB8TA2AARX">Sharing and Transferring Orbs</h2>
 <p><strong>Q: Can I share or trade my Orbs with friends?</strong></p>
 <p>
   A: No, Orbs are tied to your personal Discord account and cannot be
@@ -450,18 +557,12 @@
   A: No, you cannot convert Orbs to real money or transfer them to other
   platforms.
 </p>
-<p><strong>Q: Will my Orbs ever expire?</strong></p>
-<p>
-  A: No, your Orbs stay in your account until you decide to spend them. If you
-  lose access to your Discord account for any reason, including violating our
-  Terms of Service or Community Guidelines, you may lose access to any Orbs
-  associated with that account. 
-</p>
 <p><strong>Q: What happens to my Orbs if I change accounts?</strong></p>
 <p>
   A: Orbs remain tied to the original account where they were earned. They
   cannot be transferred between accounts, even if both accounts belong to you.
 </p>
+<h2 id="h_01JZ9AY4XRE0VH4X2KR6Y4CATC">Support and Issues</h2>
 <p>
   <strong
     >Q: I'm experiencing issues with Discord Orbs. What should I do?</strong
@@ -476,31 +577,4 @@
     Discord Support</a
   >
   directly for assistance with any Orbs-related concerns.
-</p>
-<p>
-  <strong
-    >Q: What happens to my Orbs if my account is compromised or banned?</strong
-  >
-</p>
-<p>
-  A: If you lose access to your Discord account for any reason, including
-  violating our Terms of Service or Community Guidelines, you may lose access to
-  any Orbs associated with that account. For cases involving compromised
-  accounts or fraudulent purchases, please contact our
-  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
-    >support team</a
-  >
-  for assistance.
-</p>
-<p><strong>Q: What should I do if I see someone selling Orbs?</strong></p>
-<p>
-  A: Please
-  <a
-    href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    >report</a
-  >
-  any attempts to sell or trade Orbs, as this violates the Discord Orbs Terms
-  and may result in account penalties.
 </p>

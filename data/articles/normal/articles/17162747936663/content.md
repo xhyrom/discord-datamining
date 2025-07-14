@@ -1,68 +1,114 @@
+<p>
+  Welcome to Discord's Shop FAQ! Learn everything you need to know about
+  customizing your Discord profile with <strong>Avatar Decorations</strong>,
+  <strong>Profile Effects</strong>, <strong>Nameplates</strong>, and more
+  through our <strong>Shop</strong>. Whether you're looking to purchase unique
+  items, claim Nitro exclusives, or send gifts to friends, this article explains
+  all the essential features and functions.
+</p>
 <div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
+    ></strong
+  >
   <ul>
-    <li><a href="#h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop </a></li>
     <li>
-      <a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a>
+      <strong
+        ><a href="#h_01HDME17HJE3D9N3DWY2QYGF07"
+          >What will I find in the Shop?</a
+        ></strong
+      >
       <ul>
-        <li><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></li>
+        <li>
+          <strong
+            ><a href="#h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</a></strong
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9CB0KZ0NZB7ECSAFY6DEW2"
+            ><strong>Orbs Exclusives</strong></a
+          >
+        </li>
       </ul>
     </li>
     <li>
-      <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
+      <strong
+        ><a href="#h_01HDME17HJX40G92JC7V3Q0WD6"
+          >How do I find the Shop?</a
+        ></strong
+      >
       <ul>
-        <li><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></li>
-        <li><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></li>
+        <li>
+          <strong
+            ><a href="#h_01HVHE1RAM3Y86Y72M182775GF">Desktop/Browser</a></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01J4T4TY98TVE2FGXE2HW9YTPH">Mobile</a></strong>
+        </li>
       </ul>
     </li>
-    <li><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G">Gifting from the Shop</a></li>
     <li>
-      <a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a>
+      <strong
+        ><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G"
+          >Gifting from the Shop</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN"
+          >Frequently Asked Questions</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
+            ><strong>Refunds and Account-related</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
+            ><strong>Pricing and Discounts</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
+            ><strong>Bundles and Items</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
-<h1 id="h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop</h1>
-<p>
-  From <strong>avatar decorations</strong> to
-  <strong>profile effects </strong>and<strong> nameplates</strong>, our Shop has
-  a variety of items you can buy and collect to customize your profile! Items
-  purchased from the Shop are yours to keep and apply whenever you want. Now you
-  can add your favorite styles to your profile for any occasion!  
-</p>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
-<p id="docs-internal-guid-06d82dee-7fff-3f1f-f01d-d16bf0924909">
-  Once you enter the Shop, you will be able to preview and purchase available
+<p>
+  In the Shop, you can preview and purchase
   <a
     href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
     target="_blank"
     rel="noopener noreferrer"
-    >avatar decorations</a
+    >Avatar Decorations</a
   >,
   <a
     href="https://support.discord.com/hc/en-us/articles/17828465914263-Profile-Effects"
     target="_blank"
     rel="noopener noreferrer"
-    >profile effects</a
-  >, and
-  <a
-    href="https://support.discord.com/hc/en-us/articles/30408457944215"
-    target="_blank"
-    rel="noopener noreferrer"
-    >nameplates</a
-  >! Nitro members can also claim any Nitro exclusive items while in the Shop! 
-</p>
-<div class="exp-box">
+    >Profile Effects</a
+  >,
   <a
     href="https://support.discord.com/hc/en-us/articles/30408457944215"
     target="_blank"
     rel="noopener noreferrer"
     >Nameplates</a
-  >
-  are currently in experiment and are only available to select users on desktop.
-</div>
+  >, and more. Nitro members enjoy exclusive Shop perks, including special
+  discounts on select items and access to member-only profile items to use with
+  their subscription.
+</p>
 <div class="info-box">
   Items available for purchase in the Shop will change periodically and may be
   available for a limited time. However, any purchased items are yours to keep
@@ -75,7 +121,10 @@
     height="453"
   />
 </p>
-<p>
+<h4 id="h_01JZ9C62ZE17DJ1RA6PM0V2RBV" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Mallow Jump Avatar Decoration in the Shop</span>
+</h4>
+<div class="book-box">
   You can learn more about customizing your profile by heading over to our
   Custom Profiles article
   <a
@@ -84,7 +133,7 @@
     rel="noopener noreferrer"
     >here</a
   >. 
-</p>
+</div>
 <h2 id="h_01J4T4BWARG55JA5T9T9CGJRFW">Shop Bundles</h2>
 <p>
   In the Shop, you’ll also find <strong>Bundles</strong>! Bundles include a
@@ -93,43 +142,123 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25517233437975"
+    src="https://support.discord.com/hc/article_attachments/33244572829207"
     width="624"
-    height="313"
+    height="473"
   />
 </p>
+<h4 id="h_01JZ9C7TH17BMCK6R3MW7XDZW6" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Am I Getting Hacked? Bundle in the Shop</span>
+</h4>
 <div class="warn-box">
-  <strong>Note</strong>: Once you purchase at least one item from a bundle, the
-  bundle will no longer be available for purchase. As a result, you will not be
-  eligible for a discount on the remaining item in the bundle. Furthermore, the
-  bundle will be marked as “partially owned.”
+  <strong>Important</strong>: Once you purchase at least one item from a bundle,
+  the bundle will no longer be available for purchase. As a result, you will not
+  be eligible for a discount on the remaining item in the bundle. Furthermore,
+  the bundle will be marked as “partially owned.”
 </div>
-<h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
-<p id="docs-internal-guid-d5fed4b0-7fff-a231-7cd7-51087e31cc58">
-  Head over to the Shop to start collecting avatar decorations and profile
-  effects! 
+<h2 id="h_01JZ9CB0KZ0NZB7ECSAFY6DEW2">Orbs Exclusives</h2>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  >
+  are rewards you earn by completing
+  <a
+    href="https://support.discord.com/hc/articles/22225719947543"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Quests</a
+  >
+  on Discord. In the Shop, you <em>can</em> spend your hard-earned Orbs on items
+  such as: 
 </p>
+<ul>
+  <li>
+    <strong>Orbs-exclusives: </strong>
+    <ul>
+      <li>
+        <strong>Nitro credits</strong> - Spend your Orbs to purchase
+        <a
+          href="https://support.discord.com/hc/en-us/articles/26362805097623"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Nitro credits</a
+        >
+        for temporary access to Nitro benefits
+      </li>
+      <li>
+        <strong>Exclusive Avatar Decorations and Profile Effects</strong> -
+        Unique items available only through Orbs 
+      </li>
+      <li>
+        <strong>Orbs Profile badge</strong> - a unique badge to add to your
+        collection
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Select items from main collections</strong> - Access popular Shop
+    items without spending money
+  </li>
+</ul>
+<p>You <em>cannot</em> purchase the following items with Orbs: </p>
+<ul>
+  <li>Gifts</li>
+  <li>Partner-branded Shop items</li>
+  <li>Recurring Nitro or Boosting subscriptions</li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244580984855"
+    width="624"
+    height="453"
+  />
+</p>
+<h4 id="h_01JZ9CCJZX6H6DQS7PCM7TAH38" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Orb Exclusive Items in the Shop</span>
+</h4>
+<p><strong>How pricing works:</strong></p>
+<ul>
+  <li>Eligible items show both real-world money and Orb prices</li>
+  <li>
+    When you have enough Orbs, we automatically display the Orbs price first
+  </li>
+</ul>
+<p>
+  To view both pricing options for any item, simply select the item in the Shop
+  to see the complete pricing details.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33244580985239"
+    width="613"
+    height="472"
+  />
+</p>
+<h4 id="h_01JZ9CDHPD3FJ9B5TGXK3WWEF9" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Pricing Options for a Shop Item</span>
+</h4>
+<h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
+<p>Head over to the Shop to start collecting exclusive items on Discord! </p>
 <h2 id="h_01HVHE1RAM3Y86Y72M182775GF">
   <span id="docs-internal-guid-80a013df-7fff-bf2a-521c-bff4299bcea0"
     >Desktop/Browser</span
   >
 </h2>
 <p>
-  <span class="wysiwyg-font-size-large"><strong>Option 1</strong></span>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Navigate to the Shop via Shop Tab</strong></span
+  >
 </p>
 <p>
   1. Navigate to your <strong>Direct Messages list </strong>by selecting the
-  <strong>Discord</strong> <strong>app</strong> icon in the upper-left corner. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25517203372567"
-    width="648"
-    height="454"
-  />
+  <strong>Discord</strong> <strong>app</strong> <strong>icon</strong> in the
+  upper-left corner. 
 </p>
 <p>
-  2. Then, press the <strong>Shop</strong> tab [<img
+  2. Then, press the <strong>Shop</strong> <strong>tab</strong> [<img
     src="https://support.discord.com/hc/article_attachments/25517203373463"
     width="24"
     height="24"
@@ -137,143 +266,115 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25517233440151"
-    width="311"
-    height="366"
+    src="https://support.discord.com/hc/article_attachments/33244580985495"
+    width="624"
+    height="447"
   />
 </p>
-<p id="docs-internal-guid-de74f951-7fff-dd4c-a6a8-4b2abf7618b8">
-  <span class="wysiwyg-font-size-large"><strong>Option 2</strong></span>
+<h4 id="h_01JZ9CG35B7734EZ4M7ANZZQ42" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Navigating to the Shop via Shop Tab</span>
+</h4>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Navigate to the Shop via Shop Banner</strong></span
+  >
 </p>
 <p>
   1. To access your <strong>User Settings, </strong>select the
-  <strong>cogwheel </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/25517203381143"
+  <strong>cogwheel icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/33244572829591"
     width="24"
     height="24"
   />] in the lower-left corner of the app, then navigate to the
   <strong>Profiles </strong>section. 
 </p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25517203391127"
-    width="508"
-    height="497"
-  />
-</p>
-<p class="wysiwyg-text-align-left">
-  2. Once there, you will see the banner to the Shop where you can select
-  <strong>Check it Out</strong>. You can also select
-  <strong>Change Effect </strong>or <strong>Change Decoration </strong>and press
-  the <strong>Shop </strong>icon [<img
-    src="https://support.discord.com/hc/article_attachments/25517233446295"
+<p>
+  2. Once there, you will see the <strong>banner</strong> to the Shop. You can
+  also select <strong>Change Effect, </strong> <strong>Change Decoration</strong
+  >, or <strong>Change Nameplate </strong>and press the
+  <strong>Shop icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/33244580986135"
     width="24"
     height="24"
-  />]. 
+  />].  
+</p>
+<p>
+  3. Once directed to the Shop, you can preview and buy Avatar Decorations,
+  Profile Effects, Nameplates and more to add to your collection!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/25517233450647"
+    src="https://support.discord.com/hc/article_attachments/33244572829975"
     width="624"
-    height="383"
+    height="447"
   />
 </p>
-<p>
-  3. Once directed to the Shop, you can preview and buy avatar decorations,
-  profile effects, and nameplates to add to your collection! 
-</p>
-<p>
-  Head over to the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decorations</a
-  >
-  article, the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17828465914263"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Profile Effects</a
-  >
-  article, and the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/30408457944215"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nameplates</a
-  >
-  article to find steps on how to apply your collection and customize your
-  profile! 
-</p>
+<h4 id="h_01JZ9CHZRQJ29B2ZXSKXW0NQXG" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Navigating to the Shop via Shop Banner</span>
+</h4>
+<div class="tip-box">
+  <strong>Tip</strong>: Orbs Exclusives are only available on the Discord
+  desktop app and browser app. To find them, go to the
+  <strong>Shop</strong> page and select the
+  <strong>Orbs Exclusives tab</strong> at the top.
+</div>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25517203396119"
-    width="600"
-    height="435"
-  />
+  <span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33244580987159"
+      width="624"
+      height="421"
+  /></span>
 </p>
+<h4 id="h_01JZ9CK78KQMWY6QHVTA21E0RE" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Orbs Exclusives Tab in the Shop Page</span>
+</h4>
 <h2 id="h_01J4T4TY98TVE2FGXE2HW9YTPH" class="wysiwyg-text-align-left">
   Mobile
 </h2>
 <p>
   1. To navigate to the Shop on your mobile device, head over to your
-  <strong>User Profile </strong>by selecting your <strong>avatar</strong> icon
-  in the lower right corner. 
+  <strong>User Profile </strong>by selecting your <strong>avatar</strong>
+  <strong>icon</strong> in the lower-right corner. 
 </p>
 <p>
-  2. Then, tap the <strong>Shop</strong> [<img
-    src="https://support.discord.com/hc/article_attachments/22820221364887"
+  2. Then, tap the <strong>Shop</strong> <strong>icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/33244580987287"
     width="24"
     height="24"
-  />] icon in the upper-right corner. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/24913300016535"
-    width="284"
-    height="589"
-  />
+  />] in the upper-right corner. 
 </p>
 <p>
-  3. This will direct you to the Shop where you can preview and buy avatar
-  decorations, profile effects, and nameplates! 
+  3. This will direct you to the Shop where you can preview and buy Avatar
+  Decorations, Profile Effects, Nameplates, and more!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/24913300021143"
-    width="274"
-    height="593"
+    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf91owiEXp7Mffyrleb7VjJJiCFIqqBATI_o6qXDH52vNBKxwLne2nDGzI4M3mYYlLSdrJOWBWoVux-FbNtPdxUqgqBmQYRVNQgbDax8RRUBHRUyT0_-r75YCghaDwsJGc1ZFwM?key=467jZZd0jBMdmye8JfmcFA"
+    width="259"
+    height="538"
   />
 </p>
+<h4 id="h_01JZ9CNH48JC0ATN72GJJG514J" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Navigating to the Shop on Mobile</span>
+</h4>
 <h1 id="h_01J4T4Z6G3GCXP9S76GKGBR98G" class="wysiwyg-text-align-left">
   Gifting from the Shop
 </h1>
-<div class="info-box">
-  Gifting from the Shop is only available on desktop and browser.
-</div>
 <p>
   Along with collecting items for yourself, you can also gift items from the
   Shop to your friends! 
 </p>
 <p>
-  1. Select the item you would like to send and press the
-  <strong>gift</strong> icon [<img
-    src="https://support.discord.com/hc/article_attachments/25517233455127"
+  1. Select the item you would like to send and press the <strong>gift</strong>
+  <strong>icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/33244572830743"
     width="24"
     height="24"
   />] located to the right of the <strong>Buy Decoration </strong>button. You
-  can also select the gift icon within the main Shop page to send a gift. 
+  can also select the gift icon within the main Shop page to send a gift.  
 </p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/25517233457175"
-    width="624"
-    height="475"
-  />
-</p>
-<p id="docs-internal-guid-728f0c68-7fff-e50c-1d4b-f70e617cccab">
+<p>
   2. Then, the <strong>Send a gift </strong>window will appear. While here, you
   will be able to select a card design and customize the gift by adding a
   personal note, a soundboard effect, and an emoji confetti.
@@ -282,8 +383,9 @@
   3. Once you have chosen who you would like to send the gift to and have added
   your personal touches, press <strong>Next </strong>to proceed.
 </p>
+<p>4. And that’s it! You should see a confirmation that your gift was sent.</p>
 <div class="warn-box">
-  <strong>Note</strong>: If your Discord account does not have a previously
+  <strong>Important: </strong>If your Discord account does not have a previously
   saved payment method, you will need to add your payment method details before
   proceeding.
 </div>
@@ -294,61 +396,34 @@
     height="438"
   />
 </p>
-<p id="docs-internal-guid-152b98e9-7fff-6e8d-3e01-9c066ef3758c">
-  And that’s it! You should see a confirmation that your gift was sent. 
-</p>
 <div class="tip-box">
-  Any purchased gifts that haven’t been sent and claimed can be found in your
-  Discord Gift Inventory, which you can find by going to<strong>
-    User Settings &gt; Gift Inventory</strong
-  >. 
+  <strong>Tip</strong>: Any purchased gifts that haven’t been sent and claimed
+  can be found in your Discord Gift Inventory, which you can find by going
+  to<strong> User Settings &gt; Gift Inventory</strong>. 
 </div>
-<h1 id="h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions </h1>
-<p><strong>Q: How do I get a discount on items in the Shop?</strong></p>
-<p>
-  A: Only Nitro members have access to special member pricing in the Shop. You
-  can find more information about Nitro
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. 
-</p>
-<p>
-  <strong
-    >Q: I already have the avatar decoration which is part of a Shop Bundle. Why
-    am I unable to purchase the Shop Bundle to obtain the profile
-    effect? </strong
-  >
-</p>
-<p>
-  A: Shop Bundles allow you to buy two items from the same collection at a
-  discounted price. These bundles are available only if you haven't purchased
-  any of the items included. If you already own one or both items, the bundle
-  will be marked as partially or fully owned, and you won't be able to purchase
-  the remaining item(s) at a discount. In such cases, you'll need to buy the
-  remaining item individually.
-</p>
-<p id="docs-internal-guid-9c48c930-7fff-3935-9058-795b8d132156">
-  <strong>Q: Is localized pricing available for Shop purchases?</strong>
-</p>
-<p>
-  A: Localized pricing is available for Shop purchases in some countries. You
-  should see localized pricing options in the Shop if you are eligible. You can
-  learn more about localized pricing
-  <a
-    href="https://support.discord.com/hc/articles/4407269525911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >. 
-</p>
-<div class="info-box">
-  <strong>Note</strong>: Shop gifts are not available at localized prices.
-  Depending on a user’s region, they may be able to pay for a gift in their
-  local currency, but the price will still be equivalent to the USD price.
-</div>
+<h1 id="h_01JZ9CVVGEJ6JZEYKQPGVH9XJF">Frequently Asked Questions </h1>
+<p>This FAQ is divided into sections:</p>
+<ul>
+  <li>
+    <a href="#h_01JZ9CVVGE6NXPYTCVV3PAM5QF"
+      ><strong>Refunds and Account-related</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9CVVGE6SHSPCED6NRRNP4J"
+      ><strong>Pricing and Discounts</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9CVVGEV9VX1ZQGVC30E94F"
+      ><strong>Bundles and Items</strong></a
+    >
+  </li>
+  <li>
+    <a href="#h_01JZ9CVVGEN1C6Z0ADK3H43J4K"><strong>Gifting</strong></a>
+  </li>
+</ul>
+<h2 id="h_01JZ9CVVGE6NXPYTCVV3PAM5QF">Refunds and Account-related</h2>
 <p><strong>Q: What is your refund policy for Shop purchases?</strong></p>
 <p>
   A: You can find our full refund policy, including Shop purchases and Nitro
@@ -359,18 +434,6 @@
     rel="noopener noreferrer"
     >here</a
   >. 
-</p>
-<p id="docs-internal-guid-7f1a5203-7fff-0964-c4a2-4697b212b222">
-  <strong
-    >Q: I purchased a gift for a friend, but it wasn’t sent to them! Where can I
-    find this missing gift?</strong
-  >
-</p>
-<p>
-  A: If you bought a gift from the Shop but it was not sent to your friend, you
-  can go to <strong>User Settings &gt; Gift Inventory</strong> where you’ll find
-  any purchased but unsent gifts. You can resend those gifts from the
-  <strong>Gift Inventory</strong>!
 </p>
 <p>
   <strong
@@ -393,7 +456,65 @@
   Additionally, you are responsible for maintaining the security of your
   account. 
 </p>
-<p id="docs-internal-guid-5bb8c24f-7fff-9a25-c5f5-2f21c75d8c35">
+<h2 id="h_01JZ9CVVGE6SHSPCED6NRRNP4J">Pricing and Discounts</h2>
+<p><strong>Q: How do I get a discount on items in the Shop?</strong></p>
+<p>
+  A: Only Nitro members have access to special member pricing in the Shop. You
+  can find more information about Nitro
+  <a
+    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >. 
+</p>
+<p><strong>Q: Is localized pricing available for Shop purchases?</strong></p>
+<p>
+  A: Localized pricing is available for Shop purchases in some countries. You
+  should see localized pricing options in the Shop if you are eligible. You can
+  learn more about localized pricing
+  <a
+    href="https://support.discord.com/hc/articles/4407269525911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >. 
+</p>
+<p>
+  Shop gifts are not available at localized prices. Depending on a user’s
+  region, they may be able to pay for a gift in their local currency, but the
+  price will still be equivalent to the USD price.
+</p>
+<h2 id="h_01JZ9CVVGEV9VX1ZQGVC30E94F">Bundles and Items</h2>
+<p>
+  <strong
+    >Q: I already have the avatar decoration which is part of a Shop Bundle. Why
+    am I unable to purchase the Shop Bundle to obtain the profile
+    effect? </strong
+  >
+</p>
+<p>
+  A: Shop Bundles allow you to buy two items from the same collection at a
+  discounted price. These bundles are available only if you haven't purchased
+  any of the items included. If you already own one or both items, the bundle
+  will be marked as partially or fully owned, and you won't be able to purchase
+  the remaining item(s) at a discount. In such cases, you'll need to buy the
+  remaining item individually.
+</p>
+<h2 id="h_01JZ9CVVGEN1C6Z0ADK3H43J4K">Gifting</h2>
+<p>
+  <strong
+    >Q: I purchased a gift for a friend, but it wasn’t sent to them! Where can I
+    find this missing gift?</strong
+  >
+</p>
+<p>
+  A: If you bought a gift from the Shop but it was not sent to your friend, you
+  can go to <strong>User Settings &gt; Gift Inventory</strong> where you’ll find
+  any purchased but unsent gifts. You can resend those gifts from the
+  <strong>Gift Inventory</strong>!
+</p>
+<p>
   <strong
     >Q: What if my friend sends me a gift from the Shop, but I already have the
     item in my collection? </strong
