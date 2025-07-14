@@ -3,56 +3,69 @@
   challenge that can be resolved with the right approach. This article will help
   you understand Discord's rate-limiting system and provide practical solutions.
 </p>
-<h2 id="h_01JY29F3YPMXHFZ23DXKDMSRY1">Content</h2>
-<p>
-  <a href="#h_01JY29F3YPG9CQMDVR84KAYF6D"
-    >Understanding Discord's Rate Limit Types</a
-  >
-</p>
-<p>    <a href="#h_01JY29F3YPJXMAZ5N4MC19HW1N">Global Rate Limits</a></p>
-<p>    <a href="#h_01JY29F3YPZT91B3X4FNQ6AGCB">Per-Route Rate Limits</a></p>
-<p>
-      <a href="#h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</a>
-</p>
-<p>    <a href="#h_01JY29F3YPHEFEQSH1AGCE66TH">Invalid Request Limits</a></p>
-<p>
-  <a href="#h_01JY29F3YPQYYQXCDW7H3PCHV9"
-    >How to Identify Your Rate Limit Issue</a
-  >
-</p>
-<p>
-  <a href="#h_01JY29F3YPR3YQ7G8XZQFB2YPC"
-    >Best Practices for Handling Rate Limits</a
-  >
-</p>
-<p><a href="#h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</a></p>
-<p>
-  <a href="#h_01JY29F3YPHEVS66T9GW4X7078"
-    >Gateway Considerations and Sharding</a
-  >
-</p>
-<h2 id="h_01JY29F3YPG9CQMDVR84KAYF6D">
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01JY29F3YPG9CQMDVR84KAYF6D"
+          >Understanding Discord's Rate Limit Types</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JY29F3YPQYYQXCDW7H3PCHV9"
+          >How to Identify Your Rate Limit Issue</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JY29F3YPR3YQ7G8XZQFB2YPC"
+          >Best Practices for Handling Rate Limits</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</a></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JY29F3YPHEVS66T9GW4X7078"
+          >Gateway Considerations and Sharding</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
+<h1 id="h_01JY29F3YPG9CQMDVR84KAYF6D">
   Understanding Discord's Rate Limit Types
-</h2>
+</h1>
 <p>
   Discord uses multiple types of rate limiting to protect the API. Identifying
   which type you're encountering is crucial for finding the right solution:
 </p>
-<h3 id="h_01JY29F3YPJXMAZ5N4MC19HW1N">Global Rate Limits</h3>
+<h2 id="h_01JY29F3YPJXMAZ5N4MC19HW1N">Global Rate Limits</h2>
 <p><strong>Limit</strong>: 50 requests per second across most endpoints</p>
 <p><strong>Scope</strong>: Applies to your entire application</p>
 <p>
   <strong>Identification</strong>: Look for
   <code>X-RateLimit-Scope: global</code> in response headers
 </p>
-<h3 id="h_01JY29F3YPZT91B3X4FNQ6AGCB">Per-Route Rate Limits</h3>
+<h2 id="h_01JY29F3YPZT91B3X4FNQ6AGCB">Per-Route Rate Limits</h2>
 <p><strong>Limit</strong>: Varies by endpoint</p>
 <p><strong>Scope</strong>: Specific to individual API routes</p>
 <p>
   <strong>Identification</strong>: Check for
   <code>X-RateLimit-Scope: user</code>
 </p>
-<h3 id="h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</h3>
+<h2 id="h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</h2>
 <h4 id="h_01JY29P3H18ERMB01FZFPY7WJR">
   Note: Resource-specific rate Limits can be reached by multiple sources (other
   users, bots, webhooks, etc.) and may not indicate that your application is
@@ -67,7 +80,7 @@
   <strong>Identification</strong>: Look for
   <code>X-RateLimit-Scope: shared</code> in headers
 </p>
-<h3 id="h_01JY29F3YPHEFEQSH1AGCE66TH">Invalid Request Limits</h3>
+<h2 id="h_01JY29F3YPHEFEQSH1AGCE66TH">Invalid Request Limits</h2>
 <p><strong>Limit</strong>: 10,000 invalid requests per 10 minutes</p>
 <p>
   <strong>Common Cause</strong>: Unhandled errors
@@ -79,7 +92,7 @@
   >
 </p>
 <p><strong>Result:</strong> Temporary Cloudflare ban</p>
-<h2 id="h_01JY29F3YPQYYQXCDW7H3PCHV9">How to Identify Your Rate Limit Issue</h2>
+<h2 id="h_01K05KXPJP88KF8X1T7G0AA5FA">How to Identify Your Rate Limit Issue</h2>
 <p>
   The most reliable way to determine which limit you're hitting is by examining
   the HTTP response headers when you receive a 429 status code. Key headers to
@@ -102,17 +115,17 @@
 <p>
   <code>retry_after</code>: Milliseconds to wait before making another request
 </p>
-<h2 id="h_01JY29F3YPR3YQ7G8XZQFB2YPC">
+<h1 id="h_01JY29F3YPR3YQ7G8XZQFB2YPC">
   Best Practices for Handling Rate Limits
-</h2>
-<h3 id="h_01JY29F3YP8CN6HBHEQ6FMRJAP">Implement Proper Backoff Strategies</h3>
+</h1>
+<h2 id="h_01JY29F3YP8CN6HBHEQ6FMRJAP">Implement Proper Backoff Strategies</h2>
 <p>
   Always respect the <code>retry_after</code> value in rate limit responses.
   This tells you exactly how long to wait before retrying.
 </p>
-<h3 id="h_01JY29F3YPE9ZAR0AAEEQG8GAE">
+<h2 id="h_01JY29F3YPE9ZAR0AAEEQG8GAE">
   Consider Using Interactions Where Possible
-</h3>
+</h2>
 <p>
   <a
     href="https://discord.com/developers/docs/interactions/application-commands"
@@ -134,7 +147,7 @@
   Bonus tip: Make Interaction Responses and follow-up messages ephemeral since
   they do not count towards the rate limits.
 </p>
-<h3 id="h_01JY29F3YPZ0CZ313HMYRVWXTK">Cache Data Effectively</h3>
+<h2 id="h_01K05KY4QPWFMYMX1JR80G1FCK">Cache Data Effectively</h2>
 <p>Reduce API calls by caching frequently accessed data, like:</p>
 <ul>
   <li>Guild information</li>
@@ -142,7 +155,7 @@
   <li>User profiles</li>
   <li>Role data</li>
 </ul>
-<h3 id="h_01JY29F3YP5WYRF5FBNWA0M8DT">Use Request Throttling</h3>
+<h2 id="h_01JY29F3YP5WYRF5FBNWA0M8DT">Use Request Throttling</h2>
 <p>
   Throttling is a proactive approach to preventing rate limits by controlling
   the pace of your requests before hitting the limit.
@@ -154,7 +167,7 @@
   requests per second, staying safely below the 50 request limit while ensuring
   all messages are sent in about 5 seconds.
 </p>
-<h2 id="h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</h2>
+<h1 id="h_01JY29F3YP6MFT878JB3TH700K">Global Rate Limits</h1>
 <p>
   If you're hitting global rate limits, your program may have an underlying
   issue that needs to be addressed.
@@ -175,12 +188,12 @@
     >Developer Support</a
   >.
 </p>
-<h2 id="h_01JY29F3YPHEVS66T9GW4X7078">Gateway Considerations and Sharding</h2>
+<h1 id="h_01JY29F3YPHEVS66T9GW4X7078">Gateway Considerations and Sharding</h1>
 <p>
   For bots handling real-time events through Discord's Gateway (websocket
   connection), sharding is essential as your bot grows.
 </p>
-<h3 id="h_01JY29F3YPKDT2E08R6P20M5BJ">What is Sharding?</h3>
+<h2 id="h_01JY29F3YPKDT2E08R6P20M5BJ">What is Sharding?</h2>
 <p>
   Sharding splits your bot into multiple instances, each handling a subset of
   guilds. This distributes the load across multiple websocket connections,
