@@ -28,60 +28,9 @@
     <li>
       <strong
         ><a href="#h_01K059QY6AS9R834JG42ZVEGA8"
-          >Common Questions about the Active Developer Badge</a
+          >FAQs about the Active Developer Badge</a
         ></strong
       > 
-      <ul>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35CQR3WX3AJWDGA9K3"
-              >I'm on a Team, but Can't Claim the Badge</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35J3ECY5XX2KMDWNB0"
-              >What Kinds of Commands Qualify?</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35K51AVNC6XRK2GDJG"
-              >I Ran an Application Command, But It's Still Ineligible</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35CZ3B6BS6WT0SWQEH"
-              >I am Eligible. When Will I Receive the Badge?</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35B9NHG5QV844D1XQY"
-              >I Claimed my Badge, But I Don't Have It</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35BSKQJ33S4F24B1BG"
-              >How do I Switch my Active App?</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01K058ZB35ER091ZH2H8Q0VZPC"
-              >How Do I Remove the Badge?</a
-            ></strong
-          >
-        </li>
-      </ul>
     </li>
     <li>
       <strong
@@ -239,9 +188,13 @@
   />
 </p>
 <h1 id="h_01K059QY6AS9R834JG42ZVEGA8">FAQs on the Active Developer Badge</h1>
-<h3 id="h_01K058ZB35CQR3WX3AJWDGA9K3">
+<p>
+  Have some questions or issues with claiming the Active Developer Badge? Check
+  out these FAQs below to see if they help!
+</p>
+<h2 id="h_01K058ZB35CQR3WX3AJWDGA9K3">
   I'm on a Team, but Can't Claim the Badge
-</h3>
+</h2>
 <p>
   If an app is not owned by you, but you're a team member working on the
   application, you can claim the badge only if it's owned by a Developer Team in
@@ -249,15 +202,15 @@
   need to transfer it to a Developer Team and invite you to that team in order
   to claim the badge.
 </p>
-<h3 id="h_01K058ZB35J3ECY5XX2KMDWNB0">What Kinds of Commands Qualify?</h3>
+<h2 id="h_01K058ZB35J3ECY5XX2KMDWNB0">What Kinds of Commands Qualify?</h2>
 <p>
   Only application commands qualify. This typically refers to slash commands and
   context menu commands. Legacy prefix-based commands do not count, nor do other
   kinds of API interactions such as OAuth calls. 
 </p>
-<h3 id="h_01K058ZB35K51AVNC6XRK2GDJG">
+<h2 id="h_01K058ZB35K51AVNC6XRK2GDJG">
   I Ran an Application Command, But It's Still Ineligible
-</h3>
+</h2>
 <p>
   In order for us to detect command usage, you or at least one person on the
   team that owns the app needs to have "Use data to improve Discord" enabled
@@ -269,9 +222,9 @@
   >. At least 24 hours need to pass after we detect a command, so make sure to
   wait at least 24 hours after enabling this setting before trying again.
 </p>
-<h3 id="h_01K058ZB35CZ3B6BS6WT0SWQEH">
+<h2 id="h_01K058ZB35CZ3B6BS6WT0SWQEH">
   I am Eligible. When Will I Receive the Badge?
-</h3>
+</h2>
 <p>
   The badge is not distributed automatically. In order to claim the Active
   Developer Badge, you must visit the
@@ -286,14 +239,14 @@
     >documented above</a
   >.
 </p>
-<h3 id="h_01K058ZB35B9NHG5QV844D1XQY">
+<h2 id="h_01K058ZB35B9NHG5QV844D1XQY">
   I Claimed my Badge, But I Don't Have It
-</h3>
+</h2>
 <p>
   If you successfully claimed your Active Developer Badge, but you don't see it
   on your Profile, try restarting/refreshing your client.
 </p>
-<h3 id="h_01K058ZB35BSKQJ33S4F24B1BG">How do I Switch my Active App?</h3>
+<h2 id="h_01K058ZB35BSKQJ33S4F24B1BG">How do I Switch my Active App?</h2>
 <p>
   Active status will be maintained
   <span
@@ -303,7 +256,7 @@
     >by any active apps you own or are owned by a team you are on</span
   >. So there is actually no need to switch apps!
 </p>
-<h3 id="h_01K058ZB35ER091ZH2H8Q0VZPC">How Do I Remove the Badge?</h3>
+<h2 id="h_01K058ZB35ER091ZH2H8Q0VZPC">How Do I Remove the Badge?</h2>
 <p>
   If you revisit the
   <a href="https://discord.com/developers/active-developer" target="_self"

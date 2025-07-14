@@ -10,7 +10,7 @@
   >.
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
+  <span class="wysiwyg-font-size-x-large"
     ><strong>Promotion Summary</strong></span
   >
 </p>
@@ -52,9 +52,10 @@
   >
 </p>
 <p>
-  <strong>Requirements:</strong> Claim the promo by purchasing eligible Western
-  Digital products starting <strong>August 1, 2024</strong>, and redeem it in
-  your Discord account by <strong>July 17, 2026</strong>.
+  <strong>Requirements:</strong> Purchase eligible Western Digital products
+  between <strong>August 1, 2024 </strong>and<strong> July 17, 2026</strong>,
+  then redeem the promo in your Discord account by
+  <strong>July 17, 2027</strong>. 
 </p>
 <h3 id="h_01J44VH3T1XM00WE3BT8B4FYR1">
   <strong>NOTE</strong>: This promo is only available to customers who have
@@ -225,7 +226,7 @@
 <p>
   Once you have claimed the promo, you'll now need to officially redeem this
   promo on your Discord account. You must redeem this Nitro trial by
-  <strong>July 17, 2026.</strong>
+  <strong>July 17, 2027</strong>.
 </p>
 <h2 id="h_01J44VH3T183QW62AK2EVSQEXE">
   Eligibility for Redeeming the Nitro Trial
@@ -454,16 +455,16 @@
 <p>
   <strong>A: </strong>Western Digital customers can purchase eligible Western
   Digital products starting on <strong>August 1, 2024,</strong> and redeem it in
-  your Discord account by <strong>July 17, 2026</strong>. 
+  your Discord account by <strong>July 17, 2027</strong>. 
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
   <strong>A:</strong> You must redeem the Nitro promotion by
-  <strong>July 17, 2026</strong>.
+  <strong>July 17, 2027</strong>.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>July 17, 2026</strong>, it will expire and you will no longer be able
+  <strong>July 17, 2027</strong>, it will expire and you will no longer be able
   to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01J44VH3T13T5SBNWRY7BMB3D9">Eligibility for the Promotion</h2>
