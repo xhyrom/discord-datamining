@@ -41722,7 +41722,7 @@ div.mobilePushContainer__3d3b0 {
   height: 100%;
   pointer-events: auto;
   width: 100%;
-  z-index: 999;
+  z-index: 1002;
 }
 .pictureInPictureWindow__6341f {
   position: absolute;
@@ -42015,6 +42015,9 @@ div.mobilePushContainer__3d3b0 {
 }
 .videoControls__2cdb8 {
   background: none;
+}
+.pictureInPictureVideo__29048 {
+  z-index: 1002;
 }
 .loading__6ef4d {
   background: var(--background-base-lower);
@@ -59110,4 +59113,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.bf36b15e0be1045a.css.map*/
+/*# sourceMappingURL=12633.450cc69b576e8b13.css.map*/
