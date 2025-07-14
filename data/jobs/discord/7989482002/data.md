@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Developer Analytics Manager
+## Senior Monetization Analytics Manager
 
 **Location:** San Francisco Bay Area
 
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7989482002](https://discord.com/jobs/7989482002)
 
-**Updated At:** Fri, 11 Jul 2025 21:36:29 GMT
+**Updated At:** Mon, 14 Jul 2025 17:11:55 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.A Senior Developer Analytics Manager at Discord plays a pivotal role in assisting game developers to effectively utilize Discord's suite of developer tools (Social SDK, Collectibles, Activities, and Premium Support). You will be responsible for defining and building our developer analytics and optimization strategy from 0-1 - a significant opportunity to shape Discord's approach to developer success. The primary objectives are to enhance both developer success - through drivers like improved player engagement and retention - and Discord user growth and monetization.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.A Senior Monetization Analytics Manager&amp;nbsp;at Discord plays a pivotal role in assisting game developers to effectively utilize Discord's suite of developer tools (Social SDK, Collectibles, Activities, and Premium Support). You will be responsible for defining and building our developer analytics and optimization strategy from 0-1 - a significant opportunity to shape Discord's approach to developer success. The primary objectives are to enhance both developer success - through drivers like improved player engagement and retention - and Discord user growth and monetization.
 This position is ideal for senior-level professionals who are passionate about data analysis, game economies, live operations, monetization strategies, and strategic problem-solving within the games industry.
 This role offers a unique opportunity to combine senior-level analytical skills with games industry expertise within a team that directly engages in high-level business development and execution. It is well-suited for experienced professionals seeking to build foundational analytical capabilities within the rapidly evolving mobile gaming industry, with the significant opportunity to create our developer analytics strategy from scratch.
 Key Responsibilities
