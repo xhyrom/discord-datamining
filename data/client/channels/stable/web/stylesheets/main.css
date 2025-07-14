@@ -2069,23 +2069,31 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: auto;
 }
 .buttonChildrenWrapper__6af3a {
-  align-items: center;
   border-radius: var(--radius-sm);
   box-sizing: border-box;
-  display: flex;
   justify-content: center;
-  overflow: hidden;
   position: relative;
   width: 100%;
 }
-.buttonChildren__6af3a {
+.buttonChildren__6af3a,
+.buttonChildrenWrapper__6af3a {
   align-items: center;
   display: flex;
+  overflow: hidden;
+}
+.buttonChildren__6af3a {
   gap: var(--space-4);
-  opacity: 1;
+  text-overflow: ellipsis;
   transition:
     opacity 0.2s ease-out,
     transform 0.2s ease-out;
+  white-space: nowrap;
+}
+.icon__6af3a {
+  flex-shrink: 0;
+}
+.buttonChildren__6af3a {
+  opacity: 1;
 }
 .buttonChildren__6af3a.loading__6af3a {
   opacity: 0;
@@ -2389,6 +2397,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .expressiveWrapper__6af3a {
   --__glow-amount: 8px;
   display: flex;
+  max-width: 100%;
   position: relative;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -2396,7 +2405,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .fullWidth__6af3a {
   flex: 1;
-  width: auto;
+  width: 100%;
 }
 .rounded__6af3a {
   border-radius: var(--radius-round);
@@ -11980,6 +11989,7 @@ svg.radioIcon_c1e9c4 {
   color: ButtonText;
   text-decoration: underline;
 }
+.root,
 :root {
   --__spoiler-background-color--hidden: var(--spoiler-hidden-background);
   --__spoiler-background-color--hidden--hover: var(
@@ -36380,6 +36390,10 @@ html:not(.chat-input) .inputInner_b1f01d {
   flex-wrap: wrap;
   gap: 6px;
 }
+.link_d9ba3e:hover {
+  -webkit-text-decoration-color: var(--text-default);
+  text-decoration-color: var(--text-default);
+}
 :where(.contentImage__42bf5) {
   border-radius: var(--radius-xs);
   object-fit: contain;
@@ -57489,6 +57503,66 @@ html.disable-forced-colors * {
   font-weight: 300 800;
   src: url(/assets/943f151cdf1b637e.woff2) format("woff2");
 }
+@font-face {
+  font-family: Bangers;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/97a5dab060f60792.woff2) format("woff2");
+}
+@font-face {
+  font-family: BioRhyme;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/f75115b65a230189.woff2) format("woff2");
+}
+@font-face {
+  font-family: Cherry Bomb One;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/c064d4440a5d10c4.woff2) format("woff2");
+}
+@font-face {
+  font-family: Compagnon;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/3f3231f943ecd459.woff2) format("woff2");
+}
+@font-face {
+  font-family: Chicle;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
+}
+@font-face {
+  font-family: Neo Castel;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/048ee98a65e366a7.woff2) format("woff2");
+}
+@font-face {
+  font-family: Museo Moderno;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/70a13bfa8fb5fd84.woff2) format("woff2");
+}
+@font-face {
+  font-family: Ribes;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/assets/0640a78957378fbd.woff2) format("woff2");
+}
+@font-face {
+  font-family: Pixelify Sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/2836656d4f7513d9.woff2) format("woff2");
+}
+@font-face {
+  font-family: Sinistre;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/bccdc9cd3d272519.woff2) format("woff2");
+}
 :root {
   --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -58670,4 +58744,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.82836f01d5149735.css.map*/
+/*# sourceMappingURL=12633.07d8f127c5774429.css.map*/
