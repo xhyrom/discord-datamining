@@ -11,6 +11,24 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Thing Versus Thing<br /></strong
+  ><strong>Quest Name: Here's The Thing... Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong> Thing Versus Thing </strong
+  >video in Discord to receive a
+  <strong>Premium Mystery Variant and Border.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users on mobile where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Here's The Thing... Quest </strong>can be accepted on the Discord
+  mobile app from <strong>June 15, 2025 </strong>until<strong>
+    June 21, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 31, 2025 (11:59 PM UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Ready or Not Console Trailer<br /></strong
   ><strong>Quest Name: Ready or Not Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>
