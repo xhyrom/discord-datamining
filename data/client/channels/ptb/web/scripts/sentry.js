@@ -3046,6 +3046,10 @@
             MESSAGE_DELETE_UPLOAD: (t) => "/attachments/".concat(t),
             MESSAGE_CROSSPOST: (t, e) =>
               "/channels/".concat(t, "/messages/").concat(e, "/crosspost"),
+            AI_TITLE: "/ai/title",
+            AI_TRANSLATE: "/ai/translate",
+            AI_FIX_GRAMMAR: "/ai/fix-grammar",
+            AI_POLL_SUGGESTIONS: "/ai/poll-suggestions",
             MESSAGE_LOG_PRIVATE_CHANNELS: "/messages-log/private-channels/get",
             MESSAGE_LOG_GUILD_CHANNELS: "/messages-log/guild-channels/get",
             BACKGROUND_SYNC: "/users/@me/background-sync",
@@ -4611,6 +4615,7 @@
           (r.ANDROID_JANK_STATS = "android_jank_stats"),
           (r.APP_JS_STALLED = "app_js_stalled"),
           (r.LIBDISCORE_LOADED = "libdiscore_loaded"),
+          (r.LIBDISCORE_KV_DUAL_READ_ERROR = "libdiscore_kv_dual_read_error"),
           (r.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (r.REGISTER_INPUT_BLUR = "register_input_blur"),
           (r.SESSION_START = "session_start"),
@@ -4853,6 +4858,7 @@
           (r.GUILD_VIEWED = "guild_viewed"),
           (r.GUILD_VIEWED_CLICKSTREAM = "guild_viewed_clickstream"),
           (r.WAVE_CTA_CLICKED = "wave_cta_clicked"),
+          (r.FRIENDS_LIST_CLICKED = "friends_list_clicked"),
           (r.FRIENDS_LIST_VIEWED = "friends_list_viewed"),
           (r.FRIENDS_LIST_VIEWED_CLICKSTREAM =
             "friends_list_viewed_clickstream"),
@@ -5187,6 +5193,8 @@
           (r.EXPERIMENT_FETCH_IGNORED = "experiment_fetch_ignored"),
           (r.EXPERIMENT_USER_EVALUATION_EXPOSED =
             "experiment_user_evaluation_exposed"),
+          (r.EXPERIMENT_USER_EXPOSURE_SUPPRESSED =
+            "experiment_user_exposure_suppressed"),
           (r.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED =
             "guild_insights_settings_cta_clicked"),
           (r.GUILD_SETTINGS_DISCOVERY_VIEWED =
@@ -6835,7 +6843,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-14-76e177e695cd09b19086c377901b6a0923cc3daa-discord_web",
+              "2025-07-15-276cad36b34fd0103dbbec03dfb81eff68e361fe-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6901,8 +6909,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "418576"),
-            o.YA("builtAt", String("1752477519952"));
+            o.YA("buildNumber", "419057"),
+            o.YA("builtAt", String("1752563933444"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48199,4 +48207,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.0513a6729b816da5.js.map
+//# sourceMappingURL=sentry.19a28a0b257169fe.js.map
