@@ -11,6 +11,59 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Ready or Not Console Trailer<br /></strong
+  ><strong>Quest Name: Ready or Not Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    Ready or Not Console Trailer </strong
+  >in Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to users
+  that are 18+ on the desktop app or browser client where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>Ready or Not Quest </strong>can be accepted on Discord the
+  <strong>desktop</strong> <strong>app</strong> or<strong>
+    browser client</strong
+  >
+  from <strong>July 15, 2025 </strong>until<strong>
+    July 21, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 21, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: The Bad Guys 2<br /></strong
+  ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>The Bad Guys 2 </strong>trailer
+  in Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to users
+  in the <strong>United States</strong> on the desktop app or browser client
+  where <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong>
+  <strong>The Bad Guys 2 Quest </strong>can be accepted on Discord the
+  <strong>desktop</strong> <strong>app</strong> or<strong>
+    browser client</strong
+  >
+  from <strong>July 15, 2025 </strong>until<strong>
+    July 21, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 21, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Marvel Rivals<br /></strong
   ><strong>Quest Name: Marvel Rivals s3.0 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
