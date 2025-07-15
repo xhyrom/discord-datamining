@@ -6384,6 +6384,7 @@
             twitch: "Twitch",
             epic: "Epic",
             nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
+            roblox: "Roblox",
           }),
           Object.freeze({
             esc: 9,
@@ -6845,7 +6846,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f2291a2d4f045c1e8446075cdf022579da09eb0d",
+            release: "discord_web-bb1ee71b624c6f123317645b08e92f957d35e7f1",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6911,8 +6912,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "419258"),
-            o.YA("builtAt", String("1752607022025"));
+            o.YA("buildNumber", "419271"),
+            o.YA("builtAt", String("1752607936204"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48209,4 +48210,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.084e0f302a3ad7e6.js.map
+//# sourceMappingURL=sentry.b2d1aadfa31e63be.js.map
