@@ -2,7 +2,7 @@
 
 ## Senior Software Engineer, Data Platform
 
-**Location:** San Francisco, CA
+**Location:** San Francisco Bay Area
 
 **Id:** 8005871002 <br/>
 **Internal Job Id:** 6167601002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8005871002](https://discord.com/jobs/8005871002)
 
-**Updated At:** Fri, 11 Jul 2025 01:37:30 GMT
+**Updated At:** Mon, 14 Jul 2025 23:29:56 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an accomplished and experienced Senior Software Engineer to join our dynamic team. In this role, you will be responsible for designing, developing, and maintaining our data infrastructure and services. You will collaborate with cross-functional teams, including data engineers, data scientists, software engineers, and product managers, to deliver modern and bleeding-edge solutions that drive business insights and innovation. This role reports to our Director of Engineering, Data Platform.
