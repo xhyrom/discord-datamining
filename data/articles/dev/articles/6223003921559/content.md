@@ -66,11 +66,11 @@
   <code>X-RateLimit-Scope: user</code>
 </p>
 <h2 id="h_01JY29F3YPDBQP2YMHZJN84VR3">Resource-Specific Rate Limits</h2>
-<h4 id="h_01JY29P3H18ERMB01FZFPY7WJR">
-  Note: Resource-specific rate Limits can be reached by multiple sources (other
-  users, bots, webhooks, etc.) and may not indicate that your application is
-  solely responsible.
-</h4>
+<div class="info-box">
+  Resource-specific rate limits can be reached by multiple sources (other users,
+  bots, webhooks, etc.) and may not indicate that your application is solely
+  responsible.
+</div>
 <p>
   <strong>Limit</strong>: Independent limits for specific guilds, channels, or
   webhooks
