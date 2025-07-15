@@ -50,6 +50,26 @@
       </ul>
     </li>
     <li>
+      <a href="#h_01K058KRRWBGD0CMR2FVTDXMQJ"
+        ><strong>Browsing in the Shop</strong></a
+      >
+      <ul>
+        <li>
+          <a href="#h_01K058PPFEC3CEJ2VF5XA8QNAD"><strong>Sort By</strong></a>
+        </li>
+        <li>
+          <a href="#h_01K058PPFEZ57GPXW9AEM49RCV"
+            ><strong>Show Filters</strong></a
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K058PPFENDQRWK2WH629A9ZT">Search the Shop</a></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
       <strong
         ><a href="#h_01J4T4Z6G3GCXP9S76GKGBR98G"
           >Gifting from the Shop</a
@@ -357,6 +377,99 @@
 </p>
 <h4 id="h_01JZ9CNH48JC0ATN72GJJG514J" class="wysiwyg-text-align-center">
   <span style="color: #666666">Navigating to the Shop on Mobile</span>
+</h4>
+<h1 id="h_01K058KRRWBGD0CMR2FVTDXMQJ">Browsing the Shop</h1>
+<div class="exp-box">
+  The <strong>Browse tab</strong> is an experimental feature currently available
+  on the desktop app only.
+</div>
+<p>
+  In the Shop, select the <strong>Browse</strong> <strong>tab</strong> to view
+  available Shop items by category.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33465773702551"
+    width="624"
+    height="345"
+  />
+</p>
+<h4 id="h_01K058NTXS07G98DKHX4EDG860" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Browse Tab in the Shop</span>
+</h4>
+<p>
+  From the Browse tab, you can sort items and apply filters using the
+  <strong>Sort By</strong> and <strong>Show Filters</strong> options. 
+</p>
+<h2 id="h_01K058PPFEC3CEJ2VF5XA8QNAD">Sort By</h2>
+<p>
+  To sort items, select the <strong>Sort By</strong>
+  <strong>button</strong> above the <strong>Drops</strong>
+  <strong>banner</strong> in the upper-right corner (it may display as
+  <strong>Recently Added</strong>). 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33465773704215"
+    width="624"
+    height="353"
+  />
+</p>
+<h4 id="h_01K058PPFE9X4MVQ0V3EN6CHAY" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Sort by Dropdown in the Shop</span>
+</h4>
+<h2 id="h_01K058PPFEZ57GPXW9AEM49RCV">Show Filters</h2>
+<p>
+  To filter items, a sidebar should automatically open when you navigate to the
+  <strong>Browse</strong> <strong>tab</strong>. If it doesn’t appear, press the
+  <strong>Show Filters</strong> <strong>button</strong> located above the
+  <strong>Drops</strong> <strong>banner</strong> in the upper-right corner. You
+  can then select from options like <strong>Show only</strong>,
+  <strong>Color</strong>, and <strong>Themes</strong>.    
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33465743791639"
+    width="624"
+    height="396"
+  />
+</p>
+<h4 id="h_01K058PPFEZHEBJEFCFPP6R0C8" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Filtering in the Shop</span>
+</h4>
+<div class="tip-box">
+  <strong><span style="color: #434343">Tip</span></strong
+  ><span style="color: #434343">: Select </span
+  ><strong><span style="color: #434343">Clear all filters</span></strong
+  ><span style="color: #434343">
+    in the filters sidebar to reset your selection.</span
+  >
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/33465773706263"
+      width="624"
+      height="539"
+    />
+  </p>
+  <h4 id="h_01K058PPFEWVYQP78MGCG7HAH1" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Clear all filters Button</span>
+  </h4>
+</div>
+<h2 id="h_01K058PPFENDQRWK2WH629A9ZT">Search the Shop</h2>
+<p>
+  To search for specific items or keywords, use the
+  <strong>search bar</strong> in the upper-right corner of the
+  <strong>Shop page</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33465743795863"
+    width="624"
+    height="488"
+  />
+</p>
+<h4 id="h_01K058PPFEFS0SC692MSHHEEEM" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Search Bar in the Shop</span>
 </h4>
 <h1 id="h_01J4T4Z6G3GCXP9S76GKGBR98G" class="wysiwyg-text-align-left">
   Gifting from the Shop
