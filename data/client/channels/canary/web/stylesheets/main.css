@@ -22806,6 +22806,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   position: absolute;
   transition: opacity 0.3s;
 }
+.diversitySelector_a45a2a {
+  position: relative;
+}
 .diversitySelectorButton_a45a2a {
   cursor: pointer;
   height: var(--custom-emoji-picker-constants-diversity-emoji-size);
@@ -22818,12 +22821,8 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 11px;
-  top: 19px;
-}
-.diversitySelectorOptionsHasTabWrapper_a45a2a {
-  right: 11px;
-  top: 3px;
+  right: -5px;
+  top: -5px;
 }
 .diversityEmojiItem_a45a2a {
   background-position: 50%;
@@ -22907,6 +22906,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   border-top-right-radius: var(--custom-emoji-picker-border-radius);
   box-shadow: none;
   display: flex;
+  gap: var(--space-12);
   grid-column: 1/3;
   margin: 0 -1px;
   padding: var(--custom-gif-picker-gutter-size);
@@ -22929,7 +22929,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .searchBar_c0e32c {
   flex: 1;
-  margin-right: var(--space-12);
 }
 .searchBarFullRow_c0e32c {
   grid-column: 1/3;
@@ -22965,9 +22964,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .inspector_c0e32c {
   grid-column: 2/3;
   grid-row: 3/4;
-}
-.burstToggle_c0e32c {
-  margin-right: 12px;
 }
 .enable-forced-colors .header_c0e32c {
   border-bottom: 1px solid CanvasText;
@@ -25675,28 +25671,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   display: flex;
   flex-direction: row;
   gap: var(--space-4);
-}
-@value navTabHeight: 34px;
-.addEmojiButton__08434 {
-  height: 34px;
-  margin-left: auto;
-}
-.emojiStudioActive__08434 {
-  grid-template-rows: 34px auto;
-  grid-row-gap: 12px;
-}
-.emojiStudioActive__08434.contentWrapper__08434 {
-  border-radius: var(--radius-lg);
-}
-.emojiStudioActive__08434 .navItem__08434 {
-  line-height: 34px;
-  padding: 0 12px;
-}
-.emojiStudioActive__08434 .navItem__08434 + .navItem__08434 {
-  margin: 0;
-}
-.emojiStudioActive__08434 .navList__08434 {
-  gap: 8px;
 }
 .userTooltip__6b453 {
   align-items: center;
@@ -59158,4 +59132,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3314d256288c55e0.css.map*/
+/*# sourceMappingURL=12633.99b165f269f891bc.css.map*/
