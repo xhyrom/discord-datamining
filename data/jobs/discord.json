@@ -194,12 +194,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": null,
+          "value": "Data Science & Data Engineering",
           "value_type": "single_select"
         }
       ],
       "id": 8016581002,
-      "updated_at": "2025-07-15T13:07:56-04:00",
+      "updated_at": "2025-07-15T18:35:35-04:00",
       "requisition_id": "R-100942",
       "title": "Data Scientist, Analytics",
       "company_name": "Discord",
