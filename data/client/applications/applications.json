@@ -3416,8 +3416,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -3471,8 +3471,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147483648"
     },
@@ -3627,8 +3627,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -3710,6 +3710,71 @@
     ]
   },
   {
+    "id": "1314395942253756416",
+    "name": "Marvel Rivals",
+    "icon": "2dd7882b887306ab5afad03452869ad8",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2767030",
+        "sku": "2767030",
+        "distributor": "steam"
+      },
+      {
+        "id": "294041",
+        "sku": "294041",
+        "distributor": "igdb"
+      }
+    ],
+    "bot": {
+      "id": "1314395942253756416",
+      "username": "Marvel Rivals",
+      "global_name": null,
+      "avatar": "2dd7882b887306ab5afad03452869ad8",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6563",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Marvel Rivals",
+      "マーベル・ライバルズ"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "marvelrivals/marvelrivals_launcher.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/marvel-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9e326496d5b0a1daa10a4c74cb8ecec33282af2f8426007f65e01d04a3ea289e",
+    "flags": 0
+  },
+  {
     "id": "356869127241072640",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
@@ -3728,13 +3793,23 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -3746,16 +3821,6 @@
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3804,7 +3869,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3813,23 +3883,18 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -3922,14 +3987,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "262186",
-        "sku": "262186",
-        "distributor": "igdb"
-      },
-      {
         "id": "2507950",
         "sku": "2507950",
         "distributor": "steam"
+      },
+      {
+        "id": "262186",
+        "sku": "262186",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -3957,17 +4022,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/deltaforceclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
@@ -3977,7 +4037,12 @@
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
+        "name": "df_garena/deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -4037,13 +4102,13 @@
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -4180,6 +4245,47 @@
     "flags": 2945024
   },
   {
+    "id": "363445589247131668",
+    "name": "Roblox",
+    "icon": "f2b60e350a2097289b3b0b877495e55f",
+    "description": "Roblox is a free Massive Multiplayer Online Game, where you play in user-created worlds with blocks and physics.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "e970e33dd647f87dc87f4dc4b28f4627",
+    "overlay_methods": 1,
+    "hook": true,
+    "aliases": [
+      "Roblox"
+    ],
+    "guild_id": "150074202727251969",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "roblox.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "roblox.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "80a23c75a38f156e1fd650fd046334916a91e69470f9efae2703186e53958cd4",
+    "flags": 0
+  },
+  {
     "id": "834488117758001152",
     "name": "Stage Channels",
     "icon": null,
@@ -4235,17 +4341,7 @@
     "executables": [
       {
         "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
         "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -4255,13 +4351,23 @@
       },
       {
         "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
       },
       {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
