@@ -11,6 +11,34 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Nobody 2 BTS<br /></strong
+  ><strong>Quest Name: Nobody 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>Nobody 2 BTS</strong> video in
+  Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to users
+  that are 18+ and in the <strong>United States</strong> on the desktop app or
+  browser client where <strong>Discord</strong> is available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The<strong> Nobody 2 Quest </strong>can be accepted on Discord the
+  <strong>desktop</strong> <strong>app</strong> or<strong>
+    browser client</strong
+  >
+  from <strong>July 16, 2025 </strong>until<strong>
+    July 23, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 23, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Thing Versus Thing<br /></strong
   ><strong>Quest Name: Here's The Thing... Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong> Thing Versus Thing </strong
