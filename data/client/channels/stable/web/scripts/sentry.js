@@ -5086,6 +5086,7 @@
             "gift_intent_action_button_clicked"),
           (r.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED =
             "gift_intent_card_secondary_cta_clicked"),
+          (r.GIFT_INFO_OPTIONS_MISSING = "gift_info_options_missing"),
           (r.GIFT_PROMOTION_REWARD_SELECTED = "gift_promotion_reward_selected"),
           (r.SLASH_COMMAND_USED = "slash_command_used"),
           (r.KEYBOARD_SHORTCUT_USED = "keyboard_shortcut_used"),
@@ -5107,6 +5108,9 @@
             "search_results_feedback_entrypoint_viewed"),
           (r.SEARCH_MESSAGES_CHANNEL_PREFILL =
             "search_messages_channel_prefill"),
+          (r.SEARCH_MESSAGES_AUTOCOMPLETE_CLICKED =
+            "search_messages_autocomplete_clicked"),
+          (r.SEARCH_HISTORY_CLICKED = "search_history_clicked"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
           (r.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -6381,6 +6385,7 @@
             twitch: "Twitch",
             epic: "Epic",
             nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
+            roblox: "Roblox",
           }),
           Object.freeze({
             esc: 9,
@@ -6843,7 +6848,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-15-ab03e23c2c11fef04fb533ae65d185bed8eb64b1-discord_web",
+              "2025-07-16-6fde8596bf041ce5ec66118a64f780ef4ab116fb-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6909,8 +6914,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "419434"),
-            o.YA("builtAt", String("1752619733241"));
+            o.YA("buildNumber", "419731"),
+            o.YA("builtAt", String("1752689761765"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48207,4 +48212,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ebc09207eb5be3cb.js.map
+//# sourceMappingURL=sentry.cd23d0908b9ca18c.js.map
