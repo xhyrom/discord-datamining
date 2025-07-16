@@ -1850,6 +1850,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   max-height: 100%;
   max-width: 100%;
 }
+.headerGraphic__53cea .lottie__53cea {
+  height: 100%;
+  max-width: 100%;
+}
 .headerLeading__53cea,
 .headerLeadingSpacer__53cea {
   margin-left: calc((var(--custom-modal-padding) - var(--space-8)) * -1);
@@ -59307,4 +59311,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.28106c5475d56351.css.map*/
+/*# sourceMappingURL=12633.2cfd7d42aeb56140.css.map*/
