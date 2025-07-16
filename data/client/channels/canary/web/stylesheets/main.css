@@ -16356,6 +16356,23 @@ svg.radioIcon_c1e9c4 {
 .sinistre__89a31 {
   font-family: Sinistre, Arial, sans-serif;
 }
+.container_dfb989 {
+  display: inline-block;
+}
+.forceAnimate_dfb989 .container_dfb989.gradient_dfb989,
+.forceAnimate_dfb989 .container_dfb989.neon_dfb989,
+.forceAnimate_dfb989 .container_dfb989.pop_dfb989,
+.forceAnimate_dfb989 .container_dfb989.toon_dfb989,
+.showEffect_dfb989.gradient_dfb989,
+.showEffect_dfb989.neon_dfb989,
+.showEffect_dfb989.pop_dfb989,
+.showEffect_dfb989.toon_dfb989 {
+  color: var(--custom-effect-color);
+}
+.animated_dfb989,
+.forceAnimate_dfb989 .container_dfb989 {
+  animation: animated_dfb989 1s forwards;
+}
 .guildIconImage_d28ae0 {
   height: 100%;
   object-fit: cover;
@@ -34155,23 +34172,6 @@ body .headerAnimation_b54a5b {
 }
 .infoSpacing_f4bc97 {
   margin-left: 5px;
-}
-.container_dfb989 {
-  display: inline-block;
-}
-.forceAnimate_dfb989 .container_dfb989.gradient_dfb989,
-.forceAnimate_dfb989 .container_dfb989.neon_dfb989,
-.forceAnimate_dfb989 .container_dfb989.pop_dfb989,
-.forceAnimate_dfb989 .container_dfb989.toon_dfb989,
-.showEffect_dfb989.gradient_dfb989,
-.showEffect_dfb989.neon_dfb989,
-.showEffect_dfb989.pop_dfb989,
-.showEffect_dfb989.toon_dfb989 {
-  color: var(--custom-effect-color);
-}
-.animated_dfb989,
-.forceAnimate_dfb989 .container_dfb989 {
-  animation: animated_dfb989 1s forwards;
 }
 .container__63ed3 {
   --custom-nickname-line-height: 24px;
@@ -59319,4 +59319,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7ed6719c8bb53d52.css.map*/
+/*# sourceMappingURL=12633.615a62916787bd49.css.map*/
