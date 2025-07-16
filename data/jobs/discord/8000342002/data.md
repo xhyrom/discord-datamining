@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8000342002](https://discord.com/jobs/8000342002)
 
-**Updated At:** Fri, 11 Jul 2025 01:38:19 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Senior Revenue Accountant will take on the month-end revenue close process and prepare workpapers to ensure revenue numbers are in accordance with U.S GAAP each period. You will assist in SOX compliance and ensure controls are being effectively performed and documented. You will work with the team to identify inefficiencies and work cross-functionally with our business partners to streamline the revenue reporting process. As the company grows, you will have the opportunity to help develop our accounting policies, in accordance with U.S GAAP, for new revenue streams. This hire will report to the Senior Manager of Revenue Accounting.&amp;nbsp;

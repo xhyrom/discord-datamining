@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7989482002](https://discord.com/jobs/7989482002)
 
-**Updated At:** Mon, 14 Jul 2025 17:11:55 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.A Senior Monetization Analytics Manager&amp;nbsp;at Discord plays a pivotal role in assisting game developers to effectively utilize Discord's suite of developer tools (Social SDK, Collectibles, Activities, and Premium Support). You will be responsible for defining and building our developer analytics and optimization strategy from 0-1 - a significant opportunity to shape Discord's approach to developer success. The primary objectives are to enhance both developer success - through drivers like improved player engagement and retention - and Discord user growth and monetization.

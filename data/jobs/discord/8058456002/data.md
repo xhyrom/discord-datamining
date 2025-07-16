@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8058456002](https://discord.com/jobs/8058456002)
 
-**Updated At:** Tue, 01 Jul 2025 16:02:32 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Join our team as a full-stack Staff Software Engineer focused on UI and Interactions. In this role, you will lead the creation of beautiful, intuitive user interfaces across Discord's web and mobile platforms. We're looking for someone with deep expertise in React who is passionate about design, animations, and user interactions, is excited to build world-class user experiences, and is comfortable navigating the entire technical stack. This role reports to one of our engineering leaders on our Core Product team. If you love crafting pixel-perfect UI, seamless user experiences, and scalable front-end architecture, we'd love to hear from you!

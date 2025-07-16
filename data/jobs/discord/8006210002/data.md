@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8006210002](https://discord.com/jobs/8006210002)
 
-**Updated At:** Fri, 11 Jul 2025 01:39:01 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a passionate and experienced Senior Financial Analyst to join our growing Finance team. The Finance organization at Discord is responsible for planning, forecasting, and strategic analysis. Senior Legal, Safety, and People leadership rely on the Finance organization to develop actionable insights, steer headcount, legal, and operations investment decisions, and build scalable financial reporting solutions.

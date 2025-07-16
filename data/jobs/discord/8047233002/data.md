@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8047233002](https://discord.com/jobs/8047233002)
 
-**Updated At:** Thu, 10 Jul 2025 22:00:04 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a talented Software Engineer to join our Subscriptions team. In this role, you'll help build the revenue infrastructure that powers&amp;nbsp;Nitro, Boosts, and many other Discord products. You’ll work cross-functionally with Product, Data Science, Design, and other teams to create best in class experiences for our users and accelerate product development teams. To learn more about Discord Engineering, take a look at our&amp;nbsp;engineering blog!

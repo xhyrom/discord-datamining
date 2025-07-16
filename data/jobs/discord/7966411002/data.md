@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7966411002](https://discord.com/jobs/7966411002)
 
-**Updated At:** Fri, 11 Jul 2025 01:26:23 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Power real-time conversations for 200+ million users worldwide. Discord's AV Client engineering team supports the ultra-low-latency media infrastructure that enables seamless voice and video communication across gaming, communities, and friendships. The team’s mission is to give our users an outstanding voice, video, and client experience across all of our platforms.

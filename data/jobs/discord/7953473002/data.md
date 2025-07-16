@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7953473002](https://discord.com/jobs/7953473002)
 
-**Updated At:** Fri, 11 Jul 2025 01:23:28 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Staff Audio &amp;amp; Video Infrastructure Engineer excited about building the software that powers our realtime communication infrastructure. The Audio &amp;amp; Video Infrastructure team builds and maintains our WebRTC-based systems and scales the infrastructure that enables millions of concurrent voice and video conversations. Your role will have significant impact on the quality of experience for Discord users and will involve architecting solutions for our next-generation edge computing infrastructure. This opportunity calls for an engineer ready to tackle challenging problems, drive improvements, and contribute to the technology that connects millions of people globally.

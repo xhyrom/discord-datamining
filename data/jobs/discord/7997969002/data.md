@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7997969002](https://discord.com/jobs/7997969002)
 
-**Updated At:** Sat, 12 Jul 2025 00:58:46 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re currently looking to hire a Staff Software Engineer on our Discovery/Engagement ML team. This team applies Machine Learning to unlock impactful and new possibilities that drive user engagement, growth, understanding and personalization. We design and implement end-to-end ML solutions that help users discover and navigate the rich, diverse content across our platform. If this excites you, keep reading!

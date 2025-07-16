@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8037496002](https://discord.com/jobs/8037496002)
 
-**Updated At:** Thu, 10 Jul 2025 21:52:48 GMT
+**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Trust &amp;amp; Safety Strategy &amp;amp; Operations team is seeking a highly motivated Senior Program Manager to lead our Business Operations &amp;amp; Wellness initiatives. In this role, you will be responsible for enhancing the operational efficiency of the Trust &amp;amp; Safety organization while championing our wellness programs that ensure the resilience and sustainability of our teams. This position will serve as the connective tissue between leadership, cross-functional partners, and team members, driving strategic initiatives that strengthen our operational foundation and team culture.
