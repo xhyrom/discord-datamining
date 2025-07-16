@@ -266,9 +266,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/33244208618903"
+      src="https://support.discord.com/hc/article_attachments/33511693647895"
       width="624"
-      height="585"
+      height="652"
   /></span>
 </p>
 <h4 id="h_01JZ9APQ8PJEG56K5J553BDZER" class="wysiwyg-text-align-center">
