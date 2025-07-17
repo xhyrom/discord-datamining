@@ -42091,7 +42091,7 @@ div.mobilePushContainer__3d3b0 {
   --custom-chat-input-margin-bottom: 24px;
 }
 .align-chat-input .content__0bd4a {
-  --custom-chat-input-margin-bottom: 8px;
+  --custom-chat-input-margin-bottom: var(--space-xs);
 }
 @keyframes pulse__7135b {
   0% {
@@ -62202,4 +62202,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9b7df50ce1a32f33.css.map*/
+/*# sourceMappingURL=12633.e3a91e71d44c303c.css.map*/
