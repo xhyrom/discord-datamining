@@ -128,8 +128,8 @@
   If the Charges are on Your Own Discord Account
 </h2>
 <p>
-  First, check if the unrecognized charges appear on your own Discord account.
-  If so, follow these steps: 
+  Check if the unrecognized charges appear on your own Discord account. If so,
+  follow these steps: 
 </p>
 <p>
   1. Submit a ticket using our
