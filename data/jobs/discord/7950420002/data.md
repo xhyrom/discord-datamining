@@ -10,14 +10,14 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7950420002](https://discord.com/jobs/7950420002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Thu, 17 Jul 2025 20:25:23 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing our relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who is passionate about games, the game industry, and helping game companies market to the players who are most passionate about their games.&amp;nbsp;
-You will harness your prior experience in advertising/media/marketing spaces and bring a combination of relationship building, industry relationships, product insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region.&amp;nbsp;
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Crossplatform Gaming Account Manager who is passionate about managing, maintaining and growing relationships in our newly formed Gaming Advertising Solutions business line, Quests. We are seeking a client services-focused team player who can leverage their expertise in digital advertising to help game companies market to the players who are most passionate about their games.
+You will harness your prior experience in advertising, media, or digital marketing and bring a combination of relationship building, analytical insights, and an ability to win, optimize and expand a recurring book of business with clients. You will report into the Director of Sales, Gaming Advertising Solutions and support the West region.
 What you'll be doing
 
-Drive overall client success and own responsibility for the performance of advertising campaigns
+Drive overall client success and own responsibility for the performance of advertising campaigns for crossplatform gaming clients
 Manage day-to-day communications around clients and their accounts both internally and externally
 Provide quantitative and qualitative reports to drive continuous improvement, optimization, and innovation for key accounts and earn repeat business
 Work with the Sales team and cross-functional colleagues including product, marketing, operations, and data science to ensure client success and achieve defined KPIs
@@ -26,20 +26,27 @@ Build strong relationships with clients, understand their businesses and upsell 
 
 What you should have
 
-5+ years experience as an Account Manager with crossplatform gaming clients
-Deep understanding of the Gaming landscape and digital media including formats &amp;amp; buying tactics
-Understanding of how the Gaming advertisers measure media across app and web and any relevant third party tools
-Fluency across full-funnel campaigns e.g. brand, mid and lower funnel
-Ability to build strong relationships with partners/clients and influence buying decisions
-Expertise in putting together client reporting such as wrap reports &amp;amp; QBRs
-Ability to tell a story with data through data trend analysis and presentations
-Strong technical understanding and ability to troubleshoot
+6+ years experience as an Account Manager in advertising, media, or digital marketing with quota-carrying responsibility
+Gaming industry experience (1+ years) OR strong background in transferable digital verticals such as media &amp;amp; entertainment, apps, fintech, or real money gaming
+Deep understanding of measurement landscape including experience with&amp;nbsp; MMPs, conversion APIs, pixels, and attribution tools
+Programmatic and full-funnel campaign expertise - experience with biddable media platforms, auction-based systems, and managing both performance (CPA/ROAS) and brand awareness campaigns
+Strong analytical and data analysis skills with ability to derive actionable insights from campaign performance data
+Exceptional storytelling and presentation abilities - can craft compelling narratives from data and performance metrics to drive client decisions
+Understanding of digital media formats, buying tactics, and campaign optimization strategies
+Technical aptitude for troubleshooting campaign issues and problem-solving
 Willingness to travel for regional in-person client meetings
+
+Ideal Background Includes
+
+Large Customer Sales (LCS) or Mid-Market experience at major advertising platforms (Meta, Google, Amazon, Apple, Unity, Reddit, Snap)
+Experience with cross-platform campaigns spanning mobile, web, and console, working with gaming clients across mobile, AAA publishers, and/or indie developers
 
 Bonus Points
 
-Self service experience
+Self-service platform experience (DSPs, programmatic platforms)
 Deep knowledge and usage of Discord
+Gaming industry network and relationships
+Experience with measurement partners (Adjust, AppsFlyer, Branch, etc.)
 Team player with a sense of humor, humility and empathy
 
 Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.
