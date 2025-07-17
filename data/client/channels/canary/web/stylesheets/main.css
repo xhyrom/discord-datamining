@@ -25559,8 +25559,8 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   box-sizing: border-box;
   display: grid;
   flex: 1 1 auto;
-  grid-template-rows: 24px auto;
-  grid-row-gap: 8px;
+  grid-template-rows: 30px auto;
+  grid-row-gap: 12px;
   background-color: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -25589,10 +25589,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .navButton__08434 {
   border-radius: var(--radius-sm);
   color: var(--text-default);
+  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
-  padding: 4px 12px;
+  padding: 8px 12px;
   transition:
     background-color 0.1s ease-in-out,
     color 0.1s ease-in-out;
@@ -62201,4 +62202,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.ed5919b96356d04e.css.map*/
+/*# sourceMappingURL=12633.9b7df50ce1a32f33.css.map*/
