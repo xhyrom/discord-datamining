@@ -4065,6 +4065,8 @@
               "/safety-flows/resend/email/reverification/pincode",
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
             APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
+            GUILD_MIGRATE_PIN_PERMISSION: (t) =>
+              "/guilds/".concat(t, "/migrate-pin-permission"),
           }),
           f = Object.freeze({
             INDEX: "/",
@@ -5110,6 +5112,8 @@
             "search_messages_channel_prefill"),
           (r.SEARCH_MESSAGES_AUTOCOMPLETE_CLICKED =
             "search_messages_autocomplete_clicked"),
+          (r.SEARCH_MESSAGES_SELECTED_CHANNEL_FILTER_CLICKED =
+            "search_messages_selected_channel_filter_clicked"),
           (r.SEARCH_HISTORY_CLICKED = "search_history_clicked"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
@@ -5249,6 +5253,8 @@
             "expression_picker_category_selected"),
           (r.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED =
             "expression_picker_category_collapse_toggled"),
+          (r.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED =
+            "expression_picker_soundboard_sound_previewed"),
           (r.EXPRESSION_PICKER_STICKER_SHOP_VIEWED =
             "expression_picker_sticker_shop_viewed"),
           (r.EXPRESSION_PICKER_EXPRESSION_FOCUS =
@@ -6266,6 +6272,8 @@
             "running_game_card_state_changed"),
           (r.BILLING_IP_LOCATION_FETCH_ERROR =
             "network_action_billing_ip_location_fetch_error"),
+          (r.NITRO_PRIVATE_BROWSING_SURVEY_RESPONDED =
+            "nitro_privatebrowsing_surveyresponded"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6360,6 +6368,7 @@
             GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE: 202,
             GUILD_MEMBER_VERIFICATION_UPDATE: 210,
             GUILD_PROFILE_UPDATE: 211,
+            GUILD_MIGRATE_PIN_PERMISSION: 212,
           }),
           Object.freeze({
             GIF: {
@@ -6848,7 +6857,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-16-13e1822715293c199cfc4792525c98fee611b4aa-discord_web",
+              "2025-07-17-10c4cbace5275fd30c5b7ad30cc826f16bdd1ec7-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6914,8 +6923,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "420018"),
-            o.YA("builtAt", String("1752717852553"));
+            o.YA("buildNumber", "420052"),
+            o.YA("builtAt", String("1752736723114"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12005,6 +12014,7 @@
             SEND_MESSAGES_IN_THREADS: n.r0(38),
             SEND_VOICE_MESSAGES: n.r0(46),
             SEND_POLLS: n.r0(49),
+            PIN_MESSAGES: n.r0(51),
             CONNECT: n.r0(20),
             SPEAK: n.r0(21),
             MUTE_MEMBERS: n.r0(22),
@@ -48212,4 +48222,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.28ed92cf6482fb4e.js.map
+//# sourceMappingURL=sentry.ed11b9b8daffafa9.js.map
