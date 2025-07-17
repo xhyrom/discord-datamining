@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7979061002](https://discord.com/jobs/7979061002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Thu, 17 Jul 2025 17:50:13 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for an experienced Senior Litigation Counsel. Reporting to the Vice President &amp;amp; Deputy General Counsel for Litigation and Regulatory Compliance, you’ll use your experience handling a variety of litigation matters and taking a hands-on approach to advance Discord’s interests when things get adversarial. From pre-litigation contract disputes to complex and business-critical litigation matters, you’ll develop processes for handling routine issues, and represent the company in novel theories and cutting-edge questions. You’ll play a critical role on Discord’s Legal team and collaborate with colleagues throughout the company as you successfully advocate for Discord.&amp;nbsp;&amp;nbsp;
@@ -57,4 +57,5 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 
 **Offices:**
 - Remote (U.S.)
+- San Francisco, CA in San Francisco, California, United States
     
