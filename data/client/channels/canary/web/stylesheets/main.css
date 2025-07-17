@@ -2378,6 +2378,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .reduce-motion .expressive__6af3a .expressiveBackground__6af3a {
   filter: blur(7px) saturate(var(--saturation-factor, 1));
 }
+.expressive__6af3a {
+  color: var(--control-text-expressive-default);
+}
 .expressive__6af3a .expressiveFill__6af3a {
   --__glow-amount: 0px;
   background-color: var(--button-expressive-background);
@@ -2389,8 +2392,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     top 0.15s ease,
     left 0.15s ease;
 }
+.expressive__6af3a:hover {
+  color: var(--control-text-expressive-hover);
+}
 .expressive__6af3a:hover .expressiveFill__6af3a {
   background-color: var(--button-expressive-background-hover);
+}
+.expressive__6af3a:active {
+  color: var(--control-text-expressive-active);
 }
 .expressive__6af3a:active .expressiveFill__6af3a {
   --__glow-amount: -1px;
@@ -62248,4 +62257,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.32effbf212192329.css.map*/
+/*# sourceMappingURL=12633.b109f2fb798d9f46.css.map*/
