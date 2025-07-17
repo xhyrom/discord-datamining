@@ -10,17 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8058456002](https://discord.com/jobs/8058456002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Thu, 17 Jul 2025 21:14:08 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Join our team as a full-stack Staff Software Engineer focused on UI and Interactions. In this role, you will lead the creation of beautiful, intuitive user interfaces across Discord's web and mobile platforms. We're looking for someone with deep expertise in React who is passionate about design, animations, and user interactions, is excited to build world-class user experiences, and is comfortable navigating the entire technical stack. This role reports to one of our engineering leaders on our Core Product team. If you love crafting pixel-perfect UI, seamless user experiences, and scalable front-end architecture, we'd love to hear from you!
-What you will be doing
-
-Implement Highly Polished UIs: Function as both a thought leader who can craft thoughtful solutions to design problems both independently and in collaboration with dedicated designers. Bring interfaces to life with smooth web animations and delightful interactions, translating design concepts into pixel-perfect, high-quality code
-Front-End Excellence: Write clean, maintainable code in React and React Native, and drive best practices in performance and accessibility for all UI components across web platforms
-Cross-Functional Collaboration: Work with Product, Design, and Marketing to define your team's vision and roadmap by thoroughly understanding the needs of our users. Seamlessly transition between designing independently and implementing designs from the design team
-Technical Leadership: Mentor engineers and set high code standards. Guide front-end architecture decisions, and champion UI/UX quality at Discord
-
 What you will be doing
 
 Implement Highly Polished UIs: Function as both a thought leader who can craft thoughtful solutions to design problems both independently and in collaboration with dedicated designers. Bring interfaces to life with smooth web animations and delightful interactions, translating design concepts into pixel-perfect, high-quality code
