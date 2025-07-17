@@ -16363,7 +16363,7 @@ svg.radioIcon_c1e9c4 {
   font-family: Sinistre, Arial, sans-serif;
 }
 .container_dfb989 {
-  display: inline-block;
+  display: inline-flex;
 }
 .forceAnimate_dfb989 .container_dfb989.gradient_dfb989,
 .showEffect_dfb989.gradient_dfb989 {
@@ -62248,4 +62248,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.27a3c083fd2954bb.css.map*/
+/*# sourceMappingURL=12633.32effbf212192329.css.map*/
