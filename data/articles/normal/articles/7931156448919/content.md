@@ -103,6 +103,37 @@
     >here</a
   >. 
 </p>
+<div class="exp-box">
+  <strong
+    ><span style="color: #434343">Game activity notifications</span></strong
+  ><span style="color: #434343">
+    are currently an experiment on the desktop app. To turn off these
+    notifications, go to </span
+  ><strong
+    ><span style="color: #434343"
+      >User Settings &gt; Notifications
+    </span></strong
+  ><span style="color: #434343">and adjust your </span
+  ><strong
+    ><span style="color: #434343">Game Activity Notifications </span></strong
+  ><span style="color: #434343"
+    >settings. To stop sharing your game activities entirely, update your </span
+  ><strong><span style="color: #434343">Activity Privacy</span></strong
+  ><span style="color: #434343">
+    settings instead. Learn more details on managing your activity settings
+    <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D">here</a>. </span
+  >
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/33543076762007"
+      width="624"
+      height="301"
+    />
+  </p>
+  <h4 id="h_01K0CXK58CYV5PDJRJK5A7YCH8" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Game Activity Notification</span>
+  </h4>
+</div>
 <h1 id="h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity Status</h1>
 <p>Activity can be seen in multiple places within the Discord app.</p>
 <h2 id="h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</h2>
@@ -289,7 +320,7 @@
   />
 </p>
 <div class="info-box">
-  <strong>Note:</strong> <br />- Members of a disabled server will still be able
+  <strong>Note:</strong><br />- Members of a disabled server will still be able
   to see your activity if they’re also friends with you or if they share another
   server with you where your activity is allowed.<br />- Although the Activity
   Status may be turned off for a specific server, you’ll still see the status on

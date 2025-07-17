@@ -1,9 +1,9 @@
 <div class="exp-box">
   <p class="wysiwyg-text-align-left">
     <span style="font-weight: 400"
-      ><strong>NOTE</strong>: Reaction notifications are currently an
-      experimental feature limited to a select number of desktop and mobile
-      users. Learn more about reaction notifications
+      >Reaction notifications are currently an experimental feature limited to a
+      select number of desktop and mobile users. Learn more about reaction
+      notifications
       <a
         href="https://support.discord.com/hc/articles/12102061808663"
         target="_blank"
@@ -74,6 +74,42 @@
 <h1 id="h_01JK93S1AA1H3FFDHNPDF1ETEA">
   Finding Your Server Notification Settings
 </h1>
+<div class="exp-box">
+  <strong
+    ><span style="color: #434343">Game activity notifications</span></strong
+  ><span style="color: #434343">
+    are currently an experiment on the desktop app. To turn off these
+    notifications, go to </span
+  ><strong
+    ><span style="color: #434343"
+      >User Settings &gt; Notifications
+    </span></strong
+  ><span style="color: #434343">and adjust your </span
+  ><strong
+    ><span style="color: #434343">Game Activity Notifications </span></strong
+  ><span style="color: #434343"
+    >settings. To stop sharing your game activities entirely, update your </span
+  ><strong><span style="color: #434343">Activity Privacy</span></strong
+  ><span style="color: #434343">
+    settings instead. Learn more details on managing your activity settings
+    <a
+      href="https://support.discord.com/hc/en-us/articles/7931156448919-Activity-Status-Recent-Activity#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >. </span
+  >
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/33543118773271"
+      width="624"
+      height="301"
+    />
+  </p>
+  <h4 id="h_01K0CXWATDHHNNMTWBWZB4957H" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Game Activity Notification</span>
+  </h4>
+</div>
 <p>
   <span style="color: #2f3941"
     >1. Go to the server where you want to adjust notifications and press the </span
