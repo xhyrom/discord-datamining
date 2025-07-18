@@ -3116,7 +3116,6 @@
             GRAVITY_ITEMS_DEHYDRATED: "/users/@me/gravity-icymi",
             GRAVITY_ITEMS_DEHYDRATED_LEGACY: "/users/@me/gravity-icymi-legacy",
             GRAVITY_RECOMMENDED_GUILDS: "/gravity-recommended-guilds",
-            GRAVITY_ITEMS_NEGATIVE: "/users/@me/gravity-icymi-negative",
             GRAVITY_ITEMS_HYDRATE: "/gravity-content",
             GRAVITY_CUSTOM_GUILD_SCORES: "/gravity-custom-guild-score",
             GRAVITY_CUSTOM_SCORES: "/gravity-custom-channel-scores",
@@ -4618,6 +4617,8 @@
           (r.APP_JS_STALLED = "app_js_stalled"),
           (r.LIBDISCORE_LOADED = "libdiscore_loaded"),
           (r.LIBDISCORE_KV_DUAL_READ_ERROR = "libdiscore_kv_dual_read_error"),
+          (r.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY =
+            "libdiscore_dispatch_bridge_telemetry"),
           (r.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (r.REGISTER_INPUT_BLUR = "register_input_blur"),
           (r.SESSION_START = "session_start"),
@@ -5040,6 +5041,8 @@
           (r.QUEST_VIDEO_TIME_TO_FIRST_FRAME =
             "quest_video_time_to_first_frame"),
           (r.QUEST_VIDEO_VOLUME_CHANGED = "quest_video_volume_changed"),
+          (r.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED =
+            "quest_video_enrollment_retry_attempted"),
           (r.ATT_PROMPT_RESULT = "att_prompt_result"),
           (r.USER_SETTINGS_KEYBIND_UPDATED = "user_settings_keybind_updated"),
           (r.USER_ATTRIBUTION_RECEIVED = "user_attribution_received"),
@@ -5097,6 +5100,7 @@
           (r.SEARCH_RESULT_SELECTED = "search_result_selected"),
           (r.SEARCH_RESULT_EXPANDED = "search_result_expanded"),
           (r.SEARCH_RESULT_SORT_CHANGED = "search_result_sort_changed"),
+          (r.SEARCH_RESULT_PAGE_CHANGED = "search_result_page_changed"),
           (r.SEARCH_RESULT_EMPTY = "search_result_empty"),
           (r.SEARCH_OPENED = "search_opened"),
           (r.SEARCH_STARTED = "search_started"),
@@ -6857,7 +6861,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-17-292769ecee0e15d84f448b30bd14c88339434265-discord_web",
+              "2025-07-18-d845bc6f456ae74a8a0954be6b61b88ef808c54e-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6923,8 +6927,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "420396"),
-            o.YA("builtAt", String("1752804562454"));
+            o.YA("buildNumber", "420452"),
+            o.YA("builtAt", String("1752848762826"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48222,4 +48226,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5555f8bc84a5a7c7.js.map
+//# sourceMappingURL=sentry.43b90eb3389a2026.js.map
