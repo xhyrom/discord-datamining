@@ -27,6 +27,17 @@
   </ul>
 </div>
 <h1 id="h_01JJ7F294C00144N9006CA4A2M">Role Colors</h1>
+<div class="book-box">
+  Enable Enhanced Role Styles in your server to have gradient or holographic
+  roles. <br /><strong>Learn more:</strong> You can read more about this feature
+  in our
+  <a
+    href="https://support.discord.com/hc/en-us/articles/31444213087255"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Enhanced Role Styles article</a
+  >.
+</div>
 <p>
   Discord's role system includes <strong>role colors</strong>—a visual element
   that lets you quickly identify members' permissions and status. Server members
@@ -55,7 +66,9 @@
   />
 </p>
 <h4 id="h_01JJ7F52380Y3PR1MX2GRND6Q1" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Example of Role Colors</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Role Colors</span
+  >
 </h4>
 <p>
   1. Press the server name in the upper-left corner and select
@@ -73,7 +86,7 @@
   />
 </p>
 <h4 id="h_01JJ7F5XY9149TJX35J3X9FPDC" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >How to Navigate to Roles in Server Settings</span
   >
 </h4>
@@ -89,7 +102,7 @@
   />
 </p>
 <h4 id="h_01JJ7F6P4JB98TYAYXXMNJY0WR" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Role Color: Preset and Custom Color Options</span
   >
 </h4>
@@ -102,7 +115,9 @@
   />
 </p>
 <h4 id="h_01JJ7F81YVXSYP7H93N6GT1TXJ" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Save Changes Button in Role Settings</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Save Changes Button in Role Settings</span
+  >
 </h4>
 <div class="info-box">
   <p>Role colors are visible in:</p>
@@ -118,7 +133,9 @@
     />
   </p>
   <h4 id="h_01JJ7FDQHT1AXA7HCXEP1EZYZT" class="wysiwyg-text-align-center">
-    <span style="color: #666666">Example of Role Colors in Members List</span>
+    <span style="color: #666666" data-darkreader-inline-color=""
+      >Example of Role Colors in Members List</span
+    >
   </h4>
 </div>
 <h1 id="h_01JJ7FF0ES91KDVXNT9MQ6FQTC">Role Hierarchy System</h1>
@@ -160,7 +177,7 @@
   />
 </p>
 <h4 id="h_01JJ7G7106ZGPK5SV3JV28WK9H" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Administrator Permission Toggle in Advanced Permissions Settings</span
   >
 </h4>
@@ -198,7 +215,7 @@
   />
 </p>
 <h4 id="h_01JJ7G99GD209W1F9R3KX0ZJFG" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Manage Roles Permission Toggle in General Server Permissions Settings</span
   >
 </h4>
@@ -233,7 +250,9 @@
   />
 </p>
 <h4 id="h_01JJ7GCWH9FCTA8F2HAQDC7K51" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Channel Permissions: Available Actions</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Channel Permissions: Available Actions</span
+  >
 </h4>
 <p>There are two key tools that can streamline your server organization:</p>
 <ul>
@@ -298,7 +317,9 @@
   /></span>
 </p>
 <h4 id="h_01JJ7GES9WCSDVBDQWBENTT4YK" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Duplicating a Channel</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Duplicating a Channel</span
+  >
 </h4>
 <ul>
   <li>
@@ -337,5 +358,7 @@
   />
 </p>
 <h4 id="h_01JJ7GS973NVTQDEAHVPW7DCK5" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Making a Channel Role-Exclusive</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Making a Channel Role-Exclusive</span
+  >
 </h4>
