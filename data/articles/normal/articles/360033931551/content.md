@@ -29,13 +29,7 @@
     </li>
   </ul>
 </div>
-<h1 id="h_01JQ6Y0957HQAY1FX9EAKHT9MQ">
-  <strong
-    ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >Get the App</span
-    ></strong
-  >
-</h1>
+<h1 id="h_01JQ6Y0957HQAY1FX9EAKHT9MQ">Get the App</h1>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >You can download Discord for free on </span
@@ -141,7 +135,7 @@
   >
 </h4>
 <div class="tip-box">
-  <strong>NOTE:</strong> For an in depth list of compatible Browsers and
+  <strong>Tip:</strong> For an in depth list of compatible Browsers and
   Operating Systems, check
   <a
     href="https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-"
@@ -150,17 +144,19 @@
     ></a
   >.
 </div>
-<h1 id="h_01H4RR2GE2FAK7DZ5W3765NGVT">
-  <strong
-    ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >Create Your Account </span
-    ></strong
+<h1 id="h_01K0FNNP279VKS293ANC9G5P6D">Create Your Account</h1>
+<div class="tip-box">
+  <strong>Tip:</strong>
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >When registering your Discord account, please use an email address you can
+    access and maintain access to. If you want to change the email address of
+    your Discord account, you'll need access to your original email. The Discord
+    Support team is not able to change the email address of your account.</span
   >
-</h1>
+</div>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >You can create your account on </span
-  ><a href="https://discord.com/register"
+  You can create your account on
+  <a href="https://discord.com/register"
     ><span style="color: #0067e0" data-darkreader-inline-color=""
       >the Discord registration page</span
     ></a
@@ -184,10 +180,8 @@
   >
 </h4>
 <h1 id="h_01H4RR2QA47KEEKXM7MYAP9VDY">
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Claim Your Account</span
-    ></strong
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >Claim Your Account</span
   >
 </h1>
 <p>
@@ -239,36 +233,26 @@
 <p>
   <strong
     ><span style="color: #104c32" data-darkreader-inline-color=""
-      >Note: Some servers are locked behind a
+      >Tip:
     </span></strong
+  ><span style="color: #104c32" data-darkreader-inline-color=""
+    >Some servers are locked behind a </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/216679607-What-are-Verification-Levels-"
-    ><strong
-      ><span style="color: #0067e0" data-darkreader-inline-color=""
-        >security Verification wall</span
-      ></strong
+    ><span style="color: #0067e0" data-darkreader-inline-color=""
+      >security Verification wall</span
     ></a
-  ><strong
-    ><span style="color: #104c32" data-darkreader-inline-color="">
-      that requires a verified account before you can access chat functions.
-      Read more about
-    </span></strong
+  ><span style="color: #104c32" data-darkreader-inline-color="">
+    that requires a verified account before you can access chat functions. Read
+    more about </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/216679607-What-are-Verification-Levels-"
-    ><strong
-      ><span style="color: #0067e0" data-darkreader-inline-color=""
-        >server verification levels here.</span
-      ></strong
+    ><span style="color: #0067e0" data-darkreader-inline-color=""
+      >server verification levels here.</span
     ></a
   >
 </p>
-<h1 id="h_01H4RR2WQMJPNM20TG8NWDDWSS">
-  <strong
-    ><span style="color: #ae6607" data-darkreader-inline-color=""
-      >Verify Your Phone Number</span
-    ></strong
-  >
-</h1>
+<h1 id="h_01H4RR2WQMJPNM20TG8NWDDWSS">Verify Your Phone Number</h1>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Additionally, you can also verify your phone number to your Discord
@@ -357,10 +341,8 @@
   >
 </p>
 <h1 id="h_01HGKNN1VZ8VZTN6NKEFT1CX6F">
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Let's Get Down To Business</span
-    ></strong
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >Let's Get Down To Business</span
   >
 </h1>
 <p>

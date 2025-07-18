@@ -26,11 +26,18 @@
       <a href="#h_01J7XZBQJHAKQDMADX5XX8CJT9">I forgot to download my codes</a>
     </li>
     <li>
-      <a href="#h_01J7XZBQJHF12T6SS06944MHET"
+      <a href="#h_01K0FPPWS5TKFQ932H3A8FVQ7Z"
         >I forgot to add my phone as backup</a
       >
     </li>
   </ul>
+</div>
+<div class="warn-box">
+  <strong>Important:</strong>
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Don’t forget to save your backup codes after enabling MFA. The Discord
+    Support team is not able to remove MFA from an account.</span
+  >
 </div>
 <h1 id="h_01J80CYCPQQZEJWC18WAS6GBHA">Types of Multi-Factor Authentication</h1>
 <p>
@@ -135,7 +142,7 @@
   ><span style="color: #2e3338" data-darkreader-inline-color=""
     >1. Tap on the </span
   >cogwheel [<img
-    src="https://support.discord.com/hc/article_attachments/26407636464407"
+    src="https://support.discord.com/hc/article_attachments/33571014122391"
     width="20"
     height="20"
   />] in the bottom-left corner to access
@@ -154,11 +161,16 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/26407636466071"
+      src="https://support.discord.com/hc/article_attachments/33571014126359"
       width="624"
       height="464"
   /></span>
 </p>
+<h4 id="h_01K0FNHG2FG3BKDB0RRNG0QQX1" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><strong>View Backup Codes </strong>button</span
+  >
+</h4>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color="">2. Select </span
   ><strong
@@ -170,63 +182,84 @@
     download them.</span
   >
 </p>
-<h1 id="h_01J7XZBQJHF12T6SS06944MHET">I forgot to add my phone as backup</h1>
+<h1 id="h_01K0FPPWS5TKFQ932H3A8FVQ7Z">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >I forgot to add my phone as backup!
+  </span>
+</h1>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
-    >No worries again! Head back to your account and press the </span
+    >1. Head back to your account and press </span
   ><strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Enable SMS Authentication</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color=""> button.</span>
-</p>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26407636467479"
-      alt="Enter_Phone_Number.png"
-      width="473"
-      height="318"
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Verify that number in Discord.</span
+      >Add
+    </span></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >to add a phone number.</span
   >
 </p>
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/26407636469399"
-      alt="Enter_Code.png"
-      width="549"
-      height="360"
+      src="https://support.discord.com/hc/article_attachments/33571014128663"
+      width="496"
+      height="334"
   /></span>
 </p>
+<h4 id="h_01K0FNGDJ28X9A50NDYR2K66GR" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Enter a Phone Number option</span
+  >
+</h4>
 <p>
+  2.
   <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Now, after you login with username + password, you’ll get an additional
-    screen like this:</span
+    >Verify that number in Discord with the SMS code you will receive.</span
   >
 </p>
 <p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33571014129943"
+      width="502"
+      height="411"
+  /></span>
+</p>
+<h4 id="h_01K0FNGRAQP6KNJ3Z6NEWRF095" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >Enter SMS code window</span
+  >
+</h4>
+<p>
   <span style="color: #2e3338" data-darkreader-inline-color=""><br /></span
   ><span style="color: #2e3338" data-darkreader-inline-color=""
-    ><img
-      src="https://support.discord.com/hc/article_attachments/26407636470679"
-      width="554"
-      height="370"
-  /></span>
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Just enter the code from your text message and you’re in!</span
+    >3. Press on </span
+  ><strong
+    ><span style="color: #2e3338" data-darkreader-inline-color=""
+      >Enable SMS Authentication
+    </span></strong
+  ><span style="color: #2e3338" data-darkreader-inline-color=""
+    >after your number has been confirmed on your account.</span
   >
 </p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33571014131607"
+      width="624"
+      height="120"
+  /></span>
+</p>
+<h4 id="h_01K0FNGDJ2G54A2P9JATKWPP5Q" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Enable SMS Authentication option</span
+  >
+</h4>
+<p>4. Enter your MFA code to approve enabling SMS MFA. </p>
 <p>
   <span style="color: #2e3338" data-darkreader-inline-color=""
     >Now when you login, if the feature is enabled, you will have a link to
-    request an SMS with a code to authenticate yourself as a backup
-    option.</span
-  >
+    request an SMS with a code to authenticate yourself as a backup option. SMS
+    MFA can only be enabled once you’ve enabled MFA overall.
+  </span>
 </p>

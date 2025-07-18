@@ -4,174 +4,303 @@
   remove and change the phone number under your account. This article will help
   you remove the phone number under your account.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
+  <ul>
+    <li>
+      <a href="#h_01K0FNXFQWW5P51QD4EVMGDQE0">How to Remove a Phone Number</a>
+      <ul>
+        <li><a href="#h_01K0FNXFR0CM2P8X0YTBGC8JQ0">Desktop/Browser</a></li>
+        <li><a href="#h_01K0FNXFRC60N1E3DGZ8SERAF8">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01K0FNXFRVTTZHYSXN0BT5J7ZH"
+        >How to Remove a Phone Number from an Accidental Account</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="warn-box">
+  <strong>Important: </strong>Only one number can be connected to an account at
+  a time. Once a number has been removed, there is a waiting period before the
+  number can be used on an account again.
+</div>
+<h1 id="h_01K0FNXFQWW5P51QD4EVMGDQE0">How to Remove a Phone Number</h1>
+<div class="form-box">
+  <strong>Contact Us:</strong> If you’re unable to remove the number from the
+  account yourself, you can reach out to the Discord Support team under the
+  email address associated with the account to have the number removed:
+  <a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"
+    >dis.gd/contact</a
   >
-</p>
-<ul>
-  <li>
-    <a href="#h_01FQFRZCFT52WFMNCM301NPTGY" target="_self"
-      >Remove a Phone Number</a
-    >
-  </li>
-  <li>
-    <a href="#h_01FQFTDJQP5D3XMMSDT3CJQGPR" target="_self"
-      >Remove a Phone Number on an Accidental Account</a
-    >
-  </li>
-</ul>
+</div>
+<div class="warn-box">
+  <strong>Important:</strong> If you do not remember the email address
+  associated with the account your phone number is tied to, the Discord Support
+  team will not be able to provide this information, or remove the number.
+</div>
+<h2 id="h_01K0FNXFR0CM2P8X0YTBGC8JQ0">Desktop/Browser</h2>
 <p>
-  Before you begin the process of removing a phone number, you must make sure of
-  the following first:
-</p>
-<ul>
-  <li>
-    Make sure you are logging into your account that has the phone number you
-    want to remove.
-  </li>
-  <li>
-    If you are changing a phone number on your account, make sure to keep in
-    mind the guidelines on this
-    <a
-      href="https://support.discord.com/hc/en-us/articles/360000961212"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Help Center article</a
-    >
-    to avoid Invalid Phone Number errors.
-  </li>
-</ul>
-<h3>
-  Only one number can be connected to an account and there is a timeout period
-  on a phone number once it is removed.
-</h3>
-<h1 id="h_01FQFRZCFT52WFMNCM301NPTGY">Remove a Phone Number</h1>
-<p>1. Log into your account with the phone number you want to remove.</p>
-<p>2. Press on the <strong>User Settings</strong> cog wheel</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4418756794647"
-    alt="Press-cog-wheel-for-User-Settings-Remove-phone.png"
-    width="577"
-    height="452"
-  />
-</p>
-<p>
-  3. Go to the My Account page from the left-hand column &gt; Press
-  <strong>Remove</strong> by the phone number.
+  1. Select the <strong>cogwheel </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/33571368085399"
+    width="20"
+    height="20"
+  />] next to your Discord username to access your
+  <strong>User Settings</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/4418757087127"
-    alt="Remove-phone-button-on-my-acount-page.png"
-    width="582"
-    height="351"
+    src="https://support.discord.com/hc/article_attachments/33571382838039"
+    width="356"
+    height="55"
   />
 </p>
-<p>4. Follow the prompts to remove the phone number.</p>
-<h1 id="h_01FQFTDJQP5D3XMMSDT3CJQGPR">
-  Remove a Phone Number on an Accidental Account
+<h4 class="wysiwyg-text-align-center" id="h_01K0FPC6184M3RAV447ZY8432F">
+  <span style="color: #434343">Cogwheel icon on desktop/browser</span>
+</h4>
+<p>
+  2. Under the <strong>My Account</strong> tab, press <strong>Remove</strong> to
+  remove your number.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571382838679"
+    width="624"
+    height="465"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFR73N5RYD0PPT6C28NS">
+  <span style="color: #666666"
+    ><strong>Remove</strong> under <strong>My Account</strong></span
+  >
+</h4>
+<p>
+  3. You’ll then be prompted to enter your password. Enter your password and
+  then press <strong>Remove</strong>. 
+</p>
+<p>4. You should no longer see a phone number listed.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571368091671"
+    width="617"
+    height="460"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRCHBXJ6EDSEEH18ZBW">
+  <span style="color: #666666"
+    >Example of no phone number attached to an account</span
+  >
+</h4>
+<h1 id="h_01K0FNXFRC60N1E3DGZ8SERAF8">Mobile</h1>
+<p>1. Tap on your <strong>avatar</strong> in the bottom-right corner.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571382841111"
+    width="580"
+    height="83"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRECTH16H2AJQVA6AYS">
+  <span style="color: #666666">Avatar icon on mobile</span>
+</h4>
+<p>
+  2. Press the <strong>cogwheel </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/33571368085399"
+    width="20"
+    height="20"
+  />] in the top-right corner to access <strong>Settings</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571382842647"
+    width="345"
+    height="747"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRHRYBVK9FWBDTQ9307">
+  <span style="color: #666666">Cogwheel icon on mobile</span>
+</h4>
+<p>3. Tap <strong>Account</strong>.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571368098071"
+    width="345"
+    height="749"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRK0XBP36734F3GJHQ0">
+  <span style="color: #666666"
+    ><strong>Account </strong>tab under <strong>User Settings</strong></span
+  > 
+</h4>
+<p>4. Tap the <strong>Phone </strong>field.</p>
+<h1 class="wysiwyg-text-align-center" id="h_01K0FNXFRN53K8YAS1NCSV9X3Z">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571382844055"
+    width="337"
+    height="732"
+  />
+</h1>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRPCMSJBVV6BAXAKZNJ">
+  <span style="color: #666666"
+    ><strong>Phone</strong> field in Account settings</span
+  >
+</h4>
+<p>5. Press <strong>Remove Phone Number</strong> to remove the number.</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33571382846231"
+      width="320"
+      height="695"
+  /></strong>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRT7XSHFW6E6YHHJSAC">
+  <span style="color: #666666"
+    ><strong>Remove Phone Number </strong>button</span
+  >
+</h4>
+<h1 id="h_01K0FNXFRVTTZHYSXN0BT5J7ZH">
+  How to Remove a Phone Number on an Accidental Account
 </h1>
 <p>
   A rare instance can happen in which you accidentally create a Discord account
-  using your phone number if it is not currently connected to your original
-  account. If you want to remove your phone number from the accidental account,
-  the best way to do so is to log into that account:
-</p>
-<p>1. Open an incognito browser window.</p>
-<p>
-  2. Enter your phone number instead of an email address at the login screen.
-</p>
-<p>3. Press <strong>Forgot Password</strong>.</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4420600312343"
-    alt="accidental-account-enter-phone-number-login.png"
-  />
+  using your phone number instead of attaching it to your account. If you want
+  to remove your phone number from the accidental account, the best way to do so
+  is to log into that account:
 </p>
 <p>
-  4. Follow the instructions of the next page and provide the info from the
-  <strong>SMS</strong> to <strong>change your password</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4420601863703"
-    alt="accidental-account-confirmation-code-reset-password.png"
-  />
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4420584858391"
-    alt="accidental-account-SMS-code-password-reset.png"
-    width="423"
-    height="682"
-  />
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4420601670935"
-    alt="accidental-account-change-password.png"
-    width="655"
-    height="455"
-  />
-</p>
-<p>5. Log into your account.</p>
-<p>
-  6. Click on the cog icon to go to <strong>User Settings</strong> &gt;
-  <strong>My Account</strong>.
+  1. Open an <strong>incognito browser window</strong> and head to
+  <a href="http://discord.gg/login"
+    ><span class="wysiwyg-underline">http://discord.gg/login</span></a
+  >
 </p>
 <p>
-  7. Add an email address that is not associated with any Discord account and
-  then verify it.
+  2. Enter your <strong>phone number</strong> instead of an email address at the
+  login screen.
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #2e3338"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33571382850071"
+      width="624"
+      height="360"
+  /></span>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FP8W8QSPZDK9VWS1FK507F">
+  <span style="color: #2e3338">Entering the phone number at login</span>
+</h4>
+<p>3. Press “<strong>Forgot your password?”</strong></p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33571368102551"
+      width="618"
+      height="352"
+  /></strong>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFRZBPZZA10QQQJF6DG4">
+  <span style="color: #666666"
+    ><strong>Forgot your password? </strong>option</span
+  >
+</h4>
+<p>
+  4. A <strong>SMS code</strong> will be sent to your phone number to enter for
+  a password reset.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/4420882359575"
-    alt="accidental-account-verify-email-inbox.png"
+    src="https://support.discord.com/hc/article_attachments/33571368103703"
+    width="560"
+    height="369"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFS0XAM4Z2JB61X86YQQ">
+  <span style="color: #666666">Enter SMS code window </span>
+</h4>
+<p>
+  5. Enter your new password and then press on <strong>Change Password</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571368108951"
+    width="548"
+    height="469"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFS2VSKYWTD6M6P16AB9">
+  <span style="color: #666666"><strong>Change Password</strong> button</span>
+</h4>
+<p>
+  6. After changing the password, log in through your
+  <strong>phone number</strong> at
+  <a href="http://discord.com/login" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">discord.com/login</span></a
+  >. 
+</p>
+<p>
+  7. Select the <strong>cogwheel </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/33571368085399"
+    width="20"
+    height="20"
+  />] next to your Discord username to access your
+  <strong>User Settings</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571382838039"
+    width="356"
+    height="55"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FP5XEVJBBXX7S9KE226S8H">
+  <span style="color: #434343">Cogwheel icon on desktop/browser</span>
+</h4>
+<p>
+  7. Tap <strong>Add</strong> to add an email address that is not associated
+  with any Discord account, then follow the steps in the
+  <strong>verification email</strong> you’ll receive. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33571368112279"
     width="570"
-    height="450"
+    height="420"
   />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFSBAZYBEEG2GGP0EA8B">
+  <span style="color: #666666"><strong>Add</strong> email option</span>
+</h4>
+<p>
+  8.  After confirming the email address, tap on <strong>Remove</strong> to
+  remove your number.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/4420882321815"
-    alt="accidental-account-email-verified.png"
-    width="576"
-    height="392"
+    src="https://support.discord.com/hc/article_attachments/33571382860567"
+    width="624"
+    height="452"
   />
+   
 </p>
-<p>
-  8. Go back to the <strong>My Account</strong> page, press on
-  <strong>Remove</strong> next to your<strong> Phone Number</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4418757087127"
-    alt="Remove-phone-button-on-my-acount-page.png"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center">Huh, this looks familiar...</h4>
-<p>
-  9. At this point you can also press on <strong>Delete Account</strong> if you
-  wish to delete this account.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/4420878237847"
-    alt="accidental-account-delete-account.png"
-  />
-</p>
-<h3>
-  Note: If you receive an error message or SMS that begins with, "An existing
-  Discord account is already using this number," please closely follow the steps
-  above.
-</h3>
-<h1>Still Having Issues?</h1>
-<p>
-  If you're having an issue with removing your phone number from your account,
-  you can reach out to our Support team for further assistance at this
-  <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"
-    >link</a
+<h4 class="wysiwyg-text-align-center" id="h_01K0FNXFSCBNSW13CHMW0R8PVR">
+  <span style="color: #666666"
+    ><strong>Remove</strong> under <strong>My Account</strong></span
+  >
+</h4>
+<p>9. The number will be removed and you can add it to the correct account. </p>
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />
+  You can also delete this new account by following the steps
+  <a
+    href="https://support.discord.com/hc/en-us/articles/212500837-How-to-Delete-your-Discord-Account"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Delete your Discord Account Help Center article</a
   >.
-</p>
+</div>
