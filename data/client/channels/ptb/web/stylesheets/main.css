@@ -2378,6 +2378,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .reduce-motion .expressive__6af3a .expressiveBackground__6af3a {
   filter: blur(7px) saturate(var(--saturation-factor, 1));
 }
+.expressive__6af3a {
+  color: var(--control-text-expressive-default);
+}
 .expressive__6af3a .expressiveFill__6af3a {
   --__glow-amount: 0px;
   background-color: var(--button-expressive-background);
@@ -2389,8 +2392,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     top 0.15s ease,
     left 0.15s ease;
 }
+.expressive__6af3a:hover {
+  color: var(--control-text-expressive-hover);
+}
 .expressive__6af3a:hover .expressiveFill__6af3a {
   background-color: var(--button-expressive-background-hover);
+}
+.expressive__6af3a:active {
+  color: var(--control-text-expressive-active);
 }
 .expressive__6af3a:active .expressiveFill__6af3a {
   --__glow-amount: -1px;
@@ -20079,10 +20088,6 @@ div.modalHeader_c28af8 {
 .modalPreview_ced2f2 {
   margin-top: 24px;
 }
-.modalFooterShopButton_ced2f2 {
-  background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-  background-clip: padding-box;
-}
 .freeTrialText__1995d {
   text-transform: capitalize;
 }
@@ -25178,16 +25183,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   .stickerCategoryGenericIcon__3ad28 {
   color: Highlight;
 }
-.premiumButtonNitroWheel_b72efa {
-  margin-right: 4px;
-}
-.premiumButtonInner_b72efa {
-  align-items: center;
-  display: flex;
-}
-.premiumButton_b72efa {
-  margin-top: 20px;
-}
 .emptyState__70126 {
   align-items: center;
   display: flex;
@@ -25208,6 +25203,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .stickersRow__70126 {
   display: flex;
+  margin-bottom: 20px;
 }
 .stickersRow__70126 .sticker__70126 {
   margin: auto 2px;
@@ -25526,7 +25522,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   margin-bottom: 8px;
 }
 .upsellDescription__4006b {
-  margin-bottom: 24px;
+  margin-bottom: 44px;
   max-width: 400px;
 }
 .upsellClose__4006b {
@@ -62248,4 +62244,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.32effbf212192329.css.map*/
+/*# sourceMappingURL=12633.670967f5d8015017.css.map*/
