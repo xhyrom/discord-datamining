@@ -19250,6 +19250,13 @@ div.modalHeader_c28af8 {
   height: 50px;
   justify-content: center;
 }
+.premiumBrandRefreshContainer__61733 {
+  align-items: center;
+  background: var(--background-mod-normal);
+  border-radius: var(--radius-md);
+  display: flex;
+  padding: var(--space-12) var(--space-16);
+}
 .v2Container__61733 {
   background: none;
   justify-content: left;
@@ -62407,4 +62414,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.a4d99dad00e28ef2.css.map*/
+/*# sourceMappingURL=12633.00ab379cf30e8c21.css.map*/
