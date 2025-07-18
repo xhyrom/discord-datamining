@@ -30,8 +30,8 @@
 </p>
 <ul>
   <li>
-    Look for "DISCORD*" or "PAYPAL DISCORD" on your bank statement—these are the
-    official Discord payment descriptors 
+    Look for "<strong>DISCORD*</strong>" or "<strong>PAYPAL DISCORD</strong>" on
+    your bank statement—these are the official Discord payment descriptors 
   </li>
   <li>Check if a family member or friend made the purchase</li>
   <li>Verify if it's a pending charge that hasn't been fully processed</li>
@@ -51,20 +51,16 @@
   ><span style="color: #434343">
     before filing a dispute with your bank. Filing a dispute or refund request
     directly with your bank for any Discord transactions may result in account
-    suspension pending further investigation.</span
-  >
-</div>
-<div class="book-box">
-  <strong>Want to learn more?</strong>
-  <p id="h_01JTNR3TA68GP1RYGT6M3JSGHJ">
-    For more information, please review our
+    suspension pending further investigation.<br /></span
+  ><span style="color: #434343"
+    >For more information, please review our
     <a
       href="https://support.discord.com/hc/en-us/articles/26600878251159-Chargebacks-FAQ"
       target="_blank"
       rel="noopener noreferrer"
       >Chargeback FAQ</a
-    >.
-  </p>
+    >.</span
+  >
 </div>
 <h1 id="h_01JTNR3TA6Y61D91NWXCK2Y2CR">How to Report an Unauthorized Charge</h1>
 <p>
@@ -150,8 +146,8 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    our support form</a
-  ><span class="wysiwyg-underline" style="color: #1155cc">. </span>
+    our support form.</a
+  >
 </p>
 <p>
   2. Select <strong>Refunds, Cancellations &amp; Payments </strong>from the
@@ -163,7 +159,11 @@
   <strong>I have a question/issue regarding an unauthorized transaction</strong
   >. 
 </p>
-<p>5. Pick the most relevant type of issue you are running into. </p>
+<p>
+  5. Pick the most relevant
+  <a href="#h_01JTNR3TA6Y61D91NWXCK2Y2CR">type of issue</a> you are running
+  into. 
+</p>
 <p>
   6. Include these important payment details in the
   <strong>Description</strong>:
@@ -178,21 +178,21 @@
   <li>Attach screenshots of the Discord charges on your bank statement</li>
 </ul>
 <div class="info-box">
-  <strong>Info</strong>: If any of this payment information is missing, it may
+  <strong>Info</strong>: If any of the payment information is missing, it may
   delay the resolution of your case.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/31935974162455"
-    width="368"
-    height="520"
+    src="https://support.discord.com/hc/article_attachments/33563620719511"
+    width="624"
+    height="451"
   />
 </p>
 <h4 id="h_01JTNR3TA68E33XP3DM1W1BRH8" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of submitting a support request</span>
 </h4>
 <p>
-  For more information regarding our refund policy and how to transact safely on
+  For more information regarding our Refund Policy and how to transact safely on
   Discord, please see these resources:
 </p>
 <ul>

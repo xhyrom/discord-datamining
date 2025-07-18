@@ -196,11 +196,11 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
+    ><span style="color: #434343"
       ><img
-        src="https://support.discord.com/hc/article_attachments/33103448359575"
-        width="501"
-        height="588" /></span
+        src="https://support.discord.com/hc/article_attachments/33563724556567"
+        width="624"
+        height="451" /></span
   ></strong>
 </p>
 <h4 id="h_01JYSBSHQM4Q5BREKEAQ94YSVA" class="wysiwyg-text-align-center">

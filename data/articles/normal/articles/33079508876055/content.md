@@ -61,7 +61,7 @@
 </p>
 <p><strong>If the charges are on your own Discord account:</strong></p>
 <p>
-  First, review our
+  Review our
   <a
     href="https://support.discord.com/hc/en-us/articles/360045765792-Reporting-Unauthorized-Discord-Transactions"
     target="_blank"
@@ -74,18 +74,49 @@
   steps: 
 </p>
 <p>
-  1. Use the "<strong>Other</strong>" form and select <strong>Yes</strong> when
-  asked if the charges are on your Discord account. 
+  1. In the
+  <a
+    href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"
+    ><span class="wysiwyg-underline" style="color: #1155cc"
+      >support form</span
+    ></a
+  >, select “<strong
+    >I have a question/issue regarding an unauthorized transaction</strong
+  >” under “<strong>Type of Billing Issue</strong>”. 
+</p>
+<div class="tip-box">
+  <span style="color: #434343"
+    >If you're unsure which Discord account was charged, select "</span
+  ><strong
+    ><span style="color: #434343"
+      >I am unsure the Discord account associated with the unauthorized
+      charges</span
+    ></strong
+  ><span style="color: #434343">"</span>
+  <span style="color: #434343">under “</span
+  ><strong><span style="color: #434343">Type of Issue.</span></strong
+  ><span style="color: #434343">”</span>
+  <span style="color: #434343"
+    >This helps us route your request to the appropriate support team.</span
+  >
+</div>
+<p>
+  2. Select “<strong>Other</strong>” under “<strong>Type of Issue</strong>” and
+  “<strong>Yes”</strong> under “<strong
+    >The unauthorized charge(s) are on my Discord account</strong
+  >”. 
 </p>
 <p>
-  2. When asked if you're using the email linked to your Discord account to
-  contact us:
+  3. Under “<strong
+    >I am writing in from the email address associated with my Discord
+    account</strong
+  >”:
 </p>
 <ul>
   <li>
-    Select <strong>Yes</strong> if you can still access that email address
+    Select “<strong>Yes</strong>” if you can still access that email address
   </li>
-  <li>Select <strong>No</strong> if you cannot access that email address</li>
+  <li>Select “<strong>No</strong>” if you cannot access that email address</li>
 </ul>
 <div class="warn-box">
   <span style="color: #434343"
@@ -97,13 +128,6 @@
     ><span class="wysiwyg-underline">https://dis.gd/report</span></a
   ><span style="color: #434343">. </span>
 </div>
-<p>
-  3. If you're unsure which Discord account was charged, select "<strong
-    >I am unsure the Discord account associated with the unauthorized
-    charges."</strong
-  >
-  This helps us route your request to the appropriate support team.
-</p>
 <div class="warn-box">
   <span style="color: #434343">Any refunds outside </span
   ><a
@@ -146,9 +170,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/33079533295127"
-    width="471"
-    height="609"
+    src="https://support.discord.com/hc/article_attachments/33563383541527"
+    width="781"
+    height="553"
   />
 </p>
 <h4 id="h_01JYPTA5TEV3HJA8VN15P1TTB5" class="wysiwyg-text-align-center">
