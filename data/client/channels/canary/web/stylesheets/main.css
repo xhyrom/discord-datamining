@@ -35177,6 +35177,7 @@ div.modalOverrideBody__34eac {
   align-items: center;
   cursor: pointer;
   display: flex;
+  font-size: 14px;
   justify-content: center;
   max-height: 50px;
 }
@@ -62418,4 +62419,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.51368eaeacfcada7.css.map*/
+/*# sourceMappingURL=12633.bc78f27ba4291ce7.css.map*/
