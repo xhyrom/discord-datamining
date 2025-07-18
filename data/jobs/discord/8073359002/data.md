@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Exploitative Content Specailist
+## Senior Exploitative Content Specialist
 
 **Location:** San Francisco, CA
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8073359002](https://discord.com/jobs/8073359002)
 
-**Updated At:** Thu, 17 Jul 2025 23:47:01 GMT
+**Updated At:** Fri, 18 Jul 2025 16:14:23 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This role is critical in supporting the company to deeply understand and mitigate how harmful content, including child sexual abuse material, manifests on our platform, as well as investigating complex threats, advancing our investigative capabilities, and developing innovative approaches to prevent harm to our users, particularly minors. This hire will report to the Minor Safety and Exploitative Content Manager.&amp;nbsp;
