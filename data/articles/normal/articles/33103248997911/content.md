@@ -61,17 +61,21 @@
     target="_blank"
     rel="noopener noreferrer"
     >Please contact our billing team</a
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    before filing a dispute with your bank. Filing a dispute or refund request
-    directly with your bank for any Discord transactions may result in account
-    suspension pending further investigation. For more information, please
-    review our </span
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">
+      before filing a dispute with your bank. Filing a dispute or refund request
+      directly with your bank for any Discord transactions may result in account
+      suspension pending further investigation. For more information, please
+      review our
+    </span></span
   ><a
     href="https://support.discord.com/hc/en-us/articles/26600878251159-Chargebacks-FAQ"
     target="_blank"
     rel="noopener noreferrer"
     >Chargeback FAQ</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
 </div>
 <h1 id="h_01JYSBBFRM6MFBWPFS6PGR47KR">
   How to Report Unrecognized Charges that Appear on Your Discord Account
@@ -189,34 +193,49 @@
   </li>
 </ul>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Any missing payment information may delay the resolution of your
-    case.</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color=""
+      >Any missing payment information may delay the resolution of your
+      case.</span
+    ></span
   >
 </div>
 <p class="wysiwyg-text-align-center">
-  <strong
-    ><span style="color: #434343"
+  <span style="color: #434343"
+    ><strong
       ><img
         src="https://support.discord.com/hc/article_attachments/33563724556567"
         width="624"
-        height="451" /></span
-  ></strong>
+        height="451" /></strong
+  ></span>
 </p>
-<h4 id="h_01JYSBSHQM4Q5BREKEAQ94YSVA" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of Submitting a Support Request</span
+<h4 class="wysiwyg-text-align-center" id="h_01JYSBSHQM4Q5BREKEAQ94YSVA">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Example of Submitting a Support Request</span
+    ></span
   >
 </h4>
 <div class="info-box">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >While we aim to resolve requests within 72 hours, some cases may take
-    longer. To ensure the fastest possible response, please submit only one
-    support ticket per issue—multiple tickets can delay our response time.</span
-  >
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For more information, see these resources:</span
-  >
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >While we aim to resolve requests within 72 hours, some cases may take
+        longer. To ensure the fastest possible response, please submit only one
+        support ticket per issue—multiple tickets can delay our response
+        time.</span
+      ></span
+    > 
+  </p>
+</div>
+<div class="book-box">
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >For more information, see these resources:</span
+      ></span
+    >
+  </p>
   <ul>
     <li>
       <a
@@ -251,8 +270,12 @@
       >
     </li>
   </ul>
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >These resources cover unrecognized transactions, refund policies, and safe
-    shopping practices on Discord.</span
-  >
+  <p>
+    <span style="color: #434343"
+      ><span data-darkreader-inline-color=""
+        >These resources cover unrecognized transactions, refund policies, and
+        safe shopping practices on Discord.</span
+      ></span
+    >
+  </p>
 </div>

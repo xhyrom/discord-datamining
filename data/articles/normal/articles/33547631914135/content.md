@@ -28,7 +28,7 @@
   ><a
     href="https://support.discord.com/hc/en-us/articles/26600878251159-Chargebacks-FAQ"
     ><span class="wysiwyg-underline">Chargeback FAQ</span></a
-  ><span style="color: #434343">.</span>
+  ><span style="color: #434343">. </span>
 </div>
 <div class="toc-box">
   <p>
