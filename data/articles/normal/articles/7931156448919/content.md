@@ -5,31 +5,79 @@
 </p>
 <ul>
   <li>
-    <a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
-      >What is Activity Status (Recent Activity)?</a
+    <strong
+      ><a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
+        >What is Activity Status (Recent Activity)?</a
+      ></strong
     >
   </li>
   <li>
-    <a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity Status</a>
+    <strong
+      ><a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
+        >How to View Activity Status</a
+      ></strong
+    >
     <ul>
-      <li><a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</a></li>
       <li>
-        <a href="#h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</a>
+        <strong
+          ><a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX"
+            >Within User Profiles</a
+          ></strong
+        >
       </li>
-      <li><a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ">As a Status Message</a></li>
+      <li>
+        <strong
+          ><a href="#h_01HTJA8QV59M70ZB3DY4THZM27"
+            >On Global Activity Cards</a
+          ></strong
+        >
+      </li>
+      <li>
+        <strong
+          ><a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
+            >As a Status Message</a
+          ></strong
+        >
+      </li>
     </ul>
   </li>
   <li>
-    <a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
-      >How do I control who sees my activity?</a
+    <strong
+      ><a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
+        >How do I control who sees my activity?</a
+      ></strong
     >
     <ul>
-      <li><a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a></li>
-      <li><a href="#h_01HTJA8QV5M1VHRW89M024JHDT">Connection Settings</a></li>
-      <li><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></li>
-      <li><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</a></li>
       <li>
-        <a href="#h_01J5NNZS153N6H9V1S5A6WMMPK">Recent Activity History</a>
+        <strong
+          ><a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a></strong
+        >
+      </li>
+      <li>
+        <strong
+          ><a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
+            >Connection Settings</a
+          ></strong
+        >
+      </li>
+      <li>
+        <strong
+          ><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></strong
+        >
+      </li>
+      <li>
+        <strong
+          ><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
+            >Per-server Control</a
+          ></strong
+        >
+      </li>
+      <li>
+        <strong
+          ><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
+            >Recent Activity History</a
+          ></strong
+        >
       </li>
     </ul>
   </li>

@@ -71,7 +71,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/17507432347543"
+    src="https://support.discord.com/hc/article_attachments/33574428973591"
     alt="pasted image 0.png"
   />
 </p>
@@ -104,7 +104,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/27644771876375"
+      src="https://support.discord.com/hc/article_attachments/33574428975767"
       width="624"
       height="375"
   /></span>
@@ -128,7 +128,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/17507437481623"
+    src="https://support.discord.com/hc/article_attachments/33574441472279"
     alt="pasted image 0 (1).png"
   />
 </p>
@@ -141,7 +141,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/17507432358039"
+    src="https://support.discord.com/hc/article_attachments/33574428977175"
     alt="pasted image 0 (2).png"
   />
 </p>
@@ -176,7 +176,7 @@
         width="220"
         height="477" /> 
       <img
-        src="https://support.discord.com/hc/article_attachments/17507432359703"
+        src="https://support.discord.com/hc/article_attachments/33574441475351"
         alt="pasted image 0 (4).png"
         width="220"
         height="477" /></span></span
@@ -187,7 +187,7 @@
       data-darkreader-inline-color=""
     >
       <img
-        src="https://support.discord.com/hc/article_attachments/17507432365591"
+        src="https://support.discord.com/hc/article_attachments/33574428979607"
         alt="Message_Requests.png"
         width="220"
         height="476" /></span
@@ -223,7 +223,7 @@
         >Server dropdown menu &gt; Select Privacy Settings &gt; Toggle off
         “Message Requests”</strong
       >:<img
-        src="https://support.discord.com/hc/article_attachments/17507437511575"
+        src="https://support.discord.com/hc/article_attachments/33574428981271"
         alt="message-request-settings-options.png" /></span
   ></span>
 </p>
@@ -244,7 +244,7 @@
   <p class="wysiwyg-text-align-center">
     <span style="color: #2e3338"
       ><img
-        src="https://support.discord.com/hc/article_attachments/27644801568919"
+        src="https://support.discord.com/hc/article_attachments/33574428983063"
         width="624"
         height="360"
     /></span>

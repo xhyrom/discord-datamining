@@ -53,7 +53,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/115000272351/thisisnsfw.png"
+    src="https://support.discord.com/hc/article_attachments/115000272351"
     alt="thisisnsfw.png"
   />
 </p>
@@ -64,7 +64,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360007746112/1.png"
+    src="https://support.discord.com/hc/article_attachments/360007746112"
     alt="1.png"
   /> 
 </p>
@@ -74,7 +74,7 @@
 </p>
 <p>
   <img
-    src="https://support.discord.com/hc/article_attachments/4580654542103/unnamed.png"
+    src="https://support.discord.com/hc/article_attachments/4580654542103"
     alt="unnamed.png"
   />
 </p>
@@ -132,12 +132,12 @@
     <strong>"Update my age information"</strong>.</span
   >
 </p>
-<h3>
+<h3 id="h_01K0G0WNBSB1288GWSZ21MAHW4">
   <strong>Note:</strong> <br />- All of the required information needs to be
   visible and readable in ONE photo.<br />- You must send the photo with the
   email address associated with your Discord account
 </h3>
-<h3>
+<h3 id="h_01K0G0WNBSP853P3BVNW204FD6">
   <span class="wysiwyg-color-orange"
     ><strong
       >The information you provide will only be used to verify your age and will
