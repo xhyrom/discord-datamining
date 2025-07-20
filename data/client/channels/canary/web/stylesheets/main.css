@@ -25238,7 +25238,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   background-color: var(--background-base-lowest);
   border-radius: 4px;
   display: flex;
-  padding: 8px 0 8px 8px;
+  padding: 8px 12px 8px 8px;
 }
 .icon_ac65bb {
   color: var(--interactive-normal);
@@ -62388,4 +62388,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3b58de023ab48e64.css.map*/
+/*# sourceMappingURL=12633.fa2d30fca0fb0a90.css.map*/
