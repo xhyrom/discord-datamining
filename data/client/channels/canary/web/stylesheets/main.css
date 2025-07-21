@@ -41664,7 +41664,6 @@ div.mobilePushContainer__3d3b0 {
   height: 100%;
   pointer-events: auto;
   width: 100%;
-  z-index: 1002;
 }
 .pictureInPictureWindow__6341f {
   position: absolute;
@@ -42158,9 +42157,6 @@ div.mobilePushContainer__3d3b0 {
 }
 .videoControls__2cdb8 {
   background: none;
-}
-.pictureInPictureVideo__29048 {
-  z-index: 1002;
 }
 .loading__6ef4d {
   background: var(--background-base-lower);
@@ -62154,4 +62150,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.9a6e835254c533b3.css.map*/
+/*# sourceMappingURL=12633.28b84cbe9b9aeb2c.css.map*/
