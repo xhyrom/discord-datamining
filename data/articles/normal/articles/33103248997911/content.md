@@ -168,7 +168,7 @@
   dropdown menu
 </p>
 <p>
-  4. Select “<strong>Yes”</strong> when asked if your email associated with the
+  6. Select “<strong>Yes”</strong> when asked if your email associated with the
   Discord account was changed
 </p>
 <p>
