@@ -3,6 +3,24 @@
   everyone in our community. Our sensitive content filters are one way we work
   to support our users as they connect and hang out together online.
 </p>
+<div class="info-box">
+  Due to the UK Online Safety Act, new and existing UK users may have different
+  settings to ensure an age-appropriate experience. They may also need to
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    >age verify</a
+  >
+  before disabling sensitive content filters. Learn more about what’s different
+  for UK users
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span

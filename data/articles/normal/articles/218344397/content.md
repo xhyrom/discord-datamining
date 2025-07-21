@@ -1,3 +1,22 @@
+<p>
+  Looking for ways to connect with friends on Discord? Learn how to send friend
+  requests through usernames, profiles, and server member lists, plus solve
+  common issues you may run into while trying to add friends. Whether you're
+  looking to connect with new people or stay in touch with your existing circle,
+  learn how to easily send and manage friend requests to build connections
+  online.
+</p>
+<div class="info-box">
+  Due to the UK Online Safety Act, new and existing UK users will receive safety
+  alerts before accepting friend requests from unfamiliar accounts. Learn more
+  about what’s different for UK users
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -5,78 +24,98 @@
   /></strong>
   <ul>
     <li>
-      <a
-        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
-        >How to Add a Friend</a
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGYND0G6C0645SK6K1"
+          >How to Add a Friend</a
+        ></strong
       >
       <ul>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
-            >Username</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27DP54JNAYPH0R1S"
+              >Username</a
+            ></strong
           >
           <ul>
-            <li>Desktop/Browser</li>
-            <li>Mobile</li>
+            <li><strong>Desktop/Browser</strong></li>
+            <li><strong>Mobile</strong></li>
           </ul>
         </li>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
-            >Profile</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG0WA6RQS7DCRQ2NNF"
+              >Profile</a
+            ></strong
           >
           <ul>
-            <li>Desktop/Browser</li>
-            <li>Mobile</li>
+            <li><strong>Desktop/Browser</strong></li>
+            <li><strong>Mobile</strong></li>
           </ul>
         </li>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
-            >Server Member’s Lis</a
-          >t
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGCQM07TYSXSHZZH1X"
+              >Server Member’s Lis</a
+            >t</strong
+          >
           <ul>
-            <li>Desktop/Browser</li>
+            <li><strong>Desktop/Browser</strong></li>
           </ul>
         </li>
       </ul>
     </li>
     <li>
-      <a
-        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
-        >How to Cancel a Pending Friend Request</a
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTG27E6NZ2EYYF9DJ20"
+          >How to Cancel a Pending Friend Request</a
+        ></strong
       >
       <ul>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
-            >Desktop/Browser</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTGGMKB7H5WZRJR7EBM"
+              >Desktop/Browser</a
+            ></strong
           >
         </li>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
-            >Mobile</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH3MANJA1XZ3YV9WS9"
+              >Mobile</a
+            ></strong
           >
         </li>
       </ul>
     </li>
     <li>
-      <a
-        href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
-        >Common Errors When Adding a Friend</a
+      <strong
+        ><a
+          href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTH03TTM70T93RS6Z2S"
+          >Common Errors When Adding a Friend</a
+        ></strong
       >
       <ul>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
-            >Friend Request Failed</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHKDDP0F9B2G3NR36T"
+              >Friend Request Failed</a
+            ></strong
           >
         </li>
         <li>
-          <a
-            href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
-            >Double Check that the Username is Correct</a
+          <strong
+            ><a
+              href="https://support.discord.com/hc/en-us/articles/218344397#h_01J0KH7RTHDFV75FZMEZ4D5MJA"
+              >Double Check that the Username is Correct</a
+            ></strong
           >
         </li>
       </ul>

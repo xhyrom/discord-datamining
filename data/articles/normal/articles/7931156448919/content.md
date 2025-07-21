@@ -1,87 +1,88 @@
-<p id="docs-internal-guid-28239772-7fff-4a24-c66a-760557b2d5f2">
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li>
-    <strong
-      ><a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
-        >What is Activity Status (Recent Activity)?</a
-      ></strong
-    >
-  </li>
-  <li>
-    <strong
-      ><a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
-        >How to View Activity Status</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX"
-            >Within User Profiles</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV59M70ZB3DY4THZM27"
-            >On Global Activity Cards</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
-            >As a Status Message</a
-          ></strong
-        >
-      </li>
-    </ul>
-  </li>
-  <li>
-    <strong
-      ><a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
-        >How do I control who sees my activity?</a
-      ></strong
-    >
-    <ul>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
-            >Connection Settings</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
-            >Per-server Control</a
-          ></strong
-        >
-      </li>
-      <li>
-        <strong
-          ><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
-            >Recent Activity History</a
-          ></strong
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
+          >What is Activity Status (Recent Activity)?</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
+          >How to View Activity Status</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV5GP22NWFTXYNKW3GX"
+              >Within User Profiles</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV59M70ZB3DY4THZM27"
+              >On Global Activity Cards</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV5ZFGKBM8QNZA4S4JZ"
+              >As a Status Message</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01HTJA8QV5EZK2YFH8G4T6JD9D"
+          >How do I control who sees my activity?</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV5H72HKXSNDXME2NAS">Global Settings</a></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
+              >Connection Settings</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</a></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
+              >Per-server Control</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
+              >Recent Activity History</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01HTJA8QV5YFRR10TQ9RBZM8SS">
   What is Activity Status (Recent Activity)?
 </h1>
@@ -247,6 +248,23 @@
 <h1 id="h_01HTJA8QV5EZK2YFH8G4T6JD9D">
   How do I control who sees my activity?
 </h1>
+<div class="info-box">
+  Due to the UK Online Safety Act, new and existing UK users may have different
+  settings to ensure an age-appropriate experience. They may also need to
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    >age verify</a
+  >
+  before sharing their activity. Learn more about what’s different for UK users
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  ><span style="color: #434343">.</span>
+</div>
 <p>
   By default in most regions, your current and recent activity can be viewed by
   your friends or other users who are in the same server as you. You can control

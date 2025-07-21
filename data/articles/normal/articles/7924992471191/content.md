@@ -11,48 +11,59 @@
 <p>
   <span style="color: #4f545c" data-darkreader-inline-color=""
     >You will need to approve the message request before being able to chat
-    directly with the message requestor. 
-  </span>
+    directly with the message requestor. </span
+  >
 </p>
+<div class="info-box">
+  Due to the UK Online Safety Act, new and existing UK users may have different
+  settings to ensure an age-appropriate experience. They may also need to
+  <a
+    href="https://support.discord.com/hc/articles/30326565624343"
+    target="_blank"
+    rel="noopener noreferrer"
+    >age verify</a
+  >
+  before disabling Message Requests. Learn more about what’s different for UK
+  users
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959/"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</div>
 <div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
+    ></strong
+  >
   <ul>
     <li>
       <strong
-        ><a href="#h_01GSGQB3C28RSFRFMYYV6KWM42" target="_self"
-          ><span style="color: #5865f2" data-darkreader-inline-color=""
-            >What do Message Requests look like?</span
-          ></a
+        ><a href="#h_01GSGQB3C28RSFRFMYYV6KWM42"
+          >What do Message Requests look like?</a
         ></strong
       >
     </li>
     <li>
       <strong
-        ><a href="#h_01GSGQB9DMM2Q45BPS23N6D9NE" target="_self"
-          ><span style="color: #5865f2" data-darkreader-inline-color=""
-            >What is the Spam folder?</span
-          ></a
+        ><a href="#h_01GSGQB9DMM2Q45BPS23N6D9NE"
+          >What is the Spam folder?</a
         ></strong
       >
     </li>
     <li>
       <strong
-        ><a href="#h_01GSGQBGSZ42G3ZDVBD1ZV40R3" target="_self"
-          ><span style="color: #5865f2" data-darkreader-inline-color=""
-            >Message Requests on mobile</span
-          ></a
+        ><a href="#h_01GSGQBGSZ42G3ZDVBD1ZV40R3"
+          >Message Requests on Mobile</a
         ></strong
       >
     </li>
     <li>
       <strong
-        ><a href="#h_01GSGQBPQ3JW1659RJ3S87FF43" target="_self"
-          ><span style="color: #5865f2" data-darkreader-inline-color=""
-            >How to turn Message Requests off</span
-          ></a
+        ><a href="#h_01K0FZPWZH3M20A9ZJK0N89KW1"
+          >How to Turn Message Requests Off</a
         ></strong
       >
     </li>
@@ -114,9 +125,9 @@
 </h4>
 <div class="info-box">
   <span style="color: #666666"
-    ><strong>NOTE</strong>: The Message Requests tab will only display if there
-    is at least one pending request. All Message Requests will display a
-    notification badge on the client.<br
+    >The Message Requests tab will only display if there is at least one pending
+    request. All Message Requests will display a notification badge on the
+    client.<br
   /></span>
 </div>
 <h1 id="h_01GSGQB9DMM2Q45BPS23N6D9NE">What is the Spam Folder?</h1>
@@ -132,6 +143,9 @@
     alt="pasted image 0 (1).png"
   />
 </p>
+<h4 id="h_01K0FZM34R1E6G99VJPE4FVWK5" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Spam Tab in Message Requests</span>
+</h4>
 <p id="docs-internal-guid-ccc5a42e-7fff-9066-54ba-6f731554beab">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     >From this tab, you’ll be able to view user profiles to check shared
@@ -145,7 +159,10 @@
     alt="pasted image 0 (2).png"
   />
 </p>
-<h1 id="h_01GSGQBGSZ42G3ZDVBD1ZV40R3">Message Requests on mobile</h1>
+<h4 id="h_01K0FZMJ6MAGNHNH5HMXRZPX9S" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Preview for a Message Requests</span>
+</h4>
+<h1 id="h_01GSGQBGSZ42G3ZDVBD1ZV40R3">Message Requests on Mobile</h1>
 <p id="docs-internal-guid-6347a724-7fff-cd84-b3c7-e30a8dca3d27">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     >On your mobile device, you can tap into your DMs and find a tab labeled
@@ -198,21 +215,14 @@
   class="wysiwyg-text-align-center"
 >
   <span style="color: #4f545c" data-darkreader-inline-color=""
-    >Direct Messages tab &gt; Message Requests tab on mobile</span
-  >
-</h4>
-<h4 id="h_01HA83TR8Z6BH2BVQ6019MVMP2" class="wysiwyg-text-align-center">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
+    >Direct Messages tab &gt; Message Requests tab on mobile<br /></span
+  ><span style="color: #4f545c" data-darkreader-inline-color=""
     >Preview enabled (middle image), Preview disabled (image located on
     right)</span
   >
 </h4>
-<h1 id="h_01GSGQBPQ3JW1659RJ3S87FF43">
-  <span style="color: #4f545c" data-darkreader-inline-color=""
-    >How to turn Message Requests off</span
-  >
-</h1>
-<p class="wysiwyg-text-align-center">
+<h1 id="h_01K0FZPWZH3M20A9ZJK0N89KW1">How to Turn Message Requests Off</h1>
+<p class="wysiwyg-text-align-left">
   <span style="color: #4f545c" data-darkreader-inline-color=""
     ><span
       id="docs-internal-guid-9120f491-7fff-dd9f-55a4-0f0420b6a569"
@@ -222,15 +232,28 @@
       <strong
         >Server dropdown menu &gt; Select Privacy Settings &gt; Toggle off
         “Message Requests”</strong
-      >:<img
+      >:</span
+    ></span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <span style="color: #4f545c" data-darkreader-inline-color=""
+    ><span
+      id="docs-internal-guid-9120f491-7fff-dd9f-55a4-0f0420b6a569"
+      style="color: #4f545c"
+      data-darkreader-inline-color=""
+      ><img
         src="https://support.discord.com/hc/article_attachments/33574428981271"
         alt="message-request-settings-options.png" /></span
   ></span>
 </p>
+<h4 id="h_01K0FZR0KVF1N67K765F9VJP3S" class="wysiwyg-text-align-center">
+  <span style="color: #4f545c">Message Requests Disabled</span>
+</h4>
 <div class="info-box">
   <p class="wysiwyg-text-align-left">
-    <strong>NOTE</strong>: Turning this feature off in a server will disable
-    Message Requests from that server.
+    Turning this feature off in a server will disable Message Requests from that
+    server.
   </p>
   <p id="docs-internal-guid-c4f39c91-7fff-baf8-1245-b57a3d311531">
     This means that, unless restricted by <strong>Server Settings</strong> or
@@ -274,18 +297,10 @@
     ></a
   >.
 </p>
-<p id="docs-internal-guid-2fc75f60-7fff-87e4-d367-348312d519a1">
-  <span
-    style="color: #4f545c; background-color: #ffffff"
-    data-darkreader-inline-color=""
-    data-darkreader-inline-bgcolor=""
-    >Please note that the spam folder cannot be turned off at this time. </span
-  >
-</p>
 <div class="info-box">
   <p id="h_01HD4H51136BKQZSSBEGQAM0VJ">
-    <strong>NOTE</strong>: The spam folder cannot be disabled at this time.<br />In
-    some countries and circumstances, you won't be able to disable message
-    requests or access global or server-specific message request settings.
+    The spam folder cannot be disabled at this time.<br />In some countries and
+    circumstances, you won't be able to disable message requests or access
+    global or server-specific message request settings.
   </p>
 </div>
