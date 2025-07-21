@@ -22357,6 +22357,10 @@ span.clanTag__5d473 {
   right: 0;
   width: 48px;
 }
+.high-contrast-mode .wrapper__4e6ce {
+  border-right: 1px solid var(--border-subtle);
+  box-sizing: border-box;
+}
 .enable-forced-colors .wrapper__4e6ce {
   border-right: 1px solid CanvasText;
 }
@@ -23031,6 +23035,10 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   pointer-events: none;
   position: absolute;
   width: 100%;
+}
+.high-contrast-mode .wrapper_c0e32c:not(.emojiPickerHasTabWrapper_c0e32c) {
+  border: 1px solid var(--border-normal);
+  contain: content;
 }
 .emojiPicker_c0e32c {
   background-color: var(--background-surface-high);
@@ -24641,6 +24649,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .result__2dc39[data-focused="true"] {
   box-shadow: 0 0 0 2px var(--focus-primary);
 }
+.high-contrast-mode .result__2dc39 {
+  border: 1px solid var(--border-strong);
+}
 .gif__2dc39 {
   background-color: transparent;
   border-radius: 5px;
@@ -25729,6 +25740,10 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
     background-color 0.1s ease-in-out,
     color 0.1s ease-in-out;
 }
+.high-contrast-mode .navButton__08434 {
+  border: 1px solid var(--border-subtle);
+  box-sizing: border-box;
+}
 .navButton__08434:hover {
   background-color: var(--button-secondary-background-hover);
   color: var(--interactive-hover);
@@ -25738,13 +25753,17 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   color: var(--interactive-active);
 }
 .navButtonActive__08434 {
-  background-color: var(--button-secondary-background);
-  color: var(--button-secondary-text);
+  background-color: var(--background-mod-normal);
+  color: var(--text-primary);
 }
 .navButtonActive__08434:active,
 .navButtonActive__08434:hover {
-  background-color: var(--background-modifier-hover);
+  background-color: var(--background-mod-strong);
   color: var(--interactive-active);
+}
+.high-contrast-mode .navButtonActive__08434 {
+  border: 1px solid var(--border-normal);
+  box-sizing: border-box;
 }
 .resizeHandle__08434 {
   cursor: ew-resize;
@@ -53955,9 +53974,9 @@ html.disable-forced-colors * {
   --control-border-primary-default: var(--blurple-18);
   --control-border-primary-hover: var(--blurple-18);
   --control-border-primary-loading: var(--blurple-18);
-  --control-border-secondary-active: var(--neutral-39);
-  --control-border-secondary-default: var(--neutral-39);
-  --control-border-secondary-hover: var(--neutral-39);
+  --control-border-secondary-active: var(--neutral-36);
+  --control-border-secondary-default: var(--neutral-36);
+  --control-border-secondary-hover: var(--neutral-36);
   --control-border-secondary-loading: var(--neutral-35);
   --control-icon-critical-secondary-active: var(--red-new-6);
   --control-icon-critical-secondary-default: var(--red-new-6);
@@ -53980,6 +53999,7 @@ html.disable-forced-colors * {
   --control-text-secondary-hover: var(--white);
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
+  --focus-primary: var(--blue-new-18);
   --header-muted: var(--neutral-12);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -54004,7 +54024,7 @@ html.disable-forced-colors * {
   );
   --info-warning-text: var(--yellow-new-7);
   --input-background: hsl(var(--opacity-black-28-hsl) / 0.2784313725490196);
-  --input-border: var(--neutral-39);
+  --input-border: var(--neutral-36);
   --input-placeholder-text: var(--neutral-29);
   --interactive-active: var(--white);
   --interactive-hover: var(--white);
@@ -54216,6 +54236,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --focus-primary: color-mix(
+      in oklab,
+      var(--blue-new-18) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --header-muted: color-mix(
       in oklab,
       var(--neutral-12) 100%,
@@ -54326,7 +54352,7 @@ html.disable-forced-colors * {
     );
     --input-border: color-mix(
       in oklab,
-      var(--neutral-39) 100%,
+      var(--neutral-36) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -54735,6 +54761,7 @@ html.disable-forced-colors * {
   --control-text-secondary-hover: var(--black);
   --control-text-secondary-loading: var(--black);
   --embed-title: var(--black);
+  --focus-primary: var(--blue-new-63);
   --header-muted: var(--neutral-49);
   --header-primary: var(--black);
   --header-secondary: var(--neutral-76);
@@ -54968,6 +54995,12 @@ html.disable-forced-colors * {
       var(--black) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --focus-primary: color-mix(
+      in oklab,
+      var(--blue-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -55494,6 +55527,7 @@ html.disable-forced-colors * {
   --control-text-secondary-hover: var(--white);
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
+  --focus-primary: var(--blue-new-34);
   --header-muted: var(--neutral-23);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-6);
@@ -55729,6 +55763,12 @@ html.disable-forced-colors * {
       var(--white) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --focus-primary: color-mix(
+      in oklab,
+      var(--blue-new-34) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -56247,6 +56287,7 @@ html.disable-forced-colors * {
   --control-text-secondary-hover: var(--white);
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
+  --focus-primary: var(--blue-new-29);
   --header-muted: var(--neutral-19);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -56482,6 +56523,12 @@ html.disable-forced-colors * {
       var(--white) 100%,
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
+    );
+    --focus-primary: color-mix(
+      in oklab,
+      var(--blue-new-29) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
     );
     --header-muted: color-mix(
       in oklab,
@@ -62312,4 +62359,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.284ff4e56754dbeb.css.map*/
+/*# sourceMappingURL=12633.8e40a647d09d7df8.css.map*/
