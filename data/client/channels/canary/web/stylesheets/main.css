@@ -16270,12 +16270,17 @@ svg.radioIcon_c1e9c4 {
 }
 .bioRhyme__89a31 {
   font-family: BioRhyme, Arial, sans-serif;
+  letter-spacing: 0.03em;
 }
 .cherryBomb__89a31 {
   font-family:
     Cherry Bomb One,
     Arial,
     sans-serif;
+}
+.cherryBomb__89a31,
+.chicle__89a31 {
+  letter-spacing: 0.04em;
 }
 .chicle__89a31 {
   font-family: Chicle, Arial, sans-serif;
@@ -16288,24 +16293,28 @@ svg.radioIcon_c1e9c4 {
     Museo Moderno,
     Arial,
     sans-serif;
+  letter-spacing: 0.01em;
 }
 .neoCastel__89a31 {
   font-family:
     Neo Castel,
     Arial,
     sans-serif;
+  letter-spacing: 0.02em;
 }
 .pixelify__89a31 {
   font-family:
     Pixelify Sans,
     Arial,
     sans-serif;
+  letter-spacing: 0.02em;
 }
 .ribes__89a31 {
   font-family: Ribes, Arial, sans-serif;
 }
 .sinistre__89a31 {
   font-family: Sinistre, Arial, sans-serif;
+  letter-spacing: 0.01em;
 }
 .container_dfb989 {
   display: inline-flex;
@@ -62303,4 +62312,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.7626d714b6b4bc19.css.map*/
+/*# sourceMappingURL=12633.817d272bf47a3080.css.map*/
