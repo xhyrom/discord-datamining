@@ -11,6 +11,31 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Call of Duty: Mobile<br /></strong
+  ><strong>Quest Name: CALL OF DUTY: MOBILE Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the<strong>
+    Call of Duty: Mobile </strong
+  >video in Discord to receive a
+  <strong>Call of Duty: Mobile Avatar Decoration.<br /></strong
+  ><strong>Who is Eligible: </strong>Available to users on mobile where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions including: Belgium, Brunei, Cambodia, China, Congo,
+  Hong Kong, Indonesia, Korea, Laos, Macau, Malaysia, Philippines, Singapore,
+  Taiwan, Thailand, and Vietnam.<br /><strong>Availability Period:</strong> The
+  <strong>CALL OF DUTY: MOBILE Quest </strong>can be accepted on the Discord
+  mobile app from <strong>July 21, 2025 </strong>until<strong>
+    July 27, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>August 27, 2025 (11:59 PM UTC)</strong>.<br />The
+  <strong>Call of Duty: Mobile Avatar Decoration</strong> is a limited-time
+  Avatar Decoration and will only be yours as an Avatar Decoration until
+  <strong>September 27, 2025 (11:59PM UTC)</strong>. After this date, you will
+  no longer have access to this Avatar Decoration. <br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Star Trek: Strange New Worlds<br /></strong
   ><strong>Quest Name: Star Trek: Strange New Worlds Quest<br /></strong
   ><strong>Offer Details: </strong>Watch
