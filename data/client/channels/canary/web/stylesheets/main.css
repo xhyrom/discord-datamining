@@ -16031,6 +16031,10 @@ svg.radioIcon_c1e9c4 {
 .questsIcon_c9d15c {
   flex-shrink: 0;
 }
+.hangStatusIcon_c9d15c {
+  height: 14px;
+  width: 14px;
+}
 .customStatusLabel_c9d15c {
   white-space: nowrap;
 }
@@ -16930,7 +16934,7 @@ svg.radioIcon_c1e9c4 {
   max-width: 362px;
   min-width: 340px;
   overflow: hidden;
-  padding: var(--space-32) var(--space-24);
+  padding: var(--space-32) var(--space-20);
   position: relative;
   width: 25%;
 }
@@ -62357,4 +62361,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.90e3e537aa165f7b.css.map*/
+/*# sourceMappingURL=12633.c7b9c43db467cd86.css.map*/
