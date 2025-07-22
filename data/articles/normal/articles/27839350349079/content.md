@@ -11,6 +11,33 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Wildgate Launch<br /></strong
+  ><strong>Quest Name: Wildgate Launch Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>Wildgate Launch </strong>video
+  in Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  >.<br /><strong>Who is Eligible:</strong> Available to users in the
+  <strong>United States</strong>, <strong>Brazil</strong>,
+  <strong>Great Britain</strong>, <strong>France</strong>,
+  <strong>Germany</strong>, <strong>Australia</strong>, and
+  <strong>Canada</strong> on the desktop app or browser client where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
+  <strong>Wildgate Launch Quest</strong> can be accepted on Discord the
+  <strong>desktop app</strong> or <strong>browser clien</strong>t from
+  <strong>July 22, 2025</strong> until
+  <strong>July 28, 2025 (11:59PM UTC)</strong>.<br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>August 28, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Call of Duty: Mobile<br /></strong
   ><strong>Quest Name: CALL OF DUTY: MOBILE Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>
