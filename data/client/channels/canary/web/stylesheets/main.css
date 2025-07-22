@@ -10703,11 +10703,11 @@ svg.radioIcon_c1e9c4 {
   bottom: 0;
   display: flex;
   justify-content: center;
-  left: 0.05px;
+  left: 0;
   pointer-events: none;
   position: absolute;
   right: 0;
-  top: -0.05px;
+  top: 0;
 }
 :where(.redesignIconChildContainer__3e3b0) > svg {
   height: 10px;
@@ -62359,4 +62359,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.8e40a647d09d7df8.css.map*/
+/*# sourceMappingURL=12633.164f615a15e4168c.css.map*/
