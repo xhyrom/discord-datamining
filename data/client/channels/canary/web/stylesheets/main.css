@@ -8618,10 +8618,7 @@ svg.radioIcon_c1e9c4 {
   --__header-bar-background: var(--background-base-lower);
   border-bottom: 1px solid var(--border-subtle);
   height: var(--custom-channel-header-height);
-  padding-left: calc(
-    var(--custom-message-margin-horizontal) - var(--space-4) +
-      var(--custom-chat-aligned-icon-offset)
-  );
+  padding-left: calc(var(--custom-message-margin-horizontal));
 }
 .container__9293f,
 .container__9293f * {
@@ -8714,7 +8711,6 @@ svg.radioIcon_c1e9c4 {
   flex: 0 0 auto;
   margin: 0 8px 0 0;
   min-width: auto;
-  padding-left: calc(var(--space-xs) - var(--space-12) / 2);
 }
 .clickable__9293f {
   cursor: pointer;
@@ -8732,9 +8728,16 @@ svg.radioIcon_c1e9c4 {
 .icon__9293f {
   display: block;
   -webkit-app-region: no-drag;
-  color: var(--channel-icon);
   height: var(--chat-input-icon-size);
   width: var(--chat-input-icon-size);
+}
+.channelIcon__9293f {
+  margin-left: -1px;
+  margin-right: calc(var(--custom-message-margin-horizontal) / 2 + 1px);
+  width: auto;
+}
+.icon__9293f {
+  color: var(--channel-icon);
 }
 .clickable__9293f .icon__9293f {
   color: var(--icon-tertiary);
@@ -62536,4 +62539,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.05e5754a48f07108.css.map*/
+/*# sourceMappingURL=12633.983516dc5d0ea696.css.map*/
