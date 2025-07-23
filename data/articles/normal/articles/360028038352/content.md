@@ -505,7 +505,7 @@
 </ul>
 <p>This means if your server has 10 total Boosts, you could: </p>
 <ul>
-  <li>Use 7 for Level 2 and 3 for one additional perk [NEW] </li>
+  <li>Use 7 for Level 2 and 3 for one additional perk  </li>
   <li>Use 2 for Level 1 and 6 for two additional perks (3 each)</li>
   <li>Use 7 for Level 2 and save up for more Boosts to get to Level 3 later</li>
 </ul>
