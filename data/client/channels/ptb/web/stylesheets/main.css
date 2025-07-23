@@ -28640,7 +28640,7 @@ body .headerAnimation_b54a5b {
   transition: transform 0.4s ease-out;
 }
 .cardElementContainer_ceece4.visible_ceece4 {
-  min-height: 324px;
+  min-height: auto;
 }
 .customPaymentElementContainer_ceece4.visible_ceece4 {
   min-height: 160px;
@@ -62361,4 +62361,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.c7b9c43db467cd86.css.map*/
+/*# sourceMappingURL=12633.3233611d6af7c7ea.css.map*/
