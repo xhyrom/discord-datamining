@@ -3297,7 +3297,6 @@
             SEARCH_FAVORITES: "/search/favorites",
             SEARCH_TABS_GUILD: (t) =>
               "/guilds/".concat(t, "/messages/search/tabs"),
-            SEARCH_DMS: "/users/@me/messages/search",
             SEARCH_TABS_DMS: "/users/@me/messages/search/tabs",
             CHANGELOG_MESSAGES: "/changelogs/@me/messages",
             GUILD_APPLICATIONS: (t) => "/guilds/".concat(t, "/applications"),
@@ -5158,6 +5157,8 @@
           (r.DISMISSIBLE_CONTENT_SHOWN_BEFORE_CONNECTION_OPEN =
             "dismissible_content_shown_before_connection_open"),
           (r.DISMISSIBLE_CONTENT_DISMISSED = "dismissible_content_dismissed"),
+          (r.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN =
+            "dismissible_content_dismissed_before_connection_open"),
           (r.DISMISSIBLE_CONTENT_REJECTED = "dismissible_content_rejected"),
           (r.PREMIUM_CHANGELOG_CTA_CLICKED = "premium_changelog_cta_clicked"),
           (r.JUMP = "jump"),
@@ -6035,6 +6036,11 @@
           (r.UPDATER_METRICS_COMBINED = "updater_metrics_combined"),
           (r.UPDATER_METRICS_TRANSITION_STATUS =
             "updater_metrics_transition_status"),
+          (r.SET_HANG_STATUS = "set_hang_status"),
+          (r.CLEAR_HANG_STATUS = "clear_hang_status"),
+          (r.SWIPE_HANG_STATUS = "swipe_hang_status"),
+          (r.VIEW_HANG_STATUS = "view_hang_status"),
+          (r.HANG_STATUS_CTA_CLICKED = "hang_status_cta_clicked"),
           (r.MEMBER_VERIFICATION_APPLICATION_VIEWED =
             "member_verification_application_viewed"),
           (r.GUILD_MEMBER_APPLICATION_REPORTED =
@@ -6892,7 +6898,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-22-5373494834688ee541a199290989d78b75880102-discord_web",
+              "2025-07-23-c5d1284774dc5f0bdfe8266f48a9157783ca4e55-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6958,8 +6964,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "421431"),
-            o.YA("builtAt", String("1753169134843"));
+            o.YA("buildNumber", "422112"),
+            o.YA("builtAt", String("1753292557178"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48257,4 +48263,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f7a49f4f1e491f97.js.map
+//# sourceMappingURL=sentry.f26a01ffb06db35c.js.map
