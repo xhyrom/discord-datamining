@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6201069002,
   "location": {
-    "name": "New York"
+    "name": "New York, NY"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8086588002,
-  "updated_at": "2025-07-22T12:57:49-04:00",
+  "updated_at": "2025-07-23T18:54:21-04:00",
   "requisition_id": "R-100987",
   "title": "Account Executive, Media and Entertainment",
   "company_name": "Discord",
