@@ -39650,10 +39650,17 @@ img.thumbnail__0f2e8 {
   margin-right: 8px;
 }
 .button__7d7f7 {
+  align-items: center;
   border: 1px solid var(--user-profile-border);
   border-radius: var(--radius-sm);
+  box-sizing: border-box;
   color: var(--interactive-normal);
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
   height: 24px;
+  max-height: 24px;
+  min-height: 24px;
   padding: 4px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -62361,4 +62368,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.3233611d6af7c7ea.css.map*/
+/*# sourceMappingURL=12633.157336e24141d097.css.map*/
