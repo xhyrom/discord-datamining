@@ -2,7 +2,7 @@
 
 ## Senior Product Designer, Safety (Temporary Position)
 
-**Location:** Remote (U.S.)
+**Location:** San Francisco Bay Area or Remote (U.S.)
 
 **Id:** 8011672002 <br/>
 **Internal Job Id:** 6169985002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8011672002](https://discord.com/jobs/8011672002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Wed, 23 Jul 2025 16:48:39 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The safety team is building the experiences for user privacy, safety, and trust for the company. As a senior product designer, you'll be involved with the full product development process; from the brainstorming phase, all the way to launch.&amp;nbsp;

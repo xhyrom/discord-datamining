@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Consumer Revenue 
 
-**Location:** Remote (U.S.)
+**Location:** San Francisco Bay Area or Remote (U.S.)
 
 **Id:** 7855519002 <br/>
 **Internal Job Id:** 6098714002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7855519002](https://discord.com/jobs/7855519002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Wed, 23 Jul 2025 16:50:27 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a technical, hands-on, and mission-focused Staff Engineer to help scale our technology and revenue driving products. You will help oversee the technical roadmap across our Consumer Revenue org. You will work with teams across the organization such as Engineering, Product, Data Science, Design and Marketing to ensure that the technical strategy maps to the revenue goals of the team. Come help us scale our platform and products to directly promote the vision of multi-billion dollars in revenue at Discord.
