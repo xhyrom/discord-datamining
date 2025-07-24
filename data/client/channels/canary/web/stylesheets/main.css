@@ -43332,10 +43332,6 @@ html.disable-forced-colors * {
   margin-top: 16px;
   padding: 0 var(--custom-client-themes-editor-editor-padding);
 }
-.footerButton__2a891 {
-  padding: 11px;
-  width: 100%;
-}
 .closeCircleButton__2a891 {
   cursor: pointer;
   height: 20px;
@@ -43562,10 +43558,6 @@ html.disable-forced-colors * {
   margin-top: 16px;
   padding: 0 var(--custom-client-themes-editor-editor-padding);
 }
-.footerButton_cf6da1 {
-  padding: 11px;
-  width: 100%;
-}
 .closeCircleButton_cf6da1 {
   cursor: pointer;
   height: 20px;
@@ -43620,6 +43612,15 @@ html.disable-forced-colors * {
 .addColorButtonText_b29565 {
   color: var(--text-brand);
   text-transform: capitalize;
+}
+.addColorButton_b29565 {
+  cursor: pointer;
+}
+.addColorButton_b29565.disabled_b29565 {
+  cursor: not-allowed;
+}
+.addColorButton_b29565.disabled_b29565 .addColorButtonText_b29565 {
+  color: var(--text-muted);
 }
 .gradientBar_b29565 {
   border-radius: 8px;
@@ -43705,7 +43706,6 @@ html.disable-forced-colors * {
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  gap: 4px;
   margin-left: 8px;
 }
 .hexInputInner_b29565 {
@@ -43737,12 +43737,6 @@ html.disable-forced-colors * {
 }
 .icon_b29565 {
   display: block;
-}
-.iconWithHover_b29565 {
-  fill: var(--icon-tertiary);
-}
-.iconButton_b29565:hover .iconWithHover_b29565 {
-  fill: var(--icon-primary);
 }
 .eyeDropperTooltip_b29565 {
   max-width: 130px;
@@ -43777,21 +43771,12 @@ html.disable-forced-colors * {
   width: 227px;
 }
 .headerContainer__68a18 {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   gap: 4px;
 }
 .closeButton__68a18 {
   margin-left: auto;
-}
-.closeIcon__68a18 {
-  display: block;
-}
-.closeIconWithHover__68a18 {
-  fill: var(--icon-tertiary);
-}
-.closeButton__68a18:hover .closeIconWithHover__68a18 {
-  fill: var(--icon-primary);
 }
 .sliderContainer__68a18 {
   display: flex;
@@ -43801,73 +43786,26 @@ html.disable-forced-colors * {
 .gradientDirectionSliderContainer__68a18 {
   margin-bottom: 4px;
 }
-.resetButton__68a18 {
-  background: var(--background-modifier-hover);
-  border: 1px solid var(--border-faint);
-  color: var(--text-default);
-}
-.resetButton__68a18:hover {
-  background: var(--border-subtle);
-}
-.resetButtonContent__68a18 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-}
 .surpriseMeButton__68a18 {
   background: var(--background-modifier-hover);
   border: 1px solid var(--border-faint);
-  color: var(--text-default);
-}
-.surpriseMeButton__68a18:hover {
-  background: var(--border-subtle);
-}
-.surpriseMeButtonContent__68a18 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  padding: 5px;
-}
-.shareButton__68a18 {
-  background: var(--background-modifier-hover);
-  border: 1px solid var(--border-faint);
-  color: var(--text-default);
-}
-.shareButton__68a18:hover {
-  background: var(--border-subtle);
-}
-.shareButtonContent__68a18 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  padding: 5px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
 }
 .footerContainer__68a18 {
   align-items: center;
   border-top: 1px solid var(--border-subtle);
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 16px 20px;
 }
 .footerRightButtons__68a18 {
   align-items: center;
   display: flex;
+  gap: 24px;
   justify-content: flex-end;
   width: 100%;
-}
-.backButton__68a18 {
-  color: var(--text-default);
-  flex: 0 1 80px;
-  height: 40px;
-  min-width: 50px;
-}
-.applyButton__68a18 {
-  flex-shrink: 0;
-  height: 40px;
-  width: 80px;
 }
 .subscribeButton__68a18 {
   color: var(--white);
@@ -43894,14 +43832,11 @@ html.disable-forced-colors * {
   margin-top: var(--space-4);
 }
 .coachmarkFooterContainer__68a18 {
+  border-top: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
-  margin: var(--space-16) 16px var(--space-16) 20px;
-}
-.coachmarkSecondButton__68a18 {
-  height: 40px;
-  margin-top: var(--space-8);
-  width: 100%;
+  gap: var(--space-8);
+  padding: var(--space-16) var(--space-20);
 }
 .nitroIcon__68a18 {
   fill: var(--icon-primary);
@@ -62539,4 +62474,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.983516dc5d0ea696.css.map*/
+/*# sourceMappingURL=12633.22f1b9276b4c4680.css.map*/
