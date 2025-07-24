@@ -11,6 +11,32 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: SUPERVIVE<br /></strong
+  ><strong>Quest Name: SUPERVIVE 1.0 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>SUPERVIVE</strong> to receive a
+  <strong>Chomp Chomp Avatar Decoration</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players that are 18+ who have access to
+  <strong>SUPERVIVE </strong>and <strong>Discord</strong> on PC. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>SUPERVIVE 1.0 Quest</strong> can be accepted on
+  <strong>PC</strong> from <strong>July 24, 2025</strong> until
+  <strong>August 10, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 10, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Chomp Chomp Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>October 10, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. <br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Wildgate Launch<br /></strong
   ><strong>Quest Name: Wildgate Launch Quest<br /></strong
   ><strong>Offer Details: </strong>Watch <strong>Wildgate Launch </strong>video
