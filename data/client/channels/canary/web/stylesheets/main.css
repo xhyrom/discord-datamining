@@ -7557,12 +7557,12 @@ svg.radioIcon_c1e9c4 {
 }
 .icon__9e06a {
   height: 16px;
-  margin-right: var(--space-8);
   width: 16px;
 }
 .controlText__9e06a {
   align-items: center;
   display: flex;
+  gap: var(--space-8);
 }
 .pillItemText__9e06a {
   line-height: 1;
@@ -62475,4 +62475,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.5b309cd6ce631211.css.map*/
+/*# sourceMappingURL=12633.b267d61a1ec03e34.css.map*/
