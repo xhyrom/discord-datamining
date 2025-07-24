@@ -16355,7 +16355,7 @@ svg.radioIcon_c1e9c4 {
 .showEffect_dfb989.toon_dfb989 {
   paint-order: stroke fill;
   position: relative;
-  -webkit-text-stroke-width: 0.2em;
+  -webkit-text-stroke-width: 0.14em;
   -webkit-text-stroke-color: var(--custom-display-name-styles-dark-2-color);
   color: var(--custom-display-name-styles-dark-2-color);
 }
@@ -62474,4 +62474,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.22f1b9276b4c4680.css.map*/
+/*# sourceMappingURL=12633.f9d1031b56357962.css.map*/
