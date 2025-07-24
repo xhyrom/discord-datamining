@@ -1,13 +1,23 @@
 <div class="mega-box">
-  <strong><span style="color: #434343">What’s New:</span></strong>
-  <span style="color: #434343"><br /></span
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >What’s New:</span
+    ></strong
+  >
+  <span style="color: #434343" data-darkreader-inline-color=""><br /></span
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >Server Boosting just got more flexible! You can now use your available
     Boosts to unlock additional perks like </span
-  ><strong><span style="color: #434343">Server Tags</span></strong
-  ><span style="color: #434343"> and </span
-  ><strong><span style="color: #434343">Enhanced Role Styles</span></strong
-  ><span style="color: #434343">
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Server Tags</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""> and </span
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Enhanced Role Styles</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
     without needing to reach higher server levels.</span
   >
 </div>
@@ -127,17 +137,18 @@
       >
     </li>
     <li>
-      <strong
-        ><a href="#h_01HGX7DJ34RX96KX2RBPEANZKB"
-          >Server Owner/Admin View Of Server Boosts</a
-        ></strong
+      <a href="#h_01K0Z1N8S2B4NM1ZPQWAR243BR"
+        >Server Boosting for Server Owner/Admin</a
       >
       <ul>
         <li>
-          <strong
-            ><a href="#h_01JXWRJZQVZ41QP7XNF1BMW8RH"
-              >Managing Your Server's Boosts and Perks</a
-            ></strong
+          <a href="#h_01K0Z1N8S2J1NEDP1C4ECPND7X"
+            >Server Boosting Server Role</a
+          >
+        </li>
+        <li>
+          <a href="#h_01K0Z1N8S20H13HJBAGCR0FWVH"
+            >Server Owner/Admin View Of Server Boosts</a
           >
         </li>
         <li>
@@ -270,6 +281,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
+      data-darkreader-inline-color=""
       >Enhanced Role Styles (3 Boosts)</strong
     ><span
       style="
@@ -277,6 +289,7 @@
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
           Helvetica, Arial, sans-serif;
       "
+      data-darkreader-inline-color=""
     >
       - Make certain roles stand out with animated gradient and holographic
       effects that go beyond standard solid colors</span
@@ -291,6 +304,11 @@
     height="231"
   />
 </p>
+<h4 id="h_01K0Z1J0H0RE0VKFYB1Y6MCAV2" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Server Boosting badge</span
+  >
+</h4>
 <p>
   When you boost a server, you’ll also see this new shiny badge in your User
   Profile to display your love for boosting servers.
@@ -311,6 +329,11 @@
       height="159"
   /></span>
 </p>
+<h4 id="h_01K0Z1J8WTZR0M707PK87P1SPT" class="wysiwyg-text-align-center">
+  <span style="color: #2e3338" data-darkreader-inline-color=""
+    >Server Boosting badge progress</span
+  >
+</h4>
 <h2 id="h_01HGX7DJ332WE7WX2XH0FEN6H9">Nitro Subscription Perks</h2>
 <p>Subscribers get to enjoy Server Boosting perks depending on the plan!</p>
 <ul>
@@ -370,6 +393,11 @@
     height="351"
   />
 </p>
+<h4 id="h_01K0Z1JM8PC72535KXMAEXAK0H" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >How to Boost a server</span
+  >
+</h4>
 <div class="book-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >If you'd like to Boost your server directly to the next Level in one button
@@ -401,13 +429,18 @@
   available Server Boosts—no specific level required!
 </p>
 <div class="warn-box">
-  <strong><span style="color: #434343">Important:</span></strong
-  ><span style="color: #434343">
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Important:</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
     Additional perks use dedicated Boosts that are separate from those
     maintaining your server level. You'll need </span
   ><strong
-    ><span style="color: #434343">available (unallocated) Boosts</span></strong
-  ><span style="color: #434343">
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >available (unallocated) Boosts</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color="">
     to unlock them—Boosts already allocated to your server level won't count
     toward additional perks. Each perk requires ongoing Boosts to remain active,
     similar to how server levels require ongoing Boosts.</span
@@ -429,7 +462,9 @@
   />
 </p>
 <h4 id="h_01JXWRENPDKMVMVFMWFR3YENFC" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Example of Server Boosts tab in a server</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Server Boosts tab in a server</span
+  >
 </h4>
 <p>
   2. In the upper-right, you’ll see how many Server Boosts are available and
@@ -443,7 +478,9 @@
   />
 </p>
 <h4 id="h_01JXWRENPDTXQBAJTP217V0VPK" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Example of Available Server Boosts</span>
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Available Server Boosts</span
+  >
 </h4>
 <p>
   3. You can apply your available Server Boosts to any of the available
@@ -458,31 +495,46 @@
   /></strong>
 </p>
 <h4 id="h_01JXWRENPDHNAM5CBB3V6V563V" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Enable Perk option for purchasing additional perks</span
   >
 </h4>
 <div class="warn-box">
-  <strong><span style="color: #434343">Important:</span></strong
-  ><span style="color: #434343">
-    If your server's Boost count drops and you no longer have enough Boosts
-    allocated to a perk, that perk will be disabled. Enhanced Role Styles will
-    automatically revert to solid colors, and Server Tags will be removed from
-    member profiles. Server owners and admins can choose which perks to
-    prioritize when managing limited Boosts.</span
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Important:</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    ><span style="color: #434343" data-darkreader-inline-color="">
+      If your server's Boost count drops and you no longer have enough Boosts
+      allocated to a perk, that perk will be disabled. Enhanced Role Styles will
+      automatically revert to solid colors, and Server Tags will be removed from
+      member profiles. Server owners and admins can choose which perks to
+      prioritize when managing limited Boosts.</span
+    ></span
   >
-  <p id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
-    <span style="color: #434343"
-      ><img
-        src="https://support.discord.com/hc/article_attachments/32847285274903"
-        width="272"
-        height="395"
-    /></span>
-  </p>
 </div>
+<p id="h_01JXWRENPDYDYCHZA7QV4KYTVR" class="wysiwyg-text-align-center">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    ><img
+      src="https://support.discord.com/hc/article_attachments/32847285274903"
+      width="272"
+      height="395"
+  /></span>
+</p>
+<h4 id="h_01K0Z1K222SJFCVVMEAR11KJ09" class="wysiwyg-text-align-center">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Server Tag</span
+    ></span
+  >
+</h4>
 <div class="info-box">
-  <strong><span style="color: #434343">Info: </span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Info:
+    </span></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >Additional perks can currently only be unlocked and configured on desktop
     at this time.</span
   >
@@ -554,6 +606,11 @@
     height="247"
   />
 </p>
+<h4 id="h_01K0Z1KCHX0078YP0HJPZRX1V4" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Server Boosting badge and length of boosting</span
+  >
+</h4>
 <p>
   Your Server Boosting Badge and streak is based on the length of time that you
   have been boosting a server. Regardless of how many servers you boost, the
@@ -624,22 +681,112 @@
     height="351"
   />
 </p>
-<h1 id="h_01HGX7DJ34RX96KX2RBPEANZKB">
-  Server Owner/Admin View Of Server Boosts
+<h4 id="h_01K0Z1KR0RQHS6QBGHHH00M9X3" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >How to Transfer a Server Boost</span
+  >
+</h4>
+<h1 id="h_01K0Z1N8S2B4NM1ZPQWAR243BR">
+  Server Boosting for Server Owner/Admin
 </h1>
+<p>
+  As a Server Owner or Admin of a server, you’ll have access to additional
+  information and settings when it comes to your server. 
+</p>
+<h2 id="h_01K0Z1N8S2J1NEDP1C4ECPND7X">Server Boosting Server Role</h2>
+<div class="warn-box">
+  <strong>Important:</strong> The Server Booster role is automatically applied
+  to members that have Boosted your server, and cannot be deleted. You will not
+  be able to manually add or remove a user to this role.
+</div>
+<div class="exp-box">
+  Enhanced Role Styles for your server’s Server Boosting Role is currently
+  available as an experiment only for select servers.
+</div>
+<p>
+  The Server Booster role in your server is set to a pink gradient
+  <a
+    href="https://support.discord.com/hc/en-us/articles/31444213087255-Enhanced-Role-Styles"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Enhanced Role Style</a
+  >
+  by default, even if your server doesn’t have this Additional Perk unlocked.
+  <span style="color: #0e0e0e" data-darkreader-inline-color=""
+    >This special role helps incentivize members to Boost your server by
+    enhancing how they appear in the server.</span
+  >
+  You can change the color or style at any time. To change the style of this
+  role:
+</p>
+<p>
+  1. Select the server where you want to make changes. Press the server name in
+  the top-left and select <strong>Server Settings</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33699329514519"
+    width="317"
+    height="385"
+  /> 
+</p>
+<h4 id="h_01K0Z1N8S2A8Y2ACWEEX5F96NJ" class="wysiwyg-text-align-center">
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Server Settings</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color=""> option </span>
+</h4>
+<p>
+  2. Navigate to the <strong>Roles</strong> tab and then press the
+  <strong>Edit</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/33699329516311"
+    width="25"
+    height="24"
+  />] next to the Server Booster role.
+</p>
+<p>
+  3. By default, the Server Booster role will use a gradient based on the solid
+  color it had before this update. Users with permission can customize it by
+  selecting a different Role Style or adjusting the color. Enhanced Role Styles
+  are available for the Booster role, even if your server hasn’t unlocked this
+  perk for other roles.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33699329519895"
+    width="624"
+    height="636"
+  />
+</p>
+<h4 id="h_01K0Z1N8S23S881BJGK094HVDB" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >All Role Styles that are available for the Server Booster role</span
+  >
+</h4>
+<p>
+  4. After selecting your desired color(s) for the role, press
+  <strong>Save Changes</strong>.<strong> </strong>
+</p>
+<h2 id="h_01K0Z1N8S20H13HJBAGCR0FWVH">
+  Server Owner/Admin View Of Server Boosts
+</h2>
 <p>
   If someone uses a Server Boost on your server, and you have the option
   enabled, you’ll see a message in your designated text channel that states
-  someone has boosted the server.
+  someone has Boosted the server.
 </p>
-<p id="h_01HGX7DJ349T9DMNMG7KYZN2TP" class="wysiwyg-text-align-center">
+<p id="h_01K0Z1N8S2BZ4BJR4BSMXZZQYW" class="wysiwyg-text-align-center">
   <span style="color: #434343" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/19576208168215"
+      src="https://support.discord.com/hc/article_attachments/33699329520663"
       width="380"
       height="47"
   /></span>
 </p>
+<h4 id="h_01K0Z1VREWR60TW3NJZ6BHF3JS" class="wysiwyg-text-align-center">
+  Server Boosting feed showing who boosted the server
+</h4>
 <p>
   If you're the server owner or have <strong>Manage Server</strong> permissions,
   you'll be able to select which channel the Server Boosting message will appear
@@ -658,17 +805,22 @@
 </p>
 <p>
   3. Here you can change where the system message is sent to and can also enable
-  or disable <strong>Send a message when someone boosts this server.</strong>
+  or disable <strong>Send a message when someone Boosts this server.</strong>
 </p>
-<p class="wysiwyg-text-align-center">
-  <strong
+<p id="h_01K0Z1N8S20CHYE1MEVTGV6KFX" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
     ><img
-      src="https://support.discord.com/hc/article_attachments/19576232995223"
+      src="https://support.discord.com/hc/article_attachments/33699329522071"
       width="624"
       height="268"
-  /></strong>
+  /></span>
 </p>
-<h2 id="h_01JXWRJZQVZ41QP7XNF1BMW8RH">
+<h4 id="h_01K0Z1N8S2VYXV6DTFCWMA053J" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Send a message when someone Boosts this server option</span
+  >
+</h4>
+<h2 id="h_01K0Z1N8S289SF4YTQ6V93G516">
   Managing Your Server's Boosts and Perks
 </h2>
 <p>
@@ -700,11 +852,18 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/19576232999191"
+    src="https://support.discord.com/hc/article_attachments/33699329524631"
     width="624"
     height="488"
   />
 </p>
+<h4 id="h_01K0Z1W2CA0HNERW2YXAJ6R4S4" class="wysiwyg-text-align-center">
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Server Boost Status</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color=""> tab</span>
+</h4>
 <h2 id="h_01JXWRKHF311JQS7ZB7ERSKWNW">Grace Periods for Server Boost Loss</h2>
 <p>
   If your server is running low on Server Boosts and loses a level, the server
