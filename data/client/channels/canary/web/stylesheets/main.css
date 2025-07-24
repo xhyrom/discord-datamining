@@ -14267,6 +14267,7 @@ svg.radioIcon_c1e9c4 {
   bottom: calc(var(--custom-channel-textarea-text-area-height) + 28px);
 }
 .align-chat-input .jumpToPresentBar__0f481 {
+  bottom: 28px;
   padding-bottom: var(--space-8);
 }
 .jumpToPresentBar__0f481 {
@@ -62474,4 +62475,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   border-color: #483d8b;
 }
 
-/*# sourceMappingURL=12633.f9d1031b56357962.css.map*/
+/*# sourceMappingURL=12633.5b309cd6ce631211.css.map*/
