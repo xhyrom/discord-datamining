@@ -62474,5 +62474,10 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   body:before {
   border-color: #483d8b;
 }
+.highlight-mana-components [data-mana-component] {
+  box-shadow:
+    0 0 6px 2px var(--pink-51),
+    0 0 8px 4px var(--opacity-blurple-80);
+}
 
-/*# sourceMappingURL=12633.b267d61a1ec03e34.css.map*/
+/*# sourceMappingURL=12633.6af60f4859da752e.css.map*/
