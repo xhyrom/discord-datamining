@@ -11,6 +11,34 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: </strong><strong>The Bad Guys 2<br /></strong
+  ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>The Bad Guys 2</strong> trailer
+  in Discord to receive a
+  <strong>Vault Heist Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users in <strong>Canada</strong> on the desktop app or browser
+  client where <strong>Discord</strong> is available. Discord’s premium services
+  are restricted in some regions.<br /><strong>Availability Period:</strong>
+  <strong>The Bad Guys 2 Quest</strong> can be accepted on Discord desktop app
+  or browser client from <strong>July 25, 2025 </strong>until<strong>
+    August 4, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>September 4, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Vault Heist Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>October 4, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: SUPERVIVE<br /></strong
   ><strong>Quest Name: SUPERVIVE 1.0 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
