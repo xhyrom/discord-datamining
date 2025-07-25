@@ -3432,8 +3432,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3644,8 +3644,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -3653,8 +3653,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -3671,6 +3671,130 @@
     ]
   },
   {
+    "id": "432980957394370572",
+    "name": "Fortnite",
+    "icon": "c1864b38910c209afd5bf6423b672022",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "c1864b38910c209afd5bf6423b672022",
+    "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
+    "third_party_skus": [
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "Epic Games Launcher"
+    ],
+    "guild_id": "322850917248663552",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping_eac_eos.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "08d636fce21be4d2a5eb4e907dd2cf42a75e2b35825ef9a97b1a171403c3237d",
+    "flags": 0
+  },
+  {
+    "id": "1377010135989223574",
+    "name": "UV Slayer Playground",
+    "icon": "18a78bb2714af3a5aa3ff2f111721b42",
+    "description": "Wumpus has gone metal",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1217676775262257303",
+        "sku": "1217676775262257303",
+        "distributor": "nvidia_gdn_app"
+      }
+    ],
+    "bot": {
+      "id": "1377010135989223574",
+      "username": "Slayer Playground",
+      "global_name": null,
+      "avatar": "18a78bb2714af3a5aa3ff2f111721b42",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5911",
+      "display_name_styles": null,
+      "public_flags": 65536,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "darwin",
+        "name": "slayer-playground.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "http://localhost/terms-of-service",
+    "privacy_policy_url": "http://localhost/privacy-policy",
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "295c011caf6669ec333329c953bf5aaa4fb0d66d1a4a264c84fec0fbdcf577c8",
+    "flags": 1024
+  },
+  {
     "id": "1314395942253756416",
     "name": "Marvel Rivals",
     "icon": "2dd7882b887306ab5afad03452869ad8",
@@ -3682,14 +3806,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2767030",
-        "sku": "2767030",
-        "distributor": "steam"
-      },
-      {
         "id": "294041",
         "sku": "294041",
         "distributor": "igdb"
+      },
+      {
+        "id": "2767030",
+        "sku": "2767030",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -3736,6 +3860,77 @@
     "flags": 0
   },
   {
+    "id": "363445589247131668",
+    "name": "Roblox",
+    "icon": "f2b60e350a2097289b3b0b877495e55f",
+    "description": "Roblox is a free Massive Multiplayer Online Game, where you play in user-created worlds with blocks and physics.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "e970e33dd647f87dc87f4dc4b28f4627",
+    "overlay_methods": 1,
+    "hook": true,
+    "aliases": [
+      "Roblox"
+    ],
+    "guild_id": "150074202727251969",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "roblox.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "roblox.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "80a23c75a38f156e1fd650fd046334916a91e69470f9efae2703186e53958cd4",
+    "flags": 0
+  },
+  {
+    "id": "700136079562375258",
+    "name": "VALORANT",
+    "icon": "e55fc8259df1548328f977d302779ab7",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "VALORANT"
+    ],
+    "guild_id": "679875946597056683",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/valorant-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9c0c5c972af9029b85743a3d1c756ef6286058699029c63fbc22dc7d28607748",
+    "flags": 0
+  },
+  {
     "id": "356869127241072640",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
@@ -3754,13 +3949,18 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3777,11 +3977,4842 @@
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "flags": 0
+  },
+  {
+    "id": "356875570916753438",
+    "name": "Minecraft",
+    "icon": "166fbad351ecdd02d11a3b464748f66b",
+    "description": "A procedurally-generated game of world exploration, resource harvesting, and freeform construction. It supports local and online multiplayer, and is regularly updated with new content and features.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "",
+        "sku": "",
+        "distributor": "microsoft"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Minecraft Launcher",
+      "Minecraft Windows 10 Edition"
+    ],
+    "guild_id": "302094807046684672",
+    "executables": [
+      {
+        "os": "win32",
+        "name": ">javaw.exe",
+        "arguments": "net.minecraft.client.main.Main",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">java",
+        "arguments": "net.minecraft.client.main.Main",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "minecraft.windows.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "content/minecraft.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9738b62c8fc186016d31c15dcd645eb481d6f28378ebd759f79f057b133d583f",
+    "flags": 0
+  },
+  {
+    "id": "1158877933042143272",
+    "name": "Counter-Strike 2",
+    "icon": "558f5a26ecb3b17c3dea3d15c1df537a",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "730",
+        "sku": "730",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1158877933042143272",
+      "username": "Counter-Strike 2",
+      "global_name": null,
+      "avatar": "558f5a26ecb3b17c3dea3d15c1df537a",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7458",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "overlay_methods": 1,
+    "hook": true,
+    "aliases": [
+      "Counter-Strike 2"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/cs2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "54f84766a15f1aa38ed6d3643a23f01dff7db053168eca7c0567daf9fb7925cc",
+    "flags": 0
+  },
+  {
+    "id": "432980957394370572",
+    "name": "Fortnite",
+    "icon": "c1864b38910c209afd5bf6423b672022",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "c1864b38910c209afd5bf6423b672022",
+    "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
+    "third_party_skus": [
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "Epic Games Launcher"
+    ],
+    "guild_id": "322850917248663552",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping_eac_eos.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "08d636fce21be4d2a5eb4e907dd2cf42a75e2b35825ef9a97b1a171403c3237d",
+    "flags": 0
+  },
+  {
+    "id": "356876176465199104",
+    "name": "Grand Theft Auto V",
+    "icon": "4628d9240d9f3fb68f98d55352fef553",
+    "description": "A young street hustler, a retired bank robber, and a terrifying psychopath must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody — least of all each other. ",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "f5747887acb51da9b2c252e7ec6292ca",
+    "splash": "6063707ba43224ee22f9de7bf0339aa1",
+    "primary_sku_id": "491748506516717599",
+    "third_party_skus": [
+      {
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
+      },
+      {
+        "id": "3240220",
+        "sku": "3240220",
+        "distributor": "steam"
+      },
+      {
+        "id": "491748506516717599",
+        "sku": "491748506516717599",
+        "distributor": "discord"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Grand Theft Auto V",
+      "Grand Theft Auto V Enhanced",
+      "Grand Theft Auto V Legacy"
+    ],
+    "slug": "grand-theft-auto-v",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_dumpserver",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v enhanced/gta5_enhanced.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5_be.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "cad0fdcbcab042cb436c3a66f0647376c5fbae4d1120a349bc6b5807f4cdb642",
+    "flags": 0
+  },
+  {
+    "id": "356875221078245376",
+    "name": "Overwatch 2",
+    "icon": "d20f9f39f2eec584dcdbc7b206786124",
+    "description": "Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "ac088243bc713c37297073d7d12c453a",
+    "third_party_skus": [
+      {
+        "id": "Pro",
+        "sku": "Pro",
+        "distributor": "battlenet"
+      },
+      {
+        "id": "2357570",
+        "sku": "2357570",
+        "distributor": "steam"
+      },
+      {
+        "id": "125174",
+        "sku": "125174",
+        "distributor": "igdb"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "guild_id": "94882524378968064",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "overwatch.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fd60416794717e7531f4f22061f2a16ee87a71a3036fd7b6d8d37364c723ca9d",
+    "flags": 0
+  },
+  {
+    "id": "356875988589740042",
+    "name": "Dota 2",
+    "icon": "6b4b3fa4c83555d3008de69d33a60588",
+    "description": "The official free-to-play sequel to the Warcraft III custom scenario that originally popularized the Multiplayer Online Battle Arena sub-genre.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "b97e78635ec0fb2b79d19736e74ad2d2",
+    "third_party_skus": [
+      {
+        "id": "570",
+        "sku": "570",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "DOTA 2"
+    ],
+    "guild_id": "74287487459004416",
+    "executables": [
+      {
+        "os": "darwin",
+        "name": "osx64/dota2.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dota2.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "dota_osx.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ba1abb8e9e75cd7c992d69408bc5907850fd4ab1d47da40875318ab4dc192c25",
+    "flags": 0
+  },
+  {
+    "id": "356877880938070016",
+    "name": "Rocket League",
+    "icon": "a74899a5190c48a3e6ce9f8d2eaff348",
+    "description": "The sequel to Supersonic Acrobatic Rocket-Powered Battle-Cars, Rocket League is the second vehicular sports-action game developed by Psyonix.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "39a82b92cc95af7a11d024fec8540d28",
+    "third_party_skus": [
+      {
+        "id": "252950",
+        "sku": "252950",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Rocket League"
+    ],
+    "guild_id": "152517096104919042",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "bakkesmod/plugininstaller.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rocketleague.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b96ea74324e2833bb715a7d8aa9908d7962bca7acb408e97533bf5f4374f4e89",
+    "flags": 0
+  },
+  {
+    "id": "1149118246826561609",
+    "name": "Call of Duty®: MWIII",
+    "icon": "7dd9116c1287c1469cd14329cbc9c46f",
+    "description": "",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "7dd9116c1287c1469cd14329cbc9c46f",
+    "third_party_skus": [
+      {
+        "id": "1938090",
+        "sku": "1938090",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1149118246826561609",
+      "username": "Modern Warfare III",
+      "global_name": null,
+      "avatar": "7dd9116c1287c1469cd14329cbc9c46f",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7504",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Call of Duty®"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "mp23/mp23-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "cod23/cod23-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "sp23/sp23-cod.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c96a77a0041bfb4c3cd4d24b2d56c665998da353e0d9a88757bfe579d2004097",
+    "flags": 0
+  },
+  {
+    "id": "356873622985506820",
+    "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+    "icon": "d8cd6c5b1fe5b64ad2e0f660238eb43e",
+    "description": "Led by the modder behind the Battle Royale mods for the ArmA series, PlayerUnknown's Battlegrounds is a shooter that pits 100 players in a large empty location where they must scavenge for weapons and fight to the death.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "75621361e5ffb56d789b973b5e575b22",
+    "third_party_skus": [
+      {
+        "id": "578080",
+        "sku": "578080",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "PUBG",
+      "PUBG: BATTLEGROUNDS"
+    ],
+    "guild_id": "207018395139309569",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_uc.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8c42503ece8b4b528c7efdb1c340eff7df60973cf18f68692c3550dd569c1f57",
+    "flags": 0
+  },
+  {
+    "id": "542075586886107149",
+    "name": "Apex Legends",
+    "icon": "7564e6f23704870d70480f172f127677",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1172470",
+        "sku": "1172470",
+        "distributor": "steam"
+      },
+      {
+        "id": "",
+        "sku": "",
+        "distributor": "origin"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Apex Legends"
+    ],
+    "guild_id": "541484311354933258",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "apex/r5apex_dx12.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex/r5apex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex legends/r5apex.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "09ec3fea255d2f025b9b8aaa3aa39446d2428524830803d020483d628f06065c",
+    "flags": 0
+  },
+  {
+    "id": "762434991303950386",
+    "name": "Genshin Impact",
+    "icon": "eb0e25b739e4fa38c1671a3d1edcd1e0",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "hook": true,
+    "aliases": [
+      "Genshin Impact"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "genshinimpact.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "6695f96ea0defeb461bb51bd04bfd58618531ebe3582905b4a378d97adeb6403",
+    "flags": 0
+  },
+  {
+    "id": "946609449680908348",
+    "name": "ELDEN RING",
+    "icon": "0a0c0a0be069dddfc3f1fbede4e34bfd",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1245620",
+        "sku": "1245620",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "ELDEN RING"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "game/eldenring.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b4f72a8c737a8e9157ccbaddbd1e705af195d8cec53e5642f6ec7869e841cb34",
+    "flags": 0
+  },
+  {
+    "id": "356876590342340608",
+    "name": "Tom Clancy's Rainbow Six Siege X",
+    "icon": "554af7ef210877b5f04fd1b727a3746e",
+    "description": "A first-person tactical shooter developed by Ubisoft Montreal Studios. In this installment of the Rainbow Six series, some players are focused on assault where as others are defense-oriented.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "028fe9a1748d259872a0dfa49eb818f2",
+    "third_party_skus": [
+      {
+        "id": "635",
+        "sku": "635",
+        "distributor": "uplay"
+      },
+      {
+        "id": "359550",
+        "sku": "359550",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "Tom Clancy's Rainbow Six Siege",
+      "Tom Clancy's Rainbow Six? Siege"
+    ],
+    "guild_id": "253581140072464384",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "rainbowsixgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rainbowsix_be.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e789af8b6c60e822fe7840efce3e9d832f08d1a7db7eb80ad36a282b95326813",
+    "flags": 0
+  },
+  {
+    "id": "1260340082150346932",
+    "name": "Once Human",
+    "icon": "43df7ad3101426c8ce449614ae47ebf1",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "204538",
+        "sku": "204538",
+        "distributor": "igdb"
+      },
+      {
+        "id": "2139460",
+        "sku": "2139460",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1260340082150346932",
+      "username": "Once Human",
+      "global_name": null,
+      "avatar": "43df7ad3101426c8ce449614ae47ebf1",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4988",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "once human/once_human.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8d63127829fdf7fab9e58719d94b2e404169d7ae9ce5550ca5c381ac7cbeefec",
+    "flags": 0
+  },
+  {
+    "id": "1253061774555611238",
+    "name": "Chained Together",
+    "icon": "175f4a2e3649615553d8085367b3f90f",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2567870",
+        "sku": "2567870",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1253061774555611238",
+      "username": "Chained Together",
+      "global_name": null,
+      "avatar": "175f4a2e3649615553d8085367b3f90f",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4187",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/chainedtogether-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b12cfdc6153cac121a88d9ec73308dcf05cc98205c90c1402bbddfddc89edff1",
+    "flags": 0
+  },
+  {
+    "id": "1167674267748540516",
+    "name": "Lethal Company",
+    "icon": "9a953e0b1e69c913af3d8354e855de41",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1966720",
+        "sku": "1966720",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1167674267748540516",
+      "username": "Lethal Company",
+      "global_name": null,
+      "avatar": "9a953e0b1e69c913af3d8354e855de41",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6043",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "lethal company/lethal company.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4da332a2d2555896911af3d75bbdb3a05376d8d504e2a3abebafa587b96bb8c5",
+    "flags": 0
+  },
+  {
+    "id": "359509007423242240",
+    "name": "The Sims 4",
+    "icon": "912bd1dd19dfd2ef3b0191985f942a40",
+    "description": "The fourth installment of the main Sims franchise, revamping the series's customization features while improving the Sims' automations and emotions.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
+    "third_party_skus": [
+      {
+        "id": "1222670",
+        "sku": "1222670",
+        "distributor": "steam"
+      },
+      {
+        "id": "3212",
+        "sku": "3212",
+        "distributor": "igdb"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "The Sims™ 4"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "ts4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the sims 4.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "2adf36e8ef4669fbab319d256c59b165369fd04bfa791b55998170ff969e8f6f",
+    "flags": 0
+  },
+  {
+    "id": "1257819671114289184",
+    "name": "Zenless Zone Zero",
+    "icon": "78c2bd08dfd07a44f872b04c27f78f41",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1257819671114289184",
+      "username": "Honkai Star Rail",
+      "global_name": null,
+      "avatar": "78c2bd08dfd07a44f872b04c27f78f41",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6395",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Honkai Star Rail"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "zenlesszonezero game/zenlesszonezero.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "96f07cbedefde9ad9dc4557975aa6cf3229b25ce8332799eb24ce23383e779f1",
+    "flags": 0
+  },
+  {
+    "id": "1116835216464543946",
+    "name": "Phasmophobia",
+    "icon": "da31ba4cb53774d3cad25780244ee813",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "739630",
+        "sku": "739630",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1116835216464543946",
+      "username": "Phasmophobia",
+      "global_name": null,
+      "avatar": "da31ba4cb53774d3cad25780244ee813",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6537",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Phasmophobia"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "phasmophobia/phasmophobia.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fd4e6b61d4e8b9f76081f2f10e2ff61da2c5e5f850fdd24c24c390fb05c923e3",
+    "flags": 0
+  },
+  {
+    "id": "357607478105604096",
+    "name": "War Thunder",
+    "icon": "b23dfa191e3f3aa8142572110a99723f",
+    "description": "War Thunder is a free-to-play air combat game set in the World War II and Korean War eras. Naval and land battles are planned additions.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "04d71799c6c65c202262a7335f039264",
+    "third_party_skus": [
+      {
+        "id": "236390",
+        "sku": "236390",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "aces.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ed5af666992678458c1f7e0984ba8c42317ae667220e8332854d7b44f384cd4e",
+    "flags": 0
+  },
+  {
+    "id": "1137125502985961543",
+    "name": "Baldur's Gate 3",
+    "icon": "3d6a6ddf065f232dc0d93af3050954ce",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1086940",
+        "sku": "1086940",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1137125502985961543",
+      "username": "Baldur's Gate 3",
+      "global_name": null,
+      "avatar": "3d6a6ddf065f232dc0d93af3050954ce",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8276",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "overlay_methods": 1,
+    "hook": true,
+    "aliases": [
+      "Baldur's Gate 3"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "bin/bg3.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bin/bg3_dx11.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9476929718349d07d2713c4887489914f271fda4b92e7e3fbda2934425aac30e",
+    "flags": 0
+  },
+  {
+    "id": "356888738724446208",
+    "name": "Rust",
+    "icon": "9ab7e18473429b016307b867e6c924a4",
+    "description": "From the makers of Garry's Mod, Rust is a multiplayer survival game with combat elements.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "a5fcb17e0be802587ad64fa14a3578de",
+    "splash": "edfdddb7a7270c154bcbda5477e2ba59",
+    "third_party_skus": [
+      {
+        "id": "252490",
+        "sku": "252490",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "Rust"
+    ],
+    "guild_id": "560127830160048128",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "rustclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rust.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "rust/rustclient.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "af3ab45d3cdf8a4552d522b6d79a1cff75142a29da5f4a73411b91099fa5f9dc",
+    "flags": 0
+  },
+  {
+    "id": "356875762940379136",
+    "name": "World of Warcraft",
+    "icon": "fc92f820c44e72085dc6205e5e746850",
+    "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "a04bfb0f10a2a531447e713a9e2443f0",
+    "third_party_skus": [
+      {
+        "id": null,
+        "sku": null,
+        "distributor": "battlenet"
+      },
+      {
+        "id": "WoW",
+        "sku": "WoW",
+        "distributor": "battlenet"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "World of Warcraft™"
+    ],
+    "guild_id": "113103747126747136",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "world of warcraft.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_ptr_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fab1671f200efba924715de7fc3f6e2c418bb24a2b06ee6bd0b3cd4c8d5b67e0",
+    "flags": 0
+  },
+  {
+    "id": "1121201675240210523",
+    "name": "Honkai: Star Rail",
+    "icon": "444d067889922e42b0af99b13e5d5c72",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1121201675240210523",
+      "username": "Honkai Star Rail",
+      "global_name": null,
+      "avatar": "444d067889922e42b0af99b13e5d5c72",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8967",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Honkai: Star Rail"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "games/starrail.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "5617448ca83f5320aa7f54a5300d85c06f8dce9a96d87c97b870c4dffee947bc",
+    "flags": 0
+  },
+  {
+    "id": "1205090671527071784",
+    "name": "HELLDIVERS™ 2",
+    "icon": "6d49be66d5f2b88bdfc8cc7095abdbda",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "553850",
+        "sku": "553850",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1205090671527071784",
+      "username": "HELLDIVERS™ 2",
+      "global_name": null,
+      "avatar": "6d49be66d5f2b88bdfc8cc7095abdbda",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7627",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "HELLDIVERS™ 2"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "bin/helldivers2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "90f41f86a2e4e07e8c9e5757eb00518b71bb0f51549495ef370da12ad673b92b",
+    "flags": 0
+  },
+  {
+    "id": "357607133254254632",
+    "name": "Dead by Daylight",
+    "icon": "64e7623c9af49f2e7dc7048df16b1013",
+    "description": "Four survivors try to escape a variety of haunted locales, but a supernatural being that feeds on their hope sends a serial murderer to hunt them down in this asymmetrical multiplayer survival-horror game.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "21f6220ac81c817f2228e4e856b61d23",
+    "third_party_skus": [
+      {
+        "id": "381210",
+        "sku": "381210",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Dead by Daylight"
+    ],
+    "guild_id": "153566829380370432",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "deadbydaylight.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "deadbydaylight-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dead by daylight/deadbydaylight.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "deadbydaylight-egs-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f48c74c2e85fb890b82a26ad061487c4df86cdedda1f768dc817eb00ee5783e7",
+    "flags": 0
+  },
+  {
+    "id": "359508713658253318",
+    "name": "Euro Truck Simulator 2",
+    "icon": "46bfdfc58e4eacbfde29b2461e118e78",
+    "description": "Travel across Europe as a trucker delivering cargo in a variety of trucks.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "2a901aa3dc38e84d9cc46f7b5f712ff8",
+    "third_party_skus": [
+      {
+        "id": "227300",
+        "sku": "227300",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "eurotrucks2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "495bddf835a15af54a9616e9f1f1798897e3a1d1e8f7576fed0134468e00d3f4",
+    "flags": 0
+  },
+  {
+    "id": "363409643973771264",
+    "name": "7 Days to Die",
+    "icon": "b4c347469b46dbd6793afd00e1a8e086",
+    "description": "7 Days to Die is a voxel-based, open world sandbox survival game.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "bf8c81db7593a64576d4861a7316aec7",
+    "third_party_skus": [
+      {
+        "id": "251570",
+        "sku": "251570",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "7 Days To Die"
+    ],
+    "guild_id": "209425237467463681",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "7daystodie.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "7daystodie_eac.exe",
+        "is_launcher": true
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "99aa1c362dcd2606c5819d67a0f980c0fd781e51496c8c6f6f67d16ce62292b1",
+    "flags": 0
+  },
+  {
+    "id": "359509387670192128",
+    "name": "Stardew Valley",
+    "icon": "1e84012079d438b46bbb3c3bf2a409bb",
+    "description": "An open-ended country-life RPG in which players can manage their own farm and interact with the surrounding community.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "81ff372fbd0557b8908331db0ae94524",
+    "third_party_skus": [
+      {
+        "id": "413150",
+        "sku": "413150",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Stardew Valley"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "stardew valley.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "stardew valley/stardew valley.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e2fc42fb59441bf78107a7a8f3177985d0eb9a09377bb3719db765b3e1614c9c",
+    "flags": 0
+  },
+  {
+    "id": "367827983903490050",
+    "name": "osu!",
+    "icon": "ea86f6c52576847a7cb81f1c1faa18a3",
+    "description": "click the circles! to the beat!",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "b76db81b683527961ee1432c24a02774",
+    "splash": "8029278a3fab0e30108bd335f26ab8a0",
+    "primary_sku_id": "367827983903490050",
+    "overlay": true,
+    "hook": true,
+    "slug": "osu",
+    "guild_id": "188630481301012481",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "osu!.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "osu!.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "abc0dcbf6dbb4d449ad89da9bdec270a12b8a427099ef2609be2d3fdae150b29",
+    "flags": 0
+  },
+  {
+    "id": "742897755160313986",
+    "name": "Fall Guys",
+    "icon": "4abfab12a5b69e66d558d51b855f7fc8",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1097150",
+        "sku": "1097150",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Fall Guys",
+      "Fall Guys: Ultimate Knockout",
+      "糖豆人：終極淘汰賽"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "fallguys_client_game.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "fallguys_client.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "7406b69f9334d5d204b66020e9541be0523a7bd2ece2bf3172fbf63003d2f7df",
+    "flags": 0
+  },
+  {
+    "id": "1215361187684946010",
+    "name": "Escape from Tarkov: Arena",
+    "icon": "e0e6805da2c220ad3a4a2ee74b242261",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1215361187684946010",
+      "username": "Escape from Tarkov",
+      "global_name": null,
+      "avatar": "e0e6805da2c220ad3a4a2ee74b242261",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7691",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Escape from Tarkov"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "escapefromtarkovarena.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "0040f5e6d30f273b52108a984cc504d1ed48e34c2c4aca308f2cb096f06b978c",
+    "flags": 0
+  },
+  {
+    "id": "1247227126416146462",
+    "name": "Wuthering Waves",
+    "icon": "c7bb04bdddaa82cf045b02df7168365e",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1247227126416146462",
+      "username": "Wuthering Waves",
+      "global_name": null,
+      "avatar": "c7bb04bdddaa82cf045b02df7168365e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3395",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Wuthering Waves"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "wuthering waves.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "wuthering waves.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "wutheringwaves.app",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b5cc697019fa1d058c61b57a627d17124f372f316db40257c7a906af84147e14",
+    "flags": 0
+  },
+  {
+    "id": "477175586805252107",
+    "name": "Among Us",
+    "icon": "5f0b1e7a94dc2018538256165bc8b059",
+    "description": "Play with 4-15 player online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more random players among the Crew are Impostors bent on killing everyone!",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "6b05f8bebdb9740a1d56569916f8c56a",
+    "third_party_skus": [
+      {
+        "id": "945360",
+        "sku": "945360",
+        "distributor": "steam"
+      }
+    ],
+    "deeplink_uri": "https://innersloth.com",
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Among Us"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "among us - kopie/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - copy/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - tou/among us.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8fd675e78dd5ce2c5c0177299b6ddf11014ffe65c4d8334c4d5c3691b6918d5c",
+    "flags": 0
+  },
+  {
+    "id": "356943499456937984",
+    "name": "Terraria",
+    "icon": "4c3c185abc0dfb4cb1ec5612de4d7366",
+    "description": "The first major 2D entry into the world of \"open world\" sandbox action-adventure games, Terraria is inspired by 16-bit platformers and allows players to mine for ores, craft new equipment, and fight monstrous bosses in a large procedurally-generated world.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "b41510892fcefd0b5e4037ebaf7ae1ec",
+    "third_party_skus": [
+      {
+        "id": "105600",
+        "sku": "105600",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Terraria"
+    ],
+    "guild_id": "251072485095636994",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "terraria/terraria.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "terraria.app",
+        "is_launcher": false
+      },
+      {
+        "os": "linux",
+        "name": "terraria.bin.x86",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "terraria.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "37e057d38f0a27d6163bd0a604ec8cceeab80a1ad461f0d51e38713be7f83290",
+    "flags": 0
+  },
+  {
+    "id": "614380482620293151",
+    "name": "Bloons TD 6",
+    "icon": "964bba45cea807405b9919863052277c",
+    "description": "The Bloons are back and better than ever! Get ready for a massive 3D tower defense game designed to give you hours and hours of the best strategy gaming available.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "ba35fab3925cc6cee14d84791930ba58",
+    "third_party_skus": [
+      {
+        "id": "960090",
+        "sku": "960090",
+        "distributor": "steam"
+      },
+      {
+        "id": "com.ninjakiwi.bloonstd6",
+        "sku": "com.ninjakiwi.bloonstd6",
+        "distributor": "google_play"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Bloons TD 6"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "cleaner/cleaner-btd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bloonstd6/bloonstd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bloonstd6.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f33f299680a4d2b300c9e0d42c841466f1798bff9e764adc82d452819839d134",
+    "flags": 0
+  },
+  {
+    "id": "1256912167685587034",
+    "name": "The First Descendant",
+    "icon": "c42edcc1bbc6272f4abf9724648ff602",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "208476",
+        "sku": "208476",
+        "distributor": "igdb"
+      },
+      {
+        "id": "2074920",
+        "sku": "2074920",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1256912167685587034",
+      "username": "The First Descendant",
+      "global_name": null,
+      "avatar": "c42edcc1bbc6272f4abf9724648ff602",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2103",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "m1-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "bb2d373e2fdc1811025b4d9c437f10795ed916050b64340d3fe7ebe62ed3c1d3",
+    "flags": 0
+  },
+  {
+    "id": "356888961353908224",
+    "name": "World of Tanks",
+    "icon": "b8c3c5e2bb400a1154bad072f139f592",
+    "description": "World of Tanks is a free-to-play (F2P) massively multiplayer online (MMO) team based action game featuring WWII era tank combat.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "b125c7b6bd1ea27c2cef8b50b09c8c19",
+    "hook": true,
+    "guild_id": "502101454253981697",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "worldoftanks.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9122ace842b0bc80b0b66bc3361cf255724431b011c5cf4b6d816a6ae2959dc3",
+    "flags": 0
+  },
+  {
+    "id": "356954277803065354",
+    "name": "Left 4 Dead 2",
+    "icon": "0a542ebb0544c5427f24deb3c67fcc99",
+    "description": "In the sequel to Valve's cooperative zombie shooter, a new team of four ragtag survivors must work together to survive the apocalypse, facing new Infected threats as they fight their way across the Southern United States.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "6f327596a069605fbea022abc3a9666e",
+    "third_party_skus": [
+      {
+        "id": "550",
+        "sku": "550",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Left 4 Dead 2"
+    ],
+    "executables": [
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
+        "arguments": "-game left4dead2",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "left4dead2.exe",
+        "arguments": "-game left4dead2",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "left 4 dead 2/left4dead2.exe",
+        "arguments": "-game left4dead2",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bin/l4d2_workshop_manager.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "6a784b1b11afee2b2e869e40c72b260ee3d5db1f6e114a7d0f95f3abd8aa3ec3",
+    "flags": 0
+  },
+  {
+    "id": "643897785271189524",
+    "name": "Red Dead Redemption 2",
+    "icon": "0680b34aa013440df9fce5b0da0d2466",
+    "description": "Arthur Morgan and the Van der Linde Gang are outlaws on the run. With federal agents and bounty hunters massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland in order to survive. ",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "6664a082cc47d66f94fb8f6fa9052ec1",
+    "splash": "b68121c4ece68d5ab313f797a5ca1107",
+    "third_party_skus": [
+      {
+        "id": "1174180",
+        "sku": "1174180",
+        "distributor": "steam"
+      },
+      {
+        "id": "25076",
+        "sku": "25076",
+        "distributor": "igdb"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "red dead redemption 2/rdr2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "125e27e185dbcbead0b1f012deb08dfa2d06cc16749dd88e4bac190edd59d8bb",
+    "flags": 0
+  },
+  {
+    "id": "356879032584896512",
+    "name": "Garry's Mod",
+    "icon": "ade1008d735a1a134693b15ce02d79a8",
+    "description": "Build stuff. Destroy stuff. Spawn so many dominoes that the server crashes with a \"no free edicts\" error. Such is life in Garry's Mod.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "df179a691e75ad59389974454187e7fe",
+    "third_party_skus": [
+      {
+        "id": "4000",
+        "sku": "4000",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Garry's Mod"
+    ],
+    "guild_id": "565105920414318602",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "garrysmod/hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": ">hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/gmod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bin/gmad.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "57b3c88891e96d67ddb9b44c4416f95737948242c70136ba4b14f3ecb8459dde",
+    "flags": 0
+  },
+  {
+    "id": "506950362461110273",
+    "name": "Aim Lab",
+    "icon": "14793cc1393f167f816642690710d59c",
+    "description": "Get better at aiming in first-person shooters.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "172f9eb99e935d9231bf2b512cf32fa0",
+    "third_party_skus": [
+      {
+        "id": "714010",
+        "sku": "714010",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "aimlab_tb.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "20c0278f994834fb65dc70a61ea12e0764bd356c996733875b8913f9cfdb7b81",
+    "flags": 0
+  },
+  {
+    "id": "1113966530531704943",
+    "name": "Diablo IV",
+    "icon": "3b8d5467c617dfd06b4d9e5eee5d52ba",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "125165",
+        "sku": "125165",
+        "distributor": "igdb"
+      },
+      {
+        "id": "2344520",
+        "sku": "2344520",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1113966530531704943",
+      "username": "Diablo IV",
+      "global_name": null,
+      "avatar": "3b8d5467c617dfd06b4d9e5eee5d52ba",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2499",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Diablo IV"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "diablo iv/diablo iv.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "a69576fff67300e99a4b486f85d7e9007a79d108bc5fd6b59f76a7a81cfbee5d",
+    "flags": 0
+  },
+  {
+    "id": "356944273133928458",
+    "name": "Brawlhalla",
+    "icon": "635721ef4940b790623761863e13afb0",
+    "description": "Brawlhalla is an 8-player, 2D fighting game featuring warriors from throughout history.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "5f69a75ff4a835e2edb7d97eba43d050",
+    "third_party_skus": [
+      {
+        "id": "291550",
+        "sku": "291550",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Brawlhalla"
+    ],
+    "guild_id": "118778495085182976",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "brawlhalla/brawlhallagame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "brawlhalla/brawlhalla.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "brawlhalla.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "brawlhalla.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "3f0c14f9d726907d8678392354970acdeb87dfd339235d5a3fb9973e107fb9d8",
+    "flags": 0
+  },
+  {
+    "id": "363447565905166336",
+    "name": "Grand Theft Auto San Andreas",
+    "icon": "58c222207d90c346aa4590a1d8de0a2f",
+    "description": "The follow-up to Vice City takes the Grand Theft Auto series' free-roaming violence into 1992 and the fictional state of San Andreas as several criminal gangs wage war for control of the streets.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "99195e630e7865c4332d2584d03d5876",
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "gta-sa.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta_sa.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f8c569de43d485e8d0faf06140331b8c36af115cde07739be985629a1cc3314b",
+    "flags": 0
+  },
+  {
+    "id": "363413743335374859",
+    "name": "BeamNG.drive",
+    "icon": "7cdf03d0914abf557c372f81182b4039",
+    "description": "Car sim developed by BeamNG.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "1e6f52750013a9088823845a235826d5",
+    "third_party_skus": [
+      {
+        "id": "284160",
+        "sku": "284160",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "beamng.drive.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "beamng.drive.x64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "16c1ade05dfd39c395b7362843ec55164e8885043a3e91b1776feb0ae468349b",
+    "flags": 0
+  },
+  {
+    "id": "356942674672091136",
+    "name": "Geometry Dash",
+    "icon": "67f35d9429ee338d6f2824163c1b773d",
+    "description": "Control a cube, and avoid the pointy obstacles by listening and jumping on the rhythm of the soundtrack.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "cb3735ab8d02aa2ecd78ede3f06aee1e",
+    "third_party_skus": [
+      {
+        "id": "322170",
+        "sku": "322170",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Geometry Dash"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "geometrydash.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "geometry dash/geometrydash.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "348ba614216bc8f76254ce108d9012b20ed1783b2dd30ceedbff936002c5802e",
+    "flags": 0
+  },
+  {
+    "id": "426526722322726912",
+    "name": "Project Zomboid",
+    "icon": "6030c94c33dab692201194047f5e1a51",
+    "description": "Isometric zombie survival, where death is inevitable and all you can hope for is to have a bullet left for your own head.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "108600",
+        "sku": "108600",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "projectzomboid32.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "projectzomboid64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "87b51570c38b12dfd40396eca64fc715efc5fc3c234ea755821c3ed6ddf25bbc",
+    "flags": 0
+  },
+  {
+    "id": "422772752647323649",
+    "name": "Warframe",
+    "icon": "0d194a16e1a146c8034bf3b7e91ba625",
+    "description": "Rich Presence for Warframe",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "cover_image": "6b0e4d8c05e14f630548eccc956324d9",
+    "splash": "e5185fe1f9ac1bd77cfdf3b2a5b97448",
+    "primary_sku_id": "494959992483348480",
+    "third_party_skus": [
+      {
+        "id": "494959992483348480",
+        "sku": "494959992483348480",
+        "distributor": "discord"
+      },
+      {
+        "id": "230410",
+        "sku": "230410",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "422772752647323649",
+      "username": "Warframe",
+      "global_name": null,
+      "avatar": "d007b246f69d95b1d2675d1908113504",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2298",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Warframe Launcher"
+    ],
+    "slug": "warframe",
+    "guild_id": "552966801558863896",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "warframe.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "warframe.x64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1faf7ecefe6f6ff9b2deb95d13cb65546169d1a91df3e1145229aa80721e5884",
+    "flags": 0
+  },
+  {
+    "id": "905961880789590076",
+    "name": "Forza Horizon 5",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1551360",
+        "sku": "1551360",
+        "distributor": "steam"
+      }
+    ],
+    "hook": false,
+    "aliases": [
+      "Forza Horizon 5"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "forzahorizon5/forzahorizon5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "forzahorizon5.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "dfa5876e005df8060a775550eac5253f103bfa3651571ae08ea09a2d6fc909f7",
+    "flags": 0
+  },
+  {
+    "id": "356888453796986880",
+    "name": "Path of Exile",
+    "icon": "1f162572c3123655e42c615b18074ff3",
+    "description": "Path of Exile is a free-to-play PC online action Role-Playing Game set in a dark fantasy world.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "6eb27b0dcff2889ab250106a8035fde4",
+    "third_party_skus": [
+      {
+        "id": "238960",
+        "sku": "238960",
+        "distributor": "steam"
+      },
+      {
+        "id": "1911",
+        "sku": "1911",
+        "distributor": "igdb"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Path of Exile"
+    ],
+    "guild_id": "174993814845521922",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "path of exile taiwan/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexile_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "pathofexile/pathofexileegs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexile_x64steam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexilesteam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "poe/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "流亡黯道/pathofexilesteam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexile.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "20467c2e1502c04a3c2d887fb9a3d6836148b66b95dd56d90212ea0156498e50",
+    "flags": 0
+  },
+  {
+    "id": "398632010442211348",
+    "name": "VRChat",
+    "icon": "a87dfe64fa914769f1c6cf37daa0a3d1",
+    "description": "A VR program that integrates body tracking to place users into virtual multiplayer environments. Within these worlds players can play games, chat, and create their own content.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "a93eb36a39f180dcab448a053c3bfee9",
+    "third_party_skus": [
+      {
+        "id": "438100",
+        "sku": "438100",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "guild_id": "189511567539306508",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "vrchat/vrchat.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "eddf058033f59ef2e91ffff19401d040943a83971aad036a295767cd51afaa82",
+    "flags": 0
+  },
+  {
+    "id": "535371564850479134",
+    "name": "Sea of Thieves",
+    "icon": "4e7da84318a42170af8d916dacf1988f",
+    "description": "Set in an era of classic piracy, Sea of Thieves is a first-person open-world game where players form a crew of pirates and sail off to find treasure. As it is a \"shared world\" game, pirate crews can encounter other crews and engage in epic maritime skirmishes.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "hook": true,
+    "guild_id": "423075122610700288",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sotgame.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "232ebed94a64e6465812955090d7834b1d5c726eaa87659614849e008b983ad6",
+    "flags": 0
+  },
+  {
+    "id": "1124351715618074634",
+    "name": "Dark and Darker",
+    "icon": "b533b32f1ce5c65656110da926a2ab38",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2258570",
+        "sku": "2258570",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124351715618074634",
+      "username": "Dark and Darker Demo",
+      "global_name": null,
+      "avatar": "b533b32f1ce5c65656110da926a2ab38",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3176",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/dungeoncrawler.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4d3c41dac5ce3c427676aa906c9fced41f993d3a0461452dd74e93af2525d5d6",
+    "flags": 0
+  },
+  {
+    "id": "356888577310851072",
+    "name": "Team Fortress 2",
+    "icon": "dfc652a5b75879148779dc2865270f87",
+    "description": "The long-awaited sequel to the class-based first-person shooter Team Fortress Classic sports a unique cartoony visual style, more accessible gameplay, and a very large amount of updates and new features since its original release.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "a109376e705e71ab44e7d2d966cecc35",
+    "third_party_skus": [
+      {
+        "id": "440",
+        "sku": "440",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "guild_id": "132349439506382848",
+    "executables": [
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "hl2tf.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": ">hl2.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d71f5732225b9c63d63515af12ea23a774c734840ee2f625b8bdf84966bef919",
+    "flags": 0
+  },
+  {
+    "id": "787443973538971748",
+    "name": "Cyberpunk 2077",
+    "icon": "e1042cfe3bb845f3c1f4fffd6227f4cf",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1091500",
+        "sku": "1091500",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Cyberpunk 2077"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "cyberpunk2077.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "x64/cyberpunk2077.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4c0b2f474c34674b875ac2d9dfd8ffd0b08950c7c983eec63b0e83a1ea7b8c0a",
+    "flags": 0
+  },
+  {
+    "id": "1197827812623650866",
+    "name": "Palworld",
+    "icon": "f2039761488809de552d44ebc6739ffe",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1623730",
+        "sku": "1623730",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1197827812623650866",
+      "username": "Palworld",
+      "global_name": null,
+      "avatar": "f2039761488809de552d44ebc6739ffe",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6222",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Palworld / パルワールド",
+      "Palworld / 幻獸帕魯"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "wingdk/palworld-wingdk-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/palworld-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "61d1f2b25f0113aecd1967b6ca13d77c0710c2495e1bb04627cf59384dd47837",
+    "flags": 0
+  },
+  {
+    "id": "1124349969906815007",
+    "name": "tModLoader",
+    "icon": "de22427dff57c8a597a62a47ef44e9ca",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1281930",
+        "sku": "1281930",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124349969906815007",
+      "username": "tModLoader",
+      "global_name": null,
+      "avatar": "de22427dff57c8a597a62a47ef44e9ca",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "9958",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "tModLoader"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "tmodloader/tmodloader.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tmodloader/tmodloader64bit.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "6.0.0/dotnet.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launchutils/busybox64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "795a78241369732eabd05c56c0fdb09a30a7871b414381aaaff9ddb8b83b6061",
+    "flags": 0
+  },
+  {
+    "id": "356875890958925834",
+    "name": "Hearthstone",
+    "icon": "584d496943e719a759906563442d2a87",
+    "description": "A Free-to-Play collectible card game by Blizzard Entertainment set in the Warcraft universe.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "d48d8206d9cb89c8a31b461e3c64ff8b",
+    "third_party_skus": [
+      {
+        "id": null,
+        "sku": null,
+        "distributor": "battlenet"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "guild_id": "127167843383902209",
+    "executables": [
+      {
+        "os": "darwin",
+        "name": "hearthstone.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "hearthstone.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "aac6886d706860b76378d82a4ed3c038648ddddd3942b141bf111f60a7231e40",
+    "flags": 0
+  },
+  {
+    "id": "356889262362329098",
+    "name": "FINAL FANTASY XIV Online",
+    "icon": "8fbbc6725f295195c8dd4f390ccd8611",
+    "description": "Stormblood is the second expansion to Final Fantasy XIV",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "c99384f8b68bf43672bdb79d0a3833ea",
+    "third_party_skus": [
+      {
+        "id": "39210",
+        "sku": "39210",
+        "distributor": "steam"
+      },
+      {
+        "id": "386",
+        "sku": "386",
+        "distributor": "igdb"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "FINAL FANTASY XIV - A Realm Reborn"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "ffxiv_dx11.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ffxiv.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "boot/ffxivboot.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d8a9e36c73ab90b257f3694b1778f63b391142f9980b71b4adade1a6fd433faa",
+    "flags": 0
+  },
+  {
+    "id": "425778010222886912",
+    "name": "Assetto Corsa",
+    "icon": "0e176cf5cd3db5a923c22f076ea52b54",
+    "description": "A racing sim by Italian developers Kunos Simulazioni, makers of netKar Pro.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "244210",
+        "sku": "244210",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Assetto Corsa"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "server/acservermanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "editor/kseditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/jsgme.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/content manager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acshowroom.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d11c543ea6f9d33a6573b83b87538761e1259323aa45b26ff1d31d1b8b950dbb",
+    "flags": 0
+  },
+  {
+    "id": "428055627030331402",
+    "name": "APB Reloaded",
+    "icon": "b6b64331fa9c16a269298f5ec80c0db6",
+    "description": "Better known as the free-to-play \"APB: Reloaded\", APB is a MMO third-person shooter by the developers of Crackdown. Players choose between the hard-boiled law enforcers or the feared criminals as they try to stop the opposing faction's objectives.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "113400",
+        "sku": "113400",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "APB Reloaded"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "apb.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "2012/vcredist_x86.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f2917534ce81cfecd74d0d0261836e019fda59933fd6b1c4723ad665bb7ac130",
+    "flags": 0
+  },
+  {
+    "id": "1224418065295478955",
+    "name": "Content Warning",
+    "icon": "70ba8e85259eb8a64e66cb4cedf27b0b",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2881650",
+        "sku": "2881650",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1224418065295478955",
+      "username": "Content Warning",
+      "global_name": null,
+      "avatar": "70ba8e85259eb8a64e66cb4cedf27b0b",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6810",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "content warning/content warning.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "cab10a0a4bedeb3be47f6284e9679fe7f30062b149c334006bdf7e6e169b4d21",
+    "flags": 0
+  },
+  {
+    "id": "1263691812338536570",
+    "name": "Dungeonborne",
+    "icon": "424894ab221728be81a466100446b225",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2448970",
+        "sku": "2448970",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1263691812338536570",
+      "username": "Dungeonborne",
+      "global_name": null,
+      "avatar": "424894ab221728be81a466100446b225",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7480",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/dungeonborne.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8ae71a0e0ff73832a4d79d35fab44f99ac145f36fefa161d0c44b3840b431ebb",
+    "flags": 0
+  },
+  {
+    "id": "372438022647578634",
+    "name": "Destiny 2",
+    "icon": "79744dd00a9bd47c06fa1078e6c705fe",
+    "description": "The full-fledged follow-up to Destiny, streamlining much of the previous game's mechanics while featuring larger worlds and new abilities.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "2d646423539ce9fa89f06a5c1ae8cfcc",
+    "third_party_skus": [
+      {
+        "id": "25657",
+        "sku": "25657",
+        "distributor": "igdb"
+      },
+      {
+        "id": "1085660",
+        "sku": "1085660",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "destiny2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "794b1c4bb1b74e20dd619d1980b3ce15d02c344582c1ca95afb895322af824fc",
+    "flags": 0
+  },
+  {
+    "id": "1129504162200166401",
+    "name": "Farming Simulator 22",
+    "icon": "469676e3ad37898c0289283c30c2c882",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1248130",
+        "sku": "1248130",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1129504162200166401",
+      "username": "Farming Simulator 22",
+      "global_name": null,
+      "avatar": "469676e3ad37898c0289283c30c2c882",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "9138",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Landwirtschafts-Simulator 22"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "x64/farmingsimulator2022game.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9f57b0f5071667ea7d437b1827e75a4c0bb4a78de01343e9acba29b30e152bed",
+    "flags": 0
+  },
+  {
+    "id": "1238113262969557002",
+    "name": "Arena Breakout: Infinite",
+    "icon": "0785baa7c08a9001079c329eb084b0ae",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2073620",
+        "sku": "2073620",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1238113262969557002",
+      "username": "Arena Breakout Infinite",
+      "global_name": null,
+      "avatar": "0785baa7c08a9001079c329eb084b0ae",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1819",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/uagame.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1533a3a5a773b1820284cf475b940b31749016ed2f96d4e6c05fe9d347c7a87e",
+    "flags": 0
+  },
+  {
+    "id": "443159611479031808",
+    "name": "No Man's Sky",
+    "icon": "a13ad44b102c5bb9ec91a72ec9c93099",
+    "description": "A procedurally generated space exploration game from Hello Games, the creators of Joe Danger.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "1b0de773265cc85c8286187f43f82683",
+    "third_party_skus": [
+      {
+        "id": "275850",
+        "sku": "275850",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "nms.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "999d67a2127ff938e840b74ed850e29dde9e89ba07a9c5938114d865814699b7",
+    "flags": 0
+  },
+  {
+    "id": "615752773690064908",
+    "name": "World of Warcraft Classic",
+    "icon": "fc92f820c44e72085dc6205e5e746850",
+    "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "WoW",
+        "sku": "WoW",
+        "distributor": "battlenet"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "World of Warcraft™ Classic"
+    ],
+    "guild_id": "376400768225378320",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "wowclassic.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "726404d154c19639da4eb71acc4736d9e0140846c2289b59f6f46a4ef692e7e9",
+    "flags": 0
+  },
+  {
+    "id": "1182713227491147776",
+    "name": "THE FINALS",
+    "icon": "03e10d5589047e80d75a27d09b6557d0",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2073850",
+        "sku": "2073850",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1182713227491147776",
+      "username": "THE FINALS",
+      "global_name": null,
+      "avatar": "03e10d5589047e80d75a27d09b6557d0",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5637",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/discovery.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1d292d56e242918d810a25b66b24b5836c80e711ad87b5051457040cdfb6a5eb",
+    "flags": 0
+  },
+  {
+    "id": "358421669603311616",
+    "name": "Hearts of Iron IV",
+    "icon": "e59f973dc9129362bd86656a9feda266",
+    "description": "The next entry in the series of WWII wargames from Paradox Interactive.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "185ff33b31468763b4caa6c757b72eed",
+    "third_party_skus": [
+      {
+        "id": "394360",
+        "sku": "394360",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Hearts of Iron IV"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hearts of iron iv/hoi4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "hoi4.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "88b204682b9c00420f6045eccf38a272f937acad0212065c74122da56d53992b",
+    "flags": 0
+  },
+  {
+    "id": "1174041358995042375",
+    "name": "Ready or Not",
+    "icon": "bf95d5256f5257d2819c4dafc65f7c59",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1144200",
+        "sku": "1144200",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1174041358995042375",
+      "username": "Ready or Not",
+      "global_name": null,
+      "avatar": "bf95d5256f5257d2819c4dafc65f7c59",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7004",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Ready or Not"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/readyornot-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "bfaa1cd68d21ca7fc0caa5b8f657725f48a23e14484239bb3d9034d2fda2ab00",
+    "flags": 0
+  },
+  {
+    "id": "385538724592746496",
+    "name": "DayZ",
+    "icon": "cff0c274f3a4cf2c1280dab58268ce9d",
+    "description": "Beginning as a mod for ArmA II, the online zombie survival shooter DayZ is now a standalone game. It is currently in alpha, but is available as an Early Access game on Steam.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "c94c6673d3bf8514f3f6a25b9e925c77",
+    "third_party_skus": [
+      {
+        "id": "221100",
+        "sku": "221100",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "DayZ"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "dayz/dayzuninstaller.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dayz.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dayz_x64.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1e14bc1362f2655462c8fc120293a1a3576458a1864811332a4f5afc487074f2",
+    "flags": 0
+  },
+  {
+    "id": "1124358970618953818",
+    "name": "Valheim",
+    "icon": "93ac3b8489a031b721995a99102c73f1",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "892970",
+        "sku": "892970",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358970618953818",
+      "username": "Valheim 英灵神殿",
+      "global_name": null,
+      "avatar": "93ac3b8489a031b721995a99102c73f1",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1831",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "valheim/valheim.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "24b353557f04fb78bec80a1d3568e88543f84dba3d43cf02747644b2dc1e8744",
+    "flags": 0
+  },
+  {
+    "id": "428054228511227914",
+    "name": "Deep Rock Galactic",
+    "icon": "f2eb28103bedcfe67bb4d2da6ff663b9",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "548430",
+        "sku": "548430",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "guild_id": "257785731072786435",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "fsd-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "3ae32d8c63fdd953062ed113144de9fc72b76b3a4bc83479391f9652d3c08418",
+    "flags": 0
+  },
+  {
+    "id": "422169383972896768",
+    "name": "Hunt: Showdown",
+    "icon": "52ae10d11da1104b8081bfd9c4b1f803",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "594650",
+        "sku": "594650",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Hunt: Showdown"
+    ],
+    "guild_id": "350201607788429323",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hunt showdown/hunt.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win_x64/huntgame.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "23bbb989a4dc2e7a416595bd7999e8e6d5fbbc920fd873739a191b0735426510",
+    "flags": 0
+  },
+  {
+    "id": "1234262945350025246",
+    "name": "Banana",
+    "icon": "8a5c76eb325425be2084115dfcba88b3",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2923300",
+        "sku": "2923300",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1234262945350025246",
+      "username": "Banana",
+      "global_name": null,
+      "avatar": "8a5c76eb325425be2084115dfcba88b3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3982",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "banana/banana.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "4ac489fe7514fe31bd3aafba68bea25c13247e0462f8f28a06d119f350d71988",
+    "flags": 0
+  },
+  {
+    "id": "363430548028522496",
+    "name": "Half-Life",
+    "icon": "16fa1dfcd0282e4d13c97c928f163b7d",
+    "description": "Take on the role of Gordon Freeman as he escapes the disastrous aftermath of an experiment gone wrong in the Black Mesa Research Facility.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "149210e7069943518df545565dbb8f7f",
+    "third_party_skus": [
+      {
+        "id": "70",
+        "sku": "70",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hl.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "88edcb0fe3c3e00d20fe7b574dabac9e83582ec72282449914d8d64174f72fdc",
+    "flags": 0
+  },
+  {
+    "id": "359509332490059776",
+    "name": "Call of Duty: Black Ops III",
+    "icon": "dc4ae5b7f541c947e78926b8a55b8ce3",
+    "description": "Set 40 years after the events of Black Ops II, the twelfth installment of the Call of Duty series brings advanced robotics and biotic augmentations to the clandestine operations of the Black Ops storyline.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "c38f8822fa7d54eb12acd546c8f1d22f",
+    "third_party_skus": [
+      {
+        "id": "311210",
+        "sku": "311210",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Call of Duty: Black Ops III"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "call of duty black ops iii/boiii.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "blackops3.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e240dd9d6f9dc31f6bc5d4e66e328c19e3d3e7788bda7c88a577fc5e05d953df",
+    "flags": 0
+  },
+  {
+    "id": "358420454764969994",
+    "name": "The Binding of Isaac: Rebirth",
+    "icon": "1a139909cb5344dee95688dfedf728d8",
+    "description": "An enhanced remake of the original Binding of Isaac that features expanded gameplay, pixel art visuals, and a variety of other new additions - including full controller support and local asymmetric co-op.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "8f4c6a58ab9bb909df9b42cee8934dff",
+    "third_party_skus": [
+      {
+        "id": "250900",
+        "sku": "250900",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "The Binding of Isaac: Rebirth"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "roomeditor/roomeditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaacitempooleditor/itempooleditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaac-ng.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "79da3763c499aeac8a7bcccf8292f036cb914b1fc84c07e62ba024c619db1da9",
+    "flags": 0
+  },
+  {
+    "id": "1124353632758939688",
+    "name": "Krita",
+    "icon": "57c496c32727e7a9ba0a74fe6c8a60be",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "280680",
+        "sku": "280680",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124353632758939688",
+      "username": "Krita",
+      "global_name": null,
+      "avatar": "57c496c32727e7a9ba0a74fe6c8a60be",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1791",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "bin/krita.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c24cd9ca7c569bc7c2eb07e35bcb5bb2a41120014cc91ff09921f24dbbb290c3",
+    "flags": 0
+  },
+  {
+    "id": "363413834301571072",
+    "name": "Sid Meier's Civilization VI",
+    "icon": "898cdf97668109199473d5cdc160fa98",
+    "description": "The 6th mainline entry in the acclaimed 4X series.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "8eda4b54761775a6a4759a26811d66de",
+    "third_party_skus": [
+      {
+        "id": "289070",
+        "sku": "289070",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "civilizationvi.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "5cf236ee517a3e89e8573959bd8f241401833ead808ca9f88bb5d00d09bfc8f9",
+    "flags": 0
+  },
+  {
+    "id": "1162076274622222346",
+    "name": "Battlefield 2042",
+    "icon": "d779a9d9e479c04f27d977bc6c88fe18",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1517290",
+        "sku": "1517290",
+        "distributor": "steam"
+      },
+      {
+        "id": "125166",
+        "sku": "125166",
+        "distributor": "igdb"
+      }
+    ],
+    "bot": {
+      "id": "1162076274622222346",
+      "username": "Battlefield 2042",
+      "global_name": null,
+      "avatar": "d779a9d9e479c04f27d977bc6c88fe18",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1159",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Battlefield 2042"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "battlefield 2042/bf2042.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ca6bd108b02287da905501f82c19f22dc2493147ef51327c5ffd694f5cbdf6f6",
+    "flags": 0
+  },
+  {
+    "id": "359509759642042378",
+    "name": "Fallout 4",
+    "icon": "6c903026d4fc97559ba48ecf9cc4dc04",
+    "description": "The Fallout series continues in a post-apocalyptic Boston, Massachusetts.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "82fd3394dedb4e6ae8178f0dee40dfb6",
+    "third_party_skus": [
+      {
+        "id": "377160",
+        "sku": "377160",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "fallout4.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "705e9838771d290d765b3f4019e90a3d00f20972522986d8a58e2f6448698a52",
+    "flags": 0
+  },
+  {
+    "id": "477152881196269569",
+    "name": "MONSTER HUNTER: WORLD",
+    "icon": "8fd08a2e0440f80334ea403d2300a828",
+    "description": "The fifth primary title in the Monster Hunter franchise features much larger maps, seamless transitions between zones in the map and four-player online co-op. It allows players from Japan and western countries to play together for the first time in the series.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "fdd5d30ff7a802d7ec38f2dff0e63046",
+    "third_party_skus": [
+      {
+        "id": "582010",
+        "sku": "582010",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Monster Hunter: World"
+    ],
+    "guild_id": "120889695658967041",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "monster hunter world/mhw_modmanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "monsterhunterworld.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "12c77166a2b2359e0eb61eff5124144b6adee43765c990486dd23447de7613de",
+    "flags": 0
+  },
+  {
+    "id": "449806905901056012",
+    "name": "Raft",
+    "icon": "aa3b7a0ded0341cfbfd463d349e06add",
+    "description": "Raft is an indie ocean navigation survival game.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "b28637baca23553de6d9747f8a1110ad",
+    "third_party_skus": [
+      {
+        "id": "648800",
+        "sku": "648800",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "guild_id": "446658603873730611",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "raft.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "66e7b0d12109b3528b90587c299837dd307a2c054844c3f5bca3d8e98b0168b6",
+    "flags": 0
+  },
+  {
+    "id": "569253958967885828",
+    "name": "Risk of Rain 2",
+    "icon": "b838c4c744b9cb9f8dd4c8afb82b085f",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "632360",
+        "sku": "632360",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Risk of Rain 2"
+    ],
+    "guild_id": "417739215355510784",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "risk of rain 2.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "risk of rain 2/risk of rain 2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8040fa7504a966c327da9b629e5d9b9f9db2401a6513f5ddf8fab1bf6523215e",
+    "flags": 0
+  },
+  {
+    "id": "940810636273795162",
+    "name": "Lost Ark",
+    "icon": "2df369a2ad4ceeb1fe50c89adc21f442",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1599340",
+        "sku": "1599340",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "Lost Ark",
+      "Lost Ark Closed Technical Alpha"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/lostark.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e67b487ef9fd2568dd71e8b939cd4d4418cab831d1563bc9372989dc52fe2a8a",
+    "flags": 0
+  },
+  {
+    "id": "359510095811444736",
+    "name": "MapleStory",
+    "icon": "d92a0da6cbe1561b98e9f9146600b219",
+    "description": "The worlds first side-scrolling massively multiplayer online role-playing game",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "216150",
+        "sku": "216150",
+        "distributor": "steam"
+      },
+      {
+        "id": "9804",
+        "sku": "9804",
+        "distributor": "igdb"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "maplestory.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "2a0f6a864c85973065a54f1be133b2b2717938181813253499a4f86dc16c2a13",
+    "flags": 0
+  },
+  {
+    "id": "1245451463736692857",
+    "name": "XDefiant",
+    "icon": "897fcf5f83ff9b9b845847176cb3048c",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "15657",
+        "sku": "15657",
+        "distributor": "uplay"
+      }
+    ],
+    "bot": {
+      "id": "1245451463736692857",
+      "username": "XDefiant",
+      "global_name": null,
+      "avatar": "897fcf5f83ff9b9b845847176cb3048c",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2093",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "XDefiant"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "xdefiant/xdefiant.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "be68b623e25436ab4bc6f237b48f8dac147413ebd815a569501f16b2b6568e17",
+    "flags": 0
+  },
+  {
+    "id": "356887282982191114",
+    "name": "ARK: Survival Evolved",
+    "icon": "99016e1224cc0bb19604048f07bc937a",
+    "description": "A multiplayer first-person survival game set in a world populated by dinosaurs.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "67be84bd214e91241cdba7c41e0ac9b8",
+    "third_party_skus": [
+      {
+        "id": "346110",
+        "sku": "346110",
+        "distributor": "steam"
+      }
+    ],
+    "overlay": true,
+    "overlay_compatibility_hook": true,
+    "hook": true,
+    "aliases": [
+      "ARK: Survival Evolved"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/shootergame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "0f8bb65e8f50a9368d66aab0a217d7ee975cca3b200f8e76770a70a9755fb781",
+    "flags": 0
+  },
+  {
+    "id": "1124351876033425529",
+    "name": "Stumble Guys",
+    "icon": "402bf37b1f6587aa2b82da6b20cdf36c",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1677740",
+        "sku": "1677740",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124351876033425529",
+      "username": "Stumble Guys",
+      "global_name": null,
+      "avatar": "402bf37b1f6587aa2b82da6b20cdf36c",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0842",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "stumble guys/stumble guys.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "309d386632b5a10ba2f98e1c8c0fca34fa0130b28426095dfb053664fc812cd8",
+    "flags": 0
+  },
+  {
+    "id": "363411421553360896",
+    "name": "Last Man Standing",
+    "icon": "0f5d25c5960c9e734e6adced21f4883f",
+    "description": "Last Man Standing",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "be4bb04701b0aba0a2d725d37ce96a06",
+    "third_party_skus": [
+      {
+        "id": "506540",
+        "sku": "506540",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Last Man Standing"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "2013/vcredist_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lms.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "56cc6e587f0a8a30cc898f3d71d81e31f4d926c1070fa5f4c78597626ff7604d",
+    "flags": 0
+  },
+  {
+    "id": "1162151882039504916",
+    "name": "RuneLite",
+    "icon": "3f6589f21e7b6948f57c491744cfdf42",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1162151882039504916",
+      "username": "RuneLite",
+      "global_name": null,
+      "avatar": "3f6589f21e7b6948f57c491744cfdf42",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0564",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "RuneLite"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "runelite/runelite.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c3f9721053d41b17feede89bd66d8b12f259cf9366786b6bdee86a7d7f67f9c6",
+    "flags": 0
+  },
+  {
+    "id": "1067554911358832721",
+    "name": "Goose Goose Duck",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1568590",
+        "sku": "1568590",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "Goose Goose Duck"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "goose goose duck/goose goose duck.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "ec68dae83606339bcdea99e8eccd5cbc2faa1385649af69a42d3f0c3532cfe38",
+    "flags": 0
+  },
+  {
+    "id": "1140238527980916757",
+    "name": "Yu-Gi-Oh!  Master Duel",
+    "icon": "d6d79f145bf860513c4a322247466f03",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1449850",
+        "sku": "1449850",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1140238527980916757",
+      "username": "Yu-Gi-Oh!  Master Duel",
+      "global_name": null,
+      "avatar": "d6d79f145bf860513c4a322247466f03",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2795",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "yu-gi-oh!  master duel/masterduel.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9bd3ebabb1e81048c78745d3c0506982bb1ef9908da5cdc27352c91c875194c6",
+    "flags": 0
+  },
+  {
+    "id": "359801269008859136",
+    "name": "The Elder Scrolls V: Skyrim Special Edition",
+    "icon": "19c00372c4c1402e68128a542062f2e2",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "60a0e606e903fd1558362715097a209c",
+    "third_party_skus": [
+      {
+        "id": "489830",
+        "sku": "489830",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "aliases": [
+      "The Elder Scrolls V Skyrim Special Edition",
+      "The Elder Scrolls V: Skyrim Special Edition"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "skyrim special edition/skyrimse.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "72f6fe08f00adf9fc80b405c19f018f998a99d28d04e01820e712316ae1d13c6",
+    "flags": 0
+  },
+  {
+    "id": "1272842103910699040",
+    "name": "Black Myth: Wukong",
+    "icon": "908f3f31004652e1971c6e8a4b9d7c30",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2358720",
+        "sku": "2358720",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1272842103910699040",
+      "username": "Black Myth Wukong Benchmark Tool",
+      "global_name": null,
+      "avatar": "908f3f31004652e1971c6e8a4b9d7c30",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5316",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/b1-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "cf9b711eb28221acbd26957db547bfa761028c27a2d820fbb90b6335e5872b9e",
+    "flags": 0
+  },
+  {
+    "id": "1276737795012165766",
+    "name": "Deadlock",
+    "icon": "08e679bae42c738a66c1b2e0e546ecc0",
+    "description": "",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1422450",
+        "sku": "1422450",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1276737795012165766",
+      "username": "Deadlock",
+      "global_name": null,
+      "avatar": "08e679bae42c738a66c1b2e0e546ecc0",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0584",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/project8.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8eeeaa86515922f673a9444eb25b121d6908b48c0560751bfaba32255d47e17e",
+    "flags": 0
+  },
+  {
+    "id": "356869127241072640",
+    "name": "League of Legends",
+    "icon": "5a15a24a3931880801709a32accd0a1d",
+    "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "9915146539e20aceff096bd4e856aab3",
+    "overlay": true,
+    "hook": true,
+    "aliases": [
+      "League of Legends (TW)"
+    ],
+    "guild_id": "417825368062558219",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3829,13 +8860,18 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -3852,11 +8888,6 @@
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -3902,8 +8933,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147601472"
     },
@@ -3911,8 +8942,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2147601472"
         }
@@ -3948,14 +8979,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2507950",
-        "sku": "2507950",
-        "distributor": "steam"
-      },
-      {
         "id": "262186",
         "sku": "262186",
         "distributor": "igdb"
+      },
+      {
+        "id": "2507950",
+        "sku": "2507950",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -3983,7 +9014,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -3993,17 +9024,17 @@
       },
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "launcher/df_launcher_global.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "launcher/df_launcher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       }
     ],
@@ -4225,17 +9256,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "roblox.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "roblox.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "roblox.exe",
         "is_launcher": false
       }
     ],
@@ -4301,6 +9332,16 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
@@ -4311,23 +9352,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
