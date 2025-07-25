@@ -1,0 +1,55 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8089351002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "internal_job_id": 6203944002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Data Science & Data Engineering",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8089351002,
+  "updated_at": "2025-07-25T16:24:40-04:00",
+  "requisition_id": "R-100989",
+  "title": "Senior Data Scientist, Analytics",
+  "company_name": "Discord",
+  "first_published": "2025-07-25T16:24:40-04:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;\n&lt;p&gt;As a member of the Data Science &amp;amp; Analytics team, you will help Discord achieve its mission of making it easier and more fun for people to talk and hang out before, during, and after playing games. Analytics Data Scientists leverage their deep analytical skills and product intuition to solve a wide array of complex problems — from strategic analysis to dashboard creation and experimentation design and analysis. We are currently hiring across a number of different data science teams. If you’re passionate about data, impact, and working on an amazing team, read on!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Partner with teams throughout Discord through the full lifecycle of data science analytics from ideation and exploratory analysis, to building dashboards and reports, and A/B testing&lt;/li&gt;\n&lt;li&gt;Define KPIs and metrics that help improve the user experience, encapsulating these measures in clean crisp dashboards that provide the company with timely and actionable information&lt;/li&gt;\n&lt;li&gt;Use our amazing infrastructure to quickly and easily build custom data sets to monitor novel product features and processes&lt;/li&gt;\n&lt;li&gt;Proactively socialize insights, dashboards, and reports with technical and non-technical audiences, soliciting feedback on where to improve&lt;/li&gt;\n&lt;li&gt;Be a champion of A/B testing and help groups throughout the company design, analyze, and interpret A/B tests correctly&lt;/li&gt;\n&lt;li&gt;Collaborate with data and engineering teams to design scalable and future-proof instrumentation&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of experience autonomously translating ambiguous business problems into deep informative insights through hands-on analytics&lt;/li&gt;\n&lt;li&gt;4+ years of experience building performant dashboards using Tableau, Looker, or similar software - with proficiency in designing clean crisp visualizations&lt;/li&gt;\n&lt;li&gt;4+ years experience writing excellent SQL&lt;/li&gt;\n&lt;li&gt;Excellent communication skills, with the ability to translate complicated findings or technical approaches in easy-to-understand ways&lt;/li&gt;\n&lt;li&gt;4+ years of experience in the design, analysis, and interpretation of A/B tests in a large data environment&lt;/li&gt;\n&lt;li&gt;A desire to work with amazing, passionate people who care deeply about solving challenging problems to improve Discord&lt;/li&gt;\n&lt;li&gt;Last but not least - a collaborative attitude and a healthy dose of natural curiosity!&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Passion for Discord or online communities&lt;/li&gt;\n&lt;li&gt;Experience with technical leadership, being the point person for one or more stakeholder groups&lt;/li&gt;\n&lt;li&gt;Experience with analytics for social media or international subscription-based online services, including familiarity with concepts such as social graphs, LTV analysis, funnel analysis, etc.&lt;/li&gt;\n&lt;li&gt;Experience in the user engagement and growth problems&lt;/li&gt;\n&lt;li&gt;Experience writing performant code in BigQuery SQL&lt;/li&gt;\n&lt;li&gt;Experience with writing production ETL&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
