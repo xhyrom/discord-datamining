@@ -1,8 +1,8 @@
 {
   "id": 1025076712,
   "node_id": "R_kgDOPRlt6A",
-  "name": "Discord-Social-SDK-Unity-Sample",
-  "full_name": "discord/Discord-Social-SDK-Unity-Sample",
+  "name": "social-sdk-unity-sample",
+  "full_name": "discord/social-sdk-unity-sample",
   "private": false,
   "owner": {
     "login": "discord",
@@ -27,10 +27,10 @@
   },
   "description": "A Unity sample project demonstrating integration with the Discord Social SDK designed with best practices in mind.",
   "fork": false,
-  "url": "https://api.github.com/repos/discord/Discord-Social-SDK-Unity-Sample",
+  "url": "https://api.github.com/repos/discord/social-sdk-unity-sample",
   "created_at": "2025-07-23T17:24:06Z",
   "homepage": "",
-  "size": 4002,
+  "size": 4011,
   "language": "ShaderLab",
   "has_issues": true,
   "has_projects": false,
