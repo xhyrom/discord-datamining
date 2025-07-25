@@ -249,8 +249,8 @@
       </tr>
       <tr>
         <td><span style="color: #2e3338">Upload</span></td>
-        <td><span style="color: #2e3338">25MB</span></td>
-        <td><span style="color: #2e3338">25MB</span></td>
+        <td><span style="color: #2e3338">10MB</span></td>
+        <td><span style="color: #2e3338">N/A</span></td>
         <td><span style="color: #2e3338">50MB for all members</span></td>
         <td><span style="color: #2e3338">100MB for all members</span></td>
       </tr>
