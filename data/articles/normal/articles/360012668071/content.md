@@ -108,11 +108,9 @@
   without your permission, please submit a ticket through
   <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
     >dis</a
-  ><span style="color: #2e3338; background-color: #ffffff"
-    ><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
-      >.gd/billing</a
-    >. </span
-  >
+  ><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+    >.gd/billing</a
+  >.
 </p>
 <h1 id="h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts</h1>
 <p>
@@ -125,20 +123,7 @@
   >. Our Support Team will review your request and notify you of the outcome of
   your request. 
 </p>
-<p>
-  <span id="docs-internal-guid-42853b36-7fff-5086-5ded-bfe4ff3f1918"
-    >If you purchased any profile cosmetics within 5 days of your Nitro
-    subscription renewing or becoming a new Nitro subscriber, you will not be
-    eligible for a Nitro subscription refund.</span
-  >
-</p>
 <h2 id="h_01J5BJ0CVX6QRXWNJHY3TM97FG">Exceptions</h2>
-<p><strong>Profile Cosmetics</strong></p>
-<p>
-  If you purchased any profile cosmetics like avatar decorations or profile
-  effects within 5 days of your Nitro membership renewing or becoming a new
-  Nitro subscriber, you will not be eligible for a Nitro membership refund. 
-</p>
 <p><strong>Subscriber Promotions</strong></p>
 <p>
   If you have redeemed or received any promotional items from Discord or from a
