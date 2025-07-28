@@ -16273,16 +16273,18 @@ svg.radioIcon_c1e9c4 {
   flex: 0 0 auto;
   margin-left: 8px;
 }
-.bangers__89a31 {
-  font-family: Bangers, Arial, sans-serif;
-}
 .bioRhyme__89a31 {
-  font-family: BioRhyme, Arial, sans-serif;
+  font-family:
+    BioRhyme,
+    gg sans,
+    Arial,
+    sans-serif;
   letter-spacing: 0.03em;
 }
 .cherryBomb__89a31 {
   font-family:
     Cherry Bomb One,
+    gg sans,
     Arial,
     sans-serif;
 }
@@ -16291,14 +16293,16 @@ svg.radioIcon_c1e9c4 {
   letter-spacing: 0.04em;
 }
 .chicle__89a31 {
-  font-family: Chicle, Arial, sans-serif;
-}
-.compagnon__89a31 {
-  font-family: Compagnon, Arial, sans-serif;
+  font-family:
+    Chicle,
+    gg sans,
+    Arial,
+    sans-serif;
 }
 .museoModerno__89a31 {
   font-family:
     Museo Moderno,
+    gg sans,
     Arial,
     sans-serif;
   letter-spacing: 0.01em;
@@ -16306,6 +16310,7 @@ svg.radioIcon_c1e9c4 {
 .neoCastel__89a31 {
   font-family:
     Neo Castel,
+    gg sans,
     Arial,
     sans-serif;
   letter-spacing: 0.02em;
@@ -16313,15 +16318,17 @@ svg.radioIcon_c1e9c4 {
 .pixelify__89a31 {
   font-family:
     Pixelify Sans,
+    gg sans,
     Arial,
     sans-serif;
   letter-spacing: 0.02em;
 }
-.ribes__89a31 {
-  font-family: Ribes, Arial, sans-serif;
-}
 .sinistre__89a31 {
-  font-family: Sinistre, Arial, sans-serif;
+  font-family:
+    Sinistre,
+    gg sans,
+    Arial,
+    sans-serif;
   letter-spacing: 0.01em;
 }
 .container_dfb989 {
@@ -28190,11 +28197,6 @@ body .headerAnimation_b54a5b {
 .hidden__92b20 {
   display: none;
 }
-.newPaymentBadge__92b20 {
-  background-color: var(--white-500);
-  color: var(--brand-500);
-  margin-left: 5px;
-}
 .SeparatorLower__92b20,
 .SeparatorUpper__92b20 {
   background: var(--border-subtle);
@@ -32414,28 +32416,6 @@ body .headerAnimation_b54a5b {
   display: inline;
   text-decoration: underline;
 }
-.noticeRoot_b956e9 {
-  align-items: center;
-  background-color: var(--background-base-lower);
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 8px 16px;
-}
-.iconContainer_b956e9,
-.noticeRoot_b956e9 {
-  display: flex;
-}
-.infoIcon_b956e9 {
-  color: var(--yellow-300);
-  height: 14px;
-  margin-right: 6px;
-  width: 14px;
-}
-.text_b956e9 {
-  color: var(--interactive-normal);
-  flex-grow: 1;
-}
 .pricePerInterval_b39acb {
   color: var(--interactive-normal);
   font-size: 16px;
@@ -35285,12 +35265,10 @@ div.modalOverrideBody__34eac {
     transform: rotate(-50deg) scale(0);
   }
 }
-.buttonWrapper__24af7 {
-  cursor: pointer;
-}
 .button__24af7 {
   align-items: center;
   color: var(--interactive-normal);
+  cursor: pointer;
   display: flex;
   justify-content: center;
 }
@@ -35299,6 +35277,10 @@ div.modalOverrideBody__34eac {
 }
 .button__24af7:active {
   color: var(--interactive-active);
+}
+.button__24af7.disabled__24af7 {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 .align-chat-input .button__24af7:not(.noHover__24af7) {
   border-radius: 8px;
@@ -35468,7 +35450,8 @@ div.modalOverrideBody__34eac {
   width: 140%;
   z-index: 2;
 }
-.disabled_aa63ab {
+.button_aa63ab > .disabled_aa63ab {
+  color: var(--interactive-muted);
   cursor: not-allowed;
 }
 .container_aa63ab {
@@ -35490,7 +35473,7 @@ div.modalOverrideBody__34eac {
   height: 20px !important;
   width: 20px !important;
 }
-.innerButton_aa63ab {
+.button_aa63ab {
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
@@ -35498,12 +35481,7 @@ div.modalOverrideBody__34eac {
   min-width: var(--space-32);
   padding: 4px;
 }
-.buttonContainer_aa63ab button:disabled {
-  opacity: 1;
-}
-.buttonChild_aa63ab,
-.button_aa63ab[disabled] > .innerButton_aa63ab > .buttonChild_aa63ab {
-  color: var(--interactive-muted);
+.buttonChild_aa63ab {
   transition: color 0.25s ease-in-out;
 }
 .activeButtonChild_aa63ab {
@@ -35527,7 +35505,7 @@ div.modalOverrideBody__34eac {
 .theme-light .buttonContainer_aa63ab:active {
   color: var(--brand-600);
 }
-.reduce-motion .innerButton_aa63ab {
+.reduce-motion .button_aa63ab {
   transition: unset;
 }
 .container_aa63ab:before {
@@ -62465,4 +62443,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c3b93cc44a5f9404.css.map*/
+/*# sourceMappingURL=12633.b97d59cd10fd671c.css.map*/
