@@ -36782,6 +36782,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   margin-right: 4px;
 }
+.buttonContainer__5c6a8 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.user-profile-popout .buttonContainer__5c6a8,
+.user-profile-sidebar .buttonContainer__5c6a8 {
+  flex-direction: column;
+  width: 100%;
+}
+.user-profile-popout .buttonContainer__5c6a8 > *,
+.user-profile-sidebar .buttonContainer__5c6a8 > * {
+  width: 100%;
+}
 .fontCode__230d2 {
   font-family: var(--font-code);
 }
@@ -62440,4 +62454,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.639387170712bff1.css.map*/
+/*# sourceMappingURL=12633.2ecefac591ef1727.css.map*/
