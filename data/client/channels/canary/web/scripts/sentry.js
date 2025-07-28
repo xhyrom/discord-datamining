@@ -4558,7 +4558,8 @@
             IOS: "https://itunes.apple.com/app/discord/id985746746",
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
-          });
+          }),
+          (0, c.Rf)(0x99aab5);
         let A = (0, c._i)(o.Z.BRAND_500);
         n()(null != A, "Brand color could not be parsed"),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
@@ -6909,7 +6910,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0bac00d533acbcc50fbbc84418d0ad6de636b958",
+            release: "discord_web-84dbf37e647fc6afe1574c5376d3bd626e916642",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6975,8 +6976,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "423990"),
-            o.YA("builtAt", String("1753735938749"));
+            o.YA("buildNumber", "424005"),
+            o.YA("builtAt", String("1753736848332"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22500,11 +22501,25 @@
       },
       866442: function (t, e, a) {
         "use strict";
-        a.d(e, { _i: () => n }), a(35282);
+        a.d(e, { Rf: () => i, _i: () => o }), a(35282);
         var r = a(688619),
           _ = a.n(r);
         function n(t) {
+          return 1 === t.length ? "0".concat(t) : t;
+        }
+        function o(t) {
           return _()(t).num();
+        }
+        function i(t) {
+          return t <= 0xffffff
+            ? "#"
+                .concat(n(((t >> 16) & 255).toString(16)))
+                .concat(n(((t >> 8) & 255).toString(16)))
+                .concat(n((255 & t).toString(16)))
+            : "#"
+                .concat(n(((t >> 24) & 255).toString(16)))
+                .concat(n(((t >> 16) & 255).toString(16)))
+                .concat(n(((t >> 8) & 255).toString(16)));
         }
       },
       860911: function (t, e, a) {
@@ -48274,4 +48289,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.cee1fff9605481c1.js.map
+//# sourceMappingURL=sentry.8a35f31abd7f89d6.js.map
