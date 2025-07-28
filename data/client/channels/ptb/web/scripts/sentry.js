@@ -4646,6 +4646,7 @@
           (r.CLIENT_AD_HEARTBEAT = "client_ad_heartbeat"),
           (r.ATT_ELIGIBILITY_CHECKED = "att_eligibility_checked"),
           (r.ATT_APP_STATE_CHECKED = "att_app_state_checked"),
+          (r.ATT_APP_STATE_CHECKED_OVERRIDE = "att_app_state_checked_override"),
           (r.ATT_PROMPT_ERROR = "att_prompt_error"),
           (r.HEADLESS_TASK_INVOKED = "headless_task_invoked"),
           (r.HEADLESS_TASK_COMPLETED = "headless_task_completed"),
@@ -4691,6 +4692,7 @@
           (r.VOICE_CONNECTION_SOCKET_FAILURE =
             "voice_connection_socket_failure"),
           (r.VOICE_CONNECTION_SUCCESS = "voice_connection_success"),
+          (r.VOICE_CONNECTION_TTC_COLLECTED = "voice_connection_ttc_collected"),
           (r.VOICE_CONNECTION_REMOTE_STREAMS_CREATED =
             "voice_connection_remote_streams_created"),
           (r.VOICE_DISCONNECT = "voice_disconnect"),
@@ -6276,12 +6278,15 @@
             "moderator_report_original_message_link_clicked"),
           (r.MODERATOR_QUEUE_ACTION = "moderator_queue_action"),
           (r.NOTIFICATIONS_INBOX_OPENED = "notifications_inbox_opened"),
+          (r.NOTIFICATIONS_INBOX_READY = "notifications_inbox_ready"),
           (r.NOTIFICATIONS_INBOX_ITEM_INTERACTED =
             "notifications_inbox_item_interacted"),
           (r.NOTIFICATIONS_INBOX_SECTION_INTERACTED =
             "notifications_inbox_section_interacted"),
           (r.NOTIFICATIONS_INBOX_UNMOUNTED = "notifications_inbox_unmounted"),
           (r.NOTIFICATIONS_INBOX_LOADED = "notifications_inbox_loaded"),
+          (r.NOTIFICATIONS_INBOX_DATA_LOADED =
+            "notifications_inbox_data_loaded"),
           (r.MASKED_LINK_MODAL_CLICKED = "masked_link_modal_clicked"),
           (r.ACTIVITY_SHARING_SETTINGS_INTERACTED =
             "activity_sharing_settings_interacted"),
@@ -6904,7 +6909,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-25-a335279de550428692adb25eb83546b8003261fd-discord_web",
+              "2025-07-28-3d2ae789a8349b36d7a41d7bd17a642928b4cb3c-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6970,8 +6975,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "423077"),
-            o.YA("builtAt", String("1753427933810"));
+            o.YA("buildNumber", "423642"),
+            o.YA("builtAt", String("1753687100308"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48269,4 +48274,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.7c7c2c81622b55b3.js.map
+//# sourceMappingURL=sentry.9e11e70a161f162b.js.map
