@@ -60,12 +60,12 @@
       >
       <ul>
         <li>
-          <strong><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></strong>
+          <a href="#h_01JZ3EFHEK8PRXH1SXVXVQXFW3"
+            ><strong>All Nitro Subscription Types</strong></a
+          >
         </li>
         <li>
-          <strong
-            ><a href="#h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic</a></strong
-          >
+          <strong><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></strong>
         </li>
         <li>
           <strong
@@ -424,7 +424,7 @@
   </table>
 </div>
 <div class="book-box">
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Looking for Nitro Classic? Check our FAQ
     <a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">below</a>.</span
   >
@@ -497,7 +497,7 @@
   />
 </p>
 <h4 id="h_01JXDBXH9P916VDHPE0844SVH3" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Desktop: Subscribing to Nitro Through User Settings</span
   >
 </h4>
@@ -528,7 +528,7 @@
   />
 </p>
 <h4 id="h_01JXDBYVR4YH4H85CKFD5S6546" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Desktop: Subscribing to Nitro Through the Nitro Tab</span
   >
 </h4>
@@ -565,7 +565,7 @@
   />
 </p>
 <h4 id="h_01JXDC10GS4029W5XFP8MX8QTP" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Mobile: Subscribing to Nitro Through Settings</span
   >
 </h4>
@@ -595,7 +595,7 @@
   />
 </p>
 <h4 id="h_01JXDC24F13JBF30ACM5CBH9XY" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Mobile: Subscribing to Nitro Through Nitro Icon</span
   >
 </h4>
@@ -606,80 +606,16 @@
   >
 </p>
 <ul>
-  <li><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></li>
-  <li><a href="#h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic </a></li>
-  <li><a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</a></li>
+  <li>
+    <a href="#h_01JZ3EFHEK8PRXH1SXVXVQXFW3">All Nitro Subscription Types</a>
+  </li>
+  <li><a href="#h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</a></li>
+  <li><a href="#h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</a></li>
 </ul>
-<h2 id="h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</h2>
+<h2 id="h_01JZ3EFHEK8PRXH1SXVXVQXFW3">All Nitro Subscription Types</h2>
 <p>
-  <strong
-    >Q: My Nitro subscription comes with 2 Server Boosts. What are
-    those?</strong
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >A: Server Boosts are a way to show support for your favorite communities.
-    Each Boost that you give to a server helps collectively unlock perks for
-    everyone in the server to enjoy. You can learn more about </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360028038352"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Server Boosting here</a
-  ><span style="font-weight: 400">! </span>
-</p>
-<p>
-  <strong
-    >Q: I’m having issues with my payment method when I try to buy a Nitro or
-    Nitro Basic subscription.</strong
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    >A: If you’re having trouble with your payment method or if you have any
-    questions about how Discord billing works, you can check out this article </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360017693772"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  ><span style="font-weight: 400">.</span>
-</p>
-<p id="docs-internal-guid-58cf7475-7fff-01d4-ff85-6b1f2433dbac">
-  <strong>Q: Can I gift Nitro to a friend?</strong>
-</p>
-<p>
-  <span style="font-weight: 400"
-    >A: Yes! Check out this
-    <a
-      href="https://support.discord.com/hc/articles/360020877112"
-      target="_blank"
-      rel="noopener noreferrer"
-      >support article on how to gift Discord Nitro to a friend</a
-    >.</span
-  >
-</p>
-<p>
-  <span style="font-weight: 400"
-    ><strong
-      >Q: Why do I need Nitro to upload more than 10MB of files?</strong
-    ></span
-  >
-</p>
-<p>
-  A: Every day, millions of files are uploaded to Discord and stored securely
-  for your future access. Storage management is expensive, so we regularly
-  review how people use Discord and their storage needs. In fact, our data shows
-  that 99% of users stick to files smaller than 10MB.
-</p>
-<p>
-  In order to maintain our service without compromising on quality of storage,
-  we decided to reduce the free file size upload limit. Unlike other platforms,
-  we store your files for as long as you need them, so it’s crucial that we
-  manage our storage sustainably. If you need more upload capacity, Nitro Basic
-  offers a 50MB limit, and Nitro gives you up to 500 MB, so you have options
-  that fit your needs.
+  The FAQs in this section refer to Nitro, Nitro Basic, and Nitro Classic unless
+  stated otherwise.
 </p>
 <p><strong>Q: How do I cancel or switch my Nitro plan?</strong></p>
 <p>
@@ -695,38 +631,92 @@
     >How to Cancel Nitro Subscription article</a
   >.
 </p>
-<h2 id="h_01JXDC64GDPJ2RFHMK8XZN2Z3C">Nitro Basic</h2>
+<p><strong>Q: Why is my price for Nitro different from my friends?</strong></p>
 <p>
-  <strong>Q: Do you offer Nitro and Nitro Basic in my local currency?</strong>
+  A: Discord regularly reviews and updates prices based on factors like your
+  location, local market conditions, currency exchange rates, and regional
+  operating costs. We also test different pricing approaches to better
+  understand what works best for our community.
 </p>
 <p>
-  A: We are constantly working to expand the availability of accepted currencies
-  for Nitro and Nitro Basic. Check
-  <a
-    href="https://support.discord.com/hc/en-us/articles/4407269525911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >this article</a
-  >
-  for information on localized pricing.
+  If your subscription price changes, we'll always notify you in advance so you
+  know what to expect and can manage your subscription before any new prices
+  take effect.
 </p>
-<p><strong>Q: Can I gift Nitro Basic to a friend? </strong></p>
+<p><strong>Q: Can I gift Nitro or Nitro Basic to a friend?</strong></p>
 <p>
-  A:
-  <span id="docs-internal-guid-3ca05bc3-7fff-fe7a-993e-3d2cedafcf64"
-    >Gifting Nitro Basic is available on the desktop/browser clients and the
-    mobile clients. To gift Nitro Basic, you must go to the </span
-  ><strong>Nitro</strong> page which you can find by pressing the Discord logo
-  in your desktop or browser app or you can go to the Nitro page in your
-  <strong>User Settings.</strong> Learn more about
+  A: Yes! Check out this
   <a
     href="https://support.discord.com/hc/articles/360020877112"
     target="_blank"
     rel="noopener noreferrer"
-    >Nitro Gifting here</a
+    >support article on how to gift Discord Nitro to a friend</a
   >.
 </p>
-<h2 id="h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</h2>
+<p>
+  <strong>Q: Do you offer Nitro and Nitro Basic in my local currency?</strong>
+</p>
+<p>
+  A: We are always considering opportunities to expand the availability of
+  accepted currencies for Nitro and Nitro Basic. Check<a
+    href="https://support.discord.com/hc/en-us/articles/4407269525911"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    this article</a
+  >
+  for information on localized pricing.
+</p>
+<h2 id="h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</h2>
+<p>
+  <strong
+    >Q: My Nitro subscription comes with 2 Server Boosts. What are
+    those?</strong
+  >
+</p>
+<p>
+  A: Server Boosts are a way to show support for your favorite communities. Each
+  Boost that you give to a server helps collectively unlock perks for everyone
+  in the server to enjoy. You can learn more about<a
+    href="https://support.discord.com/hc/en-us/articles/360028038352"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Server Boosting here</a
+  >! 
+</p>
+<p>
+  <strong
+    >Q: I’m having issues with my payment method when I try to buy a Nitro or
+    Nitro Basic subscription.</strong
+  >
+</p>
+<p>
+  A: If you’re having trouble with your payment method or if you have any
+  questions about how Discord billing works, you can check out this article<a
+    href="https://support.discord.com/hc/en-us/articles/360017693772"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    here</a
+  >.
+</p>
+<p>
+  <strong>Q: Why do I need Nitro to upload more than 10MB of files?</strong>
+</p>
+<p>
+  A: Every day, millions of files are uploaded to Discord and stored securely
+  for your future access. Storage management is expensive, so we regularly
+  review how people use Discord and their storage needs. In fact, our data shows
+  that 99% of users stick to files smaller than 10MB. <br /><br />In order to
+  maintain our service without compromising on quality of storage, we decided to
+  reduce the free file size upload limit. Unlike other platforms, we store your
+  files for as long as you need them, so it’s crucial that we manage our storage
+  sustainably. If you need more upload capacity, Nitro Basic offers a 50MB
+  limit, and Nitro gives you up to 500 MB, so you have options that fit your
+  needs.
+</p>
+<h2 id="h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</h2>
 <p>
   <strong
     >Q: I have a Nitro Classic subscription, but I no longer see Nitro Classic
@@ -734,11 +724,9 @@
   >
 </p>
 <p>
-  <span style="font-weight: 400"
-    >A: If you have an active Nitro Classic subscription, you can keep your
-    current plan. Please note that if you cancel your subscription, you will not
-    be able to re-subscribe to Classic. </span
-  >
+  A: If you have an active Nitro Classic subscription, you can keep your current
+  plan. Please note that if you cancel your subscription, you will not be able
+  to re-subscribe to Classic. 
 </p>
 <p>
   <strong
@@ -746,73 +734,47 @@
     Classic gives me.</strong
   >
 </p>
-<p>
-  <span style="font-weight: 400"
-    >A: Nitro Classic unlocks the following perks on your account:</span
-  >
-</p>
+<p>A: Nitro Classic unlocks the following perks on your account:</p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Profile customization: animated avatar, Nitro badge.</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">30% off Boost purchases</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Use custom and animated emojis anywhere</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Bigger file uploads (50MB)</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">Screen share up to 1080p/60fps </span>
-  </li>
+  <li>Profile customization: animated avatar, Nitro badge.</li>
+  <li>30% off Boost purchases</li>
+  <li>Use custom and animated emojis anywhere</li>
+  <li>Unlimited Super Reactions</li>
+  <li>Bigger file uploads (50MB)</li>
+  <li>Screen share up to 1080p/60fps </li>
 </ul>
 <p><strong>Q: I have Nitro Classic credits, how can I use them?</strong></p>
 <p>
-  <span style="font-weight: 400"
-    >A: Please keep in mind that you cannot follow these steps if you already
-    have an active Nitro or Nitro Basic subscription. You will need to wait
-    until your current subscription ends in order to use your Nitro Classic
-    credits. You can cancel your current subscription under User Settings &gt;
-    Subscriptions. When your subscription ends, follow these steps:</span
-  >
+  A: Please keep in mind that you cannot follow these steps if you already have
+  an active Nitro or Nitro Basic subscription. You will need to wait until your
+  current subscription ends in order to use your Nitro Classic credits. You can
+  cancel your current subscription under
+  <strong>User Settings &gt; Subscriptions</strong>. When your subscription
+  ends, follow these steps:
 </p>
 <ol>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >On the desktop or web client (this is not available on mobile), go to
-      User Settings &gt; Subscriptions.</span
-    >
+  <li>
+    On the desktop or web client (this is not available on mobile), go to
+    <strong>User Settings &gt; Subscriptions</strong>.
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >On the bottom of the page, you should see a banner for Nitro Classic.
-      Click the “Subscribe” button.</span
-    >
+  <li>
+    On the bottom of the page, you should see a <strong>banner</strong> for
+    Nitro Classic. Select the“Subscribe” button.
   </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >After completing the process to begin your Nitro Classic subscription,
-      your subscription should automatically begin using your existing
-      credit.</span
-    >
+  <li>
+    After completing the process to begin your Nitro Classic subscription, your
+    subscription should automatically begin using your existing credit.
   </li>
 </ol>
 <p>
-  <span style="font-weight: 400">Check out </span
-  ><a
+  Check out<a
     href="https://support.discord.com/hc/en-us/articles/360030782312"
     target="_blank"
     rel="noopener noreferrer"
-    >this support article</a
-  ><span style="font-weight: 400">
-    for general information on subscription credits!</span
   >
+    this support article</a
+  >
+  for general information on subscription credits!
 </p>
 <p>
   <strong
@@ -821,11 +783,8 @@
   >
 </p>
 <p>
-  <span style="font-weight: 400">A: </span
-  ><span style="font-weight: 400"
-    >At this moment, you can only subscribe to Nitro and Nitro Basic. Nitro
-    Classic is not available for purchase.</span
-  >
+  A: At this moment, you can only subscribe to Nitro and Nitro Basic. Nitro
+  Classic is not available for purchase.
 </p>
 <p> </p>
 <p> </p>

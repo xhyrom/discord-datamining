@@ -166,6 +166,18 @@
   still be eligible. Please note that only certain Nitro tiers are eligible for
   localized pricing at this time, not all.
 </p>
+<p><strong>Q: Why is my price for Nitro different from my friends?</strong></p>
+<p>
+  A: Discord regularly reviews and updates prices based on factors like your
+  location, local market conditions, currency exchange rates, and regional
+  operating costs. We also test different pricing approaches to better
+  understand what works best for our community.
+</p>
+<p>
+  If your subscription price changes, we'll always notify you in advance so you
+  know what to expect and can manage your subscription before any new prices
+  take effect.
+</p>
 <p><strong>Q: When does the new price take effect?</strong></p>
 <p>A: At your next billing cycle. </p>
 <p><strong>Q: Do Nitro Gifts have localized pricing?</strong></p>

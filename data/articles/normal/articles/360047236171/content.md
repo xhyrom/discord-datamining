@@ -1,17 +1,32 @@
+<div class="warn-box">
+  <strong>Important: </strong>Both the Partner and Verified Server programs are
+  paused. We are not accepting applications for either program.
+</div>
 <p>
   <span style="font-weight: 400"
-    >If you’ve taken a stroll through Server Discovery, you’ve probably noticed
-    two distinct badges next to some server’s names: One that’s a green
-    checkmark you may have seen on other platforms, and a fancy infinity-style
-    blurple logo. </span
+    >If you’ve taken a stroll through
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Server Discovery</a
+    >, you’ve probably noticed two distinct badges next to some server’s names:
+    One that’s a green checkmark you may have seen on other platforms, and a
+    fancy infinity-style blurple logo. </span
   >
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/360089056153"
-    alt="Screen_Shot_2020-09-03_at_11.43.09_AM.png"
+    src="https://support.discord.com/hc/article_attachments/33772307260311"
+    width="624"
+    height="448"
   />
 </p>
+<h4 id="h_01K193XSMSXYAKPK7ERK1DGJNY" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Featured Servers under the Server Discovery tab</span
+  >
+</h4>
 <p>
   <span style="font-weight: 400"
     >These servers are part of either our Partner Program or are Verified
@@ -212,12 +227,8 @@
     </tr>
   </tbody>
 </table>
-<p> </p>
-<h3 id="h_01JYS1YHD8XM7CCAB32D4CTYR6">
-  <span style="font-weight: 400"
-    >Important thing to note: If you’re part of both programs, your Verification
-    badge will override the Discord Partner badge visually. However, you still
-    receive all server perks that come with Partnership, and a Partner badge for
-    yourself.
-  </span>
-</h3>
+<div class="tip-box">
+  <strong>Tip:</strong> If you’re part of both programs, your Verification badge
+  will override the Discord Partner badge visually. However, you still receive
+  all server perks that come with Partnership, and a Partner badge for yourself.
+</div>
