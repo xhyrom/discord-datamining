@@ -1846,7 +1846,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   max-width: 288px;
   width: 100%;
 }
-.headerGraphic__53cea img {
+.headerGraphic__53cea img,
+.headerGraphic__53cea video {
   max-height: 100%;
   max-width: 100%;
 }
@@ -62447,4 +62448,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2adf10618cdcda9f.css.map*/
+/*# sourceMappingURL=12633.ca7200078e478f46.css.map*/
