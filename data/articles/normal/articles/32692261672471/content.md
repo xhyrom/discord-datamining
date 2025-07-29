@@ -5,10 +5,11 @@
   while using the app.
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
     <li>
       <a href="#h_01JXATXQ3E20MQJ5GHE1AVXS4K"
@@ -36,10 +37,9 @@
   What is App Tracking Transparency for iOS?
 </h1>
 <div class="exp-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: App Tracking Transparency for iOS is currently an experiment limited to
-    users in various regions. </span
+  <span style="color: #434343"
+    ><strong>Info</strong>: App Tracking Transparency for iOS is currently an
+    experiment limited to users in various regions. </span
   >
 </div>
 <p>
@@ -92,19 +92,17 @@
       height="607"
   /></strong>
 </p>
-<h4 id="h_01JXATXQ3ETW79YVSF1N9KB2Y1" class="wysiwyg-text-align-center">
+<h4 class="wysiwyg-text-align-center" id="h_01JXATXQ3ETW79YVSF1N9KB2Y1">
   <span style="color: #666666">App Tracking Transparency Notification</span>
 </h4>
 <div class="info-box">
-  <strong><span style="color: #434343">Info</span></strong
-  ><span style="color: #434343"
-    >: Discord remains committed to protecting your privacy. For more
-    information about how we handle your data, please visit our</span
+  <span style="color: #434343"
+    ><strong>Info</strong>: Discord remains committed to protecting your
+    privacy. For more information about how we handle your data, please visit
+    our</span
   >
   <a href="https://discord.com/privacy"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
-      >Privacy Policy</span
-    ></a
+    ><span class="wysiwyg-underline">Privacy Policy</span></a
   ><span style="color: #434343">.</span>
 </div>
 <h1 id="h_01JXATXQ3ECSB3FYFHMV5XQB8G">Frequently Asked Questions</h1>
