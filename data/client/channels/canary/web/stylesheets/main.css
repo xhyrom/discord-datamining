@@ -37373,9 +37373,19 @@ html:not(.chat-input) .inputInner_b1f01d {
 .clickableContainer__39ec2:hover > .card__39ec2 {
   background: var(--user-profile-overlay-background-hover);
 }
-.clickableImage__39ec2,
-.clickableImage__39ec2:after,
 .image__39ec2 {
+  border-radius: var(--radius-sm);
+}
+.hangStatusIcon__39ec2 {
+  height: 100px;
+  width: 100px;
+}
+.hangStatusIcon__39ec2.small__39ec2 {
+  height: 60px;
+  width: 60px;
+}
+.clickableImage__39ec2,
+.clickableImage__39ec2:after {
   border-radius: var(--radius-sm);
 }
 .clickableImage__39ec2:after {
@@ -63961,4 +63971,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3b96d7c5ffa3d89e.css.map*/
+/*# sourceMappingURL=12633.6afc50c5c5583ef8.css.map*/
