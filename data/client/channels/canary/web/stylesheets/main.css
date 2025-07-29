@@ -28157,13 +28157,6 @@ body .headerAnimation_b54a5b {
 .button__4151b:last-child {
   margin-bottom: 0;
 }
-.centerContainer__4151b {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-}
 .connectionInstructions__4151b {
   margin-top: 8px;
   text-align: center;
@@ -62454,4 +62447,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ee5a8b3947f19427.css.map*/
+/*# sourceMappingURL=12633.2adf10618cdcda9f.css.map*/
