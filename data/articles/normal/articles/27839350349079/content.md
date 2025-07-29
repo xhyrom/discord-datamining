@@ -11,6 +11,44 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Dead by Daylight<br /></strong
+  ><strong
+    >Quest Name: Dead by Daylight: The Walking Dead Quest<br />Offer
+    Details:</strong
+  >
+  Play 15 minutes of <strong>Dead by Daylight</strong> to receive
+  <strong>The Entity Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players that are 18+ in the <strong>United States</strong>,
+  <strong>Brazil</strong>, <strong>Great Britain</strong>,
+  <strong>Germany</strong> who have access to
+  <strong>Dead by Daylight </strong>and <strong>Discord</strong> on PC,
+  PlayStation 4/5, and Xbox Series S/X. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period: </strong>The
+  <strong>Dead by Daylight: The Walking Dead Quest</strong> can be accepted on
+  <strong>PC</strong>,<strong> PlayStation 4/5</strong>, and<strong>
+    Xbox Series S/X</strong
+  >
+  from <strong>July 29, 2025</strong> until
+  <strong>August 5, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 5, 2025 (11:59 UTC)</strong>.<br /><strong
+    >The Entity Avatar Decoration </strong
+  >is a limited-time Avatar Decoration and will only be yours as an Avatar
+  Decoration until <strong>October 5, 2025 (11:59PM UTC)</strong>. After this
+  date, you will no longer have access to this Avatar Decoration. Nitro
+  subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Twisted Metal S2<br /></strong
   ><strong>Quest Name: Twisted Metal S2 Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the
