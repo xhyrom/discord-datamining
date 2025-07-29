@@ -28157,13 +28157,6 @@ body .headerAnimation_b54a5b {
 .button__4151b:last-child {
   margin-bottom: 0;
 }
-.centerContainer__4151b {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-}
 .connectionInstructions__4151b {
   margin-top: 8px;
   text-align: center;
@@ -36782,6 +36775,20 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   margin-right: 4px;
 }
+.buttonContainer__5c6a8 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.user-profile-popout .buttonContainer__5c6a8,
+.user-profile-sidebar .buttonContainer__5c6a8 {
+  flex-direction: column;
+  width: 100%;
+}
+.user-profile-popout .buttonContainer__5c6a8 > *,
+.user-profile-sidebar .buttonContainer__5c6a8 > * {
+  width: 100%;
+}
 .fontCode__230d2 {
   font-family: var(--font-code);
 }
@@ -38446,7 +38453,7 @@ img.thumbnail__0f2e8 {
 }
 .liveLarge_a7acae {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 15px;
 }
 .liveSmall_a7acae {
 }
@@ -40392,9 +40399,6 @@ div.mobilePushContainer__3d3b0 {
 }
 .errorCodeMessage__85414 {
   margin-top: 16px;
-}
-.title__051e9 {
-  text-transform: capitalize;
 }
 .focusLock__49fc1 {
   max-width: 100%;
@@ -62443,4 +62447,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b97d59cd10fd671c.css.map*/
+/*# sourceMappingURL=12633.2adf10618cdcda9f.css.map*/

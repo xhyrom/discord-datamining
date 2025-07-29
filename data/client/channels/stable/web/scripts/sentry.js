@@ -4558,7 +4558,8 @@
             IOS: "https://itunes.apple.com/app/discord/id985746746",
             ANDROID:
               "https://play.google.com/store/apps/details?id=com.discord",
-          });
+          }),
+          (0, c.Rf)(0x99aab5);
         let A = (0, c._i)(o.Z.BRAND_500);
         n()(null != A, "Brand color could not be parsed"),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
@@ -6288,6 +6289,7 @@
           (r.NOTIFICATIONS_INBOX_DATA_LOADED =
             "notifications_inbox_data_loaded"),
           (r.MASKED_LINK_MODAL_CLICKED = "masked_link_modal_clicked"),
+          (r.GAME_STORE_BUTTON_CLICKED = "game_store_button_clicked"),
           (r.ACTIVITY_SHARING_SETTINGS_INTERACTED =
             "activity_sharing_settings_interacted"),
           (r.RUNNING_GAME_CARD_STATE_CHANGED =
@@ -6909,7 +6911,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-28-0acea3737f5ab47c1eaed10af1b0034529d20ae2-discord_web",
+              "2025-07-29-5c1d39041e77dda1e2ee41ebcbdf4c6c9ed0bfa3-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6975,8 +6977,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "423963"),
-            o.YA("builtAt", String("1753734459725"));
+            o.YA("buildNumber", "424281"),
+            o.YA("builtAt", String("1753773863574"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22500,11 +22502,25 @@
       },
       866442: function (t, e, a) {
         "use strict";
-        a.d(e, { _i: () => n }), a(35282);
+        a.d(e, { Rf: () => i, _i: () => o }), a(35282);
         var r = a(688619),
           _ = a.n(r);
         function n(t) {
+          return 1 === t.length ? "0".concat(t) : t;
+        }
+        function o(t) {
           return _()(t).num();
+        }
+        function i(t) {
+          return t <= 0xffffff
+            ? "#"
+                .concat(n(((t >> 16) & 255).toString(16)))
+                .concat(n(((t >> 8) & 255).toString(16)))
+                .concat(n((255 & t).toString(16)))
+            : "#"
+                .concat(n(((t >> 24) & 255).toString(16)))
+                .concat(n(((t >> 16) & 255).toString(16)))
+                .concat(n(((t >> 8) & 255).toString(16)));
         }
       },
       860911: function (t, e, a) {
@@ -48274,4 +48290,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fb6594bcdad8476e.js.map
+//# sourceMappingURL=sentry.39c3a082c23662dc.js.map
