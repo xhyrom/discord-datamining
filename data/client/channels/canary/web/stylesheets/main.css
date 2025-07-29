@@ -8360,6 +8360,682 @@ svg.radioIcon_c1e9c4 {
 .errorMessage__7aff3 {
   margin-top: 1px;
 }
+.heading-sm\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2857142857142858;
+}
+.heading-sm\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.heading-sm\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2857142857142858;
+}
+.heading-sm\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.heading-sm\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2857142857142858;
+}
+.heading-sm\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.heading-sm\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2857142857142858;
+}
+.heading-sm\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.heading-sm\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2857142857142858;
+}
+.heading-sm\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.heading-md\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.heading-md\/normal__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.heading-md\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.heading-md\/medium__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.heading-md\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.heading-md\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.heading-md\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.heading-md\/bold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.heading-md\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.heading-md\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.heading-lg\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.heading-lg\/normal__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.heading-lg\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.heading-lg\/medium__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.heading-lg\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.heading-lg\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.heading-lg\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.heading-lg\/bold__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.heading-lg\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.heading-lg\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.heading-xl\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.heading-xl\/normal__0f084.fontScaling__0f084 {
+  font-size: 1.5rem;
+}
+.heading-xl\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.heading-xl\/medium__0f084.fontScaling__0f084 {
+  font-size: 1.5rem;
+}
+.heading-xl\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.heading-xl\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1.5rem;
+}
+.heading-xl\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.heading-xl\/bold__0f084.fontScaling__0f084 {
+  font-size: 1.5rem;
+}
+.heading-xl\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.heading-xl\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 1.5rem;
+}
+.heading-xxl\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.heading-xxl\/normal__0f084.fontScaling__0f084 {
+  font-size: 2rem;
+}
+.heading-xxl\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.heading-xxl\/medium__0f084.fontScaling__0f084 {
+  font-size: 2rem;
+}
+.heading-xxl\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.heading-xxl\/semibold__0f084.fontScaling__0f084 {
+  font-size: 2rem;
+}
+.heading-xxl\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.heading-xxl\/bold__0f084.fontScaling__0f084 {
+  font-size: 2rem;
+}
+.heading-xxl\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.heading-xxl\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 2rem;
+}
+.eyebrow__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.3333333333333333;
+  text-transform: uppercase;
+}
+.eyebrow__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.heading-deprecated-12\/normal__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3333333333333333;
+}
+.heading-deprecated-12\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.heading-deprecated-12\/medium__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3333333333333333;
+}
+.heading-deprecated-12\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.heading-deprecated-12\/semibold__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333333333333333;
+}
+.heading-deprecated-12\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.heading-deprecated-12\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333333333;
+}
+.heading-deprecated-12\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.heading-deprecated-12\/extrabold__0f084 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.3333333333333333;
+}
+.heading-deprecated-12\/extrabold__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.redesign\/heading-18\/bold__0f084 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3333333333333333;
+}
+.redesign\/heading-18\/bold__0f084.fontScaling__0f084 {
+  font-size: 1.125rem;
+}
+.text-xxs\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.text-xxs\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.625rem;
+}
+.text-xxs\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.text-xxs\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.625rem;
+}
+.text-xxs\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.text-xxs\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.625rem;
+}
+.text-xxs\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.text-xxs\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.625rem;
+}
+.text-xs\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3333333333333333;
+}
+.text-xs\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.text-xs\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3333333333333333;
+}
+.text-xs\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.text-xs\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333333333333333;
+}
+.text-xs\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.text-xs\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333333333;
+}
+.text-xs\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.text-sm\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2857142857142858;
+}
+.text-sm\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.text-sm\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2857142857142858;
+}
+.text-sm\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.text-sm\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2857142857142858;
+}
+.text-sm\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.text-sm\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2857142857142858;
+}
+.text-sm\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.875rem;
+}
+.text-md\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.text-md\/normal__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.text-md\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.text-md\/medium__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.text-md\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.text-md\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.text-md\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.text-md\/bold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.text-lg\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.text-lg\/normal__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.text-lg\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.text-lg\/medium__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.text-lg\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.text-lg\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.text-lg\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.text-lg\/bold__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.redesign\/message-preview\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3333333333333333;
+}
+.redesign\/message-preview\/normal__0f084.fontScaling__0f084 {
+  font-size: 0.9375rem;
+}
+.redesign\/message-preview\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3333333333333333;
+}
+.redesign\/message-preview\/medium__0f084.fontScaling__0f084 {
+  font-size: 0.9375rem;
+}
+.redesign\/message-preview\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3333333333333333;
+}
+.redesign\/message-preview\/semibold__0f084.fontScaling__0f084 {
+  font-size: 0.9375rem;
+}
+.redesign\/message-preview\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3333333333333333;
+}
+.redesign\/message-preview\/bold__0f084.fontScaling__0f084 {
+  font-size: 0.9375rem;
+}
+.redesign\/channel-title\/normal__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+.redesign\/channel-title\/normal__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.redesign\/channel-title\/medium__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.375;
+}
+.redesign\/channel-title\/medium__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.redesign\/channel-title\/semibold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375;
+}
+.redesign\/channel-title\/semibold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.redesign\/channel-title\/bold__0f084 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.375;
+}
+.redesign\/channel-title\/bold__0f084.fontScaling__0f084 {
+  font-size: 1rem;
+}
+.display-sm__0f084 {
+  font-family: var(--font-headline);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+}
+.display-sm__0f084.fontScaling__0f084 {
+  font-size: 1.25rem;
+}
+.display-md__0f084 {
+  font-family: var(--font-headline);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.0588235294117647;
+}
+.display-md__0f084.fontScaling__0f084 {
+  font-size: 2.125rem;
+}
+.display-lg__0f084 {
+  font-family: var(--font-headline);
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 0.9545454545454546;
+}
+.display-lg__0f084.fontScaling__0f084 {
+  font-size: 2.75rem;
+}
+.code__0f084 {
+  font-family: var(--font-code);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333333333;
+}
+.code__0f084.fontScaling__0f084 {
+  font-size: 0.75rem;
+}
+.container__0f084 {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__0f084 {
+  --custom-input-background-color: var(--input-background-default);
+  --custom-input-border-color: var(--input-border-default);
+  --custom-input-text-color: var(--input-foreground-default);
+  --custom-input-hover-border-color: var(--input-border-default-hover);
+  --custom-input-focus-border-color: var(--input-border-active);
+  align-items: center;
+  background-color: var(--custom-input-background-color);
+  border: 1px solid var(--custom-input-border-color);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: var(--custom-input-text-color);
+  display: flex;
+  gap: var(--space-8);
+  height: 44px;
+  transition: border-color 0.1s ease;
+}
+.wrapper__0f084[data-leading="true"] {
+  padding-left: var(--space-12);
+}
+.wrapper__0f084[data-leading="true"] .input__0f084 {
+  padding-left: 0;
+}
+.wrapper__0f084[data-trailing="true"] {
+  padding-right: var(--space-12);
+}
+.wrapper__0f084[data-trailing="true"] .input__0f084 {
+  padding-right: 0;
+}
+.wrapper__0f084:not([data-read-only="true"]):not(
+    :has(.input__0f084:disabled)
+  ):not(:focus-within):hover {
+  --custom-input-border-color: var(--custom-input-hover-border-color);
+}
+.wrapper__0f084:not([data-read-only="true"]):focus-within {
+  --custom-input-border-color: var(--custom-input-focus-border-color);
+}
+.mana-text-inputs .wrapper__0f084:not([data-read-only="true"]):focus-within {
+  outline: 1px solid var(--custom-input-focus-border-color);
+}
+.wrapper__0f084[data-error="true"] {
+  --custom-input-border-color: var(--input-border-critical);
+  --custom-input-text-color: var(--input-foreground-critical);
+  --custom-input-background-color: var(--input-background-critical);
+  --custom-input-hover-border-color: var(--input-border-critical-hover);
+  --custom-input-focus-border-color: var(--input-border-critical);
+}
+.wrapper__0f084:has(.input__0f084:disabled) {
+  cursor: not-allowed;
+  opacity: 0.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.input__0f084 {
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  color: inherit;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.input__0f084:disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.input__0f084::-moz-placeholder {
+  color: var(--input-placeholder-text);
+  -moz-user-select: none;
+  user-select: none;
+}
+.input__0f084::placeholder {
+  color: var(--input-placeholder-text);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.enable-forced-colors .wrapper__0f084 {
+  border: 1px solid ButtonText;
+}
+.enable-forced-colors
+  .wrapper__0f084:not([data-read-only="true"]):focus-within {
+  border-color: Highlight;
+}
+.enable-forced-colors .wrapper__0f084:has(.input__0f084:disabled) {
+  background-color: Canvas;
+  border-color: GrayText;
+  opacity: 1;
+}
 .select__71cea {
   background-color: var(--deprecated-text-input-bg);
   border: 1px solid var(--deprecated-text-input-border);
@@ -44948,11 +45624,22 @@ html.disable-forced-colors * {
   --info-positive-text: var(--green-new-25);
   --info-warning-foreground: var(--yellow-300);
   --input-background: hsl(var(--opacity-black-20-hsl) / 0.2);
+  --input-background-critical: hsl(var(--opacity-black-20-hsl) / 0.2);
+  --input-background-default: hsl(var(--opacity-black-20-hsl) / 0.2);
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-active: var(--blue-new-26);
+  --input-border-critical: var(--red-new-22);
+  --input-border-critical-hover: var(--red-new-22);
+  --input-border-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-default-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--white-hsl) / 0.04);
+  --input-foreground-critical: var(--red-345);
+  --input-foreground-default: var(--neutral-9);
+  --input-foreground-icon: var(--neutral-16);
+  --input-foreground-placeholder: var(--neutral-32);
   --input-placeholder-text: var(--neutral-32);
   --interactive-active: var(--neutral-1);
   --interactive-hover: var(--neutral-1);
@@ -45885,7 +46572,49 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-26) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
@@ -45914,6 +46643,30 @@ html.disable-forced-colors * {
       hsl(var(--white-hsl) / 0.04) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.04)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-345) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-16) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-32) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -47255,11 +48008,26 @@ html.disable-forced-colors * {
   --info-positive-text: var(--green-new-55);
   --info-warning-foreground: var(--yellow-400);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
+  --input-background-critical: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --input-border: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
+  --input-border-active: var(--blue-new-49);
+  --input-border-critical: var(--red-new-54);
+  --input-border-critical-hover: var(--red-new-54);
+  --input-border-default: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
+  --input-border-default-hover: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-700);
   --input-focused-border: hsl(var(--black-hsl) / 0.04);
+  --input-foreground-critical: var(--red-500);
+  --input-foreground-default: var(--neutral-69);
+  --input-foreground-icon: var(--neutral-44);
+  --input-foreground-placeholder: var(--neutral-44);
   --input-placeholder-text: var(--neutral-44);
   --interactive-active: var(--neutral-71);
   --interactive-hover: var(--neutral-71);
@@ -48192,7 +48960,49 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
+      in oklab,
+      hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-54) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902)
@@ -48221,6 +49031,30 @@ html.disable-forced-colors * {
       hsl(var(--black-hsl) / 0.04) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.04)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-500) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-69) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -49580,11 +50414,26 @@ html.disable-forced-colors * {
   --info-positive-text: var(--green-new-40);
   --info-warning-foreground: var(--yellow-300);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
+  --input-background-critical: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --input-border: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --input-border-active: var(--blue-new-42);
+  --input-border-critical: var(--red-new-37);
+  --input-border-critical-hover: var(--red-new-37);
+  --input-border-default: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --input-border-default-hover: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
+  --input-foreground-critical: var(--red-345);
+  --input-foreground-default: var(--neutral-10);
+  --input-foreground-icon: var(--neutral-27);
+  --input-foreground-placeholder: var(--neutral-38);
   --input-placeholder-text: var(--neutral-38);
   --interactive-active: var(--neutral-8);
   --interactive-hover: var(--neutral-8);
@@ -50523,7 +51372,49 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
+      in oklab,
+      hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-42) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-37) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
@@ -50552,6 +51443,30 @@ html.disable-forced-colors * {
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-345) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-27) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-38) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -51907,11 +52822,26 @@ html.disable-forced-colors * {
   --info-positive-text: var(--green-new-34);
   --info-warning-foreground: var(--yellow-300);
   --input-background: hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
+  --input-background-critical: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
   --input-border: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-active: var(--blue-new-36);
+  --input-border-critical: var(--red-new-32);
+  --input-border-critical-hover: var(--red-new-32);
+  --input-border-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-default-hover: hsl(var(--opacity-20-hsl) / 0.2);
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
   --input-focused-border: hsl(var(--plum-11-hsl) / 0.32);
+  --input-foreground-critical: var(--red-345);
+  --input-foreground-default: var(--neutral-5);
+  --input-foreground-icon: var(--neutral-23);
+  --input-foreground-placeholder: var(--neutral-36);
   --input-placeholder-text: var(--neutral-36);
   --interactive-active: var(--neutral-2);
   --interactive-hover: var(--neutral-2);
@@ -52846,7 +53776,49 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-36) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-32) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
@@ -52875,6 +53847,30 @@ html.disable-forced-colors * {
       hsl(var(--plum-11-hsl) / 0.32) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.32)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--red-345) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-36) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -53951,7 +54947,21 @@ html.disable-forced-colors * {
   );
   --info-warning-text: var(--yellow-new-7);
   --input-background: hsl(var(--opacity-black-28-hsl) / 0.2784313725490196);
+  --input-background-critical: hsl(
+    var(--opacity-black-28-hsl) / 0.2784313725490196
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-28-hsl) / 0.2784313725490196
+  );
   --input-border: var(--neutral-25);
+  --input-border-active: var(--blue-new-18);
+  --input-border-critical: var(--red-new-6);
+  --input-border-critical-hover: var(--red-new-6);
+  --input-border-default: var(--neutral-5);
+  --input-border-default-hover: var(--neutral-5);
+  --input-foreground-default: var(--neutral-1);
+  --input-foreground-icon: var(--neutral-2);
+  --input-foreground-placeholder: var(--neutral-29);
   --input-placeholder-text: var(--neutral-29);
   --interactive-active: var(--white);
   --interactive-hover: var(--white);
@@ -54307,11 +55317,71 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
       in oklab,
       var(--neutral-25) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-18) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-6) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-6) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-2) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-29) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -54756,7 +55826,21 @@ html.disable-forced-colors * {
   );
   --info-warning-text: var(--yellow-new-64);
   --input-background: hsl(var(--opacity-black-12-hsl) / 0.12156862745098039);
+  --input-background-critical: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
   --input-border: var(--neutral-46);
+  --input-border-active: var(--blue-new-63);
+  --input-border-critical: var(--red-new-63);
+  --input-border-critical-hover: var(--red-new-63);
+  --input-border-default: var(--neutral-59);
+  --input-border-default-hover: var(--neutral-59);
+  --input-foreground-default: var(--neutral-76);
+  --input-foreground-icon: var(--neutral-64);
+  --input-foreground-placeholder: var(--neutral-46);
   --input-placeholder-text: var(--neutral-46);
   --interactive-active: var(--black);
   --interactive-hover: var(--black);
@@ -55110,11 +56194,71 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
       in oklab,
       var(--neutral-46) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      var(--neutral-59) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      var(--neutral-59) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-76) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-64) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-46) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -55565,7 +56709,21 @@ html.disable-forced-colors * {
   );
   --info-warning-text: var(--yellow-new-24);
   --input-background: hsl(var(--opacity-black-12-hsl) / 0.12156862745098039);
+  --input-background-critical: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
   --input-border: var(--neutral-31);
+  --input-border-active: var(--blue-new-27);
+  --input-border-critical: var(--red-new-22);
+  --input-border-critical-hover: var(--red-new-22);
+  --input-border-default: var(--neutral-17);
+  --input-border-default-hover: var(--neutral-17);
+  --input-foreground-default: var(--neutral-6);
+  --input-foreground-icon: var(--neutral-15);
+  --input-foreground-placeholder: var(--neutral-36);
   --input-placeholder-text: var(--neutral-36);
   --interactive-active: var(--white);
   --interactive-hover: var(--white);
@@ -55921,11 +57079,71 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
       in oklab,
       var(--neutral-31) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-27) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-22) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      var(--neutral-17) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-6) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-15) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-36) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -56366,7 +57584,21 @@ html.disable-forced-colors * {
   );
   --info-warning-text: var(--yellow-new-17);
   --input-background: hsl(var(--opacity-black-16-hsl) / 0.1607843137254902);
+  --input-background-critical: hsl(
+    var(--opacity-black-16-hsl) / 0.1607843137254902
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-16-hsl) / 0.1607843137254902
+  );
   --input-border: var(--neutral-28);
+  --input-border-active: var(--blue-new-21);
+  --input-border-critical: var(--red-new-16);
+  --input-border-critical-hover: var(--red-new-16);
+  --input-border-default: var(--neutral-13);
+  --input-border-default-hover: var(--neutral-13);
+  --input-foreground-default: var(--neutral-1);
+  --input-foreground-icon: var(--neutral-10);
+  --input-foreground-placeholder: var(--neutral-34);
   --input-placeholder-text: var(--neutral-34);
   --interactive-active: var(--white);
   --interactive-hover: var(--white);
@@ -56722,11 +57954,71 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border: color-mix(
       in oklab,
       var(--neutral-28) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blue-new-21) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical: color-mix(
+      in oklab,
+      var(--red-new-16) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-16) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      var(--neutral-13) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      var(--neutral-13) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-icon: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --input-foreground-placeholder: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --input-placeholder-text: color-mix(
       in oklab,
@@ -58917,7 +60209,7 @@ html.disable-forced-colors * {
   --pink-99-hsl: 327.273 calc(var(--saturation-factor, 1) * 73.333%) 2.941%;
   --pink-100: hsl(var(--pink-100-hsl) / 1);
   --pink-100-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
-  --opacity-1: hsl(var(--opacity-1-hsl) / 0.011764705882352941);
+  --opacity-1: hsl(var(--opacity-1-hsl) / 0.0196078431372549);
   --opacity-1-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.784%;
   --opacity-4: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --opacity-4-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.784%;
@@ -58967,7 +60259,7 @@ html.disable-forced-colors * {
   --opacity-92-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.784%;
   --opacity-96: hsl(var(--opacity-96-hsl) / 0.9607843137254902);
   --opacity-96-hsl: 240 calc(var(--saturation-factor, 1) * 4%) 60.784%;
-  --opacity-blue-1: hsl(var(--opacity-blue-1-hsl) / 0.011764705882352941);
+  --opacity-blue-1: hsl(var(--opacity-blue-1-hsl) / 0.0196078431372549);
   --opacity-blue-1-hsl: 209.339 calc(var(--saturation-factor, 1) * 100%) 44.51%;
   --opacity-blue-4: hsl(var(--opacity-blue-4-hsl) / 0.0392156862745098);
   --opacity-blue-4-hsl: 209.339 calc(var(--saturation-factor, 1) * 100%) 44.51%;
@@ -59017,7 +60309,7 @@ html.disable-forced-colors * {
   --opacity-blue-92-hsl: 209.339 calc(var(--saturation-factor, 1) * 100%) 44.51%;
   --opacity-blue-96: hsl(var(--opacity-blue-96-hsl) / 0.9607843137254902);
   --opacity-blue-96-hsl: 209.339 calc(var(--saturation-factor, 1) * 100%) 44.51%;
-  --opacity-blurple-1: hsl(var(--opacity-blurple-1-hsl) / 0.011764705882352941);
+  --opacity-blurple-1: hsl(var(--opacity-blurple-1-hsl) / 0.0196078431372549);
   --opacity-blurple-1-hsl: 234.935 calc(var(--saturation-factor, 1) * 85.556%)
     64.706%;
   --opacity-blurple-4: hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
@@ -59098,7 +60390,7 @@ html.disable-forced-colors * {
   --opacity-blurple-96: hsl(var(--opacity-blurple-96-hsl) / 0.9607843137254902);
   --opacity-blurple-96-hsl: 234.935 calc(var(--saturation-factor, 1) * 85.556%)
     64.706%;
-  --opacity-green-1: hsl(var(--opacity-green-1-hsl) / 0.011764705882352941);
+  --opacity-green-1: hsl(var(--opacity-green-1-hsl) / 0.0196078431372549);
   --opacity-green-1-hsl: 145.97 calc(var(--saturation-factor, 1) * 100%) 26.275%;
   --opacity-green-4: hsl(var(--opacity-green-4-hsl) / 0.0392156862745098);
   --opacity-green-4-hsl: 145.97 calc(var(--saturation-factor, 1) * 100%) 26.275%;
@@ -59170,7 +60462,7 @@ html.disable-forced-colors * {
   --opacity-green-96: hsl(var(--opacity-green-96-hsl) / 0.9607843137254902);
   --opacity-green-96-hsl: 145.97 calc(var(--saturation-factor, 1) * 100%)
     26.275%;
-  --opacity-red-1: hsl(var(--opacity-red-1-hsl) / 0.011764705882352941);
+  --opacity-red-1: hsl(var(--opacity-red-1-hsl) / 0.0196078431372549);
   --opacity-red-1-hsl: 355.636 calc(var(--saturation-factor, 1) * 64.706%) 50%;
   --opacity-red-4: hsl(var(--opacity-red-4-hsl) / 0.0392156862745098);
   --opacity-red-4-hsl: 355.636 calc(var(--saturation-factor, 1) * 64.706%) 50%;
@@ -59220,7 +60512,7 @@ html.disable-forced-colors * {
   --opacity-red-92-hsl: 355.636 calc(var(--saturation-factor, 1) * 64.706%) 50%;
   --opacity-red-96: hsl(var(--opacity-red-96-hsl) / 0.9607843137254902);
   --opacity-red-96-hsl: 355.636 calc(var(--saturation-factor, 1) * 64.706%) 50%;
-  --opacity-teal-1: hsl(var(--opacity-teal-1-hsl) / 0.011764705882352941);
+  --opacity-teal-1: hsl(var(--opacity-teal-1-hsl) / 0.0196078431372549);
   --opacity-teal-1-hsl: 183.913 calc(var(--saturation-factor, 1) * 100%) 27.059%;
   --opacity-teal-4: hsl(var(--opacity-teal-4-hsl) / 0.0392156862745098);
   --opacity-teal-4-hsl: 183.913 calc(var(--saturation-factor, 1) * 100%) 27.059%;
@@ -59292,7 +60584,7 @@ html.disable-forced-colors * {
   --opacity-teal-96: hsl(var(--opacity-teal-96-hsl) / 0.9607843137254902);
   --opacity-teal-96-hsl: 183.913 calc(var(--saturation-factor, 1) * 100%)
     27.059%;
-  --opacity-yellow-1: hsl(var(--opacity-yellow-1-hsl) / 0.011764705882352941);
+  --opacity-yellow-1: hsl(var(--opacity-yellow-1-hsl) / 0.0196078431372549);
   --opacity-yellow-1-hsl: 36.894 calc(var(--saturation-factor, 1) * 100%)
     31.569%;
   --opacity-yellow-4: hsl(var(--opacity-yellow-4-hsl) / 0.0392156862745098);
@@ -59367,7 +60659,7 @@ html.disable-forced-colors * {
   --opacity-yellow-96: hsl(var(--opacity-yellow-96-hsl) / 0.9607843137254902);
   --opacity-yellow-96-hsl: 36.894 calc(var(--saturation-factor, 1) * 100%)
     31.569%;
-  --opacity-orange-1: hsl(var(--opacity-orange-1-hsl) / 0.011764705882352941);
+  --opacity-orange-1: hsl(var(--opacity-orange-1-hsl) / 0.0196078431372549);
   --opacity-orange-1-hsl: 25.079 calc(var(--saturation-factor, 1) * 100%)
     37.059%;
   --opacity-orange-4: hsl(var(--opacity-orange-4-hsl) / 0.0392156862745098);
@@ -59442,7 +60734,7 @@ html.disable-forced-colors * {
   --opacity-orange-96: hsl(var(--opacity-orange-96-hsl) / 0.9607843137254902);
   --opacity-orange-96-hsl: 25.079 calc(var(--saturation-factor, 1) * 100%)
     37.059%;
-  --opacity-pink-1: hsl(var(--opacity-pink-1-hsl) / 0.011764705882352941);
+  --opacity-pink-1: hsl(var(--opacity-pink-1-hsl) / 0.0196078431372549);
   --opacity-pink-1-hsl: 315.084 calc(var(--saturation-factor, 1) * 100%) 64.902%;
   --opacity-pink-4: hsl(var(--opacity-pink-4-hsl) / 0.0392156862745098);
   --opacity-pink-4-hsl: 315.084 calc(var(--saturation-factor, 1) * 100%) 64.902%;
@@ -59514,7 +60806,7 @@ html.disable-forced-colors * {
   --opacity-pink-96: hsl(var(--opacity-pink-96-hsl) / 0.9607843137254902);
   --opacity-pink-96-hsl: 315.084 calc(var(--saturation-factor, 1) * 100%)
     64.902%;
-  --opacity-white-1: hsl(var(--opacity-white-1-hsl) / 0.011764705882352941);
+  --opacity-white-1: hsl(var(--opacity-white-1-hsl) / 0.0196078431372549);
   --opacity-white-1-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
   --opacity-white-4: hsl(var(--opacity-white-4-hsl) / 0.0392156862745098);
   --opacity-white-4-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
@@ -59564,7 +60856,7 @@ html.disable-forced-colors * {
   --opacity-white-92-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
   --opacity-white-96: hsl(var(--opacity-white-96-hsl) / 0.9607843137254902);
   --opacity-white-96-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 100%;
-  --opacity-black-1: hsl(var(--opacity-black-1-hsl) / 0.011764705882352941);
+  --opacity-black-1: hsl(var(--opacity-black-1-hsl) / 0.0196078431372549);
   --opacity-black-1-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
   --opacity-black-4: hsl(var(--opacity-black-4-hsl) / 0.0392156862745098);
   --opacity-black-4-hsl: 0 calc(var(--saturation-factor, 1) * 0%) 0%;
@@ -60738,6 +62030,224 @@ html.disable-forced-colors * {
           --custom-theme-border-color-amount,
           var(--custom-theme-base-color-amount, 0%)
         )
+    );
+  }
+}
+.mana-text-inputs .theme-dark,
+.mana-text-inputs.theme-dark {
+  --input-background-critical: hsl(
+    var(--opacity-red-4-hsl) / 0.0392156862745098
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --input-border-active: var(--blurple-50);
+  --input-border-critical-hover: var(--red-new-36);
+  --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
+  --input-foreground-critical: var(--neutral-9);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-text-inputs .theme-dark,
+  .mana-text-inputs.theme-dark {
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-36) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--neutral-9) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+  }
+}
+.mana-text-inputs .theme-light,
+.mana-text-inputs.theme-light {
+  --input-background-critical: hsl(
+    var(--opacity-red-4-hsl) / 0.0392156862745098
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-1-hsl) / 0.0196078431372549
+  );
+  --input-border-active: var(--blurple-50);
+  --input-border-critical-hover: var(--red-new-66);
+  --input-border-default-hover: hsl(
+    var(--opacity-48-hsl) / 0.47843137254901963
+  );
+  --input-foreground-critical: var(--neutral-69);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-text-inputs .theme-light,
+  .mana-text-inputs.theme-light {
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-1-hsl) / 0.0196078431372549) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0196078431372549)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-66) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-48-hsl) / 0.47843137254901963) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.47843137254901963)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--neutral-69) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+  }
+}
+.mana-text-inputs .theme-midnight,
+.mana-text-inputs.theme-midnight {
+  --input-background-critical: hsl(
+    var(--opacity-red-4-hsl) / 0.0392156862745098
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --input-border-active: var(--blurple-50);
+  --input-border-critical-hover: var(--red-new-23);
+  --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
+  --input-foreground-critical: var(--neutral-10);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-text-inputs .theme-midnight,
+  .mana-text-inputs.theme-midnight {
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--neutral-10) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+  }
+}
+.mana-text-inputs .theme-darker,
+.mana-text-inputs.theme-darker {
+  --input-background-critical: hsl(
+    var(--opacity-red-4-hsl) / 0.0392156862745098
+  );
+  --input-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --input-border-active: var(--blurple-50);
+  --input-border-critical-hover: var(--red-new-45);
+  --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
+  --input-foreground-critical: var(--neutral-5);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-text-inputs .theme-darker,
+  .mana-text-inputs.theme-darker {
+    --input-background-critical: color-mix(
+      in oklab,
+      hsl(var(--opacity-red-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-critical-hover: color-mix(
+      in oklab,
+      var(--red-new-45) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-foreground-critical: color-mix(
+      in oklab,
+      var(--neutral-5) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
   }
 }
@@ -62448,4 +63958,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ca7200078e478f46.css.map*/
+/*# sourceMappingURL=12633.48eb8861fd89192e.css.map*/
