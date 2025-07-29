@@ -37187,6 +37187,9 @@ html:not(.chat-input) .inputInner_b1f01d {
   flex-wrap: wrap;
   gap: 6px;
 }
+.link_d9ba3e {
+  border-radius: inherit;
+}
 .link_d9ba3e:hover {
   -webkit-text-decoration-color: var(--text-default);
   text-decoration-color: var(--text-default);
@@ -63958,4 +63961,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.48eb8861fd89192e.css.map*/
+/*# sourceMappingURL=12633.3b96d7c5ffa3d89e.css.map*/
