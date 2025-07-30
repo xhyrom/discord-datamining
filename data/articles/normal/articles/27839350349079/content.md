@@ -11,6 +11,29 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Arena Breakout: Infinite<br /></strong
+  ><strong>Quest Name: ABI×Cyberpunk 2077 Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Arena Breakout: Infinite</strong> to receive a
+  <strong>SVDS Skin &amp; ABI×Cyberpunk 2077 Bundle</strong>.<br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players in the <strong>United States</strong>,
+  <strong>Great Britain</strong>, <strong>Germany</strong>,
+  <strong>Australia</strong>, and <strong>Canada</strong> who have access to
+  <strong>Arena Breakout: Infinite</strong> and <strong>Discord</strong> on PC.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>ABI×Cyberpunk 2077 Quest</strong> can be accepted on
+  <strong>PC</strong> from <strong>July 30, 2025</strong> until
+  <strong>August 5, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>August 30, 2025 (4:59PM UTC)</strong>.<br /><strong
+    >Other Terms</strong
+  >: Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Dead by Daylight<br /></strong
   ><strong
     >Quest Name: Dead by Daylight: The Walking Dead Quest<br />Offer
@@ -675,30 +698,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Dead by Daylight<br /></strong
-  ><strong>Quest Name: Dead by Daylight x FNAF Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Dead by Daylight </strong>to receive a
-  <strong>Springtrap profile banner</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players that are 18+ on PC and console, where
-  <strong>Discord</strong> and <strong>Dead by Daylight </strong>are available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Dead by Daylight x FNAF Quest </strong>can be accepted on
-  <strong>PC </strong>and<strong> console</strong> from
-  <strong>June 17, 2025 </strong>until<strong>
-    June 24, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 24, 2025 (11:59PM UTC)</strong>.<br /><strong
-    >Other Terms:</strong
-  >
-  Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
   <strong>Quest Video: 28 Years Later Trailer<br /></strong
   ><strong>Quest Name: 28 Years Later Quest<br /></strong
   ><strong>Offer Details: </strong>Watch the<strong>
@@ -975,119 +974,6 @@
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
   >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: The Bad Guys 2 <br /></strong
-  ><strong>Quest Name: The Bad Guys 2 Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch
-  <strong>The Bad Guys 2 trailer </strong>in Discord to receive a
-  <strong>Vault Heist Avatar Decoration.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to users in
-  <strong>France, Australia, Mexico, and the United Kingdom</strong> on desktop
-  where <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong>
-  <strong>The</strong> <strong>Bad Guys 2 Quest </strong>can be accepted on
-  Discord desktop app or browser client from
-  <strong>May 23, 2025 </strong>until<strong> May 29, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 29, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Vault Heist Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>July 29, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Splitgate 2 Open Beta Trailer<br /></strong
-  ><strong>Quest Name: Open Beta Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the
-  <strong>Splitgate 2 Open Beta Trailer </strong>in Discord to receive a
-  <strong>Portal Pulse Avatar Decoration</strong>. <br /><strong
-    >Who is Eligible: </strong
-  >Available to users on desktop where <strong>Discord</strong> is available.
-  Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Open Beta Quest</strong> can be accepted on Discord desktop app or
-  browser client from <strong>May 22, 2025 </strong>until<strong>
-    May 29, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 29, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Portal Pulse Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>July 29, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Jurassic World Rebirth Trailer<br /></strong
-  ><strong>Quest Name: Jurassic World Rebirth Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the
-  <strong>Jurassic World Rebirth Trailer </strong>in Discord to receive a
-  <strong>Dilophosaurus Avatar Decoration</strong>. <br /><strong
-    >Who is Eligible: </strong
-  >Available to users in the <strong>United States</strong> on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Jurassic World Rebirth Quest</strong> can be accepted on the Discord
-  desktop app or browser client from <strong>May 20, 2025 </strong>until<strong>
-    May 26, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 26, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Dilophosaurus Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>July 26, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Mission: Impossible The Final Reckoning<br /></strong
-  ><strong>Quest Name: Mission: Impossible Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the
-  <strong>Mission: Impossible The Final Reckoning </strong>in Discord to receive
-  a <strong>Mission: Impossible Avatar Decoration</strong>. <br /><strong
-    >Who is Eligible: </strong
-  >Available to users in the <strong>United States</strong> on desktop where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Mission: Impossible Quest</strong> can be accepted on Discord desktop
-  app or browser client from <strong>May 19, 2025 </strong>until<strong>
-    May 25, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>June 25, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Mission: Impossible Avatar Decoration</strong> is a limited-time
-  Avatar Decoration and will only be yours as an Avatar Decoration until
-  <strong>July 25, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
   account.
 </p>
 <p>
