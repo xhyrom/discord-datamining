@@ -17027,20 +17027,33 @@ svg.radioIcon_c1e9c4 {
 }
 .forceAnimate_dfb989 .container_dfb989.neon_dfb989,
 .showEffect_dfb989.neon_dfb989 {
-  paint-order: stroke;
-  -webkit-text-stroke-width: 0.04em;
+  color: var(--white-500);
+  paint-order: stroke fill;
+  position: relative;
+  z-index: 1;
+}
+.forceAnimate_dfb989 .container_dfb989.neon_dfb989,
+.forceAnimate_dfb989 .container_dfb989.neon_dfb989:before,
+.showEffect_dfb989.neon_dfb989,
+.showEffect_dfb989.neon_dfb989:before {
+  -webkit-text-stroke-width: calc(1px + 0.04em);
   -webkit-text-stroke-color: var(--custom-display-name-styles-main-color);
-  color: var(--custom-display-name-styles-light-2-color);
-  text-shadow:
-    0 0 0.06em var(--custom-display-name-styles-main-color),
-    0 0 0.1em var(--custom-display-name-styles-light-1-color),
-    0 0 0.16em var(--custom-display-name-styles-light-2-color);
+}
+.forceAnimate_dfb989 .container_dfb989.neon_dfb989:before,
+.showEffect_dfb989.neon_dfb989:before {
+  color: var(--custom-display-name-styles-main-color);
+  content: attr(data-username-with-effects);
+  filter: blur(calc(2px + 0.04em));
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 .forceAnimate_dfb989 .container_dfb989.toon_dfb989,
 .showEffect_dfb989.toon_dfb989 {
   paint-order: stroke fill;
   position: relative;
-  -webkit-text-stroke-width: 0.14em;
+  -webkit-text-stroke-width: calc(2px + 0.04em);
   -webkit-text-stroke-color: var(--custom-display-name-styles-dark-2-color);
   color: var(--custom-display-name-styles-dark-2-color);
 }
@@ -17048,12 +17061,20 @@ svg.radioIcon_c1e9c4 {
 .showEffect_dfb989.toon_dfb989:before {
   background: linear-gradient(
     180deg,
-    var(--custom-display-name-styles-light-1-color) 0,
-    var(--custom-display-name-styles-light-2-color) 15%,
+    var(--white-500) 0,
+    var(--custom-display-name-styles-light-2-color) 8%,
+    var(--custom-display-name-styles-light-1-color) 15%,
+    var(--custom-display-name-styles-main-color) 25%,
+    var(--custom-display-name-styles-light-2-color) 45%,
+    var(--custom-display-name-styles-main-color) 55%,
+    var(--white-500) 75%,
+    var(--custom-display-name-styles-light-2-color) 83%,
+    var(--custom-display-name-styles-light-1-color) 90%,
     var(--custom-display-name-styles-main-color) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: 100% 400%;
   content: attr(data-username-with-effects);
   left: 0;
   position: absolute;
@@ -17077,9 +17098,16 @@ svg.radioIcon_c1e9c4 {
 }
 .animated_dfb989.neon_dfb989,
 .forceAnimate_dfb989 .container_dfb989.neon_dfb989 {
-  animation: neon-flicker_dfb989 2s cubic-bezier(0.43, 0.21, 0.27, 0.78) 30;
-  animation-delay: 0.5s;
-  animation-direction: alternate;
+  animation: neon-flicker-animation_dfb989 4s
+    cubic-bezier(0.24, 0.31, 0.36, 0.93) infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.animated_dfb989.neon_dfb989:before,
+.forceAnimate_dfb989 .container_dfb989.neon_dfb989:before {
+  animation: neon-glow-flicker-animation_dfb989 4s
+    cubic-bezier(0.24, 0.31, 0.36, 0.93) infinite;
+  animation-direction: normal;
   animation-fill-mode: forwards;
 }
 .animated_dfb989.toon_dfb989,
@@ -17090,20 +17118,23 @@ svg.radioIcon_c1e9c4 {
 .forceAnimate_dfb989 .container_dfb989.toon_dfb989:before {
   background: linear-gradient(
     180deg,
-    var(--white-500),
-    var(--white-500),
-    var(--custom-display-name-styles-main-color),
-    var(--custom-display-name-styles-main-color),
-    var(--custom-display-name-styles-light-1-color),
-    var(--custom-display-name-styles-light-2-color),
-    var(--custom-display-name-styles-main-color)
+    var(--white-500) 0,
+    var(--custom-display-name-styles-light-2-color) 8%,
+    var(--custom-display-name-styles-light-1-color) 15%,
+    var(--custom-display-name-styles-main-color) 25%,
+    var(--custom-display-name-styles-light-2-color) 45%,
+    var(--custom-display-name-styles-main-color) 55%,
+    var(--white-500) 75%,
+    var(--custom-display-name-styles-light-2-color) 83%,
+    var(--custom-display-name-styles-light-1-color) 90%,
+    var(--custom-display-name-styles-main-color) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 100% 400%;
   -webkit-text-fill-color: transparent;
-  animation: toon-animation_dfb989 1.2s cubic-bezier(0.43, 0.21, 0.27, 0.78);
-  animation-direction: alternate;
+  animation: toon-animation_dfb989 4s cubic-bezier(0.44, 0.29, 0.48, 1) infinite;
+  animation-direction: normal;
   animation-fill-mode: forwards;
   transition: opacity 266ms cubic-bezier(0.43, 0.21, 0.27, 0.78);
 }
@@ -17149,26 +17180,6 @@ svg.radioIcon_c1e9c4 {
 .theme-light .showEffect_dfb989 {
   filter: brightness(0.85);
 }
-@keyframes neon-flicker_dfb989 {
-  0%,
-  20%,
-  80%,
-  to {
-    -webkit-text-stroke-width: 0.04em;
-    -webkit-text-stroke-color: var(--custom-display-name-styles-main-color);
-    color: var(--custom-display-name-styles-light-2-color);
-    text-shadow:
-      0 0 0.06em var(--custom-display-name-styles-main-color),
-      0 0 0.1em var(--custom-display-name-styles-light-1-color),
-      0 0 0.16em var(--custom-display-name-styles-light-2-color);
-  }
-  50% {
-    -webkit-text-stroke-width: 0;
-    -webkit-text-stroke-color: transparent;
-    color: var(--custom-display-name-styles-light-1-color);
-    text-shadow: 0 0 0.1em var(--custom-display-name-styles-main-color);
-  }
-}
 @keyframes pop-text-movement_dfb989 {
   0%,
   to {
@@ -17210,6 +17221,7 @@ svg.radioIcon_c1e9c4 {
   0% {
     background-position: 50% 0;
   }
+  50%,
   to {
     background-position: 50% 100%;
   }
@@ -17220,6 +17232,46 @@ svg.radioIcon_c1e9c4 {
   }
   to {
     background-position: -100%;
+  }
+}
+@keyframes neon-flicker-animation_dfb989 {
+  0%,
+  15%,
+  18%,
+  20%,
+  23%,
+  25%,
+  50% {
+    color: var(--white-500);
+  }
+  16%,
+  22%,
+  28% {
+    color: var(--custom-display-name-styles-light-2-color);
+  }
+  51%,
+  to {
+    color: var(--white-500);
+  }
+}
+@keyframes neon-glow-flicker-animation_dfb989 {
+  0%,
+  15%,
+  18%,
+  20%,
+  23%,
+  25%,
+  50% {
+    color: var(--custom-display-name-styles-main-color);
+  }
+  16%,
+  22%,
+  28% {
+    color: transparent;
+  }
+  51%,
+  to {
+    color: var(--custom-display-name-styles-main-color);
   }
 }
 .guildIconImage_d28ae0 {
@@ -63963,4 +64015,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b2a55b7db9468f05.css.map*/
+/*# sourceMappingURL=12633.7bff228675c391e0.css.map*/
