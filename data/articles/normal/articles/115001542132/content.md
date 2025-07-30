@@ -17,7 +17,7 @@
   option to do so in your
   <strong>Server Settings &gt; Custom Invite Link.</strong>
 </p>
-<p class="p1 wysiwyg-text-align-center">
+<p class="wysiwyg-text-align-center p1">
   <strong
     ><img
       src="https://support.discord.com/hc/article_attachments/5853940659095"
@@ -45,21 +45,23 @@
   >, it is unique, so you can't share it with any other server, or take it if
   it's already being used. 
 </p>
-<h1><span class="wysiwyg-color-red">Important Info</span></h1>
-<h3>
-  <span class="wysiwyg-color-red wysiwyg-font-size-x-large"
+<h1 id="h_01K1DVH3N6STTN2JCS1E8A80EN">
+  <span style="color: #ff0000">Important Info</span>
+</h1>
+<h3 id="h_01K1DVH3N6RYZ2766HBR2PD3P2">
+  <span style="color: #ff0000" class="wysiwyg-font-size-x-large"
     >Read this section below before creating your Custom Invite Link!</span
   >
 </h3>
 <ul>
   <li>
-    <strong
-      ><span class="wysiwyg-font-size-large"
+    <span class="wysiwyg-font-size-large"
+      ><strong
         >Something important to keep in mind is that anyone can use this link to
         join your server, and this custom invite link makes your server publicly
-        available to anyone who uses this link. </span
-      ><br /><br
-    /></strong>
+        available to anyone who uses this link. </strong
+      ></span
+    ><br /><br /> 
   </li>
   <li>
     <span class="wysiwyg-font-size-large"
@@ -108,52 +110,70 @@
     </ul>
   </li>
 </ul>
-<h1>How to Assign a Custom Invite link</h1>
+<h1 id="h_01K1DVH3N63RZKB353WXGSVX4C">How to Assign a Custom Invite link</h1>
 <p>
   If you are a partner or have reached the highest tier of Server Boosting and
   you want to create a custom URL (after reading all the important info and
   rules above), you can follow these steps below to get that set up! 
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><span class="wysiwyg-color-purple"><strong>Step 1: </strong></span
+  <span style="color: #9900ff" class="wysiwyg-font-size-large"
+    ><strong>Step 1: </strong></span
+  ><span class="wysiwyg-font-size-large"
     ><strong
       >Make sure you have a text channel with the View Channel permission
       enabled for the @everyone role.</strong
     ></span
   >
 </p>
-<h3>
-  <em
-    ><span
-      style="
-        color: #666666;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >Note: <br />- Custom invite links bring the user to the
-      <span class="wysiwyg-underline">first channel</span> on the channel list
-      where @everyone has access to!<br />- If you want new member to see a
-      specific channel first when they join, move that text channel to the top
-      of the channel listing (and make sure that the </span
-    ></em
+<h3 id="h_01K1DVH3N7X2FZ5X7FG603ETQ3">
+  <span style="color: #666666"
+    ><em
+      ><span
+        style="
+          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            Helvetica, Arial, sans-serif;
+        "
+        >Note: </span
+      ></em
+    ></span
+  ><br /><span style="color: #666666"
+    ><em
+      ><span
+        style="
+          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            Helvetica, Arial, sans-serif;
+        "
+        >- Custom invite links bring the user to the
+        <span class="wysiwyg-underline">first channel</span> on the channel list
+        where @everyone has access to!</span
+      ></em
+    ></span
+  ><br /><span style="color: #666666"
+    ><em
+      ><span
+        style="
+          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            Helvetica, Arial, sans-serif;
+        "
+        >- If you want new member to see a specific channel first when they
+        join, move that text channel to the top of the channel listing (and make
+        sure that the </span
+      ><span
+        style="
+          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            Helvetica, Arial, sans-serif;
+        "
+        >@everyone role has the <strong>View Channel</strong> permissions)</span
+      ><span
+        style="
+          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+            Helvetica, Arial, sans-serif;
+        "
+        >!</span
+      ></em
+    ></span
   ><em
-    ><span
-      style="
-        color: #666666;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >@everyone role has the <strong>View Channel</strong> permissions)</span
-    ></em
-  ><em
-    ><span
-      style="
-        color: #666666;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >!</span
     ><span
       style="
         font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
@@ -163,7 +183,7 @@
     ></em
   >
 </h3>
-<h3 class="wysiwyg-text-align-center">
+<h3 class="wysiwyg-text-align-center" id="h_01K1DVH3N7FQQRASS9TF1S931B">
   <img
     src="https://support.discord.com/hc/article_attachments/360059248331"
     alt="Screen_Shot_2020-06-09_at_11.18.32_AM.png"
@@ -182,12 +202,12 @@
   role, and then enable the <strong>View Channel</strong> permission by pressing
   the green checkmark.
 </p>
-<h3>
+<h3 id="h_01K1DVH3N7EXQBWYB9D28NN99H">
   <strong>Note:</strong> If you want everyone to see the channel but not send
   any messages, make sure to disable the Send Messages permission for the
   @everyone role by pressing the red “X”.
 </h3>
-<h3>
+<h3 id="h_01K1DVH3N7WSA896NH42ZSK9VN">
   We recommend reviewing all the permissions for this channel since this will be
   the first channel new members of the server will see.
 </h3>
@@ -198,8 +218,9 @@
   />
 </p>
 <p>
-  <span class="wysiwyg-font-size-large"
-    ><span class="wysiwyg-color-purple"><strong>Step 2: </strong></span
+  <span style="color: #9900ff" class="wysiwyg-font-size-large"
+    ><strong>Step 2: </strong></span
+  ><span class="wysiwyg-font-size-large"
     ><strong
       >Head into the Custom Invite Link tab to set up the unique link!</strong
     ></span
