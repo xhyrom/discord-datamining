@@ -362,7 +362,7 @@
       </tr>
       <tr>
         <td><span style="color: #2e3338">Total Member Count</span></td>
-        <td><span style="color: #2e3338">1.5million</span></td>
+        <td><span style="color: #2e3338">25 million</span></td>
         <td><span style="color: #2e3338">N/A</span></td>
         <td><span style="color: #2e3338">N/A</span></td>
         <td><span style="color: #2e3338">N/A</span></td>
