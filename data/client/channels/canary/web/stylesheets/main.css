@@ -34843,6 +34843,7 @@ body .headerAnimation_b54a5b {
   width: 100%;
 }
 .giftRecipientInputWrapper_cd2ff7 {
+  margin-right: 8px;
   width: 100%;
 }
 .giftRecipientInputError_cd2ff7 {
@@ -64015,4 +64016,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7bff228675c391e0.css.map*/
+/*# sourceMappingURL=12633.b8e0e64b0e208c4d.css.map*/
