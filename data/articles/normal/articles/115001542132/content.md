@@ -1,263 +1,276 @@
-<p class="p1">
-  One of the fancy perks of
-  <a
-    href="https://discord.com/partners"
-    target="_blank"
-    rel="noopener noreferrer"
-    >partnership</a
-  >
-  and reaching the highest tier of
+<p>
+  If your server is at the highest server for
   <a
     href="https://support.discord.com/hc/en-us/articles/360028038352"
     target="_blank"
     rel="noopener noreferrer"
     >Server Boosting</a
-  >
-  is being able to assign a custom URL invite to your server! You can find the
-  option to do so in your
-  <strong>Server Settings &gt; Custom Invite Link.</strong>
-</p>
-<p class="wysiwyg-text-align-center p1">
-  <strong
-    ><img
-      src="https://support.discord.com/hc/article_attachments/5853940659095"
-      alt="Custom-Invite-Link-Settings-page.png"
-  /></strong>
-</p>
-<p>
-  You can enter in any words, phrase, or numbers to create a unique link to your
-  server alone!
-</p>
-<p>
-  While the link is yours to have as long as your server retains
+  >, you can set a customizable server invite URL known as a
+  <strong>Custom Invite Link</strong>. This URL can be used in place of an
   <a
-    href="https://discord.com/partners"
+    href="https://support.discord.com/hc/en-us/articles/208866998-Invites-101"
     target="_blank"
     rel="noopener noreferrer"
-    >partnership</a
+    >Instant Invite Link</a
+  >.
+</p>
+<div class="toc-box">
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    >
+  </p>
+  <ul>
+    <li>
+      <a href="#h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</a>
+    </li>
+    <li>
+      <a href="#h_01K1DV4MYFNEZYSKKPRV6V447H"
+        >How to Set a Custom Invite Link</a
+      >
+    </li>
+    <li>
+      <a href="#h_01K1DV4MYGYEDAV7R5QQKG4RRW">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
+<div class="info-box">
+  Custom Invite Links are available as an
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ#h_01JT6SH1QBD1XZKK4KEAD64GXS"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Additional Perk</a
   >
-  or your
+  in a limited experiment for select servers.
+</div>
+<h1 id="h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</h1>
+<p>
+  A Custom Invite Link is a personalized invite link that replaces Discord's
+  default randomly-generated codes with a memorable, branded address like
+  discord.gg/phibisparadise. 
+</p>
+<p>
+  This feature allows server owners to create professional, easy-to-share
+  invitations that reflect their brand or community name, making it simpler for
+  users to find and join their server. 
+</p>
+<p>
+  Available to servers that reached the
   <a
     href="https://support.discord.com/hc/en-us/articles/360028038352"
     target="_blank"
     rel="noopener noreferrer"
-    >Server Boost</a
-  >, it is unique, so you can't share it with any other server, or take it if
-  it's already being used. 
+    >Level 3 Server Boost</a
+  >, Custom Invite Link is a permanent invite link that's yours to keep as long
+  as your server maintains its Boost status.
 </p>
-<h1 id="h_01K1DVH3N6STTN2JCS1E8A80EN">
-  <span style="color: #ff0000">Important Info</span>
-</h1>
-<h3 id="h_01K1DVH3N6RYZ2766HBR2PD3P2">
-  <span style="color: #ff0000" class="wysiwyg-font-size-x-large"
-    >Read this section below before creating your Custom Invite Link!</span
-  >
-</h3>
-<ul>
-  <li>
-    <span class="wysiwyg-font-size-large"
-      ><strong
-        >Something important to keep in mind is that anyone can use this link to
-        join your server, and this custom invite link makes your server publicly
-        available to anyone who uses this link. </strong
-      ></span
-    ><br /><br /> 
-  </li>
-  <li>
-    <span class="wysiwyg-font-size-large"
-      ><strong
-        >As such, the custom invite link requires your server to have at least
-        one text channel with the
-        <span class="wysiwyg-underline">Read Messages</span> permission enabled
-        for the @everyone role</strong
-      >.
-    </span>
-    <ul>
-      <li>
-        If you don't, then the invite link window will give you an "Already
-        Claimed" error, regardless of whether or not another server has claimed
-        the link.
-      </li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>
-    <span class="wysiwyg-font-size-large"
-      ><strong
-        >Also, keep in mind that we may take back/remove custom invite links if
-        we discover abuse or if there's an intellectual property
-        conflict. </strong
-      ></span
-    >
-    <ul>
-      <li>
-        For more information, please check out our
-        <a
-          href="https://discord.com/guidelines"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Community Guidelines</a
-        >
-        and
-        <a
-          href="https://discord.com/terms"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Terms of Service</a
-        >!
-      </li>
-    </ul>
-  </li>
-</ul>
-<h1 id="h_01K1DVH3N63RZKB353WXGSVX4C">How to Assign a Custom Invite link</h1>
-<p>
-  If you are a partner or have reached the highest tier of Server Boosting and
-  you want to create a custom URL (after reading all the important info and
-  rules above), you can follow these steps below to get that set up! 
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33820348169495"
+    width="474"
+    height="350"
+    alt="Custom Invite Link being sent as a server invite"
+  />
 </p>
-<p>
-  <span style="color: #9900ff" class="wysiwyg-font-size-large"
-    ><strong>Step 1: </strong></span
-  ><span class="wysiwyg-font-size-large"
-    ><strong
-      >Make sure you have a text channel with the View Channel permission
-      enabled for the @everyone role.</strong
-    ></span
-  >
-</p>
-<h3 id="h_01K1DVH3N7X2FZ5X7FG603ETQ3">
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYF2R6AB4JY45WXNWJT">
   <span style="color: #666666"
-    ><em
-      ><span
-        style="
-          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-            Helvetica, Arial, sans-serif;
-        "
-        >Note: </span
-      ></em
-    ></span
-  ><br /><span style="color: #666666"
-    ><em
-      ><span
-        style="
-          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-            Helvetica, Arial, sans-serif;
-        "
-        >- Custom invite links bring the user to the
-        <span class="wysiwyg-underline">first channel</span> on the channel list
-        where @everyone has access to!</span
-      ></em
-    ></span
-  ><br /><span style="color: #666666"
-    ><em
-      ><span
-        style="
-          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-            Helvetica, Arial, sans-serif;
-        "
-        >- If you want new member to see a specific channel first when they
-        join, move that text channel to the top of the channel listing (and make
-        sure that the </span
-      ><span
-        style="
-          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-            Helvetica, Arial, sans-serif;
-        "
-        >@everyone role has the <strong>View Channel</strong> permissions)</span
-      ><span
-        style="
-          font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-            Helvetica, Arial, sans-serif;
-        "
-        >!</span
-      ></em
-    ></span
-  ><em
-    ><span
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      > </span
-    ></em
-  >
-</h3>
-<h3 class="wysiwyg-text-align-center" id="h_01K1DVH3N7FQQRASS9TF1S931B">
-  <img
-    src="https://support.discord.com/hc/article_attachments/360059248331"
-    alt="Screen_Shot_2020-06-09_at_11.18.32_AM.png"
-    width="543"
-    height="451"
-  />
-</h3>
-<p>
-  To set up those role permissions, you need to go into that text channel’s
-  <strong>Channel Settings</strong> by pressing the cog wheel next to the
-  channel’s name. You can also right-click on the text channel name to select
-  <strong>Edit Channel</strong> from the dropdown menu.
-</p>
-<p>
-  Choose <strong>Permissions</strong> on the left side bar, select the @everyone
-  role, and then enable the <strong>View Channel</strong> permission by pressing
-  the green checkmark.
-</p>
-<h3 id="h_01K1DVH3N7EXQBWYB9D28NN99H">
-  <strong>Note:</strong> If you want everyone to see the channel but not send
-  any messages, make sure to disable the Send Messages permission for the
-  @everyone role by pressing the red “X”.
-</h3>
-<h3 id="h_01K1DVH3N7WSA896NH42ZSK9VN">
-  We recommend reviewing all the permissions for this channel since this will be
-  the first channel new members of the server will see.
-</h3>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/5853885741463"
-    alt="permissions-custom-invite-link.png"
-  />
-</p>
-<p>
-  <span style="color: #9900ff" class="wysiwyg-font-size-large"
-    ><strong>Step 2: </strong></span
-  ><span class="wysiwyg-font-size-large"
-    ><strong
-      >Head into the Custom Invite Link tab to set up the unique link!</strong
+    ><span data-darkreader-inline-color=""
+      >Custom Invite Link being sent as a server invite</span
     ></span
   >
+</h4>
+<h1 id="h_01K1DV4MYFNEZYSKKPRV6V447H">How to Set a Custom Invite Link</h1>
+<div class="tip-box">
+  <strong>Tip:</strong> Before setting a Custom Invite Link, make sure you have
+  a text channel with the <strong>View Channel</strong> permission enabled for
+  the @everyone role. Otherwise the custom invite link will not work. Setting a
+  Custom Invite Link makes your server public and anyone able to join with the
+  link.
+</div>
+<p>
+  1. Navigate to the server you want to set the Custom Invite Link to, select
+  the server name at the top, and then press <strong>Server Settings</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/33820331521687"
+      width="359"
+      height="567"
+      alt="Server Settings option"
+  /></strong>
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYFYHGCW6X3TAR73Z2T">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      ><strong>Server Settings</strong></span
+    ><span data-darkreader-inline-color=""> option</span></span
+  >
+</h4>
+<p>
+  2. Select <strong>Boost Perks</strong> and scroll down until you see
+  <strong>Custom Invite Link</strong>. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33820348173591"
+    width="624"
+    height="452"
+    alt="Custom Invite Link section"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYG4BCE3NYW2XQEEV55">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Custom Invite Link section</span
+    ></span
+  >
+</h4>
+<p>
+  3. Enter the text that you want for your URL. Please keep in mind, you can use
+  up to 25 characters, including letters, numbers, or dashes. Select
+  <strong>Save Changes </strong>to save the URL.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33820348174871"
+    width="624"
+    height="263"
+    alt="Save Changes button after entering your Custom Invite URL"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGQ24XV7C5Y8DN37AB">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""><strong>Save Changes</strong></span
+    ><span data-darkreader-inline-color="">
+      button after entering your Custom Invite URL</span
+    ></span
+  >
+</h4>
+<p>
+  4. Now you can use your custom invite link to invite anyone to your server!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33820348169495"
+    width="474"
+    height="350"
+    alt="Custom Invite Link being sent as a server invite"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGSKR9QFFF25CDVK19">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Custom Invite Link being sent as a server invite</span
+    ></span
+  >
+</h4>
+<div class="warn-box">
+  <strong>Important: </strong>Please keep in mind that a Custom Invite Link can
+  be removed if we discover abuse or if there's an intellectual property
+  conflict. <br />For more information, please check out our
+  <a
+    href="https://discord.com/guidelines"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Community Guidelines </a
+  >and
+  <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"
+    >Terms of Service</a
+  ><span style="color: #434343"
+    ><span data-darkreader-inline-color="">.</span></span
+  >
+</div>
+<h1 id="h_01K1DV4MYGYEDAV7R5QQKG4RRW">Frequently Asked Questions</h1>
+<p>
+  <strong>Q: What characters can be used in my Custom Invite Link?</strong
+  ><br />A: Letters (lowercase only), numbers, and dashes can be used.
 </p>
 <p>
-  Once your channel permissions are set up, you can now head over to your
-  <strong>Server Settings</strong> (by clicking on your Server Name and clicking
-  on Server Settings in the dropdown menu).
+  <strong
+    >Q: Why do I keep receiving an error message when trying to set a Custom
+    Invite Link?</strong
+  >
+</p>
+<p>
+  A: If you receive an error message when trying to set your Custom Invite Link,
+  please try setting it to something else as the URL may be taken or invalid. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/5853908487319"
-    alt="final-custom-invite-link-server-settings-option.png"
-    width="326"
-    height="821"
+    src="https://support.discord.com/hc/article_attachments/33820348176535"
+    width="624"
+    height="184"
+    alt="Error when setting a Custom Invite Link"
   />
 </p>
-<p class="wysiwyg-text-align-left">
-  Once you're in your Server Settings, click on the
-  <strong>Custom Invite Link</strong> tab on the left side bar. 
-</p>
-<p class="wysiwyg-text-align-left">
-  In this <strong>Custom Invite Link</strong> tab, you'll be able to type your
-  desired invite link into the <strong>Invite URL</strong> text box!
-</p>
-<p class="wysiwyg-text-align-left">
-  And when you're sure you are ready to share this link with the rest of the
-  world, make sure to press <strong>Save Changes</strong>.
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGKBPQ6SE0ENR8DY1Z">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Error when setting a Custom Invite Link</span
+    ></span
+  >
+</h4>
+<p><strong>Q: Why is my Custom Invite Link showing as invalid?</strong></p>
+<p>
+  A: If you later change a text channel to no longer be visible to @everyone,
+  the Custom Invite Link will no longer work. You have to keep at least one text
+  channel to be viewable to @evryone for the Custom Invite Link to work.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/5853923051671"
-    alt="custom-invite-link-example-base.png"
+    src="https://support.discord.com/hc/article_attachments/33820331526295"
+    width="443"
+    height="129"
+    alt="Invalid Invite error"
   />
 </p>
-<p class="wysiwyg-text-align-left">
-  And now, you're ready to go and share your custom invite link with everyone
-  else! 
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGKAN7FAJ0KA4J9XVT">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color="">Invalid Invite error</span></span
+  >
+</h4>
+<p>
+  <strong
+    >Q: When I attempt to create a Custom Invite Link, I get an error saying the
+    URL is already taken. Is there a way to verify URL availability
+    beforehand?</strong
+  >
+</p>
+<p>
+  A: Discord Support is not able to confirm if a Custom Invite Link is available
+  or not. If you’re receiving an error message when trying to set a Custom
+  Invite Link, you will need to try something else.
+</p>
+<p><strong>Q: How do I remove my server’s Custom Invite Link?</strong></p>
+<p>
+  A: Head to <strong>Server Settings &gt; Boosts Perks</strong> and scroll down
+  to your Custom Invite Link. Press on
+  <strong>Remove Custom Invite Link</strong> to remove the link.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33820331526679"
+    width="624"
+    height="269"
+    alt="Remove Custom Invite Link button"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGVPJJGZTXHG82S1PC">
+  <span style="color: #666666"
+    ><span data-darkreader-inline-color=""
+      >Remove Custom Invite Link button</span
+    ></span
+  >
+</h4>
+<p>
+  <strong
+    >Q: My server ran out of Boosts, what will happen to my Custom Invite
+    Link? </strong
+  >
+</p>
+<p>
+  A: Unfortunately, if you no longer have the Server Boosts to maintain the
+  Custom Invite Link then you will lose your Custom Invite Link after 30 days.
 </p>
