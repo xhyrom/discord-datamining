@@ -22527,6 +22527,38 @@ span.clanTag__5d473 {
 :root .custom-user-profile-theme.user-profile-popout {
   --custom-user-profile-theme-padding: 4px;
 }
+:root .custom-user-profile-theme.theme-dark {
+  --control-background-primary-default: var(--profile-gradient-button-color);
+  --control-background-primary-hover: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 90%,
+    var(--black)
+  );
+  --control-background-primary-active: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 80%,
+    var(--black)
+  );
+  --control-background-secondary-default: var(--opacity-white-24);
+  --control-background-secondary-hover: var(--opacity-white-36);
+  --control-background-secondary-active: var(--opacity-white-32);
+}
+:root .custom-user-profile-theme.theme-light {
+  --control-background-primary-default: var(--profile-gradient-button-color);
+  --control-background-primary-hover: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 90%,
+    var(--white)
+  );
+  --control-background-primary-active: color-mix(
+    in srgb,
+    var(--profile-gradient-button-color) 80%,
+    var(--white)
+  );
+  --control-background-secondary-default: var(--opacity-white-72);
+  --control-background-secondary-hover: var(--opacity-white-92);
+  --control-background-secondary-active: var(--opacity-white-84);
+}
 :where(.outer_c0bea0) {
   background: var(--background-surface-high);
   display: flex;
@@ -64074,4 +64106,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.119b88bd3b8a265f.css.map*/
+/*# sourceMappingURL=12633.73a928525d811795.css.map*/
