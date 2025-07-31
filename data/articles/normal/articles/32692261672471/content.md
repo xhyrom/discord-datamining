@@ -36,12 +36,6 @@
 <h1 id="h_01JXATXQ3E20MQJ5GHE1AVXS4K">
   What is App Tracking Transparency for iOS?
 </h1>
-<div class="exp-box">
-  <span style="color: #434343"
-    ><strong>Info</strong>: App Tracking Transparency for iOS is currently an
-    experiment limited to users in various regions. </span
-  >
-</div>
 <p>
   App Tracking Transparency is Apple's privacy framework that requires apps to
   obtain user consent before accessing device identifiers used for tracking.
