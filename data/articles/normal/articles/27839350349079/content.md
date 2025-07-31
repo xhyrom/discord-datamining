@@ -11,6 +11,30 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Terminull Brigade<br /></strong
+  ><strong>Quest Name: Terminull Brigade Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Terminull Brigade</strong> to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  >.<br /><strong>Who is Eligible: </strong>Available to players who have access
+  to <strong>Terminull Brigade</strong> and <strong>Discord</strong> on PC.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The <strong>Terminull Brigade Quest</strong> can be accepted on
+  <strong>PC</strong> from <strong>July 31, 2025</strong> until
+  <strong>August 6, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 6, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms:</strong
+  >
+  Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Arena Breakout: Infinite<br /></strong
   ><strong>Quest Name: ABI×Cyberpunk 2077 Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
