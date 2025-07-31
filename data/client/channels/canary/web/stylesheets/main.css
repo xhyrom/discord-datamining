@@ -11800,6 +11800,17 @@ svg.radioIcon_c1e9c4 {
 .enable-forced-colors .labelDisabled_f525d3 > div {
   color: GrayText;
 }
+.badge_dca3ba {
+  align-self: center;
+  background-color: var(--bg-brand);
+  border-radius: var(--radius-round);
+  box-sizing: border-box;
+  color: var(--white);
+  display: inline-block;
+  padding: 0 var(--space-8);
+  text-align: center;
+  text-transform: uppercase;
+}
 .container__73454 {
   --custom-gradient-color-start: var(--blurple-50);
   --custom-gradient-color-end: var(--blurple-50);
@@ -64106,4 +64117,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.73a928525d811795.css.map*/
+/*# sourceMappingURL=12633.3c2ede155d9f330c.css.map*/
