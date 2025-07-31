@@ -27821,6 +27821,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .enable-forced-colors .scrollableContainer__74017::-webkit-scrollbar-thumb {
   background-color: CanvasText;
 }
+.announcementScrollableContainer__74017 {
+  max-height: calc(var(--custom-channel-textarea-text-area-max-height) + 80px);
+}
 .divider__908e2 {
   align-items: center;
   border-top: thin solid var(--border-subtle);
@@ -64077,4 +64080,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.279b0e089817558d.css.map*/
+/*# sourceMappingURL=12633.a8fc11082ab25a0c.css.map*/
