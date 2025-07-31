@@ -29099,12 +29099,6 @@ body .headerAnimation_b54a5b {
 .lockIcon__9a648 {
   margin-right: 2px;
 }
-.back__962c6 {
-  margin-right: auto;
-  min-width: auto;
-  padding: 2px 4px;
-  width: auto;
-}
 .primaryIcon__962c6 {
   height: 16px;
   margin-right: 4px;
@@ -64080,4 +64074,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a8fc11082ab25a0c.css.map*/
+/*# sourceMappingURL=12633.119b88bd3b8a265f.css.map*/
