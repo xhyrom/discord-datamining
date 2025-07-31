@@ -44620,6 +44620,100 @@ html.disable-forced-colors * {
 .nitroIcon__68a18 {
   fill: var(--icon-primary);
 }
+.container__5a2df {
+  background: var(--background-gradient-higher);
+}
+.containerInner__5a2df {
+  background: var(--background-base-low);
+  border: 1px solid var(--border-faint);
+  border-radius: 8px;
+  height: calc(100% - 16px);
+  margin: 8px;
+}
+.containerInner__5a2df,
+.editorBody__5a2df {
+  display: flex;
+  flex-direction: column;
+}
+.editorBody__5a2df {
+  gap: 16px;
+  margin-left: 20px;
+  margin-right: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  width: 227px;
+}
+.headerContainer__5a2df {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+.closeButton__5a2df {
+  margin-left: auto;
+}
+.sliderContainer__5a2df {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gradientDirectionSliderContainer__5a2df {
+  margin-bottom: 4px;
+}
+.surpriseMeButton__5a2df {
+  background: var(--background-modifier-hover);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+}
+.footerContainer__5a2df {
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+.footerRightButtons__5a2df {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  width: 100%;
+}
+.subscribeButton__5a2df {
+  color: var(--white);
+  flex-shrink: 0;
+  height: 40px;
+  max-width: 140px;
+  min-width: 110px;
+  width: auto;
+}
+.coachmarkHeaderContainer__5a2df {
+  display: flex;
+  flex-direction: column;
+}
+.coachmarkHeaderTextContainer__5a2df {
+  margin-top: var(--space-4);
+}
+.badgeAndCloseRow__5a2df {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.subtitle__5a2df {
+  margin-top: var(--space-4);
+}
+.coachmarkFooterContainer__5a2df {
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-16) var(--space-20);
+}
+.nitroIcon__5a2df {
+  fill: var(--icon-primary);
+}
 .appAsidePanelWrapper_a3002d {
   display: flex;
   flex: 1 1 auto;
@@ -64104,4 +64198,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0a0a2490841c129e.css.map*/
+/*# sourceMappingURL=12633.46fe9699a02c16d4.css.map*/
