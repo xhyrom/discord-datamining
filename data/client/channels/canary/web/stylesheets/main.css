@@ -21394,6 +21394,27 @@ div.modalHeader_c28af8 {
   flex-direction: column;
   gap: 8px;
 }
+.newBadge__03991 {
+  position: absolute;
+  right: -4px;
+  text-transform: uppercase;
+  top: -4px;
+}
+.newBadgeText__03991 {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+.iconBadge__03991 {
+  border-radius: 50%;
+  height: 20px;
+  padding: 2px;
+  position: absolute;
+  right: -4px;
+  top: -6px;
+  width: 20px;
+}
 .icon_dfa67d {
   height: 24px;
   margin-bottom: 4px;
@@ -21417,9 +21438,6 @@ div.modalHeader_c28af8 {
   position: relative;
   transition: box-shadow 0.15s ease-out;
 }
-.decorationGridItemChurned_dfa67d {
-  opacity: 0.3;
-}
 .selected_dfa67d {
   box-shadow: inset 0 0 0 2px var(--brand-500);
   opacity: 1;
@@ -21433,37 +21451,6 @@ div.modalHeader_c28af8 {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-.tooltip_dfa67d {
-  min-width: 250px;
-}
-.tooltipInner_dfa67d {
-  text-align: center;
-}
-.tooltipText_dfa67d {
-  padding: 8px 32px;
-}
-.iconBadge_dfa67d {
-  border-radius: 50%;
-  height: 20px;
-  padding: 2px;
-  top: -6px;
-  width: 20px;
-}
-.iconBadge_dfa67d,
-.newBadge_dfa67d {
-  position: absolute;
-  right: -4px;
-}
-.newBadge_dfa67d {
-  text-transform: uppercase;
-  top: -4px;
-}
-.newBadgeText_dfa67d {
-  align-items: center;
-  display: flex;
-  gap: var(--space-4);
-  justify-content: center;
 }
 .spinner_ced2f2 {
   align-self: center;
@@ -64117,4 +64104,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3c2ede155d9f330c.css.map*/
+/*# sourceMappingURL=12633.0a0a2490841c129e.css.map*/
