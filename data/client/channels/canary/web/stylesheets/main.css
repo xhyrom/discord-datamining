@@ -24161,6 +24161,7 @@ span.clanTag__5d473 {
 .buttonContainer__3782a {
   align-items: center;
   display: flex;
+  gap: var(--space-8);
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 var(--space-32);
@@ -64873,4 +64874,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e9b9a588024fbff0.css.map*/
+/*# sourceMappingURL=12633.d20454e6c4c78cbc.css.map*/
