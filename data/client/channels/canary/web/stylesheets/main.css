@@ -29860,6 +29860,11 @@ body .headerAnimation_b54a5b {
 .body_c6f1a4.reviewStep_c6f1a4 {
   padding: 0 var(--modal-horizontal-padding);
 }
+.body_c6f1a4.addPaymentStepForPremium_c6f1a4 {
+  max-width: 440px;
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+}
 .sliderBodyLarge_c6f1a4 {
   width: 804px;
 }
@@ -65046,4 +65051,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9381903116fe07ec.css.map*/
+/*# sourceMappingURL=12633.9d857c40e3093b2b.css.map*/
