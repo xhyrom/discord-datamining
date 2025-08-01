@@ -1,0 +1,55 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8096577002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "internal_job_id": 6207259002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Data Science & Data Engineering",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8096577002,
+  "updated_at": "2025-08-01T15:09:09-04:00",
+  "requisition_id": "R-100998",
+  "title": "Senior Data Scientist, Analytics - Ads Product and GTM",
+  "company_name": "Discord",
+  "first_published": "2025-08-01T15:09:09-04:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;At Discord, we&#39;re building something special - a place where hundreds of millions of people connect, play, and belong. Our ads business is entering an exciting growth phase, and we need a Senior Data Scientist who&#39;s passionate about building advertising technology that respects our users while delivering real value to brands. We are establishing the groundwork for advanced advertising capabilities that uphold user privacy and simultaneously achieve outstanding results for advertisers - now that’s true win-win-win!&lt;/p&gt;\n&lt;p&gt;You&#39;ll be the data science lead on a nimble cross-functional squad, working alongside Product, Sales, and Engineering to shape the future of ads on Discord. We&#39;re looking for Data Scientists to join our GTM team and our Ads Product team. This role reports to the Director of Data Science, Analytics for Ads.&amp;nbsp;&lt;strong&gt;If using data to build world-class advertising experiences that enhance rather than interrupt the magic of Discord communities sounds exciting, we&#39;d love to hear from you!&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What you&#39;ll be doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead data science strategy and execution on our ads product or GTM squad, partnering directly with PM, Sales, and Engineering leadership&lt;/li&gt;\n&lt;li&gt;Build the analytical foundation for Discord&#39;s next-generation ad products using our rich first-party data from 200M+ monthly active users, combined with strategic third-party partnerships&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Collaborate with product and sales teams to develop learning agendas, experimentation plans, and solutions that drive product-market-fit and advertiser performance&lt;/li&gt;\n&lt;li&gt;Lead cross-functional data projects to deepen our understanding of users, communities, and advertiser performance that directly inform better ad products&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Build plans to evaluate product or vertical performance, run experimentation, identify improvement opportunities, and share these learnings with cross-functional peers and executives&lt;/li&gt;\n&lt;li&gt;Apply 80/20 thinking to prioritize the highest-impact initiatives while championing user privacy and data governance standards across the company&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;5+ years of data science experience&lt;/strong&gt; in ads tech, with preference for gaming, social media, or community platforms&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Deep understanding of the ads tech ecosystem&lt;/strong&gt;, including auction-based delivery systems, real-time bidding, audience data integrations, and data partners.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;4+ years of experience building performant dashboards&lt;/strong&gt; using Looker, or similar software with proficiency in designing intuitive visualizations&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;4+ years experience writing excellent SQL&lt;/strong&gt; with proficiency in big data platforms&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Experimentation expertise&lt;/strong&gt;: 3+ years designing, running, and analyzing A/B tests for large-scale consumer products&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Visualization and Dashboards&lt;/strong&gt;: Proven experience building executive-level dashboards and reports using Looker, Tableau, or similar tools&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Cross-functional collaboration&lt;/strong&gt;: Track record of working effectively with cross-functional teams to drive business outcomes and advertiser performance&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strong Communication skills&lt;/strong&gt;: Ability to translate complex technical concepts into actionable insights for both technical and business stakeholders&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Attribution and measurement: &lt;/strong&gt;Experience with incrementality testing, multi-touch attribution, and campaign effectiveness measurement in privacy-first environments&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Experience working with first-party and third-party data&lt;/strong&gt;, as well as attribution partners&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Curiosity and collaboration&lt;/strong&gt;: You thrive in ambiguous environments and love solving complex problems with amazing teammates&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Discord passion&lt;/strong&gt;: You&#39;re an active Discord user or have deep knowledge of gaming and creator communities&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Privacy-first measurement&lt;/strong&gt;: Background in privacy-preserving technologies and ethical advertising practices&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Leadership experience&lt;/strong&gt;: Background mentoring junior data scientists or leading technical initiatives&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Sales partnership&lt;/strong&gt;: Direct experience translating technical capabilities into compelling sales narratives&lt;/li&gt;\n&lt;li&gt;Experience with analytics for social media, gaming platforms, or community-driven products, including familiarity with social graphs, community dynamics, and user-lifecycle analysis&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $196,000 to $220,500 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
