@@ -641,10 +641,8 @@
         <tr>
           <td><span style="color: #2e3338">Threads</span></td>
           <td><span style="color: #2e3338">N/A</span></td>
-          <td><span style="color: #2e3338">3 day archive</span></td>
-          <td>
-            <span style="color: #2e3338">7 day archive, private threads</span>
-          </td>
+          <td><span style="color: #2e3338">N/A</span></td>
+          <td><span style="color: #2e3338">N/A</span></td>
           <td><span style="color: #2e3338">N/A</span></td>
         </tr>
         <tr>
