@@ -3035,6 +3035,8 @@
             },
             MESSAGES: (t) => "/channels/".concat(t, "/messages"),
             MESSAGES_GREET: (t) => "/channels/".concat(t, "/greet"),
+            MESSAGES_ANNOUNCEMENT: (t) =>
+              "/channels/".concat(t, "/messages/announcement"),
             MESSAGE: (t, e) => "/channels/".concat(t, "/messages/").concat(e),
             MESSAGE_ACK: (t, e) =>
               "/channels/".concat(t, "/messages/").concat(e, "/ack"),
@@ -4100,14 +4102,6 @@
             BILLING_PROMOTION_DIRECT_FULFILLMENT_REDEMPTION: (t, e) =>
               "/billing/partner-promotions/".concat(t, "/").concat(e),
             NOTIFICATIONS: "/notifications",
-            NOTIFICATIONS_INBOX: (t, e) => {
-              let a = "/inbox";
-              return (
-                null != t &&
-                  ((a += "/".concat(t)), null != e && (a += "/".concat(e))),
-                a
-              );
-            },
             FRIENDS: "/channels/@me",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
@@ -6297,6 +6291,7 @@
             "network_action_billing_ip_location_fetch_error"),
           (r.NITRO_PRIVATE_BROWSING_SURVEY_RESPONDED =
             "nitro_privatebrowsing_surveyresponded"),
+          (r.EMOJI_STUDIO_ENDED = "emoji_studio_ended"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6910,7 +6905,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-07-31-97a009de9554aa37d0ded9bafbb63e55d5ea6a61-discord_web",
+              "2025-08-01-41bf48ebb96db0ef29694f21fe9a0e75aa241bca-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6976,8 +6971,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "425487"),
-            o.YA("builtAt", String("1753946649876"));
+            o.YA("buildNumber", "426030"),
+            o.YA("builtAt", String("1754032724737"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48376,4 +48371,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.40a9e8e0545f59d7.js.map
+//# sourceMappingURL=sentry.3c432a0b7a1d1c3d.js.map
