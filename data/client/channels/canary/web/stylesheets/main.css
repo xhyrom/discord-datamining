@@ -22150,6 +22150,9 @@ div.modalHeader_c28af8 {
 .modalPreview_ced2f2 {
   margin-top: 24px;
 }
+.modalFooter_ced2f2 {
+  gap: var(--space-8);
+}
 .freeTrialText__1995d {
   text-transform: capitalize;
 }
@@ -64880,4 +64883,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ad7ec98ed877c940.css.map*/
+/*# sourceMappingURL=12633.4ab8d5946433fb59.css.map*/
