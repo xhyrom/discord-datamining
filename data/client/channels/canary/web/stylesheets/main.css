@@ -16884,7 +16884,7 @@ svg.radioIcon_c1e9c4 {
   margin: 16px auto 0;
 }
 .guildSection_d5cd2d {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-base-lower);
   padding: var(--custom-message-helpers-popout-padding-width);
 }
 .guildTitle_d5cd2d {
@@ -64894,4 +64894,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.744de78785a77010.css.map*/
+/*# sourceMappingURL=12633.a54a1cab9fe1631e.css.map*/
