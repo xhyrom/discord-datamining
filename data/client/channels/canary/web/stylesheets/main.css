@@ -34065,15 +34065,6 @@ body .headerAnimation_b54a5b {
   margin: 24px 0;
   width: 100%;
 }
-.nitroIcon__9f4f9 {
-  height: 16px;
-  padding-right: 4px;
-  width: 16px;
-}
-.innerButton__9f4f9 {
-  align-items: center;
-  display: flex;
-}
 .paymentSourceNoticeCopy__1048e {
   margin-top: 5px;
 }
@@ -35513,6 +35504,9 @@ body .headerAnimation_b54a5b {
   min-width: auto;
   padding: 2px 4px;
   width: auto;
+}
+.modalFooter_e125f1 {
+  padding-top: var(--space-24) !important;
 }
 .shopPageContainer__4485d {
   margin-top: 80px;
@@ -64900,4 +64894,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2c3b9aba9c906f84.css.map*/
+/*# sourceMappingURL=12633.744de78785a77010.css.map*/
