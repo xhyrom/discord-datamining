@@ -11,6 +11,27 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Weapons<br />Quest Name: Weapons<br /></strong
+  ><strong>Offer Details: </strong>Watch the <strong>Weapons </strong>video in
+  Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  >.<br /><strong>Who is Eligible: </strong>Available to users that are 18+ in
+  the <strong>United States</strong> on the desktop app or browser client where
+  <strong>Discord</strong> is available. Discord’s premium services are
+  restricted in some regions.<br /><strong>Availability Period:</strong>
+  <strong>Weapons Quest</strong> can be accepted on Discord desktop app or
+  browser client from <strong>August 1, 2025 </strong>until<strong>
+    August 10, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>September 10, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: Limit of one reward redemption per account.</strong
+  >
+</p>
+<p>
   <strong>Quest Game: Terminull Brigade<br /></strong
   ><strong>Quest Name: Terminull Brigade Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
