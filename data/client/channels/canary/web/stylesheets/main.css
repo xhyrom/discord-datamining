@@ -24113,6 +24113,7 @@ span.clanTag__5d473 {
   border-radius: var(--radius-sm);
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   position: absolute;
   z-index: 1001;
 }
@@ -24146,6 +24147,9 @@ span.clanTag__5d473 {
   margin-top: var(--space-32);
   max-width: 250px;
 }
+.title__3782a.withBadge__3782a {
+  margin-top: var(--space-16);
+}
 .body__3782a {
   max-width: 380px;
 }
@@ -24162,6 +24166,7 @@ span.clanTag__5d473 {
 .buttonContainer__3782a {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-8);
   justify-content: space-between;
   margin: 0 auto;
@@ -64875,4 +64880,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.4747dd2b7456da2c.css.map*/
+/*# sourceMappingURL=12633.ad7ec98ed877c940.css.map*/
