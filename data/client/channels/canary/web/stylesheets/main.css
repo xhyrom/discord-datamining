@@ -18217,6 +18217,10 @@ svg.radioIcon_c1e9c4 {
 .container_dfb989 {
   display: inline-flex;
 }
+.forceAnimate_dfb989 .container_dfb989.solid_dfb989,
+.showEffect_dfb989.solid_dfb989 {
+  color: var(--custom-display-name-styles-main-color, var(--text-default));
+}
 .forceAnimate_dfb989 .container_dfb989.gradient_dfb989,
 .showEffect_dfb989.gradient_dfb989 {
   background: linear-gradient(
@@ -18346,10 +18350,6 @@ svg.radioIcon_c1e9c4 {
   background-size: 200% 200%;
   transform: translate3d(0, 0.08em, 0);
   -webkit-text-fill-color: transparent;
-}
-.forceAnimate_dfb989 .container_dfb989.solid_dfb989,
-.showEffect_dfb989.solid_dfb989 {
-  color: var(--custom-display-name-styles-main-color);
 }
 .animated_dfb989.loop_dfb989.loop_dfb989,
 .animated_dfb989.loop_dfb989.loop_dfb989:before,
@@ -65051,4 +65051,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9d857c40e3093b2b.css.map*/
+/*# sourceMappingURL=12633.4e1e5a7c676be52a.css.map*/
