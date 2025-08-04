@@ -45473,6 +45473,15 @@ html.disable-forced-colors * {
 .eyeDropperTooltip__247cf {
   max-width: 130px;
 }
+.themeSelector_c85552 {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  height: 32px;
+}
+.themePillItemSelected_c85552 {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+}
 .container__5a2df {
   background: var(--background-gradient-higher);
 }
@@ -65092,4 +65101,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b3cc6555c2df5270.css.map*/
+/*# sourceMappingURL=12633.b2ba917dea54038e.css.map*/

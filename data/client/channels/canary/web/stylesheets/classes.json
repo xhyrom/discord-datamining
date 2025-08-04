@@ -1710,6 +1710,8 @@
   "colorItem": "colorItem_b29565",
   "colorPreview": "colorPreview_b29565",
   "eyeDropperTooltip": "eyeDropperTooltip_b29565",
+  "themeSelector": "themeSelector_c85552",
+  "themePillItemSelected": "themePillItemSelected_c85552",
   "appAsidePanelWrapper": "appAsidePanelWrapper_a3002d",
   "mobileAppAsidePanelWrapper": "mobileAppAsidePanelWrapper_a3002d",
   "notAppAsidePanel": "notAppAsidePanel_a3002d",
