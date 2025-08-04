@@ -24129,9 +24129,9 @@ span.clanTag__5d473 {
   align-items: center;
   background-color: var(--background-base-low);
   border-radius: var(--radius-sm);
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   position: absolute;
   z-index: 1001;
 }
@@ -27713,7 +27713,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-high);
   height: 100%;
-  overflow: hidden;
   padding-top: 16px;
   position: relative;
   z-index: 1;
@@ -65085,4 +65084,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8ed94b0cbca9980a.css.map*/
+/*# sourceMappingURL=12633.c86279fd8e892ea8.css.map*/
