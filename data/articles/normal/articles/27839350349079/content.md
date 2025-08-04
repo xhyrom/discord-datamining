@@ -11,6 +11,30 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong
+    >Quest Video: King of the Hill<br />Quest Name: King of the Hill Quest<br />Offer
+    Details: </strong
+  >Watch the<strong> King of the Hill </strong>video in Discord to receive a
+  <strong>Hank Hill Avatar Decoration. <br />Who is Eligible: </strong>Available
+  to users that are 18+ in the<strong> United States </strong>on the desktop app
+  or browser client where<strong> Discord </strong>is available. Discord’s
+  premium services are restricted in some regions.<strong
+    ><br />Availability Period: King of the Hill Quest </strong
+  >can be accepted on Discord desktop app or browser client<strong>
+    from August 4, 2025</strong
+  >
+  until <strong>August 18, 2025 (11:59PM UTC).<br /></strong>Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 18, 2025 (11:59 UTC).<br /></strong>The
+  <strong>Hank Hill Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>October 4, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration.<strong
+    ><br />Other Terms: Limit of one reward redemption per account.</strong
+  >
+</p>
+<p> </p>
+<p>
   <strong>Quest Video: Weapons<br />Quest Name: Weapons<br /></strong
   ><strong>Offer Details: </strong>Watch the <strong>Weapons </strong>video in
   Discord to receive
@@ -31,6 +55,7 @@
     >Other Terms: Limit of one reward redemption per account.</strong
   >
 </p>
+<p> </p>
 <p>
   <strong>Quest Game: Terminull Brigade<br /></strong
   ><strong>Quest Name: Terminull Brigade Quest<br /></strong
