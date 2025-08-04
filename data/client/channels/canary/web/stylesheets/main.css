@@ -37124,6 +37124,8 @@ div.modalOverrideBody__34eac {
   align-items: center;
   background-color: var(--background-base-lowest);
   border-radius: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   width: auto;
@@ -45487,12 +45489,20 @@ html.disable-forced-colors * {
   flex-direction: column;
 }
 .editorBody__5a2df {
-  gap: 16px;
+  gap: 25px;
   margin-left: 20px;
   margin-right: 16px;
   padding-bottom: 16px;
   padding-top: 16px;
   width: 227px;
+}
+.section__5a2df {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.resetButton__5a2df {
+  margin-top: 44px;
 }
 .headerContainer__5a2df {
   align-items: center;
@@ -65084,4 +65094,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c86279fd8e892ea8.css.map*/
+/*# sourceMappingURL=12633.c04ec160952140fd.css.map*/
