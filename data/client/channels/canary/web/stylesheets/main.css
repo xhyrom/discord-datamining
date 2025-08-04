@@ -65025,21 +65025,6 @@ code {
   --custom-application-directory-profile-icon-size: 122px;
   --custom-application-directory-search-sidebar-width: 200px;
   --custom-application-directory-search-sidebar-margin-right: 32px;
-  --custom-activity-shelf-item-activity-item-height: 230px;
-  --custom-activity-shelf-item-large-activity-item-height: 143px;
-  --custom-activity-shelf-modal-modal-padding: 80px;
-  --custom-activity-shelf-modal-modal-width: 496px;
-  --custom-activity-shelf-modal-modal-min-width: 496px;
-  --custom-activity-shelf-modal-modal-max-width: 1024px;
-  --custom-activity-shelf-modal-modal-header-height: 92px;
-  --custom-activity-shelf-modal-modal-header-without-description-height: 74px;
-  --custom-activity-shelf-modal-modal-footer-height: 50px;
-  --custom-activity-shelf-modal-modal-art-height: 64px;
-  --custom-activity-shelf-modal-modal-max-height: 720px;
-  --custom-activity-shelf-modal-modal-header-developer-controls-height: 176px;
-  --custom-activity-shelf-modal-dividers-height: 2px;
-  --custom-activity-shelf-modal-divider-height: 1px;
-  --custom-activity-shelf-slide-activity-directory-shelf-grid-gap: 16px;
   --custom-accept-invite-modal-invite-modal-height: 420px;
   --custom-accept-invite-modal-small-screen-width: 720px;
   --custom-avatar-avatar-decoration-border-position: calc(
@@ -65491,4 +65476,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.82eade1599c6bf66.css.map*/
+/*# sourceMappingURL=12633.ac294e06ba55e94a.css.map*/
