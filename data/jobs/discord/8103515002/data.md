@@ -10,12 +10,12 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8103515002](https://discord.com/jobs/8103515002)
 
-**Updated At:** Fri, 01 Aug 2025 23:51:55 GMT
+**Updated At:** Tue, 05 Aug 2025 20:23:06 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Building on Discord's gaming-centric platform, Quests offer an engaging way for advertisers to connect to our community with rewarded advertising. As we grow our advertising platform, our Ads Interfaces team is at the forefront of creating intuitive self-serve advertising experiences that empower businesses of all sizes to reach Discord's diverse user base. The most successful businesses on our platform will leverage our self-serve tools to create, manage, and optimize their campaigns with ease.
 As the Ad Interfaces PM you will be responsible for ensuring these interfaces deliver value for businesses across all verticals, while maintaining the quality experience Discord users expect. You will define a compelling vision and drive roadmap execution around how we make our advertising interfaces accessible, valuable, and understandable to businesses of all sizes. This will include things like business onboarding, self-serve campaign creation, asset management, reporting, experimentation setup and more.
-&amp;nbsp;
+Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.
 What You'll Be Doing
 
 Guide the product philosophy, vision, and roadmap for our self-serve ad products so we make our advertising partners successful on Discord
