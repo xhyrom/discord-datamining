@@ -2798,6 +2798,7 @@
               "/users/@me/settings/game-notifications/overrides",
             UNVERIFIED_APPLICATIONS: "/unverified-applications",
             UNVERIFIED_APPLICATIONS_ICONS: "/unverified-applications/icons",
+            PLATFORM_APPLICATION: "/platform-application",
             GUILD_FEATURE_ACK: (t, e, a) =>
               "/guilds/".concat(t, "/ack/").concat(a, "/").concat(e),
             USER_NON_CHANNEL_ACK: (t, e) =>
@@ -3050,7 +3051,6 @@
             AI_TITLE: "/ai/title",
             AI_TRANSLATE: "/ai/translate",
             AI_FIX_GRAMMAR: "/ai/fix-grammar",
-            AI_POLL_SUGGESTIONS: "/ai/poll-suggestions",
             MESSAGE_LOG_PRIVATE_CHANNELS: "/messages-log/private-channels/get",
             MESSAGE_LOG_GUILD_CHANNELS: "/messages-log/guild-channels/get",
             BACKGROUND_SYNC: "/users/@me/background-sync",
@@ -4770,6 +4770,7 @@
           (r.GAME_NEWS_OPENED = "game_news_opened"),
           (r.APPLICATION_OPENED = "application_opened"),
           (r.LAUNCH_GAME = "launch_game"),
+          (r.GAME_DETECTED = "game_detected"),
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
@@ -6904,7 +6905,8 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6344b6c076b2c29badcaaf6f57034c953d8fcdec",
+            release:
+              "2025-08-05-9a9741481252caf78cc5133d560e00f3936bd66a-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6970,8 +6972,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "426202"),
-            o.YA("builtAt", String("1754071951496"));
+            o.YA("buildNumber", "427496"),
+            o.YA("builtAt", String("1754430750920"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48370,4 +48372,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.63df42a0260cdca5.js.map
+//# sourceMappingURL=sentry.6c2cef1fab753bc2.js.map
