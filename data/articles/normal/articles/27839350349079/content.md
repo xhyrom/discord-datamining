@@ -11,6 +11,26 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Apex Legends<br /></strong
+  ><strong>Quest Name: Apex Legends Quest<br /></strong
+  ><strong>Offer Details: </strong>Play 15 minutes of
+  <strong>Apex Legends</strong> to receive an
+  <strong>Epic Bangalore Skin</strong>.<br /><strong>Who is Eligible: </strong
+  >Available to players in the <strong>United</strong>
+  <strong>States</strong> and <strong>Japan</strong> who have access to
+  <strong>Apex Legends</strong> and <strong>Discord</strong> on PC. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period</strong
+  >: The <strong>Apex Legends Quest</strong> can be accepted on
+  <strong>PC</strong> from <strong>August 5, 2025</strong> until
+  <strong>August 17, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>October 17, 2025 (12:00AM UTC)</strong>.<br /><strong
+    >Other Terms: Limit of one reward redemption per account.</strong
+  >
+</p>
+<p> </p>
+<p>
   <strong
     >Quest Video: King of the Hill<br />Quest Name: King of the Hill Quest<br />Offer
     Details: </strong
