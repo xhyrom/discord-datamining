@@ -6056,27 +6056,30 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   cursor: not-allowed;
 }
 .combo_fcddc1 {
+  box-sizing: border-box;
   display: flex;
   font-size: 12px;
   font-weight: var(--font-weight-semibold);
+  height: 23px;
   line-height: 12px;
+  position: relative;
   text-transform: uppercase;
 }
-.combo_fcddc1,
-.key_fcddc1 {
-  box-sizing: border-box;
-  height: 23px;
-  position: relative;
+.systemFont_fcddc1 {
+  font-family: "system-ui", sans-serif;
 }
 .key_fcddc1 {
   background-color: var(--background-mod-faint);
   border: 1px solid var(--border-strong);
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: default;
   display: block;
+  height: 23px;
   min-height: 14px;
   min-width: 14px;
   padding: 3px 6px 4px;
+  position: relative;
   text-align: center;
 }
 .key_fcddc1:not(:last-child) {
@@ -65476,4 +65479,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ac294e06ba55e94a.css.map*/
+/*# sourceMappingURL=12633.58695917644ec07a.css.map*/
