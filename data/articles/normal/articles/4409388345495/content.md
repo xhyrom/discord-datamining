@@ -121,9 +121,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767021257367"
-    width="628"
-    height="427"
+    src="https://support.discord.com/hc/article_attachments/33835450360727"
+    width="750"
+    height="552"
   />
 </p>
 <h4 id="h_01JPQHRXA29WZQ6SA54EKZV259" class="wysiwyg-text-align-center">
@@ -158,9 +158,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767021259159"
-    width="621"
-    height="413"
+    src="https://support.discord.com/hc/article_attachments/33835474977943"
+    width="814"
+    height="599"
   />
 </p>
 <h4 id="h_01JPQHX125D3FYHD7GPFHGMVRD">
@@ -217,9 +217,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767021267607"
-    width="658"
-    height="367"
+    src="https://support.discord.com/hc/article_attachments/33835450361751"
+    width="798"
+    height="587"
   />
 </p>
 <h4 id="h_01JPQJ1QWE335W0FF2Q7M93RJ5" class="wysiwyg-text-align-center">
@@ -267,13 +267,13 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767074384791"
-    width="630"
-    height="419"
+    src="https://support.discord.com/hc/article_attachments/33835450362519"
+    width="885"
+    height="651"
   />
 </p>
-<h4 id="h_01JPQJ7FQBY1DZ36FERVETX6RC" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Save Changes Button</span>
+<h4 id="h_01K1ERMNXVEJW41AD3GRV9334D" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Selecting a Recent Avatar</span>
 </h4>
 <h2 id="h_01FJ354SN3Q9YQ28AB5GMXWTVA">Mobile: Changing your Server Avatar</h2>
 <p>
@@ -302,8 +302,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30767074390039"
-    width="248"
-    height="518"
+    width="290"
+    height="604"
   />
 </p>
 <h4 id="h_01JPQJBF2YTY57CKRN8FE88XM8" class="wysiwyg-text-align-center">
@@ -316,8 +316,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30767021281687"
-    width="242"
-    height="505"
+    width="297"
+    height="619"
   />
 </p>
 <h4 id="h_01JPQJC79VRMB3A5Z3YKDKTTH6" class="wysiwyg-text-align-center">
@@ -343,8 +343,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30767074396055"
-    width="252"
-    height="524"
+    width="296"
+    height="615"
   />
 </p>
 <h4 id="h_01JPQJDTKZ069SY4WZ0771TAX6" class="wysiwyg-text-align-center">
@@ -357,8 +357,8 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/30767074397591"
-    width="240"
-    height="500"
+    width="290"
+    height="604"
   />
 </p>
 <h4 id="h_01JPQJEMCXNK31CBQBX94B7H3H" class="wysiwyg-text-align-center">
@@ -391,9 +391,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30767074402327"
-      width="624"
-      height="444"
+      src="https://support.discord.com/hc/article_attachments/33835450362903"
+      width="850"
+      height="625"
   /></span>
 </p>
 <h4 id="h_01JPQJJS6G9BQQ2YNBBT57PCYX" class="wysiwyg-text-align-center">
@@ -420,8 +420,8 @@
       ><span style="color: #4f545c"
         ><img
           src="https://support.discord.com/hc/article_attachments/30767021292311"
-          width="259"
-          height="538" /></span></span
+          width="279"
+          height="581" /></span></span
   ></span>
 </p>
 <p class="wysiwyg-text-align-center">
@@ -444,8 +444,8 @@
   <span style="color: #4f545c"
     ><img
       src="https://support.discord.com/hc/article_attachments/30767021296023"
-      width="253"
-      height="527"
+      width="291"
+      height="607"
   /></span>
 </p>
 <h4 id="h_01JPQJNMZWEJRQ2A2XTS693YEK" class="wysiwyg-text-align-center">
@@ -461,8 +461,8 @@
   <span style="color: #4f545c"
     ><img
       src="https://support.discord.com/hc/article_attachments/30767074410391"
-      width="250"
-      height="521"
+      width="294"
+      height="612"
   /></span>
 </p>
 <h4 id="h_01JPQJPA7DW18QPXGW5HWN61FF" class="wysiwyg-text-align-center">
@@ -489,9 +489,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767074415127"
-    width="624"
-    height="444"
+    src="https://support.discord.com/hc/article_attachments/33835474979991"
+    width="852"
+    height="627"
   />
 </p>
 <h4 id="h_01JPQJRWKZW16ZR8WQCSAVHFQZ" class="wysiwyg-text-align-center">
@@ -556,9 +556,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30767021301783"
-      width="624"
-      height="449"
+      src="https://support.discord.com/hc/article_attachments/33835474980375"
+      width="835"
+      height="614"
   /></span>
 </p>
 <h4 id="h_01JPQK19FYKK00QX3Z27TW4W3F" class="wysiwyg-text-align-center">
@@ -575,9 +575,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30767021304983"
-      width="624"
-      height="424"
+      src="https://support.discord.com/hc/article_attachments/33835450363799"
+      width="842"
+      height="619"
   /></span>
 </p>
 <h4 id="h_01JPQK2PXY2VFQ75YTEBHDEWG2" class="wysiwyg-text-align-center">
@@ -593,9 +593,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30767021307031"
-    width="628"
-    height="521"
+    src="https://support.discord.com/hc/article_attachments/33835450364183"
+    width="818"
+    height="602"
   />
 </p>
 <h4 id="h_01JPQK3GX7S5YSFQVT761VZM63" class="wysiwyg-text-align-center">

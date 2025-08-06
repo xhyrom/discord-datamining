@@ -3,36 +3,75 @@
   can personalize everything from your avatar and banner to various profile
   elements to create a unique identity.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01JPQMQ4G923BPTQNFBM7DETJV"
-      >How to Navigate to the Profiles Tab</a
-    ><br />
-    <ul>
-      <li>
-        <a href="#h_01H3MBQYKRKWTZNXSM1ZDKKQPG" target="_self">Desktop</a>
-      </li>
-      <li><a href="#h_01H3MBR26H5GM5N8B6ZQB44Y29" target="_self">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01JPQMW5K368G5FEM7NWNRMW01">How to Customize your Profile</a>
-    <ul>
-      <li><a href="#h_01JPQMW9V6R6PZ7PFR83CNT7N7">Avatar</a></li>
-      <li><a href="#h_01JPQN9NPYA0WYFGRDMEYPMF44">About Me</a></li>
-      <li><a href="#h_01JPQNFP3QYS72FPXX4HR6W1VZ">Pronouns</a></li>
-      <li><a href="#h_01JPQNH7CRX2642S6Q3ES5QZK1">Banner</a></li>
-      <li><a href="#h_01JPQN56ZKR5F3XJPFKPDRAWNT">Avatar Decorations</a></li>
-      <li><a href="#h_01JPQN73R7TWN2A9DD56E1TNEN">Profile Effects</a></li>
-      <li><a href="#h_01JPQNPP4YWK7G12JPC8PSHWZ3">Profile Theme</a></li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01JPQMQ4G923BPTQNFBM7DETJV"
+          >How to Navigate to the Profiles Tab</a
+        ></strong
+      ><br />
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01H3MBQYKRKWTZNXSM1ZDKKQPG" target="_self"
+              >Desktop</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01H3MBR26H5GM5N8B6ZQB44Y29" target="_self"
+              >Mobile</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JPQMW5K368G5FEM7NWNRMW01"
+          >How to Customize your Profile</a
+        ></strong
+      >
+      <ul>
+        <li>
+          <strong><a href="#h_01JPQMW9V6R6PZ7PFR83CNT7N7">Avatar</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K1EQK6F3684EESBMWYEQYXQY"
+              >Avatar Decorations</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K1EQMG3EN5R11CC5CQ1T0VTK">Profile Effects</a></strong
+          >
+        </li>
+        <li>
+          <strong><a href="#h_01JPQN9NPYA0WYFGRDMEYPMF44">About Me</a></strong>
+        </li>
+        <li>
+          <strong><a href="#h_01JPQNFP3QYS72FPXX4HR6W1VZ">Pronouns</a></strong>
+        </li>
+        <li>
+          <strong><a href="#h_01JPQNH7CRX2642S6Q3ES5QZK1">Banner</a></strong>
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01JPQNPP4YWK7G12JPC8PSHWZ3">Profile Theme</a></strong
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01JPQMQ4G923BPTQNFBM7DETJV">How to Navigate to the Profiles Tab</h1>
 <div class="book-box">
   Looking to personalize your account identity in each of your servers? You must
@@ -82,9 +121,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30768793630999"
-    width="542"
-    height="399"
+    src="https://support.discord.com/hc/article_attachments/33835272313111"
+    width="769"
+    height="566"
   />
 </p>
 <h4 id="h_01JPQMTZP8EKP3XBR9FHE95J5Z" class="wysiwyg-text-align-center">
@@ -98,8 +137,8 @@
   <span style="color: #4f545c"
     ><img
       src="https://support.discord.com/hc/article_attachments/30768793632919"
-      width="233"
-      height="486"
+      width="314"
+      height="654"
   /></span>
 </p>
 <h4 id="h_01JPQMVQN0QWTNHRH96BKVVWKN" class="wysiwyg-text-align-center">
@@ -140,9 +179,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30768793634583"
-    width="624"
-    height="435"
+    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcX-JSxJ9ykJG-bj9UEYvII47wFeWZgi4pvKj8qQAJoyimJ626eN8VFaol0Onswc8C_qU4ZfBQbmM1QJocZuXB6Px-nkM_fO6k4CJahbCVw195ta9MlWjXqUN7aTm_KtUb6twk?key=SNoEORi6jb5zWb1a1zCEmg"
+    width="759"
+    height="558"
   />
 </p>
 <h4 id="h_01JPQMZKP3G9E3X0TYW6HEGJRG" class="wysiwyg-text-align-center">
@@ -153,15 +192,103 @@
   select one from the <strong>Recent Avatars section</strong>.
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/30768874236055"
-      width="624"
-      height="435"
+      src="https://support.discord.com/hc/article_attachments/33835248167831"
+      width="733"
+      height="539"
     />
   </p>
   <h4 id="h_01JPQP3XE2TC8EDAK0VZM6M1R5" class="wysiwyg-text-align-center">
     <span style="color: #666666">Selecting a recent avatar on Desktop</span>
   </h4>
 </div>
+<h2 id="h_01K1EQK6F3684EESBMWYEQYXQY">Avatar Decorations</h2>
+<p>
+  Want to add more razzle-dazzle to your avatar? Apply a decoration to it!<br /><a
+    href="https://support.discord.com/hc/en-us/articles/13410113109911"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar decorations</a
+  >
+  are unique cosmetics designed to style your avatar with fun and charming looks
+  that you can wear for any occasion.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33835272314903"
+    width="747"
+    height="224"
+  />
+</p>
+<h4 id="h_01K1EQK6F330TDAWTJZFEPFRPT" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Shop Banner in Profiles on Desktop</span>
+</h4>
+<p>
+  Purchased decorations are yours to keep and get added to your collection - you
+  can find them in your <strong>Profiles</strong> tab &gt;
+  <strong>Change Decoration</strong>.
+</p>
+<p>
+  Once you’ve decided on the decoration you’d like to use, apply it and save
+  your changes!
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33835272316567"
+    width="433"
+    height="399"
+  />
+</p>
+<h4 id="h_01K1EQK6F379ST7EKJFJD40EKN" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Select Apply to set your avatar decoration</span>
+</h4>
+<h2 id="h_01K1EQMG3EN5R11CC5CQ1T0VTK">Profile Effects</h2>
+<p>
+  <a
+    href="https://support.discord.com/hc/en-us/articles/17828465914263"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Profile effects</a
+  >
+  are snazzy animated effects that play on your profile when someone views your
+  profile, letting you level up your look and wow your profile admirers. 
+</p>
+<p>
+  After heading to your <strong>Profiles </strong>tab, tap on
+  <strong>Change Effect</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33835248170903"
+    width="731"
+    height="538"
+  />
+</p>
+<h4 id="h_01K1EQMZJXM22SA38D8BF39WZ7" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Change Effect in Profiles</span>
+</h4>
+<p>
+  Like avatar decorations, purchased profile effects are yours to keep and get
+  added to your collection - you can find them in your
+  <strong>Profiles</strong> tab &gt; <strong>Change Effect</strong>. From there,
+  you can apply your owned profile effects or access the Shop to purchase
+  additional effects. Learn more about profile effects
+  <a
+    href="https://support.discord.com/hc/en-us/articles/17828465914263"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/33835248172055"
+    width="392"
+    height="480"
+  />
+</p>
+<h4 id="h_01K1EQP6RJF16PSJ71E5427075" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Select Apply to set your profile effect</span>
+</h4>
 <h2 id="h_01JPQP6BJ39T32PXXYQKMZ7DF1">About Me</h2>
 <p>
   You can share a little about yourself in your profile card in the About Me
@@ -205,18 +332,20 @@
 <h4 id="h_01JPQNEK2Z0WS4Y34XCR27GQAC" class="wysiwyg-text-align-center">
   <span style="color: #666666">About Me in Profiles</span>
 </h4>
-<p class="wysiwyg-text-align-left">
+<p>
   While you fill out your About Me, you can see a preview of what it’ll look
-  like. Once you’re finished, just tap on <strong>Save</strong> to save changes.
+  like by selecting <strong>View Full Profile </strong>in the
+  <strong>Profile</strong> <strong>Preview</strong>. Once you’re finished, press
+  <strong>Save</strong> to save changes.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/30768793652887"
-    width="304"
-    height="360"
+    src="https://support.discord.com/hc/article_attachments/33835272319511"
+    width="799"
+    height="588"
   />
 </p>
-<h4 id="h_01JPQNF4ZPDJ2EMMVQZKX4D6R4">
+<h4 id="h_01K1EQR1PQ01XD57FD32VBRNMH" class="wysiwyg-text-align-center">
   <span style="color: #666666">Example of About Me in a profile</span>
 </h4>
 <h2 id="h_01JPQNFP3QYS72FPXX4HR6W1VZ" class="wysiwyg-text-align-left">
@@ -308,94 +437,6 @@
     >Example of Edit Image window for Profile Banner</span
   >
 </h4>
-<h2 id="h_01JPQN56ZKR5F3XJPFKPDRAWNT">Avatar Decorations</h2>
-<p>
-  Want to add more razzle-dazzle to your avatar? Apply a decoration to it!<br /><a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar decorations</a
-  >
-  are unique cosmetics designed to style your avatar with fun and charming looks
-  that you can wear for any occasion.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/30768770994967"
-    width="624"
-    height="188"
-  />
-</p>
-<h4 id="h_01JPQN5WXGA1TBENQS35WTRHD9" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Shop Banner in Profiles on Desktop</span>
-</h4>
-<p>
-  Purchased decorations are yours to keep and get added to your collection - you
-  can find them in your <strong>Profiles</strong> tab &gt;
-  <strong>Change Decoration</strong>.
-</p>
-<p>
-  Once you’ve decided on the decoration you’d like to use, apply it and save
-  your changes!
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/30768770999575"
-    width="411"
-    height="380"
-  />
-</p>
-<h4 id="h_01JPQN6XJ7QZ77KN0DXAKJ90MQ" class="wysiwyg-text-align-center">
-  Select Apply to set your avatar decoration
-</h4>
-<h2 id="h_01JPQN73R7TWN2A9DD56E1TNEN">Profile Effects</h2>
-<p>
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17828465914263"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Profile effects</a
-  >
-  are snazzy animated effects that play on your profile when someone views your
-  profile, letting you level up your look and wow your profile admirers. 
-</p>
-<p>
-  After heading to your <strong>Profiles </strong>tab, tap on
-  <strong>Change Effect</strong>.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/30768771001879"
-    width="558"
-    height="455"
-  />
-</p>
-<h4 id="h_01JPQN829484J7FKPR0Z7K7663" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Change Effect in Profiles</span>
-</h4>
-<p>
-  Like avatar decorations, purchased profile effects are yours to keep and get
-  added to your collection - you can find them in your
-  <strong>Profiles</strong> tab &gt; <strong>Change Effect</strong>. From there,
-  you can apply your owned profile effects or access the Shop to purchase
-  additional effects. Learn more about profile effects
-  <a
-    href="https://support.discord.com/hc/en-us/articles/17828465914263"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
-  >.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/30768793674903"
-    width="416"
-    height="510"
-  />
-</p>
-<h4 id="h_01JPQN8YTB58EVJ4S18YT0BG95" class="wysiwyg-text-align-center">
-  <span style="color: #666666">Select Apply to set your profile effect</span>
-</h4>
 <h2 id="h_01JPQNPP4YWK7G12JPC8PSHWZ3">Profile Theme</h2>
 <div class="info-box">This feature is only available to Nitro subscribers.</div>
 <p>
@@ -405,9 +446,9 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #4f545c"
     ><img
-      src="https://support.discord.com/hc/article_attachments/30768793677335"
-      width="624"
-      height="444"
+      src="https://support.discord.com/hc/article_attachments/33835248172951"
+      width="791"
+      height="582"
   /></span>
 </p>
 <h4 id="h_01JPQNRVMGPK5QZ2P25W58DMCY" class="wysiwyg-text-align-center">
