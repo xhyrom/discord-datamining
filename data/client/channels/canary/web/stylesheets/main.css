@@ -37055,21 +37055,6 @@ body .headerAnimation_b54a5b {
 .viewFullBio_f5f93a {
   margin-top: 8px;
 }
-.viewFullBioColor_f5f93a {
-  color: var(--interactive-normal);
-}
-.viewFullBioColor_f5f93a:focus-visible,
-.viewFullBioColor_f5f93a:hover {
-  color: var(--interactive-hover);
-  text-decoration: underline;
-}
-.viewFullBioColor_f5f93a:active {
-  color: var(--interactive-active);
-  text-decoration: underline;
-}
-.viewFullBioDisabled_f5f93a {
-  opacity: 0.5;
-}
 .descriptionClamp_f5f93a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -87758,4 +87743,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0a46269db7b9e81f.css.map*/
+/*# sourceMappingURL=12633.5103021192b40f56.css.map*/
