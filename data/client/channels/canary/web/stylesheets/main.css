@@ -37947,61 +37947,6 @@ div.modalOverrideBody__34eac {
 .buttonWrapper__24af7:hover {
   color: var(--interactive-active);
 }
-.container__5a2d9 {
-  align-content: center;
-  align-items: center;
-  background-color: var(--brand-500);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  max-width: 280px;
-  padding: 16px;
-  position: relative;
-  text-align: center;
-}
-.body__5a2d9 {
-  margin-top: 8px;
-}
-.pointer__5a2d9 {
-  border: 10px solid transparent;
-  border-top: 10px solid var(--brand-500);
-  height: 0;
-  left: 50%;
-  margin-left: -10px;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  width: 0;
-}
-.text__5a2d9 {
-  color: #fff;
-  padding-top: 4px;
-}
-.coachmark__5a2d9 {
-  margin-top: -78px;
-  width: 170px;
-}
-.button__5a2d9 {
-  margin-top: 16px;
-  width: 100%;
-}
-.closeButton__5a2d9 {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: var(--radius-round);
-  cursor: pointer;
-  display: flex;
-  height: 25px;
-  justify-content: center;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 25px;
-}
-.closeIcon__5a2d9 {
-  color: var(--white-500);
-  padding: 5px;
-}
 .container_c0c49a,
 .iconContainer_c0c49a {
   display: flex;
@@ -42794,30 +42739,6 @@ img.thumbnail__0f2e8 {
   align-items: center;
   display: flex;
   gap: 8px;
-}
-.button__43a4b {
-  height: 24px;
-  min-height: 24px;
-  padding: 2px 8px;
-}
-.custom-user-profile-theme .color__43a4b {
-  background: var(--profile-gradient-button-color);
-  color: var(--white-500);
-  transition: opacity 0.2s ease-in-out;
-}
-.custom-user-profile-theme .color__43a4b:hover {
-  background: color-mix(
-    in srgb,
-    var(--profile-gradient-button-color) 80%,
-    transparent
-  );
-}
-.custom-user-profile-theme .color__43a4b:active {
-  background: color-mix(
-    in srgb,
-    var(--profile-gradient-button-color) 90%,
-    transparent
-  );
 }
 .gameIcon__43a4b {
   vertical-align: bottom;
@@ -68064,7 +67985,7 @@ html.disable-forced-colors * {
   display: flex;
   height: 32px;
   margin: 0 1px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   position: relative;
   transition: border-color 0.15s ease;
 }
@@ -68114,6 +68035,14 @@ html.disable-forced-colors * {
   align-items: center;
   display: flex;
   gap: 8px;
+}
+.hexColorPreview__247cf {
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  flex-shrink: 0;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
 }
 .colorPreview__247cf {
   border: 1px solid var(--background-base-lowest);
@@ -87743,4 +87672,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.5103021192b40f56.css.map*/
+/*# sourceMappingURL=12633.474f011a99547cc3.css.map*/
