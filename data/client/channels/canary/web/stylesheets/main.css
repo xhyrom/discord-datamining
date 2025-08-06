@@ -20190,6 +20190,7 @@ img.inlineAsset__9c640 {
 }
 .container_dfb989 {
   display: inline-flex;
+  perspective: 1px;
 }
 .forceAnimate_dfb989 .container_dfb989.solid_dfb989,
 .showEffect_dfb989.solid_dfb989 {
@@ -20204,7 +20205,7 @@ img.inlineAsset__9c640 {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  background-size: 200% auto;
+  background-size: 100% auto;
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: 0;
@@ -20236,6 +20237,7 @@ img.inlineAsset__9c640 {
   background-size: 200% 200%;
   content: attr(data-username-with-effects);
   left: 0;
+  perspective: 1px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -87799,4 +87801,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c634543af20185b3.css.map*/
+/*# sourceMappingURL=12633.debc6c30658a83e2.css.map*/
