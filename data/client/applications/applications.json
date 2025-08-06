@@ -857,21 +857,21 @@
           "label_type": 1,
           "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
-          "release_phase": "global_launch",
+          "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "android": {
           "label_type": 1,
           "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
-          "release_phase": "global_launch",
+          "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         },
         "ios": {
           "label_type": 1,
           "label_from": null,
           "label_until": "2024-09-20T10:00:00+00:00",
-          "release_phase": "global_launch",
+          "release_phase": "in_development",
           "omit_badge_from_surfaces": []
         }
       },
@@ -1034,8 +1034,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -1043,8 +1043,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "8"
         }
@@ -2212,7 +2212,7 @@
           "label_type": 0,
           "label_from": null,
           "label_until": null,
-          "release_phase": "soft_launch_multi_geo",
+          "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
         },
         "android": {
@@ -2722,7 +2722,7 @@
           "label_type": 0,
           "label_from": null,
           "label_until": null,
-          "release_phase": "soft_launch_multi_geo",
+          "release_phase": "employee_release",
           "omit_badge_from_surfaces": []
         },
         "android": {
@@ -3282,6 +3282,64 @@
     ]
   },
   {
+    "id": "1344176506041139230",
+    "name": "Touch Grass",
+    "icon": "5a69d2a2dc36a0c6e295eb559516f075",
+    "description": "Are you feeling it?",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "1344176506041139230",
+      "username": "Clicker Game",
+      "global_name": null,
+      "avatar": "5a69d2a2dc36a0c6e295eb559516f075",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0604",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "install_params": {
+      "scopes": [
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      },
+      "1": {
+        "oauth2_install_params": {
+          "scopes": [
+            "applications.commands"
+          ],
+          "permissions": "0"
+        }
+      }
+    },
+    "verify_key": "17d2a4e1236a69264f41403e7baa5f9382a04bd3d8a200ca84fe46a41d1252be",
+    "flags": 0
+  },
+  {
     "id": "426537812993638400",
     "name": "Bloxlink",
     "icon": "746124a5a40305b92d6dc4e983fd1de2",
@@ -3626,14 +3684,20 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
-      },
-      {
         "id": "1389986893399199907",
         "sku": "1389986893399199907",
         "distributor": "nvidia_gdn_app"
+      },
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
+      }
+    ],
+    "linked_games": [
+      {
+        "id": "1402418703554842694",
+        "type": 1
       }
     ],
     "overlay": true,
@@ -3701,6 +3765,12 @@
       "banner_color": null,
       "accent_color": null
     },
+    "linked_games": [
+      {
+        "id": "1402418701516668981",
+        "type": 1
+      }
+    ],
     "hook": true,
     "executables": [
       {
@@ -3747,20 +3817,20 @@
     "icon": "2dd7882b887306ab5afad03452869ad8",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2767030",
-        "sku": "2767030",
-        "distributor": "steam"
-      },
-      {
         "id": "294041",
         "sku": "294041",
         "distributor": "igdb"
+      },
+      {
+        "id": "2767030",
+        "sku": "2767030",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -3788,12 +3858,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "marvelrivals/marvelrivals_launcher.exe",
+        "name": "win64/marvel-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/marvel-win64-shipping.exe",
+        "name": "marvelrivals/marvelrivals_launcher.exe",
         "is_launcher": false
       }
     ],
@@ -3812,7 +3882,7 @@
     "icon": "fc92f820c44e72085dc6205e5e746850",
     "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -3838,7 +3908,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_retail_/wow.exe",
+        "name": "_retail_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -3847,8 +3922,13 @@
         "is_launcher": false
       },
       {
+        "os": "darwin",
+        "name": "world of warcraft.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
-        "name": "_retail_/wow-64.exe",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
@@ -3859,16 +3939,6 @@
       {
         "os": "win32",
         "name": "_ptr_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_ptr_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "world of warcraft.app",
         "is_launcher": false
       }
     ],
@@ -3885,7 +3955,7 @@
     "icon": "fc92f820c44e72085dc6205e5e746850",
     "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -3922,7 +3992,7 @@
     "icon": "e43cf060ad521e53fa0154b9712617e5",
     "description": "Armies of chaotic demons and corrupted beings are preparing a foretold invasion of the world of Azeroth in the third installment of the long-running medieval-fantasy series.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -3939,23 +4009,23 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "war3.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "warcraft iii.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warcraft iii.exe",
+        "name": "war3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "wc3.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "warcraft iii.exe",
         "is_launcher": false
       },
       {
@@ -3977,7 +4047,7 @@
     "icon": "efc4c8eb5688c64647be477d7468d13d",
     "description": "StarCraft has been called the greatest real-time strategy game ever and it's certainly one of the most critically acclaimed. StarCraft features three powerful, yet balanced races: the Terrans, the Zerg, and the Protoss. You play as each race fights to the death for the fate of the universe.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4014,7 +4084,7 @@
     "icon": "ba12a43bee663d2a3b06a583bc80f4bf",
     "description": "Legacy of the Void is the third and final part of the StarCraft II trilogy, coming in the form of a standalone game. It follows the blueprint of the other two parts of StarCraft II but this time focuses on the Protoss and the mysterious Xel'Naga.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4040,7 +4110,7 @@
       },
       {
         "os": "win32",
-        "name": "sc2_x64.exe",
+        "name": "starcraft ii.exe",
         "is_launcher": false
       },
       {
@@ -4050,7 +4120,7 @@
       },
       {
         "os": "win32",
-        "name": "starcraft ii.exe",
+        "name": "sc2_x64.exe",
         "is_launcher": false
       }
     ],
@@ -4067,21 +4137,21 @@
     "icon": "d20f9f39f2eec584dcdbc7b206786124",
     "description": "Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "125174",
-        "sku": "125174",
-        "distributor": "igdb"
-      },
-      {
         "id": "2357570",
         "sku": "2357570",
         "distributor": "steam"
+      },
+      {
+        "id": "125174",
+        "sku": "125174",
+        "distributor": "igdb"
       },
       {
         "id": "Pro",
@@ -4112,7 +4182,7 @@
     "icon": "38a7fa1313f656cfc7d300813934448e",
     "description": "The sequel to Blizzard's popular action-RPG features a larger and more varied world, new playable classes, and expanded skill trees. Even moreso than its predecessor, Diablo II would provide a blueprint followed by many later RPGs and action games.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4145,20 +4215,20 @@
     "icon": "ea12a992732b0b6d521b109b88e60b9b",
     "description": "Diablo III returns to the world of Sanctuary twenty years after the events of Diablo II with a new generation of heroes that must defeat the demonic threat from Hell.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "3ceef15c08000c6c0272dc22a29616cb",
     "third_party_skus": [
       {
-        "id": "D3",
-        "sku": "D3",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "D3",
+        "sku": "D3",
         "distributor": "battlenet"
       }
     ],
@@ -4175,13 +4245,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "diablo iii.app",
+        "os": "win32",
+        "name": "diablo iii.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "diablo iii.exe",
+        "os": "darwin",
+        "name": "diablo iii.app",
         "is_launcher": false
       }
     ],
@@ -4198,20 +4268,20 @@
     "icon": "3b8d5467c617dfd06b4d9e5eee5d52ba",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125165",
-        "sku": "125165",
-        "distributor": "igdb"
-      },
-      {
         "id": "2344520",
         "sku": "2344520",
         "distributor": "steam"
+      },
+      {
+        "id": "125165",
+        "sku": "125165",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -4263,6 +4333,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "linked_games": [
+      {
+        "id": "1402418696126992445",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -4272,12 +4348,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -4287,18 +4373,8 @@
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -4333,7 +4409,7 @@
     "icon": "e55fc8259df1548328f977d302779ab7",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4367,6 +4443,12 @@
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
+    "linked_games": [
+      {
+        "id": "1402418693958275202",
+        "type": 1
+      }
+    ],
     "hook": true,
     "executables": [
       {
@@ -4388,7 +4470,7 @@
     "icon": "f2b60e350a2097289b3b0b877495e55f",
     "description": "Roblox is a free Massive Multiplayer Online Game, where you play in user-created worlds with blocks and physics.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4401,13 +4483,13 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       },
       {
@@ -4429,7 +4511,7 @@
     "icon": "e55fc8259df1548328f977d302779ab7",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4464,6 +4546,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "linked_games": [
+      {
+        "id": "1402418696126992445",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -4472,13 +4560,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -4488,8 +4571,8 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4497,8 +4580,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
@@ -4526,6 +4614,12 @@
         "distributor": "microsoft"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418491272986635",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Minecraft Launcher",
@@ -4547,7 +4641,7 @@
       },
       {
         "os": "win32",
-        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "name": "minecraft.windows.exe",
         "is_launcher": false
       },
       {
@@ -4557,7 +4651,7 @@
       },
       {
         "os": "win32",
-        "name": "minecraft.windows.exe",
+        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
         "is_launcher": false
       }
     ],
@@ -4574,7 +4668,7 @@
     "icon": "558f5a26ecb3b17c3dea3d15c1df537a",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4637,14 +4731,20 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "1389986893399199907",
-        "sku": "1389986893399199907",
-        "distributor": "nvidia_gdn_app"
-      },
-      {
         "id": "Fortnite",
         "sku": "Fortnite",
         "distributor": "epic"
+      },
+      {
+        "id": "1389986893399199907",
+        "sku": "1389986893399199907",
+        "distributor": "nvidia_gdn_app"
+      }
+    ],
+    "linked_games": [
+      {
+        "id": "1402418703554842694",
+        "type": 1
       }
     ],
     "overlay": true,
@@ -4693,11 +4793,6 @@
     "primary_sku_id": "491748506516717599",
     "third_party_skus": [
       {
-        "id": "271590",
-        "sku": "271590",
-        "distributor": "steam"
-      },
-      {
         "id": "3240220",
         "sku": "3240220",
         "distributor": "steam"
@@ -4706,6 +4801,17 @@
         "id": "491748506516717599",
         "sku": "491748506516717599",
         "distributor": "discord"
+      },
+      {
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
+      }
+    ],
+    "linked_games": [
+      {
+        "id": "1402418714716143646",
+        "type": 1
       }
     ],
     "overlay": true,
@@ -4719,32 +4825,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "gta5.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/gta5_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "installers/social-club-setup.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
+        "name": "grand theft auto v/gta5.exe",
         "is_launcher": false
       },
       {
@@ -4754,7 +4835,32 @@
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5.exe",
+        "name": "subprocess/fivem_gtaprocess.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "installers/social-club-setup.exe",
         "is_launcher": false
       }
     ],
@@ -4771,12 +4877,17 @@
     "icon": "d20f9f39f2eec584dcdbc7b206786124",
     "description": "Overwatch 2 is a free-to-play, team-based action game set in the optimistic future, where every match is the ultimate 5v5 battlefield brawl.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
+      {
+        "id": "2357570",
+        "sku": "2357570",
+        "distributor": "steam"
+      },
       {
         "id": "125174",
         "sku": "125174",
@@ -4786,11 +4897,6 @@
         "id": "Pro",
         "sku": "Pro",
         "distributor": "battlenet"
-      },
-      {
-        "id": "2357570",
-        "sku": "2357570",
-        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -4816,7 +4922,7 @@
     "icon": "6b4b3fa4c83555d3008de69d33a60588",
     "description": "The official free-to-play sequel to the Warcraft III custom scenario that originally popularized the Multiplayer Online Battle Arena sub-genre.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4836,6 +4942,11 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
+        "os": "win32",
+        "name": "dota2.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "osx64/dota2.app",
         "is_launcher": false
@@ -4843,11 +4954,6 @@
       {
         "os": "darwin",
         "name": "dota_osx.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dota2.exe",
         "is_launcher": false
       }
     ],
@@ -4864,7 +4970,7 @@
     "icon": "a74899a5190c48a3e6ce9f8d2eaff348",
     "description": "The sequel to Supersonic Acrobatic Rocket-Powered Battle-Cars, Rocket League is the second vehicular sports-action game developed by Psyonix.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4885,12 +4991,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       }
     ],
@@ -4936,6 +5042,12 @@
       "banner_color": null,
       "accent_color": null
     },
+    "linked_games": [
+      {
+        "id": "1402418487745581248",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Call of Duty®"
@@ -4948,12 +5060,12 @@
       },
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
+        "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "mp23/mp23-cod.exe",
+        "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -4984,6 +5096,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418717781921935",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "overlay_compatibility_hook": true,
     "hook": true,
@@ -4993,6 +5111,11 @@
     ],
     "guild_id": "207018395139309569",
     "executables": [
+      {
+        "os": "win32",
+        "name": "win64/tslgame.exe",
+        "is_launcher": false
+      },
       {
         "os": "win32",
         "name": "tslgame_be.exe",
@@ -5005,17 +5128,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
+        "name": "win64/tslgame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/tslgame_be.exe",
         "is_launcher": false
       }
     ],
@@ -5032,7 +5150,7 @@
     "icon": "7564e6f23704870d70480f172f127677",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5066,6 +5184,11 @@
       },
       {
         "os": "win32",
+        "name": "r5apex_dx12.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "apex/r5apex_dx12.exe",
         "is_launcher": false
       }
@@ -5083,7 +5206,7 @@
     "icon": "eb0e25b739e4fa38c1671a3d1edcd1e0",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5122,6 +5245,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418436809953330",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -5147,7 +5276,7 @@
     "icon": "554af7ef210877b5f04fd1b727a3746e",
     "description": "A first-person tactical shooter developed by Ubisoft Montreal Studios. In this installment of the Rainbow Six series, some players are focused on assault where as others are defense-oriented.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5175,6 +5304,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "rainbowsix_be.exe",
         "is_launcher": false
       },
@@ -5186,11 +5320,6 @@
       {
         "os": "win32",
         "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -5212,20 +5341,20 @@
     "icon": "43df7ad3101426c8ce449614ae47ebf1",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "204538",
-        "sku": "204538",
-        "distributor": "igdb"
-      },
-      {
         "id": "2139460",
         "sku": "2139460",
         "distributor": "steam"
+      },
+      {
+        "id": "204538",
+        "sku": "204538",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -5268,7 +5397,7 @@
     "icon": "175f4a2e3649615553d8085367b3f90f",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5319,7 +5448,7 @@
     "icon": "9a953e0b1e69c913af3d8354e855de41",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5370,21 +5499,21 @@
     "icon": "912bd1dd19dfd2ef3b0191985f942a40",
     "description": "The fourth installment of the main Sims franchise, revamping the series's customization features while improving the Sims' automations and emotions.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
-        "id": "1222670",
-        "sku": "1222670",
-        "distributor": "steam"
-      },
-      {
         "id": "3212",
         "sku": "3212",
         "distributor": "igdb"
+      },
+      {
+        "id": "1222670",
+        "sku": "1222670",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -5394,17 +5523,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "ts4_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "ts4.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4_dx9_x64.exe",
         "is_launcher": false
       },
       {
@@ -5426,7 +5555,7 @@
     "icon": "78c2bd08dfd07a44f872b04c27f78f41",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5501,6 +5630,12 @@
       "banner_color": null,
       "accent_color": null
     },
+    "linked_games": [
+      {
+        "id": "1402418103702524046",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Phasmophobia"
@@ -5527,7 +5662,7 @@
     "icon": "b23dfa191e3f3aa8142572110a99723f",
     "description": "War Thunder is a free-to-play air combat game set in the World War II and Korean War eras. Naval and land battles are planned additions.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5562,7 +5697,7 @@
     "icon": "3d6a6ddf065f232dc0d93af3050954ce",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5598,12 +5733,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -5635,6 +5770,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418594532298837",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "overlay_compatibility_hook": true,
     "hook": true,
@@ -5645,11 +5786,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rust.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
         "name": "rust/rustclient.exe",
         "is_launcher": false
       },
@@ -5657,6 +5793,11 @@
         "os": "win32",
         "name": "rustclient.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rust.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -5672,20 +5813,20 @@
     "icon": "fc92f820c44e72085dc6205e5e746850",
     "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       }
     ],
@@ -5697,13 +5838,8 @@
     "guild_id": "113103747126747136",
     "executables": [
       {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_beta_/wow-64.exe",
+        "os": "darwin",
+        "name": "world of warcraft.app",
         "is_launcher": false
       },
       {
@@ -5713,12 +5849,17 @@
       },
       {
         "os": "win32",
-        "name": "_beta_/wow.exe",
+        "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow.exe",
+        "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
@@ -5727,8 +5868,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "world of warcraft.app",
+        "os": "win32",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -5745,7 +5886,7 @@
     "icon": "444d067889922e42b0af99b13e5d5c72",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5792,7 +5933,7 @@
     "icon": "6d49be66d5f2b88bdfc8cc7095abdbda",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5846,7 +5987,7 @@
     "icon": "64e7623c9af49f2e7dc7048df16b1013",
     "description": "Four survivors try to escape a variety of haunted locales, but a supernatural being that feeds on their hope sends a serial murderer to hunt them down in this asymmetrical multiplayer survival-horror game.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5867,6 +6008,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "deadbydaylight.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
         "name": "deadbydaylight-egs-shipping.exe",
         "is_launcher": false
       },
@@ -5874,11 +6020,6 @@
         "os": "win32",
         "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "deadbydaylight.exe",
-        "is_launcher": true
       },
       {
         "os": "win32",
@@ -5911,6 +6052,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418075726254102",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "executables": [
@@ -5933,7 +6080,7 @@
     "icon": "b4c347469b46dbd6793afd00e1a8e086",
     "description": "7 Days to Die is a voxel-based, open world sandbox survival game.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5955,13 +6102,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "7daystodie.exe",
-        "is_launcher": false
+        "name": "7daystodie_eac.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "7daystodie_eac.exe",
-        "is_launcher": true
+        "name": "7daystodie.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -5977,7 +6124,7 @@
     "icon": "1e84012079d438b46bbb3c3bf2a409bb",
     "description": "An open-ended country-life RPG in which players can manage their own farm and interact with the surrounding community.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6025,19 +6172,25 @@
     "cover_image": "b76db81b683527961ee1432c24a02774",
     "splash": "8029278a3fab0e30108bd335f26ab8a0",
     "primary_sku_id": "367827983903490050",
+    "linked_games": [
+      {
+        "id": "1402418239342120960",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "slug": "osu",
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -6054,7 +6207,7 @@
     "icon": "4abfab12a5b69e66d558d51b855f7fc8",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6074,12 +6227,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "fallguys_client.exe",
+        "name": "fallguys_client_game.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "fallguys_client_game.exe",
+        "name": "fallguys_client.exe",
         "is_launcher": false
       }
     ],
@@ -6096,7 +6249,7 @@
     "icon": "e0e6805da2c220ad3a4a2ee74b242261",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6143,7 +6296,7 @@
     "icon": "c7bb04bdddaa82cf045b02df7168365e",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6171,11 +6324,6 @@
     "executables": [
       {
         "os": "darwin",
-        "name": "wuthering waves.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
         "name": "wutheringwaves.app",
         "is_launcher": false
       },
@@ -6187,6 +6335,11 @@
       {
         "os": "win32",
         "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "wuthering waves.app",
         "is_launcher": false
       }
     ],
@@ -6218,6 +6371,12 @@
       }
     ],
     "deeplink_uri": "https://innersloth.com",
+    "linked_games": [
+      {
+        "id": "1402418440685486130",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -6226,12 +6385,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "among us - copy/among us.exe",
+        "name": "among us - kopie/among us.exe",
         "is_launcher": false
       },
       {
@@ -6241,7 +6395,12 @@
       },
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
+        "name": "among us - tou/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - copy/among us.exe",
         "is_launcher": false
       }
     ],
@@ -6270,22 +6429,18 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418344912752671",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Terraria"
     ],
     "guild_id": "251072485095636994",
     "executables": [
-      {
-        "os": "darwin",
-        "name": "terraria.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "terraria.exe",
-        "is_launcher": false
-      },
       {
         "os": "linux",
         "name": "terraria.bin.x86",
@@ -6294,6 +6449,16 @@
       {
         "os": "win32",
         "name": "terraria/terraria.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "terraria.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "terraria.app",
         "is_launcher": false
       }
     ],
@@ -6317,14 +6482,20 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "960090",
-        "sku": "960090",
-        "distributor": "steam"
-      },
-      {
         "id": "com.ninjakiwi.bloonstd6",
         "sku": "com.ninjakiwi.bloonstd6",
         "distributor": "google_play"
+      },
+      {
+        "id": "960090",
+        "sku": "960090",
+        "distributor": "steam"
+      }
+    ],
+    "linked_games": [
+      {
+        "id": "1402418571715543120",
+        "type": 1
       }
     ],
     "hook": true,
@@ -6334,17 +6505,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bloonstd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
@@ -6361,20 +6532,20 @@
     "icon": "c42edcc1bbc6272f4abf9724648ff602",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "208476",
-        "sku": "208476",
-        "distributor": "igdb"
-      },
-      {
         "id": "2074920",
         "sku": "2074920",
         "distributor": "steam"
+      },
+      {
+        "id": "208476",
+        "sku": "208476",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -6422,6 +6593,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "b125c7b6bd1ea27c2cef8b50b09c8c19",
+    "linked_games": [
+      {
+        "id": "1402418078813523999",
+        "type": 1
+      }
+    ],
     "hook": true,
     "guild_id": "502101454253981697",
     "executables": [
@@ -6444,7 +6621,7 @@
     "icon": "0a542ebb0544c5427f24deb3c67fcc99",
     "description": "In the sequel to Valve's cooperative zombie shooter, a new team of four ragtag survivors must work together to survive the apocalypse, facing new Infected threats as they fight their way across the Southern United States.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6463,12 +6640,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
-        "arguments": "-game left4dead2",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
@@ -6477,6 +6648,12 @@
       {
         "os": "win32",
         "name": "left 4 dead 2/left4dead2.exe",
+        "arguments": "-game left4dead2",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -6507,14 +6684,20 @@
     "splash": "b68121c4ece68d5ab313f797a5ca1107",
     "third_party_skus": [
       {
-        "id": "1174180",
-        "sku": "1174180",
-        "distributor": "steam"
-      },
-      {
         "id": "25076",
         "sku": "25076",
         "distributor": "igdb"
+      },
+      {
+        "id": "1174180",
+        "sku": "1174180",
+        "distributor": "steam"
+      }
+    ],
+    "linked_games": [
+      {
+        "id": "1402418648332898466",
+        "type": 1
       }
     ],
     "hook": true,
@@ -6538,7 +6721,7 @@
     "icon": "ade1008d735a1a134693b15ce02d79a8",
     "description": "Build stuff. Destroy stuff. Spawn so many dominoes that the server crashes with a \"no free edicts\" error. Such is life in Garry's Mod.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6559,6 +6742,12 @@
     "executables": [
       {
         "os": "win32",
+        "name": "garrysmod/hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
@@ -6572,12 +6761,6 @@
       {
         "os": "darwin",
         "name": ">hl2_osx",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -6605,7 +6788,7 @@
     "icon": "14793cc1393f167f816642690710d59c",
     "description": "Get better at aiming in first-person shooters.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6638,20 +6821,20 @@
     "icon": "3b8d5467c617dfd06b4d9e5eee5d52ba",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2344520",
-        "sku": "2344520",
-        "distributor": "steam"
-      },
-      {
         "id": "125165",
         "sku": "125165",
         "distributor": "igdb"
+      },
+      {
+        "id": "2344520",
+        "sku": "2344520",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -6698,7 +6881,7 @@
     "icon": "635721ef4940b790623761863e13afb0",
     "description": "Brawlhalla is an 8-player, 2D fighting game featuring warriors from throughout history.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6718,8 +6901,13 @@
     "guild_id": "118778495085182976",
     "executables": [
       {
+        "os": "darwin",
+        "name": "brawlhalla.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
-        "name": "brawlhalla/brawlhalla.exe",
+        "name": "brawlhalla.exe",
         "is_launcher": false
       },
       {
@@ -6729,12 +6917,7 @@
       },
       {
         "os": "win32",
-        "name": "brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "brawlhalla.app",
+        "name": "brawlhalla/brawlhalla.exe",
         "is_launcher": false
       }
     ],
@@ -6751,7 +6934,7 @@
     "icon": "58c222207d90c346aa4590a1d8de0a2f",
     "description": "The follow-up to Vice City takes the Grand Theft Auto series' free-roaming violence into 1992 and the fictional state of San Andreas as several criminal gangs wage war for control of the streets.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6760,12 +6943,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "gta_sa.exe",
+        "name": "gta-sa.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "gta-sa.exe",
+        "name": "gta_sa.exe",
         "is_launcher": false
       }
     ],
@@ -6782,7 +6965,7 @@
     "icon": "7cdf03d0914abf557c372f81182b4039",
     "description": "Car sim developed by BeamNG.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6798,12 +6981,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "beamng.drive.x64.exe",
+        "name": "beamng.drive.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "beamng.drive.exe",
+        "name": "beamng.drive.x64.exe",
         "is_launcher": false
       }
     ],
@@ -6820,7 +7003,7 @@
     "icon": "67f35d9429ee338d6f2824163c1b773d",
     "description": "Control a cube, and avoid the pointy obstacles by listening and jumping on the rhythm of the soundtrack.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6861,7 +7044,7 @@
     "icon": "6030c94c33dab692201194047f5e1a51",
     "description": "Isometric zombie survival, where death is inevitable and all you can hope for is to have a bullet left for your own head.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6876,12 +7059,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       }
     ],
@@ -6934,6 +7117,12 @@
       "banner_color": null,
       "accent_color": null
     },
+    "linked_games": [
+      {
+        "id": "1402418586244612216",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -6944,12 +7133,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "warframe.x64.exe",
+        "name": "warframe.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warframe.exe",
+        "name": "warframe.x64.exe",
         "is_launcher": false
       }
     ],
@@ -6968,7 +7157,7 @@
     "icon": null,
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7008,7 +7197,7 @@
     "icon": "1f162572c3123655e42c615b18074ff3",
     "description": "Path of Exile is a free-to-play PC online action Role-Playing Game set in a dark fantasy world.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7034,22 +7223,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "pathofexile/pathofexileegs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "path of exile/pathofexile.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexilesteam.exe",
+        "name": "path of exile/pathofexile_x64steam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64steam.exe",
+        "name": "poe/pathofexile.exe",
         "is_launcher": false
       },
       {
@@ -7064,12 +7248,17 @@
       },
       {
         "os": "win32",
-        "name": "poe/pathofexile.exe",
+        "name": "path of exile/pathofexile_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64.exe",
+        "name": "path of exile/pathofexilesteam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "pathofexile/pathofexileegs.exe",
         "is_launcher": false
       }
     ],
@@ -7086,7 +7275,7 @@
     "icon": "a87dfe64fa914769f1c6cf37daa0a3d1",
     "description": "A VR program that integrates body tracking to place users into virtual multiplayer environments. Within these worlds players can play games, chat, and create their own content.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7103,11 +7292,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/start_protected_game.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "vrchat/vrchat.exe",
         "is_launcher": false
       },
@@ -7115,6 +7299,11 @@
         "os": "win32",
         "name": "vrchat/launch.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -7134,6 +7323,12 @@
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
+    "linked_games": [
+      {
+        "id": "1402418082366095493",
+        "type": 1
+      }
+    ],
     "hook": true,
     "guild_id": "423075122610700288",
     "executables": [
@@ -7156,7 +7351,7 @@
     "icon": "b533b32f1ce5c65656110da926a2ab38",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7207,7 +7402,7 @@
     "icon": "dfc652a5b75879148779dc2865270f87",
     "description": "The long-awaited sequel to the class-based first-person shooter Team Fortress Classic sports a unique cartoony visual style, more accessible gameplay, and a very large amount of updates and new features since its original release.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7255,7 +7450,7 @@
     "icon": "e1042cfe3bb845f3c1f4fffd6227f4cf",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7274,12 +7469,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "x64/cyberpunk2077.exe",
+        "name": "cyberpunk2077.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cyberpunk2077.exe",
+        "name": "x64/cyberpunk2077.exe",
         "is_launcher": false
       }
     ],
@@ -7296,7 +7491,7 @@
     "icon": "f2039761488809de552d44ebc6739ffe",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7332,12 +7527,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "wingdk/palworld-wingdk-shipping.exe",
+        "name": "win64/palworld-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/palworld-win64-shipping.exe",
+        "name": "wingdk/palworld-wingdk-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -7356,7 +7551,7 @@
     "icon": "de22427dff57c8a597a62a47ef44e9ca",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7391,12 +7586,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "6.0.0/dotnet.exe",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       },
       {
@@ -7406,7 +7596,12 @@
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
+        "name": "6.0.0/dotnet.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       }
     ],
@@ -7425,7 +7620,7 @@
     "icon": "584d496943e719a759906563442d2a87",
     "description": "A Free-to-Play collectible card game by Blizzard Entertainment set in the Warcraft universe.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7465,21 +7660,21 @@
     "icon": "8fbbc6725f295195c8dd4f390ccd8611",
     "description": "Stormblood is the second expansion to Final Fantasy XIV",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "c99384f8b68bf43672bdb79d0a3833ea",
     "third_party_skus": [
       {
-        "id": "386",
-        "sku": "386",
-        "distributor": "igdb"
-      },
-      {
         "id": "39210",
         "sku": "39210",
         "distributor": "steam"
+      },
+      {
+        "id": "386",
+        "sku": "386",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -7491,7 +7686,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "ffxiv.exe",
+        "name": "ffxiv_dx11.exe",
         "is_launcher": false
       },
       {
@@ -7500,13 +7695,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "ffxiv_dx11.exe",
+        "os": "darwin",
+        "name": "final fantasy xiv.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "final fantasy xiv.app",
+        "os": "win32",
+        "name": "ffxiv.exe",
         "is_launcher": false
       }
     ],
@@ -7523,7 +7718,7 @@
     "icon": "0e176cf5cd3db5a923c22f076ea52b54",
     "description": "A racing sim by Italian developers Kunos Simulazioni, makers of netKar Pro.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7541,27 +7736,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "assettocorsa/content manager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "assettocorsa/jsgme.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "assettocorsa/acshowroom.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/acs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "server/acservermanager.exe",
+        "name": "editor/kseditor.exe",
         "is_launcher": false
       },
       {
@@ -7571,7 +7751,22 @@
       },
       {
         "os": "win32",
-        "name": "editor/kseditor.exe",
+        "name": "assettocorsa/content manager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "server/acservermanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       }
     ],
@@ -7588,7 +7783,7 @@
     "icon": "b6b64331fa9c16a269298f5ec80c0db6",
     "description": "Better known as the free-to-play \"APB: Reloaded\", APB is a MMO third-person shooter by the developers of Crackdown. Players choose between the hard-boiled law enforcers or the feared criminals as they try to stop the opposing faction's objectives.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7628,7 +7823,7 @@
     "icon": "70ba8e85259eb8a64e66cb4cedf27b0b",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7679,7 +7874,7 @@
     "icon": "424894ab221728be81a466100446b225",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7730,21 +7925,21 @@
     "icon": "79744dd00a9bd47c06fa1078e6c705fe",
     "description": "The full-fledged follow-up to Destiny, streamlining much of the previous game's mechanics while featuring larger worlds and new abilities.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "2d646423539ce9fa89f06a5c1ae8cfcc",
     "third_party_skus": [
       {
-        "id": "25657",
-        "sku": "25657",
-        "distributor": "igdb"
-      },
-      {
         "id": "1085660",
         "sku": "1085660",
         "distributor": "steam"
+      },
+      {
+        "id": "25657",
+        "sku": "25657",
+        "distributor": "igdb"
       }
     ],
     "hook": true,
@@ -7768,7 +7963,7 @@
     "icon": "469676e3ad37898c0289283c30c2c882",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7822,7 +8017,7 @@
     "icon": "0785baa7c08a9001079c329eb084b0ae",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7873,7 +8068,7 @@
     "icon": "a13ad44b102c5bb9ec91a72ec9c93099",
     "description": "A procedurally generated space exploration game from Hello Games, the creators of Joe Danger.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7906,7 +8101,7 @@
     "icon": "fc92f820c44e72085dc6205e5e746850",
     "description": "World of Warcraft is an MMORPG that takes place in Blizzard Entertainment's Warcraft universe; at its peak, it boasted a player base of over 12.5 million subscribers, making it the most popular MMO of all time.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7943,7 +8138,7 @@
     "icon": "03e10d5589047e80d75a27d09b6557d0",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -7994,7 +8189,7 @@
     "icon": "e59f973dc9129362bd86656a9feda266",
     "description": "The next entry in the series of WWII wargames from Paradox Interactive.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8013,12 +8208,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "hoi4.exe",
+        "name": "hearts of iron iv/hoi4.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hearts of iron iv/hoi4.exe",
+        "name": "hoi4.exe",
         "is_launcher": false
       }
     ],
@@ -8035,7 +8230,7 @@
     "icon": "bf95d5256f5257d2819c4dafc65f7c59",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8089,7 +8284,7 @@
     "icon": "cff0c274f3a4cf2c1280dab58268ce9d",
     "description": "Beginning as a mod for ArmA II, the online zombie survival shooter DayZ is now a standalone game. It is currently in alpha, but is available as an Early Access game on Steam.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8115,12 +8310,12 @@
       },
       {
         "os": "win32",
-        "name": "dayz_x64.exe",
+        "name": "dayz.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dayz.exe",
+        "name": "dayz_x64.exe",
         "is_launcher": false
       }
     ],
@@ -8137,7 +8332,7 @@
     "icon": "93ac3b8489a031b721995a99102c73f1",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8188,7 +8383,7 @@
     "icon": "f2eb28103bedcfe67bb4d2da6ff663b9",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8232,6 +8427,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402417933225033759",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Hunt: Showdown"
@@ -8262,7 +8463,7 @@
     "icon": "8a5c76eb325425be2084115dfcba88b3",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8313,7 +8514,7 @@
     "icon": "16fa1dfcd0282e4d13c97c928f163b7d",
     "description": "Take on the role of Gordon Freeman as he escapes the disastrous aftermath of an experiment gone wrong in the Black Mesa Research Facility.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8346,7 +8547,7 @@
     "icon": "dc4ae5b7f541c947e78926b8a55b8ce3",
     "description": "Set 40 years after the events of Black Ops II, the twelfth installment of the Call of Duty series brings advanced robotics and biotic augmentations to the clandestine operations of the Black Ops storyline.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8388,7 +8589,7 @@
     "icon": "1a139909cb5344dee95688dfedf728d8",
     "description": "An enhanced remake of the original Binding of Isaac that features expanded gameplay, pixel art visuals, and a variety of other new additions - including full controller support and local asymmetric co-op.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8407,13 +8608,13 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "isaacitempooleditor/itempooleditor.exe",
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
+        "os": "win32",
+        "name": "isaacitempooleditor/itempooleditor.exe",
         "is_launcher": false
       },
       {
@@ -8423,12 +8624,12 @@
       },
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "name": "roomeditor/roomeditor.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "roomeditor/roomeditor.exe",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
       }
     ],
@@ -8445,7 +8646,7 @@
     "icon": "57c496c32727e7a9ba0a74fe6c8a60be",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8496,7 +8697,7 @@
     "icon": "898cdf97668109199473d5cdc160fa98",
     "description": "The 6th mainline entry in the acclaimed 4X series.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8529,7 +8730,7 @@
     "icon": "d779a9d9e479c04f27d977bc6c88fe18",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8588,7 +8789,7 @@
     "icon": "6c903026d4fc97559ba48ecf9cc4dc04",
     "description": "The Fallout series continues in a post-apocalyptic Boston, Massachusetts.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8621,7 +8822,7 @@
     "icon": "8fd08a2e0440f80334ea403d2300a828",
     "description": "The fifth primary title in the Monster Hunter franchise features much larger maps, seamless transitions between zones in the map and four-player online co-op. It allows players from Japan and western countries to play together for the first time in the series.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8641,12 +8842,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       }
     ],
@@ -8663,7 +8864,7 @@
     "icon": "aa3b7a0ded0341cfbfd463d349e06add",
     "description": "Raft is an indie ocean navigation survival game.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8708,6 +8909,12 @@
         "distributor": "steam"
       }
     ],
+    "linked_games": [
+      {
+        "id": "1402418087793528862",
+        "type": 1
+      }
+    ],
     "hook": true,
     "aliases": [
       "Risk of Rain 2"
@@ -8738,7 +8945,7 @@
     "icon": "2df369a2ad4ceeb1fe50c89adc21f442",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8775,7 +8982,7 @@
     "icon": "d92a0da6cbe1561b98e9f9146600b219",
     "description": "The worlds first side-scrolling massively multiplayer online role-playing game",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8814,7 +9021,7 @@
     "icon": "897fcf5f83ff9b9b845847176cb3048c",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8868,7 +9075,7 @@
     "icon": "99016e1224cc0bb19604048f07bc937a",
     "description": "A multiplayer first-person survival game set in a world populated by dinosaurs.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8889,22 +9096,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "shootergame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/shootergame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "shootergame_be.exe",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -8921,7 +9128,7 @@
     "icon": "402bf37b1f6587aa2b82da6b20cdf36c",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8972,7 +9179,7 @@
     "icon": "0f5d25c5960c9e734e6adced21f4883f",
     "description": "Last Man Standing",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8991,12 +9198,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       }
     ],
@@ -9013,7 +9220,7 @@
     "icon": "3f6589f21e7b6948f57c491744cfdf42",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9060,7 +9267,7 @@
     "icon": null,
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9095,7 +9302,7 @@
     "icon": "d6d79f145bf860513c4a322247466f03",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9146,7 +9353,7 @@
     "icon": "19c00372c4c1402e68128a542062f2e2",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9183,7 +9390,7 @@
     "icon": "908f3f31004652e1971c6e8a4b9d7c30",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9234,7 +9441,7 @@
     "icon": "08e679bae42c738a66c1b2e0e546ecc0",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9290,6 +9497,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "linked_games": [
+      {
+        "id": "1402418696126992445",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -9298,13 +9511,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -9314,17 +9522,22 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
@@ -9365,6 +9578,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "linked_games": [
+      {
+        "id": "1402418696126992445",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -9373,13 +9592,8 @@
     "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
@@ -9389,17 +9603,22 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       }
     ],
@@ -9446,8 +9665,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147601472"
     },
@@ -9455,8 +9674,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2147601472"
         }
@@ -9486,20 +9705,20 @@
     "icon": "4bdf24b519467ca45422f7337d093ea1",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2507950",
-        "sku": "2507950",
-        "distributor": "steam"
-      },
-      {
         "id": "262186",
         "sku": "262186",
         "distributor": "igdb"
+      },
+      {
+        "id": "2507950",
+        "sku": "2507950",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -9527,7 +9746,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
       {
@@ -9537,12 +9761,7 @@
       },
       {
         "os": "win32",
-        "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -9566,7 +9785,7 @@
     "icon": "eb0e25b739e4fa38c1671a3d1edcd1e0",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9601,19 +9820,25 @@
     "cover_image": "b76db81b683527961ee1432c24a02774",
     "splash": "8029278a3fab0e30108bd335f26ab8a0",
     "primary_sku_id": "367827983903490050",
+    "linked_games": [
+      {
+        "id": "1402418239342120960",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "slug": "osu",
     "guild_id": "188630481301012481",
     "executables": [
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       }
     ],
@@ -9630,7 +9855,7 @@
     "icon": "f37dd58f6155799f3d8c9b38d9c5f90b",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9685,6 +9910,12 @@
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
+    "linked_games": [
+      {
+        "id": "1402418692922540144",
+        "type": 1
+      }
+    ],
     "hook": true,
     "storefront_available": false,
     "integration_types_config": {
@@ -9755,7 +9986,7 @@
     "icon": "f2b60e350a2097289b3b0b877495e55f",
     "description": "Roblox is a free Massive Multiplayer Online Game, where you play in user-created worlds with blocks and physics.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -9774,12 +10005,12 @@
       },
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       }
     ],
@@ -9819,6 +10050,12 @@
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "linked_games": [
+      {
+        "id": "1402418696126992445",
+        "type": 1
+      }
+    ],
     "overlay": true,
     "hook": true,
     "aliases": [
@@ -9832,11 +10069,6 @@
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
@@ -9847,13 +10079,18 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "lollauncher.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -9880,6 +10117,91 @@
       "0": {}
     },
     "verify_key": "e8bdc7615658d007cc4dc8c1600a1324e015397dd831cb6244330b77ced29d3a",
+    "flags": 0
+  },
+  {
+    "id": "234395307759108106",
+    "name": "Groovy",
+    "icon": "0e7adc5d634d957b7725021c067bfd87",
+    "description": "Groovy has ended its service. Learn more here: https://groovy.bot",
+    "summary": "",
+    "type": 1,
+    "is_monetized": false,
+    "is_verified": true,
+    "is_discoverable": false,
+    "bot": {
+      "id": "234395307759108106",
+      "username": "Groovy",
+      "global_name": null,
+      "avatar": "0e7adc5d634d957b7725021c067bfd87",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7254",
+      "display_name_styles": null,
+      "public_flags": 589824,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "guild_id": "267719227815886850",
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "install_params": {
+      "scopes": [
+        "bot",
+        "applications.commands"
+      ],
+      "permissions": "0"
+    },
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f0d4787ab4c56f94aa4a6215afc34868bbafcabe74e22213fefa8b52e35ec4d6",
+    "flags": 10502144,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "id": "512412940897484800",
+    "name": "Smile Bot",
+    "icon": "354d906af0c326210da63e53892fcd91",
+    "description": "A Community Success bot made by the folks at SMILERS!",
+    "summary": "",
+    "type": null,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "bot": {
+      "id": "512412940897484800",
+      "username": "SmileBot",
+      "global_name": null,
+      "avatar": "354d906af0c326210da63e53892fcd91",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6469",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d73a51e59c36e39ef46c1315953b07f7927d65baeccc17a3df7260a76950cd9c",
     "flags": 0
   },
   {
