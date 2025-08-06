@@ -57962,6 +57962,9 @@ html .progress__61462 {
 .row__19fd1:last-child {
   border-bottom: none;
 }
+.rowMana__19fd1 {
+  justify-content: space-between;
+}
 .iconContainer__19fd1 {
   display: flex;
   justify-content: center;
@@ -87241,4 +87244,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e7cf1ddfe0dba4f0.css.map*/
+/*# sourceMappingURL=12633.7f164a2e359a31ab.css.map*/
