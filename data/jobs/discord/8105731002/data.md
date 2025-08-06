@@ -2,7 +2,7 @@
 
 ## Manager, Sales - Mobile Gaming
 
-**Location:** San Francisco Bay Area or Los Angeles Area
+**Location:** San Francisco Bay Area or Greater Los Angeles Area
 
 **Id:** 8105731002 <br/>
 **Internal Job Id:** 6210765002 <br/>
@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8105731002](https://discord.com/jobs/8105731002)
 
-**Updated At:** Wed, 06 Aug 2025 17:41:44 GMT
+**Updated At:** Wed, 06 Aug 2025 19:14:32 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a dynamic Sales Manager for the Mobile Gaming vertical to join our growing sales team at Discord. This role is a people leadership position, responsible for leading a team of Account Executives and Account Managers while also driving strategic initiatives and revenue growth within Mobile Gaming advertisers.&amp;nbsp;
-As a Sales Manager, you will play a critical role in coaching and developing your team, developing and executing sales strategies, managing senior-level client relationships, and working cross-functionally to advocate for Mobile Gaming needs. You will also be active in the market, representing Discord at key industry events and working directly with clients to help them achieve their marketing goals using our ad solutions.This role is ideal for a highly motivated leader with a strong background in digital advertising, media sales, and account strategy who thrives in a fast-paced, zero-to-one environment. This role will report into the Director of Sales, Gaming.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a dynamic Sales Manager for the Mobile Gaming vertical to join our growing sales team at Discord. This role is a people leadership position, responsible for leading a team of Account Executives and Account Managers while also driving strategic initiatives and revenue growth within Mobile Gaming vertical.&amp;nbsp;
+As a Manager of Sales, you will play a critical role in coaching and developing your team, developing and executing sales strategies, managing senior-level client relationships, and working cross-functionally to advocate for Mobile Gaming needs. You will also be active in the market, representing Discord at key industry events and working directly with clients to help them achieve their marketing goals using our ad solutions.This role is ideal for a highly motivated leader with a strong background in digital advertising, media sales, and account strategy who thrives in a fast-paced, zero-to-one environment. This role will report into the Director of Sales, Gaming.
 What You'll Be Doing
 
 Lead, mentor, and develop a team of sales professionals (AEs and AMs) to achieve individual and team revenue goals; team size may grow based on business needs.
