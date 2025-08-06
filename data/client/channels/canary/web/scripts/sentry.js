@@ -6267,6 +6267,21 @@
           (r.CHAT_WALLPAPER_DOWNLOADED = "chat_wallpaper_downloaded"),
           (r.CHAT_WALLPAPER_PICKER_COACHMARK_NOT_SHOW_REASON =
             "chat_wallpaper_picker_coachmark_not_show_reason"),
+          (r.DISPLAY_NAME_STYLES_FROM_SETTINGS =
+            "display_name_styles_from_settings"),
+          (r.DISPLAY_NAME_STYLES_APPLIED = "display_name_styles_applied"),
+          (r.DISPLAY_NAME_STYLES_CLOSED = "display_name_styles_closed"),
+          (r.DISPLAY_NAME_STYLES_REMOVED = "display_name_styles_removed"),
+          (r.DISPLAY_NAME_STYLES_COLOR_SELECTED =
+            "display_name_styles_color_selected"),
+          (r.DISPLAY_NAME_STYLES_SURPRISE_ME =
+            "display_name_styles_surprise_me"),
+          (r.DISPLAY_NAME_STYLES_THEME_TOGGLE =
+            "display_name_styles_theme_toggle"),
+          (r.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE =
+            "display_name_styles_accessibility_toggle"),
+          (r.DISPLAY_NAME_STYLES_NITRO_CLICKED =
+            "display_name_styles_nitro_clicked"),
           (r.RING_TO_GUILD_VC_BANNER_SHOWN =
             "impression_ring_to_guild_vc_banner_shown"),
           (r.RING_TO_GUILD_VC_MENU_ITEM_SHOWN =
@@ -6912,7 +6927,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-da4b9e47e708bb869aa2ebada114875473e3f710",
+            release: "discord_web-f1cbbcb91be6339935450a5f4f6cd372e46a2c5f",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6978,8 +6993,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "427656"),
-            o.YA("builtAt", String("1754441297099"));
+            o.YA("buildNumber", "427677"),
+            o.YA("builtAt", String("1754443891935"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48378,4 +48393,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.53fa6efceba4dc95.js.map
+//# sourceMappingURL=sentry.071b6e429cba7440.js.map
