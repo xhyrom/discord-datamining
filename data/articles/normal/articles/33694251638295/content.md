@@ -70,7 +70,7 @@
         </tr>
         <tr>
           <td><span style="color: #2e3338">File Sharing Limit</span></td>
-          <td><span style="color: #2e3338">25MB</span></td>
+          <td><span style="color: #2e3338">10MB</span></td>
           <td><span style="color: #2e3338">50MB</span></td>
           <td><span style="color: #2e3338">500MB</span></td>
         </tr>
@@ -166,14 +166,6 @@
             <span style="color: #2e3338">Maximum User Notes Per Account</span>
           </td>
           <td><span style="color: #2e3338">1,500</span></td>
-          <td><span style="color: #2e3338">N/A</span></td>
-          <td><span style="color: #2e3338">N/A</span></td>
-        </tr>
-        <tr>
-          <td><span style="color: #2e3338">Max Connections</span></td>
-          <td>
-            <span style="color: #2e3338">25 (about to be bumped to 50)</span>
-          </td>
           <td><span style="color: #2e3338">N/A</span></td>
           <td><span style="color: #2e3338">N/A</span></td>
         </tr>
