@@ -58027,21 +58027,12 @@ html .progress__61462 {
   align-items: center;
   display: flex;
   flex-direction: row;
+  gap: var(--space-12);
   justify-content: center;
 }
-.acceptButton__477aa {
-  margin-left: 16px;
-  padding: 4px 8px;
-}
-.acceptText__477aa {
-  color: var(--green-500);
-}
-.declineButton__477aa {
-  margin-left: 8px;
-  padding: 3px 7px;
-}
-.declineText__477aa {
-  color: var(--white-500);
+.buttonGroup__477aa {
+  margin: var(--space-4) 0;
+  width: unset;
 }
 .blocked__477aa {
   align-items: center;
@@ -87808,4 +87799,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.83159fcd0ba4d2fe.css.map*/
+/*# sourceMappingURL=12633.c634543af20185b3.css.map*/
