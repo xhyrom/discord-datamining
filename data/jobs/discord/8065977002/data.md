@@ -2,7 +2,7 @@
 
 ## eDiscovery Lead
 
-**Location:** San Francisco Bay Area
+**Location:** San Francisco Bay Area Or Remote (Seattle, LA, NYC, or Washington DC)
 
 **Id:** 8065977002 <br/>
 **Internal Job Id:** 6193036002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8065977002](https://discord.com/jobs/8065977002)
 
-**Updated At:** Wed, 16 Jul 2025 18:16:51 GMT
+**Updated At:** Wed, 06 Aug 2025 16:52:09 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're seeking an experienced eDiscovery Lead to join our Legal team and lead our electronic discovery operations. This role will be responsible for managing all aspects of eDiscovery processes, from litigation holds through production, while ensuring compliance with legal requirements and optimizing efficiency across our legal matters. You will be working within the Litigation &amp;amp; Regulatory Compliance team, but you will often partner with our other Legal colleagues, Technical Program Management, Engineering, Data, Security, and other relevant functions. This is an individual contributor position reporting to the VP of Litigation &amp;amp; Regulatory Compliance.&amp;nbsp;

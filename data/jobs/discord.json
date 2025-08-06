@@ -684,7 +684,7 @@
       ],
       "internal_job_id": 6193036002,
       "location": {
-        "name": "San Francisco Bay Area"
+        "name": "San Francisco Bay Area Or Remote (Seattle, LA, NYC, or Washington DC)"
       },
       "metadata": [
         {
@@ -701,7 +701,7 @@
         }
       ],
       "id": 8065977002,
-      "updated_at": "2025-07-16T14:16:51-04:00",
+      "updated_at": "2025-08-06T12:52:09-04:00",
       "requisition_id": "R-100974",
       "title": "eDiscovery Lead",
       "company_name": "Discord",
