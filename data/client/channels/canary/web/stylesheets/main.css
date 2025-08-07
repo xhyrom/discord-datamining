@@ -20345,7 +20345,10 @@ img.inlineAsset__9c640 {
 .showEffect_dfb989 .neon_dfb989 {
   paint-order: stroke fill;
   -webkit-text-stroke-width: calc(1px + 0.04em);
-  -webkit-text-stroke-color: gray;
+  -webkit-text-stroke-color: hsl(
+    from var(--custom-display-name-styles-main-color) h calc(s * 1.2)
+      calc(l + 10)
+  );
   color: var(--white-500);
   margin-bottom: calc(-1px - 0.04em);
   margin-left: calc(-1px - 0.04em);
@@ -20353,24 +20356,6 @@ img.inlineAsset__9c640 {
   padding-left: calc(1px + 0.04em);
   position: relative;
   z-index: 0;
-}
-.forceAnimate_dfb989 .container_dfb989 .neon_dfb989:after,
-.showEffect_dfb989 .neon_dfb989:after {
-  content: attr(data-username-with-effects);
-  inset: 0;
-  bottom: calc(1px + 0.04em);
-  color: transparent;
-  left: calc(1px + 0.04em);
-  paint-order: stroke fill;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  -webkit-text-stroke-width: calc(1px + 0.04em);
-  -webkit-text-stroke-color: var(--custom-display-name-styles-main-color);
-  mix-blend-mode: color;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: var(--custom-display-name-styles-wrap);
 }
 .forceAnimate_dfb989 .container_dfb989 .neonGlow_dfb989,
 .showEffect_dfb989 .neonGlow_dfb989 {
@@ -20390,7 +20375,8 @@ img.inlineAsset__9c640 {
   background-size: 200% 200%;
   -webkit-text-fill-color: transparent;
   color: var(--custom-display-name-styles-main-color);
-  filter: blur(calc(2px + 0.12em));
+  filter: blur(calc(1px + 0.12em));
+  opacity: 0.8;
   -webkit-text-stroke-width: calc(1px + 0.04em);
   -webkit-text-stroke-color: transparent;
   perspective: 1px;
@@ -20415,12 +20401,13 @@ img.inlineAsset__9c640 {
   background: linear-gradient(
     180deg,
     var(--white-500) 0,
-    var(--custom-display-name-styles-light-2-color) 10%,
+    var(--white-500) 3%,
+    var(--custom-display-name-styles-light-2-color) 12%,
     var(--custom-display-name-styles-main-color) 25%,
-    var(--custom-display-name-styles-light-2-color) 45%,
-    var(--custom-display-name-styles-main-color) 55%,
+    var(--custom-display-name-styles-light-2-color) 50%,
     var(--white-500) 75%,
-    var(--custom-display-name-styles-light-2-color) 85%,
+    var(--white-500) 78%,
+    var(--custom-display-name-styles-light-2-color) 87%,
     var(--custom-display-name-styles-main-color) 100%
   );
   background-clip: text;
@@ -20470,10 +20457,10 @@ img.inlineAsset__9c640 {
     to bottom left,
     var(--custom-display-name-styles-light-1-color) 0,
     var(--custom-display-name-styles-light-1-color) 6%,
-    var(--custom-display-name-styles-main-color) 20%,
+    var(--custom-display-name-styles-light-2-color) 20%,
     var(--custom-display-name-styles-main-color) 50%,
     var(--custom-display-name-styles-light-1-color) 56%,
-    var(--custom-display-name-styles-main-color) 70%,
+    var(--custom-display-name-styles-light-2-color) 70%,
     var(--custom-display-name-styles-main-color) 100%
   );
   background-clip: text;
@@ -20501,7 +20488,7 @@ img.inlineAsset__9c640 {
 }
 .animated_dfb989 .neonGlow_dfb989,
 .forceAnimate_dfb989 .container_dfb989 .neonGlow_dfb989 {
-  animation: neon-glow-flicker-animation_dfb989 4s linear;
+  animation: neon-glow-flicker-animation_dfb989 1666ms linear;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -20553,30 +20540,37 @@ img.inlineAsset__9c640 {
     transform: translateZ(0);
   }
   18% {
+    perspective: 1px;
     transform: translate3d(0, -0.05em, 0);
   }
   35% {
+    perspective: 1px;
     transform: translate3d(0, 0.08em, 0);
   }
   50%,
   to {
+    perspective: 1px;
     transform: translateZ(0);
   }
 }
 @keyframes pop-animation-shadow_dfb989 {
   0% {
     background-position: 100% 0;
+    perspective: 1px;
     transform: translate3d(0, 0.08em, 0);
   }
   18% {
+    perspective: 1px;
     transform: translate3d(0, 0.13em, 0);
   }
   35% {
+    perspective: 1px;
     transform: translateZ(0);
   }
   50%,
   to {
     background-position: 0 100%;
+    perspective: 1px;
     transform: translate3d(0, 0.08em, 0);
   }
 }
@@ -20610,7 +20604,10 @@ img.inlineAsset__9c640 {
   16%,
   22%,
   28% {
-    color: var(--custom-display-name-styles-light-2-color);
+    color: hsl(
+      from var(--custom-display-name-styles-main-color) h
+        calc(min(1, s) * ((s * 1.1) + 10)) 85
+    );
   }
   51%,
   to {
@@ -36646,6 +36643,16 @@ body .headerAnimation_b54a5b {
 .density-compact .layout__20a53 {
   height: 38px;
 }
+.withDisplayNameStyles__20a53 {
+  overflow: visible;
+}
+.withDisplayNameStyles__20a53 .name__20a53 {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
 .nameplatePreview_fdeafc {
   align-items: center;
   border-radius: var(--radius-sm);
@@ -37209,6 +37216,9 @@ body .headerAnimation_b54a5b {
   justify-content: flex-start;
   overflow: hidden;
   white-space: nowrap;
+}
+.info_f4bc97.withDisplayNameStyles_f4bc97 {
+  overflow: visible;
 }
 .infoSpacing_f4bc97 {
   margin-left: 5px;
@@ -88005,4 +88015,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f61769c2a5321788.css.map*/
+/*# sourceMappingURL=12633.ecef35ebe198420f.css.map*/
