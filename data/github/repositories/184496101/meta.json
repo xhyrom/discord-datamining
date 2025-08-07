@@ -46,7 +46,7 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-  "default_branch": "v2.3.1",
+  "default_branch": "v2.6.0",
   "permissions": {
     "admin": false,
     "maintain": false,
