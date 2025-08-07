@@ -12986,7 +12986,7 @@ svg.radioIcon_c1e9c4 {
 }
 :where(.container__73454):before {
   background: linear-gradient(
-    270deg,
+    270deg in oklab,
     var(--custom-gradient-color-end) 0,
     var(--custom-gradient-color-start) 100%
   );
@@ -17918,6 +17918,8 @@ svg.radioIcon_c1e9c4 {
   position: relative;
   text-align: center;
   width: 240px;
+  --custom-popover-caret-gradient-color-start: transparent;
+  --custom-popover-caret-gradient-color-end: transparent;
 }
 .popover_d6f39b,
 .popoverGradientWrapper_d6f39b {
@@ -17926,6 +17928,12 @@ svg.radioIcon_c1e9c4 {
   box-shadow:
     inset 0 0 0 1px var(--border-subtle),
     var(--shadow-high);
+}
+.popoverGradientWrapper_d6f39b {
+  --custom-popover-caret-gradient-color-start: var(
+    --custom-gradient-color-start
+  );
+  --custom-popover-caret-gradient-color-end: var(--custom-gradient-color-end);
 }
 .popoverContentWithGradient_d6f39b {
   background: transparent;
@@ -18087,6 +18095,9 @@ svg.radioIcon_c1e9c4 {
 .caretIcon_d6f39b .caretFill_d6f39b {
   fill: var(--background-surface-high);
 }
+.caretIcon_d6f39b .caretGradient_d6f39b {
+  fill: var(--custom-popover-caret-gradient-color, transparent);
+}
 .caretIcon_d6f39b .caretStroke_d6f39b {
   stroke: var(--border-subtle);
   stroke-opacity: 1;
@@ -18098,6 +18109,7 @@ svg.radioIcon_c1e9c4 {
   --custom-caret-edge-offset-vertical: 22px;
   --custom-caret-horizontal-distance: 18px;
   --custom-caret-border-overlap: 1px;
+  color: transparent;
   pointer-events: none;
   position: absolute;
   transform-origin: center;
@@ -18111,6 +18123,11 @@ svg.radioIcon_c1e9c4 {
   transform: rotate(180deg);
 }
 .caret--left__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 25%,
+    transparent
+  );
   left: calc(var(--custom-caret-horizontal-distance) * -1);
   transform: rotate(90deg);
 }
@@ -18168,6 +18185,55 @@ svg.radioIcon_c1e9c4 {
     var(--custom-caret-offset-y) - var(--custom-caret-half-height)
   );
   top: 50%;
+}
+.caret--top__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 7%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--top__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 50%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--top__6ec79.caret--end__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 98%,
+    var(--custom-popover-caret-gradient-color-start)
+  );
+}
+.caret--right__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 98%,
+    transparent
+  );
+}
+.caret--right__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-end) 25%,
+    transparent
+  );
+}
+.caret--left__6ec79.caret--start__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 98%,
+    transparent
+  );
+}
+.caret--left__6ec79.caret--center__6ec79 {
+  --custom-popover-caret-gradient-color: color-mix(
+    in oklab,
+    var(--custom-popover-caret-gradient-color-start) 25%,
+    transparent
+  );
 }
 .media__9c640 {
   border-radius: var(--radius-md);
@@ -87821,4 +87887,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.5fbd21e318bcdeae.css.map*/
+/*# sourceMappingURL=12633.555c914d1b0c63f3.css.map*/
