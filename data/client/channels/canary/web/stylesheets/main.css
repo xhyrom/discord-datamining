@@ -18054,6 +18054,10 @@ svg.radioIcon_c1e9c4 {
   aspect-ratio: 16/9;
   width: 144px;
 }
+.asset--lg_d6f39b {
+  aspect-ratio: 16/9;
+  width: 160;
+}
 .asset--video_d6f39b {
   height: 135px;
   margin: 0 auto;
@@ -88015,4 +88019,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ecef35ebe198420f.css.map*/
+/*# sourceMappingURL=12633.eee8ca9d9196150e.css.map*/
