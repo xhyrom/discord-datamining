@@ -42750,11 +42750,14 @@ img.thumbnail__0f2e8 {
 .user-profile-modal-v2 .upsellButtonWrapper__5997d {
   flex: unset;
 }
-.upsellButton__5997d {
-  width: 100%;
+.upsellButtons__5997d .matchManaColors__5997d {
+  background: var(--control-background-secondary-default);
 }
-.upsellButton__5997d:disabled {
-  opacity: 0.5;
+.upsellButtons__5997d .matchManaColors__5997d:hover {
+  background: var(--control-background-secondary-hover);
+}
+.upsellButtons__5997d .matchManaColors__5997d:active {
+  background: var(--control-background-secondary-active);
 }
 .upsellRowContent__5997d {
   align-items: center;
@@ -42792,15 +42795,6 @@ img.thumbnail__0f2e8 {
   display: flex;
   gap: 8px;
 }
-.viewPremiumPerksButtonInner__5997d {
-  align-items: center;
-  display: flex;
-  gap: 4px;
-}
-.premiumIcon__5997d {
-  height: 20px;
-  margin-right: 4px;
-}
 .upsellCloseIcon__5997d {
   color: var(--interactive-normal);
   cursor: pointer;
@@ -42810,33 +42804,6 @@ img.thumbnail__0f2e8 {
 }
 .upsellCloseIcon__5997d:active {
   color: var(--interactive-active);
-}
-.custom-user-profile-theme .upsellButton__5997d {
-  color: var(--interactive-active);
-}
-.custom-user-profile-theme .upsellButton__5997d:disabled {
-  opacity: 0.5;
-}
-.theme-light.custom-user-profile-theme .upsellButton__5997d {
-  background: var(--opacity-white-72);
-}
-.theme-light.custom-user-profile-theme .upsellButton__5997d:hover {
-  background: var(--opacity-white-92);
-}
-.theme-light.custom-user-profile-theme .upsellButton__5997d:active {
-  background: var(--opacity-white-84);
-}
-.theme-light.custom-user-profile-theme .viewPremiumPerksButtonShine__5997d {
-  color: var(--opacity-black-4);
-}
-.theme-dark.custom-user-profile-theme .upsellButton__5997d {
-  background: var(--opacity-white-24);
-}
-.theme-dark.custom-user-profile-theme .upsellButton__5997d:hover {
-  background: var(--opacity-white-36);
-}
-.theme-dark.custom-user-profile-theme .upsellButton__5997d:active {
-  background: var(--opacity-white-32);
 }
 .container__43a4b {
   border-radius: var(--radius-sm);
@@ -87839,4 +87806,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1c01238cedd914e6.css.map*/
+/*# sourceMappingURL=12633.a31693cb6d4f6b93.css.map*/
