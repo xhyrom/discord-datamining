@@ -18,16 +18,18 @@
   <strong>Epic Bangalore Skin</strong>.<br /><strong>Who is Eligible: </strong
   >Available to players in the <strong>United</strong>
   <strong>States</strong> and <strong>Japan</strong> who have access to
-  <strong>Apex Legends</strong> and <strong>Discord</strong> on PC. Discord’s
-  premium services are restricted in some regions.<br /><strong
-    >Availability Period</strong
-  >: The <strong>Apex Legends Quest</strong> can be accepted on
-  <strong>PC</strong> from <strong>August 5, 2025</strong> until
+  <strong>Apex Legends</strong> and <strong>Discord</strong> on PC, PlayStation
+  4/5, and Xbox Series S/X. Discord’s premium services are restricted in some
+  regions.<br /><strong>Availability Period</strong>: The
+  <strong>Apex Legends Quest</strong> can be accepted on
+  <strong>PC, PlayStation 4/5, and Xbox Series S/X</strong> from
+  <strong>August 5, 2025</strong> until
   <strong>August 17, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
   requirements during this period and claim your reward by
   <strong>October 17, 2025 (12:00AM UTC)</strong>.<br /><strong
-    >Other Terms: Limit of one reward redemption per account.</strong
+    >Other Terms:</strong
   >
+  Limit of one reward redemption per account.
 </p>
 <p> </p>
 <p>
