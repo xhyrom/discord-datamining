@@ -54579,7 +54579,7 @@ html .progress__61462 {
 .theme-light .container__0be77 {
   border: 1px solid var(--border-subtle);
 }
-.invalidWrapper_ff4e03 {
+.invalidWrapper__076c1 {
   border-radius: 3px;
   display: block;
   overflow: hidden;
@@ -54588,10 +54588,10 @@ html .progress__61462 {
   -moz-user-select: text;
   user-select: text;
 }
-.invalidWrapper_ff4e03 img {
+.invalidWrapper__076c1 img {
   position: absolute;
 }
-.invalid_ff4e03 {
+.invalid__076c1 {
   background-image: url(/assets/eb4644cbe2f3e90f.svg);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -54599,12 +54599,12 @@ html .progress__61462 {
   height: 102px;
   width: 200px;
 }
-.buttonContainer_ff4e03 {
+.buttonContainer__076c1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.metadata_ff4e03 {
+.metadata__076c1 {
   color: var(--primary-400);
   display: flex;
   flex-direction: column;
@@ -54612,35 +54612,73 @@ html .progress__61462 {
   font-weight: var(--font-weight-semibold);
   justify-content: flex-end;
 }
-.container_ff4e03 {
-  margin: 0;
-  position: relative;
-}
-.container_ff4e03,
-.tile_ff4e03 {
+.container__076c1 {
   align-items: stretch;
   flex-direction: row-reverse;
+  margin: 0;
   min-height: 0;
   overflow: hidden;
+  position: relative;
   width: 660px;
 }
-.tile_ff4e03 {
+.containerDMEmbedXP__076c1 {
+  align-items: center;
+  background: var(--background-mod-subtle, hsla(240, 4%, 61%, 0.12));
+  border-radius: 16px;
+  display: flex;
+  gap: 24px;
+  height: 200px;
+  margin-top: 16px;
+  padding: 28px 24px;
+  width: 580px;
+}
+.contentDMEmbedXP__076c1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contentTextDMEmbedXP__076c1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 20px;
+}
+.imgDMEmbedXP__076c1 {
+  overflow: visible;
+}
+.buttonContainerDMEmbedXP__076c1 {
+  align-items: center;
+  color: #000;
+  display: flex;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-medium, 500);
+  gap: 24px;
+  line-height: 20px;
+}
+.tile__076c1 {
+  align-items: stretch;
   background-color: var(--background-secondary-alt);
   border-radius: 5px;
   box-shadow: 0 0 0 hsl(var(--primary-700-hsl) / 0.15);
   display: flex;
+  flex-direction: row-reverse;
+  min-height: 0;
+  overflow: hidden;
   transform: translateZ(0);
   transition:
     background-color 0.2s ease,
     box-shadow 0.2s ease;
+  width: 660px;
 }
-.title_ff4e03 {
+.title__076c1 {
   flex: 0 1 auto;
   font-size: 18px;
   font-weight: var(--font-weight-semibold);
   line-height: 1.2;
 }
-.tagline_ff4e03 {
+.tagline__076c1 {
   color: var(--text-default);
   flex: 1 1 auto;
   font-size: 15px;
@@ -54648,19 +54686,19 @@ html .progress__61462 {
   margin-top: 8px;
   overflow: hidden;
 }
-.actions_ff4e03 {
+.actions__076c1 {
   flex: 0 1 auto;
   justify-self: flex-end;
   margin-top: 12px;
 }
-.media_ff4e03 {
+.media__076c1 {
   align-items: center;
   display: flex;
   flex: 0 0 278px;
   position: relative;
 }
-.birthdayReferral_ff4e03,
-.referral_ff4e03 {
+.birthdayReferral__076c1,
+.referral__076c1 {
   flex: auto;
   height: 100%;
   margin: 0;
@@ -54669,13 +54707,13 @@ html .progress__61462 {
   padding-top: 0;
   position: relative;
 }
-.referral_ff4e03 {
+.referral__076c1 {
   background: url(/assets/e790daeb039ddb5a.svg) 100% no-repeat;
 }
-.birthdayReferral_ff4e03 {
+.birthdayReferral__076c1 {
   background: url(/assets/eb40cc3e32c7e70f.svg) 100% no-repeat;
 }
-.description_ff4e03 {
+.description__076c1 {
   color: var(--header-primary);
   display: flex;
   flex: 1 1 auto;
@@ -54683,10 +54721,10 @@ html .progress__61462 {
   padding: 12px;
   position: relative;
 }
-.theme-dark .tile_ff4e03:hover {
+.theme-dark .tile__076c1:hover {
   background-color: var(--primary-800);
 }
-.theme-dark .invalid_ff4e03 {
+.theme-dark .invalid__076c1 {
   background-image: url(/assets/e4a502bfc6589d65.svg);
 }
 .desktopTooltip_fed3a2 {
@@ -87801,4 +87839,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.debc6c30658a83e2.css.map*/
+/*# sourceMappingURL=12633.1c01238cedd914e6.css.map*/
