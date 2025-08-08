@@ -68354,8 +68354,8 @@ html.disable-forced-colors * {
   transition: border-color 0.15s ease;
 }
 .hexInputContainer__247cf:focus-within {
-  border-color: var(--focus-primary);
-  box-shadow: 0 0 0 1px var(--focus-primary);
+  border-color: var(--control-background-primary-default);
+  box-shadow: 0 0 0 1px var(--control-background-primary-default);
 }
 .hexInput__247cf {
   background: none;
@@ -68435,9 +68435,7 @@ html.disable-forced-colors * {
 .container__5a2df {
   background: var(--background-base-low);
   border: 1px solid var(--border-faint);
-  padding-left: var(--space-12);
-  padding-right: calc(var(--space-12) - 8px);
-  width: 272px;
+  width: 288px;
 }
 .container__5a2df,
 .editorBody__5a2df {
@@ -68447,6 +68445,8 @@ html.disable-forced-colors * {
 .editorBody__5a2df {
   gap: 25px;
   margin-top: 16px;
+  padding-left: var(--space-12);
+  padding-right: calc(var(--space-12) - 8px);
 }
 .section__5a2df {
   gap: 12px;
@@ -88050,4 +88050,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.dad7cb19d30aad79.css.map*/
+/*# sourceMappingURL=12633.3b656d3cc857f3a6.css.map*/
