@@ -21,12 +21,12 @@
   Available to players in the <strong>United States</strong>,
   <strong>United Kingdom</strong>, and <strong>Great Britain</strong> who have
   access to <strong>Battlefield 6 Open Beta </strong>and
-  <strong>Discord</strong> on PC, PlayStation 5, and Xbox Series S/X. Discord’s
-  premium services are restricted in some regions.<br /><strong
-    >Availability Period: </strong
+  <strong>Discord</strong> on PC and PlayStation 5. Discord’s premium services
+  are restricted in some regions.<br /><strong>Availability Period: </strong
   >The<strong> BF6 Open Beta Quest </strong>can be accepted on<strong>
     PC</strong
-  >,<strong> PlayStation 5</strong>, and<strong> Xbox Series S/X </strong>from
+  >
+  and <strong>PlayStation 5</strong>, from
   <strong>August 9-10, 2025</strong> and
   <strong>August 14-17, 2025</strong> (ending <strong>11:59 PM UTC</strong> both
   periods).<strong> <br /></strong>Complete the quest requirements during this
