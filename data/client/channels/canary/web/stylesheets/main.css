@@ -14803,7 +14803,7 @@ svg.radioIcon_c1e9c4 {
   background-color: var(--background-base-low) !important;
 }
 .videoContainer__1bd8a {
-  transform: translate(calc(-50% + 4px), -50%);
+  transform: translate(calc(-50% + 4px), calc(-50% + 4px));
   width: 1500px;
   z-index: 0;
 }
@@ -88061,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ed4383b7bde4ee67.css.map*/
+/*# sourceMappingURL=12633.1f98942c3781dc16.css.map*/
