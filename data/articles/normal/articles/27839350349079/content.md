@@ -11,6 +11,79 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: Battlefield 6 Open Beta<br /></strong
+  ><strong>Quest Name: BF6 Open Beta Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>Battlefield 6 Open Beta </strong>to receive the
+  <strong>Soldier Helmet Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players in the <strong>United States</strong>,
+  <strong>United Kingdom</strong>, and <strong>Great Britain</strong> who have
+  access to <strong>Battlefield 6 Open Beta </strong>and
+  <strong>Discord</strong> on PC, PlayStation 5, and Xbox Series S/X. Discord’s
+  premium services are restricted in some regions.<br /><strong
+    >Availability Period: </strong
+  >The<strong> BF6 Open Beta Quest </strong>can be accepted on<strong>
+    PC</strong
+  >,<strong> PlayStation 5</strong>, and<strong> Xbox Series S/X </strong>from
+  <strong>August 9-10, 2025</strong> and
+  <strong>August 14-17, 2025</strong> (ending <strong>11:59 PM UTC</strong> both
+  periods).<strong> <br /></strong>Complete the quest requirements during this
+  period and claim your reward by
+  <strong>September 17, 2025 (11:59 UTC)</strong>.<br />The<strong>
+    Soldier Helmet Avatar Decoration </strong
+  >is a limited-time Avatar Decoration and will only be yours as an Avatar
+  Decoration until <strong>October 17, 2025 (11:59PM UTC)</strong>. After this
+  date, you will no longer have access to this Avatar Decoration. Nitro
+  subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong
+    >Other Terms: Limit of one reward redemption per account.</strong
+  >
+</p>
+<p> </p>
+<p>
+  <strong>Quest Game: The First Descendant<br /></strong
+  ><strong>Quest Name: The First Descendant Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of
+  <strong>The First Descendant</strong> to receive the
+  <strong>Descendant Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players that are 18+ in the <strong>United States</strong>,
+  <strong>Great Britain</strong>, <strong>France</strong>,
+  <strong>Germany</strong>, and <strong>Canada</strong> who have access to
+  <strong>The First Descendant </strong>and <strong>Discord</strong> on Steam,
+  PlayStation 5, and Xbox Series S/X. Discord’s premium services are restricted
+  in some regions.<br /><strong
+    >Availability Period: The First Descendant Quest</strong
+  >
+  can be accepted on <strong>Steam</strong>,<strong> PlayStation 5</strong>,
+  and<strong> Xbox Series S/X</strong> from
+  <strong>August 8, 2025</strong> until
+  <strong>August 14, 2025 (11:59PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 14, 2025 (11:59 UTC)</strong>.<br /><strong
+    >The Entity Avatar Decoration </strong
+  >is a limited-time Avatar Decoration and will only be yours as an Avatar
+  Decoration until <strong>October 14, 2025 (11:59PM UTC)</strong>. After this
+  date, you will no longer have access to this Avatar Decoration. Nitro
+  subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Apex Legends<br /></strong
   ><strong>Quest Name: Apex Legends Quest<br /></strong
   ><strong>Offer Details: </strong>Play 15 minutes of
