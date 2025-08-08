@@ -21359,49 +21359,6 @@ img.inlineAsset__9c640 {
 .iconImage__4d7bb {
   filter: saturate(var(--saturation-factor, 1));
 }
-.largeCountdownPill_e270ac {
-  background-color: hsla(0, 0%, 100%, 0.1);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  padding: 8px 16px;
-}
-.largeCountdownPillText_e270ac {
-  color: var(--custom-premium-colors-banner-yellow);
-  display: inline-block;
-  font-size: 14px;
-  font-weight: var(--font-weight-extra-bold);
-  letter-spacing: 0.7px;
-  line-height: 16px;
-}
-.largePillIcon_e270ac {
-  padding-left: 6px;
-}
-.unavailableCounterContainer_a466a0 {
-  display: flex;
-  justify-content: center;
-}
-.unavailableCounterPill_a466a0 {
-  align-items: center;
-  border: 1px solid var(--white);
-  border-radius: 57px;
-  display: inline-flex;
-  justify-content: center;
-  padding: 0 20px;
-}
-.unavailableCounterPillText_a466a0 {
-  color: #fff;
-  line-height: 8px;
-  margin: 20px 0;
-}
-.countDownText_a466a0 {
-  margin-left: 8px;
-}
-.tooltip_a466a0 {
-  max-width: 215px;
-  text-align: center;
-  width: 215px;
-}
 .buttonHighlighted__5d39a {
   background: linear-gradient(
     95.07deg,
@@ -88093,4 +88050,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2dc0a32c6075b980.css.map*/
+/*# sourceMappingURL=12633.dad7cb19d30aad79.css.map*/
