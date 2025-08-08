@@ -55859,17 +55859,14 @@ html .progress__61462 {
   color: var(--text-muted);
   margin-top: var(--space-8);
 }
-.detailsButton_e80b85 {
-  padding: var(--space-8) 0;
-}
 .footerContainer_e80b85 {
   align-items: flex-start;
   background-color: var(--button-danger-background);
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: var(--space-8) var(--space-12);
   width: 100%;
 }
 .footerContainer_e80b85:hover {
@@ -88050,4 +88047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3b656d3cc857f3a6.css.map*/
+/*# sourceMappingURL=12633.4b51347405c259af.css.map*/
