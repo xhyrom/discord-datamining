@@ -14748,6 +14748,117 @@ svg.radioIcon_c1e9c4 {
 .icon__36b87 {
   margin-right: 4px;
 }
+.shaker_e5f3a9 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  max-height: inherit;
+}
+.root_e5f3a9 > :last-child {
+  border-bottom-left-radius: var(--radius-sm);
+  border-bottom-right-radius: var(--radius-sm);
+}
+.root_e5f3a9.withHeader_e5f3a9 > :first-child {
+  background-color: transparent;
+}
+@media (max-width: 485px) {
+  .shaker_e5f3a9 {
+    bottom: 0;
+    left: 0;
+    max-height: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .root_e5f3a9,
+  .shaker_e5f3a9 {
+    justify-content: center;
+  }
+  .root_e5f3a9 {
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+.halloweenModalHeight_e5f3a9 {
+  max-height: 800px;
+}
+.premiumBrandRefreshBackground_e5f3a9 {
+  background-color: var(--background-base-low) !important;
+}
+.videoContainer__1bd8a {
+  transform: translate(calc(-50% + 4px), -50%);
+  width: 1500px;
+  z-index: 0;
+}
+.video__1bd8a,
+.videoContainer__1bd8a {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+.video__1bd8a {
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.video__1bd8a.hidden__1bd8a {
+  visibility: hidden;
+}
+.video__1bd8a.visible__1bd8a {
+  visibility: visible;
+}
+.entryAnimationContainer__1bd8a {
+  animation:
+    wowMomentScaleIn__1bd8a 0.3s ease,
+    wowMomentScaleSettle__1bd8a 0.3s ease 0.3s;
+  will-change: transform;
+}
+@keyframes wowMomentScaleIn__1bd8a {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes wowMomentScaleSettle__1bd8a {
+  0% {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.exitAnimationContainer__1bd8a {
+  animation: wowMomentExit__1bd8a 175ms ease forwards;
+  pointer-events: none;
+  transform: scale(1);
+  will-change: transform;
+}
+@keyframes wowMomentExit__1bd8a {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+    visibility: hidden;
+  }
+}
+.wowAnimation__1bd8a {
+  height: 1028px;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1512px;
+  z-index: 1;
+}
 .premiumSubscribeButton_e00877 {
   align-items: center;
   display: flex;
@@ -30770,46 +30881,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   pointer-events: none;
   right: -75px;
   top: -120px;
-}
-.shaker_e5f3a9 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  height: 100%;
-  justify-content: center;
-  max-height: inherit;
-}
-.root_e5f3a9 > :last-child {
-  border-bottom-left-radius: var(--radius-sm);
-  border-bottom-right-radius: var(--radius-sm);
-}
-.root_e5f3a9.withHeader_e5f3a9 > :first-child {
-  background-color: transparent;
-}
-@media (max-width: 485px) {
-  .shaker_e5f3a9 {
-    bottom: 0;
-    left: 0;
-    max-height: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .root_e5f3a9,
-  .shaker_e5f3a9 {
-    justify-content: center;
-  }
-  .root_e5f3a9 {
-    border-radius: 0;
-    width: 100vw;
-  }
-}
-.halloweenModalHeight_e5f3a9 {
-  max-height: 800px;
-}
-.premiumBrandRefreshBackground_e5f3a9 {
-  background-color: var(--background-base-low) !important;
 }
 .container_b7b2cf {
   align-items: center;
@@ -88019,4 +88090,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.eee8ca9d9196150e.css.map*/
+/*# sourceMappingURL=12633.2cb61337219e3472.css.map*/
