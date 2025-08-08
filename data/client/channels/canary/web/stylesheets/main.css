@@ -20370,14 +20370,6 @@ img.inlineAsset__9c640 {
   flex: 0 0 auto;
   margin-left: 8px;
 }
-.bioRhyme__89a31 {
-  font-family:
-    BioRhyme,
-    gg sans,
-    Arial,
-    sans-serif;
-  letter-spacing: 0.03em;
-}
 .cherryBomb__89a31 {
   font-family:
     Cherry Bomb One,
@@ -20429,6 +20421,14 @@ img.inlineAsset__9c640 {
     Arial,
     sans-serif;
   letter-spacing: 0.01em;
+}
+.zillaSlab__89a31 {
+  font-family:
+    Zilla Slab,
+    gg sans,
+    Arial,
+    sans-serif;
+  letter-spacing: 0.03em;
 }
 .container_dfb989 {
   display: inline-flex;
@@ -23928,7 +23928,6 @@ div.modalHeader_c28af8 {
   flex-shrink: 0;
   height: 14px;
   position: relative;
-  top: 1px;
   width: 14px;
 }
 .ownerIcon__5d473 {
@@ -23940,6 +23939,7 @@ div.modalHeader_c28af8 {
 }
 .premiumIcon__5d473 {
   margin-left: 3px;
+  top: 1px;
 }
 .placeholder__5d473 {
   padding: 4px 8px;
@@ -88061,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1f98942c3781dc16.css.map*/
+/*# sourceMappingURL=12633.d4eaf89b2e50473c.css.map*/
