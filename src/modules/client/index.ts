@@ -43,7 +43,7 @@ export class Client implements Module {
       case "canary":
         await new Experiments().run(); // scrape experiments with canary
         await new Channel(ChannelType.Canary).run();
-        await new Strings().run(); // scrape strings with canary
+        // await new Strings().run(); // scrape strings with canary
         break;
       case "development":
         await new Channel(ChannelType.Development).run();
