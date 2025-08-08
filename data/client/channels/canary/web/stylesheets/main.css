@@ -20438,6 +20438,10 @@ img.inlineAsset__9c640 {
   position: absolute;
   width: 100%;
 }
+.emoji_dfb989 {
+  position: relative;
+  z-index: 1;
+}
 .forceAnimate_dfb989 .container_dfb989 .solid_dfb989,
 .showEffect_dfb989 .solid_dfb989 {
   color: var(--custom-display-name-styles-main-color, var(--text-default));
@@ -88047,4 +88051,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.4b51347405c259af.css.map*/
+/*# sourceMappingURL=12633.c9af70e2ee4393fe.css.map*/
