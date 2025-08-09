@@ -20470,9 +20470,9 @@ img.inlineAsset__9c640 {
 .forceAnimate_dfb989 .container_dfb989 .gradient_dfb989,
 .showEffect_dfb989 .gradient_dfb989 {
   background: linear-gradient(
-    90deg,
-    var(--custom-display-name-styles-gradient-start-color),
-    var(--custom-display-name-styles-gradient-end-color)
+    to bottom right,
+    var(--custom-display-name-styles-gradient-start-color) 10%,
+    var(--custom-display-name-styles-gradient-end-color) 90%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -88061,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d4eaf89b2e50473c.css.map*/
+/*# sourceMappingURL=12633.52940b7a838276de.css.map*/
