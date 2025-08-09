@@ -156,7 +156,7 @@
   To watch your friends in game, simply head over to their mini profile, and tap
   on the <strong>Spectate </strong>button. The game will launch and you'll start
   spectating if the game supports Spectate mode. You can only spectate someone
-  if you’re friend’s with them and the game supports this.
+  if you’re friends with them and the game supports this.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
