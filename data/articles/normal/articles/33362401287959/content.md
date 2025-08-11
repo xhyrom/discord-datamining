@@ -86,10 +86,10 @@
 <ul>
   <li>
     <strong>Privacy-protecting process. </strong>Discord and k-ID do not
-    permanently store personal identity documents or your video selfies.
-    Identity documents are deleted after a user’s age group is confirmed, and
-    the video selfie used for facial age estimation never even leaves your
-    device.
+    permanently store personal identity documents or your video selfies. Images
+    of your identity documents and ID match selfies are deleted directly after
+    your age group is confirmed, and the video selfie used for facial age
+    estimation never leaves your device.
   </li>
   <li>
     <strong>Verify once.</strong> After completing verification, your Discord
@@ -342,9 +342,9 @@
 </p>
 <p>
   A: Discord and k-ID do not permanently store personal identity documents or
-  your video selfies. Identity documents are deleted after a user’s age group is
-  confirmed, and the video selfie used for facial age estimation never even
-  leaves your device.
+  your video selfies. Images of your identity documents and ID match selfies are
+  deleted directly after your age group is confirmed, and the video selfie used
+  for facial age estimation never leaves your device.
 </p>
 <p>
   <strong
