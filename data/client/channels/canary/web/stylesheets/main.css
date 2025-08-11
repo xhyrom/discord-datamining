@@ -18790,6 +18790,9 @@ img.inlineAsset__9c640 {
 .freeTrialPill_ac86f6.greyBackgroundPill_ac86f6 {
   background: var(--primary-500);
 }
+.freeTrialPill_ac86f6.modBackgroundPill_ac86f6 {
+  background: var(--background-surface-highest);
+}
 .freeTrialPill_ac86f6.freeTrialPillTier2OldGradientFill_ac86f6 {
   background: var(--custom-premium-colors-premium-gradient-tier-2-old);
 }
@@ -18823,6 +18826,9 @@ img.inlineAsset__9c640 {
 }
 .freeTrialPillText_ac86f6.freeTrialPillTextInverted_ac86f6 {
   color: var(--white-500);
+}
+.freeTrialPillText_ac86f6.freeTrialPillTextDefault_ac86f6 {
+  color: var(--text-default);
 }
 .sparkleStar4_ac86f6 {
   height: 11px;
@@ -88055,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9024531f2241d155.css.map*/
+/*# sourceMappingURL=12633.baa0b683b775a486.css.map*/
