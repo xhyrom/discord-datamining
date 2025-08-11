@@ -10,12 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8098628002](https://discord.com/jobs/8098628002)
 
-**Updated At:** Thu, 07 Aug 2025 21:30:28 GMT
+**Updated At:** Mon, 11 Aug 2025 17:10:47 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a Senior Software Engineer specializing in Machine Learning to join our Revenue ML team at Discord. This team partners with our revenue product groups, focusing on both consumer revenue and our emerging Ads initiative. This role will specifically contribute to our Ads ML efforts, helping to build and scale ML capabilities in areas such as ads measurement, targeting, and delivery ranking.
 As part of this team, you will play a critical role in developing foundational ML models that enhance ad relevance, optimize performance, and drive revenue. This is a unique opportunity to work on an early-stage Ads ML platform and have a direct impact on the business's success. Our tech stack includes Python, ML frameworks like PyTorch and TensorFlow, large-scale data infrastructure, and real-time ad-serving technologies.
-
 What You'll Be Doing
 
 Design, develop, and deploy machine learning models for ads targeting and ranking.
