@@ -2732,8 +2732,9 @@
           n = a.n(_),
           o = a(674746);
         a(722770), a(106351), a(470167), a(388123);
-        var i = a(275726),
-          c = a(866442),
+        var i = a(275726);
+        a(314877);
+        var c = a(866442),
           E = a(860911),
           s = a(70956),
           l = a(188785),
@@ -2770,6 +2771,7 @@
             USER_GAME_RELATIONSHIP: (t, e) =>
               "/users/@me/game-relationships/".concat(t, "/").concat(e),
             USER_PROFILE: (t) => "/users/".concat(t, "/profile"),
+            USER_PROFILE_WIDGETS: "/users/@me/widgets",
             USER_GUILD_PROFILE: (t, e) =>
               "/guilds/".concat(t, "/profile/").concat(e),
             USER_CHANNELS: "/users/@me/channels",
@@ -5875,6 +5877,12 @@
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
             "premium_wow_moment_media_prefetch_trigger"),
+          (r.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED =
+            "premium_brand_refresh_wow_moment_viewed"),
+          (r.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCHING =
+            "premium_brand_refresh_wow_moment_assets_prefetching"),
+          (r.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION =
+            "premium_brand_refresh_wow_moment_assets_not_loaded_on_confirmation"),
           (r.PREMIUM_FEATURE_HELPER_ACTIONS = "premium_feature_helper_actions"),
           (r.PREMIUM_FEATURE_TUTORIAL_STEPS = "premium_feature_tutorial_steps"),
           (r.PREMIUM_FEATURE_TUTORIAL_STEPS_NEXT =
@@ -6929,7 +6937,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-08-c562d055ea5712377eb2c6c69236fce05fc4493b-discord_web",
+              "2025-08-11-8958e4e06f2539b7e44e2fc5de7ee13be7ac64fb-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6995,8 +7003,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "429117"),
-            o.YA("builtAt", String("1754637564562"));
+            o.YA("buildNumber", "429675"),
+            o.YA("builtAt", String("1754920764707"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22420,6 +22428,7 @@
             (r[(r.EMOJI_ADDED = 63)] = "EMOJI_ADDED"),
             r);
       },
+      314877: function () {},
       149765: function (t, e, a) {
         "use strict";
         a.d(e, { $e: () => u, r0: () => I }), a(368063);
@@ -48395,4 +48404,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.663e204db9199a21.js.map
+//# sourceMappingURL=sentry.11f3721b7da756d9.js.map
