@@ -68469,7 +68469,7 @@ html.disable-forced-colors * {
 }
 .resetButton__5a2df {
   gap: 8px;
-  margin-top: 44px;
+  margin-top: 19px;
 }
 .headerContainer__5a2df {
   align-items: center;
@@ -88061,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.52940b7a838276de.css.map*/
+/*# sourceMappingURL=12633.de8646f37425a181.css.map*/
