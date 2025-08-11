@@ -14825,8 +14825,8 @@ svg.radioIcon_c1e9c4 {
 }
 .entryAnimationContainer__1bd8a {
   animation:
-    wowMomentScaleIn__1bd8a 0.3s ease,
-    wowMomentScaleSettle__1bd8a 0.3s ease 0.3s;
+    wowMomentScaleIn__1bd8a 0.4s ease,
+    wowMomentScaleSettle__1bd8a 0.4s ease 0.4s;
   will-change: transform;
 }
 @keyframes wowMomentScaleIn__1bd8a {
@@ -88068,4 +88068,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.434c4f659ab6e1da.css.map*/
+/*# sourceMappingURL=12633.7ef97061af0e0ae6.css.map*/
