@@ -20442,6 +20442,7 @@ img.inlineAsset__9c640 {
   min-width: 0;
   perspective: 1px;
   position: relative;
+  text-indent: 0;
   z-index: 0;
 }
 .container_dfb989.inProfile_dfb989 {
@@ -88067,4 +88068,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fae3cc2a0063ded9.css.map*/
+/*# sourceMappingURL=12633.434c4f659ab6e1da.css.map*/
