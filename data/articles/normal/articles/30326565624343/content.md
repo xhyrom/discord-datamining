@@ -87,10 +87,12 @@
 </div>
 <h1 id="h_01K0FTZNQP54390T6Z7FPCSPF6">How to Complete Age Verification</h1>
 <div class="info-box">
-  Discord and k-ID do not permanently store personal identity documents or your
-  video selfies. Identity documents are deleted after a user’s age group is
-  confirmed, and the video selfie used for facial age estimation never leaves
-  your device.
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Discord and k-ID do not permanently store personal identity documents or
+    your video selfies. Images of your identity documents and ID match selfies
+    are deleted directly after your age group is confirmed, and the video selfie
+    used for facial age estimation never leaves your device.</span
+  >
 </div>
 <p>
   The verification process is the same, regardless of
@@ -110,7 +112,7 @@
   />
 </p>
 <h4 id="h_01JQWGJ3G5ABA5507MQD0M3RTC" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of <strong>Verify age group</strong> window</span
   >
 </h4>
@@ -138,32 +140,29 @@
   >
 </p>
 <ul>
-  <li>Select <strong>Scan ID</strong> on the verification page. </li>
-  <li>Use your mobile device to scan the QR code.</li>
   <li>
-    Take a clear photo of your ID following the guidelines on screen:
     <ul>
-      <li>Make sure you are in a well-lit area</li>
-      <li>Place ID on flat dark surface</li>
-      <li>Make sure all corners of the ID are visible</li>
+      <li>Select <strong>Scan ID</strong> on the verification page. </li>
+      <li>Use your mobile device to scan the QR code.</li>
+      <li>
+        Take a clear photo of your ID following the guidelines on screen:
+        <ul>
+          <li>Make sure you are in a well-lit area</li>
+          <li>Place ID on flat dark surface</li>
+          <li>Make sure all corners of the ID are visible</li>
+        </ul>
+      </li>
+      <li>
+        Complete selfie to match the ID document by following the guidelines on
+        screen:
+        <ul>
+          <li>Make sure you are in a well-lit area</li>
+          <li>Remove any headwear</li>
+          <li>Keep your glasses on</li>
+        </ul>
+      </li>
     </ul>
-  </li>
-  <li>
-     Press
-    <strong
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      >Done</strong
-    ><span
-      style="
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-    >
-      to submit.</span
-    >
+    Press <strong>Done</strong> to submit.
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
@@ -174,7 +173,7 @@
   />
 </p>
 <h4 id="h_01JQ4N6GRJ6E6KJ7JY6GVXM6EX" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     ><strong>Face </strong>Scan and <strong>Scan ID</strong> options in the
     <strong>Age</strong> <strong>Verification</strong> window</span
   >
@@ -185,7 +184,10 @@
   process and a Direct Message from
   <a
     href="https://support.discord.com/hc/en-us/articles/360036118732-Discord-Official-Messages"
-    ><span class="wysiwyg-underline" style="color: #1155cc"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
       >Discord's official profile</span
     ></a
   >
@@ -199,7 +201,7 @@
   />
 </p>
 <h4 id="h_01JQ4N8SR3X27YZ5PB2SJW14XS" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of <strong>direct message</strong> (<strong>DM</strong>)
     <strong>notification</strong> from Discord confirming your age verification
     status</span
@@ -237,9 +239,16 @@
   /></strong>
 </p>
 <h4 id="h_01K0FVDR6P7BKB62DVF71JSTM8" class="wysiwyg-text-align-center">
-  <strong><span style="color: #666666">Age Group</span></strong
-  ><span style="color: #666666"> field in </span
-  ><strong><span style="color: #666666">Account Settings</span></strong>
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Age Group</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color=""> field in </span
+  ><strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Account Settings</span
+    ></strong
+  >
 </h4>
 <h1 id="h_01JQ4N9Y8E96WFDRN01KC81VTP">Frequently Asked Questions</h1>
 <p>In this FAQ section: </p>
@@ -367,9 +376,9 @@
 </p>
 <p>
   A: Discord and k-ID do not permanently store personal identity documents or
-  your video selfies. Identity documents are deleted after a user’s age group is
-  confirmed, and the video selfie used for facial age estimation never leaves
-  your device.
+  your video selfies. The image of your identity document and the ID face match
+  selfie are deleted directly after  your age group is confirmed, and the video
+  selfie used for facial age estimation never leaves your device.
 </p>
 <h2 id="h_01K0FVFWCZ2RPRVJYGYETMVVSY">Troubleshooting and Support</h2>
 <p><strong>Q: What if my age group is incorrect?</strong> </p>
@@ -417,7 +426,7 @@
   />
 </p>
 <h4 id="h_01K0FVFWCZY3A0TZ8SKE1MQTE4" class="wysiwyg-text-align-center">
-  <span style="color: #666666"
+  <span style="color: #666666" data-darkreader-inline-color=""
     >Example of <strong>DM notification</strong> from Discord confirming your
     age verification status</span
   >

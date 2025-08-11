@@ -11,6 +11,59 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Game: PEAK<br /></strong
+  ><strong>Quest Name: PEAK Quest<br /></strong
+  ><strong>Offer Details:</strong> Play 15 minutes of <strong>PEAK</strong> to
+  receive the <strong>Bing Bong Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible:</strong
+  >
+  Available to players who have access to <strong>PEAK</strong> and
+  <strong>Discord</strong> on Steam. Discord’s premium services are restricted
+  in some regions.<br /><strong>Availability Period:</strong> The
+  <strong>PEAK Quest</strong> can be accepted on <strong>Steam</strong> from
+  <strong>August 11, 2025</strong> until
+  <strong>August 17, 2025 (11:59 PM UTC)</strong>. <br />Complete the quest
+  requirements during this period and claim your reward by
+  <strong>September 17, 2025 (11:59 UTC</strong>).<br />The
+  <strong>Bing Bong Avatar Decoration</strong> is a limited-time Avatar
+  Decoration and will only be yours as an Avatar Decoration until
+  <strong>October 17, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. Nitro subscribers can keep this
+  <a
+    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Avatar Decoration for longer</a
+  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
+  account.
+</p>
+<p> </p>
+<p>
+  <strong>Quest Video: View if you dare<br /></strong
+  ><strong>Quest Name: View if you dare Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch the
+  <strong>View if you dare </strong>video in Discord to receive a
+  <strong>Wendy’s x Wednesday Avatar Decoration</strong>. <br /><strong
+    >Who is Eligible: </strong
+  >Available to users that are 18+ in the <strong>United States</strong> on the
+  desktop app or browser client where <strong>Discord</strong> is available.
+  Discord’s premium services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The <strong>View if you dare Quest</strong> can be accepted on Discord desktop
+  app or browser client from <strong>August 11, 2025 </strong>until<strong>
+    August 25, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>September 25, 2025 (11:59 UTC)</strong>.<br />The
+  <strong>Wendy’s x Wednesday Avatar Decoration</strong> is a limited-time
+  Avatar Decoration and will only be yours as an Avatar Decoration until
+  <strong>October 25, 2025 (11:59PM UTC)</strong>. After this date, you will no
+  longer have access to this Avatar Decoration. <br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: Battlefield 6 Open Beta<br /></strong
   ><strong>Quest Name: BF6 Open Beta Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
