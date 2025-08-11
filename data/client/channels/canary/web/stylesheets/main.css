@@ -36967,6 +36967,25 @@ body .headerAnimation_b54a5b {
 .modalFooter_e125f1 {
   padding-top: var(--space-24) !important;
 }
+.discountFooterBackground_e125f1 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.modalFooterDiscount_e125f1 {
+  box-sizing: border-box;
+  max-height: 64px;
+  padding-bottom: var(--space-24) !important;
+}
+.discountColor_e125f1 {
+  color: var(--black-430);
+}
+.discountFooterText_e125f1 {
+  color: var(--black);
+  margin-right: auto;
+}
 .shopPageContainer__4485d {
   margin-top: 80px;
   min-height: 300px;
@@ -88068,4 +88087,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7ef97061af0e0ae6.css.map*/
+/*# sourceMappingURL=12633.a83c34431a69d4a7.css.map*/
