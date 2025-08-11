@@ -2732,8 +2732,9 @@
           n = a.n(_),
           o = a(674746);
         a(722770), a(106351), a(470167), a(388123);
-        var i = a(275726),
-          c = a(866442),
+        var i = a(275726);
+        a(314877);
+        var c = a(866442),
           E = a(860911),
           s = a(70956),
           l = a(188785),
@@ -6935,7 +6936,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bdd6986fe2defcea034f29df5c60bf67751da02a",
+            release: "discord_web-82c72f3c50242c6562e3d08f3d2a4588bf958e62",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7001,8 +7002,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "429651"),
-            o.YA("builtAt", String("1754862979546"));
+            o.YA("buildNumber", "429655"),
+            o.YA("builtAt", String("1754882941287"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22426,6 +22427,7 @@
             (r[(r.EMOJI_ADDED = 63)] = "EMOJI_ADDED"),
             r);
       },
+      314877: function () {},
       149765: function (t, e, a) {
         "use strict";
         a.d(e, { $e: () => u, r0: () => I }), a(368063);
@@ -48401,4 +48403,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.c89885ad3375bed8.js.map
+//# sourceMappingURL=sentry.e51b572a08a6af96.js.map
