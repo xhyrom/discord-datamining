@@ -14869,7 +14869,7 @@ svg.radioIcon_c1e9c4 {
   pointer-events: none;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-50% - 24px));
   width: 1512px;
   z-index: 1;
 }
@@ -88066,4 +88066,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.76039908ece0cb34.css.map*/
+/*# sourceMappingURL=12633.d774ac833d931b43.css.map*/
