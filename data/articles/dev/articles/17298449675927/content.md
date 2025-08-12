@@ -17,6 +17,7 @@
     href="https://support-dev.discord.com/hc/en-us/articles/17709085688727"
     rel="noopener noreferrer"
     data-token-index="3"
+    data-darkreader-inline-color=""
     ><span
       class="link-annotation-unknown-block-id-1414434848"
       style="
@@ -24,6 +25,10 @@
         border-color: rgba(55, 53, 47, 0.4);
         opacity: 0.7;
       "
+      data-darkreader-inline-border-top=""
+      data-darkreader-inline-border-right=""
+      data-darkreader-inline-border-bottom=""
+      data-darkreader-inline-border-left=""
       >Premium Apps</span
     ></a
   >
@@ -47,6 +52,7 @@
     href="https://support-dev.discord.com/hc/en-us/articles/17708927296663"
     rel="noopener noreferrer"
     data-token-index="7"
+    data-darkreader-inline-color=""
     ><span
       class="link-annotation-unknown-block-id--1976813488"
       style="
@@ -54,6 +60,10 @@
         border-color: rgba(55, 53, 47, 0.4);
         opacity: 0.7;
       "
+      data-darkreader-inline-border-top=""
+      data-darkreader-inline-border-right=""
+      data-darkreader-inline-border-bottom=""
+      data-darkreader-inline-border-left=""
       >Premium Apps Onboarding</span
     ></a
   >
@@ -359,72 +369,42 @@
 <h2 id="h_01HW890AK0WWNZ3WZWV5GN4T14">Analytics</h2>
 <p>
   In the Monetization section of the Developer Portal, you will also see an
-  <span
-    class="notion-enable-hover"
-    style="font-weight: 600"
-    data-token-index="1"
-    >Analytics</span
-  >
-  tab. When reviewing a Premium App’s analytics data, a couple of considerations
-  should be made.
-  <!-- notionvc: eecaaba3-1bfa-423d-a8f7-739b13fa1d25 -->
+  <strong>Analytics</strong> tab. When reviewing a Premium App’s analytics data,
+  a couple of considerations should be made.
 </p>
-<h3 id="h_01HW890AK1K9EMD35TH5TJH06Z">Availability</h3>
+<h3 id="h_01K2FSAXCD6RSMHW2YNHC7NVRJ">Availability</h3>
 <p>
   The available data can be considered up-to-date as of 24 hours prior for
-  Subscriptions and 30 days prior for One-Time Purchases. Any representation of
-  data will reflect that of the previous day for Subscriptions and the previous
-  month for One-Time Purchases, based on system updates. This applies to user
-  and revenue data, alike.<!-- notionvc: ce693cd2-befd-4f4a-a6e3-366ce064d2d3 --><br /><!-- notionvc: 560c9b19-7e12-4a21-bc61-d914a946daf4 -->
+  Subscriptions and One-Time Purchases, so any representation of data will
+  reflect that of the previous day, based on system updates. This applies to
+  user and revenue data, alike.
 </p>
-<h3 id="h_01HW890PB3ZBG7SJ4Z19GWA952">Accuracy</h3>
+<h3 id="h_01K2FSAXCEWGD6PT3N0QCYZRDA">Accuracy</h3>
 <p>
   If after reviewing the analytics, it appears the data is inaccurate and the
   aforementioned time periods have been taken into account, keep in mind that
   only data for subscribers who have the
-  <span
-    class="notion-enable-hover"
-    style="
-      font-family: &quot; SFMono-Regular&quot;, Menlo, Consolas,
-        &quot; PT Mono&quot;, &quot; Liberation Mono&quot;, Courier, monospace;
-      line-height: normal;
-      background: rgba(135, 131, 120, 0.15);
-      color: #eb5757;
-      border-radius: 4px;
-      font-size: 85%;
-      padding: 0.2em 0.4em;
-    "
-    spellcheck="false"
-    data-token-index="1"
-    >Use data to improve Discord</span
-  >
-  setting enabled will be represented. Users that do not have this setting
-  enabled will not reflect in a Premium App’s analytics. However, this only
-  applies to user data and does not apply to revenue data. Any representation of
-  revenue data will be accurate based on the above mentioned availability
-  period.<!-- notionvc: 826da4a9-d289-4644-91b8-5fc29eec184d --><br /><!-- notionvc: 54c2d93b-75e1-42a5-b98c-73abdcc3133c -->
+  <em>Use data to improve Discord</em> setting enabled will be represented.
 </p>
-<h4 id="h_01JEXSPB2HNFWKVN9139VQA453">
-  <span
-    style="
-      white-space: nowrap;
-      font-size: 1em;
-      font-family: &quot; Apple Color Emoji&quot;, &quot; Segoe UI Emoji&quot;,
-        &quot; Segoe UI Symbol&quot;;
-    "
-    role="img"
-    aria-label="⚠️"
-    >⚠️</span
-  > If you are not seeing SKU data populate, please ensure you have selected a
+<p>
+  Users that do not have this setting enabled will not reflect in a Premium
+  App’s analytics. However, this only applies to user data and does not apply to
+  revenue data. Any representation of revenue data will be accurate based on the
+  above mentioned availability period.
+</p>
+<p>
+  ⚠️ If you are not seeing SKU data populate, please ensure you have selected a
   SKU from the dropdown next to the date range, toward the top of the Analytics
-  page.<!-- notionvc: e455cc6b-ee88-4bd2-8fff-738c56838259 -->
-</h4>
-<h3 id="h_01HW891E1BGHPKY7Z2ANJSZ1Y5">Exporting Data</h3>
+  page.
+</p>
+<h3 id="h_01K2FSAXCEB2FKJMY224NGNCJ4">Exporting Data</h3>
 <p>
   If you are interested in exporting your Premium App’s Analytics data for your
   own use, you can do so in the form of a CSV at the bottom of the Analytics
-  page.<!-- notionvc: c3a9e262-070f-4cc5-b2af-60fec29b3f57 -->
+  page. Current or previous month data can be exported, but keep in mind that
+  this data can be considered up-to-date as of 24 hours prior.
 </p>
+<p><!-- notionvc: a26e9449-c951-4e5c-b3fa-da3714d04ef0 --></p>
 <p>
   <img
     src="https://support-dev.discord.com/hc/article_attachments/23036692482967"
@@ -449,6 +429,7 @@
     href="https://dis.gd/developer-support/premium-apps"
     rel="noopener noreferrer"
     data-token-index="1"
+    data-darkreader-inline-color=""
     ><span
       class="link-annotation-unknown-block-id-253898030"
       style="
@@ -456,6 +437,10 @@
         border-color: rgba(55, 53, 47, 0.4);
         opacity: 0.7;
       "
+      data-darkreader-inline-border-top=""
+      data-darkreader-inline-border-right=""
+      data-darkreader-inline-border-bottom=""
+      data-darkreader-inline-border-left=""
       >reach out to our Developer Support team</span
     ></a
   >!<!-- notionvc: 02fc4d65-e256-4771-ba55-7b209b1dccc9 -->
