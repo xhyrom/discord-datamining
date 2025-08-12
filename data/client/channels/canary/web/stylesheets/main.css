@@ -20493,7 +20493,7 @@ img.inlineAsset__9c640 {
   -webkit-text-stroke-width: calc(1px + 0.04em);
   -webkit-text-stroke-color: hsl(
     from var(--custom-display-name-styles-main-color) h calc(s * 1.2)
-      calc(l + 10)
+      calc(min(60, l + 10 * clamp(0, (60 - l), 1)))
   );
   color: var(--white-500);
   margin-bottom: calc(-1px - 0.04em);
@@ -65342,7 +65342,7 @@ strong {
   transform: rotate(0deg);
 }
 .badge__233f8 {
-  margin-top: 11px;
+  margin-top: 14px;
 }
 .container__394db {
   align-items: center;
@@ -88066,4 +88066,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d774ac833d931b43.css.map*/
+/*# sourceMappingURL=12633.7d0b10d1e19caab1.css.map*/
