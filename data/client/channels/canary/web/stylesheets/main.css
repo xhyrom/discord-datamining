@@ -19723,11 +19723,11 @@ img.inlineAsset__9c640 {
   z-index: 10;
 }
 .headingContainer__15328 {
-  padding: 8px 16px;
+  padding: 8px 16px 0;
 }
 .bodyContainer__15328 {
   gap: 12px;
-  padding: 16px;
+  padding: 12px 16px 16px;
 }
 .bodyContainer__15328,
 .summaryContainer__15328 {
@@ -88066,4 +88066,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7d0b10d1e19caab1.css.map*/
+/*# sourceMappingURL=12633.98e1f1f7eead159d.css.map*/
