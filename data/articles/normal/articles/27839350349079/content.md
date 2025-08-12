@@ -11,6 +11,34 @@
 </ul>
 <h1 id="h_01JFAVZ3T89YBJZTRF6K5CZGTD">Additional Terms</h1>
 <p>
+  <strong>Quest Video: Nobody 2 Video<br /></strong
+  ><strong>Quest Name: Nobody 2 Quest<br /></strong
+  ><strong>Offer Details: </strong>Watch <strong>Nobody 2 Video</strong> in
+  Discord to receive
+  <a
+    href="https://support.discord.com/hc/articles/30593690165783"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Discord Orbs</a
+  ><strong>.<br /></strong><strong>Who is Eligible: </strong>Available to users
+  that are 18+ and in the <strong>United States</strong> on the desktop app or
+  browser client where <strong>Discord</strong> is available. Discord’s premium
+  services are restricted in some regions.<br /><strong
+    >Availability Period:</strong
+  >
+  The<strong> Nobody 2 Quest </strong>can be accepted on the Discord
+  <strong>desktop</strong> <strong>app</strong> or<strong>
+    browser client</strong
+  >
+  from <strong>August 12, 2025 </strong>until<strong>
+    August 17, 2025 (11:59PM UTC)</strong
+  >.<br />Complete the quest requirements during this period and claim your
+  reward by <strong>September 17, 2025 (11:59 UTC)</strong>.<br /><strong
+    >Other Terms: </strong
+  >Limit of one reward redemption per account.
+</p>
+<p> </p>
+<p>
   <strong>Quest Game: PEAK<br /></strong
   ><strong>Quest Name: PEAK Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of <strong>PEAK</strong> to
@@ -1052,30 +1080,6 @@
 </p>
 <p> </p>
 <p>
-  <strong>Quest Game: Dune: Awakening<br /></strong
-  ><strong>Quest Name: Dune: Awakening Launch Quest<br /></strong
-  ><strong>Offer Details: </strong>Stream 15 minutes of
-  <strong>Dune: Awakening</strong> to receive a
-  <strong>Mural - Call to Adventure</strong>.<br /><strong
-    >Who is Eligible: </strong
-  >Available to players in the<strong> United States</strong>,<strong>
-    Great Britain</strong
-  >,<strong> France</strong>,<strong> Germany</strong>, and<strong>
-    Canada </strong
-  >who have access to <strong>Dune: Awakening </strong>and<strong>
-    Discord </strong
-  >on desktop. <br />Discord’s premium services are restricted in some
-  regions.<br /><strong>Availability Period: </strong>The
-  <strong>Dune: Awakening Launch Quest </strong> can be accepted on
-  <strong>desktop</strong> from <strong>June 10, 2025</strong> until
-  <strong>June 16, 2025 (11:59PM UTC)</strong>. <br />Quest requirements must be
-  completed during this period to receive the reward. Reward gift codes expire
-  <strong>July 31, 2025 (11:59PM UTC)</strong>.<br /><strong
-    >Other Terms: </strong
-  >Limit of one reward redemption per account.
-</p>
-<p> </p>
-<p>
   <strong>Quest Game: Starlight Re:Volver<br /></strong
   ><strong>Quest Name: SUMMER FEST DEMO Quest<br /></strong
   ><strong>Offer Details:</strong> Play 15 minutes of
@@ -1103,95 +1107,6 @@
     rel="noopener noreferrer"
     >Avatar Decoration for longer</a
   >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: Symbiote Spider-Man<br /></strong
-  ><strong>Quest Name: Symbiote Spider-Man Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the<strong>
-    Symbiote Spider-Man </strong
-  >video in Discord to receive
-  <strong>Marvel Snap Venom Avatar Decoration.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to users on mobile where
-  <strong>Discord</strong> is available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Symbiote Spider-Man Quest </strong>can be accepted on Discord desktop
-  app or browser client from <strong>June 3, 2025 </strong>until<strong>
-    June 9, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 9, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Marvel Snap Venom Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>August 9, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Game: Marvel Rivals<br /></strong
-  ><strong>Quest Name: Marvel Rivals S2.5 Quest<br /></strong
-  ><strong>Offer Details:</strong> Play 15 minutes of
-  <strong>Marvel Rivals</strong> to receive an
-  <strong>Ultron Avatar Decoration</strong>.<br /><strong
-    >Who is Eligible:</strong
-  >
-  Available to players on PC, PlayStation 4, PlayStation 5, Xbox Series X, and
-  Xbox Series S where <strong>Discord</strong> and
-  <strong>Marvel Rivals</strong> are available. Discord’s premium services are
-  restricted in some regions.<br /><strong>Availability Period:</strong> The
-  <strong>Marvel Rivals S2.5 Quest </strong>can be accepted on
-  <strong>PC</strong>, <strong>PlayStation</strong> <strong>4</strong>,
-  <strong>PlayStation</strong> <strong>5</strong>,
-  <strong>Xbox Series X</strong>, and <strong>Xbox Series S</strong> from
-  <strong>May 30, 2025 </strong>until<strong> June 6, 2025 (11:59PM UTC)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 6, 2025 (11:59 UTC)</strong>.<br />The
-  <strong>Ultron Avatar Decoration</strong> is a limited-time Avatar Decoration
-  and will only be yours as an Avatar Decoration until
-  <strong>August 6, 2025 (11:59PM UTC)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms:</strong> Limit of one reward redemption per
-  account.
-</p>
-<p> </p>
-<p>
-  <strong>Quest Video: New Ballerina Video <br /></strong
-  ><strong>Quest Name: Ballerina Video Quest<br /></strong
-  ><strong>Offer Details: </strong>Watch the
-  <strong>New Ballerina Video </strong>in Discord to receive a
-  <strong>Ballerina Avatar Decoration.<br /></strong
-  ><strong>Who is Eligible: </strong>Available to users who are aged 18+ in the
-  <strong>United States</strong> on desktop where <strong>Discord</strong> is
-  available. Discord’s premium services are restricted in some regions.<br /><strong
-    >Availability Period:</strong
-  >
-  The <strong>Ballerina Video Quest </strong>can be accepted on Discord desktop
-  app or browser client from <strong>May 30, 2025 </strong>until<strong>
-    June 6, 2025 (11:59PM PT)</strong
-  >.<br />Complete the quest requirements during this period and claim your
-  reward by <strong>July 6, 2025 (11:59 PT)</strong>.<br />The
-  <strong>Ballerina Avatar Decoration</strong> is a limited-time Avatar
-  Decoration and will only be yours as an Avatar Decoration until
-  <strong>August 6, 2025 (11:59PM PT)</strong>. After this date, you will no
-  longer have access to this Avatar Decoration. Nitro subscribers can keep this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/29790581779735-Nitro-Quest-Perk"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Avatar Decoration for longer</a
-  >! <br /><strong>Other Terms: </strong>Limit of one reward redemption per
   account.
 </p>
 <p>
