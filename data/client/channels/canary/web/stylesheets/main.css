@@ -63619,6 +63619,7 @@ strong {
   display: inline-block;
   height: 22px;
   margin-left: unset;
+  padding: 1px var(--space-4);
 }
 .searchAnswer_bd8186 {
   border-bottom-left-radius: 0;
@@ -63626,14 +63627,16 @@ strong {
   margin-left: -2px;
   margin-right: 2px;
 }
-.searchAnswer_bd8186,
-.searchFilter_bd8186 {
-  padding: 1px var(--space-4);
-}
 .searchFilter_bd8186 {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   font-weight: var(--font-weight-semibold);
+}
+.searchTokenTopLevel_bd8186 {
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 var(--space-4);
 }
 .searchFilter_bd8186 + .searchFilter_bd8186 {
   padding-left: 2px;
@@ -64046,6 +64049,7 @@ strong {
   box-shadow: var(--shadow-high);
   box-sizing: border-box;
   overflow: hidden;
+  width: 320px;
 }
 .container__55c99:empty {
   box-shadow: none;
@@ -64193,8 +64197,8 @@ strong {
   width: 244px;
 }
 .searchBar__97492 .icon__97492 {
-  height: 24px;
-  width: 24px;
+  height: 100%;
+  margin-right: var(--space-4);
 }
 .density-compact .searchBar__97492 {
   height: 28px;
@@ -64209,10 +64213,6 @@ strong {
 }
 .full-motion .searchBar__97492 {
   transition: width 0.25s ease;
-}
-.focused__97492 .searchBar__97492,
-.open__97492 .searchBar__97492 {
-  width: 244px;
 }
 .keybind__97492 {
   display: inline-block;
@@ -88063,4 +88063,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.41c649acb0e41f82.css.map*/
+/*# sourceMappingURL=12633.f75696103a8fcf30.css.map*/
