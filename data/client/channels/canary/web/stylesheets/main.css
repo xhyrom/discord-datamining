@@ -51657,6 +51657,9 @@ html .progress__61462 {
 .tagline_cacd02 {
   margin-right: 8px;
 }
+.publish_cacd02 {
+  cursor: pointer;
+}
 .hidePermanently_cacd02 {
   cursor: pointer;
   line-height: 24px;
@@ -88063,4 +88066,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f75696103a8fcf30.css.map*/
+/*# sourceMappingURL=12633.76039908ece0cb34.css.map*/
