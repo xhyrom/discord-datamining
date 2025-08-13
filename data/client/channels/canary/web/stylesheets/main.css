@@ -66823,7 +66823,6 @@ span.clanTag__07f91.isOverlay__07f91 {
   gap: var(--space-8);
   justify-content: space-between;
   min-height: var(--custom-app-top-bar-height);
-  padding-left: var(--space-12);
   padding-right: var(--space-12);
   position: relative;
   -webkit-app-region: drag;
@@ -66863,16 +66862,19 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 .leading_c38106 {
   box-sizing: border-box;
+  gap: var(--space-4);
   justify-content: flex-start;
 }
 .leading_c38106,
 .trailing_c38106 {
   align-items: center;
   display: flex;
-  gap: var(--space-12);
   position: relative;
   z-index: 1;
   -webkit-app-region: no-drag;
+}
+.trailing_c38106 {
+  gap: var(--space-12);
 }
 .trailing_c38106,
 .winButtons_c38106 {
@@ -88063,4 +88065,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.88bb9ad4a478e4c2.css.map*/
+/*# sourceMappingURL=12633.abf08c2585b383c8.css.map*/
