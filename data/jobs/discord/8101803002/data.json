@@ -1,0 +1,56 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/8101803002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6209095002,
+  "location": {
+    "name": "San Francisco Bay Area"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": null,
+      "value_type": "single_select"
+    }
+  ],
+  "id": 8101803002,
+  "updated_at": "2025-08-13T11:53:05-04:00",
+  "requisition_id": "R-101007",
+  "title": "Staff Software Engineer, Ads",
+  "company_name": "Discord",
+  "first_published": "2025-08-13T11:53:05-04:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We’re looking for a &lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot;&gt;Staff Software Engineer&lt;/span&gt;&amp;nbsp;focused on&amp;nbsp;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;2&quot;&gt;UI/UX &amp;amp; Animations on the Ads team&lt;/span&gt;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;3&quot;&gt;. In this role, you will lead the creation of beautiful, intuitive user interfaces across Discord’s web and mobile platforms and build the next generation of engaging, user-forward ads products. &lt;/span&gt;We’re looking for someone with deep expertise in&amp;nbsp;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;5&quot;&gt;React&lt;/span&gt;&amp;nbsp;and/or&amp;nbsp;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;7&quot;&gt;React Native&lt;/span&gt;&amp;nbsp;who is passionate about&amp;nbsp;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;9&quot;&gt;design and&amp;nbsp;animations&lt;/span&gt;, and is always optimizing the impact of their work. This role reports to one of our engineering leaders on our Product Engineering team. If you love crafting pixel-perfect UI, seamless user experiences, and scalable front-end systems, we&#39;d love to hear from you!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Act as a technical leader and domain expert in crafting thoughtful solutions to design problems both independently and in collaboration with dedicated designers. Bring interfaces to life with&amp;nbsp;smooth animations and delightful interactions, translating design concepts into pixel-perfect, high-quality code.&lt;/li&gt;\n&lt;li&gt;Be a strategic partner with engineering, product, and cross functional leadership in designing, developing, and scaling digital advertising features that drive revenue growth and enhance user engagement.&lt;/li&gt;\n&lt;li&gt;Own projects end to end — you’ll be responsible for working with Product and other stakeholders to refine requirements, creating technical designs and specs, implementing changes, and seeing projects through to launch and maintenance.&lt;/li&gt;\n&lt;li&gt;Use your technical expertise to constantly raise the bar and empower the team to deliver extraordinary results at the&amp;nbsp;&lt;a href=&quot;https://blog.discordapp.com/tagged/engineering&quot;&gt;high technical level we set&lt;/a&gt;.&lt;/li&gt;\n&lt;li&gt;Mentor and guide the careers of the engineers through coaching and finding opportunities that support their technical skillset and goals.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Expertise in React and/or React Native.&lt;/strong&gt; You have built complex applications in both, and understand their ecosystems/libraries deeply.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strong design sensibility.&lt;/strong&gt; You have an eye for detail and passion for creating visually compelling interfaces.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Performance and accessibility.&lt;/strong&gt; Extensive knowledge of front-end performance optimizations and web accessibility standards like WCAG. You ensure that your UIs are not only beautiful but also fast and usable for everyone.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A growth mindset.&lt;/strong&gt; You view mistakes as learning opportunities and build upon your successes. You challenge yourself and those around you to continuously improve.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A focus on impact.&lt;/strong&gt; You have a sharp eye for what changes can bring a product from good to great. You collaborate closely with product managers, designers, analysts, and other engineers to define great solutions to business problems.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A sense of ownership.&lt;/strong&gt; You believe in solving a problem completely rather than simply shipping a solution. You operate autonomously and follow through on your commitments.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A love of mentorship&lt;/strong&gt; of fellow engineers, providing feedback and guidance on front-end architecture decisions, and championing UI/UX quality.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;7+ years&lt;/strong&gt; experience building rich, user-centric applications (web and/or mobile).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working on teams focused on growth, particularly in ads, revenue generation or product monetization.&lt;/li&gt;\n&lt;li&gt;Strong track record of driving measurable impact through experimentation and data driven decision making.&lt;/li&gt;\n&lt;li&gt;Demonstrated success in attracting new users, driving engagement, sustaining long-term retention, and optimizing monetization.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;br&gt;The US base salary range for this full-time position is $248,000 - $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4074054002,
+      "name": "Product Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4000383002,
+      "name": "San Francisco, CA",
+      "location": "San Francisco, California, United States",
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
