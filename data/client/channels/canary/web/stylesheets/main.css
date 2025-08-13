@@ -66431,7 +66431,7 @@ span.clanTag__07f91.isOverlay__07f91 {
   margin-top: var(--space-16);
   padding: var(--space-8) var(--space-12);
 }
-.root_e2a426 {
+.root__92958 {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -66439,17 +66439,17 @@ span.clanTag__07f91.isOverlay__07f91 {
   flex-direction: column;
   min-width: 240px;
 }
-.userHeader_e2a426 {
+.userHeader__92958 {
   align-items: center;
   background: var(--background-mod-subtle);
   display: flex;
   gap: var(--space-8);
   padding: var(--space-12) var(--space-16);
 }
-.activityList_e2a426 {
+.activityList__92958 {
   padding: 0 var(--space-16);
 }
-.activityRow_e2a426 {
+.activityRow__92958 {
   align-items: stretch;
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
@@ -66457,12 +66457,12 @@ span.clanTag__07f91.isOverlay__07f91 {
   gap: var(--space-8);
   padding: var(--space-12) 0;
 }
-.activityRowContent_e2a426 {
+.activityRowContent__92958 {
   align-items: center;
   display: flex;
   gap: var(--space-12);
 }
-.activityRow_e2a426:last-child {
+.activityRow__92958:last-child {
   border-bottom: none;
 }
 .draggable__55bab {
@@ -88067,4 +88067,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.cf0bad9b517c83e2.css.map*/
+/*# sourceMappingURL=12633.3c54ccddf3e54b51.css.map*/
