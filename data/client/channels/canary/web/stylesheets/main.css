@@ -68276,7 +68276,7 @@ html.disable-forced-colors * {
 }
 .container__247cf {
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 .container__247cf,
 .loader__247cf {
@@ -68363,8 +68363,7 @@ html.disable-forced-colors * {
   border-radius: var(--radius-sm);
   display: flex;
   height: 32px;
-  margin: 0 1px;
-  padding: 4px 8px;
+  padding: 2px;
   position: relative;
   transition: border-color 0.15s ease;
 }
@@ -68420,7 +68419,7 @@ html.disable-forced-colors * {
   border-radius: var(--radius-xs);
   flex-shrink: 0;
   height: 24px;
-  margin-right: 8px;
+  margin: 6px 8px 6px 4px;
   width: 24px;
 }
 .colorPreview__247cf {
@@ -68445,6 +68444,9 @@ html.disable-forced-colors * {
 }
 .themePillItemSelected_c85552 {
   border: 1px solid var(--border-subtle);
+}
+.themePillItemSelected_c85552,
+.themeSelector_c85552 [class*="pillItem"] {
   border-radius: var(--radius-xs);
 }
 .container__5a2df {
@@ -88065,4 +88067,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.abf08c2585b383c8.css.map*/
+/*# sourceMappingURL=12633.cf0bad9b517c83e2.css.map*/
