@@ -38,6 +38,7 @@ Proficiency with a second language (preferably Korean or Japanese)
 Tertiary qualifications or equivalent experience in Intelligence Studies, Cybersecurity, Criminal Justice, Criminology or related field.
 Experience in utilizing SQL, Python or other programming language for data manipulation.
 Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
 **Data Compliance:**
