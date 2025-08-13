@@ -20,10 +20,10 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "video troubleshooting",
     "answer-bot",
-    "voice troubleshooting",
+    "screen share",
+    "video troubleshooting",
     "streaming troubleshooting",
-    "screen share"
+    "voice troubleshooting"
   ]
 }
