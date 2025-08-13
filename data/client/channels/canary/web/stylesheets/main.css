@@ -16297,10 +16297,6 @@ svg.radioIcon_c1e9c4 {
   position: absolute;
   width: 8px;
 }
-.dimmed__58105 {
-  opacity: 0.1;
-  transition: opacity 0.3s ease;
-}
 .enable-forced-colors .item__58105 {
   background-color: Highlight;
 }
@@ -88073,4 +88069,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.feb7a3e2198b8adf.css.map*/
+/*# sourceMappingURL=12633.02f13d0b9a95be96.css.map*/
