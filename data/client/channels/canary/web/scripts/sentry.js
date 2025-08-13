@@ -6945,7 +6945,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-54297febb493b1f794c059ffc1c7b350228b1daa",
+            release: "discord_web-8c7f2fd99fb1e6fa9754b39f80d473d1b2736d2e",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7011,8 +7011,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "430776"),
-            o.YA("builtAt", String("1755048249756"));
+            o.YA("buildNumber", "430803"),
+            o.YA("builtAt", String("1755053512648"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8138,8 +8138,8 @@
                 category: "generic",
                 [r.DARK]: { raw: "PRIMARY_600", opacity: 1 },
                 [r.LIGHT]: { raw: "PRIMARY_200", opacity: 1 },
-                [r.MIDNIGHT]: { raw: "PRIMARY_600", opacity: 1 },
-                [r.DARKER]: { raw: "PRIMARY_600", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
+                [r.DARKER]: { raw: "PLUM_18", opacity: 1 },
                 gradient: {
                   light: { color: "WHITE_500", opacity: 0.25 },
                   dark: { color: "WHITE_500", opacity: 0.075 },
@@ -17783,8 +17783,8 @@
           "embed-background-alternate": [
             r.I.PRIMARY_600,
             r.I.PRIMARY_200,
-            r.I.PRIMARY_600,
-            r.I.PRIMARY_600,
+            r.I.PLUM_23,
+            r.I.PLUM_18,
           ],
           "embed-title": [
             r.I.NEUTRAL_1,
@@ -48412,4 +48412,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8284da0f19ce14a7.js.map
+//# sourceMappingURL=sentry.ecd3ca5b3e187633.js.map

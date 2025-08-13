@@ -14802,18 +14802,19 @@ svg.radioIcon_c1e9c4 {
 .premiumBrandRefreshBackground_e5f3a9 {
   background-color: var(--background-base-low) !important;
 }
-.videoContainer__1bd8a {
-  transform: translate(calc(-50% + 4px), calc(-50% + 4px));
-  width: 1500px;
-  z-index: 0;
-}
-.video__1bd8a,
+.staticGlow__1bd8a,
 .videoContainer__1bd8a {
   left: 50%;
   position: absolute;
   top: 50%;
+  transform: translate(calc(-50% + 4px), calc(-50% + 4px));
+  width: 1500px;
+  z-index: 0;
 }
 .video__1bd8a {
+  left: 50%;
+  position: absolute;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -14863,6 +14864,7 @@ svg.radioIcon_c1e9c4 {
     visibility: hidden;
   }
 }
+.staticWumpusWithTrinkets__1bd8a,
 .wowAnimation__1bd8a {
   height: 1028px;
   left: 50%;
@@ -74456,7 +74458,7 @@ html.disable-forced-colors * {
   --divider-strong: hsl(var(--plum-11-hsl) / 0.24);
   --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
   --embed-background: var(--plum-23);
-  --embed-background-alternate: var(--primary-600);
+  --embed-background-alternate: var(--plum-23);
   --embed-title: var(--neutral-8);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
@@ -75235,7 +75237,7 @@ html.disable-forced-colors * {
     );
     --embed-background-alternate: color-mix(
       in oklab,
-      var(--primary-600) 100%,
+      var(--plum-23) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -76864,7 +76866,7 @@ html.disable-forced-colors * {
   --divider-strong: hsl(var(--plum-11-hsl) / 0.22);
   --divider-subtle: hsl(var(--plum-11-hsl) / 0.12);
   --embed-background: var(--plum-18);
-  --embed-background-alternate: var(--primary-600);
+  --embed-background-alternate: var(--plum-18);
   --embed-title: var(--neutral-2);
   --experimental-avatar-embed-bg: hsl(
     var(--opacity-black-52-hsl) / 0.5215686274509804
@@ -77639,7 +77641,7 @@ html.disable-forced-colors * {
     );
     --embed-background-alternate: color-mix(
       in oklab,
-      var(--primary-600) 100%,
+      var(--plum-18) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -88061,4 +88063,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f402bc612badd5c9.css.map*/
+/*# sourceMappingURL=12633.88bb9ad4a478e4c2.css.map*/
