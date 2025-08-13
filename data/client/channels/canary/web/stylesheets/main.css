@@ -62414,14 +62414,9 @@ strong {
   pointer-events: none;
   z-index: 0;
 }
-.entryPointAppCommandButton_a83188 {
-  border-radius: var(--radius-sm);
+.entryPointAppCommandButtonContainer_a83188 {
   margin-left: 8px;
-  min-height: var(--custom-channel-textarea-text-area-height);
   min-width: var(--custom-app-dm-chat-input-primary-button-width);
-}
-.align-chat-input .entryPointAppCommandButton_a83188 {
-  height: 100%;
 }
 .buttonContainer_e6e74f {
   margin-top: unset;
@@ -88066,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.98e1f1f7eead159d.css.map*/
+/*# sourceMappingURL=12633.f402bc612badd5c9.css.map*/
