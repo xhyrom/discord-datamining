@@ -7,14 +7,14 @@
     <li>
       <strong
         ><a href="#h_01HTJA8QV5YFRR10TQ9RBZM8SS"
-          >What is Activity Sharing on Discord?</a
+          >What is Activity Status (Recent Activity)?</a
         ></strong
       >
     </li>
     <li>
       <strong
         ><a href="#h_01HTJA8QV5TNKJRY98GXQSHJQQ"
-          >How to View Activity</a
+          >How to View Activity Status</a
         ></strong
       >
       <ul>
@@ -55,13 +55,6 @@
         </li>
         <li>
           <strong
-            ><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
-              >Per-server Control</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
             ><a href="#h_01HTJA8QV5M1VHRW89M024JHDT"
               >Connection Settings</a
             ></strong
@@ -74,17 +67,25 @@
         </li>
         <li>
           <strong
+            ><a href="#h_01HTJA8QV57FRX82WP3T41Z3G8"
+              >Per-server Control</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
             ><a href="#h_01J5NNZS153N6H9V1S5A6WMMPK"
               >Recent Activity History</a
             ></strong
           >
         </li>
-        <li><strong>Who Can Join My Game</strong></li>
       </ul>
     </li>
   </ul>
 </div>
-<h1 id="h_01HTJA8QV5YFRR10TQ9RBZM8SS">What is Activity Sharing on Discord?</h1>
+<h1 id="h_01HTJA8QV5YFRR10TQ9RBZM8SS">
+  What is Activity Status (Recent Activity)?
+</h1>
 <p>
   When you engage in certain detectable activities (like playing a game or
   listening to music), Discord can display information about those activities.
@@ -182,7 +183,7 @@
     <span style="color: #666666">Example of Game Activity Notification</span>
   </h4>
 </div>
-<h1 id="h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity</h1>
+<h1 id="h_01HTJA8QV5TNKJRY98GXQSHJQQ">How to View Activity Status</h1>
 <p>Activity can be seen in multiple places within the Discord app.</p>
 <h2 id="h_01HTJA8QV5GP22NWFTXYNKW3GX">Within User Profiles</h2>
 <p>
@@ -288,40 +289,30 @@
 </p>
 <p>
   2. Then, select <strong>Activity Privacy </strong>where you will find your
-  <strong>Activity</strong> settings.
+  <strong>Activity Status</strong> settings.
 </p>
 <p>
   3. Here you can enable or disable your activity status by toggling the
-  following settings.
-</p>
-<p>First, decide whether you’d like to share your activity with others:</p>
-<ul>
-  <li>
-    <strong>Share my activity</strong> - This toggle controls whether or not
-    others on Discord can see your activity sharing.
-  </li>
-</ul>
-<p>
-  When sharing your activity, decide which servers you share your activity with
-  in the <strong>Servers I share with</strong> section:
+  following settings: 
 </p>
 <ul>
   <li>
-    <strong>Automatically share my activity when joining a server</strong> -
-    This toggle determines if your activity is visible by default in new servers
-    that you join.
+    <strong>Share your activity with others: </strong>This toggle controls
+    whether or not anyone on Discord can see your activity status. 
   </li>
   <li>
-    <strong>My Servers</strong> - Further customize your activity sharing by
-    enabling or disabling your activity sharing on a per server basis.
+    <strong
+      >Share your activity status by default when joining large servers: </strong
+    >This toggle allows your activity status to automatically display as a
+    status message in the members list in servers you join.
   </li>
 </ul>
 <p>
-  If your activity sharing is enabled in a server, you’ll see a check mark [<img
+  If enabled, you’ll see a check mark [<img
     src="https://support.discord.com/hc/article_attachments/22536161098775"
     width="27"
     height="24"
-  />] next to its name. If disabled, you’ll see an [<img
+  />]. If disabled, you’ll see an [<img
     src="https://support.discord.com/hc/article_attachments/22536161114903"
     width="25"
     height="24"
@@ -339,6 +330,35 @@
   for you. You can always change your settings by following the instructions
   above.
 </div>
+<h2 id="h_01HTJA8QV5M1VHRW89M024JHDT">Connections Settings</h2>
+<p>
+  For any connected accounts that support sharing recent activity or rich
+  presence, you’ll see a toggle to share your activity with others in the
+  <strong>Connections</strong> menu located within your
+  <strong>User Settings &gt; Connections</strong>. 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/22536176616599"
+    width="624"
+    height="264"
+  />
+</p>
+<p>You can enable or disable each individual connection.</p>
+<h2 id="h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</h2>
+<p>
+  You can enable or disable individual games from being displayed as activity in
+  the <strong>Registered Games</strong> menu located within your
+  <strong>User Settings &gt; </strong>under <strong>Activity Settings</strong>.
+  Activity will be shared as long as the global setting is also on.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/22536176626583"
+    width="624"
+    height="237"
+  />
+</p>
 <h2 id="h_01HTJA8QV57FRX82WP3T41Z3G8">Per-server Control</h2>
 <div class="tip-box">
   <strong>Note:</strong> Activity Status is automatically enabled for servers
@@ -378,35 +398,6 @@
   time. The activity shown in that experiment features are controlled by global,
   connection, and game-level controls within Discord.
 </div>
-<h2 id="h_01HTJA8QV5M1VHRW89M024JHDT">Connections Settings</h2>
-<p>
-  For any connected accounts that support sharing recent activity or rich
-  presence, you’ll see a toggle to share your activity with others in the
-  <strong>Connections</strong> menu located within your
-  <strong>User Settings &gt; Connections</strong>. 
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/22536176616599"
-    width="624"
-    height="264"
-  />
-</p>
-<p>You can enable or disable each individual connection.</p>
-<h2 id="h_01HTJA8QV5ABSA6FY6GEPMA946">Game Detection</h2>
-<p>
-  You can enable or disable individual games from being displayed as activity in
-  the <strong>Registered Games</strong> menu located within your
-  <strong>User Settings &gt; </strong>under <strong>Activity Settings</strong>.
-  Activity will be shared as long as the global setting is also on.
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/22536176626583"
-    width="624"
-    height="237"
-  />
-</p>
 <h2 id="h_01J5NNZS153N6H9V1S5A6WMMPK">
   <span style="color: #434343">Recent Activity History</span>
 </h2>
@@ -467,20 +458,5 @@
     src="https://support.discord.com/hc/article_attachments/25750632689047"
     width="624"
     height="427"
-  />
-</p>
-<h2 id="h_01K2JEV10ZY89CHQ5JXCSQPM10" class="wysiwyg-text-align-left">
-  Who Can Join My Games
-</h2>
-<p>
-  If you are sharing your activity and playing a game that supports rich
-  presence, friends and other server members who are in the same voice channel
-  as you can join the same game you’re playing. You have two options that you
-  can enable:
-</p>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/34162390324631"
-    alt="activity-sharing-who-can-join-my-games.png"
   />
 </p>
