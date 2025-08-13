@@ -1,16 +1,14 @@
-<h3>
-  Note: This feature is currently only available on Desktop and Browser
-  clients! 
-</h3>
+<div class="exp-box">
+  <strong>Important:</strong> We’re continuing to improve our notifications
+  system. Your inbox may be in a different location, have a different icon, or
+  show slightly different messages or layouts as part of an experiment.
+</div>
 <p>
-  <br />Ever wish you had an easier way to quickly check up on conversations
-  across all your channels? Us too. That’s why we’ve added<strong>
-    Inbox</strong
-  >
-  - a message center where you can view all of your unread messages and
-  mentions!
+  Ever wish you had an easier way to quickly check up on conversations across
+  all your channels? Us too. That’s why we’ve added<strong> Inbox</strong> - a
+  message center where you can view all of your unread messages and mentions!
 </p>
-<h4 class="wysiwyg-text-align-center">
+<h4 id="h_01K2JF2FGT7KCJ41ZQT579PR4N" class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/360060406532"
     alt="inbox_opening_and_closing_demo.gif"
@@ -18,8 +16,9 @@
     height="421"
   /><br /><span class="wysiwyg-font-size-medium">You've Got Mail 📧</span>
 </h4>
-<h3 class="wysiwyg-text-align-center">
-  Note: Our previous @ mentions tab has been moved into Inbox.
+<h3 id="h_01K2JF2FGTTJE39DQ8XK4SMNME">
+  Note: This feature is currently only available on Desktop and Browser
+  clients! 
 </h3>
 <p>
   <span class="wysiwyg-font-size-large"
@@ -138,8 +137,10 @@
     height="237"
   />
 </p>
-<h3>Note: Mention messages will automatically clear after 7 days.</h3>
-<h1>ACCESSING UNREADS</h1>
+<h3 id="h_01K2JF2FGT60PRA424VFAW6QEH">
+  Note: Mention messages will automatically clear after 7 days.
+</h3>
+<h1 id="h_01K2JF2FGTGYCGZSRM7X1WEWNX">ACCESSING UNREADS</h1>
 <p class="wysiwyg-text-align-center">
    <img
     src="https://support.discord.com/hc/article_attachments/360060407512"
