@@ -63624,9 +63624,9 @@ strong {
   font-weight: var(--font-weight-semibold);
 }
 .searchTokenTopLevel_bd8186 {
-  font-size: 12px;
-  height: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
   padding: 0 var(--space-4);
 }
 .searchFilter_bd8186 + .searchFilter_bd8186 {
@@ -66823,9 +66823,6 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 .platform-win .bar_c38106 {
   padding-right: 0;
-}
-.shortBar_c38106 {
-  --custom-app-top-bar-height: 24px;
 }
 .systemBar_c38106 {
   display: none;
@@ -87983,6 +87980,12 @@ img[alt] {
   );
   --custom-message-margin-horizontal: var(--space-md);
 }
+.refresh-title-bar-small {
+  --custom-app-top-bar-height: calc(16px + var(--space-8));
+}
+.refresh-title-bar-large {
+  --custom-app-top-bar-height: calc(32px + var(--space-8));
+}
 .refresh-fast-follow-avatars {
   --custom-guild-list-padding: min(var(--space-md), var(--space-16));
   --custom-guild-list-width: calc(
@@ -88062,4 +88065,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0770c2bee7084d3e.css.map*/
+/*# sourceMappingURL=12633.2293a498d674e06f.css.map*/
