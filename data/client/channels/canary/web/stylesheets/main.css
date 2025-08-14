@@ -87297,8 +87297,6 @@ code {
   --custom-scrollbar-border-radius: calc(
     var(--custom-scrollbar-scrollbar-width) / 2
   );
-  --custom-create-welcome-channel-modal-emoji-size: 20px;
-  --custom-create-welcome-channel-modal-input-elements-padding: 10px;
   --custom-voice-channel-effect-voice-channel-effect-animation-size: 800px;
   --custom-voice-channel-effects-bar-effect-bar-padding-x: 16px;
   --custom-voice-channel-effects-bar-effect-bar-padding-y: 12px;
@@ -88061,4 +88059,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.856a7853d77b2873.css.map*/
+/*# sourceMappingURL=12633.fff8cc3ef2e5ee60.css.map*/
