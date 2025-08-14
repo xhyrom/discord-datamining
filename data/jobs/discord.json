@@ -32,7 +32,7 @@
         }
       ],
       "id": 8083176002,
-      "updated_at": "2025-08-13T15:54:16-04:00",
+      "updated_at": "2025-08-14T12:20:24-04:00",
       "requisition_id": "R-100987",
       "title": "Account Executive, Media and Entertainment",
       "company_name": "Discord",
@@ -48,9 +48,16 @@
       ],
       "offices": [
         {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
+          "id": 4105189002,
+          "name": "Los Angeles Metro Area",
           "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4105187002,
+          "name": "New York, NY",
+          "location": "New York, New York, United States",
           "child_ids": [],
           "parent_id": null
         }
@@ -88,7 +95,7 @@
         }
       ],
       "id": 8086588002,
-      "updated_at": "2025-08-13T15:54:34-04:00",
+      "updated_at": "2025-08-14T12:20:24-04:00",
       "requisition_id": "R-100987",
       "title": "Account Executive, Media and Entertainment",
       "company_name": "Discord",
@@ -104,9 +111,16 @@
       ],
       "offices": [
         {
-          "id": 4082816002,
-          "name": "Remote (U.S.)",
+          "id": 4105189002,
+          "name": "Los Angeles Metro Area",
           "location": null,
+          "child_ids": [],
+          "parent_id": null
+        },
+        {
+          "id": 4105187002,
+          "name": "New York, NY",
+          "location": "New York, New York, United States",
           "child_ids": [],
           "parent_id": null
         }
