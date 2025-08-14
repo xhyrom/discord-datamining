@@ -41999,26 +41999,12 @@ img.thumbnail__0f2e8 {
   margin: 16px 0;
   width: 100%;
 }
-.iconButton_af3b89 {
-  align-items: center;
-  display: flex;
-  gap: 4px;
-  justify-content: center;
-  min-width: 40px;
-}
-.iconButton_af3b89 svg {
-  flex: none;
-}
 .primaryActionPopoutActionButtons_af3b89 {
   display: flex;
   gap: 8px;
 }
 .hiddenButRenderedInputField_af3b89 {
   display: none;
-}
-.primaryButton_af3b89,
-.secondaryButton_af3b89 {
-  flex: 1;
 }
 .popoutBlockedWarningIcon_af3b89 {
   margin-bottom: -2px;
@@ -88193,4 +88179,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.27c65ff6f3164d3c.css.map*/
+/*# sourceMappingURL=12633.fc4114787921c130.css.map*/
