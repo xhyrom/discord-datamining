@@ -62651,18 +62651,6 @@ strong {
 .info__51057 {
   flex: 1;
 }
-.buttons__51057 {
-  display: flex;
-}
-.button__51057 {
-  border-radius: 8px;
-  padding: 3px 8px;
-}
-.buttonInner__51057 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
 .chatHeaderBar_dc83f5 {
   align-items: center;
   background-color: var(--background-surface-high);
@@ -88179,4 +88167,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fc4114787921c130.css.map*/
+/*# sourceMappingURL=12633.0452242bbb6bb3fe.css.map*/
