@@ -57368,16 +57368,6 @@ html .progress__61462 {
 .CTAMessage_e887d4 {
   margin-bottom: 2px;
 }
-.CTAMessageButtonOuter_e887d4 {
-  padding-left: 8px;
-}
-.CTAMessageButton_e887d4 {
-  align-items: center;
-  display: flex;
-}
-.CTAMessageSticker_e887d4 {
-  margin-right: 4px;
-}
 .badge__9ec1a {
   margin-left: 16px;
 }
@@ -57464,16 +57454,6 @@ html .progress__61462 {
 }
 .welcomeCTA_f5d1e2 {
   margin-bottom: 2px;
-}
-.welcomeCTAButtonOuter_f5d1e2 {
-  padding-left: 8px;
-}
-.welcomeCTAButton_f5d1e2 {
-  align-items: center;
-  display: flex;
-}
-.welcomeCTASticker_f5d1e2 {
-  margin-right: 4px;
 }
 .content__75e8e {
   background: var(--brand-500);
@@ -88065,4 +88045,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2293a498d674e06f.css.map*/
+/*# sourceMappingURL=12633.319ca34f75fd7f03.css.map*/
