@@ -20710,14 +20710,6 @@ img.inlineAsset__9c640 {
     background-position: 50% 100%;
   }
 }
-@keyframes gradientUsernameAnimation_dfb989 {
-  0% {
-    background-position: 100%;
-  }
-  to {
-    background-position: -100%;
-  }
-}
 @keyframes neon-flicker-animation_dfb989 {
   0%,
   15%,
@@ -88069,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.02f13d0b9a95be96.css.map*/
+/*# sourceMappingURL=12633.856a7853d77b2873.css.map*/
