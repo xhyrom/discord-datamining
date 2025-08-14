@@ -1034,8 +1034,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -1043,8 +1043,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "8"
         }
@@ -3432,8 +3432,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3684,14 +3684,14 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
-      },
-      {
         "id": "1389986893399199907",
         "sku": "1389986893399199907",
         "distributor": "nvidia_gdn_app"
+      },
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
       }
     ],
     "linked_games": [
@@ -3709,14 +3709,14 @@
     "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "fortniteclient-win64-shipping_eac_eos.exe",
         "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
+        "is_launcher": false
       },
       {
         "os": "win32",
@@ -3745,14 +3745,14 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
-      },
-      {
         "id": "1389986893399199907",
         "sku": "1389986893399199907",
         "distributor": "nvidia_gdn_app"
+      },
+      {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
       }
     ],
     "bot": {
@@ -3786,6 +3786,11 @@
     ],
     "executables": [
       {
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping_eac_eos.exe",
+        "is_launcher": true
+      },
+      {
         "os": "darwin",
         "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
@@ -3794,11 +3799,6 @@
         "os": "win32",
         "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping_eac_eos.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -3902,14 +3902,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "294041",
-        "sku": "294041",
-        "distributor": "igdb"
-      },
-      {
         "id": "2767030",
         "sku": "2767030",
         "distributor": "steam"
+      },
+      {
+        "id": "294041",
+        "sku": "294041",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -3987,12 +3987,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_beta_/wow-64.exe",
+        "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       },
       {
@@ -4002,22 +4002,22 @@
       },
       {
         "os": "win32",
-        "name": "_beta_/wow.exe",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow-64.exe",
+        "name": "_beta_/wow-64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "_retail_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow-64.exe",
         "is_launcher": false
       }
     ],
@@ -4089,12 +4089,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "wc3.exe",
+        "name": "warcraft iii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warcraft iii.exe",
+        "name": "wc3.exe",
         "is_launcher": false
       },
       {
@@ -4189,17 +4189,17 @@
       },
       {
         "os": "win32",
+        "name": "sc2_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "sc2.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "sc2.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "sc2_x64.exe",
         "is_launcher": false
       }
     ],
@@ -4272,12 +4272,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "diablo ii.exe",
+        "name": "diablo ii/game.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "diablo ii/game.exe",
+        "name": "diablo ii.exe",
         "is_launcher": false
       }
     ],
@@ -4319,11 +4319,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "diablo iii.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "diablo iii.exe",
         "is_launcher": false
@@ -4331,6 +4326,11 @@
       {
         "os": "win32",
         "name": "diablo iii64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "diablo iii.app",
         "is_launcher": false
       }
     ],
@@ -4353,14 +4353,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2344520",
-        "sku": "2344520",
-        "distributor": "steam"
-      },
-      {
         "id": "125165",
         "sku": "125165",
         "distributor": "igdb"
+      },
+      {
+        "id": "2344520",
+        "sku": "2344520",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -4402,19 +4402,36 @@
     "flags": 0
   },
   {
-    "id": "356869127241072640",
+    "id": "1402418696126992445",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
     "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "bot": {
+      "id": "1402418696126992445",
+      "username": "League of Legends",
+      "global_name": null,
+      "avatar": "5a15a24a3931880801709a32accd0a1d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6763",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418696126992445",
+        "id": "356869127241072640",
         "type": 1
       }
     ],
@@ -4423,11 +4440,20 @@
     "aliases": [
       "League of Legends (TW)"
     ],
-    "guild_id": "417825368062558219",
     "executables": [
       {
         "os": "darwin",
-        "name": "lollauncher.app",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -4437,30 +4463,22 @@
       },
       {
         "os": "darwin",
-        "name": "leagueoflegends.app",
+        "name": "lollauncher.app",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "verify_key": "616e10786519af6f2e45bffc1ced49c3cf69fbf4ce2b6636e7bb1be0e13665e9",
     "flags": 0
   },
   {
@@ -4513,18 +4531,35 @@
     "flags": 0
   },
   {
-    "id": "633832498614370323",
+    "id": "1402418693958275202",
     "name": "Legends of Runeterra",
-    "icon": "4f42c52dac4e8d8943cdeb055338754b",
+    "icon": "c8df134d6d668c2fc27217396cbc2c48",
     "description": "Set in the world of League of Legends, Legends of Runeterra is the strategy card game where skill, creativity, and cleverness determine your success. Choose your champions and combine cards from different regions—each with their own style and strategic advantage—then build the perfect deck to take down the rest.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
+    "bot": {
+      "id": "1402418693958275202",
+      "username": "Legends of Runeterra",
+      "global_name": null,
+      "avatar": "c8df134d6d668c2fc27217396cbc2c48",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5707",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418693958275202",
+        "id": "633832498614370323",
         "type": 1
       }
     ],
@@ -4537,10 +4572,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "1ea540b400de1979c6bf9c19a7ce1d3c67593683a31e545d5002d1d676261a6c",
+    "verify_key": "e1fb81d553c140728f507a288cbfe8df32f0b6c484ebd184b3e3bab9d1927b9f",
     "flags": 0
   },
   {
@@ -4615,19 +4652,36 @@
     "flags": 0
   },
   {
-    "id": "356869127241072640",
+    "id": "1402418696126992445",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
     "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "bot": {
+      "id": "1402418696126992445",
+      "username": "League of Legends",
+      "global_name": null,
+      "avatar": "5a15a24a3931880801709a32accd0a1d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6763",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418696126992445",
+        "id": "356869127241072640",
         "type": 1
       }
     ],
@@ -4636,11 +4690,10 @@
     "aliases": [
       "League of Legends (TW)"
     ],
-    "guild_id": "417825368062558219",
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -4655,34 +4708,36 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "lollauncher.app",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "verify_key": "616e10786519af6f2e45bffc1ced49c3cf69fbf4ce2b6636e7bb1be0e13665e9",
     "flags": 0
   },
   {
-    "id": "356875570916753438",
+    "id": "1402418491272986635",
     "name": "Minecraft",
     "icon": "166fbad351ecdd02d11a3b464748f66b",
     "description": "A procedurally-generated game of world exploration, resource harvesting, and freeform construction. It supports local and online multiplayer, and is regularly updated with new content and features.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4693,9 +4748,26 @@
         "distributor": "microsoft"
       }
     ],
+    "bot": {
+      "id": "1402418491272986635",
+      "username": "Minecraft",
+      "global_name": null,
+      "avatar": "166fbad351ecdd02d11a3b464748f66b",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "9463",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418491272986635",
+        "id": "356875570916753438",
         "type": 1
       }
     ],
@@ -4704,7 +4776,6 @@
       "Minecraft Launcher",
       "Minecraft Windows 10 Edition"
     ],
-    "guild_id": "302094807046684672",
     "executables": [
       {
         "os": "darwin",
@@ -4720,6 +4791,11 @@
       },
       {
         "os": "win32",
+        "name": "content/minecraft.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "minecraft.windows.exe",
         "is_launcher": false
       },
@@ -4727,18 +4803,15 @@
         "os": "win32",
         "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "content/minecraft.exe",
-        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "9738b62c8fc186016d31c15dcd645eb481d6f28378ebd759f79f057b133d583f",
+    "verify_key": "6cae0916f2bec7880719903eab02f72f1a1b4aac97555358502d4fe8e8a0020b",
     "flags": 0
   },
   {
@@ -4797,12 +4870,12 @@
     "flags": 0
   },
   {
-    "id": "432980957394370572",
+    "id": "1402418703554842694",
     "name": "Fortnite",
     "icon": "c1864b38910c209afd5bf6423b672022",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -4820,9 +4893,26 @@
         "distributor": "nvidia_gdn_app"
       }
     ],
+    "bot": {
+      "id": "1402418703554842694",
+      "username": "Fortnite",
+      "global_name": null,
+      "avatar": "c1864b38910c209afd5bf6423b672022",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2332",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418703554842694",
+        "id": "432980957394370572",
         "type": 1
       }
     ],
@@ -4832,11 +4922,10 @@
     "aliases": [
       "Epic Games Launcher"
     ],
-    "guild_id": "322850917248663552",
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -4845,36 +4934,37 @@
         "is_launcher": true
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "08d636fce21be4d2a5eb4e907dd2cf42a75e2b35825ef9a97b1a171403c3237d",
+    "verify_key": "99d096c737ea1a7b79aa9608cba81bfa084bf8fb13df44701c6a8dbf3c416a2f",
     "flags": 0
   },
   {
-    "id": "356876176465199104",
+    "id": "1402418714716143646",
     "name": "Grand Theft Auto V Legacy",
-    "icon": "4628d9240d9f3fb68f98d55352fef553",
+    "icon": "b77111108195cd5e4dd2011dd39bf67d",
     "description": "A young street hustler, a retired bank robber, and a terrifying psychopath must pull off a series of dangerous heists to survive in a ruthless city in which they can trust nobody — least of all each other. ",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "f5747887acb51da9b2c252e7ec6292ca",
     "splash": "6063707ba43224ee22f9de7bf0339aa1",
-    "primary_sku_id": "491748506516717599",
     "third_party_skus": [
       {
-        "id": "491748506516717599",
-        "sku": "491748506516717599",
-        "distributor": "discord"
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
       },
       {
         "id": "3240220",
@@ -4882,14 +4972,31 @@
         "distributor": "steam"
       },
       {
-        "id": "271590",
-        "sku": "271590",
-        "distributor": "steam"
+        "id": "491748506516717599",
+        "sku": "491748506516717599",
+        "distributor": "discord"
       }
     ],
+    "bot": {
+      "id": "1402418714716143646",
+      "username": "Grand Theft Auto V Legacy",
+      "global_name": null,
+      "avatar": "b77111108195cd5e4dd2011dd39bf67d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4598",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418714716143646",
+        "id": "356876176465199104",
         "type": 1
       }
     ],
@@ -4900,21 +5007,15 @@
       "Grand Theft Auto V Enhanced",
       "Grand Theft Auto V Legacy"
     ],
-    "slug": "grand-theft-auto-v-legacy",
     "executables": [
       {
         "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "grand theft auto v/gta5_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
         "is_launcher": false
       },
       {
@@ -4924,30 +5025,37 @@
       },
       {
         "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "gta5.exe",
+        "name": "grand theft auto v/ragepluginhook.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "grand theft auto v/gta5.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "subprocess/fivem_gtaprocess.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "gta5.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "cad0fdcbcab042cb436c3a66f0647376c5fbae4d1120a349bc6b5807f4cdb642",
+    "verify_key": "93a20ef98705a5af28e9a4aece0670f58d955791b8a1ceddcaef47ce0fbd7833",
     "flags": 0
   },
   {
@@ -5021,11 +5129,6 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "darwin",
-        "name": "osx64/dota2.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "dota2.exe",
         "is_launcher": false
@@ -5033,6 +5136,11 @@
       {
         "os": "darwin",
         "name": "dota_osx.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "osx64/dota2.app",
         "is_launcher": false
       }
     ],
@@ -5070,12 +5178,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bakkesmod/plugininstaller.exe",
+        "name": "rocketleague.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rocketleague.exe",
+        "name": "bakkesmod/plugininstaller.exe",
         "is_launcher": false
       }
     ],
@@ -5087,12 +5195,12 @@
     "flags": 0
   },
   {
-    "id": "1149118246826561609",
+    "id": "1402418487745581248",
     "name": "Call of Duty®: MWIII",
     "icon": "7dd9116c1287c1469cd14329cbc9c46f",
     "description": "",
     "summary": "",
-    "type": null,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5105,13 +5213,13 @@
       }
     ],
     "bot": {
-      "id": "1149118246826561609",
-      "username": "Modern Warfare III",
+      "id": "1402418487745581248",
+      "username": "Call of Duty® MWIII",
       "global_name": null,
       "avatar": "7dd9116c1287c1469cd14329cbc9c46f",
       "avatar_decoration_data": null,
       "collectibles": null,
-      "discriminator": "7504",
+      "discriminator": "2158",
       "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
@@ -5123,7 +5231,7 @@
     },
     "linked_games": [
       {
-        "id": "1402418487745581248",
+        "id": "1149118246826561609",
         "type": 1
       }
     ],
@@ -5139,12 +5247,12 @@
       },
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
+        "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "mp23/mp23-cod.exe",
+        "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -5154,16 +5262,16 @@
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c96a77a0041bfb4c3cd4d24b2d56c665998da353e0d9a88757bfe579d2004097",
+    "verify_key": "7e3e0811ce821033ee839b819981cf3243b0808c4b32283d6c92d8d9eb8a7049",
     "flags": 0
   },
   {
-    "id": "356873622985506820",
+    "id": "1402418717781921935",
     "name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
-    "icon": "d8cd6c5b1fe5b64ad2e0f660238eb43e",
+    "icon": "f8d60c2d38ebd3cd183ca6fad58c9be6",
     "description": "Led by the modder behind the Battle Royale mods for the ArmA series, PlayerUnknown's Battlegrounds is a shooter that pits 100 players in a large empty location where they must scavenge for weapons and fight to the death.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5175,9 +5283,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418717781921935",
+      "username": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+      "global_name": null,
+      "avatar": "f8d60c2d38ebd3cd183ca6fad58c9be6",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3067",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418717781921935",
+        "id": "356873622985506820",
         "type": 1
       }
     ],
@@ -5188,21 +5313,15 @@
       "PUBG",
       "PUBG: BATTLEGROUNDS"
     ],
-    "guild_id": "207018395139309569",
     "executables": [
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/tslgame_uc.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       },
       {
@@ -5212,15 +5331,22 @@
       },
       {
         "os": "win32",
-        "name": "tslgame_be.exe",
+        "name": "win64/tslgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_uc.exe",
         "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "8c42503ece8b4b528c7efdb1c340eff7df60973cf18f68692c3550dd569c1f57",
+    "verify_key": "59058276662fe3c107d2bf2933f3ecf6154048aced9133fbc30390fd0ab81c74",
     "flags": 0
   },
   {
@@ -5235,14 +5361,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "1172470",
-        "sku": "1172470",
-        "distributor": "steam"
-      },
-      {
         "id": "",
         "sku": "",
         "distributor": "origin"
+      },
+      {
+        "id": "1172470",
+        "sku": "1172470",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -5253,12 +5379,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apex legends/r5apex.exe",
+        "name": "r5apex_dx12.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "r5apex_dx12.exe",
+        "name": "apex legends/r5apex.exe",
         "is_launcher": false
       },
       {
@@ -5308,12 +5434,12 @@
     "flags": 0
   },
   {
-    "id": "946609449680908348",
+    "id": "1402418436809953330",
     "name": "ELDEN RING",
     "icon": "0a0c0a0be069dddfc3f1fbede4e34bfd",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5324,9 +5450,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418436809953330",
+      "username": "ELDEN RING",
+      "global_name": null,
+      "avatar": "0a0c0a0be069dddfc3f1fbede4e34bfd",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5642",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418436809953330",
+        "id": "946609449680908348",
         "type": 1
       }
     ],
@@ -5343,10 +5486,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "b4f72a8c737a8e9157ccbaddbd1e705af195d8cec53e5642f6ec7869e841cb34",
+    "verify_key": "701051f7ec52a39d92fdfbe3702d9bb91c32bd512c646ee0e98e6e7a08cf97b3",
     "flags": 0
   },
   {
@@ -5383,17 +5528,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
+        "name": "rainbowsixgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tom clancy's rainbow six siege/rainbowsix_vulkan.exe",
         "is_launcher": false
       },
       {
@@ -5403,7 +5548,7 @@
       },
       {
         "os": "win32",
-        "name": "rainbowsixgame.exe",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       }
     ],
@@ -5585,14 +5730,14 @@
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
-        "id": "1222670",
-        "sku": "1222670",
-        "distributor": "steam"
-      },
-      {
         "id": "3212",
         "sku": "3212",
         "distributor": "igdb"
+      },
+      {
+        "id": "1222670",
+        "sku": "1222670",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -5601,8 +5746,8 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "the sims 4.app",
+        "os": "win32",
+        "name": "ts4_x64.exe",
         "is_launcher": false
       },
       {
@@ -5611,13 +5756,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "ts4.exe",
+        "os": "darwin",
+        "name": "the sims 4.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "ts4_x64.exe",
+        "name": "ts4.exe",
         "is_launcher": false
       }
     ],
@@ -5676,12 +5821,12 @@
     "flags": 0
   },
   {
-    "id": "1116835216464543946",
+    "id": "1402418103702524046",
     "name": "Phasmophobia",
-    "icon": "da31ba4cb53774d3cad25780244ee813",
+    "icon": "f65b973be17cd0d2413f34a836279fae",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5693,13 +5838,13 @@
       }
     ],
     "bot": {
-      "id": "1116835216464543946",
+      "id": "1402418103702524046",
       "username": "Phasmophobia",
       "global_name": null,
-      "avatar": "da31ba4cb53774d3cad25780244ee813",
+      "avatar": "f65b973be17cd0d2413f34a836279fae",
       "avatar_decoration_data": null,
       "collectibles": null,
-      "discriminator": "6537",
+      "discriminator": "9016",
       "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
@@ -5711,7 +5856,7 @@
     },
     "linked_games": [
       {
-        "id": "1402418103702524046",
+        "id": "1116835216464543946",
         "type": 1
       }
     ],
@@ -5732,7 +5877,7 @@
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "fd4e6b61d4e8b9f76081f2f10e2ff61da2c5e5f850fdd24c24c390fb05c923e3",
+    "verify_key": "4624c5ab9df1b26610379e578e292041574d4cad58c5f056cd88ead1dc3ecb03",
     "flags": 0
   },
   {
@@ -5812,12 +5957,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -5831,12 +5976,12 @@
     "flags": 0
   },
   {
-    "id": "356888738724446208",
+    "id": "1402418594532298837",
     "name": "Rust",
     "icon": "9ab7e18473429b016307b867e6c924a4",
     "description": "From the makers of Garry's Mod, Rust is a multiplayer survival game with combat elements.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -5849,9 +5994,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418594532298837",
+      "username": "Rust",
+      "global_name": null,
+      "avatar": "9ab7e18473429b016307b867e6c924a4",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0676",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418594532298837",
+        "id": "356888738724446208",
         "type": 1
       }
     ],
@@ -5861,7 +6023,6 @@
     "aliases": [
       "Rust"
     ],
-    "guild_id": "560127830160048128",
     "executables": [
       {
         "os": "win32",
@@ -5880,10 +6041,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "af3ab45d3cdf8a4552d522b6d79a1cff75142a29da5f4a73411b91099fa5f9dc",
+    "verify_key": "5d70f13e387d07458a4c9c3561dc7d5f62aa8548917742e3c768a9bd7dc8ac27",
     "flags": 0
   },
   {
@@ -5918,27 +6081,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_retail_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_beta_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       },
       {
@@ -5948,7 +6096,22 @@
       },
       {
         "os": "win32",
+        "name": "_ptr_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow-64.exe",
         "is_launcher": false
       }
     ],
@@ -6087,22 +6250,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deadbydaylight-egs-shipping.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
         "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
+        "name": "deadbydaylight-egs-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "deadbydaylight.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": true
       }
     ],
@@ -6114,12 +6277,12 @@
     "flags": 0
   },
   {
-    "id": "359508713658253318",
+    "id": "1402418075726254102",
     "name": "Euro Truck Simulator 2",
     "icon": "46bfdfc58e4eacbfde29b2461e118e78",
     "description": "Travel across Europe as a trucker delivering cargo in a variety of trucks.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6131,9 +6294,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418075726254102",
+      "username": "Euro Truck Simulator 2",
+      "global_name": null,
+      "avatar": "46bfdfc58e4eacbfde29b2461e118e78",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6281",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418075726254102",
+        "id": "359508713658253318",
         "type": 1
       }
     ],
@@ -6147,10 +6327,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "495bddf835a15af54a9616e9f1f1798897e3a1d1e8f7576fed0134468e00d3f4",
+    "verify_key": "90ddf509545f8253a0d6957e42c2b40a1890eb9bf140ba5263231f246b8f00e5",
     "flags": 0
   },
   {
@@ -6222,12 +6404,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "stardew valley/stardew valley.exe",
+        "name": "stardew valley.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "stardew valley.exe",
+        "name": "stardew valley/stardew valley.exe",
         "is_launcher": false
       }
     ],
@@ -6239,45 +6421,61 @@
     "flags": 0
   },
   {
-    "id": "367827983903490050",
+    "id": "1402418239342120960",
     "name": "osu!",
     "icon": "ea86f6c52576847a7cb81f1c1faa18a3",
     "description": "click the circles! to the beat!",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "b76db81b683527961ee1432c24a02774",
     "splash": "8029278a3fab0e30108bd335f26ab8a0",
-    "primary_sku_id": "367827983903490050",
+    "bot": {
+      "id": "1402418239342120960",
+      "username": "osu!",
+      "global_name": null,
+      "avatar": "ea86f6c52576847a7cb81f1c1faa18a3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8922",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418239342120960",
+        "id": "367827983903490050",
         "type": 1
       }
     ],
     "overlay": true,
     "hook": true,
-    "slug": "osu",
-    "guild_id": "188630481301012481",
     "executables": [
-      {
-        "os": "win32",
-        "name": "osu!.exe",
-        "is_launcher": false
-      },
       {
         "os": "darwin",
         "name": "osu!.app",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "osu!.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "abc0dcbf6dbb4d449ad89da9bdec270a12b8a427099ef2609be2d3fdae150b29",
+    "verify_key": "c59b07479703646be88020d2bf9e669576bac3ca283237b93c567e44654da19a",
     "flags": 0
   },
   {
@@ -6402,8 +6600,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "wuthering waves.exe",
+        "os": "darwin",
+        "name": "wutheringwaves.app",
         "is_launcher": false
       },
       {
@@ -6412,8 +6610,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "wutheringwaves.app",
+        "os": "win32",
+        "name": "wuthering waves.exe",
         "is_launcher": false
       },
       {
@@ -6432,12 +6630,12 @@
     "flags": 0
   },
   {
-    "id": "477175586805252107",
+    "id": "1402418440685486130",
     "name": "Among Us",
-    "icon": "5f0b1e7a94dc2018538256165bc8b059",
+    "icon": "e6cf30ebdaf6e657f636f391b29f06f8",
     "description": "Play with 4-15 player online or via local WiFi as you attempt to prepare your spaceship for departure, but beware as one or more random players among the Crew are Impostors bent on killing everyone!",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6449,10 +6647,26 @@
         "distributor": "steam"
       }
     ],
-    "deeplink_uri": "https://innersloth.com",
+    "bot": {
+      "id": "1402418440685486130",
+      "username": "Among Us",
+      "global_name": null,
+      "avatar": "e6cf30ebdaf6e657f636f391b29f06f8",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4101",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418440685486130",
+        "id": "477175586805252107",
         "type": 1
       }
     ],
@@ -6464,7 +6678,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
+        "name": "among us/among us.exe",
         "is_launcher": false
       },
       {
@@ -6474,29 +6688,31 @@
       },
       {
         "os": "win32",
-        "name": "among us - tou/among us.exe",
+        "name": "among us - kopie/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "among us/among us.exe",
+        "name": "among us - tou/among us.exe",
         "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "8fd675e78dd5ce2c5c0177299b6ddf11014ffe65c4d8334c4d5c3691b6918d5c",
+    "verify_key": "994229fd8d781cc2519eaee7e219b92c2ac9b14e5068d7e9e6547bf39136bd85",
     "flags": 0
   },
   {
-    "id": "356943499456937984",
+    "id": "1402418344912752671",
     "name": "Terraria",
     "icon": "4c3c185abc0dfb4cb1ec5612de4d7366",
     "description": "The first major 2D entry into the world of \"open world\" sandbox action-adventure games, Terraria is inspired by 16-bit platformers and allows players to mine for ores, craft new equipment, and fight monstrous bosses in a large procedurally-generated world.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -6508,9 +6724,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418344912752671",
+      "username": "Terraria",
+      "global_name": null,
+      "avatar": "4c3c185abc0dfb4cb1ec5612de4d7366",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8224",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418344912752671",
+        "id": "356943499456937984",
         "type": 1
       }
     ],
@@ -6518,8 +6751,12 @@
     "aliases": [
       "Terraria"
     ],
-    "guild_id": "251072485095636994",
     "executables": [
+      {
+        "os": "darwin",
+        "name": "terraria.app",
+        "is_launcher": false
+      },
       {
         "os": "win32",
         "name": "terraria.exe",
@@ -6534,46 +6771,60 @@
         "os": "win32",
         "name": "terraria/terraria.exe",
         "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "terraria.app",
-        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "37e057d38f0a27d6163bd0a604ec8cceeab80a1ad461f0d51e38713be7f83290",
+    "verify_key": "44f16b5cd0a8d5c257f5c37c3b56f64c3cc2ff711fed4238e045c75188b6d0f6",
     "flags": 0
   },
   {
-    "id": "614380482620293151",
+    "id": "1402418571715543120",
     "name": "Bloons TD 6",
-    "icon": "964bba45cea807405b9919863052277c",
+    "icon": "402b7d937b77b29665b100a796467359",
     "description": "The Bloons are back and better than ever! Get ready for a massive 3D tower defense game designed to give you hours and hours of the best strategy gaming available.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "960090",
-        "sku": "960090",
-        "distributor": "steam"
-      },
-      {
         "id": "com.ninjakiwi.bloonstd6",
         "sku": "com.ninjakiwi.bloonstd6",
         "distributor": "google_play"
+      },
+      {
+        "id": "960090",
+        "sku": "960090",
+        "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418571715543120",
+      "username": "Bloons TD 6",
+      "global_name": null,
+      "avatar": "402b7d937b77b29665b100a796467359",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5103",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418571715543120",
+        "id": "614380482620293151",
         "type": 1
       }
     ],
@@ -6584,7 +6835,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6/bloonstd6.exe",
         "is_launcher": false
       },
       {
@@ -6594,15 +6845,17 @@
       },
       {
         "os": "win32",
-        "name": "bloonstd6/bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "f33f299680a4d2b300c9e0d42c841466f1798bff9e764adc82d452819839d134",
+    "verify_key": "c0de9d8d731b7b2dfd27a7a57a3572817a18a0719640476a3a0c627713196606",
     "flags": 0
   },
   {
@@ -6617,14 +6870,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2074920",
-        "sku": "2074920",
-        "distributor": "steam"
-      },
-      {
         "id": "208476",
         "sku": "208476",
         "distributor": "igdb"
+      },
+      {
+        "id": "2074920",
+        "sku": "2074920",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -6662,24 +6915,40 @@
     "flags": 0
   },
   {
-    "id": "356888961353908224",
+    "id": "1402418078813523999",
     "name": "World of Tanks",
     "icon": "b8c3c5e2bb400a1154bad072f139f592",
     "description": "World of Tanks is a free-to-play (F2P) massively multiplayer online (MMO) team based action game featuring WWII era tank combat.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "b125c7b6bd1ea27c2cef8b50b09c8c19",
+    "bot": {
+      "id": "1402418078813523999",
+      "username": "World of Tanks",
+      "global_name": null,
+      "avatar": "b8c3c5e2bb400a1154bad072f139f592",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "9092",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418078813523999",
+        "id": "356888961353908224",
         "type": 1
       }
     ],
     "hook": true,
-    "guild_id": "502101454253981697",
     "executables": [
       {
         "os": "win32",
@@ -6688,10 +6957,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "9122ace842b0bc80b0b66bc3361cf255724431b011c5cf4b6d816a6ae2959dc3",
+    "verify_key": "b984e1b9b2d2723f2915a630993a67eb4aba5fa7bc6c3489fb3d72b4e503726e",
     "flags": 0
   },
   {
@@ -6719,8 +6990,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "left4dead2.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -6731,8 +7002,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -6750,32 +7021,49 @@
     "flags": 0
   },
   {
-    "id": "643897785271189524",
+    "id": "1402418648332898466",
     "name": "Red Dead Redemption 2",
-    "icon": "0680b34aa013440df9fce5b0da0d2466",
+    "icon": "75c2c44bff1ae551b476eccc67e8258c",
     "description": "Arthur Morgan and the Van der Linde Gang are outlaws on the run. With federal agents and bounty hunters massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland in order to survive. ",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "6664a082cc47d66f94fb8f6fa9052ec1",
-    "splash": "b68121c4ece68d5ab313f797a5ca1107",
+    "splash": "31b3aabf060b6b0ea55f6f6dc0456eef",
     "third_party_skus": [
-      {
-        "id": "1174180",
-        "sku": "1174180",
-        "distributor": "steam"
-      },
       {
         "id": "25076",
         "sku": "25076",
         "distributor": "igdb"
+      },
+      {
+        "id": "1174180",
+        "sku": "1174180",
+        "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418648332898466",
+      "username": "Red Dead Redemption 2",
+      "global_name": null,
+      "avatar": "75c2c44bff1ae551b476eccc67e8258c",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1585",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418648332898466",
+        "id": "643897785271189524",
         "type": 1
       }
     ],
@@ -6788,10 +7076,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "125e27e185dbcbead0b1f012deb08dfa2d06cc16749dd88e4bac190edd59d8bb",
+    "verify_key": "ce56e3acaca981ab12f49b49d718a5660d72cb241f0e31571ee5d84e2f2825f1",
     "flags": 0
   },
   {
@@ -6827,12 +7117,6 @@
       },
       {
         "os": "win32",
-        "name": "hl2.exe",
-        "arguments": "-game garrysmod",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
@@ -6845,12 +7129,18 @@
       },
       {
         "os": "win32",
-        "name": "win64/gmod.exe",
+        "name": "hl2.exe",
+        "arguments": "-game garrysmod",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bin/gmad.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/gmod.exe",
         "is_launcher": false
       }
     ],
@@ -6906,14 +7196,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125165",
-        "sku": "125165",
-        "distributor": "igdb"
-      },
-      {
         "id": "2344520",
         "sku": "2344520",
         "distributor": "steam"
+      },
+      {
+        "id": "125165",
+        "sku": "125165",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -6980,16 +7270,6 @@
     "guild_id": "118778495085182976",
     "executables": [
       {
-        "os": "darwin",
-        "name": "brawlhalla.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
         "is_launcher": false
@@ -6997,6 +7277,16 @@
       {
         "os": "win32",
         "name": "brawlhalla/brawlhalla.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "brawlhalla.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "brawlhalla.exe",
         "is_launcher": false
       }
     ],
@@ -7101,12 +7391,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "geometry dash/geometrydash.exe",
+        "name": "geometrydash.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "geometrydash.exe",
+        "name": "geometry dash/geometrydash.exe",
         "is_launcher": false
       }
     ],
@@ -7155,38 +7445,37 @@
     "flags": 0
   },
   {
-    "id": "422772752647323649",
+    "id": "1402418586244612216",
     "name": "Warframe",
     "icon": "0d194a16e1a146c8034bf3b7e91ba625",
     "description": "Rich Presence for Warframe",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "6b0e4d8c05e14f630548eccc956324d9",
     "splash": "e5185fe1f9ac1bd77cfdf3b2a5b97448",
-    "primary_sku_id": "494959992483348480",
     "third_party_skus": [
-      {
-        "id": "494959992483348480",
-        "sku": "494959992483348480",
-        "distributor": "discord"
-      },
       {
         "id": "230410",
         "sku": "230410",
         "distributor": "steam"
+      },
+      {
+        "id": "494959992483348480",
+        "sku": "494959992483348480",
+        "distributor": "discord"
       }
     ],
     "bot": {
-      "id": "422772752647323649",
+      "id": "1402418586244612216",
       "username": "Warframe",
       "global_name": null,
-      "avatar": "d007b246f69d95b1d2675d1908113504",
+      "avatar": "0d194a16e1a146c8034bf3b7e91ba625",
       "avatar_decoration_data": null,
       "collectibles": null,
-      "discriminator": "2298",
+      "discriminator": "2928",
       "display_name_styles": null,
       "public_flags": 0,
       "primary_guild": null,
@@ -7198,7 +7487,7 @@
     },
     "linked_games": [
       {
-        "id": "1402418586244612216",
+        "id": "422772752647323649",
         "type": 1
       }
     ],
@@ -7207,17 +7496,15 @@
     "aliases": [
       "Warframe Launcher"
     ],
-    "slug": "warframe",
-    "guild_id": "552966801558863896",
     "executables": [
       {
         "os": "win32",
-        "name": "warframe.exe",
+        "name": "warframe.x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warframe.x64.exe",
+        "name": "warframe.exe",
         "is_launcher": false
       }
     ],
@@ -7227,7 +7514,7 @@
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "1faf7ecefe6f6ff9b2deb95d13cb65546169d1a91df3e1145229aa80721e5884",
+    "verify_key": "e36ced5e601a3f61015b44481e2f6d56aa00da649f881e7462d5d118be388222",
     "flags": 0
   },
   {
@@ -7254,12 +7541,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -7302,22 +7589,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "path of exile/pathofexile.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "path of exile/pathofexile_x64steam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64.exe",
+        "name": "流亡黯道/pathofexilesteam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "pathofexile/pathofexileegs.exe",
+        "name": "path of exile taiwan/pathofexile.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexile_x64.exe",
         "is_launcher": false
       },
       {
@@ -7332,12 +7619,12 @@
       },
       {
         "os": "win32",
-        "name": "流亡黯道/pathofexilesteam.exe",
+        "name": "path of exile/pathofexile.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile taiwan/pathofexile.exe",
+        "name": "pathofexile/pathofexileegs.exe",
         "is_launcher": false
       }
     ],
@@ -7376,13 +7663,13 @@
       },
       {
         "os": "win32",
-        "name": "vrchat/start_protected_game.exe",
-        "is_launcher": false
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
+        "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -7393,35 +7680,68 @@
     "flags": 0
   },
   {
-    "id": "535371564850479134",
+    "id": "1402418082366095493",
     "name": "Sea of Thieves",
-    "icon": "4e7da84318a42170af8d916dacf1988f",
+    "icon": "1a71e40399e3d8b311b9455dd8ca28d9",
     "description": "Set in an era of classic piracy, Sea of Thieves is a first-person open-world game where players form a crew of pirates and sail off to find treasure. As it is a \"shared world\" game, pirate crews can encounter other crews and engage in epic maritime skirmishes.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
+    "bot": {
+      "id": "1402418082366095493",
+      "username": "Sea of Thieves",
+      "global_name": null,
+      "avatar": "1a71e40399e3d8b311b9455dd8ca28d9",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5869",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418082366095493",
+        "id": "535371564850479134",
         "type": 1
       }
     ],
     "hook": true,
-    "guild_id": "423075122610700288",
     "executables": [
+      {
+        "os": "win32",
+        "name": "wingdk/sotgame.exe",
+        "is_launcher": false
+      },
       {
         "os": "win32",
         "name": "sotgame.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "content/seaofthieves.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/sotgame.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "232ebed94a64e6465812955090d7834b1d5c726eaa87659614849e008b983ad6",
+    "verify_key": "88396abc189d8190f9935bba3bc956ff0c5ef150656a5697c07a9d7d4eade8a4",
     "flags": 0
   },
   {
@@ -7499,6 +7819,12 @@
     "executables": [
       {
         "os": "win32",
+        "name": ">hl2.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "hl2tf.exe",
         "arguments": "-game tf",
         "is_launcher": false
@@ -7506,12 +7832,6 @@
       {
         "os": "darwin",
         "name": ">hl2_osx",
-        "arguments": "-game tf",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": ">hl2.exe",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -7548,12 +7868,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cyberpunk2077.exe",
+        "name": "x64/cyberpunk2077.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "x64/cyberpunk2077.exe",
+        "name": "cyberpunk2077.exe",
         "is_launcher": false
       }
     ],
@@ -7606,12 +7926,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/palworld-win64-shipping.exe",
+        "name": "wingdk/palworld-wingdk-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "wingdk/palworld-wingdk-shipping.exe",
+        "name": "win64/palworld-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -7665,7 +7985,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "6.0.0/dotnet.exe",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       },
       {
@@ -7675,12 +7995,12 @@
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
+        "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       }
     ],
@@ -7769,11 +8089,6 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "boot/ffxivboot.exe",
-        "is_launcher": false
-      },
-      {
         "os": "darwin",
         "name": "final fantasy xiv.app",
         "is_launcher": false
@@ -7781,6 +8096,11 @@
       {
         "os": "win32",
         "name": "ffxiv_dx11.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "boot/ffxivboot.exe",
         "is_launcher": false
       }
     ],
@@ -7820,22 +8140,7 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa/jsgme.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "editor/kseditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/acs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/content manager.exe",
+        "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       },
       {
@@ -7845,7 +8150,22 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa/acshowroom.exe",
+        "name": "assettocorsa/acs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/jsgme.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/content manager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "editor/kseditor.exe",
         "is_launcher": false
       }
     ],
@@ -7880,12 +8200,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       }
     ],
@@ -8384,7 +8704,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz_x64.exe",
+        "name": "dayz.exe",
         "is_launcher": false
       },
       {
@@ -8394,7 +8714,7 @@
       },
       {
         "os": "win32",
-        "name": "dayz.exe",
+        "name": "dayz_x64.exe",
         "is_launcher": false
       }
     ],
@@ -8490,12 +8810,12 @@
     "flags": 0
   },
   {
-    "id": "422169383972896768",
+    "id": "1402417933225033759",
     "name": "Hunt: Showdown",
     "icon": "52ae10d11da1104b8081bfd9c4b1f803",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8506,9 +8826,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402417933225033759",
+      "username": "Hunt Showdown",
+      "global_name": null,
+      "avatar": "52ae10d11da1104b8081bfd9c4b1f803",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3912",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402417933225033759",
+        "id": "422169383972896768",
         "type": 1
       }
     ],
@@ -8516,7 +8853,6 @@
     "aliases": [
       "Hunt: Showdown"
     ],
-    "guild_id": "350201607788429323",
     "executables": [
       {
         "os": "win32",
@@ -8530,10 +8866,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "23bbb989a4dc2e7a416595bd7999e8e6d5fbbc920fd873739a191b0735426510",
+    "verify_key": "94ecea4c0cb2452b6ba2536611baef144b2bef9d5f284e359a2b8a60b549e6b5",
     "flags": 0
   },
   {
@@ -8600,14 +8938,14 @@
     "splash": "149210e7069943518df545565dbb8f7f",
     "third_party_skus": [
       {
-        "id": "231",
-        "sku": "231",
-        "distributor": "igdb"
-      },
-      {
         "id": "70",
         "sku": "70",
         "distributor": "steam"
+      },
+      {
+        "id": "231",
+        "sku": "231",
+        "distributor": "igdb"
       }
     ],
     "hook": true,
@@ -8651,12 +8989,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "blackops3.exe",
+        "name": "call of duty black ops iii/boiii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "call of duty black ops iii/boiii.exe",
+        "name": "blackops3.exe",
         "is_launcher": false
       }
     ],
@@ -8702,11 +9040,6 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "the binding of isaac rebirth.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
@@ -8714,6 +9047,11 @@
       {
         "os": "win32",
         "name": "isaac-ng.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       }
     ],
@@ -8820,14 +9158,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "1517290",
-        "sku": "1517290",
-        "distributor": "steam"
-      },
-      {
         "id": "125166",
         "sku": "125166",
         "distributor": "igdb"
+      },
+      {
+        "id": "1517290",
+        "sku": "1517290",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -8926,12 +9264,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       }
     ],
@@ -8977,12 +9315,12 @@
     "flags": 0
   },
   {
-    "id": "569253958967885828",
+    "id": "1402418087793528862",
     "name": "Risk of Rain 2",
     "icon": "b838c4c744b9cb9f8dd4c8afb82b085f",
     "description": "",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
@@ -8993,9 +9331,26 @@
         "distributor": "steam"
       }
     ],
+    "bot": {
+      "id": "1402418087793528862",
+      "username": "Risk of Rain 2",
+      "global_name": null,
+      "avatar": "b838c4c744b9cb9f8dd4c8afb82b085f",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5275",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418087793528862",
+        "id": "569253958967885828",
         "type": 1
       }
     ],
@@ -9003,24 +9358,25 @@
     "aliases": [
       "Risk of Rain 2"
     ],
-    "guild_id": "417739215355510784",
     "executables": [
-      {
-        "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
-        "is_launcher": false
-      },
       {
         "os": "win32",
         "name": "risk of rain 2.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "risk of rain 2/risk of rain 2.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "8040fa7504a966c327da9b629e5d9b9f9db2401a6513f5ddf8fab1bf6523215e",
+    "verify_key": "6cd7a71b91f4d606f6ce821274aaabb83121174b14b337f47c43cf9f3ea1bd57",
     "flags": 0
   },
   {
@@ -9180,7 +9536,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "shootergame_be.exe",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
@@ -9190,7 +9546,7 @@
       },
       {
         "os": "win32",
-        "name": "shootergame.exe",
+        "name": "shootergame_be.exe",
         "is_launcher": false
       },
       {
@@ -9282,12 +9638,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "lms.exe",
+        "name": "2013/vcredist_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "2013/vcredist_x64.exe",
+        "name": "lms.exe",
         "is_launcher": false
       }
     ],
@@ -9571,19 +9927,36 @@
     "flags": 0
   },
   {
-    "id": "356869127241072640",
+    "id": "1402418696126992445",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
     "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "bot": {
+      "id": "1402418696126992445",
+      "username": "League of Legends",
+      "global_name": null,
+      "avatar": "5a15a24a3931880801709a32accd0a1d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6763",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418696126992445",
+        "id": "356869127241072640",
         "type": 1
       }
     ],
@@ -9592,21 +9965,10 @@
     "aliases": [
       "League of Legends (TW)"
     ],
-    "guild_id": "417825368062558219",
     "executables": [
       {
         "os": "darwin",
         "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -9616,20 +9978,32 @@
       },
       {
         "os": "win32",
-        "name": "league of legends.exe",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "verify_key": "616e10786519af6f2e45bffc1ced49c3cf69fbf4ce2b6636e7bb1be0e13665e9",
     "flags": 0
   },
   {
@@ -9652,19 +10026,36 @@
     "flags": 0
   },
   {
-    "id": "356869127241072640",
+    "id": "1402418696126992445",
     "name": "League of Legends",
     "icon": "5a15a24a3931880801709a32accd0a1d",
     "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "splash": "9915146539e20aceff096bd4e856aab3",
+    "bot": {
+      "id": "1402418696126992445",
+      "username": "League of Legends",
+      "global_name": null,
+      "avatar": "5a15a24a3931880801709a32accd0a1d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6763",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418696126992445",
+        "id": "356869127241072640",
         "type": 1
       }
     ],
@@ -9673,13 +10064,7 @@
     "aliases": [
       "League of Legends (TW)"
     ],
-    "guild_id": "417825368062558219",
     "executables": [
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
       {
         "os": "win32",
         "name": "league of legends.exe",
@@ -9696,6 +10081,11 @@
         "is_launcher": false
       },
       {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
         "os": "darwin",
         "name": "leagueoflegends.app",
         "is_launcher": false
@@ -9707,10 +10097,12 @@
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "verify_key": "616e10786519af6f2e45bffc1ced49c3cf69fbf4ce2b6636e7bb1be0e13665e9",
     "flags": 0
   },
   {
@@ -9749,8 +10141,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147601472"
     },
@@ -9758,8 +10150,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "bot",
-            "applications.commands"
+            "applications.commands",
+            "bot"
           ],
           "permissions": "2147601472"
         }
@@ -9795,14 +10187,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "2507950",
-        "sku": "2507950",
-        "distributor": "steam"
-      },
-      {
         "id": "262186",
         "sku": "262186",
         "distributor": "igdb"
+      },
+      {
+        "id": "2507950",
+        "sku": "2507950",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -9830,6 +10222,16 @@
     "executables": [
       {
         "os": "win32",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "df_garena/deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       },
@@ -9840,17 +10242,7 @@
       },
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -9892,45 +10284,61 @@
     "flags": 0
   },
   {
-    "id": "367827983903490050",
+    "id": "1402418239342120960",
     "name": "osu!",
     "icon": "ea86f6c52576847a7cb81f1c1faa18a3",
     "description": "click the circles! to the beat!",
     "summary": "",
-    "type": 1,
+    "type": 5,
     "is_monetized": false,
     "is_verified": false,
     "is_discoverable": false,
     "cover_image": "b76db81b683527961ee1432c24a02774",
     "splash": "8029278a3fab0e30108bd335f26ab8a0",
-    "primary_sku_id": "367827983903490050",
+    "bot": {
+      "id": "1402418239342120960",
+      "username": "osu!",
+      "global_name": null,
+      "avatar": "ea86f6c52576847a7cb81f1c1faa18a3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8922",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
     "linked_games": [
       {
-        "id": "1402418239342120960",
+        "id": "367827983903490050",
         "type": 1
       }
     ],
     "overlay": true,
     "hook": true,
-    "slug": "osu",
-    "guild_id": "188630481301012481",
     "executables": [
-      {
-        "os": "win32",
-        "name": "osu!.exe",
-        "is_launcher": false
-      },
       {
         "os": "darwin",
         "name": "osu!.app",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "osu!.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
     "integration_types_config": {
       "0": {}
     },
-    "verify_key": "abc0dcbf6dbb4d449ad89da9bdec270a12b8a427099ef2609be2d3fdae150b29",
+    "verify_key": "c59b07479703646be88020d2bf9e669576bac3ca283237b93c567e44654da19a",
     "flags": 0
   },
   {
@@ -10083,13 +10491,13 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
@@ -10164,13 +10572,13 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
@@ -10179,8 +10587,8 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -10255,8 +10663,8 @@
     "bot_require_code_grant": false,
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "0"
     },
