@@ -20374,6 +20374,9 @@ img.inlineAsset__9c640 {
   flex: 0 0 auto;
   margin-left: 8px;
 }
+.dnsFont__89a31 {
+  font-synthesis: none;
+}
 .cherryBomb__89a31 {
   font-family:
     Cherry Bomb One,
@@ -88059,4 +88062,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fff8cc3ef2e5ee60.css.map*/
+/*# sourceMappingURL=12633.0770c2bee7084d3e.css.map*/
