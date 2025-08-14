@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8105734002](https://discord.com/jobs/8105734002)
 
-**Updated At:** Tue, 12 Aug 2025 17:46:45 GMT
+**Updated At:** Thu, 14 Aug 2025 17:38:55 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Privacy Engineer reporting to the Head of Security and Privacy Engineering to join us in protecting Discord's users. If you are a software engineer with a passion for privacy, a deep sense of curiosity, and an endless desire to improve Discord for our users, read on!

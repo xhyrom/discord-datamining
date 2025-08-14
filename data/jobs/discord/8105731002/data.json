@@ -29,7 +29,7 @@
     }
   ],
   "id": 8105731002,
-  "updated_at": "2025-08-13T15:49:20-04:00",
+  "updated_at": "2025-08-14T13:45:45-04:00",
   "requisition_id": "R-101017",
   "title": "Manager, Sales - Mobile Gaming",
   "company_name": "Discord",
@@ -44,6 +44,13 @@
     }
   ],
   "offices": [
+    {
+      "id": 4105189002,
+      "name": "Los Angeles Metro Area",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    },
     {
       "id": 4000383002,
       "name": "San Francisco, CA",
