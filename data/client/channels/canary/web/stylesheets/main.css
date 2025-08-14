@@ -18429,6 +18429,154 @@ img.inlineAsset__9c640 {
   overflow: hidden;
   padding: var(--space-12);
 }
+.tooltip__4e35b {
+  align-items: center;
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    inset 0 0 0 1px var(--border-subtle),
+    var(--shadow-high);
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--space-8);
+  max-width: 200px;
+  padding: var(--space-8) var(--space-12);
+  position: relative;
+  width: auto;
+}
+.richTooltip__4e35b {
+  max-width: none;
+  padding: 0;
+  width: auto;
+}
+.tooltipContent__4e35b {
+  overflow: hidden;
+}
+.tooltipContentAllowOverflow__4e35b {
+  overflow: visible;
+}
+.tooltip__4e35b[data-position="top"] {
+  transform-origin: 50% 100%;
+}
+.tooltip__4e35b[data-position="bottom"] {
+  transform-origin: 50% 0;
+}
+.tooltip__4e35b[data-position="left"] {
+  transform-origin: 100% 50%;
+}
+.tooltip__4e35b[data-position="right"] {
+  transform-origin: 0 50%;
+}
+.caretIcon__4e35b .caretFill__4e35b {
+  fill: var(--background-surface-high);
+}
+.caretIcon__4e35b .caretStroke__4e35b {
+  stroke: var(--border-subtle);
+  stroke-opacity: 1;
+}
+.caret__5bc6a {
+  --custom-caret-half-width: 8px;
+  --custom-caret-half-height: 7px;
+  --custom-caret-edge-offset-horizontal: 16px;
+  --custom-caret-edge-offset-vertical: 10px;
+  --custom-caret-horizontal-distance: 12px;
+  --custom-caret-border-overlap: 5px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: center;
+}
+.caret--bottom__5bc6a {
+  top: calc(100% - var(--custom-caret-border-overlap));
+  transform: rotate(0deg);
+}
+.caret--top__5bc6a {
+  bottom: calc(100% - var(--custom-caret-border-overlap));
+  transform: rotate(180deg);
+}
+.caret--left__5bc6a {
+  left: calc(var(--custom-caret-horizontal-distance) * -1);
+  transform: rotate(90deg);
+}
+.caret--right__5bc6a {
+  right: calc(var(--custom-caret-horizontal-distance) * -1);
+  transform: rotate(-90deg);
+}
+.caret--bottom__5bc6a.caret--center__5bc6a,
+.caret--top__5bc6a.caret--center__5bc6a {
+  left: 50%;
+  margin-left: calc(var(--custom-caret-half-width) * -1);
+}
+.caret--bottom__5bc6a.caret--start__5bc6a,
+.caret--top__5bc6a.caret--start__5bc6a {
+  left: var(--custom-caret-edge-offset-horizontal);
+  margin-left: calc(var(--custom-caret-half-width) * -1);
+}
+.caret--bottom__5bc6a.caret--end__5bc6a,
+.caret--top__5bc6a.caret--end__5bc6a {
+  margin-right: calc(var(--custom-caret-half-width) * -1);
+  right: var(--custom-caret-edge-offset-horizontal);
+}
+.caret--left__5bc6a.caret--center__5bc6a,
+.caret--right__5bc6a.caret--center__5bc6a {
+  margin-top: calc(var(--custom-caret-half-height) * -1);
+  top: 50%;
+}
+.caret--left__5bc6a.caret--center__5bc6a {
+  left: calc(var(--custom-caret-horizontal-distance) * -1);
+}
+.caret--left__5bc6a.caret--start__5bc6a,
+.caret--right__5bc6a.caret--start__5bc6a {
+  margin-top: calc(var(--custom-caret-half-height) * -1);
+  top: var(--custom-caret-edge-offset-vertical);
+}
+.caret--left__5bc6a.caret--end__5bc6a,
+.caret--right__5bc6a.caret--end__5bc6a {
+  bottom: var(--custom-caret-edge-offset-vertical);
+  margin-bottom: calc(var(--custom-caret-half-height) * -1);
+}
+.caret--custom__5bc6a {
+  --custom-caret-offset-x: 0;
+  --custom-caret-offset-y: 0;
+}
+.caret--bottom__5bc6a.caret--custom__5bc6a,
+.caret--top__5bc6a.caret--custom__5bc6a {
+  left: 50%;
+  margin-left: calc(
+    var(--custom-caret-offset-x) - var(--custom-caret-half-width)
+  );
+}
+.caret--left__5bc6a.caret--custom__5bc6a,
+.caret--right__5bc6a.caret--custom__5bc6a {
+  margin-top: calc(
+    var(--custom-caret-offset-y) - var(--custom-caret-half-height)
+  );
+  top: 50%;
+}
+.richTooltipContent_a89985 {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--space-12);
+  max-width: 272px;
+  padding: var(--space-12);
+}
+.assetContainer_a89985 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  width: var(--space-48);
+}
+.assetContainer_a89985 > * {
+  height: auto;
+  max-width: 100%;
+}
+.textContent_a89985 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
 .rightSparkle_fc1723 {
   margin-left: 1px;
   margin-top: 15px;
@@ -88045,4 +88193,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.319ca34f75fd7f03.css.map*/
+/*# sourceMappingURL=12633.27c65ff6f3164d3c.css.map*/
