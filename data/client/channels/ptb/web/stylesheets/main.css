@@ -16297,10 +16297,6 @@ svg.radioIcon_c1e9c4 {
   position: absolute;
   width: 8px;
 }
-.dimmed__58105 {
-  opacity: 0.1;
-  transition: opacity 0.3s ease;
-}
 .enable-forced-colors .item__58105 {
   background-color: Highlight;
 }
@@ -20712,14 +20708,6 @@ img.inlineAsset__9c640 {
   50%,
   to {
     background-position: 50% 100%;
-  }
-}
-@keyframes gradientUsernameAnimation_dfb989 {
-  0% {
-    background-position: 100%;
-  }
-  to {
-    background-position: -100%;
   }
 }
 @keyframes neon-flicker-animation_dfb989 {
@@ -66431,7 +66419,7 @@ span.clanTag__07f91.isOverlay__07f91 {
   margin-top: var(--space-16);
   padding: var(--space-8) var(--space-12);
 }
-.root_e2a426 {
+.root__92958 {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
@@ -66439,17 +66427,17 @@ span.clanTag__07f91.isOverlay__07f91 {
   flex-direction: column;
   min-width: 240px;
 }
-.userHeader_e2a426 {
+.userHeader__92958 {
   align-items: center;
   background: var(--background-mod-subtle);
   display: flex;
   gap: var(--space-8);
   padding: var(--space-12) var(--space-16);
 }
-.activityList_e2a426 {
+.activityList__92958 {
   padding: 0 var(--space-16);
 }
-.activityRow_e2a426 {
+.activityRow__92958 {
   align-items: stretch;
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
@@ -66457,12 +66445,12 @@ span.clanTag__07f91.isOverlay__07f91 {
   gap: var(--space-8);
   padding: var(--space-12) 0;
 }
-.activityRowContent_e2a426 {
+.activityRowContent__92958 {
   align-items: center;
   display: flex;
   gap: var(--space-12);
 }
-.activityRow_e2a426:last-child {
+.activityRow__92958:last-child {
   border-bottom: none;
 }
 .draggable__55bab {
@@ -68276,7 +68264,7 @@ html.disable-forced-colors * {
 }
 .container__247cf {
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 .container__247cf,
 .loader__247cf {
@@ -68363,8 +68351,7 @@ html.disable-forced-colors * {
   border-radius: var(--radius-sm);
   display: flex;
   height: 32px;
-  margin: 0 1px;
-  padding: 4px 8px;
+  padding: 2px;
   position: relative;
   transition: border-color 0.15s ease;
 }
@@ -68420,7 +68407,7 @@ html.disable-forced-colors * {
   border-radius: var(--radius-xs);
   flex-shrink: 0;
   height: 24px;
-  margin-right: 8px;
+  margin: 6px 8px 6px 4px;
   width: 24px;
 }
 .colorPreview__247cf {
@@ -68445,6 +68432,9 @@ html.disable-forced-colors * {
 }
 .themePillItemSelected_c85552 {
   border: 1px solid var(--border-subtle);
+}
+.themePillItemSelected_c85552,
+.themeSelector_c85552 [class*="pillItem"] {
   border-radius: var(--radius-xs);
 }
 .container__5a2df {
@@ -68496,8 +68486,15 @@ html.disable-forced-colors * {
   border-top: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 8px;
   padding: 16px 20px;
+}
+.footerContainer__5a2df > * {
+  flex: 1;
+}
+.footerContainerNonPremium__5a2df {
+  flex-direction: column;
+  gap: 12px;
 }
 .footerRightButtons__5a2df {
   align-items: center;
@@ -68510,9 +68507,8 @@ html.disable-forced-colors * {
   color: var(--white);
   flex-shrink: 0;
   height: 40px;
-  max-width: 140px;
   min-width: 110px;
-  width: auto;
+  width: 100%;
 }
 .coachmarkHeaderContainer__5a2df {
   display: flex;
@@ -88065,4 +88061,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.abf08c2585b383c8.css.map*/
+/*# sourceMappingURL=12633.856a7853d77b2873.css.map*/
