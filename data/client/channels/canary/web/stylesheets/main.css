@@ -20531,11 +20531,10 @@ img.inlineAsset__9c640 {
     gg sans,
     Arial,
     sans-serif;
-  transform: translateY(-1px);
-}
-.cherryBomb__89a31,
-.chicle__89a31 {
   letter-spacing: 0.04em;
+}
+.cherryBomb__89a31.safari__89a31 {
+  transform: translateY(-1px);
 }
 .chicle__89a31 {
   font-family:
@@ -20543,6 +20542,7 @@ img.inlineAsset__9c640 {
     gg sans,
     Arial,
     sans-serif;
+  letter-spacing: 0.04em;
 }
 .museoModerno__89a31 {
   font-family:
@@ -20559,6 +20559,8 @@ img.inlineAsset__9c640 {
     Arial,
     sans-serif;
   letter-spacing: 0.02em;
+}
+.neoCastel__89a31.safari__89a31 {
   transform: translateY(-1px);
 }
 .pixelify__89a31 {
@@ -86964,18 +86966,21 @@ html.disable-forced-colors * {
   src: url(/assets/f75115b65a230189.woff2) format("woff2");
 }
 @font-face {
+  ascent-override: 95%;
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/c064d4440a5d10c4.woff2) format("woff2");
 }
 @font-face {
+  ascent-override: 95%;
   font-family: Chicle;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
 }
 @font-face {
+  ascent-override: 90%;
   font-family: Neo Castel;
   font-style: normal;
   font-weight: 400;
@@ -88201,4 +88206,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.34682fe7c961696d.css.map*/
+/*# sourceMappingURL=12633.d865811479179bea.css.map*/
