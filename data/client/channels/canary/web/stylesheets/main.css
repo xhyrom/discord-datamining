@@ -18479,7 +18479,7 @@ img.inlineAsset__9c640 {
   --custom-caret-half-height: 7px;
   --custom-caret-edge-offset-horizontal: 16px;
   --custom-caret-edge-offset-vertical: 10px;
-  --custom-caret-horizontal-distance: 12px;
+  --custom-caret-horizontal-distance: 11px;
   --custom-caret-border-overlap: 5px;
   pointer-events: none;
   position: absolute;
@@ -18501,36 +18501,27 @@ img.inlineAsset__9c640 {
   right: calc(var(--custom-caret-horizontal-distance) * -1);
   transform: rotate(-90deg);
 }
-.caret--bottom__5bc6a.caret--center__5bc6a,
-.caret--top__5bc6a.caret--center__5bc6a {
+:is(.caret--top__5bc6a, .caret--bottom__5bc6a).caret--center__5bc6a {
   left: 50%;
   margin-left: calc(var(--custom-caret-half-width) * -1);
 }
-.caret--bottom__5bc6a.caret--start__5bc6a,
-.caret--top__5bc6a.caret--start__5bc6a {
+:is(.caret--top__5bc6a, .caret--bottom__5bc6a).caret--start__5bc6a {
   left: var(--custom-caret-edge-offset-horizontal);
   margin-left: calc(var(--custom-caret-half-width) * -1);
 }
-.caret--bottom__5bc6a.caret--end__5bc6a,
-.caret--top__5bc6a.caret--end__5bc6a {
+:is(.caret--top__5bc6a, .caret--bottom__5bc6a).caret--end__5bc6a {
   margin-right: calc(var(--custom-caret-half-width) * -1);
   right: var(--custom-caret-edge-offset-horizontal);
 }
-.caret--left__5bc6a.caret--center__5bc6a,
-.caret--right__5bc6a.caret--center__5bc6a {
+:is(.caret--left__5bc6a, .caret--right__5bc6a).caret--center__5bc6a {
   margin-top: calc(var(--custom-caret-half-height) * -1);
   top: 50%;
 }
-.caret--left__5bc6a.caret--center__5bc6a {
-  left: calc(var(--custom-caret-horizontal-distance) * -1);
-}
-.caret--left__5bc6a.caret--start__5bc6a,
-.caret--right__5bc6a.caret--start__5bc6a {
+:is(.caret--left__5bc6a, .caret--right__5bc6a).caret--start__5bc6a {
   margin-top: calc(var(--custom-caret-half-height) * -1);
   top: var(--custom-caret-edge-offset-vertical);
 }
-.caret--left__5bc6a.caret--end__5bc6a,
-.caret--right__5bc6a.caret--end__5bc6a {
+:is(.caret--left__5bc6a, .caret--right__5bc6a).caret--end__5bc6a {
   bottom: var(--custom-caret-edge-offset-vertical);
   margin-bottom: calc(var(--custom-caret-half-height) * -1);
 }
@@ -66452,4 +66443,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.33a4154c06339554.css.map*/
+/*# sourceMappingURL=12633.9ced90311c27bcb2.css.map*/
