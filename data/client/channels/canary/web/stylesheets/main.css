@@ -61907,9 +61907,6 @@ strong {
   flex-direction: column;
   gap: 4px;
 }
-.entryPointContainerFlexChild__95856 {
-  flex: 1;
-}
 .expandableDescriptionClickable__95856 {
   cursor: pointer;
   display: flex;
@@ -61935,6 +61932,7 @@ strong {
   display: flex;
   flex-direction: row;
   gap: var(--custom-disclosure-spacing);
+  margin-bottom: 16.75px;
 }
 .monetizationDisclosureStyle__95856 {
   align-items: center;
@@ -88203,4 +88201,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.74db97053a6ed7db.css.map*/
+/*# sourceMappingURL=12633.34682fe7c961696d.css.map*/
