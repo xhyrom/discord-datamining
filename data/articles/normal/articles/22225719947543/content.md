@@ -91,15 +91,6 @@
   subject to specific terms. You can find the promotion terms for each Quest on
   the Quest Home page or after accepting the Quest.
 </p>
-<div class="book-box">
-  For more information on additional Quest terms, visit this
-  <a
-    href="https://support.discord.com/hc/en-us/articles/27839350349079"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article here</a
-  >.
-</div>
 <h1 id="h_01JFAWB392Z58VMP5PDW63222E">Accepting a Quest </h1>
 <h2 id="h_01JFAWBFT2RJ7XG9VYJY378KE4">
   <strong>Through the Quest Bar on Desktop </strong>
@@ -690,12 +681,3 @@
   the Discord app and check for any available updates. Once the app is restarted
   and up to date, your Quest progress bar should update as expected.
 </p>
-<div class="book-box">
-  For more information on additional Quest terms, visit
-  <a
-    href="https://support.discord.com/hc/en-us/articles/27839350349079"
-    target="_blank"
-    rel="noopener noreferrer"
-    >this article here</a
-  >.
-</div>
