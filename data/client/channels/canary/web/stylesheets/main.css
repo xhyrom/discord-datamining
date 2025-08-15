@@ -43616,15 +43616,16 @@ div.mobilePushContainer__3d3b0 {
   padding: 12px;
   position: relative;
 }
-.section__00943:first-child {
+.section__00943:not(:last-child) {
   border-bottom: none;
+}
+.section__00943:first-child {
   border-radius: 8px 8px 0 0;
 }
 .section__00943:last-child {
   border-radius: 0 0 8px 8px;
 }
 .section__00943:only-child {
-  border-bottom: 1px solid var(--border-faint);
   border-radius: 8px;
 }
 .clickable__00943 {
@@ -66440,4 +66441,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7a30a63c77e32db2.css.map*/
+/*# sourceMappingURL=12633.09cc0af507036e26.css.map*/
