@@ -40765,6 +40765,20 @@ html:not(.chat-input) .inputInner_b1f01d {
 .container__0f2e8:hover .additionalParticipantBadge__0f2e8 {
   background: var(--background-gradient-high, var(--background-accent));
 }
+.isAutoHeight__0f2e8 {
+  height: auto;
+}
+.usesCardRows__0f2e8 {
+  flex-direction: column;
+}
+.cardRow__0f2e8 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+  width: 100%;
+}
 .openOnHover__0f2e8 {
   cursor: auto;
 }
@@ -40844,6 +40858,11 @@ html:not(.chat-input) .inputInner_b1f01d {
 img.thumbnail__0f2e8 {
   object-fit: cover;
   width: 48px;
+}
+.divider__0f2e8 {
+  background-color: var(--background-mod-subtle);
+  height: 1px;
+  width: 100%;
 }
 .container__38f6e {
   align-items: center;
@@ -42062,6 +42081,14 @@ img.thumbnail__0f2e8 {
   align-items: center;
   align-self: flex-start;
   display: flex;
+}
+.cloudPlaySection__1692d {
+  justify-content: space-between;
+}
+.cloudPlaySectionTextContainer__1692d {
+  align-items: center;
+  display: flex;
+  gap: 4px;
 }
 .container__264ae {
   align-items: center;
@@ -88170,4 +88197,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ea52d4680829ff16.css.map*/
+/*# sourceMappingURL=12633.40d7be252abf0c6f.css.map*/
