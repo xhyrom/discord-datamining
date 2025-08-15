@@ -12,9 +12,8 @@
   Supercharge your game's social experience with the new
   <a href="https://discord.com/developers/docs/discord-social-sdk/overview"
     >Discord Social SDK</a
-  >! This powerful toolkit lets game developers easily integrate Discord's
-  social features directly into their games, creating a more engaging and
-  connected player experience.
+  >! This powerful toolkit allows game developers to power their game's social
+  features, creating a more engaging and connected player experience.
 </p>
 <h2 id="h_01K2HMSEQ0CWHZHAVQAH4M6D9Y">
   Why should I use the Discord Social SDK in my game?
