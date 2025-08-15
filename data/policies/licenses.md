@@ -60849,6 +60849,70 @@ without specific prior written permission.</code></pre>
                     ><span>IGDB</span></a
                   >.</span
                 >
+                <h1 id="fonts">
+                  Fonts<a class="hyperlink" href="#fonts"
+                    ><div name="fonts"></div
+                  ></a>
+                </h1>
+                <span class="paragraph-3ckiht"
+                  >The following open source fonts may be included in this
+                  product:</span
+                ><span class="paragraph-3ckiht"
+                  ><a
+                    href="https://fonts.google.com/specimen/Zilla+Slab/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Zilla+Slab/license</span
+                    ></a
+                  >,
+                  <a
+                    href="https://fonts.google.com/specimen/Cherry+Bomb+One/license?preview.layout=grid"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Cherry+Bomb+One/license?preview.layout=grid</span
+                    ></a
+                  >,
+                  <a
+                    href="https://fonts.google.com/specimen/Chicle/license"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Chicle/license</span
+                    ></a
+                  >,
+                  <a
+                    href="https://www.omnibus-type.com/fonts/museomoderno/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://www.omnibus-type.com/fonts/museomoderno/</span
+                    ></a
+                  >,
+                  <a
+                    href="https://atypeofamigo.com/fonts/neo-castel/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span>https://atypeofamigo.com/fonts/neo-castel/</span></a
+                  >,
+                  <a
+                    href="https://fonts.google.com/specimen/Pixelify+Sans/license?preview.layout=grid&amp;query=Pixelify"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://fonts.google.com/specimen/Pixelify+Sans/license?preview.layout=grid&amp;query=Pixelify</span
+                    ></a
+                  >,
+                  <a
+                    href="https://www.collletttivo.it/typefaces/sinistre"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><span
+                      >https://www.collletttivo.it/typefaces/sinistre</span
+                    ></a
+                  ></span
+                >
               </div>
             </div>
           </div>
