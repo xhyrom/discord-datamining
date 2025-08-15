@@ -2086,7 +2086,7 @@
       995937: function (t) {
         t.exports = function (t) {
           var e = this.has(t) && delete this.__data__[t];
-          return (this.size -= +!!e), e;
+          return (this.size -= !!e), e;
         };
       },
       544054: function (t, e, a) {
@@ -2245,7 +2245,7 @@
         var r = a(961499);
         t.exports = function (t) {
           var e = r(this, t).delete(t);
-          return (this.size -= +!!e), e;
+          return (this.size -= !!e), e;
         };
       },
       538444: function (t, e, a) {
@@ -2772,6 +2772,7 @@
               "/users/@me/game-relationships/".concat(t, "/").concat(e),
             USER_PROFILE: (t) => "/users/".concat(t, "/profile"),
             USER_PROFILE_WIDGETS: "/users/@me/widgets",
+            USER_PROFILE_SUGGESTED_GAMES: "/users/@me/widgets/suggested-games",
             USER_GUILD_PROFILE: (t, e) =>
               "/guilds/".concat(t, "/profile/").concat(e),
             USER_CHANNELS: "/users/@me/channels",
@@ -2801,6 +2802,8 @@
             UNVERIFIED_APPLICATIONS: "/unverified-applications",
             UNVERIFIED_APPLICATIONS_ICONS: "/unverified-applications/icons",
             PLATFORM_APPLICATION: "/platform-application",
+            ROBLOX_APPLICATIONS_SUPPLEMENTAL_DATA:
+              "/roblox-applications-supplemental-data",
             GUILD_FEATURE_ACK: (t, e, a) =>
               "/guilds/".concat(t, "/ack/").concat(a, "/").concat(e),
             USER_NON_CHANNEL_ACK: (t, e) =>
@@ -4653,6 +4656,7 @@
           (r.ATT_APP_STATE_CHECKED = "att_app_state_checked"),
           (r.ATT_APP_STATE_CHECKED_OVERRIDE = "att_app_state_checked_override"),
           (r.ATT_PROMPT_ERROR = "att_prompt_error"),
+          (r.AD_USER_FETCH_DURATION = "ad_user_fetch_duration"),
           (r.HEADLESS_TASK_INVOKED = "headless_task_invoked"),
           (r.HEADLESS_TASK_COMPLETED = "headless_task_completed"),
           (r.VERIFY_ACCOUNT_APP_OPENED = "verify_account_app_opened"),
@@ -6904,21 +6908,18 @@
         var r = a(981631);
         function _(t) {
           let { maxBudgetMinute: e, maxBudgetHour: a } = t,
-            r = {
-              minute: { slot: 0, budgetUsed: 0 },
-              hour: { slot: 0, budgetUsed: 0 },
-            };
+            r = { slot: 0, budgetUsed: 0 },
+            _ = { slot: 0, budgetUsed: 0 };
           return () => {
             let t = Date.now(),
-              _ = Math.round(t / 1e3 / 60),
-              n = Math.round(t / 1e3 / 60 / 60);
+              n = Math.round(t / 1e3 / 60),
+              o = Math.round(t / 1e3 / 60 / 60);
             return (
-              r.minute.slot !== _ &&
-                ((r.minute.slot = _), (r.minute.budgetUsed = 0)),
-              r.hour.slot !== n && ((r.hour.slot = n), (r.hour.budgetUsed = 0)),
-              !!(r.minute.budgetUsed < e) &&
-                (r.minute.budgetUsed++, !!(r.hour.budgetUsed < a)) &&
-                (r.hour.budgetUsed++, !0)
+              r.slot !== n && ((r.slot = n), (r.budgetUsed = 0)),
+              _.slot !== o && ((_.slot = o), (_.budgetUsed = 0)),
+              !!(r.budgetUsed < e) &&
+                (r.budgetUsed++, !!(_.budgetUsed < a)) &&
+                (_.budgetUsed++, !0)
             );
           };
         }
@@ -6949,7 +6950,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-14-3fc8623bd322592e840bd79ad73443d51ec1387e-discord_web",
+              "2025-08-15-8c7d2901358835d4bde2e27825e5a7c5d53f7641-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7015,8 +7016,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "431547"),
-            o.YA("builtAt", String("1755194760774"));
+            o.YA("buildNumber", "431981"),
+            o.YA("builtAt", String("1755242673228"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22657,16 +22658,16 @@
             return this.value;
           }
           constructor(t) {
-            var e, a;
-            (a = void 0),
-              (e = "value") in this
-                ? Object.defineProperty(this, e, {
+            !(function (t, e, a) {
+              e in t
+                ? Object.defineProperty(t, e, {
                     value: a,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0,
                   })
-                : (this[e] = a),
+                : (t[e] = a);
+            })(this, "value", void 0),
               (this.value = t);
           }
         }
@@ -22887,7 +22888,7 @@
                 c = Math.max(_, n, o),
                 E = (c + i) / 2;
               return (c === i
-                ? ((t = 0), (e = Number.NaN))
+                ? ((t = 0), (e = NaN))
                 : (t = E < 0.5 ? (c - i) / (c + i) : (c - i) / (2 - c - i)),
               _ == c
                 ? (e = (n - o) / (c - i))
@@ -23073,7 +23074,7 @@
                 E = c - i;
               return (
                 0 === E
-                  ? (t = Number.NaN)
+                  ? (t = NaN)
                   : (_ === c && (t = (n - o) / E),
                     n === c && (t = 2 + (o - _) / E),
                     o === c && (t = 4 + (_ - n) / E),
@@ -23358,7 +23359,7 @@
                 E = c - i;
               return (
                 0 === c
-                  ? ((t = Number.NaN), (e = 0))
+                  ? ((t = NaN), (e = 0))
                   : ((e = E / c),
                     _ === c && (t = (n - o) / E),
                     n === c && (t = 2 + (o - _) / E),
@@ -23428,43 +23429,41 @@
                   return "hsv";
               },
             });
-          var tD = {
-              Kn: 18,
-              Xn: 0.95047,
-              Yn: 1,
-              Zn: 1.08883,
-              t0: 0.137931034,
-              t1: 0.206896552,
-              t2: 0.12841855,
-              t3: 0.008856452,
-            },
-            tC = i.unpack,
-            tm = Math.pow,
-            tv = function (t) {
+          var tD = 18,
+            tC = 0.95047,
+            tm = 1,
+            tv = 1.08883,
+            ty = 0.137931034,
+            tS = 0.206896552,
+            tU = 0.12841855,
+            tb = 0.008856452,
+            tG = i.unpack,
+            tW = Math.pow,
+            tw = function (t) {
               return (t /= 255) <= 0.04045
                 ? t / 12.92
-                : tm((t + 0.055) / 1.055, 2.4);
+                : tW((t + 0.055) / 1.055, 2.4);
             },
-            ty = function (t) {
-              return t > tD.t3 ? tm(t, 1 / 3) : t / tD.t2 + tD.t0;
+            tM = function (t) {
+              return t > tb ? tW(t, 1 / 3) : t / tU + ty;
             },
-            tS = function () {
+            tB = function () {
               for (var t, e, a, r = [], _ = arguments.length; _--; )
                 r[_] = arguments[_];
-              var n = tC(r, "rgb"),
+              var n = tG(r, "rgb"),
                 o =
                   ((t = n[0]),
                   (e = n[1]),
                   (a = n[2]),
                   [
-                    ty(
-                      (0.4124564 * (t = tv(t)) +
-                        0.3575761 * (e = tv(e)) +
-                        0.1804375 * (a = tv(a))) /
-                        tD.Xn,
+                    tM(
+                      (0.4124564 * (t = tw(t)) +
+                        0.3575761 * (e = tw(e)) +
+                        0.1804375 * (a = tw(a))) /
+                        tC,
                     ),
-                    ty((0.2126729 * t + 0.7151522 * e + 0.072175 * a) / tD.Yn),
-                    ty((0.0193339 * t + 0.119192 * e + 0.9503041 * a) / tD.Zn),
+                    tM((0.2126729 * t + 0.7151522 * e + 0.072175 * a) / tm),
+                    tM((0.0193339 * t + 0.119192 * e + 0.9503041 * a) / tv),
                   ]),
                 i = o[0],
                 c = o[1],
@@ -23472,45 +23471,45 @@
                 s = 116 * c - 16;
               return [s < 0 ? 0 : s, 500 * (i - c), 200 * (c - E)];
             },
-            tU = i.unpack,
-            tb = Math.pow,
-            tG = function (t) {
+            tY = i.unpack,
+            tH = Math.pow,
+            tK = function (t) {
               return (
                 255 *
-                (t <= 0.00304 ? 12.92 * t : 1.055 * tb(t, 1 / 2.4) - 0.055)
+                (t <= 0.00304 ? 12.92 * t : 1.055 * tH(t, 1 / 2.4) - 0.055)
               );
             },
-            tW = function (t) {
-              return t > tD.t1 ? t * t * t : tD.t2 * (t - tD.t0);
+            tk = function (t) {
+              return t > tS ? t * t * t : tU * (t - ty);
             },
-            tw = function () {
+            tx = function () {
               for (var t, e, a, r, _ = [], n = arguments.length; n--; )
                 _[n] = arguments[n];
-              var o = (_ = tU(_, "lab"))[0],
+              var o = (_ = tY(_, "lab"))[0],
                 i = _[1],
                 c = _[2];
               return (
                 (e = (o + 16) / 116),
                 (t = isNaN(i) ? e : e + i / 500),
                 (a = isNaN(c) ? e : e - c / 200),
-                (e = tD.Yn * tW(e)),
-                (r = tG(
-                  3.2404542 * (t = tD.Xn * tW(t)) -
+                (e = tm * tk(e)),
+                (r = tK(
+                  3.2404542 * (t = tC * tk(t)) -
                     1.5371385 * e -
-                    0.4985314 * (a = tD.Zn * tW(a)),
+                    0.4985314 * (a = tv * tk(a)),
                 )),
                 [
                   r,
-                  tG(-0.969266 * t + 1.8760108 * e + 0.041556 * a),
-                  tG(0.0556434 * t - 0.2040259 * e + 1.0572252 * a),
+                  tK(-0.969266 * t + 1.8760108 * e + 0.041556 * a),
+                  tK(0.0556434 * t - 0.2040259 * e + 1.0572252 * a),
                   _.length > 3 ? _[3] : 1,
                 ]
               );
             },
-            tM = i.unpack,
-            tB = i.type;
+            tF = i.unpack,
+            tV = i.type;
           (u.prototype.lab = function () {
-            return tS(this._rgb);
+            return tB(this._rgb);
           }),
             (I.lab = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -23519,65 +23518,65 @@
                 [null].concat(t, ["lab"]),
               ))();
             }),
-            (c.format.lab = tw),
+            (c.format.lab = tx),
             c.autodetect.push({
               p: 2,
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === tB((t = tM(t, "lab"))) && 3 === t.length)
+                if ("array" === tV((t = tF(t, "lab"))) && 3 === t.length)
                   return "lab";
               },
             });
-          var tY = i.unpack,
-            tH = i.RAD2DEG,
-            tK = Math.sqrt,
-            tk = Math.atan2,
-            tx = Math.round,
-            tF = function () {
+          var tj = i.unpack,
+            tX = i.RAD2DEG,
+            t$ = Math.sqrt,
+            tq = Math.atan2,
+            tz = Math.round,
+            tJ = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tY(t, "lab"),
+              var a = tj(t, "lab"),
                 r = a[0],
                 _ = a[1],
                 n = a[2],
-                o = tK(_ * _ + n * n),
-                i = (tk(n, _) * tH + 360) % 360;
-              return 0 === tx(1e4 * o) && (i = Number.NaN), [r, o, i];
+                o = t$(_ * _ + n * n),
+                i = (tq(n, _) * tX + 360) % 360;
+              return 0 === tz(1e4 * o) && (i = NaN), [r, o, i];
             },
-            tV = i.unpack,
-            tj = i.unpack,
-            tX = i.DEG2RAD,
-            t$ = Math.sin,
-            tq = Math.cos,
-            tz = function () {
+            tZ = i.unpack,
+            tQ = i.unpack,
+            t0 = i.DEG2RAD,
+            t1 = Math.sin,
+            t2 = Math.cos,
+            t3 = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tj(t, "lch"),
+              var a = tQ(t, "lch"),
                 r = a[0],
                 _ = a[1],
                 n = a[2];
-              return isNaN(n) && (n = 0), [r, tq((n *= tX)) * _, t$(n) * _];
+              return isNaN(n) && (n = 0), [r, t2((n *= t0)) * _, t1(n) * _];
             },
-            tJ = i.unpack,
-            tZ = function () {
+            t6 = i.unpack,
+            t4 = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tz((t = tJ(t, "lch"))[0], t[1], t[2]),
-                r = tw(a[0], a[1], a[2]);
+              var a = t3((t = t6(t, "lch"))[0], t[1], t[2]),
+                r = tx(a[0], a[1], a[2]);
               return [r[0], r[1], r[2], t.length > 3 ? t[3] : 1];
             },
-            tQ = i.unpack,
-            t0 = i.unpack,
-            t1 = i.type,
-            t2 = function () {
+            t5 = i.unpack,
+            t8 = i.unpack,
+            t7 = i.type,
+            t9 = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tV(t, "rgb"),
-                r = tS(a[0], a[1], a[2]);
-              return tF(r[0], r[1], r[2]);
+              var a = tZ(t, "rgb"),
+                r = tB(a[0], a[1], a[2]);
+              return tJ(r[0], r[1], r[2]);
             };
           (u.prototype.lch = function () {
-            return t2(this._rgb);
+            return t9(this._rgb);
           }),
             (u.prototype.hcl = function () {
-              return t2(this._rgb).reverse();
+              return t9(this._rgb).reverse();
             }),
             (I.lch = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -23593,11 +23592,11 @@
                 [null].concat(t, ["hcl"]),
               ))();
             }),
-            (c.format.lch = tZ),
+            (c.format.lch = t4),
             (c.format.hcl = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tQ(t, "hcl").reverse();
-              return tZ.apply(void 0, a);
+              var a = t5(t, "hcl").reverse();
+              return t4.apply(void 0, a);
             }),
             ["lch", "hcl"].forEach(function (t) {
               return c.autodetect.push({
@@ -23605,12 +23604,12 @@
                 test: function () {
                   for (var e = [], a = arguments.length; a--; )
                     e[a] = arguments[a];
-                  if ("array" === t1((e = t0(e, t))) && 3 === e.length)
+                  if ("array" === t7((e = t8(e, t))) && 3 === e.length)
                     return t;
                 },
               });
             });
-          var t3 = {
+          var et = {
               aliceblue: "#f0f8ff",
               antiquewhite: "#faebd7",
               aqua: "#00ffff",
@@ -23767,20 +23766,20 @@
               yellow: "#ffff00",
               yellowgreen: "#9acd32",
             },
-            t6 = i.type;
+            ee = i.type;
           (u.prototype.name = function () {
             for (
-              var t = Z(this._rgb, "rgb"), e = 0, a = Object.keys(t3);
+              var t = Z(this._rgb, "rgb"), e = 0, a = Object.keys(et);
               e < a.length;
               e += 1
             ) {
               var r = a[e];
-              if (t3[r] === t) return r.toLowerCase();
+              if (et[r] === t) return r.toLowerCase();
             }
             return t;
           }),
             (c.format.named = function (t) {
-              if (t3[(t = t.toLowerCase())]) return te(t3[t]);
+              if (et[(t = t.toLowerCase())]) return te(et[t]);
               throw Error("unknown color name: " + t);
             }),
             c.autodetect.push({
@@ -23788,20 +23787,20 @@
               test: function (t) {
                 for (var e = [], a = arguments.length - 1; a-- > 0; )
                   e[a] = arguments[a + 1];
-                if (!e.length && "string" === t6(t) && t3[t.toLowerCase()])
+                if (!e.length && "string" === ee(t) && et[t.toLowerCase()])
                   return "named";
               },
             });
-          var t4 = i.unpack,
-            t5 = i.type,
-            t8 = i.type,
-            t7 = function () {
+          var ea = i.unpack,
+            er = i.type,
+            e_ = i.type,
+            en = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = t4(t, "rgb");
+              var a = ea(t, "rgb");
               return (a[0] << 16) + (a[1] << 8) + a[2];
             };
           (u.prototype.num = function () {
-            return t7(this._rgb);
+            return en(this._rgb);
           }),
             (I.num = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -23811,7 +23810,7 @@
               ))();
             }),
             (c.format.num = function (t) {
-              if ("number" == t5(t) && t >= 0 && t <= 0xffffff)
+              if ("number" == er(t) && t >= 0 && t <= 0xffffff)
                 return [t >> 16, (t >> 8) & 255, 255 & t, 1];
               throw Error("unknown num color: " + t);
             }),
@@ -23822,26 +23821,26 @@
                   t[e] = arguments[e];
                 if (
                   1 === t.length &&
-                  "number" === t8(t[0]) &&
+                  "number" === e_(t[0]) &&
                   t[0] >= 0 &&
                   t[0] <= 0xffffff
                 )
                   return "num";
               },
             });
-          var t9 = i.unpack,
-            et = i.type,
-            ee = Math.round;
+          var eo = i.unpack,
+            ei = i.type,
+            ec = Math.round;
           (u.prototype.rgb = function (t) {
             return (void 0 === t && (t = !0), !1 === t)
               ? this._rgb.slice(0, 3)
-              : this._rgb.slice(0, 3).map(ee);
+              : this._rgb.slice(0, 3).map(ec);
           }),
             (u.prototype.rgba = function (t) {
               return (
                 void 0 === t && (t = !0),
                 this._rgb.slice(0, 4).map(function (e, a) {
-                  return a < 3 ? (!1 === t ? e : ee(e)) : e;
+                  return a < 3 ? (!1 === t ? e : ec(e)) : e;
                 })
               );
             }),
@@ -23854,7 +23853,7 @@
             }),
             (c.format.rgb = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = t9(t, "rgba");
+              var a = eo(t, "rgba");
               return void 0 === a[3] && (a[3] = 1), a;
             }),
             c.autodetect.push({
@@ -23863,18 +23862,18 @@
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
                 if (
-                  "array" === et((t = t9(t, "rgba"))) &&
+                  "array" === ei((t = eo(t, "rgba"))) &&
                   (3 === t.length ||
                     (4 === t.length &&
-                      "number" == et(t[3]) &&
+                      "number" == ei(t[3]) &&
                       t[3] >= 0 &&
                       t[3] <= 1))
                 )
                   return "rgb";
               },
             });
-          var ea = Math.log,
-            er = function (t) {
+          var eE = Math.log,
+            es = function (t) {
               var e,
                 a,
                 r,
@@ -23887,45 +23886,45 @@
                         ? 0
                         : -155.25485562709179 -
                           0.44596950469579133 * (a = _ - 2) +
-                          104.49216199393888 * ea(a)),
+                          104.49216199393888 * eE(a)),
                     (r =
                       _ < 20
                         ? 0
                         : -254.76935184120902 +
                           0.8274096064007395 * (r = _ - 10) +
-                          115.67994401066147 * ea(r)))
+                          115.67994401066147 * eE(r)))
                   : ((e =
                       351.97690566805693 +
                       0.114206453784165 * (e = _ - 55) -
-                      40.25366309332127 * ea(e)),
+                      40.25366309332127 * eE(e)),
                     (a =
                       325.4494125711974 +
                       0.07943456536662342 * (a = _ - 50) -
-                      28.0852963507957 * ea(a)),
+                      28.0852963507957 * eE(a)),
                     (r = 255)),
                 [e, a, r, 1]
               );
             },
-            e_ = i.unpack,
-            en = Math.round,
-            eo = function () {
+            el = i.unpack,
+            eu = Math.round,
+            eI = function () {
               for (var t, e = [], a = arguments.length; a--; )
                 e[a] = arguments[a];
               for (
-                var r = e_(e, "rgb"), _ = r[0], n = r[2], o = 1e3, i = 4e4;
+                var r = el(e, "rgb"), _ = r[0], n = r[2], o = 1e3, i = 4e4;
                 i - o > 0.4;
 
               ) {
-                var c = er((t = (i + o) * 0.5));
+                var c = es((t = (i + o) * 0.5));
                 c[2] / c[0] >= n / _ ? (i = t) : (o = t);
               }
-              return en(t);
+              return eu(t);
             };
           (u.prototype.temp =
             u.prototype.kelvin =
             u.prototype.temperature =
               function () {
-                return eo(this._rgb);
+                return eI(this._rgb);
               }),
             (I.temp =
               I.kelvin =
@@ -23938,67 +23937,67 @@
                     [null].concat(t, ["temp"]),
                   ))();
                 }),
-            (c.format.temp = c.format.kelvin = c.format.temperature = er);
-          var ei = i.unpack,
-            ec = Math.cbrt,
-            eE = Math.pow,
-            es = Math.sign,
-            el = function () {
+            (c.format.temp = c.format.kelvin = c.format.temperature = es);
+          var eR = i.unpack,
+            ed = Math.cbrt,
+            eN = Math.pow,
+            eA = Math.sign,
+            ef = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = ei(t, "rgb"),
+              var a = eR(t, "rgb"),
                 r = a[0],
                 _ = a[1],
                 n = a[2],
-                o = [eu(r / 255), eu(_ / 255), eu(n / 255)],
+                o = [eT(r / 255), eT(_ / 255), eT(n / 255)],
                 i = o[0],
                 c = o[1],
                 E = o[2],
-                s = ec(0.4122214708 * i + 0.5363325363 * c + 0.0514459929 * E),
-                l = ec(0.2119034982 * i + 0.6806995451 * c + 0.1073969566 * E),
-                u = ec(0.0883024619 * i + 0.2817188376 * c + 0.6299787005 * E);
+                s = ed(0.4122214708 * i + 0.5363325363 * c + 0.0514459929 * E),
+                l = ed(0.2119034982 * i + 0.6806995451 * c + 0.1073969566 * E),
+                u = ed(0.0883024619 * i + 0.2817188376 * c + 0.6299787005 * E);
               return [
                 0.2104542553 * s + 0.793617785 * l - 0.0040720468 * u,
                 1.9779984951 * s - 2.428592205 * l + 0.4505937099 * u,
                 0.0259040371 * s + 0.7827717662 * l - 0.808675766 * u,
               ];
             };
-          function eu(t) {
+          function eT(t) {
             var e = Math.abs(t);
             return e < 0.04045
               ? t / 12.92
-              : (es(t) || 1) * eE((e + 0.055) / 1.055, 2.4);
+              : (eA(t) || 1) * eN((e + 0.055) / 1.055, 2.4);
           }
-          var eI = i.unpack,
-            eR = Math.pow,
-            ed = Math.sign,
-            eN = function () {
+          var ep = i.unpack,
+            eL = Math.pow,
+            eh = Math.sign,
+            eO = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = (t = eI(t, "lab"))[0],
+              var a = (t = ep(t, "lab"))[0],
                 r = t[1],
                 _ = t[2],
-                n = eR(a + 0.3963377774 * r + 0.2158037573 * _, 3),
-                o = eR(a - 0.1055613458 * r - 0.0638541728 * _, 3),
-                i = eR(a - 0.0894841775 * r - 1.291485548 * _, 3);
+                n = eL(a + 0.3963377774 * r + 0.2158037573 * _, 3),
+                o = eL(a - 0.1055613458 * r - 0.0638541728 * _, 3),
+                i = eL(a - 0.0894841775 * r - 1.291485548 * _, 3);
               return [
                 255 *
-                  eA(4.0767416621 * n - 3.3077115913 * o + 0.2309699292 * i),
+                  eP(4.0767416621 * n - 3.3077115913 * o + 0.2309699292 * i),
                 255 *
-                  eA(-1.2684380046 * n + 2.6097574011 * o - 0.3413193965 * i),
+                  eP(-1.2684380046 * n + 2.6097574011 * o - 0.3413193965 * i),
                 255 *
-                  eA(-0.0041960863 * n - 0.7034186147 * o + 1.707614701 * i),
+                  eP(-0.0041960863 * n - 0.7034186147 * o + 1.707614701 * i),
                 t.length > 3 ? t[3] : 1,
               ];
             };
-          function eA(t) {
+          function eP(t) {
             var e = Math.abs(t);
             return e > 0.0031308
-              ? (ed(t) || 1) * (1.055 * eR(e, 1 / 2.4) - 0.055)
+              ? (eh(t) || 1) * (1.055 * eL(e, 1 / 2.4) - 0.055)
               : 12.92 * t;
           }
-          var ef = i.unpack,
-            eT = i.type;
+          var eg = i.unpack,
+            eD = i.type;
           (u.prototype.oklab = function () {
-            return el(this._rgb);
+            return ef(this._rgb);
           }),
             (I.oklab = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -24007,28 +24006,28 @@
                 [null].concat(t, ["oklab"]),
               ))();
             }),
-            (c.format.oklab = eN),
+            (c.format.oklab = eO),
             c.autodetect.push({
               p: 3,
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === eT((t = ef(t, "oklab"))) && 3 === t.length)
+                if ("array" === eD((t = eg(t, "oklab"))) && 3 === t.length)
                   return "oklab";
               },
             });
-          var ep = i.unpack,
-            eL = i.unpack,
-            eh = i.unpack,
-            eO = i.type,
-            eP = function () {
+          var eC = i.unpack,
+            em = i.unpack,
+            ev = i.unpack,
+            ey = i.type,
+            eS = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = ep(t, "rgb"),
-                r = el(a[0], a[1], a[2]);
-              return tF(r[0], r[1], r[2]);
+              var a = eC(t, "rgb"),
+                r = ef(a[0], a[1], a[2]);
+              return tJ(r[0], r[1], r[2]);
             };
           (u.prototype.oklch = function () {
-            return eP(this._rgb);
+            return eS(this._rgb);
           }),
             (I.oklch = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -24039,8 +24038,8 @@
             }),
             (c.format.oklch = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
-              var a = tz((t = eL(t, "lch"))[0], t[1], t[2]),
-                r = eN(a[0], a[1], a[2]);
+              var a = t3((t = em(t, "lch"))[0], t[1], t[2]),
+                r = eO(a[0], a[1], a[2]);
               return [r[0], r[1], r[2], t.length > 3 ? t[3] : 1];
             }),
             c.autodetect.push({
@@ -24048,14 +24047,14 @@
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === eO((t = eh(t, "oklch"))) && 3 === t.length)
+                if ("array" === ey((t = ev(t, "oklch"))) && 3 === t.length)
                   return "oklch";
               },
             });
-          var eg = i.type;
+          var eU = i.type;
           (u.prototype.alpha = function (t, e) {
             return (void 0 === e && (e = !1),
-            void 0 !== t && "number" === eg(t))
+            void 0 !== t && "number" === eU(t))
               ? e
                 ? ((this._rgb[3] = t), this)
                 : new u([this._rgb[0], this._rgb[1], this._rgb[2], t], "rgb")
@@ -24067,9 +24066,7 @@
             (u.prototype.darken = function (t) {
               void 0 === t && (t = 1);
               var e = this.lab();
-              return (
-                (e[0] -= tD.Kn * t), new u(e, "lab").alpha(this.alpha(), !0)
-              );
+              return (e[0] -= tD * t), new u(e, "lab").alpha(this.alpha(), !0);
             }),
             (u.prototype.brighten = function (t) {
               return void 0 === t && (t = 1), this.darken(-t);
@@ -24086,10 +24083,10 @@
               if (n > -1) return _[n];
               throw Error("unknown channel " + r + " in mode " + a);
             });
-          var eD = i.type,
-            eC = Math.pow;
+          var eb = i.type,
+            eG = Math.pow;
           u.prototype.luminance = function (t) {
-            if (void 0 !== t && "number" === eD(t)) {
+            if (void 0 !== t && "number" === eb(t)) {
               if (0 === t) return new u([0, 0, 0, this._rgb[3]], "rgb");
               if (1 === t) return new u([255, 255, 255, this._rgb[3]], "rgb");
               var e = this.luminance(),
@@ -24110,32 +24107,32 @@
                 ).rgb();
               return new u(_.concat([this._rgb[3]]));
             }
-            return em.apply(void 0, this._rgb.slice(0, 3));
+            return eW.apply(void 0, this._rgb.slice(0, 3));
           };
-          var em = function (t, e, a) {
+          var eW = function (t, e, a) {
               return (
-                (t = ev(t)),
-                0.2126 * t + 0.7152 * (e = ev(e)) + 0.0722 * (a = ev(a))
+                (t = ew(t)),
+                0.2126 * t + 0.7152 * (e = ew(e)) + 0.0722 * (a = ew(a))
               );
             },
-            ev = function (t) {
+            ew = function (t) {
               return (t /= 255) <= 0.03928
                 ? t / 12.92
-                : eC((t + 0.055) / 1.055, 2.4);
+                : eG((t + 0.055) / 1.055, 2.4);
             },
-            ey = {},
-            eS = i.type,
-            eU = function (t, e, a) {
+            eM = {},
+            eB = i.type,
+            eY = function (t, e, a) {
               void 0 === a && (a = 0.5);
               for (var r = [], _ = arguments.length - 3; _-- > 0; )
                 r[_] = arguments[_ + 3];
               var n = r[0] || "lrgb";
-              if ((ey[n] || r.length || (n = Object.keys(ey)[0]), !ey[n]))
+              if ((eM[n] || r.length || (n = Object.keys(eM)[0]), !eM[n]))
                 throw Error("interpolation mode " + n + " is not defined");
               return (
-                "object" !== eS(t) && (t = new u(t)),
-                "object" !== eS(e) && (e = new u(e)),
-                ey[n](t, e, a).alpha(t.alpha() + a * (e.alpha() - t.alpha()))
+                "object" !== eB(t) && (t = new u(t)),
+                "object" !== eB(e) && (e = new u(e)),
+                eM[n](t, e, a).alpha(t.alpha() + a * (e.alpha() - t.alpha()))
               );
             };
           (u.prototype.mix = u.prototype.interpolate =
@@ -24143,7 +24140,7 @@
               void 0 === e && (e = 0.5);
               for (var a = [], r = arguments.length - 2; r-- > 0; )
                 a[r] = arguments[r + 2];
-              return eU.apply(void 0, [this, t, e].concat(a));
+              return eY.apply(void 0, [this, t, e].concat(a));
             }),
             (u.prototype.premultiply = function (t) {
               void 0 === t && (t = !1);
@@ -24157,7 +24154,7 @@
               void 0 === t && (t = 1);
               var e = this.lch();
               return (
-                (e[1] += tD.Kn * t),
+                (e[1] += tD * t),
                 e[1] < 0 && (e[1] = 0),
                 new u(e, "lch").alpha(this.alpha(), !0)
               );
@@ -24165,7 +24162,7 @@
             (u.prototype.desaturate = function (t) {
               return void 0 === t && (t = 1), this.saturate(-t);
             });
-          var eb = i.type;
+          var eH = i.type;
           (u.prototype.set = function (t, e, a) {
             void 0 === a && (a = !1);
             var r = t.split("."),
@@ -24175,29 +24172,30 @@
             if (!n) return o;
             var i = _.indexOf(n) - 2 * ("ok" === _.substr(0, 2));
             if (i > -1) {
-              if ("string" == eb(e))
+              if ("string" == eH(e))
                 switch (e.charAt(0)) {
                   case "+":
                   case "-":
                     o[i] += +e;
                     break;
                   case "*":
-                    o[i] *= +e.substr(1);
+                    o[i] *= e.substr(1);
                     break;
                   case "/":
-                    o[i] /= +e.substr(1);
+                    o[i] /= e.substr(1);
                     break;
                   default:
                     o[i] = +e;
                 }
-              else if ("number" === eb(e)) o[i] = e;
+              else if ("number" === eH(e)) o[i] = e;
               else throw Error("unsupported value for Color.set");
               var c = new u(o, _);
-              return a ? ((this._rgb = c._rgb), this) : c;
+              if (a) return (this._rgb = c._rgb), this;
+              return c;
             }
             throw Error("unknown channel " + n + " in mode " + _);
           }),
-            (ey.rgb = function (t, e, a) {
+            (eM.rgb = function (t, e, a) {
               var r = t._rgb,
                 _ = e._rgb;
               return new u(
@@ -24207,9 +24205,9 @@
                 "rgb",
               );
             });
-          var eG = Math.sqrt,
-            eW = Math.pow;
-          (ey.lrgb = function (t, e, a) {
+          var eK = Math.sqrt,
+            ek = Math.pow;
+          (eM.lrgb = function (t, e, a) {
             var r = t._rgb,
               _ = r[0],
               n = r[1],
@@ -24219,13 +24217,13 @@
               E = i[1],
               s = i[2];
             return new u(
-              eG(eW(_, 2) * (1 - a) + eW(c, 2) * a),
-              eG(eW(n, 2) * (1 - a) + eW(E, 2) * a),
-              eG(eW(o, 2) * (1 - a) + eW(s, 2) * a),
+              eK(ek(_, 2) * (1 - a) + ek(c, 2) * a),
+              eK(ek(n, 2) * (1 - a) + ek(E, 2) * a),
+              eK(ek(o, 2) * (1 - a) + ek(s, 2) * a),
               "rgb",
             );
           }),
-            (ey.lab = function (t, e, a) {
+            (eM.lab = function (t, e, a) {
               var r = t.lab(),
                 _ = e.lab();
               return new u(
@@ -24235,7 +24233,7 @@
                 "lab",
               );
             });
-          var ew = function (t, e, a, r) {
+          var ex = function (t, e, a, r) {
               var _, n, o, i, c, E, s, l, I, R, d, N, A, f;
               return (
                 "hsl" === r
@@ -24261,7 +24259,7 @@
                 isNaN(c) || isNaN(E)
                   ? isNaN(c)
                     ? isNaN(E)
-                      ? (N = Number.NaN)
+                      ? (N = NaN)
                       : ((N = E), (1 == I || 0 == I) && "hsv" != r && (d = l))
                     : ((N = c), (1 == R || 0 == R) && "hsv" != r && (d = s))
                   : ((f =
@@ -24276,28 +24274,28 @@
                 "oklch" === r ? new u([A, d, N], r) : new u([N, d, A], r)
               );
             },
-            eM = function (t, e, a) {
-              return ew(t, e, a, "lch");
+            eF = function (t, e, a) {
+              return ex(t, e, a, "lch");
             };
-          (ey.lch = eM),
-            (ey.hcl = eM),
-            (ey.num = function (t, e, a) {
+          (eM.lch = eF),
+            (eM.hcl = eF),
+            (eM.num = function (t, e, a) {
               var r = t.num();
               return new u(r + a * (e.num() - r), "num");
             }),
-            (ey.hcg = function (t, e, a) {
-              return ew(t, e, a, "hcg");
+            (eM.hcg = function (t, e, a) {
+              return ex(t, e, a, "hcg");
             }),
-            (ey.hsi = function (t, e, a) {
-              return ew(t, e, a, "hsi");
+            (eM.hsi = function (t, e, a) {
+              return ex(t, e, a, "hsi");
             }),
-            (ey.hsl = function (t, e, a) {
-              return ew(t, e, a, "hsl");
+            (eM.hsl = function (t, e, a) {
+              return ex(t, e, a, "hsl");
             }),
-            (ey.hsv = function (t, e, a) {
-              return ew(t, e, a, "hsv");
+            (eM.hsv = function (t, e, a) {
+              return ex(t, e, a, "hsv");
             }),
-            (ey.oklab = function (t, e, a) {
+            (eM.oklab = function (t, e, a) {
               var r = t.oklab(),
                 _ = e.oklab();
               return new u(
@@ -24307,17 +24305,17 @@
                 "oklab",
               );
             }),
-            (ey.oklch = function (t, e, a) {
-              return ew(t, e, a, "oklch");
+            (eM.oklch = function (t, e, a) {
+              return ex(t, e, a, "oklch");
             });
-          var eB = i.clip_rgb,
-            eY = Math.pow,
-            eH = Math.sqrt,
-            eK = Math.PI,
-            ek = Math.cos,
-            ex = Math.sin,
-            eF = Math.atan2,
-            eV = function (t, e) {
+          var eV = i.clip_rgb,
+            ej = Math.pow,
+            eX = Math.sqrt,
+            e$ = Math.PI,
+            eq = Math.cos,
+            ez = Math.sin,
+            eJ = Math.atan2,
+            eZ = function (t, e) {
               for (
                 var a = t.length, r = [0, 0, 0, 0], _ = 0;
                 _ < t.length;
@@ -24326,22 +24324,22 @@
                 var n = t[_],
                   o = e[_] / a,
                   i = n._rgb;
-                (r[0] += eY(i[0], 2) * o),
-                  (r[1] += eY(i[1], 2) * o),
-                  (r[2] += eY(i[2], 2) * o),
+                (r[0] += ej(i[0], 2) * o),
+                  (r[1] += ej(i[1], 2) * o),
+                  (r[2] += ej(i[2], 2) * o),
                   (r[3] += i[3] * o);
               }
               return (
-                (r[0] = eH(r[0])),
-                (r[1] = eH(r[1])),
-                (r[2] = eH(r[2])),
+                (r[0] = eX(r[0])),
+                (r[1] = eX(r[1])),
+                (r[2] = eX(r[2])),
                 r[3] > 0.9999999 && (r[3] = 1),
-                new u(eB(r))
+                new u(eV(r))
               );
             },
-            ej = i.type,
-            eX = Math.pow,
-            e$ = function (t) {
+            eQ = i.type,
+            e0 = Math.pow,
+            e1 = function (t) {
               var e = "rgb",
                 a = I("#ccc"),
                 r = 0,
@@ -24359,11 +24357,11 @@
                 N = 1,
                 A = function (t) {
                   if (
-                    ("string" === ej((t = t || ["#fff", "#000"])) &&
+                    ("string" === eQ((t = t || ["#fff", "#000"])) &&
                       I.brewer &&
                       I.brewer[t.toLowerCase()] &&
                       (t = I.brewer[t.toLowerCase()]),
-                    "array" === ej(t))
+                    "array" === eQ(t))
                   ) {
                     1 === t.length && (t = [t[0], t[0]]), (t = t.slice(0));
                     for (var e = 0; e < t.length; e++) t[e] = I(t[e]);
@@ -24393,7 +24391,7 @@
                     var _, E;
                     E = f(t) / (i.length - 2);
                   } else E = l !== s ? (t - s) / (l - s) : 1;
-                  (E = p(E)), r || (E = T(E)), 1 !== N && (E = eX(E, N));
+                  (E = p(E)), r || (E = T(E)), 1 !== N && (E = e0(E, N));
                   var u = Math.floor(
                     1e4 *
                       (E = Math.min(
@@ -24403,7 +24401,7 @@
                   );
                   if (d && R[u]) _ = R[u];
                   else {
-                    if ("array" === ej(c))
+                    if ("array" === eQ(c))
                       for (var A = 0; A < n.length; A++) {
                         var L = n[A];
                         if (E <= L || (E >= L && A === n.length - 1)) {
@@ -24416,7 +24414,7 @@
                           break;
                         }
                       }
-                    else "function" === ej(c) && (_ = c(E));
+                    else "function" === eQ(c) && (_ = c(E));
                     d && (R[u] = _);
                   }
                   return _;
@@ -24432,7 +24430,7 @@
               return (
                 (O.classes = function (t) {
                   if (null != t) {
-                    if ("array" === ej(t))
+                    if ("array" === eQ(t))
                       (i = t), (_ = [t[0], t[t.length - 1]]);
                     else {
                       var e = I.analyze(_);
@@ -24520,7 +24518,7 @@
                 }),
                 (O.padding = function (t) {
                   return null != t
-                    ? ("number" === ej(t) && (t = [t, t]), (o = t), O)
+                    ? ("number" === eQ(t) && (t = [t, t]), (o = t), O)
                     : o;
                 }),
                 (O.colors = function (e, a) {
@@ -24580,7 +24578,7 @@
                 O
               );
             },
-            eq = function (t) {
+            e2 = function (t) {
               for (var e = [1, 1], a = 1; a < t; a++) {
                 for (var r = [1], _ = 1; _ <= e.length; _++)
                   r[_] = (e[_] || 0) + e[_ - 1];
@@ -24588,7 +24586,7 @@
               }
               return e;
             },
-            ez = function (t) {
+            e3 = function (t) {
               var e, a, r, _, n, o, i, c, E, s, l;
               if (
                 2 ===
@@ -24650,7 +24648,7 @@
                 (E = t.map(function (t) {
                   return t.lab();
                 })),
-                  (s = eq((l = t.length - 1))),
+                  (s = e2((l = t.length - 1))),
                   (_ = function (t) {
                     var e = 1 - t;
                     return new u(
@@ -24671,18 +24669,18 @@
                 );
               return _;
             },
-            eJ = function (t, e, a) {
-              if (!eJ[a]) throw Error("unknown blend mode " + a);
-              return eJ[a](t, e);
+            e6 = function (t, e, a) {
+              if (!e6[a]) throw Error("unknown blend mode " + a);
+              return e6[a](t, e);
             },
-            eZ = function (t) {
+            e4 = function (t) {
               return function (e, a) {
                 var r = I(a).rgb(),
                   _ = I(e).rgb();
                 return I.rgb(t(r, _));
               };
             },
-            eQ = function (t) {
+            e5 = function (t) {
               return function (e, a) {
                 var r = [];
                 return (
@@ -24693,65 +24691,65 @@
                 );
               };
             };
-          (eJ.normal = eZ(
-            eQ(function (t) {
+          (e6.normal = e4(
+            e5(function (t) {
               return t;
             }),
           )),
-            (eJ.multiply = eZ(
-              eQ(function (t, e) {
+            (e6.multiply = e4(
+              e5(function (t, e) {
                 return (t * e) / 255;
               }),
             )),
-            (eJ.screen = eZ(
-              eQ(function (t, e) {
+            (e6.screen = e4(
+              e5(function (t, e) {
                 return 255 * (1 - (1 - t / 255) * (1 - e / 255));
               }),
             )),
-            (eJ.overlay = eZ(
-              eQ(function (t, e) {
+            (e6.overlay = e4(
+              e5(function (t, e) {
                 return e < 128
                   ? (2 * t * e) / 255
                   : 255 * (1 - 2 * (1 - t / 255) * (1 - e / 255));
               }),
             )),
-            (eJ.darken = eZ(
-              eQ(function (t, e) {
+            (e6.darken = e4(
+              e5(function (t, e) {
                 return t > e ? e : t;
               }),
             )),
-            (eJ.lighten = eZ(
-              eQ(function (t, e) {
+            (e6.lighten = e4(
+              e5(function (t, e) {
                 return t > e ? t : e;
               }),
             )),
-            (eJ.dodge = eZ(
-              eQ(function (t, e) {
+            (e6.dodge = e4(
+              e5(function (t, e) {
                 return 255 === t ||
                   (t = ((e / 255) * 255) / (1 - t / 255)) > 255
                   ? 255
                   : t;
               }),
             )),
-            (eJ.burn = eZ(
-              eQ(function (t, e) {
+            (e6.burn = e4(
+              e5(function (t, e) {
                 return 255 * (1 - (1 - e / 255) / (t / 255));
               }),
             ));
           for (
-            var e0 = i.type,
-              e1 = i.clip_rgb,
-              e2 = i.TWOPI,
-              e3 = Math.pow,
-              e6 = Math.sin,
-              e4 = Math.cos,
-              e5 = Math.floor,
-              e8 = Math.random,
-              e7 = Math.log,
-              e9 = Math.pow,
-              at = Math.floor,
-              ae = Math.abs,
-              aa = function (t, e) {
+            var e8 = i.type,
+              e7 = i.clip_rgb,
+              e9 = i.TWOPI,
+              at = Math.pow,
+              ae = Math.sin,
+              aa = Math.cos,
+              ar = Math.floor,
+              a_ = Math.random,
+              an = Math.log,
+              ao = Math.pow,
+              ai = Math.floor,
+              ac = Math.abs,
+              aE = function (t, e) {
                 void 0 === e && (e = null);
                 var a = {
                   min: Number.MAX_VALUE,
@@ -24774,15 +24772,15 @@
                   }),
                   (a.domain = [a.min, a.max]),
                   (a.limits = function (t, e) {
-                    return ar(a, t, e);
+                    return as(a, t, e);
                   }),
                   a
                 );
               },
-              ar = function (t, e, a) {
+              as = function (t, e, a) {
                 void 0 === e && (e = "equal"),
                   void 0 === a && (a = 7),
-                  "array" == n(t) && (t = aa(t));
+                  "array" == n(t) && (t = aE(t));
                 var r = t.min,
                   _ = t.max,
                   o = t.values.sort(function (t, e) {
@@ -24802,17 +24800,17 @@
                     throw Error(
                       "Logarithmic scales are only possible for values > 0",
                     );
-                  var E = Math.LOG10E * e7(r),
-                    s = Math.LOG10E * e7(_);
+                  var E = Math.LOG10E * an(r),
+                    s = Math.LOG10E * an(_);
                   i.push(r);
                   for (var l = 1; l < a; l++)
-                    i.push(e9(10, E + (l / a) * (s - E)));
+                    i.push(ao(10, E + (l / a) * (s - E)));
                   i.push(_);
                 } else if ("q" === e.substr(0, 1)) {
                   i.push(r);
                   for (var u = 1; u < a; u++) {
                     var I = ((o.length - 1) * u) / a,
-                      R = at(I);
+                      R = ai(I);
                     if (R === I) i.push(o[R]);
                     else {
                       var d = I - R;
@@ -24838,7 +24836,7 @@
                         v < a;
                         v++
                       ) {
-                        var y = ae(h[v] - D);
+                        var y = ac(h[v] - D);
                         y < C && ((C = y), (m = v)), T[m]++, (f[g] = m);
                       }
                     for (var S = Array(a), U = 0; U < a; U++) S[U] = null;
@@ -24868,17 +24866,17 @@
                 }
                 return i;
               },
-              a_ = Math.sqrt,
-              an = Math.pow,
-              ao = Math.min,
-              ai = Math.max,
-              ac = Math.atan2,
-              aE = Math.abs,
-              as = Math.cos,
-              al = Math.sin,
-              au = Math.exp,
-              aI = Math.PI,
-              aR = {
+              al = Math.sqrt,
+              au = Math.pow,
+              aI = Math.min,
+              aR = Math.max,
+              ad = Math.atan2,
+              aN = Math.abs,
+              aA = Math.cos,
+              af = Math.sin,
+              aT = Math.exp,
+              ap = Math.PI,
+              aL = {
                 OrRd: [
                   "#fff7ec",
                   "#fee8c8",
@@ -25296,13 +25294,13 @@
                   "#f2f2f2",
                 ],
               },
-              ad = 0,
-              aN = Object.keys(aR);
-            ad < aN.length;
-            ad += 1
+              ah = 0,
+              aO = Object.keys(aL);
+            ah < aO.length;
+            ah += 1
           ) {
-            var aA = aN[ad];
-            aR[aA.toLowerCase()] = aR[aA];
+            var aP = aO[ah];
+            aL[aP.toLowerCase()] = aL[aP];
           }
           return (
             (I.average = function (t, e, a) {
@@ -25326,7 +25324,7 @@
                 })),
                 "lrgb" === e)
               )
-                return eV(t, a);
+                return eZ(t, a);
               for (
                 var n = t.shift(), o = n.get(e), i = [], c = 0, E = 0, s = 0;
                 s < o.length;
@@ -25337,8 +25335,8 @@
                   i.push(isNaN(o[s]) ? 0 : a[0]),
                   "h" === e.charAt(s) && !isNaN(o[s]))
                 ) {
-                  var l = (o[s] / 180) * eK;
-                  (c += ek(l) * a[0]), (E += ex(l) * a[0]);
+                  var l = (o[s] / 180) * e$;
+                  (c += eq(l) * a[0]), (E += ez(l) * a[0]);
                 }
               var I = n.alpha() * a[0];
               t.forEach(function (t, r) {
@@ -25347,13 +25345,13 @@
                 for (var n = 0; n < o.length; n++)
                   if (!isNaN(_[n]))
                     if (((i[n] += a[r + 1]), "h" === e.charAt(n))) {
-                      var s = (_[n] / 180) * eK;
-                      (c += ek(s) * a[r + 1]), (E += ex(s) * a[r + 1]);
+                      var s = (_[n] / 180) * e$;
+                      (c += eq(s) * a[r + 1]), (E += ez(s) * a[r + 1]);
                     } else o[n] += _[n] * a[r + 1];
               });
               for (var R = 0; R < o.length; R++)
                 if ("h" === e.charAt(R)) {
-                  for (var d = (eF(E / i[R], c / i[R]) / eK) * 180; d < 0; )
+                  for (var d = (eJ(E / i[R], c / i[R]) / e$) * 180; d < 0; )
                     d += 360;
                   for (; d >= 360; ) d -= 360;
                   o[R] = d;
@@ -25361,15 +25359,15 @@
               return (I /= r), new u(o, e).alpha(I > 0.99999 ? 1 : I, !0);
             }),
             (I.bezier = function (t) {
-              var e = ez(t);
+              var e = e3(t);
               return (
                 (e.scale = function () {
-                  return e$(e);
+                  return e1(e);
                 }),
                 e
               );
             }),
-            (I.blend = eJ),
+            (I.blend = e6),
             (I.cubehelix = function (t, e, a, r, _) {
               void 0 === t && (t = 300),
                 void 0 === e && (e = -1.5),
@@ -25378,15 +25376,15 @@
                 void 0 === _ && (_ = [0, 1]);
               var n,
                 o = 0;
-              "array" === e0(_) ? (n = _[1] - _[0]) : ((n = 0), (_ = [_, _]));
+              "array" === e8(_) ? (n = _[1] - _[0]) : ((n = 0), (_ = [_, _]));
               var i = function (i) {
-                var c = e2 * ((t + 120) / 360 + e * i),
-                  E = e3(_[0] + n * i, r),
+                var c = e9 * ((t + 120) / 360 + e * i),
+                  E = at(_[0] + n * i, r),
                   s = ((0 !== o ? a[0] + i * o : a) * E * (1 - E)) / 2,
-                  l = e4(c),
-                  u = e6(c);
+                  l = aa(c),
+                  u = ae(c);
                 return I(
-                  e1([
+                  e7([
                     255 * (E + s * (-0.14861 * l + 1.78277 * u)),
                     255 * (E + s * (-0.29227 * l - 0.90649 * u)),
                     255 * (E + 1.97294 * l * s),
@@ -25407,7 +25405,7 @@
                 (i.hue = function (t) {
                   return null == t
                     ? a
-                    : ("array" === e0((a = t))
+                    : ("array" === e8((a = t))
                         ? 0 == (o = a[1] - a[0]) && (a = a[1])
                         : (o = 0),
                       i);
@@ -25415,7 +25413,7 @@
                 (i.lightness = function (t) {
                   return null == t
                     ? _
-                    : ("array" === e0(t)
+                    : ("array" === e8(t)
                         ? ((_ = t), (n = t[1] - t[0]))
                         : ((_ = [t, t]), (n = 0)),
                       i);
@@ -25427,14 +25425,14 @@
                 i
               );
             }),
-            (I.mix = I.interpolate = eU),
+            (I.mix = I.interpolate = eY),
             (I.random = function () {
               for (var t = "#", e = 0; e < 6; e++)
-                t += "0123456789abcdef".charAt(e5(16 * e8()));
+                t += "0123456789abcdef".charAt(ar(16 * a_()));
               return new u(t, "hex");
             }),
-            (I.scale = e$),
-            (I.analyze = aa),
+            (I.scale = e1),
+            (I.analyze = aE),
             (I.contrast = function (t, e) {
               (t = new u(t)), (e = new u(e));
               var a = t.luminance(),
@@ -25446,10 +25444,10 @@
                 void 0 === r && (r = 1),
                 void 0 === _ && (_ = 1);
               var n = function (t) {
-                  return (360 * t) / (2 * aI);
+                  return (360 * t) / (2 * ap);
                 },
                 o = function (t) {
-                  return (2 * aI * t) / 360;
+                  return (2 * ap * t) / 360;
                 };
               (t = new u(t)), (e = new u(e));
               var i = Array.from(t.lab()),
@@ -25461,41 +25459,41 @@
                 R = l[1],
                 d = l[2],
                 N = (c + I) / 2,
-                A = (a_(an(E, 2) + an(s, 2)) + a_(an(R, 2) + an(d, 2))) / 2,
-                f = 0.5 * (1 - a_(an(A, 7) / (an(A, 7) + an(25, 7)))),
+                A = (al(au(E, 2) + au(s, 2)) + al(au(R, 2) + au(d, 2))) / 2,
+                f = 0.5 * (1 - al(au(A, 7) / (au(A, 7) + au(25, 7)))),
                 T = E * (1 + f),
                 p = R * (1 + f),
-                L = a_(an(T, 2) + an(s, 2)),
-                h = a_(an(p, 2) + an(d, 2)),
+                L = al(au(T, 2) + au(s, 2)),
+                h = al(au(p, 2) + au(d, 2)),
                 O = (L + h) / 2,
-                P = n(ac(s, T)),
-                g = n(ac(d, p)),
+                P = n(ad(s, T)),
+                g = n(ad(d, p)),
                 D = P >= 0 ? P : P + 360,
                 C = g >= 0 ? g : g + 360,
-                m = aE(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
+                m = aN(D - C) > 180 ? (D + C + 360) / 2 : (D + C) / 2,
                 v =
                   1 -
-                  0.17 * as(o(m - 30)) +
-                  0.24 * as(o(2 * m)) +
-                  0.32 * as(o(3 * m + 6)) -
-                  0.2 * as(o(4 * m - 63)),
+                  0.17 * aA(o(m - 30)) +
+                  0.24 * aA(o(2 * m)) +
+                  0.32 * aA(o(3 * m + 6)) -
+                  0.2 * aA(o(4 * m - 63)),
                 y = C - D;
-              (y = 180 >= aE(y) ? y : C <= D ? y + 360 : y - 360),
-                (y = 2 * a_(L * h) * al(o(y) / 2));
+              (y = 180 >= aN(y) ? y : C <= D ? y + 360 : y - 360),
+                (y = 2 * al(L * h) * af(o(y) / 2));
               var S = h - L,
-                U = 1 + (0.015 * an(N - 50, 2)) / a_(20 + an(N - 50, 2)),
+                U = 1 + (0.015 * au(N - 50, 2)) / al(20 + au(N - 50, 2)),
                 b = 1 + 0.045 * O,
                 G = 1 + 0.015 * O * v,
-                W = 30 * au(-an((m - 275) / 25, 2)),
-                w = -(2 * a_(an(O, 7) / (an(O, 7) + an(25, 7)))) * al(2 * o(W));
-              return ai(
+                W = 30 * aT(-au((m - 275) / 25, 2)),
+                w = -(2 * al(au(O, 7) / (au(O, 7) + au(25, 7)))) * af(2 * o(W));
+              return aR(
                 0,
-                ao(
+                aI(
                   100,
-                  a_(
-                    an((I - c) / (a * U), 2) +
-                      an(S / (r * b), 2) +
-                      an(y / (_ * G), 2) +
+                  al(
+                    au((I - c) / (a * U), 2) +
+                      au(S / (r * b), 2) +
+                      au(y / (_ * G), 2) +
                       (S / (r * b)) * w * (y / (_ * G)),
                   ),
                 ),
@@ -25512,7 +25510,7 @@
               }
               return Math.sqrt(n);
             }),
-            (I.limits = ar),
+            (I.limits = as),
             (I.valid = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               try {
@@ -25525,14 +25523,14 @@
             }),
             (I.scales = {
               cool: function () {
-                return e$([I.hsl(180, 1, 0.9), I.hsl(250, 0.7, 0.4)]);
+                return e1([I.hsl(180, 1, 0.9), I.hsl(250, 0.7, 0.4)]);
               },
               hot: function () {
-                return e$(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
+                return e1(["#000", "#f00", "#ff0", "#fff"]).mode("rgb");
               },
             }),
-            (I.colors = t3),
-            (I.brewer = aR),
+            (I.colors = et),
+            (I.brewer = aL),
             I
           );
         })();
@@ -31327,13 +31325,12 @@ Reason: ${t}`))
           o = a(255768);
         let i = [];
         function c(t) {
-          let e,
-            a = t.defaultIntegrations || [],
-            _ = t.integrations;
-          a.forEach((t) => {
+          let e = t.defaultIntegrations || [],
+            a = t.integrations;
+          e.forEach((t) => {
             t.isDefaultInstance = !0;
           });
-          let n = (function (t) {
+          let _ = (function (t) {
               let e = {};
               return (
                 t.forEach((t) => {
@@ -31345,18 +31342,18 @@ Reason: ${t}`))
                 Object.values(e)
               );
             })(
-              Array.isArray(_)
-                ? [...a, ..._]
-                : "function" == typeof _
-                  ? (0, r.lE)(_(a))
-                  : a,
+              Array.isArray(a)
+                ? [...e, ...a]
+                : "function" == typeof a
+                  ? (0, r.lE)(a(e))
+                  : e,
             ),
-            o = n.findIndex((t) => "Debug" === t.name);
-          if (o > -1) {
-            let [t] = n.splice(o, 1);
-            n.push(t);
+            n = _.findIndex((t) => "Debug" === t.name);
+          if (n > -1) {
+            let [t] = _.splice(n, 1);
+            _.push(t);
           }
-          return n;
+          return _;
         }
         function E(t, e) {
           let a = {};
@@ -37439,7 +37436,7 @@ Error:`,
       },
       231550: function (t, e, a) {
         "use strict";
-        a.d(e, { Y: () => N });
+        a.d(e, { Y: () => d });
         var r = a(395848),
           _ = a(140955),
           n = a(596308),
@@ -37472,11 +37469,7 @@ Error:`,
                 });
             }
           },
-          d = () => {
-            let t = Math.min(u.length - 1, Math.floor(l() / 50));
-            return u[t];
-          },
-          N = (t, e = {}) => {
+          d = (t, e = {}) => {
             (0, E.A)(() => {
               let a;
               (0, c.Y)();
@@ -37494,22 +37487,25 @@ Error:`,
                         ) ||
                           R(t));
                   });
-                  let e = d();
+                  let e = (() => {
+                    let t = Math.min(u.length - 1, Math.floor(l() / 50));
+                    return u[t];
+                  })();
                   e &&
                     e.latency !== E.value &&
                     ((E.value = e.latency), (E.entries = e.entries), a());
                 },
-                N = (0, o.N)("event", I, {
+                d = (0, o.N)("event", I, {
                   durationThreshold:
                     null != e.durationThreshold ? e.durationThreshold : 40,
                 });
               (a = (0, _._)(t, E, s, e.reportAllChanges)),
-                N &&
+                d &&
                   ("PerformanceEventTiming" in r.m &&
                     "interactionId" in PerformanceEventTiming.prototype &&
-                    N.observe({ type: "first-input", buffered: !0 }),
+                    d.observe({ type: "first-input", buffered: !0 }),
                   (0, i.u)(() => {
-                    I(N.takeRecords()),
+                    I(d.takeRecords()),
                       E.value < 0 &&
                         l() > 0 &&
                         ((E.value = 0), (E.entries = [])),
@@ -37563,21 +37559,25 @@ Error:`,
       },
       140955: function (t, e, a) {
         "use strict";
-        a.d(e, { _: () => _ });
-        let r = (t, e) =>
-            t > e[1] ? "poor" : t > e[0] ? "needs-improvement" : "good",
-          _ = (t, e, a, _) => {
-            let n, o;
-            return (i) => {
+        a.d(e, { _: () => r });
+        let r = (t, e, a, r) => {
+          let _, n;
+          return (o) => {
+            if (
               e.value >= 0 &&
-                (i || _) &&
-                ((o = e.value - (n || 0)) || void 0 === n) &&
-                ((n = e.value),
-                (e.delta = o),
-                (e.rating = r(e.value, a)),
-                t(e));
-            };
+              (o || r) &&
+              ((n = e.value - (_ || 0)) || void 0 === _)
+            ) {
+              var i;
+              (_ = e.value),
+                (e.delta = n),
+                (i = e.value),
+                (e.rating =
+                  i > a[1] ? "poor" : i > a[0] ? "needs-improvement" : "good"),
+                t(e);
+            }
           };
+        };
       },
       383704: function (t, e, a) {
         "use strict";
@@ -37605,29 +37605,26 @@ Error:`,
       },
       416987: function (t, e, a) {
         "use strict";
-        a.d(e, { Y: () => c });
+        a.d(e, { Y: () => o });
         var r = a(395848);
         let _ = -1,
-          n = () => {
-            _ =
-              "hidden" !== r.m.document.visibilityState ||
-              r.m.document.prerendering
-                ? 1 / 0
-                : 0;
-          },
-          o = (t) => {
+          n = (t) => {
             "hidden" === r.m.document.visibilityState &&
               _ > -1 &&
               ((_ = "visibilitychange" === t.type ? t.timeStamp : 0),
-              removeEventListener("visibilitychange", o, !0),
-              removeEventListener("prerenderingchange", o, !0));
+              removeEventListener("visibilitychange", n, !0),
+              removeEventListener("prerenderingchange", n, !0));
           },
-          i = () => {
-            addEventListener("visibilitychange", o, !0),
-              addEventListener("prerenderingchange", o, !0);
-          },
-          c = () => (
-            r.m.document && _ < 0 && (n(), i()),
+          o = () => (
+            r.m.document &&
+              _ < 0 &&
+              ((_ =
+                "hidden" !== r.m.document.visibilityState ||
+                r.m.document.prerendering
+                  ? 1 / 0
+                  : 0),
+              addEventListener("visibilitychange", n, !0),
+              addEventListener("prerenderingchange", n, !0)),
             {
               get firstHiddenTime() {
                 return _;
@@ -41413,10 +41410,9 @@ ${tZ}
             });
           }
           takeSnapshot(t, e, a, r, _, n, o, c) {
-            let E,
-              s = 1e3 / e,
-              l = 0,
-              u = (t) => {
+            let E = 1e3 / e,
+              s = 0,
+              l = (t) => {
                 if (t) return [t];
                 let e = [],
                   n = (t) => {
@@ -41434,11 +41430,11 @@ ${tZ}
                 }
                 return e;
               },
-              I = (e) => {
+              u = (e) => {
                 if (this.windows.length) {
-                  if (l && e - l < s) return void f(I);
-                  (l = e),
-                    u(c).forEach((e) => {
+                  if (s && e - s < E) return void f(u);
+                  (s = e),
+                    l(c).forEach((e) => {
                       if (!this.mirror.hasNode(e)) return;
                       let a = this.mirror.getId(e);
                       if (
@@ -41492,10 +41488,10 @@ ${tZ}
                           });
                       }
                     }),
-                    f(I);
+                    f(u);
                 }
               };
-            return f(I);
+            return f(u);
           }
           startPendingCanvasMutationFlusher() {
             f(() => this.flushPendingCanvasMutations());
@@ -41588,7 +41584,7 @@ ${tZ}
       616456: function (t, e, a) {
         "use strict";
         let r, _, n, o, i, c;
-        a.d(e, { G: () => aH, T: () => ax });
+        a.d(e, { G: () => aY, T: () => ak });
         var E,
           s,
           l,
@@ -41856,10 +41852,8 @@ ${tZ}
             if (!i) return t;
             if (tN.test(i) || tA.test(i) || tf.test(i))
               return `url(${c}${i}${c})`;
-            if ("/" === i[0]) {
-              let t;
+            if ("/" === i[0])
               return `url(${c}${(e.indexOf("//") > -1 ? e.split("/").slice(0, 3).join("/") : e.split("/")[0]).split("?")[0] + i}${c})`;
-            }
             let E = e.split("/"),
               s = i.split("/");
             for (let t of (E.pop(), s))
@@ -43847,47 +43841,7 @@ ${tZ}
                     ? {}
                     : o.mouseInteraction,
                 c = [],
-                E = null,
-                s = (e) => (o) => {
-                  let i = er(o);
-                  if (tk(i, r, _, n, !0)) return;
-                  let c = null,
-                    s = e;
-                  if ("pointerType" in o) {
-                    switch (o.pointerType) {
-                      case "mouse":
-                        c = t3.Mouse;
-                        break;
-                      case "touch":
-                        c = t3.Touch;
-                        break;
-                      case "pen":
-                        c = t3.Pen;
-                    }
-                    c === t3.Touch
-                      ? t2[e] === t2.MouseDown
-                        ? (s = "TouchStart")
-                        : t2[e] === t2.MouseUp && (s = "TouchEnd")
-                      : t3.Pen;
-                  } else tF(o) && (c = t3.Touch);
-                  null !== c
-                    ? ((E = c),
-                      ((s.startsWith("Touch") && c === t3.Touch) ||
-                        (s.startsWith("Mouse") && c === t3.Mouse)) &&
-                        (c = null))
-                    : t2[e] === t2.Click && ((c = E), (E = null));
-                  let l = tF(o) ? o.changedTouches[0] : o;
-                  if (!l) return;
-                  let u = a.getId(i),
-                    { clientX: I, clientY: R } = l;
-                  et(t)({
-                    type: t2[s],
-                    id: u,
-                    x: I,
-                    y: R,
-                    ...(null !== c && { pointerType: c }),
-                  });
-                };
+                E = null;
               return (
                 Object.keys(t2)
                   .filter(
@@ -43896,20 +43850,59 @@ ${tZ}
                       !t.endsWith("_Departed") &&
                       !1 !== i[t],
                   )
-                  .forEach((t) => {
-                    let a = ta(t),
-                      r = s(t);
+                  .forEach((o) => {
+                    let i = ta(o),
+                      s = (e) => {
+                        let i = er(e);
+                        if (tk(i, r, _, n, !0)) return;
+                        let c = null,
+                          s = o;
+                        if ("pointerType" in e) {
+                          switch (e.pointerType) {
+                            case "mouse":
+                              c = t3.Mouse;
+                              break;
+                            case "touch":
+                              c = t3.Touch;
+                              break;
+                            case "pen":
+                              c = t3.Pen;
+                          }
+                          c === t3.Touch
+                            ? t2[o] === t2.MouseDown
+                              ? (s = "TouchStart")
+                              : t2[o] === t2.MouseUp && (s = "TouchEnd")
+                            : t3.Pen;
+                        } else tF(e) && (c = t3.Touch);
+                        null !== c
+                          ? ((E = c),
+                            ((s.startsWith("Touch") && c === t3.Touch) ||
+                              (s.startsWith("Mouse") && c === t3.Mouse)) &&
+                              (c = null))
+                          : t2[o] === t2.Click && ((c = E), (E = null));
+                        let l = tF(e) ? e.changedTouches[0] : e;
+                        if (!l) return;
+                        let u = a.getId(i),
+                          { clientX: I, clientY: R } = l;
+                        et(t)({
+                          type: t2[s],
+                          id: u,
+                          x: I,
+                          y: R,
+                          ...(null !== c && { pointerType: c }),
+                        });
+                      };
                     if (window.PointerEvent)
-                      switch (t2[t]) {
+                      switch (t2[o]) {
                         case t2.MouseDown:
                         case t2.MouseUp:
-                          a = a.replace("mouse", "pointer");
+                          i = i.replace("mouse", "pointer");
                           break;
                         case t2.TouchStart:
                         case t2.TouchEnd:
                           return;
                       }
-                    c.push(tU(a, r, e));
+                    c.push(tU(i, s, e));
                   }),
                 et(() => {
                   c.forEach((t) => t());
@@ -45761,52 +45754,20 @@ ${tZ}
           (R[(R.CDATA = 4)] = "CDATA"),
           (R[(R.Comment = 5)] = "Comment");
         let eW = new Set([
-            "id",
-            "class",
-            "aria-label",
-            "role",
-            "name",
-            "alt",
-            "title",
-            "data-test-id",
-            "data-testid",
-            "disabled",
-            "aria-disabled",
-            "data-sentry-component",
-          ]),
-          ew = (t) => (e) => {
-            var a, r;
-            if (!t.isEnabled()) return;
-            let _ = (function (t) {
-              let { target: e, message: a } = (function (t) {
-                let e,
-                  a = "click" === t.name,
-                  r = null;
-                try {
-                  (r = a ? ev(t.event) : ey(t.event)),
-                    (e = (0, y.Rt)(r, { maxStringLength: 200 }) || "<unknown>");
-                } catch (t) {
-                  e = "<unknown>";
-                }
-                return { target: r, message: e };
-              })(t);
-              return eG({ category: `ui.${t.name}`, ...eM(e, a) });
-            })(e);
-            if (!_) return;
-            let n = "click" === e.name,
-              o = n ? e.event : void 0;
-            n &&
-              t.clickDetector &&
-              o &&
-              o.target &&
-              !o.altKey &&
-              !o.metaKey &&
-              !o.ctrlKey &&
-              !o.shiftKey &&
-              ((a = t.clickDetector), (r = ev(e.event)), a.handleClick(_, r)),
-              eC(t, _);
-          };
-        function eM(t, e) {
+          "id",
+          "class",
+          "aria-label",
+          "role",
+          "name",
+          "alt",
+          "title",
+          "data-test-id",
+          "data-testid",
+          "disabled",
+          "aria-disabled",
+          "data-sentry-component",
+        ]);
+        function ew(t, e) {
           let a = eP.mirror.getId(t),
             r = a && eP.mirror.getNode(a),
             _ = r && eP.mirror.getMeta(r),
@@ -45843,7 +45804,7 @@ ${tZ}
               : {},
           };
         }
-        let eB = {
+        let eM = {
           resource: function (t) {
             let {
               entryType: e,
@@ -45860,8 +45821,8 @@ ${tZ}
               ? null
               : {
                   type: `${e}.${a}`,
-                  start: eK(n),
-                  end: eK(_),
+                  start: eH(n),
+                  end: eH(_),
                   name: r,
                   data: {
                     size: E,
@@ -45873,7 +45834,7 @@ ${tZ}
           },
           paint: function (t) {
             let { duration: e, entryType: a, name: r, startTime: _ } = t,
-              n = eK(_);
+              n = eH(_);
             return { type: a, name: r, start: n, end: n + e, data: void 0 };
           },
           navigation: function (t) {
@@ -45898,8 +45859,8 @@ ${tZ}
               ? null
               : {
                   type: `${e}.${d}`,
-                  start: eK(I),
-                  end: eK(n),
+                  start: eH(I),
+                  end: eH(n),
                   name: a,
                   data: {
                     size: R,
@@ -45917,50 +45878,50 @@ ${tZ}
                 };
           },
         };
-        function eY(t, e) {
+        function eB(t, e) {
           return ({ metric: a }) => void e.replayPerformanceEntries.push(t(a));
         }
-        function eH(t) {
-          let e = eB[t.entryType];
+        function eY(t) {
+          let e = eM[t.entryType];
           return e ? e(t) : null;
         }
-        function eK(t) {
+        function eH(t) {
           return ((S.Z1 || F.performance.timeOrigin) + t) / 1e3;
         }
-        function ek(t) {
+        function eK(t) {
           let e = t.entries[t.entries.length - 1];
-          return ej(
+          return eV(
             t,
             "largest-contentful-paint",
             e && e.element ? [e.element] : void 0,
           );
         }
-        function ex(t) {
+        function ek(t) {
           let e = t.entries[t.entries.length - 1],
             a = [];
           if (e && e.sources) for (let t of e.sources) t.node && a.push(t.node);
-          return ej(t, "cumulative-layout-shift", a);
+          return eV(t, "cumulative-layout-shift", a);
         }
-        function eF(t) {
+        function ex(t) {
           let e = t.entries[t.entries.length - 1];
-          return ej(
+          return eV(
             t,
             "first-input-delay",
             e && e.target ? [e.target] : void 0,
           );
         }
-        function eV(t) {
+        function eF(t) {
           let e = t.entries[t.entries.length - 1];
-          return ej(
+          return eV(
             t,
             "interaction-to-next-paint",
             e && e.target ? [e.target] : void 0,
           );
         }
-        function ej(t, e, a) {
+        function eV(t, e, a) {
           let r = t.value,
             _ = t.rating,
-            n = eK(r);
+            n = eH(r);
           return {
             type: "web-vital",
             name: e,
@@ -45974,19 +45935,19 @@ ${tZ}
             },
           };
         }
-        let eX = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
-        function e$(t, e) {
-          eX && (U.kg.info(t), e && ez(t));
+        let ej = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__;
+        function eX(t, e) {
+          ej && (U.kg.info(t), e && eq(t));
         }
-        function eq(t, e) {
-          eX &&
+        function e$(t, e) {
+          ej &&
             (U.kg.info(t),
             e &&
               (0, Y.iK)(() => {
-                ez(t);
+                eq(t);
               }, 0));
         }
-        function ez(t) {
+        function eq(t) {
           (0, T.n)(
             {
               category: "console",
@@ -45997,12 +45958,12 @@ ${tZ}
             { level: "info" },
           );
         }
-        class eJ extends Error {
+        class ez extends Error {
           constructor() {
             super("Event buffer exceeded maximum size of 20000000.");
           }
         }
-        class eZ {
+        class eJ {
           constructor() {
             (this.events = []), (this._totalSize = 0), (this.hasCheckout = !1);
           }
@@ -46017,7 +45978,7 @@ ${tZ}
           }
           async addEvent(t) {
             let e = JSON.stringify(t).length;
-            if (((this._totalSize += e), this._totalSize > 2e7)) throw new eJ();
+            if (((this._totalSize += e), this._totalSize > 2e7)) throw new ez();
             this.events.push(t);
           }
           finish() {
@@ -46034,7 +45995,7 @@ ${tZ}
             return t ? eg(t) : null;
           }
         }
-        class eQ {
+        class eZ {
           constructor(t) {
             (this._worker = t), (this._id = 0);
           }
@@ -46061,7 +46022,7 @@ ${tZ}
             );
           }
           destroy() {
-            e$("[Replay] Destroying compression worker"),
+            eX("[Replay] Destroying compression worker"),
               this._worker.terminate();
           }
           postMessage(t, e) {
@@ -46072,7 +46033,7 @@ ${tZ}
                   if (
                     (this._worker.removeEventListener("message", n), !e.success)
                   ) {
-                    eX && U.kg.error("[Replay]", e.response),
+                    ej && U.kg.error("[Replay]", e.response),
                       _(Error("Error in compression worker"));
                     return;
                   }
@@ -46087,9 +46048,9 @@ ${tZ}
             return this._id++;
           }
         }
-        class e0 {
+        class eQ {
           constructor(t) {
-            (this._worker = new eQ(t)),
+            (this._worker = new eZ(t)),
               (this._earliestTimestamp = null),
               (this._totalSize = 0),
               (this.hasCheckout = !1);
@@ -46112,7 +46073,7 @@ ${tZ}
               (this._earliestTimestamp = e);
             let a = JSON.stringify(t);
             return ((this._totalSize += a.length), this._totalSize > 2e7)
-              ? Promise.reject(new eJ())
+              ? Promise.reject(new ez())
               : this._sendEventToWorker(a);
           }
           finish() {
@@ -46123,7 +46084,7 @@ ${tZ}
               (this._totalSize = 0),
               (this.hasCheckout = !1),
               this._worker.postMessage("clear").then(null, (t) => {
-                eX &&
+                ej &&
                   U.kg.warn(
                     '[Replay] Sending "clear" message to worker failed',
                     t,
@@ -46141,10 +46102,10 @@ ${tZ}
             return (this._earliestTimestamp = null), (this._totalSize = 0), t;
           }
         }
-        class e1 {
+        class e0 {
           constructor(t) {
-            (this._fallback = new eZ()),
-              (this._compression = new e0(t)),
+            (this._fallback = new eJ()),
+              (this._compression = new eQ(t)),
               (this._used = this._fallback),
               (this._ensureWorkerIsLoadedPromise =
                 this._ensureWorkerIsLoaded());
@@ -46183,7 +46144,7 @@ ${tZ}
             try {
               await this._compression.ensureReady();
             } catch (t) {
-              e$(
+              eX(
                 "[Replay] Failed to load the compression worker, falling back to simple buffer",
               );
               return;
@@ -46199,7 +46160,7 @@ ${tZ}
             try {
               await Promise.all(a);
             } catch (t) {
-              eX &&
+              ej &&
                 U.kg.warn(
                   "[Replay] Failed to add events when switching buffers.",
                   t,
@@ -46207,17 +46168,17 @@ ${tZ}
             }
           }
         }
-        function e2() {
+        function e1() {
           try {
             return "sessionStorage" in F && !!F.sessionStorage;
           } catch (t) {
             return !1;
           }
         }
-        function e3(t) {
+        function e2(t) {
           return void 0 !== t && Math.random() < t;
         }
-        function e6(t) {
+        function e3(t) {
           let e = Date.now(),
             a = t.id || (0, b.DM)(),
             r = t.started || e,
@@ -46232,26 +46193,26 @@ ${tZ}
             previousSessionId: t.previousSessionId,
           };
         }
-        function e4(t) {
-          if (e2())
+        function e6(t) {
+          if (e1())
             try {
               F.sessionStorage.setItem(V, JSON.stringify(t));
             } catch (t) {}
         }
-        function e5(
+        function e4(
           { sessionSampleRate: t, allowBuffering: e, stickySession: a = !1 },
           { previousSessionId: r } = {},
         ) {
-          let _ = e6({
-            sampled: e3(t) ? "session" : !!e && "buffer",
+          let _ = e3({
+            sampled: e2(t) ? "session" : !!e && "buffer",
             previousSessionId: r,
           });
-          return a && e4(_), _;
+          return a && e6(_), _;
         }
-        function e8(t, e, a = +new Date()) {
+        function e5(t, e, a = +new Date()) {
           return null === t || void 0 === e || e < 0 || (0 !== e && t + e <= a);
         }
-        function e7(
+        function e8(
           t,
           {
             maxReplayDuration: e,
@@ -46259,15 +46220,15 @@ ${tZ}
             targetTime: r = Date.now(),
           },
         ) {
-          return e8(t.started, e, r) || e8(t.lastActivity, a, r);
+          return e5(t.started, e, r) || e5(t.lastActivity, a, r);
         }
-        function e9(t, { sessionIdleExpire: e, maxReplayDuration: a }) {
+        function e7(t, { sessionIdleExpire: e, maxReplayDuration: a }) {
           return (
-            !!e7(t, { sessionIdleExpire: e, maxReplayDuration: a }) &&
+            !!e8(t, { sessionIdleExpire: e, maxReplayDuration: a }) &&
             ("buffer" !== t.sampled || 0 !== t.segmentId)
           );
         }
-        function at(
+        function e9(
           {
             traceInternals: t,
             sessionIdleExpire: e,
@@ -46279,30 +46240,30 @@ ${tZ}
           let n =
             _.stickySession &&
             (function (t) {
-              if (!e2()) return null;
+              if (!e1()) return null;
               try {
                 let e = F.sessionStorage.getItem(V);
                 if (!e) return null;
                 let a = JSON.parse(e);
-                return eq("[Replay] Loading existing session", t), e6(a);
+                return e$("[Replay] Loading existing session", t), e3(a);
               } catch (t) {
                 return null;
               }
             })(t);
           return n
-            ? e9(n, { sessionIdleExpire: e, maxReplayDuration: a })
-              ? (eq(
+            ? e7(n, { sessionIdleExpire: e, maxReplayDuration: a })
+              ? (e$(
                   "[Replay] Session in sessionStorage is expired, creating new one...",
                 ),
-                e5(_, { previousSessionId: n.id }))
+                e4(_, { previousSessionId: n.id }))
               : n
-            : (eq("[Replay] Creating new session", t),
-              e5(_, { previousSessionId: r }));
+            : (e$("[Replay] Creating new session", t),
+              e4(_, { previousSessionId: r }));
         }
-        function ae(t, e, a) {
-          return !!ar(t, e) && (aa(t, e, a), !0);
+        function at(t, e, a) {
+          return !!aa(t, e) && (ae(t, e, a), !0);
         }
-        async function aa(t, e, a) {
+        async function ae(t, e, a) {
           if (!t.eventBuffer) return null;
           try {
             a && "buffer" === t.recordingMode && t.eventBuffer.clear(),
@@ -46314,7 +46275,7 @@ ${tZ}
                     return e(t);
                 } catch (t) {
                   return (
-                    eX &&
+                    ej &&
                       U.kg.error(
                         "[Replay] An error occured in the `beforeAddRecordingEvent` callback, skipping the event...",
                         t,
@@ -46327,13 +46288,13 @@ ${tZ}
             if (!_) return;
             return await t.eventBuffer.addEvent(_);
           } catch (r) {
-            let e = r && r instanceof eJ ? "addEventSizeExceeded" : "addEvent";
+            let e = r && r instanceof ez ? "addEventSizeExceeded" : "addEvent";
             t.handleException(r), await t.stop({ reason: e });
             let a = (0, p.s3)();
             a && a.recordDroppedEvent("internal_sdk_error", "replay");
           }
         }
-        function ar(t, e) {
+        function aa(t, e) {
           if (!t.eventBuffer || t.isPaused() || !t.isEnabled()) return !1;
           let a = eg(e.timestamp);
           return (
@@ -46342,23 +46303,23 @@ ${tZ}
               a >
               t.getContext().initialTimestamp + t.getOptions().maxReplayDuration
             ) ||
-              (eq(
+              (e$(
                 `[Replay] Skipping event with timestamp ${a} because it is after maxReplayDuration`,
                 t.getOptions()._experiments.traceInternals,
               ),
               !1))
           );
         }
-        function a_(t) {
+        function ar(t) {
           return "transaction" === t.type;
         }
-        function an(t) {
+        function a_(t) {
           return "feedback" === t.type;
         }
-        function ao(t) {
+        function an(t) {
           return !!t.category;
         }
-        function ai(t, e) {
+        function ao(t, e) {
           return e.map(({ type: e, start: a, end: r, name: _, data: n }) => {
             let o = t.throttledAddEvent({
               type: t0.Custom,
@@ -46377,16 +46338,16 @@ ${tZ}
             return "string" == typeof o ? Promise.resolve(null) : o;
           });
         }
-        function ac(t, e) {
+        function ai(t, e) {
           var a;
           t.isEnabled() &&
             null !== e &&
             ((a = e.name),
-            ((!eX || !t.getOptions()._experiments.traceInternals) &&
+            ((!ej || !t.getOptions()._experiments.traceInternals) &&
               (0, L.W)(a, (0, p.s3)())) ||
-              t.addUpdate(() => (ai(t, [e]), !0)));
+              t.addUpdate(() => (ao(t, [e]), !0)));
         }
-        function aE(t) {
+        function ac(t) {
           if (!t) return;
           let e = new TextEncoder();
           try {
@@ -46394,32 +46355,32 @@ ${tZ}
             if (t instanceof URLSearchParams)
               return e.encode(t.toString()).length;
             if (t instanceof FormData) {
-              let a = aA(t);
+              let a = aN(t);
               return e.encode(a).length;
             }
             if (t instanceof Blob) return t.size;
             if (t instanceof ArrayBuffer) return t.byteLength;
           } catch (t) {}
         }
-        function as(t) {
+        function aE(t) {
           if (!t) return;
           let e = parseInt(t, 10);
           return isNaN(e) ? void 0 : e;
         }
-        function al(t) {
+        function as(t) {
           try {
             if ("string" == typeof t) return [t];
             if (t instanceof URLSearchParams) return [t.toString()];
-            if (t instanceof FormData) return [aA(t)];
+            if (t instanceof FormData) return [aN(t)];
             if (!t) return [void 0];
           } catch (e) {
             return (
-              eX && U.kg.warn("[Replay] Failed to serialize body", t),
+              ej && U.kg.warn("[Replay] Failed to serialize body", t),
               [void 0, "BODY_PARSE_ERROR"]
             );
           }
           return (
-            eX &&
+            ej &&
               U.kg.info(
                 "[Replay] Skipping network body because of body type",
                 t,
@@ -46427,14 +46388,14 @@ ${tZ}
             [void 0, "UNPARSEABLE_BODY_TYPE"]
           );
         }
-        function au(t, e) {
+        function al(t, e) {
           if (!t)
             return { headers: {}, size: void 0, _meta: { warnings: [e] } };
           let a = { ...t._meta },
             r = a.warnings || [];
           return (a.warnings = [...r, e]), (t._meta = a), t;
         }
-        function aI(t, e) {
+        function au(t, e) {
           if (!e) return null;
           let {
             startTimestamp: a,
@@ -46458,10 +46419,10 @@ ${tZ}
             }),
           };
         }
-        function aR(t) {
+        function aI(t) {
           return { headers: {}, size: t, _meta: { warnings: ["URL_SKIPPED"] } };
         }
-        function ad(t, e, a) {
+        function aR(t, e, a) {
           if (!e && 0 === Object.keys(t).length) return;
           if (!e) return { headers: t };
           if (!a) return { headers: t, size: e };
@@ -46490,16 +46451,16 @@ ${tZ}
             (r.body = _), n && n.length > 0 && (r._meta = { warnings: n }), r
           );
         }
-        function aN(t, e) {
+        function ad(t, e) {
           return Object.entries(t).reduce((a, [r, _]) => {
             let n = r.toLowerCase();
             return e.includes(n) && t[r] && (a[n] = _), a;
           }, {});
         }
-        function aA(t) {
+        function aN(t) {
           return new URLSearchParams(t).toString();
         }
-        function af(t, e) {
+        function aA(t, e) {
           let a = (function (t, e = F.document.baseURI) {
             if (
               t.startsWith("http://") ||
@@ -46514,16 +46475,16 @@ ${tZ}
           })(t);
           return (0, G.U0)(a, e);
         }
-        async function aT(t, e, a) {
+        async function af(t, e, a) {
           try {
-            let r = await ap(t, e, a),
-              _ = aI("resource.fetch", r);
-            ac(a.replay, _);
+            let r = await aT(t, e, a),
+              _ = au("resource.fetch", r);
+            ai(a.replay, _);
           } catch (t) {
-            eX && U.kg.error("[Replay] Failed to capture fetch breadcrumb", t);
+            ej && U.kg.error("[Replay] Failed to capture fetch breadcrumb", t);
           }
         }
-        async function ap(t, e, a) {
+        async function aT(t, e, a) {
           let r = Date.now(),
             { startTimestamp: _ = r, endTimestamp: n = r } = e,
             {
@@ -46534,8 +46495,8 @@ ${tZ}
               response_body_size: s,
             } = t.data,
             l =
-              af(o, a.networkDetailAllowUrls) &&
-              !af(o, a.networkDetailDenyUrls);
+              aA(o, a.networkDetailAllowUrls) &&
+              !aA(o, a.networkDetailDenyUrls);
           return {
             startTimestamp: _,
             endTimestamp: n,
@@ -46553,30 +46514,30 @@ ${tZ}
                     ? ((_ = a),
                       (n = e),
                       1 === _.length && "string" != typeof _[0]
-                        ? ag(_[0], n)
+                        ? aP(_[0], n)
                         : 2 === _.length
-                          ? ag(_[1], n)
+                          ? aP(_[1], n)
                           : {})
                     : {};
-                  if (!t) return ad(o, r, void 0);
-                  let [i, c] = al(aO(a)),
-                    E = ad(o, r, i);
-                  return c ? au(E, c) : E;
+                  if (!t) return aR(o, r, void 0);
+                  let [i, c] = as(ah(a)),
+                    E = aR(o, r, i);
+                  return c ? al(E, c) : E;
                 })(a, e.input, E)
-              : aR(E),
-            response: await aL(l, a, e.response, s),
+              : aI(E),
+            response: await ap(l, a, e.response, s),
           };
         }
-        async function aL(
+        async function ap(
           t,
           { networkCaptureBodies: e, networkResponseHeaders: a },
           r,
           _,
         ) {
-          if (!t && void 0 !== _) return aR(_);
-          let n = r ? aP(r.headers, a) : {};
-          if (!r || (!e && void 0 !== _)) return ad(n, _, void 0);
-          let [o, i] = await ah(r),
+          if (!t && void 0 !== _) return aI(_);
+          let n = r ? aO(r.headers, a) : {};
+          if (!r || (!e && void 0 !== _)) return aR(n, _, void 0);
+          let [o, i] = await aL(r),
             c = (function (
               t,
               {
@@ -46587,15 +46548,15 @@ ${tZ}
               },
             ) {
               try {
-                let n = t && t.length && void 0 === a ? aE(t) : a;
-                if (!r) return aR(n);
-                if (e) return ad(_, n, t);
-                return ad(_, n, void 0);
+                let n = t && t.length && void 0 === a ? ac(t) : a;
+                if (!r) return aI(n);
+                if (e) return aR(_, n, t);
+                return aR(_, n, void 0);
               } catch (t) {
                 return (
-                  eX &&
+                  ej &&
                     U.kg.warn("[Replay] Failed to serialize response body", t),
-                  ad(_, a, void 0)
+                  aR(_, a, void 0)
                 );
               }
             })(o, {
@@ -46604,14 +46565,14 @@ ${tZ}
               captureDetails: t,
               headers: n,
             });
-          return i ? au(c, i) : c;
+          return i ? al(c, i) : c;
         }
-        async function ah(t) {
+        async function aL(t) {
           let e = (function (t) {
             try {
               return t.clone();
             } catch (t) {
-              eX && U.kg.warn("[Replay] Failed to clone response body", t);
+              ej && U.kg.warn("[Replay] Failed to clone response body", t);
             }
           })(t);
           if (!e) return [void 0, "BODY_PARSE_ERROR"];
@@ -46624,7 +46585,7 @@ ${tZ}
                   () => e(Error("Timeout while trying to read response body")),
                   500,
                 );
-                aD(a)
+                ag(a)
                   .then(
                     (e) => t(e),
                     (t) => e(t),
@@ -46634,16 +46595,16 @@ ${tZ}
             ];
           } catch (t) {
             return (
-              eX &&
+              ej &&
                 U.kg.warn("[Replay] Failed to get text body from response", t),
               [void 0, "BODY_PARSE_ERROR"]
             );
           }
         }
-        function aO(t = []) {
+        function ah(t = []) {
           if (2 === t.length && "object" == typeof t[1]) return t[1].body;
         }
-        function aP(t, e) {
+        function aO(t, e) {
           let a = {};
           return (
             e.forEach((e) => {
@@ -46652,21 +46613,21 @@ ${tZ}
             a
           );
         }
-        function ag(t, e) {
+        function aP(t, e) {
           if (!t) return {};
           let a = t.headers;
           return a
             ? a instanceof Headers
-              ? aP(a, e)
+              ? aO(a, e)
               : Array.isArray(a)
                 ? {}
-                : aN(a, e)
+                : ad(a, e)
             : {};
         }
-        async function aD(t) {
+        async function ag(t) {
           return await t.text();
         }
-        async function aC(t, e, a) {
+        async function aD(t, e, a) {
           try {
             let r = (function (t, e, a) {
                 let r = Date.now(),
@@ -46686,10 +46647,10 @@ ${tZ}
                 if (!c) return null;
                 if (
                   !i ||
-                  !af(c, a.networkDetailAllowUrls) ||
-                  af(c, a.networkDetailDenyUrls)
+                  !aA(c, a.networkDetailAllowUrls) ||
+                  aA(c, a.networkDetailDenyUrls)
                 ) {
-                  let t = aR(l);
+                  let t = aI(l);
                   return {
                     startTimestamp: _,
                     endTimestamp: n,
@@ -46697,12 +46658,12 @@ ${tZ}
                     method: E,
                     statusCode: s,
                     request: t,
-                    response: aR(u),
+                    response: aI(u),
                   };
                 }
                 let I = i[K.xU],
-                  R = I ? aN(I.request_headers, a.networkRequestHeaders) : {},
-                  d = aN(
+                  R = I ? ad(I.request_headers, a.networkRequestHeaders) : {},
+                  d = ad(
                     (function (t) {
                       let e = t.getAllResponseHeaders();
                       return e
@@ -46714,7 +46675,7 @@ ${tZ}
                     })(i),
                     a.networkResponseHeaders,
                   ),
-                  [N, A] = a.networkCaptureBodies ? al(o) : [void 0],
+                  [N, A] = a.networkCaptureBodies ? as(o) : [void 0],
                   [f, T] = a.networkCaptureBodies
                     ? (function (t) {
                         let e = [];
@@ -46735,7 +46696,7 @@ ${tZ}
                             if (!a) return [void 0];
                           } catch (t) {
                             return (
-                              eX &&
+                              ej &&
                                 U.kg.warn(
                                   "[Replay] Failed to serialize body",
                                   a,
@@ -46744,7 +46705,7 @@ ${tZ}
                             );
                           }
                           return (
-                            eX &&
+                            ej &&
                               U.kg.info(
                                 "[Replay] Skipping network body because of body type",
                                 a,
@@ -46755,7 +46716,7 @@ ${tZ}
                           e.push(t);
                         }
                         return (
-                          eX &&
+                          ej &&
                             U.kg.warn(
                               "[Replay] Failed to get xhr response body",
                               ...e,
@@ -46764,28 +46725,28 @@ ${tZ}
                         );
                       })(i)
                     : [void 0],
-                  p = ad(R, l, N),
-                  L = ad(d, u, f);
+                  p = aR(R, l, N),
+                  L = aR(d, u, f);
                 return {
                   startTimestamp: _,
                   endTimestamp: n,
                   url: c,
                   method: E,
                   statusCode: s,
-                  request: A ? au(p, A) : p,
-                  response: T ? au(L, T) : L,
+                  request: A ? al(p, A) : p,
+                  response: T ? al(L, T) : L,
                 };
               })(t, e, a),
-              _ = aI("resource.xhr", r);
-            ac(a.replay, _);
+              _ = au("resource.xhr", r);
+            ai(a.replay, _);
           } catch (t) {
-            eX && U.kg.error("[Replay] Failed to capture xhr breadcrumb", t);
+            ej && U.kg.error("[Replay] Failed to capture xhr breadcrumb", t);
           }
         }
-        async function am(t) {
+        async function aC(t) {
           try {
             return Promise.all(
-              ai(t, [
+              ao(t, [
                 (function (t) {
                   let {
                       jsHeapSizeLimit: e,
@@ -46813,7 +46774,7 @@ ${tZ}
             return [];
           }
         }
-        async function av({ client: t, scope: e, replayId: a, event: r }) {
+        async function am({ client: t, scope: e, replayId: a, event: r }) {
           let _ = {
             event_id: a,
             integrations:
@@ -46838,7 +46799,7 @@ ${tZ}
             n
           );
         }
-        async function ay({
+        async function av({
           recordingData: t,
           replayId: e,
           segmentId: a,
@@ -46877,11 +46838,11 @@ ${tZ}
               segment_id: a,
               replay_type: n.sampled,
             },
-            f = await av({ scope: R, client: I, replayId: e, event: A });
+            f = await am({ scope: R, client: I, replayId: e, event: A });
           if (!f)
             return (
               I.recordDroppedEvent("event_processor", "replay", A),
-              e$("An event processor returned `null`, will not send event."),
+              eX("An event processor returned `null`, will not send event."),
               (0, w.WD)({})
             );
           delete f.sdkProcessingMetadata;
@@ -46913,31 +46874,31 @@ ${tZ}
             "number" == typeof i.statusCode &&
             (i.statusCode < 200 || i.statusCode >= 300)
           )
-            throw new aS(i.statusCode);
+            throw new ay(i.statusCode);
           let L = (0, M.WG)({}, i);
-          if ((0, M.Q)(L, "replay")) throw new aU(L);
+          if ((0, M.Q)(L, "replay")) throw new aS(L);
           return i;
         }
-        class aS extends Error {
+        class ay extends Error {
           constructor(t) {
             super(`Transport returned status code ${t}`);
           }
         }
-        class aU extends Error {
+        class aS extends Error {
           constructor(t) {
             super("Rate limit hit"), (this.rateLimits = t);
           }
         }
-        async function ab(t, e = { count: 0, interval: 5e3 }) {
+        async function aU(t, e = { count: 0, interval: 5e3 }) {
           let { recordingData: a, options: r } = t;
           if (a.length)
             try {
-              return await ay(t), !0;
+              return await av(t), !0;
             } catch (a) {
-              if (a instanceof aS || a instanceof aU) throw a;
+              if (a instanceof ay || a instanceof aS) throw a;
               if (
                 ((0, h.v)("Replays", { _retryCount: e.count }),
-                eX &&
+                ej &&
                   r._experiments &&
                   r._experiments.captureExceptions &&
                   (0, h.Tb)(a),
@@ -46954,7 +46915,7 @@ ${tZ}
                 new Promise((a, r) => {
                   (0, Y.iK)(async () => {
                     try {
-                      await ab(t, e), a(!0);
+                      await aU(t, e), a(!0);
                     } catch (t) {
                       r(t);
                     }
@@ -46963,15 +46924,15 @@ ${tZ}
               );
             }
         }
-        let aG = "__THROTTLED";
-        class aW {
+        let ab = "__THROTTLED";
+        class aG {
           constructor({ options: t, recordingOptions: e }) {
-            aW.prototype.__init.call(this),
-              aW.prototype.__init2.call(this),
-              aW.prototype.__init3.call(this),
-              aW.prototype.__init4.call(this),
-              aW.prototype.__init5.call(this),
-              aW.prototype.__init6.call(this),
+            aG.prototype.__init.call(this),
+              aG.prototype.__init2.call(this),
+              aG.prototype.__init3.call(this),
+              aG.prototype.__init4.call(this),
+              aG.prototype.__init5.call(this),
+              aG.prototype.__init6.call(this),
               (this.eventBuffer = null),
               (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
@@ -47027,27 +46988,28 @@ ${tZ}
               })),
               (this._throttledAddEvent = (function (t, e, a) {
                 let r = new Map(),
-                  _ = (t) => {
-                    let e = t - 5;
-                    r.forEach((t, a) => {
-                      a < e && r.delete(a);
-                    });
-                  },
-                  n = () => [...r.values()].reduce((t, e) => t + e, 0),
-                  o = !1;
+                  _ = !1;
                 return (...e) => {
-                  let a = Math.floor(Date.now() / 1e3);
-                  if ((_(a), n() >= 300)) {
-                    let t = o;
-                    return (o = !0), t ? "__SKIPPED" : aG;
+                  let a = Math.floor(Date.now() / 1e3),
+                    n = a - 5;
+                  if (
+                    (r.forEach((t, e) => {
+                      e < n && r.delete(e);
+                    }),
+                    [...r.values()].reduce((t, e) => t + e, 0) >= 300)
+                  ) {
+                    let t = _;
+                    return (_ = !0), t ? "__SKIPPED" : ab;
                   }
-                  o = !1;
-                  let i = r.get(a) || 0;
-                  return r.set(a, i + 1), t(...e);
+                  _ = !1;
+                  let o = r.get(a) || 0;
+                  return r.set(a, o + 1), t(...e);
                 };
               })(
                 (t, e) =>
-                  ar(this, t) ? aa(this, t, e) : Promise.resolve(null),
+                  (function (t, e, a) {
+                    return aa(t, e) ? ae(t, e, a) : Promise.resolve(null);
+                  })(this, t, e),
                 0,
                 0,
               ));
@@ -47079,8 +47041,8 @@ ${tZ}
             return this._options;
           }
           handleException(t) {
-            eX && U.kg.error("[Replay]", t),
-              eX &&
+            ej && U.kg.error("[Replay]", t),
+              ej &&
                 this._options._experiments &&
                 this._options._experiments.captureExceptions &&
                 (0, h.Tb)(t);
@@ -47099,7 +47061,7 @@ ${tZ}
                   0 === this.session.segmentId
                     ? "buffer"
                     : "session"),
-                eq(
+                e$(
                   `[Replay] Starting replay in ${this.recordingMode} mode`,
                   this._options._experiments.traceInternals,
                 ),
@@ -47108,22 +47070,22 @@ ${tZ}
           }
           start() {
             if (this._isEnabled && "session" === this.recordingMode) {
-              eX && U.kg.info("[Replay] Recording is already in progress");
+              ej && U.kg.info("[Replay] Recording is already in progress");
               return;
             }
             if (this._isEnabled && "buffer" === this.recordingMode) {
-              eX &&
+              ej &&
                 U.kg.info(
                   "[Replay] Buffering is in progress, call `flush()` to save the replay",
                 );
               return;
             }
-            eq(
+            e$(
               "[Replay] Starting replay in session mode",
               this._options._experiments.traceInternals,
             ),
               this._updateUserActivity();
-            let t = at(
+            let t = e9(
               {
                 maxReplayDuration: this._options.maxReplayDuration,
                 sessionIdleExpire: this.timeouts.sessionIdleExpire,
@@ -47139,17 +47101,17 @@ ${tZ}
           }
           startBuffering() {
             if (this._isEnabled) {
-              eX &&
+              ej &&
                 U.kg.info(
                   "[Replay] Buffering is in progress, call `flush()` to save the replay",
                 );
               return;
             }
-            eq(
+            e$(
               "[Replay] Starting replay in buffer mode",
               this._options._experiments.traceInternals,
             );
-            let t = at(
+            let t = e9(
               {
                 sessionIdleExpire: this.timeouts.sessionIdleExpire,
                 maxReplayDuration: this._options.maxReplayDuration,
@@ -47180,7 +47142,7 @@ ${tZ}
                   (e = !1),
                   (a, r) => {
                     if (!t.checkAndHandleExpiredSession()) {
-                      eX &&
+                      ej &&
                         U.kg.warn(
                           "[Replay] Received replay event after session expired.",
                         );
@@ -47214,7 +47176,7 @@ ${tZ}
                           ("buffer" === t.recordingMode &&
                             _ &&
                             t.setInitialState(),
-                          !ae(t, a, _))
+                          !at(t, a, _))
                         )
                           return !0;
                         if (!_) return !1;
@@ -47223,7 +47185,7 @@ ${tZ}
                           _ &&
                             e.session &&
                             0 === e.session.segmentId &&
-                            ae(
+                            at(
                               e,
                               (function (t) {
                                 let e = t.getOptions();
@@ -47267,12 +47229,12 @@ ${tZ}
                         ) {
                           let e = t.eventBuffer.getEarliestTimestamp();
                           e &&
-                            (e$(
+                            (eX(
                               `[Replay] Updating session start time to earliest event in buffer to ${new Date(e)}`,
                               t.getOptions()._experiments.traceInternals,
                             ),
                             (t.session.started = e),
-                            t.getOptions().stickySession && e4(t.session));
+                            t.getOptions().stickySession && e6(t.session));
                         }
                         return "session" === t.recordingMode && t.flush(), !0;
                       });
@@ -47306,7 +47268,7 @@ ${tZ}
             if (this._isEnabled) {
               this._isEnabled = !1;
               try {
-                e$(
+                eX(
                   `[Replay] Stopping Replay${e ? ` triggered by ${e}` : ""}`,
                   this._options._experiments.traceInternals,
                 ),
@@ -47317,7 +47279,7 @@ ${tZ}
                   this.eventBuffer && this.eventBuffer.destroy(),
                   (this.eventBuffer = null),
                   (function () {
-                    if (e2())
+                    if (e1())
                       try {
                         F.sessionStorage.removeItem(V);
                       } catch (t) {}
@@ -47332,7 +47294,7 @@ ${tZ}
             this._isPaused ||
               ((this._isPaused = !0),
               this.stopRecording(),
-              e$(
+              eX(
                 "[Replay] Pausing replay",
                 this._options._experiments.traceInternals,
               ));
@@ -47342,7 +47304,7 @@ ${tZ}
               this._checkSession() &&
               ((this._isPaused = !1),
               this.startRecording(),
-              e$(
+              eX(
                 "[Replay] Resuming replay",
                 this._options._experiments.traceInternals,
               ));
@@ -47350,7 +47312,7 @@ ${tZ}
           async sendBufferedReplayOrFlush({ continueRecording: t = !0 } = {}) {
             if ("session" === this.recordingMode) return this.flushImmediate();
             let e = Date.now();
-            e$(
+            eX(
               "[Replay] Converting buffer to session",
               this._options._experiments.traceInternals,
             ),
@@ -47402,7 +47364,7 @@ ${tZ}
           }
           checkAndHandleExpiredSession() {
             return this._lastActivity &&
-              e8(this._lastActivity, this.timeouts.sessionIdlePause) &&
+              e5(this._lastActivity, this.timeouts.sessionIdlePause) &&
               this.session &&
               "session" === this.session.sampled
               ? void this.pause()
@@ -47420,11 +47382,11 @@ ${tZ}
           }
           throttledAddEvent(t, e) {
             let a = this._throttledAddEvent(t, e);
-            if (a === aG) {
+            if (a === ab) {
               let t = eG({ category: "replay.throttled" });
               this.addUpdate(
                 () =>
-                  !ae(this, {
+                  !at(this, {
                     type: 5,
                     timestamp: t.timestamp || 0,
                     data: { tag: "breadcrumb", payload: t, metric: !0 },
@@ -47466,18 +47428,18 @@ ${tZ}
                           return "";
                         })();
                       if (!e) return;
-                      e$(
+                      eX(
                         `[Replay] Using compression worker${t ? ` from ${t}` : ""}`,
                       );
                       let a = new Worker(e);
-                      return new e1(a);
+                      return new e0(a);
                     } catch (t) {
-                      e$("[Replay] Failed to create compression worker");
+                      eX("[Replay] Failed to create compression worker");
                     }
                   })(e);
                   if (t) return t;
                 }
-                return e$("[Replay] Using simple buffer"), new eZ();
+                return eX("[Replay] Using simple buffer"), new eJ();
               })({
                 useCompression: this._options.useCompression,
                 workerUrl: this._options.workerUrl,
@@ -47490,7 +47452,7 @@ ${tZ}
           }
           _initializeSessionForSampling(t) {
             let e = this._options.errorSampleRate > 0,
-              a = at(
+              a = e9(
                 {
                   sessionIdleExpire: this.timeouts.sessionIdleExpire,
                   maxReplayDuration: this._options.maxReplayDuration,
@@ -47509,7 +47471,7 @@ ${tZ}
             if (!this.session) return !1;
             let t = this.session;
             return (
-              !e9(t, {
+              !e7(t, {
                 sessionIdleExpire: this.timeouts.sessionIdleExpire,
                 maxReplayDuration: this._options.maxReplayDuration,
               }) || (this._refreshSession(t), !1)
@@ -47533,7 +47495,42 @@ ${tZ}
                 this._hasInitializedCoreListeners ||
                   (!(function (t) {
                     let e = (0, p.s3)();
-                    (0, k.O)(ew(t)),
+                    (0, k.O)((e) => {
+                      var a, r;
+                      if (!t.isEnabled()) return;
+                      let _ = (function (t) {
+                        let { target: e, message: a } = (function (t) {
+                          let e,
+                            a = "click" === t.name,
+                            r = null;
+                          try {
+                            (r = a ? ev(t.event) : ey(t.event)),
+                              (e =
+                                (0, y.Rt)(r, { maxStringLength: 200 }) ||
+                                "<unknown>");
+                          } catch (t) {
+                            e = "<unknown>";
+                          }
+                          return { target: r, message: e };
+                        })(t);
+                        return eG({ category: `ui.${t.name}`, ...ew(e, a) });
+                      })(e);
+                      if (!_) return;
+                      let n = "click" === e.name,
+                        o = n ? e.event : void 0;
+                      n &&
+                        t.clickDetector &&
+                        o &&
+                        o.target &&
+                        !o.altKey &&
+                        !o.metaKey &&
+                        !o.ctrlKey &&
+                        !o.shiftKey &&
+                        ((a = t.clickDetector),
+                        (r = ev(e.event)),
+                        a.handleClick(_, r)),
+                        eC(t, _);
+                    }),
                       (0, x.a)((e) => {
                         if (!t.isEnabled()) return;
                         let a = (function (t) {
@@ -47550,17 +47547,17 @@ ${tZ}
                         null !== a &&
                           (t.getContext().urls.push(a.name),
                           t.triggerUserActivity(),
-                          t.addUpdate(() => (ai(t, [a]), !1)));
+                          t.addUpdate(() => (ao(t, [a]), !1)));
                       });
                     let a = (0, p.s3)();
                     a &&
                       a.on("beforeAddBreadcrumb", (e) =>
                         (function (t, e) {
                           var a;
-                          if (!t.isEnabled() || !ao(e)) return;
+                          if (!t.isEnabled() || !an(e)) return;
                           let r =
                             ((a = e),
-                            !ao(a) ||
+                            !an(a) ||
                             [
                               "fetch",
                               "xhr",
@@ -47645,11 +47642,11 @@ ${tZ}
                                     (!(function (t, e) {
                                       let { xhr: a, input: r } = e;
                                       if (!a) return;
-                                      let _ = aE(r),
+                                      let _ = ac(r),
                                         n = a.getResponseHeader(
                                           "content-length",
                                         )
-                                          ? as(
+                                          ? aE(
                                               a.getResponseHeader(
                                                 "content-length",
                                               ),
@@ -47662,7 +47659,7 @@ ${tZ}
                                                   "object" == typeof t
                                                     ? JSON.stringify(t)
                                                     : t;
-                                                return aE(a);
+                                                return ac(a);
                                               } catch (t) {
                                                 return;
                                               }
@@ -47672,25 +47669,25 @@ ${tZ}
                                         void 0 !== n &&
                                           (t.data.response_body_size = n);
                                     })(e, a),
-                                    aC(e, a, t)),
+                                    aD(e, a, t)),
                                   (n = e),
                                   "fetch" === n.category &&
                                     (o = a) &&
                                     o.response)
                                 ) {
                                   let { input: r, response: _ } = a,
-                                    n = aE(r ? aO(r) : void 0),
+                                    n = ac(r ? ah(r) : void 0),
                                     o = _
-                                      ? as(_.headers.get("content-length"))
+                                      ? aE(_.headers.get("content-length"))
                                       : void 0;
                                   void 0 !== n &&
                                     (e.data.request_body_size = n),
                                     void 0 !== o &&
                                       (e.data.response_body_size = o),
-                                    aT(e, a, t);
+                                    af(e, a, t);
                                 }
                               } catch (t) {
-                                eX &&
+                                ej &&
                                   U.kg.warn(
                                     "Error when enriching network breadcrumb",
                                   );
@@ -47703,9 +47700,9 @@ ${tZ}
                         t.isEnabled()
                           ? "replay_event" === e.type
                             ? (delete e.breadcrumbs, e)
-                            : (!e.type || a_(e) || an(e)) &&
+                            : (!e.type || ar(e) || a_(e)) &&
                                 t.checkAndHandleExpiredSession()
-                              ? an(e)
+                              ? a_(e)
                                 ? (t.flush(),
                                   (e.contexts.feedback.replay_id =
                                     t.getSessionId()),
@@ -47737,7 +47734,7 @@ ${tZ}
                                     a.originalException.__rrweb__ &&
                                     !t.getOptions()._experiments
                                       .captureExceptions
-                                  ? (eX &&
+                                  ? (ej &&
                                       U.kg.log(
                                         "[Replay] Ignoring error from rrweb internals",
                                         e,
@@ -47747,7 +47744,7 @@ ${tZ}
                                       e.message !== j &&
                                       e.exception &&
                                       !e.type &&
-                                      e3(t.getOptions().errorSampleRate)) ||
+                                      e2(t.getOptions().errorSampleRate)) ||
                                       "session" === t.recordingMode) &&
                                       (e.tags = {
                                         ...e.tags,
@@ -47786,10 +47783,10 @@ ${tZ}
                             })(t, e);
                         }),
                         e.on("afterSendEvent", (e, a) => {
-                          if (!t.isEnabled() || (e.type && !a_(e))) return;
+                          if (!t.isEnabled() || (e.type && !ar(e))) return;
                           let r = a && a.statusCode;
                           if (r && !(r < 200) && !(r >= 300)) {
-                            if (a_(e))
+                            if (ar(e))
                               return void (function (t, e) {
                                 let a = t.getContext();
                                 e.contexts &&
@@ -47860,10 +47857,10 @@ ${tZ}
                   r.push((0, H._j)(t, a));
                 }),
                 r.push(
-                  (0, H.$A)(eY(ek, t)),
-                  (0, H.PR)(eY(ex, t)),
-                  (0, H.to)(eY(eF, t)),
-                  (0, H.YF)(eY(eV, t)),
+                  (0, H.$A)(eB(eK, t)),
+                  (0, H.PR)(eB(ek, t)),
+                  (0, H.to)(eB(ex, t)),
+                  (0, H.YF)(eB(eF, t)),
                 ),
                 () => {
                   r.forEach((t) => t());
@@ -47933,7 +47930,7 @@ ${tZ}
                     E = 1 === o.length;
                   if (!c && E) return null;
                   let s = (0, y.Rt)(i, { maxStringLength: 200 }) || "<unknown>",
-                    l = eM(i, s);
+                    l = ew(i, s);
                   return eG({
                     category: "ui.keyDown",
                     message: s,
@@ -47953,7 +47950,7 @@ ${tZ}
           }
           _doChangeToBackgroundTasks(t) {
             this.session &&
-              (e7(this.session, {
+              (e8(this.session, {
                 maxReplayDuration: this._options.maxReplayDuration,
                 sessionIdleExpire: this.timeouts.sessionIdleExpire,
               }) ||
@@ -47963,7 +47960,7 @@ ${tZ}
           _doChangeToForegroundTasks(t) {
             if (this.session) {
               if (!this.checkAndHandleExpiredSession())
-                return void e$(
+                return void eX(
                   "[Replay] Document has become active, but session has expired",
                 );
               t && this._createCustomBreadcrumb(t);
@@ -47987,13 +47984,13 @@ ${tZ}
           }
           _addPerformanceEntries() {
             let t = this.performanceEntries
-              .map(eH)
+              .map(eY)
               .filter(Boolean)
               .concat(this.replayPerformanceEntries);
             return (
               (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
-              Promise.all(ai(this, t))
+              Promise.all(ao(this, t))
             );
           }
           _clearContext() {
@@ -48022,7 +48019,7 @@ ${tZ}
           async _runFlush() {
             let t = this.getSessionId();
             if (!this.session || !this.eventBuffer || !t) {
-              eX &&
+              ej &&
                 U.kg.error(
                   "[Replay] No session or eventBuffer found to flush.",
                 );
@@ -48033,7 +48030,7 @@ ${tZ}
               this.eventBuffer && this.eventBuffer.hasEvents)
             ) {
               if (
-                (await am(this), this.eventBuffer) &&
+                (await aC(this), this.eventBuffer) &&
                 t === this.getSessionId()
               )
                 try {
@@ -48048,7 +48045,7 @@ ${tZ}
                     r = this.session.segmentId++;
                   this._maybeSaveSession();
                   let _ = await this.eventBuffer.finish();
-                  await ab({
+                  await aU({
                     replayId: t,
                     recordingData: _,
                     segmentId: r,
@@ -48068,7 +48065,7 @@ ${tZ}
             this._flush = async ({ force: t = !1 } = {}) => {
               if (!this._isEnabled && !t) return;
               if (!this.checkAndHandleExpiredSession()) {
-                eX &&
+                ej &&
                   U.kg.error(
                     "[Replay] Attempting to finish replay event after session expired.",
                   );
@@ -48081,7 +48078,7 @@ ${tZ}
               let r = a < this._options.minReplayDuration,
                 _ = a > this._options.maxReplayDuration + 5e3;
               if (r || _) {
-                e$(
+                eX(
                   `[Replay] Session duration (${Math.floor(a / 1e3)}s) is too ${r ? "short" : "long"}, not sending replay.`,
                   this._options._experiments.traceInternals,
                 ),
@@ -48093,7 +48090,7 @@ ${tZ}
                 (n &&
                   0 === this.session.segmentId &&
                   !n.hasCheckout &&
-                  e$(
+                  eX(
                     "[Replay] Flushing initial segment without checkout.",
                     this._options._experiments.traceInternals,
                   ),
@@ -48107,14 +48104,14 @@ ${tZ}
               try {
                 await this._flushLock;
               } catch (t) {
-                eX && U.kg.error(t);
+                ej && U.kg.error(t);
               } finally {
                 this._debouncedFlush();
               }
             };
           }
           _maybeSaveSession() {
-            this.session && this._options.stickySession && e4(this.session);
+            this.session && this._options.stickySession && e6(this.session);
           }
           __init6() {
             this._onMutationHandler = (t) => {
@@ -48140,15 +48137,15 @@ ${tZ}
             };
           }
         }
-        function aw(t, e) {
+        function aW(t, e) {
           return [...t, ...e].join(",");
         }
-        let aM =
+        let aw =
             'img,image,svg,video,object,picture,embed,map,audio,link[rel="icon"],link[rel="apple-touch-icon"]',
-          aB = ["content-length", "content-type", "accept"],
-          aY = !1,
-          aH = (t) => new aK(t);
-        class aK {
+          aM = ["content-length", "content-type", "accept"],
+          aB = !1,
+          aY = (t) => new aH(t);
+        class aH {
           static __initStatic() {
             this.id = "Replay";
           }
@@ -48183,7 +48180,7 @@ ${tZ}
             beforeAddRecordingEvent: C,
             beforeErrorSampling: m,
           } = {}) {
-            this.name = aK.id;
+            this.name = aH.id;
             let v = (function ({
               mask: t,
               unmask: e,
@@ -48192,15 +48189,15 @@ ${tZ}
               ignore: _,
             }) {
               return {
-                maskTextSelector: aw(t, [".sentry-mask", "[data-sentry-mask]"]),
-                unmaskTextSelector: aw(e, []),
-                blockSelector: aw(a, [
+                maskTextSelector: aW(t, [".sentry-mask", "[data-sentry-mask]"]),
+                unmaskTextSelector: aW(e, []),
+                blockSelector: aW(a, [
                   ".sentry-block",
                   "[data-sentry-block]",
                   'base[href="/"]',
                 ]),
-                unblockSelector: aw(r, []),
-                ignoreSelector: aw(_, [
+                unblockSelector: aW(r, []),
+                ignoreSelector: aW(_, [
                   ".sentry-ignore",
                   "[data-sentry-ignore]",
                   'input[type="file"]',
@@ -48271,8 +48268,8 @@ ${tZ}
                 networkDetailAllowUrls: d,
                 networkDetailDenyUrls: N,
                 networkCaptureBodies: A,
-                networkRequestHeaders: ak(f),
-                networkResponseHeaders: ak(T),
+                networkRequestHeaders: aK(f),
+                networkResponseHeaders: aK(T),
                 beforeAddRecordingEvent: C,
                 beforeErrorSampling: m,
                 _experiments: i,
@@ -48280,8 +48277,8 @@ ${tZ}
               this._initialOptions.blockAllMedia &&
                 (this._recordingOptions.blockSelector = this._recordingOptions
                   .blockSelector
-                  ? `${this._recordingOptions.blockSelector},${aM}`
-                  : aM),
+                  ? `${this._recordingOptions.blockSelector},${aw}`
+                  : aw),
               this._isInitialized && (0, B.j)())
             )
               throw Error(
@@ -48290,10 +48287,10 @@ ${tZ}
             this._isInitialized = !0;
           }
           get _isInitialized() {
-            return aY;
+            return aB;
           }
           set _isInitialized(t) {
-            aY = t;
+            aB = t;
           }
           afterAllSetup(t) {
             (0, B.j)() &&
@@ -48352,7 +48349,7 @@ ${tZ}
                 r
               );
             })(this._initialOptions, t);
-            this._replay = new aW({
+            this._replay = new aG({
               options: e,
               recordingOptions: this._recordingOptions,
             });
@@ -48365,14 +48362,14 @@ ${tZ}
             } catch (t) {}
           }
         }
-        function ak(t) {
-          return [...aB, ...t.map((t) => t.toLowerCase())];
+        function aK(t) {
+          return [...aM, ...t.map((t) => t.toLowerCase())];
         }
-        function ax() {
+        function ak() {
           let t = (0, p.s3)();
           return t && t.getIntegrationByName("Replay");
         }
-        aK.__initStatic();
+        aH.__initStatic();
       },
     },
     e = {};
@@ -48408,12 +48405,12 @@ ${tZ}
         Object.defineProperty(t, "__esModule", { value: !0 });
     }),
     (a.nmd = (t) => ((t.paths = []), t.children || (t.children = []), t)),
-    (a.rv = () => "1.3.1"),
-    (a.ruid = "bundler=rspack@1.3.1"),
+    (a.rv = () => "1.4.11"),
+    (a.ruid = "bundler=rspack@1.4.11"),
     (() => {
       "use strict";
       var t = a(25779);
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b630eb95aa13881f.js.map
+//# sourceMappingURL=sentry.5008028528806a37.js.map
