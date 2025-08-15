@@ -4257,7 +4257,6 @@
                 .concat(e),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
-            CLICKER_GAME: "/clicker",
             SERVER_SHOP: (t) => "/channels/".concat(t, "/shop"),
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
             REPORT: "/report",
@@ -4532,7 +4531,6 @@
             REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
             VIRTUAL_CURRENCY_CONFIGURATION_PAGE:
               "Virtual Currency Configuration",
-            CLICKER_GAME: "Clicker Game Settings",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -5425,8 +5423,6 @@
           (r.APP_LAUNCHER_EXPANDED = "app_launcher_expanded"),
           (r.APP_LAUNCHER_APPLICATION_LINK_COPIED =
             "app_launcher_application_link_copied"),
-          (r.CLICKER_GAME_LAUNCHED = "clicker_game_launched"),
-          (r.CLICKER_GAME_COMPLETED = "clicker_game_completed"),
           (r.APP_OAUTH2_LINK_EMBED_URL_SENT = "app_oauth2_link_embed_url_sent"),
           (r.APP_OAUTH2_LINK_EMBED_CTA_CLICKED =
             "app_oauth2_link_embed_cta_clicked"),
@@ -6951,7 +6947,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f28eee6e2be93cbf66614d8a1a0edef8cfb781b1",
+            release: "discord_web-f84b6249ab2cda946a2992e4288e9031e2718026",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7017,8 +7013,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "432149"),
-            o.YA("builtAt", String("1755279801638"));
+            o.YA("buildNumber", "432215"),
+            o.YA("builtAt", String("1755284108318"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48414,4 +48410,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fdcc12ad0b30a224.js.map
+//# sourceMappingURL=sentry.8dffe3fffb989c32.js.map
