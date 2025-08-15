@@ -264,7 +264,7 @@
   </li>
   <li>+30 custom sticker slots (for a total of 60)</li>
   <li>Audience capacity for Stage Channels with Video/Go Live: 300</li>
-  <li>60 Soundboard slots</li>
+  <li>48 Soundboard slots</li>
   <li>Animated Server banner</li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
