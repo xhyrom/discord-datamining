@@ -68105,11 +68105,17 @@ html.disable-forced-colors * {
   width: var(--custom-client-themes-editor-content-width);
 }
 .editorFooter_cf6da1 {
+  gap: 8px;
+}
+.editorFooter_cf6da1,
+.editorFooterV2_cf6da1 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-top: 16px;
   padding: 0 var(--custom-client-themes-editor-editor-padding);
+}
+.editorFooterV2_cf6da1 {
+  gap: 12px;
 }
 .closeCircleButton_cf6da1 {
   cursor: pointer;
@@ -88197,4 +88203,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.40d7be252abf0c6f.css.map*/
+/*# sourceMappingURL=12633.74db97053a6ed7db.css.map*/
