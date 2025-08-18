@@ -4787,6 +4787,7 @@
           (r.APPLICATION_OPENED = "application_opened"),
           (r.LAUNCH_GAME = "launch_game"),
           (r.GAME_DETECTED = "game_detected"),
+          (r.ROBLOX_SUBGAME_DETECTED = "roblox_subgame_detected"),
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (r.GAME_DETECTION_COMPARISON = "game_detection_comparison"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
@@ -6953,7 +6954,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-213147e880819f86a623ee85d4ee9bfff7fa9272",
+            release: "discord_web-23582efe9daeac4c147e0482ac3d5aa65440658e",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7019,8 +7020,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "432645"),
-            o.YA("builtAt", String("1755535884029"));
+            o.YA("buildNumber", "432656"),
+            o.YA("builtAt", String("1755536903757"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -16138,6 +16139,18 @@
             r.I.ILLO_PINK_5,
             r.I.ILLO_PINK_5,
           ],
+          "badge-background-default": [
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+          ],
+          "badge-background-expressive": [
+            r.I.WHITE,
+            r.I.BLURPLE_50,
+            r.I.WHITE,
+            r.I.WHITE,
+          ],
           "badge-brand-bg": [
             r.I.BRAND_260,
             r.I.BRAND_260,
@@ -16149,6 +16162,13 @@
             r.I.BRAND_560,
             r.I.BRAND_560,
             r.I.BRAND_560,
+          ],
+          "badge-text-default": [r.I.WHITE, r.I.WHITE, r.I.WHITE, r.I.WHITE],
+          "badge-text-expressive": [
+            r.I.NEUTRAL_71,
+            r.I.WHITE,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
           ],
           "bg-backdrop": [r.I.BLACK, r.I.BLACK, r.I.PLUM_19, r.I.BLACK],
           "bg-backdrop-immersive": [
@@ -48416,4 +48436,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f5093f6c93605510.js.map
+//# sourceMappingURL=sentry.aa6b358718eea4f1.js.map
