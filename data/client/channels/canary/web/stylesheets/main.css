@@ -17614,6 +17614,9 @@ svg.radioIcon_c1e9c4 {
 }
 .headerBody_d6f39b {
   color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   margin: 0;
 }
 .badgeContainer_d6f39b {
@@ -66349,4 +66352,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.34b8316db702c147.css.map*/
+/*# sourceMappingURL=12633.b66245da3ee37283.css.map*/
