@@ -46087,6 +46087,32 @@ html.disable-forced-colors * {
 .closeCircle__2a891:hover {
   color: var(--interactive-hover);
 }
+.container_cc53de {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px auto 0;
+  padding: 8px;
+  width: 260px;
+}
+.bannerImage_cc53de {
+  height: 48px;
+  width: 48px;
+}
+.topContent_cc53de {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+.textContent_cc53de {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+}
 .editorAnimate_cf6da1 {
   animation: slidein_cf6da1 0.5s ease-in 1s forwards;
   margin-right: calc(
@@ -66352,4 +66378,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b66245da3ee37283.css.map*/
+/*# sourceMappingURL=12633.0d7f97805ef6ce64.css.map*/
