@@ -65154,14 +65154,16 @@ html.disable-forced-colors * {
   font-style: normal;
   font-weight: 400;
   src: url(/assets/048ee98a65e366a7.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 115%;
+  ascent-override: 120%;
   font-family: Museo Moderno;
   font-style: normal;
   font-weight: 500;
-  size-adjust: 95%;
+  size-adjust: 92%;
   src: url(/assets/70a13bfa8fb5fd84.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   ascent-override: 100%;
@@ -65169,6 +65171,7 @@ html.disable-forced-colors * {
   font-style: normal;
   font-weight: 400;
   src: url(/assets/2836656d4f7513d9.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   font-family: Sinistre;
@@ -66378,4 +66381,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0d7f97805ef6ce64.css.map*/
+/*# sourceMappingURL=12633.24a2df62c7745899.css.map*/
