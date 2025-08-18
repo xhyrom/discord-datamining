@@ -3810,33 +3810,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   right: 0;
   z-index: 2;
 }
-@keyframes scaleIn_cc5dd2 {
-  0% {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes scaleInHeight_cc5dd2 {
-  0% {
-    height: 0;
-    transform: translate(50%, 50%);
-    width: 0;
-  }
-  to {
-    height: attr(height px);
-    transform: translate(0);
-    width: attr(width px);
-  }
-}
-.full-motion .lowerBadge_cc5dd2 {
-  animation: scaleIn_cc5dd2 0.2s 1 forwards;
-}
-.full-motion .badgeStroke_cc5dd2 {
-  animation: scaleInHeight_cc5dd2 0.2s 1 forwards;
-  transform-origin: center;
-}
 .isHighlighted_cc5dd2 {
   stroke: #000;
   stroke-width: 8px;
@@ -66376,4 +66349,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8e46040281fdf7c7.css.map*/
+/*# sourceMappingURL=12633.34b8316db702c147.css.map*/
