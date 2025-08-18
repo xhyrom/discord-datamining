@@ -24,6 +24,7 @@
         <li><a href="#h_01JV2QTH9QRS97WY51DRZTA128">Servers</a></li>
         <li><a href="#h_01JV2QTH9QJ0M3MHTTXSRH0TRK">Ads</a></li>
         <li><a href="#h_01JV2QTH9QMW10CDN1F3V6GBQ1">Programs</a></li>
+        <li><a href="#h_01K2Z1F0GK1Z3C7YF0MMS8ND4B">Support Tickets</a></li>
       </ul>
     </li>
   </ul>
@@ -42,13 +43,9 @@
   <strong>Contact Us: </strong>If you are having trouble accessing your account,
   please contact privacy@discord.com for help with requesting your data package.
 </div>
-<div class="tip-box">
-  <strong>Tip:</strong> The steps to request your Data Package may look slightly
-  different on your mobile device.
-</div>
 <p>
-  You can request your Data Package through the Discord desktop, mobile, and
-  browser app. 
+  You can request your Data Package through the Discord desktop, browser, and
+  mobile app.
 </p>
 <h2 id="h_01JV2QTH9Q7VZPVXJ5SX9ZAEYD">Desktop/Browser</h2>
 <p>
@@ -82,7 +79,7 @@
 </p>
 <p>
   4.  Once you made your selections, press <strong>Request My Data</strong> in
-  the bottom-right of the window. .
+  the bottom-right of the window.
 </p>
 <p>
   5. You’ll receive a confirmation stating you should receive your data package
@@ -98,13 +95,17 @@
   />
 </p>
 <h4 id="h_01JV2QTH9QHWQ0H3SG05N6ZZ5F" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >Example of requesting your data package</span
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >Request Data</span
+    ></strong
+  ><span style="color: #666666" data-darkreader-inline-color="">
+    on desktop/browser app</span
   >
 </h4>
-<div class="tip-box">
-  <strong>Tip:</strong> If you disable or delete your account before you receive
-  your download link, it will cancel your request.
+<div class="warning-box">
+  <strong>Important:</strong> If you disable or delete your account before you
+  receive your download link, it will cancel your request.
 </div>
 <h2 id="h_01JV2QTH9QYN9JKZ1D9KC22ZFT">Mobile</h2>
 <p>
@@ -132,29 +133,40 @@
   />] in the upper-right corner.  
 </p>
 <p>
-  3. Press <strong>Data &amp; Privacy </strong>to find the Request Data section
-  where you can tap the<strong> Request all of my data button.</strong>
+  3. Press <strong>Data &amp; Privacy</strong> and then select
+  <strong>Request all of my data</strong>.
 </p>
 <p>
-  4. The Submit Data Request window will appear for you to select
-  <strong>Request My Data</strong> to confirm.
+  4. The <strong>Submit Data Request</strong> page will appear for you to select
+  which data you would like to request in your package.
 </p>
 <p>
-  5. You’ll receive a confirmation stating you should receive your data package
-  within 30 days. Tap <strong>Okay</strong> to confirm.<br /><br />We'll send a
-  data package to the email address associated with your Discord account. The
-  download link will remain active for 30 days. <strong>  </strong>
+  5. Once you made your selections, press <strong>Request My Data</strong> to
+  submit your request.
+</p>
+<p>
+  6. You’ll receive a confirmation stating you should receive your data package
+  within 30 
+</p>
+<p>days. Tap <strong>Okay </strong>to exit out of this confirmation.</p>
+<p>
+  We'll then send a data package to the email address associated with your
+  Discord account. The download link will remain active for 30 days.
+  <strong>  </strong>
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/32047030754327"
-    width="249"
-    height="520"
-  />
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/34266615635607"
+      width="238"
+      height="520"
+  /></strong>
 </p>
-<h4 id="h_01JV2QTH9QAEQE8JN458ZZDFJH" class="wysiwyg-text-align-center">
-  <span style="color: #666666" data-darkreader-inline-color=""
-    >How to request Data Package on mobile</span
+<h4 id="h_01K2Z1BR47RFNJTCJ3DXG1FY3X" class="wysiwyg-text-align-center">
+  <strong
+    ><span style="color: #666666" data-darkreader-inline-color=""
+      >How to request your Data Package on mobile</span
+    ></strong
   >
 </h4>
 <h1 id="h_01JV2QTH9QSGJ1P7CYCAGEKR3V">
@@ -171,8 +183,8 @@
 </p>
 <ul>
   <li>
-    Basic information, such as your userID, username/discriminator, name, phone
-    number, and email
+    Basic information, such as your user ID, username name, phone number, and
+    email
   </li>
   <li>Your account settings</li>
   <li>
@@ -193,15 +205,16 @@
     suggestions, and Friends lists from external platforms
   </li>
   <li>
-    Your payment information, including payment sources and payment history
+    Your payment information, including payment sources, payment history, and
+    your Orbs balance and Orbs transaction history
   </li>
   <li>Your developer information (For any webhooks, bots, etc.)</li>
   <li>Activity statistics</li>
   <li>Notes you have written about other users</li>
   <li>Library applications</li>
 </ul>
-<div class="info-box">
-  <strong>Info:</strong> If you have recently deleted an avatar image, it may
+<div class="tip-box">
+  <strong>Tip:</strong> If you have recently deleted an avatar image, it may
   still show up in your package.
 </div>
 <h2 id="h_01JV2QTH9QK6M7GAWDHVQXHKM3">Activity</h2>
@@ -272,11 +285,16 @@
 <h2 id="h_01JV2QTH9QV7AB3AF0E9YF07J6">Messages</h2>
 <p>
   The messages folder contains all the messages that you have sent on Discord.
-  These are broken down separately into folders based on Direct Messages, Group
-  Messages, and channels that you have chatted in. The number for each folder is
-  the Channel ID for where the messages were sent. There is a JSON file which
-  also contains a full mapping of Channel ID to Channel name for alllist of the
-  folders included.
+  Please note that your message folder does not include Customer Support or
+  Trust &amp; Safety correspondence as these communications take place outside
+  of the Discord application.
+</p>
+<p>
+  The messages you have sent are broken down separately into folders based on
+  Direct Messages, Group Messages, and channels that you have chatted in. The
+  number for each folder is the Channel ID for where the messages were sent.
+  There is a JSON file which also contains a full mapping of Channel ID to
+  Channel name for all of the folders included.
 </p>
 <p>
   When you select a folder, you'll notice it contains a couple items. The first
@@ -304,8 +322,8 @@
   stored in Discord and therefore will not be included in your Data Package.
 </div>
 <h2 id="h_01JV2QTH9QRS97WY51DRZTA128">Servers</h2>
-<div class="tip-box">
-  <strong>Tip:</strong>If you leave a server before requesting your Data
+<div class="warning-box">
+  <strong>Important: </strong>If you leave a server before requesting your Data
   Package, that server may not be included. Your Data Package only includes
   servers you are a member of at the time of the request as well as any
   recently-departed servers.
@@ -390,6 +408,22 @@
   The information included will vary based on what you provide, and which
   programs you previously applied for.
 </p>
+<h2 id="h_01K2Z1F0GK1Z3C7YF0MMS8ND4B">Support Tickets</h2>
+<p>
+  This folder contains a JSON file with information about tickets you’ve made
+  through our Help Center in Zendesk that are tied to your Discord email
+  address. Each ticket contains the following information:
+</p>
+<ul>
+  <li>
+    The body of all public comments on the ticket, including the comment’s
+    author and creation timestamp
+  </li>
+  <li>The time the ticket was created</li>
+  <li>The status of the ticket</li>
+  <li>The subject of the ticket</li>
+  <li>The ticket ID</li>
+</ul>
 <div class="form-box">
   <strong>Contact Us:</strong> Our Support Team cannot assist you with going
   through your Data Package, however, if you have any questions or notice

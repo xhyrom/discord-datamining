@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "promotion",
-    "nitro",
-    "promo",
-    "faq",
-    "1 month",
-    "discord",
-    "product",
-    "customer",
     "drop.com",
-    "select"
+    "answer-bot",
+    "discord",
+    "promo",
+    "promotion",
+    "customer",
+    "faq",
+    "nitro",
+    "product",
+    "select",
+    "1 month"
   ]
 }

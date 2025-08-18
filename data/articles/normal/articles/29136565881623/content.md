@@ -178,17 +178,8 @@
   >
 </p>
 <p>
-  A: The evolving version of the
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Nitro</a
-  >
-  profile badge is only available with Nitro. If you decide to switch your
-  subscription to Nitro Basic, your badge progression will reset and will not
-  evolve. If you re-subscribe to Nitro after subscribing to Nitro Basic, you
-  will start fresh from the beginning of the badge progression. 
+  A: The evolving version of the Nitro profile badge is only available with
+  Nitro. 
 </p>
 <p><strong>Q: How do I view my current badge progress?</strong></p>
 <p>

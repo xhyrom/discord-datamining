@@ -15,12 +15,13 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-05-22T17:11:34Z",
+  "edited_at": "2025-08-18T16:51:30Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "data package"
+    "data package",
+    "request data package"
   ]
 }
