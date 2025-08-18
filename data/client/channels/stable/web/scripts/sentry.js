@@ -4257,7 +4257,6 @@
                 .concat(e),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
-            CLICKER_GAME: "/clicker",
             SERVER_SHOP: (t) => "/channels/".concat(t, "/shop"),
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
             REPORT: "/report",
@@ -4532,7 +4531,6 @@
             REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
             VIRTUAL_CURRENCY_CONFIGURATION_PAGE:
               "Virtual Currency Configuration",
-            CLICKER_GAME: "Clicker Game Settings",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -4603,6 +4601,7 @@
           (r.BACKGROUND_SYNC_COMPLETED = "background_sync_completed"),
           (r.APP_LAUNCH_COMPLETED = "app_launch_completed"),
           (r.APP_LANDING_VIEWED = "app_landing_viewed"),
+          (r.RPC_OPEN_EXTERNAL_LINK_CALLED = "rpc_open_external_link_called"),
           (r.APP_MODULES_UPDATED = "app_modules_updated"),
           (r.APP_FIRST_LAUNCHED = "app_first_launched"),
           (r.APP_FIRST_LOGIN = "app_first_login"),
@@ -5425,8 +5424,6 @@
           (r.APP_LAUNCHER_EXPANDED = "app_launcher_expanded"),
           (r.APP_LAUNCHER_APPLICATION_LINK_COPIED =
             "app_launcher_application_link_copied"),
-          (r.CLICKER_GAME_LAUNCHED = "clicker_game_launched"),
-          (r.CLICKER_GAME_COMPLETED = "clicker_game_completed"),
           (r.APP_OAUTH2_LINK_EMBED_URL_SENT = "app_oauth2_link_embed_url_sent"),
           (r.APP_OAUTH2_LINK_EMBED_CTA_CLICKED =
             "app_oauth2_link_embed_cta_clicked"),
@@ -5689,6 +5686,8 @@
           (r.ICYMI_FEED_EMPTY_LOADING_ABANDONED =
             "feed_empty_loading_abandoned"),
           (r.ICYMI_FEED_EMPTY_LOADING_COMPLETE = "feed_empty_loading_complete"),
+          (r.FEED_SESSION_COMPLETED = "feed_session_completed"),
+          (r.FEED_ITEM_DWELLED = "feed_item_dwelled"),
           (r.MOBILE_WEB_HANDOFF_FAILURE = "mobile_web_handoff_failure"),
           (r.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED =
             "premium_uncancel_winback_modal_viewed"),
@@ -6158,6 +6157,8 @@
           (r.CDM_LOAD_STATUS = "cdm_load_status"),
           (r.CDM_READY_COMPLETE = "cdm_ready_complete"),
           (r.DESKTOP_TTI = "desktop_tti"),
+          (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY =
+            "desktop_perf_attributed_module_memory"),
           (r.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
           (r.E2EE_USER_VERIFICATION_VIEWED = "e2ee_user_verification_viewed"),
           (r.E2EE_USER_VERIFIED = "e2ee_user_verified"),
@@ -6950,7 +6951,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-15-d87466627f0f6b1c94fe77bfa940d3acf3f0f550-discord_web",
+              "2025-08-18-9538638e52c59dc35f119c4d17cbef9361399577-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7016,8 +7017,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "432290"),
-            o.YA("builtAt", String("1755290077765"));
+            o.YA("buildNumber", "432548"),
+            o.YA("builtAt", String("1755501514729"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -9526,13 +9527,13 @@
                   light: {
                     color: "gradient.end",
                     lightness: "*0.9",
-                    saturation: "*0.9",
+                    saturation: "*0.6",
                     opacity: 0.9,
                   },
                   dark: {
                     color: "gradient.end",
                     lightness: "*1.5",
-                    saturation: "*1.2",
+                    saturation: "*1",
                     opacity: 0.9,
                   },
                 },
@@ -48413,4 +48414,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fd5975e841145c6a.js.map
+//# sourceMappingURL=sentry.47a194348e587cad.js.map
