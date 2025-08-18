@@ -20,19 +20,19 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "unauthorized",
-    "charge",
-    "support",
-    "i dont know",
-    "I don't know",
-    "unrecognized",
-    "payment",
-    "billing",
-    "help",
-    "hack",
     "Discord",
+    "payment",
+    "support",
     "report",
+    "answer-bot",
+    "billing",
+    "unauthorized",
     "contact",
-    "answer-bot"
+    "hack",
+    "help",
+    "unrecognized",
+    "charge",
+    "i dont know",
+    "I don't know"
   ]
 }

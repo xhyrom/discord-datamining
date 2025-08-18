@@ -630,6 +630,14 @@
     content policies.
   </li>
 </ul>
+<p><strong>Hearing Accessibility:</strong></p>
+<ul>
+  <li>All video advertisements must include accurate closed captions. </li>
+  <li>
+    Captions must be synchronized with the audio, include all spoken dialogue,
+    and relevant sound effects.
+  </li>
+</ul>
 <h2 id="h_01J4T37K17DECTV26T49GVC25G">
   <span class="wysiwyg-underline">Sanctions</span>
 </h2>
