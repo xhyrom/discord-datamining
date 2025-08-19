@@ -6918,7 +6918,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .h2_b717a1 {
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 .h3_b717a1 {
   font-weight: var(--font-weight-medium);
@@ -6932,11 +6931,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.3px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 .h5_b717a1,
 .label_b717a1,
 .legend_b717a1 {
+  text-transform: unset;
 }
 .h5_b717a1 {
   color: var(--header-primary);
@@ -6944,7 +6943,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 8px;
-  text-transform: capitalize;
 }
 .defaultMarginh4_b717a1 {
   margin-bottom: 0;
@@ -6972,7 +6970,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   font-size: 12px;
   font-style: italic;
   font-weight: var(--font-weight-medium);
-  text-transform: none;
 }
 .errorSeparator_b717a1 {
   padding-left: 4px;
@@ -19368,7 +19365,9 @@ img.inlineAsset__9c640 {
   background: var(--background-base-lowest);
   display: grid;
   grid-template-columns: auto 1fr;
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   padding-top: calc(var(--custom-app-top-bar-height) + var(--space-4));
 }
 .group_f09870 {
@@ -19394,6 +19393,7 @@ img.inlineAsset__9c640 {
   border-right: 1px solid var(--border-subtle);
   overflow-y: auto;
   padding: var(--space-16);
+  padding-bottom: var(--space-24);
   width: 280px;
 }
 .page_f09870 {
@@ -19401,28 +19401,30 @@ img.inlineAsset__9c640 {
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
   height: 100%;
-  overflow: hidden;
+  min-height: 0;
 }
 .content_f09870,
 .main_f09870 {
   flex: 1;
   height: 100%;
+  min-height: 0;
 }
 .main_f09870 {
   display: flex;
-  overflow: hidden;
 }
 .canvas_f09870 {
   background-color: var(--background-base-lower);
   flex: 1;
   overflow: auto;
   padding: var(--space-24);
+  padding-bottom: var(--space-32);
 }
 .controls_f09870 {
   background: var(--background-base-lowest);
   border-left: 1px solid var(--border-subtle);
   overflow-y: auto;
   padding: var(--space-16);
+  padding-bottom: var(--space-24);
   width: 300px;
 }
 .controlsSection_f09870 {
@@ -66392,4 +66394,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.6ad1bf1cba11b79d.css.map*/
+/*# sourceMappingURL=12633.f8d45072592e1cf5.css.map*/
