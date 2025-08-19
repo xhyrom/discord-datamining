@@ -39752,6 +39752,21 @@ html:not(.chat-input) .inputInner_b1f01d {
   background-color: var(--user-profile-border);
   height: 1px;
 }
+.cloudPlaySection__33ecd {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.cloudPlaySectionTextContainer__33ecd {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.cloudPlayDivider__33ecd {
+  width: 100%;
+}
 .container__8e51c {
   align-items: center;
   display: flex;
@@ -46790,7 +46805,7 @@ html.disable-forced-colors * {
   height: 20px;
   line-height: 20px;
   outline: none;
-  padding: 0 12px;
+  padding: 0 0 0 12px;
   text-align: right;
   transition: border-color 0.15s ease;
   width: 40px;
@@ -66424,4 +66439,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.044747307429e004.css.map*/
+/*# sourceMappingURL=12633.45603afc7a2223a3.css.map*/
