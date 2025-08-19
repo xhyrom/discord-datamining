@@ -18733,7 +18733,7 @@ svg.radioIcon_c1e9c4 {
   background: var(--primary-500);
 }
 .freeTrialPill_ac86f6.modBackgroundPill_ac86f6 {
-  background: var(--background-surface-highest);
+  background: hsla(240, 4%, 61%, 0.2);
 }
 .freeTrialPill_ac86f6.freeTrialPillTier2OldGradientFill_ac86f6 {
   background: var(--custom-premium-colors-premium-gradient-tier-2-old);
@@ -66405,4 +66405,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3ff44b01af896d45.css.map*/
+/*# sourceMappingURL=12633.75d6d2f9d0cfeb44.css.map*/
