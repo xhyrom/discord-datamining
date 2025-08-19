@@ -2026,17 +2026,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .actionBarTrailingFullWidth__53cea .actionButtonWrapper__53cea {
   flex: 1;
 }
-.backdrop__78332 {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: var(--devtools-sidebar-width, 0);
-  top: 0;
-  transform: translateZ(0);
-}
-.backdrop__78332.withLayer__78332 {
-  pointer-events: all;
-}
 .scrim_d9cec8 {
   background-color: var(--scrim-default);
   bottom: 0;
@@ -8156,6 +8145,17 @@ svg.radioIcon_c1e9c4 {
 .slider__65039 {
   position: relative;
   top: -4px;
+}
+.backdrop__78332 {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: var(--devtools-sidebar-width, 0);
+  top: 0;
+  transform: translateZ(0);
+}
+.backdrop__78332.withLayer__78332 {
+  pointer-events: all;
 }
 .backdrop_bc663c {
   background-color: var(--black-500);
@@ -42224,10 +42224,6 @@ img.thumbnail__0f2e8 {
   margin: 12px auto;
   width: 250px;
 }
-.inputSection__08bd2 {
-  margin: 16px 0;
-  margin-bottom: var(--space-12);
-}
 .titleRow__08bd2 {
   align-items: center;
   justify-content: flex-end;
@@ -66439,4 +66435,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.45603afc7a2223a3.css.map*/
+/*# sourceMappingURL=12633.161f0c0ca9f6be4c.css.map*/
