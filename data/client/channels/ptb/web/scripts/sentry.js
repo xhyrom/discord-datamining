@@ -3576,6 +3576,8 @@
                 .concat(a, "/leave"),
             APPLICATION_UPLOAD_ATTACHMENT: (t) =>
               "/applications/".concat(t, "/attachment"),
+            APPLICATION_PROXY_TICKET: (t) =>
+              "/applications/".concat(t, "/proxy-tickets"),
             CHANNEL_THREADS: (t) => "/channels/".concat(t, "/threads"),
             CHANNEL_MESSAGE_THREADS: (t, e) =>
               "/channels/".concat(t, "/messages/").concat(e, "/threads"),
@@ -4785,7 +4787,9 @@
           (r.APPLICATION_OPENED = "application_opened"),
           (r.LAUNCH_GAME = "launch_game"),
           (r.GAME_DETECTED = "game_detected"),
+          (r.ROBLOX_SUBGAME_DETECTED = "roblox_subgame_detected"),
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
+          (r.GAME_DETECTION_COMPARISON = "game_detection_comparison"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
           (r.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
@@ -5616,6 +5620,10 @@
             "media_viewer_download_button_tapped"),
           (r.MEDIA_VIEWER_AFFORDANCE_CLICKED =
             "media_viewer_affordance_clicked"),
+          (r.MEDIA_VIEWER_IMAGE_COPIED = "media_viewer_image_copied"),
+          (r.MEDIA_VIEWER_IMAGE_SAVED = "media_viewer_image_saved"),
+          (r.MEDIA_VIEWER_LINK_COPIED = "media_viewer_link_copied"),
+          (r.MEDIA_VIEWER_LINK_OPENED = "media_viewer_link_opened"),
           (r.FILE_SIZE_LIMIT_EXCEEDED = "file_size_limit_exceeded"),
           (r.MOBILE_FILE_PICKER_ERROR = "mobile_file_picker_error"),
           (r.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED =
@@ -6951,7 +6959,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-18-9538638e52c59dc35f119c4d17cbef9361399577-discord_web",
+              "2025-08-19-05344025676ea0a9cc50ee3413f80df385c684fd-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7017,8 +7025,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "432548"),
-            o.YA("builtAt", String("1755501514729"));
+            o.YA("buildNumber", "433124"),
+            o.YA("builtAt", String("1755587920564"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -16136,6 +16144,18 @@
             r.I.ILLO_PINK_5,
             r.I.ILLO_PINK_5,
           ],
+          "badge-background-default": [
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+            r.I.BLURPLE_50,
+          ],
+          "badge-background-expressive": [
+            r.I.WHITE,
+            r.I.BLURPLE_50,
+            r.I.WHITE,
+            r.I.WHITE,
+          ],
           "badge-brand-bg": [
             r.I.BRAND_260,
             r.I.BRAND_260,
@@ -16147,6 +16167,13 @@
             r.I.BRAND_560,
             r.I.BRAND_560,
             r.I.BRAND_560,
+          ],
+          "badge-text-default": [r.I.WHITE, r.I.WHITE, r.I.WHITE, r.I.WHITE],
+          "badge-text-expressive": [
+            r.I.NEUTRAL_71,
+            r.I.WHITE,
+            r.I.NEUTRAL_71,
+            r.I.NEUTRAL_71,
           ],
           "bg-backdrop": [r.I.BLACK, r.I.BLACK, r.I.PLUM_19, r.I.BLACK],
           "bg-backdrop-immersive": [
@@ -48414,4 +48441,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.47a194348e587cad.js.map
+//# sourceMappingURL=sentry.c4a6f9646580d5bf.js.map
