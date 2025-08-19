@@ -1,8 +1,9 @@
-<p>
-  <strong>Voice filters</strong> are designed to change how you sound in voice
-  and video calls. They add a creative and engaging touch to conversations
-  through the desktop app and make interactions more fun and expressive.
-</p>
+<div class="exp-box">
+  <strong>Important:</strong> We recently tested voice filters with a small
+  group of users and we are appreciative to those who participated in testing
+  this feature. As of 8/19, we are ending the experiment and starting to roll it
+  back–this feature will not be available until further notice.
+</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
@@ -28,10 +29,6 @@
       <a href="#h_01JP37R8X24GAETR5NH6PW2Q82">Frequently Asked Questions</a>
     </li>
   </ul>
-</div>
-<div class="exp-box">
-  <strong>[Beta]</strong> Voice filters is currently an experiment and available
-  to a limited group of users on Windows desktop only.
 </div>
 <h1 id="h_01JP37R8X2TPC8RWRQYPA3ZKTD">What are voice filters?</h1>
 <p>
