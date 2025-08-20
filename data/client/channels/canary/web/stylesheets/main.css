@@ -43050,6 +43050,47 @@ img.thumbnail__0f2e8 {
   gap: var(--space-8);
   padding: var(--space-16);
 }
+.breadcrumb_c2a763 {
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  height: 24px;
+  justify-content: space-between;
+  padding: 8px;
+}
+.breadcrumb_c2a763,
+.icons_c2a763 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.icons_c2a763 {
+  gap: 4px;
+}
+.icon_c2a763 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+.icon_c2a763,
+.icon_c2a763 img {
+  border-radius: var(--radius-xs);
+}
+.icon_c2a763 img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+.displayCount_c2a763 {
+  opacity: 0.5;
+}
+.displayCountText_c2a763 {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .roleDot__57082 {
   margin-left: -2px;
   margin-right: 2px;
@@ -66405,4 +66446,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.75d6d2f9d0cfeb44.css.map*/
+/*# sourceMappingURL=12633.fae988232be271ba.css.map*/
