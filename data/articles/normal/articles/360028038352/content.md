@@ -198,61 +198,78 @@
       rel="noopener noreferrer"
       >Emoji</a
     >
-    Slots (for a total of 100 emojis)
+    Slots (for a total of 100)
+  </li>
+  <li>
+    +10
+    <a
+      href="https://support.discord.com/hc/en-us/articles/4403089981975"
+      target="_blank"
+      rel="noopener noreferrer"
+      >custom sticker</a
+    >
+    slots (for a total of 15)
+  </li>
+  <li>
+    +16
+    <a
+      href="https://support.discord.com/hc/en-us/articles/12612888127767"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Soundboard</a
+    >
+    slots (for a total of 24)
   </li>
   <li>128 Kbps Audio Quality</li>
   <li>
-    <a href="https://support.discord.com/hc/en-us/articles/360040816151"
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360040816151"
+      target="_blank"
+      rel="noopener noreferrer"
       >Go Live</a
     >
-    streams boosted to 720P 60FPS
+    streams Boosted to 720P 60FPS
   </li>
   <li>
-    <a href="https://support.discord.com/hc/en-us/articles/4415841146391"
+    <a
+      href="https://support.discord.com/hc/en-us/articles/4415841146391"
+      target="_blank"
+      rel="noopener noreferrer"
       >Custom Server Invite Background</a
     >
   </li>
   <li>Animated Server Icon</li>
-  <li>
-    15
-    <a href="https://support.discord.com/hc/en-us/articles/4403089981975"
-      >custom sticker</a
-    >
-    slots
-  </li>
-  <li>
-    24
-    <a href="https://support.discord.com/hc/en-us/articles/12612888127767"
-      >Soundboard</a
-    >
-    slots
-  </li>
 </ul>
 <p><strong>Level 2 Perks (7 Server Boosts)</strong></p>
 <ul>
   <li>Everything in Level 1 and…..</li>
-  <li>+50 Emoji Slots (for a total of 150 emojis)</li>
-  <li>256 Kbps Audio Quality</li>
-  <li>Go Live streams boosted to 1080P 60FPS</li>
-  <li>Server Banner</li>
-  <li>50MB Upload Limit for all members (server only)</li>
+  <li>+50 Emoji Slots (for a total of 150)</li>
   <li>+15 custom sticker slots (for a total of 30)</li>
-  <li>Custom Role Icons</li>
+  <li>+12 Soundboard slots (for a total of 36)</li>
+  <li>256 Kbps Audio Quality</li>
+  <li>Go Live streams Boosted to 1080P 60FPS</li>
   <li>
     Audience capacity for
-    <a href="https://support.discord.com/hc/en-us/articles/1500005513722"
+    <a
+      href="https://support.discord.com/hc/en-us/articles/1500005513722"
+      target="_blank"
+      rel="noopener noreferrer"
       >Stage Channels</a
     >
     with Video/Go Live: 150
   </li>
-  <li>36 Soundboard slots</li>
-  <li>Static server banner</li>
+  <li>50MB Upload Limit for all members (server only)</li>
+  <li>Custom Role Icons</li>
+  <li>Static Server Banner</li>
 </ul>
 <p><strong>Level 3 Perks (14 Server Boosts)</strong></p>
 <ul>
   <li>Everything in Level 1 AND Level 2 AND…..</li>
-  <li>+100 Emoji Slots (for a total of 250 emojis)</li>
+  <li>+100 Emoji Slots (for a total of 250)</li>
+  <li>+30 custom sticker slots (for a total of 48)</li>
+  <li>+12 Soundboard slots (for a total of 48)</li>
   <li>384Kbps Audio Quality</li>
+  <li>Audience capacity for Stage Channels with Video/Go Live: 300</li>
   <li>100MB Upload Limit for all members (server only)</li>
   <li>
     <a
@@ -262,10 +279,7 @@
       >Custom Invite Link</a
     >
   </li>
-  <li>+30 custom sticker slots (for a total of 60)</li>
-  <li>Audience capacity for Stage Channels with Video/Go Live: 300</li>
-  <li>48 Soundboard slots</li>
-  <li>Animated Server banner</li>
+  <li>Animated Server Banner</li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
 <ul>
@@ -293,6 +307,25 @@
     >
       - Make certain roles stand out with animated gradient and holographic
       effects that go beyond standard solid colors</span
+    >
+  </li>
+  <li>
+    <span
+      style="
+        color: #434343;
+        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+          Helvetica, Arial, sans-serif;
+      "
+      data-darkreader-inline-color=""
+      ><strong>Custom Invite Link (5 Boosts) </strong>- Set a
+      <a
+        href="https://support.discord.com/hc/en-us/articles/115001542132-Custom-Invite-Link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Custom Invite Link</a
+      >
+      for your server that is a customizable URL that members of your server can
+      share to invite others.</span
     >
   </li>
 </ul>
