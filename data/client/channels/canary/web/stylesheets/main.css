@@ -20333,6 +20333,7 @@ svg.radioIcon_c1e9c4 {
     Arial,
     sans-serif;
   letter-spacing: 0.04em;
+  opacity: 0.85;
 }
 .cherryBomb__89a31.safari__89a31 {
   transform: translateY(-1px);
@@ -20344,6 +20345,7 @@ svg.radioIcon_c1e9c4 {
     Arial,
     sans-serif;
   letter-spacing: 0.05em;
+  opacity: 0.85;
 }
 .museoModerno__89a31 {
   font-family:
@@ -20420,6 +20422,10 @@ svg.radioIcon_c1e9c4 {
 .emoji_dfb989 {
   position: relative;
   z-index: 1;
+}
+.forceAnimate_dfb989 .container_dfb989,
+.showEffect_dfb989 {
+  opacity: 1;
 }
 .forceAnimate_dfb989 .container_dfb989 .solid_dfb989,
 .showEffect_dfb989 .solid_dfb989 {
@@ -99502,4 +99508,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7953d23ddff48064.css.map*/
+/*# sourceMappingURL=12633.94771b41aaca14f1.css.map*/
