@@ -76826,6 +76826,7 @@ h2.title_feb59c {
 }
 .textarea__5f04d {
   height: 180px;
+  width: 100%;
 }
 @media (max-width: 485px) and (max-height: 450px) {
   .form__5f04d {
@@ -99508,4 +99509,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.94771b41aaca14f1.css.map*/
+/*# sourceMappingURL=12633.b723478b1fb4fd94.css.map*/
