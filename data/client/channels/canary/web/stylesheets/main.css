@@ -98535,7 +98535,7 @@ html.disable-forced-colors * {
   src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
 }
 @font-face {
-  ascent-override: 97%;
+  ascent-override: 90%;
   font-family: Neo Castel;
   font-style: normal;
   font-weight: 400;
@@ -98552,7 +98552,7 @@ html.disable-forced-colors * {
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 100%;
+  ascent-override: 90%;
   font-family: Pixelify Sans;
   font-style: normal;
   font-weight: 400;
@@ -99767,4 +99767,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.78d09ce28fd48660.css.map*/
+/*# sourceMappingURL=12633.841b35f67c806dd7.css.map*/
