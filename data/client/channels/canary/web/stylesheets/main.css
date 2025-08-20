@@ -73696,6 +73696,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 .userAvatar__07f91 {
   margin: 0;
 }
+.gameIcon__07f91 {
+  border-radius: var(--radius-xs);
+}
 .enable-forced-colors .clickable__07f91:hover .username__07f91,
 .enable-forced-colors .username__07f91 {
   background-color: ButtonFace;
@@ -76702,7 +76705,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99509,4 +99512,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c0c1f4049a1fb6a0.css.map*/
+/*# sourceMappingURL=12633.dddd084c888ac5f3.css.map*/
