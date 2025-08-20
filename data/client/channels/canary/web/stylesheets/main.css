@@ -20516,18 +20516,23 @@ svg.radioIcon_c1e9c4 {
 .innerContainer_dfb989 {
   flex: 1 1 0%;
   min-width: 0;
-  white-space: var(--custom-display-name-styles-wrap);
-}
-.glowContainer_dfb989,
-.innerContainer_dfb989 {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: var(--custom-display-name-styles-wrap);
+}
+.underlineOnHover_dfb989 {
+  text-decoration: none;
+}
+.underlineOnHover_dfb989:not(.pop_dfb989):hover {
+  text-decoration: underline;
 }
 .glowContainer_dfb989 {
   color: transparent;
   height: 100%;
   inset: 0;
+  overflow: hidden;
   position: absolute;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .emoji_dfb989 {
@@ -20677,8 +20682,15 @@ svg.radioIcon_c1e9c4 {
   transform: translate3d(0, 0.08em, 0);
   -webkit-text-fill-color: transparent;
   overflow: hidden;
+  text-decoration: none;
   text-overflow: ellipsis;
   white-space: var(--custom-display-name-styles-wrap);
+}
+.showEffect_dfb989.container_dfb989
+  .pop_dfb989.underlineOnHover_dfb989:hover:before {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--custom-display-name-styles-dark-2-color);
+  text-decoration-color: var(--custom-display-name-styles-dark-2-color);
 }
 .animated_dfb989.loop_dfb989.loop_dfb989 > *,
 .animated_dfb989.loop_dfb989.loop_dfb989 > :before {
@@ -99713,4 +99725,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d4c25d6b9c7a0ff3.css.map*/
+/*# sourceMappingURL=12633.a949aa4f1b7107d7.css.map*/
