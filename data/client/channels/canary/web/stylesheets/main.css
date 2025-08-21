@@ -71393,6 +71393,9 @@ div.nagbar_d74ef8 {
 .header__8cc9a {
   margin-bottom: 6px;
 }
+.container__9c880 {
+  max-width: 660px;
+}
 .parentalControlsTeenRow__9c880 {
   margin-top: var(--space-24);
 }
@@ -76951,7 +76954,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100018,4 +100021,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1f941505872269f2.css.map*/
+/*# sourceMappingURL=12633.e27fc55a0e534347.css.map*/
