@@ -2599,7 +2599,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   transition: border-color 0.1s ease;
 }
 .wrapper_d14335[data-read-only="true"] {
-  --custom-input-border-color: var(--custom-input-background-color);
+  --custom-input-border-color: var(--input-border-read-only);
 }
 .wrapper_d14335:not([data-read-only="true"]):not([data-disabled="true"]):not(
     :focus-within
@@ -19800,14 +19800,16 @@ svg.radioIcon_c1e9c4 {
   cursor: pointer;
 }
 .gameIcon__15328 {
+  background: var(--background-surface-high);
   border-radius: 8px;
 }
-.container__15328,
-.gameIcon__15328 {
-  background: var(--background-surface-high);
+.gameIconFallback__15328 {
+  border-radius: 8px;
+  padding: 24px;
 }
 .container__15328 {
   align-items: flex-start;
+  background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   flex-direction: column;
@@ -81243,6 +81245,9 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-22);
   --input-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --input-border-default-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-read-only: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
@@ -82277,6 +82282,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-read-only: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
     --input-error-background: color-mix(
@@ -83687,6 +83698,9 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-54);
   --input-border-default: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
   --input-border-default-hover: hsl(var(--opacity-36-hsl) / 0.3607843137254902);
+  --input-border-read-only: hsl(
+    var(--opacity-black-4-hsl) / 0.0392156862745098
+  );
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-700);
@@ -84721,6 +84735,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-read-only: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--custom-theme-base-color-amount, 0%)
     );
     --input-error-background: color-mix(
@@ -86149,6 +86169,9 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-37);
   --input-border-default: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
   --input-border-default-hover: hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+  --input-border-read-only: hsl(
+    var(--opacity-white-12-hsl) / 0.12156862745098039
+  );
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
@@ -87189,6 +87212,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-read-only: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--custom-theme-base-color-amount, 0%)
     );
     --input-error-background: color-mix(
@@ -88613,6 +88642,9 @@ html.disable-forced-colors * {
   --input-border-critical-hover: var(--red-new-32);
   --input-border-default: hsl(var(--opacity-20-hsl) / 0.2);
   --input-border-default-hover: hsl(var(--opacity-20-hsl) / 0.2);
+  --input-border-read-only: hsl(
+    var(--opacity-white-8-hsl) / 0.0784313725490196
+  );
   --input-error-background: hsl(var(--red-500-hsl) / 0.12);
   --input-error-border: var(--red-360);
   --input-error-text: var(--red-260);
@@ -89649,6 +89681,12 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-20-hsl) / 0.2) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-read-only: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
     --input-error-background: color-mix(
@@ -99930,4 +99968,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e689210cc5f5eebe.css.map*/
+/*# sourceMappingURL=12633.e3b1349b98604839.css.map*/
