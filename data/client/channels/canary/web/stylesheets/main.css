@@ -9690,9 +9690,8 @@ svg.radioIcon_c1e9c4 {
   box-sizing: border-box;
   cursor: default;
   display: inline-flex;
-  forced-color-adjust: none;
   gap: var(--space-8);
-  height: 40px;
+  min-height: 40px;
   outline: none;
   padding: var(--space-4) var(--space-12);
   transition:
@@ -9727,6 +9726,10 @@ svg.radioIcon_c1e9c4 {
   background: var(--opacity-blurple-12);
   border-color: var(--input-border-active);
 }
+.tag_ae0825[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 .tag_ae0825 [slot="remove"] {
   align-items: center;
   aspect-ratio: 1/1;
@@ -9759,12 +9762,11 @@ svg.radioIcon_c1e9c4 {
 }
 .tagGroup_ae0825[data-layout="inline"] {
   display: contents;
-  gap: var(--space-4);
 }
 .tagGroup_ae0825[data-layout="inline"] .tag_ae0825 {
   border-radius: var(--radius-xs);
   gap: var(--space-4);
-  height: 28px;
+  min-height: 28px;
   padding: var(--space-4) var(--space-8);
 }
 .tagGroup_ae0825[data-layout="inline"] .tag_ae0825:has([slot="remove"]) {
@@ -10805,16 +10807,16 @@ svg.radioIcon_c1e9c4 {
 .md__0f084 {
   --custom-text-input-height: var(--control-input-height-md);
 }
-.leading__0f084 {
+.hasLeading__0f084 {
   padding-left: var(--custom-text-input-icon-spacing);
 }
-.leading__0f084 .input__0f084 {
+.hasLeading__0f084 .input__0f084 {
   padding-left: 0;
 }
-.trailing__0f084 {
+.hasTrailing__0f084 {
   padding-right: var(--custom-text-input-icon-spacing);
 }
-.trailing__0f084 .input__0f084 {
+.hasTrailing__0f084 .input__0f084 {
   padding-right: 0;
 }
 .input__0f084 {
@@ -10847,10 +10849,10 @@ svg.radioIcon_c1e9c4 {
   -moz-user-select: none;
   user-select: none;
 }
-.tags__0f084 {
+.hasTags__0f084 {
   padding: var(--space-4);
 }
-.tags__0f084 .input__0f084 {
+.hasTags__0f084 .input__0f084 {
   padding-left: var(--space-8);
 }
 .mana-text-inputs .input__0f084 {
@@ -23829,9 +23831,9 @@ div.modalHeader_c28af8 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
 }
 .title__8da80 {
+  padding-top: 59px;
   text-align: center;
 }
 .modalCloseButton__8da80 {
@@ -76941,7 +76943,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100008,4 +100010,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b6d2e49cefcae4db.css.map*/
+/*# sourceMappingURL=12633.a44e4c2246b6da9b.css.map*/
