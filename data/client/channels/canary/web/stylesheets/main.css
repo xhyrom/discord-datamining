@@ -72688,6 +72688,12 @@ div.nagbar_d74ef8 {
   position: relative;
 }
 .warningCorner__7700a {
+  align-items: center;
+  background-color: var(--background-base-lower);
+  border-radius: var(--radius-round);
+  display: flex;
+  justify-content: center;
+  padding: 2px;
   position: absolute;
   right: 0;
   top: 0;
@@ -100031,4 +100037,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a20a0b5f1a9e348f.css.map*/
+/*# sourceMappingURL=12633.16b1600352422b5f.css.map*/
