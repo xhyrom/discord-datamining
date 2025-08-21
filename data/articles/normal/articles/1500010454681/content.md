@@ -202,9 +202,8 @@
 </p>
 <h1 id="h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</h1>
 <h3 id="h_01HE6D3J3HBA9E0MHQSBGQB0MV">
-  This feature is rolling out slowly to all Discord users on a Windows
-  device.<br />Please note that this setting will only appear for Windows users.
-  It will not show up for MacOS, iOS, and Android users.
+  Please note that this setting will only appear for Windows users. It will not
+  show up for MacOS, iOS, and Android users.
 </h3>
 <p id="docs-internal-guid-50da16a3-7fff-cc3e-075c-86f00f56b2f0">
   If you’re on a Windows device, you can
