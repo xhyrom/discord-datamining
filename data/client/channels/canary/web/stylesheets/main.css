@@ -1685,6 +1685,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .stack_dbd263 {
   display: flex;
+}
+.stack_dbd263[data-full-width="true"] {
   width: 100%;
 }
 .stack_dbd263[data-direction="vertical"] {
@@ -2194,24 +2196,30 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   min-height: 22px;
   min-width: 22px;
 }
-.xs__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+.xs__6af3a.hasText__6af3a {
   min-width: 60px;
+}
+.xs__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
   padding: calc(var(--space-4) - 1px) calc(var(--space-8) - 1px);
 }
 .sm__6af3a .buttonChildrenWrapper__6af3a {
   min-height: 30px;
   min-width: 30px;
 }
-.sm__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+.sm__6af3a.hasText__6af3a {
   min-width: 60px;
+}
+.sm__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
   padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px);
 }
 .md__6af3a .buttonChildrenWrapper__6af3a {
   min-height: 38px;
   min-width: 38px;
 }
-.md__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
+.md__6af3a.hasText__6af3a {
   min-width: 100px;
+}
+.md__6af3a.hasText__6af3a .buttonChildrenWrapper__6af3a {
   padding: calc(var(--space-8) - 1px) calc(var(--space-16) - 1px);
 }
 .spinnerItem__6af3a {
@@ -2454,7 +2462,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   width: -moz-min-content;
   width: min-content;
 }
-.fullWidth__6af3a {
+.fullWidth__6af3a.hasText__6af3a {
   flex: 1;
   width: 100%;
 }
@@ -10505,24 +10513,30 @@ svg.radioIcon_c1e9c4 {
   min-height: 22px;
   min-width: 22px;
 }
-.xs__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
+.xs__0f084.hasText__0f084 {
   min-width: 60px;
+}
+.xs__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
   padding: calc(var(--space-4) - 1px) calc(var(--space-8) - 1px);
 }
 .sm__0f084 .buttonChildrenWrapper__0f084 {
   min-height: 30px;
   min-width: 30px;
 }
-.sm__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
+.sm__0f084.hasText__0f084 {
   min-width: 60px;
+}
+.sm__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
   padding: calc(var(--space-4) - 1px) calc(var(--space-12) - 1px);
 }
 .md__0f084 .buttonChildrenWrapper__0f084 {
   min-height: 38px;
   min-width: 38px;
 }
-.md__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
+.md__0f084.hasText__0f084 {
   min-width: 100px;
+}
+.md__0f084.hasText__0f084 .buttonChildrenWrapper__0f084 {
   padding: calc(var(--space-8) - 1px) calc(var(--space-16) - 1px);
 }
 .spinnerItem__0f084 {
@@ -10765,7 +10779,7 @@ svg.radioIcon_c1e9c4 {
   width: -moz-min-content;
   width: min-content;
 }
-.fullWidth__0f084 {
+.fullWidth__0f084.hasText__0f084 {
   flex: 1;
   width: 100%;
 }
@@ -12640,6 +12654,7 @@ svg.radioIcon_c1e9c4 {
 :where(.container__73454) {
   --custom-gradient-color-start: var(--blurple-50);
   --custom-gradient-color-end: var(--blurple-50);
+  --custom-gradient-offset-bottom: 0%;
   position: relative;
 }
 :where(.container__73454):before {
@@ -12649,7 +12664,7 @@ svg.radioIcon_c1e9c4 {
     var(--custom-gradient-color-start) 100%
   );
   border-radius: inherit;
-  bottom: 0;
+  bottom: var(--custom-gradient-offset-bottom);
   content: "";
   display: block;
   left: 0;
@@ -37068,6 +37083,7 @@ body .headerAnimation_b54a5b {
   border-radius: 0 0 11px 11px !important;
   box-sizing: border-box;
   max-height: 64px;
+  overflow: hidden;
   padding-bottom: var(--space-24) !important;
 }
 .discountColor_e125f1 {
@@ -37076,6 +37092,7 @@ body .headerAnimation_b54a5b {
 .discountFooterText_e125f1 {
   color: var(--black);
   margin-right: auto;
+  min-width: 190px;
 }
 .shopPageContainer__4485d {
   margin-top: 80px;
@@ -76776,7 +76793,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99849,4 +99866,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b16953721992833e.css.map*/
+/*# sourceMappingURL=12633.ee04ec852b219456.css.map*/
