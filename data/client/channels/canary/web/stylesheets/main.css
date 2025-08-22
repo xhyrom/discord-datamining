@@ -43074,19 +43074,25 @@ img.thumbnail__0f2e8 {
   padding: var(--space-16);
 }
 .breadcrumb_c2a763 {
+  align-items: center;
   border-radius: var(--radius-xs);
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
   height: 24px;
   justify-content: space-between;
   padding: 8px;
 }
-.breadcrumb_c2a763,
+.breadcrumb_c2a763:hover {
+  background-color: var(--user-profile-overlay-background-hover);
+}
+.mdPadding_c2a763 {
+  padding: 12px;
+}
 .icons_c2a763 {
   align-items: center;
   display: flex;
   flex-direction: row;
-}
-.icons_c2a763 {
   gap: 4px;
 }
 .icon_c2a763 {
@@ -100480,4 +100486,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e1ae15f5ba51ca0c.css.map*/
+/*# sourceMappingURL=12633.e94a12aa2be7da8a.css.map*/
