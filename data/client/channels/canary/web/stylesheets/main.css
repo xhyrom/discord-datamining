@@ -20359,10 +20359,10 @@ svg.radioIcon_c1e9c4 {
 }
 .childContainer__91a9d {
   border-radius: inherit;
-  padding: 0 8px;
+  padding: 0 8px 0 var(--space-xs);
 }
 .childContainer__91a9d.nameplated__91a9d {
-  padding-right: 36px;
+  padding-right: 32px;
   position: relative;
 }
 .muted__91a9d .avatar__91a9d {
@@ -23996,7 +23996,7 @@ div.modalHeader_c28af8 {
 .memberInner__5d473 {
   box-sizing: border-box;
   height: auto;
-  padding: var(--space-xxs) var(--space-16) var(--space-xxs) var(--space-xs);
+  padding: var(--space-xxs) 0 var(--space-xxs);
 }
 .offline__5d473 {
   opacity: 0.3;
@@ -77482,7 +77482,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -80001,7 +80001,9 @@ html.disable-forced-colors * {
   padding: 0 var(--custom-client-themes-editor-editor-padding);
 }
 .editorFooterV2_cf6da1 {
+  box-sizing: border-box;
   gap: 12px;
+  max-width: 268px;
 }
 .closeCircleButton_cf6da1 {
   cursor: pointer;
@@ -100471,4 +100473,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2e14aaa87edaf1f2.css.map*/
+/*# sourceMappingURL=12633.c251334af367f352.css.map*/
