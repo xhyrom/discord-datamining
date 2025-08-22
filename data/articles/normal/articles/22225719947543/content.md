@@ -72,7 +72,11 @@
         </li>
       </ul>
     </li>
-    <li><a href="#h_01JVDE7SJ7RDVYTXVFDR73AQRG">Quests Daily Caps</a></li>
+    <li>
+      <a href="#h_01JVDE7SJ7RDVYTXVFDR73AQRG"
+        ><strong>Quests Daily Caps</strong></a
+      >
+    </li>
     <li>
       <a href="#h_01HVPBZR5FBM7QBFR9KDBASXP5"
         ><strong>Frequently Asked Questions</strong></a

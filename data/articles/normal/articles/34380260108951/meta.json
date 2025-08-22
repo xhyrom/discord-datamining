@@ -1,0 +1,28 @@
+{
+  "id": 34380260108951,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/34380260108951.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/34380260108951-Unauthorized-Transactions-Suspension-FAQ",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436411,
+  "created_at": "2025-08-22T19:24:53Z",
+  "name": "Unauthorized Transactions Suspension FAQ",
+  "title": "Unauthorized Transactions Suspension FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-08-22T19:26:41Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "suspension",
+    "unauthorized transaction suspension",
+    "unauthorized transaction",
+    "discord unauthorized transaction"
+  ]
+}
