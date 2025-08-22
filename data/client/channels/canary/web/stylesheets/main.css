@@ -77487,7 +77487,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -77737,51 +77737,6 @@ h2.title_feb59c {
 }
 .closeButtonIcon_b425c1 {
   align-self: center;
-}
-.container__6e9b4 {
-  align-items: center;
-  background: var(--bg-surface-overlay);
-  border: 1px solid var(--border-subtle, rgba(0, 0, 0, 0.08));
-  border-radius: 12px;
-  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  pointer-events: all;
-  position: relative;
-  width: 256px;
-  z-index: 1000;
-}
-.coachmarkPointer__6e9b4 {
-  border-right-color: var(--bg-surface-overlay);
-}
-.title__6e9b4 {
-  color: var(--header-primary);
-  line-height: 20px;
-}
-.description__6e9b4 {
-  color: var(--header-secondary);
-  line-height: 18px;
-  text-align: center;
-}
-.orbAsset__6e9b4 {
-  height: 80px;
-}
-.content__6e9b4 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.content__6e9b4,
-.ctaButton__6e9b4 {
-  margin-top: 12px;
-  width: 100%;
-}
-.ctaButton__6e9b4 {
-  border-radius: 8px;
-  height: 40px;
 }
 .tail__6e9b4 {
   align-items: center;
@@ -100521,4 +100476,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.431dc097fe093b9b.css.map*/
+/*# sourceMappingURL=12633.e26c833e3e9ba553.css.map*/
