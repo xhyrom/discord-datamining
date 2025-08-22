@@ -4219,12 +4219,13 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
-            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r) =>
+            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
                 .concat(e, "&load_id=")
                 .concat(a)
-                .concat(r ? "&payment_method_type=".concat(r) : ""),
+                .concat(null != r ? "&payment_method_type=".concat(r) : "")
+                .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
             GUILD_BOOSTING_MARKETING: (t) =>
               "/guilds/".concat(t, "/premium-guild-subscriptions"),
             GUILD_SETTINGS: (t, e, a) => {
@@ -6973,7 +6974,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-9c63ef8ed476bbdc7f69b2eff089cff2fbb4f0d8",
+            release: "discord_web-ad9ecf50b72bdca3583935dec0e75b92e480a4fb",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7039,8 +7040,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "436134"),
-            o.YA("builtAt", String("1755891388217"));
+            o.YA("buildNumber", "436136"),
+            o.YA("builtAt", String("1755891728353"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48484,4 +48485,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ec20a6871bdf73ca.js.map
+//# sourceMappingURL=sentry.70e20abfe6128a4c.js.map
