@@ -3357,12 +3357,6 @@
               "/users/@me/billing/stripe/payment-intents/payments/".concat(t),
             BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID: (t) =>
               "/users/@me/billing/stripe/payment-intents/".concat(t),
-            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r) =>
-              "/billing/premium/subscribe?plan_id="
-                .concat(t, "&gift=")
-                .concat(e, "&load_id=")
-                .concat(a)
-                .concat(r ? "&payment_method_type=".concat(r) : ""),
             BILLING_STANDALONE_CHECKOUT_LOGIN_HANDOFF: (t, e, a) =>
               ""
                 .concat(
@@ -4225,6 +4219,12 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
+            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r) =>
+              "/billing/premium/subscribe?plan_id="
+                .concat(t, "&gift=")
+                .concat(e, "&load_id=")
+                .concat(a)
+                .concat(r ? "&payment_method_type=".concat(r) : ""),
             GUILD_BOOSTING_MARKETING: (t) =>
               "/guilds/".concat(t, "/premium-guild-subscriptions"),
             GUILD_SETTINGS: (t, e, a) => {
@@ -6962,7 +6962,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-21-7396f1943ae632a85c76de7ac2f611867b10e1c9-discord_web",
+              "2025-08-22-5de590ae6d52c6995d3562bf036cd31f898fff65-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7028,8 +7028,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "435396"),
-            o.YA("builtAt", String("1755801422383"));
+            o.YA("buildNumber", "435877"),
+            o.YA("builtAt", String("1755847146600"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -18163,6 +18163,12 @@
             r.I.OPACITY_36,
             r.I.OPACITY_32,
             r.I.OPACITY_20,
+          ],
+          "input-border-read-only": [
+            r.I.OPACITY_WHITE_8,
+            r.I.OPACITY_BLACK_4,
+            r.I.OPACITY_WHITE_12,
+            r.I.OPACITY_WHITE_8,
           ],
           "input-error-background": [
             r.I.RED_500,
@@ -48467,4 +48473,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8a72e206b2b7fa2c.js.map
+//# sourceMappingURL=sentry.bd79baa58d5b10c5.js.map
