@@ -12773,14 +12773,13 @@ svg.radioIcon_c1e9c4 {
 }
 .childContainer__3e3b0 {
   align-items: center;
-  bottom: 0;
   display: flex;
   justify-content: center;
-  left: 0;
+  left: 50%;
   pointer-events: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 :where(.redesignIconChildContainer__3e3b0) > svg {
   height: 10px;
@@ -12804,10 +12803,6 @@ svg.radioIcon_c1e9c4 {
 }
 .staff__09691 {
   color: var(--icon-tertiary);
-}
-.staff__09691 .icon__09691 {
-  height: 60%;
-  width: 60%;
 }
 .partnered__09691 {
   color: var(--brand-500);
@@ -100476,4 +100471,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e26c833e3e9ba553.css.map*/
+/*# sourceMappingURL=12633.2e14aaa87edaf1f2.css.map*/
