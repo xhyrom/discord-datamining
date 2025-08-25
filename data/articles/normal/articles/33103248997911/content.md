@@ -102,11 +102,17 @@
   >
 </p>
 <p>
-  2. Select "<strong>I do not recognize a charge on my Discord account</strong>"
+  2. Under <strong>Type of Billing Issue?</strong>, select
+  <strong
+    >“I have a question/issue regarding an unauthorized transaction”</strong
+  >
+</p>
+<p>
+  3. Select "<strong>I do not recognize a charge on my Discord account</strong>"
   under the <strong>Type of Issue</strong> category
 </p>
 <p>
-  3. Select "<strong>Yes</strong>" when asked if you're using the email address
+  4. Select "<strong>Yes</strong>" when asked if you're using the email address
   linked to your Discord account
 </p>
 <h2 id="h_01JYSBBFRQJD4Z7EH243WY203Y">
@@ -126,15 +132,21 @@
   >
 </p>
 <p>
-  2. Select "<strong>I do not recognize a charge on my Discord account</strong>"
+  2. Under <strong>Type of Billing Issue?</strong>, select
+  <strong
+    >“I have a question/issue regarding an unauthorized transaction”</strong
+  >
+</p>
+<p>
+  3. Select "<strong>I do not recognize a charge on my Discord account</strong>"
   under the <strong>Type of Issue</strong> category
 </p>
 <p>
-  3. Select "<strong>No</strong>" when asked if you're using the email address
+  4. Select "<strong>No</strong>" when asked if you're using the email address
   linked to your Discord account
 </p>
 <p>
-  4. Select "<strong>No</strong>" again when asked if you can submit a ticket
+  5. Select "<strong>No</strong>" again when asked if you can submit a ticket
   from your Discord account's email
 </p>
 <h2 id="h_01JYSBBFRTSB93C8CEYSZQSPM7">
