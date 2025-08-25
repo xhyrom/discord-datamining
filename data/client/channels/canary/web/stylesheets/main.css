@@ -29695,6 +29695,10 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .newLine__1464f {
   display: inline-block;
 }
+.gameMention__1464f {
+  display: inline-flex;
+  margin: -4px 0 -8px;
+}
 .inlineFlex__1464f {
   display: inline-flex;
   margin: 0;
@@ -76934,7 +76938,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99925,4 +99929,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.35c36f1da89251a6.css.map*/
+/*# sourceMappingURL=12633.c63c02b8730425ce.css.map*/
