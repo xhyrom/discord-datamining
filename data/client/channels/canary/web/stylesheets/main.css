@@ -49847,10 +49847,6 @@ h3.improved__1689b:after {
   display: flex;
   gap: 8px;
 }
-.secondaryBtn__4909b {
-  background-color: var(--button-secondary-background);
-  color: var(--white);
-}
 .details__4909b {
   padding-bottom: 16px;
 }
@@ -76938,7 +76934,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99929,4 +99925,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.03ebe6f7a8a465fe.css.map*/
+/*# sourceMappingURL=12633.6a9b82d0e9ce57b6.css.map*/
