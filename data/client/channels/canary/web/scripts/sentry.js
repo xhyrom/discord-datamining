@@ -4050,12 +4050,6 @@
             VOICE_MATCH_PUBLIC_KEY: (t) =>
               "/voice/".concat(t, "/match-public-key"),
             ACCOUNT_REVERT: "/auth/revert",
-            GUILD_LEADERBOARD: (t, e) =>
-              "/guilds/".concat(t, "/leaderboards/").concat(e),
-            UPDATE_MY_LOL_LEADERBOARD: () =>
-              "/users/@me/update-league-of-legends-leaderboard",
-            GUILD_LEADERBOARD_SETTINGS: (t, e) =>
-              "/guilds/".concat(t, "/leaderboards/").concat(e, "/settings"),
             VIRTUAL_CURRENCY_SKU_REDEEM: (t) =>
               "/virtual-currency/skus/".concat(t, "/redeem"),
             VIRTUAL_CURRENCY_USER_BALANCE:
@@ -6122,13 +6116,6 @@
           (r.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED = "ranking_items_seen"),
           (r.RANKING_ITEM_INTERACTED_MUST_BE_SAMPLED =
             "ranking_item_interacted"),
-          (r.LEADERBOARD_MEMBERLIST_CARD_VIEWED =
-            "leaderboard_memberlist_card_viewed"),
-          (r.LEADERBOARD_POPOUT_VIEWED = "leaderboard_popout_viewed"),
-          (r.LEADERBOARD_USER_DATA_REFRESH_REQUESTED =
-            "leaderboard_user_data_refresh_requested"),
-          (r.LEADERBOARD_USER_OPT_OUT_UPDATED =
-            "leaderboard_user_opt_out_updated"),
           (r.LEAGUE_OF_LEGENDS_MATCH_DATA_NOT_FETCHING =
             "league_of_legends_match_data_not_fetching"),
           (r.GAME_PROFILE_ACTION = "game_profile_action"),
@@ -6977,7 +6964,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-0d71fa59ccbdd4a84b5a8e876e8e792e50e34bf7",
+            release: "discord_web-997fe5c2e9eb27cfa796295755ff5b5f7c7f9f6a",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7043,8 +7030,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "436748"),
-            o.YA("builtAt", String("1756150592013"));
+            o.YA("buildNumber", "436755"),
+            o.YA("builtAt", String("1756150901921"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48488,4 +48475,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.cee5f218a23fa22f.js.map
+//# sourceMappingURL=sentry.499dce076bf8f519.js.map
