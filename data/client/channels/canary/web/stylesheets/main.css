@@ -20545,6 +20545,10 @@ svg.radioIcon_c1e9c4 {
   text-overflow: ellipsis;
   white-space: var(--custom-display-name-styles-wrap);
 }
+.innerContainer_dfb989.chicle_dfb989 {
+  margin: -0.05em;
+  padding: 0.05em;
+}
 .underlineOnHover_dfb989:not(.pop_dfb989):hover {
   text-decoration: underline;
   -webkit-text-decoration-color: var(--custom-display-name-styles-main-color);
@@ -100486,4 +100490,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e94a12aa2be7da8a.css.map*/
+/*# sourceMappingURL=12633.4e56187288eb65a4.css.map*/
