@@ -75860,15 +75860,9 @@ html .invoiceCancelRow__968a4 {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-bottom: 20px;
-}
-.soundboardRow__16280.refresh__16280 {
-  margin-bottom: auto;
 }
 .guildSelector_c3d948 {
   margin-bottom: 0;
-}
-.guildSelector_c3d948.refreshGuildSelector_c3d948 {
   margin-top: 0;
 }
 .nitroWheel_c3d948 {
@@ -76153,7 +76147,7 @@ html .invoiceCancelRow__968a4 {
 .cameraDeeplink_f22a74 {
   margin-top: var(--space-8);
 }
-.cameraWrapper_d41d5f {
+.cameraWrapper__11e1f {
   align-items: center;
   background-color: var(--background-base-lower);
   border: 1px solid var(--background-base-lowest);
@@ -76165,21 +76159,9 @@ html .invoiceCancelRow__968a4 {
   position: relative;
   width: 100%;
 }
-.camera_d41d5f {
+.camera__11e1f {
   position: relative;
   transform: scaleX(-1);
-}
-.previewImage_d41d5f {
-  background-size: 100%;
-  height: 101px;
-  margin-bottom: 24px;
-  width: 166px;
-}
-.images-light .previewImage_d41d5f {
-  background-image: url(/assets/80c3a77ad82be6d1.svg);
-}
-.images-dark .previewImage_d41d5f {
-  background-image: url(/assets/f54b4f5f28c049e1.svg);
 }
 .deviceOptionCertified_fe5040 {
   flex-shrink: 0;
@@ -76312,9 +76294,6 @@ html .invoiceCancelRow__968a4 {
 }
 .column__7072d {
   flex: 1 1 50%;
-}
-.systemServiceUpsell_b4258e {
-  margin-bottom: 30px;
 }
 .container_cc79ae {
   display: flex;
@@ -99930,4 +99909,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.113c451e19ec958a.css.map*/
+/*# sourceMappingURL=12633.7fa80aecb87ba1a7.css.map*/
