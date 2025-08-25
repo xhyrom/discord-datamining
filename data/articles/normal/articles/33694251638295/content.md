@@ -29,7 +29,10 @@
 <h1 id="h_01K0YRW1WNXGTMED3AZE0K6JBE">Account Caps</h1>
 <div>
   <figure class="wysiwyg-table">
-    <table class="wysiwyg-table-resized">
+    <table
+      style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
+    >
       <colgroup>
         <col style="width: 25%" />
         <col style="width: 26%" />
@@ -199,7 +202,10 @@
   >
 </div>
 <figure class="wysiwyg-table">
-  <table class="wysiwyg-table-resized">
+  <table
+    style="margin-left: 0px; margin-right: auto"
+    class="wysiwyg-table-resized"
+  >
     <colgroup>
       <col style="width: 27%" />
       <col style="width: 18%" />
@@ -506,7 +512,10 @@
 </div>
 <div>
   <figure class="wysiwyg-table">
-    <table class="wysiwyg-table-resized">
+    <table
+      style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
+    >
       <colgroup>
         <col style="width: 31%" />
         <col style="width: 18%" />
@@ -614,7 +623,10 @@
 </div>
 <div>
   <figure class="wysiwyg-table">
-    <table class="wysiwyg-table-resized">
+    <table
+      style="margin-left: 0px; margin-right: auto"
+      class="wysiwyg-table-resized"
+    >
       <colgroup>
         <col style="width: 20%" />
         <col style="width: 20%" />
