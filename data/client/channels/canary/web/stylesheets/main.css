@@ -50828,8 +50828,9 @@ h3.improved__1689b:after {
 .churnDiscountBannerDetails__32fe3 {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   height: 100%;
+  max-width: 420px;
   padding-right: 12px;
 }
 .churnDiscountBannerBackground__32fe3 {
@@ -50857,13 +50858,14 @@ h3.improved__1689b:after {
 .churnDiscountBannerImage__32fe3 {
   max-height: 140px;
   max-width: 250px;
+  padding-left: 20px;
 }
 .activeSubButtons__32fe3 {
   display: flex;
   gap: 8px;
 }
 .churnDiscountBannerButton__32fe3 {
-  margin-top: 6px;
+  margin-top: 12px;
   position: relative;
 }
 .churnDiscountPill__32fe3 {
@@ -54507,6 +54509,9 @@ h3.improved__1689b:after {
   margin: var(--space-16) 0;
   opacity: 0.1;
   z-index: 0;
+}
+.firstFeatureItemContainer__6df1a {
+  max-width: 250px;
 }
 .featureItem__6df1a {
   align-items: center;
@@ -65617,7 +65622,7 @@ html .progress__61462 {
   z-index: 1;
 }
 .buttonContainer_d38e00 {
-  background-color: var(--background-surface-higher);
+  background-color: var(--background-surface-highest);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-low);
   display: flex;
@@ -65648,6 +65653,7 @@ html .progress__61462 {
   display: flex;
   gap: var(--space-4);
   justify-content: center;
+  margin-bottom: var(--space-4);
 }
 .table_cbfae2 {
   display: flex;
@@ -77425,7 +77431,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100416,4 +100422,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.81d21a2a46236e68.css.map*/
+/*# sourceMappingURL=12633.bdc5caece009664b.css.map*/
