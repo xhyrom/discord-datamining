@@ -20542,7 +20542,8 @@ svg.radioIcon_c1e9c4 {
   text-overflow: ellipsis;
   white-space: var(--custom-display-name-styles-wrap);
 }
-.innerContainer_dfb989.chicle_dfb989 {
+.innerContainer_dfb989.chicle_dfb989.gradient_dfb989,
+.innerContainer_dfb989.chicle_dfb989.solid_dfb989 {
   margin: -0.05em;
   padding: 0.05em;
 }
@@ -99929,4 +99930,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c63c02b8730425ce.css.map*/
+/*# sourceMappingURL=12633.113c451e19ec958a.css.map*/
