@@ -40743,13 +40743,6 @@ img.thumbnail__0f2e8 {
   margin: 2px;
   width: 100%;
 }
-.button__7d567 {
-  font-size: 14px;
-}
-.buttonSize__7d567 {
-  height: 32px;
-  min-height: 32px;
-}
 .reactions__5ba62 {
   flex-direction: row;
   flex-wrap: wrap;
@@ -74064,54 +74057,6 @@ div.nagbar_d74ef8 {
 .activityStreamPreview__2ef49 .nameNormal__2ef49 {
   color: var(--header-primary);
 }
-.flex__08d32 {
-  align-items: center;
-  display: flex;
-}
-.platformIcon__08d32 {
-  height: 20px;
-  margin-right: 8px;
-  object-fit: contain;
-  position: relative;
-  width: 20px;
-}
-.button__6e0e0 {
-  flex: 0;
-  margin-top: 8px;
-}
-.playButtonInner__2024e {
-  display: flex;
-  gap: 8px;
-}
-.syncButton__2024e {
-  height: 32px;
-  width: 32px;
-}
-.syncButtonInner__2024e {
-  max-height: 16px;
-  max-width: 16px;
-  min-height: 16px;
-  min-width: 16px;
-}
-.streamIcon__43481 {
-  height: 16px;
-  margin-right: 5px;
-  vertical-align: bottom;
-  width: 16px;
-}
-.iconButton__43481 {
-  line-height: 0;
-  margin-left: 8px;
-  padding: 0;
-}
-.iconButtonSize__43481 {
-  max-width: 32px;
-  min-width: 32px;
-}
-.iconSize__43481 {
-  height: 24px;
-  width: 24px;
-}
 .buttonsWrapper__65bb6 {
   flex: 0 1 auto;
   margin-top: 12px;
@@ -74223,10 +74168,6 @@ div.nagbar_d74ef8 {
   position: absolute;
   top: 8px;
 }
-.watchButtonInner__6da2d {
-  align-items: center;
-  display: flex;
-}
 .liveIcon__6da2d {
   margin-right: 8px;
 }
@@ -74243,26 +74184,11 @@ div.nagbar_d74ef8 {
 .theme-dark .applicationName__6da2d {
   color: var(--primary-100);
 }
-.theme-dark .watchButton__6da2d {
-  border-color: var(--primary-400);
-}
-.theme-dark .watchButton__6da2d:not([disabled]):hover {
-  border-color: var(--white-500);
-}
 .theme-dark .previewHover__6da2d {
   background: var(--opacity-black-60);
 }
-.theme-light .watchButton__6da2d {
-  border-color: var(--primary-360);
-}
-.theme-light .watchButton__6da2d:not([disabled]):hover {
-  border-color: var(--primary-660);
-}
 .theme-light .previewHover__6da2d {
   background: hsl(var(--primary-500-hsl) / 0.6);
-}
-.watchButton__6da2d {
-  color: var(--text-default);
 }
 .container__394db {
   align-items: center;
@@ -100490,4 +100416,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.4e56187288eb65a4.css.map*/
+/*# sourceMappingURL=12633.9eec31fd66c80030.css.map*/
