@@ -654,5 +654,21 @@
     "outdated": false,
     "parent_section_id": null,
     "theme_template": "section_page"
+  },
+  {
+    "id": 360007875131,
+    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/sections/360007875131.json",
+    "html_url": "https://support.discord.com/hc/en-us/sections/360007875131-Account-Customization",
+    "category_id": 200404358,
+    "position": 6,
+    "sorting": "manual",
+    "created_at": "2020-02-01T01:58:01Z",
+    "name": "Account Customization",
+    "description": "",
+    "locale": "en-us",
+    "source_locale": "en-us",
+    "outdated": false,
+    "parent_section_id": null,
+    "theme_template": "section_page"
   }
 ]
