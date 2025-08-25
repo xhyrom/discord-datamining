@@ -10878,9 +10878,6 @@ svg.radioIcon_c1e9c4 {
   right: 4px;
   top: 4px;
 }
-.colorPickerSwatch__459fb .colorPickerDropperFg__459fb {
-  fill: var(--text-default);
-}
 .suggestedColors__459fb {
   display: flex;
   flex-wrap: wrap;
@@ -99932,4 +99929,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1475e00996d1122b.css.map*/
+/*# sourceMappingURL=12633.2d714dbacf5717af.css.map*/
