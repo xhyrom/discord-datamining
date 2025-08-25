@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "username",
     "answer-bot",
     "new username",
-    "discriminator",
     "friend nickname",
+    "username",
     "display name",
+    "discriminator",
     "custom tag",
     "server nickname"
   ]

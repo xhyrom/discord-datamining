@@ -20,18 +20,18 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "servers",
-    "create",
-    "channel",
-    "video",
-    "New User",
-    "how to",
     "answer-bot",
+    "New User",
+    "new",
+    "how to",
+    "servers",
+    "channel",
+    "text",
+    "video",
+    "audio",
     "basic",
     "beginner",
-    "audio",
-    "new",
-    "text",
-    "start"
+    "start",
+    "create"
   ]
 }

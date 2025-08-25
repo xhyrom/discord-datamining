@@ -20,11 +20,11 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "featured",
+    "answer-bot",
     "sync",
     "channel",
-    "answer-bot",
     "category",
+    "featured",
     "collapse syncing"
   ]
 }

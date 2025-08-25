@@ -20,13 +20,13 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "server invite",
     "servers",
+    "server",
+    "server invite",
     "create",
     "channel",
     "answer-bot",
-    "server",
-    "template",
-    "server template"
+    "server template",
+    "template"
   ]
 }

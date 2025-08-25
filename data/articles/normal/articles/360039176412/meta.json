@@ -23,8 +23,8 @@
     "roles",
     "role",
     "mention",
-    "permissions",
     "mentions",
+    "permissions",
     "answer-bot"
   ]
 }

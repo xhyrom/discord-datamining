@@ -22,10 +22,10 @@
   "label_names": [
     "answer-bot",
     "phone",
-    "phone verification",
-    "remove number",
     "remove a phone number",
     "accidental account",
+    "phone verification",
+    "remove number",
     "unknown number"
   ]
 }

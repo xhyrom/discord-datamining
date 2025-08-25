@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "server invite",
     "answer-bot",
+    "server invite",
+    "server invite background",
     "server boost",
-    "SERVER BOOSTING",
-    "server invite background"
+    "SERVER BOOSTING"
   ]
 }

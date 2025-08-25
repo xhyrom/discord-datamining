@@ -20,11 +20,11 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
+    "answer-bot",
     "bot",
     "bots",
-    "webhook",
     "Twitch",
     "Twitch Sync",
-    "answer-bot"
+    "webhook"
   ]
 }

@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "answer-bot",
     "roles",
-    "admin",
     "role",
     "role color",
-    "permissions",
     "Server",
-    "answer-bot",
     "server",
     "view",
     "permission",
-    "perms"
+    "perms",
+    "permissions",
+    "admin"
   ]
 }

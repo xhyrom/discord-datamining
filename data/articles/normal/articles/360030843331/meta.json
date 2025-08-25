@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "community",
     "answer-bot",
-    "community server",
-    "discovery",
+    "enable server discovery",
+    "community",
     "discovery guidelines",
+    "enabling community",
     "server discovery",
     "Server Discovery",
-    "enable server discovery",
     "disable community",
-    "enabling community"
+    "community server",
+    "discovery"
   ]
 }

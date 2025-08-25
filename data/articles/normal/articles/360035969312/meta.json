@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "servers",
-    "community",
-    "Server",
-    "answer-bot",
     "Trust & Safety",
     "public server",
-    "Community Server"
+    "servers",
+    "Server",
+    "answer-bot",
+    "Community Server",
+    "community"
   ]
 }

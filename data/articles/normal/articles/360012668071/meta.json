@@ -20,15 +20,15 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "Nitro",
     "answer-bot",
-    "server boost",
-    "apple",
+    "Nitro",
     "refund",
+    "Apple purchases",
+    "apple",
+    "server boost",
     "iOS App Store purchases",
     "in-app purchases",
     "server subscriptions refund",
-    "premium app subscription refund",
-    "Apple purchases"
+    "premium app subscription refund"
   ]
 }

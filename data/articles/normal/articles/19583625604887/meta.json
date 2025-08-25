@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "voice",
-    "answer-bot",
-    "voice channels",
     "voice channel status",
-    "voice chat"
+    "voice chat",
+    "voice channels",
+    "voice",
+    "answer-bot"
   ]
 }

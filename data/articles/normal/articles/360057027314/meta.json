@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "server invite",
-    "servers",
-    "new server",
-    "community",
-    "New User",
+    "answer-bot",
     "League",
     "League of Legends",
-    "answer-bot",
-    "beginner",
+    "community",
     "communities",
-    "new"
+    "servers",
+    "server invite",
+    "beginner",
+    "new",
+    "new server",
+    "New User"
   ]
 }

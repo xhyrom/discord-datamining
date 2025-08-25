@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "avatar",
-    "Nitro",
     "answer-bot",
     "server avatar",
+    "avatar",
+    "Nitro",
     "account customization",
     "avatar decorations",
     "profile effects",
-    "decoration",
-    "personalize",
     "profiles",
-    "effect"
+    "decoration",
+    "effect",
+    "personalize"
   ]
 }

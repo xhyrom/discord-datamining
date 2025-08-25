@@ -21,20 +21,20 @@
   "content_tag_ids": [],
   "label_names": [
     "coronavirus",
-    "alert-en-us",
+    "alert-fr",
     "alert-de",
+    "alert-en-us",
     "alert-da",
     "alert-es",
+    "alert-ja",
     "alert-it",
     "alert-ko",
+    "alert-pt-br",
+    "alert-ru",
     "alert-nl",
     "alert-pl",
     "alert-sv",
     "alert-tr",
-    "alert-zh-tw",
-    "alert-fr",
-    "alert-ja",
-    "alert-pt-br",
-    "alert-ru"
+    "alert-zh-tw"
   ]
 }
