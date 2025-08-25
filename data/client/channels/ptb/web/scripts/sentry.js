@@ -4219,12 +4219,13 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
-            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r) =>
+            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
                 .concat(e, "&load_id=")
                 .concat(a)
-                .concat(r ? "&payment_method_type=".concat(r) : ""),
+                .concat(null != r ? "&payment_method_type=".concat(r) : "")
+                .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
             GUILD_BOOSTING_MARKETING: (t) =>
               "/guilds/".concat(t, "/premium-guild-subscriptions"),
             GUILD_SETTINGS: (t, e, a) => {
@@ -5042,6 +5043,8 @@
           (r.QUEST_THIRD_PARTY_LINK_CLICKED = "quest_third_party_link_clicked"),
           (r.DISCOVERY_QUEST_TAB_CLICKED = "discovery_quest_tab_clicked"),
           (r.QUEST_BAR_RENDER_DELAY = "quest_bar_render_delay"),
+          (r.QUEST_HOME_SORT_METHOD_CHANGED = "quest_home_sort_method_changed"),
+          (r.QUEST_HOME_FILTERS_CHANGED = "quest_home_filters_changed"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -6352,6 +6355,18 @@
             "nitro_privatebrowsing_surveyresponded"),
           (r.EMOJI_STUDIO_ENDED = "emoji_studio_ended"),
           (r.PASSWORD_RESET_ACTION = "password_reset_action"),
+          (r.GUILD_CHANNEL_RESYNC_REQUESTED = "guild_channel_resync_requested"),
+          (r.GUILD_CHANNEL_RESYNC_EXECUTED = "guild_channel_resync_executed"),
+          (r.GUILD_CHANNEL_RESYNC_COMPLETED = "guild_channel_resync_completed"),
+          (r.GUILD_CHANNEL_RESYNC_FAILED = "guild_channel_resync_failed"),
+          (r.GUILD_CHANNEL_INTEGRITY_CHECK_REQUESTED =
+            "guild_channel_integrity_check_requested"),
+          (r.GUILD_CHANNEL_INTEGRITY_CHECK_EXECUTED =
+            "guild_channel_integrity_check_executed"),
+          (r.GUILD_CHANNEL_INTEGRITY_CHECK_COMPLETED =
+            "guild_channel_integrity_check_completed"),
+          (r.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED =
+            "guild_channel_integrity_check_failed"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6962,7 +6977,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-22-37376ba61afa0b889a2a39d48798a739b5012638-discord_web",
+              "2025-08-25-1f16ac00698b541b7a1a036632528c0ff2e59cf6-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7028,8 +7043,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "436230"),
-            o.YA("builtAt", String("1755897002289"));
+            o.YA("buildNumber", "436486"),
+            o.YA("builtAt", String("1756106332573"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48473,4 +48488,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.12dc7cad3d66edca.js.map
+//# sourceMappingURL=sentry.b252ebdd2ad59c77.js.map
