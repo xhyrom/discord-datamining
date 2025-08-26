@@ -42965,6 +42965,10 @@ div.mobilePushContainer__3d3b0 {
   grid-gap: 12px;
   align-items: start;
 }
+.activitySectionWithButtons__00943 {
+  grid-template-columns: 32px minmax(20px, auto) minmax(0, -webkit-max-content);
+  grid-template-columns: 32px minmax(20px, auto) minmax(0, max-content);
+}
 .activitySectionAssets__00943 {
   align-items: center;
   display: grid;
@@ -43048,6 +43052,14 @@ div.mobilePushContainer__3d3b0 {
 }
 .embeddedActivityIcon__00943 {
   margin-right: 8px;
+}
+.cloudPlaySectionSeparator__00943 {
+  margin: 12px 0 !important;
+}
+.cloudPlaySection__00943 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 @value minColumnWidth: 460px;
 .standardSidebarView__23e6b {
@@ -99755,4 +99767,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.6fb742b38a279927.css.map*/
+/*# sourceMappingURL=12633.ddd50d10c742f9c1.css.map*/
