@@ -31380,13 +31380,16 @@ body .headerAnimation_b54a5b {
 }
 .paymentModalLockIcon__9a648 {
   color: var(--primary-500);
-  padding: 0 var(--modal-horizontal-padding);
+  padding: 0 var(--space-16);
 }
 .theme-dark .paymentModalLockIcon__9a648 {
   color: var(--primary-300);
 }
 .lockIcon__9a648 {
   margin-right: 2px;
+}
+.lockIconText__9a648 {
+  white-space: nowrap;
 }
 .primaryIcon__962c6 {
   height: 16px;
@@ -37125,7 +37128,6 @@ body .headerAnimation_b54a5b {
 .discountFooterText_e125f1 {
   color: var(--black);
   margin-right: auto;
-  min-width: 190px;
 }
 .shopPageContainer__4485d {
   margin-top: 80px;
@@ -99906,4 +99908,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9a177c91e36e1897.css.map*/
+/*# sourceMappingURL=12633.441a7bda1c5ea6a0.css.map*/
