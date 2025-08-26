@@ -33,6 +33,13 @@
     </li>
   </ul>
 </div>
+<div class="exp-box">
+  <strong>Info: </strong
+  ><span style="color: #434343"
+    >The Server Tag Badge Packs are currently an experiment and only available
+    to select servers.</span
+  >
+</div>
 <h1 id="h_01JT6VKRAB9C1PW9Z7TAT24AAA">What are Server Tags?</h1>
 <p class="wysiwyg-text-align-center">
   <img
