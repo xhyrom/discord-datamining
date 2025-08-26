@@ -4050,12 +4050,6 @@
             VOICE_MATCH_PUBLIC_KEY: (t) =>
               "/voice/".concat(t, "/match-public-key"),
             ACCOUNT_REVERT: "/auth/revert",
-            GUILD_LEADERBOARD: (t, e) =>
-              "/guilds/".concat(t, "/leaderboards/").concat(e),
-            UPDATE_MY_LOL_LEADERBOARD: () =>
-              "/users/@me/update-league-of-legends-leaderboard",
-            GUILD_LEADERBOARD_SETTINGS: (t, e) =>
-              "/guilds/".concat(t, "/leaderboards/").concat(e, "/settings"),
             VIRTUAL_CURRENCY_SKU_REDEEM: (t) =>
               "/virtual-currency/skus/".concat(t, "/redeem"),
             VIRTUAL_CURRENCY_USER_BALANCE:
@@ -5958,6 +5952,7 @@
           (r.CUSTOM_THEMES_UPDATED = "custom_themes_updated"),
           (r.CUSTOM_THEMES_COACHMARK_NOT_SHOWN_REASON =
             "custom_themes_coachmark_not_shown_reason"),
+          (r.CUSTOM_THEMES_BANNER_CLICKED = "custom_themes_banner_clicked"),
           (r.GUILD_DROPDOWN_MENU_VIEWED = "guild_dropdown_menu_viewed"),
           (r.VOICE_MESSAGE_PLAYBACK_ENDED = "voice_message_playback_ended"),
           (r.VOICE_MESSAGE_PLAYBACK_FAILED = "voice_message_playback_failed"),
@@ -6121,13 +6116,6 @@
           (r.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED = "ranking_items_seen"),
           (r.RANKING_ITEM_INTERACTED_MUST_BE_SAMPLED =
             "ranking_item_interacted"),
-          (r.LEADERBOARD_MEMBERLIST_CARD_VIEWED =
-            "leaderboard_memberlist_card_viewed"),
-          (r.LEADERBOARD_POPOUT_VIEWED = "leaderboard_popout_viewed"),
-          (r.LEADERBOARD_USER_DATA_REFRESH_REQUESTED =
-            "leaderboard_user_data_refresh_requested"),
-          (r.LEADERBOARD_USER_OPT_OUT_UPDATED =
-            "leaderboard_user_opt_out_updated"),
           (r.LEAGUE_OF_LEGENDS_MATCH_DATA_NOT_FETCHING =
             "league_of_legends_match_data_not_fetching"),
           (r.GAME_PROFILE_ACTION = "game_profile_action"),
@@ -6977,7 +6965,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-25-c2543869da157803115f1cdaf11e97fb2245cb67-discord_web",
+              "2025-08-26-e17ce187bc8826c98aa4dfeb0c903784d20e0717-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7043,8 +7031,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "436889"),
-            o.YA("builtAt", String("1756157700812"));
+            o.YA("buildNumber", "437114"),
+            o.YA("builtAt", String("1756193253855"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48488,4 +48476,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1a42b11d5290b335.js.map
+//# sourceMappingURL=sentry.1bb49be1c3c6f206.js.map
