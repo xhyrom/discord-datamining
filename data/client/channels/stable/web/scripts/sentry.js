@@ -4213,6 +4213,8 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
+            BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: (t) =>
+              "/billing/premium/manage?deep_link_type=".concat(t),
             BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
@@ -4272,6 +4274,7 @@
             QUESTS: (t) => "/quests/".concat(t),
             ACCOUNT_REVERT: (t) => "/wasntme/".concat(t),
             POWERUP_STORE: (t) => "/channels/".concat(t, "/boosts"),
+            CONFERENCE_MODE: "/conference-mode",
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -4543,6 +4546,7 @@
             HIGHLIGHT_NOTIFICATIONS: "Highlight notification settings",
             QUESTS: "Quests",
             QUEST_PREVIEW_TOOL: "Quest Preview Tool",
+            QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
             QUEST_MINOR_REWARD_CAPPING_CONFIG:
               "Quest Minor Reward Capping Config",
             SECURE_FRAMES: "Secure Frames",
@@ -6965,7 +6969,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-26-e17ce187bc8826c98aa4dfeb0c903784d20e0717-discord_web",
+              "2025-08-27-aa6447ac86391f6890179500fa43f3da191ba832-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7031,8 +7035,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "437114"),
-            o.YA("builtAt", String("1756193253855"));
+            o.YA("buildNumber", "437680"),
+            o.YA("builtAt", String("1756279147566"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7210,13 +7214,14 @@
                 gradient: {
                   light: {
                     color: "gradient.mid",
-                    opacity: 0.4,
-                    lightness: "*0.75",
+                    opacity: 0.9,
+                    lightness: "*0.5",
+                    saturation: "*0.2",
                   },
                   dark: {
                     color: "gradient.mid",
-                    opacity: 0.3,
-                    lightness: 0.75,
+                    opacity: 0.8,
+                    lightness: "*0.5",
                     saturation: "*1.2",
                   },
                 },
@@ -48476,4 +48481,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.1bb49be1c3c6f206.js.map
+//# sourceMappingURL=sentry.f11af36f8b9305e9.js.map
