@@ -68851,7 +68851,10 @@ div.nagbar_d74ef8 {
   text-transform: capitalize;
 }
 .headerContainer__7db08 {
-  background-color: var(--background-base-low);
+  background-color: var(
+    --custom-settings-content-background,
+    var(--background-base-low)
+  );
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -76727,7 +76730,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99594,4 +99597,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0f30dcec823f516d.css.map*/
+/*# sourceMappingURL=12633.808872bf8eb08e49.css.map*/
