@@ -54691,6 +54691,7 @@ h3.improved__1689b:after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 25px;
   position: relative;
   width: 100%;
 }
@@ -54729,8 +54730,7 @@ h3.improved__1689b:after {
 }
 .giftCard_a45ed3 {
   background: var(--background-secondary-alt);
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin: 25px 0;
   padding: 40px;
 }
 .giftCard_a45ed3,
@@ -54746,7 +54746,7 @@ h3.improved__1689b:after {
   width: 100%;
 }
 .giftCardPromotion_a45ed3 {
-  margin: 80px 0;
+  margin-bottom: 25px;
   padding: 0 30px;
 }
 .videoAsset_a45ed3 {
@@ -66287,8 +66287,7 @@ html .progress__61462 {
   z-index: 1;
 }
 .giftPromoCard__94da4 {
-  margin-bottom: 80px;
-  margin-top: -36px;
+  margin-bottom: 25px;
 }
 .perkCardsContainerSpacingSettings__94da4 {
   margin-bottom: 60px !important;
@@ -76852,7 +76851,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99719,4 +99718,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c5ddc97ebafa4ea5.css.map*/
+/*# sourceMappingURL=12633.f9ac8b000e0f527e.css.map*/
