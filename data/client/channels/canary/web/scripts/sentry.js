@@ -5139,6 +5139,7 @@
           (r.SEARCH_MESSAGES_SELECTED_CHANNEL_FILTER_CLICKED =
             "search_messages_selected_channel_filter_clicked"),
           (r.SEARCH_HISTORY_CLICKED = "search_history_clicked"),
+          (r.SEARCH_BAR_VIEWED = "search_bar_viewed"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
           (r.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -6166,6 +6167,8 @@
           (r.DESKTOP_TTI = "desktop_tti"),
           (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY =
             "desktop_perf_attributed_module_memory"),
+          (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK =
+            "desktop_perf_attributed_module_memory_callstack"),
           (r.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
           (r.E2EE_USER_VERIFICATION_VIEWED = "e2ee_user_verification_viewed"),
           (r.E2EE_USER_VERIFIED = "e2ee_user_verified"),
@@ -6969,7 +6972,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1b5e5644293d7c3d7afde85eb1a22550e949323f",
+            release: "discord_web-606528ef93f39050df2843d4cf17a643436731dc",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7035,8 +7038,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "437801"),
-            o.YA("builtAt", String("1756313565602"));
+            o.YA("buildNumber", "437824"),
+            o.YA("builtAt", String("1756315144020"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48481,4 +48484,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d3aa306c46d6c4a9.js.map
+//# sourceMappingURL=sentry.fd56e219e98c16d5.js.map
