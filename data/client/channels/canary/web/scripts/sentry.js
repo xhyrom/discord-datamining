@@ -3934,6 +3934,12 @@
             FAMILY_CENTER_LINK_CODE: "/family-center/@me/link-code",
             FAMILY_CENTER_FETCH_TEEN_USER: (t) =>
               "/family-center/teen-user/".concat(t),
+            FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS: (t) =>
+              "/family-center/".concat(t, "/settings-and-consents"),
+            FAMILY_CENTER_TEEN_SETTINGS: (t) =>
+              "/family-center/".concat(t, "/settings-proto"),
+            FAMILY_CENTER_TEEN_CONSENTS: (t) =>
+              "/family-center/".concat(t, "/consents"),
             REFERRAL_OFFER_ID_RESOLVE: (t) => "/referrals/".concat(t),
             APPLICATIONS_SHELF: "/applications/shelf",
             DISCORDIFY_ME: "/users/@me/avatars/discordify",
@@ -6973,7 +6979,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1f64f9974b922375848adaf48a38211f1277767a",
+            release: "discord_web-7bfd01a1f0530c15ffe356a9b7a90c24b0fc0c73",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7039,8 +7045,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "437853"),
-            o.YA("builtAt", String("1756316524848"));
+            o.YA("buildNumber", "437884"),
+            o.YA("builtAt", String("1756318306843"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48485,4 +48491,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.79d8a93136376be1.js.map
+//# sourceMappingURL=sentry.5b340fe3e02d0132.js.map
