@@ -22,12 +22,12 @@
   "label_names": [
     "answer-bot",
     "commands",
-    "command application",
-    "application commands",
     "app",
-    "command permissions lockout",
     "command",
+    "command application",
     "command permissions",
-    "command lockout"
+    "application commands",
+    "command lockout",
+    "command permissions lockout"
   ]
 }

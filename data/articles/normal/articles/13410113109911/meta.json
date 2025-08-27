@@ -20,19 +20,19 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "feature",
-    "photo",
     "avatar",
+    "profile",
+    "answer-bot",
+    "photo",
+    "nitro",
+    "promo",
+    "holiday",
     "avatar decorations",
     "decorations",
     "customize",
-    "nitro",
-    "profile",
+    "feature",
     "user profile",
-    "answer-bot",
     "server profiles",
-    "promo",
-    "holiday",
     "valentine's"
   ]
 }

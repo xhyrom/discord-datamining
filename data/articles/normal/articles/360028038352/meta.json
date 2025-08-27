@@ -20,14 +20,14 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "Nitro",
     "servers",
+    "Nitro",
     "Server",
+    "answer-bot",
+    "server",
     "boosting",
     "server boosting",
     "boosting streak",
-    "server",
     "boosts"
   ]
 }

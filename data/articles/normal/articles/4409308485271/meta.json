@@ -20,9 +20,9 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "servers",
     "discovery",
     "discovery guidelines",
-    "server discovery",
-    "servers"
+    "server discovery"
   ]
 }

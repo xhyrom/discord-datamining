@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "community",
     "enable",
+    "community",
+    "answer-bot",
+    "public server",
     "enable community",
     "community server",
-    "public server",
     "welcome screen",
     "community settings",
     "manage community",
     "community tools",
-    "tools",
-    "answer-bot"
+    "tools"
   ]
 }

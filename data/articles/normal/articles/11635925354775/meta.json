@@ -20,11 +20,11 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "audio",
-    "boosting",
-    "voice channel",
     "answer-bot",
+    "boosting",
+    "audio",
     "audio bitrate",
-    "bitrate"
+    "bitrate",
+    "voice channel"
   ]
 }

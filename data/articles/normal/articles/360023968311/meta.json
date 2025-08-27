@@ -30,9 +30,9 @@
   ],
   "label_names": [
     "servers",
-    "answer-bot",
-    "join server",
     "community",
+    "join server",
+    "answer-bot",
     "communities",
     "discover",
     "public"

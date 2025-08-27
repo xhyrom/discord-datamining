@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "admin server",
-    "admin community",
-    "host server",
     "admin",
-    "community program",
     "community",
-    "answer-bot"
+    "answer-bot",
+    "host server",
+    "community program",
+    "admin server",
+    "admin community"
   ]
 }

@@ -21,11 +21,11 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "rules",
     "server",
-    "screening",
-    "large",
     "public server",
-    "public"
+    "public",
+    "large",
+    "rules",
+    "screening"
   ]
 }

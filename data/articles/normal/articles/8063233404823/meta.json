@@ -20,9 +20,9 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "integration",
-    "account customization",
     "connection",
+    "account customization",
+    "integration",
     "linked roles",
     "connections"
   ]
