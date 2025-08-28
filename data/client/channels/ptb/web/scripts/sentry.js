@@ -3934,6 +3934,12 @@
             FAMILY_CENTER_LINK_CODE: "/family-center/@me/link-code",
             FAMILY_CENTER_FETCH_TEEN_USER: (t) =>
               "/family-center/teen-user/".concat(t),
+            FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS: (t) =>
+              "/family-center/".concat(t, "/settings-and-consents"),
+            FAMILY_CENTER_TEEN_SETTINGS: (t) =>
+              "/family-center/".concat(t, "/settings-proto"),
+            FAMILY_CENTER_TEEN_CONSENTS: (t) =>
+              "/family-center/".concat(t, "/consents"),
             REFERRAL_OFFER_ID_RESOLVE: (t) => "/referrals/".concat(t),
             APPLICATIONS_SHELF: "/applications/shelf",
             DISCORDIFY_ME: "/users/@me/avatars/discordify",
@@ -4535,6 +4541,7 @@
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
+            FAMILY_CENTER_PARENTAL_CONTROLS: "Family Center Parental Controls",
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
@@ -4681,6 +4688,8 @@
           (r.NOTIFICATION_MIGRATION_OPTOUT = "notification_migration_optout"),
           (r.CALLKIT_CLICKED = "callkit_clicked"),
           (r.PUSH_NOTIFICATION_RECEIVED = "push_notification_received"),
+          (r.GAME_MENTIONS_NOTIFICATION_SETTING_UPDATED =
+            "game_mentions_notification_settings_updated"),
           (r.OVERLAY_DISABLED_SURVEY = "overlay_disabled_survey"),
           (r.NOTIFICATION_REPORT_SUBMITTED = "notification_report_submitted"),
           (r.NOTIFICATION_PERMISSION_PREPROMPT_ACKED =
@@ -4790,10 +4799,13 @@
           (r.ROBLOX_SUBGAME_DETECTED = "roblox_subgame_detected"),
           (r.RUNNING_GAME_HEARTBEAT = "running_game_heartbeat"),
           (r.GAME_DETECTION_COMPARISON = "game_detection_comparison"),
+          (r.GAME_DETECTION_ERROR = "game_detection_error"),
           (r.ACTIVITY_UPDATED = "activity_updated"),
           (r.ACTIVITY_SESSION_JOINED = "activity_session_joined"),
           (r.ACTIVITY_SESSION_JOIN_FAILED = "activity_session_join_failed"),
           (r.ACTIVITY_SESSION_LEFT = "activity_session_left"),
+          (r.ACTIVITY_DEEP_LINK_ATTEMPTED = "activity_deep_link_attempted"),
+          (r.ACTIVITY_DEEP_LINK_RECEIVED = "activity_deep_link_received"),
           (r.ACTIVITY_INTERACTION_CALLBACK_ERROR =
             "activity_interaction_callback_error"),
           (r.ACTIVITY_VOICE_CONTROLS_TOGGLE_BUTTON_PRESSED =
@@ -5138,6 +5150,7 @@
           (r.SEARCH_MESSAGES_SELECTED_CHANNEL_FILTER_CLICKED =
             "search_messages_selected_channel_filter_clicked"),
           (r.SEARCH_HISTORY_CLICKED = "search_history_clicked"),
+          (r.SEARCH_BAR_VIEWED = "search_bar_viewed"),
           (r.MESSAGES_SEARCH_STARTED = "messages_search_started"),
           (r.SEARCH_V2_OPENED = "search_v2_opened"),
           (r.SEARCH_V2_CLOSED = "search_v2_closed"),
@@ -6165,6 +6178,8 @@
           (r.DESKTOP_TTI = "desktop_tti"),
           (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY =
             "desktop_perf_attributed_module_memory"),
+          (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK =
+            "desktop_perf_attributed_module_memory_callstack"),
           (r.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
           (r.E2EE_USER_VERIFICATION_VIEWED = "e2ee_user_verification_viewed"),
           (r.E2EE_USER_VERIFIED = "e2ee_user_verified"),
@@ -6969,7 +6984,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-08-27-0d1d9772e795607fc0f3811ba97e5887d428c9d9-discord_web",
+              "2025-08-28-5c748d7bb4e8c7c3b853e864328f95973a3953fa-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7035,8 +7050,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "437933"),
-            o.YA("builtAt", String("1756321780966"));
+            o.YA("buildNumber", "438310"),
+            o.YA("builtAt", String("1756365714182"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48481,4 +48496,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5eab5767ac2d3478.js.map
+//# sourceMappingURL=sentry.be659e49e249f575.js.map
