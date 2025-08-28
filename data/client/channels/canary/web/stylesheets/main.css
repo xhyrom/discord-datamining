@@ -66440,16 +66440,12 @@ div:hover
   width: 100%;
 }
 .flipCardContainer_b5493b {
+  min-height: 350px;
   perspective: 1000px;
 }
 .flipCardContainer_b5493b .card_b5493b {
   height: calc(100% - 48px);
   width: calc(100% - 48px);
-}
-.flipCardContainer_b5493b .partialFlipCard_b5493b,
-.flipCardContainer_b5493b .rotateCard_b5493b,
-.flipCardContainer_b5493b .ultraFlipCard_b5493b {
-  aspect-ratio: 1;
 }
 .flipCardContainer_b5493b .flipCard_b5493b.clickable_b5493b .cover_b5493b {
   opacity: 1;
@@ -99611,4 +99607,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.bde153c27f157866.css.map*/
+/*# sourceMappingURL=12633.88b426955d97416c.css.map*/
