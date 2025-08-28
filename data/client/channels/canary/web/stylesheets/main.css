@@ -63873,18 +63873,6 @@ html .progress__61462 {
   gap: 8px;
   margin-right: 8px;
 }
-.headerBar__0920e:before {
-  bottom: 0;
-  box-shadow: var(--elevation-low);
-  content: "";
-  display: none;
-  height: 1px;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
 .homeBody__0920e {
   box-sizing: border-box;
   margin: 0 auto;
@@ -63969,9 +63957,6 @@ html .progress__61462 {
   font-weight: var(--font-weight-medium);
   margin: 32px 0 20px;
   padding-bottom: 10px;
-}
-.headerBar__0920e {
-  transform: translateZ(0);
 }
 .theme-dark .categoryHeader__0920e,
 .theme-dark .premiumApplicationsHeader__0920e {
@@ -99605,4 +99590,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.928ecbc6e1d6f84e.css.map*/
+/*# sourceMappingURL=12633.2510db1da022f0c2.css.map*/
