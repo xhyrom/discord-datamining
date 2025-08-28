@@ -233,18 +233,18 @@
     You must be based within the United States and be able to provide a US-based
     bank account as well as US Identification Document to Stripe
   </li>
+  <li>
+    Your server may not offer anything listed on
+    <a href="https://stripe.com/legal/restricted-businesses"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+        >Stripe's Prohibited and Restricted Businesses List
+      </span></a
+    >
+  </li>
 </ol>
-<p>
-  Your server may not offer anything listed on
-  <a href="https://stripe.com/legal/restricted-businesses"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Stripe's Prohibited and Restricted Businesses List
-    </span></a
-  >
-</p>
 <p>
   Please read the<a
     href="https://support.discord.com/hc/en-us/articles/5330075836311"

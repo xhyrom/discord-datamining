@@ -29,7 +29,7 @@
       </li>
       <li style="font-weight: 400" aria-level="1">
         <span style="font-weight: 400"
-          ><a href="#h_01GJGZ0VGMAM0ESAGGWGAMF7JQ" target="_self"
+          ><a href="#h_01GJGZ0VGMAM0ESAGGWGAMF7JQ"
             >When will Server Subscriptions be available in more countries?</a
           >
         </span>
@@ -37,8 +37,7 @@
     </ul>
   </li>
   <li>
-    <a
-      href="https://creator-support.discord.com/hc/en-us/articles/10424143128343#h_01HQBZM30GCNGAKHG4EPAWC3JR"
+    <a href="#h_01HQBZM30GCNGAKHG4EPAWC3JR"
       ><span style="font-weight: 400">Stripe FAQ</span></a
     >
   </li>
@@ -184,9 +183,6 @@
   <strong
     >WHEN WILL SERVER SUBSCRIPTIONS BE AVAILABLE IN MORE COUNTRIES?
   </strong>
-</h2>
-<h2 id="h_01HQBZM30F8TTRRSTDWX1JXHQH">
-  WHEN WILL SERVER SUBSCRIPTIONS BE AVAILABLE IN MORE COUNTRIES? 
 </h2>
 <p>Server Subscriptions will not be available outside of the United States.</p>
 <h1 id="h_01HQBZM30GCNGAKHG4EPAWC3JR">Stripe FAQ</h1>
