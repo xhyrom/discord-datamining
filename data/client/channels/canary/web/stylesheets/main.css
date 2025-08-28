@@ -76730,7 +76730,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98345,17 +98345,12 @@ html.disable-forced-colors * {
   src: url(/assets/943f151cdf1b637e.woff2) format("woff2");
 }
 @font-face {
-  font-family: BioRhyme;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/assets/f75115b65a230189.woff2) format("woff2");
-}
-@font-face {
   ascent-override: 100%;
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
   src: url(/assets/c064d4440a5d10c4.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   ascent-override: 100%;
@@ -98363,6 +98358,7 @@ html.disable-forced-colors * {
   font-style: normal;
   font-weight: 400;
   src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   ascent-override: 90%;
@@ -98394,12 +98390,14 @@ html.disable-forced-colors * {
   font-style: normal;
   font-weight: 400;
   src: url(/assets/bccdc9cd3d272519.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   font-family: Zilla Slab;
   font-style: normal;
   font-weight: 600;
   src: url(/assets/4f94f359293a357d.woff2) format("woff2");
+  unicode-range: u+0000-003f, u+0041-ffff;
 }
 :root {
   --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
@@ -99597,4 +99595,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0a51f914b601f99e.css.map*/
+/*# sourceMappingURL=12633.0d267e8bf2dcd5fd.css.map*/
