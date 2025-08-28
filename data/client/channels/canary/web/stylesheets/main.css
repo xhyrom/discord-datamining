@@ -18255,10 +18255,6 @@ svg.radioIcon_c1e9c4 {
 }
 .container__9293f.transparent__9293f {
   background: transparent;
-  pointer-events: none;
-}
-.container__9293f.transparent__9293f.showToolbar__9293f {
-  pointer-events: auto;
 }
 .upperContainer__9293f {
   display: flex;
@@ -18303,19 +18299,9 @@ svg.radioIcon_c1e9c4 {
 .transparent__9293f .children__9293f:after {
   display: none;
 }
-.transparent__9293f {
-  border-bottom: none;
-}
-.transparent__9293f .children__9293f:not(.showToolbar__9293f),
-.transparent__9293f .toolbar__9293f:not(.showToolbar__9293f),
-.transparent__9293f .upperContainer__9293f:not(.showToolbar__9293f) {
+.container__9293f.hidden__9293f {
   opacity: 0;
   pointer-events: none;
-}
-.transparent__9293f .children__9293f.showToolbar__9293f,
-.transparent__9293f .toolbar__9293f.showToolbar__9293f,
-.transparent__9293f .upperContainer__9293f.showToolbar__9293f {
-  pointer-events: auto;
 }
 .toolbar__9293f {
   align-items: center;
@@ -99590,4 +99576,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2510db1da022f0c2.css.map*/
+/*# sourceMappingURL=12633.01dbe11c41e6bb6f.css.map*/
