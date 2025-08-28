@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/rust-etcd",
   "created_at": "2019-10-17T17:56:01Z",
   "homepage": "https://docs.rs/etcd",
-  "size": 5217,
+  "size": 5221,
   "language": "Rust",
   "has_issues": false,
   "has_projects": true,
