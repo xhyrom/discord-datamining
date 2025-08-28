@@ -24821,7 +24821,7 @@ span.clanTag__5d473 {
 .user-profile-modal-v2 .inner_c0bea0 {
   border-radius: 0;
   flex-direction: row;
-  gap: 32px;
+  gap: 0;
   height: 100%;
   padding: 48px 36px 0 48px;
 }
@@ -99604,4 +99604,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.57cfaef2e0822881.css.map*/
+/*# sourceMappingURL=12633.65840180162f783d.css.map*/
