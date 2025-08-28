@@ -53489,6 +53489,15 @@ h3.improved__1689b:after {
 .versionHash__2debe {
   text-transform: none;
 }
+.compactInfo__2debe {
+  display: inline;
+}
+.compactInfo__2debe > :not(:last-child):after {
+  color: var(--text-muted);
+  content: "•";
+  font-size: 10px;
+  margin: 0 var(--space-4);
+}
 .iconContainer__7ee90 {
   margin: 0 16px 8px 4px;
 }
@@ -99595,4 +99604,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0d267e8bf2dcd5fd.css.map*/
+/*# sourceMappingURL=12633.500e32bdf483f450.css.map*/
