@@ -1,5 +1,5 @@
 {
-  "subdomain_count": 69,
+  "subdomain_count": 70,
   "subdomains": [
     "support",
     "blog",
@@ -42,6 +42,7 @@
     "o18.ptr2300",
     "snowsgiving-tale-2022-it",
     "l",
+    "rtc-discovery",
     "crawl-35-237-4-214.ptr",
     "o19.ptr4192",
     "o14.ptr6344",
