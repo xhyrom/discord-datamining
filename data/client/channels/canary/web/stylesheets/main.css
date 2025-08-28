@@ -56862,6 +56862,8 @@ html .progress__61462 {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 432px;
   padding: var(--space-12);
   width: 100%;
@@ -56871,10 +56873,15 @@ html .progress__61462 {
   align-items: center;
   display: flex;
   gap: var(--space-12);
-  justify-content: space-between;
+}
+.themePreviewContainer__7473d {
+  flex-grow: 2;
+  justify-content: flex-start;
 }
 .colorPreview__7473d {
   border-radius: var(--radius-sm);
+  flex-grow: 0;
+  flex-shrink: 0;
   height: 60px;
   overflow: hidden;
   width: 60px;
@@ -99604,4 +99611,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.65840180162f783d.css.map*/
+/*# sourceMappingURL=12633.bde153c27f157866.css.map*/
