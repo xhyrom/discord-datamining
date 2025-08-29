@@ -1557,7 +1557,7 @@
           We do not allow any type of harassing behavior, including sexual
           harassment, ban or block evasion, or coordinating server joins for the
           purpose of harassing server members, also referred to as “server
-          raiding). (See our
+          raiding." (See our
           <a
             href="https://discord.com/safety/bullying-harassment-threats-policy-explainer"
             >Bullying, Harassment, and Threats Policy Explainer</a
