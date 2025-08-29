@@ -49193,18 +49193,11 @@ h3.improved__1689b:after {
 .confirmationSubtitle_e64651 {
   text-align: center;
 }
-.openDiscordButton_e64651 {
-  margin-bottom: 8px;
+.actions_e64651 {
+  display: flex;
+  flex-direction: column;
   margin-top: 24px;
-}
-.doneButton_e64651,
-.openDiscordButton_e64651 {
-  font-weight: var(--font-weight-semibold);
-  width: 100%;
-}
-.doneButton_e64651 {
-  background: var(--background-accent);
-  color: var(--white-500);
+  row-gap: 8px;
 }
 .container__24a95 {
   background-color: var(--background-base-lower);
@@ -99677,4 +99670,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b75eb4e18962b4b7.css.map*/
+/*# sourceMappingURL=12633.36e7c7fdabd4b9d2.css.map*/
