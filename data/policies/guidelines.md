@@ -1365,9 +1365,8 @@
         <h1 class="new-h1 is_new">Discord Community Guidelines</h1>
       </div>
       <div class="rich-terms_new w-richtext">
-        <h4>Effective:&nbsp;April 15, 2024</h4>
-        <h4>Last Updated:&nbsp;March 15, 2024</h4>
-        <p>‍</p>
+        <h4>Effective:&nbsp;September 29, 2025</h4>
+        <h4>Last Updated:&nbsp;August 29, 2025</h4>
       </div>
       <a href="#" class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">1.</div>
@@ -1483,22 +1482,23 @@
         ><div class="menu-numbers">17.</div>
         <div class="w-dyn-bind-empty"></div
       ></a>
-      <div
-        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
-      ></div>
-      <div id="1" class="rich-guidlines-negative_new w-richtext">
+      <div class="rich-guidlines-negative_new w-richtext">
+        <p>‍</p>
         <p>
-          We created Discord to be the best place to talk, hang out, and have
-          fun with friends online. Our Community Guidelines ensure everyone can
-          express themselves and find community — but not at the expense of
-          anyone else.<br />
+          Discord enables you to build meaningful connections around the joy of
+          playing games through voice, video and text features. Our Community
+          Guidelines ensure everyone can express themselves and find community —
+          but not at the expense of anyone else.<br />
         </p>
         <p>
-          These Guidelines explain what isn’t allowed on Discord. Everyone on
-          Discord must follow these rules, and they apply to all parts of our
-          platform, including your content, behaviors, servers, and Apps. To
-          learn more about the requirements for developing a bot or other App,
-          please refer to our
+          These Guidelines are incorporated into our
+          <a href="https://discord.com/terms">Terms of Service</a>, and further
+          explain what isn’t allowed on Discord so that we can help create a
+          positive environment for everyone. Everyone on Discord must follow
+          these rules, and they apply to all parts of our platform, including
+          your content, behaviors, servers, and apps. To learn more about the
+          requirements for developing a bot or other app on Discord, please
+          refer to our
           <a
             href="https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service"
             >Discord Developer Terms of Service</a
@@ -1523,15 +1523,16 @@
         <p>
           Our Trust &amp; Safety team reviews reports by users, moderators,
           trusted third-party partners, or where required by law. When we
-          reactively or proactively discover a violation of these Guidelines, we
+          proactively or reactively discover a violation of these Guidelines, we
           may take
           <a
             href="https://support.discord.com/hc/en-us/articles/18210965981847-Discord-Warning-System"
             >a number of enforcement steps</a
           >
-          against them, including issuing warnings, removing content, suspending
-          or removing the violative accounts and/or servers, and potentially
-          reporting them to law enforcement. We may consider relevant
+          based on the severity of the violation, including issuing warnings,
+          removing content, temporarily suspending account access to Discord, or
+          permanently removing violative accounts and servers, and even
+          reporting them to law enforcement. We may also consider relevant
           <a
             href="https://discord.com/safety/off-platform-behaviors-policy-explainer"
             >off-platform behavior when making assessments for violations of
@@ -1544,22 +1545,24 @@
           <a
             href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
             >report it to us</a
-          >.<br />‍
+          >.
         </p>
+      </div>
+      <div id="1" class="rich-guidlines-negative_new w-richtext">
         <h2>Respect Each Other</h2>
         <p>
           <strong
             >1. Do not promote, coordinate, or engage in harassment.</strong
           >
-          We do not allow any type of harassing behavior, including sustained
-          bullying, sexual harassment, ban or block evasion, or coordinating
-          server joins for the purpose of harassing server members (“server
-          raiding”). (See our
+          We do not allow any type of harassing behavior, including sexual
+          harassment, ban or block evasion, or coordinating server joins for the
+          purpose of harassing server members, also referred to as “server
+          raiding). (See our
           <a
             href="https://discord.com/safety/bullying-harassment-threats-policy-explainer"
             >Bullying, Harassment, and Threats Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1571,7 +1574,7 @@
             href="https://discord.com/safety/bullying-harassment-threats-policy-explainer"
             >Bullying, Harassment, and Threats Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1582,13 +1585,13 @@
           <a href="https://discord.com/safety/doxxing-policy-explainer"
             >Doxxing Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
             >4. Do not use hate speech or engage in other hateful conduct. </strong
           >This includes the use of hate symbols, imagery, and claims that deny
-          the history of mass human atrocities.&nbsp;
+          the history of mass human atrocities.<br />
         </p>
         <p>
           We consider <strong>hate speech</strong> to be any form of expression
@@ -1597,7 +1600,7 @@
           <a href="https://discord.com/safety/hateful-conduct-policy-explainer"
             >Hateful Conduct Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1616,16 +1619,21 @@
             href="https://discord.com/safety/violence-graphic-content-policy-explainer"
             >Violence and Graphic Content Policy Explainers</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
-            >6. Do not solicit, share, or make any attempt to distribute content
-            that depicts, promotes, or attempts to normalize child sexual abuse. </strong
-          >Also, do not post content or engage in conduct that in any way
-          sexualizes children. This includes real as well as manipulated media,
-          animation (such as lolicon), and any type of digital creation (note
-          that this includes AI-generated media).
+            >6. Do not create, post, solicit, share, or make attempts to
+            distribute content on Discord that depicts, promotes, or attempts to
+            normalize child sexual abuse. </strong
+          >This includes manipulated, non-manipulated, or synthetic (artificial
+          intelligence-generated) media involving real, fictional, and/or
+          anthropomorphized children.<br />
+        </p>
+        <p>
+          This also includes animation, drawing, text, and technical commands or
+          prompts to create media depicting child sexual abuse or child
+          sexualization.<br />
         </p>
         <p>
           We report child sexual abuse material (CSAM) and grooming to the
@@ -1635,49 +1643,59 @@
           <a href="https://discord.com/safety/child-safety-policy-explainer"
             >Teen and Child Safety Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
-            >7. If you are under the age of 18, do not engage in sexual conduct
-            or any conduct that puts your online or physical safety at risk. </strong
-          >This includes consensual sexual interactions between teens, as well
-          as any encouragement or coordination of potentially risky behaviors,
-          such as vigilantism.&nbsp;
+            >7. If you are under the age of 18, you may not engage in sexual
+            conduct or any other conduct using Discord that puts your online or
+            physical safety at risk. </strong
+          >This includes consensual sexual interactions between you and other
+          teens of a similar age, as well as any encouragement or coordination
+          of behavior that may be harmful for you or others, such as
+          vigilantism.<br />
         </p>
         <p>
-          We want teens to be able to express themselves freely on Discord as
-          much as possible, but given the risks associated with online dating,
-          we will remove spaces that encourage or facilitate dating between
-          teens. (See our
+          We want teens to be able to express themselves as authentically as
+          possible on Discord. However, given the risks associated with online
+          dating, we will remove spaces that encourage or facilitate dating
+          between teens. (See our
           <a href="https://discord.com/safety/child-safety-policy-explainer"
             >Teen and Child Safety Policy Explainer</a
           >
-          for more.)
+          and our
+          <a href="https://discord.com/safety/safer-place-for-teens"
+            >Teen Safety Assist</a
+          >
+          function for more.)<br />
         </p>
         <p>
           <strong
-            >8. Do not solicit sexual content from or engage in any sexual
-            conduct with anyone under the age of 18. </strong
-          >We report child sexual abuse material (CSAM) and grooming to the
+            >8. Do not engage in any sexual conduct with anyone under the age of
+            18. </strong
+          >This includes soliciting, sharing, or exchanging sexual
+          content.<strong> <br /><br /></strong>We report child sexual abuse
+          material (CSAM) and grooming to the
           <a href="https://www.missingkids.org/"
             >National Center for Missing &amp; Exploited Children</a
           >, which may subsequently work with local law enforcement. (See our
           <a href="https://discord.com/safety/child-safety-policy-explainer"
             >Teen and Child Safety Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
             >9. Do not make sexually explicit content available to anyone under
             the age of 18. </strong
-          >You must be age 18 or older to engage with adult content on
-          Discord.&nbsp;
+          >&nbsp;Discord users must be aged 18 or older to view, gain access to,
+          or participate in adult sexual content on Discord.<br />
         </p>
         <p>
           Server owners must apply an age-restricted label to any channels that
-          contain sexually explicit content.
+          contain sexually explicit content involving adults or content
+          involving adults that is shared solely for the purposes of sexual
+          gratification.<br />
         </p>
         <p>
           Users may not post sexually explicit content in any space that cannot
@@ -1687,13 +1705,13 @@
           <a href="https://discord.com/safety/sexual-content-policy-explainer"
             >Sexual Content Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
             >10. Do not share, distribute, or create sexually explicit or
-            sexually suggestive content of other people without the subject’s
-            consent.</strong
+            sexually suggestive content of other people over the age of 18
+            without the subject’s explicit consent.</strong
           >
           This includes the non-consensual distribution of intimate media that
           was created either with or without an individual’s consent. (See our
@@ -1701,7 +1719,7 @@
             href="https://discord.com/safety/non-consensual-intimate-media-policy-explainer"
             >Non-Consensual Adult Intimate Media Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1718,10 +1736,10 @@
           for more.)
         </p>
         <p>
-          <strong
-            >12. Do not share real media depicting gore, excessive violence, or
-            animal harm, especially with the intention to harass or shock
-            others. </strong
+          ‍<strong
+            >12. Do not upload or share&nbsp; any material depicting violence,
+            gore,, or animal cruelty, especially with the intention to harass or
+            shock others. </strong
           >(See our
           <a
             href="https://discord.com/safety/violence-graphic-content-policy-explainer"
@@ -1729,6 +1747,8 @@
           >
           for more.)
         </p>
+      </div>
+      <div id="2" class="rich-guidlines-negative_new w-richtext">
         <h2>Respect Discord</h2>
         <p>
           <strong
@@ -1740,7 +1760,7 @@
             href="https://discord.com/safety/platform-manipulation-policy-explainer"
             >Platform Manipulation Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong>14. Do not use self-bots or user-bots. </strong>Each account
@@ -1749,7 +1769,7 @@
             href="https://discord.com/safety/platform-manipulation-policy-explainer"
             >Platform Manipulation Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1761,7 +1781,7 @@
             href="https://discord.com/safety/platform-manipulation-policy-explainer"
             >Platform Manipulation Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong>16. Do not sell or purchase Discord assets</strong>, including
@@ -1771,15 +1791,9 @@
             href="https://discord.com/safety/platform-manipulation-policy-explainer"
             >Platform Manipulation Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
-        <p>
-          Abuse of Discord's paid features or monetization opportunities are
-          covered under our
-          <a href="https://discord.com/terms/paid-services-terms"
-            >Paid Service Terms</a
-          >.
-        </p>
+        <p></p>
         <p>
           <strong
             >17. Do not share false or misleading information (otherwise known
@@ -1794,7 +1808,7 @@
           <a href="https://discord.com/safety/misinformation-policy-explainer"
             >Misinformation Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1806,7 +1820,7 @@
             href="https://discord.com/safety/identity-authenticity-policy-explainer"
             >Identity and Authenticity Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1819,7 +1833,7 @@
             href="https://discord.com/safety/identity-authenticity-policy-explainer"
             >Identity and Authenticity Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1833,7 +1847,7 @@
             href="https://discord.com/safety/deceptive-practices-policy-explainer"
             >Deceptive Practices Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1846,7 +1860,7 @@
             href="https://discord.com/safety/deceptive-practices-policy-explainer"
             >Deceptive Practices Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1860,7 +1874,7 @@
             href="https://discord.com/safety/deceptive-practices-policy-explainer"
             >Deceptive Practices Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1875,7 +1889,15 @@
           >
           for more.)
         </p>
-        <h2>Follow the Law</h2>
+      </div>
+      <div id="3" class="rich-guidlines-negative_new w-richtext">
+        <h2>Follow Applicable Laws</h2>
+        <p>
+          As described in our
+          <a href="https://discord.com/terms">Terms of Service</a>, you must
+          comply with all applicable laws, rules, and regulations. This
+          includes:<br />
+        </p>
         <p>
           <strong
             >24. Do not share content that violates anyone's intellectual
@@ -1886,7 +1908,7 @@
             href="https://discord.com/safety/copyright-trademark-policy-explainer"
             >Unauthorized Copyright Access Policy</a
           >
-          for more.)&nbsp;
+          for more.)<br />
         </p>
         <p>
           For more information on how Discord handles copyright complaints,
@@ -1894,7 +1916,7 @@
             href="https://support.discord.com/hc/en-us/articles/4410339349655-Discord-s-Copyright-IP-Policy"
           >
             Copyright &amp; Intellectual Property Policy</a
-          >.
+          >.<br />
         </p>
         <p>
           <strong
@@ -1907,7 +1929,7 @@
             href="https://discord.com/safety/dangerous-regulated-goods-policy-explainer"
             >Dangerous and Regulated Goods Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
@@ -1917,13 +1939,14 @@
           <a href="https://discord.com/safety/gambling-policy-explainer"
             >Gambling Policy Explainer</a
           >
-          for more.)
+          for more.)<br />
         </p>
         <p>
           <strong
-            >27. Do not organize, promote, or engage in any other illegal
-            activity</strong
-          >, such as human trafficking or sexual solicitation. (See our
+            >27. Do not organize, promote, or engage in any illegal activity
+            that harms the dignity, safety, or wellbeing of another person. </strong
+          >This includes but is not limited to human trafficking and sexual
+          solicitation. (See our
           <a
             href="https://discord.com/safety/human-trafficking-policy-explainer"
             >Human Trafficking</a
@@ -1933,13 +1956,15 @@
             href="https://discord.com/safety/sexual-solicitation-policy-explainer"
             >Sexual Solicitation Policy Explainers</a
           >
-          for more.)<br />‍
+          for more.)
         </p>
+      </div>
+      <div id="4" class="rich-guidlines-negative_new w-richtext">
         <p>
           If you see any content or activity that violates these Guidelines, our
-          <a href="https://discord.com/terms">Terms of Service</a>, or our other
-          policies, please report it to us. You can learn more on how to report
-          to us
+          <a href="https://discord.com/terms">Terms of Service</a>, or any of
+          our other policies, please report it to us. You can learn more on how
+          to report to us
           <a
             href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
             >here</a
@@ -1948,35 +1973,22 @@
             >may take action against vigilantism</a
           >, as this behavior can put individuals in harm’s way and can also
           interfere with our investigations and ability to report to law
-          enforcement.
+          enforcement.<br />
         </p>
         <p>
           These Guidelines will continue to evolve over time. This means we may
           take action against an account, server, or content that violates the
           spirit of these Guidelines when we encounter a new threat or harm that
-          is not explicitly covered in the current version.
+          is not explicitly covered in the current version.<br />
         </p>
         <p>
           We will always make our best effort to notify you when we update these
-          Guidelines, but it is up to you to follow the spirit of them: Keep
-          Discord safe and help us continue to make it the best place to talk,
-          hang out and have fun with friends online. Thanks for doing your
-          part.‍
+          Guidelines, but it is up to you to follow them and to use Discord
+          responsibly: Keep Discord safe and help us ensure it remains a great
+          place to build friendships around the joy of playing games. Thanks for
+          doing your part.‍
         </p>
-        <p>‍</p>
       </div>
-      <div
-        id="2"
-        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="3"
-        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
-      ></div>
-      <div
-        id="4"
-        class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
-      ></div>
       <div
         id="5"
         class="rich-guidlines-negative_new w-dyn-bind-empty w-richtext"
