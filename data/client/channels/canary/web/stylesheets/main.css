@@ -9524,6 +9524,12 @@ svg.radioIcon_c1e9c4 {
 .errorMessage__89a34 {
   margin-top: 1px;
 }
+.roleDot__41e17 {
+  display: block;
+}
+.roleDotInline__41e17 {
+  height: 18px;
+}
 .tagGroup_ae0825 {
   display: flex;
   flex-wrap: wrap;
@@ -57603,7 +57609,7 @@ html .progress__61462 {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  padding: 16px;
+  padding: 16px 16px 0;
 }
 .productDetailContent__79d38 {
   display: flex;
@@ -76806,7 +76812,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99671,4 +99677,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ac4de0595e45f96a.css.map*/
+/*# sourceMappingURL=12633.8e4d35cab1cded10.css.map*/
