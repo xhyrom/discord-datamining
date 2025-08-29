@@ -1,12 +1,14 @@
 <p>
-  <strong>Quests </strong>on Discord offer a fun way to explore games and new
-  content while earning rewards. By completing a Quest—whether it's playing a
-  game or watching a trailer for an upcoming show—you can unlock exclusives
-  which may include in-game items or currency, or Discord
-  <a
-    href="https://support.discord.com/hc/en-us/articles/13410113109911-Avatar-Decorations"
-    >Avatar Decorations</a
-  >. Read on to learn more!
+  <strong>Discord Quests</strong> are a rewarded ad format that allows players
+  earn rewards for engaging with content and games, and advertisers
+  authentically reach their audience. 
+</p>
+<p>
+  Quests are personalized based on a users’ interests or can be shown
+  contextually based on where you navigate within the app. Quests are easily
+  distinguishable from the look and feel of the Discord experience. Engagement
+  with any Quest is completely opt-in, and users can easily disable Quest
+  personalization entirely at any time. Read on to learn more!
 </p>
 <p class="wysiwyg-text-align-center">
   <strong
@@ -447,26 +449,7 @@
 </h2>
 <p>
   If you do not want to receive personalized promotions for any Quests based on
-  your activity or data you share with Discord, you can disable your
-  <strong>In-game rewards (aka Quests) </strong>settings within your
-  <strong>Privacy &amp; Safety </strong>settings. 
-</p>
-<p>
-  1. Press the <strong>cogwheel </strong>[<img
-    src="https://support.discord.com/hc/article_attachments/22871262542871"
-    width="23"
-    height="24"
-  />] in the bottom left corner of your Discord desktop/browser app to navigate
-  to your <strong>User Settings</strong>.
-</p>
-<p>
-  2. Then select the <strong>Privacy &amp; Safety </strong>tab in the left hand
-  panel and scroll down to the <strong>How We Use Your Data</strong> section.
-</p>
-<p>
-  3. Disable the <strong>In-game rewards (aka Quests) </strong>setting by
-  selecting the toggle. You can learn more about how data is used for in-game
-  rewards
+  your activity or the data you share with Discord, you can find instructions
   <a
     href="https://support.discord.com/hc/en-us/articles/22225542459415"
     target="_blank"
@@ -478,35 +461,26 @@
   Although these settings are disabled, you will still be able to participate in
   Quests if you navigate to <strong>Quest Home</strong> (<strong
     >Discover &gt; Quests</strong
-  >).
-  <span
-    style="
-      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-        Helvetica, Arial, sans-serif;
-    "
-    >You may still see Quests promotions, but they won’t be based on your
-    activity on Discord.</span
-  >
+  >). You may still see Quests promotions, but they won’t be based on your
+  activity on Discord.
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXee3UW4nLedpucsNth7zCMDXiP_aAqrxOJk6OFoGXRNYz1zrRTC4oWQH54o2gMnYzfCEOuivf3blEADwJb_w1xewUa1-Fg57mi7UkwNSZtCTgzaJIZXNCevqa7DscOc4bibmszJGQ?key=abeLufT3tu3XbxpXcE6DLA"
-    width="624"
-    height="309"
+    src="https://support.discord.com/hc/article_attachments/34381009448855"
+    width="732"
+    height="530"
   />
 </p>
-<h4 id="h_01JRDWFMK18T081ZYQ1MPHNMV2" class="wysiwyg-text-align-center">
+<h4 id="h_01K39N0JGCB23KG2VY0FQ8G95P" class="wysiwyg-text-align-center">
   <span style="color: #666666"
-    >In-game Rewards (aka Quests) option in Data &amp; Privacy settings under
-    User Settings within the Discord desktop/browser app</span
+    >Data &amp; Privacy settings under User Settings within the Discord
+    desktop/browser app</span
   >
 </h4>
 <div class="info-box">
   If you decide later that you want to receive notifications about Discord
-  Quests based on your activity, you will need to make sure to enable the<strong>
-    In-game rewards (aka Quests)</strong
-  >
-  setting in <strong>Privacy &amp; Safety</strong>. You can learn more about
+  Quests based on your activity, you will need to make sure to enable these
+  settings in <strong>Data &amp; Privacy</strong>. You can learn more about
   these settings by visiting
   <a
     href="https://support.discord.com/hc/articles/360004109911-Data-Privacy-Controls"
