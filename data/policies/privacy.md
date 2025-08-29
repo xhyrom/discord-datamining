@@ -1365,18 +1365,15 @@
         <h1 class="new-h1 is_new">Discord Privacy Policy</h1>
       </div>
       <div class="rich-terms_new w-richtext">
-        <h4>Effective: April 15, 2024</h4>
-        <h4>Last Updated: March 15, 2024</h4>
+        <h4>Effective: September 29, 2025</h4>
+        <h4>Last Updated: August 29, 2025</h4>
       </div>
       <a href="#" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">1.</div>
         <div>Welcome!</div></a
       ><a href="#2" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">2.</div>
-        <div>
-          Discord is the best place to talk, hang out and have fun with friends
-          online
-        </div></a
+        <div>A little bit about Discord</div></a
       ><a href="#3" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">3.</div>
         <div>The information we collect</div></a
@@ -1461,9 +1458,9 @@
         <p>
           This Privacy Policy explains how we collect, use, store, protect, and
           share your personal information through our services. If you reside in
-          the European Economic Area (“EEA”) or United Kingdom, Discord
-          Netherlands BV is the “data controller” of your personal information
-          collected through the services (as defined in our
+          the European Economic Area (“EEA”), Discord Netherlands BV is the
+          “data controller” of your personal information collected through the
+          services (as defined in our
           <a href="https://discord.com/terms">Terms of Service</a>). For
           everyone else, Discord Inc. is the data controller. It’s important
           that you read this entire policy, but here’s a summary to get you
@@ -1472,14 +1469,16 @@
         <ul role="list">
           <li>
             <strong>We care a lot about privacy</strong>. We are committed to
-            creating spaces where people can talk, hang out and have fun with
-            friends online. Respecting user privacy is a key part of
+            enabling you to build meaningful connections around the joy of
+            playing games through voice, video and text features. Respecting
+            user privacy is a key part of
             <a href="https://discord.com/safety-privacy">that mission</a>.
           </li>
           <li>
-            <strong>We don’t sell your personal information</strong>. Our
-            business is based on subscriptions and paid products, not from
-            selling your personal information to third parties.
+            <strong>We don’t sell your personal information</strong>.&nbsp; Our
+            business is funded through subscriptions, paid products, and
+            sponsored content, not based on selling your personal information to
+            third parties.
           </li>
           <li>
             <strong>We limit what information is required</strong>. We require
@@ -1489,10 +1488,12 @@
           </li>
           <li>
             <strong>We care deeply about safety</strong>. Our dedicated Trust
-            and Safety team works hard to help keep our community safe. We also
-            use certain information to help us identify violations of our
-            Community Guidelines and prevent harmful content from being
-            distributed through the services.&nbsp;
+            and Safety team works hard to help keep our users safe. We also use
+            certain information to help us identify violations of our terms and
+            policies (such as our
+            <a href="https://discord.com/guidelines">Community Guidelines</a>)
+            in order to prevent harmful content or conduct on the
+            services.&nbsp;
           </li>
           <li>
             <strong>We give you control</strong>. We give you the ability to
@@ -1501,15 +1502,12 @@
         </ul>
       </div>
       <div id="2" class="rich-guidlines-negative_new w-richtext">
-        <h2>
-          Discord is the best place to talk, hang out and have fun with friends
-          online
-        </h2>
+        <h2>A little bit about Discord</h2>
         <p>
-          We created Discord to be the best place to talk, hang out and have fun
-          with friends online. Whether you’re part of a club, gaming group, or
-          just a handful of friends that want to spend time together, Discord
-          makes it easy to connect with friends.
+          Discord enables you to build meaningful connections around the joy of
+          playing games through voice, video, and text features. Whether you’re
+          part of a club, gaming group, or just a handful of friends that want
+          to spend time together, Discord makes it easy to connect with friends.
         </p>
         <p>
           Our “services” has the same meaning as defined in the
@@ -1537,9 +1535,9 @@
         </p>
         <p>
           We may also use content posted in larger spaces to help us develop,
-          improve and power our services, including features that help you catch
-          up on conversations and safety features that identify harmful content
-          on the services and support the enforcement of our
+          improve, and power our services, including features that help you
+          catch up on conversations and safety features that identify harmful
+          content on the services and support the enforcement of our
           <a href="https://discord.com/terms">Terms of Service</a> and
           <a href="https://discord.com/guidelines">Community Guidelines</a>.
           These things are important to us, and we believe they will make
@@ -1558,9 +1556,9 @@
           appropriate for your content.
         </p>
         <p>
-          We make money from paid subscriptions and the sale of digital (and
-          sometimes physical) goods, not from selling your personal information
-          to third parties.
+          We don’t make money from selling your personal information to third
+          parties. Our business is funded through subscriptions, paid products,
+          and sponsored content (like Quests and other sponsored formats).
         </p>
       </div>
       <div id="3" class="rich-guidlines-negative_new w-richtext">
@@ -1570,7 +1568,7 @@
           information you provide to us, information we collect automatically,
           and information we receive from other sources.
         </p>
-        <h4>Information you provide to us</h4>
+        <h4><strong>Information you provide to us</strong></h4>
         <ul role="list">
           <li>
             <strong>Account information</strong>. When you create a Discord
@@ -1589,9 +1587,9 @@
             or post other content that you create with features that we develop.
             You may also upload and share files through the services. This also
             includes your profile information and the information you provide
-            when you create servers.&nbsp;We generally do not store the contents
-            of video or voice calls or channels. If we were to change that in
-            the future (for example, to facilitate content moderation), we would
+            when you create servers. We generally do not store the contents of
+            video or voice calls or channels. If we were to change that in the
+            future (for example, to facilitate content moderation), we would
             disclose that to you in advance. We also don’t store streaming
             content when you share your screen, but we do retain the thumbnail
             cover image for the stream for a short period of time. We may build
@@ -1618,14 +1616,15 @@
             <strong>Information from actions you take</strong>. We collect
             information about your use of Discord and your activities on the
             services. This includes information such as the friends you add, the
-            users, bots, and apps you engage with, the games you play on your
-            device, the servers or other communities you join and participate
-            in, your roles in servers, content moderation decisions you make,
-            information about purchases or sales you make on or through Discord
-            including what you purchased or sold, and other related actions. You
-            can control the extent to which we collect, use, and display this
-            information as described in the “<a
-              href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"
+            users, bots, and apps you engage with, the servers or other
+            communities you join and participate in, your roles in servers,
+            content moderation decisions you make, information about purchases
+            or sales you make on or through Discord including what you purchased
+            or sold, and other related actions. We may also collect limited
+            information from your device while Discord is running (such as the
+            game you are playing). You can control the extent to which we
+            collect, use, and display this information as described in the “<a
+              href="https://discord.com/privacy#8"
               >How to control your privacy</a
             >” section below.
           </li>
@@ -1633,13 +1632,13 @@
             <strong>Information from optional features</strong>. Certain
             features, like contact syncing, may require that you provide
             additional information (or grant us access to such information) to
-            make them work. This also includes third-party integrations you
-            choose to enable and the data you authorize those third-party
-            services to share with us. For example, when you link a music
-            streaming account, we may collect information about that account
-            such as the song you are listening to in order to display that
-            information on your profile or as your status (if you have chosen to
-            do so).
+            make them work. This also includes if you choose to interact with
+            sponsored content, enable integrations, or authorize third-party
+            services to share data with us. For example, when you link a music
+            streaming or game account, we may collect information about that
+            account such as the song you are listening to or the game you are
+            playing in order to display that information on your profile or as
+            your status (if you have chosen to do so).
           </li>
           <li>
             <strong>Other information you provide directly to us</strong>. You
@@ -1649,7 +1648,7 @@
             Discord Support teams.
           </li>
         </ul>
-        <h4>Information we collect automatically</h4>
+        <h4><strong>Information we collect automatically</strong></h4>
         <p>
           We also collect information automatically from you when you use
           Discord. This includes:
@@ -1687,13 +1686,18 @@
           permissions in our
           <a href="https://discord.com/terms/cookie-policy">Cookie Policy</a>.
         </p>
-        <h4>Information we receive from other sources</h4>
+        <h4><strong>Information we receive from other sources</strong></h4>
         <p>
           We may receive information about you from other sources, including
           from other users and third parties, and combine that information with
           the other information we have about you. For example, if you interact
           with our social media account on another platform, we may receive
           certain information about you like your username on that platform.
+          Similarly, when we advertise on other services, we may receive
+          information about your engagement with those ads. We may also receive
+          information about you from advertisers and third-party data providers,
+          such as demographic information and how you engage with other products
+          and services outside of Discord.
         </p>
       </div>
       <div id="4" class="rich-guidlines-negative_new w-richtext">
@@ -1742,9 +1746,16 @@
           <a
             href="https://discord.com/privacy#:~:text=Cookie%20Policy.-,Information%20we%20receive%20from%20other%20sources,We%20may%20receive,-information%20about%20you"
             >Information we receive from other sources</a
-          >—for the following reasons and according to these legal bases. For
-          each reason, we describe why we process your information and how we
-          process your information to achieve each purpose.
+          >—for the following reasons and according to these legal bases (where
+          applicable). For each reason, we describe how we process your
+          information to achieve each purpose. This processing can include use
+          of automated technologies such as machine learning systems that help
+          us power and improve our services. In certain jurisdictions, we rely
+          on consent (implied or express) to collect, use and disclose personal
+          information, subject to limited exceptions. As a result, the legal
+          bases below may not apply to you. Please see Information About Local
+          Privacy Laws page located
+          <a href="https://discord.com/terms/local-laws">here</a>.
         </p>
         <p>‍<strong>To fulfill our contract with you</strong></p>
         <ul role="list">
@@ -1756,9 +1767,9 @@
             and display them as you direct. We also use the information you
             provide to us to create and manage your account and to facilitate
             purchases. When you enable optional features (like connecting your
-            Discord account to other platforms), we use information from those
-            services to power the feature (like displaying what song you are
-            listening to on another service within the Discord app).
+            Discord account to other platforms), we use information to power the
+            feature (like displaying what song you are listening to or game you
+            are playing on another service within the Discord app).
           </li>
           <li>
             <strong>To meet our commitments to the Discord community</strong>.
@@ -1815,14 +1826,20 @@
           </li>
           <li>
             <strong>To personalize the product</strong>. We use your information
-            to personalize our services. This information is used to customize
-            your experience on Discord such as what you see on our discovery
-            surfaces (so that you see relevant communities, activities,
-            applications, or content first) or features that highlight activity
-            on Discord that may interest you. This information also helps us
-            surface Discord features and promotions from us and our partners
-            that may be of interest to you. As discussed in the “<a
+            to personalize our services. This can include customizing your
+            experience on Discord so that you see communities, activities,
+            applications, features or promotions from us, or other content that
+            may be of interest to you. As discussed in the “<a
               href="https://discord.com/privacy#8"
+              >How to control your privacy</a
+            >” section below, you can choose to what extent we will use your
+            personal information to personalize your Discord experience.
+          </li>
+          <li>
+            <strong>To deliver relevant sponsored content</strong>. We use your
+            information to help us surface sponsored content (like Quests and
+            other sponsored formats) that may be of interest to you. As
+            discussed in the “<a href="https://discord.com/privacy#8"
               >How to control your privacy</a
             >” section below, you can choose to what extent we will use your
             personal information to personalize your Discord experience.
@@ -1873,11 +1890,11 @@
         <p>‍<strong>With your consent</strong></p>
         <p>
           ‍We may also collect and use personal information with your consent,
-          such as to send you marketing communications where legally required.
-          You can revoke your consent at any time (mostly through our services
-          directly), though note that you might not be able to use any service
-          or feature that requires collection or use of that personal
-          information.
+          such as to send you marketing communications and personalize sponsored
+          content where legally required. You can revoke your consent at any
+          time (mostly through our services directly), though note that you
+          might not be able to use any service or feature that requires
+          collection or use of that personal information.
         </p>
         <p>‍<strong>To protect someone’s vital interests</strong></p>
         <p>
@@ -1898,16 +1915,17 @@
             anyone. And these permissions, like the size of the server, may
             change over time. Similarly, if you link your Discord account with a
             third-party service (like a music-streaming service or gaming
-            platform), embed content, interact with third party content posted
-            on Discord, or participate in a server that has third-party features
-            like bots enabled, we may provide certain information to that
-            service or to other Discord users to operate that service or
-            feature. Additionally, if you purchase goods or services from other
-            users on Discord, we may disclose certain information to these users
-            in order to facilitate the delivery of the goods or services
-            purchased or help them understand and improve their business. We may
-            also disclose your information as you otherwise instruct us or
-            provide us your consent to do so.
+            platform), embed content, interact with third-party content posted
+            on Discord, interact with users on other services who have linked
+            their account, or participate in a server that has third-party
+            features like bots enabled, we may provide certain information to
+            that service or to other Discord users to operate that content,
+            service, or feature. Additionally, if you purchase goods or services
+            from other users on Discord, we may disclose certain information to
+            these users in order to facilitate the delivery of the goods or
+            services purchased or help them understand and improve their
+            business. We may also disclose your information as you otherwise
+            instruct us or provide us your consent to do so.
           </li>
           <li>
             <strong>With our vendors</strong>. We may provide information to
@@ -1920,15 +1938,19 @@
             platforms. We do this to help bring more users to Discord and make
             our business successful, and provide only the information required
             to facilitate these services. This may include information like the
-            fact that you installed our app or registered to use Discord.
+            fact that you installed our app or registered to use Discord. We may
+            also provide information to analytics and measurement partners to
+            measure the effectiveness of sponsored content if you engage with it
+            (for example, by starting a Quest or clicking on other sponsored
+            content).
           </li>
           <li>
             <strong>To comply with the law</strong>. We may disclose information
             in response to a request for information if we believe disclosure is
             required by law, including meeting national security or law
-            enforcement requirements. Where allowed and feasible, we will
-            attempt to provide you with prior notice before disclosing your
-            information in response to such a request. Our
+            enforcement requirements. Where allowed and feasible, we may attempt
+            to provide you with prior notice before disclosing your information
+            in response to such a request. Our
             <a href="https://discord.com/safety-transparency"
               >Transparency Report</a
             >
@@ -1936,21 +1958,17 @@
             governments and law enforcement entities.
           </li>
           <li>
-            <strong>In an emergency</strong>. We may disclose information if we
-            believe in good faith that it's necessary to prevent serious harm to
-            a person.
+            <strong>To prevent serious harm.</strong> We may disclose
+            information if we believe in good faith that it's necessary to
+            prevent death or other serious harm to a person.
           </li>
           <li>
             <strong>To enforce our policies and rights</strong>. We may disclose
             information if needed to enforce our
             <a href="http://www.discord.com/terms">Terms of Service</a>,
             <a href="http://www.discord.com/guidelines">Community Guidelines</a
-            >, any of our
-            <a
-              href="https://support.discord.com/hc/en-us/articles/4420312247575"
-              >other policies</a
-            >, or to protect the rights, property, and safety of ourselves and
-            others.
+            >, any of our other policies, or to protect the rights, property,
+            and safety of ourselves and others.
           </li>
           <li>
             <strong>With our related companies</strong>. We may provide
@@ -1997,8 +2015,14 @@
           at rest. For example, we use Transport Layer Security (“TLS”) to
           encrypt text and images in transit. We also enforce technical and
           administrative access controls to limit which of our employees and
-          contractors have access to nonpublic personal information. You can
-          help maintain the security of your account by
+          contractors have access to nonpublic personal information. Voice and
+          video communications on Discord are designed to be end-to-end
+          encrypted. You can verify that your calls are encrypted in the
+          service. Learn more about
+          <a
+            href="https://support.discord.com/hc/en-us/articles/25968222946071-End-to-End-Encryption-for-Audio-and-Video"
+            >Discord’s end-to-end encryption</a
+          >. You can help maintain the security of your account by
           <a
             href="https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication"
             >configuring two-factor authentication</a
@@ -2016,7 +2040,10 @@
           process your information, how to delete or correct certain
           information, and how to request access to your information. Users in
           certain places may have specific rights under their local laws. You
-          can learn more about these in the relevant sections below.
+          can learn more about these in the
+          <a href="https://discord.com/terms/local-laws"
+            >Information About Local Privacy Laws page</a
+          >.
         </p>
         <p>
           ‍<strong
@@ -2031,7 +2058,7 @@
           profile, whether to connect any third party services to your Discord
           account, and more. For example, if you share content in certain
           spaces, such as servers listed in Server Discovery or with public
-          invite links, your content may be accessed by anyone.&nbsp;
+          invite links, your content may be accessed by anyone.
         </p>
         <p>‍<strong>Customize your personal Discord settings</strong></p>
         <p>
@@ -2057,16 +2084,18 @@
             we collect to help us understand how users use our services, what
             features or products they may want, or to otherwise help us improve
             our business. If you turn off these settings, we will stop
-            collecting and using certain event and log information as described
-            in these settings.
+            collecting and using new information about how you use and/or
+            navigate Discord in order to understand and improve our services as
+            described in these settings.
           </li>
           <li>
             <strong>Limit our ability to personalize Discord for you</strong>.
             We offer certain settings that control whether and how we may
             personalize Discord for you, such as offering you relevant
-            recommendations for in-app content and features. If these settings
-            are disabled, we will stop collecting and using certain event and
-            log information as described in these settings.
+            recommendations for in-app content and features or delivering
+            relevant sponsored content. If these settings are disabled, we will
+            no longer use information specific to your account to power features
+            that personalize Discord for you as described in these settings.
           </li>
         </ul>
         <p>
@@ -2074,8 +2103,10 @@
           <a
             href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"
             >in our Help Center</a
-          >. The default and availability of some of these settings may be
-          different depending on factors like your
+          >
+          or in the User Settings menu within Discord. The default and
+          availability of some of these settings may be different depending on
+          factors like your
           <a
             href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters).%22"
             >age</a
@@ -2122,8 +2153,8 @@
           </li>
         </ul>
         <p>
-          Content may be retained by Discord for use as described elsewhere in
-          this policy and in
+          <br />Content may be retained by Discord for use as described
+          elsewhere in this policy and in
           <a href="https://support.discord.com/hc/en-us/articles/5431812448791"
             >our data retention policy</a
           >. Also, in limited circumstances, we may have a legal obligation to
@@ -2133,14 +2164,15 @@
         <p><strong>Access your information</strong></p>
         <p>
           If you want to see what information we have collected about you, you
-          can request a copy of your data in the Privacy &amp; Safety section of
+          can request a copy of your data in the Data &amp; Privacy section of
           your User Settings. You should receive your data packet within 30
-          days. Data is delivered in common digital formats including CSV, JSON,
-          and any other file format you used when uploading attachments to the
-          services. You can learn more about how to access your information
-          <a
+          days. Data is delivered in common digital formats, including JSON and
+          any other file format you used when uploading attachments to the
+          services. You can learn more about how to access your information in
+          our<a
             href="https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data"
-            >in our Help Center</a
+          >
+            Help Center</a
           >.
         </p>
       </div>
@@ -2180,17 +2212,17 @@
           EU-U.S. Data Privacy Framework. If you have questions or complaints
           regarding our compliance with the Data Privacy Framework principles,
           please reach out to us at privacy@discord.com. If we do not resolve
-          your complaint, you may submit your complaint free of charge to
-          <a href="https://www.jamsadr.com/eu-us-privacy-shield">JAMS</a>. Under
-          certain conditions specified by the Data Privacy Framework principles,
-          you may also be able to invoke binding arbitration to resolve your
-          complaint. We are subject to the investigatory and enforcement powers
-          of the U.S. Federal Trade Commission. In certain circumstances, we may
-          be liable for the transfer of personal data from the EU, Switzerland,
-          or the UK to a third party outside those countries. If there is any
-          conflict between the terms in our privacy policy and the EU-U.S. DPF
-          Principles and/or the Swiss-U.S. DPF Principles, the Principles shall
-          govern.
+          your complaint, you may submit your complaint in accordance with the
+          section titled “<a href="https://discord.com/terms#16"
+            >Settling Disputes Between You and Discord</a
+          >” in our <a href="https://discord.com/terms">Terms of Service</a>.
+          Under certain conditions specified by the Data Privacy Framework
+          principles, you may also be able to invoke binding arbitration to
+          resolve your complaint. We are subject to the investigatory and
+          enforcement powers of the U.S. Federal Trade Commission. In certain
+          circumstances, we may be liable for the transfer of personal data from
+          the EU, Switzerland, or the UK to a third party outside those
+          countries.
         </p>
         <p>
           For more information about the Data Privacy Framework principles and
@@ -2200,41 +2232,64 @@
             >Data Privacy Framework site</a
           >.
         </p>
+        <p>
+          In order to learn about the specific rights you may have regarding the
+          international transfer of your personal data, please consult the
+          relevant
+          <a
+            href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021D0914&amp;from=EN"
+            >standard contract clauses</a
+          >
+          or
+          <a
+            href="https://ec.europa.eu/info/law/law-topic/data-protection/data-transfers-outside-eu/adequacy-protection-personal-data-non-eu-countries_en"
+            >adequacy decisions</a
+          >
+          or reach out to us at privacy@discord.com. The rights listed under
+          'Exercise your rights' will always apply, regardless of whether your
+          data is transferred or not.
+        </p>
       </div>
       <div id="10" class="rich-guidlines-negative_new w-richtext">
         <h2>Services offered by third parties</h2>
         <p>
-          We allow third party developers to build certain features or other
-          services and offer them within the Discord services. For example,
-          server administrators can add “bots” created by third party developers
-          that provide features like content moderation and interactive games.
-          Similarly, you may have access to games or activities built by third
-          parties within the services.
+          We allow third-party developers to build certain features or other
+          services and offer them within the Discord services, or to incorporate
+          certain Discord-powered features or functions into their services. For
+          example, server administrators can add “bots” created by third-party
+          developers that provide features like content moderation and
+          interactive games. Similarly, you may have access to your Discord
+          friends list or messaging capabilities in third-party games, or games
+          or Activities built by third parties offered within the Discord
+          services.
         </p>
         <p>
           These third-party services need to follow all policies that apply to
           them (including often our
-          <a href="https://discord.com/developers/docs/legal"
+          <a
+            href="https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service"
             >Developer Terms of Service</a
           >
           and
-          <a href="https://discord.com/developers/docs/policy"
+          <a
+            href="https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy"
             >Developer Policy</a
           >). As part of these policies, we require developers to have a privacy
           policy that makes clear what they do with your information. Please
-          review these privacy policies, as they describe what bots and apps may
-          do with your information. We also require that certain popular bots
-          apply for access to certain data. But because these services are
-          operated by third parties, we don’t control them or what information
-          they collect. It’s up to you whether to participate in a server that
-          uses bots, and whether to engage with third-party services in general.
+          review these privacy policies, as they describe what the third-party
+          services may do with your information. We also require that certain
+          popular apps apply for access to certain data. But because these
+          services are operated by third parties, we don’t control them or what
+          information they collect. It’s up to you whether to participate in a
+          server or other space that uses apps, and whether to engage with
+          third-party services in general.
         </p>
       </div>
       <div id="11" class="rich-guidlines-negative_new w-richtext">
         <h2>Data Protection Officer</h2>
         <p>
           You can contact Discord Netherlands BV’s Data Protection Officer at
-          <a href="mailto:dpo@discord.com">dpo@discord.com</a>.
+          dpo@discord.com.
         </p>
         <p>
           We’ve appointed VeraSafe as Discord’s representative in the United
@@ -2258,7 +2313,7 @@
         </p>
         <p>
           <strong>‍Exercising your rights:</strong> As described in the “<a
-            href="https://discord.com/privacy#control"
+            href="https://discord.com/privacy#8"
             >How to control your privacy”</a
           >
           section above, all our users have control over their information and
@@ -2311,12 +2366,12 @@
           dpo@discord.com.
         </p>
         <p>
-          You can also reach us by mail if you want. If you reside in the EEA or
-          United Kingdom, you can contact us at:&nbsp;
+          You can also reach us by mail if you want. If you reside in the EEA,
+          you can contact us at:&nbsp;
         </p>
         <p>Discord Netherlands BV&nbsp;</p>
         <p>ATTN: Privacy Policy&nbsp;</p>
-        <p>Schiphol Boulevard 195 <br />1118 BG Schiphol, <br />Netherlands</p>
+        <p>Schiphol Boulevard 195<br />1118 BG Schiphol,<br />Netherlands</p>
         <p>If you reside anywhere else, you can contact us at:&nbsp;</p>
         <p>Discord Inc.&nbsp;</p>
         <p>ATTN: Privacy Policy&nbsp;</p>
