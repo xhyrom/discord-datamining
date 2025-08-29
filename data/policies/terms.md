@@ -1365,8 +1365,8 @@
         <h1 class="new-h1 is_new">Discord's Terms of Service</h1>
       </div>
       <div class="rich-terms_new w-richtext">
-        <h4>Effective: April 15, 2024</h4>
-        <h4>Last Updated: March 15, 2024</h4>
+        <h4>Effective: September 29, 2025</h4>
+        <h4>Last Updated: August 29, 2025</h4>
       </div>
       <a href="#" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">1.</div>
@@ -1402,10 +1402,10 @@
         <div>Content in Discord’s services</div></a
       ><a href="#5" class="link-terms _30px w-inline-block"
         ><div class="menu-numbers bl">•</div>
-        <div>Your Content</div></a
+        <div>Your content</div></a
       ><a href="#5" class="link-terms _30px w-inline-block"
         ><div class="menu-numbers bl">•</div>
-        <div>Discord’s content</div></a
+        <div>Discord's content</div></a
       ><a href="#5" class="link-terms _30px w-inline-block"
         ><div class="menu-numbers bl">•</div>
         <div>Other content</div></a
@@ -1423,7 +1423,7 @@
         <div>Restrictions on your use of Discord’s services</div></a
       ><a href="#10" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">10.</div>
-        <div>Termination</div></a
+        <div>Term &amp; Termination</div></a
       ><a href="#11" class="link-terms is_new w-inline-block"
         ><div class="menu-numbers">11.</div>
         <div>Appeals</div></a
@@ -1448,8 +1448,9 @@
       >
       <div class="rich-guidlines-negative_new w-richtext">
         <p>
-          Welcome! Discord is the best place to talk, hang out and have fun with
-          friends online. We’re happy you’re here.
+          <br />Welcome! Discord enables you to build meaningful connections
+          around the joy of playing games through voice, video and text
+          features. We’re happy you’re here.
         </p>
         <p>
           These terms set forth our legal obligations to each other. They apply
@@ -1461,8 +1462,8 @@
             ><strong>Settling Disputes Between You and Discord</strong></a
           ><strong
             >” contains an arbitration clause and class-action waiver that
-            applies to all U.S.-based Discord users. Please read this section
-            carefully as it may significantly affect your legal rights,
+            applies to all U.S. or Canada-based Discord users. Please read this
+            section carefully as it may significantly affect your legal rights,
             including your right to file a lawsuit in court.</strong
           >
         </p>
@@ -1484,14 +1485,15 @@
           We also have a
           <a href="https://discord.com/privacy">Privacy Policy</a>,
           <a href="https://discord.com/guidelines">Community Guidelines</a>, and
-          these
+          other policies (as
           <a href="https://support.discord.com/hc/articles/4420312247575"
-            >other policies</a
+            >listed here</a
           >
-          that apply to your use of our services and are incorporated into these
-          terms. You should read these policies—we’ve worked hard to make them
-          simple and clear, and they contain important information about your
-          use of our services. If you use our API, Discord’s
+          or as otherwise made available to you) that apply to your use of our
+          services and are incorporated into these terms. You should read these
+          policies—we’ve worked hard to make them simple and clear, and they
+          contain important information about your use of our services. If you
+          use our APIs, SDKs, or other developer services or software, Discord’s
           <a href="https://discord.com/developers/docs/legal"
             >Developer Terms of Service</a
           >
@@ -1508,7 +1510,8 @@
             href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms"
             >Monetization Terms</a
           >
-          apply to any sales you make through Discord.
+          apply to any sales you make through Discord. By using Discord’s
+          services, you agree to these terms.
         </p>
         <p>
           Together, these rules make Discord possible, and they matter to us. If
@@ -1522,18 +1525,9 @@
       <div id="1" class="rich-guidlines-negative_new w-richtext">
         <h2>Who we are</h2>
         <p>
-          We provide services that allow you to interact with other Discord
-          users (such as through direct messages and group direct messages) and
-          participate in large and small spaces (or “servers”). Our services may
-          also include access to certain software, features, and content,
-          including items that you can purchase from us or others. Additional
-          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
-          apply to those purchases.
-        </p>
-        <p>
-          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
-          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
-          195, 1118 BG Schiphol, Netherlands.
+          We’re Discord! Discord Inc. is located at 444 De Haro Street #200, San
+          Francisco, CA 94107, USA. Discord Netherlands B.V. is located at
+          Schiphol Boulevard 195, 1118 BG Schiphol, Netherlands
         </p>
       </div>
       <div id="2" class="rich-guidlines-negative_new w-richtext">
@@ -1542,48 +1536,51 @@
         </h2>
         <p>
           By accessing our services, you confirm that you’re at least 13 years
-          old and meet the minimum age required by the laws in your country. We
-          maintain a
+          old and meet the minimum age required by the laws in your country. Our
+          services are not designed for nor directed towards users under the age
+          of 13. We may take additional steps, including the use of third-party
+          services, to determine whether you are old enough to create a Discord
+          account or access certain features or spaces. By creating a Discord
+          account or using our services, you accept and agree to be bound by
+          these terms and represent that you have either reached the age of
+          "majority" where you live or your parent or legal guardian agrees to
+          be bound by these terms on your behalf. If you do not know whether you
+          have reached the age of majority where you live, or do not understand
+          this section, please ask your parent or legal guardian for help and
+          ask them to read these terms with you. We maintain a
           <a href="https://support.discord.com/hc/en-us/articles/360040724612"
             >list of minimum ages</a
           >
           around the world as a resource for you, but we aren’t able to
-          guarantee that it is always accurate. If you are old enough to access
-          our services in your country, but not old enough to have authority to
-          consent to our terms, your parent or legal guardian must agree to our
-          terms on your behalf. Please ask your parent or legal guardian to read
-          these terms with you. If you’re a parent or legal guardian, and you
-          allow your child (who must meet the minimum age for your country) to
-          use the services, then these terms also apply to you and you’re
-          responsible for your child’s activity on the services, including
-          purchases made by them. For more information on purchases, see
-          “Discord’s Paid Services” below.
+          guarantee that it is always accurate. If you’re a parent or legal
+          guardian, and you allow your child (who must meet the minimum age for
+          your country) to use the services, then you and the minor child accept
+          and agree to be bound by these terms and are responsible for all use
+          of the Discord account or services, including your child’s activity on
+          the services and purchases made by them, whether the minor’s account
+          is now open or created later.
         </p>
       </div>
       <div id="3" class="rich-guidlines-negative_new w-richtext">
         <h2>What you can expect from us</h2>
         <p>
-          Discord is the best place to talk, hang out and have fun with friends
-          online. To do that, we provide different digital spaces where you can
-          connect with other Discord users and communities. Discord users
-          communicate primarily via “servers,” which are digital spaces made up
-          of different types of channels. Text channels allow users to interact
-          via text-based messages, as well as images, GIFs, emoji, and other
-          uploadable media. Voice channels allow users to communicate by voice
-          and/or streaming video. Users can also communicate one-to-one using
-          direct messages, or communicate with a limited number of users via
-          group direct messages. We’re always evolving our services, and we may
-          create other types of spaces in the future!
+          Discord provides services that help you connect with other Discord
+          users and communities. Discord users communicate primarily via
+          “servers,” which are digital spaces made up of different types of
+          channels. Text channels allow users to interact via text-based
+          messages, as well as images, GIFs, emoji, and other uploadable media.
+          Voice channels allow users to communicate by voice and/or streaming
+          video. Users can also communicate one-to-one using direct messages, or
+          communicate with a limited number of users via group direct messages.
+          We’re always evolving our services, and we may create other types of
+          spaces in the future!
         </p>
         <p>
           Users create servers, and users choose which servers to join and who
           their “friends” are. All users must follow our
           <a href="http://discord.com/guidelines">Community Guidelines</a> and
-          <a
-            href="https://support.discord.com/hc/en-us/articles/4420312247575-Additional-Terms-and-Policies"
-            >other policies</a
-          >, but in Servers, the server owners and server admins control the
-          server permissions and additional rules, including establishing
+          other policies, but in servers, the server owners and admins control
+          the server permissions and additional rules, including establishing
           membership requirements and creating custom roles and what those roles
           can do within the server. Server owners and admins also control
           whether to make their server available in Server Discovery, whether to
@@ -1596,23 +1593,63 @@
           Discord is designed to make communicating with the people you want to
           speak to as easy as possible. Posts appear in text channels in the
           order in which they’re made. Voice and video communication happens in
-          real time. We may build features that help you create content and
-          communicate with others, join conversations more easily, or may
-          highlight content and activity available to you on Discord that might
-          be of interest. Discord was also designed to make it easy to share
-          what you’re up to. You can stream what you’re doing on your device, or
-          you can share your status, including what game you're playing, what
-          song you’re listening to (if you link a music account), and more.
-          Sharing gameplay is fundamental to the Discord experience, so it’s
-          turned on by default. You can turn it off in your Settings at any
-          time, and you’re in control of whether or not you connect other
-          accounts to Discord.
+          real time. We may build features that help you create content,
+          communicate with others, discover or access content or third-party
+          services, or join conversations more easily, or may highlight content
+          and activity available to you on Discord that might be of interest.
+          This may include the ability for you, or other users, to connect a
+          Discord account and communicate on and off Discord through third-party
+          services (like
+          <a
+            href="https://support.discord.com/hc/en-us/articles/27893392334359-In-game-Features-Powered-by-Discord-FAQ"
+            >in-game features</a
+          >). Our services may also include certain features and content that
+          are provided or sponsored by others or that you can purchase from us
+          or others (additional
+          <a href="https://discord.com/terms/paid-services-terms">terms</a> may
+          apply). Learn more below about the
+          <a
+            href="https://docs.google.com/document/d/19EUC1tOgHBHhb5HQp7Hzg3fBVzYbbbqPdJBVz6Fv1Vg/edit?tab=t.0#heading=h.g3uftwzdze87"
+            >content</a
+          >
+          and <a href="https://discord.com/terms#6">software</a> that may be in
+          our services.
         </p>
         <p>
-          Discord’s services may be personalized to each user based on their
-          activity, so that you can see content and communities that may be of
-          interest to you. You can control whether and to what extent Discord
-          personalizes your experience in your Settings.&nbsp;
+          Discord is designed to integrate with your device to make it easy to
+          share what you’re up to. When Discord is running, we may identify
+          active games and other applications on your device to allow you to
+          quickly call a friend while in a game, stream what you’re doing on
+          your device, share your status (including what game you're playing or
+          what song you’re listening to if you link a music account), and more.
+          Sharing gameplay and other activity status is fundamental to the
+          Discord experience. You can change your Settings at any time, and
+          you’re in control of whether or not you connect other accounts to
+          Discord.
+        </p>
+        <p>
+          Discord’s services may be personalized to each user based on a variety
+          of factors, including their activity, preferences they identified in
+          their Settings, and servers they belong to, so that you can see
+          content and communities that may be of interest to you (such as
+          features or activity on Discord, promotions from us, and sponsored
+          content). You can control whether and to what extent Discord
+          personalizes your experience in your Settings.
+        </p>
+        <p>
+          Discord also takes user safety seriously. We provide features and
+          services that are designed to help keep users safe.&nbsp; Certain
+          features and settings may have different defaults depending on your
+          age or where you live, and some may not be optional at all. We also
+          provide tools and resources like
+          <a href="https://discord.com/safety-family-center">Family Center</a>
+          and our
+          <a href="https://discord.com/safety-parents">Guardian’s Guide</a> to
+          help parents and guardians better understand how Discord works, how
+          their teens may use Discord, and how they can develop collaborative
+          approaches to build positive online behaviors. We also provide
+          features to help make Discord more accessible
+          <a href="https://discord.com/accessibility">as described here</a>.
         </p>
         <p>
           We’re actively developing new features and products to improve
@@ -1633,7 +1670,7 @@
           Discord account. You can provide a username and password, and a way of
           contacting you (such as an email address and/or phone number). You’ll
           also need to provide your birthday. In some cases, you may be required
-          to verify your account or provide additional information.&nbsp;
+          to verify your account or provide additional information.
         </p>
         <p>
           You are responsible for the security of your account, and you agree to
@@ -1644,21 +1681,21 @@
           immediately if you believe your account has been compromised. If you
           use a password, it must be strong, and we (strongly) recommend that
           you use that password only for your Discord account and that you
-          enable two-factor authentication.&nbsp;
+          enable two-factor authentication.
         </p>
         <p>
           You must always provide accurate information to Discord and maintain
           the accuracy of the information associated with your account. We may
           assume that any communications we’ve received from your account or the
           associated contact information have been made by you, and that any
-          purchases made using your account were made by you.&nbsp;
+          purchases made using your account were made by you.
         </p>
         <p>
           If you get locked out of your account, we’ll need to contact you at
           the email or phone number associated with your account. If your
           account is compromised or you no longer have access to your email
           account or phone number, we may not be able to restore your access to
-          your account or the servers you’ve created.&nbsp;
+          your account or the servers you’ve created.
         </p>
         <p>
           You agree not to license, sell, lend, or transfer your account,
@@ -1669,7 +1706,7 @@
       </div>
       <div id="5" class="rich-guidlines-negative_new w-richtext">
         <h2>Content in Discord’s services</h2>
-        <h4>Your Content</h4>
+        <h4><strong>Your content</strong></h4>
         <p>
           When we say “your content” in these terms, we mean all the things you
           add (upload, post, share, stream, etc.) to our services. This includes
@@ -1698,53 +1735,34 @@
           admins, and they may change over time. Please understand where you are
           posting on Discord, familiarize yourself with the relevant server
           permissions when joining and posting in a certain space, and choose
-          the right space, features, and settings for you and your
-          content.&nbsp;
+          the right space, features, and settings for you and your content.
         </p>
         <p>
-          Your content is yours, but you give us a license to it when you use
-          Discord. Your content may be protected by certain intellectual
-          property rights. We don’t own those. But by using our services, you
-          grant us a license—which is a form of permission—to do the following
-          with your content, in accordance with applicable legal requirements,
-          in connection with operating, developing, and improving our services:
-        </p>
-        <ul role="list">
-          <li>
-            Use, copy, store, distribute, and communicate your content in
-            manners consistent with your use of the services. (For example, so
-            we can store and display your content.)
-          </li>
-          <li>
-            Publish, publicly perform, or publicly display your content if
-            you’ve chosen to make it visible to others. (For example, so we can
-            display your messages if you post them in certain servers or
-            recommend that content to others.)
-          </li>
-          <li>
-            Monitor, modify, translate, and reformat your content. (For example,
-            so we can resize an image you post to fit on a mobile device.)
-          </li>
-          <li>
-            Sublicense your content, to allow our services to work as intended.
-            (For example, so we can store your content with our cloud service
-            providers.)
-          </li>
-        </ul>
-        <p>
-          This license is worldwide, non-exclusive (which means you can still
-          license your content to others), royalty-free (which means there are
-          no fees for this license), transferable, and perpetual.
+          Your content is yours, but you give us a license (which is a form of
+          permission) to it when you use Discord. Your content may be protected
+          by certain intellectual property rights. We don’t own those. But by
+          using our services, you grant us a license to use, reproduce,
+          distribute, create derivative works of, display, and perform your
+          content. The rights you grant in this license are for the limited
+          purpose of providing, developing, and improving our services as
+          permitted by applicable laws. This license is worldwide, non-exclusive
+          (which means you can still license your content to others),
+          royalty-free (which means there are no fees for this license),
+          sublicensable, and transferable. Learn more about how we use your
+          content in our
+          <a href="https://discord.com/privacy">Privacy Policy</a>.
         </p>
         <p>
           We reserve the right to block, remove, and/or permanently delete your
-          content if it is in breach of these terms, our
+          content if we determine it is in breach of these terms, our
           <a href="https://discord.com/guidelines">Community Guidelines</a>, our
-          <a href="https://support.discord.com/hc/articles/4420312247575"
-            >other policies</a
-          >, or any applicable law or regulation, or if it creates risk for
-          Discord or negatively impacts the experience or interests of other
-          Discord users to continue to make it available.
+          other policies, or any applicable law or regulation, or if it creates
+          risk for Discord or negatively impacts the experience or interests of
+          other Discord users to continue to make it available. You agree that
+          we may disclose your content to third parties outside of the services
+          when we believe we’re required to do so by law or regulation or that
+          doing so is necessary to prevent harm to a person or to protect
+          Discord’s rights and property.
         </p>
         <p>
           We
@@ -1757,7 +1775,7 @@
           ideas generated from the feedback without any restrictions,
           attribution, or compensation to you.
         </p>
-        <h4>Discord’s content</h4>
+        <h4><strong>Discord’s content</strong></h4>
         <p>
           Our services include some content that belongs to us, such as the
           design of our apps and websites, our art and images, and content
@@ -1766,20 +1784,20 @@
           copyrights as permitted in our
           <a href="https://discord.com/branding">Brand Guidelines</a> or with
           our prior written permission. We retain all intellectual property
-          rights in our content.&nbsp;
+          rights in our content.
         </p>
-        <h4>Other content</h4>
+        <h4><strong>Other content</strong></h4>
         <p>
-          Other people’s content. Our services might also provide you with
-          access to other people’s content. You may not use this content without
-          that person’s consent, or as allowed by law. Other people’s content is
-          theirs and doesn’t necessarily reflect Discord’s own views. Discord
-          doesn’t endorse or verify the accuracy or reliability of content
-          shared by Discord users. We work hard to try to make Discord a safe,
-          positive, and inclusive place, but cannot always prevent you from
-          encountering content that you may find objectionable or offensive. You
-          agree we will not be liable for any harm caused by that content. You
-          may
+          <em>Other people’s content.</em> Our services might also provide you
+          with access to other people’s content. You may not use this content
+          without that person’s consent, or as allowed by law. Other people’s
+          content is theirs and doesn’t necessarily reflect Discord’s own views.
+          Discord doesn’t endorse or verify the accuracy or reliability of
+          content shared by Discord users. We work hard to try to make Discord a
+          safe, positive, and inclusive place, but cannot always prevent you
+          from encountering content that you may find objectionable or
+          offensive. You agree we will not be liable for any harm caused by that
+          content. You may
           <a
             href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
             >report content</a
@@ -1789,21 +1807,21 @@
           at our discretion.
         </p>
         <p>
-          Third party features and content. Our services may also allow you to
-          access third-party websites, features, apps, or other content. We
-          provide you access only as a convenience to you, and are not
-          responsible for the content or services available from these websites
-          or resources.
+          <em>Third-party features and content.</em> Our services may also
+          contain links to or allow you to access third-party websites,
+          features, apps, or other content. This may include sponsored content
+          (like Quests or other sponsored formats). We are not responsible for
+          the content or services available from these third parties.
         </p>
       </div>
       <div id="6" class="rich-guidlines-negative_new w-richtext">
         <h2>Software in Discord’s services</h2>
         <p>
-          License to our software. Some of our services allow you to download
-          client software. So long as you comply with these terms, we grant you
-          a worldwide, non-exclusive, personal, and non-assignable license to
-          download, install, and run that software, solely to access our
-          services.
+          <em>License to our software.</em> Some of our services allow you to
+          download client software. So long as you comply with these terms, we
+          grant you a worldwide, non-exclusive, personal, non-transferable,
+          non-sublicensable, and non-assignable license to download, install,
+          and run that software, solely to access our services.
         </p>
         <p>
           You may not copy, modify, create derivative works based upon,
@@ -1817,7 +1835,7 @@
           property rights we have in our software and services.
         </p>
         <p>
-          Open source. Some of Discord’s services
+          <em>Open source.</em> Some of Discord’s services
           <a href="https://discord.com/acknowledgements">include software</a>
           subject to separate
           <a href="https://discord.com/licenses">open source license terms</a>,
@@ -1826,21 +1844,39 @@
           as some licenses may explicitly override these terms.
         </p>
         <p>
-          Third-Party Services. Discord may allow you to access apps, bots, or
-          other products, features, or services developed by third parties
-          (“third-party services”). It’s your choice whether to use these
-          third-party services and whether to participate in Discord servers
-          that incorporate them. You should review any terms and policies
-          provided by the third parties before doing so as they govern your use
-          of their services. While these third parties do need to follow all
-          policies that apply to them (which may include these Terms, our
+          <em>Third-party services.</em> Discord may allow you to access apps,
+          bots, or other products, features, or services developed by third
+          parties (“third-party services”). For example, third parties can build
+          apps for content moderation or interactive games that server
+          administrators can add to their servers on Discord, or that
+          incorporate certain Discord-powered features or functions (such as
+          messaging capabilities) into their services (such as games played off
+          Discord). It’s your choice whether to use these third-party services
+          and whether to participate in Discord servers or other spaces that
+          incorporate them. You should review any terms and policies provided by
+          the third parties before doing so as they govern your use of their
+          services. While these third parties do need to follow all policies
+          that apply to them (which may include these Terms, our
           <a href="https://discord.com/guidelines">Community Guidelines</a>,
           <a href="https://discord.com/developers/docs/legal"
             >Developer Terms of Service</a
           >, and
           <a href="https://discord.com/developers/docs/policy"
             >Developer Policy</a
-          >), Discord is not responsible for any third-party services.
+          >), Discord is not responsible for any third-party services. The third
+          parties control the operation, functionality, and availability of
+          their services, including whether to make them available in our
+          discovery surfaces. Discord does not warrant or endorse, and will not
+          have any liability for, any third-party services. You may report
+          third-party apps (including bots and Activities) that you think
+          violate any of our applicable policies through this
+          <a
+            href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=12275528604823"
+            >form</a
+          >
+          or reporting options we make available via our services. We have the
+          right, but not the obligation, to review such reports and take
+          enforcement actions at our discretion.
         </p>
       </div>
       <div id="7" class="rich-guidlines-negative_new w-richtext">
@@ -1865,8 +1901,12 @@
           >
           also apply to any purchase you make using Discord’s supported purchase
           flows, and you may also be asked to agree to separate terms such as
-          our Monetization Terms before purchasing or selling new offerings
-          through Discord.
+          our
+          <a
+            href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms"
+            >Monetization Terms</a
+          >
+          before purchasing or selling new offerings through Discord.
         </p>
       </div>
       <div id="9" class="rich-guidlines-negative_new w-richtext">
@@ -1877,12 +1917,12 @@
           services for authorized and acceptable purposes. You must also adhere
           to our
           <a href="https://discord.com/guidelines">Community Guidelines</a> and
-          <a href="https://support.discord.com/hc/articles/4420312247575"
-            >other policies</a
-          >, which contain more detailed rules about your content and behavior
-          when using Discord and how we enforce them on Discord. Fundamentally,
-          do not do, try to do, or encourage or help others to do any of the
-          following:
+          other policies, which contain more detailed rules about your content
+          and behavior when using Discord and how we enforce them on Discord.
+        </p>
+        <p>
+          Fundamentally, do not do, try to do, or encourage or help others to do
+          any of the following:
         </p>
         <ul role="list">
           <li>
@@ -1890,19 +1930,25 @@
               >Don’t use the services to do harm to yourself or others.</strong
             >
             Among other things, this includes trying to gain access to another
-            user’s account or any non-public portions of the services,
+            user’s account or any non-public portions of the services;
             infringing anyone else’s intellectual property rights or any other
-            proprietary rights, exploiting, harassing, bullying, spamming,
-            auto-messaging, or auto-dialing people through our services.
+            proprietary rights; exploiting, harassing, bullying, spamming,
+            auto-messaging, or auto-dialing people through our services; and
+            using our services to plan or cause real-world harm to someone else.
           </li>
           <li>
             <strong>Don’t use the services to do harm to Discord.</strong> Among
-            other things, this includes trying to gain access to or attacking
-            our systems, scraping our services&nbsp;without our written consent,
-            transmitting viruses or other malicious code to our services,
-            abusing or defrauding us or our payment systems, copying our product
-            or using our intellectual property without permission, and misusing
-            our reporting or customer service mechanisms.
+            other things, this includes trying to gain access to, intentionally
+            overburdening, or attacking our systems; scraping our services
+            without our written consent, including by using any robot, spider,
+            crawler, scraper, or other automatic device, process, or software;
+            selling, licensing, or otherwise commercializing content or data
+            obtained from our services; transmitting viruses or other malicious
+            code to our services; using any unauthorized software designed to
+            modify the services; abusing or defrauding us or our payment
+            systems; copying, dismantling, or reverse engineering any of our
+            services or using our intellectual property without permission; and
+            misusing our reporting or customer service mechanisms.
           </li>
           <li>
             <strong
@@ -1916,7 +1962,7 @@
         <p>
           We encourage you to
           <a
-            href="https://support.discord.com/hc/en-us/articles/360000291932-How-to-Properly-Report-Issues-to-Trust-Safety"
+            href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
             >report content</a
           >
           or conduct that you believe violates these restrictions. You can learn
@@ -1925,10 +1971,16 @@
             href="https://discord.com/safety/our-approach-to-content-moderation"
             >Safety Center</a
           >.
+          <strong
+            >If you or someone else is in immediate danger, please contact your
+            local law enforcement agency. Please note that you cannot contact
+            law enforcement or other emergency services via our
+            services.</strong
+          >
         </p>
       </div>
       <div id="10" class="rich-guidlines-negative_new w-richtext">
-        <h2>Termination</h2>
+        <h2>Term &amp; Termination</h2>
         <p>
           Your right to terminate. You’re free to stop using Discord’s services
           at any time and for any reason. To terminate this agreement, you may
@@ -1949,12 +2001,11 @@
         </p>
         <ul role="list">
           <li>
-            You breach these terms, our
+            You breach, or you encourage or help others to breach, these terms
+            (including, our
             <a href="https://discord.com/guidelines">Community Guidelines</a>,
-            our
-            <a href="https://support.discord.com/hc/articles/4420312247575"
-              >other policies</a
-            >, or additional terms that apply to specific products.
+            our other policies, or additional terms that apply to specific
+            services).
           </li>
           <li>
             We’re required to do so to comply with a legal requirement or court
@@ -1987,27 +2038,29 @@
           <a
             href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
             >in-app options</a
-          >. If you reside in the European Economic Area, your appeal must be
-          submitted within six months of the relevant decision.
+          >. If you reside in the European Union, your appeal must be submitted
+          within six months of the day the relevant decision has been notified
+          to you.
         </p>
       </div>
       <div id="12" class="rich-guidlines-negative_new w-richtext">
         <h2>Indemnity</h2>
         <p>
-          If you are using the services on behalf of a business or legal entity
-          and not in an individual capacity, then you will indemnify and hold
-          Discord and its officers, directors, employees and agents harmless
-          from and against any claims, liabilities, damages, and costs
-          (including reasonable legal and accounting fees) related to (a) your
-          access to or use of our services, (b) your content, or (c) your
-          violation of these terms.
+          You will indemnify and hold Discord and its officers, directors,
+          employees and agents harmless from and against any claims,
+          liabilities, damages, and costs (including reasonable legal and
+          accounting fees) related to (a) your access to or use of our services
+          or third-party services, (b) your content, (c) your violation of these
+          terms, or (d) your negligence or willful misconduct.
         </p>
       </div>
       <div id="13" class="rich-guidlines-negative_new w-richtext">
         <h2>Services “AS IS”</h2>
         <p>
-          We work hard to offer great services, but there are certain aspects
-          that we can’t guarantee. TO THE FULLEST EXTENT PERMITTED BY LAW,
+          We work hard to offer great services, but we can’t guarantee any
+          minimum levels of quality of services (which may also depend on
+          factors beyond our control, such as the quality of your internet
+          access and equipment). TO THE FULLEST EXTENT PERMITTED BY LAW,
           DISCORD, ITS AFFILIATES, AND THEIR RESPECTIVE SUPPLIERS MAKE NO
           WARRANTIES, EITHER EXPRESS OR IMPLIED, ABOUT THE SERVICES. THE
           SERVICES ARE PROVIDED “AS IS.” WE ALSO DISCLAIM ANY IMPLIED WARRANTIES
@@ -2034,7 +2087,7 @@
         <h2>Limitation of liability</h2>
         <p>
           WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE
-          ILLEGAL TO DO SO. IN COUNTRIES WHERE THE BELOW TYPES OF EXCLUSIONS
+          ILLEGAL TO DO SO. IN JURISDICTIONS WHERE THE BELOW TYPES OF EXCLUSIONS
           AREN’T ALLOWED, WE’RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES
           THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE
           REASONABLE CARE AND SKILL OR OUR MATERIAL<strong> </strong>BREACH OF
@@ -2048,10 +2101,10 @@
           ON SUCH INFORMATION IS SOLELY AT YOUR OWN RISK.
         </p>
         <p>
-          IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED,
-          NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN
-          CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE
-          MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL,
+          IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE
+          ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED
+          IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO
+          THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL,
           SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST
           PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS
           OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM
@@ -2084,329 +2137,543 @@
       <div id="16" class="rich-guidlines-negative_new w-richtext">
         <h2>Settling disputes between you and Discord</h2>
         <p>
-          <strong>Informal resolution.</strong>&nbsp; Most disputes can be
-          resolved informally, so if you have an issue with the services, you
-          agree to reach out to us before initiating a lawsuit or arbitration.
-          This requires emailing
+          PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS,
+          INCLUDING YOUR RIGHT TO FILE OR PARTICIPATE IN A LAWSUIT IN COURT AND
+          LIMITING YOUR RIGHTS TO RESOLVE YOUR DISPUTE AS PART OF A CLASS OR
+          REPRESENTATIVE ACTION.
+        </p>
+        <p>
+          <strong
+            >This section applies to any and all disputes between you and
+            Discord.</strong
+          >&nbsp; “Disputes” means all disagreements between us including but
+          not limited to claims arising out of or relating to any aspect of the
+          relationship between us, these terms, or your use of the services,
+          whether based in contract, tort, statute, fraud, misrepresentation or
+          any other legal theory (each a “Dispute” and collectively “Disputes”).
+        </p>
+        <p>
+          <strong>“Informal Dispute Resolution.”</strong> &nbsp;Most Disputes
+          can be resolved informally. If you have an issue with the services or
+          Discord, you agree that you will reach out to us and use good faith
+          efforts to settle the Dispute informally through negotiation before
+          initiating a lawsuit or arbitration. This requires emailing
           <a href="mailto:disputes@discordapp.com">disputes@discordapp.com</a> a
-          written notice (“Written Notice”), which must include: (1) your name;
-          (2) the email address or phone number associated with your Discord
-          account; (3) a detailed description of the issue; and (4) how you’d
-          like to resolve it.&nbsp; If the dispute is not resolved within sixty
-          (60) days after receipt of the Written Notice, you and Discord agree
-          to resolve any remaining dispute through further informal discussions
-          or one of the formal dispute resolution provisions below.&nbsp; You
-          must engage in this informal resolution process before starting any
-          formal dispute resolution unless exempted by law. Applicable statutes
-          of limitations and due dates for arbitration filing fees or other
-          deadlines will be tolled upon receipt of the Written Notice to
-          disputes@discordapp.com, while the parties attempt informal
-          resolution.
+          written notice (“Written Notice”) about your issue, which must
+          include: (1) your name; (2) the email address or phone number
+          associated with your Discord account; (3) a detailed description of
+          the issue; and (4) how you’d like to resolve it. This notice must be
+          provided on an individual basis and you, along with your counsel if
+          you have one, must be available personally for a telephone or
+          videoconference to resolve your claims, unless Discord states in
+          writing that you are not personally required to attend.
+        </p>
+        <p>
+          If the Dispute is not resolved within 60 days after receipt of the
+          Written Notice, you and Discord agree to resolve any remaining Dispute
+          through further informal discussions or one of the formal dispute
+          resolution provisions below.
+        </p>
+        <p>
+          This Informal Dispute Resolution process, including your personal
+          participation in the meet and confer is a prerequisite and condition
+          precedent to commencing any formal dispute resolution proceeding. You
+          and Discord (the “Parties”) agree that any applicable statute of
+          limitations period and filing fees or other deadlines will be tolled
+          while the Parties engage in this Informal Dispute Resolution process.
+          The Parties further agree that whether a complaining Party has
+          satisfied the requirements of this Informal Dispute Resolution
+          process, including whether a Written Notice was properly submitted or
+          contained all required information, is an issue that can be decided by
+          a court as a prerequisite to arbitration.
         </p>
         <p>
           If you reside in the European Union, you may also be entitled to
-          submit your complaint to the
-          <a
-            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=EN"
-            >European Commission’s Online Dispute Resolution (ODR) Platform</a
-          >
-          or the Out-of-Court Dispute Settlement (“OCDS”) mechanism under DSA
-          Article 21. ODR allows EU consumers to resolve disputes related to the
-          online purchases of goods and services without going to court.&nbsp;
-          Note that a submission to the ODR or via the OCDS mechanism alone,
-          without submitting a Written Notice to
+          submit your complaint to the Out-of-Court Dispute Settlement (“OCDS”)
+          mechanism under DSA Article 21. Note that a submission via the OCDS
+          mechanism alone, without submitting a Written Notice to
           <a href="mailto:disputes@discordapp.com">disputes@discordapp.com</a>,
           will not toll the applicable statutes of limitations or other
           deadlines.
         </p>
         <p>
-          <strong>Governing law and jurisdiction.</strong> The Federal
-          Arbitration Act, federal arbitration law, and California law will
-          apply to these terms and any disputes related to these terms or our
-          services, regardless of conflict of laws rules. Any dispute that is
-          not subject to arbitration will be resolved exclusively in the state
-          or federal courts in San Francisco County, California, and you and
-          Discord both consent to venue and personal jurisdiction in these
-          courts.
+          <strong
+            >Governing Law, Jurisdiction, Class Action Waiver and Time
+            Limitation.</strong
+          >
+        </p>
+        <p>EXCEPT WHERE PROHIBITED BY APPLICABLE LAW:</p>
+        <p>
+          <strong>Choice of Law</strong>. These terms and all Disputes between
+          you and Discord, whether in arbitration or court (if a Dispute is
+          non-arbitrable under these terms for any other reason), shall be
+          governed by the law of the United States and the laws of California,
+          without regard to conflicts of law provisions—in other words, any
+          federal law or California law, including any conflict of law
+          principle, that would provide for the application of the laws of
+          another jurisdiction other than the United States or California shall
+          not apply.
+        </p>
+        <p>
+          <strong>Venue and Jurisdiction</strong>. By agreeing to these terms,
+          you and Discord agree that to the extent any Dispute is not
+          arbitrable—including any arbitration-related litigation, such as a
+          motion to compel arbitration, to stay proceedings pending arbitration,
+          or to confirm, modify, vacate, or enter judgment on an arbitration
+          award—the Dispute must be resolved exclusively by a court of competent
+          jurisdiction, federal or state (including small claims court), located
+          in the County of New Castle, Delaware, and no other court. You and
+          Discord consent to the exercise of personal jurisdiction over you by
+          such courts with respect to any such Dispute.
         </p>
         <p>
           If you are a consumer residing in the European Union, this clause and
           these terms in general do not affect any mandatory consumer rights you
-          may have under your local law, and all disputes arising in connection
+          may have under your local law, and all Disputes arising in connection
           with the services and/or these terms shall be submitted to the
           exclusive jurisdiction of the court of Amsterdam, the Netherlands or,
-          if you are a consumer, to a court closer to your domicile if in an EU
-          Member State.
-        </p>
-        <p><strong>Agreement to arbitrate.</strong></p>
-        <p>
-          ‍IF YOU’RE A U.S. RESIDENT, YOU ALSO AGREE TO THE FOLLOWING MANDATORY
-          ARBITRATION PROVISIONS.&nbsp; PLEASE READ THIS SECTION CAREFULLY – IT
-          MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO
-          FILE A LAWSUIT IN COURT:
+          if you are a consumer, to a court in your domicile if in an EU Member
+          State.
         </p>
         <p>
-          You and Discord agree that the U.S. Federal Arbitration Act governs
-          the interpretation and enforcement of these arbitration provisions.
-          Except for the circumstances described below, and only after the
-          parties have engaged in a good-faith, but unsuccessful, effort to
-          resolve the dispute in accordance with the “informal resolution”
-          process (above), you and Discord agree to resolve any dispute,
-          disagreement, or claim relating to these terms or our services through
-          final and binding arbitration in the U.S. county where you
-          reside.&nbsp; This includes claims that arose, were asserted, or
-          involve facts occurring before the existence of this arbitration
-          agreement or any prior agreement as well as claims that may arise
-          after the termination of this arbitration agreement, in accordance
-          with the notice and opt-out provisions set forth in section.&nbsp;
+          <strong>Class Action Waiver.</strong>&nbsp; You agree that any Dispute
+          between you and Discord that for any reason is not subject to the
+          “Agreement to Arbitrate” section below may only be pursued by you on
+          an individual basis, and you may not bring a claim as a plaintiff or a
+          class member in a class, collective, or representative action. To the
+          extent a Dispute between you and Discord is subject to arbitration,
+          the provisions set forth in the “Agreement to Arbitrate” apply,
+          including those regarding class arbitration, private attorney general
+          arbitration, arbitration involving joint or consolidated claims, and
+          batching.
         </p>
         <p>
-          <strong>‍Arbitration rules.</strong> The arbitration will be conducted
-          by a single arbitrator, governed by these terms and the American
-          Arbitration Association Rules, excluding any rules or procedures
-          governing or permitting class or representative actions (the “AAA
-          Rules”), available at https://www.adr.org/active-rules. These terms
-          will govern if there’s a conflict between these terms and the AAA
-          Rules.&nbsp; To begin the arbitration proceeding, either party must
-          submit a written Demand for Arbitration (available at www.adr.org)
-          with the AAA and provide a copy to the other party as specified in the
-          AAA Rules.&nbsp; To provide notice to Discord, please send an email
-          with the subject line “Arbitration Demand” to disputes@discordapp.com.
+          <strong>Time for Initiating a Claim.</strong> No action, regardless of
+          form, arising out of or relating to a Dispute may be brought by either
+          Party more than one (1) year after the cause of action has accrued.
+        </p>
+        <p>
+          ‍IF YOU’RE A U.S. OR CANADIAN RESIDENT YOU ALSO AGREE TO THE FOLLOWING
+          “AGREEMENT TO ARBITRATE” WHICH CONTAINS MANDATORY ARBITRATION
+          PROVISIONS. &nbsp;PLEASE READ THIS SECTION CAREFULLY – IT MAY
+          SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A
+          LAWSUIT IN COURT:
+        </p>
+        <p><strong>Agreement to Arbitrate.</strong></p>
+        <p>
+          The “Agreement to Arbitrate” includes all provisions following this
+          heading, through and including the paragraph titled “Changes to this
+          Agreement to Arbitrate.”
+        </p>
+        <p>
+          Only after engaging in the Informal Dispute Resolution process set
+          forth in these Terms, and only after those efforts fail to resolve the
+          Dispute, then either Party may initiate binding arbitration as the
+          sole means to resolve Disputes, subject to the terms of this Agreement
+          to Arbitrate and the applicable arbitration rules.
+        </p>
+        <p>
+          You and Discord (collectively the “Parties”) agree that this Agreement
+          to Arbitrate is made pursuant to a transaction involving interstate
+          commerce, and shall be governed by the Federal Arbitration Act
+          (“FAA”), 9 U.S.C. §§ 1-16.
+        </p>
+        <p>
+          This Agreement to Arbitrate is intended to be interpreted broadly, and
+          it applies to all Disputes between the Parties, including: (1) claims
+          that arose, were asserted, or involve facts occurring before the
+          existence of this Agreement to Arbitrate or any prior agreement; (2)
+          claims that may arise after the termination of this Agreement to
+          Arbitrate. This Agreement to Arbitrate supersedes any prior
+          arbitration agreement between Discord and you.
+        </p>
+        <p>
+          Except as set forth in the paragraph below titled “Exceptions,” the
+          arbitrator, and not any federal, state, or local court or agency,
+          shall have exclusive authority to resolve: (1) all Disputes; (2)
+          whether a claim is subject to arbitration; and (3) any dispute
+          regarding the payment of administrative or arbitrator fees (including
+          the timing of such payments and remedies for nonpayment). The
+          arbitrator shall be empowered to grant whatever relief would be
+          available in a court under law or in equity. The arbitrator has the
+          right to impose sanctions in accordance with the arbitration provider
+          rules and procedures for any frivolous claims or submissions the
+          arbitrator determines have not been filed in good faith, as well as
+          for a Party's failure to comply with this Agreement to Arbitrate or
+          the Informal Dispute Resolution process.
+        </p>
+        <p>
+          ARBITRATION MEANS THAT YOU WAIVE YOUR RIGHT TO A JURY TRIAL. In some
+          instances, the costs of arbitration could exceed the costs of
+          litigation and the right to discovery may be more limited in
+          arbitration than in court. YOU HEREBY ACKNOWLEDGE AND AGREE THAT YOU
+          AND DISCORD ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY TO THE
+          MAXIMUM EXTENT PERMITTED BY LAW.
+        </p>
+        <p>
+          <strong>‍Arbitration Rules.</strong> For residents of the state of
+          California, or Mass Arbitrations involving any residents of the state
+          of California, the arbitration will be administered by ADR Services,
+          Inc. (“ADR Services”) (<a href="https://www.adrservices.com/"
+            >https://www.adrservices.com/</a
+          >).&nbsp; For residents of all states other than California, and Mass
+          Arbitrations involving no residents of California, the arbitration
+          will be administered by National Arbitration and Mediation ("NAM") and
+          resolved before a single arbitrator. For residents of all states other
+          than California if, and only if, NAM is not available to arbitrate,
+          the alternative arbitrator shall be ADR Services, Inc. (“ADR
+          Services”) (<a href="https://www.adrservices.com/"
+            >https://www.adrservices.com/</a
+          >).
+        </p>
+        <p>
+          Except as modified by this Agreement to Arbitrate, NAM will administer
+          any arbitration in accordance with the NAM “Comprehensive Dispute
+          Resolution Rules and Procedures,” “Fees For Disputes When One of the
+          Parties is a Consumer,” and the “Mass Filing Supplemental Dispute
+          Resolution Rules and Procedures” in effect at the time any demand for
+          arbitration is filed with NAM, excluding any rules or procedures
+          permitting class or representative actions. The applicable NAM rules
+          and procedures are available at
+          <a href="https://www.namadr.com/">www.namadr.com</a> or by emailing
+          National Arbitration and Mediation’s Commercial Department at
+          <a href="mailto:commercial@namadr.com">commercial@namadr.com</a>.
+        </p>
+        <p>
+          Except as modified by this Agreement to Arbitrate, ADR Services will
+          administer any arbitration in accordance with the ADR Services
+          Arbitration Rules and General Fee Schedule in effect at the time any
+          demand for arbitration is filed with ADR Services, including its rules
+          regarding “Mass Arbitrations,” and excluding any rules permitting
+          class or representative actions.&nbsp; The applicable ADR Services
+          rules and procedures are available at
+          <a href="http://www.adrservices.com">www.adrservices.com</a>.
         </p>
         <p>
           If the amount in controversy does not exceed $10,000, and you do not
           seek injunctive or declaratory relief, then the arbitration will be
           conducted solely on the basis of documents you and Discord submit to
           the arbitrator, unless the arbitrator determines that a hearing is
-          necessary. If the amount in controversy exceeds $10,000 or seeks
-          declaratory or injunctive relief, either party may request (or the
-          arbitrator may determine) to hold a hearing, which may be in-person,
-          videoconference, or telephone conference.&nbsp;
+          necessary or applicable law requires otherwise. If the amount in
+          controversy exceeds $10,000 or seeks declaratory or injunctive relief,
+          either Party may request (or the arbitrator may determine) to hold a
+          hearing, which may be in-person, via videoconference, or via telephone
+          conference. You and Discord agree that dispositive motions will be
+          allowed in the arbitration.
         </p>
         <p>
-          <strong>‍Arbitration costs.</strong> AAA sets forth fees for its
-          services, which are available at
-          www.adr.org/sites/default/files/Consumer-Fee_Schedule.pdf. If Discord
-          is the party initiating an arbitration against you, Discord will pay
-          all costs associated with the arbitration, including the entire filing
-          fee. If you initiate an arbitration against Discord, you will be
-          responsible for the first $100 toward the nonrefundable Initial Filing
-          Fee, unless the arbitrator determines that you are unable to pay, in
-          which case Discord will pay the entire filing fee. For cases seeking
-          less than $75K, Discord will pay the remainder of the Initial Filing
-          Fee and both parties’ Administrative fees (unless the arbitrator finds
-          your claims, defenses, or other fee-generating activity to be
-          conducted for an improper purpose or frivolous (under the standard set
-          forth in Federal Rule of Civil Procedure 11).&nbsp; For cases seeking
-          more than $75K, fees and costs will be determined in accordance with
-          AAA Rules.&nbsp;
+          <strong>‍Arbitration Costs.</strong> ADR Services and NAM set forth
+          fees for their services, which are available from each provider. If
+          Discord is the Party initiating an arbitration against you, Discord
+          will pay all costs associated with the arbitration, including the
+          entire filing fee. If you initiate an arbitration against Discord,
+          costs will be determined in accordance with the Rules for the
+          applicable arbitration provider, to the extent allowed by law. In all
+          arbitrations, unless otherwise required by law or the arbitration
+          provider’s rules, you are responsible for all other additional
+          arbitration costs incurred, including attorney’s fees and expert
+          witness costs.
         </p>
         <p>
-          In all arbitrations, unless otherwise required by law or the AAA
-          Rules, you’re responsible for all other additional arbitration costs
-          incurred, including attorney’s fees and expert witness costs. The
-          parties agree that AAA has discretion to modify the amount or timing
-          of any administrative or arbitration fees due under AAA’s Rules where
-          it deems appropriate, provided that such modification does not
-          increase the costs to you, and you waive any objection to such fee
-          modification. The parties also agree that a good-faith challenge by
-          either party to the fees imposed by AAA does not constitute a default,
-          waiver, or breach of this Section while such challenge remains pending
-          before AAA, the arbitrator, and/or a court of competent jurisdiction.
+          The Parties agree that the arbitration provider has discretion to
+          modify the amount or timing of any administrative or arbitration fees
+          due under the applicable rules where it deems appropriate, provided
+          that such modification does not increase the costs to you, and you
+          waive any objection to such fee modification. The Parties also agree
+          that a good-faith challenge by either Party to the fees imposed by an
+          arbitration provider does not constitute a default, waiver, or breach
+          of this Section while such challenge remains pending before the
+          arbitration provider, the arbitrator, and/or a court of competent
+          jurisdiction and all due dates for those fees shall be tolled during
+          the pendency of such challenge.
         </p>
         <p>
           <strong>Offer of Judgment.</strong> At least 14 days before the date
-          set for an arbitration hearing, any party may serve an offer in
-          writing upon the other party to allow judgment on specified terms. If
-          the offer made by the offering party is not accepted by the other
-          party, and the other party fails to obtain a more favorable award, the
-          other party will not recover its post-offer costs and will pay the
-          offering party’s costs from the time of the offer.
+          set for an arbitration hearing, any Party may serve an offer in
+          writing upon the other Party to allow judgment on specified terms. If
+          the offer made by the offering Party is not accepted by the other
+          Party, and the other Party fails to obtain a more favorable award, the
+          other Party will not recover its post-offer costs and will pay the
+          offering Party’s costs from the time of the offer.
         </p>
         <p>
           <strong>Arbitration Decision.</strong> The decision of the arbitrator
           will be in writing and binding on you and Discord, and judgment to
           enforce the decision may be entered by any court of competent
-          jurisdiction. You and Discord agree that dispositive motions will be
-          allowed in the arbitration. Except as explicitly set forth in this
-          arbitration section, the arbitrator, and not any federal, state or
-          local court or agency, shall have exclusive authority to resolve all
-          disputes arising out of or relating to the interpretation,
-          applicability, enforceability or formation of these terms of service,
-          including, but not limited to any claim that all or any part of these
-          terms of service are void or voidable, whether a claim is subject to
-          arbitration, and any dispute regarding the payment of AAA or
-          arbitrator fees (including the timing of such payments and remedies
-          for nonpayment). The arbitrator must follow these terms and can award
-          the same damages and relief as a court. The arbitrator has the right
-          to impose sanctions in accordance with the AAA Rules and procedures
-          for any frivolous claims, improper claims, or submissions the
-          arbitrator determines have not been filed in good faith, as well as
-          for a party's failure to comply with this Section or claims filed on
-          behalf of a claimant who is not party to this agreement. No
-          arbitration award or decision will have any preclusive effect as to
-          issues or claims in any dispute with anyone who is not a named party
-          to the arbitration. &nbsp;
+          jurisdiction.
         </p>
         <p>
-          <strong>Mass filings.</strong> If, at any time, 30 or more similar
-          demands for arbitration are asserted against Discord or related
-          parties by the same or coordinated counsel or entities (“Mass
-          Filing”), these additional rules will apply:
+          Except as explicitly set forth in this Agreement to Arbitrate, the
+          arbitrator, and not any federal, state or local court or agency, shall
+          have exclusive authority to resolve all Disputes arising out of or
+          relating to the interpretation, applicability, enforceability or
+          formation of these terms, including any claim that all or any part of
+          these terms are void or voidable, whether a claim is subject to
+          arbitration, and any dispute regarding the payment of arbitration
+          provider or arbitrator fees (including the timing of such payments and
+          remedies for nonpayment). The arbitrator must follow these terms and
+          can award the same damages and relief as a court. The arbitrator has
+          the right to impose sanctions in accordance with the arbitration
+          provider’s rules and procedures for any frivolous claims, improper
+          claims, or submissions the arbitrator determines have not been filed
+          in good faith, as well as for a Party's failure to comply with this
+          Agreement to Arbitrate or claims filed on behalf of a claimant who is
+          not party to this agreement. No arbitration award or decision will
+          have any preclusive effect as to issues or claims in any dispute with
+          anyone who is not a named party to the arbitration.
         </p>
         <p>
-          If you or your counsel file a demand for arbitration that fits within
-          the definition of Mass Filing, you agree that your demand for
-          arbitration will be subject to the additional protocols set forth in
-          this mass filing subsection.
+          <strong>Arbitration Location</strong>. &nbsp; Except as provided below
+          in the “Mass Filings” section, if you are a resident of the United
+          States and initiate arbitration, such arbitration will take place in
+          the County where you reside, or if no arbitrator is available in that
+          County, then at the closest arbitration location available in the
+          state. If Discord initiates arbitration, and for residents in Canada,
+          arbitration shall be initiated in the County of New Castle, Delaware,
+          United States of America, unless you and Discord otherwise agree or
+          unless the designated arbitrator determines, based on a written
+          objection, that such venue would be unreasonably burdensome to any
+          Party, in which case the arbitrator shall have the discretion to
+          select another venue despite either Party’s initial selection. For any
+          arbitration conducted, the Parties agree to submit to the personal
+          jurisdiction of any federal or state court in New Castle County,
+          Delaware, in order to compel arbitration, to stay proceedings pending
+          arbitration, or to confirm, modify, vacate or enter judgment on the
+          award entered by the arbitrator; and in connection with any such
+          proceeding, the Parties hereby waive any and all jurisdictional and
+          venue defenses otherwise available. The Parties agree that arbitration
+          may take place exclusively by video, where such arrangements are
+          acceptable to the appointed arbitrator.
+        </p>
+        <p><strong>Mass Filings.</strong></p>
+        <p>
+          For arbitrations before NAM (or any substitute provider for NAM that
+          is agreed upon by the Parties or appointed by a court, due to NAM’s
+          unavailability for any reason), to increase the efficiency of
+          administration and resolution of arbitrations, in the event 100 or
+          more similar arbitration demands (those asserting the same or
+          substantially similar facts or claims, and seeking the same or
+          substantially similar relief) presented by or with the assistance or
+          coordination of the same law firm(s) or organization(s) are submitted
+          to NAM against Discord within reasonably close temporal proximity
+          ("Mass Filing"), the Parties agree (i) to administer the Mass Filing
+          in batches of 100 demands per batch (to the extent there are fewer
+          than 100 arbitration demands left over after the batching described
+          above, a final batch will consist of the remaining demands) with only
+          one batch filed, processed, and adjudicated at a time; (ii) to
+          designate one arbitrator for each batch; (iii) to accept applicable
+          fees, including any related fee reduction determined by NAM; (iv) that
+          10% of the anticipated total number of batches for the Mass Filing may
+          proceed simultaneously as set forth in this batching provision and
+          Agreement to Arbitrate, but no other demands for arbitration that are
+          part of the Mass Filing may be filed, processed, or adjudicated until
+          the completion of the “Mediation Period” described below, and after a
+          prior batch of 100 is filed, processed, and adjudicated; (v) that fees
+          associated with a demand for arbitration included in a Mass Filing,
+          including fees owed by Discord and the claimants, shall only be due
+          after your demand for arbitration is included in a set of batch
+          proceedings and that batch is properly designated for filing,
+          processing, and adjudication; and (vi) that the staged process of
+          batched proceedings, with each set including 100 demands, shall
+          continue until each demand (including your demand) is adjudicated or
+          otherwise resolved. Arbitrator selection for each batch shall be
+          conducted in accordance with the applicable NAM rules and procedures
+          for such selection and shall be subject to any rights to strike an
+          arbitrator provided under applicable state law if the rights granted
+          by law exceed those provided for in the NAM rules.&nbsp;
+          Notwithstanding the Section entitled “Arbitration Location,” for
+          arbitrations subject to this “Mass Filings” Section, the arbitrator
+          will determine the location where the proceedings will be conducted.
+          <strong
+            >You agree to cooperate in good faith with Discord, the arbitrator,
+            and the arbitration provider to implement such a “batch approach” or
+            other similar approach to provide for an efficient resolution of
+            claims, including the payment of combined reduced fees, set by NAM
+            in its discretion, for each batch of claims.</strong
+          >
+          &nbsp;Any disagreement between the Parties as to whether this
+          provision applies or as to the process or procedure for batching, or
+          whether any demands are properly brought and may be included in a
+          batch, shall be resolved by a procedural arbitrator appointed by NAM.
+          This "Batch Arbitration" provision shall in no way be interpreted as
+          increasing the number of claims necessary to trigger the applicability
+          of NAM’s Mass Filing Supplemental Dispute Resolution Rules and
+          Procedures or authorizing class arbitration of any kind. If your
+          demand for arbitration is included in the Mass Filing, any statute of
+          limitation applicable to your claims will remain tolled until your
+          demand for arbitration is decided, withdrawn, or is settled.
         </p>
         <p>
-          Bellwether proceedings are encouraged by courts and arbitration
-          administrators when there are multiple disputes involving similar
-          claims against the same or related parties. You and Discord agree to
-          jointly ask the arbitrator to agree to the following procedures: The
-          arbitrator will randomly assign sequential numbers to each of the
-          claims included in a Mass Filing, after which the claims numbered 1-10
-          will be designated the “Initial Test Cases” and will proceed to
-          arbitration. The Parties agree to decide on a single arbitrator for
-          all Initial Test Cases and to consolidate the cases for pre-hearing
-          procedures and the pre-hearing conference. Unless the claims are
-          resolved in advance or the schedule is extended, the arbitrator will
-          render final awards for the Initial Test Cases within 120 days of the
-          initial pre-hearing conference. If fewer than 5 Initial Test Cases
-          resolve without a final decision of the arbitrator because they are
-          resolved in advance, cases will be selected in batches of 10 and will
-          proceed to arbitration until at least 5 have been resolved by a final
-          arbitrator decision. The arbitrator’s decisions for the Initial Test
-          Cases shall be in writing and shall contain the essential findings and
-          conclusions of fact and law upon which the arbitrator based the
-          decision.&nbsp;&nbsp;
+          For arbitrations before NAM, the results of the first completely
+          adjudicated batch of demands will be given to a NAM mediator selected
+          from a group of 5 mediators proposed by NAM, with Discord and the
+          remaining claimants’ counsel being able to strike one mediator each
+          and then rank the remaining mediators and the highest collectively
+          ranked mediator being selected. The selected mediator will try to
+          facilitate a resolution of the remaining demands in the Mass Filing.
+          After the results of the first batch are provided to the mediator,
+          Discord, the remaining claimants and their counsel, and the mediator
+          will have 90 days (the <strong>“Mediation Period”</strong>) to agree
+          on a resolution or substantive methodology for resolving the
+          outstanding demands. If the Parties are unable to resolve the
+          outstanding demands during the Mediation Period and cannot agree on a
+          methodology for resolving them through further arbitrations, either
+          Discord or any remaining claimant may opt out of the arbitration
+          process (“Mass Arbitration Opt Out”) and have the demand(s) proceed in
+          a court of competent jurisdiction. Notice of the Mass Arbitration Opt
+          Out will be provided in writing within 60 days of the close of the
+          Mediation Period. If neither Discord nor the remaining claimants
+          decide to trigger the Mass Arbitration Opt Out and they cannot agree
+          to a methodology for resolving the remaining demands through further
+          arbitration, the arbitrations will continue with the batching
+          process.&nbsp; Absent notice of a Mass Arbitration Opt Out, the
+          arbitrations will proceed in the order determined by the sequential
+          numbers assigned to demands in the Mass Filing.
         </p>
         <p>
-          The results of the Initial Test Cases resolved by a final arbitrator
-          decision will then be given to a mediator who will try to facilitate a
-          resolution of the remaining cases. After the results are provided to
-          the mediator, the mediator and the parties will have 90 days (the
-          “Mediation Period”) to agree on a resolution or substantive
-          methodology for resolving the outstanding cases. If the parties are
-          unable to resolve the outstanding claims during the Mediation Period,
-          either Party may choose to opt out of the arbitration process and
-          proceed in court with its remaining claims. Notice of the opt-out will
-          be provided in writing within 60 days of the close of the Mediation
-          Period.&nbsp; Opt out of arbitration under this section shall not be
-          construed as opt out of the section titled “Class Waiver” below.&nbsp;
+          <strong>Arbitration Proceedings at ADR Services.</strong>&nbsp; Except
+          as set forth in this provision, the paragraphs in the “Mass Filings”
+          provision shall not apply to arbitrations proceeding at ADR Services,
+          which the Parties agree shall be governed by ADR Services Rules,
+          including ADR Services’ rules applicable to “Mass Filings”.&nbsp; For
+          Mass Filings at ADR Services, the Parties also agree that after 10% of
+          the total number of cases that are subject to the Mass Filings have
+          been resolved, Discord and the remaining claimants shall participate
+          in a mediation, and at the conclusion of that process, if the Parties
+          are unable to resolve the outstanding demands and cannot agree on a
+          methodology for resolving them through further arbitrations, either
+          Discord or any remaining claimant may opt out of the arbitration
+          process.
         </p>
         <p>
-          Absent notice of an opt-out, the arbitrations will proceed in the
-          order determined by the sequential numbers assigned to claims in the
-          Mass Filing.&nbsp;&nbsp;
-        </p>
-        <p>
-          If your demand for arbitration is included in the Mass Filing, any
-          statute of limitations applicable to your claims will remain tolled
-          until your demand for arbitration is decided, withdrawn, or is
-          settled.
-        </p>
-        <p>
-          <strong>‍Other remedies.</strong> ARBITRATION MEANS THAT YOU WAIVE
-          YOUR RIGHT TO A JURY TRIAL. In some instances, the costs of
-          arbitration could exceed the costs of litigation and the right to
-          discovery may be more limited in arbitration than in court. YOU HEREBY
-          ACKNOWLEDGE AND AGREE THAT YOU AND DISCORD ARE EACH WAIVING THE RIGHT
-          TO A TRIAL BY JURY TO THE MAXIMUM EXTENT PERMITTED BY LAW. You may, in
-          arbitration, seek any and all remedies otherwise available to you
-          pursuant to your state’s law.&nbsp;&nbsp;
-        </p>
-        <p>
-          <strong>‍Opt-out.</strong> You can decline this agreement to arbitrate
-          by emailing an opt-out notice to arbitration-opt-out@discord.com
-          within 30 days of April 15, 2024 or when you first register your
-          Discord account, whichever is later; otherwise, you shall be bound to
-          arbitrate disputes in accordance with the terms of these paragraphs.
-          If you opt out of these arbitration provisions, Discord also will not
-          be bound by them.
+          <strong>‍Opt-out.</strong> You can decline this
+          <strong>Agreement to Arbitrate</strong>–and no other provision of
+          these terms–by emailing an opt-out notice to
+          arbitration-opt-out@discord.com within 30 days of September 29, 2025
+          or when you first register your Discord account, whichever is later;
+          otherwise, you shall be bound to arbitrate Disputes in accordance with
+          the terms of these paragraphs. If you opt out of the Agreement to
+          Arbitrate, Discord also will not be bound by it and there shall be no
+          arbitration agreement existing between you and Discord, whether under
+          these or prior arbitration provisions.&nbsp; If you opt out of the
+          Agreement to Arbitrate, you may exercise your right to a trial by jury
+          or judge, as permitted by applicable law, but any prior existing
+          agreement to arbitrate Disputes will not apply to claims not yet
+          filed.&nbsp; If you opt out of the Agreement to Arbitrate, you will
+          not be opting out of any other provision of these terms and you agree
+          to be bound by all other provisions of these terms, which shall remain
+          in effect as allowable by law.
         </p>
         <p>
           <strong>‍Exceptions.</strong> You or Discord may still pursue claims,
-          if they qualify, exclusively in small claims court in San Francisco
-          County, California, and you and Discord both consent to venue and
-          personal jurisdiction in that court. The small claims court, and not
-          any arbitrator or AAA, shall have the exclusive authority to resolve
-          disputes regarding whether a dispute is properly within the
-          jurisdiction of a small claims court. Additionally, disputes
-          concerning patents, copyrights, moral rights, trademarks, and trade
-          secrets and claims of piracy or unauthorized use of our services will
-          not be subject to arbitration. Either party may also seek a
-          declaratory judgment or other equitable relief in a court of competent
-          jurisdiction regarding whether a party’s claims are time-barred or may
-          be brought in small claims court. Seeking such relief shall not waive
-          a party’s right to arbitration under this agreement, and any filed
-          arbitrations related to any action filed pursuant to this paragraph
-          shall automatically be stayed (and any applicable statute of
-          limitations tolled) pending the outcome of such action.
+          if they qualify, exclusively in a small claims court in the United
+          States on an individual basis for Disputes and actions within the
+          scope of such court’s jurisdiction, regardless of what forum the
+          filing Party initially chose, and you and Discord both consent to
+          venue and personal jurisdiction in that court. The small claims court,
+          and not any arbitrator or arbitration provider, shall have the
+          exclusive authority to resolve Disputes regarding whether a Dispute is
+          properly within the jurisdiction of a small claims court.
+          Additionally, Disputes concerning patents, copyrights, moral rights,
+          trademarks, and trade secrets and claims of piracy or unauthorized use
+          of our services will not be subject to arbitration. Either Party may
+          also seek a declaratory judgment or other equitable relief in a court
+          of competent jurisdiction regarding whether a Party’s claims are
+          time-barred or may be brought in small claims court. Seeking such
+          relief shall not waive a Party’s right to arbitration under this
+          agreement, and any filed arbitrations related to any action filed
+          pursuant to this paragraph shall automatically be stayed (and any
+          applicable statute of limitations tolled) pending the outcome of such
+          action. Either Party may elect to have Disputes regarding whether a
+          complaining Party has satisfied the Informal Dispute Resolution
+          procedures set forth above resolved by a court as a precursor to
+          arbitration; otherwise it shall be resolved in the arbitration.
         </p>
         <p>
-          <strong>Class waiver.</strong> IF YOU’RE A U.S. RESIDENT, EXCEPT AS
-          PROVIDED HEREIN, YOU AND DISCORD AGREE THAT EACH MAY BRING CLAIMS
-          AGAINST THE OTHER ONLY IN OUR INDIVIDUAL CAPACITY, AND NOT AS A
-          PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE
-          PROCEEDING, UNLESS DISCORD PROVIDES ITS CONSENT TO CONSOLIDATE IN
-          WRITING. If this specific paragraph is found unenforceable, then the
-          “Agreement to arbitrate” section will be null and void. If there is a
-          final judicial determination that applicable law precludes enforcement
-          of this paragraph’s limitations as to a particular remedy, then that
-          remedy (and only that remedy) must be severed from the arbitration and
-          may be sought in court. The parties agree, however, that any
-          adjudication of remedies not subject to arbitration shall be stayed
-          pending the outcome of any arbitrable claims and remedies.&nbsp; This
-          subsection does not prevent you or Discord from participating in a
-          class-wide settlement of claims.
+          <strong>Class Arbitration and Collective Relief Waiver.</strong> IF
+          YOU’RE A U.S. RESIDENT, EXCEPT AS PROVIDED HEREIN, UNLESS DISCORD
+          AGREES OTHERWISE IN A SEPARATE WRITING, YOU AND DISCORD AGREE THAT
+          EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN OUR INDIVIDUAL
+          CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED
+          CLASS OR REPRESENTATIVE PROCEEDING AND THE ARBITRATOR MAY AWARD RELIEF
+          ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING RELIEF AND ONLY TO THE
+          EXTENT NECESSARY TO RESOLVE AN INDIVIDUAL PARTY’S CLAIM. Where Discord
+          does consent to consolidation, consolidation may be allowed by
+          agreement or where ordered by a Procedural or Threshold Arbitrator at
+          ADR Services or NAM and you agree to accept such consolidation. In
+          cases consolidated pursuant to this paragraph, the relief may cover
+          the consolidated claims.
         </p>
         <p>
-          <strong>Changes to this Dispute Section:</strong> Discord will provide
-          30 days’ notice of the date of any material changes to this clause.
-          Changes will become effective on the 30th day and apply to all claims
-          not yet filed. If you continue to use the site after the 30th day, you
-          agree that any unfiled claims of which Discord does not have actual
-          notice are subject to the revised clause. If you reject any such
-          changes by opting out of the arbitration agreement, you may exercise
-          your right to a trial by jury or judge, as permitted by applicable
-          law, but any prior existing agreement to arbitrate disputes under a
-          prior version of the arbitration agreement will not apply to claims
-          not yet filed. If Discord changes this “Dispute Resolution” section
-          after the date you first accepted this agreement (or accepted any
-          subsequent changes to this agreement), you agree that your continued
-          use of the Discord product(s) or services 30 days after such change
-          will be deemed acceptance of those changes. If you do not agree to
-          such change, you may opt out by providing notice as described in this
-          section.
+          If the paragraph titled “Class Arbitration and Collective Relief
+          Waiver,” the paragraph titled “Mass Filings,” or ADR Service’s Mass
+          Arbitration rules are&nbsp; found unenforceable, then the “Agreement
+          to Arbitrate” section will be null and void.&nbsp; If any other
+          provision is found to be invalid, unenforceable or illegal, or
+          otherwise conflicts with the rules of the applicable arbitration
+          provider, then the balance of this Agreement to Arbitrate shall remain
+          in effect and shall be construed in accordance with its terms as if
+          the invalid, unenforceable, illegal or conflicting provision were not
+          contained herein.
+        </p>
+        <p>
+          This subsection does not prevent you or Discord from participating in
+          a class-wide settlement of claims.
+        </p>
+        <p>
+          <strong>Changes to this Agreement to Arbitrate:</strong> Discord will
+          provide 30 days’ notice of the date of any material changes to this
+          Agreement to Arbitrate. Changes will become effective on the 30th day
+          and apply to all claims not yet filed, regardless of when they
+          accrued. If you consent to these terms on or before the 30th day or
+          continue to use the site after the 30th day, you agree that any
+          unfiled claims of which Discord does not have actual notice under the
+          Informal Dispute Resolution process are subject to the revised clause.
+          If you reject any such changes by opting out of the Agreement to
+          Arbitrate, you may exercise your right to a trial by jury or judge, as
+          permitted by applicable law, but there shall be deemed to be no
+          arbitration agreement between you and Discord and any prior existing
+          agreement to arbitrate Disputes under a prior version of the Agreement
+          to Arbitrate will not apply to claims not yet filed. If Discord
+          changes this Agreement to Arbitrate after the date you first accepted
+          this agreement (or accepted any subsequent changes to this agreement),
+          you agree that your continued use of the Discord product(s) or
+          services 30 days after such change will be deemed acceptance of those
+          changes. If you do not agree to such change, you may opt out of this
+          Agreement to Arbitrate by emailing an opt-out notice to
+          <a href="mailto:arbitration-opt-out@discord.com"
+            >arbitration-opt-out@discord.com</a
+          >
+          before the 30 day period expires.
         </p>
       </div>
       <div id="17" class="rich-guidlines-negative_new w-richtext">
         <h2>More important stuff</h2>
         <p>
           You have certain rights that, by law, can’t be limited by these terms,
-          and we in no way intend to restrict those rights in these terms.
+          and we in no way intend to restrict those rights in these terms. The
+          term “including” as used in these terms means “including without
+          limitation.”
         </p>
         <p>
-          <strong><em>Entire agreement.</em></strong> These terms cover the
-          entire agreement between you and Discord for your use of our services.
+          <strong>Entire agreement.</strong> These terms cover the entire
+          agreement between you and Discord for your use of our services.
         </p>
         <p>
-          <strong><em>Additional terms.</em></strong> Where additional terms
-          apply to our products or services, the additional terms will control
-          with respect to your use of that product or service to the extent of
-          any conflict with these terms.
+          <strong>Additional terms.</strong> Where additional terms apply to our
+          products or services, the additional terms will control with respect
+          to your use of that product or service to the extent of any conflict
+          with these terms. Additional information about our services is
+          provided for users in Austria here.
         </p>
         <p>
-          <strong><em>Bug reporting.</em></strong> We support the responsible
-          reporting of security vulnerabilities. To report a security issue,
-          please visit
+          <strong>Bug reporting.</strong> We support the responsible reporting
+          of security vulnerabilities. To report a security issue, please visit
           <a href="https://discord.com/security">https://discord.com/security</a
           >.
         </p>
         <p>
-          <strong><em>Export Control.</em></strong> You agree to comply with all
+          <strong>Export Control.</strong> You agree to comply with all
           applicable import, export, and re-export control laws and
           restrictions, including but not limited to those of the European Union
           and its member states, the U.S. Department of Commerce Export
@@ -2427,9 +2694,9 @@
           authorities.
         </p>
         <p>
-          <strong><em>Waiver, severability, and assignment.</em></strong> If you
-          fail to follow these terms and we don’t immediately act, that doesn’t
-          mean we’re giving up any of our legal rights (such as acting in the
+          <strong>Waiver, severability, and assignment.</strong> If you fail to
+          follow these terms and we don’t immediately act, that doesn’t mean
+          we’re giving up any of our legal rights (such as acting in the
           future). If any part of these terms ends up being invalid or
           unenforceable based on a decision by any court or competent authority,
           the rest of these terms will not be affected. You may not assign these
@@ -2438,10 +2705,10 @@
           in interest of any business associated with our services.
         </p>
         <p>
-          <strong><em>Survival.</em></strong> Any part of these terms that by
-          their nature should survive after termination of these terms will
-          survive. As permitted under applicable law, this includes but may not
-          be limited to the following:
+          <strong>Survival.</strong> Any part of these terms that by their
+          nature should survive after termination of these terms will survive.
+          As permitted under applicable law, this includes but may not be
+          limited to the following:
         </p>
         <ul role="list">
           <li>
@@ -2467,24 +2734,24 @@
           <li>
             Any dispute resolution provisions, including the arbitration
             agreement, such as those under the “Settling disputes between you
-            and Discord” section.
+            and Discord” section.<br />‍
           </li>
         </ul>
         <p>
-          <strong><em>Updates to these terms.</em></strong> We may decide to
-          update these terms: (1) to reflect changes to our services or our
-          business, (2) for legal or regulatory reasons, (3) to prevent abuse on
-          or of our services, or (4) to better protect or serve users of our
-          services. If these changes materially affect your Discord use or your
-          legal rights, we’ll give you reasonable advance notice (unless the
-          updates are urgent). If you continue to use our services after the
-          changes have taken effect, it means that you agree to the changes. If
-          you don’t agree, you must stop using our services.
+          <strong>Updates to these terms.</strong> We may decide to update these
+          terms: (1) to reflect changes to our services or our business, (2) for
+          legal or regulatory reasons, (3) to prevent abuse on or of our
+          services, or (4) to better protect or serve users of our services. If
+          these changes materially affect your Discord use or your legal rights,
+          we’ll give you reasonable advance notice (unless the updates are
+          urgent). If you continue to use our services after the changes have
+          taken effect, it means that you agree to the changes. If you don’t
+          agree, you must stop using our services.
         </p>
         <p>
-          <strong><em>Apple App Store.</em></strong> If you download the Discord
-          app from the Apple App Store or use our app on an iOS device, the
-          below paragraph applies to you.
+          <strong>Apple App Store.</strong> If you download the Discord app from
+          the Apple App Store or use our app on an iOS device, the below
+          paragraph applies to you.
         </p>
         <p>
           These terms grant a non-transferable license to use the Discord App on
@@ -2517,11 +2784,24 @@
         </p>
         <h2>Contacting each other</h2>
         <p>
-          If you have any questions about these terms, please contact us at
-          <a href="mailto:privacy@discord.com">privacy@discord.com</a>. We may
-          send you electronic communications related to our services. Where
-          required, we’ll get your consent before sending you direct marketing,
-          and we’ll make it easy for you to opt out.
+          If you have any questions about, or wish to contact us in connection
+          with, these terms, please contact us at
+          <a href="mailto:legalprivacy@discord.com">legal@discord.com</a> unless
+          otherwise stated in these terms. We may send you electronic
+          communications related to our services. Where required, we’ll get your
+          consent before sending you direct marketing, and we’ll make it easy
+          for you to opt out.
+        </p>
+        <p>
+          For technical support or other assistance with respect to our
+          services, you can submit a request
+          <a href="https://support.discord.com/hc/en-us/requests/new">here</a
+          >.&nbsp;
+        </p>
+        <p>
+          Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA
+          94107, USA. Discord Netherlands B.V. is located at Schiphol Boulevard
+          195, 1118 BG Schiphol, Netherlands.
         </p>
       </div>
     </div>
