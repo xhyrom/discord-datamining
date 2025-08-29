@@ -10,9 +10,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34380602549527"
-    width="844"
-    height="611"
+    src="https://support.discord.com/hc/article_attachments/34550826036247"
+    alt="image.png"
   />
 </p>
 <h4 id="h_01K39MBWFJ7BEZPFQEP8JDZGAT" class="wysiwyg-text-align-center">
