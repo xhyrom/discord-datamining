@@ -2664,7 +2664,8 @@
           products or services, the additional terms will control with respect
           to your use of that product or service to the extent of any conflict
           with these terms. Additional information about our services is
-          provided for users in Austria here.
+          provided for users in Austria
+          <a href="https://discord.com/terms/eecc-addendum">here</a>.
         </p>
         <p>
           <strong>Bug reporting.</strong> We support the responsible reporting
