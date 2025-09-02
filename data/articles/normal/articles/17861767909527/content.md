@@ -1,12 +1,11 @@
-<h3 id="docs-internal-guid-fa1e6de4-7fff-571e-f7af-f9b3e009fdf7">
-  <strong
-    >This article explains how users covered by the European Union’s Digital
-    Services Act (“DSA”) can exercise certain rights. Parts of the DSA only
-    apply to certain online spaces (called “online platforms”) and to certain
-    types of actions by those platforms. That’s all to say that not every report
-    or action on Discord will be eligible for action under the DSA. </strong
-  >
-</h3>
+<div class="info-box">
+  This article explains how users covered by the
+  <strong>European Union’s Digital Services Act (“DSA”)</strong> can exercise
+  certain rights. Parts of the DSA only apply to certain online spaces (called
+  “online platforms”) and to certain types of actions by those platforms. That’s
+  all to say that not every report or action on Discord will be eligible for
+  action under the DSA.
+</div>
 <p>
   We work hard to remove violative content and bad actors from our services.
   This includes responding to user reports about content. The easiest way to
@@ -38,23 +37,42 @@
 </p>
 <p>
   You may also appeal a decision on your account directly in the Discord app by
-  going to
-  <strong>User Settings &gt; Privacy &amp; Safety &gt; </strong>selecting the
-  decision you want to appeal <strong>&gt; Let us know</strong>.
+  going to <strong>User Settings &gt; My Account &gt; Standing</strong>.
+  <strong> </strong>
+</p>
+<p>
+  <img
+    src="https://support.discord.com/hc/article_attachments/34639326454679"
+    alt="image1.gif"
+  />
+</p>
+<h4 id="h_01K45R19MB5K93EVZ5DXF9MPHJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Reviewing Account Standing in User Settings on Desktop</span
+  >
+</h4>
+<p>
+  Then, select the decision you want to appeal by selecting<strong>
+    Let us know</strong
+  >
+  in account standing window.
 </p>
 <p class="wysiwyg-text-align-center">
-   <img
-    src="https://support.discord.com/hc/article_attachments/23369184688791"
-    width="159"
-    height="380"
-  />
   <img
-    src="https://support.discord.com/hc/article_attachments/23369184698903"
-    width="159"
-    height="380"
-  /><br /><br />Please keep in mind that these DSA appeals mechanisms only apply
-  to decisions about the following, if they are made on the ground that
-  information provided is illegal or violates our Terms of Service: 
+    src="https://support.discord.com/hc/article_attachments/34639326460311"
+    width="423"
+    height="593"
+  />
+</p>
+<h4 id="h_01K45R3KAC6KB0GEDF4TZ5DFCB" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Let us know Option in Suspension Notification on Desktop</span
+  >
+</h4>
+<p>
+  Please keep in mind that these DSA appeals mechanisms only apply to decisions
+  about the following, if they are made on the ground that information provided
+  is illegal or violates our Terms of Service: 
 </p>
 <ul>
   <li>

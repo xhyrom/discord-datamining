@@ -131,13 +131,10 @@
 </h4>
 <h1 id="h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</h1>
 <p class="wysiwyg-text-align-center">
-  <span style="background-color: #d9d9d9"
-    ><img
-      src="https://support.discord.com/hc/article_attachments/34638129259287"
-      width="755"
-      height="564"
-    />
-  </span>
+  <img
+    src="https://support.discord.com/hc/article_attachments/34639186288023"
+    alt="image1.gif"
+  />
 </p>
 <h4 id="h_01K45NQ157G0QHWQNY0TCFAY21" class="wysiwyg-text-align-center">
   <span style="color: #666666"
