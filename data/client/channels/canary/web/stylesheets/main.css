@@ -10718,7 +10718,6 @@ svg.radioIcon_c1e9c4 {
 .input__0f084 {
   background-color: transparent;
   border: none;
-  border-radius: var(--radius-sm);
   box-sizing: border-box;
   color: inherit;
   flex: 1;
@@ -99653,4 +99652,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c995e11c03a3122e.css.map*/
+/*# sourceMappingURL=12633.ef7456ac393bb958.css.map*/
