@@ -9524,6 +9524,12 @@ svg.radioIcon_c1e9c4 {
 .errorMessage__89a34 {
   margin-top: 1px;
 }
+.roleDot__41e17 {
+  display: block;
+}
+.roleDotInline__41e17 {
+  height: 18px;
+}
 .tagGroup_ae0825 {
   display: flex;
   flex-wrap: wrap;
@@ -49187,18 +49193,11 @@ h3.improved__1689b:after {
 .confirmationSubtitle_e64651 {
   text-align: center;
 }
-.openDiscordButton_e64651 {
-  margin-bottom: 8px;
+.actions_e64651 {
+  display: flex;
+  flex-direction: column;
   margin-top: 24px;
-}
-.doneButton_e64651,
-.openDiscordButton_e64651 {
-  font-weight: var(--font-weight-semibold);
-  width: 100%;
-}
-.doneButton_e64651 {
-  background: var(--background-accent);
-  color: var(--white-500);
+  row-gap: 8px;
 }
 .container__24a95 {
   background-color: var(--background-base-lower);
@@ -57603,7 +57602,7 @@ html .progress__61462 {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  padding: 16px;
+  padding: 16px 16px 0;
 }
 .productDetailContent__79d38 {
   display: flex;
@@ -76806,7 +76805,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99671,4 +99670,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.6162bda900f4dbd6.css.map*/
+/*# sourceMappingURL=12633.36e7c7fdabd4b9d2.css.map*/
