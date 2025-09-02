@@ -1,0 +1,56 @@
+{
+  "absolute_url": "https://job-boards.greenhouse.io/discord/jobs/7985597002",
+  "data_compliance": [
+    {
+      "type": "gdpr",
+      "requires_consent": false,
+      "requires_processing_consent": false,
+      "requires_retention_consent": false,
+      "retention_period": null,
+      "demographic_data_consent_applies": true
+    }
+  ],
+  "education": "education_optional",
+  "internal_job_id": 6158945002,
+  "location": {
+    "name": "Remote (U.S.)"
+  },
+  "metadata": [
+    {
+      "id": 4105571002,
+      "name": "Featured on Website",
+      "value": [],
+      "value_type": "multi_select"
+    },
+    {
+      "id": 96196709002,
+      "name": "Careers Site Department",
+      "value": "Machine Learning",
+      "value_type": "single_select"
+    }
+  ],
+  "id": 7985597002,
+  "updated_at": "2025-09-02T14:04:38-04:00",
+  "requisition_id": "R-100917",
+  "title": "Senior Staff Software Engineer, Machine Learning (Safety)",
+  "company_name": "Discord",
+  "first_published": "2025-05-20T16:49:35-04:00",
+  "content": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform:&lt;strong&gt; play video games.&lt;/strong&gt; Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are seeking an accomplished and experienced Senior Staff Machine Learning Engineer – Safety ML to join our dynamic team. As a technical lead of the Safety ML team, you will be responsible for designing, developing, and maintaining our data and AI/ML infrastructure and services. You will collaborate with cross-functional teams, including data scientists, software engineers, MLEs and product managers, to deliver modern and bleeding-edge solutions that drive business insights and innovation. This role reports to our Director of Machine Learning, Safety.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What You&#39;ll Be Doing&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Serve as the team’s technical lead and mentor, guiding ICs through design, experimentation, and implementation while raising the technical bar.&lt;/li&gt;\n&lt;li&gt;Define and drive the Safety ML team’s technical strategy and roadmap.&lt;/li&gt;\n&lt;li&gt;Set the bar in technical reviews, including code, design, and architecture, ensuring the team builds scalable, robust, and high-quality ML systems.&lt;/li&gt;\n&lt;li&gt;Collaborate cross-functionally with product, data science, policy, legal, and engineering partners to align on safety goals and deliver effective solutions.&lt;/li&gt;\n&lt;li&gt;Tackle the most complex and high-impact challenges in safety, including adversarial abuse, harmful content detection, and evolving threat vectors.&lt;/li&gt;\n&lt;li&gt;Develop cutting-edge safety techniques, applying state-of-the-art ML to detect and prevent harm while staying ahead of emerging abuse patterns&lt;/li&gt;\n&lt;li&gt;Influence the company’s direction on safety, clearly communicating trade-offs and technical constraints to senior leadership and stakeholders.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;What you should have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years of experience in ML engineering or applied ML roles.&lt;/li&gt;\n&lt;li&gt;5+ years of experience applying ML in Trust &amp;amp; Safety to counter adversarial actors.&lt;/li&gt;\n&lt;li&gt;Strong coding skills in Python and fluency in ML frameworks such as PyTorch, JAX, or TensorFlow.&lt;/li&gt;\n&lt;li&gt;Proven experience building performant machine learning systems at scale and have driven the execution of large, impactful projects from ideation to production.&lt;/li&gt;\n&lt;li&gt;Ability to think from first principles, approaching complex problems with creativity, clear reasoning, and pragmatic solutions.&lt;/li&gt;\n&lt;li&gt;A growth mindset: seeking feedback, reflecting on decisions, and continuously improving.&lt;/li&gt;\n&lt;li&gt;Excellent communication and collaboration skills, with a history of partnering effectively across engineering, data science, legal, policy, and product teams.&lt;/li&gt;\n&lt;li&gt;Bachelor’s or Master’s degree in Computer Science, Machine Learning, Statistics, or a related field (Physics, Math, Operations Research, etc.)&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;A strong passion for Discord and gaming&lt;/li&gt;\n&lt;li&gt;Experience tackling safety problems with ML at large-scale social platforms&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;&lt;span class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot;&gt;The US base salary range for this full-time position is $336,000 to $378,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;Why Discord?&amp;nbsp;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Discord plays a uniquely important role in the future of gaming. We&#39;re a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. &lt;strong&gt;Join us in our mission! Your future is just a click away!&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Discord is committed to inclusion and providing reasonable accommodations during the interview process. &lt;/strong&gt;We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;&lt;a href=&quot;https://discord.com/terms/applicant-candidate-privacy-policy&quot;&gt;HERE.&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
+  "departments": [
+    {
+      "id": 4022531002,
+      "name": "Data Science & Engineering",
+      "child_ids": [],
+      "parent_id": 4094266002
+    }
+  ],
+  "offices": [
+    {
+      "id": 4082816002,
+      "name": "Remote (U.S.)",
+      "location": null,
+      "child_ids": [],
+      "parent_id": null
+    }
+  ]
+}
