@@ -1,0 +1,10 @@
+{
+  "id": "bringing-dave-to-all-discord-platforms",
+  "title": "Bringing DAVE to All Discord Platforms",
+  "link": "https://discord.com/blog/bringing-dave-to-all-discord-platforms",
+  "guid": "https://discord.com/blog/bringing-dave-to-all-discord-platforms",
+  "description": "From March 1st, 2026, all clients and apps must be updated to utilize DAVE’s end-to-end encryption support for voice and video calls. In this blog, we explore the challenges we encountered bringing E2EE to browsers, and share what you may need to do to ensure your app can still connect to voice calls in 2026.\n",
+  "pubDate": "Tue, 02 Sep 2025 00:00:00 GMT",
+  "media:content": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68b71f6521bd8cfde92d2a73_image1.png",
+  "media:thumbnail": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68b71f6521bd8cfde92d2a73_image1.png"
+}
