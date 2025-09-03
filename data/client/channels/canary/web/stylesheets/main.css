@@ -54663,16 +54663,15 @@ h3.improved__1689b:after {
   width: 100%;
 }
 .giftCardPromotion_a45ed3 {
+  height: 180px;
   margin-bottom: 25px;
   padding: 0 30px;
 }
-.videoAsset_a45ed3 {
+.giftImagePromotion_a45ed3 {
   left: -50px;
   position: absolute;
-  top: 0;
-}
-.giftImagePromotion_a45ed3 {
-  width: 200px;
+  top: -15px;
+  width: 350px;
 }
 .giftImageAnimatedPromotion_a45ed3 {
   padding-bottom: 20px;
@@ -54681,8 +54680,7 @@ h3.improved__1689b:after {
   align-self: flex-start;
   margin-left: auto;
   max-width: 60%;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .giftInfoTitlePromotion_a45ed3 {
   margin-bottom: 8px;
@@ -99665,4 +99663,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.cf4e656edba0a239.css.map*/
+/*# sourceMappingURL=12633.31a6dae2855f6c01.css.map*/
