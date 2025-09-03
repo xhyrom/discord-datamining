@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8129458002](https://discord.com/jobs/8129458002)
 
-**Updated At:** Tue, 02 Sep 2025 18:54:18 GMT
+**Updated At:** Tue, 02 Sep 2025 23:41:56 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord, an inclusive community for all, seeks a seasoned technical leader to join our Data team as a Staff Data Engineer, focusing on our advertising products. In this role, you will drive technical vision and strategy for data infrastructure while building and maintaining sophisticated data pipelines, datasets, and analytical tools. You will lead cross-functional initiatives to transform our advertising products through data-driven insights and mentor fellow engineers to deliver exceptional results.

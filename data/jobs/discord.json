@@ -2613,12 +2613,12 @@
         {
           "id": 96196709002,
           "name": "Careers Site Department",
-          "value": null,
+          "value": "Data Science & Data Engineering",
           "value_type": "single_select"
         }
       ],
       "id": 8129458002,
-      "updated_at": "2025-09-02T14:54:18-04:00",
+      "updated_at": "2025-09-02T19:41:56-04:00",
       "requisition_id": "R-102056",
       "title": "Staff Data Engineer, Ads",
       "company_name": "Discord",
