@@ -1,10 +1,10 @@
-<p id="docs-internal-guid-1026aedc-7fff-fce3-8f57-f38ffa50ba8c">
+<p>
   We know it’s important for users to understand what controls they have over
   their experience on Discord and how to be safer. Part of delivering a better,
   safer experience is making sure people don’t see content they don’t want to –
   whether that’s intrusive spam or unwanted explicit images. This article covers
-  direct message filters, which can help reduce the amount of unwanted content
-  you see on Discord and promote a safer environment for you.
+  <strong>direct message filters</strong>, which can help reduce the amount of
+  unwanted content you see on Discord and promote a safer environment for you.
 </p>
 <div class="toc-box">
   <strong
@@ -21,7 +21,7 @@
     </li>
     <li>
       <strong
-        ><a href="#docs-internal-guid-ce2fb5e7-7fff-812b-c0a1-7eb161deb540"
+        ><a href="#h_01K46DDKQQSKDWX3JP19C1YKMM"
           >Sensitive Content Filters</a
         ></strong
       >
@@ -44,12 +44,10 @@
 </div>
 <h1 id="h_01GXVY0E4TNTTW9P7PZT1XGSJS">For Individuals</h1>
 <p>
-  You can control these settings by going into <strong>User Settings</strong>,
-  selecting the <strong>Privacy &amp; Safety</strong> section, and finding the
-  <strong>Direct message filters</strong> section.
-</p>
-<p id="docs-internal-guid-22d4b6e2-7fff-06c1-d6a7-3882eb091b62">
-  You can learn more about sensitive content filters
+  You can control these settings by going into
+  <strong>User Settings</strong> and selecting the
+  <strong>Content &amp; Social </strong>tab. You can learn more about sensitive
+  content filters
   <a
     href="https://support.discord.com/hc/articles/18210995019671/"
     target="_blank"
@@ -57,27 +55,45 @@
     >here</a
   >.
 </p>
-<h1 id="docs-internal-guid-ce2fb5e7-7fff-812b-c0a1-7eb161deb540">
-  Sensitive Content Filters
-</h1>
-<p id="docs-internal-guid-b2c682b5-7fff-e993-d9ab-78d885369612">
-  Discord works to detect if media posted on our platform may be sensitive. When
-  these new filters are set to “blur,” they apply to all historic and new
-  media. 
-</p>
-<h1 id="h_01GXVY2AV9X9Y0787SHWNNV5XZ">DM Spam Filter</h1>
+<h1 id="h_01K46DDKQQSKDWX3JP19C1YKMM">Sensitive Content Filters</h1>
 <p>
-  Automatically send direct messages that may contain spam into a separate spam
-  inbox.
+  Discord works to detect if media posted on our platform may be sensitive. When
+  these new filters are set to <strong>blur</strong>, they apply to all historic
+  and new media. Navigate to
+  <strong>User Settings &gt; Content &amp; Social </strong>to adjust your
+  <strong>Sensitive content filter </strong>settings.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/18400121099159"
-    alt="image1.png"
-    width="607"
-    height="611"
+    src="https://support.discord.com/hc/article_attachments/34652369858455"
+    width="807"
+    height="533"
   />
 </p>
+<h4 id="h_01K46D0FWQD88GAQ23QXSC4YD4" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Sensitive Media settings in Content &amp; Social</span
+  >
+</h4>
+<h1 id="h_01GXVY2AV9X9Y0787SHWNNV5XZ">DM Spam Filter</h1>
+<p>
+  Automatically send direct messages that may contain spam into a separate spam
+  inbox by navigating to
+  <strong>User Settings &gt; Content &amp; Social</strong> to find your
+  <strong>Direct Message spam </strong>settings.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34652400845719"
+    width="818"
+    height="342"
+  />
+</p>
+<h4 id="h_01K46D3KSBAJ1RBZPPBAV7JTK8" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Direct Message spam settings in Content &amp; Social</span
+  >
+</h4>
 <p>
   These filters are customizable and you can choose to turn them off. By
   default, these filters are set to
@@ -105,11 +121,18 @@
   <strong>Explicit image filter</strong> section.
 </p>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/18400121106967"
-    alt="Screen Shot 2023-10-19 at 9.31.30 AM.png"
-  />
+  <strong
+    ><img
+      src="https://support.discord.com/hc/article_attachments/34652400846103"
+      width="889"
+      height="663"
+  /></strong>
 </p>
+<h4 id="h_01K46D79MPP1J3NAMFJKFTAGRR" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Explicit image filter settings in Server Settings</span
+  >
+</h4>
 <p>
   <a
     href="https://discord.com/safety/360043653552-Age-Restricted-Content-on-Discord"
