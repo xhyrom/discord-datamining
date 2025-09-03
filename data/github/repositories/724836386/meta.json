@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/embedded-app-sdk",
   "created_at": "2023-11-28T22:23:03Z",
   "homepage": "https://discord.com/developers/docs/activities/overview",
-  "size": 21884,
+  "size": 21909,
   "language": "TypeScript",
   "has_issues": true,
   "has_projects": false,
