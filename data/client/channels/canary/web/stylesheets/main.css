@@ -18946,14 +18946,18 @@ svg.radioIcon_c1e9c4 {
   );
 }
 .promotionalCardImage_ac86f6 {
-  z-index: -1;
-}
-.promotionalBackgroundImage_ac86f6,
-.promotionalCardImage_ac86f6 {
   position: absolute;
   right: 0;
   top: 0;
   transform: scale(50%);
+  transform-origin: top right;
+  z-index: -1;
+}
+.promotionalBackgroundImage_ac86f6 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(65%);
   transform-origin: top right;
 }
 .tier2SideGradient_ac86f6 {
@@ -53796,9 +53800,6 @@ h3.improved__1689b:after {
   top: 24px;
   width: 100%;
 }
-.promotionalGiftMessageText__6fbbd {
-  color: #000;
-}
 .promotionalTextSection__6fbbd {
   display: flex;
   flex-direction: column;
@@ -53806,8 +53807,9 @@ h3.improved__1689b:after {
   margin-right: 12px;
 }
 .avatar__6fbbd {
-  margin-right: -4px;
-  margin-top: -52px;
+  bottom: -15px;
+  position: absolute;
+  right: 0;
 }
 .pricePerInterval_fd0764 {
   font-weight: 200;
@@ -64243,15 +64245,12 @@ html .progress__61462 {
   justify-content: center;
   margin-left: var(--space-16);
 }
-.subheading__72cd3 {
-  color: var(--text-default);
-}
 .avatar__72cd3 {
   align-items: center;
   display: flex;
   position: absolute;
-  right: var(--space-8);
-  top: -40px;
+  right: 0;
+  top: -50px;
   z-index: 1;
 }
 .boxBackdrop_abac7b {
@@ -99663,4 +99662,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.edb76ee26e5e2a66.css.map*/
+/*# sourceMappingURL=12633.05f670d67047327a.css.map*/
