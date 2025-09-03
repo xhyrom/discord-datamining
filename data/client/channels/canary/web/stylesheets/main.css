@@ -76806,7 +76806,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99444,6 +99444,7 @@ img[alt] {
   );
   --custom-rtc-account-height: 44px;
   --custom-app-top-bar-height: calc(24px + var(--space-8));
+  --custom-app-top-bar-item-radius: 6px;
   --custom-channel-header-height: calc(
     var(--guildbar-avatar-size) + var(--space-xs)
   );
@@ -99539,4 +99540,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ec33618bf41264d0.css.map*/
+/*# sourceMappingURL=12633.9a7e2b34f53831d9.css.map*/
