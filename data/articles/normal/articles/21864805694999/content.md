@@ -5,7 +5,7 @@
   how servers are structured.
 </p>
 <p>
-  Turning <strong>the Use Data to Improve Discord Setting</strong> off means we
+  Turning the<strong> Use Data to Improve Discord </strong>setting off means we
   will no longer collect new information about how you use and/or navigate
   Discord in order to understand and improve our products. We may continue to
   use the information we collected when the setting was enabled. More detail can
@@ -17,13 +17,25 @@
     >Privacy Policy</a
   >. 
 </p>
+<p>
+  On desktop, head to <strong>User Setting &gt; Data &amp; Privacy</strong> and
+  on mobile, head to <strong>Settings &gt; Data &amp; Privacy</strong> to
+  disable the <strong>Use Data to Improve Discord </strong>toggle.<strong
+    > </strong
+  >
+</p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/22110737551383"
-    width="720"
-    height="503"
+    src="https://support.discord.com/hc/article_attachments/34672075869719"
+    width="975"
+    height="563"
   />
 </p>
+<h4 id="h_01K488Z9QAV1HA3YCK74AFZCFQ" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Use data to improve Discord toggle in Data &amp; Privacy on Desktop</span
+  >
+</h4>
 <p>
   It will also prevent us from automatically improving the quality of voice or
   video communications on Discord based on your usage.
@@ -40,11 +52,11 @@
     ></strong
   >.
 </p>
-<h3 id="h_01HS20E4N6AJQQYNQ5PSCQMEBV">
+<div class="info-box">
   When you turn the setting off, the signals associated with your use of Discord
   continue to be sent, but we do not use the information for the purposes
   described above. This is an account-based setting and applies to your use of
   Discord regardless of the device used to access your account. This allows us
   to keep your account experience consistent across devices and access points of
   Discord.
-</h3>
+</div>
