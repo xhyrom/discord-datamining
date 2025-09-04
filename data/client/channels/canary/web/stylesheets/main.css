@@ -50533,9 +50533,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -61241,37 +61241,6 @@ html .progress__61462 {
   display: flex;
   flex-direction: row;
   gap: 16px;
-}
-.iconContainer__4bcae {
-  padding-top: 0;
-}
-.content__4bcae,
-.iconContainer__4bcae {
-  align-self: center;
-  display: flex;
-}
-.content__4bcae {
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: space-between;
-}
-.noReactions__4bcae {
-  min-height: var(--space-64);
-}
-.withReactions__4bcae {
-  margin-top: var(--space-12);
-}
-.textContainer__4bcae {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.action__4bcae {
-  border-radius: var(--radius-sm);
-  min-height: 32px;
-  min-width: 68px;
-  padding: var(--space-8) var(--space-12);
 }
 .thankYouCard_b851f5 {
   border-radius: 4px;
@@ -99642,4 +99611,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.565ee3ce974ab03b.css.map*/
+/*# sourceMappingURL=12633.dee07674144d16e0.css.map*/
