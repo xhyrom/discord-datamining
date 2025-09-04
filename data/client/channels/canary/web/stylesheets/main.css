@@ -76806,7 +76806,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -79222,6 +79222,10 @@ html.disable-forced-colors * {
 .container__68a18 {
   background: var(--background-gradient-higher);
 }
+.mobileContainer__68a18 {
+  height: 100%;
+  width: 100%;
+}
 .containerInner__68a18 {
   background: var(--background-base-low);
   border: 1px solid var(--border-faint);
@@ -79241,6 +79245,9 @@ html.disable-forced-colors * {
   padding-bottom: 16px;
   padding-top: 16px;
   width: 228px;
+}
+.mobileEditorBody__68a18 {
+  width: unset;
 }
 .headerContainer__68a18 {
   align-items: center;
@@ -79489,14 +79496,18 @@ html.disable-forced-colors * {
   border-radius: var(--radius-xs);
 }
 .container__5a2df {
-  background: var(--background-base-low);
   border: 1px solid var(--border-faint);
   width: 288px;
 }
 .container__5a2df,
-.editorBody__5a2df {
+.mobileContainer__5a2df {
+  background: var(--background-base-low);
   display: flex;
   flex-direction: column;
+}
+.mobileContainer__5a2df {
+  height: 100%;
+  width: 100%;
 }
 .editorBody__5a2df {
   gap: 32px;
@@ -79504,15 +79515,17 @@ html.disable-forced-colors * {
   padding-left: var(--space-12);
   padding-right: calc(var(--space-12) - 8px);
 }
-.section__5a2df {
-  gap: 12px;
-}
-.resetButton__5a2df,
+.editorBody__5a2df,
 .section__5a2df {
   display: flex;
   flex-direction: column;
 }
+.section__5a2df {
+  gap: 12px;
+}
 .resetButton__5a2df {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
   margin-top: 19px;
 }
@@ -79662,6 +79675,14 @@ html.disable-forced-colors * {
 }
 .controlLabelInput__5a2df::placeholder {
   color: var(--input-placeholder-text);
+}
+.mobileContainer__26f4a {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
 .appAsidePanelWrapper_a3002d {
   display: flex;
@@ -99540,4 +99561,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.eb3963e3658220c8.css.map*/
+/*# sourceMappingURL=12633.58ee0b5574cb5473.css.map*/
