@@ -77794,7 +77794,7 @@ h2.title_feb59c {
   -webkit-app-region: drag;
 }
 .platform-osx .bar_c38106 {
-  padding-left: calc(var(--custom-guild-list-width) + var(--space-8));
+  padding-left: calc(var(--custom-guild-list-width) + var(--space-md));
 }
 .platform-win .bar_c38106 {
   padding-right: 0;
@@ -77825,19 +77825,16 @@ h2.title_feb59c {
 }
 .leading_c38106 {
   box-sizing: border-box;
-  gap: var(--space-4);
   justify-content: flex-start;
 }
 .leading_c38106,
 .trailing_c38106 {
   align-items: center;
   display: flex;
+  gap: var(--space-12);
   position: relative;
   z-index: 1;
   -webkit-app-region: no-drag;
-}
-.trailing_c38106 {
-  gap: var(--space-12);
 }
 .trailing_c38106,
 .winButtons_c38106 {
@@ -99566,4 +99563,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.46e64a91af6c774a.css.map*/
+/*# sourceMappingURL=12633.0874dc76d4cbb28c.css.map*/
