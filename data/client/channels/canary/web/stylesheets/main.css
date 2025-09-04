@@ -50248,9 +50248,9 @@ h3.improved__1689b:after {
   margin-left: 16px;
   position: relative;
 }
-.billingRetryCancel__84995 {
-  border: 1px solid var(--white-500);
-  color: var(--white-500);
+.secondaryBannerTextButtonContainer__84995 {
+  margin-right: 15px;
+  margin-top: 5px;
 }
 .linkButton__84995 {
   padding: 0 2px;
@@ -99561,4 +99561,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.58ee0b5574cb5473.css.map*/
+/*# sourceMappingURL=12633.9d3ec2bb64bcd163.css.map*/
