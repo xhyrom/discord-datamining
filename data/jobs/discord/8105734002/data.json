@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6210767002,
   "location": {
-    "name": "San Francisco Bay Area"
+    "name": "San Francisco Bay Area (U.S)"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8105734002,
-  "updated_at": "2025-08-15T14:59:32-04:00",
+  "updated_at": "2025-09-04T18:58:50-04:00",
   "requisition_id": "R-101018",
   "title": "Senior Privacy Engineer",
   "company_name": "Discord",
