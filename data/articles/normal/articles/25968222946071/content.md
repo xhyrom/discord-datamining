@@ -35,7 +35,9 @@
 <div class="mega-box">
   <strong>Note:</strong> All audio and video conversations in direct messages
   (DMs), group messages (GDMs), voice channels, and Go Live streams on Discord
-  will soon be end-to-end encrypted by default.
+  will require end-to-end encryption starting on March 1st, 2026. You must
+  ensure that your Discord app is on the latest version to support the
+  end-to-end encryption requirement.
 </div>
 <p>
   Below explains how to verify that a call is end-to-end encrypted and how to
@@ -273,10 +275,7 @@
 <p>
   <strong>Q: When will E2EE A/V roll out to Discord web and consoles?</strong>
 </p>
-<p>
-  A: Starting September 2024, all updated desktop and mobile Discord clients
-  will support E2EE A/V. Web and consoles will receive E2EE A/V support in 2025.
-</p>
+<p>A: Web and consoles will get E2EE A/V support in the second half of 2025.</p>
 <p>
   <strong
     >Q: Why is my call not end-to-end encrypted when I’m on an updated Discord
@@ -285,16 +284,17 @@
 </p>
 <p>
   A: Your call may not be end-to-end encrypted because you may be on a call with
-  someone who is not on an updated Discord app. In 2025, all DMs, GDMs, voice
-  channels, and Go Live streams will require updated clients that support
-  end-to-end encryption.
+  someone who is not on an updated Discord app. On March 1st 2026, all DMs,
+  GDMs, voice channels, and Go Live streams will require updated clients that
+  support end-to-end encryption.
 </p>
 <p><strong>Q: Can I opt out of E2EE A/V?</strong></p>
 <p>
   A: E2EE A/V is enabled by default and cannot be turned off. E2EE A/V currently
   won’t apply to calls where an unsupported client (i.e., web and consoles) is
-  being used by at least one user. Stage channels also will not be end-to-end
-  encrypted.
+  being used by at least one user. Unsupported clients will no longer be able to
+  connect to calls from March 1, 2026. Stage channels also will not be
+  end-to-end encrypted.
 </p>
 <p>
   <strong
@@ -339,5 +339,3 @@
   verification is tied to the specific device. Persistent verification keys must
   be re-enabled on a new device.
 </p>
-<p> </p>
-<p><br /><br /><br /></p>
