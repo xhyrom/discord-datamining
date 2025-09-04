@@ -65043,6 +65043,26 @@ html .progress__61462 {
     min-height: 750px;
   }
 }
+.container__8ab7a {
+  align-items: center;
+  background: var(--background-surface-high);
+  border-radius: var(--radius-lg);
+  display: flex;
+  padding: var(--space-12) var(--space-24);
+  width: 608px;
+}
+.image__8ab7a {
+  height: 96px;
+  width: 96px;
+}
+.body__8ab7a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: var(--space-24);
+  margin-right: var(--space-32);
+  text-align: left;
+}
 .attributionBannerContainer_afe9b4 {
   align-items: center;
   display: flex;
@@ -99618,4 +99638,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.5453ca4803d6ec89.css.map*/
+/*# sourceMappingURL=12633.9ab03de0e65417aa.css.map*/
