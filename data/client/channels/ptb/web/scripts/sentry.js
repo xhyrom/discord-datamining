@@ -3399,6 +3399,11 @@
                 .concat(e, "/pay"),
             BILLING_SUBSCRIPTION_REWARDS: (t) =>
               "/users/@me/billing/subscriptions/".concat(t, "/rewards"),
+            BILLING_SUBSCRIPTION_PROMOTION_REWARD: (t) =>
+              "/users/@me/billing/subscriptions/".concat(
+                t,
+                "/promotion-reward",
+              ),
             Billing_SUBSCRIPTION_REWARD_ELIGIBILITY: (t) =>
               "/users/@me/billing/subscriptions/".concat(
                 t,
@@ -3532,6 +3537,7 @@
               "/guilds/".concat(t, "/discovery-categories/").concat(e),
             STREAM_PREVIEW: (t) => "/streams/".concat(t, "/preview"),
             STREAM_NOTIFY: (t) => "/streams/".concat(t, "/notify"),
+            STREAM_NOTIFY_V2: (t) => "/streams/".concat(t, "/notify-v2"),
             STREAM: (t) => "/streams/".concat(t, "/stream"),
             GUILD_PREVIEW: (t) => "/guilds/".concat(t, "/preview"),
             USER_AFFINITIES: "/users/@me/affinities/users",
@@ -4665,6 +4671,7 @@
           (r.ATT_APP_STATE_CHECKED = "att_app_state_checked"),
           (r.ATT_APP_STATE_CHECKED_OVERRIDE = "att_app_state_checked_override"),
           (r.ATT_PROMPT_ERROR = "att_prompt_error"),
+          (r.AD_IDENTIFIER_FETCHED = "ad_identifier_fetched"),
           (r.AD_USER_FETCH_DURATION = "ad_user_fetch_duration"),
           (r.HEADLESS_TASK_INVOKED = "headless_task_invoked"),
           (r.HEADLESS_TASK_COMPLETED = "headless_task_completed"),
@@ -5223,8 +5230,6 @@
           (r.CUSTOM_STATUS_UPDATED = "custom_status_updated"),
           (r.CUSTOM_STATUS_RANDOMIZER_CLICKED =
             "custom_status_randomizer_clicked"),
-          (r.CUSTOM_STATUS_LABEL_CLICKED = "custom_status_label_clicked"),
-          (r.CUSTOM_STATUS_TOOLBAR_CLICKED = "custom_status_toolbar_clicked"),
           (r.ACTIVITY_STATUS_ICON_TOOLTIP_SHOWN =
             "activity_status_icon_tooltip_shown"),
           (r.TEXT_COPIED = "text_copied"),
@@ -5911,6 +5916,7 @@
           (r.USER_PROFILE_RECENT_GAMES_SETTING_DISABLED =
             "user_profile_recent_games_setting_disabled"),
           (r.USER_PROFILE_BADGE_HOVERED = "user_profile_badge_hovered"),
+          (r.USER_PROFILE_EDIT_ACTION = "user_profile_edit_action"),
           (r.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
@@ -6988,7 +6994,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-03-7045c5332ac260094a3c57a95122055915941b9a-discord_web",
+              "2025-09-04-00e068558e623e05e3d7b8973c4438ccc1b6259c-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7054,8 +7060,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "439729"),
-            o.YA("builtAt", String("1756884289610"));
+            o.YA("buildNumber", "440213"),
+            o.YA("builtAt", String("1756970426028"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48501,4 +48507,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d6baf24feaee6652.js.map
+//# sourceMappingURL=sentry.81c03ba0416279c8.js.map
