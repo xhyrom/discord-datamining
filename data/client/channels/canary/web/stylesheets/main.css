@@ -67095,7 +67095,7 @@ div:hover
 }
 .timeBoxOutline__7cfe3 {
   align-content: center;
-  background-color: var(--background-mod-strong);
+  background-color: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   border-radius: 6px;
   height: 36px;
   justify-content: center;
@@ -76301,6 +76301,13 @@ html .invoiceCancelRow__968a4 {
 .legalContainer__11ee8 {
   margin: var(--space-16) 0;
 }
+.spinnerContainer__11ee8 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
 .churnFooterContainer__64988 {
   overflow-x: clip;
   position: relative;
@@ -76853,7 +76860,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99605,4 +99612,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.789e068806de39e2.css.map*/
+/*# sourceMappingURL=12633.c3c12e78e698a5fc.css.map*/
