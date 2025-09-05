@@ -3701,7 +3701,6 @@
             HUB_EMAIL_VERIFY_SEND: "/guilds/automations/email-domain-lookup",
             GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD: (t) =>
               "/guilds/".concat(t, "/products/attachments"),
-            CHAT_WALLPAPERS: "/chat-wallpapers",
             GUILD_ROLE_SUBSCRIPTIONS_SETTINGS: (t) =>
               "/guilds/".concat(t, "/role-subscriptions/settings"),
             GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS: (t, e) =>
@@ -4200,6 +4199,7 @@
             GUILD_DISCOVERY: "/guild-discovery",
             GLOBAL_DISCOVERY: "/discovery",
             QUEST_HOME: "/discovery/quests",
+            QUEST_HOME_V2: "/quest-home",
             GLOBAL_DISCOVERY_SERVERS: "/discovery/servers",
             GLOBAL_DISCOVERY_APPS: "/discovery/applications",
             GLOBAL_DISCOVERY_APPS_CATEGORY: (t) =>
@@ -4644,6 +4644,7 @@
           (r.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (r.REGISTER_INPUT_BLUR = "register_input_blur"),
           (r.SESSION_START = "session_start"),
+          (r.APP_BACK_FORWARD_NAVIGATED = "app_back_forward_navigated"),
           (r.EXTERNAL_FINGERPRINT_DROPPED = "external_fingerprint_dropped"),
           (r.EXTERNAL_DYNAMIC_LINK_RECEIVED = "external_dynamic_link_received"),
           (r.DEEP_LINK_CLICKED = "deep_link_clicked"),
@@ -5320,6 +5321,7 @@
           (r.SUPER_REACTION_BALANCE_VIEWED = "super_reaction_balance_viewed"),
           (r.SUPER_REACTION_NOTIFICATIONS_ENABLED =
             "super_reaction_notifications_enabled"),
+          (r.DOUBLE_TAP_REACT_EMOJI_UPDATED = "double_tap_react_emoji_updated"),
           (r.STICKER_PACK_VIEW_ALL = "sticker_pack_view_all"),
           (r.STICKER_SEARCH_VIEW_ALL = "sticker_search_view_all"),
           (r.STICKER_SUGGESTIONS_ENABLED_TOGGLED =
@@ -6994,7 +6996,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-04-1fea1af945eca712c76f360925c7fc02bd93c6da-discord_web",
+              "2025-09-05-0b7bafd7e871ff773814adfecb89a3ed9363936d-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7060,8 +7062,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "440373"),
-            o.YA("builtAt", String("1757010389121"));
+            o.YA("buildNumber", "440808"),
+            o.YA("builtAt", String("1757057252135"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12086,7 +12088,7 @@
           _,
           n = a(149765),
           o = a(860911);
-        a(674746), a(691324), a(481677), a(722770);
+        a(691324), a(674746), a(481677), a(722770);
         let i = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
           c = location.protocol + "//discord.gg";
         Object.freeze({
@@ -48507,4 +48509,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8b685688a07ac591.js.map
+//# sourceMappingURL=sentry.306896543b041a49.js.map
