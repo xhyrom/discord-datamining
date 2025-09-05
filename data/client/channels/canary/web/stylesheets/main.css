@@ -52976,9 +52976,11 @@ h3.improved__1689b:after {
 .outerContainerEmbed__092f9 {
   min-height: 138px;
 }
-.questSplash__092f9 {
+.questSplashContainer__092f9 {
+  height: 185px;
+}
+.questSplashImage__092f9 {
   max-width: 660px;
-  min-height: 100%;
   object-fit: cover;
   position: absolute;
   width: 100%;
@@ -53083,7 +53085,6 @@ h3.improved__1689b:after {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 0;
 }
 .iconsContainer__092f9 {
   flex-direction: row;
@@ -76887,7 +76888,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99639,4 +99640,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c850cc07061d9ac6.css.map*/
+/*# sourceMappingURL=12633.c63d8f8ddc0d0c26.css.map*/
