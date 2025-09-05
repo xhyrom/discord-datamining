@@ -66424,6 +66424,9 @@ div:hover
 .nitroGradientBorderHover__1f069:hover:before {
   opacity: 1;
 }
+.promotionRedemptionImage__1f069 {
+  margin-bottom: var(--space-24);
+}
 .hoverWrapper_b5493b {
   display: flex;
 }
@@ -66447,7 +66450,7 @@ div:hover
   pointer-events: all;
   transform: scale(1);
 }
-.hoverWrapper_b5493b:hover .cardImage_b5493b {
+.hoverWrapper_b5493b:hover .hoverCardImage_b5493b {
   border-radius: 20px;
   margin: -24px;
   width: calc(100% + 48px);
@@ -99640,4 +99643,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c63d8f8ddc0d0c26.css.map*/
+/*# sourceMappingURL=12633.c4a10c3751583ace.css.map*/
