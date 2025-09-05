@@ -24746,8 +24746,13 @@ span.clanTag__5d473 {
   box-sizing: border-box;
   height: 800px;
   max-width: 100%;
-  min-width: 800px;
+  min-height: 500px;
   width: 960px;
+}
+@media (max-height: 900px) {
+  :where(.outer_c0bea0).user-profile-modal-v2 {
+    height: calc(100vh - var(--space-24) * 2);
+  }
 }
 :where(.outer_c0bea0).user-profile-sidebar {
   height: 100%;
@@ -78812,52 +78817,6 @@ h2.title_feb59c {
 .statusText_a7f798 {
   padding-left: 0.5rem;
 }
-.container_a58267 {
-  bottom: 32px;
-  left: 50%;
-  opacity: 0;
-  pointer-events: auto;
-  position: fixed;
-  transform: translateX(-50%) translateY(100%);
-  z-index: 1002;
-}
-.full-motion .container_a58267 {
-  transition-duration: 0.3s;
-  transition-property: transform, opacity;
-  transition-timing-function: cubic-bezier(0.2, 0, 0.2, 1);
-}
-.container_a58267.visible_a58267 {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-16px);
-}
-.content_a58267 {
-  align-items: center;
-  background-color: var(--background-surface-highest);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-high);
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-  padding: 12px 16px;
-  transition-duration: 0.2s;
-  transition-property: background-color, color, border-color;
-  transition-timing-function: ease;
-}
-.content_a58267.emphasized_a58267 {
-  background-color: var(--background-feedback-critical);
-  border-color: var(--border-feedback-critical);
-  color: var(--text-feedback-critical);
-}
-.message_a58267 {
-  flex: 1;
-  overflow: hidden;
-}
-.actions_a58267 {
-  display: flex;
-  flex-shrink: 0;
-  gap: 8px;
-}
 :root {
   --input-border: hsla(240, 4%, 55%, 0.48);
 }
@@ -99597,4 +99556,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.dc7ac067f65c93ca.css.map*/
+/*# sourceMappingURL=12633.1cd4a72a59e4028b.css.map*/
