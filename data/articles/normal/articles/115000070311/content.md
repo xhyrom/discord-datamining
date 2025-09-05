@@ -56,7 +56,7 @@
         <td style="text-align: center"><strong>Action</strong></td>
       </tr>
       <tr>
-        <td style="text-align: center"><strong>*****</strong></td>
+        <td style="text-align: center"><strong>*</strong></td>
         <td>Find and switch between servers</td>
       </tr>
       <tr>
