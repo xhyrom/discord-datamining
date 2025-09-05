@@ -43407,9 +43407,13 @@ div.mobilePushContainer__3d3b0 {
 }
 .menu__43313 {
   max-height: 70vh;
+  width: 222px;
 }
 .customMenuItem__43313 {
-  margin: 0 8px 16px;
+  margin: -4px 6px 16px;
+}
+.menu__43313 .customMenuItem__43313 .customNotches__43313 {
+  color: var(--background-surface-higher);
 }
 .wrapper__06283 {
   height: calc(
@@ -45169,7 +45173,7 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
 }
 .buttons__37e49 {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-8);
 }
 .tooltipWithSubtext__37e49 {
   display: flex;
@@ -99593,4 +99597,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b5494a6446d07882.css.map*/
+/*# sourceMappingURL=12633.fe8dc8eff8c79a48.css.map*/
