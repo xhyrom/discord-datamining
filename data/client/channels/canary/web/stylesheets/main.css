@@ -23531,7 +23531,7 @@ div.modalHeader_c28af8 {
 }
 .uploadModal_dbca3c .footer_dbca3c {
   background-color: var(--background-base-lower);
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -76850,7 +76850,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99556,4 +99556,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1cd4a72a59e4028b.css.map*/
+/*# sourceMappingURL=12633.62d3e03caf5eb85a.css.map*/
