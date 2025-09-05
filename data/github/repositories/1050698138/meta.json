@@ -1,8 +1,8 @@
 {
-  "id": 832270770,
-  "node_id": "R_kgDOMZtxsg",
-  "name": "embedded-app-sdk-examples",
-  "full_name": "discord/embedded-app-sdk-examples",
+  "id": 1050698138,
+  "node_id": "R_kgDOPqBhmg",
+  "name": "react-native-reanimated",
+  "full_name": "discord/react-native-reanimated",
   "private": false,
   "owner": {
     "login": "discord",
@@ -25,14 +25,14 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "description": "Examples for the Embedded App SDK",
-  "fork": false,
-  "url": "https://api.github.com/repos/discord/embedded-app-sdk-examples",
-  "created_at": "2024-07-22T17:07:50Z",
-  "homepage": "https://discord.dev",
-  "size": 1712,
-  "language": "TypeScript",
-  "has_issues": true,
+  "description": "React Native's Animated library reimplemented",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-native-reanimated",
+  "created_at": "2025-09-04T19:54:08Z",
+  "homepage": "https://docs.swmansion.com/react-native-reanimated/",
+  "size": 538745,
+  "language": null,
+  "has_issues": false,
   "has_projects": false,
   "has_downloads": true,
   "has_wiki": false,
@@ -50,9 +50,7 @@
   "allow_forking": true,
   "is_template": false,
   "web_commit_signoff_required": false,
-  "topics": [
-    "samples"
-  ],
+  "topics": [],
   "visibility": "public",
   "default_branch": "main",
   "permissions": {
