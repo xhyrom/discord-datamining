@@ -30804,12 +30804,85 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   justify-content: start;
   padding: var(--space-8) var(--space-16);
 }
-.bar_c590c7 {
+.clipContainer__841c8 {
+  margin-top: 0;
+  overflow: hidden;
+  padding-top: 3px;
+}
+.container__841c8 {
+  display: flex;
+  flex-direction: column;
+}
+.replyBar__841c8,
+.threadSuggestionBar__841c8 {
+  background: var(--background-base-lower);
+  background-color: unset;
+  border-bottom: none;
+  cursor: pointer;
+}
+.theme-dark.custom-theme-background .replyBar__841c8,
+.theme-dark.custom-theme-background .threadSuggestionBar__841c8 {
+  background: var(--background-gradient-lowest, var(--background-base-lower));
+}
+.theme-light.custom-theme-background .replyBar__841c8,
+.theme-light.custom-theme-background .threadSuggestionBar__841c8 {
+  background: var(--background-gradient-lower, var(--background-base-lower));
+}
+.replyBar__841c8 {
   align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.threadSuggestionBar__841c8 {
+  border-top: 1px solid var(--border-subtle);
+  box-shadow: 0 3px 0 var(--background-base-lower);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-left: var(--space-20);
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+.text__841c8 {
+  margin-left: var(--space-16);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.replyLabel__841c8 {
+  flex: 1 1 auto;
+}
+.name__841c8 {
+  font-weight: var(--font-weight-semibold);
+}
+.actions__841c8 {
+  flex: 0 0 auto;
+  margin-right: var(--space-4);
+}
+.actions__841c8,
+.mentionButton__841c8 {
+  align-items: center;
+  display: flex;
+}
+.mentionButton__841c8 {
+  cursor: pointer;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+.mentionIcon__841c8 {
+  height: 16px;
+  margin-right: 4px;
+  width: 16px;
+}
+.separator__841c8 {
+  background-color: var(--border-subtle);
+  height: 20px;
+  width: 1px;
+}
+.createThreadButton__841c8 {
+  margin-left: 8px;
+  margin-right: 8px;
+  white-space: nowrap;
 }
 .small__258ba {
   height: 16px;
@@ -37985,86 +38058,6 @@ div.modalOverrideBody__34eac {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
-}
-.clipContainer__841c8 {
-  margin-top: 0;
-  overflow: hidden;
-  padding-top: 3px;
-}
-.container__841c8 {
-  display: flex;
-  flex-direction: column;
-}
-.replyBar__841c8,
-.threadSuggestionBar__841c8 {
-  background: var(--background-base-lower);
-  background-color: unset;
-  border-bottom: none;
-  cursor: pointer;
-}
-.theme-dark.custom-theme-background .replyBar__841c8,
-.theme-dark.custom-theme-background .threadSuggestionBar__841c8 {
-  background: var(--background-gradient-lowest, var(--background-base-lower));
-}
-.theme-light.custom-theme-background .replyBar__841c8,
-.theme-light.custom-theme-background .threadSuggestionBar__841c8 {
-  background: var(--background-gradient-lower, var(--background-base-lower));
-}
-.replyBar__841c8 {
-  align-items: center;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-.threadSuggestionBar__841c8 {
-  border-top: 1px solid var(--border-subtle);
-  box-shadow: 0 3px 0 var(--background-base-lower);
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 7px;
-  padding-top: 7px;
-}
-.text__841c8 {
-  margin-left: var(--space-16);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.replyLabel__841c8 {
-  flex: 1 1 auto;
-}
-.name__841c8 {
-  font-weight: var(--font-weight-semibold);
-}
-.actions__841c8 {
-  flex: 0 0 auto;
-  margin-right: var(--space-4);
-}
-.actions__841c8,
-.mentionButton__841c8 {
-  align-items: center;
-  display: flex;
-}
-.mentionButton__841c8 {
-  cursor: pointer;
-  padding: 8px 12px;
-  text-transform: uppercase;
-}
-.mentionIcon__841c8 {
-  height: 16px;
-  margin-right: 4px;
-  width: 16px;
-}
-.separator__841c8 {
-  background-color: var(--border-subtle);
-  height: 20px;
-  width: 1px;
-}
-.createThreadButton__841c8 {
-  margin-left: 8px;
-  margin-right: 8px;
-  white-space: nowrap;
 }
 .emojiButton__04eed {
   align-items: center;
@@ -99600,4 +99593,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a663981b32d38dcb.css.map*/
+/*# sourceMappingURL=12633.b5494a6446d07882.css.map*/
