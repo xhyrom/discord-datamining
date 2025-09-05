@@ -49,7 +49,7 @@
     </ul>
   </li>
   <li>
-    <a href="#h_01HHG1XZR1331MJBNBPR30KSVK">Server Subscriptions </a>
+    <a href="#h_01HHG1XZR1331MJBNBPR30KSVK">Server Subscriptions</a>
     <ul>
       <li>
         <a href="#h_01HHG1XZR1KP5DX848N5K60E1J"
@@ -289,19 +289,94 @@
 </ul>
 <h2 id="h_01HHG1XZR1HZ4DE9XVM69NAFQ3">How do I get started?</h2>
 <p>
-  If you’re a server owner, you must accept the
+  If you’re the server owner, you must first
+  <strong>Enable Monetization</strong> for your server. Please note that, in
+  order to manage monetization for your server, it is easier to keep a browser
+  window open on your desktop device to switch between the Discord app and the
+  Discord Developers Portal.
+</p>
+<p>
+  1. Go to the Discord Developers Portal at this URL:
   <a
-    href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms"
-    ><span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Monetization Terms</span
-    ></a
+    href="https://discord.com/developers"
+    target="_blank"
+    rel="noopener noreferrer"
+    >https://discord.com/developers</a
   >
-  by heading to <strong>Server Settings</strong> <strong>&gt;</strong>
-  <strong>Enable Monetization</strong>. If you’re not a server owner, please
-  speak with the server owner about taking the steps above.
+</p>
+<p>2. Log into your Discord account</p>
+<p>3. Press on the Get Started button.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://creator-support.discord.com/hc/article_attachments/34713894563223"
+    alt="image7.png"
+    width="561"
+    height="325"
+  />
+</p>
+<p>4. In the left-hand panel, select Servers.</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://creator-support.discord.com/hc/article_attachments/34713894564375"
+    alt="image3.png"
+    width="217"
+    height="388"
+  />
+</p>
+<p id="docs-internal-guid-e5aee95a-7fff-9449-2026-87cd8945fb30">
+  5. Choose your desired server for monetization.
+</p>
+<p>
+  6. In the left-hand panel for your chosen server, select Enable Monetization.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://creator-support.discord.com/hc/article_attachments/34713894564631"
+    alt="image15.png"
+    width="220"
+    height="575"
+  />
+</p>
+<p>
+  7. This will open the Discord app in a new tab in your web browser and take
+  you to the Enable Monetization page within your chosen server’s Server
+  Settings.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://creator-support.discord.com/hc/article_attachments/34713894567575"
+    alt="image9.png"
+    width="636"
+    height="611"
+  />
+</p>
+<p>
+  8. Agree to the Monetization Terms and Server Monetization Policy. Then press
+  the Start Earning button.
+</p>
+<div class="info-box">
+  In order to start earning, your server must have the following three
+  requirements:
+  <ul>
+    <li>Community must be enabled on your server.</li>
+    <li>
+      Multifactor Authentication (MFA) must be set up for moderation actions.
+    </li>
+    <li>Your server cannot be primarily built around NSFW content.</li>
+  </ul>
+</div>
+<p>
+  9. The Server Subscriptions tab will now be available for your server and you
+  must follow the instructions to create a team of trusted server members in
+  order to enable monetization. Press Create Team when you are ready.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://creator-support.discord.com/hc/article_attachments/34713894568215"
+    alt="image6.png"
+    width="615"
+    height="556"
+  />
 </p>
 <h2 id="h_01HHG1XZR1VAZKHGGZ7D4RXNMW">How do payments work?</h2>
 <p><strong>How much money will I earn?</strong></p>
