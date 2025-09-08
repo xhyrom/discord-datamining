@@ -8028,47 +8028,6 @@ svg.radioIcon_c1e9c4 {
 .scroller_affa7e {
   height: 100%;
 }
-.container__24c2d {
-  align-items: center;
-  background-color: var(--background-base-lowest);
-  border-radius: 4px;
-  display: flex;
-  margin: 4px 2px;
-  padding: 4px;
-}
-.input__24c2d {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: none;
-  box-sizing: border-box;
-  color: var(--text-default);
-  flex: 1;
-  font-size: 14px;
-  font-weight: var(--font-weight-medium);
-  height: 20px;
-  line-height: 20px;
-  min-width: 48px;
-  padding: 2px 4px;
-  resize: none;
-}
-.input__24c2d::-webkit-input-placeholder {
-  color: var(--text-muted);
-  opacity: 1;
-}
-.iconContainer__24c2d {
-  margin-right: 3px;
-  position: relative;
-}
-.icon__24c2d,
-.iconContainer__24c2d {
-  height: 18px;
-  width: 18px;
-}
-.iconClickable__24c2d {
-  cursor: pointer;
-}
 .slider_a562c8 {
   height: 40px;
   position: relative;
@@ -99618,4 +99577,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c9b77e23fae168d0.css.map*/
+/*# sourceMappingURL=12633.3efdeda110151a3d.css.map*/
