@@ -2177,6 +2177,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     textarea:focus
   ) {
   outline: 1px solid var(--custom-input-focus-border-color);
+  outline-offset: -2px;
 }
 .wrapper__3412a[data-error="true"] {
   --custom-input-border-color: var(--input-border-critical);
@@ -76261,7 +76262,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98967,4 +98968,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f179a201a222de2a.css.map*/
+/*# sourceMappingURL=12633.4fea4929d7eba279.css.map*/
