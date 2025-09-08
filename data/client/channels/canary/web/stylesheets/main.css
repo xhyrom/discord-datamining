@@ -62733,17 +62733,15 @@ html .progress__61462 {
   border: 2px solid CanvasText;
 }
 .popover_f84418 {
-  overflow: visible;
-}
-.popoverReactionHoverBar_f84418 {
   background: var(--background-surface-high);
   border: 1px solid var(--border-faint);
   border-radius: 8px;
   box-shadow: var(--shadow-low) !important;
   height: auto;
+  overflow: visible;
   padding: 2px;
 }
-.popoverReactionHoverBar_f84418:hover {
+.popover_f84418:hover {
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-medium) !important;
 }
@@ -99586,4 +99584,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ec2e25c831b74fca.css.map*/
+/*# sourceMappingURL=12633.d2a30fc48f654ddf.css.map*/
