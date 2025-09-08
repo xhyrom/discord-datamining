@@ -49613,18 +49613,6 @@ h3.improved__1689b:after {
   flex-direction: column;
   gap: 16px;
 }
-.backButtonContents__8f372 {
-  align-items: center;
-  color: var(--text-link);
-  display: flex;
-  font-size: 16px;
-}
-.arrowIcon__8f372 {
-  height: 20px;
-  margin-right: 4px;
-  transform: rotate(270deg);
-  width: 20px;
-}
 .button_bf1984 {
   max-width: var(--custom-button-button-lg-width);
   min-width: -webkit-min-content;
@@ -76892,7 +76880,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99598,4 +99586,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.047ee820e49ee6f2.css.map*/
+/*# sourceMappingURL=12633.ec2e25c831b74fca.css.map*/
