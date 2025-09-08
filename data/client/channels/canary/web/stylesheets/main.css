@@ -9935,6 +9935,21 @@ svg.radioIcon_c1e9c4 {
 .rounded__0f084 {
   border-radius: var(--radius-round);
 }
+.enable-forced-colors .button__0f084 {
+  background-color: ButtonFace;
+  border-color: ButtonText;
+  color: ButtonText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .button__0f084:disabled {
+  background-color: Canvas;
+  border-color: GrayText;
+  color: GrayText;
+  opacity: 1;
+}
+.enable-forced-colors .button__0f084 .expressiveFill__0f084 {
+  display: none;
+}
 .container__0f084 {
   --custom-input-padding: 10px;
   --custom-text-input-icon-spacing: var(--space-4);
@@ -12074,6 +12089,21 @@ svg.radioIcon_c1e9c4 {
 }
 .rounded__6af3a {
   border-radius: var(--radius-round);
+}
+.enable-forced-colors .button__6af3a {
+  background-color: ButtonFace;
+  border-color: ButtonText;
+  color: ButtonText;
+  forced-color-adjust: none;
+}
+.enable-forced-colors .button__6af3a:disabled {
+  background-color: Canvas;
+  border-color: GrayText;
+  color: GrayText;
+  opacity: 1;
+}
+.enable-forced-colors .button__6af3a .expressiveFill__6af3a {
+  display: none;
 }
 .badge_dca3ba {
   align-self: center;
@@ -44615,6 +44645,10 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.enable-forced-colors.theme-dark .iconForeground__37e49,
+.enable-forced-colors.theme-light .iconForeground__37e49 {
+  color: currentColor;
+}
 .picker__7f2be {
   display: flex;
   flex-direction: column;
@@ -47384,6 +47418,8 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   position: relative;
   vertical-align: baseline;
 }
+.usernameColorOnName_c19a55 {
+}
 .compact_c19a55 .headerText_c19a55,
 .cozy_c19a55 .headerText_c19a55,
 .roleDot_c19a55 {
@@ -47649,14 +47685,13 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
 .cozy_c19a55 .badgesContainer_c19a55 {
   margin-left: 0.25rem;
 }
-.enable-forced-colors .headerText_c19a55 .username_c19a55 {
-  background-color: Canvas;
-  color: ButtonText;
-  forced-color-adjust: none;
-}
 .cozy_c19a55 .pollBadgeDefault_c19a55,
 .pollBadgeReplied_c19a55 {
   margin: 0 0 0 0.25rem;
+}
+.enable-forced-colors .headerText_c19a55 .username_c19a55 {
+  color: ButtonText;
+  forced-color-adjust: none;
 }
 .wrapper__74bfa {
   align-items: center;
@@ -98836,4 +98871,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9a3f9d6e5b1deadb.css.map*/
+/*# sourceMappingURL=12633.03c9e45adeb66819.css.map*/
