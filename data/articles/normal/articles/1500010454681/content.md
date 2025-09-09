@@ -1,19 +1,42 @@
-<h3 id="h_01HE6D3J3HW1H66EFH0JT8FJAC">
-  We are rolling out the Drag and Drop accessibility feature to desktop users.
-  <a
-    href="https://support.discord.com/hc/articles/4408877527703"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Read more about it here</a
-  >! 
-</h3>
 <p>
-  Because important features should be easy to find, we're proud to announce
-  that Accessibility now has a dedicated section on Discord!
+  We want Discord to be accessible for everyone. That’s why we’ve rolled out a
+  dedicated <strong>Accessibility</strong> section in
+  <strong>User Settings</strong> - making it easier to find and adjust features
+  that help you customize Discord to your needs.
 </p>
-<h1 id="h_01HE6D3J3HX98E8FV9SXE83WJW">What's Changed?</h1>
 <p>
-  Now you'll be able to find these accessibility options in their own tab under
+  <span class="wysiwyg-font-size-large"
+    ><strong>What this article covers:</strong></span
+  >
+</p>
+<ul>
+  <li>
+    <a href="#h_01HE6D3J3HX98E8FV9SXE83WJW"
+      >Where to Find Discord Accessibility Settings</a
+    ><br />
+    <ul>
+      <li><a href="#h_01HE6D3J3HWJG2SDP5TDVQ87ZE">Desktop Instructions</a></li>
+      <li><a href="#h_01HE6D3J3H5VXR5HNJSCX0SSW1">Mobile Instructions</a></li>
+    </ul>
+  </li>
+  <li><a href="#h_01G7DFWCRF6ZB54TWTJT911YE5">Saturation Slider</a></li>
+  <li><a href="#h_01G7DFYBHZ8FDQ2P59XHT9MAJQ">Sticker Animation Control</a></li>
+  <li><a href="#h_01FF8RQ8EHR2T5PPCF9MZY1E1Y">Text-to-Speech Settings</a></li>
+  <li><a href="#h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</a></li>
+  <li><a href="#h_01G7CSFJH6T5PT4MZKCGHPH3F5">Role Colors</a></li>
+  <li>
+    <a href="#h_01GG6CPREN9AHEJQ083B3NS85Y">Profile and Client Theme Sync</a>
+  </li>
+  <li>
+    <a href="#h_01HE6D3J3JV9GW7WE4T5P4YZ77">Other Accessibility Features</a>
+  </li>
+</ul>
+<h1 id="h_01HE6D3J3HX98E8FV9SXE83WJW">
+  Where to Find Discord Accessibility Settings
+</h1>
+<p>
+  From controlling motion and color to adjusting text-to-speech and contrast,
+  you’ll now be able to find everything in one place under
   <strong>User Settings &gt; App Settings &gt; Accessibility</strong>. 
 </p>
 <p>This includes options such as: </p>
@@ -113,13 +136,10 @@
 <h1 id="h_01G7DFWCRF6ZB54TWTJT911YE5" class="wysiwyg-text-align-left">
   Saturation Slider
 </h1>
-<h3 id="h_01HE6D3J3HRNGPCSQ07N81G0EF">
-  Note: At this time, this feature is only on our Desktop client.
-</h3>
 <p>
-  We are adding a Saturation slider to the Accessibility Settings Tab that
-  allows users to adjust the contrast of the colors in the client for our users
-  with color sensitivities.
+  We added a Saturation slider to the Accessibility Settings Tab that allows
+  users to adjust the richness of the colors in the client for our users with
+  color sensitivities.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -138,7 +158,7 @@
     alt="Screenshot_95.png"
   />
 </p>
-<h1 id="h_01FF8RQ8EHR2T5PPCF9MZY1E1Y">Text-to-Speech settings</h1>
+<h1 id="h_01FF8RQ8EHR2T5PPCF9MZY1E1Y">Text-to-Speech Settings</h1>
 <h3 id="h_01HE6D3J3H6KJ0QV1DVJCZWT1P">
   Alongside the Text-to-Speech Rate Slider, we also have improved
   <a
@@ -158,7 +178,7 @@
   >
   has been available to all users on Discord for some time now, but over the
   years we've listened to your need to adjust the speed at which message content
-  is read back to you. Which is what led us to build the
+  is read back to you. That feedback led us to build the
   <strong>Text-To-Speech Slider</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
