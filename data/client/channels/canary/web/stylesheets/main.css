@@ -52211,6 +52211,7 @@ h3.improved__1689b:after {
   );
   height: 100%;
   left: 0;
+  pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
@@ -76272,7 +76273,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98978,4 +98979,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a06e7ad64ee56d65.css.map*/
+/*# sourceMappingURL=12633.91c9571ca59cd67d.css.map*/
