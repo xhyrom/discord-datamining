@@ -22,7 +22,24 @@
   <li><a href="#h_01G7DFWCRF6ZB54TWTJT911YE5">Saturation Slider</a></li>
   <li><a href="#h_01G7DFYBHZ8FDQ2P59XHT9MAJQ">Sticker Animation Control</a></li>
   <li><a href="#h_01FF8RQ8EHR2T5PPCF9MZY1E1Y">Text-to-Speech Settings</a></li>
-  <li><a href="#h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</a></li>
+  <li>
+    <a href="#h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</a>
+    <ul>
+      <li>
+        <a href="#h_01K4QXYTKMP5MPHKC2PBRS59K8"
+          >High-Contrast Mode on Desktop</a
+        >
+      </li>
+      <li>
+        <a href="#h_01K4QY2TCQ2MBECMA6W1Q3YK5W"
+          >Sync Contrast Settings on Windows Devices</a
+        >
+      </li>
+      <li>
+        <a href="#h_01K4QYYPYQ4R98KNMYQH692QXJ">Contrast Slider on Mobile</a>
+      </li>
+    </ul>
+  </li>
   <li><a href="#h_01G7CSFJH6T5PT4MZKCGHPH3F5">Role Colors</a></li>
   <li>
     <a href="#h_01GG6CPREN9AHEJQ083B3NS85Y">Profile and Client Theme Sync</a>
@@ -137,15 +154,32 @@
   Saturation Slider
 </h1>
 <p>
-  We added a Saturation slider to the Accessibility Settings Tab that allows
-  users to adjust the richness of the colors in the client for our users with
-  color sensitivities.
+  We added a Saturation slider to the <strong>Accessibility</strong> settings
+  tab that allows users to adjust the richness of the colors in the client for
+  our users with color sensitivities.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/4402360744343"
     alt="Saturation_setting.png"
   />
+</p>
+<p class="wysiwyg-text-align-center">
+  The Saturation Slider on the desktop Discord app can be found in
+  <strong>User Settings</strong> under <strong>Accessibility</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34819021220119"
+    alt="saturation-slider-on-discord-mobile.png"
+    width="352"
+    height="563"
+  />
+</p>
+<p class="wysiwyg-text-align-center">
+  On the Discord mobile app, the Saturation Slider can be found by going to the
+  <strong>Accessibility page</strong> in <strong>Settings</strong> through the
+  <strong>user avatar icon</strong>.
 </p>
 <h1 id="h_01G7DFYBHZ8FDQ2P59XHT9MAJQ">Sticker Animation Control</h1>
 <p>
@@ -221,46 +255,54 @@
   </span>
 </p>
 <h1 id="h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</h1>
-<h3 id="h_01HE6D3J3HBA9E0MHQSBGQB0MV">
-  This feature is rolling out slowly to all Discord users on a Windows
-  device.<br />Please note that this setting will only appear for Windows users.
-  It will not show up for MacOS, iOS, and Android users.
-</h3>
-<p id="docs-internal-guid-50da16a3-7fff-cc3e-075c-86f00f56b2f0">
-  If you’re on a Windows device, you can
-  <strong>Sync contrast settings</strong> on your Discord client if you have
-  Windows <strong>High Contrast Mode</strong> enabled on your device. Check out
-  this
-  <a
-    href="https://support.microsoft.com/en-us/windows/turn-high-contrast-mode-on-or-off-in-windows-909e9d89-a0f9-a3a9-b993-7a6dcee85025#ID0EBD=Windows_11"
-    target="_blank"
-    rel="noopener noreferrer"
-    >article</a
+<h2 id="h_01K4QXYTKMP5MPHKC2PBRS59K8">High-Contrast Mode on Desktop</h2>
+<p>
+  <span id="docs-internal-guid-a33b3c44-7fff-f9ee-705e-edb2c804f0e3"
+    >High Contrast Mode provides improved contrast for UI elements across the
+    entire Discord client. It works on all themes and can be enabled at the top
+    of the Accessibility Settings tab. High Contrast Mode can also be used with
+    Window’s High Contrast mode feature to increase the contrast even
+    more.</span
   >
-  to find steps on how to enable High Contrast mode on Windows.  
 </p>
-<h4 id="h_01HE6D5SH1C0FMAETPGSMDVE4A">
-  With High Contrast Mode enabled on your Windows device, Discord will adopt its
-  theme colors. You can choose to opt-out by turning off
-  <strong>Sync contrast settings.</strong>
-</h4>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34819057991703"
+    alt="enable-contrast mode-on-discord-desktop-browser.png"
+  />
+</p>
+<h2 id="h_01K4QY2TCQ2MBECMA6W1Q3YK5W">
+  Sync Contrast Settings on Windows Devices
+</h2>
+<div class="info-box">
+  Please note that this additional setting will only appear for Windows users.
+  It will not show up for MacOS, iOS, and Android users.
+</div>
+<p>
+  If you’re on a Windows device, you can Sync contrast settings on your Discord
+  client if you have Windows High Contrast Mode enabled on your device. Check
+  out this article to find steps on how to enable High Contrast mode on Windows.
+</p>
+<div class="tip-box">
+  With <strong>Sync contrast settings</strong> enabled on your Windows device,
+  Discord will adopt its theme colors. You can choose to opt-out by turning off
+  Sync contrast settings.
+</div>
 <p>
   With both High Contrast Mode and the client sync enabled, your original Theme
   settings for your client will be disabled (i.e. Dark &amp; Light themes). If
   you prefer to keep Discord’s theme colors on your client even with High
   Contrast Mode enabled on your device, you will have to disable
-  <strong>Sync contrast settings </strong>from your
-  <strong>Accessibility </strong>settings tab. This will reactivate your
+  <strong>Sync contrast settings</strong> from your
+  <strong>Accessibility</strong> settings tab. This will reactivate your
   original Theme settings.
 </p>
 <p>
-  <span style="font-weight: 400"
-    >This setting will only take effect if you have enabled
-    <strong>High Contrast Mode </strong>on your Windows device first. Otherwise,
-    if you have High Contrast Mode disabled on your device, you won’t see any
-    changes to Discord when you interact with
-    <strong>Sync contrast settings.</strong><br
-  /></span>
+  This setting will only take effect if you have enabled
+  <strong>High Contrast Mode</strong> on your Windows device first. Otherwise,
+  if you have High Contrast Mode disabled on your device, you won’t see any
+  changes to Discord when you interact with
+  <strong>Sync contrast settings</strong>.
 </p>
 <p class="wysiwyg-text-align-center">
   <img
@@ -268,31 +310,50 @@
     alt="image1.png"
   />
 </p>
-<h4 id="docs-internal-guid-b822f84f-7fff-9464-d5af-e7dfe08750b9">
+<p id="docs-internal-guid-b822f84f-7fff-9464-d5af-e7dfe08750b9">
   From your <strong>Accessibility </strong>settings tab, you can
   <strong>Sync contrast settings</strong> with your Windows contrast theme. You
   can only enable/disable if you have Windows
   <strong>High Contrast Mode </strong>enabled from your device’s settings.
-</h4>
+</p>
 <p id="docs-internal-guid-1ed19053-7fff-bc91-2798-31d94cc0f77c">
   <strong>Have any feedback about contrast settings? Let us know in our </strong
-  ><a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSdTzNbITTRx4BYWFlC3gi_lEi3D3rsa9VCBK_EphF5myDb7uw/viewform?usp=sf_link"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Accessibility Feedback form</a
-  ><strong>. </strong>
+  ><strong
+    ><a
+      href="https://s.alchemer.com/s3/a177adc8bdb0"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    >. </strong
+  >
 </p>
 <p>
   <span style="font-weight: 400"
     >You can learn more about changing your Discord client’s appearance at this
     <a
-      href="https://support.discord.com/hc/en-us/articles/207260127"
+      href="https://support.discord.com/hc/articles/207260127"
       target="_blank"
       rel="noopener noreferrer"
       >article</a
     >.</span
   >
+</p>
+<h2 id="h_01K4QYYPYQ4R98KNMYQH692QXJ">
+  <span style="font-weight: 400">Contrast Slider on Mobile</span>
+</h2>
+<p>
+  <span style="font-weight: 400"
+    >On the Discord mobile app, we added a Contrast slider to allow users to
+    increase or decrease their app’s contrast.</span
+  >
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34819021224855"
+    alt="contrast-slider-on-discord-mobile.png"
+    width="359"
+    height="574"
+  />
 </p>
 <h1 id="h_01G7CSFJH6T5PT4MZKCGHPH3F5">
   <span style="font-weight: 400">Role Colors</span>

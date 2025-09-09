@@ -34,15 +34,13 @@
     </li>
   </ul>
 </div>
-<div class="info-box">
-  Custom Invite Links are available as an
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ#h_01JT6SH1QBD1XZKK4KEAD64GXS"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Additional Perk</a
-  >
-  in a limited experiment for select servers.
+<div class="exp-box">
+  <strong>Important:</strong> As of September 9, 2025, the Custom Invite Link
+  beta has concluded and will no longer be available for purchase under
+  Additional Perks. If you have this standalone perk unlocked, your custom URL
+  will be disabled on October 9, 2025, but reserved for an additional 30 days.
+  If you want to keep your custom URL, you can do so by upgrading to a level 3
+  server.
 </div>
 <h1 id="h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</h1>
 <p>
@@ -68,9 +66,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820348169495"
+    alt="Custom Invite Link being sent as a server invite"
     width="474"
     height="350"
-    alt="Custom Invite Link being sent as a server invite"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYF2R6AB4JY45WXNWJT">
@@ -96,9 +94,9 @@
   <strong
     ><img
       src="https://support.discord.com/hc/article_attachments/33820331521687"
+      alt="Server Settings option"
       width="359"
       height="567"
-      alt="Server Settings option"
   /></strong>
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYFYHGCW6X3TAR73Z2T">
@@ -115,9 +113,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820348173591"
+    alt="Custom Invite Link section"
     width="624"
     height="452"
-    alt="Custom Invite Link section"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYG4BCE3NYW2XQEEV55">
@@ -135,9 +133,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820348174871"
+    alt="Save Changes button after entering your Custom Invite URL"
     width="624"
     height="263"
-    alt="Save Changes button after entering your Custom Invite URL"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGQ24XV7C5Y8DN37AB">
@@ -154,9 +152,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820348169495"
+    alt="Custom Invite Link being sent as a server invite"
     width="474"
     height="350"
-    alt="Custom Invite Link being sent as a server invite"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGSKR9QFFF25CDVK19">
@@ -200,9 +198,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820348176535"
+    alt="Error when setting a Custom Invite Link"
     width="624"
     height="184"
-    alt="Error when setting a Custom Invite Link"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGKBPQ6SE0ENR8DY1Z">
@@ -221,9 +219,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820331526295"
+    alt="Invalid Invite error"
     width="443"
     height="129"
-    alt="Invalid Invite error"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGKAN7FAJ0KA4J9XVT">
@@ -252,9 +250,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33820331526679"
+    alt="Remove Custom Invite Link button"
     width="624"
     height="269"
-    alt="Remove Custom Invite Link button"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K1DV4MYGVPJJGZTXHG82S1PC">

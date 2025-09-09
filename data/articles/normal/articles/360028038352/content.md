@@ -282,6 +282,14 @@
   <li>Animated Server Banner</li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
+<div class="exp-box">
+  <strong>Important:</strong> As of September 9, 2025, the Custom Invite Link
+  beta has concluded and will no longer be available for purchase under
+  Additional Perks. If you have this standalone perk unlocked, your custom URL
+  will be disabled on October 9, 2025, but reserved for an additional 30 days.
+  If you want to keep your custom URL, you can do so by upgrading to a level 3
+  server.
+</div>
 <ul>
   <li>
     <strong>Server Tags (3 Boosts)</strong> - Give your members a custom
