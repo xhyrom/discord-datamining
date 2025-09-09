@@ -36754,10 +36754,6 @@ body .headerAnimation_b54a5b {
 .tooltipWordmark_cd30d9 {
   color: var(--text-muted);
 }
-.ambient_cd30d9.badgeImage_cd30d9 {
-  min-height: 80px;
-  min-width: 80px;
-}
 .tooltipWordmark_d4ff11 {
   color: var(--text-muted);
   margin-bottom: 4px;
@@ -99000,4 +98996,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9e81cdf4485134c7.css.map*/
+/*# sourceMappingURL=12633.e45abf02180d7e4a.css.map*/
