@@ -7004,7 +7004,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-503208bf1d40f1b1273c248df77c96d8903727e5",
+            release: "discord_web-dd591d15ff46d79c45bae77d59ea5a2607f2e9cd",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7070,8 +7070,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "442346"),
-            o.YA("builtAt", String("1757453399435"));
+            o.YA("buildNumber", "442354"),
+            o.YA("builtAt", String("1757453908016"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8328,6 +8328,13 @@
                 [r.LIGHT]: { raw: "PRIMARY_160", opacity: 0.9 },
                 [r.MIDNIGHT]: { raw: "PLUM_19", opacity: 0.9 },
                 [r.DARKER]: { raw: "PLUM_19", opacity: 0.9 },
+              },
+              GRADIENT_PROGRESS_PILL_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_45", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_18", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_63", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_56", opacity: 1 },
               },
               GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND: {
                 category: "generic",
@@ -17973,6 +17980,12 @@
             r.I.PRIMARY_160,
             r.I.PLUM_19,
             r.I.PLUM_19,
+          ],
+          "gradient-progress-pill-background": [
+            r.I.NEUTRAL_45,
+            r.I.NEUTRAL_18,
+            r.I.NEUTRAL_63,
+            r.I.NEUTRAL_56,
           ],
           "guild-notifications-bottom-sheet-pill-background": [
             r.I.PRIMARY_700,
@@ -48517,4 +48530,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.02d0ea0bfb6dbcca.js.map
+//# sourceMappingURL=sentry.191ff3e79cb2a331.js.map

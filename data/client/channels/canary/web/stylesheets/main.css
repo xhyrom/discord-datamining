@@ -42867,7 +42867,7 @@ div.mobilePushContainer__3d3b0 {
   position: relative;
 }
 .progress__06283 {
-  background-color: var(--border-strong);
+  background-color: var(--gradient-progress-pill-background);
 }
 .notches__06283,
 .progress__06283 {
@@ -80202,6 +80202,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.45);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.45);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-45);
   --header-muted: var(--neutral-22);
   --header-primary: var(--neutral-1);
   --header-secondary: var(--neutral-9);
@@ -81080,6 +81081,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -82651,6 +82658,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-3-hsl) / 0.8);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-1-hsl) / 0.8);
   --focus-primary: var(--blue-360);
+  --gradient-progress-pill-background: var(--neutral-18);
   --header-muted: var(--neutral-40);
   --header-primary: var(--neutral-71);
   --header-secondary: var(--neutral-69);
@@ -83533,6 +83541,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-360) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-18) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -85122,6 +85136,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.25);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.25);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-63);
   --header-muted: var(--neutral-33);
   --header-primary: var(--neutral-8);
   --header-secondary: var(--neutral-10);
@@ -86010,6 +86025,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-63) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -87595,6 +87616,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.3);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.3);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-56);
   --header-muted: var(--neutral-29);
   --header-primary: var(--neutral-2);
   --header-secondary: var(--neutral-5);
@@ -88479,6 +88501,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-56) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -89785,6 +89813,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-18);
+  --gradient-progress-pill-background: var(--neutral-34);
   --header-muted: var(--neutral-12);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -90072,6 +90101,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-18) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -90698,6 +90733,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--black);
   --embed-title: var(--black);
   --focus-primary: var(--blue-new-63);
+  --gradient-progress-pill-background: var(--neutral-30);
   --header-muted: var(--neutral-49);
   --header-primary: var(--black);
   --header-secondary: var(--neutral-76);
@@ -90983,6 +91019,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-30) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -91615,6 +91657,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-34);
+  --gradient-progress-pill-background: var(--neutral-44);
   --header-muted: var(--neutral-23);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-6);
@@ -91902,6 +91945,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-34) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -92524,6 +92573,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-29);
+  --gradient-progress-pill-background: var(--neutral-41);
   --header-muted: var(--neutral-19);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -92811,6 +92861,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-29) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-41) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -98976,4 +99032,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.21995e4c1ac5f514.css.map*/
+/*# sourceMappingURL=12633.2b6e073c60e0044a.css.map*/
