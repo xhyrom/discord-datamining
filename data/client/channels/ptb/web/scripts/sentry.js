@@ -3185,6 +3185,7 @@
             CAPTCHA_TEST: "/captcha/decider",
             AGE_ASSURANCE_TEST: "/age-verification/test",
             VERIFY_AGE: "/age-verification/verify",
+            AGE_VERIFICATION_METHODS: "/age-verification/methods",
             EXPERIMENTS: "/experiments",
             LOGIN: "/auth/login",
             LOGIN_MFA: (t) => "/auth/mfa/".concat(t),
@@ -4225,8 +4226,10 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
-            BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: (t) =>
-              "/billing/premium/manage?deep_link_type=".concat(t),
+            BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: (t, e) =>
+              "/billing/premium/manage?deep_link_type="
+                .concat(t)
+                .concat(null != e ? "&load_id=".concat(e) : ""),
             BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
@@ -5587,6 +5590,7 @@
           (r.SURVEY_SUBMITTED = "survey_submitted"),
           (r.CANCELLATION_FLOW_STARTED = "cancellation_flow_started"),
           (r.CANCELLATION_FLOW_STEP = "cancellation_flow_step"),
+          (r.CANCELLATION_FLOW_COMPLETED = "cancellation_flow_completed"),
           (r.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED =
             "cancellation_flow_discount_offer_prompt_viewed"),
           (r.ATTACHMENT_UPLOAD_STARTED = "attachment_upload_started"),
@@ -5629,6 +5633,8 @@
           (r.CLIPS_SETTINGS_UPDATED = "clips_settings_updated"),
           (r.STANDALONE_BILLING_FLOW_STARTED =
             "standalone_billing_flow_started"),
+          (r.MOBILE_OPEN_STANDALONE_MANAGE_SUBSCRIPTION_PAGE =
+            "mobile_open_standalone_manage_subscription_page"),
           (r.STANDALONE_MANAGE_SUBSCRIPTION_PAGE_VIEWED =
             "standalone_manage_subscription_page_viewed"),
           (r.INBOUND_PROMOTION_VIEWED = "inbound_promotion_viewed"),
@@ -5923,6 +5929,7 @@
             "user_profile_recent_games_setting_disabled"),
           (r.USER_PROFILE_BADGE_HOVERED = "user_profile_badge_hovered"),
           (r.USER_PROFILE_EDIT_ACTION = "user_profile_edit_action"),
+          (r.USER_PROFILE_EDIT_SAVED = "user_profile_edit_saved"),
           (r.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
@@ -6366,6 +6373,7 @@
           (r.NOTIFICATIONS_INBOX_LOADED = "notifications_inbox_loaded"),
           (r.NOTIFICATIONS_INBOX_DATA_LOADED =
             "notifications_inbox_data_loaded"),
+          (r.CONTEXTUAL_REMINDER_ACTION = "contextual_reminder_action"),
           (r.MASKED_LINK_MODAL_CLICKED = "masked_link_modal_clicked"),
           (r.GAME_STORE_BUTTON_CLICKED = "game_store_button_clicked"),
           (r.ACTIVITY_SHARING_SETTINGS_INTERACTED =
@@ -7004,7 +7012,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-09-6dd08d2300f0747520894a46862231554879c8c7-discord_web",
+              "2025-09-10-7fafeff14a041efc3463935bbd90a2d3e5a59a98-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7070,8 +7078,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "441996"),
-            o.YA("builtAt", String("1757402801904"));
+            o.YA("buildNumber", "442597"),
+            o.YA("builtAt", String("1757488737713"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -8328,6 +8336,13 @@
                 [r.LIGHT]: { raw: "PRIMARY_160", opacity: 0.9 },
                 [r.MIDNIGHT]: { raw: "PLUM_19", opacity: 0.9 },
                 [r.DARKER]: { raw: "PLUM_19", opacity: 0.9 },
+              },
+              GRADIENT_PROGRESS_PILL_BACKGROUND: {
+                category: "generic",
+                [r.DARK]: { raw: "NEUTRAL_45", opacity: 1 },
+                [r.LIGHT]: { raw: "NEUTRAL_18", opacity: 1 },
+                [r.MIDNIGHT]: { raw: "NEUTRAL_63", opacity: 1 },
+                [r.DARKER]: { raw: "NEUTRAL_56", opacity: 1 },
               },
               GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND: {
                 category: "generic",
@@ -17973,6 +17988,12 @@
             r.I.PRIMARY_160,
             r.I.PLUM_19,
             r.I.PLUM_19,
+          ],
+          "gradient-progress-pill-background": [
+            r.I.NEUTRAL_45,
+            r.I.NEUTRAL_18,
+            r.I.NEUTRAL_63,
+            r.I.NEUTRAL_56,
           ],
           "guild-notifications-bottom-sheet-pill-background": [
             r.I.PRIMARY_700,
@@ -48517,4 +48538,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.cabe0909a9a61410.js.map
+//# sourceMappingURL=sentry.af38b1ec0b14e68b.js.map

@@ -2314,6 +2314,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   flex-grow: 1;
   interpolate-size: allow-keywords;
 }
+.label__2e2f2 {
+  padding-top: var(--space-4);
+}
 .description__2e2f2,
 .label__2e2f2 {
   margin-bottom: var(--space-8);
@@ -6391,19 +6394,19 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .h4_b717a1 {
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.3px;
+}
+.h4_b717a1,
+.h5_b717a1,
+.legend_b717a1 {
   line-height: 20px;
 }
 .h5_b717a1,
-.label_b717a1,
 .legend_b717a1 {
-  text-transform: unset;
-}
-.h5_b717a1 {
   color: var(--header-primary);
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
   margin-bottom: 8px;
+  text-transform: unset;
 }
 .defaultMarginh4_b717a1 {
   margin-bottom: 0;
@@ -6459,29 +6462,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .fieldWrapper_ce6bbd {
   padding-top: 4px;
   position: relative;
-}
-.label__1b9d6 {
-  color: var(--header-primary);
-  cursor: default;
-  display: block;
-  flex: 1;
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  text-transform: none;
-}
-.defaultMargin__1b9d6,
-.label__1b9d6 {
-  margin-bottom: 8px;
-}
-.disabled__1b9d6 {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.required__1b9d6 {
-  color: var(--text-danger);
-  padding-left: 4px;
 }
 .flex__7c0ba,
 .horizontal__7c0ba {
@@ -36754,10 +36734,6 @@ body .headerAnimation_b54a5b {
 .tooltipWordmark_cd30d9 {
   color: var(--text-muted);
 }
-.ambient_cd30d9.badgeImage_cd30d9 {
-  min-height: 80px;
-  min-width: 80px;
-}
 .tooltipWordmark_d4ff11 {
   color: var(--text-muted);
   margin-bottom: 4px;
@@ -42891,7 +42867,7 @@ div.mobilePushContainer__3d3b0 {
   position: relative;
 }
 .progress__06283 {
-  background-color: var(--border-strong);
+  background-color: var(--gradient-progress-pill-background);
 }
 .notches__06283,
 .progress__06283 {
@@ -52211,6 +52187,7 @@ h3.improved__1689b:after {
   );
   height: 100%;
   left: 0;
+  pointer-events: none;
   position: absolute;
   top: 0;
   width: 100%;
@@ -76272,7 +76249,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -77255,7 +77232,10 @@ h2.title_feb59c {
   -webkit-app-region: drag;
 }
 .platform-osx .bar_c38106 {
-  padding-left: calc(var(--custom-guild-list-width) + var(--space-md));
+  padding-left: calc(
+    100 / var(--custom-zoom, 100) *
+      (var(--custom-guild-list-width) + var(--space-md))
+  );
 }
 .platform-win .bar_c38106 {
   padding-right: 0;
@@ -80222,6 +80202,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.45);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.45);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-45);
   --header-muted: var(--neutral-22);
   --header-primary: var(--neutral-1);
   --header-secondary: var(--neutral-9);
@@ -81100,6 +81081,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-45) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -82671,6 +82658,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-3-hsl) / 0.8);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-1-hsl) / 0.8);
   --focus-primary: var(--blue-360);
+  --gradient-progress-pill-background: var(--neutral-18);
   --header-muted: var(--neutral-40);
   --header-primary: var(--neutral-71);
   --header-secondary: var(--neutral-69);
@@ -83553,6 +83541,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-360) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-18) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -85142,6 +85136,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.25);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.25);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-63);
   --header-muted: var(--neutral-33);
   --header-primary: var(--neutral-8);
   --header-secondary: var(--neutral-10);
@@ -86030,6 +86025,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-63) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -87615,6 +87616,7 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-6-hsl) / 0.3);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-4-hsl) / 0.3);
   --focus-primary: var(--blue-345);
+  --gradient-progress-pill-background: var(--neutral-56);
   --header-muted: var(--neutral-29);
   --header-primary: var(--neutral-2);
   --header-secondary: var(--neutral-5);
@@ -88499,6 +88501,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-345) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-56) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -89805,6 +89813,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-18);
+  --gradient-progress-pill-background: var(--neutral-34);
   --header-muted: var(--neutral-12);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -90092,6 +90101,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-18) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -90718,6 +90733,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--black);
   --embed-title: var(--black);
   --focus-primary: var(--blue-new-63);
+  --gradient-progress-pill-background: var(--neutral-30);
   --header-muted: var(--neutral-49);
   --header-primary: var(--black);
   --header-secondary: var(--neutral-76);
@@ -91003,6 +91019,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-63) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-30) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -91635,6 +91657,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-34);
+  --gradient-progress-pill-background: var(--neutral-44);
   --header-muted: var(--neutral-23);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-6);
@@ -91922,6 +91945,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-34) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -92544,6 +92573,7 @@ html.disable-forced-colors * {
   --control-text-secondary-loading: var(--white);
   --embed-title: var(--white);
   --focus-primary: var(--blue-new-29);
+  --gradient-progress-pill-background: var(--neutral-41);
   --header-muted: var(--neutral-19);
   --header-primary: var(--white);
   --header-secondary: var(--neutral-1);
@@ -92831,6 +92861,12 @@ html.disable-forced-colors * {
     --focus-primary: color-mix(
       in oklab,
       var(--blue-new-29) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --gradient-progress-pill-background: color-mix(
+      in oklab,
+      var(--neutral-41) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -98881,7 +98917,7 @@ img[alt] {
     var(--custom-guild-sidebar-width) + var(--custom-guild-list-width)
   );
   --custom-rtc-account-height: 44px;
-  --custom-app-top-bar-height: calc(24px + var(--space-8));
+  --custom-app-top-bar-height: 32px;
   --custom-app-top-bar-item-radius: 6px;
   --custom-channel-header-height: calc(
     var(--guildbar-avatar-size) + var(--space-xs)
@@ -98894,10 +98930,28 @@ img[alt] {
   --custom-message-margin-horizontal: var(--space-md);
 }
 .refresh-title-bar-small {
-  --custom-app-top-bar-height: calc(16px + var(--space-8));
+  --custom-app-top-bar-height: 24px;
 }
 .refresh-title-bar-large {
-  --custom-app-top-bar-height: calc(32px + var(--space-8));
+  --custom-app-top-bar-height: 40px;
+}
+.platform-osx {
+  --custom-app-top-bar-height: max(
+    calc(100 / var(--custom-zoom, 100) * 32px),
+    32px
+  );
+}
+.platform-osx.refresh-title-bar-small {
+  --custom-app-top-bar-height: max(
+    calc(100 / var(--custom-zoom, 100) * 24px),
+    24px
+  );
+}
+.platform-osx.refresh-title-bar-large {
+  --custom-app-top-bar-height: max(
+    calc(100 / var(--custom-zoom, 100) * 40px),
+    40px
+  );
 }
 .refresh-fast-follow-avatars {
   --custom-guild-list-padding: min(var(--space-md), var(--space-16));
@@ -98978,4 +99032,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.00c0e8e1bd8dd154.css.map*/
+/*# sourceMappingURL=12633.1d2f84d1dfdf9731.css.map*/
