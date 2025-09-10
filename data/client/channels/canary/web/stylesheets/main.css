@@ -38842,7 +38842,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  padding: 4px 0;
 }
 .cloudPlaySectionTextContainer__33ecd {
   align-items: center;
@@ -38850,6 +38849,7 @@ html:not(.chat-input) .inputInner_b1f01d {
   gap: 8px;
 }
 .cloudPlayDivider__33ecd {
+  margin: 4px 0;
   width: 100%;
 }
 .container__8e51c {
@@ -76078,7 +76078,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98853,4 +98853,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fec2896912ed8be4.css.map*/
+/*# sourceMappingURL=12633.223f332f12620953.css.map*/
