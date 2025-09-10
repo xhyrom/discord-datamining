@@ -40576,6 +40576,29 @@ img.thumbnail__0f2e8 {
 .container__23ba6 {
   display: flex;
 }
+.container_cbd19d {
+  border-radius: 8px;
+  margin: 4px 0;
+  padding: 12px;
+}
+.content_cbd19d {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.description_cbd19d {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+.buttons_cbd19d {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.button_cbd19d {
+  flex: 1;
+}
 .cardsList__84832 {
   display: flex;
   flex-direction: column;
@@ -76064,7 +76087,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98839,4 +98862,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.97fbd30800ac0f24.css.map*/
+/*# sourceMappingURL=12633.b4356e960c724e93.css.map*/
