@@ -22045,6 +22045,58 @@ svg.radioIcon_c1e9c4 {
   -moz-user-select: none;
   user-select: none;
 }
+.fallback_b789ab {
+  align-items: center;
+  background-color: #423d80;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px;
+  text-align: center;
+}
+.spacer_b789ab {
+  flex: 1;
+}
+.container_e0f8ae {
+  background-color: var(--background-base-low);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  width: 364px;
+}
+.headerContainer_e0f8ae {
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.headerContent_e0f8ae {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.gameGrid_e0f8ae {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.gameClickable_e0f8ae {
+  cursor: pointer;
+}
+.coverArt_e0f8ae {
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+.closeButton_e0f8ae {
+  color: var(--interactive-normal);
+  cursor: pointer;
+}
 .hidden__7d7b6 {
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
@@ -99052,4 +99104,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ddf57fdb29819b04.css.map*/
+/*# sourceMappingURL=12633.f6b8d0f6425cd285.css.map*/
