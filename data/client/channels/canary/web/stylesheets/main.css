@@ -73620,6 +73620,33 @@ span.clanTag__07f91.isOverlay__07f91 {
   opacity: 0.8;
   padding: var(--space-4) var(--space-8);
 }
+.debugMode_fa952e {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+.clickable_fa952e {
+  pointer-events: auto;
+}
+.key__98feb {
+  background: var(--background-base-low);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  box-sizing: border-box;
+  color: var(--text-muted);
+  display: inline-block;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  height: 16px;
+  line-height: 14px;
+  margin-left: var(--space-4);
+  margin-right: var(--space-4);
+  padding: 0 var(--space-4);
+  text-transform: uppercase;
+}
+.key__98feb + .key__98feb {
+  margin-left: 0;
+}
 .bgShade__6d791 {
   background-color: rgba(33, 34, 41, 0.75);
   border: 1px solid hsla(0, 0%, 100%, 0.08);
@@ -73630,6 +73657,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 .titleWrapper__6d791 {
   padding: var(--space-4) 10px;
   white-space: nowrap;
+}
+.titleWrapperClickable__6d791 {
+  cursor: pointer;
+  width: 100%;
+}
+.extrasEmptySpace__6d791 {
+  flex: 1;
+  height: 24px;
 }
 .button__6d791 {
   align-items: center;
@@ -77455,13 +77490,6 @@ h2.title_feb59c {
 .clearOverrideButton_a57b28 {
   margin-left: 8px;
 }
-.debugMode_fa952e {
-  background-color: rgba(255, 0, 0, 0.25);
-  border: 2px solid red;
-}
-.clickable_fa952e {
-  pointer-events: auto;
-}
 .dismissButton_dd40b0 {
   background-color: var(--background-base-low);
   border: 1px solid var(--border-subtle);
@@ -77520,7 +77548,7 @@ h2.title_feb59c {
 }
 .container_e8d31f {
   box-sizing: border-box;
-  padding: var(--custom-notification-spacing);
+  padding: 8px;
   position: relative;
   width: var(--custom-notification-container-width);
 }
@@ -77546,7 +77574,6 @@ h2.title_feb59c {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  padding: 2px 0;
 }
 .hint_e8d31f {
   margin-top: var(--space-4);
@@ -99104,4 +99131,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f6b8d0f6425cd285.css.map*/
+/*# sourceMappingURL=12633.6e2417af5777f271.css.map*/
