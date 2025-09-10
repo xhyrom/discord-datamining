@@ -3947,11 +3947,7 @@
   },
   "CHAT_WALLPAPERS": {
     "url": "/chat-wallpapers",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GUILD_ROLE_SUBSCRIPTIONS_SETTINGS": {
     "url": "/guilds/:param/role-subscriptions/settings",
