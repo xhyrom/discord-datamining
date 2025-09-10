@@ -16243,11 +16243,6 @@ svg.radioIcon_c1e9c4 {
 .mediaMosaicAltTextContainer__0f481 {
   position: relative;
 }
-.mediaMosaicVideoAltTextContainer__0f481 {
-  left: 4.5px;
-  position: absolute;
-  top: 4px;
-}
 .mediaMosaicAltText__0f481 {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 4px;
@@ -16265,11 +16260,6 @@ svg.radioIcon_c1e9c4 {
 .mediaMosaicAltText__0f481.reducedSize__0f481 {
   font-size: 12px;
   padding: 0 4px;
-}
-.mediaMosaicVideoAltText__0f481 {
-  bottom: inherit;
-  left: inherit;
-  position: inherit;
 }
 .mediaMosaicAltText__0f481:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -76249,7 +76239,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99032,4 +99022,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1d2f84d1dfdf9731.css.map*/
+/*# sourceMappingURL=12633.6aa65d93e03503b7.css.map*/
