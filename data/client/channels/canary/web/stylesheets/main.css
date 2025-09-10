@@ -52916,14 +52916,15 @@ h3.improved__1689b:after {
   place-content: center;
   place-items: center;
 }
-.errorBoundaryIcon__8d6f9 {
+.errorBoundaryIcon__8d6f9,
+.questsIcon__8d6f9 {
   color: var(--text-primary);
   height: 24px;
   width: 24px;
 }
 .errorMessageWrapper__8d6f9 {
   background-color: var(--background-base-lower) !important;
-  margin-top: 12px;
+  margin-bottom: 12px;
   padding: 12px;
 }
 .errorMessage__8d6f9 {
@@ -52932,6 +52933,25 @@ h3.improved__1689b:after {
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
+}
+.previewCard__8d6f9 {
+  display: grid;
+  grid-template-columns: 1fr 450px 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  padding: 32px;
+  width: 100%;
+  grid-row-gap: 16px;
+}
+.heading__8d6f9 {
+  grid-row: 1 / span 1;
+}
+.heading__8d6f9,
+.questTile__8d6f9 {
+  grid-column: 2 / span 1;
+}
+.questTile__8d6f9 {
+  grid-row: 2 / span 1;
 }
 .clickable__2debe {
   cursor: pointer;
@@ -99032,4 +99052,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.2b6e073c60e0044a.css.map*/
+/*# sourceMappingURL=12633.ddf57fdb29819b04.css.map*/
