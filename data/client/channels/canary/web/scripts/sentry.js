@@ -3185,6 +3185,7 @@
             CAPTCHA_TEST: "/captcha/decider",
             AGE_ASSURANCE_TEST: "/age-verification/test",
             VERIFY_AGE: "/age-verification/verify",
+            AGE_VERIFICATION_METHODS: "/age-verification/methods",
             EXPERIMENTS: "/experiments",
             LOGIN: "/auth/login",
             LOGIN_MFA: (t) => "/auth/mfa/".concat(t),
@@ -4225,8 +4226,10 @@
             VERIFY_HUB_EMAIL: "/verify-hub-email",
             OPEN_APP_FROM_EMAIL: "/open-app-from-email",
             BILLING_MANAGE_SUBSCRIPTION: "/billing/premium/manage",
-            BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: (t) =>
-              "/billing/premium/manage?deep_link_type=".concat(t),
+            BILLING_MANAGE_SUBSCRIPTION_WITH_DEEP_LINK: (t, e) =>
+              "/billing/premium/manage?deep_link_type="
+                .concat(t)
+                .concat(null != e ? "&load_id=".concat(e) : ""),
             BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
@@ -5587,6 +5590,7 @@
           (r.SURVEY_SUBMITTED = "survey_submitted"),
           (r.CANCELLATION_FLOW_STARTED = "cancellation_flow_started"),
           (r.CANCELLATION_FLOW_STEP = "cancellation_flow_step"),
+          (r.CANCELLATION_FLOW_COMPLETED = "cancellation_flow_completed"),
           (r.CANCELLATION_FLOW_DISCOUNT_OFFER_PROMPT_VIEWED =
             "cancellation_flow_discount_offer_prompt_viewed"),
           (r.ATTACHMENT_UPLOAD_STARTED = "attachment_upload_started"),
@@ -5629,6 +5633,8 @@
           (r.CLIPS_SETTINGS_UPDATED = "clips_settings_updated"),
           (r.STANDALONE_BILLING_FLOW_STARTED =
             "standalone_billing_flow_started"),
+          (r.MOBILE_OPEN_STANDALONE_MANAGE_SUBSCRIPTION_PAGE =
+            "mobile_open_standalone_manage_subscription_page"),
           (r.STANDALONE_MANAGE_SUBSCRIPTION_PAGE_VIEWED =
             "standalone_manage_subscription_page_viewed"),
           (r.INBOUND_PROMOTION_VIEWED = "inbound_promotion_viewed"),
@@ -7005,7 +7011,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f26e3646decb542ad93fbe53c552a15af2f9b3ff",
+            release: "discord_web-2155249df015e392cbd547c68cc6c9c84244cedf",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7071,8 +7077,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "442477"),
-            o.YA("builtAt", String("1757460716028"));
+            o.YA("buildNumber", "442524"),
+            o.YA("builtAt", String("1757464007427"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48531,4 +48537,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9d6d13f8521a9afc.js.map
+//# sourceMappingURL=sentry.e10a10c7ce10efc2.js.map
