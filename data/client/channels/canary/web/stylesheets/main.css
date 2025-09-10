@@ -61163,7 +61163,9 @@ html .progress__61462 {
   background-color: var(--brand-600);
   border-radius: 0;
   padding: 8px;
-  text-align: initial;
+}
+.closeButton__84419 {
+  height: 100%;
 }
 .container__09ccc {
   background-color: var(--background-surface-high);
@@ -76078,7 +76080,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98853,4 +98855,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.223f332f12620953.css.map*/
+/*# sourceMappingURL=12633.2d98793cfb3e92b1.css.map*/
