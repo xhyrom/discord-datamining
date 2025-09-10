@@ -1124,8 +1124,8 @@
     "privacy_policy_url": "https://rythm.fm/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -1133,8 +1133,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "8"
         }
@@ -1976,8 +1976,8 @@
     "privacy_policy_url": "https://magiccircle.gg/docs/privacy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2048"
     },
@@ -1985,8 +1985,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2048"
         }
@@ -3523,8 +3523,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147483648"
     },
@@ -3625,8 +3625,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2415921154"
     },
@@ -3735,8 +3735,8 @@
     "privacy_policy_url": "https://captcha.bot/legal",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "268561430"
     },
@@ -3744,8 +3744,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "268561430"
         }
@@ -3773,14 +3773,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "294041",
-        "sku": "294041",
-        "distributor": "igdb"
-      },
-      {
         "id": "2767030",
         "sku": "2767030",
         "distributor": "steam"
+      },
+      {
+        "id": "294041",
+        "sku": "294041",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -3893,13 +3893,13 @@
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       }
     ],
@@ -3912,7 +3912,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_beta_/wow.exe",
+        "name": "_ptr_/wow-64.exe",
         "is_launcher": false
       },
       {
@@ -3932,17 +3932,17 @@
       },
       {
         "os": "win32",
+        "name": "_ptr_/wow.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "_retail_/wow-64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_ptr_/wow.exe",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -4014,12 +4014,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "wc3.exe",
+        "name": "warcraft iii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warcraft iii.exe",
+        "name": "war3.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "wc3.exe",
         "is_launcher": false
       },
       {
@@ -4030,11 +4035,6 @@
       {
         "os": "win32",
         "name": "warcraft iii/frozen throne.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "war3.exe",
         "is_launcher": false
       }
     ],
@@ -4118,13 +4118,13 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "starcraft ii.exe",
+        "os": "darwin",
+        "name": "sc2.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "sc2.app",
+        "os": "win32",
+        "name": "starcraft ii.exe",
         "is_launcher": false
       }
     ],
@@ -4148,14 +4148,14 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "2357570",
-        "sku": "2357570",
-        "distributor": "steam"
-      },
-      {
         "id": "125174",
         "sku": "125174",
         "distributor": "igdb"
+      },
+      {
+        "id": "2357570",
+        "sku": "2357570",
+        "distributor": "steam"
       },
       {
         "id": "Pro",
@@ -4197,12 +4197,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "diablo ii/game.exe",
+        "name": "diablo ii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "diablo ii.exe",
+        "name": "diablo ii/game.exe",
         "is_launcher": false
       }
     ],
@@ -4226,13 +4226,13 @@
     "splash": "3ceef15c08000c6c0272dc22a29616cb",
     "third_party_skus": [
       {
-        "id": "D3",
-        "sku": "D3",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "D3",
+        "sku": "D3",
         "distributor": "battlenet"
       }
     ],
@@ -4245,12 +4245,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "diablo iii64.exe",
+        "name": "diablo iii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "diablo iii.exe",
+        "name": "diablo iii64.exe",
         "is_launcher": false
       },
       {
@@ -4278,14 +4278,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125165",
-        "sku": "125165",
-        "distributor": "igdb"
-      },
-      {
         "id": "2344520",
         "sku": "2344520",
         "distributor": "steam"
+      },
+      {
+        "id": "125165",
+        "sku": "125165",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -4383,16 +4383,6 @@
           "guild_id": "417825368062558219",
           "executables": [
             {
-              "os": "darwin",
-              "name": "leagueoflegends.app",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "leagueclientux.exe",
-              "is_launcher": true
-            },
-            {
               "os": "win32",
               "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
               "is_launcher": false
@@ -4403,9 +4393,19 @@
               "is_launcher": false
             },
             {
+              "os": "darwin",
+              "name": "leagueoflegends.app",
+              "is_launcher": false
+            },
+            {
               "os": "win32",
               "name": "league of legends.exe",
               "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "leagueclientux.exe",
+              "is_launcher": true
             },
             {
               "os": "win32",
@@ -4429,16 +4429,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
@@ -4449,9 +4439,19 @@
         "is_launcher": false
       },
       {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4617,6 +4617,11 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
+        "os": "win32",
+        "name": "roblox.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "roblox.app",
         "is_launcher": false
@@ -4624,11 +4629,6 @@
       {
         "os": "win32",
         "name": "robloxplayerbeta.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "roblox.exe",
         "is_launcher": false
       }
     ],
@@ -4726,16 +4726,6 @@
           "guild_id": "417825368062558219",
           "executables": [
             {
-              "os": "darwin",
-              "name": "leagueoflegends.app",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "leagueclientux.exe",
-              "is_launcher": true
-            },
-            {
               "os": "win32",
               "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
               "is_launcher": false
@@ -4746,9 +4736,19 @@
               "is_launcher": false
             },
             {
+              "os": "darwin",
+              "name": "leagueoflegends.app",
+              "is_launcher": false
+            },
+            {
               "os": "win32",
               "name": "league of legends.exe",
               "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "leagueclientux.exe",
+              "is_launcher": true
             },
             {
               "os": "win32",
@@ -4772,16 +4772,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
         "os": "win32",
         "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
@@ -4792,9 +4782,19 @@
         "is_launcher": false
       },
       {
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
+      },
+      {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4880,14 +4880,14 @@
           "guild_id": "302094807046684672",
           "executables": [
             {
-              "os": "darwin",
-              "name": ">java",
+              "os": "win32",
+              "name": ">javaw.exe",
               "arguments": "net.minecraft.client.main.Main",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": ">javaw.exe",
+              "os": "darwin",
+              "name": ">java",
               "arguments": "net.minecraft.client.main.Main",
               "is_launcher": false
             },
@@ -4923,14 +4923,14 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": ">java",
+        "os": "win32",
+        "name": ">javaw.exe",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": ">javaw.exe",
+        "os": "darwin",
+        "name": ">java",
         "arguments": "net.minecraft.client.main.Main",
         "is_launcher": false
       },
@@ -5073,14 +5073,14 @@
           "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
           "third_party_skus": [
             {
-              "id": "Fortnite",
-              "sku": "Fortnite",
-              "distributor": "epic"
-            },
-            {
               "id": "1389986893399199907",
               "sku": "1389986893399199907",
               "distributor": "nvidia_gdn_app"
+            },
+            {
+              "id": "Fortnite",
+              "sku": "Fortnite",
+              "distributor": "epic"
             }
           ],
           "linked_games": [
@@ -5098,6 +5098,11 @@
           "guild_id": "322850917248663552",
           "executables": [
             {
+              "os": "win32",
+              "name": "fortniteclient-win64-shipping_eac_eos.exe",
+              "is_launcher": true
+            },
+            {
               "os": "darwin",
               "name": "fortniteclient-mac-shipping.app",
               "is_launcher": false
@@ -5106,11 +5111,6 @@
               "os": "win32",
               "name": "fortniteclient-win64-shipping.exe",
               "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "fortniteclient-win64-shipping_eac_eos.exe",
-              "is_launcher": true
             }
           ],
           "storefront_available": false,
@@ -5136,13 +5136,13 @@
       },
       {
         "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
-        "is_launcher": false
+        "name": "fortniteclient-win64-shipping_eac_eos.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "fortniteclient-win64-shipping_eac_eos.exe",
-        "is_launcher": true
+        "name": "fortniteclient-win64-shipping.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -5251,7 +5251,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "subprocess/fivem_gtaprocess.exe",
+              "name": "grand theft auto v/gta5.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "grand theft auto v/fivem.exe",
               "is_launcher": false
             },
             {
@@ -5266,17 +5271,7 @@
             },
             {
               "os": "win32",
-              "name": "grand theft auto v/fivem.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "lspdfr/lspdfr configurator.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "grand theft auto v/gta5.exe",
+              "name": "subprocess/fivem_gtaprocess.exe",
               "is_launcher": false
             },
             {
@@ -5287,6 +5282,11 @@
             {
               "os": "win32",
               "name": "grand theft auto v/ragepluginhook.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "lspdfr/lspdfr configurator.exe",
               "is_launcher": false
             }
           ],
@@ -5309,7 +5309,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "subprocess/fivem_gtaprocess.exe",
+        "name": "grand theft auto v/gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/fivem.exe",
         "is_launcher": false
       },
       {
@@ -5324,17 +5329,7 @@
       },
       {
         "os": "win32",
-        "name": "grand theft auto v/fivem.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/gta5.exe",
+        "name": "subprocess/fivem_gtaprocess.exe",
         "is_launcher": false
       },
       {
@@ -5345,6 +5340,11 @@
       {
         "os": "win32",
         "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       }
     ],
@@ -5370,14 +5370,14 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "2357570",
-        "sku": "2357570",
-        "distributor": "steam"
-      },
-      {
         "id": "125174",
         "sku": "125174",
         "distributor": "igdb"
+      },
+      {
+        "id": "2357570",
+        "sku": "2357570",
+        "distributor": "steam"
       },
       {
         "id": "Pro",
@@ -5429,12 +5429,12 @@
     "executables": [
       {
         "os": "darwin",
-        "name": "osx64/dota2.app",
+        "name": "dota_osx.app",
         "is_launcher": false
       },
       {
         "os": "darwin",
-        "name": "dota_osx.app",
+        "name": "osx64/dota2.app",
         "is_launcher": false
       },
       {
@@ -5558,7 +5558,7 @@
           "executables": [
             {
               "os": "win32",
-              "name": "cod23/cod23-cod.exe",
+              "name": "sp23/sp23-cod.exe",
               "is_launcher": false
             },
             {
@@ -5568,7 +5568,7 @@
             },
             {
               "os": "win32",
-              "name": "sp23/sp23-cod.exe",
+              "name": "cod23/cod23-cod.exe",
               "is_launcher": false
             }
           ],
@@ -5590,7 +5590,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "cod23/cod23-cod.exe",
+        "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       },
       {
@@ -5600,7 +5600,7 @@
       },
       {
         "os": "win32",
-        "name": "sp23/sp23-cod.exe",
+        "name": "cod23/cod23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -5687,17 +5687,7 @@
           "executables": [
             {
               "os": "win32",
-              "name": "win64/tslgame_be.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "tslgame_be.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "win64/tslgame_uc.exe",
+              "name": "win64/tslgame.exe",
               "is_launcher": false
             },
             {
@@ -5707,7 +5697,17 @@
             },
             {
               "os": "win32",
-              "name": "win64/tslgame.exe",
+              "name": "win64/tslgame_uc.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "win64/tslgame_be.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "tslgame_be.exe",
               "is_launcher": false
             }
           ],
@@ -5730,17 +5730,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/tslgame_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "tslgame_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/tslgame_uc.exe",
+        "name": "win64/tslgame.exe",
         "is_launcher": false
       },
       {
@@ -5750,7 +5740,17 @@
       },
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
+        "name": "win64/tslgame_uc.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       }
     ],
@@ -5984,17 +5984,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "rainbowsixgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "rainbowsix_be.exe",
         "is_launcher": false
       },
       {
@@ -6004,7 +5994,17 @@
       },
       {
         "os": "win32",
+        "name": "rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "rainbowsix_be.exe",
         "is_launcher": false
       }
     ],
@@ -6203,22 +6203,22 @@
     "executables": [
       {
         "os": "win32",
+        "name": "ts4_dx9_x64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "ts4_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "ts4_dx9_x64.exe",
+        "name": "ts4.exe",
         "is_launcher": false
       },
       {
         "os": "darwin",
         "name": "the sims 4.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4.exe",
         "is_launcher": false
       }
     ],
@@ -6456,12 +6456,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
+        "name": "bin/bg3.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3.exe",
+        "name": "bin/bg3_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -6549,12 +6549,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "rustclient.exe",
+              "name": "rust/rustclient.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "rust/rustclient.exe",
+              "name": "rustclient.exe",
               "is_launcher": false
             },
             {
@@ -6581,11 +6581,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rust/rustclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "rustclient.exe",
         "is_launcher": false
       },
@@ -6593,6 +6588,11 @@
         "os": "win32",
         "name": "rust.exe",
         "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "rust/rustclient.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -6617,13 +6617,13 @@
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       },
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       }
     ],
@@ -6636,7 +6636,17 @@
     "executables": [
       {
         "os": "win32",
+        "name": "_ptr_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "_beta_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_retail_/wow.exe",
         "is_launcher": false
       },
       {
@@ -6651,22 +6661,12 @@
       },
       {
         "os": "win32",
-        "name": "_ptr_/wow-64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "_beta_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_retail_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -6805,13 +6805,8 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deadbydaylight-egs-shipping.exe",
+        "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
-        "is_launcher": true
       },
       {
         "os": "win32",
@@ -6820,8 +6815,13 @@
       },
       {
         "os": "win32",
-        "name": "deadbydaylight-win64-shipping.exe",
+        "name": "deadbydaylight-egs-shipping.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dead by daylight/deadbydaylight.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -7073,13 +7073,13 @@
           "guild_id": "188630481301012481",
           "executables": [
             {
-              "os": "darwin",
-              "name": "osu!.app",
+              "os": "win32",
+              "name": "osu!.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "osu!.exe",
+              "os": "darwin",
+              "name": "osu!.app",
               "is_launcher": false
             }
           ],
@@ -7096,13 +7096,13 @@
     "hook": true,
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -7242,13 +7242,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "wuthering waves.app",
+        "os": "win32",
+        "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
+        "os": "darwin",
+        "name": "wuthering waves.app",
         "is_launcher": false
       },
       {
@@ -7338,11 +7338,6 @@
           "executables": [
             {
               "os": "win32",
-              "name": "among us - copy/among us.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
               "name": "among us - tou/among us.exe",
               "is_launcher": false
             },
@@ -7354,6 +7349,11 @@
             {
               "os": "win32",
               "name": "among us/among us.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "among us - copy/among us.exe",
               "is_launcher": false
             }
           ],
@@ -7384,12 +7384,12 @@
       },
       {
         "os": "win32",
-        "name": "among us - copy/among us.exe",
+        "name": "among us/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "among us/among us.exe",
+        "name": "among us - copy/among us.exe",
         "is_launcher": false
       }
     ],
@@ -7472,13 +7472,13 @@
           "guild_id": "251072485095636994",
           "executables": [
             {
-              "os": "linux",
-              "name": "terraria.bin.x86",
+              "os": "win32",
+              "name": "terraria/terraria.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "terraria/terraria.exe",
+              "os": "darwin",
+              "name": "terraria.app",
               "is_launcher": false
             },
             {
@@ -7487,8 +7487,8 @@
               "is_launcher": false
             },
             {
-              "os": "darwin",
-              "name": "terraria.app",
+              "os": "linux",
+              "name": "terraria.bin.x86",
               "is_launcher": false
             }
           ],
@@ -7507,13 +7507,13 @@
     ],
     "executables": [
       {
-        "os": "linux",
-        "name": "terraria.bin.x86",
+        "os": "win32",
+        "name": "terraria/terraria.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "terraria/terraria.exe",
+        "os": "darwin",
+        "name": "terraria.app",
         "is_launcher": false
       },
       {
@@ -7522,8 +7522,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "terraria.app",
+        "os": "linux",
+        "name": "terraria.bin.x86",
         "is_launcher": false
       }
     ],
@@ -7616,7 +7616,7 @@
           "executables": [
             {
               "os": "win32",
-              "name": "bloonstd6.exe",
+              "name": "cleaner/cleaner-btd6.exe",
               "is_launcher": false
             },
             {
@@ -7626,7 +7626,7 @@
             },
             {
               "os": "win32",
-              "name": "cleaner/cleaner-btd6.exe",
+              "name": "bloonstd6.exe",
               "is_launcher": false
             }
           ],
@@ -7646,7 +7646,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       },
       {
@@ -7656,7 +7656,7 @@
       },
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6.exe",
         "is_launcher": false
       }
     ],
@@ -7835,7 +7835,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "left 4 dead 2/left4dead2.exe",
+        "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -7847,7 +7847,7 @@
       },
       {
         "os": "win32",
-        "name": "left4dead2.exe",
+        "name": "left 4 dead 2/left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -7878,14 +7878,14 @@
     "splash": "31b3aabf060b6b0ea55f6f6dc0456eef",
     "third_party_skus": [
       {
-        "id": "25076",
-        "sku": "25076",
-        "distributor": "igdb"
-      },
-      {
         "id": "1174180",
         "sku": "1174180",
         "distributor": "steam"
+      },
+      {
+        "id": "25076",
+        "sku": "25076",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -7923,14 +7923,14 @@
           "splash": "b68121c4ece68d5ab313f797a5ca1107",
           "third_party_skus": [
             {
-              "id": "25076",
-              "sku": "25076",
-              "distributor": "igdb"
-            },
-            {
               "id": "1174180",
               "sku": "1174180",
               "distributor": "steam"
+            },
+            {
+              "id": "25076",
+              "sku": "25076",
+              "distributor": "igdb"
             }
           ],
           "linked_games": [
@@ -8005,6 +8005,12 @@
         "is_launcher": false
       },
       {
+        "os": "win32",
+        "name": "garrysmod/hl2.exe",
+        "arguments": "-game garrysmod",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": ">hl2_osx",
         "arguments": "-game garrysmod",
@@ -8018,18 +8024,12 @@
       },
       {
         "os": "win32",
-        "name": "garrysmod/hl2.exe",
-        "arguments": "-game garrysmod",
+        "name": "win64/gmod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "bin/gmad.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/gmod.exe",
         "is_launcher": false
       }
     ],
@@ -8085,14 +8085,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125165",
-        "sku": "125165",
-        "distributor": "igdb"
-      },
-      {
         "id": "2344520",
         "sku": "2344520",
         "distributor": "steam"
+      },
+      {
+        "id": "125165",
+        "sku": "125165",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -8169,13 +8169,13 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "brawlhalla.app",
+        "os": "win32",
+        "name": "brawlhalla.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "brawlhalla.exe",
+        "os": "darwin",
+        "name": "brawlhalla.app",
         "is_launcher": false
       }
     ],
@@ -8201,12 +8201,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "gta_sa.exe",
+        "name": "gta-sa.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "gta-sa.exe",
+        "name": "gta_sa.exe",
         "is_launcher": false
       }
     ],
@@ -8317,12 +8317,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       }
     ],
@@ -8419,12 +8419,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "warframe.x64.exe",
+              "name": "warframe.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "warframe.exe",
+              "name": "warframe.x64.exe",
               "is_launcher": false
             }
           ],
@@ -8447,12 +8447,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "warframe.x64.exe",
+        "name": "warframe.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warframe.exe",
+        "name": "warframe.x64.exe",
         "is_launcher": false
       }
     ],
@@ -8489,12 +8489,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "forzahorizon5/forzahorizon5.exe",
+        "name": "forzahorizon5.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "forzahorizon5.exe",
+        "name": "forzahorizon5/forzahorizon5.exe",
         "is_launcher": false
       }
     ],
@@ -8542,7 +8542,7 @@
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile.exe",
+        "name": "path of exile/pathofexile_x64steam.exe",
         "is_launcher": false
       },
       {
@@ -8552,12 +8552,12 @@
       },
       {
         "os": "win32",
-        "name": "流亡黯道/pathofexilesteam.exe",
+        "name": "path of exile/pathofexilesteam.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexilesteam.exe",
+        "name": "path of exile/pathofexile.exe",
         "is_launcher": false
       },
       {
@@ -8572,7 +8572,7 @@
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexile_x64steam.exe",
+        "name": "流亡黯道/pathofexilesteam.exe",
         "is_launcher": false
       }
     ],
@@ -8606,8 +8606,8 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/start_protected_game.exe",
-        "is_launcher": false
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -8616,8 +8616,8 @@
       },
       {
         "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
+        "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -8696,6 +8696,11 @@
     "executables": [
       {
         "os": "win32",
+        "name": "sotgame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "content/seaofthieves.exe",
         "is_launcher": false
       },
@@ -8707,11 +8712,6 @@
       {
         "os": "win32",
         "name": "wingdk/sotgame.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "sotgame.exe",
         "is_launcher": false
       }
     ],
@@ -8798,12 +8798,6 @@
     "guild_id": "132349439506382848",
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
-        "arguments": "-game tf",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": ">hl2.exe",
         "arguments": "-game tf",
@@ -8812,6 +8806,12 @@
       {
         "os": "win32",
         "name": "hl2tf.exe",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -8848,12 +8848,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "x64/cyberpunk2077.exe",
+        "name": "cyberpunk2077.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "cyberpunk2077.exe",
+        "name": "x64/cyberpunk2077.exe",
         "is_launcher": false
       }
     ],
@@ -8906,12 +8906,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "wingdk/palworld-wingdk-shipping.exe",
+        "name": "win64/palworld-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/palworld-win64-shipping.exe",
+        "name": "wingdk/palworld-wingdk-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -8965,22 +8965,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "launchutils/busybox64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader64bit.exe",
+        "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "6.0.0/dotnet.exe",
+        "name": "tmodloader/tmodloader.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "tmodloader/tmodloader64bit.exe",
         "is_launcher": false
       }
     ],
@@ -9065,7 +9065,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "ffxiv.exe",
+        "name": "boot/ffxivboot.exe",
         "is_launcher": false
       },
       {
@@ -9075,12 +9075,12 @@
       },
       {
         "os": "win32",
-        "name": "boot/ffxivboot.exe",
+        "name": "ffxiv_dx11.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "ffxiv_dx11.exe",
+        "name": "ffxiv.exe",
         "is_launcher": false
       }
     ],
@@ -9115,6 +9115,16 @@
     "executables": [
       {
         "os": "win32",
+        "name": "assettocorsa.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "server/acservermanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "assettocorsa/acshowroom.exe",
         "is_launcher": false
       },
@@ -9125,22 +9135,12 @@
       },
       {
         "os": "win32",
-        "name": "server/acservermanager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa.exe",
+        "name": "assettocorsa/content manager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "editor/kseditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/content manager.exe",
         "is_launcher": false
       },
       {
@@ -9180,12 +9180,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       }
     ],
@@ -9620,6 +9620,11 @@
         "distributor": "epic"
       },
       {
+        "id": "1144200",
+        "sku": "1144200",
+        "distributor": "steam"
+      },
+      {
         "id": "9PGSCVZP98QG",
         "sku": "9PGSCVZP98QG",
         "distributor": "microsoft"
@@ -9628,11 +9633,6 @@
         "id": "9NBR63PT4FZC",
         "sku": "9NBR63PT4FZC",
         "distributor": "microsoft"
-      },
-      {
-        "id": "1144200",
-        "sku": "1144200",
-        "distributor": "steam"
       }
     ],
     "bot": {
@@ -9699,17 +9699,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "dayz_x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "dayz/dayzuninstaller.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "dayz.exe",
         "is_launcher": false
       }
     ],
@@ -10031,12 +10031,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "blackops3.exe",
+        "name": "call of duty black ops iii/boiii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "call of duty black ops iii/boiii.exe",
+        "name": "blackops3.exe",
         "is_launcher": false
       }
     ],
@@ -10072,18 +10072,18 @@
     ],
     "executables": [
       {
+        "os": "win32",
+        "name": "roomeditor/roomeditor.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "the binding of isaac rebirth.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "roomeditor/roomeditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
       },
       {
@@ -10093,7 +10093,7 @@
       },
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       }
     ],
@@ -10200,14 +10200,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "1517290",
-        "sku": "1517290",
-        "distributor": "steam"
-      },
-      {
         "id": "125166",
         "sku": "125166",
         "distributor": "igdb"
+      },
+      {
+        "id": "1517290",
+        "sku": "1517290",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -10306,12 +10306,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "monsterhunterworld.exe",
+        "name": "monster hunter world/mhw_modmanager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "monster hunter world/mhw_modmanager.exe",
+        "name": "monsterhunterworld.exe",
         "is_launcher": false
       }
     ],
@@ -10425,12 +10425,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "risk of rain 2/risk of rain 2.exe",
+              "name": "risk of rain 2.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "risk of rain 2.exe",
+              "name": "risk of rain 2/risk of rain 2.exe",
               "is_launcher": false
             }
           ],
@@ -10450,12 +10450,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
+        "name": "risk of rain 2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "risk of rain 2.exe",
+        "name": "risk of rain 2/risk of rain 2.exe",
         "is_launcher": false
       }
     ],
@@ -10517,14 +10517,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "9804",
-        "sku": "9804",
-        "distributor": "igdb"
-      },
-      {
         "id": "216150",
         "sku": "216150",
         "distributor": "steam"
+      },
+      {
+        "id": "9804",
+        "sku": "9804",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -10625,22 +10625,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "shootergame_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "win64/shootergame_be.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "shootergame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/shootergameserver.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "shootergame_be.exe",
         "is_launcher": false
       }
     ],
@@ -11132,12 +11132,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "df_garena/deltaforceclient.exe",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher_global.exe",
+        "name": "df_garena/deltaforceclient.exe",
         "is_launcher": false
       },
       {
@@ -11147,12 +11147,12 @@
       },
       {
         "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
+        "name": "launcher/df_launcher.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "launcher/df_launcher.exe",
+        "name": "launcher/df_launcher_global.exe",
         "is_launcher": false
       }
     ],
@@ -11251,13 +11251,13 @@
           "guild_id": "188630481301012481",
           "executables": [
             {
-              "os": "darwin",
-              "name": "osu!.app",
+              "os": "win32",
+              "name": "osu!.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "osu!.exe",
+              "os": "darwin",
+              "name": "osu!.app",
               "is_launcher": false
             }
           ],
@@ -11274,13 +11274,13 @@
     "hook": true,
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -11475,12 +11475,12 @@
       },
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       }
     ],
@@ -11567,12 +11567,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+              "name": "league of legends.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "league of legends.exe",
+              "os": "darwin",
+              "name": "leagueoflegends.app",
               "is_launcher": false
             },
             {
@@ -11586,8 +11586,8 @@
               "is_launcher": true
             },
             {
-              "os": "darwin",
-              "name": "leagueoflegends.app",
+              "os": "win32",
+              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
               "is_launcher": false
             },
             {
@@ -11613,12 +11613,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "league of legends.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -11632,8 +11632,8 @@
         "is_launcher": true
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -11924,6 +11924,3316 @@
       "0": {}
     },
     "verify_key": "1271879ef749db9b52e8fb9026475400e5eba9325b422e58c7fdb0c747e2703b",
+    "flags": 0
+  },
+  {
+    "id": "484425151631589378",
+    "name": "SCUM",
+    "icon": "83c6b689ee21b111749f54f9ee361967",
+    "description": "Scum",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "splash": "7c1206145f1c6b1147280956e0180463",
+    "third_party_skus": [
+      {
+        "id": "513710",
+        "sku": "513710",
+        "distributor": "steam"
+      }
+    ],
+    "hook": true,
+    "guild_id": "228656196247093248",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "scum.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d13ffb8892934c88877f9747e7cc8e9a04a7d2f924da79b3d225d986b7338f64",
+    "flags": 0
+  },
+  {
+    "id": "1124351896166076496",
+    "name": "FUCK PUTIN",
+    "icon": "ca63b00bf4a3244a9d4b4bb92f70181a",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1926680",
+        "sku": "1926680",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124351896166076496",
+      "username": "FUCK PUTIN",
+      "global_name": null,
+      "avatar": "ca63b00bf4a3244a9d4b4bb92f70181a",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2953",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/fp-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1a7fceaad5b940af424d5bfd4af06bdf321520cef93968fd25f55f373a912736",
+    "flags": 0
+  },
+  {
+    "id": "1124351975702679583",
+    "name": "FUCK HITLER",
+    "icon": "6392cbf5e2a8d038801914e13ac0e4de",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2157110",
+        "sku": "2157110",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124351975702679583",
+      "username": "FUCK HITLER",
+      "global_name": null,
+      "avatar": "6392cbf5e2a8d038801914e13ac0e4de",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1943",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/fh-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "7e0eb23077e746b3bafa00ec2345893a0ac412a93e401ba9205e2b1117c628e1",
+    "flags": 0
+  },
+  {
+    "id": "1124353289857810612",
+    "name": "Hentai Vs Furries",
+    "icon": "6ab1fb81e000b7a4d267fd7c38f61bb6",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1208260",
+        "sku": "1208260",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124353289857810612",
+      "username": "Hentai Vs Furries",
+      "global_name": null,
+      "avatar": "6ab1fb81e000b7a4d267fd7c38f61bb6",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8439",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/avf2-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e8d4395f026db7ea2f7902a67e35356c4f0289110d3f8d8886bf658e07e3a482",
+    "flags": 0
+  },
+  {
+    "id": "1124353460880556183",
+    "name": "Hentai Killer",
+    "icon": "996094cc1dae3de4f4ff72e40a69be92",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1157340",
+        "sku": "1157340",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124353460880556183",
+      "username": "Hentai Killer",
+      "global_name": null,
+      "avatar": "996094cc1dae3de4f4ff72e40a69be92",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3364",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai killer/hentai killer.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8444d28a022e3a12727800d5eb257140ceee34a41715e48e7cd29cfd91990575",
+    "flags": 0
+  },
+  {
+    "id": "1124353599590379552",
+    "name": "Hentai Nazi",
+    "icon": "b5f3f75c6fd3f962aa62dacc8d33d8b3",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1183970",
+        "sku": "1183970",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124353599590379552",
+      "username": "Hentai Nazi",
+      "global_name": null,
+      "avatar": "b5f3f75c6fd3f962aa62dacc8d33d8b3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4545",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai nazi/hentai nazi.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "5c89472ad92e36eadc43bf33401b541eebcdfae7517ffdf64d3e5e4191ff6e75",
+    "flags": 0
+  },
+  {
+    "id": "1124354036020297778",
+    "name": "Hentai Crush",
+    "icon": "efc7a52f5842ab8f87a5fdc1421f5384",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1003520",
+        "sku": "1003520",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124354036020297778",
+      "username": "Hentai Crush",
+      "global_name": null,
+      "avatar": "efc7a52f5842ab8f87a5fdc1421f5384",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0615",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai crush/hentai crush.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "5057c31afeb6de1657693cfe1670ec4db090f9a4d9c7acca04de0e6d12aae85f",
+    "flags": 0
+  },
+  {
+    "id": "1124354174310699169",
+    "name": "Sex with the Devil",
+    "icon": "d3ef969d0e223f7841b672c405de137f",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1202690",
+        "sku": "1202690",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124354174310699169",
+      "username": "Sex with the Devil",
+      "global_name": null,
+      "avatar": "d3ef969d0e223f7841b672c405de137f",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4521",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/sexwithdevil-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "48ef716adc736e90ca6445dd0c19da8b0b1ef97ab82564f0906b95b4f1dc91df",
+    "flags": 0
+  },
+  {
+    "id": "1124354219374297238",
+    "name": "Sexual Void",
+    "icon": "e83893d2d746f724ee4fec4c11b65f66",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1310910",
+        "sku": "1310910",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124354219374297238",
+      "username": "Sexual Void",
+      "global_name": null,
+      "avatar": "e83893d2d746f724ee4fec4c11b65f66",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2267",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/sexual_void-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1d80be4a3f2c3fb5382cd4ad862b471cb78ba294a4c82906e6e5482546c4b05c",
+    "flags": 0
+  },
+  {
+    "id": "1124354724301393940",
+    "name": "Hentai Mosaique Neko Waifus",
+    "icon": "9252a466bf837034c31fe7c79157ac8e",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1192640",
+        "sku": "1192640",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124354724301393940",
+      "username": "Hentai Mosaique Neko Waifus",
+      "global_name": null,
+      "avatar": "9252a466bf837034c31fe7c79157ac8e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5593",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai mosaique neko waifus/hentai mosaique neko waifus.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "223a4acd2fb1fc7f66f3764541c9e7c06ea9a6ccf3cd5da98f62c9487c76e2d9",
+    "flags": 0
+  },
+  {
+    "id": "1124355292591829002",
+    "name": "Hentai Puzzle",
+    "icon": "b036a39dc241efc1177155ef8887d0c3",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "857440",
+        "sku": "857440",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124355292591829002",
+      "username": "Hentai Puzzle",
+      "global_name": null,
+      "avatar": "b036a39dc241efc1177155ef8887d0c3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2209",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai puzzle/hentaipuzzle.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "38ec10c32c171246cd665f66b3acf0b8d74b2ab3b5450ea5827cc11dd36f5952",
+    "flags": 0
+  },
+  {
+    "id": "1124355334593593364",
+    "name": "SEX with HITLER",
+    "icon": "ba08b00181d4943b60572907170c4f32",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1849000",
+        "sku": "1849000",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124355334593593364",
+      "username": "SEX with HITLER",
+      "global_name": null,
+      "avatar": "ba08b00181d4943b60572907170c4f32",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8333",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "build/sexwithhitler.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "426b5ee7de8d28c1cbef0a350bbc600f09d31409abba92934e2e3604ee91134b",
+    "flags": 0
+  },
+  {
+    "id": "1124355447323906128",
+    "name": "Hentai Police",
+    "icon": "a8d31e742dfcac4caf504737f294860e",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1198730",
+        "sku": "1198730",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124355447323906128",
+      "username": "Hentai Police",
+      "global_name": null,
+      "avatar": "a8d31e742dfcac4caf504737f294860e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6317",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "omon girl bottle royal/omon girl bottle royal.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "799b254b97d4473c5896a1d86ae5e064124bba3bcb69023b9d9cd8ac90619cba",
+    "flags": 0
+  },
+  {
+    "id": "1124355979383943238",
+    "name": "Max Gentlemen Sexy Business!",
+    "icon": "58e282e9a6a9d66c1ecfdb3f136bed03",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "817840",
+        "sku": "817840",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124355979383943238",
+      "username": "Max Gentlemen Sexy Business!",
+      "global_name": null,
+      "avatar": "58e282e9a6a9d66c1ecfdb3f136bed03",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5057",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "max gentlemen sexy business!/business.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "73443726a6076a344dfff95237d30c1a4e5473a53f1cdca232b166ac15fea064",
+    "flags": 0
+  },
+  {
+    "id": "1124356108509786252",
+    "name": "Hentai Arena | Battle Royale",
+    "icon": "f1fa461d56827ab007d4d95e77ba4822",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1084400",
+        "sku": "1084400",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124356108509786252",
+      "username": "Hentai Arena | Battle Royale",
+      "global_name": null,
+      "avatar": "f1fa461d56827ab007d4d95e77ba4822",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1115",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai arena  battle royale/hentai arena.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "afdb9b0aa1a9f5b7980ef4ebcbefaa1e8bd9460a098043c68ec32d69d30911d7",
+    "flags": 0
+  },
+  {
+    "id": "1124356199043846164",
+    "name": "Hentai Furry",
+    "icon": "eb16c4fd8698cf558bca4de7079de01f",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1260390",
+        "sku": "1260390",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124356199043846164",
+      "username": "Hentai Furry",
+      "global_name": null,
+      "avatar": "eb16c4fd8698cf558bca4de7079de01f",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5225",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai furry/hentai furry.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "aa766272b8fa81439a3d02a86ef4cb707eafac50914654cf74b66afd0702663b",
+    "flags": 0
+  },
+  {
+    "id": "1124357045823488140",
+    "name": "BOOBS SAGA: Prepare To Hentai Edition",
+    "icon": "6683e67def89aac199c51ec29cfc49c3",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "726360",
+        "sku": "726360",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357045823488140",
+      "username": "BOOBS SAGA Prepare To Hentai Edi",
+      "global_name": null,
+      "avatar": "6683e67def89aac199c51ec29cfc49c3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1686",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "boobs saga/boobs saga.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1e321ae80ffccea13c40ae7f6aece5d6785214150ceffb93b6f24878c1b90695",
+    "flags": 0
+  },
+  {
+    "id": "1124357133526384761",
+    "name": "Hentai Girl Karen",
+    "icon": "556665c4e17e85c700d3978f76901e45",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1004240",
+        "sku": "1004240",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357133526384761",
+      "username": "Hentai Girl Karen",
+      "global_name": null,
+      "avatar": "556665c4e17e85c700d3978f76901e45",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8137",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaigirlkaren/hentaigirlkaren.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "bce0e588a817feafdcc7f91b4b2d1f91bb3c712fcd9eb0a4677e78beb9132827",
+    "flags": 0
+  },
+  {
+    "id": "1124357256008450188",
+    "name": "CUCKOLD SIMULATOR: Life as a Beta Male Cuck",
+    "icon": "675e23c8277a8d1e8b59b794b6431aef",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1141550",
+        "sku": "1141550",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357256008450188",
+      "username": "CUCKOLD SIMULATOR Life as a Beta",
+      "global_name": null,
+      "avatar": "675e23c8277a8d1e8b59b794b6431aef",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6067",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "cuckold simulator life as a beta male/cuckoldsimulator.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "439a59f06caeda6ede3d055c3bf736eeb2bfba336c95a797d01a579d2cb7405f",
+    "flags": 0
+  },
+  {
+    "id": "1124357277042888804",
+    "name": "HENTAI SNIPER: Middle East",
+    "icon": "e61004cec04fa9927754f493a30307a7",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1190110",
+        "sku": "1190110",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357277042888804",
+      "username": "HENTAI SNIPER Middle East",
+      "global_name": null,
+      "avatar": "e61004cec04fa9927754f493a30307a7",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6271",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai sniper middle east/hentai sniper middle east.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "eced10eeb933f9e62a84feb3efb8dce3f37478083ec459bb1fa23160b40bf526",
+    "flags": 0
+  },
+  {
+    "id": "1124357563014725652",
+    "name": "Leisure Suit Larry - Magna Cum Laude Uncut and Uncensored",
+    "icon": "b048d96bb38a6155a5a78dbc9f1469aa",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "765900",
+        "sku": "765900",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357563014725652",
+      "username": "Leisure Suit Larry - Magna Cum L",
+      "global_name": null,
+      "avatar": "b048d96bb38a6155a5a78dbc9f1469aa",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7165",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "leisure suit larry - magna cum laude uncut and uncensored/larry.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b3ee01be2133e333638e858361e3a1aa31c637dcbdf190cc49d355878023ccc8",
+    "flags": 0
+  },
+  {
+    "id": "1124357621219086427",
+    "name": "Hentai Memory",
+    "icon": "56d05289b03835e2ee8f782cfa2daa92",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "873240",
+        "sku": "873240",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357621219086427",
+      "username": "Hentai Memory",
+      "global_name": null,
+      "avatar": "56d05289b03835e2ee8f782cfa2daa92",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8347",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai memory/hentai memory.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e606f7a63fd141844e978537d9b1296a325ba332bb8e033480cd3b0ba3b569da",
+    "flags": 0
+  },
+  {
+    "id": "1124357688621551638",
+    "name": "Sex with Stalin",
+    "icon": "fa56d8357975d9647bcb59d3fa73cad4",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1085750",
+        "sku": "1085750",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124357688621551638",
+      "username": "Sex with Stalin",
+      "global_name": null,
+      "avatar": "fa56d8357975d9647bcb59d3fa73cad4",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4659",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/sexwithstalin-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "cb53c5b8a969841982aa1521da86a58d58af0c8de10665babb6555bbc41e65e9",
+    "flags": 0
+  },
+  {
+    "id": "1124358061314818138",
+    "name": "Hentai Neighbors",
+    "icon": "bab525c2782d519ddd996f24162432b0",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "946090",
+        "sku": "946090",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358061314818138",
+      "username": "Hentai Neighbors",
+      "global_name": null,
+      "avatar": "bab525c2782d519ddd996f24162432b0",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0823",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai neighbors/hentai neighbors.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c96b1d519c33fed0adae0fed5b511da71747ba241df81b28d9423503c7ab454a",
+    "flags": 0
+  },
+  {
+    "id": "1124358311232426086",
+    "name": "Hentai MineSweeper",
+    "icon": "b51b5128a43715a525688d22b41000eb",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "948630",
+        "sku": "948630",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358311232426086",
+      "username": "Hentai MineSweeper",
+      "global_name": null,
+      "avatar": "b51b5128a43715a525688d22b41000eb",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3757",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaiminesweeper/hentai minesweeper.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "de094b41d2e177b3a2ad0bba881484f4364fe6ab973dff3cb612e506a76f6c4a",
+    "flags": 0
+  },
+  {
+    "id": "1124358369315139704",
+    "name": "Hentai Girl Hime",
+    "icon": "7f45d1deb40782422c0725cb2fd1f809",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "963690",
+        "sku": "963690",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358369315139704",
+      "username": "Hentai Girl Hime",
+      "global_name": null,
+      "avatar": "7f45d1deb40782422c0725cb2fd1f809",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5176",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Hentai Girl Hime"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaigirlhime/hentaigirlhime.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "1165e8dac7fd2367ff8c8d5097fe83a9adf36cb1d4c45966232abab1913f27cc",
+    "flags": 0
+  },
+  {
+    "id": "1124358585397293186",
+    "name": "Megacraft Hentai Edition",
+    "icon": "5c29405752542836fd726a6045e8a201",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1464670",
+        "sku": "1464670",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358585397293186",
+      "username": "Megacraft Hentai Edition",
+      "global_name": null,
+      "avatar": "5c29405752542836fd726a6045e8a201",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5029",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "megacraft hentai edition/megacraft hentai edition.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "433b53f9034dd4111ac96d29e3e434f66d7e2535c27c2059069fa61a075f7be9",
+    "flags": 0
+  },
+  {
+    "id": "1124358634739093554",
+    "name": "Hentai Girl Division",
+    "icon": "58a2d4ef110cae28cfa0870fd78bd8bf",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1113680",
+        "sku": "1113680",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358634739093554",
+      "username": "Hentai Girl Division",
+      "global_name": null,
+      "avatar": "58a2d4ef110cae28cfa0870fd78bd8bf",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2989",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai girl division/hentai girl division.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d3820301b4fa51efc52af607eb10bb2e2f6684ea6304d149fc041070bd35fd09",
+    "flags": 0
+  },
+  {
+    "id": "1124358645010935888",
+    "name": "Hentai Girl Linda",
+    "icon": "c6ee9f30e9a8468307fd465f75582667",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "927890",
+        "sku": "927890",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358645010935888",
+      "username": "Hentai Girl Linda",
+      "global_name": null,
+      "avatar": "c6ee9f30e9a8468307fd465f75582667",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7585",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Hentai Girl Linda"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaigirllinda/hentaigirllinda.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "a3b4b82eaeb15ac5252e1b32ce9a880a1a3d7048349d16fd7a15e404c867ee27",
+    "flags": 0
+  },
+  {
+    "id": "1124358853446873148",
+    "name": "Gamer Girls [18+]: eSports SEX",
+    "icon": "79eb13849b5d31125b075ca727e1df94",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1626640",
+        "sku": "1626640",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124358853446873148",
+      "username": "Gamer Girls [18+] eSports SEX",
+      "global_name": null,
+      "avatar": "79eb13849b5d31125b075ca727e1df94",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6140",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "gamer girls 2/gamer_girls_2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f99d7b843fa20ef2a97063727c59b9e7ac81dcc4e29399bc9e8a05eeeb0686d8",
+    "flags": 0
+  },
+  {
+    "id": "1124359047932555324",
+    "name": "Hentai Nazi HITLER is Back",
+    "icon": "eb91614920d19ff922aefce279feb262",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1239700",
+        "sku": "1239700",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359047932555324",
+      "username": "Hentai Nazi HITLER is Back",
+      "global_name": null,
+      "avatar": "eb91614920d19ff922aefce279feb262",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0820",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai nazi hitler is back/hentai nazi 2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c43e18c4b3f315a2527e3c9169618039e654ae2100328e16876a8ab4c8726439",
+    "flags": 0
+  },
+  {
+    "id": "1124359276488573050",
+    "name": "Hentai 3018",
+    "icon": "2281ff7f380e4bb1193225ce2b412bcf",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "860910",
+        "sku": "860910",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359276488573050",
+      "username": "Hentai 3018",
+      "global_name": null,
+      "avatar": "2281ff7f380e4bb1193225ce2b412bcf",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1757",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai 3018/hentai.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b63c6fb9cca6ad2edbbcc1cf158aaca3344b437532a33829350d1eeba26a32cb",
+    "flags": 0
+  },
+  {
+    "id": "1124359293873963008",
+    "name": "Hentai Mosaique Vip Room",
+    "icon": "c1ddb94d6a85c260ebd3db962289a9f5",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1035610",
+        "sku": "1035610",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359293873963008",
+      "username": "Hentai Mosaique Vip Room",
+      "global_name": null,
+      "avatar": "c1ddb94d6a85c260ebd3db962289a9f5",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1315",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai mosaique vip room/hentai mosaique vip room.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fa4317d4cb11cdd4a082ccb94b95e284d3a4fc9316a1dac19feda8fc0d1b967d",
+    "flags": 0
+  },
+  {
+    "id": "1124359312932884551",
+    "name": "Hentai Pussy 2",
+    "icon": "5e4a8f17d2aafc25f52fb7d602c6382c",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1072120",
+        "sku": "1072120",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359312932884551",
+      "username": "Hentai Pussy 2",
+      "global_name": null,
+      "avatar": "5e4a8f17d2aafc25f52fb7d602c6382c",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0192",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai pussy 2/pussy.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "7e441c3d086e6f51932b1fac08719fe55ad49bfe813e4dabb90c89e5e72b59a9",
+    "flags": 0
+  },
+  {
+    "id": "1124359434689335407",
+    "name": "Sex Chess",
+    "icon": "513558a4906c741d026fe96ecf4ca572",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1948450",
+        "sku": "1948450",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359434689335407",
+      "username": "Sex Chess",
+      "global_name": null,
+      "avatar": "513558a4906c741d026fe96ecf4ca572",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "7152",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "win64/battlechess-win64-shipping.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "e04a1b1dabec9e2fd2921654cf03117c6ef9a331b2648467e26797efbe717e56",
+    "flags": 0
+  },
+  {
+    "id": "1124359758556708915",
+    "name": "Holy Shit",
+    "icon": "a62a5d3c17244e93b9cf927d8534fa79",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1993910",
+        "sku": "1993910",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124359758556708915",
+      "username": "Holy Shit",
+      "global_name": null,
+      "avatar": "a62a5d3c17244e93b9cf927d8534fa79",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0707",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "holy shit/holy shit.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "9789d6bd8651d63913fdc043897f023c7e4f1519baa6d772efec6cd177a34980",
+    "flags": 0
+  },
+  {
+    "id": "1124360177634791564",
+    "name": "Hentai - Area 51",
+    "icon": "24d9d7fe1718e327d0a69d0ad77706d0",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1127190",
+        "sku": "1127190",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360177634791564",
+      "username": "Hentai - Area 51",
+      "global_name": null,
+      "avatar": "24d9d7fe1718e327d0a69d0ad77706d0",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3339",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai - area 51/hentai area 51.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "191482760a8ae2d5433a3a9ee0aa68e27867dc8756b38fc188937354021bc851",
+    "flags": 0
+  },
+  {
+    "id": "1124360363962552450",
+    "name": "Hentai Mosaique Fix-IT Shoppe",
+    "icon": "84722b994b5df9a2fa2cb028f4cdf6c2",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1109360",
+        "sku": "1109360",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360363962552450",
+      "username": "Hentai Mosaique Fix-IT Shoppe",
+      "global_name": null,
+      "avatar": "84722b994b5df9a2fa2cb028f4cdf6c2",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6395",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai mosaique fix-it shoppe/hentai mosaique fix it shoppe.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "b9c3d61ee69b6bdb5d8517b67d0bd13c03269ef10b666fdffae7a2192a76f538",
+    "flags": 0
+  },
+  {
+    "id": "1124360393519804557",
+    "name": "Love & Sex: Second Base",
+    "icon": "593855d97c8baa0ff7746bfde661d4e3",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1264710",
+        "sku": "1264710",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360393519804557",
+      "username": "Love & Sex Second Base",
+      "global_name": null,
+      "avatar": "593855d97c8baa0ff7746bfde661d4e3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2643",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "love & sex second base/losesb.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "3a26eac3548c1bd1274b5f9d799ca8e30f45b05a5cbe3b341e937f9a43778d84",
+    "flags": 0
+  },
+  {
+    "id": "1124360545580093551",
+    "name": "Slender Hentai Edition",
+    "icon": "d69a4170ccc22824a119fa60c36ac25a",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1501570",
+        "sku": "1501570",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360545580093551",
+      "username": "Slender Hentai Edition",
+      "global_name": null,
+      "avatar": "d69a4170ccc22824a119fa60c36ac25a",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "2324",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "slender hentai edition/slender hentai edition.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "42f518530bb2bb22335a26f50612e782bd85aa0f8445fa26ad27afaad396f519",
+    "flags": 0
+  },
+  {
+    "id": "1124360662131425361",
+    "name": "Hentai Beach",
+    "icon": "5d21453fc6fdd8970987e2b2f6abd3c6",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1448750",
+        "sku": "1448750",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360662131425361",
+      "username": "Hentai Beach",
+      "global_name": null,
+      "avatar": "5d21453fc6fdd8970987e2b2f6abd3c6",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1413",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai beach/nw.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "800e4c7d86ddc479dc81cc8afb58abe470b1cb4baefb9ef6635006226563bdb2",
+    "flags": 0
+  },
+  {
+    "id": "1124360678858309652",
+    "name": "Hentai Honeys Slider",
+    "icon": "eac78f85e74a2c05d53846c47f9389c0",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1134440",
+        "sku": "1134440",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1124360678858309652",
+      "username": "Hentai Honeys Slider",
+      "global_name": null,
+      "avatar": "eac78f85e74a2c05d53846c47f9389c0",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "5366",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai honeys slider/hentaihoneysslider.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "192717f63dc903d91ff6a0edcdd93048ac694cd84761080463ec85d2590db3ac",
+    "flags": 0
+  },
+  {
+    "id": "1129504691517136927",
+    "name": "Hentai Girl",
+    "icon": "9a23461b6bfa0c96d8cfa175e3b49474",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "878750",
+        "sku": "878750",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1129504691517136927",
+      "username": "Hentai Girl",
+      "global_name": null,
+      "avatar": "9a23461b6bfa0c96d8cfa175e3b49474",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1962",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Hentai Girl"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaigirl/hentaigirl.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "cd2cc9d659060a2108c597897b8933dca26fa4965c0fb653c5950d9ff4bde85b",
+    "flags": 0
+  },
+  {
+    "id": "1129504937424986152",
+    "name": "Hentai Girl Fantasy",
+    "icon": "3210a07e606e48436f795248ed3b0c7e",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1146950",
+        "sku": "1146950",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1129504937424986152",
+      "username": "Hentai Girl Fantasy",
+      "global_name": null,
+      "avatar": "3210a07e606e48436f795248ed3b0c7e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3593",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "aliases": [
+      "Hentai Girl Fantasy"
+    ],
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentaigirlfantasy/hentaigirlfantasy.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f3a475d81f7ca826d8462e67aedb774c096a1bb36369967551aa6e96126b7bdb",
+    "flags": 0
+  },
+  {
+    "id": "1129505486010589265",
+    "name": "Hentai Shooter 3D",
+    "icon": "c9b2a05795d23a7a4be83d1e8c3755d7",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "914690",
+        "sku": "914690",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1129505486010589265",
+      "username": "Hentai Shooter 3D",
+      "global_name": null,
+      "avatar": "c9b2a05795d23a7a4be83d1e8c3755d7",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0810",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai shooter 3d/game.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8ce674ba86eef74ec216813730d45c2edde01296833bfa6fe0fe0edccfa5dd86",
+    "flags": 0
+  },
+  {
+    "id": "1130001171172561006",
+    "name": "NSFW Studio",
+    "icon": "f299060e5de588bd6e38e5bd53a0c332",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1760080",
+        "sku": "1760080",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1130001171172561006",
+      "username": "NSFW Studio",
+      "global_name": null,
+      "avatar": "f299060e5de588bd6e38e5bd53a0c332",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0411",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "nsfw studio/nsfw studio.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fa9796ab66b6421fdafebee19c4298a9dc2d8ee3e9d6b91af0bab22a82aa64d8",
+    "flags": 0
+  },
+  {
+    "id": "1131042996108927056",
+    "name": "Hentai Honeys Jigsaw",
+    "icon": "32ea549914a31b88a1b76de8498c0aba",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1233210",
+        "sku": "1233210",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1131042996108927056",
+      "username": "Hentai Honeys Jigsaw",
+      "global_name": null,
+      "avatar": "32ea549914a31b88a1b76de8498c0aba",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4589",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai honeys jigsaw/hentaihoneysjigsaw.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "aef227f135654ce94f44d4926c1ca865c8da9cbb02f9c06a1a4f44f21269236d",
+    "flags": 0
+  },
+  {
+    "id": "1132690430694264872",
+    "name": "Sex Simulator",
+    "icon": "eb430a08d63d975d79620b4480a4a9b9",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1111810",
+        "sku": "1111810",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1132690430694264872",
+      "username": "Sex Simulator",
+      "global_name": null,
+      "avatar": "eb430a08d63d975d79620b4480a4a9b9",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0867",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex simulator/sex simulator.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "893cbb60bd10997bd0fa8e27c520398c01362eb52a5b43cd1f2bc3a808dcdfa8",
+    "flags": 0
+  },
+  {
+    "id": "1138683327470108773",
+    "name": "Hentai Asmodeus",
+    "icon": "5f0cc3ee56bfce0caba9ea906645208e",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1147510",
+        "sku": "1147510",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1138683327470108773",
+      "username": "Hentai Asmodeus",
+      "global_name": null,
+      "avatar": "5f0cc3ee56bfce0caba9ea906645208e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6536",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai asmodeus/hentai asmodeus.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fcf6a6f24bae9b596527fcd10dd0a622958cdc1715d61261bb636506594fa157",
+    "flags": 0
+  },
+  {
+    "id": "1185733153193725952",
+    "name": "FlipWitch - Forbidden Sex Hex",
+    "icon": "2614c649f1d12544468d7b75994a6fa3",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1748620",
+        "sku": "1748620",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1185733153193725952",
+      "username": "FlipWitch - Forbidden Sex Hex",
+      "global_name": null,
+      "avatar": "2614c649f1d12544468d7b75994a6fa3",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3982",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "steambuild1.5/flipwitch.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "aeda66b6cd2a5e1c0a9b5b5165a8f83a32be6f4ef77073e87fb3e5d273fc15ed",
+    "flags": 0
+  },
+  {
+    "id": "1201723489271431208",
+    "name": "NSFW Solitaire",
+    "icon": "349b6d5c4fefcbfc6f133599b00e1215",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2274120",
+        "sku": "2274120",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1201723489271431208",
+      "username": "NSFW Solitaire",
+      "global_name": null,
+      "avatar": "349b6d5c4fefcbfc6f133599b00e1215",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3774",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "nsfwsolitaire_win64/nsfwsolitaire.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d0fd8a4b6bfdcbeae11d4b31fedcff8e7a94342c86679b882fdf1f630a5565f8",
+    "flags": 0
+  },
+  {
+    "id": "1202901407431266324",
+    "name": "Sex Coach: Hot Yoga - Prologue",
+    "icon": "ba05ade8867be1cef3ddeff09affba0e",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2756830",
+        "sku": "2756830",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1202901407431266324",
+      "username": "Sex Coach Hot Yoga - Prologue",
+      "global_name": null,
+      "avatar": "ba05ade8867be1cef3ddeff09affba0e",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3815",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex coach hot yoga - prologue/sex coach hot yoga - prologue.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "df7cdea30a003f746b8f59a8248c7d5f8063e72bc5368ab0623bdd34e9d24857",
+    "flags": 0
+  },
+  {
+    "id": "1216022702519746742",
+    "name": "Magic Pussy: Chapter 1",
+    "icon": "6b6123136ac8df6079e5f2c3aedd63fd",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2351080",
+        "sku": "2351080",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1216022702519746742",
+      "username": "Magic Pussy Chapter 1",
+      "global_name": null,
+      "avatar": "6b6123136ac8df6079e5f2c3aedd63fd",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4957",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "magic pussy chapter 1/magic pussy chapter 1.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "8063824351beb55c5f33e10fbe2d8075956628746c39f2fe76629a0f9f3c4cb0",
+    "flags": 0
+  },
+  {
+    "id": "1222062501890625598",
+    "name": "Magic Pussy: Chapter 2",
+    "icon": "70bb1d4ecb92fc2fa46e79c2df1d9088",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2512190",
+        "sku": "2512190",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1222062501890625598",
+      "username": "Magic Pussy Chapter 2",
+      "global_name": null,
+      "avatar": "70bb1d4ecb92fc2fa46e79c2df1d9088",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "0635",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "magic pussy chapter 2/magic pussy chapter 2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "03882d71269c06ac4a5dff6d114b0d7e4e32ee9fecbb21807bcddd8b7757923d",
+    "flags": 0
+  },
+  {
+    "id": "1251038428578189345",
+    "name": "Cucumber",
+    "icon": "48c784634bf64574fe9561549f3e7196",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "3015610",
+        "sku": "3015610",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1251038428578189345",
+      "username": "Cucumber",
+      "global_name": null,
+      "avatar": "48c784634bf64574fe9561549f3e7196",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "3569",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "cucumber/banana and cucumber.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "346f3fd2c3512cc4f3f061f5c3b031b837db417e1a9e13c4158573099e3d4d9f",
+    "flags": 0
+  },
+  {
+    "id": "1262015762298830888",
+    "name": "Furry Arena [18+]",
+    "icon": "1cfe1d167fcb7d8d481cee5919efd166",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2176790",
+        "sku": "2176790",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1262015762298830888",
+      "username": "Furry Arena [18+]",
+      "global_name": null,
+      "avatar": "1cfe1d167fcb7d8d481cee5919efd166",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8437",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "furry arena [18+]/furry arena.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "fa031138d2f168f9b57a8b1f62ea99a27d238de52638fd64296049d25db3cb11",
+    "flags": 0
+  },
+  {
+    "id": "1264748775877120030",
+    "name": "Sex of Thrones",
+    "icon": null,
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2480200",
+        "sku": "2480200",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1264748775877120030",
+      "username": "Sex of Thrones",
+      "global_name": null,
+      "avatar": null,
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1121",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex of thrones/sex of thrones.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "3f70787beff2eb4f28c8cbf1f0dfde628429103de6b4a9037fb5a0b214fd6447",
+    "flags": 0
+  },
+  {
+    "id": "1294962893057429605",
+    "name": "Sex & Blood: Vampires",
+    "icon": "5db1967637b1411adb93bb0019f9b040",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2657030",
+        "sku": "2657030",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1294962893057429605",
+      "username": "Sex & Blood Vampires",
+      "global_name": null,
+      "avatar": "5db1967637b1411adb93bb0019f9b040",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4810",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex & blood vampires/sex & blood vampires.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "f329e5da2603bb1b45b3441c97165d1220b86ccb9449a95bbde2ce9b11076052",
+    "flags": 0
+  },
+  {
+    "id": "1297635514555306004",
+    "name": "Sex and the Furry Titty",
+    "icon": "28bc911a173b7687c336c455cb80c52d",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1532770",
+        "sku": "1532770",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1297635514555306004",
+      "username": "Sex and the Furry Titty",
+      "global_name": null,
+      "avatar": "28bc911a173b7687c336c455cb80c52d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1668",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "love stories ft/sex and the furry titty.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "2b57d70b34a1a80cc04f204ea8033faf36c75f9adce28cd27e78803a49ce2c77",
+    "flags": 0
+  },
+  {
+    "id": "1340125468736618546",
+    "name": "Once a Porn a Time",
+    "icon": "727f4c321a8b4934130fb2281fe69374",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1973580",
+        "sku": "1973580",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1340125468736618546",
+      "username": "Once a Porn a Time",
+      "global_name": null,
+      "avatar": "727f4c321a8b4934130fb2281fe69374",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "8478",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "once a porn a time/once a porn a time.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "420f0bbed6f970615e0b2803800bb57a658ec01fec75c7447ab65d15a48d1f95",
+    "flags": 0
+  },
+  {
+    "id": "1366277825207861270",
+    "name": "Sex Desert: Mad Lust",
+    "icon": "63da7918cdf1812467ea8552a231cf33",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "3172310",
+        "sku": "3172310",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1366277825207861270",
+      "username": "Sex Desert Mad Lust",
+      "global_name": null,
+      "avatar": "63da7918cdf1812467ea8552a231cf33",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "1204",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex desert mad lust/sex desert mad lust.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "dbe5bfd1233abb824a22259fe1c83c47db967022815f478eaa2dace431517457",
+    "flags": 0
+  },
+  {
+    "id": "1370943538572824626",
+    "name": "Sex and the Furry Titty 2: Sins of the City",
+    "icon": "cec0c1fc3a59ff23d486d2703ee2f319",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1750200",
+        "sku": "1750200",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1370943538572824626",
+      "username": "Sex and the Furry Titty 2 Sins o",
+      "global_name": null,
+      "avatar": "cec0c1fc3a59ff23d486d2703ee2f319",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "4640",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex and the furry titty 2/furry titty 2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "87431615ef0f19fad5205cfcf4b1f9332a0c2223cc29e2b9c336d28f82096589",
+    "flags": 0
+  },
+  {
+    "id": "1373812493151113266",
+    "name": "Hentai Furry 2",
+    "icon": "49c76aad3d943c096557089e407a8232",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1446850",
+        "sku": "1446850",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1373812493151113266",
+      "username": "Hentai Furry 2",
+      "global_name": null,
+      "avatar": "49c76aad3d943c096557089e407a8232",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "9524",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai furry 2/hentai furry 2.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "c4f55a8d86f79967763672e58e0febe32b2d5115ddd35d2d1ce44ca59cbec1ae",
+    "flags": 0
+  },
+  {
+    "id": "1381135699486445642",
+    "name": "Sex and the Furry Titty 3: Come Inside, Sweety",
+    "icon": "9c7de60dc56a3c3068f8c4ab0858e35d",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "2221840",
+        "sku": "2221840",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1381135699486445642",
+      "username": "Sex and the Furry Titty 3 Come I",
+      "global_name": null,
+      "avatar": "9c7de60dc56a3c3068f8c4ab0858e35d",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6054",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "sex and the furry titty 3/sex and the furry titty 3.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "d3e5af3fdc895aa0c8be11dfd6875b1b1139b57bf26e1b65c12ac43f5e65b0c3",
+    "flags": 0
+  },
+  {
+    "id": "1384291534962430072",
+    "name": "Hentai Bad Girls",
+    "icon": "1c27f1fe38fceedf22e8d2a44c9b7f01",
+    "description": "",
+    "summary": "",
+    "type": 5,
+    "is_monetized": false,
+    "is_verified": false,
+    "is_discoverable": false,
+    "third_party_skus": [
+      {
+        "id": "1111030",
+        "sku": "1111030",
+        "distributor": "steam"
+      }
+    ],
+    "bot": {
+      "id": "1384291534962430072",
+      "username": "Hentai Bad Girls",
+      "global_name": null,
+      "avatar": "1c27f1fe38fceedf22e8d2a44c9b7f01",
+      "avatar_decoration_data": null,
+      "collectibles": null,
+      "discriminator": "6996",
+      "display_name_styles": null,
+      "public_flags": 0,
+      "primary_guild": null,
+      "clan": null,
+      "bot": true,
+      "banner": null,
+      "banner_color": null,
+      "accent_color": null
+    },
+    "hook": true,
+    "executables": [
+      {
+        "os": "win32",
+        "name": "hentai bad girls/hentai bad girls.exe",
+        "is_launcher": false
+      }
+    ],
+    "storefront_available": false,
+    "bot_public": true,
+    "bot_require_code_grant": false,
+    "integration_types_config": {
+      "0": {}
+    },
+    "verify_key": "7dc04cb3ae125fdad0dddf286501e3598e4dc58e662245df6d14d40942b3a432",
     "flags": 0
   }
 ]
