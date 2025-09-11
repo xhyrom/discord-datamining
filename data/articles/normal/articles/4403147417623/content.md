@@ -68,6 +68,9 @@
             ><a href="#h_01JPQNPP4YWK7G12JPC8PSHWZ3">Profile Theme</a></strong
           >
         </li>
+        <li>
+          <a href="#h_01K4RAXVDENNEF0SZNYYJGY4WT"><strong>Widgets</strong></a>
+        </li>
       </ul>
     </li>
   </ul>
@@ -463,3 +466,191 @@
   tap on <strong>Save </strong>to save changes.
 </p>
 <p>And that’s it! </p>
+<h2 id="h_01K4RAXVDENNEF0SZNYYJGY4WT">Widgets</h2>
+<div class="exp-box">
+  <strong>Important</strong>: <strong>Widgets</strong> are currently an
+  experimental feature available to select users on desktop and browser.
+</div>
+<p>
+  The <strong>Profile Board</strong> is a surface on the user profile that
+  allows users to express different aspects of their personalities. Widgets are
+  customizable sections on your Profile Board that allow you to showcase your
+  interests to other users, enabling you to express your identity in different
+  ways.
+</p>
+<p>There are currently four types of Widgets you can add to the Board:</p>
+<ul>
+  <li>
+    <strong>Favorite Game:</strong> Highlight your ultimate favorite game with
+    an optional short description about why you love it.
+  </li>
+  <li>
+    <strong>Currently Playing:</strong> Share up to 3 games you're currently
+    playing, with optional tags to give more information about how you play. 
+  </li>
+  <li>
+    <strong>Want to Play:</strong> Display up to 8 games on your wishlist that
+    you're interested in trying in the future.
+  </li>
+  <li>
+    <strong>Games I've Played:</strong> Showcase up to 8 games from your gaming
+    history.
+  </li>
+</ul>
+<p>
+  Each Widget type allows you to select games from our database and personalize
+  how they appear on your profile. If you can’t find a specific game, don’t
+  worry– we’re actively expanding our games database! 
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34824812242583"
+    width="790"
+    height="653"
+  />
+</p>
+<h4 id="h_01K4RAXVDE0WNBWJ6GXSD9MKMJ" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Widgets in Your Profile Board</span>
+</h4>
+<p>You can add Widgets to your profile in two ways: </p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>In Profiles Tab</strong></span
+  >
+</p>
+<p>
+  1. Navigate to <strong>User Settings</strong> by pressing the
+  <strong>cogwheel</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/34824812244887"
+    width="24"
+    height="24"
+  />].
+</p>
+<p>
+  2. Select the <strong>Profiles</strong> tab and scroll to
+  <strong>Profile Widgets</strong>.
+</p>
+<p>
+  3. Press <strong>Add</strong> <strong>Widgets</strong> to begin customizing
+  your profile.
+</p>
+<p>
+  4. Choose from any available Widgets. Simply select a
+  <strong>Widget</strong> and press the <strong>Add</strong>
+  <strong>game</strong> button in the upper-right corner. You can also add games
+  from the <strong>Suggested for you</strong> section.
+</p>
+<p>5. Once finished, press <strong>Save</strong> to confirm your changes!</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34824812246807"
+    alt="image2.gif"
+    width="849"
+    height="576"
+  />
+</p>
+<h4 id="h_01K4RAXVDET8CKX9ZS0ZJ7RVJ5" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Adding a Widget through Profiles Tab</span>
+</h4>
+<p>
+  <span class="wysiwyg-font-size-x-large"><strong>In Profile</strong></span>
+</p>
+<p>
+  1. Press your <strong>avatar</strong> icon in the bottom-left corner of the
+  app, then select your <strong>avatar</strong> again to open your profile.
+</p>
+<p>
+  2. Choose any Widgets you want to add to your Profile Board. Select a Widget
+  and press the <strong>Add</strong> <strong>game</strong> button in the
+  upper-right corner. You can also add games from the
+  <strong>Suggested for you</strong> section.
+</p>
+<p>3. Once finished, press <strong>Save</strong> to confirm your changes!</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34824812247831"
+    alt="image18.gif"
+    width="840"
+    height="570"
+  />
+</p>
+<h4 id="h_01K4RAXVDEJW2VQV8MD0MH4X47" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Adding a Widget Directly in Your Profile </span>
+</h4>
+<div class="tip-box">
+  <strong>Tips for Managing Widgets on your Profile Board:</strong>
+  <ul>
+    <li>
+      <p id="h_01K4RAXVDEXMDD9GVF3TTXPBHQ">
+        <span style="color: #434343"
+          >Hold and drag a Widget to reorder it.</span
+        >
+      </p>
+    </li>
+  </ul>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/34824812249239"
+      alt="image24.gif"
+      width="871"
+      height="713"
+    />
+  </p>
+  <h4 id="h_01K4RAXVDE75CP4NZYD35NHXEF" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Reordering a Widget</span>
+  </h4>
+  <ul>
+    <li>
+      <p id="h_01K4RAXVDEV8ZFEW3R7TXNYZZS">
+        <span style="color: #434343"
+          >To remove a game from a Widget, hover over the game and click the
+          Remove Game icon [</span
+        ><span style="color: #434343"
+          ><img
+            src="https://support.discord.com/hc/article_attachments/34824812251031"
+            width="24"
+            height="24" /></span
+        ><span style="color: #434343">].</span>
+      </p>
+    </li>
+  </ul>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/34824758085271"
+      alt="image12.gif"
+      width="834"
+      height="684"
+    />
+  </p>
+  <h4 id="h_01K4RAXVDETS7SRT9N5E29G32W" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Removing a Game in a Widget</span>
+  </h4>
+  <ul>
+    <li>
+      <p id="h_01K4RAXVDESKQFVSXP6GA3XTG9">
+        <span style="color: #434343"
+          >To remove an entire Widget, press the Widget menu icon [</span
+        ><span style="color: #434343"
+          ><img
+            src="https://support.discord.com/hc/article_attachments/34824812256535"
+            width="24"
+            height="24" /></span
+        ><span style="color: #434343">] and select </span
+        ><strong><span style="color: #434343">Remove Widget</span></strong
+        ><span style="color: #434343"
+          >. A confirmation pop-up will appear where you must verify that you
+          want to remove the Widget.  </span
+        >
+      </p>
+    </li>
+  </ul>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/34824758088087"
+      alt="image20.gif"
+    />
+  </p>
+  <h4 id="h_01K4RAXVDE3SWSWB0TDYJ2HN2E" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Example of Removing an Entire Widget</span>
+  </h4>
+</div>
