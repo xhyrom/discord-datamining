@@ -42561,7 +42561,7 @@ div.mobilePushContainer__3d3b0 {
   gap: 16px;
   margin-bottom: 34px;
   margin-top: 44px;
-  padding: 16px;
+  padding: 16px 25px;
 }
 .iconContainer_a1d343 {
   flex-shrink: 0;
@@ -98968,4 +98968,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3b9f4c0054c067db.css.map*/
+/*# sourceMappingURL=12633.b8d5c7e162260dda.css.map*/
