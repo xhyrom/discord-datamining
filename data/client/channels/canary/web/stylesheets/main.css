@@ -50657,7 +50657,6 @@ h3.improved__1689b:after {
 .rewardTileContainer__8a22c {
   position: relative;
   transform-origin: left top;
-  will-change: transform;
 }
 .rewardTileSpacer__8a22c {
   width: 56px;
@@ -76351,7 +76350,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99126,4 +99125,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0047b204d8cb6efc.css.map*/
+/*# sourceMappingURL=12633.84c49dec871f1def.css.map*/
