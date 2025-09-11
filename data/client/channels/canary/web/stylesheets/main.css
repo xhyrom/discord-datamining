@@ -45922,6 +45922,10 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   height: 154px;
   padding: 12px 20px 23px;
 }
+.badgeLeftAligned_c3d04b {
+  left: 16px;
+  right: auto;
+}
 .container__85f5c {
   display: flex;
   gap: 32px;
@@ -76080,7 +76084,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -98855,4 +98859,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fa21394c7a6f222c.css.map*/
+/*# sourceMappingURL=12633.f3a72cc8c0d4d64a.css.map*/
