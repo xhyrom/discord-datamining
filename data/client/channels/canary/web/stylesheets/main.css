@@ -22369,7 +22369,6 @@ div.modalHeader_c28af8 {
   opacity: 0;
 }
 .full-motion .shine__28141 {
-  animation-delay: 0.75s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: Shine__28141;
@@ -50672,6 +50671,14 @@ h3.improved__1689b:after {
   will-change: transform;
   z-index: 2;
 }
+.rewardHighlightLogoCTALabel__8a22c {
+  align-items: center;
+  flex: 1;
+  flex-direction: row;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+}
 .rewardHighlightLogoCTAHeightBoost__8a22c {
   box-sizing: border-box;
   flex: 1;
@@ -50683,6 +50690,15 @@ h3.improved__1689b:after {
 }
 .rewardHighlightCTA__8a22c {
   pointer-events: none;
+}
+.rewardHighlightCTALabel__8a22c {
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: var(--radius-xl);
+  max-width: 100%;
+  min-width: 0;
+  padding: 9px 13px;
+  pointer-events: none;
+  text-transform: uppercase;
 }
 .isExpanded__8a22c {
   flex-direction: row;
@@ -51683,7 +51699,6 @@ h3.improved__1689b:after {
   opacity: 0;
 }
 .full-motion .shine__636a2 {
-  animation-delay: 0.75s;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: Shine__636a2;
@@ -99125,4 +99140,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.84c49dec871f1def.css.map*/
+/*# sourceMappingURL=12633.24f3d7c13e841ea4.css.map*/
