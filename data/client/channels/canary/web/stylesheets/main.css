@@ -22078,14 +22078,20 @@ svg.radioIcon_c1e9c4 {
   cursor: pointer;
 }
 .coverArt_e0f8ae {
+  aspect-ratio: 0.75;
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
+  box-sizing: border-box;
   display: block;
+  object-fit: cover;
   width: 100%;
 }
 .closeButton_e0f8ae {
   color: var(--interactive-normal);
   cursor: pointer;
+}
+.loadingArtwork_e0f8ae {
+  background-color: var(--background-base-lower);
 }
 .hidden__7d7b6 {
   opacity: 0;
@@ -98884,4 +98890,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.bfaef2a41b9e8e79.css.map*/
+/*# sourceMappingURL=12633.78ff65fbdedeaa07.css.map*/
