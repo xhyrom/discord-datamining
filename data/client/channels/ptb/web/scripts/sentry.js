@@ -3336,6 +3336,7 @@
             GUILD_POWERUPS: (t) => "/guilds/".concat(t, "/powerups"),
             GUILD_POWERUP_TOGGLE: (t, e) =>
               "/guilds/".concat(t, "/skus/").concat(e),
+            GAME_SERVERS: (t) => "/guilds/".concat(t, "/game-servers"),
             SEARCH_CHANNEL: (t) => "/channels/".concat(t, "/messages/search"),
             SEARCH_TABS_CHANNEL: (t) =>
               "/channels/".concat(t, "/messages/search/tabs"),
@@ -3540,7 +3541,6 @@
               "/guilds/".concat(t, "/discovery-categories/").concat(e),
             STREAM_PREVIEW: (t) => "/streams/".concat(t, "/preview"),
             STREAM_NOTIFY: (t) => "/streams/".concat(t, "/notify"),
-            STREAM_NOTIFY_V2: (t) => "/streams/".concat(t, "/notify-v2"),
             STREAM: (t) => "/streams/".concat(t, "/stream"),
             GUILD_PREVIEW: (t) => "/guilds/".concat(t, "/preview"),
             USER_AFFINITIES: "/users/@me/affinities/users",
@@ -4002,6 +4002,7 @@
             QUESTS_CURRENT_QUESTS: "/quests/@me",
             QUESTS_CLAIMED_QUESTS: "/quests/@me/claimed",
             QUEST: (t) => "/quests/".concat(t),
+            QUEST_PREVIEW: (t) => "/quests/".concat(t, "/preview"),
             QUESTS_ENROLL: (t) => "/quests/".concat(t, "/enroll"),
             QUEST_ON_CONSOLE_START: (t) =>
               "/quests/".concat(t, "/console/start"),
@@ -4379,6 +4380,10 @@
               "/partners",
             ),
             TERMS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/terms"),
+            TERMS_SUMMARY: "".concat(
+              window.GLOBAL_ENV.MARKETING_ENDPOINT,
+              "/safety/important-policy-updates",
+            ),
             PAID_TERMS: "".concat(
               window.GLOBAL_ENV.MARKETING_ENDPOINT,
               "/terms/paid-services-terms",
@@ -5732,7 +5737,9 @@
           (r.ICYMI_FEED_EMPTY_LOADING_ABANDONED =
             "feed_empty_loading_abandoned"),
           (r.ICYMI_FEED_EMPTY_LOADING_COMPLETE = "feed_empty_loading_complete"),
+          (r.FEED_SESSION_STARTED = "feed_session_started"),
           (r.FEED_SESSION_COMPLETED = "feed_session_completed"),
+          (r.FEED_ITEM_1S_DWELLED = "feed_item_1s_dwelled"),
           (r.FEED_ITEM_DWELLED = "feed_item_dwelled"),
           (r.MOBILE_WEB_HANDOFF_FAILURE = "mobile_web_handoff_failure"),
           (r.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED =
@@ -7015,7 +7022,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-11-42e528bb7f8c1bb53a3daccb2d67ccec773d1058-discord_web",
+              "2025-09-12-94a5adbd4dbbc6fdd42de9f655844d255d224823-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7081,8 +7088,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "443197"),
-            o.YA("builtAt", String("1757575466037"));
+            o.YA("buildNumber", "443854"),
+            o.YA("builtAt", String("1757662413720"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -12265,6 +12272,8 @@
             "/channels/".concat(t, "/").concat(e, "/").concat(a),
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
+          QUEST_PREVIEW: (t) =>
+            "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
         var u =
           (((r = u || {}).INDEX = "/"),
@@ -48541,4 +48550,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.558ea1437d8cb0d2.js.map
+//# sourceMappingURL=sentry.d6d505cc304a43e3.js.map
