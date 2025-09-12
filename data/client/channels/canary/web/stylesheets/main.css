@@ -50685,7 +50685,6 @@ h3.improved__1689b:after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  will-change: transform;
   z-index: 2;
 }
 .rewardHighlightLogoCTALabel__8a22c {
@@ -50699,7 +50698,7 @@ h3.improved__1689b:after {
 .rewardHighlightLogoCTAHeightBoost__8a22c {
   box-sizing: border-box;
   flex: 1;
-  padding: 6px 0;
+  padding: 4px 0;
   transform-origin: left;
 }
 .partnerBranding__8a22c {
@@ -50845,8 +50844,7 @@ h3.improved__1689b:after {
   height: 24px;
 }
 .partnerBranding_a86e4f {
-  margin-bottom: 8px;
-  transform-origin: top left;
+  transform-origin: left;
 }
 .ctaButtons_a77fde {
   display: grid;
@@ -99157,4 +99155,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c68c6ffcc31de5e0.css.map*/
+/*# sourceMappingURL=12633.7609185fc23899c3.css.map*/
