@@ -20,6 +20,7 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
+    "game",
     "profile",
     "customization",
     "custom",
@@ -32,6 +33,8 @@
     "decorations",
     "customize",
     "pronouns",
-    "effects"
+    "effects",
+    "board",
+    "widgets"
   ]
 }
