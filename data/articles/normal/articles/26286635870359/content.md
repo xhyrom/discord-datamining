@@ -67,7 +67,7 @@
 </h1>
 <p>The criteria for a server ownership transfer:</p>
 <ul>
-  <li>The server has 100 members.</li>
+  <li>The server has 100 members (based on active user count).</li>
   <li>
     The current server owner hasn't accessed their account for at least a month.
   </li>
