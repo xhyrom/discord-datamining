@@ -4240,10 +4240,11 @@
                 .concat(a)
                 .concat(null != r ? "&payment_method_type=".concat(r) : "")
                 .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
-            BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e) =>
+            BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e, a) =>
               "/billing/guild-subscriptions/purchase?guild_id="
                 .concat(t)
-                .concat(null != e ? "&deep_link_type=".concat(e) : ""),
+                .concat(null != e ? "&deep_link_type=".concat(e) : "")
+                .concat(null != a ? "&load_id=".concat(a) : ""),
             GUILD_BOOSTING_MARKETING: (t) =>
               "/guilds/".concat(t, "/premium-guild-subscriptions"),
             GUILD_SETTINGS: (t, e, a) => {
@@ -5643,6 +5644,8 @@
             "standalone_billing_flow_started"),
           (r.MOBILE_OPEN_STANDALONE_MANAGE_SUBSCRIPTION_PAGE =
             "mobile_open_standalone_manage_subscription_page"),
+          (r.MOBILE_OPEN_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE =
+            "mobile_open_standalone_guild_boost_checkout_page"),
           (r.STANDALONE_MANAGE_SUBSCRIPTION_PAGE_VIEWED =
             "standalone_manage_subscription_page_viewed"),
           (r.INBOUND_PROMOTION_VIEWED = "inbound_promotion_viewed"),
@@ -7023,7 +7026,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-54682469853d615e9b9360060d1933e5cfa7c937",
+            release: "discord_web-f7fb8cf3b3397936037ec1bb40a32ecef77c1900",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7089,8 +7092,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "444226"),
-            o.YA("builtAt", String("1757717924846"));
+            o.YA("buildNumber", "444239"),
+            o.YA("builtAt", String("1757718955208"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48551,4 +48554,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.e05bfd128896ae9c.js.map
+//# sourceMappingURL=sentry.5974f9e4c74e9a34.js.map
