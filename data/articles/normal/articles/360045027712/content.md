@@ -1,8 +1,3 @@
-<div class="exp-box">
-  <strong>Important:</strong> We’re continuing to improve our notifications
-  system. Your inbox may be in a different location, have a different icon, or
-  show slightly different messages or layouts as part of an experiment.
-</div>
 <p>
   Ever wish you had an easier way to quickly check up on conversations across
   all your channels? Us too. That’s why we’ve added<strong> Inbox</strong> - a
