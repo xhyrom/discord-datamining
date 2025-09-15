@@ -42060,7 +42060,13 @@ div.mobilePushContainer__3d3b0 {
 .cloudPlaySection__00943 {
   align-items: center;
   display: flex;
+  gap: 12px;
   justify-content: space-between;
+}
+.cloudPlaySectionTextContainer__00943 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
 }
 @value minColumnWidth: 460px;
 .standardSidebarView__23e6b {
@@ -99118,4 +99124,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.5edc6c55e83677e3.css.map*/
+/*# sourceMappingURL=12633.122d16f344ee8a3b.css.map*/
