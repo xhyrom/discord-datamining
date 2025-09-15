@@ -50738,9 +50738,8 @@ h3.improved__1689b:after {
   border-radius: var(--radius-xl);
   max-width: 100%;
   min-width: 0;
-  padding: 9px 13px;
+  padding: 7px 12px;
   pointer-events: none;
-  text-transform: uppercase;
 }
 .isExpanded__8a22c {
   flex-direction: row;
@@ -51740,7 +51739,7 @@ h3.improved__1689b:after {
   opacity: 0;
 }
 .full-motion .shine__636a2 {
-  animation-duration: 3s;
+  animation-duration: 7.5s;
   animation-iteration-count: infinite;
   animation-name: Shine__636a2;
   animation-timing-function: ease-in-out;
@@ -51748,6 +51747,9 @@ h3.improved__1689b:after {
 @keyframes Shine__636a2 {
   0% {
     transform: translate3d(-130%, 0, 0);
+  }
+  66% {
+    transform: translate3d(300%, 0, 0);
   }
   to {
     transform: translate3d(300%, 0, 0);
@@ -99263,4 +99265,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7bc2ab6f52432a88.css.map*/
+/*# sourceMappingURL=12633.089df222220387f1.css.map*/
