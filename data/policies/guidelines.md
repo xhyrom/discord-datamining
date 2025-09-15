@@ -1738,7 +1738,7 @@
         <p>
           ‍<strong
             >12. Do not upload or share&nbsp; any material depicting violence,
-            gore,, or animal cruelty, especially with the intention to harass or
+            gore, or animal cruelty, especially with the intention to harass or
             shock others. </strong
           >(See our
           <a
