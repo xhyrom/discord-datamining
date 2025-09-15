@@ -48694,18 +48694,6 @@ h3.improved__1689b:after {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.toggleTruncationButton__3efc4 {
-  margin: 8px auto auto;
-}
-.toggleTruncationButtonInner__3efc4 {
-  color: var(--text-muted);
-  display: flex;
-  justify-content: center;
-}
-.toggleTruncationButtonIcon__3efc4 {
-  height: 18px;
-  width: 18px;
-}
 .subscriptionPerks__3efc4 {
   background-color: var(--background-base-lower);
   padding: 16px;
@@ -48761,6 +48749,9 @@ h3.improved__1689b:after {
   .subscriptionPerks__3efc4 {
     background-color: var(--background-secondary-alt);
   }
+}
+.helpMessage__3efc4 {
+  text-align: left;
 }
 .benefits__25f6c {
   background-color: var(--background-base-lower);
@@ -66588,59 +66579,97 @@ div:hover
   background: var(--background-surface-high);
   border: 1px solid var(--border-faint, hsla(240, 4%, 61%, 0.04));
   border-radius: 20px;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 40px;
 }
 .bannerContainer_ce5f0d,
 .container_ce5f0d {
   align-items: center;
   display: flex;
   max-width: 800px;
-}
-.bannerContainer_ce5f0d {
-  gap: 40px;
-  justify-content: center;
   padding: 24px;
 }
-.bannerContent_ce5f0d {
-  align-items: center;
-  display: flex;
-  flex: 1 0 0;
-  gap: 24px;
+.bannerContainer_ce5f0d {
+  justify-content: center;
 }
+.bannerContent_ce5f0d {
+  flex: 1 0 0;
+  flex-direction: column;
+}
+.bannerContent_ce5f0d,
 .bannerContentText_ce5f0d {
   align-items: flex-start;
   display: flex;
+}
+.bannerContentText_ce5f0d {
   flex-direction: column;
-  gap: 2px;
+  gap: 8px;
+  margin-bottom: 24px;
   text-align: start;
 }
-.reminderContainer_ce5f0d {
-  background: var(--background-surface-high);
-  border-radius: 0 0 20px 20px;
-  border-top: 1px solid var(--border-subtle, hsla(240, 4%, 61%, 0.12));
-  flex-direction: row;
-  gap: 10px;
-  max-width: 800px;
-  padding: 12px 24px;
-}
-.reminderContainer_ce5f0d,
-.remindersSentContainer_ce5f0d {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
-}
-.remindersSentContainer_ce5f0d {
-  margin-left: 6px;
-}
-.reminderAvatar_ce5f0d {
+.referredFriendAvatar_ce5f0d {
   border: 2px solid var(--background-surface-high);
   border-radius: 50%;
-  margin-left: -8px;
 }
-.reminderAvatarText_ce5f0d {
-  margin-left: 12px;
-  text-align: left;
+.availableReferralSlot_ce5f0d {
+  align-items: center;
+  background: var(--background-mod-strong);
+  border-radius: 32px;
+  color: var(--text-primary);
+  display: flex;
+  flex-shrink: 0;
+  font-weight: var(--font-weight-medium);
+  height: 24px;
+  justify-content: center;
+  line-height: 18px;
+  width: 24px;
+}
+.progressContainer_ce5f0d {
+  align-items: center;
+  align-self: stretch;
+  background: var(--background-surface-high);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 12px;
+  max-width: 800px;
+}
+.progressCircle_ce5f0d {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 144px;
+  justify-content: center;
+  padding: 8px;
+  width: 144px;
+}
+.progressCircleImage_ce5f0d {
+  max-width: 150px;
+}
+.progressCircleBorder_ce5f0d {
+  height: "100%";
+  left: 0;
+  position: "absolute";
+  top: 0;
+  transform: rotate(-90deg);
+  width: "100%";
+}
+.progressCircleBackground_ce5f0d {
+  fill: var(--background-surface-high);
+}
+.progressCircleRing_ce5f0d {
+  fill: #3b3b41;
+}
+.glow_ce5f0d {
+  background: transparent;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1px #53ac66,
+    0 0 1px #53ac66,
+    0 0 15px #53ac66;
+  height: 100%;
+  width: 100%;
 }
 .timerContainer__7cfe3 {
   display: flex;
@@ -99052,4 +99081,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.6f188d569ece1cdb.css.map*/
+/*# sourceMappingURL=12633.6b4452561b767d75.css.map*/
