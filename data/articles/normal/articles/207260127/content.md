@@ -4,11 +4,6 @@
   personalize your Discord experience. Learn how to change themes and customize
   your app's appearance.
 </p>
-<div class="info-box">
-  <strong>Custom Themes</strong> are gradually rolling out to Nitro subscribers.
-  If you don't see this feature yet, please check back in the coming days.
-  <a href="#h_01JXZWY4ZQVKSDMSVG2RMJMFKF">Learn more about Custom Themes</a>.
-</div>
 <div class="toc-box">
   <strong
     ><span class="wysiwyg-font-size-x-large">What this article covers:</span
