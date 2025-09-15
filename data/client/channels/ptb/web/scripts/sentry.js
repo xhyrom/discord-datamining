@@ -4240,10 +4240,11 @@
                 .concat(a)
                 .concat(null != r ? "&payment_method_type=".concat(r) : "")
                 .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
-            BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e) =>
+            BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e, a) =>
               "/billing/guild-subscriptions/purchase?guild_id="
                 .concat(t)
-                .concat(null != e ? "&deep_link_type=".concat(e) : ""),
+                .concat(null != e ? "&deep_link_type=".concat(e) : "")
+                .concat(null != a ? "&load_id=".concat(a) : ""),
             GUILD_BOOSTING_MARKETING: (t) =>
               "/guilds/".concat(t, "/premium-guild-subscriptions"),
             GUILD_SETTINGS: (t, e, a) => {
@@ -5643,6 +5644,8 @@
             "standalone_billing_flow_started"),
           (r.MOBILE_OPEN_STANDALONE_MANAGE_SUBSCRIPTION_PAGE =
             "mobile_open_standalone_manage_subscription_page"),
+          (r.MOBILE_OPEN_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE =
+            "mobile_open_standalone_guild_boost_checkout_page"),
           (r.STANDALONE_MANAGE_SUBSCRIPTION_PAGE_VIEWED =
             "standalone_manage_subscription_page_viewed"),
           (r.INBOUND_PROMOTION_VIEWED = "inbound_promotion_viewed"),
@@ -6412,6 +6415,8 @@
             "system_service_initialize_attempted"),
           (r.SYSTEM_SERVICE_INSTALL_ATTEMPTED =
             "system_service_install_attempted"),
+          (r.ACTIVITY_PANEL_BUTTON_CLICKED = "activity_panel_button_clicked"),
+          (r.ACTIVITY_PANEL_SDK_LINK_VIEWED = "activity_panel_sdk_link_viewed"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -7022,7 +7027,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-12-98806312f63eeed5524deda3718da1e37269de93-discord_web",
+              "2025-09-15-98c9e7cbe8af2103d2f3e1c82209bc5953b6bfa5-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7088,8 +7093,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "444231"),
-            o.YA("builtAt", String("1757718196467"));
+            o.YA("buildNumber", "444335"),
+            o.YA("builtAt", String("1757920712335"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48550,4 +48555,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a2d37d928947948c.js.map
+//# sourceMappingURL=sentry.d8a43f4201b52b2c.js.map
