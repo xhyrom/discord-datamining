@@ -15,13 +15,14 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-08-26T19:02:09Z",
+  "edited_at": "2025-09-15T17:53:10Z",
   "user_segment_id": null,
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
     "server boost perks",
-    "server tags"
+    "server tags",
+    "badge packs"
   ]
 }

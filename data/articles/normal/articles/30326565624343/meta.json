@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-09-10T16:31:45Z",
+  "edited_at": "2025-09-15T18:14:43Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
@@ -25,6 +25,7 @@
     "face",
     "answer-bot",
     "age",
+    "europe",
     "verification",
     "feature",
     "age verification",
@@ -33,6 +34,10 @@
     "ID",
     "gap",
     "k-id",
-    "age-restricted"
+    "age-restricted",
+    "united kingdom",
+    "uk online safety act",
+    "uk osa",
+    "australia"
   ]
 }

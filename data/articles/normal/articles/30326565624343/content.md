@@ -86,6 +86,10 @@
   </ul>
 </div>
 <h1 id="h_01K0FTZNQP54390T6Z7FPCSPF6">How to Complete Age Verification</h1>
+<div class="exp-box">
+  <strong>Important</strong>: Age verification is currently part of an ongoing
+  experiment across various regions.
+</div>
 <div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Discord and k-ID do not permanently store personal identity documents or

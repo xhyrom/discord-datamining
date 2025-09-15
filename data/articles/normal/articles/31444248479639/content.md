@@ -29,16 +29,21 @@
       </ul>
     </li>
     <li>
+      <a href="#h_01K577R7QDNKACJGKN4F0K3YE4"
+        >What are Server Tag Badge Packs?</a
+      >
+      <ul>
+        <li>
+          <a href="#h_01K577R7QD8J6EKRVKB11BACMM"
+            >How to Purchase Server Tag Badge Packs</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
       <a href="#h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</a>
     </li>
   </ul>
-</div>
-<div class="exp-box">
-  <strong>Info: </strong
-  ><span style="color: #434343"
-    >The Server Tag Badge Packs are currently an experiment and only available
-    to select servers.</span
-  >
 </div>
 <h1 id="h_01JT6VKRAB9C1PW9Z7TAT24AAA">What are Server Tags?</h1>
 <p class="wysiwyg-text-align-center">
@@ -340,6 +345,88 @@
       height="374"
   /></strong>
 </p>
+<h1 id="h_01K577R7QDNKACJGKN4F0K3YE4">What are Server Tag Badge Packs?</h1>
+<div class="warn-box">
+  <strong>Important:</strong> To be able to purchase additional Server Tag Badge
+  Packs, you first need to purchase Server Tags.
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34953637676183"
+    width="466"
+    height="383"
+  />
+</p>
+<h4 id="h_01K577R7QDBKQV2A7X21XAMDMS" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Server Tag badge Packs</span
+  >
+</h4>
+<p>
+  Server Tag Badge Packs allow you to unlock additional badges for your server.
+  You can choose between the Pet Badge Pack (3 Server Boosts) and Flex Badge
+  Pack (5 Server Boosts), or purchase both. Please keep in mind that while you
+  can unlock both badge packs using Boosts, only one badge can be applied to
+  your Server Tag at a time.
+</p>
+<h1 id="h_01K577R7QD8J6EKRVKB11BACMM">
+  How to Purchase Server Tag Badge Packs
+</h1>
+<p>
+  The server owner or admin can use any available Server Boosts to unlock Server
+  Tags.
+</p>
+<p>
+  1. With the correct server selected, navigate to the
+  <strong>Server Boosts </strong>tab in the upper-left corner. Only server
+  admins and owners can view this tab.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34953608149143"
+    width="374"
+    height="400"
+  />
+</p>
+<h4 id="h_01K577R7QD5P949PT5P2J6SZX3" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Server Boosts tab in a server</span
+  >
+</h4>
+<p>
+  2. In the upper-right, you’ll see how many Server Boosts are available and
+  recent activity of Server Boosts. If you have the Server Boosts available, you
+  can enable either pack right away.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34953637683479"
+    width="365"
+    height="400"
+  />
+</p>
+<h4 id="h_01K577R7QETZS8N414Y9H5DBVN" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Available Server Boosts</span
+  >
+</h4>
+<p>
+  3. To apply Boosts to <strong>Server Tag Badge Packs</strong>, press on
+  <strong>View Packs</strong> and then select which pack you want to purchase.
+  You’ll see a confirmation window once the purchase has been successful. Now
+  you can edit your Server Tag with one of your new badges!<strong> </strong>
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34953797646103"
+    alt="image3.gif"
+  />
+</p>
+<h4 id="h_01K577R7QEN66BR3SSSBF5VEVS" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Enable Perk Server Tag</span
+  >
+</h4>
 <h1 id="h_01JT6VKRACYDW17M1H41J169AW">Frequently Asked Questions</h1>
 <p><strong>Q: How many characters can I use in a Server Tag?</strong></p>
 <p>
