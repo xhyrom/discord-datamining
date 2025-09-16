@@ -50789,6 +50789,11 @@ h3.improved__1689b:after {
   flex-direction: row;
   height: 24px;
 }
+.rewardHighlightLogoCTADivider__8a22c {
+  border-top: thin solid #fff;
+  -webkit-mask: linear-gradient(90deg, #000, transparent 65%);
+  mask: linear-gradient(90deg, #000, transparent 65%);
+}
 .wrapper_a86e4f {
   align-items: center;
   border-radius: inherit;
@@ -99481,4 +99486,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.96bb3f99ca2a1369.css.map*/
+/*# sourceMappingURL=12633.0d718ea2c2c00818.css.map*/
