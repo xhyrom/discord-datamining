@@ -40705,8 +40705,15 @@ img.thumbnail__0f2e8 {
   display: flex;
 }
 .container_cbd19d {
-  border-radius: 8px;
-  margin: 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: visible;
+  padding: 8px;
+  position: relative;
+}
+.user-profile-modal-v2 .container_cbd19d {
+  border-radius: var(--radius-md);
   padding: 12px;
 }
 .contentHorizontal_cbd19d {
@@ -76491,7 +76498,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99266,4 +99273,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.6d08f6a828a5ec32.css.map*/
+/*# sourceMappingURL=12633.d9adc64b18bd353d.css.map*/
