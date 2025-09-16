@@ -59886,6 +59886,177 @@ html .progress__61462 {
   gap: var(--custom-app-message-embed-base-info-gap);
   margin-top: var(--custom-app-message-embed-base-info-top);
 }
+.root__48c1c {
+  flex-wrap: wrap;
+  margin-top: 2px;
+  position: relative;
+}
+.role__48c1c,
+.root__48c1c {
+  display: flex;
+}
+.role__48c1c {
+  align-items: center;
+  background: var(--background-secondary-alt);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  height: 22px;
+  margin: 0 4px 4px 0;
+  padding: 4px;
+}
+.roleRemoveButton__48c1c {
+  position: relative;
+}
+.roleRemoveButtonCanRemove__48c1c {
+  cursor: pointer;
+}
+.roleDot__48c1c {
+  font-size: 1.34em;
+}
+.roleFlowerStar__48c1c {
+  margin: 0 4px;
+}
+.roleRemoveIcon__48c1c {
+  display: none;
+  height: 10px;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+.role__48c1c:focus .roleRemoveIcon__48c1c,
+.role__48c1c:hover .roleRemoveIcon__48c1c,
+.roleRemoveIconFocused__48c1c .roleRemoveIcon__48c1c {
+  display: block;
+}
+.role__48c1c:focus .roleVerifiedIcon__48c1c,
+.role__48c1c:hover .roleVerifiedIcon__48c1c,
+.roleRemoveIconFocused__48c1c .roleVerifiedIcon__48c1c {
+  display: none;
+}
+.roleName__48c1c {
+  margin-right: 4px;
+  max-width: 200px;
+  overflow: hidden;
+}
+.roleNameOverflow__48c1c {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actionButton__48c1c {
+  color: var(--interactive-active);
+  font-size: 11px;
+  justify-content: center;
+  line-height: 11px;
+}
+.overflowButton__48c1c {
+  padding: 4px 8px;
+}
+.addButton__48c1c {
+  padding: 4px 5px;
+}
+.addButtonIcon__48c1c {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+.overflowRolesPopout__48c1c {
+  background-color: var(--background-secondary-alt);
+  border-radius: 3px;
+  box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+  padding: 8px;
+  width: 200px;
+}
+.overflowRolesPopoutArrowWrapper__48c1c {
+  height: 12px;
+  margin-left: -8px;
+  overflow: hidden;
+  width: 16px;
+}
+.overflowRolesPopoutArrow__48c1c {
+  background-color: var(--background-secondary-alt);
+  box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+  height: 8px;
+  transform: rotate(45deg);
+  width: 8px;
+}
+.popoutBottom__48c1c .overflowRolesPopoutArrowWrapper__48c1c {
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+}
+.popoutBottom__48c1c .overflowRolesPopoutArrow__48c1c {
+  bottom: -4px;
+  left: 4px;
+  position: absolute;
+}
+.popoutTop__48c1c .overflowRolesPopoutArrowWrapper__48c1c {
+  left: 50%;
+  position: absolute;
+  top: 100%;
+}
+.popoutTop__48c1c .overflowRolesPopoutArrow__48c1c {
+  left: 4px;
+  position: absolute;
+  top: -4px;
+}
+.overflowRolesPopoutHeader__48c1c {
+  margin-bottom: 8px;
+}
+.overflowRolesPopoutHeaderIcon__48c1c {
+  height: 12px;
+  margin-right: 4px;
+  width: 12px;
+}
+.overflowRolesPopoutHeaderText__48c1c {
+  color: var(--primary-400);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+.theme-dark .overflowRolesPopout__48c1c {
+  color: var(--opacity-white-80);
+}
+.theme-light .overflowRolesPopout__48c1c {
+  color: hsl(var(--primary-500-hsl) / 0.8);
+}
+.roleIcon__48c1c {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.enable-forced-colors .role__48c1c {
+  border: 1px solid CanvasText;
+}
+.enable-forced-colors .actionButton__48c1c {
+  color: ButtonText;
+}
+.enable-forced-colors .roleRemoveIcon__48c1c {
+  background-color: ButtonFace;
+  border-radius: 100%;
+  color: ButtonText;
+  padding: 2px;
+}
+.enable-forced-colors .roleRemoveIcon__48c1c path {
+  fill: ButtonText !important;
+}
+.root__373b5 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+.rolesHeading__373b5 {
+  margin-bottom: 4px;
+}
+.rolesList__373b5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 .guildInviteContainer__083ae {
   background: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
@@ -99273,4 +99444,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d9adc64b18bd353d.css.map*/
+/*# sourceMappingURL=12633.75534771cca9a6da.css.map*/
