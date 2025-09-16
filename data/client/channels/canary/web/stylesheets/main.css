@@ -49888,9 +49888,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76669,7 +76669,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99444,4 +99444,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b30b7c2e6bc5c8d1.css.map*/
+/*# sourceMappingURL=12633.c6a006ad3b5d9094.css.map*/
