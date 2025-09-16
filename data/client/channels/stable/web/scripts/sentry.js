@@ -3473,6 +3473,7 @@
             STORE_LISTINGS_SKU: (t) => "/store/skus/".concat(t, "/listings"),
             ORDER_CREATE: "/billing/orders",
             ORDER_UPDATE: (t) => "/billing/orders/".concat(t),
+            ORDER_SIGN: (t) => "/billing/orders/".concat(t, "/sign"),
             APPLICATION_SKUS: (t) => "/applications/".concat(t, "/skus"),
             APPLICATION_MANAGED_ACTIVITY_LINK: (t, e) =>
               "/applications/".concat(t, "/managed-links/").concat(e),
@@ -4897,6 +4898,7 @@
             "overlay_game_invite_notification_shown"),
           (r.OVERLAY_GAME_INVITE_SETTINGS_UPDATED =
             "overlay_game_invite_settings_updated"),
+          (r.OVERLAY_STATE_CHANGED = "overlay_state_changed"),
           (r.WIDGET_CONTENT_SHOWN = "widget_content_shown"),
           (r.WIDGET_SETTING_UPDATED = "widget_setting_updated"),
           (r.WIDGET_INTERACTED = "widget_interacted"),
@@ -7027,7 +7029,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-15-27dfd22456569b2b7add0dfb28140b75312f03ea-discord_web",
+              "2025-09-16-3e2914d197ae4399e130ae8538d499e6f70002be-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -7093,8 +7095,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "444704"),
-            o.YA("builtAt", String("1757973067509"));
+            o.YA("buildNumber", "444929"),
+            o.YA("builtAt", String("1758007548964"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -7183,7 +7185,8 @@
             null == window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT &&
             null == window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST &&
             null == window.GLOBAL_ENV.PUBLIC_PATH &&
-            null == window.GLOBAL_ENV.SPRIG_API_KEY)
+            null == window.GLOBAL_ENV.SPRIG_API_KEY &&
+            null == window.GLOBAL_ENV.MUX_ENV_KEY)
         )
           throw (
             (window.alert("Global environment variables not set!"),
@@ -48555,4 +48558,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.906da3106ef7beb5.js.map
+//# sourceMappingURL=sentry.1736d044a24299bc.js.map
