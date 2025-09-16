@@ -27807,11 +27807,21 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   pointer-events: none;
 }
 .sectionContainer__61424 {
+  align-items: center;
+  background-color: var(--background-base-low);
   display: flex;
-  padding-left: 8px;
+  height: var(
+    --custom-expression-picker-constants-expression-picker-list-section-heading-height
+  );
+  padding: 0 4px 0 8px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .sectionContainerNitroLocked__61424 {
   background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
+  position: relative;
 }
 .sectionHeader__61424 {
   color: var(--interactive-normal);
@@ -27828,9 +27838,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .sectionHeaderContent__61424 {
   align-items: center;
   display: flex;
-}
-.notFirstSectionHeader__61424 {
-  margin-top: 16px;
 }
 .smallPaddingFooter__61424 {
   height: 20px;
@@ -27852,14 +27859,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .soundRow__61424 {
   display: flex;
   gap: 8px;
+  padding-bottom: 8px;
   padding-left: 8px;
-  padding-top: 8px;
 }
 .soundRowNitroLocked__61424 {
   background-color: hsl(var(--premium-tier-2-purple-hsl) / 0.35);
-}
-.lastSoundRow__61424 {
-  padding-bottom: 8px;
 }
 .settingsClickArea__61424 {
   color: var(--interactive-normal);
@@ -27876,6 +27880,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .settingsSoundmojiClickArea__61424:last-child {
   padding-right: 0;
+}
+.premiumSectionDivider__61424 {
+  padding-top: 8px;
 }
 .settingsIcon__61424 {
   height: 24px;
@@ -76685,7 +76692,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99460,4 +99467,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.75d45b79484da89a.css.map*/
+/*# sourceMappingURL=12633.8a4bb094ba2a2652.css.map*/
