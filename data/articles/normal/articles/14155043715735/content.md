@@ -16,7 +16,7 @@
   ><span style="color: #434343" data-darkreader-inline-color=""> </span>
 </h3>
 <p>
-  We are dedicated to making Discord a safe space for all.
+  We are dedicated to making Discord a safer space for all.
   <strong>Family Center</strong> is a new tool we’ve built to help parents and
   guardians better understand how their teens use Discord, get insights into the
   communities they are a part of, and develop collaborative approaches to build
@@ -99,7 +99,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673617018391"
+    src="https://support.discord.com/hc/article_attachments/34988869251607"
     alt="image3.gif"
   />
 </p>
@@ -112,7 +112,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673625197847"
+    src="https://support.discord.com/hc/article_attachments/34988880038807"
     alt="image5.png"
   />
 </p>
@@ -138,7 +138,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673617022871"
+    src="https://support.discord.com/hc/article_attachments/34988869254935"
     alt="image2.jpg"
     width="298"
     height="617"
@@ -154,7 +154,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673625201431"
+    src="https://support.discord.com/hc/article_attachments/34988869257879"
     alt="image6.gif"
   />
 </p>
@@ -189,7 +189,7 @@
 </h3>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673625203735"
+    src="https://support.discord.com/hc/article_attachments/34988880046231"
     alt="image1.png"
     width="307"
     height="638"
@@ -197,7 +197,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15673625205015"
+    src="https://support.discord.com/hc/article_attachments/34988869262359"
     alt="image4.png"
     width="620"
     height="605"

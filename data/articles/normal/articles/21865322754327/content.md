@@ -1,24 +1,4 @@
 <p>
-  Data is used to personalize your Discord experience and manage in-game
-  rewards. Learn about Discord's personalization features and how to control
-  your data privacy settings.
-</p>
-<div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large"
-      >What this article covers:</span
-    ></strong
-  >
-  <ul>
-    <li>
-      <a href="#h_01HRAN5R73BEHZ0D2VTQQT67NB"
-        ><strong>Personalization</strong></a
-      >
-    </li>
-  </ul>
-</div>
-<h1 id="h_01HRAN5R73BEHZ0D2VTQQT67NB">Personalization</h1>
-<p>
   We use certain information to
   <span style="color: #23272a" data-darkreader-inline-color=""
     >personalize our services. This includes features like customizing your
