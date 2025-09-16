@@ -49761,6 +49761,11 @@ h3.improved__1689b:after {
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
 }
+@media (max-width: 485px) {
+  .cancelLink_dbec16 {
+    margin-left: 6px;
+  }
+}
 .modalBody_dbec16 {
   color: var(--interactive-normal);
   font-size: 16px;
@@ -76692,7 +76697,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -99467,4 +99472,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8a4bb094ba2a2652.css.map*/
+/*# sourceMappingURL=12633.1b83eb44d848b1d8.css.map*/
