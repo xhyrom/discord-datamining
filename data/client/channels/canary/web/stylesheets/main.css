@@ -664,6 +664,23 @@
   margin-bottom: auto;
   margin-top: auto;
 }
+.badge_c2b88c {
+  align-self: center;
+  border-radius: var(--radius-round);
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 var(--space-8);
+  text-align: center;
+  text-transform: uppercase;
+}
+.default_c2b88c {
+  background-color: var(--badge-background-default);
+  color: var(--badge-text-default);
+}
+.expressive_c2b88c {
+  background-color: var(--badge-background-expressive);
+  color: var(--badge-text-expressive);
+}
 .stack_dbd263 {
   display: flex;
 }
@@ -12261,23 +12278,6 @@ svg.radioIcon_c1e9c4 {
 }
 .errorMessage__5a092 {
   margin-top: 1px;
-}
-.badge_dca3ba {
-  align-self: center;
-  border-radius: var(--radius-round);
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 0 var(--space-8);
-  text-align: center;
-  text-transform: uppercase;
-}
-.default_dca3ba {
-  background-color: var(--badge-background-default);
-  color: var(--badge-text-default);
-}
-.expressive_dca3ba {
-  background-color: var(--badge-background-expressive);
-  color: var(--badge-text-expressive);
 }
 :where(.container__73454) {
   --custom-gradient-color-start: var(--blurple-50);
@@ -36433,16 +36433,25 @@ body .headerAnimation_b54a5b {
   margin-bottom: 8px;
   margin-top: 16px;
 }
-.giftRecipient_cd2ff7 {
-  margin-top: 16px;
-}
-.giftRecipientName_cd2ff7 {
-  margin-top: 10px;
-}
 .giftRecipientTag_cd2ff7 {
   color: var(--header-secondary);
   font-size: 13px;
-  margin-top: 6px;
+}
+.giftRecipientContainer_cd2ff7 {
+  align-items: flex-start;
+  background-color: var(--background-mod-faint);
+  border-color: var(--border-subtle);
+  border-radius: var(--radius-sm);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  gap: 12px;
+  padding: var(--space-12);
+}
+.giftRecipientTextContainer_cd2ff7 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .divider_cd2ff7 {
   background-color: var(--border-subtle);
@@ -99472,4 +99481,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.26c5b4fa50bdc38e.css.map*/
+/*# sourceMappingURL=12633.96bb3f99ca2a1369.css.map*/
