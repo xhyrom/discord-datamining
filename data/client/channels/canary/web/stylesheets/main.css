@@ -49745,6 +49745,25 @@ h3.improved__1689b:after {
   margin-left: 16px;
   position: relative;
 }
+.secondaryBannerTextButtonContainerWithPause__84995 {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+@media (max-width: 485px) {
+  .secondaryBannerTextButtonContainerWithPause__84995 {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .secondaryBannerTextButtonContainerWithPause__84995 button > span {
+    display: inline-block;
+    line-break: strict;
+    overflow-wrap: break-word;
+    text-align: center;
+    white-space: normal;
+    width: 150px;
+    word-break: keep-all;
+  }
+}
 .secondaryBannerTextButtonContainer__84995 {
   margin-right: 15px;
   margin-top: 5px;
@@ -101051,4 +101070,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0921062bc5aada4a.css.map*/
+/*# sourceMappingURL=12633.906eb53dcc98df5b.css.map*/
