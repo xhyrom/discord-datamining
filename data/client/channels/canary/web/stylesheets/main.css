@@ -50898,12 +50898,13 @@ h3.improved__1689b:after {
   transform-origin: left;
 }
 .ctaButtons_a77fde {
-  display: grid;
-  grid-template: "back cta" 1fr / -webkit-max-content 1fr;
-  grid-template: "back cta" 1fr / max-content 1fr;
+  align-items: end;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 .cta_a77fde {
-  grid-area: cta;
+  flex: 1;
   margin-top: 12px;
 }
 .copyIcon_a77fde {
@@ -50935,38 +50936,6 @@ h3.improved__1689b:after {
 }
 .shine_a77fde {
   animation-delay: 0s;
-}
-.backButton_a77fde {
-  aspect-ratio: 1/1;
-  background-color: var(--background-modifier-hover);
-  border: 1px solid var(--background-modifier-hover);
-  border-radius: 4px;
-  grid-area: back;
-  margin-right: 8px;
-  margin-top: 12px;
-  padding: 3px;
-}
-.backButton_a77fde:focus,
-.backButton_a77fde:hover {
-  background-color: var(--background-modifier-selected);
-  border-color: var(--background-modifier-selected);
-}
-.backButton_a77fde:active {
-  background-color: var(--background-modifier-active);
-  border-color: var(--background-modifier-active);
-}
-.backButtonInner_a77fde {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.backIcon_a77fde {
-  flex: 0 0 auto;
-  height: 16px;
-  width: 16px;
-}
-.full-motion .backIcon_a77fde {
-  transition: transform 0.125s;
 }
 .wrapper__22c64 {
   overflow: hidden;
@@ -76688,7 +76657,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100916,4 +100885,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.dbe87cb3ffc191e7.css.map*/
+/*# sourceMappingURL=12633.8db30503776bc18e.css.map*/
