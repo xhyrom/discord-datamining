@@ -76668,7 +76668,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -80220,10 +80220,10 @@ html.disable-forced-colors * {
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-background-default: var(--blurple-50);
-  --badge-background-expressive: var(--white);
+  --badge-background-expressive: var(--neutral-1);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
-  --badge-text-default: var(--white);
+  --badge-text-default: var(--neutral-1);
   --badge-text-expressive: var(--neutral-71);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
   --bg-backdrop-immersive: hsl(var(--black-hsl) / 0.85);
@@ -81126,13 +81126,13 @@ html.disable-forced-colors * {
     );
     --badge-background-expressive: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --badge-text-default: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -82987,8 +82987,8 @@ html.disable-forced-colors * {
   --badge-background-expressive: var(--blurple-50);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
-  --badge-text-default: var(--white);
-  --badge-text-expressive: var(--white);
+  --badge-text-default: var(--neutral-1);
+  --badge-text-expressive: var(--neutral-1);
   --bg-backdrop: hsl(var(--black-hsl) / 0.54);
   --bg-backdrop-immersive: hsl(var(--black-hsl) / 0.8);
   --bg-backdrop-no-opacity: var(--black);
@@ -83878,13 +83878,13 @@ html.disable-forced-colors * {
     );
     --badge-text-default: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --badge-text-expressive: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -85730,10 +85730,10 @@ html.disable-forced-colors * {
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-background-default: var(--blurple-50);
-  --badge-background-expressive: var(--white);
+  --badge-background-expressive: var(--neutral-1);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
-  --badge-text-default: var(--white);
+  --badge-text-default: var(--neutral-1);
   --badge-text-expressive: var(--neutral-71);
   --bg-backdrop: hsl(var(--plum-19-hsl) / 0.75);
   --bg-backdrop-immersive: hsl(var(--plum-19-hsl) / 0.9);
@@ -86648,13 +86648,13 @@ html.disable-forced-colors * {
     );
     --badge-background-expressive: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --badge-text-default: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -88504,10 +88504,10 @@ html.disable-forced-colors * {
   --background-tile-gradient-pink-end: hsl(var(--illo-pink-7-hsl) / 0.3);
   --background-tile-gradient-pink-start: hsl(var(--illo-pink-5-hsl) / 0.3);
   --badge-background-default: var(--blurple-50);
-  --badge-background-expressive: var(--white);
+  --badge-background-expressive: var(--neutral-1);
   --badge-brand-bg: var(--brand-260);
   --badge-brand-text: var(--brand-560);
-  --badge-text-default: var(--white);
+  --badge-text-default: var(--neutral-1);
   --badge-text-expressive: var(--neutral-71);
   --bg-backdrop: hsl(var(--black-hsl) / 0.7);
   --bg-backdrop-immersive: hsl(var(--black-hsl) / 0.85);
@@ -89416,13 +89416,13 @@ html.disable-forced-colors * {
     );
     --badge-background-expressive: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --badge-text-default: color-mix(
       in oklab,
-      var(--white) 100%,
+      var(--neutral-1) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -100953,4 +100953,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8e1c3a57abc32905.css.map*/
+/*# sourceMappingURL=12633.4f8093868edd15f6.css.map*/
