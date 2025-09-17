@@ -74074,6 +74074,7 @@ span.clanTag__07f91.isOverlay__07f91 {
   cursor: pointer;
   display: flex;
   flex-shrink: 1;
+  gap: 8px;
   height: 24px;
   justify-content: center;
   margin-left: var(--space-4);
@@ -76960,7 +76961,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -83722,7 +83723,9 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
   --radio-background-active: var(--blurple-50);
-  --radio-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-background-default: hsl(
+    var(--opacity-white-4-hsl) / 0.0392156862745098
+  );
   --radio-background-default-selected: var(--blurple-50);
   --radio-background-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --radio-background-hover-selected: var(--blurple-60);
@@ -85061,7 +85064,7 @@ html.disable-forced-colors * {
     );
     --radio-background-default: color-mix(
       in oklab,
-      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--opacity-white-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -99112,6 +99115,7 @@ html.disable-forced-colors * {
   );
   --input-border-active: var(--blurple-50);
   --input-border-critical-hover: var(--red-new-36);
+  --input-border-default: hsl(var(--opacity-white-20-hsl) / 0.2);
   --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --input-foreground-critical: var(--neutral-9);
 }
@@ -99142,6 +99146,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
@@ -99166,6 +99176,7 @@ html.disable-forced-colors * {
   );
   --input-border-active: var(--blurple-50);
   --input-border-critical-hover: var(--red-new-66);
+  --input-border-default: hsl(var(--opacity-black-16-hsl) / 0.1607843137254902);
   --input-border-default-hover: hsl(
     var(--opacity-48-hsl) / 0.47843137254901963
   );
@@ -99198,6 +99209,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-48-hsl) / 0.47843137254901963) 100%,
@@ -99222,6 +99239,7 @@ html.disable-forced-colors * {
   );
   --input-border-active: var(--blurple-50);
   --input-border-critical-hover: var(--red-new-23);
+  --input-border-default: hsl(var(--opacity-white-28-hsl) / 0.2784313725490196);
   --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --input-foreground-critical: var(--neutral-10);
 }
@@ -99252,6 +99270,12 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --input-border-default-hover: color-mix(
       in oklab,
       hsl(var(--opacity-44-hsl) / 0.4392156862745098) 100%,
@@ -99276,6 +99300,7 @@ html.disable-forced-colors * {
   );
   --input-border-active: var(--blurple-50);
   --input-border-critical-hover: var(--red-new-45);
+  --input-border-default: hsl(var(--opacity-white-20-hsl) / 0.2);
   --input-border-default-hover: hsl(var(--opacity-44-hsl) / 0.4392156862745098);
   --input-foreground-critical: var(--neutral-5);
 }
@@ -99304,6 +99329,12 @@ html.disable-forced-colors * {
       in oklab,
       var(--red-new-45) 100%,
       var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --input-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-white-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
         var(--custom-theme-base-color-amount, 0%)
     );
     --input-border-default-hover: color-mix(
@@ -101053,4 +101084,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.63b9b558291f64d1.css.map*/
+/*# sourceMappingURL=12633.ac144052c0f3b0c9.css.map*/
