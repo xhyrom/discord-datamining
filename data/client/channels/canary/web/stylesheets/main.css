@@ -53058,14 +53058,25 @@ h3.improved__1689b:after {
   grid-row-gap: 16px;
 }
 .heading__8d6f9 {
+  grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
-.heading__8d6f9,
+.questChannelCallHeaderWrapper__8d6f9,
 .questTile__8d6f9 {
   grid-column: 2 / span 1;
-}
-.questTile__8d6f9 {
   grid-row: 2 / span 1;
+}
+.questChannelCallHeaderWrapper__8d6f9 {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+}
+.questChannelCallHeaderWrapper__8d6f9 > div {
+  left: auto;
+  margin-left: 0;
+  position: relative;
+  top: auto;
 }
 .embedCard__8d6f9 {
   align-self: flex-start;
@@ -76657,7 +76668,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -100942,4 +100953,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3f5e41ae987f461b.css.map*/
+/*# sourceMappingURL=12633.8e1c3a57abc32905.css.map*/
