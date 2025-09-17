@@ -80494,10 +80494,25 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-64);
   --chat-border: var(--primary-700);
   --chat-text-muted: var(--neutral-27);
+  --checkbox-background-active: var(--blurple-50);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default-selected: var(--blurple-50);
+  --checkbox-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-background-hover-selected: var(--blurple-60);
+  --checkbox-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-34);
+  --checkbox-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --checkbox-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --checkbox-foreground-active: var(--neutral-1);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -80865,6 +80880,32 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
+  --radio-background-active: var(--blurple-50);
+  --radio-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-default-selected: var(--blurple-50);
+  --radio-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-hover-selected: var(--blurple-60);
+  --radio-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --radio-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+  --radio-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --radio-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --radio-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -80968,6 +81009,29 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --switch-background-active: var(--blurple-50);
+  --switch-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-default-selected: var(--blurple-50);
+  --switch-background-hover: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-hover-selected: var(--blurple-60);
+  --switch-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --switch-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
+  --switch-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --switch-thumb-background-default: var(--neutral-1);
+  --switch-thumb-background-default-selected: var(--neutral-1);
+  --switch-thumb-foreground-active: var(--blurple-50);
+  --switch-thumb-foreground-default: var(--neutral-71);
+  --switch-thumb-foreground-hover: var(--neutral-71);
   --text-brand: var(--blurple-26);
   --text-code-addition: var(--green-new-15);
   --text-code-builtin: var(--orange-new-13);
@@ -81386,6 +81450,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-background-checked: color-mix(
       in oklab,
       var(--blurple-50) 100%,
@@ -81396,6 +81466,30 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--custom-theme-base-color-amount, 0%)
     );
     --checkbox-border-checked: color-mix(
@@ -81409,6 +81503,30 @@ html.disable-forced-colors * {
       var(--neutral-34) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-foreground-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -82148,6 +82266,90 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --radio-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-thumb-background-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-active-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -82549,6 +82751,96 @@ html.disable-forced-colors * {
       var(--primary-660) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default-selected: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -82974,10 +83266,25 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-1);
   --chat-border: var(--primary-200);
   --chat-text-muted: var(--neutral-39);
+  --checkbox-background-active: var(--blurple-50);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default-selected: var(--blurple-50);
+  --checkbox-background-hover: hsl(
+    var(--opacity-black-4-hsl) / 0.0392156862745098
+  );
+  --checkbox-background-hover-selected: var(--blurple-60);
+  --checkbox-border-active: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-30);
+  --checkbox-border-default-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --checkbox-border-hover: var(--neutral-46);
+  --checkbox-border-hover-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --checkbox-foreground-active: var(--neutral-1);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -83325,6 +83632,24 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--white-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
+  --radio-background-active: var(--blurple-50);
+  --radio-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-background-default-selected: var(--blurple-50);
+  --radio-background-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-background-hover-selected: var(--blurple-60);
+  --radio-border-active: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+  --radio-border-default: var(--neutral-34);
+  --radio-border-default-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --radio-border-hover: var(--neutral-46);
+  --radio-border-hover-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-foreground-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -83428,6 +83753,31 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-400);
   --status-warning-background: var(--yellow-400);
   --status-warning-text: var(--white);
+  --switch-background-active: var(--blurple-50);
+  --switch-background-default: hsl(
+    var(--opacity-black-1-hsl) / 0.0196078431372549
+  );
+  --switch-background-default-selected: var(--blurple-50);
+  --switch-background-hover: hsl(
+    var(--opacity-black-1-hsl) / 0.0196078431372549
+  );
+  --switch-background-hover-selected: var(--blurple-60);
+  --switch-border-active: hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+  --switch-border-default: hsl(
+    var(--opacity-black-16-hsl) / 0.1607843137254902
+  );
+  --switch-border-default-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --switch-border-hover: hsl(var(--opacity-black-44-hsl) / 0.4392156862745098);
+  --switch-border-hover-selected: hsl(
+    var(--opacity-28-hsl) / 0.2784313725490196
+  );
+  --switch-thumb-background-default: var(--neutral-44);
+  --switch-thumb-background-default-selected: var(--neutral-1);
+  --switch-thumb-foreground-active: var(--blurple-50);
+  --switch-thumb-foreground-default: var(--neutral-1);
+  --switch-thumb-foreground-hover: var(--neutral-1);
   --text-brand: var(--blurple-49);
   --text-code-addition: var(--green-new-67);
   --text-code-builtin: var(--orange-new-63);
@@ -83846,6 +84196,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-background-checked: color-mix(
       in oklab,
       var(--blurple-50) 100%,
@@ -83856,6 +84212,30 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
         var(--custom-theme-base-color-amount, 0%)
     );
     --checkbox-border-checked: color-mix(
@@ -83869,6 +84249,30 @@ html.disable-forced-colors * {
       var(--neutral-30) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover: color-mix(
+      in oklab,
+      var(--neutral-46) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-foreground-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -84608,6 +85012,90 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --radio-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover: color-mix(
+      in oklab,
+      var(--neutral-46) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-thumb-background-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-active-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -85009,6 +85497,96 @@ html.disable-forced-colors * {
       var(--primary-160) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-1-hsl) / 0.0196078431372549) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0196078431372549)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-1-hsl) / 0.0196078431372549) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0196078431372549)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-16-hsl) / 0.1607843137254902) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-44-hsl) / 0.4392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default: color-mix(
+      in oklab,
+      var(--neutral-44) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default-selected: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-hover: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -85428,10 +86006,25 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-91);
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-37);
+  --checkbox-background-active: var(--blurple-50);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default-selected: var(--blurple-50);
+  --checkbox-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-background-hover-selected: var(--blurple-60);
+  --checkbox-border-active: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-43);
+  --checkbox-border-default-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --checkbox-border-hover-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --checkbox-foreground-active: var(--neutral-1);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -85803,6 +86396,32 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
+  --radio-background-active: var(--blurple-50);
+  --radio-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-default-selected: var(--blurple-50);
+  --radio-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-hover-selected: var(--blurple-60);
+  --radio-border-active: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+  --radio-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+  --radio-border-default-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --radio-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --radio-border-hover-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -85910,6 +86529,29 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --switch-background-active: var(--blurple-50);
+  --switch-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-default-selected: var(--blurple-50);
+  --switch-background-hover: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-hover-selected: var(--blurple-60);
+  --switch-border-active: hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+  --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --switch-border-default-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
+  --switch-border-hover-selected: hsl(
+    var(--opacity-24-hsl) / 0.23921568627450981
+  );
+  --switch-thumb-background-default: var(--neutral-1);
+  --switch-thumb-background-default-selected: var(--neutral-1);
+  --switch-thumb-foreground-active: var(--blurple-50);
+  --switch-thumb-foreground-default: var(--neutral-71);
+  --switch-thumb-foreground-hover: var(--neutral-71);
   --text-brand: var(--blurple-41);
   --text-code-addition: var(--green-new-31);
   --text-code-builtin: var(--orange-new-30);
@@ -86330,6 +86972,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-background-checked: color-mix(
       in oklab,
       var(--blurple-50) 100%,
@@ -86340,6 +86988,30 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
         var(--custom-theme-base-color-amount, 0%)
     );
     --checkbox-border-checked: color-mix(
@@ -86353,6 +87025,30 @@ html.disable-forced-colors * {
       var(--neutral-43) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-foreground-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -87092,6 +87788,90 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --radio-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-thumb-background-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-active-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -87493,6 +88273,96 @@ html.disable-forced-colors * {
       hsl(var(--plum-11-hsl) / 0.16) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default-selected: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --text-brand: color-mix(
       in oklab,
@@ -87908,10 +88778,25 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-80);
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-34);
+  --checkbox-background-active: var(--blurple-50);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+  --checkbox-background-default-selected: var(--blurple-50);
+  --checkbox-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-background-hover-selected: var(--blurple-60);
+  --checkbox-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --checkbox-border-checked: var(--blurple-50);
   --checkbox-border-default: var(--neutral-40);
+  --checkbox-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --checkbox-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --checkbox-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --checkbox-foreground-active: var(--neutral-1);
   --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
   --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
   --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
@@ -88283,6 +89168,32 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
+  --radio-background-active: var(--blurple-50);
+  --radio-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-default-selected: var(--blurple-50);
+  --radio-background-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-background-hover-selected: var(--blurple-60);
+  --radio-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --radio-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+  --radio-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --radio-border-hover: hsl(var(--opacity-80-hsl) / 0.8);
+  --radio-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --radio-foreground-active: var(--blurple-50);
+  --radio-foreground-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-foreground-hover: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --radio-thumb-background-active: var(--neutral-1);
   --redesign-button-active-background: var(--green-430);
   --redesign-button-active-pressed-background: var(--green-460);
   --redesign-button-active-text: var(--white);
@@ -88388,6 +89299,29 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
+  --switch-background-active: var(--blurple-50);
+  --switch-background-default: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-default-selected: var(--blurple-50);
+  --switch-background-hover: hsl(
+    var(--opacity-black-12-hsl) / 0.12156862745098039
+  );
+  --switch-background-hover-selected: var(--blurple-60);
+  --switch-border-active: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+  --switch-border-default: hsl(var(--opacity-20-hsl) / 0.2);
+  --switch-border-default-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --switch-border-hover: hsl(var(--opacity-40-hsl) / 0.4);
+  --switch-border-hover-selected: hsl(
+    var(--opacity-12-hsl) / 0.12156862745098039
+  );
+  --switch-thumb-background-default: var(--neutral-1);
+  --switch-thumb-background-default-selected: var(--neutral-1);
+  --switch-thumb-foreground-active: var(--blurple-50);
+  --switch-thumb-foreground-default: var(--neutral-71);
+  --switch-thumb-foreground-hover: var(--neutral-71);
   --text-brand: var(--blurple-35);
   --text-code-addition: var(--green-new-26);
   --text-code-builtin: var(--orange-new-25);
@@ -88806,6 +89740,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-background-checked: color-mix(
       in oklab,
       var(--blurple-50) 100%,
@@ -88816,6 +89756,30 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
         var(--custom-theme-base-color-amount, 0%)
     );
     --checkbox-border-checked: color-mix(
@@ -88829,6 +89793,30 @@ html.disable-forced-colors * {
       var(--neutral-40) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-foreground-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
     );
     --content-inventory-media-seekbar-container: color-mix(
       in oklab,
@@ -89568,6 +90556,90 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.45)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --radio-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-80-hsl) / 0.8) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.8)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-foreground-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --radio-thumb-background-active: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-active-background: color-mix(
       in oklab,
       var(--green-430) 100%,
@@ -89970,6 +91042,96 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.16)
         var(--custom-theme-base-color-amount, 0%)
     );
+    --switch-background-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-default-selected: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-background-hover-selected: color-mix(
+      in oklab,
+      var(--blurple-60) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-20-hsl) / 0.2) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.2)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover: color-mix(
+      in oklab,
+      hsl(var(--opacity-40-hsl) / 0.4) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.4)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-background-default-selected: color-mix(
+      in oklab,
+      var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-thumb-foreground-active: color-mix(
+      in oklab,
+      var(--blurple-50) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-default: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
+    --switch-thumb-foreground-hover: color-mix(
+      in oklab,
+      var(--neutral-71) 100%,
+      var(--custom-theme-text-color, #000)
+        var(--custom-theme-text-color-amount, 0%)
+    );
     --text-brand: color-mix(
       in oklab,
       var(--blurple-35) 100%,
@@ -90299,8 +91461,11 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--neutral-25);
   --channels-default: var(--neutral-19);
   --chat-text-muted: var(--neutral-17);
+  --checkbox-border-active: var(--neutral-12);
   --checkbox-border-checked: var(--blurple-18);
   --checkbox-border-default: var(--neutral-1);
+  --checkbox-border-default-selected: var(--neutral-12);
+  --checkbox-border-hover-selected: var(--neutral-12);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -90432,6 +91597,9 @@ html.disable-forced-colors * {
     var(--opacity-blurple-48-hsl) / 0.47843137254901963
   );
   --mention-foreground: var(--blurple-1);
+  --radio-border-active: var(--neutral-12);
+  --radio-border-default-selected: var(--neutral-12);
+  --radio-border-hover-selected: var(--neutral-12);
   --redesign-button-primary-alt-border: var(--brand-300);
   --redesign-button-primary-alt-text: var(--brand-300);
   --redesign-button-secondary-border: var(--neutral-12);
@@ -90442,6 +91610,9 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-1);
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-28);
+  --switch-border-active: var(--neutral-12);
+  --switch-border-default-selected: var(--neutral-12);
+  --switch-border-hover-selected: var(--neutral-12);
   --text-brand: var(--brand-300);
   --text-code-addition: var(--green-new-1);
   --text-code-builtin: var(--orange-new-1);
@@ -90646,6 +91817,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-border-checked: color-mix(
       in oklab,
       var(--blurple-18) 100%,
@@ -90655,6 +91832,18 @@ html.disable-forced-colors * {
     --checkbox-border-default: color-mix(
       in oklab,
       var(--neutral-1) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -90916,6 +92105,24 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --radio-border-active: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-300) 100%,
@@ -90968,6 +92175,24 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-12) 100%,
+      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -91219,8 +92444,11 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--neutral-38);
   --channels-default: var(--neutral-49);
   --chat-text-muted: var(--neutral-47);
+  --checkbox-border-active: var(--neutral-49);
   --checkbox-border-checked: var(--blurple-59);
   --checkbox-border-default: var(--neutral-72);
+  --checkbox-border-default-selected: var(--neutral-49);
+  --checkbox-border-hover-selected: var(--neutral-49);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
@@ -91350,6 +92578,9 @@ html.disable-forced-colors * {
   --interactive-normal: var(--neutral-64);
   --mention-background: hsl(var(--opacity-blurple-28-hsl) / 0.2784313725490196);
   --mention-foreground: var(--blurple-82);
+  --radio-border-active: var(--neutral-49);
+  --radio-border-default-selected: var(--neutral-49);
+  --radio-border-hover-selected: var(--neutral-49);
   --redesign-button-primary-alt-border: var(--brand-600);
   --redesign-button-primary-alt-text: var(--brand-600);
   --redesign-button-secondary-border: var(--neutral-49);
@@ -91360,6 +92591,9 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-72);
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-47);
+  --switch-border-active: var(--neutral-49);
+  --switch-border-default-selected: var(--neutral-49);
+  --switch-border-hover-selected: var(--neutral-49);
   --text-brand: var(--brand-600);
   --text-code-addition: var(--green-new-78);
   --text-code-builtin: var(--orange-new-73);
@@ -91564,6 +92798,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-border-checked: color-mix(
       in oklab,
       var(--blurple-59) 100%,
@@ -91573,6 +92813,18 @@ html.disable-forced-colors * {
     --checkbox-border-default: color-mix(
       in oklab,
       var(--neutral-72) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -91834,6 +93086,24 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --radio-border-active: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-600) 100%,
@@ -91886,6 +93156,24 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-49) 100%,
+      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -92139,8 +93427,11 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--neutral-35);
   --channels-default: var(--neutral-29);
   --chat-text-muted: var(--neutral-28);
+  --checkbox-border-active: var(--neutral-23);
   --checkbox-border-checked: var(--blurple-24);
   --checkbox-border-default: var(--neutral-10);
+  --checkbox-border-default-selected: var(--neutral-23);
+  --checkbox-border-hover-selected: var(--neutral-23);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
   );
@@ -92276,6 +93567,9 @@ html.disable-forced-colors * {
     var(--opacity-blurple-48-hsl) / 0.47843137254901963
   );
   --mention-foreground: var(--blurple-13);
+  --radio-border-active: var(--neutral-23);
+  --radio-border-default-selected: var(--neutral-23);
+  --radio-border-hover-selected: var(--neutral-23);
   --redesign-button-primary-alt-border: var(--brand-345);
   --redesign-button-primary-alt-text: var(--brand-345);
   --redesign-button-secondary-border: var(--neutral-23);
@@ -92286,6 +93580,9 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-10);
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-44);
+  --switch-border-active: var(--neutral-23);
+  --switch-border-default-selected: var(--neutral-23);
+  --switch-border-hover-selected: var(--neutral-23);
   --text-brand: var(--brand-345);
   --text-code-addition: var(--green-new-20);
   --text-code-builtin: var(--orange-new-18);
@@ -92490,6 +93787,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-border-checked: color-mix(
       in oklab,
       var(--blurple-24) 100%,
@@ -92499,6 +93802,18 @@ html.disable-forced-colors * {
     --checkbox-border-default: color-mix(
       in oklab,
       var(--neutral-10) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -92760,6 +94075,24 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --radio-border-active: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-345) 100%,
@@ -92812,6 +94145,24 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-23) 100%,
+      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -93059,8 +94410,11 @@ html.disable-forced-colors * {
   --channel-text-area-placeholder: var(--neutral-32);
   --channels-default: var(--neutral-26);
   --chat-text-muted: var(--neutral-24);
+  --checkbox-border-active: var(--neutral-19);
   --checkbox-border-checked: var(--blurple-20);
   --checkbox-border-default: var(--neutral-5);
+  --checkbox-border-default-selected: var(--neutral-19);
+  --checkbox-border-hover-selected: var(--neutral-19);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
   );
@@ -93192,6 +94546,9 @@ html.disable-forced-colors * {
     var(--opacity-blurple-48-hsl) / 0.47843137254901963
   );
   --mention-foreground: var(--blurple-5);
+  --radio-border-active: var(--neutral-19);
+  --radio-border-default-selected: var(--neutral-19);
+  --radio-border-hover-selected: var(--neutral-19);
   --redesign-button-primary-alt-border: var(--brand-330);
   --redesign-button-primary-alt-text: var(--brand-330);
   --redesign-button-secondary-border: var(--neutral-19);
@@ -93202,6 +94559,9 @@ html.disable-forced-colors * {
   --spine-default: var(--neutral-5);
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-38);
+  --switch-border-active: var(--neutral-19);
+  --switch-border-default-selected: var(--neutral-19);
+  --switch-border-hover-selected: var(--neutral-19);
   --text-brand: var(--brand-330);
   --text-code-addition: var(--green-new-13);
   --text-code-builtin: var(--orange-new-12);
@@ -93406,6 +94766,12 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --checkbox-border-active: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --checkbox-border-checked: color-mix(
       in oklab,
       var(--blurple-20) 100%,
@@ -93415,6 +94781,18 @@ html.disable-forced-colors * {
     --checkbox-border-default: color-mix(
       in oklab,
       var(--neutral-5) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -93676,6 +95054,24 @@ html.disable-forced-colors * {
       var(--custom-theme-text-color, #000)
         var(--custom-theme-text-color-amount, 0%)
     );
+    --radio-border-active: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --radio-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
     --redesign-button-primary-alt-border: color-mix(
       in oklab,
       var(--brand-330) 100%,
@@ -93728,6 +95124,24 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-active: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-default-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --switch-border-hover-selected: color-mix(
+      in oklab,
+      var(--neutral-19) 100%,
+      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --text-brand: color-mix(
@@ -97647,6 +99061,102 @@ html.disable-forced-colors * {
     );
   }
 }
+.mana-toggle-inputs .theme-dark,
+.mana-toggle-inputs.theme-dark {
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-toggle-inputs .theme-dark,
+  .mana-toggle-inputs.theme-dark {
+    --checkbox-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+  }
+}
+.mana-toggle-inputs .theme-light,
+.mana-toggle-inputs.theme-light {
+  --checkbox-background-default: hsl(
+    var(--opacity-black-4-hsl) / 0.0392156862745098
+  );
+  --checkbox-border-default: var(--neutral-34);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-toggle-inputs .theme-light,
+  .mana-toggle-inputs.theme-light {
+    --checkbox-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default: color-mix(
+      in oklab,
+      var(--neutral-34) 100%,
+      var(--custom-theme-base-color, #000)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+  }
+}
+.mana-toggle-inputs .theme-midnight,
+.mana-toggle-inputs.theme-midnight {
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-toggle-inputs .theme-midnight,
+  .mana-toggle-inputs.theme-midnight {
+    --checkbox-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+  }
+}
+.mana-toggle-inputs .theme-darker,
+.mana-toggle-inputs.theme-darker {
+  --checkbox-background-default: hsl(
+    var(--opacity-black-8-hsl) / 0.0784313725490196
+  );
+  --checkbox-border-default: hsl(var(--opacity-64-hsl) / 0.6392156862745098);
+}
+@supports (color: color-mix(in lch, red, blue)) {
+  .mana-toggle-inputs .theme-darker,
+  .mana-toggle-inputs.theme-darker {
+    --checkbox-background-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-black-8-hsl) / 0.0784313725490196) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+    --checkbox-border-default: color-mix(
+      in oklab,
+      hsl(var(--opacity-64-hsl) / 0.6392156862745098) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.6392156862745098)
+        var(--custom-theme-base-color-amount, 0%)
+    );
+  }
+}
 .mana-text-inputs .theme-dark,
 .mana-text-inputs.theme-dark {
   --input-background-critical: hsl(
@@ -99598,4 +101108,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.73d4beea6166b726.css.map*/
+/*# sourceMappingURL=12633.7b05e6f6e726b79e.css.map*/
