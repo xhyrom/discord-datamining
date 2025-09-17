@@ -76657,7 +76657,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -79509,6 +79509,63 @@ html.disable-forced-colors * {
 }
 .notAppAsidePanel_a3002d:has(~ [data-app-right-panel="true"]) .app_a3002d {
   position: relative;
+}
+.modal_ab9bdf {
+  border-radius: 5px;
+  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  position: relative;
+}
+.theme-dark .modal_ab9bdf {
+  background-color: var(--primary-600);
+}
+.theme-light .modal_ab9bdf {
+  background: var(--white-500);
+}
+.sizeSmall_ab9bdf {
+  max-height: 660px;
+  min-height: 200px;
+  width: 440px;
+}
+.sizeMedium_ab9bdf {
+  max-height: 800px;
+  min-height: 400px;
+  width: 600px;
+}
+.sizeLarge_ab9bdf {
+  max-width: 960px;
+  min-height: 400px;
+  min-width: 800px;
+}
+@media (max-width: 485px) {
+  .sizeLarge_ab9bdf,
+  .sizeMedium_ab9bdf,
+  .sizeSmall_ab9bdf {
+    align-self: center;
+    max-height: 100vh;
+    min-width: auto;
+    width: 96%;
+  }
+  .fullscreenOnMobile_ab9bdf {
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .fullscreenOnMobile_ab9bdf .footer_ab9bdf,
+  .fullscreenOnMobile_ab9bdf .header_ab9bdf {
+    border-radius: 0;
+  }
+  .hideOnFullscreen_ab9bdf {
+    display: none;
+  }
 }
 :root {
   --application-subscription-end: hsl(
@@ -100885,4 +100942,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8db30503776bc18e.css.map*/
+/*# sourceMappingURL=12633.5b9b634a92c2dac8.css.map*/

@@ -332,7 +332,7 @@
   "gradientDotAnimation": "gradientDotAnimation_e5de78",
   "subtitle": "subtitle_efc71f",
   "lighten": "lighten_c99fc3",
-  "header": "header_c6e099",
+  "header": "header_ab9bdf",
   "headerText": "headerText_e4cb9a",
   "brand": "brand_b3f026",
   "themed": "themed_c8b06d",
@@ -598,7 +598,7 @@
   "popoverGradientWrapper": "popoverGradientWrapper_d6f39b",
   "popoverContentWithGradient": "popoverContentWithGradient_d6f39b",
   "popover--video": "popover--video_d6f39b",
-  "footer": "footer_e8d31f",
+  "footer": "footer_ab9bdf",
   "actionBar": "actionBar_aa605f",
   "closeButton": "closeButton_c9e42f",
   "hasActions": "hasActions_d6f39b",
@@ -1155,7 +1155,7 @@
   "closeIcon": "closeIcon_cacd02",
   "splashImage": "splashImage_b7b2cf",
   "settings": "settings_b7b2cf",
-  "modal": "modal_a327d2",
+  "modal": "modal_ab9bdf",
   "blockedPaymentsModalContent": "blockedPaymentsModalContent_b7b2cf",
   "blockedPaymentsModalHeader": "blockedPaymentsModalHeader_b7b2cf",
   "blockedPaymentsWarningIcon": "blockedPaymentsWarningIcon_b7b2cf",
@@ -3070,5 +3070,10 @@
   "notAppAsidePanel": "notAppAsidePanel_a3002d",
   "app": "app_a3002d",
   "mobileApp": "mobileApp_a3002d",
-  "allowsScrolling": "allowsScrolling_a3002d"
+  "allowsScrolling": "allowsScrolling_a3002d",
+  "sizeSmall": "sizeSmall_ab9bdf",
+  "sizeMedium": "sizeMedium_ab9bdf",
+  "sizeLarge": "sizeLarge_ab9bdf",
+  "fullscreenOnMobile": "fullscreenOnMobile_ab9bdf",
+  "hideOnFullscreen": "hideOnFullscreen_ab9bdf"
 }
