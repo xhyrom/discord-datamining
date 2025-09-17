@@ -76668,7 +76668,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -81979,54 +81979,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --notice-background-critical: color-mix(
-      in oklab,
-      var(--red-new-74) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-info: color-mix(
-      in oklab,
-      var(--blue-new-76) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-positive: color-mix(
-      in oklab,
-      var(--green-new-76) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-warning: color-mix(
-      in oklab,
-      var(--yellow-new-75) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-critical: color-mix(
-      in oklab,
-      var(--red-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-info: color-mix(
-      in oklab,
-      var(--blue-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-positive: color-mix(
-      in oklab,
-      var(--green-new-2) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-default: color-mix(
       in oklab,
       hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
@@ -84722,54 +84674,6 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--primary-500) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-critical: color-mix(
-      in oklab,
-      var(--red-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-info: color-mix(
-      in oklab,
-      var(--blue-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-positive: color-mix(
-      in oklab,
-      var(--green-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-warning: color-mix(
-      in oklab,
-      var(--yellow-new-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-critical: color-mix(
-      in oklab,
-      var(--red-new-77) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-info: color-mix(
-      in oklab,
-      var(--blue-new-76) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-positive: color-mix(
-      in oklab,
-      var(--green-new-75) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-76) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -87501,54 +87405,6 @@ html.disable-forced-colors * {
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --notice-background-critical: color-mix(
-      in oklab,
-      var(--red-new-94) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-info: color-mix(
-      in oklab,
-      var(--blue-new-94) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-positive: color-mix(
-      in oklab,
-      var(--green-new-96) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-warning: color-mix(
-      in oklab,
-      var(--yellow-new-94) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-critical: color-mix(
-      in oklab,
-      var(--red-new-16) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-info: color-mix(
-      in oklab,
-      var(--blue-new-19) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-positive: color-mix(
-      in oklab,
-      var(--green-new-20) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-18) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --overlay-backdrop-default: color-mix(
       in oklab,
       hsl(var(--opacity-black-72-hsl) / 0.7215686274509804) 100%,
@@ -90266,54 +90122,6 @@ html.disable-forced-colors * {
     --navigator-header-tint: color-mix(
       in oklab,
       var(--white) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-critical: color-mix(
-      in oklab,
-      var(--red-new-85) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-info: color-mix(
-      in oklab,
-      var(--blue-new-86) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-positive: color-mix(
-      in oklab,
-      var(--green-new-87) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-background-warning: color-mix(
-      in oklab,
-      var(--yellow-new-86) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-critical: color-mix(
-      in oklab,
-      var(--red-new-9) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-info: color-mix(
-      in oklab,
-      var(--blue-new-12) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-positive: color-mix(
-      in oklab,
-      var(--green-new-14) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --notice-text-warning: color-mix(
-      in oklab,
-      var(--yellow-new-12) 100%,
       var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -100953,4 +100761,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.4f8093868edd15f6.css.map*/
+/*# sourceMappingURL=12633.2209815a9fa2b5bd.css.map*/

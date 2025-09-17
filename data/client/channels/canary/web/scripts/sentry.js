@@ -6645,7 +6645,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8370f037d5b6ac53dc19464fd3b67542f94a9a1d",
+            release: "discord_web-3e192c52844a023140a09ee980dade542a38cdde",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6711,8 +6711,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "445894"),
-            o.YA("builtAt", String("1758140434147"));
+            o.YA("buildNumber", "445917"),
+            o.YA("builtAt", String("1758141303809"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -15849,10 +15849,10 @@
             r.I.BLURPLE_50,
           ],
           "badge-background-expressive": [
-            r.I.WHITE,
+            r.I.NEUTRAL_1,
             r.I.BLURPLE_50,
-            r.I.WHITE,
-            r.I.WHITE,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_1,
           ],
           "badge-brand-bg": [
             r.I.BRAND_260,
@@ -15866,10 +15866,15 @@
             r.I.BRAND_560,
             r.I.BRAND_560,
           ],
-          "badge-text-default": [r.I.WHITE, r.I.WHITE, r.I.WHITE, r.I.WHITE],
+          "badge-text-default": [
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_1,
+            r.I.NEUTRAL_1,
+          ],
           "badge-text-expressive": [
             r.I.NEUTRAL_71,
-            r.I.WHITE,
+            r.I.NEUTRAL_1,
             r.I.NEUTRAL_71,
             r.I.NEUTRAL_71,
           ],
@@ -48402,4 +48407,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.777659638b35f16e.js.map
+//# sourceMappingURL=sentry.dd7202b782734006.js.map
