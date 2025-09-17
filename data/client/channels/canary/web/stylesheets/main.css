@@ -79676,63 +79676,6 @@ html.disable-forced-colors * {
 .notAppAsidePanel_a3002d:has(~ [data-app-right-panel="true"]) .app_a3002d {
   position: relative;
 }
-.modal__7f8f5 {
-  border-radius: 5px;
-  box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  min-height: 0;
-  position: relative;
-}
-.theme-dark .modal__7f8f5 {
-  background-color: var(--primary-600);
-}
-.theme-light .modal__7f8f5 {
-  background: var(--white-500);
-}
-.sizeSmall__7f8f5 {
-  max-height: 660px;
-  min-height: 200px;
-  width: 440px;
-}
-.sizeMedium__7f8f5 {
-  max-height: 800px;
-  min-height: 400px;
-  width: 600px;
-}
-.sizeLarge__7f8f5 {
-  max-width: 960px;
-  min-height: 400px;
-  min-width: 800px;
-}
-@media (max-width: 485px) {
-  .sizeLarge__7f8f5,
-  .sizeMedium__7f8f5,
-  .sizeSmall__7f8f5 {
-    align-self: center;
-    max-height: 100vh;
-    min-width: auto;
-    width: 96%;
-  }
-  .fullscreenOnMobile__7f8f5 {
-    border-radius: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-  .fullscreenOnMobile__7f8f5 .footer__7f8f5,
-  .fullscreenOnMobile__7f8f5 .header__7f8f5 {
-    border-radius: 0;
-  }
-  .hideOnFullscreen__7f8f5 {
-    display: none;
-  }
-}
 :root {
   --application-subscription-end: hsl(
     var(--application-subscription-end-hsl) / 1
@@ -101108,4 +101051,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.7b05e6f6e726b79e.css.map*/
+/*# sourceMappingURL=12633.0921062bc5aada4a.css.map*/
