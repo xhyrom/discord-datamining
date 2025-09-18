@@ -67544,7 +67544,7 @@ div:hover
   fill: var(--background-surface-high);
 }
 .progressCircleRing_ce5f0d {
-  fill: #3b3b41;
+  fill: var(--background-mod-strong);
 }
 .glow_ce5f0d {
   background: transparent;
@@ -67831,7 +67831,7 @@ div:hover
   padding-right: 5px;
 }
 .referralBanner__3ce43 {
-  margin: 40px auto 0;
+  margin: 64px auto auto;
 }
 .churnEntrypointButtons__3ce43 {
   display: flex;
@@ -67854,7 +67854,7 @@ div:hover
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 80px 0 var(--space-128);
+  padding: 80px 0 var(--space-64);
   width: 100%;
 }
 .gradientBackground__555fb {
@@ -67868,6 +67868,9 @@ div:hover
   flex-direction: column;
   gap: var(--space-32);
   text-align: center;
+}
+.content__555fb > :last-child {
+  margin-top: var(--space-32);
 }
 .headerContainer__555fb {
   margin: 0 100px;
@@ -77044,7 +77047,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -101167,4 +101170,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.97e13bf7d524b6d7.css.map*/
+/*# sourceMappingURL=12633.4903d61106fbbed1.css.map*/
