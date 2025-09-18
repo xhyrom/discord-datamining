@@ -20,12 +20,12 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "Discord",
-    "answer-bot",
     "Terms",
-    "Sweepstakes",
-    "Birthday",
     "Giveaway",
-    "10th"
+    "10th",
+    "Discord",
+    "Birthday",
+    "Sweepstakes",
+    "answer-bot"
   ]
 }
