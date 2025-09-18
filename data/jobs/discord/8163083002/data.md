@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8163083002](https://discord.com/jobs/8163083002)
 
-**Updated At:** Fri, 12 Sep 2025 18:29:09 GMT
+**Updated At:** Thu, 18 Sep 2025 04:49:23 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Senior Brand Designer who gets excited about making Discord look amazing in the business world. You'll be the creative force behind our B2B marketing materials—turning our "hey, Discord is so much more than Servers" message into visuals that actually make game dev decision makers stop scrolling and pay attention.
@@ -22,7 +22,7 @@ What you'll be doing:
 Create materials that wow: Design executive presentations, case studies, one-pagers, and sales toolkits that help close deals (and even get a "this is beautifully designed" along the way)
 Conference takeovers: Create booth graphics and event materials that make our show presence feel like the main event
 Brand guardian (but make it business-y): Maintain Discord's authentic voice while adapting it for professional audiences—a rewarding creative challenge
-Play well with others: Team up with Product Marketing, Design, and basically everyone else to turn "wouldn't it be cool if..." into a reality that’s on strategy and drives business impact.
+Collaborate effectively: Team up with Product Marketing, Design, and basically everyone else to turn "wouldn't it be cool if..." into a reality that’s on strategy and drives business impact.
 Know when to ship it: Demonstrate excellent judgment in determining when deliverables are ready for launch versus when additional refinement will enhance impact
 
 What you should have:&amp;nbsp;
