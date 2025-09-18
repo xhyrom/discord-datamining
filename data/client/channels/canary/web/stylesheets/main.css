@@ -45558,15 +45558,14 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
 }
 .minimalState__6f029 .colorVariant__6f029 {
   height: 11px;
+  margin-left: -2px;
+  padding-right: 0;
   width: 11px;
 }
 .full-motion .minimalState__6f029 .colorVariant__6f029 {
   transition:
     width 0.2s ease-in-out,
     height 0.2s ease-in-out;
-}
-.minimalState__6f029 .colorVariant__6f029 + .colorVariant__6f029 {
-  margin-left: -2px;
 }
 .minimalState__6f029 .colorSwatch__6f029 {
   border: 1px solid var(--background-base-lowest);
@@ -101431,4 +101430,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9ad5cce72c8648f5.css.map*/
+/*# sourceMappingURL=12633.342fc441d642312f.css.map*/
