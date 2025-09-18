@@ -72473,12 +72473,16 @@ div.nagbar_d74ef8 {
   margin-top: 8px;
 }
 .headerContainer__9ed46 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: calc(
-    var(--custom-outbound-promotion-redemption-modal-art-height) / -2
-  );
-  padding: 0 0 8px;
+  gap: 8px;
+  margin: calc(
+      var(--custom-outbound-promotion-redemption-modal-art-height) / -1
+    )
+    auto auto;
+  padding: 0;
+  width: 90%;
 }
 .art__9ed46 {
   background-image: url(/assets/1ab7d1a0b0204a75.svg);
@@ -72486,17 +72490,21 @@ div.nagbar_d74ef8 {
   margin-bottom: 16px;
   width: 240px;
 }
+.errorBody__9ed46,
 .errorHeader__9ed46 {
   display: flex;
   flex-direction: column;
 }
 .errorBody__9ed46 {
-  padding-bottom: 32px;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 90%;
 }
 .errorArt__9ed46 {
   background-image: url(/assets/26eafe176b5b3454.svg);
   height: 99px;
-  margin-bottom: 16px;
+  margin: 0 auto 32px;
   width: 141px;
 }
 .card_fedacc {
@@ -77035,7 +77043,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -101158,4 +101166,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1fced4c8a0f2c602.css.map*/
+/*# sourceMappingURL=12633.8a0214f917c41455.css.map*/
