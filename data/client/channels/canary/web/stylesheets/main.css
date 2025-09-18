@@ -1665,6 +1665,11 @@
 .disabledPointerEvents__59d0d {
   pointer-events: none;
 }
+.focusTarget__54e4b {
+  height: 0;
+  pointer-events: none;
+  width: 0;
+}
 .anchor_edefb8 {
   color: var(--text-link);
   -webkit-text-decoration: var(--link-decoration);
@@ -3543,11 +3548,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .showOverflow__217b7 {
   overflow: visible;
-}
-.focusTarget__89030 {
-  height: 0;
-  pointer-events: none;
-  width: 0;
 }
 .scrollerBase__99f8c {
   box-sizing: border-box;
@@ -101431,4 +101431,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9fecc7d0609ebc23.css.map*/
+/*# sourceMappingURL=12633.04b2d05ea4814756.css.map*/
