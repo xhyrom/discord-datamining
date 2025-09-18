@@ -548,6 +548,14 @@
   </h4>
 </div>
 <h1 id="h_01K4XFF97FKRG7WBVK03MSH686">Frequently Asked Questions</h1>
+<p>
+  <strong
+    >Q: Are these profile bundle items temporary, or can I keep using them as
+    long as I want after I claim them?</strong
+  ><br />A: Once you claim them, the items are yours to keep. But you’ll need an
+  active Nitro subscription to use them on your profile. If your Nitro ends, you
+  won’t lose them, but you’ll need to resubscribe to use them again.
+</p>
 <p><strong>Q: Why don't I see this offer in my Discord app?</strong></p>
 <p>
   A: If you don't see any offer details on your <strong>Nitro</strong> tab on

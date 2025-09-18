@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "voice filters",
-    "voice filter",
-    "voice effect",
+    "answer-bot",
     "nitro",
-    "answer-bot"
+    "voice filters",
+    "voice effect",
+    "voice filter"
   ]
 }
