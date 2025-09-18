@@ -4240,13 +4240,14 @@
               "/billing/premium/manage?deep_link_type="
                 .concat(t)
                 .concat(null != e ? "&load_id=".concat(e) : ""),
-            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
+            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _, n) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
                 .concat(e, "&load_id=")
                 .concat(a)
                 .concat(null != r ? "&payment_method_type=".concat(r) : "")
-                .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
+                .concat(null != _ ? "&deep_link_type=".concat(_) : "")
+                .concat(null != n ? "&use_preset_offer=".concat(n) : ""),
             BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e, a) =>
               "/billing/guild-subscriptions/purchase?guild_id="
                 .concat(t)
@@ -6658,7 +6659,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-8481b0a5d0720475338c10018847f8cbbdfa3369",
+            release: "discord_web-e798fbe3d2804bd79a53c0e830eabe531fe2ee7b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6724,8 +6725,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "446748"),
-            o.YA("builtAt", String("1758233015119"));
+            o.YA("buildNumber", "446759"),
+            o.YA("builtAt", String("1758233597828"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48421,4 +48422,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f41885329c7d1d99.js.map
+//# sourceMappingURL=sentry.5f05ec66ae3da769.js.map
