@@ -2773,8 +2773,8 @@
             USER_PROFILE: (t) => "/users/".concat(t, "/profile"),
             USER_PROFILE_WIDGETS: "/users/@me/widgets",
             USER_PROFILE_SUGGESTED_GAMES: "/users/@me/widgets/suggested-games",
-            USER_PROFILE_APPLICATION_WIDGET_IDS:
-              "/users/@me/widgets/application-widget-ids",
+            USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS:
+              "/users/@me/widgets/application-widget-application-ids",
             USER_GUILD_PROFILE: (t, e) =>
               "/guilds/".concat(t, "/profile/").concat(e),
             USER_CHANNELS: "/users/@me/channels",
@@ -6580,7 +6580,9 @@
             STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
             SUBSCRIPTION_PLANS: (t) =>
               null == t ? null : ["subscription-plans", t],
-            APPLICATION_WIDGET_IDS: ["application-widget-ids"],
+            APPLICATION_WIDGET_APPLICATION_IDS: [
+              "application-widget-application-ids",
+            ],
             USER_APPLICATION_IDENTITIES: (t) => [
               "user-application-identities",
               t,
@@ -6659,7 +6661,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-d06912f42089e9b410e9fd1f6c0dd292d3b6c8f6",
+            release: "discord_web-c980d4c82240e22441a52fedabdcca4075fe1fae",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6725,8 +6727,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "446835"),
-            o.YA("builtAt", String("1758237400090"));
+            o.YA("buildNumber", "446853"),
+            o.YA("builtAt", String("1758238669138"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48422,4 +48424,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a2badeb9f2a39077.js.map
+//# sourceMappingURL=sentry.aa9e61cbebdeccb9.js.map

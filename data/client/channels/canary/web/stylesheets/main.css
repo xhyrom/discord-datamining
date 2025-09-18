@@ -54995,24 +54995,22 @@ h3.improved__1689b:after {
   width: 100%;
 }
 .giftCardPromotion_a45ed3 {
-  height: 180px;
+  height: 200px;
   margin-bottom: 25px;
   padding: 0 30px;
 }
 .giftImagePromotion_a45ed3 {
-  left: -50px;
+  left: -65px;
   position: absolute;
-  top: -15px;
-  width: 350px;
+  top: -21px;
+  width: 400px;
 }
 .giftImageAnimatedPromotion_a45ed3 {
   padding-bottom: 20px;
 }
 .giftInfoPromotion_a45ed3 {
-  align-self: flex-start;
   margin-left: auto;
-  max-width: 60%;
-  padding-top: 30px;
+  max-width: 59%;
 }
 .giftInfoTitlePromotion_a45ed3 {
   margin-bottom: 8px;
@@ -101430,4 +101428,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.342fc441d642312f.css.map*/
+/*# sourceMappingURL=12633.8f692bee0a92e70c.css.map*/
