@@ -67308,13 +67308,13 @@ div:hover
   border-radius: 20px;
   flex-direction: row;
   gap: 40px;
+  padding: 32px 24px;
 }
 .bannerContainer_ce5f0d,
 .container_ce5f0d {
   align-items: center;
   display: flex;
   max-width: 800px;
-  padding: 24px;
 }
 .bannerContainer_ce5f0d {
   justify-content: center;
@@ -67322,6 +67322,7 @@ div:hover
 .bannerContent_ce5f0d {
   flex: 1 0 0;
   flex-direction: column;
+  max-width: 476px;
 }
 .bannerContent_ce5f0d,
 .bannerContentText_ce5f0d {
@@ -67366,10 +67367,10 @@ div:hover
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  height: 144px;
+  height: 160px;
   justify-content: center;
   padding: 8px;
-  width: 144px;
+  width: 160px;
 }
 .progressCircleImage_ce5f0d {
   max-width: 150px;
@@ -101166,4 +101167,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8a0214f917c41455.css.map*/
+/*# sourceMappingURL=12633.1abebf78bfbf62f5.css.map*/
