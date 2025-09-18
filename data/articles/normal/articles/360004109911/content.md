@@ -10,12 +10,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34550826036247"
-    alt="image.png"
+    src="https://support.discord.com/hc/article_attachments/35034698685591"
   />
 </p>
-<h4 id="h_01K39MBWFJ7BEZPFQEP8JDZGAT" class="wysiwyg-text-align-center">
-  Data Privacy Control Settings in Data &amp; Privacy on Desktop
+<h4 id="h_01K5EQHA9R003X63K94CWE1K55" class="wysiwyg-text-align-center">
+  Data Privacy Control Settings in Data &amp; Privacy on the desktop app
 </h4>
 <p>Learn more about each specific setting here: </p>
 <ul>

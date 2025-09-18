@@ -27,10 +27,6 @@
   providers—including how you engage with games and other content or services
   outside of Discord—you can also opt out of this use of your data.
 </p>
-<div class="exp-box">
-  <strong>Important</strong>: Data &amp; Privacy controls will roll out
-  gradually to users over the coming weeks.
-</div>
 <h1 id="h_01K39NVEFJEHMV91CTJV4BA49G">Desktop/Browser </h1>
 <p>
   1. On the Discord desktop app or browser client, go to
@@ -58,9 +54,9 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34381644004759"
-    width="839"
-    height="608"
+    src="https://support.discord.com/hc/article_attachments/35034642104599"
+    width="802"
+    height="497"
   />
 </p>
 <h4 id="h_01K39NWSZR8W47G1T1PD4342S1" class="wysiwyg-text-align-center">
@@ -84,6 +80,18 @@
   >options to your preference. Learn more about these options as described
   <a href="#h_01K39NVEFJEHMV91CTJV4BA49G">above</a>.
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35034657181335"
+    width="297"
+    height="616"
+  />
+</p>
+<h4 id="h_01K5EQFH9JCE05ESYVBYYKKYKE" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Data &amp; Privacy controls in Data &amp; Privacy on mobile</span
+  >
+</h4>
 <div class="info-box">
   <strong>Important Notes:</strong>
   <ul>

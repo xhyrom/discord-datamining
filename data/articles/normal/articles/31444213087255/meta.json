@@ -20,9 +20,9 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "server boost perks",
     "enhanced role styles",
-    "server roles"
+    "answer-bot",
+    "server roles",
+    "server boost perks"
   ]
 }
