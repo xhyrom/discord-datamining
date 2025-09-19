@@ -2773,8 +2773,8 @@
             USER_PROFILE: (t) => "/users/".concat(t, "/profile"),
             USER_PROFILE_WIDGETS: "/users/@me/widgets",
             USER_PROFILE_SUGGESTED_GAMES: "/users/@me/widgets/suggested-games",
-            USER_PROFILE_APPLICATION_WIDGET_IDS:
-              "/users/@me/widgets/application-widget-ids",
+            USER_PROFILE_APPLICATION_WIDGET_APPLICATION_IDS:
+              "/users/@me/widgets/application-widget-application-ids",
             USER_GUILD_PROFILE: (t, e) =>
               "/guilds/".concat(t, "/profile/").concat(e),
             USER_CHANNELS: "/users/@me/channels",
@@ -4240,13 +4240,14 @@
               "/billing/premium/manage?deep_link_type="
                 .concat(t)
                 .concat(null != e ? "&load_id=".concat(e) : ""),
-            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _) =>
+            BILLING_STANDALONE_CHECKOUT_PAGE: (t, e, a, r, _, n) =>
               "/billing/premium/subscribe?plan_id="
                 .concat(t, "&gift=")
                 .concat(e, "&load_id=")
                 .concat(a)
                 .concat(null != r ? "&payment_method_type=".concat(r) : "")
-                .concat(null != _ ? "&deep_link_type=".concat(_) : ""),
+                .concat(null != _ ? "&deep_link_type=".concat(_) : "")
+                .concat(null != n ? "&use_preset_offer=".concat(n) : ""),
             BILLING_STANDALONE_GUILD_BOOST_CHECKOUT_PAGE: (t, e, a) =>
               "/billing/guild-subscriptions/purchase?guild_id="
                 .concat(t)
@@ -4560,8 +4561,6 @@
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
               "Profile Customization Try It Out",
-            HOTSPOT_OPTIONS: "Hotspot Options",
-            DISMISSIBLE_CONTENT_OPTIONS: "Dismissible Content Options",
             PAYMENT_FLOW_MODAL_TEST_PAGE: "Payment Flow Modals",
             REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
             VIRTUAL_CURRENCY_CONFIGURATION_PAGE:
@@ -4997,6 +4996,8 @@
           (r.PAYMENT_SOURCE_CREATION_FAILED = "payment_source_creation_failed"),
           (r.PREMIUM_UPGRADE_STARTED = "premium_upgrade_started"),
           (r.PREMIUM_RESUBSCRIBE_COMPLETED = "premium_resubscribe_completed"),
+          (r.APPLE_PAYMENT_LINK_DISCOUNT_OFFER_PROMPT_VIEWED =
+            "apple_payment_link_discount_offer_prompt_viewed"),
           (r.CHANNEL_MEMBER_KICKED = "channel_member_kicked"),
           (r.CHANNEL_OPENED = "channel_opened"),
           (r.CHANNEL_OPENED_CLICKSTREAM = "channel_opened_clickstream"),
@@ -6579,7 +6580,9 @@
             STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
             SUBSCRIPTION_PLANS: (t) =>
               null == t ? null : ["subscription-plans", t],
-            APPLICATION_WIDGET_IDS: ["application-widget-ids"],
+            APPLICATION_WIDGET_APPLICATION_IDS: [
+              "application-widget-application-ids",
+            ],
             USER_APPLICATION_IDENTITIES: (t) => [
               "user-application-identities",
               t,
@@ -6659,7 +6662,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-18-ab405122c49a33431abe1ee7ce1a8ed547c27383-discord_web",
+              "2025-09-19-ad9086bf81dd4176275fc50996f02b8dc023193e-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6725,8 +6728,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "446694"),
-            o.YA("builtAt", String("1758230744873"));
+            o.YA("buildNumber", "446940"),
+            o.YA("builtAt", String("1758266823872"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11848,6 +11851,7 @@
             SEND_VOICE_MESSAGES: n.r0(46),
             SEND_POLLS: n.r0(49),
             PIN_MESSAGES: n.r0(51),
+            BYPASS_SLOWMODE: n.r0(52),
             CONNECT: n.r0(20),
             SPEAK: n.r0(21),
             MUTE_MEMBERS: n.r0(22),
@@ -18265,7 +18269,7 @@
           ],
           "radio-background-default": [
             r.I.OPACITY_BLACK_8,
-            r.I.OPACITY_WHITE_4,
+            r.I.OPACITY_BLACK_4,
             r.I.OPACITY_BLACK_8,
             r.I.OPACITY_BLACK_8,
           ],
@@ -48421,4 +48425,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.4d822c2a0a74e3e9.js.map
+//# sourceMappingURL=sentry.df1c1bfb6515e569.js.map
