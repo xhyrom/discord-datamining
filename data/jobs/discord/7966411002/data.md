@@ -10,12 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7966411002](https://discord.com/jobs/7966411002)
 
-**Updated At:** Wed, 17 Sep 2025 20:44:24 GMT
+**Updated At:** Fri, 19 Sep 2025 16:11:48 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Power real-time conversations for 200+ million users worldwide. The mission of Discord's AV Client team is to give our users an outstanding voice, video, and game-streaming experience across Windows, Mac, Linux, Android, and iOS. That’s a lot of platforms! We write native code using platform-specific APIs to provide the optimal experience wherever people use Discord.&amp;nbsp;
 Ever wonder what happens when your friend's voice cuts out mid-clutch? Or why that one teammate always sounds like they're underwater? Plot twist: you could be the one fixing that! As a Senior Software Engineer on our AV Client team, your code will be the difference between 'Can you hear me?' and legendary gaming moments that friends talk about for years.&amp;nbsp;
-We're looking for engineers who love diving deep into technical rabbit holes and emerging with elegant solutions to seemingly impossible problems. If you're excited about C++/Rust and building systems that work flawlessly for hundreds of millions of consumers while pushing the boundaries of what's technically feasible, this is your opportunity to work on truly cutting-edge media technology.
 What you'll be doing
 
 Build the core libraries that power conversations for millions of users (Typescript, Rust, and C++)
