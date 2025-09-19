@@ -4581,8 +4581,6 @@
             QUESTS: "Quests",
             QUEST_PREVIEW_TOOL: "Quest Preview Tool",
             QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
-            QUEST_MINOR_REWARD_CAPPING_CONFIG:
-              "Quest Minor Reward Capping Config",
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
           }),
@@ -6660,7 +6658,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ba76468271b29596dab51971d6a80d1a97441019",
+            release: "discord_web-9c50184e7a1820fde379d80dda3ffef861374b8b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6726,8 +6724,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "447212"),
-            o.YA("builtAt", String("1758314881679"));
+            o.YA("buildNumber", "447220"),
+            o.YA("builtAt", String("1758315316573"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48423,4 +48421,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.84e5fa09482a6b78.js.map
+//# sourceMappingURL=sentry.74ca44a2cb21c716.js.map

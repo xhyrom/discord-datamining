@@ -50710,11 +50710,6 @@ h3.improved__1689b:after {
   flex-direction: row;
   gap: 8px;
 }
-.container__28435 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 .partnerBranding__83420 {
   align-items: center;
   display: flex;
@@ -77306,7 +77301,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -101429,4 +101424,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.06bf970518aa9a68.css.map*/
+/*# sourceMappingURL=12633.d18ed43c828c0d4e.css.map*/
