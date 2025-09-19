@@ -49926,9 +49926,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76143,32 +76143,6 @@ html .invoiceCancelRow__968a4 {
 .pre_bc4a3e {
   white-space: pre;
 }
-.root__47ed7 {
-  margin-top: 64px;
-  width: 770px;
-}
-.tree__47ed7 {
-  margin-top: var(--space-16);
-}
-.settingNode__47ed7,
-.settingNodeChildren__47ed7,
-.tree__47ed7 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-}
-.settingNodeChildren__47ed7 {
-  border-left: 2px solid var(--primary-500);
-}
-.headerBar__47ed7 {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-}
-.headerCaret__47ed7 {
-  color: var(--interactive-normal);
-  margin-left: var(--space-4);
-}
 .heading__6f81c {
   margin-bottom: 20px;
 }
@@ -101455,4 +101429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ebaecc206913b979.css.map*/
+/*# sourceMappingURL=12633.08c55b6326047889.css.map*/
