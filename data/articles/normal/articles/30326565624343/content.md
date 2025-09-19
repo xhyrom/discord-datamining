@@ -6,11 +6,15 @@
   need to verify again. 
 </p>
 <div class="exp-box">
+  <strong>Important: </strong>Age assurance is currently part of an ongoing
+  experiment across various regions.
+</div>
+<div class="exp-box">
   <strong>Important: UK Online Safety Act Implementation<br /></strong>The age
-  verification features described in this article are currently available only
-  to users in the United Kingdom and apply to all new and existing UK
-  accounts.<br />To learn more about changes for UK users due to the UK Online
-  Safety Act requirements, please visit our detailed
+  verification features described in this article are fully available only to
+  users in the United Kingdom and apply to all new and existing UK accounts.<br />To
+  learn more about changes for UK users due to the UK Online Safety Act
+  requirements, please visit our detailed
   <a
     href="https://support.discord.com/hc/en-us/articles/33362401287959/"
     target="_blank"
@@ -86,10 +90,6 @@
   </ul>
 </div>
 <h1 id="h_01K0FTZNQP54390T6Z7FPCSPF6">How to Complete Age Verification</h1>
-<div class="exp-box">
-  <strong>Important</strong>: Age verification is currently part of an ongoing
-  experiment across various regions.
-</div>
 <div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Discord and k-ID do not permanently store personal identity documents or

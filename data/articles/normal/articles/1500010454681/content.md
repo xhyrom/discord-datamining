@@ -281,7 +281,14 @@
 <p>
   If you’re on a Windows device, you can Sync contrast settings on your Discord
   client if you have Windows High Contrast Mode enabled on your device. Check
-  out this article to find steps on how to enable High Contrast mode on Windows.
+  out
+  <a
+    href="https://support.microsoft.com/en-us/windows/turn-high-contrast-mode-on-or-off-in-windows-909e9d89-a0f9-a3a9-b993-7a6dcee85025#ID0EBD=Windows_11"
+    target="_blank"
+    rel="noopener noreferrer"
+    >this article</a
+  >
+  to find steps on how to enable High Contrast mode on Windows.
 </p>
 <div class="tip-box">
   With <strong>Sync contrast settings</strong> enabled on your Windows device,
@@ -317,7 +324,7 @@
   <strong>High Contrast Mode </strong>enabled from your device’s settings.
 </p>
 <p id="docs-internal-guid-1ed19053-7fff-bc91-2798-31d94cc0f77c">
-  <strong>Have any feedback about contrast settings? Let us know in our </strong
+  <strong>Have any feedback about contrast settings? Let us know </strong
   ><strong
     ><a
       href="https://s.alchemer.com/s3/a177adc8bdb0"
