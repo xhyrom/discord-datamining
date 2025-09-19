@@ -7,9 +7,9 @@
   ><span style="font-weight: 400"
     >lic spaces with many active people which can make the community an
     attractive target for bad actors. Thus, Community servers come equipped with
-    a variety of safety and content moderation tools to protect members from
-    undesirable messages containing threats like phishing links or
-    malware. </span
+    a variety of safety and content moderation tools to help protect members
+    from undesirable messages containing threats like phishing links or
+    malware.</span
   >
 </p>
 <p>
@@ -20,7 +20,7 @@
     deliver.</span
   >
 </p>
-<h1>Possible Reasons for This Error</h1>
+<h1 id="h_01K5HFZMMKA1TAPFRVBSYE8QMX">Possible Reasons for This Error</h1>
 <p>
   <span style="font-weight: 400"
     >Below are possible reasons why you received a “Your message could not be
@@ -116,7 +116,9 @@
     links to malware or phishing sites.</span
   >
 </p>
-<h2>How does Discord detect suspicious links?</h2>
+<h2 id="h_01K5HFZMMKYGH3K4W2YGWC4QTJ">
+  How does Discord detect suspicious links?
+</h2>
 <p>
   <span style="font-weight: 400"
     >We work to identify links that might mislead or redirect users such as by

@@ -1,5 +1,5 @@
 <p>
-  Looking for safe ways to buy Discord Nitro and other premium features? Learn
+  Looking for safer ways to buy Discord Nitro and other premium features? Learn
   how to protect your account and payment information by purchasing through
   official Discord channels only.
 </p>
@@ -11,7 +11,7 @@
 <p>
   Purchases from unauthorized sellers can potentially lead to revoked purchases
   or compromised personal and payment information. This article will help you
-  understand the official ways to purchase Discord products and stay safe while
+  understand the official ways to purchase Discord products and stay safer while
   enjoying all that Discord has to offer.
 </p>
 <div class="toc-box">
@@ -32,7 +32,7 @@
       <ul>
         <li>
           <a href="#h_01JFB2N7C9VDM28WE6AQY7AB76"
-            ><strong>How to Stay Informed to Stay Safe</strong></a
+            ><strong>How to Stay Informed to Stay Safer</strong></a
           >
         </li>
       </ul>
@@ -48,8 +48,8 @@
   Official Ways to Buy or Receive Discord Products
 </h1>
 <p>
-  The secure way to purchase Nitro or other Discord products is directly through
-  Discord or our
+  The more secure way to purchase Nitro or other Discord products is directly
+  through Discord or our
   <a
     href="https://support.discord.com/hc/en-us/articles/360020877112-Nitro-Gifting#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
     target="_blank"
@@ -70,7 +70,7 @@
   <li>
     <strong>Gift Inventory</strong>: Check and manage your purchased or received
     Nitro gifts within the app. Gifts sent through Discord can only be redeemed
-    on the platform. Learn how to securely claim a Nitro gift in our<a
+    on the platform. Learn how to more securely claim a Nitro gift in our<a
       href="https://support.discord.com/hc/en-us/articles/1500001829622-Claiming-a-Nitro-Gift-FAQ"
       target="_blank"
       rel="noopener noreferrer"
@@ -93,8 +93,8 @@
   <li>
     <strong>Share Nitro Program</strong>: As a subscription perk for Nitro
     subscribers, you can share three 2-week trial passes with friends who don't
-    already have Nitro. This official program is a secure way to spread the fun.
-    For more details, check out our<a
+    already have Nitro. This official program is a more secure way to spread the
+    fun. For more details, check out our<a
       href="https://support.discord.com/hc/en-us/articles/22567595858327-Share-Nitro"
       target="_blank"
       rel="noopener noreferrer"
@@ -157,7 +157,7 @@
   Please note that Discord cannot mediate financial disputes or issue refunds
   for purchases made through unauthorized third-party sellers.
 </div>
-<h2 id="h_01JFB2N7C9VDM28WE6AQY7AB76">How to Stay Informed to Stay Safe</h2>
+<h2 id="h_01JFB2N7C9VDM28WE6AQY7AB76">How to Stay Informed to Stay Safer</h2>
 <p>
   Scammers are constantly looking for ways to exploit users. Always double-check
   that your purchases and gifts come from the official Discord sources described
@@ -245,7 +245,7 @@
 </p>
 <p>
   <strong
-    >Q: What are safe messaging practices to avoid unsolicited scams?</strong
+    >Q: What are safer messaging practices to avoid unsolicited scams?</strong
   >
 </p>
 <p>
@@ -257,7 +257,7 @@
     deals or rewards.
   </li>
   <li>
-    Enable <strong>Safe Direct Messaging</strong> under
+    Enable <strong>Safer Direct Messaging</strong> under
     <strong>User Settings &gt; Privacy &amp; Safety</strong> to automatically
     scan DMs from non-friends for harmful content.
   </li>
