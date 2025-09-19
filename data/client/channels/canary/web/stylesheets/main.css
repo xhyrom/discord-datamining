@@ -41231,7 +41231,7 @@ img.thumbnail__0f2e8 {
   justify-content: center;
 }
 .avatarIconContainer__7970d {
-  background-color: var(--profile-gradient-primary-color);
+  background-color: var(--background-secondary-alt);
   border-radius: var(--radius-round);
   bottom: -8px;
   overflow: hidden;
@@ -101429,4 +101429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.08c55b6326047889.css.map*/
+/*# sourceMappingURL=12633.06bf970518aa9a68.css.map*/
