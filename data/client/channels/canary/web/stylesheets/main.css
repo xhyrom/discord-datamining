@@ -84068,7 +84068,7 @@ html.disable-forced-colors * {
   --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
   --radio-background-active: var(--blurple-50);
   --radio-background-default: hsl(
-    var(--opacity-white-4-hsl) / 0.0392156862745098
+    var(--opacity-black-4-hsl) / 0.0392156862745098
   );
   --radio-background-default-selected: var(--blurple-50);
   --radio-background-hover: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
@@ -85408,7 +85408,7 @@ html.disable-forced-colors * {
     );
     --radio-background-default: color-mix(
       in oklab,
-      hsl(var(--opacity-white-4-hsl) / 0.0392156862745098) 100%,
+      hsl(var(--opacity-black-4-hsl) / 0.0392156862745098) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098)
         var(--custom-theme-base-color-amount, 0%)
     );
@@ -101428,4 +101428,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.8f692bee0a92e70c.css.map*/
+/*# sourceMappingURL=12633.27bbabe0bd4bf5b9.css.map*/
