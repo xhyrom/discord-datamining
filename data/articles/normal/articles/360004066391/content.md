@@ -156,21 +156,13 @@
       </td>
       <td style="width: 348px">
         <ul>
+          <li style="font-weight: 400" aria-level="1">Account is deleted</li>
+          <li style="font-weight: 400" aria-level="1">Permanent</li>
           <li style="font-weight: 400" aria-level="1">
-            <span style="font-weight: 400">Account is permanently deleted</span>
+            Will not receive @notifications and friend requests
           </li>
           <li style="font-weight: 400" aria-level="1">
-            <span style="font-weight: 400">Irreversible </span>
-          </li>
-          <li style="font-weight: 400" aria-level="1">
-            <span style="font-weight: 400"
-              >Will not receive @notifications and friend requests</span
-            >
-          </li>
-          <li style="font-weight: 400" aria-level="1">
-            <span style="font-weight: 400"
-              >Once deleted, everything will be lost and anonymized</span
-            >
+            Once deleted, your account cannot be restored.
           </li>
         </ul>
       </td>
@@ -192,7 +184,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8558665185175"
+      src="https://support.discord.com/hc/article_attachments/35064558246679"
       alt="desktopuseravatar.png"
       width="678"
       height="680"
@@ -212,7 +204,7 @@
   <span style="font-weight: 400"
     ><strong
       ><img
-        src="https://support.discord.com/hc/article_attachments/8558725359383"
+        src="https://support.discord.com/hc/article_attachments/35064558252567"
         alt="desktop-dis1.png"
         width="690"
         height="423" /></strong
@@ -248,19 +240,19 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8558749461527"
+      src="https://support.discord.com/hc/article_attachments/35064550294551"
       alt="iosuseravatar.png"
       width="216"
       height="467" />
      
     <img
-      src="https://support.discord.com/hc/article_attachments/8558751780247"
+      src="https://support.discord.com/hc/article_attachments/35064550298903"
       alt="ios-dis1.png"
       width="228"
       height="471" />
      
     <img
-      src="https://support.discord.com/hc/article_attachments/8558766472727"
+      src="https://support.discord.com/hc/article_attachments/35064550300567"
       alt="ios-dis2.png"
       width="218"
       height="472"
@@ -285,19 +277,19 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8586241945623"
+      src="https://support.discord.com/hc/article_attachments/35064558263063"
       alt="androiduseravatar.png"
       width="221"
       height="393" />
      
     <img
-      src="https://support.discord.com/hc/article_attachments/8586277853975"
+      src="https://support.discord.com/hc/article_attachments/35064558264727"
       alt="android.png"
       width="220"
       height="392" />
      
     <img
-      src="https://support.discord.com/hc/article_attachments/8586279266071"
+      src="https://support.discord.com/hc/article_attachments/35064550307863"
       alt="Android-dis.png"
       width="221"
       height="393"
@@ -327,7 +319,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8586342995735"
+      src="https://support.discord.com/hc/article_attachments/35064550313239"
       alt="Screen_Shot_2022-08-01_at_9.40.27_AM.png"
       width="362"
       height="151"
@@ -339,7 +331,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="font-weight: 400"
     ><img
-      src="https://support.discord.com/hc/article_attachments/8586375183127"
+      src="https://support.discord.com/hc/article_attachments/35064558269079"
       alt="IMG_1372.jpeg"
       width="278"
       height="578"

@@ -2,7 +2,7 @@
   Do you own a server with a lot of members to manage and verify? If so, Discord
   provides multiple security options called
   <strong>Verification Levels</strong>. By setting the Verification Levels
-  within a server, you and your members can stay protected and safe.
+  within a server, you can help your members stay safer and more protected.
 </p>
 <div class="toc-box">
   <strong

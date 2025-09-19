@@ -698,11 +698,9 @@
   <span style="font-weight: 400">Server Video Safety Best Practices</span>
 </h1>
 <p>
-  <span style="font-weight: 400"
-    >Discord values every user’s privacy and safety, and we want to make sure
-    that everyone is aware of how they can keep their server space safe and
-    secure! </span
-  >
+  Discord values every user’s privacy and safety, and we want to make sure that
+  everyone is aware of how they can help make their server space safer and more
+  secure!
 </p>
 <ul>
   <li>
