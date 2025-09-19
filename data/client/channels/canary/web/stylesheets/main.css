@@ -43179,27 +43179,59 @@ div.mobilePushContainer__3d3b0 {
 .menuOverlay_ce8328 {
   padding: 8px;
 }
-.menuDivider_ce8328 {
+.menuItem_ce8328 {
+  display: flex;
+  flex-direction: column;
+}
+.menuItem_ce8328:after {
+  background-color: var(--user-profile-border);
+  content: "";
+  display: block;
+  height: 1px;
   margin: 8px 4px;
 }
+.menuItem_ce8328:last-child:after {
+  display: none;
+}
+.menuItemLabelText_ce8328 {
+  line-height: 16px;
+}
 .menuItemInner_ce8328 {
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--interactive-normal);
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
   padding: 8px;
   width: 100%;
 }
-.menuItemInner_ce8328,
+.menuItemInner_ce8328:hover {
+  background-color: var(--user-profile-overlay-background-hover);
+  color: var(--interactive-hover);
+}
+.menuItemInner_ce8328:active {
+  color: var(--interactive-active);
+}
+.menuItemContent_ce8328 {
+  flex-grow: 1;
+  gap: 8px;
+}
+.menuItemContent_ce8328,
 .menuItemLabel_ce8328 {
   align-items: center;
-  gap: 8px;
+  display: flex;
   justify-content: space-between;
 }
 .menuItemLabel_ce8328 {
-  display: flex;
   flex: 1;
+  gap: 4px;
   text-align: start;
 }
 .menuItemIcon_ce8328 {
   align-items: center;
-  align-self: flex-start;
   display: flex;
   height: 16px;
   justify-content: center;
@@ -43210,15 +43242,10 @@ div.mobilePushContainer__3d3b0 {
   display: flex;
   gap: 8px;
 }
-.menuItemColor_ce8328 {
-  color: var(--interactive-normal);
-}
-.menuItemColor_ce8328:hover {
-  background-color: var(--user-profile-overlay-background-hover);
-  color: var(--interactive-hover);
-}
-.menuItemColor_ce8328:active {
-  color: var(--interactive-active);
+.submenuIconWrapper_ce8328 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
 }
 .submenuPaddingContainer_ce8328 {
   padding: 0 12px;
@@ -101428,4 +101455,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.27bbabe0bd4bf5b9.css.map*/
+/*# sourceMappingURL=12633.7a01eb910bf67600.css.map*/
