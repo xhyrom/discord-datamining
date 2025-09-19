@@ -369,6 +369,8 @@
 </p>
 <p><strong>Q: Do server member applications work on mobile devices?</strong></p>
 <p>
-  A: While the feature can only be enabled through the desktop app, users can
-  submit and withdraw applications using either desktop or mobile devices.
+  A: Yes, server admins can view, approve, and deny applications on mobile,
+  while users can submit and manage their own applications from mobile as well.
+  However, enabling this feature is only possible for admins through the desktop
+  app.
 </p>
