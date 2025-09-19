@@ -23,7 +23,6 @@
         <li><a href="#h_01JV2QTH9QV7AB3AF0E9YF07J6">Messages</a></li>
         <li><a href="#h_01JV2QTH9QRS97WY51DRZTA128">Servers</a></li>
         <li><a href="#h_01JV2QTH9QJ0M3MHTTXSRH0TRK">Ads</a></li>
-        <li><a href="#h_01JV2QTH9QMW10CDN1F3V6GBQ1">Programs</a></li>
         <li><a href="#h_01K2Z1F0GK1Z3C7YF0MMS8ND4B">Support Tickets</a></li>
       </ul>
     </li>
@@ -382,31 +381,6 @@
 <p>
   Note that some information related to ads, such as when you saw a Quest, will
   be captured in the Activity folder.
-</p>
-<h2 id="h_01JV2QTH9QMW10CDN1F3V6GBQ1">Programs</h2>
-<p>
-  If you previously applied to the Partner Program, HypeSquad Program, or
-  Verified Server Program, any information you provided in your applications
-  will be in the JSON folder. If you never applied for any of these programs,
-  then your Programs folder will be empty.
-</p>
-<p>
-  An example for a HypeSquad application will contain the information you
-  provided as follows:
-</p>
-<ul>
-  <li>HypeSquad referrer and referral code.</li>
-  <li>
-    HypeSquad Event information. (Events you attend, duration of events,
-    frequency you attend events.)
-  </li>
-  <li>Country you are located in.</li>
-  <li>The Server you are applied under</li>
-  <li>Your website.</li>
-</ul>
-<p>
-  The information included will vary based on what you provide, and which
-  programs you previously applied for.
 </p>
 <h2 id="h_01K2Z1F0GK1Z3C7YF0MMS8ND4B">Support Tickets</h2>
 <p>
