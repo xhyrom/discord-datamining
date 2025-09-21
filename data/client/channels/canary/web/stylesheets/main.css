@@ -38951,11 +38951,13 @@ html:not(.chat-input) .inputInner_b1f01d {
 .actions__39ec2 .primaryButton__39ec2 {
   flex: 1;
 }
-.actions__39ec2:has(> .customButton__39ec2) {
-  align-content: center;
+.actions__39ec2 .customButtons__39ec2 {
+  align-items: center;
+  display: flex;
   flex-wrap: wrap;
+  gap: 8px;
 }
-.actions__39ec2:has(> .customButton__39ec2) .customButton__39ec2 {
+.actions__39ec2 .customButtons__39ec2 > button {
   flex: 1 1 auto;
   min-width: calc(50% - 8px);
 }
@@ -101424,4 +101426,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d18ed43c828c0d4e.css.map*/
+/*# sourceMappingURL=12633.3ecb98c2481dd3f2.css.map*/
