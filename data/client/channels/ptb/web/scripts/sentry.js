@@ -4581,11 +4581,8 @@
             QUESTS: "Quests",
             QUEST_PREVIEW_TOOL: "Quest Preview Tool",
             QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
-            QUEST_MINOR_REWARD_CAPPING_CONFIG:
-              "Quest Minor Reward Capping Config",
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
-            WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool",
           }),
           Object.freeze({
             OAUTH2_REDIRECT_FRAGMENT: "/_discord?",
@@ -4875,6 +4872,7 @@
           (r.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED =
             "embedded_application_invite_embed_viewed"),
           (r.NITRO_TAB_VISITED = "nitro_tab_visited"),
+          (r.NITRO_TAB_BADGE_SHOWN = "nitro_tab_badge_shown"),
           (r.BROWSER_HANDOFF_SUCCEEDED = "browser_handoff_succeeded"),
           (r.SHOW_TUTORIAL = "show_tutorial"),
           (r.CLOSE_TUTORIAL = "close_tutorial"),
@@ -5130,6 +5128,10 @@
             "premium_marketing_perks_see_all_clicked"),
           (r.PREMIUM_MARKETING_CAMPAIGN_CLAIM_MODAL_OPEN_ATTEMPTED =
             "premium_marketing_campaign_claim_modal_open_attempted"),
+          (r.PREMIUM_MARKETING_CAMPAIGN_ENTITLEMENT_CREATED_INGESTED =
+            "premium_marketing_campaign_entitlement_created_ingested"),
+          (r.PREMIUM_MARKETING_CAMPAIGN_REDEMPTION_CARD_CLICKED =
+            "premium_marketing_campaign_redemption_card_clicked"),
           (r.STORE_DIRECTORY_VIEWED = "store_directory_viewed"),
           (r.STORE_DIRECTORY_BROWSE_VIEWED = "store_directory_browse_viewed"),
           (r.STORE_DIRECTORY_FILTER_UPDATED = "store_directory_filter_updated"),
@@ -6662,7 +6664,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-19-ad9086bf81dd4176275fc50996f02b8dc023193e-discord_web",
+              "2025-09-22-c4e4ab6326c06460c50fe9fc19dae13756917de2-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6728,8 +6730,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "446940"),
-            o.YA("builtAt", String("1758266823872"));
+            o.YA("buildNumber", "447470"),
+            o.YA("builtAt", String("1758525529799"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48425,4 +48427,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.df1c1bfb6515e569.js.map
+//# sourceMappingURL=sentry.6b74d87f05637741.js.map
