@@ -74179,6 +74179,9 @@ div.clanTagBadgeContainer__07f91 {
 .iconGroup__07f91 {
   margin: 0;
 }
+.iconGroup__07f91:empty {
+  display: none;
+}
 .flipped__07f91 .icons__07f91 {
   margin-left: 8px;
   margin-right: 0;
@@ -77187,7 +77190,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -101400,4 +101403,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.76de21b3e24510f0.css.map*/
+/*# sourceMappingURL=12633.1e3086946e508cf1.css.map*/
