@@ -76413,7 +76413,7 @@ html .invoiceCancelRow__968a4 {
   height: 100%;
 }
 .previewToggle_f22a74 {
-  margin-top: 24px;
+  margin-bottom: 0;
 }
 .filterLoadingIndicator_f22a74 {
   background-color: var(--opacity-black-68);
@@ -101403,4 +101403,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.1e3086946e508cf1.css.map*/
+/*# sourceMappingURL=12633.1ebd8cc4e7da75c3.css.map*/
