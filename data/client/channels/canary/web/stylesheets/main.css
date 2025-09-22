@@ -7817,18 +7817,16 @@ svg.radioIcon_c1e9c4 {
 }
 .group__5a85a {
   flex-direction: column;
-  gap: var(--space-24);
-  padding: var(--space-40);
 }
 .group__5a85a,
 .item__5a85a {
   box-sizing: border-box;
   display: flex;
+  gap: var(--space-12);
 }
 .item__5a85a {
   align-items: center;
   border-radius: var(--radius-sm);
-  gap: var(--space-12);
   padding: var(--space-8);
 }
 .radioIndicator__5a85a {
@@ -7838,54 +7836,48 @@ svg.radioIcon_c1e9c4 {
   display: block;
 }
 .outerRadioFill__5a85a {
-  fill: var(--checkbox-background-default);
+  fill: var(--radio-background-default);
 }
 .outerRadioBorderStroke__5a85a {
-  stroke: var(--checkbox-border-default);
+  stroke: var(--radio-border-default);
   opacity: 1;
 }
 .innerDotRadio__5a85a {
-  fill: var(--white);
+  fill: var(--radio-thumb-background-active);
   opacity: 0;
 }
 .radioItemIcon__5a85a {
   color: var(--interactive-active);
 }
 .item__5a85a[data-selected] .outerRadioFill__5a85a {
-  fill: var(--checkbox-background-checked);
+  fill: var(--radio-background-default-selected);
 }
 .item__5a85a[data-selected] .outerRadioBorderStroke__5a85a {
-  stroke: var(--checkbox-border-default);
+  stroke: var(--radio-border-default-selected);
   opacity: 0.2;
 }
 .item__5a85a[data-selected] .innerDotRadio__5a85a {
   opacity: 1;
 }
+.item__5a85a[data-disabled][data-selected] .innerDotRadio__5a85a,
 .item__5a85a[data-disabled][data-selected] .outerRadioBorderStroke__5a85a,
 .item__5a85a[data-disabled][data-selected] .outerRadioFill__5a85a {
   opacity: 0.3;
 }
-.item__5a85a[data-disabled][data-selected] .innerDotRadio__5a85a {
-  fill: var(--white);
-  opacity: 0.3;
-}
 .item__5a85a:hover {
-  background-color: var(--background-mod-subtle);
+  background-color: var(--radio-background-hover);
 }
 .item__5a85a:hover .outerRadioFill__5a85a {
-  fill: var(--checkbox-background-default);
+  fill: var(--radio-background-hover);
 }
 .item__5a85a:hover .outerRadioBorderStroke__5a85a {
-  stroke: var(--checkbox-border-default);
+  stroke: var(--radio-border-hover);
 }
 .item__5a85a[data-selected]:hover .outerRadioFill__5a85a {
-  fill: var(--control-background-primary-hover);
+  fill: var(--radio-background-hover-selected);
 }
 .item__5a85a[data-selected]:hover .outerRadioBorderStroke__5a85a {
-  stroke: var(--border-subtle);
-}
-.item__5a85a[data-selected]:hover .innerDotRadio__5a85a {
-  fill: var(--white);
+  stroke: var(--radio-border-hover-selected);
 }
 .high-contrast-mode .container__5a85a {
   border: 1px solid var(--border-normal);
@@ -45881,6 +45873,9 @@ span.button__67645.enabled__67645.redGlow__67645:hover {
   display: flex;
   height: 252px;
   width: 100%;
+}
+.previewThumbnailVariant_c3d04b .avatarContainer_c3d04b {
+  height: 220px;
 }
 @keyframes fadeIn_c3d04b {
   0% {
@@ -101426,4 +101421,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e4fb28a025fc5f81.css.map*/
+/*# sourceMappingURL=12633.14a1e64581f0f50e.css.map*/
