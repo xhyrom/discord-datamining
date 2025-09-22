@@ -4,7 +4,7 @@
     "o12.ptr5556",
     "staging-invite",
     "admin-stg",
-    "rtc-discovery",
+    "rtc-sfu-finder",
     "staging-images-2",
     "grafana-data-prd",
     "us-east10004",
@@ -41,8 +41,8 @@
     "smite-rules-api-stg",
     "staging-streamkit",
     "remote-auth-gateway",
-    "staging-images-1",
     "staging-gateway-us-east1-d",
+    "staging-images-1",
     "otelcol",
     "datahub-prd"
   ]
