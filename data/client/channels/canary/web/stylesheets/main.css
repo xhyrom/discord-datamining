@@ -41241,10 +41241,6 @@ img.thumbnail__0f2e8 {
 .buttons_bc38cd:empty {
   display: none;
 }
-.button_bc38cd {
-  flex: 1 1 auto;
-  min-width: calc(50% - 8px);
-}
 .popoutMenu_c37c25 {
   width: 268px;
 }
@@ -101279,4 +101275,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.10d282c5859ba0f3.css.map*/
+/*# sourceMappingURL=12633.4ae7c0dda83e73c3.css.map*/
