@@ -841,10 +841,7 @@
   },
   "VOICE_CHANNEL_NOTIFICATIONS": {
     "url": "/channels/:param/voice-push",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
