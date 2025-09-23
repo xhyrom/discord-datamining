@@ -38769,12 +38769,14 @@ img.thumbnail__0f2e8 {
   background-color: var(--user-profile-overlay-background);
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   color: var(--text-tertiary);
+  cursor: pointer;
   flex-grow: 1;
   margin: 0 8px;
   opacity: 1;
   overflow: hidden;
   padding: 4px 8px;
   position: relative;
+  text-align: center;
   transform: translateY(-50%);
   transition:
     opacity 0.1s ease-in-out,
@@ -97011,4 +97013,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.92f726197d6bfd2a.css.map*/
+/*# sourceMappingURL=12633.81d4b285f8aab1b6.css.map*/
