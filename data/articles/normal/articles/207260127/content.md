@@ -34,6 +34,14 @@
     </li>
     <li>
       <a href="#h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</a>
+      <ul>
+        <li>
+          <a href="#h_01K57C2VJVQ218GVYQW72BHCWX">Creating a Custom Theme</a>
+        </li>
+        <li>
+          <a href="#h_01K57714AWT22J2N1HXFRG9DYK">Sharing Your Custom Theme</a>
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
@@ -49,9 +57,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397660695"
-    width="843"
-    height="573"
+    src="https://support.discord.com/hc/article_attachments/34960610520983"
+    alt="image39.gif"
   />
 </p>
 <h4 id="h_01JPR49B3618RTDM25XRB3WV73" class="wysiwyg-text-align-center">
@@ -93,9 +100,9 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331439062167"
-    width="857"
-    height="582"
+    src="https://support.discord.com/hc/article_attachments/34960610525591"
+    width="894"
+    height="552"
   />
 </p>
 <h4 id="h_01JPR4B2KGG5NRMQP8EEVQ6AY6" class="wysiwyg-text-align-center">
@@ -276,7 +283,7 @@
   >
 </h4>
 <div class="info-box">
-  <strong>NOTE</strong>: These steps may appear slightly different on mobile.
+  <strong>Note</strong>: These steps may appear slightly different on mobile.
 </div>
 <h1 id="h_01JPR4KSCNS72EFPCZFWRVHXKZ">How to Use a Color for my Theme</h1>
 <p>
@@ -294,9 +301,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397666071"
-    width="939"
-    height="638"
+    src="https://support.discord.com/hc/article_attachments/34960610526615"
+    width="766"
+    height="473"
   />
 </p>
 <h4 id="h_01JPR4MDJ92YRYPJG62ZKN1084" class="wysiwyg-text-align-center">
@@ -310,9 +317,9 @@
   test different themes.
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/34331439067415"
-      width="892"
-      height="606"
+      src="https://support.discord.com/hc/article_attachments/34960658929815"
+      width="859"
+      height="530"
     />
   </p>
   <h4 id="h_01JPR4P5KXJV9G2CCYJW5NECNH" class="wysiwyg-text-align-center">
@@ -332,6 +339,7 @@
   for additional appearance settings.
 </div>
 <h1 id="h_01JXZWY4ZQVKSDMSVG2RMJMFKF">How to Customize Your Theme</h1>
+<h2 id="h_01K57C2VJVQ218GVYQW72BHCWX">Creating a Custom Theme</h2>
 <div class="info-box">
   Make Discord match your unique vibe with custom themes! Nitro subscribers can
   choose custom themes with endless color combinations to customize their app’s
@@ -367,9 +375,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397666967"
-    width="1020"
-    height="750"
+    src="https://support.discord.com/hc/article_attachments/34960658931223"
+    width="909"
+    height="561"
   />
 </p>
 <h4 id="h_01JXZX031FCD5QW5X504HQM8NM" class="wysiwyg-text-align-center">
@@ -389,9 +397,9 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397667735"
-    width="935"
-    height="635"
+    src="https://support.discord.com/hc/article_attachments/34960610532247"
+    width="938"
+    height="579"
   />
 </p>
 <h4 id="h_01JXZX031F7S1G4NXN2B41A9B2" class="wysiwyg-text-align-center">
@@ -406,9 +414,9 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397668503"
-    width="1020"
-    height="693"
+    src="https://support.discord.com/hc/article_attachments/34960658937111"
+    width="852"
+    height="526"
   />
 </p>
 <h4 id="h_01JXZX031FVRQHDE9B7YKQC8GY" class="wysiwyg-text-align-center">
@@ -428,9 +436,7 @@
   />] or enter a Hex code to select a color for your theme.
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/34331397671319"
-      width="965"
-      height="656"
+      src="https://support.discord.com/hc/article_attachments/34960658938519"
     />
   </p>
   <h4 id="h_01K34KB5D9B3HQDEG12XMM1DK2" class="wysiwyg-text-align-center">
@@ -453,9 +459,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397674007"
-    width="873"
-    height="593"
+    src="https://support.discord.com/hc/article_attachments/34960610536343"
+    width="815"
+    height="503"
   />
 </p>
 <h4 id="h_01JXZX031FA54MZ6H4DR9ZXWP6" class="wysiwyg-text-align-center">
@@ -476,9 +482,9 @@
 </div>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397674775"
-    width="964"
-    height="655"
+    src="https://support.discord.com/hc/article_attachments/34960658942103"
+    width="885"
+    height="546"
   />
 </p>
 <h4 id="h_01JXZX031FGYJQ7NRJ9TYB9KNG" class="wysiwyg-text-align-center">
@@ -492,9 +498,7 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331397675415"
-    width="929"
-    height="631"
+    src="https://support.discord.com/hc/article_attachments/34960610538007"
   />
 </p>
 <h4 id="h_01JXZX031FQ066GDG54FV32PME" class="wysiwyg-text-align-center">
@@ -506,9 +510,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34331439075607"
-    width="972"
-    height="662"
+    src="https://support.discord.com/hc/article_attachments/34960658943639"
   />
 </p>
 <h4 id="h_01JXZX031FZ7VXHF50Y5RC69JX" class="wysiwyg-text-align-center">
@@ -523,9 +525,9 @@
   combinations for your theme! 
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/34331439079575"
-      width="910"
-      height="618"
+      src="https://support.discord.com/hc/article_attachments/34960610541335"
+      width="812"
+      height="501"
     />
   </p>
   <h4 id="h_01JXZX031GPP70BACCDMYJKRYY" class="wysiwyg-text-align-center">
@@ -537,12 +539,62 @@
   custom theme by selecting the <strong>Reset</strong> button.
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/34331397678231"
-      width="1051"
-      height="714"
+      src="https://support.discord.com/hc/article_attachments/34960658945303"
     />
   </p>
   <h4 id="h_01JXZX031G3B7ZKBM7STQ97JM4" class="wysiwyg-text-align-center">
     <span style="color: #666666">Using Reset Button</span>
+  </h4>
+</div>
+<h2 id="h_01K57714AWT22J2N1HXFRG9DYK">Sharing Your Custom Theme</h2>
+<div class="exp-box">
+  <strong>Important</strong>: Nitro subscribers can share, preview, and apply
+  custom themes on the desktop app and browser client, while mobile is limited
+  to previewing and applying.
+</div>
+<p>
+  Once you've created the perfect custom theme that reflects your unique style,
+  you can easily share it with friends on Discord! 
+</p>
+<p>
+  1. Press the <strong>Share</strong> icon [<img
+    src="https://support.discord.com/hc/article_attachments/34960658949271"
+    width="24"
+    height="24"
+  />] in the bottom-left corner of the
+  <strong>Customize your Theme </strong>sidebar. 
+</p>
+<p>
+  2. In the <strong>Share custom theme</strong> menu, select the users or
+  channels you want to share with. You can also include a personal message using
+  the message box. 
+</p>
+<p>3. When you’re ready, press the <strong>Send </strong>button. </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/34960658950039"
+    width="868"
+    height="538"
+  />
+</p>
+<h4 id="h_01K57714AXAV785FMM1PQ6N9XF" class="wysiwyg-text-align-center">
+  <span style="color: #666666">Sharing a Custom Theme to a Channel</span>
+</h4>
+<div class="tip-box">
+  <strong>Tip</strong>: To apply a shared custom theme, press the
+  <strong>Preview</strong> button in the shared
+  <strong>Custom Theme</strong> box. If you like how it looks, select the
+  <strong>Apply</strong> button in the sidebar to confirm.
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/34960610547991"
+      width="814"
+      height="444"
+    />
+  </p>
+  <h4 id="h_01K57714AXV48VZD283XAE7VQ7" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Applying a Shared Custom Theme to Your Discord</span
+    >
   </h4>
 </div>
