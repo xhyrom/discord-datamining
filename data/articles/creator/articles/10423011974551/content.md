@@ -169,7 +169,7 @@
 <h2 id="h_01HHG1XZR1KJN764TKHNBG8WTF">
   Who is eligible to monetize their servers? 
 </h2>
-<ol id="docs-internal-guid-01050d2e-7fff-951b-58ed-ed110bfea5a5">
+<ol>
   <li>You must be a server owner</li>
   <li>
     Your account must meet the requirements below. Please note that we look at a
@@ -177,8 +177,6 @@
     exhaustive list, but examples that we offer for transparency and ease of
     understanding. 
   </li>
-</ol>
-<ol>
   <li>You must be 18 years or older.</li>
   <li>
     Your account must be in good standing. Good standing includes but is not
