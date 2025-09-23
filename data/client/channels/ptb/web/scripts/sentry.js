@@ -2987,8 +2987,6 @@
               "/channels/".concat(t, "/users/@me/threads/archived/private"),
             THREAD_SEARCH: (t) => "/channels/".concat(t, "/threads/search"),
             FORUM_POSTS: (t) => "/channels/".concat(t, "/post-data"),
-            VOICE_CHANNEL_NOTIFICATIONS: (t) =>
-              "/channels/".concat(t, "/voice-push"),
             PARTNER_REQUIREMENTS: (t) =>
               "/partners/".concat(t, "/requirements"),
             AVATAR: function (t, e) {
@@ -3955,6 +3953,8 @@
               "/family-center/".concat(t, "/settings-proto"),
             FAMILY_CENTER_TEEN_CONSENTS: (t) =>
               "/family-center/".concat(t, "/consents"),
+            FAMILY_CENTER_SHARE_IAR_WITH_PARENTS:
+              "/family-center/share-iar-with-parents",
             REFERRAL_OFFER_ID_RESOLVE: (t) => "/referrals/".concat(t),
             APPLICATIONS_SHELF: "/applications/shelf",
             DISCORDIFY_ME: "/users/@me/avatars/discordify",
@@ -4306,6 +4306,8 @@
             ACCOUNT_REVERT: (t) => "/wasntme/".concat(t),
             POWERUP_STORE: (t) => "/channels/".concat(t, "/boosts"),
             CONFERENCE_MODE: "/conference-mode",
+            CONFERENCE_MODE_VOICE: (t, e) =>
+              "/conference-mode/voice/".concat(t, "/").concat(e),
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -4561,10 +4563,7 @@
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
               "Profile Customization Try It Out",
-            PAYMENT_FLOW_MODAL_TEST_PAGE: "Payment Flow Modals",
             REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
-            VIRTUAL_CURRENCY_CONFIGURATION_PAGE:
-              "Virtual Currency Configuration",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -4579,7 +4578,6 @@
             COMMUNITY_ALERTS: "Community Alerts Settings",
             HIGHLIGHT_NOTIFICATIONS: "Highlight notification settings",
             QUESTS: "Quests",
-            QUEST_PREVIEW_TOOL: "Quest Preview Tool",
             QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
@@ -5087,6 +5085,7 @@
           (r.QUEST_BAR_RENDER_DELAY = "quest_bar_render_delay"),
           (r.QUEST_HOME_SORT_METHOD_CHANGED = "quest_home_sort_method_changed"),
           (r.QUEST_HOME_FILTERS_CHANGED = "quest_home_filters_changed"),
+          (r.QUEST_GAME_SHEET_ERROR = "quest_game_sheet_error"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -6664,7 +6663,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-22-5aa85863940928c4ea7642aa7a04a37adc2e5008-discord_web",
+              "2025-09-23-cb3f3f3ba84f9caba2485125281c034c23fda69d-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6730,8 +6729,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "447677"),
-            o.YA("builtAt", String("1758567717337"));
+            o.YA("buildNumber", "448060"),
+            o.YA("builtAt", String("1758612561429"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48427,4 +48426,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bce6640209069171.js.map
+//# sourceMappingURL=sentry.e8995b6959bfe749.js.map
