@@ -42836,10 +42836,9 @@ div.mobilePushContainer__3d3b0 {
 .featureBorder_fbfab6 {
   margin: 0 -8px;
 }
-.previewThemeButtonWide_fbfab6 {
+.previewThemeButton_fbfab6 {
   margin-bottom: 26px;
   margin-top: 16px;
-  width: 100%;
 }
 .premiumTier2Divider_fbfab6 {
   background-image: linear-gradient(
@@ -69276,6 +69275,11 @@ div.nagbar_d74ef8 {
 .enable-forced-colors .accountProfileCard__1fed1 {
   border: 1px solid CanvasText;
 }
+.textRevealer__1fed1 {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
 .header__6dc27 {
   align-items: center;
   display: flex;
@@ -72090,7 +72094,10 @@ div.nagbar_d74ef8 {
   color: var(--white-500);
 }
 .nowPlayingAdd_cc46f0 {
+  align-items: center;
   color: var(--header-muted);
+  display: flex;
+  gap: 4px;
 }
 .nowPlaying_cc46f0 {
   background-color: var(--status-positive-background);
@@ -75880,13 +75887,6 @@ html .invoiceCancelRow__968a4 {
 }
 .divider_bc4a3e {
   margin-top: 20px;
-}
-.debugButton_bc4a3e {
-  color: var(--text-default);
-  margin: 0;
-  min-height: auto;
-  min-width: auto;
-  padding: 0;
 }
 .debugTitle_bc4a3e {
   margin-top: 16px;
@@ -100310,4 +100310,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a3ad6dd5dd07e4f6.css.map*/
+/*# sourceMappingURL=12633.d36e86fb8c53f191.css.map*/
