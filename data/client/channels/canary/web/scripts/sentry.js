@@ -4574,7 +4574,6 @@
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
-            SHOP_KEEPER: "Shop Keeper",
             COLLECTIBLES_SHOP_FEATURED_PAGE: "Collectibles Shop Featured Page",
             COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS:
               "Collectibles Shop View All Category Items",
@@ -6666,7 +6665,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a43a2e6bf05b52a25bab9c36bb2b37c0b4edb76e",
+            release: "discord_web-49699e0344bd2e0a59247edfbff5007e1716dab3",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6732,8 +6731,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "448616"),
-            o.YA("builtAt", String("1758669708079"));
+            o.YA("buildNumber", "448630"),
+            o.YA("builtAt", String("1758670100655"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48429,4 +48428,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.91c304b71c18b48b.js.map
+//# sourceMappingURL=sentry.fddb6093826369a7.js.map
