@@ -66848,7 +66848,7 @@ div:hover
       var(--premium-tier-2-pink-for-gradients) 95.93%
     ),
     var(--premium-tier-2-purple-for-gradients);
-  border-radius: inherit;
+  border-radius: calc(var(--custom-card-border-radius) + 2px);
   content: "";
   inset: -2px;
   opacity: 0;
@@ -67048,11 +67048,12 @@ div:hover
   transition: scale 0.15s ease-in-out;
 }
 .card_b5493b {
+  --custom-card-border-radius: 20px;
   align-items: flex-start;
   background-color: var(--background-secondary-alt);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: var(--custom-card-border-radius);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -100307,4 +100308,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.4a7f9d0e9008a0c3.css.map*/
+/*# sourceMappingURL=12633.5e4e87d4871d0592.css.map*/
