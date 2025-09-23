@@ -20019,6 +20019,18 @@ svg.radioIcon_c1e9c4 {
 }
 .gameClickable_e0f8ae {
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.gameGrid_e0f8ae:hover .gameClickable_e0f8ae {
+  opacity: 0.5;
+}
+.gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover {
+  border-radius: 8px;
+  opacity: 1;
+}
+.gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover .coverArt_e0f8ae {
+  box-shadow: 0 0 25px 0 rgba(145, 101, 255, 0.25);
 }
 .coverArt_e0f8ae {
   border: 1px solid var(--border-subtle);
@@ -20026,6 +20038,7 @@ svg.radioIcon_c1e9c4 {
   display: block;
   height: 94px;
   object-fit: cover;
+  transition: box-shadow 0.2s ease;
   width: 73px;
 }
 .closeButton_e0f8ae {
@@ -100308,4 +100321,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.5e4e87d4871d0592.css.map*/
+/*# sourceMappingURL=12633.72fafac1c780e1e7.css.map*/
