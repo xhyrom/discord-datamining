@@ -34372,6 +34372,7 @@ body .headerAnimation_b54a5b {
   border-width: 1px;
   display: flex;
   gap: 12px;
+  margin-top: 16px;
   padding: var(--space-12);
 }
 .giftRecipientTextContainer_cd2ff7 {
@@ -34430,7 +34431,6 @@ body .headerAnimation_b54a5b {
 }
 .confirmation_cd2ff7 {
   align-items: center;
-  background-color: var(--modal-background);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -96929,4 +96929,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.438ddfcd94eb9d12.css.map*/
+/*# sourceMappingURL=12633.3efdd0846a86ce09.css.map*/
