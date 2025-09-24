@@ -60209,7 +60209,6 @@ html .progress__61462 {
   border-radius: var(--radius-sm);
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 0.2s ease-in-out;
 }
 .itemContainer__1bb32:active,
 .itemContainer__1bb32:hover,
@@ -60501,14 +60500,6 @@ html .progress__61462 {
 }
 .full-motion .searchBar__97492 {
   transition: width 0.25s ease;
-}
-.keybind__97492 {
-  display: inline-block;
-  margin-left: 4px;
-}
-.shortcut__97492 {
-  font-size: 12px;
-  line-height: 16px;
 }
 .enable-forced-colors .focused__97492,
 .enable-forced-colors .open__97492 {
@@ -97023,4 +97014,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.c54cc2b535ebc9ff.css.map*/
+/*# sourceMappingURL=12633.a1873b1c179cff7c.css.map*/
