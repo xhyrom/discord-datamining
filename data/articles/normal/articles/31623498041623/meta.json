@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "video",
+    "bug",
+    "answer-bot",
+    "audio",
+    "troubleshoot",
     "troubleshooting",
     "guide",
-    "video",
-    "answer-bot",
-    "troubleshoot",
     "installation",
-    "audio",
     "common",
-    "bug",
     "steps"
   ]
 }

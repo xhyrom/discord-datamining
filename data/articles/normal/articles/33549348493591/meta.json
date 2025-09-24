@@ -20,17 +20,17 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "discord",
     "account",
     "support",
-    "billing",
     "report",
     "answer-bot",
+    "billing",
     "unauthorized",
-    "charge",
-    "unrecognized",
-    "unknown",
+    "discord",
+    "hack",
     "help",
-    "hack"
+    "unrecognized",
+    "charge",
+    "unknown"
   ]
 }
