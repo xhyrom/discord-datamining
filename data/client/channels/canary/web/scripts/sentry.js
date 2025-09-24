@@ -4308,10 +4308,12 @@
             ACCOUNT_REVERT: (t) => "/wasntme/".concat(t),
             POWERUP_STORE: (t) => "/channels/".concat(t, "/boosts"),
             CONFERENCE_MODE: "/conference-mode",
-            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-              "/settings/quest-preview-tool-2?quest_id=".concat(t),
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
+            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
+              "/settings/quest-preview-tool-2?quest_id=".concat(t),
+            QUEST_PREVIEW_TOOL_2: (t) =>
+              "/quest-home?tab=preview_tool&quest_id=".concat(t),
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -5965,6 +5967,7 @@
             "user_profile_report_game_detection"),
           (r.GAME_DETECTION_FEEDBACK_MODAL = "game_detection_feedback_modal"),
           (r.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
+          (r.WISHLIST_UPDATED = "wishlist_updated"),
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
             "premium_wow_moment_media_prefetch_trigger"),
@@ -6666,7 +6669,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-22936094d66f1b468002701e0bda98301eec1fd1",
+            release: "discord_web-fef8f813d01c01410ea519ad4575d1bcd6dce9ef",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6732,8 +6735,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "448958"),
-            o.YA("builtAt", String("1758735791387"));
+            o.YA("buildNumber", "448982"),
+            o.YA("builtAt", String("1758737351577"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11918,6 +11921,8 @@
             "/channels/".concat(t, "/").concat(e, "/").concat(a),
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
+          QUEST_PREVIEW_TOOL_2: (t) =>
+            "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
           SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
             "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
@@ -48429,4 +48434,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9032565322d95669.js.map
+//# sourceMappingURL=sentry.bf7e3ff5ae33dc4f.js.map

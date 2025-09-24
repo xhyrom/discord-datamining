@@ -22109,9 +22109,9 @@ span.clanTag__5d473 {
   border-radius: 3px;
   color: var(--white-500);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -50200,6 +50200,7 @@ h3.improved__1689b:after {
   flex-direction: column;
   gap: var(--space-lg);
   height: 100%;
+  padding: var(--space-sm);
   width: 790px;
 }
 .controlsBarContainer_ba8a2f {
@@ -97021,4 +97022,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ef6ad5f0ad1827d7.css.map*/
+/*# sourceMappingURL=12633.723a797e17672ed6.css.map*/
