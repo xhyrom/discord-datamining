@@ -36349,6 +36349,9 @@ body .headerAnimation_b54a5b {
 .tagChiplet_fdeafc {
   margin-left: var(--space-4);
 }
+.inheritWidth_fdeafc {
+  width: inherit;
+}
 .profileEffects__01370 {
   height: 100%;
   left: 0;
@@ -97013,4 +97016,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0e48b74a5eea4bcc.css.map*/
+/*# sourceMappingURL=12633.d7dde79a460fb319.css.map*/
