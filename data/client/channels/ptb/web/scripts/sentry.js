@@ -2779,6 +2779,7 @@
               "/guilds/".concat(t, "/profile/").concat(e),
             USER_CHANNELS: "/users/@me/channels",
             USER_WARP_LICENSE: "/users/@me/warp/license",
+            USER_WISHLIST: (t) => "/wishlists/".concat(t),
             USER_APPLICATION_IDENTITIES: (t) =>
               "/users/".concat(t, "/application-identities"),
             DM_CHANNEL: (t) => "/users/@me/dms/".concat(t),
@@ -4091,6 +4092,7 @@
               "/safety-flows/resend/email/reverification/pincode",
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
             APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
+            APEX_EXPERIMENTS: "/apex/experiments",
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
           }),
@@ -4306,6 +4308,8 @@
             ACCOUNT_REVERT: (t) => "/wasntme/".concat(t),
             POWERUP_STORE: (t) => "/channels/".concat(t, "/boosts"),
             CONFERENCE_MODE: "/conference-mode",
+            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
+              "/settings/quest-preview-tool-2?quest_id=".concat(t),
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
           });
@@ -4563,7 +4567,6 @@
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
               "Profile Customization Try It Out",
-            REVENUE_STORYBOOK_PAGE: "Revenue Storybook",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -4571,7 +4574,6 @@
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
-            SHOP_KEEPER: "Shop Keeper",
             COLLECTIBLES_SHOP_FEATURED_PAGE: "Collectibles Shop Featured Page",
             COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS:
               "Collectibles Shop View All Category Items",
@@ -4657,6 +4659,7 @@
           (r.LIBDISCORE_KV_DUAL_READ_ERROR = "libdiscore_kv_dual_read_error"),
           (r.LIBDISCORE_DISPATCH_BRIDGE_TELEMETRY =
             "libdiscore_dispatch_bridge_telemetry"),
+          (r.LIBDISCORE_SLOW_TIMERS = "libdiscore_slow_timers"),
           (r.REGISTER_INPUT_FOCUS = "register_input_focus"),
           (r.REGISTER_INPUT_BLUR = "register_input_blur"),
           (r.SESSION_START = "session_start"),
@@ -6154,6 +6157,7 @@
           (r.SWIPE_HANG_STATUS = "swipe_hang_status"),
           (r.VIEW_HANG_STATUS = "view_hang_status"),
           (r.HANG_STATUS_CTA_CLICKED = "hang_status_cta_clicked"),
+          (r.HANG_STATUS_RANDOMIZER_CLICKED = "hang_status_randomizer_clicked"),
           (r.MEMBER_VERIFICATION_APPLICATION_VIEWED =
             "member_verification_application_viewed"),
           (r.GUILD_MEMBER_APPLICATION_REPORTED =
@@ -6663,7 +6667,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-23-0fb0ae70a856a509567e5a3bb40d22526194ee20-discord_web",
+              "2025-09-24-7ed8b5d112db985cca424a67b42c3122e76d8187-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6729,8 +6733,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "448675"),
-            o.YA("builtAt", String("1758672647082"));
+            o.YA("buildNumber", "448784"),
+            o.YA("builtAt", String("1758698786198"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11915,7 +11919,7 @@
             "/channels/".concat(t, "/").concat(e, "/").concat(a),
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
-          QUEST_PREVIEW: (t) =>
+          SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
             "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
         var I =
@@ -48426,4 +48430,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9a402443ff5eb5ee.js.map
+//# sourceMappingURL=sentry.5e50fa64455cad21.js.map
