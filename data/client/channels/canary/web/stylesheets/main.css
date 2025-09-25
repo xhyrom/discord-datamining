@@ -40090,7 +40090,7 @@ div.mobilePushContainer__3d3b0 {
   bottom: auto;
   padding-top: 0;
 }
-.inactive_bc663c * {
+.inactive_bc663c > * {
   pointer-events: none !important;
   z-index: -1;
 }
@@ -96936,4 +96936,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.157b8780f40909af.css.map*/
+/*# sourceMappingURL=12633.00a7f7f93a641f07.css.map*/
