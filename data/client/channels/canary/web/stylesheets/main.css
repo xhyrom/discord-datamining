@@ -36506,9 +36506,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   gap: 8px;
   width: 100%;
 }
-.buttonVertical__0b003 {
-  flex: 1;
-}
 .contentHorizontal__0b003 {
   align-items: center;
   display: flex;
@@ -96941,4 +96938,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a3df0f138dfcc412.css.map*/
+/*# sourceMappingURL=12633.7a645aa59b262f8a.css.map*/
