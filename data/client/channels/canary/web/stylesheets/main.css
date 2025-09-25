@@ -20063,6 +20063,13 @@ svg.radioIcon_c1e9c4 {
 .errorImage_e0f8ae {
   margin-bottom: 16px;
 }
+.instructionsLink_e0f8ae {
+  display: inline-block;
+  font-size: inherit;
+}
+.instructionsLink_e0f8ae:hover {
+  text-decoration: underline;
+}
 .hidden__7d7b6 {
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
@@ -96929,4 +96936,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3efdd0846a86ce09.css.map*/
+/*# sourceMappingURL=12633.157b8780f40909af.css.map*/
