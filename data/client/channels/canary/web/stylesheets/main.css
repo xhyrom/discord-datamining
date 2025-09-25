@@ -2102,6 +2102,64 @@
     0 0 6px 2px var(--blue-360),
     0 0 8px 4px var(--opacity-blue-60);
 }
+:where(.container_a62383) {
+  --custom-gradient-color-start: var(--blurple-50);
+  --custom-gradient-color-end: var(--blurple-50);
+  --custom-gradient-offset-bottom: 0%;
+  position: relative;
+}
+:where(.container_a62383):before {
+  background: linear-gradient(
+    270deg in oklab,
+    var(--custom-gradient-color-end) 0,
+    var(--custom-gradient-color-start) 100%
+  );
+  border-radius: inherit;
+  bottom: var(--custom-gradient-offset-bottom);
+  content: "";
+  display: block;
+  left: 0;
+  -webkit-mask-image: radial-gradient(
+    100% 100% at 50% 100%,
+    var(--transparent) 60%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    100% 100% at 50% 100%,
+    var(--transparent) 60%,
+    #000 100%
+  );
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+:where(.container_a62383 > *) {
+  position: relative;
+}
+.purple_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-purple-start);
+  --custom-gradient-color-end: var(--expressive-gradient-purple-end);
+}
+.blue_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-blue-start);
+  --custom-gradient-color-end: var(--expressive-gradient-blue-end);
+}
+.green_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-green-start);
+  --custom-gradient-color-end: var(--expressive-gradient-green-end);
+}
+.pink_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-pink-start);
+  --custom-gradient-color-end: var(--expressive-gradient-pink-end);
+}
+.nitro-pink_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-nitro-pink-start);
+  --custom-gradient-color-end: var(--expressive-gradient-nitro-pink-end);
+}
+.nitro-green_a62383 {
+  --custom-gradient-color-start: var(--expressive-gradient-nitro-green-start);
+  --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
+}
 .anchor_edefb8 {
   color: var(--text-link);
   -webkit-text-decoration: var(--link-decoration);
@@ -4723,64 +4781,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   box-shadow:
     0 0 6px 2px var(--yellow-360),
     0 0 8px 4px var(--opacity-yellow-60);
-}
-:where(.container__73454) {
-  --custom-gradient-color-start: var(--blurple-50);
-  --custom-gradient-color-end: var(--blurple-50);
-  --custom-gradient-offset-bottom: 0%;
-  position: relative;
-}
-:where(.container__73454):before {
-  background: linear-gradient(
-    270deg in oklab,
-    var(--custom-gradient-color-end) 0,
-    var(--custom-gradient-color-start) 100%
-  );
-  border-radius: inherit;
-  bottom: var(--custom-gradient-offset-bottom);
-  content: "";
-  display: block;
-  left: 0;
-  -webkit-mask-image: radial-gradient(
-    100% 100% at 50% 100%,
-    var(--transparent) 60%,
-    #000 100%
-  );
-  mask-image: radial-gradient(
-    100% 100% at 50% 100%,
-    var(--transparent) 60%,
-    #000 100%
-  );
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-:where(.container__73454 > *) {
-  position: relative;
-}
-.purple__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-purple-start);
-  --custom-gradient-color-end: var(--expressive-gradient-purple-end);
-}
-.blue__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-blue-start);
-  --custom-gradient-color-end: var(--expressive-gradient-blue-end);
-}
-.green__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-green-start);
-  --custom-gradient-color-end: var(--expressive-gradient-green-end);
-}
-.pink__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-pink-start);
-  --custom-gradient-color-end: var(--expressive-gradient-pink-end);
-}
-.nitro-pink__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-nitro-pink-start);
-  --custom-gradient-color-end: var(--expressive-gradient-nitro-pink-end);
-}
-.nitro-green__73454 {
-  --custom-gradient-color-start: var(--expressive-gradient-nitro-green-start);
-  --custom-gradient-color-end: var(--expressive-gradient-nitro-green-end);
 }
 .heading-sm\/normal_b717a1 {
   font-family: var(--font-display);
@@ -46968,7 +46968,6 @@ h3.improved__1689b:after {
 .metadataRefreshButton__9a52c {
   justify-self: flex-end;
   margin-left: 16px;
-  padding: 4px 8px;
 }
 .dot__9a52c {
   background-color: var(--header-secondary);
@@ -96710,4 +96709,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.dc0e9876f56ab7b6.css.map*/
+/*# sourceMappingURL=12633.c67089d0cb266d99.css.map*/
