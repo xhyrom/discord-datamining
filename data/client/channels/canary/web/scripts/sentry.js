@@ -3503,7 +3503,6 @@
                 .concat(t, "/app-assets/")
                 .concat(e, ".")
                 .concat(a),
-            HYPESQUAD_ONLINE: "/hypesquad/online",
             APPLICATION_STORAGE: (t, e) =>
               "/applications/".concat(t, "/branches/").concat(e, "/storage"),
             APPLICATION_DISCLOSURES: (t) =>
@@ -4534,8 +4533,6 @@
             DEVELOPER_OPTIONS: "Developer Options",
             WINDOWS: "Windows",
             LINUX: "Linux",
-            HYPESQUAD_ONLINE: "Hypesquad Online",
-            TOWNHALL: "Townhall",
             DESKTOP_APP: "Desktop Only",
             INVENTORY: "Library Inventory",
             TEXT_COMPONENT: "Text Component",
@@ -6667,7 +6664,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a7b65ef0f7a65e1200118cfcbf1c1646e0f20cfc",
+            release: "discord_web-d6e85f7a3f004050d33a81f04ba0b8ac64bfe729",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6733,8 +6730,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "449913"),
-            o.YA("builtAt", String("1758837420606"));
+            o.YA("buildNumber", "449925"),
+            o.YA("builtAt", String("1758837992157"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48432,4 +48429,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.79a7ddb2ef7ee034.js.map
+//# sourceMappingURL=sentry.3dc87ef6fbabdce0.js.map
