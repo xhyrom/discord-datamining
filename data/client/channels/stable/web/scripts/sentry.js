@@ -4308,10 +4308,12 @@
             ACCOUNT_REVERT: (t) => "/wasntme/".concat(t),
             POWERUP_STORE: (t) => "/channels/".concat(t, "/boosts"),
             CONFERENCE_MODE: "/conference-mode",
-            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-              "/settings/quest-preview-tool-2?quest_id=".concat(t),
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
+            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
+              "/settings/quest-preview-tool-2?quest_id=".concat(t),
+            QUEST_PREVIEW_TOOL_2: (t) =>
+              "/quest-home?tab=preview_tool&quest_id=".concat(t),
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -4584,11 +4586,7 @@
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
           }),
-          Object.freeze({
-            OAUTH2_REDIRECT_FRAGMENT: "/_discord?",
-            GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
-            AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true",
-          }),
+          Object.freeze({ GAME_INVITE_FRAGMENT: "/_discord/join?secret=" }),
           Object.freeze({
             DESKTOP: ""
               .concat(location.protocol)
@@ -5965,6 +5963,7 @@
             "user_profile_report_game_detection"),
           (r.GAME_DETECTION_FEEDBACK_MODAL = "game_detection_feedback_modal"),
           (r.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
+          (r.WISHLIST_UPDATED = "wishlist_updated"),
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
             "premium_wow_moment_media_prefetch_trigger"),
@@ -6667,7 +6666,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-24-7a097feda3bf4313d7c24ca33b649a53ec986e9b-discord_web",
+              "2025-09-25-5b901ae451dec1fe8d6dfc9bda4508a96b0b9465-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6733,8 +6732,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "448893"),
-            o.YA("builtAt", String("1758732183122"));
+            o.YA("buildNumber", "449442"),
+            o.YA("builtAt", String("1758784812082"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11919,6 +11918,8 @@
             "/channels/".concat(t, "/").concat(e, "/").concat(a),
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
+          QUEST_PREVIEW_TOOL_2: (t) =>
+            "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
           SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
             "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
@@ -48430,4 +48431,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8cd08a5ada6790d6.js.map
+//# sourceMappingURL=sentry.15d3fd3d1d0eac2f.js.map
