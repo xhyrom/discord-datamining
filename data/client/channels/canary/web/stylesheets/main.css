@@ -22001,9 +22001,9 @@ span.clanTag__5d473 {
   border-radius: 3px;
   color: var(--white-500);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: var(--font-weight-bold);
-  line-height: 29px;
+  line-height: 1.8125rem;
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -96713,4 +96713,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.41148c22970f6d54.css.map*/
+/*# sourceMappingURL=12633.309378e729e66e5b.css.map*/
