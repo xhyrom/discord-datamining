@@ -2787,7 +2787,7 @@
         <p>
           If you have any questions about, or wish to contact us in connection
           with, these terms, please contact us at
-          <a href="mailto:legalprivacy@discord.com">legal@discord.com</a> unless
+          <a href="mailto:privacy@discord.com">privacy@discord.com</a> unless
           otherwise stated in these terms. We may send you electronic
           communications related to our services. Where required, we’ll get your
           consent before sending you direct marketing, and we’ll make it easy
