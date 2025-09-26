@@ -21,16 +21,16 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "subscription",
     "nitro",
-    "nitro classic",
-    "upgrade",
+    "nitro sub",
     "nitro basic",
-    "plans",
-    "management",
-    "cancel",
+    "nitro classic",
+    "subscription",
+    "upgrade",
     "upgrading",
     "switching",
-    "nitro sub"
+    "plans",
+    "management",
+    "cancel"
   ]
 }
