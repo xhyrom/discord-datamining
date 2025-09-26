@@ -3210,18 +3210,50 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   gap: 8px;
 }
-.control__2e2f2 {
-  display: flex;
-  flex-direction: column;
+.container__2e2f2 {
   flex-grow: 1;
   interpolate-size: allow-keywords;
+  display: grid;
+  grid-template-areas: "labels" "control" "helper-text";
 }
-.label__2e2f2 {
-  padding-top: var(--space-4);
-}
-.description__2e2f2,
-.label__2e2f2 {
+.container__2e2f2 .labelContainer__2e2f2 {
   margin-bottom: var(--space-8);
+}
+.container__2e2f2[data-layout="horizontal"] {
+  -moz-column-gap: var(--space-24);
+  column-gap: var(--space-24);
+  display: grid;
+  grid-template-areas: "labels control" "empty helper-text";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  row-gap: var(--space-4);
+}
+.container__2e2f2[data-layout="horizontal"] .control__2e2f2 {
+  align-items: end;
+}
+.container__2e2f2[data-layout="horizontal"] .helperTextContainer__2e2f2 {
+  align-self: flex-end;
+}
+.container__2e2f2[data-disabled="true"] {
+  opacity: 0.5;
+}
+.labelContainer__2e2f2 {
+  gap: var(--space-8);
+  grid-area: labels;
+}
+.control__2e2f2,
+.labelContainer__2e2f2 {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.control__2e2f2 {
+  gap: var(--space-4);
+  grid-area: control;
+}
+.description__2e2f2 {
+  grid-area: description;
+  max-width: 70ch;
 }
 .label__2e2f2 ~ .description__2e2f2 {
   margin-top: -8px;
@@ -3246,8 +3278,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   align-items: start;
   display: grid;
   gap: var(--space-12);
+  grid-area: helper-text;
   grid-template-columns: 1fr auto;
-  padding-top: var(--space-4);
+  min-width: 0;
 }
 .statusMessageContainer__2e2f2 {
   align-items: start;
@@ -14348,6 +14381,15 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .legend__5aa75 {
   margin-bottom: var(--space-12);
+}
+.placeholder__84ae7 {
+  align-items: center;
+  background-color: var(--background-mod-subtle);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  padding: var(--space-8) var(--space-12);
 }
 .outerContainer_e44912 {
   align-items: center;
@@ -96515,4 +96557,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9f89882df9c6a968.css.map*/
+/*# sourceMappingURL=12633.2169add4ab5bd380.css.map*/
