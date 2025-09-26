@@ -14385,6 +14385,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .mana-text-inputs .input__0f084 {
   --custom-input-padding: var(--space-12);
 }
+.group__66d91 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
 .fieldset__5aa75 {
   display: flex;
   flex-direction: column;
@@ -96557,4 +96562,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ce85eef92df8c07d.css.map*/
+/*# sourceMappingURL=12633.aedbaa6d7aec22a9.css.map*/
