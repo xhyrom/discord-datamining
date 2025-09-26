@@ -3453,6 +3453,7 @@
               "/applications/storefront/interactions/premium-button/".concat(t),
             COLLECTION_PUBLISHED_LISTINGS_SKU: (t) =>
               "/storefront/collections/".concat(t),
+            PRODUCT_FOR_SKU: (t) => "/storefront/products/sku/".concat(t),
             STORE_DIRECTORY_LAYOUT: (t) =>
               "/store/directory-layouts/".concat(t),
             STORE_DIRECTORY: (t) => "/store/directory/".concat(t),
@@ -3503,7 +3504,6 @@
                 .concat(t, "/app-assets/")
                 .concat(e, ".")
                 .concat(a),
-            HYPESQUAD_ONLINE: "/hypesquad/online",
             APPLICATION_STORAGE: (t, e) =>
               "/applications/".concat(t, "/branches/").concat(e, "/storage"),
             APPLICATION_DISCLOSURES: (t) =>
@@ -4534,8 +4534,6 @@
             DEVELOPER_OPTIONS: "Developer Options",
             WINDOWS: "Windows",
             LINUX: "Linux",
-            HYPESQUAD_ONLINE: "Hypesquad Online",
-            TOWNHALL: "Townhall",
             DESKTOP_APP: "Desktop Only",
             INVENTORY: "Library Inventory",
             TEXT_COMPONENT: "Text Component",
@@ -5963,6 +5961,7 @@
             "user_profile_report_game_detection"),
           (r.GAME_DETECTION_FEEDBACK_MODAL = "game_detection_feedback_modal"),
           (r.DM_PROFILE_TOGGLED = "dm_profile_toggled"),
+          (r.USER_PROFILE_WISHLIST_ACTION = "user_profile_wishlist_action"),
           (r.WISHLIST_UPDATED = "wishlist_updated"),
           (r.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed"),
           (r.PREMIUM_WOW_MOMENT_MEDIA_PREFETCH_TRIGGER =
@@ -6155,6 +6154,7 @@
           (r.CLEAR_HANG_STATUS = "clear_hang_status"),
           (r.SWIPE_HANG_STATUS = "swipe_hang_status"),
           (r.VIEW_HANG_STATUS = "view_hang_status"),
+          (r.HANG_STATUS_FAVORITE_CLICKED = "hang_status_favorite_clicked"),
           (r.HANG_STATUS_CTA_CLICKED = "hang_status_cta_clicked"),
           (r.HANG_STATUS_RANDOMIZER_CLICKED = "hang_status_randomizer_clicked"),
           (r.MEMBER_VERIFICATION_APPLICATION_VIEWED =
@@ -6666,7 +6666,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-25-5b901ae451dec1fe8d6dfc9bda4508a96b0b9465-discord_web",
+              "2025-09-26-66d8cbd1e902b160769cdaa58c55123d534bfbb5-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6732,8 +6732,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "449442"),
-            o.YA("builtAt", String("1758784812082"));
+            o.YA("buildNumber", "450147"),
+            o.YA("builtAt", String("1758871126189"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48431,4 +48431,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.15d3fd3d1d0eac2f.js.map
+//# sourceMappingURL=sentry.4653534b1e9a5565.js.map
