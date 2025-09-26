@@ -13,7 +13,8 @@
 <h1 id="h_01K3W2ZXFVDHDW2V6JY7E6YMYP">Promotion Summary</h1>
 <p>
   <strong>Offer Details:</strong> 1 month of Discord Nitro for WeMod users and 3
-  months of Discord Nitro for WeMod Pro subscribers
+  months of Discord Nitro for WeMod Pro subscribers who created their WeMod
+  accounts before <strong>September 24, 2025</strong>.
 </p>
 <p>
   <strong>Who is Eligible: </strong>Users who have had an active Nitro
@@ -481,9 +482,10 @@
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
   <strong>A:</strong> WeMod Pro subscribers and users can claim Discord Nitro
-  promo between <strong>September 24, 2025 (12:00PM ET)</strong
-  ><strong> </strong>to<strong> December 15, 2025 (12:00PM ET). </strong>The
-  promotion must be redeemed by <strong>January 15, 2026 (11:59PM ET)</strong>.
+  promo between <strong>September 24, 2025 (12:00PM ET) </strong>to<strong>
+    December 15, 2025 (12:00PM ET). </strong
+  >The promotion must be redeemed by
+  <strong>January 15, 2026 (11:59PM ET)</strong>.
 </p>
 <p>
   After <strong>January 15, 2026 (11:59PM ET)</strong>, WeMod Pro subscribers
@@ -498,6 +500,13 @@
   If a code has not been redeemed to the Discord account by
   <strong>January 15, 2026 (11:59PM ET)</strong>, it will expire and you will no
   longer be able to have Discord Nitro.
+</p>
+<p><strong>Q: Are all WeMod users eligible for this promotion?</strong></p>
+<p>
+  <strong>A:</strong> This offer is for all WeMod users who created their WeMod
+  accounts before <strong>September 24, 2025</strong>. All WeMod Pro subscribers
+  with an active paid subscription and WeMod free users who have launched 2+
+  games with WeMod are eligible.
 </p>
 <h2 id="h_01K3W2ZXGPXE7HDT967YKTR4FH">Eligibility for the Promotion</h2>
 <p>
