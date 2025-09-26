@@ -1,85 +1,74 @@
-<h3 id="h_01HACQPV14R5TP4D2JZ9QT3WRE">🚧 Article under construction! 🚧</h3>
-<p>
+<div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-large"
-      >What this article covers:</span
-    ></strong
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01F2HKSHYWP6BJRDQZMFJD1XDJ" target="_self">What is a Bug?</a>
-    <ul>
-      <li>
-        <a href="#h_01F2HKSR9GCV1FFCFAMSBYEP8B" target="_self"
-          >How do I Report a Bug?</a
-        >
-      </li>
-      <li>
-        <a href="#h_01F2HKTD57FVC60P8B8JW6FTKX" target="_self"
-          >What is Discord Testers?</a
-        >
-      </li>
-      <li>
-        <a href="#h_01GB8VR2A607B1TXP5CX4MF7CF" target="_self"
-          >Discord Testers FAQ</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
-<h1 id="h_01F2HKSHYWP6BJRDQZMFJD1XDJ">What is a Bug?</h1>
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="list-style-type: none">
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01K640AM1QZAXZ8H7P8Y58MEAM">What is a Bug?</a></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K640AM1R2FBHC54GQQA58TFT"
+              >How do I Report a Bug?</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K640AM1RCFQFREHSFKQRDNFC"
+              >What is Discord Testers?</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01GB8VR2A607B1TXP5CX4MF7CF"
+              >Discord Testers FAQ</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01K640AM1QZAXZ8H7P8Y58MEAM">What is a Bug?</h1>
 <p>
-  <span style="font-weight: 400"
-    >Bugs are unintended behavior of the Discord app that diminish a user's
-    experience. Think of the app crashing unexpectedly, or the "Add Friends to
-    DM" button not letting you add your friends into a Group DM when you haven't
-    reached the limit!</span
-  >
+  Bugs are unintended behavior of the Discord app that diminish a user's
+  experience. 
 </p>
-<h2 id="h_01F2HKSR9GCV1FFCFAMSBYEP8B">How do I Report a Bug?</h2>
 <p>
-  <span style="font-weight: 400"
-    >When issues pop up that negatively impact Discord users, we want to be able
-    to understand and fix it as soon as possible. Any user can help us by
-    reporting the bugs! </span
-  ><span style="font-weight: 400"
-    >Bug reports should be submitted with a ticket to the </span
-  ><a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer"
+  Think of the app crashing unexpectedly, or the "Add Friends to DM" button not
+  letting you add your friends into a Group DM when you haven't reached the
+  limit!
+</p>
+<h1 id="h_01K640AM1R2FBHC54GQQA58TFT">How do I Report a Bug?</h1>
+<p>
+  When issues pop up that negatively impact Discord users, we want to be able to
+  understand and fix it as soon as possible. Any user can help us by reporting
+  the bugs! 
+</p>
+<p>
+  Bug reports should be submitted with a ticket to the
+  <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer"
     >Bug Reporting form</a
-  ><span style="font-weight: 400"
-    >. Be sure to fill out each category, as each is important. The most helpful
-    bug reports include:</span
-  >
+  >. Be sure to fill out each field, as each is important. 
 </p>
+<p>The most helpful bug reports include:</p>
 <ul>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >A concise description of the bug, generally one sentence  </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Simple step by step direction on how to make the bug occur</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >Explanation of what you believe the behavior should be</span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">What is actually happening</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">What version of Discord this occurs on</span>
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400">What device the bug occurs on</span>
-  </li>
+  <li>A concise description of the bug, generally one sentence  </li>
+  <li>Simple step by step direction on how to make the bug occur</li>
+  <li>Explanation of what you believe the behavior should be</li>
+  <li>What is actually happening</li>
+  <li>What version of Discord this occurs on</li>
+  <li>What device the bug occurs on</li>
 </ul>
 <p>
-  There are some bug reports that are not currently supported.  We ask that you
+  There are some bug reports that are not currently supported. We ask that you
   check out this
   <a
     href="https://support.discord.com/hc/en-us/articles/1500005933882-Unsupported-Reports"
@@ -91,91 +80,50 @@
   topics are unsupported.
 </p>
 <p>
-  Additionally, if you're experiencing a bug related to
-  <span style="font-weight: 400">Accessibility aka (A11Y) these issues </span
-  ><span style="font-weight: 400"
-    >can also be submitted via our
-    <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer"
-      >Bug Reporting form.</a
-    ></span
+  Additionally, if you're experiencing a bug related to Accessibility aka
+  (A11Y), these issues can also be submitted via our
+  <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer"
+    >Bug Reporting form.</a
   >
 </p>
-<h2 id="h_01F2HKTD57FVC60P8B8JW6FTKX">What is Discord Testers?</h2>
-<h3 id="h_01HACQQ071Z125TVD1XJXMCJ3Q">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >We're sorry to say that the opportunity to be considered for the Discord
-    Testers server is currently unavailable.</span
-  >
-</h3>
+<h1 id="h_01K640AM1RCFQFREHSFKQRDNFC">What is Discord Testers?</h1>
+<div class="warn-box">
+  <strong>Important:</strong> We’re excited to announce that the opportunity to
+  be considered for the Discord Testers server will be available soon!
+</div>
 <p>
-  <strong
-    ><span style="color: #2e3338" data-darkreader-inline-color=""
-      >Discord Testers</span
-    ></strong
-  ><span style="color: #2e3338" data-darkreader-inline-color="">
-    (also known as DTesters) is an official, invite only Discord server for
-    adept volunteer bug testers. Our goal is to identify, reproduce, and provide
-    high-quality bug reports. </span
-  >
+  <strong>Discord Testers</strong> (also known as DTesters) is an official,
+  invite only Discord server for adept volunteer bug testers. Our goal is to
+  identify, reproduce, and provide high-quality bug reports. 
 </p>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >We wanted to say a big thank you to those that took the time to fill out
-    the recent Discord Testers Consideration Quiz. Your interest and
-    participation mean a lot to us! If you were one of the top performers, we're
-    in the process of sending you an email with more information on what to do
-    next. Don't forget to check your spam folder for messages from
-    @discordapp.com, just in case our email ended up there.</span
-  >
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >If you have not been contacted, we are sorry to say that you were not
-    chosen this time around. We understand that this news is likely
-    disappointing, but wanted to offer some guidance for the future. </span
-  >
-</p>
-<p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Here are some tips for improving for the Discord Testers Consideration Quiz
-    next time:</span
-  >
+  Great news for aspiring Discord Testers! We expect to be opening up the
+  Discord Testers Consideration Quiz for a limited time before the end of 2025,
+  in preparation to add new members to the community in 2026.  Want to maximize
+  your chances of success? We've got you covered! Here are some valuable tips to
+  help you prepare and shine on the quiz:
 </p>
 <ul>
-  <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >Make sure to follow the quiz directions carefully</span
-    >
-  </li>
-  <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >Become more familiar with Discord and its features</span
-    >
-  </li>
-  <li>
-    <span style="color: #2e3338" data-darkreader-inline-color=""
-      >Utilize Discord support articles in the Help Center</span
-    >
-  </li>
+  <li>Make sure to follow the quiz directions carefully</li>
+  <li>Become familiar with Discord and it’s features</li>
+  <li>Utilize Discord support articles in the Help Center</li>
 </ul>
 <p>
-  <span style="color: #2e3338" data-darkreader-inline-color=""
-    >Periodically, new testers will be added and more information will be
-    provided here as these opportunities arise.
-  </span>
+  When the opportunity arises, it will be announced here, and a link to the
+  Discord Testers Consideration Quiz will be available on this article.
 </p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF">
   <span style="font-weight: 400">Discord Tester FAQ</span>
 </h2>
 <p>
   <strong
-    >How can I report bugs if I am not a part of the Discord Testers
+    >Q: How can I report bugs if I am not a part of the Discord Testers
     server?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >Bug reports should be submitted with a ticket to the </span
+    >A: Bug reports should be submitted with a ticket to the </span
   ><a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer"
     >Bug Reporting Form</a
   ><span style="font-weight: 400"
@@ -184,25 +132,25 @@
 </p>
 <p>
   <strong
-    >Are members of the Discord Testers server required to have previous
+    >Q: Are members of the Discord Testers server required to have previous
     experience?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >Members of the Discord Testers server are expected to have submitted
+    >A: Members of the Discord Testers server are expected to have submitted
     quality bug reports prior to joining the server.</span
   >
 </p>
 <p>
   <strong
-    >Are DTesters required to sign a non-disclosure agreement (NDA)? 
+    >Q: Are DTesters required to sign a non-disclosure agreement (NDA)? 
     Why?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >DTesters may be asked to test features that have not yet been released. 
+    >A: DTesters may be asked to test features that have not yet been released. 
     Due to the sensitive nature, an NDA is required to be signed.  If an
     invitation is extended to you, you are welcome to review the details of the
     NDA so you can decide whether to sign or not.</span
@@ -210,71 +158,74 @@
 </p>
 <p>
   <strong
-    >What is the time and submission requirement for a Discord Tester?</strong
+    >Q: What is the time and submission requirement for a Discord
+    Tester?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >DTesters are volunteers, and as such, we want to encourage them to find
+    >A: DTesters are volunteers, and as such, we want to encourage them to find
     balance between DTesters activities and personal lives.  There is currently
     no minimum activity requirement, but complete inactivity for a long period
     of time may result in removal.</span
   >
 </p>
-<p><strong>What is the minimum age requirement for DTesters?</strong></p>
+<p><strong>Q: What is the minimum age requirement for DTesters?</strong></p>
 <p>
   <span style="font-weight: 400"
-    >Discord users must be 13 years of age.  If a Discord Tester is between 13
-    and 18 years of age, a parent or guardian will need to sign the NDA as well
-    as the tester.</span
+    >A: Discord users must be 13 years of age.  If a Discord Tester is between
+    13 and 18 years of age, a parent or guardian will need to sign the NDA as
+    well as the tester.</span
   >
 </p>
 <p>
   <strong
-    >Can I be a Discord Tester even if I don’t live in the United
+    >Q: Can I be a Discord Tester even if I don’t live in the United
     States?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >Discord is a place for all to find belonging, and we have DTesters from all
-    around the world.  Clear written communication in English is necessary at
-    this time. </span
+    >A: Discord is a place for all to find belonging, and we have DTesters from
+    all around the world.  Clear written communication in English is necessary
+    at this time. </span
   >
 </p>
 <p>
   <strong
-    >Can I join DTesters if I don’t want to participate in bug
+    >Q: Can I join DTesters if I don’t want to participate in bug
     reporting/testing?</strong
   >
 </p>
 <p>
   <span style="font-weight: 400"
-    >The new version of DTesters is for adept and active bug
+    >A: The new version of DTesters is for adept and active bug
     reporters/testers.</span
   >
 </p>
 <p><strong>How do I get a Bug Hunter Badge?</strong></p>
 <p>
   <span style="font-weight: 400"
-    >Bug Hunter Badges are available to Discord Testers who meet specific
+    >A: Bug Hunter Badges are available to Discord Testers who meet specific
     requirements.</span
   >
 </p>
-<p><strong>How can I prepare to be a tester?</strong></p>
+<p><strong>Q: How can I prepare to be a tester?</strong></p>
 <p>
   <span style="font-weight: 400"
-    >Check out the Discord Bugs article for guidance on the elements of a
+    >A: Check out the Discord Bugs article for guidance on the elements of a
     quality bug report.  Keep in mind that the most helpful bug reports are
     those that affect the usability and enjoyment of Discord.</span
   >
 </p>
 <p>
-  <strong>Why was the original format of the DTesters server changed?</strong>
+  <strong
+    >Q: Why was the original format of the DTesters server changed?</strong
+  >
 </p>
 <p>
   <span style="font-weight: 400"
-    >The original Discord Testers was a vast community of bug testers and
+    >A: The original Discord Testers was a vast community of bug testers and
     curious folks alike, making it challenging to facilitate great
     communication.  Additionally, the size and scope of interests meant that the
     features that could be tested were limited. We’ve updated the program in
