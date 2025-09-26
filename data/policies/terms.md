@@ -2808,34 +2808,7 @@
     </div>
   </div>
   <div class="footer_new">
-    <div class="footer-styles w-embed">
-      <style>
-        @-moz-document url-prefix() {
-          .dropdown-language-list-wr .dropdown-list-container-wr {
-            scrollbar-width: thin;
-            scrollbar-color: white transparent;
-          }
-        }
-        .dropdown-language-list-wr .dropdown-list-container-wr {
-          max-height: 240px !important;
-          overflow: auto !important;
-        }
-        .dropdown-language-list-wr
-          .dropdown-list-container-wr::-webkit-scrollbar {
-          width: 6px;
-        }
-        .dropdown-language-list-wr
-          .dropdown-list-container-wr::-webkit-scrollbar-thumb {
-          background-color: white;
-          border-radius: 3px;
-          margin-right: 30px;
-        }
-        .dropdown-language-list-wr
-          .dropdown-list-container-wr::-webkit-scrollbar-button {
-          display: none;
-        }
-      </style>
-    </div>
+    <div class="footer-styles w-embed"></div>
     <div class="container-1762">
       <div class="w-layout-grid grid-footer is-new-com">
         <div
