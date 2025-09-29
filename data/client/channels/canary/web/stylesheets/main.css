@@ -60075,7 +60075,7 @@ html .progress__61462 {
       var(--custom-channel-header-height)
   );
   overflow: hidden;
-  padding: 16px 8px;
+  padding: var(--space-16);
   width: 356px;
 }
 .datePickerContainer_f1c5c9 {
@@ -96535,4 +96535,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.b1c58c4f5a133314.css.map*/
+/*# sourceMappingURL=12633.124833b9eb664ef2.css.map*/
