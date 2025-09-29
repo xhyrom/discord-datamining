@@ -57653,7 +57653,7 @@ html .progress__61462 {
 .divider__1bb32 {
   background-color: var(--border-subtle);
   height: 1px;
-  margin: 8px -8px;
+  margin: var(--space-8) calc(var(--space-16) * -1);
 }
 .autocompleteGroupHeader__1bb32 {
   align-items: center;
@@ -94219,4 +94219,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0a750f79fcebc31d.css.map*/
+/*# sourceMappingURL=12633.8788654a199227a9.css.map*/
