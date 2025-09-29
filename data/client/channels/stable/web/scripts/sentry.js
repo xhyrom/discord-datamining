@@ -2780,6 +2780,9 @@
             USER_CHANNELS: "/users/@me/channels",
             USER_WARP_LICENSE: "/users/@me/warp/license",
             USER_WISHLIST: (t) => "/wishlists/".concat(t),
+            USER_WISHLIST_ITEMS: "/users/@me/wishlist/items",
+            USER_WISHLIST_ITEM: (t, e) =>
+              "/users/@me/wishlists/".concat(t, "/items/").concat(e),
             USER_APPLICATION_IDENTITIES: (t) =>
               "/users/".concat(t, "/application-identities"),
             DM_CHANNEL: (t) => "/users/@me/dms/".concat(t),
@@ -3159,6 +3162,7 @@
             RESEND_PHONE: "/phone-verifications/resend",
             RECENT_AVATARS: "/users/@me/avatars",
             RECENT_AVATARS_DELETE: (t) => "/users/@me/avatars/".concat(t),
+            USERS_ME_CUSTOM_THEMES: "/users/@me/custom-themes",
             CONNECTIONS: "/users/@me/connections",
             CONNECTIONS_AUTHORIZE: (t) =>
               "/connections/".concat(t, "/authorize"),
@@ -3339,6 +3343,8 @@
             GUILD_POWERUPS: (t) => "/guilds/".concat(t, "/powerups"),
             GUILD_POWERUP_TOGGLE: (t, e) =>
               "/guilds/".concat(t, "/skus/").concat(e),
+            GUILD_POWERUP_UPDATE: (t, e) =>
+              "/guilds/".concat(t, "/entitlements/").concat(e),
             GAME_SERVERS: (t) => "/guilds/".concat(t, "/game-servers"),
             GAME_SERVER_REGIONS: (t) =>
               "/guilds/".concat(t, "/game-server-regions"),
@@ -6153,6 +6159,7 @@
           (r.SET_HANG_STATUS = "set_hang_status"),
           (r.CLEAR_HANG_STATUS = "clear_hang_status"),
           (r.SWIPE_HANG_STATUS = "swipe_hang_status"),
+          (r.HANG_STATUS_PICKER_OPENED = "hang_status_picker_opened"),
           (r.VIEW_HANG_STATUS = "view_hang_status"),
           (r.HANG_STATUS_FAVORITE_CLICKED = "hang_status_favorite_clicked"),
           (r.HANG_STATUS_CTA_CLICKED = "hang_status_cta_clicked"),
@@ -6442,6 +6449,7 @@
             "promotion_reward_redemption_attempted"),
           (r.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED =
             "game_server_hosting_third_party_consent_accepted"),
+          (r.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6666,7 +6674,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-26-df1cc08bcd3d281c39b4c2468ab8cfa7d1e2236f-discord_web",
+              "2025-09-29-72e646f693cb43ef3f3fe14eb74497132caa5214-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6732,8 +6740,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "450692"),
-            o.YA("builtAt", String("1758933893955"));
+            o.YA("buildNumber", "450719"),
+            o.YA("builtAt", String("1759130336670"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48431,4 +48439,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.c9660e4b26c8304a.js.map
+//# sourceMappingURL=sentry.d6539acb759f9dc6.js.map
