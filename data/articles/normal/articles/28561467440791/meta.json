@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "pending charge",
     "answer-bot",
+    "pending",
+    "pending charge",
     "pending payment",
-    "pending purchase",
-    "pending"
+    "pending purchase"
   ]
 }
