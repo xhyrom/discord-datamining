@@ -12,9 +12,9 @@
 </p>
 <h1 id="h_01K3W2ZXFVDHDW2V6JY7E6YMYP">Promotion Summary</h1>
 <p>
-  <strong>Offer Details:</strong> 1 month of Discord Nitro for WeMod users and 3
-  months of Discord Nitro for WeMod Pro subscribers who created their WeMod
-  accounts before <strong>September 24, 2025</strong>.
+  <strong>Offer Details:</strong> 1 month of Discord Nitro for WeMod free users
+  and 3 months of Discord Nitro for WeMod Pro subscribers who have launched 2+
+  games and have an account that’s at least 6 weeks old. 
 </p>
 <p>
   <strong>Who is Eligible: </strong>Users who have had an active Nitro
@@ -503,10 +503,9 @@
 </p>
 <p><strong>Q: Are all WeMod users eligible for this promotion?</strong></p>
 <p>
-  <strong>A:</strong> This offer is for all WeMod users who created their WeMod
-  accounts before <strong>September 24, 2025</strong>. All WeMod Pro subscribers
-  with an active paid subscription and WeMod free users who have launched 2+
-  games with WeMod are eligible.
+  <strong>A:</strong> All WeMod Pro subscribers with an active paid subscription
+  and WeMod free users who have launched 2+ games with WeMod are eligible for
+  their respective offers if their WeMod accounts are at least 6 weeks old.
 </p>
 <h2 id="h_01K3W2ZXGPXE7HDT967YKTR4FH">Eligibility for the Promotion</h2>
 <p>

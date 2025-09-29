@@ -20,13 +20,13 @@
   "permission_group_id": 1720952,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "refund",
+    "mobile refund",
     "server boost refund",
     "server subscription refund",
     "desktop refund",
-    "mobile refund",
+    "request refund",
+    "refund",
     "nitro refund",
-    "request refund"
+    "answer-bot"
   ]
 }

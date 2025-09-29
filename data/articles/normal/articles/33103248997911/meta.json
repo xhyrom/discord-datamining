@@ -20,9 +20,9 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
-    "unauth charge",
+    "unauthorized charge",
     "how to report charge",
-    "unauthorized charge"
+    "answer-bot",
+    "unauth charge"
   ]
 }

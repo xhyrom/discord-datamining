@@ -20,20 +20,20 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "account",
-    "support",
-    "answer-bot",
-    "subscription",
-    "unauthorized",
-    "refund",
-    "request",
-    "unrecognized",
-    "charge",
-    "unknown",
-    "can't",
     "unwanted",
+    "subscription",
+    "can't",
     "access",
     "my",
-    "renewal"
+    "account",
+    "renewal",
+    "unknown",
+    "unauthorized",
+    "unrecognized",
+    "refund",
+    "answer-bot",
+    "support",
+    "request",
+    "charge"
   ]
 }
