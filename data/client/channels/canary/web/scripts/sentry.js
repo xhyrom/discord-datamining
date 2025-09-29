@@ -3243,7 +3243,6 @@
             USER_GUILD_SETTINGS_BULK: "/users/@me/guilds/settings",
             USER_GUILD_SETTINGS: (t) =>
               "/users/@me/guilds/".concat(t, "/settings"),
-            APPLICATIONS_DETECTABLE: "/applications/detectable",
             GAMES_DETECTABLE: "/games/detectable",
             APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
             APPLICATION_ICON: (t, e) =>
@@ -4317,8 +4316,6 @@
             CONFERENCE_MODE: "/conference-mode",
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
-            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-              "/settings/quest-preview-tool-2?quest_id=".concat(t),
             QUEST_PREVIEW_TOOL_2: (t) =>
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
           });
@@ -4578,6 +4575,8 @@
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
             FAMILY_CENTER_PARENTAL_CONTROLS: "Family Center Parental Controls",
+            FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS:
+              "Family Center Parental Controls Sensitive Content Filters",
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
@@ -6674,7 +6673,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a1c4455001420760bb6e50734dafd28991aa0dc9",
+            release: "discord_web-058928c753f31d99e958f2778b7b639a53c09e1f",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6740,8 +6739,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "450962"),
-            o.YA("builtAt", String("1759175472106"));
+            o.YA("buildNumber", "450984"),
+            o.YA("builtAt", String("1759176688976"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11928,8 +11927,6 @@
           REPORT: "".concat(i, "/report"),
           QUEST_PREVIEW_TOOL_2: (t) =>
             "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
-          SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-            "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
         var I =
           (((r = I || {}).INDEX = "/"),
@@ -48439,4 +48436,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.333db281123f973a.js.map
+//# sourceMappingURL=sentry.299fd98b4f6b17e0.js.map
