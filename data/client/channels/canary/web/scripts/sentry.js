@@ -3708,6 +3708,7 @@
               "/guilds/automations/email-domain-lookup/verify-code",
             OUTBOUND_PROMOTIONS: "/outbound-promotions",
             OUTBOUND_PROMOTIONS_PREVIEW: "/outbound-promotions/preview",
+            PROMOTIONS: "/promotions",
             BOGO_PROMOTIONS: "/bogo-promotions",
             CLAIMED_OUTBOUND_PROMOTION_CODES:
               "/users/@me/outbound-promotions/codes",
@@ -6673,7 +6674,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7b75ec166832104fd155dcd7ee7232eac88360ef",
+            release: "discord_web-33a9fdaa4115f3811341cf344d0b6fa14901731b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6739,8 +6740,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "450748"),
-            o.YA("builtAt", String("1759156641245"));
+            o.YA("buildNumber", "450757"),
+            o.YA("builtAt", String("1759157853585"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48438,4 +48439,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.35008c4e13926683.js.map
+//# sourceMappingURL=sentry.396cc815c6eba3d8.js.map
