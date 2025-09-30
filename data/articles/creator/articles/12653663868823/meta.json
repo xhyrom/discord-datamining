@@ -23,5 +23,6 @@
     "answer-bot",
     "server subscriptions",
     "ownership transfer"
-  ]
+  ],
+  "user_segment_ids": []
 }

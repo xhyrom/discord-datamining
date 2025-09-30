@@ -23,5 +23,6 @@
     "answer-bot",
     "server subscription",
     "media channel"
-  ]
+  ],
+  "user_segment_ids": []
 }
