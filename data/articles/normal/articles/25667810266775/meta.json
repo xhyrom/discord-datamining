@@ -20,9 +20,9 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "answer-bot",
     "in case you missed it",
-    "ICYMI"
+    "ICYMI",
+    "answer-bot"
   ],
   "user_segment_ids": []
 }

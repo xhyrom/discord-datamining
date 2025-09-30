@@ -20,16 +20,16 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "display",
     "answer-bot",
-    "nitro",
     "faq",
-    "customize",
+    "discord",
+    "nitro",
     "feature",
     "personalize",
-    "discord",
+    "display",
     "name",
-    "styles"
+    "styles",
+    "customize"
   ],
   "user_segment_ids": []
 }

@@ -21,13 +21,13 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "data",
-    "app",
+    "transparency",
     "policy",
     "privacy",
+    "app",
     "tracking",
-    "transparency",
-    "iOS"
+    "iOS",
+    "data"
   ],
   "user_segment_ids": []
 }

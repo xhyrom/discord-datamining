@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "Nitro",
     "answer-bot",
+    "Credits",
+    "in-app",
+    "Nitro",
     "credit",
-    "quest",
-    "quests",
     "discord",
     "rewards",
-    "in-app",
-    "Credits"
+    "quest",
+    "quests"
   ],
   "user_segment_ids": []
 }

@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "MFA",
     "2FA",
     "authenticator",
-    "answer-bot",
-    "MFA"
+    "answer-bot"
   ],
   "user_segment_ids": []
 }

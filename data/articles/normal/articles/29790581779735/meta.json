@@ -20,19 +20,19 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "avatar",
-    "subscribe",
     "answer-bot",
-    "subscription",
     "nitro",
-    "quest",
-    "quests",
     "decorations",
     "shop",
-    "decoration",
-    "deco",
+    "subscribers",
+    "subscribe",
+    "subscription",
+    "quest",
     "perk",
-    "subscribers"
+    "avatar",
+    "deco",
+    "decoration",
+    "quests"
   ],
   "user_segment_ids": []
 }
