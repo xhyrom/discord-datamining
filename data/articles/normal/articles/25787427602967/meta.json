@@ -31,13 +31,13 @@
   ],
   "label_names": [
     "answer-bot",
-    "amazon",
-    "help",
-    "sopport",
-    "discord",
+    "connection",
     "music",
     "activity",
-    "connection"
+    "discord",
+    "help",
+    "amazon",
+    "sopport"
   ],
   "user_segment_ids": []
 }

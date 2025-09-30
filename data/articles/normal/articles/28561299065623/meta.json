@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "failed payment",
     "answer-bot",
-    "invalid payment",
-    "payment error"
+    "payment error",
+    "failed payment",
+    "invalid payment"
   ],
   "user_segment_ids": []
 }

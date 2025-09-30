@@ -20,11 +20,11 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "roblox",
-    "connections",
+    "answer-bot",
     "connection",
-    "roblox connection",
-    "answer-bot"
+    "connections",
+    "roblox",
+    "roblox connection"
   ],
   "user_segment_ids": []
 }
