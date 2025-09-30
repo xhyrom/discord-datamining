@@ -27,5 +27,6 @@
     "app directory",
     "find apps",
     "add apps"
-  ]
+  ],
+  "user_segment_ids": []
 }

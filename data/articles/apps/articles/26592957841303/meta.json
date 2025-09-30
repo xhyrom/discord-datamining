@@ -28,5 +28,6 @@
     "app discovery",
     "discovery",
     "apps in server"
-  ]
+  ],
+  "user_segment_ids": []
 }

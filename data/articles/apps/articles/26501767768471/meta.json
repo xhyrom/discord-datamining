@@ -30,5 +30,6 @@
     "subscriptions",
     "billing",
     "premium apps"
-  ]
+  ],
+  "user_segment_ids": []
 }

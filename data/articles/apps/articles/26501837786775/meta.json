@@ -26,5 +26,6 @@
     "app command",
     "bots",
     "slash commands"
-  ]
+  ],
+  "user_segment_ids": []
 }

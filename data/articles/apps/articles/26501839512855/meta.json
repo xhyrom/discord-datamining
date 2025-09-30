@@ -24,5 +24,6 @@
     "ephemeral messages",
     "system message",
     "app command"
-  ]
+  ],
+  "user_segment_ids": []
 }

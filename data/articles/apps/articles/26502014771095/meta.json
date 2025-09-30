@@ -32,5 +32,6 @@
     "public game",
     "matchmaking",
     "Discord game"
-  ]
+  ],
+  "user_segment_ids": []
 }
