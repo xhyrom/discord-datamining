@@ -64,6 +64,8 @@
   "display-md": "display-md_a7acae",
   "display-lg": "display-lg_a7acae",
   "code": "code_e13eda",
+  "hiddenVisually": "hiddenVisually_b18fe2",
+  "showOnFocus": "showOnFocus_b18fe2",
   "badge": "badge_dc2e0e",
   "default": "default_ddd181",
   "expressive": "expressive_a22cb0",
