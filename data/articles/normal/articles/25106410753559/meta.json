@@ -22,5 +22,6 @@
   "label_names": [
     "answer-bot",
     "giveaway"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -31,5 +31,6 @@
     "MFA",
     "SMS",
     "authenticator app"
-  ]
+  ],
+  "user_segment_ids": []
 }

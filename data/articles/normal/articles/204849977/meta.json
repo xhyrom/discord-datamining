@@ -29,5 +29,6 @@
     "create server",
     "make server",
     "server invites"
-  ]
+  ],
+  "user_segment_ids": []
 }

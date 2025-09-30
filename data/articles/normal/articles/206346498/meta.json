@@ -26,5 +26,6 @@
     "message link",
     "message ID",
     "user ID"
-  ]
+  ],
+  "user_segment_ids": []
 }

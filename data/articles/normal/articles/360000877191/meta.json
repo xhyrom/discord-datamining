@@ -23,5 +23,6 @@
     "answer-bot",
     "spellchecker",
     "spellcheck"
-  ]
+  ],
+  "user_segment_ids": []
 }

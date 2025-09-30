@@ -32,5 +32,6 @@
     "Twitch Sync",
     "affiliate",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

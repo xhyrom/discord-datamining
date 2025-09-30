@@ -23,5 +23,6 @@
     "notification",
     "email",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

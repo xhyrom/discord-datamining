@@ -33,5 +33,6 @@
     "claimed",
     "account",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

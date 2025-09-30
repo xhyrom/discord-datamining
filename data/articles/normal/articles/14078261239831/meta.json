@@ -25,5 +25,6 @@
     "community server",
     "server identity",
     "friend server"
-  ]
+  ],
+  "user_segment_ids": []
 }

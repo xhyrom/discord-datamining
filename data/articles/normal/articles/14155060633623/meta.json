@@ -35,5 +35,6 @@
     "parents",
     "guardians",
     "linked account"
-  ]
+  ],
+  "user_segment_ids": []
 }

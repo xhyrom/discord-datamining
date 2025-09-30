@@ -35,5 +35,6 @@
     "nsfw",
     "adult",
     "command"
-  ]
+  ],
+  "user_segment_ids": []
 }

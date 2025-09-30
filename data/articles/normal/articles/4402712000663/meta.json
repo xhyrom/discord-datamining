@@ -23,5 +23,6 @@
     "answer-bot",
     "hold",
     "temporary hold"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -26,5 +26,6 @@
     "audio bitrate",
     "bitrate",
     "voice channel"
-  ]
+  ],
+  "user_segment_ids": []
 }

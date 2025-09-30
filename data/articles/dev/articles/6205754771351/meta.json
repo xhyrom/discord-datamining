@@ -28,5 +28,6 @@
     "Bot",
     "api",
     "gateway intents"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -27,5 +27,6 @@
     "age",
     "guidelines",
     "birthday"
-  ]
+  ],
+  "user_segment_ids": []
 }

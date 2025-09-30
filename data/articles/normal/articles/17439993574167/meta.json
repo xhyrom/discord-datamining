@@ -33,5 +33,6 @@
     "timeout",
     "alerts",
     "raid protection"
-  ]
+  ],
+  "user_segment_ids": []
 }

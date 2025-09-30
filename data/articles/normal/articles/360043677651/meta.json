@@ -26,5 +26,6 @@
     "email error",
     "cannot claim email",
     "email does not exist"
-  ]
+  ],
+  "user_segment_ids": []
 }

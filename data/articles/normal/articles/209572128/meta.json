@@ -27,5 +27,6 @@
     "left",
     "exited",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

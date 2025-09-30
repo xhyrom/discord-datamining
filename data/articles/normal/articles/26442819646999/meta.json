@@ -32,5 +32,6 @@
     "faq",
     "reminders",
     "bookmarks"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -27,5 +27,6 @@
     "apps",
     "directory",
     "discovery"
-  ]
+  ],
+  "user_segment_ids": []
 }

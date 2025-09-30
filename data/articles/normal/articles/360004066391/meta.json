@@ -24,5 +24,6 @@
     "disabled account",
     "delete account",
     "restore account"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -26,5 +26,6 @@
     "app",
     "icon",
     "custom app icon"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -25,5 +25,6 @@
     "remove",
     "delete",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

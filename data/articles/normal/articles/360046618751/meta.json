@@ -34,5 +34,6 @@
     "begin",
     "phone",
     "join"
-  ]
+  ],
+  "user_segment_ids": []
 }

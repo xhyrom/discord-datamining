@@ -24,5 +24,6 @@
     "localization",
     "locale",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

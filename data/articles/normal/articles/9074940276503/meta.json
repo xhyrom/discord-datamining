@@ -27,5 +27,6 @@
     "authorize",
     "fraudulent",
     "action required"
-  ]
+  ],
+  "user_segment_ids": []
 }

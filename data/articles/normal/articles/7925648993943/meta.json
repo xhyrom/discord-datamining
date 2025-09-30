@@ -23,5 +23,6 @@
     "safety",
     "answer-bot",
     "crisis-text-line"
-  ]
+  ],
+  "user_segment_ids": []
 }

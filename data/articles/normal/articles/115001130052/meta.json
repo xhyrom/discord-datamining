@@ -23,5 +23,6 @@
     "stuck",
     "connecting",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

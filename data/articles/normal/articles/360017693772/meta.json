@@ -23,5 +23,6 @@
     "payment",
     "billing",
     "purchase"
-  ]
+  ],
+  "user_segment_ids": []
 }

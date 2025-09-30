@@ -23,5 +23,6 @@
     "answer-bot",
     "data package",
     "request data package"
-  ]
+  ],
+  "user_segment_ids": []
 }

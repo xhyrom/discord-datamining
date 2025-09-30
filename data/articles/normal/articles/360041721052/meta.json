@@ -29,5 +29,6 @@
     "answer-bot",
     "server",
     "webcam"
-  ]
+  ],
+  "user_segment_ids": []
 }

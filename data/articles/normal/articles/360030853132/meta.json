@@ -23,5 +23,6 @@
     "servers",
     "folders",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

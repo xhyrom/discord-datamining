@@ -26,5 +26,6 @@
     "sdk",
     "deprecation",
     "game"
-  ]
+  ],
+  "user_segment_ids": []
 }

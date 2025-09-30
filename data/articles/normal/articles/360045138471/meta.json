@@ -37,5 +37,6 @@
     "AV1",
     "video codec",
     "H.264"
-  ]
+  ],
+  "user_segment_ids": []
 }

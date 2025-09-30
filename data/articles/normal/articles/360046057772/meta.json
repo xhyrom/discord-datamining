@@ -27,5 +27,6 @@
     "tester",
     "dtesters",
     "bug tester"
-  ]
+  ],
+  "user_segment_ids": []
 }

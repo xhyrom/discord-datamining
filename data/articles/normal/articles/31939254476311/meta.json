@@ -27,5 +27,6 @@
     "request",
     "VAT",
     "exemption"
-  ]
+  ],
+  "user_segment_ids": []
 }

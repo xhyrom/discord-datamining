@@ -30,5 +30,6 @@
     "effects",
     "collectible",
     "server profiles"
-  ]
+  ],
+  "user_segment_ids": []
 }

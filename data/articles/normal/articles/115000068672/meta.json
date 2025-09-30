@@ -32,5 +32,6 @@
     "message filter",
     "spam filter",
     "explicit image filter"
-  ]
+  ],
+  "user_segment_ids": []
 }

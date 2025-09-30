@@ -33,5 +33,6 @@
     "deco",
     "perk",
     "subscribers"
-  ]
+  ],
+  "user_segment_ids": []
 }

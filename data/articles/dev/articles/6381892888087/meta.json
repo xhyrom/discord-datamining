@@ -25,5 +25,6 @@
     "bot",
     "interactions",
     "buttons"
-  ]
+  ],
+  "user_segment_ids": []
 }

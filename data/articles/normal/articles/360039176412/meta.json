@@ -26,5 +26,6 @@
     "permissions",
     "mentions",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

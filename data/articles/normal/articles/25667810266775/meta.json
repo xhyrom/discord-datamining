@@ -23,5 +23,6 @@
     "answer-bot",
     "in case you missed it",
     "ICYMI"
-  ]
+  ],
+  "user_segment_ids": []
 }

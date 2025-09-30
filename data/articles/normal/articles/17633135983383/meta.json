@@ -34,5 +34,6 @@
     "premium",
     "admins",
     "products"
-  ]
+  ],
+  "user_segment_ids": []
 }

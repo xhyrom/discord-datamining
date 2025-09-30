@@ -27,5 +27,6 @@
     "remove a phone number",
     "accidental account",
     "unknown number"
-  ]
+  ],
+  "user_segment_ids": []
 }

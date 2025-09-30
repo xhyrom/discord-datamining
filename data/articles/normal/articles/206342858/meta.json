@@ -26,5 +26,6 @@
     "preview",
     "image",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

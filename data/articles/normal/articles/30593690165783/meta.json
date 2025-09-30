@@ -38,5 +38,6 @@
     "cost",
     "items",
     "earn"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -32,5 +32,6 @@
     "unrecognized",
     "charge",
     "unknown"
-  ]
+  ],
+  "user_segment_ids": []
 }

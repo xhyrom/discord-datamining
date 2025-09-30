@@ -25,5 +25,6 @@
     "answer-bot",
     "settings",
     "highlights"
-  ]
+  ],
+  "user_segment_ids": []
 }

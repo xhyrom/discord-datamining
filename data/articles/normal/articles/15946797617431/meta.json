@@ -46,5 +46,6 @@
     "quarantine",
     "mod",
     "mod view"
-  ]
+  ],
+  "user_segment_ids": []
 }

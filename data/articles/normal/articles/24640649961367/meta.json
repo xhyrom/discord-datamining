@@ -29,5 +29,6 @@
     "message",
     "messages",
     "forward"
-  ]
+  ],
+  "user_segment_ids": []
 }

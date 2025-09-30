@@ -31,5 +31,6 @@
     "payments",
     "pending",
     "pending charges"
-  ]
+  ],
+  "user_segment_ids": []
 }

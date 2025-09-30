@@ -26,5 +26,6 @@
     "Server",
     "answer-bot",
     "server"
-  ]
+  ],
+  "user_segment_ids": []
 }

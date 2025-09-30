@@ -36,5 +36,6 @@
     "communities",
     "discover",
     "public"
-  ]
+  ],
+  "user_segment_ids": []
 }

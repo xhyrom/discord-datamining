@@ -26,5 +26,6 @@
     "Messages",
     "answer-bot",
     "direct message"
-  ]
+  ],
+  "user_segment_ids": []
 }

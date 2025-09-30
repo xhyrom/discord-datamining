@@ -26,5 +26,6 @@
     "chrome",
     "google",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

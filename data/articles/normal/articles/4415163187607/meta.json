@@ -25,5 +25,6 @@
     "subscriptions",
     "server subscriptions",
     "memberships"
-  ]
+  ],
+  "user_segment_ids": []
 }

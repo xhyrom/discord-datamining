@@ -28,5 +28,6 @@
     "changing email too fast",
     "forgot email",
     "lost access to email"
-  ]
+  ],
+  "user_segment_ids": []
 }

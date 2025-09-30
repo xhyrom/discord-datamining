@@ -24,5 +24,6 @@
     "push to talk",
     "notifications",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

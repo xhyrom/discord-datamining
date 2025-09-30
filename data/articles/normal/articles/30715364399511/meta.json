@@ -38,5 +38,6 @@
     "names",
     "avatars",
     "icons"
-  ]
+  ],
+  "user_segment_ids": []
 }

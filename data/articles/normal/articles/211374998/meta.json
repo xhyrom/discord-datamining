@@ -28,5 +28,6 @@
     "online",
     "offline",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

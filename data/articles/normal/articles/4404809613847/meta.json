@@ -23,5 +23,6 @@
     "moderation",
     "answer-bot",
     "thread"
-  ]
+  ],
+  "user_segment_ids": []
 }

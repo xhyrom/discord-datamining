@@ -25,5 +25,6 @@
     "filter",
     "message-requests",
     "spam folder"
-  ]
+  ],
+  "user_segment_ids": []
 }

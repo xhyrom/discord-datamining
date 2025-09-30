@@ -25,5 +25,6 @@
     "permissions",
     "answer-bot",
     "channels"
-  ]
+  ],
+  "user_segment_ids": []
 }

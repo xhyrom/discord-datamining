@@ -26,5 +26,6 @@
     "answer-bot",
     "audio",
     "krisp"
-  ]
+  ],
+  "user_segment_ids": []
 }

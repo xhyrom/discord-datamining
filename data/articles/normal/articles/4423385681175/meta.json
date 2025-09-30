@@ -25,5 +25,6 @@
     "email is already registered",
     "email error",
     "change email"
-  ]
+  ],
+  "user_segment_ids": []
 }

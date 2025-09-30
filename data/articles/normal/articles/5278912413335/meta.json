@@ -24,5 +24,6 @@
     "trial",
     "membership",
     "paid"
-  ]
+  ],
+  "user_segment_ids": []
 }

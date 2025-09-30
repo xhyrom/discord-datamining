@@ -26,5 +26,6 @@
     "home",
     "experiment",
     "page"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -25,5 +25,6 @@
     "static",
     "distort",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

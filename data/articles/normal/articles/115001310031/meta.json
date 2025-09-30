@@ -25,5 +25,6 @@
     "no route",
     "rtc connecting",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

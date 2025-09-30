@@ -28,5 +28,6 @@
     "answer-bot",
     "reset password",
     "forgot password"
-  ]
+  ],
+  "user_segment_ids": []
 }

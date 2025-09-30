@@ -30,5 +30,6 @@
     "enable server discovery",
     "disable community",
     "enabling community"
-  ]
+  ],
+  "user_segment_ids": []
 }

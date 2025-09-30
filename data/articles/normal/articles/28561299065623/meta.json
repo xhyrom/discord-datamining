@@ -24,5 +24,6 @@
     "payment error",
     "failed payment",
     "invalid payment"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -32,5 +32,6 @@
     "upgrade",
     "proration",
     "prorated"
-  ]
+  ],
+  "user_segment_ids": []
 }

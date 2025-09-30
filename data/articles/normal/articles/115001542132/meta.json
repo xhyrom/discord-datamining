@@ -27,5 +27,6 @@
     "custom invite link",
     "vanity URL",
     "custom url"
-  ]
+  ],
+  "user_segment_ids": []
 }

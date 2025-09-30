@@ -26,5 +26,6 @@
     "64-bit",
     "windows",
     "32-bit"
-  ]
+  ],
+  "user_segment_ids": []
 }

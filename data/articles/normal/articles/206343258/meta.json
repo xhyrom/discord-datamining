@@ -25,5 +25,6 @@
     "delete channel",
     "channel",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

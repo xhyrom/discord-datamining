@@ -23,5 +23,6 @@
     "slider",
     "sounds",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

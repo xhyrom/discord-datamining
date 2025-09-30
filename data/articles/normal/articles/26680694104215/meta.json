@@ -24,5 +24,6 @@
     "invalid phone number",
     "phone registration",
     "phone errors"
-  ]
+  ],
+  "user_segment_ids": []
 }

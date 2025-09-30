@@ -25,5 +25,6 @@
     "beta",
     "alpha",
     "canary"
-  ]
+  ],
+  "user_segment_ids": []
 }

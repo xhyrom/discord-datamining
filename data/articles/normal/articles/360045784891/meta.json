@@ -32,5 +32,6 @@
     "in-call",
     "call",
     "go live"
-  ]
+  ],
+  "user_segment_ids": []
 }

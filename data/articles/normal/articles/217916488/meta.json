@@ -28,5 +28,6 @@
     "security",
     "answer-bot",
     "block user"
-  ]
+  ],
+  "user_segment_ids": []
 }

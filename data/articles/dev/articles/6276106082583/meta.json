@@ -26,5 +26,6 @@
     "api",
     "bot verification",
     "age"
-  ]
+  ],
+  "user_segment_ids": []
 }

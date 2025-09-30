@@ -23,5 +23,6 @@
     "answer-bot",
     "suspicious link",
     "message not delivered"
-  ]
+  ],
+  "user_segment_ids": []
 }

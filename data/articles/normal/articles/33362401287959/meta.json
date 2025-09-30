@@ -44,5 +44,6 @@
     "article",
     "gated",
     "friend requests"
-  ]
+  ],
+  "user_segment_ids": []
 }

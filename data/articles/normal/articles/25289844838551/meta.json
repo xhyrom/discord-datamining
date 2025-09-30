@@ -26,5 +26,6 @@
     "overlay",
     "answer-bot",
     "game overlay"
-  ]
+  ],
+  "user_segment_ids": []
 }

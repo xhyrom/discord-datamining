@@ -23,5 +23,6 @@
     "switch",
     "interface",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

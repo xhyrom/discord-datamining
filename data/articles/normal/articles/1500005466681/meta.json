@@ -25,5 +25,6 @@
     "answer-bot",
     "text",
     "file"
-  ]
+  ],
+  "user_segment_ids": []
 }

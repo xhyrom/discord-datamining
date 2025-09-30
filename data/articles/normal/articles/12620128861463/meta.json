@@ -28,5 +28,6 @@
     "display name",
     "custom tag",
     "server nickname"
-  ]
+  ],
+  "user_segment_ids": []
 }

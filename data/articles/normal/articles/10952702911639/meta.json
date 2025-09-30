@@ -29,5 +29,6 @@
     "application commands",
     "command lockout",
     "command permissions lockout"
-  ]
+  ],
+  "user_segment_ids": []
 }

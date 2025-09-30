@@ -24,5 +24,6 @@
     "rich presence",
     "activity status",
     "activity status settings"
-  ]
+  ],
+  "user_segment_ids": []
 }

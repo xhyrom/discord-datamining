@@ -45,5 +45,6 @@
     "Tab",
     "Servers",
     "Discovery"
-  ]
+  ],
+  "user_segment_ids": []
 }

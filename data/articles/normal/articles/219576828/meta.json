@@ -32,5 +32,6 @@
     "multi-factor",
     "authenication",
     "MFA"
-  ]
+  ],
+  "user_segment_ids": []
 }

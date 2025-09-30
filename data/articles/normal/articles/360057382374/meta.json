@@ -24,5 +24,6 @@
     "Messages",
     "answer-bot",
     "reply"
-  ]
+  ],
+  "user_segment_ids": []
 }

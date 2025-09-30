@@ -30,5 +30,6 @@
     "answer-bot",
     "spam requests",
     "add friend"
-  ]
+  ],
+  "user_segment_ids": []
 }

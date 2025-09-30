@@ -23,5 +23,6 @@
     "account",
     "answer-bot",
     "multi"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -26,5 +26,6 @@
     "thread",
     "threads",
     "private threads"
-  ]
+  ],
+  "user_segment_ids": []
 }

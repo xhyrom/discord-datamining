@@ -28,5 +28,6 @@
     "support",
     "answer-bot",
     "invite link"
-  ]
+  ],
+  "user_segment_ids": []
 }

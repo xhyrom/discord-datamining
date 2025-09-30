@@ -24,5 +24,6 @@
     "answer-bot",
     "events",
     "schedule"
-  ]
+  ],
+  "user_segment_ids": []
 }

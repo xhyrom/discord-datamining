@@ -24,5 +24,6 @@
     "authenticator",
     "answer-bot",
     "MFA"
-  ]
+  ],
+  "user_segment_ids": []
 }

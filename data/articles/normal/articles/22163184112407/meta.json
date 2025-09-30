@@ -23,5 +23,6 @@
     "answer-bot",
     "poll",
     "polls"
-  ]
+  ],
+  "user_segment_ids": []
 }

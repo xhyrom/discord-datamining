@@ -26,5 +26,6 @@
     "mute",
     "alert",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

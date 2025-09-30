@@ -29,5 +29,6 @@
     "receiver",
     "2 weeks",
     "sender"
-  ]
+  ],
+  "user_segment_ids": []
 }

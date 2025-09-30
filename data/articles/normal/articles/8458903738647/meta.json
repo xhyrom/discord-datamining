@@ -23,5 +23,6 @@
     "answer-bot",
     "pause invites",
     "pause server invites"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -31,5 +31,6 @@
     "view",
     "permission",
     "perms"
-  ]
+  ],
+  "user_segment_ids": []
 }

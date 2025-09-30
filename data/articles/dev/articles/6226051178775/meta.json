@@ -28,5 +28,6 @@
     "Stripe Identity Verification",
     "Identity Verification",
     "Identity"
-  ]
+  ],
+  "user_segment_ids": []
 }

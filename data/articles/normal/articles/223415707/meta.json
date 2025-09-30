@@ -26,5 +26,6 @@
     "broadcast",
     "streamkit",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

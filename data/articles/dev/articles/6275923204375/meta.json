@@ -26,5 +26,6 @@
     "bot verification",
     "age",
     "id"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -25,5 +25,6 @@
     "stage",
     "stage channel",
     "stage channels"
-  ]
+  ],
+  "user_segment_ids": []
 }

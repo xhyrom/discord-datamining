@@ -26,5 +26,6 @@
     "rtc",
     "amd",
     "cpu"
-  ]
+  ],
+  "user_segment_ids": []
 }

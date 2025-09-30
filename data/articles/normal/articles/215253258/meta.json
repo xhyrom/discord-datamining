@@ -34,5 +34,6 @@
     "discord",
     "reaction",
     "notify"
-  ]
+  ],
+  "user_segment_ids": []
 }

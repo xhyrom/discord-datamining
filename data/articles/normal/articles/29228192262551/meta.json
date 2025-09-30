@@ -25,5 +25,6 @@
     "connections",
     "bluesky",
     "discord connections"
-  ]
+  ],
+  "user_segment_ids": []
 }

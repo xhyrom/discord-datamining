@@ -23,5 +23,6 @@
     "recover",
     "undelete",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

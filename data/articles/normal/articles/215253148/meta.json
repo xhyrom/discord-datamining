@@ -24,5 +24,6 @@
     "notification",
     "mention",
     "answer-bot"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -30,5 +30,6 @@
     "server subscriptions refund",
     "premium app subscription refund",
     "Apple purchases"
-  ]
+  ],
+  "user_segment_ids": []
 }

@@ -25,5 +25,6 @@
     "payment source",
     "payment method",
     "venmo"
-  ]
+  ],
+  "user_segment_ids": []
 }

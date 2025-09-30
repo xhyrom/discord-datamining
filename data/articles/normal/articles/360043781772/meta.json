@@ -24,5 +24,6 @@
     "server list",
     "keybind",
     "reader"
-  ]
+  ],
+  "user_segment_ids": []
 }

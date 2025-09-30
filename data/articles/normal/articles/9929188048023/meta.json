@@ -24,5 +24,6 @@
     "connection",
     "integration",
     "crunchyroll"
-  ]
+  ],
+  "user_segment_ids": []
 }

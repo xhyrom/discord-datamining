@@ -25,5 +25,6 @@
     "pending charge",
     "pending payment",
     "pending purchase"
-  ]
+  ],
+  "user_segment_ids": []
 }

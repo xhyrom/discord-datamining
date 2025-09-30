@@ -28,5 +28,6 @@
     "cancel premium",
     "cancel server boost",
     "cancel server subscription"
-  ]
+  ],
+  "user_segment_ids": []
 }

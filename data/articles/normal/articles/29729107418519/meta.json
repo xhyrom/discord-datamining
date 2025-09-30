@@ -35,5 +35,6 @@
     "apply",
     "discoverable",
     "only"
-  ]
+  ],
+  "user_segment_ids": []
 }

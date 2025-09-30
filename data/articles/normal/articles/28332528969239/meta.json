@@ -28,5 +28,6 @@
     "mobile refund",
     "nitro refund",
     "request refund"
-  ]
+  ],
+  "user_segment_ids": []
 }

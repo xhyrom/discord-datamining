@@ -23,5 +23,6 @@
     "login",
     "answer-bot",
     "qr code"
-  ]
+  ],
+  "user_segment_ids": []
 }

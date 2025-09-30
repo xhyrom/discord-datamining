@@ -25,5 +25,6 @@
     "expired",
     "answer-bot",
     "invalid invite"
-  ]
+  ],
+  "user_segment_ids": []
 }

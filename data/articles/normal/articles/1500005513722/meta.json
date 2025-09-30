@@ -29,5 +29,6 @@
     "events",
     "ama",
     "event"
-  ]
+  ],
+  "user_segment_ids": []
 }

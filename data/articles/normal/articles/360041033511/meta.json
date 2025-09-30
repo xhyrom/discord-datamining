@@ -28,5 +28,6 @@
     "server",
     "template",
     "server template"
-  ]
+  ],
+  "user_segment_ids": []
 }
