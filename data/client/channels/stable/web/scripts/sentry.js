@@ -3243,7 +3243,6 @@
             USER_GUILD_SETTINGS_BULK: "/users/@me/guilds/settings",
             USER_GUILD_SETTINGS: (t) =>
               "/users/@me/guilds/".concat(t, "/settings"),
-            APPLICATIONS_DETECTABLE: "/applications/detectable",
             GAMES_DETECTABLE: "/games/detectable",
             APPLICATIONS_GAMES_SUPPLEMENTAL: "/applications/games-supplemental",
             APPLICATION_ICON: (t, e) =>
@@ -3590,6 +3589,8 @@
                 .concat(t, "/activities/")
                 .concat(e, "/instances/")
                 .concat(a, "/leave"),
+            ACTIVITIES_DISCORD_CONFIG: (t) =>
+              "/activities/discord-config/".concat(t),
             APPLICATION_UPLOAD_ATTACHMENT: (t) =>
               "/applications/".concat(t, "/attachment"),
             APPLICATION_PROXY_TICKET: (t) =>
@@ -3708,6 +3709,7 @@
               "/guilds/automations/email-domain-lookup/verify-code",
             OUTBOUND_PROMOTIONS: "/outbound-promotions",
             OUTBOUND_PROMOTIONS_PREVIEW: "/outbound-promotions/preview",
+            PROMOTIONS: "/promotions",
             BOGO_PROMOTIONS: "/bogo-promotions",
             CLAIMED_OUTBOUND_PROMOTION_CODES:
               "/users/@me/outbound-promotions/codes",
@@ -4316,8 +4318,6 @@
             CONFERENCE_MODE: "/conference-mode",
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
-            SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-              "/settings/quest-preview-tool-2?quest_id=".concat(t),
             QUEST_PREVIEW_TOOL_2: (t) =>
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
           });
@@ -4577,6 +4577,8 @@
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
             FAMILY_CENTER_PARENTAL_CONTROLS: "Family Center Parental Controls",
+            FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS:
+              "Family Center Parental Controls Sensitive Content Filters",
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
@@ -5020,6 +5022,7 @@
           (r.VIDEO_STREAM_ENDED = "video_stream_ended"),
           (r.VIDEO_STREAM_STARTED = "video_stream_started"),
           (r.RECEIVER_FIRST_FRAME_DELIVERED = "receiver_first_frame_delivered"),
+          (r.STREAMER_FIRST_FRAME_ENCRYPTED = "streamer_first_frame_encrypted"),
           (r.STREAM_WARNING_TRIGGERED = "stream_warning_triggered"),
           (r.STREAM_REPORT_PROBLEM = "stream_report_problem"),
           (r.STREAM_SETTINGS_UPDATE = "stream_settings_update"),
@@ -6592,13 +6595,14 @@
             STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
             SUBSCRIPTION_PLANS: (t) =>
               null == t ? null : ["subscription-plans", t],
-            APPLICATION_WIDGET_APPLICATION_IDS: [
-              "application-widget-application-ids",
+            APPLICATION_WIDGET_APPLICATION_CONFIGS: [
+              "application-widget-application-configs",
             ],
             USER_APPLICATION_IDENTITIES: (t) => [
               "user-application-identities",
               t,
             ],
+            ACTIVITIES_DISCORD_CONFIG: (t) => ["activities-discord-config", t],
             __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (t) =>
               null == t ? null : ["useParentSkuData", t],
           });
@@ -6674,7 +6678,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-09-29-72e646f693cb43ef3f3fe14eb74497132caa5214-discord_web",
+              "2025-09-30-cf539f7850db6ed66c211110ab99e550b6fde7d7-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6740,8 +6744,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "450719"),
-            o.YA("builtAt", String("1759130336670"));
+            o.YA("buildNumber", "451260"),
+            o.YA("builtAt", String("1759217060500"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11928,8 +11932,6 @@
           REPORT: "".concat(i, "/report"),
           QUEST_PREVIEW_TOOL_2: (t) =>
             "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
-          SETTINGS_QUEST_PREVIEW_TOOL_2: (t) =>
-            "".concat(i, "/settings/quest-preview-tool-2?quest_id=").concat(t),
         });
         var I =
           (((r = I || {}).INDEX = "/"),
@@ -48439,4 +48441,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d6539acb759f9dc6.js.map
+//# sourceMappingURL=sentry.f34e8aa87688a78f.js.map
