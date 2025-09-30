@@ -14519,7 +14519,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     --custom-viewport-padding: var(--space-40);
   }
 }
-@container outer-container (--max-width-desktop) {
+@container outer-container (max-width: 1080px) {
   .modal_e44912 {
     border: none;
     border-radius: 0;
@@ -28277,11 +28277,6 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   min-height: 120px;
   padding: 0 var(--space-16) 0;
 }
-@media screen and (max-height: 550px), screen and (max-width: 485px) {
-  .headerContainer_d5200e {
-    border-radius: 0;
-  }
-}
 .headerContainer_d5200e.containerBottomPadding_d5200e {
   padding-bottom: var(--space-12);
 }
@@ -28373,6 +28368,11 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+@media screen and (max-height: 550px), screen and (max-width: 485px) {
+  .headerContainer_d5200e {
+    border-radius: 0;
+  }
 }
 .headerBackground_b66356 {
   border-top-left-radius: var(--radius-md);
@@ -57699,7 +57699,7 @@ html .progress__61462 {
     var(--background-surface-high) 90%,
     transparent 100%
   );
-  padding: 4px 8px;
+  padding: var(--space-4) var(--space-8);
 }
 .itemIcon__1bb32 {
   color: var(--text-muted);
@@ -57732,13 +57732,17 @@ html .progress__61462 {
 .divider__1bb32 {
   background-color: var(--border-subtle);
   height: 1px;
-  margin: var(--space-8) calc(var(--space-16) * -1);
+  margin: var(--space-8) calc(var(--space-8) * -1);
 }
-.autocompleteGroupHeader__1bb32 {
+.groupWrapper__1bb32 {
+  display: grid;
+  gap: var(--space-4);
+}
+.groupHeader__1bb32 {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 4px 8px;
+  padding: var(--space-4) var(--space-8);
 }
 .clearSearchHistory__1bb32:hover .clearSearchHistoryIcon__1bb32 {
   color: var(--text-primary);
@@ -57792,7 +57796,7 @@ html .progress__61462 {
       var(--custom-channel-header-height)
   );
   overflow: hidden;
-  padding: var(--space-16);
+  padding: var(--space-12) var(--space-8);
   width: 356px;
 }
 .datePickerContainer_f1c5c9 {
@@ -94297,4 +94301,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.dfa83121259c9fda.css.map*/
+/*# sourceMappingURL=12633.20b40e04a685cfc5.css.map*/
