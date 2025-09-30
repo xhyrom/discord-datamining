@@ -69650,6 +69650,18 @@ html .invoiceCancelRow__968a4 {
 .sectionLabel__8ab7e:only-child {
   display: none;
 }
+.systemServiceContainer_b4186f {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+}
+.systemServiceTextContainer_b4186f {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 .container__138d8 {
   align-content: center;
 }
@@ -94224,4 +94236,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.266ea8d887a713b7.css.map*/
+/*# sourceMappingURL=12633.778dc93e9a862911.css.map*/
