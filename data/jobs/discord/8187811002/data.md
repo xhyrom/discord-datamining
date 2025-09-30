@@ -1,6 +1,6 @@
 # Job Listing
 
-## Technical Sourcer - Data & ML (Temporary)
+## Technical Sourcer (Temporary)
 
 **Location:** San Francisco Bay Area
 
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8187811002](https://discord.com/jobs/8187811002)
 
-**Updated At:** Mon, 29 Sep 2025 21:56:23 GMT
+**Updated At:** Tue, 30 Sep 2025 05:45:08 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Working at Discord is like working with an exciting and motivated family. Finding the right people to add into our unique mix is a difficult endeavor, so we're looking for a Technical Sourcer focused on Data and Machine Learning to join our recruiting team and help us maintain a smooth and positive experience for remarkable candidates.
