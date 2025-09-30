@@ -45526,18 +45526,12 @@ h3.improved__1689b:after {
   flex-direction: column;
   gap: 16px;
 }
-.button_bf1984 {
+.buttonWrapper_bf1984 {
+  display: inline-flex;
   max-width: var(--custom-button-button-lg-width);
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
-}
-.button_bf1984:active,
-.button_bf1984:hover {
-  background-color: var(--white-500) !important;
-}
-.button_bf1984:active {
-  transform: translateY(1px);
 }
 .sectionDescription__9851a {
   color: var(--header-secondary);
@@ -94230,4 +94224,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9980bd51ffca54b3.css.map*/
+/*# sourceMappingURL=12633.266ea8d887a713b7.css.map*/
