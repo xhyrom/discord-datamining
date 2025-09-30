@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "notifications",
     "Halloween",
     "event",
-    "FAQ",
-    "halloween ringtone",
     "2024",
+    "seasonal",
+    "notifications",
+    "halloween ringtone",
+    "FAQ",
     "frequently asked questions",
-    "holidays",
-    "seasonal"
+    "holidays"
   ],
   "user_segment_ids": []
 }

@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "fraudulent charge",
     "fraudulent charge suspension",
-    "account suspension",
-    "discord fraudulent charge"
+    "discord fraudulent charge",
+    "fraudulent charge",
+    "account suspension"
   ],
   "user_segment_ids": []
 }

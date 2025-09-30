@@ -20,15 +20,15 @@
   "permission_group_id": 6449276657303,
   "content_tag_ids": [],
   "label_names": [
-    "chat",
     "answer-bot",
-    "text",
-    "channels",
     "discord",
     "forwarding",
     "message",
+    "forward",
+    "chat",
     "messages",
-    "forward"
+    "text",
+    "channels"
   ],
   "user_segment_ids": []
 }

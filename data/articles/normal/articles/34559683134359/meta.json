@@ -20,15 +20,15 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "Discord",
-    "Nitro",
     "answer-bot",
-    "promo",
-    "trial",
-    "wemod",
     "WeMod",
+    "Nitro",
     "Subscribers",
-    "Pro"
+    "Pro",
+    "wemod",
+    "promo",
+    "Discord",
+    "trial"
   ],
   "user_segment_ids": []
 }

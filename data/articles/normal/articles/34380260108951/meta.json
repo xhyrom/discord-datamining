@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
-    "suspension",
-    "unauthorized transaction suspension",
+    "discord unauthorized transaction",
     "unauthorized transaction",
-    "discord unauthorized transaction"
+    "suspension",
+    "unauthorized transaction suspension"
   ],
   "user_segment_ids": []
 }

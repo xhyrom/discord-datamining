@@ -21,9 +21,9 @@
   "content_tag_ids": [],
   "label_names": [
     "game",
-    "connections",
     "gaming",
-    "in-game features"
+    "in-game features",
+    "connections"
   ],
   "user_segment_ids": []
 }

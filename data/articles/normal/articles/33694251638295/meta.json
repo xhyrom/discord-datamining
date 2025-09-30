@@ -21,9 +21,9 @@
   "content_tag_ids": [],
   "label_names": [
     "account caps",
+    "stage caps",
     "server caps",
-    "discord caps",
-    "stage caps"
+    "discord caps"
   ],
   "user_segment_ids": []
 }
