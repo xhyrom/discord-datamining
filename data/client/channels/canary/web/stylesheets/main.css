@@ -11154,6 +11154,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     inset 0 0 0 1px var(--border-subtle),
     var(--shadow-high);
   box-sizing: border-box;
+  color: var(--text-default);
   display: flex;
   gap: var(--space-8);
   max-width: 200px;
@@ -11190,6 +11191,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .caretIcon__4e35b .caretStroke__4e35b {
   stroke: var(--border-subtle);
   stroke-opacity: 1;
+}
+.tooltipWithShortcut__4e35b {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: center;
+  text-align: center;
 }
 .caret__5bc6a {
   --custom-caret-half-width: 8px;
@@ -47165,7 +47174,7 @@ h3.improved__1689b:after {
     overflow-wrap: break-word;
     text-align: center;
     white-space: normal;
-    width: 150px;
+    width: 130px;
     word-break: keep-all;
   }
 }
@@ -95037,4 +95046,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f850a74d71bb09eb.css.map*/
+/*# sourceMappingURL=12633.e275d999e49e2c26.css.map*/
