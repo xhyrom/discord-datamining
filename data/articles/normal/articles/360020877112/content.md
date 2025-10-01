@@ -12,30 +12,107 @@
     to your friends, whether you’re on desktop or mobile devices.</span
   >
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul id="docs-internal-guid-7bbb681d-7fff-8723-4e33-e28b06ce2a01">
-  <li>
-    <a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
-      >How to Purchase a Nitro Gift in Discord</a
-    >
-  </li>
-  <li>
-    <a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
-      >Discord Nitro Digital Gift Cards on Amazon.com</a
-    >
-  </li>
-  <li><a href="#h_01JF85KZAD305B0145QSMC1B86">Managing Your Nitro Gift</a></li>
-  <li>
-    <a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR">Purchasing a Gift on Mobile</a>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <strong
+        ><a href="#h_01JF85KBBN81QWNATTG0MMWX5F"
+          >How to Purchase a Nitro Gift in Discord</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JF85HYSDTS1VC2ZHTE1ZVW6Y"
+          >Discord Nitro Digital Gift Cards on Amazon.com</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01JF85KZAD305B0145QSMC1B86"
+          >Managing Your Nitro Gift</a
+        ></strong
+      >
+    </li>
+    <li>
+      <strong
+        ><a href="#h_01GCCGE3DAMHY7BX0JVY04JYSR"
+          >Purchasing a Gift on Mobile</a
+        ></strong
+      >
+    </li>
+  </ul>
+</div>
 <h1 id="h_01JF85KBBN81QWNATTG0MMWX5F">
   How to Purchase a Nitro Gift in Discord
 </h1>
+<div class="mega-box">
+  <strong><span style="color: #434343">Offer: </span></strong
+  ><span style="color: #434343"
+    >It’s time to pick: trick or treat? Starting </span
+  ><strong><span style="color: #434343">October 1, 2025</span></strong
+  ><span style="color: #434343"
+    >, gift a 1-month or 1-year Nitro subscription and receive your choice of
+    one from eight spooky Avatar Decorations to keep. This Halloween promotion
+    will roll out gradually, with all users gaining access by </span
+  ><strong><span style="color: #434343">October 8, 2025</span></strong
+  ><span style="color: #434343"
+    ><span style="color: #434343">.<br /></span
+  ></span>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/35151192943895"
+      alt="trickortreat.gif"
+    />
+  </p>
+  <h4 id="h_01K5VNBN0SD9MKMZDVTHRM3SNP" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Trick or Treat Avatar Decoration Collection</span
+    >
+  </h4>
+  <span style="color: #434343"
+    >Collect a new avatar decoration from the Trick or Treat Collection each
+    time you send a Nitro gift. Offer ends </span
+  ><strong
+    ><span style="color: #434343">November 3, 2025 (5:00PM PT)</span></strong
+  ><span style="color: #434343"
+    >. Look for the promotion banner before making your purchase. </span
+  >
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/35151179692695"
+        width="320"
+        height="380"
+    /></span>
+  </p>
+  <h4 id="h_01K5SK6GB08QH98MGF4YT6D29C" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Halloween Promotion Banner in Select Plan Window</span
+    >
+  </h4>
+  <p>
+    <strong><span style="color: #434343">Please note</span></strong
+    ><span style="color: #434343"
+      >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
+      any Avatar Decoration you receive is yours to keep, it will be removed if
+      you refund your Nitro gift purchase.<br /><br /></span
+    ><span style="color: #434343">Want to learn more about </span
+    ><strong><span style="color: #434343">Avatar Decorations</span></strong
+    ><span style="color: #434343">? Check out our </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/13410113109911"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    ><span style="color: #434343"> for more details.</span>
+  </p>
+</div>
 <p>
   <strong>Discord Nitro gifts</strong> can be purchased within
   <strong>direct messages (DMs)</strong>,<strong> group chats</strong>,

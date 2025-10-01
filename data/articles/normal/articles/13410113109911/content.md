@@ -7,14 +7,14 @@
     <li>
       <strong
         ><a href="#h_01GWJJPDWA7210GPEJB5Z4R5WC" target="_self"
-          >What are avatar decorations?</a
+          >What are Avatar Decorations?</a
         ></strong
       >
     </li>
     <li>
       <strong
         ><a href="#h_01J4SC8K91558197MD0K9V444M"
-          >How can I collect an avatar decoration?</a
+          >How can I collect an Avatar Decoration?</a
         ></strong
       ><br />
       <ul>
@@ -31,7 +31,7 @@
     <li>
       <strong
         ><a href="#h_01J4SCH0SP77EJ2328CYGRS05Y"
-          >How to apply an avatar decoration to my profile</a
+          >How to Apply an Avatar Decoration to My Profile</a
         ><a href="https://support.discord.com/hc/en-us/articles/13410113109911"
           ><br /></a
       ></strong>
@@ -55,10 +55,10 @@
     </li>
   </ul>
 </div>
-<h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
+<h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are Avatar Decorations?</h1>
 <p id="docs-internal-guid-7e1ad2f6-7fff-9866-e11f-e7ad74a22924">
-  Avatar decorations let you customize and style your avatar on Discord! You can
-  buy and collect all kinds of decorations from the
+  <strong>Avatar Decorations</strong> let you customize and style your avatar on
+  Discord! You can buy and collect all kinds of decorations from the
   <a
     href="https://support.discord.com/hc/articles/17162747936663"
     target="_blank"
@@ -67,6 +67,47 @@
   >. Purchased decorations are yours to keep so you can add all kinds of pizazz
   to your avatar and profile aesthetic whenever you want.
 </p>
+<div class="mega-box">
+  <strong><span style="color: #434343">Offer: </span></strong
+  ><span style="color: #434343"
+    >It’s time to pick: trick or treat? Starting </span
+  ><strong><span style="color: #434343">October 1, 2025</span></strong
+  ><span style="color: #434343"
+    >, gift a 1-month or 1-year Nitro subscription and receive your choice of
+    one from eight spooky Avatar Decorations to keep. This Halloween promotion
+    will roll out gradually, with all users gaining access by </span
+  ><strong><span style="color: #434343">October 8, 2025</span></strong
+  ><span style="color: #434343">.</span>
+  <p>
+    <span style="color: #434343"
+      >Collect a new Avatar Decoration from the Trick or Treat Collection each
+      time you send a Nitro gift. Offer ends </span
+    ><strong
+      ><span style="color: #434343">November 3, 2025 (5:00PM PT)</span></strong
+    ><span style="color: #434343"
+      >. Look for the promotion banner before making your purchase. </span
+    >
+  </p>
+  <p>
+    <strong><span style="color: #434343">Please note</span></strong
+    ><span style="color: #434343"
+      >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
+      any Avatar Decoration you receive is yours to keep, it will be removed if
+      you refund your Nitro gift purchase.</span
+    >
+  </p>
+  <p>
+    <span style="color: #434343">Want to learn more about </span
+    ><strong><span style="color: #434343">Nitro Gifting</span></strong
+    ><span style="color: #434343">? Check out our </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/360020877112"
+      target="_blank"
+      rel="noopener noreferrer"
+      >article</a
+    ><span style="color: #434343"> for more details.</span>
+  </p>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/27897516515223"
@@ -81,7 +122,7 @@
     rel="noopener noreferrer"
     >Discord Nitro subscribers</a
   >
-  get exclusive perks with avatar decorations through
+  get exclusive perks with Avatar Decorations through
   <a
     href="https://support.discord.com/hc/articles/22225719947543"
     target="_blank"
@@ -96,10 +137,10 @@
   >.
 </div>
 <h1 id="h_01J4SC8K91558197MD0K9V444M" class="wysiwyg-text-align-left">
-  How can I collect an avatar decoration?
+  How can I collect an Avatar Decoration?
 </h1>
 <h2 id="h_01J4SAQP8EPQ2H8195FW4EB8W1">Desktop/Browser</h2>
-<p>Avatar decorations can be found and purchased in the Shop. </p>
+<p>Avatar Decorations can be found and purchased in the Shop. </p>
 <p id="docs-internal-guid-0079e285-7fff-f5d0-c3ec-04a1a55c7011">
   <span class="wysiwyg-font-size-large"><strong>Option 1</strong></span>
 </p>
@@ -170,7 +211,7 @@
   /></span>
 </p>
 <p id="docs-internal-guid-3e542f33-7fff-1af5-0df0-3783196af3dd">
-  3. Once directed to the Shop, you can preview and buy avatar decorations to
+  3. Once directed to the Shop, you can preview and buy Avatar Decorations to
   add to your collection and wear whenever you’d like. <span
     id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"
   ></span>
@@ -183,7 +224,7 @@
   />
 </p>
 <div class="info-box">
-  Purchased avatar decorations are yours to keep and can be used at any time!
+  Purchased Avatar Decorations are yours to keep and can be used at any time!
   Items available for purchase in the Shop will change periodically.
 </div>
 <h2 id="h_01J4SBJWG1NX44NS285X62330B">Mobile</h2>
@@ -207,8 +248,8 @@
   />
 </p>
 <p class="wysiwyg-text-align-left">
-  3. This will direct you to the Shop where you can preview and buy avatar
-  decorations.
+  3. This will direct you to the Shop where you can preview and buy Avatar
+  Decorations.
 </p>
 <p class="wysiwyg-text-align-center">
   <span
@@ -230,7 +271,7 @@
   /></span>
 </p>
 <h1 id="h_01J4SCH0SP77EJ2328CYGRS05Y">
-  How to apply an avatar decoration to my profile
+  How to Apply an Avatar Decoration to My Profile
 </h1>
 <h2 id="h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop/Browser</h2>
 <p>
@@ -264,7 +305,7 @@
   <strong>Edit Avatar Decoration</strong> selection menu.  
 </p>
 <p>
-  4. Once you have chosen the avatar decoration you would like, select
+  4. Once you have chosen the Avatar Decoration you would like, select
   <strong>Apply</strong> to add the decoration to your avatar. 
 </p>
 <p class="wysiwyg-text-align-center">
@@ -280,7 +321,7 @@
   />
 </p>
 <p>
-  5. After you apply an avatar decoration, you will need to confirm your changes
+  5. After you apply an Avatar Decoration, you will need to confirm your changes
   by selecting <strong>Save Changes</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
@@ -289,8 +330,8 @@
   />
 </p>
 <div class="tip-box">
-  If you have multiple per-server profiles, you can wear a different avatar
-  decoration for each one to add a unique touch in each of your servers. You can
+  If you have multiple per-server profiles, you can wear a different Avatar
+  Decoration for each one to add a unique touch in each of your servers. You can
   find out more
   <a
     href="https://support.discord.com/hc/en-us/articles/4409388345495"
@@ -329,10 +370,10 @@
 </p>
 <p>
   3.  After arriving at the <strong>Change Decoration</strong> page and select
-  the desired avatar decoration you would like to apply. 
+  the desired Avatar Decoration you would like to apply. 
 </p>
 <p>
-  4. Once you’ve found an avatar decoration you want to use, tap
+  4. Once you’ve found an Avatar Decoration you want to use, tap
   <strong>Apply </strong>then <strong>Save</strong> in the upper-right corner to
   confirm your changes. 
 </p>
@@ -346,8 +387,8 @@
 <h1 id="h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317">
   <strong
-    >Q: Who can currently access the Shop and buy and use avatar
-    decorations?</strong
+    >Q: Who can currently access the Shop and buy and use Avatar
+    Decorations?</strong
   >
 </p>
 <p>
@@ -355,7 +396,7 @@
   you will have special member pricing on all purchases within the Shop!
 </p>
 <p id="docs-internal-guid-22992952-7fff-a0a6-ea7e-1cb0798d6051">
-  <strong>Q: How do I get a discount on avatar decorations in the Shop?</strong>
+  <strong>Q: How do I get a discount on Avatar Decorations in the Shop?</strong>
 </p>
 <p>
   A: Only Nitro members have access to special member pricing in the Shop. You
@@ -369,7 +410,7 @@
 </p>
 <p>
   <strong
-    >Q: I already have an avatar decoration that is part of the Shop Bundle. Why
+    >Q: I already have an Avatar Decoration that is part of the Shop Bundle. Why
     can't I purchase the Shop Bundle to get the profile effect?</strong
   >
 </p>
@@ -382,10 +423,10 @@
   the remaining item individually.
 </p>
 <p id="docs-internal-guid-a566b11a-7fff-266e-9c00-83486a7cbd12">
-  <strong>Q: Is localized pricing available for avatar decorations?</strong>
+  <strong>Q: Is localized pricing available for Avatar Decorations?</strong>
 </p>
 <p id="docs-internal-guid-3e30ce7c-7fff-5b92-9301-1944a349ce05">
-  A: Localized pricing is available for avatar decorations in some countries.
+  A: Localized pricing is available for Avatar Decorations in some countries.
   You should see localized pricing options in the Shop if you are eligible. You
   can learn more about localized pricing
   <a
@@ -396,11 +437,11 @@
   >. 
 </p>
 <div class="info-box">
-  <strong>Note</strong>: Avatar decoration gifts are not available at localized
+  <strong>Note</strong>: Avatar Decoration gifts are not available at localized
   prices. Depending on a user’s region, they may be able to pay for a gift in
   their local currency, but the price will still be equivalent to the USD price.
 </div>
-<p><strong>Q: Do I keep the avatar decorations I’ve purchased? </strong></p>
+<p><strong>Q: Do I keep the Avatar Decorations I’ve purchased? </strong></p>
 <p>
   A: Yes, any decorations you’ve purchased are yours to keep and use anytime,
   even without an active Nitro subscription. 
@@ -416,33 +457,33 @@
 </p>
 <p>
   <strong
-    >Q: I thought avatar decorations used to be free for Nitro members. Why do I
+    >Q: I thought Avatar Decorations used to be free for Nitro members. Why do I
     have to buy them now?</strong
   >
 </p>
 <p>
-  A: Previously, avatar decorations would only be freely available for Nitro
+  A: Previously, Avatar Decorations would only be freely available for Nitro
   members to use for a limited time and then they would disappear, which would
   leave a lot of folks sad. A lot of you also told us our decorations needed
   more variety.
 </p>
 <p>
-  Now avatar decorations are designed to be yours to keep and use anytime when
-  you buy them. We’ve also been working hard to make avatar decorations better
+  Now Avatar Decorations are designed to be yours to keep and use anytime when
+  you buy them. We’ve also been working hard to make Avatar Decorations better
   than before, with even more charming and fun designs, higher quality
   animations and effects, and more styles to choose from.
 </p>
 <p>
   As a friendly reminder, if you’re a Nitro member, you can collect the
-  <strong>3 bonus DISXCORE</strong> avatar decorations from the Shop!
+  <strong>3 bonus DISXCORE</strong> Avatar Decorations from the Shop!
   <span id="docs-internal-guid-cf0c1c6d-7fff-84a5-524b-6aa86c345232"
     >Discord users with Nitro trial subscriptions do not have access to DISXCORE
     profile effects.</span
   >
 </p>
-<p><strong>Q: Can I refund an avatar decoration I’ve purchased?</strong></p>
+<p><strong>Q: Can I refund an Avatar Decoration I’ve purchased?</strong></p>
 <p>
-  A: No, avatar decorations are non-refundable. You can learn more about our
+  A: No, Avatar Decorations are non-refundable. You can learn more about our
   Refund Policy
   <a
     href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy"
@@ -451,9 +492,9 @@
     >here</a
   >.
 </p>
-<p><strong>Q: Can I refund Nitro after buying an avatar decoration?</strong></p>
+<p><strong>Q: Can I refund Nitro after buying an Avatar Decoration?</strong></p>
 <p>
-  A: No. If you’ve purchased an avatar decoration within
+  A: No. If you’ve purchased an Avatar Decoration within
   <strong>5 days </strong>of your Nitro subscription renewing or becoming a new
   Nitro member, you will not be eligible to refund that Nitro subscription.
 </p>
