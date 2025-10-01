@@ -41635,9 +41635,13 @@ div.mobilePushContainer__3d3b0 {
 .animatedNode__6ba63 {
   width: 100%;
 }
-@media (max-width: 485px) {
-  .animatedDivDynamicHeight__59d99 {
+@media screen and (max-height: 550px), screen and (max-width: 485px) {
+  .outerAnimatedDivDynamicSizing__59d99 {
     min-height: 100% !important;
+    min-width: 100% !important;
+  }
+  .innerAnimatedDivDynamicSizing__59d99 {
+    width: 100% !important;
   }
 }
 .containerTop__45edc {
@@ -47439,9 +47443,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -95017,4 +95021,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.f5b7464beeecf667.css.map*/
+/*# sourceMappingURL=12633.975e25e1ecb7b5b0.css.map*/
