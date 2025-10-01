@@ -20,10 +20,10 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "answer-bot",
     "server setup",
-    "how to set up a server",
     "server set up guide",
-    "answer-bot"
+    "how to set up a server"
   ],
   "user_segment_ids": []
 }

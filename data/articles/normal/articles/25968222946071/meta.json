@@ -21,8 +21,8 @@
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
-    "e2ee",
-    "end to end encryption"
+    "end to end encryption",
+    "e2ee"
   ],
   "user_segment_ids": []
 }

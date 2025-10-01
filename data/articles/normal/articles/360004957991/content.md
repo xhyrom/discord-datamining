@@ -39,8 +39,26 @@
 </p>
 <h1 id="h_01JV2QTH9QBJPZNKBCP758RZB3">How to Request a Data Package</h1>
 <div class="form-box">
-  <strong>Contact Us: </strong>If you are having trouble accessing your account,
-  please contact privacy@discord.com for help with requesting your data package.
+  <strong>Contact Us: </strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    >If you've permanently lost access to your account and need your data
+    package for personal records, contact </span
+  ><a
+    href="mailto:privacy@discord.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    >privacy@discord.com</a
+  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
+</div>
+<div class="book-box">
+  <strong>Want to learn more?</strong> For more information about requesting
+  your data package, check out our Help Center Article:
+  <a
+    href="https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data"
+    target="_blank"
+    rel="noopener noreferrer"
+    >How to Request and Download Your Discord Data.</a
+  >
 </div>
 <p>
   You can request your Data Package through the Discord desktop, browser, and

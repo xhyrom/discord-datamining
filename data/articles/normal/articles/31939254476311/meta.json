@@ -20,13 +20,13 @@
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
+    "Discord",
+    "status",
     "answer-bot",
     "tax",
-    "exemption",
-    "status",
     "request",
     "VAT",
-    "Discord"
+    "exemption"
   ],
   "user_segment_ids": []
 }
