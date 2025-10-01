@@ -2773,6 +2773,30 @@
 .full-motion .statusMessageContainer__28dfe {
   animation: slideDown__28dfe 0.3s ease-in-out;
 }
+.container_a28278 {
+  cursor: pointer;
+}
+.container_a28278[data-disabled] {
+  cursor: not-allowed;
+}
+.switchIndicator_a28278 {
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  box-sizing: border-box;
+  height: 24px;
+  position: relative;
+  width: 48px;
+}
+.switchIndicator_a28278 .thumb_a28278 {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  position: absolute;
+  width: 24px;
+}
 .fieldset__7fb92 {
   display: flex;
   flex-direction: column;
@@ -94980,4 +95004,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.9123748106cf0ace.css.map*/
+/*# sourceMappingURL=12633.a9abef7872f64301.css.map*/
