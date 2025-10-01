@@ -30203,9 +30203,6 @@ body .headerAnimation_b54a5b {
 .backButtonColor__6181b {
   color: var(--text-default);
 }
-.checkboxLabel__6181b {
-  color: var(--primary-300);
-}
 .note__2ef07 {
   font-size: 12px;
   margin-top: 20px;
@@ -95020,4 +95017,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.46067cb389c00153.css.map*/
+/*# sourceMappingURL=12633.f5b7464beeecf667.css.map*/
