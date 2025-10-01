@@ -39947,8 +39947,22 @@ img.thumbnail__0f2e8 {
   right: 0;
   visibility: hidden;
 }
-.tooltip__0f074 {
-  max-width: 224px;
+.button__0f074 {
+  color: var(--icon-secondary);
+  cursor: pointer;
+  height: 16px;
+  opacity: 0;
+  transition: color 50ms ease-in;
+  width: 16px;
+}
+.button__0f074:focus-visible,
+.button__0f074:hover {
+  color: var(--icon-primary);
+  transition: color 0.15s ease-out;
+}
+.button__0f074.visible__0f074,
+.button__0f074:focus-visible {
+  opacity: 1;
 }
 .linkIcon_ebf183 {
   display: inline-block;
@@ -95021,4 +95035,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0804fe71951299b5.css.map*/
+/*# sourceMappingURL=12633.e8ffafb8d5adb144.css.map*/
