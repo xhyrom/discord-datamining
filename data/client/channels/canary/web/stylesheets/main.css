@@ -26235,7 +26235,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 }
 .mentionSuggestion__1464f {
   background-color: var(--mention-background);
+  border-radius: var(--radius-xs);
   color: var(--mention-foreground);
+  font-weight: var(--font-weight-medium);
 }
 .mentionSuggestion__1464f.mentionSuggestionSimpleColorVariant__1464f {
   background-color: transparent;
@@ -95035,4 +95037,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.e8ffafb8d5adb144.css.map*/
+/*# sourceMappingURL=12633.f850a74d71bb09eb.css.map*/
