@@ -2635,7 +2635,12 @@
   grid-template-areas: "labels" "control" "helper-text";
 }
 .container__28dfe .labelContainer__28dfe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  grid-area: labels;
   margin-bottom: var(--space-8);
+  min-width: 0;
 }
 .container__28dfe[data-layout="horizontal"] {
   -moz-column-gap: var(--space-24);
@@ -2644,6 +2649,9 @@
   grid-template-areas: "labels control" "empty helper-text";
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
+}
+.container__28dfe[data-layout="horizontal"] .labelContainer__28dfe {
+  gap: var(--space-12);
 }
 .container__28dfe[data-layout="horizontal"] .control__28dfe {
   align-items: end;
@@ -2655,19 +2663,16 @@
 .container__28dfe[data-disabled="true"] {
   opacity: 0.5;
 }
-.labelContainer__28dfe {
-  gap: var(--space-8);
-  grid-area: labels;
-}
-.control__28dfe,
-.labelContainer__28dfe {
+.control__28dfe {
   display: flex;
   flex-direction: column;
-  min-width: 0;
-}
-.control__28dfe {
   gap: var(--space-4);
   grid-area: control;
+  min-width: 0;
+}
+.icon__28dfe {
+  margin-bottom: -1px;
+  padding-right: var(--space-4);
 }
 .description__28dfe {
   grid-area: description;
@@ -2708,6 +2713,9 @@
 }
 .full-motion .statusMessageContainer__28dfe {
   animation: slideDown__28dfe 0.3s ease-in-out;
+}
+.badgeContainer__28dfe {
+  margin-left: var(--space-4);
 }
 .container_a28278 {
   cursor: pointer;
@@ -2800,10 +2808,15 @@
 .fieldset__7fb92 {
   display: flex;
   flex-direction: column;
-  gap: var(--space-12);
+  gap: var(--space-16);
 }
+.description__7fb92,
 .legend__7fb92 {
   margin-bottom: var(--space-12);
+}
+.legend__7fb92 + .description__7fb92 {
+  margin-bottom: 0;
+  margin-top: -8px;
 }
 .wrapper_a35ace svg {
   display: block;
@@ -43771,9 +43784,8 @@ div.mobilePushContainer__3d3b0 {
 }
 .keyRecorder__90f76 {
   flex: 1 1 33%;
-}
-.formItem_bfbb55 {
-  margin-bottom: 32px;
+  min-width: 220px;
+  position: relative;
 }
 .subHeader__6a750 {
   margin-bottom: 50px;
@@ -64146,8 +64158,11 @@ div.nagbar_d74ef8 {
   flex-direction: column;
   gap: 2px;
 }
-.switchRowContainer__6de8b {
-  margin: 4px 0;
+.connectedAccountToggle__6de8b {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: var(--space-12);
 }
 .activitySwitchRow__6de8b {
   align-items: center;
@@ -64929,12 +64944,11 @@ div.nagbar_d74ef8 {
   background-color: transparent;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 36px 36px;
-  border: 1px solid #99aab54d;
-  border-radius: 5px;
-  height: 48px;
+  background-size: 28px 28px;
+  border-radius: var(--radius-sm);
+  height: 44px;
   justify-content: center;
-  width: 48px;
+  width: 44px;
 }
 .inner__02fc8:hover {
   background-color: #99aab54d;
@@ -64998,27 +65012,22 @@ div.nagbar_d74ef8 {
   margin-top: -32px;
   width: 180px;
 }
-.connectContainer_c7f964 {
-  background-color: var(--bg-surface-raised);
-  border-radius: var(--radius-sm);
-  margin-bottom: 16px;
-  padding: 16px;
-}
 .connectHeader_c7f964 {
   margin-bottom: 8px;
 }
 .connectionsContainer_c7f964 {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 16px;
+  gap: var(--space-8);
+  padding: var(--space-8) 0;
 }
 .accountButtonInner_c7f964 {
-  background-color: var(--background-mod-subtle);
-  border: none;
+  background-color: var(--control-background-secondary-default);
+  border: 1px solid var(--control-border-secondary-default);
 }
 .accountButtonInner_c7f964:hover {
-  background-color: var(--background-modifier-hover);
+  background-color: var(--control-background-secondary-hover);
+  border-color: var(--control-border-secondary-hover);
 }
 .accountAddWrapper_c7f964 {
   position: relative;
@@ -65027,21 +65036,21 @@ div.nagbar_d74ef8 {
   align-items: center;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 36px 36px;
-  border-radius: var(--radius-xs);
-  color: var(--interactive-normal);
+  background-size: 28px 28px;
+  border-radius: var(--radius-sm);
+  color: var(--control-icon-secondary-default);
   display: flex;
-  height: 48px;
+  height: 44px;
   justify-content: center;
-  width: 48px;
+  width: 44px;
 }
 .accountAddInner_c7f964:hover {
-  background-color: var(--background-modifier-hover);
-  border-color: transparent;
+  background-color: var(--control-background-secondary-hover);
+  border-color: var(--control-border-secondary-hover);
   cursor: pointer;
 }
 .accountAddInner_c7f964:disabled {
-  opacity: 0.3;
+  opacity: 0.5;
   pointer-events: none;
 }
 .connectionList_c7f964 {
@@ -65049,18 +65058,18 @@ div.nagbar_d74ef8 {
   grid-gap: 24px;
 }
 .connection_c7f964 {
-  background-color: var(--bg-surface-raised);
+  background-color: var(--background-surface-high);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  margin-bottom: var(--space-16);
   width: 100%;
 }
 .connectionHeader_c7f964 {
   align-items: center;
-  background: var(--background-mod-subtle);
   border-radius: 8px 8px 0 0;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   padding: 16px;
+  padding-bottom: var(--space-8);
   position: relative;
 }
 .connectionHeader_c7f964 .connectionAccountValue_c7f964 {
@@ -65091,22 +65100,11 @@ div.nagbar_d74ef8 {
   height: 32px;
   width: 32px;
 }
-.connectionOptionsWrapper_c7f964 {
-  padding: 20px 10px 0;
-}
-.connectionOptionsWrapper_c7f964 .connectionOptionSwitch_c7f964 h3 {
-  color: #fff;
-  font-weight: var(--font-weight-medium);
-}
-.connectionOptionSwitch_c7f964 {
-  flex: 1 1 auto;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .connectionOptions_c7f964 {
   display: flex;
   flex-direction: column;
+  gap: var(--space-20);
+  padding: var(--space-20) var(--space-16);
 }
 .integrationsWrapper_c7f964 {
   padding: 20px;
@@ -65163,12 +65161,13 @@ div.nagbar_d74ef8 {
 }
 .metadataContainer_c7f964 {
   align-content: flex-start;
-  background-color: var(--background-base-lowest);
+  background-color: var(--background-mod-faint);
+  border: 1px solid var(--border-faint);
   border-radius: var(--radius-sm);
   display: flex;
   flex-direction: row;
-  margin: 20px 16px 0;
-  padding: 8px 16px;
+  margin: var(--space-8) var(--space-16) 0;
+  padding: var(--space-8);
 }
 .metadataItem_c7f964 {
   align-self: center;
@@ -71173,13 +71172,6 @@ html .invoiceCancelRow__968a4 {
   margin-bottom: 20px;
   margin-right: 10px;
   width: 100%;
-}
-.formSwitchExtension__7441d {
-  margin-bottom: 10px;
-}
-.infoBoxDivider__7441d {
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 .titleBar__421ed {
   z-index: 3001;
@@ -95036,4 +95028,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.fc9f79cb68046b2c.css.map*/
+/*# sourceMappingURL=12633.da3d37f4ebb4abc9.css.map*/
