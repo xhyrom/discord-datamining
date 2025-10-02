@@ -22244,12 +22244,13 @@ span.clanTag__5d473 {
 }
 :where(.outer_c0bea0).user-profile-modal-v2 {
   background: var(--background-base-lower);
-  border: 1px solid var(--border-normal);
   border-radius: var(--radius-lg);
   box-sizing: border-box;
   height: 800px;
   max-width: 100%;
   min-height: 500px;
+  outline: 1px solid var(--border-normal);
+  outline-offset: -1px;
   width: 960px;
 }
 @media (max-height: 900px) {
@@ -95046,4 +95047,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.d0641c93cd005e04.css.map*/
+/*# sourceMappingURL=12633.0e40fb8a9f93e87e.css.map*/
