@@ -4318,6 +4318,7 @@
             CONFERENCE_MODE: "/conference-mode",
             CONFERENCE_MODE_VOICE: (t, e) =>
               "/conference-mode/voice/".concat(t, "/").concat(e),
+            QUEST_PREVIEW: (t) => "/quest-preview/".concat(t),
             QUEST_PREVIEW_TOOL_2: (t) =>
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
           });
@@ -6680,7 +6681,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-01-f48ab374a0322f657cdfc3d9cece709c02408772-discord_web",
+              "2025-10-02-37db3028cf24be8e34602b9b90cb9377537c5a3e-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6746,8 +6747,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "452119"),
-            o.YA("builtAt", String("1759342017779"));
+            o.YA("buildNumber", "452533"),
+            o.YA("builtAt", String("1759389535637"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48443,4 +48444,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.eca66fa6031bb7dd.js.map
+//# sourceMappingURL=sentry.bba714c81f94d2de.js.map
