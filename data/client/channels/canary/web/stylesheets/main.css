@@ -58888,6 +58888,13 @@ html .progress__61462 {
 .search__97492 .DraftEditor-root .public-DraftEditorPlaceholder-root {
   color: var(--input-placeholder-text);
   padding-left: 4px;
+  width: 100%;
+}
+.search__97492 .DraftEditor-root .public-DraftEditorPlaceholder-inner {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+  width: 94%;
 }
 .search__97492 .DraftEditor-root .public-DraftEditor-content {
   overflow-x: auto;
@@ -58902,7 +58909,7 @@ html .progress__61462 {
   min-width: 1px;
 }
 .searchBar__97492 {
-  align-items: stretch;
+  align-items: center;
   background: var(--background-gradient-low, var(--input-background));
   border: 1px solid var(--input-border);
   border-radius: var(--radius-sm);
@@ -95142,4 +95149,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.a1dce5ad156d702b.css.map*/
+/*# sourceMappingURL=12633.0bc9d1f0d6e2b66f.css.map*/
