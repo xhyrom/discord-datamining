@@ -59,8 +59,7 @@
   ><span style="color: #434343"
     >, gift a 1-month or 1-year Nitro subscription and receive your choice of
     one from eight spooky Avatar Decorations to keep. This Halloween promotion
-    will roll out gradually, with all users gaining access by </span
-  ><strong><span style="color: #434343">October 8, 2025</span></strong
+    will roll out gradually, with all users gaining access by mid October</span
   ><span style="color: #434343"
     ><span style="color: #434343">.<br /></span
   ></span>

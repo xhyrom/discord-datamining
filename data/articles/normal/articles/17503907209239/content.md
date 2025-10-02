@@ -1,9 +1,38 @@
-<h3 id="docs-internal-guid-f9bf7d74-7fff-4427-0a0a-458bc19fc387">
-  <span style="color: #434343"
-    >Custom app icons are only available to Nitro and Nitro Basic
-    members. </span
-  >
-</h3>
+<p>
+  <strong>Custom app icons</strong> let Discord users personalize their mobile
+  app icon and desktop in-app icon by changing the default Discord app icon to
+  unique designs that match their style. 
+</p>
+<div class="mega-box">
+  <span style="color: #434343"><strong>Offer</strong>: Starting </span
+  ><strong><span style="color: #434343">October 2, 2025</span></strong
+  ><span style="color: #434343"
+    >, Nitro &amp; Nitro Basic subscribers will be able to enjoy 2 limited-time
+    Halloween Custom App icons! These icons will be available through </span
+  ><strong><span style="color: #434343">November 3, 2025</span></strong
+  ><span style="color: #434343"
+    >, with all eligible users having access by </span
+  ><strong><span style="color: #434343">October 8, 2025</span></strong
+  ><span style="color: #434343">. </span>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/35223357965335"
+      width="180"
+      height="180"
+    />
+     
+    <img
+      src="https://support.discord.com/hc/article_attachments/35223336012951"
+      width="180"
+      height="180"
+    />
+  </p>
+  <h4 id="h_01K63EAXCVG1RCFGB9YMXJ2FH8" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Treat Clyde (Left) and Trick Clyde (Right)</span
+    >
+  </h4>
+</div>
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/17800376352023"
@@ -33,6 +62,12 @@
   </li>
 </ul>
 <h1 id="h_01HACYH70RNE834ZCQQWMQD2SD">What is a custom app icon?</h1>
+<div class="info-box">
+  <span style="color: #434343"
+    ><strong>Note</strong>: Custom app icons are only available to Nitro and
+    Nitro Basic members.</span
+  >
+</div>
 <p>
   Custom app icons allow
   <a
@@ -48,12 +83,10 @@
 </p>
 <h1 id="h_01HACYH70R05GDSSA7PQSVHC50">How to set a custom app icon</h1>
 <h2 id="h_01JWRT4J14ZKPM8JZQANHK7YYF">Desktop</h2>
-<h3 id="h_01HCDAC4RBC8W2XASACQ95QCV5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Note: For desktop, your custom app icon will appear within the Discord
-    app.</span
-  >
-</h3>
+<div class="info-box">
+  <strong>Note</strong>: For desktop, your custom app icon will appear within
+  the Discord app.
+</div>
 <p id="docs-internal-guid-d7c4a897-7fff-2a54-cc1a-1f4bf91860e0">
   1. To get started, navigate to your <strong>User Settings </strong>by
   selecting the cogwheel button [<img
