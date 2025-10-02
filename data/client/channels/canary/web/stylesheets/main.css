@@ -15254,15 +15254,16 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .mouse-mode .listBoxItem__8906b:hover:not([aria-disabled]) {
   background-color: var(--background-mod-normal);
 }
-.listBoxItem__8906b[data-focus-visible="true"],
+.listBoxItem__8906b[aria-disabled] {
+  background-color: transparent;
+  opacity: 0.5;
+}
+.listBox__8906b:not(:focus-within)
+  .listBoxItem__8906b[data-focus-visible="true"],
 .keyboard-mode .listBoxItem__8906b:focus {
   background-color: var(--background-mod-normal);
   outline: 2px solid var(--focus-primary);
   outline-offset: -2px;
-}
-.listBoxItem__8906b[aria-disabled] {
-  background-color: transparent;
-  opacity: 0.5;
 }
 .listBoxItemContent__8906b {
   align-items: center;
@@ -15307,14 +15308,18 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   outline: 1px solid var(--custom-input-focus-border-color);
   outline-offset: -2px;
 }
+.selectButton__5fa2f,
+.selectFieldContent__5fa2f {
+  overflow: hidden;
+}
 .selectButton__5fa2f {
   background-color: transparent;
   box-sizing: border-box;
   display: block;
   max-width: 100%;
-  overflow: hidden;
   padding: 0 var(--space-4) 0 calc(var(--space-4) + 1px);
   text-align: left;
+  width: 100%;
 }
 .isInert__5fa2f .selectButton__5fa2f {
   cursor: not-allowed;
@@ -15335,8 +15340,39 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .multipleValues__5fa2f {
   color: var(--text-primary);
 }
+.singleSelectOption__5fa2f {
+  flex-grow: 1;
+  padding-left: var(--space-4);
+}
+.comboBoxInputScroller__5fa2f:not(.wrapTags__5fa2f) {
+  overflow: auto hidden;
+  scrollbar-width: none;
+}
+.comboBoxInputScroller__5fa2f:not(.wrapTags__5fa2f)::-webkit-scrollbar {
+  display: none;
+}
+.comboBoxInputContainer__5fa2f {
+  align-items: center;
+  display: flex;
+  gap: var(--space-4);
+  justify-content: flex-start;
+}
+.hasTags__5fa2f .comboBoxInputContainer__5fa2f {
+  padding: var(--space-4);
+}
+.wrapTags__5fa2f .comboBoxInputContainer__5fa2f {
+  flex-wrap: wrap;
+}
 .comboBoxInput__5fa2f {
+  max-height: 1lh;
   min-height: 40px;
+  min-width: min(12ch, 80%);
+  padding-left: calc(var(--space-12) + 1px);
+  padding-right: var(--space-8);
+}
+.comboBoxInputScroller__5fa2f.hasTags__5fa2f .comboBoxInput__5fa2f {
+  margin: calc(var(--space-4) * -1) 0;
+  padding-left: var(--space-8);
 }
 .chevronButton__5fa2f {
   background-color: transparent;
@@ -15385,6 +15421,23 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .clearButton__5fa2f:last-child {
   padding: 0 var(--space-4) 0 0;
   width: 36px;
+}
+.hiddenVisually__5fa2f {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: 1px;
+}
+.option__5fa2f {
+  cursor: pointer;
+  flex-shrink: 1;
 }
 .dropdownContainer__9bcc7 {
   padding-bottom: var(--space-8);
@@ -95074,4 +95127,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ded3121b9b7d95c1.css.map*/
+/*# sourceMappingURL=12633.ad61f7c4de55c6ec.css.map*/
