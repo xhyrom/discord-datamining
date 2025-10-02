@@ -2631,15 +2631,26 @@
   color: GrayText;
 }
 .avatar_f0960a,
+.image_f0960a {
+  height: 16px;
+  object-fit: contain;
+  width: 16px;
+}
+.avatar_f0960a {
+  background-color: #000;
+  object-fit: cover;
+  overflow: hidden;
+}
+.avatar_f0960a,
 .roleDot_f0960a {
   border-radius: var(--radius-round);
-  height: 16px;
-  width: 16px;
 }
 .roleDot_f0960a {
   border: 1px solid var(--text-primary);
   box-sizing: border-box;
   display: block;
+  height: 16px;
+  width: 16px;
 }
 .tagGroup_cfee8f {
   display: flex;
@@ -15285,8 +15296,48 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   justify-content: center;
   padding: var(--space-xxs) var(--space-4) var(--space-xxs) 0;
 }
-.hiddenCheckIcon__8906b {
-  opacity: 0;
+.option_ec77f2 {
+  align-items: center;
+  cursor: pointer;
+  display: grid;
+  flex-shrink: 1;
+  gap: var(--space-4);
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+}
+.leading_ec77f2 {
+  box-sizing: border-box;
+  height: 32px;
+  margin-left: calc(var(--space-8) * -1);
+  padding: var(--space-4);
+  width: 32px;
+}
+.leading_ec77f2,
+.trailing_ec77f2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.avatarAccessory_ec77f2,
+.imageAccessory_ec77f2 {
+  height: 24px;
+  object-fit: contain;
+  width: 24px;
+}
+.avatarAccessory_ec77f2 {
+  background-color: #000;
+  border-radius: var(--radius-round);
+  object-fit: cover;
+  overflow: hidden;
+}
+.iconAccessory_ec77f2 {
+  align-items: center;
+  color: var(--icon-secondary);
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: var(--space-4);
+  width: 32px;
 }
 .selectFieldContainer__5fa2f {
   align-self: flex-start;
@@ -15434,10 +15485,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   user-select: none;
   white-space: nowrap;
   width: 1px;
-}
-.option__5fa2f {
-  cursor: pointer;
-  flex-shrink: 1;
 }
 .dropdownContainer__9bcc7 {
   padding-bottom: var(--space-8);
@@ -95127,4 +95174,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.ad61f7c4de55c6ec.css.map*/
+/*# sourceMappingURL=12633.bb32967e51cff108.css.map*/
