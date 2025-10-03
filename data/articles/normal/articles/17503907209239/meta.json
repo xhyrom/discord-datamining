@@ -24,8 +24,16 @@
     "answer-bot",
     "nitro",
     "app",
+    "promo",
     "icon",
-    "custom app icon"
+    "custom app icon",
+    "offer",
+    "trick",
+    "halloween",
+    "treat",
+    "clyde",
+    "october",
+    "november"
   ],
   "user_segment_ids": []
 }

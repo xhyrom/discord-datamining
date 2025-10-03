@@ -27,8 +27,10 @@
     "promotion",
     "nitro gift",
     "nitro classic",
+    "promo",
     "holiday",
     "Nitro Basic",
+    "decorations",
     "Amazon",
     "digital gift cards",
     "digital",
@@ -37,7 +39,12 @@
     "deco",
     "heart",
     "gifting promo",
-    "valentine's"
+    "valentine's",
+    "trick",
+    "halloween",
+    "treat",
+    "october",
+    "november"
   ],
   "user_segment_ids": []
 }
