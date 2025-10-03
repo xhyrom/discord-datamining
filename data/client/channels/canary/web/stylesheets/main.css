@@ -7288,6 +7288,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   text-decoration: underline;
 }
 .root,
+[data-popout-root],
 :root {
   --__spoiler-background-color--hidden: var(--spoiler-hidden-background);
   --__spoiler-background-color--hidden--hover: var(
@@ -95416,4 +95417,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.3bcf31ca5e517481.css.map*/
+/*# sourceMappingURL=12633.71167b0d7fdbbd71.css.map*/
