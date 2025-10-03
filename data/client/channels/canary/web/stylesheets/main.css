@@ -68017,12 +68017,8 @@ div.nagbar_d74ef8 {
   outline: 2px solid Highlight;
   outline-offset: -2px;
 }
-.voiceModalContainer__25eff {
+.container__25eff {
   height: 400px;
-}
-.voiceModalRootContainer__25eff {
-  max-height: 400px;
-  min-height: 0;
 }
 .channelIdSection__25eff {
   margin-top: 8px;
@@ -68031,7 +68027,7 @@ div.nagbar_d74ef8 {
   padding: 16px 16px 0;
 }
 .voiceChannelList__25eff {
-  min-height: 16px;
+  height: 340px;
   padding: 0 16px;
 }
 .guildName__25eff {
@@ -95409,4 +95405,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b4f6973a160725d6.css.map*/
+/*# sourceMappingURL=12633.e6d0db8d5eacf230.css.map*/
