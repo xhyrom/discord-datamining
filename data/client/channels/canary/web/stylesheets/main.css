@@ -67061,6 +67061,12 @@ div.nagbar_d74ef8 {
   background: var(--background-gradient-chat, var(--background-base-lower));
   border-top: 1px solid var(--app-border-frame);
 }
+.loadingContainer_dc2e0e {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+}
 .hoverRoll__0263c {
   box-sizing: border-box;
   contain: paint;
@@ -95406,4 +95412,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.0799008f4ce3c53e.css.map*/
+/*# sourceMappingURL=12633.19c8aa5f9300f683.css.map*/
