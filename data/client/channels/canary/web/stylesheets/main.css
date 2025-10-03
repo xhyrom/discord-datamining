@@ -2492,6 +2492,8 @@
   flex: 1 1 auto;
   gap: var(--space-8);
   max-width: 100%;
+}
+.padding__714a9 {
   padding: var(--space-8);
 }
 .checkboxIndicator__714a9 {
@@ -2566,13 +2568,15 @@
   border-color: var(--checkbox-border-default-selected);
 }
 .checkboxItem__714a9[data-selected] .backgroundFill__714a9 {
-  animation: bgFill__714a9 80ms cubic-bezier(0.33, 0, 0.67, 1) 80ms backwards;
   background-color: var(--checkbox-background-default-selected);
 }
-.checkboxItem__714a9[data-selected] .dot__714a9 {
+.animateIn__714a9 .backgroundFill__714a9 {
+  animation: bgFill__714a9 80ms cubic-bezier(0.33, 0, 0.67, 1) 80ms backwards;
+}
+.animateIn__714a9 .dot__714a9 {
   animation: dotGrow__714a9 0.3s cubic-bezier(0.65, 0, 0.83, 0.83) forwards;
 }
-.checkboxItem__714a9[data-selected] .checkStroke__714a9 {
+.animateIn__714a9 .checkStroke__714a9 {
   animation: checkDraw__714a9 0.3s cubic-bezier(0.65, 0, 0.83, 0.83) both;
 }
 .checkboxItem__714a9:not([data-selected]):hover {
@@ -95412,4 +95416,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.19c8aa5f9300f683.css.map*/
+/*# sourceMappingURL=12633.3bcf31ca5e517481.css.map*/
