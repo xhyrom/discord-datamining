@@ -52,16 +52,22 @@
   How to Purchase a Nitro Gift in Discord
 </h1>
 <div class="mega-box">
-  <strong><span style="color: #434343">Offer: </span></strong
-  ><span style="color: #434343"
+  <strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Offer:
+    </span></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >It’s time to pick: trick or treat? Starting </span
-  ><strong><span style="color: #434343">October 1, 2025</span></strong
-  ><span style="color: #434343"
+  ><strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >October 1, 2025</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >, gift a 1-month or 1-year Nitro subscription and receive your choice of
     one from eight spooky Avatar Decorations to keep. This Halloween promotion
     will roll out gradually, with all users gaining access by mid October</span
-  ><span style="color: #434343"
-    ><span style="color: #434343">.<br /></span
+  ><span style="color: #434343" data-darkreader-inline-color=""
+    ><span style="color: #434343" data-darkreader-inline-color="">.<br /></span
   ></span>
   <p class="wysiwyg-text-align-center">
     <img
@@ -70,20 +76,22 @@
     />
   </p>
   <h4 id="h_01K5VNBN0SD9MKMZDVTHRM3SNP" class="wysiwyg-text-align-center">
-    <span style="color: #666666"
+    <span style="color: #666666" data-darkreader-inline-color=""
       >Trick or Treat Avatar Decoration Collection</span
     >
   </h4>
-  <span style="color: #434343"
+  <span style="color: #434343" data-darkreader-inline-color=""
     >Collect a new avatar decoration from the Trick or Treat Collection each
     time you send a Nitro gift. Offer ends </span
   ><strong
-    ><span style="color: #434343">November 3, 2025 (5:00PM PT)</span></strong
-  ><span style="color: #434343"
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >November 3, 2025 (5:00PM PT)</span
+    ></strong
+  ><span style="color: #434343" data-darkreader-inline-color=""
     >. Look for the promotion banner before making your purchase. </span
   >
   <p class="wysiwyg-text-align-center">
-    <span style="color: #434343"
+    <span style="color: #434343" data-darkreader-inline-color=""
       ><img
         src="https://support.discord.com/hc/article_attachments/35151179692695"
         width="320"
@@ -91,25 +99,35 @@
     /></span>
   </p>
   <h4 id="h_01K5SK6GB08QH98MGF4YT6D29C" class="wysiwyg-text-align-center">
-    <span style="color: #666666"
+    <span style="color: #666666" data-darkreader-inline-color=""
       >Halloween Promotion Banner in Select Plan Window</span
     >
   </h4>
   <p>
-    <strong><span style="color: #434343">Please note</span></strong
-    ><span style="color: #434343"
+    <strong
+      ><span style="color: #434343" data-darkreader-inline-color=""
+        >Please note</span
+      ></strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
       >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
       any Avatar Decoration you receive is yours to keep, it will be removed if
       you refund your Nitro gift purchase.<br /><br /></span
-    ><span style="color: #434343">Want to learn more about </span
-    ><strong><span style="color: #434343">Avatar Decorations</span></strong
-    ><span style="color: #434343">? Check out our </span
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >Want to learn more about </span
+    ><strong
+      ><span style="color: #434343" data-darkreader-inline-color=""
+        >Avatar Decorations</span
+      ></strong
+    ><span style="color: #434343" data-darkreader-inline-color=""
+      >? Check out our </span
     ><a
       href="https://support.discord.com/hc/en-us/articles/13410113109911"
       target="_blank"
       rel="noopener noreferrer"
       >article</a
-    ><span style="color: #434343"> for more details.</span>
+    ><span style="color: #434343" data-darkreader-inline-color="">
+      for more details.</span
+    >
   </p>
 </div>
 <p>
@@ -395,4 +413,3 @@
   >
   within 5 days of the initial purchase date to request a refund.
 </h3>
-<p>&lt;/class="wysiwyg-text-align-center"&gt;</p>
