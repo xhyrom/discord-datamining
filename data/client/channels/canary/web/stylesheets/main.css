@@ -58517,12 +58517,6 @@ html .progress__61462 {
   border-top-right-radius: 0;
   font-weight: var(--font-weight-semibold);
 }
-.searchTokenTopLevel_bd8186 {
-  font-size: 14px;
-  height: 20px;
-  line-height: 20px;
-  padding: 0 var(--space-4);
-}
 .searchFilter_bd8186 + .searchFilter_bd8186 {
   padding-left: 2px;
 }
@@ -95405,4 +95399,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
     0 0 8px 4px var(--opacity-blurple-80);
 }
 
-/*# sourceMappingURL=12633.cc40dc80bfcefa59.css.map*/
+/*# sourceMappingURL=12633.01413d37bb0fd7a6.css.map*/
