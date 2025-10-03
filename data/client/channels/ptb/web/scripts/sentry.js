@@ -2780,6 +2780,7 @@
             USER_CHANNELS: "/users/@me/channels",
             USER_WARP_LICENSE: "/users/@me/warp/license",
             USER_WISHLIST: (t) => "/wishlists/".concat(t),
+            USER_WISHLIST_PATCH: (t) => "/users/@me/wishlists/".concat(t),
             USER_WISHLIST_ITEMS: "/users/@me/wishlist/items",
             USER_WISHLIST_ITEM: (t, e) =>
               "/users/@me/wishlists/".concat(t, "/items/").concat(e),
@@ -6456,6 +6457,7 @@
           (r.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED =
             "game_server_hosting_third_party_consent_accepted"),
           (r.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
+          (r.DEBUG_MISSING_STRING = "debug_missing_string"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6589,25 +6591,29 @@
           d.pK.KRW,
           d.pK.IDR,
           Object.freeze({
-            APPLICATIONS: (t) => (null == t ? null : ["applications", t]),
+            APPLICATIONS: (t) => (null != t ? "applications/".concat(t) : null),
             APP_PREMIUM_BUTTON: (t) =>
-              null == t ? null : ["premium-button", t],
+              null != t ? "premium-button/".concat(t) : null,
             CUSTOM_ACTIVITY_LINK: (t, e) =>
-              null == t || null == e ? null : ["custom-activity-links", t, e],
-            SKU: (t) => (null == t ? null : ["SKU", t]),
-            STORE_LISTING: (t) => (null == t ? null : ["store-listing", t]),
+              null != t && null != e
+                ? "custom-activity-links/".concat(t, "/").concat(e)
+                : null,
+            SKU: (t) => (null != t ? "sku/".concat(t) : null),
+            STORE_LISTING: (t) =>
+              null != t ? "store-listing/".concat(t) : null,
             SUBSCRIPTION_PLANS: (t) =>
-              null == t ? null : ["subscription-plans", t],
-            APPLICATION_WIDGET_APPLICATION_CONFIGS: [
+              null != t ? "subscription-plans/".concat(t) : null,
+            SUBSCRIPTION_PLAN: (t) =>
+              null != t ? "subscription-plan/".concat(t) : null,
+            USER_COUNTRY_CODE: () => "location-metadata",
+            APPLICATION_WIDGET_APPLICATION_CONFIGS: () =>
               "application-widget-application-configs",
-            ],
-            USER_APPLICATION_IDENTITIES: (t) => [
-              "user-application-identities",
-              t,
-            ],
-            ACTIVITIES_DISCORD_CONFIG: (t) => ["activities-discord-config", t],
+            USER_APPLICATION_IDENTITIES: (t) =>
+              "user-application-identities/".concat(t),
+            ACTIVITIES_DISCORD_CONFIG: (t) =>
+              "activities-discord-config/".concat(t),
             __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (t) =>
-              null == t ? null : ["useParentSkuData", t],
+              null != t ? "useParentSkuData/".concat(t) : null,
           });
       },
       334431: function (t, e, a) {
@@ -6681,7 +6687,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-02-37db3028cf24be8e34602b9b90cb9377537c5a3e-discord_web",
+              "2025-10-03-b0206a2a1edd522dcd4814314209759c08adf8f1-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6747,8 +6753,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "452533"),
-            o.YA("builtAt", String("1759389535637"));
+            o.YA("buildNumber", "453183"),
+            o.YA("builtAt", String("1759476471252"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48444,4 +48450,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.bba714c81f94d2de.js.map
+//# sourceMappingURL=sentry.e1cdb5f63569428c.js.map
