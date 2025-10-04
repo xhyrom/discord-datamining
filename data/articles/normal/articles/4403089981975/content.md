@@ -72,15 +72,6 @@
 <h1 id="h_01H08ZYAQ086M13050KETDDM9R">
   How to Give or Remove Expression Permissions
 </h1>
-<h3>
-  <span
-    id="docs-internal-guid-c68b6cd7-7fff-5ab3-1dc7-e489e185f57f"
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    >Please note: We are currently experimenting with permissions, so the
-    changes to the permissions here are not yet live yet to everyone.</span
-  >
-</h3>
 <p>
   As a server owner, you can manage which members are able to add, remove, or
   edit Stickers within the server by enabling or disabling expression
@@ -136,7 +127,7 @@
     src="https://support.discord.com/hc/article_attachments/14564163727639"
   />
 </p>
-<h3>
+<h3 id="h_01K6PJ9DFKEPW6ZQ2AMR04DQNG">
   <strong
     >Note: Managing custom stickers are only available on desktop. If you’re on
     iOS or Android, you’ll need to use the desktop or web apps to upload, edit,
@@ -317,7 +308,7 @@
     hover your mouse over a sticker to delete the sticker.
   </li>
 </ul>
-<h3>
+<h3 id="h_01K6PJ9DFK913S3G1E5ATT9CDK">
   <strong
     >Note: You cannot edit the sticker file once it has been uploaded. If you
     want to replace the sticker file, you’ll need to delete this sticker and

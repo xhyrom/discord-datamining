@@ -21,7 +21,7 @@
     alt="Merch2021_Everyone_Header_3840x1740.png"
   />
 </p>
-<h1><strong>Order Information</strong></h1>
+<h1 id="h_01HEWQACMSABYNZ0H34BF81S3H"><strong>Order Information</strong></h1>
 <p>
   <span style="font-weight: 400"
     >Orders placed through this site are fulfilled by DOTEXE.</span
@@ -82,110 +82,11 @@
       href="https://dotexe.com/policies/privacy-policy"
       target="_blank"
       rel="noopener noreferrer"
-      >here</a
+      >here.</a
     >
   </li>
 </ul>
-<p>
-  <span class="wysiwyg-underline"
-    ><span class="wysiwyg-font-size-large wysiwyg-color-blue90"
-      ><strong>For more Gift Card information:</strong></span
-    ></span
-  >
-</p>
-<ul>
-  <li style="font-weight: 400" aria-level="1">
-    <strong>Nitro subscription gift cards are non-refundable.</strong
-    ><span style="font-weight: 400"> The DOTEXE Gift Card Refund Policy </span
-    ><a
-      href="https://discordmerch.com/pages/faq"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    ><span style="font-weight: 400">
-      applies to your purchase of a subscription gift card. </span
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >If you have any questions about privacy, please check out Foridev’s
-      privacy policy </span
-    ><a
-      href="https://foridev.com/privacy-policy-foridev-selling-codes-app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >
-  </li>
-  <li style="font-weight: 400" aria-level="1">
-    <span style="font-weight: 400"
-      >For Questions around redemption or issues, please contact the DOTEXE team </span
-    ><a
-      href="https://dotexe.com/pages/contact"
-      target="_blank"
-      rel="noopener noreferrer"
-      >here</a
-    >
-  </li>
-</ul>
-<h3>
-  <span style="font-weight: 400"
-    ><strong>Note</strong>: <br />- These gift cards are only for Nitro standard
-    plans. You cannot use the gift cards for Nitro Basic plans.</span
-  >
-</h3>
-<p>
-  <span style="font-weight: 400"
-    ><span class="wysiwyg-underline"
-      ><span class="wysiwyg-font-size-large wysiwyg-color-blue90"
-        ><strong>For more information abo</strong></span
-      ><strong
-        ><span class="wysiwyg-font-size-large wysiwyg-color-blue90"
-          >ut</span
-        ></strong
-      >
-      <strong
-        ><span class="wysiwyg-font-size-large wysiwyg-color-blue90"
-          >2022 Snowsgiving Merchandise:</span
-        ></strong
-      ></span
-    ></span
-  >
-</p>
-<ul>
-  <li>
-    <span style="font-weight: 400"
-      >Sales are final for all Snowsgiving 2022 charitable collection items, and
-      no returns will be accepted.</span
-    >
-  </li>
-  <li>
-    <span style="font-weight: 400"
-      >Please check out our official Snowsgiving support article<a
-        href="https://support.discord.com/hc/en-us/articles/10643430945815"
-        target="_blank"
-        rel="noopener"
-      >
-        linked here</a
-      >!</span
-    >
-  </li>
-  <li>
-    <span style="font-weight: 400"
-      >Check out the Merch Store FAQ here:
-      <a
-        class="anchor-1MIwyf anchorUnderlineOnHover-2qPutX"
-        tabindex="0"
-        title="https://discordmerch.com/pages/faq"
-        href="https://discordmerch.com/pages/faq"
-        target="_blank"
-        rel="noreferrer noopener"
-        >https://discordmerch.com/pages/faq</a
-      ></span
-    >
-  </li>
-</ul>
-<h2><strong>How To Contact</strong></h2>
+<h2 id="h_01HEWQACMSMTAMACN0S04K6R97"><strong>How To Contact</strong></h2>
 <p>
   <span style="font-weight: 400"
     >To submit a return/exchange request or check your eligibility with the
