@@ -27,11 +27,11 @@
     href="https://support-dev.discord.com/hc/en-us/articles/23810592251031"
     target="_blank"
     rel="noopener noreferrer"
-    >Premium Apps Growth Tier</a
-  >, and we expect to deliver even more monetization features for developers
-  soon. With more opportunities to provide users on Discord with easy,
-  accessible options for discovering and upgrading to premium features for their
-  favorite apps, we’re now announcing a change to our
+    >Premium Apps Growth Tier.</a
+  >
+  With more opportunities to provide users on Discord with easy, accessible
+  options for discovering and upgrading to premium features for their favorite
+  apps, we’re now announcing a change to our
   <a
     href="https://discord.com/developers/docs/policies-and-agreements/developer-policy"
     target="_blank"
@@ -55,8 +55,7 @@
 <p>
   By not requiring users to leave Discord to complete purchases related to their
   Discord experience, we’re able to offer them a safer, more secure, easier, and
-  trusted transaction experience. This change also helps us continue to invest
-  in the ecosystem of developers and apps that have grown around Discord.
+  trusted transaction experience. 
 </p>
 <h2 id="h_01HZ7G5B6VJ2Y61RN8GJ83HH7K">
   Premium Apps support &amp; price parity

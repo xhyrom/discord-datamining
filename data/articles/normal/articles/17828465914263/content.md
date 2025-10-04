@@ -297,9 +297,9 @@
   >
 </p>
 <p>
-  A:  The Shop is available to all Discord users. If you are also a Nitro
-  member, you will have special member pricing on all purchases within the
-  Shop!  
+  A:  A: The Shop is available to all Discord users. If you are also a Nitro
+  member, you will have special member pricing on eligible purchases within the
+  Shop!
 </p>
 <p>
   <strong>Q: How do I get a discount on profile effects in the Shop?</strong>

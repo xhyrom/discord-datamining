@@ -126,8 +126,8 @@
     rel="noopener noreferrer"
     >Nameplates</a
   >, and more. Nitro members enjoy exclusive Shop perks, including special
-  discounts on select items and access to member-only profile items to use with
-  their subscription.
+  discounts on select items, and may have access to member-only profile items to
+  use with their subscription.
 </p>
 <div class="info-box">
   Items available for purchase in the Shop will change periodically and may be

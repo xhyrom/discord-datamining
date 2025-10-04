@@ -220,7 +220,7 @@
   Discord Nitro Digital Gift Cards on Amazon.com
 </h1>
 <h3 id="docs-internal-guid-596da1d7-7fff-fc50-2e3a-c7244d405627">
-  This is currently only available in the United States.
+  This is currently only available in the United States and the EU.
 </h3>
 <p>
   <span style="color: #4f545c" data-darkreader-inline-color=""

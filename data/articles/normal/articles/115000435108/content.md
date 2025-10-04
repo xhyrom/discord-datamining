@@ -708,7 +708,7 @@
   A: Every day, millions of files are uploaded to Discord and stored securely
   for your future access. Storage management is expensive, so we regularly
   review how people use Discord and their storage needs. In fact, our data shows
-  that 99% of users stick to files smaller than 10MB. <br /><br />In order to
+  that most users stick to files smaller than 10MB.<br /><br />In order to
   maintain our service without compromising on quality of storage, we decided to
   reduce the free file size upload limit. Unlike other platforms, we store your
   files for as long as you need them, so it’s crucial that we manage our storage

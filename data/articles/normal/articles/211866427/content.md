@@ -43,7 +43,7 @@
   </li>
 </ul>
 <h1 id="h_01GWWTHCAK3W9FW7DRYQ22FFRC">How to Upload an Image</h1>
-<h3>
+<h3 id="h_01K6PHCKRTBAG5XVW22JJN7ZNQ">
   <span style="color: #434343" data-darkreader-inline-color=""
     >You can also copy and paste a GIF or image URL into chat, and the link
     preview will display said image.  </span
@@ -57,7 +57,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/13527114627735"
+    src="https://support.discord.com/hc/article_attachments/35403120983319"
     alt="drag_and_drop_example.gif"
   />
 </p>
@@ -81,7 +81,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/13527116702103"
+    src="https://support.discord.com/hc/article_attachments/35403150969879"
     alt="upload_example.gif"
   />
 </p>
@@ -94,15 +94,14 @@
 <p class="wysiwyg-text-align-center">
   <img
     style="text-align: center"
-    src="https://support.discord.com/hc/article_attachments/13527157580567"
+    src="https://support.discord.com/hc/article_attachments/35403150970007"
     alt="image_upload_alt_text.png"
   />
 </p>
 <p>
-  Remember, to keep Discord running super smooth and awesome, we have to keep
-  any picture files and embedded media files below 25MB. With Nitro, you’ll get
-  a higher upload limit. Otherwise, you're free to bombard your friends with
-  your favorite pics to your heart's content!
+  Any picture files and embedded media files have to be less than 10MB. With
+  Nitro, you’ll get a higher upload limit. Otherwise, you're free to bombard
+  your friends with your favorite pics to your heart's content!
 </p>
 <h1 id="h_01GWWTHYJEV2S1WCDGFEMY21AQ">
   <strong
@@ -131,7 +130,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/13527111595415"
+    src="https://support.discord.com/hc/article_attachments/35403120983831"
     alt="desktop_alt_text.gif"
   />
 </p>
@@ -145,7 +144,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/13527110690199"
+    src="https://support.discord.com/hc/article_attachments/35403120984087"
     alt="mobile_alt_text.gif"
     width="351"
     height="708"

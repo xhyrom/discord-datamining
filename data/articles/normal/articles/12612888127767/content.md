@@ -100,7 +100,7 @@
   >.
 </p>
 <p>Tier 1: <strong>24 slots</strong></p>
-<p>Tier 2: <strong>35 slots</strong></p>
+<p>Tier 2: <strong>36 slots</strong></p>
 <p>Tier 3: <strong>48 slots</strong></p>
 <h1 id="h_01JVDEHVSXY7X7KXXCYWF1DH7A">How do I use Soundboard?</h1>
 <h2 id="h_01JVDEHVSXVSXGPAN9TF82AEZ4">

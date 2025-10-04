@@ -266,7 +266,7 @@
 <ul>
   <li>Everything in Level 1 AND Level 2 AND…..</li>
   <li>+100 Emoji Slots (for a total of 250)</li>
-  <li>+30 custom sticker slots (for a total of 48)</li>
+  <li>+30 custom sticker slots (for a total of 60)</li>
   <li>+12 Soundboard slots (for a total of 48)</li>
   <li>384Kbps Audio Quality</li>
   <li>Audience capacity for Stage Channels with Video/Go Live: 300</li>

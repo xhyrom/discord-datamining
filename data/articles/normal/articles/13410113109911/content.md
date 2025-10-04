@@ -392,7 +392,7 @@
 </p>
 <p>
   A: The Shop is available to all Discord users. If you are also a Nitro member,
-  you will have special member pricing on all purchases within the Shop!
+  you will have special member pricing on eligible purchases within the Shop! 
 </p>
 <p id="docs-internal-guid-22992952-7fff-a0a6-ea7e-1cb0798d6051">
   <strong>Q: How do I get a discount on Avatar Decorations in the Shop?</strong>
