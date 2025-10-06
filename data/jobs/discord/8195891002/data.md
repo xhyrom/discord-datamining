@@ -10,11 +10,11 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8195891002](https://discord.com/jobs/8195891002)
 
-**Updated At:** Mon, 06 Oct 2025 21:15:44 GMT
+**Updated At:** Mon, 06 Oct 2025 21:25:27 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for a rigorous and empathetic Safety By Design Policy practitioner who is passionate about understanding and shaping technology’s impact on our users and society. As a member of the Product Policy organization, you will support our efforts to build and scale safe products in collaboration with a crossfunctional group, focused on Discord’s revenue product portfolio. You will report to the Senior Manager, Safety By Design Policy.
-What You'll Be Doing
+What you'll be doing
 
 Partner with Product, Engineering, Legal, Design, Business Operations, and other crossfunctional roles to identify safety risks and opportunities in new visible and invisible product changes; work with those teams to build mitigations into the product design and contribute to product strategy.
 Build and maintain knowledge about Discord’s revenue strategies, product offerings, business metrics, and internal infrastructure. The product portfolio for this role may include, but is not limited to, Nitro features, Server Boosting features, advertising products, third-party revenue products, and creator revenue products.
