@@ -3348,6 +3348,8 @@
             GAME_SERVERS: (t) => "/guilds/".concat(t, "/game-servers"),
             GAME_SERVER_REGIONS: (t) =>
               "/guilds/".concat(t, "/game-server-regions"),
+            GAME_SERVER_WAKE: (t, e) =>
+              "/guilds/".concat(t, "/game-servers/").concat(e, "/wake"),
             SEARCH_CHANNEL: (t) => "/channels/".concat(t, "/messages/search"),
             SEARCH_TABS_CHANNEL: (t) =>
               "/channels/".concat(t, "/messages/search/tabs"),
@@ -3483,6 +3485,8 @@
             STORE_SKU_PURCHASE: (t) => "/store/skus/".concat(t, "/purchase"),
             STORE_LISTING: (t) => "/store/listings/".concat(t),
             STORE_LISTINGS_SKU: (t) => "/store/skus/".concat(t, "/listings"),
+            SOCIAL_LAYER_APPLICATION_STOREFRONT: (t) =>
+              "/partner-sdk/guilds/".concat(t, "/application-storefront"),
             ORDER_CREATE: "/billing/orders",
             ORDER_UPDATE: (t) => "/billing/orders/".concat(t),
             ORDER_SIGN: (t) => "/billing/orders/".concat(t, "/sign"),
@@ -4909,6 +4913,8 @@
           (r.OVERLAY_GAME_INVITE_SETTINGS_UPDATED =
             "overlay_game_invite_settings_updated"),
           (r.OVERLAY_STATE_CHANGED = "overlay_state_changed"),
+          (r.OVERLAY_NOTIFICATION_SETTING_UPDATED =
+            "overlay_notification_setting_updated"),
           (r.WIDGET_CONTENT_SHOWN = "widget_content_shown"),
           (r.WIDGET_SETTING_UPDATED = "widget_setting_updated"),
           (r.WIDGET_INTERACTED = "widget_interacted"),
@@ -5470,6 +5476,8 @@
             "channel_attach_menu_use_apps_clicked"),
           (r.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED =
             "channel_attach_menu_start_activity_clicked"),
+          (r.FORTNITE_GFNJOIN_CLICKED = "fortnite_gfnjoin_clicked"),
+          (r.FORTNITE_DOWNLOAD_CLICKED = "fortnite_download_clicked"),
           (r.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED =
             "app_launcher_entrypoint_button_clicked"),
           (r.APP_LAUNCHER_SEARCH_QUERY_TYPED =
@@ -6458,6 +6466,8 @@
             "game_server_hosting_third_party_consent_accepted"),
           (r.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           (r.DEBUG_MISSING_STRING = "debug_missing_string"),
+          (r.ORB_BALANCE_ACTION_SHEET_ACTION =
+            "orb_balance_action_sheet_action"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6687,7 +6697,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-03-0a497ab887e33326a9907c6b4dadf55c2fb4b14d-discord_web",
+              "2025-10-06-18fab60f884df90f30a0923038f47504e90f4a88-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6753,8 +6763,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "453248"),
-            o.YA("builtAt", String("1759507102010"));
+            o.YA("buildNumber", "453794"),
+            o.YA("builtAt", String("1759735111382"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48450,4 +48460,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.62598dc9e7819ab1.js.map
+//# sourceMappingURL=sentry.884ea5339b8e9c38.js.map
