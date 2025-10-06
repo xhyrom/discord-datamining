@@ -66247,6 +66247,31 @@ div.nagbar_d74ef8 {
   line-height: 1.2em;
   white-space: nowrap;
 }
+.container_c40875 {
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
+  padding-top: var(--space-12);
+}
+.purchasePlaceholder_c40875 {
+  align-items: center;
+  background: var(--background-mod-normal, hsla(240, 4%, 61%, 0.16));
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.avatarDecorationPreview_c40875,
+.nameplatePreview_c40875,
+.purchasePlaceholder_c40875 {
+  height: 40px;
+  width: 40px;
+}
+.nameplatePreview_c40875 {
+  object-fit: cover;
+  object-position: right;
+}
 .avatarPairContainer__30f35 {
   display: flex;
 }
@@ -95306,4 +95331,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.130a4cc2832725c5.css.map*/
+/*# sourceMappingURL=12633.03565bdc16cae62d.css.map*/
