@@ -62579,12 +62579,13 @@ div:hover
 }
 .container__99d5f {
   background-color: var(--background-secondary-alt);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
   display: flex;
   filter: saturate(var(--saturation-factor, 1));
   justify-content: space-between;
   max-width: 1066px;
   overflow: hidden;
+  padding: var(--space-12);
   position: relative;
   width: 100%;
 }
@@ -62605,6 +62606,9 @@ div:hover
 }
 .giftButtonContainer__99d5f {
   margin-top: var(--space-24);
+}
+.gradientBackground__99d5f:before {
+  opacity: 0.3;
 }
 .container_ce5f0d {
   background: var(--background-surface-high);
@@ -95290,4 +95294,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.bf3f0645bc9a3ac8.css.map*/
+/*# sourceMappingURL=12633.1211f720a2f4daa2.css.map*/
