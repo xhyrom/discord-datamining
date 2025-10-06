@@ -68881,6 +68881,9 @@ div.clanTagBadgeContainer__07f91 {
   height: 16px;
   width: 16px;
 }
+.hoverableIcon__07f91:hover {
+  color: var(--icon-secondary);
+}
 .iconTooltipContainer__07f91 {
   line-height: 0;
 }
@@ -95287,4 +95290,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6de15ec5f9048583.css.map*/
+/*# sourceMappingURL=12633.bf3f0645bc9a3ac8.css.map*/
