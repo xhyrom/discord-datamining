@@ -132,6 +132,9 @@
         color: white;
         background-color: black;
       }
+      .nav_link:hover {
+        color: white !important;
+      }
     </style>
   </div>
   <header class="nav">
