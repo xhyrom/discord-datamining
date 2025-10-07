@@ -54620,7 +54620,6 @@ html .progress__61462 {
   flex-direction: column;
   justify-content: center;
   padding: var(--space-8) var(--space-12);
-  width: 100%;
 }
 .footerContainer_e80b85:hover {
   background-color: var(--button-danger-background-hover);
@@ -94003,4 +94002,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.cc41fbd69ad507be.css.map*/
+/*# sourceMappingURL=12633.63a28c6c552c77c9.css.map*/
