@@ -43556,6 +43556,8 @@ div.mobilePushContainer__3d3b0 {
 }
 .body__00943 {
   border-radius: 8px;
+}
+.body__00943:not(:empty) {
   margin-top: 12px;
 }
 .body__00943 .separator__00943 {
@@ -43772,6 +43774,12 @@ div.mobilePushContainer__3d3b0 {
   position: absolute;
   right: -4px;
   width: 16px;
+}
+.activitySectionDetails__00943 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 .spotifySection__00943 {
   grid-template-columns: 32px minmax(20px, auto) -webkit-max-content;
@@ -95327,4 +95335,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.93385a0004e0d25d.css.map*/
+/*# sourceMappingURL=12633.4452dbeed5df7582.css.map*/
