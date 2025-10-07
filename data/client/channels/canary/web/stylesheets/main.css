@@ -14940,11 +14940,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .chevronIcon__5fa2f {
   display: block;
   height: 20px;
-  transform: rotate(0deg);
+  transform: rotateX(0deg);
   width: 20px;
 }
 .chevronIcon__5fa2f.isOpen__5fa2f {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
 }
 .full-motion .chevronIcon__5fa2f {
   transition: transform 0.2s ease-out;
@@ -94043,4 +94043,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.af33d493fb1a0bab.css.map*/
+/*# sourceMappingURL=12633.177f7aadc2d131c2.css.map*/
