@@ -288,6 +288,26 @@
     >here</a
   >!
 </div>
+<div class="exp-box">
+  <p id="h_01K701J6TCSTZPNXF67XMYH7R6">
+    <strong><span style="color: #434343">Important</span></strong
+    ><span style="color: #434343"
+      >: Discord Quests is currently experimenting with </span
+    ><strong><span style="color: #434343">cloud play</span></strong
+    ><span style="color: #434343"
+      >. To participate, accept a Cloud Play Quest and follow the steps shown in
+      the </span
+    ><strong><span style="color: #434343">Quest</span></strong
+    ><span style="color: #434343">
+      card. Learn more about Cloud Play Quests </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/35372187686295"
+      target="_blank"
+      rel="noopener noreferrer"
+      >here</a
+    ><span style="color: #434343">.</span>
+  </p>
+</div>
 <h1 id="h_01JCM0891G5K7DGK0GVCQ02EXS">Claiming Your Quest Rewards </h1>
 <p>Once you have completed a Quest, you can claim the reward on Discord:</p>
 <div>
