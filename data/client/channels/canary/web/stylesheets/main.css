@@ -20676,7 +20676,7 @@ svg.radioIcon_c1e9c4 {
 .full-motion .coverArt_e0f8ae {
   transition:
     box-shadow 0.2s ease,
-    transform 0.6s ease;
+    transform 0.3s ease;
 }
 .closeButton_e0f8ae {
   color: var(--interactive-normal);
@@ -94043,4 +94043,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.e9e1d15347e45bce.css.map*/
+/*# sourceMappingURL=12633.0f46764b39360a77.css.map*/
