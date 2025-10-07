@@ -14996,7 +14996,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   height: 100vh;
   justify-content: center;
-  width: calc(100vw - var(--devtools-sidebar-width, 0));
+  width: calc(100vw - var(--devtools-sidebar-width, 0px));
 }
 .modal_e44912 {
   --custom-viewport-padding: calc(
@@ -94043,4 +94043,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.177f7aadc2d131c2.css.map*/
+/*# sourceMappingURL=12633.e9e1d15347e45bce.css.map*/
