@@ -48,14 +48,6 @@
             ><strong>Game Authentication</strong></a
           >
         </li>
-        <li
-          class="ck-list-marker-bold"
-          data-list-item-id="ecaad0911aa3524ff0f9aefc70d3beae7"
-        >
-          <a href="#h_01K700VCJFWYMXY1B33BH7J52E"
-            ><strong>Playing the Game</strong></a
-          >
-        </li>
       </ul>
     </li>
     <li
@@ -165,40 +157,8 @@
 </p>
 <p>
   4. Once logged in, you'll be redirected back to Discord and the Activity will
-  unlock.
+  be launched.
 </p>
-<h2 id="h_01K700VCJFWYMXY1B33BH7J52E">Playing the Game</h2>
-<p>
-  Once you're set up, you can begin playing the game and tracking your Quest
-  progress in the Discord desktop app:
-</p>
-<p>
-  1. Press the <strong>Go Live</strong> button in a voice channel to begin
-  streaming. Learn more about Go Live
-  <a
-    href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">here</span></a
-  >. 
-</p>
-<p>2. The game will launch directly within Discord—no downloads required.</p>
-<p>
-  3. Play the game for the required amount of time to complete the Quest
-  (typically shown in a progress bar).
-</p>
-<p>
-  4. The Quest timer only starts after the cloud stream begins, so you won't
-  lose time during setup or login.
-</p>
-<div class="info-box">
-  <span style="color: #434343"
-    ><strong>Note</strong>: Some Cloud Play Quests allow for multiple sessions
-    to complete the required playtime. For example, you might be allotted 2
-    sessions of at least 8 minutes each to complete a 15-minute
-    requirement.</span
-  >
-</div>
 <div class="book-box">
   <p>
     <span style="color: #434343"><strong>Need more information?</strong></span>
