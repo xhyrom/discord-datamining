@@ -71,6 +71,9 @@
         <li>
           <a href="#h_01K4RAXVDENNEF0SZNYYJGY4WT"><strong>Widgets</strong></a>
         </li>
+        <li>
+          <a href="#h_01K6DY1CJBBQHBFPETCDTJHE9B"><strong>Wishlist</strong></a>
+        </li>
       </ul>
     </li>
   </ul>
@@ -652,5 +655,127 @@
   </p>
   <h4 id="h_01K4RAXVDE3SWSWB0TDYJ2HN2E" class="wysiwyg-text-align-center">
     <span style="color: #666666">Example of Removing an Entire Widget</span>
+  </h4>
+</div>
+<h2 id="h_01K6DY1CJBBQHBFPETCDTJHE9B">Wishlist</h2>
+<div class="exp-box">
+  <strong>Important</strong>: Wishlist is currently an experimental feature
+  limited to a number of users on desktop and browser.
+</div>
+<p>
+  The <strong>Wishlist</strong> feature allows you to save Shop items you want
+  on your profile, helping other users easily see exactly what to gift you.
+</p>
+<div class="info-box">
+  <strong>Note</strong>: Items you already own, Orb exclusive items, and bundles
+  cannot be added to your wishlist.
+</div>
+<p>You can add items to your wishlist in two simple ways:</p>
+<p>
+  <span class="wysiwyg-font-size-x-large"><strong>From the Shop</strong></span>
+</p>
+<p>
+  Browse the Shop and hover over any item card to see the
+  <strong>Wishlist</strong> button or visit an item's details page and press the
+  <strong>Wishlist</strong> button to add it.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35343823363095"
+  />
+</p>
+<h4 id="h_01K6GVGD0GTJ4WC066CJ6YE7QK" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Adding Shop Items to Your Wishlist from the Shop Tab</span
+  >
+</h4>
+<div class="tip-box">
+  <p>
+    <strong><span style="color: #434343">Tip</span></strong
+    ><span style="color: #434343">:</span>
+    <span style="color: #434343"
+      >To remove an item from your Wishlist, press the </span
+    ><strong><span style="color: #434343">Wishlist</span></strong
+    ><span style="color: #434343">
+      button again on that item in the Shop, or press the </span
+    ><strong><span style="color: #434343">Remove from Wishlist</span></strong
+    ><span style="color: #434343"> icon [</span
+    ><span style="color: #434343"
+      ><img
+        src="https://support.discord.com/hc/article_attachments/35343823367319"
+        width="24"
+        height="24" /></span
+    ><span style="color: #434343"
+      >] in the upper-right corner of the item in your Profile Board.</span
+    >
+  </p>
+  <p class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/35343823368599"
+    /><img
+      src="https://support.discord.com/hc/article_attachments/35343803779479"
+    />
+  </p>
+  <h4 id="h_01K6GVGD0GMPW707XZ6MDZBCYF" class="wysiwyg-text-align-center">
+    <span style="color: #666666"
+      >Removing Items to Your Wishlist in the Shop Tab (Top) or in Your Profile
+      Board (Bottom) </span
+    >
+  </h4>
+</div>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>From Your Profile</strong></span
+  >
+</p>
+<p>
+  1. Press your <strong>avatar</strong> icon in the bottom-left corner, then
+  select your <strong>avatar</strong> again to open your profile.
+</p>
+<p>
+  2. Select the <strong>Wishlist</strong> tab, then press
+  <strong>Add item</strong> in the upper-right corner. 
+</p>
+<p>
+  3. You'll be taken to the Shop where you can browse items. Press the
+  <strong>Wishlist</strong> button on any item you'd like to add.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35343823371671"
+    width="834"
+    height="580"
+  />
+</p>
+<h4 id="h_01K6GVGD0GATG1XDNQ8Z5CESAN" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Adding Shop Items to Your Wishlist from Your Profile</span
+  >
+</h4>
+<div class="info-box">
+  <strong>Note</strong
+  ><span style="color: #434343"
+    >: Wishlists are public by default. To make your Wishlist private, go to
+    your </span
+  ><strong><span style="color: #434343">Profile Board,</span></strong
+  ><span style="color: #434343"> press the </span
+  ><strong><span style="color: #434343">ellipsis</span></strong
+  ><span style="color: #434343"> icon [</span
+  ><span style="color: #434343"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/35343803784983"
+      width="30"
+      height="24" /></span
+  ><span style="color: #434343">], and toggle </span
+  ><strong><span style="color: #434343">Public Wishlist </span></strong
+  ><span style="color: #434343">off.  </span>
+  <p id="h_01K6GVGD0GNYE651PTTG6A7PPV" class="wysiwyg-text-align-center">
+    <img
+      src="https://support.discord.com/hc/article_attachments/35468828941719"
+      alt="ScreenRecording2025-10-07at9.59.49AM-ezgif.com-video-to-gif-converter.gif"
+    />
+  </p>
+  <h4 id="h_01K6GVGD0GP0ZKP3QHWD2MKP88" class="wysiwyg-text-align-center">
+    <span style="color: #666666">Public Wishlist Toggle</span>
   </h4>
 </div>
