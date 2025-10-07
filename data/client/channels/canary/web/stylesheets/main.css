@@ -14738,10 +14738,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   box-sizing: border-box;
   padding: var(--space-4);
 }
-@container scroller scroll-state(scrollable: y) {
-  .listBox__8906b {
-    padding-right: 0;
-  }
+.listBox__8906b:not(.scrollable__8906b) ::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 .listBoxInner__8906b,
 .listBoxItem__8906b {
@@ -94044,4 +94043,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.db4eb0aa695cd876.css.map*/
+/*# sourceMappingURL=12633.af33d493fb1a0bab.css.map*/
