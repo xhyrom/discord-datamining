@@ -75,6 +75,18 @@
   full games, Cloud Play Quests launch directly in Discord. Play for a set
   amount of time to unlock your reward.
 </p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35495182886167"
+    width="235"
+    height="449"
+  />
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K72C9TTHZ9KGJB8JYAP0GQAX">
+  <span style="color: #666666"
+    >Example of a Cloud Play Quest in a User’s Profile</span
+  >
+</h4>
 <h1 id="h_01K700VCJ79H6J8T3DPWDZKGHR">
   How to Participate in a Cloud Play Quests
 </h1>
@@ -139,6 +151,20 @@
   details about the game and Quest requirements. 
 </p>
 <p>5. Press the <strong>Jump In</strong> button to begin.</p>
+<figure style="width: 100%" class="wysiwyg-image wysiwyg-image-resized">
+  <img
+    style="aspect-ratio: 800/652"
+    src="https://support.discord.com/hc/article_attachments/35495192144279"
+    alt="trimcloud-ezgif.com-video-to-gif-converter.gif"
+    width="800"
+    height="652"
+  />
+</figure>
+<h4 class="wysiwyg-text-align-center" id="h_01K72CAQ7T36XR80V2MGNQFDKH">
+  <span style="color: #666666"
+    >Starting a Cloud Play Trial Activity via a User’s Profile</span
+  >
+</h4>
 <h2 id="h_01K700VCJESZBF05F61FPF6PGV">Game Authentication</h2>
 <p>
   Before you can start playing, you'll need to authenticate with the game
