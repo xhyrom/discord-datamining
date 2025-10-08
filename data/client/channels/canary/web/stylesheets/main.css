@@ -14725,6 +14725,16 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   justify-content: center;
   padding: var(--space-8) var(--space-12);
 }
+.emptyStateText_deaec9 {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+.emptyState_deaec9 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+}
 .listBox__2e223 {
   box-sizing: border-box;
   padding: var(--space-4);
@@ -14768,7 +14778,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   flex-grow: 1;
   justify-content: flex-start;
-  min-height: 40px;
+  min-height: var(--select-option-height);
   padding: var(--space-xxs) var(--space-4) var(--space-xxs) var(--space-8);
 }
 .listBoxItemContent__2e223.inInput__2e223 {
@@ -14779,10 +14789,24 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   flex-shrink: 1;
 }
 .selectedIcon__2e223 {
+  padding: var(--space-xxs) var(--space-4) var(--space-xxs) 0;
+}
+.loadingSpinnerWrapper__2e223,
+.selectedIcon__2e223 {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: var(--space-xxs) var(--space-4) var(--space-xxs) 0;
+}
+.loadingSpinnerWrapper__2e223 {
+  height: var(--select-option-height);
+}
+.loadingSpinner__2e223 {
+  width: 32px;
+}
+.loadingSpinnerInner__2e223 {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
 }
 .option_ec77f2 {
   align-items: center;
@@ -14858,7 +14882,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   gap: 4px;
   max-width: 100%;
-  min-height: 40px;
+  min-height: var(--select-option-height);
   padding: var(--space-4);
   text-align: left;
   width: 100%;
@@ -14909,7 +14933,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 }
 .comboBoxInput__5fa2f {
   max-height: 1lh;
-  min-height: 40px;
+  min-height: var(--select-option-height);
   min-width: min(12ch, 80%);
   padding-left: calc(var(--space-12) + 1px);
   padding-right: var(--space-8);
@@ -93085,6 +93109,7 @@ html.disable-forced-colors * {
   --modal-width-large: 800px;
   --modal-width-medium: 602px;
   --modal-width-small: 442px;
+  --select-option-height: 40px;
 }
 .mana-text-inputs {
   --control-input-height-md: 40px;
@@ -94105,4 +94130,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.79d9ac03e035e4b6.css.map*/
+/*# sourceMappingURL=12633.71e76d1bf2fede96.css.map*/
