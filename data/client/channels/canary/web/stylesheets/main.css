@@ -30052,6 +30052,10 @@ body .headerAnimation_b54a5b {
   height: 66px;
   width: 66px;
 }
+.icon__9f2f4.large__9f2f4 {
+  height: 128px;
+  width: 128px;
+}
 .container__9e80c {
   display: flex;
 }
@@ -30094,7 +30098,7 @@ body .headerAnimation_b54a5b {
   margin-top: 16px;
 }
 .benefit__4328f {
-  background-color: var(--background-base-lower);
+  background-color: var(--background-mod-subtle);
   border-radius: 8px;
   padding: 16px;
 }
@@ -93933,4 +93937,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.f88dccbd5d0f2480.css.map*/
+/*# sourceMappingURL=12633.3956deecc1abee6b.css.map*/
