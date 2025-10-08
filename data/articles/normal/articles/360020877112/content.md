@@ -71,8 +71,10 @@
   ></span>
   <p class="wysiwyg-text-align-center">
     <img
-      src="https://support.discord.com/hc/article_attachments/35151192943895"
-      alt="trickortreat.gif"
+      src="https://support.discord.com/hc/article_attachments/35503512709143"
+      alt="ezgif.com-speed.gif"
+      width="503"
+      height="283"
     />
   </p>
   <h4 id="h_01K5VNBN0SD9MKMZDVTHRM3SNP" class="wysiwyg-text-align-center">
