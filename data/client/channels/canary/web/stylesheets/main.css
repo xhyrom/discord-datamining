@@ -2395,16 +2395,6 @@
   pointer-events: none;
   width: 0;
 }
-@keyframes bgFill__714a9 {
-  to {
-    background-color: var(--checkbox-background-default-selected);
-  }
-}
-@keyframes bgEmpty__714a9 {
-  0% {
-    background-color: var(--checkbox-background-default-selected);
-  }
-}
 @keyframes dotGrow__714a9 {
   0% {
     opacity: 1;
@@ -2424,15 +2414,15 @@
 @keyframes dotShrink__714a9 {
   0% {
     opacity: 0;
-    transform: scale(3);
+    transform: scale(2);
   }
   25% {
     opacity: 0;
-    transform: scale(3);
+    transform: scale(2);
   }
   26% {
     opacity: 1;
-    transform: scale(3);
+    transform: scale(2);
   }
   to {
     opacity: 1;
@@ -2452,8 +2442,8 @@
     opacity: 1;
     transform: scale(0.7);
   }
-  83% {
-    transform: scale(1.2);
+  75% {
+    transform: scale(1.1);
   }
   to {
     opacity: 1;
@@ -2529,17 +2519,11 @@
   color: var(--checkbox-foreground-active);
   opacity: 1;
 }
-.animateIn__714a9 .checkboxIndicator__714a9 {
-  animation: bgFill__714a9 80ms cubic-bezier(0.33, 0, 0.67, 1) 80ms backwards;
-}
 .animateIn__714a9 .dot__714a9 {
   animation: dotGrow__714a9 0.3s cubic-bezier(0.65, 0, 0.83, 0.83) forwards;
 }
 .animateIn__714a9 .checkStroke__714a9 {
   animation: checkDraw__714a9 0.3s cubic-bezier(0.65, 0, 0.83, 0.83) both;
-}
-.animateOut__714a9 .checkboxIndicator__714a9 {
-  animation: bgEmpty__714a9 64ms cubic-bezier(0.33, 0, 0.67, 1) both;
 }
 .animateOut__714a9 .dot__714a9 {
   animation: dotShrink__714a9 0.12s cubic-bezier(0.65, 0, 0.83, 0.84) backwards;
@@ -15391,8 +15375,8 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   0% {
     transform: scale(0);
   }
-  45% {
-    transform: scale(1.1667);
+  40% {
+    transform: scale(1.2);
   }
   75% {
     transform: scale(1);
@@ -15412,7 +15396,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   35% {
     transform: scale(0.33);
   }
-  55% {
+  40% {
     transform: scale(1.15);
   }
   to {
@@ -93914,4 +93898,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.fd27c0e8db80d792.css.map*/
+/*# sourceMappingURL=12633.72ca78d47e7fb606.css.map*/
