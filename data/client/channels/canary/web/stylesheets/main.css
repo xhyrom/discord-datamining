@@ -5049,6 +5049,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   padding: var(--space-8) var(--space-12);
   position: relative;
   width: auto;
+  will-change: opacity, transform;
 }
 .richTooltip__4e35b {
   max-width: none;
@@ -94130,4 +94131,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.71e76d1bf2fede96.css.map*/
+/*# sourceMappingURL=12633.767dcf883a749bd2.css.map*/
