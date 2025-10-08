@@ -24415,10 +24415,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .emojiErrorItem__67954 {
   align-items: center;
   background-color: var(--background-base-lower);
-  border-radius: 4px;
+  border-radius: var(--radius-xs);
   display: flex;
   justify-content: center;
-  margin-bottom: 1px;
   padding: 16px;
 }
 .fileIcon__67954 {
@@ -93934,4 +93933,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.acd4f4629bb9db28.css.map*/
+/*# sourceMappingURL=12633.f88dccbd5d0f2480.css.map*/
