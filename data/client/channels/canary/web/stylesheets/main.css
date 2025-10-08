@@ -48683,6 +48683,13 @@ h3.improved__1689b:after {
   font-size: 10px;
   margin: 0 var(--space-4);
 }
+.compact__2debe .versionHash__2debe {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .wrapper__61a6b {
   background-color: var(--background-base-lower);
   background-position: 50% 0;
@@ -93898,4 +93905,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.72ca78d47e7fb606.css.map*/
+/*# sourceMappingURL=12633.2fceb2c28ccfbbca.css.map*/
