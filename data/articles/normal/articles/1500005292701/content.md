@@ -1,60 +1,102 @@
 <div class="toc-box">
   <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+    ><span class="wysiwyg-font-size-x-large"
+      >What this article covers:</span
+    ></strong
+  >
   <ul>
     <li>
-      <a href="#h_01H4RH0TQ9QG1NWKD08MVCTS4K" target="_self"
-        >Why is a server labeled as Age-Restricted?</a
+      <a href="#h_01H4RH0TQ9QG1NWKD08MVCTS4K"
+        ><strong>Why is a server labeled as age-restricted?</strong></a
       >
     </li>
     <li>
-      <a href="#h_01H4RH13HQJNMSFPDA9KGDVJB5" target="_self"
-        >I can’t view or join Age-Restricted servers. What should I do?</a
+      <a href="#h_01H4RH13HQJNMSFPDA9KGDVJB5"
+        ><strong
+          >I can’t view or join age-restricted servers. What should I
+          do?</strong
+        ></a
       >
     </li>
     <li>
-      <a href="#h_01H4RH1GSQF4689C1VVX9CGHGV" target="_self"
-        >How do I update my age information?</a
+      <a href="#h_01H4RH1GSQF4689C1VVX9CGHGV"
+        ><strong>How do I update my age information?</strong></a
       >
     </li>
   </ul>
+</div>
+<div class="book-box">
+  <strong>Want to learn more? <br /></strong>Check out our support article
+  <a
+    href="https://support.discord.com/hc/en-us/articles/1500005389362-Age-restricted-Server-Designation"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  >
+  to learn more about what age-restricted servers are and how to manage them.
 </div>
 <h1 id="h_01H4RH0TQ9QG1NWKD08MVCTS4K">
   <strong>Why is a Server Labeled As Age-Restricted?</strong>
 </h1>
 <p>
-  Our
-  <a
-    href="https://discord.com/guidelines"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Community Guidelines</a
-  >
-  require that all adult content posted to Discord be kept behind an
-  age-restricted gate.
-</p>
-<p>
-  Server owners can designate
-  <a
-    href="https://support.discord.com/hc/en-us/articles/115000084051"
-    target="_blank"
-    rel="noopener noreferrer"
-    >specific channels as being 18+ by adding an age-restricted gate</a
-  >. Entire servers can now be classified as 18+ through the use of an
-  <a
-    href="https://support.discord.com/hc/en-us/articles/1500005389362"
-    target="_blank"
-    rel="noopener noreferrer"
-    >age-restricted server designation</a
+  <span style="color: #2e3338">Our </span
+  ><strong
+    ><a
+      href="https://discord.com/guidelines"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Community Guidelines</a
+    ></strong
+  ><span style="color: #2e3338">
+    explain that adult content posted to Discord be shared in age-restricted
+    spaces. For servers, this can be done in two ways:</span
   >
 </p>
+<ul>
+  <li>
+    <span style="color: #2e3338"
+      >Server owners or users with the “Manage Server” permission can </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/1500005389362-Age-restricted-Server-Designation"
+      target="_blank"
+      rel="noopener noreferrer"
+      >self-designate entire s</a
+    ><strong><span style="color: #2e3338">ervers as being 18+</span></strong
+    ><span style="color: #2e3338"> by adding an age-restriction.. </span>
+  </li>
+  <li>
+    <span style="color: #2e3338"
+      >Entire servers can now be classified by Discord as 18+ through the use of
+      an </span
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/1500005389362"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong>age-restricted server designation</strong></a
+    ><span style="color: #2e3338">.</span>
+  </li>
+</ul>
 <p>
-  Servers must be classified as age-restricted if the community is organized
-  around age-restricted themes or if the majority of the server’s content is
-  focused on 18+ content.
+  <span style="color: #2e3338"
+    >Servers must be classified as age-restricted if the community is organized
+    around age-restricted themes or if the majority of the server’s content is
+    focused on 18+ content.</span
+  >
 </p>
+<div class="info-box">
+  <strong><span style="color: #434343">Note</span></strong
+  ><span style="color: #434343"
+    >: Users in regions where age verification is required (e.g. the UK) will
+    need to complete age verification in order to view or enter servers marked
+    as age-restricted by their server owner. Learn more about age verification
+    on Discord </span
+  ><a
+    href="https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Verification-on-Discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >here</a
+  ><span style="color: #434343">. </span>
+</div>
 <h2 id="h_01H4RH13HQJNMSFPDA9KGDVJB5">
   <strong
     >I can’t view or join Age-Restricted servers. What should I do?</strong
@@ -84,7 +126,7 @@
   ><span style="color: #2e3338"> icon [</span
   ><span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/27644505348375"
+      src="https://support.discord.com/hc/article_attachments/35492977167639"
       width="20"
       height="20" /></span
   ><span style="color: #2e3338">]  in the bottom left corner of the app.</span>
@@ -92,7 +134,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/27644534559639"
+      src="https://support.discord.com/hc/article_attachments/35492977169943"
       width="315"
       height="71"
   /></span>
@@ -122,7 +164,7 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #2e3338"
     ><img
-      src="https://support.discord.com/hc/article_attachments/27644534563223"
+      src="https://support.discord.com/hc/article_attachments/35493002267799"
       width="624"
       height="407"
   /></span>
@@ -151,75 +193,58 @@
   <strong>How do I update my age information?</strong>
 </h2>
 <p>
-  If you are over the age of 18 and have been locked out of an age-restricted
-  server, you can appeal by following the instructions below: 
+  <span style="color: #2e3338"
+    >If you are over the age of 18 and have been locked out of an age-restricted
+    server, you can appeal by following the instructions below: </span
+  >
 </p>
 <p>
-  <strong
+  <span style="color: #2e3338"
     >1. Take a photo of yourself holding the following items. Your face and all
     of the required information needs to be visible and readable in ONE
-    photo.</strong
+    photo.</span
   >
 </p>
 <ul>
-  <li>A photo ID that contains your date of birth, clearly readable</li>
-  <li>A piece of paper that shows your full Discord Username</li>
-</ul>
-<p>
-  <strong>2. </strong
-  ><span
-    id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
-    style="color: #2e3338"
-    ><strong
-      >Once you have taken the photo, submit a request to the Trust &amp; Safety
-      team
-      <a href="https://dis.gd/request"
-        ><span class="wysiwyg-underline" style="color: #1155cc">here</span></a
-      >.</strong
+  <li>
+    <span style="color: #2e3338"
+      >A photo ID that contains your date of birth, clearly readable</span
     >
-  </span>
-</p>
-<ul>
+  </li>
   <li>
-    <span
-      id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
-      style="color: #2e3338"
-      >Under <strong>What can we help you with?</strong>, select the
-      <strong>Appeals, age update, other questions</strong> option.
-    </span>
+    <span style="color: #2e3338"
+      >A piece of paper that shows your full Discord Username</span
+    >
   </li>
 </ul>
 <p>
-  <strong
+  <span style="color: #2e3338"
+    >2. Once you have taken the photo, submit a request to the Trust &amp;
+    Safety team </span
+  ><a href="https://dis.gd/request" target="_blank" rel="noopener noreferrer"
+    >here</a
+  ><span style="color: #2e3338">. Under </span
+  ><strong
+    ><span style="color: #2e3338">What can we help you with?</span></strong
+  ><span style="color: #2e3338">, select the </span
+  ><strong
     ><span style="color: #2e3338"
-      >Please keep in mind the following information when submitting your
-      request: </span
+      >Appeals, age update, other questions</span
     ></strong
+  ><span style="color: #2e3338">
+    option. Be sure to use the email address associated with your Discord
+    account. Our Trust &amp; Safety team needs to receive the request directly
+    from the email address associated with the Discord account to protect our
+    users' privacy and security.</span
   >
 </p>
-<ul>
-  <li>
-    <span
-      id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
-      style="color: #2e3338"
-      >Be sure to use the email address associated with your Discord account.
-    </span>
-  </li>
-  <li>
-    <span
-      id="docs-internal-guid-b22bf1ed-7fff-4c86-d660-2effc6a4bc86"
-      style="color: #2e3338"
-      >Our Trust &amp; Safety team needs to receive the request directly from
-      the email address associated with the Discord account to protect our
-      users' privacy and security.<br
-    /></span>
-  </li>
-  <li>
-    If the Discord account was not claimed and verified with an email address,
-    our team is unfortunately unable to provide further support.
-  </li>
-</ul>
+<p>
+  <span style="color: #2e3338"
+    >If the Discord account was not claimed and verified with an email address,
+    our team is unfortunately unable to provide further support.</span
+  >
+</p>
 <div class="info-box">
-  The information you provide will only be used to verify your age and will not
-  be used for any other purpose.
+  <strong>Note</strong>: The information you provide will only be used to verify
+  your age and will not be used for any other purpose.
 </div>
