@@ -20624,6 +20624,12 @@ svg.radioIcon_c1e9c4 {
   padding-bottom: 12px;
 }
 .headerContent_e0f8ae {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.headerTextContainer_e0f8ae {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -20651,17 +20657,39 @@ svg.radioIcon_c1e9c4 {
   opacity: 0.5;
 }
 .gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover {
-  border-radius: 8px;
   opacity: 1;
 }
-.gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover .coverArt_e0f8ae {
+.coverArtContainer_e0f8ae {
+  border-radius: 8px;
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+.full-motion .coverArtContainer_e0f8ae {
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.3s ease;
+}
+.gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover .coverArtContainer_e0f8ae {
   box-shadow: 0 0 25px 0 rgba(145, 101, 255, 0.25);
 }
 .full-motion
   .gameGrid_e0f8ae:hover
   .gameClickable_e0f8ae:hover
-  .coverArt_e0f8ae {
+  .coverArtContainer_e0f8ae {
   transform: rotateY(-30deg);
+}
+.coverArtContainer_e0f8ae:after {
+  border-radius: 8px;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: box-shadow 0.2s ease;
+}
+.gameGrid_e0f8ae:hover
+  .gameClickable_e0f8ae:hover
+  .coverArtContainer_e0f8ae:after {
+  box-shadow: inset 0 0 67px 0 rgba(145, 101, 255, 0.25);
 }
 .coverArt_e0f8ae {
   border: 1px solid var(--border-subtle);
@@ -20669,13 +20697,7 @@ svg.radioIcon_c1e9c4 {
   display: block;
   height: 94px;
   object-fit: cover;
-  transition: box-shadow 0.2s ease;
   width: 73px;
-}
-.full-motion .coverArt_e0f8ae {
-  transition:
-    box-shadow 0.2s ease,
-    transform 0.3s ease;
 }
 .closeButton_e0f8ae {
   color: var(--interactive-normal);
@@ -20704,6 +20726,10 @@ svg.radioIcon_c1e9c4 {
 }
 .instructionsLink_e0f8ae:hover {
   text-decoration: underline;
+}
+.gameTile_e0f8ae {
+  height: 36px;
+  width: 36px;
 }
 .hidden__7d7b6 {
   opacity: 0;
@@ -93905,4 +93931,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.2fceb2c28ccfbbca.css.map*/
+/*# sourceMappingURL=12633.6115ca5c4aede3fd.css.map*/
