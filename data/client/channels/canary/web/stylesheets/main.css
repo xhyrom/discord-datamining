@@ -59679,7 +59679,7 @@ html .progress__61462 {
 }
 @container premium-marketing-page-container (max-width: 960px) {
   .bannerHeader__62eb1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
   }
   .bannerHeader__62eb1,
@@ -59688,19 +59688,19 @@ html .progress__61462 {
     line-height: 1.25;
   }
   .bannerText__62eb1 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
   }
 }
 @container premium-marketing-page-container (max-width: 960px) and (min-width: 720px) {
   .bannerHeader__62eb1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
   .bannerText__62eb1 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2857142857142858;
@@ -59708,13 +59708,13 @@ html .progress__61462 {
 }
 @container premium-marketing-page-container (max-width: 720px) {
   .bannerHeader__62eb1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
   .bannerText__62eb1 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2857142857142858;
@@ -93931,4 +93931,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6115ca5c4aede3fd.css.map*/
+/*# sourceMappingURL=12633.0c6ced2aa8cc1b4f.css.map*/
