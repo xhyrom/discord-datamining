@@ -84720,6 +84720,7 @@ html.disable-forced-colors * {
   --checkbox-border-checked: var(--blurple-18);
   --checkbox-border-default: var(--neutral-1);
   --checkbox-border-default-selected: var(--neutral-12);
+  --checkbox-border-hover: var(--neutral-12);
   --checkbox-border-hover-selected: var(--neutral-12);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
@@ -84853,7 +84854,9 @@ html.disable-forced-colors * {
   );
   --mention-foreground: var(--blurple-1);
   --radio-border-active: var(--neutral-12);
+  --radio-border-default: var(--neutral-12);
   --radio-border-default-selected: var(--neutral-12);
+  --radio-border-hover: var(--neutral-12);
   --radio-border-hover-selected: var(--neutral-12);
   --redesign-button-primary-alt-border: var(--brand-300);
   --redesign-button-primary-alt-text: var(--brand-300);
@@ -84866,7 +84869,9 @@ html.disable-forced-colors * {
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-28);
   --switch-border-active: var(--neutral-12);
+  --switch-border-default: var(--neutral-12);
   --switch-border-default-selected: var(--neutral-12);
+  --switch-border-hover: var(--neutral-12);
   --switch-border-hover-selected: var(--neutral-12);
   --text-brand: var(--brand-300);
   --text-code-addition: var(--green-new-1);
@@ -85643,6 +85648,7 @@ html.disable-forced-colors * {
   --checkbox-border-checked: var(--blurple-59);
   --checkbox-border-default: var(--neutral-72);
   --checkbox-border-default-selected: var(--neutral-49);
+  --checkbox-border-hover: var(--neutral-49);
   --checkbox-border-hover-selected: var(--neutral-49);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
@@ -85774,7 +85780,9 @@ html.disable-forced-colors * {
   --mention-background: hsl(var(--opacity-blurple-28-hsl) / 0.2784313725490196);
   --mention-foreground: var(--blurple-82);
   --radio-border-active: var(--neutral-49);
+  --radio-border-default: var(--neutral-49);
   --radio-border-default-selected: var(--neutral-49);
+  --radio-border-hover: var(--neutral-49);
   --radio-border-hover-selected: var(--neutral-49);
   --redesign-button-primary-alt-border: var(--brand-600);
   --redesign-button-primary-alt-text: var(--brand-600);
@@ -85787,7 +85795,9 @@ html.disable-forced-colors * {
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-47);
   --switch-border-active: var(--neutral-49);
+  --switch-border-default: var(--neutral-49);
   --switch-border-default-selected: var(--neutral-49);
+  --switch-border-hover: var(--neutral-49);
   --switch-border-hover-selected: var(--neutral-49);
   --text-brand: var(--brand-600);
   --text-code-addition: var(--green-new-78);
@@ -86566,6 +86576,7 @@ html.disable-forced-colors * {
   --checkbox-border-checked: var(--blurple-24);
   --checkbox-border-default: var(--neutral-10);
   --checkbox-border-default-selected: var(--neutral-23);
+  --checkbox-border-hover: var(--neutral-23);
   --checkbox-border-hover-selected: var(--neutral-23);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-28-hsl) / 0.2784313725490196
@@ -86703,7 +86714,9 @@ html.disable-forced-colors * {
   );
   --mention-foreground: var(--blurple-13);
   --radio-border-active: var(--neutral-23);
+  --radio-border-default: var(--neutral-23);
   --radio-border-default-selected: var(--neutral-23);
+  --radio-border-hover: var(--neutral-23);
   --radio-border-hover-selected: var(--neutral-23);
   --redesign-button-primary-alt-border: var(--brand-345);
   --redesign-button-primary-alt-text: var(--brand-345);
@@ -86716,7 +86729,9 @@ html.disable-forced-colors * {
   --stage-card-pill-bg: hsl(var(--opacity-16-hsl) / 0.1607843137254902);
   --status-danger: var(--red-new-44);
   --switch-border-active: var(--neutral-23);
+  --switch-border-default: var(--neutral-23);
   --switch-border-default-selected: var(--neutral-23);
+  --switch-border-hover: var(--neutral-23);
   --switch-border-hover-selected: var(--neutral-23);
   --text-brand: var(--brand-345);
   --text-code-addition: var(--green-new-20);
@@ -87489,6 +87504,7 @@ html.disable-forced-colors * {
   --checkbox-border-checked: var(--blurple-20);
   --checkbox-border-default: var(--neutral-5);
   --checkbox-border-default-selected: var(--neutral-19);
+  --checkbox-border-hover: var(--neutral-19);
   --checkbox-border-hover-selected: var(--neutral-19);
   --control-background-critical-secondary-active: hsl(
     var(--opacity-24-hsl) / 0.23921568627450981
@@ -87622,7 +87638,9 @@ html.disable-forced-colors * {
   );
   --mention-foreground: var(--blurple-5);
   --radio-border-active: var(--neutral-19);
+  --radio-border-default: var(--neutral-19);
   --radio-border-default-selected: var(--neutral-19);
+  --radio-border-hover: var(--neutral-19);
   --radio-border-hover-selected: var(--neutral-19);
   --redesign-button-primary-alt-border: var(--brand-330);
   --redesign-button-primary-alt-text: var(--brand-330);
@@ -87635,7 +87653,9 @@ html.disable-forced-colors * {
   --stage-card-pill-bg: hsl(var(--opacity-12-hsl) / 0.12156862745098039);
   --status-danger: var(--red-new-38);
   --switch-border-active: var(--neutral-19);
+  --switch-border-default: var(--neutral-19);
   --switch-border-default-selected: var(--neutral-19);
+  --switch-border-hover: var(--neutral-19);
   --switch-border-hover-selected: var(--neutral-19);
   --text-brand: var(--brand-330);
   --text-code-addition: var(--green-new-13);
@@ -94071,4 +94091,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b17d98031baa3527.css.map*/
+/*# sourceMappingURL=12633.6437ab396b3b7300.css.map*/
