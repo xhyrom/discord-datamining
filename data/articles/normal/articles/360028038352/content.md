@@ -283,12 +283,13 @@
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
 <div class="exp-box">
-  <strong>Important:</strong> As of September 9, 2025, the Custom Invite Link
-  beta has concluded and will no longer be available for purchase under
-  Additional Perks. If you have this standalone perk unlocked, your custom URL
-  will be disabled on October 9, 2025, but reserved for an additional 30 days.
-  If you want to keep your custom URL, you can do so by upgrading to a level 3
-  server.
+  <strong>Important:</strong>
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >As of October 9, 2025, the Custom Invite Link beta has concluded and will
+    no longer be available for purchase under Additional Perks. Any Server
+    Boosts that were still applied to this perk, have been returned to the
+    server.</span
+  >
 </div>
 <ul>
   <li>
@@ -297,44 +298,9 @@
     helping them represent your community across the platform
   </li>
   <li>
-    <strong
-      style="
-        color: #434343;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      data-darkreader-inline-color=""
-      >Enhanced Role Styles (3 Boosts)</strong
-    ><span
-      style="
-        color: #434343;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      data-darkreader-inline-color=""
-    >
-      - Make certain roles stand out with animated gradient and holographic
-      effects that go beyond standard solid colors</span
-    >
-  </li>
-  <li>
-    <span
-      style="
-        color: #434343;
-        font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
-          Helvetica, Arial, sans-serif;
-      "
-      data-darkreader-inline-color=""
-      ><strong>Custom Invite Link (5 Boosts) </strong>- Set a
-      <a
-        href="https://support.discord.com/hc/en-us/articles/115001542132-Custom-Invite-Link"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Custom Invite Link</a
-      >
-      for your server that is a customizable URL that members of your server can
-      share to invite others.</span
-    >
+    <strong>Enhanced Role Styles (3 Boosts)</strong> - Make certain roles stand
+    out with animated gradient and holographic effects that go beyond standard
+    solid colors
   </li>
 </ul>
 <h2 id="h_01HGX7DJ33YD3AP7K0E0GYSMYM">Boosting Badge Perks</h2>

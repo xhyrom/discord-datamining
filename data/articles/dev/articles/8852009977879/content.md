@@ -16,7 +16,7 @@
     ><a
       href="https://discord.com/developers/docs/policies-and-agreements/developer-policy"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
       >Discord's Developer Policy</a
     ></strong
   >
@@ -26,7 +26,7 @@
     target="_self"
     ><strong>Developer</strong> <strong>Terms of Service</strong></a
   >
-  are ineligible for discover or the App Directory. We want Discord to be a
+  are ineligible for Discovery or the App Directory. We want Discord to be a
   safe, positive, and inclusive experience. Our team will investigate apps that
   are reported to us or that we proactively identify as likely in violation of
   our policies.
@@ -42,7 +42,7 @@
   >
   is the one-stop shop for managing your application. If your app is eligible
   for discoverability, you can find a list of requirements under
-  <strong>Your Application &gt; App Directory &gt; Discovery Status</strong>.
+  <strong>Your Application &gt; Discovery &gt; Discovery Status</strong>.
 </p>
 <p>
   <strong>3. Do not host graphic or sexual content. </strong>Graphic violence,

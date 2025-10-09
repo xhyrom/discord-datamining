@@ -21,26 +21,24 @@
     >
   </p>
   <ul>
-    <li>
+    <li data-list-item-id="e1c6bc3c330e3d67d852b2ab5e58db4be">
       <a href="#h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</a>
     </li>
-    <li>
+    <li data-list-item-id="ed6dc7efb3d7e26d4c5ea65df44ccc131">
       <a href="#h_01K1DV4MYFNEZYSKKPRV6V447H"
         >How to Set a Custom Invite Link</a
       >
     </li>
-    <li>
+    <li data-list-item-id="e800fbb5243caff4c1cccf5086db41c0b">
       <a href="#h_01K1DV4MYGYEDAV7R5QQKG4RRW">Frequently Asked Questions</a>
     </li>
   </ul>
 </div>
 <div class="exp-box">
-  <strong>Important:</strong> As of September 9, 2025, the Custom Invite Link
-  beta has concluded and will no longer be available for purchase under
-  Additional Perks. If you have this standalone perk unlocked, your custom URL
-  will be disabled on October 9, 2025, but reserved for an additional 30 days.
-  If you want to keep your custom URL, you can do so by upgrading to a level 3
-  server.
+  <strong>Important:</strong> As of October 9, 2025, the Custom Invite Link beta
+  has concluded and will no longer be available for purchase under Additional
+  Perks. Any Server Boosts that were still applied to this perk, have been
+  returned to the server.
 </div>
 <h1 id="h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</h1>
 <p>
