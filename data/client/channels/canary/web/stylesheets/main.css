@@ -35676,11 +35676,9 @@ body .headerAnimation_b54a5b {
   background-color: var(--background-base-low);
   border-radius: var(--radius-sm);
   bottom: 15px;
-  filter: drop-shadow(0 44px 12px rgba(0, 0, 0, 0))
-    drop-shadow(0 28px 11px rgba(0, 0, 0, 0.03))
-    drop-shadow(0 16px 9px rgba(0, 0, 0, 0.1))
-    drop-shadow(0 7px 7px rgba(0, 0, 0, 0.17))
-    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
   left: 10px;
   position: absolute;
   right: 10px;
@@ -35688,7 +35686,7 @@ body .headerAnimation_b54a5b {
 .container__6d099.threeItemBundle__6d099
   .nameplatePreview__6d099.nameplatePreviewCollectedModal__6d099 {
   bottom: 35px;
-  filter: none;
+  box-shadow: none;
   left: 10px;
 }
 .profileEffectContainer_a84142 {
@@ -94153,4 +94151,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.cd15ed9c131baf28.css.map*/
+/*# sourceMappingURL=12633.b9d9d3024ff3162c.css.map*/
