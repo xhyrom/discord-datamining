@@ -2564,7 +2564,6 @@
 }
 .spacing__714a9 {
   flex: 1 1 auto;
-  padding: var(--space-8);
 }
 .checkboxIndicator__714a9 {
   align-items: center;
@@ -2621,14 +2620,14 @@
     backwards;
 }
 .checkboxOption__714a9:not([data-selected]):hover {
-  background-color: var(--background-mod-subtle);
+  cursor: pointer;
 }
 .checkboxOption__714a9:not([data-selected]):hover .checkboxIndicator__714a9 {
   background-color: var(--checkbox-background-hover);
   border-color: var(--checkbox-border-hover);
 }
 .checkboxOption__714a9[data-selected]:hover {
-  background-color: var(--background-mod-subtle);
+  cursor: pointer;
 }
 .checkboxOption__714a9[data-selected]:hover .checkboxIndicator__714a9 {
   background-color: var(--checkbox-background-hover-selected);
@@ -15097,6 +15096,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .group__66d91 {
   display: flex;
   flex-direction: column;
+  gap: var(--space-16);
 }
 .backwardsCompatibleCheckbox__66d91 {
   align-items: start;
@@ -15577,7 +15577,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   box-sizing: border-box;
   display: flex;
   gap: var(--space-12);
-  padding: var(--space-8);
 }
 .radioIndicator__5a85a,
 .standaloneRadioIndicator__5a85a {
@@ -15624,14 +15623,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   animation: dotOut__5a85a 0.25s cubic-bezier(0.33, 0, 0.25, 1) both;
 }
 .radioGroupOption__5a85a:not([data-selected]):hover {
-  background-color: var(--background-mod-subtle);
+  cursor: pointer;
 }
 .radioGroupOption__5a85a:not([data-selected]):hover .outerRadioBase__5a85a {
   fill: var(--radio-background-hover);
   stroke: var(--radio-border-hover);
 }
 .radioGroupOption__5a85a[data-selected]:hover {
-  background-color: var(--background-mod-subtle);
+  cursor: pointer;
 }
 .radioGroupOption__5a85a[data-selected]:hover .outerRadioBase__5a85a,
 .radioGroupOption__5a85a[data-selected]:hover .outerRadioFill__5a85a {
@@ -15647,6 +15646,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: var(--space-16);
 }
 .radioItemIcon__5a85a {
   color: var(--interactive-active);
@@ -41481,9 +41481,13 @@ div.mobilePushContainer__3d3b0 {
 }
 .cutoutIcon__44b0c {
   align-items: center;
+  color: var(--icon-tertiary);
   display: flex;
   height: 100%;
   width: 100%;
+}
+.largeEmoji__44b0c {
+  font-size: 48px;
 }
 .button__06eda {
   align-items: center;
@@ -74880,7 +74884,7 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-64);
   --chat-border: var(--primary-700);
   --chat-text-muted: var(--neutral-27);
-  --checkbox-background-active: var(--blurple-50);
+  --checkbox-background-active: var(--blurple-65);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-background-default-selected: var(--blurple-50);
@@ -75266,7 +75270,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --radio-background-active: var(--blurple-50);
+  --radio-background-active: var(--blurple-65);
   --radio-background-default: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
@@ -75395,7 +75399,7 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
-  --switch-background-active: var(--blurple-50);
+  --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
@@ -77364,7 +77368,7 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-1);
   --chat-border: var(--primary-200);
   --chat-text-muted: var(--neutral-39);
-  --checkbox-background-active: var(--blurple-50);
+  --checkbox-background-active: var(--blurple-65);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-background-default-selected: var(--blurple-50);
@@ -77730,7 +77734,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--white-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
-  --radio-background-active: var(--blurple-50);
+  --radio-background-active: var(--blurple-65);
   --radio-background-default: hsl(
     var(--opacity-black-4-hsl) / 0.0392156862745098
   );
@@ -77853,7 +77857,7 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-400);
   --status-warning-background: var(--yellow-400);
   --status-warning-text: var(--white);
-  --switch-background-active: var(--blurple-50);
+  --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-1-hsl) / 0.0196078431372549
   );
@@ -79818,7 +79822,7 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-91);
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-37);
-  --checkbox-background-active: var(--blurple-50);
+  --checkbox-background-active: var(--blurple-65);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-background-default-selected: var(--blurple-50);
@@ -80208,7 +80212,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --radio-background-active: var(--blurple-50);
+  --radio-background-active: var(--blurple-65);
   --radio-background-default: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
@@ -80341,7 +80345,7 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
-  --switch-background-active: var(--blurple-50);
+  --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
@@ -82302,7 +82306,7 @@ html.disable-forced-colors * {
   --chat-background-default: var(--neutral-80);
   --chat-border: var(--plum-20);
   --chat-text-muted: var(--neutral-34);
-  --checkbox-background-active: var(--blurple-50);
+  --checkbox-background-active: var(--blurple-65);
   --checkbox-background-checked: var(--blurple-50);
   --checkbox-background-default: hsl(var(--opacity-4-hsl) / 0.0392156862745098);
   --checkbox-background-default-selected: var(--blurple-50);
@@ -82692,7 +82696,7 @@ html.disable-forced-colors * {
   --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl) / 0.5);
   --profile-gradient-role-pill-border: hsl(var(--white-hsl) / 0.2);
   --profile-gradient-section-box: hsl(var(--black-hsl) / 0.45);
-  --radio-background-active: var(--blurple-50);
+  --radio-background-active: var(--blurple-65);
   --radio-background-default: hsl(
     var(--opacity-black-8-hsl) / 0.0784313725490196
   );
@@ -82823,7 +82827,7 @@ html.disable-forced-colors * {
   --status-warning: var(--yellow-300);
   --status-warning-background: var(--yellow-300);
   --status-warning-text: var(--black);
-  --switch-background-active: var(--blurple-50);
+  --switch-background-active: var(--blurple-65);
   --switch-background-default: hsl(
     var(--opacity-black-12-hsl) / 0.12156862745098039
   );
@@ -94072,4 +94076,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.f115067cbc5223bd.css.map*/
+/*# sourceMappingURL=12633.fbf8f9eb93f1e96c.css.map*/

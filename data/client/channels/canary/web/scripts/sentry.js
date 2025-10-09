@@ -6698,7 +6698,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-3a2cccd49135fce149429f3ceb3b231b60de2901",
+            release: "discord_web-acaa2eac81832d1871c02abd4ca78114c5fb93db",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6764,8 +6764,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "456534"),
-            o.YA("builtAt", String("1760050339020"));
+            o.YA("buildNumber", "456550"),
+            o.YA("builtAt", String("1760051237427"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -16590,10 +16590,10 @@
             r.I.NEUTRAL_34,
           ],
           "checkbox-background-active": [
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
           ],
           "checkbox-background-checked": [
             r.I.BLURPLE_50,
@@ -18298,10 +18298,10 @@
             r.I.BLACK,
           ],
           "radio-background-active": [
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
           ],
           "radio-background-default": [
             r.I.OPACITY_BLACK_8,
@@ -18886,10 +18886,10 @@
           ],
           "status-warning-text": [r.I.BLACK, r.I.WHITE, r.I.BLACK, r.I.BLACK],
           "switch-background-active": [
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
-            r.I.BLURPLE_50,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
+            r.I.BLURPLE_65,
           ],
           "switch-background-default": [
             r.I.OPACITY_BLACK_12,
@@ -48461,4 +48461,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.e8f9a7a615f565af.js.map
+//# sourceMappingURL=sentry.d1a85341b46b8a0b.js.map
