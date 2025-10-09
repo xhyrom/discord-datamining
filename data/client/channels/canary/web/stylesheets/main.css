@@ -54317,8 +54317,14 @@ html .progress__61462 {
 .taskInstructions__2055a {
   margin-bottom: 4px;
 }
-.ctaButtonWrapper__2055a,
 .questEnrollmentBlockedButton__2055a {
+  flex: 1 0 auto;
+}
+.fullWidthShinyCtaButtonWrapper__2055a {
+  flex: 1;
+  width: 100%;
+}
+.ctaButtonWrapper__2055a {
   flex: 1 0 auto;
 }
 .outerContainerSm__2055a .ctaButtonWrapper__2055a,
@@ -94081,4 +94087,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.49dce9330bb097a9.css.map*/
+/*# sourceMappingURL=12633.addf9ddc28f2c1c3.css.map*/
