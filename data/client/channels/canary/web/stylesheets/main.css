@@ -68176,17 +68176,41 @@ div.nagbar_d74ef8 {
   padding: 16px;
   text-align: center;
 }
-.item__740f2,
 .keybindMessage__740f2 {
   position: relative;
 }
-.item__740f2 a,
 .keybindMessage__740f2 a {
   color: inherit;
   text-decoration: underline;
 }
+.item__740f2 {
+  flex: 1;
+  margin-right: 16px;
+  position: relative;
+}
+.item__740f2 a {
+  color: inherit;
+  text-decoration: underline;
+}
 .switch__740f2 {
-  padding-top: 32px;
+  align-items: center;
+  display: flex;
+  flex: 0;
+  margin-left: 32px;
+  margin-top: 28px;
+}
+.removeKeybindFloating__740f2 {
+  opacity: 0;
+  position: absolute;
+  right: -31px;
+  top: -12px;
+}
+.removeKeybind__740f2 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: 0;
+  margin-top: 28px;
 }
 .ghostPill__740f2 {
   align-items: center;
@@ -68200,22 +68224,22 @@ div.nagbar_d74ef8 {
   border-radius: var(--radius-xs);
   font-size: 14px;
 }
-.removeKeybind__740f2 {
-  opacity: 0;
-  position: absolute;
-  right: -31px;
-  top: -12px;
-}
 .keybindGroup__740f2 {
   margin-top: -1px;
   padding-bottom: 20px;
   padding-top: 20px;
   position: relative;
 }
-.keybindGroup__740f2:hover .removeKeybind__740f2 {
+.keybindGroup__740f2:hover .removeKeybindFloating__740f2 {
   opacity: 1;
 }
-.keyboard-mode .keybindGroup__740f2:focus-within .removeKeybind__740f2 {
+.keybindGroupContent__740f2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.keyboard-mode .keybindGroup__740f2:focus-within .removeKeybindFloating__740f2 {
   opacity: 1;
 }
 .defaultKeybind__740f2 {
@@ -94117,4 +94141,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7a12fdabaae6a944.css.map*/
+/*# sourceMappingURL=12633.c4141427355f152a.css.map*/
