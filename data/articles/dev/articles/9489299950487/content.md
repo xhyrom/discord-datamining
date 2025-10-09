@@ -15,14 +15,28 @@
 <ul>
   <li>
     You and your application must continue to comply with
-    <a href="https://discord.com/terms">Discord’s Terms of Service</a>,
-    <a href="https://discord.com/guidelines">Discord Community Guidelines</a>,
+    <a
+      href="https://discord.com/terms"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord’s Terms of Service</a
+    >,
+    <a
+      href="https://discord.com/guidelines"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Discord Community Guidelines</a
+    >,
     <a
       href="https://discord.com/developers/docs/policies-and-agreements/terms-of-service"
+      target="_blank"
+      rel="noopener noreferrer"
       >Discord Developer Terms of Service</a
     >, and
     <a
       href="https://discord.com/developers/docs/policies-and-agreements/developer-policy"
+      target="_blank"
+      rel="noopener noreferrer"
       >Discord Developer Policy</a
     >.
   </li>
@@ -32,8 +46,8 @@
   </li>
   <li>
     Your application’s content must not contain any age-restricted content.
-    Age-Restricted content includes but is not limited to content and discussion
-    related to:
+    Age-Restricted content includes, but is not limited to, content and
+    discussion related to:
     <ul>
       <li>
         Sexually explicit material such as pornography or sexually explicit text
@@ -56,9 +70,15 @@
   After you and your application meet the eligibility requirements for discovery
   and your application is verified, you can enable discovery for your
   application in the
-  <a href="https://discord.com/developers/applications"
+  <a
+    href="https://discord.com/developers/applications"
+    target="_blank"
+    rel="noopener noreferrer"
     >Discord Developer Portal</a
-  >. To enable discoverability, navigate to the App Directory tab within the
+  >. To enable discoverability, navigate to the Discovery tab within the
   Developer Portal. Then, at the bottom of the Discovery Status tab, click on
-  the “Enable Discovery” button.
+  the “Enable Discovery” button.<br /><br />If you have additional questions
+  about the App Directory or our other Discovery surfaces, reach out to our
+  developer support team
+  <a href="https://dis.gd/developer-support/discovery">here</a>.
 </p>
