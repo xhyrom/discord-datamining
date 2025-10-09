@@ -60,8 +60,11 @@
       href="https://support.discord.com/hc/en-us/articles/1500005389362-Age-restricted-Server-Designation"
       target="_blank"
       rel="noopener noreferrer"
-      >self-designate entire s</a
-    ><strong><span style="color: #2e3338">ervers as being 18+</span></strong
+      >self-designate entire </a
+    ><strong
+      >s<span style="color: #2e3338"
+        ><strong>ervers</strong> as being 18+</span
+      ></strong
     ><span style="color: #2e3338"> by adding an age-restriction.. </span>
   </li>
   <li>
