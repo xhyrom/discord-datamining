@@ -60019,39 +60019,31 @@ html .progress__61462 {
   max-width: 1064px;
   row-gap: 16px;
 }
-.referralProgramBackground_abac7b {
-  background: linear-gradient(180deg, #000, #19033d);
-}
-.serverProfilesBackground_abac7b {
-  background: linear-gradient(180deg, #000, #2a1332);
-}
+.referralProgramBackground_abac7b,
 .yourStyleBackground_abac7b {
   background: linear-gradient(180deg, #000, #19033d);
 }
 .customThemesBackground_abac7b,
+.displayNameStylesBackground_abac7b,
+.serverProfilesBackground_abac7b,
 .yourSpaceBackground_abac7b {
   background: linear-gradient(180deg, #000, #2a1332);
 }
 .noLimitsBackground_abac7b {
   background: linear-gradient(180deg, #000, #36266d);
 }
-.emojisBackground_abac7b,
-.permadecosBackground_abac7b {
+.emojisBackground_abac7b {
   background: linear-gradient(180deg, #000, #031a3b);
 }
-.voiceFiltersBackground_abac7b {
-  background: linear-gradient(180deg, #000, #19033d);
-}
-.theme-light .referralProgramBackground_abac7b {
+.theme-light .referralProgramBackground_abac7b,
+.theme-light .yourStyleBackground_abac7b {
   background: linear-gradient(180deg, #f7f7fe 22.95%, #a9b7ff 153.33%);
 }
 .theme-light .serverProfilesBackground_abac7b {
   background: linear-gradient(180deg, #f7f7fe 50%, #ffc6fd 153.33%);
 }
-.theme-light .yourStyleBackground_abac7b {
-  background: linear-gradient(180deg, #f7f7fe 22.95%, #a9b7ff 153.33%);
-}
 .theme-light .customThemesBackground_abac7b,
+.theme-light .displayNameStylesBackground_abac7b,
 .theme-light .yourSpaceBackground_abac7b {
   background: linear-gradient(180deg, #f7f7fe 50%, #ffc6fd 153.33%);
 }
@@ -60060,12 +60052,6 @@ html .progress__61462 {
 }
 .theme-light .emojisBackground_abac7b {
   background: linear-gradient(180deg, #f7f7fe 22.95%, #b6ddfc 153.33%);
-}
-.theme-light .permadecosBackground_abac7b {
-  background: linear-gradient(180deg, #f7f7fe 22.95%, #b6ddfc 153.33%);
-}
-.theme-light .voiceFiltersBackground_abac7b {
-  background: linear-gradient(180deg, #f7f7fe 22.95%, #ffc6fd 153.33%);
 }
 .bentoSideGradient_abac7b {
   background: radial-gradient(45% 70% at -22% 50%, #ff70f9 0, transparent 100%),
@@ -94131,4 +94117,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.031f113d8908822a.css.map*/
+/*# sourceMappingURL=12633.58391e9c733c1d9e.css.map*/
