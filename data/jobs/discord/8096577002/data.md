@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8096577002](https://discord.com/jobs/8096577002)
 
-**Updated At:** Thu, 18 Sep 2025 22:35:29 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.At Discord, we're building something special - a place where hundreds of millions of people connect, play, and belong. Our ads business is entering an exciting growth phase, and we need a Senior Data Scientist who's passionate about building advertising technology that respects our users while delivering real value to brands. We are establishing the groundwork for advanced advertising capabilities that uphold user privacy and simultaneously achieve outstanding results for advertisers - now that’s true win-win-win!

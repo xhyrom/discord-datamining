@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8126513002](https://discord.com/jobs/8126513002)
 
-**Updated At:** Mon, 15 Sep 2025 17:26:50 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This role provides essential technical support to our global Trust &amp;amp; Safety vendor teams, serves as first responder for access and troubleshooting issues, and helps maintain our security processes. You'll be the go-to person for resolving technical challenges, processing access requests, and ensuring consistent quality across our vendor operations. You'll report to our Manager of Outsourcing.

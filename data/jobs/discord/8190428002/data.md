@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8190428002](https://discord.com/jobs/8190428002)
 
-**Updated At:** Wed, 01 Oct 2025 17:54:24 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our team's mission is to create win-win-win solutions that drive success for players, games businesses, and Discord. We help games businesses succeed through in-game integrations and on-platform tools that help them connect with their players, and create innovative player experiences that help them build lasting friendships through games. As our Senior Design Manager, you'll report to the Director of Product Design, and lead a talented team of designers across the full product development cycle, from strategic visioning through launch and iteration. For example, defining the future of Official Game Communities on Discord, transforming our B2B2C capabilities into a unified suite of offerings, designing a best-in-class B2B portal, and creating social gaming experiences like invites, LFG, and the future of player identity on Discord.

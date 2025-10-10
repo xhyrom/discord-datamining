@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8184654002](https://discord.com/jobs/8184654002)
 
-**Updated At:** Tue, 07 Oct 2025 23:12:27 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Safety Platform team is at the heart of keeping Discord safe for all users. We provide the infrastructure and services that enable scalable and reliable safety on Discord. We're looking for a Senior Software Engineer who is capable of handling ambiguous, complex, multi-milestone projects. As a Senior Engineer on Safety Platform, you'll take full ownership of projects from identifying efficient solutions to gathering feedback and collaborating with cross-functional partners. You'll deliver lovable products while maintaining Discord's high quality bar, utilizing 80/20 thinking and a user-centric approach. You'll embody a growth mindset, diving into new code and technologies to deliver safety solutions that protect millions of users daily.

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8153871002](https://discord.com/jobs/8153871002)
 
-**Updated At:** Tue, 16 Sep 2025 19:26:11 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for a Engineering Manager to join our Client Platform &amp;amp; Performance team to help lead the technical vision for Discord's client experience across all platforms, with a special focus on desktop performance in 2025.

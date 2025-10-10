@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8202527002](https://discord.com/jobs/8202527002)
 
-**Updated At:** Thu, 09 Oct 2025 16:08:29 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is where people come together to spend time with friends, discover communities, and connect over shared interests. As Discord grows, we're looking for a Program Manager to build and lead our Policy Implementation function within Trust &amp;amp; Safety Strategy &amp;amp; Operations.

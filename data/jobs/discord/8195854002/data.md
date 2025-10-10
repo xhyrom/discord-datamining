@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8195854002](https://discord.com/jobs/8195854002)
 
-**Updated At:** Fri, 03 Oct 2025 18:30:12 GMT
+**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Director of Product Marketing for Trust &amp;amp; Safety, you will lead and develop a high-performing Product Marketing team to drive exceptional go-to-market execution for safety products and user education initiatives. You'll develop and execute comprehensive go-to-market strategies for safety products and policies, oversee user and guardian education campaigns, and ensure alignment between Discord's safety objectives and community needs. This role requires a strategic thinker who can act as both player and coach to translate safety initiatives into measurable trust and engagement outcomes.
