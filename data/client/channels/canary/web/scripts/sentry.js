@@ -4110,6 +4110,8 @@
             APEX_EXPERIMENTS: "/apex/experiments",
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
+            GET_APPLICATION_TOKENS: (t) =>
+              "/oauth2/applications/".concat(t, "/tokens"),
           }),
           A = Object.freeze({
             INDEX: "/",
@@ -6718,7 +6720,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-63500cfc4750f3a7944d0abb1162296d968aaa1e",
+            release: "discord_web-7282008d2d1e83d265dfd7dbdee0f1774ba185c6",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6784,8 +6786,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "457065"),
-            o.YA("builtAt", String("1760132166676"));
+            o.YA("buildNumber", "457077"),
+            o.YA("builtAt", String("1760132818695"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48481,4 +48483,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5260aac7b95f0525.js.map
+//# sourceMappingURL=sentry.6820ef96b399d289.js.map
