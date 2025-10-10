@@ -35756,6 +35756,19 @@ body .headerAnimation_b54a5b {
   box-shadow: none;
   left: 10px;
 }
+.cardContainer__47729 {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+}
+.skuImage__47729 {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
 .profileEffectContainer_a84142 {
   border-radius: var(--radius-sm);
   height: 296px;
@@ -35787,6 +35800,16 @@ body .headerAnimation_b54a5b {
 .bundlePreviewWrapper_a84142 {
   margin: 0 auto;
   max-width: 250px;
+}
+.slayerStorefrontReviewImageWrapper_a84142 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.slayerStorefrontReviewImage_a84142 {
+  max-width: 180px;
+  width: 100%;
 }
 .externalProductWrapper__320c6 {
   align-items: center;
@@ -35874,6 +35897,15 @@ body .headerAnimation_b54a5b {
   height: 100%;
   width: 100%;
 }
+.container__42d0d {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.applicationIcon__42d0d {
+  border-radius: 6px;
+}
 .invoiceTable__25766 {
   margin-bottom: 16px;
 }
@@ -35912,6 +35944,12 @@ body .headerAnimation_b54a5b {
 .totalRow__25766 {
   font-weight: 700;
 }
+.slayerStorefrontProductPreview__25766 {
+  box-sizing: border-box;
+  height: 48px;
+  padding: 4px;
+  width: 48px;
+}
 .stepBody_b44961 {
   padding-top: var(--space-8);
 }
@@ -35932,6 +35970,12 @@ body .headerAnimation_b54a5b {
 }
 .skuHeadingText_b44961 {
   align-self: center;
+}
+.socialLayerGameItemDisclaimer_b44961 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin: -8px 0 8px;
 }
 .back_e125f1 {
   margin-right: auto;
@@ -94002,4 +94046,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.045ee45dea9d927b.css.map*/
+/*# sourceMappingURL=12633.2ea623e19a664e14.css.map*/
