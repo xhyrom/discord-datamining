@@ -4108,7 +4108,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     input:focus,
     textarea:focus
   ) {
-  outline: 1px solid var(--custom-input-focus-border-color);
+  outline: 2px solid var(--custom-input-focus-border-color);
   outline-offset: -2px;
 }
 .wrapper__3412a[data-error="true"] {
@@ -11848,7 +11848,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  transition: background-color 0.2s ease-out;
+  transition: background-color 50ms ease-in;
+}
+.listBoxItem__2e223:hover {
+  transition: background-color 0.15s ease-out;
 }
 .mouse-mode .listBoxItem__2e223:hover:not([aria-disabled]) {
   background-color: var(--background-mod-normal);
@@ -11872,10 +11875,11 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   flex-grow: 1;
   justify-content: flex-start;
   min-height: var(--select-option-height);
-  padding: var(--space-xxs) var(--space-4) var(--space-xxs) var(--space-8);
+  padding: calc(var(--space-xxs) - 1px) var(--space-4)
+    calc(var(--space-xxs) - 1px) var(--space-8);
 }
 .listBoxItemContent__2e223.inInput__2e223 {
-  min-height: unset;
+  min-height: calc(var(--select-option-height) - 2px);
 }
 .listBoxItemLabel__2e223 {
   flex-grow: 1;
@@ -13101,6 +13105,14 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   outline: 2px solid var(--custom-input-focus-border-color);
   outline-offset: -2px;
 }
+.selectField__5fa2f[data-read-only="true"],
+.selectField__5fa2f[data-read-only="true"] * {
+  cursor: default !important;
+}
+.selectField__5fa2f[data-disabled="true"],
+.selectField__5fa2f[data-disabled="true"] * {
+  cursor: not-allowed !important;
+}
 .selectButton__5fa2f,
 .selectFieldContent__5fa2f {
   overflow: hidden;
@@ -13113,15 +13125,15 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   gap: 4px;
   max-width: 100%;
   min-height: calc(var(--select-option-height) - 2px);
-  padding: var(--space-4);
+  padding-left: var(--space-4);
   text-align: left;
   width: 100%;
 }
-.isInert__5fa2f .selectButton__5fa2f {
-  cursor: not-allowed;
-}
 .selectButton__5fa2f.wrapTags__5fa2f {
   flex-wrap: wrap;
+}
+.selectButton__5fa2f.multiSelect__5fa2f {
+  padding: 4px;
 }
 .multipleValues__5fa2f,
 .placeholder__5fa2f {
@@ -43621,7 +43633,6 @@ div.mobilePushContainer__3d3b0 {
   padding-right: var(--modal-horizontal-padding);
   padding-top: var(--space-8);
   position: relative;
-  z-index: 0;
 }
 .close__49fc1 {
   border-radius: 3px;
@@ -94099,4 +94110,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a474a8e012298898.css.map*/
+/*# sourceMappingURL=12633.a3901afe434c774a.css.map*/
