@@ -45869,6 +45869,10 @@ div.mobilePushContainer__3d3b0 {
   text-indent: 0;
   unicode-bidi: plaintext;
 }
+.cozy_c19a55 .markupBidi_c19a55 {
+  text-align: start;
+  unicode-bidi: plaintext;
+}
 .edited_c19a55 {
   font-size: 0.625rem;
   font-weight: var(--font-weight-normal);
@@ -93998,4 +94002,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.18ea43fe89cdf5fb.css.map*/
+/*# sourceMappingURL=12633.045ee45dea9d927b.css.map*/
