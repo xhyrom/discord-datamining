@@ -4306,6 +4306,24 @@
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
             SERVER_SHOP: (t) => "/channels/".concat(t, "/shop"),
+            CHANNELS_GAME_SHOP: (t, e, a, r) => {
+              let _ = "/channels/".concat(t, "/game-shop");
+              return (
+                (_ += "/".concat(null != e ? e : 0)),
+                null != a &&
+                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
+                _
+              );
+            },
+            GAME_SHOP: (t, e, a, r) => {
+              let _ = "/game-shop/".concat(t);
+              return (
+                (_ += "/".concat(null != e ? e : 0)),
+                null != a &&
+                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
+                _
+              );
+            },
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
             REPORT: "/report",
             REPORT_SECOND_LOOK: "/report-review",
@@ -6700,7 +6718,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2c8411484ae8ee931764ab9b51212ef901728fbf",
+            release: "discord_web-606b2a5739a99dde5bba71192428dee8470a8928",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6766,8 +6784,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "456957"),
-            o.YA("builtAt", String("1760125745177"));
+            o.YA("buildNumber", "456975"),
+            o.YA("builtAt", String("1760126913707"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48463,4 +48481,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.0e953fba3ee3ad2e.js.map
+//# sourceMappingURL=sentry.f0f1a8bf5beffb4b.js.map
