@@ -777,19 +777,19 @@
         </div>
         <div class="nav_buttons-wr_new">
           <a
-            data-track-nav="login"
-            data-track="login"
-            data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133744"
-            href="https://discord.com/app"
-            class="menu-button-login login-button-js abc"
-            >Log in</a
-          ><a
             id="login"
             data-track="login"
             data-track-nav="login"
             href="https://discord.com/app"
             class="button-nav login-button-js new w-button"
             >Log In</a
+          ><a
+            data-track-nav="login"
+            data-track="login"
+            data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133744"
+            href="https://discord.com/app"
+            class="menu-button-login login-button-js abc"
+            >Log in</a
           >
         </div>
         <div
