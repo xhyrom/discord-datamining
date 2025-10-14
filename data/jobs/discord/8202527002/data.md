@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8202527002](https://discord.com/jobs/8202527002)
 
-**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
+**Updated At:** Tue, 14 Oct 2025 18:34:06 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is where people come together to spend time with friends, discover communities, and connect over shared interests. As Discord grows, we're looking for a Program Manager to build and lead our Policy Implementation function within Trust &amp;amp; Safety Strategy &amp;amp; Operations.
@@ -18,8 +18,10 @@ You'll be the founding member of a new Policy Implementation team, establishing 
 What You'll Do
 
 Develop deep expertise of the Discord’s enforcement ecosystem, serving as the single point of accountability for operational readiness while coordinating across Trust &amp;amp; Safety Operations, Platform Policy, Product, Engineering, and Legal teams
-Design and implement comprehensive tracking systems and standardized documentation (policy launch bundles, RACI frameworks, implementation specs) to monitor progress across 5 phases: Launch Preparation, Technical Implementation, Training &amp;amp; Documentation, Launch Monitoring, and Post-Launch OptimizationPartner with Product and Engineering to identify, document, and resolve technical gaps preventing policy enforcement; identify cross-functional dependencies and drive all stakeholders to meet implementation deadlines
-Co-create comprehensive enforcement guidance materials with T&amp;amp;S Operations teams; ensure FTEs and BPO teams receive appropriate documentation, SOPs, and quality standards for consistent policy enforcement at scaleBuild bidirectional feedback mechanisms between enforcement teams and Policy to identify implementation challenges, refine operational strategies, and drive continuous improvement of enforcement practices
+Design and implement comprehensive tracking systems and standardized documentation (policy launch bundles, RACI frameworks, implementation specs) to monitor progress across 5 phases: Launch Preparation, Technical Implementation, Training &amp;amp; Documentation, Launch Monitoring, and Post-Launch Optimization
+Partner with Product and Engineering to identify, document, and resolve technical gaps preventing policy enforcement; identify cross-functional dependencies and drive all stakeholders to meet implementation deadlines
+Co-create comprehensive enforcement guidance materials with T&amp;amp;S Operations teams; ensure FTEs and BPO teams receive appropriate documentation, SOPs, and quality standards for consistent policy enforcement at scale
+Build bidirectional feedback mechanisms between enforcement teams and Policy to identify implementation challenges, refine operational strategies, and drive continuous improvement of enforcement practices
 Establish and track KPIs for implementation effectiveness, including time-to-implementation, enforcement accuracy, and cross-team consistency; lead regular reviews with Trust Leadership to identify systemic issues and drive resolution
 Create escalation paths for implementation blockers, ensuring rapid resolution; champion operational excellence by pushing teams to meet ambitious timelines while maintaining quality standards
 
