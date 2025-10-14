@@ -77,14 +77,16 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/35495182886167"
-    width="235"
-    height="449"
+    style="aspect-ratio: 608/338; width: 100%"
+    class="wysiwyg-image-resized"
+    src="https://support.discord.com/hc/article_attachments/35626145809687"
+    width="608"
+    height="338"
   />
 </p>
-<h4 class="wysiwyg-text-align-center" id="h_01K72C9TTHZ9KGJB8JYAP0GQAX">
+<h4 class="wysiwyg-text-align-center" id="h_01K7HW7X6PQXKTTB1QSD2PKDPJ">
   <span style="color: #666666"
-    >Example of a Cloud Play Quest in a User’s Profile</span
+    >Example of a Cloud Play Quest in Quest Home</span
   >
 </h4>
 <h1 id="h_01K700VCJ79H6J8T3DPWDZKGHR">
@@ -151,18 +153,18 @@
   details about the game and Quest requirements. 
 </p>
 <p>5. Press the <strong>Jump In</strong> button to begin.</p>
-<figure style="width: 100%" class="wysiwyg-image wysiwyg-image-resized">
+<p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 800/652"
-    src="https://support.discord.com/hc/article_attachments/35495192144279"
-    alt="trimcloud-ezgif.com-video-to-gif-converter.gif"
-    width="800"
-    height="652"
+    style="aspect-ratio: 624/463; width: 100%"
+    class="wysiwyg-image-resized"
+    src="https://support.discord.com/hc/article_attachments/35626145811223"
+    width="624"
+    height="463"
   />
-</figure>
-<h4 class="wysiwyg-text-align-center" id="h_01K72CAQ7T36XR80V2MGNQFDKH">
+</p>
+<h4 class="wysiwyg-text-align-center" id="h_01K7HW90TDQQAWD0D6C1AM3HK4">
   <span style="color: #666666"
-    >Starting a Cloud Play Trial Activity via a User’s Profile</span
+    >Starting a Cloud Play Trial Activity via a Quest</span
   >
 </h4>
 <h2 id="h_01K700VCJESZBF05F61FPF6PGV">Game Authentication</h2>
