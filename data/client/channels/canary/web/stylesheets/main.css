@@ -8752,6 +8752,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .listBoxItem__2e223:hover {
   transition: background-color 0.15s ease-out;
 }
+.listBoxItem__2e223:focus:not([aria-disabled]),
 .mouse-mode .listBoxItem__2e223:hover:not([aria-disabled]) {
   background-color: var(--background-mod-normal);
 }
@@ -18653,7 +18654,7 @@ svg.radioIcon_c1e9c4 {
   opacity: 1;
 }
 .showEffect_dfb989.container_dfb989 .solid_dfb989 {
-  color: var(--custom-display-name-styles-main-color, var(--text-default));
+  color: var(--custom-display-name-styles-main-color);
 }
 .showEffect_dfb989.container_dfb989 .gradient_dfb989 {
   background: linear-gradient(
@@ -93986,4 +93987,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d1da4806037ba543.css.map*/
+/*# sourceMappingURL=12633.5e1938274cb125c3.css.map*/
