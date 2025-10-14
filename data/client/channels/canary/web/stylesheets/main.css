@@ -8540,6 +8540,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .galleryItem_d75751.inactive_d75751:after:hover {
   opacity: 0.15;
 }
+.obscured_d75751 {
+  background-color: var(--spoiler-hidden-background);
+  border-color: var(--spoiler-hidden-background);
+}
 .button_aec7ab {
   background-color: var(--bg-surface-overlay);
   border-radius: 8px;
@@ -93982,4 +93986,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6c19456802a419e6.css.map*/
+/*# sourceMappingURL=12633.d1da4806037ba543.css.map*/
