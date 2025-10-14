@@ -18708,7 +18708,7 @@ svg.radioIcon_c1e9c4 {
     from var(--custom-display-name-styles-main-color) h s calc(max(12, l * 0.4))
   );
   --custom-toon-stroke-width: calc(1.6px + 0.04em);
-  --custom-toon-margin: calc(var(--custom-toon-stroke-width) * -1 + 0.02em);
+  --custom-toon-margin: calc(var(--custom-toon-stroke-width) * -1);
   paint-order: stroke fill;
   position: relative;
   -webkit-text-stroke-width: var(--custom-toon-stroke-width);
@@ -18718,9 +18718,12 @@ svg.radioIcon_c1e9c4 {
   margin-left: var(--custom-toon-margin);
   margin-right: var(--custom-toon-margin);
   padding-bottom: var(--custom-toon-stroke-width);
+  transition: color 266ms cubic-bezier(0.43, 0.21, 0.27, 0.78);
+}
+.showEffect_dfb989.container_dfb989 .toon_dfb989,
+.showEffect_dfb989.container_dfb989 .toon_dfb989:before {
   padding-left: var(--custom-toon-stroke-width);
   padding-right: var(--custom-toon-stroke-width);
-  transition: color 266ms cubic-bezier(0.43, 0.21, 0.27, 0.78);
 }
 .showEffect_dfb989.container_dfb989 .toon_dfb989:before {
   background: linear-gradient(
@@ -18739,12 +18742,10 @@ svg.radioIcon_c1e9c4 {
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 100% 400%;
-  bottom: var(--custom-toon-margin);
   content: attr(data-username-with-effects);
-  left: var(--custom-toon-stroke-width);
+  inset: 0;
+  padding-bottom: var(--custom-toon-margin);
   position: absolute;
-  right: var(--custom-toon-stroke-width);
-  top: 0;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0;
   -webkit-text-stroke-color: transparent;
@@ -94041,4 +94042,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7d8e34c6f0f3c255.css.map*/
+/*# sourceMappingURL=12633.29c3214ee12a6807.css.map*/
