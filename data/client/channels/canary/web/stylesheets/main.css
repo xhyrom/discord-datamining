@@ -2639,6 +2639,7 @@
 }
 .leadingIcon__714a9 {
   color: var(--icon-primary);
+  flex-shrink: 0;
   height: 20px;
   width: 20px;
 }
@@ -15607,7 +15608,10 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   gap: var(--space-16);
 }
 .radioItemIcon__5a85a {
-  color: var(--interactive-active);
+  color: var(--icon-primary);
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
 }
 .label__5a85a {
   align-items: flex-start;
@@ -48132,9 +48136,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -93978,4 +93982,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ba506b6cba6d14c7.css.map*/
+/*# sourceMappingURL=12633.6c19456802a419e6.css.map*/
