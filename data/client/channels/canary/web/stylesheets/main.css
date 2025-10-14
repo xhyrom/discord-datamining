@@ -64615,34 +64615,6 @@ div.nagbar_d74ef8 {
   display: flex;
   gap: 4px;
 }
-.header__6dc27 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 24px;
-  padding-top: 24px;
-}
-.subtitle__6dc27,
-.title__6dc27 {
-  text-align: center;
-}
-.subtitle__6dc27 {
-  margin-top: 8px;
-}
-.modalCloseButton__6dc27 {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-}
-.content__6dc27 {
-  padding-bottom: 16px;
-}
-.newPassword__6dc27 {
-  margin-top: 16px;
-}
-.cancel__6dc27 {
-  margin-right: 8px;
-}
 .iconContainer__0ecc4 {
   color: var(--text-default);
 }
@@ -94006,4 +93978,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.c2a7c71a11abafbd.css.map*/
+/*# sourceMappingURL=12633.3d6af761a16cd946.css.map*/
