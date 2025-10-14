@@ -64683,7 +64683,11 @@ div.nagbar_d74ef8 {
 .controlsContainer__7db08 {
   align-items: center;
   display: flex;
+  gap: var(--space-4);
   justify-content: space-between;
+}
+.select__7db08 {
+  max-width: 180px;
 }
 .showAllButton__7db08 {
   align-items: center;
@@ -93987,4 +93991,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.5e1938274cb125c3.css.map*/
+/*# sourceMappingURL=12633.18d2da6547263287.css.map*/
