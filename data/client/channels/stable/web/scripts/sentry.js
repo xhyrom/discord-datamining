@@ -3994,6 +3994,8 @@
               "/safety-hub/suspended/request-verification",
             SAFETY_HUB_CHECK_SUSPENDED_AGE_VERIFICATION:
               "/safety-hub/suspended/check-verification",
+            SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS:
+              "/age-verification/suspended/methods",
             INITIATE_CHANNEL_PROMPTS: "/initiate-prompts",
             FORCE_SEND_PROMPT: (t) => "/".concat(t, "/force-send-prompt"),
             EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE:
@@ -4108,6 +4110,8 @@
             APEX_EXPERIMENTS: "/apex/experiments",
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
+            GET_APPLICATION_TOKENS: (t) =>
+              "/oauth2/applications/".concat(t, "/tokens"),
           }),
           A = Object.freeze({
             INDEX: "/",
@@ -4304,6 +4308,24 @@
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
             SERVER_SHOP: (t) => "/channels/".concat(t, "/shop"),
+            CHANNELS_GAME_SHOP: (t, e, a, r) => {
+              let _ = "/channels/".concat(t, "/game-shop");
+              return (
+                (_ += "/".concat(null != e ? e : 0)),
+                null != a &&
+                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
+                _
+              );
+            },
+            GAME_SHOP: (t, e, a, r) => {
+              let _ = "/game-shop/".concat(t);
+              return (
+                (_ += "/".concat(null != e ? e : 0)),
+                null != a &&
+                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
+                _
+              );
+            },
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
             REPORT: "/report",
             REPORT_SECOND_LOOK: "/report-review",
@@ -6259,6 +6281,7 @@
             "desktop_perf_attributed_module_memory"),
           (r.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK =
             "desktop_perf_attributed_module_memory_callstack"),
+          (r.DESKTOP_PERF_HEARTBEAT = "desktop_perf_heartbeat"),
           (r.RTC_PANEL_VIEWED = "rtc_panel_viewed"),
           (r.E2EE_USER_VERIFICATION_VIEWED = "e2ee_user_verification_viewed"),
           (r.E2EE_USER_VERIFIED = "e2ee_user_verified"),
@@ -6699,7 +6722,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-10-cb7c5ffb819910638cdbf015cebb7c02c89c8a6b-discord_web",
+              "2025-10-13-63a5c1cf698a68f0c661cd4333a2e1a3b215e6f7-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6765,8 +6788,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "457174"),
-            o.YA("builtAt", String("1760140167929"));
+            o.YA("buildNumber", "457378"),
+            o.YA("builtAt", String("1760462502873"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48462,4 +48485,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.7b1a95016256b747.js.map
+//# sourceMappingURL=sentry.14175e66e4e0aa52.js.map
