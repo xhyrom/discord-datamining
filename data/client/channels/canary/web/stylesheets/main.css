@@ -12140,6 +12140,71 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background-color: var(--card-primary-bg);
   border: 1px solid var(--border-subtle);
 }
+.formText_ddd181 a:hover {
+  text-decoration: underline;
+}
+.formText_ddd181 strong {
+  font-weight: var(--font-weight-semibold);
+}
+.default_ddd181,
+.labelDescriptor_ddd181,
+.labelSelected_ddd181,
+.placeholder_ddd181 {
+}
+.labelSelected_ddd181 {
+  font-weight: var(--font-weight-normal);
+}
+@media (-webkit-max-device-pixel-ratio: 1) {
+  .theme-light .labelSelected_ddd181 {
+    font-weight: var(--font-weight-medium);
+  }
+}
+.labelBold_ddd181 {
+  font-weight: var(--font-weight-semibold);
+}
+.description_ddd181 {
+  font-size: 14px;
+  font-weight: var(--font-weight-normal);
+  line-height: 20px;
+}
+@media (-webkit-max-device-pixel-ratio: 1) {
+  .theme-light .description_ddd181 {
+    font-weight: var(--font-weight-medium);
+  }
+}
+.modeDefault_ddd181 {
+  cursor: default;
+}
+.modeSelectable_ddd181 {
+  cursor: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.modeDisabled_ddd181 {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.description_ddd181,
+.labelDescriptor_ddd181 {
+  color: var(--header-secondary);
+}
+.placeholder_ddd181 {
+  color: var(--text-muted);
+}
+.error_ddd181 {
+  color: var(--text-danger);
+}
+.error_ddd181,
+.success_ddd181 {
+}
+.success_ddd181 {
+  color: var(--text-feedback-positive);
+}
+.enable-forced-colors .modeDisabled_ddd181 {
+  color: GrayText;
+  opacity: 1;
+}
 .heading-sm\/normal_b717a1 {
   font-family: var(--font-display);
   font-size: 14px;
@@ -12808,75 +12873,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   color: var(--text-danger);
 }
 .enable-forced-colors .disabled_b717a1 {
-  color: GrayText;
-  opacity: 1;
-}
-.fieldWrapper_ce6bbd {
-  padding-top: 4px;
-  position: relative;
-}
-.formText_ddd181 a:hover {
-  text-decoration: underline;
-}
-.formText_ddd181 strong {
-  font-weight: var(--font-weight-semibold);
-}
-.default_ddd181,
-.labelDescriptor_ddd181,
-.labelSelected_ddd181,
-.placeholder_ddd181 {
-}
-.labelSelected_ddd181 {
-  font-weight: var(--font-weight-normal);
-}
-@media (-webkit-max-device-pixel-ratio: 1) {
-  .theme-light .labelSelected_ddd181 {
-    font-weight: var(--font-weight-medium);
-  }
-}
-.labelBold_ddd181 {
-  font-weight: var(--font-weight-semibold);
-}
-.description_ddd181 {
-  font-size: 14px;
-  font-weight: var(--font-weight-normal);
-  line-height: 20px;
-}
-@media (-webkit-max-device-pixel-ratio: 1) {
-  .theme-light .description_ddd181 {
-    font-weight: var(--font-weight-medium);
-  }
-}
-.modeDefault_ddd181 {
-  cursor: default;
-}
-.modeSelectable_ddd181 {
-  cursor: text;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  user-select: text;
-}
-.modeDisabled_ddd181 {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-.description_ddd181,
-.labelDescriptor_ddd181 {
-  color: var(--header-secondary);
-}
-.placeholder_ddd181 {
-  color: var(--text-muted);
-}
-.error_ddd181 {
-  color: var(--text-danger);
-}
-.error_ddd181,
-.success_ddd181 {
-}
-.success_ddd181 {
-  color: var(--text-feedback-positive);
-}
-.enable-forced-colors .modeDisabled_ddd181 {
   color: GrayText;
   opacity: 1;
 }
@@ -15086,7 +15082,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   --custom-viewport-padding: calc(
     var(--space-40) + var(--custom-app-top-bar-height)
   );
-  background: var(--background-base-low);
+  background: var(--background-base-lower);
   box-sizing: border-box;
   container: modal-container/inline-size;
   height: calc(100% - (var(--custom-viewport-padding)) * 2);
@@ -41751,6 +41747,10 @@ div.mobilePushContainer__3d3b0 {
   --__adaptive-focus-ring-color: CanvasText !important;
   border: 2px solid Canvas;
 }
+.fieldWrapper_ce6bbd {
+  padding-top: 4px;
+  position: relative;
+}
 .interactive_bf202d {
   border-radius: inherit;
   color: var(--interactive-normal);
@@ -64736,10 +64736,7 @@ div.nagbar_d74ef8 {
   text-transform: capitalize;
 }
 .headerContainer__7db08 {
-  background-color: var(
-    --custom-settings-content-background,
-    var(--background-base-low)
-  );
+  background-color: var(--background-base-low);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -94009,4 +94006,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.0717e7445875dd30.css.map*/
+/*# sourceMappingURL=12633.c2a7c71a11abafbd.css.map*/
