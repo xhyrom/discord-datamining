@@ -47535,6 +47535,7 @@ h3.improved__1689b:after {
   gap: 16px;
 }
 .title__0dc23 {
+  align-items: center;
   display: flex;
   gap: 20px;
   margin-bottom: 40px;
@@ -93794,4 +93795,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.134646fbef600b9a.css.map*/
+/*# sourceMappingURL=12633.fbe0e45d241c513c.css.map*/
