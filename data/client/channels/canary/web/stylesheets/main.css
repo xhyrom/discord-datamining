@@ -68875,8 +68875,6 @@ div.nagbar_d74ef8 {
   display: flex;
   gap: 8px;
   justify-content: flex-start;
-  margin-bottom: 1px;
-  margin-top: 1px;
   padding: 4px var(--space-xs) 4px var(--space-xs);
 }
 .flipped__07f91 {
@@ -68917,8 +68915,6 @@ div.nagbar_d74ef8 {
   background-size: cover;
   border-radius: 50%;
   flex: 0 0 auto;
-  margin-bottom: 3px;
-  margin-top: 3px;
 }
 .avatarSmall__07f91 {
   height: 24px;
@@ -93822,4 +93818,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6c146bf1089ed277.css.map*/
+/*# sourceMappingURL=12633.157e05a9f1782b0c.css.map*/
