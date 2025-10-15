@@ -6720,7 +6720,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-4dfab876a5dc1795d3e6e361155ff0f1acfcd83f",
+            release: "discord_web-ddd4c38c87abbefed3e67f9c7d48fad4d1d1aa65",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6786,8 +6786,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "457833"),
-            o.YA("builtAt", String("1760521395034"));
+            o.YA("buildNumber", "457860"),
+            o.YA("builtAt", String("1760541558687"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11973,7 +11973,7 @@
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
           QUEST_PREVIEW_TOOL_2: (t) =>
-            "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
+            "".concat(i, "/quest-preview/").concat(t),
         });
         var I =
           (((r = I || {}).INDEX = "/"),
@@ -48483,4 +48483,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2744c4908c34aa15.js.map
+//# sourceMappingURL=sentry.c8e5cce756853c52.js.map
