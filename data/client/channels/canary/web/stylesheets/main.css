@@ -41515,14 +41515,18 @@ div.mobilePushContainer__3d3b0 {
   top: var(--custom-avatar-avatar-decoration-border-position);
 }
 .cutoutIcon__44b0c {
-  align-items: center;
   color: var(--icon-tertiary);
-  display: flex;
   height: 100%;
   width: 100%;
 }
+.cutoutIcon__44b0c,
+.largeEmoji__44b0c {
+  align-items: center;
+  display: flex;
+}
 .largeEmoji__44b0c {
   font-size: 48px;
+  justify-content: center;
 }
 .button__06eda {
   align-items: center;
@@ -93781,4 +93785,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.00e0f82f45450be7.css.map*/
+/*# sourceMappingURL=12633.061c30cace6d9d18.css.map*/
