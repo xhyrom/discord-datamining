@@ -4119,8 +4119,17 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   --custom-input-border-color: var(--input-border-critical);
   --custom-input-text-color: var(--input-foreground-critical);
   --custom-input-background-color: var(--input-background-critical);
-  --custom-input-hover-border-color: var(--input-border-critical-hover);
+  --custom-input-hover-border-color: var(--input-border-critical);
   --custom-input-focus-border-color: var(--input-border-critical);
+}
+.mana-text-inputs
+  .wrapper__3412a[data-error="true"]:not(
+    [data-read-only="true"],
+    [data-disabled="true"],
+    :focus-within
+  ):hover {
+  outline: 2px solid var(--input-border-critical);
+  outline-offset: -2px;
 }
 .wrapper__3412a[data-disabled="true"] {
   cursor: not-allowed;
@@ -37967,6 +37976,7 @@ div.modalOverrideBody__34eac {
   border-radius: 4px 4px 0 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: calc(var(--space-4) * -1);
 }
 .staticToolbar_bba883 .button_bba883:first-of-type {
   border-top-left-radius: 4px;
@@ -93821,4 +93831,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6ba6b058964ca7f2.css.map*/
+/*# sourceMappingURL=12633.f8413a0510d57540.css.map*/
