@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8202527002](https://discord.com/jobs/8202527002)
 
-**Updated At:** Tue, 14 Oct 2025 18:34:06 GMT
+**Updated At:** Wed, 15 Oct 2025 19:09:34 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is where people come together to spend time with friends, discover communities, and connect over shared interests. As Discord grows, we're looking for a Program Manager to build and lead our Policy Implementation function within Trust &amp;amp; Safety Strategy &amp;amp; Operations.
-You'll be the founding member of a new Policy Implementation team, establishing Discord's operational framework for translating policies into scaled enforcement. You'll own the end-to-end process of policy operationalization, ensuring every new or updated policy can be consistently enforced across our platform.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.As Discord grows, we're looking for a Program Manager to build and lead our Policy Implementation function within Trust &amp;amp; Safety Strategy &amp;amp; Operations. You'll establish this critical function at Discord, driving the operational execution that translates policies into scaled enforcement across our platform. You'll own the end-to-end delivery of policy operationalization, ensuring every new or updated policy is consistently enforced and successfully launched. Through this work, you'll develop repeatable practices that integrate policy implementation into Discord's launch processes.
 What You'll Do
 
 Develop deep expertise of the Discord’s enforcement ecosystem, serving as the single point of accountability for operational readiness while coordinating across Trust &amp;amp; Safety Operations, Platform Policy, Product, Engineering, and Legal teams
