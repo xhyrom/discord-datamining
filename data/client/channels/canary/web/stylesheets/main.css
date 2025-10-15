@@ -2869,6 +2869,9 @@
   grid-area: description;
   max-width: 70ch;
 }
+.label__5a838[data-interactive="true"] {
+  cursor: pointer;
+}
 .label__5a838 ~ .description__5a838 {
   margin-top: -8px;
 }
@@ -93818,4 +93821,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.157e05a9f1782b0c.css.map*/
+/*# sourceMappingURL=12633.6ba6b058964ca7f2.css.map*/
