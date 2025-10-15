@@ -4331,7 +4331,6 @@
             REPORT_SECOND_LOOK: "/report-review",
             COLLECTIBLES_SHOP: "/shop",
             COLLECTIBLES_SHOP_WITH_TAB: (t) => "/shop?tab=".concat(t),
-            COLLECTIBLES_SHOP_FULLSCREEN: "/shop/fullscreen",
             COLLECTIBLES_SHOP_PRODUCT_DETAIL: (t) => "/shop/product/".concat(t),
             NITRO_HOME: "/store",
             ACCOUNT_STANDING: "/account-standing",
@@ -6722,7 +6721,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-13-455b11a3d3caf6f0bd305515bff9174cfcc59c6d-discord_web",
+              "2025-10-15-9e1d172eb8ee9ac3d22af49ef621f1cee2647d75-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6788,8 +6787,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "457469"),
-            o.YA("builtAt", String("1760467778668"));
+            o.YA("buildNumber", "457829"),
+            o.YA("builtAt", String("1760512773162"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48485,4 +48484,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.a7e7d3d8a2c4485e.js.map
+//# sourceMappingURL=sentry.bbe444645b9f8061.js.map
