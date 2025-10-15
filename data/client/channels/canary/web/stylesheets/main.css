@@ -48997,6 +48997,9 @@ h3.improved__1689b:after {
 .compact__2debe {
   flex-direction: column;
   gap: var(--space-4);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .compactInfo__2debe > :not(:last-child):after {
   color: var(--text-tertiary);
@@ -93834,4 +93837,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.4491419120fdeae4.css.map*/
+/*# sourceMappingURL=12633.9bfbe2994dcdf366.css.map*/
