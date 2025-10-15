@@ -4149,6 +4149,7 @@
               "/billing/partner-promotions/".concat(t, "/").concat(e),
             NOTIFICATIONS: "/notifications",
             FRIENDS: "/channels/@me",
+            ME_ACTIVITY: "/channels/@me/activity",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
             CHANNEL: (t, e, a) => {
@@ -5357,6 +5358,7 @@
           (r.ACTIVITY_FEED_VOICE_CHANNEL_VISITED = "af_voice_channel_visited"),
           (r.ACTIVITY_FEED_GUILD_VISITED = "af_guild_visited"),
           (r.ACTIVITY_FEED_DM_VISITED = "af_dm_visited"),
+          (r.ACTIVITY_FEED_VIEWED = "af_viewed"),
           (r.AGE_GATE_SUBMITTED = "age_gate_submitted"),
           (r.AGE_GATE_ACTION = "age_gate_action"),
           (r.REGISTER_SUBMIT_ERRORED = "register_submit_errored"),
@@ -6493,6 +6495,7 @@
           (r.DEBUG_MISSING_STRING = "debug_missing_string"),
           (r.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
+          (r.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6721,7 +6724,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-1349059371b4b6c6fd08fbb2cd29a98a92c23af3",
+            release: "discord_web-19f38c6cb47a9e522926ca5c091c73482cb17fd4",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6787,8 +6790,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "458234"),
-            o.YA("builtAt", String("1760563026658"));
+            o.YA("buildNumber", "458252"),
+            o.YA("builtAt", String("1760564090303"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48484,4 +48487,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.96a9e7a259af5981.js.map
+//# sourceMappingURL=sentry.4070ab5eeeed86de.js.map

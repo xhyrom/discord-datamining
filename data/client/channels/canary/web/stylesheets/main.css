@@ -44103,6 +44103,33 @@ div.mobilePushContainer__3d3b0 {
   display: flex;
   gap: 8px;
 }
+.refresh-active-now .wrapper__00943 {
+  background: var(--background-base-low);
+  border-radius: 16px;
+  padding: 0;
+}
+.refresh-active-now .body__00943 {
+  border-radius: 0;
+}
+.refresh-active-now .body__00943:not(:empty) {
+  margin-top: 0;
+}
+.refresh-active-now .header__00943 {
+  background-color: var(--background-mod-faint);
+  padding: 16px;
+}
+.refresh-active-now .section__00943 {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 16px;
+}
+.refresh-active-now .section__00943:not(:last-child) {
+  border-bottom: 1px solid var(--border-subtle);
+}
+.refresh-active-now .applicationStreamingPreviewWrapper__00943 {
+  border-radius: 8px;
+}
 @value minColumnWidth: 460px;
 .standardSidebarView__23e6b {
   background: var(--background-base-lowest);
@@ -93795,4 +93822,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.fbe0e45d241c513c.css.map*/
+/*# sourceMappingURL=12633.6c146bf1089ed277.css.map*/
