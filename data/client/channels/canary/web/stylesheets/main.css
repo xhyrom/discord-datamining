@@ -20743,16 +20743,10 @@ svg.radioIcon_c1e9c4 {
 .full-motion .coverArtContainer_e0f8ae {
   transition:
     box-shadow 0.2s ease,
-    transform 0.3s ease;
+    transform 0.1s ease-out;
 }
 .gameGrid_e0f8ae:hover .gameClickable_e0f8ae:hover .coverArtContainer_e0f8ae {
   box-shadow: 0 0 25px 0 rgba(145, 101, 255, 0.25);
-}
-.full-motion
-  .gameGrid_e0f8ae:hover
-  .gameClickable_e0f8ae:hover
-  .coverArtContainer_e0f8ae {
-  transform: rotateY(-30deg);
 }
 .coverArtContainer_e0f8ae:after {
   border-radius: 8px;
@@ -93745,4 +93739,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.06d8e492a657f5a4.css.map*/
+/*# sourceMappingURL=12633.8050b024bd7a70e5.css.map*/
