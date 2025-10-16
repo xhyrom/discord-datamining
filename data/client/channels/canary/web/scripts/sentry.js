@@ -4152,6 +4152,7 @@
             FRIENDS: "/channels/@me",
             ME_ACTIVITY: "/channels/@me/activity",
             ME: "/channels/@me",
+            ME_DMS: "/channels/@me/dms",
             MESSAGE_REQUESTS: "/message-requests",
             CHANNEL: (t, e, a) => {
               let r =
@@ -6725,7 +6726,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-7325350a91e58867b986064ef49fa36e7f8915ff",
+            release: "discord_web-f9ba2d9e65a8cfb11eb339e47001eccf9617479c",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6791,8 +6792,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "458700"),
-            o.YA("builtAt", String("1760642402912"));
+            o.YA("buildNumber", "458711"),
+            o.YA("builtAt", String("1760642851450"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48488,4 +48489,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.4f911657e890ac92.js.map
+//# sourceMappingURL=sentry.a22ee720e6a865ef.js.map
