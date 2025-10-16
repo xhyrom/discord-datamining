@@ -73263,19 +73263,13 @@ html.disable-forced-colors * {
   width: var(--custom-client-themes-editor-content-width);
 }
 .editorFooter_cf6da1 {
-  gap: 8px;
-}
-.editorFooter_cf6da1,
-.editorFooterV2_cf6da1 {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
-  padding: 0 var(--custom-client-themes-editor-editor-padding);
-}
-.editorFooterV2_cf6da1 {
-  box-sizing: border-box;
   gap: 12px;
+  margin-top: 16px;
   max-width: 268px;
+  padding: 0 var(--custom-client-themes-editor-editor-padding);
 }
 .closeCircleButton_cf6da1 {
   cursor: pointer;
@@ -93656,4 +93650,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ded19e4ca8072377.css.map*/
+/*# sourceMappingURL=12633.5f1c263d356f9a40.css.map*/
