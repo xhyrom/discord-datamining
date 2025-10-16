@@ -75428,30 +75428,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --badge-background-default: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-expressive: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-default: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-expressive: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--black-hsl) / 0.7) 100%,
@@ -77886,30 +77862,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-1-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-default: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-expressive: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-default: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-expressive: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-backdrop: color-mix(
@@ -80376,30 +80328,6 @@ html.disable-forced-colors * {
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
-    --badge-background-default: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-expressive: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-default: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-expressive: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
     --bg-backdrop: color-mix(
       in oklab,
       hsl(var(--plum-19-hsl) / 0.75) 100%,
@@ -82854,30 +82782,6 @@ html.disable-forced-colors * {
       in oklab,
       hsl(var(--illo-pink-5-hsl) / 0.3) 100%,
       hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-default: color-mix(
-      in oklab,
-      var(--blurple-50) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-background-expressive: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-default: color-mix(
-      in oklab,
-      var(--neutral-1) 100%,
-      var(--custom-theme-base-color, #000)
-        var(--custom-theme-base-color-amount, 0%)
-    );
-    --badge-text-expressive: color-mix(
-      in oklab,
-      var(--neutral-71) 100%,
-      var(--custom-theme-base-color, #000)
         var(--custom-theme-base-color-amount, 0%)
     );
     --bg-backdrop: color-mix(
@@ -93841,4 +93745,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.218620a897a69324.css.map*/
+/*# sourceMappingURL=12633.044658967283bed6.css.map*/

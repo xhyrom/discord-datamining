@@ -3834,6 +3834,7 @@
             SOUNDBOARD_SOUND_GUILD_DATA: (t, e) =>
               "/soundboard-sounds/".concat(t, "/guild/").concat(e),
             SOUNDBOARD_DEFAULT_SOUNDS: "/soundboard-default-sounds",
+            TOP_SOUNDS_FOR_GUILDS: "/users/@me/top-sounds-for-guilds",
             SEND_SOUNDBOARD_SOUND: (t) =>
               "/channels/".concat(t, "/send-soundboard-sound"),
             APPLICATION_COMMANDS_SEARCH: (t) =>
@@ -6724,7 +6725,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-a00d1ceb5ede4d801fb5b4258fc819c3b0def7db",
+            release: "discord_web-c404617bf46340e9ba4c536bad51adf3d11ddc84",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6790,8 +6791,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "458590"),
-            o.YA("builtAt", String("1760636521954"));
+            o.YA("buildNumber", "458615"),
+            o.YA("builtAt", String("1760638115178"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48487,4 +48488,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.b09b185d93753abb.js.map
+//# sourceMappingURL=sentry.2d1c71bc29053911.js.map
