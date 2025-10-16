@@ -1,3 +1,19 @@
+<div class="info-box">
+  <p id="h_01K7MW6ZH996XZ1X6VS9QFXZK8">
+    <span style="color: #434343">As of </span
+    ><strong><span style="color: #434343">October 16, 2025</span></strong
+    ><span style="color: #434343"
+      >, the Remix feature will no longer be available. </span
+    >
+  </p>
+  <p id="h_01K7MW6ZH9Z4TVCZ68MHCWWB37">
+    <span style="color: #434343"
+      >The good news? We’re continuing to work on new features to make your
+      Discord experience even more fun and connected. Thank you for your
+      continued feedback and support!</span
+    >
+  </p>
+</div>
 <h1 id="docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4">
   What is Remix?
 </h1>
