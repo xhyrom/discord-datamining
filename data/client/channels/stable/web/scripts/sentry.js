@@ -4149,6 +4149,7 @@
               "/billing/partner-promotions/".concat(t, "/").concat(e),
             NOTIFICATIONS: "/notifications",
             FRIENDS: "/channels/@me",
+            ME_ACTIVITY: "/channels/@me/activity",
             ME: "/channels/@me",
             MESSAGE_REQUESTS: "/message-requests",
             CHANNEL: (t, e, a) => {
@@ -4171,6 +4172,7 @@
             },
             LOGIN: "/login",
             LOGIN_HANDOFF: "/login/handoff",
+            LOGIN_ONE_TIME: "/login/one-time",
             REGISTER: "/register",
             DEFAULT_LOGGED_OUT: l.a ? "/register" : "/login",
             INVITE: (t) => "/invite/".concat(t),
@@ -5356,6 +5358,7 @@
           (r.ACTIVITY_FEED_VOICE_CHANNEL_VISITED = "af_voice_channel_visited"),
           (r.ACTIVITY_FEED_GUILD_VISITED = "af_guild_visited"),
           (r.ACTIVITY_FEED_DM_VISITED = "af_dm_visited"),
+          (r.ACTIVITY_FEED_VIEWED = "af_viewed"),
           (r.AGE_GATE_SUBMITTED = "age_gate_submitted"),
           (r.AGE_GATE_ACTION = "age_gate_action"),
           (r.REGISTER_SUBMIT_ERRORED = "register_submit_errored"),
@@ -6492,6 +6495,7 @@
           (r.DEBUG_MISSING_STRING = "debug_missing_string"),
           (r.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
+          (r.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6721,7 +6725,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-15-508cc2b38c6e8ebe21c6e126e47f095ac2813e27-discord_web",
+              "2025-10-16-18f4d308425dcaad1274eccce99874bd5c3b4ab4-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6787,8 +6791,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "458449"),
-            o.YA("builtAt", String("1760583562471"));
+            o.YA("buildNumber", "458476"),
+            o.YA("builtAt", String("1760599112559"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11974,7 +11978,7 @@
           CHANNEL: (t, e) => "/channels/".concat(t, "/").concat(e),
           REPORT: "".concat(i, "/report"),
           QUEST_PREVIEW_TOOL_2: (t) =>
-            "".concat(i, "/quest-home?tab=preview_tool&quest_id=").concat(t),
+            "".concat(i, "/quest-preview/").concat(t),
         });
         var I =
           (((r = I || {}).INDEX = "/"),
@@ -48484,4 +48488,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8ccbcbf336ccf635.js.map
+//# sourceMappingURL=sentry.f82b3b6765c7bb57.js.map
