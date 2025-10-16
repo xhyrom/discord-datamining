@@ -45045,6 +45045,10 @@ div.mobilePushContainer__3d3b0 {
 .duplicateSubscriptionsBannerText_e335a7 {
   margin-left: 8px;
 }
+.helpNoticeDismissIcon_e335a7 {
+  cursor: pointer;
+  padding-top: 2px;
+}
 .button__95e2d {
   background-color: var(--background-secondary-alt);
   cursor: pointer;
@@ -93837,4 +93841,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.933c2b8e6b833ab6.css.map*/
+/*# sourceMappingURL=12633.218620a897a69324.css.map*/
