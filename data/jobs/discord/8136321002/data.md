@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Software Engineer - API Platform
+## Senior Software Engineer - Platform Infrastructure
 
 **Location:** San Francisco Bay Area (U.S.)
 
@@ -10,33 +10,36 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8136321002](https://discord.com/jobs/8136321002)
 
-**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
+**Updated At:** Thu, 16 Oct 2025 18:54:09 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The API Platform team is responsible for the core functionality and reliability of Discord’s API layer, a large distributed service handling approximately 500 thousand requests per second and tens of thousands of asynchronous jobs per second. Through developing and operating the core components of the API, our work allows internal developers to rapidly and safely deliver new features to production - and allows users to send billions of messages a day.
-As an API Platform engineer, you will continuously improve our codebase, processes, and infrastructure - affecting nearly every interaction users have on Discord!
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our Platform Infrastructure teams are responsible for building and maintaining the critical systems that power Discord's core services. These systems handle hundreds of thousands of requests per second, process tens of billions of transactions daily, and enable millions of users to connect seamlessly. Through developing and operating foundational platform components, our work allows internal developers to rapidly and safely deliver new features to production while ensuring Discord remains reliable, efficient, and scalable.
+As a Senior Software Engineer on these teams, you will continuously improve our codebase, processes, and infrastructure - affecting nearly every interaction users have on Discord!
 What You'll Be Doing:
 
 Ensure the reliable and efficient operation of critical systems that serve millions of users daily.
-Write code but also manage our infrastructure.
+Design, develop, and scale distributed systems from the ground up.
+Write code and manage infrastructure to support high-performance services.
 Enable dozens of teams to deploy code to production quickly and safely.
 Use and enhance observability tools to troubleshoot complex issues.
+Instrument services to establish robust data collection and monitoring pipelines.
+Coach and mentor other engineers, enabling their development.
 Become a vital part of a small team of talented engineers passionate about keeping Discord running smoothly.
 
 What you have:
 
 5+ years of experience designing and developing backend systems.
-Experience scaling distributed systems
-Experience operating complex services in a production environment
-Familiarity with open source software, and the ability to dig into a library’s source code to find the answer you’re looking for.&amp;nbsp;
-Confidence making tradeoffs when leading projects to ensure constant progress.
+Experience scaling distributed systems.
+Experience operating complex services in a production environment.
+Familiarity with open source software, and the ability to dig into a library's source code to find the answer you're looking for.
+Confidence in making tradeoffs when leading projects to ensure constant progress.
 
 Bonus Points:
 
 Experience with Python or Rust.
-Experience deploying and managing containerized applications with Kubernetes
-Experience with Google Pub/Sub or other message queue systems
-A deep understanding of Python runtime internals or the gevent library
+Experience deploying and managing containerized applications with Kubernetes.
+Experience with Google Pub/Sub or other message queue systems.
+A deep understanding of Python runtime internals or the gevent library.
 You have built or contributed to open source projects.
 You are a Discord power user and have built bots or apps interacting with our platform.
 
