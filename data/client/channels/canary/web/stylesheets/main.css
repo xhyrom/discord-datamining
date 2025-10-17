@@ -53293,6 +53293,11 @@ html .progress__61462 {
 .formItem__1b11b {
   width: 100%;
 }
+.container__6c21f {
+  border: 1px solid var(--status-warning);
+  border-radius: var(--radius-md);
+  padding: var(--space-16);
+}
 .inline__6c706 {
   opacity: 1;
 }
@@ -64704,9 +64709,6 @@ div.nagbar_d74ef8 {
 }
 .tryItOutButtons_fbfab6 {
   display: flex;
-}
-.tryItOutButtonsV2_fbfab6 {
-  display: flex;
   gap: 12px;
 }
 .premiumCta_fbfab6 {
@@ -64716,9 +64718,6 @@ div.nagbar_d74ef8 {
 .basicThemeSelectors_fbfab6 {
   margin-bottom: 24px;
   margin-top: 0;
-}
-.featureBorder_fbfab6 {
-  margin: 0 -8px;
 }
 .previewThemeButton_fbfab6 {
   margin-bottom: 26px;
@@ -64925,10 +64924,6 @@ div.nagbar_d74ef8 {
 }
 .tryItOutButtons__6b52d {
   display: flex;
-  gap: 8px;
-}
-.tryItOutButtonsV2__6b52d {
-  display: flex;
   gap: 12px;
 }
 .selectionGroup__6b52d {
@@ -64937,9 +64932,6 @@ div.nagbar_d74ef8 {
 .divider__6b52d {
   margin-bottom: 24px;
   margin-top: 32px;
-}
-.tryItOutButton__6b52d {
-  border-radius: var(--radius-sm);
 }
 .pageActions__2d021 {
   border-radius: 3px;
@@ -93581,4 +93573,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.20564fbebcbf8510.css.map*/
+/*# sourceMappingURL=12633.6214f4dc60364f93.css.map*/
