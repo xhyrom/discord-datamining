@@ -382,16 +382,6 @@
     Shockbyte's specialized support team.</span
   >
 </h3>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/35684290234135"
-    width="624"
-    height="384"
-  />
-</p>
-<h4 class="wysiwyg-text-align-center" id="h_01K7Q3ATDQFC4CNESX83AHHMWH">
-  <span style="color: #666666">Game Server panel</span>
-</h4>
 <h1 id="h_01K7Q3ATDRCCTYPSED74WVFJYR">Frequently Asked Questions</h1>
 <p>
   <strong
