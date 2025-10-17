@@ -4111,6 +4111,13 @@
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
             APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
             APEX_EXPERIMENTS: "/apex/experiments",
+            CONFERENCE_MODE_GUILDS: "/conference-mode/guilds",
+            CONFERENCE_MODE_VOICE_CHANNELS: (t) =>
+              "/conference-mode/".concat(t, "/channels"),
+            CONFERENCE_MODE_VOICE_CHANNEL: (t) =>
+              "/conference-mode/channels/".concat(t),
+            CONFERENCE_MODE_VOICE_CHANNEL_USERS: (t) =>
+              "/conference-mode/channels/".concat(t, "/users"),
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
             GET_APPLICATION_TOKENS: (t) =>
@@ -6733,7 +6740,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ba0c05758b9df3b4638d8c8a6a913809bf64e310",
+            release: "discord_web-6f506f8feddc1e8acf93373f70ae491080108109",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6799,8 +6806,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "459517"),
-            o.YA("builtAt", String("1760741226948"));
+            o.YA("buildNumber", "459533"),
+            o.YA("builtAt", String("1760742303237"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48566,4 +48573,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.38483e68d05110ab.js.map
+//# sourceMappingURL=sentry.6835680579276c4d.js.map
