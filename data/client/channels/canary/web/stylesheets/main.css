@@ -2728,6 +2728,9 @@
   align-self: flex-end;
   padding-top: var(--space-4);
 }
+.container__5a838[data-layout="horizontal"] .description__5a838 {
+  max-width: 70ch;
+}
 .container__5a838[data-disabled="true"] {
   opacity: 0.5;
 }
@@ -2744,7 +2747,6 @@
 }
 .description__5a838 {
   grid-area: description;
-  max-width: 70ch;
 }
 .label__5a838[data-interactive="true"] {
   cursor: pointer;
@@ -93573,4 +93575,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6214f4dc60364f93.css.map*/
+/*# sourceMappingURL=12633.521868430eb89934.css.map*/
