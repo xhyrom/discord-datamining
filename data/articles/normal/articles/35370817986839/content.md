@@ -59,7 +59,12 @@
   This feature makes it simple for communities to set up, manage, and join
   custom game servers tailored to their preferences.
 </p>
-<h1 id="h_01K7Q3A4BZ267HFBA8AVQT4X47">
+<div class="info-box">
+  <strong>Note:</strong> While Game Servers can be set up and accessed through a
+  Discord server, anyone with the game server’s IP address can join directly
+  from the game, even if they’re not in the Discord server.
+</div>
+<h1 id="h_01K7SFDDY9XXDQSARYEERYTBMH">
   How to Use Server Boosts to Enable Game Servers as a Server Owner/Admin
 </h1>
 <div class="warn-box">
@@ -382,6 +387,17 @@
     Shockbyte's specialized support team.</span
   >
 </h3>
+<h4 class="wysiwyg-text-align-center" id="h_01K7SF7KVTGTXSNSACH6AZPZPC">
+  <span style="color: #666666"
+    ><img
+      src="https://support.discord.com/hc/article_attachments/35705212213655"
+      width="624"
+      height="384"
+  /></span>
+</h4>
+<h4 class="wysiwyg-text-align-center" id="h_01K7SF7KVWWD6Q54919KANESZG">
+  <span style="color: #666666">Game Server panel</span>
+</h4>
 <h1 id="h_01K7Q3ATDRCCTYPSED74WVFJYR">Frequently Asked Questions</h1>
 <p>
   <strong
@@ -475,7 +491,7 @@
   <strong
     >Q: I need help with my Game Server that I created, who can I reach out
     to? </strong
-  ><br />A: If you’re an admin of the server, you can reach out to ShockByte
+  ><br />A: If you’re an admin of the server, you can reach out to Shockbyte
   directly through one of the following ways:
 </p>
 <p>For Game Server issues:</p>
