@@ -38301,45 +38301,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   border-radius: inherit;
   object-fit: cover;
 }
-.divider__23eb0 {
-  background-color: var(--user-profile-border);
-  height: 1px;
-}
-.container__0b003 {
-  padding: 8px 0;
-}
-.contentVertical__0b003 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.buttonsVertical__0b003 {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-}
-.contentHorizontal__0b003 {
-  align-items: center;
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-}
-.buttonsHorizontal__0b003 {
-  display: flex;
-  flex-shrink: 0;
-  gap: 8px;
-}
-.prompt__0b003 {
-  text-align: left;
-}
-.prompt__0b003,
-.thankYouText__0b003 {
-  font-size: 14px;
-  margin: 0;
-}
-.thankYouText__0b003 {
-  text-align: center;
-}
 .card__39ec2 {
   display: flex;
   flex-direction: column;
@@ -38608,6 +38569,10 @@ html:not(.chat-input) .inputInner_b1f01d {
 .badgesContainerPopout__635ed {
   flex-wrap: wrap;
   row-gap: 4px;
+}
+.divider__23eb0 {
+  background-color: var(--user-profile-border);
+  height: 1px;
 }
 .cloudPlaySection__33ecd {
   align-items: center;
@@ -40370,47 +40335,6 @@ img.thumbnail__0f2e8 {
 }
 .container__23ba6 {
   display: flex;
-}
-.container_cbd19d {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  overflow: visible;
-  padding: 8px;
-  position: relative;
-}
-.user-profile-modal-v2 .container_cbd19d {
-  border-radius: var(--radius-md);
-  padding: 12px;
-}
-.contentHorizontal_cbd19d {
-  align-items: center;
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-}
-.contentVertical_cbd19d {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.description_cbd19d {
-  font-size: 14px;
-  margin: 0;
-  text-align: left;
-}
-.buttonsHorizontal_cbd19d {
-  display: flex;
-  flex-shrink: 0;
-  gap: 8px;
-}
-.buttonsVertical_cbd19d {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-}
-.buttonVertical_cbd19d {
-  flex: 1;
 }
 .cardsList__84832 {
   display: flex;
@@ -93657,4 +93581,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.97f1fd6264d08959.css.map*/
+/*# sourceMappingURL=12633.20564fbebcbf8510.css.map*/
