@@ -1,0 +1,31 @@
+{
+  "id": 35714463749015,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/35714463749015.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/35714463749015-How-to-Submit-a-Support-Ticket-to-Discord",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 24453860938135,
+  "created_at": "2025-10-17T21:29:26Z",
+  "name": "How to Submit a Support Ticket to Discord",
+  "title": "How to Submit a Support Ticket to Discord",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2025-10-18T00:05:55Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [
+    "01J5RY1C592G585A26WEKQ5XXG",
+    "01K7TBZ10YPKQ7W7V9GSP3W4HR"
+  ],
+  "label_names": [
+    "discord support",
+    "how to reach discord support",
+    "how to contact Discord support"
+  ],
+  "user_segment_ids": []
+}

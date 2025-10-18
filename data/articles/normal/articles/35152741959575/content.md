@@ -329,7 +329,7 @@
   >.
 </p>
 <h1 id="h_01K708CT9B6BA6BB7NS96Q25GW">
-  How do I claim the Nitro Promo from SteelSeries and Kontrol Freek?
+  How do I claim the Nitro Promo from SteelSeries and KontrolFreek?
 </h1>
 <p>
   1. Head to SteelSeries.com or KontrolFreek.com, and complete an order work $20
@@ -667,7 +667,7 @@
 </p>
 <p>
   If you have had a Nitro Basic, Nitro Classic, or Server Boosting membership
-  active on your account and you’ve never had a Nitro membership,  you will be
+  active on your account and you’ve never had a Nitro membership, you will be
   able to redeem this promotion and replace it with the 1 month Nitro
   membership.
 </p>
@@ -776,15 +776,15 @@
 </p>
 <p>
   <strong
-    >Q: I see a "This gift has already been claimed" error when I try to claim
-    my Nitro promo.</strong
+    >Q: I see a "This gift has already been claimed" or "Looks like this gift
+    has already been claimed" error when I try to claim my Nitro promo.</strong
   >
 </p>
 <p>
   <strong>A:</strong> If you are seeing a "This gift has been claimed already"
-  error, that means that the Nitro promo has already been used and cannot be
-  used again. You may need to double check if you've claimed this promo on
-  another Discord account.
+  or "Looks like this gift has already been claimed" error, that means that the
+  Nitro promo has already been used and cannot be used again. You may need to
+  double check if you've claimed this promo on another Discord account.
 </p>
 <p>
   Unfortunately, once the promo has been claimed, the promo cannot be
