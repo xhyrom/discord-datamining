@@ -36955,7 +36955,7 @@ div.modalOverrideBody__34eac {
   flex-direction: row;
 }
 .text_ba21b4 {
-  margin-left: var(--space-20);
+  margin-left: var(--space-16);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -36967,6 +36967,7 @@ div.modalOverrideBody__34eac {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
+  margin-right: var(--space-4);
 }
 .emojiButton__04eed {
   align-items: center;
@@ -55530,30 +55531,6 @@ html .progress__61462 {
     text-align: center;
   }
 }
-.tooltipTextContainer__0ca35 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.nitroWheel__0ca35 {
-  flex: 1;
-  min-width: 16px;
-}
-.tooltipText__0ca35 {
-  padding-left: 6px;
-}
-.artContainer_ade26d {
-  border-radius: 8px;
-  box-shadow: none;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.24));
-  overflow: hidden;
-}
-.modalContainer_ade26d {
-  width: 400px;
-}
-.bodyContainer_ade26d {
-  overflow: hidden;
-}
 .reactions_f8896c {
   align-items: center;
   display: flex;
@@ -56058,6 +56035,18 @@ html .progress__61462 {
 .image__7e919 {
   height: 64px;
   width: 64px;
+}
+.artContainer_ade26d {
+  border-radius: 8px;
+  box-shadow: none;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.24));
+  overflow: hidden;
+}
+.modalContainer_ade26d {
+  width: 400px;
+}
+.bodyContainer_ade26d {
+  overflow: hidden;
 }
 .effect_a9ddb3 {
   bottom: 0;
@@ -93575,4 +93564,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.521868430eb89934.css.map*/
+/*# sourceMappingURL=12633.88a709427bf95823.css.map*/
