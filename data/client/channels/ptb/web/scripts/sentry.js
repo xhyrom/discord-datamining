@@ -3500,6 +3500,7 @@
             ENTITLEMENTS_FOR_APPLICATION: (t) =>
               "/users/@me/applications/".concat(t, "/entitlements"),
             ENTITLEMENTS_FOR_USER: "/users/@me/entitlements",
+            USER_MEANINGFULLY_ONLINE: "/users/@me/meaningfully-online",
             ENTITLEMENT_TICKET: (t) =>
               "/users/@me/applications/".concat(t, "/entitlement-ticket"),
             APPLICATION_TICKET: (t) =>
@@ -4110,6 +4111,13 @@
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
             APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
             APEX_EXPERIMENTS: "/apex/experiments",
+            CONFERENCE_MODE_GUILDS: "/conference-mode/guilds",
+            CONFERENCE_MODE_VOICE_CHANNELS: (t) =>
+              "/conference-mode/".concat(t, "/channels"),
+            CONFERENCE_MODE_VOICE_CHANNEL: (t) =>
+              "/conference-mode/channels/".concat(t),
+            CONFERENCE_MODE_VOICE_CHANNEL_USERS: (t) =>
+              "/conference-mode/channels/".concat(t, "/users"),
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
             GET_APPLICATION_TOKENS: (t) =>
@@ -5131,6 +5139,8 @@
           (r.QUEST_HOME_SORT_METHOD_CHANGED = "quest_home_sort_method_changed"),
           (r.QUEST_HOME_FILTERS_CHANGED = "quest_home_filters_changed"),
           (r.QUEST_GAME_SHEET_ERROR = "quest_game_sheet_error"),
+          (r.QUEST_HOME_ONBOARDING_POPOVER_RENDERED =
+            "quest_home_onboarding_popover_rendered"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -6731,7 +6741,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-17-e97e9b1f4ab6ffe3622e6377a0f9ad936f542b0a-discord_web",
+              "2025-10-20-0122a9996b960d35fc0e6917180dd3b0b3d1bdac-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6797,8 +6807,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "459631"),
-            o.YA("builtAt", String("1760777543931"));
+            o.YA("buildNumber", "459678"),
+            o.YA("builtAt", String("1760944748434"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48564,4 +48574,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.dfb37cfa37d1edbe.js.map
+//# sourceMappingURL=sentry.e6821af123b40ad4.js.map
