@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8129208002](https://discord.com/jobs/8129208002)
 
-**Updated At:** Fri, 17 Oct 2025 16:32:11 GMT
+**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're looking for an experienced senior regulatory counsel to join Discord’s legal team! Reporting to the Vice President and Deputy General Counsel for Litigation and Regulatory Compliance, you'll lead and implement Discord’s regulatory response and proactive legal engagement strategy for the Americas and APAC on matters involving online safety and content moderation, and supporting in other regions as available. You’ll play a critical role on Discord’s Legal team and collaborate with colleagues throughout the company as you successfully advocate for Discord.&amp;nbsp;&amp;nbsp;

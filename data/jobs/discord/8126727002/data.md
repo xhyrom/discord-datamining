@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8126727002](https://discord.com/jobs/8126727002)
 
-**Updated At:** Fri, 10 Oct 2025 21:23:11 GMT
+**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord.
@@ -39,7 +39,7 @@ Please see our Applicant and Candidate Privacy Policy for details regarding Disc
 - GDPR: No consent required for processing or retention.
 
 **Departments:**
-- Marketing
+- Product Marketing
 
 **Offices:**
 - San Francisco, CA in San Francisco, California, United States
