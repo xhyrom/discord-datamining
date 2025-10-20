@@ -35,17 +35,17 @@
       >
       <ul>
         <li>
-          <a href="#h_01JFAWBFT2RJ7XG9VYJY378KE4"
+          <a href="#h_01K81XCHEW2RZVY55ARAVP9CTX"
             ><strong>Through the Quest Bar on Desktop</strong></a
           >
         </li>
         <li>
-          <a href="#h_01JFAWCX89PT7F7ZCQP1KPBCQT"
+          <a href="#h_01K81XC24B8XMAJC8DDYEV3T9S"
             ><strong>Through the Quest Home on Desktop</strong></a
           >
         </li>
         <li>
-          <a href="#h_01JFAWS0WY563CGM42C0BDVW9Z"><strong>On Mobile</strong></a>
+          <a href="#h_01K81XEKNRJAKXDNZE2NNVQN03"><strong>On Mobile</strong></a>
         </li>
       </ul>
     </li>
@@ -98,9 +98,7 @@
   the Quest Home page or after accepting the Quest.
 </p>
 <h1 id="h_01JFAWB392Z58VMP5PDW63222E">Accepting a Quest </h1>
-<h2 id="h_01JFAWBFT2RJ7XG9VYJY378KE4">
-  <strong>Through the Quest Bar on Desktop </strong>
-</h2>
+<h2 id="h_01K81XCHEW2RZVY55ARAVP9CTX">Through the Quest Bar on Desktop</h2>
 <p class="wysiwyg-text-align-left">
   You may see an alert in your Discord app about a Discord Quest. Hover over the
   <strong>Quest bar</strong> and select it to expand and learn more about the
@@ -119,11 +117,7 @@
     >“Start Video Quest” button in Quest bar for Video Quests </span
   ><span style="color: #666666">on the Discord desktop/browser app</span>
 </h4>
-<h2 id="h_01JFAWCX89PT7F7ZCQP1KPBCQT">
-  <span class="wysiwyg-font-size-large"
-    ><strong>Through Quest Home on Desktop</strong></span
-  >
-</h2>
+<h2 id="h_01K81XC24B8XMAJC8DDYEV3T9S">Through Quest Home on Desktop</h2>
 <p>
   You can also select the Discover icon [<img
     src="https://support.discord.com/hc/article_attachments/27784562575383"
@@ -186,9 +180,7 @@
     app</span
   >
 </h4>
-<h2 id="h_01JFAWS0WY563CGM42C0BDVW9Z">
-  <span class="wysiwyg-font-size-large"><strong>On Mobile</strong></span>
-</h2>
+<h2 id="h_01K81XEKNRJAKXDNZE2NNVQN03">On Mobile</h2>
 <div class="info-box">
   <strong>NOTE</strong>: On mobile, accepting, tracking, and viewing Quests is
   currently in beta and limited to specific Quests.
