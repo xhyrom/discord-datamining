@@ -35684,6 +35684,12 @@ body .headerAnimation_b54a5b {
 .avatarDecorationDropShadow__6d099 {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));
 }
+.theme-dark .avatar__6d099 {
+  background: #0c0e0e;
+}
+.theme-light .avatar__6d099 {
+  background: #a8a9aa;
+}
 .container__6d099.threeItemBundle__6d099 .profileEffectShopPreview__6d099 {
   height: 190px;
   left: 25px;
@@ -93564,4 +93570,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.51166f765246245a.css.map*/
+/*# sourceMappingURL=12633.b100b1be1176170a.css.map*/
