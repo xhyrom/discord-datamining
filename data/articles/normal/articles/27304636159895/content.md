@@ -13,10 +13,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/35715697491991"
-    alt="ezgif.com-crop (1).gif"
-    width="600"
-    height="537"
+    src="https://support.discord.com/hc/article_attachments/35757697627159"
+    alt="ezgif.com-crop (2).gif"
   />
 </p>
 <h1 id="h_01JAZQ9T3V3CCFGYYHFFHB9F4C">Frequently Asked Questions</h1>
@@ -38,9 +36,9 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27306790152343"
-    width="912"
-    height="615"
+    src="https://support.discord.com/hc/article_attachments/35757697628439"
+    width="831"
+    height="616"
   />
 </p>
 <h4 id="h_01JAZSHVYJTHSFN37CQRRRYGWE" class="wysiwyg-text-align-center">
@@ -67,9 +65,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/27306790156183"
-    width="907"
-    height="612"
+    src="https://support.discord.com/hc/article_attachments/35757751565335"
+    alt="halloween2025-ezgif.com-video-to-gif-converter.gif"
   />
 </p>
 <h4 id="h_01JAZSM2ZNY14BWRM9YT7NJBD0" class="wysiwyg-text-align-center">
