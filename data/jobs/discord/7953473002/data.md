@@ -1,6 +1,6 @@
 # Job Listing
 
-## Staff Software Engineer, Audio/Video Infrastructure
+## Staff Software Engineer, Infrastructure
 
 **Location:** San Francisco Bay Area
 
@@ -10,35 +10,36 @@
 
 **Discord Jobs:** [https://discord.com/jobs/7953473002](https://discord.com/jobs/7953473002)
 
-**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
+**Updated At:** Tue, 21 Oct 2025 21:44:54 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Staff Audio &amp;amp; Video Infrastructure Engineer excited about building the software that powers our realtime communication infrastructure. The Audio &amp;amp; Video Infrastructure team builds and maintains our WebRTC-based systems and scales the infrastructure that enables millions of concurrent voice and video conversations. Your role will have significant impact on the quality of experience for Discord users and will involve architecting solutions for our next-generation edge computing infrastructure. This opportunity calls for an engineer ready to tackle challenging problems, drive improvements, and contribute to the technology that connects millions of people globally.
-What you'll do:
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is looking for a Staff Software Engineer who is passionate about building and scaling the infrastructure that powers real-time communication for millions of users. The team builds and maintains our WebRTC-based systems and scales the distributed infrastructure that enables millions of concurrent voice and video conversations globally.
+As a Staff Software Engineer, you'll work on technology that directly impacts how millions of people communicate daily. From casual voice chats to large-scale community events and high-stakes esports tournaments, your code will power conversations that matter. You'll tackle interesting technical challenges at scale – optimizing for performance and reliability, handling traffic patterns across the globe, and building systems resilient enough to handle Discord's massive growth. This is an opportunity to work with cutting-edge distributed systems technology while having a real, measurable impact on user experience.
+What you’ll do:
 
-Architect and build large-scale real-time Audio &amp;amp; Video systems that handle millions of concurrent users.
-Optimize system performance and reliability across control and media layers for improved user experience.
-Lead the migration to edge computing for reduced latency.
-Partner with third-party vendors and service providers to scale our global infrastructure.
-Guide cross-functional feature development and product launches.
-Mentor a world-class engineering team who have built one of the largest communication platforms in the world.
+Build and optimize distributed systems that handle millions of concurrent users through, focusing on implementation of scalable solutions.
+Implement performance improvements across both control and media layers, improving latency, reliability, and user experience metrics.
+Contribute to next-generation infrastructure architecture that pushes the boundaries of real-time communication.
+Develop and maintain infrastructure automation, monitoring, and observability solutions to ensure reliable deployments and operations.
+Collaborate with cross-functional teams, such as the Audio/Video Clients team, to deliver features and product launches.
+Debug and resolve complex production issues across distributed systems, from infrastructure to application layer.
 
-What you have:
+What you should have:
 
-6+ years of experience working with audio and/or video infrastructure
-Strong systems programming skills in languages like Rust, C++, Python, or Elixir
-Experience with large-scale distributed systems serving millions of concurrent users, including deployment tools and infrastructure automations such as Terraform or SaltStack.
-Experience with network protocols and/or understanding of packet-level networking fundamentals
-Experience architecting fault-tolerant systems with proper observability and monitoring
-Staff-level technical leadership experience mentoring engineers and driving architectural decisions
+8+ years of experience working on large scale distributed systems, including monitoring and performance optimization.
+Strong programming skills in languages like Rust, Python, C++, and/or Elixir.
+Solid understanding of distributed systems concepts including replication, partitioning, and consistency models.
+Strong debugging skills and ability to troubleshoot issues across the full stack.
+Experience with cloud providers (AWS, GCP) and containerization (Docker, Kubernetes).
+Collaborative mindset with experience working in cross-functional engineering teams.
 
-Bonus Points:
+Bonus points:
 
-Experience with Elixir
-Experience working with WebRTC, HLS or DASH
-Familiarity with codecs such as H.264, HEVC and AV1
-Experience with network protocols like RTMP, HTTP, UDP and QUIC
-You have built or contributed to open source projects.
+Experience with Elixir in production environments.
+Hands-on experience with WebRTC, HLS, or DASH streaming protocols.
+Knowledge of network protocols and understanding of networking fundamentals (TCP/UDP, packet loss, jitter, congestion control etc).
+Familiarity with real-time voice/video infrastructure or media server technologies (SFU/MCU architectures)
+Contributions to open source projects in the audio/video space.
 
 Candidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). For this role, the hiring manager would like folks to be in the office 1 day a week. Relocation assistance may be available.&amp;nbsp;The US base salary range for this full-time position is $248,000 to $279,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
