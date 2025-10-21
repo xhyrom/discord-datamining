@@ -51,7 +51,7 @@
   different designs with each milestone that you reach. 
 </p>
 <div class="info-box">
-  <strong>NOTE</strong>: The evolving version of the Nitro badge is not
+  <strong>Note</strong>: The evolving version of the Nitro badge is not
   available for Nitro Basic or Classic. 
 </div>
 <h1 id="h_01JHNGJHBTQMZBZ45XXCAX2ZK4">How Evolving Badges Work</h1>
@@ -71,9 +71,10 @@
   <span style="color: #666666">Nitro Milestone Badge Evolution</span>
 </h4>
 <div class="info-box">
-  If your Nitro subscription ends at any time and you resubscribe later, your
-  badge progression will start fresh from the beginning. This means you'll need
-  to maintain an active subscription to maintain your badge progress.
+  <strong>Note</strong>: If your Nitro subscription ends at any time and you
+  resubscribe later, your badge progression will start fresh from the beginning.
+  This means you'll need to maintain an active subscription to maintain your
+  badge progress.
 </div>
 <h1 id="h_01JHNGJHBTQTJP84DKAJHNDF82">Checking Your Nitro Badge Progress</h1>
 <h2 id="h_01JKC1W938CK485Z7ZHEYEN4JH">Desktop</h2>
@@ -97,8 +98,8 @@
 </h4>
 <h2 id="h_01JKC1NQW3A80RBC220FDMJMAZ">Mobile</h2>
 <div class="exp-box">
-  Evolving Nitro Badges on mobile is currently an experiment available to a
-  limited number of users.
+  <strong>Important</strong>: Evolving Nitro Badges on mobile is currently an
+  experiment available to a limited number of users.
 </div>
 <p>
   1. To check your current badge level on mobile, tap your
@@ -162,13 +163,13 @@
   >
 </p>
 <p>
-  A: If you cancel your Nitro subscription, your badge progression will reset.
-  When you resubscribe, you'll start fresh from the beginning of the badge
-  progression.
+  A: You’ll keep your badge for the rest of your current billing cycle. After
+  your subscription ends, your badge progression will reset. When you
+  resubscribe, you'll start fresh from the beginning of the badge progression.
 </p>
 <div class="warn-box">
-  <strong>NOTE</strong>: The Discord Support team does not have the ability to
-  update, change, or restore the evolving Nitro badge or any previous badge
+  <strong>Important</strong>: The Discord Support team does not have the ability
+  to update, change, or restore the evolving Nitro badge or any previous badge
   progress under <strong>any</strong> circumstances.
 </div>
 <p>
