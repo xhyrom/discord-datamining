@@ -12,48 +12,78 @@
     >
   </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e0c5e423886ee8bb509e011a296590975"
+    >
       <a href="#h_01K32B6G8X63N9WNDYHK1J6CVG"
         ><strong>What are Display Name Styles?</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eb4c02ea700523a93f2059711462fd691"
+    >
       <a href="#h_01K32B6G8Y6YKGMMTV0J2YF8XX"
         ><strong>How to Access Display Name Styles</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e4eecb5a84cacfe7993a38cac49b565af"
+    >
       <a href="#h_01K32B6G929Y4NZ8FH6X5WATNB"
         ><strong>Where Display Name Styles Appear</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ec0bfc3a27a8a65d50f87cdf787c55c90"
+    >
       <a href="#h_01K32B6G984P3THJEWREKWJF3C"
         ><strong>How to Set Your Display Name Style Options</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ed9e014bab6431a65a8d9dffe6e57370e"
+        >
           <a href="#h_01K32B6G98V14GP2G300KV0CRN"><strong>Fonts</strong></a>
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e99fae7868b5e6ec79934a5d34f6c86b3"
+        >
           <a href="#h_01K32B6G9A1GE7G6WT8MQ0FA7G"><strong>Effects</strong></a>
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e5ee7ff111d9a36cc54a178b74ca24dcc"
+        >
           <a href="#h_01K32B6G9DNXGZEKRYNVS1C1XJ"><strong>Colors</strong></a>
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e3d1f3e0b5a0320f5e3c4599714ea2f62"
+        >
           <a href="#h_01K32B6G9HK2AV2VMQ19KWV0XS"
             ><strong>Surprise Me Feature</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e3893ef7651a621320dd9461520243171"
+        >
           <a href="#h_01K32B6G9J87QZ86QM2ZD5F46C"
             ><strong>Light/Dark Mode Preview</strong></a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e5ae7d579ff2f61279281076db89b2b67"
+    >
       <a href="#h_01K32B6G9KZBMH4K3SW6GZ15XH"
         ><strong>Disabling Display Name Styles</strong></a
       >
@@ -73,14 +103,20 @@
     feature available to select Nitro subscribers on desktop and browser only.
   </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-color"
+      data-list-item-id="e68421eb68ec7128ee10d9a54ad86e730"
+    >
       <span style="color: #434343"
         >Fonts only work for Nitro subscribers in the experiment who use
         languages with the Latin alphabet and have set a Latin-based language in
         their Discord app.</span
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-color"
+      data-list-item-id="e4778f2060cc27dca7b777d925ed026ae"
+    >
       <span style="color: #434343"
         >Some symbols may not display as expected with custom fonts and will
         automatically fall back to <strong>gg sans</strong> for optimal
@@ -127,7 +163,7 @@
 </div>
 <p>Display Name Styles appear in the following locations:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e428bc04ee40e4651b4812d2adca66efb">
     <strong>Profile Panel and User Profile</strong> - Your Display Name Style
     appears in your profile panel located in the bottom-left area and your User
     Profile. 
@@ -146,7 +182,7 @@
   <span style="color: #666666">Display Name Styles in User Profile</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="eb4052524d7b892888cf26452bef48b23">
     <strong>Direct Messages (DM) and Group Chats </strong>- Your Display Name
     Style appears fully in all DM and group chat member lists. However, in
     messages, Display Name Styles will only show the font unless you hover over
@@ -166,7 +202,7 @@
   <span style="color: #666666">Display Name Styles in a Group Chat</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="eaa7aaa133167b1b359a07eb78402ee6d">
     <strong>DM List: </strong>Your Display Name Style appears in the DM list,
     but only the font is visible. To see the color or effect, hover over the
     user.
@@ -185,7 +221,7 @@
   <span style="color: #666666">Display Name Styles in DM List</span>
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e1620362837bcfa303acb27b1b58e532d">
     <strong>Per-Server Profiles</strong> - Your display name style will remain
     consistent across all per-server profiles. While you can customize each
     profile separately, the display name style will stay the same.
@@ -206,7 +242,7 @@
   >
 </h4>
 <ul>
-  <li>
+  <li data-list-item-id="e693e81011996e07433217c0d5eca0815">
     <strong>Servers</strong> - Fonts are displayed, but <em>color </em>and<em>
       effect settings will not appear</em
     >
@@ -236,14 +272,54 @@
 <h2 id="h_01K32B6G98V14GP2G300KV0CRN">Fonts</h2>
 <p>Choose from 8 unique fonts:</p>
 <ul>
-  <li><strong>gg sans (Discord's default font)</strong></li>
-  <li><strong>Tempo</strong></li>
-  <li><strong>Sakura</strong></li>
-  <li><strong>Jellybean</strong></li>
-  <li><strong>Modern</strong></li>
-  <li><strong>Medieval</strong></li>
-  <li><strong>8Bit</strong></li>
-  <li><strong>Vampyre</strong></li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="ebc2cb9f9d4b18e47d717be7e04d9cd61"
+  >
+    <strong>gg sans (Discord's default font)</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e50ff7471a33812ef26793241523cf466"
+  >
+    <strong>Tempo</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e30f231e295d5c9ba1bff95a92336559c"
+  >
+    <strong>Sakura</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e6b5b62d7615feb9910467b4f0db4482f"
+  >
+    <strong>Jellybean</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e15a238910f4cf6dd4841b9d7f1a2419f"
+  >
+    <strong>Modern</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="ecb0fa2b0eb306137efd513d89cd2bc08"
+  >
+    <strong>Medieval</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e448c64541875a197925306b2135f54d5"
+  >
+    <strong>8Bit</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e175d01c8c39a1cb135d0b0ef4361f206"
+  >
+    <strong>Vampyre</strong>
+  </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
@@ -260,11 +336,36 @@
 <h2 id="h_01K32B6G9A1GE7G6WT8MQ0FA7G">Effects</h2>
 <p>Select from 5 effect options:</p>
 <ul>
-  <li><strong>Solid</strong></li>
-  <li><strong>Gradient</strong></li>
-  <li><strong>Neon</strong></li>
-  <li><strong>Toon</strong></li>
-  <li><strong>Pop</strong></li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e87dc13724b4e15fd2c22e85863c258a3"
+  >
+    <strong>Solid</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e2c00d1dfd645a50f7095a04d5ffe898e"
+  >
+    <strong>Gradient</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="eb36f75a15c18cea05d094913d7c66618"
+  >
+    <strong>Neon</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="e58d2c114aebbf417d7424fc821a92ca2"
+  >
+    <strong>Toon</strong>
+  </li>
+  <li
+    class="ck-list-marker-bold"
+    data-list-item-id="eb74fd8e9a556167fe9ddb0782908beef"
+  >
+    <strong>Pop</strong>
+  </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
@@ -306,15 +407,15 @@
   customization:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ea154096373b9448feb0936d5a83f2bb9">
     <strong>Preset color options</strong>: Select any color from the preset
     palette.
   </li>
-  <li>
+  <li data-list-item-id="ee7fd105565733dea78aef67df0087b38">
     <strong>Custom color picker</strong>: Select the
     <strong>Custom Color</strong> option to create your own shade.
   </li>
-  <li>
+  <li data-list-item-id="e7c7add1ac7abd5b124baca577e07309c">
     <strong>Default</strong>: Select the <strong>Default</strong> box to revert
     your color to the default. When using the <strong>Solid</strong> effect,
     choosing <strong>Default</strong> color gives you the option to apply no
