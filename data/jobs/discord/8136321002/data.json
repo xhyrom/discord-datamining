@@ -13,7 +13,7 @@
   "education": "education_optional",
   "internal_job_id": 6223477002,
   "location": {
-    "name": "San Francisco Bay Area (U.S.)"
+    "name": "San Francisco Bay Area"
   },
   "metadata": [
     {
@@ -30,7 +30,7 @@
     }
   ],
   "id": 8136321002,
-  "updated_at": "2025-10-20T17:09:30-04:00",
+  "updated_at": "2025-10-22T13:53:08-04:00",
   "requisition_id": "R-101035",
   "title": "Senior Software Engineer - Platform Infrastructure",
   "company_name": "Discord",

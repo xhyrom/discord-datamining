@@ -1921,7 +1921,7 @@
       "education": "education_optional",
       "internal_job_id": 6210767002,
       "location": {
-        "name": "San Francisco Bay Area (U.S)"
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -1938,7 +1938,7 @@
         }
       ],
       "id": 8105734002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-22T13:52:45-04:00",
       "requisition_id": "R-101018",
       "title": "Senior Privacy Engineer",
       "company_name": "Discord",
@@ -2812,7 +2812,7 @@
       "education": "education_optional",
       "internal_job_id": 6223477002,
       "location": {
-        "name": "San Francisco Bay Area (U.S.)"
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -2829,7 +2829,7 @@
         }
       ],
       "id": 8136321002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-22T13:53:08-04:00",
       "requisition_id": "R-101035",
       "title": "Senior Software Engineer - Platform Infrastructure",
       "company_name": "Discord",
@@ -3592,7 +3592,7 @@
       ],
       "internal_job_id": 6098161002,
       "location": {
-        "name": "San Francisco Bay Area or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -3609,7 +3609,7 @@
         }
       ],
       "id": 8058456002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-22T13:53:41-04:00",
       "requisition_id": "R-100812",
       "title": "Staff Software Engineer - UI and Interactions (Full-Stack)",
       "company_name": "Discord",
@@ -3647,7 +3647,7 @@
       ],
       "internal_job_id": 6098161002,
       "location": {
-        "name": "San Francisco Bay Area or Remote (U.S.)"
+        "name": "Remote (U.S.)"
       },
       "metadata": [
         {
@@ -3664,7 +3664,7 @@
         }
       ],
       "id": 7854326002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-22T13:53:51-04:00",
       "requisition_id": "R-100812",
       "title": "Staff Software Engineer – UI/UX Specialist",
       "company_name": "Discord",
