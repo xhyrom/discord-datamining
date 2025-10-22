@@ -318,9 +318,9 @@
 </p>
 <h1 id="h_01K707MY85MD0R5RMTKFJR7QJ4">What is KontrolFreek?</h1>
 <p>
-  KontrolFreek is the creator of Performance Gaming Gear that enhance the player
-  experience by maximizing comfort and precision. You can learn more about
-  KontrolFreek
+  KontrolFreek is the creator of Performance Gaming Gear that enhances the
+  player experience by maximizing comfort and precision. You can learn more
+  about KontrolFreek
   <a
     href="https://www.kontrolfreek.com/"
     target="_blank"
@@ -332,12 +332,19 @@
   How do I claim the Nitro Promo from SteelSeries and KontrolFreek?
 </h1>
 <p>
-  1. Head to SteelSeries.com or KontrolFreek.com, and complete an order work $20
-  or more. Note: purchase of Arctis Nova Elite does not apply
+  1. Head to
+  <a href="http://SteelSeries.com" target="_blank" rel="noopener noreferrer"
+    >SteelSeries.com</a
+  >
+  or
+  <a href="http://KontrolFreek.com" target="_blank" rel="noopener noreferrer"
+    >KontrolFreek.com</a
+  >, and complete an order worth $20 or more. Note: purchase of Arctis Nova
+  Elite does not apply.
 </p>
 <p>
   2. You will receive a <strong>Thank You</strong> email after the purchase.
-  This is a confirmation email and will not contain your code
+  This is a confirmation email and will not contain your code.
 </p>
 <p>
   3. A secondary email with your Nitro Promo code will be sent 4-12 hours after
@@ -349,7 +356,7 @@
 <p>
   Once you have claimed the promo, you'll now need to officially redeem this
   promo on your Discord account. You must redeem this Nitro trial by
-  <strong>January 30, 2026 (11:59PM  PT).</strong>
+  <strong>January 30, 2026 (11:59PM PT).</strong>
 </p>
 <h2 id="h_01K707MY88A2B60RWJJB3QDRRQ">
   Eligibility for Redeeming the Nitro Trial
@@ -359,12 +366,12 @@
     ><strong>Note</strong>: This promotion is not available in the following
     regions: Syria, Ukraine, Russia, Iran, and North Korea. If you receive an
     "Unknown Gift Code" error during the claim/redemption process, you are not
-    eligible to redeem this promotion. You can learn more at this</span
+    eligible to redeem this promotion. You can learn more at this </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/4708041338391"
     target="_blank"
     rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"> Help Center article.</span></a
+    ><span class="wysiwyg-underline">Help Center article.</span></a
   >
 </div>
 <p>
@@ -776,15 +783,15 @@
 </p>
 <p>
   <strong
-    >Q: I see a "This gift has already been claimed" or "Looks like this gift
-    has already been claimed" error when I try to claim my Nitro promo.</strong
+    >Q: I see a "Looks like this gift has already been claimed" error when I try
+    to claim my Nitro promo.</strong
   >
 </p>
 <p>
-  <strong>A:</strong> If you are seeing a "This gift has been claimed already"
-  or "Looks like this gift has already been claimed" error, that means that the
-  Nitro promo has already been used and cannot be used again. You may need to
-  double check if you've claimed this promo on another Discord account.
+  <strong>A:</strong> If you are seeing a "Looks like this gift has already been
+  claimed" error, that means that the Nitro promo has already been used and
+  cannot be used again. You may need to double check if you've claimed this
+  promo on another Discord account.
 </p>
 <p>
   Unfortunately, once the promo has been claimed, the promo cannot be
@@ -924,13 +931,32 @@
   >
 </p>
 <p>
-  <strong>A:</strong> Reach out to SteelSeries’ support team here:
-  <a
-    href="https://support.steelseries.com/hc/en-us"
-    target="_blank"
-    rel="noopener noreferrer"
-    ><span class="wysiwyg-underline"
-      >https://support.steelseries.com/hc/en-us</span
-    ></a
-  >
+  <strong>A: </strong>For assistance with SteelSeries or KontrolFreek orders and
+  accounts, contact their support teams directly:
 </p>
+<ul>
+  <li data-list-item-id="eadd1f11f798d2788cb15ab467b594cdb">
+    <strong>SteelSeries Support:</strong
+    ><a
+      href="https://support.steelseries.com/hc/en-us"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong> </strong
+      ><span class="wysiwyg-underline"
+        >https://support.steelseries.com/hc/en-us</span
+      ></a
+    >
+  </li>
+  <li data-list-item-id="e4629e8ba6d19c22298f6341d650a917e">
+    <strong>KontrolFreek Support:</strong
+    ><a
+      href="https://support.kontrolfreek.com/hc/en-us"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><strong> </strong
+      ><span class="wysiwyg-underline"
+        >https://support.kontrolfreek.com/hc/en-us</span
+      ></a
+    >
+  </li>
+</ul>
