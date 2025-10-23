@@ -2,7 +2,7 @@
 
 ## Staff Software Engineer, Machine Learning Platform
 
-**Location:** San Francisco, California
+**Location:** San Francisco Bay Area
 
 **Id:** 8192133002 <br/>
 **Internal Job Id:** 6246941002 <br/>
@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8192133002](https://discord.com/jobs/8192133002)
 
-**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
+**Updated At:** Thu, 23 Oct 2025 18:33:59 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.The Machine Learning Platform team at Discord is responsible for the end to end model development lifecycle across all ML applications. We work closely with machine learning engineers, core infrastructure, and ML consumers to deliver the tools, services, and frameworks that make machine learning training and deployments easy, safe, scalable, and accessible. In this role, you’ll work on everything from training and batch inference pipelines, online model serving, feature stores, event stream processing, and LLM serving and evaluation. You’ll lead projects and partner with ML practitioners and other Staff+ engineers to shape the future of Discord’s data infrastructure. This role reports to the Senior Engineering Manager of the ML Platform team.

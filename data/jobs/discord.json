@@ -572,7 +572,7 @@
       "education": "education_optional",
       "internal_job_id": 6234276002,
       "location": {
-        "name": "San Francisco Bay Area (U.S.)"
+        "name": "San Francisco Bay Area "
       },
       "metadata": [
         {
@@ -589,7 +589,7 @@
         }
       ],
       "id": 8161010002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-23T14:34:47-04:00",
       "requisition_id": "R-101048",
       "title": "Engineering Manager, Core Product",
       "company_name": "Discord",
@@ -3425,7 +3425,7 @@
       "education": "education_optional",
       "internal_job_id": 6246941002,
       "location": {
-        "name": "San Francisco, California"
+        "name": "San Francisco Bay Area"
       },
       "metadata": [
         {
@@ -3442,7 +3442,7 @@
         }
       ],
       "id": 8192133002,
-      "updated_at": "2025-10-20T17:09:30-04:00",
+      "updated_at": "2025-10-23T14:33:59-04:00",
       "requisition_id": "R-107026",
       "title": "Staff Software Engineer, Machine Learning Platform",
       "company_name": "Discord",
