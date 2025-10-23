@@ -4360,6 +4360,7 @@
             QUEST_PREVIEW: (t) => "/quest-preview/".concat(t),
             QUEST_PREVIEW_TOOL_2: (t) =>
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
+            ICYMI: "/icymi",
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -6742,7 +6743,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-2580d9ed8e900155aeb055a080fed2c6cdd7b89c",
+            release: "discord_web-8e42316224cd766d7b653b5213c4cc8f144e3ff6",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6808,8 +6809,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "461359"),
-            o.YA("builtAt", String("1761260338722"));
+            o.YA("buildNumber", "461382"),
+            o.YA("builtAt", String("1761263137084"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48575,4 +48576,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.5e47d498aff7cc40.js.map
+//# sourceMappingURL=sentry.2278e56943eb7f46.js.map
