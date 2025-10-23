@@ -1,6 +1,6 @@
 # Job Listing
 
-## Director of Sales, EMEA
+## Director of Advertising Sales, EMEA
 
 **Location:** London
 
@@ -10,17 +10,17 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8215749002](https://discord.com/jobs/8215749002)
 
-**Updated At:** Tue, 21 Oct 2025 17:55:57 GMT
+**Updated At:** Thu, 23 Oct 2025 21:08:09 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an experienced Director of Sales, EMEA to join our growing gaming sales team at Discord. This role is perfect for someone passionate about the gaming industry in Greater Europe &amp;amp; burgeoning/growth adjacent territories in the region. who is eager to help gaming companies connect with their most dedicated audiences across the region.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an experienced Director of Advertising Sales in the gaming space in EMEA to join our growing sales team at Discord. This role is perfect for someone passionate about the power of advertising as a growth play for the gaming industry in Greater Europe &amp;amp; adjacent territories who is eager to help game companies connect with their most dedicated audiences on Discord.
 The expected outcomes for this position in year one are:&amp;nbsp;
 
-Achieving revenue quotas
+Achieving Revenue Quotas
 Building the inaugural Sales Team in EMEA
-Creating a vision, multi-year plan for sustainable growth within the territory, starting with the gaming vertical and expanding into other areas
+Creating a vision, multi-year plan for sustainable growth within the territory
 
-This is a regional leadership role where you will work to expand our established gaming sales business across EMEA markets. You will leverage your prior experience in gaming, advertising, and media spaces within the region, bringing a combination of strategic business thinking, industry relationships, product insights, and an ability to build a significant, recurring book of business with clients.
+This is a regional leadership role where you will work to expand our established sales across EMEA game industry. You will leverage your prior experience in gaming, advertising, and media spaces within the region, bringing a combination of strategic business thinking, industry relationships, product insights, and an ability to build a significant, recurring book of business with clients.
 What you'll be doing:
 
 You will be responsible for hitting revenue and account goals by:
