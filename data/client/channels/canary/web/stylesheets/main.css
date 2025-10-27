@@ -7983,13 +7983,13 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .attachedButton_f1ceac {
   border-radius: 8px 0 0 8px;
 }
-.fullRegionButton_f1ceac {
+.fullRegionButton_f1ceac,
+.fullRegionDropdownButton_f1ceac {
+  border: 1px solid var(--border-faint);
   border-radius: 12px;
 }
 .fullRegionDropdownButton_f1ceac {
   align-items: center;
-  border: 1px solid var(--border-faint);
-  border-radius: 12px;
   display: flex;
   justify-content: center;
   padding: 4px;
@@ -94468,4 +94468,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.3221cd224178137e.css.map*/
+/*# sourceMappingURL=12633.0b1fddd9c0be26f3.css.map*/
