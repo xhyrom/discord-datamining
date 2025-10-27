@@ -1,6 +1,6 @@
 <p>
   Looking to make your display name stand out on Discord?
-  <strong>Display Name Styles</strong> is a new Nitro feature that lets you
+  <strong>Display Name Styles</strong> is a Nitro feature that lets you
   customize how your display name appears with unique fonts, colors, and
   animated effects. Express your personality with the same display name, just a
   fresh new look.
@@ -14,7 +14,7 @@
   <ul>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e0c5e423886ee8bb509e011a296590975"
+      data-list-item-id="ebdd68e3b24842cc27251a2c218aba09e"
     >
       <a href="#h_01K32B6G8X63N9WNDYHK1J6CVG"
         ><strong>What are Display Name Styles?</strong></a
@@ -22,7 +22,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="eb4c02ea700523a93f2059711462fd691"
+      data-list-item-id="eb2ec6c4e7e5449d9cd2cdfa07040a7cc"
     >
       <a href="#h_01K32B6G8Y6YKGMMTV0J2YF8XX"
         ><strong>How to Access Display Name Styles</strong></a
@@ -30,7 +30,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e4eecb5a84cacfe7993a38cac49b565af"
+      data-list-item-id="e4fd00c85e52b487df5652b80b1e8d217"
     >
       <a href="#h_01K32B6G929Y4NZ8FH6X5WATNB"
         ><strong>Where Display Name Styles Appear</strong></a
@@ -38,7 +38,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="ec0bfc3a27a8a65d50f87cdf787c55c90"
+      data-list-item-id="ea5a4daeeb75cb913606e4b197456d9ac"
     >
       <a href="#h_01K32B6G984P3THJEWREKWJF3C"
         ><strong>How to Set Your Display Name Style Options</strong></a
@@ -46,25 +46,25 @@
       <ul>
         <li
           class="ck-list-marker-bold"
-          data-list-item-id="ed9e014bab6431a65a8d9dffe6e57370e"
+          data-list-item-id="eb33ab1221a1a0160b014911ba7d9d1a4"
         >
           <a href="#h_01K32B6G98V14GP2G300KV0CRN"><strong>Fonts</strong></a>
         </li>
         <li
           class="ck-list-marker-bold"
-          data-list-item-id="e99fae7868b5e6ec79934a5d34f6c86b3"
+          data-list-item-id="ea88e7150183e60eff77bff005c0cfbc9"
         >
           <a href="#h_01K32B6G9A1GE7G6WT8MQ0FA7G"><strong>Effects</strong></a>
         </li>
         <li
           class="ck-list-marker-bold"
-          data-list-item-id="e5ee7ff111d9a36cc54a178b74ca24dcc"
+          data-list-item-id="ea661b6041ad39ee7139f77a06a37831f"
         >
           <a href="#h_01K32B6G9DNXGZEKRYNVS1C1XJ"><strong>Colors</strong></a>
         </li>
         <li
           class="ck-list-marker-bold"
-          data-list-item-id="e3d1f3e0b5a0320f5e3c4599714ea2f62"
+          data-list-item-id="e20a7ffa2bb9277b3133075d5293438f7"
         >
           <a href="#h_01K32B6G9HK2AV2VMQ19KWV0XS"
             ><strong>Surprise Me Feature</strong></a
@@ -72,7 +72,7 @@
         </li>
         <li
           class="ck-list-marker-bold"
-          data-list-item-id="e3893ef7651a621320dd9461520243171"
+          data-list-item-id="ef27f30919cc354c07d35014c0beb8f7e"
         >
           <a href="#h_01K32B6G9J87QZ86QM2ZD5F46C"
             ><strong>Light/Dark Mode Preview</strong></a
@@ -82,7 +82,7 @@
     </li>
     <li
       class="ck-list-marker-bold"
-      data-list-item-id="e5ae7d579ff2f61279281076db89b2b67"
+      data-list-item-id="e936ba95e4acf2e688149ae532b9d9938"
     >
       <a href="#h_01K32B6G9KZBMH4K3SW6GZ15XH"
         ><strong>Disabling Display Name Styles</strong></a
@@ -91,21 +91,27 @@
   </ul>
 </div>
 <h1 id="h_01K32B6G8X63N9WNDYHK1J6CVG">What are Display Name Styles?</h1>
+<div class="exp-box">
+  <span style="color: #434343"
+    ><strong>Important</strong>: Display Name Styles will be gradually rolled
+    out, with all Nitro members gaining access by early December. </span
+  >
+</div>
 <p>
   Display Name Styles allow Discord Nitro users to customize how their display
   names appear on Discord. With this feature, you can personalize your display
   name through various styling options including fonts, colors, and effects.
 </p>
 <h1 id="h_01K32B6G8Y6YKGMMTV0J2YF8XX">How to Access Display Name Styles</h1>
-<div class="exp-box">
+<div class="info-box">
   <p>
-    <strong>Important: </strong>Display Name Styles is currently an experimental
-    feature available to select Nitro subscribers on desktop and browser only.
+    <strong>Note: </strong>Display Name Styles is a feature available to select
+    Nitro subscribers on desktop and browser only.
   </p>
   <ul>
     <li
       class="ck-list-marker-color"
-      data-list-item-id="e68421eb68ec7128ee10d9a54ad86e730"
+      data-list-item-id="eddcb4ab8b9309f3d4cbd2475e8db5db8"
     >
       <span style="color: #434343"
         >Fonts only work for Nitro subscribers in the experiment who use
@@ -115,7 +121,7 @@
     </li>
     <li
       class="ck-list-marker-color"
-      data-list-item-id="e4778f2060cc27dca7b777d925ed026ae"
+      data-list-item-id="ea263dfe7f443598c100d84f21a4d569f"
     >
       <span style="color: #434343"
         >Some symbols may not display as expected with custom fonts and will
@@ -141,8 +147,8 @@
 <p class="wysiwyg-text-align-center">
   <span style="color: #666666"
     ><img
-      style="aspect-ratio: 624/424; width: 100%"
       class="wysiwyg-image-resized"
+      style="aspect-ratio: 624/424; width: 100%"
       src="https://support.discord.com/hc/article_attachments/34306353371543"
       width="624"
       height="424"
@@ -163,7 +169,7 @@
 </div>
 <p>Display Name Styles appear in the following locations:</p>
 <ul>
-  <li data-list-item-id="e428bc04ee40e4651b4812d2adca66efb">
+  <li data-list-item-id="e7515956374cf54768840c0e609cd109f">
     <strong>Profile Panel and User Profile</strong> - Your Display Name Style
     appears in your profile panel located in the bottom-left area and your User
     Profile. 
@@ -171,8 +177,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/424; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/424; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306334668567"
     width="624"
     height="424"
@@ -182,7 +188,7 @@
   <span style="color: #666666">Display Name Styles in User Profile</span>
 </h4>
 <ul>
-  <li data-list-item-id="eb4052524d7b892888cf26452bef48b23">
+  <li data-list-item-id="e576a9d12f386a8222e9aad7e44583bfc">
     <strong>Direct Messages (DM) and Group Chats </strong>- Your Display Name
     Style appears fully in all DM and group chat member lists. However, in
     messages, Display Name Styles will only show the font unless you hover over
@@ -191,8 +197,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/361; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/361; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353372567"
     width="624"
     height="361"
@@ -202,7 +208,7 @@
   <span style="color: #666666">Display Name Styles in a Group Chat</span>
 </h4>
 <ul>
-  <li data-list-item-id="eaa7aaa133167b1b359a07eb78402ee6d">
+  <li data-list-item-id="ef9943def1c777f3d919434cb22f7c79e">
     <strong>DM List: </strong>Your Display Name Style appears in the DM list,
     but only the font is visible. To see the color or effect, hover over the
     user.
@@ -210,8 +216,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353373719"
     width="624"
     height="425"
@@ -221,28 +227,52 @@
   <span style="color: #666666">Display Name Styles in DM List</span>
 </h4>
 <ul>
-  <li data-list-item-id="e1620362837bcfa303acb27b1b58e532d">
-    <strong>Per-Server Profiles</strong> - Your display name style will remain
-    consistent across all per-server profiles. While you can customize each
-    profile separately, the display name style will stay the same.
+  <li data-list-item-id="ea6250200cf850d75c919d0b02f72febd">
+    <strong>Per-Server Profiles</strong> - Your Display Name Style can be
+    customized for each per-server profile. 
   </li>
 </ul>
-<p class="wysiwyg-text-align-center">
+<figure class="wysiwyg-image">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
-    class="wysiwyg-image-resized"
-    src="https://support.discord.com/hc/article_attachments/34306334671511"
-    width="624"
-    height="425"
+    style="aspect-ratio: 800/593"
+    src="https://support.discord.com/hc/article_attachments/35820587468311"
+    alt="image10.gif"
+    width="800"
+    height="593"
   />
-</p>
+</figure>
 <h4 class="wysiwyg-text-align-center" id="h_01K32B6G96GC987WGG6RXJZXHA">
   <span style="color: #666666"
     >Display Name Styles in Different Per-Server Profiles</span
   >
 </h4>
+<div class="tip-box">
+  <p>
+    <span style="color: #434343"
+      ><strong>Tip:</strong> You can quickly access your per-server profile by
+      right-clicking your avatar in any text channel and selecting
+      <strong>Edit Per-server Profile</strong>. Alternatively, navigate to
+      <strong>User Settings &gt; Profiles &gt; Per-Server Profiles</strong
+      >.</span
+    >
+  </p>
+  <figure class="wysiwyg-image">
+    <img
+      style="aspect-ratio: 800/593"
+      src="https://support.discord.com/hc/article_attachments/35820587475095"
+      alt="image16.gif"
+      width="800"
+      height="593"
+    />
+  </figure>
+  <h4 class="wysiwyg-text-align-center" id="h_01K816TDF32HYPWGYAZFHZB4NE">
+    <span style="color: #666666"
+      >Navigating to Per-Server Profiles from Your Avatar</span
+    >
+  </h4>
+</div>
 <ul>
-  <li data-list-item-id="e693e81011996e07433217c0d5eca0815">
+  <li data-list-item-id="e6521ed614dff3d8ac5c49ac931fb21eb">
     <strong>Servers</strong> - Fonts are displayed, but <em>color </em>and<em>
       effect settings will not appear</em
     >
@@ -252,8 +282,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353374615"
     width="624"
     height="425"
@@ -274,57 +304,57 @@
 <ul>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="ebc2cb9f9d4b18e47d717be7e04d9cd61"
+    data-list-item-id="eabbd389340a9e19aef5fd1aeeb3a22fc"
   >
     <strong>gg sans (Discord's default font)</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e50ff7471a33812ef26793241523cf466"
+    data-list-item-id="eac349002c4cab677883c72e1a38c77df"
   >
     <strong>Tempo</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e30f231e295d5c9ba1bff95a92336559c"
+    data-list-item-id="e05de1c074727163766b114b653572dca"
   >
     <strong>Sakura</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e6b5b62d7615feb9910467b4f0db4482f"
+    data-list-item-id="e7231e164b8dcde13040e482892f12384"
   >
     <strong>Jellybean</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e15a238910f4cf6dd4841b9d7f1a2419f"
+    data-list-item-id="e3700cb255963a59d78c659a9bad30fe4"
   >
     <strong>Modern</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="ecb0fa2b0eb306137efd513d89cd2bc08"
+    data-list-item-id="e7d4b57b023a13ef8484dba5804737d79"
   >
     <strong>Medieval</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e448c64541875a197925306b2135f54d5"
+    data-list-item-id="e268a578bf3471dc01625017c5c8383a1"
   >
     <strong>8Bit</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e175d01c8c39a1cb135d0b0ef4361f206"
+    data-list-item-id="e6440a0256c4614ca39f43fdc8286aee9"
   >
     <strong>Vampyre</strong>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353375639"
     width="624"
     height="425"
@@ -338,39 +368,39 @@
 <ul>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e87dc13724b4e15fd2c22e85863c258a3"
+    data-list-item-id="ef1911a3a6fe990ed66f248d37523888d"
   >
     <strong>Solid</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e2c00d1dfd645a50f7095a04d5ffe898e"
+    data-list-item-id="e66e4f7c6d7c0a8c6ef526dde27a12b03"
   >
     <strong>Gradient</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="eb36f75a15c18cea05d094913d7c66618"
+    data-list-item-id="ef0c1f5c1689ac12023a5404a003b0339"
   >
     <strong>Neon</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="e58d2c114aebbf417d7424fc821a92ca2"
+    data-list-item-id="e8bf89dd55b52925447ff27da5b6637ea"
   >
     <strong>Toon</strong>
   </li>
   <li
     class="ck-list-marker-bold"
-    data-list-item-id="eb74fd8e9a556167fe9ddb0782908beef"
+    data-list-item-id="e2c5fdb51a12ee164c325c8ecd3dedc7c"
   >
     <strong>Pop</strong>
   </li>
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306334673687"
     width="624"
     height="425"
@@ -387,8 +417,8 @@
   <p class="wysiwyg-text-align-center">
     <span style="color: #434343"
       ><img
-        style="aspect-ratio: 624/513; width: 100%"
         class="wysiwyg-image-resized"
+        style="aspect-ratio: 624/513; width: 100%"
         src="https://support.discord.com/hc/article_attachments/34306353377559"
         width="624"
         height="513"
@@ -407,15 +437,15 @@
   customization:
 </p>
 <ul>
-  <li data-list-item-id="ea154096373b9448feb0936d5a83f2bb9">
+  <li data-list-item-id="eeb0aed04cae5368e49a307fc8d4eafc1">
     <strong>Preset color options</strong>: Select any color from the preset
     palette.
   </li>
-  <li data-list-item-id="ee7fd105565733dea78aef67df0087b38">
+  <li data-list-item-id="ec7572d57cfd994993a655f15aaaed9aa">
     <strong>Custom color picker</strong>: Select the
     <strong>Custom Color</strong> option to create your own shade.
   </li>
-  <li data-list-item-id="e7c7add1ac7abd5b124baca577e07309c">
+  <li data-list-item-id="eb7266977200efc66bc0110bfb60837fa">
     <strong>Default</strong>: Select the <strong>Default</strong> box to revert
     your color to the default. When using the <strong>Solid</strong> effect,
     choosing <strong>Default</strong> color gives you the option to apply no
@@ -425,8 +455,8 @@
 </ul>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353378327"
     width="624"
     height="425"
@@ -442,8 +472,8 @@
   </p>
   <p class="wysiwyg-text-align-center">
     <img
-      style="aspect-ratio: 624/508; width: 100%"
       class="wysiwyg-image-resized"
+      style="aspect-ratio: 624/508; width: 100%"
       src="https://support.discord.com/hc/article_attachments/34306334677655"
       width="624"
       height="508"
@@ -460,8 +490,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353383959"
     width="624"
     height="425"
@@ -478,8 +508,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306353384855"
     width="624"
     height="425"
@@ -498,8 +528,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/425; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 624/425; width: 100%"
     src="https://support.discord.com/hc/article_attachments/34306334683031"
     width="624"
     height="425"
