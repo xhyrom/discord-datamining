@@ -41082,12 +41082,12 @@ img.thumbnail__0f2e8 {
 .linkIcon_ebf183 {
   display: inline-block;
 }
-.roleIcon__1e6f1 {
+.roleIcon_ee71ee {
   display: inline-block;
   object-fit: contain;
   overflow: hidden;
 }
-.roleIcon__1e6f1:before {
+.roleIcon_ee71ee:before {
   background-color: var(--background-mod-subtle);
   border-radius: 50%;
   content: "";
@@ -41095,7 +41095,7 @@ img.thumbnail__0f2e8 {
   height: 100%;
   width: 100%;
 }
-.clickable__1e6f1 {
+.clickable_ee71ee {
   cursor: pointer;
 }
 .pill_dfa8b6 {
@@ -94672,4 +94672,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.fd06bd0cb8db2790.css.map*/
+/*# sourceMappingURL=12633.2ea3bfe6dcaa016f.css.map*/
