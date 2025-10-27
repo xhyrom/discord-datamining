@@ -41173,11 +41173,11 @@ img.thumbnail__0f2e8 {
 .enable-forced-colors .roleRemoveIcon_dfa8b6 path {
   fill: ButtonText !important;
 }
-.popoutRoleDot_b77a0c {
+.popoutRoleDot__50e22 {
   -webkit-margin-end: 4px;
   margin-inline-end: 4px;
 }
-.popoutRoleCircle_b77a0c {
+.popoutRoleCircle__50e22 {
   -webkit-margin-end: 8px;
   margin-inline-end: 8px;
 }
@@ -94672,4 +94672,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.2ea3bfe6dcaa016f.css.map*/
+/*# sourceMappingURL=12633.93ef525067fbbf07.css.map*/
