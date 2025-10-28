@@ -5700,16 +5700,16 @@ html.decorate-links .lowSaturationUnderline__41f68 {
 .secondaryButton__468a6 {
   flex: unset;
 }
-.spacing_f0f2d9 {
+.spacing_a959b1 {
   margin-bottom: 20px;
 }
-.error_f0f2d9 {
+.error_a959b1 {
   margin-top: 8px;
 }
-.card_f0f2d9 {
+.card_a959b1 {
   padding: 10px;
 }
-.warning_f0f2d9 {
+.warning_a959b1 {
   color: var(--white-500);
 }
 .flowerStarContainer__3e3b0 {
@@ -60872,6 +60872,122 @@ html .progress__61462 {
   top: -50px;
   z-index: 1;
 }
+.container_e99fef,
+.progressHeader_e99fef {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.progressHeader_e99fef {
+  width: 100%;
+}
+.progressBar_e99fef {
+  background-color: var(--background-surface-highest);
+  border-radius: 94px;
+  height: 10px;
+  margin: var(--space-12) 0;
+  position: relative;
+  width: 100%;
+}
+.progressBarFill_e99fef {
+  background: linear-gradient(90deg, #13184c, #5865f2);
+  height: 100%;
+  fill: #5865f2;
+}
+.progressBarIndicator_e99fef {
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px #5865f2;
+  display: flex;
+  height: 100%;
+  position: absolute;
+}
+.cards_e99fef {
+  gap: var(--space-12);
+  width: 100%;
+}
+.cards_e99fef,
+.promoCardContainer_e99fef {
+  display: flex;
+  flex-direction: column;
+}
+.promoCardContainer_e99fef {
+  align-items: stretch;
+  background-color: var(--background-surface-highest);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-lg);
+  gap: 14px;
+  margin-top: var(--space-12);
+  padding: var(--space-16) 0;
+}
+.wrap_e99fef {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 var(--space-16);
+}
+.promoCardContent_e99fef {
+  width: 100%;
+}
+.promoCardContentDetails_e99fef {
+  width: 60%;
+}
+.promoCardContentText_e99fef {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: var(--space-12) 0;
+}
+.promoCardAssetContainer_e99fef {
+  align-items: center;
+  display: flex;
+  width: 40%;
+}
+.promoCardAsset_e99fef {
+  margin: 0 auto;
+}
+.lockIconContainer_e99fef {
+  align-items: center;
+  aspect-ratio: 1/1;
+  background: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-shrink: 0;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+.claimedFooterContainer_e99fef {
+  border-top: 1px solid var(--border-faint);
+  padding-top: var(--space-16);
+}
+.claimedFooter_e99fef,
+.claimedFooterContainer_e99fef {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.claimedFooter_e99fef {
+  gap: 10px;
+  margin: 0 var(--space-16);
+}
+.claimedFooterCode_e99fef {
+  flex: 1 0 0;
+}
+.extraCodeButton_e99fef {
+  align-items: center;
+  background-color: var(--background-surface-highest);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+  width: 80%;
+}
 .boxBackdrop_abac7b {
   align-items: center;
   display: flex;
@@ -61142,7 +61258,7 @@ html .progress__61462 {
   background: var(--background-surface-high);
 }
 .description_b0db00 {
-  display: flex;
+  display: inline;
   flex-direction: column;
   gap: var(--space-12);
   margin-top: var(--space-12);
@@ -62971,6 +63087,19 @@ html .progress__61462 {
   height: 48px;
   width: 48px;
 }
+.container_f8fa75 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.image_f8fa75 {
+  margin-top: var(--space-16);
+  width: 100%;
+}
+.container__29469 {
+  height: 100%;
+}
 .container__1f2ac {
   height: 100%;
   justify-content: space-between;
@@ -64781,16 +64910,6 @@ div:hover
 .custom-theme-background .preview__5d148 {
   background: var(--background-gradient-chat-preview);
 }
-.card__594f1,
-.spacing__594f1 {
-  margin-bottom: 20px;
-}
-.card__594f1 {
-  padding: 10px;
-}
-.error__594f1 {
-  margin-top: 8px;
-}
 .avatarBackground_eb2508 {
   align-items: center;
   background-color: var(--background-mod-strong);
@@ -65052,6 +65171,16 @@ div:hover
 div.nagbar_d74ef8 {
   border-radius: 0 0 10px 10px;
   margin-top: -24px;
+}
+.card__6aefd,
+.spacing__6aefd {
+  margin-bottom: 20px;
+}
+.card__6aefd {
+  padding: 10px;
+}
+.error__6aefd {
+  margin-top: 8px;
 }
 .tabBar_f8303a {
   border-bottom: 1px solid var(--border-subtle);
@@ -94670,4 +94799,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.98726e0bbd21621e.css.map*/
+/*# sourceMappingURL=12633.32a82325bcdd6143.css.map*/
