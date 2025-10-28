@@ -5248,7 +5248,8 @@
     "url": "/users/@me/scheduled-messages/:param",
     "allowed_methods": [
       "DELETE",
-      "OPTIONS"
+      "OPTIONS",
+      "PATCH"
     ]
   }
 }
