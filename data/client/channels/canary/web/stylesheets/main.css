@@ -52249,6 +52249,7 @@ html .progress__61462 {
   white-space: nowrap;
 }
 .content_d5f3cd {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
@@ -52392,17 +52393,6 @@ html .progress__61462 {
 }
 .inviteSplashImageLoaded_d5f3cd {
   opacity: 1;
-}
-.button_d5f3cd {
-  align-self: center;
-  flex: 1 0 auto;
-  line-height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.button_d5f3cd.buttonSize_d5f3cd {
-  height: 40px;
 }
 .guildIconExpired_d5f3cd {
   background-color: var(--background-base-lower);
@@ -94429,4 +94419,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b0eea56dffa3f8be.css.map*/
+/*# sourceMappingURL=12633.001a61e1ed719f7c.css.map*/
