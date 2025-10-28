@@ -361,12 +361,7 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  >.<br /><strong>Q: Can I refund Nitro after buying a profile effect?</strong>
-</p>
-<p>
-  A: No. If you’ve purchased a profile effect within <strong>5 days </strong>of
-  your Nitro subscription renewing or becoming a new Nitro member, you will not
-  be eligible to refund that Nitro subscription.
+  >.
 </p>
 <p id="docs-internal-guid-d722d8e3-7fff-6b75-265c-013ad3cd054e">
   <strong

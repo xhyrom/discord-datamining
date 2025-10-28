@@ -491,12 +491,6 @@
     >here</a
   >.
 </p>
-<p><strong>Q: Can I refund Nitro after buying an Avatar Decoration?</strong></p>
-<p>
-  A: No. If you’ve purchased an Avatar Decoration within
-  <strong>5 days </strong>of your Nitro subscription renewing or becoming a new
-  Nitro member, you will not be eligible to refund that Nitro subscription.
-</p>
 <p><strong>Q: How often do you add new decorations? </strong></p>
 <p>
   A: We don’t have specific details related to when new decorations become
