@@ -6509,6 +6509,16 @@
             "promotion_reward_redemption_attempted"),
           (r.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED =
             "game_server_hosting_third_party_consent_accepted"),
+          (r.GAME_SERVER_GAME_SELECT_OPENED = "game_server_game_select_opened"),
+          (r.GAME_SERVER_GAME_CLICKED = "game_server_game_clicked"),
+          (r.GAME_SERVER_SETTINGS_OPENED = "game_server_settings_opened"),
+          (r.GAME_SERVER_SKU_SELECTED = "game_server_sku_selected"),
+          (r.GAME_SERVER_JOIN_CLICKED = "game_server_join_clicked"),
+          (r.GAME_SERVER_COPY_IP_CLICKED = "game_server_copy_ip_clicked"),
+          (r.GAME_SERVER_VIEW_GAME_PANEL_CLICKED =
+            "game_server_view_game_panel_clicked"),
+          (r.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
+            "impression_game_servers_tab_viewed"),
           (r.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           (r.DEBUG_MISSING_STRING = "debug_missing_string"),
           (r.ORB_BALANCE_ACTION_SHEET_ACTION =
@@ -6744,7 +6754,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-27-bc4b848eb4c64236d519726b730aba6985403f1f-discord_web",
+              "2025-10-28-14c57ed22ff1d7b9b95fc9149ee7ddf3d3bf8bf6-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6810,8 +6820,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "461838"),
-            o.YA("builtAt", String("1761549517411"));
+            o.YA("buildNumber", "462316"),
+            o.YA("builtAt", String("1761635941100"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48577,4 +48587,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.d23bc5c79c6a039a.js.map
+//# sourceMappingURL=sentry.76ba882d50129b48.js.map
