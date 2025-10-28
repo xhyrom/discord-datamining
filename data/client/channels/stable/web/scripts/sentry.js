@@ -3500,6 +3500,7 @@
             ENTITLEMENTS_FOR_APPLICATION: (t) =>
               "/users/@me/applications/".concat(t, "/entitlements"),
             ENTITLEMENTS_FOR_USER: "/users/@me/entitlements",
+            USER_MEANINGFULLY_ONLINE: "/users/@me/meaningfully-online",
             ENTITLEMENT_TICKET: (t) =>
               "/users/@me/applications/".concat(t, "/entitlement-ticket"),
             APPLICATION_TICKET: (t) =>
@@ -4110,6 +4111,13 @@
             VOICE_FILTERS_CATALOG: "/voice-filters/catalog",
             APEX_EXPERIMENTS_METADATA: "/apex/experiments/metadata",
             APEX_EXPERIMENTS: "/apex/experiments",
+            CONFERENCE_MODE_GUILDS: "/conference-mode/guilds",
+            CONFERENCE_MODE_VOICE_CHANNELS: (t) =>
+              "/conference-mode/".concat(t, "/channels"),
+            CONFERENCE_MODE_VOICE_CHANNEL: (t) =>
+              "/conference-mode/channels/".concat(t),
+            CONFERENCE_MODE_VOICE_CHANNEL_USERS: (t) =>
+              "/conference-mode/channels/".concat(t, "/users"),
             GUILD_MIGRATE_PIN_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-pin-permission"),
             GET_APPLICATION_TOKENS: (t) =>
@@ -4352,6 +4360,7 @@
             QUEST_PREVIEW: (t) => "/quest-preview/".concat(t),
             QUEST_PREVIEW_TOOL_2: (t) =>
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
+            ICYMI: "/icymi",
           });
         (0, E.Ft)(N),
           (0, E.Ft)(A, [":", "?", "@"]),
@@ -4846,6 +4855,7 @@
           (r.APP_NOTICE_VIEWED = "app_notice_viewed"),
           (r.APP_NOTICE_CLOSED = "app_notice_closed"),
           (r.APP_NOTICE_PRIMARY_CTA_OPENED = "app_notice_primary_cta_opened"),
+          (r.APP_NOTICE_ANCHOR_CLICKED = "app_notice_anchor_clicked"),
           (r.VIDEO_LAYOUT_TOGGLED = "video_layout_toggled"),
           (r.VIDEO_INPUT_TOGGLED = "video_input_toggled"),
           (r.AUTHORIZED_APP_CONNECTED = "authorized_app_connected"),
@@ -5131,6 +5141,8 @@
           (r.QUEST_HOME_SORT_METHOD_CHANGED = "quest_home_sort_method_changed"),
           (r.QUEST_HOME_FILTERS_CHANGED = "quest_home_filters_changed"),
           (r.QUEST_GAME_SHEET_ERROR = "quest_game_sheet_error"),
+          (r.QUEST_HOME_ONBOARDING_POPOVER_RENDERED =
+            "quest_home_onboarding_popover_rendered"),
           (r.QUEST_VIDEO_APP_FOCUSED = "quest_video_app_focused"),
           (r.QUEST_VIDEO_APP_UNFOCUSED = "quest_video_app_unfocused"),
           (r.QUEST_VIDEO_BUFFERING_ENDED = "quest_video_buffering_ended"),
@@ -6497,11 +6509,22 @@
             "promotion_reward_redemption_attempted"),
           (r.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED =
             "game_server_hosting_third_party_consent_accepted"),
+          (r.GAME_SERVER_GAME_SELECT_OPENED = "game_server_game_select_opened"),
+          (r.GAME_SERVER_GAME_CLICKED = "game_server_game_clicked"),
+          (r.GAME_SERVER_SETTINGS_OPENED = "game_server_settings_opened"),
+          (r.GAME_SERVER_SKU_SELECTED = "game_server_sku_selected"),
+          (r.GAME_SERVER_JOIN_CLICKED = "game_server_join_clicked"),
+          (r.GAME_SERVER_COPY_IP_CLICKED = "game_server_copy_ip_clicked"),
+          (r.GAME_SERVER_VIEW_GAME_PANEL_CLICKED =
+            "game_server_view_game_panel_clicked"),
+          (r.IMPRESSION_GAME_SERVERS_TAB_VIEWED =
+            "impression_game_servers_tab_viewed"),
           (r.MEDIA_PICKER_ASSETS_DEBUG = "media_picker_assets_debug"),
           (r.DEBUG_MISSING_STRING = "debug_missing_string"),
           (r.ORB_BALANCE_ACTION_SHEET_ACTION =
             "orb_balance_action_sheet_action"),
           (r.SESSION_START_PAGE_VIEWED = "session_start_page_viewed"),
+          (r.LOW_PERFORMANCE_MODE_OPT_OUT = "low_performance_mode_opt_out"),
           r);
         Object.freeze({
           STORAGE_MANIFEST: (t, e) =>
@@ -6731,7 +6754,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-17-e97e9b1f4ab6ffe3622e6377a0f9ad936f542b0a-discord_web",
+              "2025-10-28-14c57ed22ff1d7b9b95fc9149ee7ddf3d3bf8bf6-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6797,8 +6820,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "459631"),
-            o.YA("builtAt", String("1760777543931"));
+            o.YA("buildNumber", "462316"),
+            o.YA("builtAt", String("1761635941100"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48564,4 +48587,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.dfb37cfa37d1edbe.js.map
+//# sourceMappingURL=sentry.76ba882d50129b48.js.map
