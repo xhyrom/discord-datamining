@@ -19044,6 +19044,13 @@ span.clanTag__5d473 {
 .deauthorizeButton__50a54 {
   flex-shrink: 0;
 }
+.headingCard__50a54 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-40);
+  padding: var(--space-20);
+}
 .marginReset_fd297e {
   margin-bottom: 0;
   margin-top: 0;
@@ -64773,8 +64780,8 @@ div.nagbar_d74ef8 {
 .changePasswordButton__2666b {
   margin-bottom: 28px;
 }
-.accountWarningBodyText__2666b {
-  margin-bottom: 16px;
+.inlineNoticeText__2666b {
+  margin-bottom: var(--space-8);
 }
 .backupCode__2666b {
   display: inline-block;
@@ -65128,6 +65135,9 @@ div.nagbar_d74ef8 {
   flex: 1;
   flex-direction: column;
   gap: 2px;
+}
+.privacyTermsCard__6de8b {
+  padding: var(--space-20);
 }
 .container_a1d343 {
   align-items: center;
@@ -71411,12 +71421,19 @@ html .invoiceCancelRow__968a4 {
   margin-bottom: 0.5rem;
 }
 @media (max-width: 900px) {
-  .noticeIcon__8ab7e {
+  .noticeImage__8ab7e {
     display: none;
   }
 }
 .sectionLabel__8ab7e:only-child {
   display: none;
+}
+.noticeCard__8ab7e {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
+  justify-content: space-between;
+  padding: var(--space-20);
 }
 .systemServiceContainer_b4186f {
   align-items: center;
@@ -72043,6 +72060,13 @@ html .invoiceCancelRow__968a4 {
   padding: 0 4px;
   -webkit-margin-end: 8px;
   margin-inline-end: 8px;
+}
+.krispCard_fb7bea {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-16);
+  padding: var(--space-20);
 }
 .sensitivity_ac7648 {
   min-height: 136px;
@@ -94405,4 +94429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.1102148fd6b4f044.css.map*/
+/*# sourceMappingURL=12633.e4cf9046113d3ee3.css.map*/
