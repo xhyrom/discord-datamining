@@ -26763,28 +26763,38 @@ body .headerAnimation_b54a5b {
   margin: var(--space-16) 0;
   padding: 0 4px;
 }
-.addressElementContainer_ceece4 {
+.addressElementContainer_ceece4,
+.loadingContainer_ceece4 {
   flex-direction: column;
 }
 .loadingContainer_ceece4 {
-  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  margin: var(--space-16) 0;
+  min-height: 240px;
 }
 .visible_ceece4 {
   transform: translateX(0);
 }
 .full-motion .visible_ceece4 {
-  transition: transform 0.4s ease-out;
+  transition: transform 0.2s ease-out;
+}
+.rightToLeftEntry_ceece4 {
+  transform: translateX(100%);
+}
+.leftToRightEntry_ceece4 {
+  transform: translateX(-100%);
 }
 .hidden_ceece4 {
   height: 0;
-  transform: translateX(-100%);
   visibility: hidden;
 }
 .full-motion .hidden_ceece4 {
-  transition: transform 0.4s ease-out;
+  transition: transform 0.2s ease-out;
 }
-.cardElementContainer_ceece4.visible_ceece4 {
-  min-height: auto;
+.cardElementContainer_ceece4.visible_ceece4,
+.defaultPaymentElementContainer_ceece4.visible_ceece4 {
+  min-height: 240px;
 }
 .customPaymentElementContainer_ceece4.visible_ceece4 {
   min-height: 160px;
@@ -94419,4 +94429,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.001a61e1ed719f7c.css.map*/
+/*# sourceMappingURL=12633.f39e799dc79837aa.css.map*/
