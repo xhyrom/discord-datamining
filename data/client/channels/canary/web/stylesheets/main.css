@@ -51768,57 +51768,6 @@ html .progress__61462 {
 .closeIcon_cacd02:active {
   color: var(--interactive-active);
 }
-.loadingWrapper__5a143 {
-  align-items: center;
-  border-radius: 2px;
-  display: flex;
-  flex-direction: row;
-  height: 16px;
-  justify-content: center;
-  margin: 2px 0;
-  padding: 8px 4px;
-}
-.flexRow_a9fc04 {
-  flex-direction: row;
-  gap: 8px;
-}
-.flexRow_a9fc04,
-.title_a9fc04 {
-  align-items: center;
-  display: flex;
-}
-.title_a9fc04 {
-  padding-top: 12px;
-  -webkit-padding-start: 4px;
-  padding-bottom: 8px;
-  padding-inline-start: 4px;
-}
-.appIcon_a9fc04 {
-  --custom-icon-size: 32px;
-  border-radius: 25%;
-  flex-shrink: 0;
-}
-.appIcon_a9fc04,
-.icon_a9fc04 {
-  height: var(--custom-icon-size);
-  width: var(--custom-icon-size);
-}
-.icon_a9fc04 {
-  --custom-icon-size: 24px;
-}
-.name_a9fc04 {
-  color: var(--header-primary);
-  font-weight: var(--font-weight-semibold);
-  text-transform: capitalize;
-}
-.name_a9fc04.focused_a9fc04 {
-  color: var(--white);
-}
-.description_a9fc04 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 @use postcss-pxtorem;
 .theme-dark.custom-theme-background .embedFull__623de {
   --__spoiler-background-color--hidden: var(--primary-760);
@@ -52591,52 +52540,6 @@ html .progress__61462 {
 }
 .embedIFrame__49997:hover {
   opacity: 1;
-}
-.hoverButtonGroup__06ab4.forceShowHover__06ab4,
-.hoverButtonGroup__06ab4:hover,
-.keyboard-mode .hoverButtonGroup__06ab4:focus-within,
-:hover + .hoverButtonGroup__06ab4 {
-  opacity: 1;
-}
-.hoverButton__06ab4 {
-  color: var(--interactive-normal);
-  cursor: pointer;
-  display: flex;
-  padding: 6px;
-}
-.hoverButton__06ab4.selected__06ab4,
-.hoverButton__06ab4:hover,
-.keyboard-mode .hoverButton__06ab4:focus {
-  background-color: var(--background-modifier-hover);
-  color: var(--interactive-hover);
-}
-.hoverButton__06ab4:active {
-  background-color: var(--background-modifier-active);
-  color: var(--interactive-active);
-}
-.hoverButtonGroup__06ab4 {
-  background-color: var(--background-base-low);
-  border-radius: 5px;
-  display: flex;
-  inset-inline-end: 4px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 4px;
-  z-index: 2;
-}
-.nonMediaMosaicItem__06ab4 {
-  inset-inline-end: -8px;
-  outline: 1px solid var(--background-base-lower);
-  top: -8px;
-}
-.sizer__06ab4 {
-  height: 0;
-  inset-inline-start: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 .container__7473d {
   background: var(--background-mod-subtle);
@@ -54229,6 +54132,51 @@ html .progress__61462 {
 .enable-forced-colors .removeMosaicItemButton__6c706:focus,
 .enable-forced-colors .removeMosaicItemButton__6c706:hover {
   border-color: ButtonText;
+}
+.hoverButtonGroup__06ab4:hover,
+.keyboard-mode .hoverButtonGroup__06ab4:focus-within,
+:hover + .hoverButtonGroup__06ab4 {
+  opacity: 1;
+}
+.hoverButton__06ab4 {
+  color: var(--interactive-normal);
+  cursor: pointer;
+  display: flex;
+  padding: 6px;
+}
+.hoverButton__06ab4.selected__06ab4,
+.hoverButton__06ab4:hover,
+.keyboard-mode .hoverButton__06ab4:focus {
+  background-color: var(--background-modifier-hover);
+  color: var(--interactive-hover);
+}
+.hoverButton__06ab4:active {
+  background-color: var(--background-modifier-active);
+  color: var(--interactive-active);
+}
+.hoverButtonGroup__06ab4 {
+  background-color: var(--background-base-low);
+  border-radius: 5px;
+  display: flex;
+  inset-inline-end: 4px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  z-index: 2;
+}
+.nonMediaMosaicItem__06ab4 {
+  inset-inline-end: -8px;
+  outline: 1px solid var(--background-base-lower);
+  top: -8px;
+}
+.sizer__06ab4 {
+  height: 0;
+  inset-inline-start: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .fileDisplayContainer__55ed7 {
   width: -webkit-min-content;
@@ -94891,4 +94839,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.fb3b203ad53a986e.css.map*/
+/*# sourceMappingURL=12633.7677da66cd32d173.css.map*/
