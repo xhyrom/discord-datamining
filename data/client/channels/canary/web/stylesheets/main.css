@@ -36338,22 +36338,6 @@ body .headerAnimation_b54a5b {
   box-shadow: none;
   inset-inline-start: 10px;
 }
-.cardContainer__47729 {
-  align-items: center;
-  background-position: 50%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-.cardContainer__47729,
-.skuImage__47729 {
-  border-radius: var(--radius-md);
-}
-.skuImage__47729 {
-  max-width: 100%;
-  object-fit: contain;
-  width: 100%;
-}
 .profileEffectContainer_a84142 {
   border-radius: var(--radius-sm);
   height: 296px;
@@ -36491,6 +36475,22 @@ body .headerAnimation_b54a5b {
   gap: 8px;
   margin-bottom: 8px;
 }
+.cardContainer__47729 {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.cardContainer__47729,
+.skuImage__47729 {
+  border-radius: var(--radius-xs);
+}
+.skuImage__47729 {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
 .invoiceTable__25766 {
   margin-bottom: 16px;
 }
@@ -36557,10 +36557,7 @@ body .headerAnimation_b54a5b {
   align-self: center;
 }
 .socialLayerGameItemDisclaimer_b44961 {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-  margin: -8px 0 8px;
+  margin-top: 8px;
 }
 .back_e125f1 {
   min-width: auto;
@@ -94893,4 +94890,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.5f3ca73daf832c5c.css.map*/
+/*# sourceMappingURL=12633.b35f063e0025383e.css.map*/
