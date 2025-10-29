@@ -3197,8 +3197,13 @@
             AGE_VERIFICATION_METHODS: "/age-verification/methods",
             EXPERIMENTS: "/experiments",
             LOGIN: "/auth/login",
+            LOGIN_GENERATED_USER: (t) =>
+              "/auth/login/generated-user/".concat(t),
+            GENERATED_POOLS_FOR_CURRENT_USER: "/generated-pools/@me",
+            GENERATED_POOL_BY_ID: (t) => "/generated-pools/".concat(t),
             LOGIN_MFA: (t) => "/auth/mfa/".concat(t),
             LOGIN_SMS_SEND: "/auth/mfa/sms/send",
+            ONE_TIME_LOGIN: "/auth/one-time-login",
             REMOTE_AUTH_INITIALIZE: "/users/@me/remote-auth",
             REMOTE_AUTH_CANCEL: "/users/@me/remote-auth/cancel",
             REMOTE_AUTH_LOGIN: "/users/@me/remote-auth/login",
@@ -6754,7 +6759,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-28-14c57ed22ff1d7b9b95fc9149ee7ddf3d3bf8bf6-discord_web",
+              "2025-10-29-139ebf6928e8f6b9c5b2648eb7ebc712c2b29ea0-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6820,8 +6825,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "462316"),
-            o.YA("builtAt", String("1761635941100"));
+            o.YA("buildNumber", "462822"),
+            o.YA("builtAt", String("1761722326030"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -22614,6 +22619,7 @@
             (r[(r.REPORT_TO_MOD_CLOSED_REPORT = 62)] =
               "REPORT_TO_MOD_CLOSED_REPORT"),
             (r[(r.EMOJI_ADDED = 63)] = "EMOJI_ADDED"),
+            (r[(r.PREMIUM_GROUP_INVITE = 64)] = "PREMIUM_GROUP_INVITE"),
             r);
       },
       314877: function () {},
@@ -48587,4 +48593,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.76ba882d50129b48.js.map
+//# sourceMappingURL=sentry.07de01e638b0c0ca.js.map
