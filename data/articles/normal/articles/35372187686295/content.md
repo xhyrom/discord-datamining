@@ -77,8 +77,8 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 608/338; width: 100%"
     class="wysiwyg-image-resized"
+    style="aspect-ratio: 608/338; width: 100%"
     src="https://support.discord.com/hc/article_attachments/35626145809687"
     width="608"
     height="338"
@@ -155,11 +155,10 @@
 <p>5. Press the <strong>Jump In</strong> button to begin.</p>
 <p class="wysiwyg-text-align-center">
   <img
-    style="aspect-ratio: 624/463; width: 100%"
-    class="wysiwyg-image-resized"
-    src="https://support.discord.com/hc/article_attachments/35626145811223"
-    width="624"
-    height="463"
+    src="https://support.discord.com/hc/article_attachments/35968131131671"
+    alt="image2.gif"
+    width="800"
+    height="593"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01K7HW90TDQQAWD0D6C1AM3HK4">
@@ -258,8 +257,8 @@
 </p>
 <p>
   <strong
-    >Q: What should I do if the game doesn't start after pressing "Let’s
-    Go”?</strong
+    >Q: What should I do if the game doesn't start after pressing "Jump
+    In”?</strong
   >
 </p>
 <p>
