@@ -48767,9 +48767,9 @@ h3.improved__1689b:after {
 }
 .message_fcf29c {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -94890,4 +94890,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b35f063e0025383e.css.map*/
+/*# sourceMappingURL=12633.681fdea5d7459d89.css.map*/
