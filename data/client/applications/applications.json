@@ -2737,19 +2737,19 @@
               "distributor": "xbox"
             },
             {
-              "id": "45364",
-              "sku": "45364",
-              "distributor": "gop"
-            },
-            {
               "id": "EXPDGL0000000000",
               "sku": "EXPDGL0000000000",
               "distributor": "playstation"
             },
             {
-              "id": "Fortnite",
-              "sku": "Fortnite",
-              "distributor": "epic"
+              "id": "45364",
+              "sku": "45364",
+              "distributor": "gop"
+            },
+            {
+              "id": "BT5P2X999VH2",
+              "sku": "BT5P2X999VH2",
+              "distributor": "xbox"
             },
             {
               "id": "9MW1TQ8MNZ1G",
@@ -2757,9 +2757,9 @@
               "distributor": "xbox"
             },
             {
-              "id": "BT5P2X999VH2",
-              "sku": "BT5P2X999VH2",
-              "distributor": "xbox"
+              "id": "Fortnite",
+              "sku": "Fortnite",
+              "distributor": "epic"
             }
           ],
           "linked_games": [
@@ -2781,17 +2781,17 @@
           "executables": [
             {
               "os": "win32",
-              "name": "fortniteclient-win64-shipping.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
               "name": "fortniteclient-win64-shipping_eac_eos.exe",
               "is_launcher": true
             },
             {
               "os": "darwin",
               "name": "fortniteclient-mac-shipping.app",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "fortniteclient-win64-shipping.exe",
               "is_launcher": false
             }
           ],
@@ -3659,8 +3659,8 @@
     "privacy_policy_url": "https://www.iubenda.com/privacy-policy/11935974",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "469887038"
     },
@@ -3870,8 +3870,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "8"
     },
@@ -3965,9 +3965,9 @@
     "cover_image": "82de497fdfbbf96f9378b7af0282d5ea",
     "third_party_skus": [
       {
-        "id": "294041",
-        "sku": "294041",
-        "distributor": "igdb"
+        "id": "CUSA55048_00",
+        "sku": "CUSA55048_00",
+        "distributor": "playstation"
       },
       {
         "id": "117995",
@@ -3975,19 +3975,14 @@
         "distributor": "gop"
       },
       {
-        "id": "CUSA55048_00",
-        "sku": "CUSA55048_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "PPSA21669_00",
         "sku": "PPSA21669_00",
         "distributor": "playstation"
       },
       {
-        "id": "9N8PMW7QMD3D",
-        "sku": "9N8PMW7QMD3D",
-        "distributor": "xbox"
+        "id": "38E211CED4E448A5A653A8D1E13FEF18",
+        "sku": "38E211CED4E448A5A653A8D1E13FEF18",
+        "distributor": "epic"
       },
       {
         "id": "2767030",
@@ -3995,9 +3990,14 @@
         "distributor": "steam"
       },
       {
-        "id": "38E211CED4E448A5A653A8D1E13FEF18",
-        "sku": "38E211CED4E448A5A653A8D1E13FEF18",
-        "distributor": "epic"
+        "id": "9N8PMW7QMD3D",
+        "sku": "9N8PMW7QMD3D",
+        "distributor": "xbox"
+      },
+      {
+        "id": "294041",
+        "sku": "294041",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -4080,7 +4080,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/marvel-win64-shipping.exe",
+        "name": "marvelrivals/marvelrivals_launcher.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/marvel-win64-test.exe",
         "is_launcher": false
       },
       {
@@ -4090,12 +4095,7 @@
       },
       {
         "os": "win32",
-        "name": "marvelrivals/marvelrivals_launcher.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/marvel-win64-test.exe",
+        "name": "win64/marvel-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -4122,14 +4122,14 @@
     "splash": "e970e33dd647f87dc87f4dc4b28f4627",
     "third_party_skus": [
       {
-        "id": "26219",
-        "sku": "26219",
-        "distributor": "gop"
-      },
-      {
         "id": "BQ1TN1T79V9K",
         "sku": "BQ1TN1T79V9K",
         "distributor": "xbox"
+      },
+      {
+        "id": "26219",
+        "sku": "26219",
+        "distributor": "gop"
       },
       {
         "id": "CUSA06122_00",
@@ -4145,13 +4145,13 @@
     "guild_id": "150074202727251969",
     "executables": [
       {
-        "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "os": "darwin",
+        "name": "roblox.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "roblox.app",
+        "os": "win32",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
@@ -4180,16 +4180,6 @@
     "cover_image": "843079ce9ee0b8f67c198747cdbcb96a",
     "third_party_skus": [
       {
-        "id": "CBD5B3D310A54B12BF3FE8C41994174F",
-        "sku": "CBD5B3D310A54B12BF3FE8C41994174F",
-        "distributor": "epic"
-      },
-      {
-        "id": "74256",
-        "sku": "74256",
-        "distributor": "gop"
-      },
-      {
         "id": "9N1NLJK9SKRN",
         "sku": "9N1NLJK9SKRN",
         "distributor": "xbox"
@@ -4198,6 +4188,16 @@
         "id": "PPSA20676_00",
         "sku": "PPSA20676_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "74256",
+        "sku": "74256",
+        "distributor": "gop"
+      },
+      {
+        "id": "CBD5B3D310A54B12BF3FE8C41994174F",
+        "sku": "CBD5B3D310A54B12BF3FE8C41994174F",
+        "distributor": "epic"
       }
     ],
     "overlay": true,
@@ -4291,7 +4291,7 @@
           "executables": [
             {
               "os": "darwin",
-              "name": "leagueoflegends.app",
+              "name": "lollauncher.app",
               "is_launcher": false
             },
             {
@@ -4300,19 +4300,19 @@
               "is_launcher": false
             },
             {
+              "os": "win32",
+              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+              "is_launcher": false
+            },
+            {
               "os": "darwin",
-              "name": "lollauncher.app",
+              "name": "leagueoflegends.app",
               "is_launcher": false
             },
             {
               "os": "win32",
               "name": "leagueclientux.exe",
               "is_launcher": true
-            },
-            {
-              "os": "win32",
-              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-              "is_launcher": false
             },
             {
               "os": "win32",
@@ -4336,11 +4336,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "league of legends.exe",
         "is_launcher": false
@@ -4351,14 +4346,19 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
+        "os": "darwin",
+        "name": "leagueoflegends.app",
+        "is_launcher": false
       },
       {
         "os": "win32",
         "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -4393,8 +4393,13 @@
         "distributor": "xbox"
       },
       {
-        "id": "PPSA17221_00",
-        "sku": "PPSA17221_00",
+        "id": "17535",
+        "sku": "17535",
+        "distributor": "gop"
+      },
+      {
+        "id": "CUSA00744_00",
+        "sku": "CUSA00744_00",
         "distributor": "playstation"
       },
       {
@@ -4403,14 +4408,9 @@
         "distributor": "microsoft"
       },
       {
-        "id": "CUSA00744_00",
-        "sku": "CUSA00744_00",
+        "id": "PPSA17221_00",
+        "sku": "PPSA17221_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "17535",
-        "sku": "17535",
-        "distributor": "gop"
       }
     ],
     "bot": {
@@ -4478,12 +4478,12 @@
             },
             {
               "os": "win32",
-              "name": "content/minecraft.exe",
+              "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+              "name": "content/minecraft.exe",
               "is_launcher": false
             },
             {
@@ -4521,12 +4521,12 @@
       },
       {
         "os": "win32",
-        "name": "content/minecraft.exe",
+        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "minecraft/runtime/jre-x64/1.8.0_25/bin/javaw.exe",
+        "name": "content/minecraft.exe",
         "is_launcher": false
       },
       {
@@ -4619,14 +4619,14 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "9NM62SDWFBBG",
-        "sku": "9NM62SDWFBBG",
-        "distributor": "xbox"
+        "id": "EXPDGL0000000000",
+        "sku": "EXPDGL0000000000",
+        "distributor": "playstation"
       },
       {
-        "id": "PPSA01922_00",
-        "sku": "PPSA01922_00",
-        "distributor": "playstation"
+        "id": "BT5P2X999VH2",
+        "sku": "BT5P2X999VH2",
+        "distributor": "xbox"
       },
       {
         "id": "9N84B8L89PDW",
@@ -4634,19 +4634,19 @@
         "distributor": "xbox"
       },
       {
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
+      },
+      {
         "id": "45364",
         "sku": "45364",
         "distributor": "gop"
       },
       {
-        "id": "EXPDGL0000000000",
-        "sku": "EXPDGL0000000000",
+        "id": "PPSA01922_00",
+        "sku": "PPSA01922_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
       },
       {
         "id": "9MW1TQ8MNZ1G",
@@ -4654,8 +4654,8 @@
         "distributor": "xbox"
       },
       {
-        "id": "BT5P2X999VH2",
-        "sku": "BT5P2X999VH2",
+        "id": "9NM62SDWFBBG",
+        "sku": "9NM62SDWFBBG",
         "distributor": "xbox"
       }
     ],
@@ -4757,8 +4757,8 @@
           "guild_id": "322850917248663552",
           "executables": [
             {
-              "os": "win32",
-              "name": "fortniteclient-win64-shipping.exe",
+              "os": "darwin",
+              "name": "fortniteclient-mac-shipping.app",
               "is_launcher": false
             },
             {
@@ -4767,8 +4767,8 @@
               "is_launcher": true
             },
             {
-              "os": "darwin",
-              "name": "fortniteclient-mac-shipping.app",
+              "os": "win32",
+              "name": "fortniteclient-win64-shipping.exe",
               "is_launcher": false
             }
           ],
@@ -4789,8 +4789,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping.exe",
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
         "is_launcher": false
       },
       {
@@ -4799,8 +4799,8 @@
         "is_launcher": true
       },
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -4827,14 +4827,14 @@
     "splash": "6063707ba43224ee22f9de7bf0339aa1",
     "third_party_skus": [
       {
-        "id": "271590",
-        "sku": "271590",
-        "distributor": "steam"
-      },
-      {
         "id": "491748506516717599",
         "sku": "491748506516717599",
         "distributor": "discord"
+      },
+      {
+        "id": "271590",
+        "sku": "271590",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -4878,14 +4878,14 @@
               "distributor": "steam"
             },
             {
-              "id": "271590",
-              "sku": "271590",
-              "distributor": "steam"
-            },
-            {
               "id": "491748506516717599",
               "sku": "491748506516717599",
               "distributor": "discord"
+            },
+            {
+              "id": "271590",
+              "sku": "271590",
+              "distributor": "steam"
             }
           ],
           "linked_games": [
@@ -4905,21 +4905,6 @@
           "executables": [
             {
               "os": "win32",
-              "name": "grand theft auto v/gta5.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "grand theft auto v/ragepluginhook.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "grand theft auto v/gta5_be.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
               "name": "gta5.exe",
               "is_launcher": false
             },
@@ -4930,7 +4915,17 @@
             },
             {
               "os": "win32",
-              "name": "installers/social-club-setup.exe",
+              "name": "grand theft auto v/ragepluginhook.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "lspdfr/lspdfr configurator.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "grand theft auto v/gta5.exe",
               "is_launcher": false
             },
             {
@@ -4940,7 +4935,12 @@
             },
             {
               "os": "win32",
-              "name": "lspdfr/lspdfr configurator.exe",
+              "name": "installers/social-club-setup.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "grand theft auto v/gta5_be.exe",
               "is_launcher": false
             }
           ],
@@ -4963,21 +4963,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "grand theft auto v/gta5.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/ragepluginhook.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "grand theft auto v/gta5_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "gta5.exe",
         "is_launcher": false
       },
@@ -4988,7 +4973,12 @@
       },
       {
         "os": "win32",
-        "name": "installers/social-club-setup.exe",
+        "name": "grand theft auto v/ragepluginhook.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "lspdfr/lspdfr configurator.exe",
         "is_launcher": false
       },
       {
@@ -4998,7 +4988,17 @@
       },
       {
         "os": "win32",
-        "name": "lspdfr/lspdfr configurator.exe",
+        "name": "grand theft auto v/gta5.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "installers/social-club-setup.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "grand theft auto v/gta5_be.exe",
         "is_launcher": false
       }
     ],
@@ -5024,14 +5024,14 @@
     "splash": "ac088243bc713c37297073d7d12c453a",
     "third_party_skus": [
       {
-        "id": "PPSA07805_00",
-        "sku": "PPSA07805_00",
-        "distributor": "playstation"
+        "id": "Pro",
+        "sku": "Pro",
+        "distributor": "battlenet"
       },
       {
-        "id": "74592",
-        "sku": "74592",
-        "distributor": "gop"
+        "id": "9MXTMG78TH08",
+        "sku": "9MXTMG78TH08",
+        "distributor": "xbox"
       },
       {
         "id": "C1C4DZJPBC2V",
@@ -5044,24 +5044,24 @@
         "distributor": "igdb"
       },
       {
-        "id": "2357570",
-        "sku": "2357570",
-        "distributor": "steam"
-      },
-      {
-        "id": "9MXTMG78TH08",
-        "sku": "9MXTMG78TH08",
-        "distributor": "xbox"
-      },
-      {
-        "id": "Pro",
-        "sku": "Pro",
-        "distributor": "battlenet"
-      },
-      {
         "id": "CUSA01842_00",
         "sku": "CUSA01842_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "74592",
+        "sku": "74592",
+        "distributor": "gop"
+      },
+      {
+        "id": "PPSA07805_00",
+        "sku": "PPSA07805_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "2357570",
+        "sku": "2357570",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -5112,8 +5112,8 @@
     "guild_id": "74287487459004416",
     "executables": [
       {
-        "os": "win32",
-        "name": "dota2.exe",
+        "os": "darwin",
+        "name": "osx64/dota2.app",
         "is_launcher": false
       },
       {
@@ -5122,8 +5122,8 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "osx64/dota2.app",
+        "os": "win32",
+        "name": "dota2.exe",
         "is_launcher": false
       }
     ],
@@ -5148,14 +5148,14 @@
     "splash": "39a82b92cc95af7a11d024fec8540d28",
     "third_party_skus": [
       {
-        "id": "252950",
-        "sku": "252950",
-        "distributor": "steam"
-      },
-      {
         "id": "24881",
         "sku": "24881",
         "distributor": "gop"
+      },
+      {
+        "id": "252950",
+        "sku": "252950",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -5248,17 +5248,17 @@
           "executables": [
             {
               "os": "win32",
-              "name": "mp23/mp23-cod.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
               "name": "sp23/sp23-cod.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
               "name": "cod23/cod23-cod.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "mp23/mp23-cod.exe",
               "is_launcher": false
             }
           ],
@@ -5280,17 +5280,17 @@
     "executables": [
       {
         "os": "win32",
-        "name": "mp23/mp23-cod.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "sp23/sp23-cod.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "cod23/cod23-cod.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "mp23/mp23-cod.exe",
         "is_launcher": false
       }
     ],
@@ -5377,12 +5377,7 @@
           "executables": [
             {
               "os": "win32",
-              "name": "win64/tslgame_be.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "win64/tslgame_uc.exe",
+              "name": "tslgame_be.exe",
               "is_launcher": false
             },
             {
@@ -5392,12 +5387,17 @@
             },
             {
               "os": "win32",
-              "name": "tslgame_be.exe",
+              "name": "win64/tslgame.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "win64/tslgame.exe",
+              "name": "win64/tslgame_be.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "win64/tslgame_uc.exe",
               "is_launcher": false
             }
           ],
@@ -5420,12 +5420,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/tslgame_be.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/tslgame_uc.exe",
+        "name": "tslgame_be.exe",
         "is_launcher": false
       },
       {
@@ -5435,12 +5430,17 @@
       },
       {
         "os": "win32",
-        "name": "tslgame_be.exe",
+        "name": "win64/tslgame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/tslgame.exe",
+        "name": "win64/tslgame_be.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/tslgame_uc.exe",
         "is_launcher": false
       }
     ],
@@ -5465,19 +5465,34 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
+        "id": "9P6DMVVMSS2F",
+        "sku": "9P6DMVVMSS2F",
+        "distributor": "xbox"
+      },
+      {
+        "id": "1440320",
+        "sku": "1440320",
+        "distributor": "steam"
+      },
+      {
         "id": "9P9M6L1P16W3",
         "sku": "9P9M6L1P16W3",
         "distributor": "xbox"
       },
       {
-        "id": "9PD9BM3MTC61",
-        "sku": "9PD9BM3MTC61",
+        "id": "9PFN4VVXQHNP",
+        "sku": "9PFN4VVXQHNP",
         "distributor": "xbox"
       },
       {
-        "id": "69996",
-        "sku": "69996",
-        "distributor": "gop"
+        "id": "9PFL8Z0XTMHS",
+        "sku": "9PFL8Z0XTMHS",
+        "distributor": "xbox"
+      },
+      {
+        "id": "PPSA04873_00",
+        "sku": "PPSA04873_00",
+        "distributor": "playstation"
       },
       {
         "id": "1623570",
@@ -5485,19 +5500,9 @@
         "distributor": "steam"
       },
       {
-        "id": "9P4SD2QGT1LH",
-        "sku": "9P4SD2QGT1LH",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9P6DMVVMSS2F",
-        "sku": "9P6DMVVMSS2F",
-        "distributor": "xbox"
-      },
-      {
-        "id": "1623571",
-        "sku": "1623571",
-        "distributor": "steam"
+        "id": "69996",
+        "sku": "69996",
+        "distributor": "gop"
       },
       {
         "id": "",
@@ -5510,28 +5515,8 @@
         "distributor": "xbox"
       },
       {
-        "id": "CUSA12540_00",
-        "sku": "CUSA12540_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "9PFL8Z0XTMHS",
-        "sku": "9PFL8Z0XTMHS",
-        "distributor": "xbox"
-      },
-      {
-        "id": "1440320",
-        "sku": "1440320",
-        "distributor": "steam"
-      },
-      {
-        "id": "1172470",
-        "sku": "1172470",
-        "distributor": "steam"
-      },
-      {
-        "id": "9PFN4VVXQHNP",
-        "sku": "9PFN4VVXQHNP",
+        "id": "9PD9BM3MTC61",
+        "sku": "9PD9BM3MTC61",
         "distributor": "xbox"
       },
       {
@@ -5540,9 +5525,24 @@
         "distributor": "epic"
       },
       {
-        "id": "PPSA04873_00",
-        "sku": "PPSA04873_00",
+        "id": "1623571",
+        "sku": "1623571",
+        "distributor": "steam"
+      },
+      {
+        "id": "CUSA12540_00",
+        "sku": "CUSA12540_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "1172470",
+        "sku": "1172470",
+        "distributor": "steam"
+      },
+      {
+        "id": "9P4SD2QGT1LH",
+        "sku": "9P4SD2QGT1LH",
+        "distributor": "xbox"
       }
     ],
     "hook": true,
@@ -5553,22 +5553,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "apex legends/r5apex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "apex/r5apex_dx12.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "r5apex_dx12.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "apex/r5apex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex legends/r5apex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "apex/r5apex_dx12.exe",
         "is_launcher": false
       }
     ],
@@ -5591,9 +5591,9 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "71813",
-        "sku": "71813",
-        "distributor": "gop"
+        "id": "879B0D8776AB46A59A129983BA78F0CE",
+        "sku": "879B0D8776AB46A59A129983BA78F0CE",
+        "distributor": "epic"
       },
       {
         "id": "PPSA02562_00",
@@ -5601,9 +5601,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "879B0D8776AB46A59A129983BA78F0CE",
-        "sku": "879B0D8776AB46A59A129983BA78F0CE",
-        "distributor": "epic"
+        "id": "71813",
+        "sku": "71813",
+        "distributor": "gop"
       },
       {
         "id": "9N7TFFRRZCC9",
@@ -5642,23 +5642,8 @@
     "cover_image": "10c2569d4fa18acdcbe72f69d7aae481",
     "third_party_skus": [
       {
-        "id": "71772",
-        "sku": "71772",
-        "distributor": "gop"
-      },
-      {
-        "id": "1245620",
-        "sku": "1245620",
-        "distributor": "steam"
-      },
-      {
-        "id": "9N3VK2M8W2B9",
-        "sku": "9N3VK2M8W2B9",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9P1C6N09NFZP",
-        "sku": "9P1C6N09NFZP",
+        "id": "9P3J32CTXLRZ",
+        "sku": "9P3J32CTXLRZ",
         "distributor": "xbox"
       },
       {
@@ -5667,8 +5652,23 @@
         "distributor": "xbox"
       },
       {
-        "id": "9P3J32CTXLRZ",
-        "sku": "9P3J32CTXLRZ",
+        "id": "1245620",
+        "sku": "1245620",
+        "distributor": "steam"
+      },
+      {
+        "id": "9P1C6N09NFZP",
+        "sku": "9P1C6N09NFZP",
+        "distributor": "xbox"
+      },
+      {
+        "id": "71772",
+        "sku": "71772",
+        "distributor": "gop"
+      },
+      {
+        "id": "9N3VK2M8W2B9",
+        "sku": "9N3VK2M8W2B9",
         "distributor": "xbox"
       }
     ],
@@ -5772,39 +5772,19 @@
     "splash": "028fe9a1748d259872a0dfa49eb818f2",
     "third_party_skus": [
       {
-        "id": "CARNATION",
-        "sku": "CARNATION",
-        "distributor": "epic"
-      },
-      {
-        "id": "9N1VMR3CFL3T",
-        "sku": "9N1VMR3CFL3T",
-        "distributor": "xbox"
-      },
-      {
-        "id": "635",
-        "sku": "635",
-        "distributor": "uplay"
-      },
-      {
-        "id": "18215",
-        "sku": "18215",
-        "distributor": "gop"
-      },
-      {
-        "id": "9PBH7HWC5C26",
-        "sku": "9PBH7HWC5C26",
-        "distributor": "xbox"
-      },
-      {
-        "id": "CUSA01800_00",
-        "sku": "CUSA01800_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "PPSA01396_00",
         "sku": "PPSA01396_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "9MSPKPMH7DZ1",
+        "sku": "9MSPKPMH7DZ1",
+        "distributor": "xbox"
+      },
+      {
+        "id": "CARNATION",
+        "sku": "CARNATION",
+        "distributor": "epic"
       },
       {
         "id": "9P131WBLG8L8",
@@ -5817,13 +5797,33 @@
         "distributor": "steam"
       },
       {
-        "id": "9MSPKPMH7DZ1",
-        "sku": "9MSPKPMH7DZ1",
+        "id": "9N1VMR3CFL3T",
+        "sku": "9N1VMR3CFL3T",
         "distributor": "xbox"
+      },
+      {
+        "id": "635",
+        "sku": "635",
+        "distributor": "uplay"
+      },
+      {
+        "id": "CUSA01800_00",
+        "sku": "CUSA01800_00",
+        "distributor": "playstation"
       },
       {
         "id": "9PB3RHWXB9MR",
         "sku": "9PB3RHWXB9MR",
+        "distributor": "xbox"
+      },
+      {
+        "id": "18215",
+        "sku": "18215",
+        "distributor": "gop"
+      },
+      {
+        "id": "9PBH7HWC5C26",
+        "sku": "9PBH7HWC5C26",
         "distributor": "xbox"
       }
     ],
@@ -5843,7 +5843,7 @@
       },
       {
         "os": "win32",
-        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
+        "name": "rainbowsix.exe",
         "is_launcher": false
       },
       {
@@ -5853,12 +5853,12 @@
       },
       {
         "os": "win32",
-        "name": "rainbowsix.exe",
+        "name": "rainbowsixgame.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "rainbowsixgame.exe",
+        "name": "tom clancy's rainbow six siege/rainbowsix.exe",
         "is_launcher": false
       }
     ],
@@ -5887,11 +5887,6 @@
         "distributor": "gop"
       },
       {
-        "id": "2139460",
-        "sku": "2139460",
-        "distributor": "steam"
-      },
-      {
         "id": "9N0QWXC09MPT",
         "sku": "9N0QWXC09MPT",
         "distributor": "xbox"
@@ -5905,6 +5900,11 @@
         "id": "BB2A74164B4C44D19FE2D45CB8A13EDD",
         "sku": "BB2A74164B4C44D19FE2D45CB8A13EDD",
         "distributor": "epic"
+      },
+      {
+        "id": "2139460",
+        "sku": "2139460",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -6069,9 +6069,9 @@
     "splash": "4bf8d6cfe112edc9295cb7e8d93db7a6",
     "third_party_skus": [
       {
-        "id": "2A14CF8A83B149919A2399504E5686A6",
-        "sku": "2A14CF8A83B149919A2399504E5686A6",
-        "distributor": "epic"
+        "id": "3212",
+        "sku": "3212",
+        "distributor": "igdb"
       },
       {
         "id": "21009",
@@ -6079,9 +6079,9 @@
         "distributor": "gop"
       },
       {
-        "id": "3212",
-        "sku": "3212",
-        "distributor": "igdb"
+        "id": "2A14CF8A83B149919A2399504E5686A6",
+        "sku": "2A14CF8A83B149919A2399504E5686A6",
+        "distributor": "epic"
       },
       {
         "id": "1222670",
@@ -6095,16 +6095,6 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "the sims 4.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "ts4_x64.exe",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "ts4_dx9_x64.exe",
         "is_launcher": false
@@ -6112,6 +6102,16 @@
       {
         "os": "win32",
         "name": "ts4.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "the sims 4.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ts4_x64.exe",
         "is_launcher": false
       }
     ],
@@ -6135,6 +6135,11 @@
     "cover_image": "31c2681193b5063d9258e1b015577fdb",
     "third_party_skus": [
       {
+        "id": "PPSA20549_00",
+        "sku": "PPSA20549_00",
+        "distributor": "playstation"
+      },
+      {
         "id": "95327",
         "sku": "95327",
         "distributor": "gop"
@@ -6143,11 +6148,6 @@
         "id": "9N4X0WFZ2STM",
         "sku": "9N4X0WFZ2STM",
         "distributor": "xbox"
-      },
-      {
-        "id": "PPSA20549_00",
-        "sku": "PPSA20549_00",
-        "distributor": "playstation"
       },
       {
         "id": "6827387B744D4A46BD70EA8A145E595B",
@@ -6210,14 +6210,14 @@
         "distributor": "steam"
       },
       {
-        "id": "9N6D60SBZN05",
-        "sku": "9N6D60SBZN05",
-        "distributor": "xbox"
-      },
-      {
         "id": "82590",
         "sku": "82590",
         "distributor": "gop"
+      },
+      {
+        "id": "9N6D60SBZN05",
+        "sku": "9N6D60SBZN05",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -6320,19 +6320,34 @@
     "splash": "04d71799c6c65c202262a7335f039264",
     "third_party_skus": [
       {
-        "id": "BX1DTCBD1HXJ",
-        "sku": "BX1DTCBD1HXJ",
+        "id": "PPSA01950_00",
+        "sku": "PPSA01950_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "9NHFHBBWSCSB",
+        "sku": "9NHFHBBWSCSB",
         "distributor": "xbox"
       },
       {
-        "id": "9P2TWQKMJT3D",
-        "sku": "9P2TWQKMJT3D",
+        "id": "9N5R7PXKG480",
+        "sku": "9N5R7PXKG480",
         "distributor": "xbox"
+      },
+      {
+        "id": "1478150",
+        "sku": "1478150",
+        "distributor": "steam"
       },
       {
         "id": "18851",
         "sku": "18851",
         "distributor": "gop"
+      },
+      {
+        "id": "9P2TWQKMJT3D",
+        "sku": "9P2TWQKMJT3D",
+        "distributor": "xbox"
       },
       {
         "id": "CUSA00224_00",
@@ -6345,23 +6360,8 @@
         "distributor": "steam"
       },
       {
-        "id": "PPSA01950_00",
-        "sku": "PPSA01950_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "1478150",
-        "sku": "1478150",
-        "distributor": "steam"
-      },
-      {
-        "id": "9N5R7PXKG480",
-        "sku": "9N5R7PXKG480",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9NHFHBBWSCSB",
-        "sku": "9NHFHBBWSCSB",
+        "id": "BX1DTCBD1HXJ",
+        "sku": "BX1DTCBD1HXJ",
         "distributor": "xbox"
       }
     ],
@@ -6400,24 +6400,24 @@
         "distributor": "steam"
       },
       {
-        "id": "9N4WFSL71XXZ",
-        "sku": "9N4WFSL71XXZ",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9ND58LQTG09T",
-        "sku": "9ND58LQTG09T",
-        "distributor": "xbox"
-      },
-      {
         "id": "71737",
         "sku": "71737",
         "distributor": "gop"
       },
       {
+        "id": "9N4WFSL71XXZ",
+        "sku": "9N4WFSL71XXZ",
+        "distributor": "xbox"
+      },
+      {
         "id": "PPSA14001_00",
         "sku": "PPSA14001_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "9ND58LQTG09T",
+        "sku": "9ND58LQTG09T",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -6445,13 +6445,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "larilauncher.exe",
-        "is_launcher": true
+        "name": "bin/bg3_dx11.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "bin/bg3_dx11.exe",
-        "is_launcher": false
+        "name": "larilauncher.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -6482,33 +6482,8 @@
     "splash": "edfdddb7a7270c154bcbda5477e2ba59",
     "third_party_skus": [
       {
-        "id": "9PJVJ4WF031H",
-        "sku": "9PJVJ4WF031H",
-        "distributor": "xbox"
-      },
-      {
-        "id": "BRPVTJKWHBR7",
-        "sku": "BRPVTJKWHBR7",
-        "distributor": "xbox"
-      },
-      {
-        "id": "PPSA24616_00",
-        "sku": "PPSA24616_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "CUSA14296_00",
-        "sku": "CUSA14296_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "9NVZHMNWGKF5",
         "sku": "9NVZHMNWGKF5",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9P0LR428JQH9",
-        "sku": "9P0LR428JQH9",
         "distributor": "xbox"
       },
       {
@@ -6517,9 +6492,34 @@
         "distributor": "gop"
       },
       {
+        "id": "CUSA14296_00",
+        "sku": "CUSA14296_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "BRPVTJKWHBR7",
+        "sku": "BRPVTJKWHBR7",
+        "distributor": "xbox"
+      },
+      {
+        "id": "9PJVJ4WF031H",
+        "sku": "9PJVJ4WF031H",
+        "distributor": "xbox"
+      },
+      {
+        "id": "PPSA24616_00",
+        "sku": "PPSA24616_00",
+        "distributor": "playstation"
+      },
+      {
         "id": "252490",
         "sku": "252490",
         "distributor": "steam"
+      },
+      {
+        "id": "9P0LR428JQH9",
+        "sku": "9P0LR428JQH9",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -6578,7 +6578,7 @@
           "executables": [
             {
               "os": "win32",
-              "name": "rustclient.exe",
+              "name": "rust/rustclient.exe",
               "is_launcher": false
             },
             {
@@ -6588,7 +6588,7 @@
             },
             {
               "os": "win32",
-              "name": "rust/rustclient.exe",
+              "name": "rustclient.exe",
               "is_launcher": false
             }
           ],
@@ -6610,7 +6610,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "rustclient.exe",
+        "name": "rust/rustclient.exe",
         "is_launcher": false
       },
       {
@@ -6620,7 +6620,7 @@
       },
       {
         "os": "win32",
-        "name": "rust/rustclient.exe",
+        "name": "rustclient.exe",
         "is_launcher": false
       }
     ],
@@ -6646,13 +6646,13 @@
     "splash": "a04bfb0f10a2a531447e713a9e2443f0",
     "third_party_skus": [
       {
-        "id": null,
-        "sku": null,
+        "id": "WoW",
+        "sku": "WoW",
         "distributor": "battlenet"
       },
       {
-        "id": "WoW",
-        "sku": "WoW",
+        "id": null,
+        "sku": null,
         "distributor": "battlenet"
       }
     ],
@@ -6665,17 +6665,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "_retail_/wow-64.exe",
+        "name": "_beta_/wow-64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "_retail_/wow.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
@@ -6685,17 +6680,22 @@
       },
       {
         "os": "win32",
-        "name": "_beta_/wow.exe",
+        "name": "_retail_/wow-64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "_beta_/wow-64.exe",
+        "name": "_ptr_/wow.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "_ptr_/wow-64.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "_beta_/wow.exe",
         "is_launcher": false
       }
     ],
@@ -6719,11 +6719,6 @@
     "cover_image": "19701471f3f68a36919a567e396f12e2",
     "third_party_skus": [
       {
-        "id": "A2DCBB9E34204BDA9DA8415F97B3F4EA",
-        "sku": "A2DCBB9E34204BDA9DA8415F97B3F4EA",
-        "distributor": "epic"
-      },
-      {
         "id": "PPSA08459_00",
         "sku": "PPSA08459_00",
         "distributor": "playstation"
@@ -6732,6 +6727,11 @@
         "id": "90551",
         "sku": "90551",
         "distributor": "gop"
+      },
+      {
+        "id": "A2DCBB9E34204BDA9DA8415F97B3F4EA",
+        "sku": "A2DCBB9E34204BDA9DA8415F97B3F4EA",
+        "distributor": "epic"
       }
     ],
     "bot": {
@@ -6784,14 +6784,9 @@
     "cover_image": "9eba9a065a8c111414e349383e03d890",
     "third_party_skus": [
       {
-        "id": "PPSA01413_00",
-        "sku": "PPSA01413_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "9P3PT7PQJD0M",
-        "sku": "9P3PT7PQJD0M",
-        "distributor": "xbox"
+        "id": "553850",
+        "sku": "553850",
+        "distributor": "steam"
       },
       {
         "id": "111388",
@@ -6804,9 +6799,14 @@
         "distributor": "xbox"
       },
       {
-        "id": "553850",
-        "sku": "553850",
-        "distributor": "steam"
+        "id": "9P3PT7PQJD0M",
+        "sku": "9P3PT7PQJD0M",
+        "distributor": "xbox"
+      },
+      {
+        "id": "PPSA01413_00",
+        "sku": "PPSA01413_00",
+        "distributor": "playstation"
       }
     ],
     "bot": {
@@ -6860,9 +6860,9 @@
     "splash": "21f6220ac81c817f2228e4e856b61d23",
     "third_party_skus": [
       {
-        "id": "611482B8586142CDA48A0786EB8A127C",
-        "sku": "611482B8586142CDA48A0786EB8A127C",
-        "distributor": "epic"
+        "id": "18866",
+        "sku": "18866",
+        "distributor": "igdb"
       },
       {
         "id": "381210",
@@ -6875,9 +6875,9 @@
         "distributor": "gop"
       },
       {
-        "id": "18866",
-        "sku": "18866",
-        "distributor": "igdb"
+        "id": "611482B8586142CDA48A0786EB8A127C",
+        "sku": "611482B8586142CDA48A0786EB8A127C",
+        "distributor": "epic"
       }
     ],
     "overlay": true,
@@ -6889,23 +6889,23 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dead by daylight/deadbydaylight.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
         "name": "deadbydaylight-egs-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "deadbydaylight.exe",
+        "name": "dead by daylight/deadbydaylight.exe",
         "is_launcher": true
       },
       {
         "os": "win32",
         "name": "deadbydaylight-win64-shipping.exe",
         "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "deadbydaylight.exe",
+        "is_launcher": true
       }
     ],
     "storefront_available": false,
@@ -6929,14 +6929,14 @@
     "splash": "2a901aa3dc38e84d9cc46f7b5f712ff8",
     "third_party_skus": [
       {
-        "id": "18515",
-        "sku": "18515",
-        "distributor": "gop"
-      },
-      {
         "id": "227300",
         "sku": "227300",
         "distributor": "steam"
+      },
+      {
+        "id": "18515",
+        "sku": "18515",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -7010,12 +7010,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win_x64/eurotrucks2.exe",
+        "name": "eurotrucks2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "eurotrucks2.exe",
+        "name": "win_x64/eurotrucks2.exe",
         "is_launcher": false
       }
     ],
@@ -7042,21 +7042,6 @@
     "splash": "bf8c81db7593a64576d4861a7316aec7",
     "third_party_skus": [
       {
-        "id": "9P6DWL7R6NTL",
-        "sku": "9P6DWL7R6NTL",
-        "distributor": "xbox"
-      },
-      {
-        "id": "PPSA16645_00",
-        "sku": "PPSA16645_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "BRL7GC0GP1BM",
-        "sku": "BRL7GC0GP1BM",
-        "distributor": "xbox"
-      },
-      {
         "id": "251570",
         "sku": "251570",
         "distributor": "steam"
@@ -7065,6 +7050,21 @@
         "id": "26237",
         "sku": "26237",
         "distributor": "gop"
+      },
+      {
+        "id": "BRL7GC0GP1BM",
+        "sku": "BRL7GC0GP1BM",
+        "distributor": "xbox"
+      },
+      {
+        "id": "9P6DWL7R6NTL",
+        "sku": "9P6DWL7R6NTL",
+        "distributor": "xbox"
+      },
+      {
+        "id": "PPSA16645_00",
+        "sku": "PPSA16645_00",
+        "distributor": "playstation"
       }
     ],
     "overlay": true,
@@ -7106,24 +7106,24 @@
     "splash": "81ff372fbd0557b8908331db0ae94524",
     "third_party_skus": [
       {
-        "id": "C3D891Z6TNQM",
-        "sku": "C3D891Z6TNQM",
-        "distributor": "xbox"
-      },
-      {
         "id": "413150",
         "sku": "413150",
         "distributor": "steam"
       },
       {
-        "id": "21095",
-        "sku": "21095",
-        "distributor": "gop"
-      },
-      {
         "id": "CUSA06840_00",
         "sku": "CUSA06840_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "C3D891Z6TNQM",
+        "sku": "C3D891Z6TNQM",
+        "distributor": "xbox"
+      },
+      {
+        "id": "21095",
+        "sku": "21095",
+        "distributor": "gop"
       }
     ],
     "hook": true,
@@ -7269,24 +7269,19 @@
     "cover_image": "0600a55a161f92fe5418ea8543e4ad26",
     "third_party_skus": [
       {
+        "id": "71801",
+        "sku": "71801",
+        "distributor": "gop"
+      },
+      {
         "id": "50118B7F954E450F8823DF1614B24E80",
         "sku": "50118B7F954E450F8823DF1614B24E80",
         "distributor": "epic"
       },
       {
-        "id": "1097150",
-        "sku": "1097150",
-        "distributor": "steam"
-      },
-      {
         "id": "CUSA29236_00",
         "sku": "CUSA29236_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "71801",
-        "sku": "71801",
-        "distributor": "gop"
       },
       {
         "id": "PPSA04476_00",
@@ -7297,6 +7292,11 @@
         "id": "9PMXH5249DG5",
         "sku": "9PMXH5249DG5",
         "distributor": "xbox"
+      },
+      {
+        "id": "1097150",
+        "sku": "1097150",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -7308,12 +7308,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "fallguys_client.exe",
+        "name": "fallguys_client_game.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "fallguys_client_game.exe",
+        "name": "fallguys_client.exe",
         "is_launcher": false
       }
     ],
@@ -7397,9 +7397,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "95859",
-        "sku": "95859",
-        "distributor": "gop"
+        "id": "E885327CE4414509BFF4C10757F88334",
+        "sku": "E885327CE4414509BFF4C10757F88334",
+        "distributor": "epic"
       },
       {
         "id": "3513350",
@@ -7407,9 +7407,9 @@
         "distributor": "steam"
       },
       {
-        "id": "E885327CE4414509BFF4C10757F88334",
-        "sku": "E885327CE4414509BFF4C10757F88334",
-        "distributor": "epic"
+        "id": "95859",
+        "sku": "95859",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -7436,22 +7436,22 @@
     "executables": [
       {
         "os": "darwin",
+        "name": "wuthering waves.app",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
         "name": "wutheringwaves.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "wuthering waves.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "wuthering waves.app",
+        "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "wuthering waves game/client/binaries/win64/client-win64-shipping.exe",
+        "name": "wuthering waves.exe",
         "is_launcher": false
       }
     ],
@@ -7477,6 +7477,11 @@
     "cover_image": "6b05f8bebdb9740a1d56569916f8c56a",
     "third_party_skus": [
       {
+        "id": "33956BCB55D4452D8C47E16B94E294BD",
+        "sku": "33956BCB55D4452D8C47E16B94E294BD",
+        "distributor": "epic"
+      },
+      {
         "id": "945360",
         "sku": "945360",
         "distributor": "steam"
@@ -7487,19 +7492,14 @@
         "distributor": "gop"
       },
       {
-        "id": "9NG07QJNK38J",
-        "sku": "9NG07QJNK38J",
-        "distributor": "xbox"
-      },
-      {
-        "id": "33956BCB55D4452D8C47E16B94E294BD",
-        "sku": "33956BCB55D4452D8C47E16B94E294BD",
-        "distributor": "epic"
-      },
-      {
         "id": "PPSA03595_00",
         "sku": "PPSA03595_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "9NG07QJNK38J",
+        "sku": "9NG07QJNK38J",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -7561,17 +7561,17 @@
             },
             {
               "os": "win32",
-              "name": "among us - kopie/among us.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
               "name": "among us - copy/among us.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
               "name": "among us - tou/among us.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "among us - kopie/among us.exe",
               "is_launcher": false
             }
           ],
@@ -7597,17 +7597,17 @@
       },
       {
         "os": "win32",
-        "name": "among us - kopie/among us.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "among us - copy/among us.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "among us - tou/among us.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "among us - kopie/among us.exe",
         "is_launcher": false
       }
     ],
@@ -7696,23 +7696,23 @@
           "guild_id": "251072485095636994",
           "executables": [
             {
-              "os": "darwin",
-              "name": "terraria.app",
-              "is_launcher": false
-            },
-            {
               "os": "win32",
               "name": "terraria/terraria.exe",
               "is_launcher": false
             },
             {
-              "os": "linux",
-              "name": "terraria.bin.x86",
+              "os": "win32",
+              "name": "terraria.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "terraria.exe",
+              "os": "darwin",
+              "name": "terraria.app",
+              "is_launcher": false
+            },
+            {
+              "os": "linux",
+              "name": "terraria.bin.x86",
               "is_launcher": false
             }
           ],
@@ -7731,23 +7731,23 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "terraria.app",
-        "is_launcher": false
-      },
-      {
         "os": "win32",
         "name": "terraria/terraria.exe",
         "is_launcher": false
       },
       {
-        "os": "linux",
-        "name": "terraria.bin.x86",
+        "os": "win32",
+        "name": "terraria.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "terraria.exe",
+        "os": "darwin",
+        "name": "terraria.app",
+        "is_launcher": false
+      },
+      {
+        "os": "linux",
+        "name": "terraria.bin.x86",
         "is_launcher": false
       }
     ],
@@ -7773,14 +7773,9 @@
     "cover_image": "ba35fab3925cc6cee14d84791930ba58",
     "third_party_skus": [
       {
-        "id": "9PHKZ9XT6F85",
-        "sku": "9PHKZ9XT6F85",
-        "distributor": "xbox"
-      },
-      {
-        "id": "960090",
-        "sku": "960090",
-        "distributor": "steam"
+        "id": "com.ninjakiwi.bloonstd6",
+        "sku": "com.ninjakiwi.bloonstd6",
+        "distributor": "google_play"
       },
       {
         "id": "CUSA29953_00",
@@ -7788,9 +7783,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "com.ninjakiwi.bloonstd6",
-        "sku": "com.ninjakiwi.bloonstd6",
-        "distributor": "google_play"
+        "id": "9PHKZ9XT6F85",
+        "sku": "9PHKZ9XT6F85",
+        "distributor": "xbox"
       },
       {
         "id": "64028",
@@ -7801,6 +7796,11 @@
         "id": "6A8DFA6E441E4F2F9048A98776C6077D",
         "sku": "6A8DFA6E441E4F2F9048A98776C6077D",
         "distributor": "epic"
+      },
+      {
+        "id": "960090",
+        "sku": "960090",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -7865,12 +7865,12 @@
             },
             {
               "os": "win32",
-              "name": "bloonstd6.exe",
+              "name": "bloonstd6/bloonstd6.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "bloonstd6/bloonstd6.exe",
+              "name": "bloonstd6.exe",
               "is_launcher": false
             }
           ],
@@ -7892,12 +7892,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "bloonstd6/bloonstd6.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "bloonstd6.exe",
+        "name": "cleaner/cleaner-btd6.exe",
         "is_launcher": false
       },
       {
@@ -7907,7 +7902,12 @@
       },
       {
         "os": "win32",
-        "name": "cleaner/cleaner-btd6.exe",
+        "name": "bloonstd6/bloonstd6.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "bloonstd6.exe",
         "is_launcher": false
       }
     ],
@@ -7933,19 +7933,19 @@
     "cover_image": "2d7b75e5835ea0f39f821993934db112",
     "third_party_skus": [
       {
+        "id": "2074920",
+        "sku": "2074920",
+        "distributor": "steam"
+      },
+      {
         "id": "88922",
         "sku": "88922",
         "distributor": "gop"
       },
       {
-        "id": "208476",
-        "sku": "208476",
-        "distributor": "igdb"
-      },
-      {
-        "id": "2074920",
-        "sku": "2074920",
-        "distributor": "steam"
+        "id": "9P8FBXKMCLWC",
+        "sku": "9P8FBXKMCLWC",
+        "distributor": "xbox"
       },
       {
         "id": "PPSA13465_00",
@@ -7953,9 +7953,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "9P8FBXKMCLWC",
-        "sku": "9P8FBXKMCLWC",
-        "distributor": "xbox"
+        "id": "208476",
+        "sku": "208476",
+        "distributor": "igdb"
       }
     ],
     "bot": {
@@ -8006,9 +8006,9 @@
     "splash": "b125c7b6bd1ea27c2cef8b50b09c8c19",
     "third_party_skus": [
       {
-        "id": "1407200",
-        "sku": "1407200",
-        "distributor": "steam"
+        "id": "PPSA02007_00",
+        "sku": "PPSA02007_00",
+        "distributor": "playstation"
       },
       {
         "id": "18151",
@@ -8016,14 +8016,14 @@
         "distributor": "gop"
       },
       {
+        "id": "1407200",
+        "sku": "1407200",
+        "distributor": "steam"
+      },
+      {
         "id": "C57L9GR0HHB7",
         "sku": "C57L9GR0HHB7",
         "distributor": "xbox"
-      },
-      {
-        "id": "PPSA02007_00",
-        "sku": "PPSA02007_00",
-        "distributor": "playstation"
       }
     ],
     "bot": {
@@ -8130,14 +8130,14 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": "left4dead2.exe",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "left4dead2.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game left4dead2",
         "is_launcher": false
       },
@@ -8174,16 +8174,6 @@
     "splash": "31b3aabf060b6b0ea55f6f6dc0456eef",
     "third_party_skus": [
       {
-        "id": "25076",
-        "sku": "25076",
-        "distributor": "igdb"
-      },
-      {
-        "id": "1174180",
-        "sku": "1174180",
-        "distributor": "steam"
-      },
-      {
         "id": "32109",
         "sku": "32109",
         "distributor": "gop"
@@ -8194,9 +8184,19 @@
         "distributor": "xbox"
       },
       {
+        "id": "1174180",
+        "sku": "1174180",
+        "distributor": "steam"
+      },
+      {
         "id": "BPSWGQBW7R3G",
         "sku": "BPSWGQBW7R3G",
         "distributor": "xbox"
+      },
+      {
+        "id": "25076",
+        "sku": "25076",
+        "distributor": "igdb"
       },
       {
         "id": "BP53ZX212RJJ",
@@ -8322,7 +8322,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": ">hl2.exe",
+        "name": "garrysmod/hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -8333,14 +8333,14 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": ">hl2_osx",
+        "os": "win32",
+        "name": ">hl2.exe",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "garrysmod/hl2.exe",
+        "os": "darwin",
+        "name": ">hl2_osx",
         "arguments": "-game garrysmod",
         "is_launcher": false
       },
@@ -8376,6 +8376,11 @@
     "splash": "172f9eb99e935d9231bf2b512cf32fa0",
     "third_party_skus": [
       {
+        "id": "714010",
+        "sku": "714010",
+        "distributor": "steam"
+      },
+      {
         "id": "85031",
         "sku": "85031",
         "distributor": "gop"
@@ -8389,11 +8394,6 @@
         "id": "9P7CM8QNR6QH",
         "sku": "9P7CM8QNR6QH",
         "distributor": "xbox"
-      },
-      {
-        "id": "714010",
-        "sku": "714010",
-        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -8423,14 +8423,24 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "9P5F369NJ9PG",
-        "sku": "9P5F369NJ9PG",
+        "id": "74589",
+        "sku": "74589",
+        "distributor": "gop"
+      },
+      {
+        "id": "9PP97VC2BL8H",
+        "sku": "9PP97VC2BL8H",
         "distributor": "xbox"
       },
       {
         "id": "PPSA02442_00",
         "sku": "PPSA02442_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "9N8RTHCPR5ZC",
+        "sku": "9N8RTHCPR5ZC",
+        "distributor": "xbox"
       },
       {
         "id": "125165",
@@ -8443,24 +8453,14 @@
         "distributor": "xbox"
       },
       {
-        "id": "74589",
-        "sku": "74589",
-        "distributor": "gop"
-      },
-      {
-        "id": "9PP97VC2BL8H",
-        "sku": "9PP97VC2BL8H",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9N8RTHCPR5ZC",
-        "sku": "9N8RTHCPR5ZC",
-        "distributor": "xbox"
-      },
-      {
         "id": "2344520",
         "sku": "2344520",
         "distributor": "steam"
+      },
+      {
+        "id": "9P5F369NJ9PG",
+        "sku": "9P5F369NJ9PG",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -8514,24 +8514,24 @@
     "splash": "5f69a75ff4a835e2edb7d97eba43d050",
     "third_party_skus": [
       {
-        "id": "291550",
-        "sku": "291550",
-        "distributor": "steam"
-      },
-      {
         "id": "15E6680A0C164EE189FCC3EB10398FD6",
         "sku": "15E6680A0C164EE189FCC3EB10398FD6",
         "distributor": "epic"
       },
       {
-        "id": "27222",
-        "sku": "27222",
-        "distributor": "gop"
-      },
-      {
         "id": "C3B1V55CDL0C",
         "sku": "C3B1V55CDL0C",
         "distributor": "xbox"
+      },
+      {
+        "id": "291550",
+        "sku": "291550",
+        "distributor": "steam"
+      },
+      {
+        "id": "27222",
+        "sku": "27222",
+        "distributor": "gop"
       },
       {
         "id": "CUSA04195_00",
@@ -8548,22 +8548,22 @@
     "executables": [
       {
         "os": "win32",
-        "name": "brawlhalla/brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "brawlhalla.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "brawlhalla.app",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "brawlhalla/brawlhallagame.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "brawlhalla/brawlhalla.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "brawlhalla.app",
         "is_launcher": false
       }
     ],
@@ -8632,11 +8632,6 @@
     "splash": "1e6f52750013a9088823845a235826d5",
     "third_party_skus": [
       {
-        "id": "4E53F148899A4565BDED9D485880203E",
-        "sku": "4E53F148899A4565BDED9D485880203E",
-        "distributor": "epic"
-      },
-      {
         "id": "26218",
         "sku": "26218",
         "distributor": "gop"
@@ -8645,18 +8640,23 @@
         "id": "284160",
         "sku": "284160",
         "distributor": "steam"
+      },
+      {
+        "id": "4E53F148899A4565BDED9D485880203E",
+        "sku": "4E53F148899A4565BDED9D485880203E",
+        "distributor": "epic"
       }
     ],
     "hook": true,
     "executables": [
       {
         "os": "win32",
-        "name": "beamng.drive.exe",
+        "name": "beamng.drive.x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "beamng.drive.x64.exe",
+        "name": "beamng.drive.exe",
         "is_launcher": false
       }
     ],
@@ -8741,12 +8741,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "projectzomboid32.exe",
+        "name": "projectzomboid64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "projectzomboid64.exe",
+        "name": "projectzomboid32.exe",
         "is_launcher": false
       }
     ],
@@ -8771,9 +8771,9 @@
     "splash": "e5185fe1f9ac1bd77cfdf3b2a5b97448",
     "third_party_skus": [
       {
-        "id": "21195",
-        "sku": "21195",
-        "distributor": "gop"
+        "id": "BPS3XF74B9V1",
+        "sku": "BPS3XF74B9V1",
+        "distributor": "xbox"
       },
       {
         "id": "244AAAA06BFA49D088205B13B9D2D115",
@@ -8781,9 +8781,14 @@
         "distributor": "epic"
       },
       {
-        "id": "230410",
-        "sku": "230410",
-        "distributor": "steam"
+        "id": "PPSA01737_00",
+        "sku": "PPSA01737_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "21195",
+        "sku": "21195",
+        "distributor": "gop"
       },
       {
         "id": "494959992483348480",
@@ -8791,14 +8796,9 @@
         "distributor": "discord"
       },
       {
-        "id": "PPSA01737_00",
-        "sku": "PPSA01737_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "BPS3XF74B9V1",
-        "sku": "BPS3XF74B9V1",
-        "distributor": "xbox"
+        "id": "230410",
+        "sku": "230410",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -8837,14 +8837,14 @@
           "primary_sku_id": "494959992483348480",
           "third_party_skus": [
             {
-              "id": "494959992483348480",
-              "sku": "494959992483348480",
-              "distributor": "discord"
-            },
-            {
               "id": "230410",
               "sku": "230410",
               "distributor": "steam"
+            },
+            {
+              "id": "494959992483348480",
+              "sku": "494959992483348480",
+              "distributor": "discord"
             }
           ],
           "linked_games": [
@@ -8863,12 +8863,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "warframe.exe",
+              "name": "warframe.x64.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "warframe.x64.exe",
+              "name": "warframe.exe",
               "is_launcher": false
             }
           ],
@@ -8891,12 +8891,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "warframe.exe",
+        "name": "warframe.x64.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "warframe.x64.exe",
+        "name": "warframe.exe",
         "is_launcher": false
       }
     ],
@@ -8922,19 +8922,9 @@
     "cover_image": "2ba4307e20ff351996815f29b99e6b88",
     "third_party_skus": [
       {
-        "id": "9NKX70BBCDRN",
-        "sku": "9NKX70BBCDRN",
-        "distributor": "xbox"
-      },
-      {
         "id": "PPSA22327_00",
         "sku": "PPSA22327_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "9MTLKM2DJMZ2",
-        "sku": "9MTLKM2DJMZ2",
-        "distributor": "xbox"
       },
       {
         "id": "1551360",
@@ -8945,6 +8935,16 @@
         "id": "87757",
         "sku": "87757",
         "distributor": "gop"
+      },
+      {
+        "id": "9NKX70BBCDRN",
+        "sku": "9NKX70BBCDRN",
+        "distributor": "xbox"
+      },
+      {
+        "id": "9MTLKM2DJMZ2",
+        "sku": "9MTLKM2DJMZ2",
+        "distributor": "xbox"
       },
       {
         "id": "9P1HX37NMJLT",
@@ -8989,11 +8989,6 @@
     "splash": "6eb27b0dcff2889ab250106a8035fde4",
     "third_party_skus": [
       {
-        "id": "14156",
-        "sku": "14156",
-        "distributor": "gop"
-      },
-      {
         "id": "238960",
         "sku": "238960",
         "distributor": "steam"
@@ -9002,6 +8997,11 @@
         "id": "7AD5508D382E46228056F1D1A0189AE2",
         "sku": "7AD5508D382E46228056F1D1A0189AE2",
         "distributor": "epic"
+      },
+      {
+        "id": "14156",
+        "sku": "14156",
+        "distributor": "gop"
       },
       {
         "id": "BZL0234XFMQ5",
@@ -9023,27 +9023,22 @@
     "executables": [
       {
         "os": "win32",
+        "name": "pathofexile/pathofexileegs.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile/pathofexilesteam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "path of exile/pathofexile.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "path of exile/pathofexile_x64.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "path of exile/pathofexile_x64steam.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "pathofexile/pathofexileegs.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "path of exile taiwan/pathofexile.exe",
         "is_launcher": false
       },
       {
@@ -9058,7 +9053,12 @@
       },
       {
         "os": "win32",
-        "name": "path of exile/pathofexilesteam.exe",
+        "name": "path of exile/pathofexile_x64steam.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "path of exile taiwan/pathofexile.exe",
         "is_launcher": false
       }
     ],
@@ -9098,13 +9098,13 @@
     "executables": [
       {
         "os": "win32",
-        "name": "vrchat/start_protected_game.exe",
-        "is_launcher": false
+        "name": "vrchat/launch.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
-        "name": "vrchat/launch.exe",
-        "is_launcher": true
+        "name": "vrchat/start_protected_game.exe",
+        "is_launcher": false
       },
       {
         "os": "win32",
@@ -9137,14 +9137,14 @@
         "distributor": "gop"
       },
       {
-        "id": "PPSA17669_00",
-        "sku": "PPSA17669_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "9PCD5S0DMF5Z",
         "sku": "9PCD5S0DMF5Z",
         "distributor": "xbox"
+      },
+      {
+        "id": "PPSA17669_00",
+        "sku": "PPSA17669_00",
+        "distributor": "playstation"
       }
     ],
     "bot": {
@@ -9211,7 +9211,7 @@
       },
       {
         "os": "win32",
-        "name": "sotgame.exe",
+        "name": "content/seaofthieves.exe",
         "is_launcher": false
       },
       {
@@ -9221,7 +9221,7 @@
       },
       {
         "os": "win32",
-        "name": "content/seaofthieves.exe",
+        "name": "sotgame.exe",
         "is_launcher": false
       }
     ],
@@ -9247,11 +9247,6 @@
     "cover_image": "2d5c281b7c98bfed4ade63a3ded8a525",
     "third_party_skus": [
       {
-        "id": "2258570",
-        "sku": "2258570",
-        "distributor": "steam"
-      },
-      {
         "id": "109402",
         "sku": "109402",
         "distributor": "gop"
@@ -9259,6 +9254,11 @@
       {
         "id": "2016590",
         "sku": "2016590",
+        "distributor": "steam"
+      },
+      {
+        "id": "2258570",
+        "sku": "2258570",
         "distributor": "steam"
       }
     ],
@@ -9310,26 +9310,20 @@
     "splash": "a109376e705e71ab44e7d2d966cecc35",
     "third_party_skus": [
       {
-        "id": "3465",
-        "sku": "3465",
-        "distributor": "gop"
-      },
-      {
         "id": "440",
         "sku": "440",
         "distributor": "steam"
+      },
+      {
+        "id": "3465",
+        "sku": "3465",
+        "distributor": "gop"
       }
     ],
     "overlay": true,
     "hook": true,
     "guild_id": "132349439506382848",
     "executables": [
-      {
-        "os": "win32",
-        "name": ">hl2.exe",
-        "arguments": "-game tf",
-        "is_launcher": false
-      },
       {
         "os": "win32",
         "name": "hl2tf.exe",
@@ -9339,6 +9333,12 @@
       {
         "os": "darwin",
         "name": ">hl2_osx",
+        "arguments": "-game tf",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": ">hl2.exe",
         "arguments": "-game tf",
         "is_launcher": false
       }
@@ -9363,26 +9363,6 @@
     "cover_image": "f4fcdc6c261a90bab370c0368f27c30c",
     "third_party_skus": [
       {
-        "id": "77F2B98E2CEF40C8A7437518BF420E47",
-        "sku": "77F2B98E2CEF40C8A7437518BF420E47",
-        "distributor": "epic"
-      },
-      {
-        "id": "BX3M8L83BBRW",
-        "sku": "BX3M8L83BBRW",
-        "distributor": "xbox"
-      },
-      {
-        "id": "PPSA03974_00",
-        "sku": "PPSA03974_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "19997",
-        "sku": "19997",
-        "distributor": "gop"
-      },
-      {
         "id": "1091500",
         "sku": "1091500",
         "distributor": "steam"
@@ -9391,6 +9371,26 @@
         "id": "CUSA16596_00",
         "sku": "CUSA16596_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "77F2B98E2CEF40C8A7437518BF420E47",
+        "sku": "77F2B98E2CEF40C8A7437518BF420E47",
+        "distributor": "epic"
+      },
+      {
+        "id": "19997",
+        "sku": "19997",
+        "distributor": "gop"
+      },
+      {
+        "id": "PPSA03974_00",
+        "sku": "PPSA03974_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "BX3M8L83BBRW",
+        "sku": "BX3M8L83BBRW",
+        "distributor": "xbox"
       }
     ],
     "overlay": true,
@@ -9460,12 +9460,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win64/palworld-win64-shipping.exe",
+        "name": "wingdk/palworld-wingdk-shipping.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "wingdk/palworld-wingdk-shipping.exe",
+        "name": "win64/palworld-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -9490,14 +9490,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "124497",
-        "sku": "124497",
-        "distributor": "gop"
-      },
-      {
         "id": "1281930",
         "sku": "1281930",
         "distributor": "steam"
+      },
+      {
+        "id": "124497",
+        "sku": "124497",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -9524,12 +9524,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "launchutils/busybox64.exe",
+        "name": "tmodloader/tmodloader.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "tmodloader/tmodloader.exe",
+        "name": "6.0.0/dotnet.exe",
         "is_launcher": false
       },
       {
@@ -9539,7 +9539,7 @@
       },
       {
         "os": "win32",
-        "name": "6.0.0/dotnet.exe",
+        "name": "launchutils/busybox64.exe",
         "is_launcher": false
       }
     ],
@@ -9581,13 +9581,13 @@
     "guild_id": "127167843383902209",
     "executables": [
       {
-        "os": "win32",
-        "name": "hearthstone.exe",
+        "os": "darwin",
+        "name": "hearthstone.app",
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "hearthstone.app",
+        "os": "win32",
+        "name": "hearthstone.exe",
         "is_launcher": false
       }
     ],
@@ -9612,9 +9612,9 @@
     "splash": "c99384f8b68bf43672bdb79d0a3833ea",
     "third_party_skus": [
       {
-        "id": "386",
-        "sku": "386",
-        "distributor": "igdb"
+        "id": "262342",
+        "sku": "262342",
+        "distributor": "steam"
       },
       {
         "id": "19501",
@@ -9627,9 +9627,9 @@
         "distributor": "steam"
       },
       {
-        "id": "262342",
-        "sku": "262342",
-        "distributor": "steam"
+        "id": "386",
+        "sku": "386",
+        "distributor": "igdb"
       }
     ],
     "overlay": true,
@@ -9640,23 +9640,23 @@
     ],
     "executables": [
       {
+        "os": "win32",
+        "name": "boot/ffxivboot.exe",
+        "is_launcher": false
+      },
+      {
         "os": "darwin",
         "name": "final fantasy xiv.app",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "ffxiv_dx11.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "boot/ffxivboot.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "ffxiv.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "ffxiv_dx11.exe",
         "is_launcher": false
       }
     ],
@@ -9702,21 +9702,6 @@
     "executables": [
       {
         "os": "win32",
-        "name": "editor/kseditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "server/acservermanager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "assettocorsa/content manager.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "assettocorsa.exe",
         "is_launcher": false
       },
@@ -9727,12 +9712,27 @@
       },
       {
         "os": "win32",
-        "name": "assettocorsa/acs.exe",
+        "name": "server/acservermanager.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "editor/kseditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/content manager.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "assettocorsa/acshowroom.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "assettocorsa/acs.exe",
         "is_launcher": false
       }
     ],
@@ -9756,14 +9756,14 @@
     "cover_image": "f0683161e78b4b728e14ac66406ddcd9",
     "third_party_skus": [
       {
-        "id": "CUSA01444_00",
-        "sku": "CUSA01444_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "C1HZV4PRZ39K",
         "sku": "C1HZV4PRZ39K",
         "distributor": "xbox"
+      },
+      {
+        "id": "113400",
+        "sku": "113400",
+        "distributor": "steam"
       },
       {
         "id": "15087",
@@ -9771,9 +9771,9 @@
         "distributor": "gop"
       },
       {
-        "id": "113400",
-        "sku": "113400",
-        "distributor": "steam"
+        "id": "CUSA01444_00",
+        "sku": "CUSA01444_00",
+        "distributor": "playstation"
       }
     ],
     "hook": true,
@@ -9783,12 +9783,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "2012/vcredist_x86.exe",
+        "name": "apb.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "apb.exe",
+        "name": "2012/vcredist_x86.exe",
         "is_launcher": false
       }
     ],
@@ -9927,6 +9927,21 @@
     "splash": "2d646423539ce9fa89f06a5c1ae8cfcc",
     "third_party_skus": [
       {
+        "id": "25657",
+        "sku": "25657",
+        "distributor": "igdb"
+      },
+      {
+        "id": "1085660",
+        "sku": "1085660",
+        "distributor": "steam"
+      },
+      {
+        "id": "71754",
+        "sku": "71754",
+        "distributor": "gop"
+      },
+      {
         "id": "BPQ955FQFPH6",
         "sku": "BPQ955FQFPH6",
         "distributor": "xbox"
@@ -9937,24 +9952,9 @@
         "distributor": "epic"
       },
       {
-        "id": "1085660",
-        "sku": "1085660",
-        "distributor": "steam"
-      },
-      {
         "id": "PPSA02409_00",
         "sku": "PPSA02409_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "71754",
-        "sku": "71754",
-        "distributor": "gop"
-      },
-      {
-        "id": "25657",
-        "sku": "25657",
-        "distributor": "igdb"
       }
     ],
     "hook": true,
@@ -9985,14 +9985,9 @@
     "cover_image": "5be3c074636ac548e4f67b20a5f833ef",
     "third_party_skus": [
       {
-        "id": "9P6SRW1HVW9K",
-        "sku": "9P6SRW1HVW9K",
-        "distributor": "xbox"
-      },
-      {
-        "id": "22376",
-        "sku": "22376",
-        "distributor": "steam"
+        "id": "86725",
+        "sku": "86725",
+        "distributor": "gop"
       },
       {
         "id": "PPSA02426_00",
@@ -10000,9 +9995,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "86725",
-        "sku": "86725",
-        "distributor": "gop"
+        "id": "9P6SRW1HVW9K",
+        "sku": "9P6SRW1HVW9K",
+        "distributor": "xbox"
       },
       {
         "id": "1248130",
@@ -10018,6 +10013,11 @@
         "id": "9NLHRCNVCP14",
         "sku": "9NLHRCNVCP14",
         "distributor": "xbox"
+      },
+      {
+        "id": "22376",
+        "sku": "22376",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -10070,11 +10070,6 @@
     "cover_image": "2cba5ccf61970c7c7da763cc4a069ef8",
     "third_party_skus": [
       {
-        "id": "2073620",
-        "sku": "2073620",
-        "distributor": "steam"
-      },
-      {
         "id": "89542",
         "sku": "89542",
         "distributor": "gop"
@@ -10083,6 +10078,11 @@
         "id": "6C8394F0A8B748A68503B1C339C19616",
         "sku": "6C8394F0A8B748A68503B1C339C19616",
         "distributor": "epic"
+      },
+      {
+        "id": "2073620",
+        "sku": "2073620",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -10132,16 +10132,6 @@
     "splash": "1b0de773265cc85c8286187f43f82683",
     "third_party_skus": [
       {
-        "id": "22677",
-        "sku": "22677",
-        "distributor": "gop"
-      },
-      {
-        "id": "PPSA02110_00",
-        "sku": "PPSA02110_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "275850",
         "sku": "275850",
         "distributor": "steam"
@@ -10152,9 +10142,19 @@
         "distributor": "xbox"
       },
       {
+        "id": "PPSA02110_00",
+        "sku": "PPSA02110_00",
+        "distributor": "playstation"
+      },
+      {
         "id": "CUSA04841_00",
         "sku": "CUSA04841_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "22677",
+        "sku": "22677",
+        "distributor": "gop"
       }
     ],
     "hook": true,
@@ -10185,14 +10185,14 @@
     "cover_image": "b33582494ee8e6d88ec96dc8d177b1ad",
     "third_party_skus": [
       {
-        "id": "WoW",
-        "sku": "WoW",
-        "distributor": "battlenet"
-      },
-      {
         "id": "71420",
         "sku": "71420",
         "distributor": "gop"
+      },
+      {
+        "id": "WoW",
+        "sku": "WoW",
+        "distributor": "battlenet"
       }
     ],
     "overlay": true,
@@ -10228,9 +10228,9 @@
     "cover_image": "73a54007b271353838700b598bd20821",
     "third_party_skus": [
       {
-        "id": "2073850",
-        "sku": "2073850",
-        "distributor": "steam"
+        "id": "9PGD71CMDS0Z",
+        "sku": "9PGD71CMDS0Z",
+        "distributor": "xbox"
       },
       {
         "id": "CUSA49199_00",
@@ -10238,19 +10238,19 @@
         "distributor": "playstation"
       },
       {
-        "id": "9PGD71CMDS0Z",
-        "sku": "9PGD71CMDS0Z",
-        "distributor": "xbox"
+        "id": "102243",
+        "sku": "102243",
+        "distributor": "gop"
+      },
+      {
+        "id": "2073850",
+        "sku": "2073850",
+        "distributor": "steam"
       },
       {
         "id": "PPSA17310_00",
         "sku": "PPSA17310_00",
         "distributor": "playstation"
-      },
-      {
-        "id": "102243",
-        "sku": "102243",
-        "distributor": "gop"
       }
     ],
     "bot": {
@@ -10270,13 +10270,69 @@
       "banner_color": null,
       "accent_color": null
     },
+    "linked_games": [
+      {
+        "id": "1373923812705570866",
+        "type": 1,
+        "application": {
+          "id": "1373923812705570866",
+          "name": "THE FINALS",
+          "icon": "7aa538cca8ee94f17f002f5aa0d22f5b",
+          "description": "Join THE FINALS, the world-famous, free-to-play, combat-centered game show! Fight alongside your teammates in virtual arenas that you can alter, exploit, and even destroy. Build your own playstyle in this first-person shooter to win escalating tournaments and lasting fame.",
+          "summary": "",
+          "type": null,
+          "is_monetized": false,
+          "is_verified": false,
+          "is_discoverable": false,
+          "cover_image": "15072dcd47b18c8ee217aefaccef7ee8",
+          "parent_id": "1334186018223685704",
+          "linked_games": [
+            {
+              "id": "1182713227491147776",
+              "type": 1
+            }
+          ],
+          "hook": true,
+          "storefront_available": false,
+          "bot_public": true,
+          "bot_require_code_grant": false,
+          "install_params": {
+            "scopes": [
+              "applications.commands"
+            ],
+            "permissions": "0"
+          },
+          "integration_types_config": {
+            "0": {
+              "oauth2_install_params": {
+                "scopes": [
+                  "applications.commands"
+                ],
+                "permissions": "0"
+              }
+            },
+            "1": {
+              "oauth2_install_params": {
+                "scopes": [
+                  "applications.commands"
+                ],
+                "permissions": "0"
+              }
+            }
+          },
+          "verify_key": "ed0e74d4c9e454c41a000520c809d60da3291c3a28b07efb1712154d8ad804f4",
+          "flags": 1024,
+          "tags": [
+            "co-op",
+            "competitive",
+            "pvp",
+            "shooter"
+          ]
+        }
+      }
+    ],
     "hook": true,
     "executables": [
-      {
-        "os": "win32",
-        "name": "wingdk/discovery-e.exe",
-        "is_launcher": false
-      },
       {
         "os": "win32",
         "name": "wingdk/discovery-d.exe",
@@ -10285,6 +10341,11 @@
       {
         "os": "win32",
         "name": "win64/discovery.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "wingdk/discovery-e.exe",
         "is_launcher": false
       }
     ],
@@ -10328,12 +10389,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "hearts of iron iv/hoi4.exe",
+        "name": "hoi4.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hoi4.exe",
+        "name": "hearts of iron iv/hoi4.exe",
         "is_launcher": false
       }
     ],
@@ -10357,29 +10418,19 @@
     "cover_image": "82c60a9c3ef9fd1ecad4367f0482e27e",
     "third_party_skus": [
       {
+        "id": "9NBR63PT4FZC",
+        "sku": "9NBR63PT4FZC",
+        "distributor": "microsoft"
+      },
+      {
         "id": "PPSA18605_00",
         "sku": "PPSA18605_00",
         "distributor": "playstation"
       },
       {
-        "id": "39732",
-        "sku": "39732",
-        "distributor": "gop"
-      },
-      {
-        "id": "9NBR63PT4FZC",
-        "sku": "9NBR63PT4FZC",
-        "distributor": "xbox"
-      },
-      {
         "id": "9PGSCVZP98QG",
         "sku": "9PGSCVZP98QG",
         "distributor": "xbox"
-      },
-      {
-        "id": "9NBR63PT4FZC",
-        "sku": "9NBR63PT4FZC",
-        "distributor": "microsoft"
       },
       {
         "id": "1144200",
@@ -10387,14 +10438,24 @@
         "distributor": "steam"
       },
       {
+        "id": "9PGSCVZP98QG",
+        "sku": "9PGSCVZP98QG",
+        "distributor": "microsoft"
+      },
+      {
+        "id": "9NBR63PT4FZC",
+        "sku": "9NBR63PT4FZC",
+        "distributor": "xbox"
+      },
+      {
         "id": "51B0E42C972E47AEBDF507CE4F68DDC3",
         "sku": "51B0E42C972E47AEBDF507CE4F68DDC3",
         "distributor": "epic"
       },
       {
-        "id": "9PGSCVZP98QG",
-        "sku": "9PGSCVZP98QG",
-        "distributor": "microsoft"
+        "id": "39732",
+        "sku": "39732",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -10448,6 +10509,16 @@
     "splash": "c94c6673d3bf8514f3f6a25b9e925c77",
     "third_party_skus": [
       {
+        "id": "BSR9NLHVF1KL",
+        "sku": "BSR9NLHVF1KL",
+        "distributor": "xbox"
+      },
+      {
+        "id": "CUSA15510_00",
+        "sku": "CUSA15510_00",
+        "distributor": "playstation"
+      },
+      {
         "id": "19539",
         "sku": "19539",
         "distributor": "gop"
@@ -10456,16 +10527,6 @@
         "id": "221100",
         "sku": "221100",
         "distributor": "steam"
-      },
-      {
-        "id": "CUSA15510_00",
-        "sku": "CUSA15510_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "BSR9NLHVF1KL",
-        "sku": "BSR9NLHVF1KL",
-        "distributor": "xbox"
       }
     ],
     "overlay": true,
@@ -10477,12 +10538,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "dayz/dayzuninstaller.exe",
+        "name": "dayz.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "dayz.exe",
+        "name": "dayz/dayzuninstaller.exe",
         "is_launcher": false
       },
       {
@@ -10511,9 +10572,9 @@
     "cover_image": "68044fdd0b8e35f4845daedcfd2f3666",
     "third_party_skus": [
       {
-        "id": "80390",
-        "sku": "80390",
-        "distributor": "gop"
+        "id": "892970",
+        "sku": "892970",
+        "distributor": "steam"
       },
       {
         "id": "9NCBL78CG9N7",
@@ -10521,9 +10582,9 @@
         "distributor": "xbox"
       },
       {
-        "id": "892970",
-        "sku": "892970",
-        "distributor": "steam"
+        "id": "80390",
+        "sku": "80390",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -10573,9 +10634,9 @@
     "cover_image": "20f301251d59c1bdeb771177cba8925a",
     "third_party_skus": [
       {
-        "id": "9NFHWSJ3JWSC",
-        "sku": "9NFHWSJ3JWSC",
-        "distributor": "xbox"
+        "id": "41140",
+        "sku": "41140",
+        "distributor": "gop"
       },
       {
         "id": "548430",
@@ -10583,19 +10644,19 @@
         "distributor": "steam"
       },
       {
-        "id": "14949",
-        "sku": "14949",
-        "distributor": "steam"
-      },
-      {
-        "id": "41140",
-        "sku": "41140",
-        "distributor": "gop"
-      },
-      {
         "id": "9NHFVWX1V7QJ",
         "sku": "9NHFVWX1V7QJ",
         "distributor": "xbox"
+      },
+      {
+        "id": "9NFHWSJ3JWSC",
+        "sku": "9NFHWSJ3JWSC",
+        "distributor": "xbox"
+      },
+      {
+        "id": "14949",
+        "sku": "14949",
+        "distributor": "steam"
       },
       {
         "id": "PPSA02967_00",
@@ -10688,12 +10749,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "win_x64/huntgame.exe",
+              "name": "hunt showdown/hunt.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "hunt showdown/hunt.exe",
+              "name": "win_x64/huntgame.exe",
               "is_launcher": false
             }
           ],
@@ -10713,12 +10774,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "win_x64/huntgame.exe",
+        "name": "hunt showdown/hunt.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "hunt showdown/hunt.exe",
+        "name": "win_x64/huntgame.exe",
         "is_launcher": false
       }
     ],
@@ -10802,9 +10863,9 @@
     "splash": "149210e7069943518df545565dbb8f7f",
     "third_party_skus": [
       {
-        "id": "1049",
-        "sku": "1049",
-        "distributor": "gop"
+        "id": "70",
+        "sku": "70",
+        "distributor": "steam"
       },
       {
         "id": "231",
@@ -10812,9 +10873,9 @@
         "distributor": "igdb"
       },
       {
-        "id": "70",
-        "sku": "70",
-        "distributor": "steam"
+        "id": "1049",
+        "sku": "1049",
+        "distributor": "gop"
       }
     ],
     "hook": true,
@@ -10846,9 +10907,9 @@
     "splash": "c38f8822fa7d54eb12acd546c8f1d22f",
     "third_party_skus": [
       {
-        "id": "NPUB31665_00",
-        "sku": "NPUB31665_00",
-        "distributor": "playstation"
+        "id": "26000",
+        "sku": "26000",
+        "distributor": "gop"
       },
       {
         "id": "311210",
@@ -10861,9 +10922,9 @@
         "distributor": "xbox"
       },
       {
-        "id": "26000",
-        "sku": "26000",
-        "distributor": "gop"
+        "id": "NPUB31665_00",
+        "sku": "NPUB31665_00",
+        "distributor": "playstation"
       }
     ],
     "overlay": true,
@@ -10874,12 +10935,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "blackops3.exe",
+        "name": "call of duty black ops iii/boiii.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "call of duty black ops iii/boiii.exe",
+        "name": "blackops3.exe",
         "is_launcher": false
       }
     ],
@@ -10904,11 +10965,6 @@
     "splash": "8f4c6a58ab9bb909df9b42cee8934dff",
     "third_party_skus": [
       {
-        "id": "20108",
-        "sku": "20108",
-        "distributor": "gop"
-      },
-      {
         "id": "BQD45PQR4F4J",
         "sku": "BQD45PQR4F4J",
         "distributor": "xbox"
@@ -10917,6 +10973,11 @@
         "id": "250900",
         "sku": "250900",
         "distributor": "steam"
+      },
+      {
+        "id": "20108",
+        "sku": "20108",
+        "distributor": "gop"
       }
     ],
     "overlay": true,
@@ -10927,7 +10988,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "roomeditor/roomeditor.exe",
+        "name": "isaac-ng.exe",
         "is_launcher": false
       },
       {
@@ -10937,17 +10998,17 @@
       },
       {
         "os": "win32",
-        "name": "isaacanimationeditor/isaacanimationeditor.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "isaac-ng.exe",
+        "name": "roomeditor/roomeditor.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "isaacitempooleditor/itempooleditor.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "isaacanimationeditor/isaacanimationeditor.exe",
         "is_launcher": false
       }
     ],
@@ -11023,6 +11084,11 @@
     "splash": "8eda4b54761775a6a4759a26811d66de",
     "third_party_skus": [
       {
+        "id": "9N4RSG99KV1X",
+        "sku": "9N4RSG99KV1X",
+        "distributor": "xbox"
+      },
+      {
         "id": "CUSA15322_00",
         "sku": "CUSA15322_00",
         "distributor": "playstation"
@@ -11031,11 +11097,6 @@
         "id": "289070",
         "sku": "289070",
         "distributor": "steam"
-      },
-      {
-        "id": "9N4RSG99KV1X",
-        "sku": "9N4RSG99KV1X",
-        "distributor": "xbox"
       },
       {
         "id": "66774",
@@ -11071,13 +11132,48 @@
     "cover_image": "5c6fbc9c2ed685eb7dfc23de07cea30b",
     "third_party_skus": [
       {
+        "id": "9NMGP6S6NJPR",
+        "sku": "9NMGP6S6NJPR",
+        "distributor": "xbox"
+      },
+      {
+        "id": "9MTJKT12QRFB",
+        "sku": "9MTJKT12QRFB",
+        "distributor": "xbox"
+      },
+      {
+        "id": "52F57F57120C440FAD9BFA0E6C279317",
+        "sku": "52F57F57120C440FAD9BFA0E6C279317",
+        "distributor": "epic"
+      },
+      {
+        "id": "125166",
+        "sku": "125166",
+        "distributor": "igdb"
+      },
+      {
+        "id": "9PD5BFNZ4V7K",
+        "sku": "9PD5BFNZ4V7K",
+        "distributor": "xbox"
+      },
+      {
+        "id": "9P0T51BDDWVT",
+        "sku": "9P0T51BDDWVT",
+        "distributor": "xbox"
+      },
+      {
+        "id": "80530",
+        "sku": "80530",
+        "distributor": "gop"
+      },
+      {
         "id": "PPSA01464_00",
         "sku": "PPSA01464_00",
         "distributor": "playstation"
       },
       {
-        "id": "9P0T51BDDWVT",
-        "sku": "9P0T51BDDWVT",
+        "id": "9PF3LTSF9K18",
+        "sku": "9PF3LTSF9K18",
         "distributor": "xbox"
       },
       {
@@ -11089,41 +11185,6 @@
         "id": "1517290",
         "sku": "1517290",
         "distributor": "steam"
-      },
-      {
-        "id": "80530",
-        "sku": "80530",
-        "distributor": "gop"
-      },
-      {
-        "id": "52F57F57120C440FAD9BFA0E6C279317",
-        "sku": "52F57F57120C440FAD9BFA0E6C279317",
-        "distributor": "epic"
-      },
-      {
-        "id": "9PD5BFNZ4V7K",
-        "sku": "9PD5BFNZ4V7K",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9NMGP6S6NJPR",
-        "sku": "9NMGP6S6NJPR",
-        "distributor": "xbox"
-      },
-      {
-        "id": "125166",
-        "sku": "125166",
-        "distributor": "igdb"
-      },
-      {
-        "id": "9PF3LTSF9K18",
-        "sku": "9PF3LTSF9K18",
-        "distributor": "xbox"
-      },
-      {
-        "id": "9MTJKT12QRFB",
-        "sku": "9MTJKT12QRFB",
-        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -11182,9 +11243,14 @@
         "distributor": "epic"
       },
       {
-        "id": "C24SVX28PNWM/0001/9RR6K5T2TSLM",
-        "sku": "C24SVX28PNWM/0001/9RR6K5T2TSLM",
+        "id": "C3KLDKZBHNCZ",
+        "sku": "C3KLDKZBHNCZ",
         "distributor": "xbox"
+      },
+      {
+        "id": "PPSA09016_00",
+        "sku": "PPSA09016_00",
+        "distributor": "playstation"
       },
       {
         "id": "377160",
@@ -11192,19 +11258,14 @@
         "distributor": "steam"
       },
       {
-        "id": "C3KLDKZBHNCZ",
-        "sku": "C3KLDKZBHNCZ",
+        "id": "C24SVX28PNWM/0001/9RR6K5T2TSLM",
+        "sku": "C24SVX28PNWM/0001/9RR6K5T2TSLM",
         "distributor": "xbox"
       },
       {
         "id": "22530",
         "sku": "22530",
         "distributor": "gop"
-      },
-      {
-        "id": "PPSA09016_00",
-        "sku": "PPSA09016_00",
-        "distributor": "playstation"
       }
     ],
     "hook": true,
@@ -11236,6 +11297,11 @@
     "splash": "fdd5d30ff7a802d7ec38f2dff0e63046",
     "third_party_skus": [
       {
+        "id": "BNG91PT95LQN",
+        "sku": "BNG91PT95LQN",
+        "distributor": "xbox"
+      },
+      {
         "id": "41261",
         "sku": "41261",
         "distributor": "gop"
@@ -11244,11 +11310,6 @@
         "id": "582010",
         "sku": "582010",
         "distributor": "steam"
-      },
-      {
-        "id": "BNG91PT95LQN",
-        "sku": "BNG91PT95LQN",
-        "distributor": "xbox"
       }
     ],
     "hook": true,
@@ -11289,11 +11350,6 @@
     "splash": "b28637baca23553de6d9747f8a1110ad",
     "third_party_skus": [
       {
-        "id": "9P7RBKDTN18T",
-        "sku": "9P7RBKDTN18T",
-        "distributor": "xbox"
-      },
-      {
         "id": "44329",
         "sku": "44329",
         "distributor": "gop"
@@ -11302,6 +11358,11 @@
         "id": "648800",
         "sku": "648800",
         "distributor": "steam"
+      },
+      {
+        "id": "9P7RBKDTN18T",
+        "sku": "9P7RBKDTN18T",
+        "distributor": "xbox"
       },
       {
         "id": "PPSA23241_00",
@@ -11338,14 +11399,19 @@
     "cover_image": "f963106d204a9fd7a14bbba8140c5ed2",
     "third_party_skus": [
       {
-        "id": "9P6F6TBGGVK3",
-        "sku": "9P6F6TBGGVK3",
-        "distributor": "xbox"
+        "id": "CUSA16153_00",
+        "sku": "CUSA16153_00",
+        "distributor": "playstation"
       },
       {
-        "id": "39816",
-        "sku": "39816",
-        "distributor": "gop"
+        "id": "632360",
+        "sku": "632360",
+        "distributor": "steam"
+      },
+      {
+        "id": "0DFCAEEDE0214B80B597F08FD7D64B1B",
+        "sku": "0DFCAEEDE0214B80B597F08FD7D64B1B",
+        "distributor": "epic"
       },
       {
         "id": "PPSA06516_00",
@@ -11358,19 +11424,14 @@
         "distributor": "xbox"
       },
       {
-        "id": "0DFCAEEDE0214B80B597F08FD7D64B1B",
-        "sku": "0DFCAEEDE0214B80B597F08FD7D64B1B",
-        "distributor": "epic"
+        "id": "9P6F6TBGGVK3",
+        "sku": "9P6F6TBGGVK3",
+        "distributor": "xbox"
       },
       {
-        "id": "632360",
-        "sku": "632360",
-        "distributor": "steam"
-      },
-      {
-        "id": "CUSA16153_00",
-        "sku": "CUSA16153_00",
-        "distributor": "playstation"
+        "id": "39816",
+        "sku": "39816",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -11425,12 +11486,12 @@
           "executables": [
             {
               "os": "win32",
-              "name": "risk of rain 2.exe",
+              "name": "risk of rain 2/risk of rain 2.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
-              "name": "risk of rain 2/risk of rain 2.exe",
+              "name": "risk of rain 2.exe",
               "is_launcher": false
             }
           ],
@@ -11450,12 +11511,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "risk of rain 2.exe",
+        "name": "risk of rain 2/risk of rain 2.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "risk of rain 2/risk of rain 2.exe",
+        "name": "risk of rain 2.exe",
         "is_launcher": false
       }
     ],
@@ -11481,14 +11542,14 @@
     "cover_image": "cb794c39f5151a5c53165c286a2cedc4",
     "third_party_skus": [
       {
-        "id": "1599340",
-        "sku": "1599340",
-        "distributor": "steam"
-      },
-      {
         "id": "41597",
         "sku": "41597",
         "distributor": "gop"
+      },
+      {
+        "id": "1599340",
+        "sku": "1599340",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -11524,9 +11585,9 @@
     "cover_image": "fa07954eabfd2492282932c43a13cbaa",
     "third_party_skus": [
       {
-        "id": "216150",
-        "sku": "216150",
-        "distributor": "steam"
+        "id": "26267",
+        "sku": "26267",
+        "distributor": "gop"
       },
       {
         "id": "9804",
@@ -11534,9 +11595,9 @@
         "distributor": "igdb"
       },
       {
-        "id": "26267",
-        "sku": "26267",
-        "distributor": "gop"
+        "id": "216150",
+        "sku": "216150",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -11569,14 +11630,19 @@
     "cover_image": "b9ebf2230a367b918bf7489520e12126",
     "third_party_skus": [
       {
+        "id": "9N12RXDZ9WV3",
+        "sku": "9N12RXDZ9WV3",
+        "distributor": "xbox"
+      },
+      {
         "id": "15657",
         "sku": "15657",
         "distributor": "uplay"
       },
       {
-        "id": "9N12RXDZ9WV3",
-        "sku": "9N12RXDZ9WV3",
-        "distributor": "xbox"
+        "id": "PPSA02734_00",
+        "sku": "PPSA02734_00",
+        "distributor": "playstation"
       },
       {
         "id": "A53BAA615CEA46F08A8BCBC11D4614AF",
@@ -11587,11 +11653,6 @@
         "id": "88892",
         "sku": "88892",
         "distributor": "gop"
-      },
-      {
-        "id": "PPSA02734_00",
-        "sku": "PPSA02734_00",
-        "distributor": "playstation"
       }
     ],
     "bot": {
@@ -11644,11 +11705,6 @@
     "splash": "67be84bd214e91241cdba7c41e0ac9b8",
     "third_party_skus": [
       {
-        "id": "346110",
-        "sku": "346110",
-        "distributor": "steam"
-      },
-      {
         "id": "4462",
         "sku": "4462",
         "distributor": "steam"
@@ -11672,6 +11728,11 @@
         "id": "CUSA06676_00",
         "sku": "CUSA06676_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "346110",
+        "sku": "346110",
+        "distributor": "steam"
       }
     ],
     "overlay": true,
@@ -11683,12 +11744,12 @@
     "executables": [
       {
         "os": "win32",
-        "name": "shootergame.exe",
+        "name": "win64/shootergameserver.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
-        "name": "win64/shootergameserver.exe",
+        "name": "shootergame.exe",
         "is_launcher": false
       },
       {
@@ -11722,18 +11783,13 @@
     "cover_image": "a4bc96548d4fb8776f2149a9d41f7ad0",
     "third_party_skus": [
       {
-        "id": "CUSA41724_00",
-        "sku": "CUSA41724_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "9PB12XV0FXL5",
         "sku": "9PB12XV0FXL5",
         "distributor": "xbox"
       },
       {
-        "id": "PPSA15178_00",
-        "sku": "PPSA15178_00",
+        "id": "CUSA41724_00",
+        "sku": "CUSA41724_00",
         "distributor": "playstation"
       },
       {
@@ -11742,14 +11798,19 @@
         "distributor": "steam"
       },
       {
-        "id": "85969",
-        "sku": "85969",
-        "distributor": "gop"
+        "id": "PPSA15178_00",
+        "sku": "PPSA15178_00",
+        "distributor": "playstation"
       },
       {
         "id": "9N9L211HC9LQ",
         "sku": "9N9L211HC9LQ",
         "distributor": "xbox"
+      },
+      {
+        "id": "85969",
+        "sku": "85969",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -11799,14 +11860,14 @@
     "splash": "be4bb04701b0aba0a2d725d37ce96a06",
     "third_party_skus": [
       {
-        "id": "506540",
-        "sku": "506540",
-        "distributor": "steam"
-      },
-      {
         "id": "38110",
         "sku": "38110",
         "distributor": "gop"
+      },
+      {
+        "id": "506540",
+        "sku": "506540",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -11892,14 +11953,14 @@
     "cover_image": "9526f29c88a4e2e31dd68ab4fe16b889",
     "third_party_skus": [
       {
-        "id": "1568590",
-        "sku": "1568590",
-        "distributor": "steam"
-      },
-      {
         "id": "86904",
         "sku": "86904",
         "distributor": "gop"
+      },
+      {
+        "id": "1568590",
+        "sku": "1568590",
+        "distributor": "steam"
       }
     ],
     "hook": true,
@@ -11938,9 +11999,9 @@
         "distributor": "playstation"
       },
       {
-        "id": "9N9GL8NX4WW8",
-        "sku": "9N9GL8NX4WW8",
-        "distributor": "xbox"
+        "id": "PPSA02503_00",
+        "sku": "PPSA02503_00",
+        "distributor": "playstation"
       },
       {
         "id": "88928",
@@ -11948,14 +12009,14 @@
         "distributor": "gop"
       },
       {
-        "id": "PPSA02503_00",
-        "sku": "PPSA02503_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "1449850",
         "sku": "1449850",
         "distributor": "steam"
+      },
+      {
+        "id": "9N9GL8NX4WW8",
+        "sku": "9N9GL8NX4WW8",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -12042,19 +12103,9 @@
     "cover_image": "ed64365647859f0885ffad31eece9bd2",
     "third_party_skus": [
       {
-        "id": "9MV90FHCV6LZ",
-        "sku": "9MV90FHCV6LZ",
-        "distributor": "xbox"
-      },
-      {
         "id": "0E548758B82A4BE785F435CEDF306130",
         "sku": "0E548758B82A4BE785F435CEDF306130",
         "distributor": "epic"
-      },
-      {
-        "id": "81682",
-        "sku": "81682",
-        "distributor": "gop"
       },
       {
         "id": "9NWQ1Q1FR0C9",
@@ -12062,14 +12113,24 @@
         "distributor": "xbox"
       },
       {
-        "id": "2358720",
-        "sku": "2358720",
-        "distributor": "steam"
+        "id": "9MV90FHCV6LZ",
+        "sku": "9MV90FHCV6LZ",
+        "distributor": "xbox"
       },
       {
         "id": "PPSA23226_00",
         "sku": "PPSA23226_00",
         "distributor": "playstation"
+      },
+      {
+        "id": "2358720",
+        "sku": "2358720",
+        "distributor": "steam"
+      },
+      {
+        "id": "81682",
+        "sku": "81682",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -12199,8 +12260,8 @@
     "privacy_policy_url": "https://docs.midjourney.com/docs/privacy-policy",
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "2147601472"
     },
@@ -12208,8 +12269,8 @@
       "0": {
         "oauth2_install_params": {
           "scopes": [
-            "applications.commands",
-            "bot"
+            "bot",
+            "applications.commands"
           ],
           "permissions": "2147601472"
         }
@@ -12246,14 +12307,14 @@
     "cover_image": "f3430d803784f5f42365eefbe8d89add",
     "third_party_skus": [
       {
-        "id": "9NRMZXGKP4NM",
-        "sku": "9NRMZXGKP4NM",
-        "distributor": "xbox"
+        "id": "PPSA28881_00",
+        "sku": "PPSA28881_00",
+        "distributor": "playstation"
       },
       {
-        "id": "2507950",
-        "sku": "2507950",
-        "distributor": "steam"
+        "id": "3E2C28241611405AA231308A39BEE638",
+        "sku": "3E2C28241611405AA231308A39BEE638",
+        "distributor": "epic"
       },
       {
         "id": "114150",
@@ -12261,19 +12322,19 @@
         "distributor": "gop"
       },
       {
-        "id": "PPSA28881_00",
-        "sku": "PPSA28881_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "262186",
         "sku": "262186",
         "distributor": "igdb"
       },
       {
-        "id": "3E2C28241611405AA231308A39BEE638",
-        "sku": "3E2C28241611405AA231308A39BEE638",
-        "distributor": "epic"
+        "id": "2507950",
+        "sku": "2507950",
+        "distributor": "steam"
+      },
+      {
+        "id": "9NRMZXGKP4NM",
+        "sku": "9NRMZXGKP4NM",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -12301,17 +12362,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "deltaforceclient.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "launcher/df_launcher_global.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       },
       {
@@ -12321,7 +12372,17 @@
       },
       {
         "os": "win32",
+        "name": "deltaforceclient.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "launcher/df_launcher.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "win64/deltaforceclient-win64-shipping.exe",
         "is_launcher": false
       }
     ],
@@ -12346,11 +12407,6 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "PPSA02562_00",
-        "sku": "PPSA02562_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "879B0D8776AB46A59A129983BA78F0CE",
         "sku": "879B0D8776AB46A59A129983BA78F0CE",
         "distributor": "epic"
@@ -12364,6 +12420,11 @@
         "id": "71813",
         "sku": "71813",
         "distributor": "gop"
+      },
+      {
+        "id": "PPSA02562_00",
+        "sku": "PPSA02562_00",
+        "distributor": "playstation"
       }
     ],
     "hook": true,
@@ -12449,13 +12510,13 @@
           "guild_id": "188630481301012481",
           "executables": [
             {
-              "os": "darwin",
-              "name": "osu!.app",
+              "os": "win32",
+              "name": "osu!.exe",
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "osu!.exe",
+              "os": "darwin",
+              "name": "osu!.app",
               "is_launcher": false
             }
           ],
@@ -12472,13 +12533,13 @@
     "hook": true,
     "executables": [
       {
-        "os": "darwin",
-        "name": "osu!.app",
+        "os": "win32",
+        "name": "osu!.exe",
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "osu!.exe",
+        "os": "darwin",
+        "name": "osu!.app",
         "is_launcher": false
       }
     ],
@@ -12504,14 +12565,9 @@
     "cover_image": "fa991688a6c06895e4ed4b0d3ce4716e",
     "third_party_skus": [
       {
-        "id": "C596FKDKMQN7",
-        "sku": "C596FKDKMQN7",
-        "distributor": "xbox"
-      },
-      {
-        "id": "753640",
-        "sku": "753640",
-        "distributor": "steam"
+        "id": "STARFISH",
+        "sku": "STARFISH",
+        "distributor": "epic"
       },
       {
         "id": "PPSA08101_00",
@@ -12519,14 +12575,19 @@
         "distributor": "playstation"
       },
       {
+        "id": "753640",
+        "sku": "753640",
+        "distributor": "steam"
+      },
+      {
         "id": "27319",
         "sku": "27319",
         "distributor": "gop"
       },
       {
-        "id": "STARFISH",
-        "sku": "STARFISH",
-        "distributor": "epic"
+        "id": "C596FKDKMQN7",
+        "sku": "C596FKDKMQN7",
+        "distributor": "xbox"
       }
     ],
     "bot": {
@@ -12683,14 +12744,14 @@
     "splash": "b82e4ce1bb3835f5adfd9a1e766844ae",
     "third_party_skus": [
       {
-        "id": "EXPDGL0000000000",
-        "sku": "EXPDGL0000000000",
-        "distributor": "playstation"
+        "id": "Fortnite",
+        "sku": "Fortnite",
+        "distributor": "epic"
       },
       {
-        "id": "45364",
-        "sku": "45364",
-        "distributor": "gop"
+        "id": "BT5P2X999VH2",
+        "sku": "BT5P2X999VH2",
+        "distributor": "xbox"
       },
       {
         "id": "9N84B8L89PDW",
@@ -12698,19 +12759,9 @@
         "distributor": "xbox"
       },
       {
-        "id": "PPSA01922_00",
-        "sku": "PPSA01922_00",
-        "distributor": "playstation"
-      },
-      {
-        "id": "Fortnite",
-        "sku": "Fortnite",
-        "distributor": "epic"
-      },
-      {
-        "id": "9MW1TQ8MNZ1G",
-        "sku": "9MW1TQ8MNZ1G",
-        "distributor": "xbox"
+        "id": "45364",
+        "sku": "45364",
+        "distributor": "gop"
       },
       {
         "id": "9NM62SDWFBBG",
@@ -12718,8 +12769,18 @@
         "distributor": "xbox"
       },
       {
-        "id": "BT5P2X999VH2",
-        "sku": "BT5P2X999VH2",
+        "id": "EXPDGL0000000000",
+        "sku": "EXPDGL0000000000",
+        "distributor": "playstation"
+      },
+      {
+        "id": "PPSA01922_00",
+        "sku": "PPSA01922_00",
+        "distributor": "playstation"
+      },
+      {
+        "id": "9MW1TQ8MNZ1G",
+        "sku": "9MW1TQ8MNZ1G",
         "distributor": "xbox"
       }
     ],
@@ -12821,9 +12882,9 @@
           "guild_id": "322850917248663552",
           "executables": [
             {
-              "os": "darwin",
-              "name": "fortniteclient-mac-shipping.app",
-              "is_launcher": false
+              "os": "win32",
+              "name": "fortniteclient-win64-shipping_eac_eos.exe",
+              "is_launcher": true
             },
             {
               "os": "win32",
@@ -12831,9 +12892,9 @@
               "is_launcher": false
             },
             {
-              "os": "win32",
-              "name": "fortniteclient-win64-shipping_eac_eos.exe",
-              "is_launcher": true
+              "os": "darwin",
+              "name": "fortniteclient-mac-shipping.app",
+              "is_launcher": false
             }
           ],
           "storefront_available": false,
@@ -12853,9 +12914,9 @@
     ],
     "executables": [
       {
-        "os": "darwin",
-        "name": "fortniteclient-mac-shipping.app",
-        "is_launcher": false
+        "os": "win32",
+        "name": "fortniteclient-win64-shipping_eac_eos.exe",
+        "is_launcher": true
       },
       {
         "os": "win32",
@@ -12863,9 +12924,9 @@
         "is_launcher": false
       },
       {
-        "os": "win32",
-        "name": "fortniteclient-win64-shipping_eac_eos.exe",
-        "is_launcher": true
+        "os": "darwin",
+        "name": "fortniteclient-mac-shipping.app",
+        "is_launcher": false
       }
     ],
     "storefront_available": false,
@@ -12891,14 +12952,14 @@
     "splash": "e970e33dd647f87dc87f4dc4b28f4627",
     "third_party_skus": [
       {
-        "id": "CUSA06122_00",
-        "sku": "CUSA06122_00",
-        "distributor": "playstation"
-      },
-      {
         "id": "26219",
         "sku": "26219",
         "distributor": "gop"
+      },
+      {
+        "id": "CUSA06122_00",
+        "sku": "CUSA06122_00",
+        "distributor": "playstation"
       },
       {
         "id": "BQ1TN1T79V9K",
@@ -12915,7 +12976,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "roblox.exe",
+        "name": "robloxplayerbeta.exe",
         "is_launcher": false
       },
       {
@@ -12925,7 +12986,7 @@
       },
       {
         "os": "win32",
-        "name": "robloxplayerbeta.exe",
+        "name": "roblox.exe",
         "is_launcher": false
       }
     ],
@@ -13024,18 +13085,8 @@
           "guild_id": "417825368062558219",
           "executables": [
             {
-              "os": "win32",
-              "name": "leagueclientux.exe",
-              "is_launcher": true
-            },
-            {
-              "os": "win32",
-              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-              "is_launcher": false
-            },
-            {
-              "os": "win32",
-              "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+              "os": "darwin",
+              "name": "leagueoflegends.app",
               "is_launcher": false
             },
             {
@@ -13044,13 +13095,23 @@
               "is_launcher": false
             },
             {
-              "os": "darwin",
-              "name": "leagueoflegends.app",
+              "os": "win32",
+              "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
               "is_launcher": false
             },
             {
               "os": "win32",
               "name": "league of legends.exe",
+              "is_launcher": false
+            },
+            {
+              "os": "win32",
+              "name": "leagueclientux.exe",
+              "is_launcher": true
+            },
+            {
+              "os": "win32",
+              "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
               "is_launcher": false
             }
           ],
@@ -13070,18 +13131,8 @@
     ],
     "executables": [
       {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "os": "darwin",
+        "name": "leagueoflegends.app",
         "is_launcher": false
       },
       {
@@ -13090,13 +13141,23 @@
         "is_launcher": false
       },
       {
-        "os": "darwin",
-        "name": "leagueoflegends.app",
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
         "os": "win32",
         "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       }
     ],
@@ -13161,8 +13222,8 @@
     "bot_require_code_grant": false,
     "install_params": {
       "scopes": [
-        "applications.commands",
-        "bot"
+        "bot",
+        "applications.commands"
       ],
       "permissions": "0"
     },
@@ -13437,14 +13498,14 @@
     "cover_image": "d018bf5df854aaa50dc143d2f87d3dde",
     "third_party_skus": [
       {
-        "id": "1926680",
-        "sku": "1926680",
-        "distributor": "steam"
-      },
-      {
         "id": "124262",
         "sku": "124262",
         "distributor": "gop"
+      },
+      {
+        "id": "1926680",
+        "sku": "1926680",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -13663,14 +13724,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "125727",
-        "sku": "125727",
-        "distributor": "gop"
-      },
-      {
         "id": "1183970",
         "sku": "1183970",
         "distributor": "steam"
+      },
+      {
+        "id": "125727",
+        "sku": "125727",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -14077,14 +14138,14 @@
     "cover_image": "2901fde162e286f0e2917a37fbd63e16",
     "third_party_skus": [
       {
-        "id": "817840",
-        "sku": "817840",
-        "distributor": "steam"
-      },
-      {
         "id": "77870",
         "sku": "77870",
         "distributor": "gop"
+      },
+      {
+        "id": "817840",
+        "sku": "817840",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -14444,14 +14505,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "765900",
-        "sku": "765900",
-        "distributor": "steam"
-      },
-      {
         "id": "98798",
         "sku": "98798",
         "distributor": "gop"
+      },
+      {
+        "id": "765900",
+        "sku": "765900",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -14552,14 +14613,14 @@
     "cover_image": "edb4442501a4c9d4faa8552488e59f04",
     "third_party_skus": [
       {
-        "id": "83531",
-        "sku": "83531",
-        "distributor": "gop"
-      },
-      {
         "id": "1085750",
         "sku": "1085750",
         "distributor": "steam"
+      },
+      {
+        "id": "83531",
+        "sku": "83531",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -15176,14 +15237,14 @@
     "cover_image": "e7a59e6a3e68f73ee918c15421f1b4df",
     "third_party_skus": [
       {
-        "id": "1948450",
-        "sku": "1948450",
-        "distributor": "steam"
-      },
-      {
         "id": "110379",
         "sku": "110379",
         "distributor": "gop"
+      },
+      {
+        "id": "1948450",
+        "sku": "1948450",
+        "distributor": "steam"
       }
     ],
     "bot": {
@@ -15595,14 +15656,14 @@
     "is_discoverable": false,
     "third_party_skus": [
       {
-        "id": "111610",
-        "sku": "111610",
-        "distributor": "gop"
-      },
-      {
         "id": "878750",
         "sku": "878750",
         "distributor": "steam"
+      },
+      {
+        "id": "111610",
+        "sku": "111610",
+        "distributor": "gop"
       }
     ],
     "bot": {
@@ -16219,14 +16280,14 @@
     "cover_image": "07887b6b9b1f05e4a73e12484bb679dc",
     "third_party_skus": [
       {
-        "id": "122614",
-        "sku": "122614",
-        "distributor": "gop"
-      },
-      {
         "id": "3015610",
         "sku": "3015610",
         "distributor": "steam"
+      },
+      {
+        "id": "122614",
+        "sku": "122614",
+        "distributor": "gop"
       }
     ],
     "bot": {
