@@ -237,7 +237,7 @@
   <li style="font-weight: 400" aria-level="1">
     <span style="font-weight: 400"
       >Select<strong>
-        Appeal my server’s age-restricted designation</strong
+        <span style="color: #2f3941">NSFW Server Owner Appeals</span></strong
       ></span
     >
   </li>
@@ -281,7 +281,9 @@
 <ul>
   <li style="font-weight: 400" aria-level="1">
     <span style="font-weight: 400"
-      >Select “Appeals, age update, other questions”</span
+      >Select “<span style="color: #2f3941">A</span
+      ><span style="color: #2f3941">ppeals &amp; Age Update Requests</span
+      >”</span
     >
   </li>
   <li style="font-weight: 400" aria-level="1">
