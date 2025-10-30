@@ -61149,12 +61149,6 @@ without specific prior written permission.</code></pre>
                 <nav class="dropdownList-SxQKye">
                   <a
                     class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
-                    href="/college"
-                    ><span class="text-2H5FnP textSmall-Rm6-Ys"
-                      >College</span
-                    ></a
-                  ><a
-                    class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
                     href="//support.discord.com/hc/en-us"
                     ><span class="text-2H5FnP textSmall-Rm6-Ys"
                       >Support</span
@@ -61172,12 +61166,6 @@ without specific prior written permission.</code></pre>
                     href="//feedback.discord.com"
                     ><span class="text-2H5FnP textSmall-Rm6-Ys"
                       >Feedback</span
-                    ></a
-                  ><a
-                    class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
-                    href="/streamkit"
-                    ><span class="text-2H5FnP textSmall-Rm6-Ys"
-                      >StreamKit</span
                     ></a
                   ><a
                     class="link-1naFFL linkDefault-3q74_X navLink-33dQx3"
