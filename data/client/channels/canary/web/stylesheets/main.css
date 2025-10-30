@@ -53825,7 +53825,7 @@ html .progress__61462 {
   width: 100%;
 }
 .select__81a06 {
-  max-width: 400px;
+  max-width: 100%;
   width: 400px;
 }
 .inModal__81a06 {
@@ -53846,7 +53846,7 @@ html .progress__61462 {
   width: 100%;
 }
 .select__28e94 {
-  max-width: 400px;
+  max-width: 100%;
   width: 400px;
 }
 .inModal__28e94 {
@@ -94989,4 +94989,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.99abde9341e874f6.css.map*/
+/*# sourceMappingURL=12633.218338ecfc81dc40.css.map*/
