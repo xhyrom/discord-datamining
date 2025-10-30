@@ -3226,11 +3226,6 @@
             <nav class="dropdown-list-footer w-dropdown-list">
               <div class="padding-16px show-landscape"></div>
               <a
-                data-track="college"
-                href="/college"
-                class="link-footer top-new-link"
-                >College</a
-              ><a
                 data-track="support"
                 href="https://support.discord.com/hc"
                 class="link-footer top-new-link"
@@ -3245,11 +3240,6 @@
                 href="/blog"
                 class="link-footer top-new-link"
                 >Blog</a
-              ><a
-                data-track="streamkit"
-                href="/streamkit"
-                class="link-footer top-new-link"
-                >StreamKit</a
               ><a
                 data-track="creators"
                 href="/creators"
