@@ -3030,6 +3030,8 @@
             COLLECTIBLES_PRODUCTS: (t) => "/collectibles-products/".concat(t),
             COLLECTIBLES_VALID_GIFT_RECIPIENT:
               "/users/@me/valid-collectibles-gift-recipient",
+            COLLECTIBLES_VALID_GIFT_RECIPIENTS_BATCH:
+              "/users/@me/valid-collectibles-gift-recipients-batch",
             COLLECTIBLES_MARKETING: "/users/@me/collectibles-marketing",
             COLLECTIBLES_SHOP: "/collectibles-shop",
             CONSUMABLE_FETCH_PRICE: (t) =>
@@ -3575,7 +3577,6 @@
             STICKER_PACK: (t) => "/sticker-packs/".concat(t),
             STORE_DIRECTORY_LAYOUT_STICKER_PACKS: (t) =>
               "/sticker-packs/directory-v2/".concat(t),
-            USER_STICKER_PACKS: "/users/@me/sticker-packs",
             STICKER_ASSET: (t, e) => "/stickers/".concat(t, ".").concat(e),
             STICKER: (t) => "/stickers/".concat(t),
             STICKER_PACKS: "/sticker-packs",
@@ -6759,7 +6760,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-30-9861980d14c8a44ed6ab11d2cae4077088081d2d-discord_web",
+              "2025-10-31-b0650beeb16633aafa9a3a059e3cca1cb2fc27d8-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6825,8 +6826,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "463311"),
-            o.YA("builtAt", String("1761808726620"));
+            o.YA("buildNumber", "463817"),
+            o.YA("builtAt", String("1761895585519"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11092,7 +11093,7 @@
                 return { resolve: (a, r) => e(t[a].nativeStyles, r) };
               }
               return {
-                shadowOffset: e((t) => t.shadowOffset),
+                shadowOffset: e((t, e) => (e ? void 0 : t.shadowOffset)),
                 shadowColor: e((t, e) =>
                   e ? t.shadowColorAndroid : t.shadowColor,
                 ),
@@ -48593,4 +48594,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2b5fb28a15f6c6a6.js.map
+//# sourceMappingURL=sentry.cc2d6b1a41437e4b.js.map
