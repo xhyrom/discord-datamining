@@ -11148,6 +11148,9 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   display: flex;
   gap: 8px;
 }
+.tabularNums__6132c {
+  font-variant-numeric: tabular-nums;
+}
 .headerWithSpacing__6132c {
   margin-bottom: 8px;
   margin-top: 4px;
@@ -96411,4 +96414,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.3da1e7f0994a463e.css.map*/
+/*# sourceMappingURL=12633.dfccf9f15d71bb1e.css.map*/
