@@ -36523,17 +36523,30 @@ body .headerAnimation_b54a5b {
   background-position: 50%;
   background-size: cover;
   border-radius: var(--radius-xs);
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 .cardContainer__47729.square__47729 {
   aspect-ratio: 1;
+}
+.cardBackgroundImage__47729 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  inset-inline: 0;
+  bottom: 0;
+  position: absolute;
+  top: 0;
 }
 .skuImage__47729 {
   border-radius: var(--radius-xs);
   max-width: 100%;
   object-fit: contain;
   width: 100%;
+  z-index: 1;
 }
 .skuImage__47729.square__47729 {
   transform: scale(2);
@@ -49262,6 +49275,9 @@ h3.improved__1689b:after {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.nameplatePreviewPlaceholder__14af9 {
+  background: var(--background-mod-normal);
+}
 .settingsPage_f131e9 {
   display: flex;
   flex-direction: column;
@@ -49629,7 +49645,7 @@ h3.improved__1689b:after {
   position: sticky;
   z-index: 100;
 }
-.nameplatePreview__39749 {
+.nameplatePreviewPlaceholder__39749 {
   background: var(--background-mod-normal);
 }
 .divider_d6f9e9 {
@@ -95034,4 +95050,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b3fab591957aa719.css.map*/
+/*# sourceMappingURL=12633.e143867a2fc1e35b.css.map*/
