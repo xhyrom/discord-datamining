@@ -536,5 +536,11 @@
 <div class="warn-box">
   <strong>Important:</strong> Discord Support can help with updating your game
   server information within the app and other in-app functions, but extensive,
-  technical inquiries must be forwarded to Shockbyte Support.<br /> 
+  technical inquiries must be forwarded to Shockbyte Support.
 </div>
+<p><strong>Q: How can I disable my game server? </strong></p>
+<p>
+  A: As a server admin or owner, head to the Server Boosts tab &gt; Create Game
+  Server and then press Disable Perk under the specific game server you want to
+  disable. 
+</p>
