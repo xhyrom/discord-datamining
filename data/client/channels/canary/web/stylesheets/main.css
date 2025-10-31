@@ -41989,6 +41989,7 @@ div.mobilePushContainer__3d3b0 {
   width: 100%;
 }
 .avatar__44b0c,
+.avatarLatched__44b0c,
 .avatarSpeaking__44b0c {
   grid-area: 1/1;
   height: 100%;
@@ -42010,6 +42011,12 @@ div.mobilePushContainer__3d3b0 {
   border-radius: 50%;
   box-shadow:
     inset 0 0 0 2px var(--status-speaking),
+    inset 0 0 0 3px var(--background-base-lower);
+}
+.avatarLatched__44b0c {
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 2px var(--yellow-360),
     inset 0 0 0 3px var(--background-base-lower);
 }
 .pointerEvents__44b0c {
@@ -70102,6 +70109,11 @@ div.nagbar_d74ef8 {
     inset 0 0 0 2px var(--green-360),
     inset 0 0 0 3px var(--background-base-lower);
 }
+.avatarLatched__07f91 {
+  box-shadow:
+    inset 0 0 0 2px var(--yellow-360),
+    inset 0 0 0 3px var(--background-base-lower);
+}
 .username__07f91 {
   flex: 1 1 auto;
   overflow: hidden;
@@ -95022,4 +95034,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.83e9f1c987ead0e0.css.map*/
+/*# sourceMappingURL=12633.b3fab591957aa719.css.map*/
