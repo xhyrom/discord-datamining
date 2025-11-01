@@ -75209,6 +75209,12 @@ html .invoiceCancelRow__968a4 {
   position: relative;
   --custom-chat-input-margin-bottom: var(--space-xs);
 }
+.titleBar__0bd4a {
+  background: var(
+    --background-gradient-app-frame,
+    var(--background-base-lowest)
+  );
+}
 @keyframes pulse__7135b {
   0% {
     border-color: hsla(0, 0%, 100%, 0);
@@ -96453,4 +96459,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.35f6e287d494e7d5.css.map*/
+/*# sourceMappingURL=12633.6c316473b22a092d.css.map*/
