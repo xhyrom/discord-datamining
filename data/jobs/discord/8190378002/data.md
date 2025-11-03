@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8190378002](https://discord.com/jobs/8190378002)
 
-**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
+**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an experienced Finance Manager to join our growing Finance team. The Finance org at Discord is responsible for planning, forecasting and strategic analysis. Senior Product and Engineering leadership rely on the Finance org to develop actionable insights, to steer decisions on cloud infrastructure investment, and to help the business scale efficiently as Discord grows globally!

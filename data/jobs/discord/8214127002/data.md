@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8214127002](https://discord.com/jobs/8214127002)
 
-**Updated At:** Thu, 30 Oct 2025 17:10:55 GMT
+**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We’re looking for a Staff Software Engineer to join our Safety Processing team. This team plays a crucial role in ensuring trust and safety across Discord, processing signals from user reports and automated systems to identify and remove harmful or illegal content from our platform. You’ll lead backend projects, provide architectural guidance, and help build scalable systems that protect our users. Your work will directly impact the safety of our platform and help make Discord a place where everyone can belong. To learn more about Discord Engineering, take a look at our engineering blog.

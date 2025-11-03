@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8149391002](https://discord.com/jobs/8149391002)
 
-**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
+**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Join our team as a&amp;nbsp;Senior Software Engineer&amp;nbsp;focused on&amp;nbsp;UI/UX &amp;amp; Animations on the Ads team. In this role, you will lead the creation of beautiful, intuitive user interfaces across Discord’s web and mobile platforms and build the next generation of engaging, user-forward ads products. We’re looking for someone with deep expertise in&amp;nbsp;React&amp;nbsp;and/or&amp;nbsp;React Native&amp;nbsp;who is passionate about&amp;nbsp;design and&amp;nbsp;animations, and is always optimizing the impact of their work. This role reports to one of our engineering leaders on our Product Engineering team. If you love crafting pixel-perfect UI, seamless user experiences, and scalable front-end systems, we'd love to hear from you!

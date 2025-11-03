@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8150748002](https://discord.com/jobs/8150748002)
 
-**Updated At:** Fri, 24 Oct 2025 20:59:23 GMT
+**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Our business systems team is critical to ensuring that finance, procurement, and revenue operations run efficiently and in full compliance with regulatory standards. We are looking for a Senior Oracle Technical Business Systems Analyst to join our team and support the continued optimization of Oracle Fusion Cloud ERP—particularly in the areas of Revenue Automation, Procure-to-Pay (P2P) and Quote-to-Cash (Q2C).
