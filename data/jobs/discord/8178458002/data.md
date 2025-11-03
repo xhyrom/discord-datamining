@@ -1,6 +1,6 @@
 # Job Listing
 
-## Senior Recruiter, GTM / Sales
+## Senior Recruiter, Advertising Solutions & GTM
 
 **Location:** San Francisco Bay Area
 
@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8178458002](https://discord.com/jobs/8178458002)
 
-**Updated At:** Mon, 20 Oct 2025 21:09:30 GMT
+**Updated At:** Mon, 03 Nov 2025 18:21:56 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Recruiting team is looking for a seasoned Senior Recruiter specializing in GTM / Sales to join our recruiting squad! Reporting to the Business Recruiting Manager, you'll be the strategic talent partner responsible for scaling our go-to-market teams, with a primary focus on growing our advertising solutions organization. This role offers the versatility to flex into adjacent business functions as priorities evolve, making you a key player in Discord’s continued growth.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord's Recruiting team is looking for a seasoned Senior Recruiter specializing in Advertising Solutions (Sales) &amp;amp; GTM to join our recruiting squad! Reporting to the Business Recruiting Manager, you'll be the strategic talent partner responsible for scaling our go-to-market teams, with a primary focus on growing our advertising solutions organization. This role offers the versatility to flex into adjacent business functions as priorities evolve, making you a key player in Discord’s continued growth.
 What You'll Be Doing
 
 Lead full-cycle recruiting for Discord’s Business organization specializing in hiring for teams such as Advertising Solutions (Sales), Developer Operations, Revenue Operations and Customer Success&amp;nbsp;
@@ -26,7 +26,7 @@ Collaborate cross-functionally with teams supporting the sales organization, inc
 
 What you should have
 
-5+ years of full-cycle recruiting experience with proven success in go-to-market roles, specifically in gaming, ad tech or consumer digital media
+5+ years of full-cycle recruiting experience with proven success in go-to-market roles, with experience recruiting for ad tech, martech, or digital media companies. Deep domain knowledge of the ad tech industry landscape and/or ad tech sales roles is essential
 Demonstrated expertise recruiting across multiple sales segments with deep understanding of competency differences between levels and verticals
 Expert-level understanding of digital advertising ecosystem including programmatic, ad networks, publisher vs. demand dynamics, and ability to navigate complex organizational structures (agency vs. in-house, LCS and mid-market)
 Track record of building talent pipelines from the ground up and implementing process improvements that measurably accelerated hiring velocity
