@@ -3030,6 +3030,8 @@
             COLLECTIBLES_PRODUCTS: (t) => "/collectibles-products/".concat(t),
             COLLECTIBLES_VALID_GIFT_RECIPIENT:
               "/users/@me/valid-collectibles-gift-recipient",
+            COLLECTIBLES_VALID_GIFT_RECIPIENTS_BATCH:
+              "/users/@me/valid-collectibles-gift-recipients-batch",
             COLLECTIBLES_MARKETING: "/users/@me/collectibles-marketing",
             COLLECTIBLES_SHOP: "/collectibles-shop",
             CONSUMABLE_FETCH_PRICE: (t) =>
@@ -3493,6 +3495,10 @@
             STORE_LISTINGS_SKU: (t) => "/store/skus/".concat(t, "/listings"),
             SOCIAL_LAYER_APPLICATION_STOREFRONT: (t) =>
               "/partner-sdk/guilds/".concat(t, "/application-storefront"),
+            SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU: (t, e) =>
+              "/partner-sdk/guilds/"
+                .concat(t, "/application-storefront/skus/")
+                .concat(e),
             ORDER_CREATE: "/billing/orders",
             ORDER_UPDATE: (t) => "/billing/orders/".concat(t),
             ORDER_SIGN: (t) => "/billing/orders/".concat(t, "/sign"),
@@ -3575,7 +3581,6 @@
             STICKER_PACK: (t) => "/sticker-packs/".concat(t),
             STORE_DIRECTORY_LAYOUT_STICKER_PACKS: (t) =>
               "/sticker-packs/directory-v2/".concat(t),
-            USER_STICKER_PACKS: "/users/@me/sticker-packs",
             STICKER_ASSET: (t, e) => "/stickers/".concat(t, ".").concat(e),
             STICKER: (t) => "/stickers/".concat(t),
             STICKER_PACKS: "/sticker-packs",
@@ -4335,13 +4340,12 @@
                 _
               );
             },
-            GAME_SHOP: (t, e, a, r) => {
-              let _ = "/game-shop/".concat(t);
+            GAME_SHOP: (t, e, a) => {
+              let r = "/game-shop/".concat(t);
               return (
-                (_ += "/".concat(null != e ? e : 0)),
-                null != a &&
-                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
-                _
+                null != e &&
+                  ((r += "/".concat(e)), null != a && (r += "/".concat(a))),
+                r
               );
             },
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
@@ -6759,7 +6763,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-30-9861980d14c8a44ed6ab11d2cae4077088081d2d-discord_web",
+              "2025-11-03-ce994224062d64e009c682809a29190ae1162be5-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6825,8 +6829,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "463311"),
-            o.YA("builtAt", String("1761808726620"));
+            o.YA("buildNumber", "464283"),
+            o.YA("builtAt", String("1762157901372"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -11092,7 +11096,7 @@
                 return { resolve: (a, r) => e(t[a].nativeStyles, r) };
               }
               return {
-                shadowOffset: e((t) => t.shadowOffset),
+                shadowOffset: e((t, e) => (e ? void 0 : t.shadowOffset)),
                 shadowColor: e((t, e) =>
                   e ? t.shadowColorAndroid : t.shadowColor,
                 ),
@@ -48593,4 +48597,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2b5fb28a15f6c6a6.js.map
+//# sourceMappingURL=sentry.4e3fa27ef0da9931.js.map
