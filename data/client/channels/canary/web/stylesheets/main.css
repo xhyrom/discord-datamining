@@ -2274,6 +2274,12 @@
 .actionBarTrailingFullWidth__8a031 .actionButtonWrapper__8a031 {
   flex: 1;
 }
+.actionBarLayoutChatInput__8a031 {
+  align-items: flex-start;
+}
+.actionBarLayoutChatInput__8a031 .actionBarLeading__8a031 {
+  flex-basis: 60%;
+}
 .checkboxWrapper__09aca {
   display: flex;
   flex: 1 1 auto;
@@ -96449,4 +96455,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.92817273ad20327b.css.map*/
+/*# sourceMappingURL=12633.618488e63494a35e.css.map*/
