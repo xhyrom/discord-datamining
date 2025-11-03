@@ -1611,12 +1611,9 @@
           or others (additional
           <a href="https://discord.com/terms/paid-services-terms">terms</a> may
           apply). Learn more below about the
-          <a
-            href="https://docs.google.com/document/d/19EUC1tOgHBHhb5HQp7Hzg3fBVzYbbbqPdJBVz6Fv1Vg/edit?tab=t.0#heading=h.g3uftwzdze87"
-            >content</a
-          >
-          and <a href="https://discord.com/terms#6">software</a> that may be in
-          our services.
+          <a href="https://discord.com/terms#5">content</a> and
+          <a href="https://discord.com/terms#6">software</a> that may be in our
+          services.
         </p>
         <p>
           Discord is designed to integrate with your device to make it easy to
