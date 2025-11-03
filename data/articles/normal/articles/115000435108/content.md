@@ -324,6 +324,42 @@
           longer and unlock past rewards!
         </td>
       </tr>
+      <tr>
+        <td>
+          <p>
+            <a
+              href="https://support.discord.com/hc/en-us/articles/207260127-How-to-Change-Discord-Color-Themes-and-Customize-Appearance-Settings#h_01JXZWY4ZQVKSDMSVG2RMJMFKF"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Custom Themes</a
+            >
+          </p>
+        </td>
+        <td>
+          <p>
+            Choose custom themes with endless color combinations to customize
+            your app’s appearance.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <a
+              href="https://support.discord.com/hc/en-us/articles/33833879643927"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Display Name Styles</a
+            >
+          </p>
+        </td>
+        <td>
+          <p>
+            Customize your display name through various styling options
+            including fonts, colors, and effects.
+          </p>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
