@@ -3495,6 +3495,10 @@
             STORE_LISTINGS_SKU: (t) => "/store/skus/".concat(t, "/listings"),
             SOCIAL_LAYER_APPLICATION_STOREFRONT: (t) =>
               "/partner-sdk/guilds/".concat(t, "/application-storefront"),
+            SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU: (t, e) =>
+              "/partner-sdk/guilds/"
+                .concat(t, "/application-storefront/skus/")
+                .concat(e),
             ORDER_CREATE: "/billing/orders",
             ORDER_UPDATE: (t) => "/billing/orders/".concat(t),
             ORDER_SIGN: (t) => "/billing/orders/".concat(t, "/sign"),
@@ -4336,13 +4340,12 @@
                 _
               );
             },
-            GAME_SHOP: (t, e, a, r) => {
-              let _ = "/game-shop/".concat(t);
+            GAME_SHOP: (t, e, a) => {
+              let r = "/game-shop/".concat(t);
               return (
-                (_ += "/".concat(null != e ? e : 0)),
-                null != a &&
-                  ((_ += "/".concat(a)), null != r && (_ += "/".concat(r))),
-                _
+                null != e &&
+                  ((r += "/".concat(e)), null != a && (r += "/".concat(a))),
+                r
               );
             },
             GUILD_PRODUCT: (t, e) => "/channels/".concat(t, "/shop/").concat(e),
@@ -6760,7 +6763,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-10-31-7120d29e4ef565f2641be220d8ffc361db353de7-discord_web",
+              "2025-11-03-ce994224062d64e009c682809a29190ae1162be5-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6826,8 +6829,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "464282"),
-            o.YA("builtAt", String("1762156054101"));
+            o.YA("buildNumber", "464283"),
+            o.YA("builtAt", String("1762157901372"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48594,4 +48597,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.fdfe1042a03b3464.js.map
+//# sourceMappingURL=sentry.4e3fa27ef0da9931.js.map
