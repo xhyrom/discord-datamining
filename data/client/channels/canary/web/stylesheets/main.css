@@ -17886,6 +17886,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   white-space: var(--custom-display-name-styles-wrap);
 }
 .innerContainer_dfb989.chicle_dfb989.gradient_dfb989,
+.innerContainer_dfb989.chicle_dfb989.pop_dfb989,
 .innerContainer_dfb989.chicle_dfb989.solid_dfb989 {
   margin: -0.05em;
   padding: 0.05em;
@@ -96455,4 +96456,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.618488e63494a35e.css.map*/
+/*# sourceMappingURL=12633.4f9c84f303fdec44.css.map*/
