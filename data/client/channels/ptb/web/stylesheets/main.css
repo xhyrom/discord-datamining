@@ -2274,6 +2274,12 @@
 .actionBarTrailingFullWidth__8a031 .actionButtonWrapper__8a031 {
   flex: 1;
 }
+.actionBarLayoutChatInput__8a031 {
+  align-items: flex-start;
+}
+.actionBarLayoutChatInput__8a031 .actionBarLeading__8a031 {
+  flex-basis: 60%;
+}
 .checkboxWrapper__09aca {
   display: flex;
   flex: 1 1 auto;
@@ -17880,6 +17886,7 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   white-space: var(--custom-display-name-styles-wrap);
 }
 .innerContainer_dfb989.chicle_dfb989.gradient_dfb989,
+.innerContainer_dfb989.chicle_dfb989.pop_dfb989,
 .innerContainer_dfb989.chicle_dfb989.solid_dfb989 {
   margin: -0.05em;
   padding: 0.05em;
@@ -43983,7 +43990,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -50009,9 +50016,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -60234,6 +60241,58 @@ html .progress__61462 {
   color: var(--white-500);
   margin-inline-end: 16px;
 }
+.container_b5a371 {
+  gap: 12px;
+}
+.choicesContainer_b5a371,
+.container_b5a371 {
+  display: flex;
+  flex-direction: column;
+}
+.choicesContainer_b5a371 {
+  gap: 16px;
+}
+.choiceRow_b5a371 {
+  align-items: center;
+  display: flex;
+}
+.noChoices_b5a371 {
+  font-size: 14px;
+}
+.container__3cb11 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container__18c16 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container__18c16 br {
+  display: none;
+}
+.header__2513e {
+  align-items: center;
+  justify-content: space-between;
+}
+.headerContent__2513e {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+.content__2513e {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.completeContent__2513e {
+  justify-content: center;
+}
+.loading__2513e {
+  padding: 24px;
+  text-align: center;
+}
 .container__477aa {
   align-items: center;
   display: flex;
@@ -68164,9 +68223,6 @@ div.nagbar_d74ef8 {
   margin-top: -32px;
   width: 180px;
 }
-.connectHeader_c7f964 {
-  margin-bottom: 8px;
-}
 .connectionsContainer_c7f964 {
   display: flex;
   flex-wrap: wrap;
@@ -68213,6 +68269,10 @@ div.nagbar_d74ef8 {
   background-color: var(--background-surface-high);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+  padding: var(--space-16);
   width: 100%;
 }
 .connectionUserSettingsRedesign_c7f964 {
@@ -68223,8 +68283,6 @@ div.nagbar_d74ef8 {
   border-radius: 8px 8px 0 0;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  padding: 16px;
-  padding-bottom: var(--space-8);
   position: relative;
 }
 .connectionHeader_c7f964 .connectionAccountValue_c7f964 {
@@ -68262,7 +68320,6 @@ div.nagbar_d74ef8 {
   display: flex;
   flex-direction: column;
   gap: var(--space-20);
-  padding: var(--space-20) var(--space-16);
 }
 .integrationsWrapper_c7f964 {
   padding: 20px;
@@ -68307,10 +68364,6 @@ div.nagbar_d74ef8 {
 .connectionDelete_c7f964:hover {
   color: var(--interactive-hover);
 }
-.connectedAccountSeparator_c7f964 {
-  margin-inline: 20px;
-  width: auto;
-}
 .integrationRevoked_c7f964 {
   font-weight: var(--font-weight-semibold);
 }
@@ -68324,7 +68377,6 @@ div.nagbar_d74ef8 {
   border-radius: var(--radius-sm);
   display: flex;
   flex-direction: row;
-  margin: var(--space-8) var(--space-16) 0;
   padding: var(--space-8);
 }
 .metadataItem_c7f964 {
@@ -68335,9 +68387,6 @@ div.nagbar_d74ef8 {
   align-self: center;
   -webkit-margin-start: auto;
   margin-inline-start: auto;
-}
-.upsellWrapper_c7f964 {
-  padding: 16px;
 }
 .enable-forced-colors .connection_c7f964 {
   border: 1px solid CanvasText;
@@ -96459,4 +96508,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.0d4cc20288d06b41.css.map*/
+/*# sourceMappingURL=12633.ad8195ff4fbcd768.css.map*/
