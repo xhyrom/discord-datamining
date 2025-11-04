@@ -43860,7 +43860,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -50016,9 +50016,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -70271,9 +70271,21 @@ div.nagbar_d74ef8 {
 .subTextRow__6bc46 {
   color: var(--primary-300);
 }
-.subTextHeader__6bc46 {
+.subtitleHeader__6bc46 {
+  align-items: center;
   color: var(--text-muted);
+  display: flex;
+  flex-direction: row;
   font-weight: var(--font-weight-semibold);
+  gap: 4px;
+}
+.applicationSubtitleHeader__6bc46 {
+  margin-top: 2px;
+}
+.applicationSubtitleIcon__6bc46 {
+  border-radius: 6px;
+  height: 20px;
+  width: 20px;
 }
 .codeText__6bc46 {
   margin-bottom: 8px;
@@ -70328,7 +70340,7 @@ div.nagbar_d74ef8 {
 .theme-light .bodyButtonColor__6bc46:active {
   background: var(--primary-300);
 }
-.seasonalGiftBox__6bc46 {
+.giftIcon__6bc46 {
   height: 40px;
   width: 40px;
 }
@@ -96488,4 +96500,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.63984dc9d526a3ab.css.map*/
+/*# sourceMappingURL=12633.d8c5feb81d5036cc.css.map*/
