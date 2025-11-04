@@ -26763,7 +26763,7 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .gameMention__1464f,
 .timestampMention__1464f {
   display: inline-flex;
-  margin: -4px 0 -8px;
+  margin: -4px 2px -8px;
 }
 .inlineFlex__1464f {
   display: inline-flex;
@@ -96508,4 +96508,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6aec882c2ab453bc.css.map*/
+/*# sourceMappingURL=12633.5a880bebe6490fb3.css.map*/
