@@ -540,7 +540,8 @@
 </div>
 <p><strong>Q: How can I disable my game server? </strong></p>
 <p>
-  A: As a server admin or owner, head to the Server Boosts tab &gt; Create Game
-  Server and then press Disable Perk under the specific game server you want to
+  A: As a server admin or owner, head to the <strong>Server Boosts tab</strong>
+  <strong>&gt;</strong> <strong>View Game Servers</strong> and then press
+  <strong>Disable Perk</strong> under the specific game server you want to
   disable. 
 </p>

@@ -10,68 +10,33 @@
   /></strong>
   <ul>
     <li>
-      <strong
-        ><a href="#h_01GFV3NE6JPS6BRTX7XYQDJ0S4"
-          >What types of Nitro plans are there?</a
-        ></strong
+      <a href="#h_01JXDBAEEQSS9BKVA82R7JNKM1"
+        >What types of Nitro plans are there?</a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01GFV3P0M2YEC5GQA04QZZ3XTA" target="_self"
-              >Nitro</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01GFV3P6JCBPK991K73KW8C70B" target="_self"
-              >Nitro Basic</a
-            ></strong
-          >
-        </li>
+        <li><a href="#h_01JXDBAR0WH1RJAGD4N99QN13J">Nitro</a></li>
+        <li><a href="#h_01GFV3P6JCBPK991K73KW8C70B">Nitro Basic</a></li>
       </ul>
     </li>
     <li>
-      <strong
-        ><a href="#h_01JXDBQ7YTESHKC4EFEMTEAQ7G"
-          >How to Subscribe to Nitro or Nitro Basic</a
-        ></strong
+      <a href="#h_01JXDBQ7YTESHKC4EFEMTEAQ7G"
+        >How to Subscribe to Nitro or Nitro Basic</a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01JXDBW1M9V03F3QCWBSVX1XXR"
-              >On Desktop/Browser</a
-            ></strong
-          >
-        </li>
-        <li>
-          <strong><a href="#h_01JXDBZ39KR58GMC6FPHM90VZD">On Mobile</a></strong>
-        </li>
+        <li><a href="#h_01JXDBW1M9V03F3QCWBSVX1XXR">On Desktop/Browser</a></li>
+        <li><a href="#h_01JXDBZ39KR58GMC6FPHM90VZD">On Mobile</a></li>
       </ul>
     </li>
     <li>
-      <strong
-        ><a
-          href="https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic-Nitro#h_01GFV3PWAGD4EGTD91ERBZ5R4S"
-          >Frequently Asked Questions</a
-        ></strong
-      >
+      <a href="#h_01JXDC2X91EXZZKRPMQ1729F5Z">Frequently Asked Questions</a>
       <ul>
         <li>
           <a href="#h_01JZ3EFHEK8PRXH1SXVXVQXFW3"
-            ><strong>All Nitro Subscription Types</strong></a
+            >All Nitro Subscription Types</a
           >
         </li>
-        <li>
-          <strong><a href="#h_01JXDC3R682TE9XVH38X1N0PPD">Nitro</a></strong>
-        </li>
-        <li>
-          <strong
-            ><a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">Nitro Classic</a></strong
-          >
-        </li>
+        <li><a href="#h_01JZ3EFHEKYR6GTDDN4KBC1W0S">Nitro</a></li>
+        <li><a href="#h_01JZ3EFHEK1ARBXN693Y3D0JQD">Nitro Classic</a></li>
       </ul>
     </li>
   </ul>
