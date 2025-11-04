@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8219295002](https://discord.com/jobs/8219295002)
 
-**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
+**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Discord is seeking a strategic Director, People Business Partner (PBP) to own and drive the people strategy for Discord's Engineering, Product, Analytics and Design (EPAD) organizations. This role will partner directly with our CTO, Head of Product and EPAD executives as a strategic thought partner, aligning talent strategy with business goals to solve complex challenges through a people lens. This role requires deep expertise in helping technical organizations achieve their business objectives at pre-IPO companies transitioning toward enterprise maturity.

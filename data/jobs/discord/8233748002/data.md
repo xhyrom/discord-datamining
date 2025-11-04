@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8233748002](https://discord.com/jobs/8233748002)
 
-**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
+**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We're seeking a strategic founding Product Marketing Manager to build and lead the go-to-market strategy for our emerging advertising solutions, focusing on Gaming clients. You’ll drive product activation by developing robust sales enablement programs, setting activation goals, and partnering closely with Sales to bring our solutions to market. This role will play a key part in accelerating our offering within the must-win Gaming vertical.&amp;nbsp;

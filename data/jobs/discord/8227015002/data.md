@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8227015002](https://discord.com/jobs/8227015002)
 
-**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
+**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Two years ago, we launched the Discord Shop and watched millions of users transform how they express themselves on Discord through personalized in-app cosmetic items. Since then, we've rolled out a series of exciting content drops, including high-profile collaborations with franchises like Valorant, SpongeBob, and Star Wars. And we're just getting started — many more exciting initiatives are on the horizon.

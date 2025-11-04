@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8219345002](https://discord.com/jobs/8219345002)
 
-**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
+**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.Come be a part of the Global Accounting Operations team at Discord, where we oversee Accounts Payable, Accounts Receivable, Purchasing Operations, Expense and Corporate Credit Cards. This role will be responsible for managing and analyzing Discord’s receivables, ensuring timely collection, maintaining accurate records, and providing essential support to optimize cash flow. Within the Global Accounting Operations Team we pride ourselves on Delivering for Customers everyday which are our internal Discord team members and external Discord customers. We are looking to enhance our Accounts Receivable process within Oracle Fusion, provide an exceptional experience for our customers and meaningful data to our cross functional partner in Sales, Sales Ops and Revenue Accounting.&amp;nbsp;

@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8083167002](https://discord.com/jobs/8083167002)
 
-**Updated At:** Mon, 03 Nov 2025 21:42:11 GMT
+**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a motivated Account Executive to join our Advertising Solutions (Quests) sales team, focusing on the Mobile Gaming vertical. In this role, you will work in a collaborative environment to help scale the Mobile Gaming business at Discord The role will consist of&amp;nbsp; managing a book of business, building relationships and contributing revenue from the Mobile Gaming business.
