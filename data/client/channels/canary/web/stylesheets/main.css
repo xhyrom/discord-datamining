@@ -74120,18 +74120,16 @@ html .invoiceCancelRow__968a4 {
   min-width: 0;
   width: 100%;
 }
+.buttonWrapper__011b7 {
+  -webkit-margin-end: var(--space-8);
+  margin-inline-end: var(--space-8);
+}
 .micTest__169b3 {
   margin-bottom: 16px;
 }
 .micTestHelpLink__169b3 {
   -webkit-margin-start: 4px;
   margin-inline-start: 4px;
-}
-.micTestButton__169b3 {
-  flex: 1 0 auto;
-  padding: 0 4px;
-  -webkit-margin-end: 8px;
-  margin-inline-end: 8px;
 }
 .krispCard_fb7bea {
   align-items: center;
@@ -96508,4 +96506,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.5a880bebe6490fb3.css.map*/
+/*# sourceMappingURL=12633.2fa87db15fdd4e9e.css.map*/
