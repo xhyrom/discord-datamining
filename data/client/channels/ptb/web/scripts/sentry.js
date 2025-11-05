@@ -4140,6 +4140,7 @@
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (t) =>
               "/app/invite-with-guild-onboarding/".concat(t),
+            APP_WITH_GIFT_CODE: (t) => "/app/gifts/".concat(t),
             ACTIVITY: "/activity",
             ACTIVITIES: "/activities",
             ACTIVITIES_HAPPENING_NOW: "/activities/happening-now",
@@ -6765,7 +6766,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-04-1eeb27f094504c47e2b9381787d6f73dd4ac1e7a-discord_web",
+              "2025-11-05-6975389fdc09709cc1ca686e8bb383a0c81fc961-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6831,8 +6832,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "465117"),
-            o.YA("builtAt", String("1762296891065"));
+            o.YA("buildNumber", "465214"),
+            o.YA("builtAt", String("1762330712690"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48599,4 +48600,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.78210b56b53924e4.js.map
+//# sourceMappingURL=sentry.f7f9d6896407c6ec.js.map
