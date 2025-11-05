@@ -34094,7 +34094,7 @@ body .headerAnimation_b54a5b {
   flex-direction: column;
 }
 .infoNotice_b25217 {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .paymentRequestButton_b25217 {
   display: flex;
@@ -43863,7 +43863,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -50019,9 +50019,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -96503,4 +96503,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.838b8be655e6052e.css.map*/
+/*# sourceMappingURL=12633.59bf7b7247fd2da9.css.map*/
