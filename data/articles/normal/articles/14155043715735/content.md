@@ -1,226 +1,423 @@
 <p>
   Discord is a place where friends, family, and communities come together to
-  make connections and hangout. Every day people come here to build community
+  make connections and hangout. Every day, people on Discord build communities
   and discuss all sorts of topics, play both casual and competitive games, and
   sometimes even learn something new!
 </p>
-<h3 id="h_01H9P919M9KW2A4427HFWZJXV5">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >For a more in depth look into how Discord works, please check out our
-    article on a </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/360045138571"
-    target="_blank"
-    rel="noopener noreferrer"
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />For a more in depth look into how
+  Discord works, please check out our article on a
+  <a href="https://support.discord.com/hc/en-us/articles/360045138571"
     >Beginner’s Guide to Discord.</a
-  ><span style="color: #434343" data-darkreader-inline-color=""> </span>
-</h3>
-<p>
-  We are dedicated to making Discord a safer space for all.
-  <strong>Family Center</strong> is a new tool we’ve built to help parents and
-  guardians better understand how their teens use Discord, get insights into the
-  communities they are a part of, and develop collaborative approaches to build
-  positive online behaviors.
-</p>
-<h3 id="docs-internal-guid-f4271c0e-7fff-9fae-5aaa-6b04807abc94">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >You can access Family Center by selecting this </span
-  ><a
-    href="https://discord.com/feature/family-center"
-    target="_blank"
-    rel="noopener noreferrer"
-    >link</a
-  ><span style="color: #434343" data-darkreader-inline-color="">
-    or by heading into your </span
-  ><strong
-    ><span style="color: #434343" data-darkreader-inline-color=""
-      >User Settings
-    </span></strong
-  ><span style="color: #434343" data-darkreader-inline-color=""
-    >within the Discord App.</span
   >
-</h3>
+</div>
 <p>
-  For additional resources on how to better shape your Discord experience,
-  please check out our
-  <a
-    href="https://discord.com/safety-parents"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Safety Center</a
-  >.
+  We are dedicated to making Discord a safe space for all.
+  <strong>Family Center</strong> is a tool we’ve built to help parents and
+  guardians stay informed and involved in your teen’s Discord experience while
+  respecting their privacy and autonomy. View an Activity Feed, get weekly email
+  summaries, and manage select safety and privacy settings to support your
+  teen’s safety goals. These tools may help encourage regular conversations
+  between teens and their families so they can work together to build positive
+  online behaviors.
 </p>
-<p>
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers:</strong></span
-  >
-</p>
-<ul>
-  <li>
-    <a href="#h_01H44CR9JG0B1Z3MH53Y3JSAMM" target="_self"
-      >How to set up Family Center</a
-    >
-    <ul>
-      <li>
-        <a href="#h_01H44CRFX79SPBEDH3S42MFMQM" target="_self"
-          >Desktop/Browser
-        </a>
-      </li>
-      <li><a href="#h_01H44CS7CRBZHSR8CQ1CSRV6BM" target="_self">Mobile</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#h_01H44CSDWFBYNKSCKFXRC6A1ED" target="_self"
-      >How to use Family Center</a
-    >
-  </li>
-  <li>
-    <a href="#h_01H44CSKW8G8J9KBEB64YSN2CV" target="_self"
-      >Frequently Asked Questions</a
-    >
-  </li>
-</ul>
-<h1 id="h_01H44CR9JG0B1Z3MH53Y3JSAMM">How to set up Family Center</h1>
-<h2 id="h_01H44CRFX79SPBEDH3S42MFMQM">Desktop/Browser </h2>
+<div class="info-box">
+  <strong>Note:</strong> You can access Family Center by selecting this
+  <a href="https://discord.com/feature/family-center">link</a
+  ><strong>User Settings</strong>within the Discord App.
+</div>
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />For additional resources on how to
+  better shape your Discord experience, please check out our
+  <a href="https://discord.com/safety-parents">Parent Hub</a>.
+</div>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li>
+      <a href="#h_01K8RVK0P7P8ZSKK6529CXNMV0">How to set up Family Center</a>
+      <ul>
+        <li><a href="#h_01K8RVK0P7XKYRFZ60XS9C0FZ6">Desktop/Browser </a></li>
+        <li><a href="#h_01K8RVK0P7QY86BTE6QCX3NHAV">Mobile</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01K8RVK0P79RP13G7C9AYADRZ9">How to use Family Center</a>
+      <ul>
+        <li>
+          <a href="#h_01K8RVK0P7GSJGADV3MY0CHPVR"
+            >Your Teen’s Recent Activity</a
+          >
+        </li>
+        <li>
+          <a href="#h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</a>
+        </li>
+        <li>
+          <a href="#h_01K8RVK0P72Y66J1DJCC8G69Q7"
+            >Your Teen’s Submitted Reports</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#h_01K8RVK0P7Z7D9BK67J9G8P2EQ">Frequently Asked Questions</a>
+    </li>
+  </ul>
+</div>
+<h1 id="h_01K8RVK0P7P8ZSKK6529CXNMV0">How to set up Family Center</h1>
+<h2 id="h_01K8RVK0P7XKYRFZ60XS9C0FZ6">Desktop/Browser </h2>
 <p>
   To connect your account with your teen, you’ll first need to have the
-  <a
-    href="https://discord.com/download"
-    target="_blank"
-    rel="noopener noreferrer"
-    >Discord app</a
+  <a href="https://discord.com/download"
+    ><span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >Discord app</span
+    ></a
   >
   installed on your mobile device. While you can get started with and access
-  Family Center on a browser, you can only complete the connection process with
-  your teen by using the Discord mobile app. After installing the app or opening
-  Discord, tap on <strong>Family Center </strong>in
+  Family Center through Discord on browser, you can only complete the connection
+  process with your teen by using the Discord mobile app. After installing the
+  app or opening Discord, tap on <strong>Family Center </strong>in
   <strong>User Settings</strong> and toggle the
-  <strong>Enable Family Center tab</strong>. 
+  <strong>Enable Family Center tab </strong>under <strong>Settings</strong>. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34988869251607"
-    alt="image3.gif"
+    src="https://support.discord.com/hc/article_attachments/36027356118167"
+    width="743"
+    height="551"
   />
 </p>
+<h4 id="h_01K8RVK0P7DV95EP9FFA2H5YGA" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Enable Family Center tab</span
+  >
+</h4>
 <p>
   To connect to your teen in Family Center, your teen needs to provide you with
   the generated QR code that is located in their Family Center tab under the
-  <strong>Connect with Parent </strong>option. Scan the QR code with your
+  <strong>Connect with Guardian </strong>option. Scan the QR code with your
   Discord app and after your teen accepts the connection, you’ll both have full
   access to Family Center!
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34988880038807"
-    alt="image5.png"
+    src="https://support.discord.com/hc/article_attachments/36027365645335"
+    width="471"
+    height="563"
   />
 </p>
+<h4 id="h_01K8RVK0P7H0YVC054WTAGWTT0" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Reveal QR Code button</span
+  >
+</h4>
 <p>
   Once connected, you can head into Family Center by tapping on
   <strong>My Family</strong> to see any connected teens there.
 </p>
-<h3 id="h_01H9P919M9HH1XEHJNHNZFKR45">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >If you’d like to learn more about Family Center for teens, you can check
-    out this </span
-  ><a
-    href="https://support.discord.com/hc/en-us/articles/14155060633623"
-    target="_blank"
-    rel="noopener noreferrer"
+<div class="book-box">
+  <strong>Want to learn more?</strong><br />If you’d like to learn more about
+  Family Center for teens, you can check out this
+  <a href="https://support.discord.com/hc/en-us/articles/14155060633623"
     >article</a
-  ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
-<h2 id="h_01H44CS7CRBZHSR8CQ1CSRV6BM">Mobile</h2>
+  >.
+</div>
+<h2 id="h_01K8RVK0P7QY86BTE6QCX3NHAV">Mobile</h2>
 <p>
-  If you have the Discord app installed on your mobile device, you can head into
-  your <strong>User Settings</strong> by pressing your profile icon. 
+  1. If you have the Discord app installed on your mobile device, you can head
+  into your <strong>User Settings</strong> by pressing your profile icon. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34988869254935"
-    alt="image2.jpg"
-    width="298"
-    height="617"
+    src="https://support.discord.com/hc/article_attachments/36027365646231"
+    width="419"
+    height="907"
   />
 </p>
+<h4 id="h_01K8RVK0P73AHC0WS3FH6MJBHA" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Avatar in the right-hand corner</span
+  >
+</h4>
 <p>
-  After navigating to your User Settings, select the
+  2. After navigating to your User Settings, select the
   <strong>Family Center</strong> tab. Once you’re in Family Center, press<strong>
     My Family</strong
   >
   to scan your teen’s QR code located in their Family Center tab under the
-  <strong>Connect with Parent</strong> option. 
+  <strong>Connect with Teen</strong> option. 
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/34988869257879"
-    alt="image6.gif"
+    src="https://support.discord.com/hc/article_attachments/36027356120471"
+    width="399"
+    height="864"
   />
 </p>
-<h1 id="h_01H44CSDWFBYNKSCKFXRC6A1ED">How to use Family Center</h1>
+<h4 id="h_01K8RVK0P7PZNXT3RXDXQD13AA" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of sending a connection request to a teen</span
+  >
+</h4>
+<h1 id="h_01K8RVK0P79RP13G7C9AYADRZ9">How to use Family Center</h1>
+<h2 id="h_01K8RVK0P7GSJGADV3MY0CHPVR">Your Teen’s Recent Activity</h2>
 <p>
-  Once you’ve connected to your teen, you’ll be able to see the following
-  information by heading to Family Center and tapping on the My Family tab:
+  Once you’ve connected to your teen’s account, you’ll be able to see the
+  following information for the last 7 days by heading to
+  <strong>User Settings &gt; Family Center</strong> and tapping on the Activity
+  tab:
 </p>
 <ul>
-  <li>Recently added friends, including their display names and avatars</li>
   <li>
-    Which users your teen has messaged or called in direct or group messages,
-    including their display names, avatars, and the times of the last message or
-    call
+    <strong>New Friends:</strong> Your teen's recently added friends, including
+    the display names and avatars of those friends
   </li>
   <li>
-    Servers joined or participated in, including server names, server icons, and
-    server member counts
+    <strong>Users Messaged &amp; Called:</strong> Users your teen has messaged
+    or called in Direct or Group messages, including their display names and
+    avatars.
+  </li>
+  <li>
+    <strong>Total Call Minutes in Voice &amp; Video:</strong> Your teen's total
+    call minutes, including voice and video calls in Direct Messages, Group
+    Messages, and Voice Channels (these support voice and video communication)
+    in servers
+  </li>
+  <li>
+    <strong>Top Users and Servers: </strong>Teens’ top five users and servers in
+    the last week, in order of message and call frequency
+  </li>
+  <li>
+    <strong>New Servers:</strong> Servers your teen joined or created, including
+    server names, server icons, and server member counts
+  </li>
+  <li>
+    <strong>Active Servers:</strong> Servers where your teen joined a Voice
+    Channel (these support voice and video communication) or sent a message
+  </li>
+  <li>
+    <strong>Total Purchases:</strong> Your teen's purchases (total amount
+    spent), including Shop purchases and Nitro subscriptions. Nitro
+    subscriptions are shown in the week when they are billed to your teen’s
+    account.
   </li>
 </ul>
 <p>
   In addition to seeing information about your teen’s recent activity through
   Family Center, you’ll also receive weekly updates containing a high level
-  summary of their activity via email. 
+  summary of their activity via the email address you provided at sign-up. 
 </p>
-<h3 id="h_01H9P919M9VJ6MYNDBGKNTMJC0">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >The Family Center dashboard and weekly update emails will only contain
-    information about activity occurring after the teen has accepted the
-    connection request.</span
+<div class="exp-box">
+  <strong>Important:</strong> The Family Center dashboard and weekly update
+  emails will only contain information about your teen's activity that happens
+  after they accept the connection request.
+</div>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/36027365647639"
+    width="649"
+    height="714"
+  />
+</p>
+<h4 id="h_01K8RVK0P7X0VAQ0QVPAZPAA66" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Your teen’s activity summary</span
   >
-</h3>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/34988880046231"
-    alt="image1.png"
-    width="307"
-    height="638"
-  />
+</h4>
+<div class="tip-box">
+  <strong>Tip:</strong> You will not see what messages your teen has sent, only
+  the users they have messaged.
+</div>
+<h2 id="h_01K8RVK0P72Z9V25C64NJNF1Q8">Teen Account Settings</h2>
+<p>
+  You will also be able to see and adjust some of your teen’s settings,
+  including:<span style="color: #434343" data-darkreader-inline-color=""
+    ><br
+  /></span>
 </p>
+<ul>
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+        >Sensitive content</span
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+      >
+        filter</span
+      >s</a
+    >: Adjust if the content flagged by our sensitive media filters are blurred,
+    blocked, or shown by default to your teen.
+    <em
+      >Note: For UK teens, your guardian can only choose between blur and block
+      due to </em
+    ><a
+      href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
+      ><em
+        ><span
+          class="wysiwyg-underline"
+          style="color: #1155cc"
+          data-darkreader-inline-color=""
+          >regional restrictions</span
+        ></em
+      ></a
+    ><em>.</em> 
+  </li>
+  <li>
+    Friend Requests: Adjust who can send your teen a friend request (Everyone,
+    friends of friends, Server members)
+  </li>
+  <li>
+    Server Direct Messages: Adjust if server members can send your teen Direct
+    Messages
+  </li>
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/7924992471191-Message-Requests#:~:text=If%20someone%20you%20are%20not,more%20hidden%20%E2%80%9CSpam%E2%80%9D%20folder."
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+        >Message Requests</span
+      ></a
+    >: Adjust if your teen has message requests turned on. Message requests is
+    on by default for teen users. When it’s on, messages from users who aren’t
+    friends with your teen are filtered into a separate “Message Requests”
+    folder. This helps keep unwanted messages out of your teen’s main direct
+    message inbox. 
+  </li>
+</ul>
+<div class="exp-box">
+  <strong>Important:</strong> Due to the
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
+    target="_blank"
+    rel="noopener noreferrer"
+    >UK Online Safety Act</a
+  >, guardians in the UK must be age assured adults (18+) and will be required
+  to age verify before updating their teen's message request setting due to
+  <a
+    href="https://support.discord.com/hc/en-us/articles/33362401287959-What-s-Changing-for-UK-Users-Due-to-the-UK-Online-Safety-Act"
+    target="_blank"
+    rel="noopener noreferrer"
+    >region-specific settings</a
+  >.
+</div>
 <p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/34988869262359"
-    alt="image4.png"
-    width="620"
-    height="605"
-  />
+  <strong
+    ><em
+      ><span
+        class="wysiwyg-underline"
+        style="color: #ff0000"
+        data-darkreader-inline-color=""
+        ><img
+          src="https://support.discord.com/hc/article_attachments/36027356121239"
+          width="606"
+          height="663" /></span></em
+  ></strong>
+</p>
+<h4 id="h_01K8RVK0P76TBPB9VZBRHH2RY3">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Content, Social permissions, and Friend requests settings in Family
+    Center</span
+  >
+</h4>
+<ul>
+  <li>
+    <a
+      href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"
+      ><span
+        class="wysiwyg-underline"
+        style="color: #1155cc"
+        data-darkreader-inline-color=""
+        >Data &amp; Privacy Settings</span
+      ></a
+    >: This includes a suite of data &amp; privacy settings, like allowing users
+    to use their data to improve Discord or personalize their Discord
+    experience.
+    <ul>
+      <li>Use data to improve Discord</li>
+      <li>Use teen’s Discord activity to personalize Sponsored Content</li>
+      <li>Use third-party data to personalize Sponsored Content</li>
+      <li>Use data to personalize my Discord experience</li>
+    </ul>
+  </li>
+</ul>
+<p class="wysiwyg-text-align-center">
+  <strong
+    ><em
+      ><span
+        class="wysiwyg-underline"
+        style="color: #ff0000"
+        data-darkreader-inline-color=""
+        ><img
+          src="https://support.discord.com/hc/article_attachments/36027365648535"
+          width="740"
+          height="534" /></span></em
+  ></strong>
+</p>
+<h4 id="h_01K8RVK0P7A56K957C6A4X4KZW" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Data &amp; Privacy settings in Family Center</span
+  >
+</h4>
+<div class="tip-box">
+  <strong>Tip:</strong> If you have a linked Family Center account, your teen
+  will not be able to adjust the above settings on their own. We encourage you
+  to talk to your teen about how to customize these safety settings in a way
+  that supports your family's safety goals.
+</div>
+<h2 id="h_01K8RVK0P72Y66J1DJCC8G69Q7">Your Teen’s Submitted Reports</h2>
+<p>
+  When your teen
+  <a
+    href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord"
+    target="_blank"
+    rel="noopener noreferrer"
+    >reports another user or content to Discord</a
+  >, they can choose to let you know they filed a report. If they choose to
+  share this with you, you’ll get an email notification. This option is only
+  available for linked accounts.
 </p>
 <p>
-  You will not see what messages your teen has sent, only the users they have
-  messaged.
+  Reports can be about many different things—from spam messages to more serious
+  concerns. When your teen chooses to notify you about a report, it shows they
+  want you to be aware and involved. This is a good opportunity to have a
+  supportive conversation with them. Consider asking how they're doing, or
+  letting them know you're proud of them for speaking up, and reminding them
+  that you're always there if they need help or want to talk about anything they
+  experience online.
 </p>
-<h3 id="h_01H9P919M9CY5X6G5E8399TH4V">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Although you can disconnect at any time, the month your teen turns 18 years
-    old, they will be automatically disconnected from all connected parents in
-    Family Center. </span
-  >
-</h3>
-<h1 id="h_01H44CSKW8G8J9KBEB64YSN2CV">Frequently Asked Questions</h1>
+<p>
+  The specific details of the report won't be shared in the email, so checking
+  in directly with your teen will help you understand what happened and how you
+  can best support them.
+</p>
+<div class="exp-box">
+  <strong>Important:</strong> Although you can disconnect at any time, the month
+  your teen turns 18 years old, they will be automatically disconnected from all
+  connected guardian accounts in Family Center.
+</div>
+<h1 id="h_01K8RVK0P7Z7D9BK67J9G8P2EQ">Frequently Asked Questions</h1>
 <p><strong>Q: Why can I only see the last 7 days of activity?</strong></p>
 <p>
-  A: Our goal is to surface information in ways that are timely, not
-  overwhelming, and helpful in starting conversations about online safety.
-  Family Center highlights information in a 7 day period in order to provide
-  contextually relevant information for parents and guardians.
+  A: Our goal is to surface information that is timely, not overwhelming, and
+  helpful in starting conversations about online safety. Family Center
+  highlights information in a 7 day period in order to provide contextually
+  relevant information for parents and guardians.
 </p>
 <p>
   <strong
@@ -276,8 +473,8 @@
 </p>
 <p>
   <strong
-    >Q: My teen won't allow me to connect Family Center, how can I make
-    them?</strong
+    >Q: My teen won't allow me to connect with them through Family Center, how
+    can I make them?</strong
   >
 </p>
 <p>
@@ -301,38 +498,25 @@
 <p>
   To do this, please have your teen contact Discord at<a
     href="http://dis.gd/request"
-    target="_blank"
-    rel="noopener noreferrer"
   >
-    dis.gd/request</a
+    <span
+      class="wysiwyg-underline"
+      style="color: #1155cc"
+      data-darkreader-inline-color=""
+      >dis.gd/request</span
+    ></a
   >
   &gt; <strong>Update My Age Information</strong>. Be sure to have them include
   their actual age in their request.
 </p>
 <p>
   Please note that Discord has minimum age requirements depending on the country
-  your teen is in. In most countries, the minimum age to use Discord is 13.<a
+  your teen is in. In most countries, the minimum age to use Discord is 13.
+  <a
     href="https://support.discord.com/hc/en-us/community/posts/1500000159622-Why-Is-Discord-Asking-For-My-Birthday-"
     target="_blank"
     rel="noopener noreferrer"
-  >
-    You can review Discord’s minimum age requirements by country here</a
-  >.
-</p>
-<p><strong>Q: How can I lock safety settings on my teen’s account?</strong></p>
-<p>
-  A: Family Center is designed to be a tool to help parents and teens have
-  conversations about safe and healthy use of Discord. We encourage you to talk
-  to your teen about how to customize settings in a way that supports your
-  family's safety goals.
-</p>
-<p>
-  Learn more about Discord's settings
-  <a
-    href="https://discord.com/safety/360044153831-helping-your-teen-stay-safe-on-discord"
-    target="_blank"
-    rel="noopener noreferrer"
-    >here</a
+    >You can review Discord’s minimum age requirements by country here</a
   >.
 </p>
 <p><strong>Q: How can I join a server my teen is in?</strong></p>
@@ -393,13 +577,9 @@
     target="_blank"
     rel="noopener noreferrer"
     >tools available to your teen on Discord</a
-  >, such as our
-  <span id="docs-internal-guid-2faa461b-7fff-698f-7987-3a17da5a93a3"
-    >sensitive content filter</span
-  >
-  and spam filters. You can also block specific users who you or your teen do
-  not wish to communicate with anymore. Instructions on how to do so can be
-  found
+  >, such as our sensitive content filters and spam filters. You can also block
+  specific users who you or your teen do not wish to communicate with anymore.
+  Instructions on how to do so can be found
   <a
     href="https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings-"
     target="_blank"
@@ -420,7 +600,8 @@
   >.
 </p>
 <p>
-  <strong
+  <strong><br /></strong
+  ><strong
     >Q: If I accidentally remove my teen’s connection, do they need to re-allow
     me to connect?</strong
   >
@@ -439,6 +620,29 @@
 <p>
   A: Yes, connected parents and guardians can see every account their teen has
   connected to in Family Center. An email confirmation with the newly linked
-  account will be sent to the email address associated to the parent/guardian
+  account will be sent to the email address associated with the parent/guardian
   Discord account.
+</p>
+<p>
+  <strong
+    >Q: Are there recommended safety settings that I should set for my
+    teen?</strong
+  >
+</p>
+<p>
+  A: We know that every teen is different, so while we stand by our safety
+  features and default settings for teens, we encourage guardians and teens to
+  actively review these settings together to make sure they are serving the
+  positive Discord experience they want to have.
+</p>
+<p>
+  <strong
+    >Q: Will my teen be able to adjust their own safety settings without me?
+    Will my teen be notified when I adjust their safety settings?</strong
+  >
+</p>
+<p>
+  A: Teens will not be able to adjust their safety settings unless it’s through
+  your account in Family Center. Teens will not be notified when you adjust
+  their settings, so we recommend chatting through the options with them.
 </p>
