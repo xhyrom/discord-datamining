@@ -57037,12 +57037,15 @@ html .progress__61462 {
   z-index: 1;
 }
 .container_e95ba0 {
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   display: flex;
   flex-direction: column;
   height: 380px;
   overflow: hidden;
   width: 512px;
+}
+.container_e95ba0,
+.innerCard_e95ba0 {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .spinner_e95ba0 {
   align-self: center;
@@ -96540,4 +96543,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d68b92d7727c2ba2.css.map*/
+/*# sourceMappingURL=12633.cd20a24738fcb8a1.css.map*/
