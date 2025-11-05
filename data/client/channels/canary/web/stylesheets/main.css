@@ -43863,7 +43863,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -50019,9 +50019,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -60233,6 +60233,43 @@ html .progress__61462 {
   color: var(--white-500);
   margin-inline-end: 16px;
 }
+.optionContainer__14160 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.clickableRow__14160 {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.clickableRow__14160:hover {
+  background: var(--background-mod-normal);
+}
+.indicatorWrapper__14160 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+.labelContainer__14160 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+.label__14160 {
+  align-items: center;
+  display: flex;
+}
+.textInputWrapper__14160 {
+  -webkit-padding-start: 40px;
+  padding-inline-start: 40px;
+}
 .container_b5a371 {
   gap: 12px;
 }
@@ -60242,7 +60279,7 @@ html .progress__61462 {
   flex-direction: column;
 }
 .choicesContainer_b5a371 {
-  gap: 16px;
+  gap: 4px;
 }
 .choiceRow_b5a371 {
   align-items: center;
@@ -60260,9 +60297,12 @@ html .progress__61462 {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  white-space: normal;
 }
-.container__18c16 br {
-  display: none;
+.container__18c16 ol,
+.container__18c16 ul {
+  margin-bottom: 24px;
+  margin-inline: 20px 0;
 }
 .header__2513e {
   align-items: center;
@@ -60277,9 +60317,6 @@ html .progress__61462 {
   display: flex;
   flex-direction: column;
   gap: 48px;
-}
-.completeContent__2513e {
-  justify-content: center;
 }
 .loading__2513e {
   padding: 24px;
@@ -96503,4 +96540,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.59bf7b7247fd2da9.css.map*/
+/*# sourceMappingURL=12633.d68b92d7727c2ba2.css.map*/
