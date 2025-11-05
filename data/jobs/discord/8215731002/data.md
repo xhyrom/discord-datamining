@@ -1,6 +1,6 @@
 # Job Listing
 
-## Procurement Contracts Specialist
+## Contracts Specialist, Procurement 
 
 **Location:** San Francisco Bay Area
 
@@ -10,11 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8215731002](https://discord.com/jobs/8215731002)
 
-**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
+**Updated At:** Tue, 04 Nov 2025 23:46:15 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.&amp;nbsp;
-We are seeking a Procurement Contracts Specialist to join our Procurement Team. Our team manages supplier sourcing, contract negotiations, and supplier performance. Our team’s mission is to achieve the best value for Discord by partnering with suppliers that meet our business requirements and growth objectives. This role will be responsible for managing procurement contracts and will collaborate closely with employees, cross-functional partners (Legal, Finance, IT, Engineering), and suppliers. This person will report to Head of Procurement.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking a Contracts Specialist to join our Procurement Team. Our team manages supplier sourcing, contract negotiations, and supplier performance. Our team’s mission is to achieve the best value for Discord by partnering with suppliers that meet our business requirements and growth objectives. This role will be responsible for managing procurement contracts and will collaborate closely with employees, cross-functional partners (Legal, Finance, IT, Engineering), and suppliers. This person will report to Head of Procurement.
 What you'll be doing:
 
 Act as the main point of contact for procurement contracts across a variety of contract types (MSAs, SOWs, SaaS Subscription Agreements, Order Forms, Technology Evaluation Agreements, Contingent Worker Agreements)
