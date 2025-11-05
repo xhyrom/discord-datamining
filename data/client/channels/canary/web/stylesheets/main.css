@@ -24479,6 +24479,9 @@ input[type="checkbox"]:focus-visible + .label__0d242 {
 .fileInfo__67954 {
   flex: 1;
 }
+.fileInput__46231 {
+  display: none;
+}
 .diversitySelector_a45a2a {
   position: relative;
 }
@@ -96500,4 +96503,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d8c5feb81d5036cc.css.map*/
+/*# sourceMappingURL=12633.838b8be655e6052e.css.map*/
