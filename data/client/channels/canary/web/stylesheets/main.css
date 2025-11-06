@@ -35305,9 +35305,16 @@ body .headerAnimation_b54a5b {
   width: 30px;
 }
 .medium_b52e4f {
-  border-radius: var(--radius-md);
   height: 40px;
   width: 40px;
+}
+.medium_b52e4f,
+.mediumLarge_b52e4f {
+  border-radius: var(--radius-md);
+}
+.mediumLarge_b52e4f {
+  height: 48px;
+  width: 48px;
 }
 .large_b52e4f {
   height: 60px;
@@ -96543,4 +96550,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.bd2bd61896399a2c.css.map*/
+/*# sourceMappingURL=12633.b4b1b2584eef80f8.css.map*/
