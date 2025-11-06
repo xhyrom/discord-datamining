@@ -64,7 +64,7 @@
   </li>
   <li>Emojis must be under 256KB in size</li>
 </ul>
-<h3>
+<h3 id="h_01K9B68JFFE7QS6FQSST90N8SR">
   Any user who is an active member of a server is able to use all uploaded
   custom emoji within that server, and any users who have a Nitro subscription
   will be able to use the server’s custom emojis anywhere on Discord where
@@ -92,7 +92,7 @@
     src="https://support.discord.com/hc/article_attachments/14541197358999"
   />
 </p>
-<h3>
+<h3 id="h_01K9B68JFFYR5455BGKV4SE4MX">
   <strong
     >Note: The same naming and sizing requirements listed above apply to the
     animated custom emojis.</strong
@@ -104,7 +104,7 @@
   enabled their Twitch emotes for subs, you can use their custom emojis
   globally! 
 </p>
-<h3>
+<h3 id="h_01K9B68JFFKJCNXF1W753F0QVK">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Although animated Twitch emotes will sync into your server, they will be
     static-only. If you would like to add animated Twitch emotes to your server,
@@ -124,7 +124,7 @@
   <li>Make sure you're currently subscribed to their channel</li>
   <li>Join the streamer's sub-enabled server</li>
 </ul>
-<h3>
+<h3 id="h_01K9B68JFFBBPMVDKJXM12GGT0">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Please make sure your custom emojis follow</span
   ><a

@@ -1,4 +1,4 @@
-<h1>
+<h1 id="h_01K9B698S7N0SHQWDSBNF4MX26">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Search Saves The Day</span
@@ -22,7 +22,7 @@
     it was created! </span
   >
 </p>
-<h1>
+<h1 id="h_01K9B698S7A3JA4762SXRVMW5A">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Dust Off The Ole' Magnifying Glass</span
@@ -40,11 +40,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486440727"
+    src="https://support.discord.com/hc/article_attachments/36138606530327"
     alt="search.png"
   />
 </p>
-<h1>
+<h1 id="h_01K9B698S7J26ZP40TGHKVAKWF">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Filter Fun</span
@@ -71,7 +71,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860444622999"
+    src="https://support.discord.com/hc/article_attachments/36138606531863"
     alt="search_filter_from.png"
   />
 </p>
@@ -91,7 +91,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486443543"
+    src="https://support.discord.com/hc/article_attachments/36138630282391"
     alt="search_filter_has.png"
   />
 </p>
@@ -131,11 +131,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486445847"
+    src="https://support.discord.com/hc/article_attachments/36138630283159"
     alt="search_filter_welcome_before.png"
   />
 </p>
-<h1>
+<h1 id="h_01K9B698S7GWYENA5QR3WHRPS4">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Example Time</span
@@ -165,7 +165,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486447383"
+    src="https://support.discord.com/hc/article_attachments/36138606533655"
     alt="search_filter_in.png"
   />
 </p>
@@ -177,7 +177,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860444633495"
+    src="https://support.discord.com/hc/article_attachments/36138630285975"
     alt="search_filter_in_during.png"
   />
 </p>
@@ -193,11 +193,11 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486455319"
+    src="https://support.discord.com/hc/article_attachments/36138606536087"
     alt="search_filter_from_in.png"
   />
 </p>
-<h1>
+<h1 id="h_01K9B698S8VFNDZ2HKK7S4KCKK">
   <strong
     ><span style="color: #2e3338" data-darkreader-inline-color=""
       >Narrow It Down</span
@@ -212,7 +212,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486456983"
+    src="https://support.discord.com/hc/article_attachments/36138606538007"
     alt="search_match.png"
   />
 </p>
@@ -226,7 +226,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486460183"
+    src="https://support.discord.com/hc/article_attachments/36138606539287"
     alt="search_new.png"
   />
 </p>
@@ -238,7 +238,7 @@
 </p>
 <p class="wysiwyg-text-align-center">
   <img
-    src="https://support.discord.com/hc/article_attachments/15860486464407"
+    src="https://support.discord.com/hc/article_attachments/36138630291351"
     alt="search_jump.png"
   />
 </p>
