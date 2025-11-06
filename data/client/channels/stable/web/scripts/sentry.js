@@ -3432,10 +3432,23 @@
                 t,
                 "/reward-eligibility",
               ),
+            BILLING_SUBSCRIPTION_ELIGIBLE_USERS: (t) =>
+              "/users/@me/billing/subscriptions/".concat(t, "/eligible-users"),
+            BILLING_SUBSCRIPTION_INVITE: (t, e) =>
+              "/users/@me/billing/subscriptions/"
+                .concat(t, "/members/")
+                .concat(e, "/invite"),
+            BILLING_SUBSCRIPTION_REMOVE_USER: (t, e) =>
+              "/users/@me/billing/subscriptions/"
+                .concat(t, "/members/")
+                .concat(e),
+            BILLING_SUBSCRIPTION_MEMBERS: (t) =>
+              "/users/@me/billing/subscriptions/".concat(t, "/members"),
             BILLING_COUNTRY_CODE: "/users/@me/billing/country-code",
             BILLING_LOCATION: "/users/@me/billing/location-info",
             BILLING_LOCALIZED_PROMO:
               "/users/@me/billing/localized-pricing-promo",
+            PREMIUM_GROUP_MEMBERSHIP: "/users/@me/premium-group/membership",
             VERIFY_PURCHASE: "/google-play/verify-purchase-token",
             DOWNGRADE_SUBSCRIPTION: "/google-play/downgrade-subscription",
             GOOGLE_PLAY_VALIDATE_PURCHASE: "/google-play/validate-purchase",
@@ -5054,6 +5067,7 @@
             "gift_category_select_modal_opened"),
           (r.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED =
             "collectibles_gifting_shop_item_clicked"),
+          (r.GIFTING_ITEM_CLICKED = "gifting_item_clicked"),
           (r.ORBS_ENTRYPOINT_CLICKED = "orbs_entrypoint_clicked"),
           (r.PAYMENT_SOURCE_CREATION_FAILED = "payment_source_creation_failed"),
           (r.PREMIUM_UPGRADE_STARTED = "premium_upgrade_started"),
@@ -6766,7 +6780,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-05-6975389fdc09709cc1ca686e8bb383a0c81fc961-discord_web",
+              "2025-11-06-e1f0df34d9d9347befb163095bfc106cc8df64c9-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6832,8 +6846,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "465214"),
-            o.YA("builtAt", String("1762330712690"));
+            o.YA("buildNumber", "465625"),
+            o.YA("builtAt", String("1762417122609"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48600,4 +48614,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.f7f9d6896407c6ec.js.map
+//# sourceMappingURL=sentry.22622da2f976d126.js.map
