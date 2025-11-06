@@ -2869,6 +2869,8 @@
                 .concat(t, "/roles/")
                 .concat(e, "/connections/unassign"),
             GUILD_ONBOARDING: (t) => "/guilds/".concat(t, "/onboarding"),
+            GUILD_ONBOARDING_ALLOWED_APPLICATIONS: (t) =>
+              "/guilds/".concat(t, "/onboarding/allowed-applications"),
             GUILD_ONBOARDING_PROMPT: (t, e) =>
               "/guilds/".concat(t, "/onboarding-prompts/").concat(e),
             GUILD_ONBOARDING_RESPONSES: (t) =>
@@ -6014,6 +6016,8 @@
           (r.GUILD_ONBOARDING_STEP_VIEWED = "guild_onboarding_step_viewed"),
           (r.GUILD_ONBOARDING_STEP_COMPLETED =
             "guild_onboarding_step_completed"),
+          (r.GUILD_ONBOARDING_CONNECTION_CLICKED =
+            "guild_onboarding_connection_clicked"),
           (r.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED =
             "guild_settings_onboarding_wizard_progress_cta_clicked"),
           (r.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED =
@@ -6779,7 +6783,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-ccdfe47fec0952a8b28842fa643e917acc2951a2",
+            release: "discord_web-c842ba325775ebb0f039d4a5c647618e1fb5959b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6845,8 +6849,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "465749"),
-            o.YA("builtAt", String("1762455873473"));
+            o.YA("buildNumber", "465761"),
+            o.YA("builtAt", String("1762456693114"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48613,4 +48617,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2297dab8129b5175.js.map
+//# sourceMappingURL=sentry.7f9ed2b69b2a4343.js.map
