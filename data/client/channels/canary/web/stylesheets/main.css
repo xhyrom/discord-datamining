@@ -62596,6 +62596,17 @@ html .progress__61462 {
   top: -50px;
   z-index: 1;
 }
+.bannerImage__72cd3 {
+  background-position-x: 95%;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  transform: scaleX(-1);
+  z-index: 0;
+}
 .container_e99fef,
 .progressHeader_e99fef {
   align-items: flex-start;
@@ -68563,17 +68574,6 @@ div.nagbar_d74ef8 {
 }
 .noGamesConnectedText_de8069 {
   text-transform: uppercase;
-}
-.radioGroup__963c3 {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-}
-.high-contrast-mode .radioGroup__963c3 {
-  gap: 0;
-}
-.radioGroupItem__963c3 {
-  margin-bottom: 0;
 }
 .guildSelectOptionIcon_b476ba {
   border-radius: var(--radius-sm);
@@ -96537,4 +96537,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.52b39a695855ee8c.css.map*/
+/*# sourceMappingURL=12633.b314f16ce751f4db.css.map*/
