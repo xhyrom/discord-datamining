@@ -4149,6 +4149,8 @@
               "/guilds/".concat(t, "/migrate-pin-permission"),
             GET_APPLICATION_TOKENS: (t) =>
               "/oauth2/applications/".concat(t, "/tokens"),
+            GUILD_MIGRATE_SLOWMODE_PERMISSION: (t) =>
+              "/guilds/".concat(t, "/migrate-bypass-slowmode-permission"),
           }),
           A = Object.freeze({
             INDEX: "/",
@@ -6650,6 +6652,7 @@
             GUILD_MEMBER_VERIFICATION_UPDATE: 210,
             GUILD_PROFILE_UPDATE: 211,
             GUILD_MIGRATE_PIN_PERMISSION: 212,
+            GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION: 213,
           }),
           Object.freeze({
             GIF: {
@@ -6783,7 +6786,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-17c0bb41ae4b137d753c1ed98e6e4bfcc296dd74",
+            release: "discord_web-9dd6b3f582672cd589567a49797cb47e9a96719e",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6849,8 +6852,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "466223"),
-            o.YA("builtAt", String("1762552818031"));
+            o.YA("buildNumber", "466235"),
+            o.YA("builtAt", String("1762553925760"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48617,4 +48620,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.830ced531458b475.js.map
+//# sourceMappingURL=sentry.e4ac68f1ef8d0988.js.map
