@@ -2869,6 +2869,8 @@
                 .concat(t, "/roles/")
                 .concat(e, "/connections/unassign"),
             GUILD_ONBOARDING: (t) => "/guilds/".concat(t, "/onboarding"),
+            GUILD_ONBOARDING_ALLOWED_APPLICATIONS: (t) =>
+              "/guilds/".concat(t, "/onboarding/allowed-applications"),
             GUILD_ONBOARDING_PROMPT: (t, e) =>
               "/guilds/".concat(t, "/onboarding-prompts/").concat(e),
             GUILD_ONBOARDING_RESPONSES: (t) =>
@@ -6014,6 +6016,8 @@
           (r.GUILD_ONBOARDING_STEP_VIEWED = "guild_onboarding_step_viewed"),
           (r.GUILD_ONBOARDING_STEP_COMPLETED =
             "guild_onboarding_step_completed"),
+          (r.GUILD_ONBOARDING_CONNECTION_CLICKED =
+            "guild_onboarding_connection_clicked"),
           (r.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED =
             "guild_settings_onboarding_wizard_progress_cta_clicked"),
           (r.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED =
@@ -6780,7 +6784,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-06-e1f0df34d9d9347befb163095bfc106cc8df64c9-discord_web",
+              "2025-11-07-b3aa1505ff036ecb1e575619f6cb33406e5ab56d-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6846,8 +6850,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "465625"),
-            o.YA("builtAt", String("1762417122609"));
+            o.YA("buildNumber", "465999"),
+            o.YA("builtAt", String("1762503525183"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48614,4 +48618,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.22622da2f976d126.js.map
+//# sourceMappingURL=sentry.74e3e08b9094b7cf.js.map
