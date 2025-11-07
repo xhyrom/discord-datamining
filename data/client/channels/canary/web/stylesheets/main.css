@@ -45048,7 +45048,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51204,9 +51204,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76931,6 +76931,11 @@ html .invoiceCancelRow__968a4 {
     inset 0 0 0 2px var(--status-speaking),
     inset 0 0 0 3px var(--background-surface-high);
 }
+.border_f910d0.latched_f910d0 {
+  box-shadow:
+    inset 0 0 0 2px var(--yellow-360),
+    inset 0 0 0 3px var(--background-surface-high);
+}
 .app-focused .border_f910d0 {
   transition: box-shadow 0.1s ease-out;
 }
@@ -97727,4 +97732,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a0ca89d251b71ca0.css.map*/
+/*# sourceMappingURL=12633.c966237a623c74f1.css.map*/
