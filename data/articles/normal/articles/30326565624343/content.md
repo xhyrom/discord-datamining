@@ -6,10 +6,6 @@
   need to verify again. 
 </p>
 <div class="exp-box">
-  <strong>Important: </strong>Age assurance is currently part of an ongoing
-  experiment across various regions.
-</div>
-<div class="exp-box">
   <strong>Important: UK Online Safety Act Implementation<br /></strong>The age
   verification features described in this article are fully available only to
   users in the United Kingdom and apply to all new and existing UK accounts.<br />To
