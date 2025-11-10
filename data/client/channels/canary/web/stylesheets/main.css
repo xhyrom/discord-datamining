@@ -59033,6 +59033,13 @@ html .progress__61462 {
     text-align: center;
   }
 }
+.inlineApplicationText_c8f246 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 4px;
+  vertical-align: text-bottom;
+}
 .reactions_f8896c {
   align-items: center;
   display: flex;
@@ -97735,4 +97742,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.0ad7962e841643ca.css.map*/
+/*# sourceMappingURL=12633.3c3e1e3243104b69.css.map*/
