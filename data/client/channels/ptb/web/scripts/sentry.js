@@ -4149,6 +4149,8 @@
               "/guilds/".concat(t, "/migrate-pin-permission"),
             GET_APPLICATION_TOKENS: (t) =>
               "/oauth2/applications/".concat(t, "/tokens"),
+            GUILD_MIGRATE_SLOWMODE_PERMISSION: (t) =>
+              "/guilds/".concat(t, "/migrate-bypass-slowmode-permission"),
           }),
           A = Object.freeze({
             INDEX: "/",
@@ -4641,6 +4643,7 @@
             PROFILE_CUSTOMIZATION: "Profile Customization",
             PROFILE_CUSTOMIZATION_TRY_IT_OUT:
               "Profile Customization Try It Out",
+            DISPLAY_NAME_STYLES: "Display Name Styles",
             POGGERMODE: "Powermode Settings",
             SESSIONS: "Sessions",
             FAMILY_CENTER: "Family Center",
@@ -4885,6 +4888,7 @@
           (r.APP_NOTICE_ANCHOR_CLICKED = "app_notice_anchor_clicked"),
           (r.VIDEO_LAYOUT_TOGGLED = "video_layout_toggled"),
           (r.VIDEO_INPUT_TOGGLED = "video_input_toggled"),
+          (r.VIDEO_STREAM_ZOOM_CHANGED = "video_stream_zoom_changed"),
           (r.AUTHORIZED_APP_CONNECTED = "authorized_app_connected"),
           (r.OPEN_MODAL = "open_modal"),
           (r.OPEN_POPOUT = "open_popout"),
@@ -6650,6 +6654,7 @@
             GUILD_MEMBER_VERIFICATION_UPDATE: 210,
             GUILD_PROFILE_UPDATE: 211,
             GUILD_MIGRATE_PIN_PERMISSION: 212,
+            GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION: 213,
           }),
           Object.freeze({
             GIF: {
@@ -6784,7 +6789,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-07-0a5fa0b3857b11851fa3b7965b4f934300ed3e50-discord_web",
+              "2025-11-10-0fa152d200c2178580ad22bd1859759888e6a844-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6850,8 +6855,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "466058"),
-            o.YA("builtAt", String("1762537631218"));
+            o.YA("buildNumber", "466366"),
+            o.YA("builtAt", String("1762762717581"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48618,4 +48623,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2e1a76383f3eef46.js.map
+//# sourceMappingURL=sentry.cbf96ae12af0491e.js.map
