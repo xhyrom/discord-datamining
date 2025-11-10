@@ -34,12 +34,6 @@
     </li>
   </ul>
 </div>
-<div class="exp-box">
-  <strong>Important:</strong> As of October 9, 2025, the Custom Invite Link beta
-  has concluded and will no longer be available for purchase under Additional
-  Perks. Any Server Boosts that were still applied to this perk, have been
-  returned to the server.
-</div>
 <h1 id="h_01K1DV4MYFMW2S8D0WC8AGVK7T">What is a Custom Invite Link?</h1>
 <p>
   A Custom Invite Link is a personalized invite link that replaces Discord's

@@ -282,15 +282,6 @@
   <li>Animated Server Banner</li>
 </ul>
 <h2 id="h_01JT6SH1QBD1XZKK4KEAD64GXS">Additional Perks</h2>
-<div class="exp-box">
-  <strong>Important:</strong>
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >As of October 9, 2025, the Custom Invite Link beta has concluded and will
-    no longer be available for purchase under Additional Perks. Any Server
-    Boosts that were still applied to this perk, have been returned to the
-    server.</span
-  >
-</div>
 <ul>
   <li>
     <strong>Server Tags (3 Boosts)</strong> - Give your members a custom
