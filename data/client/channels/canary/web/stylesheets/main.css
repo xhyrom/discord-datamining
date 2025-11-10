@@ -53753,6 +53753,17 @@ html .progress__61462 {
 .tilePriceWithVisibleBuyButton__0bef9 {
   opacity: 0;
 }
+.socialLayerStorefrontCardContainer__0bef9 {
+  border-radius: var(--radius-xs);
+  height: 100%;
+}
+.socialLayerStorefrontCardBackgroundImage__0bef9 {
+  background-size: cover;
+  height: 100%;
+}
+.socialLayerStorefrontCardImage__0bef9 {
+  object-position: center bottom;
+}
 .tileActions_bd7f32 {
   align-items: center;
   display: flex;
@@ -97711,4 +97722,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d3a1452a02d23510.css.map*/
+/*# sourceMappingURL=12633.6b760ab6be9af047.css.map*/
