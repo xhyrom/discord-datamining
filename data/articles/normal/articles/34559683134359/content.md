@@ -1,7 +1,7 @@
 <p>
   Starting from <strong>September 24, 2025 (12:00PM ET)</strong> to
-  <strong>December 15, 2025 (12:00PM ET)</strong>, WeMod users can claim 1 month
-  of Discord Nitro, while WeMod Pro subscribers can claim 3 months of Discord
+  <strong>December 15, 2025 (12:00PM ET)</strong>, Wand users can claim 1 month
+  of Discord Nitro, while Wand Pro subscribers can claim 3 months of Discord
   Nitro. Learn below about how you can claim<a
     href="https://support.discord.com/hc/en-us/articles/115000435108"
     target="_blank"
@@ -12,8 +12,8 @@
 </p>
 <h1 id="h_01K3W2ZXFVDHDW2V6JY7E6YMYP">Promotion Summary</h1>
 <p>
-  <strong>Offer Details:</strong> 1 month of Discord Nitro for WeMod free users
-  and 3 months of Discord Nitro for WeMod Pro subscribers who have launched 2+
+  <strong>Offer Details:</strong> 1 month of Discord Nitro for Wand free users
+  and 3 months of Discord Nitro for Wand Pro subscribers who have launched 2+
   games and have an account that’s at least 6 weeks old. 
 </p>
 <p>
@@ -71,7 +71,7 @@
   >
 </div>
 <p>
-  <strong>Requirements:</strong> Claim through WeMod by
+  <strong>Requirements:</strong> Claim through Wand by
   <strong>December 15, 2025 (12:00PM ET)</strong>, and redeem in your Discord
   account by <strong>January 15, 2026 (11:59PM ET)</strong>.
 </p>
@@ -88,46 +88,68 @@
     >
   </p>
   <ul>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ef41fe0145608d0b1603140aec6d1f2e0"
+    >
       <a href="#h_01K3W2ZXFVDHDW2V6JY7E6YMYP"
         ><strong>Promotion Summary</strong></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e70af93960690cc8f4569294c0a15605d"
+    >
       <a href="#h_01K3W2ZXG4J06WT9RRM4HPNX2M"
         ><strong>What is Discord Nitro?</strong></a
       >
     </li>
-    <li>
-      <a href="#h_01K3W2ZXG6BY4TZXK5YJ5X3EW8"
-        ><strong>What is WeMod?</strong></a
-      >
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="ee2bfb35d5f308be0170265098548e32d"
+    >
+      <a href="#h_01K3W2ZXG6BY4TZXK5YJ5X3EW8"><strong>What is Wand?</strong></a>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e5f53e47a0da85b74991051a16bd3efc4"
+    >
       <a href="#h_01K3W2ZXG62BZ8N4T1S7G4FFC8"
         ><strong
-          >How do I claim the Nitro Promo from my WeMod account?</strong
+          >How do I claim the Nitro Promo from my Wand account?</strong
         ></a
       >
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e8316b73bdd4b950c3835e6d182817c90"
+    >
       <a href="#h_01K3W2ZXG8CD97NWF168ACC0XD"
         ><strong
           >How do I redeem the Nitro Trial on my Discord Account?</strong
         ></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e0c4e2926aab45ccdd72ce1958a583bd4"
+        >
           <a href="#h_01K3W2ZXG9B0A4ABFG4YHMP54Q"
             ><strong>Eligibility for Redeeming the Nitro Trial</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e14902c12b9762fa301443ebca57c8cd6"
+        >
           <a href="#h_01K3W2ZXG9J3MVMCJCCHG549J6"
             ><strong>Step by Step Redeem Instructions</strong></a
           >
           <ul>
-            <li>
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="eb7cf495da219091aec2ce876b3a89c7b"
+            >
               <a href="#h_01K3W2ZXGHNKJRR45ZK1J53WJP"
                 ><strong
                   >What if I am an Active Nitro Basic, Nitro Classic, or Server
@@ -139,27 +161,42 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="eec2fcc210105d2f0e913e0eb25009810"
+    >
       <a href="#h_01K3W2ZXGJG1EN3QMPNR9XJZKJ"
         ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e524c303f4f7b42de2a7ccfff59582288"
+        >
           <a href="#h_01K3W2ZXGMMH232EQ8NC0N6TA8"
             ><strong>Promotion Details</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="eeafdfc85b61989258a71d2453dfeff66"
+        >
           <a href="#h_01K3W2ZXGPXE7HDT967YKTR4FH"
             ><strong>Eligibility for the Promotion</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e26d2c08350410fa04f9c33a706b22ada"
+        >
           <a href="#h_01K3W2ZXGR2KY6DPJQV0AV3F98"
             ><strong>Payment Info and Subscription Questions</strong></a
           >
         </li>
-        <li>
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ed903343fc1c2f61b02f3f0bfaec81315"
+        >
           <a href="#h_01K3W2ZXGTPFWERPKYPWY0GBJQ"
             ><strong>Potential Errors and Other Issues</strong></a
           >
@@ -176,38 +213,38 @@
   and avatar customizations, 2 free Server Boosts, and more:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e549d21b8136f0cb67c743a03eb7dbc1c">
     <a href="https://support.discord.com/hc/articles/360036479811"
       ><span class="wysiwyg-underline">Custom Emojis</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="eb3cdcad9ed34c5b609e3f7af3b7f28f4">
     <a href="https://support.discord.com/hc/articles/207260127"
       ><span class="wysiwyg-underline">Discord App Color Themes</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e19d8fae94f515327f3f8870c9ddb9c59">
     <a href="https://support.discord.com/hc/articles/12102061808663"
       ><span class="wysiwyg-underline">Super Reactions</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e97677092c515476c4da97787223aeb85">
     <a href="https://support.discord.com/hc/articles/13410113109911"
       ><span class="wysiwyg-underline">Avatar Decorations</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e5120438f75aed60570c72ef278a1778f">
     <a href="https://support.discord.com/hc/en-us/articles/4409388345495"
       ><span class="wysiwyg-underline">Unique Server Profiles</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="ec55a09a39b7dce3b4fbf88b21bb874d3">
     <a
       href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-"
       ><span class="wysiwyg-underline">Server Boosts</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e42494fb98e9aa5a23a9138e82caca160">
     <a href="https://support.discord.com/hc/articles/115000435108"
       ><span class="wysiwyg-underline"
         >More Nitro &amp; Nitro Basic perks</span
@@ -215,31 +252,31 @@
     >
   </li>
 </ul>
-<h1 id="h_01K3W2ZXG6BY4TZXK5YJ5X3EW8">What is WeMod?</h1>
+<h1 id="h_01K3W2ZXG6BY4TZXK5YJ5X3EW8">What is Wand?</h1>
 <p>
-  <strong>WeMod</strong> is the world's best application for modding
+  <strong>Wand</strong> is the world's best application for modding
   single-player PC games. <br /><br />Whether you're looking to access game
-  modifications or discover new ways to play your favorite titles, WeMod makes
-  it simple.The free desktop app gives you access to thousands of mods,
-  trainers, game enhancements, maps, and guides to personalize your gaming
-  experience alongside a community of over 15 million gamers.<br /><br />For
-  premium features including saved mods, precision mods, a mobile companion app,
-  and other exclusive content, users can subscribe to WeMod Pro. Learn more at
-  <a href="http://wemod.com" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">wemod.com</span></a
+  modifications or discover new ways to play your favorite titles, Wand makes it
+  simple. The free desktop app gives you access to thousands of mods, trainers,
+  game enhancements, maps, and guides to personalize your gaming experience
+  alongside a community of over 15 million gamers.<br /><br />For premium
+  features including saved mods, precision mods, a mobile companion app, and
+  other exclusive content, users can subscribe to Wand Pro. Learn more at
+  <a href="http://wand.com" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">wand.com</span></a
   >.
 </p>
 <h1 id="h_01K3W2ZXG62BZ8N4T1S7G4FFC8">
-  How do I claim the Nitro Promo from my WeMod account?
+  How do I claim the Nitro Promo from my Wand account?
 </h1>
 <p>
-  1. WeMod users can claim their Discord Nitro promotion through the WeMod
-  desktop app. 
+  1. Wand users can claim their Discord Nitro promotion through the Wand desktop
+  app. 
 </p>
 <p>
   2. Look for the <strong>Discord Nitro reward</strong>
   <strong>callout</strong> in the <strong>app sidebar</strong> or visit the
-  <strong>Subscription Rewards</strong> <strong>page</strong> in your WeMod
+  <strong>Subscription Rewards</strong> <strong>page</strong> in your Wand
   account. 
 </p>
 <p>
@@ -308,7 +345,7 @@
   >
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e62b07cdab7c3fec3cd7dbb62c062a0ae">
     Start by directly pressing the promotion link or copying and pasting the
     promotion link into your browser window.
   </li>
@@ -320,7 +357,7 @@
 </div>
 <p><strong>Step 2 - Logging into Discord</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e71dd7b4c8f1b2ca99bc581dfc5debd0f">
      If you're not already logged into Discord in your browser, you will then be
     automatically redirected to either:
   </li>
@@ -377,23 +414,23 @@
   <strong>Step 3 - Confirming the Correct Account and Payment Method</strong>
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ee21fc7dbdc4fdfdc84e52e3af296783f">
     Once you have logged into your Discord account, you'll see a new message
     asking you to confirm that you are accepting the Nitro subscription on the
     correct Discord account.
     <ul>
-      <li>
+      <li data-list-item-id="eae23c534bb3295d0eef1e68c375f081c">
         You'll see a notice saying:
         <em><strong>"You are accepting this gift as _________"</strong></em>
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e7a77b8787aae84793174be2fdf82e4ff">
     If your Discord account does not have your payment information, you'll be
     asked to fill out your payment details. (Note: You will not be charged until
     the free trial ends and the subscription renews)
   </li>
-  <li>
+  <li data-list-item-id="ea903461c02d45a2c502045eaf4dd39cd">
     When you've filled out all the necessary information and you're ready to
     redeem this promotion, press the "<strong>Accept Gift</strong>" button. 
   </li>
@@ -409,7 +446,7 @@
 </p>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e9f8c78b04fb43464ecb851e55434e988">
     After accepting the promo to your account, you'll now be automatically
     redirected to your <strong>Subscriptions</strong> tab in your User Settings
     to see your newly activated Nitro subscription on your account.
@@ -458,38 +495,46 @@
   we've also broken down this information in this FAQ section as well too.
 </p>
 <ul>
-  <li><a href="#h_01K3W2ZXGMMH232EQ8NC0N6TA8">Promotion Details</a></li>
-  <li>
+  <li data-list-item-id="ee468541ab161373990629a6b3a96af90">
+    <a href="#h_01K3W2ZXGMMH232EQ8NC0N6TA8">Promotion Details</a>
+  </li>
+  <li data-list-item-id="ea7d48ba9d98abec8ccf3e3cfdcf129d0">
     <a href="#h_01K3W2ZXGPXE7HDT967YKTR4FH">Eligibility for the Promotion</a>
   </li>
-  <li>
+  <li data-list-item-id="e3edec28351c5789869cb9b3b7eb8e410">
     <a href="#h_01K3W2ZXGR2KY6DPJQV0AV3F98"
       >Payment Info and Subscription Questions</a
     >
   </li>
-  <li>
+  <li data-list-item-id="ed1ad75500739b54e0103b12d2a645bf8">
     <a href="#h_01K3W2ZXGTPFWERPKYPWY0GBJQ"
       >Potential Errors and Other Issues</a
     >
     <ul>
-      <li>Already Had/Have Nitro</li>
-      <li>Already Redeemed</li>
-      <li>Something's Wrong Here</li>
+      <li data-list-item-id="eb0247c0c6c3291361213cc5c18b42a04">
+        Already Had/Have Nitro
+      </li>
+      <li data-list-item-id="edadd8b30b99ca596b09f1917c9282b02">
+        Already Redeemed
+      </li>
+      <li data-list-item-id="ef3f4e4f51927989ee9ce5f11ac320f4f">
+        Something's Wrong Here
+      </li>
     </ul>
   </li>
 </ul>
 <h2 id="h_01K3W2ZXGMMH232EQ8NC0N6TA8">Promotion Details</h2>
 <p><strong>Q: How long does this promotion run for?</strong></p>
 <p>
-  <strong>A:</strong> WeMod Pro subscribers and users can claim Discord Nitro
+  <strong>A:</strong> Wand Pro subscribers and users can claim Discord Nitro
   promo between <strong>September 24, 2025 (12:00PM ET) </strong>to<strong>
     December 15, 2025 (12:00PM ET). </strong
   >The promotion must be redeemed by
   <strong>January 15, 2026 (11:59PM ET)</strong>.
 </p>
 <p>
-  After <strong>January 15, 2026 (11:59PM ET)</strong>, WeMod Pro subscribers
-  and users will no longer be able to redeem this promotion.
+  After <strong>January 15, 2026 (11:59PM ET)</strong>, Wand Pro subscribers and
+  users will no longer be able to redeem this promotion.
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
@@ -501,19 +546,17 @@
   <strong>January 15, 2026 (11:59PM ET)</strong>, it will expire and you will no
   longer be able to have Discord Nitro.
 </p>
-<p><strong>Q: Are all WeMod users eligible for this promotion?</strong></p>
+<p><strong>Q: Are all Wand users eligible for this promotion?</strong></p>
 <p>
-  <strong>A:</strong> All WeMod Pro subscribers with an active paid subscription
-  and WeMod free users who have launched 2+ games with WeMod are eligible for
-  their respective offers if their WeMod accounts are at least 6 weeks old.
+  <strong>A:</strong> All Wand Pro subscribers with an active paid subscription
+  and Wand free users who have launched 2+ games with Wand are eligible for
+  their respective offers if their Wand accounts are at least 6 weeks old.
 </p>
 <h2 id="h_01K3W2ZXGPXE7HDT967YKTR4FH">Eligibility for the Promotion</h2>
+<p><strong>Q: Who can claim this promotion from their Wand account?</strong></p>
 <p>
-  <strong>Q: Who can claim this promotion from their WeMod account?</strong>
-</p>
-<p>
-  <strong>A: </strong>WeMod Pro subscribers are eligible to claim a 3-month
-  Discord Nitro trial. Free WeMod users who have used the WeMod desktop app to
+  <strong>A: </strong>Wand Pro subscribers are eligible to claim a 3-month
+  Discord Nitro trial. Free Wand users who have used the Wand desktop app to
   launch two or more game titles are eligible to claim a 1-month Discord Nitro
   trial. Find detailed instructions
   <a href="#h_01K3W2ZXG9J3MVMCJCCHG549J6">here</a>.
@@ -698,10 +741,18 @@
 </p>
 <p>A: There are several reasons why you may be seeing this error:</p>
 <ul>
-  <li>You are ineligible for this promotion</li>
-  <li>The promotion is invalid</li>
-  <li>The promotion has reached the maximum number of claims</li>
-  <li>The link is invalid</li>
+  <li data-list-item-id="ef94a71783540cbf4777549deceffcb2c">
+    You are ineligible for this promotion
+  </li>
+  <li data-list-item-id="ec18ff79ab554ccd8188a316f21b3f119">
+    The promotion is invalid
+  </li>
+  <li data-list-item-id="ec1767da0234072d31fa8a5e91fd37b25">
+    The promotion has reached the maximum number of claims
+  </li>
+  <li data-list-item-id="e42dbb8c1356674f49cb417d5eab04174">
+    The link is invalid
+  </li>
 </ul>
 <p>
   Please note that the Discord support team is not able to assist if you run
@@ -780,10 +831,10 @@
     ><span class="wysiwyg-underline">Getting Started article</span></a
   >. 
 </p>
-<p><strong>Q: I’m having trouble with my WeMod account.</strong></p>
+<p><strong>Q: I’m having trouble with my Wand account.</strong></p>
 <p>
-  <strong>A:</strong> Reach out to WeMod’s support team:
+  <strong>A:</strong> Reach out to Wand’s support team:
   <a href="mailto:support@wemod.com" target="_blank" rel="noopener noreferrer"
-    ><span class="wysiwyg-underline">support@wemod.com</span></a
+    ><span class="wysiwyg-underline">support@wand.com</span></a
   >.
 </p>
