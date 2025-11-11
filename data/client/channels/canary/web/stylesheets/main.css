@@ -44943,7 +44943,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51099,9 +51099,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -67388,6 +67388,7 @@ div:hover
   background-color: var(--background-base-low);
 }
 .container_ca1a02 {
+  --custom-content-width-with-padding: calc(100% - 32px);
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -67407,7 +67408,7 @@ div:hover
   margin-bottom: 64px;
 }
 .perksCards_ca1a02 {
-  width: calc(100% - 32px);
+  width: var(--custom-content-width-with-padding);
 }
 .manageMembership_ca1a02 {
   margin-top: 64px;
@@ -67415,7 +67416,7 @@ div:hover
 }
 .giftNitro_ca1a02 {
   margin-top: 64px;
-  width: calc(100% - 32px);
+  width: var(--custom-content-width-with-padding);
 }
 .seeAllPerksButton_ca1a02 {
   background: var(--background-surface-high);
@@ -67450,6 +67451,7 @@ div:hover
 }
 .heroHeading_ca1a02 {
   margin-bottom: 16px;
+  width: var(--custom-content-width-with-padding);
 }
 .heading_ca1a02 {
   align-self: start;
@@ -97648,4 +97650,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a61acfb2e4d95bff.css.map*/
+/*# sourceMappingURL=12633.c9db372fe46a921b.css.map*/
