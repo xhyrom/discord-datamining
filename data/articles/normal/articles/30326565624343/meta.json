@@ -27,7 +27,9 @@
     "age",
     "europe",
     "verification",
+    "locked",
     "feature",
+    "out",
     "age verification",
     "k-ID",
     "scan",
@@ -38,7 +40,8 @@
     "united kingdom",
     "uk online safety act",
     "uk osa",
-    "australia"
+    "australia",
+    "i've been locked out"
   ],
   "user_segment_ids": []
 }
