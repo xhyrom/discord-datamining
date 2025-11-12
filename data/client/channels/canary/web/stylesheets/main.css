@@ -38503,6 +38503,9 @@ body .headerAnimation_b54a5b {
 .density-cozy .nameplatePreview_e144e0 {
   height: 48px;
 }
+.density-cozy .nameplatePreview_e144e0.small_e144e0 {
+  height: 30px;
+}
 .density-cozy .nameplatePreview_e144e0.large_e144e0 {
   height: 58px;
 }
@@ -38512,6 +38515,9 @@ body .headerAnimation_b54a5b {
 .density-default .nameplatePreview_e144e0 {
   height: 42px;
 }
+.density-default .nameplatePreview_e144e0.small_e144e0 {
+  height: 30px;
+}
 .density-default .nameplatePreview_e144e0.large_e144e0 {
   height: 52px;
 }
@@ -38520,6 +38526,9 @@ body .headerAnimation_b54a5b {
 }
 .density-compact .nameplatePreview_e144e0 {
   height: 38px;
+}
+.density-compact .nameplatePreview_e144e0.small_e144e0 {
+  height: 34px;
 }
 .density-compact .nameplatePreview_e144e0.large_e144e0 {
   height: 48px;
@@ -38568,6 +38577,9 @@ body .headerAnimation_b54a5b {
   height: 14px;
   opacity: 0.5;
   width: 66%;
+}
+.nameplatePreview_e144e0.small_e144e0 .placeholderUsername_e144e0 {
+  height: 10px;
 }
 .nameplatePreview_e144e0.large_e144e0 .placeholderUsername_e144e0 {
   height: 16px;
@@ -51099,9 +51111,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -97781,4 +97793,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.cbd1d86c41907da8.css.map*/
+/*# sourceMappingURL=12633.5bd672abd608d3ea.css.map*/
