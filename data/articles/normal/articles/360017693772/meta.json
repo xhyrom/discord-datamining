@@ -15,12 +15,13 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2025-10-22T23:19:49Z",
+  "edited_at": "2025-11-12T17:39:18Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
     "payment",
+    "answer-bot",
     "billing",
     "purchase"
   ],

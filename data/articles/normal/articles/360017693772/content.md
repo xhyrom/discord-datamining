@@ -1,61 +1,80 @@
-<p id="docs-internal-guid-6d1e31da-7fff-f79d-73a8-238105584234">
-  <span class="wysiwyg-font-size-large"
-    ><strong>What this article covers: </strong></span
-  >
-</p>
-<ul>
-  <li style="list-style-type: none">
-    <ul>
-      <li>
-        <a href="#h_01J1FZH9BCJZ73NWBB9RTMESMG"
-          >Where to Manage all of Your Active Subscriptions </a
-        >
-      </li>
-      <li>
-        <a href="#docs-internal-guid-357dd012-7fff-bfb5-ae53-6e5b0c67d911"
-          >Billing Information and History</a
-        >
-        <ul>
-          <li>
-            <a href="#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
-              >How do I add or edit payment methods?</a
-            >
-          </li>
-          <li>
-            <a href="#docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d"
-              >How do I change my payment methods for my subscription?</a
-            >
-          </li>
-          <li>
-            <a href="#docs-internal-guid-844f9ea2-7fff-aedb-be4f-69bc6ebccc05"
-              >How do I remove a payment method?</a
-            >
-          </li>
-          <li>
-            <a href="#docs-internal-guid-adf597e3-7fff-fceb-b15e-efe678740081"
-              >Where can I download my tax invoice or purchase receipt?</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#h_01GFV42K7SR7DPP1TCTTF0FKN3"
-          >What payment methods are accepted?</a
-        >
-      </li>
-      <li>
-        <a href="#h_01GFV43NYQ6KM5V7MFYCFYZ7HP"
-          >What Discord Purchases Will Look Like on Your Statement</a
-        >
-      </li>
-      <li>
-        <a href="#docs-internal-guid-5f0782a4-7fff-8843-f22f-66f97347c229"
-          >Frequently Asked Questions</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+<div class="toc-box">
+  <strong
+    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
+    ><br
+  /></strong>
+  <ul>
+    <li style="list-style-type: none">
+      <ul>
+        <li>
+          <strong
+            ><a href="#h_01J1FZH9BCJZ73NWBB9RTMESMG"
+              >Where to Manage all of Your Active Subscriptions </a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K81NJDJQCQEQ3KM1NNZAF1JD"
+              >Billing Information and History</a
+            ></strong
+          >
+          <ul>
+            <li>
+              <strong
+                ><a href="#h_01K81NM0KY4S4KCEZB008EFBA5"
+                  >How do I add or edit payment methods?</a
+                ></strong
+              >
+            </li>
+            <li>
+              <strong
+                ><a href="#h_01K81NNQ1FDGM4RT8NNPJKFWEM"
+                  >How do I change my payment methods for my subscription?</a
+                ></strong
+              >
+            </li>
+            <li>
+              <strong
+                ><a href="#h_01K81NPZY2MMP8P9BBK26CDRQD"
+                  >How do I remove a payment method?</a
+                ></strong
+              >
+            </li>
+            <li>
+              <strong
+                ><a href="#h_01K81NQFSH7WBFS8FPQ2FD2CNM"
+                  >Where can I download my tax invoice or purchase receipt?</a
+                ></strong
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K81NR51C61N77REZJQD6K0AW"
+              >What payment methods are accepted?</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K81NSNAKRHBQACY5A3B780ET"
+              >What Discord Purchases Will Look Like on Your Statement</a
+            ></strong
+          >
+        </li>
+        <li>
+          <strong
+            ><a href="#h_01K81NT5AVBH2CTY6TRH6XJ1FH"
+              >Frequently Asked Questions</a
+            ></strong
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 <h1 id="h_01J1FZH9BCJZ73NWBB9RTMESMG">
   Where to Manage all of Your Active Subscriptions 
 </h1>
@@ -64,10 +83,15 @@
     ><span id="docs-internal-guid-a5096c0b-7fff-beb8-851d-dbeacf840f60"
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121394711"
-        width="624"
-        height="471" /></span
+        width="839"
+        height="633" /></span
   ></strong>
 </p>
+<h4 id="h_01K81NXBQX6M8YTXDAHFH7C00B" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Subscriptions Tab in User Settings on Desktop</span
+  >
+</h4>
 <p id="docs-internal-guid-68cbc2d3-7fff-f602-1743-01972b2b8085">
   When you’ve purchased a Nitro subscription, or maybe added some Server Boosts
   to your account, you can manage those subscriptions and find information about
@@ -98,7 +122,7 @@
   </li>
   <li>Any gift subscription credits you’ve received.</li>
 </ul>
-<h3 id="h_01JEVWZA92SJTQY3YJAZQTBC5B">
+<div class="book-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >For more information on how to cancel a subscription, please check out one
     of these relevant articles depending on your subscription type: </span
@@ -126,9 +150,11 @@
     rel="noopener noreferrer"
     >Premium App</a
   ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
-<h1 id="docs-internal-guid-357dd012-7fff-bfb5-ae53-6e5b0c67d911">
-  <strong>Billing Information and History</strong>
+</div>
+<h1 id="h_01K81NJDJQCQEQ3KM1NNZAF1JD">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Billing Information and History</span
+  >
 </h1>
 <p id="docs-internal-guid-8e60dd78-7fff-f06a-32ad-61a4840fd18b">
   You can find your payment methods on file, as well as your payment history,
@@ -139,13 +165,16 @@
     ><span id="docs-internal-guid-3de5febf-7fff-2122-7a68-e604a975cd40"
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121402135"
-        width="624"
-        height="399" /></span
+        width="771"
+        height="493" /></span
   ></strong>
 </p>
-<h2 id="docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618">
-  How do I add or edit payment methods?
-</h2>
+<h4 id="01K81P0P9ZZ4983QX4D6NR2TFD" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Billing Tab in User Settings on Desktop</span
+  >
+</h4>
+<h2 id="h_01K81NM0KY4S4KCEZB008EFBA5">How do I add or edit payment methods?</h2>
 <p>
   You can add a new payment method or edit any pre-existing payment methods in
   the<strong> Billing tab</strong>. 
@@ -159,10 +188,15 @@
     ><span id="docs-internal-guid-3692f165-7fff-0c35-b613-330c68eab92a"
       ><img
         src="https://support.discord.com/hc/article_attachments/24509110852759"
-        width="600"
-        height="444" /></span
+        width="739"
+        height="547" /></span
   ></strong>
 </p>
+<h4 id="01K81P1Q0TAXGBTSXQYT9NH3QX" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Adding a Payment Method</span
+  >
+</h4>
 <p id="docs-internal-guid-199acb8c-7fff-7019-e2d2-0eed05830428">
   If you would like to make changes to a pre-existing payment method, select the
   <strong>Edit </strong>button to the right of the payment method. From there,
@@ -172,10 +206,15 @@
   <span id="docs-internal-guid-d5e4812c-7fff-f88b-82a3-15896bddb956"
     ><img
       src="https://support.discord.com/hc/article_attachments/24509121410711"
-      width="624"
-      height="391"
+      width="742"
+      height="465"
   /></span>
 </p>
+<h4 id="01K81P2Y2A0ZBCMT29NQG656KP" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Default Tag and Edit Button for Payment Method</span
+  >
+</h4>
 <p id="docs-internal-guid-c0be2227-7fff-15e9-ecfd-40e1f8582ac8">
   You can also set a payment method as <strong>default</strong>. The default
   payment method will be the first payment method that appears when making new
@@ -193,11 +232,16 @@
   <span id="docs-internal-guid-16abe2e6-7fff-5c9b-95f9-308e749737d9"
     ><img
       src="https://support.discord.com/hc/article_attachments/24509121412247"
-      width="624"
-      height="540"
+      width="827"
+      height="716"
   /></span>
 </p>
-<h2 id="docs-internal-guid-1ae109ec-7fff-410f-aa54-931f058a395d">
+<h4 id="01K81P4JKC32RNNRSPZ0C8TCXR" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Make this my default payment method Checkbox</span
+  >
+</h4>
+<h2 id="h_01K81NNQ1FDGM4RT8NNPJKFWEM">
   How do I change my payment method for my subscription?
 </h2>
 <p id="docs-internal-guid-ebcdc320-7fff-6031-df95-646b5efe3299">
@@ -212,7 +256,7 @@
 <p>1. Open User Settings &gt; Subscriptions.</p>
 <p>2. Find the <strong>Pay for it With</strong> section.</p>
 <p>3. Select a payment method.</p>
-<h3 id="h_01J1FW6MK76848SSRQH0HK2ZP5">
+<div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     ><strong>Note:</strong> Updating your subscription payment method does not
     automatically change which payment method is set as your default payment
@@ -220,17 +264,22 @@
     payment methods, you will need to update both settings to the same
     card. </span
   >
-</h3>
-<p class="wysiwyg-text-align-center">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    ><strong
-      ><span id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
-        ><img
-          src="https://support.discord.com/hc/article_attachments/24509121414679"
-          width="624"
-          height="471" /></span></strong
-  ></span>
-</p>
+  <p class="wysiwyg-text-align-center">
+    <span style="color: #434343" data-darkreader-inline-color=""
+      ><strong
+        ><span id="docs-internal-guid-e00d7002-7fff-5770-de49-fbf5f28ba804"
+          ><img
+            src="https://support.discord.com/hc/article_attachments/24509121414679"
+            width="755"
+            height="570" /></span></strong
+    ></span>
+  </p>
+  <h4 id="01K81P6F370YRE72AK6VJCVGET" class="wysiwyg-text-align-center">
+    <span style="color: #666666" data-darkreader-inline-color=""
+      >Pay for it with Dropdown</span
+    >
+  </h4>
+</div>
 <p id="docs-internal-guid-8a24eddb-7fff-95c5-15f1-9a868f5bcb68">
   If you have a Nitro or Boost subscription, the payment method set under the
   <strong>Pay for it With section</strong> will show a corresponding
@@ -242,11 +291,16 @@
     ><span id="docs-internal-guid-95b2d89a-7fff-31e5-639e-f9a5fe1fdf0c"
       ><img
         src="https://support.discord.com/hc/article_attachments/24509121418903"
-        width="624"
-        height="103" /></span
+        width="860"
+        height="142" /></span
   ></strong>
 </p>
-<h2 id="docs-internal-guid-844f9ea2-7fff-aedb-be4f-69bc6ebccc05">
+<h4 id="01K81P8DCRS4AVKXKBRN9SV7E6" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Subscription Tag</span
+  >
+</h4>
+<h2 id="h_01K81NPZY2MMP8P9BBK26CDRQD" class="wysiwyg-text-align-left">
   How do I remove a payment method?
 </h2>
 <p>
@@ -263,11 +317,16 @@
     ><span id="docs-internal-guid-576a8cf1-7fff-3c74-2163-512cd13a3e39"
       ><img
         src="https://support.discord.com/hc/article_attachments/24509110864791"
-        width="599"
-        height="501" /></span
+        width="731"
+        height="611" /></span
   ></strong>
 </p>
-<h3 id="docs-internal-guid-e95b8cf5-7fff-c220-4973-dab4e76e1700">
+<h4 id="01K81P9X1ZRJ6RWPK490R7HAFV" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Delete Payment Method Button</span
+  >
+</h4>
+<div class="info-box">
   <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
       >Note</span
@@ -277,9 +336,11 @@
     saved payment method. If you’d like to cancel your subscription and remove
     your cards on file, be sure to cancel your subscription first.</span
   >
-</h3>
-<h2 id="docs-internal-guid-adf597e3-7fff-fceb-b15e-efe678740081">
-  Where can I download my tax invoice or purchase receipt?
+</div>
+<h2 id="h_01K81NQFSH7WBFS8FPQ2FD2CNM">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Where can I download my tax invoice or purchase receipt?</span
+  >
 </h2>
 <p id="docs-internal-guid-e4d4d176-7fff-2501-356e-964de8b86b56">
   1. You can locate either your purchase receipt or tax invoice by heading into
@@ -300,8 +361,8 @@
   <span id="docs-internal-guid-ac6ecb29-7fff-4420-aa86-90e41896c581"
     ><img
       src="https://support.discord.com/hc/article_attachments/24509110866455"
-      width="624"
-      height="545"
+      width="842"
+      height="735"
   /></span>
 </p>
 <h4
@@ -319,9 +380,7 @@
     section. </span
   >
 </h4>
-<h1 id="h_01GFV42K7SR7DPP1TCTTF0FKN3">
-  <strong>What payment methods are accepted?</strong>
-</h1>
+<h1 id="h_01K81NR51C61N77REZJQD6K0AW">What payment methods are accepted?</h1>
 <p>
   <span style="font-weight: 400">To make a purchase, you will need a </span
   ><strong>valid payment method </strong
@@ -380,18 +439,20 @@
     <span style="font-weight: 400">GoPay (Indonesia)</span>
   </li>
 </ul>
-<h3 id="docs-internal-guid-21c27682-7fff-cdda-995b-b6ffaa26baf7">
+<div class="warn-box">
   <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
-      >Note</span
+      >Important</span
     ></strong
   ><span style="color: #434343" data-darkreader-inline-color=""
     >: When selecting your payment method, please note we are unable to provide
     refunds for purchases made with Paysafecards.</span
   >
-</h3>
-<h1 id="h_01GFV43NYQ6KM5V7MFYCFYZ7HP">
-  <strong>What Discord Purchases Will Look Like on Your Statement</strong>
+</div>
+<h1 id="h_01K81NSNAKRHBQACY5A3B780ET">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >What Discord Purchases Will Look Like on Your Statement</span
+  >
 </h1>
 <p>
   <span style="font-weight: 400"
@@ -410,10 +471,15 @@
   <span id="docs-internal-guid-3c0a1bde-7fff-8bd3-8305-64c714109998"
     ><img
       src="https://support.discord.com/hc/article_attachments/24509121433367"
-      width="624"
-      height="32"
+      width="761"
+      height="39"
   /></span>
 </p>
+<h4 id="01K81PB67KH389C27884EMP0PE" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of Bank Statement for Nitro Monthly</span
+  >
+</h4>
 <p>
   <span style="font-weight: 400"
     >Here is what you will see if you made a purchase via
@@ -424,29 +490,37 @@
   <span id="docs-internal-guid-82b24fae-7fff-2639-d2ae-986f262fa90c"
     ><img
       src="https://support.discord.com/hc/article_attachments/24509110870423"
-      width="624"
-      height="381"
+      width="862"
+      height="528"
   /></span>
 </p>
-<h3 id="docs-internal-guid-25cbb1e0-7fff-89c0-923f-5b6e311a057e">
+<h4 id="01K81PCC70KT8WBVDVB8QSZCS5" class="wysiwyg-text-align-center">
+  <span style="color: #666666" data-darkreader-inline-color=""
+    >Example of PayPal Statement for Nitro Basic Monthly</span
+  >
+</h4>
+<div class="info-box">
   <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
       >Note</span
     ></strong
   ><span style="color: #434343" data-darkreader-inline-color=""
-    >: All purchases made within Discord will be labeled DISCORD*ItemName within
-    credit/debit card statements depending on how your bank renders this and
-    PAYPAL* DISCORD if completed through PayPal. If you would like a refund for
-    any purchases, check out our refund policy </span
+    >: All purchases made within Discord will be labeled
+    <strong>DISCORD*ItemName</strong> within credit/debit card statements
+    depending on how your bank renders this and
+    <strong>PAYPAL* DISCORD</strong> if completed through PayPal. If you would
+    like a refund for any purchases, check out our refund policy </span
   ><a
     href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy"
     target="_blank"
     rel="noopener noreferrer"
     >here</a
   ><span style="color: #434343" data-darkreader-inline-color="">.</span>
-</h3>
-<h1 id="docs-internal-guid-5f0782a4-7fff-8843-f22f-66f97347c229">
-  <strong>Frequently Asked Questions</strong>
+</div>
+<h1 id="h_01K81NT5AVBH2CTY6TRH6XJ1FH">
+  <span style="color: #434343" data-darkreader-inline-color=""
+    >Frequently Asked Questions</span
+  >
 </h1>
 <p>
   <strong
@@ -512,7 +586,7 @@
 <p>
   A: The default payment method determines which payment will show first when
   making new purchases on Discord. However, your subscription payment method is
-  what’s used to pay for your recurring Nitro and Boost subscriptions. <br />You
+  what’s used to pay for your recurring Nitro and Boost subscriptions.<br />You
   can set the same payment method for both by following the steps to update your
   <a href="#docs-internal-guid-1731ba7c-7fff-87a1-c976-f62cc1cd2618"
     >default payment method</a
@@ -601,6 +675,16 @@
   subscriptions between accounts. We understand this might be a bit
   inconvenient, and we appreciate your understanding.
 </p>
-<div id="gtx-trans" style="position: absolute; left: 115px; top: 7217.48px">
-  <div class="gtx-trans-icon"> </div>
-</div>
+<p>
+  <strong
+    >Q: I got a notice that my Nitro price is decreasing, why is that?</strong
+  >
+</p>
+<p>
+  A: Discord regularly reviews and updates prices based on factors like your
+  location, local market conditions, currency exchange rates, and regional
+  operating costs. We also test different pricing approaches to better
+  understand what works best for our community.<br />As part of this process, we
+  lowered the price of the Nitro plan for a small number of subscribers in the
+  US and Canada on <strong>November 12, 2025</strong>.
+</p>
