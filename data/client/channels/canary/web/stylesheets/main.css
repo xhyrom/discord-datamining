@@ -68919,6 +68919,9 @@ div.nagbar_d74ef8 {
 .paymentDetail_e9cb00:first-child {
   margin-top: 20px;
 }
+.additionalInformationButtonContainer_e9cb00 {
+  margin-top: 16px;
+}
 .guildProductDetail_e9cb00 {
 }
 .date_e9cb00 {
@@ -97778,4 +97781,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.1db17d8cfdbde08f.css.map*/
+/*# sourceMappingURL=12633.cbd1d86c41907da8.css.map*/
