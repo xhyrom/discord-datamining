@@ -5398,6 +5398,19 @@
           (r.CONTACT_SYNC_FLOW_KEY = "relationship_sync_flow"),
           (r.LOGIN_ATTEMPTED = "login_attempted"),
           (r.LOGIN_SUCCESSFUL = "login_successful"),
+          (r.PASSWORD_RESET_ATTEMPTED = "password_reset_attempted"),
+          (r.ONE_TIME_LOGIN_PAGE_VIEWED = "one_time_login_page_viewed"),
+          (r.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED =
+            "one_time_login_app_detection_attempted"),
+          (r.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED =
+            "one_time_login_continue_in_browser_clicked"),
+          (r.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED =
+            "one_time_login_back_to_login_clicked"),
+          (r.ONE_TIME_LOGIN_ATTEMPTED = "one_time_login_attempted"),
+          (r.ONE_TIME_LOGIN_ERROR = "one_time_login_error"),
+          (r.ONE_TIME_LOGIN_MODAL_OPENED = "one_time_login_modal_opened"),
+          (r.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED =
+            "one_time_login_modal_cancel_clicked"),
           (r.REPLY_STARTED = "reply_started"),
           (r.GUILD_TEMPLATE_APP_OPENED = "guild_template_app_opened"),
           (r.GUILD_TEMPLATE_OPENED = "guild_template_opened"),
@@ -6788,7 +6801,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-22bfe662b9969323c90d0fe3d8492869467e258c",
+            release: "discord_web-38d55bec7917e53a0188e285095abb4492596a43",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6854,8 +6867,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "467035"),
-            o.YA("builtAt", String("1762967258876"));
+            o.YA("buildNumber", "467048"),
+            o.YA("builtAt", String("1762967957991"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -48622,4 +48635,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.13a94e8e157a347e.js.map
+//# sourceMappingURL=sentry.e5f04875e605c02a.js.map
