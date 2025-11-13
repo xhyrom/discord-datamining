@@ -62999,8 +62999,12 @@ html .progress__61462 {
   width: 356px;
 }
 .datePickerContainer_f1c5c9 {
+  padding: 0;
+}
+.calendar_f1c5c9 {
   display: flex;
   justify-content: center;
+  width: 314px;
 }
 .container__55c99 {
   background-color: var(--background-surface-higher);
@@ -99467,4 +99471,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d078479ff5698985.css.map*/
+/*# sourceMappingURL=12633.7a313d334f8cc49f.css.map*/
