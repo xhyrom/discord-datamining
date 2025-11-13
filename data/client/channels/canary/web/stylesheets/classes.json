@@ -2751,6 +2751,8 @@
   "hiddenVoiceStatesText": "hiddenVoiceStatesText_adebba",
   "debugMode": "debugMode_fa952e",
   "keybindFlexboxLayout": "keybindFlexboxLayout_cbf20c",
+  "keyCombo": "keyCombo_cbf20c",
+  "keyComboKey": "keyComboKey_cbf20c",
   "appliedBoostContainer": "appliedBoostContainer_ceb06a",
   "guildContainer": "guildContainer_ceb06a",
   "guildInfoContainer": "guildInfoContainer_ceb06a",
