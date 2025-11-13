@@ -67,53 +67,6 @@
   >. Purchased decorations are yours to keep so you can add all kinds of pizazz
   to your avatar and profile aesthetic whenever you want.
 </p>
-<div class="mega-box">
-  <strong><span style="color: #434343">Offer: </span></strong
-  ><span style="color: #434343"
-    >It’s time to pick: trick or treat? Starting </span
-  ><strong><span style="color: #434343">October 1, 2025</span></strong
-  ><span style="color: #434343"
-    >, gift a 1-month or 1-year Nitro subscription and receive your choice of
-    one from eight spooky Avatar Decorations to keep. This Halloween promotion
-    will roll out gradually, with all users gaining access by mid October</span
-  ><span style="color: #434343">.</span>
-  <p>
-    <span style="color: #434343"
-      >Collect a new Avatar Decoration from the Trick or Treat Collection each
-      time you send a Nitro gift. Offer ends </span
-    ><strong
-      ><span style="color: #434343">November 3, 2025 (5:00PM PT)</span></strong
-    ><span style="color: #434343"
-      >. Look for the promotion banner before making your purchase. </span
-    >
-  </p>
-  <p>
-    <strong><span style="color: #434343">Please note</span></strong
-    ><span style="color: #434343"
-      >: This offer is only valid for Nitro gifts (not Nitro Basic gifts). While
-      any Avatar Decoration you receive is yours to keep, it will be removed if
-      you refund your Nitro gift purchase.</span
-    >
-  </p>
-  <p>
-    <span style="color: #434343">Want to learn more about </span
-    ><strong><span style="color: #434343">Nitro Gifting</span></strong
-    ><span style="color: #434343">? Check out our </span
-    ><a
-      href="https://support.discord.com/hc/en-us/articles/360020877112"
-      target="_blank"
-      rel="noopener noreferrer"
-      >article</a
-    ><span style="color: #434343"> for more details.</span>
-  </p>
-</div>
-<p class="wysiwyg-text-align-center">
-  <img
-    src="https://support.discord.com/hc/article_attachments/27897516515223"
-    width="452"
-    height="407"
-  />
-</p>
 <div class="book-box">
   <a
     href="https://support.discord.com/hc/en-us/articles/115000435108-Discord-Nitro-Classic-Nitro"
