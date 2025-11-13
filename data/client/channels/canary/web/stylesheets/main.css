@@ -45141,7 +45141,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51299,9 +51299,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -53089,10 +53089,15 @@ svg.radioIcon_c1e9c4 {
   padding: 0 30px;
 }
 .giftImagePromotion_a45ed3 {
-  inset-inline-start: -65px;
+  inset-inline-start: 32px;
   position: absolute;
-  top: -21px;
-  width: 400px;
+  top: 21px;
+  width: 220px;
+}
+.full-motion .giftImagePromotion_a45ed3 {
+  inset-inline-start: 24px;
+  top: 10px;
+  width: 235px;
 }
 .giftImageAnimatedPromotion_a45ed3 {
   padding-bottom: 20px;
@@ -63899,10 +63904,14 @@ html .progress__61462 {
 .avatar__72cd3 {
   align-items: center;
   display: flex;
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
   position: absolute;
-  top: -50px;
+  top: -40px;
   z-index: 1;
+}
+.full-motion .avatar__72cd3 {
+  inset-inline-end: 0;
+  top: -50px;
 }
 .bannerImage__72cd3 {
   background-position-x: 95%;
@@ -99598,4 +99607,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.3dd7ff0d239f7b20.css.map*/
+/*# sourceMappingURL=12633.1fe84d8a76438a19.css.map*/
