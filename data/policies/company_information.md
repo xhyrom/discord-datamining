@@ -747,8 +747,12 @@
                                   stroke-linecap="round"
                                   stroke-linejoin="round"
                                 ></path>
-                              </svg></div
-                          ></a>
+                              </svg></div></a
+                          ><a
+                            href="/developers/developer-newsletter"
+                            class="dd_nav-link w-inline-block"
+                            ><div>Developer Newsletter</div></a
+                          >
                         </div>
                       </div>
                     </div>
