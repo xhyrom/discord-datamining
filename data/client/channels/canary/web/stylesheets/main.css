@@ -64601,8 +64601,9 @@ html .progress__61462 {
   border-radius: 20px;
   flex-direction: row;
   gap: 24px;
-  max-width: 800px;
-  padding: 12px 24px;
+  margin-top: 40px;
+  max-width: 700px;
+  padding: 16px 24px;
 }
 .asset__7137c,
 .container__7137c {
@@ -64613,7 +64614,6 @@ html .progress__61462 {
   flex-direction: column;
   flex-shrink: 0;
   justify-content: center;
-  padding: 8px;
 }
 .bannerContent__7137c {
   flex: 1 0 0;
@@ -99396,4 +99396,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d413a8ba0c213594.css.map*/
+/*# sourceMappingURL=12633.17d848bc199a29d0.css.map*/
