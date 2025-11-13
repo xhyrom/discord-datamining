@@ -63786,6 +63786,7 @@ html .progress__61462 {
   background-position-y: 10%;
   background-repeat: no-repeat;
   background-size: 300%;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   inset: 0;
   opacity: 0.5;
   position: absolute;
@@ -99466,4 +99467,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.888f7e7911b817e4.css.map*/
+/*# sourceMappingURL=12633.d078479ff5698985.css.map*/
