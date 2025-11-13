@@ -1222,10 +1222,6 @@
                                 Featured
                               </div>
                               <a
-                                href="https://discord.com/developers/gdc-2025"
-                                class="dd_nav-link is-new w-inline-block"
-                                ><div>GDC 2025</div></a
-                              ><a
                                 href="https://discord.com/developers/social-sdk"
                                 class="dd_nav-link is-new w-inline-block"
                                 ><div>Discord Social SDK</div></a
@@ -1306,8 +1302,12 @@
                                       stroke-linecap="round"
                                       stroke-linejoin="round"
                                     ></path>
-                                  </svg></div
-                              ></a>
+                                  </svg></div></a
+                              ><a
+                                href="/developers/developer-newsletter"
+                                class="dd_nav-link is-new w-inline-block"
+                                ><div>Developer Newsletter</div></a
+                              >
                             </div>
                           </div>
                         </div>
