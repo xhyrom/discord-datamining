@@ -6165,6 +6165,12 @@
             "premium_trial_offer_action_sheet_cta_clicked"),
           (r.PREMIUM_TRIAL_OFFER_ACTION_SHEET_DISMISSED =
             "premium_trial_offer_action_sheet_dismissed"),
+          (r.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED =
+            "premium_discount_offer_action_sheet_viewed"),
+          (r.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED =
+            "premium_discount_offer_action_sheet_dismissed"),
+          (r.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_CTA_CLICKED =
+            "premium_discount_offer_action_sheet_cta_clicked"),
           (r.FETCH_USER_OFFER_STARTED = "fetch_user_offer_started"),
           (r.SHARE_NITRO_FLOW_STEPS = "share_nitro_flow_steps"),
           (r.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED =
@@ -6804,7 +6810,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-16e8d54727b5ac504b73aca5414adeb8c5d0e793",
+            release: "discord_web-3bcb17373553617757773cdc92de06ca1118e7de",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6870,8 +6876,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "467984"),
-            o.YA("builtAt", String("1763072636096"));
+            o.YA("buildNumber", "467997"),
+            o.YA("builtAt", String("1763073229446"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return i;
@@ -49994,4 +50000,4 @@ ${tQ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.8ba5a74067150055.js.map
+//# sourceMappingURL=sentry.be876201ba5f655b.js.map
