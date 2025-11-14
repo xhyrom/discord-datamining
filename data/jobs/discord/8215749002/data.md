@@ -10,10 +10,10 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8215749002](https://discord.com/jobs/8215749002)
 
-**Updated At:** Tue, 04 Nov 2025 00:18:20 GMT
+**Updated At:** Fri, 14 Nov 2025 00:13:56 GMT
 
 **Job Description:**
-Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are seeking an experienced Director of Advertising Sales in the gaming space in EMEA to join our growing sales team at Discord. This role is perfect for someone passionate about the power of advertising as a growth play for the gaming industry in Greater Europe &amp;amp; adjacent territories who is eager to help game companies connect with their most dedicated audiences on Discord.
+Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.This is an international position in Europe employed by an international PEO.We are seeking an experienced Director of Advertising Sales in the gaming space in EMEA to join our growing sales team at Discord. This role is perfect for someone passionate about the power of advertising as a growth play for the gaming industry in Greater Europe &amp;amp; adjacent territories who is eager to help game companies connect with their most dedicated audiences on Discord.
 The expected outcomes for this position in year one are:&amp;nbsp;
 
 Achieving Revenue Quotas
