@@ -427,7 +427,7 @@
 <div class="book-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >Looking for Nitro Classic? Check our FAQ
-    <a href="#h_01JXDC6YKVDSPYNY5419EB2XF7">below</a>.</span
+    <a href="#h_01JZ3EFHEK1ARBXN693Y3D0JQD">below</a>.</span
   >
 </div>
 <h1 id="h_01JXDBQ7YTESHKC4EFEMTEAQ7G">
