@@ -17459,9 +17459,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   background: var(--notice-background-warning);
   color: var(--notice-text-warning);
 }
-.botTag__82f07.botTagRemix__82f07 {
-  top: 0.3em;
-}
 .botTagVerified__82f07 {
   display: inline-block;
 }
@@ -38686,6 +38683,9 @@ body .headerAnimation_b54a5b {
 .density-cozy .nameplatePreview_e144e0 {
   height: 48px;
 }
+.density-cozy .nameplatePreview_e144e0.xsmall_e144e0 {
+  height: 26px;
+}
 .density-cozy .nameplatePreview_e144e0.small_e144e0 {
   height: 30px;
 }
@@ -38698,6 +38698,9 @@ body .headerAnimation_b54a5b {
 .density-default .nameplatePreview_e144e0 {
   height: 42px;
 }
+.density-default .nameplatePreview_e144e0.xsmall_e144e0 {
+  height: 26px;
+}
 .density-default .nameplatePreview_e144e0.small_e144e0 {
   height: 30px;
 }
@@ -38709,6 +38712,9 @@ body .headerAnimation_b54a5b {
 }
 .density-compact .nameplatePreview_e144e0 {
   height: 38px;
+}
+.density-compact .nameplatePreview_e144e0.xsmall_e144e0 {
+  height: 26px;
 }
 .density-compact .nameplatePreview_e144e0.small_e144e0 {
   height: 34px;
@@ -38760,6 +38766,9 @@ body .headerAnimation_b54a5b {
   height: 14px;
   opacity: 0.5;
   width: 66%;
+}
+.nameplatePreview_e144e0.xsmall_e144e0 .placeholderUsername_e144e0 {
+  height: 8px;
 }
 .nameplatePreview_e144e0.small_e144e0 .placeholderUsername_e144e0 {
   height: 10px;
@@ -65989,7 +65998,6 @@ html .progress__61462 {
 .moreGuildsImage_b62c4e {
   width: 116px;
 }
-.remixingImage_b62c4e,
 .soundboardImage_b62c4e,
 .superReactionsImage_b62c4e {
   height: 132px;
@@ -101865,4 +101873,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.99df43bca6d07e10.css.map*/
+/*# sourceMappingURL=12633.ffae59f07945739c.css.map*/
