@@ -39411,6 +39411,66 @@ body .headerAnimation_b54a5b {
 .clickable_faf576:hover {
   opacity: 1;
 }
+.popover__2ee1b {
+}
+.popoverGradientWrapper__2ee1b {
+}
+.popoverContentWithGradient__2ee1b {
+}
+.closeButton__2ee1b {
+}
+.header__2ee1b {
+}
+.headerWithBadge__2ee1b {
+}
+.badgeContainer__2ee1b {
+}
+.content__2ee1b {
+}
+.footer__2ee1b {
+}
+.footerText__2ee1b {
+}
+.footerLink__2ee1b {
+}
+.actionBar__2ee1b {
+}
+.actions__2ee1b {
+}
+.actionsFullWidth__2ee1b {
+}
+.multistepIndicator__2ee1b {
+}
+.multistepActionLayout__2ee1b {
+}
+.caretIcon__2ee1b {
+}
+.graphic__2ee1b {
+  margin-top: 8px;
+}
+.graphic--sm__2ee1b {
+}
+.graphic--md__2ee1b {
+}
+.graphic--lg__2ee1b {
+}
+.graphic--video__2ee1b {
+}
+.title__2ee1b {
+  color: var(--text-primary);
+  font-family: var(--font-display-marketing-header);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.headerBody__2ee1b {
+}
+.caretHoverable__2ee1b {
+  pointer-events: auto;
+}
 .tooltipContainer__7bebc {
   align-items: center;
   display: flex;
@@ -101787,4 +101847,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.76bec715e30b7a1e.css.map*/
+/*# sourceMappingURL=12633.a074dae49a0720c4.css.map*/
