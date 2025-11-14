@@ -39420,6 +39420,9 @@ body .headerAnimation_b54a5b {
 .closeButton__2ee1b {
 }
 .header__2ee1b {
+  gap: 2px;
+  margin-bottom: 0;
+  margin-top: var(--space-20);
 }
 .headerWithBadge__2ee1b {
 }
@@ -39434,6 +39437,7 @@ body .headerAnimation_b54a5b {
 .footerLink__2ee1b {
 }
 .actionBar__2ee1b {
+  margin-top: var(--space-16);
 }
 .actions__2ee1b {
 }
@@ -39446,7 +39450,8 @@ body .headerAnimation_b54a5b {
 .caretIcon__2ee1b {
 }
 .graphic__2ee1b {
-  margin-top: 8px;
+  margin-bottom: calc(var(--space-6) * -1);
+  margin-top: 0;
 }
 .graphic--sm__2ee1b {
 }
@@ -39459,12 +39464,14 @@ body .headerAnimation_b54a5b {
 .title__2ee1b {
   color: var(--text-primary);
   font-family: var(--font-display-marketing-header);
-  font-size: 20px;
+  font-size: 21px;
   font-style: italic;
   font-weight: 900;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  word-wrap: break-word;
+  width: 100%;
 }
 .headerBody__2ee1b {
 }
@@ -101847,4 +101854,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a074dae49a0720c4.css.map*/
+/*# sourceMappingURL=12633.301b2a64d70c0fed.css.map*/
