@@ -100672,51 +100672,45 @@ html.disable-forced-colors * {
   src: url(/assets/943f151cdf1b637e.woff2) format("woff2");
 }
 @font-face {
-  ascent-override: 100%;
   font-family: Cherry Bomb One;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/c064d4440a5d10c4.woff2) format("woff2");
+  src: url(/assets/36b8ec02240b4a57.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 100%;
   font-family: Chicle;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/b66e881bcbf066bd.woff2) format("woff2");
+  src: url(/assets/800fa3603bbb65c3.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 90%;
   font-family: Neo Castel;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/048ee98a65e366a7.woff2) format("woff2");
+  src: url(/assets/b002cee37c62600b.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 120%;
   font-family: Museo Moderno;
   font-style: normal;
   font-weight: 500;
-  size-adjust: 92%;
-  src: url(/assets/70a13bfa8fb5fd84.woff2) format("woff2");
+  src: url(/assets/df8d053a43eba015.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
-  ascent-override: 90%;
   font-family: Pixelify Sans;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/2836656d4f7513d9.woff2) format("woff2");
+  src: url(/assets/ae8462614cb0ef23.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
   font-family: Sinistre;
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/bccdc9cd3d272519.woff2) format("woff2");
+  src: url(/assets/7d62c7ec06cb13a4.woff2) format("woff2");
   unicode-range: u+0000-003f, u+0041-ffff;
 }
 @font-face {
@@ -101934,4 +101928,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.6c291f70abf81472.css.map*/
+/*# sourceMappingURL=12633.c3ed9738ca30204f.css.map*/
