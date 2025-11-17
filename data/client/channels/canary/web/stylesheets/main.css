@@ -8483,8 +8483,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   border-radius: var(--radius-sm);
   box-shadow: 0 2px 8px 0 var(--opacity-black-16);
   box-sizing: border-box;
-  max-height: 100%;
-  overflow: auto !important;
   z-index: 10;
 }
 .select__3f413 {
@@ -101939,4 +101937,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a7339ef6e67e030e.css.map*/
+/*# sourceMappingURL=12633.ac0baf29e59e1fbf.css.map*/
