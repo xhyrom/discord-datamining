@@ -30,6 +30,16 @@
       <a href="#h_01JVN9BXVA54DT1W6C0NAHSM73"
         ><strong>How do I earn Discord Orbs?</strong></a
       >
+      <ul>
+        <li>
+          <a href="#h_01K86MYX6G5E72C8NTS0JPPEFV"
+            ><strong>Desktop/Browser</strong></a
+          >
+        </li>
+        <li>
+          <a href="#h_01K86N2KDQDBN7FAKKK70H3PNZ"><strong>Mobile</strong></a>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="#h_01JVN9C8T6GAJ4V009G09TZ6A0"
@@ -122,6 +132,7 @@
   </span>
 </p>
 <h1 id="h_01JVN9BXVA54DT1W6C0NAHSM73">How do I earn Discord Orbs?</h1>
+<h2 id="h_01K86MYX6G5E72C8NTS0JPPEFV">Desktop/Browser</h2>
 <p>
   1. To start earning Orbs,
   <a
@@ -212,6 +223,62 @@
 <h4 id="h_01JZ9AKNM6PTF4AKG7FP94KP3H" class="wysiwyg-text-align-center">
   <span style="color: #666666">Orbs Balance</span>
 </h4>
+<h2 id="h_01K86N2KDQDBN7FAKKK70H3PNZ">Mobile</h2>
+<p>
+  1. On mobile,
+  <a
+    href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01K81XEKNRJAKXDNZE2NNVQN03"
+    target="_blank"
+    rel="noopener noreferrer"
+    >accept a Quest</a
+  >
+  that offers Orbs as a reward. You can find eligible Quests by tapping your
+  <strong>avatar &gt; Settings &gt; Quests</strong>, or by tapping your
+  <strong>avatar &gt; Orbs Balance</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35820890002071"
+    alt="image13.gif"
+    width="298"
+    height="619"
+  />
+    
+  <img
+    src="https://support.discord.com/hc/article_attachments/35820961557911"
+    alt="image12.gif"
+    width="298"
+    height="619"
+  />
+</p>
+<h4 id="h_01K86N2KDQCXXA0T44ZXBQGHFS" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Navigating to Settings &gt; Quest Home (Left) or Tap Orbs Balance in Your
+    Profile (Right) to find Quests</span
+  >
+</h4>
+<p>
+  2. Complete the Quest and
+  <a
+    href="https://support.discord.com/hc/en-us/articles/22225719947543-Discord-Quests-FAQ#h_01JCM0891G5K7DGK0GVCQ02EXS"
+    target="_blank"
+    rel="noopener noreferrer"
+    >claim your Orbs reward</a
+  >.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35820890005911"
+    alt="image9.gif"
+    width="279"
+    height="579"
+  />
+</p>
+<h4 id="h_01K86N2KDQ01XRPYZR6YDM63CX" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Example of Claiming Discord Orbs from a Quest</span
+  >
+</h4>
 <h1 id="h_01JVN9C8T6GAJ4V009G09TZ6A0">Spending Your Discord Orbs</h1>
 <h2 id="h_01JVN9C8T66JFD60SBTAW2FPXD">Where can I spend Orbs?</h2>
 <p>
@@ -227,7 +294,11 @@
   >
   to begin spending your Discord Orbs!
 </p>
-<p><strong>Desktop/Browser</strong></p>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Desktop/Browser</strong></span
+  >
+</p>
 <p>
   1. Navigate to your <strong>Direct Messages list</strong> by selecting the
   <strong>Discord app icon</strong> in the upper-left corner. 
@@ -274,6 +345,40 @@
 <h4 id="h_01JZ9APQ8PJEG56K5J553BDZER" class="wysiwyg-text-align-center">
   <span style="color: #666666">Orbs Exclusives Tab in the Shop</span>
 </h4>
+<p>
+  <span class="wysiwyg-font-size-x-large"><strong>Mobile</strong></span>
+</p>
+<p>
+  1. On mobile, tap your <strong>avatar </strong>to navigate to your
+  <strong>Profile</strong>. 
+</p>
+<p>
+  2. Tap the <strong>Shop</strong> <strong>icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/35820890008215"
+    width="24"
+    height="24"
+  />] in the upper-right corner. 
+</p>
+<p>
+  3. In the Shop, tap the <strong>Shop Menu icon </strong>[<img
+    src="https://support.discord.com/hc/article_attachments/35820890010391"
+    width="32"
+    height="25"
+  />] in the upper-right corner, then select <strong>Orbs Exclusives</strong>.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35820961560983"
+    alt="image2.gif"
+    width="283"
+    height="589"
+  />
+</p>
+<h4 id="h_01K86N58VTMDEHXKBGX9T322D6" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Navigate to the Shop to Find Orb Exclusive Items</span
+  >
+</h4>
 <h2 id="h_01JVN9C8T7QS6SMHNPSE97MYZP">What can I buy with Orbs? </h2>
 <p>Here’s what you <em>can</em> purchase with Orbs in the Shop: </p>
 <ul>
@@ -305,19 +410,29 @@
   >.
 </div>
 <h2 id="h_01JVN9C8T7EDJC0CT3DKGW8DJ6">How to Spend Orbs</h2>
-<ol>
-  <li>
-    Browse Orbs-exclusive items in the <strong>Orbs Exclusives</strong>
-    <strong>tab</strong> of the <strong>Shop</strong>, or check the
-    <strong>Shop All</strong> <strong>tab</strong> to see the full collection of
-    items that can be claimed with Orbs. If you don’t see an Orbs price on an
-    item, it means it’s not eligible to be claimed with Orbs. 
-  </li>
-  <li>
-    Each item will display whether you can claim with Orbs or spend money to
-    make your purchase. Select an item to view both pricing options. 
-  </li>
-</ol>
+<p>
+  <span class="wysiwyg-font-size-x-large"
+    ><strong>Desktop/Browser</strong></span
+  >
+</p>
+<p>
+  1. On desktop or browser, browse Orbs-exclusive items in the
+  <strong>Orbs Exclusives</strong> <strong>tab</strong> of the
+  <strong>Shop</strong>, or check the <strong>Shop All</strong>
+  <strong>tab</strong> to see the full collection of items that can be claimed
+  with Orbs. 
+</p>
+<div class="info-box">
+  <strong><span style="color: #434343">Note</span></strong
+  ><span style="color: #434343"
+    >: If you don’t see an Orbs price on an item, it means it’s not eligible to
+    be claimed with Orbs. </span
+  >
+</div>
+<p>
+  2. Each item will display whether you can claim with Orbs or spend money to
+  make your purchase. Select an item to view both pricing options. 
+</p>
 <div class="info-box">
   <span style="color: #434343" data-darkreader-inline-color=""
     >For eligible items, the Shop automatically displays the Orbs price if you
@@ -325,12 +440,10 @@
     monetary price will be displayed instead.</span
   >
 </div>
-<ol start="3">
-  <li>
-    To make a purchase, select your desired item and press
-    <strong>Claim</strong> in the <strong>Shop</strong> <strong>window</strong>.
-  </li>
-</ol>
+<p>
+  3. To make a purchase, select your desired item and press
+  <strong>Claim</strong> in the <strong>Shop</strong> <strong>window</strong>.
+</p>
 <div class="warn-box">
   <strong
     ><span style="color: #434343" data-darkreader-inline-color=""
@@ -380,6 +493,36 @@
     >
   </h4>
 </div>
+<p>
+  <span class="wysiwyg-font-size-x-large"><strong>Mobile </strong></span>
+</p>
+<p>
+  1. To browse Orb Exclusive items on mobile, tap the
+  <strong>Shop Menu icon</strong> [<img
+    src="https://support.discord.com/hc/article_attachments/35820961563671"
+    width="32"
+    height="25"
+  />] in the upper-right corner of the <strong>Shop page</strong>, then select
+  <strong>Orbs Exclusives</strong>.
+</p>
+<p>
+  2. To make a purchase using your Orbs, select the item, tap
+  <strong>Redeem</strong>, then tap <strong>Redeem using Orbs</strong> to
+  confirm.
+</p>
+<p class="wysiwyg-text-align-center">
+  <img
+    src="https://support.discord.com/hc/article_attachments/35820961564439"
+    alt="image8.gif"
+    width="283"
+    height="589"
+  />
+</p>
+<h4 id="h_01K86NB6GZHY7NC0827668ZAPY" class="wysiwyg-text-align-center">
+  <span style="color: #666666"
+    >Purchasing an Orbs Exclusive Shop Item on Mobile</span
+  >
+</h4>
 <h1 id="h_01JVN9C8T730VEP0NXKG44GKHV">Important Discord Orbs Information</h1>
 <ul>
   <li>
@@ -429,11 +572,6 @@
   </li>
 </ul>
 <h2 id="h_01JZ9AY4XRS43ZEP3GPWRJTYM8">General Orbs Information</h2>
-<p><strong>Q: Are Orbs available on mobile?</strong></p>
-<p>
-  A: Not at this time. You can only earn and spend Orbs on the desktop app and
-  browser client.
-</p>
 <p><strong>Q: Will my Orbs expire?</strong></p>
 <p>
   A: Your Orbs stay in your account until you decide to spend them. However, as
