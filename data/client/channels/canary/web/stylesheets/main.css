@@ -2019,10 +2019,13 @@
   max-width: 680px;
 }
 .size-xl__8a031 {
+  max-width: 960px;
+}
+.size-xxl__8a031 {
   max-width: 1280px;
 }
 @container (min-width: 1080px) {
-  .size-xl__8a031 {
+  .size-xxl__8a031 {
     width: calc(80vw - var(--devtools-sidebar-width, 0));
   }
 }
@@ -101934,4 +101937,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.c1b28ef2913600a3.css.map*/
+/*# sourceMappingURL=12633.4d452f36caf383a1.css.map*/
