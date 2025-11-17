@@ -57577,7 +57577,69 @@ html .progress__61462 {
 .theme-light .container__0be77 {
   border: 1px solid var(--border-subtle);
 }
-.outerContainer__2055a {
+.container_e38f8a {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  max-width: 660px;
+  min-width: 280px;
+  width: 100%;
+}
+.wide_e38f8a.container_e38f8a {
+  display: flex;
+  flex-shrink: 0;
+  height: 250px;
+}
+.tall_e38f8a.container_e38f8a {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contentContainer_e38f8a {
+  background: var(--background-base-lowest);
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 38px 16px 16px;
+}
+.tall_e38f8a .contentContainer_e38f8a {
+  border-radius: 0 0 8px 8px;
+  padding: 16px;
+}
+.buttonContainer_e38f8a {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.tall_e38f8a .buttonContainer_e38f8a {
+  margin-top: 50px;
+  width: 100%;
+}
+.imgContainer_e38f8a {
+  align-items: center;
+  background: var(--background-base-lower);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 16px;
+}
+.missingQuestImage_e38f8a {
+  height: 180px;
+  object-fit: contain;
+  width: 100%;
+}
+.theme-light .contentContainer_e38f8a {
+  background: var(--background-base-lower);
+}
+.theme-light .imgContainer_e38f8a {
+  background: var(--background-secondary-alt);
+}
+.theme-dark .contentContainer_e38f8a {
+  background: var(--background-base-lowest);
+}
+.theme-dark .imgContainer_e38f8a {
+  background: var(--background-base-lower);
+}
+.outerContainer_a963de {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -57585,68 +57647,68 @@ html .progress__61462 {
   gap: 16px;
   padding: 16px;
 }
-.outerContainerSm__2055a {
+.outerContainerSm_a963de {
   flex-wrap: wrap;
   gap: 12px;
   max-height: none;
 }
-.outerContainerXs__2055a {
+.outerContainerXs_a963de {
   gap: 6px;
   max-height: none;
   position: relative;
 }
-.questRewardEmbed__2055a {
+.questRewardEmbed_a963de {
   height: 80px;
   width: 80px;
 }
-.questRewardEmbedSm__2055a {
+.questRewardEmbedSm_a963de {
   height: 70px;
   width: 70px;
 }
-.questRewardEmbedXs__2055a {
+.questRewardEmbedXs_a963de {
   bottom: 0;
   height: 50px;
   position: absolute;
   width: 50px;
 }
-.taskDetails__2055a {
+.taskDetails_a963de {
   flex: 1 1 180px;
   min-width: 180px;
 }
-.taskInstructions__2055a {
+.taskInstructions_a963de {
   margin-bottom: 4px;
 }
-.questEnrollmentBlockedButton__2055a {
+.questEnrollmentBlockedButton_a963de {
   flex: 1 0 auto;
 }
-.fullWidthShinyCtaButtonWrapper__2055a {
+.fullWidthShinyCtaButtonWrapper_a963de {
   flex: 1;
   width: 100%;
 }
-.ctaButtonWrapper__2055a {
+.ctaButtonWrapper_a963de {
   flex: 1 0 auto;
 }
-.outerContainerSm__2055a .ctaButtonWrapper__2055a,
-.outerContainerXs__2055a .ctaButtonWrapper__2055a {
+.outerContainerSm_a963de .ctaButtonWrapper_a963de,
+.outerContainerXs_a963de .ctaButtonWrapper_a963de {
   flex-grow: 1;
 }
-.outerContainerXs__2055a .ctaButtonWrapper__2055a,
-.outerContainerXs__2055a .questEnrollmentBlockedButton__2055a {
+.outerContainerXs_a963de .ctaButtonWrapper_a963de,
+.outerContainerXs_a963de .questEnrollmentBlockedButton_a963de {
   width: 100%;
 }
-.learnMoreLink__2055a {
+.learnMoreLink_a963de {
   cursor: pointer;
 }
-.ctaTooltipText__2055a {
+.ctaTooltipText_a963de {
   text-align: center;
 }
-.root__2055a {
+.root_a963de {
   background-color: var(--background-surface-high);
 }
-.rewardTileWrapper__2055a {
+.rewardTileWrapper_a963de {
   position: relative;
 }
-.rewardTileExpired__2055a {
+.rewardTileExpired_a963de {
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
   bottom: 0;
@@ -57656,10 +57718,10 @@ html .progress__61462 {
   position: absolute;
   top: 0;
 }
-.rewardTileExpirationTooltip__2055a {
+.rewardTileExpirationTooltip_a963de {
   text-align: center;
 }
-.removeStackWidth__2055a {
+.removeStackWidth_a963de {
   width: auto;
 }
 .heroAsset_c93f8c {
@@ -57738,29 +57800,29 @@ html .progress__61462 {
   width: 100%;
   z-index: 0;
 }
-.outerContainer__092f9 {
+.outerContainer__97d8c {
   display: flex;
   flex-direction: column;
   max-height: 185px;
   overflow: hidden;
   position: relative;
 }
-.outerContainerGiftInventory__092f9 {
+.outerContainerGiftInventory__97d8c {
   min-height: 185px;
 }
-.outerContainerEmbed__092f9 {
+.outerContainerEmbed__97d8c {
   min-height: 138px;
 }
-.questSplashContainer__092f9 {
+.questSplashContainer__97d8c {
   height: 185px;
 }
-.questSplashImage__092f9 {
+.questSplashImage__97d8c {
   max-width: 660px;
   object-fit: cover;
   position: absolute;
   width: 100%;
 }
-.header__092f9 {
+.header__97d8c {
   box-sizing: border-box;
   flex: 1 1 auto;
   height: 100%;
@@ -57768,10 +57830,10 @@ html .progress__61462 {
   width: 100%;
   z-index: 1;
 }
-.outerContainerEmbed__092f9.outerContainerXs__092f9 .header__092f9 {
+.outerContainerEmbed__97d8c.outerContainerXs__97d8c .header__97d8c {
   padding-bottom: 40px;
 }
-.headerContent__092f9 {
+.headerContent__97d8c {
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -57779,10 +57841,10 @@ html .progress__61462 {
   position: absolute;
   width: 100%;
 }
-.headerContentEmbed__092f9 {
+.headerContentEmbed__97d8c {
   position: static;
 }
-.headerExpandedContent__092f9 {
+.headerExpandedContent__97d8c {
   align-items: flex-start;
   box-sizing: border-box;
   display: flex;
@@ -57790,14 +57852,14 @@ html .progress__61462 {
   justify-content: space-between;
   padding: 20px 16px;
 }
-.headerExpandedWrapper__092f9 {
+.headerExpandedWrapper__97d8c {
   width: 100%;
 }
-.headerCollapsedContent__092f9 {
+.headerCollapsedContent__97d8c {
   height: 100px;
   width: 100%;
 }
-.headerCollapsedClickableContainer__092f9 {
+.headerCollapsedClickableContainer__97d8c {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -57806,7 +57868,7 @@ html .progress__61462 {
   padding: 8px;
   width: 100%;
 }
-.headerCollapsedContentRewardWrapper__092f9 {
+.headerCollapsedContentRewardWrapper__97d8c {
   align-items: center;
   background-color: var(--background-mod-subtle);
   border-radius: 8px;
@@ -57817,43 +57879,43 @@ html .progress__61462 {
   -webkit-margin-end: 20px;
   margin-inline-end: 20px;
 }
-.headerCollapsedRewardTile__092f9 {
+.headerCollapsedRewardTile__97d8c {
   border-radius: 6px;
   height: 60px;
   width: 60px;
 }
-.headerCollapsedContentCopyWrapper__092f9 {
+.headerCollapsedContentCopyWrapper__97d8c {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.headerCollapsedContentCopyLogos__092f9,
-.iconLogotypeContainer__092f9 {
+.headerCollapsedContentCopyLogos__97d8c,
+.iconLogotypeContainer__97d8c {
   align-items: center;
   display: flex;
   flex-direction: row;
 }
-.partnerBranding__092f9 {
+.partnerBranding__97d8c {
   -webkit-margin-end: 16px;
   margin-inline-end: 16px;
 }
-.partnerBrandingLogotypes__092f9 {
+.partnerBrandingLogotypes__97d8c {
   max-width: 92px;
 }
-.outerContainerXs__092f9 .partnerBrandingLogotypes__092f9 {
+.outerContainerXs__97d8c .partnerBrandingLogotypes__97d8c {
   max-width: 60px;
 }
-.questInfo__092f9 {
+.questInfo__97d8c {
   margin-top: 4px;
   overflow: hidden;
 }
-.heading__092f9 {
+.heading__97d8c {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.outerContainer__092f9:after {
+.outerContainer__97d8c:after {
   background: linear-gradient(180deg, transparent, 25%, rgba(0, 0, 0, 0.9));
   content: "";
   height: 100%;
@@ -57863,18 +57925,18 @@ html .progress__61462 {
   top: 0;
   width: 100%;
 }
-.iconsContainer__092f9 {
+.iconsContainer__97d8c {
   flex-direction: row;
   gap: 8px;
   inset-inline-end: 16px;
   position: absolute;
 }
-.iconWrapper__092f9,
-.iconsContainer__092f9 {
+.iconWrapper__97d8c,
+.iconsContainer__97d8c {
   align-items: center;
   display: flex;
 }
-.iconWrapper__092f9 {
+.iconWrapper__97d8c {
   align-self: flex-start;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
@@ -57888,14 +57950,14 @@ html .progress__61462 {
     opacity 0.125s;
   width: 32px;
 }
-.iconWrapper__092f9:focus,
-.iconWrapper__092f9:hover {
+.iconWrapper__97d8c:focus,
+.iconWrapper__97d8c:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.iconWrapper__092f9:active {
+.iconWrapper__97d8c:active {
   opacity: 0.7;
 }
-.submenuIcon__092f9 {
+.submenuIcon__97d8c {
   color: var(--white-500);
   height: 24px;
   inset-inline-start: 4px;
@@ -57903,10 +57965,10 @@ html .progress__61462 {
   top: 4px;
   width: 24px;
 }
-.shareButton__092f9 {
+.shareButton__97d8c {
   margin-top: 8px;
 }
-.questsCard__72a00 {
+.questsCard__6fbeb {
   border-radius: 8px;
   box-shadow: var(--shadow-low);
   max-width: 660px;
@@ -57914,70 +57976,8 @@ html .progress__61462 {
   overflow: hidden;
   width: 100%;
 }
-.questsCard__72a00 + .questsCard__72a00 {
+.questsCard__6fbeb + .questsCard__6fbeb {
   margin-top: 16px;
-}
-.container_e38f8a {
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  max-width: 660px;
-  min-width: 280px;
-  width: 100%;
-}
-.wide_e38f8a.container_e38f8a {
-  display: flex;
-  flex-shrink: 0;
-  height: 250px;
-}
-.tall_e38f8a.container_e38f8a {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.contentContainer_e38f8a {
-  background: var(--background-base-lowest);
-  border-radius: 8px 0 0 8px;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 38px 16px 16px;
-}
-.tall_e38f8a .contentContainer_e38f8a {
-  border-radius: 0 0 8px 8px;
-  padding: 16px;
-}
-.buttonContainer_e38f8a {
-  align-self: flex-start;
-  margin-top: auto;
-}
-.tall_e38f8a .buttonContainer_e38f8a {
-  margin-top: 50px;
-  width: 100%;
-}
-.imgContainer_e38f8a {
-  align-items: center;
-  background: var(--background-base-lower);
-  border-radius: 0 8px 8px 0;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  padding: 16px;
-}
-.missingQuestImage_e38f8a {
-  height: 180px;
-  object-fit: contain;
-  width: 100%;
-}
-.theme-light .contentContainer_e38f8a {
-  background: var(--background-base-lower);
-}
-.theme-light .imgContainer_e38f8a {
-  background: var(--background-secondary-alt);
-}
-.theme-dark .contentContainer_e38f8a {
-  background: var(--background-base-lowest);
-}
-.theme-dark .imgContainer_e38f8a {
-  background: var(--background-base-lower);
 }
 .spinner__65252 {
   margin-top: 40px;
@@ -101928,4 +101928,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.c3ed9738ca30204f.css.map*/
+/*# sourceMappingURL=12633.a1bf87c6dc29527f.css.map*/
