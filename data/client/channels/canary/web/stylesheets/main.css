@@ -42667,6 +42667,9 @@ html:not(.chat-input) .inputInner_b1f01d {
   margin-inline-end: 2px;
   overflow: hidden;
 }
+.clickable_dfa8b6 {
+  cursor: pointer;
+}
 .roleRemoveIcon_dfa8b6 {
   display: none;
   height: 10px;
@@ -101936,4 +101939,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.5e4a314e6e14ba77.css.map*/
+/*# sourceMappingURL=12633.a7339ef6e67e030e.css.map*/
