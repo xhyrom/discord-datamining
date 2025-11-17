@@ -26144,9 +26144,6 @@ img.thumbnail__0f2e8 {
   height: 32px;
   width: 32px;
 }
-.tooltipContainer__0800c {
-  margin-bottom: 12px;
-}
 .emojiItemDisabled__0800c {
   filter: grayscale(100%);
 }
@@ -101937,4 +101934,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ac0baf29e59e1fbf.css.map*/
+/*# sourceMappingURL=12633.c1b28ef2913600a3.css.map*/
