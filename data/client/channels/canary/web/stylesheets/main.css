@@ -79857,52 +79857,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.45);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.45);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.24
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.24
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.24
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.24
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.24
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.24
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.24
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.24
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.24
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.24
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.24
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.24
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.24
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.24
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.24
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.24
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-45);
@@ -81312,98 +81310,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -83141,52 +83139,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-30-hsl) / 0.8);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-10-hsl) / 0.8);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-360);
   --gradient-progress-pill-background: var(--neutral-18);
@@ -84596,98 +84592,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -86443,52 +86439,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.25);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.25);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-63);
@@ -87908,98 +87902,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -89751,52 +89745,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.3);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.3);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-56);
@@ -91212,98 +91204,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -101862,4 +101854,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.cc53b40af6df48b1.css.map*/
+/*# sourceMappingURL=12633.1c73d72846d7fe06.css.map*/
