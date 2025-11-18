@@ -10,32 +10,32 @@
     >
   </p>
   <ul>
-    <li>
+    <li data-list-item-id="ec6a9ad9b91cc709e6dd93ff688c81d29">
       <a href="#h_01JYHTWPE5V4JEPTGQ4A5ZY1KD">Discord Voice Troubleshooting</a>
       <ul>
-        <li>
+        <li data-list-item-id="e84aa10349738edc84dec2765d94553f3">
           <a href="#h_01JYHTWPEJY8CA2RF05Y9DASZ5"
             >Voice Troubleshooting Additional Resources</a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e6a2f9e3604e99abaf4084f2a739115c5">
       <a href="#h_01JYHTWPEPVC1DQ4TGCCVS7D4H">Discord Video Troubleshooting</a>
       <ul>
-        <li>
+        <li data-list-item-id="e5294c859cfe0370d7154dfa0d5e03261">
           <a href="#h_01JYHTWPERV2390W467C5P10G1"
             >Video Troubleshooting Additional Resources</a
           >
         </li>
       </ul>
     </li>
-    <li>
+    <li data-list-item-id="e2765a23a1c13ceb6d732eb72fcac79fc">
       <a href="#h_01JYHTWPEVMMX7CWCS568BR60B"
         >Discord Streaming &amp; Screen Share Troubleshooting</a
       >
       <ul>
-        <li>
+        <li data-list-item-id="e696400887e99030bd33cf60475e1102a">
           <a href="#h_01JYHTWPF30W55Q3B2CQAF0ERN"
             >Streaming &amp; Screen Share Additional Resources</a
           >
@@ -51,11 +51,15 @@
 </p>
 <p><strong>1. Check Your Microphone and Headset</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e52cc371206fec2f85a5ffe5689134bcd">
     Ensure your microphone or headset is properly connected to your device.
   </li>
-  <li>If using a USB microphone, try plugging it into a different port.</li>
-  <li>Test your microphone with another app to confirm it’s working.</li>
+  <li data-list-item-id="e486af9c598eaa6430074b368992322b2">
+    If using a USB microphone, try plugging it into a different port.
+  </li>
+  <li data-list-item-id="e438e7d6f85d25e804d84b46010cb8e0d">
+    Test your microphone with another app to confirm it’s working.
+  </li>
 </ul>
 <p><strong>2. Verify Input and Output Devices in Discord</strong></p>
 <p>
@@ -161,7 +165,7 @@
   you can learn more about.
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e97fe2b9bfa54fc8551190da05dfdc193">
     <a
       href="https://support.discord.com/hc/en-us/articles/360040843952-Krisp-FAQ"
       target="_blank"
@@ -170,7 +174,7 @@
     >: Learn more about Krisp. How to enable it and use it while in a Discord
     Voice Channel.
   </li>
-  <li>
+  <li data-list-item-id="ee67e0c2a47f495971e204804530fa6c3">
     <a
       href="https://support.discord.com/hc/en-us/articles/1500007645701-Voice-Regions-on-Discord-FAQ"
       target="_blank"
@@ -178,7 +182,7 @@
       ><span class="wysiwyg-underline">Voice Regions on Discord FAQ</span></a
     >: Learn how to set a Voice Region for a Voice Channel in Discord.
   </li>
-  <li>
+  <li data-list-item-id="eb8b380c682f14acbb054fec736edfd6f">
     <a
       href="https://support.discord.com/hc/en-us/articles/360020641332-Mic-Testing"
       target="_blank"
@@ -187,7 +191,7 @@
     >: Having trouble with your microphone in Discord? Try using Mic Testing to
     further troubleshoot your microphone and hear how you sound to others.
   </li>
-  <li>
+  <li data-list-item-id="e5fcba18ec575ddfe80cca3ced75cc355">
     <a
       href="https://support.discord.com/hc/en-us/articles/12612888127767-Discord-Soundboard-Guide-Using-Adding-and-Managing-Sounds"
       target="_blank"
@@ -197,7 +201,7 @@
       ></a
     >: Learn how to use, upload, and manage Soundboard sounds.
   </li>
-  <li>
+  <li data-list-item-id="e8f9224df8c7cb7c35b949c75bfac65d4">
     <a
       href="https://support.discord.com/hc/en-us/articles/209813978-How-do-I-enable-disable-Push-to-talk-activation-noise"
       target="_blank"
@@ -207,7 +211,7 @@
       ></a
     >: Learn how to set a sound for when you use Push-to-Talk in Discord.
   </li>
-  <li>
+  <li data-list-item-id="eeabfd71989d8ae93bce231c584288141">
     <a
       href="https://support.discord.com/hc/en-us/articles/360045138471"
       target="_blank"
@@ -217,7 +221,7 @@
       ></a
     >: A comprehensive troubleshooting guide for Voice and Video.
   </li>
-  <li>
+  <li data-list-item-id="e7b8c75bfe6a90a73702edf4996ce9cbc">
     <a
       href="https://support.discord.com/hc/en-us/articles/19583625604887"
       target="_blank"
@@ -238,7 +242,7 @@
   1a. If your video is not displaying for others, the first thing you want to
   check is that the correct camera device is selected. 
 </p>
-<p>
+<p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/33030164087831"
     width="624"
@@ -252,11 +256,13 @@
 </h4>
 <p>1b. If the correct device is selected, please double-check the following:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e19c598144e50ad23aedd97ae780dd8b4">
     Ensure your camera is properly connected to your device and try another
     port.
   </li>
-  <li>If using an external webcam, try unplugging and reconnecting it.</li>
+  <li data-list-item-id="ea5c8bbfeb3ad1a7c4180d9fdbecdab0d">
+    If using an external webcam, try unplugging and reconnecting it.
+  </li>
 </ul>
 <p>Test the camera in another application to confirm it’s working.</p>
 <p><strong>2. Check for any updates</strong></p>
@@ -277,7 +283,7 @@
   troubleshooting, but also allow you to learn more about additional features.
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="ef2d7bcb5ed7a064389700330e81930e2">
     <a
       href="https://support.discord.com/hc/en-us/articles/360041721052-Video-Calls"
       target="_blank"
@@ -285,7 +291,7 @@
       ><span class="wysiwyg-underline">Video Calls</span></a
     >: Learn how to set up your camera for video calls
   </li>
-  <li>
+  <li data-list-item-id="e797fd3f6a1594d53fe34d640746f7652">
     <a
       href="https://support.discord.com/hc/en-us/articles/4413490191127-Video-Backgrounds"
       target="_blank"
@@ -293,7 +299,7 @@
       ><span class="wysiwyg-underline">Video Backgrounds</span></a
     >: Learn how to set and use a Video Background.
   </li>
-  <li>
+  <li data-list-item-id="e72978dab7bb15ca6297b77406c3b92f6">
     <a
       href="https://support.discord.com/hc/en-us/articles/9665451164951-Video-Upload-Quality-Settings-on-Mobile-FAQ"
       target="_blank"
@@ -303,7 +309,7 @@
       ></a
     >: Learn more about video upload settings on mobile.
   </li>
-  <li>
+  <li data-list-item-id="ee7acfd239a93afc8af2b140015ba0dc5">
     <a
       href="https://support.discord.com/hc/en-us/articles/360045138471"
       target="_blank"
@@ -324,19 +330,27 @@
 </p>
 <p><strong>1. Check your Internet Connection</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="e5d2779edd3acb3c319b1ecfcbbd59b16">
     Ensure you have a stable internet connection to prevent lag or
     disconnections.
   </li>
-  <li>If possible, use a wired connection for better stability.</li>
+  <li data-list-item-id="e341e0c2d69f723eee2e8397612a65b1a">
+    If possible, use a wired connection for better stability.
+  </li>
 </ul>
 <p>
   <strong>2. Restart Discord and Your Device &amp; Check for Updates</strong>
 </p>
 <ul>
-  <li>Close and reopen Discord to refresh the app.</li>
-  <li>If the issue persists, restart your computer or mobile device.</li>
-  <li>Make sure you’re also running the latest version of the Discord app.</li>
+  <li data-list-item-id="e31a7ac4d3cf6035d2be32cfa99f23e6a">
+    Close and reopen Discord to refresh the app.
+  </li>
+  <li data-list-item-id="e629a87ba49b77ed6f30916c7a78b5ef2">
+    If the issue persists, restart your computer or mobile device.
+  </li>
+  <li data-list-item-id="ee3bbad561028d0e7b446c6e3263c9965">
+    Make sure you’re also running the latest version of the Discord app.
+  </li>
 </ul>
 <p><strong>3. Disable Hardware Acceleration</strong></p>
 <p>
@@ -388,29 +402,31 @@
 </p>
 <p>Windows:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e70e1c7855ea633e69a31f1eed538f0fd">
     Run Discord as an administrator by right-clicking the Discord icon and
     selecting <strong>Run as administrator</strong>.
   </li>
-  <li>
+  <li data-list-item-id="ef9dcaf3057fcea5ba8b7b23009b09383">
     Check <strong>Settings &gt; Privacy &gt; Screen Recording</strong> to ensure
     Discord has permission to record the screen.
   </li>
 </ul>
 <p>macOS:</p>
 <ul>
-  <li>
+  <li data-list-item-id="e0dd142b4d2a7d6168f3830bfa9200cda">
     Go to
     <strong>System Preferences &gt; Security &amp; Privacy &gt; Privacy</strong
     >.
   </li>
-  <li>Under <strong>Screen Recording</strong>, ensure Discord is checked.</li>
+  <li data-list-item-id="ed3331159d26e085fea34ca008b1a80b6">
+    Under <strong>Screen Recording</strong>, ensure Discord is checked.
+  </li>
 </ul>
 <h2 id="h_01JYHTWPF30W55Q3B2CQAF0ERN">
   Streaming &amp; Screen Share Additional Resources
 </h2>
 <ul>
-  <li>
+  <li data-list-item-id="e549379b89e89551b5eb1c1a4a5f3f925">
     <a
       href="https://support.discord.com/hc/en-us/articles/26459694693783-How-to-Screen-Share-on-MacOS"
       target="_blank"
@@ -418,7 +434,7 @@
       ><span class="wysiwyg-underline">How to Screen Share on MacOS</span></a
     >: Learn how to Screen Share through MacOS on Discord.
   </li>
-  <li>
+  <li data-list-item-id="ecb37097de2b8a438c9be179becfe60ea">
     <a
       href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share"
       target="_blank"
@@ -427,13 +443,13 @@
     >: Full guide on how to Screen Share and stream your favorite games to your
     friends.
   </li>
-  <li>
+  <li data-list-item-id="eb63de497ff3400230885f7700f203631">
     <a
       href="https://support.discord.com/hc/en-us/articles/360058862134--Mobile-Screenshare-FAQ"
       ><span class="wysiwyg-underline">[Mobile] Screenshare FAQ</span></a
     >: Learn how to Screen Share through your mobile devices.
   </li>
-  <li>
+  <li data-list-item-id="ec0917ec2f79d7142f29ceb6cf5ee11a8">
     <a
       href="https://support.discord.com/hc/en-us/articles/217659737-Game-Overlay-101"
       target="_blank"
@@ -442,14 +458,14 @@
     >: Learn more about how to use Game Overlay while gaming and chatting with
     friends on Discord.
   </li>
-  <li>
+  <li data-list-item-id="e7474098aaf3ce0946f5ef226f747d7a3">
     <a
       href="https://support.discord.com/hc/en-us/articles/218485407-Streamer-Mode-101"
       ><span class="wysiwyg-underline">Streamer Mode 101</span></a
     >: Learn more about using the setting Streamer Mode to ensure certain
     personal details aren’t viewed by others while you’re streaming.
   </li>
-  <li>
+  <li data-list-item-id="e43752a9570e4b46fb5c1a24be37dd640">
     <a
       href="https://support.discord.com/hc/en-us/articles/223415707-Using-Discord-s-OBS-Streamkit-Overlay"
       ><span class="wysiwyg-underline"
@@ -457,7 +473,7 @@
       ></a
     >: Learn how to install and use the OBS Streamkit Overlay.
   </li>
-  <li>
+  <li data-list-item-id="ec1b7b6e8ff9f88dde263f468ba3a5943">
     <a
       href="https://support.discord.com/hc/en-us/articles/223499048-Using-Discord-s-XSplit-Streamkit-Overlay"
       ><span class="wysiwyg-underline"
@@ -465,25 +481,25 @@
       ></a
     >: Learn how to install and use the XSplit Streamkit Overlay.
   </li>
-  <li>
+  <li data-list-item-id="ebb7eaf40fab8230084191cf2ac1b835b">
     <a
       href="https://support.discord.com/hc/en-us/articles/12158692510743-Video-Codec-FAQ"
       ><span class="wysiwyg-underline">Video Codec FAQ</span></a
     >: Learn more about how to use Video Codec.
   </li>
-  <li>
+  <li data-list-item-id="ebb2217062cc59e8fb5924f425cc4bdd9">
     <a
       href="https://support.discord.com/hc/en-us/articles/360042693171-Mobile-Voice-Overlay-Android"
       ><span class="wysiwyg-underline">Mobile Voice Overlay (Android)</span></a
     >
   </li>
-  <li>
+  <li data-list-item-id="e03b8b269bd0a981a5cbcebc5cf1bdd4d">
     <a href="https://support.discord.com/hc/en-us/articles/16861982215703-Clips"
       ><span class="wysiwyg-underline">Clips</span></a
     >: Learn how to capture, share, and edit Clips that you’ve taken while
     streaming.
   </li>
-  <li>
+  <li data-list-item-id="ebcfcc783f0d08e6c47089fc67e9be83b">
     <a
       href="https://support.discord.com/hc/en-us/articles/360045784891-Video-Screenshare-Updates-Multistream-and-More"
       ><span class="wysiwyg-underline"
@@ -492,7 +508,7 @@
     >: Learn more about multi-streaming and other Video and Screen Share updates
     on Discord.
   </li>
-  <li>
+  <li data-list-item-id="eb5df5cfc5518b3d6d34db62397741605">
     <a
       href="https://support.discord.com/hc/en-us/articles/360040816151"
       target="_blank"
