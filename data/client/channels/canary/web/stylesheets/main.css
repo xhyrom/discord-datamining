@@ -40486,16 +40486,31 @@ div.modalOverrideBody__34eac {
 .buttonWrapper__24af7:hover {
   color: var(--interactive-active);
 }
-.container_c0c49a,
-.iconContainer_c0c49a {
+.container_c0c49a {
   display: flex;
   position: relative;
 }
+.container_c0c49a:before {
+  background: linear-gradient(180deg, #151263, #5b6cf2, #b1bafd);
+  border-radius: 8px;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+.containerHovered_c0c49a:before {
+  opacity: 1;
+}
 .iconContainer_c0c49a {
   align-items: center;
+  display: flex;
   height: 20px;
   justify-content: center;
   pointer-events: none;
+  position: relative;
   width: 20px;
 }
 .giftBoxIcon_c0c49a {
@@ -45294,7 +45309,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51453,9 +51468,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  line-height: 1.25rem;
+  line-height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -101981,4 +101996,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.0e8997a524826456.css.map*/
+/*# sourceMappingURL=12633.63fc1fbfacaee8ae.css.map*/
