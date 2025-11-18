@@ -23546,154 +23546,20 @@ span.clanTag__5d473 {
 .invitesDisabledTooltip_b1f768 {
   margin-top: 2px;
 }
-.navigationIcon__90d72 {
-  display: block;
-  height: 48px;
-  width: 48px;
-}
-.badgeIcon__90d72 {
-  height: 12px;
-  width: 12px;
-}
-.guildSeparator__90d72 {
-  background-color: var(--border-subtle);
-  border-radius: 1px;
-  height: 2px;
-  width: 32px;
-}
-.guildsError__90d72 {
-  align-items: center;
-  background-color: var(--background-base-low);
-  border-color: var(--status-danger);
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
+.dialogWrapper_b1f768 {
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    inset 0 0 0 1px var(--border-subtle),
+    var(--shadow-high);
   box-sizing: border-box;
   color: var(--text-default);
-  display: flex;
-  font-size: 20px;
-  height: 48px;
-  justify-content: center;
-  padding: 0;
-  transition: background-color 0.15s ease-out;
-  width: 48px;
-}
-.errorInner__90d72 {
-  font-weight: var(--font-weight-bold);
-}
-.guildsError__90d72:hover {
-  background-color: var(--status-danger);
-  border-color: var(--status-danger);
-  color: var(--white-500);
-  text-decoration: none;
-}
-.circleButtonBase__90d72 {
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  transition:
-    color 0.15s ease-out,
-    background-color 0.15s ease-out;
-  width: 48px;
-}
-.circleIconButton__90d72 {
-  background-color: var(--background-base-low);
-  color: var(--green-360);
-}
-.circleIconButton__90d72.selected__90d72 {
-  background-color: var(--green-360);
-  color: var(--white-500);
-}
-.nitroUpsell__90d72 {
-  background: linear-gradient(
-    135deg,
-    var(--premium-tier-2-purple) 0,
-    var(--premium-tier-2-pink) 100%
-  );
-  color: var(--white-500);
-}
-.nitroUpsellIcon__90d72 {
-  stroke: #000 2px;
-}
-.circleIcon__90d72 {
-  height: 24px;
-  width: 24px;
-}
-.plus__90d72 {
-  font-size: 40px;
-  font-weight: var(--font-weight-normal);
-  line-height: 40px;
-  position: relative;
-  top: -1px;
-}
-.createJoinContainer__90d72 {
-  position: relative;
-  width: 50px;
-}
-.pill__90d72 {
-  inset-inline-start: 0;
-  position: absolute;
-  top: 0;
-}
-.listItem__90d72 {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 8px;
-  position: relative;
-  width: var(--custom-guild-list-width);
-}
-.listItemWrapper__90d72:active {
-  transform: translateY(1px) translateZ(0);
-}
-.listItemTooltip__90d72 {
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
   line-height: 20px;
-  max-width: 196px;
-  word-wrap: break-word;
-}
-.placeholderMask__90d72 {
-  display: block;
-}
-.dragInner__90d72 {
-  height: 48px;
-  width: 48px;
-}
-.iconBadge__90d72 {
-  background-color: var(--background-accent);
-}
-.iconBadge__90d72.participating__90d72 {
-  background-color: var(--green-360);
-}
-.unavailableBadge__90d72 {
-  background-color: var(--white-500);
-  color: var(--red-400) !important;
-}
-.dragInner__90d72 {
-  background-color: var(--background-base-low);
-}
-.tutorialContainer__90d72 {
-  position: relative;
-}
-.upsellTooltip__90d72 {
-  display: flex;
-}
-.upsellIcon__90d72 {
-  flex: 0 0 auto;
-  margin-inline: -6px 8px;
-}
-.upsellText__90d72 {
-  flex: 1 1 auto;
-  line-height: 22px;
-}
-.listItemTooltip__90d72 {
-  color: var(--text-default);
-}
-.listItemTooltipContent__90d72 {
-  padding: 8px;
+  max-width: 200px;
+  padding: var(--space-12);
+  width: auto;
 }
 .guildIcon__0fa6d {
   align-items: center;
@@ -101996,4 +101862,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.63fc1fbfacaee8ae.css.map*/
+/*# sourceMappingURL=12633.cc53b40af6df48b1.css.map*/
