@@ -855,10 +855,10 @@
             (i.prototype.prev = function () {
               return new i(this.value - BigInt(1));
             });
-          for (var G = [1]; 2 * G[G.length - 1] <= 1e7; )
-            G.push(2 * G[G.length - 1]);
-          var m = G.length,
-            v = G[m - 1];
+          for (var m = [1]; 2 * m[m.length - 1] <= 1e7; )
+            m.push(2 * m[m.length - 1]);
+          var G = m.length,
+            v = m[G - 1];
           function U(t) {
             return 1e7 >= Math.abs(t);
           }
@@ -898,8 +898,8 @@
             if (e < 0) return this.shiftRight(-e);
             var _ = this;
             if (_.isZero()) return _;
-            for (; e >= m; ) (_ = _.multiply(v)), (e -= m - 1);
-            return _.multiply(G[e]);
+            for (; e >= G; ) (_ = _.multiply(v)), (e -= G - 1);
+            return _.multiply(m[e]);
           }),
             (i.prototype.shiftLeft = E.prototype.shiftLeft =
               o.prototype.shiftLeft),
@@ -908,12 +908,12 @@
                 _ = V(t).toJSNumber();
               if (!U(_)) throw Error(String(_) + " is too large for shifting.");
               if (_ < 0) return this.shiftLeft(-_);
-              for (var a = this; _ >= m; ) {
+              for (var a = this; _ >= G; ) {
                 if (a.isZero() || (a.isNegative() && a.isUnit())) return a;
                 (a = (e = D(a, v))[1].isNegative() ? e[0].prev() : e[0]),
-                  (_ -= m - 1);
+                  (_ -= G - 1);
               }
-              return (e = D(a, G[_]))[1].isNegative() ? e[0].prev() : e[0];
+              return (e = D(a, m[_]))[1].isNegative() ? e[0].prev() : e[0];
             }),
             (i.prototype.shiftRight = E.prototype.shiftRight =
               o.prototype.shiftRight),
@@ -6338,6 +6338,19 @@
           (a.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED =
             "storefront_sku_message_embed_clicked"),
           (a.STOREFRONT_COPY_LINK_CLICKED = "storefront_copy_link_clicked"),
+          (a.PAYMENT_HISTORY_CONNECT_ACCOUNT_BUTTON_CLICKED =
+            "payment_history_connect_account_button_clicked"),
+          (a.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED =
+            "slayer_storefront_game_launch_clicked"),
+          (a.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED =
+            "slayer_storefront_claim_modal_close_button_clicked"),
+          (a.SLAYER_STOREFRONT_MODAL_CLOSED = "slayer_storefront_modal_closed"),
+          (a.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED =
+            "slayer_storefront_link_account_step_viewed"),
+          (a.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED =
+            "slayer_storefront_account_link_clicked"),
+          (a.SLAYER_STOREFRONT_GIFT_CODE_CLAIM_CLICKED =
+            "slayer_storefront_gift_code_claim_clicked"),
           (a.USER_SERVER_PRIVACY_SETTINGS_ACTION =
             "user_server_privacy_settings_action"),
           (a.RUNNING_GAME_OVERRIDE_ADDED = "running_game_override_added"),
@@ -6824,7 +6837,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6335baac3bf28413ad5602fcd72c01c8fe14e449",
+            release: "discord_web-53dcab57b2c21d59eb203a856fa437e33bd35620",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6890,8 +6903,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "469254"),
-            o.YA("builtAt", String("1763423080581"));
+            o.YA("buildNumber", "469314"),
+            o.YA("builtAt", String("1763426951509"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -25968,8 +25981,8 @@
             },
             g = Math.round,
             y = E.unpack,
-            G = Math.round,
-            m = function () {
+            m = Math.round,
+            G = function () {
               for (var t, e, _, a, r = [], n = arguments.length; n--; )
                 r[n] = arguments[n];
               var o = (r = y(r, "hsl"))[0],
@@ -25993,7 +26006,7 @@
                         : 3 * c[N] < 2
                           ? (s[N] = I + (l - I) * (2 / 3 - c[N]) * 6)
                           : (s[N] = I);
-                (e = (t = [G(255 * s[0]), G(255 * s[1]), G(255 * s[2])])[0]),
+                (e = (t = [m(255 * s[0]), m(255 * s[1]), m(255 * s[2])])[0]),
                   (_ = t[1]),
                   (a = t[2]);
               }
@@ -26037,13 +26050,13 @@
               if ((e = t.match(w))) {
                 var l = e.slice(1, 4);
                 (l[1] *= 0.01), (l[2] *= 0.01);
-                var I = m(l);
+                var I = G(l);
                 return (I[3] = 1), I;
               }
               if ((e = t.match(M))) {
                 var R = e.slice(1, 4);
                 (R[1] *= 0.01), (R[2] *= 0.01);
-                var N = m(R);
+                var N = G(R);
                 return (N[3] = +e[4]), N;
               }
             };
@@ -26381,7 +26394,7 @@
                 [null].concat(t, ["hsl"]),
               ))();
             }),
-            (i.format.hsl = m),
+            (i.format.hsl = G),
             i.autodetect.push({
               p: 2,
               test: function () {
@@ -26483,8 +26496,8 @@
             tS = 0.95047,
             tg = 1,
             ty = 1.08883,
-            tG = 0.137931034,
-            tm = 0.206896552,
+            tm = 0.137931034,
+            tG = 0.206896552,
             tv = 0.12841855,
             tU = 0.008856452,
             tW = E.unpack,
@@ -26495,7 +26508,7 @@
                 : tb((t + 0.055) / 1.055, 2.4);
             },
             tM = function (t) {
-              return t > tU ? tb(t, 1 / 3) : t / tv + tG;
+              return t > tU ? tb(t, 1 / 3) : t / tv + tm;
             },
             tY = function () {
               for (var t, e, _, a = [], r = arguments.length; r--; )
@@ -26530,7 +26543,7 @@
               );
             },
             tk = function (t) {
-              return t > tm ? t * t * t : tv * (t - tG);
+              return t > tG ? t * t * t : tv * (t - tm);
             },
             tx = function () {
               for (var t, e, _, a, r = [], n = arguments.length; n--; )
@@ -27069,15 +27082,15 @@
           var eS = E.unpack,
             eg = E.unpack,
             ey = E.unpack,
-            eG = E.type,
-            em = function () {
+            em = E.type,
+            eG = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               var _ = eS(t, "rgb"),
                 a = ed(_[0], _[1], _[2]);
               return tJ(a[0], a[1], a[2]);
             };
           (I.prototype.oklch = function () {
-            return em(this._rgb);
+            return eG(this._rgb);
           }),
             (R.oklch = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -27097,7 +27110,7 @@
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === eG((t = ey(t, "oklch"))) && 3 === t.length)
+                if ("array" === em((t = ey(t, "oklch"))) && 3 === t.length)
                   return "oklch";
               },
             });
@@ -27886,20 +27899,20 @@
                         y < _;
                         y++
                       ) {
-                        var G = _i(p[y] - D);
-                        G < S && ((S = G), (g = y)), f[g]++, (d[h] = g);
+                        var m = _i(p[y] - D);
+                        m < S && ((S = m), (g = y)), f[g]++, (d[h] = g);
                       }
-                    for (var m = Array(_), v = 0; v < _; v++) m[v] = null;
+                    for (var G = Array(_), v = 0; v < _; v++) G[v] = null;
                     for (var U = 0; U < T; U++)
-                      null === m[(u = d[U])] ? (m[u] = o[U]) : (m[u] += o[U]);
-                    for (var W = 0; W < _; W++) m[W] *= 1 / f[W];
+                      null === G[(u = d[U])] ? (G[u] = o[U]) : (G[u] += o[U]);
+                    for (var W = 0; W < _; W++) G[W] *= 1 / f[W];
                     O = !1;
                     for (var b = 0; b < _; b++)
-                      if (m[b] !== p[b]) {
+                      if (G[b] !== p[b]) {
                         O = !0;
                         break;
                       }
-                    (p = m), ++L > 200 && (O = !1);
+                    (p = G), ++L > 200 && (O = !1);
                   }
                   for (var w = {}, M = 0; M < _; M++) w[M] = [];
                   for (var Y = 0; Y < T; Y++) w[(u = d[Y])].push(o[Y]);
@@ -28527,10 +28540,10 @@
                   0.24 * _T(o(2 * g)) +
                   0.32 * _T(o(3 * g + 6)) -
                   0.2 * _T(o(4 * g - 63)),
-                G = S - D;
-              (G = 180 >= _u(G) ? G : S <= D ? G + 360 : G - 360),
-                (G = 2 * _l(L * p) * _d(o(G) / 2));
-              var m = p - L,
+                m = S - D;
+              (m = 180 >= _u(m) ? m : S <= D ? m + 360 : m - 360),
+                (m = 2 * _l(L * p) * _d(o(m) / 2));
+              var G = p - L,
                 v = 1 + (0.015 * _I(u - 50, 2)) / _l(20 + _I(u - 50, 2)),
                 U = 1 + 0.045 * C,
                 W = 1 + 0.015 * C * y,
@@ -28542,9 +28555,9 @@
                   100,
                   _l(
                     _I((R - i) / (_ * v), 2) +
-                      _I(m / (a * U), 2) +
-                      _I(G / (r * W), 2) +
-                      (m / (a * U)) * w * (G / (r * W)),
+                      _I(G / (a * U), 2) +
+                      _I(m / (r * W), 2) +
+                      (G / (a * U)) * w * (m / (r * W)),
                   ),
                 ),
               );
@@ -29358,7 +29371,7 @@
           var S,
             g,
             y,
-            G = function (t) {
+            m = function (t) {
               if (t === N && b) return b;
               if (!O && t && t in U) return U[t];
               switch (t) {
@@ -29373,19 +29386,19 @@
                 return new _(this);
               };
             },
-            m = e + " Iterator",
+            G = e + " Iterator",
             v = !1,
             U = t.prototype,
             W = U[L] || U["@@iterator"] || (N && U[N]),
-            b = (!O && W) || G(N),
+            b = (!O && W) || m(N),
             w = ("Array" === e && U.entries) || W;
           if (
             (w &&
               (S = c(w.call(new t()))) !== Object.prototype &&
               S.next &&
               (!n && c(S) !== f && (s ? s(S, f) : E(S[L]) || R(S, L, h)),
-              l(S, m, !0, !0),
-              n && (A[m] = h)),
+              l(S, G, !0, !0),
+              n && (A[G] = h)),
             T &&
               N === C &&
               W &&
@@ -29398,7 +29411,7 @@
                   }))),
             N)
           )
-            if (((g = { values: G(C), keys: u ? b : G(p), entries: G(P) }), D))
+            if (((g = { values: m(C), keys: u ? b : m(p), entries: m(P) }), D))
               for (y in g) (!O && !v && y in U) || R(U, y, g[y]);
             else a({ target: e, proto: !0, forced: O || v }, g);
           return (
@@ -29875,24 +29888,24 @@
               S = C && this.sticky,
               g = n(i, this),
               y = this.source,
-              G = 0,
-              m = N;
+              m = 0,
+              G = N;
             if (
               (S &&
                 (-1 === f((g = O(g, "y", "")), "g") && (g += "g"),
-                (m = L(N, this.lastIndex)),
+                (G = L(N, this.lastIndex)),
                 this.lastIndex > 0 &&
                   (!this.multiline ||
                     (this.multiline && "\n" !== d(N, this.lastIndex - 1))) &&
-                  ((y = "(?: " + y + ")"), (m = " " + m), G++),
+                  ((y = "(?: " + y + ")"), (G = " " + G), m++),
                 (_ = RegExp("^(?:" + y + ")", g))),
               P && (_ = RegExp("^" + y + "$(?!\\s)", g)),
               p && (a = this.lastIndex),
-              (r = n(u, S ? _ : this, m)),
+              (r = n(u, S ? _ : this, G)),
               S
                 ? r
-                  ? ((r.input = L(r.input, G)),
-                    (r[0] = L(r[0], G)),
+                  ? ((r.input = L(r.input, m)),
+                    (r[0] = L(r[0], m)),
                     (r.index = this.lastIndex),
                     (this.lastIndex += r[0].length))
                   : (this.lastIndex = 0)
@@ -30868,12 +30881,12 @@
             setExtra: () => E.sU,
             setExtras: () => E.rJ,
             setHttpStatus: () => L.Q0,
-            setMeasurement: () => G.o,
+            setMeasurement: () => m.o,
             setTag: () => E.YA,
             setTags: () => E.mG,
             setUser: () => E.av,
             showReportDialog: () => H.jp,
-            spanToBaggageHeader: () => m.uc,
+            spanToBaggageHeader: () => G.uc,
             spanToJSON: () => d.XU,
             spanToTraceHeader: () => d.Hb,
             startBrowserTracingNavigationSpan: () => ta.og,
@@ -30917,8 +30930,8 @@
           S = _(757502),
           g = _(726318),
           y = _(511906),
-          G = _(241225),
-          m = _(305625),
+          m = _(241225),
+          G = _(305625),
           v = _(925746),
           U = _(93198),
           W = _(163162),
@@ -31939,7 +31952,7 @@
           db: () => p,
           dz: () => U,
           nm: () => y,
-          ph: () => m,
+          ph: () => G,
           x5: () => L,
         });
         var a = _(559508),
@@ -32278,18 +32291,18 @@
             ],
           };
         }
-        let G = new Map();
-        function m() {
-          return G.size;
+        let m = new Map();
+        function G() {
+          return m.size;
         }
         function v(t) {
-          let e = G.get(t);
-          return e && G.delete(t), e;
+          let e = m.get(t);
+          return e && m.delete(t), e;
         }
         function U(t, e) {
-          if ((G.set(t, e), G.size > 30)) {
-            let t = G.keys().next().value;
-            G.delete(t);
+          if ((m.set(t, e), m.size > 30)) {
+            let t = m.keys().next().value;
+            m.delete(t);
           }
         }
       },
@@ -32297,7 +32310,7 @@
         "use strict";
         _.d(e, {
           Eg: () => g,
-          Jd: () => G,
+          Jd: () => m,
           S1: () => D,
           jp: () => S,
           lA: () => y,
@@ -32459,7 +32472,7 @@
         function y(t) {
           t();
         }
-        function G(t) {
+        function m(t) {
           let e = (0, i.s3)();
           e && e.captureUserFeedback(t);
         }
@@ -32654,8 +32667,8 @@
                 finalTimeout: S,
                 childSpanTimeout: g,
                 markBackgroundSpan: y,
-                traceFetch: G,
-                traceXHR: m,
+                traceFetch: m,
+                traceXHR: G,
                 shouldCreateSpanForRequest: v,
                 enableHTTPTimings: U,
                 instrumentPageLoad: W,
@@ -32829,8 +32842,8 @@
                       )),
                   e && (0, r.D)(),
                   (0, O.L7)(t, {
-                    traceFetch: G,
-                    traceXHR: m,
+                    traceFetch: m,
+                    traceXHR: G,
                     tracePropagationTargets:
                       t.getOptions().tracePropagationTargets,
                     shouldCreateSpanForRequest: v,
@@ -32912,7 +32925,7 @@
                   return e ? (0, T.U0)(t, e) : _;
                 }
               })(t, D),
-            G = {};
+            m = {};
           _ &&
             (t.addEventProcessor(
               (t) => (
@@ -32934,7 +32947,7 @@
               }
             }),
             (0, N.Uf)((t) => {
-              let e = (0, n.m)(t, g, y, G);
+              let e = (0, n.m)(t, g, y, m);
               if (
                 (t.response &&
                   t.fetchData.__span &&
@@ -33013,7 +33026,7 @@
                       })(n, C, (0, E.z)() && L ? p : void 0),
                     p
                   );
-                })(t, g, y, G);
+                })(t, g, y, m);
                 P && e && h(e);
               });
         }
@@ -36090,13 +36103,13 @@ Event: ${(0, r.jH)(c)}`),
           function y() {
             _ && (clearTimeout(_), (_ = void 0));
           }
-          function G(t) {
+          function m(t) {
             y(),
               (_ = setTimeout(() => {
                 !T && 0 === u.size && f && ((d = "idleTimeout"), g.end(t));
               }, L));
           }
-          function m(t) {
+          function G(t) {
             _ = setTimeout(() => {
               !T && f && ((d = "heartbeatFailed"), g.end(t));
             }, C);
@@ -36168,7 +36181,7 @@ Event: ${(0, r.jH)(c)}`),
                     ((e = t.spanContext().spanId),
                     y(),
                     u.set(e, !0),
-                    m((0, a.ph)() + C / 1e3)));
+                    G((0, a.ph)() + C / 1e3)));
               }),
             ),
             O.push(
@@ -36177,16 +36190,16 @@ Event: ${(0, r.jH)(c)}`),
                   var e;
                   (e = t.spanContext().spanId),
                     u.has(e) && u.delete(e),
-                    0 === u.size && G((0, a.ph)() + L / 1e3);
+                    0 === u.size && m((0, a.ph)() + L / 1e3);
                 }
               }),
             ),
             O.push(
               h.on("idleSpanEnableAutoFinish", (t) => {
-                t === g && ((f = !0), G(), u.size && m());
+                t === g && ((f = !0), m(), u.size && G());
               }),
             ),
-            e.disableAutoFinish || G(),
+            e.disableAutoFinish || m(),
             setTimeout(() => {
               T ||
                 (g.setStatus({ code: I.jt, message: "deadline_exceeded" }),
@@ -36645,9 +36658,9 @@ Event: ${(0, r.jH)(c)}`),
           L = _(881243);
         let p = "__SENTRY_SUPPRESS_TRACING__";
         function C(t, e) {
-          let _ = m();
+          let _ = G();
           if (_.startSpan) return _.startSpan(t, e);
-          let a = G(t),
+          let a = m(t),
             { forceTransaction: r, parentSpan: n } = t;
           return (0, E.$e)(t.scope, () =>
             W(n)(() => {
@@ -36679,9 +36692,9 @@ Event: ${(0, r.jH)(c)}`),
           );
         }
         function P(t, e) {
-          let _ = m();
+          let _ = G();
           if (_.startSpanManual) return _.startSpanManual(t, e);
-          let a = G(t),
+          let a = m(t),
             { forceTransaction: r, parentSpan: n } = t;
           return (0, E.$e)(t.scope, () =>
             W(n)(() => {
@@ -36715,9 +36728,9 @@ Event: ${(0, r.jH)(c)}`),
           );
         }
         function h(t) {
-          let e = m();
+          let e = G();
           if (e.startInactiveSpan) return e.startInactiveSpan(t);
-          let _ = G(t),
+          let _ = m(t),
             { forceTransaction: a, parentSpan: r } = t;
           return (
             t.scope
@@ -36744,7 +36757,7 @@ Event: ${(0, r.jH)(c)}`),
             return r.setPropagationContext(n), _();
           });
         function S(t, e) {
-          let _ = m();
+          let _ = G();
           return _.withActiveSpan
             ? _.withActiveSpan(t, e)
             : (0, E.$e)((_) => ((0, R.D)(_, t || void 0), e(_)));
@@ -36805,7 +36818,7 @@ Event: ${(0, r.jH)(c)}`),
           }
           return (0, u.Z)(r), (0, L.YJ)(r, a, n), r;
         }
-        function G(t) {
+        function m(t) {
           let e = { isStandalone: (t.experimental || {}).standalone, ...t };
           if (t.startTime) {
             let _ = { ...e };
@@ -36815,7 +36828,7 @@ Event: ${(0, r.jH)(c)}`),
           }
           return e;
         }
-        function m() {
+        function G() {
           let t = (0, o.c)();
           return (0, i.G)(t);
         }
@@ -37512,7 +37525,7 @@ Event: ${(0, r.jH)(c)}`),
           j5: () => h,
           ve: () => R,
           wy: () => u,
-          yc: () => G,
+          yc: () => m,
         });
         var a = _(370336),
           r = _(370541),
@@ -37636,7 +37649,7 @@ Event: ${(0, r.jH)(c)}`),
             e = (0, o.G)(t);
           return e.getActiveSpan ? e.getActiveSpan() : (0, I.Y)((0, i.nZ)());
         }
-        function G(t, e, _, a, r, n) {
+        function m(t, e, _, a, r, n) {
           let o = y();
           o && (0, c.V)(o, t, e, _, a, r, n);
         }
@@ -40166,7 +40179,7 @@ Error:`,
                 e = O.getScopeData().contexts.profile.profile_id;
               } catch (t) {}
               let y = (0, i.Rt)(l.target),
-                G = (0, c.Jr)({
+                m = (0, c.Jr)({
                   release: T.release,
                   environment: T.environment,
                   transaction: P,
@@ -40178,15 +40191,15 @@ Error:`,
                   "user_agent.original":
                     s.m.navigator && s.m.navigator.userAgent,
                 }),
-                m = (0, o.qp)({
+                G = (0, o.qp)({
                   name: y,
                   op: `ui.interaction.${A}`,
-                  attributes: G,
+                  attributes: m,
                   startTime: d,
                   experimental: { standalone: !0 },
                 });
-              m.addEvent("inp", { [n.E1]: "millisecond", [n.Wb]: t.value }),
-                m.end(d + f);
+              G.addEvent("inp", { [n.E1]: "millisecond", [n.Wb]: t.value }),
+                G.end(d + f);
             });
             return () => {
               t();
@@ -40265,19 +40278,19 @@ Error:`,
         let T = {},
           d = {};
         function f(t, e = !1) {
-          return m("cls", t, D, a, e);
+          return G("cls", t, D, a, e);
         }
         function O(t, e = !1) {
-          return m("lcp", t, g, n, e);
+          return G("lcp", t, g, n, e);
         }
         function L(t) {
-          return m("fid", t, S, r);
+          return G("fid", t, S, r);
         }
         function p(t) {
-          return m("ttfb", t, y, o);
+          return G("ttfb", t, y, o);
         }
         function C(t) {
-          return m("inp", t, G, E);
+          return G("inp", t, m, E);
         }
         function P(t, e) {
           return (
@@ -40341,12 +40354,12 @@ Error:`,
             h("ttfb", { metric: t }), (o = t);
           });
         }
-        function G() {
+        function m() {
           return (0, R.Y)((t) => {
             h("inp", { metric: t }), (E = t);
           });
         }
-        function m(t, e, _, a, r = !1) {
+        function G(t, e, _, a, r = !1) {
           let n;
           return (
             v(t, e),
@@ -40946,7 +40959,7 @@ Error:`,
             themeLight: { ...t.themeLight, ...e.themeLight },
           };
         }
-        function G(t, e) {
+        function m(t, e) {
           return (
             Object.entries(e).forEach(([e, _]) => {
               t.setAttributeNS(null, e, _);
@@ -40954,12 +40967,12 @@ Error:`,
             t
           );
         }
-        let m = "rgba(88, 74, 192, 1)",
+        let G = "rgba(88, 74, 192, 1)",
           v = {
             foreground: "#2b2233",
             background: "#ffffff",
             accentForeground: "white",
-            accentBackground: m,
+            accentBackground: G,
             successColor: "#268d75",
             errorColor: "#df3338",
             border: "1.5px solid rgba(41, 35, 47, 0.13)",
@@ -40971,7 +40984,7 @@ Error:`,
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
-            accentBackground: m,
+            accentBackground: G,
             successColor: "#2da98c",
             errorColor: "#f55459",
             border: "1.5px solid rgba(235, 230, 239, 0.15)",
@@ -41003,7 +41016,7 @@ Error:`,
             id: r = "sentry-feedback",
             autoInject: n = !0,
             showBranding: o = !0,
-            isEmailRequired: m = !1,
+            isEmailRequired: G = !1,
             isNameRequired: b = !1,
             showEmail: w = !0,
             showName: M = !0,
@@ -41039,7 +41052,7 @@ Error:`,
                 id: r,
                 autoInject: n,
                 showBranding: o,
-                isEmailRequired: m,
+                isEmailRequired: G,
                 isNameRequired: b,
                 showEmail: w,
                 showName: M,
@@ -41237,22 +41250,22 @@ ${
                                 "http://www.w3.org/2000/svg",
                                 t,
                               ),
-                            e = G(t("svg"), {
+                            e = m(t("svg"), {
                               width: "20",
                               height: "20",
                               viewBox: "0 0 20 20",
                               fill: "var(--foreground)",
                             }),
-                            _ = G(t("g"), { clipPath: "url(#clip0_57_80)" }),
-                            a = G(t("path"), {
+                            _ = m(t("g"), { clipPath: "url(#clip0_57_80)" }),
+                            a = m(t("path"), {
                               "fill-rule": "evenodd",
                               "clip-rule": "evenodd",
                               d: "M15.6622 15H12.3997C12.2129 14.9959 12.031 14.9396 11.8747 14.8375L8.04965 12.2H7.49956V19.1C7.4875 19.3348 7.3888 19.5568 7.22256 19.723C7.05632 19.8892 6.83435 19.9879 6.59956 20H2.04956C1.80193 19.9968 1.56535 19.8969 1.39023 19.7218C1.21511 19.5467 1.1153 19.3101 1.11206 19.0625V12.2H0.949652C0.824431 12.2017 0.700142 12.1783 0.584123 12.1311C0.468104 12.084 0.362708 12.014 0.274155 11.9255C0.185602 11.8369 0.115689 11.7315 0.0685419 11.6155C0.0213952 11.4995 -0.00202913 11.3752 -0.00034808 11.25V3.75C-0.00900498 3.62067 0.0092504 3.49095 0.0532651 3.36904C0.0972798 3.24712 0.166097 3.13566 0.255372 3.04168C0.344646 2.94771 0.452437 2.87327 0.571937 2.82307C0.691437 2.77286 0.82005 2.74798 0.949652 2.75H8.04965L11.8747 0.1625C12.031 0.0603649 12.2129 0.00407221 12.3997 0H15.6622C15.9098 0.00323746 16.1464 0.103049 16.3215 0.278167C16.4966 0.453286 16.5964 0.689866 16.5997 0.9375V3.25269C17.3969 3.42959 18.1345 3.83026 18.7211 4.41679C19.5322 5.22788 19.9878 6.32796 19.9878 7.47502C19.9878 8.62209 19.5322 9.72217 18.7211 10.5333C18.1345 11.1198 17.3969 11.5205 16.5997 11.6974V14.0125C16.6047 14.1393 16.5842 14.2659 16.5395 14.3847C16.4948 14.5035 16.4268 14.6121 16.3394 14.7042C16.252 14.7962 16.147 14.8698 16.0307 14.9206C15.9144 14.9714 15.7891 14.9984 15.6622 15ZM1.89695 10.325H1.88715V4.625H8.33715C8.52423 4.62301 8.70666 4.56654 8.86215 4.4625L12.6872 1.875H14.7247V13.125H12.6872L8.86215 10.4875C8.70666 10.3835 8.52423 10.327 8.33715 10.325H2.20217C2.15205 10.3167 2.10102 10.3125 2.04956 10.3125C1.9981 10.3125 1.94708 10.3167 1.89695 10.325ZM2.98706 12.2V18.1625H5.66206V12.2H2.98706ZM16.5997 9.93612V5.01393C16.6536 5.02355 16.7072 5.03495 16.7605 5.04814C17.1202 5.13709 17.4556 5.30487 17.7425 5.53934C18.0293 5.77381 18.2605 6.06912 18.4192 6.40389C18.578 6.73866 18.6603 7.10452 18.6603 7.47502C18.6603 7.84552 18.578 8.21139 18.4192 8.54616C18.2605 8.88093 18.0293 9.17624 17.7425 9.41071C17.4556 9.64518 17.1202 9.81296 16.7605 9.90191C16.7072 9.91509 16.6536 9.9265 16.5997 9.93612Z",
                             });
                           e.appendChild(_).appendChild(a);
                           let r = t("defs"),
-                            n = G(t("clipPath"), { id: "clip0_57_80" }),
-                            o = G(t("rect"), {
+                            n = m(t("clipPath"), { id: "clip0_57_80" }),
+                            o = m(t("rect"), {
                               width: "20",
                               height: "20",
                               fill: "white",
@@ -42161,11 +42174,11 @@ ${
           }
           return a.__N || a.__;
         }
-        function tG(t, e) {
+        function tm(t, e) {
           var _ = tS(tR++, 4);
           !tO.__s && tM(_.__H, e) && ((_.__ = t), (_.i = e), tN.__h.push(_));
         }
-        function tm(t, e) {
+        function tG(t, e) {
           var _ = tS(tR++, 7);
           return tM(_.__H, e)
             ? ((_.__V = t()), (_.i = e), (_.__h = t), _.__V)
@@ -42174,7 +42187,7 @@ ${
         function tv(t, e) {
           return (
             (tT = 8),
-            tm(function () {
+            tG(function () {
               return t;
             }, e)
           );
@@ -42346,7 +42359,7 @@ ${
             },
             useImperativeHandle: function (t, e, _) {
               (tT = 6),
-                tG(
+                tm(
                   function () {
                     return "function" == typeof t
                       ? (t(e()),
@@ -42363,13 +42376,13 @@ ${
                   null == _ ? _ : _.concat(t),
                 );
             },
-            useLayoutEffect: tG,
-            useMemo: tm,
+            useLayoutEffect: tm,
+            useMemo: tG,
             useReducer: ty,
             useRef: function (t) {
               return (
                 (tT = 5),
-                tm(function () {
+                tG(function () {
                   return { current: t };
                 }, [])
               );
@@ -42379,18 +42392,18 @@ ${
           tH =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
         function tK({ options: t }) {
-          let e = tm(
+          let e = tG(
             () => ({
               __html: (function () {
                 let t = (t) =>
                     s.createElementNS("http://www.w3.org/2000/svg", t),
-                  e = G(t("svg"), {
+                  e = m(t("svg"), {
                     width: "32",
                     height: "30",
                     viewBox: "0 0 72 66",
                     fill: "inherit",
                   }),
-                  _ = G(t("path"), {
+                  _ = m(t("path"), {
                     transform: "translate(11, 11)",
                     d: "M29,2.26a4.67,4.67,0,0,0-8,0L14.42,13.53A32.21,32.21,0,0,1,32.17,40.19H27.55A27.68,27.68,0,0,0,12.09,17.47L6,28a15.92,15.92,0,0,1,9.23,12.17H4.62A.76.76,0,0,1,4,39.06l2.94-5a10.74,10.74,0,0,0-3.36-1.9l-2.91,5a4.54,4.54,0,0,0,1.69,6.24A4.66,4.66,0,0,0,4.62,44H19.15a19.4,19.4,0,0,0-8-17.31l2.31-4A23.87,23.87,0,0,1,23.76,44H36.07a35.88,35.88,0,0,0-16.41-31.8l4.67-8a.77.77,0,0,1,1.05-.27c.53.29,20.29,34.77,20.66,35.17a.76.76,0,0,1-.68,1.13H40.6q.09,1.91,0,3.81h4.78A4.59,4.59,0,0,0,50,39.43a4.49,4.49,0,0,0-.62-2.28Z",
                   });
@@ -42457,8 +42470,8 @@ ${
             } = t,
             [h, D] = tg(null),
             [S, y] = tg(!1),
-            G = s && s.input,
-            [m, v] = tg(null),
+            m = s && s.input,
+            [G, v] = tg(null),
             U = tv((t) => {
               v(t), y(!1);
             }, []),
@@ -42533,8 +42546,8 @@ ${
               __self: this,
               __source: { fileName: tk, lineNumber: 144 },
             },
-            G && S
-              ? z(G, {
+            m && S
+              ? z(m, {
                   onError: U,
                   __self: this,
                   __source: { fileName: tk, lineNumber: 146 },
@@ -42665,7 +42678,7 @@ ${
                     __source: { fileName: tk, lineNumber: 189 },
                   }),
                 ),
-                G
+                m
                   ? z(
                       "label",
                       {
@@ -42687,7 +42700,7 @@ ${
                         },
                         S ? R : I,
                       ),
-                      m
+                      G
                         ? z(
                             "div",
                             {
@@ -42695,7 +42708,7 @@ ${
                               __self: this,
                               __source: { fileName: tk, lineNumber: 212 },
                             },
-                            m.message,
+                            G.message,
                           )
                         : null,
                     )
@@ -42758,7 +42771,7 @@ ${
           "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/Dialog.tsx";
         function tj({ open: t, onFormSubmitted: e, ..._ }) {
           let a = _.options,
-            r = tm(
+            r = tG(
               () => ({
                 __html: (function () {
                   let t = (t) =>
@@ -42766,25 +42779,25 @@ ${
                         "http://www.w3.org/2000/svg",
                         t,
                       ),
-                    e = G(t("svg"), {
+                    e = m(t("svg"), {
                       width: "16",
                       height: "17",
                       viewBox: "0 0 16 17",
                       fill: "inherit",
                     }),
-                    _ = G(t("g"), { clipPath: "url(#clip0_57_156)" }),
-                    a = G(t("path"), {
+                    _ = m(t("g"), { clipPath: "url(#clip0_57_156)" }),
+                    a = m(t("path"), {
                       "fill-rule": "evenodd",
                       "clip-rule": "evenodd",
                       d: "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z",
                     }),
-                    r = G(t("path"), {
+                    r = m(t("path"), {
                       d: "M6.68775 12.4297C6.78586 12.4745 6.89218 12.4984 7 12.5C7.11275 12.4955 7.22315 12.4664 7.32337 12.4145C7.4236 12.3627 7.51121 12.2894 7.58 12.2L12 5.63999C12.0848 5.47724 12.1071 5.28902 12.0625 5.11098C12.0178 4.93294 11.9095 4.77744 11.7579 4.67392C11.6064 4.57041 11.4221 4.52608 11.24 4.54931C11.0579 4.57254 10.8907 4.66173 10.77 4.79999L6.88 10.57L5.13 8.56999C5.06508 8.49566 4.98613 8.43488 4.89768 8.39111C4.80922 8.34735 4.713 8.32148 4.61453 8.31498C4.51605 8.30847 4.41727 8.32147 4.32382 8.35322C4.23038 8.38497 4.14413 8.43484 4.07 8.49999C3.92511 8.63217 3.83692 8.81523 3.82387 9.01092C3.81083 9.2066 3.87393 9.39976 4 9.54999L6.43 12.24C6.50187 12.3204 6.58964 12.385 6.68775 12.4297Z",
                     });
                   e.appendChild(_).append(r, a);
                   let n = t("defs"),
-                    o = G(t("clipPath"), { id: "clip0_57_156" }),
-                    E = G(t("rect"), {
+                    o = m(t("clipPath"), { id: "clip0_57_156" }),
+                    E = m(t("rect"), {
                       width: "16",
                       height: "16",
                       fill: "white",
@@ -44091,7 +44104,7 @@ ${tZ}
             ]
               .filter((t) => "function" == typeof e[t])
               .find((_) => t instanceof e[_]);
-        function G(t, e, _, a, r) {
+        function m(t, e, _, a, r) {
           let n = [];
           try {
             let o = N(
@@ -44125,7 +44138,7 @@ ${tZ}
             n.forEach((t) => t());
           };
         }
-        function m(t, e, _, a, r, n, o, E) {
+        function G(t, e, _, a, r, n, o, E) {
           let i = [];
           for (let o of Object.getOwnPropertyNames(t))
             if (
@@ -44283,7 +44296,7 @@ ${tZ}
                     this.initCanvasMutationObserver(t, _, a, r),
                   n && "number" == typeof e)
                 ) {
-                  let e = G(t, _, a, r, !0);
+                  let e = m(t, _, a, r, !0);
                   this.restoreHandlers.push(() => {
                     e();
                   });
@@ -44352,7 +44365,7 @@ ${tZ}
             });
           }
           initCanvasMutationObserver(t, e, _, a) {
-            let r = G(t, e, _, a, !1),
+            let r = m(t, e, _, a, !1),
               n = (function (t, e, _, a, r) {
                 let n = [];
                 for (let o of Object.getOwnPropertyNames(
@@ -44406,7 +44419,7 @@ ${tZ}
                 let o = [];
                 return (
                   o.push(
-                    ...m(
+                    ...G(
                       e.WebGLRenderingContext.prototype,
                       O.WebGL,
                       t,
@@ -44419,7 +44432,7 @@ ${tZ}
                   ),
                   void 0 !== e.WebGL2RenderingContext &&
                     o.push(
-                      ...m(
+                      ...G(
                         e.WebGL2RenderingContext.prototype,
                         O.WebGL2,
                         t,
@@ -44652,8 +44665,8 @@ ${tZ}
           S = _(899517),
           g = _(202811),
           y = _(370336),
-          G = _(467510),
-          m = _(101284),
+          m = _(467510),
+          G = _(101284),
           v = _(622916),
           U = _(394798),
           W = _(886115),
@@ -45038,7 +45051,7 @@ ${tZ}
         function ty(t) {
           return null == t ? "" : t.toLowerCase();
         }
-        function tG(t, e) {
+        function tm(t, e) {
           let _,
             {
               doc: n,
@@ -45065,8 +45078,8 @@ ${tZ}
               onIframeLoad: S,
               iframeLoadTimeout: g = 5e3,
               onStylesheetLoad: y,
-              stylesheetLoadTimeout: G = 5e3,
-              keepIframeSrcFn: m = () => !1,
+              stylesheetLoadTimeout: m = 5e3,
+              keepIframeSrcFn: G = () => !1,
               newlyAddedElement: v = !1,
             } = e,
             { preserveWhiteSpace: U = !0 } = e,
@@ -45449,7 +45462,7 @@ ${tZ}
               dataURLOptions: C,
               inlineImages: P,
               recordCanvas: h,
-              keepIframeSrcFn: m,
+              keepIframeSrcFn: G,
               newlyAddedElement: v,
             });
           if (!W) return console.warn(t, "not serialized"), null;
@@ -45583,16 +45596,16 @@ ${tZ}
               onIframeLoad: S,
               iframeLoadTimeout: g,
               onStylesheetLoad: y,
-              stylesheetLoadTimeout: G,
-              keepIframeSrcFn: m,
+              stylesheetLoadTimeout: m,
+              keepIframeSrcFn: G,
             };
             for (let _ of Array.from(t.childNodes)) {
-              let t = tG(_, e);
+              let t = tm(_, e);
               t && b.childNodes.push(t);
             }
             if (t.nodeType === t.ELEMENT_NODE && t.shadowRoot)
               for (let _ of Array.from(t.shadowRoot.childNodes)) {
-                let a = tG(_, e);
+                let a = tm(_, e);
                 a &&
                   (z(t.shadowRoot) && (a.isShadow = !0), b.childNodes.push(a));
               }
@@ -45632,7 +45645,7 @@ ${tZ}
                 () => {
                   let e = t.contentDocument;
                   if (e && S) {
-                    let _ = tG(e, {
+                    let _ = tm(e, {
                       doc: e,
                       mirror: o,
                       blockClass: E,
@@ -45658,8 +45671,8 @@ ${tZ}
                       onIframeLoad: S,
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
-                      stylesheetLoadTimeout: G,
-                      keepIframeSrcFn: m,
+                      stylesheetLoadTimeout: m,
+                      keepIframeSrcFn: G,
                     });
                     _ && S(t, _);
                   }
@@ -45692,7 +45705,7 @@ ${tZ}
                 t,
                 () => {
                   if (y) {
-                    let e = tG(t, {
+                    let e = tm(t, {
                       doc: n,
                       mirror: o,
                       blockClass: E,
@@ -45718,18 +45731,18 @@ ${tZ}
                       onIframeLoad: S,
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
-                      stylesheetLoadTimeout: G,
-                      keepIframeSrcFn: m,
+                      stylesheetLoadTimeout: m,
+                      keepIframeSrcFn: G,
                     });
                     e && y(t, e);
                   }
                 },
-                G,
+                m,
               ),
             b
           );
         }
-        function tm(t) {
+        function tG(t) {
           let e,
             _ = t[0],
             a = 1;
@@ -45829,14 +45842,14 @@ ${tZ}
               ? e.scrollingElement.scrollLeft
               : void 0 !== t.pageXOffset
                 ? t.pageXOffset
-                : tm([
+                : tG([
                     e,
                     "optionalAccess",
                     (t) => t.documentElement,
                     "access",
                     (t) => t.scrollLeft,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -45845,7 +45858,7 @@ ${tZ}
                     "optionalAccess",
                     (t) => t.scrollLeft,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -45857,14 +45870,14 @@ ${tZ}
               ? e.scrollingElement.scrollTop
               : void 0 !== t.pageYOffset
                 ? t.pageYOffset
-                : tm([
+                : tG([
                     e,
                     "optionalAccess",
                     (t) => t.documentElement,
                     "access",
                     (t) => t.scrollTop,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -45873,7 +45886,7 @@ ${tZ}
                     "optionalAccess",
                     (t) => t.scrollTop,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -45941,7 +45954,7 @@ ${tZ}
           );
         }
         function tj(t) {
-          return !!tm([t, "optionalAccess", (t) => t.shadowRoot]);
+          return !!tG([t, "optionalAccess", (t) => t.shadowRoot]);
         }
         /[1-9][0-9]{12}/.test(Date.now().toString()) ||
           (tM = () => new Date().getTime());
@@ -45981,7 +45994,7 @@ ${tZ}
         function tq(t) {
           let e = null;
           return (
-            tm([
+            tG([
               t,
               "access",
               (t) => t.getRootNode,
@@ -46184,7 +46197,7 @@ ${tZ}
                         : this.mirror.getId(r.parentNode),
                       o = a(r);
                     if (-1 === n || -1 === o) return _.addNode(r);
-                    let E = tG(r, {
+                    let E = tm(r, {
                       doc: this.doc,
                       mirror: this.mirror,
                       blockClass: this.blockClass,
@@ -48026,8 +48039,8 @@ ${tZ}
               packFn: S,
               sampling: g = {},
               dataURLOptions: y = {},
-              mousemoveWait: G,
-              recordDOM: m = !0,
+              mousemoveWait: m,
+              recordDOM: G = !0,
               recordCanvas: v = !1,
               recordCrossOriginIframes: U = !1,
               recordAfter: W = "DOMContentLoaded" === t.recordAfter
@@ -48053,7 +48066,7 @@ ${tZ}
               F = !0;
             }
           if (V && !_) throw Error("emit function is required");
-          void 0 !== G && void 0 === g.mousemove && (g.mousemove = G),
+          void 0 !== m && void 0 === g.mousemove && (g.mousemove = m),
             eC.reset();
           let X =
               !0 === O
@@ -48258,7 +48271,7 @@ ${tZ}
                     mirror: eC,
                   }),
             tn = (t = !1) => {
-              if (!m) return;
+              if (!G) return;
               o(
                 {
                   type: t0.Meta,
@@ -48301,7 +48314,7 @@ ${tZ}
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: D = () => !1,
                 } = e || {};
-                return tG(t, {
+                return tm(t, {
                   doc: t,
                   mirror: _,
                   blockClass: a,
@@ -48488,7 +48501,7 @@ ${tZ}
                     maskInputOptions: X,
                     inlineStylesheet: f,
                     sampling: g,
-                    recordDOM: m,
+                    recordDOM: G,
                     recordCanvas: v,
                     inlineImages: M,
                     userTriggeredOnInput: b,
@@ -48596,10 +48609,10 @@ ${tZ}
           return t.closest("button,a") || t;
         }
         function ey(t) {
-          let e = eG(t);
+          let e = em(t);
           return e && e instanceof Element ? eg(e) : e;
         }
-        function eG(t) {
+        function em(t) {
           var e;
           return "object" == typeof (e = t) && e && "target" in e
             ? t.target
@@ -48611,7 +48624,7 @@ ${tZ}
               throw Error("please take full snapshot after start recording");
             E(t);
           });
-        class em {
+        class eG {
           constructor(t, e, _ = eS) {
             (this._lastMutation = 0),
               (this._lastScroll = 0),
@@ -48932,7 +48945,7 @@ ${tZ}
           return e ? e(t) : null;
         }
         function eH(t) {
-          return ((m.Z1 || V.performance.timeOrigin) + t) / 1e3;
+          return ((G.Z1 || V.performance.timeOrigin) + t) / 1e3;
         }
         function eK(t) {
           let e = t.entries[t.entries.length - 1];
@@ -49920,17 +49933,17 @@ ${tZ}
             "number" == typeof E.statusCode &&
             (E.statusCode < 200 || E.statusCode >= 300)
           )
-            throw new _G(E.statusCode);
+            throw new _m(E.statusCode);
           let L = (0, M.WG)({}, E);
-          if ((0, M.Q)(L, "replay")) throw new _m(L);
+          if ((0, M.Q)(L, "replay")) throw new _G(L);
           return E;
         }
-        class _G extends Error {
+        class _m extends Error {
           constructor(t) {
             super(`Transport returned status code ${t}`);
           }
         }
-        class _m extends Error {
+        class _G extends Error {
           constructor(t) {
             super("Rate limit hit"), (this.rateLimits = t);
           }
@@ -49941,7 +49954,7 @@ ${tZ}
             try {
               return await _y(t), !0;
             } catch (_) {
-              if (_ instanceof _G || _ instanceof _m) throw _;
+              if (_ instanceof _m || _ instanceof _G) throw _;
               if (
                 ((0, p.v)("Replays", { _retryCount: e.count }),
                 eX &&
@@ -50069,7 +50082,7 @@ ${tZ}
                     ignoreSelector: a ? a.join(",") : "",
                   }
                 : void 0;
-            r && (this.clickDetector = new em(this, r));
+            r && (this.clickDetector = new eG(this, r));
           }
           getContext() {
             return this._context;
@@ -50550,9 +50563,9 @@ ${tZ}
                             _ = "click" === t.name,
                             a = null;
                           try {
-                            (a = _ ? ey(t.event) : eG(t.event)),
+                            (a = _ ? ey(t.event) : em(t.event)),
                               (e =
-                                (0, G.Rt)(a, { maxStringLength: 200 }) ||
+                                (0, m.Rt)(a, { maxStringLength: 200 }) ||
                                 "<unknown>");
                           } catch (t) {
                             e = "<unknown>";
@@ -50823,7 +50836,7 @@ ${tZ}
                                   t,
                                   eW({
                                     category: "replay.hydrate-error",
-                                    data: { url: (0, G.l4)() },
+                                    data: { url: (0, m.l4)() },
                                   }),
                                 );
                             })(t, e);
@@ -50975,7 +50988,7 @@ ${tZ}
                   let i = _ || r || n,
                     c = 1 === o.length;
                   if (!i && c) return null;
-                  let s = (0, G.Rt)(E, { maxStringLength: 200 }) || "<unknown>",
+                  let s = (0, m.Rt)(E, { maxStringLength: 200 }) || "<unknown>",
                     l = ew(E, s);
                   return eW({
                     category: "ui.keyDown",
@@ -51459,4 +51472,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.9c538518a71e976d.js.map
+//# sourceMappingURL=sentry.f6557ccba7cbf479.js.map

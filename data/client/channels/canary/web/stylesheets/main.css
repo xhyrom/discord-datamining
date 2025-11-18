@@ -30115,6 +30115,9 @@ div.mobilePushContainer__3d3b0 {
 .result__2dc39[data-focused="true"] {
   box-shadow: 0 0 0 2px var(--focus-primary);
 }
+.result__2dc39[data-selected="true"] {
+  box-shadow: 0 0 0 3px var(--focus-primary);
+}
 .high-contrast-mode .result__2dc39 {
   border: 1px solid var(--border-strong);
 }
@@ -101928,4 +101931,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.a1bf87c6dc29527f.css.map*/
+/*# sourceMappingURL=12633.b7405315ffcd3f67.css.map*/
