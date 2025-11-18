@@ -42668,9 +42668,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   margin-inline-end: 2px;
   overflow: hidden;
 }
-.clickable_dfa8b6 {
-  cursor: pointer;
-}
 .roleRemoveIcon_dfa8b6 {
   display: none;
   height: 10px;
@@ -45297,7 +45294,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -51456,9 +51453,9 @@ svg.radioIcon_c1e9c4 {
 }
 .message__9a9f9 {
   color: var(--text-default);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: var(--font-weight-medium);
-  line-height: 20px;
+  line-height: 1.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -101984,4 +101981,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b85a9bc6819c6b4a.css.map*/
+/*# sourceMappingURL=12633.0e8997a524826456.css.map*/
