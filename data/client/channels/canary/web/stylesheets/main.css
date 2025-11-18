@@ -44855,7 +44855,7 @@ h3.improved__1689b:after {
   --custom-gradient-glow: var(--orange-new-10);
 }
 .progressContainer__9258b {
-  --custom-expressive-progress-height: 10px;
+  --custom-expressive-progress-height: 4px;
   --custom-background: var(--background-mod-normal);
   border-radius: 5px;
   height: var(--custom-expressive-progress-height);
@@ -101984,4 +101984,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ec724c077dd9bee3.css.map*/
+/*# sourceMappingURL=12633.b85a9bc6819c6b4a.css.map*/
