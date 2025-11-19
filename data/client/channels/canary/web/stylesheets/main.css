@@ -52479,7 +52479,7 @@ svg.radioIcon_c1e9c4 {
   text-align: start;
 }
 .card__6df1a.withGiftBanner__6df1a {
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 .tier0__6df1a.pillMargin__6df1a {
   margin-top: var(--space-24);
@@ -64014,13 +64014,14 @@ html .progress__61462 {
   -webkit-margin-start: var(--space-16);
   gap: 2px;
   margin-inline-start: var(--space-16);
+  max-width: 57%;
 }
 .avatar__72cd3 {
   align-items: center;
+  bottom: -20%;
   display: flex;
   inset-inline-end: 10px;
   position: absolute;
-  top: -40px;
   z-index: 1;
 }
 .full-motion .avatar__72cd3 {
@@ -64029,7 +64030,7 @@ html .progress__61462 {
 }
 .bannerImage__72cd3 {
   background-position-x: 95%;
-  background-position-y: 10%;
+  background-position-y: 100%;
   background-repeat: no-repeat;
   background-size: 300%;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
@@ -102026,4 +102027,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.c2125d922f5c2540.css.map*/
+/*# sourceMappingURL=12633.9e1ec436366ec023.css.map*/
