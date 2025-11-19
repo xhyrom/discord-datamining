@@ -5538,165 +5538,6 @@ html.decorate-links .lowSaturationUnderline__41f68 {
     rainbowSlide 1.5s linear infinite;
   background-clip: text;
 }
-.flex__7c0ba,
-.horizontal__7c0ba {
-  display: flex;
-}
-.horizontal__7c0ba {
-  flex-direction: row;
-}
-.horizontalReverse__7c0ba {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.horizontal__7c0ba > .flex__7c0ba,
-.horizontal__7c0ba > .flexChild__7c0ba {
-  margin-inline: 10px;
-}
-.horizontal__7c0ba > .flex__7c0ba:first-child,
-.horizontal__7c0ba > .flexChild__7c0ba:first-child {
-  -webkit-margin-start: 0;
-  margin-inline-start: 0;
-}
-.horizontal__7c0ba > .flex__7c0ba:last-child,
-.horizontal__7c0ba > .flexChild__7c0ba:last-child {
-  -webkit-margin-end: 0;
-  margin-inline-end: 0;
-}
-.horizontalReverse__7c0ba > .flex__7c0ba,
-.horizontalReverse__7c0ba > .flexChild__7c0ba {
-  margin-inline: 10px;
-}
-.horizontalReverse__7c0ba > .flex__7c0ba:first-child,
-.horizontalReverse__7c0ba > .flexChild__7c0ba:first-child {
-  -webkit-margin-end: 0;
-  margin-inline-end: 0;
-}
-.horizontalReverse__7c0ba > .flex__7c0ba:last-child,
-.horizontalReverse__7c0ba > .flexChild__7c0ba:last-child {
-  -webkit-margin-start: 0;
-  margin-inline-start: 0;
-}
-.horizontal__7c0ba > .flexMarginReset__7c0ba {
-  margin: 0;
-}
-.flex_abf706 {
-  display: flex;
-}
-.alignStart_abf706 {
-  align-items: flex-start;
-}
-.alignEnd_abf706 {
-  align-items: flex-end;
-}
-.alignCenter_abf706 {
-  align-items: center;
-}
-.alignStretch_abf706 {
-  align-items: stretch;
-}
-.alignBaseline_abf706 {
-  align-items: baseline;
-}
-.justifyStart_abf706 {
-  justify-content: flex-start;
-}
-.justifyEnd_abf706 {
-  justify-content: flex-end;
-}
-.justifyCenter_abf706 {
-  justify-content: center;
-}
-.justifyAround_abf706 {
-  justify-content: space-around;
-}
-.justifyBetween_abf706 {
-  justify-content: space-between;
-}
-.noWrap_abf706 {
-  flex-wrap: nowrap;
-}
-.wrap_abf706 {
-  flex-wrap: wrap;
-}
-.wrapReverse_abf706 {
-  flex-wrap: wrap-reverse;
-}
-.directionRow_abf706 {
-  flex-direction: row;
-}
-.directionRowReverse_abf706 {
-  flex-direction: row-reverse;
-}
-.directionColumn_abf706 {
-  flex-direction: column;
-}
-.spacer_abf706 {
-  flex: 1;
-  overflow: hidden;
-}
-.vertical_abf706 {
-  display: flex;
-  flex-direction: column;
-}
-.horizontal_abf706 {
-  display: flex;
-  flex-direction: row;
-}
-.horizontalReverse_abf706 {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.horizontal_abf706 > .spacer_abf706,
-.horizontalReverse_abf706 > .spacer_abf706,
-.vertical_abf706 > .spacer_abf706 {
-  min-height: 1px;
-}
-.flexCenter_abf706 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.container__918e5 {
-  word-wrap: break-word;
-  min-height: auto;
-  width: 442px;
-}
-.form__918e5 {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.modalContent__918e5 {
-  padding-bottom: var(--space-4);
-  padding-top: 20px;
-}
-.content__918e5 {
-  height: 100%;
-}
-.title__918e5 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.body__918e5,
-.title__918e5 {
-  text-align: center;
-}
-.primaryButton__918e5,
-.secondaryButton__918e5 {
-  flex: 1 1 45%;
-}
-.modalFooter__918e5 {
-  gap: var(--space-8);
-}
-.body__918e5,
-.title__918e5 {
-  text-align: start;
-}
-.primaryButton__918e5,
-.secondaryButton__918e5 {
-  flex: unset;
-}
 .group__3d4a0,
 .item__3d4a0 {
   box-sizing: border-box;
@@ -5964,6 +5805,125 @@ html.decorate-links .lowSaturationUnderline__41f68 {
   --__card-accent-color: var(--card-primary-bg);
   background-color: var(--card-primary-bg);
   border: 1px solid var(--border-subtle);
+}
+.flex__7c0ba,
+.horizontal__7c0ba {
+  display: flex;
+}
+.horizontal__7c0ba {
+  flex-direction: row;
+}
+.horizontalReverse__7c0ba {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.horizontal__7c0ba > .flex__7c0ba,
+.horizontal__7c0ba > .flexChild__7c0ba {
+  margin-inline: 10px;
+}
+.horizontal__7c0ba > .flex__7c0ba:first-child,
+.horizontal__7c0ba > .flexChild__7c0ba:first-child {
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+}
+.horizontal__7c0ba > .flex__7c0ba:last-child,
+.horizontal__7c0ba > .flexChild__7c0ba:last-child {
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+}
+.horizontalReverse__7c0ba > .flex__7c0ba,
+.horizontalReverse__7c0ba > .flexChild__7c0ba {
+  margin-inline: 10px;
+}
+.horizontalReverse__7c0ba > .flex__7c0ba:first-child,
+.horizontalReverse__7c0ba > .flexChild__7c0ba:first-child {
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+}
+.horizontalReverse__7c0ba > .flex__7c0ba:last-child,
+.horizontalReverse__7c0ba > .flexChild__7c0ba:last-child {
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+}
+.horizontal__7c0ba > .flexMarginReset__7c0ba {
+  margin: 0;
+}
+.flex_abf706 {
+  display: flex;
+}
+.alignStart_abf706 {
+  align-items: flex-start;
+}
+.alignEnd_abf706 {
+  align-items: flex-end;
+}
+.alignCenter_abf706 {
+  align-items: center;
+}
+.alignStretch_abf706 {
+  align-items: stretch;
+}
+.alignBaseline_abf706 {
+  align-items: baseline;
+}
+.justifyStart_abf706 {
+  justify-content: flex-start;
+}
+.justifyEnd_abf706 {
+  justify-content: flex-end;
+}
+.justifyCenter_abf706 {
+  justify-content: center;
+}
+.justifyAround_abf706 {
+  justify-content: space-around;
+}
+.justifyBetween_abf706 {
+  justify-content: space-between;
+}
+.noWrap_abf706 {
+  flex-wrap: nowrap;
+}
+.wrap_abf706 {
+  flex-wrap: wrap;
+}
+.wrapReverse_abf706 {
+  flex-wrap: wrap-reverse;
+}
+.directionRow_abf706 {
+  flex-direction: row;
+}
+.directionRowReverse_abf706 {
+  flex-direction: row-reverse;
+}
+.directionColumn_abf706 {
+  flex-direction: column;
+}
+.spacer_abf706 {
+  flex: 1;
+  overflow: hidden;
+}
+.vertical_abf706 {
+  display: flex;
+  flex-direction: column;
+}
+.horizontal_abf706 {
+  display: flex;
+  flex-direction: row;
+}
+.horizontalReverse_abf706 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.horizontal_abf706 > .spacer_abf706,
+.horizontalReverse_abf706 > .spacer_abf706,
+.vertical_abf706 > .spacer_abf706 {
+  min-height: 1px;
+}
+.flexCenter_abf706 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .formText_ddd181 a:hover {
   text-decoration: underline;
@@ -23546,154 +23506,20 @@ span.clanTag__5d473 {
 .invitesDisabledTooltip_b1f768 {
   margin-top: 2px;
 }
-.navigationIcon__90d72 {
-  display: block;
-  height: 48px;
-  width: 48px;
-}
-.badgeIcon__90d72 {
-  height: 12px;
-  width: 12px;
-}
-.guildSeparator__90d72 {
-  background-color: var(--border-subtle);
-  border-radius: 1px;
-  height: 2px;
-  width: 32px;
-}
-.guildsError__90d72 {
-  align-items: center;
-  background-color: var(--background-base-low);
-  border-color: var(--status-danger);
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
+.dialogWrapper_b1f768 {
+  background-color: var(--background-surface-high);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    inset 0 0 0 1px var(--border-subtle),
+    var(--shadow-high);
   box-sizing: border-box;
   color: var(--text-default);
-  display: flex;
-  font-size: 20px;
-  height: 48px;
-  justify-content: center;
-  padding: 0;
-  transition: background-color 0.15s ease-out;
-  width: 48px;
-}
-.errorInner__90d72 {
-  font-weight: var(--font-weight-bold);
-}
-.guildsError__90d72:hover {
-  background-color: var(--status-danger);
-  border-color: var(--status-danger);
-  color: var(--white-500);
-  text-decoration: none;
-}
-.circleButtonBase__90d72 {
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  transition:
-    color 0.15s ease-out,
-    background-color 0.15s ease-out;
-  width: 48px;
-}
-.circleIconButton__90d72 {
-  background-color: var(--background-base-low);
-  color: var(--green-360);
-}
-.circleIconButton__90d72.selected__90d72 {
-  background-color: var(--green-360);
-  color: var(--white-500);
-}
-.nitroUpsell__90d72 {
-  background: linear-gradient(
-    135deg,
-    var(--premium-tier-2-purple) 0,
-    var(--premium-tier-2-pink) 100%
-  );
-  color: var(--white-500);
-}
-.nitroUpsellIcon__90d72 {
-  stroke: #000 2px;
-}
-.circleIcon__90d72 {
-  height: 24px;
-  width: 24px;
-}
-.plus__90d72 {
-  font-size: 40px;
-  font-weight: var(--font-weight-normal);
-  line-height: 40px;
-  position: relative;
-  top: -1px;
-}
-.createJoinContainer__90d72 {
-  position: relative;
-  width: 50px;
-}
-.pill__90d72 {
-  inset-inline-start: 0;
-  position: absolute;
-  top: 0;
-}
-.listItem__90d72 {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 8px;
-  position: relative;
-  width: var(--custom-guild-list-width);
-}
-.listItemWrapper__90d72:active {
-  transform: translateY(1px) translateZ(0);
-}
-.listItemTooltip__90d72 {
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
   line-height: 20px;
-  max-width: 196px;
-  word-wrap: break-word;
-}
-.placeholderMask__90d72 {
-  display: block;
-}
-.dragInner__90d72 {
-  height: 48px;
-  width: 48px;
-}
-.iconBadge__90d72 {
-  background-color: var(--background-accent);
-}
-.iconBadge__90d72.participating__90d72 {
-  background-color: var(--green-360);
-}
-.unavailableBadge__90d72 {
-  background-color: var(--white-500);
-  color: var(--red-400) !important;
-}
-.dragInner__90d72 {
-  background-color: var(--background-base-low);
-}
-.tutorialContainer__90d72 {
-  position: relative;
-}
-.upsellTooltip__90d72 {
-  display: flex;
-}
-.upsellIcon__90d72 {
-  flex: 0 0 auto;
-  margin-inline: -6px 8px;
-}
-.upsellText__90d72 {
-  flex: 1 1 auto;
-  line-height: 22px;
-}
-.listItemTooltip__90d72 {
-  color: var(--text-default);
-}
-.listItemTooltipContent__90d72 {
-  padding: 8px;
+  max-width: 200px;
+  padding: var(--space-12);
+  width: auto;
 }
 .guildIcon__0fa6d {
   align-items: center;
@@ -40486,16 +40312,31 @@ div.modalOverrideBody__34eac {
 .buttonWrapper__24af7:hover {
   color: var(--interactive-active);
 }
-.container_c0c49a,
-.iconContainer_c0c49a {
+.container_c0c49a {
   display: flex;
   position: relative;
 }
+.container_c0c49a:before {
+  background: linear-gradient(180deg, #151263, #5b6cf2, #b1bafd);
+  border-radius: 8px;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+.containerHovered_c0c49a:before {
+  opacity: 1;
+}
 .iconContainer_c0c49a {
   align-items: center;
+  display: flex;
   height: 20px;
   justify-content: center;
   pointer-events: none;
+  position: relative;
   width: 20px;
 }
 .giftBoxIcon_c0c49a {
@@ -42667,9 +42508,6 @@ html:not(.chat-input) .inputInner_b1f01d {
   -webkit-margin-end: 2px;
   margin-inline-end: 2px;
   overflow: hidden;
-}
-.clickable_dfa8b6 {
-  cursor: pointer;
 }
 .roleRemoveIcon_dfa8b6 {
   display: none;
@@ -44855,7 +44693,7 @@ h3.improved__1689b:after {
   --custom-gradient-glow: var(--orange-new-10);
 }
 .progressContainer__9258b {
-  --custom-expressive-progress-height: 10px;
+  --custom-expressive-progress-height: 4px;
   --custom-background: var(--background-mod-normal);
   border-radius: 5px;
   height: var(--custom-expressive-progress-height);
@@ -45494,6 +45332,7 @@ h2.title_feb59c {
   box-shadow: 0 0 0 4px var(--blue-345);
 }
 .menu_c1e9c4 {
+  --custom-menu-viewport-padding: 16px;
   background: var(--background-surface-high);
   background-color: var(--background-surface-higher);
   border: 1px solid var(--border-subtle);
@@ -45503,7 +45342,7 @@ h2.title_feb59c {
   cursor: default;
   display: flex;
   height: auto;
-  max-height: calc(100vh - 32px);
+  max-height: calc(100vh - var(--custom-menu-viewport-padding) * 2);
   z-index: 1;
 }
 .scroller_c1e9c4 {
@@ -62471,60 +62310,14 @@ html .progress__61462 {
 }
 .actionButtons_e8b59c {
   display: none;
-  inset-inline-end: 12px;
+  inset-inline-end: var(--space-8);
   position: absolute;
-  top: 12px;
+  top: var(--space-8);
 }
 .messageGroupWrapper_e8b59c:focus-within .actionButtons_e8b59c,
 .messageGroupWrapper_e8b59c:hover .actionButtons_e8b59c {
   display: flex;
-}
-.jumpButton_e8b59c {
-  background-color: var(--background-surface-high);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xs);
-  color: var(--interactive-normal);
-  cursor: pointer;
-  display: flex;
-  font-size: 11px;
-  font-weight: var(--font-weight-medium);
-  height: 14px;
-  line-height: 14px;
-  margin-inline: 6px 4px;
-  padding: 2px 8px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.jumpButton_e8b59c:hover {
-  color: var(--interactive-active);
-}
-.keyboard-mode .jumpButton_e8b59c:focus {
-  box-shadow: 0 0 0 4px var(--blue-345);
-}
-.jumpButton_e8b59c .loading_e8b59c {
-  align-items: center;
-  display: flex;
-  inset: 0;
-  justify-content: center;
-  opacity: 0;
-  position: absolute;
-}
-.jumpButton_e8b59c .loading_e8b59c.visible_e8b59c {
-  opacity: 1;
-}
-.closeIcon_e8b59c {
-  color: var(--interactive-normal);
-  cursor: pointer;
-  display: block;
-  height: 16px;
-  width: 16px;
-}
-.closeIcon_e8b59c:active,
-.closeIcon_e8b59c:hover {
-  color: var(--interactive-active);
+  gap: var(--space-8);
 }
 .enable-forced-colors .messagesPopoutWrap_e8b59c {
   border: 2px solid CanvasText;
@@ -68624,7 +68417,10 @@ div.nagbar_d74ef8 {
   margin-bottom: var(--space-8);
 }
 .backupCode__2666b {
-  display: inline-block;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
   outline: none;
 }
 .userProfileCustomizationSection__2666b {
@@ -68647,7 +68443,7 @@ div.nagbar_d74ef8 {
   text-decoration: underline;
 }
 .noticeTextButton__2666b,
-.userSettingsSecurity__2666b .codeCheckbox__2666b {
+.userSettingsSecurity__2666b .backupCode__2666b {
   color: var(--text-default);
 }
 .tabPanel__2666b {
@@ -75882,6 +75678,81 @@ html .invoiceCancelRow__968a4 {
   margin-bottom: 20px;
   width: 100%;
 }
+.betaBadge__62691 {
+  color: var(--badge-text-expressive);
+  padding: 0 var(--space-8);
+  text-transform: uppercase;
+}
+.connectedStatus_e56446 {
+  align-items: flex-start;
+  display: flex;
+  gap: var(--space-6);
+  justify-content: flex-start;
+}
+.spinner_e56446 {
+  height: 20px;
+  width: 20px;
+}
+.settingsContainer_ff76ae {
+  background: var(--background-base-lowest);
+  border: 1px solid var(--border-normal);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+.headerContainer_ff76ae {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-24);
+  padding-bottom: 0;
+}
+.header_ff76ae {
+  border-bottom: 1px solid var(--border-faint);
+  justify-content: space-between;
+  padding-bottom: var(--space-16);
+}
+.header_ff76ae,
+.headerLogos_ff76ae {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.headerLogos_ff76ae {
+  gap: var(--space-10);
+}
+.headerDivider_ff76ae {
+  background: var(--border-faint);
+  height: 13px;
+  width: 2px;
+}
+.contentContainer_ff76ae {
+  display: flex;
+  gap: var(--space-12);
+  padding: var(--space-24);
+  padding-top: var(--space-12);
+}
+.contentSpacer_ff76ae {
+  flex: 1;
+}
+.content_ff76ae {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 400px;
+}
+.ctaContainer_ff76ae {
+  align-items: center;
+  display: flex;
+}
+.spinner_ff76ae {
+  width: auto;
+}
+.subscribeBtnContainer_ff76ae {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
 .titleBar__421ed {
   z-index: 3001;
   -webkit-app-region: drag;
@@ -79978,52 +79849,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.45);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.45);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.24
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.24
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.24
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.24
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.24
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.24
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.24
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.24
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.24
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.24
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.24
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.24
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.24
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.24
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.24
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.24
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-45);
@@ -81433,98 +81302,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.24) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.24)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -83262,52 +83131,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-30-hsl) / 0.8);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-10-hsl) / 0.8);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-360);
   --gradient-progress-pill-background: var(--neutral-18);
@@ -84717,98 +84584,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -86564,52 +86431,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.25);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.25);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-63);
@@ -88029,98 +87894,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -89872,52 +89737,50 @@ html.disable-forced-colors * {
   --expressive-gradient-purple-end: hsl(var(--illo-purple-60-hsl) / 0.3);
   --expressive-gradient-purple-start: hsl(var(--illo-purple-40-hsl) / 0.3);
   --expressive-gradient-tenure-badge-bronze-end: hsl(
-    var(--orange-new-80-hsl) / 0.18
+    var(--illo-orange-70-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-bronze-start: hsl(
-    var(--illo-orange-40-hsl) / 0.18
+    var(--illo-orange-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-end: hsl(
-    var(--illo-purple-50-hsl) / 0.18
+    var(--illo-purple-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-diamond-start: hsl(
-    var(--illo-purple-40-hsl) / 0.18
+    var(--illo-purple-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-end: hsl(
-    var(--illo-green-70-hsl) / 0.18
+    var(--illo-green-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-emerald-start: hsl(
-    var(--illo-green-40-hsl) / 0.18
+    var(--illo-green-40-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-end: hsl(
-    var(--yellow-new-41-hsl) / 0.18
+    var(--yellow-new-41-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-gold-start: hsl(
-    var(--illo-yellow-50-hsl) / 0.18
+    var(--illo-yellow-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-end: hsl(
-    var(--blue-new-50-hsl) / 0.18
+    var(--blue-new-50-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-opal-start: hsl(
-    var(--teal-new-25-hsl) / 0.18
+    var(--teal-new-30-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-end: hsl(
-    var(--teal-new-74-hsl) / 0.18
+    var(--teal-new-60-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-platinum-start: hsl(
-    var(--teal-new-20-hsl) / 0.18
+    var(--teal-new-20-hsl) / 0.3
   );
-  --expressive-gradient-tenure-badge-ruby-end: hsl(
-    var(--red-new-80-hsl) / 0.18
-  );
+  --expressive-gradient-tenure-badge-ruby-end: hsl(var(--red-new-80-hsl) / 0.3);
   --expressive-gradient-tenure-badge-ruby-start: hsl(
-    var(--red-new-44-hsl) / 0.18
+    var(--red-new-44-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-end: hsl(
-    var(--neutral-58-hsl) / 0.18
+    var(--neutral-58-hsl) / 0.3
   );
   --expressive-gradient-tenure-badge-silver-start: hsl(
-    var(--neutral-12-hsl) / 0.18
+    var(--neutral-12-hsl) / 0.3
   );
   --focus-primary: var(--blue-345);
   --gradient-progress-pill-background: var(--neutral-56);
@@ -91333,98 +91196,98 @@ html.disable-forced-colors * {
     );
     --expressive-gradient-tenure-badge-bronze-end: color-mix(
       in oklab,
-      hsl(var(--orange-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-70-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-bronze-start: color-mix(
       in oklab,
-      hsl(var(--illo-orange-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-orange-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-end: color-mix(
       in oklab,
-      hsl(var(--illo-purple-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-diamond-start: color-mix(
       in oklab,
-      hsl(var(--illo-purple-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-purple-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-end: color-mix(
       in oklab,
-      hsl(var(--illo-green-70-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-emerald-start: color-mix(
       in oklab,
-      hsl(var(--illo-green-40-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-green-40-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-end: color-mix(
       in oklab,
-      hsl(var(--yellow-new-41-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--yellow-new-41-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-gold-start: color-mix(
       in oklab,
-      hsl(var(--illo-yellow-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--illo-yellow-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-end: color-mix(
       in oklab,
-      hsl(var(--blue-new-50-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--blue-new-50-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-opal-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-25-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-30-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-end: color-mix(
       in oklab,
-      hsl(var(--teal-new-74-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-60-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-platinum-start: color-mix(
       in oklab,
-      hsl(var(--teal-new-20-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--teal-new-20-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-end: color-mix(
       in oklab,
-      hsl(var(--red-new-80-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-80-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-ruby-start: color-mix(
       in oklab,
-      hsl(var(--red-new-44-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--red-new-44-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-end: color-mix(
       in oklab,
-      hsl(var(--neutral-58-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-58-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --expressive-gradient-tenure-badge-silver-start: color-mix(
       in oklab,
-      hsl(var(--neutral-12-hsl) / 0.18) 100%,
-      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.18)
+      hsl(var(--neutral-12-hsl) / 0.3) 100%,
+      hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.3)
         var(--custom-theme-base-color-amount, 0%)
     );
     --focus-primary: color-mix(
@@ -101983,4 +101846,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d263d17d0b2fd122.css.map*/
+/*# sourceMappingURL=12633.83a53c85411e0584.css.map*/
