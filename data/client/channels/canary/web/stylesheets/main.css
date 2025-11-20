@@ -39406,6 +39406,7 @@ body .headerAnimation_b54a5b {
   width: 100%;
 }
 .headerBody__2ee1b {
+  width: 90%;
 }
 .caretHoverable__2ee1b {
   pointer-events: auto;
@@ -101999,4 +102000,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.41b3ba0ae707337c.css.map*/
+/*# sourceMappingURL=12633.c72a134e127a1b43.css.map*/
