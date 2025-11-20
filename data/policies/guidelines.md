@@ -213,6 +213,14 @@
             width: 7.45rem;
           }
         }
+        @media screen and (min-width: 1280px) {
+          html[lang="ru"] .nav_link {
+            font-size: 0.75rem;
+          }
+          html[lang="ru"] .nav_dd_trigger {
+            font-size: 0.75rem;
+          }
+        }
       </style>
     </div>
     <div class="nav_padding">
@@ -1375,7 +1383,9 @@
         <h4>Effective:&nbsp;September 29, 2025</h4>
         <h4>Last Updated:&nbsp;August 29, 2025</h4>
       </div>
-      <a href="#" class="link-terms is_new w-inline-block w-condition-invisible"
+      <a
+        href="#1"
+        class="link-terms is_new w-inline-block w-condition-invisible"
         ><div class="menu-numbers">1.</div>
         <div class="w-dyn-bind-empty"></div></a
       ><a
