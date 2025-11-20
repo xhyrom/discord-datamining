@@ -113,7 +113,7 @@
     <strong>Code details and restrictions</strong>: Discount codes are valid on
     most items in each store, including all sale items, with no blackout dates.
     Please note that the SteelSeries code cannot be applied to the Arctis Nova
-    Elite and is limited to 3 items per order.
+    Elite, Blemished Boxes, and is limited to 3 items per order.
   </li>
   <li data-list-item-id="ebc1b443a4793dec01beb6ee2e23d3d71">
     <strong>Immediate availability</strong>: Codes become available to eligible
@@ -333,10 +333,10 @@
   >
 </p>
 <p>
-  A: The SteelSeries code cannot be used to purchase the Arctis Nova Elite.
-  Otherwise, the discounts apply to everything else on SteelSeries and
-  KontrolFreek online stores. This includes sale items and there are no blackout
-  periods. 
+  A: The SteelSeries code cannot be used to purchase the Arctis Nova Elite or
+  Blemished Boxes. Otherwise, the discounts apply to everything else on
+  SteelSeries and KontrolFreek online stores. This includes sale items and there
+  are no blackout periods. 
 </p>
 <p>
   <strong
@@ -368,9 +368,9 @@
 <p class="wysiwyg-text-align-center">
   <img
     src="https://support.discord.com/hc/article_attachments/36446680603031"
+    alt="Unavailable Discount Code"
     width="387"
     height="544"
-    alt="Unavailable Discount Code"
   />
 </p>
 <h4 class="wysiwyg-text-align-center" id="h_01KABVVM3KPE5EM6ZX8RXQT85T">
