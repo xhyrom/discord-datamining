@@ -68838,20 +68838,6 @@ div.nagbar_d74ef8 {
   height: 10px;
   width: 10px;
 }
-.redCircle__8a3d7 {
-  background-clip: content-box;
-  background-color: var(--red-430);
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 2px var(--background-base-low);
-  cursor: pointer;
-  height: 18px;
-  inset-inline-end: -6px;
-  padding: 1px;
-  position: absolute;
-  top: -6px;
-  width: 18px;
-  z-index: 2;
-}
 .header_a00e6e {
   align-items: flex-start;
   display: flex;
@@ -101792,4 +101778,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.1058dae88592c272.css.map*/
+/*# sourceMappingURL=12633.0bb31813a9cf54ed.css.map*/
