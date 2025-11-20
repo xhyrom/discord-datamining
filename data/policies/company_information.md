@@ -211,6 +211,9 @@
             font-size: 0.75rem;
           }
         }
+        html[lang="es"] .dd_nav-link {
+          font-size: 0.75rem;
+        }
       </style>
     </div>
     <div class="nav_padding">
