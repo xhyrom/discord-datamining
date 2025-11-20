@@ -10,7 +10,7 @@
 
 **Discord Jobs:** [https://discord.com/jobs/8289756002](https://discord.com/jobs/8289756002)
 
-**Updated At:** Mon, 17 Nov 2025 19:10:20 GMT
+**Updated At:** Thu, 20 Nov 2025 17:52:29 GMT
 
 **Job Description:**
 Discord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.We are looking for an Account Manager to join our APAC Gaming Advertising Solutions team, supporting the regional expansion of Discord’s advertising business.This role will be based in Singapore, partnering closely with our Director of Gaming Sales, APAC to manage key client relationships and ensure campaign success across Southeast Asia and China-outbound gaming clients.
@@ -34,7 +34,7 @@ Deep understanding of China / South East Asia gaming landscape, digital media fo
 Strong ability to tell stories with data through analysis and presentations, with expertise in client reporting (wrap reports, QBRs)
 Willingness to travel within across APAC for client meetings occasionally
 
-&amp;nbsp;Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
+The OTE salary range for this&amp;nbsp;temporary full-time position is 236k - 265k S&amp;nbsp;+ benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed reflect the salary only, and do not include benefits.Why Discord?&amp;nbsp;Discord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!
 Discord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.
 Please see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking&amp;nbsp;HERE.
 
