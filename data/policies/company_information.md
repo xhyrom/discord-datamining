@@ -203,6 +203,14 @@
             width: 7.45rem;
           }
         }
+        @media screen and (min-width: 1280px) {
+          html[lang="ru"] .nav_link {
+            font-size: 0.75rem;
+          }
+          html[lang="ru"] .nav_dd_trigger {
+            font-size: 0.75rem;
+          }
+        }
       </style>
     </div>
     <div class="nav_padding">
