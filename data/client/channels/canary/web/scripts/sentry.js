@@ -4155,6 +4155,7 @@
               "/oauth2/applications/".concat(t, "/tokens"),
             GUILD_MIGRATE_SLOWMODE_PERMISSION: (t) =>
               "/guilds/".concat(t, "/migrate-bypass-slowmode-permission"),
+            QUEST_PLACEMENT: "/quests/placement-alpha",
           }),
           T = Object.freeze({
             INDEX: "/",
@@ -6843,7 +6844,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-136b13d2b4a851e40117dd84380f19f6ee6d03e1",
+            release: "discord_web-cddfd376bd146a7ab9c1b874abdb574de6e47f5b",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6909,8 +6910,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "470958"),
-            o.YA("builtAt", String("1763669011430"));
+            o.YA("buildNumber", "470996"),
+            o.YA("builtAt", String("1763670638426"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -51479,4 +51480,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.71030aa06a9afd98.js.map
+//# sourceMappingURL=sentry.f9bb35ea71d9d3ec.js.map
