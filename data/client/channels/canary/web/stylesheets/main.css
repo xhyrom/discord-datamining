@@ -42065,7 +42065,7 @@ html:not(.chat-input) .inputInner_b1f01d {
 .container__23ba6 {
   display: flex;
 }
-.cardsList__9d597 {
+.container__9d597 {
   --custom-lift-hover: 2px;
   --custom-peek-base: 8px;
   --custom-peek-hover: 2px;
@@ -42075,12 +42075,12 @@ html:not(.chat-input) .inputInner_b1f01d {
   );
   --custom-transition-duration: 200ms;
 }
+.container__9d597:has(.hasMultipleCards__9d597) {
+  padding-bottom: var(--custom-peek-base);
+}
 .cardsList__9d597,
 .firstCardContainer__9d597 {
   position: relative;
-}
-.hasMultipleCards__9d597 .firstCardContainer__9d597 {
-  margin-bottom: var(--custom-peek-base);
 }
 .hasMultipleCards__9d597 .firstCardContainer__9d597 .card__9d597 {
   box-shadow: var(--shadow-low);
@@ -42089,12 +42089,8 @@ html:not(.chat-input) .inputInner_b1f01d {
 .full-motion .hasMultipleCards__9d597 .firstCardContainer__9d597 .card__9d597 {
   transition: transform var(--custom-transition-duration) ease-in-out;
 }
-.hasMultipleCards__9d597.cardsList__9d597:focus-within
-  .firstCardContainer__9d597
-  .card__9d597,
-.hasMultipleCards__9d597.cardsList__9d597:hover
-  .firstCardContainer__9d597
-  .card__9d597 {
+.hasMultipleCards__9d597:focus-within .firstCardContainer__9d597 .card__9d597,
+.hasMultipleCards__9d597:hover .firstCardContainer__9d597 .card__9d597 {
   transform: translateY(calc(var(--custom-lift-hover) * -1));
 }
 .backgroundCardContainer__9d597 {
@@ -101851,4 +101847,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7de0d9cce1d1dc95.css.map*/
+/*# sourceMappingURL=12633.b5edccb9eea2c3a4.css.map*/
