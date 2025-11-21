@@ -44435,6 +44435,7 @@ h3.improved__1689b:after {
 .progressContainer__9258b {
   --custom-expressive-progress-height: 4px;
   --custom-background: var(--background-mod-normal);
+  background: var(--custom-background);
   border-radius: 5px;
   height: var(--custom-expressive-progress-height);
   overflow: visible;
@@ -44442,51 +44443,48 @@ h3.improved__1689b:after {
   position: relative;
   width: 100%;
 }
-.progressContainer__9258b:not(.unset__9258b) {
-  background: var(--custom-background);
-}
-.fill__9258b {
-  transition: fill 0.15s ease;
-}
-.fill__9258b:not(.unset__9258b) {
-  fill: var(--custom-gradient-glow);
-}
 .progress__9258b {
+  --custom-min-width: 10px;
   border-radius: 5px;
   height: 100%;
-  min-width: 10px;
+  min-width: var(--custom-min-width);
   overflow: visible;
   position: relative;
   transition: width 0.15s cubic-bezier(0.16, 1, 0.3, 1);
   width: 0;
 }
-.progress__9258b .glow__9258b {
-  opacity: 0;
-  overflow: visible;
+.glow__9258b {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--custom-gradient-glow) 70%, transparent)
+  );
+  border-radius: 20px;
+  filter: blur(3px);
+  height: 16px;
+  inset-inline-end: -3px;
+  max-width: min(100%, 120px);
   position: absolute;
-}
-.progress__9258b .glow__9258b:not(.empty__9258b) {
-  opacity: 1;
-}
-.full-motion .glow__9258b {
-  transition:
-    height 0.15s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.15s ease,
-    opacity 0.05s ease;
-}
-.bar__9258b {
-  border-radius: 5px;
-  height: 100%;
+  top: -6px;
+  transform: perspective(400px) rotateY(-30deg);
+  transform-origin: left center;
   width: 100%;
 }
-.bar__9258b:not(.unset__9258b) {
+.glow__9258b.empty__9258b {
+  max-width: calc(var(--custom-min-width) * 2);
+  width: calc(var(--custom-min-width) * 2);
+}
+.bar__9258b {
   background: linear-gradient(
     90deg,
     var(--custom-gradient-start) 0,
     var(--custom-gradient-end) 100%
   );
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
 }
-.bar__9258b:not(.unset__9258b).empty__9258b {
+.bar__9258b.empty__9258b {
   background: var(--custom-gradient-end);
 }
 .container__16719 {
@@ -101779,4 +101777,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.20eebf292111c63d.css.map*/
+/*# sourceMappingURL=12633.fddbb16a8189c3a4.css.map*/
