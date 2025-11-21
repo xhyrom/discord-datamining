@@ -76845,6 +76845,21 @@ html .invoiceCancelRow__968a4 {
 .avatarWrapper_fb62e2 {
   border-radius: 50%;
 }
+.user-profile-video-tile-background.background_fb62e2 {
+  background: linear-gradient(
+    color-mix(
+      in oklab,
+      var(--profile-gradient-primary-color) 20%,
+      var(--profile-gradient-modal-background-color)
+    ),
+    color-mix(
+        in oklab,
+        var(--profile-gradient-secondary-color) 60%,
+        var(--profile-gradient-modal-background-color)
+      )
+      100%
+  );
+}
 .button_fbcaba {
   line-height: 0;
 }
@@ -101836,4 +101851,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.d59d494000d17eac.css.map*/
+/*# sourceMappingURL=12633.7de0d9cce1d1dc95.css.map*/
