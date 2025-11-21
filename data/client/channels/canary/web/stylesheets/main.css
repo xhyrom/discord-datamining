@@ -44955,7 +44955,7 @@ h2.title_feb59c {
   color: var(--text-code-deletion);
 }
 .markdown_d285a6 {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-user-select: text;
   -moz-user-select: text;
   user-select: text;
@@ -75677,81 +75677,6 @@ html .invoiceCancelRow__968a4 {
   margin-bottom: 20px;
   width: 100%;
 }
-.betaBadge__62691 {
-  color: var(--badge-text-expressive);
-  padding: 0 var(--space-8);
-  text-transform: uppercase;
-}
-.connectedStatus_e56446 {
-  align-items: flex-start;
-  display: flex;
-  gap: var(--space-6);
-  justify-content: flex-start;
-}
-.spinner_e56446 {
-  height: 20px;
-  width: 20px;
-}
-.settingsContainer_ff76ae {
-  background: var(--background-base-lowest);
-  border: 1px solid var(--border-normal);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  position: relative;
-}
-.headerContainer_ff76ae {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-24);
-  padding-bottom: 0;
-}
-.header_ff76ae {
-  border-bottom: 1px solid var(--border-faint);
-  justify-content: space-between;
-  padding-bottom: var(--space-16);
-}
-.header_ff76ae,
-.headerLogos_ff76ae {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-.headerLogos_ff76ae {
-  gap: var(--space-10);
-}
-.headerDivider_ff76ae {
-  background: var(--border-faint);
-  height: 13px;
-  width: 2px;
-}
-.contentContainer_ff76ae {
-  display: flex;
-  gap: var(--space-12);
-  padding: var(--space-24);
-  padding-top: var(--space-12);
-}
-.contentSpacer_ff76ae {
-  flex: 1;
-}
-.content_ff76ae {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  max-width: 400px;
-}
-.ctaContainer_ff76ae {
-  align-items: center;
-  display: flex;
-}
-.spinner_ff76ae {
-  width: auto;
-}
-.subscribeBtnContainer_ff76ae {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-}
 .titleBar__421ed {
   z-index: 3001;
   -webkit-app-region: drag;
@@ -101979,4 +101904,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.0a49f1931c3537d9.css.map*/
+/*# sourceMappingURL=12633.f31d9d66463f02ce.css.map*/
