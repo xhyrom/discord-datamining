@@ -46170,6 +46170,12 @@ svg.radioIcon_c1e9c4 {
 .main_df4c28 {
   display: flex;
 }
+.mainRightLayout_df4c28 {
+  flex-direction: row;
+}
+.mainBottomLayout_df4c28 {
+  flex-direction: column;
+}
 .canvas_df4c28 {
   background-color: var(--background-base-lower);
   flex: 1;
@@ -46179,12 +46185,19 @@ svg.radioIcon_c1e9c4 {
 }
 .controls_df4c28 {
   background: var(--background-base-lowest);
-  width: 300px;
-  -webkit-border-start: 1px solid var(--border-subtle);
-  border-inline-start: 1px solid var(--border-subtle);
   overflow-y: auto;
   padding: var(--space-16);
   padding-bottom: var(--space-24);
+}
+.controlsRight_df4c28 {
+  width: 300px;
+  -webkit-border-start: 1px solid var(--border-subtle);
+  border-inline-start: 1px solid var(--border-subtle);
+}
+.controlsBottom_df4c28 {
+  max-height: 300px;
+  -webkit-border-before: 1px solid var(--border-subtle);
+  border-block-start: 1px solid var(--border-subtle);
 }
 .controlsSection_df4c28 {
   margin-bottom: 24px;
@@ -77562,6 +77575,125 @@ html.disable-forced-colors * {
 .closeCircle__2a891:hover {
   color: var(--interactive-hover);
 }
+.debugToolsPanel__50163 {
+  background: var(--background-base-low);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  gap: 25px;
+  height: 100%;
+  inset-inline-end: 0;
+  max-width: 350px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.header__50163 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-16);
+  justify-content: space-between;
+  padding-top: var(--space-16);
+  padding-inline: var(--space-12);
+}
+.headerTextContainer__50163 {
+  gap: var(--space-8);
+}
+.body__50163,
+.headerTextContainer__50163 {
+  display: flex;
+  flex-direction: column;
+}
+.body__50163 {
+  flex-grow: 1;
+  gap: var(--space-16);
+  padding-inline: var(--space-12);
+}
+.footer__50163 {
+  border-top: 1px solid var(--border-normal);
+}
+.categoryContainer__50163,
+.footer__50163 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-16);
+}
+.categoryContainer__50163 {
+  background-color: var(--background-mod-subtle);
+  border-radius: var(--radius-sm);
+}
+.categoryHeader__50163 {
+  align-items: center;
+}
+.categoryHeader__50163,
+.statusRow__50163 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+}
+.statusRow__50163 {
+  align-items: start;
+}
+.statusTextContainer__50163 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+.iconGood__50163 {
+  fill: var(--icon-feedback-positive);
+}
+.iconBad__50163 {
+  fill: var(--icon-feedback-critical);
+}
+.statusIcon__50163 {
+  flex-shrink: 0;
+}
+.calloutBox__50163 {
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  padding: var(--space-8);
+}
+.tabBar__50163 {
+  border-bottom: 1px solid var(--border-subtle);
+  max-width: calc(100% - 60px);
+}
+.tabBar__50163.vertical__50163 {
+  border-bottom: none;
+  gap: var(--space-16);
+}
+.tab__50163 {
+  align-items: center;
+  display: flex;
+  flex-shrink: 1;
+  gap: var(--space-8);
+  padding-bottom: var(--space-12);
+}
+.tab__50163.vertical__50163 {
+  border-radius: 0;
+  -webkit-border-start: 1px solid var(--border-subtle);
+  border-inline-start: 1px solid var(--border-subtle);
+}
+.tab__50163.vertical__50163.selected__50163 {
+  color: var(--text-brand);
+  -webkit-border-start: 2px solid var(--text-brand);
+  border-inline-start: 2px solid var(--text-brand);
+  -webkit-margin-start: -1px;
+  margin-inline-start: -1px;
+}
+.spinner__50163 {
+  margin-inline: var(--space-96);
+}
 .container_cc53de {
   background-color: var(--background-surface-highest);
   border-radius: var(--radius-sm);
@@ -101847,4 +101979,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b5edccb9eea2c3a4.css.map*/
+/*# sourceMappingURL=12633.0a49f1931c3537d9.css.map*/
