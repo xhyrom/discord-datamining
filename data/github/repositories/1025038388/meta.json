@@ -30,7 +30,7 @@
   "url": "https://api.github.com/repos/discord/rules_elixir",
   "created_at": "2025-07-23T16:13:30Z",
   "homepage": "",
-  "size": 579,
+  "size": 617,
   "language": "Starlark",
   "has_issues": true,
   "has_projects": true,
