@@ -6360,14 +6360,16 @@
             "slayer_storefront_account_link_clicked"),
           (a.SLAYER_STOREFRONT_GIFT_CODE_CLAIM_CLICKED =
             "slayer_storefront_gift_code_claim_clicked"),
-          (a.SLAYER_SHOP_VIEWED = "slayer_shop_viewed"),
-          (a.SLAYER_SHOP_SCROLLED = "slayer_shop_scrolled"),
-          (a.SLAYER_SHOP_CARD_HOVERED = "slayer_shop_card_hovered"),
-          (a.SLAYER_SHOP_CARD_IMPRESSION = "slayer_shop_card_impression"),
-          (a.SLAYER_SHOP_CARD_ELEMENT_CLICKED =
-            "slayer_shop_card_element_clicked"),
-          (a.SLAYER_SHOP_PDP_ELEMENT_CLICKED =
-            "slayer_shop_pdp_element_clicked"),
+          (a.SLAYER_STOREFRONT_PAGE_VIEWED = "slayer_storefront_page_viewed"),
+          (a.SLAYER_STOREFRONT_PAGE_SCROLLED =
+            "slayer_storefront_page_scrolled"),
+          (a.SLAYER_STOREFRONT_CARD_HOVERED = "slayer_storefront_card_hovered"),
+          (a.SLAYER_STOREFRONT_CARD_IMPRESSION =
+            "slayer_storefront_card_impression"),
+          (a.SLAYER_STOREFRONT_CARD_ELEMENT_CLICKED =
+            "slayer_storefront_card_element_clicked"),
+          (a.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED =
+            "slayer_storefront_pdp_element_clicked"),
           (a.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED =
             "commerce_shop_vc_gift_button_viewed"),
           (a.USER_SERVER_PRIVACY_SETTINGS_ACTION =
@@ -6856,7 +6858,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-bc80e528b75287804167e04cdda0c040d7f81838",
+            release: "discord_web-2ceccefc41b626815a859edcbc10478334afa26c",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6922,8 +6924,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "471800"),
-            o.YA("builtAt", String("1763765507583"));
+            o.YA("buildNumber", "471822"),
+            o.YA("builtAt", String("1763767120315"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -51492,4 +51494,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.0d4a22232a48e43e.js.map
+//# sourceMappingURL=sentry.bbf34b0f4272d6e8.js.map
