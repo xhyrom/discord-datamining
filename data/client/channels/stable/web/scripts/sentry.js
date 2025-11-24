@@ -3441,6 +3441,8 @@
               ),
             BILLING_SUBSCRIPTION_ELIGIBLE_USERS: (t) =>
               "/users/@me/billing/subscriptions/".concat(t, "/eligible-users"),
+            BILLING_SUBSCRIPTION_INVITES: (t) =>
+              "/users/@me/billing/subscriptions/".concat(t, "/invites"),
             BILLING_SUBSCRIPTION_INVITE: (t, e) =>
               "/users/@me/billing/subscriptions/"
                 .concat(t, "/members/")
@@ -4670,6 +4672,7 @@
             QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
             SECURE_FRAMES: "Secure Frames",
             SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
+            CF_WARP: "WARP+",
           }),
           Object.freeze({ GAME_INVITE_FRAGMENT: "/_discord/join?secret=" }),
           Object.freeze({
@@ -6359,11 +6362,16 @@
             "slayer_storefront_account_link_clicked"),
           (a.SLAYER_STOREFRONT_GIFT_CODE_CLAIM_CLICKED =
             "slayer_storefront_gift_code_claim_clicked"),
-          (a.SLAYER_SHOP_VIEWED = "slayer_shop_viewed"),
-          (a.SLAYER_SHOP_CARD_ELEMENT_CLICKED =
-            "slayer_shop_card_element_clicked"),
-          (a.SLAYER_SHOP_PDP_ELEMENT_CLICKED =
-            "slayer_shop_pdp_element_clicked"),
+          (a.SLAYER_STOREFRONT_PAGE_VIEWED = "slayer_storefront_page_viewed"),
+          (a.SLAYER_STOREFRONT_PAGE_SCROLLED =
+            "slayer_storefront_page_scrolled"),
+          (a.SLAYER_STOREFRONT_CARD_HOVERED = "slayer_storefront_card_hovered"),
+          (a.SLAYER_STOREFRONT_CARD_IMPRESSION =
+            "slayer_storefront_card_impression"),
+          (a.SLAYER_STOREFRONT_CARD_ELEMENT_CLICKED =
+            "slayer_storefront_card_element_clicked"),
+          (a.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED =
+            "slayer_storefront_pdp_element_clicked"),
           (a.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED =
             "commerce_shop_vc_gift_button_viewed"),
           (a.USER_SERVER_PRIVACY_SETTINGS_ACTION =
@@ -6853,7 +6861,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-21-a5dffa59ecf35c19fd970891c7ebec921cc193a8-discord_web",
+              "2025-11-24-1e282aa1a9ecf6488894cf98f8006631e4997b2c-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6919,8 +6927,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "471383"),
-            o.YA("builtAt", String("1763713127965"));
+            o.YA("buildNumber", "471979"),
+            o.YA("builtAt", String("1763972384146"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -51489,4 +51497,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.77cd5661218a33bd.js.map
+//# sourceMappingURL=sentry.9d3c0bb11d214971.js.map
