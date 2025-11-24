@@ -6860,7 +6860,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-f05b03c8eef6dc9286909d0af5426e5f49715300",
+            release: "discord_web-97c714efdf723efa759b7981de659c09e14c9581",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6926,8 +6926,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "472052"),
-            o.YA("builtAt", String("1764005311173"));
+            o.YA("buildNumber", "472064"),
+            o.YA("builtAt", String("1764006638107"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -20461,16 +20461,16 @@
             a.I.ILLO_PURPLE_40,
           ],
           "expressive-gradient-tenure-badge-bronze-end": [
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
           ],
           "expressive-gradient-tenure-badge-bronze-start": [
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
           ],
           "expressive-gradient-tenure-badge-diamond-end": [
             a.I.ILLO_PURPLE_50,
@@ -20485,10 +20485,10 @@
             a.I.ILLO_PURPLE_40,
           ],
           "expressive-gradient-tenure-badge-emerald-end": [
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
           ],
           "expressive-gradient-tenure-badge-emerald-start": [
             a.I.ILLO_GREEN_40,
@@ -20515,16 +20515,16 @@
             a.I.BLUE_NEW_50,
           ],
           "expressive-gradient-tenure-badge-opal-start": [
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
           ],
           "expressive-gradient-tenure-badge-platinum-end": [
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
           ],
           "expressive-gradient-tenure-badge-platinum-start": [
             a.I.TEAL_NEW_20,
@@ -51496,4 +51496,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.c0d528f6630844a0.js.map
+//# sourceMappingURL=sentry.9a1cb58129329b28.js.map
