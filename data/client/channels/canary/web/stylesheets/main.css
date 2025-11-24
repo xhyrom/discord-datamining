@@ -38130,6 +38130,17 @@ body .headerAnimation_b54a5b {
   border-radius: var(--radius-sm);
   color: var(--header-primary);
 }
+.intersectionContainer_b52e4f {
+  position: relative;
+}
+.intersectionRef_b52e4f {
+  background: transparent;
+  height: 1px;
+  inset-inline-start: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
 .large_b52e4f,
 .medium_b52e4f,
 .small_b52e4f {
@@ -38175,6 +38186,21 @@ body .headerAnimation_b54a5b {
 .xlarge_b52e4f {
   height: 80px;
   width: 80px;
+}
+@keyframes placeholderPulse_b52e4f {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+.gameIconLoading_b52e4f {
+  animation: placeholderPulse_b52e4f 1.3s ease-in-out infinite;
+  background-color: var(--background-secondary-alt);
 }
 .muted__20a53 .avatar__20a53 {
   opacity: 0.3;
@@ -101903,4 +101929,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.7ddcaefa824f4e16.css.map*/
+/*# sourceMappingURL=12633.ff723fe0f390c0f5.css.map*/
