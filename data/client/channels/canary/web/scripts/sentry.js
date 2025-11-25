@@ -2727,7 +2727,7 @@
       },
       981631: function (t, e, _) {
         "use strict";
-        _.d(e, { rMx: () => O }), _(388685), _(743606);
+        _.d(e, { rMx: () => f }), _(388685), _(743606);
         var a,
           r = _(512722),
           n = _.n(r),
@@ -2739,10 +2739,11 @@
           c = _(860911),
           s = _(70956),
           l = _(188785),
-          I = _(979007),
-          R = _(688357),
-          N = _(526761),
-          A = _(231338);
+          I = _(930955),
+          R = _(979007),
+          N = _(688357),
+          A = _(526761),
+          u = _(231338);
         _(334431),
           Object.freeze({
             SUPPRESS_JOIN_NOTIFICATIONS: 1,
@@ -2758,7 +2759,7 @@
           E.u.THREAD_STARTER_MESSAGE,
           E.u.CONTEXT_MENU_COMMAND,
           Object.freeze({ ACCOUNT_AGE: 5, MEMBER_AGE: 10 });
-        let u = Object.freeze({
+        let T = Object.freeze({
             USER: (t) => "/users/".concat(t),
             USER_RELATIONSHIPS: function () {
               let t =
@@ -4162,7 +4163,7 @@
             GAME_UPDATE: (t) =>
               "/game-updates/".concat(t.gopGameId, "/").concat(t.startDate),
           }),
-          T = Object.freeze({
+          d = Object.freeze({
             INDEX: "/",
             APP: "/app",
             APP_WITH_INVITE_AND_GUILD_ONBOARDING: (t) =>
@@ -4294,7 +4295,7 @@
             GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU: (t, e) =>
               "/discovery/applications/"
                 .concat(t, "/")
-                .concat(I.GlobalDiscoveryAppsSections.STORE, "/")
+                .concat(R.GlobalDiscoveryAppsSections.STORE, "/")
                 .concat(e),
             GLOBAL_DISCOVERY_APPS_SEARCH: "/discovery/applications/search",
             GUILD_MEMBER_VERIFICATION: (t) => "/member-verification/".concat(t),
@@ -4356,7 +4357,7 @@
             APPLICATION_DIRECTORY_PROFILE_STORE_SKU: (t, e) =>
               "/application-directory/"
                 .concat(t, "/")
-                .concat(R.c.STORE, "/")
+                .concat(N.c.STORE, "/")
                 .concat(e),
             APPLICATION_DIRECTORY_SEARCH: "/application-directory/search",
             FAMILY_CENTER: "/family-center",
@@ -4401,8 +4402,8 @@
               "/quest-home?tab=preview_tool&quest_id=".concat(t),
             ICYMI: "/icymi",
           });
-        (0, c.Ft)(u),
-          (0, c.Ft)(T, [":", "?", "@"]),
+        (0, c.Ft)(T),
+          (0, c.Ft)(d, [":", "?", "@"]),
           s.Z.Seconds.HOUR,
           s.Z.Seconds.MINUTE,
           s.Z.Seconds.MINUTE,
@@ -4614,7 +4615,7 @@
             GUILD_ROLE_SUBSCRIPTIONS_CANCEL: "Guild Role Subscription Cancel",
             GUILD_BOOSTING: "Nitro Server Boost",
             WEBAUTHN_VIEW: "View Security Keys",
-            [N.cP]: "Guild Role Subscription",
+            [A.cP]: "Guild Role Subscription",
             BILLING: "Billing",
             EXPERIMENTS: "Experiments",
             DEVELOPER_OPTIONS: "Developer Options",
@@ -4663,6 +4664,7 @@
             FRIEND_REQUESTS: "Friend Requests",
             CLIPS: "Settings Clips",
             COLLECTIBLES_SHOP: "Shop",
+            SWIPE_RIGHT_TO_LEFT: "Swipe Right to Left Setting",
             COLLECTIBLES_SHOP_FEATURED_PAGE: "Collectibles Shop Featured Page",
             COLLECTIBLES_SHOP_VIEW_ALL_CATEGORY_ITEMS:
               "Collectibles Shop View All Category Items",
@@ -4684,8 +4686,8 @@
               "https://play.google.com/store/apps/details?id=com.discord",
           }),
           (0, i.Rf)(0x99aab5);
-        let d = (0, i._i)(o.Z.BRAND_500);
-        n()(null != d, "Brand color could not be parsed"),
+        let O = (0, i._i)(o.Z.BRAND_500);
+        n()(null != O, "Brand color could not be parsed"),
           Object.freeze({ 0: 0, 1: 2, 2: 7, 3: 14 }),
           Object.freeze({
             fonts: [
@@ -4709,7 +4711,7 @@
             ZOOM_MAX: 200,
             ZOOM_SCALES: [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200],
           });
-        var O =
+        var f =
           (((a = {}).APP_OPENED = "app_opened"),
           (a.APP_CRASHED = "app_crashed"),
           (a.APP_BACKGROUND = "app_background"),
@@ -6756,16 +6758,16 @@
             nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
             roblox: "Roblox",
           }),
-          A.pK.USD,
-          A.pK.CAD,
-          A.pK.EUR,
-          A.pK.AUD,
-          A.pK.GBP,
-          A.pK.PHP,
-          A.pK.MYR,
-          A.pK.VND,
-          A.pK.KRW,
-          A.pK.IDR,
+          u.pK.USD,
+          u.pK.CAD,
+          u.pK.EUR,
+          u.pK.AUD,
+          u.pK.GBP,
+          u.pK.PHP,
+          u.pK.MYR,
+          u.pK.VND,
+          u.pK.KRW,
+          u.pK.IDR,
           Object.freeze({
             APPLICATIONS: (t) => (null != t ? "applications/".concat(t) : null),
             APP_PREMIUM_BUTTON: (t) =>
@@ -6788,6 +6790,8 @@
               "user-application-identities/".concat(t),
             ACTIVITIES_DISCORD_CONFIG: (t) =>
               "activities-discord-config/".concat(t),
+            GAME_UPDATE: (t) =>
+              null != t ? "game-update/".concat((0, I.t)(t)) : null,
             __DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU: (t) =>
               null != t ? "useParentSkuData/".concat(t) : null,
           });
@@ -6862,7 +6866,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-72cbd1b0e23a352f3fe23c4abd5490a390b1d21b",
+            release: "discord_web-606111e846d331f76261e0a471da53235f036c89",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6928,12 +6932,19 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "472569"),
-            o.YA("builtAt", String("1764081202969"));
+            o.YA("buildNumber", "472577"),
+            o.YA("builtAt", String("1764083315509"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
         }
+      },
+      930955: function (t, e, _) {
+        "use strict";
+        function a(t) {
+          return "".concat(t.gopGameId, "|").concat(t.startDate);
+        }
+        _.d(e, { t: () => a });
       },
       979007: function (t, e, _) {
         "use strict";
@@ -51498,4 +51509,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.e6f75038ed8f5f2a.js.map
+//# sourceMappingURL=sentry.25d0a6b88371dee0.js.map
