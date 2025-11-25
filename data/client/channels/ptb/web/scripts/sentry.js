@@ -6372,6 +6372,8 @@
             "slayer_storefront_card_element_clicked"),
           (a.SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED =
             "slayer_storefront_pdp_element_clicked"),
+          (a.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED =
+            "slayer_storefront_page_element_clicked"),
           (a.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED =
             "commerce_shop_vc_gift_button_viewed"),
           (a.USER_SERVER_PRIVACY_SETTINGS_ACTION =
@@ -6861,7 +6863,7 @@
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
             release:
-              "2025-11-24-a8d8bd129c02e0b32d3442f2c99afe97ffc8b910-discord_web",
+              "2025-11-25-576a1e40639e28a6cc4a15dd48688457c533cc19-discord_web",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6927,8 +6929,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "472214"),
-            o.YA("builtAt", String("1764018430798"));
+            o.YA("buildNumber", "472545"),
+            o.YA("builtAt", String("1764059046539"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -20462,16 +20464,16 @@
             a.I.ILLO_PURPLE_40,
           ],
           "expressive-gradient-tenure-badge-bronze-end": [
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
-            a.I.ORANGE_NEW_80,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
+            a.I.ILLO_ORANGE_70,
           ],
           "expressive-gradient-tenure-badge-bronze-start": [
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
-            a.I.ILLO_ORANGE_40,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
+            a.I.ILLO_ORANGE_30,
           ],
           "expressive-gradient-tenure-badge-diamond-end": [
             a.I.ILLO_PURPLE_50,
@@ -20486,10 +20488,10 @@
             a.I.ILLO_PURPLE_40,
           ],
           "expressive-gradient-tenure-badge-emerald-end": [
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
-            a.I.ILLO_GREEN_70,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
+            a.I.ILLO_GREEN_60,
           ],
           "expressive-gradient-tenure-badge-emerald-start": [
             a.I.ILLO_GREEN_40,
@@ -20516,16 +20518,16 @@
             a.I.BLUE_NEW_50,
           ],
           "expressive-gradient-tenure-badge-opal-start": [
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
-            a.I.TEAL_NEW_25,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
+            a.I.TEAL_NEW_30,
           ],
           "expressive-gradient-tenure-badge-platinum-end": [
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
-            a.I.TEAL_NEW_74,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
+            a.I.TEAL_NEW_60,
           ],
           "expressive-gradient-tenure-badge-platinum-start": [
             a.I.TEAL_NEW_20,
@@ -51497,4 +51499,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.ab0761348f61357f.js.map
+//# sourceMappingURL=sentry.9f63c4c10bccdee3.js.map
