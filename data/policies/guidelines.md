@@ -231,18 +231,16 @@
         <a href="/" class="nav_brand w-nav-brand"
           ><img
             width="146"
-            data-w-id="f6bae115-40df-f6c0-010e-7dc6a21336eb"
+            loading="lazy"
             alt="Home"
             src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e90ab9506850e8a5dd48e3_Discrod_MainLogo.svg"
-            loading="lazy"
             class="nav_brand_main-logo" />
           <div class="nav_brand_main-black-logo">
             <img
               width="146"
-              data-w-id="f6bae115-40df-f6c0-010e-7dc6a21336ec"
+              loading="lazy"
               alt=""
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ed8194f41d7d8eade32c90_Logo.svg"
-              loading="lazy"
               class="nav_brand_main-black-icon"
             /><img
               width="Auto"
@@ -251,8 +249,8 @@
               src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67ece93be2524af5cf14dc1c_Logo-black-bg.svg"
               class="nav_brand_main-logo-2"
             /><img
-              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
               loading="lazy"
+              src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg"
               alt=""
               class="nav_brand_main-logo-bg"
             /></div
@@ -363,8 +361,8 @@
                       </div>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4dee303240abdd278abf_Egg.webp"
                       loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4dee303240abdd278abf_Egg.webp"
                       alt=""
                       class="nav-dd-decor is-safety"
                     />
@@ -445,8 +443,8 @@
                       </div>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4e92695af76b1f7487a3_Set%201%2015.webp"
                       loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4e92695af76b1f7487a3_Set%201%2015.webp"
                       alt=""
                       class="nav-dd-decor"
                     />
@@ -531,8 +529,8 @@
                       </div>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4b31695af76b1f713594_Discord_Nelly_Pose2_Flying%201.webp"
                       loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4b31695af76b1f713594_Discord_Nelly_Pose2_Flying%201.webp"
                       alt=""
                       class="nav-dd-decor is-support"
                     />
@@ -620,8 +618,8 @@
                       </div>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4c12dbf6be5d792aa920_Clyde%20Cube.webp"
                       loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4c12dbf6be5d792aa920_Clyde%20Cube.webp"
                       alt=""
                       class="nav-dd-decor is-blog"
                     />
@@ -778,8 +776,8 @@
                       </div>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4aae3ee9f2e87506de82_Clyde%20(1).webp"
                       loading="eager"
+                      src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4aae3ee9f2e87506de82_Clyde%20(1).webp"
                       alt=""
                       class="nav-dd-decor is-build"
                     />
@@ -801,18 +799,17 @@
           ><a
             data-track-nav="login"
             data-track="login"
-            data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133744"
             href="https://discord.com/app"
             class="menu-button-login login-button-js abc"
             >Log in</a
           >
         </div>
         <div
-          id="w-node-f6bae115-40df-f6c0-010e-7dc6a2133746-a21336e6"
+          id="w-node-_67393616-e5e7-814a-4677-1dbdb5d2d583-b5d2d520"
           class="nav_burger_button"
         >
           <div
-            data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133747"
+            data-w-id="67393616-e5e7-814a-4677-1dbdb5d2d584"
             class="nav_burger_trigger"
           >
             <div class="close_icon w-embed">
@@ -833,7 +830,7 @@
             </div>
           </div>
           <div
-            data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133749"
+            data-w-id="67393616-e5e7-814a-4677-1dbdb5d2d586"
             class="nav_burger_trigger-black"
           >
             <div class="close_icon w-embed">
@@ -867,7 +864,7 @@
                 ><a
                   href="#"
                   title="Close menu"
-                  data-w-id="f6bae115-40df-f6c0-010e-7dc6a2133750"
+                  data-w-id="67393616-e5e7-814a-4677-1dbdb5d2d58d"
                   class="nav_burger_close w-nav-brand"
                   ><div class="close_icon w-embed">
                     <svg
