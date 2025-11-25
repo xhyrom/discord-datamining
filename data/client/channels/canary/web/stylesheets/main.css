@@ -75075,16 +75075,6 @@ html .invoiceCancelRow__968a4 {
   flex-direction: column;
   gap: 12px;
 }
-.container__138d8 {
-  align-content: center;
-}
-.container__138d8.legacy__138d8 {
-  color: var(--text-muted);
-  padding: var(--space-6) var(--space-10);
-}
-.container__138d8.legacy__138d8:hover {
-  color: var(--text-primary);
-}
 .group_bc4a3e {
   margin-top: 20px;
 }
@@ -102187,4 +102177,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b193430a60e9c534.css.map*/
+/*# sourceMappingURL=12633.df555a5b53caaf4c.css.map*/
