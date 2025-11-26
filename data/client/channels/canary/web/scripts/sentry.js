@@ -855,14 +855,14 @@
             (i.prototype.prev = function () {
               return new i(this.value - BigInt(1));
             });
-          for (var G = [1]; 2 * G[G.length - 1] <= 1e7; )
-            G.push(2 * G[G.length - 1]);
-          var m = G.length,
-            v = G[m - 1];
-          function U(t) {
+          for (var m = [1]; 2 * m[m.length - 1] <= 1e7; )
+            m.push(2 * m[m.length - 1]);
+          var G = m.length,
+            v = m[G - 1];
+          function W(t) {
             return 1e7 >= Math.abs(t);
           }
-          function W(t, e, _) {
+          function U(t, e, _) {
             e = V(e);
             for (
               var r = t.isNegative(),
@@ -894,26 +894,26 @@
           }
           (o.prototype.shiftLeft = function (t) {
             var e = V(t).toJSNumber();
-            if (!U(e)) throw Error(String(e) + " is too large for shifting.");
+            if (!W(e)) throw Error(String(e) + " is too large for shifting.");
             if (e < 0) return this.shiftRight(-e);
             var _ = this;
             if (_.isZero()) return _;
-            for (; e >= m; ) (_ = _.multiply(v)), (e -= m - 1);
-            return _.multiply(G[e]);
+            for (; e >= G; ) (_ = _.multiply(v)), (e -= G - 1);
+            return _.multiply(m[e]);
           }),
             (i.prototype.shiftLeft = E.prototype.shiftLeft =
               o.prototype.shiftLeft),
             (o.prototype.shiftRight = function (t) {
               var e,
                 _ = V(t).toJSNumber();
-              if (!U(_)) throw Error(String(_) + " is too large for shifting.");
+              if (!W(_)) throw Error(String(_) + " is too large for shifting.");
               if (_ < 0) return this.shiftLeft(-_);
-              for (var a = this; _ >= m; ) {
+              for (var a = this; _ >= G; ) {
                 if (a.isZero() || (a.isNegative() && a.isUnit())) return a;
                 (a = (e = D(a, v))[1].isNegative() ? e[0].prev() : e[0]),
-                  (_ -= m - 1);
+                  (_ -= G - 1);
               }
-              return (e = D(a, G[_]))[1].isNegative() ? e[0].prev() : e[0];
+              return (e = D(a, m[_]))[1].isNegative() ? e[0].prev() : e[0];
             }),
             (i.prototype.shiftRight = E.prototype.shiftRight =
               o.prototype.shiftRight),
@@ -922,19 +922,19 @@
             }),
             (i.prototype.not = E.prototype.not = o.prototype.not),
             (o.prototype.and = function (t) {
-              return W(this, t, function (t, e) {
+              return U(this, t, function (t, e) {
                 return t & e;
               });
             }),
             (i.prototype.and = E.prototype.and = o.prototype.and),
             (o.prototype.or = function (t) {
-              return W(this, t, function (t, e) {
+              return U(this, t, function (t, e) {
                 return t | e;
               });
             }),
             (i.prototype.or = E.prototype.or = o.prototype.or),
             (o.prototype.xor = function (t) {
-              return W(this, t, function (t, e) {
+              return U(this, t, function (t, e) {
                 return t ^ e;
               });
             }),
@@ -6866,7 +6866,7 @@
             dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
             autoSessionTracking: !1,
             environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-            release: "discord_web-6c60712a8effe6a336338d674611d73d053b0883",
+            release: "discord_web-b0519c1a39a83136e3658f2b0a2785c25e22535d",
             beforeSend: function (t, e) {
               return !(
                 (null != t.exception &&
@@ -6932,8 +6932,8 @@
             ],
             denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//],
           }),
-            o.YA("buildNumber", "473261"),
-            o.YA("builtAt", String("1764187234171"));
+            o.YA("buildNumber", "473300"),
+            o.YA("builtAt", String("1764189493471"));
           let t = window.GLOBAL_ENV.SENTRY_TAGS;
           if (null != t && "object" == typeof t) for (let e in t) o.YA(e, t[e]);
           return E;
@@ -7134,24 +7134,36 @@
               },
               BACKGROUND_BASE_LOW: {
                 category: "background",
-                [a.DARK]: { raw: "NEUTRAL_66", opacity: 1 },
-                [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "NEUTRAL_95", opacity: 1 },
-                [a.DARKER]: { raw: "NEUTRAL_82", opacity: 1 },
+                [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
+                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
+                gradient: {
+                  light: { color: "WHITE_500", opacity: 0.8 },
+                  dark: { color: "BLACK_500", opacity: 0.7 },
+                },
               },
               BACKGROUND_BASE_LOWER: {
                 category: "background",
-                [a.DARK]: { raw: "NEUTRAL_69", opacity: 1 },
-                [a.LIGHT]: { raw: "NEUTRAL_2", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "NEUTRAL_97", opacity: 1 },
-                [a.DARKER]: { raw: "NEUTRAL_86", opacity: 1 },
+                [a.DARK]: { raw: "PRIMARY_630", opacity: 1 },
+                [a.LIGHT]: { raw: "PRIMARY_130", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
+                gradient: {
+                  light: { color: "WHITE_500", opacity: 0.8 },
+                  dark: { color: "BLACK_500", opacity: 0.7 },
+                },
               },
               BACKGROUND_BASE_LOWEST: {
                 category: "background",
-                [a.DARK]: { raw: "NEUTRAL_73", opacity: 1 },
-                [a.LIGHT]: { raw: "NEUTRAL_4", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "NEUTRAL_100", opacity: 1 },
-                [a.DARKER]: { raw: "NEUTRAL_92", opacity: 1 },
+                [a.DARK]: { raw: "PRIMARY_660", opacity: 1 },
+                [a.LIGHT]: { raw: "PRIMARY_160", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
+                [a.DARKER]: { raw: "PLUM_23", opacity: 1 },
+                gradient: {
+                  light: { color: "WHITE_500", opacity: 0.8 },
+                  dark: { color: "BLACK_500", opacity: 0.7 },
+                },
               },
               BACKGROUND_FEEDBACK_CRITICAL: {
                 category: "background",
@@ -7339,24 +7351,6 @@
                   dark: { color: "WHITE_500", opacity: 0.1 },
                 },
               },
-              BACKGROUND_PRIMARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
-                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
-                gradient: {
-                  light: { color: "WHITE_500", opacity: 0.5 },
-                  dark: { color: "BLACK_500", opacity: 0.5 },
-                },
-              },
-              BACKGROUND_SECONDARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_630", opacity: 1 },
-                [a.LIGHT]: { raw: "PRIMARY_130", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "PLUM_23", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_18", opacity: 1 },
-              },
               BACKGROUND_SECONDARY_ALT: {
                 category: "background",
                 [a.DARK]: { raw: "PRIMARY_660", opacity: 1 },
@@ -7367,13 +7361,6 @@
                   light: { color: "WHITE_500", opacity: 0.5 },
                   dark: { color: "BLACK_500", opacity: 0.5 },
                 },
-              },
-              BACKGROUND_TERTIARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_700", opacity: 1 },
-                [a.LIGHT]: { raw: "PRIMARY_200", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "PLUM_19", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_16", opacity: 1 },
               },
               BACKGROUND_TILE_GRADIENT_PINK_END: {
                 category: "background",
@@ -7437,39 +7424,6 @@
                 [a.LIGHT]: { raw: "BLACK", opacity: 1 },
                 [a.MIDNIGHT]: { raw: "PLUM_19", opacity: 1 },
                 [a.DARKER]: { raw: "BLACK", opacity: 1 },
-              },
-              BG_BASE_PRIMARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_600", opacity: 1 },
-                [a.LIGHT]: { raw: "WHITE", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
-                gradient: {
-                  light: { color: "WHITE_500", opacity: 0.8 },
-                  dark: { color: "BLACK_500", opacity: 0.7 },
-                },
-              },
-              BG_BASE_SECONDARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_630", opacity: 1 },
-                [a.LIGHT]: { raw: "PRIMARY_130", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_20", opacity: 1 },
-                gradient: {
-                  light: { color: "WHITE_500", opacity: 0.8 },
-                  dark: { color: "BLACK_500", opacity: 0.7 },
-                },
-              },
-              BG_BASE_TERTIARY: {
-                category: "background",
-                [a.DARK]: { raw: "PRIMARY_660", opacity: 1 },
-                [a.LIGHT]: { raw: "PRIMARY_160", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "BLACK", opacity: 1 },
-                [a.DARKER]: { raw: "PLUM_23", opacity: 1 },
-                gradient: {
-                  light: { color: "WHITE_500", opacity: 0.8 },
-                  dark: { color: "BLACK_500", opacity: 0.7 },
-                },
               },
               BG_BRAND: {
                 category: "background",
@@ -9884,10 +9838,10 @@
               },
               GRADIENT_PROGRESS_PILL_BACKGROUND: {
                 category: "generic",
-                [a.DARK]: { raw: "NEUTRAL_45", opacity: 1 },
-                [a.LIGHT]: { raw: "NEUTRAL_18", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "NEUTRAL_63", opacity: 1 },
-                [a.DARKER]: { raw: "NEUTRAL_56", opacity: 1 },
+                [a.DARK]: { raw: "NEUTRAL_46", opacity: 1 },
+                [a.LIGHT]: { raw: "NEUTRAL_17", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "NEUTRAL_66", opacity: 1 },
+                [a.DARKER]: { raw: "NEUTRAL_57", opacity: 1 },
               },
               GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND: {
                 category: "generic",
@@ -10056,9 +10010,9 @@
               },
               INPUT_BORDER_CRITICAL_HOVER: {
                 category: "background",
-                [a.DARK]: { raw: "RED_NEW_22", opacity: 1 },
+                [a.DARK]: { raw: "RED_NEW_24", opacity: 1 },
                 [a.LIGHT]: { raw: "RED_NEW_54", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "RED_NEW_37", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "RED_NEW_40", opacity: 1 },
                 [a.DARKER]: { raw: "RED_NEW_32", opacity: 1 },
               },
               INPUT_ERROR_BACKGROUND: {
@@ -10098,9 +10052,9 @@
               },
               INPUT_FOREGROUND_DEFAULT: {
                 category: "background",
-                [a.DARK]: { raw: "NEUTRAL_9", opacity: 1 },
-                [a.LIGHT]: { raw: "NEUTRAL_69", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "NEUTRAL_10", opacity: 1 },
+                [a.DARK]: { raw: "NEUTRAL_12", opacity: 1 },
+                [a.LIGHT]: { raw: "NEUTRAL_72", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "NEUTRAL_12", opacity: 1 },
                 [a.DARKER]: { raw: "NEUTRAL_5", opacity: 1 },
               },
               INPUT_PLACEHOLDER_TEXT: {
@@ -10239,10 +10193,10 @@
               },
               NOTICE_BACKGROUND_POSITIVE: {
                 category: "generic",
-                [a.DARK]: { raw: "GREEN_NEW_76", opacity: 1 },
+                [a.DARK]: { raw: "GREEN_NEW_78", opacity: 1 },
                 [a.LIGHT]: { raw: "GREEN_NEW_1", opacity: 1 },
-                [a.MIDNIGHT]: { raw: "GREEN_NEW_96", opacity: 1 },
-                [a.DARKER]: { raw: "GREEN_NEW_87", opacity: 1 },
+                [a.MIDNIGHT]: { raw: "GREEN_NEW_99", opacity: 1 },
+                [a.DARKER]: { raw: "GREEN_NEW_88", opacity: 1 },
               },
               OVERLAY_BACKDROP_DEFAULT: {
                 category: "generic",
@@ -18079,18 +18033,6 @@
             a.I.BLACK,
             a.I.PLUM_22,
           ],
-          "background-primary": [
-            a.I.NEUTRAL_66,
-            a.I.NEUTRAL_2,
-            a.I.NEUTRAL_95,
-            a.I.NEUTRAL_82,
-          ],
-          "background-secondary": [
-            a.I.NEUTRAL_69,
-            a.I.NEUTRAL_2,
-            a.I.NEUTRAL_97,
-            a.I.NEUTRAL_86,
-          ],
           "background-secondary-alt": [
             a.I.PRIMARY_660,
             a.I.PRIMARY_160,
@@ -18114,12 +18056,6 @@
             a.I.NEUTRAL_1,
             a.I.NEUTRAL_83,
             a.I.NEUTRAL_73,
-          ],
-          "background-tertiary": [
-            a.I.NEUTRAL_73,
-            a.I.NEUTRAL_4,
-            a.I.NEUTRAL_100,
-            a.I.NEUTRAL_92,
           ],
           "background-tile-gradient-pink-end": [
             a.I.ILLO_PINK_70,
@@ -18181,24 +18117,6 @@
             a.I.BLACK,
             a.I.PLUM_19,
             a.I.BLACK,
-          ],
-          "bg-base-primary": [
-            a.I.NEUTRAL_66,
-            a.I.NEUTRAL_2,
-            a.I.NEUTRAL_95,
-            a.I.NEUTRAL_82,
-          ],
-          "bg-base-secondary": [
-            a.I.NEUTRAL_69,
-            a.I.NEUTRAL_2,
-            a.I.NEUTRAL_97,
-            a.I.NEUTRAL_86,
-          ],
-          "bg-base-tertiary": [
-            a.I.NEUTRAL_73,
-            a.I.NEUTRAL_4,
-            a.I.NEUTRAL_100,
-            a.I.NEUTRAL_92,
           ],
           "bg-brand": [
             a.I.BLURPLE_50,
@@ -26305,8 +26223,8 @@
             },
             g = Math.round,
             y = E.unpack,
-            G = Math.round,
-            m = function () {
+            m = Math.round,
+            G = function () {
               for (var t, e, _, a, r = [], n = arguments.length; n--; )
                 r[n] = arguments[n];
               var o = (r = y(r, "hsl"))[0],
@@ -26330,16 +26248,16 @@
                         : 3 * c[N] < 2
                           ? (s[N] = l + (I - l) * (2 / 3 - c[N]) * 6)
                           : (s[N] = l);
-                (e = (t = [G(255 * s[0]), G(255 * s[1]), G(255 * s[2])])[0]),
+                (e = (t = [m(255 * s[0]), m(255 * s[1]), m(255 * s[2])])[0]),
                   (_ = t[1]),
                   (a = t[2]);
               }
               return r.length > 3 ? [e, _, a, r[3]] : [e, _, a, 1];
             },
             v = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
-            U =
-              /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
             W =
+              /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
+            U =
               /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
             b =
               /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
@@ -26357,11 +26275,11 @@
                 for (var e, _ = e.slice(1, 4), a = 0; a < 3; a++) _[a] = +_[a];
                 return (_[3] = 1), _;
               }
-              if ((e = t.match(U))) {
+              if ((e = t.match(W))) {
                 for (var r = e.slice(1, 5), n = 0; n < 4; n++) r[n] = +r[n];
                 return r;
               }
-              if ((e = t.match(W))) {
+              if ((e = t.match(U))) {
                 for (var o = e.slice(1, 4), E = 0; E < 3; E++)
                   o[E] = Y(2.55 * o[E]);
                 return (o[3] = 1), o;
@@ -26374,21 +26292,21 @@
               if ((e = t.match(w))) {
                 var I = e.slice(1, 4);
                 (I[1] *= 0.01), (I[2] *= 0.01);
-                var l = m(I);
+                var l = G(I);
                 return (l[3] = 1), l;
               }
               if ((e = t.match(M))) {
                 var R = e.slice(1, 4);
                 (R[1] *= 0.01), (R[2] *= 0.01);
-                var N = m(R);
+                var N = G(R);
                 return (N[3] = +e[4]), N;
               }
             };
           B.test = function (t) {
             return (
               v.test(t) ||
-              U.test(t) ||
               W.test(t) ||
+              U.test(t) ||
               b.test(t) ||
               w.test(t) ||
               M.test(t)
@@ -26718,7 +26636,7 @@
                 [null].concat(t, ["hsl"]),
               ))();
             }),
-            (i.format.hsl = m),
+            (i.format.hsl = G),
             i.autodetect.push({
               p: 2,
               test: function () {
@@ -26820,11 +26738,11 @@
             tS = 0.95047,
             tg = 1,
             ty = 1.08883,
-            tG = 0.137931034,
-            tm = 0.206896552,
+            tm = 0.137931034,
+            tG = 0.206896552,
             tv = 0.12841855,
-            tU = 0.008856452,
-            tW = E.unpack,
+            tW = 0.008856452,
+            tU = E.unpack,
             tb = Math.pow,
             tw = function (t) {
               return (t /= 255) <= 0.04045
@@ -26832,12 +26750,12 @@
                 : tb((t + 0.055) / 1.055, 2.4);
             },
             tM = function (t) {
-              return t > tU ? tb(t, 1 / 3) : t / tv + tG;
+              return t > tW ? tb(t, 1 / 3) : t / tv + tm;
             },
             tY = function () {
               for (var t, e, _, a = [], r = arguments.length; r--; )
                 a[r] = arguments[r];
-              var n = tW(a, "rgb"),
+              var n = tU(a, "rgb"),
                 o =
                   ((t = n[0]),
                   (e = n[1]),
@@ -26867,7 +26785,7 @@
               );
             },
             tk = function (t) {
-              return t > tm ? t * t * t : tv * (t - tG);
+              return t > tG ? t * t * t : tv * (t - tm);
             },
             tx = function () {
               for (var t, e, _, a, r = [], n = arguments.length; n--; )
@@ -27406,15 +27324,15 @@
           var eS = E.unpack,
             eg = E.unpack,
             ey = E.unpack,
-            eG = E.type,
-            em = function () {
+            em = E.type,
+            eG = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
               var _ = eS(t, "rgb"),
                 a = ed(_[0], _[1], _[2]);
               return tJ(a[0], a[1], a[2]);
             };
           (l.prototype.oklch = function () {
-            return em(this._rgb);
+            return eG(this._rgb);
           }),
             (R.oklch = function () {
               for (var t = [], e = arguments.length; e--; ) t[e] = arguments[e];
@@ -27434,7 +27352,7 @@
               test: function () {
                 for (var t = [], e = arguments.length; e--; )
                   t[e] = arguments[e];
-                if ("array" === eG((t = ey(t, "oklch"))) && 3 === t.length)
+                if ("array" === em((t = ey(t, "oklch"))) && 3 === t.length)
                   return "oklch";
               },
             });
@@ -27470,10 +27388,10 @@
               if (n > -1) return r[n];
               throw Error("unknown channel " + a + " in mode " + _);
             });
-          var eU = E.type,
-            eW = Math.pow;
+          var eW = E.type,
+            eU = Math.pow;
           l.prototype.luminance = function (t) {
-            if (void 0 !== t && "number" === eU(t)) {
+            if (void 0 !== t && "number" === eW(t)) {
               if (0 === t) return new l([0, 0, 0, this._rgb[3]], "rgb");
               if (1 === t) return new l([255, 255, 255, this._rgb[3]], "rgb");
               var e = this.luminance(),
@@ -27505,7 +27423,7 @@
             ew = function (t) {
               return (t /= 255) <= 0.03928
                 ? t / 12.92
-                : eW((t + 0.055) / 1.055, 2.4);
+                : eU((t + 0.055) / 1.055, 2.4);
             },
             eM = {},
             eY = E.type,
@@ -28223,20 +28141,20 @@
                         y < _;
                         y++
                       ) {
-                        var G = _i(p[y] - D);
-                        G < S && ((S = G), (g = y)), O[g]++, (d[h] = g);
+                        var m = _i(p[y] - D);
+                        m < S && ((S = m), (g = y)), O[g]++, (d[h] = g);
                       }
-                    for (var m = Array(_), v = 0; v < _; v++) m[v] = null;
-                    for (var U = 0; U < T; U++)
-                      null === m[(u = d[U])] ? (m[u] = o[U]) : (m[u] += o[U]);
-                    for (var W = 0; W < _; W++) m[W] *= 1 / O[W];
+                    for (var G = Array(_), v = 0; v < _; v++) G[v] = null;
+                    for (var W = 0; W < T; W++)
+                      null === G[(u = d[W])] ? (G[u] = o[W]) : (G[u] += o[W]);
+                    for (var U = 0; U < _; U++) G[U] *= 1 / O[U];
                     L = !1;
                     for (var b = 0; b < _; b++)
-                      if (m[b] !== p[b]) {
+                      if (G[b] !== p[b]) {
                         L = !0;
                         break;
                       }
-                    (p = m), ++f > 200 && (L = !1);
+                    (p = G), ++f > 200 && (L = !1);
                   }
                   for (var w = {}, M = 0; M < _; M++) w[M] = [];
                   for (var Y = 0; Y < T; Y++) w[(u = d[Y])].push(o[Y]);
@@ -28864,13 +28782,13 @@
                   0.24 * _T(o(2 * g)) +
                   0.32 * _T(o(3 * g + 6)) -
                   0.2 * _T(o(4 * g - 63)),
-                G = S - D;
-              (G = 180 >= _u(G) ? G : S <= D ? G + 360 : G - 360),
-                (G = 2 * _I(f * p) * _d(o(G) / 2));
-              var m = p - f,
+                m = S - D;
+              (m = 180 >= _u(m) ? m : S <= D ? m + 360 : m - 360),
+                (m = 2 * _I(f * p) * _d(o(m) / 2));
+              var G = p - f,
                 v = 1 + (0.015 * _l(u - 50, 2)) / _I(20 + _l(u - 50, 2)),
-                U = 1 + 0.045 * C,
-                W = 1 + 0.015 * C * y,
+                W = 1 + 0.045 * C,
+                U = 1 + 0.015 * C * y,
                 b = 30 * _O(-_l((g - 275) / 25, 2)),
                 w = -(2 * _I(_l(C, 7) / (_l(C, 7) + _l(25, 7)))) * _d(2 * o(b));
               return _N(
@@ -28879,9 +28797,9 @@
                   100,
                   _I(
                     _l((R - i) / (_ * v), 2) +
-                      _l(m / (a * U), 2) +
-                      _l(G / (r * W), 2) +
-                      (m / (a * U)) * w * (G / (r * W)),
+                      _l(G / (a * W), 2) +
+                      _l(m / (r * U), 2) +
+                      (G / (a * W)) * w * (m / (r * U)),
                   ),
                 ),
               );
@@ -29695,9 +29613,9 @@
           var S,
             g,
             y,
-            G = function (t) {
+            m = function (t) {
               if (t === N && b) return b;
-              if (!L && t && t in U) return U[t];
+              if (!L && t && t in W) return W[t];
               switch (t) {
                 case p:
                 case C:
@@ -29710,36 +29628,36 @@
                 return new _(this);
               };
             },
-            m = e + " Iterator",
+            G = e + " Iterator",
             v = !1,
-            U = t.prototype,
-            W = U[f] || U["@@iterator"] || (N && U[N]),
-            b = (!L && W) || G(N),
-            w = ("Array" === e && U.entries) || W;
+            W = t.prototype,
+            U = W[f] || W["@@iterator"] || (N && W[N]),
+            b = (!L && U) || m(N),
+            w = ("Array" === e && W.entries) || U;
           if (
             (w &&
               (S = c(w.call(new t()))) !== Object.prototype &&
               S.next &&
               (!n && c(S) !== O && (s ? s(S, O) : E(S[f]) || R(S, f, h)),
-              I(S, m, !0, !0),
-              n && (A[m] = h)),
+              I(S, G, !0, !0),
+              n && (A[G] = h)),
             T &&
               N === C &&
-              W &&
-              W.name !== C &&
+              U &&
+              U.name !== C &&
               (!n && d
-                ? l(U, "name", C)
+                ? l(W, "name", C)
                 : ((v = !0),
                   (b = function () {
-                    return r(W, this);
+                    return r(U, this);
                   }))),
             N)
           )
-            if (((g = { values: G(C), keys: u ? b : G(p), entries: G(P) }), D))
-              for (y in g) (!L && !v && y in U) || R(U, y, g[y]);
+            if (((g = { values: m(C), keys: u ? b : m(p), entries: m(P) }), D))
+              for (y in g) (!L && !v && y in W) || R(W, y, g[y]);
             else a({ target: e, proto: !0, forced: L || v }, g);
           return (
-            (!n || D) && U[f] !== b && R(U, f, b, { name: N }), (A[e] = b), g
+            (!n || D) && W[f] !== b && R(W, f, b, { name: N }), (A[e] = b), g
           );
         };
       },
@@ -30212,24 +30130,24 @@
               S = C && this.sticky,
               g = n(i, this),
               y = this.source,
-              G = 0,
-              m = N;
+              m = 0,
+              G = N;
             if (
               (S &&
                 (-1 === O((g = L(g, "y", "")), "g") && (g += "g"),
-                (m = f(N, this.lastIndex)),
+                (G = f(N, this.lastIndex)),
                 this.lastIndex > 0 &&
                   (!this.multiline ||
                     (this.multiline && "\n" !== d(N, this.lastIndex - 1))) &&
-                  ((y = "(?: " + y + ")"), (m = " " + m), G++),
+                  ((y = "(?: " + y + ")"), (G = " " + G), m++),
                 (_ = RegExp("^(?:" + y + ")", g))),
               P && (_ = RegExp("^" + y + "$(?!\\s)", g)),
               p && (a = this.lastIndex),
-              (r = n(u, S ? _ : this, m)),
+              (r = n(u, S ? _ : this, G)),
               S
                 ? r
-                  ? ((r.input = f(r.input, G)),
-                    (r[0] = f(r[0], G)),
+                  ? ((r.input = f(r.input, m)),
+                    (r[0] = f(r[0], m)),
                     (r.index = this.lastIndex),
                     (this.lastIndex += r[0].length))
                   : (this.lastIndex = 0)
@@ -31123,7 +31041,7 @@
             SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE: () => r.TE,
             SEMANTIC_ATTRIBUTE_SENTRY_SOURCE: () => r.Zj,
             Scope: () => n.s,
-            WINDOW: () => W.m9,
+            WINDOW: () => U.m9,
             addBreadcrumb: () => o.n,
             addEventProcessor: () => E.Qy,
             addIntegration: () => i.M5,
@@ -31205,12 +31123,12 @@
             setExtra: () => E.sU,
             setExtras: () => E.rJ,
             setHttpStatus: () => f.Q0,
-            setMeasurement: () => G.o,
+            setMeasurement: () => m.o,
             setTag: () => E.YA,
             setTags: () => E.mG,
             setUser: () => E.av,
             showReportDialog: () => H.jp,
-            spanToBaggageHeader: () => m.uc,
+            spanToBaggageHeader: () => G.uc,
             spanToJSON: () => d.XU,
             spanToTraceHeader: () => d.Hb,
             startBrowserTracingNavigationSpan: () => ta.og,
@@ -31225,7 +31143,7 @@
             withActiveSpan: () => l._d,
             withIsolationScope: () => O.wi,
             withScope: () => O.$e,
-            zodErrorsIntegration: () => U.i,
+            zodErrorsIntegration: () => W.i,
           });
         var a = _(452896),
           r = _(988097),
@@ -31254,11 +31172,11 @@
           S = _(757502),
           g = _(726318),
           y = _(511906),
-          G = _(241225),
-          m = _(305625),
+          m = _(241225),
+          G = _(305625),
           v = _(925746),
-          U = _(93198),
-          W = _(163162),
+          W = _(93198),
+          U = _(163162),
           b = _(833772),
           w = _(387486),
           M = _(297117),
@@ -32274,9 +32192,9 @@
           GC: () => v,
           WU: () => D,
           db: () => p,
-          dz: () => U,
+          dz: () => W,
           nm: () => y,
-          ph: () => m,
+          ph: () => G,
           x5: () => f,
         });
         var a = _(559508),
@@ -32615,18 +32533,18 @@
             ],
           };
         }
-        let G = new Map();
-        function m() {
-          return G.size;
+        let m = new Map();
+        function G() {
+          return m.size;
         }
         function v(t) {
-          let e = G.get(t);
-          return e && G.delete(t), e;
+          let e = m.get(t);
+          return e && m.delete(t), e;
         }
-        function U(t, e) {
-          if ((G.set(t, e), G.size > 30)) {
-            let t = G.keys().next().value;
-            G.delete(t);
+        function W(t, e) {
+          if ((m.set(t, e), m.size > 30)) {
+            let t = m.keys().next().value;
+            m.delete(t);
           }
         }
       },
@@ -32634,7 +32552,7 @@
         "use strict";
         _.d(e, {
           Eg: () => g,
-          Jd: () => G,
+          Jd: () => m,
           S1: () => D,
           jp: () => S,
           lA: () => y,
@@ -32796,7 +32714,7 @@
         function y(t) {
           t();
         }
-        function G(t) {
+        function m(t) {
           let e = (0, i.s3)();
           e && e.captureUserFeedback(t);
         }
@@ -32991,11 +32909,11 @@
                 finalTimeout: S,
                 childSpanTimeout: g,
                 markBackgroundSpan: y,
-                traceFetch: G,
-                traceXHR: m,
+                traceFetch: m,
+                traceXHR: G,
                 shouldCreateSpanForRequest: v,
-                enableHTTPTimings: U,
-                instrumentPageLoad: W,
+                enableHTTPTimings: W,
+                instrumentPageLoad: U,
                 instrumentNavigation: b,
               } = { ...f, ...t },
               w = (0, a.PR)();
@@ -33088,7 +33006,7 @@
                     });
                   }),
                   d.m9.location &&
-                    (W &&
+                    (U &&
                       C(t, {
                         name: d.m9.location.pathname,
                         startTime: N.Z1 ? N.Z1 / 1e3 : void 0,
@@ -33166,12 +33084,12 @@
                       )),
                   e && (0, r.D)(),
                   (0, L.L7)(t, {
-                    traceFetch: G,
-                    traceXHR: m,
+                    traceFetch: m,
+                    traceXHR: G,
                     tracePropagationTargets:
                       t.getOptions().tracePropagationTargets,
                     shouldCreateSpanForRequest: v,
-                    enableHTTPTimings: U,
+                    enableHTTPTimings: W,
                   });
               },
             };
@@ -33249,7 +33167,7 @@
                   return e ? (0, T.U0)(t, e) : _;
                 }
               })(t, D),
-            G = {};
+            m = {};
           _ &&
             (t.addEventProcessor(
               (t) => (
@@ -33271,7 +33189,7 @@
               }
             }),
             (0, N.Uf)((t) => {
-              let e = (0, n.m)(t, g, y, G);
+              let e = (0, n.m)(t, g, y, m);
               if (
                 (t.response &&
                   t.fetchData.__span &&
@@ -33350,7 +33268,7 @@
                       })(n, C, (0, E.z)() && f ? p : void 0),
                     p
                   );
-                })(t, g, y, G);
+                })(t, g, y, m);
                 P && e && h(e);
               });
         }
@@ -36427,13 +36345,13 @@ Event: ${(0, r.jH)(c)}`),
           function y() {
             _ && (clearTimeout(_), (_ = void 0));
           }
-          function G(t) {
+          function m(t) {
             y(),
               (_ = setTimeout(() => {
                 !T && 0 === u.size && O && ((d = "idleTimeout"), g.end(t));
               }, f));
           }
-          function m(t) {
+          function G(t) {
             _ = setTimeout(() => {
               !T && O && ((d = "heartbeatFailed"), g.end(t));
             }, C);
@@ -36505,7 +36423,7 @@ Event: ${(0, r.jH)(c)}`),
                     ((e = t.spanContext().spanId),
                     y(),
                     u.set(e, !0),
-                    m((0, a.ph)() + C / 1e3)));
+                    G((0, a.ph)() + C / 1e3)));
               }),
             ),
             L.push(
@@ -36514,16 +36432,16 @@ Event: ${(0, r.jH)(c)}`),
                   var e;
                   (e = t.spanContext().spanId),
                     u.has(e) && u.delete(e),
-                    0 === u.size && G((0, a.ph)() + f / 1e3);
+                    0 === u.size && m((0, a.ph)() + f / 1e3);
                 }
               }),
             ),
             L.push(
               h.on("idleSpanEnableAutoFinish", (t) => {
-                t === g && ((O = !0), G(), u.size && m());
+                t === g && ((O = !0), m(), u.size && G());
               }),
             ),
-            e.disableAutoFinish || G(),
+            e.disableAutoFinish || m(),
             setTimeout(() => {
               T ||
                 (g.setStatus({ code: l.jt, message: "deadline_exceeded" }),
@@ -36982,14 +36900,14 @@ Event: ${(0, r.jH)(c)}`),
           f = _(881243);
         let p = "__SENTRY_SUPPRESS_TRACING__";
         function C(t, e) {
-          let _ = m();
+          let _ = G();
           if (_.startSpan) return _.startSpan(t, e);
-          let a = G(t),
+          let a = m(t),
             { forceTransaction: r, parentSpan: n } = t;
           return (0, E.$e)(t.scope, () =>
-            W(n)(() => {
+            U(n)(() => {
               let _ = (0, E.nZ)(),
-                n = U(_),
+                n = W(_),
                 o =
                   t.onlyIfParent && !n
                     ? new d.b()
@@ -37016,14 +36934,14 @@ Event: ${(0, r.jH)(c)}`),
           );
         }
         function P(t, e) {
-          let _ = m();
+          let _ = G();
           if (_.startSpanManual) return _.startSpanManual(t, e);
-          let a = G(t),
+          let a = m(t),
             { forceTransaction: r, parentSpan: n } = t;
           return (0, E.$e)(t.scope, () =>
-            W(n)(() => {
+            U(n)(() => {
               let _ = (0, E.nZ)(),
-                n = U(_),
+                n = W(_),
                 o =
                   t.onlyIfParent && !n
                     ? new d.b()
@@ -37052,9 +36970,9 @@ Event: ${(0, r.jH)(c)}`),
           );
         }
         function h(t) {
-          let e = m();
+          let e = G();
           if (e.startInactiveSpan) return e.startInactiveSpan(t);
-          let _ = G(t),
+          let _ = m(t),
             { forceTransaction: a, parentSpan: r } = t;
           return (
             t.scope
@@ -37064,7 +36982,7 @@ Event: ${(0, r.jH)(c)}`),
                 : (t) => t()
           )(() => {
             let e = (0, E.nZ)(),
-              r = U(e);
+              r = W(e);
             return t.onlyIfParent && !r
               ? new d.b()
               : y({
@@ -37081,7 +36999,7 @@ Event: ${(0, r.jH)(c)}`),
             return r.setPropagationContext(n), _();
           });
         function S(t, e) {
-          let _ = m();
+          let _ = G();
           return _.withActiveSpan
             ? _.withActiveSpan(t, e)
             : (0, E.$e)((_) => ((0, R.D)(_, t || void 0), e(_)));
@@ -37142,7 +37060,7 @@ Event: ${(0, r.jH)(c)}`),
           }
           return (0, u.Z)(r), (0, f.YJ)(r, a, n), r;
         }
-        function G(t) {
+        function m(t) {
           let e = { isStandalone: (t.experimental || {}).standalone, ...t };
           if (t.startTime) {
             let _ = { ...e };
@@ -37152,7 +37070,7 @@ Event: ${(0, r.jH)(c)}`),
           }
           return e;
         }
-        function m() {
+        function G() {
           let t = (0, o.c)();
           return (0, i.G)(t);
         }
@@ -37179,7 +37097,7 @@ Event: ${(0, r.jH)(c)}`),
             I
           );
         }
-        function U(t) {
+        function W(t) {
           let e = (0, R.Y)(t);
           if (!e) return;
           let _ = (0, E.s3)();
@@ -37187,7 +37105,7 @@ Event: ${(0, r.jH)(c)}`),
             ? (0, N.Gx)(e)
             : e;
         }
-        function W(t) {
+        function U(t) {
           return void 0 !== t ? (e) => S(t, e) : (t) => t();
         }
       },
@@ -37849,7 +37767,7 @@ Event: ${(0, r.jH)(c)}`),
           j5: () => h,
           ve: () => R,
           wy: () => u,
-          yc: () => G,
+          yc: () => m,
         });
         var a = _(370336),
           r = _(370541),
@@ -37973,7 +37891,7 @@ Event: ${(0, r.jH)(c)}`),
             e = (0, o.G)(t);
           return e.getActiveSpan ? e.getActiveSpan() : (0, l.Y)((0, i.nZ)());
         }
-        function G(t, e, _, a, r, n) {
+        function m(t, e, _, a, r, n) {
           let o = y();
           o && (0, c.V)(o, t, e, _, a, r, n);
         }
@@ -40501,7 +40419,7 @@ Error:`,
                 e = L.getScopeData().contexts.profile.profile_id;
               } catch (t) {}
               let y = (0, i.Rt)(I.target),
-                G = (0, c.Jr)({
+                m = (0, c.Jr)({
                   release: T.release,
                   environment: T.environment,
                   transaction: P,
@@ -40513,15 +40431,15 @@ Error:`,
                   "user_agent.original":
                     s.m.navigator && s.m.navigator.userAgent,
                 }),
-                m = (0, o.qp)({
+                G = (0, o.qp)({
                   name: y,
                   op: `ui.interaction.${A}`,
-                  attributes: G,
+                  attributes: m,
                   startTime: d,
                   experimental: { standalone: !0 },
                 });
-              m.addEvent("inp", { [n.E1]: "millisecond", [n.Wb]: t.value }),
-                m.end(d + O);
+              G.addEvent("inp", { [n.E1]: "millisecond", [n.Wb]: t.value }),
+                G.end(d + O);
             });
             return () => {
               t();
@@ -40585,7 +40503,7 @@ Error:`,
           YF: () => C,
           _4: () => p,
           _j: () => P,
-          cN: () => W,
+          cN: () => U,
           to: () => f,
         });
         var i = _(622916),
@@ -40600,19 +40518,19 @@ Error:`,
         let T = {},
           d = {};
         function O(t, e = !1) {
-          return m("cls", t, D, a, e);
+          return G("cls", t, D, a, e);
         }
         function L(t, e = !1) {
-          return m("lcp", t, g, n, e);
+          return G("lcp", t, g, n, e);
         }
         function f(t) {
-          return m("fid", t, S, r);
+          return G("fid", t, S, r);
         }
         function p(t) {
-          return m("ttfb", t, y, o);
+          return G("ttfb", t, y, o);
         }
         function C(t) {
-          return m("inp", t, G, E);
+          return G("inp", t, m, E);
         }
         function P(t, e) {
           return (
@@ -40630,7 +40548,7 @@ Error:`,
                   );
               })(t),
               (d[t] = !0)),
-            U(t, e)
+            W(t, e)
           );
         }
         function h(t, e) {
@@ -40676,24 +40594,24 @@ Error:`,
             h("ttfb", { metric: t }), (o = t);
           });
         }
-        function G() {
+        function m() {
           return (0, R.Y)((t) => {
             h("inp", { metric: t }), (E = t);
           });
         }
-        function m(t, e, _, a, r = !1) {
+        function G(t, e, _, a, r = !1) {
           let n;
           return (
             v(t, e),
             d[t] || ((n = _()), (d[t] = !0)),
             a && e({ metric: a }),
-            U(t, e, r ? n : void 0)
+            W(t, e, r ? n : void 0)
           );
         }
         function v(t, e) {
           (T[t] = T[t] || []), T[t].push(e);
         }
-        function U(t, e, _) {
+        function W(t, e, _) {
           return () => {
             _ && _();
             let a = T[t];
@@ -40702,7 +40620,7 @@ Error:`,
             -1 !== r && a.splice(r, 1);
           };
         }
-        function W(t) {
+        function U(t) {
           return "duration" in t;
         }
       },
@@ -41281,7 +41199,7 @@ Error:`,
             themeLight: { ...t.themeLight, ...e.themeLight },
           };
         }
-        function G(t, e) {
+        function m(t, e) {
           return (
             Object.entries(e).forEach(([e, _]) => {
               t.setAttributeNS(null, e, _);
@@ -41289,12 +41207,12 @@ Error:`,
             t
           );
         }
-        let m = "rgba(88, 74, 192, 1)",
+        let G = "rgba(88, 74, 192, 1)",
           v = {
             foreground: "#2b2233",
             background: "#ffffff",
             accentForeground: "white",
-            accentBackground: m,
+            accentBackground: G,
             successColor: "#268d75",
             errorColor: "#df3338",
             border: "1.5px solid rgba(41, 35, 47, 0.13)",
@@ -41302,11 +41220,11 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(95%)",
           },
-          U = {
+          W = {
             foreground: "#ebe6ef",
             background: "#29232f",
             accentForeground: "white",
-            accentBackground: m,
+            accentBackground: G,
             successColor: "#2da98c",
             errorColor: "#f55459",
             border: "1.5px solid rgba(235, 230, 239, 0.15)",
@@ -41314,7 +41232,7 @@ Error:`,
             outline: "1px auto var(--accent-background)",
             interactiveFilter: "brightness(150%)",
           };
-        function W(t) {
+        function U(t) {
           return `
   --foreground: ${t.foreground};
   --background: ${t.background};
@@ -41338,7 +41256,7 @@ Error:`,
             id: r = "sentry-feedback",
             autoInject: n = !0,
             showBranding: o = !0,
-            isEmailRequired: m = !1,
+            isEmailRequired: G = !1,
             isNameRequired: b = !1,
             showEmail: w = !0,
             showName: M = !0,
@@ -41374,7 +41292,7 @@ Error:`,
                 id: r,
                 autoInject: n,
                 showBranding: o,
-                isEmailRequired: m,
+                isEmailRequired: G,
                 isNameRequired: b,
                 showEmail: w,
                 showName: M,
@@ -41436,7 +41354,7 @@ Error:`,
 
   ${"system" !== t ? "color-scheme: only light;" : ""}
 
-  ${W("dark" === t ? { ...U, ...e } : { ...v, ..._ })}
+  ${U("dark" === t ? { ...W, ...e } : { ...v, ..._ })}
 }
 
 ${
@@ -41444,7 +41362,7 @@ ${
     ? `
 @media (prefers-color-scheme: dark) {
   :host {
-    ${W({ ...U, ...e })}
+    ${U({ ...W, ...e })}
   }
 }`
     : ""
@@ -41572,22 +41490,22 @@ ${
                                 "http://www.w3.org/2000/svg",
                                 t,
                               ),
-                            e = G(t("svg"), {
+                            e = m(t("svg"), {
                               width: "20",
                               height: "20",
                               viewBox: "0 0 20 20",
                               fill: "var(--foreground)",
                             }),
-                            _ = G(t("g"), { clipPath: "url(#clip0_57_80)" }),
-                            a = G(t("path"), {
+                            _ = m(t("g"), { clipPath: "url(#clip0_57_80)" }),
+                            a = m(t("path"), {
                               "fill-rule": "evenodd",
                               "clip-rule": "evenodd",
                               d: "M15.6622 15H12.3997C12.2129 14.9959 12.031 14.9396 11.8747 14.8375L8.04965 12.2H7.49956V19.1C7.4875 19.3348 7.3888 19.5568 7.22256 19.723C7.05632 19.8892 6.83435 19.9879 6.59956 20H2.04956C1.80193 19.9968 1.56535 19.8969 1.39023 19.7218C1.21511 19.5467 1.1153 19.3101 1.11206 19.0625V12.2H0.949652C0.824431 12.2017 0.700142 12.1783 0.584123 12.1311C0.468104 12.084 0.362708 12.014 0.274155 11.9255C0.185602 11.8369 0.115689 11.7315 0.0685419 11.6155C0.0213952 11.4995 -0.00202913 11.3752 -0.00034808 11.25V3.75C-0.00900498 3.62067 0.0092504 3.49095 0.0532651 3.36904C0.0972798 3.24712 0.166097 3.13566 0.255372 3.04168C0.344646 2.94771 0.452437 2.87327 0.571937 2.82307C0.691437 2.77286 0.82005 2.74798 0.949652 2.75H8.04965L11.8747 0.1625C12.031 0.0603649 12.2129 0.00407221 12.3997 0H15.6622C15.9098 0.00323746 16.1464 0.103049 16.3215 0.278167C16.4966 0.453286 16.5964 0.689866 16.5997 0.9375V3.25269C17.3969 3.42959 18.1345 3.83026 18.7211 4.41679C19.5322 5.22788 19.9878 6.32796 19.9878 7.47502C19.9878 8.62209 19.5322 9.72217 18.7211 10.5333C18.1345 11.1198 17.3969 11.5205 16.5997 11.6974V14.0125C16.6047 14.1393 16.5842 14.2659 16.5395 14.3847C16.4948 14.5035 16.4268 14.6121 16.3394 14.7042C16.252 14.7962 16.147 14.8698 16.0307 14.9206C15.9144 14.9714 15.7891 14.9984 15.6622 15ZM1.89695 10.325H1.88715V4.625H8.33715C8.52423 4.62301 8.70666 4.56654 8.86215 4.4625L12.6872 1.875H14.7247V13.125H12.6872L8.86215 10.4875C8.70666 10.3835 8.52423 10.327 8.33715 10.325H2.20217C2.15205 10.3167 2.10102 10.3125 2.04956 10.3125C1.9981 10.3125 1.94708 10.3167 1.89695 10.325ZM2.98706 12.2V18.1625H5.66206V12.2H2.98706ZM16.5997 9.93612V5.01393C16.6536 5.02355 16.7072 5.03495 16.7605 5.04814C17.1202 5.13709 17.4556 5.30487 17.7425 5.53934C18.0293 5.77381 18.2605 6.06912 18.4192 6.40389C18.578 6.73866 18.6603 7.10452 18.6603 7.47502C18.6603 7.84552 18.578 8.21139 18.4192 8.54616C18.2605 8.88093 18.0293 9.17624 17.7425 9.41071C17.4556 9.64518 17.1202 9.81296 16.7605 9.90191C16.7072 9.91509 16.6536 9.9265 16.5997 9.93612Z",
                             });
                           e.appendChild(_).appendChild(a);
                           let r = t("defs"),
-                            n = G(t("clipPath"), { id: "clip0_57_80" }),
-                            o = G(t("rect"), {
+                            n = m(t("clipPath"), { id: "clip0_57_80" }),
+                            o = m(t("rect"), {
                               width: "20",
                               height: "20",
                               fill: "white",
@@ -42496,11 +42414,11 @@ ${
           }
           return a.__N || a.__;
         }
-        function tG(t, e) {
+        function tm(t, e) {
           var _ = tS(tR++, 4);
           !tL.__s && tM(_.__H, e) && ((_.__ = t), (_.i = e), tN.__h.push(_));
         }
-        function tm(t, e) {
+        function tG(t, e) {
           var _ = tS(tR++, 7);
           return tM(_.__H, e)
             ? ((_.__V = t()), (_.i = e), (_.__h = t), _.__V)
@@ -42509,12 +42427,12 @@ ${
         function tv(t, e) {
           return (
             (tT = 8),
-            tm(function () {
+            tG(function () {
               return t;
             }, e)
           );
         }
-        function tU() {
+        function tW() {
           for (var t; (t = td.shift()); )
             if (t.__P && t.__H)
               try {
@@ -42560,13 +42478,13 @@ ${
                       var e,
                         _ = function () {
                           clearTimeout(a),
-                            tW && cancelAnimationFrame(e),
+                            tU && cancelAnimationFrame(e),
                             setTimeout(t);
                         },
                         a = setTimeout(_, 100);
-                      tW && (e = requestAnimationFrame(_));
+                      tU && (e = requestAnimationFrame(_));
                     }
-                  )(tU)),
+                  )(tW)),
               e.__H.__.forEach(function (t) {
                 t.i && (t.__H = t.i),
                   t.__V !== tO && (t.__ = t.__V),
@@ -42608,7 +42526,7 @@ ${
               (_.__H = void 0),
               e && tL.__e(e, _.__v));
           });
-        var tW = "function" == typeof requestAnimationFrame;
+        var tU = "function" == typeof requestAnimationFrame;
         function tb(t) {
           var e = tN,
             _ = t.__c;
@@ -42681,7 +42599,7 @@ ${
             },
             useImperativeHandle: function (t, e, _) {
               (tT = 6),
-                tG(
+                tm(
                   function () {
                     return "function" == typeof t
                       ? (t(e()),
@@ -42698,13 +42616,13 @@ ${
                   null == _ ? _ : _.concat(t),
                 );
             },
-            useLayoutEffect: tG,
-            useMemo: tm,
+            useLayoutEffect: tm,
+            useMemo: tG,
             useReducer: ty,
             useRef: function (t) {
               return (
                 (tT = 5),
-                tm(function () {
+                tG(function () {
                   return { current: t };
                 }, [])
               );
@@ -42714,18 +42632,18 @@ ${
           tH =
             "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/DialogHeader.tsx";
         function tK({ options: t }) {
-          let e = tm(
+          let e = tG(
             () => ({
               __html: (function () {
                 let t = (t) =>
                     s.createElementNS("http://www.w3.org/2000/svg", t),
-                  e = G(t("svg"), {
+                  e = m(t("svg"), {
                     width: "32",
                     height: "30",
                     viewBox: "0 0 72 66",
                     fill: "inherit",
                   }),
-                  _ = G(t("path"), {
+                  _ = m(t("path"), {
                     transform: "translate(11, 11)",
                     d: "M29,2.26a4.67,4.67,0,0,0-8,0L14.42,13.53A32.21,32.21,0,0,1,32.17,40.19H27.55A27.68,27.68,0,0,0,12.09,17.47L6,28a15.92,15.92,0,0,1,9.23,12.17H4.62A.76.76,0,0,1,4,39.06l2.94-5a10.74,10.74,0,0,0-3.36-1.9l-2.91,5a4.54,4.54,0,0,0,1.69,6.24A4.66,4.66,0,0,0,4.62,44H19.15a19.4,19.4,0,0,0-8-17.31l2.31-4A23.87,23.87,0,0,1,23.76,44H36.07a35.88,35.88,0,0,0-16.41-31.8l4.67-8a.77.77,0,0,1,1.05-.27c.53.29,20.29,34.77,20.66,35.17a.76.76,0,0,1-.68,1.13H40.6q.09,1.91,0,3.81h4.78A4.59,4.59,0,0,0,50,39.43a4.49,4.49,0,0,0-.62-2.28Z",
                   });
@@ -42792,12 +42710,12 @@ ${
             } = t,
             [h, D] = tg(null),
             [S, y] = tg(!1),
-            G = s && s.input,
-            [m, v] = tg(null),
-            U = tv((t) => {
+            m = s && s.input,
+            [G, v] = tg(null),
+            W = tv((t) => {
               v(t), y(!1);
             }, []),
-            W = tv(
+            U = tv(
               (t) => {
                 let e = (function (t, e) {
                   let _ = [];
@@ -42845,7 +42763,7 @@ ${
                         message: tx(e, "message"),
                         attachments: _ ? [_] : void 0,
                       };
-                    if (!W(a)) return;
+                    if (!U(a)) return;
                     try {
                       await r(
                         {
@@ -42868,9 +42786,9 @@ ${
               __self: this,
               __source: { fileName: tk, lineNumber: 144 },
             },
-            G && S
-              ? z(G, {
-                  onError: U,
+            m && S
+              ? z(m, {
+                  onError: W,
                   __self: this,
                   __source: { fileName: tk, lineNumber: 146 },
                 })
@@ -43000,7 +42918,7 @@ ${
                     __source: { fileName: tk, lineNumber: 189 },
                   }),
                 ),
-                G
+                m
                   ? z(
                       "label",
                       {
@@ -43022,7 +42940,7 @@ ${
                         },
                         S ? R : l,
                       ),
-                      m
+                      G
                         ? z(
                             "div",
                             {
@@ -43030,7 +42948,7 @@ ${
                               __self: this,
                               __source: { fileName: tk, lineNumber: 212 },
                             },
-                            m.message,
+                            G.message,
                           )
                         : null,
                     )
@@ -43093,7 +43011,7 @@ ${
           "/home/runner/work/sentry-javascript/sentry-javascript/packages/feedback/src/modal/components/Dialog.tsx";
         function tj({ open: t, onFormSubmitted: e, ..._ }) {
           let a = _.options,
-            r = tm(
+            r = tG(
               () => ({
                 __html: (function () {
                   let t = (t) =>
@@ -43101,25 +43019,25 @@ ${
                         "http://www.w3.org/2000/svg",
                         t,
                       ),
-                    e = G(t("svg"), {
+                    e = m(t("svg"), {
                       width: "16",
                       height: "17",
                       viewBox: "0 0 16 17",
                       fill: "inherit",
                     }),
-                    _ = G(t("g"), { clipPath: "url(#clip0_57_156)" }),
-                    a = G(t("path"), {
+                    _ = m(t("g"), { clipPath: "url(#clip0_57_156)" }),
+                    a = m(t("path"), {
                       "fill-rule": "evenodd",
                       "clip-rule": "evenodd",
                       d: "M3.55544 15.1518C4.87103 16.0308 6.41775 16.5 8 16.5C10.1217 16.5 12.1566 15.6571 13.6569 14.1569C15.1571 12.6566 16 10.6217 16 8.5C16 6.91775 15.5308 5.37103 14.6518 4.05544C13.7727 2.73985 12.5233 1.71447 11.0615 1.10897C9.59966 0.503466 7.99113 0.34504 6.43928 0.653721C4.88743 0.962403 3.46197 1.72433 2.34315 2.84315C1.22433 3.96197 0.462403 5.38743 0.153721 6.93928C-0.15496 8.49113 0.00346625 10.0997 0.608967 11.5615C1.21447 13.0233 2.23985 14.2727 3.55544 15.1518ZM4.40546 3.1204C5.46945 2.40946 6.72036 2.03 8 2.03C9.71595 2.03 11.3616 2.71166 12.575 3.92502C13.7883 5.13838 14.47 6.78405 14.47 8.5C14.47 9.77965 14.0905 11.0306 13.3796 12.0945C12.6687 13.1585 11.6582 13.9878 10.476 14.4775C9.29373 14.9672 7.99283 15.0953 6.73777 14.8457C5.48271 14.596 4.32987 13.9798 3.42502 13.075C2.52018 12.1701 1.90397 11.0173 1.65432 9.76224C1.40468 8.50718 1.5328 7.20628 2.0225 6.02404C2.5122 4.8418 3.34148 3.83133 4.40546 3.1204Z",
                     }),
-                    r = G(t("path"), {
+                    r = m(t("path"), {
                       d: "M6.68775 12.4297C6.78586 12.4745 6.89218 12.4984 7 12.5C7.11275 12.4955 7.22315 12.4664 7.32337 12.4145C7.4236 12.3627 7.51121 12.2894 7.58 12.2L12 5.63999C12.0848 5.47724 12.1071 5.28902 12.0625 5.11098C12.0178 4.93294 11.9095 4.77744 11.7579 4.67392C11.6064 4.57041 11.4221 4.52608 11.24 4.54931C11.0579 4.57254 10.8907 4.66173 10.77 4.79999L6.88 10.57L5.13 8.56999C5.06508 8.49566 4.98613 8.43488 4.89768 8.39111C4.80922 8.34735 4.713 8.32148 4.61453 8.31498C4.51605 8.30847 4.41727 8.32147 4.32382 8.35322C4.23038 8.38497 4.14413 8.43484 4.07 8.49999C3.92511 8.63217 3.83692 8.81523 3.82387 9.01092C3.81083 9.2066 3.87393 9.39976 4 9.54999L6.43 12.24C6.50187 12.3204 6.58964 12.385 6.68775 12.4297Z",
                     });
                   e.appendChild(_).append(r, a);
                   let n = t("defs"),
-                    o = G(t("clipPath"), { id: "clip0_57_156" }),
-                    E = G(t("rect"), {
+                    o = m(t("clipPath"), { id: "clip0_57_156" }),
+                    E = m(t("rect"), {
                       width: "16",
                       height: "16",
                       fill: "white",
@@ -44165,7 +44083,7 @@ ${tZ}
       778600: function (t, e, _) {
         "use strict";
         let a;
-        _.d(e, { m: () => W });
+        _.d(e, { m: () => U });
         var r,
           n,
           o,
@@ -44426,7 +44344,7 @@ ${tZ}
             ]
               .filter((t) => "function" == typeof e[t])
               .find((_) => t instanceof e[_]);
-        function G(t, e, _, a, r) {
+        function m(t, e, _, a, r) {
           let n = [];
           try {
             let o = N(
@@ -44460,7 +44378,7 @@ ${tZ}
             n.forEach((t) => t());
           };
         }
-        function m(t, e, _, a, r, n, o, E) {
+        function G(t, e, _, a, r, n, o, E) {
           let i = [];
           for (let o of Object.getOwnPropertyNames(t))
             if (
@@ -44618,7 +44536,7 @@ ${tZ}
                     this.initCanvasMutationObserver(t, _, a, r),
                   n && "number" == typeof e)
                 ) {
-                  let e = G(t, _, a, r, !0);
+                  let e = m(t, _, a, r, !0);
                   this.restoreHandlers.push(() => {
                     e();
                   });
@@ -44687,7 +44605,7 @@ ${tZ}
             });
           }
           initCanvasMutationObserver(t, e, _, a) {
-            let r = G(t, e, _, a, !1),
+            let r = m(t, e, _, a, !1),
               n = (function (t, e, _, a, r) {
                 let n = [];
                 for (let o of Object.getOwnPropertyNames(
@@ -44741,7 +44659,7 @@ ${tZ}
                 let o = [];
                 return (
                   o.push(
-                    ...m(
+                    ...G(
                       e.WebGLRenderingContext.prototype,
                       L.WebGL,
                       t,
@@ -44754,7 +44672,7 @@ ${tZ}
                   ),
                   void 0 !== e.WebGL2RenderingContext &&
                     o.push(
-                      ...m(
+                      ...G(
                         e.WebGL2RenderingContext.prototype,
                         L.WebGL2,
                         t,
@@ -44903,7 +44821,7 @@ ${tZ}
               this.pendingCanvasMutations.delete(t);
           }
         }
-        let U = {
+        let W = {
             low: {
               sampling: { canvas: 1 },
               dataURLOptions: { type: "image/webp", quality: 0.25 },
@@ -44917,7 +44835,7 @@ ${tZ}
               dataURLOptions: { type: "image/webp", quality: 0.5 },
             },
           },
-          W = (0, i._I)((t = {}) => {
+          U = (0, i._I)((t = {}) => {
             let e,
               [_, a] = t.maxCanvasSize || [],
               r = {
@@ -44953,7 +44871,7 @@ ${tZ}
                     });
                     return e(r), r;
                   },
-                  ...(U[t || "medium"] || U.medium),
+                  ...(W[t || "medium"] || W.medium),
                 };
               },
               async snapshot(t) {
@@ -44987,11 +44905,11 @@ ${tZ}
           S = _(899517),
           g = _(202811),
           y = _(370336),
-          G = _(467510),
-          m = _(101284),
+          m = _(467510),
+          G = _(101284),
           v = _(622916),
-          U = _(394798),
-          W = _(886115),
+          W = _(394798),
+          U = _(886115),
           b = _(617726),
           w = _(928541),
           M = _(14588),
@@ -45373,7 +45291,7 @@ ${tZ}
         function ty(t) {
           return null == t ? "" : t.toLowerCase();
         }
-        function tG(t, e) {
+        function tm(t, e) {
           let _,
             {
               doc: n,
@@ -45400,12 +45318,12 @@ ${tZ}
               onIframeLoad: S,
               iframeLoadTimeout: g = 5e3,
               onStylesheetLoad: y,
-              stylesheetLoadTimeout: G = 5e3,
-              keepIframeSrcFn: m = () => !1,
+              stylesheetLoadTimeout: m = 5e3,
+              keepIframeSrcFn: G = () => !1,
               newlyAddedElement: v = !1,
             } = e,
-            { preserveWhiteSpace: U = !0 } = e,
-            W = (function (t, e) {
+            { preserveWhiteSpace: W = !0 } = e,
+            U = (function (t, e) {
               let {
                   doc: _,
                   mirror: n,
@@ -45784,10 +45702,10 @@ ${tZ}
               dataURLOptions: C,
               inlineImages: P,
               recordCanvas: h,
-              keepIframeSrcFn: m,
+              keepIframeSrcFn: G,
               newlyAddedElement: v,
             });
-          if (!W) return console.warn(t, "not serialized"), null;
+          if (!U) return console.warn(t, "not serialized"), null;
           _ = o.hasNode(t)
             ? o.getId(t)
             : !(function (t, e) {
@@ -45871,14 +45789,14 @@ ${tZ}
                     }
                   }
                   return !1;
-                })(W, p) &&
-                (U ||
-                  W.type !== A.Text ||
-                  W.isStyle ||
-                  W.textContent.replace(/^\s+|\s+$/gm, "").length)
+                })(U, p) &&
+                (W ||
+                  U.type !== A.Text ||
+                  U.isStyle ||
+                  U.textContent.replace(/^\s+|\s+$/gm, "").length)
               ? tN()
               : -2;
-          let b = Object.assign(W, { id: _ });
+          let b = Object.assign(U, { id: _ });
           if ((o.add(t, b), -2 === _)) return null;
           D && D(t);
           let w = !u;
@@ -45891,7 +45809,7 @@ ${tZ}
             p.headWhitespace &&
               b.type === A.Element &&
               "head" === b.tagName &&
-              (U = !1);
+              (W = !1);
             let e = {
               doc: n,
               mirror: o,
@@ -45913,21 +45831,21 @@ ${tZ}
               dataURLOptions: C,
               inlineImages: P,
               recordCanvas: h,
-              preserveWhiteSpace: U,
+              preserveWhiteSpace: W,
               onSerialize: D,
               onIframeLoad: S,
               iframeLoadTimeout: g,
               onStylesheetLoad: y,
-              stylesheetLoadTimeout: G,
-              keepIframeSrcFn: m,
+              stylesheetLoadTimeout: m,
+              keepIframeSrcFn: G,
             };
             for (let _ of Array.from(t.childNodes)) {
-              let t = tG(_, e);
+              let t = tm(_, e);
               t && b.childNodes.push(t);
             }
             if (t.nodeType === t.ELEMENT_NODE && t.shadowRoot)
               for (let _ of Array.from(t.shadowRoot.childNodes)) {
-                let a = tG(_, e);
+                let a = tm(_, e);
                 a &&
                   (z(t.shadowRoot) && (a.isShadow = !0), b.childNodes.push(a));
               }
@@ -45967,7 +45885,7 @@ ${tZ}
                 () => {
                   let e = t.contentDocument;
                   if (e && S) {
-                    let _ = tG(e, {
+                    let _ = tm(e, {
                       doc: e,
                       mirror: o,
                       blockClass: E,
@@ -45988,13 +45906,13 @@ ${tZ}
                       dataURLOptions: C,
                       inlineImages: P,
                       recordCanvas: h,
-                      preserveWhiteSpace: U,
+                      preserveWhiteSpace: W,
                       onSerialize: D,
                       onIframeLoad: S,
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
-                      stylesheetLoadTimeout: G,
-                      keepIframeSrcFn: m,
+                      stylesheetLoadTimeout: m,
+                      keepIframeSrcFn: G,
                     });
                     _ && S(t, _);
                   }
@@ -46027,7 +45945,7 @@ ${tZ}
                 t,
                 () => {
                   if (y) {
-                    let e = tG(t, {
+                    let e = tm(t, {
                       doc: n,
                       mirror: o,
                       blockClass: E,
@@ -46048,23 +45966,23 @@ ${tZ}
                       dataURLOptions: C,
                       inlineImages: P,
                       recordCanvas: h,
-                      preserveWhiteSpace: U,
+                      preserveWhiteSpace: W,
                       onSerialize: D,
                       onIframeLoad: S,
                       iframeLoadTimeout: g,
                       onStylesheetLoad: y,
-                      stylesheetLoadTimeout: G,
-                      keepIframeSrcFn: m,
+                      stylesheetLoadTimeout: m,
+                      keepIframeSrcFn: G,
                     });
                     e && y(t, e);
                   }
                 },
-                G,
+                m,
               ),
             b
           );
         }
-        function tm(t) {
+        function tG(t) {
           let e,
             _ = t[0],
             a = 1;
@@ -46089,18 +46007,18 @@ ${tZ}
             _.addEventListener(t, e, a), () => _.removeEventListener(t, e, a)
           );
         }
-        let tU =
+        let tW =
             "Please stop import mirror directly. Instead of that,\r\nnow you can use replayer.getMirror() to access the mirror instance of a replayer,\r\nor you can use record.mirror to access the mirror instance during recording.",
-          tW = {
+          tU = {
             map: {},
-            getId: () => (console.error(tU), -1),
-            getNode: () => (console.error(tU), null),
+            getId: () => (console.error(tW), -1),
+            getNode: () => (console.error(tW), null),
             removeNodeFromMap() {
-              console.error(tU);
+              console.error(tW);
             },
-            has: () => (console.error(tU), !1),
+            has: () => (console.error(tW), !1),
             reset() {
-              console.error(tU);
+              console.error(tW);
             },
           };
         function tb(t, e, _ = {}) {
@@ -46151,9 +46069,9 @@ ${tZ}
         "undefined" != typeof window &&
           window.Proxy &&
           window.Reflect &&
-          (tW = new Proxy(tW, {
+          (tU = new Proxy(tU, {
             get: (t, e, _) => (
-              "map" === e && console.error(tU), Reflect.get(t, e, _)
+              "map" === e && console.error(tW), Reflect.get(t, e, _)
             ),
           }));
         let tM = Date.now;
@@ -46164,14 +46082,14 @@ ${tZ}
               ? e.scrollingElement.scrollLeft
               : void 0 !== t.pageXOffset
                 ? t.pageXOffset
-                : tm([
+                : tG([
                     e,
                     "optionalAccess",
                     (t) => t.documentElement,
                     "access",
                     (t) => t.scrollLeft,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -46180,7 +46098,7 @@ ${tZ}
                     "optionalAccess",
                     (t) => t.scrollLeft,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -46192,14 +46110,14 @@ ${tZ}
               ? e.scrollingElement.scrollTop
               : void 0 !== t.pageYOffset
                 ? t.pageYOffset
-                : tm([
+                : tG([
                     e,
                     "optionalAccess",
                     (t) => t.documentElement,
                     "access",
                     (t) => t.scrollTop,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -46208,7 +46126,7 @@ ${tZ}
                     "optionalAccess",
                     (t) => t.scrollTop,
                   ]) ||
-                  tm([
+                  tG([
                     e,
                     "optionalAccess",
                     (t) => t.body,
@@ -46276,7 +46194,7 @@ ${tZ}
           );
         }
         function tj(t) {
-          return !!tm([t, "optionalAccess", (t) => t.shadowRoot]);
+          return !!tG([t, "optionalAccess", (t) => t.shadowRoot]);
         }
         /[1-9][0-9]{12}/.test(Date.now().toString()) ||
           (tM = () => new Date().getTime());
@@ -46316,7 +46234,7 @@ ${tZ}
         function tq(t) {
           let e = null;
           return (
-            tm([
+            tG([
               t,
               "access",
               (t) => t.getRootNode,
@@ -46519,7 +46437,7 @@ ${tZ}
                         : this.mirror.getId(r.parentNode),
                       o = a(r);
                     if (-1 === n || -1 === o) return _.addNode(r);
-                    let E = tG(r, {
+                    let E = tm(r, {
                       doc: this.doc,
                       mirror: this.mirror,
                       blockClass: this.blockClass,
@@ -48361,11 +48279,11 @@ ${tZ}
               packFn: S,
               sampling: g = {},
               dataURLOptions: y = {},
-              mousemoveWait: G,
-              recordDOM: m = !0,
+              mousemoveWait: m,
+              recordDOM: G = !0,
               recordCanvas: v = !1,
-              recordCrossOriginIframes: U = !1,
-              recordAfter: W = "DOMContentLoaded" === t.recordAfter
+              recordCrossOriginIframes: W = !1,
+              recordAfter: U = "DOMContentLoaded" === t.recordAfter
                 ? t.recordAfter
                 : "load",
               userTriggeredOnInput: b = !1,
@@ -48379,7 +48297,7 @@ ${tZ}
               getCanvasManager: x,
             } = t;
           n = K;
-          let V = !U || window.parent === window,
+          let V = !W || window.parent === window,
             F = !1;
           if (!V)
             try {
@@ -48388,7 +48306,7 @@ ${tZ}
               F = !0;
             }
           if (V && !_) throw Error("emit function is required");
-          void 0 !== G && void 0 === g.mousemove && (g.mousemove = G),
+          void 0 !== m && void 0 === g.mousemove && (g.mousemove = m),
             eC.reset();
           let X =
               !0 === L
@@ -48521,7 +48439,7 @@ ${tZ}
                     mirror: eC,
                     mutationCb: z,
                     stylesheetManager: tt,
-                    recordCrossOriginIframes: U,
+                    recordCrossOriginIframes: W,
                     wrappedEmit: o,
                   });
           for (let t of Y || [])
@@ -48593,7 +48511,7 @@ ${tZ}
                     mirror: eC,
                   }),
             tn = (t = !1) => {
-              if (!m) return;
+              if (!G) return;
               o(
                 {
                   type: t0.Meta,
@@ -48636,7 +48554,7 @@ ${tZ}
                   stylesheetLoadTimeout: h,
                   keepIframeSrcFn: D = () => !1,
                 } = e || {};
-                return tG(t, {
+                return tm(t, {
                   doc: t,
                   mirror: _,
                   blockClass: a,
@@ -48823,7 +48741,7 @@ ${tZ}
                     maskInputOptions: X,
                     inlineStylesheet: O,
                     sampling: g,
-                    recordDOM: m,
+                    recordDOM: G,
                     recordCanvas: v,
                     inlineImages: M,
                     userTriggeredOnInput: b,
@@ -48885,14 +48803,14 @@ ${tZ}
                 : (t.push(
                     tv("DOMContentLoaded", () => {
                       o({ type: t0.DomContentLoaded, data: {} }),
-                        "DOMContentLoaded" === W && _();
+                        "DOMContentLoaded" === U && _();
                     }),
                   ),
                   t.push(
                     tv(
                       "load",
                       () => {
-                        o({ type: t0.Load, data: {} }), "load" === W && _();
+                        o({ type: t0.Load, data: {} }), "load" === U && _();
                       },
                       window,
                     ),
@@ -48931,10 +48849,10 @@ ${tZ}
           return t.closest("button,a") || t;
         }
         function ey(t) {
-          let e = eG(t);
+          let e = em(t);
           return e && e instanceof Element ? eg(e) : e;
         }
-        function eG(t) {
+        function em(t) {
           var e;
           return "object" == typeof (e = t) && e && "target" in e
             ? t.target
@@ -48946,7 +48864,7 @@ ${tZ}
               throw Error("please take full snapshot after start recording");
             E(t);
           });
-        class em {
+        class eG {
           constructor(t, e, _ = eS) {
             (this._lastMutation = 0),
               (this._lastScroll = 0),
@@ -48962,7 +48880,7 @@ ${tZ}
             var t;
             let e =
               ((t = () => {
-                this._lastMutation = eU();
+                this._lastMutation = eW();
               }),
               i ||
                 ((i = []),
@@ -49046,7 +48964,7 @@ ${tZ}
           }
           _checkClicks() {
             let t = [],
-              e = eU();
+              e = eW();
             for (let _ of (this._clicks.forEach((_) => {
               !_.mutationAfter &&
                 this._lastMutation &&
@@ -49122,10 +49040,10 @@ ${tZ}
           }
         }
         let ev = ["A", "BUTTON", "INPUT"];
-        function eU() {
+        function eW() {
           return Date.now() / 1e3;
         }
-        function eW(t) {
+        function eU(t) {
           return { timestamp: Date.now() / 1e3, type: "default", ...t };
         }
         ((N = u || (u = {}))[(N.Document = 0)] = "Document"),
@@ -49267,7 +49185,7 @@ ${tZ}
           return e ? e(t) : null;
         }
         function eH(t) {
-          return ((m.Z1 || V.performance.timeOrigin) + t) / 1e3;
+          return ((G.Z1 || V.performance.timeOrigin) + t) / 1e3;
         }
         function eK(t) {
           let e = t.entries[t.entries.length - 1];
@@ -49561,7 +49479,7 @@ ${tZ}
         }
         function e3(t) {
           let e = Date.now(),
-            _ = t.id || (0, U.DM)(),
+            _ = t.id || (0, W.DM)(),
             a = t.started || e,
             r = t.lastActivity || e,
             n = t.segmentId || 0;
@@ -49854,7 +49772,7 @@ ${tZ}
             let a = _.href;
             return !t.endsWith("/") && a.endsWith("/") ? a.slice(0, -1) : a;
           })(t);
-          return (0, W.U0)(_, e);
+          return (0, U.U0)(_, e);
         }
         async function _d(t, e, _) {
           try {
@@ -50255,17 +50173,17 @@ ${tZ}
             "number" == typeof E.statusCode &&
             (E.statusCode < 200 || E.statusCode >= 300)
           )
-            throw new _G(E.statusCode);
+            throw new _m(E.statusCode);
           let f = (0, M.WG)({}, E);
-          if ((0, M.Q)(f, "replay")) throw new _m(f);
+          if ((0, M.Q)(f, "replay")) throw new _G(f);
           return E;
         }
-        class _G extends Error {
+        class _m extends Error {
           constructor(t) {
             super(`Transport returned status code ${t}`);
           }
         }
-        class _m extends Error {
+        class _G extends Error {
           constructor(t) {
             super("Rate limit hit"), (this.rateLimits = t);
           }
@@ -50276,7 +50194,7 @@ ${tZ}
             try {
               return await _y(t), !0;
             } catch (_) {
-              if (_ instanceof _G || _ instanceof _m) throw _;
+              if (_ instanceof _m || _ instanceof _G) throw _;
               if (
                 ((0, p.v)("Replays", { _retryCount: e.count }),
                 eX &&
@@ -50305,15 +50223,15 @@ ${tZ}
               );
             }
         }
-        let _U = "__THROTTLED";
-        class _W {
+        let _W = "__THROTTLED";
+        class _U {
           constructor({ options: t, recordingOptions: e }) {
-            _W.prototype.__init.call(this),
-              _W.prototype.__init2.call(this),
-              _W.prototype.__init3.call(this),
-              _W.prototype.__init4.call(this),
-              _W.prototype.__init5.call(this),
-              _W.prototype.__init6.call(this),
+            _U.prototype.__init.call(this),
+              _U.prototype.__init2.call(this),
+              _U.prototype.__init3.call(this),
+              _U.prototype.__init4.call(this),
+              _U.prototype.__init5.call(this),
+              _U.prototype.__init6.call(this),
               (this.eventBuffer = null),
               (this.performanceEntries = []),
               (this.replayPerformanceEntries = []),
@@ -50380,7 +50298,7 @@ ${tZ}
                     [...a.values()].reduce((t, e) => t + e, 0) >= 300)
                   ) {
                     let t = r;
-                    return (r = !0), t ? "__SKIPPED" : _U;
+                    return (r = !0), t ? "__SKIPPED" : _W;
                   }
                   r = !1;
                   let o = a.get(_) || 0;
@@ -50404,7 +50322,7 @@ ${tZ}
                     ignoreSelector: a ? a.join(",") : "",
                   }
                 : void 0;
-            r && (this.clickDetector = new em(this, r));
+            r && (this.clickDetector = new eG(this, r));
           }
           getContext() {
             return this._context;
@@ -50763,8 +50681,8 @@ ${tZ}
           }
           throttledAddEvent(t, e) {
             let _ = this._throttledAddEvent(t, e);
-            if (_ === _U) {
-              let t = eW({ category: "replay.throttled" });
+            if (_ === _W) {
+              let t = eU({ category: "replay.throttled" });
               this.addUpdate(
                 () =>
                   !_t(this, {
@@ -50885,16 +50803,16 @@ ${tZ}
                             _ = "click" === t.name,
                             a = null;
                           try {
-                            (a = _ ? ey(t.event) : eG(t.event)),
+                            (a = _ ? ey(t.event) : em(t.event)),
                               (e =
-                                (0, G.Rt)(a, { maxStringLength: 200 }) ||
+                                (0, m.Rt)(a, { maxStringLength: 200 }) ||
                                 "<unknown>");
                           } catch (t) {
                             e = "<unknown>";
                           }
                           return { target: a, message: e };
                         })(t);
-                        return eW({ category: `ui.${t.name}`, ...ew(e, _) });
+                        return eU({ category: `ui.${t.name}`, ...ew(e, _) });
                       })(e);
                       if (!r) return;
                       let n = "click" === e.name,
@@ -50951,7 +50869,7 @@ ${tZ}
                                 ? (function (t) {
                                     let e = t.data && t.data.arguments;
                                     if (!Array.isArray(e) || 0 === e.length)
-                                      return eW(t);
+                                      return eU(t);
                                     let _ = !1,
                                       a = e.map((t) => {
                                         if (!t) return t;
@@ -50971,7 +50889,7 @@ ${tZ}
                                           } catch (t) {}
                                         return t;
                                       });
-                                    return eW({
+                                    return eU({
                                       ...t,
                                       data: {
                                         ...t.data,
@@ -50988,7 +50906,7 @@ ${tZ}
                                       },
                                     });
                                   })(_)
-                                : eW(_));
+                                : eU(_));
                           a && eS(t, a);
                         })(t, e),
                       );
@@ -51156,9 +51074,9 @@ ${tZ}
                                   )) &&
                                 eS(
                                   t,
-                                  eW({
+                                  eU({
                                     category: "replay.hydrate-error",
-                                    data: { url: (0, G.l4)() },
+                                    data: { url: (0, m.l4)() },
                                   }),
                                 );
                             })(t, e);
@@ -51274,13 +51192,13 @@ ${tZ}
           }
           __init2() {
             this._handleWindowBlur = () => {
-              let t = eW({ category: "ui.blur" });
+              let t = eU({ category: "ui.blur" });
               this._doChangeToBackgroundTasks(t);
             };
           }
           __init3() {
             this._handleWindowFocus = () => {
-              let t = eW({ category: "ui.focus" });
+              let t = eU({ category: "ui.focus" });
               this._doChangeToForegroundTasks(t);
             };
           }
@@ -51310,9 +51228,9 @@ ${tZ}
                   let i = _ || r || n,
                     c = 1 === o.length;
                   if (!i && c) return null;
-                  let s = (0, G.Rt)(E, { maxStringLength: 200 }) || "<unknown>",
+                  let s = (0, m.Rt)(E, { maxStringLength: 200 }) || "<unknown>",
                     I = ew(E, s);
-                  return eW({
+                  return eU({
                     category: "ui.keyDown",
                     message: s,
                     data: {
@@ -51501,7 +51419,7 @@ ${tZ}
                 a = this._options.mutationBreadcrumbLimit,
                 r = _ && e > _;
               if (e > a || r) {
-                let t = eW({
+                let t = eU({
                   category: "replay.mutations",
                   data: { count: e, limit: r },
                 });
@@ -51730,7 +51648,7 @@ ${tZ}
                 a
               );
             })(this._initialOptions, t);
-            this._replay = new _W({
+            this._replay = new _U({
               options: e,
               recordingOptions: this._recordingOptions,
             });
@@ -51794,4 +51712,4 @@ ${tZ}
       window.DiscordSentry = (0, t.j)();
     })();
 })();
-//# sourceMappingURL=sentry.2b01afca84618f58.js.map
+//# sourceMappingURL=sentry.01d9e6a8b00b3859.js.map
