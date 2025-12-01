@@ -39,7 +39,7 @@
     href="https://support.discord.com/hc/en-us/articles/4708041338391"
     center="Center"
     article="article"
-  ></a
+    >article</a
   >.
 </div>
 <p>
