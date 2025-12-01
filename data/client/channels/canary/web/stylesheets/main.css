@@ -76619,15 +76619,17 @@ html .invoiceCancelRow__968a4 {
   width: 100%;
 }
 .dismissButton_dd40b0 {
+  align-items: center;
   background-color: var(--background-base-low);
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   box-shadow: var(--shadow-border) var(--shadow-high);
   cursor: pointer;
+  display: flex;
   height: 24px;
   inset-inline-end: -8px;
+  justify-content: center;
   line-height: 0;
-  padding: 6px;
   position: absolute;
   top: -8px;
   visibility: hidden;
@@ -102176,4 +102178,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.b608809b2843e4d7.css.map*/
+/*# sourceMappingURL=12633.bbd91003bca349c9.css.map*/
