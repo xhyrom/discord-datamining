@@ -58,7 +58,7 @@
 <p>
   <strong>Requirements:</strong> Claim the promo by purchasing eligible Best Buy
   products starting <strong>November 6, 2024</strong>, and redeem it in your
-  Discord account by <strong>December 5, 2025</strong>.
+  Discord account by <strong>December 5, 2026</strong>.
 </p>
 <div class="info-box">
   <strong>NOTE</strong>: This promo is only available to customers who have
@@ -71,96 +71,117 @@
   any time in your Discord <strong>User Settings</strong>. 
 </p>
 <div class="toc-box">
-  <strong
-    ><span class="wysiwyg-font-size-x-large">What this article covers:</span
-    ><br
-  /></strong>
+  <p>
+    <span class="wysiwyg-font-size-x-large"
+      ><strong>What this article covers:</strong></span
+    ><br /> 
+  </p>
   <ul>
-    <li>
-      <strong
-        ><a href="#h_01JCRXH6J4YYEGDX9QM4MTT6AN"
-          >What is Discord Nitro?</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="edca9e8fe37eeecff0906da9806f584bd"
+    >
+      <a href="#h_01JCRXH6J4YYEGDX9QM4MTT6AN"
+        ><strong>What is Discord Nitro?</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JCRXH6J4EZMW85FT2EQEBTZT">What is Best Buy?</a></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e7cfaf2479d3e4f5c6e0ef98e831d2ff3"
+    >
+      <a href="#h_01JCRXH6J4EZMW85FT2EQEBTZT"
+        ><strong>What is Best Buy?</strong></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JCRXH6J423BYZZB86714PB5N"
-          >How do I claim the Nitro Promo from my Best Buy product?   </a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e3d29db68fe96b4f44b3823333cbb314f"
+    >
+      <a href="#h_01JCRXH6J423BYZZB86714PB5N"
+        ><strong
+          >How do I claim the Nitro Promo from my Best Buy product?   </strong
+        ></a
       >
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JCRXH6J48Z9D827ABFPPYQEP"
-          >How do I redeem the Nitro Trial on my Discord Account? </a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e055a56c9eab466a59bac6eb39e0c6f55"
+    >
+      <a href="#h_01JCRXH6J48Z9D827ABFPPYQEP"
+        ><strong
+          >How do I redeem the Nitro Trial on my Discord Account? </strong
+        ></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J4X3A6E1RCMFKZSKZ5"
-              >Eligibility for Redeeming the Nitro Trial</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ebe4e414923ae9c95b62cc5b713a2b8fe"
+        >
+          <a href="#h_01JCRXH6J4X3A6E1RCMFKZSKZ5"
+            ><strong>Eligibility for Redeeming the Nitro Trial</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J41JNSK0PCCYP0RXVD"
-              >Step by Step Redeem Instructions</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ea7e66949a1847316f039577c9de4d551"
+        >
+          <a href="#h_01JCRXH6J41JNSK0PCCYP0RXVD"
+            ><strong>Step by Step Redeem Instructions</strong></a
           >
           <ul>
-            <li>
-              <strong
-                ><a href="#h_01JCRXH6J4GADR1NJZM1WHZ7MA"
+            <li
+              class="ck-list-marker-bold"
+              data-list-item-id="e7edbc3ed3d8b6bfbdffa6c7abb1d546f"
+            >
+              <a href="#h_01JCRXH6J4GADR1NJZM1WHZ7MA"
+                ><strong
                   >What if I am an Active Nitro Basic, Nitro Classic, or Server
-                  Boosting Member? </a
-                ></strong
+                  Boosting Member? </strong
+                ></a
               >
             </li>
           </ul>
         </li>
       </ul>
     </li>
-    <li>
-      <strong
-        ><a href="#h_01JCRXH6J4HZ9B3K7B1MGFXMYP"
-          >Frequently Asked Questions</a
-        ></strong
+    <li
+      class="ck-list-marker-bold"
+      data-list-item-id="e6959ecd2c44a99d57075d380a6a6ec1e"
+    >
+      <a href="#h_01JCRXH6J4HZ9B3K7B1MGFXMYP"
+        ><strong>Frequently Asked Questions</strong></a
       >
       <ul>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J4YRC7554Y2YSJBKHT"
-              >Promotion Details</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ee096afc68435c01561d7ef35da2ff251"
+        >
+          <a href="#h_01JCRXH6J4YRC7554Y2YSJBKHT"
+            ><strong>Promotion Details</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J40PTV18VPXPVJGYY9"
-              >Eligibility for the Promotion</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ead102375904bff09010be461782f99a5"
+        >
+          <a href="#h_01JCRXH6J40PTV18VPXPVJGYY9"
+            ><strong>Eligibility for the Promotion</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J496J1SDS9N4DHFGX1"
-              >Payment Info and Membership Questions</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="ef7e9c7c71e914f19a16627f2bcf965fa"
+        >
+          <a href="#h_01JCRXH6J496J1SDS9N4DHFGX1"
+            ><strong>Payment Info and Membership Questions</strong></a
           >
         </li>
-        <li>
-          <strong
-            ><a href="#h_01JCRXH6J4HYMEW3BX91W3EWCT"
-              >Potential Errors and Other Issues</a
-            ></strong
+        <li
+          class="ck-list-marker-bold"
+          data-list-item-id="e189c527b99f7b108c502bc5f236f9cb6"
+        >
+          <a href="#h_01JCRXH6J4HYMEW3BX91W3EWCT"
+            ><strong>Potential Errors and Other Issues</strong></a
           >
         </li>
       </ul>
@@ -175,7 +196,7 @@
   and avatar customizations, 2 free Server Boosts, and more:
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="efd7d3109032eb2580e7434d3410ea13a">
     <a
       href="https://support.discord.com/hc/articles/360036479811"
       target="_blank"
@@ -183,7 +204,7 @@
       >Custom Emojis</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e79991682dcde937e5bbb56818beedbf8">
     <a
       href="https://support.discord.com/hc/articles/207260127"
       target="_blank"
@@ -191,7 +212,7 @@
       >Discord App Color Themes</a
     >
   </li>
-  <li>
+  <li data-list-item-id="efd68b227f17e5b9540d309fbb9cafda2">
     <a
       href="https://support.discord.com/hc/articles/12102061808663"
       target="_blank"
@@ -199,7 +220,7 @@
       >Super Reactions</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e567b34b217cea8a7b1c227e66825138c">
     <a
       href="https://support.discord.com/hc/articles/13410113109911"
       target="_blank"
@@ -207,7 +228,7 @@
       >Avatar Decorations</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e806fd0701208103302bc755e1f9dfea4">
     <a
       href="https://support.discord.com/hc/en-us/articles/4409388345495"
       target="_blank"
@@ -215,7 +236,7 @@
       >Per-Server Profiles</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e06ffa65464b74c071528bcddcf643c95">
     <a
       href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-"
       target="_blank"
@@ -223,7 +244,7 @@
       >Server Boosts</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e344b41cbdbef154600b6f9c10ec7ab74">
     <a
       href="https://support.discord.com/hc/articles/115000435108"
       target="_blank"
@@ -255,11 +276,11 @@
   To claim your Nitro promotion, simply purchase an eligible Best Buy product. 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e7917ce8648f34436d724e28e0aa425b8">
     <strong>For in-store purchases</strong>: Look for the Nitro offer code at
     the bottom of your receipt.
   </li>
-  <li>
+  <li data-list-item-id="ece298c1fbfb7aef0180f89cd66ac4d04">
     <strong>For online purchases</strong>: Check your email for the Nitro offer
     code.
   </li>
@@ -323,52 +344,54 @@
 </div>
 <p><strong>Step 1 - Logging into Discord</strong></p>
 <ul>
-  <li>
+  <li data-list-item-id="edcd4a84ba25c2b1bc805b81682d3e350">
      If you're not already logged into Discord in your browser, you will then be
     automatically redirected to either:
   </li>
 </ul>
 <div>
-  <table style="width: 100%">
-    <colgroup>
-      <col />
-      <col />
-    </colgroup>
-    <tbody>
-      <tr>
-        <td>
-          <p><strong>Register for a New Account</strong></p>
-          <p>
-            If you don't have an account, you can directly register a new
-            Discord account
-          </p>
-        </td>
-        <td>
-          <p><strong>Login to your Account</strong></p>
-          <p>
-            If you already have a Discord account, you can login to your account
-            using your email and password or using QR code login
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHWF4tiq1IQXqNgFYBbw4TZLAUrZyow9m1XoJuLaC0IOeVwNW1ZoOpnW9JzOK-VX6BcU1PnAvnby1Gb5rI_uzWOTE33j5bcEqDycLG81xtCtjBKEuBN4LBhMO5vunuvzGrsEfOIUuAEwA_AAOF9L_3J7Ai?key=rj4xbPLGhlW4DZX3OAxAvGSd"
-            width="244"
-            height="283"
-          />
-        </td>
-        <td>
-          <img
-            src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbn80EQo0n0AqUSqqOsKBUoat5aolzi6TdBkYUsU1P2fPfaHGbDDr2Yql1M1a4NjX3OmdQKailv2JUBJ1vqlVTPKIxnGaqq1VH1MenhicsEORCiu7ln9mKwO0Y1Qn6y2VwILfn7ozzbtcSIb8oeA5x9EOf?key=rj4xbPLGhlW4DZX3OAxAvGSd"
-            width="352"
-            height="195"
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <figure class="wysiwyg-table wysiwyg-table-align-left" style="width: 100%">
+    <table class="wysiwyg-table-resized">
+      <colgroup>
+        <col style="width: NaN%" />
+        <col style="width: NaN%" />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Register for a New Account</strong></p>
+            <p>
+              If you don't have an account, you can directly register a new
+              Discord account
+            </p>
+          </td>
+          <td>
+            <p><strong>Login to your Account</strong></p>
+            <p>
+              If you already have a Discord account, you can login to your
+              account using your email and password or using QR code login
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHWF4tiq1IQXqNgFYBbw4TZLAUrZyow9m1XoJuLaC0IOeVwNW1ZoOpnW9JzOK-VX6BcU1PnAvnby1Gb5rI_uzWOTE33j5bcEqDycLG81xtCtjBKEuBN4LBhMO5vunuvzGrsEfOIUuAEwA_AAOF9L_3J7Ai?key=rj4xbPLGhlW4DZX3OAxAvGSd"
+              width="244"
+              height="283"
+            />
+          </td>
+          <td>
+            <img
+              src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbn80EQo0n0AqUSqqOsKBUoat5aolzi6TdBkYUsU1P2fPfaHGbDDr2Yql1M1a4NjX3OmdQKailv2JUBJ1vqlVTPKIxnGaqq1VH1MenhicsEORCiu7ln9mKwO0Y1Qn6y2VwILfn7ozzbtcSIb8oeA5x9EOf?key=rj4xbPLGhlW4DZX3OAxAvGSd"
+              width="352"
+              height="195"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
 </div>
 <p><strong>Step 2 - Claiming your promotion gift</strong></p>
 <p>
@@ -393,11 +416,11 @@
   <strong>Redeem. </strong>You can find your unique gift code on the following: 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e6789c15c3c12cb6ce55c295babcd6110">
     <strong>For in-store purchases</strong>: Look for the Nitro offer code at
     the bottom of your receipt.
   </li>
-  <li>
+  <li data-list-item-id="eb4b5958c768e6acaf7fe355c51853d21">
     <strong>For online purchases</strong>: Check your email for the Nitro offer
     code.
   </li>
@@ -488,23 +511,31 @@
   we've also broken down this information in this FAQ section as well too.
 </p>
 <ul>
-  <li><a href="#h_01JCRXH6J4YRC7554Y2YSJBKHT">Promotion Details</a></li>
-  <li>
+  <li data-list-item-id="ec84483d301d93e63de4491d06ef47bc8">
+    <a href="#h_01JCRXH6J4YRC7554Y2YSJBKHT">Promotion Details</a>
+  </li>
+  <li data-list-item-id="e0b8799bb71559e3f66aa860db2210763">
     <a href="#h_01JCRXH6J4X3A6E1RCMFKZSKZ5">Eligibility for the Promotion</a>
   </li>
-  <li>
+  <li data-list-item-id="e7f18405c76fec740156af34f0290782e">
     <a href="#h_01JCRXH6J496J1SDS9N4DHFGX1"
       >Payment Info and Membership Questions</a
     >
   </li>
-  <li>
+  <li data-list-item-id="e2feb017fbe884ab26583592b31e8a63c">
     <a href="#h_01JCRXH6J4HYMEW3BX91W3EWCT"
       >Potential Errors and Other Issues</a
     >
     <ul>
-      <li>Already Had/Have Nitro</li>
-      <li>Already Redeemed</li>
-      <li>Something's Wrong Here</li>
+      <li data-list-item-id="ed049ad59feaeb5bf1c80b4f2d49fd473">
+        Already Had/Have Nitro
+      </li>
+      <li data-list-item-id="eb56dc809bd82b9ebc005f05a2736b27d">
+        Already Redeemed
+      </li>
+      <li data-list-item-id="e0bbb497c0268252f251001debde593fe">
+        Something's Wrong Here
+      </li>
     </ul>
   </li>
 </ul>
@@ -513,16 +544,16 @@
 <p>
   <strong>A: </strong>Best Buy Digital customers can purchase eligible Best Buy
   products starting on <strong>November 6, 2024,</strong> and redeem it in your
-  Discord account by <strong>December 5, 2025</strong>. 
+  Discord account by <strong>December 5, 2026</strong>. 
 </p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
 <p>
   <strong>A:</strong> You must redeem the Nitro promotion by
-  <strong>December 5, 2025</strong>.
+  <strong>December 5, 2026</strong>.
 </p>
 <p>
   If a code has not been redeemed to the Discord account by
-  <strong>December 5, 2025</strong>, it will expire and you will no longer be
+  <strong>December 5, 2026</strong>, it will expire and you will no longer be
   able to have 1 month of Discord Nitro.
 </p>
 <h2 id="h_01JCRXH6J40PTV18VPXPVJGYY9">Eligibility for the Promotion</h2>
@@ -534,11 +565,11 @@
   Best Buy product. You will find the Nitro promo offer code on the following: 
 </p>
 <ul>
-  <li>
+  <li data-list-item-id="e1f862b57400381c96e4dfd9ca7ac4352">
     <strong>For in-store purchases</strong>: Look for the Nitro offer code at
     the bottom of your receipt.
   </li>
-  <li>
+  <li data-list-item-id="ec6647a8ce1691bcb550ff0fbafa62ece">
     <strong>For online purchases</strong>: Check your email for the Nitro offer
     code.
   </li>
@@ -722,10 +753,18 @@
 </p>
 <p>A: There are several reasons why you may be seeing this error:</p>
 <ul>
-  <li>You are ineligible for this promotion</li>
-  <li>The promotion is invalid</li>
-  <li>The promotion has reached the maximum number of claims</li>
-  <li>The link is invalid</li>
+  <li data-list-item-id="e801ef164f54b2f4da260a1d6501adcb2">
+    You are ineligible for this promotion
+  </li>
+  <li data-list-item-id="ef6a65c29e79d2aa575be9116c5ee070e">
+    The promotion is invalid
+  </li>
+  <li data-list-item-id="eacce71e6be60659b2d886a420cdc7e91">
+    The promotion has reached the maximum number of claims
+  </li>
+  <li data-list-item-id="e868704e6ebb57a80148bd5e344c8e7dd">
+    The link is invalid
+  </li>
 </ul>
 <p>
   Please note that the Discord support team is not able to assist if you run
