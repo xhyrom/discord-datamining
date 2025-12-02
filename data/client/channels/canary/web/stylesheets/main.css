@@ -58396,8 +58396,9 @@ html .progress__61462 {
   display: flex;
   flex-direction: column;
   height: 380px;
+  max-width: 512px;
   overflow: hidden;
-  width: 512px;
+  width: 100%;
 }
 .card_e95ba0,
 .container_e95ba0 {
@@ -102184,4 +102185,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.ad11eeaf14625300.css.map*/
+/*# sourceMappingURL=12633.5896f2d67c3cfb5a.css.map*/
