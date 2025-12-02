@@ -8,53 +8,111 @@
   discretion.
 </p>
 <ul>
-  <li style="font-weight: 400">
+  <li
+    style="font-weight: 400"
+    data-list-item-id="e537adb7d9225f453a24e4de4f7c3bf09"
+  >
     <a href="#h_01J5BJ8AD35FVE1BBY5SM35Y6R">Refunds by Payment Type</a>
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e15775a668dbb84a183a99c76bb338368"
+      >
         <a href="#h_01J5BHZ59CNMWV3JE8D1GHQ5P3">iOS App Store Purchases</a>
       </li>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="ef77f7814fb748e06d1c6892ae0733cb2"
+      >
         <a href="#h_01J5BJ03FMG9GKPN0EYVYE5T23">Paysafecards</a>
       </li>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="efd291e579cc0956757b75ebac7e9aa94"
+      >
         <a href="#h_01JW9DNYQXDHAH0YFC08MM536A">Orbs</a>
       </li>
     </ul>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e5b6ca72505ad699791a2ebbaa246f91f"
+  >
     <a href="#h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts </a>
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e61db38472b90d4665c430f30e6fbdbb9"
+      >
         <a href="#h_01J5BJ0CVX6QRXWNJHY3TM97FG">Exceptions</a>
       </li>
     </ul>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e77e6d03490676b9d408e694c2b051422"
+  >
     <a href="#h_01J5BJ13F4GHPNM080EY7QR9V0">Nitro Gifts </a>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ef110a1386a54ba38ad68517db43d33ca"
+  >
     <a href="#h_01J5BJ1E128CKG7FPKAKKGJQD9"
       >DLC, Profile Cosmetics and In-App</a
     >
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e94d6f156bd5384cab02627c3378d7882"
+  >
+    <a href="#h_01KBDQVHKE2JEVXB1FWSH9N3H8">Marvel Rivals Shop</a>
+  </li>
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="ee986c55ee5ba314a1d20ec6cd22f4721"
+  >
     <a href="#h_01J5BJ1RGC5P7CMY2FS0WAW4GB"
       >Purchases from Users and Developers</a
     >
     <ul>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e9453dfc08b7f36ca3b31ca5c570ff5b1"
+      >
         <a href="#h_01J5BJ24CY61CX217VEZCSHSVZ">Server Subscription Refunds</a>
       </li>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="e243ae5c3768479a14c6b13ad7daea96d"
+      >
         <a href="#h_01J5BJEN2SS8JW91M1JKYDSRDW">Server Shop Purchase Refunds</a>
       </li>
-      <li style="font-weight: 400" aria-level="1">
+      <li
+        style="font-weight: 400"
+        aria-level="1"
+        data-list-item-id="ec002c71427743d28dc77bf9e054dfa77"
+      >
         <a href="#h_01J5BJ2X9ZT977MQHTP5PK3C2M">Premium App Refunds</a>
       </li>
     </ul>
   </li>
-  <li style="font-weight: 400" aria-level="1">
+  <li
+    style="font-weight: 400"
+    aria-level="1"
+    data-list-item-id="e4f583bf5c79ad9507dd6d89e250df854"
+  >
     <a href="#h_01J5BJMMBM60AYHA22N600NDT5">How to Submit a Refund Request</a>
   </li>
 </ul>
@@ -64,23 +122,24 @@
   <span class="wysiwyg-underline">one-time refunds only</span>, unless we
   explicitly state otherwise in this Policy. This means that you are only
   eligible for <span class="wysiwyg-underline">one refund</span> under each
-  purchase category.<br /><span
-    id="docs-internal-guid-7bd9f8dd-7fff-4339-16b6-0a353c4861c0"
-    style="color: #434343"
-    data-darkreader-inline-color=""
-    >For example, if you have previously received a refund for any Nitro
-    subscription, you will not be eligible for any other Nitro subscription
-    refund in the future.
-  </span>
+  purchase category.<br /><span style="color: #434343"
+    ><span
+      id="docs-internal-guid-7bd9f8dd-7fff-4339-16b6-0a353c4861c0"
+      data-darkreader-inline-color=""
+      >For example, if you have previously received a refund for any Nitro
+      subscription, you will not be eligible for any other Nitro subscription
+      refund in the future.</span
+    ></span
+  >
 </div>
 <h1 id="h_01J5BJ8AD35FVE1BBY5SM35Y6R">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >Refunds by Payment Type</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color="">Refunds by Payment Type</span></span
   >
 </h1>
 <h2 id="h_01J5BHZ59CNMWV3JE8D1GHQ5P3">
-  <span style="color: #434343" data-darkreader-inline-color=""
-    >iOS App Store Purchases</span
+  <span style="color: #434343"
+    ><span data-darkreader-inline-color="">iOS App Store Purchases</span></span
   >
 </h2>
 <p>
@@ -107,9 +166,7 @@
   However, if you are concerned that any Orbs you’ve accumulated have been spent
   without your permission, please submit a ticket through
   <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
-    >dis</a
-  ><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
-    >.gd/billing</a
+    >dis.gd/billing</a
   >.
 </p>
 <h1 id="h_01J5BJ03FMZ021ECRNC8JWQ0Y0">Nitro and Server Boosts</h1>
@@ -148,12 +205,7 @@
   from the initial purchase date to request a refund with our<a
     href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"
   >
-    <span
-      class="wysiwyg-underline"
-      style="color: #1155cc"
-      data-darkreader-inline-color=""
-      >Support Team</span
-    ></a
+    <span class="wysiwyg-underline">Support Team</span></a
   >. 
 </p>
 <div class="warn-box">
@@ -185,6 +237,22 @@
   premium apps, and other offerings from other users and developers on Discord.
   While these users and developers are responsible for these offerings, we may
   offer refunds in our sole discretion in the situations outlined below.
+</p>
+<h1 id="h_01KBDQVHKE2JEVXB1FWSH9N3H8">Marvel Rivals Shop</h1>
+<p>
+  We are unable to provide refunds for items purchased from the Marvel Rivals
+  Shop. However, if you or your intended gift recipient are unable to receive
+  the item in your connected account (for example, if the item is already
+  owned), we may offer a refund, provided that you or the gift recipient
+  attempted to claim the item within 14 days of purchase.
+</p>
+<p>
+  If your Marvel Rivals Shop purchase is defective or you're experiencing
+  problems with the purchase, please contact us at
+  <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"
+    ><span class="wysiwyg-underline">dis.gd/billing</span></a
+  >
+  within 14 days of purchase.
 </p>
 <h2 id="h_01J5BJ24CY61CX217VEZCSHSVZ">Server Subscription Refunds</h2>
 <p>
@@ -253,23 +321,29 @@
   >
 </p>
 <ul>
-  <li>
-    Select the correct product category that you’re requesting a refund for.<br />
+  <li data-list-item-id="e4d72b6348dad0d5069162c131e0c8499">
+    Select the correct product category that you’re requesting a refund for.
     <ul>
-      <li>
+      <li
+        class="ck-list-marker-italic"
+        data-list-item-id="e0272fc737aa0947e13c9efd84543eda8"
+      >
         <em
           >For example, if you are requesting a refund for a Premium App
           Subscription, select Premium Apps” from the Type of Billing Issue
-          dropdown menu.<br /><br
-        /></em>
+          dropdown menu.</em
+        ><br /><br /> 
       </li>
     </ul>
   </li>
-  <li>
+  <li data-list-item-id="e282e467500b7f95e825ef91ccb3a2eb9">
     Provide all of the requested information relevant to the purchase you’re
-    seeking a refund for.<br />
+    seeking a refund for.
     <ul>
-      <li>
+      <li
+        class="ck-list-marker-italic"
+        data-list-item-id="e1be19a8180bffe0ffa11578e145cd358"
+      >
         <em
           >Failure to provide this information within the refund eligibility
           period may result in a denial of your request. </em
@@ -286,5 +360,5 @@
     target="_blank"
     rel="noopener noreferrer"
     >here</a
-  ><span style="font-weight: 400">. </span>
+  ><span style="font-weight: 400">.</span>
 </div>
