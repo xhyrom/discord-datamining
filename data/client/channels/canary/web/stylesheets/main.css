@@ -64876,6 +64876,10 @@ html .progress__61462 {
 .bannerDescription__7137c {
   text-align: start;
 }
+.buttonContainer__7137c {
+  -webkit-margin-start: 32px;
+  margin-inline-start: 32px;
+}
 @media (max-width: 900px) {
   .container__7137c {
     flex-direction: column;
@@ -64888,6 +64892,10 @@ html .progress__61462 {
   .bannerDescription__7137c {
     justify-content: center;
     text-align: center;
+  }
+  .buttonContainer__7137c {
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
   }
 }
 .timerContainer_d0d75b {
@@ -102359,4 +102367,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.c19ffd6c7e7b2991.css.map*/
+/*# sourceMappingURL=12633.b73c9549c4943745.css.map*/
