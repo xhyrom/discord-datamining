@@ -58269,7 +58269,7 @@ html .progress__61462 {
   }
 }
 .cardBackgroundImage_abfd90 {
-  background-color: var(--brand-400);
+  background-color: var(--background-base-low);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102176,4 +102176,4 @@ html:has(.enable-forced-colors:not(.platform-web)).theme-light.app-focused
   --shadow-border: 0 0 0 1px var(--border-strong) !important;
 }
 
-/*# sourceMappingURL=12633.4cbb43657418baa8.css.map*/
+/*# sourceMappingURL=12633.f7cd259b9b9a9730.css.map*/
